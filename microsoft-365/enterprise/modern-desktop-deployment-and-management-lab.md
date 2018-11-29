@@ -1,0 +1,148 @@
+---
+title: Distribuzione del desktop moderno e Management Lab Kit
+ms.author: jogruszc
+author: JGruszczyk
+manager: jemed
+ms.date: 10/31/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-solutions
+localization_priority: Priority
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: ''
+description: Informazioni sulla distribuzione del desktop moderno e su Management Lab Kit.
+ms.openlocfilehash: 1423b0deb74d306cbbc0dc088fed9827ec01782c
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26868836"
+---
+# <a name="modern-desktop-deployment-and-management-lab-kit"></a>Distribuzione del desktop moderno e Management Lab Kit
+
+Questi lab pratici scaricabili si concentrano sulla distribuzione di Windows 10 e di Office 365, oltre alle considerazioni su configurazione e gestione in seguito alla distribuzione. Questo training è vivamente consigliato per le organizzazioni che si stanno preparando alla fine del ciclo di vita di Windows 7, ma è applicabile anche se è in uso Windows 10 e Office 365 Plus o Office 2019. Sono incluse guide per Windows 10, Office 365 ProPlus, Enterprise Mobility + Security e prodotti e servizi correlati.
+
+Questi lab sono progettati per agevolare la pianificazione, il test e la convalida della distribuzione e della gestione di desktop moderni che eseguono Windows 10 Enterprise e Office 365 ProPlus. I lab descrivono le procedure e gli strumenti illustrati nello schema relativo alla distribuzione del desktop moderno, tra cui System Center Configuration Manager, Windows Analytics, Strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro.
+
+Come parte del processo di [distribuzione del desktop moderno](http://www.aka.ms/howtoshift) per Windows 10 e Office 365 ProPlus, la creazione di un ambiente lab sandbox o isolato è il punto di partenza consigliato quando si inizia a esplorare gli aggiornamenti dello strumento di distribuzione e a testare l'automazione correlata alla distribuzione.
+
+Il lab kit può essere scaricato gratuitamente e utilizza un software di valutazione.
+
+[**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)
+
+**Un ambiente lab completo**
+
+Il lab fornisce un ambiente lab virtuale con provisioning automatico, che comprende client desktop aggiunti a un dominio, un controller di dominio, gateway Internet e un'istanza di ConfigMgr completamente configurata. Il lab contiene versioni di valutazione dei prodotti seguenti:
+
+  - Windows 10 Enterprise, versione 1803
+  - Windows 7
+  - Office 365 ProPlus, versione 1807
+  - System Center Configuration Manager, versione 1802
+  - Windows Assessment and Deployment Kit per Windows 10, versione 1803
+  - Microsoft Deployment Toolkit
+  - Microsoft Application Virtualization (App-V) 5.1
+  - Amministrazione e gestione di Microsoft Bitlocker 2.5 SP1
+  - Windows Server 2016
+  - Microsoft SQL Server 2014
+
+INOLTRE, il lab è progettato per essere collegato alle versioni di valutazione per:
+
+  - Microsoft 365 Enterprise E5
+
+Oppure
+  - Office 365 Enterprise E5
+  - Enterprise Mobility + Security
+
+**Lab dettagliati**
+
+Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuzione e gestione, tra cui:
+
+**Preparazione di app e dispositivi**
+
+  - Windows Analytics
+  - Modalità Enterprise ed Enterprise Mode Site List per Internet Explorer
+
+**Preparazione di rete e directory**
+
+  - Configurazione di base per Azure Active Directory e Microsoft 365
+  - Ottimizzazione della rete tramite Ottimizzazione recapito, Peer cache in ConfigMgr e LEDBAT
+  - **NUOVO** Gestione contemporanea di ConfigMgr e Microsoft Intune
+  - **NUOVO** Accesso remoto (VPN)
+
+**Distribuzione di app line-of-business e di Office**
+
+  - Distribuzione di Office 365 ProPlus tramite System Center Configuration Manager
+  - Distribuzione di Office 365 ProPlus tramite Microsoft Intune
+  - Distribuzione e gestione di app tramite Microsoft Intune
+  - Distribuzione di app e installazione self-service tramite Microsoft Store per le aziende
+  - Conversione dell'applicazione Desktop Bridge in UWP
+  - **NUOVO** Kit di certificazione app Windows
+  - Correzione della compatibilità del browser tramite la modalità Enterprise per IE
+
+**Migrazione delle impostazioni e dei file utente**
+
+  - Utilità di migrazione stato utente come parte di sequenze di attività per sostituzione e aggiornamento di PC in ConfigMgr e MDT
+  - Spostamento di cartelle note di OneDrive
+  - Enterprise State Roaming
+
+**Sicurezza e conformità**
+
+  - Crittografia dispositivo BitLocker
+  - Windows Defender Antivirus
+  - Windows Hello for Business
+  - Conversione da BIOS a UEFI come attivatore per la sicurezza basata sulla virtualizzazione
+  - Windows Defender Credential Guard
+  - Windows Defender Application Guard
+  - Windows Defender Exploit Guard
+  - Controllo di applicazioni di Windows Defender
+  - Windows Defender Advanced Threat Protection
+
+**Distribuzione del sistema operativo e aggiornamenti delle funzionalità**
+
+  - Creazione dell'immagine del sistema operativo
+  - Sequenze di attività di distribuzione del sistema operativo in ConfigMgr
+      - Bare metal
+      - Aggiornamento
+      - Sostituzione
+      - Aggiornamento
+  - Sequenze di attività di distribuzione del sistema operativo in MDT
+  - Aggiornamenti delle funzionalità tramite sequenze di attività di aggiornamento in ConfigMgr
+  - Windows Autopilot
+
+**Office e Windows as a Service**
+
+  - Gestione aggiornamenti software tramite Configuration Manager
+  - Gestione aggiornamenti di Office 365 ProPlus in Configuration Manager
+  - Gestione di dispositivi mobili applicata a Windows 10 tramite Microsoft Intune
+
+[**DOWNLOAD**](https://aka.ms/mddlabs_evalcenter)
+
+*Per scaricare questi contenuti, usare un'ampia larghezza di banda per un'esperienza di download ottimale e attendere 30-45 minuti per il provisioning automatico. L'ambiente di lab richiede minimo 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, si consiglia di avere 32 GB disponibili. Il lab scade il 9 dicembre 2018; prima di tale data, ne verrà pubblicata una nuova versione.*
+
+**Indicazioni aggiuntive**
+
+  - [Centro di distribuzione desktop moderno](http://www.aka.ms/howtoshift)
+
+  - [Serie di video sulla distribuzione del desktop moderno di Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+
+  - [Distribuzione del sistema operativo in System Center Configuration Manager](https://docs.microsoft.com/it-IT/sccm/osd/understand/introduction-to-operating-system-deployment)
+
+  - [<span class="underline">Pianificare la distribuzione di Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
+
+  - [<span class="underline">Guida alla distribuzione per Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+
+  - [<span class="underline">Introduzione a Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
+
+> **Risorse correlate**
+
+  - [<span class="underline">Introduzione a Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)
+
+  - [<span class="underline">Office 365 per le aziende</span>](https://products.office.com/business/office)
+
+  - [<span class="underline">Introduzione a Enterprise Mobility + Security</span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+
+  - [<span class="underline">Windows 10 per le aziende</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
+
+  - [<span class="underline">Windows 10 per aziende di piccole e medie dimensioni</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
