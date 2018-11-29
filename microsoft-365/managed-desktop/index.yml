@@ -1,0 +1,75 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 07a77c646f8aef2440f415fdf143373cd249a641
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26868598"
+documentType: LandingData
+title: Risorse e documentazione Microsoft Desktop gestiti
+metadata:
+  title: Documentazione Microsoft Desktop gestiti
+  description: 
+  keywords: dispositivo, app, gestione
+  author: trudyha
+  ms.author: trudyha
+  ms.date: 11/1/2018
+  ms.topic: landing-page
+  ms.devlang: na
+  ms.service: m365-md
+sections:
+- items:
+  - type: markdown
+    text: Il modo più semplice per soddisfare gli utenti e liberare IT.
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - href: intro/index.md
+      html: <p>Informazioni sulle novità di Microsoft Desktop gestiti e del relativo funzionamento.</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
+      title: Cos'è Microsoft Managed Desktop?
+    - href: service-description/index.md
+      html: <p>Informazioni su componenti inclusi in Microsoft Desktop gestiti.</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
+      title: Descrizione del servizio
+    - href: get-ready/index.md
+      html: <p>Informazioni su come effettuare la preparazione per effettuare la registrazione Microsoft Desktop gestiti.</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_support.svg
+      title: Preparati
+    - href: get-started/index.md
+      html: <p>Informazioni su come ordinare i dispositivi e aggiunta di contatti.</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
+      title: Per iniziare
+    - href: working-with-managed-desktop/index.md
+      html: <p>Informazioni su Gestione applicazioni.</p>
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
+      title: Utilizzo di Microsoft Managed Desktop
+- title: Nuovi articoli e post di blog
+  items:
+  - type: paragraph
+    text: Leggere le informazioni più recenti e importanti che è necessario conoscere.
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+    - href: https://www.microsoft.com/microsoft-365/blog/2018/09/17/collaborating-with-customers-and-partners-to-deliver-a-modern-desktop-microsoft-managed-desktop/
+      title: '[Blog] Collaborazione con clienti e partner per fornire un desktop moderno'
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
+    - href: https://www.cio.com/article/3307121/systems-management/microsoft-managed-desktop-all-your-windows-10-devices-managed-by-microsoft.html
+      title: '[Articolo] Microsoft Managed Desktop: Tutti i 10 Windows dispositivi, gestiti da Microsoft'
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
+- title: Video
+  items:
+  - type: markdown
+    text: '>[!VIDEO https://www.youtube.com/embed/Pe75tc8YwKM]'
