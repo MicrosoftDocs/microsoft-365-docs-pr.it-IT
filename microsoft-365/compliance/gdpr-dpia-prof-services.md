@@ -1,0 +1,94 @@
+---
+title: Informazioni aggiuntive per i controller di dati tramite i servizi professionali Microsoft
+description: In questo documento vengono fornite controller dei dati con informazioni sui servizi professionali di aiuto per determinare se è necessario un DPIA e quali vengono illustrati da includere.
+keywords: Documentazione relativa a Microsoft 365 DPIA, Microsoft Professional Services, PILR
+robots: NOINDEX,NOFOLLOW
+author: BrendaCarter
+ms.localizationpriority: high
+audience: itpro
+ms.prod: Microsoft-365-enterprise
+ms.topic: article
+ms.author: bcarter
+manager: laurawi
+ms.collection: GDPR
+ms.openlocfilehash: 9e710c3b8ec0c467c36a675c2d76eabb3af1f0f6
+ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26868536"
+---
+# <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-professional-services"></a>Valutazioni impatto protezione dati: Indicazioni per i controller di dati tramite i servizi professionali Microsoft
+
+## <a name="introduction-to-microsoft-professional-services"></a>Introduzione ai servizi professionali Microsoft
+
+Servizi professionali Microsoft include un gruppo di documentazione tecnica tecnici, consulenti e personale del supporto tecnico dedicati all'ottimizzazione in servizi di Microsoft dei nostri clienti per eseguire più e aumentare la produttività. Fai clic qui per ulteriori informazioni sui servizi professionali Microsoft (<https://www.microsoft.com/microsoftservices/professional_services.aspx>) e passare alla sezione servizi professionali Microsoft Microsoft Trust Center (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>).
+
+Servizi professionali Microsoft prese in considerazione gli obblighi in generale Data Protection norme (PILR). Le informazioni contenute in questo documento sono progettate per fornire informazioni su come Microsoft e supporto consulting offerte che i clienti possono utilizzare durante la preparazione di Data Protection impatto valutazioni (DPIAs) in PILR.
+
+### <a name="introduction-to-dpias"></a>Introduzione a DPIAs
+
+Sotto la generale dati protezione nella regolazione (PILR), i controller di dati sono necessari per preparare un DPIA per l'elaborazione delle operazioni che sono "probabile comportare un rischio elevato per i diritti e delle persone fisiche libertà." Non è inerenti servizi professionali Microsoft che necessariamente richiede la creazione di un DPIA da un controller di dati utilizzarlo. Piuttosto, se è necessaria una DPIA sarà dipendono i dettagli e il contesto del tipo di servizi e utilizzo di servizi professionali del controllo dei dati.
+
+Lo scopo di questo documento è al controller di dati di ottenere informazioni sui servizi professionali di aiuto per determinare se è necessaria una DPIA e, in caso affermativo, quali dettagli da includere.
+
+## <a name="part-1--determining-whether-a-dpia-is-needed"></a>Parte 1: determinare se è necessaria una DPIA
+
+Articolo 35 del PILR richiede un controller di dati per creare "[w] un tipo di elaborazione in particolare utilizzando le nuove tecnologie e tenendo in considerazione la natura, l'ambito, contesto e ai fini dell'elaborazione, ecco potrebbe provocare una valutazione dell'impatto di protezione dei dati in un rischio elevato per i diritti e delle persone fisiche libertà." Consente di impostare ulteriori fattori specifico che potrebbe indicare quali un ad alto rischio, che verranno illustrate nella tabella seguente. Per determinare se è necessaria una DPIA, un controller di dati deve prendere in considerazione questi fattori, insieme a eventuali altri fattori, considerando implementazioni specifiche del controller dei dati e impieghi dei servizi professionali.
+
+***Tabella 1 - informazioni pertinenti e fattori di rischio***
+
+<!--start table here NO HEADER -->
+
+|||
+|:-----|:-----|
+|**Fattore di rischio**|**Informazioni rilevanti sui servizi professionali**|
+|Una valutazione sistematica e approfondita degli aspetti personali relativi alle persone fisiche che si basa su una elaborazione automatizzata, tra cui la profilatura, e su cui si basano le decisioni che producono effetti giuridici riguardanti la persona fisica o che influenzano analogamente in modo significativo la persona fisica.|Servizi professionali eseguire determinate routine o automatizzata di elaborazione dei dati, ad esempio riparazione (ad esempio, assistenza clienti quando si interrompe il proprio computer), il supporto per gli account migrazione e analisi di vulnerabilità. Soluzioni di servizi professionali, ad eccezione di sviluppo dei clienti coperto nota riportata di seguito, non si intendono eseguire elaborazione su quali decisioni che producono effetti legali o allo stesso modo significativi sui singoli utenti.|
+|Elaborazione su larga scala di [^1] di categorie speciali di dati (dati personali che rivelano origini razziali o etniche, opinioni politiche, convinzioni religiose o filosofiche, appartenenza sindacale ed elaborazione di dati genetici, dati biometrici per lo scopo di identificare in modo univoco una persona fisica, dati relativi alla salute o dati relativi alla vita sessuale o all'orientamento sessuale di una persona fisica) o di dati personali relativi a condanne e reati penali.|Servizi professionali non sono deve essere utilizzate nel lavoro che richiede l'elaborazione di particolari categorie di dati personali, ad eccezione di sviluppo dei clienti coperto nota riportata di seguito.<p>Tuttavia, un controller di dati è possibile utilizzare servizi professionali consulting soluzioni per elaborare le categorie speciali enumerate dei dati. Ad esempio, i servizi professionali offre sviluppo database settore sanitario che potrebbe essere utilizzato da un controller di dati per l'elaborazione di dati personali associati a una condizione di integrità. È responsabilità del controller di valutazione e limitare l'uno o in un documento di questo tipo di utilizzo nel modo appropriato.</p>|
+| Monitoraggio sistematico di un'area pubblicamente accessibile su vasta scala|Servizi professionali non deve essere utilizzato nel lavoro che richiede o favorisce tali monitoring, ad eccezione di sviluppo dei clienti coperti nota riportata di seguito.<p>Se un controller di dati utilizzato servizi professionali per lo sviluppo di questo tipo di sistema o sistemi IT per elaborare i dati raccolti mediante questo tipo di monitoraggio di sarebbe assume la responsabilità del controller di dati come descritto di seguito.</p>|
+|||
+
+<!-- end of table -->
+  
+[Lo sviluppo personalizzato nota] Professional Services offre un'ampia gamma di soluzioni di consulenza. Un controller di dati potrebbe richiedere una soluzione che, in base ai criteri sopra riportati è una soluzione ad alto rischio. Ad esempio, un controller di dati potrebbe richiedere che i servizi professionali creare una soluzione per sviluppare un motore di business intelligence per prendere decisioni occupazione o le applicazioni o una soluzione che interessa utente monitoraggio, utilizzo specializzato di artificiale Business Intelligence (AI) / Analitica o l'elaborazione delle categorie speciali di dati personali.
+
+All'inizio di un engagement, servizi professionali ha processi per valutare e indirizzo soluzioni ad alto rischio che potrebbe essere richiesto di lavorare. Come parte di questo oggetto, i servizi professionali potrebbe essere necessario garanzie dal controller di dati in conformità PILR (ad esempio clausole), un piano per lo sviluppo di un DPIA o altri criteri (ad esempio concordate operative linee guida) in base alle esigenze di un processore dati sotto il PILR. Tuttavia, indipendentemente dalle azioni di Microsoft è responsabilità del controller di dati per sviluppare DPIA con l'input, ove applicabile dal sistema di elaborazione dei dati del cliente.
+
+## <a name="part-2--contents-of-a-dpia"></a>Parte 2: contenuto di una DPIA
+
+L'articolo 35, paragrafo 7, stabilisce che una valutazione dell'impatto sulla protezione dei dati specifichi le finalità dell'elaborazione e una descrizione sistematica dell'elaborazione prevista. Una descrizione sistematica di una DPIA completa potrebbe includere fattori quali i tipi di dati elaborati, per quanto tempo i dati possono essere conservati, i luoghi in cui sono localizzati e trasferiti e le terze parti che possono avere accesso a tali dati. Inoltre, la DPIA deve includere:
+
+-   una valutazione della necessità e proporzionalità delle operazioni di elaborazione in relazione alle finalità;
+
+-   una valutazione dei rischi per i diritti e le libertà delle persone fisiche;
+
+-   le misure previste per affrontare i rischi, comprese le misure di sicurezza e i meccanismi per garantire la protezione dei dati personali e per dimostrare la conformità al presente regolamento, tenendo conto dei diritti e degli interessi legittimi del soggetto dei dati e di altre persone.
+
+Nella tabella seguente contiene informazioni sui servizi Professional è rilevante per ognuno di questi elementi. Come parte 1 controller dati devono prendere in considerazione i dettagli di seguito, sono disponibili con altri fattori pertinenti, nel contesto di implementazioni specifiche del controller e impieghi dei servizi professionali.
+
+***Tabella 2 - elementi di DPIA per pertinenti servizi professionali***
+
+<!--start table here -->
+
+|||
+|:-----|:-----|
+|**Elemento di una DPIA** |**Informazioni rilevanti sui servizi professionali**|
+|Finalità dell'elaborazione|Scopi di elaborazione dei dati utilizzando i servizi professionali dipende dal controller che implementa, configurare e lo utilizza.<p>Come specificato da [Microsoft Professional Services Data Protection Addendum](http://aka.ms/professionalservicesdpa) (MPSDPA), Microsoft, un'elaborazione dei dati, elabora Consulting dati e supporto solo per fornire i servizi richiesti per il cliente, il controller di dati. Microsoft non utilizzerà supporto tecnico e dati di consulenza o derivato da esso per qualsiasi scopo commerciale pubblicità o simili.</p>|
+|Scopi di elaborazione dei dati utilizzando i servizi professionali dipende dal controller che implementa, configurare e lo utilizza.|Come specificato da [Microsoft Professional Services Data Protection Addendum](http://aka.ms/professionalservicesdpa) (MPSDPA), Microsoft, un'elaborazione dei dati, elabora Consulting dati e supporto solo per fornire i servizi richiesti per il cliente, il controller di dati. Microsoft non utilizzerà supporto tecnico e dati di consulenza o derivato da esso per qualsiasi scopo commerciale pubblicità o simili.|
+|Categorie di dati personali elaborati|Dati di supporto e Consulting indica che tutti i dati, inclusi tutti i testo, audio, video, i file di immagine o software, che vengono forniti a Microsoft tramite o per conto dei clienti (o che cliente autorizza Microsoft per ottenere da un servizio in linea) tramite un engagement con Microsoft per ottenere supporto o servizi professionali. Ciò potrebbe includere le informazioni raccolte tramite telefono, chat, posta elettronica o modulo web. Può includere descrizione dei problemi, i file trasferiti a Microsoft per risolvere i problemi relativi al supporto, risoluzione dei problemi automatizzate, o tramite l'accesso a sistemi di clienti in remoto con autorizzazione di clienti.<p>I dati dei clienti e dati di supporto non includere contatto cliente o dati fatturazione, ad esempio informazioni sulla sottoscrizione e dati di pagamento, quale Microsoft raccoglie ed elabora in quanto un controller di dati e che è compreso nell'ambito di questo documento.</p>|
+|Conservazione dei dati|Microsoft manterrà Consulting dati e supporto per la durata di un periodo di conservazione dopo l'engagement termina se necessario, per garantire una qualità più l'engagement per i clienti e continuità del servizio. Ad esempio, dopo la chiusura di un caso del supporto tecnico i dati è dati normalmente vengono mantenuti per un periodo garantire la possibilità di farvi riferimento se il problema Emerge nuovamente e il caso viene riaperto.<p>Quando i servizi professionali fornisce il supporto, la lunghezza di engagement viene definita quando viene chiuso il caso del supporto tecnico. Quando i servizi professionali fornisce servizi di consulenza, la lunghezza di engagement spesso dipende dall'ordine di lavoro. In altri casi, la lunghezza di engagement è definita per la gestione delle relazioni commerciali. In tutti i casi, supporto e dati Consulting eliminando o restituiti su richiesta o in conformità con le istruzioni del cliente tempestivamente utilizzando le funzionalità descritte in *Data soggetto diritti Guide*di servizi professionali.</p>|
+|Ubicazione e trasferimento dei dati personali|La natura dei servizi professionali, tra cui la necessità di fornire il supporto rappresentato dai dati possono essere trasferiti in tutto il mondo. Un elenco di posizioni in che Microsoft opera è disponibile su richiesta. Per servizi di consulenza, dati possono essere conservati nel paese se accettato di all'interno dell'ordine di lavoro.<p>Per verificare i dati personali da economico europeo e Svizzera, Microsoft che consente di trasferire di dati personali da un paese terzo o un'organizzazione internazionale sono soggetti a garanzie appropriate come descritto nell'articolo 46 del PILR. Oltre a impegni di Microsoft in clausole contrattuali Standard per i processori e altri contratti modello come descritto in [MPSDPA](http://aka.ms/professionalservicesdpa), Microsoft certificato UE-Stati Uniti e degli Stati Uniti Svizzera Privacy scudo Framework e gli impegni sono implica una serie.|
+|Condivisione dati con terze parti|Microsoft condivide dati con terze parti che agiscono come i processori secondaria a supporto delle funzioni, ad esempio clienti e supporto tecnico, manutenzione del servizio e altre operazioni. Qualsiasi conto di lavoro in cui Microsoft trasferisce Consulting dati e supporto avranno stipulato accordi scritti con Microsoft che non sono meno alcuna protezione dei termini di protezione dei dati della [MPSDPA](http://aka.ms/professionalservicesdpa). Tutti i processori secondaria di terze parti con i dati Consulting e supporto sono condivise in [MPSDPA](http://aka.ms/professionalservicesdpa) sono inclusi nell' [Elenco Microsoft commerciali supporto appaltatori](http://aka.ms/servicesapprovedsuppliers).<p>Microsoft non divulgheranno Consulting dati e supporto alle forze a meno che non obbligate per legge. Se forze contatti Microsoft con una richiesta per il supporto e dati di consulenza, Microsoft tenterà di reindirizzare l'agenzia di applicazione della legge per richiedere che i dati direttamente dal cliente. Se farsi rivelare Consulting dati e supporto all'applicazione della legge, Microsoft immediatamente una notifica al cliente e fornire una copia della richiesta, a meno che non consentito livello legale in questo modo.<p>Alla ricezione di qualsiasi altra richiesta di terze parti di supporto e dati Consulting, Microsoft prontamente notificare cliente a meno che non consentita dalla legge applicabile. Richiesta verrà rifiutata Microsoft a meno che non obbligate per legge a conformità. Se la richiesta è valida, Microsoft tenterà di reindirizzare la terza parte per richiedere i dati direttamente dal cliente.</p>|
+|Diritti del soggetto dei dati|Quando si opera come processore, Microsoft rende disponibile per clienti (controller di dati) i dati personali di argomenti relativi dati e la possibilità di soddisfare le richieste di oggetto dati quando si esercitare i propri diritti sotto il PILR. È stata eseguita in modo che in modo coerente con la funzionalità del prodotto e il ruolo del processore. Se si riceve una richiesta da dati statistici del cliente esercizio uno o più dei propri diritti in base PILR, è reindirizzare i dati soggetti a effettuare la richiesta direttamente al  controllo dei dati.<p>*Professional servizi dati soggetto richieste PILR documentazione* fornisce una descrizione di come può dell'indirizzo del cliente obblighi diritti oggetto dati in servizi professionali.</p>|
+Una valutazione della necessità e proporzionalità delle operazioni di trattamento in relazione agli scopi|Tale valutazione dipenderà dalle esigenze del titolare del trattamento dei dati e dalle finalità dell'elaborazione.<p>Per quanto riguarda l'elaborazione eseguita da Microsoft, quali l'elaborazione è necessaria e proporzionali allo scopo di fornire i servizi al controller di dati. Microsoft si impegna a questo in [MPSDPA](http://aka.ms/professionalservicesdpa).</p>|
+|Una valutazione dei rischi per i diritti e le libertà del soggetto dei dati|I rischi chiavi per i diritti e delle libertà delle persone interessate dall'utilizzo di servizi professionali sarà una funzione di come e nel quale contesto controller dati implementa, configurare e utilizza i servizi professionali e le soluzioni fornite da Professional Servizi.<p>Tuttavia, come per gli altri servizi, i dati personali trattenuti nel servizio potrebbero essere a rischio di accesso non autorizzato o divulgazione involontaria. Le misure adottate da Microsoft per affrontare tali rischi sono illustrate di seguito.</p>|
+| Le misure previste per affrontare i rischi, comprese le misure di sicurezza e i meccanismi per garantire la protezione dei dati personali e per dimostrare la conformità al RGPD, tenendo conto dei diritti e degli interessi legittimi del soggetto dei dati di altre persone<!--is this the correct ending? -->|Microsoft si impegna a proteggere la sicurezza delle informazioni sui clienti. Conformità con le disposizioni dell'articolo 32 del PILR, Microsoft ha implementato e verrà gestire e seguire appropriate misure tecniche e dell'organizzazione progettate per proteggere i dati Consulting con accidentali, non autorizzati o illecito e supporto accesso, divulgazione, modifica, perdita o distruzione.<p>Inoltre, Microsoft rispetta tutti gli altri obblighi RGPD che si applicano ai responsabili del trattamento dei dati, inclusi, a titolo esemplificativo ma non esaustivo, le valutazioni di impatto sulla protezione dei dati e il mantenimento dei record.</p>|
+|||
+
+<!-- end of table -->
+
+[^1]: With respect to the criteria that the processing be on a “large scale,” Recital 91 of the GDPR clarifies that: “The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional or lawyer. In such cases, a data protection impact assessment should not be mandatory.”
+
+
+#### <a name="learn-more"></a>Altre informazioni
+[Centro protezione Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
