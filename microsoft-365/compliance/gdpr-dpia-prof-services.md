@@ -4,18 +4,18 @@ description: In questo documento vengono fornite controller dei dati con informa
 keywords: Documentazione relativa a Microsoft 365 DPIA, Microsoft Professional Services, PILR
 robots: NOINDEX,NOFOLLOW
 author: BrendaCarter
-ms.localizationpriority: high
+ms.localizationpriority: Priority
 audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: bcarter
 manager: laurawi
 ms.collection: GDPR
-ms.openlocfilehash: 9e710c3b8ec0c467c36a675c2d76eabb3af1f0f6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 316f780fc324f95783416c52070b38c12d5078af
+ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 12/12/2018
 ms.locfileid: "26868536"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-professional-services"></a>Valutazioni impatto protezione dati: Indicazioni per i controller di dati tramite i servizi professionali Microsoft
