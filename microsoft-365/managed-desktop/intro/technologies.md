@@ -3,14 +3,14 @@ title: Tecnologie Microsoft Desktop gestiti
 description: In questo argomento sono elencate le applicazioni utilizzate in Microsoft Desktop gestiti e le tecnologie.
 keywords: Servizio Microsoft Desktop gestiti, Microsoft 365, documentazione
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: da0268c6b0eddbd44cf62de2a95b963a443c3278
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4b26ec88e1f4ca95fee6f7c4c927fc06cab32135
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868484"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologie Microsoft Desktop gestiti
@@ -38,7 +38,7 @@ Skype per il Cloud Online Business PBX | Questa funzionalità è disponibile tra
  |
  --- | ---
 Protezione delle credenziali |  Microsoft Desktop gestiti verrà vengono fornite informazioni e gestione di aspetti cloud di questa funzionalità
-Protezione del dispositivo (controllo delle applicazioni di Windows Defender)   | Microsoft Desktop gestiti verrà creato il criterio. Gestiranno delle firme dei clienti
+Protezione del dispositivo (controllo delle applicazioni di Windows Defender) | Microsoft Desktop gestiti verrà creato il criterio. Gestiranno delle firme dei clienti
 Gestione AppLocker |  Microsoft Desktop gestiti verrà creato il criterio. Gestiranno delle firme dei clienti
 Application Virtualization (App-V) |    Desktop gestiti Microsoft non supporta questo tipo di distribuzione come non è supportato in Intune.
 Virtualizzazione di esperienza utente (UE-V) | Non viene utilizzato con i dispositivi Microsoft Managed Desktop gestiti

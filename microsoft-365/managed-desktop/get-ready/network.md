@@ -3,14 +3,14 @@ title: Configurazione di rete per Desktop gestiti Microsoft
 description: ''
 keywords: Servizio Microsoft Desktop gestiti, Microsoft 365, documentazione
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 3eab9237b177ea76faa1296fec2bfda739c78534
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 88f095706c82736d4c2ebc6a555aa3e384eeca09
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868834"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configurazione di rete per Desktop gestiti Microsoft
@@ -45,7 +45,7 @@ Servizio Microsoft | Origine documentazione - URL obbligatorio in elenco Consent
 Windows Update per le aziende (WUfB) | [Windows Update per i requisiti aziendali firewall e proxy](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
 Ottimizzazione di recapito | [Requisiti del proxy di Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update)
 Microsoft Store for Business | [Elenco Consenti Store Microsoft](https://support.microsoft.com/help/2778122/using-authenticated-proxy-servers-together-with-windows-8)
-Office 365 | [Intervalli di indirizzi IP e URL di Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Office 365 | [Office 365 URL e intervalli di indirizzi IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) inclusi \*. apibasic.diagnostics.office.com
 Azure Active Directory | [Identità ibrida necessaria porte e protocolli](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-ports) e [Active Directory e dei requisiti porta di servizi di dominio di Active Directory](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Requisiti di configurazione di rete Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
 OneDrive for Business <br> | [Necessari gli URL e le porte per OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports)

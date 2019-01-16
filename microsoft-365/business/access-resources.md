@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Informazioni su come accedere a risorse locali come in applicazioni Line-Of-Business, condivisioni file e stampanti da un Azure Active Directory appartenente dispositivo Windows 10.
 ms.openlocfilehash: 0a5d4b0828888fcb99676223000c446479f84ddc
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868306"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Accesso locale risorse da un dispositivo Azure Active Directory aggiunti in Microsoft 365 Business

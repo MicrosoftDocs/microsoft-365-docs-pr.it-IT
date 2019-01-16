@@ -11,11 +11,11 @@ ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
 description: Passaggi del processo di pianificazione, distribuzione e che influisce sul valore di Exchange Online in Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: 36b24290acd4467400eab86b4c2760ccad65deab
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: aafa1b28546eb77938bb3e4a5ebe9ccd60b9a60b
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868901"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Distribuzione di Exchange Online per Microsoft 365 Enterprise
@@ -29,7 +29,7 @@ Se si è nuova in Exchange Online, vedere [Microsoft Exchange Online](https://pr
 Le fasi e i passaggi seguenti viene illustrato il processo di definizione degli obiettivi il ruolo di Exchange Online nell'organizzazione, onboarding all'organizzazione di Exchange Online tramite una serie di implementazioni progressive e che influisce sui dati di utilizzo di Exchange Online e la relativa proprietà valore per gli utenti finali.
 
 >[!Note]
->In queste istruzioni distribuzione devono essere seguite solo dopo aver completato l' [infrastruttura foundation](deploy-foundation-infrastructure.md) Microsoft 365 Enterprise.
+>In queste istruzioni distribuzione devono essere seguite solo dopo aver completato la [Fase 2-Identity](identity-infrastructure.md) dell'infrastruttura di Enterprise 365 Microsoft foundation.
 >
 
 ## <a name="phase-1-envision"></a>Fase 1: concezione
@@ -38,7 +38,7 @@ In questa fase, raccogliere le persone per la distribuzione di Exchange Online e
 
 ### <a name="step-1-gather-your-exchange-online-deployment-members"></a>Passaggio 1: Raccogliere i membri di distribuzione di Exchange Online
 
-Per una corretta distribuzione di Exchange Online in primo piano rispetto a Microsoft 365 [infrastruttura foundation](deploy-foundation-infrastructure.md), è necessario ottenere le persone giuste per l'input e commenti e suggerimenti. Utenti principali includono dirigenti aziendali, il personale IT, ad esempio gli architetti e ai responsabili dell'implementazione e sostenitori per gli utenti finali. 
+Per una corretta distribuzione di Exchange Online nella [Fase 2-Identity](identity-infrastructure.md) dell'infrastruttura di base Microsoft 365 Enterprise, è necessario ottenere le persone giuste per l'input e commenti e suggerimenti. Utenti principali includono dirigenti aziendali, il personale IT, ad esempio gli architetti e ai responsabili dell'implementazione e sostenitori per gli utenti finali. 
 
 Questi tre gruppi verificare che la distribuzione di Exchange Online include considerazioni che soddisfare le esigenze aziendali, aspetti tecnici di sicurezza e la migrazione delle cassette postali e che il risultato è un elemento che verrà utilizzato dagli utenti tipici.
 
@@ -74,7 +74,7 @@ Un elenco di scenari di Exchange Online che consente di risolvere le esigenze de
 
 In questa fase, pianificare gli aspetti tecnici di una distribuzione di Exchange Online e avviare attuare a gruppi di utenti selezionati.
 
-### <a name="prerequisites-identity-and-device-access-configuration"></a>Prerequisiti: Configurazione di accesso di identità e il dispositivo
+### <a name="prerequisites-identity-and-device-access-configuration"></a>Prerequisiti: configurazione di identità e accesso dei dispositivi
 
 Per proteggere l'accesso alle cassette postali di Exchange Online, verificare di aver configurato [identity e il dispositivo le regole di accesso](identity-access-policies.md) e [consigliati i criteri di accesso Exchange Online](secure-email-recommended-policies.md).
 
@@ -86,7 +86,7 @@ Se si sta eseguendo la propria pianificazione o in combinazione con FastTrack, �
 
 Utilizzare le risorse per preparare gli aspetti tecnici di un'implementazione di Exchange Online: 
 
-- [Modalità di migrazione della posta elettronica a Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842)
+- [Modalità di migrazione della posta elettronica a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Advisor migrazione della posta di Office 365](https://portal.office.com/onboarding/mailsetupadvisor#/) (deve essere eseguito l'accesso alla sottoscrizione Office 365)
 - [Collaborazione in Exchange Online](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Destinatari in Exchange Online](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
@@ -165,7 +165,7 @@ Dopo la distribuzione Exchange Online per l'intera organizzazione, è necessario
 Ecco alcune attività suggerite:
 
 - Vedere [Linee guida sull'adozione di Office 365](https://aka.ms/successfactors) per informazioni sulle procedure consigliate generali relative all'adozione di servizi cloud. 
-- Vedere i [report attività di Office 365](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263) per comprendere l'utilizzo del servizio di Office 365 nell'organizzazione. Se non si è un amministratore globale di Office 365 per l'organizzazione, chiedere a qualcun altro le autorizzazioni Lettore report per poter accedere ai report attività.
+- Vedere i [report attività di Office 365](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) per comprendere l'utilizzo del servizio di Office 365 nell'organizzazione. Se non si è un amministratore globale di Office 365 per l'organizzazione, chiedere a qualcun altro le autorizzazioni Lettore report per poter accedere ai report attività.
 - Monitorare l'ambito della commenti e suggerimenti (un canale pubblico in un team di team o di Yammer centrale) per i problemi e commenti dei singoli utenti sulle proprie esperienze con Exchange Online. Risolvere rapidamente è possibile evitare riesca singoli utenti e viene illustrato il supporto per la distribuzione di domande e problemi.
 - Identificare e coltivare e rafforzare champions in ogni categoria business ed evidenziare i risultati e le procedure consigliate con Exchange Online. Riflettono i successi fuori all'organizzazione di visualizzare l'adozione e la riuscita del progetto. Visto responsabili tecnici all'interno di un gruppo aziendale può esercitare un fattore determinante su coordinatori e forme di pari livello.
 

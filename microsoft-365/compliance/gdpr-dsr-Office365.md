@@ -240,9 +240,9 @@ Questo esempio restituisce i messaggi e-mail che contengono i numeri ID specific
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>Uso di elementi parzialmente indicizzati in Ricerca contenuto
 
-Gli elementi parzialmente indicizzati (denominati anche *elementi non indicizzati*) sono elementi della cassetta postale di Exchange Online e documenti sui siti di SharePoint Online e OneDrive for Business che per qualche ragione non sono stati completamente indicizzati per la ricerca e che pertanto non possono essere cercati tramite Ricerca contenuto. La maggior parte dei messaggi e-mail e dei documenti dei siti viene indicizzata correttamente perché rientra nei [limiti di indicizzazione di Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??d??). I motivi che possono impedire l'indicizzazione dei messaggi e-mail e dei file per la ricerca sono i seguenti:
+Gli elementi parzialmente indicizzati (denominati anche *elementi non indicizzati*) sono elementi della cassetta postale di Exchange Online e documenti sui siti di SharePoint Online e OneDrive for Business che per qualche ragione non sono stati completamente indicizzati per la ricerca e che pertanto non possono essere cercati tramite Ricerca contenuto. La maggior parte dei messaggi e-mail e dei documenti dei siti viene indicizzata correttamente perché rientra nei [limiti di indicizzazione di Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d??d??d??d??). I motivi che possono impedire l'indicizzazione dei messaggi e-mail e dei file per la ricerca sono i seguenti:
 
--   Il tipo di file [non è riconosciuto o non è supportato per l'indicizzazione](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??). Accade talvolta che il tipo di file sia supportato per l'indicizzazione, ma che si verifichi un errore di indicizzazione per un file specifico.
+-   Il tipo di file [non è riconosciuto o non è supportato per l'indicizzazione](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??b??b??). Accade talvolta che il tipo di file sia supportato per l'indicizzazione, ma che si verifichi un errore di indicizzazione per un file specifico.
 
 -   I messaggi e-mail hanno un file allegato senza un gestore valido, ad esempio un file immagine (che rappresenta la causa più comune di elementi di e-mail parzialmente indicizzati).
 
@@ -250,7 +250,7 @@ Gli elementi parzialmente indicizzati (denominati anche *elementi non indicizzat
 
 È consigliabile approfondire l'argomento degli elementi parzialmente indicizzati per poterli usare per rispondere alle richieste DSR. Per altre informazioni, vedere:
 
--   [Partially indexed items in Content Search in Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??) (Elementi parzialmente indicizzati in Ricerca contenuto in Office 365)
+-   [Partially indexed items in Content Search in Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b??b??b??b??) (Elementi parzialmente indicizzati in Ricerca contenuto in Office 365)
 
 -   [Investigating partially indexed items in Office 365 eDiscovery](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed) (Analisi di elementi parzialmente indicizzati in eDiscovery di Office 365)
 

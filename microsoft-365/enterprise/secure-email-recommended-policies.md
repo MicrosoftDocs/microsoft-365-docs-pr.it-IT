@@ -10,11 +10,11 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: dd1504ac11f0e2eefa56572af24de14b5f87830e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f3d3d72ddf9129997dd4232a578e1f101f113a53
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868289"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Criteri consigliati per la protezione della posta elettronica
@@ -34,20 +34,20 @@ Se sono inclusi Exchange Online e Outlook nell'ambito dei criteri quando si impo
 
 |Livello di protezione|Criteri|Ulteriori informazioni|
 |:---------------|:-------|:----------------|
-|**Protezione di base**|[È necessario MFA per i rischi di accesso impostato *su medio* o *alta*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere Exchange Online nelle assegnazioni delle applicazioni basate su cloud.|
-|        |[Bloccare i client che non supportano l'autenticazione moderno](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere Exchange Online nelle assegnazioni delle applicazioni basate su cloud.|
-|        |[Definire criteri di protezione delle app](identity-access-policies.md#high-risk-users-must-change-password)|Assicurarsi di che Outlook è incluso nell'elenco delle applicazioni. È necessario aggiornare il criterio per ogni piattaforma (iOS, Android, Windows).|
-|        |[Richiedi App approvate](identity-access-policies.md#require-approved-apps)|Includere Exchange Online nell'elenco delle applicazioni basate su cloud.|
-|        |[Richiedi PC Compatible](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere Exchange Online nell'elenco delle applicazioni basate su cloud.|
-|        |[Client ActiveSync blocco](#block-activesync)|Aggiungere il nuovo criterio. 
-|**Dati sensibili**|[È necessario MFA per i rischi di accesso sono *bassa*, *Media* o *alta*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Includere Exchange Online nelle assegnazioni delle applicazioni basate su cloud.|
-|         |[Richiedi compatibile con PC *e* dispositivi mobili](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Includere Exchange Online nell'elenco delle applicazioni basate su cloud.|
-|**Protezione per ambienti altamente regolamentati**|[*Sempre* richiedono MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere Exchange Online nelle assegnazioni delle applicazioni basate su cloud |
+|**Protezione di base**|[È necessario MFA per i rischi di accesso impostato *su medio* o *alta*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere Exchange Online nell'assegnazione delle applicazioni basate su cloud|
+|        |[Bloccare i client che non supportano l'autenticazione moderno](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere Exchange Online nell'assegnazione delle applicazioni basate su cloud|
+|        |[Definire criteri di protezione delle app](identity-access-policies.md#high-risk-users-must-change-password)|Assicurarsi di che Outlook è incluso nell'elenco delle applicazioni. È necessario aggiornare il criterio per ogni piattaforma (iOS, Android, Windows)|
+|        |[Richiedi App approvate](identity-access-policies.md#require-approved-apps)|Includere Exchange Online nell'elenco delle applicazioni basate su cloud|
+|        |[Richiedi PC Compatible](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere Exchange Online nell'elenco delle applicazioni basate su cloud|
+|        |[Client ActiveSync blocco](#block-activesync-clients)|Aggiungere il nuovo criterio| 
+|**Dati sensibili**|[È necessario MFA per i rischi di accesso sono *bassa*, *Media* o *alta*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Includere Exchange Online nell'assegnazione delle applicazioni basate su cloud|
+|         |[Richiedi compatibile con PC *e* dispositivi mobili](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Includere Exchange Online nell'elenco delle applicazioni basate su cloud|
+|**Protezione per ambienti altamente regolamentati**|[*Sempre* richiedono MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere Exchange Online nell'assegnazione delle applicazioni basate su cloud|
 
 ## <a name="block-activesync-clients"></a>Client ActiveSync blocco
 Questo criterio impedisce che i client ActiveSync ignorando le altre regole di accesso condizionale. La regola viene applicata solo ai client di ActiveSync. Selezionando **richiedono approvato client app**questo criterio consente di bloccare i client ActiveSync. Per configurare il criterio:
 
-1. Andare nel [portale di Azure](https://portal.azure.com) e accedere con le proprie credenziali. Dopo l'accesso viene visualizzato il dashboard di Azure.
+1. Accedere al [portale di Azure](https://portal.azure.com)e accedere con le proprie credenziali. Dopo aver completato l'accesso, viene visualizzato il dashboard di Azure.
 
 2. Scegliere **Azure Active Directory** dal menu a sinistra.
 
@@ -59,15 +59,17 @@ Questo criterio impedisce che i client ActiveSync ignorando le altre regole di a
 
 6. Scegliere **App cloud**.
 
-7. Scegliere **Seleziona App**, selezionare Exchange Online di Office 365. Fare clic su **Seleziona** e **Fine**.
+7. Scegliere **Seleziona App**, selezionare **Exchange Online di Office 365**. Scegliere **Seleziona** e **Fine**.
+
 8. Scegliere **le condizioni**e quindi fare clic su **applicazioni Client**.
-9. Per **configurare**, selezionare **Sì**. Controllare solo le operazioni seguenti: **App per dispositivi mobili e i client desktop** e **i client Exchange ActiveSync**. Fare clic su **Chiudi**.
+
+9. Per **configurare**, selezionare **Sì**. Controllare solo le operazioni seguenti: **App per dispositivi mobili e i client desktop** e **i client Exchange ActiveSync**. Scegliere **Fine**.
 
 10. Scegliere **Concedi** nella sezione **Controlli di accesso**.
 
 11. Scegliere **concedere l'accesso**, selezionare **Richiedi approvato dall'applicazione client**.  Per più controlli, selezionare **Richiedi i controlli selezionati**, quindi scegliere **Seleziona**. 
 
-12. Fare clic su **Crea**.
+12. Scegliere **Create**.
 
 ## <a name="setup-office-365-message-encryption"></a>Configurare la crittografia dei messaggi di Office 365
 Con le nuove funzionalità di Office 365 messaggio crittografia (OME), che utilizza la funzionalità di protezione in Azure Information Protection, l'organizzazione può condividere facilmente posta protetto con tutti gli utenti con qualsiasi dispositivo. Gli utenti possono inviare e ricevere messaggi protetti con altre organizzazioni di Office 365, nonché i clienti non Office 365 che utilizzano Outlook.com, Gmail e altri servizi di posta elettronica.

@@ -3,14 +3,14 @@ title: Aggiungere contatti Admin nel portale di amministrazione di Microsoft Des
 description: Commenti su chi contattare per ogni area di stato attivo.
 keywords: Servizio Microsoft Desktop gestiti, Microsoft 365, documentazione
 ms.service: m365-md
-author: jdeckerms
+author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 65dd8709c469826e2696015c13823c58eb10e342
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 31984609681b6e3b1b6de9996eb8fb0fcf6f5624
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868458"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Aggiungere contatti Admin nel portale di amministrazione di Desktop gestiti Microsoft
@@ -25,11 +25,11 @@ Portale di amministrazione di Desktop gestiti Microsoft deve disporre di accesso
 - Amministratore fatturazione
 - Amministratore del servizio supporto tecnico
 
-Per ulteriori informazioni su questi ruoli e di assegnarli in Azure Active Directory, vedere [autorizzazioni di ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+L'amministratore globale deve essere quello per registrare il cliente in Microsoft Desktop gestiti.  I cinque ruoli avere lo stesso accesso all'interno del portale di amministrazione per avviare e visualizzare le attività.  Per ulteriori informazioni sull'assegnazione di questi ruoli in Azure Active Directory, vedere [autorizzazioni di ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
 ## <a name="admin-contact-focus-areas"></a>Amministrazione aree contatto
 
-Contatti di amministrazione devono essere la migliore utente o gruppo che può rispondere alle domande e prendere decisioni per aree diverse. Queste aree includono:
+Contatti di amministrazione devono essere la migliore utente o gruppo che può rispondere alle domande e prendere decisioni per aree diverse.  Microsoft Operations Desktop gestiti contatterà tali contatti Admin per domande riguardanti le richieste di assistenza archiviate dal cliente.  Tali contatti Admin riceverà le notifiche per i nuovi messaggi e gli aggiornamenti di richiesta di supporto.  Queste aree includono:
 
 Area di interesse | Per ulteriori informazioni su
 --- | ---

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Utilizzare questa guida dei laboratori di testing per registrare i dispositivi nell'ambiente di test Microsoft 365 e gestirle in modalità remota.
-ms.openlocfilehash: 98696104ee8453adb7449980cf439eeb152aeea9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: a78db19099ccacd1b2f62e8438d1749f28d22f52
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868416"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Registrazione dei dispositivi iOS e Android nell'ambiente di testing di Microsoft 365 Enterprise
@@ -76,7 +76,7 @@ Esplora le funzionalità aggiuntive [gestione dei dispositivi mobili](m365-enter
 
 [Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
   
-[Criteri MAM per l'ambiente di testing di Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Ambiente di testing di criteri di conformità di dispositivo per la propria azienda 365 Microsoft](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
 [Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 

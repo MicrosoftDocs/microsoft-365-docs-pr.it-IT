@@ -10,10 +10,10 @@ ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
 ms.openlocfilehash: 21a4198c688e1865a029f18ff3ceeb2155d419e4
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868813"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Passaggio 1: Preparare l'organizzazione per Windows 10 Enterprise

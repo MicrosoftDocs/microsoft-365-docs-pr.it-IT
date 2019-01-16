@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurare basata su gruppo di gestione delle licenze e l'appartenenza al gruppo dinamica nell'ambiente di test Microsoft 365 aziendale.
-ms.openlocfilehash: 46d2f0ca063b387d1a4a51b4ea97bd5d60c03fe5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 45a78af202f2d9ab029683aae4d95ed9a3370b08
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868667"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatizzare l'appartenenza al gruppo e sulle licenze per l'ambiente di test Microsoft 365 Enterprise
@@ -47,7 +47,7 @@ Se si desidera testare gestione automatica delle licenze e l'appartenenza al gru
 
 Per prima cosa, si crea un nuovo gruppo di vendite e aggiungere una regola di appartenenza al gruppo dinamico in modo che gli account utente con il reparto impostato su vendite vengono aggiunti automaticamente al gruppo vendite.
 
-1. Utilizza un'istanza del browser Internet privata, accedere al portale di Office 365 in [https://portal.office.com](https://portal.office.com) con l'account amministratore globale della sottoscrizione di prova di Office 365 E5.
+1. Utilizza un'istanza del browser Internet privata, effettuare l'accesso al portale di Office in [https://office.com](https://office.com) con l'account amministratore globale della sottoscrizione di prova di Office 365 E5.
 2. In una scheda separata del browser, accedere al portale di Azure in [https://portal.azure.com](https://portal.azure.com).
 3. Nel portale di Azure fare clic su **Azure Active Directory > Utenti e gruppi > Tutti i gruppi**.
 4. Su blade **tutti i gruppi** , fare clic su **nuovo gruppo**.

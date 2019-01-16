@@ -12,10 +12,10 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 description: Utilizzare questa guida dei laboratori di testing per abilitare la gestione degli accessi privilegiato l'ambiente di testing Microsoft 365 Enterprise.
 ms.openlocfilehash: 5f1a416a12171504af110ec62b9a7882143263e6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868287"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365 Enterprise

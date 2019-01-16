@@ -11,45 +11,44 @@ ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
 - goldenconfig
-ms.openlocfilehash: 2f5658146df3da7cc28c907b33e5035a84628fc5
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 72dd50649dba9e290d50c2831557c06db3cb7586
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868564"
 ---
-# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Suggerimenti sui criteri per la protezione di siti e file di SharePoint
-In questo articolo viene descritto come implementare l'identità consigliata e i criteri di accesso di dispositivi per la protezione di SharePoint Online e OneDrive for Business. Questa guida si basa sul [dispositivo le regole di accesso e identità comuni](identity-access-policies.md). 
-
+# <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Suggerimenti di criteri per la protezione dei file e i siti di SharePoint
+In questo articolo viene descritto come implementare l'identità consigliata e i criteri di accesso ai dispositivi per la protezione di SharePoint Online e OneDrive for Business. Questa guida si basa sul [dispositivo le regole di accesso e identità comuni](identity-access-policies.md). 
 
 Queste procedure consigliate basate su tre diversi livelli di sicurezza e protezione per i file di SharePoint che possono essere applicati in base la granularità delle proprie esigenze: **linea di base**, **riservati**e **altamente regolamentato**. È possibile ulteriori informazioni su questi livelli di sicurezza e i sistemi operativi client consigliato, per fare riferimento a questi suggerimenti in [Panoramica](microsoft-365-policies-configurations.md).
 
-Oltre all'implementazione di questa Guida, assicurarsi di configurare siti di SharePoint con la quantità destra di protezione, inclusa la verifica delle autorizzazioni per i contenuti sensibili e altamente regolamentato sono appropriati. Per ulteriori informazioni sulla creazione di siti per la protezione riservati e altamente regolamentato linea di base, vedere [file e siti di SharePoint Online sicura](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files). 
+Oltre all'implementazione di questa Guida, assicurarsi di configurare siti di SharePoint con la quantità di protezione, inclusa l'impostazione delle autorizzazioni appropriate per il contenuto sensibile e altamente regolamentato destra. Per ulteriori informazioni sulla creazione di siti per la protezione riservati e altamente regolamentato linea di base, vedere [file e siti di SharePoint Online sicura](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files). 
 
 ## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>Aggiornamento dei criteri comuni per includere SharePoint e OneDrive for Business
-Nel diagramma seguente illustra il set di criteri consigliati per la protezione dei file in SharePoint Online e OneDrive for Business. Indica i criteri verranno aggiornati o appena creati per l'applicazione della protezione in SharePoint Online e OneDrive for Business.
+Nel diagramma seguente illustra il set di criteri consigliati per la protezione dei file in SharePoint Online e OneDrive for Business. Indica i criteri devono essere aggiornati o appena creati per l'applicazione della protezione in SharePoint Online e OneDrive for Business.
 
 ![Riepilogo dei criteri per SharePoint Online e OneDrive](../images/identity-access-ruleset-sharepoint.png)
 
-Se è stato incluso SharePoint Online durante la creazione di criteri comuni, è necessario solo creare il nuovo polcies. Quando si configurano le regole di accesso condizionale, SharePoint Online include OneDrive for Business.
+Se è stato incluso SharePoint Online durante la creazione di criteri comuni, è necessario creare solo i nuovi criteri. Quando si configurano le regole di accesso condizionale, SharePoint Online include OneDrive for Business.
 
-I nuovi criteri di implementano di protezione dispositivo per contenuti sensibili e altamente regolamentato applicando requisiti specifici di accesso ai siti di SharePoint specificato. 
+I nuovi criteri di implementano di protezione di dispositivo per contenuti sensibili e altamente regolamentato applicando requisiti specifici di accesso ai siti di SharePoint specificato. 
 
- Nella tabella seguente sono elencati i criteri che è necessario eseguire una revisione e l'aggiornamento o crearne uno nuovo per SharePoint Online. I criteri comuni collegamento alle istruzioni di configurazione associata nell'articolo [identità e dispositivi comuni le regole di accesso](identity-access-policies.md) (collegamenti disponibile a breve).
+Nella tabella seguente sono elencati i criteri che è necessario eseguire una revisione e l'aggiornamento o crearne uno nuovo per SharePoint Online. I criteri comuni collegamento alle istruzioni di configurazione associata nell'articolo [comuni criteri di accesso di dispositivi e identità](identity-access-policies.md) .
 
 
 |Livello di protezione|Criteri|Ulteriori informazioni|
 |:---------------|:-------|:----------------|
-|**Protezione di base**|[È necessario MFA per i rischi di accesso impostato *su medio* o *alta*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere SharePoint Online nelle assegnazioni di applicazioni basate su cloud.|
-|        |[Bloccare i client che non supportano l'autenticazione moderno](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere SharePoint Online nelle assegnazioni di applicazioni basate su cloud.|
-|        |[Definire criteri di protezione delle app](identity-access-policies.md#define-app-protection-policies)|Assicurarsi che tutte le app consigliate sono inclusi nell'elenco delle applicazioni. È necessario aggiornare il criterio per ogni piattaforma (iOS, Android, Windows).|
-|        |[Richiedi PC Compatible](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere SharePoint Online nell'elenco delle applicazioni basate su cloud.|
-|        |[Utilizzare le restrizioni applicate app in SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Aggiungere il nuovo criterio. In questo modo si comunica Azure Active Directory per utilizzare le impostazioni specificate in SharePoint Online. Questa regola si applica a tutti gli utenti ma riguarda solo l'accesso ai siti inclusi in SharePoint Online criteri di accesso.
-|**Dati sensibili**|[È necessario MFA per i rischi di accesso sono *bassa*, *Media* o *alta*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Includere SharePoint Online nelle assegnazioni di applicazioni basate su cloud.|
-|         |[Richiedi compatibile con PC *e* dispositivi mobili](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Includere SharePoint Online nell'elenco delle applicazioni basate su cloud.|
-||[Criteri di controllo di accesso SharePoint Online](#sharepoint-online-access-control-policies): consentire l'accesso solo browser specifici siti di SharePoint da dispositivi non gestiti|In tal modo, modifica e per il download dei file. Utilizzare PowerShell per specificare i siti.|
-|**Protezione per ambienti altamente regolamentati**|[*Sempre* requrie MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere SharePoint Online nelle assegnazioni di applicazioni basate su cloud. |
-||[Criteri di controllo di accesso SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online): bloccare l'accesso a siti di SharePoint specifici dai dispositivi non gestiti|Utilizzare PowerShell per specificare i siti.|
+|**Protezione di base**|[È necessario MFA per i rischi di accesso impostato *su medio* o *alta*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere SharePoint Online all'assegnazione di applicazioni basate su cloud|
+|        |[Bloccare i client che non supportano l'autenticazione moderno](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere SharePoint Online all'assegnazione di applicazioni basate su cloud|
+|        |[Definire criteri di protezione delle app](identity-access-policies.md#define-app-protection-policies)|Assicurarsi che tutte le app consigliate sono inclusi nell'elenco delle applicazioni. È necessario aggiornare il criterio per ogni piattaforma (iOS, Android, Windows)|
+|        |[Richiedi PC Compatible](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere SharePoint Online nell'elenco delle applicazioni basate su cloud|
+|        |[Utilizzare le restrizioni applicate app in SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online)|Aggiungere il nuovo criterio. In questo modo si comunica Azure Active Directory per utilizzare le impostazioni specificate in SharePoint Online. Questa regola si applica a tutti gli utenti, ma riguarda solo l'accesso ai siti inclusi in Criteri di accesso di SharePoint Online|
+|**Dati sensibili**|[È necessario MFA per i rischi di accesso sono *bassa*, *Media* o *alta*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere SharePoint Online nelle assegnazioni di applicazioni basate su cloud|
+|         |[Richiedi compatibile con PC *e* dispositivi mobili](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Includere SharePoint Online nell'elenco delle applicazioni basate su cloud|
+||[Criteri di controllo di accesso SharePoint Online](#sharepoint-online-access-control-policies): consentire l'accesso solo browser specifici siti di SharePoint da dispositivi non gestiti|In tal modo, modifica e per il download dei file. Utilizzare PowerShell per specificare i siti|
+|**Protezione per ambienti altamente regolamentati**|[*Sempre* richiedono MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere SharePoint Online all'assegnazione di applicazioni basate su cloud|
+||[Criteri di controllo di accesso SharePoint Online](#use-app-enforced-restrictions-in-sharepoint-online): bloccare l'accesso a siti di SharePoint specifici dai dispositivi non gestiti|Utilizzare PowerShell per specificare i siti|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>Utilizzare le restrizioni applicate app in SharePoint Online
 Se si implementa accedere a controlli in SharePoint Online, è necessario creare questo criterio di accesso condizionale in Azure Active Directory per comunicare ai Azure Active Directory per applicare i criteri di che configurazione in SharePoint Online. Questa regola si applica a tutti gli utenti, ma solo influisce sull'accesso ai siti specificati utilizzando PowerShell quando si creano i controlli di access in SharePoint Online.
@@ -59,8 +58,8 @@ Per configurare questo Vedere criterio "bloccare o limitare l'accesso per specif
 
 ## <a name="sharepoint-online-access-control-policies"></a>Criteri di controllo di accesso SharePoint Online
 È consigliabile che proteggere il contenuto nei siti di SharePoint con contenuti sensibili e altamente regolamentato con controllo di accesso di dispositivi. Questo scopo si crea un criterio che specifica il livello di protezione e applicare la protezione per i siti. 
-- Siti riservati, consentire l'accesso solo browser. In questo modo si impedisce agli utenti di modifica e il download dei file.
-- Altamente regolamentato siti, bloccare l'accesso dai dispositivi non gestiti.
+- Siti riservati: consentire l'accesso solo browser. In questo modo si impedisce agli utenti di modifica e il download dei file.
+- Altamente regolamentato siti: bloccare l'accesso dai dispositivi non gestiti.
 
 Vedere "bloccare o limitare l'accesso per specifiche raccolte siti di SharePoint o gli account OneDrive" in questo articolo: [controllare l'accesso dai dispositivi non gestiti](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622) . 
 

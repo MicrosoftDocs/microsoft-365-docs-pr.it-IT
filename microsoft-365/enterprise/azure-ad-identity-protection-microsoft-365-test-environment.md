@@ -14,10 +14,10 @@ ms.custom:
 - Ent_TLGs
 description: Configurare la protezione dell'identità di Azure Active Directory e analizzare gli account corrente nell'ambiente di testing Microsoft 365 Enterprise.
 ms.openlocfilehash: 165667ad2122839336ef0790ab5661cff53ca32b
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868363"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Ambiente di testing di Azure Active Directory Identity protezione per la propria azienda 365 Microsoft

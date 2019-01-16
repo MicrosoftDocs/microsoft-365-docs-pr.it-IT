@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a Smartphone nell'ambiente di test Microsoft 365 aziendale.
-ms.openlocfilehash: aae493e79a197635b2e14fa7f238a3189ed695ae
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 353f09253794670e8107e084acb3a01cd309fd60
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868281"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Ambiente di testing di autenticazione a più fattori per la propria azienda 365 Microsoft
@@ -50,7 +50,7 @@ Se si desidera testare l'autenticazione a più fattori in un'azienda simulata, s
 
 Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel modo seguente:
   
-1. Aprire un'istanza privata separata del browser, accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e quindi accedere con l'account amministratore globale.
+1. Aprire un'istanza privata separata del browser, accedere al portale di Office ([https://office.com](https://office.com)) e quindi accedere con l'account amministratore globale.
     
 2. Dalla pagina principale del portale, fare clic su **Admin**.
     
@@ -74,7 +74,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
   
 1. Aprire una nuova istanza del browser privata.
     
-2. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) e accedere con l'account utente 2 (user2 @\<nome organizzazione >. onmicrosoft.com) e una password.
+2. Accedere al portale di Office ([https://office.com](https://office.com)) e accedere con l'account utente 2 (user2 @\<nome organizzazione >. onmicrosoft.com) e una password.
     
 3. Dopo l'accesso, viene chiesto di configurare l'account per ulteriori informazioni. Fare clic su **Avanti**.
     
@@ -94,7 +94,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
 8. Se è la prima volta che si accede con l'account User 2, viene richiesto di modificare la password. Digitare la password originale e una nuova password due volte, quindi fare clic su **Aggiornare la password ed eseguire l'accesso**. Annotare nome e password in una posizione sicura.
     
-    È consigliabile vedere portale di Office 365 per l'utente 2 nella scheda **Home page di Microsoft Office** del browser.
+    È consigliabile vedere del portale di Office per l'utente 2 nella scheda **Home page di Microsoft Office** del browser.
 
 
 Nella fase di identità per informazioni e collegamenti per distribuire l'autenticazione a più fattori nell'ambiente di produzione, vedere la sezione [configurare l'autenticazione a più fattori](identity-multi-factor-authentication.md) .

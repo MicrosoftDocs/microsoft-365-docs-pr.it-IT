@@ -13,11 +13,11 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Utilizzare la procedura seguente per proteggere gli account di amministratore globale nell'ambiente di test Microsoft 365 aziendale.
-ms.openlocfilehash: 233e2178b060df4950c340e034d5f51216fac8fb
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4d444e217c5a232811701f6519c2eb3ebe86df70
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868302"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Proteggere gli account di amministratore globale nell'ambiente di test Microsoft 365 Enterprise
@@ -48,7 +48,7 @@ Se si desidera testare la protezione dell'account amministratore globale in un'a
 
 Creare un criterio di protezione di applicazioni di Office 365 Cloud per monitorare l'attività di account amministratore globale e inviare gli avvisi per l'indirizzo di posta elettronica dell'account di amministratore globale. 
 
-1. Accedere al portale di Office 365 in [http://portal.office.com](http://portal.office.com) utilizzando l'account amministratore globale.
+1. Accedere al portale di Office in [http://portal.office.com](http://portal.office.com) utilizzando l'account amministratore globale.
 2. Fare clic su tessera di **amministrazione** . Nella scheda di **interfaccia di amministrazione di Office** , fare clic su **Admin Center > sicurezza e conformità**.
 3. Nel riquadro di spostamento a sinistra fare clic su **Avvisi > Gestisci gli avvisi avanzati**.
 4. Nella pagina **Gestisci gli avvisi avanzati**, fare clic su **Attiva Office 365 Cloud App Security**, quindi fare clic su **Vai a Office 365 Cloud App Security**.

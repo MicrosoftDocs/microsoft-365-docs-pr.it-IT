@@ -5,12 +5,12 @@ keywords: Servizio Microsoft Desktop gestiti, Microsoft 365, documentazione
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 71952a8b073f002890cc95883e717aeb04c0cd68
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 01/08/2019
+ms.openlocfilehash: 6b6c6f6a2e719496578ac1d15c9b94a92a2ab492
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868263"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Requisiti di app Desktop gestiti Microsoft
@@ -33,14 +33,19 @@ Desktop gestiti Microsoft utilizza Intune, Microsoft Store e Microsoft Store for
 
 Alcuni tipi di applicazioni non sono consentite per i dispositivi Desktop gestiti Microsoft:
 - antivirus parti 3, sicurezza o software di controllo
+- 3 web browser di terze parti
 - Versioni di Microsoft Office prima di Office 365 Professional Plus
 - Applicazioni di installare o aggregano altri software di terze parti 3
 
 ## <a name="restricted-app-behaviors"></a>Comportamenti di app con restrizioni
 
-Alcuni comportamenti applicazione possono essere essere genere pregiudizievole per l'esperienza utente o costituiscano un rischio di protezione per i dispositivi Desktop gestiti Microsoft. Le applicazioni non devono presentare comportamenti o le caratteristiche seguenti: 
+Alcuni comportamenti applicazione possono essere genere pregiudizievole per l'esperienza utente o costituire un rischio di protezione per i dispositivi Desktop gestiti Microsoft. Le applicazioni non devono presentare comportamenti o le caratteristiche seguenti: 
+
+Esperienza utente:
 - Installare i servizi in background o generano processi in background di lunga durata
 - Aggiungersi al percorso di avvio di Windows
+
+Sicurezza:
 - Chiamata non documentate Windows o le API di Office o prendere dipendenze sulle strutture di dati interne Windows o di Office
 - Agire come archivio dell'app o hanno estensione incorporata manager
 - Aumentare i privilegi dell'utente finale

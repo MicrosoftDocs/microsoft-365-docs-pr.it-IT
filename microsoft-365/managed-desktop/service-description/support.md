@@ -5,17 +5,17 @@ keywords: Servizio Microsoft Desktop gestiti, Microsoft 365, documentazione
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 11/1/2018
-ms.openlocfilehash: 7e551e51c3ea972f69c24bcb1994e13f0f7342f0
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.date: 11/7/2018
+ms.openlocfilehash: d3c884d4e184bbe76ca630bfbe9d3a5dff1355d9
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868670"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Supporto per Microsoft Managed Desktop
 
-I dispositivi Desktop gestiti Microsoft gestiti da e sarà necessario riparare o sostituire da Microsoft quando necessario. Microsoft fornirà proattiva e reattiva gestione degli eventi imprevisti. Microsoft tiene traccia risolte nel portale di amministrazione di Microsoft Desktop gestiti. Sono classificati in base alle [definizioni di livello di gravità](#severity-definitions). 
+I dispositivi Desktop gestiti Microsoft gestiti da e sarà necessario riparare o sostituire da Microsoft come contratto garanzia. Microsoft fornirà proattiva e reattiva gestione degli eventi imprevisti. Microsoft tiene traccia risolte nel portale di amministrazione di Microsoft Desktop gestiti. Sono classificati in base alle [definizioni di livello di gravità](../working-with-managed-desktop/admin-support.md#sev).
 
 I clienti possono contattare operazioni Desktop gestiti Microsoft per:
 - Richieste di informazioni sul luogo moderno come un tenant del servizio o di configurazione
@@ -39,10 +39,10 @@ Prodotti supportati:
 
 Supporto per ulteriori informazioni:
 
-- Corrente: Nord America e Regno Unito solo (24 x 7 x 365) 
+- Corrente: Nord America, Regno Unito e Australia solo (24 x 7 x 365) 
 - Inglese è la lingua supportata sola per le conversazioni telefoniche e chat con i clienti 
 - È in corso partnership con, non sostituire, il supporto tecnico aziendale; Le applicazioni line-of-Business (LOB), le risorse di rete e così via ancora sono gestiti tramite il supporto tecnico 
-- Microsoft non gestito Desktop dispositivi sono fuori ambito 
+- Dispositivi Microsoft gestiti che risiede in dispositivi di test chiama e non - Microsoft Managed Desktop sono fuori ambito 
 
 ## <a name="hardware-replacement"></a>Sostituzione dell'hardware
 

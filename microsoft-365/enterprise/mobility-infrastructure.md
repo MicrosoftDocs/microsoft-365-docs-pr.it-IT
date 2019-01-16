@@ -13,11 +13,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 ms.custom: microsoft-intune
-ms.openlocfilehash: 8d048ec6628cb8f7cb9c5e0d4c7960481bc69de1
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 3afc28f0d21918c027a6a1622a40318e333f7ab4
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868936"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fase 5: Gestione dei dispositivi mobili Microsoft 365 Enterprise
@@ -110,7 +110,7 @@ Quando gli utenti ricevono un dispositivo mobile, è una delle prime attività p
 
 |||
 |:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Criteri di gestione delle applicazioni per dispositivi mobili](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Criteri di conformità di dispositivi](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Passaggio 6: Attivare la conformità e l'accesso condizionale
@@ -153,7 +153,7 @@ Intune è un servizio potente e sono incluse numerose caratteristiche. Ecco alcu
 - Monitorare le [App](https://docs.microsoft.com/intune/apps-monitor), monitorare [la conformità di dispositivi](https://docs.microsoft.com/intune/compliance-policy-monitor), monitor [profili di configurazione](https://docs.microsoft.com/intune/compliance-policy-monitor)e ulteriori telemetria utilizzando i registri di controllo. È anche possibile connettersi al [Intune Data Warehouse](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) e utilizzare Power BI per esigenze di report ancora più.
 
 
-## <a name="identity-and-device-access-recommendations"></a>Suggerimenti per l'accesso identità e dei dispositivi
+## <a name="identity-and-device-access-recommendations"></a>Consigli sull’identità e sull’accesso dei dispositivi
 
 Microsoft offre una serie di suggerimenti per l' [accesso di dispositivi e identità](microsoft-365-policies-configurations.md) garantire una forza lavoro protetta e produttività. Accesso di dispositivi, utilizzare i suggerimenti e le impostazioni negli articoli seguenti con i passaggi descritti in questa fase:
 

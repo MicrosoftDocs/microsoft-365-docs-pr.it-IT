@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Informazioni sulle caratteristiche di protezione implementati con Microsoft 365 Business.
-ms.openlocfilehash: bfddb419dbe5db441741a73ecb49e3d52649e382
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 17bcc57d57e837f18b05f66cfd54185324f3cad8
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868591"
 ---
 # <a name="microsoft-365-business-security-features"></a>Funzionalità di sicurezza Microsoft 365 Business
@@ -130,11 +130,9 @@ La possibilità di applicare le restrizioni seguenti per l'invio di messaggi di 
 
 Per verificare che sia attivata AIP:
 
-1. Accedere a [Centro di amministrazione di Azure Active Directory](https://portal.azure.com/).
+1. Accedere al [portale di Azure](https://portal.azure.com/).
 
-    Può inoltre Sign il-individuando **Admin Center** \> **Azure Active Directory** nella barra di navigazione sinistra nell'interfaccia di amministrazione.
-
-2. Selezionare **tutti i servizi** e tipo di *Protezione delle informazioni Azure* nella **Casella di ricerca**.
+2. Selezionare **tutti i servizi** e immettere *La protezione delle informazioni di Azure* nella **Casella di ricerca**.
 
 3. Visualizzano i risultati, fare clic su start successivo per **La protezione delle informazioni di Azure** per rendere un preferito e facile da individuare in seguito.
 
@@ -144,7 +142,7 @@ Per verificare che sia attivata AIP:
 
 Per visualizzare e modificare, le etichette esistenti:
 
-1. Nel dashboard di Azure Information Protection, selezionare **le classificazioni** \> * * etichette. <br/>![Etichette standard per la protezione delle informazioni di Azure.](media/AIPLabels.png)
+1. Nel dashboard di Azure Information Protection, selezionare **le classificazioni** \> **etichette**. <br/>![Etichette standard per la protezione delle informazioni di Azure.](media/AIPLabels.png)
 
 2. È possibile scegliere qualsiasi etichetta per visualizzare le opzioni, è possibile modificare il nome visualizzato, i colori e così via.
  
@@ -159,6 +157,16 @@ Per installare manualmente il client AIP:
 2. È possibile verificare che l'installazione è stata eseguita la visualizzazione di un documento di Word e assicurandosi che l'opzione di **protezione** è disponibile nella scheda **Home** . <br/>![Scheda Protezione elenco a discesa in un documento di Word.](media/Word_Protect.png)
 
 Per ulteriori informazioni, vedere [installazione del client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
+
+## <a name="go-to-intune-admin-center"></a>Passare all'interfaccia di amministrazione Intune
+
+1. Accedere al [portale di Azure](https://portal.azure.com/).
+
+2. Selezionare **tutti i servizi** e tipo *Intune* nella **Casella di ricerca**.
+
+3. Dopo che i risultati vengono visualizzati, fare clic su Avvia successivo a **Microsoft Intune** renderla preferito e facile da individuare in seguito.
+ 
+È possibile utilizzare Intune per eseguire la registrazione e la gestione dei dispositivi dell'organizzazione. Per ulteriori informazioni, vedere [funzionalità dal metodo di registrazione per i dispositivi Windows](https://docs.microsoft.com/intune/enrollment-method-capabs) e [le opzioni di registrazione per i dispositivi gestiti da Intune](https://docs.microsoft.com/intune/enrollment-options).
     
 ## <a name="faq"></a>Domande frequenti
 
@@ -174,15 +182,4 @@ Sì, queste caratteristiche sono disponibili nei mercati tutti in cui viene vend
     
     ![Nella barra di navigazione sinistra nell'interfaccia di amministrazione di Microsoft 365, selezionare interfacce di amministrazione.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Scegliere **protezione &amp; conformità** per accedere alla protezione &amp; centro conformità. 
-    
- ### <a name="how-do-i-find-the-intune-admin-center"></a>Come si trova l'interfaccia di amministrazione di Intune?
-  
-  
-1. [Accedere a Microsoft 365 Business](https://portal.microsoft.com/) utilizzando le credenziali di amministrazione. 
-    
-2. Nella barra di navigazione sinistra, individuare **Admin Center** ed espanderlo. 
-    
-3. Scegliere **Intune** per accedere all'interfaccia di amministrazione Intune. 
-    
-
+3. Scegliere **protezione &amp; conformità** per accedere alla protezione &amp; centro conformità.

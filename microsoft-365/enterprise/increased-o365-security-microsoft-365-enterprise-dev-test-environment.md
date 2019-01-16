@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida dei laboratori di testing per abilitare ulteriori impostazioni di protezione di Office 365 l'ambiente di testing Microsoft 365 Enterprise.
-ms.openlocfilehash: 18e7b682d20c2212ae73783d668250d28b04075f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 62cf2347d3e003e9368c987912e7748029241501
+ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "26868546"
 ---
 # <a name="increased-office-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Sicurezza aumentata di Office 365 per l'ambiente di testing di Microsoft 365 Enterprise
@@ -46,7 +46,7 @@ In questa fase si abilita aumentare la protezione di Office 365 per l'ambiente d
 
 Applicazioni che non supportano l'autenticazione moderno non possono avere [identità e il dispositivo accedere configurazioni](microsoft-365-policies-configurations.md) applicato alle stesse, ovvero un importante elemento di protezione dell'abbonamento Microsoft 365 e le risorse digitali. 
 
-1. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) ed eseguire l'accesso alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
+1. Accedere al portale di Office ([https://office.com](https://office.com)) ed eseguire l'accesso alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
     
   - Se si utilizza l'ambiente di testing Microsoft 365 semplificata, l'accesso dal computer locale.
     
@@ -55,12 +55,12 @@ Applicazioni che non supportano l'autenticazione moderno non possono avere [iden
 2. Dalla scheda di **interfaccia di amministrazione di Microsoft 365** , fare clic su **amministratore**.
 3. Nella nuova scheda di **interfaccia di amministrazione di Microsoft 365** , fare clic su **Admin Center > SharePoint**.
 4. Nella nuova scheda di **interfaccia di amministrazione di SharePoint** , fare clic su **controllo di accesso**.
-5. In **applicazioni che non supportano l'autenticazione moderno**, fare clic su **blocco > OK**.
+5. In **applicazioni che non supportano l'autenticazione moderno**, fare clic su **blocco**e fare clic su **OK**.
 
 
-### <a name="enable-advanced-threat-protection-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Abilita avanzate di protezione da minacce (degli strumenti di analisi) per SharePoint, OneDrive e team di Microsoft
+### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Abilita avanzate di protezione da minacce) per SharePoint, OneDrive for Business e team di Microsoft
 
-Office 365 avanzate Threat Protection (degli strumenti di analisi) è una funzionalità di Exchange Online Protection (EOP) che consente di mantenere malware fuori la posta elettronica. Con degli strumenti di analisi, creare i criteri nell'interfaccia di amministrazione di Exchange (EAC) o la protezione e centro conformità che consentono di garantire agli utenti accesso solo collegamenti o allegati nei messaggi di posta elettronica che vengono identificati come non dannoso. Per ulteriori informazioni, vedere [protezione rischio avanzata per gli allegati sicuri e collegamenti sicuri](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
+Office 365 avanzate Threat Protection (degli strumenti di analisi) è una funzionalità di Exchange Online Protection (EOP) che consente di mantenere malware fuori la posta elettronica. Con degli strumenti di analisi, creare i criteri nell'interfaccia di amministrazione di Exchange (EAC) o la protezione e accedere a centro conformità per garantire che gli utenti solo collegamenti o allegati nei messaggi di posta elettronica che vengono identificati come non dannoso. Per ulteriori informazioni, vedere [protezione rischio avanzata per gli allegati sicuri e collegamenti sicuri](https://docs.microsoft.com/office365/securitycompliance/office-365-atp).
 
 1. Nella scheda di **interfaccia di amministrazione di Microsoft 365** del browser, fare clic su **Admin Center > sicurezza e conformità**.
 2. Nella scheda **sicurezza e conformità** nuova, fare clic su **gestione delle minacce > criteri**.
