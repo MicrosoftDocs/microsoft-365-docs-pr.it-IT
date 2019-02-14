@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su alcuni modi in cui è possibile distribuire le fasi dell'infrastruttura di base di Microsoft 365 Enterprise.
-ms.openlocfilehash: 5ffe00c9eb975a0f8c2d193a71d8b613e827cc70
-ms.sourcegitcommit: f2eae6ec367f7b69043105d117a2a7e3da4153aa
+ms.openlocfilehash: 909526fb4938c8da142b4f667140f10dda660877
+ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29538951"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29993237"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Strategie di distribuzione dell'infrastruttura di base di Microsoft 365 Enterprise
 

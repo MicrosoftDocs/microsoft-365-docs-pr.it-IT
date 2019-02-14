@@ -16,16 +16,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: configurare il writeback della password per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 748ccaf8601d9e9564d176f2368e3cc71f926208
-ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
+ms.openlocfilehash: 8148341359b66b147ecc5cf9b4927621db1f78dd
+ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27241979"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29993227"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Writeback della password per l'ambiente di testing di Microsoft 365
 
-Il writeback della password consente agli utenti di aggiornare le password tramite Azure Active Directory (AD), la quale viene replicata nel Windows Server Active Directory (AD). Grazie al writeback delle password, gli utenti non dovranno aggiornare le password tramite Windows Server Active Directory locale in cui sono archiviati gli account utente originali. Questa funzione è utile per gli utenti in remoto o in roaming che non dispongono di una connessione di accesso remoto alla una rete locale.
+Il writeback della password consente agli utenti di aggiornare le password tramite Azure Active Directory (Azure AD), che viene replicato nell'istanza locale di Active Directory Domain Services (AD DS). Grazie al writeback delle password gli utenti non devono aggiornare le password tramite l'istanza locale di Windows Server Active Directory in cui sono archiviati gli account utente originali. Questa funzione è utile per gli utenti che lavorano da remoto o in roaming e non dispongono di una connessione di accesso remoto alla rete locale.
 
 In questo articolo viene descritto come configurare l'ambiente di testing di Microsoft 365 per il writeback delle password.
 
