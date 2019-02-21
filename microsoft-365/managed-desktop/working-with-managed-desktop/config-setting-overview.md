@@ -6,12 +6,12 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
-ms.openlocfilehash: 54d986f37b3981200bdead30a2c232143b9dd49d
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.openlocfilehash: 64560a1eb597072dd99c1538b0131e3cd807899c
+ms.sourcegitcommit: 1942a860d1b65e1f8062564ec4703b953e0c2fd7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051087"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30122246"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Impostazioni conFigurabili-Microsoft Managed Desktop
 
@@ -64,7 +64,7 @@ Tutte le impostazioni configurabili vengono gestite tramite il portale di ammini
 - **Track Progress** – stato del rilevamento dopo la distribuzione della modifica. Lo stato verrà modificato **in in corso**e quindi **completo**o **non riuscito**. Se una distribuzione ha esito negativo, viene aperta automaticamente una richiesta di supporto per le operazioni di Microsoft Managed Desktop per esaminare il problema.  
 - **Vedere la versione distribuita** : ogni modifica distribuita ha un numero di versione.
 - **Ripristina modifiche** – il ripristino di una modifica interrompe la distribuzione corrente e ripristina tutte le modifiche apportate a tutti gli anelli. Si sta ripristinando il valore dell'impostazione dell'ultima nota.
-- **Validatie cahnges** -dopo aver completato la distribuzione, convalidare le modifiche sono state applicate come previsto.  
+- ConValidare le **modifiche** -dopo aver completato la distribuzione, convalidare le modifiche sono state applicate come previsto.  
 
 Se una distribuzione ha avuto esito negativo oppure non è possibile ripristinare una modifica, [aprire una richiesta di supporto](admin-support.md) con le operazioni di Microsoft Managed Desktop. 
 
