@@ -5,13 +5,13 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, Documentation, depl
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 2/12/2019
-ms.openlocfilehash: fd0e0750332fa8f650cfc4756f8eb108be2a71df
-ms.sourcegitcommit: 59bc66eaa2575bad8ecb34d45b1172cda23a729b
+ms.date: 2/17/2019
+ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
+ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051127"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175778"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Distribuire e monitorare le impostazioni configurabili-Microsoft Managed Desktop
 
@@ -24,9 +24,9 @@ Queste sono le statue che verranno visualizzate per ogni distribuzione.
 Stato  | Descrizione 
 --- | --- 
 Distribuzione | La modifica è in attesa di essere distribuita su questo anello.
-In corso | La modifica viene applicata ai dispositivi in questo anello. 
-Completa | La modifica viene applicata ai dispositivi in questo anello. 
-Failed | La modifica ha avuto esito negativo su un 10% dei dispositivi sul ring, quindi la distribuzione è stata interrotta.<br><br> Una richiesta di supporto verrà aperta automaticamente con le operazioni di Microsoft Managed Desktop per la risoluzione dei problemi relativi alla distribuzione. 
+In corso | La modifica viene applicata ai dispositivi attivi in questo anello. 
+Completa | La modifica completata su tutti i dispositivi attivi in questo anello. 
+Failed | La modifica ha avuto esito negativo su un 10% dei dispositivi attivi sul ring, quindi la distribuzione è stata interrotta.<br><br> Una richiesta di supporto verrà aperta automaticamente con le operazioni di Microsoft Managed Desktop per la risoluzione dei problemi relativi alla distribuzione. 
 Ripristinati | La modifica è stata ripristinata all'Ultima modifica che è stata distribuita correttamente in tutti gli anelli di distribuzione.
 
 ## <a name="deploy-changes"></a>Distribuire le modifiche
