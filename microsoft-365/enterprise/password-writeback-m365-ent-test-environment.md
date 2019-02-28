@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: configurare il writeback della password per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 8148341359b66b147ecc5cf9b4927621db1f78dd
-ms.sourcegitcommit: 6f94b7a272e33c492957336eae28f439e438c85b
+ms.openlocfilehash: 7593da41d51d85c0f73d01450bb67306f82c7a1e
+ms.sourcegitcommit: 15c60addeaa51e0601c580665e8316ece75d3abc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29993227"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303641"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Writeback della password per l'ambiente di testing di Microsoft 365
 
@@ -106,11 +106,11 @@ Successivamente, configurare Azure AD Connect su APP1 per il writeback delle pas
 
 4. Nella pagina **Attività aggiuntive**, fare clic su **Personalizza le opzioni di sincronizzazione**, quindi fare clic su **Avanti**.
 
-5. Nella pagina **Connessione ad Azure AD**, digitare le credenziali dell'account Utente 1 e fare clic su **Avanti**.
+5. Nella pagina **Connessione ad Azure AD** digitare le credenziali dell'account amministratore globale e fare clic su **Avanti**.
 
 6. Nelle pagine **Connessione delle directory** e **Filtro di domini/unità organizzative**, fare clic su **Avanti**.
 
-7. Nella pagina **Funzionalità facoltative**, selezionare **Writeback password** e fare clic su Avanti. 
+7. Nella pagina **Funzionalità facoltative** selezionare **Writeback password** e fare clic su **Avanti**. 
 
 8. Nella pagina **Pronto per la configurazione**, fare clic su **Configura** e attendere il completamento del processo.
 
@@ -129,7 +129,7 @@ Questa configurazione è costituita da:
 - Periodicamente, Azure AD Connect viene eseguito su APP1 per sincronizzare l'elenco di account e gruppi dal tenant degli abbonamenti a Office 365 ed EMS E5 al dominio TESTLAB Windows Server AD. 
 - Il writeback delle password è abilitato in modo che gli utenti possono modificare la password tramite Azure AD senza dover essere connessi alla rete intranet semplificata.
 
-Vedere il passaggio [Semplificare gli aggiornamenti delle password](identity-password-writeback.md) nella fase Identità per informazioni e collegamenti per configurare il writeback della password nell’ambiente di produzione.
+Vedere il passaggio [Semplificare gli aggiornamenti delle password](identity-password-reset.md#identity-pw-writeback) nella fase Identità per informazioni e collegamenti per configurare il writeback della password nell’ambiente di produzione.
 
 ## <a name="next-step"></a>Passaggio successivo
 
