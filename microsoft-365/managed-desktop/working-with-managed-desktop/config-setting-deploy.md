@@ -6,12 +6,13 @@ ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/17/2019
-ms.openlocfilehash: d6e669ecb2e00158dd3ce6712014244fa2f081c9
-ms.sourcegitcommit: b838e1dc7a98fcce1bdf7b76173f5f04f16be703
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 62a17c95f5dc6b11f446a27684c507d7aaa95b7b
+ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175778"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30414170"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Distribuire e monitorare le impostazioni configurabili-Microsoft Managed Desktop
 
@@ -21,7 +22,7 @@ Dopo aver apportato le modifiche alle categorie di impostazioni e aver eseguito 
 
 Queste sono le statue che verranno visualizzate per ogni distribuzione.
 
-Stato  | Descrizione 
+Stato  | Spiegazione 
 --- | --- 
 Distribuzione | La modifica è in attesa di essere distribuita su questo anello.
 In corso | La modifica viene applicata ai dispositivi attivi in questo anello. 
