@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: configurare il writeback della password per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 51ac9caf1cbc2edd979d9529301388a30981ee44
-ms.sourcegitcommit: e749e2db2a15bb52b1a2857dbccdf55c31cff3d7
+ms.openlocfilehash: 6dada4734798d0e30b50e271520742f3b170ebaf
+ms.sourcegitcommit: aba6d1b81e4c579e82e6fad90daec65d775b450a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340106"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573430"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Writeback della password per l'ambiente di testing di Microsoft 365
 
@@ -47,7 +47,7 @@ Seguire le istruzioni riportate in [sincronizzazione hash delle password per Mic
   
 Questa configurazione è costituita da: 
   
-- Abbonamenti di valutazione o permanenti a Office 365 E5 ed EMS E5.
+- Abbonamenti di valutazione o a pagamento a Office 365 E5 ed EMS E5.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
 - Azure AD Connect viene eseguito su APP1 per sincronizzare il dominio TESTLAB Windows Server AD per il tenant Azure AD degli abbonamenti a Office 365 ed EMS E5.
 
@@ -124,7 +124,7 @@ Di seguito è riportata la configurazione risultante:
 
 Questa configurazione è costituita da:
 
-- Abbonamenti di valutazione o permanenti a Office 365 E5 ed EMS E5 con dominio DNS TESTLAB.\<nome dominio> registrato.
+- Abbonamenti di valutazione o a pagamento a Office 365 E5 ed EMS E5 con dominio DNS TESTLAB.\<nome dominio> registrato.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
 - Periodicamente, Azure AD Connect viene eseguito su APP1 per sincronizzare l'elenco di account e gruppi dal tenant degli abbonamenti a Office 365 ed EMS E5 al dominio TESTLAB Windows Server AD. 
 - Il writeback delle password è abilitato in modo che gli utenti possono modificare la password tramite Azure AD senza dover essere connessi alla rete intranet semplificata.
