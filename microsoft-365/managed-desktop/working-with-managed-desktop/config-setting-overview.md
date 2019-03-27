@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ea957d02484eac9a2e8b51f53d6e2c34f2b3d711
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 0d30e92eb9747079a7edc5a8fd198298508f342e
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414184"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900265"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Impostazioni conFigurabili-Microsoft Managed Desktop
 
@@ -20,7 +20,7 @@ Microsoft Managed Desktop distribuisce le impostazioni e i criteri applicati a t
 
 Le impostazioni conFigurabili in Microsoft Managed Desktop offrono agli amministratori un modo per personalizzare e distribuire le impostazioni univoche per la propria organizzazione e le proprie esigenze aziendali. Queste impostazioni sono oltre alle impostazioni di configurazione dei dispositivi e ai criteri gestiti da Microsoft Managed Desktop.  
 
-Le modifiche alle impostazioni conFigurabili vengono apportate nel cloud e applicate ai dispositivi Microsoft Managed Desktop negli anelli di distribuzione definiti. Questo processo è simile a quello in cui Microsoft Managed Desktop gestisce le modifiche apportate alle impostazioni e ai criteri di configuruation del dispositivo definiti e gestiti dal servizio. Se si utilizza lo stesso processo utilizzato da Microsoft Managed Desktop per la distribuzione delle modifiche, è possibile continuare a spostare l'organizzazione in avanti, utilizzando le procedure moderne di gestione IT.
+Le modifiche alle impostazioni conFigurabili vengono apportate nel cloud e applicate ai dispositivi Microsoft Managed Desktop in gruppi di distribuzione definiti. Questo processo è simile a quello in cui Microsoft Managed Desktop gestisce le modifiche apportate alle impostazioni e ai criteri di configuruation del dispositivo definiti e gestiti dal servizio. Se si utilizza lo stesso processo utilizzato da Microsoft Managed Desktop per la distribuzione delle modifiche, è possibile continuare a spostare l'organizzazione in avanti, utilizzando le procedure moderne di gestione IT.
 
 ## <a name="when-to-use-configurable-settings"></a>Quando utilizzare le impostazioni configurabili?
 
@@ -47,9 +47,9 @@ Ad esempio:
 
 ## <a name="configurable-setting-process"></a>Processo di impostazione conFigurabile
 
-Il processo globale è simile al seguente. 
+Microsoft Managed Desktop consiglia di seguire un processo analogo al seguente quando si utilizzano le impostazioni configurabili per l'organizzazione:
 
-**Passaggio 1-pianificare** : informazioni sulle impostazioni configurabili e decidere quali categorie di impostazioni si desidera configurare per l'organizzazione. Pianificare la comunicazione agli utenti che soddisfano i processi di gestione delle modifiche interni. Ad esempio, se si aggiungono pagine iniziali del browser, consentire agli utenti di sapere che dopo la distribuzione avranno un nuovo set di pagine iniziali nel browser.  
+**Passaggio 1-pianificare** : informazioni sulle impostazioni configurabili e decidere quali categorie di impostazioni si desidera configurare per l'organizzazione. Creare una sequenza temporale per il momento in cui si prevede di distribuire le modifiche a ogni gruppo. Pianificare la comunicazione agli utenti che soddisfano i processi di gestione delle modifiche interni. Ad esempio, se si aggiungono pagine iniziali del browser, consentire agli utenti di sapere che dopo la distribuzione avranno un nuovo set di pagine iniziali nel browser.  
 
 **Passaggio 2-Configure and Stage Deployment** -apportare modifiche alle impostazioni configurabili nel portale di amministrazione di Microsoft Managed Desktop. Eseguire il passaggio delle modifiche in modo che siano pronte per la distribuzione. Tenere presente che gli utenti devono conoscere le modifiche e in che modo le modifiche cambiano la propria esperienza del dispositivo.   
 
@@ -57,20 +57,20 @@ Le modifiche vengono configurate e inscenate nel portale di amministrazione di M
 
 **Passaggio 3: comunicare le modifiche** Comunicare informazioni sulle modifiche imminenti agli utenti. Per ogni distribuzione, completare la comunicazione che fa parte dei processi di gestione delle modifiche. È necessario comunicare chiaramente eventuali modifiche che influiscono sul funzionamento di un utente o su ciò che vedranno nei propri dispositivi.
 
-**Passaggio 4: distribuire** le modifiche – distribuire le modifiche, iniziando con l'anello di prova. L'anello di testing consente di convalidare e risolvere eventuali problemi in un anello con meno dispositivi, prima di distribuire le modifiche ai gruppi più grandi di dispositivi. Se si verificano problemi, è possibile ripristinare la modifica, aggiornare l'impostazione e avviare una nuova distribuzione. Microsoft Managed Desktop consiglia di seguire l'approccio strutturato e distribuire gli anelli in questo ordine: test, First, Fast e then Broad.   
+**Passaggio 4: distribuire** le modifiche – distribuire le modifiche, a partire dal gruppo di test. Il gruppo di testing consente di convalidare e risolvere i problemi di un gruppo con meno dispositivi, prima di distribuire le modifiche ai gruppi più grandi di dispositivi. Se si verificano problemi, è possibile ripristinare la modifica, aggiornare l'impostazione e avviare una nuova distribuzione. Microsoft Managed Desktop consiglia di seguire l'approccio strutturato e distribuire ai gruppi nell'ordine seguente: test, First, Fast e then Broad.   
 
 Tutte le impostazioni configurabili vengono gestite tramite il portale di amministrazione di Microsoft Managed Desktop. Per ulteriori informazioni, vedere [Deploy Changes](config-setting-deploy.md). 
 
 **Passaggio 5-track changes** – monitorare lo stato di avanzamento delle modifiche apportate allo stato di distribuzione. Per ogni impostazione, è possibile:
 - **Track Progress** – stato del rilevamento dopo la distribuzione della modifica. Lo stato verrà modificato **in in corso**e quindi **completo**o **non riuscito**. Se una distribuzione ha esito negativo, viene aperta automaticamente una richiesta di supporto per le operazioni di Microsoft Managed Desktop per esaminare il problema.  
 - **Vedere la versione distribuita** : ogni modifica distribuita ha un numero di versione.
-- **Ripristina modifiche** – il ripristino di una modifica interrompe la distribuzione corrente e ripristina tutte le modifiche apportate a tutti gli anelli. Si sta ripristinando il valore dell'impostazione dell'ultima nota.
+- **Ripristina modifiche** – il ripristino di una modifica interrompe la distribuzione corrente e ripristina tutti i gruppi alle ultime modifiche che sono state distribuite a tutti i gruppi. Si sta ripristinando il valore dell'impostazione dell'ultima nota.
 - ConValidare le **modifiche** -dopo aver completato la distribuzione, convalidare le modifiche sono state applicate come previsto.  
 
 Se una distribuzione ha avuto esito negativo oppure non è possibile ripristinare una modifica, [aprire una richiesta di supporto](admin-support.md) con le operazioni di Microsoft Managed Desktop. 
 
 Per ulteriori informazioni, vedere [deploy and Track configurable settings](config-setting-deploy.md).
 
-## <a name="additional-resources"></a>Risorse aggiuntive
+## <a name="additional-resources"></a>Altre risorse
 - [Informazioni di riferimento sulle impostazioni conFigurabili](config-setting-ref.md) 
 - [Distribuire le impostazioni configurabili](config-setting-deploy.md) 

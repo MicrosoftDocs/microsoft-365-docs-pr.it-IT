@@ -7,19 +7,19 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8839be023844ae4de17972790ec9d02b82c75244
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 296602422cf4d590ae17335d7a0bbbc939d929ed
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414194"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900275"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Riferimento alle impostazioni conFigurabili-Microsoft Managed Desktop
 
 In questo argomento sono elencate le categorie di impostazioni che i clienti possono configurare con Microsoft Managed Desktop. Ogni categoria di impostazioni include informazioni su requisiti, procedure consigliate e su come personalizzare la categoria di impostazioni. 
 
 ## <a name="desktop-background-picture"></a>Immagine di sfondo del desktop
-È possibile personalizzare l'immagine di sfondo del desktop per i dispositivi Microsoft Managed Desktop nell'organizzazione. È possibile utilizzarlo per applicare un marchio aziendale o un marketing 
+È possibile personalizzare l'immagine di sfondo del desktop per i dispositivi Microsoft Managed Desktop nell'organizzazione. È possibile utilizzarlo per applicare un marchio aziendale o materiale di marketing. 
 
 ### <a name="requirements"></a>Requisiti
 
@@ -35,7 +35,7 @@ Questi requisiti devono essere soddisfatti per un'immagine di sfondo del desktop
 2. In **Impostazioni**, selezionare **** configurabile.
 3. Nell' **** area di lavoro configurabile selezionare **immagine di sfondo del desktop**. 
 4. Immettere il percorso dell'immagine che si desidera utilizzare. 
-5. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle all'anello di prova. 
+5. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test. 
 
 ## <a name="browser-start-pages"></a>Pagine iniziali del browser
 Le pagine iniziali del browser vengono aperte nelle singole schede quando gli utenti avviano Microsoft Edge. Se si desidera consentire agli utenti di aprire facilmente una serie di siti che utilizzano frequentemente, aggiungere una pagina iniziale del browser per ogni sito. 
@@ -53,7 +53,7 @@ Le pagine iniziali del browser vengono aperte nelle singole schede quando gli ut
 4. Selezionare **Aggiungi pagina iniziale**.
 5. Nella **pagina Aggiungi inizio browser**immettere l'URL del sito che si desidera utilizzare e quindi fare clic su **Aggiungi pagina iniziale**. 
 6. Ripetere i passaggi 1-5 per altre pagine iniziali del browser. 
-7. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle all'anello di prova.
+7. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
 ## <a name="enterprise-mode-site-list-location"></a>Posizione dell'elenco dei siti in modalità Enterprise
 
@@ -82,7 +82,7 @@ Queste procedure consigliate sono disponibili per consentire ai clienti di prend
 2.  In **Impostazioni**, selezionare **** configurabile.
 3.  Nell' **** area di lavoro configurabile selezionare **percorso dell'elenco dei siti in modalità Enterprise**. 
 4.  Immettere il percorso HTTPS per l'elenco di siti. 
-5.  Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle all'anello di prova.
+5.  Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
 ## <a name="trusted-sites"></a>Siti attendibili
 
@@ -105,7 +105,7 @@ Specificare il nome di dominio completo (FQDN) per i siti Intranet o Internet pe
 3. Nell' **** area di lavoro configurabile selezionare **siti attendibili**e quindi fare clic su **Aggiungi sito attendibile**. 
 4. In **Aggiungi sito attendibile**immettere l'URL, scegliere un'area di sicurezza e quindi fare clic su **Aggiungi sito attendibile**. 
 5. Ripetere i passaggi 1-4 per ogni sito attendibile che si desidera aggiungere. 
-6. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle all'anello di prova.
+6. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
 **Per rimuovere un sito attendibile**
 
@@ -114,7 +114,7 @@ Specificare il nome di dominio completo (FQDN) per i siti Intranet o Internet pe
 3. Nell' **** area di lavoro configurabile selezionare **siti attendibili**. 
 4. Selezionare il sito che si desidera eliminare, quindi selezionare **Elimina**. 
 5. Ripetere i passaggi 1-4 per ogni sito attendibile che si desidera eliminare. 
-6. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle all'anello di prova.
+6. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
 ## <a name="proxy"></a>Proxy
 È possibile gestire le impostazioni del proxy di rete per l'organizzazione. Aggiungere il server proxy e il numero di porta e quindi aggiungere le eccezioni del sito proxy. Microsoft Managed Desktop include un insieme di eccezioni proxy predefinite che sono necessarie per l'utilizzo del servizio. L'elenco di esclusione predefinito può essere modificato solo dal servizio Microsoft Managed Desktop.  Per ulteriori informazioni, vedere [configurazione di rete per Microsoft managEd desktop](../get-ready/network.md). 
@@ -140,8 +140,8 @@ Questi requisiti devono essere soddisfatti per le eccezioni del server proxy e d
 4. Immettere l' **Indirizzo** e il **numero di porta** del server proxy, quindi selezionare **Aggiungi eccezione proxy**. 
 5. Immettere l'URL di un sito http valido e quindi fare clic su **Aggiungi eccezione proxy**. 
 6. Ripetere i passaggi 1-5 per ogni sito attendibile che si desidera aggiungere. 
-7. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle all'anello di prova.
+7. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
-## <a name="additional-resources"></a>Risorse aggiuntive
+## <a name="additional-resources"></a>Altre risorse
 - [Panoramica delle impostazioni conFigurabili](config-setting-overview.md) 
 - [Distribuire le impostazioni configurabili](config-setting-deploy.md)
