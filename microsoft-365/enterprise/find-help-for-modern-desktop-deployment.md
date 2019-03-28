@@ -1,5 +1,5 @@
 ---
-title: Ottenere assistenza per la distribuzione Desktop moderno
+title: Trovare le informazioni della Guida per la distribuzione di Windows 10 e Office 365 ProPlus
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,19 +12,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Dove trovare assistenza e supporto tecnico per la distribuzione Desktop moderno.
-ms.openlocfilehash: 7c6f68320165abdfd131a84e84345bd6ff6d47c1
-ms.sourcegitcommit: 73fb9a7cf1b7b1045a304391ed393acb7b909317
+description: Informazioni sulla Guida e sul supporto tecnico per la distribuzione di Windows 10 e Office 365 ProPlus.
+ms.openlocfilehash: 78d231dbcb5f965e2b4233bc7980da31fbfcbc2e
+ms.sourcegitcommit: d38c0ce846bac19e876a03a59ed4f268c7bae389
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27241969"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900255"
 ---
-# <a name="find-help-for-your-modern-desktop-deployment"></a>Ottenere assistenza per la distribuzione Desktop moderno 
+# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Informazioni utili per la distribuzione di Windows 10 e Office 365 ProPlus 
 
 Se si sta pianificando la distribuzione di Windows 10 con Office 365 ProPlus, sono disponibili diverse opzioni ulteriori di assistenza dai partner Microsoft certificati e tramite [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
-Ecco una mappa dei servizi disponibili in linea con il processo di [distribuzione Desktop moderno](http://www.aka.ms/howtoshift) per Windows 10, Office 365 ProPlus ed Enterprise Mobility + Security con partner esistenti e offerte FastTrack. In molti casi, questi servizi sono inclusi nell'abbonamento idoneo a Microsoft 365, Office 365 o Windows 10 Enterprise. Per servizi gestiti dai partner come la valutazione Desktop moderno, come organizzazione idonea, Microsoft fornisce un voucher per i servizi prestati da un partner. I dettagli per ogni offerta sono disponibili nei collegamenti seguenti.
+Ecco una mappa dei servizi disponibili in linea con il processo di [distribuzione desktop](http://www.aka.ms/howtoshift) per Windows 10, Office 365 ProPlus ed Enterprise Mobility + Security con partner esistente e offerte FastTrack. In molti casi, questi servizi sono inclusi nell'abbonamento idoneo a Microsoft 365, Office 365 o Windows 10 Enterprise. Per i servizi gestiti da partner, come la valutazione Desktop per Windows 10 e Office 365 ProPlus, come organizzazione idonea, Microsoft fornisce un voucher per i servizi prestati dal partner. I dettagli per ogni offerta sono disponibili nei collegamenti seguenti.
 
 <br>
 
@@ -102,8 +102,8 @@ Per domande specifiche quando si pianifica o si avvia la distribuzione, unirsi a
 
 ## <a name="related-resources"></a>**Risorse correlate**
 
-  - [Centro di distribuzione desktop moderno](http://www.aka.ms/howtoshift)
+  - [Centro di distribuzione desktop](http://www.aka.ms/howtoshift)
 
-  - [Serie di video sulla distribuzione del desktop moderno di Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Serie di video sulla distribuzione desktop di Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - [Distribuzione desktop moderno e Management Lab Kit](https://aka.ms/howtoshiftlabs)
+  - [Distribuzione desktop e Management Lab Kit](https://aka.ms/howtoshiftlabs)
