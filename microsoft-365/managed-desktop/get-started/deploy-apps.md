@@ -5,14 +5,13 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, Documentation, app,
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 01/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: febb3198c434e638f83c412a3f8a3b688d9f5bd1
-ms.sourcegitcommit: 8d2e6bcc257a665f53ee914c7f0e1dfb9d31a9e0
+ms.openlocfilehash: 5ccb240460958d5978f4fd19e08652123790784e
+ms.sourcegitcommit: 2211f57c268754d242d6331c188143f818f5a9f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30414169"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31039595"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>Distribuire le app ai dispositivi Microsoft Managed Desktop
 Parte dell'onboarding di Microsoft Managed Desktop include l'aggiunta e la distribuzione di app ai dispositivi dell'utente. Dopo aver utilizzato il portale Microsoft Managed Desktop, è possibile aggiungere e distribuire le app. 
