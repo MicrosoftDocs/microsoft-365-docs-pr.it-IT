@@ -6,16 +6,16 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2317a0581b356dadbde2042920ed2542f0e2203c
-ms.sourcegitcommit: 392b906e64d27366b47931e8285b625e5e2f884e
+ms.openlocfilehash: c4ebe0c7ad3d1e197cf90cc975366df61d3b0cb5
+ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31838167"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901210"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Preparare l'accesso alle risorse locali per Microsoft Managed Desktop
 
-In Microsoft Managed Desktop, i dispositivi vengono automaticamente aggiunti a Azure Active Directory. Questo significa che se si utilizza Active Directory locale, è necessario verificare alcuni elementi per garantire che i dispositivi aggiunti a Azure AD possano comunicare con Active Directory locale. 
+In Microsoft Managed Desktop, i dispositivi vengono automaticamente aggiunti a Azure Active Directory (Azure AD). Questo significa che se si utilizza Active Directory locale, è necessario verificare alcuni elementi per garantire che i dispositivi aggiunti a Azure AD possano comunicare con Active Directory locale. 
 
 > [!NOTE]  
 > ** Ambiente ibrido Azure AD join non è supportato da Microsoft Managed Desktop.
@@ -32,20 +32,20 @@ In questo argomento vengono illustrate le operazioni che è necessario controlla
 
 Il servizio Single Sign-on (SSO) tramite UPN e password è abilitato per impostazione predefinita sui dispositivi Microsoft Managed Desktop. Tuttavia, gli utenti possono anche utilizzare Windows Hello for business, che richiede alcuni passaggi di installazione aggiuntivi. 
 
-### <a name="single-sign-on-by-using-upn-and-passwords"></a>Accesso Single Sign-on tramite UPN e password
+### <a name="single-sign-on-by-using-upn-and-password"></a>Accesso Single Sign-on tramite UPN e password
 
 Nella maggior parte delle organizzazioni, gli utenti saranno in grado di utilizzare SSO per l'autenticazione tramite UPN e la password sui dispositivi Microsoft Managed Desktop. Tuttavia, per assicurarsi che questo funzionerà, è necessario eseguire due controlli:
 
-- Verificare che Azure Active Directory (AAD) Connect sia configurato e utilizzi un server Active Directory locale che esegue Windows Server 2008 R2 o versione successiva.
-- Verificare che AAD Connect esegua una versione supportata e che sia impostato per sincronizzare questi tre attributi con Azure AD: 
+- Verificare che Azure AD Connect sia configurato e utilizzi un server Active Directory locale che esegue Windows Server 2008 R2 o versione successiva.
+- Verificare che Azure AD Connect esegua una versione supportata ed è impostato per sincronizzare questi tre attributi con Azure AD: 
     - Nome di dominio DNS dell'Active Directory locale (in cui si trovano gli utenti finali)
-    - NetBIOS di yor Active Directory locale (dove si trovano gli utenti finali)
+    - NetBIOS del sito Active Directory locale (in cui si trovano gli utenti finali)
     - Nome account SAM dell'utente
 
 
 ### <a name="single-sign-on-by-using-windows-hello-for-business"></a>Accesso Single Sign-on tramite Windows Hello for business
 
-I dispositivi Microsoft Managed Desktop offrono agli utenti un'esperienza veloce e con password utilizzando Windows Hello for business. Per garantire che Windows Hello for Business funzioni senza che gli utenti debbano specificare UPN e password, visitare [Configure Azure ad joined devices for on-premises Single-Sign on using Windows Hello for business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) per controllare i requisiti e quindi seguire le passaggi forniti in tale posizione.
+I dispositivi Microsoft Managed Desktop offrono agli utenti un'esperienza veloce e con password utilizzando Windows Hello for business. Per garantire che Windows Hello for Business funzioni senza che gli utenti debbano fornire la propria UPN e la relativa password, visitare [Configure Azure ad joined devices for on-premises Single-Sign on using Windows Hello for business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base) per controllare i requisiti e quindi seguire i passaggi disponibili.
 
 
 ## <a name="apps-and-resources-that-use-authentication"></a>App e risorse che utilizzano l'autenticazione
