@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulla società Contoso Corporation e sulla struttura a livelli dei suoi uffici nel mondo.
-ms.openlocfilehash: fd354b4159ee22e65e04afba33af2e90bd49b622
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 751f75bd2a5d1e0df401c1d3aa54a0fd5afec8f7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289362"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Panoramica di Contoso Corporation
 

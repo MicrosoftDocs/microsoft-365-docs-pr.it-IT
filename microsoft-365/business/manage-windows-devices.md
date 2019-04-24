@@ -1,5 +1,5 @@
 ---
-title: Consentire ai dispositivi Windows 10 aggiunto al dominio da gestire da Microsoft 365 Business
+title: Abilitare i dispositivi Windows 10 associati a un dominio per essere gestiti da Microsoft 365 business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -16,39 +19,39 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
-description: Informazioni su come abilitare 365 Microsoft proteggere i dispositivi Windows 10 aggiunto al Active Directory locale.
-ms.openlocfilehash: 6e66a2c5417c9037232c1ada654d4cac3c520607
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Informazioni su come consentire a Microsoft 365 di proteggere gli annunci locali con i dispositivi Windows 10.
+ms.openlocfilehash: d61b3bf6be50d6b21e7b883774567bb63995e60e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278078"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Consentire ai dispositivi Windows 10 aggiunto al dominio da gestire da Microsoft 365 Business
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Abilitare i dispositivi Windows 10 associati a un dominio per essere gestiti da Microsoft 365 business
 
-Se l'organizzazione utilizza Windows Server Active Directory locale, è possibile impostare Microsoft 365 Business per proteggere i dispositivi Windows 10, mantenendo l'accesso alle risorse locali che richiedono l'autenticazione locale. È possibile impostare questo grazie alla prima sincronizzazione di Active Directory con Azure Active Directory, seguita registrando i dispositivi Windows 10 con Azure Active Directory e li la registrazione per la gestione dei dispositivi mobili da Microsoft 365 Business.
+Se l'organizzazione utilizza Windows Server Active Directory in locale, è possibile configurare Microsoft 365 business per proteggere i dispositivi Windows 10, mantenendo comunque l'accesso alle risorse locali che richiedono l'autenticazione locale. È possibile configurarlo eseguendo prima la sincronizzazione di Active Directory con Azure Active Directory, seguito dalla registrazione dei dispositivi Windows 10 con Azure AD e dall'iscrizione per la gestione dei dispositivi mobili da parte di Microsoft 365 business.
   
-## <a name="set-up-domain-joined-devices-to-be-managed-by-microsoft-365-business"></a>Configurare i dispositivi aggiunti al dominio da gestire da Microsoft 365 Business
+## <a name="set-up-domain-joined-devices-to-be-managed-by-microsoft-365-business"></a>Configurare i dispositivi associati a un dominio per essere gestiti da Microsoft 365 business
 
-Per impostare i dispositivi aggiunti al dominio dell'organizzazione per usufruire delle funzionalità fornite da Azure Active Directory oltre a Active Directory locale, è possibile implementare **ibrida Azure Active Directory appartenente dispositivi**. Si tratta di dispositivi che vengono aggiunti sia di Active Directory locale e Azure Active Directory. Ibrida Azure Active Directory appartenente dispositivi possono essere protetti e gestiti da Microsoft 365 Business.. 
+Per configurare i dispositivi appartenenti al dominio dell'organizzazione in modo da trarre vantaggio dalle funzionalità fornite da Azure Active Directory oltre che da Active Directory locale, è possibile implementare i **dispositivi ibridi di Azure ad Uniti**. Si tratta di dispositivi che si uniscono sia a Active Directory locale che a Azure Active Directory. I dispositivi ibridi di Azure AD Uniti possono essere protetti e gestiti da Microsoft 365 business. 
   
-Completare la procedura seguente per verificare i dispositivi di 10 Windows Azure Active Directory aggiunto e gestito da Microsoft 365 Business ibrida.
+Completare i passaggi riportati di seguito per rendere i dispositivi Windows 10 ibridi di Azure AD Uniti e gestiti da Microsoft 365 business.
   
-1. Per sincronizzare gli utenti, gruppi e contatti da Active Directory locale in Azure Active Directory, eseguire la procedura guidata di sincronizzazione della Directory e Azure Active Directory la connessione come descritto in [configurare la sincronizzazione delle directory per Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
+1. Per sincronizzare gli utenti, i gruppi e i contatti da Active Directory locale ad Azure Active Directory, eseguire la procedura guidata di sincronizzazione della directory e Azure Active Directory Connect come descritto in [configurare la sincronizzazione della directory per Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
     
     > [!NOTE]
-    > I passaggi sono esattamente gli stessi per Microsoft 365 Business. 
+    > I passaggi sono esattamente gli stessi per Microsoft 365 business. 
   
-2. Prima di completare il passaggio 3 per consentire ai dispositivi Windows 10 da ibrida Azure Active Directory aggiunti, è necessario assicurarsi che siano soddisfatti i prerequisiti seguenti:
+2. Prima di completare il passaggio 3 per consentire ai dispositivi Windows 10 di essere Uniti ad Azure ibrido, è necessario verificare che siano soddisfatti i prerequisiti seguenti:
     
-   - Si esegue la versione più recente di Azure Active Directory la connessione.
+   - Si sta eseguendo la versione più recente di Azure AD Connect.
     
-   - La connessione di Azure Active Directory è sincronizzato tutti gli oggetti computer dei dispositivi che si desidera essere ibrida Azure Active Directory aggiunti. Connettere anche se gli oggetti computer appartengono a specifiche unità organizzative (OU), quindi verificare che siano impostate le unità organizzative per la sincronizzazione di Azure Active Directory.
+   - Azure AD Connect ha sincronizzato tutti gli oggetti computer dei dispositivi in cui si desidera essere Uniti AD Azure ibrido. Se gli oggetti computer appartengono a specifiche unità organizzative (OU), assicurarsi che le unità organizzative siano impostate per la sincronizzazione anche in Azure AD Connect.
     
-3. Registrare dominio Windows 10 dispositivi esistenti per ibrida Joined Azure Active Directory e li registrare per la gestione dei dispositivi mobili da Intune (Microsoft Business 365):
+3. Registrare i dispositivi Windows 10 aggiunti a un dominio esistenti per essere ibridi di Azure AD e iscriverli per la gestione dei dispositivi mobili da Intune (Microsoft 365 business):
     
-4. Seguire le istruzioni dettagliate su [come configurare i dispositivi di Azure Active Directory appartenente ibrida](https://go.microsoft.com/fwlink/p/?linkid=872870). In questo modo la sincronizzazione di Active Directory locale aggiunto al computer Windows 10 e renderli cloud ready.
+4. Seguire le istruzioni dettagliate su [come configurare i dispositivi Uniti ibridi di Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=872870). In questo modo, la sincronizzazione di Active Directory locale è stata aggiunta ai computer Windows 10 e li rende pronti per il cloud.
     
-5. Per registrare un dispositivo Windows 10 per la gestione dei dispositivi mobili, vedere [registrazione un dispositivo Windows 10 con Intune utilizzando criteri di gruppo](https://go.microsoft.com/fwlink/p/?linkid=872871) per le istruzioni. È possibile impostare i criteri di gruppo in un computer locale livello o per le operazioni in blocco, è possibile creare questa impostazione di criteri di gruppo nel server di controller di dominio. 
+5. Per registrare un dispositivo Windows 10 per la gestione dei dispositivi mobili, vedere [registrazione di un dispositivo Windows 10 con Intune tramite criteri di gruppo](https://go.microsoft.com/fwlink/p/?linkid=872871) per le istruzioni. È possibile impostare criteri di gruppo a livello di computer locale o per le operazioni in blocco, è possibile creare questa impostazione di criteri di gruppo nel server del controller di dominio. 
     
 

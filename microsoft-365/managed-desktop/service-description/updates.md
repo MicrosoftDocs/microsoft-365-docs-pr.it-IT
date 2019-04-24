@@ -1,17 +1,18 @@
 ---
 title: Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop
-description: Mantenere aggiornati i Desktop gestiti Microsoft è un servizio di bilanciamento della velocità e la stabilità.
-keywords: Servizio Microsoft Desktop gestiti, Microsoft 365, documentazione
+description: Mantenere il desktop Microsoft gestito aggiornato è un bilanciamento della velocità e della stabilità.
+keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 01/09/2019
-ms.openlocfilehash: bee6381b0f2b7b1e2d929329c3cf628ab7657678
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 0dad909ce9e17f993de64ba39b08f388c71abb89
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278645"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop
 
@@ -20,47 +21,50 @@ ms.locfileid: "26868385"
 
 <!--Update management -->
 
-Microsoft Desktop gestiti si connette tutti i dispositivi a un'infrastruttura basata su cloud moderna. Mantenere aggiornati Windows, Office, driver, firmware e Store Microsoft Business degli aggiornamenti dell'applicazione è un servizio di bilanciamento della velocità e la stabilità. Squilla distribuzione verrà utilizzato per garantire del sistema operativo e distribuire i criteri in modo sicuro. 
+Microsoft Managed Desktop connette tutti i dispositivi a una moderna infrastruttura basata su cloud. Mantenere aggiornati gli aggiornamenti delle applicazioni di Windows, Office, driver, firmware e Microsoft Store for business è un bilanciamento della velocità e della stabilità. I gruppi di distribuzione verranno utilizzati per garantire che il sistema operativo e i criteri vengano srotolati in modo sicuro. 
 
-## <a name="update-groups"></a>Gruppi di aggiornamento
+Gli aggiornamenti rilasciati da Microsoft sono cumulativi e possono essere classificati come aggiornamenti di qualità o funzionalità.
+Per ulteriori informazioni, vedere [Windows Update for business: tipi di aggiornamento](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
 
-Desktop gestiti Microsoft utilizza quattro gruppi di Azure Active Directory per gestire gli aggiornamenti:
+## <a name="update-groups"></a>Aggiornare i gruppi
 
-- Test: Dispositivi Non di produzione lo scopo di convalidare le modifiche prima di distribuire le modifiche tra il resto del tenant. I dispositivi in questa chiama rientrano nell'ambito di supporto per utenti finali documentata. 
-- Primo: Contiene adottato, software e i dispositivi possono essere soggetto a versioni non definitive aggiornamenti.
-- Fast: Assegna una priorità velocità su stabilità. Utile per rilevare i problemi di qualità prima che sono disponibili per il gruppo di grandi dimensioni. 
-- Ampia: Ultimo gruppo di qualità e funzionalità di aggiornamenti disponibili. Questo gruppo contiene la maggior parte degli utenti nel tenant e pertanto favorisce la stabilità della velocità di distribuzione.
+Microsoft Managed Desktop utilizza quattro gruppi di Azure ad per la gestione degli aggiornamenti:
 
-Aggiornamenti rilasciati da Microsoft sono cumulativi e potrebbero essere suddivise in aggiornamenti qualità o la caratteristica. Per ulteriori informazioni, vedere [Windows Update: domande frequenti su](https://support.microsoft.com/help/12373/windows-update-faq). 
+- **Test**: utilizzato per convalidare le modifiche ai criteri di Microsoft Managed Desktop, gli aggiornamenti del sistema operativo, gli aggiornamenti delle funzionalità e altre modifiche apportate al tenant. Non è necessario che gli utenti finali vengano inseriti nel gruppo di test. Il gruppo di test è esente da qualsiasi SLA stabilito e dal supporto degli utenti finali. Questo gruppo è disponibile per convalidare la compatibilità delle applicazioni con i nuovi criteri o le modifiche apPortate al sistema operativo.  
+- **Primo**: contiene gli adottanti e i dispositivi software precoci che possono essere soggetti agli aggiornamenti precedenti alla versione precedente. I dispositivi di questo gruppo possono riscontrare interruzioni se esistono scenari che non sono stati analizzati durante il testing nell'anello di test.
+- **Fast**: priorità della velocità rispetto alla stabilità. Utile per rilevare i problemi di qualità prima che vengano offerti al gruppo generale. Questo gruppo funge da livello successivo di convalida, ma in genere è più stabile rispetto al test e ai primi gruppi. 
+- **Broad**: ultimo gruppo in cui sono disponibili aggiornamenti di funzionalità e qualità. Questo gruppo contiene la maggior parte degli utenti nel tenant e quindi favorisce la stabilità sulla velocità della distribuzione. Il testing delle app dovrebbe essere effettuato qui perché l'ambiente è più stabile. 
 
-Come aggiornare funzionamento della distribuzione:
-- Microsoft Desktop gestiti consente di distribuire un nuovo aggiornamento qualità o funzionalità di base pianificazione specificata di seguito.
-- Durante la distribuzione Desktop gestiti Microsoft esegue il monitoraggio di segnali di errore o un'interruzione del servizio (basato su segnali telemetria e il sistema di supporto per l'utente finale). In questo caso, la distribuzione a tutti i gruppi attuali e future immediatamente in pausa.
-    - Esempio: se viene rilevato un problema durante la distribuzione di un aggiornamento di qualità al primo gruppo, quindi le distribuzioni di aggiornamento prima, Fast e ampia verranno tutti essere sospesa fino a quando non viene risolto il problema.
-    - Problemi di compatibilità possono essere segnalati presentando un ticket nel portale di amministrazione IT di Desktop gestiti Microsoft.
-- Aggiornamenti di qualità e funzionalità vengono sospese in modo indipendente. Sospendi è valido per 35 giorni per impostazione predefinita, ma possono essere ridotto o estese in base al fatto è risolte il problema.
-- Una volta riavviati, i gruppi di distribuzione consente di riprendere in base alla pianificazione seguente.
-- Questo processo di distribuzione si applica agli aggiornamenti la caratteristica e la qualità, anche se la sequenza temporale varia per ogni.
+Per ulteriori informazioni sui ruoli e le responsabilità di questi gruppi di distribuzione, vedere [ruoli e responsabilità di Microsoft managEd desktop](../intro/roles-and-responsibilities.md)
+
+Funzionamento della distribuzione degli aggiornamenti:
+- Microsoft Managed Desktop distribuisce una nuova funzionalità o un aggiornamento di qualità in base alla pianificazione specificata di seguito.
+- Durante la distribuzione, Microsoft Managed Desktop Monitors è in grado di segnalare errori o interruzioni (basati su segnali di dati diagnostici e su un sistema di supporto per gli utenti finali). Se vengono rilevati, la distribuzione a tutti i gruppi correnti e futuri viene sospesa immediatamente.
+    - Esempio: se viene rilevato un problema durante la distribuzione di un aggiornamento di qualità al primo gruppo, le distribuzioni di aggiornamento a First, Fast e Broad verranno sospese finché il problema non viene risolto.
+    - I problemi di compatibilità possono essere segnalati dalla presentazione di un ticket nel portale di amministrazione IT di Microsoft Managed Desktop IT.
+- Gli aggiornamenti di funzionalità e qualità sono sospesi in modo indipendente. La pausa è attiva per 35 giorni per impostazione predefinita, ma può essere ridotta o estesa a seconda che il problema venga rimediato.
+- Dopo che i gruppi sono stati sospesi, la distribuzione riprende in base alla pianificazione seguente.
+- Questo processo di distribuzione si applica a tutti gli aggiornamenti di funzionalità e qualità, anche se la sequenza temporale varia per ogni.
 
 <table>
 <tr><th colspan="5">Aggiornare le impostazioni di distribuzione</th></tr>
-<tr><th>Tipo di aggiornamento</th><th>Testing</th><th>Funzionalità</th><th>Fast</th><th>Ampia</th></tr>
-<tr><td>Aggiornamenti di qualità del sistema operativo</td><td>0 giorni</td><td>0 giorni</td><td>0 giorni</td><td>3 giorni</td></tr>
-<tr><td>Aggiornamenti di funzionalità del sistema operativo</td><td>0 giorni</td><td>30 giorni</td><td>60 giorni</td><td>90 giorni</td></tr>
-<tr><td>Driver/firmware</td><td colspan="4">Dopo la pianificazione per gli aggiornamenti di qualità</td></tr>
-<tr><td>Definizione antivirus</td><td colspan="4">Aggiornamento con ogni analisi</td></tr>
+<tr><th>Tipo di aggiornamento</th><th>Testing</th><th>Prima</th><th>Veloce</th><th>Ampio</th></tr>
+<tr><td>Aggiornamenti della qualità per il sistema operativo</td><td>0 giorni</td><td>0 giorni</td><td>0 giorni</td><td>3 giorni</td></tr>
+<tr><td>Aggiornamenti delle funzionalità per il sistema operativo</td><td>0 giorni</td><td>30 giorni</td><td>60 giorni</td><td>90 giorni</td></tr>
+<tr><td>Driver/firmware</td><td colspan="4">Segue la pianificazione per gli aggiornamenti della qualità</td></tr>
+<tr><td>Definizione di antivirus</td><td colspan="4">Aggiornato con ogni analisi</td></tr>
 </table>
 
-Tali periodi di rinvio intenzionalmente sono progettati per garantire prestazioni standard per tutti gli utenti e protezione avanzata. Inoltre, basate sui dati raccolti tra tutti i dispositivi Desktop gestiti Microsoft e l'ambito e impatto degli aggiornamenti diversi, Desktop gestiti Microsoft si riserva flessibilità per modificare la durata dei periodi di rinvio precedente per i gruppi di distribuzione di qualsiasi su un annuncio base apposita.
+Questi periodi di rinvio sono stati intenzionalmente studiati per garantire elevati standard di sicurezza e prestazioni per tutti gli utenti. Inoltre, in base ai dati raccolti su tutti i dispositivi Microsoft Managed Desktop e all'ambito e all'impatto variabile degli aggiornamenti, Microsoft Managed Desktop è in grado di modificare la durata dei periodi di rinvio sopra indicati per tutti i gruppi di distribuzione di un annuncio. base hoc.
 
-## <a name="windows-insider-program"></a>Programma Windows persona interna
+## <a name="windows-insider-program"></a>Programma Windows inSider
 
-Desktop gestiti Microsoft non supporta i dispositivi che fanno parte del programma persona interna di Windows. Il programma di Windows dal viene utilizzato per convalidare il software Windows versione non definitiva ed è progettato per i dispositivi di importanza non critici. Mentre si tratta di un importante progetto di Microsoft, non deve essere ampia distribuzione negli ambienti di produzione. 
+Microsoft Managed Desktop non supporta i dispositivi che fanno parte del programma Windows inSider. Il programma Windows inSider viene utilizzato per convalidare il software Windows già rilasciato ed è progettato per i dispositivi non critici. Anche se si tratta di un'iniziativa Microsoft importante, non è destinata a una distribuzione di grandi dimensioni in ambienti di produzione. 
 
-Tutti i dispositivi sono stato riscontrati build persona interna di Windows verranno inseriti nel gruppo di Test e non viene incluso per aggiornamento service level agreement (SLA.
+Qualsiasi dispositivo trovato con Windows inSider Builds verrà inserito nel gruppo di testing e non verrà incluso per gli SLA (Update Service Level Agreements).
 
 ## <a name="bandwidth-management"></a>Gestione della larghezza di banda
 
-Ottimizzazione di recapito viene utilizzato per gli aggiornamenti di sistema e driver tutti operativi. Riduce la dimensione del download dal servizio Windows Update (WU) per la ricerca degli aggiornamenti da altri utenti all'interno della rete aziendale.
+L'ottimizzazione del reCapito viene utilizzata per tutti gli aggiornamenti del sistema operativo e dei driver. Consente di ridurre al minimo le dimensioni del download dal servizio Windows Update (WU) ricercando gli aggiornamenti dei peer all'interno della rete aziendale.
 
 

@@ -1,58 +1,59 @@
 ---
-title: Configurazione del dispositivo
-description: Informazioni sui criteri predefiniti applicati ai dispositivi Desktop gestiti Microsoft.
-keywords: Servizio Microsoft Desktop gestiti, Microsoft 365, documentazione
+title: Configurazione dispositivo
+description: Informazioni sui criteri predefiniti applicati ai dispositivi Microsoft Managed Desktop.
+keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: e36c65bab3fa78fc27ee6228e78461b2e6b318dd
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 9a080c044939dfde223c231dfebdd248861d5f9f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278625"
 ---
-# <a name="device-configuration"></a>Configurazione del dispositivo
+# <a name="device-configuration"></a>Configurazione dispositivo
 
 
 <!--This topic is the target for a "Learn more" link in the Enterprise Agreement (aka.ms/dev-config); do not delete.-->
 
 <!-- Device configuration and Security Addendum-->
 
-Quando un nuovo dispositivo Desktop gestiti Microsoft provisioning, è verificare che la configurazione corretta, ottimizzata per Microsoft Desktop gestiti, sul posto. Include un set di criteri predefiniti che sono impostati come parte del processo di on-boarding. Per evitare conflitti, questi criteri non devono essere modificati. 
+Quando si esegue il provisioning di un nuovo dispositivo Microsoft Managed Desktop, è necessario garantire che la configurazione corretta, ottimizzata per Microsoft Managed Desktop, sia sul posto. Questo include un insieme di criteri predefiniti che vengono impostati come parte del processo di onboarding. Per evitare conflitti, questi criteri non devono essere modificati. 
 
-Dispositivi aggiunti con un'immagine della firma e quindi aggiungerlo al dominio di Azure Active Directory quando il primo utente effettua l'accesso. Il dispositivo installerà automaticamente i criteri necessari e le applicazioni senza l'intervento IT necessario.
+I dispositivi arriveranno con un'immagine della firma, quindi aggiungeranno il dominio di Azure Active Directory quando il primo utente accede. Il dispositivo installerà automaticamente i criteri e le applicazioni necessari senza che sia necessario un intervento IT.
 
-## <a name="why-mdm-over-group-policy"></a>Perché MDM tramite criteri di gruppo
+## <a name="why-mdm-over-group-policy"></a>Perché MDM su criteri di gruppo
 
-Esistono alcuni motivi per utilizzare la gestione dei dispositivi mobili (MDM) invece di criteri di gruppo:
+Esistono alcuni motivi per utilizzare la gestione dei dispositivi mobili (MDM) anziché criteri di gruppo:
 
-- Sicurezza - MDM criteri sono più sicuri il mondo moderno. Criteri di gruppo sono progettato per l'utilizzo con identità locale mentre MDM progettato per l'utilizzo con la gestione delle identità cloud (Azure Active Directory).
-- Affidabilità - MDM criteri offrono più affidabile distribuzione dei criteri. Inoltre, le impostazioni di MDM sovrascrivono criteri oggetto Criteri di gruppo (GPO). A partire da Windows 10, versione 1803, impostazioni MDM assegnare la priorità sui valori dei criteri di gruppo, che supporta i clienti che passano alla gestione moderno. 
-- Allineati con la visione del Desktop gestiti Microsoft - fornisce più completo monitoring nella distribuzione di criteri e supporta basata sui gruppi approccio alla gradualmente modifiche ai criteri implementazione con capacità di Sospendi / Riprendi distribuzione quando necessario.
+- Sicurezza-i criteri MDM sono più sicuri nel mondo moderno. Criteri di gruppo è stato creato per funzionare al meglio con l'identità locale, mentre MDM è stato disegnato per funzionare al meglio con Cloud Identity Management (Azure Active Directory).
+- Affidabilità: i criteri MDM offrono una distribuzione di criteri più affidabile. Inoltre, le impostazioni MDM sovrascrivono i criteri oggetto Criteri di gruppo (GPO). A partire da Windows 10, versione 1803, le impostazioni MDM avranno la priorità sui valori di criteri di gruppo, che consentono ai clienti di passare alla gestione moderna. 
+- Allinea con Microsoft Managed Desktop Vision-fornisce un monitoraggio più completo sulla distribuzione dei criteri e supporta l'approccio basato su gruppo per l'implementazione graduale delle modifiche dei criteri con la possibilità di sospendere/riprendere la distribuzione, se necessario.
 
-Per ulteriori informazioni, vedere [Gestione dei dispositivi mobili](https://docs.microsoft.com/windows/client-management/mdm/). 
+Per ulteriori informazioni, vedere [gestione dei dispositivi mobili](https://docs.microsoft.com/windows/client-management/mdm/). 
 
 ## <a name="default-policies"></a>Criteri predefiniti
 
-In questa tabella vengono evidenziati i criteri predefiniti che vengono applicati a tutti i dispositivi Desktop gestiti Microsoft durante il provisioning di dispositivi. Tutti i rilevate le modifiche non approvate dal Team di operazioni di Desktop gestiti Microsoft per gli oggetti gestiti da Desktop gestiti Microsoft verranno ripristinate.
+In questa tabella vengono evidenziati i criteri predefiniti applicati a tutti i dispositivi Microsoft Managed Desktop durante il provisioning dei dispositivi. Tutte le modifiche rilevate non approvate dal team Microsoft Managed Desktop Operations per gli oggetti gestiti da Microsoft Managed Desktop verranno ripristinate.
 
-Criterio | Descrizione
+Criteri | Descrizione
 --- | ---
-Base per la sicurezza | [Base per la sicurezza Microsoft](https://docs.microsoft.com/windows/device-security/windows-security-baselines) per MDM è configurato per tutti i dispositivi Desktop gestiti Microsoft. Questa linea di base è la configurazione standard del settore. Viene rilasciata pubblicamente, testato ed è stata controllata da esperti di protezione di Microsoft per mantenere i dispositivi Desktop gestiti Microsoft e la protezione di applicazioni nell'area di lavoro moderno.<br><br>Per attenuare le minacce in continua evoluzione scenario dei rischi di protezione, la base per la sicurezza Microsoft sarà aggiornati e distribuiti nei dispositivi Desktop gestiti Microsoft con l'aggiornamento ogni caratteristica Windows 10.<br><br>Per ulteriori informazioni, vedere [Security baseline per Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
-Desktop gestiti Microsoft consiglia di modello di sicurezza | Un insieme di modifiche alla linea di base della protezione consigliate ottimizzare l'esperienza utente.  Queste modifiche sono documentate negli [Security Addendum](#security-addendum). In informazioni aggiuntive al criterio vengono aggiornate in base alle necessità.  
-Conformità di dispositivo | Questi criteri sono configurati per impostazione predefinita per tutti i dispositivi Desktop gestiti Microsoft. Un dispositivo viene indicato come non conforme quando viene soddisfatta non una delle condizioni di sicurezza seguenti:<br>-BitLocker crittografia del dispositivo abilitato per proteggere i dati nei dispositivi. Per ulteriori informazioni, vedere [Panoramica dei dispositivi crittografia BitLocker in Windows 10.](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10)<br>-Avvio protetta attivata e applicata, per convalidare le immagini del firmware nei dispositivi prima che possono essere eseguite. Per ulteriori informazioni, vedere [Panoramica della crittografia Secure avvio e il dispositivo.](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview)<br>-Dispositivo Desktop gestiti Microsoft richiede la password per l'accesso.
-Distribuzione degli aggiornamenti | Utilizzare Windows Update per le aziende (WUfB) per eseguire la graduale distribuzione degli aggiornamenti software. Gli amministratori IT non possono modificare le impostazioni per i criteri di gruppo di distribuzione. Per ulteriori informazioni sulla distribuzione basata su gruppo, vedere [modalità di gestione degli aggiornamenti](../working-with-managed-desktop/updates.md).
-Telemetria | Dispositivi impostano inviare dati di diagnostica avanzati a Microsoft in un identificatore commerciale noto. Come parte di Microsoft Desktop gestito, gli amministratori IT non possono modificare queste impostazioni. Per i clienti in genere aree di protezione dei dati nella regolazione (PILR), gli utenti finali possono ridurre il livello di dati di diagnostica fornito, ma vi sarà una riduzione del servizio. Desktop gestiti Microsoft, ad esempio, sarà possibile raccogliere i dati necessari per eseguire un'iterazione su criteri e impostazioni per adattarlo alle esigenze di protezione e le prestazioni. Per ulteriori informazioni, vedere [dati di diagnostica configurare Windows nella propria organizzazione.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
+Previsione di sicurezza | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) for MDM è configurato per tutti i dispositivi Microsoft Managed Desktop. Questa linea di base è la configurazione standard del settore. È stato rilasciato pubblicamente, testato bene ed è stato recensito dagli esperti di sicurezza di Microsoft per mantenere i dispositivi e le app desktop gestiti da Microsoft protette nei luoghi di lavoro moderni. <br><br>Per attenuare le minacce nel panorama delle minacce di sicurezza in continua evoluzione, la baseline di Microsoft Security verrà aggiornata e distribuita nei dispositivi Microsoft Managed Desktop con ogni aggiornamento delle funzionalità di Windows 10.<br><br>Per ulteriori informazioni, vedere [baseline di sicurezza per Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
+Modello di sicurezza consigliato per Microsoft Managed Desktop | Un set di modifiche consigliate per la linea di base di sicurezza che consente di ottimizzare l'esperienza utente.  Tali modifiche sono documentate nell' [addendum alla sicurezza](#security-addendum). Gli aggiornamenti all'addendum dei criteri si verificano in base alle esigenze.  
+Conformità del dispositivo | Questi criteri sono configurati per impostazione predefinita per tutti i dispositivi desktop Microsoft gestiti. Un dispositivo viene segnalato come non conforme quando non viene soddisfatta una delle seguenti condizioni di sicurezza:<br>-Crittografia del dispositivo BitLocker abilitata per proteggere i dati dei dispositivi. Per ulteriori informazioni, vedere [Overview of BitLocker Device Encryption in Windows 10.](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10)<br>-Secure Boot abilitato e applicato, per convalidare le immagini del firmware sui dispositivi prima che possano essere eseguite. Per ulteriori informazioni, vedere [Secure Boot and Device Encryption Overview.](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview)<br>-Il dispositivo Microsoft Managed Desktop richiede la password per l'accesso.
+Distribuzione degli aggiornamenti | Utilizzare Windows Update for business (WUfB) per eseguire la distribuzione graduale degli aggiornamenti software. Gli amministratori IT non possono modificare le impostazioni per i criteri di gruppo di distribuzione. Per ulteriori informazioni sulla distribuzione basata su gruppo, vedere [How updates are handled](../working-with-managed-desktop/updates.md).
+Dati di diagnostica | I dispositivi verranno impostati per fornire dati diagnostici avanzati a Microsoft in base a un identificatore commerciale conosciuto. Come parte di Microsoft Managed Desktop, gli amministratori IT non possono modificare queste impostazioni. Per i clienti nelle aree di regolamentazione generale per la protezione dei dati (GDPR), gli utenti finali possono ridurre il livello di dati diagnostici forniti, ma ci sarà una riduzione del servizio. Ad esempio, Microsoft Managed Desktop non sarà in grado di raccogliere i dati necessari per eseguire un'iterazione su impostazioni e criteri per soddisfare al meglio le esigenze di prestazioni e sicurezza. Per ulteriori informazioni, vedere [configurare i dati di diagnostica di Windows nell'organizzazione.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
- ## <a name="security-addendum"></a>Supplemento di sicurezza
+ ## <a name="security-addendum"></a>Addendum alla sicurezza
 
- In questa sezione vengono descritti i criteri che verranno distribuiti come aggiuntive per i criteri di Desktop gestiti Microsoft standard. In [criteri predefiniti](#default-policies)sono elencati i criteri standard. Questa configurazione è progettata con servizi finanziari e altamente regolamentato settori presente: ottimizzazione per l'orientamento più sicuro, mantenendo la produttività degli utenti.
+ In questa sezione vengono illustrati i criteri che verranno distribuiti come aggiuntivi per i criteri standard di Microsoft Managed Desktop. I criteri standard sono elencati nei [criteri predefiniti](#default-policies). Questa configurazione è progettata con i servizi finanziari e le industrie altamente regolamentate in mente: ottimizzazione per la posizione più sicura, mantenendo la produttività degli utenti.
 
- ### <a name="additional-security-policies"></a>Criteri di sicurezza aggiuntive
+ ### <a name="additional-security-policies"></a>Criteri di sicurezza aggiuntivi
 
- Questi criteri vengono aggiunte per aumentare la protezione per altamente regolamentato settori. 
- - **Elenco Consenti applicazioni**: app deve essere considerato attendibile dall'organizzazione per l'esecuzione su dispositivi Desktop gestiti Microsoft. In questo modo un ambiente bloccato. Le applicazioni che devono essere onboarded devono essere comunicate al Team di operazioni di Desktop gestiti Microsoft. Per ulteriori informazioni, vedere [Windows Defender dispositivo Guard](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
- - **Monitoraggio della protezione**: Microsoft dovrà monitorare dispositivi mediante [La protezione di Windows Defender avanzate rischio](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Se è possibile rilevare una minaccia, Microsoft provvederà a darne comunicazione del cliente, isolare il dispositivo e risolvere il problema in modalità remota. 
+ Questi criteri vengono aggiunti per aumentare la sicurezza per le industrie altamente regolamentate. 
+ - **Elenco delle app**consentite: le app devono essere considerate attendibili dall'organizzazione per l'esecuzione su dispositivi Microsoft Managed Desktop. In questo modo viene fornito un ambiente bloccato. Tutte le app che devono essere onboarded devono essere comunicate al team di Operations di Microsoft Managed Desktop. Per ulteriori informazioni, vedere [Windows Defender Device Guard](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+ - **Monitoraggio della sicurezza**: Microsoft controllerà i dispositivi con [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Se viene rilevata una minaccia, Microsoft invierà una notifica al cliente, isolerà il dispositivo e rettificherà il problema in remoto. 
 

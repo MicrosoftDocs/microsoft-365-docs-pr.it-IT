@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,21 +16,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: "Conoscere i prerequisiti per la configurazione dell'organizzazione con Microsoft 365 Business. "
-ms.openlocfilehash: caca6564d6706acd48538a2d33143ed27ed3bd25
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: "Conoscere i prerequisiti per la configurazione dell'organizzazione con Microsoft 365 business. "
+ms.openlocfilehash: 4789e72c3e6d1c7877b236279947f1a1b64d046f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278137"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Prerequisiti per proteggere i dati nei dispositivi con Microsoft 365 Business
 
 Il primo passaggio per la configurazione dell'organizzazione con Microsoft 365 Business consiste nell'assicurarsi di poter soddisfare i prerequisiti.
   
-## <a name="pre-requisites"></a>Prerequisiti
+## <a name="pre-requisites"></a>Requisiti preliminari
 
-- Dispositivi Windows devono essere in esecuzione Windows 7 Professional, Windows 8 Pro o Windows 8.1 Pro.
+- I dispositivi Windows devono eseguire Windows 7 Professional, Windows 8 Pro o Windows 8,1 Pro.
     
     [Eseguire l'aggiornamento di dispositivi Windows a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md) .
     

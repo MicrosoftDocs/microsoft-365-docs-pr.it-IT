@@ -1,5 +1,5 @@
 ---
-title: Ambiente di testing di criteri di conformità di dispositivo per la propria azienda 365 Microsoft
+title: Criteri di conformità dei dispositivi per l'ambiente di testing di Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,100 +8,100 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Utilizzare questa guida dei laboratori di testing per aggiungere criteri di conformità Intune dispositivo per l'organizzazione di 365 Microsoft ambiente di testing.
-ms.openlocfilehash: 1d957c5cdc888251224bbca43fe82ab0a15e7a93
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Utilizzare questa guida del laboratorio di testing per aggiungere criteri di conformità dei dispositivi di Intune all'ambiente di testing di Microsoft 365 Enterprise.
+ms.openlocfilehash: 5b587bd702071f325310ebd9979cf611f20e3205
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32279064"
 ---
-# <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Ambiente di testing di criteri di conformità di dispositivo per la propria azienda 365 Microsoft
+# <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Criteri di conformità dei dispositivi per l'ambiente di testing di Microsoft 365 Enterprise
 
-Con le istruzioni riportate in questo articolo, aggiungere criteri di conformità dispositivo Intune all'ambiente di testing Microsoft 365 Enterprise.
+Con le istruzioni riportate in questo articolo, è possibile aggiungere un criterio di conformità del dispositivo Intune all'ambiente di testing di Microsoft 365 Enterprise.
 
 ![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Fare clic [qui](https://aka.ms/m365etlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Preparare l'ambiente di testing Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 Enterprise
 
-Se si desidera configurare i criteri MAM in un modo semplice con i requisiti minimi, seguire le istruzioni di [configurazione di base semplificata](lightweight-base-configuration-microsoft-365-enterprise.md).
+Se si desidera solo configurare i criteri MAM in modo semplice con i requisiti minimi, seguire le istruzioni in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Se si desidera configurare i criteri MAM in un'azienda simulata, seguire le istruzioni [nell'autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
+Se si desidera configurare i criteri MAM in un'azienda simulata, seguire le istruzioni riportate nell' [autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Test automatizzati licenze e l'appartenenza al gruppo non richiede l'ambiente di testing simulato enterprise, che include una rete intranet simulata connessione a Internet e la sincronizzazione delle directory per una foresta Windows Server Active Directory. Viene fornito qui come un'opzione in modo che sia possibile testare gestione automatica delle licenze e l'appartenenza al gruppo e sperimentare in un ambiente che rappresenta una tipica organizzazione. 
+> La verifica delle licenze automatizzate e dell'appartenenza ai gruppi non richiede l'ambiente di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). Viene fornito come opzione in modo che sia possibile testare la licenza automatizzata e l'appartenenza ai gruppi e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
 >  
 
-## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Fase 2: Creare un criterio di conformità di dispositivo per i dispositivi Windows 10
+## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Fase 2: creare un criterio di conformità del dispositivo per i dispositivi Windows 10
 
-In questa fase è creare un criterio di conformità di dispositivo per i dispositivi Windows 10.
+In questa fase, è possibile creare un criterio di conformità del dispositivo per i dispositivi Windows 10.
   
-1. Accedere al portale di Office in ([https://office.com](https://office.com)) ed eseguire l'accesso alla sottoscrizione di prova di Office 365 con l'account di amministratore globale.
+1. Accedere a Office Portal all'indirizzo ([https://office.com](https://office.com)) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
     
-2. In una nuova scheda del browser, aprire il portale Azure al [https://portal.azure.com](https://portal.azure.com).
+2. In una nuova scheda del browser, aprire il portale di Azure all' [https://portal.azure.com](https://portal.azure.com)indirizzo.
 
-3. Nella scheda portal Azure nel browser, nel riquadro di spostamento fare clic su **tutti i servizi**, digitare **Intune**e quindi fare clic su **Intune**.
+3. Nella scheda portale di Azure nel browser, nel riquadro di spostamento, fare clic su **tutti i servizi**, digitare **Intune**, quindi fare clic su **Intune**.
     
-4. Se viene visualizzato un messaggio **non è abilitata la gestione dei dispositivi ancora** su blade **Microsoft Intune** , farvi clic. Su blade **autorità di gestione dei dispositivi mobili** , fare clic su **Autorità MDM Intune**e quindi fare clic su **Scegli**. Aggiornare la scheda browser.
+4. Se viene visualizzato un messaggio **che non è stato abilitato** per la gestione **** dei dispositivi, fare clic su di esso. Sul blade di **gestione dei dispositivi mobili** , fare clic su **autorità MDM di Intune**, quindi fare clic su **Scegli**. Aggiornare la scheda del browser.
     
 5. Nel riquadro di spostamento a sinistra fare clic su **Gruppi**.
     
-6. Su blade **gruppi a tutti i gruppi** , fare clic su **+ nuovo gruppo**.
+6. Nel pannello **gruppi-tutti i gruppi** fare clic su **+ nuovo gruppo**.
     
-7. Su blade **gruppo** , selezionare **Office 365** per **gruppo tipo?**, digitare **gli utenti di dispositivi gestiti Windows 10** nella casella **nome**, selezionare **assegnato** nel **tipo di appartenenza**e quindi fare clic su **Crea**. 
+7. Nel pannello **gruppo** , selezionare **Office 365** per **tipo di gruppo**, digitare **utenti di dispositivi Windows 10 gestiti** in **nome**, selezionare **assegnato** in **tipo di appartenenza**e quindi fare clic su **Crea**. 
     
 8. Chiudere il pannello **Gruppo**.
     
-11. Chiudere blade **gruppi a tutti i gruppi** .
+11. Chiudere il Blade **gruppi-tutti i gruppi** .
     
-12. Su blade **Microsoft Intune** , nell'elenco **attività veloce** , fare clic su **Crea un criterio di conformità**.
+12. Nell'elenco **attività rapide** del Blade di **Microsoft Intune** fare clic su **Crea un criterio di conformità**.
     
 13. Nel pannello **Profili dei criteri di conformità**, fare clic su **Crea criterio**.
     
-14. In **nome**blade **Creare criteri** , digitare **Windows 10**. **Piattaforma**, selezionare **Windows 10 e versioni successive**, fare clic su **OK** nella blade **Windows 10 criteri di conformità** e quindi fare clic su **Crea**. Chiudere blade **Windows 10** .
+14. Nel pannello **Crea criterio** , in **nome**, digitare **Windows 10**. In **piattaforma**selezionare **Windows 10 e versioni successive**, fare clic su **OK** nel Blade **criteri di conformità di Windows 10** e quindi fare clic su **Crea**. Chiudere il Blade **Windows 10** .
     
-15. Scegliere il nome del criterio **Windows 10** blade **Profili dei criteri di conformità** .
+15. Nel pannello **profili dei criteri di conformità** , fare clic sul nome del criterio di **Windows 10** .
     
-16. Su blade **10 Windows** , fare clic su **assegnazioni**e quindi fare clic su **Seleziona gruppi da includere**.
+16. Nel pannello di **Windows 10** , fare **** clic su assegnazioni, quindi fare clic su **Seleziona gruppi da includere**.
     
-17. Su blade **Selezionare gruppi da includere** fare clic sul gruppo di **utenti di dispositivi gestiti Windows 10** e quindi fare clic su **Seleziona**.
+17. Nel pannello **Seleziona gruppi da includere** , fare clic sul gruppo **utenti di dispositivi Windows 10 gestiti** e quindi fare clic su **Seleziona**.
     
-18. Fare clic su **Salva**e quindi chiudere blade **Windows 10 - assegnazioni** .
+18. Fare clic su **Salva**e quindi chiudere il Blade **Windows 10-assegnazioni** .
     
 19. Chiudere il pannello **Profili dei criteri di conformità**.
     
-20. Su blade **Intune Microsoft** , fare clic su **applicazioni Client** nel riquadro di spostamento sinistro.
+20. Sul blade di **Microsoft Intune** , fare clic su **app client** nella barra di spostamento a sinistra.
     
-21. Su blade **Applicazioni Client** , fare clic su **App**e quindi fare clic su **Aggiungi**. 
+21. Sul Blade **Apps client** fare clic su **app**e quindi su **Aggiungi**. 
 
-22. In blade **Aggiungi app** , selezionare **il tipo di App**e quindi selezionare **Windows 10** in **Famiglia di prodotti di Office 365**.
+22. Nel pannello **Aggiungi applicazione** selezionare tipo di **app**e quindi selezionare **Windows 10** in **Office 365 Suite**.
 
-23. Fare clic su **Configura Suite App**e quindi fare clic su **OK**.
+23. Fare clic su **Configura app Suite**e quindi fare clic su **OK**.
 
-24. Fare clic su **App Suite informazioni**, digitare **Office applicazioni per Windows 10** in **Nome famiglia di prodotti** **Office applicazioni per Windows 10** nel campo **Descrizione famiglia di prodotti**e quindi fare clic su **OK**.
+24. Fare clic su **informazioni su App Suite**, digitare le app **di Office per Windows 10** in **nome della famiglia**, le app **di Office per Windows 10** nella **Descrizione della famiglia**e quindi fare clic su **OK**.
 
-25. Fare clic su **Impostazioni App famiglia di prodotti**, selezionare **semi-annuale** nel **canale di aggiornamento**e quindi fare clic su **OK**.
+25. Fare clic su **impostazioni della famiglia di applicazioni**, selezionare **semestrale** nel **canale di aggiornamento**e quindi fare clic su **OK**.
 
-26. Su blade **Aggiungi app** , fare clic su **Aggiungi**.
+26. Nel pannello **Aggiungi applicazione** fare clic su **Aggiungi**.
 
-È ora disponibile un criterio di conformità di dispositivo per testare le app selezionate in Criteri di conformità del dispositivo **Windows 10** e per i membri del gruppo di **utenti di dispositivi gestiti Windows 10** . 
+Ora si dispone di un criterio di conformità del dispositivo per testare le app selezionate nei criteri di conformità dei dispositivi **Windows 10** e per i membri del gruppo di **utenti del dispositivo Windows 10 gestito** . 
   
 ## <a name="next-step"></a>Passaggio successivo
 
-Esplora le funzionalità aggiuntive [gestione dei dispositivi mobili](m365-enterprise-test-lab-guides.md#mobile-device-management) disponibili nell'ambiente di testing.
+Esplorare le funzionalità e le funzionalità aggiuntive per la [gestione dei dispositivi mobili](m365-enterprise-test-lab-guides.md#mobile-device-management) nell'ambiente di testing.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guide dei laboratori di testing Microsoft Enterprise 365](m365-enterprise-test-lab-guides.md).
+[Guide del laboratorio di testing di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md).
   
 [Registrazione dei dispositivi iOS e Android nell'ambiente di testing di Microsoft 365 Enterprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
 [Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 
-[Sicurezza (EMS) + mobilità aziendale](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+[Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

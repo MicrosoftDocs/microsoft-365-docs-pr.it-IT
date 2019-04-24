@@ -1,6 +1,6 @@
 ---
-title: Protezione dei documenti aziendali che eseguono Microsoft componenti aggiuntivi Office - 365 Microsoft Enterprise | Documenti di Microsoft
-description: Viene descritto come utilizzare WIP e Intune per proteggere i dati aziendali nei documenti in esecuzione di componenti aggiuntivi di Office.
+title: Proteggere i documenti dell'organizzazione che eseguono i componenti aggiuntivi di Microsoft Office-Microsoft 365 Enterprise | Documenti Microsoft
+description: In questo articolo viene descritto come utilizzare WIP e Intune per proteggere i dati dell'organizzazione nei documenti che eseguono i componenti aggiuntivi di Office.
 author: barlanmsft
 manager: angrobe
 ms.prod: microsoft-365-enterprise
@@ -10,11 +10,11 @@ ms.author: barlan
 ms.reviewer: jsnow
 ms.custom: it-pro
 ms.openlocfilehash: 6871f288a7e5849b147cbf0aedb056f84575f376
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290761"
 ---
 # <a name="use-wip-and-intune-to-protect-enterprise-data-in-documents-running-office-add-ins"></a>Usare WIP e Intune per proteggere i dati aziendali contenuti nei documenti che usano i componenti aggiuntivi per Office
 Quando gli utenti di un'organizzazione usano i componenti aggiuntivi per Office per interagire con i dati dell'organizzazione viene introdotto un potenziale rischio di perdita di alcuni dati. È possibile usare Windows Information Protection (WIP) e Microsoft Intune per proteggere i dati aziendali quando gli utenti usano i componenti aggiuntivi per Office.

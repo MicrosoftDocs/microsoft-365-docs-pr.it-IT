@@ -3,7 +3,7 @@ title: Writeback della password per l'ambiente di testing di Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/16/2019
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: configurare il writeback della password per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 11a0efbae09c36098a19725187cd43b53850f4fc
-ms.sourcegitcommit: db52a11eb192a28dbec827c565e36ad4a81d8e3f
+ms.openlocfilehash: e2ccbe251c4e62790331b949f163816f789436cb
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291451"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Writeback della password per l'ambiente di testing di Microsoft 365
 
@@ -39,7 +39,7 @@ Esistono due fasi per la configurazione:
 > [!TIP]
 > Fare clic [qui](https://aka.ms/m365etlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
   
-## <a name="phase-1-configure-password-hash-synchronization-and-password-reset-for-your-microsoft-365-test-environment"></a>Fase 1: configurare la sincronizzazione hash delle password e la reimpostazione delle password per l'ambiente di testing di Microsoft 365
+## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurare la sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
 
 Prima di tutto, seguire le istruzioni riportate in [Sincronizzazione hash delle password](password-hash-sync-m365-ent-test-environment.md). Di seguito è riportata la configurazione risultante.
   
@@ -50,10 +50,6 @@ Questa configurazione è costituita da:
 - Abbonamenti di valutazione o a pagamento a Office 365 E5 ed EMS E5.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
 - Azure AD Connect viene eseguito su APP1 per sincronizzare il dominio TESTLAB Active Directory Domain Services per il tenant di Azure AD degli abbonamenti a Office 365 ed EMS E5.
-
-Quindi, seguire le istruzioni contenute nella [Fase 2](password-reset-m365-ent-test-environment.md#phase-2-configure-and-test-password-reset) della guida al lab di test per la reimpostazione della password.
-
-Per usare il writeback delle password è necessario abilitare la reimpostazione della password.
 
 ## <a name="phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain"></a>Fase 2: abilitare il writeback delle password per il dominio TESTLAB Active Directory Domain Services.
 

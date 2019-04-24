@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere in che modo Contoso ha utilizzato System Center Configuration Manager per la distribuzione degli aggiornamenti sul posto per Windows 10 Enterprise.
-ms.openlocfilehash: a4b24d55951c83875b9aa08db05fa4f8591472d6
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5f8335b8769daf28b55769fc64fed6607b69eb3
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289171"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Distribuzione di Windows 10 Enterprise per Contoso
 

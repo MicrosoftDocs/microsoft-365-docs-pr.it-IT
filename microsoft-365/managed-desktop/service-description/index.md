@@ -1,22 +1,26 @@
 ---
 title: Descrizione del servizio Microsoft Managed Desktop
-description: Descrizione del servizio Microsoft Desktop gestiti include dispositivi come servizio e come un servizio IT
-keywords: Servizio Microsoft Desktop gestiti, Microsoft 365, documentazione
+description: La descrizione del servizio Microsoft Managed Desktop include il dispositivo come servizio e come servizio
+keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jdeckerms
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: f17b07acb1ff6beaa0125f6faa4894fe6565214c
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.date: 02/06/2019
+ms.openlocfilehash: abce237a7e9608d50c79f8676033a1362fd9931e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283438"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Descrizione del servizio Microsoft Managed Desktop
-Servizio Microsoft Desktop gestiti include *dispositivi come servizio* e *IT come servizio*. 
+Microsoft Managed Desktop include i servizi seguenti: 
 
-## <a name="in-this-section"></a>Contenuto della sezione
-
-- [Device as a Service](daas.md)
-- [IT come servizio](itaas.md)
+- [Dispositivi di programma](device-list.md)
+- [Servizi per dispositivi](device-services.md)
+- [Configurazione dispositivo](device-policies.md)
+- [Sicurezza](security.md)
+- [Aggiornamenti](updates.md)
+- [Supporto](support.md)
+- [Operazioni e monitoraggio](operations-and-monitoring.md)
+- [Requisiti dell'applicazione](mmd-app-requirements.md)

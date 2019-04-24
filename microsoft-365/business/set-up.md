@@ -10,7 +10,9 @@ f1_keywords:
 - BCS365_M365SetupBanner
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -19,33 +21,33 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Informazioni su come configurare Microsoft 365 Business completando i quattro passaggi.
-ms.openlocfilehash: f57239b884bd2e186c0bc01973130a10fa4cfe84
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Informazioni su come configurare Microsoft 365 business completando quattro passaggi.
+ms.openlocfilehash: a1c8a41c3e291983276280a063248bdd10a7f85a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283916"
 ---
 # <a name="set-up-microsoft-365-business-by-using-the-setup-wizard"></a>Configurare Microsoft 365 Business tramite la configurazione guidata
 
-Completare i passaggi da 1 a 4 riportata di seguito.
+Completare i passaggi 1-4 riportati di seguito.
   
 ### <a name="set-up-microsoft-365-business"></a>Configurare Microsoft 365 Business
 
-Guardare un video viene illustrato come configurare Microsoft 365 Business quando non si dispone di un server di Active Directory locale:
+Guardare un video su come configurare Microsoft 365 business quando non si dispone di un Active Directory locale:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2?autoplay=false]
   
-I passaggi di configurazione includono informazioni personali per le installazioni che includono Active Directory locale. Se si desidera continuare ad accedere ai dispositivi di dominio, leggere gli articoli seguenti per due diverse modalità dell'attivazione che e prima di eseguire l'installazione guidata, completare i passaggi:
+I passaggi di configurazione includono informazioni per le configurazioni che includono Active Directory locale. Se si desidera continuare ad accedere ai dispositivi appartenenti al dominio, leggere gli articoli seguenti per due diverse modalità di abilitazione e completare la procedura prima di eseguire l'installazione guidata:
   
-- [Consentire ai dispositivi Windows 10 aggiunto al dominio da gestire da Microsoft 365 Business](manage-windows-devices.md)
+- [Abilitare i dispositivi Windows 10 associati a un dominio per essere gestiti da Microsoft 365 business](manage-windows-devices.md)
     
-    -Si tratta del metodo consigliato.
+    -Questo è il modo consigliato.
     
-- [Accesso locale risorse da un dispositivo Azure Active Directory aggiunti in Microsoft 365 Business](access-resources.md)
+- [Accedere alle risorse locali da un dispositivo di Azure AD-join in Microsoft 365 business](access-resources.md)
     
-### <a name="step-1-personalize-sign-in"></a>Passaggio 1: Personalizzare accesso
+### <a name="step-1-personalize-sign-in"></a>Passaggio 1: personalizzare l'accesso
 
 1. Accedere a [Microsoft 365 Business](https://portal.microsoft.com) usando le credenziali di amministratore globale. Selezionare il riquadro **Amministratore** per passare all'interfaccia di amministrazione. 
     
@@ -53,15 +55,15 @@ I passaggi di configurazione includono informazioni personali per le installazio
     
 3. Immettere il nome del dominio che si vuole usare, ad esempio contoso.com.
     
-    Proseguire e immettere il dominio, anche se è stato verificato durante l'utilizzo di Azure Active Directory Connect, ad esempio. I due passaggi seguenti non si applicano all'utente se è stato utilizzato Connetti Azure Active Directory per verificare il proprio dominio.
+    Immettere il dominio anche se è già stato verificato durante l'uso di Azure AD Connect, ad esempio. I due passaggi seguenti non si applicano all'utente se si utilizza Azure AD Connect per verificare il dominio.
     
-4. Seguire le istruzioni della procedura guidata per [creare record DNS presso un provider di hosting DNS per Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166) che consente di verificare che si è proprietari del dominio. 
+4. Seguire i passaggi della procedura guidata per [creare record DNS presso un provider di hosting DNS per Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166) che verifica che si è proprietari del dominio. 
     
-    È possibile visualizzare un video di esempio di [Video: installazione di Office 365 nuova interfaccia di amministrazione di](https://support.office.com/article/a8c2002a-34bc-4ab3-93d8-9b5156c48bf8). Si noti che in questo video non sono incluse le operazioni di protezione dei dati di Microsoft 365 Business.
+    È possibile visualizzare un video di esempio del [video: configurare Office 365 nella nuova](https://support.office.com/article/a8c2002a-34bc-4ab3-93d8-9b5156c48bf8)interfaccia di amministrazione. Questo video non include i passaggi per la protezione dei dati di Microsoft 365 Business.
     
     ![Screenshot of the Business Cloud Suite setup wizard.](media/3c4fd40c-2de1-4a87-8ee0-78d3928c7bb7.png)
   
-### <a name="step-2-add-users-and-assign-licenses"></a>Passaggio 2: Aggiungere utenti e assegnare licenze
+### <a name="step-2-add-users-and-assign-licenses"></a>Passaggio 2: aggiungere utenti e assegnare licenze
 
 1. È possibile aggiungere utenti qui oppure [aggiungere gli utenti in un secondo momento](add-users-m365b.md) nell'interfaccia di amministrazione. 
     
@@ -73,36 +75,36 @@ I passaggi di configurazione includono informazioni personali per le installazio
     
 4. Ignorare il passaggio relativo alla migrazione dei messaggi di posta elettronica e scegliere **Avanti** nella pagina **Esegui la migrazione dei messaggi di posta elettronica**. 
     
-    Se si passa da un altro provider di posta elettronica e si desidera copiare i dati in seguito, è possibile [eseguire la migrazione di posta elettronica e i contatti a Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
+    Se si sta passando da un altro provider di posta elettronica e si desidera copiare i dati in un secondo momento, è possibile [eseguire la migrazione di posta elettronica e contatti a Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e).
     
     ![Screenshot of two new users added in the setup wizard](media/8f729967-5c65-4ceb-b737-18119db40564.png)
   
-### <a name="step-3-connect-your-domain"></a>Passaggio 3: Connettere il dominio
+### <a name="step-3-connect-your-domain"></a>Passaggio 3: connettere il dominio
 
 > [!NOTE]
-> Se si sceglie di utilizzare il dominio .onmicrosoft o utilizzato Connetti Azure Active Directory, questo passaggio non verrà visualizzato. 
+> Se si è scelto di utilizzare il dominio. onmicrosoft o Azure AD Connect, questo passaggio non verrà visualizzato. 
   
 Per configurare i servizi, occorre aggiornare alcuni record presso l'host DNS o il registrar.
   
-1. In genere, l'installazione guidata rileva la registrazione e offre un collegamento a istruzioni dettagliate per aggiornare i record NS nel sito Web di registrazione. In caso contrario, [nameservers modifiche alla configurazione di Office 365 con un registrar](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2).
+1. La configurazione guidata rileva in genere il registrar e offre un collegamento a istruzioni dettagliate per l'aggiornamento dei record NS presso il suo sito Web. In caso contrario, [modificare i server dei nomi per configurare Office 365 con qualsiasi registrar](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2).
     
 2. La posta elettronica e altri servizi verranno configurati automaticamente.
     
-### <a name="step-4-manage-devices-and-work-files"></a>Passaggio 4: Gestire i dispositivi e file di lavoro
+### <a name="step-4-manage-devices-and-work-files"></a>Passaggio 4: gestire i dispositivi e i file di lavoro
 
-1. Nel **file di lavoro Protect nei dispositivi mobili** pagina impostata **Protect lavoro file quando dispositivi sono perduti o rubati** e le impostazioni di **gestire l'accesso al file di Office su dispositivi mobili** **in**. È inoltre possibile accedere a ogni secondario impostazione facendo clic sulle virgolette acute accanto a ogni impostazione.
+1. Nella pagina **Proteggi i file di lavoro nei dispositivi mobili** **attivare** sia **Proteggi i file di lavoro in caso di furto o smarrimento dei dispositivi** che **Gestisci la modalità di accesso ai file di Office nei dispositivi mobili**. È inoltre possibile accedere a ogni impostazione secondaria facendo clic sulle virgolette acute accanto a ogni impostazione.
   
-  Tutti lavoro file gli utenti con licenza sono ora protetti iOS e dispositivi Android, non appena si [installa Office apps](set-up-mobile-devices.md) (e l'autenticazione con le proprie credenziali di Microsoft 365 Business). 
+  Tutti i file di lavoro degli utenti con licenza sono ora protetti nei dispositivi iOS e Android, non appena installano le [app di Office](set-up-mobile-devices.md) (ed eseguono l'autenticazione con le credenziali aziendali di Microsoft 365). 
   
   ![Screenshot of protect work files on your mobile devices page](media/3139a9aa-6228-4e74-8166-c6a886d7319f.PNG)
   
-2. Nella pagina **Configurazione dispositivo impostare Windows 10** impostazione **Sicura Windows 10 dispositivi** di **attivato**.
+2. Nella pagina **Imposta configurazione dispositivo Windows 10** , impostare **Secure Windows 10 Devices** setting **su on**.
   
-   È inoltre possibile accedere a ogni secondario impostazione facendo clic sull'accento circonflesso accanto al nome.
+   È inoltre possibile accedere a ogni impostazione secondaria facendo clic sul simbolo chevron accanto a esso.
   
-3. Impostazione di **Installare Office su dispositivi 10 Windows** **Sì** se tutti gli utenti dispongono di computer Windows 10 e verrà installato alcun esistente Office o le installazioni di Office a portata di clic. In questo caso non è possibile impostare questa opzione su **No**. Dopo aver preparato il computer degli utenti, è possibile [installare automaticamente Office](auto-install-or-uninstall-office.md) successivamente dall'interfaccia di amministrazione. Per ulteriori informazioni, vedere [Preparazione dell'installazione client di Office](prepare-for-office-client-deployment.md).
+3. Impostare l'opzione **Installa Office nei dispositivi Windows 10** su **Sì** se tutti gli utenti hanno computer Windows 10 e nessuna installazione di Office esistente oppure installazioni di Office A portata di clic. In caso contrario, impostare questa opzione su **No**. È possibile [installare Office automaticamente](auto-install-or-uninstall-office.md) in un secondo momento dall'interfaccia di amministrazione dopo aver preparato i computer degli utenti. Per istruzioni, vedere [Prepare for Office Client Installation](prepare-for-office-client-deployment.md).
   
-    Verranno proiettare il più presto possibile man mano che i file di lavoro degli utenti con licenza nei dispositivi Windows 10 [partecipare proprio dispositivo Windows 10](set-up-windows-devices.md) a un dominio aziendale Microsoft 365 Azure Active Directory o [installare Windows 10 in un nuovo computer](https://support.office.com/article/c654bd23-d256-4ac7-8fba-0c993bf5a771.aspx) durante l'unione contemporaneamente a Microsoft 365 Dominio di Azure Active Directory aziendale. 
+    I file di lavoro degli utenti con licenza nei dispositivi Windows 10 verranno proiettati non appena entreranno a [far parte del dispositivo Windows 10](set-up-windows-devices.md) a un dominio di Microsoft 365 business Azure ad o [installeranno Windows 10 in un nuovo computer](https://support.office.com/article/c654bd23-d256-4ac7-8fba-0c993bf5a771.aspx) e contemporaneamente entreranno a far parte di Microsoft 365. Dominio di Azure AD aziendale. 
   
 4. Fare clic su **Avanti** per completare la configurazione. 
   
@@ -112,16 +114,16 @@ Per configurare i servizi, occorre aggiornare alcuni record presso l'host DNS o 
   
 ## <a name="additional-security-settings"></a>Impostazioni di sicurezza aggiuntive
 
-Oltre a protezione e impostazione di conformità dell'installazione guidata, è possibile configurare impostazioni aggiuntive seguenti:
+Oltre all'impostazione sicurezza e conformità nell'installazione guidata, è anche possibile configurare le seguenti impostazioni aggiuntive:
   
-- Consente di impostare una protezione contro gli allegati non sicuri. **Protezione da minacce avanzate** (Degli strumenti di analisi) identifica contenuto dannoso e quindi blocca il rilascio di unsafe attachments, proteggere contro gli schemi di phishing e infezioni ransomware. Per attivare la protezione degli allegati, vedere [impostazione dei criteri di sicurezza allegati di Office 365 degli strumenti di analisi](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775#setpolicy).
+- Impostare la protezione contro gli allegati non sicuri. **Protezione avanzata dalle minacce** (ATP) identifica i contenuti dannosi e quindi blocca il recapito degli allegati non sicuri, contribuendo a proteggersi dagli schemi di phishing e dalle infezioni ransomware. Per attivare la protezione degli allegati, vedere [set up Office 365 ATP SAFE Attachment Policies](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775#setpolicy).
     
-- Proteggere l'ambiente quando gli utenti fare clic sui collegamenti dannosi. Degli strumenti di analisi vengono esaminati i collegamenti nella posta elettronica in fase di un utente fa clic su essi. Se un collegamento non sicuro, l'utente viene avvisato non per visitare il sito o informato che il sito è stato bloccato. Consente di evitare truffe. [Impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc) o [impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc).
+- Proteggere l'ambiente quando gli utenti fanno clic su collegamenti dannosi. ATP esamina i collegamenti nella posta elettronica al momento in cui un utente fa clic su di essi. Se un collegamento non è sicuro, l'utente viene avvisato di non visitare il sito o ha informato che il sito è stato bloccato. Ciò consente di proteggere gli schemi di phishing. [Configurare i criteri dei collegamenti sicuri ATP di office 365](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc) o [configurare i criteri dei collegamenti sicuri atp di Office 365](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc).
     
-- È possibile preservare tutto il contenuto delle cassette postali inclusi gli elementi eliminati inserendo intera cassetta postale dell'utente controversia **attesa**. Per ulteriori informazioni, vedere 
-- [Impostare il mantenimento di posta elettronica con archiviazione Exchange Online](security-features.md#set-up-email-retention-with-exchange-online-archiving).
+- È possibile mantenere tutti i contenuti delle cassette postali, compresi gli elementi eliminati, inserendo l'intera cassetta postale di un utente sul **blocco per controversia legale**. Per istruzioni, vedere 
+- [Configurare la conservazione della posta elettronica con Exchange Online Archiving](security-features.md#set-up-email-retention-with-exchange-online-archiving).
     
-- Configurare **i criteri di conservazione**personalizzata, ad esempio, per conservare per un determinato periodo di tempo o eliminare in modo permanente il contenuto alla fine del periodo di conservazione. È possibile abilitare i criteri di conservazione personalizzata nella titoli e centro conformità, andare alla **governance dati** \> **conservazione**, quindi seguire le istruzioni della procedura guidata. Per ulteriori informazioni, vedere [Panoramica di criteri di conservazione](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
+- Impostare criteri di **conservazione**personalizzati, ad esempio per mantenere un determinato intervallo di tempo o eliminare il contenuto in modo permanente alla fine del periodo di conservazione. È possibile abilitare i criteri di conservazione personalizzati nel centro titoli e conformità, passare a \> **conservazione**della **governance dei dati** e quindi seguire i passaggi della procedura guidata. Per ulteriori informazioni, vedere [Overview of](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)Retention Policies.
     
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -11,6 +11,9 @@ f1_keywords:
 - BCS365_Win10AppPolicy
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -20,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: Informazioni su come creare un criterio di gestione app e proteggere i file di lavoro nei dispositivi Windows 10.
-ms.openlocfilehash: acf19a72d994185a35b2e425f8334a73a121ee10
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Informazioni su come creare un criterio di gestione delle app e proteggere i file di lavoro nei dispositivi Windows 10.
+ms.openlocfilehash: 289c6a74f6ccb53f6a833612a7b4a5bcddd3ea56
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278179"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Configurare le impostazioni di protezione delle app per i dispositivi Windows 10
 
@@ -34,23 +37,21 @@ ms.locfileid: "26868481"
 
 Se gli utenti hanno dispositivi Windows 10 personali in cui eseguono attività di lavoro, è possibile proteggere anche i dati in questi dispositivi.
   
-1. Accedere a [Microsoft 365 Business](https://portal.office.com) con le credenziali di amministratore globale. Selezionare il riquadro **Amministratore** per passare all'interfaccia di amministrazione. 
+1. Accedere all'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=837890) con le credenziali di amministratore globale. Selezionare il riquadro **Amministratore** per passare all'interfaccia di amministrazione. 
     
-2. Nella scheda **Criteri dispositivi** del portale di amministrazione scegliere **Aggiungi criterio**.
-    
-    ![Device policies card in the admin center.](media/27c12b61-d112-4348-b557-4f3e46204797.png)
-  
+2. Nella barra di spostamento sinistra fare clic su **criteri** \> **dispositivi** \> **Aggiungi**.
+
 3. Nel riquadro **Aggiungi criterio** immettere un nome univoco per il criterio. 
     
 4. In **Tipo di criterio** scegliere **Gestione applicazioni per Windows 10**.
     
-5. Con * * tipo di dispositivo * *, scegliere **personale** o **Proprietà dell'azienda**.
+5. Under ** Device type **, choose either **Personal** or **Company Owned**.
     
 6. L'opzione **Crittografa i file di lavoro** viene attivata automaticamente. 
     
 7. Impostare **Impedisci agli utenti di copiare dati aziendali in file personali e forzali a salvare i file di lavoro in OneDrive for Business** su **Sì** per evitare che gli utenti salvino i file di lavoro nei rispettivi PC. 
     
-8. Espandere **gestire l'accesso al file di Office su dispositivi** \> configurare le impostazioni come desiderato. **Gestire l'accesso di dispositivi di Office su dispositivi mobili** è **disattivata** per impostazione predefinita, ma è consigliabile **attivarlo** e accettare i valori predefiniti. Per ulteriori informazioni, vedere [impostazioni disponibili](protection-settings-for-windows-10-devices.md#bkmk_settings) . 
+8. Expand **Manage how users access Office files on devices** \> configure the settings how you would like. The **Manage how users access Office devices on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. Per ulteriori informazioni, vedere [available Settings](#available-settings). 
     
     È sempre possibile usare il collegamento **Ripristina impostazioni predefinite** per ripristinare l'impostazione predefinita. 
     

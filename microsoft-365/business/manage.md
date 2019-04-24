@@ -7,6 +7,7 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -16,13 +17,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Informazioni su come gestire Microsoft 365 Business relative attività di amministrazione, i dispositivi mobili, Windows 10PCs e molte attività quali.
-ms.openlocfilehash: 280bff9f12a884e6a19e26feea5d8a339297a434
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Informazioni su come gestire le attività di amministrazione di Microsoft 365 business correlate, i dispositivi mobili, Windows 10PCs e molte di queste attività.
+ms.openlocfilehash: 993db51ec487237395ca57290e37a6c5edbce8b8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278576"
 ---
 # <a name="manage-microsoft-365-business"></a>Gestire Microsoft 365 Business
 
@@ -32,7 +33,7 @@ ms.locfileid: "26868382"
     
 - [Visualizzare criteri e dispositivi](view-policies-and-devices.md)
     
-- [Funzionalità di sicurezza Microsoft 365 Business](security-features.md)
+- [Funzionalità di sicurezza aziendale di Microsoft 365](security-features.md)
     
 - [Corrispondenza tra le caratteristiche di protezione in Microsoft 365 Business e le impostazioni di Intune](map-protection-features-to-intune-settings.md)
     
@@ -44,7 +45,7 @@ Vedere le sezioni seguenti su come usare Microsoft 365 Business per proteggere i
     
 - [Configurare le impostazioni di protezione delle app per i dispositivi Android o iOS](app-protection-settings-for-android-and-ios.md)
     
-    Vedere [le impostazioni di protezione di convalida app su un dispositivo Android o iOS](validate-settings-on-android-or-ios.md) per verificare che si ha avuto esito positivo. 
+    Vedere [convalidare le impostazioni di protezione delle app su un dispositivo Android o iOS](validate-settings-on-android-or-ios.md) per assicurarsi che l'operazione sia stata eseguita. 
     
 - [Rimuovere i dati aziendali dai dispositivi](remove-company-data.md)
     
@@ -90,11 +91,11 @@ Gli argomenti seguenti descrivono come usare Windows AutoPilot in Microsoft 365 
     
 - [Configurare Microsoft 365 Business usando la configurazione guidata](set-up.md)
     
-- [Eseguire la migrazione a Microsoft 365 Business](migrate-to-microsoft-365-business.md)
+- [Eseguire la migrazione a Microsoft 365 business](migrate-to-microsoft-365-business.md)
     
-- [Consentire ai dispositivi Windows 10 aggiunto al dominio da gestire da Microsoft 365 Business](manage-windows-devices.md)
+- [Abilitare i dispositivi Windows 10 associati a un dominio per essere gestiti da Microsoft 365 business](manage-windows-devices.md)
     
-[Funzionalità di protezione aggiuntive](security-features.md#additional-security-features)
+[Altre funzionalità di sicurezza](security-features.md#additional-security-features)
     
 
   

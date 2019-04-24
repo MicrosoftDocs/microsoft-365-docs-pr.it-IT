@@ -1,5 +1,5 @@
 ---
-title: Distribuzione di Exchange Online per Microsoft 365 Enterprise
+title: Distribuire Exchange Online per Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/28/2018
@@ -7,52 +7,54 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
-description: Passaggi del processo di pianificazione, distribuzione e che influisce sul valore di Exchange Online in Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: aafa1b28546eb77938bb3e4a5ebe9ccd60b9a60b
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Eseguire il processo di pianificazione, implementazione e guida del valore di Exchange online in Microsoft 365 Enterprise all'interno dell'organizzazione.
+ms.openlocfilehash: 6efd94da7806b6268881f7eaabe5efacc8920f47
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281206"
 ---
-# <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Distribuzione di Exchange Online per Microsoft 365 Enterprise
+# <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Distribuire Exchange Online per Microsoft 365 Enterprise
 
-Exchange Online è il servizio cloud primario per la posta elettronica e calendario che consente agli utenti collaborano in modo che non richiedono in tempo reale in una chat o centralizzati memorizzazione dei documenti. Exchange Online è la modalità di conversione di comunicazione tramite gruppi singoli e piccolo di breve durata e la pianificazione e un elemento chiave di realizzato per valore il lavoro del team di Microsoft 365 Enterprise. Exchange Online consente di ottenere informazioni e lavorare in modo più efficace con l'applicazione Outlook conosciuto, indipendentemente dalla quale dispositivo si è in.
+*Questo carico di lavoro è incluso nelle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-Exchange Online anche con avanzate funzionalità di protezione inclusi anti-malware e filtro di protezione da posta indesiderata per proteggere le cassette postali e funzionalità di prevenzione della perdita di dati che impediscono agli utenti di inviare inavvertitamente informazioni riservate a persone non autorizzate. Protezione Exchange Online è un elemento chiave del valore intelligente protezione di Microsoft 365 Enterprise.
+Exchange Online è il servizio cloud principale per la posta elettronica e il calendario che consente agli utenti di collaborare in modo da non richiedere chat in tempo reale o archiviazione centralizzata dei documenti. Exchange Online è il modo in cui si esegue la comunicazione e la pianificazione di breve durata del gruppo individuale e di piccole dimensioni ed è un elemento chiave del valore costruito per il lavoro di squadra di Microsoft 365 Enterprise. Exchange Online consente di ottenere ulteriori informazioni e di lavorare in modo più efficace con l'applicazione Outlook ben nota, indipendentemente dal dispositivo in uso.
 
-Se si è nuova in Exchange Online, vedere [Microsoft Exchange Online](https://products.office.com/exchange/exchange-online).
+Exchange Online dispone anche di funzionalità di sicurezza avanzate, tra cui il filtro antimalware e antispam per proteggere le cassette postali e le funzionalità di prevenzione della perdita di dati che impediscono agli utenti di inviare messaggi di informazioni riservate a persone non autorizzate. La sicurezza di Exchange Online è un elemento chiave del valore di sicurezza intelligente di Microsoft 365 Enterprise.
 
-Le fasi e i passaggi seguenti viene illustrato il processo di definizione degli obiettivi il ruolo di Exchange Online nell'organizzazione, onboarding all'organizzazione di Exchange Online tramite una serie di implementazioni progressive e che influisce sui dati di utilizzo di Exchange Online e la relativa proprietà valore per gli utenti finali.
+Se sei nuovo di zecca per Exchange Online, consulta [Microsoft Exchange Online](https://products.office.com/exchange/exchange-online).
+
+Nelle fasi e nei passaggi seguenti viene illustrato il processo di definizione del ruolo di Exchange Online nell'organizzazione, l'onboarding dell'organizzazione a Exchange Online tramite una serie di graduali progressivi e l'utilizzo della Guida di Exchange Online e del relativo valore per gli utenti finali.
 
 >[!Note]
->In queste istruzioni distribuzione devono essere seguite solo dopo aver completato la [Fase 2-Identity](identity-infrastructure.md) dell'infrastruttura di Enterprise 365 Microsoft foundation.
+>Queste istruzioni per la distribuzione devono essere seguite solo dopo aver completato la [fase 2-Identity](identity-infrastructure.md) dell'infrastruttura di Microsoft 365 Enterprise Foundation.
 >
 
 ## <a name="phase-1-envision"></a>Fase 1: concezione
 
-In questa fase, raccogliere le persone per la distribuzione di Exchange Online e determinare come verrà utilizzata dall'organizzazione Exchange Online per soddisfare le esigenze aziendali.
+In questa fase, si raccolgono gli utenti per la distribuzione di Exchange Online e si determina il modo in cui l'organizzazione utilizzerà Exchange Online per soddisfare le proprie esigenze aziendali.
 
-### <a name="step-1-gather-your-exchange-online-deployment-members"></a>Passaggio 1: Raccogliere i membri di distribuzione di Exchange Online
+### <a name="step-1-gather-your-exchange-online-deployment-members"></a>Passaggio 1: raccogliere i membri della distribuzione di Exchange Online
 
-Per una corretta distribuzione di Exchange Online nella [Fase 2-Identity](identity-infrastructure.md) dell'infrastruttura di base Microsoft 365 Enterprise, è necessario ottenere le persone giuste per l'input e commenti e suggerimenti. Utenti principali includono dirigenti aziendali, il personale IT, ad esempio gli architetti e ai responsabili dell'implementazione e sostenitori per gli utenti finali. 
+Per una distribuzione di Exchange Online con esito positivo sulla [fase 2-identità](identity-infrastructure.md) dell'infrastruttura di Microsoft 365 Enterprise Foundation, è necessario ottenere gli utenti giusti per gli input e i commenti e suggerimenti. Le persone principali includono responsabili decisionali aziendali, personale IT come architetti e implementatori e sostenitori per gli utenti finali. 
 
-Questi tre gruppi verificare che la distribuzione di Exchange Online include considerazioni che soddisfare le esigenze aziendali, aspetti tecnici di sicurezza e la migrazione delle cassette postali e che il risultato è un elemento che verrà utilizzato dagli utenti tipici.
+Questi tre gruppi assicurano che la distribuzione di Exchange Online includa considerazioni che soddisfano le esigenze aziendali, gli aspetti tecnici della migrazione delle cassette postali e la sicurezza e che il risultato sarà qualcosa che utilizzerà gli utenti tipici.
 
 #### <a name="result"></a>Risultato
 
 Un elenco di persone che rappresentano gli aspetti aziendali, tecnici e relativi agli utenti finali dell'organizzazione.
 
-### <a name="step-2-determine-and-prioritize-your-exchange-online-business-scenarios"></a>Passaggio 2: Determinare e impostare la priorità gli scenari aziendali Exchange Online
+### <a name="step-2-determine-and-prioritize-your-exchange-online-business-scenarios"></a>Passaggio 2: determinare e assegnare priorità agli scenari aziendali di Exchange Online
 
-Exchange Online può essere utilizzato per diversi scopi. È necessario capire quali scopi mappare alle esigenze aziendali in diversi livelli della propria organizzazione, i gruppi aziendali, i reparti o i singoli team di progetto e utilizzo. Si deve essere indirizzata a Exchange Online per soddisfare le comunicazioni di breve durata gruppo singoli e piccolo e pianificazione delle esigenze. 
+Exchange Online può essere utilizzato per scopi diversi. È necessario capire quali scopi devono essere mappati alle proprie esigenze aziendali sui livelli distinti dell'organizzazione, i gruppi aziendali, i reparti o i singoli team di lavoro e di progetto. È consigliabile rivolgersi a Exchange Online per soddisfare le esigenze di pianificazione e comunicazione individuali e di piccolo gruppo. 
 
-Per visualizzare i vantaggi di Exchange Online è possibile esaminare come singoli utenti, un team o un team v interagire oggi e quindi individuare uno scenario adatto che fornisce i metodi più semplici per comunicare, pianificano le riunioni e collaborare. Tenere presente che i [Team Microsoft che](teams-workload.md) potrebbe essere la soluzione migliore per alcuni degli scenari di collaborazione.
+Un modo per visualizzare i vantaggi di Exchange Online consiste nell'esaminare in che modo gli utenti, un team o un v-team interagiscono oggi e quindi individuare uno scenario appropriato che consente di comunicare, pianificare riunioni e collaborare. Tenere presente che [Microsoft teams](teams-workload.md) potrebbe essere una scelta migliore per alcuni degli scenari di collaborazione.
 
-Exchange Online consente i seguenti scenari aziendali per Microsoft 365 Enterprise:
+Exchange Online consente i seguenti scenari aziendali strategici per Microsoft 365 Enterprise:
 
 - Collaborare su documenti in tempo reale e non, per semplificare il processo di cooperazione
 - Gestire progetti, attività e scadenze per soddisfare gli obiettivi di business
@@ -61,43 +63,42 @@ Exchange Online consente i seguenti scenari aziendali per Microsoft 365 Enterpri
 - Archiviare e condividere file all'interno e all'esterno dell'organizzazione per collaborare facilmente nell'organizzazione
 - Lavorare ovunque e in qualsiasi momento in modo sicuro attraverso il proprio dispositivo, per ottenere il massimo risultato pur mantenendo flessibile lo stile di lavoro
 - Proteggere le informazioni e ridurre il rischio di perdita di dati
-- Rileva problemi e protezione contro le minacce esterne 
-- Monitoraggio, report e analizzare l'attività per rispondere immediatamente per garantire la sicurezza dell'organizzazione
+- Rilevare e proteggere dalle minacce esterne 
+- Monitorare, segnalare e analizzare le attività per rispondere prontamente per garantire la sicurezza organizzativa
 - Supportare l'organizzazione con privacy e conformità avanzate per soddisfare il regolamento generale sulla protezione dei dati (GDPR)
 
 Per ulteriori informazioni, vedere [Trasformazione digitale tramite Microsoft 365](http://transform.microsoft.com). 
 
 #### <a name="result"></a>Risultato
-Un elenco di scenari di Exchange Online che consente di risolvere le esigenze dell'organizzazione per la comunicazione e di pianificazione e collaborazione di breve durata.
+Un elenco di scenari di Exchange Online che soddisfano le esigenze dell'organizzazione per la comunicazione, la pianificazione e la collaborazione di breve durata.
 
 ## <a name="phase-2-onboard"></a>Fase 2: onboarding
 
-In questa fase, pianificare gli aspetti tecnici di una distribuzione di Exchange Online e avviare attuare a gruppi di utenti selezionati.
+In questa fase, si pianificano gli aspetti tecnici di una distribuzione di Exchange Online e si inizia l'implementazione per i gruppi di utenti selezionati.
 
 ### <a name="prerequisites-identity-and-device-access-configuration"></a>Prerequisiti: configurazione di identità e accesso dei dispositivi
 
-Per proteggere l'accesso alle cassette postali di Exchange Online, verificare di aver configurato [identity e il dispositivo le regole di accesso](identity-access-policies.md) e [consigliati i criteri di accesso Exchange Online](secure-email-recommended-policies.md).
+Per proteggere l'accesso alle cassette postali di Exchange Online, verificare che siano stati configurati i [criteri di identità e accesso ai dispositivi](identity-access-policies.md) e i [criteri di accesso di Exchange Online consigliati](secure-email-recommended-policies.md).
 
 ### <a name="step-1-complete-your-technical-planning"></a>Passaggio 1: completare la pianificazione tecnica
 
-Prima di iniziare la pianificazione tecnici, determinare se si desidera utilizzare FastTrack. Se l'organizzazione dispone di più di 50 postazioni e fa parte di un [piano idoneo](https://technet.microsoft.com/library/dn783224.aspx), è possibile utilizzare [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365), disponibile all'indirizzo senza costi aggiuntivi per eseguire i passaggi di pianificazione, distribuzione e adozione di servizio. In alternativa, è possibile completare il lavoro familiarità con le procedure guidate Onboarding FastTrack, che sono state realizzate da [FastTrack](https://fasttrack.microsoft.com/) una volta che si accede con l'account di Office 365.
+Prima di iniziare la pianificazione tecnica, determinare se si desidera utilizzare FastTrack. Se l'organizzazione ha più di 50 seggi e partecipa a un [piano idoneo](https://technet.microsoft.com/library/dn783224.aspx), è possibile utilizzare [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365), disponibile senza costi aggiuntivi per guidare l'utente attraverso la pianificazione, la distribuzione e l'adozione dei servizi. In alternativa, è possibile eseguire questa operazione manualmente utilizzando le procedure guidate di onboarding di FastTrack, disponibili da [FastTrack](https://fasttrack.microsoft.com/) una volta che si accede con l'account di Office 365.
 
-Se si sta eseguendo la propria pianificazione o in combinazione con FastTrack, è necessario determinare se la rete e l'organizzazione è pronte per Exchange Online. È particolarmente importante soddisfano i criteri di uscita per la rete all'interno dell'infrastruttura di base, con particolare attenzione a larghezza di banda Internet, velocità effettiva e ritardi traffico per ottimizzare le prestazioni per il traffico aggiuntivo per Exchange Posta elettronica in linea di base e gli allegati.
+Se si sta eseguendo la propria pianificazione o in combinazione con FastTrack, è necessario determinare se la rete e l'organizzazione sono pronte per Exchange Online. È particolarmente importante che vengano soddisfatti i criteri di uscita per la rete nell'infrastruttura di base, con particolare attenzione alla larghezza di banda Internet, alla velocità effettiva e ai ritardi del traffico per massimizzare le prestazioni per il traffico aggiuntivo per Exchange Messaggi di posta elettronica e allegati basati su online.
 
-Utilizzare le risorse per preparare gli aspetti tecnici di un'implementazione di Exchange Online: 
+Utilizzare queste risorse per preparare gli aspetti tecnici di un'implementazione di Exchange Online: 
 
 - [Modalità di migrazione della posta elettronica a Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
-- [Advisor migrazione della posta di Office 365](https://portal.office.com/onboarding/mailsetupadvisor#/) (deve essere eseguito l'accesso alla sottoscrizione Office 365)
 - [Collaborazione in Exchange Online](https://technet.microsoft.com/library/jj983794(v=exchg.150).aspx)
 - [Destinatari in Exchange Online](https://technet.microsoft.com/library/jj200702(v=exchg.150).aspx)
 
-Per una migliore comprensione della protezione in Exchange Online, vedere le risorse seguenti:
+Per una migliore comprensione della sicurezza in Exchange Online, vedere le risorse seguenti:
 
 - [Autorizzazioni in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx) 
 - [Sicurezza e conformità per Exchange Online](https://technet.microsoft.com/library/jj200706(v=exchg.150).aspx) 
 - [Protezione antispam e antimalware](https://technet.microsoft.com/library/jj200731(v=exchg.150).aspx)
 
-Successivamente, utilizzare le risorse per acquisire familiarità con gestione delle cassette postali Exchange Online:
+Successivamente, utilizzare queste risorse per comprendere la gestione delle cassette postali di Exchange Online:
 
 - [Creare cassette postali degli utenti in Exchange Online](https://technet.microsoft.com/library/jj907304(v=exchg.150).aspx)
 - [Gestire le cassette postali degli utenti](https://technet.microsoft.com/library/bb123809(v=exchg.150).aspx) 
@@ -105,77 +106,77 @@ Successivamente, utilizzare le risorse per acquisire familiarità con gestione d
 
 #### <a name="result"></a>Risultato
 
-Si acquisire familiarità con gestione, protezione e la migrazione delle cassette postali e pronti iniziare a distribuzione Exchange Online a gruppi selezionati nella propria organizzazione.
+Si capisce che la migrazione, la sicurezza e la gestione delle cassette postali sono pronte per iniziare a eseguire la distribuzione di Exchange Online ai gruppi selezionati nell'organizzazione.
 
 ### <a name="step-2-run-an-it-pilot"></a>Passaggio 2: eseguire un'implementazione pilota
 
 Nella maggior parte delle organizzazioni di medie e grandi dimensioni, è necessario eseguire un'implementazione pilota con le parti interessate dalla fase 1 e appassionati di informatica. Durante la fase pilota:
 
-- Scegliere uno scenario business Exchange Online in cui è possono practice partecipanti pilota IT.
-- Assegnare licenze di Office 365 partecipanti pilota e migrare le cassette postali locali a Exchange Online.
-- Fornire una serie di esercitazioni di posta elettronica di Exchange Online, la pianificazione e altre funzionalità di test pilota partecipanti.
-- Determinare la strategia di gestione di modifica e produrre materiale per stimolarne l'adozione utente a livello di organizzazione di Exchange Online. Modifica gestione materiali possono includere testo annuncio di posta elettronica, piani di formazione interni, poster aziendale e le presentazioni. Questi materiali verranno segnalare l'organizzazione Exchange Online e i relativi vantaggi con gli obiettivi di rilevamento della generazione e sull'utilizzo che gestisce. Vedere l'articolo [Modifica strategia di gestione per team di Microsoft](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) per ulteriori suggerimenti.
-- Disporre i partecipanti pilota IT esaminare i materiali gestione cambia in base alla loro esperienza. Forniscono suggerimenti sulle procedure consigliate e consigli su come meglio descrivono i vantaggi di Exchange Online e su come utilizzarlo per la comunicazione e la pianificazione.
+- Scegliere uno scenario aziendale di Exchange online in cui è possibile praticare i partecipanti pilota IT.
+- Fornire ai partecipanti pilota le licenze di Office 365 e migrare le cassette postali locali a Exchange Online.
+- Offrire ai partecipanti piloti una serie di esercitazioni per testare la posta elettronica, la pianificazione e altre funzionalità di Exchange Online.
+- Determinare la strategia di gestione delle modifiche e produrre materiali per guidare l'adozione da parte dell'utente a livello di organizzazione di Exchange Online. I materiali di gestione delle modifiche possono includere testo dell'annuncio di posta elettronica, piani di formazione interni, manifesti dei corridoi e presentazioni. Questi materiali informeranno l'organizzazione su Exchange Online e i suoi vantaggi con gli obiettivi di sensibilizzazione e utilizzo della guida. Per alcune idee, vedere l'articolo relativo alla [strategia di gestione delle modifiche per Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) .
+- È necessario che i partecipanti al progetto IT rivedano i materiali di gestione delle modifiche in base alle proprie esperienze. Sono in grado di fornire suggerimenti su procedure consigliate e consigli su come descrivere al meglio i vantaggi di Exchange Online e su come utilizzarlo per la comunicazione e la pianificazione.
 
 #### <a name="result"></a>Risultato
 
-Progetto pilota di Exchange Online per è stata completata e materiali di gestione di modifica iniziale sviluppati, rivisto e aggiornati.
+Il pilota IT di Exchange Online è completo e i materiali di gestione delle modifiche iniziali sono stati sviluppati, rivisti e perfezionati.
 
 ### <a name="step-3-roll-out-to-a-business-group"></a>Passaggio 3: implementazione in un gruppo aziendale
 
-Dopo aver completato il pilot IT, è possibile distribuire Exchange Online a un gruppo aziendale o un reparto all'interno dell'organizzazione. Se l'organizzazione utilizza un servizio di posta elettronica locale, ad esempio Server di Exchange, questa distribuzione è costituita da migrazione delle cassette postali. Implementazione in questione deve includere:
+Dopo aver completato il pilota IT, eseguire l'implementazione di Exchange online in un gruppo o reparto aziendale dell'organizzazione. Se l'organizzazione utilizza un servizio di posta elettronica locale, ad esempio Exchange Server, questa implementazione è costituita dalla migrazione delle cassette postali. Questa implementazione deve includere:
 
-- Identificazione di scenari aziendali principali per Exchange Online all'interno del gruppo di business.
-- Attività degli annunci per informare gli utenti delle aspettative e sequenza temporale per l'utilizzo di Exchange Online per i reparti e team di lavoro o del progetto.
-- Migrazione delle cassette postali locali dei membri del gruppo aziendale a Exchange Online.
-- Fornitura di formazione su Exchange Online o collegamenti a risorse per introdurre Exchange Online e su come utilizzarlo.
+- Identificazione degli scenari aziendali chiave per Exchange Online all'interno del gruppo aziendale.
+- Attività di annuncio per informare gli utenti delle aspettative e delle sequenze temporali per l'utilizzo di Exchange Online per i reparti e i team di lavoro o di progetto.
+- La migrazione delle cassette postali locali dei membri del gruppo aziendale a Exchange Online.
+- Fornire formazione utente su Exchange Online o collegamenti a risorse per introdurre Exchange Online e come utilizzarlo.
 - Un meccanismo di feedback, ad esempio un team Microsoft Teams centrale contenente tutti i membri del gruppo aziendale, per raccogliere commenti e agire sui problemi degli utenti del gruppo aziendale.
 
 Durante l'implementazione, è possibile perfezionare i materiali di gestione delle modifiche in preparazione dell'implementazione a livello dell'organizzazione.
 
 #### <a name="result"></a>Risultato
 
-Un gruppo aziendale sia attivo e in esecuzione con Exchange Online e i materiali di gestione modifiche sono stati testati e notte.
+Un gruppo aziendale è attivo e funzionante con Exchange Online e i materiali di gestione delle modifiche sono stati testati e perfezionati.
 
 ## <a name="phase-3-drive-value"></a>Fase 3: aumentare il valore
 
-In questa fase, eseguire la distribuzione di Exchange Online e supportare gli utenti per migliorare la relativa vantaggi.
+In questa fase, è possibile completare l'implementazione di Exchange Online e supportare gli utenti per aiutarli a realizzare i propri vantaggi.
 
-### <a name="step-1-roll-out-exchange-online-to-the-rest-of-your-organization"></a>Passaggio 1: È possibile distribuire Exchange Online per il resto dell'organizzazione
+### <a name="step-1-roll-out-exchange-online-to-the-rest-of-your-organization"></a>Passaggio 1: implementazione di Exchange Online per il resto dell'organizzazione
 
 L'implementazione nel resto dell'organizzazione deve includere:
 
-- Identificazione di scenari aziendali principali per Exchange Online all'interno dei gruppi aziendali separate.
-- Utilizzo della sequenza temporale per l'utilizzo di Exchange Online e i materiali gestione cambia dettagliati per le attività di annuncio informare l'organizzazione delle aspettative.
-- Migrazione delle cassette postali per il resto dell'organizzazione di Exchange Online.
-- Fornitura di formazione su Exchange Online o forniti i collegamenti a risorse per introdurre Exchange Online e su come utilizzarlo.
+- Identificazione degli scenari aziendali chiave per Exchange Online all'interno di gruppi aziendali distinti.
+- Utilizzo dei materiali di gestione delle modifiche raffinati per le attività di annuncio per informare l'organizzazione delle aspettative e delle sequenze temporali per l'utilizzo di Exchange Online.
+- La migrazione delle cassette postali per il resto dell'organizzazione a Exchange Online.
+- Offrire la formazione degli utenti in Exchange Online o fornire collegamenti alle risorse per introdurre Exchange Online e come utilizzarlo.
 - Un meccanismo di commenti e suggerimenti come, ad esempio, Team centrale che contiene tutti gli altri, per raccogliere commenti e problemi degli utenti dell'organizzazione. Se l'organizzazione ha meno di 2500 utenti, è possibile usare un canale pubblico in Teams. In caso contrario, è possibile usare un gruppo pubblico in Yammer.
 
 #### <a name="result"></a>Risultato
 
-L'organizzazione sia attivo ed è in esecuzione e la strategia di gestione di modifica sul posto di informare, formazione e consentire agli utenti di utilizzare Exchange Online.
+L'organizzazione è in esecuzione e la strategia di gestione delle modifiche è in atto per informare, formare e consentire agli utenti di utilizzare Exchange Online.
 
 ### <a name="step-2-measure-usage-manage-satisfaction-and-drive-adoption"></a>Passaggio 2: misurare l'utilizzo, gestire la soddisfazione e favorire l'adozione
 
-Dopo la distribuzione Exchange Online per l'intera organizzazione, è necessario continuare a utilizzare i caratteri della strategia di gestione di modifica per:
+Dopo aver eseguito l'implementazione di Exchange Online all'intera organizzazione, è necessario continuare a utilizzare la strategia di gestione delle modifiche per eseguire le operazioni seguenti:
 
-- Dispone il leader promuovere Exchange Online come strumento principale per le comunicazioni di breve durata e singoli e pianificazione.
-- Invitare persone da utilizzare per gruppo aziendale, reparto, work e comunicazioni tra team, calendario e collaborazione di project.
+- Fare in modo che la leadership promuova Exchange Online come strumento principale per la comunicazione e la pianificazione individuali e di breve durata.
+- Incoraggiare gli utenti a usarlo per le comunicazioni, il calendario e la collaborazione di team di business, di reparto, di lavoro e di progetto.
 
 Ecco alcune attività suggerite:
 
 - Vedere [Linee guida sull'adozione di Office 365](https://aka.ms/successfactors) per informazioni sulle procedure consigliate generali relative all'adozione di servizi cloud. 
 - Vedere i [report attività di Office 365](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) per comprendere l'utilizzo del servizio di Office 365 nell'organizzazione. Se non si è un amministratore globale di Office 365 per l'organizzazione, chiedere a qualcun altro le autorizzazioni Lettore report per poter accedere ai report attività.
-- Monitorare l'ambito della commenti e suggerimenti (un canale pubblico in un team di team o di Yammer centrale) per i problemi e commenti dei singoli utenti sulle proprie esperienze con Exchange Online. Risolvere rapidamente è possibile evitare riesca singoli utenti e viene illustrato il supporto per la distribuzione di domande e problemi.
-- Identificare e coltivare e rafforzare champions in ogni categoria business ed evidenziare i risultati e le procedure consigliate con Exchange Online. Riflettono i successi fuori all'organizzazione di visualizzare l'adozione e la riuscita del progetto. Visto responsabili tecnici all'interno di un gruppo aziendale può esercitare un fattore determinante su coordinatori e forme di pari livello.
+- Monitorare la sede dei commenti e suggerimenti (un canale pubblico di un team o un Yammer di team centrale) per problemi e commenti e suggerimenti da parte di utenti in merito alle proprie esperienze con Exchange Online. Risolvere le domande e i problemi più velocemente possibile per evitare che gli utenti siano frustrati e dimostrare il supporto per l'implementazione.
+- Identificare e alimentare i campioni di ogni gruppo aziendale ed evidenziare i risultati e le procedure consigliate con Exchange Online. Tenere conto dei successi ottenuti nell'organizzazione per mostrare il successo e l'adozione del progetto. L'approvazione da parte dei responsabili tecnici all'interno di un gruppo aziendale può esercitare un'influenza potente su leader e coetanei.
 
 #### <a name="result"></a>Risultato
 
-L'organizzazione ha adottato Exchange Online come strumento di pianificazione e la comunicazione tramite gruppi di singoli e piccole primario di breve durata.
+L'organizzazione ha adottato Exchange Online come strumento di comunicazione e pianificazione di breve durata individuale e di piccolo gruppo.
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
-Per informazioni su come la società la migrazione a Exchange Online e utilizza Exchange Online Protection per la protezione da attacchi cyber comparsa all'interno di Microsoft, vedere:
+Per sbirciare all'interno di Microsoft e scoprire come la società ha eseguito la migrazione a Exchange Online e utilizza Exchange Online Protection per proteggersi dagli attacchi informatici, vedere:
 
 - [Microsoft esegue la migrazione di 150.000 cassette postali a Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [Microsoft utilizza l'intelligence per le minacce per proteggere, rilevare e rispondere alle minacce](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
@@ -183,8 +184,8 @@ Per informazioni su come la società la migrazione a Exchange Online e utilizza 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Consultare queste risorse per la manutenzione di Exchange Online:
+Vedere queste risorse per la manutenzione in esecuzione di Exchange Online:
 
 - [Interfaccia di amministrazione di Exchange in Exchange Online](https://technet.microsoft.com/library/jj200743(v=exchg.150).aspx) 
-- [Monitoraggio, report e traccia dei messaggi in Exchange Online](https://technet.microsoft.com/library/jj200725(v=exchg.150).aspx)
+- [Monitoraggio, creazione di rapporti e traccia dei messaggi in Exchange Online](https://technet.microsoft.com/library/jj200725(v=exchg.150).aspx)
 - [Back up della posta elettronica in Exchange Online](https://technet.microsoft.com/library/dn440734(v=exchg.150).aspx) 

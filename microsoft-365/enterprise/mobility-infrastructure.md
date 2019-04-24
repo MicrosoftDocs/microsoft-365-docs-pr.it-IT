@@ -1,168 +1,168 @@
 ---
-title: Fase 5 - gestione dei dispositivi mobili
-description: Microsoft Enterprise 365 include la gestione di dispositivi mobili utilizzando Microsoft Intune. Esaminare i requisiti e prerequisiti, impostare Intune mediante le risorse di Azure Active Directory, registrare iOS, Mac OS, Android e Windows dispositivi, distribuire apps, creare un profilo di configurazione, utilizzare criteri di conformità e consentire l'accesso condizionale per dispositivi mobili gestione dei dispositivi con Microsoft 365 Enterprise.
-keywords: Documentazione Microsoft 365 Microsoft 365 Microsoft 365 Enterprise, la gestione dei dispositivi mobili, Intune
+title: Fase 5-gestione dei dispositivi mobili
+description: Microsoft 365 Enterprise include la gestione dei dispositivi mobili tramite Microsoft Intune. Esaminare i requisiti e i prerequisiti, configurare Intune utilizzando la risorsa di Azure Active Directory, registrare i dispositivi iOS, macOS, Android e Windows, distribuire le app, creare un profilo di configurazione, utilizzare criteri di conformità e abilitare l'accesso condizionale per dispositivi mobili gestione dei dispositivi con Microsoft 365 Enterprise.
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 Documentation, gestione dei dispositivi mobili, Intune
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 09/18/2018
 ms.topic: conceptual
-audience: ITPro
 ms.prod: microsoft-365-enterprise
 ms.service: ''
 ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
+audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 3afc28f0d21918c027a6a1622a40318e333f7ab4
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 35fa9f53b555de48f4a5acc09d0619ba978ca87a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291212"
 ---
-# <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fase 5: Gestione dei dispositivi mobili Microsoft 365 Enterprise
+# <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fase 5: gestione dei dispositivi mobili per Microsoft 365 Enterprise
 
 ![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
-*Questa caratteristica è applicabile per le versioni di Microsoft Enterprise 365 E3 ed E5*
+*Questa funzionalità si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-Microsoft Enterprise 365 include funzionalità che consentono di gestire i dispositivi e le relative App, all'interno dell'organizzazione. Utilizzando Microsoft Intune, è possibile gestire iOS, Android, Mac OS e dispositivi Windows per proteggere l'accesso alle risorse dell'organizzazione, inclusi i dati. Intune si integra con Azure Active Directory (Azure Active Directory) e rende possibili gli scenari di business seguenti per 365 Microsoft:
+Microsoft 365 Enterprise include funzionalità che consentono di gestire i dispositivi e le loro app all'interno dell'organizzazione. Tramite Microsoft Intune, è possibile gestire i dispositivi iOS, Android, macOS e Windows per proteggere l'accesso alle risorse dell'organizzazione, inclusi i dati. Intune si integra con Azure Active Directory (Azure AD) e attiva i seguenti scenari aziendali per Microsoft 365:
 
 - Archiviare e condividere file all'interno e all'esterno dell'organizzazione per collaborare facilmente nell'organizzazione
 - Lavorare ovunque e in qualsiasi momento in modo sicuro attraverso il proprio dispositivo, per ottenere il massimo risultato pur mantenendo flessibile lo stile di lavoro
 - Fornire sicurezza, controlli e visibilità, offrendo conformità verificata nel settore agli standard globali
 - Proteggere le informazioni e ridurre il rischio di perdita di dati
-- Rileva problemi e protezione contro le minacce esterne
-- Monitorare, report e analizzare l'attività per rispondere immediatamente per garantire la sicurezza dell'organizzazione
-- Proteggere gli utenti e i relativi account
+- Rilevare e proteggere dalle minacce esterne
+- Monitorare, segnalare e analizzare le attività per rispondere prontamente per garantire la sicurezza organizzativa
+- Proteggi gli utenti e i loro account
 
 Per ulteriori informazioni, vedere [Trasformazione digitale tramite Microsoft 365](http://transform.microsoft.com). 
 
-In questa fase, registrare i dispositivi in Intune e creare e applicare i criteri che consentono di proteggere i dati. L'intera raccolta di documentazione Intune è [disponibili online](https://docs.microsoft.com/intune). È inoltre consigliabile controllare la [pianificazione della distribuzione Intune, progettazione e implementazione Guida](https://docs.microsoft.com/intune/planning-guide) prima di iniziare.
+In questa fase, è necessario registrare i dispositivi in Intune e creare e applicare criteri per garantire la sicurezza e la protezione dei dati. L'intera documentazione della raccolta di Intune è [disponibile online](https://docs.microsoft.com/intune). È inoltre consigliabile esaminare la [Guida alla pianificazione della distribuzione, alla progettazione e all'implementazione di Intune](https://docs.microsoft.com/intune/planning-guide) prima di iniziare.
 
-## <a name="step-1-plan-for-your-scenario"></a>Passaggio 1: Pianificare il proprio scenario
+## <a name="step-1-plan-for-your-scenario"></a>Passaggio 1: pianificare lo scenario
 
-Uno dei motivi principali per la gestione dei dispositivi mobili è sicuro e proteggere le risorse dell'organizzazione. [Metodi comuni per utilizzare Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) sono elencati alcuni esempi di pratiche, tra cui la protezione dei dati e posta elettronica di Office 365.
+Uno dei motivi principali per la gestione dei dispositivi mobili è la sicurezza e la protezione delle risorse dell'organizzazione. [Metodi comuni per l'utilizzo di Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) elenca alcuni esempi reali, tra cui la protezione dei dati e della posta elettronica di Office 365.
 
-Intune permette di utilizzare le opzioni per gestire l'accesso all'organizzazione tramite [Mobile Device Management (MDM) o Gestione applicazione Mobile (MAM)](https://docs.microsoft.com/intune/byod-technology-decisions). MDM è quando gli utenti di dispositivi in Intune "registrare". Dopo aver registrato, vengono gestiti i dispositivi e possono ricevere eventuali criteri, regole e impostazioni utilizzate dall'organizzazione. Ad esempio, possono installare App specifiche, creare un criterio di password, installare una connessione VPN e altro ancora.
+Intune offre opzioni per la gestione dell'accesso all'organizzazione tramite la [gestione dei dispositivi mobili (MDM) o la gestione delle applicazioni mobili (MAM)](https://docs.microsoft.com/intune/byod-technology-decisions). MDM è il momento in cui gli utenti "iscrivono" i propri dispositivi in Intune. Una volta registrati, sono dispositivi gestiti e possono ricevere tutti i criteri, le regole e le impostazioni utilizzate dall'organizzazione. Ad esempio, è possibile installare app specifiche, creare un criterio password, installare una connessione VPN e altro ancora.
 
-Gli utenti con i propri dispositivi personali non possibile registrare i dispositivi o gestito da Intune e i criteri. Tuttavia, è necessario proteggere le risorse e i dati dell'organizzazione. In questo scenario, è possibile proteggere le app utilizzando MAM. Ad esempio, è possibile utilizzare un criterio MAM che richiede all'utente di immettere un PIN per l'accesso di SharePoint nel dispositivo.
+Gli utenti che dispongono di dispositivi personali potrebbero non voler registrare i propri dispositivi o essere gestiti da Intune e dai criteri. Tuttavia, è comunque necessario proteggere le risorse e i dati dell'organizzazione. In questo scenario, è possibile proteggere le app utilizzando MAM. Ad esempio, è possibile utilizzare un criterio MAM che richiede a un utente di immettere un PIN quando si accede a SharePoint nel dispositivo.
 
-È inoltre sarà determinare la modalità che si desidera gestire i dispositivi personali o proprietà dell'organizzazione. È consigliabile considerare i dispositivi in modo diverso a seconda della loro utilizzo. Ad esempio, è possibile diversi piani per gli utenti nel reparto risorse umane (HR) o utenti del reparto vendite. [Gli scenari in caso di utilizzo di gestione di identità dispositivi mobili](https://docs.microsoft.com/intune/planning-guide-scenarios) possono iniziare e sono inclusi alcuni consigli su come i diversi scenari.
+È inoltre possibile determinare come gestire i dispositivi personali o di proprietà dell'organizzazione. È possibile che si desideri gestire i dispositivi in modo diverso, a seconda dell'utilizzo. Ad esempio, è possibile che si desiderino piani diversi per gli utenti delle risorse umane (HR) o degli utenti nelle vendite. [Identificare gli scenari di utilizzo della gestione dei dispositivi mobili](https://docs.microsoft.com/intune/planning-guide-scenarios) consente di iniziare e include alcune linee guida su questi diversi scenari.
 
-## <a name="step-2-get-your-prerequisites"></a>Passaggio 2: Ottenere i prerequisiti
+## <a name="step-2-get-your-prerequisites"></a>Passaggio 2: ottenere i prerequisiti
 
-Successivamente, ottenere i prerequisiti in base alle esigenze e gli scenari creati nel passaggio precedente. [Implementare il piano](https://docs.microsoft.com/intune/planning-guide-onboarding) vengono elencati tutti i requisiti. Di seguito sono contenuti gli elementi significativi che necessari per Intune con Microsoft 365:
+Successivamente, ottenere i prerequisiti in base alle proprie esigenze e agli scenari creati nel passaggio precedente. [Implementare il piano](https://docs.microsoft.com/intune/planning-guide-onboarding) elenca tutti i requisiti. Di seguito sono riprodotti gli elementi significativi necessari per Intune con Microsoft 365:
 
-- **Sottoscrizione Intune**: incluso in Microsoft 365 e consente di accedere a Microsoft Intune nel [portale di Azure](https://portal.azure.com)
-- **Sottoscrizione a Office 365**: incluso in Microsoft 365 e viene utilizzato per le applicazioni di Office, inclusa la posta elettronica
-- **Premium di Azure Active Directory (AD)**: incluso in Microsoft 365 e viene utilizzato per creare gruppi di sicurezza o utente. Questi gruppi ricevono criteri Intune creati, ad esempio forzare una lunghezza della password per sbloccare un dispositivo. I gruppi creati in [fase 2: identità](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) può essere utilizzato.
+- **Sottoscrizione a Intune**: inclusa in Microsoft 365 e fornisce l'accesso a Microsoft Intune nel [portale di Azure](https://portal.azure.com)
+- **Abbonamento a office 365**: incluso in Microsoft 365 e utilizzato per le app di Office, inclusi i messaggi di posta elettronica
+- **Azure Active Directory (Azure ad) Premium**: incluso in Microsoft 365 e viene utilizzato per creare gruppi di utenti o di sicurezza. Questi gruppi ricevono i criteri di Intune creati, ad esempio forzando la lunghezza della password per sbloccare un dispositivo. I gruppi creati nella [fase 2:](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) è possibile utilizzare l'identità.
 
-È possibile alcuni requisiti aggiuntivi, in base alle esigenze della propria organizzazione. Ad esempio, se sarà Gestione dispositivi iOS, è necessario un certificato Push di Apple MDM. Se si utilizza Exchange in locale, quindi è necessario il connettore di Exchange locale. Quando si arriva a questi passaggi e vengono descritti i requisiti aggiuntivi.
+Potrebbe essere necessario disporre di alcuni requisiti aggiuntivi, a seconda delle esigenze dell'organizzazione. Ad esempio, se si intende gestire i dispositivi iOS, è necessario un certificato push di Apple MDM. Se si utilizza Exchange locale, è necessario disporre del connettore di Exchange locale. Questi requisiti aggiuntivi vengono delineati quando si arriva a tali passaggi.
 
-## <a name="step-3-set-up-intune"></a>Passaggio 3: Impostare Intune
+## <a name="step-3-set-up-intune"></a>Passaggio 3: configurare Intune
 
-Intune utilizza numerose funzionalità disponibili in Azure Active Directory, tra cui il dominio, gli utenti e gruppi. È inoltre possibile creare nuovi utenti e gruppi nuovi adatta a specifiche esigenze dell'organizzazione. Ad esempio, è possibile creare un gruppo denominato **iOS dispositivi**o **utenti di tutte le risorse Umane**.  Trai vantaggio [Gruppi dinamici](https://docs.microsoft.com/intune/groups-add) che consente di creare utenti o gruppi di dispositivi basati sulle regole semplici o avanzate.
+Intune utilizza molte funzionalità in Azure AD, tra cui il dominio, gli utenti e i gruppi. È inoltre possibile creare nuovi utenti e nuovi gruppi per soddisfare le esigenze aziendali. Ad esempio, è possibile creare un gruppo denominato **dispositivi iOS**o **tutti gli utenti HR**.  Avvalersi di [gruppi dinamici](https://docs.microsoft.com/intune/groups-add) che consentono di creare gruppi di utenti o dispositivi basati su regole semplici o avanzate.
 
-Questo passaggio è incentrata su impostazione Intune e operazioni preliminari per gestire i dispositivi.
+Questo passaggio si concentra sulla configurazione di Intune e sulla sua preparazione per la gestione dei dispositivi.
 
-1. **[Conferma i dispositivi sono supportati](https://docs.microsoft.com/intune/supported-devices-browsers)**. Verificare l'iOS, Mac OS, dispositivi Android, viene e Windows sono supportati da Intune. Se nell'organizzazione sono dispositivi che non sono supportati, i criteri non vengono applicati a tali dispositivi.
+1. **[Confermare che i dispositivi siano supportati](https://docs.microsoft.com/intune/supported-devices-browsers)**. Conferma che i dispositivi iOS, macOS, Android, Galaxy e Windows sono supportati da Intune. Se l'organizzazione include dispositivi che non sono supportati, i criteri non vengono applicati a tali dispositivi.
 
-2. **[Personalizzare il nome di dominio](https://docs.microsoft.com/intune/custom-domain-name-configure)**. Per impostazione predefinita, un dominio denominato qualcosa di simile **your domain.onmicrosoft.com** viene creato automaticamente in Azure Active Directory. **onmicrosoft.com** può essere personalizzato per l'organizzazione. Quando si personalizza, offre inoltre agli utenti un dominio familiarità quando ci si connette a Intune e utilizzo delle risorse.
+2. **[Personalizzare il nome di dominio](https://docs.microsoft.com/intune/custom-domain-name-configure)**. Per impostazione predefinita, in Azure AD viene creato automaticamente un dominio denominato qualcosa di simile a **Your-Domain.onmicrosoft.com** . **onmicrosoft.com** può essere personalizzato per l'organizzazione. Quando si Personalizza, fornisce agli utenti anche un dominio familiare per la connessione a Intune e l'utilizzo delle risorse.
 
-3. **[Accedere a Intune](https://docs.microsoft.com/intune/account-sign-up)**. Quando si accede, è possibile che venga chiesto di immettere le informazioni sull'organizzazione. Intune è incluso in Microsoft 365 e può essere aperto direttamente dal [portale di amministrazione di Office 365](https://portal.office.com/). È inoltre possibile aprire Intune direttamente dal [portale di Azure](https://portal.azure.com).
+3. **[Accedere a Intune](https://docs.microsoft.com/intune/account-sign-up)**. Quando si esegue l'accesso, è possibile che venga richiesto di immettere le informazioni sull'organizzazione. Intune è incluso in Microsoft 365 e può essere aperto direttamente dall'interfaccia di [amministrazione di microsoft 365](https://admin.microsoft.com). È inoltre possibile aprire Intune direttamente dal [portale di Azure](https://portal.azure.com).
 
-4. **[Scegliere la configurazione di gestione di dispositivi mobili](https://docs.microsoft.com/intune/mdm-authority-set)**. La prima volta che si utilizza Intune, è necessario abilitare la gestione dei dispositivi. Intune può essere utilizzato come servizio solo cloud, ibride con Intune e System Center Configuration Manager o utilizzo di gestione dei dispositivi mobili per Office 365. È possibile scegliere quale programma di installazione è più appropriata per l'organizzazione.
+4. **[Scegliere la configurazione di gestione dei dispositivi mobili](https://docs.microsoft.com/intune/mdm-authority-set)**. La prima volta che si utilizza Intune, è necessario abilitare la gestione dei dispositivi. Intune può essere utilizzato come servizio solo cloud, ibrido con Intune e System Center Configuration Manager oppure tramite la gestione dei dispositivi mobili per Office 365. È possibile scegliere quale installazione funziona meglio per l'organizzazione.
 
 5. **[Aggiungere utenti](https://docs.microsoft.com/intune/users-add)** e **[aggiungere gruppi](https://docs.microsoft.com/intune/groups-add)**. 
 
-   Manualmente è possibile aggiungere utenti o connettersi a Azure Active Directory per gli utenti di sincronizzazione con Intune. È inoltre possibile assegnare ruoli amministrativi a utenti specifici. Gli utenti sono necessari a meno che i dispositivi sono dispositivi "userless", ad esempio dispositivi chiosco multimediale.
+   È possibile aggiungere manualmente gli utenti o connettersi ad Azure ad per sincronizzare gli utenti con Intune. È inoltre possibile assegnare ruoli di amministratore a utenti specifici. Gli utenti sono obbligatori, a meno che i dispositivi non siano dispositivi "senza utenti", ad esempio i dispositivi Kiosk.
 
-   Gruppi di Azure Active Directory vengono utilizzati per semplificare la modalità di gestione di dispositivi e gli utenti in Intune. Utilizzo dei gruppi, è possibile eseguire numerose attività. Ad esempio, l'organizzazione desidera richiedono un'app specifica nei dispositivi Android. È possibile creare un gruppo di dispositivi Android e distribuire un criterio con questa applicazione al gruppo.
+   I gruppi di Azure AD vengono utilizzati per semplificare la gestione dei dispositivi e degli utenti in Intune. Se si utilizzano i gruppi, è possibile eseguire molte attività diverse. Ad esempio, l'organizzazione vuole richiedere un'app specifica nei dispositivi Android. È possibile creare un gruppo di dispositivi Android e distribuire un criterio con questa app al gruppo.
 
-    Intune, è possibile aggiungere utenti o gruppi creati in [fase 2: identità](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure)
+    In Intune, è possibile aggiungere utenti o gruppi creati nella [fase 2: identità](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure)
 
-6. **[Assegnare licenze](https://docs.microsoft.com/intune/licenses-assign)**. Per gli utenti o dispositivi per effettuare la registrazione Intune, è necessaria una licenza del dispositivo. Ogni utente o dispositivo userless richiede una licenza Intune per accedere al servizio Intune. Queste licenze sono incluse in Microsoft 365 e devono essere assegnate Intune.
+6. **[Assegnare le licenze](https://docs.microsoft.com/intune/licenses-assign)**. Per gli utenti o i dispositivi da registrare in Intune, è necessaria una licenza per il dispositivo. Ogni utente o dispositivo senza utente richiede una licenza di Intune per accedere al servizio Intune. Queste licenze sono incluse in Microsoft 365 e devono essere assegnate in Intune.
 
-## <a name="step-4-enroll-devices"></a>Passaggio 4: Registrare i dispositivi
+## <a name="step-4-enroll-devices"></a>Passaggio 4: registrare i dispositivi
 
-Per gestire i dispositivi, i dispositivi devono essere iscritti Intune. In qualità di amministratore, sarà impostare restrizioni di registrazione e i criteri per gli utenti e i dispositivi. Ogni piattaforma del dispositivo (iOS, Android, Mac OS e Windows) con una serie di opzioni. È possibile avere gli utenti di registrare se stessi. In alternativa, è possibile automatizzare la registrazione in modo che gli utenti semplicemente accedere al dispositivo.
+Per gestire i dispositivi, è necessario che i dispositivi siano registrati in Intune. In qualità di amministratore, verranno configurate le restrizioni di registrazione e i criteri per gli utenti e i dispositivi. Ogni piattaforma del dispositivo (iOS, Android, macOS e Windows) dispone di una vasta gamma di opzioni. Gli utenti possono registrarsi autonomamente. In alternativa, è possibile automatizzare la registrazione in modo che gli utenti eseguano semplicemente l'accesso al dispositivo.
 
-La registrazione è fondamentale quando si utilizza Intune. [Dispositivi di registrazione](https://docs.microsoft.com/intune/device-enrollment) sono elencati i passaggi necessari per i dispositivi diversi.
-
-|||
-|:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida del laboratorio di testing: iOS e registrazione dei dispositivi Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
-|||
-
-
-## <a name="step-5-add-and-deploy-apps"></a>Passaggio 5: Aggiungere e distribuire applicazioni
-
-Apps nei dispositivi mobili sono spesso più rapido modo gli utenti di ottenere l'accesso alle risorse aziendali. 
-
-Esistono problemi affrontati dalle quando si utilizzano App, come sono disponibili diversi dispositivi, inclusi dispositivi di personali e aziendale. E che si desidera proteggere le risorse dell'organizzazione e i relativi dati garantendo che gli utenti siano produttivi.
-
-Intune può gestire le app, tra cui aggiungere applicazioni, assegnarli a utenti o gruppi diversi ed esaminare altri dettagli principali. Ad esempio, è possibile visualizzare quali App errori di installazione, controllare la versione di un'app e altro ancora.
-
-Quando gli utenti ricevono un dispositivo mobile, è una delle prime attività per accedere ai documenti e posta elettronica. Utilizza Intune, è possibile [creare e distribuire impostazioni della posta elettronica](https://docs.microsoft.com/intune/email-settings-configure) mediante app di posta elettronica che sono già installati nei dispositivi. 
-
-[Aggiungi App](https://docs.microsoft.com/intune/app-management) viene illustrata la procedura per aggiungere, distribuire, monitorare, configurare e proteggere apps nei dispositivi all'interno del org.
+La registrazione è un passaggio fondamentale quando si utilizza Intune. I [dispositivi di registrazione](https://docs.microsoft.com/intune/device-enrollment) elencano i passaggi per i diversi dispositivi.
 
 |||
 |:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Criteri di conformità di dispositivi](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida del laboratorio di testing: registrazione di dispositivi iOS e Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
-## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Passaggio 6: Attivare la conformità e l'accesso condizionale
 
-Nei passaggi precedenti, impostare l'ambiente e abilitato Intune. A questo punto, si è pronti creare alcuni criteri utilizzando la conformità e l'accesso condizionale.
+## <a name="step-5-add-and-deploy-apps"></a>Passaggio 5: aggiungere e distribuire app
 
-Conformità e l'accesso condizionale sono importanti per la gestione dei dispositivi. **[Criteri di conformità](https://docs.microsoft.com/intune/device-compliance-get-started)** vengono creati per proteggere le risorse dell'organizzazione. Quando si crea un criterio di conformità, si definisce lo standard o "previsto" di un dispositivo necessario. Ad esempio, è possibile scegliere un livello di rischio accettabile (o inaccettabili), bloccare i dispositivi jailbroken, richiedono una lunghezza delle password e altro ancora. Se questi dispositivi non soddisfano le regole, il che significa che non è compatibile con, è possibile bloccare l'accesso alle risorse.
+Le app sui dispositivi mobili spesso sono il modo più rapido per accedere alle risorse aziendali. 
 
-Questo "bloccare" introduce **[accesso condizionale](https://docs.microsoft.com/intune/conditional-access)**. Se un dispositivo è considerato non conforme, è possibile bloccare l'accesso alla posta elettronica, SharePoint e altro ancora.
+Sono presenti problemi quando si utilizzano le app, in quanto esistono diversi dispositivi, inclusi i dispositivi personali e i dispositivi aziendali. Inoltre, si desidera proteggere le risorse e i dati dell'organizzazione anche assicurandosi che gli utenti siano produttivi.
 
-Intune nel [portale Azure](https://portal.azure.com) consente di creare questi criteri e applicarle a utenti e i dispositivi. È consigliabile, avviare piccolo e utilizzare un approccio in più fasi. Ad esempio, creare un criterio di iOS che blocca jailbroken dispositivi. Applicare il criterio (denominato "assegna" Intune) a un gruppo pilota o di testing. Al termine del test iniziali, aggiungere più utenti al gruppo pilota. In modo graduale, è possibile ottenere commenti e suggerimenti da una vasta gamma di tipi di utente.
+Intune è in grado di gestire le app, incluse le app, di assegnarle a utenti o gruppi diversi e di esaminare altre informazioni chiave. Ad esempio, è possibile visualizzare le app che non sono in grado di installare, controllare la versione di un'app e altro ancora.
 
-[Guida introduttiva a criteri di conformità di dispositivi](https://docs.microsoft.com/intune/device-compliance-get-started) e [che cos'è access condizionale?](https://docs.microsoft.com/intune/conditional-access) consentono di iniziare.
+Quando gli utenti ottengono un dispositivo mobile, una delle prime attività consiste nell'accedere alla posta elettronica e ai documenti dell'organizzazione. Utilizzando Intune, è possibile [creare e distribuire le impostazioni di posta elettronica](https://docs.microsoft.com/intune/email-settings-configure) utilizzando le app di posta elettronica preinstallate nei dispositivi. 
 
-## <a name="step-7-apply-features-and-settings"></a>Passaggio 7: Applicare impostazioni e caratteristiche
+[Aggiungi app](https://docs.microsoft.com/intune/app-management) elenca i passaggi da eseguire per aggiungere, distribuire, monitorare, configurare e proteggere le app nei dispositivi all'interno dell'organizzazione.
 
-Queste impostazioni e le funzionalità sono considerate spesso la parte del Intune "interessante" e sono molto potenti. Dopo aver correttamente applicati alcuni criteri di conformità utilizzando access condizionale, si è pronti creare **profili del dispositivo**.
+|||
+|:-------|:-----|
+|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida del laboratorio di testing: criteri di conformità del dispositivo](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|||
 
-Intune nel [portale Azure](https://portal.azure.com) consente di creare profili diversi in base alla piattaforma del dispositivo - iOS, Mac OS, Android e Windows. Ad esempio, è possibile:
+## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Passaggio 6: abilitare la conformità e l'accesso condizionale
 
-- Utilizzare Endpoint protection nei dispositivi Windows 10 per abilitare diverse opzioni di BitLocker, tra cui la crittografia.
-- Utilizzare la funzionalità di App con restrizioni nei dispositivi iOS per creare un elenco di applicazioni approvate che può essere installato. In alternativa, è possibile creare un elenco di applicazioni non consentiti.
-- Utilizzare le impostazioni di chioschi multimediali per scegliere quali App può essere utilizzato su dispositivi Android in esecuzione in modalità schermo intero.
-- Applicare una connessione Wi-Fi e le impostazioni, incluso il tipo di protezione, su dispositivi che eseguono Mac OS.
+Nei passaggi precedenti è stato configurato l'ambiente e è stato abilitato Intune. A questo punto, è possibile creare alcuni criteri utilizzando la conformità e l'accesso condizionale.
+
+La conformità e l'accesso condizionale sono importanti per la gestione dei dispositivi. Sono stati creati **[criteri di conformità](https://docs.microsoft.com/intune/device-compliance-get-started)** che consentono di proteggere le risorse dell'organizzazione. Quando si crea un criterio di conformità, si sta definendo lo standard o la "linea di base" di ciò che un dispositivo deve disporre. Ad esempio, è possibile scegliere un livello di rischio accettabile (o inaccettabile), bloccare i dispositivi jailbroken, richiedere una lunghezza della password e altro ancora. Se questi dispositivi non soddisfano le regole, il che significa che non sono conformi, quindi è possibile bloccare l'accesso alle risorse.
+
+Questo "blocco" introduce **[l'accesso condizionale](https://docs.microsoft.com/intune/conditional-access)**. Se un dispositivo viene considerato non conforme, è possibile bloccare l'accesso alla posta elettronica, a SharePoint e altro ancora.
+
+Intune nel [portale di Azure](https://portal.azure.com) consente di creare questi criteri e di applicarli agli utenti e ai dispositivi. Come procedura consigliata, avviare Small e utilizzare un approccio a fasi. Ad esempio, creare un criterio iOS che blocchi i dispositivi jailbroken. Apply (denominato "Assign" in Intune) il criterio a un gruppo pilota o di test. Dopo il test iniziale, aggiungere altri utenti al gruppo pilota. Se si utilizza un approccio a fasi, è possibile ottenere commenti e suggerimenti da una vasta gamma di tipi di utenti.
+
+[Per](https://docs.microsoft.com/intune/device-compliance-get-started) iniziare, è possibile iniziare a utilizzare i criteri di conformità dei dispositivi e [l'accesso condizionale](https://docs.microsoft.com/intune/conditional-access) .
+
+## <a name="step-7-apply-features-and-settings"></a>Passaggio 7: applicare caratteristiche e impostazioni
+
+Queste caratteristiche e impostazioni sono spesso considerate la parte "cool" di Intune e sono molto potenti. Dopo aver applicato correttamente alcuni criteri di conformità utilizzando l'accesso condizionale, è possibile creare **profili dispositivo**.
+
+Intune nel [portale di Azure](https://portal.azure.com) consente di creare profili diversi in base alla piattaforma del dispositivo: iOS, MacOS, Android e Windows. Ad esempio, è possibile compiere queste operazioni:
+
+- Utilizzare Endpoint Protection nei dispositivi Windows 10 per abilitare diverse opzioni di BitLocker, inclusa la crittografia.
+- Utilizzare la caratteristica delle app limitate nei dispositivi iOS per creare un elenco di applicazioni approvate che possono essere installate. In alternativa, creare un elenco di app vietate.
+- Utilizzare le impostazioni del chiosco per scegliere quali app possono essere utilizzate nei dispositivi Android in esecuzione in modalità Kiosk.
+- Applicazione di una connessione Wi-Fi e delle relative impostazioni, incluso il tipo di sicurezza, nei dispositivi che eseguono macOS.
 - E altro ancora
 
-[Che cosa sono i profili del dispositivo Microsoft Intune?](https://docs.microsoft.com/intune/device-profiles) è un ottimo esempio in lettura sui profili, vedere creare un profilo e altro ancora.
+[Che cosa sono i profili di dispositivo di Microsoft Intune?](https://docs.microsoft.com/intune/device-profiles) è un ottimo posto per leggere i profili, vedere come creare un profilo e altro ancora.
 
-Memorizza, avviare piccolo e utilizzare un approccio in più fasi. Assegnare il profilo a un gruppo pilota o di testing. Quindi, assegnare il profilo a più gruppi pilota.
+Tenere presente che è necessario avviare Small e utilizzare un approccio a fasi. Assegnare il profilo a un gruppo pilota o di testing. Assegnare quindi il profilo a più gruppi pilota.
 
-## <a name="step-8-get-to-know-the-other-features"></a>Passaggio 8: Imparare a conoscere le altre caratteristiche
+## <a name="step-8-get-to-know-the-other-features"></a>Passaggio 8: conoscere le altre caratteristiche
 
-Intune è un servizio potente e sono incluse numerose caratteristiche. Ecco alcune altre attività che è possibile eseguire utilizzando Intune:
+Intune è un servizio potente e include numerose funzionalità. Di seguito sono riportate alcune altre attività che è possibile eseguire tramite Intune:
 
-- Gestione di aggiornamenti software e dei [dispositivi](https://docs.microsoft.com/intune/windows-update-for-business-configure)di Windows & [PC](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)e dispositivi [iOS](https://docs.microsoft.com/intune/software-updates-ios)
-- Attivare [Windows Defender avanzate Threat Protection (degli strumenti di analisi)](https://docs.microsoft.com/intune/advanced-threat-protection) nei dispositivi Windows 10 e utilizzare accesso condizionato e conformità per la protezione dell'accesso alle risorse aziendali, ad esempio SharePoint o Exchange Online
-- Utilizzare [attenzione](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector), [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector)e altri partner di rischio di difesa per dispositivi mobili
-- Aggiungere un [partner certificato autorità di certificazione](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) per emettere e rinnovare i certificati
-- [Specificare informazioni aggiuntive per gli utenti finali](https://docs.microsoft.com/intune/end-user-educate) per l'app portale della società, introduzione App e altro ancora
-- Monitorare le [App](https://docs.microsoft.com/intune/apps-monitor), monitorare [la conformità di dispositivi](https://docs.microsoft.com/intune/compliance-policy-monitor), monitor [profili di configurazione](https://docs.microsoft.com/intune/compliance-policy-monitor)e ulteriori telemetria utilizzando i registri di controllo. È anche possibile connettersi al [Intune Data Warehouse](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) e utilizzare Power BI per esigenze di report ancora più.
+- Gestire software e aggiornamenti nei[PC](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)Windows [Devices](https://docs.microsoft.com/intune/windows-update-for-business-configure) & e nei dispositivi [iOS](https://docs.microsoft.com/intune/software-updates-ios)
+- Abilitare [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) nei dispositivi Windows 10 e utilizzare la conformità e l'accesso condizionale per proteggere l'accesso alle risorse aziendali, ad esempio SharePoint o Exchange Online
+- Utilizzo di [Lookout](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector), [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector)e di altri partner per la difesa delle minacce per dispositivi mobili
+- Aggiungere un' [autorità di certificazione (CA) partner](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) per emettere e rinnovare i certificati
+- [Fornire indicazioni per gli utenti finali](https://docs.microsoft.com/intune/end-user-educate) nell'app portale aziendale, per ottenere app e altro ancora.
+- Monitorare le [app](https://docs.microsoft.com/intune/apps-monitor), monitorare la [conformità dei dispositivi](https://docs.microsoft.com/intune/compliance-policy-monitor), monitorare i profili di [configurazione](https://docs.microsoft.com/intune/compliance-policy-monitor)e una maggiore telemetria utilizzando i registri di controllo. È inoltre possibile connettersi al [data warehouse di Intune](https://docs.microsoft.com/intune/reports-nav-create-intune-reports) e utilizzare Power BI per altre esigenze di creazione di report.
 
 
 ## <a name="identity-and-device-access-recommendations"></a>Consigli sull’identità e sull’accesso dei dispositivi
 
-Microsoft offre una serie di suggerimenti per l' [accesso di dispositivi e identità](microsoft-365-policies-configurations.md) garantire una forza lavoro protetta e produttività. Accesso di dispositivi, utilizzare i suggerimenti e le impostazioni negli articoli seguenti con i passaggi descritti in questa fase:
+Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](microsoft-365-policies-configurations.md) per garantire un ambiente di lavoro protetto e produttivo. Per l'accesso ai dispositivi, utilizzare i suggerimenti e le impostazioni negli articoli seguenti insieme ai passaggi in questa fase:
 
 - [Prerequisiti](identity-access-prerequisites.md)
 - [Criteri comuni di identità e accesso dei dispositivi](identity-access-policies.md)
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
-Informazioni su come parte di esperti IT presso Microsoft pianificate per e distribuito gestione EMS e dei dispositivi con queste risorse:
+Informazioni su come gli esperti IT di Microsoft hanno pianificato e distribuito EMS e gestione dei dispositivi con queste risorse:
 
 - [Gestire la produttività mobile moderna con Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
 - [Lavorare dal proprio dispositivo Windows 10 con Microsoft Intune](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
@@ -170,11 +170,11 @@ Informazioni su come parte di esperti IT presso Microsoft pianificate per e dist
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Come ha agito Contoso con Microsoft 365 Enterprise
 
-Vedere come servizi cloud di Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa [distribuito infrastruttura di gestione proprio dispositivo mobile](contoso-mdm.md) con Microsoft 365.
+Vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, ha [distribuito l'infrastruttura di gestione dei dispositivi mobili](contoso-mdm.md) con i servizi cloud di Microsoft 365.
 
 ![](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Criteri di uscita del dispositivo mobile management dell'infrastruttura](mobility-infrastructure-exit-criteria.md)
+[Criteri uscita dell'infrastruttura per la gestione dei dispositivi mobili](mobility-infrastructure-exit-criteria.md)
 

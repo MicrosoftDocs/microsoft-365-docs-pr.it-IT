@@ -4,13 +4,14 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetupComplete
 - BCSSetupComplete
 - BCS365_BCSSetupComplete
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -21,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
-description: Informazioni su cosa aspettarsi al termine dell'installazione di Business Cloud Suite.
-ms.openlocfilehash: 72023d480f0e26901e8505a2f51ef28bed92a3a0
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Informazioni su cosa aspettarsi dopo il completamento dell'installazione di Business Cloud Suite.
+ms.openlocfilehash: 02662341fbe35ce4ed2cf4b370e444b67a684771
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276824"
 ---
 # <a name="help-users-connect-to-microsoft-365-business"></a>Aiutare gli utenti a connettersi a Microsoft 365 Business
 

@@ -1,138 +1,139 @@
 ---
-title: Distribuire Windows 10 aziendale per dispositivi esistenti come un aggiornamento sul posto
-description: Vengono fornite indicazioni su come configurare e distribuire un'immagine Windows 10 Enterprise utilizzando System Center Configuration Manager come un aggiornamento sul posto.
-keywords: Distribuzione di Windows 10 Enterprise, documentazione Microsoft 365 Microsoft 365 Microsoft 365 Enterprise, l'aggiornamento sul posto, Configuration Manager System Center Configuration Manager
+title: Distribuire Windows 10 Enterprise per i dispositivi esistenti come aggiornamento sul posto
+description: Vengono fornite indicazioni per la configurazione e la distribuzione di un'immagine di Windows 10 Enterprise tramite System Center Configuration Manager come aggiornamento sul posto.
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 Documentation, Windows 10 Enterprise, Deployment, upgrade sul posto, Configuration Manager, System Center Configuration Manager
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 3df76c0de7b5a8b12c063113c79f9efa4e33b4c1
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 31650774a784f1fe784c30b90bc1f9ae579b34fa
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291613"
 ---
-# <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Passaggio 2: Distribuisci Windows 10 aziendale per dispositivi esistenti come un aggiornamento sul posto
+# <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Passaggio 2: distribuire Windows 10 Enterprise per i dispositivi esistenti come aggiornamento sul posto
 
-*In questo articolo si applica a E3 sia E5 versioni di Microsoft 365 Enterprise*
+*Questo articolo si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-Il percorso più semplice per l'aggiornamento PC attualmente in esecuzione Windows 7 o Windows 8.1 a 10 Windows è un aggiornamento sul posto. È possibile utilizzare una sequenza di attività di System Center Configuration Manager (Gestione configurazione) per completamente automatizzare il processo. 
+Il percorso più semplice per aggiornare i computer che eseguono Windows 7 o Windows 8,1 a Windows 10 è tramite un aggiornamento sul posto. È possibile utilizzare una sequenza di attività di System Center Configuration Manager (Configuration Manager) per automatizzare completamente il processo. 
 
-Se si dispone di computer esistente che esegue Windows 7 o Windows 8.1, è consigliabile questo percorso se l'organizzazione è distribuito Windows 10. Si utilizza il programma di installazione di Windows (Setup.exe) per eseguire un aggiornamento sul posto, che mantiene automaticamente tutti i dati, le impostazioni, applicazioni, e i driver della versione del sistema operativo esistente. Questa operazione richiede il minimo sforzo IT, in quanto non è necessaria un'infrastruttura di distribuzione complessa.
+Se sono presenti computer che eseguono Windows 7 o Windows 8,1, è consigliabile questo percorso se l'organizzazione sta distribuendo Windows 10. In questo modo viene utilizzato il programma di installazione di Windows (Setup. exe) per eseguire un aggiornamento sul posto, che consente di conservare automaticamente tutti i dati, le impostazioni, le applicazioni e i driver dalla versione del sistema operativo esistente. Questo richiede il minimo sforzo, perché non è necessaria alcuna infrastruttura di distribuzione complessa.
 
-Eseguire la procedura seguente per configurare e distribuire un'immagine Windows 10 Enterprise tramite Configuration Manager come un aggiornamento sul posto.
+Seguire questa procedura per configurare e distribuire un'immagine di Windows 10 Enterprise utilizzando Configuration Manager come aggiornamento sul posto.
 
-## <a name="part-1-verify-readiness-to-upgrade-windows"></a>Parte 1: Verificare lo stato di preparazione per l'aggiornamento di Windows
+## <a name="part-1-verify-readiness-to-upgrade-windows"></a>Parte 1: verificare la disponibilità per l'aggiornamento di Windows
 
-Innanzitutto, utilizzare la funzionalità per aggiornare lo stato di preparazione di Windows Analitica per fornire informazioni potenti e suggerimenti sui computer, applicazioni e driver all'interno dell'organizzazione, senza costi aggiuntivi e senza i requisiti di infrastruttura aggiuntiva. Questo nuovo servizio viene descritto l'aggiornamento e la funzionalità di progetti di aggiornamento tramite un flusso di lavoro basato su Microsoft consigliate. Dati di inventario aggiornato consentono di bilanciare costi e rischio nei progetti di aggiornamento.
+In primo luogo, utilizzare la funzionalità di preparazione per l'aggiornamento di Windows Analytics per fornire informazioni e suggerimenti utili sui computer, le applicazioni e i driver nell'organizzazione, senza costi aggiuntivi e con requisiti di infrastruttura aggiuntivi. Questo nuovo servizio guida l'utente attraverso l'aggiornamento e l'aggiornamento delle funzionalità dei progetti utilizzando un flusso di lavoro basato su procedure consigliate Microsoft. I dati di inventario aggiornati consentono di bilanciare i costi e i rischi nei progetti di aggiornamento.
 
-Per ulteriori informazioni, iniziare, utilizzare e risolvere i problemi di aggiornare lo stato di preparazione, vedere [gli aggiornamenti di gestione di Windows con lo stato di preparazione di aggiornamento](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness) .
+Vedere [gestire gli aggiornamenti di Windows con la preparazione dell'aggiornamento](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness) per ulteriori informazioni, per iniziare, utilizzare e risolvere i problemi relativi all'aggiornamento.
 
-Successivamente, eseguire la Guida per l'utilizzo di System Center Configuration Manager (Branch corrente) per l'aggiornamento di Windows 7 o versione successiva del sistema operativo a Windows 10. Come per qualsiasi distribuzione ad alto rischio, è consigliabile eseguire il backup dei dati utente prima di procedere. Archiviazione cloud OneDrive è pronto per l'utilizzo per gli utenti con licenza di Microsoft 365 e può essere utilizzato per archiviare in modo protetto i relativi file. Per ulteriori informazioni, vedere [OneDrive quick start guide](https://aka.ms/ODfBquickstartguide). Per accedere a questa pagina, è necessario accedere come amministratore tenant o amministratore globale in un tenant Office 365 o Microsoft 365.
+Successivamente, seguire la guida per l'utilizzo di System Center Configuration Manager (Current Branch) per aggiornare il sistema operativo Windows 7 o versioni successive a Windows 10. Come per qualsiasi distribuzione ad alto rischio, è consigliabile eseguire il backup dei dati degli utenti prima di continuare. Lo spazio di archiviazione cloud di OneDrive è pronto per l'uso per gli utenti con licenza di Microsoft 365 e può essere utilizzato per archiviare in modo sicuro i propri file. Per altre informazioni, vedere [Guida](https://aka.ms/ODfBquickstartguide)introduttiva di OneDrive. Per accedere a questa pagina, è necessario eseguire l'accesso come amministratore del tenant o amministratore globale in un tenant di Office 365 o Microsoft 365.
 
-Per un elenco delle versioni di Configuration Manager e le versioni client Windows 10 corrispondenti sono supportate, vedere [supporto per Windows 10 per System Center Configuration Manager](https://aka.ms/supportforwin10sccm).
+Per un elenco delle versioni di gestione configurazione e delle versioni client di Windows 10 corrispondenti supportate, vedere [supporto per Windows 10 per System Center Configuration Manager](https://aka.ms/supportforwin10sccm).
 
-**Per verificare lo stato di preparazione per l'aggiornamento di Windows**
+**Per verificare la disponibilità dell'aggiornamento di Windows**
 
-Leggere questi requisiti prima di iniziare la distribuzione di Windows 10:
+Esaminare questi requisiti prima di avviare la distribuzione di Windows 10:
 
-- **Edizioni di Windows idonee per eseguire l'aggiornamento** - i dispositivi devono eseguire le edizioni di Windows 7 o Windows 8.1 idonei per l'aggiornamento a Windows 10 Enterprise. Per un elenco delle edizioni supportate, vedere [Windows 10 percorsi di aggiornamento](https://aka.ms/win10upgradepaths). 
-- **Dispositivi supportati** - la maggior parte dei computer che sono compatibili con Windows 8.1 è compatibile con Windows 10. Potrebbe essere necessario installare i driver aggiornati in Windows 10 per i dispositivi per il corretto funzionamento. Per ulteriori informazioni, vedere [Windows 10 specifiche](https://aka.ms/windows10specifications) .
-- **Preparazione della distribuzione** , assicurarsi di disporre dei seguenti prima di iniziare la configurazione della distribuzione:
-    - Supporto di installazione di Windows 10 - supporto di installazione deve essere collocato in un'unità distinta con ISO già installato. È possibile ottenere il file ISO di [Download per abbonati MSDN](https://aka.ms/msdn-subscriber-downloads) o dal [Centro servizi di Volume Licensing](https://aka.ms/mvlsc).
-    - I backup dei dati utente - anche se i dati utente verranno migrati dell'aggiornamento, è consigliabile consiste nel configurare uno scenario di backup. Ad esempio, esportare tutti i dati utente per un account OneDrive, unità flash USB crittografate BitLocker To Go o server di rete. Per ulteriori informazioni, vedere [eseguire il backup o il trasferimento dei dati in Windows](https://aka.ms/backuptransferdatawindows).
-- **Preparazione dell'ambiente** - struttura esistente di Gestione configurazione server verrà utilizzato per preparare la distribuzione del sistema operativo. Oltre all'impostazione di base, le configurazioni seguenti prevedere nell'ambiente di Configuration Manager:
-    1. [Estendi Schema di Active Directory](https://aka.ms/extendadschema) e [creare un contenitore di sistema di gestione](https://aka.ms/createsysmancontainer).
-    2. Foresta di Active Directory di abilitare l'individuazione e l'individuazione del sistema Active Directory. Per ulteriori informazioni, vedere [Configure metodi di individuazione di System Center Configuration Manager](https://aka.ms/configurediscoverymethods).
-    3. Creare i limiti di intervallo IP e gruppo limite per l'assegnazione di contenuto e del sito. Per ulteriori informazioni, vedere [definire dei limiti di siti e i gruppi di limite per System Center Configuration Manager](https://aka.ms/definesiteboundaries).
-    4. Aggiungere e configurare la gestione configurazione reporting services punto ruolo. Per ulteriori informazioni, vedere [Configurazione di Reporting in Configuration Manager](https://aka.ms/configurereporting).
-    5. Creare una struttura di cartelle file system per pacchetti.
-    6. Creare una struttura di cartelle di console di Configuration Manager per pacchetti.
-    7. Installare gli aggiornamenti di System Center Configuration Manager (Branch corrente) e dei prerequisiti di Windows 10 aggiuntivi.
+- **Edizioni di Windows idonee per l'aggiornamento** : i dispositivi devono eseguire edizioni di Windows 7 o Windows 8,1 che sono idonee per l'aggiornamento a Windows 10 Enterprise. Per un elenco delle edizioni supportate, vedere [percorsi di aggiornamento di Windows 10](https://aka.ms/win10upgradepaths). 
+- **Dispositivi supportati** : la maggior parte dei computer compatibili con Windows 8,1 sarà compatibile con Windows 10. Potrebbe essere necessario installare i driver aggiornati in Windows 10 affinché i dispositivi funzionino correttamente. Per altre informazioni, vedere [specifiche di Windows 10](https://aka.ms/windows10specifications) .
+- **Preparazione della distribuzione** : prima di iniziare a configurare la distribuzione, assicurarsi di avere la seguente procedura.
+    - Supporto di installazione di Windows 10-il supporto di installazione deve trovarsi in un'unità distinta, con la ISO già montata. È possibile ottenere la ISO da [download abbonaTi MSDN](https://aka.ms/msdn-subscriber-downloads) o dal [centro servizi per contratti multilicenza](https://aka.ms/mvlsc).
+    - Backup dei dati degli utenti-sebbene i dati dell'utente verranno migrati nell'aggiornamento, la procedura consigliata consiste nel configurare uno scenario di backup. Ad esempio, esportare tutti i dati degli utenti in un account OneDrive, BitLocker to go-Encrypted USB Flash Drive o network file server. Per ulteriori informazioni, vedere [eseguire il backup o il trasferimento dei dati in Windows](https://aka.ms/backuptransferdatawindows).
+- **Preparazione dell'ambiente** : si utilizzerà una struttura del Server Configuration Manager esistente per preparare la distribuzione del sistema operativo. Oltre alla configurazione di base, è necessario effettuare le seguenti configurazioni nell'ambiente Configuration Manager:
+    1. [Estendere lo schema di Active Directory](https://aka.ms/extendadschema) e [creare un contenitore di gestione del sistema](https://aka.ms/createsysmancontainer).
+    2. Abilitare l'individuazione della foresta di Active Directory e l'individuazione del sistema di Active Directory. Per altre informazioni, vedere [Configure Discovery Methods for System Center Configuration Manager](https://aka.ms/configurediscoverymethods).
+    3. Creare confini dell'intervallo IP e gruppo di limiti per il contenuto e l'assegnazione del sito. Per altre informazioni, vedere [definire i limiti del sito e i gruppi di limiti per System Center Configuration Manager](https://aka.ms/definesiteboundaries).
+    4. Aggiungere e configurare il ruolo del punto di Reporting Services di Configuration Manager. Per altre informazioni, vedere [ConfigurIng Reporting in Configuration Manager](https://aka.ms/configurereporting).
+    5. Creare una struttura di cartelle di file System per i pacchetti.
+    6. Creare una struttura di cartelle console di Configuration Manager per i pacchetti.
+    7. Installare System Center Configuration Manager (Current Branch) e gli eventuali ulteriori prerequisiti di Windows 10.
 
-## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>Parte 2: Aggiungere un'immagine del sistema operativo 10 Windows tramite Configuration Manager
-A questo punto è necessario creare un pacchetto di aggiornamento del sistema operativo che include il supporto di installazione completo di Windows 10. Nei passaggi seguenti, si utilizzerà Configuration Manager per creare un pacchetto di aggiornamento per Windows 10 Enterprise x64.
+## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>Parte 2: aggiungere un'immagine del sistema operativo Windows 10 tramite Configuration Manager
+A questo punto è necessario creare un pacchetto di aggiornamento del sistema operativo che contenga il supporto di installazione completo di Windows 10. Nei passaggi seguenti viene utilizzato Configuration Manager per creare un pacchetto di aggiornamento per Windows 10 Enterprise x64.
 
-**Per aggiungere un'immagine del sistema operativo 10 Windows tramite Configuration Manager**
+**Per aggiungere un'immagine del sistema operativo Windows 10 tramite Configuration Manager**
 
-1. Utilizzando la console di Configuration Manager, nell'area di lavoro **Raccolta Software** , fare clic sul nodo **I pacchetti di aggiornamento del sistema operativo** e quindi selezionare **Aggiungi pacchetto di aggiornamento del sistema operativo**.
-2. Nella pagina di **Origine dati** specificare il percorso UNC di supporto di Windows 10 Enterprise x64 e quindi selezionare **Avanti**.
-3. Nella pagina **Generale** , specificare **l'aggiornamento di Windows 10 Enterprise x64**e quindi scegliere **Avanti**. 
-4. Nella pagina di **Riepilogo** selezionare **Avanti**e quindi selezionare **Chiudi**. 
-5. Pulsante destro del mouse il pacchetto di **aggiornamento di Windows 10 Enterprise x64** creato e quindi selezionare **La distribuzione del contenuto**. 
+1. Utilizzando la console di Configuration Manager, nell'area di lavoro **raccolta software** fare clic con il pulsante destro del mouse sul nodo **pacchetti di aggiornamento del sistema operativo** e quindi scegliere **Aggiungi pacchetto di aggiornamento del sistema operativo**.
+2. Nella pagina **origine dati** specificare il percorso UNC del supporto Windows 10 Enterprise x64 e quindi fare clic su **Avanti**.
+3. Nella pagina **generale** , specificare l' **aggiornamento di Windows 10 Enterprise x64**e quindi fare clic su **Avanti**. 
+4. Nella pagina **Riepilogo** fare clic su **Avanti**e quindi su **Chiudi**. 
+5. Fare clic con il pulsante destro del mouse sul pacchetto di **aggiornamento di Windows 10 Enterprise x64** creato e quindi scegliere **Distribuisci contenuto**. 
 6. Scegliere il punto di distribuzione.
 
-## <a name="part-3-configure-deployment-settings"></a>Parte 3: Configurare le impostazioni di distribuzione
-In questo passaggio consente di configurare una sequenza di attività di aggiornamento che contiene le impostazioni per l'aggiornamento di Windows 10. Si verrà quindi identificare i dispositivi per aggiornare e quindi distribuzione la sequenza di attività per questi dispositivi.
+## <a name="part-3-configure-deployment-settings"></a>Parte 3: configurare le impostazioni di distribuzione
+In questo passaggio verrà configurata una sequenza di attività di aggiornamento che contiene le impostazioni per l'aggiornamento di Windows 10. Verranno quindi identificati i dispositivi di cui eseguire l'aggiornamento e quindi la distribuzione della sequenza di attività in tali dispositivi.
 
 ### <a name="create-a-task-sequence"></a>Creare una sequenza di attività
 Per creare una sequenza di attività di aggiornamento, eseguire le operazioni seguenti:
   
-1. Nella console di Configuration Manager, nell'area di lavoro **Raccolta Software** espandere **sistemi operativi**. 
-2. Destro del mouse sul nodo **Task Sequences** e quindi selezionare **Creare Task Sequence**.
-3. Nella pagina **Crea una nuova sequenza di attività** , selezionare **l'aggiornamento di un sistema operativo dal pacchetto di aggiornamento**e quindi scegliere **Avanti**.
-4. Nella pagina **Informazioni sulla sequenza delle attività** , specificare **l'aggiornamento di Windows 10 Enterprise x64**e quindi selezionare **Avanti**.
-5. Nella pagina **aggiornamento del sistema operativo Windows** , selezionare **Sfoglia** e selezionare il **pacchetto di aggiornamento del sistema operativo aggiornamento Windows 10 Enterprise x64**, fare **clic su OK**e quindi scegliere **Avanti**.
-6. Proseguire con le pagine rimanenti della procedura guidata e quindi selezionare **Chiudi**.
+1. Nella console di Configuration Manager, nell'area di lavoro della **raccolta software** , espandere **sistemi operativi**. 
+2. Fare clic con il pulsante destro del mouse sul nodo **sequenze attività** e quindi scegliere **Crea sequenza attività**.
+3. Nella pagina **Crea una nuova sequenza di attività** , selezionare **Aggiorna un sistema operativo dal pacchetto di aggiornamento**, quindi fare clic su **Avanti**.
+4. Nella pagina **informazioni sequenza attività** specificare l' **aggiornamento di Windows 10 Enterprise x64**e quindi fare clic su **Avanti**.
+5. Nella pagina **aggiornare il sistema operativo Windows** , selezionare **Sfoglia** e scegliere il **pacchetto di aggiornamento di Windows 10 Enterprise x64 upgrade System**, selezionare **OK**, quindi fare clic su **Avanti**.
+6. Continuare nelle pagine rimanenti della procedura guidata e quindi fare clic su **Chiudi**.
 
-### <a name="create-a-device-collection"></a>Creare una raccolta di dispositivi
-Dopo aver creato la sequenza di attività di aggiornamento, è necessario creare una raccolta contenente i verrà illustrato come aggiornare i dispositivi.
+### <a name="create-a-device-collection"></a>Creare un insieme di dispositivi
+Dopo aver creato la sequenza di attività di aggiornamento, sarà necessario creare una raccolta che contenga i dispositivi da aggiornare.
 
 > [!NOTE]
-> Utilizzare le impostazioni seguenti per testare la distribuzione in un singolo dispositivo. È possibile utilizzare le regole di appartenenza diverse per includere i gruppi di dispositivi quando si è pronti. Per ulteriori informazioni, vedere [procedura creare raccolte in System Center Configuration Manager](https://aka.ms/sccm-create-collections).
+> Utilizzare le impostazioni seguenti per testare la distribuzione su un singolo dispositivo. È possibile utilizzare regole di appartenenza diverse per includere gruppi di dispositivi quando si è pronti. Per altre informazioni, vedere [come creare raccolte in System Center Configuration Manager](https://aka.ms/sccm-create-collections).
 
-1. Nella console di Configuration Manager, nell'area di lavoro **risorse e della conformità** destro del mouse sul **Dispositivo raccolte**e quindi selezionare **Crea raccolta dispositivo**. 
-2. Nella procedura guidata Crea raccolta dispositivo, nella pagina **Generale** immettere le seguenti impostazioni e quindi selezionare **Avanti**:
-    - Nome: Windows 10 Enterprise x64 aggiornamento
-    - Limitazione insieme: Tutti i sistemi
-3. Nella pagina **Regole di appartenenza** , selezionare **Aggiungi regola** > **regola diretto** per avviare la creazione guidata regola di appartenenza diretta.
-4. Nella pagina **iniziale** della creazione guidata regola appartenenza diretta, selezionare **Avanti**.
-5. Nella pagina di **ricerca di risorse** immettere le impostazioni seguenti, sostituendo il **valore** di testo segnaposto con il nome del dispositivo di cui che si esegue l'aggiornamento: 
-    - Classe di risorse: Risorse di sistema
-    - Attributo Name: nome
+1. Nella console di Configuration Manager, nell'area di lavoro **asset e conformità** , fare clic con il pulsante destro del mouse su **Raccolte dispositivi**e quindi scegliere **Crea insieme di dispositivi**. 
+2. Nella pagina **generale** della creazione guidata raccolta dispositivi immettere le impostazioni seguenti e quindi fare clic su **Avanti**:
+    - Nome: aggiornamento di Windows 10 Enterprise x64
+    - Limitazione della raccolta: tutti i sistemi
+3. Nella pagina **regole di appartenenza** selezionare **Aggiungi** > regola**diretta** per avviare la creazione guidata regola di appartenenza diretta.
+4. Nella pagina **iniziale** della procedura guidata Create Direct Membership Rule selezionare **Avanti**.
+5. Nella pagina **Cerca risorse** immettere le impostazioni seguenti, sostituendo il testo del **valore** segnaposto con il nome del dispositivo che si sta aggiornando: 
+    - Classe Resource: risorsa di sistema
+    - Nome attributo: nome
     - Valore: *PC0003*
-6. Nella pagina **Seleziona risorse** selezionare il dispositivo, quindi scegliere **Avanti**.
-7. Completare la procedura guidata Crea regola di appartenenza diretta e la creazione guidata insieme dispositivo.  
-8. Esaminare l'insieme di aggiornamento di Windows 10 Enterprise x64. Continuare finché non viene visualizzato il computer è stato aggiunto nell'insieme.
+6. Nella pagina **Seleziona risorse** selezionare il dispositivo e quindi fare clic su **Avanti**.
+7. Completare la procedura guidata Crea regola di appartenenza diretta e la procedura guidata Crea raccolta dispositivi.  
+8. Esaminare la raccolta di aggiornamenti di Windows 10 Enterprise x64. Non continuare finché non vengono visualizzati i computer aggiunti nell'insieme.
 
 ### <a name="create-an-operating-system-deployment"></a>Creare una distribuzione del sistema operativo
 Eseguire la procedura seguente per creare una distribuzione per la sequenza di attività.
 
-1. Nella console di Configuration Manager, nell'area di lavoro **Raccolta Software** destro della sequenza di attività creato nel passaggio precedente e quindi selezionare **Distribuisci**.
-2. Nella pagina **Generale** selezionare l'insieme **Windows 10 Enterprise x64 aggiornare** e quindi scegliere **Avanti**.
-3. Nella pagina **contenuto** , selezionare **Avanti**.
-4. Nella pagina **Impostazioni di distribuzione** selezionare le impostazioni seguenti e quindi selezionare **Avanti**:
+1. Nella console di Configuration Manager, nell'area di lavoro **raccolta software** fare clic con il pulsante destro del mouse sulla sequenza di attività creata in un passaggio **** precedente e quindi scegliere Distribuisci.
+2. Nella pagina **generale** selezionare la raccolta di **aggiornamento di Windows 10 Enterprise x64** e quindi fare clic su **Avanti**.
+3. Nella pagina **contenuto** selezionare **Avanti**.
+4. Nella pagina **impostazioni di distribuzione** , selezionare le impostazioni seguenti e quindi fare clic su **Avanti**:
 
     > [!NOTE]
-    > Per la distribuzione di test, si verrà impostato lo scopo **disponibile**, che richiede l'intervento dell'utente per avviare la distribuzione. In un ambiente di produzione, si desidera automatizzare la distribuzione con lo scopo necessario, che comporta la configurazione di opzioni aggiuntive, ad esempio la pianificazione durante l'esecuzione della distribuzione. 
+    > Per la distribuzione dei test, è necessario impostare lo scopo di **available**, che richiede l'intervento dell'utente per avviare la distribuzione. In un ambiente di produzione, è possibile automatizzare la distribuzione utilizzando lo scopo necessario, che implica la configurazione di opzioni aggiuntive, ad esempio la pianificazione durante l'esecuzione della distribuzione. 
 
-    - Azione: installare
-    - Scopo: disponibili
+    - Azione: install
+    - Scopo: disponibile
 
-5. Nella pagina **programmazione** accettare le impostazioni predefinite e quindi scegliere **Avanti**.
-6. Nella pagina **Esperienza utente di** accettare le impostazioni predefinite e quindi scegliere **Avanti**.
-7. Nella pagina **avvisi** , accettare le impostazioni predefinite e quindi scegliere **Avanti**.
-8. Nella pagina di **Riepilogo** selezionare **Avanti**e quindi selezionare **Chiudi**.
+5. Nella pagina **pianificazione** accettare le impostazioni predefinite e quindi fare clic su **Avanti**.
+6. Nella pagina **esperienza utente** , accettare le impostazioni predefinite e quindi fare clic su **Avanti**.
+7. Nella pagina **avvisi** accettare le impostazioni predefinite e quindi fare clic su **Avanti**.
+8. Nella pagina **Riepilogo** fare clic su **Avanti**e quindi su **Chiudi**.
 
-## <a name="part-5-start-the-windows-10-upgrade-task-sequence"></a>Parte 5: Sequenza di attività di aggiornamento Start Windows 10
-Eseguire la procedura seguente per avviare la sequenza di attività 10 eseguire l'aggiornamento di Windows nel dispositivo con cui si esegue l'aggiornamento.
+## <a name="part-5-start-the-windows-10-upgrade-task-sequence"></a>Parte 5: avviare la sequenza di attività di aggiornamento di Windows 10
+Eseguire la procedura seguente per avviare la sequenza di attività di aggiornamento di Windows 10 nel dispositivo che si sta aggiornando.
  
-1. Accedere al computer Windows e avviare **Software Center**.
-2. Selezionare la sequenza di attività creato nel passaggio precedente e quindi selezionare **Installa**.
-3. Quando inizia la sequenza di attività, viene avviata automaticamente il processo di aggiornamento sul posto richiamando il programma di installazione di Windows (Setup.exe) con i parametri della riga di comando necessari per eseguire un aggiornamento automatico, che consente di conservare tutti i dati, le impostazioni, App, e driver.
-4. Dopo la sequenza di attività viene eseguita correttamente, il computer verrà aggiornato completamente a Windows 10.
+1. Accedere al computer Windows e avviare il **Centro software**.
+2. Selezionare la sequenza di attività creata in un passaggio precedente e quindi fare clic su **Installa**.
+3. Quando la sequenza di attività inizia, viene avviato automaticamente il processo di aggiornamento sul posto richiamando il programma di installazione di Windows (Setup. exe) con i parametri della riga di comando necessari per eseguire un aggiornamento automatico, che conserva tutti i dati, le impostazioni, le app e driver.
+4. Una volta completata la sequenza di attività, il computer verrà aggiornato completamente a Windows 10.
 
-Se si verificano errori quando si utilizza Windows 10 in un ambiente aziendale, è possibile consultare [alle soluzioni principali del supporto tecnico Microsoft per risolvere i problemi più comuni](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions). Queste risorse includono articoli KB, aggiornamenti e articoli della raccolta.
+Se si verificano problemi durante l'utilizzo di Windows 10 in un ambiente aziendale, è possibile consultare [le principali soluzioni di supporto tecnico Microsoft per i problemi più comuni](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions). Tali risorse includono articoli, aggiornamenti e articoli relativi alla raccolta di KB.
 
-Durante la distribuzione degli aggiornamenti all'interno dell'organizzazione, utilizzare la funzionalità di conformità aggiornamento di Windows Analitica per fornire una visione di conformità di aggiornamento del sistema operativo, avanzamento della distribuzione di aggiornamento ed errore di risoluzione dei problemi per i dispositivi Windows 10. Questo nuovo servizio utilizza i dati di diagnostica inclusi lo stato dell'installazione, configurazione di Windows Update e altre informazioni per fornire tali informazioni senza costi aggiuntivi e senza i requisiti di infrastruttura aggiuntiva. Se viene utilizzato con Windows Update per lavoro o altri strumenti di gestione, è possibile essere certi che i dispositivi vengono aggiornati correttamente.
+Durante l'implementazione degli aggiornamenti all'interno dell'organizzazione, utilizzare la funzionalità di conformità dell'aggiornamento di Windows Analytics per fornire una visualizzazione olistica della conformità dell'aggiornamento del sistema operativo, dell'aggiornamento della distribuzione e della risoluzione dei problemi relativi ai dispositivi Windows 10. Questo nuovo servizio utilizza i dati di diagnostica, tra cui l'avanzamento dell'installazione, la configurazione di Windows Update e altre informazioni per fornire tali intuizioni, senza costi aggiuntivi e con requisiti infrastrutturali aggiuntivi. Se viene utilizzato con Windows Update for business o con altri strumenti di gestione, è possibile garantire che i dispositivi siano stati aggiornati correttamente.
 
-Vedere [monitorare gli aggiornamenti di Windows e Windows Defender Antivirus con la conformità di aggiornamento](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) per ulteriori informazioni, introduzione e utilizzare la conformità di aggiornamento.
+Vedere [monitorare gli aggiornamenti di Windows e Windows Defender antivirus con la conformità](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) degli aggiornamenti per ulteriori informazioni, per iniziare e utilizzare la conformità dell'aggiornamento.
 
 Come checkpoint provvisorio, vedere i [criteri di completamento](windows10-exit-criteria.md#crit-windows10-step2) relativi a questo passaggio.
 
@@ -140,7 +141,7 @@ Come checkpoint provvisorio, vedere i [criteri di completamento](windows10-exit-
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Distribuire Windows 10 aziendale per nuovi dispositivi con Windows Autopilot](windows10-deploy-autopilot.md) |
+|![](./media/stepnumbers/Step3.png)| [Distribuzione di Windows 10 Enterprise per nuovi dispositivi con Windows Autopilot](windows10-deploy-autopilot.md) |
 
 
 

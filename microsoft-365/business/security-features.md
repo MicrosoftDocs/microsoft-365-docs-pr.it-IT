@@ -1,5 +1,5 @@
 ---
-title: Funzionalità di sicurezza Microsoft 365 Business
+title: Funzionalità di sicurezza aziendale di Microsoft 365
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-security-compliance
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,171 +18,171 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: Informazioni sulle caratteristiche di protezione implementati con Microsoft 365 Business.
-ms.openlocfilehash: 17bcc57d57e837f18b05f66cfd54185324f3cad8
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Informazioni sulle funzionalità di sicurezza disponibili in Microsoft 365 business.
+ms.openlocfilehash: 24d4c4e79e7d8737beb82336796956774f127209
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286882"
 ---
-# <a name="microsoft-365-business-security-features"></a>Funzionalità di sicurezza Microsoft 365 Business
+# <a name="microsoft-365-business-security-features"></a>Funzionalità di sicurezza aziendale di Microsoft 365
 
-Microsoft 365 Business offre funzionalità di sicurezza semplificato per proteggere i dati su PC, telefoni e Tablet.
+Microsoft 365 business offre funzionalità di sicurezza semplificate per garantire la protezione dei dati su PC, telefoni e tablet.
     
-## <a name="microsoft-365-business-admin-center-security-features"></a>Caratteristiche di protezione di Microsoft Business 365 admin center
+## <a name="microsoft-365-business-admin-center-security-features"></a>Funzionalità di sicurezza dell'interfaccia di amministrazione di Microsoft 365 business
 
-Consente di gestire molte delle funzionalità di sicurezza Microsoft 365 Business nell'interfaccia di amministrazione, che offre un modo semplificato per attivare o disattivare le queste caratteristiche. Nell'interfaccia di amministrazione è possibile eseguire le operazioni seguenti:
+È possibile gestire molte delle funzionalità di sicurezza aziendale di Microsoft 365 nell'interfaccia di amministrazione, che consente di abilitare o disabilitare queste funzionalità in modo semplificato. Nell'interfaccia di amministrazione è possibile eseguire le operazioni seguenti:
   
 ![Screenshot of the Devices card in the admin center](media/9982e784-dbf9-4a76-a159-bb3e2e5aa23f.png)
   
-- [Configurare le impostazioni di gestione applicazioni per dispositivi Android o iOS](app-protection-settings-for-android-and-ios.md) . 
+- [Impostare le impostazioni di gestione applicazioni per i dispositivi Android o iOS](app-protection-settings-for-android-and-ios.md) . 
     
-    Queste impostazioni di eliminazione di file da un dispositivo inattivo dopo un determinato periodo, la crittografia dei file di lavoro, che richiedono che gli utenti impostare un PIN e così via.
+    Tali impostazioni includono l'eliminazione di file da un dispositivo inattivo dopo un determinato periodo di tempo, la crittografia dei file di lavoro, la necessità di impostare un PIN e così via.
     
-- [Configurare le impostazioni di protezione dell'applicazione per i dispositivi Windows 10](protection-settings-for-windows-10-devices.md) . 
+- [Impostare le impostazioni di protezione delle applicazioni per i dispositivi Windows 10](protection-settings-for-windows-10-devices.md) . 
     
-    Queste impostazioni possono essere applicate a dati aziendali in entrambe le situazioni appartenenti alla società o dispositivi personalmente e di proprietà.
+    Queste impostazioni possono essere applicate ai dati aziendali sia su dispositivi di proprietà o personali.
     
-- [Impostare le impostazioni di protezione di dispositivo per i dispositivi Windows 10](protection-settings-for-windows-10-pcs.md) . 
+- [Impostare le impostazioni di protezione del dispositivo per i dispositivi Windows 10](protection-settings-for-windows-10-pcs.md) . 
     
-    È possibile attivare la crittografia [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) proteggere i dati in caso di un dispositivo viene perduto o rubato e abilitare [Guard sfruttare Windows](https://go.microsoft.com/fwlink/p/?linkid=871404) fornire una protezione avanzata contro ransomware. 
+    È possibile abilitare la crittografia [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) per proteggere i dati in caso di perdita o di furto di un dispositivo e consentire a [Windows exploit Guard](https://go.microsoft.com/fwlink/p/?linkid=871404) di fornire una protezione avanzata contro ransomware. 
     
 - [Rimuovere i dati aziendali dai dispositivi](remove-company-data.md)
     
-    Si possono distruggere dati aziendali in modalità remota se un dispositivo verrà perso, rubato, o un utente ha lasciato l'azienda.
+    È possibile cancellare in remoto i dati della società se un dispositivo viene perso, rubato o un dipendente lascia la propria azienda.
     
-- [I dispositivi Windows 10 reimpostare le impostazioni predefinite](reset-devices-to-factory-settings.md) . 
+- [Ripristinare le impostazioni di fabbrica dei dispositivi Windows 10](reset-devices-to-factory-settings.md) . 
     
-    È possibile ripristinare tutti i dispositivi Windows 10 con le impostazioni di protezione dispositivo applicate alle stesse.
+    È possibile reimpostare tutti i dispositivi Windows 10 a cui sono state applicate le impostazioni di protezione dei dispositivi.
     
-## <a name="additional-security-features"></a>Funzionalità di protezione aggiuntive 
+## <a name="additional-security-features"></a>Altre funzionalità di sicurezza 
 
-Funzionalità avanzate di Microsoft 365 Business sono disponibili per la protezione dell'azienda contro le minacce cyber e salvaguardare informazioni riservate.
+Le funzionalità avanzate di Microsoft 365 business sono disponibili per aiutare a proteggere la propria azienda dalle minacce informatiche e salvaguardare le informazioni riservate.
   
 - **[Office 365 Advanced Threat Protection](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
-    Advanced rischio degli strumenti (protezione di analisi) consente di proteggere il sistema propria azienda da phishing sofisticati e attacchi ransomware progettati per danneggiare dipendente o informazioni utente. Caratteristiche includono:
+    Advanced Threat Protection (ATP) consente di proteggere la propria azienda da attacchi di phishing e ransomware sofisticati destinati a compromettere le informazioni relative ai dipendenti o ai clienti. Le caratteristiche includono:
     
-  - Scansione degli allegati sofisticati e tecnologia AI analisi per rilevare ed eliminare messaggi pericolosi.
+  - Scansione avanzata degli allegati e analisi di AI per rilevare e scartare messaggi pericolosi.
     
-  - Automatico verifica dei collegamenti web nella posta elettronica per valutare se fanno parte di uno schema di phishing. In questo modo si attendibili di accedere a siti Web non sicuri.
+  - Controlli automatici dei collegamenti Web nel messaggio di posta elettronica per valutare se fanno parte di uno schema di phishing. In questo modo si impedisce all'utente di accedere a siti Web non sicuri.
     
-- **[Panoramica di criteri di prevenzione della perdita di dati](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
+- **[Panoramica dei criteri di prevenzione della perdita di dati](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
     
-    È possibile impostare DLP per rilevare automaticamente informazioni riservate, ad esempio numeri di carta di credito, i numeri di previdenza sociale e così via, per impedire loro involontarie condivisione all'esterno della società.
+    È possibile configurare DLP per rilevare automaticamente le informazioni riservate, come i numeri di carta di credito, i numeri di previdenza sociale e così via, per impedire la condivisione accidentale all'esterno dell'azienda.
     
 - **[Archiviazione Exchange Online](https://products.office.com/exchange/microsoft-exchange-online-archiving-email)**
     
-    Archiviazione Exchange Online licenza consente di messaggi da archiviare con facilità con backup dei dati continua. Archivia tutti i messaggi di posta elettronica dell'utente, inclusi gli elementi eliminati, nel caso in cui sono necessari più avanti per l'individuazione o ripristino. Inoltre, è possibile utilizzare i criteri di conservazione diversi per conservare i dati di posta elettronica per controversia legale esenzioni, eDiscovery, o per soddisfare i requisiti di conformità.
+    La licenza di archiviazione Exchange Online consente di archiviare facilmente i messaggi con il backup dei dati continua. Archivia tutti i messaggi di posta elettronica di un utente, inclusi gli elementi eliminati, nel caso in cui siano necessari in seguito per l'individuazione o il ripristino. Inoltre, è possibile utilizzare criteri di conservazione diversi per conservare i dati della posta elettronica per controversia legale, eDiscovery, o per soddisfare i requisiti di conformità.
     
 - **[Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871406)**
     
-    Consente di protezione di informazioni che controllare l'accesso alle informazioni riservate nei documenti e posta elettronica con i controlli come "Non inoltrare" e "Non vengono copiati." È anche possibile classificare le informazioni riservate come "Riservate" e specificare come informazioni classificate possono essere condivise all'esterno e all'interno dell'azienda. Crittografia di livello aziendale è facile da applicare ai documenti di mantenere le informazioni private e posta elettronica. Microsoft Business 365 include tutte le caratteristiche di [Azure Information Protection piano 1](https://go.microsoft.com/fwlink/p/?linkid=871407). È anche possibile installare il componente aggiuntivo client di Azure Information Protection per le applicazioni di Office. Per ulteriori informazioni, vedere [Guida di Azure Information Protection client dall'amministratore](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
+    La protezione delle informazioni consente di controllare l'accesso alle informazioni riservate nei messaggi di posta elettronica e nei documenti con controlli quali "non inoltrare" e "non copiare". È inoltre possibile classificare le informazioni riservate come "riservate" e specificare in che modo le informazioni classificate possono essere condivise all'esterno e all'interno dell'azienda. La crittografia di livello aziendale è facile da applicare ai messaggi di posta elettronica e ai documenti per mantenere private le informazioni. Microsoft 365 business include tutte le funzionalità di [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). È inoltre possibile installare il componente aggiuntivo di Azure Information Protection client per le app di Office. Per ulteriori informazioni, vedere [Guida di Admininstrator del client di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
     
-- **[Tutte le funzionalità di Intune nel portale di Azure](https://go.microsoft.com/fwlink/p/?linkid=871403)**
+- **[Le funzionalità complete di Intune nel portale di Azure](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    Accesso a Intune interfaccia di amministrazione del portale Azure consente di impostare le caratteristiche di protezione aggiuntive, ad esempio la gestione di dispositivi, iPhone e i dispositivi Android e gestione avanzata dei dispositivi per Windows, Mac OS che non sono disponibili in Microsoft Interfaccia di amministrazione di 365 business.
+    L'accesso all'interfaccia di amministrazione di Intune nel portale di Azure consente di configurare altre funzionalità di sicurezza, ad esempio la gestione dei dispositivi MacOS, iPhone e Android insieme a Advanced Device Management per Windows, che non sono disponibili tramite Microsoft 365 Business Admin Center.
     
-Sezioni che seguono descrivono come è possibile gestire queste funzionalità per la protezione &amp; centro conformità e dell'interfaccia di amministrazione Intune. Nel corso del tempo verranno aggiunto i controlli semplificati per l'interfaccia di amministrazione di Microsoft 365 Business.
+Nelle sezioni successive viene descritto come è possibile gestire queste funzionalità nel centro &amp; conformità sicurezza e nell'interfaccia di amministrazione di Intune. Nel corso del tempo, i controlli semplificati verranno aggiunti all'interfaccia di amministrazione di Microsoft 365 business.
   
-## <a name="set-up-advanced-threat-protection-features"></a>Impostare le funzionalità di protezione avanzata di rischio
+## <a name="set-up-advanced-threat-protection-features"></a>Configurare le funzionalità avanzate di protezione dalle minacce
 
-- **Protezione contro gli allegati non sicuri:** Degli strumenti di analisi identifica contenuto dannoso aprendo gli allegati di posta elettronica in un ambiente virtuale e l'esecuzione dell'analisi del comportamento risultante. Il contenuto viene valutato per determinare lo scopo (se dannoso o normale), e degli strumenti di analisi blocca il rilascio di unsafe attachments, proteggere contro gli schemi di phishing e infezioni ransomware. Per attivare la protezione degli allegati, vedere [impostazione dei criteri di sicurezza allegati di Office 365 degli strumenti di analisi](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775).
+- **Protezione da allegati non sicuri:** ATP identifica i contenuti dannosi aprendo allegati di posta elettronica in un ambiente virtuale ed eseguendo analisi del comportamento risultante. Il contenuto viene valutato per determinare l'intento (se normale o dannoso) e il trifosfato di adenosina blocca la consegna degli allegati non sicuri, contribuendo a proteggersi dagli schemi di phishing e dalle infezioni ransomware. Per attivare la protezione degli allegati, vedere [set up Office 365 ATP SAFE Attachment Policies](https://support.office.com/article/078eb946-819a-4e13-8673-fe0c0ad3a775).
     
-- Proteggere l'ambiente quando gli utenti fare clic sui collegamenti dannosi: degli strumenti di analisi esamina inoltre collegamenti nella posta elettronica in fase di un utente fa clic su essi. Se un collegamento non sicuro, l'utente viene avvisato non per visitare il sito o informato che il sito è stato bloccato. Consente di evitare truffe. È possibile [impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc) o [impostare i criteri di Office 365 degli strumenti di analisi provvisoria collegamenti](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc).
+- Proteggere l'ambiente quando gli utenti fanno clic su collegamenti dannosi: ATP esamina anche i collegamenti nella posta elettronica al momento in cui un utente fa clic su di essi. Se un collegamento non è sicuro, l'utente viene avvisato di non visitare il sito o ha informato che il sito è stato bloccato. Ciò consente di proteggere gli schemi di phishing. È possibile [configurare i criteri dei collegamenti sicuri ATP di office 365](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#reveddefaultscc) o [configurare i criteri dei collegamenti sicuri atp di Office 365](https://support.office.com/article/bdd5372d-775e-4442-9c1b-609627b94b5d#addemailpolscc).
     
-## <a name="set-up-dlp-features"></a>Impostare le funzionalità DLP
+## <a name="set-up-dlp-features"></a>Configurare le funzionalità DLP
 
-Per un esempio su come configurare un criterio per la protezione da personali informazioni, vedere [creare un criterio DLP da un modello](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369) . 
+Vedere [creare un criterio DLP da un modello](https://support.office.com/article/59414438-99f5-488b-975c-5023f2254369) per un esempio su come impostare un criterio per proteggere le informazioni personali. 
   
-DLP sono inclusi numerosi modelli pronte per l'utilizzo dei criteri per molte impostazioni internazionali diverse. Ad esempio dati finanziari Australia, Act informazioni personali in Canada, Usa dati finanziari, e così via. Per un elenco completo, vedere [modelli di criteri DLP the cosa includono](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a) . Tutti i modelli possono essere attivati simile all'esempio di modello PII. 
+DLP viene fornito con molti modelli di criteri pronti per l'uso per molte impostazioni locali diverse. Ad esempio, Australia Financial Data, Canada Personal Information Act, US Financial Data, ecc. Vedere [cosa includono i modelli di criteri DLP](https://support.office.com/article/c2e588d3-8f4f-4937-a286-8c399f28953a) per un elenco completo. Tutti questi modelli possono essere abilitati in modo analogo all'esempio del modello PII. 
   
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Impostare il mantenimento di posta elettronica con archiviazione Exchange Online
+## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurare la conservazione della posta elettronica con archiviazione Exchange Online
 
- Funzionalità di licenza di **Archiviazione Exchange Online** consentono di mantenere gli standard normativi e conformità mantenendo posta elettronica contenuto ai fini di eDiscovery. Inoltre, consente di ridurre il rischio in caso di controversia e fornisce un modo per recuperare i dati dopo una violazione della protezione oppure quando è necessario ripristinare gli elementi eliminati. Per attivare queste funzionalità, è possibile utilizzare conservazione per controversia legale per conservare tutti i contenuti di un utente o utilizzare i criteri di conservazione per una migliore personalizzazione. 
+ Le funzionalità di licenza di **archiviazione di Exchange Online** offrono la possibilità di mantenere la conformità e gli standard normativi preservando il contenuto della posta elettronica ai fini di eDiscovery. Consente inoltre di ridurre i rischi in caso di controversia legale e consente di recuperare i dati dopo una violazione della sicurezza o quando è necessario recuperare gli elementi eliminati. Per attivare queste funzionalità, è possibile utilizzare il blocco per controversia legale per mantenere tutto il contenuto di un utente o utilizzare i criteri di conservazione per una maggiore personalizzazione. 
   
-**Conservazione per controversia legale:** È possibile preservare tutto il contenuto delle cassette postali inclusi gli elementi eliminati inserendo intera cassetta postale dell'utente controversia attesa. 
+**Blocco per controversIa legale:** È possibile mantenere tutti i contenuti delle cassette postali, compresi gli elementi eliminati, inserendo l'intera cassetta postale di un utente sul blocco per controversia legale. 
     
-Per inserire una cassetta postale di conservazione per controversia legale, nell'interfaccia di amministrazione:
+Per inserire una cassetta postale per il blocco per controversia legale, nell'interfaccia di amministrazione:
     
-1. Nella barra di spostamento sinistro, passare a **utenti** \> **utenti attivi**.
+1. Nella barra di spostamento a sinistra, passare a utenti **attivi**degli **utenti** \> .
     
-2. Selezionare un utente la cui cassetta postale che si desidera bloccare controversia attesa e nel riquadro utente espandere **impostazioni di posta** e accanto a **ulteriori impostazioni** scegliere **Exchange Modifica proprietà**.
+2. Selezionare un utente la cui cassetta postale si desidera inserire nel blocco per controversia legale e nel riquadro utente espandere **impostazioni di posta elettronica** e accanto a **altre impostazioni** scegliere **modifica proprietà di Exchange**.
     
-3. Nella pagina cassetta postale dell'utente, scegliere * * funzionalità delle cassette postali * * nella barra di spostamento sinistro e quindi fare clic sul collegamento **abilitare** in **conservazione per controversia legale**.
+3. Nella pagina Cassetta postale per l'utente, scegliere * * funzionalità cassetta postale * * sulla barra di spostamento sinistra e quindi scegliere il collegamento **attiva** in **blocco per controversia legale**.
     
-4. Nella **conservazione per controversia legale** la finestra di dialogo è possibile specificare la conservazione per controversia durata della conservazione nel campo di **durata della conservazione per controversia legale** , lasciare vuota se si desidera inserire un'attesa infinita. È anche possibile aggiungere note e indirizzare il proprietario della casella posta a un sito Web potrebbe essere necessario spiegare contenere informazioni su alla conservazione per controversia \> **salvare**.
+4. Nella finestra di dialogo **blocco per controversia legale** è possibile specificare la durata del blocco per controversia legale nel campo **durata** conservazione per controversia legale, lasciare vuoto il campo se si desidera inserire un blocco infinito. È inoltre possibile aggiungere note e indirizzare il proprietario della cassetta postale a un sito Web che potrebbe essere necessario spiegare meglio il \> **salvataggio**del blocco per controversia legale.
     
-**Conservazione:** È possibile abilitare criteri di conservazione personalizzata, ad esempio, per mantenere per un determinato periodo di tempo o eliminare in modo permanente il contenuto alla fine del periodo di conservazione. Per ulteriori informazioni, vedere [Panoramica di criteri di conservazione](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
-## <a name="set-up-azure-information-protection-features"></a>Impostare le funzionalità di protezione di informazioni di Azure
+**Conservazione:** È possibile abilitare i criteri di conservazione personalizzati, ad esempio per mantenere un determinato intervallo di tempo o eliminare il contenuto in modo permanente alla fine del periodo di conservazione. Per ulteriori informazioni, vedere [Overview of](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)Retention Policies.
+## <a name="set-up-azure-information-protection-features"></a>Configurare le funzionalità di protezione delle informazioni di Azure
 
-Azure Information Protection (AIP) è una soluzione basata su cloud che aiuta a un'organizzazione per classificare e, facoltativamente, proteggere relativi documenti e messaggi di posta elettronica, applicando le etichette. Le etichette possono essere applicate automaticamente per gli amministratori che definiscono regole e condizioni manualmente dagli utenti o una combinazione dove gli utenti vengono assegnati suggerimenti.
+Azure Information Protection (AIP) è una soluzione basata su cloud che consente a un'organizzazione di classificare e facoltativamente proteggere i propri documenti e messaggi di posta elettronica applicando etichette. Le etichette possono essere applicate automaticamente dagli amministratori che definiscono regole e condizioni, manualmente dagli utenti o da una combinazione in cui gli utenti ricevono consigli.
 
-La possibilità di applicare le restrizioni seguenti per l'invio di messaggi di posta elettronica in Outlook sul web viene attivata automaticamente per tutti gli utenti:
+La possibilità di applicare le restrizioni seguenti quando si inviano messaggi di posta elettronica in Outlook sul Web è abilitata automaticamente per tutti gli utenti:
   
-- **Non inoltrare**: i destinatari possono leggere il messaggio, ma non in avanti, non è in grado di stampa o copiare il contenuto
+- **** Non inoltrare: i destinatari possono leggere il messaggio, ma non possono inoltrare, stampare o copiare il contenuto
     
-- **Crittografa**: l'intero messaggio viene crittografato. I destinatari devono eseguire ulteriori passaggi per verificare la propria identità prima di accedere a contenuto crittografato e non possono rimuovere la crittografia.
+- **Encrypt**: l'intero messaggio è crittografato. I destinatari devono eseguire passaggi aggiuntivi per confermare la propria identità prima di accedere al contenuto crittografato e non possono rimuovere la crittografia.
     
-- **Riservato**: concede i dipendenti dell'organizzazione tutte le autorizzazioni per il contenuto di posta elettronica e allegati, ma non per utenti esterni all'organizzazione. I proprietari dei dati consente di tenere traccia e revocare il contenuto in qualsiasi momento.
+- **Riservato**: fornisce ai dipendenti dell'organizzazione autorizzazioni complete per il contenuto e gli allegati di posta elettronica, ma non per gli utenti esterni all'organizzazione. I proprietari di dati possono monitorare e revocare il contenuto in qualsiasi momento.
     
-- **Altamente riservati**: questa restrizione può essere applicata ai dati altamente riservati, consentendo ai dipendenti di visualizzare, modificare e rispondere, ma non inoltrare, stampare o copiare i dati. I proprietari dei dati consente di tenere traccia e revocare il contenuto in qualsiasi momento.
+- **Estremamente riservato**: questa restrizione può essere applicata a dati estremamente riservati, consentendo ai dipendenti di visualizzare, modificare e rispondere, ma non di inoltrare, stampare o copiare i dati. I proprietari di dati possono monitorare e revocare il contenuto in qualsiasi momento.
 
-### <a name="make-sure-azure-information-protection-is-activated"></a>Verificare che viene attivata la protezione delle informazioni di Azure
+### <a name="make-sure-azure-information-protection-is-activated"></a>Verificare che Azure Information Protection sia attivato
 
-Per verificare che sia attivata AIP:
+Per verificare che AIP sia attivato:
 
 1. Accedere al [portale di Azure](https://portal.azure.com/).
 
-2. Selezionare **tutti i servizi** e immettere *La protezione delle informazioni di Azure* nella **Casella di ricerca**.
+2. Selezionare **tutti i servizi** e digitare in *Azure Information Protection* nella **casella di ricerca**.
 
-3. Visualizzano i risultati, fare clic su start successivo per **La protezione delle informazioni di Azure** per rendere un preferito e facile da individuare in seguito.
+3. Dopo la visualizzazione dei risultati, fare clic sul pulsante Start next to **Azure Information Protection** per renderlo preferito e facile da trovare in un secondo momento.
 
-4. Selezionare **La protezione delle informazioni di Azure** \> marca e **attivazione di protezione** verificare lo stato è impostato su attivato. 
+4. Selezionare **Azure Information** \> Protection **Protection Activation** e verificare che lo stato sia impostato su attivato. 
 
-### <a name="view-the-azure-information-protection-policy-and-default-labels"></a>Visualizzare le etichette dei criteri e imposta come predefinito la protezione delle informazioni di Azure 
+### <a name="view-the-azure-information-protection-policy-and-default-labels"></a>Visualizzare i criteri di protezione delle informazioni di Azure e le etichette predefinite 
 
-Per visualizzare e modificare, le etichette esistenti:
+Per visualizzare e modificare le etichette esistenti:
 
-1. Nel dashboard di Azure Information Protection, selezionare **le classificazioni** \> **etichette**. <br/>![Etichette standard per la protezione delle informazioni di Azure.](media/AIPLabels.png)
+1. Nel dashboard di Azure Information Protection selezionare etichette **classificazioni** \> ****. <br/>![Etichette standard per Azure Information Protection.](media/AIPLabels.png)
 
 2. È possibile scegliere qualsiasi etichetta per visualizzare le opzioni, è possibile modificare il nome visualizzato, i colori e così via.
  
-3. Vedere [Modifica e creazione di nuove etichette](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step2) se si desidera creare. 
+3. Se si desidera creare il proprio, vedere [modificare e creare nuove etichette](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step2) . 
 
-### <a name="install-the-azure-information-protection-client-manually"></a>Installare manualmente il client per la protezione delle informazioni di Azure
+### <a name="install-the-azure-information-protection-client-manually"></a>Installare il client Azure Information Protection manualmente
 
 Per installare manualmente il client AIP:
 
-1. Scaricare **AzInfoProtection.exe** [dall'area download Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
+1. Scaricare **AzInfoProtection. exe** dall' [area download Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
  
-2. È possibile verificare che l'installazione è stata eseguita la visualizzazione di un documento di Word e assicurandosi che l'opzione di **protezione** è disponibile nella scheda **Home** . <br/>![Scheda Protezione elenco a discesa in un documento di Word.](media/Word_Protect.png)
+2. È possibile verificare che l'installazione abbia avuto esito positivo visualizzando un documento di Word e **** assicurandosi che l'opzione Proteggi sia disponibile nella scheda **Home** . <br/>![Elenco a discesa della scheda protezione in un documento di Word.](media/Word_Protect.png)
 
 Per ulteriori informazioni, vedere [installazione del client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3)
 
-## <a name="go-to-intune-admin-center"></a>Passare all'interfaccia di amministrazione Intune
+## <a name="go-to-intune-admin-center"></a>Accedere all'interfaccia di amministrazione di Intune
 
 1. Accedere al [portale di Azure](https://portal.azure.com/).
 
-2. Selezionare **tutti i servizi** e tipo *Intune* nella **Casella di ricerca**.
+2. Selezionare **tutti i servizi** e digitare *Intune* nella **casella di ricerca**.
 
-3. Dopo che i risultati vengono visualizzati, fare clic su Avvia successivo a **Microsoft Intune** renderla preferito e facile da individuare in seguito.
+3. Dopo la visualizzazione dei risultati, fare clic sul pulsante Start accanto a **Microsoft Intune** per renderlo un favorito e facile da trovare in un secondo momento.
  
-È possibile utilizzare Intune per eseguire la registrazione e la gestione dei dispositivi dell'organizzazione. Per ulteriori informazioni, vedere [funzionalità dal metodo di registrazione per i dispositivi Windows](https://docs.microsoft.com/intune/enrollment-method-capabs) e [le opzioni di registrazione per i dispositivi gestiti da Intune](https://docs.microsoft.com/intune/enrollment-options).
+È possibile utilizzare Intune per registrare e gestire i dispositivi dell'organizzazione. Per ulteriori informazioni, vedere [capabilities by metodo di registrazione per i dispositivi di Windows](https://docs.microsoft.com/intune/enrollment-method-capabs) e le [Opzioni di registrazione per i dispositivi gestiti da Intune](https://docs.microsoft.com/intune/enrollment-options).
     
 ## <a name="faq"></a>Domande frequenti
 
- ### <a name="are-these-security-features-available-in-all-markets"></a>Sono disponibili nei mercati tutte queste funzionalità di protezione?
+ ### <a name="are-these-security-features-available-in-all-markets"></a>Queste funzionalità di sicurezza sono disponibili in tutti i mercati?
   
-Sì, queste caratteristiche sono disponibili nei mercati tutti in cui viene venduto Microsoft 365 Business.
+Sì, queste funzionalità sono disponibili in tutti i mercati in cui è venduto Microsoft 365 business.
   
-### <a name="how-do-i-find-the-security-amp-compliance-center"></a>Come trovare la sicurezza &amp; centro conformità?
+### <a name="how-do-i-find-the-security-amp-compliance-center"></a>Come trovare il Centro sicurezza &amp; e conformità
   
-1. [Accedere a Microsoft 365 Business](https://portal.microsoft.com/) utilizzando le credenziali di amministrazione. 
+1. [Accedere a Microsoft 365 business](https://portal.microsoft.com/) utilizzando le credenziali di amministratore. 
     
-2. Nella barra di navigazione sinistra, individuare **Admin Center** ed espanderlo. 
+2. Nel NAV sinistro, individuare i **centri di amministrazione** ed espanderlo. 
     
-    ![Nella barra di navigazione sinistra nell'interfaccia di amministrazione di Microsoft 365, selezionare interfacce di amministrazione.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, scegliere interfaccia di amministrazione.](media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Scegliere **protezione &amp; conformità** per accedere alla protezione &amp; centro conformità.
+3. Scegliere **conformità &amp; di sicurezza** per accedere al &amp; Centro sicurezza e conformità.

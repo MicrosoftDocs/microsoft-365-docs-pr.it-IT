@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: 'Informazioni su come utilizzare Microsoft 365 Business per rimuovere i dati aziendali da dispositivi di utente o computer Windows. '
-ms.openlocfilehash: 1fffe58f141b6dd4361704d9a7b3c17c41d8d84c
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Informazioni su come utilizzare Microsoft 365 business per rimuovere i dati aziendali dai dispositivi utente o dai PC Windows. '
+ms.openlocfilehash: 29aa4452d2d3e7b54fbb28d90880cdef28f50684
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283836"
 ---
 # <a name="remove-company-data-from-devices"></a>Rimuovere i dati aziendali dai dispositivi
 
@@ -31,11 +34,9 @@ ms.locfileid: "26868831"
   
 1. Accedere a [Microsoft 365 Business](https://portal.office.com) con le credenziali di amministratore globale. 
     
-2. Nell'interfaccia di amministrazione scegliere **Rimuovi dati aziendali** nella scheda **Azioni dispositivo**.
-    
-    ![On the Devices card, choose Remove company data](media/b6fcf74b-0d7d-4e1a-894f-40f9d4a215b8.png)
+2. Sulla barra di spostamento sinistra, scegliere **gestione** **criteri** \> **dispositivi** \> .
   
-3. Nel riquadro **Rimuovi dati aziendali** selezionare o cercare un utente che ha i dati che si vogliono rimuovere e scegliere il nome. 
+3. Nella pagina **Gestisci** scegliere o cercare un utente di cui si desidera rimuovere i dati e quindi scegliere il nome. 
     
 4. Nel riquadro successivo selezionare il dispositivo o i dispositivi dall'elenco **Dispositivi gestiti** per rimuovere i dati e scegliere **Avanti**. 
     

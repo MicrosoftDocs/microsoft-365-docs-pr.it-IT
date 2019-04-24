@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -17,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Informazioni su come verificare le impostazioni di protezione di applicazioni Microsoft 365 Business nei dispositivi Windows 10.
-ms.openlocfilehash: db05c86bd75cc30e22e025034a3dab478d0f5365
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Informazioni su come convalidare le impostazioni di protezione delle app di Microsoft 365 in dispositivi Windows 10.
+ms.openlocfilehash: 5ab91d65fa7bd40ebc118df217c9711b7bbfe7a4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286743"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Verificare le impostazioni di protezione nei PC Windows 10
 
@@ -31,21 +34,21 @@ ms.locfileid: "26868446"
 
 Dopo aver [configurato i criteri per i dispositivi](protection-settings-for-windows-10-pcs.md), possono essere necessarie alcune ore prima che i criteri siano applicati ai dispositivi degli utenti. Per verificare che i criteri siano stati applicati, esaminare le diverse schermate delle impostazioni di Windows sui dispositivi degli utenti. Gli utenti non possono modificare le impostazioni di Windows Update e Windows Defender Antivirus nei dispositivi Windows 10, quindi molte di queste opzioni saranno disattivate.
   
-1. Passare a **Impostazioni** \> **aggiornamento &amp; protezione** \> **Windows Update** \> **riavviare le opzioni** e verificare che tutte le impostazioni sono in grigio. 
+1. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are greyed out. 
     
     ![All the Restart options are greyed out.](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. Passare a **Impostazioni** \> **aggiornamento &amp; protezione** \> **Windows Update** \> **Opzioni avanzate** e verificare che tutte le impostazioni sono in grigio. 
+2. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** and confirm that all settings are greyed out. 
     
     ![Windows Advanced updates options are all greyed out.](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. Passare a **Impostazioni** \> **aggiornamento &amp; protezione** \> **Windows Update** \> **Opzioni avanzate** \> **scegliere la modalità di recapito degli aggiornamenti**.
+3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
     Verificare che il messaggio che indica che alcune impostazioni sono nascoste o gestite dall'organizzazione sia visibile (in rosso) e che tutte le opzioni siano disattivate.
     
     ![Choose how updates are delivered page indicates settings are hidden or managed by your organization.](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. Per aprire il Centro protezione di Windows Defender, passare a **Impostazioni** \> **aggiornamento &amp; protezione** \> **Windows Defender** \> fare clic su **Centro protezione di Apri Windows Defender** \> **Virus &amp; thread protezione** \> **Virus &amp; le impostazioni di protezione delle minacce**. 
+4. To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**. 
     
 5. Verificare che tutte le opzioni siano disattivate. 
     

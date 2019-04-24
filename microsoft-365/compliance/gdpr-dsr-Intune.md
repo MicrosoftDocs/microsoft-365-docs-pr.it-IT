@@ -4,18 +4,18 @@ description: ''
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 author: dougeby
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: dougeby
 manager: angrobe
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: eeb50954f849b0c110a88cc7d768844847d99255
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: fa65d33795108a16759fa87d476bb5a4dc94a281
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285198"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr"></a>Richieste dell'interessato per il GDPR in Intune
 Il Regolamento generale sulla protezione dei dati (RGPD) dell'Unione europea garantisce alle persone (denominate come *soggetti dei dati* nel regolamento) il diritto di gestire i dati personali raccolti da un datore di lavoro o da un'altra organizzazione o agenzia (definiti come *titolari del trattamento dei dati* o semplicemente *titolari*). I dati personali sono ampiamente descritti nell'RGPD come dati che si riferiscono a una persona fisica identificata o identificabile. L'RGPD garantisce ai soggetti dei dati diritti specifici sui propri dati personali; tali diritti includono la possibilità di ottenere delle copie dei dati personali, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico affinché possano essere trasferiti a un altro titolare. Una richiesta formale di un soggetto dei dati rivolta a un titolare in merito a un'operazione da effettuare sui propri dati personali è denominata *Richiesta DSR* (Data Subject Rights, Diritti del soggetto dei dati) o DSR.

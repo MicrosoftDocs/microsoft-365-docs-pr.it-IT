@@ -1,41 +1,42 @@
 ---
-title: Infrastruttura di Windows 10 aziendale Microsoft 365 Enterprise
-description: Istruzioni generali operazioni che è necessario distribuire Enterprise 10 Windows su PC come parte di Microsoft 365 Enterprise.
-keywords: Distribuzione di Windows 10 Enterprise documentazione Microsoft 365 Microsoft 365 Microsoft 365 Enterprise
+title: Infrastruttura di Windows 10 Enterprise per Microsoft 365 Enterprise
+description: Fornisce una guida di alto livello sui passaggi necessari per distribuire Windows 10 Enterprise sui PC come parte di Microsoft 365 Enterprise.
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 Documentation, Windows 10 Enterprise, distribuzione
 author: greg-lindsay
 localization_priority: Normal
+ms.collection: M365-modern-desktop
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/18/2018
 ms.author: greglin
-ms.openlocfilehash: 80d7c1b56434647387b9c428ca07effdff929abf
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 88517c6b8de95c54ee9a2e47d4545266eb198249
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289437"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fase 3: Windows 10 Enterprise
 
 ![](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
-Microsoft Enterprise 365 include Enterprise 10 Windows, che offre gli strumenti per eseguire più operazioni e gestione della sicurezza. Windows 10 Enterprise:
+Microsoft 365 Enterprise include Windows 10 Enterprise, che offre gli strumenti per fare di più e mantenere la sicurezza. Windows 10 Enterprise:
 
-- **È integrato per semplicità** - cablaggio le potenzialità del cloud per contribuire a ridurre la complessità della gestione oggi 's moderno IT dispositivo ambiente di qualsiasi dimensione.
-- **Con protezione intelligente** - è la versione di Windows più sicura mai, con protezione intelligente funzionalità che sono progettate per collaborare in modo migliore proteggere l'organizzazione.
-- **Consente il lavoro del team e creatività** - sbloccata creatività il lavoro del team per fornire più produttivi possono verificarsi e che sia gli utenti che verrà IT AMO.
+- **È integrato per semplicità** : sfrutta la potenza del cloud per contribuire a ridurre la complessità della gestione dell'ambiente dei dispositivi IT moderni di oggi, indipendentemente dalle dimensioni.
+- **Sicurezza intelligente** : è la versione più sicura di Windows mai, con funzionalità di sicurezza intelligenti progettate per collaborare per una migliore protezione dell'organizzazione.
+- **Consente la creatività** e il lavoro di squadra: Sblocca la creatività e il lavoro di squadra per offrire un'esperienza più produttiva che sia gli utenti che lo ameranno.
 
-È necessario comprendere i diversi modi, è possibile distribuire il sistema operativo Windows 10 e scegliere quella più appropriata per l'organizzazione. A seconda dell'abbonamento Microsoft 365 Enterprise, sono disponibili anche Windows 10 servizi e funzionalità di sicurezza, è necessario configurare per sfruttare al meglio Windows 10.
+È necessario comprendere i diversi modi in cui è possibile distribuire il sistema operativo Windows 10 e scegliere quello giusto per la propria organizzazione. A seconda dell'abbonamento a Microsoft 365 Enterprise, esistono anche servizi e funzionalità di sicurezza di Windows 10 che è necessario configurare per ottenere il massimo da Windows 10.
 
-Windows 10 consente gli scenari aziendali strategiche 365 Microsoft Enterprise:
+Windows 10 consente di abilitare questi scenari aziendali strategici per Microsoft 365 Enterprise:
 
 - Sfruttare le conoscenze e competenze collettive consentendo alle persone di trovare, condividere ed elaborare file, informazioni e idee all'interno dell'organizzazione
 - Lavorare ovunque e in qualsiasi momento in modo sicuro attraverso il proprio dispositivo, per ottenere il massimo risultato pur mantenendo flessibile lo stile di lavoro
 - Fornire sicurezza, controlli e visibilità, offrendo conformità verificata nel settore agli standard globali
 - Proteggere le informazioni e ridurre il rischio di perdita di dati
-- Rileva e proteggendo report minacce esterne - Monitor e analizzare l'attività per rispondere immediatamente per garantire la sicurezza dell'organizzazione
-- Proteggere gli utenti e i relativi account
+- Rilevare e proteggere dalle minacce esterne: monitorare, segnalare e analizzare le attività per rispondere prontamente per garantire la sicurezza organizzativa
+- Proteggi gli utenti e i loro account
 - Supportare l'organizzazione con privacy e conformità avanzate per soddisfare il regolamento generale sulla protezione dei dati (GDPR)
 - Restare sempre aggiornati sui propri dispositivi e software desktop, riducendo i rischi per la sicurezza e ottimizzando l'efficienza IT
 
@@ -47,44 +48,44 @@ Per ulteriori informazioni, vedere [Trasformazione digitale tramite Microsoft 36
 
 ## <a name="windows-10-deployment"></a>Distribuzione di Windows 10
 
-Esistono diversi modi, è possibile distribuire Enterprise 10 Windows per l'organizzazione. In questo caso, verrà posta attenzione su come configurare e distribuire un'immagine Windows 10 organizzazione tramite questi scenari di distribuzione moderno.
+È possibile distribuire Windows 10 Enterprise per l'organizzazione in diversi modi. Di seguito viene illustrato come configurare e distribuire un'immagine di Windows 10 Enterprise tramite questi scenari di distribuzione moderni.
 
-| Scenario di distribuzione | Quando utilizzarla |
+| Scenario di distribuzione | Quando usarlo |
 |:--- |:--- |
-| [Utilizzo di System Center Configuration Manager come un aggiornamento sul posto](windows10-deploy-inplaceupgrade.md) | Selezionare questa opzione se è necessario eseguire l'aggiornamento di Windows 7 o Windows 8.1 computer alla <a href="https://aka.ms/windows-10-release-information" target="_blank">versione corrente</a> di Windows 10 Enterprise e i computer attualmente gestiti con <a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager (branch corrente)</a>. |
-| [Utilizzo di Windows Autopilot](windows10-deploy-autopilot.md) | Selezionare questa opzione se si sta impostando un nuovo computer di Windows con Windows 10 Enterprise 1703 o versione successiva pre. Gli utenti finali verrà avviare il programma di installazione della configurazione desiderata immettendo il proprio lavoro o scuola le credenziali dell'account. |
+| [Utilizzo di System Center Configuration Manager come aggiornamento sul posto](windows10-deploy-inplaceupgrade.md) | Selezionare questa opzione se è necessario aggiornare i computer Windows 7 o Windows 8,1 alla <a href="https://aka.ms/windows-10-release-information" target="_blank">versione corrente</a> di Windows 10 Enterprise e i computer sono attualmente gestiti con <a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager (Current Branch)</a>. |
+| [Utilizzo di Windows Autopilot](windows10-deploy-autopilot.md) | Selezionare questa opzione se si stanno configurando nuovi computer Windows che dispongono di Windows 10 Enterprise, versione 1703 o successiva preinstallata. Gli utenti finali avvierà il programma di installazione utilizzando la configurazione desiderata immettendo le proprie credenziali dell'account aziendale o dell'Istituto di istruzione. |
 
-Se questi scenari di distribuzione si adatta alle esigenze dell'organizzazione, è possibile conoscere altri scenari e acquisire familiarità con le funzionalità e restrizioni di ciascun negli [scenari di distribuzione di Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). È inoltre possibile <a href="https://aka.ms/planforwin10deployment" target="_blank">pianificare la distribuzione di Windows 10</a> autonomamente.
+Se questi scenari di distribuzione non soddisfano le esigenze dell'organizzazione, è possibile conoscere altri scenari e comprendere le funzionalità e le limitazioni di ognuno negli [scenari di distribuzione di Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). È inoltre possibile <a href="https://aka.ms/planforwin10deployment" target="_blank">pianificare la distribuzione di Windows 10</a> autonomamente.
 
-È possibile trovare ulteriori informazioni Windows 10 con questi articoli:
+Per ulteriori informazioni su Windows 10, vedere gli articoli seguenti:
 
 - [Pagina del prodotto Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise)
 - [Windows 10](https://docs.microsoft.com/windows/windows-10)
 - [Distribuire e aggiornare Windows 10](https://docs.microsoft.com/windows/deployment/)
 
 
-## <a name="additional-services-and-features"></a>Funzionalità e i servizi aggiuntivi
-Durante la distribuzione di Windows 10 Enterprise, è possibile aggiungere questi servizi aggiuntivi e funzionalità.
+## <a name="additional-services-and-features"></a>Servizi e funzionalità aggiuntivi
+Nell'ambito della distribuzione di Windows 10 Enterprise, è possibile aggiungere questi servizi e funzionalità aggiuntivi.
 
 ### <a name="windows-analytics"></a>Windows Analytics
 
-Windows utilizza i dati di diagnostica per fornire informazioni avanzate e pronti per interventi che consentono di ottenere informazioni complete su efficienza operativa e l'integrità dei dispositivi Windows 10 nell'ambiente in uso.
+Windows utilizza i dati di diagnostica per fornire informazioni dettagliate, utili per ottenere approfondimenti sull'efficienza operativa e sull'integrità dei dispositivi Windows 10 nel proprio ambiente.
 
-* Aggiornare lo stato di preparazione - preparazione dell'aggiornamento consentono di spostare in Windows 10 ed essere sempre aggiornati con gli aggiornamenti nuove funzionalità di 10 Windows. 
-* Compatibilità di aggiornamento - aggiornamento conformità è prevista per l'amministratore IT che necessita di ottenere una visione globale di tutti i dispositivi Windows 10, senza requisiti di infrastruttura aggiuntiva.
-* Dispositivo integrità - è possibile utilizzare dispositivi integrità per rilevare in modo proattivo e correggere i problemi corretti per l'utente finale.
+* Preparazione per l'aggiornamento: la preparazione all'aggiornamento consente di passare a Windows 10 e di rimanere aggiornati con i nuovi aggiornamenti delle funzionalità di Windows 10. 
+* Update Compliance-la conformità degli aggiornamenti è destinata all'amministratore IT che desidera ottenere una visione olistica di tutti i dispositivi Windows 10, senza ulteriori requisiti di infrastruttura.
+* Integrità del dispositivo: è possibile utilizzare l'integrità del dispositivo per rilevare e correggere in modo proattivo i problemi di impatto dell'utente finale.
 
-Per ulteriori informazioni, vedere [Windows Analitica Overview](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview) .
+Per ulteriori informazioni, vedere [Panoramica di Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview) .
 
-### <a name="windows-security"></a>Protezione di Windows
+### <a name="windows-security"></a>Sicurezza di Windows
 
-Windows 10 offre funzionalità per garantire la protezione contro le minacce, Guida proteggere i dispositivi e Guida per il controllo di accesso. Con Windows 10, si ottengono le funzioni critico per la protezione che impedisce la data di inizio del diritto dell'utente dispositivo. Microsoft 365 E3 aggiunge funzionalità di sicurezza, ad esempio Windows Hello for Business, Windows Defender applicazione controllo e la protezione delle informazioni di Windows. Con Microsoft 365 E5, si riceve tutti la protezione di Microsoft 365 E3 e funzionalità di sicurezza basato su cloud di protezione di Windows Defender avanzate rischio. 
+Windows 10 fornisce funzionalità che consentono di proteggere le minacce, la protezione dei dispositivi e la guida per il controllo di accesso. Con Windows 10, è possibile ottenere funzionalità di sicurezza critiche che proteggono il dispositivo fin dall'inizio. Microsoft 365 E3 aggiunge funzionalità di sicurezza quali Windows Hello for business, Windows Defender Application Control e Windows Information Protection. Con Microsoft 365 E5, è possibile ottenere tutta la protezione da Microsoft 365 E3 Security Plus cloud-based Security features e Windows Defender Advanced Threat Protection. 
 
-Per ulteriori informazioni sulle caratteristiche di protezione che si ottiene con Windows 10 Enterprise e get indicazioni su come è possibile distribuire, gestire, configurare e risoluzione dei problemi tre funzionalità principali ecurity, vedere [passaggio 5: funzionalità di sicurezza di distribuire Windows 10 Enterprise](windows10-enable-security-features.md).
+Per ulteriori informazioni sulle funzionalità di sicurezza disponibili con Windows 10 Enterprise e su come è possibile distribuire, gestire, configurare e risolvere i problemi relativi a tre funzionalità di ecurity principali, vedere [passaggio 5: distribuire le funzionalità di sicurezza di Windows 10 Enterprise](windows10-enable-security-features.md).
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
-Per informazioni su come la società pianificate per, distribuiti ed è la gestione degli aggiornamenti per Windows 10 comparsa all'interno di Microsoft, vedere:
+Per sbirciare all'interno di Microsoft e scoprire in che modo la società ha pianificato, distribuito e gestisce gli aggiornamenti per Windows 10, vedere:
 
 - [Preparazione dell'organizzazione per una distribuzione semplice di Windows 10](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
 - [Adozione di Windows as a Service in Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
@@ -96,7 +97,7 @@ Per informazioni su come la società pianificate per, distribuiti ed è la gesti
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Come ha agito Contoso con Microsoft 365 Enterprise
 
-Vedere modalità di Contoso Corporation, business multinazionale fittizia ma rappresentative, [distribuito Windows 10 Enterprise](contoso-win10.md).
+Vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, ha [distribuito Windows 10 Enterprise](contoso-win10.md).
 
 ![](./media/contoso-overview/contoso-icon.png)
 
@@ -104,4 +105,4 @@ Vedere modalità di Contoso Corporation, business multinazionale fittizia ma rap
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Preparazione dell'organizzazione per Windows 10 Enterprise](windows10-prepare-your-org.md) |
+|![](./media/stepnumbers/Step1.png)| [Preparare l'organizzazione per Windows 10 Enterprise](windows10-prepare-your-org.md) |

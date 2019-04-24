@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare la risoluzione DNS per migliorare le prestazioni.
-ms.openlocfilehash: 9ccd5c477b4aeda8e7dcf482cc09c8a357f19f40
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 6f276bd1fd90b8dee76a0b0d350f256956ded412
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291131"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>Passaggio 2: configurare le connessioni Internet locali per ogni sede
 
@@ -34,7 +34,7 @@ La rete Microsoft Global Network include server front-end per il set di servizi 
 
 Per indirizzare una richiesta client al server front-end più vicino a livello geografico, i server DNS di Microsoft usano le query DNS corrispondenti alla richiesta di connessione iniziale del client. Pertanto, per la latenza di rete inferiore:
 
-- Tutti gli uffici dell'organizzazione devvono avere connessioni Internet locali per il traffico di rete della categoria [Ottimizzazione](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories).
+- Tutte le sedi dell'organizzazione devvono avere connessioni Internet locali per il traffico di rete della categoria [Ottimizzazione](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories).
 - Ogni connessione Internet locale deve usare un server DNS locale per il traffico Internet in uscita da tale posizione.
 
 Per ulteriori informazioni, vedere [Uscire dalle connessione di rete a livello locale](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally). 

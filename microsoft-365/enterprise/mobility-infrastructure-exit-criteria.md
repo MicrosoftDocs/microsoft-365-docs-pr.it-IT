@@ -1,32 +1,32 @@
 ---
-title: Criteri di uscita del dispositivo mobile management dell'infrastruttura
-description: Microsoft Enterprise 365 include la gestione di dispositivi mobili utilizzando Microsoft Intune. Esaminare i requisiti e prerequisiti, impostare Intune mediante le risorse di Azure Active Directory, registrare iOS, Mac OS, Android e Windows dispositivi, distribuire apps, creare un profilo di configurazione, utilizzare criteri di conformità e consentire l'accesso condizionale per dispositivi mobili gestione dei dispositivi con Microsoft 365 Enterprise.
-keywords: Documentazione Microsoft 365 Microsoft 365 Microsoft 365 Enterprise, la gestione dei dispositivi mobili, Intune
+title: Criteri uscita dell'infrastruttura per la gestione dei dispositivi mobili
+description: Microsoft 365 Enterprise include la gestione dei dispositivi mobili tramite Microsoft Intune. Esaminare i requisiti e i prerequisiti, configurare Intune utilizzando la risorsa di Azure Active Directory, registrare i dispositivi iOS, macOS, Android e Windows, distribuire le app, creare un profilo di configurazione, utilizzare criteri di conformità e abilitare l'accesso condizionale per dispositivi mobili gestione dei dispositivi con Microsoft 365 Enterprise.
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 Documentation, gestione dei dispositivi mobili, Intune
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/10/2018
+ms.date: 03/05/2019
 ms.topic: article
-audience: ITPro
 ms.prod: microsoft-365-enterprise
 ms.service: ''
 ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
+audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: b511052698f42a07df5fc25aeaad7fc7f00c2a6e
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.openlocfilehash: 14f216fe352d9108fe69028731f4c94dfb9d19f7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291233"
 ---
-# <a name="mobile-device-management-infrastructure-exit-criteria"></a>Criteri di uscita del dispositivo mobile management dell'infrastruttura
+# <a name="mobile-device-management-infrastructure-exit-criteria"></a>Criteri uscita dell'infrastruttura per la gestione dei dispositivi mobili
 
 ![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
-*Ciò vale per le versioni di Microsoft Enterprise 365 E3 ed E5*
+*Ciò si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-Prima di procedere alla fase successiva del processo di distribuzione, assicurarsi che la configurazione soddisfi i requisiti seguenti per l'infrastruttura di gestione di dispositivi mobili.
+Verificare che la configurazione soddisfi i seguenti requisiti per l'infrastruttura di gestione dei dispositivi mobili.
 
 - Intune è configurato, insieme alla creazione di utenti e gruppi di Azure AD per applicare le regole dell'organizzazione per i dispositivi.
 - Sono stati registrati dispositivi in Intune in modo che i dispositivi possano ricevere i criteri creati dall'utente.
@@ -34,8 +34,12 @@ Prima di procedere alla fase successiva del processo di distribuzione, assicurar
 - Le funzionalità e le impostazioni sono configurate e applicate ai dispositivi tramite gli utenti e i gruppi di Azure AD creati dall'utente; tra le altre cose, sono incluse l'attivazione dell'antivirus e la limitazione di app specifiche.
 - Sono presenti criteri di conformità che richiedono un firewall o una lunghezza della password specifici su un dispositivo. Se i dispositivi non sono conformi, l'accesso condizionato blocca l'accesso ai dati dell'organizzazione.
 
-## <a name="next-phase"></a>Fase successiva
+
+
+## <a name="results-and-next-steps"></a>Risultati e passaggi successivi
+
+I dispositivi vengono registrati in Intune e configurati con i criteri corretti.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| La fase successiva del processo di distribuzione end-to-end per Microsoft 365 Enterprise è [la protezione delle informazioni](infoprotect-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| Se si seguono le fasi per la distribuzione end-to-end di Microsoft 365 Enterprise, la fase successiva è la [protezione delle informazioni](infoprotect-infrastructure.md). |

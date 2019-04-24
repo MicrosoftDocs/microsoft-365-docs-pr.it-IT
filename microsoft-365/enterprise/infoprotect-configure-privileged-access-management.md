@@ -3,22 +3,22 @@ title: 'Passaggio 4: configurare la gestione degli accessi con privilegi per Off
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 9/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365-security-compliance
 ms.custom: ''
 description: Comprendere e configurare la gestione degli accessi con privilegi per Office 365.
-ms.openlocfilehash: 0de9e5cd602a48f31f48618026b0564146a57d73
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
-ms.translationtype: HT
+ms.openlocfilehash: 297d8e042c2a22c93b4ea566081d258e7ca0a5ab
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286949"
 ---
 # <a name="step-4-configure-privileged-access-management-for-office-365"></a>Passaggio 4: configurare la gestione degli accessi con privilegi per Office 365
 

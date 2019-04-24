@@ -1,56 +1,57 @@
 ---
-title: Ordine dispositivi in Microsoft Desktop gestiti
+title: Ordinare i dispositivi in Microsoft Managed Desktop
 description: ''
-keywords: Servizio Microsoft Desktop gestiti, Microsoft 365, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/25/2018
-ms.openlocfilehash: 75098621f505513f6855b08e9cd9816992e95a86
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: 88efccaf3970f58281338e436edbb7110df2a7de
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289496"
 ---
-# <a name="order-microsoft-managed-desktop-devices"></a>Dispositivi Desktop gestiti Microsoft ordine
+# <a name="order-microsoft-managed-desktop-devices"></a>Ordinare i dispositivi Microsoft Managed Desktop
 
-Microsoft è attualmente sperimentazione un'esperienza acquisto su scala ridotta negli Stati Uniti (US), come descritto di seguito. Se si è di fuori degli Stati Uniti o l'ordine di dispositivi è per i dispositivi più di 50, è consigliabile utilizzo di uno dei partner di dispositivi approvati. È possibile raggiungere al contatto di account Microsoft per ulteriori informazioni sull'impostazione di una relazione del dispositivo.
+Microsoft sta attualmente pilotando un'esperienza di shopping su scala ridotta negli Stati Uniti (Stati Uniti), come descritto di seguito. Se si è al di fuori degli Stati Uniti o l'ordine del dispositivo è per più di 50 dispositivi, è consigliabile collaborare con uno dei partner del dispositivo approvati. Per ulteriori informazioni sulla configurazione di una partnership tra dispositivi, è possibile raggiungere il contatto con il proprio account Microsoft.
 
-Come deve essere implementata Ordina dispositivi per Desktop gestiti Microsoft?
+Come si devono ordinare i dispositivi per Microsoft Managed Desktop?
 
   |   
  --- | ---
-Da Stati Uniti ordinamento dispositivi inferiore a 50 | [Ordine dal portale di amministrazione di Desktop gestiti Microsoft](https://aka.ms/mmdportal)
-Di fuori degli Stati Uniti | Rivolgersi al team di Account Microsoft
-Ordinamento dei dispositivi più di 50 | Rivolgersi al team di Account Microsoft
+Dall'interno degli Stati Uniti, ordinare meno di 50 dispositivi | [Ordine dal portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mmdportal)
+Al di fuori degli Stati Uniti | Contattare il team dell'account Microsoft
+Ordinare più di 50 dispositivi | Contattare il team dell'account Microsoft
 
-## <a name="order-devices"></a>Ordinare dispositivi
-Utilizzare queste istruzioni per i dispositivi ordine negli Stati Uniti. Iniziare nel **portale di amministrazione di Desktop gestiti**Microsoft, ma sarà effettuare gli acquisti tramite **Microsoft Store for Business**. 
+## <a name="order-devices"></a>Ordinare i dispositivi
+Attenersi alle istruzioni riportate di seguito per ordinare i dispositivi negli Stati Uniti. Si inizierà dal portale di **Amministrazione**di Microsoft Managed Desktop, ma si effettuerà l'acquisto tramite **Microsoft Store for business**. 
 
- **Per i dispositivi ordine**
- 1. Accedere al [portale di amministrazione di Desktop gestiti Microsoft](https://aka.ms/mmdportal)
- 2. Informazioni introduttive in ordine di dispositivi, selezionare **Open Microsoft Store for Business per i dispositivi ordine**.
+ **Per ordinare i dispositivi**
+ 1. Accedere al [portale di amministrazione di Microsoft managEd desktop](https://aka.ms/mmdportal)
+ 2. In Guida introduttiva, in dispositivi di ordinamento selezionare **Apri Microsoft Store for business per ordinare i dispositivi**.
  
-    ![Guida introduttiva, ordinare periferiche](images/mmd-order-devices.png)
+    ![Guida introduttiva, ordinare i dispositivi](images/mmd-order-devices.png)
     
-3. In Microsoft Store for Business, è possibile esaminare informazioni su Microsoft Desktop gestiti e una tabella di confronto dei dispositivi disponibili. Fare clic su **Acquista** per scegliere un dispositivo. 
+3. In Microsoft Store for business, è possibile consultare le informazioni su Microsoft Managed Desktop e un grafico di confronto dei dispositivi disponibili. Fare clic su **Acquista** per scegliere un dispositivo. 
 
-    ![Store for Business, acquisto](images/msfb-buy.png)
+    ![Archivio per le aziende, acquistare](images/msfb-buy.png)
 
-4. In **Selezionare il dispositivo**, selezionare il dispositivo desiderato. 
+4. Seleziona **** il dispositivo desiderato. 
 
-    ![Store for Business, seleziona dispositivo](images/msfb-pick-device.png)
+    ![Archivio per le aziende, scegliere il dispositivo](images/msfb-pick-device.png)
 
-5. In **scegliere le funzionalità del dispositivo**, selezionare un **Servizio di pianificazione**, digitare il numero di dispositivi e quindi fare clic su **Aggiungi al carrello**.
+5. In **Scegli caratteristiche dispositivo**, selezionare un **piano di servizio**, digitare il numero di dispositivi, quindi fare clic su **Aggiungi al carrello**.
 
-6. Esaminare carrello e quindi selezionare **estrazione**o **aggiungere un altro dispositivo**. 
+6. Esaminare il carrello, quindi selezionare **Estrai**o **Aggiungi un altro dispositivo**. 
 
-7. Continuare il processo di estrazione, esaminare i prezzi, accetta le condizioni di licenze e selezionare **accesso e l'ordine di posizione**. 
+7. Continuare il processo di checkout, esaminare i prezzi, accettare le condizioni di licenza e selezionare **sign and Place Order**. 
 
-I dispositivi inclusi in genere all'interno di tre giorni. 
+I dispositivi vengono in genere forniti entro tre giorni. 
 
-Al termine ordinamento dispositivi, è possibile controllare i dispositivi che sono stati ordinati nel [portale di amministrazione di Desktop gestiti Microsoft](https://aka.ms/mmdportal). In **inventario**, selezionare **i dispositivi**. 
+Al termine dell'ordinamento dei dispositivi, è possibile controllare i dispositivi ordinati in [Microsoft managEd Desktop Admin Portal](https://aka.ms/mmdportal). In **inventario**selezionare **dispositivi**. 
 
-All'arrivano di dispositivi, distribuirli ai dipendenti. Non è disponibile impostare ulteriori o configurazione necessari. 
+Quando arrivano i dispositivi, distribuirli ai dipendenti. Non è necessario alcun set up aggiuntivo o configurazione necessaria. 
 

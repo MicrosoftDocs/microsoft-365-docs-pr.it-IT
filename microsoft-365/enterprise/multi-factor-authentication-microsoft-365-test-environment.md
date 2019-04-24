@@ -1,5 +1,5 @@
 ---
-title: Ambiente di testing di autenticazione a più fattori per la propria azienda 365 Microsoft
+title: Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,27 +8,27 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a Smartphone nell'ambiente di test Microsoft 365 aziendale.
-ms.openlocfilehash: 353f09253794670e8107e084acb3a01cd309fd60
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno Smart Phone nell'ambiente di testing di Microsoft 365 Enterprise.
+ms.openlocfilehash: 8e202936451030718c0c86601c2c621c50f78e1a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291141"
 ---
-# <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Ambiente di testing di autenticazione a più fattori per la propria azienda 365 Microsoft
+# <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 Enterprise
 
-Per un livello aggiuntivo di protezione per l'accesso a Office 365 o qualsiasi servizio o applicazione che utilizza il tenant di Azure Active Directory per l'organizzazione, è possibile abilitare l'autenticazione multifattore Azure, che richiede più di solo un nome utente e una password per verificare un account. Con l'autenticazione a più fattori, sono necessari per confermare una telefonata, digitare un codice di verifica inviato un messaggio di testo o specificare una password di app per i telefoni smart dopo aver immesso correttamente le password degli utenti. È possibile accedere solo dopo che è state soddisfatte questo secondo fattore di autenticazione. 
+Per un ulteriore livello di sicurezza per l'accesso a Office 365 o qualsiasi servizio o applicazione che utilizza il tenant di Azure AD per l'organizzazione, è possibile abilitare l'autenticazione a più fattori di Azure, che richiede più di un semplice nome utente e una password per verificare un account. Con l'autenticazione a più fattori, agli utenti viene richiesto di riconoscere una telefonata, digitare un codice di verifica inviato in un messaggio di testo oppure specificare una password per l'app negli smartphone dopo aver inserito correttamente le password. L'accesso è consentito solo dopo che un secondo fattore di autenticazione viene soddisfatto. 
   
-In questo articolo viene descritto come attivare e testare l'autenticazione basata su messaggi di testo per un account specifico.
+In questo articolo viene descritto come abilitare e testare l'autenticazione basata su messaggi di testo per un account specifico.
   
-Esistono due fasi di configurazione dell'autenticazione a più fattori per un account nell'ambiente di test Microsoft 365 aziendale:
+Sono disponibili due fasi per configurare l'autenticazione a più fattori per un account nell'ambiente di testing di Microsoft 365 Enterprise:
   
-1. Creare l'ambiente di test Microsoft 365 Enterprise.
+1. Creare l'ambiente di testing Microsoft 365 Enterprise.
     
 2. Abilitare e testare l'autenticazione a più fattori per l'account User 2.
 
@@ -37,34 +37,34 @@ Esistono due fasi di configurazione dell'autenticazione a più fattori per un ac
 > [!TIP]
 > Fare clic [qui](https://aka.ms/m365etlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Preparare l'ambiente di testing Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 Enterprise
 
-Se si desidera testare l'autenticazione a più fattori in un modo semplice con i requisiti minimi, seguire le istruzioni di [configurazione di base semplificata](lightweight-base-configuration-microsoft-365-enterprise.md).
+Se si desidera testare l'autenticazione a più fattori in modo semplice con i requisiti minimi, seguire le istruzioni contenute in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Se si desidera testare l'autenticazione a più fattori in un'azienda simulata, seguire le istruzioni [nell'autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
+Se si desidera testare l'autenticazione a più fattori in un'azienda simulata, seguire le istruzioni riportate nell' [autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Test dell'autenticazione a più fattori non richiede l'ambiente di testing simulato enterprise, che include una rete intranet simulata connessione a Internet e la sincronizzazione delle directory per una foresta Windows Server Active Directory. Viene fornito qui come un'opzione in modo che sia possibile testare l'autenticazione a più fattori e sperimentare in un ambiente che rappresenta una tipica organizzazione. 
+> Se si verifica l'autenticazione a più fattori, non è necessario l'ambiente di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). Questo test viene fornito qui come opzione in modo per consentire di testare l’autenticazione a più fattori e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>Fase 2: Abilitare e testare l'autenticazione a più fattori per l'account User 2
 
 Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel modo seguente:
   
-1. Aprire un'istanza privata separata del browser, accedere al portale di Office ([https://office.com](https://office.com)) e quindi accedere con l'account amministratore globale.
+1. Aprire un'istanza separata, privata del browser, accedere al portale di Office ([https://office.com](https://office.com)) e quindi accedere con l'account di amministratore globale.
     
 2. Dalla pagina principale del portale, fare clic su **Admin**.
     
 3. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     
-4. Nel riquadro utenti attivi, fare clic su **più > configurazione di autenticazione a più fattori**.
+4. Nel riquadro utenti attivi, fare clic su **altre > configurazione di autenticazione a più fattori**.
     
-5. Nell'elenco, selezionare l'account **utente 2** .
+5. Nell'elenco, selezionare l'account **User 2** .
     
 6. Nella sezione **User 2**, sotto **Azioni rapide**, fare clic su **Abilita**.
     
 7. Nella finestra di dialogo **Informazioni sull'abilitazione dell'autenticazione più fattori** fare clic su **Abilita Multi-Factor Auth**.
     
-8. Nella finestra di dialogo **Aggiorna completata** fare clic su **Chiudi**.
+8. Nella finestra di dialogo **aggiornamenti con esito positivo** fare clic su **Chiudi**.
     
 9. Nella scheda **Microsoft Office Home** fare clic sull'icona dell'account utente in alto a destra, quindi fare clic su **Disconnetti**.
     
@@ -72,11 +72,11 @@ Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel mo
    
 Completare la configurazione dell'account User 2 per utilizzare un messaggio di testo per la convalida e testarla con questa procedura:
   
-1. Aprire una nuova istanza del browser privata.
+1. Aprire una nuova istanza privata del browser.
     
-2. Accedere al portale di Office ([https://office.com](https://office.com)) e accedere con l'account utente 2 (user2 @\<nome organizzazione >. onmicrosoft.com) e una password.
+2. Accedere al portale di Office ([https://office.com](https://office.com)) ed eseguire l'accesso con l'account User 2 (User2\<@ Organization name>. onmicrosoft. com) e la password.
     
-3. Dopo l'accesso, viene chiesto di configurare l'account per ulteriori informazioni. Fare clic su **Avanti**.
+3. Dopo aver eseguito l'accesso, viene richiesto di configurare l'account per ulteriori informazioni. Fare clic su **Avanti**.
     
 4. Nella pagina **Verifica aggiuntiva di sicurezza**:
     
@@ -84,7 +84,7 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
    - Digitare il numero di telefono dello smartphone che riceverà i messaggi di testo.
     
-   - Nel **metodo**, fare clic su **Invia automaticamente un codice di un messaggio**.
+   - In **Metodo**, fare clic su **Inviami un codice tramite messaggio di testo**.
     
 5. Fare clic su **Avanti**.
     
@@ -94,10 +94,10 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
 8. Se è la prima volta che si accede con l'account User 2, viene richiesto di modificare la password. Digitare la password originale e una nuova password due volte, quindi fare clic su **Aggiornare la password ed eseguire l'accesso**. Annotare nome e password in una posizione sicura.
     
-    È consigliabile vedere del portale di Office per l'utente 2 nella scheda **Home page di Microsoft Office** del browser.
+    Verrà visualizzato il portale di Office per l'utente 2 nella scheda **Microsoft Office Home** del browser.
 
 
-Nella fase di identità per informazioni e collegamenti per distribuire l'autenticazione a più fattori nell'ambiente di produzione, vedere la sezione [configurare l'autenticazione a più fattori](identity-multi-factor-authentication.md) .
+Per informazioni e collegamenti per la distribuzione dell'autenticazione a più fattori in produzione, vedere la procedura di [configurazione dell'autenticazione](identity-multi-factor-authentication.md#identity-mfa) a più fattori nella fase Identity.
     
 ## <a name="next-step"></a>Passaggio successivo
 

@@ -7,7 +7,10 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -18,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: 'Informazioni su come creare, modificare, eliminare o rimuovere i profili AutoPilot. '
-ms.openlocfilehash: 4658a27e5f2c64a52f8a7d08b3fc13df5e239dc3
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: 'Informazioni su come creare, modificare, eliminare o rimuovere profili Autopilot. '
+ms.openlocfilehash: 85fc897b2f428afae8d55feeb577021adaa30f72
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32277127"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Creare e modificare profili AutoPilot
 
@@ -32,11 +35,9 @@ ms.locfileid: "26868583"
 
 Un profilo si applica a un dispositivo o a un gruppo di dispositivi.
   
-1. Nell'interfaccia di amministrazione di Microsoft 365 Business scegliere **Distribuisci Windows con AutoPilot** nella scheda **Azioni dispositivo**. 
-    
-    ![On the Device actions card, choose Deploy Windows with Autopilot.](media/160d5c2a-11a8-48f9-a8aa-70f084b85448.png)
+1. nell'interfaccia di amministrazione di Microsoft 365 Business, **** \> scegliere devices autopilot. ****
   
-2. Nella pagina **Prepara Windows** scegliere la scheda **Profili** \> **Crea profilo**.
+2. Nella pagina **Autopilot** scegliere la \> scheda **profili** **creare profilo**.
     
 3. Nella pagina **Crea profilo** immettere un nome per il profilo che ne faciliti l'identificazione, ad esempio Marketing, quindi attivare l'impostazione desiderata (per altre informazioni, vedere [Informazioni sulle impostazioni del profilo AutoPilot](autopilot-profile-settings.md)) e infine scegliere **Salva**.
     

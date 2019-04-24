@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
 - Strat_O365_Enterprise
+- M365-subscription-management
 ms.custom: ''
 description: Modalità di adozione di Microsoft 365 Enterprise da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale.
-ms.openlocfilehash: ecced1ef542de4251d85a9329e80d8fa637e5558
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 559e1af8a344fea2863c528eeaa99de718d2eeed
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276673"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise per Contoso Corporation
 

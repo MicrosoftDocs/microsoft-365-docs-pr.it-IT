@@ -4,14 +4,17 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - ZTDProfileSettings
 - O365E_ZTDProfileSettings
 - BCS365_ZTDProfileSettings
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Adm_O365
+ms.collection:
+- Adm_O365
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -22,26 +25,26 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: Profili autoPilot consentono di controllare la modalità Windows Ottiene installazione nei dispositivi utente. I profili contengono predefinito e impostazioni facoltative come annullare l'installazione Cortana.
-ms.openlocfilehash: 5440286f1363780c87ab60514584c4addfeea0b2
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: I profili Autopilot consentono di controllare il modo in cui viene installato Windows nei dispositivi utente. I profili contengono impostazioni predefinite e facoltative come l'installazione di Skip Cortana.
+ms.openlocfilehash: d43a15e5f3dc83596b5c23dd0ceb416b24810298
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276942"
 ---
 # <a name="about-autopilot-profile-settings"></a>Informazioni sulle impostazioni dei profili AutoPilot
 
 ## <a name="autopilot-profile-settings"></a>Impostazioni dei profili AutoPilot
 
-È possibile controllare come Windows Ottiene installato nei dispositivi utente mediante i profili AutoPilot. I profili contengono le impostazioni seguenti.
+È possibile controllare la modalità di installazione di Windows nei dispositivi utente utilizzando i profili Autopilot. I profili contengono le impostazioni seguenti.
   
- **AutoPilot le funzionalità predefinite (obbligatoria) che vengono impostate automaticamente:**
+ **Funzionalità predefinite del pilota automatico (obbligatorio) impostate automaticamente:**
   
 |**Impostazione**|**Descrizione**|
 |:-----|:-----|
-|Ignora Cortana, OneDrive e la registrazione OEM  <br/> |Ignora l'installazione delle App consumer come Cortana e OneDrive personale. Utente del dispositivo può installare questi successive purché è un amministratore locale nel dispositivo. Registrazione produttore originale viene ignorata in quanto il dispositivo verrà gestito da Microsoft 365 Business.  <br/> |
-|Esperienza di accesso con il tuo marchio aziendale  <br/> |Se la società dispone di una [personalizzazione in aggiunta all'azienda a Office 365 pagina di accesso](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), l'utente dispositivo otterrà tale esperienza durante l'accesso.  <br/> |
+|Ignora Cortana, OneDrive e la registrazione OEM  <br/> |Ignora l'installazione delle app consumer come Cortana e Personal OneDrive. L'utente del dispositivo potrà installarle successivamente, purché sia un amministratore locale del dispositivo. La registrazione del produttore originale viene ignorata perché il dispositivo verrà gestito da Microsoft 365 Business.  <br/> |
+|Esperienza di accesso con il tuo marchio aziendale  <br/> |Se la tua azienda ha una [pagina di accesso Aggiungi la tua azienda a Office 365](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), l'utente del dispositivo otterrà quell'esperienza al momento dell'accesso.  <br/> |
 |Registrazione automatica in MDM con account AAD configurati.  <br/> |L'identità dell'utente verrà gestita da Azure Active Directory e l'utente eseguirà l'accesso a Windows e Office 365 con le proprie credenziali di Microsoft 365 Business.  <br/> |
    
  **Impostazioni facoltative:**

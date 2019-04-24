@@ -3,106 +3,108 @@ title: Gestione degli accessi con privilegi per l'ambiente di testing di Microso
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 09/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+- M365-security-compliance
 ms.custom: Ent_TLGs
-description: Utilizzare questa guida dei laboratori di testing per abilitare la gestione degli accessi privilegiato l'ambiente di testing Microsoft 365 Enterprise.
-ms.openlocfilehash: 5f1a416a12171504af110ec62b9a7882143263e6
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Utilizzare questa guida del laboratorio di testing per abilitare la gestione degli accessi con privilegi nell'ambiente di testing Microsoft 365 Enterprise.
+ms.openlocfilehash: 9cac4f941ba3eb45bfc2bf79075ba22515a589b9
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290771"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365 Enterprise
 
-Con le istruzioni riportate in questo articolo, configurare la gestione dei privilegi di accesso per aumentare la protezione dell'ambiente di test Microsoft 365 Enterprise.
+Con le istruzioni riportate in questo articolo, è possibile configurare la gestione degli accessi con privilegi per aumentare la sicurezza nell'ambiente di testing Microsoft 365 Enterprise.
 
 ![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Fare clic [qui](https://aka.ms/m365etlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Preparare l'ambiente di testing Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 Enterprise
 
-Se si desidera configurare la gestione dei privilegi di accesso in un modo semplice con i requisiti minimi, seguire le istruzioni di [configurazione di base semplificata](lightweight-base-configuration-microsoft-365-enterprise.md).
+Se si desidera configurare la gestione degli accessi con privilegi in modo semplice con i requisiti minimi, seguire le istruzioni contenute in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Se si desidera configurare l'accesso con privilegi management in un'azienda simulata, seguire le istruzioni [nell'autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
+Se si desidera configurare la gestione degli accessi con privilegi in un'azienda simulata, seguire le istruzioni riportate nell' [autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Test di gestione con privilegi di accesso non richiede l'ambiente di testing simulato enterprise, che include una rete intranet simulata connessione a Internet e la sincronizzazione delle directory per una foresta Windows Server Active Directory. Di seguito viene fornito come opzione in modo che è possibile testare con privilegi accedere a gestione e sperimentare in un ambiente che rappresenta una tipica organizzazione. 
+> Se si verifica la gestione degli accessi con privilegi non è necessario l'ambiente di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di servizi di dominio Active Directory (AD DS). Viene fornito come opzione in modo che sia possibile testare la gestione degli accessi con privilegi e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
 
-## <a name="phase-2-configure-privileged-access-management"></a>Fase 2: Configurare la gestione dei privilegi di accesso
+## <a name="phase-2-configure-privileged-access-management"></a>Fase 2: configurare la gestione degli accessi con privilegi
 
-In questa fase, configurare un gruppo di responsabili approvazione e abilitare la gestione dell'accesso con privilegi per l'ambiente di testing Microsoft 365 Enterprise. Per ulteriori dettagli e una panoramica dei privilegi di accesso gestione, vedere [accesso privilegiato management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+In questa fase, è possibile configurare un gruppo responsabili approvazione e abilitare la gestione degli accessi con privilegi per l'ambiente di testing Microsoft 365 Enterprise. Per ulteriori informazioni e una panoramica della gestione degli accessi con privilegi, vedere [gestione degli accessi con privilegi in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
-Eseguire la procedura seguente per configurare e utilizzare i privilegi di accesso nella propria organizzazione Office 365:
+Seguire questa procedura per configurare e usare l'accesso privilegiato nell'organizzazione di Office 365:
 
-- [Passaggio 1: Creare il gruppo del revisore](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-1---create-an-approvers-group)
+- [Passaggio 1: creare un gruppo del responsabile approvazione](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-1---create-an-approvers-group)
 
-    Prima di iniziare a utilizzare accesso privilegi, determinare chi avrà autorità approvazione delle richieste in ingresso per l'accesso alle attività con privilegi elevate e privilegiata. Qualsiasi utente che fa parte del gruppo dei responsabili approvazione saranno in grado di approvare le richieste di accesso. Questa opzione è attivata mediante la creazione di un gruppo di protezione abilitati alla posta elettronica in Office 365. Creare un nuovo gruppo di sicurezza denominato "Revisori con privilegi di accesso" nell'ambiente di testing e aggiungere il "utente 3" creato in precedenza nei passaggi Guida laboratorio di testing precedente.
+    Prima di iniziare a utilizzare l'accesso ai privilegi, determinare chi avrà l'autorità di approvazione per le richieste in arrivo per l'accesso a attività con privilegi elevati. Qualsiasi utente che fa parte del gruppo responsabili approvazione sarà in grado di approvare le richieste di accesso. Questa impostazione viene abilitata creando un gruppo di sicurezza abilitato alla posta elettronica in Office 365. Creare un nuovo gruppo di sicurezza denominato "reVisori accesso privilegiato" nell'ambiente di testing e aggiungere "User 3" precedentemente creato nei passaggi precedenti della guida del laboratorio di testing.
 
-- [Passaggio 2: Abilitare l'accesso con privilegiato](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-2---enable-privileged-access)
+- [Passaggio 2: abilitare l'accesso con privilegi](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration#step-2---enable-privileged-access)
 
-    Accesso privilegiato deve essere attivata in modo esplicito in Office 365 gruppo responsabile approvazione predefinito, incluso un set di account di sistema che si desidera vengano esclusi dal controllo dell'accesso Gestione accesso privilegiato. È necessario abilitare l'accesso con privilegiato nella propria organizzazione Office 365 prima di avviare fase 3 della presente Guida.
+    L'accesso privilegiato deve essere attivato in modo esplicito in Office 365 con il gruppo di approvazione predefinito e includendo un set di account di sistema che si desidera escludere dal controllo di accesso a gestione accesso privilegiato. Assicurarsi di abilitare l'accesso con privilegi nell'organizzazione di Office 365 prima di iniziare la fase 3 di questa guida.
 
-## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Fase 3: Verificare che l'approvazione è necessaria per le attività con privilegi elevate e privilegiata
-In questa fase, verificare che sia attivo il criterio di accesso con privilegi e gli utenti richiedono l'approvazione di eseguire attività con privilegi elevate e privilegiata definita.
+## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Fase 3: verificare che l'approvazione sia necessaria per le attività con privilegi elevati e
+In questa fase, è possibile verificare che il criterio di accesso privilegiato funzioni e che gli utenti dispongano dell'approvazione per l'esecuzione di attività definite con privilegi elevati.
 
-### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Possibilità di eseguire un'attività non è definita nei criteri di accesso con privilegi di testing
+### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Provare la possibilità di eseguire un'attività non definita in un criterio di accesso con privilegi
 
-Per prima cosa, connettersi a PowerShell per Exchange Management con le credenziali di un utente configurato come amministratore globale nell'ambiente di testing e tenta di creare una nuova regola del Journal. L'attività [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps) non è attualmente definito nei criteri di accesso con privilegi per l'organizzazione.
+Innanzitutto, connettersi a Exchange Management PowerShell con le credenziali di un utente configurato come amministratore globale nell'ambiente di testing e tentare di creare una nuova regola del journal. L'attività [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps) non è attualmente definita in un criterio di accesso con privilegi per l'organizzazione.
 
-1. Nel computer locale, aprire e accedere ai di Exchange Online Remote PowerShell Module presso **Microsoft Corporation** > **Microsoft Exchange Online PowerShell modulo remoto** tramite Amministratore globale per gli account per l'ambiente di testing.
+1. Nel computer locale, aprire e accedere al modulo Exchange Online Remote PowerShell nel modulo di PowerShell remoto di **Microsoft Corporation** > **Microsoft Exchange Online** utilizzando l'account di amministratore globale per l'ambiente di testing.
 
-2. In Exchange Management Powershell, creare una nuova regola del Journal dell'organizzazione:
+2. In Exchange Management PowerShell, creare una nuova regola del journal per l'organizzazione:
 
 ```
 New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
 ```
-4. Visualizzazione in cui è stata correttamente la nuova regola di Journal creata in Exchange PowerShell Management.
+4. Visualizzare la nuova regola del journal in Exchange Management PowerShell.
 
-### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Creare un nuovo criterio di accesso con privilegi per l'attività New-JournalRule
+### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Creare un nuovo criterio di accesso privilegiato per l'attività New-JournalRule
 
 > [!NOTE]
-> Se non sono già stati completati i passaggi 1 e 2 della fase 2 della presente Guida, essere certi segui i passaggi per creare gruppo un responsabile dell'approvazione denominato "Principio dei privilegi responsabili approvazione accesso" e consentire l'accesso con privilegiato nell'ambiente di testing.
+> Se non sono già stati completati i passaggi 1 e 2 della fase 2 della guida, seguire la procedura seguente per creare un gruppo del responsabile approvazione denominato "reVisori di accesso Privilege" e per abilitare l'accesso con privilegi nell'ambiente di testing.
 
-1. Accedere a [Microsoft 365 Admin Center](https://portal.office.com) utilizzando le credenziali l'account amministratore globale per l'ambiente di testing.
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali dell'account di amministratore globale per l'ambiente di testing.
 
-2. Nell'interfaccia di amministrazione di accedere alle **Impostazioni** > **sulla Privacy e sicurezza** > **accesso privilegiato**.
+2. Nell'interfaccia di amministrazione, passare a **Impostazioni** > **protezione & privacy** > **accesso privilegiato**.
 
-3. Selezionare **le richieste e gestire i criteri di accesso**.
+3. Selezionare **Gestisci criteri di accesso e richieste**.
 
-4. Selezionare **Configura criteri** e selezionare **Aggiungi un criterio**.
+4. Selezionare **Configure policies** e selezionare **Add a Policy**.
 
-5. Dai campi a discesa, selezionare o immettere i valori seguenti:
+5. Nei campi a discesa selezionare o immettere i valori seguenti:
     
     **Tipo di criterio**: attività
 
-    **Ambito dei criteri**: Exchange
+    **Ambito di criteri**: Exchange
 
-    **Nome del criterio**: nuova regola di Journal
+    **Nome criterio**: nuova regola del Journal
 
-    **Tipo di approvazione**: manuale
+    **Tipo di approvazione**: Manual
 
-    **Gruppo di approvazione**: responsabili approvazione con privilegi di accesso
+    **Gruppo di approvazione**: responsabili approvazione accesso privilegiato
 
-6. Selezionare **Crea** e quindi **Chiudi**. Potrebbe richiedere alcuni minuti per il criterio da configurare e abilitare completamente. Assicurarsi di concedere il tempo per il criterio da abilitare completamente prima di verificare la richiesta di approvazione nel passaggio successivo.
+6. Selezionare **Crea** e quindi **Chiudi**. È possibile che i criteri siano completamente configurati e abilitati per alcuni minuti. Assicurarsi che il criterio venga abilitato completamente prima di testare il requisito di approvazione nel passaggio successivo.
 
-### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Richiesta di approvazione per l'attività New-JournalRule definito nei criteri di accesso con privilegi di testing
+### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Requisiti di approvazione del test per l'attività New-JournalRule definita in un criterio di accesso con privilegi
 
-1. Nel computer locale, aprire e accedere ai di Exchange Online Remote PowerShell Module presso **Microsoft Corporation** > **Microsoft Exchange Online PowerShell modulo remoto** tramite un amministratore globale utilizzando gli account per il test ambiente.
+1. Nel computer locale, aprire e accedere al modulo Exchange Online Remote PowerShell nel modulo di PowerShell remoto Microsoft **Corporation** > **Microsoft Exchange Online** utilizzando un account di amministratore globale per il test ambiente.
 
-2. In Exchange Management Powershell, creare una nuova regola del Journal dell'organizzazione:
+2. In Exchange Management PowerShell, creare una nuova regola del journal per l'organizzazione:
 
 ```
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
-3. Visualizza l'errore "Insufficiente autorizzazioni" in Exchange Management PowerShell:
+3. Visualizzazione dell'errore "autorizzazioni Insuffient" in Exchange Management PowerShell:
 
 ```
 Insufficient permissions. Please raise an elevated access request for this task.
@@ -112,52 +114,52 @@ Insufficient permissions. Please raise an elevated access request for this task.
     + PSComputerName        : outlook.office365.com
 ```
 
-### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>Richiedere l'accesso per creare una nuova regola di Journal tramite l'attività New-JournalRule
+### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>Richiedere l'accesso per creare una nuova regola del journal utilizzando l'attività New-JournalRule
 
-1. Accedere a [Microsoft 365 Admin Center](https://portal.office.com) utilizzando l'account amministratore globale per l'ambiente di testing.
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando l'account di amministratore globale per l'ambiente di testing.
 
-2. Nell'interfaccia di amministrazione di accedere alle **Impostazioni** > **sulla Privacy e sicurezza** > **accesso privilegiato**.
+2. Nell'interfaccia di amministrazione, passare a **Impostazioni** > **protezione & privacy** > **accesso privilegiato**.
 
-3. Selezionare **le richieste e gestire i criteri di accesso**.
+3. Selezionare **Gestisci criteri di accesso e richieste**.
 
-4. Selezionare **nuova richiesta**. I campi di riepilogo a discesa, selezionare i valori appropriati per l'organizzazione:
+4. Selezionare **nuova richiesta**. Nei campi a discesa selezionare i valori corretti per l'organizzazione:
 
     **Tipo di richiesta**: attività
 
-    **Richiedere ambito**: Exchange
+    **Ambito delle richieste**: Exchange
 
-    **Richiedere per**: nuova regola di Journal
+    **Richiesta per**: nuova regola del Journal
 
     **Durata (ore)**: 2
 
-    **Commenti**: richiedere l'autorizzazione per creare una nuova regola di Journal
+    **Commenti**: richiedere l'autorizzazione per la creazione di una nuova regola del Journal
 
-5. Selezionare **Salva** , quindi **Chiudi**. La richiesta verrà inviata al gruppo del revisore tramite posta elettronica.
+5. Selezionare **Salva** e quindi **Chiudi**. La richiesta verrà inviata al gruppo del responsabile dell'approvazione tramite posta elettronica.
 
-### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>Approvare le richieste di accesso con privilegi per la creazione di una nuova regola di Journal
+### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>Approva la richiesta di accesso privilegiato per la creazione di una nuova regola di Journal
 
-1. Accedere a [Microsoft 365 Admin Center](https://portal.office.com) utilizzando le credenziali per l'utente 3 nell'ambiente di testing (membro del gruppo di protezione "Revisori con privilegi di accesso" nell'ambiente di testing).
+1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali per l'utente 3 nell'ambiente di testing (membro del gruppo di sicurezza "responsabili approvazione accesso privilegiato" nell'ambiente di testing).
 
-2. Nell'interfaccia di amministrazione di accedere alle **Impostazioni** > **sulla Privacy e sicurezza** > **accesso privilegiato**.
+2. Nell'interfaccia di amministrazione, passare a **Impostazioni** > **protezione & privacy** > **accesso privilegiato**.
 
-3. Selezionare **le richieste e gestire i criteri di accesso**.
+3. Selezionare **Gestisci criteri di accesso e richieste**.
 
-4. Selezionare la richiesta in sospeso e scegliere **Approva** per concedere l'accesso all'account amministratore globale per creare una nuova regola del Journal. Verrà inviato un messaggio di posta elettronica di notifica per confermare che è stato concesso l'approvazione per l'account amministratore globale (richiedente utente).  
+4. Selezionare la richiesta in sospeso e selezionare **approva** per concedere l'accesso all'account di amministratore globale per creare una nuova regola del journal. Un messaggio di posta elettronica di notifica che conferma che l'approvazione è stata concessa verrà inviata all'account di amministratore globale (l'utente richiedente).  
 
-### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Crea una nuova regola di Journal con privilegi di accesso approvata per l'attività New-JournalRule test
+### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Testare la creazione di una nuova regola del journal con accesso privilegiato approvato per l'attività New-JournalRule
 
-1. Nel computer locale, aprire e accedere ai di Exchange Online Remote PowerShell Module presso **Microsoft Corporation** > **Microsoft Exchange Online PowerShell modulo remoto** tramite Amministratore globale per gli account per l'ambiente di testing.
+1. Nel computer locale, aprire e accedere al modulo Exchange Online Remote PowerShell nel modulo di PowerShell remoto di **Microsoft Corporation** > **Microsoft Exchange Online** utilizzando l'account di amministratore globale per l'ambiente di testing.
 
-2. In Exchange Management Powershell, creare una nuova regola del Journal dell'organizzazione:
+2. In Exchange Management PowerShell, creare una nuova regola del journal per l'organizzazione:
 
 ```
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
-3. Visualizzazione in cui è stata correttamente la nuova regola di Journal creata in Exchange PowerShell Management.
+3. Visualizzare la nuova regola del journal in Exchange Management PowerShell.
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Esplorare le funzionalità aggiuntive [la protezione delle informazioni](m365-enterprise-test-lab-guides.md#information-protection) e le funzionalità nell'ambiente di testing.
+Esplorare le funzionalità e le funzionalità di [protezione delle informazioni](m365-enterprise-test-lab-guides.md#information-protection) aggiuntive nell'ambiente di testing.
 
 ## <a name="see-also"></a>Vedere anche
 

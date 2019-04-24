@@ -4,13 +4,14 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - O365E_ESPoliciesLM
 - ESPoliciesLM
 - BCS365_ESPoliciesLM
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: M365-subscription-management
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -21,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
-description: Informazioni sui criteri dispositivi specifici e gruppi di protezione per proteggere i dati aziendali in dispositivi personali dell'utente di destinazione.
-ms.openlocfilehash: e52026ccc96e032bbccb7334992a447e14b2cc05
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Informazioni sui criteri che mirano a dispositivi e gruppi di sicurezza specifici per proteggere i dati aziendali nei dispositivi personali dell'utente.
+ms.openlocfilehash: 11f0432b9e738841e6523dce436c534af41b827a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276788"
 ---
 # <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>In che modo i criteri in Microsoft 365 Business proteggono i dati aziendali
 
@@ -39,6 +40,6 @@ Per dispositivi Android e iOS è possibile aggiungere o modificare i criteri di 
   
 [Impostare le configurazioni dei dispositivi per PC Windows 10](protection-settings-for-windows-10-pcs.md)
   
-[Definire le impostazioni di protezione delle app per dispositivi Windows 10](protection-settings-for-windows-10-devices.md)
+[Impostare le impostazioni di protezione delle app per i dispositivi Windows 10](protection-settings-for-windows-10-devices.md)
   
 

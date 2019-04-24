@@ -7,6 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- M365-identity-device-management
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -15,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Per visualizzare i criteri dei dispositivi e le azioni effettuare l'accesso a Microsoft 365 business con credintials amministratore globale.
-ms.openlocfilehash: 0018abc6dcf2163dc50c6c792793c9f5d9e29d45
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Visualizzare i criteri e le azioni dei dispositivi accedendo a Microsoft 365 business con l'amministratore globale di credintials.
+ms.openlocfilehash: 524e5382fb242ea6b77abd72191073ce4df14f0c
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285815"
 ---
 # <a name="view-policies-and-devices"></a>Visualizzare criteri e dispositivi
 
@@ -29,7 +32,7 @@ ms.locfileid: "26868279"
 
 1. Accedere a [Microsoft 365 Business](https://portal.office.com) con le credenziali di amministratore globale. 
     
-2. Nell'interfaccia di amministrazione scegliere **Criteri dispositivi** nella scheda **Criteri dispositivi** per aprire la pagina **Criteri dispositivi**. 
+2. Nella barra di spostamento sinistra fare clic su **criteri** \> **dispositivi** \> **Aggiungi**.
     
     In questa pagina è possibile creare, modificare, cambiare gruppo di destinazione o eliminare un criterio.
     

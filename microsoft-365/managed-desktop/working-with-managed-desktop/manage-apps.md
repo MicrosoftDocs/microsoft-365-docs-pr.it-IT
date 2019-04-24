@@ -1,28 +1,69 @@
 ---
 title: Gestire le app in Microsoft Managed Desktop
-description: ''
-keywords: Servizio Microsoft Desktop gestiti, Microsoft 365, documentazione
+description: Informazioni su come aggiornare le app line-of-business distribuite ai dispositivi Microsoft Managed Desktop
+keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: trudyha
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 6bd9d943384dce059ebc5a2d0a04e531ef652015
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+ms.date: 01/18/2019
+ms.collection: M365-modern-desktop
+ms.openlocfilehash: ce2765ef2ab176dc5d9a1d41db7e26549b007d79
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285946"
 ---
-# <a name="manage-apps-in-microsoft-managed-desktop"></a>Gestire le app in Microsoft Managed Desktop
+# <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Gestire le app line-of-business in Microsoft Managed Desktop
 
 <!--Application management -->
 
-Dopo aver installato le applicazioni onboarded, gestirli è condivisa tra i clienti, operazioni Desktop gestiti Microsoft e supporto tecnico Microsoft Desktop gestiti. Clienti:
+Esistono due modi per gestire gli aggiornamenti delle app per le app che sono state onboarded to Microsoft Managed Desktop e distribuite ai dispositivi Microsoft Managed Desktop. È possibile rendere gli aggiornamenti delle app in Microsoft Managed Desktop Portal o Intune. 
 
-- Verificare che siano licenze appropriate sul posto per tutto il software distribuito tramite Intune 
-- Monitorare lo stato di distribuzione di applicazioni
-- Gestire i profili di impostazioni dell'applicazione per la distribuzione
+<span id="update-app-mmd" />
 
-Team di operazioni di Desktop gestiti Microsoft illustra le notifiche di distribuzione di app per verificare che nessuna applicazione che violano termini Microsoft Desktop gestiti da distribuire. 
+## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Aggiornare le app line-of-business in Microsoft Managed Desktop
 
-Supporto di Desktop gestiti Microsoft fornisce il supporto per le applicazioni creati Microsoft (ad esempio, Office). 
+**Per aggiornare le app line-of-business in Microsoft Managed Desktop Portal**
+1. Accedere al [portale di amministrazione di Microsoft managEd desktop](http://aka.ms/mmdportal).
+2. In **inventario**, selezionare **app**.  
+3. Selezionare l'app che si desidera aggiornare e quindi fare clic su **modifica**.
+4. In **Gestisci**selezionare **Proprietà**. 
+5. Fare clic su **file del pacchetto di app**e quindi selezionare per caricare un nuovo file del pacchetto di app.
+6. Selezionare il **file del pacchetto di app**.
+7. Selezionare l'icona della cartella e passare al percorso del file dell'app aggiornato. Selezionare **Apri**. Le informazioni sull'app vengono aggiornate con le informazioni sul pacchetto.
+8. Verificare che la **versione dell'app** rifletta il pacchetto di App aggiornato. 
+
+L'app aggiornata verrà distribuita nei dispositivi dell'utente.
+
+<span id="update-app-intune" />
+
+## <a name="update-line-of-business-apps-in-intune"></a>Aggiornare le app line-of-business in Intune
+
+**Per aggiornare le app line-of-business in Intune**
+1. Accedere al [portale di Azure](https://azure.portal.com).
+2. Selezionare **tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoring + Management** .
+3. Selezionare app **client Apps >**.
+4. Individuare e selezionare l'app nell'elenco delle app.
+5. Nel pannello **Panoramica** , selezionare **Proprietà**.
+6. Selezionare il **file del pacchetto di app**.
+7. Selezionare l'icona della cartella e passare al percorso del file dell'app aggiornato. Selezionare **Apri**. Le informazioni sull'app vengono aggiornate con le informazioni sul pacchetto.
+8. Verificare che la **versione dell'app** rifletta il pacchetto di App aggiornato.
+
+<span id="roll-back-app-mmd" />
+
+## <a name="roll-back-an-app-to-a-previous-version"></a>Eseguire il rollback di un'app a una versione precedente
+
+Se viene rilevato un errore quando viene distribuita una nuova versione di un'app, è possibile eseguire il rollback a una versione precedente. Il processo qui descritto è per le app in cui il tipo è elencato come **app line-of-business MSI di Windows** o **app windows (Win 32)-Preview**
+
+**Per eseguire il rollback di un'app line-of-business a una versione precedente**
+
+1. Accedere al [portale di amministrazione di Microsoft managEd desktop](http://aka.ms/mmdportal).
+2. In **inventario**, selezionare **app**.  
+3. Seleziona l'app di cui hai bisogno per eseguire il rollback e quindi seleziona **modifica**.
+4. In **Gestisci**selezionare **Proprietà**. 
+    - Per le **app di applicazioni line-of-business MSI di Windows** , selezionare **informazioni sull'app**e quindi in **Ignora versione app**selezionare **Sì**.
+    - Per **app Windows (Win 32)-** app di anteprima, **Seleziona informazioni sull'app**, seleziona **regole di rilevamento**e quindi seleziona **Aggiungi**. 
+    Se è presente una regola MSI, verificare che il **controllo della versione del prodotto MSI** sia impostato su **No**.
+5. [Caricare una versione precedente del file di origine dell'applicazione](../get-started/deploy-apps.md) nel portale di amministrazione di Microsoft Managed Desktop.  
+

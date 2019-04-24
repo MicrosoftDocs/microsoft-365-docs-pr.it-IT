@@ -1,114 +1,117 @@
 ---
-title: Proteggere gli account di amministratore globale nell'ambiente di test Microsoft 365 Enterprise
+title: Proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 04/16/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Utilizzare la procedura seguente per proteggere gli account di amministratore globale nell'ambiente di test Microsoft 365 aziendale.
-ms.openlocfilehash: 4d444e217c5a232811701f6519c2eb3ebe86df70
-ms.sourcegitcommit: e491c4713115610cbe13d2fbd0d65e1a41c34d62
+description: Attenersi alla procedura seguente per proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 Enterprise.
+ms.openlocfilehash: cded424188447f96e5614f31d3e207bb541d438e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "26868302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290859"
 ---
-# <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Proteggere gli account di amministratore globale nell'ambiente di test Microsoft 365 Enterprise
+# <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 Enterprise
 
-È possibile impedire attacchi di tipo digitale nella propria organizzazione per garantire che l'account amministratore siano la massima protezione. In questo articolo viene descritto come utilizzare criteri di accesso condizionale sicurezza App Cloud di Office 365 e Azure Active Directory per proteggere gli account di amministratore globale.
+È possibile impedire attacchi digitali all'organizzazione assicurando che gli account di amministratore siano il più sicuro possibile. In questo articolo viene descritto come utilizzare i criteri di accesso condizionale di cloud app di Office 365 e di Azure ad per proteggere gli account di amministratore globale.
 
-Esistono due fasi di proteggere gli account di amministratore globale nell'ambiente di test Microsoft 365 aziendale:
+Sono disponibili due fasi per la protezione degli account amministratore globale nell'ambiente di testing di Microsoft 365 Enterprise:
 
-1.  Creare l'ambiente di test Microsoft 365 Enterprise.
-2.  Proteggere il tuo account amministratore globale dedicato.
+1.  Creare l'ambiente di testing Microsoft 365 Enterprise.
+2.  Proteggere l'account di amministratore globale dedicato.
 
 ![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Fare clic [qui](https://aka.ms/m365etlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
-  
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Preparare l'ambiente di testing Microsoft 365 Enterprise
+> [!NOTE]
+> L'ambiente di testing di Microsoft 365 Enterprise utilizza le versioni E5 di Office 365 e Enterprise Management + Security (EMS). La funzionalità di sicurezza delle app cloud di Office 365 è disponibile solo nella versione E5 di Office 365. 
 
-Se si desidera testare la protezione dell'account amministratore globale in un modo semplice con i requisiti minimi, seguire le istruzioni di [configurazione di base semplificata](lightweight-base-configuration-microsoft-365-enterprise.md).
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 Enterprise
+
+Se si desidera semplicemente testare la protezione degli account amministratore globale con i requisiti minimi, seguire le istruzioni riportate in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Se si desidera testare la protezione dell'account amministratore globale in un'azienda simulata, seguire le istruzioni [nell'autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
+Se si desidera testare la protezione degli account amministratore globale in un'azienda simulata, seguire le istruzioni riportate nell' [autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
+
   
 > [!NOTE]
-> Test account amministratore globale protection non richiede l'ambiente di testing simulato enterprise, che include una rete intranet simulata connessi a Internet e la sincronizzazione delle directory per una foresta Windows Server Active Directory. Viene fornito qui come un'opzione in modo da poter testare la protezione dell'account amministratore globale e sperimentare in un ambiente che rappresenta una tipica organizzazione. 
+> Testing Global Administrator account Protection non richiede l'ambiente di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per un servizio di dominio Active Directory (AD DS). Viene fornito come opzione in modo che sia possibile testare la protezione degli account amministratore globale e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
   
-## <a name="phase-2-configure-cloud-app-security-and-conditional-access-policies"></a>Fase 2: Configurare la sicurezza di applicazione Cloud e i criteri di accesso condizionale
+## <a name="phase-2-configure-cloud-app-security-and-conditional-access-policies"></a>Fase 2: configurare i criteri di protezione delle app cloud e degli accessi condizionali
 
-Creare un criterio di protezione di applicazioni di Office 365 Cloud per monitorare l'attività di account amministratore globale e inviare gli avvisi per l'indirizzo di posta elettronica dell'account di amministratore globale. 
+Per prima cosa, creare un criterio di sicurezza per l'applicazione cloud di Office 365 per monitorare l'attività dell'account amministratore globale e inviare avvisi all'indirizzo di posta elettronica dell'account di amministratore globale. 
 
-1. Accedere al portale di Office in [http://portal.office.com](http://portal.office.com) utilizzando l'account amministratore globale.
-2. Fare clic su tessera di **amministrazione** . Nella scheda di **interfaccia di amministrazione di Office** , fare clic su **Admin Center > sicurezza e conformità**.
-3. Nel riquadro di spostamento a sinistra fare clic su **Avvisi > Gestisci gli avvisi avanzati**.
-4. Nella pagina **Gestisci gli avvisi avanzati**, fare clic su **Attiva Office 365 Cloud App Security**, quindi fare clic su **Vai a Office 365 Cloud App Security**.
-5. Nella nuova scheda **Dashboard**, fare clic su **Controllo > Criteri**.
-6. Nella pagina **Criterio**, fare clic su **Crea criterio**, quindi fare clic su **Criteri attività**.
-7. In **Nome criterio**, digitare **Attività amministrativa**.
-8. In **Gravità del criterio**, fare clic su **Elevata**.
-9. In **Categoria**, fare clic su **Account con privilegi**.
-10. In **Crea filtri per il criterio**, in **Attività corrispondenti a tutti gli elementi seguenti**, fare clic su **Attività amministrativa**.
-11. In **Avvisi**, fare clic su **Invia l'avviso come messaggio di posta elettronica**. In **A**, digitare l'indirizzo di posta elettronica dell'account di amministratore globale.
-12. Nella parte inferiore della pagina fare clic su **Crea**.
-13. Chiudere la scheda **del Dashboard** .
+1. Accedere al [portale Office 365 Security _AMP_ Compliance](https://protection.office.com/) utilizzando l'account di amministratore globale.
+2. Nel riquadro di spostamento a sinistra fare clic su **Avvisi > Gestisci gli avvisi avanzati**.
+3. Nella pagina **Gestisci gli avvisi avanzati**, fare clic su **Attiva Office 365 Cloud App Security**, quindi fare clic su **Vai a Office 365 Cloud App Security**.
+4. Nella nuova scheda **Dashboard**, fare clic su **Controllo > Criteri**.
+5. Nella pagina **Criterio**, fare clic su **Crea criterio**, quindi fare clic su **Criteri attività**.
+6. In **Nome criterio**, digitare **Attività amministrativa**.
+7. In **Gravità del criterio**, fare clic su **Elevata**.
+8. In **Categoria**, fare clic su **Account con privilegi**.
+9. In **Crea filtri per il criterio**, in **Attività corrispondenti a tutti gli elementi seguenti**, fare clic su **Attività amministrativa**.
+10. In **Avvisi**, fare clic su **Invia l'avviso come messaggio di posta elettronica**. In **A**, digitare l'indirizzo di posta elettronica dell'account di amministratore globale.
+11. Nella parte inferiore della pagina fare clic su **Crea**.
+12. Chiudere la scheda **Dashboard** .
     
 Successivamente, creare un nuovo account utente come amministratore globale dedicato.
 
-1. Nella scheda di **interfaccia di amministrazione di Office** , in **utenti attivi**, fare clic su **Aggiungi utente**.
-2. Nella pagina **nuovo utente** , digitare **DedicatedAdmin** in **nome**, **nome visualizzato**e **nome utente**.
-3. Fare clic su **Password**, fare clic su **Crea la password**e quindi digitare una password complessa. Registrare la password per il nuovo account in un luogo sicuro.
-4. Deselezionare **che l'utente di modificare la password quando accedono prima**.
-5. Fare clic su **ruoli**e quindi fare clic su **amministratore globale**.
-6. Fare clic su **licenze per i prodotti**e quindi attivare la **mobilità aziendale + E5 di sicurezza** e **le licenze di Office 365 Enterprise E5** .
-7. Fare clic su **Aggiungi**.
-8. In **utente è stato aggiunto pagina**, deselezionare **inviare password tramite posta elettronica**e quindi fare clic su **Chiudi**.
+1. In una scheda separata, aprire l'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com/).
+2. In **utenti attivi**fare clic su **Aggiungi utente**.
+3. Nella pagina **nuovo utente** , digitare **DedicatedAdmin** in **nome**, **nome visualizzato**e nome **utente**.
+4. Fare clic su **password**, fare clic su **fammi creare la password**e quindi digitare una password complessa. Registrare la password per il nuovo account in una posizione sicura.
+5. Cancellare **fare in modo che l'utente modifichi la password al primo accesso**.
+6. Fare clic su **ruoli**, quindi su **amministratore globale**.
+7. Fare clic su **licenze di prodotto**e quindi accendere le licenze **Enterprise Mobility + Security e5** e **Office 365 Enterprise E5** .
+8. Fare clic su **Aggiungi**.
+9. Nella **pagina utente è stata aggiunta**l'opzione **Invia password tramite posta elettronica**e quindi fare clic su **Chiudi**.
 
 Successivamente, creare un nuovo gruppo denominato GlobalAdmins e aggiungere l'account di DedicatedAdmin.
 
-1. Nella scheda di **interfaccia di amministrazione di Office** , fare clic sull'icona gruppi nel riquadro di spostamento sinistra e quindi fare clic su **gruppi**.
-2. Fare clic su **Aggiungi un gruppo**.
-3. Nella pagina **Nuovo gruppo** digitare **GlobalAdmins**.
-4. Fare clic su fare clic su **Seleziona proprietario** l'account amministratore globale e quindi fare clic su **Aggiungi > Chiudi**.
+1. Nella scheda interfaccia di **amministrazione di Microsoft 365** fare clic sull'icona gruppi nel riquadro di spostamento a sinistra, quindi fare clic su **gruppi**.
+2. Fare clic su **Aggiungi gruppo**.
+3. Nella pagina **nuovo gruppo** digitare **GlobalAdmins**.
+4. Fare clic su **Seleziona proprietario** fare clic sull'account amministratore globale, quindi fare clic su **Aggiungi > Chiudi**.
 5. Nell'elenco dei gruppi fare clic sul gruppo **GlobalAdmins** .
-6. Nella pagina **GlobalAdmins** , fare clic su **Modifica per membro**e quindi fare clic su **Aggiungi membri**.
-7. Nell'elenco, fare clic sull'account **DedicatedAdmin** e quindi fare clic su **salvare > Chiudi > Chiudi > Admin center**.
+6. Nella pagina **GlobalAdmins** fare clic su **modifica per membro**, quindi fare clic su **Aggiungi membri**.
+7. Nell'elenco, fare clic sull'account **DedicatedAdmin** , quindi fare clic su **Salva _GT_ Close _GT_ Close > Admin Center**.
 
-Successivamente, creare criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli account di amministratore globale e Nega l'autenticazione se il rischio di accesso è medio o elevato.
+Successivamente, creare criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli account di amministratore globale e negare l'autenticazione se il rischio di ingresso è medio o elevato.
 
-Questo criterio primo richiede che tutti gli account di amministratore globale utilizzano MFA.
+Questo primo criterio richiede che tutti gli account di amministratore globale utilizzino AMF.
 
-1. In una nuova scheda del browser, accedere a [https://portal.azure.com](https://portal.azure.com).
-2. Fare clic su **Azure Active Directory > accesso condizionato**.
-3. Su blade **accesso condizionato-criteri** , fare clic su **dei criteri di base: richiedono MFA per gli amministratori (preview)**.
-4. Su blade **... criteri di base** , fare clic su **utilizzare immediatamente criterio > Salva**.
+1. In una nuova scheda del browser, passare a [https://portal.azure.com](https://portal.azure.com).
+2. Fare clic su **accesso condizionale di Azure Active Directory >**.
+3. Nel pannello **criteri di accesso condizionale** fare clic su **criteri di base: richiedere l'autenticazione master per gli amministratori (anteprima)**.
+4. Nei **criteri di base...** Blade, fare clic su **Use Policy immediatamente _GT_ Save**.
 
-In questo secondo criterio blocca l'accesso all'autenticazione account amministratore globale quando il rischio di accesso è medio o elevato.
+Questo secondo criterio blocca l'accesso all'autenticazione dell'account amministratore globale quando il rischio di ingresso è medio o elevato.
 
-1. Su blade **accesso condizionato-criteri** , fare clic su **nuovo criterio**.
-2. Blade **New** , nella **casella Nome**digitare **gli amministratori globali** .
-3. Nella sezione **assegnazioni** , fare clic su **utenti e gruppi**.
-4. Nella scheda **Includi** della blade **utenti e gruppi** , fare clic su **selezionare utenti e gruppi > utenti e gruppi > selezionare**.
-5. Scegliere blade **Selezionare** il **GlobalAdmins > selezionare > Fine**.
-6. Nella sezione **assegnazioni** , fare clic su **condizioni**.
-7. Su blade **condizioni** , fare clic su **accesso rischio**, fare clic su **Sì** per **configurare**, fare clic su **Medium**e **High** e quindi fare clic su **Seleziona** e **Fine**.
-8. Nella sezione **accedere a controlli** di blade **New** , fare clic su **Concedi**.
-9. Su blade **Grant** , fare clic su **bloccare l'accesso**e quindi fare clic su **Seleziona**.
-10. Su blade **New** , fare clic **su** per **abilitare i criteri**e quindi fare clic su **Crea**.
-11. Chiudere le schede di **interfaccia di amministrazione di Office** e **portale Azure** .
+1. Nel pannello **criteri di accesso condizionale** fare clic su **nuovo criterio**.
+2. Nel **nuovo** Blade, digitare **Global Administrators** in **Name**.
+3. Nella sezione **assegnazioni** fare clic su **utenti e gruppi**.
+4. Nella scheda **Includi** del Blade **utenti e gruppi** fare clic su **Seleziona utenti e gruppi _GT_ utenti e gruppi > seleziona**.
+5. Nel pannello **Seleziona** , fare clic sul **GlobalAdmins _GT_ selezionare > fatto**.
+6. Nella sezione **assegnazioni** fare clic su **condizioni**.
+7. Nel pannello **condizioni** fare clic su **rischio di accesso**, fare clic **su Sì** per **Configura**, fare clic su **alto** e **medio**, quindi fare clic su **Seleziona** e **Chiudi**.
+8. Nella sezione **controlli di accesso** del **nuovo** Blade, fare clic su **Grant**.
+9. Sul Blade **Grant** , fare clic su **Blocca accesso**, quindi fare clic su **Seleziona**.
+10. Nel **nuovo** Blade, fare clic **su** **attiva per abilitare il criterio**, quindi fare clic su **Crea**.
+11. Chiudere le schede di interfaccia di amministrazione di **Azure Portal** e **Microsoft 365** .
 
-Per testare il primo criterio, disconnettersi e accedere con l'account DedicatedAdmin. È necessario richiedere configurare MFA l'account utente. Dimostra che il primo criterio viene applicato.
+Per testare il primo criterio, disconnettersi e accedere con l'account DedicatedAdmin. È necessario che venga richiesto di configurare l'autenticazione master nell'account utente. Questo dimostra che il primo criterio viene applicato.
 
-Nella fase di identità per informazioni e collegamenti per proteggere gli account di amministratore globale nell'ambiente di produzione, vedere la sezione [account amministratore globale di protezione](identity-designate-protect-admin-accounts.md) .
+Vedere il passaggio [Proteggi account amministratore globale](identity-designate-protect-admin-accounts.md#identity-global-admin) nella fase di identità per informazioni e collegamenti per proteggere gli account di amministratore globale in produzione.
 
 ## <a name="next-step"></a>Passaggio successivo
 
