@@ -4,18 +4,19 @@ description: Un piano d'azione prioritario che può essere seguito durante il la
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, ISO, ISO 27001
 author: BrendaCarter
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: bcarter
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: 1e0232759bd33fb2bcaf66f7afd5334eed43fbbf
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+audience: itpro
+ms.collection:
+- M365-security-compliance
+ms.openlocfilehash: 3f81ad10d4549f9f28b5df4a0e090fb38a54bf6f
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283458"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Piano d'azione ISO 27001 di Microsoft 365: massime priorità per i primi 30 giorni, 90 giorni e oltre
 
@@ -47,7 +48,7 @@ Queste attività possono essere eseguite rapidamente e hanno un impatto minimo s
 |**Area**|**Attività**|
 |Comprendere i requisiti di conformità e governance di ISO 27001.|• Valutare e gestire i rischi di conformità utilizzando [Compliance Manager di Microsoft](https://support.office.com/article/use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services-429e686f-d8a6-455e-a2b6-3791d763f000) all'interno del [Service Trust Portal (STP) di Microsoft ](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) per condurre una valutazione ISO 27001:2013 dell'organizzazione. Stabilire le procedure operative standard (SOP) per ognuno dei 14 gruppi ISO 27001.
 |Iniziare a pianificare l'implementazione di una classificazione delle informazioni e strumenti e criteri di conservazione per l'organizzazione, in modo da consentire agli utenti di identificare, classificare e proteggere risorse e dati sensibili.|• Consentire agli utenti di identificare e classificare facilmente i dati sensibili, secondo i criteri di protezione delle informazioni e le procedure operative standard (SOP), implementando i criteri di classificazione e l'applicazione [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection). Sviluppare lo schema (criteri) di classificazione delle informazioni dell'organizzazione, insieme con un piano di implementazione e formazione.<br>• Consentire agli utenti di applicare facilmente i criteri di protezione e conservazione dei record ai contenuti, implementando le [etichette di Office 365](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30) nell'organizzazione. Pianificare le etichette dell'organizzazione in base ai requisiti legali per la conservazione dei record delle informazioni, insieme con un piano di implementazione e formazione.
-|Proteggere i record relativi alla sicurezza delle informazioni in modo che non subiscano perdite, modifiche, eliminazioni o accessi non autorizzati, creando criteri di controllo e conformità durante le procedure operative standard (SOP).|• Abilitare la [registrazione di controllo di Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) e il [controllo delle cassette postali](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) per tutte le cassette postali Exchange per monitorare Office 365 e individuare eventuali attività potenzialmente dannose e abilitare l'analisi forense delle violazioni di dati.<br>• Con cadenza regolare, cercare i log di controllo del tenant di Office 365 per revisionare le modifiche apportate alle impostazioni di configurazione del tenant.<br>• Abilitare i [criteri di avviso di Office 365](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264) nel Centro sicurezza e conformità di Office 365 per le attività sensibili, ad esempio quando vengono elevati i privilegi di un account utente.<br>• Per l'archiviazione a lungo termine dei dati del log di Office 365, utilizzare i [riferimenti API Office 365 Management Activity](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) per l'integrazione con uno strumento di gestione degli eventi e informazioni di sicurezza (SIEM).
+|Proteggere i record relativi alla sicurezza delle informazioni in modo che non subiscano perdite, modifiche, eliminazioni o accessi non autorizzati, creando criteri di controllo e conformità durante le procedure operative standard (SOP).|• Abilitare la [registrazione di controllo di Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) e il [controllo delle cassette postali](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) per tutte le cassette postali Exchange per monitorare Office 365 e individuare eventuali attività potenzialmente dannose e abilitare l'analisi forense delle violazioni di dati.<br>• Con cadenza regolare, cercare i log di controllo del tenant di Office 365 per revisionare le modifiche apportate alle impostazioni di configurazione del tenant.<br>• Abilitare i [Criteri di avviso di Office 365](https://support.office.com/article/alert-policies-in-the-office-365-security-compliance-center-8927b8b9-c5bc-45a8-a9f9-96c732e58264) nel Centro sicurezza e conformità di Microsoft 365 per le attività sensibili, ad esempio quando vengono elevati i privilegi di un account utente.<br>• Per l'archiviazione a lungo termine dei dati di Office 365, utilizzare i [riferimenti API Office 365 Management Activity](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) per l'integrazione con uno strumento di gestione degli eventi e informazioni di sicurezza (SIEM).
 |Definire i ruoli amministrativi e di sicurezza per l'organizzazione, insieme con criteri appropriati relativi alla separazione dei compiti.|• Usare i [ruoli amministrativi di Office 365](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a) per abilitare la separazione dei compiti di amministrazione. Nota: i diversi ruoli di amministratore in Office 365 hanno un ruolo corrispondente in Exchange Online, SharePoint Online e Skype for Business Online.<br>• Segmentare le autorizzazioni per evitare che un singolo amministratore abbia privilegi di accesso superiori a quelli necessari.|
 
 

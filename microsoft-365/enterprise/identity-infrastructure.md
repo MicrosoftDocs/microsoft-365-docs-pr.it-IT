@@ -3,22 +3,22 @@ title: 'Fase 2: identità'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/16/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: La procedura per distribuire l'infrastruttura di gestione delle identità di Microsoft 365 Enterprise.
-ms.openlocfilehash: 7b5d62f5c09a1ea6d46449b113bff59dbf07ebad
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 932b6fb2cfeb86edcf708bdfdea55cdd8b580838
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288738"
 ---
 # <a name="phase-2-identity"></a>Fase 2: identità
 
@@ -32,25 +32,20 @@ In Microsoft 365 Enterprise, un'infrastruttura di gestione delle identità ben p
 
 ## <a name="plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure"></a>Pianificare e distribuire l'infrastruttura di gestione delle identità di Microsoft 365 Enterprise 
 
+Prima di iniziare, guardare questo video che illustra i modelli di identità e l'autenticazione per Microsoft 365.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
+
 Utilizzare la seguente procedura per pianificare e distribuire la nuova infrastruttura di gestione delle identità nel cloud. È inoltre possibile usare tale procedura per adattare l'infrastruttura di gestione delle identità ibrida o locale esistente da utilizzare con Microsoft 365 Enterprise. 
 
 |||
 |:-------|:-----|
 |![](./media/stepnumbers/Step1.png)| [Pianificare utenti e gruppi](identity-plan-users-groups.md) |
-|![](./media/stepnumbers/Step2.png)| [Proteggere gli account amministratore globale](identity-designate-protect-admin-accounts.md) |
-|![](./media/stepnumbers/Step3.png)| [Configurare gli amministratori globali su richiesta](identity-privileged-identity-management.md) |
-|![](./media/stepnumbers/Step4.png)| [Semplificare le reimpostazioni delle password](identity-password-reset.md) |
-|![](./media/stepnumbers/Step5.png)| [Configurare l'autenticazione a più fattori](identity-multi-factor-authentication.md) |
-|![](./media/stepnumbers/Step6.png)| [Proteggere dalla compromissione delle credenziali](identity-azure-ad-identity-protection.md) |
-|![](./media/stepnumbers/Step7.png)| [Sincronizzazione delle directory](identity-azure-ad-connect.md) |
-|![](./media/stepnumbers/Step8.png)| [Monitorare l'integrità della sincronizzazione](identity-azure-ad-connect-health.md) |
-|![](./media/stepnumbers/Step9.png)| [Semplificare gli aggiornamenti delle password](identity-password-writeback.md) |
-|![](./media/stepnumbers/Step10.png)| [Semplificare l'accesso utente](identity-single-sign-on.md) |
-|![](./media/stepnumbers/Step11.png)| [Personalizzare la pagina di accesso a Office 365](identity-customize-office-365-sign-in.md) |
-|![](./media/stepnumbers/Step12.png)| [Configurare l'assegnazione automatica delle licenze](identity-group-based-licensing.md) |
-|![](./media/stepnumbers/Step13.png)| [Monitorare l'attività di tenant e di accesso](identity-azure-ad-access-usage-reporting.md) |
-|![](./media/stepnumbers/Step14.png)| [Consentire agli utenti di creare e gestire i propri gruppi](identity-self-service-group-management.md) |
-|![](./media/stepnumbers/Step15.png)| [Configurare l'appartenenza a gruppi dinamici](identity-automatic-group-membership.md) |
+|![](./media/stepnumbers/Step2.png)| [Protezione delle identità con privilegi](identity-designate-protect-admin-accounts.md) |
+|![](./media/stepnumbers/Step3.png)| [Configurare identità ibrida](identity-azure-ad-connect.md) |
+|![](./media/stepnumbers/Step4.png)| [Configurare autenticazione utente protetto](identity-multi-factor-authentication.md) |
+|![](./media/stepnumbers/Step5.png)| [Semplificare l'accesso per gli utenti](identity-password-reset.md) |
+|![](./media/stepnumbers/Step6.png)| [Usare i gruppi per facilitare la gestione](identity-self-service-group-management.md) |
 
 Dopo aver completato questi passaggi, passare ai [criteri uscita](identity-exit-criteria.md) per questa fase per garantire che vengano rispettate le condizioni facoltative e obbligatorie per Microsoft 365 Enterprise.
 

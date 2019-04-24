@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere come Contoso usa EMS in Microsoft 365 Enterprise per gestire i dispositivi e le app in esecuzione su di essi.
-ms.openlocfilehash: e6b6f822a8c0ea26b3d899e3531653b19e225d65
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f47d6a1ee608d33802f1c523d3b954af3771f212
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278043"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Gestione dispositivi mobili in Contoso
 
@@ -46,7 +46,10 @@ Contoso non usa Intune per:
 Ecco come Contoso ha configurato l’infrastruttura di gestione dei dispositivi mobili:
 
 - Ha impostato Intune come autorità di gestione dei dispositivi mobili (MDM) e usa Intune in Azure per amministrare il contenuto e gestire i dispositivi
-- Ha creato gruppi di Azure AD per i gruppi di dispositivi per la registrazione e le impostazioni di Intune e per i criteri di accesso condizionale
+- Ha creato gruppi di Azure AD per i dispositivi per la registrazione e le impostazioni di Intune e i criteri di accesso condizionale basati sul dispositivo
+
+  Per altre informazioni, vedere [criteri di accesso condizionale di Contoso](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
+
 - Ha abilitato la piattaforma per dispositivi Apple per supportare i dipendenti con iPad, iMac, iPhone e telefoni aziendali basati su iPhone
 - Ha creato criteri di termini e condizioni specifichi per Contoso, visualizzati durante l’installazione del Portale aziendale per i dispositivi mobili di Contoso
 - Per i dispositivi non registrati, un set di criteri di gestione di applicazioni per dispositivi mobili (MAM) per richiedere l'autenticazione per accedere ai servizi di Office 365

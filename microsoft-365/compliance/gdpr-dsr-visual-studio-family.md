@@ -4,21 +4,21 @@ description: Richieste dell'interessato per il GDPR nella famiglia Visual Studio
 keywords: Visual Studio, Visual Studio Code, Visual Studio per Mac, documentazione di Visual Studio, privacy, GDPR
 localization_priority: Priority
 audience: itpro
-ms.prod: visual-studio
+ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
 author: PoulChapman
-ms.author: pchapman
-manager: scalla
+ms.author: olholder
+manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bba28648cbee6dd32c2005bcb584e97a4c534e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286924"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Richieste dell'interessato per il GDPR nella famiglia Visual Studio
 
@@ -101,7 +101,7 @@ I feedback pubblici includono: i problemi segnalati, i commenti e le soluzioni.
 
 Per visualizzare i dati relativi ai feedback, procedere come segue:
 
-1. Accedere a [Community degli sviluppatori](https://developercommunity.visualstudio.com). Nell'angolo superiore destro, fare clic sul profilo e selezionare **Profilo e preferenze**.
+1. Accedere alla [Community degli sviluppatori](https://developercommunity.visualstudio.com). Nell'angolo in alto a destra fare clic sul profilo e selezionare **Profilo e preferenze**.
 2. Fare clic su una delle schede **Profilo**, **Notifiche**, **Attività** e **Allegati** per visualizzare i dati inviati ai sistemi di feedback.
    1. Per **Profilo** si intende il profilo della [Community degli sviluppatori](https://developercommunity.visualstudio.com), che include nome utente, indirizzo di posta elettronica, informazioni e così via.
    2. **Notifiche** consente di controllare le notifiche di posta elettronica ricevute.
@@ -121,7 +121,7 @@ Per visualizzare i dati relativi ai feedback, procedere come segue:
 
 Per avviare l'esportazione, procedere come segue:
 
-1. Accedere a [Community degli sviluppatori](https://developercommunity.visualstudio.com). Nell'angolo superiore destro, fare clic sul profilo e selezionare **Profilo e preferenze**.
+1. Accedere alla [Community degli sviluppatori](https://developercommunity.visualstudio.com). Nell'angolo in alto a destra fare clic sul profilo e selezionare **Profilo e preferenze**.
 2. Fare clic sulla scheda **Privacy** e quindi su **Crea un archivio** per richiedere l'esportazione dei dati.
 3. Lo **Stato dell'archivio** verrà aggiornato per indicare la preparazione dei dati. L'intervallo di tempo prima che i dati risultino disponibili dipende dalla quantità di dati da esportare.
 4. Quando i dati sono pronti, si riceverà un messaggio di posta elettronica.

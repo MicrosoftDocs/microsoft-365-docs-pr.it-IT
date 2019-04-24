@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sul modo in cui Contoso usa System Center Configuration Manager per distribuire Office 365 ProPlus.
-ms.openlocfilehash: 5b98f72561d7a431a4ca4a0b0241c6105c87026f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 0fa0ca1d268dbfd57891804e20959147cd6385e4
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283549"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Distribuzione di Office 365 ProPlus per Contoso
 
@@ -71,7 +71,7 @@ Per completare la distribuzione di Office, Contoso ha implementato la procedura 
 7. In Configuration Manager, ha distribuito i pacchetti di Windows e Office ai punti di distribuzione nella propria rete, quindi ha eseguito le sequenze di attività di distribuzione di Configuration Manager per distribuire il pacchetto pilota di Office 365 ProPlus nel gruppo pilota.
 8. Una volta risolti i problemi di compatibilità con il gruppo pilota, Contoso ha eseguito le sequenze di attività per distribuire il pacchetto completo di Office 365 ProPlus nel gruppo di grandi dimensioni.
 
-Poiché Contoso ha scelto di aggiornare automaticamente i dispositivi dal cloud, non è stato necessario gestire il processo in Configuration Manger. I suoi dispositivi vengono automaticamente aggiornati direttamente dal cloud in base al canale di aggiornamento definito come parte della distribuzione iniziale. 
+Poiché Contoso ha scelto di aggiornare automaticamente i dispositivi dal cloud, non è stato necessario gestire il processo in Configuration Manager. I dispositivi vengono aggiornati automaticamente direttamente dal cloud basato sul canale di aggiornamento che è stato definito come parte della distribuzione iniziale. 
 
 ## <a name="next-step"></a>Passaggio successivo
 
