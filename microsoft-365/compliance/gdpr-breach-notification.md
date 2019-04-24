@@ -2,21 +2,21 @@
 title: Notifica di violazione
 description: Informazioni su come i servizi Microsoft proteggono da una violazione dei dati personali e su come Microsoft gestisce un'eventuale violazione e lo comunica agli utenti interessati.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: c3935e502d3621afdcdf3f59b70fbc230ddde637
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 62531fe2fe69d4b718c9ba6354e957bbc7839223
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286376"
 ---
 # <a name="breach-notification-under-the-gdpr"></a>Notifica di violazione secondo il GDPR
 

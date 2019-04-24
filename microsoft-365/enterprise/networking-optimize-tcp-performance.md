@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Configurare le impostazioni TCP e i servizi di Office 365 per ottenere prestazioni migliori.
-ms.openlocfilehash: 40f99f1b50a324af0650382de165dcfd3df97b0c
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: cf172bcaa87b7c69d33d349d18c449efff30a1d9
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290883"
 ---
 # <a name="step-5-optimize-client-and-office-365-service-performance"></a>Passaggio 5: ottimizzare client e prestazioni del servizio di Office 365
 

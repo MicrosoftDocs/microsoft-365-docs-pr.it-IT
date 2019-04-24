@@ -2,16 +2,15 @@
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obbligatorio: la rete è pronta per Microsoft 365 Enterprise
 
 - Le sedi hanno una larghezza di banda per Internet adeguata per il traffico di Microsoft 365, compreso Office 365, Microsoft Intune, installazione e aggiornamenti di Windows 10 Enterprise
-- Sedi centrali per tutto il traffico Internet generale
-- Succursali per il traffico degli endpoint della categoria Ottimizzazione
-- La rete globale mappa a un'architettura di riferimento di Office 365
+- L'architettura della rete globale corrisponde a un'architettura di riferimento di Office 365
+- Le modifiche alla rete sono state sperimentate e verificate e soddisfano i requisiti di latenza del traffico
 
 Se necessario, il [Passaggio 1](../networking-provide-bandwidth-cloud-services.md) può aiutare a soddisfare questo requisito.
 
 <a name="crit-networking-step2"></a>
 ### <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>Obbligatorio: gli uffici locali devono avere una risoluzione del nome e connessioni Internet locali
 
-È necessario configurare ogni ufficio locale con l'accesso Internet tramite un ISP locale i cui server DNS utilizzano un indirizzo IP pubblico locale che identifichi la posizione su Internet. Questo consente agli utenti che hanno accesso a Office 365 e Intune di ottenere le migliori prestazioni possibili.
+È necessario configurare ogni sede remota con l'accesso Internet tramite un ISP locale i cui server DNS utilizzano un indirizzo IP pubblico locale che identifichi la posizione su Internet. Questo consente agli utenti che hanno accesso a Office 365 e Intune di ottenere le migliori prestazioni possibili.
 
 Se non si utilizza un ISP locale per ogni filiale, le prestazioni potrebbero risentirne, poiché il traffico di rete deve attraversare il backbone dell'organizzazione o le richieste di dati sono servite da server remoti front-end.
 
@@ -33,7 +32,7 @@ Se necessario, il [Passaggio 3](../networking-avoid-network-hairpins.md) può ai
 
 Sono stati distribuiti i file PAC più recenti nei browser Internet locali in modo che il traffico per i nomi di dominio DNS di Microsoft 365 bypassino i server proxy.
 
-Sono stati configurati dispositivi perimetrali di rete (come firewall, SSL Break and Inspect e dispositivi di ispezione dei pacchetti) per utilizzare il bypass di traffico o per eseguire un'elaborazione minima del traffico per le categoria Ottimizzazione e Consenti degli endpoint di Microsoft 365.
+Sono stati configurati i dispositivi della rete perimetrale (come firewall, SSL Break and Inspect e dispositivi di ispezione dei pacchetti) per utilizzare il bypass di traffico o per eseguire un'elaborazione minima del traffico per le categorie Ottimizzazione e Consenti degli endpoint di Microsoft 365.
 
 
 #### <a name="how-to-test"></a>Come eseguire il test

@@ -3,22 +3,22 @@ title: Criteri uscita della distribuzione di Office 365 ProPlus
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2018
+ms.date: 03/06/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise per l'infrastruttura di Office 365 ProPlus.
-ms.openlocfilehash: c38539d85e1c826667b7a8a177a15ab75350aa5f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c9a2afeae8d28170f4e8a15531a08e6b94cb48c2
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291074"
 ---
 # <a name="office-365-proplus-deployment-exit-criteria"></a>Criteri uscita della distribuzione di Office 365 ProPlus
 
@@ -26,7 +26,7 @@ ms.locfileid: "26868266"
 
 *Questo passaggio si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise e Microsoft 365 Education*
 
-Prima di passare alla fase successiva del processo di distribuzione, assicurarsi che la configurazione soddisfi i seguenti criteri obbligatori per l'infrastruttura di Office 365 ProPlus.
+Verificare che la configurazione soddisfi i seguenti criteri necessari per l'infrastruttura di Office 365 ProPlus.
 
 - La valutazione dell'infrastruttura e dell'ambiente è stata completata, tra cui:
 
@@ -52,9 +52,12 @@ Prima di passare alla fase successiva del processo di distribuzione, assicurarsi
     - Tutti i dispositivi client sono presenti nel canale di aggiornamento appropriato e ricevono gli aggiornamenti
     - In tutti i dispositivi client sono installate o sono disponibili le lingue appropriate
 
-## <a name="next-phase"></a>Fase successiva 
 
+
+## <a name="results-and-next-steps"></a>Risultati e passaggi successivi
+
+I dispositivi client dispongono della versione più recente di Office 365 ProPlus installata e riceveranno aggiornamenti regolari.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| La fase successiva del processo di distribuzione end-to-end per Microsoft 365 Enterprise è la [gestione dei dispositivi mobili](mobility-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)| Si stanno seguendo le fasi della distribuzione end-to-end di Microsoft 365 Enterprise, quella successiva è la [gestione dei dispositivi mobili](mobility-infrastructure.md). |

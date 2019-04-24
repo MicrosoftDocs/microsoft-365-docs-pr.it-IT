@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come eseguire la migrazione di file e impostazioni degli utenti.
-ms.openlocfilehash: 51811cf972328cc26687b45fb65e2bdd6d58af1f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: cb5d670d06b284bb9191447ce461835728223f27
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291735"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Passaggio 4: migrazione delle impostazioni e dei file utente
 
-Lo spostamento delle impostazioni e dei file degli utenti nei rispettivi nuovi o aggiornati PC è un processo critico. Non è possibile sbagliare. È possibile eseguire la migrazione di ogni PC manualmente o è possibile scegliere un modo per automatizzare il processo. Qualsiasi sia il metodo di migrazione scelto, sono tre le operazioni che devono essere affrontate: il trasferimento dei file degli utenti, le relative impostazioni e la gestione dei layout della barra delle applicazioni e del menu Start di Windows 10.
+Spostare i file e le impostazioni degli utenti ai PC nuovi o aggiornati è un processo critico; non è possibile sbagliare. È possibile eseguire manualmente la migrazione di ogni PC o scegliere uno dei tanti modi per automatizzare il processo. Qualsiasi sia il metodo di migrazione scelto, devono essere messe in conto tre considerazioni principali: il trasferimento dei file degli utenti, le impostazioni e la gestione di Windows 10 Start e dei layout della barra delle applicazioni.
 
 ![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
@@ -36,7 +36,7 @@ Lo spostamento delle impostazioni e dei file degli utenti nei rispettivi nuovi o
 </table>
 
 >[!NOTE]
->Anche se è possibile continuare a utilizzare i processi di migrazione utilizzati in passato, con il passaggio a Office 365 ProPlus consigliamo di usare lo "Spostamento di cartelle note" di OneDrive (vedere di seguito). Per vedere il processo di distribuzione, visitare il [Centro distribuzione desktop moderno](https://aka.ms/HowToShift).
+>Anche se è possibile continuare a utilizzare i processi di migrazione utilizzati in passato, con il passaggio a Office 365 ProPlus consigliamo di usare lo "Spostamento di cartelle note" di OneDrive (vedere di seguito). Per vedere l’intero processo di distribuzione, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
 >
 
 Una delle attività più complesse e spesso più manuale di una distribuzione su vasta scala è quella del trasferimento dei file e delle impostazioni degli utenti. In questo articolo, illustreremo le opzioni disponibili per eseguire la migrazione degli utenti in PC nuovi, aggiornati o di cui è stata ricreata l'immagine.

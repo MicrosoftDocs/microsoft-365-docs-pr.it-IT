@@ -3,43 +3,42 @@ title: "Fase 1: criteri uscita dell'infrastruttura di rete"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise per l'infrastruttura di rete.
-ms.openlocfilehash: 8161fa2b92ffb4c7c4713e9356c0bc1bfec39d07
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 9ea601d66ef2df0d7a4efde188a70c51e3fb9f60
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291368"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Fase 1: criteri uscita dell'infrastruttura di rete
 
 ![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Se l'infrastruttura di rete soddisfa i seguenti requisiti, è possibile procedere alla Fase 2.
+Verificare che l'infrastruttura di rete soddisfi i seguenti criteri obbligatori e che si tengano in considerazione quelli ritenuti facoltativi.
 
 <a name="crit-networking-step1"></a>
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obbligatorio: la rete è pronta per Microsoft 365 Enterprise
 
 - Le sedi hanno una larghezza di banda per Internet adeguata per il traffico di Microsoft 365, compreso Office 365, Microsoft Intune, installazione e aggiornamenti di Windows 10 Enterprise
-- Sedi centrali per tutto il traffico Internet generale
-- Succursali per il traffico degli endpoint della categoria Ottimizzazione
-- La rete globale mappa a un'architettura di riferimento di Office 365
+- L'architettura della rete globale corrisponde a un'architettura di riferimento di Office 365
+- Le modifiche alla rete sono state sperimentate e verificate e soddisfano i requisiti di latenza del traffico 
 
 Se necessario, il [Passaggio 1](networking-provide-bandwidth-cloud-services.md) può aiutare a soddisfare questo requisito.
 
 <a name="crit-networking-step2"></a>
 ## <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>Obbligatorio: gli uffici locali devono avere una risoluzione del nome e connessioni Internet locali
 
-È necessario configurare ogni ufficio locale con l'accesso Internet tramite un ISP locale i cui server DNS utilizzano un indirizzo IP pubblico locale che identifichi la posizione su Internet. Questo consente agli utenti che hanno accesso a Office 365 e Intune di ottenere le migliori prestazioni possibili.
+È necessario configurare ogni sede remota con l'accesso Internet tramite un ISP locale i cui server DNS utilizzano un indirizzo IP pubblico locale che identifichi la posizione su Internet. Questo consente agli utenti che hanno accesso a Office 365 e Intune di ottenere le migliori prestazioni possibili.
 
 Se non si utilizza un ISP locale per ogni filiale, le prestazioni potrebbero risentirne, poiché il traffico di rete deve attraversare il backbone dell'organizzazione o le richieste di dati sono servite da server remoti front-end.
 
@@ -61,7 +60,7 @@ Se necessario, il [Passaggio 3](networking-avoid-network-hairpins.md) può aiuta
 
 Sono stati distribuiti i file PAC più recenti nei browser Internet locali in modo che il traffico per i nomi di dominio DNS di Microsoft 365 bypassino i server proxy.
 
-Sono stati configurati dispositivi perimetrali di rete (come firewall, SSL Break and Inspect e dispositivi di ispezione dei pacchetti) per utilizzare il bypass di traffico o per eseguire un'elaborazione minima del traffico per le categoria Ottimizzazione e Consenti degli endpoint di Microsoft 365.
+Sono stati configurati i dispositivi della rete perimetrale (come firewall, SSL Break and Inspect e dispositivi di ispezione dei pacchetti) per utilizzare il bypass di traffico o per eseguire un'elaborazione minima del traffico per le categorie Ottimizzazione e Consenti degli endpoint di Microsoft 365.
 
 
 ### <a name="how-to-test"></a>Come eseguire il test
@@ -78,8 +77,10 @@ Se necessario, il [Passaggio 4](networking-configure-proxies-firewalls.md) può 
 
 Se necessario, il [Passaggio 5](networking-optimize-tcp-performance.md) può aiutare con questa opzione.
 
-## <a name="next-phase"></a>Fase successiva
+## <a name="results-and-next-steps"></a>Risultati e passaggi successivi
+
+Gli utenti intranet sono ora pronti a utilizzare i servizi cloud di Microsoft 365 in un percorso di rete efficiente verso e in Internet.
 
 |||
 |:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| La fase successiva del processo di distribuzione end-to-end per Microsoft 365 Enterprise è l'[identità](identity-infrastructure.md). |
+|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)| Si stanno seguendo le fasi della distribuzione end-to-end di Microsoft 365 Enterprise, quella successiva è l’[identità](identity-infrastructure.md). |

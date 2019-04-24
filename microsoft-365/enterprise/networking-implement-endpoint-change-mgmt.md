@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ''
-ms.openlocfilehash: 44990dcfd09e5cc2a44666da43fdeeaffd59da7d
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 626d0e242c549fb16880710bbca31db0bdee9029
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291325"
 ---
 # <a name="step-4-plan-for-url-and-ip-address-changes"></a>Passaggio 4: pianificare modifiche apportate agli indirizzi IP e URL
 
