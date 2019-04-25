@@ -3,61 +3,99 @@ title: Infrastruttura di base di Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/27/2018
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le fasi principali della distribuzione dell'infrastruttura di base per Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: abc38dc0eb3d33f7af9e2c91f020a735cf0c8d96
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 668775097eeffff569b99cc9fe4cd259f5d25c22
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287122"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastruttura di base di Microsoft 365 Enterprise
 
-Per trarre vantaggi da Microsoft 365 Enterprise, iniziare la distribuzione con la sua infrastruttura di base. 
+Se si esegue la distribuzione end-to-end di Microsoft 365 Enterprise autonomamente, è necessario innanzitutto creare una base fissa sulla quale le applicazioni e i servizi possano sbloccare creatività e collaborazione in un ambiente protetto. 
 
-## <a name="foundation-infrastructure-for-deploying-microsoft-365-enterprise"></a>Infrastruttura di base per la distribuzione di Microsoft 365 Enterprise
+Per un percorso definito end-to-end per la distribuzione, è possibile utilizzare queste fasi per pianificare e distribuire l'infrastruttura di base di Microsoft 365 Enterprise:
 
-L'infrastruttura di base è la base da cui è possibile distribuire i carichi di lavoro per la produttività (come Exchange Online e Microsoft Teams in Office 365) e scenari (come una migrazione a Microsoft 365 e aggiornamenti client automatizzati). Fornisce sicurezza e integrazione intelligenti che semplificano la gestione continuativa, garantendo che il software client sia aggiornato con i miglioramenti più recenti relativi a produttività e sicurezza.
+| | Fase | Risultati |
+|:-------|:-----|:-----|
+|![](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Fase 1: Funzionalità di rete](networking-infrastructure.md)| La rete è ottimizzata per l'accesso ai servizi basati sul cloud di Microsoft 365. |
+|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Fase 2: identità](identity-infrastructure.md)| Gli account di amministratore sono protetti, gli utenti e gruppi sono sincronizzati e l'autenticazione degli utenti è sicura. |
+|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Fase 3: Windows 10 Enterprise](windows10-infrastructure.md)| I computer esistenti basati su Windows possono eseguire l'aggiornamento a Windows 10 Enterprise e vengono installati nuovi dispositivi con Windows 10 Enterprise. |
+|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Fase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Gli utenti di Microsoft Office esistenti possono eseguire l'aggiornamento a Office 365 ProPlus. |
+|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Fase 5: gestione dei dispositivi mobili](mobility-infrastructure.md)| I dispositivi possono essere registrati e gestiti. |
+|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Fase 6: protezione delle informazioni](infoprotect-infrastructure.md)| Le etichette sono pronte per proteggere i documenti e vengono attivate le funzionalità di protezione di Office 365. |
 
-Per pianificare e distribuire l'infrastruttura di base di Microsoft 365 Enterprise all'interno dell'organizzazione si usano le seguenti fasi:
+Le fasi iniziano con le più fondamentali (rete e identità) e quindi creano livelli di impostazioni dell'infrastruttura e gruppi per:
 
-|||
-|:-------|:-----|
-|![](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Fase 1: rete](networking-infrastructure.md)|
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Fase 2: identità](identity-infrastructure.md)|
-|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Fase 3: Windows 10 Enterprise](windows10-infrastructure.md)|
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Fase 4: Office 365 ProPlus](office365proplus-infrastructure.md)|
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Fase 5: gestione dei dispositivi mobili](mobility-infrastructure.md)|
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Fase 6: protezione delle informazioni](infoprotect-infrastructure.md)|
+- Installare la versione più sicura e aggiornata di Windows nel dispositivo.
+- Installare la versione più aggiornata di Office nel dispositivo.
+- Gestire i dispositivi dell'organizzazione.
+- Proteggere le informazioni in tali dispositivi e nel cloud.
 
+Tuttavia, c’è flessibilità nel configurare e nell’implementare fasi o passaggi nelle fasi per soddisfare le necessità di risorse IT e business.
 
-Prima di uscire da ogni fase, è necessario esaminare i relativi criteri uscita, ovvero un insieme di condizioni necessarie che è necessario soddisfare e di condizioni facoltative da prendere in considerazione. I criteri uscita di ogni fase garantiscono che l'infrastruttura cloud e locale e la risultante configurazione end-to-end soddisfino i requisiti di una distribuzione Microsoft 365 Enterprise.
+- **Organizzazioni di dimensioni inferiori o nuove**, se necessario, possono seguire le fasi per creare l’infrastruttura in modo metodico.
 
-Guardare questo breve video sul funzionamento del contenuto dell'infrastruttura di base.
+-  **Se si ha un'organizzazione aziendale**, visualizzare le fasi come livelli dell'infrastruttura IT invece di un percorso definito, e determinare la strategia migliore per ottenere una finale conformità ai requisiti per ogni livello all'interno dell'organizzazione.
+
+Al termine di ogni fase, è necessario esaminare i criteri di uscita, comprese le condizioni necessarie che è necessario soddisfare e le condizioni facoltative da prendere in considerazione. I criteri di uscita per ogni fase assicurano che la risultante configurazione end-to-end e l’infrastruttura cloud e locale soddisfino i requisiti per una distribuzione di Microsoft 365 Enterprise.
+
+Per visualizzare la struttura del contenuto, vedere questo breve video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE23VRG]
 
-La figura seguente mostra l'infrastruttura di base nel contenuto della distribuzione generale di Microsoft 365 Enterprise e il relativo percorso.
+Ecco l'infrastruttura di base della Guida alla distribuzione generale di Microsoft 365 Enterprise:
 
 ![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
-## <a name="fasttrack"></a>FastTrack
+## <a name="infrastructure-configuration-vs-user-rollout"></a>Configurazione dell'infrastruttura vs. implementazione dell’utente
 
-FastTrack è un vantaggio continuo e ripetibile, disponibile come parte dell'abbonamento, fornito dai tecnici Microsoft per consentire di passare al cloud secondo le proprie tempistiche. FastTrack inoltre offre l'accesso a partner qualificati per servizi aggiuntivi, in base alle proprie esigenze. Con al momento oltre 40.000 utenti abilitati, FastTrack consente di massimizzare il ROI, di accelerare la distribuzione e di aumentare l'adozione all'interno dell'organizzazione. Vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365). 
+L'infrastruttura di base è un set di configurazione di software e servizi configurati che, se combinati insieme per un utente, consentono di sfruttare l'intera gamma di funzionalità e protezioni offerte da Microsoft 365 Enterprise. La destinazione finale del percorso di distribuzione end-to-end consiste nell'applicare questa infrastruttura a tutti gli utenti e i dispositivi basati su Windows. 
 
-Se si desidera sfruttare FastTrack per la distribuzione di Microsoft 365 Enterprise, è possibile usare l'[assistente distribuzione di Microsoft 365](https://aka.ms/microsoft365setupguide) di FastTrack per indicazioni su come distribuire e configurare l'infrastruttura di base. Per accedere a questa pagina è necessario essere connesso come amministratore globale in un tenant di Office 365 o Microsoft 365.
+Tuttavia, è importante tenere presente che l'infrastruttura di base di Microsoft 365 Enterprise è indipendente dalla distribuzione di software e servizi agli utenti. ***È possibile configurare i livelli dell'infrastruttura di base senza la necessità di implementare i livelli per tutti gli utenti.***
+
+Di conseguenza è possibile configurare, testare e provare a usare gli elementi dell'infrastruttura di base prima dell'implementazione di questi elementi per i numerosi utenti negli uffici, regioni o reparti dell'organizzazione.
+
+Ad esempio, creare le impostazioni per:
+
+| Fase | Risultati |
+|:-------|:-----|
+| Identità | Sincronizzazione di account e gruppi per i criteri di accesso condizionale basato sull'identità. |
+| Windows 10 Enterprise | Gruppi per aggiornare automaticamente i computer che eseguono Windows 7 o Windows 8.1 a Windows 10 Enterprise. |
+| Office 365 ProPlus | Gruppi per distribuire automaticamente Office 365 ProPlus agli utenti con Office 2010, Office 2013 o Office 2016. |
+| Gestione dei dispositivi mobili | Gruppi per la registrazione di dispositivi e per i criteri di accesso condizionale basati sul dispositivo. |
+| Protezione delle informazioni | Le etichette e i gruppi di Office 365 e di Azure Information Protection. |
+
+Quando si è pronti a distribuire elementi di questa infrastruttura per gli utenti:
+
+| Fase | Azione di distribuzione |
+|:-------|:-----|
+| Identità | Aggiungere account utenti ai gruppi per i criteri di accesso condizionale basato sull'identità. |
+| Windows 10 Enterprise | Aggiungere account ai gruppi di distribuzione automaticamente di Windows 10 Enterprise utilizzata per gli utenti con Windows 7 o Windows 8.1. |
+| Office 365 ProPlus | Aggiungere account utenti ai gruppi per distribuire automaticamente Office 365 ProPlus agli utenti con Office 2010, Office 2013 o Office 2016. |
+| Gestione dei dispositivi mobili | Aggiungere account ai gruppi per la registrazione di dispositivi e per i criteri di accesso condizionale basati sul dispositivo. |
+| Protezione delle informazioni | Aggiungere account utenti ai gruppi per le etichette di protezione delle informazioni. |
+
+Dopo che l'infrastruttura di base è completata, testata e provata, è possibile implementare il software installato, ad esempio Windows 10 Enterprise e Office 365 ProPlus, e i servizi e le protezioni basati su cloud, ad esempio la registrazione di dispositivi e i criteri di accesso condizionale, per tutti gli utenti nel modo che meglio soddisfa le risorse IT e gli obiettivi aziendali.
+
+## <a name="deployment-and-project-management-strategies"></a>Strategie di distribuzione e di gestione progetti
+
+Per farsi un'idea di come affrontare la gestione dei progetti delle diverse fasi dell'infrastruttura di base per utenti pilota e per il resto dell'organizzazione, vedere [strategie di distribuzione](deployment-strategies-microsoft-365-enterprise.md).
+
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Se si dispone dell'infrastruttura per Office 365, Enterprise Mobility + Security o Windows 10 Enterprise, vedere [Distribuzione di Microsoft 365 Enterprise con l'infrastruttura esistente](deploy-with-existing-infrastructure.md). In questo articolo vengono descritti i passaggi dei criteri uscita di ogni fase. Con queste informazioni, è possibile determinare più rapidamente cosa è necessario cambiare per rendere l'infrastruttura IT conforme a Microsoft 365 Enterprise.
-
-In caso contrario, è possibile iniziare la distribuzione end-to-end di Microsoft 365 Enterprise da [Fase 1: rete](networking-infrastructure.md).
+- Ho l'infrastruttura esistente di Office 365, Enterprise Mobility + Security (EMS) o Windows 10 Enterprise:
+  - Vedere [Distribuire un'infrastruttura esistente](deploy-with-existing-infrastructure.md). In questo articolo i passaggi per i criteri di uscita per ogni fase.
+- Partire da zero: 
+   - Iniziare il percorso di distribuzione end-to-end con [Fase 1: Funzionalità di rete](networking-infrastructure.md).
