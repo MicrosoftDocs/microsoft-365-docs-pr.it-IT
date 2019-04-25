@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulle opzioni per la distribuzione del sistema operativo e gli aggiornamenti delle funzionalità.
-ms.openlocfilehash: 6aae2fb39937bec1eebfdc11e403f3835cb895cd
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: b860a56ba2ed163311a8a92d8dd408dcb8983821
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290090"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Passaggio 6: distribuzione del sistema operativo e aggiornamenti delle funzionalità
-
-Informazioni sulle opzioni e su come prepararsi per la distribuzione del sistema operativo tramite gli approcci di upgrade e acquisizione dell'immagine con System Center Configuration Manager o Microsoft Deployment.
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
@@ -36,7 +34,7 @@ Informazioni sulle opzioni e su come prepararsi per la distribuzione del sistema
 </table>
 
 >[!NOTE]
->La distribuzione del sistema operativo e gli aggiornamenti delle funzionalità costituiscono il sesto passaggio del nostro processo di distribuzione consigliato che copre la distribuzione di Windows 10, upgrade e aggiornamenti delle funzionalità. Per vedere il processo completo di distribuzione per la versione desktop, visitare il [Centro di distribuzione desktop moderno](https://aka.ms/HowToShift).
+>La distribuzione del sistema operativo e gli aggiornamenti delle funzionalità costituiscono il sesto passaggio del nostro processo di distribuzione consigliato che copre la distribuzione di Windows 10, upgrade e aggiornamenti delle funzionalità. Per visualizzare il processo completo di distribuzione desktop, visitare il [centro di distribuzione desktop](https://aka.ms/HowToShift).
 >
 
 Se è stato seguito il processo di distribuzione fino ad adesso, sono stati almeno completati parzialmente i passaggi per la preparazione di dispositivo e app, è stata preparata l'infrastruttura, sono stati configurati e raccolti i pacchetti app, è stato ideato un piano per la migrazione dei file utente e la configurazione delle impostazioni predefinite e si dispongono di piani per la conservazione dei controlli di sicurezza esistenti o magari per l'implementazione di nuovi.
@@ -109,7 +107,7 @@ Indipendentemente dal tipo di distribuzione scelto, è necessario assicurarsi ch
 
 ### <a name="windows-autopilot"></a>Windows Autopilot
 
-Una nuova opzione di Windows 10 consiste nel configurare nuovi PC nell'ambito di un ciclo di aggiornamento hardware tramite Windows Autopilot. È possibile collaborare con i fornitori di hardware di supporto per personalizzare l'esperienza di configurazione Windows predefinita, ad esempio eliminando le opzioni presentate agli utenti, come Contratto di licenza o le impostazioni di telemetria.
+Una nuova opzione di Windows 10 consente di configurare nuovi PC durante un ciclo di aggiornamento hardware con Windows Autopilot. Grazie a questa opzione è possibile collaborare con fornitori di hardware di supporto per personalizzare l'esperienza di configurazione Windows predefinita, ad esempio eliminando le opzioni presentate agli utenti, come i contratti di licenza o le impostazioni dei dati di diagnostica.
 
 Pertanto, quando un utente accede al PC durante la configurazione tramite le credenziali di Azure AD, il dispositivo si registra a Microsoft Intune, che può subentrare nel processo di distribuzione e applicare applicazioni, configurazioni di aggiornamenti software e criteri di conformità.
 
@@ -117,9 +115,21 @@ Pertanto, quando un utente accede al PC durante la configurazione tramite le cre
 
 [Prerequisiti di Windows Autopilot](https://docs.microsoft.com/it-IT/windows/deployment/windows-autopilot/windows-10-autopilot#prerequisites)
 
+## <a name="windows-update-for-business-for-feature-updates"></a>Windows Update per le aziende per gli aggiornamenti delle funzionalità
+
+Windows Update per le aziende è un servizio gratuito che consente ai professionisti IT di mantenere i dispositivi Windows 10 sempre aggiornati connettendo direttamente i dispositivi al servizio Windows Update. È possibile configurare Windows Update per le aziende tramite Criteri di gruppo o soluzioni MDM, come Microsoft Intune, e consente ai professionisti IT di creare [circuiti di distribuzione](https://docs.microsoft.com/it-IT/windows/deployment/update/waas-deployment-rings-windows-10-updates) per convalidare nuove build. È integrato in strumenti di gestione esistenti, come Windows Server Update Services (WSUS), System Center Configuration Manager (Current Branch) e Microsoft Intune. Inoltre, Windows Update per le aziende supporta la distribuzione peer-to-peer per ottimizzare l'efficienza della larghezza di banda e ridurre la congestione della rete.
+
+Per informazioni più dettagliate su Windows Update per le aziende, vedere la documentazione seguente:
+
+- [Distribuire gli aggiornamenti con Windows Update per le aziende](https://docs.microsoft.com/it-IT/windows/deployment/update/waas-manage-updates-wufb)
+- [Configurare Windows Update per le aziende](https://docs.microsoft.com/it-IT/windows/deployment/update/waas-configure-wufb)
+- [Integrare Windows Update per le aziende con strumenti di gestione esistenti](https://docs.microsoft.com/it-IT/windows/deployment/update/waas-integrate-wufb)
+- [Usare Criteri di gruppo per configurare Windows Update per le aziende](https://docs.microsoft.com/it-IT/windows/deployment/update/waas-wufb-group-policy)
+- [Usare Microsoft Intune per configurare Windows Update per le aziende](https://docs.microsoft.com/it-IT/intune/windows-update-for-business-configure)
+
 ## <a name="next-step"></a>Passaggio successivo 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[Passaggio 7: Windows e Office come servizio](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Passaggio 7: manutenzione di Windows e Office](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>Passaggio precedente
 

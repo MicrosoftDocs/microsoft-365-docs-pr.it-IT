@@ -1,5 +1,5 @@
 ---
-title: Centro di distribuzione desktop moderno
+title: Centro di distribuzione desktop
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -12,19 +12,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Panoramica del centro di distribuzione desktop moderno.
-ms.openlocfilehash: d9c91c57fda8c1438ae7233002508c51b7b0ff5e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: Panoramica del centro di distribuzione desktop.
+ms.openlocfilehash: 2f4615e66f23d852b751abfb2688202d25e39299
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284903"
 ---
-# <a name="modern-desktop-deployment-center"></a>Centro di distribuzione desktop moderno
+# <a name="desktop-deployment-center"></a>Centro di distribuzione desktop
 
-<img src="media/getting-started-media/getting-started-media-1.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
+<img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 
-Seguire la procedura sotto riportata per pianificare ed eseguire una distribuzione di Windows 10 e Office 365 ProPlus su vasta scala. Ogni passaggio è parte del processo generale di pianificazione e distribuzione e i passaggi vanno in genere eseguiti in parallelo in una distribuzione in fasi. Scaricare la versione gratuita di [Distribuzione del desktop moderno e Management Lab Kit](https://aka.ms/howtoshiftlabs) per un'esercitazione pratica con gli strumenti evidenziati nel processo di distribuzione.
+Seguire la procedura descritta di seguito per pianificare ed eseguire una distribuzione di Windows 10 e Office 365 ProPlus su vasta scala. Ogni passaggio fa parte del processo generale di pianificazione e distribuzione e i passaggi vanno in genere eseguiti in parallelo in una distribuzione in fasi. Scaricare la versione gratuita di [Distribuzione del desktop e Management Lab Kit](https://aka.ms/howtoshiftlabs) per un'esercitazione pratica con gli strumenti evidenziati nel processo di distribuzione. Per la distribuzione desktop è anche possibile [richiedere assistenza](https://aka.ms/mddhelp) a partner Microsoft e servizi FastTrack.
 
 <br>
 
@@ -32,14 +32,14 @@ Seguire la procedura sotto riportata per pianificare ed eseguire una distribuzio
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd0">Guida introduttiva: indicazioni su utenti, processi e tecnologia</a></strong></p>
-<p>Informazioni sui vantaggi di un desktop moderno, le modifiche principali e considerazioni sulla distribuzione precedente e procedure consigliate per garantire una transizione a Windows 10 e Office 365 ProPlus priva di problemi.</p></td>
+<p>Informazioni sui vantaggi correlato al passaggio a Windows 10 e Office 365 ProPlus e sulle principali modifiche, considerazioni rispetto alle distribuzioni precedenti e procedure consigliate per una transizione a Windows 10 e Office 365 ProPlus priva di problemi.</p></td>
 <td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="130" width="231" /></a></td>
 </tr>
 <tbody>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd1">Passaggio 1: conformità di dispositivi e app</a></strong></p>
-<p>Iniziare il progetto di distribuzione desktop con un inventario dei dispositivi e delle app, con l’assegnazione delle priorità, con l’esecuzione di test sui dispositivi e sulle app cui è stata assegnata la priorità, quindi con la correzione di quanto necessario per prepararsi alla distribuzione.</p></td>
+<p>Iniziare il progetto di distribuzione desktop con un inventario dei dispositivi e delle app, con l'assegnazione delle priorità, con l'esecuzione di test sui dispositivi e sulle app cui è stata assegnata la priorità, quindi con la correzione di quanto necessario per prepararsi alla distribuzione.</p></td>
 <td><a href="https://aka.ms/ddev1" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
@@ -51,7 +51,7 @@ Seguire la procedura sotto riportata per pianificare ed eseguire una distribuzio
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="Step 3" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd3">Passaggio 3: distribuzione di Office e app line-of-business</a></strong></p>
-<p>Verificare che le app siano compresse e pronte per l'installazione automatica. Ottenere maggiori informazioni sulle nuove opzioni offerte dai pacchetti a portata di clic di Office 365 ProPlus per configurare, distribuire e mantenere aggiornate le app di Office.</p></td>
+<p>Verificare che le app siano compresse e pronte per l'installazione automatica. In questo passaggio vengono fornite informazioni sulle nuove opzioni offerte dai pacchetti a portata di clic di Office 365 ProPlus per configurare, distribuire e mantenere aggiornate le app di Office.</p></td>
 <td><a href="https://aka.ms/ddev3" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-16.png" alt="Step 3" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
@@ -63,7 +63,7 @@ Seguire la procedura sotto riportata per pianificare ed eseguire una distribuzio
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd5">Passaggio 5: considerazioni sulla sicurezza e conformità</a></strong></p>
-<p>Windows 10 e Office 365 ProPlus forniscono nuovi modi per proteggere dati, dispositivi e utenti e per rilevare rapidamente e rispondere alle minacce. Ottenere inoltre informazioni su come gestire i problemi comuni relativi alla crittografia del disco, alle app antimalware e ai criteri quando si passa a Windows 10.</p></td>
+<p>Windows 10 e Office 365 ProPlus forniscono nuovi modi per proteggere dati, dispositivi e utenti e per rilevare rapidamente e rispondere alle minacce. In questo passaggio vengono inoltre fornite informazioni su come gestire i problemi comuni relativi alla crittografia del disco, alle app antimalware e ai criteri quando si passa a Windows 10.</p></td>
 <td><a href="https://aka.ms/ddev5" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
@@ -74,21 +74,21 @@ Seguire la procedura sotto riportata per pianificare ed eseguire una distribuzio
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
-<td><p><strong><a href="https://aka.ms/mdd7">Passaggio 7: preparazione per Windows e Office come servizio</a></strong></p>
-<p>Windows 10 e Office 365 ProPlus aggiungono continuamente nuove funzionalità per continuare a offrire esperienze utente e protezione con le ultime novità. Ottenere informazioni su come restare al passo con gli aggiornamenti mensili e semestrali, su come funziona il nuovo modello di manutenzione e sugli strumenti e opzioni disponibili.</p></td>
+<td><p><strong><a href="https://aka.ms/mdd7">Passaggio 7: manutenzione di Windows e Office</a></strong></p>
+<p>Windows 10 e Office 365 ProPlus aggiungono continuamente nuove funzionalità per continuare a offrire esperienze utente e protezione con le ultime novità. In questo passaggio vengono fornite informazioni su come restare al passo con gli aggiornamenti mensili e semestrali, su come funziona il nuovo modello di manutenzione e sugli strumenti e opzioni già disponibili.</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </tr>
 <tr class="even">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong><a href="https://aka.ms/mdd8">Passaggio 8: formazione e comunicazione utente</a></strong></p>
 <p>Verificare che gli utenti siano informati sulle nuove esperienze e sulle nuove modalità di lavoro quando si passa a Windows 10 e Office 365 ProPlus. Ottenere informazioni su come sfruttare l’assistenza per l’adozione da parte degli utenti con Microsoft FastTrack, sui materiali di formazione e sui modelli di comunicazione, oltre che sui nuovi modi per monitorare l'utilizzo e l’accettazione da parte degli utenti.</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </tr>
 <tr class="odd">
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-12.png" alt="Value Discovery and Business Case" height="144" width="144" /></td>
 <td><p><strong><a href="https://transform.microsoft.com" target="_blank">Coinvolgere i dirigenti: Value Discovery e caso aziendale</a></strong></p>
-<p>Se si è effettuata la ricerca sulla distribuzione, la valutazione della conformità delle app e dei dispositivi, creato il piano di distribuzione e iniziato la distribuzione pilota, ma non si hanno il supporto o le risorse necessarie da parte del team di gestione per soddisfare le sequenze temporali della distribuzione, i programmi di valore aziendale di Microsoft possono essere di aiuto. Ottenere informazioni su come creare un caso aziendale per un desktop moderno e coinvolgere tutti.</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-22.png" alt="Value Discovery and Business Case" height="130" width="231" /></td>
+<p>Se si è effettuata la ricerca sulla distribuzione, la valutazione della conformità delle app e dei dispositivi, creato il piano di distribuzione e iniziato la distribuzione pilota, ma non si hanno il supporto o le risorse necessarie da parte del team di gestione per soddisfare le sequenze temporali della distribuzione, il programma BVP (Business Value Program) Microsoft può risultare molto utile. In questo passaggio vengono fornite informazioni su come creare un caso aziendale per il passaggio a Windows 10 e Office 365 ProPlus e coinvolgere tutti.</p></td>
+<td><a href="https://transform.microsoft.com" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-22.png" alt="Value Discovery and Business Case" height="130" width="231" /></td>
 </tr>
 </tbody>
 </table>

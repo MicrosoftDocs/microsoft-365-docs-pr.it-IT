@@ -12,17 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Informazioni su come preparare gli utenti finali a desktop moderni tramite comunicazioni e formazione.
-ms.openlocfilehash: 7737828600a9708b0b422a1fada6e0296de67f0f
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+description: Informazioni su come preparare gli utenti finali al passaggio a Windows 10 e Office 365 ProPlus tramite comunicazioni e formazione.
+ms.openlocfilehash: fb0dc2dfc571d61c9d480204d0e3e12c58cf3aca
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289918"
 ---
 # <a name="step-8-user-communications-and-training"></a>Passaggio 8: comunicazioni e formazione utente
-
-Sarà necessario informare e preparare gli utenti per esperienze di lavoro moderne che abbracciano Office 365, Windows 10 e nuovi controlli di sicurezza e conformità con Azure Active Directory e altro ancora.
 
 ![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
@@ -31,15 +29,15 @@ Sarà necessario informare e preparare gli utenti per esperienze di lavoro moder
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Passaggio 8: comunicazioni e formazione utente</strong></p>
 <p>Verificare che gli utenti siano informati sulle nuove esperienze e sulle nuove modalità di lavoro quando si passa a Windows 10 e Office 365 ProPlus. Ottenere informazioni su come sfruttare l’assistenza per l’adozione da parte degli utenti con Microsoft FastTrack, sui materiali di formazione e sui modelli di comunicazione, oltre che sui nuovi modi per monitorare l'utilizzo e l’accettazione da parte degli utenti.</p></td>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->La comunicazione e la formazione degli utenti costituiscono l'ottavo passo nel diagramma circolare del processo di distribuzione consigliata, dove sono disponibili suggerimenti e raccomandazioni per informare e preparare gli utenti. Per visualizzare il processo di distribuzione desktop completo, visitare il [Centro di distribuzione desktop moderno](https://aka.ms/HowToShift).
+>La comunicazione e la formazione degli utenti costituiscono l'ottavo passo nel diagramma circolare del processo di distribuzione consigliata, dove sono disponibili suggerimenti e raccomandazioni per informare e preparare gli utenti. Per visualizzare il processo completo di distribuzione desktop, visitare il [centro di distribuzione desktop](https://aka.ms/HowToShift).
 >
 
-Basta capire come introdurre gli aggiornamenti (quando gli utenti possono interrompere la produttività o cambiare il flusso di lavoro o se devono essere formati su contenuti nuovi).
+Per facilitare il passaggio, è necessario informare e preparare gli utenti per esperienze di lavoro moderne che abbracciano Office 365, Windows 10 e nuovi controlli di sicurezza e conformità con Azure Active Directory. Basta capire come introdurre gli aggiornamenti (quando gli utenti possono interrompere la produttività o cambiare il flusso di lavoro o se devono essere formati su contenuti nuovi).
 
 Se si sta effettuando il passaggio da Windows 7 e Office 2010 o Office 2013, gli utenti avranno molta familiarità con Windows 10 e le versioni più recenti di Office in esecuzione sui dispositivi personali, quindi l'impatto del cambiamento sarà ridotto.
 
@@ -91,7 +89,7 @@ Solitamente è preferibile iniziare la distribuzione dal team IT e dal personale
 
 Una volta sperimentata con successo la prima fase, si può scegliere come target una serie più ampia di utenti per la seconda fase pilota. Ciò dovrebbe comprendere una combinazione rappresentativa di ruoli utente, tipi di dispositivi, app Windows e componenti aggiuntivi di Office. I dati di ritorno da questi gruppi verranno utilizzati tramite il servizio analisi per individuare le ondate iniziali per la fase 3, la distribuzione più ampia.
 
-È bene ricordare che tutti i PC in questa fase e nelle fasi successive devono poter accedere al servizio di analisi, in modo da raccogliere dati di telemetria sullo stato del dispositivo e delle app, oltre che sul risparmio di larghezza di banda dall'ottimizzazione recapito e dall'accesso a Windows Hello.
+È bene ricordare che tutti i PC in questa fase e nelle fasi successive devono poter accedere al servizio di analisi, in modo da raccogliere dati di diagnostica sullo stato di dispositivi e app, oltre che sul risparmio di larghezza di banda ottenuto grazie all'uso di Ottimizzazione recapito e dell'accesso a Windows Hello.
 
 In questa fase è particolarmente importante comunicare le modifiche e aiutare gli utenti a sfruttare le nuove funzionalità. Gli utenti spesso ignorano le e-mail o altre comunicazioni provenienti dall'IT, quindi può essere utile incontrare il responsabile per ottenerne l'aiuto nella comunicazione dei cambiamenti e nell'adozione di nuovi strumenti e tecnologie.
 
@@ -123,14 +121,14 @@ Man mano che il progetto pilota si espande, sarà necessario documentare e pubbl
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>Fase 3 e successive: distribuzione generale della produzione 
 
-Nel momento in cui verranno raggiunte ampie fasi di implementazione, i processi, la comunicazione, la formazione e gli strumenti cui accedere autonomamente saranno stati perfezionati. A quel punto sarà possibile utilizzare i dati raccolti tramite telemetria per l'assegnazione a un numero sempre maggiore di PC.
+Nel momento in cui verranno raggiunte ampie fasi di implementazione, i processi, la comunicazione, la formazione e gli strumenti cui accedere autonomamente saranno stati perfezionati. A quel punto sarà possibile usare i dati di diagnostica raccolti per l'assegnazione a un numero sempre maggiore di PC.
 
 Eseguire la distribuzione a una velocità gestibile dal reparto IT, dall'helpdesk, dagli utenti e dalla capacità della rete. È sempre possibile tornare al passaggio 2 del diagramma circolare del processo di distribuzione per ottimizzare ulteriormente la rete utilizzando la cache peer-to-peer, la tecnologia LEDBAT e altre tecniche per facilitare il trasferimento più rapido dei dati relativi all'implementazione.
 
-Oltre alla telemetria monitorata tramite gli strumenti di analisi, è anche possibile monitorare l'utilizzo dei servizi di Office 365 e Microsoft 365 in modo granulare con report dettagliati sull'utilizzo del carico di lavoro nel centro di amministrazione e utilizzando i dashboard di amministrazione tramite Power BI. Si tratta di strumenti validissimi per impostare e tenere traccia degli obiettivi quando vengono implementati nuovi strumenti di collaborazione, come Microsoft Teams, o nuovi modi per condividere file, come OneDrive.
+Oltre ai dati di diagnostica monitorati tramite gli strumenti di analisi, è anche possibile monitorare in modo granulare l'utilizzo dei servizi di Office 365 e Microsoft 365 con report dettagliati sull'utilizzo in base al carico di lavoro nel centro di amministrazione e usando i dashboard di amministrazione tramite Power BI. Si tratta di strumenti validissimi per impostare e tenere traccia degli obiettivi quando vengono implementati nuovi strumenti di collaborazione, come Microsoft Teams, o nuovi modi per condividere file, come OneDrive.
 
 L'accettazione e l'adozione di nuove tecnologie continueranno molto dopo che ogni PC dell'organizzazione avrà installato Windows 10 e Office 365 ProPlus. Inoltre, gli utenti non cambieranno necessariamente il loro modo di lavorare, a meno che non si spenda il giusto tempo per informarli e formarli sulle nuove funzionalità. Infine, con i nuovi modelli di servizio che forniscono nuove funzionalità su base semestrale per Windows e facoltativamente su base mensile per Office, la comunicazione sarà continua.
 
 ## <a name="previous-step"></a>Passaggio precedente 
 
-## <a name="step-7-windows-and-office-as-a-servicehttpsakamsmdd7"></a>[Passaggio 7: Windows e Office as a Service](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Passaggio 7: manutenzione di Windows e Office](https://aka.ms/mdd7)

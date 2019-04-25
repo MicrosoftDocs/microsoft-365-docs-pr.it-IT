@@ -9,7 +9,7 @@ Se necessario, il [Passaggio 1](../windows10-prepare-your-org.md) può aiutare a
 
 ### <a name="optional-your-users-are-added-and-licensed"></a>Facoltativo: gli utenti vengono aggiunti e ricevono una licenza
 
-Gli account corrispondenti agli utenti vengono aggiunti direttamente al tenant di Azure AD per le sottoscrizioni di Office 365 e Intune o dalla sincronizzazione della directory dall'AD di Windows Server locale.
+Gli account corrispondenti agli utenti vengono aggiunti direttamente al tenant di Azure AD per le sottoscrizioni di Office 365 e Intune o dalla sincronizzazione della directory Active Directory Domain Services (AD DS) locale.
 
 Una volta aggiunti gli utenti, è possibile assegnare loro le licenze Microsoft 365 Enterprise, direttamente come amministratore globale o utente o automaticamente tramite l'appartenenza al gruppo.
 
@@ -27,8 +27,8 @@ Se necessario, il [Passaggio 1](../windows10-prepare-your-org.md) può aiutare c
 Per avviare una sequenza di attività di Gestione configurazione per eseguire un aggiornamento sul posto di un dispositivo con Windows 7 o Windows 8.1, è necessario:
 
 - Impostare il corretto livello dei dati di diagnostica di Windows
-- Verificare la disponibilità a eseguire l'aggiornamento di Windows
-- Creare una sequenza di attività di Gestione configurazione che includa una raccolta di dispositivi e una distribuzione del sistema operativo con un'immagine del sistema operativo Windows 10
+- È stata verificata la disponibilità a eseguire l'aggiornamento di Windows
+- È stata creata una sequenza di attività di Gestione configurazione che includa una raccolta di dispositivi e una distribuzione del sistema operativo con un'immagine del sistema operativo Windows 10
 
 Dopo questa operazione, è possibile eseguire aggiornamenti sul posto su dispositivi pronti per aggiornare Windows. Per trarre il massimo vantaggio da Microsoft 365 Enterprise, aggiornare il maggior numero possibile di dispositivi con Windows 7 e Windows 8.1. 
 
@@ -41,13 +41,13 @@ Se necessario, il [Passaggio 2](../windows10-deploy-inplaceupgrade.md) può aiut
 
 Per utilizzare Windows Autopilot per distribuire e personalizzare Windows 10 Enterprise su un nuovo dispositivo, è necessario:
 
-- Impostare il corretto livello dei dati di diagnostica di Windows
-- Completare i prerequisiti per Windows Autopilot, che includono:
-- Registrazione del dispositivo e personalizzazione Configurazione guidata
-- Informazioni personalizzate distintive dell'azienda per Configurazione guidata
-- Registrazione automatica MDM in Microsoft Intune
-- Connettività di rete ai servizi cloud utilizzati da Windows Autopilot
-- Dispositivi preinstallati con Windows 10, versione 1703 o successiva
+- È stato configurato il corretto livello dei dati di diagnostica di Windows
+- Sono stati configurati i prerequisiti per Windows Autopilot, che includono:
+   - Registrazione del dispositivo e personalizzazione Configurazione guidata
+   - Informazioni personalizzate distintive dell'azienda per Configurazione guidata
+   - Registrazione automatica MDM in Microsoft Intune
+   - Connettività di rete ai servizi cloud utilizzati da Windows Autopilot
+- Dispositivi preinstallati con Windows 10, versione 1703 o successive
 - Selezionare il programma Windows Autopilot Deployment per la propria organizzazione
 
 Una volta eseguita la configurazione di Windows Autopilot, è possibile utilizzarla per configurare e personalizzare Windows 10 Enterprise per la configurazione guidata (OOBE) di:
