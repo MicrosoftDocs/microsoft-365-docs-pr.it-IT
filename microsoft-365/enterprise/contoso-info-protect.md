@@ -3,22 +3,22 @@ title: Protezione delle informazioni per Contoso Corporation
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/18/2018
+ms.date: 04/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere come Contoso utilizza le funzionalità di protezione delle informazioni in Microsoft 365 Enterprise per proteggere le proprie risorse digitali nel cloud.
-ms.openlocfilehash: 2f6619aa3c6051696644b055e6c766525ad3a26d
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f0869dfd661ae4dbaed74fdfd660c863deb20175
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32276116"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protezione delle informazioni per Contoso Corporation
 
@@ -44,9 +44,9 @@ Nella tabella seguente sono elencati i criteri delle informazioni per Contoso.
 |||||
 |:-------|:-----|:-----|:-----|
 |  | **Access** | **Conservazione dei dati** | **Protezione delle informazioni** |
-| Livello 1: valore aziendale basso (base) | Consentire l'accesso a tutti  | 6 mesi | Utilizzo della crittografia |
-| Livello 2: valore aziendale medio (dati sensibili) | Consentire l'accesso a dipendenti, collaboratori e partner di Contoso <BR> <BR> Utilizzare l'autenticazione a più fattori (MFA), Transport Layer Security (TLS) e la gestione di applicazioni mobili (MAM) | 2 anni  | Utilizzo dei valori hash per l'integrità dei dati  |
-| Livello 3: valore aziendale elevato (dati altamente regolamentati) | Consentire l'accesso ai dirigenti e responsabili di progettazione e produzione <BR> <BR> Rights Management System (RMS) solo con dispositivi di rete gestiti  | 7 anni  | Utilizzo delle firme digitali per non ripudio  |
+| Valore aziendale basso (Livello 1: Base) | Consentire l'accesso a tutti  | 6 mesi | Utilizzo della crittografia |
+| Valore aziendale medio (Livello 2: Dati sensibili) | Consentire l'accesso a dipendenti, collaboratori e partner di Contoso <BR> <BR> Utilizzare l'autenticazione a più fattori (MFA), Transport Layer Security (TLS) e la gestione di applicazioni mobili (MAM) | 2 anni  | Utilizzo dei valori hash per l'integrità dei dati  |
+| Valore aziendale elevato (Livello 3: Dati altamente regolamentati) | Consentire l'accesso ai dirigenti e responsabili di progettazione e produzione <BR> <BR> Rights Management System (RMS) solo con dispositivi di rete gestiti  | 7 anni  | Utilizzo delle firme digitali per non ripudio  |
 |||||
 
 ## <a name="contosos-path-to-information-protection-with-microsoft-365-enterprise"></a>Percorso di Contoso per la protezione delle informazioni con Microsoft 365 Enterprise
@@ -61,21 +61,21 @@ Contoso ha utilizzato i seguenti passaggi per preparare Microsoft 365 Enterprise
 
    In base ai livelli di dati, Contoso ha determinato requisiti dettagliati per i criteri, che sono stati utilizzati per proteggere le risorse digitali esistenti mentre venivano spostate nel cloud.
 
-3. Ha creato etichette di Azure Information Protection e le relative impostazioni per i diversi livelli di informazioni
+3. Ha creato etichette di riservatezza e le relative impostazioni per i diversi livelli di informazioni
 
-   Contoso ha modificato le etichette di Azure Information Protection predefinite con i titoli che corrispondono ai livelli di dati e ha configurato le etichette per dati sensibili e dati altamente regolamentati per effettuare la crittografia con la chiave cloud di Azure. Contoso ha creato etichette secondarie dell'etichetta per i dati altamente regolamentati per tipi specifici di dati relativi a segreti commerciali e ha limitato l'accesso a specifici gruppi di ricerca e sviluppo. Inoltre, Contoso ha distribuito il client di Azure Information Protection su tutti i computer e i dispositivi Windows.
+   Contoso ha creato etichette di riservatezza per i livelli di dati con etichette riservate e altamente regolamentate tra cui crittografia, autorizzazioni e filigrane.
 
 4. Ha creato siti di SharePoint Online protetti per dati sensibili e altamente regolamentati con autorizzazioni che bloccano l'accesso
 
-   Sia i siti sensibili sia quelli altamente regolamentati sono stati configurati come [siti isolati](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites), in cui le autorizzazioni predefinite del sito del team di SharePoint Online sono state personalizzate per i gruppi Azure AD. Anche i siti sensibili e altamente regolamentati di SharePoint Online sono stati configurati con un'etichetta di Office 365 predefinita. I file archiviati nei siti di SharePoint Online altamente regolamentati sono protetti con un'etichetta secondaria di Azure Information Protection (AIP) di un criterio con ambito. Per ulteriori informazioni, vedere lo scenario [Siti di Microsoft Teams e SharePoint Online per i dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md).
+   Sia i siti sensibili che quelli altamente regolamentati sono stati configurati come [siti isolati](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites), in cui le autorizzazioni predefinite del sito del team di SharePoint Online sono state personalizzate per i gruppi Azure Active Directory (Azure AD). Siti di SharePoint Online riservati e altamente regolamentati sono stati configurati anche con un'etichetta di conservazione corrispondente. I file archiviati nei siti di SharePoint Online altamente regolamentati sono protetti con l'etichetta di riservatezza elevata. Per ulteriori informazioni vedere lo scenario[Siti Microsoft Teams e SharePoint Online per dati altamente riservati](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 5.  Ha spostato i dati dai siti di SharePoint locali e le condivisioni di file ai nuovi siti di SharePoint Online
 
-    I file migrati ai nuovi siti di SharePoint Online hanno ereditato le etichette predefinite di Office 365 assegnate al sito.
+    I file migrati ai nuovi siti di SharePoint Online hanno ereditato le etichette di conservazione predefinite assegnate al sito.
 
-6.  Ha istruito i dipendenti su come utilizzare le etichette di Azure Information Protection per i nuovi documenti, su come interagire con l'infrastruttura IT di Contoso durante la creazione di nuovi siti di SharePoint Online e su come archiviare sempre le risorse digitali nei siti di SharePoint Online
+6.  Ha istruito i dipendenti su come utilizzare le etichette di riservatezza per i nuovi documenti, su come interagire con l'infrastruttura IT di Contoso durante la creazione di nuovi siti di SharePoint Online e su come archiviare sempre le risorse digitali nei siti di SharePoint Online
 
-    Considerata la parte più difficile della transizione della protezione delle informazioni per il cloud, la gestione e l'infrastruttura IT di Contoso hanno provveduto a cambiare le abitudini di archiviazione delle informazioni dei dipendenti dell'organizzazione inducendoli a etichettare sempre le proprie risorse digitali e non utilizzare mai condivisioni di file locali.
+    Considerata la parte più difficile della transizione della protezione delle informazioni per il cloud, la gestione e l'infrastruttura IT di Contoso hanno provveduto a cambiare le abitudini di archiviazione delle informazioni dei dipendenti dell'organizzazione inducendoli a etichettare sempre le proprie risorse digitali nel cloud, a non utilizzare mai condivisioni di file locali e a non utilizzare mai servizi di archiviazione di terze parti o dispositivi USB..
 
 ## <a name="conditional-access-policies-for-information-protection"></a>Criteri di accesso condizionale per la protezione delle informazioni
 
@@ -97,7 +97,7 @@ La figura 1 mostra il set di criteri di Contoso per la protezione delle informaz
 
 Questi criteri assicurano che:
 
-- I criteri di protezione delle app definiscano le app consentite e le azioni da intraprendere con i dati dell'organizzazione.
+- I criteri di protezione delle app definiscono le app consentite e le azioni che possono intraprendere con i dati dell'organizzazione.
 - I computer e i dispositivi mobili siano compatibili.
 - Exchange Online utilizzi Crittografia messaggi di Office 365 per Exchange Online.
 - SharePoint Online utilizzi restrizioni imposte dall'app.
@@ -110,9 +110,9 @@ Nella tabella seguente viene mostrato il mapping dei livelli di dati di Contoso 
 |||||
 |:-------|:-----|:-----|:-----|
 | | **Office 365** | **Windows 10 e Office 365 ProPlus** | **EMS** |
-| Livello 1: base  | Criteri di accesso condizionale di SharePoint Online ed Exchange Online <BR> Autorizzazioni sui siti di SharePoint Online | Client di Azure Information Protection <BR> BitLocker <BR> Windows Information Protection | Criteri di accesso condizionale dei dispositivi e criteri di gestione di applicazioni mobili |
-| Livello 2: dati altamente sensibili | Livello 1: base più: <BR> <BR> Etichette di Azure Information Protection <BR> Etichette di Office 365 per i siti di SharePoint Online <BR> Prevenzione della perdita dei dati di Office 365 per SharePoint Online ed Exchange Online <BR> Siti di SharePoint Online isolati  | Livello 1: base più: <BR> <BR> Etichette di Azure Information Protection per le risorse digitali <BR> Office 365 Advanced Data Governance | Livello 1: base |
-| Livello 3: dati altamente regolamentati | Livello 2: dati altamente sensibili più: <BR><BR> Crittografia Bring Your Own Key (BYOK) e protezione per informazioni su segreti commerciali <BR> Azure Key Vault per applicazioni line-of-business che interagiscono con i servizi di Office 365 | Livello 2: dati altamente sensibili | Livello 1: base |
+| Livello 1: base  | Criteri di accesso condizionale di SharePoint Online ed Exchange Online <BR> Autorizzazioni sui siti di SharePoint Online | Etichette di riservatezza <BR> BitLocker <BR> Windows Information Protection | Criteri di accesso condizionale dei dispositivi e criteri di gestione di applicazioni mobili |
+| Livello 2: dati sensibili | Livello 1 plus: <BR> <BR> Etichette di riservatezza <BR> Etichette di Office 365 per i siti di SharePoint Online <BR> Prevenzione della perdita dei dati di Office 365 per SharePoint Online ed Exchange Online <BR> Siti di SharePoint Online isolati  | Livello 1 plus: <BR> <BR> Etichette riservatezza su risorse digitali <BR> Office 365 Advanced Data Governance | Livello 1 |
+| Livello 3: dati altamente regolamentati | Livello 2 plus: <BR><BR> Crittografia Bring Your Own Key (BYOK) e protezione per informazioni su segreti commerciali <BR> Azure Key Vault per applicazioni line-of-business che interagiscono con i servizi di Office 365 | Livello 2 | Livello 1 |
 |||||
 
 

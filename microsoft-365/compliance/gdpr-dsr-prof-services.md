@@ -2,20 +2,20 @@
 title: Servizi professionali e supporto tecnico di Microsoft, Richieste del soggetto dei dati per l'RGPD
 description: Informazioni su come Servizi professionali e supporto tecnico di Microsoft gestiscono le richieste del soggetto dei dati.
 keywords: Servizi professionali, Microsoft 365, Microsoft 365 Education, documentazione Microsoft 365, GDPR
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: dd86914c0b3931f0cddc762db3f5916a34853eff
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32278248"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Servizi professionali e supporto tecnico di Microsoft, Richieste del soggetto dei dati per l'RGPD
 
@@ -23,7 +23,7 @@ ms.locfileid: "26868560"
 
 Servizi professionali di Microsoft include un gruppo eterogeneo di architetti, ingegneri, consulenti e professionisti del supporto tecnico dedicato alla realizzazione della mission di Microsoft di consentire ai clienti di fare di più e ottenere di più. Il team Servizi professionali include più di 21.000 operatori tra consulenti, consulenti digitali, supporto tecnico Premier, tecnici e addetti alle vendite dislocati in 191 paesi, che forniscono supporto in oltre 46 lingue, gestiscono diversi milioni di impegni al mese e avviano interazioni tra clienti e partner attraverso strumenti automatizzati, in locale, telefono, Web e community. L'organizzazione offre competenze generali sull'intero portfolio Microsoft, sfruttando una vasta rete di partner, community tecniche, strumenti, diagnostica e canali di contatto con i clienti aziendali.
 
-Sono disponibili ulteriori informazioni su Servizi professionali di Microsoft qui (<https://www.microsoft.com/microsoftservices/professional_services.aspx>) e accedendo alla sezione Servizi professionali di Microsoft nel Centro protezione Microsoft (<https://www.microsoft.com/trustcenter/cloudservices/commercialsupport>). Servizi professionali di Microsoft tiene seriamente conto degli obblighi derivanti dal Regolamento generale sulla protezione dei dati (RGPD). Le informazioni riportate in questo documento hanno lo scopo di rispondere alle domande dei clienti sul modo in cui le offerte di consulenza e supporto di Microsoft assistono i clienti nell'adempimento agli obblighi definiti dall'RGPD in merito alla risposta alle richieste DSR (Data Subject Rights, Diritti del soggetto dei dati).<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
+Per ulteriori informazioni sui Servizi professionali di Microsoft vedere la sezione Servizi professionali di Microsoft nel Centro protezione Microsoft (<https://www.microsoft.com/trustcenter/professional-services>). I servizi professionali di Microsoft tengono seriamente conto degli obblighi derivanti dal Regolamento generale sulla protezione dei dati (GDPR). Le informazioni contenute in questo documento sono progettate per rispondere alle domande dei clienti riguardo a come l’assistenza Microsoft e le consulenze offerte rispondono e aiutano i clienti in risposta a obblighi di Data Subject Request (DSR) secondo GDPR.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
 
 ### <a name="introduction-to-dsrs"></a>Introduzione alle richieste DSR 
 
@@ -76,20 +76,21 @@ Di seguito sono riportate le definizioni dei termini relativi all'RGPD per quest
 Questa guida descrive quattro scenari che un cliente può riscontrare se ha utilizzato Servizi professionali di Microsoft.
 
 <span id="_Toc510704611" class="anchor"><span id="_Toc511045453" class="anchor"><span id="_Toc511403161" class="anchor"></span></span></span>
-## <a name="dsr-for-a-customer-contact-engaging-microsoft"></a>DSR per un contatto cliente che coinvolge Microsoft
+- **DSR per un contatto cliente che coinvolge Microsoft**
+
 Spiegazione di come Microsoft risponde alle richieste da un contatto cliente o un amministratore IT per esercitare i diritti dei soggetti dei dati.
 
 <span id="_Toc510704612" class="anchor"><span id="_Toc511045454" class="anchor"><span id="_Toc511403162" class="anchor"></span></span></span>
-## <a name="dsr-for-an-end-user-engaging-microsoft"></a>DSR per un utente finale che coinvolge Microsoft
+- **DSR per un utente finale che coinvolge Microsoft**
 
-Spiegazione di come Microsoft risponde alle richieste dai dipendenti di un cliente o altri interessati per esercitare i propri diritti.
+Spiegazione di come Microsoft risponde alle richieste dei dipendenti di un cliente o di altri interessati per esercitare i propri diritti.
 
-## <a name="dsr-for-customer-provided-data-commercial-support"></a>DSR per i dati forniti dal cliente: supporto commerciale
+- **DSR per i dati forniti dal cliente: supporto commerciale**
 
 Spiegazione di come ottenere assistenza da Microsoft quando un cliente ha ricevuto una richiesta da un suo dipendente o da altri interessati per esercitare i propri diritti, e i dati personali dell'interessato sono stati raccolti dal supporto tecnico Microsoft durante un impegno relativo al supporto.
 
 <span id="_Toc511403163" class="anchor"><span id="_Toc511045456" class="anchor"><span id="_Toc510704614" class="anchor"></span></span></span>
-## <a name="dsr-for-customer-provided-data-consulting-services-including-fasttrack-migration-services"></a>DSR per i dati forniti dal cliente: servizi di consulenza tra cui i servizi di migrazione di FastTrack 
+- **DSR per i dati forniti dal cliente: servizi di consulenza tra cui i servizi di migrazione di FastTrack** 
 
 <span id="_Toc511045457" class="anchor"><span id="_Toc511403164" class="anchor"></span></span>
 
