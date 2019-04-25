@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 217418cfce66baa02b30ae7d8a01b938a1f2366e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 02b3b7ab32ff92304ab27ca8e8c805ade803c971
+ms.sourcegitcommit: cf77e4bf69e6ae144563f1e764ea3437ed6fc836
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289134"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33296166"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>Registrare i dispositivi in Microsoft Managed Desktop
 
@@ -59,7 +59,7 @@ In alternativa, è possibile eseguire questa procedura in un dispositivo nuovo d
 >Non accendere nuovamente il dispositivo di destinazione fino a quando non si è completata la registrazione. 
 
 >[!NOTE]
->Per comodità, è possibile scaricare un [modello](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.xlsx) per questo file CSV.
+>Per comodità, è possibile scaricare un [modello](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx) per questo file CSV.
 
 Il file deve includere le **intestazioni di colonna** identiche a quelle del campione (produttore, modello e così via), ma i propri dati per le altre righe. Se si utilizza il modello, aprirlo in uno strumento di modifica del testo, ad esempio Blocco note, e considerare di lasciare tutti i dati solo nella riga 1, immettendo solo i dati nelle righe 2 e seguenti. 
     
