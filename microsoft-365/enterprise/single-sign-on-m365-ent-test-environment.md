@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLGS
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: informazioni sulla configurazione e sul test di Azure AD Seamless Single Sign-On per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 10444b094e09705e93cb32c10cd0d41c19913985
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 210d59b0e578b807b9f9ee73e9bff11e7f2502a0
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290130"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Azure AD Seamless Single Sign-On per l'ambiente di testing di Microsoft 365
 
@@ -29,7 +29,7 @@ Azure AD Seamless Single Sign-On consente agli utenti di eseguire l'accesso auto
 
 In questo articolo viene descritto come configurare l'ambiente di testing di Microsoft 365 per Azure AD Seamless SSO.
 
-Le fasi principali della configurazione dell'ambiente di testing sono tre:
+Esistono due fasi per la configurazione:
 
 1.  Creare l'ambiente di testing dell'organizzazione simulata di Microsoft 365 con per la sincronizzazione hash delle password.
 2.  Configurare Azure AD Connect su APP1 per Azure AD Seamless Single Sign-On.
@@ -39,7 +39,7 @@ Le fasi principali della configurazione dell'ambiente di testing sono tre:
 > [!TIP]
 > Fare clic [qui](https://aka.ms/m365etlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
   
-## <a name="phase-1-create-the-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: creare la sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
+## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurare la sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
 
 Seguire le istruzioni riportate in [sincronizzazione hash delle password per Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Di seguito è riportata la configurazione risultante.
   
@@ -47,9 +47,9 @@ Seguire le istruzioni riportate in [sincronizzazione hash delle password per Mic
   
 Questa configurazione è costituita da: 
   
-- Abbonamenti di valutazione o permanenti a Office 365 E5 ed EMS E5.
+- Abbonamenti di valutazione o a pagamento a Office 365 E5 ed EMS E5.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
-- Periodicamente, Azure AD Connect viene eseguito su APP1 per sincronizzare il dominio TESTLAB Windows Server AD per il tenant Azure AD degli abbonamenti a Office 365 ed EMS E5.
+- Azure AD Connect viene eseguito su APP1 per sincronizzare periodicamente il dominio TESTLAB di Active Directory Domain Services con il tenant Azure AD degli abbonamenti a Office 365 ed EMS E5.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>Fase 2: configurare Azure AD Connect su APP1 per Azure AD Seamless Single Sign-On
 
@@ -63,9 +63,9 @@ In questa fase, si configura Azure AD Connect su APP1 per Azure AD Seamless Sing
 
 3. Nella **Pagina di benvenuto** fare clic su **Configura**.
 
-4. Nella pagina Attività addizionali fare clic su **Cambia l'accesso utente**, quindi su **Avanti**.
+4. Nella pagina **Attività aggiuntive** fare clic su **Cambia l'accesso utente**, quindi su **Avanti**.
 
-5. Nella pagina **Connessione ad Azure AD**, digitare le credenziali dell'account amministratore globale e fare clic su **Avanti**.
+5. Nella pagina **Connessione ad Azure AD** digitare le credenziali dell'account amministratore globale e fare clic su **Avanti**.
 
 6. Nella pagina **Accesso utente**, selezionare **Abilita Single Sign-On**, quindi fare clic su **Avanti**.
 
@@ -95,7 +95,7 @@ Successivamente, verificare la possibilità di accedere all'abbonamento a Office
 
 7. Quando viene richiesto di accedere, specificare il nome <strong>user1@testlab.</strong>\<dominio pubblico>, quindi fare clic su **Avanti**. È quindi possibile accedere come User1 senza che venga richiesta una password. Ciò dimostra che Seamless SSO funziona correttamente.
 
-Si noti che sebbene User1 disponga di autorizzazioni di amministratore di dominio per il dominio TESTLAB Windows Server AD, non è un amministratore globale di Office 365. Di conseguenza, non si vedrà l'icona **Amministratore**.
+Si noti che sebbene User1 disponga di autorizzazioni di amministratore di dominio per il dominio TESTLAB di Active Directory Domain Services, non è un amministratore globale per Azure AD e Office 365. Di conseguenza, l'icona **Amministratore** non sarà visibile.
 
 Di seguito è riportata la configurazione risultante:
 
@@ -104,12 +104,12 @@ Di seguito è riportata la configurazione risultante:
  
 Questa configurazione è costituita da:
 
-- Abbonamenti di valutazione o permanenti a Office 365 E5 ed EMS E5 con dominio DNS TESTLAB.\<nome dominio> registrato.
+- Abbonamenti di valutazione o a pagamento a Office 365 E5 ed EMS E5 con dominio DNS testlab.\<nome dominio> registrato.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
-- Periodicamente, Azure AD Connect viene eseguito su APP1 per sincronizzare l'elenco di account e gruppi dal tenant degli abbonamenti a Office 365 ed EMS E5 al dominio TESTLAB Windows Server AD. 
+- Periodicamente, Azure AD Connect viene eseguito su APP1 per sincronizzare l'elenco di account e gruppi dal tenant di Azure AD degli abbonamenti a Office 365 ed EMS E5 al dominio TESTLAB Active Directory Domain Services. 
 - Azure AD Seamless SSO viene abilitato in modo che i computer sulla rete Intranet simulata possano accedere alle risorse cloud di Microsoft 365 senza specificare una password per l'account utente.
 
-Vedere il passaggio [Semplificare l'accesso utente](identity-single-sign-on.md) nella fase Identità per informazioni e collegamenti per configurare Azure AD Seamless SSO.
+Vedere il passaggio [Semplificare l'accesso utente](identity-password-reset.md#identity-sso) nella fase Identità per informazioni e collegamenti per configurare Azure AD Seamless SSO.
 
 ## <a name="next-step"></a>Passaggio successivo
 

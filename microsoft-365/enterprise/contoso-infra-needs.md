@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo Microsoft 365 Enterprise può soddisfarne le esigenze di business.
-ms.openlocfilehash: b507d1a44edc0b31b2ac5a3f949ecd8a72913311
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: bd259f367cdf3417e32671457f248029c853b6f8
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283679"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastruttura IT ed esigenze di business di Contoso
 
@@ -51,7 +51,7 @@ Nella rete perimetrale degli uffici di Contoso, gruppi di server forniscono quan
 
 - Accesso remoto basato su VPN all’intranet di Contoso e proxy Web per i dipendenti nella sede di Parigi.
 - Hosting del sito Web pubblico di Contoso, da cui i clienti possono ordinare prodotti, parti, materiali o assistenza.
-- Hosting per l’extranet Contoso per i partner dedicata alla collaborazione e alla comunicazione tra i partner.
+- Hosting dell’extranet Contoso dedicata alla collaborazione e alla comunicazione con i partner.
 
 ## <a name="contosos-business-needs"></a>Esigenze di business di Contoso
 
@@ -122,16 +122,16 @@ Il reparto IT di Contoso ha associato le esigenze di business alle funzionalità
 | **Categoria** | **Esigenza di business** | **Prodotti o funzionalità di Microsoft 365 Enterprise** |
 | Produttività |  |  |
 |  | Semplificare la collaborazione | Teams, SharePoint Online, Skype for Business Online |
-|  | Migliorare la produttività per utenti remoti e mobili | Carichi di lavoro di Office 365 e dati basati sul cloud |
+|  | Migliorare la produttività per utenti remoti e mobili | Carichi di lavoro e dati sul cloud di Office 365 |
 |  | Favorire la creatività e l'innovazione | Windows Ink, Cortana at Work, PowerPoint |
 | Sicurezza |  |  |
 |  | Gestione di identità e accesso | Account dedicati per gli amministratore globali con MFA (Multi-factor authentication) e Azure AD Privileged Identity Management <BR> MFA per tutti gli account utente <BR> Accesso condizionale <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Protezione dalle minacce | Advanced Threat Analytics <BR> Windows Defender <BR> Protezione avanzata dalle minacce <BR> Office 365 Advanced Threat Protection <BR> Office 365 Threat Intelligence <BR> |
-|  | Protezione delle informazioni | Azure Information Protection (AIP) <BR> Prevenzione perdita di dati (DLP) di Office 365 <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Office 365 Cloud App Security (CAS) <BR> Microsoft Intune |
+|  | Protezione dalle minacce | Advanced Threat Analytics <BR> Windows Defender <BR> Protezione avanzata dalle minacce <BR> Office 365 Advanced Threat Protection <BR> Analisi delle minacce e risposta alle minacce in Office 365 <BR> |
+|  | Protezione delle informazioni | Azure Information Protection <BR> Prevenzione perdita di dati (DLP) di Office 365 <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Office 365 Cloud App Security (CAS) <BR> Microsoft Intune |
 |  | Gestione della sicurezza | Centro sicurezza di Azure  <BR> Windows Defender Security Center |
 | Accesso remoto e mobile e partner commerciali |  |  |
 |  | Migliorare la sicurezza per lavoratori remoti e mobili | Microsoft Intune |
-|  | Ridurre l'infrastruttura di accesso remoto per i dipendenti | Carichi di lavoro di Office 365 e dati basati sul cloud |
+|  | Ridurre l'infrastruttura di accesso remoto per i dipendenti | Carichi di lavoro e dati sul cloud di Office 365 |
 |  | Fornire migliore connettività e ridurre le spese per le transazioni B2B | Autenticazione federata e risorse basate su cloud |
 | Conformità |  |  |
 |  | Rispettare i requisiti normativi applicabili | Funzionalità per il GDPR in Office 365 |

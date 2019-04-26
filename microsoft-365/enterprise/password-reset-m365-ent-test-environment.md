@@ -3,25 +3,25 @@ title: Reimpostazione della password per l'ambiente di testing di Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/30/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom:
 - TLGS
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: informazioni sulla configurazione e sul test di reimpostazione della password per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: a90cb362a2831bf0bcf3fe05932e3a4345d52b2e
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5fc8d68493464d6b4a6ffdcda64ed9a0d8c7cdd
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289464"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Reimpostazione della password per l'ambiente di testing di Microsoft 365
 
@@ -29,26 +29,30 @@ La reimpostazione della password self-service di Azure AD consente agli utenti d
 
 Questo articolo descrive come configurare e testare le reimpostazioni della password nell'ambiente di testing di Microsoft 365 in due fasi:
 
-1.  Creare l'ambiente di testing dell'organizzazione simulata di Microsoft 365 con per la sincronizzazione hash delle password.
+1.  Creare l'ambiente di testing di Microsoft 365 Enterprise.
 2.  Configurare e testare la reimpostazione della password per l'account utente 2.
     
 ![Guide del laboratorio di testing per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Fare clic [qui](https://aka.ms/m365etlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
-  
-## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurare la sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
 
-Seguire le istruzioni riportate in [sincronizzazione hash delle password per Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Di seguito è riportata la configurazione risultante.
+## <a name="phase-1-configure-password-hash-synchronization-and-password-writebback-for-your-microsoft-365-test-environment"></a>Fase 1: configurare la sincronizzazione hash delle password e il writeback delle password per l'ambiente di testing di Microsoft 365
+
+Prima di tutto, seguire le istruzioni riportate in [Sincronizzazione hash delle password](password-hash-sync-m365-ent-test-environment.md). Di seguito è riportata la configurazione risultante.
   
-![L'organizzazione simulata con ambiente di testing per l'autenticazione pass-through](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![L'organizzazione simulata con ambiente di testing per la sincronizzazione hash delle password](media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 Questa configurazione è costituita da: 
   
-- Abbonamenti di valutazione o permanenti a Office 365 E5 ed EMS E5.
+- Abbonamenti di valutazione o a pagamento a Office 365 E5 ed EMS E5.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
-- Azure AD Connect viene eseguito su APP1 per sincronizzare il dominio TESTLAB Windows Server AD per il tenant Azure AD degli abbonamenti a Office 365 ed EMS E5.
+- Azure AD Connect viene eseguito su APP1 per sincronizzare il dominio TESTLAB Active Directory Domain Services per il tenant di Azure AD degli abbonamenti a Office 365 ed EMS E5.
 
+Quindi, seguire le istruzioni contenute nella [Fase 2](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain) della guida al lab di test per il writeback delle password.
+
+Per usare la reimpostazione delle password è necessario abilitare il writeback delle password.
+  
 ## <a name="phase-2-configure-and-test-password-reset"></a>Fase 2: configurare e testare la reimpostazione della password
 
 In questa fase, è possibile configurare la reimpostazione della password nel tenant di Azure AD attraverso l'appartenenza a un gruppo e quindi verificarne il funzionamento.
@@ -75,9 +79,9 @@ Successivamente, testare la reimpostazione della password per l'account utente 2
 6. Accedere con le credenziali dell'account utente 2, digitare i caratteri del CAPTCHA e quindi fare clic su **Avanti**.
 8. Come **primo passaggio di verifica**, fare clic su **Inviare un messaggio all'indirizzo di posta elettronica alternativo**, quindi fare clic su **Posta elettronica**. All'avvenuta ricezione, digitare il codice di verifica e quindi fare clic su **Avanti**.
 9. In **Recuperare l'account**, digitare la nuova password per l'account utente 2 e quindi fare clic su **Fine**. Annotare la password dell'account utente 2 modificata e archiviarla in un luogo sicuro.
-10. In una scheda separata dello stesso browser, digitare [https://portal.office.com](https://portal.office.com), quindi accedere con il nome dell'account utente 2 e la nuova password. Dovrebbe essere visualizzata la pagina **Office Home**.
+10. In una scheda separata dello stesso browser, digitare [https://office.com](https://office.com), quindi accedere con il nome dell'account utente 2 e la nuova password. Dovrebbe essere visualizzata la pagina **Office Home**.
 
-Vedere il passaggio [Semplificare la reimpostazione della password](identity-password-reset.md) nella fase Identità per informazioni e collegamenti per configurare la reimpostazione della password.
+Vedere il passaggio [Semplificare la reimpostazione della password](identity-password-reset.md#identity-pw-reset) nella fase Identità per informazioni e collegamenti per configurare la reimpostazione della password.
 
 ## <a name="next-step"></a>Passaggio successivo
 

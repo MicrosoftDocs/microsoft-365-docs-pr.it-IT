@@ -2,21 +2,21 @@
 title: Richieste del soggetto dei dati per l'RGPD in Dynamics 365
 description: 'Guida su come usare i prodotti, i servizi e gli strumenti amministrativi di Microsoft per consentire ai clienti titolari di individuare i dati personali ed effettuare operazioni su di essi per rispondere alle richieste DSR:'
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.date: 04/13/2018
-ms.author: bcarter
+ms.date: 04/10/2019
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: e1c79ae466264e302b282244f477dafcc6b49afe
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: f5a7f347dc9b26b54cf6bc1fd3a6bdb55d46fe63
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285215"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Richieste del soggetto dei dati per l'RGPD in Dynamics 365
 
@@ -78,7 +78,7 @@ Negli articoli seguenti, sono disponibili informazioni che consentono di pianifi
 
 Dynamics 365 è un servizio online che offre più funzioni di elaborazione dati di un software, in qualità di software-as-a-service (SaaS). Di conseguenza, Dynamics 365 offre un'ampia gamma di funzionalità per l'elaborazione di ampie raccolte di dati, che possono variare in base alla natura, allo scopo o ad altri attributi specifici (ad esempio, dati delle vendite, transazioni, contabilità, informazioni delle risorse umane e così via). Alla luce di tali varietà, Dynamics 365 offre più moduli, campi, schemi, endpoint e logica per elaborare i dati del cliente, che rispecchiano i vari modi in cui le richieste DSR possono essere rivolte a ogni applicazione. In questa guida, è possibile osservare i diversi modi per soddisfare le richieste DSR specifiche, selezionando le descrizioni tecniche di ogni applicazione Dynamics 365.
 
-### <a name="microsoft-dynamics-365"></a>Microsoft Dynamics 365
+### <a name="dynamics-365"></a>Dynamics 365
 #### <a name="finding-customer-data"></a>Trovare i dati del cliente
 
 Il primo passaggio per rispondere a una richiesta DSR consiste nel cercare e identificare i dati del cliente che sono oggetto di richiesta.
@@ -101,6 +101,8 @@ In Dynamics 365 for Marketing, sono disponibili le seguenti funzionalità aggiun
 
 2.  Utilizzare Insight Views su contatti e oggetti di esecuzione marketing per identificare punti dati aggiuntivi che possono contenere i dati del cliente.
 
+Dynamics 365 Customer Service Insights offre all'utente la possibilità di rispondere alle richieste di copie dei dati personali, di eliminare i dati personali e di trovare i dati personali oggetto delle richieste di ricerca degli interessati (Data Subject Discovery Request - DSR). Per i dettagli, vedere [Panoramica della conformità GDPR per Dynamics 365 Customer Service Insights](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary).
+
 <span id="_Toc511225658" class="anchor"></span>***Dynamics 365 for Finance and Operations*** offre diversi modi per cercare dati del cliente. In qualità di Ammin tenant è possibile effettuare le seguenti operazioni per cercare dati del cliente:
 
 -   Organizzare i dati del cliente al fine di poter individuare rapidamente i dati personali. A tale scopo, vedere [come classificare l'inventario dati](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#detailed-inventory).
@@ -114,6 +116,7 @@ In Dynamics 365 for Marketing, sono disponibili le seguenti funzionalità aggiun
 -   Creare un modulo personalizzato che consente di individuare ed esportare i dati personali.
 
 -   Creare un portale esterno o sito Web che consente a un cliente autenticato di visualizzare i propri dati personali.
+
 
 ***Dynamics for Business Central*** fornisce vari modi per cercare i dati dei clienti. Per informazioni dettagliate, vedere [Ricerca, filtro e ordinamento di dati](https://docs.microsoft.com/dynamics-nav-app/ui-enter-criteria-filters).
 

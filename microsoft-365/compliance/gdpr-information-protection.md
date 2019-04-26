@@ -4,19 +4,21 @@ description: Protezione delle informazioni per il Regolamento generale sulla pro
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, RGPD
 author: BrendaCarter
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: bcarter
 manager: laurawi
-ms.collection: GDPR
-ms.openlocfilehash: 371efa4e1c3e3375cd43dcc661d8aa549788baba
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+audience: itpro
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 94ec13437ff297381b4ea8aca0e9370f295f249e
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285188"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>Protezione delle informazioni per RGPD con le funzionalità di Microsoft 365
 
@@ -49,8 +51,7 @@ Microsoft fornisce una configurazione consigliata, che è possibile usare come p
 
 La protezione dalle minacce è incorporata in tutti i servizi Microsoft 365. Ecco alcune risorse per iniziare:
 - [Roadmap sulla sicurezza di Office 365: priorità per i primi 30 giorni, 90 giorni e oltre](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352). Questa roadmap include elementi consigliati per l'implementazione delle funzionalità. 
-- 
-  [Protezione dalle minacce in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58). Informazioni sulle azioni di protezione che è possibile effettuare nel Centro sicurezza e conformità di Office 365.
+- [Proteggere l'ambiente dalle minacce in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58). Informazioni sulle azioni di protezione che è possibile effettuare nel centro sicurezza Microsoft 365.
 - [Protezione dalle minacce in Windows](https://docs.microsoft.com/windows/security/threat-protection/). Ulteriori informazioni su Windows Defender Advanced Threat Protection e altre funzionalità in Windows 10.
 
 

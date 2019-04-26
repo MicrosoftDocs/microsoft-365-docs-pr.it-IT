@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di directory e di rete nell'ambiente.
-ms.openlocfilehash: e690e99110e647ffc06c9ff7d40b789d8670e571
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 93a0e66159a4d9ea275765beec42ea92bff63feb
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290683"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Passaggio 2: conformità di directory e rete
 
@@ -36,7 +36,7 @@ Assicurarsi che la directory e la rete siano configurate e conformi per supporta
 </table>
 
 >[!NOTE]
->La conformità di directory e rete rappresenta il secondo passaggio del processo di distribuzione consigliato, incentrato su Azure Active Directory e l'ottimizzazione della rete. Per vedere il processo di distribuzione della versione desktop completa, visitare il [Centro di distribuzione desktop moderno](https://aka.ms/HowToShift).
+>La conformità di directory e rete rappresenta il secondo passaggio del processo di distribuzione consigliato, incentrato su Azure Active Directory e l'ottimizzazione della rete. Per vedere il processo di distribuzione desktop completo, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
 >
 
 La conformità di directory e rete è fondamentale per garantire una distribuzione desktop e del sistema operativo agevole. Analogamente a qualsiasi distribuzione automatizzata, è importante che i file condivisi possano essere raggiunti, inoltre, la rete dovrà essere in grado di supportare il trasferimento di file molto grandi, probabilmente per centinaia o migliaia di PC contemporaneamente.
@@ -47,9 +47,9 @@ In questo articolo è possibile esplorare gli strumenti e le opzioni per prepara
 
 ## <a name="adding-azure-active-directory"></a>Aggiunta di Azure Active Directory
 
-Se l'organizzazione utilizza già Office 365, Exchange Online, Microsoft Intune o altri servizi Microsoft Online, allora si sta già utilizzando Azure Active Directory. In tal caso, sarà sufficiente assicurarsi che gli utenti destinatari della distribuzione desktop siano nell'Azure Active Directory dell'utente e che siano state assegnate licenze.
+Se l'organizzazione usa già Office 365, Exchange Online, Microsoft Intune o altri servizi Microsoft Online, allora si sta già usando Azure Active Directory. In tal caso, sarà sufficiente assicurarsi che gli utenti destinatari della distribuzione desktop siano nell'istanza di Azure Active Directory usata e che siano state assegnate licenze.
 
-Se attualmente non si sta utilizzando Azure Active Directory, esistono [numerose risorse](https://docs.microsoft.com/it-IT/azure/active-directory/) che consentono di configurarlo. È possibile ricevere assistenza personalizzata tramite Microsoft FastTrack, nell'ambito della licenza di Office 365. Informazioni relative a Microsoft Fastrack sono disponibili [qui](https://fasttrack.microsoft.com).
+Se attualmente non si sta usando Azure Active Directory, esistono [numerose risorse](https://docs.microsoft.com/it-IT/azure/active-directory/) che consentono di configurarlo. È possibile ricevere assistenza personalizzata tramite Microsoft FastTrack, nell'ambito della licenza di Office 365. Informazioni relative a Microsoft Fastrack sono disponibili [qui](https://fasttrack.microsoft.com).
 
 Dopo aver implementato Azure Active Directory sul posto, gli utenti possono accedere e attivare le applicazioni di Office 365 ProPlus ed è possibile consentire la distribuzione di Microsoft Intune o Windows Autopilot per la distribuzione automatica delle applicazioni e dei criteri.
 
@@ -61,11 +61,11 @@ Iniziamo a esplorare i requisiti di ognuno di questi tre componenti principali:
 
 ### <a name="pc-imaging"></a>Imaging del PC
 
-Il grafico seguente consente di pianificare in base a dimensioni dell'immagine. Per le immagini di Windows senza alcuna personalizzazione è consigliabile in genere pianificare 3 GB per PC, mentre per le immagini personalizzate con le applicazioni si consigliano 6 GB o più. È necessario prendere in considerazione i pacchetti Driver, che possono essere di poche centinaia di megabyte per PC, a volte fino a 1 GB.
+Per le immagini di Windows senza alcuna personalizzazione è consigliabile in genere pianificare 3 GB per PC, mentre per le immagini personalizzate con le applicazioni si consigliano 6 GB o più. È necessario prendere in considerazione i pacchetti Driver, che possono essere di poche centinaia di megabyte per PC, a volte fino a 1 GB.
 
 ### <a name="software-updates"></a>Aggiornamenti software
 
-È necessario pianificare la larghezza di banda di rete per gli aggiornamenti software. Windows 10 e Office 365 ProPlus si avvalgono di un nuovo modello di servizio, che offre aggiornamenti mensili o semestrali. Se non si conosce il modello, ulteriori informazioni su come funziona sono disponibili [qui](https://docs.microsoft.com/it-IT/windows/deployment/update/waas-overview).
+È necessario pianificare la larghezza di banda di rete per gli aggiornamenti software. Windows 10 e Office 365 ProPlus si avvalgono di un nuovo modello di servizio, che offre aggiornamenti mensili o semestrali. Se non si conosce il modello, altre informazioni su come funziona sono disponibili [qui](https://docs.microsoft.com/it-IT/windows/deployment/update/waas-overview).
 
 Il nuovo modello di servizio include aggiornamenti delle funzionalità per Windows due volte l'anno, aggiornamenti canale di Office semestrali e aggiornamenti qualitativi mensili. Gli aggiornamenti delle funzionalità hanno in genere dimensioni da 2 a 4 GB e gli aggiornamenti canale di Office semestrali 300-400 MB per ogni aggiornamento. Infine ci sono gli aggiornamenti qualitativi mensili, che possono variare da poche centinaia di megabyte a più di un gigabyte. Ciò dipende dal fatto che gli aggiornamenti mensili sono cumulativi, pertanto la loro dimensione aumenta per la durata di servizio per ogni versione di Windows 10. Nonostante ciò, sono disponibili strumenti che aiutano a ridurre la quantità di dati di rete per implementare gli aggiornamenti. Questi verranno illustrati in dettaglio più avanti.
 
@@ -103,29 +103,29 @@ Le opzioni peer-to-peer vengono sempre più utilizzate nelle migrazioni di Windo
 
 **BranchCache**: consente di scaricare contenuti in ambienti distribuiti senza saturare la rete. È disponibile in due opzioni: Modalità cache ospitata, che consente di utilizzare i server locali per memorizzare nella cache il contenuto e la modalità cache distribuita (una modalità supportata in System Center Configuration Manager), che consente ai client di condividere i contenuti già scaricati.
 
-**Peer cache**: iI client supportati da System Center Configure possono anche utilizzare peer cache. Ciò consente ai PC disponibili in modo affidabile sulla rete di ospitare la sorgente per la distribuzione del contenuto. Non sarà necessario abilitare tutti i PC, basterà individuare connessioni di rete affidabili come host (ad esempio desktop, mini-tower o tower PC). Peer cache può persino funzionare per le attività di distribuzione in esecuzione nelle fasi di Windows PE durante l'installazione.
+**Peer cache**: i client supportati da System Center Configuration Manager possono anche usare peer cache. Ciò consente ai PC disponibili in modo affidabile sulla rete di ospitare la sorgente per la distribuzione del contenuto. Non sarà necessario abilitare tutti i PC, basterà individuare dispositivi di destinazione con connessioni di rete affidabili come host (ad esempio desktop, mini-tower o tower PC). Peer cache può persino funzionare per le attività di distribuzione in esecuzione nelle fasi di Windows PE durante l'installazione.
 
 Nota: BranchCache e peer cache sono complementari e possono collaborare nello stesso ambiente.
 
-[BranchCache versus peer cache](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
+[BranchCache versus Peer cache](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**Ottimizzazione recapito**: Ottimizzazione recapito è un'altra tecnologia di caching peer-to-peer che fornisce controlli basati sulla rete per le installazioni di Windows. Ottimizzazione recapito di Windows 10 viene utilizzato per aggiornare app UWP integrate, anche per installare applicazioni da Microsoft Store e per aggiornamenti software tramite Express Updates. È disponibile dalle prime versioni di Windows 10, sebbene sia stato integrato solo di recente con System Center Configuration Manager. Le nuove opzioni di configurazione di Windows 10 versione 1803 consentono di impostare in modo indipendente i limiti di larghezza di banda per gli aggiornamenti in background e per i processi in primo piano come l'installazione di un'app dallo Store.
+**Ottimizzazione recapito**: Ottimizzazione recapito è un'altra tecnologia di caching peer-to-peer che fornisce controlli basati sulla rete per le installazioni di Windows. Ottimizzazione recapito di Windows 10 viene usato per aggiornare app UWP integrate, anche per installare applicazioni da Microsoft Store e per aggiornamenti software tramite Express Updates. È disponibile dalle prime versioni di Windows 10, sebbene sia stato integrato solo di recente con System Center Configuration Manager. Le nuove opzioni di configurazione di Windows 10 versione 1803 consentono di impostare in modo indipendente i limiti di larghezza di banda per gli aggiornamenti in background e per i processi in primo piano come l'installazione di un'app dallo Store. Ottimizzazione recapito di Windows ora supporta anche Office 365 ProPlus durante gli aggiornamenti client, disponibile in tutti i canali di aggiornamento client di Office 365 supportati. Il supporto di Ottimizzazione recapito di Windows durante l'installazione iniziale del client di Office 365 sarà presto disponibile.  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 
 **Altre considerazioni su Office 365 ProPlus**
 
-Ecco tre elementi che consentono di ridurre il carico di rete per le distribuzioni di Office 365 ProPlus.
+Oltre a sfruttare Ottimizzazione recapito, ecco tre elementi che consentiranno di ridurre il carico di rete per le distribuzioni di Office 365 ProPlus.
 
 **Binary Delta Compression**: Office 365 ProPlus utilizza Binary Delta Compression per ridurre la larghezza di banda consumata dagli aggiornamenti software durante l'aggiornamento dalla versione più recente di Office 365 ProPlus alla versione successiva. Modificando solo le modifiche al livello binario della versione precedente, l'impatto della crescita mensile degli aggiornamenti cumulativi è ridotto al minimo. Ciò ha il potenziale di salvare diverse centinaia di megabyte di dati per PC, ogni mese. Tuttavia, per utilizzare questa funzionalità, non è possibile saltare le versioni, nel qual caso, è necessario scaricare l'aggiornamento cumulativo completo.
 
 [Download degli aggiornamenti per Office 365](https://docs.microsoft.com/it-IT/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
 
-**File di dati di Outlook**: Outlook viene spesso configurato per memorizzare nella cache l'intera cassetta postale degli utenti per l'utilizzo offline. In qualsiasi distribuzione di Windows, ad eccezione di un aggiornamento sul posto, che richiede che i file di dati di Outlook degli utenti vengano ricostruiti automaticamente dopo l'aggiornamento, si tratta di un processo automatizzato, ma con i limiti delle cassette postali di Outlook generalmente impostati su un massimo di 100 GB, l'ulteriore caching dell'intera cassetta postale in locale per tutti gli utenti significa trasferire molti dati. Per ridurre il carico di rete, si consiglia di prendere in considerazione l'utilizzo di Criteri di gruppo per ridurre l'impostazione "Posta da mantenere offline". In Outlook in Office 365 ProPlus o Outlook 2016 il valore predefinito è impostato su 12 mesi. Se ad esempio si imposta la cache offline per la durata compresa tra 1 e 6 mesi, modificare questa impostazione non influisce sulle dimensioni della cassetta postale online e l'intera cassetta postale può ancora essere ricercata tramite Outlook quando è online.
+**File di dati di Outlook**: Outlook viene spesso configurato per memorizzare nella cache l'intera cassetta postale degli utenti per l'uso offline. In qualsiasi distribuzione di Windows, ad eccezione di un aggiornamento sul posto, che richiede che i file di dati di Outlook degli utenti vengano ricostruiti automaticamente dopo l'aggiornamento, si tratta di un processo automatizzato, ma con i limiti delle cassette postali di Outlook generalmente impostati su un massimo di 100 GB, l'ulteriore caching dell'intera cassetta postale in locale per tutti gli utenti significa trasferire molti dati. Per ridurre il carico di rete, si consiglia di prendere in considerazione l'utilizzo di Criteri di gruppo per ridurre l'impostazione "Posta da mantenere offline". In Outlook in Office 365 ProPlus o Outlook 2016 il valore predefinito è impostato su 12 mesi. Al fine di ridurre l'impatto sulla rete, provare a impostare la cache offline per una durata compresa tra 1 e 6 mesi. Modificare questa impostazione non influisce sulle dimensioni della cassetta postale online e l'intera cassetta postale può ancora essere ricercata tramite Outlook quando è online.
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
 
-**File di OneDrive su richiesta e spostamento di cartelle note**: OneDrive è un ottimo modo per sincronizzare e proteggere i file utente da PC e altri dispositivi nel cloud. Con lo spostamento di cartelle note, è possibile applicare la sincronizzazione dei file dalle cartelle Desktop, Documenti e Immagini dell'utente a OneDrive, rendendo tali file disponibili quando si accede a un nuovo dispositivo o a un PC reimpostato. Tuttavia, è necessario ricordare che, a causa delle dimensioni e del numero di file conservati nei percorsi Desktop, Documenti e Immagini, si consiglia di pianificare l'implementazione dei criteri che consentono e applicano OneDrive sui PC. Un'opzione consiste nell'utilizzare i controlli di rete dei criteri di gruppo per limitare la larghezza di banda utilizzata dal servizio di sincronizzazione OneDrive.
+**File di OneDrive su richiesta e spostamento di cartelle note**: OneDrive è un ottimo modo per sincronizzare e proteggere i file utente da PC e altri dispositivi nel cloud. Con lo spostamento di cartelle note, è possibile applicare la sincronizzazione dei file dalle cartelle Desktop, Documenti e Immagini dell'utente a OneDrive, rendendo tali file disponibili quando si accede a un nuovo dispositivo o a un PC di cui ne sia stata ricreata l'immagine. Tuttavia, è necessario ricordare che, a causa delle dimensioni e del numero di file conservati nei percorsi Desktop, Documenti e Immagini, si consiglia di pianificare l'implementazione dei criteri che consentono e applicano OneDrive nei PC. Un'opzione consiste nell'usare i controlli di rete dei criteri di gruppo per limitare la larghezza di banda usata dal servizio di sincronizzazione OneDrive.
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-7.png)
 
@@ -133,7 +133,7 @@ Ecco tre elementi che consentono di ridurre il carico di rete per le distribuzio
 
 [File OneDrive su richiesta](https://www.microsoft.com/it-IT/microsoft-365/blog/2017/05/11/introducing-onedrive-files-on-demand-and-additional-features-making-it-easier-to-access-and-share-files/)
 
-Se OneDrive non è stato ancora implementato, il passaggio da Windows 7 a Windows 10 è un'opportunità perfetta per abilitarlo e si integra perfettamente con Office 365 ProPlus. Prendere in considerazione la possibilità di iniziare questo roll-out mentre durante la preparazione del dispositivo e l'utilizzo dell'app. Ciò consentirà di sincronizzare i file prima di trasferire le immagini di Windows e distribuire le app sulla rete.
+Se OneDrive non è stato ancora implementato, il passaggio da Windows 7 a Windows 10 è un'opportunità perfetta per abilitarlo e si integra perfettamente con Office 365 ProPlus. Prendere in considerazione la possibilità di iniziare questo roll-out durante la preparazione del dispositivo e l'uso dell'app. Ciò consentirà di sincronizzare i file prima di trasferire le immagini di Windows e distribuire le app sulla rete.
 
 ## <a name="next-step"></a>Passaggio successivo 
 

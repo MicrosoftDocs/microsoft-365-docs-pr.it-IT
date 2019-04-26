@@ -1,5 +1,5 @@
 ---
-title: Implementare SharePoint Online for Business per Microsoft 365 Enterprise
+title: Distribuzione di SharePoint Online e OneDrive for Business per Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/19/2018
@@ -8,19 +8,20 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulla procedura di pianificazione, implementazione e aumento del valore di SharePoint Online in Microsoft 365 Enterprise nell'organizzazione.
-ms.openlocfilehash: 7a9fc1733c64b3f639d2de0b5b64e20df60e04a9
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 30fe3a971a869a4609d6b8ef2809692b4d4e5420
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290900"
 ---
-# <a name="deploy-sharepoint-online-for-microsoft-365-enterprise"></a>Implementare SharePoint Online per Microsoft 365 Enterprise
+# <a name="deploy-sharepoint-online-and-onedrive-for-business-for-microsoft-365-enterprise"></a>Distribuzione di SharePoint Online e OneDrive for Business per Microsoft 365 Enterprise
 
+*Questo carico di lavoro è incluso sia nelle versioni E3 che E5 di Microsoft 365 Enterprise*
 
 SharePoint Online e Microsoft Teams consentono l'archiviazione e la condivisione dei file, la gestione dei contenuti e la collaborazione è un elemento essenziale del valore di collaborazione di Built for Teamwork di Microsoft 365 Enterprise. 
 
@@ -28,11 +29,9 @@ SharePoint Online dispone inoltre di funzionalità di protezione avanzate, tra c
 
 I nuovi utenti di SharePoint Online possono vedere [SharePoint Online](https://products.office.com/sharepoint/sharepoint-online-collaboration-software) e [Introduzione a SharePoint](https://support.office.com/article/Get-started-with-SharePoint-3a26444b-08c5-46ad-b80a-cda82b11b27b#ID0EAABAAA=Basics).
 
-Le fasi e i passaggi riportati di seguito illustrano il processo di definizione del ruolo di SharePoint Online nell'organizzazione attraverso una serie di implementazioni progressive e l'uso e la sua importanza per gli utenti finali. Le seguenti istruzioni sull'implementazione devono essere seguite solo dopo aver completato l'[infrastruttura di base](deploy-foundation-infrastructure.md). 
+Le seguenti fasi e i seguenti passaggi illustrano il processo di definizione del ruolo di SharePoint Online nell'organizzazione attraverso una serie di implementazioni progressive e l'uso e la sua importanza per gli utenti finali. Prima di iniziare, assicurarsi di aver configurato le fasi corrette dell'[infrastruttura di base](deploy-foundation-infrastructure.md) cosicché i team abbiano le funzionalità di sicurezza necessarie. 
 
->[!Note]
->Per implementare OneDrive for Business per Microsoft 365 Enterprise, vedere la [Guida di OneDrive per aziende](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise).
->
+Per implementare OneDrive for Business per Microsoft 365 Enterprise, vedere la [Guida di OneDrive per aziende](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise).
 
 ## <a name="phase-1-envision"></a>Fase 1: concezione
 In questa fase, si raggruppano le persone per l'implementazione di SharePoint Online e si determina il modo in cui l'organizzazione utilizzerà questa applicazione per soddisfare le proprie esigenze aziendali.

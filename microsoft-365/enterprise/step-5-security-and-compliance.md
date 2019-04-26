@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Considerazioni importanti sulla sicurezza e conformità di Windows e Office.
-ms.openlocfilehash: 3b0e9ae38f988b8c148fe67eeeb629a9fce23037
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: ff3adb5ef517c3b3115b867b585c090329ed6ac6
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290034"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Passaggio 5: considerazioni sulla sicurezza e conformità
-
-Esaminare le opzioni per definire nuove funzionalità di sicurezza e conformità nell'ambito della distribuzione desktop moderno insieme a considerazioni e problemi comuni quando si passa da versioni precedenti di Windows e Office.
 
 ![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
@@ -36,10 +34,10 @@ Esaminare le opzioni per definire nuove funzionalità di sicurezza e conformità
 </table>
 
 >[!NOTE]
->Sicurezza e conformità è il quinto passaggio del nostro processo di distribuzione consigliato che copre considerazioni sulla sicurezza e conformità di Windows 10 e Office 365 ProPlus. Per vedere il processo di distribuzione per la versione desktop completa, visitare [Centro distribuzione desktop moderno](https://aka.ms/HowToShift).
+>Sicurezza e conformità è il quinto passaggio del nostro processo di distribuzione consigliato che copre considerazioni sulla sicurezza e conformità di Windows 10 e Office 365 ProPlus. Per vedere il processo di distribuzione desktop completo, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
 >
 
-Molte delle funzionalità correlate alla sicurezza in Windows 10 stanno guidando da sole il passaggio alla piattaforma più recente. Inoltre, l'integrazione con i servizi cloud in Office 365 e le opzioni di identità che usano Azure Active Directory consente l'accesso a protezioni nuove e continuamente aggiornate per dati, dispositivi e utenti.
+Esaminare ora le opzioni per definire nuove funzionalità di sicurezza e conformità nell'ambito della distribuzione di Windows 10 e Office 365 ProPlus insieme a considerazioni e problemi comuni quando si passa da versioni precedenti di Windows e Office. Molte delle funzionalità correlate alla sicurezza in Windows 10 stanno guidando da sole il passaggio alla piattaforma più recente. Inoltre, l'integrazione con i servizi cloud in Office 365 e le opzioni di identità che usano Azure Active Directory consente l'accesso a protezioni nuove e continuamente aggiornate per dati, dispositivi e utenti.
 
 ## <a name="overcoming-potential-security-related-deployment-blockers"></a>Superamento dei potenziali problemi di distribuzione correlati alla sicurezza
 

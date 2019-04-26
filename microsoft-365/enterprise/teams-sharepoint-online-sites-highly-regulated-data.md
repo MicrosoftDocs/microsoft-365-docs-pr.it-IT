@@ -3,26 +3,26 @@ title: Siti Microsoft Teams e SharePoint Online per dati altamente riservati
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 04/03/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
-- Ent_O365
+- M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un sito del team SharePoint Online sicuro o un team di Microsoft Teams per archiviare gli asset digitali più importanti e riservati.
-ms.openlocfilehash: fa1a57d898e4822d0c96d6eb807d0a14a815e29a
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: 4342ba5e5d1c83ed0c9d26100afd86afa1e62723
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289807"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Siti Microsoft Teams e SharePoint Online per dati altamente riservati
 
-**Riepilogo:** Creare un sito del team SharePoint Online sicuro o un team di Microsoft Teams per archiviare asset digitali più importanti e riservati.
+*Questo scenario si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
 Poiché Microsoft 365 Enterprise include una gamma completa di servizi basati sul cloud, è possibile creare, archiviare e proteggere i dati altamente riservati, tra cui quelli:
 
@@ -33,10 +33,10 @@ Affinché una soluzione Microsoft 365 Enterprise basata sul cloud soddisfi le es
 
 - Memorizzare asset digitali, quali documenti, presentazioni, fogli di calcolo e così via, in un sito di SharePoint Online o nella scheda **File** di un team di Microsoft Teams.
 - Bloccare i siti del team per evitare che:
-   - Accedere a tutti gli account utente tramite l'appartenenza al gruppo, tranne a un set specifico, che include gli utenti che possono accedere al sito del team di SharePoint Online con relativo livello di autorizzazione e gli utenti che possono gestirlo.
+   - Si acceda solo a un set specifico di account utente tramite l'appartenenza al gruppo, che include gli utenti che possono accedere al sito del team di SharePoint Online con relativo livello di autorizzazione e gli utenti che possono gestirlo.
    - I membri del sito dalla concessione dell'accesso ad altri utenti.
    - I non-membri del sito dalla richiesta di accesso al sito.
-- Configurare un'etichetta Office 365 per i siti o per i team di SharePoint Online in modo predefinito per classificare gli asset digitali nel sito.
+- Configurare un'etichetta di conservazione di Office 365 per i siti o i team di SharePoint Online come metodo predefinito per definire i criteri di conservazione dei documenti nel sito o nel team.
 - Bloccare l'invio di file all'esterno dell'organizzazione da parte degli utenti.
 - Crittografare gli asset digitali più riservati del sito o del team.
 - Aggiungere autorizzazioni per gli asset digitali più riservati, in modo che, anche in caso di condivisione all'esterno del sito, all'apertura vengano richieste le credenziali di un account utente che dispone dell'autorizzazione.
@@ -48,7 +48,7 @@ La tabella seguente associa i requisiti di questa soluzione a una funzionalità 
 | **Requisito** | **Funzionalità di Microsoft 365 Enterprise** |
 | Memorizzare gli asset digitali | Siti del team di SharePoint Online e team di Office 365 |
 | Bloccare il sito | Autorizzazioni gruppi di Azure AD e sito del team di SharePoint Online |
-| Assegnare un'etichetta agli asset digitali del sito | Etichette di Office 365 |
+| Assegnare un'etichetta agli asset digitali del sito | Etichette di conservazione di Office 365 |
 | Bloccare gli utenti quando inviano file all'esterno dell'organizzazione. | Criteri di prevenzione della perdita di dati (DLP) in Office 365 |
 | Crittografare tutti gli asset digitali del sito | Etichette secondarie di Azure Information Protection in Enterprise Mobility + Security (EMS) |
 | Aggiungere autorizzazioni a tutti gli asset digitali del sito | Etichette secondarie di Azure Information Protection in EMS |
@@ -56,7 +56,7 @@ La tabella seguente associa i requisiti di questa soluzione a una funzionalità 
 
 Questa soluzione richiede di aver già implementato:
 
-- L'[infrastruttura di base](deploy-foundation-infrastructure.md). 
+- La fase [Identità](identity-infrastructure.md) e i passaggi 1 e 2 della fase [Protezione delle informazioni](infoprotect-infrastructure.md) dell'infrastruttura di base. 
 - [SharePoint Online](sharepoint-online-onedrive-workload.md) per i dati altamente riservati nei siti del team di SharePoint Online.
 - [Microsoft Teams](teams-workload.md), per i dati altamente riservati nei team di Microsoft Teams.
 
@@ -80,7 +80,7 @@ Questo scopo, ad esempio determinerà l'identificazione di elementi essenziali q
 
 - L'insieme dei set di autorizzazione di SharePoint Online e i gruppi di SharePoint
 - L'insieme dei gruppi di accesso, i gruppi di sicurezza di Azure AD e i membri da aggiungere ai gruppi di SharePoint
-- L'etichetta di Office 365 da assegnare al sito e il set di criteri DLP per l'etichetta
+- L'etichetta di conservazione di Office 365 da assegnare al sito e il set di criteri DLP per l'etichetta
 - Le impostazioni di un'etichetta secondaria di Azure Information Protection che gli utenti applicano agli asset digitali altamente riservati archiviati nel sito
 
 Una volta determinate queste impostazioni, utilizzarle per configurare il sito nella Fase 2. 
@@ -98,17 +98,17 @@ La sicurezza dei siti del team di SharePoint Online che contengono asset altamen
 
 Vedere [Progettare un sito del team di SharePoint Online isolato](https://docs.microsoft.com/office365/enterprise/design-an-isolated-sharepoint-online-team-site) per avere dettagli su come determinare il set di livelli di autorizzazione, gruppi di SharePoint, gruppi di accesso e membri del gruppo.
 
-### <a name="step-2-office-365-labels-and-dlp-policies"></a>Passaggio 2: Etichette di Office 365 e criteri DLP
+### <a name="step-2-office-365-retention-labels-and-dlp-policies"></a>Passaggio 2: Etichette di conservazione di Office 365 e criteri DLP
 
-Quando vengono applicate a un sito del team di SharePoint Online, le etichette di Office 365 forniscono un metodo predefinito per classificare tutti gli asset digitali memorizzati sul sito.
+Quando vengono applicate a un sito del team di SharePoint Online, le etichette di conservazione di Office 365 forniscono un metodo predefinito per classificare tutti gli asset digitali archiviati nel sito.
  
-Per i siti di SharePoint Online per dati altamente riservati, è necessario determinare quale etichetta di Office 365 utilizzare.
+Per i siti di SharePoint Online per dati altamente riservati, è necessario determinare quale etichetta di conservazione di Office 365 usare.
 
-Per considerazioni sulla progettazione delle etichette di Office 365, vedere [Classificazione ed etichette di Office 365](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#office-365-classification-and-labels).
+Per considerazioni sulla progettazione delle etichette di Office 365, vedere [Classificazione ed etichette di Office 365](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
 
 Per proteggere le informazioni sensibili e prevenirne la divulgazione accidentale o intenzionale, si utilizzano criteri DLP. Per ulteriori informazioni, vedere [Panoramica](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
 
-Per i siti di SharePoint Online per dati altamente riservati, è necessario configurare un criterio DLP per l'etichetta di Office 365 assegnata al sito per bloccare gli utenti quando tentano di condividere asset digitali con utenti esterni. 
+Per i siti di SharePoint Online per dati altamente riservati, è necessario configurare un criterio DLP per l'etichetta di conservazione di Office 365 assegnata al sito per bloccare gli utenti quando tentano di condividere asset digitali con utenti esterni. 
 
 ### <a name="step-3-your-azure-information-protection-sub-label"></a>Passaggio 3: Etichette secondarie di Azure Information Protection
 
@@ -118,15 +118,13 @@ L'etichetta secondaria è presente sotto l'etichetta esistente. Ad esempio, è p
 
 Le impostazioni dell'etichetta secondaria applicata viaggiano con l'asset. Anche se viene scaricato e condiviso all'esterno del sito, solo gli account utente autenticati che dispongono delle autorizzazioni possono aprirlo.
 
-Per le considerazioni sulla progettazione delle etichette di Azure Information Protection, vedere [Azure Information Protection](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files#azure-information-protection).
-
 ### <a name="design-results"></a>Risultati della progettazione
 
 È stato determinato quanto segue:
 
 - Il set di gruppi di SharePoint e i livelli di autorizzazione
 - Il set di gruppi di accesso e i relativi membri per ogni livello di autorizzazione
-- L'etichetta appropriata di Office 365 e il criterio DLP ad essa associato
+- L'etichetta di conservazione appropriata di Office 365 e il criterio DLP ad essa associato
 - Le impostazioni dell'etichetta secondaria di Azure Information Protection che includono crittografia e autorizzazioni
 
 ## <a name="phase-2-configure"></a>Fase 2: Configurazione
@@ -140,11 +138,11 @@ Attenersi alle istruzioni riportate in [Distribuire un sito del team di SharePoi
 - Creare e popolare i gruppi di accesso per ciascun livello di autorizzazione di SharePoint utilizzato nel sito.
 - Creare e configurare il sito del team isolato.
 
-### <a name="step-2-configure-the-site-for-an-office-365-label-dlp-policy"></a>Passaggio 2: Configurare il sito per un criterio DLP etichetta di Office 365
+### <a name="step-2-configure-the-site-for-an-office-365-retention-label-dlp-policy"></a>Passaggio 2: Configurare il sito per un criterio DLP dell'etichetta di conservazione di Office 365
 
 Attenersi alle istruzioni riportate in [Proteggere i file di SharePoint Online con le etichette di Office 365 e la prevenzione della perdita dei dati](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) per:
 
-- Identificare o creare l'etichetta di Office 365 e applicarla al sito di SharePoint Online isolato.
+- Identificare o creare l'etichetta di conservazione di Office 365 e applicarla al sito di SharePoint Online isolato.
 - Creare e configurare il criterio DLP che blocca gli utenti quando tentano di condividere un asset digitale sul sito di SharePoint Online all'esterno dell'organizzazione.
 
 ### <a name="step-3-create-an-azure-information-protection-sub-label-for-the-site"></a>Passaggio 3: Creare un'etichetta secondaria di Azure Information Protection per il sito
@@ -173,8 +171,8 @@ La scheda **File** del nuovo team elenca i contenuti della cartella **Generale**
 È stato configurato quanto segue:
 
 - Un sito SharePoint Online isolato
-- Un'etichetta di Office 365 assegnata a un sito SharePoint Online isolato
-- Un criterio DLP per l'etichetta di Office 365
+- Un'etichetta di conservazione di Office 365 assegnata a un sito SharePoint Online isolato
+- Un criterio DLP per l'etichetta di conservazione di Office 365
 - Un'etichetta secondaria di Azure Information Protection di un criterio con ambito che gli utenti possono applicare agli asset digitali più sensibili memorizzate nel sito che crittografa l'asset e applica le autorizzazioni
 - Se necessario, un team per i dati altamente riservati basati sul sito di SharePoint Online
 

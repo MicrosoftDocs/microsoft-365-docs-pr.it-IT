@@ -2,21 +2,21 @@
 title: Elenco di controllo di preparazione della conformità di Dynamics 365 all'RGPD
 description: Fornisce un modo pratico per accedere alle informazioni necessarie per supportare l'RGPD quando si utilizza Dynamics 365.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, RGPD
-author: BrendaCarter
+author: herviicban
 localization_priority: Priority
-audience: itpro
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 05/24/2018
-ms.author: bcarter
+ms.author: heicba
 manager: laurawi
+audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: b358776da0d2cdd676ac79736efea1908cd2a961
-ms.sourcegitcommit: eb1a77e4cc4e8f564a1c78d2ef53d7245fe4517a
+ms.openlocfilehash: c175e10e15bb35993b5234a76b6f7ca61e03dd3a
+ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26868547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283569"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Elenco di controllo di preparazione della conformità di Dynamics 365 all'RGPD
 
