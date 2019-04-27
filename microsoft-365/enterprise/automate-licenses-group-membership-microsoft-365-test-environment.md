@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurare la gestione delle licenze basate su gruppo e l'appartenenza a gruppi dinamici nell'ambiente di testing Microsoft 365 Enterprise.
-ms.openlocfilehash: 8ced249ee56e15c057001af60d790a8a4315dd17
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 4ee929b345469d9cab05968a4a4c7f7399635b32
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277243"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353078"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatizzare la gestione delle licenze e dell'appartenenza ai gruppi per l'ambiente di testing Microsoft 365 Enterprise
 
@@ -26,7 +26,7 @@ La gestione delle licenze basate su gruppo assegna o rimuove automaticamente le 
 
 Sono disponibili due fasi per la configurazione della licenza automatica e l'appartenenza a gruppi dinamici nell'ambiente di testing di Microsoft 365 Enterprise:
 
-1. Creare l'ambiente di testing Microsoft 365 Enterprise.
+1. Creare l'ambiente di testing di Microsoft 365 Enterprise.
 2. Configurare e testare l'appartenenza a gruppi dinamici e la gestione automatica delle licenze.
 
 ![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
@@ -47,7 +47,7 @@ Se si desidera testare la licenza automatizzata e l'appartenenza a un gruppo in 
 
 Per prima cosa, è necessario creare un nuovo gruppo di vendita e aggiungere una regola di appartenenza a un gruppo dinamico in modo che gli account utente con il reparto impostato su Sales vengano automaticamente aggiunti al gruppo Sales.
 
-1. Se si utilizza un'istanza privata del browser Internet, accedere al portale di Office [https://office.com](https://office.com) con l'account di amministratore globale della sottoscrizione di valutazione di Office 365 E5.
+1. Se si utilizza un'istanza privata del browser Internet, accedere al portale di Office 365 [https://portal.office.com](https://portal.office.com) con l'account di amministratore globale dell'abbonamento al laboratorio di testing di Office 365 E5.
 2. In una scheda separata del browser, accedere al portale di Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com).
 3. Nel portale di Azure fare clic su **Azure Active Directory > Utenti e gruppi > Tutti i gruppi**.
 4. Nel pannello **tutti i gruppi** fare clic su **nuovo gruppo**.

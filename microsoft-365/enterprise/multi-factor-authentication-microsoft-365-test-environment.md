@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno Smart Phone nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: 8e202936451030718c0c86601c2c621c50f78e1a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: ab346934ea639e819e4e45dd6560093629ee9cde
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291141"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353178"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 Enterprise
 
@@ -28,7 +28,7 @@ In questo articolo viene descritto come abilitare e testare l'autenticazione bas
   
 Sono disponibili due fasi per configurare l'autenticazione a più fattori per un account nell'ambiente di testing di Microsoft 365 Enterprise:
   
-1. Creare l'ambiente di testing Microsoft 365 Enterprise.
+1. Creare l'ambiente di testing di Microsoft 365 Enterprise.
     
 2. Abilitare e testare l'autenticazione a più fattori per l'account User 2.
 
@@ -50,31 +50,29 @@ Se si desidera testare l'autenticazione a più fattori in un'azienda simulata, s
 
 Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel modo seguente:
   
-1. Aprire un'istanza separata, privata del browser, accedere al portale di Office ([https://office.com](https://office.com)) e quindi accedere con l'account di amministratore globale.
+1. Aprire un'istanza separata, privata del browser, accedere all'interfaccia di amministrazione di Microsoft 365 ([https://portal.microsoft.com](https://portal.microsoft.com)) e quindi accedere con l'account di amministratore globale.
     
-2. Dalla pagina principale del portale, fare clic su **Admin**.
+2. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     
-3. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
+3. Nel riquadro utenti attivi, fare clic su **altre > configurazione di autenticazione a più fattori**.
     
-4. Nel riquadro utenti attivi, fare clic su **altre > configurazione di autenticazione a più fattori**.
+4. Nell'elenco, selezionare l'account **User 2** .
     
-5. Nell'elenco, selezionare l'account **User 2** .
+5. Nella sezione **User 2**, sotto **Azioni rapide**, fare clic su **Abilita**.
     
-6. Nella sezione **User 2**, sotto **Azioni rapide**, fare clic su **Abilita**.
+6. Nella finestra di dialogo **Informazioni sull'abilitazione dell'autenticazione più fattori** fare clic su **Abilita Multi-Factor Auth**.
     
-7. Nella finestra di dialogo **Informazioni sull'abilitazione dell'autenticazione più fattori** fare clic su **Abilita Multi-Factor Auth**.
+7. Nella finestra di dialogo **aggiornamenti con esito positivo** fare clic su **Chiudi**.
     
-8. Nella finestra di dialogo **aggiornamenti con esito positivo** fare clic su **Chiudi**.
+8. Nella scheda dell'interfaccia di **amministrazione di Microsoft 365** fare clic sull'icona dell'account utente in alto a destra, quindi fare clic su **Esci**.
     
-9. Nella scheda **Microsoft Office Home** fare clic sull'icona dell'account utente in alto a destra, quindi fare clic su **Disconnetti**.
-    
-10. Chiudere l'istanza del browser.
+9. Chiudere l'istanza del browser.
    
 Completare la configurazione dell'account User 2 per utilizzare un messaggio di testo per la convalida e testarla con questa procedura:
   
 1. Aprire una nuova istanza privata del browser.
     
-2. Accedere al portale di Office ([https://office.com](https://office.com)) ed eseguire l'accesso con l'account User 2 (User2\<@ Organization name>. onmicrosoft. com) e la password.
+2. Accedere al portale di Office 365 ([https://portal.office.com](https://portal.office.com)) ed eseguire l'accesso con il nome e la password dell'account utente 2.
     
 3. Dopo aver eseguito l'accesso, viene richiesto di configurare l'account per ulteriori informazioni. Fare clic su **Avanti**.
     

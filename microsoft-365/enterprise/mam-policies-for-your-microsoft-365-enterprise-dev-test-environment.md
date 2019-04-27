@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per aggiungere criteri di conformità dei dispositivi di Intune all'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: 5b587bd702071f325310ebd9979cf611f20e3205
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d20b050bfc56776656bf1d485b2e107a9debe2f7
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279064"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353188"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Criteri di conformità dei dispositivi per l'ambiente di testing di Microsoft 365 Enterprise
 
@@ -42,7 +42,7 @@ Se si desidera configurare i criteri MAM in un'azienda simulata, seguire le istr
 
 In questa fase, è possibile creare un criterio di conformità del dispositivo per i dispositivi Windows 10.
   
-1. Accedere a Office Portal all'indirizzo ([https://office.com](https://office.com)) e accedere alla sottoscrizione di valutazione di Office 365 con l'account di amministratore globale.
+1. Accedere al portale di Office 365 all'indirizzo[https://portal.office.com](https://portal.office.com)() e accedere alla sottoscrizione di laboratorio di testIng di Office 365 con l'account di amministratore globale.
     
 2. In una nuova scheda del browser, aprire il portale di Azure all' [https://portal.azure.com](https://portal.azure.com)indirizzo.
 

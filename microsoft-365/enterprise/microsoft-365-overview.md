@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 Enterprise.
-ms.openlocfilehash: 24aacc1a992e2dfdc683e5e4c4405b105eea7bf5
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a206924e7056d0213dd0721c2259736a031f80d6
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291307"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353204"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Panoramica di Microsoft 365 Enterprise
 
@@ -64,13 +64,17 @@ Per scaricare una copia del poster, fare clic [qui](https://github.com/Microsoft
 
 ## <a name="deploying"></a>Distribuzione
 
-Esistono due modi per distribuire i prodotti, le caratteristiche e i componenti di Microsoft 365 Enterprise:
+Esistono tre modi per distribuire i prodotti, le caratteristiche e i componenti di Microsoft 365 Enterprise:
 
 1. In partnership con FastTrack
   
    Con FastTrack, gli ingegneri Microsoft aiutano a passare al cloud con i propri ritmi. Vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
   
-2. Fai da te
+2. Con l'ausilio di servizi di consulenza Microsoft o di un [partner Microsoft](https://partner.microsoft.com/).
+
+   I consulenti possono analizzare l'infrastruttura corrente e contribuire allo sviluppo di un piano per incorporare tutti i software e i servizi di Microsoft 365 Enterprise.
+
+3. Fai da te
 
    La [Guida alla distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md) è una procedura dettagliata per la creazione dei carichi di lavoro per l'infrastruttura e la produttività. 
 
@@ -108,7 +112,7 @@ Per ulteriori informazioni sulla distribuzione, vedere How:
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Avviare il [percorso di distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
+Se si sta eseguendo personalmente la distribuzione, avviare il [percorso di distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
 
 ## <a name="see-also"></a>Vedere anche
 
