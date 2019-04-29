@@ -13,11 +13,11 @@ ms.collection:
 ms.custom: ''
 description: Caricare gli utenti dell’organizzazione per la produttività dei carichi di lavoro di Microsoft 365 Enterprise.
 ms.openlocfilehash: 30dbf913016687025c6159f1f1fc311462a13d29
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291639"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400140"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Carichi di lavoro e scenari di Microsoft 365 Enterprise
 

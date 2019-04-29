@@ -9,7 +9,7 @@ Se necessario, il [Passaggio 1](../windows10-prepare-your-org.md) può aiutare a
 
 ### <a name="optional-your-users-are-added-and-licensed"></a>Facoltativo: gli utenti vengono aggiunti e ricevono una licenza
 
-Gli account corrispondenti agli utenti vengono aggiunti direttamente al tenant di Azure AD per le sottoscrizioni di Office 365 e Intune o dalla sincronizzazione della directory Active Directory Domain Services (AD DS) locale.
+Gli account corrispondenti agli utenti vengono aggiunti direttamente al tenant di Azure AD per le sottoscrizioni di Office 365 e Intune o dalla sincronizzazione delle directory da Active Directory Domain Services locale.
 
 Una volta aggiunti gli utenti, è possibile assegnare loro le licenze Microsoft 365 Enterprise, direttamente come amministratore globale o utente o automaticamente tramite l'appartenenza al gruppo.
 
@@ -28,7 +28,7 @@ Per avviare una sequenza di attività di Gestione configurazione per eseguire un
 
 - Impostare il corretto livello dei dati di diagnostica di Windows
 - È stata verificata la disponibilità a eseguire l'aggiornamento di Windows
-- È stata creata una sequenza di attività di Gestione configurazione che includa una raccolta di dispositivi e una distribuzione del sistema operativo con un'immagine del sistema operativo Windows 10
+- È stata creata una sequenza di attività di Gestione configurazione che include una raccolta di dispositivi e una distribuzione del sistema operativo con un'immagine del sistema operativo Windows 10
 
 Dopo questa operazione, è possibile eseguire aggiornamenti sul posto su dispositivi pronti per aggiornare Windows. Per trarre il massimo vantaggio da Microsoft 365 Enterprise, aggiornare il maggior numero possibile di dispositivi con Windows 7 e Windows 8.1. 
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: "Informazioni su come eseguire l'aggiornamento di dispositivi Windows a Windows 10 Pro Creators Update. "
-ms.openlocfilehash: ec1ef0462cc1ba1cd1ae01ee28795096097e01a9
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 13a964b19b1fbd43e9c255a90161ca6b48099305
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279866"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33399975"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Eseguire l'aggiornamento di dispositivi Windows a Windows Pro Creators Update .
 
@@ -37,6 +37,9 @@ ms.locfileid: "32279866"
      - Creare un supporto di installazione tramite lo [strumento creazione multimediale](https://go.microsoft.com/fwlink/?LinkID=836960) : selezionare questa opzione per creare un supporto di installazione per l'aggiornamento di Windows 10 Pro Creator (unità flash USB o file ISO) per installare Windows 10 in un PC diverso da quello utilizzato.
     
         un. Leggere le istruzioni su come utilizzare lo strumento e creare il supporto di installazione. 
+
+> [!Note]
+> Se si dispone di dispositivi Windows che eseguono Windows 7 Pro, Windows 8 Pro o Windows 8,1 Pro, l'abbonamento a Microsoft 365 business dà diritto a un aggiornamento di Windows 10: non è necessario un codice Product Key.
     
 Per completare la configurazione dei dispositivi Windows 10, vedere [configurare i dispositivi Windows per gli utenti aziendali di Microsoft 365](set-up-windows-devices.md) . 
   

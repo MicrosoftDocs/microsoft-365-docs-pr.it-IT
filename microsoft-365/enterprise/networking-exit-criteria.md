@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: ''
 description: Verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise per l'infrastruttura di rete.
 ms.openlocfilehash: 9ea601d66ef2df0d7a4efde188a70c51e3fb9f60
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291368"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400220"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Fase 1: criteri uscita dell'infrastruttura di rete
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come prepararsi per la manutenzione di Windows e Office nel proprio ambiente.
-ms.openlocfilehash: 5e78c669ef1570acb35e5b939ac66f81317762bd
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 68598f92b5b29f1c0bc20ecb402b60b45128ca6a
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289982"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400250"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Passaggio 7: manutenzione di Windows e Office
 

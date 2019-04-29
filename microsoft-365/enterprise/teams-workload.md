@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Procedura di pianificazione, implementazione e aumento del valore di Microsoft Teams in Microsoft 365 Enterprise nell'organizzazione.
-ms.openlocfilehash: 646062babf525be176386264b4ef3c4a3a21647a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: bfc9e76211779aa960ff7633dd7d59b2b01e9f98
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291660"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400210"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Distribuire Microsoft Teams per Microsoft 365 Enterprise
 
@@ -45,7 +45,7 @@ Questi tre gruppi assicurano che la distribuzione di Teams includa analisi che s
 Un elenco di persone che rappresentano gli aspetti aziendali, tecnici e relativi agli utenti finali dell'organizzazione.
 
 ### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>Passaggio 2: determinare e assegnare priorità agli scenari aziendali di Teams
-Teams può essere usato per diversi scopi. È necessario capire gli scopi delle esigenze aziendali sui livelli separati dell'organizzazione, i gruppi aziendali, i reparti e i team che lavorano singolarmente o in progetto. Per esempi che aiutino a definire gli scenari di Teams, vedere [Raccolta di produttività di Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=1). 
+Teams può essere usato per diversi scopi. È necessario capire gli scopi delle esigenze aziendali sui livelli separati dell'organizzazione, i gruppi aziendali, i reparti e i team che lavorano singolarmente o in progetto. Per esempi che aiutino a definire gli scenari di Teams, vedere [Raccolta di produttività di Microsoft 365](https://www.microsoft.com/microsoft-365/success/?rtc=1). 
 
 Teams deve saper soddisfare team altamente collaborativi e velocissimi che lavorano a stretto contatto e richiedono molti più servizi che la sola posta elettronica che Exchange Online è in grado di fornire. Per fare un esempio, live chat di gruppo con una cronologia registrata e un percorso comune e facile da trovare dove archiviare file e appunti. 
 
