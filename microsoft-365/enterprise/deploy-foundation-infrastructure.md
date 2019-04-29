@@ -12,17 +12,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendere le fasi principali della distribuzione dell'infrastruttura di base per Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: 668775097eeffff569b99cc9fe4cd259f5d25c22
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Comprendere le fasi principali della distribuzione dell'infrastruttura di base per Microsoft 365 Enterprise all'interno dell'organizzazione, nota anche come la distribuzione di base.
+ms.openlocfilehash: e6b8a71f59f20633e323c71e931b930198bc4deb
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287122"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400050"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastruttura di base di Microsoft 365 Enterprise
 
-Se si esegue la distribuzione end-to-end di Microsoft 365 Enterprise autonomamente, è necessario innanzitutto creare una base fissa sulla quale le applicazioni e i servizi possano sbloccare creatività e collaborazione in un ambiente protetto. 
+Se si esegue la distribuzione end-to-end di Microsoft 365 Enterprise autonomamente, è necessario innanzitutto creare una base fissa sulla quale le applicazioni e i servizi possano sbloccare creatività e collaborazione in un ambiente protetto. Questa base è chiamata anche la distribuzione di base.
 
 Per un percorso definito end-to-end per la distribuzione, è possibile utilizzare queste fasi per pianificare e distribuire l'infrastruttura di base di Microsoft 365 Enterprise:
 

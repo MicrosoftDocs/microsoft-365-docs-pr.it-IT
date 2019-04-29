@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: configurare e illustrare la sincronizzazione hash delle password e l'accesso per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 9a907894d4f842b334403d047cabbdeb42217744
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a692f445bcb56044e9a6a29cee62facd22743733
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290982"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33353147"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
 
@@ -103,19 +103,17 @@ In primo luogo, installare e configurare Azure AD Connect su APP1.
     
 10. Nella pagina **Configurazione completata**, fare clic su **Esci**.
     
-11. In Internet Explorer, passare al portale di Office ([https://office.com](https://office.com)).
+11. In Internet Explorer, passare all'interfaccia di amministrazione di Microsoft 365 ([https://portal.microsoft.com](https://portal.microsoft.com)).
     
-12. Dalla pagina principale del portale, fare clic su **Admin**.
-    
-13. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
+12. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     
     Si noti l'account denominato **User1**. Questo account deriva dal dominio TESTLAB AD DS ed è la prova che la sincronizzazione della directory ha funzionato.
     
-14. Fare clic sull'account **User1**. Per le licenze di prodotti, fare clic su **Modifica**.
+13. Fare clic sull'account **User1**. Per le licenze di prodotti, fare clic su **Modifica**.
     
-15. In **Licenze di prodotti**, selezionare il paese e fare clic sul controllo **Disattiva** per **Office 365 Enterprise E5** (passando ad **Attiva**). Eseguire la stessa operazione per la licenza **Enterprise Mobility + Security E5**. 
+14. In **Licenze di prodotti**, selezionare il paese e fare clic sul controllo **Disattiva** per **Office 365 Enterprise E5** (passando ad **Attiva**). Eseguire la stessa operazione per la licenza **Enterprise Mobility + Security E5**. 
 
-16. Fare clic su **Salva** nella parte inferiore della pagina e selezionare **Chiudi**.
+15. Fare clic su **Salva** nella parte inferiore della pagina e selezionare **Chiudi**.
     
 Successivamente, verificare la possibilità di accedere all'abbonamento a Office 365 con il nome utente <strong>user1@testlab.</strong>\<nome dominio> nome utente dell'account User1.
 

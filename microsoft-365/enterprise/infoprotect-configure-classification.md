@@ -3,7 +3,7 @@ title: "Passaggio 2: configurare la classificazione dell'ambiente"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 04/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare i diversi modi per classificare i dati all'interno dell'organizzazione.
-ms.openlocfilehash: ca64b98bceb6f969adc964e93a6a1cc872763199
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5323e4f682e8a530601308877423502f64878a4c
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286975"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400090"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Passaggio 2: configurare la classificazione dell'ambiente
 
@@ -47,38 +47,31 @@ I tipi di informazioni riservate sono particolarmente utili per soddisfare i req
 
 Parte della definizione di una strategia di gestione dati è decidere il periodo di conservazione di specifici tipi di documenti o documenti con contenuti specifici in conformità con i criteri dell'organizzazione e le normative locali. Ad esempio, alcuni tipi di documento devono essere conservati per un determinato periodo di tempo e quindi eliminati e altri devono essere conservati a tempo indefinito.
 
-Per i documenti archiviati in Microsoft 365, si definiscono e applicano le etichette di conservazione ai documenti e ai dati archiviati in posta elettronica di Exchange, SharePoint Online, OneDrive for Business e i messaggi di chat Teams e di canali. Per ulteriori informazioni, incluso su come crearli, vedere [Panoramica delle etichette di conservazione](https://docs.microsoft.com/office365/securitycompliance/labels).
+Per i documenti archiviati in Microsoft 365, si definiscono e applicano le etichette di conservazione ai documenti e ai dati archiviati in posta elettronica di Exchange, SharePoint Online, OneDrive for Business e i messaggi di chat Teams e di canali. 
 
 Se si usano le etichette di conservazione, è necessario configurare un'etichetta per ogni categoria di file a cui deve essere applicato un criterio di conservazione. All'interno dell'etichetta di conservazione è possibile specificare:
 
 - Un insieme di descrittori per i file (ad esempio, per reparto aziendale, categoria file o normative).
-
 - Le impostazioni di conservazione per i file con l'etichetta di conservazione, ad esempio gestione tempi e comportamenti una volta raggiunto il tempo di conservazione.
 
 È anche possibile applicare un'etichetta di conservazione ai file automaticamente quando si configura un sito di SharePoint Online per applicare un'etichetta di conservazione predefinita per tutti i nuovi documenti del sito. 
 
-Per altre informazioni, vedere [Panoramica delle etichette di conservazione](https://docs.microsoft.com/office365/securitycompliance/labels).
+Per ulteriori informazioni, vedere la [Panoramica delle etichette di conservazione](https://docs.microsoft.com/office365/securitycompliance/labels).
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
 Parte della protezione e dell’implementazione della sicurezza per specifici tipi di documenti e documenti con contenuti specifici consiste nel contrassegnarli con un'etichetta in modo che possa essere applicata la sicurezza aggiuntiva. Con le etichette di riservatezza Microsoft 365 è possibile:
 
 - Applicare le impostazioni di protezione, ad esempio la crittografia, le autorizzazioni o aggiungere una filigrana.
-
 - Evitare che informazioni riservate escano dall'organizzazione nei dispositivi che eseguono Windows usando la protezione endpoint in Microsoft Intune. 
-
 - Usare la protezione di endpoint Windows Information Protection (WIP) per impedire che un contenuto venga copiato da un'applicazione di terze parti, ad esempio Twitter o Gmail, o venga copiato su supporti rimovibili, ad esempio un'unità USB.
-
 - Proteggere i contenuti in app e servizi di terze parti con Microsoft Cloud App Security. 
-
 - Classificare il contenuto senza usare nessuna impostazione di protezione.
 
 Se si usano le etichette di riservatezza, è necessario configurare un'etichetta per ogni livello di protezione di sicurezza e delle informazioni. Ad esempio, creare tre etichette di riservatezza per:
 
 - Protezione di base
-
 - Dati sensibili
-
 - Protezione per ambienti altamente regolamentati
 
 Per altre informazioni, vedere questa [Panoramica delle etichette di riservatezza](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
@@ -102,12 +95,14 @@ Se sono presenti sia riservatezza sia le etichette di Azure Information Protecti
 
 Per uno schema di classificazione di esempio contenente dati personali in base al GDPR, vedere [Progettare uno schema di classificazione per i dati personali](https://docs.microsoft.com/office365/enterprise/architect-a-classification-schema-for-personal-data).
 
+## <a name="take-it-for-a-test-drive"></a>Va inteso come un test drive
+
 |||
 |:-------|:-----|
 |![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida del laboratorio di testing: classificazione dei dati](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
-Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria.md#crit-infoprotect-step3) che corrispondono a questo passaggio.
+Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria.md#crit-infoprotect-step2) che corrispondono a questo passaggio.
 
 ## <a name="next-step"></a>Passaggio successivo
 

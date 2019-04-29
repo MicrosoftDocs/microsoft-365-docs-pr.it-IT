@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le risorse a disposizione per la distribuzione di Microsoft 365 Enterprise nell'organizzazione.
-ms.openlocfilehash: 3112589a023a563ff599535e1e9045a3d3db3bce
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: dca9d5938a5db9cb3bc00e4e34d1f939700a1182
+ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289191"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33400062"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Distribuire Microsoft 365 Enterprise
 
@@ -41,13 +41,13 @@ Esistono tre modi principali per la distribuzione di Microsoft 365 Enterprise:
 
 FastTrack è un vantaggio in corso e ripetibile, disponibile come parte dell'abbonamento, che viene recapitato tramite i tecnici Microsoft che consentono di passare nel cloud con i propri tempi. FastTrack consente anche di accedere a partner qualificati per altri servizi. Con oltre 40.000 clienti abilitati ad oggi, FastTrack aiuta a massimizzare il ROI, ad accelerare la distribuzione e ad aumentare l'adozione all'interno dell'organizzazione. Vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-Se si desidera sfruttare FastTrack per la distribuzione di Microsoft 365 Enterprise, è possibile usare l'[assistente distribuzione di Microsoft 365](https://aka.ms/microsoft365setupguide) di FastTrack per indicazioni su come distribuire e configurare l'infrastruttura di base. Si noti che è necessario essere connessi con ruolo di amministratore globale in un tenant di Office 365 o Microsoft 365 per accedere alla pagina.
+Se si desidera sfruttare FastTrack per la distribuzione di Microsoft 365 Enterprise, è possibile usare l'[assistente distribuzione di Microsoft 365](https://aka.ms/microsoft365setupguide) di FastTrack per indicazioni su come distribuire e configurare l'infrastruttura di base. È necessario essere connessi come amministratore globale in un tenant di Office 365 o Microsoft 365 per accedere alla pagina.
 
 Iniziare il percorso di distribuzione end-to-end con FastTrack [qui](https://fasttrack.microsoft.com/microsoft365).
 
 ## <a name="microsoft-365-enterprise-deployment-guide"></a>Guida alla distribuzione di Microsoft 365 Enterprise.
 
-La guida alla distribuzione di Microsoft 365 Enterprise fornisce istruzioni per la configurazione corretta e richiesta di prodotti e caratteristiche di Microsoft 365 Enterprise.
+La guida alla distribuzione di Microsoft 365 Enterprise fornisce istruzioni per la configurazione corretta e richiesta dei prodotti Microsoft 365 Enterprise e le loro funzionalità.
 
 Per distribuire autonomamente Microsoft 365 Enterprise, è possibile:
 
