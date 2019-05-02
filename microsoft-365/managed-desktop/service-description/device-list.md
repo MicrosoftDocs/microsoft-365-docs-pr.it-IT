@@ -3,20 +3,20 @@ title: Dispositivi Microsoft Managed Desktop
 description: In questo argomento sono elencate le specifiche del dispositivo utilizzate in Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: a6572a27f737e3467a7efd2a4aea8488b364a8a7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5858ec7bbbd1cd1f961c94ad9605b79ce9ad7b23
+ms.sourcegitcommit: d57adf17de6bc3e67d104d134f43d899a20db252
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291530"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33520756"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop 
 
 Microsoft Managed Desktop valuta regolarmente i dispositivi da includere nel servizio. In questo argomento vengono illustrati i requisiti per un dispositivo che deve essere registrato in Microsoft Managed Desktop.
 
-Per ulteriori informazioni su Microsoft Managed Desktop, vedere [documentazione e risorse di Microsoft managEd desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/). 
+Per ulteriori informazioni su Microsoft Managed Desktop, vedere [documentazione e risorse di Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/). 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -73,7 +73,7 @@ Tali risorse consentono di rispondere alle domande che potrebbero essere disponi
 
 **Note**
 
-& # x00B9; Le aggiunte possono essere apportate a questo elenco in qualsiasi momento. Le riMozioni verranno registrate in questa pagina 90 giorni prima di impedire la registrazione di tali dispositivi.
+&#x00B9; Le aggiunte possono essere apportate a questo elenco in qualsiasi momento. Le rimozioni verranno registrate in questa pagina 90 giorni prima di impedire la registrazione di tali dispositivi.
 
 & # 178; Data archivio si riferisce alla data in cui questi modelli saranno soggetti a un periodo di gestione più breve; tutti i dispositivi onboarded dopo questa data non riceveranno un termine completo di tre anni ITaaS. La data di pensionamento si riferisce alla data in cui questo modello non sarà più supportato da Microsoft Managed Desktop.
 
