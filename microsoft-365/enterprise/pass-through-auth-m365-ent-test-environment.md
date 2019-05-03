@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: configurare l'autenticazione pass-through per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: e925f0b48194c94993e7bf3e08f1f18650b19a23
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: b92700d28a758842d3754bb2b359181b9ee59d2e
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400110"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553355"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticazione pass-through per l'ambiente di testing di Microsoft 365
 
@@ -48,7 +48,7 @@ Seguire le istruzioni riportate in [sincronizzazione hash delle password per Mic
 Questa configurazione è costituita da: 
   
 - Abbonamenti di valutazione o a pagamento a Office 365 E5 ed EMS E5.
-- Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. Azure AD Connect viene eseguito su APP1 per sincronizzare periodicamente il dominio TESTLAB di Active Directory Domain Services con il tenant Azure AD degli abbonamenti a Office 365 ed EMS E5.
+- Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. Azure AD Connect viene eseguito su APP1 per sincronizzare periodicamente il dominio TESTLAB Active Directory Domain Services con il tenant Azure AD degli abbonamenti a Office 365 ed EMS E5.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Fase 2: configurare Azure AD Connect su APP1 per l'autenticazione pass-through
 
