@@ -23,7 +23,7 @@ ms.locfileid: "32278248"
 
 Servizi professionali di Microsoft include un gruppo eterogeneo di architetti, ingegneri, consulenti e professionisti del supporto tecnico dedicato alla realizzazione della mission di Microsoft di consentire ai clienti di fare di più e ottenere di più. Il team Servizi professionali include più di 21.000 operatori tra consulenti, consulenti digitali, supporto tecnico Premier, tecnici e addetti alle vendite dislocati in 191 paesi, che forniscono supporto in oltre 46 lingue, gestiscono diversi milioni di impegni al mese e avviano interazioni tra clienti e partner attraverso strumenti automatizzati, in locale, telefono, Web e community. L'organizzazione offre competenze generali sull'intero portfolio Microsoft, sfruttando una vasta rete di partner, community tecniche, strumenti, diagnostica e canali di contatto con i clienti aziendali.
 
-Per ulteriori informazioni sui Servizi professionali di Microsoft vedere la sezione Servizi professionali di Microsoft nel Centro protezione Microsoft (<https://www.microsoft.com/trustcenter/professional-services>). I servizi professionali di Microsoft tengono seriamente conto degli obblighi derivanti dal Regolamento generale sulla protezione dei dati (GDPR). Le informazioni contenute in questo documento sono progettate per rispondere alle domande dei clienti riguardo a come l’assistenza Microsoft e le consulenze offerte rispondono e aiutano i clienti in risposta a obblighi di Data Subject Request (DSR) secondo GDPR.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
+Per ulteriori informazioni sui Servizi professionali di Microsoft vedere la sezione Servizi professionali di Microsoft nel Centro protezione Microsoft (<https://www.microsoft.com/trustcenter/professional-services>). Per i servizi professionali di Microsoft, il rispetto degli obblighi derivanti dal Regolamento generale sulla protezione dei dati (GDPR) è importante. Le informazioni contenute in questo documento possono aiutare a risolvere eventuali dubbi dei clienti su come i servizi di assistenza e consulenza Microsoft supportino i clienti per gestire gli obblighi relativi alle richieste degli interessati secondo il GDPR.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
 
 ### <a name="introduction-to-dsrs"></a>Introduzione alle richieste DSR 
 
@@ -76,21 +76,21 @@ Di seguito sono riportate le definizioni dei termini relativi all'RGPD per quest
 Questa guida descrive quattro scenari che un cliente può riscontrare se ha utilizzato Servizi professionali di Microsoft.
 
 <span id="_Toc510704611" class="anchor"><span id="_Toc511045453" class="anchor"><span id="_Toc511403161" class="anchor"></span></span></span>
-- **DSR per un contatto cliente che coinvolge Microsoft**
+- **Richiesta dell’interessato per un cliente che contatta Microsoft**
 
-Spiegazione di come Microsoft risponde alle richieste da un contatto cliente o un amministratore IT per esercitare i diritti dei soggetti dei dati.
+Spiegazione di come Microsoft gestisce le richieste di un cliente o un amministratore IT per esercitare i diritti degli interessati.
 
 <span id="_Toc510704612" class="anchor"><span id="_Toc511045454" class="anchor"><span id="_Toc511403162" class="anchor"></span></span></span>
-- **DSR per un utente finale che coinvolge Microsoft**
+- **Richiesta dell’interessato per un utente finale che contatta Microsoft**
 
-Spiegazione di come Microsoft risponde alle richieste dei dipendenti di un cliente o di altri interessati per esercitare i propri diritti.
+Spiegazione di come Microsoft gestisce richieste dei dipendenti di un cliente o di altri interessati per esercitare i propri diritti.
 
-- **DSR per i dati forniti dal cliente: supporto commerciale**
+- **Richiesta dell’interessato per i dati forniti dal cliente: supporto commerciale**
 
 Spiegazione di come ottenere assistenza da Microsoft quando un cliente ha ricevuto una richiesta da un suo dipendente o da altri interessati per esercitare i propri diritti, e i dati personali dell'interessato sono stati raccolti dal supporto tecnico Microsoft durante un impegno relativo al supporto.
 
 <span id="_Toc511403163" class="anchor"><span id="_Toc511045456" class="anchor"><span id="_Toc510704614" class="anchor"></span></span></span>
-- **DSR per i dati forniti dal cliente: servizi di consulenza tra cui i servizi di migrazione di FastTrack** 
+- **Richiesta dell’interessato per i dati forniti dal cliente: servizi di consulenza tra cui i servizi di migrazione di FastTrack** 
 
 <span id="_Toc511045457" class="anchor"><span id="_Toc511403164" class="anchor"></span></span>
 
