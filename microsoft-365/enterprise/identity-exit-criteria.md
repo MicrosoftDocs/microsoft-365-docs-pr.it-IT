@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise per l'infrastruttura e i servizi basati sull'identità.
-ms.openlocfilehash: e36f6e88c41454a951f6c6da4253c4bac07f2fb8
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0f2d1cbeef87301729b23a6290277b28466c9770
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285551"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553305"
 ---
 # <a name="phase-2-identity-infrastructure-exit-criteria"></a>Fase 2: criteri uscita dell'infrastruttura di rete
 
@@ -33,7 +33,7 @@ Vedere anche [Prerequisiti](https://docs.microsoft.com/microsoft-365-enterprise/
 
 Gli account e i gruppi utente sono stati creati in modo che:
 
-- I dipendenti dell'organizzazione e i fornitori, i terzisti e i partner della stessa abbiano un account utente corrispondente in Azure Active Directory (Azure AD).
+- I dipendenti, i fornitori, i terzisti e i partner dell'organizzazione abbiano un account utente corrispondente in Azure Active Directory (Azure AD).
 - I gruppi di Azure AD e i relativi membri contengano account utente e altri gruppi per scopi diversi, come il provisioning delle impostazioni di sicurezza per i servizi cloud Microsoft, la gestione delle licenze automatica e altri utilizzi.
 
 Se necessario, il [Passaggio 1](identity-plan-users-groups.md) può aiutare a soddisfare questo requisito.
@@ -75,7 +75,7 @@ Se necessario, il [Passaggio 2](identity-designate-protect-admin-accounts.md#ide
 <a name="crit-identity-sync"></a>
 ## <a name="required-users-and-groups-are-synchronized-with-azure-ad"></a>Obbligatorio: gli utenti e i gruppi sono sincronizzati con Azure AD
 
-Se si dispone di un provider di identità locale esistente, come Active Directory Domain Services (AD DS), è stato usato Azure AD Connect per sincronizzare i gruppi e gli account utente dal provider di identità locale al tenant di Azure AD.
+Se si dispone di un provider di identità locale esistente, come Active Directory Domain Services (AD DS), è stato utilizzato Azure AD Connect per sincronizzare i gruppi e gli account utente dal provider di identità locale al tenant di Azure AD.
 
 Grazie alla sincronizzazione della directory, gli utenti possono accedere a Office 365 e agli altri servizi cloud Microsoft utilizzando le stesse credenziali che usano per l'accesso ai loro computer e alle risorse locali.
 
@@ -93,7 +93,7 @@ Per verificare il corretto funzionamento dell'autenticazione con le credenziali 
 
 Per verificare il corretto funzionamento della sincronizzazione della directory, eseguire le operazioni seguenti:
 
-1.  Creare un nuovo gruppo di test in Active Directory Domain Services (AD DS).
+1.  Creare un nuovo gruppo di test in AD DS.
 2.  Attendere la sincronizzazione.
 3.  Controllare il tenant di Azure AD per verificare che venga visualizzato il nome del nuovo gruppo di test.
 
@@ -163,7 +163,7 @@ Se necessario, il [Passaggio 5](identity-password-reset.md#identity-pw-reset) pu
 
 Sono state utilizzate le istruzioni riportate in [Reimpostazione delle password in modalità self-service di Azure AD con writeback delle password](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started) per abilitare il writeback delle password per il tenant di Azure AD per la sottoscrizione di Microsoft 365 Enterprise.
 
-Se si ignora questa opzione, gli utenti che non sono connessi con il server locale devono reimpostare o sbloccare le password di AD DS tramite un amministratore IT.
+Se si ignora questa opzione, gli utenti che non sono connessi con il server locale devono reimpostare o sbloccare le password dei AD DS tramite un amministratore IT.
 
 Se necessario, il [Passaggio 5](identity-password-reset.md#identity-pw-writeback) può aiutare con questa opzione.
 
@@ -175,7 +175,7 @@ Se necessario, il [Passaggio 5](identity-password-reset.md#identity-pw-writeback
 
 Per testare il writeback delle password, è necessario cambiare la password in Office 365. Dovrebbe essere possibile usare l'account e la nuova password per accedere alle risorse di AD DS locale.
 
-1. Creare un account utente di test per AD DS locale, consentire la sincronizzazione della directory e concedere una licenza di Office 365 nell'interfaccia di amministrazione di Microsoft 365.
+1. Creare un account utente di test per AD DS locale, consentire la sincronizzazione della directory e concedere una licenza di Office 365 nell’interfaccia di amministrazione di Microsoft 365.
 2. Accedere al computer e al portale di Office con le credenziali dell'account utente di test da un computer remoto nel dominio AD DS locale.
 3. Selezionare **Impostazioni > Impostazioni di Office 365 > Password > Cambia password**.
 4. Digitare la password corrente, inserirne una nuova e quindi confermarla.

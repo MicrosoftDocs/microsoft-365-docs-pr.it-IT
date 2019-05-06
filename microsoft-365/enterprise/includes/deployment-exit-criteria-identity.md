@@ -65,7 +65,7 @@ Per verificare il corretto funzionamento dell'autenticazione con le credenziali 
 
 Per verificare il corretto funzionamento della sincronizzazione della directory, eseguire le operazioni seguenti:
 
-1.  Creare un nuovo gruppo di test in Active Directory Domain Services (AD DS).
+1.  Creare un nuovo gruppo di test in AD DS.
 2.  Attendere la sincronizzazione.
 3.  Controllare il tenant di Azure AD per verificare che venga visualizzato il nome del nuovo gruppo di test.
 

@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Utilizzare queste guide al lab di test per configurare dimostrazioni, modelli di verifica o ambienti di sviluppo e test per Microsoft 365 Enterprise.
-ms.openlocfilehash: 007fac786e7676d219d7e82c435e37fe3c3221df
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: e45a4c903932116a54f0660f08b394d8d2f91307
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353139"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553285"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Guide al lab di test di Microsoft 365 Enterprise
 
@@ -49,7 +49,7 @@ Per verificare le funzionalità e le capacità relative alla gestione delle iden
 
 - [Sincronizzazione hash delle password](password-hash-sync-m365-ent-test-environment.md)
   
-   Abilitare e testare la sincronizzazione della directory basata su hash delle password da un controller di dominio di Active Directory Domain Services.
+   Abilitare e testare la sincronizzazione della directory basata su hash delle password da un controller di dominio di AD DS.
 
 - [Autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md)
   

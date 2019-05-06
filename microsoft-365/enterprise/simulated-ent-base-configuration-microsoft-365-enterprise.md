@@ -3,7 +3,7 @@ title: Configurazione di base dell'organizzazione simulata per Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 05/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilizzare questa guida al lab di test per creare un ambiente di testing dell'organizzazione simulata per Microsoft 365 Enterprise.
-ms.openlocfilehash: 7c16f6fee480e883f7bf87d3b03441cf18e8f73f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 173622666420976199709d311ef67a7f0be3d867
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290833"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553371"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>La configurazione di base per l'organizzazione simulata
 
 In questo articolo vengono fornite istruzioni dettagliate per creare un ambiente semplificato per Microsoft 365 Enterprise che include:
 
-- Abbonamenti di valutazione o a pagamento a Office 365 E5 ed EMS E5.
+- Un abbonamento di valutazione o a pagamento a Microsoft 365 E5.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita da tre macchine virtuali in una rete virtuale Azure (DC1 APP1 e CLIENT1).
  
 ![La configurazione di base per l'organizzazione simulata](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
@@ -125,7 +125,7 @@ $nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
 ```
 
-Successivamente, creare la macchina virtuale DC1 e configurarla come controller di dominio per il dominio di Active Directory Domain Services **testlab.**\<dominio pubblico> e un server DNS per le macchine virtuali della rete virtuale TestLab. Ad esempio, se il nome di dominio pubblico è **<span>contoso</span>.com**, la macchina virtuale DC1 sarà un controller di dominio per il dominio **<span>testlab</span>.contoso.com**.
+Successivamente, creare la macchina virtuale DC1 e configurarla come controller di dominio per il dominio di AD DS **testlab.**\<dominio pubblico> e come server DNS per le macchine virtuali della rete virtuale TestLab. Ad esempio, se il nome di dominio pubblico è **<span>contoso</span>.com**, la macchina virtuale DC1 sarà un controller di dominio per il dominio **<span>testlab</span>.contoso.com**.
   
 Inserire il nome del gruppo di risorse ed eseguire questi comandi al prompt dei comandi di PowerShell nel computer locale per creare una macchina virtuale di Azure per DC1.
   
@@ -349,54 +349,63 @@ Questa è la configurazione corrente.
 ![Passaggio 3 della configurazione di base per l'organizzazione simulata](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
-## <a name="phase-2-create-your-office-365-e5-and-ems-e5-subscriptions"></a>Passaggio 2: creare abbonamenti a Office 365 E5 ed EMS E5
+## <a name="phase-2-create-your-microsoft-365-e5-subscriptions"></a>Fase 2: Creare gli abbonamenti a Microsoft 365 E5
 
-In questa fase vengono creati nuovi abbonamenti a Office 365 E5 ed EMS E5 che utilizzano un nuovo e comune tenant Azure Active Directory, separato dall'abbonamento di produzione. L'operazione può essere eseguita in due modi:
+In questa fase viene creato un nuovo abbonamento a Microsoft 365 E5 che usa un nuovo tenant Azure Active Directory, separato dall'abbonamento di produzione. L'operazione può essere eseguita in due modi:
 
-- Utilizzare abbonamenti di valutazione a Office 365 E5 ed EMS E5. 
+- Usare un abbonamento di valutazione a Microsoft 365 E5. 
 
-  L'abbonamento di valutazione a Office 365 E5 è di 30 giorni e può essere esteso facilmente a 60 giorni. L'abbonamento di valutazione a E5 EMS è di 90 giorni. Quando gli abbonamenti di valutazione scadono, è necessario convertirli in abbonamenti a pagamento o creare nuovi abbonamenti di valutazione. Creare nuovi abbonamenti di valutazione significa mantenere la configurazione, che può contenere scenari complessi.  
-- Utilizzare un abbonamento di produzione separato a Microsoft 365 Enterprise con un numero limitato di licenze.
+  L'abbonamento di valutazione a Microsoft 365 E5 è di 30 giorni e può essere esteso facilmente a 60 giorni. Quando l'abbonamento di valutazione scade, è necessario convertirlo in un abbonamento a pagamento o creare un nuovo abbonamento di valutazione. Con la creazione di nuovi abbonamenti di valutazione, la configurazione esistente, che può contenere scenari complessi, viene abbandonata.  
+- Usare un abbonamento di produzione separato a Microsoft 365 E5 con un numero limitato di licenze.
 
   Questo comporta un costo aggiuntivo, ma consente di disporre di un ambiente di testing di base per provare funzioni, configurazioni e scenari senza scadenza. È possibile usare lo stesso ambiente di testing durante il lungo periodo per prove di funzionamento, dimostrazioni a colleghi, gestione, nonché sviluppo e test delle applicazioni. Questo è il metodo consigliato.
 
 ### <a name="use-trial-subscriptions"></a>Utilizzare gli abbonamenti di valutazione
 
-Se è necessario utilizzare gli abbonamenti di valutazione, seguire i passaggi nelle fasi 2 e 3 dell'[ambiente di sviluppo/testing di Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
-  
-Iscriversi quindi per la sottoscrizione di valutazione di EMS E5 e aggiungerla alla stessa organizzazione della sottoscrizione di prova di Office 365 E5.
-  
-Prima di tutto, aggiungere la sottoscrizione di valutazione di EMS E5 e assegnare una licenza EMS al proprio account di amministratore globale.
-  
-1. Con l'istanza privata di un browser Internet, accedere al portale di Office con le credenziali dell'account di amministratore globale. Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+Seguire innanzitutto i passaggi della fase 2 e della fase 3 dell'[ambiente di sviluppo/test di Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) per creare un ambiente di sviluppo/test semplificato di Office 365.
+
+>[!Note]
+>È stato creato un abbonamento di valutazione a Office 365 in modo che l'ambiente di sviluppo/test includa un tenant di Azure AD diverso da quelli a pagamento attualmente in uso. Questa separazione indica che è possibile aggiungere e rimuovere utenti e gruppi nel tenant di test senza alcun effetto sulle sottoscrizioni di produzione.
+>
+
+Aggiungere quindi l'abbonamento di valutazione a Microsoft 365 E5 e assegnare una licenza di Microsoft 365 al proprio account di amministratore globale.
+
+1. Con un'istanza privata di un browser Internet, accedere all'interfaccia di amministrazione di Microsoft 365 all'indirizzo [http://admin.microsoft.com](http://admin.microsoft.com) con le credenziali dell'account di amministratore globale.
     
-2. Scegliere il riquadro **Amministrazione**.
+2. Nella pagina dell'**interfaccia di amministrazione di Microsoft 365** fare clic su **Fatturazione > Acquisto di servizi** nella barra di spostamento sinistra.
     
-3. Nella scheda **Interfaccia di amministrazione di Microsoft 365** del browser fare clic su **Fatturazione > Servizi di acquisto** nella barra di spostamento sinistra.
-    
-4. Nella pagina **Acquisto di servizi**, individuare la voce **Enterprise Mobility + Security E5**. Posizionare il puntatore del mouse su di essa e fare clic su **Avvia la versione di valutazione gratuita**.
-    
+3. Nella pagina **Acquisto di servizi** individuare la voce **Microsoft 365 E5**. Posizionare il puntatore del mouse su di essa e fare clic su **Avvia valutazione gratuita**.
+
+4. Nella pagina **Valutazione di Microsoft 365 E5** scegliere di ricevere una chiamata o un SMS, immettere il numero di telefono, quindi fare clic su **Inviami un SMS** o **Chiamami**.
+
 5. Nella pagina **Conferma l'ordine**, fare clic su **Prova adesso**.
-    
+
 6. Nella pagina **Ricevuta ordine**, fare clic su **Continua**.
-    
-7. Nella scheda **Interfaccia di amministrazione di Office 365** del browser fare clic su **Utenti > Utenti attivi** nel riquadro di spostamento di sinistra.
-    
-8. Fare clic sull'account amministratore globale e quindi su **Modifica** per le **licenze del prodotto**.
-    
-9. Nel riquadro **Licenze per i prodotti**, impostare la licenza per i prodotti di **Enterprise Mobility + Security E5** su **Attiva**, fare clic su **Salva** e quindi fare doppio clic su **Chiudi**.
-    
+
+7. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su **Utenti attivi**, quindi sull'account dell'amministratore.
+
+8. Per **Licenze di prodotti** fare clic su **Modifica**.
+
+9. Disattivare la licenza per Office 365 Enterprise E5 e attivare la licenza per Microsoft 365 E5.
+
+10. Fare clic su **Salva > Chiudi > Chiudi**.
+
+ In seguito, ***se è stata completata la fase 3 dell'***[ambiente di sviluppo/test di Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment), ripetere i passaggi da 8 a 11 della procedura precedente per tutti gli altri account (Utente 2, Utente 3, Utente 4 e Utente 5).
+  
 > [!NOTE]
->  Per un ambiente di test permanente, creare una nuova sottoscrizione a pagamento con un numero limitato di licenze. 
+> L'abbonamento di valutazione a Microsoft 365 E5 dura 30 giorni. Per un ambiente di test permanente, convertire questo abbonamento di valutazione in uno a pagamento con un numero limitato di licenze.
   
-Successivamente, ripetere i passaggi 8 e 9 della procedura precedente per tutti gli altri account (Utente 2, Utente 3, Utente 4 e Utente 5).
+A questo punto, l'ambiente di test include:
   
+- Un abbonamento di valutazione a Microsoft 365 E5.
+- Tutti gli account utente appropriati (solo l'amministratore globale o tutti e cinque gli account utente) sono abilitati per l'uso di Microsoft 365 E5.
+    
 ### <a name="results"></a>Risultati
 
-A questo punto, l'ambiente di testing dispone di:
+A questo punto, l'ambiente di test dispone di:
   
-- Sottoscrizioni di valutazione di Office 365 E5 Enterprise ed EMS E5 che condividono lo stesso tenant di Azure AD con l'elenco degli account utente in uso.
-- Tutti gli account utente appropriati (solo l'amministratore globale o tutti e cinque gli account utente), sono abilitati per l'uso di Office 365 E5 ed EMS E5.
+- Abbonamento di valutazione a Microsoft 365 E5.
+- Tutti gli account utente appropriati (solo l'amministratore globale o tutti e cinque gli account utente) sono abilitati per l'uso di Microsoft 365 E5.
     
 Questa è la configurazione finale.
   

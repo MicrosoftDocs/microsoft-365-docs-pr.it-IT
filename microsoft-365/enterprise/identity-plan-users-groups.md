@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pianificare il set di utenti e gruppi che lavoreranno per l'organizzazione.
-ms.openlocfilehash: f8b3df73518e33c7750c0b72b2cb9f36bc8e9745
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c74ff672ce84a5609c11eb4fa7a0405d350349ab
+ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283795"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33553295"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>Passaggio 1: pianificazione per utenti e gruppi
 
@@ -42,7 +42,7 @@ Quando un'organizzazione utilizza Microsoft 365 Enterprise, il provider di ident
 - **Active Directory Domain Services**, un provider di identità Intranet ospitato su computer che eseguono Windows Server. Questa opzione viene generalmente usata dalle organizzazioni che possiedono un provider di identità locale esistente.
 - **Azure Active Directory (Azure AD**), un'identità come servizio (IDaaS) basata sul cloud che offre un'ampia gamma di funzionalità per gestire e proteggere l'ambiente. Questa opzione viene generalmente usata dalle organizzazioni che non dispongono di un'infrastruttura locale esistente.
 
-Se l'organizzazione dispone di un provider di identità locale esistente, non è necessario sincronizzare gli account e i gruppi utente da Active Directory Domain Services ad Azure AD per fornire un accesso più semplice ai servizi basati sul cloud di Microsoft 365 Enterprise. È anche possibile usare Azure AD per creare e gestire gruppi presenti solo nel cloud Microsoft.
+Se l'organizzazione dispone di un provider di identità locale esistente, non è necessario sincronizzare gli account e i gruppi utente da AD DS ad Azure AD per fornire un accesso più semplice ai servizi basati sul cloud di Microsoft 365 Enterprise. È anche possibile usare Azure AD per creare e gestire gruppi presenti solo nel cloud Microsoft.
 
 Una volta impostati gli utenti e i gruppi in Azure AD, è possibile:
 
