@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Informazioni su come aggiungere nuovi utenti, proteggere i propri dispositivi e assegnare ruoli in Microsoft 365 business.
-ms.openlocfilehash: 2d0d4fcd2ebaaf1d73ef7a1b74e73dbfa943a6be
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: e27e9e2b67e187bbca3c2f1b2c9d21196effa77f
+ms.sourcegitcommit: 0feaebc1c5ea2636b5c9fa96eef648a1e37635c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660435"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33864824"
 ---
 # <a name="add-additional-users-to-microsoft-365-business"></a>Aggiungere altri utenti a Microsoft 365 Business
 
@@ -33,7 +33,7 @@ ms.locfileid: "33660435"
 
 1. Accedere all'interfaccia di amministrazione all' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>indirizzo. 
 2. Nella barra di navigazione sinistra **** \> scegliere utenti **attivi**.
-1. Nella pagina **utenti attivi** scegliere **Aggiungi un utente**
+1. Nella pagina **utenti attivi** scegliere **Aggiungi utente**.
  4. Nel riquadro **Nuovo utente** digitare le informazioni richieste. 
   
     È anche possibile immettere informazioni aggiuntive in **Informazioni di contatto**, scegliere come impostare la password in **Password** e assegnare ruoli in **Ruoli**.
