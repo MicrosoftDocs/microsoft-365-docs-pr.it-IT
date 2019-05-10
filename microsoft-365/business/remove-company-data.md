@@ -19,30 +19,32 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: 'Informazioni su come utilizzare Microsoft 365 business per rimuovere i dati aziendali dai dispositivi utente o dai PC Windows. '
-ms.openlocfilehash: 29aa4452d2d3e7b54fbb28d90880cdef28f50684
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 903b99af5f75531b8187b789510c370f7859f689
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283836"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660623"
 ---
 # <a name="remove-company-data-from-devices"></a>Rimuovere i dati aziendali dai dispositivi
+
+![Banner che puntano https://aka.ms/aboutM365previewa.](media/m365admincenterchanging.png)
 
 ## <a name="remove-company-data"></a>Rimuovere i dati aziendali
 
 È possibile usare Microsoft 365 Business per rimuovere i dati aziendali che gli utenti hanno installato nei propri [dispositivi](app-protection-settings-for-android-and-ios.md) o [PC Windows](protection-settings-for-windows-10-devices.md) protetti da Microsoft 365. **Se si rimuovono i dati aziendali da un dispositivo, non è più possibile ripristinarli**. 
   
-1. Accedere a [Microsoft 365 Business](https://portal.office.com) con le credenziali di amministratore globale. 
+1. Accedere all'interfaccia di amministrazione all' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>indirizzo.
     
-2. Sulla barra di spostamento sinistra, scegliere **gestione** **criteri** \> **dispositivi** \> .
+2. Sulla barra di spostamento sinistra, scegliere **gestione** **dispositivi** \> .  
   
 3. Nella pagina **Gestisci** scegliere o cercare un utente di cui si desidera rimuovere i dati e quindi scegliere il nome. 
     
-4. Nel riquadro successivo selezionare il dispositivo o i dispositivi dall'elenco **Dispositivi gestiti** per rimuovere i dati e scegliere **Avanti**. 
+4. Nel riquadro successivo selezionare il dispositivo o i dispositivi dall'elenco **dispositivi** e nel riquadro dispositivo che si apre è possibile scegliere di reimpostare le impostazioni di fabbrica del dispositivo o di rimuovere i dati della società a seconda del tipo di dispositivo. 
     
-    ![On the remove comapany data pane, select the device from which you want to remove the data.](media/f3725ff9-ebdb-4c13-9523-b2df362640cf.png)
+    ![On the remove comapany data pane, select the device from which you want to remove the data.](media/resetorremove.png)
   
-5. Nel riquadro **Vuoi rimuovere i dati aziendali dai dispositivi?** scegliere **Rimuovi** \> **Chiudi**.
+5. Nel riquadro di conferma scegliere **conferma** \> **Chiudi**.
     
 
 

@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Informazioni su come creare un criterio di gestione delle app e proteggere i file di lavoro nei dispositivi Windows 10.
-ms.openlocfilehash: 289c6a74f6ccb53f6a833612a7b4a5bcddd3ea56
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: f649454417dceae05255df6b37760af99c0b8d4f
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660386"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Configurare le impostazioni di protezione delle app per i dispositivi Windows 10
 
@@ -37,7 +37,7 @@ ms.locfileid: "32278179"
 
 Se gli utenti hanno dispositivi Windows 10 personali in cui eseguono attività di lavoro, è possibile proteggere anche i dati in questi dispositivi.
   
-1. Accedere all'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=837890) con le credenziali di amministratore globale. Selezionare il riquadro **Amministratore** per passare all'interfaccia di amministrazione. 
+1. Accedere all'interfaccia di amministrazione all' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>indirizzo. 
     
 2. Nella barra di spostamento sinistra fare clic su **criteri** \> **dispositivi** \> **Aggiungi**.
 
@@ -45,15 +45,11 @@ Se gli utenti hanno dispositivi Windows 10 personali in cui eseguono attività d
     
 4. In **Tipo di criterio** scegliere **Gestione applicazioni per Windows 10**.
     
-5. Under ** Device type **, choose either **Personal** or **Company Owned**.
+5. In **tipo di dispositivo**scegliere **personale** o di **proprietà dell'azienda**.
     
 6. L'opzione **Crittografa i file di lavoro** viene attivata automaticamente. 
     
 7. Impostare **Impedisci agli utenti di copiare dati aziendali in file personali e forzali a salvare i file di lavoro in OneDrive for Business** su **Sì** per evitare che gli utenti salvino i file di lavoro nei rispettivi PC. 
-    
-8. Expand **Manage how users access Office files on devices** \> configure the settings how you would like. The **Manage how users access Office devices on mobile devices** is **Off** by default, but it is recommended that you turn it **On** and accept the default values. Per ulteriori informazioni, vedere [available Settings](#available-settings). 
-    
-    È sempre possibile usare il collegamento **Ripristina impostazioni predefinite** per ripristinare l'impostazione predefinita. 
     
 9. Espandere **Recupera i dati nei dispositivi Windows** ed è consigliabile è **attivarla**.
     
@@ -63,24 +59,10 @@ Se gli utenti hanno dispositivi Windows 10 personali in cui eseguono attività d
     
     ![Browse to Data Recovery Agent certificate.](media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
-10. Espandere **Proteggi altre posizioni di rete e sul cloud** per aggiungere ulteriori domini o posizioni di SharePoint Online per assicurare la protezione dei file in tutte le app incluse nell'elenco. Se è necessario immettere più voci per uno dei campi, usare il punto e virgola (;) per separare le voci. 
+10. Espandere **Proteggi altre posizioni di rete e sul cloud** per aggiungere ulteriori domini o posizioni di SharePoint Online per assicurare la protezione dei file in tutte le app incluse nell'elenco. Se è necessario immettere più voci per uno dei campi, usare il punto e virgola (;) per separare le voci.
     
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
 11. In **Chi otterrà queste impostazioni?** specificare i destinatari. Se non si vuole usare il gruppo di sicurezza predefinito **Tutti gli utenti**, scegliere **Modifica**, scegliere i gruppi di sicurezza che riceveranno queste impostazioni \> **Seleziona**.
     
 12. Infine, scegliere **Aggiungi** per salvare il criterio e assegnarlo ai dispositivi. 
-    
-## <a name="available-settings"></a>Impostazioni disponibili
-
-Le impostazioni seguenti sono disponibili per la gestione della modalità di accesso degli utenti ai file di lavoro di Office.
-  
-Per altre informazioni, vedere [Corrispondenza tra le caratteristiche di protezione in Microsoft 365 Business e le impostazioni di Intune](map-protection-features-to-intune-settings.md).
-  
-|**Impostazione**|**Descrizione**|
-|:-----|:-----|
-|Richiedi un PIN o l'impronta digitale per accedere alle app di Office  <br/> |Se questa impostazione è **attivata**, gli utenti devono fornire un'altra forma di autenticazione, oltre al nome utente e alla password, prima di potere usare le app di Office nel dispositivo mobile.  <br/> |
-|Reimposta il PIN dopo il numero di tentativi di accesso falliti seguente  <br/> |Per impedire a un utente non autorizzato di indovinare casualmente un PIN, il PIN verrà reimpostato dopo il numero specificato di tentativi di immissione non riusciti.  <br/> |
-|Richiedi agli utenti di accedere di nuovo dopo che le app di Office sono rimaste inattive per  <br/> |Questa impostazione determina per quanto tempo un utente può rimanere inattivo prima che venga richiesta la ripetizione dell'accesso.  <br/> |
-   
-

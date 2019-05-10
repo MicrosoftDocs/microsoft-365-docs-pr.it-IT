@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Informazioni su come accedere alle risorse locali come le app di linea di business, le condivisioni di file e le stampanti di un dispositivo Windows 10 collegato a Azure Active Directory.
-ms.openlocfilehash: 212685bc229f519152e69b09d0a745bfac7a38cd
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 2be8eb16b9d17547d3bc4c3e4fe499b4c14117a4
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32276882"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660270"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Accedere alle risorse locali da un dispositivo di Azure AD-join in Microsoft 365 business
 
@@ -47,11 +47,9 @@ Se l'organizzazione non è pronta per la distribuzione nella configurazione del 
 Se Azure AD unisce un dispositivo Windows che in precedenza è stato aggiunto a un dominio o in un gruppo di lavoro, è necessario tenere in considerazione le limitazioni seguenti:
   
 - Quando si aggiunge un dispositivo Azure AD, viene creato un nuovo utente senza fare riferimento a un profilo esistente. Per risolvere il cosa, è necessario eseguire manualmente la migrazione dei profili. Un profilo utente contiene informazioni quali Preferiti, file locali, impostazioni del browser, impostazioni dei menu di avvio e così via. L'approccio migliore consiste nel trovare uno strumento di terze parti per mappare i file e le impostazioni esistenti al nuovo profilo.
-    
-- Se il dispositivo utilizza oggetti Criteri di gruppo (GPO), alcuni GPO potrebbero non disporre di un [provider di servizi di configurazione](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) paragonabile in Intune. Eseguire lo [strumento MMAT](https://www.microsoft.com/download/details.aspx?id=45520) per trovare DSN confrontabili per gli oggetti Criteri di stato esistenti. 
-    
-- Gli utenti non saranno in grado di eseguire l'autenticazione per le applicazioni che dipendono dalle autenticazioni di Active Directory. Per risolvere questo problema, valutare l'utilizzo di un'app legacy e considerare l'aggiornamento a un'app che utilizza l'autenticazione moderna se possibile.
-    
-- L'individuazione della stampante di Active Directory non funzionerà. Per risolvere questo errore, fornire percorsi di stampa diretti per tutti gli utenti o sfruttare la [stampa cloud ibrida](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).
-    
 
+- Se il dispositivo utilizza oggetti Criteri di gruppo (GPO), alcuni GPO potrebbero non disporre di un [provider di servizi di configurazione](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) paragonabile in Intune. Eseguire lo [strumento MMAT](https://www.microsoft.com/download/details.aspx?id=45520) per trovare DSN confrontabili per gli oggetti Criteri di stato esistenti.
+
+- Gli utenti non saranno in grado di eseguire l'autenticazione per le applicazioni che dipendono dalle autenticazioni di Active Directory. Per risolvere questo problema, valutare l'utilizzo di un'app legacy e considerare l'aggiornamento a un'app che utilizza l'autenticazione moderna se possibile.
+
+- L'individuazione della stampante di Active Directory non funzionerà. Per risolvere questo errore, fornire percorsi di stampa diretti per tutti gli utenti o sfruttare la [stampa cloud ibrida](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-deploy).

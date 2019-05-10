@@ -21,14 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Informazioni su come distribuire automaticamente Office nei dispositivi Windows 10 durante l'installazione.
-ms.openlocfilehash: 3b702f2a57fcd0ebffc51e17ed6af00e8f1c485b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: b4359a18d93800def558121cdfd7c97ead058180
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278304"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660665"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installare Office in Windows 10 durante l'installazione
+
+![Banner che puntano https://aka.ms/aboutM365previewa.](media/m365admincenterchanging.png)
 
 Questa opzione è disattivata per impostazione predefinita. È possibile attivarla per assicurare che gli utenti abbiano la versione più recente di Office in esecuzione in tutti i dispositivi Windows 10, ma è prima necessario verificare che siano soddisfatti tutti i prerequisiti. Per consentire a questa impostazione di effettuare il push del software nel dispositivo, è necessario che gli utenti abbiano una licenza per Microsoft 365 Business, oltre ad altri requisiti descritti in [Preparare la distribuzione client di Office per Microsoft 365 Business](prepare-for-office-client-deployment.md). 
   

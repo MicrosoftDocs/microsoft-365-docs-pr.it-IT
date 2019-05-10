@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: Informazioni su come consentire a Microsoft 365 di proteggere gli annunci locali con i dispositivi Windows 10.
-ms.openlocfilehash: d61b3bf6be50d6b21e7b883774567bb63995e60e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 661e5bf8205a661eb4382b4bdd8fcf3a54ecc12f
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660310"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Abilitare i dispositivi Windows 10 associati a un dominio per essere gestiti da Microsoft 365 business
 
@@ -43,15 +43,13 @@ Completare i passaggi riportati di seguito per rendere i dispositivi Windows 10 
     > I passaggi sono esattamente gli stessi per Microsoft 365 business. 
   
 2. Prima di completare il passaggio 3 per consentire ai dispositivi Windows 10 di essere Uniti ad Azure ibrido, è necessario verificare che siano soddisfatti i prerequisiti seguenti:
-    
+
    - Si sta eseguendo la versione più recente di Azure AD Connect.
-    
+
    - Azure AD Connect ha sincronizzato tutti gli oggetti computer dei dispositivi in cui si desidera essere Uniti AD Azure ibrido. Se gli oggetti computer appartengono a specifiche unità organizzative (OU), assicurarsi che le unità organizzative siano impostate per la sincronizzazione anche in Azure AD Connect.
     
 3. Registrare i dispositivi Windows 10 aggiunti a un dominio esistenti per essere ibridi di Azure AD e iscriverli per la gestione dei dispositivi mobili da Intune (Microsoft 365 business):
     
 4. Seguire le istruzioni dettagliate su [come configurare i dispositivi Uniti ibridi di Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=872870). In questo modo, la sincronizzazione di Active Directory locale è stata aggiunta ai computer Windows 10 e li rende pronti per il cloud.
     
-5. Per registrare un dispositivo Windows 10 per la gestione dei dispositivi mobili, vedere [registrazione di un dispositivo Windows 10 con Intune tramite criteri di gruppo](https://go.microsoft.com/fwlink/p/?linkid=872871) per le istruzioni. È possibile impostare criteri di gruppo a livello di computer locale o per le operazioni in blocco, è possibile creare questa impostazione di criteri di gruppo nel server del controller di dominio. 
-    
-
+5. Per registrare un dispositivo Windows 10 per la gestione dei dispositivi mobili, vedere [registrazione di un dispositivo Windows 10 con Intune tramite criteri di gruppo](https://go.microsoft.com/fwlink/p/?linkid=872871) per le istruzioni. È possibile impostare criteri di gruppo a livello di computer locale o per le operazioni in blocco, è possibile creare questa impostazione di criteri di gruppo nel server del controller di dominio.

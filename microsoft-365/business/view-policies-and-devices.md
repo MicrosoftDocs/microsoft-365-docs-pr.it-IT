@@ -19,34 +19,32 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Visualizzare i criteri e le azioni dei dispositivi accedendo a Microsoft 365 business con l'amministratore globale di credintials.
-ms.openlocfilehash: 524e5382fb242ea6b77abd72191073ce4df14f0c
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: fa609aad36b945fe9df99392aa1f9f8252baff1c
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285815"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660203"
 ---
-# <a name="view-policies-and-devices"></a>Visualizzare criteri e dispositivi
+# <a name="view-and-manage-policies-and-devices"></a>Visualizzazione e gestione di criteri e dispositivi
 
-## <a name="view-device-policies"></a>Visualizzare i criteri per i dispositivi
+![Banner che puntano https://aka.ms/aboutM365previewa.](media/m365admincenterchanging.png)
 
-1. Accedere a [Microsoft 365 Business](https://portal.office.com) con le credenziali di amministratore globale. 
-    
-2. Nella barra di spostamento sinistra fare clic su **criteri** \> **dispositivi** \> **Aggiungi**.
-    
+## <a name="view-and-edit-device-policies"></a>Visualizzare e modificare i criteri per i dispositivi
+
+1.  Accedere all'interfaccia di amministrazione all' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>indirizzo.
+2. Sul NAV sinistro, scegliere criteri **dispositivi** \> ****.
+
     In questa pagina è possibile creare, modificare, cambiare gruppo di destinazione o eliminare un criterio.
-    
-    ![Screenshot of the Policies page](media/27ebb1d3-d04b-4221-a13f-8583045b5077.png)
-  
-## <a name="view-device-actions"></a>Visualizzare le azioni dispositivo
 
-1. Accedere a [Microsoft 365 Business](https://portal.office.com) con le credenziali di amministratore globale. 
-    
-2. Nell'interfaccia di amministrazione scegliere **Azioni dispositivo** nella scheda **Azioni dispositivo** per aprire la pagina **Azioni dispositivo**. 
+    ![Screenshot of the Policies page](media/devicepolicies.png)
+  
+## <a name="view-and-manage-devices"></a>Visualizzazione e gestione dei dispositivi
+
+
+1. Sulla barra di spostamento sinistra, scegliere **gestione** **dispositivi** \> . 
     
     In questa pagina è possibile selezionare uno o più dispositivi e rimuovere dati aziendali. Per i dispositivi Windows 10 per cui sono state configurate le impostazioni di protezione dispositivo, è anche possibile scegliere di ripristinare le impostazioni del produttore.
-    
-    ![Device actions page.](media/6d2ad0c4-9c96-4489-ab93-c4e38e317d45.PNG)
   
-  
+   ![Pagina Gestisci dispositivi](media/devicesmanage.png)
 

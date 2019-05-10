@@ -21,20 +21,22 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Informazioni su come creare, modificare o eliminare un criterio di gestione delle app e proteggere i file di lavoro su dispositivi Android o iOS.
-ms.openlocfilehash: e81ff8a4bd71dbbbf7ccc31249d450e03f4bd241
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 04479360bf13a8ff685a91ed95440c08f8cf80b4
+ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277453"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33660562"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Configurare le impostazioni di protezione delle app per i dispositivi Android o iOS
 
+![Banner che puntano https://aka.ms/aboutM365previewa.](media/m365admincenterchanging.png)
+
 ## <a name="create-an-app-management-policy"></a>Creare un criterio di gestione delle app
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft 365 business](https://go.microsoft.com/fwlink/p/?linkid=837890) con le credenziali di amministratore globale. 
+1. Accedere all'interfaccia di amministrazione all' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>indirizzo. 
     
-2. Nell'interfaccia di amministrazione, scegliere **Devices** \> **Policies** \> **add policy**.
+2. Nel NAV sinistro, scegliere **Devices** \> **** \> **Add**.
   
 3. Nel riquadro **Aggiungi criterio** immettere un nome univoco per il criterio. 
     
@@ -62,9 +64,9 @@ ms.locfileid: "32277453"
     
 ## <a name="delete-an-app-management-policy"></a>Eliminare un criterio di gestione delle app
 
-1. Nella scheda **Criteri** scegliere **Elimina criterio**.
+1. Nella pagina **criteri** scegliere un criterio e quindi **Elimina**.
     
-2. Nel riquadro **Elimina criterio** scegliere i criteri da eliminare \> **Seleziona**, quindi **Conferma** per eliminare il criterio o i criteri scelti. 
+2. Nel riquadro **Elimina criteri** scegliere **conferma** per eliminare i criteri o i criteri scelti. 
     
 ## <a name="available-settings"></a>Impostazioni disponibili
 

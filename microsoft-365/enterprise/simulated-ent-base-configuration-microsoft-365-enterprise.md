@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilizzare questa guida al lab di test per creare un ambiente di testing dell'organizzazione simulata per Microsoft 365 Enterprise.
-ms.openlocfilehash: 173622666420976199709d311ef67a7f0be3d867
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: 907bec83ac4ad820ec1cb710209614636a4f54e8
+ms.sourcegitcommit: 1b77b699b8e23df8b98530dfad3a29b4aaa0753c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553371"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867986"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>La configurazione di base per l'organizzazione simulata
 
@@ -123,6 +123,7 @@ New-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName -Location $l
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name TestLab
 $nsg=Get-AzNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 Successivamente, creare la macchina virtuale DC1 e configurarla come controller di dominio per il dominio di AD DS **testlab.**\<dominio pubblico> e come server DNS per le macchine virtuali della rete virtuale TestLab. Ad esempio, se il nome di dominio pubblico è **<span>contoso</span>.com**, la macchina virtuale DC1 sarà un controller di dominio per il dominio **<span>testlab</span>.contoso.com**.
