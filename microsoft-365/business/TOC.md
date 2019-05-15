@@ -1,8 +1,11 @@
-# [Microsoft 365 Business](index.md)
-## [Panoramica](microsoft-365-business-overview.md)
+# Microsoft 365 Business
+## [Microsoft 365](index.md)
+## [Che cos'è Microsoft 365 business?](microsoft-365-business-overview.md)
 ## [Ottenere Microsoft 365 business](sign-up.md)
 ## [Prerequisiti per la protezione dei dati](pre-requisites-for-data-protection.md)
-## [Configurazione](set-up.md)
+## Installazione
+### [Panoramica dell'installazione](set-up-overview.md)
+### [Configurare Microsoft 365 business](set-up.md)
 ### [Aggiornamento a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
 ### [Configurare i dispositivi mobili](set-up-mobile-devices.md)
 ### [Configurare i dispositivi Windows](set-up-windows-devices.md)
@@ -14,8 +17,10 @@
 ## [Protezione](security-features.md)
 ### [Proteggere l'azienda](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [Configurare le funzionalità di sicurezza avanzate](set-up-advanced-security.md)
-## [Gestione](manage.md)
+## Utenti
 ### [Aggiungere utenti](add-users-m365b.md)
+### [Rimuovere un dipendente](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+## Gestire i dispositivi
 ### [Visualizzare e modificare criteri e dispositivi](view-policies-and-devices.md)
 ### [Rimuovere i dati aziendali](remove-company-data.md)
 ### [Ripristinare le impostazioni di fabbrica per i dispositivi](reset-devices-to-factory-settings.md)
@@ -26,7 +31,12 @@
 #### [Convalidare le impostazioni nei PC Windows 10](validate-settings-on-windows-10-pcs.md)
 ### [Impostazioni di protezione per i dispositivi Windows 10](protection-settings-for-windows-10-devices.md)
 ## [Eseguire la migrazione a Microsoft 365 business](migrate-to-microsoft-365-business.md)
-## [Aggiungere i dispositivi e i profili Autopilot](add-autopilot-devices-and-profile.md)
+## Fatturazione
+### [Fattura](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [Paga](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+### [Annulla](/Office365/Admin/subscriptions-and-billing/cancel-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
+## Autopilot
+### [Aggiungere i dispositivi e i profili Autopilot](add-autopilot-devices-and-profile.md)
 ### [Creare e modificare profili AutoPilot](create-and-edit-autopilot-profiles.md)
 ### [Creare e modificare dispositivi AutoPilot](create-and-edit-autopilot-devices.md)
 ### [Impostazioni del profilo Autopilot](autopilot-profile-settings.md)
