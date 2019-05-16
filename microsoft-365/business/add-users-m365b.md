@@ -3,7 +3,7 @@ title: Aggiungere altri utenti a Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Informazioni su come aggiungere nuovi utenti, proteggere i propri dispositivi e assegnare ruoli in Microsoft 365 business.
-ms.openlocfilehash: e27e9e2b67e187bbca3c2f1b2c9d21196effa77f
-ms.sourcegitcommit: 0feaebc1c5ea2636b5c9fa96eef648a1e37635c1
+ms.openlocfilehash: 844245f5740d1e90ca1a7c9f372a8ab5a8225dd7
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33864824"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072911"
 ---
 # <a name="add-additional-users-to-microsoft-365-business"></a>Aggiungere altri utenti a Microsoft 365 Business
 

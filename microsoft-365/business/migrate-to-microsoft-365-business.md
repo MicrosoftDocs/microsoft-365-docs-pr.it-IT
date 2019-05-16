@@ -3,7 +3,7 @@ title: Eseguire la migrazione a Microsoft 365 business da Office 365 Business Pr
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Informazioni su come spostare la propria azienda in Microsoft 365 business.
-ms.openlocfilehash: 3e45ba13e4cfe772829f545219bf86a9a3317d59
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: e4bb18904355663f9f26f58a3fd3aaf7420e5378
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285676"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072741"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Eseguire la migrazione a Microsoft 365 business da Office 365 Business Premium
 
@@ -58,7 +58,7 @@ Se viene fornito un collegamento per l'acquisto delle licenze, è possibile eseg
     
 2. Nella pagina **Personalizza l'accesso e la posta elettronica** , è possibile aggiungere un dominio, scegliendo **Connetti un dominio già** in uso, se si desidera utilizzare questa opportunità per aggiungere un altro dominio all'abbonamento. 
     
-    Se è già stato configurato un dominio, il secondo campo indicherà che continuerà a **utilizzare** \< _il nome_ \> **di dominio per la posta elettronica e l'accesso**.   se non è stato configurato un dominio con l'abbonamento, sarà necessario **continuare a utilizzare** \< _la società name.onmicrosoft.com_ \> **per la posta elettronica e l'accesso**.  
+    Se è già stato configurato un dominio, il secondo campo indicherà che continuerà a **utilizzare** \< _il nome_ \> **di dominio per la posta elettronica e l'accesso**.   Se non è stato configurato un dominio con l'abbonamento, sarà necessario **continuare a utilizzare** \< _la società Name.onmicrosoft.com_ \> **per la posta elettronica e l'accesso**.  
     
     Scegliere **Avanti**.
     
@@ -78,9 +78,9 @@ Se viene fornito un collegamento per l'acquisto delle licenze, è possibile eseg
     
     ![Nella scheda utente, scegliere Modifica accanto a licenze di prodotto.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
   
-8. nelle **licenze di prodotto** fare scorrere **Microsoft 365 Business** **su** \> **Save**e quindi **chiudi**.
+8. Nelle **licenze di prodotto** fare scorrere **Microsoft 365 business** **su** \> **Save**e quindi **Chiudi**.
     
-dopo aver acquistato la licenza iniziale per Microsoft 365 Business, è ora possibile aggiungere altre informazioni anche in **** \> **servizi di acquisto**della fatturazione. Nella pagina **acquisto servizi** è possibile fare clic sui puntini di controllo del biglietto da **visita di Microsoft 365** e scegliere **modifica quantità di licenza** per acquistare altre informazioni. 
+Dopo aver acquistato la licenza iniziale per Microsoft 365 business, è ora possibile aggiungere altre informazioni anche in **** \> **servizi di acquisto**della fatturazione. Nella pagina **acquisto servizi** è possibile fare clic sui puntini di controllo del biglietto da **visita di Microsoft 365** e scegliere **modifica quantità di licenza** per acquistare altre informazioni. 
   
 ## <a name="protect-user-devices-and-files"></a>Protezione dei dispositivi e dei file utente
 

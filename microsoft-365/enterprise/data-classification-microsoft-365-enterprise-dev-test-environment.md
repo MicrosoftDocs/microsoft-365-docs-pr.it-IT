@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/10/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per creare e utilizzare le etichette di conservazione di Office 365 nei documenti nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: 3d64cd245e117813cb4c81a6e9099cd1a0120317
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 66e06f9a89b102c131bc29af17c4564fabbab9b4
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283539"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072416"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Classificazione dei dati per l'ambiente di testing Microsoft 365 Enterprise
 
@@ -55,7 +55,7 @@ In questa fase, vengono create le etichette di conservazione per i diversi livel
     
 7. Nel riquadro **Rivedere le impostazioni** fare clic su **Crea etichetta**.
     
-8. Ripetere i passaggi 3-7 per altre etichette con i nomi seguenti:
+8. Ripetere i passaggi da 3 a 7 per altre etichette con i nomi seguenti:
     
   - Private
     
@@ -107,7 +107,7 @@ Successivamente, configurare la cartella dei documenti del sito del team di Sens
   
 1. Nella scheda **SensitiveFiles** del browser fare clic su **documenti**.
     
-2. Fare clic sull'icona delle impostazioni e selezionare **Impostazioni raccolta**.
+2. Fare clic sull'icona delle impostazioni e selezionare **Impostazioni libreria**.
     
 3. In **Autorizzazioni e gestione** fare clic su **Apply label to items in this library** (Applica etichetta agli elementi in questa libreria).
     

@@ -1,9 +1,9 @@
 ---
-title: ConValidare le impostazioni di protezione delle app nei dispositivi Android o iOS
+title: Convalidare le impostazioni di protezione delle app nei dispositivi Android o iOS
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: 'Learn how to validate the Microsoft 365 Business app protection settings in your Android or iOS devices.  '
-ms.openlocfilehash: 5ab16d481bd11ec31a1387a7e94d8b08bb3e0abe
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d4ed70290b21b40ca9ecd5601954c429a27dc528
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287338"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072371"
 ---
-# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>ConValidare le impostazioni di protezione delle app nei dispositivi Android o iOS
+# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Convalidare le impostazioni di protezione delle app nei dispositivi Android o iOS
 
 Seguire le istruzioni riportate nelle schede per convalidare le impostazioni di protezione delle app nei dispositivi Android o iOS.
   

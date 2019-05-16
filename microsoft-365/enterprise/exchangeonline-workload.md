@@ -3,7 +3,7 @@ title: Distribuire Exchange Online per Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -11,16 +11,16 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Eseguire il processo di pianificazione, implementazione e guida del valore di Exchange online in Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: 6efd94da7806b6268881f7eaabe5efacc8920f47
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c54c80a955d86028ac473857cbdcb8b1a8f272d3
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281206"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072286"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Distribuire Exchange Online per Microsoft 365 Enterprise
 
-*Questo carico di lavoro è incluso nelle versioni E3 ed E5 di Microsoft 365 Enterprise*
+*Questo carico di lavoro è incluso sia nelle versioni E3 che E5 di Microsoft 365 Enterprise*
 
 Exchange Online è il servizio cloud principale per la posta elettronica e il calendario che consente agli utenti di collaborare in modo da non richiedere chat in tempo reale o archiviazione centralizzata dei documenti. Exchange Online è il modo in cui si esegue la comunicazione e la pianificazione di breve durata del gruppo individuale e di piccole dimensioni ed è un elemento chiave del valore costruito per il lavoro di squadra di Microsoft 365 Enterprise. Exchange Online consente di ottenere ulteriori informazioni e di lavorare in modo più efficace con l'applicazione Outlook ben nota, indipendentemente dal dispositivo in uso.
 

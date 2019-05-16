@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: informazioni su come Contoso ha implementato un sito di SharePoint Online per dati altamente regolamentati per semplificare la collaborazione tra i team di ricerca.'
-ms.openlocfilehash: c20e3a1c4ad0b862e81b897acc1462e3a1d1f776
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 99599829658e5dc46c8adebfe59f5c6d09b165de
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289224"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34072782"
 ---
 # <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sito di SharePoint Online per le risorse digitali estremamente riservate di Contoso Corporation
 
@@ -60,7 +60,7 @@ Di seguito sono riportati i livelli di autorizzazione di SharePoint, i gruppi di
 
 Successivamente, sono state configurate restrizioni aggiuntive per il sito.
 
-Per informazioni dettagliate sulla configurazione, vedere [deploy an isolaTed SharePoint Online Team Site](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site).
+Per informazioni dettagliate sulla configurazione, vedere [deploy an isolated SharePoint Online Team Site](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site).
 
 ## <a name="step-3-configured-the-site-for-a-restrictive-dlp-policy"></a>Passaggio 3: configurazione del sito per un criterio DLP restrittivo
 
@@ -70,9 +70,9 @@ Successivamente, è stato creato un nuovo criterio DLP di Office 365 denominato 
 
 - Utilizza l'etichetta di conservazione di Office 365 **estremamente riservata** . 
 - Viene applicato al sito di **ricerca** .
-- Impedisce la condivisione di documenti da parte degli utenti.
+- Blocca gli utenti quando tentano di condividere un asset digitale nel sito di **ricerca** esterno a contoso.
 
-Per informazioni dettagliate sulla configurazione, vedere [proteggere i file di SharePoint Online con le etichette di Office 365 e DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
+Per informazioni dettagliate sulla configurazione, vedere [proteggere i file di SharePoint Online con etichette di conservazione e DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
 ## <a name="step-4-created-an-azure-information-protection-sub-label-for-the-site"></a>Passaggio 4: creazione di un'etichetta secondaria di Azure Information Protection per il sito
 
@@ -93,7 +93,7 @@ Ecco la configurazione risultante del sito di **ricerca** per le risorse estrema
 I file nelle cartelle del sito di **ricerca** sono protetti da:
 
 - La sottoetichetta **Research** Azure Information Protection, che applica la crittografia e permssions a ogni file che viaggia con il file quando viene spostato o copiato dal sito di **ricerca** .
-- Il criterio DLP di **ricerca** , che utilizza l'etichetta di conservazione **estremamente riservata** e le impostazioni che impediscono al file di lasciare il sito.
+- Il criterio DLP di **ricerca** , che utilizza l'etichetta di conservazione **estremamente riservata** e le impostazioni che impediscono la condivisione dei file con gli utenti esterni.
 - Il set di autorizzazioni per i siti, che consentono l'accesso solo ai **** membri dei gruppi di sicurezza e dell'amministrazione di ricerca-spettatori e dei **visualizzatori** dai membri del gruppo di sicurezza **Research-Admins** .
 
 ## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>Passaggio 5: migrazione dei dati di ricerca di SharePoint locali
