@@ -4,7 +4,7 @@ ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come eseguire la migrazione di file e impostazioni degli utenti.
-ms.openlocfilehash: 99cc252181627d5f0cf07fdf46f63b3ba526e20a
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 6cd445a41fd8e2c4a83e13e2d8e5f7d9ef76e2d8
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400120"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073006"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Passaggio 4: migrazione delle impostazioni e dei file utente
 
@@ -59,31 +59,33 @@ Durante il processo di migrazione, è necessario avere sufficiente capacità di 
 
 Se si sta eseguendo un aggiornamento del PC e non si sta formattando la partizione di Windows principale, è anche possibile utilizzare un archivio delle migrazioni con collegamento reale con USMT. Questo processo mantiene lo stato utente sul PC mentre il sistema operativo e le app precedenti vengono rimossi e aggiornati. Con il processo di ripristino derivante dalla stessa partizione locale, questa opzione garantisce miglioramenti delle prestazioni significativi e riduce il traffico di rete.
 
-[Panoramica sull'Utilità migrazione stato utente (USMT)](https://docs.microsoft.com/it-IT/windows/deployment/usmt/usmt-overview)
+
+  [Panoramica sull'Utilità migrazione stato utente (USMT)](https://docs.microsoft.com/it-IT/windows/deployment/usmt/usmt-overview)
 
 ## <a name="onedrive-known-folder-move"></a>Spostamento di cartelle note di OneDrive
 
 Se gli utenti sono su OneDrive o si sta aggiungendo OneDrive nell'ambito della distribuzione, esiste una nuova opzione disponibile. Utilizzando il cloud per sincronizzare i file utente, la funzionalità "Spostamento di cartelle note" di OneDrive offre un livello di flessibilità non possibile con opzioni di migrazione dei file basate sulla rete locale. Se abilitata prima della migrazione, questa funzionalità offre accesso sicuro ai nuovi PC e a quelli aggiornati ed elimina la necessità di creare archivi delle migrazioni temporanei sui propri server. Inoltre, è completamente trasparente per l'utente.
 
-[Reindirizzare e spostare le cartelle note di Windows su OneDrive](https://docs.microsoft.com/it-IT/onedrive/redirect-known-folders)
 
-Se si usa già OneDrive, sarà noto che gli utenti possono selezionare le cartelle e i percorsi che desiderano sincronizzare da OneDrive a SharePoint sul proprio dispositivo; tuttavia, ciò grava sull'utente finale. Con lo Spostamento di cartelle note, è possibile selezionare le cartelle Documenti, Desktop e Immagini in un profilo utente e proteggerle tutte su OneDrive. Un utente può farlo da solo o, importante per questo scenario, l'amministratore può [applicare la funzionalità tramite le impostazioni Criteri di gruppo](https://docs.microsoft.com/en-us/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c).
+  [Reindirizzare e spostare le cartelle note di Windows su OneDrive](https://docs.microsoft.com/it-IT/onedrive/redirect-known-folders)
+
+Se si usa già OneDrive, sarà noto che gli utenti possono selezionare le cartelle e i percorsi che desiderano sincronizzare da OneDrive a SharePoint sul proprio dispositivo; tuttavia, ciò grava sull'utente finale. Con lo Spostamento di cartelle note, è possibile selezionare le cartelle Documenti, Desktop e Immagini in un profilo utente e proteggerle tutte su OneDrive. Un utente può farlo da solo o, importante per questo scenario, l'amministratore può [applicare la funzionalità tramite le impostazioni Criteri di gruppo](https://docs.microsoft.com/it-IT/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c).
 
 Con lo Spostamento di cartelle note, gli utenti non modificano il flusso di lavoro: tutto rimane uguale, durante e al termine della sincronizzazione con OneDrive. Attraverso Criteri di gruppo, è anche possibile scegliere se informare o meno gli utenti che documenti, immagini e desktop sono protetti su OneDrive. Se si sceglie di non farlo, tutto si verifica automaticamente in background. Gli utenti sapranno solo quando possono ritirare il PC o quando il PC sarà stato aggiornato. Non appena effettueranno l'accesso al proprio account OneDrive, i file saranno di nuovo disponibili e verranno ripristinati nel nuovo PC. Ovviamente, OneDrive rende i file disponibili in modo sicuro in qualsiasi momento da telefoni o altri dispositivi.
 
 L'autenticazione per OneDrive con Azure Active Directory: quindi per maggiore sicurezza, è possibile attivare facilmente l'autenticazione a più fattori ed è possibile impostare criteri per controllare la larghezza di banda utilizzata da OneDrive per il caricamento e il download per limitare l'attività di rete.
 
-Non è necessario eseguire la migrazione di ogni utente contemporaneamente. È possibile distribuire in fasi le impostazioni di Criteri di gruppo oppure [limitare la sincronizzazione dei file ai PC aggiunti al dominio](https://docs.microsoft.com/en-us/powershell/module/sharepoint-online/Set-SPOTenantSyncClientRestriction?view=sharepoint-ps).
+Non è necessario eseguire la migrazione di ogni utente contemporaneamente. È possibile distribuire in fasi le impostazioni di Criteri di gruppo oppure [limitare la sincronizzazione dei file ai PC aggiunti al dominio](https://docs.microsoft.com/it-IT/powershell/module/sharepoint-online/Set-SPOTenantSyncClientRestriction?view=sharepoint-ps).
 
 ## <a name="start-menu-and-task-bar-customization"></a>Personalizzazione del menu Start e della barra delle applicazioni
 
 OneDrive è progettato per sincronizzare e proteggere file e cartelle; non sincronizza le impostazioni delle applicazioni o di Windows. In passato, per farlo, si usava il metodo Copia profilo per configurare layout standard per le impostazioni di menu Start e barre delle applicazioni degli utenti. In Windows 10 Pro Enterprise ed Education, è possibile usare Criteri di gruppo, MDM, PowerShell o il provisioning dei pacchetti per distribuire [layout di Start e della barra delle applicazioni personalizzati](https://docs.microsoft.com/it-IT/windows/configuration/windows-10-start-layout-options-and-policies). Non è necessario creare una nuova immagine e il layout può essere aggiornato semplicemente sovrascrivendo il file .xml contenente il layout.
 
-Per creare un nuovo layout basta configurare un sistema di esempio e utilizzare il cmdlet di PowerShell [Export-StartLayout](https://docs.microsoft.com/en-us/powershell/module/startlayout/export-startlayout?view=win10-ps) per generare un file XML, quindi posizionare il file in una condivisione di rete o memorizzarlo nella cache locale durante la sequenza di distribuzione; deve semplicemente essere raggiungibile come file di sola lettura quando l'utente accede. È possibile quindi usare il criterio o il cmdlet [Import-StartLayout](https://docs.microsoft.com/en-us/powershell/module/startlayout/import-startlayout?view=win10-ps) per fare riferimento a questo file.
+Per creare un nuovo layout basta configurare un sistema di esempio e utilizzare il cmdlet di PowerShell [Export-StartLayout](https://docs.microsoft.com/it-IT/powershell/module/startlayout/export-startlayout?view=win10-ps) per generare un file XML, quindi posizionare il file in una condivisione di rete o memorizzarlo nella cache locale durante la sequenza di distribuzione; deve semplicemente essere raggiungibile come file di sola lettura quando l'utente accede. È possibile quindi usare il criterio o il cmdlet [Import-StartLayout](https://docs.microsoft.com/it-IT/powershell/module/startlayout/import-startlayout?view=win10-ps) per fare riferimento a questo file.
 
 ## <a name="removing-unwanted-in-box-apps"></a>Rimozione delle app incluse non desiderate
 
-Windows 10 include molte app integrate utili nell'installazione standard, ma gli amministratori potrebbero voler rimuoverne alcune dai PC gestiti e magari configurare un'installazione personalizzata per impedire a queste app di tornare, ad esempio XBOX o Zune Music. È possibile recuperare un elenco di queste app tramite i comandi [PowerShell Get-AppxPackage](https://technet.microsoft.com/it-IT/library/hh856044.aspx) e rimuovere quelle non desiderate con il comando [Remove-AppxPackage](https://technet.microsoft.com/it-IT/library/hh856038.aspx). In alternativa, è possibile montare il file Windows Image (.img) offline prima della distribuzione ed estrarre i pacchetti non desiderati utilizzando lo strumento da riga di comando [Deployment Image Servicing and Management (DISM)](https://docs.microsoft.com/it-IT/windows-hardware/manufacture/desktop/what-is-dism) e il comando [Remove-AppxProvisionedPackage](https://docs.microsoft.com/en-us/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps).
+Windows 10 include molte app integrate utili nell'installazione standard, ma gli amministratori potrebbero voler rimuoverne alcune dai PC gestiti e magari configurare un'installazione personalizzata per impedire a queste app di tornare, ad esempio XBOX o Zune Music. È possibile recuperare un elenco di queste app tramite i comandi [PowerShell Get-AppxPackage](https://technet.microsoft.com/it-IT/library/hh856044.aspx) e rimuovere quelle non desiderate con il comando [Remove-AppxPackage](https://technet.microsoft.com/it-IT/library/hh856038.aspx). In alternativa, è possibile montare il file Windows Image (.img) offline prima della distribuzione ed estrarre i pacchetti non desiderati utilizzando lo strumento da riga di comando [Deployment Image Servicing and Management (DISM)](https://docs.microsoft.com/it-IT/windows-hardware/manufacture/desktop/what-is-dism) e il comando [Remove-AppxProvisionedPackage](https://docs.microsoft.com/it-IT/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps).
 
 ## <a name="next-step"></a>Passaggio successivo
 

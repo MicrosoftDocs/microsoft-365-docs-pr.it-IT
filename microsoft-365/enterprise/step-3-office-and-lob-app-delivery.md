@@ -4,7 +4,7 @@ ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
 ms.date: 09/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come distribuire Office e app line-of-business.
-ms.openlocfilehash: 2fdd47fa38b3d9403bbd44869e4dfe012abd0f51
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 716be01cd414bea5655fb90289b465db27f15841
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400150"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073106"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Passaggio 3: distribuzione di Office e app line-of-business
 
@@ -43,7 +43,8 @@ Se non ci sono problemi, consigliamo di distribuire le versioni a 64 bit di tutt
 
 Esistono molti metodi e modelli per l'installazione di applicazioni in Windows, esaminiamo quindi le opzioni di distribuzione a disposizione.
 
-[Gestione di applicazioni di Windows 10](https://docs.microsoft.com/it-IT/windows/application-management/)
+
+  [Gestione di applicazioni di Windows 10](https://docs.microsoft.com/it-IT/windows/application-management/)
 
 ## <a name="msi-based-deployments"></a>Distribuzioni basate su MSI
 
@@ -61,9 +62,11 @@ Un altro metodo diffuso di distribuzione delle app è la creazione dell'immagine
 
 Se si vuole includere Office 365 ProPlus nell'immagine, tenere presente che usa un'attivazione basata sull'utente e non può essere pre-attivato dall'amministratore di sistema. Usare lo Strumento di distribuzione di Office per pre-installare Office nel dispositivo di cui si sta acquisendo l'immagine e ignorare l'accesso utente. Dopo la distribuzione dell'immagine, gli utenti finali possono accedere con le credenziali di Office 365 e attivare Office 365 ProPlus.
 
-[Creare una sequenza di attività per installare un sistema operativo](https://docs.microsoft.com/it-IT/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Distribuire Office 365 ProPlus come parte di un'immagine del sistema operativo](https://docs.microsoft.com/it-IT/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+  [Creare una sequenza di attività per installare un sistema operativo](https://docs.microsoft.com/it-IT/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+
+
+  [Distribuire Office 365 ProPlus come parte di un'immagine del sistema operativo](https://docs.microsoft.com/it-IT/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office A portata di clic 
 
@@ -79,13 +82,17 @@ Se si usa System Center Configuration Manager, è possibile usarlo anche per una
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Guida alla distribuzione di Office 365 ProPlus](https://docs.microsoft.com/it-IT/deployoffice/deployment-guide-for-office-365-proplus)
 
-[Rimuovere le versioni MSI di Office esistenti quando si effettua l'aggiornamento a Office 365 ProPlus](https://docs.microsoft.com/it-IT/deployoffice/upgrade-from-msi-version)
+  [Guida alla distribuzione di Office 365 ProPlus](https://docs.microsoft.com/it-IT/deployoffice/deployment-guide-for-office-365-proplus)
 
-[Gestire Office 365 ProPlus con Configuration Manager](https://docs.microsoft.com/it-IT/sccm/sum/deploy-use/manage-office-365-proplus-updates)
 
-[Assegnare le app di Office 365 ai dispositivi Windows 10 con Microsoft Intune](https://docs.microsoft.com/it-IT/intune/apps-add-office365)
+  [Rimuovere le versioni MSI di Office esistenti quando si effettua l'aggiornamento a Office 365 ProPlus](https://docs.microsoft.com/it-IT/deployoffice/upgrade-from-msi-version)
+
+
+  [Gestire Office 365 ProPlus con Configuration Manager](https://docs.microsoft.com/it-IT/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+
+
+  [Assegnare le app di Office 365 ai dispositivi Windows 10 con Microsoft Intune](https://docs.microsoft.com/it-IT/intune/apps-add-office365)
 
 ## <a name="browser-based-apps"></a>App basate su browser
 
@@ -93,7 +100,8 @@ Esistono alcuni elementi da considerare per assicurarsi che le applicazioni basa
 
 Inoltre, se si sa che i siti Intranet non funzioneranno correttamente con Microsoft Edge, è possibile configurare tutti i siti Intranet affinché si aprano automaticamente con Internet Explorer 11. Questo processo usa un file XML per gestire l'utilizzo di IE11 per ogni sito, utilizzando Criteri di gruppo per applicare le impostazioni.
 
-[Che cos'è la modalità Enterprise](https://docs.microsoft.com/it-IT/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
+
+  [Che cos'è la modalità Enterprise](https://docs.microsoft.com/it-IT/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#what-is-enterprise-mode)
 
 Finora sono stati illustrati metodi di distribuzione ben noti. Esistono però due nuovi approcci alla distribuzione di app che può essere interessante prendere in considerazione.
 

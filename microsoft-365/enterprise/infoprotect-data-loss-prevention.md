@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e distribuire i criteri di prevenzione della perdita dei dati di Office 365 in Microsoft 365.
-ms.openlocfilehash: d0a8beae3797e59eb1eb130afb9fd123be57d909
-ms.sourcegitcommit: 9d4319a015e493fb88c7e1855bca0121654eb39d
+ms.openlocfilehash: f6b9291a2965552837f989c98b32674f6093b383
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33308349"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073560"
 ---
 # <a name="step-5-configure-office-365-data-loss-prevention"></a>Passaggio 5: Configurare i criteri di prevenzione della perdita dei dati di Office 365
 
