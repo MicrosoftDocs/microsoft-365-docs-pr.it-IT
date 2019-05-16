@@ -15,6 +15,7 @@
 ### [Prerequisiti per Microsoft Managed Desktop](get-ready/prerequisites.md)
 ### [Preparare la rete](get-ready/network.md)
 ### [Preparare l'accesso alle risorse locali per Microsoft Managed Desktop](get-ready/authentication.md)
+### [Preparare unità mappate per Microsoft Managed Desktop](get-ready/mapped-drives.md)
 ### [Preparare le app line-of-business](get-ready/apps.md)
 ## [Introduzione a Microsoft Managed Desktop](get-started/index.md)
 ### [Aggiungere contatti di amministratore](get-started/add-admin-contacts.md)
@@ -29,8 +30,8 @@
 ### [Supporto per l'amministratore](working-with-managed-desktop/admin-support.md)
 ### [Supporto per gli utenti finali](working-with-managed-desktop/end-user-support.md)
 ### [Gestire le app](working-with-managed-desktop/manage-apps.md)
-### [Impostazioni conFigurabili](working-with-managed-desktop/config-setting-overview.md)
-#### [Informazioni di riferimento sulle impostazioni conFigurabili](working-with-managed-desktop/config-setting-ref.md)
+### [Impostazioni configurabili](working-with-managed-desktop/config-setting-overview.md)
+#### [Informazioni di riferimento sulle impostazioni configurabili](working-with-managed-desktop/config-setting-ref.md)
 #### [Distribuire le impostazioni configurabili](working-with-managed-desktop/config-setting-deploy.md)
 ## [Cronologia delle modifiche per la documentazione di Microsoft Managed Desktop](change-history-managed-desktop.md)
 
