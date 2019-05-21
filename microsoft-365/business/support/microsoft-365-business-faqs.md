@@ -1,8 +1,8 @@
 ---
 title: Domande frequenti su Microsoft 365 Business 
 description: Trovare le risposte alle più domande frequenti su Microsoft 365 Business, una nuova soluzione progettata per le piccole e medie imprese (PMI). 
-author: jasongroce
-ms.author: jasgro
+author: Sirkkuw
+ms.author: sirkkuw
 ms.topic: article 
 ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, PMI, FAQ, domande frequenti, risposte, business
 ms.date: 06/08/2018
-ms.openlocfilehash: bdcfd6a78278aff83b3fc21ae0fbb43bce140a16
-ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
+ms.openlocfilehash: 6ef500c9b0c9e83e77e46c1eaf7057e3e46cfe0d
+ms.sourcegitcommit: 5c6bbf6dd7020b462b56b644b5a0fcc0217d6a53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497753"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34276224"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Domande frequenti su Microsoft 365 Business
 
@@ -80,7 +80,7 @@ Molti dipendenti preferiscono utilizzare i propri telefoni cellulari e tablet pe
 Microsoft 365 business offre ai clienti un mezzo semplice ma potente per consentire ai dipendenti di usare i propri dispositivi personali per il lavoro fornendo all'azienda la possibilità di impedire a tali dispositivi di accedere, conservare e/o condividere informazioni aziendali. . Più precisamente: 
 * **Protezione app per le app mobili di Office** consente alle app di proteggere i dati di Office, tra cui e-mail, calendario, contatti e documenti su dispositivi mobili iOS e Android, applicando i criteri, ad esempio eliminando automaticamente i dati aziendali dopo un periodo di tempo di connessione assente al servizio, richiedendo che le informazioni vengano archiviate solo in OneDrive for Business, richiedendo una verifica di PIN o impronta digitale per accedere alle app di Office e impedendo che i dati aziendali vengano copiati da un'app di Office in app personali. La gestione delle applicazioni mobili per altre app per dispositivi mobili tramite Intune è disponibile anche per i sottoscrittori di Microsoft 365 business. 
   
-* **Gestione dei dispositivi per PC Windows 10** le aziende di aallows scelgono di impostare e applicare funzionalità come la protezione di Windows Defender per il malware, gli aggiornamenti automatici e la disattivazione delle schermate dopo un periodo di tempo prestabilito. Inoltre, le applicazioni e i dati aziendali dei dispositivi Windows 10 smarriti o rubati possono essere cancellati completamente tramite l'interfaccia di amministrazione. 
+* **Gestione di dispositivi per PC Windows 10** consente alle aziende di scegliere di configurare e imporre funzionalità, quali la protezione Windows Defender per il malware, gli aggiornamenti automatici e la disattivazione delle schermate dopo un determinato periodo di tempo. Inoltre, le applicazioni e i dati aziendali dei dispositivi Windows 10 smarriti o rubati possono essere cancellati completamente tramite l'interfaccia di amministrazione. 
 
 * **Gestione dei dispositivi per iOS, le funzionalità di _AMP_ MacOS di Android** aiutano le aziende a gestire in modo sicuro un sistema di dispositivi diversificato che include dispositivi iOS, Android, Windows e MacOS. 
 
