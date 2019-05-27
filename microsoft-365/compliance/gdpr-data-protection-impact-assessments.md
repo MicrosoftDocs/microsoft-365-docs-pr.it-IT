@@ -2,20 +2,20 @@
 title: Valutazioni d'impatto sulla protezione dei dati
 description: Questi documenti forniscono informazioni ai titolari del trattamento dei dati per aiutarli a determinare se è necessaria una DPIA e, in tal caso, quali dettagli includere.
 keywords: Valutazione impatto protezione dati, DPIA, Dynamics 365, servizi professionali Microsoft, Microsoft 365, documentazione Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: d05c99daaaeadd42714b7df752b5d560e95538bb
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 049d12f5e8cb738fc7f1d53f6d08c592c8c52c46
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285589"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431820"
 ---
 # <a name="data-protection-impact-assessments"></a>Valutazioni d'impatto sulla protezione dei dati
 
