@@ -30,7 +30,7 @@ ms.locfileid: "32287062"
 
 *Questo passaggio è facoltativo per gli ambienti ibridi e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-In questa sezione verrà consentito agli utenti di reimpostare la password con Azure Active Directory (Azure AD), che è poi replicata nei servizi di Dominio di Active Directory (AD DS) locali. Questo processo è noto come writeback delle password. Con il writeback delle password gli utenti non hanno bisogno di aggiornare le password tramite servizi di Dominio di Active Directory (AD DS) in cui vengono archiviati gli account utente e i relativi attributi. Questo risulta particolarmente utile per gli utenti remoti o mobili che non dispongono di una connessione remota alla rete locale.
+In questa sezione verrà consentito agli utenti di reimpostare la password con Azure Active Directory (Azure AD), che è poi replicata nei servizi di Dominio di Active Directory (AD DS) locali. Questo processo è noto come writeback delle password. Con il writeback delle password gli utenti non hanno bisogno di aggiornare le password tramite Active Directory Domain Services (AD DS) in cui vengono archiviati gli account utente e i relativi attributi. Questo risulta particolarmente utile per gli utenti remoti o mobili che non dispongono di una connessione remota alla rete locale.
 
 Il writeback delle password è necessario per utilizzare al meglio le funzioni di Identity Protection, come la richiesta agli utenti di cambiare le password locali nel caso in cui sia stato rilevato un alto rischio di violazione dell'account.
 
@@ -52,9 +52,9 @@ Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-In questa sezione viene abilitata la reimpostazione della password self-service (SSPR) per consentire agli utenti di reimpostare o sbloccare le password o gli account. Per segnalare abusi o usi impropri è possibile utilizzare il report dettagliato che tiene traccia di accesso al sistema insieme alle notifiche. È necessario attivare il writeback della password prima di eseguire la reimpostazione della password.
+In questa sezione viene abilitata la reimpostazione della password self-service per consentire agli utenti di reimpostare o sbloccare le password o gli account. Per segnalare abusi o usi impropri è possibile utilizzare la reportistica dettagliata, che tiene traccia degli accessi degli utenti al sistema, insieme alle notifiche. È necessario attivare il writeback della password prima di implementare le reimpostazioni delle password.
 
-Vedere le [istruzioni per eseguire la reimpostazione della password](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
+Vedere le [istruzioni per implementare la reimpostazione della password](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
 
 |||
 |:-------|:-----|
@@ -69,7 +69,7 @@ Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-
 
 *Questo passaggio è facoltativo per gli ambienti ibridi e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-In questa sezione si imposterà Azure Active Directory Seamless Single Sign-On (Azure AD Seamless SSO) per consentire agli utenti di accedere ai servizi che usano gli account utenti di Azure AD senza dover digitare la password e, in molti casi, il nome utente. In questo modo gli utenti possono facilmente accedere alle applicazioni basate su cloud come Office 365, senza aver bisogno di componenti aggiuntivi in loco quali ad esempio server federativi di identità.
+In questa sezione si imposterà Accesso Single Sign-On (SSO) facile di Azure Active Directory per consentire agli utenti di accedere ai servizi che usano gli account utenti di Azure AD senza dover digitare la password e, in molti casi, il nome utente. In questo modo gli utenti possono facilmente accedere alle applicazioni basate su cloud come Office 365, senza aver bisogno di componenti aggiuntivi in loco quali ad esempio server federativi di identità.
 
 L'accesso SSO facile di Azure AD viene configurato con lo strumento Azure AD Connect.
 
@@ -88,7 +88,7 @@ Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-In questo passaggio si aiutano gli utenti a riconoscere la pagina di accesso dell'organizzazione aggiungendo il nome dell'azienda, il logo e altri elementi riconoscibili. 
+In questo passaggio si aggiunge il nome dell'azienda, il logo e altri elementi familiari alla pagina di accesso dell'organizzazione per renderla più riconoscibile per gli utenti. 
 
 Con Microsoft 365 Enterprise, è possibile personalizzare l'aspetto delle pagine di accesso e del Riquadro di accesso affinché includano il logo e colori dell'azienda e informazioni sull'utente personalizzate. 
 
