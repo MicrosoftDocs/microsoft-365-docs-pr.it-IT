@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9a080c044939dfde223c231dfebdd248861d5f9f
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 9a7d2130775c9c5d99bba711254fc0f0ce540947
+ms.sourcegitcommit: 3294b97a20ae0e5eb8ce6187310cc96b5050a215
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278625"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34422212"
 ---
 # <a name="device-configuration"></a>Configurazione dispositivo
 
@@ -43,7 +43,6 @@ Criteri | Descrizione
 --- | ---
 Previsione di sicurezza | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) for MDM è configurato per tutti i dispositivi Microsoft Managed Desktop. Questa linea di base è la configurazione standard del settore. È stato rilasciato pubblicamente, testato bene ed è stato recensito dagli esperti di sicurezza di Microsoft per mantenere i dispositivi e le app desktop gestiti da Microsoft protette nei luoghi di lavoro moderni. <br><br>Per attenuare le minacce nel panorama delle minacce di sicurezza in continua evoluzione, la baseline di Microsoft Security verrà aggiornata e distribuita nei dispositivi Microsoft Managed Desktop con ogni aggiornamento delle funzionalità di Windows 10.<br><br>Per ulteriori informazioni, vedere [baseline di sicurezza per Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
 Modello di sicurezza consigliato per Microsoft Managed Desktop | Un set di modifiche consigliate per la linea di base di sicurezza che consente di ottimizzare l'esperienza utente.  Tali modifiche sono documentate nell' [addendum alla sicurezza](#security-addendum). Gli aggiornamenti all'addendum dei criteri si verificano in base alle esigenze.  
-Conformità del dispositivo | Questi criteri sono configurati per impostazione predefinita per tutti i dispositivi desktop Microsoft gestiti. Un dispositivo viene segnalato come non conforme quando non viene soddisfatta una delle seguenti condizioni di sicurezza:<br>-Crittografia del dispositivo BitLocker abilitata per proteggere i dati dei dispositivi. Per ulteriori informazioni, vedere [Overview of BitLocker Device Encryption in Windows 10.](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10)<br>-Secure Boot abilitato e applicato, per convalidare le immagini del firmware sui dispositivi prima che possano essere eseguite. Per ulteriori informazioni, vedere [Secure Boot and Device Encryption Overview.](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview)<br>-Il dispositivo Microsoft Managed Desktop richiede la password per l'accesso.
 Distribuzione degli aggiornamenti | Utilizzare Windows Update for business (WUfB) per eseguire la distribuzione graduale degli aggiornamenti software. Gli amministratori IT non possono modificare le impostazioni per i criteri di gruppo di distribuzione. Per ulteriori informazioni sulla distribuzione basata su gruppo, vedere [How updates are handled](../working-with-managed-desktop/updates.md).
 Dati di diagnostica | I dispositivi verranno impostati per fornire dati diagnostici avanzati a Microsoft in base a un identificatore commerciale conosciuto. Come parte di Microsoft Managed Desktop, gli amministratori IT non possono modificare queste impostazioni. Per i clienti nelle aree di regolamentazione generale per la protezione dei dati (GDPR), gli utenti finali possono ridurre il livello di dati diagnostici forniti, ma ci sarà una riduzione del servizio. Ad esempio, Microsoft Managed Desktop non sarà in grado di raccogliere i dati necessari per eseguire un'iterazione su impostazioni e criteri per soddisfare al meglio le esigenze di prestazioni e sicurezza. Per ulteriori informazioni, vedere [configurare i dati di diagnostica di Windows nell'organizzazione.](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
@@ -56,4 +55,4 @@ Dati di diagnostica | I dispositivi verranno impostati per fornire dati diagnost
  Questi criteri vengono aggiunti per aumentare la sicurezza per le industrie altamente regolamentate. 
  - **Elenco delle app**consentite: le app devono essere considerate attendibili dall'organizzazione per l'esecuzione su dispositivi Microsoft Managed Desktop. In questo modo viene fornito un ambiente bloccato. Tutte le app che devono essere onboarded devono essere comunicate al team di Operations di Microsoft Managed Desktop. Per ulteriori informazioni, vedere [Windows Defender Device Guard](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
  - **Monitoraggio della sicurezza**: Microsoft controllerà i dispositivi con [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection). Se viene rilevata una minaccia, Microsoft invierà una notifica al cliente, isolerà il dispositivo e rettificherà il problema in remoto. 
-
+ - **Disabilitare PowerShell V2**: Microsoft è obsoleto PowerShell v2 nell'agosto 2017. Questa funzionalità è stata disattivata su tutti i dispositivi Microsoft Managed Desktop. Per ulteriori informazioni su questa modifica, vedere [Deprecation di Windows PowerShell 2,0](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/).

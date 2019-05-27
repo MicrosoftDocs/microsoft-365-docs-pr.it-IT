@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b8d41e3747ad1e844e8d8f51412366d1c58efbe4
-ms.sourcegitcommit: 82a5c9a1f0f9627264f6f488dedb03f9092451fd
+ms.openlocfilehash: 7c260ce7b3fcb488cb22fb054eeb6ba322fee94b
+ms.sourcegitcommit: ef1382ca224a0c108df2633a6550786666691e1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34163447"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34391267"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparare i certificati e i profili di rete per Microsoft Managed Desktop  
  
@@ -71,7 +71,7 @@ Dopo aver esportato il profilo LAN, è possibile preparare i criteri per Microso
     - OMA-URI (distinzione tra maiuscole e minuscole): Enter *./Device/vendor/MSFT/WiredNetwork/LanXML*
     - Tipo di dati: selezionare **stringa (file XML)**. 
     - XML personalizzato: caricare il file XML esportato.
-2. Inviare una richiesta di servizio a Microsoft Managed Desktop Operations tramite il portale di amministrazione di Microsoft Managed Desktop per esaminare e distribuire il profilo di configurazione in "dispositivi di lavoro moderni – test". Le operazioni di Microsoft Managed Desktop consentono di sapere quando la richiesta viene completata tramite il portale di amministrazione.
+2. Inviare una richiesta di supporto alle operazioni IT di Microsoft Managed Desktop tramite il portale di amministrazione di Microsoft Managed Desktop per esaminare e distribuire il profilo di configurazione in "dispositivi di lavoro moderni – test". Microsoft Managed Desktop IT Operations consente di sapere quando la richiesta viene completata tramite la richiesta di supporto nel portale di amministrazione.
  
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Distribuzione dei certificati e del profilo Wi-Fi/VPN 
  
@@ -82,6 +82,6 @@ Per distribuire certificati e profili, eseguire la procedura seguente:
 2. Creare un profilo per ogni SCEP o PKCS (vedere [Create a SCEP certificate profile](https://docs.microsoft.com/intune/certificates-scep-configure#create-a-scep-certificate-profile) or [Create a PKCS certificate profile](https://docs.microsoft.com/intune/certficates-pfx-configure#create-a-pkcs-certificate-profile)) ognuno di questi profili deve avere una descrizione che includa una data di scadenza nel formato gg/mm/aaaa. **I profili dei certificati senza una data di scadenza non verranno distribuiti.**
 3. Creare un profilo per ogni rete WiFi aziendale (vedere [Impostazioni Wi-Fi per i dispositivi Windows 10 e versioni successive](https://docs.microsoft.com/intune/wi-fi-settings-windows)).
 4. Creare un profilo per ogni VPN aziendale (vedere [Windows 10 e le impostazioni dei dispositivi olografici di Windows per aggiungere connessioni VPN tramite Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
-5. Inviare una richiesta di servizio intitolata "distribuzione di certificati" o "distribuzione del profilo Wi-Fi" per le operazioni desktop Microsoft gestite tramite il portale di amministrazione di Microsoft Managed Desktop per esaminare e distribuire il profilo di configurazione in "dispositivi di lavoro moderni – test". Le operazioni di Microsoft Managed Desktop consentono di sapere quando la richiesta è stata completata tramite il portale di amministrazione. 
+5. Inviare una richiesta di supporto intitolata "distribuzione di certificati" o "distribuzione del profilo Wi-Fi" per le operazioni IT di Microsoft Managed Desktop tramite il portale di amministrazione di Microsoft Managed Desktop per esaminare e distribuire il profilo di configurazione in "dispositivi di lavoro moderni – test ". Microsoft Managed Desktop IT Operations consente di sapere quando la richiesta è stata completata tramite la richiesta di supporto nel portale di amministrazione. 
  
  

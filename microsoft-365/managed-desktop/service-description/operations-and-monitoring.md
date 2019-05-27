@@ -3,16 +3,15 @@ title: Monitoraggio e operazioni di Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 12/18/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 391c5cca9f1d440a806fa094633b50c3256c2a26
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c618c5bf2acf50d84aca354975670ed84b581601
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291461"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431917"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Monitoraggio e operazioni di Microsoft Managed Desktop
 
@@ -46,7 +45,7 @@ Di seguito viene illustrato un riepilogo del modo in cui il processo di modifica
 
 <table>
 <tr><th></th><th><p>Ruolo di Microsoft:</p></th><th><p>Ruolo del cliente:</p></th></tr>
-<tr><td>Prima di una modifica</td><td><ul><li>Creare le aspettative sulle modifiche al servizio.</li><li>Notificare ai clienti 5 giorni di anticipo le modifiche che richiedono l'intervento dell'amministratore.</li><li>Per le modifiche apportate alle emergenze, applicare una attenuazione prima della notifica.</li></ul></td><td><ul><li>Capire cosa aspettarsi da modifiche e comunicazioni.</li><li>Leggere regolarmente il centro messaggi di Microsoft Managed Desktop.</li><li>Rivedere e aggiornare i processi di gestione delle modifiche interni.</li><li>Comprendere e verificare la conformità con i requisiti di Microsoft Managed Desktop. </li><li>Riconoscere e approvare, se necessario.</li></ul></td></tr><tr><td>Durante una modifica</td><td><ul><li>Rilasciare e distribuire aggiornamenti mensili per la sicurezza e non relativi alla sicurezza per i client Windows 10 e Office 365.</li><li>Monitorare i segnali dati e le code di supporto per l'impatto.</li></ul></td><td><ul><li>Controllare il centro messaggi di Microsoft Managed Desktop e esaminare eventuali informazioni aggiuntive.</li><li>   Eseguire qualsiasi azione necessaria, se applicabile, e testare le applicazioni.</li><li>Se è presente uno scenario di interruzione/correzione, creare una richiesta di supporto.</li></ul></td></tr><tr><td>Dopo una modifica</td><td><ul><li>Raccogliere i commenti e suggerimenti dei clienti per migliorare l'implementazione delle modifiche future.</li><li>Monitorare i segnali dati e le code di supporto per l'impatto.</li></ul></td><td><ul><li>Collaborare con gli utenti dell'organizzazione per adottarne la modifica.</li><li>   Rivedere i processi di gestione delle modifiche e delle adozioni per opportunità di ottenere efficienze.</li><li>Fornire commenti e suggerimenti generali e commenti specifici nello strumento di feedback di amministratore.</li><li>AdDestrare gli utenti a fornire commenti e suggerimenti specifici per l'app utilizzando l'hub feedback di Windows e il pulsante Smile nelle app di Office.</li></ul></td></tr>
+<tr><td>Prima di una modifica</td><td><ul><li>Creare le aspettative sulle modifiche al servizio.</li><li>Notificare ai clienti 5 giorni di anticipo le modifiche che richiedono l'intervento dell'amministratore.</li><li>Per le modifiche apportate alle emergenze, applicare una attenuazione prima della notifica.</li></ul></td><td><ul><li>Capire cosa aspettarsi da modifiche e comunicazioni.</li><li>Leggere regolarmente il centro messaggi di Microsoft Managed Desktop.</li><li>Rivedere e aggiornare i processi di gestione delle modifiche interni.</li><li>Comprendere e verificare la conformità con i requisiti di Microsoft Managed Desktop. </li><li>Riconoscere e approvare, se necessario.</li></ul></td></tr><tr><td>Durante una modifica</td><td><ul><li>Rilasciare e distribuire aggiornamenti mensili per la sicurezza e non relativi alla sicurezza per i client Windows 10 e Office 365.</li><li>Monitorare i segnali dati e le code di supporto per l'impatto.</li></ul></td><td><ul><li>Controllare il centro messaggi di Microsoft Managed Desktop e esaminare eventuali informazioni aggiuntive.</li><li>   Eseguire qualsiasi azione necessaria, se applicabile, e testare le applicazioni.</li><li>Se è presente uno scenario di interruzione/correzione, creare una richiesta di supporto.</li></ul></td></tr><tr><td>Dopo una modifica</td><td><ul><li>Raccogliere i commenti e suggerimenti dei clienti per migliorare l'implementazione delle modifiche future.</li><li>Monitorare i segnali dati e le code di supporto per l'impatto.</li></ul></td><td><ul><li>Collaborare con gli utenti dell'organizzazione per adottarne la modifica.</li><li>   Rivedere i processi di gestione delle modifiche e delle adozioni per opportunità di ottenere efficienze.</li><li>Fornire commenti e suggerimenti generali e commenti specifici nello strumento di feedback di amministratore.</li><li>Addestrare gli utenti a fornire commenti e suggerimenti specifici per l'app utilizzando l'hub feedback di Windows e il pulsante Smile nelle app di Office.</li></ul></td></tr>
 <table> 
 
 
