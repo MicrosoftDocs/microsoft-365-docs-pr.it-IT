@@ -1,21 +1,21 @@
 ---
 title: Servizi professionali e supporto tecnico di Microsoft e notifica di violazione secondo l'RGPD
 description: Informazioni su come i servizi professionali e il supporto tecnico di Microsoft proteggono da una violazione dei dati personali e su come Microsoft gestisce un'eventuale violazione e lo comunica agli utenti interessati.
-keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, RGPD
-author: herviicban
+keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: a17752773304272938c305649ff6e511ab0d1b0b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8a0f0c5c173fbee6a865d2c9a7afb0f61b388507
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285743"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431597"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Servizi professionali e supporto tecnico di Microsoft e notifica di violazione secondo l'RGPD
 
@@ -49,7 +49,7 @@ Quando Servizi professionali di Microsoft identifica un incidente di protezione 
 
 #### <a name="detection"></a>Rilevamento 
 
-Servizi professionali di Microsoft monitora continuamente gli incidenti di protezione dei dati emergenti in tutti gli archivi di dati che contengono dati personali, sia online che offline. Utilizza diversi metodi per il rilevamento automatico di incidenti di protezione dei dati, tra cui avvisi automatizzati, segnalazioni da parte dei clienti, segnalazioni da parti esterne, l’osservazione di anomalie e le indicazioni di attività di pirateria informatica da parte di utenti malintenzionati.
+Microsoft Professional Services monitora continuamente gli incidenti di protezione dei dati emergenti in tutti gli archivi di dati che contengono dati personali, sia online che offline. Utilizza diversi metodi per il rilevamento automatico di incidenti di protezione dei dati, tra cui avvisi automatizzati, segnalazioni da parte dei clienti, segnalazioni da parti esterne, l’osservazione di anomalie e le indicazioni di attività di pirateria informatica da parte di utenti malintenzionati.
 
 I processi di rilevamento usati da Servizi professionali di Microsoft sono progettati per rilevare gli incidenti di protezione dei dati e avviare indagini. Ad esempio:
 
@@ -81,7 +81,7 @@ Microsoft completa inoltre una relazione finale interna per gli incidenti di pro
 
 #### <a name="notification"></a>Notifica
 
-Quando Servizi professionali di Microsoft dichiara un incidente di protezione dei dati con il GDPR, le notifiche sono destinate ai clienti entro 72 ore. L'obbligo di notifica di 72 ore è un impegno assunto da Servizi professionali, non un requisito legale nel GDPR.
+Quando Microsoft Professional Services dichiara un incidente di protezione dei dati con il GDPR, le notifiche sono destinate ai clienti entro 72 ore. L'obbligo di notifica di 72 ore è un impegno assunto da Servizi professionali, non un requisito legale nel GDPR.
 
 Dopo la dichiarazione di un incidente di protezione dei dati, il processo di notifica viene eseguito il più rapidamente possibile, tenendo in considerazione i rischi che ciò comporta alla sicurezza. Per garantire che la notifica venga recapitata, è responsabilità del cliente assicurarsi che le informazioni di contatto amministrative in ogni account, sottoscrizione e portale dei servizi online applicabile siano corrette. Anche se l'obiettivo è quello di offrire ai clienti interessati un avviso tempestivo e accurato, per ottemperare all’impegno di notifica entro 72 ore, la notifica iniziale potrebbe non includere tutti i dettagli, poiché questi potrebbero non essere disponibili durante le fasi iniziali dell'incidente. Inoltre, Microsoft potrebbe volutamente non rivelare alcuni dettagli a causa delle circostanze relative all'incidente di protezione dei dati. Ad esempio, potrebbe essere necessario non rivelare i dettagli se l'operazione di inviare una notifica aumenta il rischio per altri clienti o interferisce con la possibilità delle forze dell’ordine o di Microsoft di individuare il soggetto dannoso.
 

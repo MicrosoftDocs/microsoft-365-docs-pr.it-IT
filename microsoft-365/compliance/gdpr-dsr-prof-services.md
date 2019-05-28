@@ -1,6 +1,6 @@
 ---
 title: Servizi professionali e supporto tecnico di Microsoft, Richieste del soggetto dei dati per l'RGPD
-description: Informazioni su come Servizi professionali e supporto tecnico di Microsoft gestiscono le richieste del soggetto dei dati.
+description: Informazioni su come Professional Services e supporto tecnico Microsoft gestiscono le richieste dell'interessato.
 keywords: Servizi professionali, Microsoft 365, Microsoft 365 Education, documentazione Microsoft 365, GDPR
 author: herviicban
 localization_priority: Priority
@@ -10,18 +10,18 @@ ms.author: heicba
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fdbd15e3b6cb3a5283bea9dc92ed89c7f2493f40
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 4fb7c3140a73e4f72673807bb99214ff6fc0f2bc
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278248"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431747"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Servizi professionali e supporto tecnico di Microsoft, Richieste del soggetto dei dati per l'RGPD
 
 ## <a name="introduction-to-microsoft-professional-services"></a>Introduzione ai servizi professionali Microsoft
 
-Servizi professionali di Microsoft include un gruppo eterogeneo di architetti, ingegneri, consulenti e professionisti del supporto tecnico dedicato alla realizzazione della mission di Microsoft di consentire ai clienti di fare di più e ottenere di più. Il team Servizi professionali include più di 21.000 operatori tra consulenti, consulenti digitali, supporto tecnico Premier, tecnici e addetti alle vendite dislocati in 191 paesi, che forniscono supporto in oltre 46 lingue, gestiscono diversi milioni di impegni al mese e avviano interazioni tra clienti e partner attraverso strumenti automatizzati, in locale, telefono, Web e community. L'organizzazione offre competenze generali sull'intero portfolio Microsoft, sfruttando una vasta rete di partner, community tecniche, strumenti, diagnostica e canali di contatto con i clienti aziendali.
+Microsoft Professional Services include un gruppo eterogeneo di architetti, ingegneri, consulenti e professionisti del supporto tecnico dedicato alla realizzazione della mission di Microsoft di consentire ai clienti di fare di più e ottenere di più. Il team Professional Services include più di 21.000 operatori tra consulenti, consulenti digitali, supporto tecnico Premier, tecnici e addetti alle vendite dislocati in 191 paesi, che forniscono supporto in oltre 46 lingue, gestiscono diversi milioni di interazioni al mese e avviano interazioni tra clienti e partner attraverso strumenti automatizzati, in locale, telefono, Web e community. L'organizzazione offre competenze generali sull'intero portfolio Microsoft, sfruttando una vasta rete di partner, community tecniche, strumenti, diagnostica e canali di contatto con i clienti aziendali.
 
 Per ulteriori informazioni sui Servizi professionali di Microsoft vedere la sezione Servizi professionali di Microsoft nel Centro protezione Microsoft (<https://www.microsoft.com/trustcenter/professional-services>). Per i servizi professionali di Microsoft, il rispetto degli obblighi derivanti dal Regolamento generale sulla protezione dei dati (GDPR) è importante. Le informazioni contenute in questo documento possono aiutare a risolvere eventuali dubbi dei clienti su come i servizi di assistenza e consulenza Microsoft supportino i clienti per gestire gli obblighi relativi alle richieste degli interessati secondo il GDPR.<span id="_Toc508792502" class="anchor"><span id="_Toc510704608" class="anchor"></span></span>
 
@@ -57,11 +57,11 @@ Di seguito sono riportate le definizioni dei termini relativi all'RGPD per quest
 
 -   **Titolare.** La persona fisica o giuridica, l'autorità pubblica, l'agenzia o altro ente che, autonomamente o unitamente ad altri soggetti, determina gli obiettivi e i mezzi del trattamento dei dati personali; laddove gli obiettivi e i mezzi di tale trattamento sono determinati da una normativa europea o di uno specifico Stato membro dell'UE, il titolare del trattamento dei dati o i criteri specifici per la sua designazione potrebbero essere forniti da tale normativa europea o di uno specifico Stato membro dell'UE.
 
--   **Dati personali e interessato.** Qualsiasi informazione relativa a una persona fisica identificata o identificabile ("soggetto dei dati"); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente, tramite dati specifici come un nome, un numero di identificazione, dati sulla posizione, un identificatore online o uno o più fattori specifici per l'identità fisica, psicologica, genetica, mentale, economica, culturale o sociale della persona fisica.
+-   **Dati personali e interessato.** Qualsiasi informazione relativa a una persona fisica identificata o identificabile ('interessato'); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente, tramite dati specifici come un nome, un numero di identificazione, dati sulla posizione, un identificatore online o uno o più fattori specifici per l'identità fisica, psicologica, genetica, mentale, economica, culturale o sociale della persona fisica.
 
 -   **Responsabile.** Una persona fisica o giuridica, un'autorità pubblica o altro ente che si occupa del trattamento dei dati personali per conto del titolare.
 
-#### <a name="additional-terms-and-definitions-that-may-helpful-in-understanding-this-guide"></a>Ulteriori termini e definizioni che possono facilitare la comprensione di questa guida
+#### <a name="additional-terms-and-definitions-that-may-be-helpful-in-understanding-this-guide"></a>Ulteriori termini e definizioni che possono facilitare la comprensione di questa guida
 
 -   I **dati relativi a consulenza e supporto** sono tutti i dati, tra cui file di testo, audio, video e immagini, o il software, che vengono forniti a Microsoft dal cliente o per suo conto (ovvero il cliente autorizza Microsoft a ottenerli da un servizio online) tramite un impegno con Microsoft per ottenere supporto tecnico o Servizi professionali. Per chiarire, questo non include i dati raccolti dove Microsoft è il titolare del trattamento dei dati, compresi i dati di contatto dei clienti.
 
@@ -76,12 +76,12 @@ Di seguito sono riportate le definizioni dei termini relativi all'RGPD per quest
 Questa guida descrive quattro scenari che un cliente può riscontrare se ha utilizzato Servizi professionali di Microsoft.
 
 <span id="_Toc510704611" class="anchor"><span id="_Toc511045453" class="anchor"><span id="_Toc511403161" class="anchor"></span></span></span>
-- **Richiesta dell’interessato per un cliente che contatta Microsoft**
+- **Richiesta dell'interessato per un contatto del cliente che coinvolge Microsoft**
 
 Spiegazione di come Microsoft gestisce le richieste di un cliente o un amministratore IT per esercitare i diritti degli interessati.
 
 <span id="_Toc510704612" class="anchor"><span id="_Toc511045454" class="anchor"><span id="_Toc511403162" class="anchor"></span></span></span>
-- **Richiesta dell’interessato per un utente finale che contatta Microsoft**
+- **Richiesta dell'interessato per un utente finale che coinvolge Microsoft**
 
 Spiegazione di come Microsoft gestisce richieste dei dipendenti di un cliente o di altri interessati per esercitare i propri diritti.
 
@@ -96,15 +96,15 @@ Spiegazione di come ottenere assistenza da Microsoft quando un cliente ha ricevu
 
 Spiegazione di come ottenere assistenza da Microsoft quando un cliente ha ricevuto una richiesta da un suo dipendente o da altri interessati per esercitare i propri diritti, e i dati personali dell'interessato sono stati raccolti da Microsoft durante un impegno di consulenza.
 
-## <a name="dsr-for-a-customer-contact-engaging-microsoft"></a>DSR per un contatto cliente che coinvolge Microsoft
+## <a name="dsr-for-a-customer-contact-engaging-microsoft"></a>Richiesta dell'interessato per un contatto del cliente che coinvolge Microsoft
 
 *Come Microsoft risponde alle richieste da un contatto cliente o un amministratore IT per esercitare i diritti dei soggetti dei dati.*
 
-Quando un cliente si impegna con Microsoft per ricevere servizi di consulenza o supporto, il supporto tecnico Microsoft raccoglie o recupera automaticamente dai record dell'account i dati personali del contatto cliente (ad esempio, Premier CSM, Amministratore globale, Amministratore IT). Ciò probabilmente include nome, indirizzo e-mail, telefono e altri dati personali del soggetto che necessita dei servizi di consulenza o supporto.
+Quando un cliente interagisce con Microsoft per ricevere servizi di consulenza o supporto, il supporto tecnico Microsoft raccoglie o recupera automaticamente dai record dell'account i dati personali del contatto cliente (ad esempio, Premier CSM, Amministratore globale, Amministratore IT). Tali dati includono probabilmente nome, indirizzo e-mail, telefono e altri dati personali del soggetto che necessita dei servizi di consulenza o supporto.
 
 I dati personali del contatto cliente fanno parte della relazione aziendale tra Microsoft e il cliente, e Microsoft è il titolare del trattamento dei dati. Microsoft risponde alle richieste DSR dal contatto cliente in merito ai suoi dati personali, che risiedano o meno nell'organizzazione.
 
-È importante che i clienti comprendano che la richiesta DSR riguarda solo i dati personali del contatto cliente, e che non verranno modificati o eliminati i dati del cliente inviati come parte di impegni (ad esempio, trascrizioni, descrizioni dei casi, file, prodotto di lavoro) poiché Microsoft è il responsabile del trattamento dei dati. Inoltre, per mantenere il record cronologico degli impegni, non verranno apportate modifiche agli impegni conclusi, tra cui il record di chi ha aperto un impegno.
+È importante che i clienti comprendano che la richiesta dell'interessato riguarda solo i dati personali del contatto cliente, e che non verranno modificati o eliminati i dati del cliente inviati nell'ambito di interazioni (ad esempio, trascrizioni, descrizioni dei casi, file, prodotto di lavoro) poiché Microsoft è il responsabile del trattamento dei dati. Inoltre, per mantenere il record cronologico delle interazioni, non verranno apportate modifiche alle interazioni concluse, tra cui il record di chi ha avviato un'interazione.
 
 Alla ricezione di una richiesta di informazioni da un contatto cliente in merito a una richiesta DSR, il personale Microsoft indirizza un contatto cliente al [supporto Microsoft per la privacy](http://go.microsoft.com/fwlink/?LinkId=321116). Si tratta del meccanismo di input principale di Microsoft per i reclami e le richieste di informazioni sulla privacy. Nel momento in cui riceve una richiesta di informazioni, il team per la privacy Microsoft determina se fa parte di un account commerciale o aziendale e risponde in modo adeguato.
 
@@ -117,7 +117,7 @@ I clienti possono scegliere di apportare modifiche ai propri dati raccolti duran
 John è un amministratore IT per un cliente aziendale O365, con un impegno relativo al supporto aperto e due impegni chiusi. Ora John sta lasciando la sua società e vuole che i suoi dati vengano eliminati. John contatta il PRC, che lo identifica come amministratore IT. John viene informato del fatto che il suo nome non può essere eliminato dagli impegni (chiusi) precedenti o dai dati all'interno degli impegni aperti. Tuttavia, il PRC sostituirà John come contatto nell'attuale ticket aperto se identifica un contatto sostitutivo. John comunica a Microsoft che Jane sarà il suo contatto sostitutivo e Microsoft apporta la modifica in tutti i sistemi di supporto.
 
 <span id="_Toc510704616" class="anchor"><span id="_Toc511403166" class="anchor"></span></span>
-## <a name="dsr-for-an-end-user-engaging-microsoft"></a>DSR per un utente finale che coinvolge Microsoft
+## <a name="dsr-for-an-end-user-engaging-microsoft"></a>Richiesta dell'interessato per un utente finale che coinvolge Microsoft
 
 *Come Microsoft risponde alle richieste dai dipendenti di un cliente o altri interessati per esercitare i propri diritti.*
 
@@ -127,20 +127,20 @@ Se l'interessato ha contattato anche Microsoft per l'esercizio dei propri diritt
 
 ***Esempio solo a scopo illustrativo***
 
-Jane è una dipendente di un cliente aziendale, Contoso, che le ha fornito un account Dynamics 365. Jane contatta Microsoft per richiedere che tutti i suoi dati vengano eliminati e comunicati al Privacy Response Center. Jane compila il modulo per la richiesta. Il Privacy Response Center la identifica come utente finale aziendale e la informa del fatto che deve rivolgersi a Contoso per l'eliminazione dei suoi dati aziendali. Inoltre, viene identificata come utente Microsoft X-Box e i suoi dati vengono eliminati dal suo account Microsoft consumer.
+Jane è una dipendente di un cliente aziendale, Contoso, che le ha fornito un account Dynamics 365. Jane contatta Microsoft per richiedere che tutti i suoi dati vengano eliminati e comunicati al Privacy Response Center. Jane compila il modulo per la richiesta. Il Privacy Response Center la identifica come utente finale aziendale e la informa del fatto che deve rivolgersi a Contoso per l'eliminazione dei suoi dati aziendali. Inoltre, viene identificata come utente Microsoft Xbox e i suoi dati vengono eliminati dal suo account Microsoft consumer.
 
 ## <a name="dsr-for-customer-provided-data-commercial-support"></a>DSR per i dati forniti dal cliente: supporto commerciale
 
 *Come ottenere assistenza da Microsoft quando un cliente ha ricevuto una richiesta da un suo dipendente o da altri interessati per esercitare i propri diritti, e i dati personali dell'interessato sono stati raccolti dal supporto tecnico Microsoft durante un impegno relativo al supporto.*
 
-Quando un cliente si impegna con il supporto tecnico Microsoft, Microsoft raccoglie i dati del supporto dal cliente per risolvere eventuali problemi che hanno richiesto un impegno relativo al supporto. Tali dati includono l'interazione di Microsoft con il cliente (ad esempio, chat, telefono, e-mail, invio sul Web), oltre a qualsiasi file inviato dal cliente a Microsoft o che Microsoft, con il consenso del cliente, ha estratto dall'ambiente IT del cliente o dal tenancy di Online Services per risolvere il problema riscontrato. Nel caso in cui si tratti di supporto Premier, ciò include i dati del cliente raccolti da Microsoft per impedire proattivamente futuri problemi. Tuttavia, ciò esclude le informazioni di contatto del cliente o altre informazioni derivanti dalla relazione aziendale tra Microsoft e il cliente (ad esempio, record di fatturazione).
+Quando un cliente interagisce con il supporto tecnico Microsoft, Microsoft raccoglie i dati del supporto dal cliente per risolvere eventuali problemi che hanno richiesto un'interazione con il supporto. Tali dati includono l'interazione di Microsoft con il cliente (ad esempio, chat, telefono, e-mail, invio sul Web), oltre a qualsiasi file inviato dal cliente a Microsoft o che Microsoft, con il consenso del cliente, ha estratto dall'ambiente IT del cliente o dal tenancy di Online Services per risolvere il problema riscontrato. Nel caso in cui si tratti di supporto Premier, ciò include i dati del cliente raccolti da Microsoft per impedire proattivamente futuri problemi. Tuttavia, ciò esclude le informazioni di contatto del cliente o altre informazioni derivanti dalla relazione aziendale tra Microsoft e il cliente (ad esempio, record di fatturazione).
 
 Per tutti i dati relativi al supporto, Microsoft è il responsabile del trattamento dei dati. Di conseguenza, Microsoft non risponde alle richieste dirette dei soggetti dei dati in merito ai dati del supporto forniti quando sono stati associati a un cliente commerciale Microsoft. Microsoft aiuta il cliente tramite i normali canali di supporto per assisterlo nella risposta alle richieste DSR.
 
 <span id="_Discover" class="anchor"><span id="_Toc508792508" class="anchor"><span id="_Toc510704617" class="anchor"><span id="_Toc511403167" class="anchor"></span></span></span></span>
 ## <a name="step-1-discover"></a>Passaggio 1: scoprire
 
-Il primo passaggio per ottenere l'assistenza di Microsoft nella risposta a una richiesta DSR consiste nell'individuare i dati personali oggetto della richiesta DSR. Questa fase (individuazione e analisi dei dati personali in questione) consente al cliente di determinare se una richiesta DSR soddisfa i criteri aziendali per l'accettazione di una richiesta di questo tipo.
+Il primo passaggio per ottenere l'assistenza di Microsoft nella risposta a una richiesta dell'interessato consiste nell'individuare i dati personali oggetto della richiesta. Questa fase (individuazione e analisi dei dati personali in questione) consente al cliente di determinare se una richiesta dell'interessato soddisfa i criteri aziendali per l'accettazione di una richiesta di questo tipo.
 
 Dopo aver trovato i dati, il cliente può effettuare l'azione specifica per soddisfare la richiesta dell'interessato. L'operazione che il cliente sta tentando di eseguire determina il livello di individuazione necessario al cliente.
 
@@ -150,7 +150,7 @@ Per individuare i dati pertinenti e ottenere assistenza da Microsoft, un cliente
 
 *Opzione A: DSR del cliente per il supporto Microsoft*. Applicare la richiesta DSR a tutti i dati relativi al supporto del cliente nell'ambiente Microsoft. Per farlo, un cliente può semplicemente chiedere a Microsoft di applicare la richiesta DSR a tutti i dati del supporto raccolti.
 
-*Opzione B: impegni specifici del cliente.* Utilizzare i sistemi online per analizzare i ticket, quindi identificare gli impegni specifici contenenti i dati personali pertinenti e segnalarli a Microsoft. Microsoft tenterà di fornire assistenza per eseguire una ricerca se il cliente non è in grado di effettuare la ricerca nei vari impegni (ticket).
+*Opzione B: interazioni specifiche del cliente.* Usare i sistemi online per analizzare i ticket, quindi identificare le interazioni specifiche contenenti i dati personali pertinenti e segnalarli a Microsoft. Microsoft proverà a fornire assistenza per eseguire una ricerca se il cliente non è in grado di effettuare la ricerca nelle varie interazioni (ticket).
 
 **Una volta identificati gli impegni, richiedere di applicare la DSR a una parte specifica del record o a tutto ciò che riguarda tale impegno in Microsoft. **
 
@@ -169,9 +169,9 @@ Dopo che un cliente ha individuato i dati relativi al supporto contenenti dati p
 
 La risposta alla richiesta DSR potrebbe includere una copia del documento effettivo, una versione appositamente riadattata o uno screenshot delle parti che il cliente considera adatte alla condivisione. Per ognuna di queste risposte a una richiesta di accesso, il cliente dovrà recuperare una copia del documento o altro elemento contenente i dati sensibili.
 
-<span id="_Using_Content_Search_1" class="anchor"><span id="_Rectify" class="anchor"><span id="_Forms_1" class="anchor"></span></span></span>L'accesso ai dati personali di un utente finale potrebbe derivare da una menzione o notazione nei vari tipi di documentazione sui contenuti. Poiché i clienti possono accedere ai contenuti e al ticket relativo all'impegno, possono fornire autonomamente un riepilogo dei dati personali senza ulteriore assistenza di Microsoft.
+<span id="_Using_Content_Search_1" class="anchor"><span id="_Rectify" class="anchor"><span id="_Forms_1" class="anchor"></span></span></span>L'accesso ai dati personali di un utente finale potrebbe derivare da una menzione o notazione nei vari tipi di documentazione sui contenuti. Poiché i clienti possono accedere ai contenuti e al ticket di interazione, possono fornire autonomamente un riepilogo dei dati personali senza ulteriore assistenza di Microsoft.
 
-In rari casi, il cliente potrebbe dover ottenere copie dei dati relativi alle interazioni per il supporto tecnico (ad esempio, e-mail, copie trascritte di registrazioni telefoniche; trascrizioni di chat) tra un rappresentante Microsoft e il rappresentante del cliente. Nella misura necessaria, Microsoft può fornire copie riadattate di tali trascrizioni in base alle esigenze, alla riservatezza e alla difficoltà.
+In rari casi, il cliente potrebbe dover ottenere copie dei dati relativi alle interazioni con il supporto tecnico (ad esempio, messaggi di posta elettronica, copie trascritte di registrazioni telefoniche; trascrizioni di chat) tra un rappresentante Microsoft e il rappresentante del cliente. Nella misura necessaria, Microsoft può fornire copie riadattate di tali trascrizioni in base alle esigenze, alla riservatezza e alla difficoltà.
 
 <span id="_Sway" class="anchor"><span id="_Toc508792516" class="anchor"><span id="_Toc510704619" class="anchor"><span id="_Toc511403169" class="anchor"></span></span></span></span>
 ## <a name="step-3-rectify"></a>Passaggio 3: rettificare
@@ -183,14 +183,14 @@ Se un interessato ha chiesto al cliente di rettificare i dati personali che risi
 
 <span id="_Delete" class="anchor"></span>Il cliente può chiudere un impegno o contattare Microsoft e richiedere la chiusura dell'impegno in qualsiasi momento. Un impegno chiuso impedisce l'esecuzione di qualsiasi operazione.
 
-Per una maggiore sicurezza, il cliente può contattare Microsoft e richiedere l'aggiunta di una nota nel sistema di creazione dei ticket per gli impegni a indicare che il caso non deve essere riaperto per nessun motivo senza l'autorizzazione del cliente.
+Per una maggiore sicurezza, il cliente può contattare Microsoft e richiedere l'aggiunta di una nota nel sistema di creazione dei ticket per le interazioni a indicare che il caso non deve essere riaperto per nessun motivo senza l'autorizzazione del cliente.
 
-Nota: anche gli impegni (ticket) verranno eliminati secondo una pianificazione di conservazione ed eliminazione, basata sulla riservatezza dei dati, sul servizio e sul sistema. Se il cliente richiede una copia dei dati, deve assicurarsi di aver estratto i dati prima della loro eliminazione.
+Nota: anche le interazioni (ticket) verranno eliminate secondo una pianificazione di conservazione ed eliminazione, basata sulla riservatezza dei dati, sul servizio e sul sistema. Se il cliente richiede una copia dei dati, deve assicurarsi di aver estratto i dati prima della loro eliminazione.
 
 <span id="_Toc508792528" class="anchor"><span id="_Toc510704621" class="anchor"><span id="_Toc511403171" class="anchor"></span></span></span>
 ## <a name="step-5-delete"></a>Passaggio 5: eliminare
 
-Il "diritto di cancellazione" per la rimozione delle informazioni personali dai dati relativi al supporto di un'organizzazione è una protezione chiave nell'RGPD. La rimozione dei dati personali include l'eliminazione di interi impegni, documenti o file o l'eliminazione di dati specifici all'interno di un impegno, di un documento o di un file.
+Il "diritto di cancellazione" per la rimozione delle informazioni personali dai dati relativi al supporto di un'organizzazione è una protezione chiave nel GDPR. La rimozione dei dati personali include l'eliminazione di interazioni, documenti o file completi o l'eliminazione di dati specifici all'interno di un'interazione, di un documento o di un file.
 
 Nel caso in cui un cliente abbia intenzione di eliminare dei dati personali in risposta a una richiesta DSR, di seguito sono descritti alcuni aspetti importanti sul funzionamento dell'eliminazione per il Supporto tecnico Microsoft.<span id="_Export" class="anchor"><span id="_Step_6:_Export" class="anchor"></span></span>
 
@@ -198,9 +198,9 @@ Microsoft applica a tutti i dati dei criteri di conservazione ed eliminazione, c
 
 Gli utenti possono richiedere l'eliminazione dei dati personali di un interessato a livello globale nei sistemi di supporto tramite il TAM o compilando una richiesta di supporto (SR) in SMC o in un sistema equivalente. *È necessario* indicare che si tratta di una richiesta di assistenza per una richiesta DSR secondo l'RGPD.
 
-*Opzione A: DSR del cliente per il supporto Microsoft*. Per una richiesta DSR in più sistemi, il cliente deve fornire i dati personali di cui necessita Microsoft per identificare i dati richiesti (ad esempio, l'indirizzo e-mail, il numero di telefono). Microsoft non correla o esegue ricerche nei record, ma utilizza direttamente gli identificatori forniti dal cliente. Una volta individuati i dati, Microsoft elimina tutti gli impegni e tutti i dati associati. **Nota importante:** ciò potrebbe comportare la perdita di record cronologici importanti per l'organizzazione del cliente.
+*Opzione A: richiesta dell'interessato del cliente relativa al supporto Microsoft per più sistemi*. Per una richiesta dell'interessato per più sistemi, il cliente deve fornire i dati personali di cui necessita Microsoft per identificare i dati richiesti (ad esempio, l'indirizzo e-mail, il numero di telefono). Microsoft non correla o esegue ricerche nei record, ma utilizza direttamente gli identificatori forniti dal cliente. Una volta individuati i dati, Microsoft elimina tutte le interazioni e tutti i dati associati. **Nota importante:** questa operazione potrebbe comportare la perdita di record cronologici importanti per l'organizzazione del cliente.
 
-*Opzione B: impegni specifici del cliente*. Per quanto riguarda gli impegni specifici che il cliente ha identificato e vuole rimuovere, non eliminare i ticket da SMC. In questo modo, i dati personali rimangono nei log e nei sistemi downstream che potrebbero non essere eliminati nell'intervallo di tempo necessario. Al contrario, identificare il ticket o i dati personali nel ticket da eliminare e contattare il Supporto tecnico Microsoft per ricevere assistenza con l'eliminazione di tali dati.
+*Opzione B: interazioni specifiche del cliente*. Per quanto riguarda le interazioni specifiche che il cliente ha identificato e vuole rimuovere, non eliminare i ticket da SMC. In questo modo, i dati personali rimangono nei log e nei sistemi downstream che potrebbero non essere eliminati nell'intervallo di tempo necessario. Al contrario, identificare il ticket o i dati personali nel ticket da eliminare e contattare il supporto tecnico Microsoft per ricevere assistenza con l'eliminazione di tali dati.
 
 ### <a name="microsoft-support-data-transfer-and-management-tool-dtm-instructions"></a>Istruzioni sullo strumento Data Transfer and Management (DTM) del Supporto tecnico Microsoft
 
@@ -250,13 +250,13 @@ Microsoft è il responsabile del trattamento dei dati per una richiesta DSR all'
 <span id="_Toc510704625" class="anchor"><span id="_Toc511403177" class="anchor"></span></span>
 ## <a name="microsoft-fasttrack-services"></a>Servizi di Microsoft FastTrack
 
-[Microsoft FastTrack](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffasttrack.microsoft.com%2Fabout&data=02%7C01%7C%7Cd0521d8739c841df674508d596834585%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636580412901207944&sdata=PO5eh56pm9IYk5Y%2Ff%2F31e%2BRVPmrC2Qi%2FCsw1NphR8gY%3D&reserved=0) fornisce servizi di consulenza IT alle organizzazioni per aiutarle a eseguire l'onboarding e utilizzare i servizi cloud Microsoft come Microsoft 365, Azure e Dynamics 365.
+[Microsoft FastTrack](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffasttrack.microsoft.com%2Fabout&data=02%7C01%7C%7Cd0521d8739c841df674508d596834585%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636580412901207944&sdata=PO5eh56pm9IYk5Y%2Ff%2F31e%2BRVPmrC2Qi%2FCsw1NphR8gY%3D&reserved=0) fornisce servizi di consulenza IT alle organizzazioni per aiutarle a eseguire l'onboarding e usare i servizi cloud Microsoft come Microsoft 365, Azure e Dynamics 365.
 
 Microsoft è il titolare del trattamento dei dati per i contatti cliente che collaborano con il team di FastTrack. Se i contatti clienti desiderano accedere, modificare o rimuovere le informazioni di contatto dai record di Microsoft FastTrack, gli interessati possono inviare la richiesta direttamente alla posta in arrivo per le richieste dell'RGPD di FastTrack per Office 365\<<o365ftgdpr@microsoft.com>\>.
 
 Per i servizi di migrazione FastTrack, Microsoft è responsabile del trattamento dei dati. In conformità con l'informativa sulla divulgazione della privacy aggiuntiva Fast Track, tutti i dati in migrazione sono considerati "dati di migrazione". Prestare particolare attenzione qualora fosse necessario eseguire DSR mentre la propria organizzazione è impegnata in un progetto di migrazione FastTrack.
   
-Se è necessario trattare qualsiasi accesso, rettificare o esportare richieste DSR mentre i dati di un utente vengono trattati tramite i sistemi di migrazione FastTrack, sarà responsabilità del cliente soddisfare tali DSR tramite i sistemi di origine esistenti in cui sono memorizzati i dati dell'utente. Una volta completata la migrazione dell'utente e la migrazione dei dati nel servizio cloud Microsoft di destinazione, saranno quindi applicate le indicazioni fornite da Microsoft su come i clienti possono utilizzare i prodotti, i servizi e gli strumenti amministrativi di Microsoft per trovare e agire sui dati personali per rispondere alle richieste degli interessati. Per visualizzare questa guida, vedere [Richieste dell'interessato per il GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests). 
+Se è necessario trattare qualsiasi accesso, rettificare o esportare richieste degli interessati mentre i dati di un utente vengono trattati tramite i sistemi di migrazione FastTrack, sarà responsabilità del cliente soddisfare tali richieste degli interessati tramite i sistemi di origine esistenti in cui sono archiviati i dati dell'utente. Una volta completata la migrazione dell'utente e la migrazione dei dati nel servizio cloud Microsoft di destinazione, saranno quindi applicate le indicazioni fornite da Microsoft su come i clienti possono usare i prodotti, i servizi e gli strumenti amministrativi di Microsoft per trovare e agire sui dati personali per rispondere alle richieste degli interessati. Per visualizzare questa guida, vedere [Richieste dell'interessato per il GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests). 
 
 Se è necessario eliminare un account utente di Office 365 in risposta a una richiesta di eliminazione DSR mentre l'organizzazione è impegnata in un progetto di migrazione FastTrack in corso, è necessario tenere presente che i sistemi di migrazione possono conservare una copia dei dati di migrazione dell'utente per un periodo di tempo successivo al completamento della migrazione dell'utente e l'eliminazione dell'account utente di Office 365 non eliminerà automaticamente tali dati di migrazione degli utenti memorizzati nei sistemi di migrazione FastTrack. Se si desidera che il team Microsoft FastTrack elimini i dati di migrazione degli utenti, è possibile [inviare una richiesta](https://go.microsoft.com/fwlink/?linkid=874544). Nel corso della normale attività, Microsoft FastTrack cancellerà tutte le copie di dati una volta completata la migrazione dell'organizzazione.
 

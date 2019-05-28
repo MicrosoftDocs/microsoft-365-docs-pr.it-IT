@@ -2,21 +2,21 @@
 title: Azure e notifica di violazione secondo l'RGPD
 description: Informazioni su come Azure protegge da una violazione dei dati personali e su come Microsoft gestisce un'eventuale violazione e lo comunica agli utenti interessati.
 keywords: Azure, Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 287175d6f78efa1052e446b230f39c33fc4d5fc6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5e8c04bcd20f56580e939bc4a2685eb232d5e589
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286431"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431497"
 ---
 # <a name="azure-and-breach-notification-under-the-gdpr"></a>Azure e notifica di violazione secondo l'RGPD
 
@@ -131,13 +131,13 @@ Il team di Security Response collabora con Microsoft Azure Security Engineers e 
 
 -   **Violazione della privacy:** un sottotipo di incidente di sicurezza che coinvolge dati personali. Le procedure di gestione non sono diverse da un incidente di sicurezza.
 
-Affinché un incidente di sicurezza segnalabile dal cliente possa essere dichiarato, Microsoft deve stabilire che l'accesso non autorizzato ai dati del cliente è avvenuto o molto probabilmente si è verificato e/o che esiste un impegno legale o contrattuale perché si verifichi la notifica. È auspicabile, ma non è necessario, conoscere lo specifico impatto sul cliente, l'accesso alle risorse e i passaggi di ripristino. Un incidente di sicurezza è generalmente dichiarato incidente di sicurezza segnalabile dal cliente dopo la conclusione della fase di diagnosi; tuttavia, la dichiarazione può avvenire in qualsiasi momento in cui tutte le informazioni pertinenti siano disponibili. Il responsabile dell'incidente deve stabilire oltre ogni ragionevole dubbio che si è verificato un evento da segnalare per iniziare l'esecuzione del Processo di notifica dell'incidente del cliente.
+Affinché un incidente di sicurezza segnalabile dal cliente possa essere dichiarato, Microsoft deve stabilire che l'accesso non autorizzato ai dati del cliente è avvenuto o molto probabilmente si è verificato e/o che esiste un impegno legale o contrattuale perché si verifichi la notifica. È auspicabile, ma non è necessario, conoscere lo specifico impatto sul cliente, l'accesso alle risorse e i passaggi di ripristino. Un incidente di sicurezza è generalmente dichiarato incidente di sicurezza segnalabile dal cliente dopo la conclusione della fase di diagnosi; tuttavia, la dichiarazione può accadere in qualsiasi momento in cui tutte le informazioni pertinenti siano disponibili. Il responsabile dell'incidente deve stabilire prove raccolte oltre ogni ragionevole dubbio che si è verificato un evento da segnalare per iniziare l'esecuzione del Processo di notifica dell'incidente del cliente.
 
 Durante l'indagine, il team di intervento per la sicurezza lavora a stretto contatto con i consulenti legali globali per contribuire a garantire che le analisi forensi siano eseguite in conformità con gli obblighi legali e gli impegni nei confronti dei clienti. Esistono anche limitazioni significative sulla visualizzazione e gestione dei dati del sistema e del cliente in vari ambienti operativi. I dati sensibili o riservati, così come i dati del cliente, non vengono trasferiti fuori dall'ambiente di produzione senza un'approvazione scritta esplicita da parte del responsabile dell'incidente registrato nel ticket dell'incidente corrispondente.
 
 Microsoft verifica che il rischio per il cliente e per l'azienda sia contenuto e che vengano implementate misure correttive. Se necessario, vengono adottate misure di attenuazione dell'emergenza per risolvere i rischi di sicurezza immediati associati all'evento.
 
-Microsoft completa inoltre una relazione finale interna per le violazioni dei dati. Come parte di questo esercizio, vengono valutate l'adeguatezza dell'intervento, le procedure operative e tutti gli aggiornamenti che possono essere necessari alla SOP di intervento a un incidente di sicurezza o che gli interventi correlati siano identificati e implementati. Le relazioni finali interne per le violazioni dei dati sono registrazioni altamente riservate non disponibili per i clienti. Le relazioni finali possono, tuttavia, essere riassunte e incluse in altre notifiche di eventi al cliente. Questi report vengono forniti ai revisori esterni per essere esaminati come parte del ciclo di controllo di routine di Azure.
+Microsoft completa anche una relazione finale interna per violazioni dei dati. Come parte di questo esercizio, sono state valutate la sufficienza delle procedure di risposta e di funzionamento, e gli eventuali aggiornamenti che potrebbero essere necessari al SOP o ai processi correlati sono identificati e implementati. La relazione finale interna per violazioni dei dati è un registro altamente riservato che non è disponibile per i clienti. Le relazioni finali, tuttavia, possono essere riepilogate e incluse nelle altre notifiche di eventi relative al cliente. Questi report vengono forniti ai revisori esterni per la revisione come parte del ciclo di controllo di routine di Azure.
 
 #### <a name="customer-notification"></a>Notifica al cliente
 ---------------------
@@ -146,13 +146,13 @@ Microsoft Azure notifica le violazioni dei dati ai clienti e agli organismi di c
 
 Dopo la dichiarazione di un incidente di sicurezza segnalabile dal cliente, il processo di notifica ha luogo il più rapidamente possibile, pur considerando i rischi per la sicurezza legati allo spostamento rapido. Generalmente, il processo di progettazione delle notifiche avviene mentre è in corso l'indagine sull'incidente. Le notifiche al cliente sono consegnate in non più di 72 ore dal momento in cui viene dichiarata una violazione, *salvo* nelle seguenti circostanze:
 
--   Microsoft ritiene che l'atto di esecuzione di una notifica aumenti il rischio per gli altri clienti. Ad esempio, l'atto di notifica può allertare un avversario causando l'impossibilità di porvi rimedio.
+-   Microsoft ritiene che l'azione di eseguire una notifica possa aumentare il rischio per altri clienti. Ad esempio, l'operazione di notifica può comportare il suggerimento di un avversario causando l’impossibilità di rimediare.
 
 -   Altre circostanze insolite o estreme esaminate dall'ufficio legale di Microsoft (CELA) e dall'Executive Incident Manager.
 
 Microsoft Azure fornisce ai clienti informazioni dettagliate che consentono loro di svolgere indagini interne e di assisterli nell'adempimento degli impegni assunti con l'utente finale, senza ritardare ingiustificatamente il processo di notifica.
 
-La notifica di una violazione dei dati personali verrà consegnata al cliente con qualsiasi mezzo selezionato da Microsoft, anche via e-mail. La notifica di una violazione dei dati verrà inviata all'elenco dei contatti di sicurezza fornito nel Centro sicurezza di Azure, che può essere configurato seguendo le [linee guida per l'implementazione](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Se le informazioni di contatto non vengono fornite nel Centro sicurezza di Azure, la notifica verrà inviata a uno o più amministratori in una sottoscrizione di Azure. Per garantire che la notifica possa essere consegnata con successo, è responsabilità del cliente assicurarsi che le informazioni di contatto amministrative su ciascun abbonamento e portale di servizi online siano corrette.
+La notifica di una violazione dei dati personali verrà recapitata al cliente con qualsiasi mezzo Microsoft selezioni, anche tramite posta elettronica. La notifica di una violazione dei dati verrà recapitata all'elenco dei contatti di sicurezza disponibili in Azure Security Center, che può essere configurata seguendo le indicazioni di implementazione](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details). Se le informazioni sui contatti non sono disponibili in Centro Sicurezza di Azure, la notifica verrà inviata a uno o più amministratori di un abbonamento ad Azure. Per fare in modo che la notifica possa essere recapitata correttamente, spetta al cliente assicurare che le informazioni sui contatti amministrativi relative a ogni abbonamento applicabile e al portale dei servizi online siano corrette.
 
 Il team di Microsoft Azure o di Azure per enti pubblici può anche decidere di notificare ulteriori informazioni al personale Microsoft, ad esempio il servizio clienti (CSS) e l'Account Manager del cliente (AM) o il Technical Account Manager (TAM). Tali figure hanno spesso strette relazioni con il cliente e possono facilitare una correzione più rapida<span id="_Appendix_A" class="anchor"></span>
 
@@ -161,9 +161,9 @@ Il team di Microsoft Azure o di Azure per enti pubblici può anche decidere di n
 
 Microsoft Intune è un componente chiave dell'offerta di servizi cloud di Microsoft Enterprise Mobility and Security Suite. Per supportare la strategia di governance dei dati, tutti i servizi cloud Microsoft sono sviluppati con le metodologie privacy by design e privacy by default di Microsoft.
 
-In quanto tale, l'offerta di servizi cloud di Microsoft Intune segue le stesse misure tecniche e organizzative adottate dai team servizio assistenza di Microsoft Azure per garantire la sicurezza contro i processi di violazione dei dati. Pertanto, qualsiasi informazione documentata nel documento di notifica "Violazione dei dati Microsoft Azure" qui è analoga al servizio Microsoft Intune. Ad esempio, Microsoft Intune ha lo stesso processo di intervento in caso di incidenti sicurezza e ciclo di vita (Fase 1: rilevamento attraverso la fase 5<strong>:</strong> chiusura e relazione finale) e anche lo stesso processo di notifica degli incidenti al cliente. Inoltre, Microsoft Intune adempie ai propri obblighi in materia di notifica di violazioni per i clienti Microsoft O365 che utilizzano Intune operando direttamente con il team Microsoft O365.
+Quindi, l'offerta di servizi cloud di Microsoft Intune segue le stesse misure tecniche e organizzative di uno o più team di servizi Microsoft Azure per garantire la protezione dai processi di violazione dei dati. Di conseguenza, tutte le informazioni documentate nel documento di notifica "Violazioni di dati in Microsoft Azure" sono analoghe al servizio di Microsoft Intune. Ad esempio, Microsoft Intune ha lo stesso Processo di risposta a incidenti di sicurezza e Ciclo di vita (Fase 1: Rileva attraverso la Fase 5<strong>:</strong> Chiusura e relazione finale) e anche lo stesso Processo di notifica degli incidenti di sicurezza per i clienti. Inoltre, Microsoft Intune rispetta anche gli obblighi di notifica della violazione per tutti i clienti di Microsoft Office 365 che usano Intune lavorando direttamente con il team di Microsoft Office 365.
 
-Per ulteriori informazioni su come Microsoft rileva e risponde a un caso di violazione dei dati personali, vedere [Notifica di violazione dei dati secondo l'RGPD](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) nel Service Trust Portal.
+Per ulteriori informazioni su come Microsoft rileva e interviene a un caso di violazione dei dati personali, vedere [Notifica di violazione dei dati secondo il GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) nel Service Trust Portal.
 
 
 #### <a name="learn-more"></a>Altre informazioni

@@ -2,39 +2,39 @@
 title: Richieste del soggetto dei dati per l'RGPD in Dynamics 365
 description: Guida su come usare i prodotti, i servizi e gli strumenti di amministrazione Microsoft per aiutare i clienti titolari del trattamento dei dati a individuare e gestire i dati personali per rispondere alle richieste degli interessati.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/30/2019
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 4e1597e658b0ac6de0c4805b77660e6c47424aa2
-ms.sourcegitcommit: 1034f54472de62897f2e8f12459db8043ac8443b
+ms.openlocfilehash: 3c394df956801beed63b5e31c4a1579bf5324eba
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497738"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431757"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Richieste del soggetto dei dati per l'RGPD in Dynamics 365
 
 Il Regolamento generale sulla protezione dei dati (RGPD) dell'Unione europea garantisce alle persone (denominate come *soggetti dei dati* nel regolamento) il diritto di gestire i dati personali raccolti da un datore di lavoro o da un'altra organizzazione o agenzia (definiti come *titolari del trattamento dei dati* o semplicemente *titolari*). I dati personali sono descritti nell'RGPD come dati che si riferiscono a una persona fisica identificata o identificabile. L'RGPD garantisce ai soggetti dei dati diritti specifici sui propri dati personali; tali diritti includono la possibilità di ottenere delle copie dei dati personali, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico affinché possano essere trasferiti a un altro titolare. Una richiesta formale di un soggetto dei dati rivolta a un titolare in merito a un'operazione da effettuare sui propri dati personali è denominata *Richiesta DSR* (Data Subject Rights, Diritti del soggetto dei dati) o DSR.<span id="_Toc510437912" class="anchor"><span id="_Toc508792504" class="anchor"></span></span>
 
-La guida descrive come utilizzare i prodotti, i servizi e gli strumenti di amministrazione Microsoft per aiutare i nostri clienti titolari del trattamento dei dati a individuare e gestire i dati personali per rispondere alle richieste DSR. In particolare, ciò include come identificare, accedere e usare i dati personali che risiedono nel cloud Microsoft. Di seguito viene riportata una rapida panoramica dei processi descritti in questa guida:
+La guida descrive come utilizzare i prodotti, i servizi e gli strumenti di amministrazione Microsoft per aiutare i nostri clienti titolari del trattamento dei dati a individuare e gestire i dati personali per rispondere alle richieste degli interessati. In particolare, ciò include come identificare, accedere e usare i dati personali che risiedono nel cloud Microsoft. Ecco una rapida panoramica dei processi descritti in questa guida:
 
-1. ***Scoprire***: utilizzare gli strumenti di ricerca e individuazione per trovare più facilmente i dati dei clienti che potrebbero essere oggetto di una richiesta DSR. Dopo aver raccolto dei documenti potenzialmente reattivi, è possibile eseguire una o più delle azioni DSR descritte nella seguente procedura per rispondere alla richiesta. In alternativa, si potrebbe determinare che la richiesta non soddisfa le linee guida dell'organizzazione relative alla risposta alle richieste DSR.
+1. ***Individuazione: usare gli strumenti di ricerca e individuazione per trovare più facilmente i dati dei clienti che potrebbero essere oggetto di una richiesta dell'interessato. Dopo aver raccolto dei documenti potenzialmente reattivi, è possibile eseguire una o più delle azioni DSR descritte nella seguente procedura per rispondere alla richiesta. In alternativa, si può determinare che la richiesta non soddisfa le linee guida dell'organizzazione relative alla risposta alle richieste degli interessati.
 
-2. ***Accedere***: recuperare i dati personali che risiedono nel cloud Microsoft e, se richiesto, fare una copia di tali dati che può essere disponibile per l'interessato.
+2. ***Accesso: recuperare i dati personali che risiedono nel cloud Microsoft e, se richiesto, crearne una copia che può essere disponibile per l'interessato.
 
-3. ***Rettifica***: apportare modifiche o implementare le azioni richieste per i dati personali, ove applicabile.
+3. ***Rettifica: apportare modifiche o implementare le azioni richieste sui dati personali, ove applicabile.
 
-4.  ***Limitare***: limitare il trattamento dei dati personali, tramite la rimozione delle licenze per vari servizi online o disattivando i servizi desiderati ove possibile. È anche possibile rimuovere i dati dal cloud Microsoft e mantenerli in locale o in un'altra posizione.
+4.  ***Limitazione: limitare il trattamento dei dati personali, tramite la rimozione delle licenze per vari servizi online o disattivando i servizi desiderati ove possibile. È anche possibile rimuovere i dati dal cloud Microsoft e mantenerli in locale o in un'altra posizione.
 
-5. ***Eliminare***: rimuovere in modo definitivo i dati personali che risiedevano nel cloud Microsoft.
+5. ***Eliminazione: rimuovere in modo definitivo i dati personali che risiedono nel cloud Microsoft.
 
-6. ***Esportare***: fornire una copia elettronica (in un formato leggibile) dei dati personali al soggetto dei dati.
+6. ***Esportazione: fornire all'interessato una copia elettronica dei dati personali in un formato leggibile in modo automatizzato.
 
 Ogni sezione di questa guida illustra le procedure tecniche che un'organizzazione titolare del trattamento dei dati può adottare per rispondere a una richiesta DSR per i dati personali nel cloud Microsoft
 
@@ -42,15 +42,15 @@ Ogni sezione di questa guida illustra le procedure tecniche che un'organizzazion
 
 Di seguito vengono fornite le definizioni dei termini importanti nella presente guida:
 
-- <em>Titolare</em>: la persona fisica o giuridica, l'autorità pubblica, l'agenzia o altro ente che, autonomamente o unitamente ad altri soggetti, determina gli obiettivi e i mezzi del trattamento dei dati personali; laddove gli obiettivi e i mezzi di tale trattamento sono determinati da una normativa europea o di uno specifico Stato membro dell'UE, il titolare del trattamento dei dati o i criteri specifici per la sua designazione potrebbero essere forniti da tale normativa europea o di uno specifico Stato membro dell'UE.
+- <em>Titolare: la persona fisica o giuridica, l'autorità pubblica, l'agenzia o altro ente che, autonomamente o unitamente ad altri soggetti, determina gli obiettivi e i mezzi del trattamento dei dati personali; laddove gli obiettivi e i mezzi di tale trattamento sono determinati da una normativa europea o di uno specifico Stato membro dell'UE, il titolare del trattamento dei dati o i criteri specifici per la sua designazione potrebbero essere forniti da tale normativa europea o di uno specifico Stato membro dell'UE.
 
-- *Dati personali* e <em>interessato</em>: qualsiasi informazione relativa a una persona fisica identificata o identificabile ("soggetto dei dati"); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente, tramite dati specifici come un nome, un numero di identificazione, dati sulla posizione, un identificatore online o uno o più fattori specifici per l'identità fisica, psicologica, genetica, mentale, economica, culturale o sociale della persona fisica.
+- *Dati personali* e <em>interessato: qualsiasi informazione relativa a una persona fisica identificata o identificabile ('interessato'); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente, tramite dati specifici come un nome, un numero di identificazione, dati sulla posizione, un identificatore online o uno o più fattori specifici per l'identità fisica, psicologica, genetica, mentale, economica, culturale o sociale della persona fisica.
 
-- <em>Responsabile</em>: una persona fisica o giuridica, un'autorità pubblica o altro ente che si occupa del trattamento dei dati personali per conto del titolare.
+- <em>Responsabile: una persona fisica o giuridica, un'autorità pubblica o altro ente che si occupa del trattamento dei dati personali per conto del titolare.
 
 - *Dati del cliente*: tutti i dati, compresi file di testo, audio, video o immagini e software, forniti a Microsoft dal cliente o per suo conto attraverso i servizi aziendali, come definito nelle Condizioni dei servizi online Microsoft.
 
-- *Log*-*generati dal sistema*: log e dati relativi generati da Microsoft che consentono a Microsoft di fornire servizi aziendali agli utenti. I log generati dal sistema contengono dati principalmente presentati con l'uso di pseudonimi come identificatori univoci (in genere, un numero generato dal sistema con cui non è possibile identificare direttamente un soggetto, ma che viene utilizzato per fornire i servizi aziendali agli utenti). I log generati dal sistema possono anche contenere informazioni personali sugli utenti finali, come un nome utente.  
+- *Log generati dal *sistema*: log e dati relativi generati da Microsoft che consentono a Microsoft di fornire servizi aziendali agli utenti. I log generati dal sistema contengono dati principalmente presentati con l'uso di pseudonimi come identificatori univoci (in genere, un numero generato dal sistema con cui non è possibile identificare direttamente un soggetto, ma che viene usato per fornire i servizi aziendali agli utenti). I log generati dal sistema possono anche contenere informazioni personali sugli utenti finali, come un nome utente.  
 
 ### <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>Come questa guida consente di adempiere alle proprie responsabilità di titolare del trattamento dei dati
 
@@ -246,7 +246,7 @@ Il primo passaggio nell'operazione di risposta a una richiesta del soggetto dei 
 
 - I nomi utente in Power BI se l'organizzazione usa il [pacchetto di contenuto Social Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) affinché Power BI analizzi le prestazioni del team su supporti di social networking.
 
-Questa prima fase (individuazione e analisi dei dati personali in questione) consente di determinare se la richiesta del soggetto dei dati soddisfa i requisiti dell'organizzazione per accettarla o rifiutarla. Ad esempio, dopo aver individuato e analizzato i dati personali, si potrebbe stabilire che la richiesta non soddisfa i requisiti dell'organizzazione perché potrebbe ledere i diritti e le libertà altrui.
+Questa prima fase (individuazione e analisi dei dati personali in questione) consente di determinare se la richiesta dell'interessato soddisfa i requisiti dell'organizzazione per accettarla o rifiutarla. Ad esempio, dopo aver individuato e analizzato i dati personali, si potrebbe stabilire che la richiesta non soddisfa i requisiti dell'organizzazione perché potrebbe ledere i diritti e le libertà altrui.
 
 #### <a name="social-media-users-authors"></a>Utenti di supporti di social networking (autori)
 
@@ -381,7 +381,7 @@ Microsoft offre la possibilità di accedere, esportare ed eliminare log generati
 
 Gli amministratori possono accedere ai log generati dal sistema associati all'uso da parte di un utente specifico dei servizi e delle applicazioni di Dynamics 365. Per accedere ed esportare i log generati dal sistema:
 
-1.  Andare nel [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) ed effettuare l'accesso con le credenziali di amministratore globale di Dynamics 365.
+1.  Passare a [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) ed eseguire l'accesso con le credenziali di amministratore globale di Dynamics 365.
 
 2.  Nell'elenco a discesa **Privacy** nella parte superiore della pagina, fare clic su **Richiesta DSR**.
 
@@ -393,7 +393,7 @@ Gli amministratori possono accedere ai log generati dal sistema associati all'us
 
 Dopo aver creato una nuova richiesta, questa verrà inserita nella pagina **Esportazione log di dati**, in cui è possibile tenere traccia del suo stato. Una volta completata una richiesta, è possibile fare clic su un collegamento per accedere ai log generati dal sistema che verranno esportati in un percorso di archiviazione di Azure dell'organizzazione entro 30 giorni dalla creazione della richiesta. I dati verranno salvati in formati di file leggibili di uso comune, ad esempio JSON o XML. Se non si dispone di un account Azure e di un percorso di archiviazione di Azure, sarà necessario creare l'account e/o il percorso di archiviazione per l'organizzazione affinché lo strumento Esportazione log di dati possa esportare i log generati dal sistema.
 
-Azure supporta questa caratteristica, consentendo all'organizzazione di esportare i dati in formato JSON nativo nel contenitore di archiviazione di Azure specificato[. Articolo : Introduzione all'Archiviazione di Microsoft Azure - Archiviazione Blob](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage).
+Azure supporta questa caratteristica, consentendo all'organizzazione di esportare i dati in formato JSON nativo nel contenitore di archiviazione di Azure specificato[. Vedere l'articolo di introduzione su Archiviazione BLOB di Archiviazione di Microsoft Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage).
 
 **Importante**: è necessario essere un amministratore tenant per esportare i dati di un utente dal tenant.
 
@@ -435,7 +435,8 @@ La tabella seguente riepiloga l'accesso e l'esportazione dei log generati dal si
 </tbody>
 </table>
 
-[Nota] Alcune funzionalità non consentono l'esportazione o l'eliminazione dei log generati dal sistema contenenti informazioni riservate per mantenere l'integrità di tali informazioni per motivi di sicurezza e controllo.
+> [!Note]
+> Alcune funzionalità non consentono l'esportazione o l'eliminazione dei log generati dal sistema contenenti informazioni riservate per mantenere l'integrità di tali informazioni per motivi di sicurezza e controllo.
 
 ### <a name="deleting-system-generated-logs"></a>Eliminazione di log generati dal sistema
 Per eliminare i log generati dal sistema recuperati attraverso una richiesta di accesso, è necessario rimuovere l'utente dal servizio ed eliminare definitivamente il suo account Azure Active Directory. Per istruzioni su come eliminare definitivamente un utente, vedere la sezione [Eliminazione di un utente](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user). È importante tenere presente che l'operazione di eliminazione definitiva di un account utente è irreversibile una volta avviata.
@@ -444,4 +445,4 @@ Eliminazione definitiva di un account utente con rimozione dei dati dell'utente 
 
 #### <a name="learn-more"></a>Ulteriori informazioni
 
-[Centro protezione Microsoft](https://www.microsoft.com/it-IT/TrustCenter/Privacy/gdpr/default.aspx)
+[Centro protezione Microsoft](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx)

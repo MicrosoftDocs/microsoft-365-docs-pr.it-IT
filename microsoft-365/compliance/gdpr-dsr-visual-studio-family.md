@@ -13,12 +13,12 @@ manager: pchapman
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b07cefa4a850d5de7c858f180c8f7688fd0a6d7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286924"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431547"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Richieste dell'interessato per il GDPR nella famiglia Visual Studio
 
@@ -72,8 +72,8 @@ Gli utenti possono controllare le impostazioni della privacy per questi prodotti
 
 I titolari possono gestire i dati dei clienti e i log generati dal sistema raccolti dagli interessati con uno di questi metodi, a seconda di come sia registrato il prodotto della famiglia di Visual Studio o l'estensione Microsoft. In alcuni casi, è necessario utilizzare entrambi i metodi. Entrambi i metodi consentono ai titolari di scaricare una copia della cronologia attività gestita da tale metodo. La chiusura di un account AAD o MSA elimina i dati dei clienti di Visual Studio associati e rende anonimi i dati personali identificabili nei log generati dal sistema relativi a tali prodotti. I log generati dal sistema resi anonimi vengono conservati per un periodo massimo di 18 mesi.
 
-- Gli utenti che hanno registrato un prodotto della famiglia di Visual Studio con un account supportato da un tenant di Azure &mdash;ad esempio un account AAD o un account del servizio gestito associato a una sottoscrizione di Azure&mdash; possono seguire le istruzioni contenute in [Richieste degli interessati per Azure nell'ambito del GDPR](gdpr-dsr-azure.md).
-- Gli utenti che hanno registrato un prodotto della famiglia di Visual Studio senza un account supportato da un tenant di Azure &mdash;ad esempio molti account che usano un Account Microsoft (MSA)&mdash; possono utilizzare [il Microsoft Privacy Response Center basato sul Web](https://aka.ms/userprivacysite), disponibile tramite il proprio account Microsoft, per visualizzare, controllare ed eliminare i dati dell'attività associati all'account Microsoft presenti in più servizi Microsoft. In questo scenario, l'utente ha il ruolo di titolare per i propri dati personali.
+- Gli utenti che hanno registrato un prodotto della famiglia di Visual Studio con un account supportato da un tenant di Azure, ad esempio un account AAD o un account del servizio gestito associato a una sottoscrizione di Azure, possono seguire le istruzioni contenute in [Richieste degli interessati per Azure nell'ambito del GDPR](gdpr-dsr-azure.md).
+- Gli utenti che hanno registrato un prodotto della famiglia di Visual Studio senza un account supportato da un tenant di Azure, ad esempio molti account che usano un Account Microsoft (MSA), possono utilizzare [il Microsoft Privacy Response Center basato sul Web](https://aka.ms/userprivacysite), disponibile tramite il proprio account Microsoft, per visualizzare, controllare ed eliminare i dati dell'attività associati all'account Microsoft presenti in più servizi Microsoft. In questo scenario, l'utente ha il ruolo di titolare per i propri dati personali.
 
 > [!NOTE]
 > Quando il titolare di un account MSA elimina il proprio account, i dati personali relativi a questi prodotti vengono eliminati, che l'account risulti supportato da un tenant di Azure o meno; inoltre, i log generati dal sistema vengono resi anonimi.
@@ -104,7 +104,7 @@ Per visualizzare i dati relativi ai feedback, procedere come segue:
 1. Accedere alla [Community degli sviluppatori](https://developercommunity.visualstudio.com). Nell'angolo in alto a destra fare clic sul profilo e selezionare **Profilo e preferenze**.
 2. Fare clic su una delle schede **Profilo**, **Notifiche**, **Attività** e **Allegati** per visualizzare i dati inviati ai sistemi di feedback.
    1. Per **Profilo** si intende il profilo della [Community degli sviluppatori](https://developercommunity.visualstudio.com), che include nome utente, indirizzo di posta elettronica, informazioni e così via.
-   2. **Notifiche** consente di controllare le notifiche di posta elettronica ricevute.
+   2. **Notifiche consente di controllare le notifiche di posta elettronica ricevute.
    3. Su **Attività** è possibile controllare gli elementi relativi ai feedback lasciati (pubblicazioni, commenti e così via) e le attività effettuate.
    4. **Allegati** consiste in un elenco di cronologia degli allegati in formato `FileName was attached to the problem "ProblemName" Tue, Apr 10, 18 2:27 PM`.
 

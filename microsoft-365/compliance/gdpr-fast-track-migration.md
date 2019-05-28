@@ -1,6 +1,6 @@
 ---
 title: GDPR
-description: Suggerimenti tecnici Microsoft - Set di strumenti di migrazione di FastTrack per inviare le richieste di eliminazione
+description: Suggerimenti tecnici Microsoft — SET DI STRUMENTI DI MIGRAZIONE DI FASTTRACK PER INVIARE LE RICHIESTE DI ELIMINAZIONE
 keywords: Migrazione di FastTrack, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
 author: MohitKumar
 localization_priority: Priority
@@ -11,23 +11,23 @@ ms.author: mohitku
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: ae4c088ce16b2b415ffa79a6fadd3f1c2a0426c7
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0ef1a23d69ae91b9d94c4587f1912c4171fe84d3
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286812"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431417"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>Set di strumenti di migrazione di FastTrack per inviare una richiesta di eliminazione
 
 ## <a name="toolset-purpose"></a>Scopo del set di strumenti
 
-Se si è un cliente attualmente coinvolto in una migrazione di FastTrack, eliminando l'account utente di Office 365 non sarà eliminata la copia dei dati utilizzata dal team di Microsoft FastTrack, che viene conservata con il solo scopo di completare la migrazione. Se durante la migrazione si desidera che il team di Microsoft FastTrack elimini anche la copia dei dati, è possibile inviare una richiesta tramite questo set di strumenti. In condizioni normali di attività, Microsoft FastTrack eliminerà tutte le copie dei dati una volta completata la migrazione. 
+Se si è un cliente attualmente coinvolto in una migrazione di FastTrack, eliminando l'account utente di Office 365 non sarà eliminata la copia dei dati utilizzata dal team di Microsoft FastTrack, che viene conservata con il solo scopo di completare la migrazione. Se durante la migrazione si desidera che il team di Microsoft FastTrack elimini anche la copia dei dati, è possibile inviare una richiesta tramite questo set di strumenti. In condizioni normali di attività, Microsoft FastTrack eliminerà tutte le copie dei dati una volta completata la migrazione.
 
 ### <a name="supported-platforms"></a>Piattaforme supportate
 Microsoft supporta la versione iniziale di questo set di strumenti nella piattaforma Windows e nella console di PowerShell. Il set di strumenti supporta le seguenti piattaforme:
  
-***Tabella 1 - Piattaforme supportate da questo set di strumenti***
+***Tabella 1 — Piattaforme supportate da questo set di strumenti***
  
 <!--start table here HEADER -->
  
@@ -44,11 +44,11 @@ Microsoft supporta la versione iniziale di questo set di strumenti nella piattaf
 
 Il set di strumenti è disponibile in PowerShell Gallery nell'applicazione console di PowerShell. Per individuare e caricare questo modulo cmdlet, aprire PowerShell in modalità di amministratore in modo da avere le autorizzazioni adeguate per installare il modulo. Se non si è mai utilizzato prima PowerShell, passare alla barra delle applicazioni di Windows e digitare nella casella di ricerca "PowerShell". Selezionare l'applicazione console con pulsante destro del mouse e scegliere l'opzione **Esegui come amministratore**, quindi fare clic su **Sì** per eseguire Windows PowerShell.
 
-![PowerShell - Esegui come amministratore](media/fasttrack-powershell_image.png)
+![PowerShell — Esegui come amministratore](media/fasttrack-powershell_image.png)
 
-![PowerShell - Consenti all'app di apportare modifiche](media/fasttrack-run-powershell_image.png)
+![PowerShell — Consenti all'app di apportare modifiche](media/fasttrack-run-powershell_image.png)
 
-Una volta aperta la console, è necessario impostare le autorizzazioni per l'esecuzione dello script. Digitare il comando seguente per consentire l'esecuzione di script: "Set-ExecutionPolicy – ExecutionPolicy: Bypass – Scope:Process"
+Una volta aperta la console, è necessario impostare le autorizzazioni per l'esecuzione dello script. Digitare il comando seguente per consentire l'esecuzione di script: "Set-ExecutionPolicy — ExecutionPolicy: Bypass — Scope:Process"
 
 Verrà richiesto di confermare l'azione, in quanto l'amministratore può modificare l'ambito a propria discrezione.
 
@@ -82,7 +82,7 @@ Se è necessario connettersi a un ambiente cloud diverso da quello commerciale, 
 
 Per inviare una richiesta DSR, eseguire il comando seguente: Submit-FastTrackGdprDsrRequest -DsrRequestUserEmail: SubjectUserEmail@mycompany.com
 
-Al termine dell'operazione, il cmdlet restituirà un oggetto ID transazione (che è consigliabile conservare).
+Al termine dell'operazione, il cmdlet restituirà un oggetto ID transazione, che è consigliabile conservare.
 
 
 #### <a name="checking-the-status-of-a-request-transaction"></a>Verificare lo stato di una richiesta transazione
