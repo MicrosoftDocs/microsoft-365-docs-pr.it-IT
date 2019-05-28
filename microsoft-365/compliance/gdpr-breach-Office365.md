@@ -2,21 +2,21 @@
 title: Notifica di violazione di Office 365 secondo il GDPR
 description: Informazioni su come Microsoft protegge da una violazione dei dati personali e su come gestisce un'eventuale violazione e lo comunica agli utenti interessati.
 keywords: Office 365, Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 6b91b489d8d69faffa0852c3e352a6b2e9e9d496
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 69c626d874e0afd59e1447c494ec1b84c7a4cb7a
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286366"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431867"
 ---
 # <a name="office-365-breach-notification-under-the-gdpr"></a>Notifica di violazione di Office 365 secondo il GDPR
 

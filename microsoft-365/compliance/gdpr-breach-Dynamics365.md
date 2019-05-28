@@ -2,31 +2,29 @@
 title: Dynamics 365 e notifica di violazione secondo l'RGPD
 description: Informazioni su come Dynamics 365 protegge da una violazione dei dati personali e su come Microsoft gestisce un'eventuale violazione e lo comunica agli utenti interessati.
 keywords: Dynamics 365, Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, RGPD
-author: herviicban
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 ms.author: heicba
+author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 3ee90c2fbe2684cebbd19376f44fc97d743515db
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 957fbe5713c248ebcac1a986248455c7d98b4935
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286386"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431877"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 e notifica di violazione secondo l'RGPD
 
-Per Dynamics 365 gli obblighi previsti dal Regolamento generale sulla protezione dei dati (GDPR) sono una priorità.
-
-Uno degli obiettivi di Microsoft è offrire servizi estremamente sicuri ai clienti di Dynamics 365. Le informazioni contenute in questa sezione forniscono un riepilogo su come Microsoft Dynamics 365 protegge da eventi imprevisti per la sicurezza/violazione dei dati e sul processo seguito per rispondere a tali situazioni e informare i clienti.
+Dynamics 365 tiene fede ai propri obblighi ai sensi del Regolamento generale sulla protezione dei dati (GDPR) e adotta ampie misure di sicurezza per proteggere dalle violazioni dei dati. Uno degli obiettivi di Microsoft è offrire servizi estremamente sicuri ai clienti di Dynamics 365. Le informazioni contenute in questa sezione forniscono un riepilogo su come Microsoft Dynamics 365 protegge da incidenti di sicurezza/violazione dei dati e sul processo seguito per rispondere a tali situazioni e informare i clienti.
 
 #### <a name="microsoft-dynamics-365-built-in-security-features"></a>Funzionalità di sicurezza integrate in Microsoft Dynamics 365
 
-Microsoft Dynamics 365 si avvale dell’infrastruttura dei servizi del cloud e delle funzionalità di protezione integrate per proteggere i dati attraverso meccanismi e misure di sicurezza. Inoltre, Dynamics 365 fornisce accesso efficiente ai dati e collaborazione con l'integrità dei dati e la privacy nelle aree seguenti: [protezione dell’identità, protezione dei dati, protezione basata sui ruoli e gestione delle minacce](https://www.microsoft.com/trustcenter/security/dynamics365-security).
+Microsoft Dynamics 365 si avvale dell'infrastruttura dei servizi del cloud e delle funzionalità di protezione integrate per proteggere i dati attraverso meccanismi e misure di sicurezza. Inoltre, Dynamics 365 fornisce accesso efficiente ai dati e collaborazione con l'integrità dei dati e la privacy nelle aree seguenti: [protezione dell'identità, protezione dei dati, protezione basata sui ruoli e gestione delle minacce](https://www.microsoft.com/trustcenter/security/dynamics365-security).
 
 #### <a name="incident-response-training"></a>Formazione su come intervenire in caso di incidenti
 
@@ -46,7 +44,7 @@ A tutti i dipendenti che usano Microsoft Dynamics 365 viene offerto un corso di 
 
 #### <a name="how-does-microsoft-dynamics-365-define-security-incident-potential-breaches"></a>Definizione di incidente di sicurezza e violazione dei dati secondo Microsoft Dynamics 365
 
-Un incidente di sicurezza/violazione dei dati si riferisce ad eventi quali, ad esempio, l'accesso illecito ai dati dei clienti archiviati in attrezzature Microsoft o l'accesso non autorizzato a tali attrezzature che è in grado di causare perdita, divulgazione o alterazione dei dati dei clienti. L'obiettivo di Microsoft durante l'intervento in caso di incidenti di sicurezza/violazione dei dati consiste nel proteggere i dati dei clienti e i servizi di Dynamics 365. L’approccio di Microsoft per la gestione di un incidente di sicurezza è conforme al [National Institute of Standards and Technology](https://www.nist.gov/) Special Publication (NIST) (SP) [800-61](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf).
+Un incidente di sicurezza/violazione dei dati si riferisce ad eventi quali, ad esempio, l'accesso illecito ai dati dei clienti archiviati in attrezzature Microsoft o l'accesso non autorizzato a tali attrezzature che è in grado di causare perdita, divulgazione o alterazione dei dati dei clienti. L'obiettivo di Microsoft durante l'intervento in caso di incidenti di sicurezza/violazione dei dati consiste nel proteggere i dati dei clienti e i servizi di Dynamics 365. L'approccio di Microsoft per la gestione di un incidente di sicurezza è conforme al [National Institute of Standards and Technology](https://www.nist.gov/) Special Publication (NIST) (SP) [800-61](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf).
 
 Microsoft non monitora gli incidenti che sono di responsabilità del cliente, né internviene in tali casi. Una compromissione che si verifica esclusivamente presso il cliente non viene considerata un incidente di sicurezza di Dynamics 365 e pertanto il tenant del cliente deve gestire l'intervento in tali casi. L'intervento del cliente può necessitare della collaborazione del supporto tecnico di Microsoft Dynamics 365, secondo quanto previsto dai relativi contratti di servizio.
 
@@ -128,7 +126,7 @@ Durante l'indagine, il team di intervento per la sicurezza lavora a stretto cont
 
 Microsoft verifica che il rischio per il cliente e per l'azienda sia contenuto e che vengano implementate misure correttive. Se necessario, vengono adottate misure di attenuazione dell'emergenza per risolvere i rischi di sicurezza immediati associati all'evento.
 
-Microsoft completa inoltre una relazione finale interna per le violazioni dei dati. Come parte di questo esercizio, vengono valutate l'adeguatezza dell'intervento, le procedure operative e tutti gli aggiornamenti che possono essere necessari secondo i criteri di sicurezza interni di Microsoft o che i processi correlati siano identificati e implementati. Le relazioni finali interne per le violazioni dei dati sono registrazioni altamente riservate non disponibili per i clienti. Le relazioni finali possono, tuttavia, essere riassunte e incluse in altre notifiche di eventi al cliente. Questi report vengono forniti ai revisori esterni per essere esaminati come parte del ciclo di controllo di routine di Dynamics 365.
+Microsoft completa anche una relazione finale interna per violazioni dei dati. Come parte di questo esercizio, sono state valutate la sufficienza delle procedure di risposta e di funzionamento, e gli eventuali aggiornamenti che potrebbero essere necessari ai criteri di sicurezza interni di Microsoft o ai processi correlati sono identificati e implementati. La relazione finale interna per violazioni dei dati è un registro altamente riservato che non è disponibile per i clienti. Le relazioni finali, tuttavia, possono essere riepilogate e incluse nelle altre notifiche di eventi relative al cliente. Questi report vengono forniti ai revisori esterni per la revisione come parte del ciclo di controllo di routine di Dynamics 365.
 
 #### <a name="customer-notification"></a>Notifica al cliente
 

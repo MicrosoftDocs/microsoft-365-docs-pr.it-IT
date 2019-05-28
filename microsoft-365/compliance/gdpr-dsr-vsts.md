@@ -12,12 +12,12 @@ manager: douge
 ms.collection: GDPR
 ms.workload:
 - multiple
-ms.openlocfilehash: b3711e0a68600152750d85e6287be735e204a92d
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 91ab1c1e23b2f4f9aab5c4327c29ac6cea52d080
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285094"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431777"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>Richieste dell'interessato per il GDPR in Azure DevOps Services
 
@@ -33,11 +33,11 @@ Gli articoli riguardanti l'[informativa sulla privacy di Microsoft](https://priv
 
 ## <a name="personal-data-we-collect"></a>Dati personali raccolti da Microsoft
 
-Microsoft raccoglie i dati dagli utenti per eseguire e migliorare Azure DevOps Services. Azure DevOps Services raccoglie due categorie di dati &mdash; i dati dei clienti e i log generati dal sistema. I dati dei clienti includono dati transazionali e interazionali identificabili dall'utente di cui Azure DevOps Services necessita per eseguire il servizio. I log generati dal sistema includono i dati sull'utilizzo del servizio che vengono aggregati per ogni area e funzionalità del prodotto.
+Microsoft raccoglie i dati dagli utenti per eseguire e migliorare Azure DevOps Services. Azure DevOps Services raccoglie due categorie di dati: i dati dei clienti e i log generati dal sistema. I dati dei clienti includono dati transazionali e interazionali identificabili dall'utente di cui Azure DevOps Services necessita per eseguire il servizio. I log generati dal sistema includono i dati sull'utilizzo del servizio che vengono aggregati per ogni area e funzionalità del prodotto.
 
 ## <a name="delete-azure-devops-data"></a>Eliminare i dati di Azure DevOps
 
-Il primo passaggio per eliminare i dati dei clienti Azure DevOps Services associati e per rendere anonimi i dati personali identificabili trovati nei log generati dal sistema è quello di chiudere l'account identificativo di Azure Active Directory (AAD) o l'account Microsoft (MSA). Azure DevOps Services è considerato un sistema di record con rigide regole di integrità, tracciabilità e controllo. Questi obblighi esistenti riguardano gli obblighi di cancellazione e conservazione per il GDPR. La chiusura dell'account identificativo non altera, rimuove o modifica elementi e record associati all'identità individuale nell'organizzazione di Azure DevOps Services. Microsoft assicura che, nel momento in cui viene eliminato un’intera organizzazione di Azure DevOps Services, tutti i dati personali identificabili e i log generati dal sistema rilevati in tale organizzazione vengono rimossi dal sistema (dopo il periodo di eliminazione temporanea di 30 giorni dell'organizzazione di Azure DevOps Services richiesto).
+Il primo passaggio per eliminare i dati dei clienti Azure DevOps Services associati e per rendere anonimi i dati personali identificabili trovati nei log generati dal sistema è quello di chiudere l'account identificativo di Azure Active Directory (AAD) o l'account Microsoft (MSA). Azure DevOps Services è considerato un sistema di record con rigide regole di integrità, tracciabilità e controllo. Questi obblighi esistenti riguardano gli obblighi di cancellazione e conservazione per il GDPR. La chiusura dell'account identificativo non altera, rimuove o modifica elementi e record associati all'identità individuale nell'organizzazione di Azure DevOps Services. Microsoft assicura che, nel momento in cui viene eliminato un'intera organizzazione di Azure DevOps Services, tutti i dati personali identificabili e i log generati dal sistema rilevati in tale organizzazione vengono rimossi dal sistema (dopo il periodo di eliminazione temporanea di 30 giorni dell'organizzazione di Azure DevOps Services richiesto).
 
 ## <a name="export-azure-devops-data"></a>Esportare i dati di Azure DevOps
 
