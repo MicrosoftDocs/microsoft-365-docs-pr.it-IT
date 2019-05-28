@@ -1,23 +1,24 @@
 ---
 title: Richieste dell'interessato per il GDPR in Intune
-description: ''
+description: Guida su come usare i prodotti, i servizi e gli strumenti di amministrazione Microsoft per aiutare i clienti titolari del trattamento dei dati a individuare e gestire i dati personali per rispondere alle richieste degli interessati.
 keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
-author: dougeby
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
 ms.author: dougeby
+author: dougeby
 manager: angrobe
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: fa65d33795108a16759fa87d476bb5a4dc94a281
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 868bdf151f853168e7de69669b67e5686089ce72
+ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285198"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34431447"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr"></a>Richieste dell'interessato per il GDPR in Intune
+
 Il Regolamento generale sulla protezione dei dati (RGPD) dell'Unione europea garantisce alle persone (denominate come *soggetti dei dati* nel regolamento) il diritto di gestire i dati personali raccolti da un datore di lavoro o da un'altra organizzazione o agenzia (definiti come *titolari del trattamento dei dati* o semplicemente *titolari*). I dati personali sono ampiamente descritti nell'RGPD come dati che si riferiscono a una persona fisica identificata o identificabile. L'RGPD garantisce ai soggetti dei dati diritti specifici sui propri dati personali; tali diritti includono la possibilità di ottenere delle copie dei dati personali, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico affinché possano essere trasferiti a un altro titolare. Una richiesta formale di un soggetto dei dati rivolta a un titolare in merito a un'operazione da effettuare sui propri dati personali è denominata *Richiesta DSR* (Data Subject Rights, Diritti del soggetto dei dati) o DSR.
 
 La guida descrive come utilizzare i prodotti, i servizi e gli strumenti di amministrazione Microsoft per aiutare i nostri clienti titolari del trattamento dei dati a individuare e gestire i dati personali per rispondere alle richieste DSR. In particolare, ciò include come identificare, accedere e usare i dati personali che risiedono nel cloud Microsoft. Di seguito è riportata una rapida panoramica dei processi descritti in questa guida:
