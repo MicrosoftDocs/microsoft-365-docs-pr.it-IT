@@ -11,12 +11,12 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: ea8fb66cf826861eac312a02d0d7d3cfaf1cf65c
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 00fed2cde29f12bb7e2b91d28e223c09da8ae7a5
+ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431857"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34544933"
 ---
 # <a name="data-subject-requests-for-the-gdpr"></a>Richieste del soggetto dei dati per l'RGPD
 
@@ -36,4 +36,4 @@ Per ulteriori informazioni su come Microsoft consente agli utenti di rispondere 
 
 ## <a name="learn-more"></a>Altre informazioni
 
-[Centro protezione Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Centro protezione Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

@@ -11,12 +11,12 @@ author: herviicban
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 2df6b0327ea058445393748b4707ceb17da364a1
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 61bd182c5f51a025d36a21541a2f901a00e87e53
+ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431847"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34544923"
 ---
 # <a name="breach-notification-under-the-gdpr"></a>Notifica di violazione secondo il GDPR
 
@@ -32,5 +32,3 @@ Per ulteriori informazioni su come Microsoft rileva e interviene a un caso di vi
 ## <a name="learn-more"></a>Altre informazioni
 
 [Centro protezione Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
-
-
