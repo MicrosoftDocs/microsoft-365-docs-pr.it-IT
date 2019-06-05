@@ -2,20 +2,20 @@
 title: Servizi professionali e supporto tecnico di Microsoft, Richieste del soggetto dei dati per l'RGPD
 description: Informazioni su come Professional Services e supporto tecnico Microsoft gestiscono le richieste dell'interessato.
 keywords: Servizi professionali, Microsoft 365, Microsoft 365 Education, documentazione Microsoft 365, GDPR
-author: herviicban
+author: robmazz
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: heicba
+ms.author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 9328bba6a0ca616b98b4da32cab372b9b546c848
-ms.sourcegitcommit: dc5c297ee7bca212b8a902daebe4907254c4315f
+ms.openlocfilehash: bc0b8d5b6d2a2a1590829a710d8aa51627d9afd0
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34589742"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698028"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr"></a>Servizi professionali e supporto tecnico di Microsoft, Richieste del soggetto dei dati per l'RGPD
 

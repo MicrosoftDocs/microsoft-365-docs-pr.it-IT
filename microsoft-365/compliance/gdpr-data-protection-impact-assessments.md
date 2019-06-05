@@ -5,17 +5,17 @@ keywords: Valutazione impatto protezione dati, DPIA, Dynamics 365, servizi profe
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
-ms.author: heicba
-author: herviicban
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 5d61c98290387563762c75d10c32476c35b9e9a4
-ms.sourcegitcommit: ea1d28fc3d0b93441aaca659c843f67495c1874f
+ms.openlocfilehash: 52436050d95935833dbfbeb1655c57ed9cfdad68
+ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34544903"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34698208"
 ---
 # <a name="data-protection-impact-assessments"></a>Valutazioni d'impatto sulla protezione dei dati
 
