@@ -3,8 +3,8 @@ title: Siti Microsoft Teams e SharePoint Online per dati altamente riservati
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 04/03/2019
-ms.audience: ITPro
+ms.date: 06/03/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un sito del team SharePoint Online sicuro o un team di Microsoft Teams per archiviare gli asset digitali più importanti e riservati.
-ms.openlocfilehash: d80be334f692f905ec70ae43f851d2b73801f4a0
-ms.sourcegitcommit: dbcc32218489ab256b7eb343290fcccb9bc04e36
+ms.openlocfilehash: d9740a27cdb90f8d490a6c9a323e968725876deb
+ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33553325"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "34681065"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Siti Microsoft Teams e SharePoint Online per dati altamente riservati
 
@@ -29,7 +29,7 @@ Poiché Microsoft 365 Enterprise include una gamma completa di servizi basati su
 - Soggetti alle normative internazionali.
 - I dati più importanti per l'organizzazione, ad esempio segreti finanziari o informazioni sulle risorse umane e strategia dell'organizzazione.
 
-Affinché una soluzione Microsoft 365 Enterprise basata sul cloud soddisfi le esigenze aziendali, è necessario:
+Affinché una scenario Microsoft 365 Enterprise basata sul cloud soddisfi le esigenze aziendali, è necessario:
 
 - Memorizzare asset digitali, quali documenti, presentazioni, fogli di calcolo e così via, in un sito di SharePoint Online o nella scheda **File** di un team di Microsoft Teams.
 - Bloccare i siti del team per evitare che:
@@ -41,7 +41,7 @@ Affinché una soluzione Microsoft 365 Enterprise basata sul cloud soddisfi le es
 - Crittografare gli asset digitali più riservati del sito o del team.
 - Aggiungere autorizzazioni per gli asset digitali più riservati, in modo che, anche in caso di condivisione all'esterno del sito, all'apertura vengano richieste le credenziali di un account utente che dispone dell'autorizzazione.
 
-La tabella seguente associa i requisiti di questa soluzione a una funzionalità di Microsoft 365 Enterprise.
+La tabella seguente associa i requisiti di questo scenario a una funzionalità di Microsoft 365 Enterprise.
 
 |||
 |:-------|:-----|
@@ -54,7 +54,11 @@ La tabella seguente associa i requisiti di questa soluzione a una funzionalità 
 | Aggiungere autorizzazioni a tutti gli asset digitali del sito | Etichette secondarie di Azure Information Protection in EMS |
 |||
 
-Questa soluzione richiede di aver già implementato:
+Ecco la configurazione per un sito di SharePoint Online.
+
+![Siti Microsoft Teams e SharePoint Online per scenario di dati altamente riservati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+
+Questo scenario richiede di aver già implementato:
 
 - La fase [Identità](identity-infrastructure.md) e i passaggi 1 e 2 della fase [Protezione delle informazioni](infoprotect-infrastructure.md) dell'infrastruttura di base. 
 - [SharePoint Online](sharepoint-online-onedrive-workload.md) per i dati altamente riservati nei siti del team di SharePoint Online.
@@ -64,9 +68,13 @@ Le fasi seguenti illustrano la progettazione, la configurazione e l'adozione dei
 
 Per vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, ha progettato un sito di SharePoint Online per i propri team di ricerca, vedere questo [esempio di configurazione](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
 
->[!Note]
->Un team con dati altamente riservati richiede che venga creato un sito del team di SharePoint Online per dati altamente riservati. Quindi si crea un nuovo team che utilizza il gruppo Office 365 del sito del team di SharePoint Online. Vedere Fase 2, Passaggio 4 per maggiori informazioni.
->
+
+Un team con dati altamente riservati richiede che venga creato un sito del team di SharePoint Online per dati altamente riservati. Quindi si crea un nuovo team che utilizza il gruppo Office 365 del sito del team di SharePoint Online. Vedere Fase 2, Passaggio 4 per maggiori informazioni.
+
+Ecco la configurazione per un team.
+
+![Siti Microsoft Teams e SharePoint Online per scenario di dati altamente riservati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-team.png)
+
 
 ## <a name="identity-and-device-access-prerequisites"></a>Prerequisiti di identità e accesso dei dispositivi
 
@@ -207,6 +215,10 @@ Ripetere la formazione degli utenti se necessario.
 ### <a name="user-adoption-results"></a>Risultati dell'adozione da parte degli utenti
 
 Gli asset digitali sensibili vengono memorizzati esclusivamente nei siti o nei team di SharePoint Online per i dati altamente riservati e agli asset più sensibili viene applicata l'etichetta secondaria di Azure Information Protection configurata.
+
+## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Informazioni sulle modalità di distribuzione di Microsoft 365 Enterprise da parte di Contoso Corporation
+
+Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello internazionale con sede a Parigi, Francia. Visualizzare il modo in cui Contoso ha sviluppato, configurato e quindi ha guidato l'adozione di un [sito di SharePoint Online protetto](contoso-sharepoint-online-site-for-highly-confidential-assets.md) per i team di ricerca a Parigi, Mosca, New York, Pechino e Bangalore. 
 
 ## <a name="see-also"></a>Vedere anche
 
