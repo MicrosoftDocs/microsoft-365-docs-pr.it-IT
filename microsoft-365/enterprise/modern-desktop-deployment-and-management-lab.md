@@ -3,7 +3,7 @@ title: Lab Kit di distribuzione di Windows e Office
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 10/31/2018
+ms.date: 06/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 213d53b323cd5a5ca6f803320cf09e168beb1114
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 86bdf37ca56c5779042ee78be091dd14ee63b80e
+ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400075"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814547"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
@@ -127,7 +127,8 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
   - [Serie di video sulla distribuzione desktop di Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - [Distribuzione del sistema operativo in System Center Configuration Manager](https://docs.microsoft.com/it-IT/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - 
+  [Distribuzione del sistema operativo in System Center Configuration Manager](https://docs.microsoft.com/it-IT/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Pianificare la distribuzione di Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

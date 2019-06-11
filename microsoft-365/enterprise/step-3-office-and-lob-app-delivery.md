@@ -3,8 +3,8 @@ title: Passaggio 3 - Distribuzione di Office e app line-of-business
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
-audience: ITPro
+ms.date: 05/27/2019
+ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come distribuire Office e app line-of-business.
-ms.openlocfilehash: 716be01cd414bea5655fb90289b465db27f15841
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 15a3b1730f5e2a62f067f7615d873ad34fa18d9e
+ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073106"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814607"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Passaggio 3: distribuzione di Office e app line-of-business
 

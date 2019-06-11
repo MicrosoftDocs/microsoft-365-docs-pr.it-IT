@@ -3,8 +3,8 @@ title: 'Passaggio 8: comunicazioni e formazione utente'
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 09/14/2018
-audience: ITPro
+ms.date: 04/10/2019
+ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come preparare gli utenti finali al passaggio a Windows 10 e Office 365 ProPlus tramite comunicazioni e formazione.
-ms.openlocfilehash: 60207ad991acdee2c5378b331ce85aa762722e40
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 6592734c89ea280a658007f53020641a0bc956b8
+ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073046"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34814557"
 ---
 # <a name="step-8-user-communications-and-training"></a>Passaggio 8: comunicazioni e formazione utente
 
