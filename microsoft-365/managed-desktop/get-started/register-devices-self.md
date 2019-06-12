@@ -5,28 +5,28 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 02b3b7ab32ff92304ab27ca8e8c805ade803c971
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: f1e61cfc7fd1d6d597efbfa2480155e06a3d3eb7
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400076"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857299"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop"></a>Registrare i dispositivi in Microsoft Managed Desktop
 
 >[!NOTE]
->In questo argomento vengono illustrati i passaggi da eseguire per la registrazione dei dispositivi. Il processo per i partner è documentato nei [dispositivi di registrazione in Microsoft managEd Desktop for partners](register-devices-partner.md).
+>In questo argomento vengono illustrati i passaggi da eseguire per la registrazione dei dispositivi. Il processo per i partner è documentato nei [dispositivi di registrazione in Microsoft Managed Desktop for partners](register-devices-partner.md).
 
 Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi che potrebbero essere già presenti (il che richiede che vengano ristampati). È possibile registrare i dispositivi tramite Microsoft Managed Desktop sul portale di Azure o ottenere flessibilità utilizzando un'API.
 
 ## <a name="prepare-to-register-devices"></a>Preparare la registrazione di dispositivi
 
-Se non sono già stati ottenuti i dispositivi che si desidera utilizzare, controllare i [dispositivi Microsoft managEd desktop](../service-description/device-list.md) e collaborare con un partner dispositivo per procurarsi dispositivi supportati.
+Se non sono già stati ottenuti i dispositivi che si desidera utilizzare, controllare i [dispositivi Microsoft Managed Desktop](../service-description/device-list.md) e collaborare con un partner dispositivo per procurarsi dispositivi supportati.
 
 Se si lavora con dispositivi completamente nuovi o si riutilizzano quelli esistenti, per registrarli con Microsoft Managed Desktop, è necessario preparare un **file CSV (delimitato da virgole)**. Questo file deve includere le informazioni seguenti per ogni dispositivo:
 
 >[!NOTE]
->Questo formato è solo per la registrazione in modalità self-service. Il formato dei partner dovrebbe essere utilizzato è documentato nei [dispositivi di registrazione in Microsoft managEd Desktop for partners](register-devices-partner.md).
+>Questo formato è solo per la registrazione in modalità self-service. Il formato dei partner dovrebbe essere utilizzato è documentato nei [dispositivi di registrazione in Microsoft Managed Desktop for partners](register-devices-partner.md).
 
 Questi valori vengono utilizzati per scopi di visualizzazione e non è necessario corrispondere esattamente alle proprietà del dispositivo.
 - Produttore del dispositivo (ad esempio: SpiralOrbit) 
@@ -39,20 +39,20 @@ L'hash hardware deve essere una corrispondenza esatta.
 Per ottenere l'hash hardware, è possibile richiedere assistenza all'OEM o al partner oppure eseguire la procedura seguente per ogni dispositivo:
 
 1.  Aprire un prompt di PowerShell con diritti amministrativi.
-2.  Correre`Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  Correre`powershell -ExecutionPolicy Unrestricted Get-WindowsAutopilotInfo -OutputFile <path>\hardwarehash.csv`
+2.  Correre`Install-Script -Name Get-MMDRegistrationInfo`
+3.  Correre`powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 
 
 In alternativa, è possibile eseguire questa procedura in un dispositivo nuovo di zecca (prima di passare per la prima volta tramite OOBE):
 
 1. In un altro dispositivo, inserire un'unità USB.
 2. Aprire un prompt di PowerShell con diritti amministrativi.
-3. Correre`Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
+3. Correre`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. Attivare il dispositivo di destinazione, ma non avviare l'esperienza di installazione. Se si avvia accidentalmente l'esperienza di installazione, sarà necessario reimpostare o ricreare il dispositivo.
 5. Inserire l'unità USB e quindi premere MAIUSC + F10.
 6. Aprire un prompt di PowerShell con diritti amministrativi e quindi eseguirlo `cd <pathToUsb>`.
 7. Correre`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-8. Correre`.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+8. Correre`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 3. Rimuovere l'unità USB e quindi arrestare il dispositivo eseguendo`shutdown -s -t 0`
 
 >[!IMPORTANT]
@@ -93,7 +93,7 @@ Eseguire la procedura seguente:
 3. Selezionare **registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco di dispositivi sul Blade dei **dispositivi**, contrassegnati come **registrazione in sospeso**. La registrazione richiede in genere meno di 10 minuti e, quando il dispositivo verrà visualizzato come **pronto per il significato dell'utente** , è pronto e in attesa che l'utente finale inizi a utilizzare.
 
 
-È possibile monitorare lo stato di registrazione dei dispositivi nella pagina principale di **Microsoft managEd desktop-Devices** . Gli stati possibili segnalati includono:
+È possibile monitorare lo stato di registrazione dei dispositivi nella pagina principale di **Microsoft Managed Desktop-Devices** . Gli stati possibili segnalati includono:
 
 | Stato | Descrizione |
 |---------------|-------------|
@@ -119,7 +119,7 @@ Eseguire la procedura seguente:
 | Hash hardware non valido | L'hash hardware fornito per il dispositivo non è stato formattato correttamente. Fare doppio check sull'hash hardware e quindi inviare di nuovo. |
 | Dispositivo già registrato | Questo dispositivo è già registrato nell'organizzazione. Non sono necessarie ulteriori azioni. |
 | Dispositivo rivendicato da un'altra organizzazione | Questo dispositivo è già stato rivendicato da un'altra organizzazione. Controllare con il fornitore del dispositivo. |
-| Errore imPrevisto | La richiesta non è stata elaborata automaticamente. Contattare il supporto tecnico e fornire l'ID richiesta:<requestId> |
+| Errore imprevisto | La richiesta non è stata elaborata automaticamente. Contattare il supporto tecnico e fornire l'ID richiesta:<requestId> |
 
 
 

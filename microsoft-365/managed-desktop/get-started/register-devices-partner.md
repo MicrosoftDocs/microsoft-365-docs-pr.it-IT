@@ -5,17 +5,17 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: d743092fdd309c1afd748afa7523f0cc0c6a2fd0
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 40927b18b0d047eae848b5a2a938d98fa6de3119
+ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400010"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857329"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>Registrare i dispositivi in Microsoft Managed Desktop per i partner
 
 
-In questo argomento vengono illustrati i passaggi da seguire per i partner per la registrazione dei dispositivi. Il processo di registrazione dei dispositivi manualmente è documentato in [dispositivi di registrazione in Microsoft managEd desktop Yourself](register-devices-self.md).
+In questo argomento vengono illustrati i passaggi da seguire per i partner per la registrazione dei dispositivi. Il processo di registrazione dei dispositivi manualmente è documentato in [dispositivi di registrazione in Microsoft Managed Desktop Yourself](register-devices-self.md).
 
 
 
@@ -30,15 +30,15 @@ Per completare la registrazione per il cliente, creare innanzitutto un file CSV.
 Il file deve includere le **intestazioni di colonna** identiche a quelle del campione (produttore, modello e così via), ma i propri dati per le altre righe. Se si utilizza il modello, aprirlo in uno strumento di modifica del testo, ad esempio Blocco note, e considerare di lasciare tutti i dati solo nella riga 1, immettendo solo i dati nelle righe 2 e seguenti. 
     
   ```
- Manufacturer,Model,Serial Number,Hardware Hash
-  SpiralOrbit,ContosoABC,000000000000,
+ Manufacturer,Model,Serial Number
+  SpiralOrbit,ContosoABC,000000000000
   
   
   ```
 
 
 >[!NOTE]
->Questo formato è solo per il processo del partner. Il processo per la registrazione automatica è documentato nei [dispositivi di registrazione in Microsoft managEd desktop Yourself](register-devices-self.md).
+>Questo formato è solo per il processo del partner. Il processo per la registrazione automatica è documentato nei [dispositivi di registrazione in Microsoft Managed Desktop Yourself](register-devices-self.md).
 
 >[!IMPORTANT]
 >Questi valori devono corrispondere esattamente ai valori del produttore di SMBIOS. È inoltre necessario includere l' *hash hardware* nella prima riga (ma nessun valore nella seconda riga) la virgola finale dopo il valore del *numero di serie* nella seconda riga.
@@ -63,7 +63,7 @@ La registrazione tramite il portale di Azure è identica a quella del servizio s
 10. Selezionare **registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco di dispositivi sul Blade dei **dispositivi**, contrassegnati come **registrazione in sospeso**. La registrazione richiede in genere meno di 10 minuti e, quando il dispositivo verrà visualizzato come **pronto per il significato dell'utente** , è pronto e in attesa che l'utente finale inizi a utilizzare.
 
 
-È possibile monitorare lo stato di registrazione dei dispositivi nella pagina principale di **Microsoft managEd desktop-Devices** . Gli stati possibili segnalati includono:
+È possibile monitorare lo stato di registrazione dei dispositivi nella pagina principale di **Microsoft Managed Desktop-Devices** . Gli stati possibili segnalati includono:
 
 | Stato | Descrizione |
 |---------------|-------------|
@@ -86,4 +86,4 @@ La registrazione da parte dell'API è identica a quella del servizio self-servic
 | Hash hardware non valido | L'hash hardware fornito per il dispositivo non è stato formattato correttamente. Fare doppio check sull'hash hardware e quindi inviare di nuovo. |
 | Dispositivo già registrato | Questo dispositivo è già registrato nell'organizzazione. Non sono necessarie ulteriori azioni. |
 | Dispositivo rivendicato da un'altra organizzazione | Questo dispositivo è già stato rivendicato da un'altra organizzazione. Controllare con il fornitore del dispositivo. |
-| Errore imPrevisto | La richiesta non è stata elaborata automaticamente. Contattare il supporto<support link>tecnico () e fornire l'ID richiesta:<requestId> |
+| Errore imprevisto | La richiesta non è stata elaborata automaticamente. Contattare il supporto<support link>tecnico () e fornire l'ID richiesta:<requestId> |
