@@ -3,16 +3,15 @@ title: Requisiti per le app di Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 01/08/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 07e4719d87cb11910a90665ce9beb95edf6641a4
-ms.sourcegitcommit: e15cf5d0d8ff3dfdc457b469992d72ac802e6434
+ms.openlocfilehash: ded8bcfd87a6b430dfc4be055a582b482872b104
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33467744"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913017"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Requisiti per le app di Microsoft Managed Desktop
 
@@ -28,7 +27,7 @@ Per garantire le prestazioni, l'affidabilità e la funzionalità dei dispositivi
 
 ## <a name="centrally-managed-apps"></a>App gestite centralmente
 
-Tutte le applicazioni e i driver installati nei dispositivi gestiti Microsoft devono essere distribuiti tramite Intune, Microsoft Store o Microsoft Store for business. Se disponibile, i driver verranno distribuiti anche tramite il servizio Windows Update. 
+Tutte le applicazioni e i driver installati nei dispositivi gestiti Microsoft devono essere distribuiti tramite Microsoft Intune, Microsoft Store o Microsoft Store for business. Se disponibile, i driver verranno distribuiti anche tramite il servizio Windows Update. 
 
 ## <a name="prohibited-app-classes"></a>Classi app non consentite
 

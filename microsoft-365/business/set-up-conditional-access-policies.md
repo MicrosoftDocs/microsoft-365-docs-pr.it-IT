@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come configurare i criteri di accesso condizionale per Microsoft 365 business.
-ms.openlocfilehash: 6ca3995113f090ccf2b119abde059a68ce562970
-ms.sourcegitcommit: ab04fea2765a63489d70b506f0e14303a5be16a0
+ms.openlocfilehash: a0cc4a9085bdfe6a8d40acc69a020af1c5861fcf
+ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34806823"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913007"
 ---
 # <a name="set-up-conditional-access-policies-for-microsoft-365-business"></a>Impostare i criteri di accesso condizionale per Microsoft 365 business
 
@@ -52,9 +52,9 @@ Per ulteriori informazioni su questi criteri, vedere [What are Baseline Policies
     ![Pagina in cui sono elencati i criteri di base per l'accesso condizionale.](media/baslinepolicies.png)
 1. Per ogni criterio, vedere le istruzioni specifiche seguenti:
 
-    - [Richiedi l'autenticazione a più fattori per gli amministratori](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-
-    -   [Richiedi l'autenticazione per gli utenti](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [Blocca l'autenticazione legacy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [Richiedi l'autenticazione a più fattori per gli amministratori](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+- [Reequire Mae per gli utenti](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+ - [Blocca l'autenticazione legacy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+  - [Richiedere l'autenticazione dell'AMF per la gestione dei servizi](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 È possibile configurare molti altri criteri, ad esempio la necessità di applicazioni client approvate. Per ulteriori informazioni, vedere la [documentazione relativa all'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/) .
