@@ -1,26 +1,38 @@
 ---
 title: Descrizione del servizio Microsoft Managed Desktop
-description: La descrizione del servizio Microsoft Managed Desktop include il dispositivo come servizio e come servizio
+description: Delinea cosa è incluso in Microsoft Managed Desktop come servizio
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
-ms.date: 02/06/2019
-ms.openlocfilehash: abce237a7e9608d50c79f8676033a1362fd9931e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 59344a338e051b32225574c18609ffde09716c8c
+ms.sourcegitcommit: 83338be246ae104724d7f38af12fe7f6546fec27
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283438"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34933545"
 ---
-# <a name="microsoft-managed-desktop-service-description"></a><span data-ttu-id="17962-104">Descrizione del servizio Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="17962-104">Microsoft Managed Desktop service description</span></span>
-<span data-ttu-id="17962-105">Microsoft Managed Desktop include i servizi seguenti:</span><span class="sxs-lookup"><span data-stu-id="17962-105">Microsoft Managed Desktop includes these services:</span></span> 
+# <a name="microsoft-managed-desktop-service-description"></a><span data-ttu-id="8b5cf-104">Descrizione del servizio Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="8b5cf-104">Microsoft Managed Desktop service description</span></span>
 
-- [<span data-ttu-id="17962-106">Dispositivi di programma</span><span class="sxs-lookup"><span data-stu-id="17962-106">Program devices</span></span>](device-list.md)
-- [<span data-ttu-id="17962-107">Servizi per dispositivi</span><span class="sxs-lookup"><span data-stu-id="17962-107">Device services</span></span>](device-services.md)
-- [<span data-ttu-id="17962-108">Configurazione dispositivo</span><span class="sxs-lookup"><span data-stu-id="17962-108">Device configuration</span></span>](device-policies.md)
-- [<span data-ttu-id="17962-109">Sicurezza</span><span class="sxs-lookup"><span data-stu-id="17962-109">Security</span></span>](security.md)
-- [<span data-ttu-id="17962-110">Aggiornamenti</span><span class="sxs-lookup"><span data-stu-id="17962-110">Updates</span></span>](updates.md)
-- [<span data-ttu-id="17962-111">Supporto</span><span class="sxs-lookup"><span data-stu-id="17962-111">Support</span></span>](support.md)
-- [<span data-ttu-id="17962-112">Operazioni e monitoraggio</span><span class="sxs-lookup"><span data-stu-id="17962-112">Operations and monitoring</span></span>](operations-and-monitoring.md)
-- [<span data-ttu-id="17962-113">Requisiti dell'applicazione</span><span class="sxs-lookup"><span data-stu-id="17962-113">Application requirements</span></span>](mmd-app-requirements.md)
+<span data-ttu-id="8b5cf-105">Microsoft Managed Desktop è un servizio che offre agli utenti un'esperienza moderna sicura e mantiene sempre aggiornati i dispositivi con le versioni più recenti di Windows 10 Enterprise Edition, Office 365 ProPlus e Microsoft Security Services, tra cui:</span><span class="sxs-lookup"><span data-stu-id="8b5cf-105">Microsoft Managed Desktop is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows 10 Enterprise edition, Office 365 ProPlus, and Microsoft security services, including:</span></span>
+
+- <span data-ttu-id="8b5cf-106">Configurazione dei dispositivi</span><span class="sxs-lookup"><span data-stu-id="8b5cf-106">Configuration of devices</span></span>
+- <span data-ttu-id="8b5cf-107">Funzionalità per garantire la sicurezza di utenti e dispositivi, tra cui la protezione basata su Windows Hello, BitLocker, SecureBoot e la virtualizzazione in base alle procedure consigliate di Microsoft</span><span class="sxs-lookup"><span data-stu-id="8b5cf-107">Features to keep users and devices secure, including Windows Hello, BitLocker, SecureBoot, and virtualization-based security according to Microsoft best practices</span></span>
+- <span data-ttu-id="8b5cf-108">Servizi di monitoraggio e correzione della sicurezza dei dispositivi</span><span class="sxs-lookup"><span data-stu-id="8b5cf-108">Device security monitoring and remediation services</span></span>
+- <span data-ttu-id="8b5cf-109">Compatibilità delle app, tramite l' [app desktop assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)</span><span class="sxs-lookup"><span data-stu-id="8b5cf-109">App compatibility, through [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)</span></span>
+- <span data-ttu-id="8b5cf-110">Gestione degli aggiornamenti per le applicazioni di Windows 10 e Office 365 ProPlus</span><span class="sxs-lookup"><span data-stu-id="8b5cf-110">Management of updates for Windows 10 and Office 365 ProPlus apps</span></span>
+- <span data-ttu-id="8b5cf-111">Dati analitici sull'utilizzo di dispositivi e app</span><span class="sxs-lookup"><span data-stu-id="8b5cf-111">Analytical data about device and app usage</span></span>
+- <span data-ttu-id="8b5cf-112">Supporto IT per gli utenti finali</span><span class="sxs-lookup"><span data-stu-id="8b5cf-112">IT support for your end users</span></span>
+- <span data-ttu-id="8b5cf-113">Supporto operativo per i professionisti IT</span><span class="sxs-lookup"><span data-stu-id="8b5cf-113">Operational support for IT Pros</span></span>
+
+<span data-ttu-id="8b5cf-114">Per informazioni dettagliate sui servizi specifici inclusi in Microsoft Managed Desktop, vedere gli altri argomenti in questa sezione.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-114">For details about the specific services included with Microsoft Managed Desktop, see the other topics in this section.</span></span> <span data-ttu-id="8b5cf-115">Se è già stato deciso che Microsoft Managed Desktop è per te, gli argomenti in prepararsi [per la registrazione in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) forniscono i passaggi per prepararsi ad aderire al servizio.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-115">If you've already decided that Microsoft Managed Desktop is for you, the topics in [Get ready for enrollment in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) provide you with the steps to prepare to join the service.</span></span>
+
+- <span data-ttu-id="8b5cf-116">[Microsoft Managed Desktop Regions and languages supported](regions-languages.md) spiega quali aree e lingue sono supportate con il servizio.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-116">[Microsoft Managed Desktop supported regions and languages](regions-languages.md) explains which regions and languages are supported with the service.</span></span>
+- <span data-ttu-id="8b5cf-117">Per garantire la migliore esperienza per gli utenti finali, solo alcuni dispositivi sono supportati da Microsoft Managed Desktop.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-117">To guarantee the best experience for your end users, only certain devices are supported by Microsoft Managed Desktop.</span></span> <span data-ttu-id="8b5cf-118">I [dispositivi di programma](device-list.md) specificano i modelli e le configurazioni dei dispositivi esatti che è possibile utilizzare con il servizio, sia che vengano forniti o che lavorino con un partner.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-118">[Program devices](device-list.md) specifies the exact device models and configurations you can use with the service, whether you provide them or work with a partner.</span></span>
+- <span data-ttu-id="8b5cf-119">[Servizi dispositivo](device-services.md) specifica i servizi correlati ai dispositivi che Microsoft fornirà ai sottoscrittori.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-119">[Device services](device-services.md) specifies the device-related services that Microsoft will provide to subscribers.</span></span>
+- <span data-ttu-id="8b5cf-120">La [configurazione](device-policies.md) dei dispositivi consente di chiarire i criteri di gestione dei dispositivi mobili predefiniti e relativi alla sicurezza che il servizio si applicherà ai dispositivi registrati.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-120">[Device configuration](device-policies.md) clarifies the default and security-related Mobile Device Management policies that the service will apply to enrolled devices.</span></span>
+- <span data-ttu-id="8b5cf-121">[Sicurezza](security.md) specifica i dati raccolti dai dispositivi registrati, nonché le caratteristiche e i criteri relativi alla sicurezza dei dispositivi, alla gestione delle identità e degli accessi, alla sicurezza della rete e alla sicurezza delle informazioni.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-121">[Security](security.md) specifies the data collected from enrolled devices, as well as the features and policies related to device security, identity and access management, network security, and information security.</span></span>
+- <span data-ttu-id="8b5cf-122">[Updates](updates.md) descrive i diversi gruppi di aggiornamento che Microsoft Managed Desktop utilizza per distribuire gli aggiornamenti ai dispositivi.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-122">[Updates](updates.md) describes the various update groups that Microsoft Managed Desktop uses to roll out updates to your devices.</span></span>
+- <span data-ttu-id="8b5cf-123">Il [supporto](support.md) consente di chiarire il supporto fornito da Microsoft per l'organizzazione e gli utenti finali.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-123">[Support](support.md) clarifies the support Microsoft provides for your organization and end users.</span></span>
+- <span data-ttu-id="8b5cf-124">[Operations and Monitoring](operations-and-monitoring.md) spiega come funziona la gestione delle modifiche con Microsoft Managed Desktop, incluse le procedure standard per la richiesta e la preparazione per le modifiche apportate alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-124">[Operations and monitoring](operations-and-monitoring.md) explains how change management works with Microsoft Managed Desktop, including standard procedures for requesting and preparing for changes in the deployment.</span></span>
+- <span data-ttu-id="8b5cf-125">[Requisiti](mmd-app-requirements.md) per le applicazioni vengono descritti i tipi di app e comportamenti consentiti in Microsoft Managed Desktop e la divisione dei ruoli e delle responsabilità per la distribuzione e la gestione delle applicazioni.</span><span class="sxs-lookup"><span data-stu-id="8b5cf-125">[Application requirements](mmd-app-requirements.md) describes the types of apps and behaviors allowed in Microsoft Managed Desktop and the division of roles and responsibilities for app deployment and management.</span></span>
