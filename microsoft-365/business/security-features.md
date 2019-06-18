@@ -1,9 +1,9 @@
 ---
-title: Funzionalità di sicurezza aziendale di Microsoft 365
+title: Funzionalità di sicurezza e conformità di Microsoft 365 business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Informazioni sulle funzionalità di sicurezza disponibili in Microsoft 365 business.
-ms.openlocfilehash: adf1cf183022f3d2c19364b9f60868e285f78637
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: bd61ad3bf1b34635a7b80f1c9ccf63fa98d31915
+ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660579"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017523"
 ---
-# <a name="microsoft-365-business-security-features"></a>Funzionalità di sicurezza aziendale di Microsoft 365
+# <a name="microsoft-365-business-security-and-compliance-features"></a>Funzionalità di sicurezza e conformità di Microsoft 365 business
 
 Microsoft 365 business offre funzionalità di sicurezza semplificate per garantire la protezione dei dati su PC, telefoni e tablet.
     
@@ -36,7 +36,6 @@ Microsoft 365 business offre funzionalità di sicurezza semplificate per garanti
 
 È possibile gestire molte delle funzionalità di sicurezza aziendale di Microsoft 365 nell'interfaccia di amministrazione, che consente di abilitare o disabilitare queste funzionalità in modo semplificato. Nell'interfaccia di amministrazione è possibile eseguire le operazioni seguenti:
   
-![Screenshot of the Devices card in the admin center](media/9982e784-dbf9-4a76-a159-bb3e2e5aa23f.png)
   
 - [Impostare le impostazioni di gestione applicazioni per i dispositivi Android o iOS](app-protection-settings-for-android-and-ios.md) . 
     
@@ -62,14 +61,38 @@ Microsoft 365 business offre funzionalità di sicurezza semplificate per garanti
 
 Le funzionalità avanzate di Microsoft 365 business sono disponibili per aiutare a proteggere la propria azienda dalle minacce informatiche e salvaguardare le informazioni riservate.
   
-- **[Office 365 Advanced Threat Protection](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
+- **[Protezione avanzata dalle minacce di Office 365](https://support.office.com/article/e100fe7c-f2a1-4b7d-9e08-622330b83653)**
     
     Advanced Threat Protection (ATP) consente di proteggere la propria azienda da attacchi di phishing e ransomware sofisticati destinati a compromettere le informazioni relative ai dipendenti o ai clienti. Le caratteristiche includono:
     
   - Scansione avanzata degli allegati e analisi di AI per rilevare e scartare messaggi pericolosi.
     
-  - Controlli automatici dei collegamenti Web nel messaggio di posta elettronica per valutare se fanno parte di uno schema di phishing. In questo modo si impedisce all'utente di accedere a siti Web non sicuri.
+  - Controlli automatici dei collegamenti nel messaggio di posta elettronica per valutare se fanno parte di uno schema di phishing. In questo modo si impedisce all'utente di accedere a siti Web non sicuri.
+
+- **[Le funzionalità complete di Intune nel portale di Azure](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
+    L'accesso all'interfaccia di amministrazione di Intune nel portale di Azure consente di configurare altre funzionalità di sicurezza, ad esempio la gestione dei dispositivi MacOS, iPhone e Android insieme a Advanced Device Management per Windows, che non sono disponibili tramite Microsoft 365 Business Admin Center.
+- **Stesso [accesso condizionale](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) come piano di Azure ad P1**
+
+    L'accesso condizionale può aiutare a proteggere l'organizzazione dal rischio di accesso, a tentativi di accessi da una rete o a un'altra località imprevista, ai tentativi di accesso ai tipi di dispositivo rischiosi e così via. I criteri di accesso condizionale vengono applicati dopo che la prima autenticazione è stata completata e utilizza i segnali del primo evento di autenticazione per determinare se l'accesso al tentativo deve essere approvato, nega o se è più possibile ottenere una prova (come la seconda forma di identificazione) Obbligatorio.
+
+    Le funzionalità di accesso condizionale incluse sono:
+
+    - Accesso basato su nome utente, gruppo e ruolo
+    - Accesso [basato su un'app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) 
+    - [Accesso basato sul percorso](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration);  Consenti l'accesso solo da intervalli IP attendibili o da paesi specifici 
+    - Richiedi accesso a Mae
+    - Blocca l'accesso alle app che utilizzano [l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)
+    - Richiedi Apps TP utilizza la [protezione delle app di Intune](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+    - Autenticazione personalizzata come l'AMF con provider di terze parti, ad esempio DUO.
+   
+    Altre caratteristiche:
+    - [Reimpostazione della password self-service](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization) per l'ambiente ibrido di Azure ad
+    
+## <a name="compliance-features"></a>Funzionalità di conformità
+
+La sottoscrizione Microsoft 365 business include funzionalità che consentono di mantenere gli standard di conformità e normativi.
+
 - **[Panoramica dei criteri di prevenzione della perdita di dati](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e)** (DLP). 
     
     È possibile configurare DLP per rilevare automaticamente le informazioni riservate, come i numeri di carta di credito, i numeri di previdenza sociale e così via, per impedire la condivisione accidentale all'esterno dell'azienda.
@@ -80,13 +103,9 @@ Le funzionalità avanzate di Microsoft 365 business sono disponibili per aiutare
     
 - **[Azure Information Protection](https://go.microsoft.com/fwlink/p/?linkid=871406)**
     
-    La protezione delle informazioni consente di controllare l'accesso alle informazioni riservate nei messaggi di posta elettronica e nei documenti con controlli quali "non inoltrare" e "non copiare". È inoltre possibile classificare le informazioni riservate come "riservate" e specificare in che modo le informazioni classificate possono essere condivise all'esterno e all'interno dell'azienda. La crittografia di livello aziendale è facile da applicare ai messaggi di posta elettronica e ai documenti per mantenere private le informazioni. Microsoft 365 business include tutte le funzionalità di [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). È inoltre possibile installare il componente aggiuntivo di Azure Information Protection client per le app di Office. Per ulteriori informazioni, vedere [Guida di Admininstrator del client di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
-    
-- **[Le funzionalità complete di Intune nel portale di Azure](https://go.microsoft.com/fwlink/p/?linkid=871403)**
-    
-    L'accesso all'interfaccia di amministrazione di Intune nel portale di Azure consente di configurare altre funzionalità di sicurezza, ad esempio la gestione dei dispositivi MacOS, iPhone e Android insieme a Advanced Device Management per Windows, che non sono disponibili tramite Microsoft 365 Business Admin Center.
-    
-Nelle sezioni successive viene descritto come è possibile gestire queste funzionalità nel centro &amp; conformità sicurezza e nell'interfaccia di amministrazione di Intune. Nel corso del tempo, i controlli semplificati verranno aggiunti all'interfaccia di amministrazione di Microsoft 365 business.
+    La protezione delle informazioni consente di controllare l'accesso alle informazioni riservate nei messaggi di posta elettronica e nei documenti con controlli quali "non inoltrare" e "non copiare". È inoltre possibile classificare le informazioni riservate come "riservate" e specificare in che modo le informazioni classificate possono essere condivise all'esterno e all'interno dell'azienda. La crittografia di livello aziendale è facile da applicare ai messaggi di posta elettronica e ai documenti per mantenere private le informazioni. Microsoft 365 business include tutte le funzionalità di [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). È inoltre possibile installare il componente aggiuntivo di Azure Information Protection client per le app di Office. Per ulteriori informazioni, vedere [Guida dell'amministratore del client di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide).
+
+È possibile gestire queste funzionalità nel centro conformità &amp; sicurezza e nell'interfaccia di amministrazione di Intune. Nel corso del tempo, i controlli semplificati verranno aggiunti all'interfaccia di amministrazione di Microsoft 365 business.
   
     
 ## <a name="faq"></a>Domande frequenti
