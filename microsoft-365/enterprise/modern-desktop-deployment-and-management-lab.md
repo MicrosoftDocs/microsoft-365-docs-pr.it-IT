@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 86bdf37ca56c5779042ee78be091dd14ee63b80e
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 4b69047c2c595b899fd29593c9c02a3531ffbd53
+ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814547"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017498"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
-Questi lab pratici scaricabili si concentrano sulla distribuzione di Windows 10 e di Office 365, oltre alle considerazioni su configurazione e gestione in seguito alla distribuzione. Questo training è vivamente consigliato per le organizzazioni che si stanno preparando alla fine del ciclo di vita di Windows 7, ma è applicabile anche se è in uso Windows 10 e Office 365 Plus o Office 2019. Sono incluse guide per Windows 10, Office 365 ProPlus, Enterprise Mobility + Security e prodotti e servizi correlati.
+Questi lab pratici scaricabili sono incentrati sulla distribuzione di Windows 10 e di Office 365 e includono anche considerazioni sulle attività di configurazione e gestione successive alla distribuzione. Questo training è vivamente consigliato per le organizzazioni che si stanno preparando alla fine del ciclo di vita di Windows 7, ma è utile anche se si usa Windows 10 e Office 365 Plus o Office 2019. Sono incluse le guide relative a Windows 10, Office 365 ProPlus, Enterprise Mobility + Security e prodotti e servizi correlati.
 
 Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione di desktop che eseguono Windows 10 Enterprise e Office 365 ProPlus. I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano System Center Configuration Manager, Windows Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
 
@@ -36,18 +36,17 @@ Il lab kit può essere scaricato gratuitamente e utilizza un software di valutaz
 
 Il lab fornisce un ambiente lab virtuale con provisioning automatico, che comprende client desktop aggiunti a un dominio, un controller di dominio, gateway Internet e un'istanza di ConfigMgr completamente configurata. Il lab contiene versioni di valutazione dei prodotti seguenti:
 
-  - Windows 10 Enterprise, versione 1809
-  - Windows 7
-  - Office 365 ProPlus, versione 1901
-  - System Center Configuration Manager, versione 1802
-  - Windows Assessment and Deployment Kit per Windows 10, versione 1809
+  - Windows 10 Enterprise, versione 1903
+  - Windows 7 Enterprise
+  - System Center Configuration Manager, versione 1902
+  - Windows Assessment and Deployment Kit per Windows 10, versione 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
   - Amministrazione e gestione di Microsoft Bitlocker 2.5 SP1
-  - Windows Server 2016
-  - Microsoft SQL Server 2014
+  - Windows Server 2019
+  - Microsoft SQL Server 2017
 
-INOLTRE, il lab è progettato per essere collegato alle versioni di valutazione per:
+INOLTRE, il lab è progettato per essere collegato alle versioni di valutazione per: 
 
   - Microsoft 365 Enterprise E5
 
@@ -119,7 +118,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[**Scaricare il Lab Kit di distribuzione di Windows e Office**](https://aka.ms/mddlabs_evalcenter)
 
-*Per scaricare questi contenuti, usare un'ampia larghezza di banda per un'esperienza di download ottimale e attendere 30-45 minuti per il provisioning automatico. L'ambiente di lab richiede minimo 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, si consiglia di avere 32 GB di memoria disponibili. Il lab scade il 13 maggio 2019; prima di tale data, ne verrà pubblicata una nuova versione.*
+*Per scaricare questi contenuti usufruendo di un'esperienza di download ottimale, usare un'ampia larghezza di banda e attendere 30-45 minuti il completamento del provisioning automatico. Per l'ambiente lab sono richiesti almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, sono consigliati 32 GB di memoria disponibili. Il lab scade il 27 agosto 2019; prima di tale data, ne verrà pubblicata una nuova versione.*
 
 ## <a name="additional-guidance"></a>**Indicazioni aggiuntive**
 
