@@ -1,5 +1,5 @@
 ---
-title: Lavoro preRequisito per l'implementazione dei criteri di identità e accesso ai dispositivi-Microsoft 365 Enterprise | Documenti Microsoft
+title: Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi-Microsoft 365 Enterprise | Documenti Microsoft
 description: Descrive i criteri per i consigli di Microsoft su come applicare i criteri e le configurazioni relativi all'identità e all'accesso ai dispositivi.
 author: BrendaCarter
 manager: Laurawi
@@ -13,14 +13,14 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2bb13d2af70b90f8c98a4bb902156f840e7f57f1
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 8ac644ccd7772d8e4c53395c8a42ff6ddbd683a6
+ms.sourcegitcommit: a6878de8ab977b675a45fc847ff46a9c0365dc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289007"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35231859"
 ---
-# <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Lavoro preRequisito per l'implementazione dei criteri di identità e accesso ai dispositivi
+# <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi
 
 In questo articolo vengono descritti i prerequisiti che devono essere implementati prima di poter distribuire i criteri di identità e accesso ai dispositivi consigliati. In questo articolo vengono illustrate anche le configurazioni dei client di piattaforma predefinite che è consigliabile offrire agli utenti la migliore esperienza SSO, nonché i prerequisiti tecnici per l'accesso condizionale.
 
@@ -98,7 +98,7 @@ Per ulteriori informazioni sul supporto client di Office 365, vedere gli articol
 - [Supporto delle app client di Office 365-autenticazione moderna](https://docs.microsoft.com/en-us/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## <a name="protecting-administrator-accounts"></a>Protezione degli account amministratore
-Azure AD offre un modo semplice per iniziare a proteggere l'accesso dell'amministratore con un criterio di accesso condizionale preconfigurato. In Azure Active Directory, andare a **accesso condizionale** e cercare questo criterio, **criterio di base: richiedere l'autenticazione di master per gli amministratori**. Selezionare questo criterio e quindi selezionare **Usa criteri immediatamente**. 
+Azure AD offre un modo semplice per iniziare a proteggere l'accesso dell'amministratore con un criterio di accesso condizionale preconfigurato. In Azure Active Directory, andare a **accesso condizionale** e cercare questo criterio, **criteri di base: richiedere l'autenticazione master per gli amministratori (anteprima)**. Selezionare questo criterio e quindi selezionare **Usa criteri immediatamente**. 
 
 Questo criterio richiede l'AMF per i ruoli seguenti:
 - Amministratori globali
