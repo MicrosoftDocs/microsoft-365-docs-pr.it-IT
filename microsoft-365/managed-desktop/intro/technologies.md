@@ -7,12 +7,12 @@ author: trudyha
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 843a8cd066bbaf87a8b2b7cc74d8817207e47153
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 9c0e6481d0dc80e7cf03de2b748935c2f59f132a
+ms.sourcegitcommit: e54ec86310a18101f4688890cd5a9fc16bbe6f55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283468"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35257819"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologie Microsoft Managed Desktop
 
@@ -21,7 +21,7 @@ In questo argomento sono elencate le tecnologie e le app utilizzate in Microsoft
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
-Microsoft 365 Enterprise Licensing è necessaria per tutti gli utenti di Microsoft Managed Desktop. Per ulteriori informazioni sui requisiti di licenza per il servizio, vedere [prerequisiti per Microsoft managEd desktop](../get-ready/prerequisites.md).
+Microsoft 365 Enterprise Licensing è necessaria per tutti gli utenti di Microsoft Managed Desktop. Per ulteriori informazioni sui requisiti di licenza per il servizio, vedere [prerequisiti per Microsoft Managed Desktop](../get-ready/prerequisites.md).
 
 Di seguito sono riportati tutti i componenti inclusi nelle licenze Enterprise necessarie e il modo in cui il servizio utilizza ogni componente con i dispositivi Microsoft Managed Desktop. I ruoli e le responsabilità specifici per ogni area sono descritti in tutto l'argomento Microsoft Managed Desktop. 
 
@@ -39,8 +39,6 @@ Skype for business online cloud PBX | Questa funzionalità è disponibile tramit
  |
  --- | ---
 Protezione delle credenziali |  Microsoft fornirà indicazioni e gestirà gli aspetti cloud di questa funzionalità.
-Dispositivo di protezione (controllo applicazione Windows Defender) | Microsoft Managed Desktop creerà il criterio. <br><br>Il cliente gestirà le firme.
-Gestione di AppLocker |  Microsoft creerà il criterio. <br><br>Il cliente gestirà le firme.
 Virtualizzazione di applicazioni (App-V) |    Microsoft Managed Desktop non supporta questo tipo di distribuzione poiché non è supportato in Intune.
 Virtualizzazione dell'esperienza utente (UE-V) | Questo non viene utilizzato con i dispositivi gestiti di Microsoft Managed Desktop.
 Esperienza utente gestita  | Questo non viene utilizzato con i dispositivi gestiti di Microsoft Managed Desktop. MDM viene utilizzato come soluzione per la gestione dei dispositivi.
