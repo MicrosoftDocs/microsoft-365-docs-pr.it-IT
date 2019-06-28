@@ -4,6 +4,7 @@
 ### [Tecnologie in Microsoft Managed Desktop](intro/technologies.md)
 ## [Descrizione del servizio Microsoft Managed Desktop](service-description/index.md)
 ### [Aree geografiche e lingue supportate](service-description/regions-languages.md)
+### [Ciclo di vita del prodotto](service-description/device-lifecycle.md)
 ### [Dispositivi di programma](service-description/device-list.md)
 #### [Dispositivi di programma archiviati](service-description/archived-device-list.md)
 ### [Servizi per dispositivi](service-description/device-services.md)
