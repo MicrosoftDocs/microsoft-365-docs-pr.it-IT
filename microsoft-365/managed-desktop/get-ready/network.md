@@ -3,16 +3,16 @@ title: Configurazione di rete per Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f4cfaffe25638de80d23c3e681e50cbb544ca961
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 333fb51fe9d7df7c5ec47c2e7a812cd489c36d23
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289101"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390493"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configurazione di rete per Microsoft Managed Desktop
 
@@ -39,10 +39,10 @@ Si noti che l'URL di Microsoft Managed Desktop seguente viene utilizzato per qua
 
 Servizio Microsoft  | URL necessari nell'elenco Consenti 
 --- | --- | ---
-Microsoft Managed Desktop | prod-mwaas-Services-customerapi.azurewebsites.NET
-Ottenere assistenza | \*. support.Services.Microsoft.com  <br>inprod.support.Services.Microsoft.com  <br>supportchannels.Services.Microsoft.com  <br>Graph.Windows.NET  <br>login.Windows.NET  <br>prod-mwaas-Services-customerapi.azurewebsites.NET
-Assistenza rapida | RemoteAssistance.support.Services.Microsoft.com <br>Relay.support.Services.Microsoft.com <br>channelwebsdks.azureedge.NET  <br>Web.Vortex.Data.Microsoft.com  <br>Gateway.ChannelServices.Microsoft.com <br>\*. Lync.com
-Assistente di supporto e ripristino di Microsoft per Office 365 | \*. apibasic.Diagnostics.Office.com  <br>\*. API.Diagnostics.Office.com
+Microsoft Managed Desktop | prod-mwaas-services-customerapi.azurewebsites.net
+Ottenere assistenza | \*. support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
+Assistenza rapida | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*. lync.com
+Assistente di supporto e ripristino di Microsoft per Office 365 | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
  
 
 ### <a name="endpoints-allowed---other-microsoft-products"></a>Endpoint consentiti-altri prodotti Microsoft
@@ -52,7 +52,7 @@ Sono disponibili URL provenienti da diversi prodotti Microsoft che devono essere
 Servizio Microsoft | Origine documentazione-URL necessari nell'elenco Consenti
 --- | ---
 Windows 10 Enterprise incluso Windows Update for business | [Gestire gli endpoint di connessione per Windows 10, versione 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gestire gli endpoint di connessione per Windows 10, versione 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
-Ottimizzazione del reCapito | [Configurare l'ottimizzazione del reCapito per gli aggiornamenti di Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Ottimizzazione del recapito | [Configurare l'ottimizzazione del recapito per gli aggiornamenti di Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [Intervalli di indirizzi IP e URL di Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Identità ibrida porte e protocolli necessari](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) e [Active Directory e servizi di dominio Active Directory requisiti di porta](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Requisiti di configurazione della rete Intune](https://docs.microsoft.com/intune/network-bandwidth-use)

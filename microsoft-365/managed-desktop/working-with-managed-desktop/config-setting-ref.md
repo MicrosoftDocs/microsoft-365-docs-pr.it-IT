@@ -1,20 +1,20 @@
 ---
-title: Informazioni di riferimento sulle impostazioni conFigurabili per Microsoft Managed Desktop
+title: Informazioni di riferimento sulle impostazioni configurabili per Microsoft Managed Desktop
 description: Impostazione delle categorie per le impostazioni configurabili in Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 296602422cf4d590ae17335d7a0bbbc939d929ed
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: da8f88251f6d1ae3185641dd408b29aa41cd7ea9
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278319"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390413"
 ---
-# <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Riferimento alle impostazioni conFigurabili-Microsoft Managed Desktop
+# <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Riferimento alle impostazioni configurabili-Microsoft Managed Desktop
 
 In questo argomento sono elencate le categorie di impostazioni che i clienti possono configurare con Microsoft Managed Desktop. Ogni categoria di impostazioni include informazioni su requisiti, procedure consigliate e su come personalizzare la categoria di impostazioni. 
 
@@ -31,7 +31,7 @@ Questi requisiti devono essere soddisfatti per un'immagine di sfondo del desktop
 ### <a name="customize-and-deploy-desktop-background-picture"></a>Personalizzare e distribuire l'immagine di sfondo del desktop
 
 **Per aggiungere un'immagine di sfondo del desktop personalizzata**
-1. Accedere al [portale di amministrazione di Microsoft managEd desktop](http://aka.ms/mwaasportal)
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
 2. In **Impostazioni**, selezionare **** configurabile.
 3. Nell' **** area di lavoro configurabile selezionare **immagine di sfondo del desktop**. 
 4. Immettere il percorso dell'immagine che si desidera utilizzare. 
@@ -47,7 +47,7 @@ Le pagine iniziali del browser vengono aperte nelle singole schede quando gli ut
 ### <a name="customize-and-deploy-browser-start-pages"></a>Personalizzare e distribuire le pagine iniziali del browser
 
 **Per aggiungere una pagina iniziale del browser**
-1. Accedere al [portale di amministrazione di Microsoft managEd desktop](http://aka.ms/mwaasportal)
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
 2. In **Impostazioni**, selezionare **** configurabile.
 3. Nell' **** area di lavoro configurabile selezionare **pagine iniziali del browser**. 
 4. Selezionare **Aggiungi pagina iniziale**.
@@ -72,13 +72,13 @@ Questi requisiti devono essere soddisfatti per il file dell'elenco dei siti in m
 
 Queste procedure consigliate sono disponibili per consentire ai clienti di prendere decisioni per modernizzare l'infrastruttura IT:
 - **Scegliere un numero limitato di siti** : Microsoft Managed Desktop utilizza Microsoft Edge come browser preferito per migliorare la sicurezza complessiva per l'organizzazione e l'usabilità per gli utenti. La maggior parte dei siti in questo elenco è per le app Web legacy che richiedono una versione precedente di un browser che non includerà il numero di funzionalità di sicurezza. 
-- Si conSideri **un'alternativa** : si consideri un sito diverso o un'app Web che non richiede un browser meno recente. In alternativa, è consigliabile aggiornare il sito in modo che possa utilizzare browser più recenti. I browser più recenti utilizzano la tecnologia più recente e contribuiscono a migliorare la sicurezza.
+- Si consideri **un'alternativa** : si consideri un sito diverso o un'app Web che non richiede un browser meno recente. In alternativa, è consigliabile aggiornare il sito in modo che possa utilizzare browser più recenti. I browser più recenti utilizzano la tecnologia più recente e contribuiscono a migliorare la sicurezza.
 
 ### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>Personalizzare e distribuire il percorso dell'elenco delle modalità sito Enterprise
 
 **Per aggiungere una posizione nell'elenco delle modalità sito dell'organizzazione**
 
-1.  Accedere al [portale di amministrazione di Microsoft managEd desktop](http://aka.ms/mwaasportal)
+1.  Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
 2.  In **Impostazioni**, selezionare **** configurabile.
 3.  Nell' **** area di lavoro configurabile selezionare **percorso dell'elenco dei siti in modalità Enterprise**. 
 4.  Immettere il percorso HTTPS per l'elenco di siti. 
@@ -100,7 +100,7 @@ Specificare il nome di dominio completo (FQDN) per i siti Intranet o Internet pe
 
 **Per aggiungere un sito attendibile**
 
-1. Accedere al [portale di amministrazione di Microsoft managEd desktop](http://aka.ms/mwaasportal)
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
 2. In **Impostazioni**, selezionare **** configurabile.
 3. Nell' **** area di lavoro configurabile selezionare **siti attendibili**e quindi fare clic su **Aggiungi sito attendibile**. 
 4. In **Aggiungi sito attendibile**immettere l'URL, scegliere un'area di sicurezza e quindi fare clic su **Aggiungi sito attendibile**. 
@@ -109,7 +109,7 @@ Specificare il nome di dominio completo (FQDN) per i siti Intranet o Internet pe
 
 **Per rimuovere un sito attendibile**
 
-1. Accedere al [portale di amministrazione di Microsoft managEd desktop](http://aka.ms/mwaasportal)
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
 2. In **Impostazioni**, selezionare **** configurabile.
 3. Nell' **** area di lavoro configurabile selezionare **siti attendibili**. 
 4. Selezionare il sito che si desidera eliminare, quindi selezionare **Elimina**. 
@@ -117,7 +117,7 @@ Specificare il nome di dominio completo (FQDN) per i siti Intranet o Internet pe
 6. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
 ## <a name="proxy"></a>Proxy
-È possibile gestire le impostazioni del proxy di rete per l'organizzazione. Aggiungere il server proxy e il numero di porta e quindi aggiungere le eccezioni del sito proxy. Microsoft Managed Desktop include un insieme di eccezioni proxy predefinite che sono necessarie per l'utilizzo del servizio. L'elenco di esclusione predefinito può essere modificato solo dal servizio Microsoft Managed Desktop.  Per ulteriori informazioni, vedere [configurazione di rete per Microsoft managEd desktop](../get-ready/network.md). 
+È possibile gestire le impostazioni del proxy di rete per l'organizzazione. Aggiungere il server proxy e il numero di porta e quindi aggiungere le eccezioni del sito proxy. Microsoft Managed Desktop include un insieme di eccezioni proxy predefinite che sono necessarie per l'utilizzo del servizio. L'elenco di esclusione predefinito può essere modificato solo dal servizio Microsoft Managed Desktop.  Per ulteriori informazioni, vedere [configurazione di rete per Microsoft Managed Desktop](../get-ready/network.md). 
 
 Le eccezioni del sito proxy aggiunte nel portale Microsoft Managed Desktop vengono inserite nelle eccezioni proxy predefinite incluse in Microsoft Managed Desktop Service. 
 
@@ -134,7 +134,7 @@ Questi requisiti devono essere soddisfatti per le eccezioni del server proxy e d
 
 **Per aggiungere una singola eccezione del sito proxy**
 
-1. Accedere al [portale di amministrazione di Microsoft managEd desktop](http://aka.ms/mwaasportal)
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
 2. In **Impostazioni**, selezionare **** configurabile.
 3. Nell' **** area di lavoro configurabile selezionare **proxy**. 
 4. Immettere l' **Indirizzo** e il **numero di porta** del server proxy, quindi selezionare **Aggiungi eccezione proxy**. 
@@ -142,6 +142,6 @@ Questi requisiti devono essere soddisfatti per le eccezioni del server proxy e d
 6. Ripetere i passaggi 1-5 per ogni sito attendibile che si desidera aggiungere. 
 7. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
-## <a name="additional-resources"></a>Altre risorse
-- [Panoramica delle impostazioni conFigurabili](config-setting-overview.md) 
+## <a name="additional-resources"></a>Risorse aggiuntive
+- [Panoramica delle impostazioni configurabili](config-setting-overview.md) 
 - [Distribuire le impostazioni configurabili](config-setting-deploy.md)

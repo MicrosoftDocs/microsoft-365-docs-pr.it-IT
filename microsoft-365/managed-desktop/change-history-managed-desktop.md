@@ -8,12 +8,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 4cd61e333773ddeddc866481be7e1cfa283e4386
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 65602cb3175f8a930537746d831bb85f26de0383
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913027"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390363"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia delle modifiche per la documentazione di Microsoft Managed Desktop
 
@@ -25,6 +25,8 @@ Argomento nuovo o modificato | Descrizione
 [App in Microsoft Managed Desktop](get-ready/apps.md) | Argomento aggiornato
 [Utilizzo di Microsoft Consulting Services](get-ready/apps-mcs.md) | Nuovo argomento
 [Ruoli e responsabilità di Microsoft Managed Desktop](intro/roles-and-responsibilities.md) | Argomento aggiornato
+[Ciclo di vita del prodotto Microsoft Managed Desktop](service-description/device-lifecycle.md) | Nuovo argomento
+
 
 
 ## <a name="may-2019"></a>2019 maggio
