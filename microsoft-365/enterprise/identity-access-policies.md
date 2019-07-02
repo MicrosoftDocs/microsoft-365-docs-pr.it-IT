@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 9912b05c07599c5ad0c0ed7fec91ae2572bd2ead
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 322da1ccfbd0cf8b5070894580b06fb5b0283f40
+ms.sourcegitcommit: 1d5fc181036b673c4f0b9e161e19395dbfe5a304
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289330"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "35411650"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -39,9 +39,9 @@ L'utilizzo dell'autenticazione a più fattori è consigliato prima di registrare
 Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine indicato in questa tabella. Tuttavia, i criteri dell'AMF per la protezione sensibile e altamente regolamentata possono essere implementati in qualsiasi momento.
 
 
-|Livello di protezione|Generali|Altre informazioni|
+|Livello di protezione|Generali|Ulteriori informazioni|
 |:---------------|:-------|:----------------|
-|**Base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](#require-mfa-based-on-sign-in-risk)| |
+|**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-modern-authentication)|I client che non utilizzano l'autenticazione moderna possono ignorare le regole di accesso condizionale, quindi è importante bloccarle|
 |        |[Gli utenti ad alto rischio devono modificare la password](#high-risk-users-must-change-password)|Impone agli utenti di modificare la propria password al momento dell'accesso se viene rilevata un'attività ad alto rischio per il proprio account|
 |        |[Definire i criteri di protezione delle app](#define-app-protection-policies)|Un criterio per ogni piattaforma (iOS, Android, Windows).|
@@ -50,7 +50,7 @@ Per ottenere il tempo necessario per eseguire queste attività, è consigliabile
 |        |[Richiedi PC conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Impone la gestione di Intune dei PC|
 |**Dati sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Richiedere PC conformi *e* dispositivi mobili](#require-compliant-pcs-and-mobile-devices)|Impone la gestione di Intune per PC e telefono/tablet|
-|**Altamente regolamentato**|[Richiede *sempre* l'autenticazione Master](#require-mfa-based-on-sign-in-risk)|
+|**Protezione per ambienti altamente regolamentati**|[Richiede *sempre* l'autenticazione Master](#require-mfa-based-on-sign-in-risk)|
 | | |
 
 ## <a name="assigning-policies-to-users"></a>Assegnazione di criteri agli utenti
@@ -102,7 +102,7 @@ Applicare le impostazioni in base al livello di protezione che si desidera asseg
 
 |Proprietà|Livello di protezione|Valori|Note|
 |:---|:---------|:-----|:----|
-|Livello di rischio|Versione di base|Alto, medio|Controllare entrambi|
+|Livello di rischio|Protezione di base|Alto, medio|Controllare entrambi|
 | |Dati sensibili|Alto, medio e basso|Controllare tutti e tre|
 | |Protezione per ambienti altamente regolamentati| |Lasciare deselezionata tutte le opzioni per applicare sempre il Master|
 
@@ -192,7 +192,7 @@ Creare un criterio per ogni piattaforma:
 - Android
 - Windows 10
 
-Per creare un nuovo criterio di protezione delle app, accedere al portale di Microsoft Azure con le credenziali di amministrazione e quindi passare a **criteri di protezione delle app per dispositivi mobili >**. Scegliere **Add a Policy**.
+Per creare un nuovo criterio di protezione delle app, accedere al portale di Microsoft Azure con le credenziali di amministrazione, quindi passare a **applicazioni per dispositivi mobili > criteri di protezione delle app**. Scegliere **Add a Policy**.
 
 Le opzioni dei criteri per la protezione delle app sono leggermente diverse tra iOS e Android. Di seguito sono specificati i criteri per Android. Utilizzarla come guida per gli altri criteri.
 
@@ -257,11 +257,15 @@ Per richiedere applicazioni approvate:
 
 7. Scegliere **Seleziona app**, selezionare le app desiderate nell'elenco delle **app Cloud** . Ad esempio, selezionare Office 365 Exchange Online. Scegliere **Seleziona** e **Chiudi**.
 
-8. Scegliere **Concedi** nella sezione **Controlli di accesso**.
+8. Scegliere **le condizioni**, selezionare **piattaforme dispositivo**e quindi fare clic su **Configura** .
 
-9. Scegliere **Concedi accesso**, selezionare **Richiedi applicazione client**approvata. Per più controlli, selezionare **Richiedi i controlli selezionati**, quindi scegliere **Seleziona**. 
+9. In **Includi**, scegliere **Seleziona piattaforme dispositivo**, quindi **Android** e **iOS**. Fare di nuovo **** clic su **fatti** e fare
 
-10. 	Selezionare **Crea**.
+10. Scegliere **Concedi** nella sezione **Controlli di accesso**.
+
+11. Scegliere **Concedi accesso**, selezionare **Richiedi applicazione client**approvata. Per più controlli, selezionare **Richiedi i controlli selezionati**, quindi scegliere **Seleziona**. 
+
+12. 	Selezionare **Crea**.
 
 ## <a name="define-device-compliance-policies"></a>Definire i criteri di conformità del dispositivo
 
@@ -276,7 +280,7 @@ Creare un criterio per ogni piattaforma:
 - Windows 8,1 e versioni successive
 - Windows 10 e versioni successive
 
-Per creare criteri di conformità dei dispositivi, accedere al portale di Microsoft Azure con le credenziali di amministrazione e quindi accedere a **Intune _GT_ Device Compliance**. Selezionare **Crea criterio**.
+Per creare criteri di conformità dei dispositivi, accedere al portale di Microsoft Azure con le credenziali di amministrazione e quindi accedere a **Intune > conformità del dispositivo**. Selezionare **Crea criterio**.
 
 Le impostazioni seguenti sono consigliate per Windows 10.
 
@@ -305,7 +309,7 @@ Tutti i criteri descritti in precedenza vengono considerati distribuiti se asseg
 ||Password semplici|Blocco||
 ||Tipo di password|Impostazione predefinita del dispositivo||
 ||Lunghezza minima password|6||
-||Numero massimo di minuti di inattività prima che sia necessaria la password|15|Questa impostazione è supportata per le versioni Android 4,0 e successive o per KNOX 4,0 o versione precedente. Per i dispositivi iOS, è supportato per iOS 8,0 e superiori|
+||Numero massimo di minuti di inattività prima che sia necessaria la password|15 |Questa impostazione è supportata per le versioni Android 4,0 e successive o per KNOX 4,0 o versione precedente. Per i dispositivi iOS, è supportato per iOS 8,0 e superiori|
 ||Scadenza password (giorni)|41||
 ||Numero di password precedenti per impedire il riutilizzo|5||
 ||Richiedi password quando il dispositivo ritorna dallo stato di inattività (mobile e olografico)|Richiedono|Disponibile per Windows 10 e versioni successive|
@@ -322,7 +326,7 @@ Tutti i criteri descritti in precedenza vengono considerati distribuiti se asseg
 
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
-|Windows Defender Advanced Threat Protection Rules|Richiedere che il dispositivo sia a o sotto il Punteggio di rischio del computer|Medio||
+|Windows Defender Advanced Threat Protection Rules|Richiedere che il dispositivo sia a o sotto il Punteggio di rischio del computer|Media||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Richiedere PC conformi (ma non conformi a telefoni e Tablet)
 Prima di aggiungere un criterio per richiedere PC conformi, assicurarsi di registrare i dispositivi per la gestione in Intune. L'utilizzo dell'autenticazione a più fattori è consigliato prima di registrare i dispositivi in Intune per garantire che il dispositivo sia in possesso dell'utente desiderato. 
