@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 40927b18b0d047eae848b5a2a938d98fa6de3119
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 06ec98ebc7ea44a1bf3d8039e3a3ab7102521d3e
+ms.sourcegitcommit: ef749c44d72b5258706be86a4af1aeca4154ead2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857329"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35447528"
 ---
 # <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>Registrare i dispositivi in Microsoft Managed Desktop per i partner
 
@@ -20,7 +20,7 @@ In questo argomento vengono illustrati i passaggi da seguire per i partner per l
 
 
 ## <a name="prepare-for-registration"></a>Prepararsi per la registrazione 
-Prima di completare la registrazione per un cliente, è necessario innanzitutto stabilire una relazione con tali utenti nel [centro partner](https://partner.microsoft.com/dashboard). Per ulteriori informazioni, vedere la [Guida di partner Center](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer).
+Prima di completare la registrazione per un cliente, è necessario innanzitutto stabilire una relazione con tali utenti nel [centro partner](https://partner.microsoft.com/dashboard). Assicurarsi di selezionare **Includi privilegi di amministrazione delegata per Azure Active Directory e Office 365**. Per ulteriori informazioni, vedere la [Guida di partner Center](https://docs.microsoft.com/en-us/partner-center/request-a-relationship-with-a-customer).
 
 Per completare la registrazione per il cliente, creare innanzitutto un file CSV.
 
