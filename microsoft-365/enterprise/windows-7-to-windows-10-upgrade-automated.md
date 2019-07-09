@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aggiornamenti automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
-ms.openlocfilehash: 4e07ae23f063bdc714d5dddd8cdb8d8c41e25eac
-ms.sourcegitcommit: 12c4d5444d6e0e8825fc85e3e8453fa376746495
+ms.openlocfilehash: 6fc22ad7ae8b0a34384818bc77813c6802609b89
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35395330"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584512"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Aggiornamenti sul posto automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
 
 A partire dal 14 gennaio 2020, gli aggiornamenti della sicurezza o il supporto per PC che eseguono Windows 7 non sarà più disponibile. A pochi mesi al passaggio da Windows 7 a Windows 10 e con diverse opzioni di distribuzione disponibili, la domanda più comune nella community IT è "Qual è il modo più rapido per passare da Windows 7 a Windows 10?" La risposta breve è quella di eseguire gli aggiornamenti sul posto per i PC esistenti, in modo da poter ridurre l'attenzione su vari aspetti del processo di distribuzione desktop.
 
-![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png)
+<center><img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
 Con gli aggiornamenti sul posto, l'ambito di diversi processi di distribuzione desktop viene ridotto in modo significativo, in particolare:
 
