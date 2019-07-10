@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come prepararsi per la manutenzione di Windows e Office nel proprio ambiente.
-ms.openlocfilehash: 9cc550ca87c1c71ef4a01030ce93b6300fcc019d
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 6f3f5faf4c45829cdb4d2f9ac48ef0c9988ec270
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814597"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584562"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Passaggio 7: manutenzione di Windows e Office
 
@@ -37,7 +37,7 @@ ms.locfileid: "34814597"
 >La manutenzione di Windows e Office è il settimo passaggio del nostro processo di distribuzione consigliato e illustra la pianificazione per la preparazione agli aggiornamenti semestrali delle funzionalità. Per vedere il processo di distribuzione desktop completo, visitare il [Centro distribuzione desktop](https://aka.ms/HowToShift).
 >
 
-Sia Windows 10 che Office 365 ProPlus introducono nuove opzioni di manutenzione, modelli di supporto e tempistiche di aggiornamento. Queste modifiche semplificano il processo per rimanere aggiornati sulle ultime funzionalità. Oltre a questi aggiornamenti sono disponibili nuove opzioni di configurazione, per creare piani di manutenzione sulla base delle proprie specifiche esigenze. Di seguito viene descritto come prepararsi per gli aggiornamenti di canale semestrali che offrono nuove funzionalità e capacità in Windows 10 e Office 365 ProPlus utilizzando le nuove funzionalità di System Center Configuration Manager Current Branch.
+Sia Windows 10 che Office 365 ProPlus introducono nuove opzioni di manutenzione, modelli di supporto e tempistiche di aggiornamento. Queste modifiche semplificano il processo per rimanere aggiornati sulle ultime funzionalità. Oltre a questi aggiornamenti sono disponibili nuove opzioni di configurazione, per creare piani di manutenzione sulla base delle proprie specifiche esigenze. Di seguito viene descritto come prepararsi per gli aggiornamenti di canale semestrali che offrono nuove funzionalità e capacità in Windows 10 e Office 365 ProPlus utilizzando le nuove funzionalità di System Center Configuration Manager (Current Branch).
 
 [Aiutare i clienti a passare a Windows 10 e Office 365 ProPlus](https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/)
 
@@ -79,7 +79,7 @@ INOLTRE, poiché le build di Office 365 ProPlus Insider riflettono gli aggiornam
 
 ### <a name="supporting-management-tools"></a>Strumenti di gestione di supporto
 
-Al fine di rendere la distribuzione degli aggiornamenti ideale per l'utente, System Center Configuration Manager Current Branch viene aggiornato frequentemente per supportare l'implementazione degli aggiornamenti su Windows e Office e qualsiasi nuova funzionalità.
+Al fine di rendere la distribuzione degli aggiornamenti ideale per l'utente, System Center Configuration Manager (Current Branch) viene aggiornato frequentemente per supportare l'implementazione degli aggiornamenti su Windows e Office e qualsiasi nuova funzionalità.
 
 
   [Distribuire gli aggiornamenti di Windows 10 con System Center Configuration Manager](https://docs.microsoft.com/it-IT/windows/deployment/update/waas-manage-updates-configuration-manager)
@@ -127,7 +127,7 @@ Usando una tecnologia chiamata "Express Updates" in Windows e Binary Delta Compr
 
 [Aggiornamenti qualitativi di Windows 10 illustrati e fine degli aggiornamenti delta](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
 
-Windows Update for Business e Windows Server Update Services hanno supportato gli Express Updates per un lungo periodo, tuttavia ora è stato esteso il supporto a System Center Configuration Manager in modo che possa utilizzare anche gli Express Updates.
+Windows Update per le aziende e Windows Server Update Services hanno supportato gli Express Updates per un lungo periodo, tuttavia ora è stato esteso il supporto a System Center Configuration Manager (Current Branch) in modo che possa utilizzare anche gli Express Updates.
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
 
@@ -143,7 +143,7 @@ Quindi queste sono le considerazioni sugli aggiornamenti mensili. Ora si può pa
 
 Come descritto nella sezione relativa alla preparazione di dispositivi e applicazioni, sarà necessario prepararsi per questi aggiornamenti più grandi utilizzando gli stessi strumenti di preparazione configurati nel Passaggio 1 del grafico circolare del processo di distribuzione.
 
-Per quanto riguarda gli strumenti, è possibile utilizzare le impostazioni dei criteri con Windows Update for Business, la gestione degli aggiornamenti software tramite System Center Configuration Manager, Windows Server Update Services (WSUS) o i criteri di aggiornamento impostati da Microsoft Intune. Se si è preoccupati della larghezza di banda della rete, vedere il Passaggio 2: conformità di directory e rete per informazioni sulle opzioni per ridurre il traffico di rete tramite ottimizzazione recapito e altre tecnologie di memorizzazione nella cache peer-to-peer.
+Per quanto riguarda gli strumenti, è possibile utilizzare le impostazioni dei criteri con Windows Update per le aziende, la gestione degli aggiornamenti software tramite System Center Configuration Manager (Current Branch), Windows Server Update Services (WSUS) o i criteri di aggiornamento impostati da Microsoft Intune. Se si è preoccupati della larghezza di banda della rete, vedere il Passaggio 2: conformità di directory e rete per informazioni sulle opzioni per ridurre il traffico di rete tramite ottimizzazione recapito e altre tecnologie di memorizzazione nella cache peer-to-peer.
 
 ![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
@@ -155,7 +155,7 @@ Per quanto riguarda gli strumenti, è possibile utilizzare le impostazioni dei c
 
 #### <a name="upgrade-task-sequences"></a>Sequenze di attività di aggiornamento
 
-L'installazione degli aggiornamenti di funzionalità più grandi tramite routine di gestione degli aggiornamenti software standard è un'opzione supportata, ma molte organizzazioni sceglieranno di utilizzare una sequenza di attività di aggiornamento con System Center Configuration Manager o Microsoft Deployment Toolkit.
+L'installazione degli aggiornamenti di funzionalità più grandi tramite routine di gestione degli aggiornamenti software standard è un'opzione supportata, ma molte organizzazioni sceglieranno di utilizzare una sequenza di attività di aggiornamento con System Center Configuration Manager (Current Branch) o Microsoft Deployment Toolkit.
 
 Una sequenza di attività consente di creare controlli personalizzati o attività PRIMA dell'installazione dell'aggiornamento delle funzionalità e consente di eseguire attività personalizzate DOPO che l'installazione dell'aggiornamento è stata completata. Le attività di post-aggiornamento potrebbero includere servizi di sospensione temporanea se necessario durante l'aggiornamento, installazione sostituzione di driver, aggiornamenti di applicazioni o barra delle applicazioni e impostazioni Start personalizzate di Windows 10.
 

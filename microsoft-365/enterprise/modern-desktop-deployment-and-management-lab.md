@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: c056aba81edc079f0577dea8d4ef535d7e6cc32a
-ms.sourcegitcommit: a84cf473bc61a7bb1cfca221cf435e0a418305b2
+ms.openlocfilehash: ba1cd7e88766b6393bafcbd7381ceeb98f030d51
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576506"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584532"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
 Questi lab pratici scaricabili sono incentrati sulla distribuzione di Windows 10 e di Office 365 e includono anche considerazioni sulle attività di configurazione e gestione successive alla distribuzione. Questo training è vivamente consigliato per le organizzazioni che si stanno preparando alla fine del ciclo di vita di Windows 7, ma è utile anche se si usa Windows 10 e Office 365 Plus o Office 2019. Sono incluse le guide relative a Windows 10, Office 365 ProPlus, Enterprise Mobility + Security e prodotti e servizi correlati.
 
-Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione di desktop che eseguono Windows 10 Enterprise e Office 365 ProPlus. I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano System Center Configuration Manager, Windows Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
+Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione di desktop che eseguono Windows 10 Enterprise e Office 365 ProPlus. I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano System Center Configuration Manager, Desktop Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
 
 Come parte del processo di [distribuzione del desktop](http://www.aka.ms/howtoshift) per Windows 10 e Office 365 ProPlus, la creazione di un ambiente lab sandbox o isolato è il punto di partenza consigliato quando si inizia a esplorare gli aggiornamenti dello strumento di distribuzione e a testare l'automazione correlata alla distribuzione.
 
@@ -60,7 +60,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 ### <a name="device-and-app-readiness"></a>**Preparazione di app e dispositivi**
 
-  - Windows Analytics
+  - Desktop Analytics
   - Modalità Enterprise ed Enterprise Mode Site List per Internet Explorer
 
 ### <a name="directory-and-network-readiness"></a>**Preparazione di rete e directory**

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulle opzioni per la distribuzione del sistema operativo e gli aggiornamenti delle funzionalità.
-ms.openlocfilehash: e26bbea4e0507c66102931eb102ce96d2620cfc7
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 16af9a57623ffbdd73d97d44993c36ce57889eaf
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814627"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584542"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Passaggio 6: distribuzione del sistema operativo e aggiornamenti delle funzionalità
 
@@ -49,7 +49,7 @@ La maggior parte delle organizzazioni utilizza il processo di acquisizione dell'
 
 Se si intraprende la strada dell'acquisizione dell'immagine, è meglio automatizzare il più possibile per garantire la miglior qualità dell'immagine e un processo ripetibile. Per la maggior parte delle distribuzioni, è inoltre consigliato ridurre la personalizzazione e le app pre-installate nell'immagine Windows prima dell'acquisizione. Questo si intende con l'approccio "immagine semplice" con il quale è possibile risparmiare larghezza di banda sulla rete eliminando il numero di app all'interno dell'immagine. Iniziando con un'immagine semplice, è possibile poi aggiungere app, lingue e configurazioni necessarie in modo dinamico in base alle esigenze degli utenti.
 
-Durante il processo di creazione e acquisizione, strumenti come System Center Configuration Manager e Microsoft Deployment Toolkit usano Utilità preparazione sistema, o Sysprep, insieme al comando "Generalizza" per sigillare l'immagine prima di acquisire l'installazione di Windows 10 come immagine.
+Durante il processo di creazione e acquisizione, strumenti come System Center Configuration Manager (Current Branch)e Microsoft Deployment Toolkit usano Utilità preparazione sistema, o Sysprep, insieme al comando "Generalizza" per sigillare l'immagine prima di acquisire l'installazione di Windows 10 come immagine.
 
 L'immagine acquisita avrà il formato dell'immagine Windows, o WIM, come il supporto di installazione Windows standard. Una volta pronto il file WIM personalizzato, è possibile usare un'altra sequenza di attività nell'ambito della distribuzione del sistema operativo in System Center Configuration Manager o Microsoft Deployment Toolkit per eseguire attività correlate alla distribuzione, per applicare l'immagine ed eseguire attività prima e dopo l'applicazione dell'immagine Windows.
 
@@ -76,7 +76,7 @@ Tutte e tre gli scenari hanno qualcosa in comune: consentono di eseguire una seq
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>Aggiornamento sul posto con automazione della sequenza di attività
 
-Oltre a questi tipi di distribuzione, è disponibile un nuova opzione come sequenza di attività di System Center Configuration Manager con Windows 10 e l'aggiornamento sul posto tramite l'automazione della sequenza di attività.
+Oltre a questi tipi di distribuzione, è disponibile un nuova opzione come sequenza di attività di System Center Configuration Manager (Current Branch) con Windows 10 e l'aggiornamento sul posto tramite l'automazione della sequenza di attività.
 
 Gli aggiornamenti sul posto di una versione precedente di Windows non richiedono una sequenza di attività, ma è un approccio consigliato per le distribuzioni a livello di azienda. Un aggiornamento sul posto non consente di applicare un'immagine personalizzata con applicazioni, ma è possibile aggiornare il file predefinito install.wim tramite i servizi offline. Ad esempio, è possibile assicurarsi che gli aggiornamenti Windows più recenti vengano applicati prima di eseguire gli aggiornamenti.
 
@@ -100,7 +100,7 @@ Durante la pianificazione della distribuzione, si definiscono i computer delle d
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
-### <a name="recommended-tools-system-center-configuration-manager-and-the-microsoft-deployment-toolkit"></a>Strumenti consigliati: System Center Configuration Manager e Microsoft Deployment Toolkit
+### <a name="recommended-tools-system-center-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Strumenti consigliati: System Center Configuration Manager (Current Branch) e Microsoft Deployment Toolkit
 
 Indipendentemente dal tipo di distribuzione scelto, è necessario assicurarsi che la distribuzione sia il più automatizzata possibile per prevedibilità e ripetibilità. Microsoft offre due soluzioni per automatizzare la distribuzione del sistema operativo attraverso sequenze di attività automatizzate:
 

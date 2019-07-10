@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introduzione al processo di distribuzione desktop.
-ms.openlocfilehash: b9264f8d9232bf1b88372694d43e2d2c70c8cb70
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 60389149e286bca8e27f50dabee8aaf03f52c90c
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814657"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584522"
 ---
 # <a name="getting-started---desktop-deployment"></a>Guida introduttiva - Distribuzione desktop
 
@@ -86,7 +86,7 @@ L'installazione A portata di clic è molto diversa dai pacchetti basati su MSI d
 
 Prima di iniziare, sarà necessario creare un piano di alto livello e coinvolgere gli sponsor necessari. Il diagramma circolare del processo di distribuzione delinea i passaggi critici che consentono di identificare i membri del team e le risorse principali da gestire nelle aree di implementazione seguenti.
 
-**[Passaggio 1: preparazione di dispositivi e app](https://aka.ms/mdd1)** Per l'esito corretto della distribuzione, è necessario prima di tutto sapere cosa si ha a disposizione, ovvero fare un inventario di dispositivi e app e verificarne la compatibilità. A questo scopo è possibile usare gli strumenti disponibili nel servizio basato sul cloud Windows Analytics. Windows Analytics consente di sfruttare dati di compatibilità e di diagnostica raccolti da centinaia di milioni di PC, per valutare le app e i driver in esecuzione nel dispositivo in modo da poter stabilire lo stato di preparazione del desktop. È anche possibile esportare un elenco di "PC pronti per la distribuzione" da Windows Analytics a System Center Configuration Manager, se usato, per creare raccolte di PC specifici basate sui dati non appena disponibili.
+**[Passaggio 1: preparazione di dispositivi e app](https://aka.ms/mdd1)** Per l'esito corretto della distribuzione, è necessario prima di tutto sapere cosa si ha a disposizione, ovvero fare un inventario di dispositivi e app e verificarne la compatibilità. A questo scopo è possibile usare gli strumenti disponibili nel servizio basato sul cloud Desktop Analytics. Desktop Analytics consente di sfruttare dati di compatibilità e di diagnostica raccolti da centinaia di milioni di PC, per valutare le app e i driver in esecuzione nel dispositivo in modo da poter stabilire lo stato di preparazione del desktop. È anche possibile esportare un elenco di "PC pronti per la distribuzione" da Desktop Analytics a System Center Configuration Manager, se usato, per creare raccolte di PC specifici basate sui dati non appena disponibili.
 
 
   [Introduzione alla preparazione aggiornamenti](https://docs.microsoft.com/it-IT/windows/deployment/upgrade/upgrade-readiness-get-started)
