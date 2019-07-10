@@ -8,16 +8,21 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 65602cb3175f8a930537746d831bb85f26de0383
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 4915bf5d1b89720c65a5134b23d9d837febff357
+ms.sourcegitcommit: 184957e2878388e0d427a7ee47577d29c4e3c483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390363"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605965"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia delle modifiche per la documentazione di Microsoft Managed Desktop
 
 In questo argomento vengono elencati gli argomenti nuovi e aggiornati nella [documentazione relativa a Microsoft Managed Desktop](index.yml).
+
+## <a name="july-2019"></a>2019 luglio
+Argomento nuovo o modificato | Descrizione
+--- | ---
+[Utilizzo di Microsoft Consulting Services](get-ready/apps-mcs.md) | Argomento aggiornato
 
 ## <a name="june-2019"></a>2019 giugno
 Argomento nuovo o modificato | Descrizione
