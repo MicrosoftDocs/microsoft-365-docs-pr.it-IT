@@ -13,136 +13,136 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: c056aba81edc079f0577dea8d4ef535d7e6cc32a
-ms.sourcegitcommit: a84cf473bc61a7bb1cfca221cf435e0a418305b2
+ms.openlocfilehash: ba1cd7e88766b6393bafcbd7381ceeb98f030d51
+ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576506"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35584532"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a><span data-ttu-id="156b3-103">Lab Kit di distribuzione di Windows e Office</span><span class="sxs-lookup"><span data-stu-id="156b3-103">Windows and Office Deployment Lab Kit</span></span>
+# <a name="windows-and-office-deployment-lab-kit"></a><span data-ttu-id="3084a-103">Lab Kit di distribuzione di Windows e Office</span><span class="sxs-lookup"><span data-stu-id="3084a-103">Windows and Office Deployment Lab Kit</span></span>
 
-<span data-ttu-id="156b3-p101">Questi lab pratici scaricabili sono incentrati sulla distribuzione di Windows 10 e di Office 365 e includono anche considerazioni sulle attività di configurazione e gestione successive alla distribuzione. Questo training è vivamente consigliato per le organizzazioni che si stanno preparando alla fine del ciclo di vita di Windows 7, ma è utile anche se si usa Windows 10 e Office 365 Plus o Office 2019. Sono incluse le guide relative a Windows 10, Office 365 ProPlus, Enterprise Mobility + Security e prodotti e servizi correlati.</span><span class="sxs-lookup"><span data-stu-id="156b3-p101">These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with the related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.</span></span>
+<span data-ttu-id="3084a-p101">Questi lab pratici scaricabili sono incentrati sulla distribuzione di Windows 10 e di Office 365 e includono anche considerazioni sulle attività di configurazione e gestione successive alla distribuzione. Questo training è vivamente consigliato per le organizzazioni che si stanno preparando alla fine del ciclo di vita di Windows 7, ma è utile anche se si usa Windows 10 e Office 365 Plus o Office 2019. Sono incluse le guide relative a Windows 10, Office 365 ProPlus, Enterprise Mobility + Security e prodotti e servizi correlati.</span><span class="sxs-lookup"><span data-stu-id="3084a-p101">These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with the related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.</span></span>
 
-<span data-ttu-id="156b3-107">Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione di desktop che eseguono Windows 10 Enterprise e Office 365 ProPlus.</span><span class="sxs-lookup"><span data-stu-id="156b3-107">These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus.</span></span> <span data-ttu-id="156b3-108">I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano System Center Configuration Manager, Windows Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.</span><span class="sxs-lookup"><span data-stu-id="156b3-108">The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning System Center Configuration Manager, Windows Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.</span></span>
+<span data-ttu-id="3084a-107">Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione di desktop che eseguono Windows 10 Enterprise e Office 365 ProPlus.</span><span class="sxs-lookup"><span data-stu-id="3084a-107">These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus.</span></span> <span data-ttu-id="3084a-108">I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano System Center Configuration Manager, Desktop Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.</span><span class="sxs-lookup"><span data-stu-id="3084a-108">The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning System Center Configuration Manager, Windows Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.</span></span>
 
-<span data-ttu-id="156b3-109">Come parte del processo di [distribuzione del desktop](http://www.aka.ms/howtoshift) per Windows 10 e Office 365 ProPlus, la creazione di un ambiente lab sandbox o isolato è il punto di partenza consigliato quando si inizia a esplorare gli aggiornamenti dello strumento di distribuzione e a testare l'automazione correlata alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="156b3-109">As part of the [Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.</span></span>
+<span data-ttu-id="3084a-109">Come parte del processo di [distribuzione del desktop](http://www.aka.ms/howtoshift) per Windows 10 e Office 365 ProPlus, la creazione di un ambiente lab sandbox o isolato è il punto di partenza consigliato quando si inizia a esplorare gli aggiornamenti dello strumento di distribuzione e a testare l'automazione correlata alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="3084a-109">As part of the [Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.</span></span>
 
-<span data-ttu-id="156b3-110">Il lab kit può essere scaricato gratuitamente e utilizza un software di valutazione.</span><span class="sxs-lookup"><span data-stu-id="156b3-110">The lab kit is free to download and uses trial software.</span></span>
+<span data-ttu-id="3084a-110">Il lab kit può essere scaricato gratuitamente e utilizza un software di valutazione.</span><span class="sxs-lookup"><span data-stu-id="3084a-110">The lab kit is free to download and uses trial software.</span></span>
 
-### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[<span data-ttu-id="156b3-111">**Scaricare il Lab Kit di distribuzione di Windows e Office**</span><span class="sxs-lookup"><span data-stu-id="156b3-111">**Download the Windows and Office Deployment Lab Kit**</span></span>](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[<span data-ttu-id="3084a-111">**Scaricare il Lab Kit di distribuzione di Windows e Office**</span><span class="sxs-lookup"><span data-stu-id="3084a-111">**Download the Windows and Office Deployment Lab Kit**</span></span>](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-## <a name="a-complete-lab-environment"></a><span data-ttu-id="156b3-112">**Un ambiente lab completo**</span><span class="sxs-lookup"><span data-stu-id="156b3-112">**A complete lab environment**</span></span>
+## <a name="a-complete-lab-environment"></a><span data-ttu-id="3084a-112">**Un ambiente lab completo**</span><span class="sxs-lookup"><span data-stu-id="3084a-112">**A complete lab environment**</span></span>
 
-<span data-ttu-id="156b3-p103">Il lab fornisce un ambiente lab virtuale con provisioning automatico, che comprende client desktop aggiunti a un dominio, un controller di dominio, gateway Internet e un'istanza di ConfigMgr completamente configurata. Il lab contiene versioni di valutazione dei prodotti seguenti:</span><span class="sxs-lookup"><span data-stu-id="156b3-p103">The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance. The lab contains Evaluation Versions of the following products:</span></span>
+<span data-ttu-id="3084a-p103">Il lab fornisce un ambiente lab virtuale con provisioning automatico, che comprende client desktop aggiunti a un dominio, un controller di dominio, gateway Internet e un'istanza di ConfigMgr completamente configurata. Il lab contiene versioni di valutazione dei prodotti seguenti:</span><span class="sxs-lookup"><span data-stu-id="3084a-p103">The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance. The lab contains Evaluation Versions of the following products:</span></span>
 
-  - <span data-ttu-id="156b3-115">Windows 10 Enterprise, versione 1903</span><span class="sxs-lookup"><span data-stu-id="156b3-115">Windows 10 Enterprise, Version 1809</span></span>
-  - <span data-ttu-id="156b3-116">Windows 7 Enterprise</span><span class="sxs-lookup"><span data-stu-id="156b3-116">Install Windows 7 Enterprise from DVD media</span></span>
-  - <span data-ttu-id="156b3-117">System Center Configuration Manager, versione 1902</span><span class="sxs-lookup"><span data-stu-id="156b3-117">System Center Configuration Manager, Version 1802</span></span>
-  - <span data-ttu-id="156b3-118">Windows Assessment and Deployment Kit per Windows 10, versione 1903</span><span class="sxs-lookup"><span data-stu-id="156b3-118">Windows Assessment and Deployment Kit for Windows 10, Version 1809</span></span>
-  - <span data-ttu-id="156b3-119">Microsoft Deployment Toolkit</span><span class="sxs-lookup"><span data-stu-id="156b3-119">Microsoft Deployment Toolkit</span></span>
-  - <span data-ttu-id="156b3-120">Microsoft Application Virtualization (App-V) 5.1</span><span class="sxs-lookup"><span data-stu-id="156b3-120">Microsoft Application Virtualization (App-V) 5.1</span></span>
-  - <span data-ttu-id="156b3-121">Amministrazione e gestione di Microsoft Bitlocker 2.5 SP1</span><span class="sxs-lookup"><span data-stu-id="156b3-121">Microsoft BitLocker Administration and Monitoring 2.5 SP1</span></span>
-  - <span data-ttu-id="156b3-122">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="156b3-122">Windows Server 2019</span></span>
-  - <span data-ttu-id="156b3-123">Microsoft SQL Server 2017</span><span class="sxs-lookup"><span data-stu-id="156b3-123">Microsoft SQL Server 2017 RTM</span></span>
+  - <span data-ttu-id="3084a-115">Windows 10 Enterprise, versione 1903</span><span class="sxs-lookup"><span data-stu-id="3084a-115">Windows 10 Enterprise, Version 1809</span></span>
+  - <span data-ttu-id="3084a-116">Windows 7 Enterprise</span><span class="sxs-lookup"><span data-stu-id="3084a-116">Install Windows 7 Enterprise from DVD media</span></span>
+  - <span data-ttu-id="3084a-117">System Center Configuration Manager, versione 1902</span><span class="sxs-lookup"><span data-stu-id="3084a-117">System Center Configuration Manager, Version 1802</span></span>
+  - <span data-ttu-id="3084a-118">Windows Assessment and Deployment Kit per Windows 10, versione 1903</span><span class="sxs-lookup"><span data-stu-id="3084a-118">Windows Assessment and Deployment Kit for Windows 10, Version 1809</span></span>
+  - <span data-ttu-id="3084a-119">Microsoft Deployment Toolkit</span><span class="sxs-lookup"><span data-stu-id="3084a-119">Microsoft Deployment Toolkit</span></span>
+  - <span data-ttu-id="3084a-120">Microsoft Application Virtualization (App-V) 5.1</span><span class="sxs-lookup"><span data-stu-id="3084a-120">Microsoft Application Virtualization (App-V) 5.1</span></span>
+  - <span data-ttu-id="3084a-121">Amministrazione e gestione di Microsoft Bitlocker 2.5 SP1</span><span class="sxs-lookup"><span data-stu-id="3084a-121">Microsoft BitLocker Administration and Monitoring 2.5 SP1</span></span>
+  - <span data-ttu-id="3084a-122">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="3084a-122">Windows Server 2019</span></span>
+  - <span data-ttu-id="3084a-123">Microsoft SQL Server 2017</span><span class="sxs-lookup"><span data-stu-id="3084a-123">Microsoft SQL Server 2017 RTM</span></span>
 
-<span data-ttu-id="156b3-124">INOLTRE, il lab è progettato per essere collegato alle versioni di valutazione per:</span><span class="sxs-lookup"><span data-stu-id="156b3-124">PLUS, the lab is designed to be connected to trials for:</span></span> 
+<span data-ttu-id="3084a-124">INOLTRE, il lab è progettato per essere collegato alle versioni di valutazione per:</span><span class="sxs-lookup"><span data-stu-id="3084a-124">PLUS, the lab is designed to be connected to trials for:</span></span> 
 
-  - <span data-ttu-id="156b3-125">Microsoft 365 Enterprise E5</span><span class="sxs-lookup"><span data-stu-id="156b3-125">Microsoft 365 Enterprise E5</span></span>
+  - <span data-ttu-id="3084a-125">Microsoft 365 Enterprise E5</span><span class="sxs-lookup"><span data-stu-id="3084a-125">Microsoft 365 Enterprise E5</span></span>
 
-<span data-ttu-id="156b3-126">Oppure</span><span class="sxs-lookup"><span data-stu-id="156b3-126">Or</span></span>
-  - <span data-ttu-id="156b3-127">Office 365 Enterprise E5</span><span class="sxs-lookup"><span data-stu-id="156b3-127">Office 365 Enterprise E5</span></span>
-  - <span data-ttu-id="156b3-128">Enterprise Mobility + Security</span><span class="sxs-lookup"><span data-stu-id="156b3-128">Enterprise Mobility + Security</span></span>
+<span data-ttu-id="3084a-126">Oppure</span><span class="sxs-lookup"><span data-stu-id="3084a-126">Or</span></span>
+  - <span data-ttu-id="3084a-127">Office 365 Enterprise E5</span><span class="sxs-lookup"><span data-stu-id="3084a-127">Office 365 Enterprise E5</span></span>
+  - <span data-ttu-id="3084a-128">Enterprise Mobility + Security</span><span class="sxs-lookup"><span data-stu-id="3084a-128">Enterprise Mobility + Security</span></span>
 
-## <a name="step-by-step-labs"></a><span data-ttu-id="156b3-129">**Lab dettagliati**</span><span class="sxs-lookup"><span data-stu-id="156b3-129">**Step-by-step labs**</span></span>
+## <a name="step-by-step-labs"></a><span data-ttu-id="3084a-129">**Lab dettagliati**</span><span class="sxs-lookup"><span data-stu-id="3084a-129">**Step-by-step labs**</span></span>
 
-<span data-ttu-id="156b3-130">Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuzione e gestione, tra cui:</span><span class="sxs-lookup"><span data-stu-id="156b3-130">Detailed lab guides take you through multiple deployment and management scenarios, including:</span></span>
+<span data-ttu-id="3084a-130">Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuzione e gestione, tra cui:</span><span class="sxs-lookup"><span data-stu-id="3084a-130">Detailed lab guides take you through multiple deployment and management scenarios, including:</span></span>
 
-### <a name="device-and-app-readiness"></a><span data-ttu-id="156b3-131">**Preparazione di app e dispositivi**</span><span class="sxs-lookup"><span data-stu-id="156b3-131">**Device and App Readiness**</span></span>
+### <a name="device-and-app-readiness"></a><span data-ttu-id="3084a-131">**Preparazione di app e dispositivi**</span><span class="sxs-lookup"><span data-stu-id="3084a-131">**Device and App Readiness**</span></span>
 
-  - <span data-ttu-id="156b3-132">Windows Analytics</span><span class="sxs-lookup"><span data-stu-id="156b3-132">Windows Analytics</span></span>
-  - <span data-ttu-id="156b3-133">Modalità Enterprise ed Enterprise Mode Site List per Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="156b3-133">Enterprise Mode and the Enterprise Mode Site List for Internet Explorer</span></span>
+  - <span data-ttu-id="3084a-132">Desktop Analytics</span><span class="sxs-lookup"><span data-stu-id="3084a-132">Desktop Analytics</span></span>
+  - <span data-ttu-id="3084a-133">Modalità Enterprise ed Enterprise Mode Site List per Internet Explorer</span><span class="sxs-lookup"><span data-stu-id="3084a-133">Enterprise Mode and the Enterprise Mode Site List for Internet Explorer</span></span>
 
-### <a name="directory-and-network-readiness"></a><span data-ttu-id="156b3-134">**Preparazione di rete e directory**</span><span class="sxs-lookup"><span data-stu-id="156b3-134">**Directory and Network Readiness**</span></span>
+### <a name="directory-and-network-readiness"></a><span data-ttu-id="3084a-134">**Preparazione di rete e directory**</span><span class="sxs-lookup"><span data-stu-id="3084a-134">**Directory and Network Readiness**</span></span>
 
-  - <span data-ttu-id="156b3-135">Configurazione di base per Azure Active Directory e Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="156b3-135">Basic setup for Azure Active Directory and Microsoft 365</span></span>
-  - <span data-ttu-id="156b3-136">Ottimizzazione della rete tramite Ottimizzazione recapito, Peer cache in ConfigMgr e LEDBAT</span><span class="sxs-lookup"><span data-stu-id="156b3-136">Network optimization using Delivery Optimization, Peer Cache in ConfigMgr and LEDBAT</span></span>
-  - <span data-ttu-id="156b3-137">Gestione contemporanea di ConfigMgr e Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="156b3-137">ConfigMgr and Microsoft Intune Co-Management</span></span>
-  - <span data-ttu-id="156b3-138">Accesso remoto (VPN)</span><span class="sxs-lookup"><span data-stu-id="156b3-138">Remote Access (VPN)</span></span>
+  - <span data-ttu-id="3084a-135">Configurazione di base per Azure Active Directory e Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="3084a-135">Basic setup for Azure Active Directory and Microsoft 365</span></span>
+  - <span data-ttu-id="3084a-136">Ottimizzazione della rete tramite Ottimizzazione recapito, Peer cache in ConfigMgr e LEDBAT</span><span class="sxs-lookup"><span data-stu-id="3084a-136">Network optimization using Delivery Optimization, Peer Cache in ConfigMgr and LEDBAT</span></span>
+  - <span data-ttu-id="3084a-137">Gestione contemporanea di ConfigMgr e Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="3084a-137">ConfigMgr and Microsoft Intune Co-Management</span></span>
+  - <span data-ttu-id="3084a-138">Accesso remoto (VPN)</span><span class="sxs-lookup"><span data-stu-id="3084a-138">Remote Access (VPN)</span></span>
 
-### <a name="office-and-lob-app-delivery"></a><span data-ttu-id="156b3-139">**Distribuzione di app line-of-business e di Office**</span><span class="sxs-lookup"><span data-stu-id="156b3-139">**Office and LOB App Delivery**</span></span>
+### <a name="office-and-lob-app-delivery"></a><span data-ttu-id="3084a-139">**Distribuzione di app line-of-business e di Office**</span><span class="sxs-lookup"><span data-stu-id="3084a-139">**Office and LOB App Delivery**</span></span>
 
-  - <span data-ttu-id="156b3-140">Distribuzione di Office 365 ProPlus tramite System Center Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="156b3-140">Office 365 ProPlus deployment using System Center Configuration Manager</span></span>
-  - <span data-ttu-id="156b3-141">Distribuzione di Office 365 ProPlus tramite Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="156b3-141">Office 365 ProPlus deployment using Microsoft Intune</span></span>
-  - <span data-ttu-id="156b3-142">Distribuzione e gestione di app tramite Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="156b3-142">App deployment and management using Microsoft Intune</span></span>
-  - <span data-ttu-id="156b3-143">Distribuzione di app e installazione self-service tramite Microsoft Store per le aziende</span><span class="sxs-lookup"><span data-stu-id="156b3-143">App deployment and self-service installation using Microsoft Store for Business</span></span>
-  - <span data-ttu-id="156b3-144">Conversione dell'applicazione Desktop Bridge in UWP</span><span class="sxs-lookup"><span data-stu-id="156b3-144">Desktop Bridge application conversion to UWP</span></span>
-  - <span data-ttu-id="156b3-145">Kit di certificazione app Windows</span><span class="sxs-lookup"><span data-stu-id="156b3-145">Windows App Certification Kit</span></span>
-  - <span data-ttu-id="156b3-146">Correzione della compatibilità del browser tramite la modalità Enterprise per IE</span><span class="sxs-lookup"><span data-stu-id="156b3-146">Browser compatibility remediation using Enterprise Mode for IE</span></span>
+  - <span data-ttu-id="3084a-140">Distribuzione di Office 365 ProPlus tramite System Center Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="3084a-140">Office 365 ProPlus deployment using System Center Configuration Manager</span></span>
+  - <span data-ttu-id="3084a-141">Distribuzione di Office 365 ProPlus tramite Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="3084a-141">Office 365 ProPlus deployment using Microsoft Intune</span></span>
+  - <span data-ttu-id="3084a-142">Distribuzione e gestione di app tramite Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="3084a-142">App deployment and management using Microsoft Intune</span></span>
+  - <span data-ttu-id="3084a-143">Distribuzione di app e installazione self-service tramite Microsoft Store per le aziende</span><span class="sxs-lookup"><span data-stu-id="3084a-143">App deployment and self-service installation using Microsoft Store for Business</span></span>
+  - <span data-ttu-id="3084a-144">Conversione dell'applicazione Desktop Bridge in UWP</span><span class="sxs-lookup"><span data-stu-id="3084a-144">Desktop Bridge application conversion to UWP</span></span>
+  - <span data-ttu-id="3084a-145">Kit di certificazione app Windows</span><span class="sxs-lookup"><span data-stu-id="3084a-145">Windows App Certification Kit</span></span>
+  - <span data-ttu-id="3084a-146">Correzione della compatibilità del browser tramite la modalità Enterprise per IE</span><span class="sxs-lookup"><span data-stu-id="3084a-146">Browser compatibility remediation using Enterprise Mode for IE</span></span>
 
-### <a name="user-file-and-settings-migration"></a><span data-ttu-id="156b3-147">**Migrazione delle impostazioni e dei file utente**</span><span class="sxs-lookup"><span data-stu-id="156b3-147">**User File and Settings Migration**</span></span>
+### <a name="user-file-and-settings-migration"></a><span data-ttu-id="3084a-147">**Migrazione delle impostazioni e dei file utente**</span><span class="sxs-lookup"><span data-stu-id="3084a-147">**User File and Settings Migration**</span></span>
 
-  - <span data-ttu-id="156b3-148">Utilità di migrazione stato utente come parte di sequenze di attività per sostituzione e aggiornamento di PC in ConfigMgr e MDT</span><span class="sxs-lookup"><span data-stu-id="156b3-148">User State Migration Tool as part of PC Refresh and Replacement Task Sequences in ConfigMgr and MDT</span></span>
-  - <span data-ttu-id="156b3-149">Spostamento di cartelle note di OneDrive</span><span class="sxs-lookup"><span data-stu-id="156b3-149">OneDrive Known Folder Move</span></span>
-  - <span data-ttu-id="156b3-150">Enterprise State Roaming</span><span class="sxs-lookup"><span data-stu-id="156b3-150">Enterprise State Roaming</span></span>
+  - <span data-ttu-id="3084a-148">Utilità di migrazione stato utente come parte di sequenze di attività per sostituzione e aggiornamento di PC in ConfigMgr e MDT</span><span class="sxs-lookup"><span data-stu-id="3084a-148">User State Migration Tool as part of PC Refresh and Replacement Task Sequences in ConfigMgr and MDT</span></span>
+  - <span data-ttu-id="3084a-149">Spostamento di cartelle note di OneDrive</span><span class="sxs-lookup"><span data-stu-id="3084a-149">OneDrive Known Folder Move</span></span>
+  - <span data-ttu-id="3084a-150">Enterprise State Roaming</span><span class="sxs-lookup"><span data-stu-id="3084a-150">Enterprise State Roaming</span></span>
 
-### <a name="security-and-compliance"></a><span data-ttu-id="156b3-151">**Sicurezza e conformità**</span><span class="sxs-lookup"><span data-stu-id="156b3-151">**Security and Compliance**</span></span>
+### <a name="security-and-compliance"></a><span data-ttu-id="3084a-151">**Sicurezza e conformità**</span><span class="sxs-lookup"><span data-stu-id="3084a-151">**Security and Compliance**</span></span>
 
-  - <span data-ttu-id="156b3-152">Crittografia dispositivo BitLocker</span><span class="sxs-lookup"><span data-stu-id="156b3-152">BitLocker device encryption</span></span>
-  - <span data-ttu-id="156b3-153">Windows Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="156b3-153">Windows Defender Antivirus</span></span>
-  - <span data-ttu-id="156b3-154">Windows Hello for Business</span><span class="sxs-lookup"><span data-stu-id="156b3-154">Windows Hello for Business</span></span>
-  - <span data-ttu-id="156b3-155">Conversione da BIOS a UEFI come attivatore per la sicurezza basata sulla virtualizzazione</span><span class="sxs-lookup"><span data-stu-id="156b3-155">BIOS to UEFI conversion as an enabler for virtualization-based security</span></span>
-  - <span data-ttu-id="156b3-156">Windows Defender Credential Guard</span><span class="sxs-lookup"><span data-stu-id="156b3-156">Windows Defender Credential Guard</span></span>
-  - <span data-ttu-id="156b3-157">Windows Defender Application Guard</span><span class="sxs-lookup"><span data-stu-id="156b3-157">Windows Defender Application Guard</span></span>
-  - <span data-ttu-id="156b3-158">Windows Defender Exploit Guard</span><span class="sxs-lookup"><span data-stu-id="156b3-158">Windows Defender Exploit Guard</span></span>
-  - <span data-ttu-id="156b3-159">Controllo di applicazioni di Windows Defender</span><span class="sxs-lookup"><span data-stu-id="156b3-159">Windows Defender Application Control</span></span>
-  - <span data-ttu-id="156b3-160">Windows Defender Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="156b3-160">Windows Defender Advanced Threat Protection</span></span>
+  - <span data-ttu-id="3084a-152">Crittografia dispositivo BitLocker</span><span class="sxs-lookup"><span data-stu-id="3084a-152">BitLocker device encryption</span></span>
+  - <span data-ttu-id="3084a-153">Windows Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="3084a-153">Windows Defender Antivirus</span></span>
+  - <span data-ttu-id="3084a-154">Windows Hello for Business</span><span class="sxs-lookup"><span data-stu-id="3084a-154">Windows Hello for Business</span></span>
+  - <span data-ttu-id="3084a-155">Conversione da BIOS a UEFI come attivatore per la sicurezza basata sulla virtualizzazione</span><span class="sxs-lookup"><span data-stu-id="3084a-155">BIOS to UEFI conversion as an enabler for virtualization-based security</span></span>
+  - <span data-ttu-id="3084a-156">Windows Defender Credential Guard</span><span class="sxs-lookup"><span data-stu-id="3084a-156">Windows Defender Credential Guard</span></span>
+  - <span data-ttu-id="3084a-157">Windows Defender Application Guard</span><span class="sxs-lookup"><span data-stu-id="3084a-157">Windows Defender Application Guard</span></span>
+  - <span data-ttu-id="3084a-158">Windows Defender Exploit Guard</span><span class="sxs-lookup"><span data-stu-id="3084a-158">Windows Defender Exploit Guard</span></span>
+  - <span data-ttu-id="3084a-159">Controllo di applicazioni di Windows Defender</span><span class="sxs-lookup"><span data-stu-id="3084a-159">Windows Defender Application Control</span></span>
+  - <span data-ttu-id="3084a-160">Windows Defender Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="3084a-160">Windows Defender Advanced Threat Protection</span></span>
 
-### <a name="os-deployment-and-feature-updates"></a><span data-ttu-id="156b3-161">**Distribuzione del sistema operativo e aggiornamenti delle funzionalità**</span><span class="sxs-lookup"><span data-stu-id="156b3-161">**OS Deployment and Feature Updates**</span></span>
+### <a name="os-deployment-and-feature-updates"></a><span data-ttu-id="3084a-161">**Distribuzione del sistema operativo e aggiornamenti delle funzionalità**</span><span class="sxs-lookup"><span data-stu-id="3084a-161">**OS Deployment and Feature Updates**</span></span>
 
-  - <span data-ttu-id="156b3-162">Creazione dell'immagine del sistema operativo</span><span class="sxs-lookup"><span data-stu-id="156b3-162">OS image creation</span></span>
-  - <span data-ttu-id="156b3-163">Sequenze di attività di distribuzione del sistema operativo in ConfigMgr</span><span class="sxs-lookup"><span data-stu-id="156b3-163">OS Deployment Task Sequences in ConfigMgr</span></span>
-      - <span data-ttu-id="156b3-164">Bare metal</span><span class="sxs-lookup"><span data-stu-id="156b3-164">Bare Metal</span></span>
-      - <span data-ttu-id="156b3-165">Aggiornamento</span><span class="sxs-lookup"><span data-stu-id="156b3-165">Refresh</span></span>
-      - <span data-ttu-id="156b3-166">Sostituzione</span><span class="sxs-lookup"><span data-stu-id="156b3-166">Replacement</span></span>
-      - <span data-ttu-id="156b3-167">Aggiornamento</span><span class="sxs-lookup"><span data-stu-id="156b3-167">Upgrade</span></span>
-  - <span data-ttu-id="156b3-168">Sequenze di attività di distribuzione del sistema operativo in MDT</span><span class="sxs-lookup"><span data-stu-id="156b3-168">OS Deployment Task Sequences in MDT</span></span>
-  - <span data-ttu-id="156b3-169">Aggiornamenti delle funzionalità tramite sequenze di attività di aggiornamento in ConfigMgr</span><span class="sxs-lookup"><span data-stu-id="156b3-169">Feature Updates using Upgrade Task Sequences in ConfigMgr</span></span>
-  - <span data-ttu-id="156b3-170">Windows Autopilot</span><span class="sxs-lookup"><span data-stu-id="156b3-170">Windows Autopilot</span></span>
+  - <span data-ttu-id="3084a-162">Creazione dell'immagine del sistema operativo</span><span class="sxs-lookup"><span data-stu-id="3084a-162">OS image creation</span></span>
+  - <span data-ttu-id="3084a-163">Sequenze di attività di distribuzione del sistema operativo in ConfigMgr</span><span class="sxs-lookup"><span data-stu-id="3084a-163">OS Deployment Task Sequences in ConfigMgr</span></span>
+      - <span data-ttu-id="3084a-164">Bare metal</span><span class="sxs-lookup"><span data-stu-id="3084a-164">Bare Metal</span></span>
+      - <span data-ttu-id="3084a-165">Aggiornamento</span><span class="sxs-lookup"><span data-stu-id="3084a-165">Refresh</span></span>
+      - <span data-ttu-id="3084a-166">Sostituzione</span><span class="sxs-lookup"><span data-stu-id="3084a-166">Replacement</span></span>
+      - <span data-ttu-id="3084a-167">Aggiornamento</span><span class="sxs-lookup"><span data-stu-id="3084a-167">Upgrade</span></span>
+  - <span data-ttu-id="3084a-168">Sequenze di attività di distribuzione del sistema operativo in MDT</span><span class="sxs-lookup"><span data-stu-id="3084a-168">OS Deployment Task Sequences in MDT</span></span>
+  - <span data-ttu-id="3084a-169">Aggiornamenti delle funzionalità tramite sequenze di attività di aggiornamento in ConfigMgr</span><span class="sxs-lookup"><span data-stu-id="3084a-169">Feature Updates using Upgrade Task Sequences in ConfigMgr</span></span>
+  - <span data-ttu-id="3084a-170">Windows Autopilot</span><span class="sxs-lookup"><span data-stu-id="3084a-170">Windows Autopilot</span></span>
 
-### <a name="windows-and-office-servicing"></a><span data-ttu-id="156b3-171">**Manutenzione di Windows e Office**</span><span class="sxs-lookup"><span data-stu-id="156b3-171">**Windows and Office Servicing**</span></span>
+### <a name="windows-and-office-servicing"></a><span data-ttu-id="3084a-171">**Manutenzione di Windows e Office**</span><span class="sxs-lookup"><span data-stu-id="3084a-171">**Windows and Office Servicing**</span></span>
 
-  - <span data-ttu-id="156b3-172">Gestione aggiornamenti software tramite Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="156b3-172">Software update management using Configuration Manager</span></span>
-  - <span data-ttu-id="156b3-173">Gestione aggiornamenti di Office 365 ProPlus in Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="156b3-173">Office 365 ProPlus update management in Configuration Manager</span></span>
-  - <span data-ttu-id="156b3-174">Gestione di dispositivi mobili applicata a Windows 10 tramite Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="156b3-174">Mobile Device Management applied to Windows 10 using Microsoft Intune</span></span>
+  - <span data-ttu-id="3084a-172">Gestione aggiornamenti software tramite Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="3084a-172">Software update management using Configuration Manager</span></span>
+  - <span data-ttu-id="3084a-173">Gestione aggiornamenti di Office 365 ProPlus in Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="3084a-173">Office 365 ProPlus update management in Configuration Manager</span></span>
+  - <span data-ttu-id="3084a-174">Gestione di dispositivi mobili applicata a Windows 10 tramite Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="3084a-174">Mobile Device Management applied to Windows 10 using Microsoft Intune</span></span>
 
-### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[<span data-ttu-id="156b3-175">**Scaricare il Lab Kit di distribuzione di Windows e Office**</span><span class="sxs-lookup"><span data-stu-id="156b3-175">**Download the Windows and Office Deployment Lab Kit**</span></span>](https://aka.ms/mddlabs_evalcenter)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[<span data-ttu-id="3084a-175">**Scaricare il Lab Kit di distribuzione di Windows e Office**</span><span class="sxs-lookup"><span data-stu-id="3084a-175">**Download the Windows and Office Deployment Lab Kit**</span></span>](https://aka.ms/mddlabs_evalcenter)
 
-<span data-ttu-id="156b3-176">*Per scaricare questi contenuti usufruendo di un'esperienza di download ottimale, usare un'ampia larghezza di banda e attendere 30-45 minuti il completamento del provisioning automatico. Per l'ambiente lab sono richiesti almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, sono consigliati 32 GB di memoria disponibili. Il lab scade il 27 agosto 2019; prima di tale data, ne verrà pubblicata una nuova versione.*</span><span class="sxs-lookup"><span data-stu-id="156b3-176">*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires May 13, 2019. A new version will be published prior to expiration.*</span></span>
+<span data-ttu-id="3084a-176">*Per scaricare questi contenuti usufruendo di un'esperienza di download ottimale, usare un'ampia larghezza di banda e attendere 30-45 minuti il completamento del provisioning automatico. Per l'ambiente lab sono richiesti almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, sono consigliati 32 GB di memoria disponibili. Il lab scade il 27 agosto 2019; prima di tale data, ne verrà pubblicata una nuova versione.*</span><span class="sxs-lookup"><span data-stu-id="3084a-176">*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires May 13, 2019. A new version will be published prior to expiration.*</span></span>
 
-## <a name="additional-guidance"></a><span data-ttu-id="156b3-177">**Indicazioni aggiuntive**</span><span class="sxs-lookup"><span data-stu-id="156b3-177">**Additional guidance**</span></span>
+## <a name="additional-guidance"></a><span data-ttu-id="3084a-177">**Indicazioni aggiuntive**</span><span class="sxs-lookup"><span data-stu-id="3084a-177">**Additional guidance**</span></span>
 
-  - [<span data-ttu-id="156b3-178">Centro di distribuzione desktop</span><span class="sxs-lookup"><span data-stu-id="156b3-178">Desktop Deployment Center</span></span>](http://www.aka.ms/howtoshift)
+  - [<span data-ttu-id="3084a-178">Centro di distribuzione desktop</span><span class="sxs-lookup"><span data-stu-id="3084a-178">Desktop Deployment Center</span></span>](http://www.aka.ms/howtoshift)
 
-  - [<span data-ttu-id="156b3-179">Serie di video sulla distribuzione desktop di Microsoft Mechanics</span><span class="sxs-lookup"><span data-stu-id="156b3-179">Desktop Deployment series videos from Microsoft Mechanics</span></span>](http://www.aka.ms/watchhowtoshift)
+  - [<span data-ttu-id="3084a-179">Serie di video sulla distribuzione desktop di Microsoft Mechanics</span><span class="sxs-lookup"><span data-stu-id="3084a-179">Desktop Deployment series videos from Microsoft Mechanics</span></span>](http://www.aka.ms/watchhowtoshift)
 
-  - <span data-ttu-id="156b3-180">
-  [Distribuzione del sistema operativo in System Center Configuration Manager](https://docs.microsoft.com/it-IT/sccm/osd/understand/introduction-to-operating-system-deployment)</span><span class="sxs-lookup"><span data-stu-id="156b3-180">[System Center Configuration Manager OS Deployment](https://docs.microsoft.com/en-us/sccm/osd/understand/introduction-to-operating-system-deployment)</span></span>
+  - <span data-ttu-id="3084a-180">
+  [Distribuzione del sistema operativo in System Center Configuration Manager](https://docs.microsoft.com/it-IT/sccm/osd/understand/introduction-to-operating-system-deployment)</span><span class="sxs-lookup"><span data-stu-id="3084a-180">[System Center Configuration Manager OS Deployment](https://docs.microsoft.com/en-us/sccm/osd/understand/introduction-to-operating-system-deployment)</span></span>
 
-  - [<span data-ttu-id="156b3-181"><span class="underline">Pianificare la distribuzione di Windows 10</span></span><span class="sxs-lookup"><span data-stu-id="156b3-181"><span class="underline">Plan for Windows 10 deployment</span></span></span>](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [<span data-ttu-id="3084a-181"><span class="underline">Pianificare la distribuzione di Windows 10</span></span><span class="sxs-lookup"><span data-stu-id="3084a-181"><span class="underline">Plan for Windows 10 deployment</span></span></span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span data-ttu-id="156b3-182"><span class="underline">Guida alla distribuzione per Office 365 ProPlus</span></span><span class="sxs-lookup"><span data-stu-id="156b3-182"><span class="underline">Deployment guide for Office 365 ProPlus</span></span></span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span data-ttu-id="3084a-182"><span class="underline">Guida alla distribuzione per Office 365 ProPlus</span></span><span class="sxs-lookup"><span data-stu-id="3084a-182"><span class="underline">Deployment guide for Office 365 ProPlus</span></span></span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
-  - [<span data-ttu-id="156b3-183"><span class="underline">Introduzione a Intune</span></span><span class="sxs-lookup"><span data-stu-id="156b3-183"><span class="underline">Getting Started with Intune</span></span></span>](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [<span data-ttu-id="3084a-183"><span class="underline">Introduzione a Intune</span></span><span class="sxs-lookup"><span data-stu-id="3084a-183"><span class="underline">Getting Started with Intune</span></span></span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
-## <a name="related-resources"></a><span data-ttu-id="156b3-184">**Risorse correlate**</span><span class="sxs-lookup"><span data-stu-id="156b3-184">**Related resources**</span></span>
+## <a name="related-resources"></a><span data-ttu-id="3084a-184">**Risorse correlate**</span><span class="sxs-lookup"><span data-stu-id="3084a-184">**Related resources**</span></span>
 
-  - [<span data-ttu-id="156b3-185"><span class="underline">Introduzione a Microsoft 365</span></span><span class="sxs-lookup"><span data-stu-id="156b3-185"><span class="underline">Introducing Microsoft 365</span></span></span>](https://www.microsoft.com/microsoft-365/default.aspx)
+  - [<span data-ttu-id="3084a-185"><span class="underline">Introduzione a Microsoft 365</span></span><span class="sxs-lookup"><span data-stu-id="3084a-185"><span class="underline">Introducing Microsoft 365</span></span></span>](https://www.microsoft.com/microsoft-365/default.aspx)
 
-  - [<span data-ttu-id="156b3-186"><span class="underline">Office 365 per le aziende</span></span><span class="sxs-lookup"><span data-stu-id="156b3-186"><span class="underline">Office 365 for business</span></span></span>](https://products.office.com/business/office)
+  - [<span data-ttu-id="3084a-186"><span class="underline">Office 365 per le aziende</span></span><span class="sxs-lookup"><span data-stu-id="3084a-186"><span class="underline">Office 365 for business</span></span></span>](https://products.office.com/business/office)
 
-  - [<span data-ttu-id="156b3-187"><span class="underline">Introduzione a Enterprise Mobility + Security</span></span><span class="sxs-lookup"><span data-stu-id="156b3-187"><span class="underline">Introducing Enterprise Mobility + Security</span></span></span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+  - [<span data-ttu-id="3084a-187"><span class="underline">Introduzione a Enterprise Mobility + Security</span></span><span class="sxs-lookup"><span data-stu-id="3084a-187"><span class="underline">Introducing Enterprise Mobility + Security</span></span></span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-  - [<span data-ttu-id="156b3-188"><span class="underline">Windows 10 per le aziende</span></span><span class="sxs-lookup"><span data-stu-id="156b3-188"><span class="underline">Windows 10 for enterprise</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
+  - [<span data-ttu-id="3084a-188"><span class="underline">Windows 10 per le aziende</span></span><span class="sxs-lookup"><span data-stu-id="3084a-188"><span class="underline">Windows 10 for enterprise</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
 
-  - [<span data-ttu-id="156b3-189"><span class="underline">Windows 10 per aziende di piccole e medie dimensioni</span></span><span class="sxs-lookup"><span data-stu-id="156b3-189"><span class="underline">Windows 10 for small and medium business</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+  - [<span data-ttu-id="3084a-189"><span class="underline">Windows 10 per aziende di piccole e medie dimensioni</span></span><span class="sxs-lookup"><span data-stu-id="3084a-189"><span class="underline">Windows 10 for small and medium business</span></span></span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
