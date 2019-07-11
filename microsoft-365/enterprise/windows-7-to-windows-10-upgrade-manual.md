@@ -44,7 +44,7 @@ Nell’ambito della configurazione di Windows 10, si passerà alla procedura gui
 
 ![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-3.png)
 
-Una volta applicati gli aggiornamenti, l'installazione di Windows 10 passerà alla fase successiva, selezionare immagine. Qui è necessario selezionare la propria versione di Windows. In questo caso, poiché nel PC è installato Windows 7 Enterprise, selezionare Windows 10 Enterprise.
+Una volta applicati gli aggiornamenti, l'installazione di Windows 10 passerà alla fase successiva, Selezionare immagine. Qui è necessario selezionare la propria versione di Windows. In questo caso, poiché nel PC è installato Windows 7 Enterprise, selezionare Windows 10 Enterprise.
 
 ![](media/windows-7-to-windows-10-upgrade-manual-media/windows-7-to-windows-10-upgrade-manual-media-4.png)
 
