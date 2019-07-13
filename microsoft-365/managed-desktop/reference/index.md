@@ -1,0 +1,4 @@
+<span data-ttu-id="23620-101">--title: Descrizione di riferimento di Microsoft Managed Desktop: informazioni dettagliate su alcune caratteristiche di Microsoft Managed Desktop: Microsoft Managed Desktop, Microsoft 365, Service, Documentation ms. Service: M365-MD Author: jaimeo ms. localizationpriority: Normal</span><span class="sxs-lookup"><span data-stu-id="23620-101">-- title: Microsoft Managed Desktop reference description: Detailed information on certain Microsoft Managed Desktop features keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation ms.service: m365-md author: jaimeo ms.localizationpriority: normal</span></span>
+---
+
+# <a name="microsoft-managed-desktop-reference"></a><span data-ttu-id="23620-102">Informazioni di riferimento su Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="23620-102">Microsoft Managed Desktop reference</span></span>
