@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come Microsoft 365 per le campagne influisce sugli utenti.
-ms.openlocfilehash: 9d70adab86eb7c8b7f1608de58c0652f84ec03a0
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 3715e0a458f2af5f2fecb8e2e6939254b3141411
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183325"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772423"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>In che modo Microsoft 365 per le campagne influisce sugli utenti
 
@@ -69,11 +69,11 @@ Per i [dispositivi Windows 10 e Mac non gestiti](m365-campaigns-protect-pcs-macs
 Per ulteriori informazioni su questi suggerimenti, vedere [Protect your account and devices from hacker and malware](https://support.office.com/en-us/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Collaborare con Microsoft teams, OneDrive, SharePoint Online e altri strumenti di Office 365
-Gli utenti potrebbero essere tentati di condividere e archiviare i file dell'organizzazione in luoghi diversi da Microsoft 365. Microsoft 365 rende più semplice possibile collaborare e condividere in modo sicuro. È possibile [condividere file e video](share-files-and-videos.md) direttamente da Microsoft teams, OneDrive, Stream e persino dall'interno di un file. La condivisione all'interno di questi strumenti consente di evitare la perdita di dati. È inoltre possibile aggiungere ulteriore protezione ai dati riservati per impedire la condivisione all'esterno dell'organizzazione. 
+Gli utenti potrebbero essere tentati di condividere e archiviare i file dell'organizzazione in luoghi diversi da Microsoft 365. Microsoft 365 rende più semplice possibile collaborare e condividere in modo sicuro. È possibile [condividere file e video](share-files-and-videos.md) direttamente da Microsoft teams, OneDrive, Stream e persino dall'interno di un file. La condivisione all'interno di questi strumenti consente di evitare la perdita di dati. È possibile aggiungere ulteriore protezione ai dati riservati per impedire la condivisione all'esterno dell'organizzazione. 
 
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurare i dispositivi Windows 10 gestiti
-È consigliabile che i membri del personale più importanti utilizzino i dispositivi Windows 10 appena acquisiti che vengono gestiti. Vi mostreremo come [gestire e proteggere questi dispositivi](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Questo garantisce che i membri del personale che sono la destinazione di valore più alto per gli hacker ricevano la maggior parte della protezione. 
+È consigliabile che i membri del personale più importanti utilizzino i dispositivi Windows 10 appena acquisiti che si desidera gestire. Vi mostreremo come [gestire e proteggere questi dispositivi](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Questo garantisce che i membri del personale che sono la destinazione di valore più alto per gli hacker ricevano la maggior parte della protezione. 
 
 
 

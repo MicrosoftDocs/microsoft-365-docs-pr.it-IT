@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteggersi da tentativi di phishing e altri attacchi con Microsoft 365 per le campagne.
-ms.openlocfilehash: a0e5876d0b1a3b454a00df79f3d0808b26ef8e1e
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 4902a2273eef110ced9ae16c3b91f39ac990a736
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080932"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772483"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Proteggersi da tentativi di phishing e altri attacchi
 
 Microsoft 365 include molte protezioni per proteggersi dagli attacchi, ma ci sono elementi che è possibile eseguire autonomamente per limitare e ridurre al minimo il rischio di attacchi online.
 
-- **Spam o posta** indesiderata È possibile ricevere messaggi di posta indesiderata e non tutti i messaggi di posta indesiderata sono gli stessi. Tuttavia, è possibile ridurre i rischi di attacchi filtrando la posta indesiderata.
+- **Spam o posta** indesiderata È possibile ricevere messaggi di posta indesiderata e non tutti i messaggi di posta indesiderata sono gli stessi. Tuttavia, è possibile ridurre i rischi di attacchi, eliminando la posta indesiderata.
 - **Phishing** Una truffa di phishing è un messaggio di posta elettronica che sembra legittimo, ma è un tentativo di ottenere le informazioni personali o rubare i vostri soldi.
 - **Spoofing** I truffatori possono anche utilizzare una tecnica denominata spoofing per visualizzarla come se l'utente ha ricevuto un messaggio di posta elettronica da solo. 
-- Il **malware** è un software dannoso che può essere installato nel computer, in genere installato dopo aver fatto clic su un collegamento o aperto un documento da un messaggio di posta elettronica. Esistono diversi tipi di malware (ad esempio, ransomware, quando il computer viene rilevato), ma non si vuole avere nessuno di essi. 
+- Il **malware** è un software dannoso che può essere installato nel computer, generalmente installato dopo aver fatto clic su un collegamento o aperto un documento da un messaggio di posta elettronica. Esistono diversi tipi di malware (ad esempio, ransomware, quando il computer viene rilevato), ma non si vuole avere nessuno di essi. 
 
 
 ## <a name="best-practices"></a>Procedure consigliate
@@ -46,7 +46,7 @@ Segui questi [10 suggerimenti su come ridurre la posta](https://support.office.c
 
 **Segnalarlo!**
 
-Segnalare eventuali messaggi di posta elettronica di phishing o di altro Scam ricevuti. Selezionare il messaggio e scegliere **segnala messaggio** sulla barra multifunzione per segnalare il mittente del messaggio e quindi bloccare il messaggio.
+Segnalare eventuali messaggi di posta elettronica di phishing o di altro Scam ricevuti. Selezionare il messaggio e scegliere **segnala messaggio** sulla barra multifunzione.
 Di seguito sono riportate ulteriori informazioni sulla segnalazione di posta indesiderata [e phishing](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 **Evitare il phishing**
@@ -60,13 +60,13 @@ Leggere circa cinque tipi comuni di truffe in [relazione a abusi, tentativi di p
 
 **Verificare che i messaggi di posta elettronica siano legittimi per gli altri utenti**
 
-Aiutare i clienti a considerare attendibili le comunicazioni: aggiungere una firma digitale per dimostrare la propria provenienza. Vedere [proteggere i messaggi tramite una firma digitale](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
+Aiutare i clienti a considerare attendibili le comunicazioni con l'aggiunta di una firma digitale per dimostrare di essere provenienti da un utente. Vedere [proteggere i messaggi tramite una firma digitale](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
 
 ## <a name="help-protect-your-campaign-from-online-threats"></a>Proteggi la tua campagna dalle minacce online
 
 Scaricare l'infografica con suggerimenti per l'utente e i membri del team della campagna:
 
-[![Immagine per proteggere la grafica delle informazioni sulla campagna](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[! La guida per proteggere la grafica delle informazioni della campagna](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)(Downloads/M365CampaignsWhatCanUsersDoToSecure. pdf)
 
 [](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx) (PDF)
 

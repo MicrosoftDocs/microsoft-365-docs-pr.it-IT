@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come configurare e proteggere gli account di amministratore.
-ms.openlocfilehash: 857c24ac0ec134e119b3de083afe8dc3269bdbe2
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 33bf7f8a2a1e666a7822be1d52ac2d81fc681230
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183330"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772473"
 ---
 # <a name="protect-your-administrator-accounts"></a>Proteggere gli account di amministratore
 
@@ -38,7 +38,7 @@ Quando ti iscrivi a Microsoft 365 business e immetti le tue informazioni, divent
 
 ## <a name="create-additional-admin-accounts"></a>Creare account di amministratore aggiuntivi
 
-Utilizzare gli account di amministrazione solo per l'amministrazione. Gli amministratori devono disporre di un account utente separato per l'utilizzo regolare delle app di Office e utilizzare il proprio account amministrativo solo quando necessario per gestire gli account, i dispositivi e durante la lavorazione di altre funzioni di amministratore.  È inoltre consigliabile rimuovere la licenza di Microsoft 365 business dagli account di amministrazione in modo che non sia necessario pagarli.
+Utilizzare gli account di amministrazione solo per l'amministrazione. Gli amministratori devono disporre di un account utente separato per l'utilizzo regolare delle app di Office e utilizzare il proprio account amministrativo solo quando necessario per gestire gli account, i dispositivi e durante la lavorazione di altre funzioni di amministratore. È inoltre consigliabile rimuovere la licenza di Microsoft 365 business dagli account di amministrazione in modo che non sia necessario pagarli.
 
 Sarà necessario configurare almeno un account di amministratore globale aggiuntivo per concedere l'accesso all'amministratore a un altro dipendente attendibile. È inoltre possibile creare account amministratore distinti per la gestione degli utenti (questo ruolo è denominato **amministratore Gestione utenti**). Per ulteriori informazioni, vedere informazioni [sui ruoli di amministratore](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .
 
@@ -78,6 +78,6 @@ Per creare un nuovo account utente:
 
 ## <a name="additional-recommendations"></a>Suggerimenti aggiuntivi
 
-- Verificare che anche gli account di amministrazione siano impostati per l'autenticazione a più fattori. Verrà illustrato come eseguire questa operazione in configurare i [criteri di accesso condizionale](m365-campaigns-conditional-access.md).
+- Assicurarsi che anche gli account di amministrazione siano configurati per l'autenticazione a più fattori. Verrà illustrato come eseguire questa operazione in configurare i [criteri di accesso condizionale](m365-campaigns-conditional-access.md).
 - Prima di utilizzare gli account di amministrazione, chiudere tutte le app e le sessioni del browser non correlate, compresi gli account di posta elettronica personali. È inoltre possibile utilizzare le finestre del browser private o in incognito.
 - Dopo aver completato le attività amministrative, accertarsi di disconnettersi dalla sessione del browser.

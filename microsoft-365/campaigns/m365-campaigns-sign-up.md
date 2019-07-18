@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Procedura dettagliata per la registrazione di Microsoft 365 per le campagne. Proteggi la tua campagna dalle minacce di Cybersecurity alla posta elettronica, ai dati e alla comunicazione.
-ms.openlocfilehash: b1af4138da6f935fc2745444eea4ad82f9f128d6
-ms.sourcegitcommit: c452413dff5d5388c9725f38871246237c313e65
+ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35183327"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772463"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Iscriversi a Microsoft 365 per le campagne 
 
@@ -47,7 +47,7 @@ Ecco come completare l'iscrizione a Microsoft 365 per le campagne.
     > Se si dispone già di un abbonamento a Office 365 per le aziende e si desidera aggiungere l'offerta di Microsoft 365 per le campagne, passare a [Aggiungi microsoft 365 per le campagne a un abbonamento esistente](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
 1. **Nella pagina Microsoft 365 business**immettere i dettagli dell'azienda. Per l' **indirizzo di posta elettronica aziendale**, utilizzare un indirizzo di posta elettronica corrente. Questo indirizzo è necessario solo per rimanere in contatto con l'utente durante il processo di installazione.  Select **Next**. 
 1. **Nella pagina Crea ID utente**:
-    1. In **nome utente**, immettere il nome o l'alias desiderato per l'indirizzo di posta elettronica. Ad esempio, si potrebbe voler solo essere conosciuto come Alice o Rob. In una campagna più grande, AliceC o AliceChavez potrebbe essere più sensato.
+    1. In **nome utente**, immettere il nome o l'alias desiderato per l'indirizzo di posta elettronica. Ad esempio, si potrebbe desiderare di essere conosciuto come solo Alice o Rob. In una campagna più grande, AliceC o AliceChavez potrebbe essere più sensato.
     2. Nella **tua azienda**, immetti il nome della campagna per la quale lavori. Ad esempio, ContosoCampaign. Se si è già proprietari di un dominio, utilizzare questo nome. 
     3. In **selezionare un dominio**, selezionare **. onmicrosoft.com** per ora. È possibile configurare un dominio in un secondo momento oppure ottenere Microsoft 365 connesso a un dominio già in possesso.
     4. Creare una password e selezionare **Crea account personale**. 
@@ -63,7 +63,7 @@ Ecco come completare l'iscrizione a Microsoft 365 per le campagne.
     1. Verificare che il costo per utente sia $5,00. 
     2. Se si desidera solo impostare se stessi per ora, selezionare **Avanti**. 
     3. Facoltativo: aggiungere alcune licenze aggiuntive ora cambiando il numero nel campo **utente** . [Il personale con cui si lavora può essere assegnato a Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) in qualsiasi momento.
-7. **Come si vuole pagare? pagina**: selezionare **nuova carta di credito**, immettere i dettagli della carta di credito aziendale e selezionare **Ordina**. Se si preferisce, è anche possibile utilizzare un account bancario.
+7. **Come si vuole pagare? pagina**: selezionare **nuova carta di credito**, immettere i dettagli della carta di credito aziendale e selezionare **Ordina**. Se si preferisce, è anche possibile utilizzare un conto corrente bancario.
 8. **Potrebbe essere necessario un momento della pagina**: sono disponibili informazioni dettagliate su dove accedere e sull'ID utente. Inviamo queste informazioni anche all'indirizzo di posta elettronica immesso durante il passaggio 2.
 
 I passaggi di iscrizione sono stati completati. Se si desidera continuare con i passaggi successivi, selezionare **Avvia installazione**o torna in un secondo momento per completare la procedura. Quando si è pronti, controllare la posta elettronica (dal passaggio 2) per trovare il nome utente e la password in modo da poter eseguire l'accesso la volta successiva. Questi sono denominati l'amministratore o le credenziali di amministratore globale.

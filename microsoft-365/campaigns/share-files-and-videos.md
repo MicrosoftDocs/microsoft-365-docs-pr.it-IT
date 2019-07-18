@@ -21,21 +21,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Condivisione di file e video all'interno della propria campagna con Microsoft teams e SharePoint.
-ms.openlocfilehash: bcc81b65661e113083705c6536f6de4d030a3de7
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+description: Condividere file e video all'interno della propria campagna con Microsoft teams e SharePoint.
+ms.openlocfilehash: c554ba2b4e7945cefa9a1e7114b3726efa58561e
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35080920"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772343"
 ---
 # <a name="share-files-and-videos"></a>Condivisione di file e video
 
 Quando è necessario controllare gli utenti che possono visualizzare e gli utenti che possono modificare i file, è necessario archiviarli in una posizione sicura, in cui è possibile verificare che le autorizzazioni vengano applicate in modo appropriato. È possibile utilizzare Microsoft teams per archiviare i file e quindi condividere i file all'interno o all'esterno della propria campagna con Microsoft teams o inviando collegamenti di SharePoint. L'invio di un collegamento piuttosto che di un allegato di posta elettronica significa che è possibile sapere chi è la visualizzazione e la modifica dei file e non possono essere visualizzati o modificati senza la propria autorizzazione. 
 
-![Diagramma di una finestra di Microsoft teams con la scheda file aprire e ottenere il collegamento dal menu](media/m365-democracy-teams-sharefiles.png)
+![Diagramma di una finestra di Microsoft teams, visualizzazione delle schede dei file e collegamento Get nel menu](media/m365-democracy-teams-sharefiles.png)
 
-Con i file in Microsoft teams e SharePoint, è anche possibile lavorare sui file insieme ed esaminare le modifiche apportate. Utilizzare Microsoft teams per condividere i file all'interno di una campagna politica, è possibile farlo utilizzando Microsoft teams. Se è necessario condividere l'esterno con utenti esterni alla campagna, è possibile aggiungerli come ospiti a un team o inviargli un collegamento di SharePoint sicuro.
+Con i file in Microsoft teams e SharePoint, è anche possibile lavorare sui file insieme ed esaminare le modifiche apportate. Utilizzare Microsoft teams per condividere i file all'interno di una campagna politica. Se è necessario condividere l'esterno con utenti esterni alla campagna, è possibile aggiungerli come ospiti a un team o inviargli un collegamento di SharePoint sicuro.
 
 È inoltre possibile utilizzare Microsoft Stream per archiviare e condividere video per la propria campagna. Questi video non sono visualizzabili per il pubblico in modo che siano ideali per la messaggistica della campagna interna.
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Ottenere assistenza per aumentare il livello di protezione in Microsoft 365 business
-ms.openlocfilehash: 2ebf6994cc7ba4026c5985e6b7accfc832ab003c
-ms.sourcegitcommit: c7ea55e36484d64db3f3af8e111a83cfc634143e
+ms.openlocfilehash: 5a3a9aada60875a7ee1f43a870e4d2731f84d4c1
+ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35192659"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35772553"
 ---
 # <a name="increase-threat-protection"></a>Aumentare la protezione dalle minacce
 
