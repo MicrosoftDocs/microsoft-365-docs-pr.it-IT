@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come inviare messaggi di posta elettronica crittografati tramite Outlook.
-ms.openlocfilehash: e58a69c25c00a0482d3837d9bde626ec0a54936f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772323"
+ms.locfileid: "35778141"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Crittografare o contrassegnare il messaggio di posta elettronica sensibile
 
@@ -60,7 +60,7 @@ Gli amministratori possono creare regole del flusso di posta per proteggere auto
 
 1. In un Web browser, utilizzando un account aziendale o dell'Istituto di istruzione a cui sono state concesse le autorizzazioni di amministratore globale, accedere a Office 365. 
 2. Scegliere il riquadro amministratore. 
-3. Nell'interfaccia di amministrazione di Office 365 scegliere **admin centers > Exchange**. 
+3. Nell'interfaccia di amministrazione scegliere **admin centers > Exchange**. 
 
 Per ulteriori informazioni, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
 
