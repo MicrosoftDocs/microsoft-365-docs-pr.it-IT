@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 468a8c7f1151443d001efb89639c5cdad204b1c2
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: fc2d978b50a433249e016c25b4c234de6c7f46b8
+ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698238"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35778131"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr"></a>Richieste del soggetto dei dati per l'RGPD in Dynamics 365
 
@@ -224,7 +224,7 @@ Questa prima fase (individuazione e analisi dei dati personali in questione) con
 
 Per individuare:
 
-- Un profilo utente, vedere l'[interfaccia di amministrazione di Office 365](https://portal.office.com/adminportal/home). Nell'**interfaccia di amministrazione** selezionare **Utenti**. Nella pagina **Utenti attivi** cercare l'utente nell'elenco. In Social Engagement, andare in **Impostazioni \> Gestione utenti** per visualizzare le informazioni sincronizzate automaticamente da Office 365.
+- Un profilo utente, vedere l'[interfaccia di amministrazione](https://portal.office.com/adminportal/home). Nell'**interfaccia di amministrazione** selezionare **Utenti**. Nella pagina **Utenti attivi** cercare l'utente nell'elenco. In Social Engagement, andare in **Impostazioni \> Gestione utenti** per visualizzare le informazioni sincronizzate automaticamente da Office 365.
 - Il destinatario di un avviso, eseguire i primi due passaggi descritti in [Gestire i destinatari degli avvisi come amministratore](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator).
 - I dati del profilo social immessi dai dipendenti, andare in **Impostazioni \> Profili social**. (Per ulteriori informazioni, vedere [Gestire profili social](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/manage-social-profiles).)
 - I nomi utente in Power BI, aprire il dashboard Power BI di Social Engagement e filtrare per nome del dipendente.
@@ -242,7 +242,7 @@ L'RGPD garantisce ai soggetti dei dati il diritto di ottenere una copia dei dati
 
 Per esportare:
 
-- I dati del cliente dai profili utente, vedere l'[Interfaccia di amministrazione di Office 365](https://portal.office.com/adminportal/home). Nell'**interfaccia di amministrazione** selezionare **Utenti**. Nella pagina **Utenti attivi**, cercare l'utente di cui si vogliono esportare i dati. Eliminare tutti gli utenti tranne l'utente di destinazione e quindi selezionare **Esporta** per esportare i dati in un file CSV in cui è possibile utilizzare Excel per visualizzare le informazioni.
+- i dati del cliente dai profili utente, vedere l'[Interfaccia di amministrazione](https://portal.office.com/adminportal/home). Nell'**interfaccia di amministrazione** selezionare **Utenti**. Nella pagina **Utenti attivi**, cercare l'utente di cui si vogliono esportare i dati. Eliminare tutti gli utenti tranne l'utente di destinazione e quindi selezionare **Esporta** per esportare i dati in un file CSV in cui è possibile utilizzare Excel per visualizzare le informazioni.
 - Indirizzi di posta elettronica del destinatario di un avviso (solo i dati del cliente di un avviso). Seguire la procedura descritta in [Gestire i destinatari degli avvisi come amministratore](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Selezionare **Esporta** per scaricare un elenco Excel degli avvisi che includono questo destinatario.
 - I nomi utente di Power BI: [creazione di report in Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) mostra i nomi utente nei report sulle prestazioni del team sui supporti di social networking. Per esportare i dati, filtrare per utente nel dashboard di PowerBI o [report](https://docs.microsoft.com/power-bi/power-bi-report-add-filter) ed [esportare i dati](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data).
 
@@ -317,7 +317,7 @@ Per estrarre i tag autore aggiunti a un autore specifico, è possibile [esportar
 
 Per esportare:
 
-- I dati del cliente dai profili utente, vedere l'[Interfaccia di amministrazione di Office 365](https://portal.office.com/adminportal/home). Nell'**interfaccia di amministrazione** selezionare **Utenti**. Nella pagina **Utenti attivi**, cercare l'utente di cui si vogliono esportare i dati. Eliminare tutti gli utenti tranne l'utente di destinazione e quindi selezionare **Esporta** per esportare i dati in un file CSV in cui è possibile utilizzare Excel per visualizzare le informazioni.
+- i dati del cliente dai profili utente, vedere l'[Interfaccia di amministrazione](https://portal.office.com/adminportal/home). Nell'**interfaccia di amministrazione** selezionare **Utenti**. Nella pagina **Utenti attivi**, cercare l'utente di cui si vogliono esportare i dati. Eliminare tutti gli utenti tranne l'utente di destinazione e quindi selezionare **Esporta** per esportare i dati in un file CSV in cui è possibile utilizzare Excel per visualizzare le informazioni.
 - Indirizzi di posta elettronica del destinatario di un avviso (solo i dati personali di un avviso). Seguire la procedura descritta in [Gestire i destinatari degli avvisi come amministratore](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/email-alerts#manage-alert-recipients-as-administrator). Quindi selezionare **Esporta** per il download dell'elenco Excel di avvisi che includono questo destinatario.
 - I nomi utente di Power BI: [creazione di report in Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/social-engagement/get-content-pack-for-power-bi) mostra i nomi utente nei report sulle prestazioni del team sui supporti di social networking. Per esportare i dati, filtrare per utente nel dashboard di PowerBI o [report](https://docs.microsoft.com/power-bi/power-bi-report-add-filter) ed [esportare i dati](https://docs.microsoft.com/power-bi/power-bi-visualization-export-data)
 
