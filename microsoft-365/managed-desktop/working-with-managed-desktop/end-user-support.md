@@ -3,16 +3,16 @@ title: Ottenere supporto per Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/28/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a073a5dfe61b036cbdc3bf9b0be08bc559acb548
-ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
+ms.openlocfilehash: 1e98ef5a7c800ed3fb7fe1b7355e535ed3576c1e
+ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970473"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35853165"
 ---
 # <a name="getting-help-for-end-users"></a>Ottenere assistenza per gli utenti finali
 
@@ -41,7 +41,7 @@ Gli utenti finali con i dispositivi Microsoft Managed Desktop hanno anche access
 - Australia: + 61 180 037 0619
 
 >[!NOTE]
->Il numero di serie del dispositivo è pronto per la chiamata. 
+>Fare in modo che l'indirizzo di posta elettronica dell'organizzazione sia pronto quando si chiama per verificare l'identità. 
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 - [Supporto di amministrazione per Microsoft Managed Desktop](admin-support.md). 
