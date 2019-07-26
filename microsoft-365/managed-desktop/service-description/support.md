@@ -3,16 +3,16 @@ title: Supporto per Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 97637f28f5a5de292385a36472966f3272b2f09a
-ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
+ms.openlocfilehash: 83f4d8b6fb9f2938151db8dfea37b3c9f18124c9
+ms.sourcegitcommit: 8f57be80955cd374d418c7e1a78849ff3e1d630f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970463"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907547"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Supporto per Microsoft Managed Desktop
 
@@ -25,15 +25,15 @@ I clienti possono contattare le operazioni di Microsoft Managed Desktop per:
 
 ## <a name="whats-included"></a>Che cos'è incluso?
 
-Supporto di Microsoft Managed Desktop:
+Il supporto di Microsoft Managed Desktop include:
 
-- Fornisce un team di ingegneri del supporto dedicati ai dispositivi Microsoft Managed Desktop
-- Supporta i dispositivi Microsoft Managed Desktop e gli utenti finali assegnati a tali dispositivi
-- Concede un accesso amministrativo limitato ai dispositivi Microsoft Managed Desktop per i tecnici del supporto per la gestione dei dispositivi desktop Microsoft gestiti 
+- Un team di ingegneri dedicati ai dispositivi Microsoft Managed Desktop
+- Opzioni di supporto per gli utenti finali con i dispositivi Microsoft Managed Desktop
+- Concede un accesso amministrativo limitato ai dispositivi Microsoft Managed Desktop per gli ingegneri che gestiscono i dispositivi Microsoft Managed Desktop 
 
 Prodotti supportati:
 
-- Windows 10 con Windows Defender Advanced Threat Protection (WDATP) 
+- Windows 10 con Microsoft Defender Advanced Threat Protection 
 - Sottoinsieme della famiglia di prodotti Office 365: Outlook, Word, PowerPoint, Excel, client Skype for business, Microsoft Teams 
 - Microsoft Store for Business 
 - Client di OneDrive for business 
