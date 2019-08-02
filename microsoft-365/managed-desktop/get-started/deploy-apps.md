@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5eac2e8c3023015bd034c51ad7e16a669a484772
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 5e842849afbedd506689caa9ffc0953a58e18fed
+ms.sourcegitcommit: f5c9aff5700f7824bf71f4a7e8c7236f7d91043e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390423"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36059586"
 ---
 # <a name="deploy-apps-to-microsoft-managed-desktop-devices"></a>Distribuire le app ai dispositivi Microsoft Managed Desktop
 Parte dell'onboarding di Microsoft Managed Desktop include l'aggiunta e la distribuzione di app ai dispositivi dell'utente. Dopo aver utilizzato il portale Microsoft Managed Desktop, è possibile aggiungere e distribuire le app. 
@@ -41,9 +41,9 @@ In questa procedura, è possibile selezionare il tipo di app che si desidera agg
 1.  Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mmdportal). 
 2.  In **inventario**, selezionare **app**.
 3.  Nel carico di lavoro delle app, selezionare **Aggiungi**.
-4.  In **Aggiungi app**selezionare app **line-of-business** o **Windows app (Win32)-Preview**.
+4.  In **Aggiungi app**selezionare app **line-of-business** o **Windows app (Win32)**.
     - Se è stata selezionata l' **applicazione line-of-business**, vedere [aggiungere un'app line-of-business di Windows a Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) per istruzioni sull'aggiunta e sulla configurazione delle app line-of-business.
-    - Se è stata selezionata l'opzione **Windows app (Win32)-Preview**, vedere [gestione delle app Win32](https://docs.microsoft.com/intune/apps-win32-app-management) per istruzioni su come aggiungere e configurare le app di Windows.
+    - Se è stata selezionata l'opzione **Windows app (Win32)**, vedere [gestione delle app Win32](https://docs.microsoft.com/intune/apps-win32-app-management) per istruzioni su come aggiungere e configurare le app di Windows.
 
 <span id="msfb-apps">
 
