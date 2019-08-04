@@ -4,7 +4,7 @@ ms.author: greglin
 author: greg-lindsay
 manager: laurawi
 ms.date: 03/05/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise per Windows 10 Enterprise.
-ms.openlocfilehash: 1e8a2e748f42431465c027acbc468f4c5891d320
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 29ab2373321485d8de892a29132d1af07a318b7b
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289518"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074106"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Fase 3: criteri uscita dell'infrastruttura Windows 10 Enterprise
 
@@ -37,7 +37,7 @@ Se necessario, il [Passaggio 1](windows10-prepare-your-org.md) può aiutare a so
 
 ## <a name="optional-your-users-are-added-and-licensed"></a>Facoltativo: gli utenti vengono aggiunti e ricevono una licenza
 
-Gli account corrispondenti agli utenti vengono aggiunti direttamente al tenant di Azure AD per le sottoscrizioni di Office 365 e Intune o dalla sincronizzazione delle directory da Active Directory Domain Services locale.
+Gli account corrispondenti agli utenti vengono aggiunti direttamente al tenant di Azure AD per gli abbonamenti di Office 365 e Intune o dalla sincronizzazione delle directory da Active Directory Domain Services locale.
 
 Una volta aggiunti gli utenti, è possibile assegnare loro le licenze Microsoft 365 Enterprise, direttamente come amministratore globale o utente o automaticamente tramite l'appartenenza al gruppo.
 

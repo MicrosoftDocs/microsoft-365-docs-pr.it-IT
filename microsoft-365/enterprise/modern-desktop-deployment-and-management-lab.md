@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: ba1cd7e88766b6393bafcbd7381ceeb98f030d51
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: a19c9d2de0cb4cb5436a8c3364bab0e24bb866ee
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584532"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830504"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
@@ -116,7 +116,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
   - Gestione aggiornamenti di Office 365 ProPlus in Configuration Manager
   - Gestione di dispositivi mobili applicata a Windows 10 tramite Microsoft Intune
 
-### <a name="download-the-windows-and-office-deployment-lab-kithttpsakamsmddlabsevalcenter"></a>[**Scaricare il Lab Kit di distribuzione di Windows e Office**](https://aka.ms/mddlabs_evalcenter)
+### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**Scaricare il Lab Kit di distribuzione di Windows e Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
 *Per scaricare questi contenuti usufruendo di un'esperienza di download ottimale, usare un'ampia larghezza di banda e attendere 30-45 minuti il completamento del provisioning automatico. Per l'ambiente lab sono richiesti almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, sono consigliati 32 GB di memoria disponibili. Il lab scade il 27 agosto 2019; prima di tale data, ne verrà pubblicata una nuova versione.*
 
