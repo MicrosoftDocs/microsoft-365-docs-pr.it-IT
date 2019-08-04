@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b3fc4a4ed82c01188f348d2e494a0dbf7effc77a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: e4c2dbe8f1cae12aa1b10c6cd43f295a9a6062d0
+ms.sourcegitcommit: 8102751ae20c93439e19afded396c4e6ee5ea5a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34079271"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34100712"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparare unità mappate per Microsoft Managed Desktop
 
@@ -25,7 +25,7 @@ Modernizzare questi servizi consentirà la migliore esperienza degli utenti fina
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Unità mappate su Microsoft Managed Desktop
  
-Se non è possibile rimuovere o sostituire unità mappate per alcuni casi di utilizzo, è necessario inviare una richiesta di supporto nel portale Microsoft Managed Desktop per farli distribuire agli utenti di Microsoft Managed Desktop.
+Se non è possibile rimuovere o sostituire unità mappate per alcuni casi di utilizzo, è necessario inviare una richiesta di supporto nel portale di amministrazione di Microsoft Managed Desktop per farli distribuire agli utenti di Microsoft Managed Desktop.
     
 Per una richiesta di questo tipo, è necessario fornire i seguenti dettagli nella richiesta di supporto: 
 
@@ -46,7 +46,7 @@ Ad esempio:
 Verificare che le unità mappate non possano essere evitate e che siano stati esaminati accuratamente i requisiti prima di inviare qualsiasi richiesta di servizio. Eseguire quindi la procedura seguente:
 
 1. Passare al [portale Microsoft Managed Desktop](https://aka.ms/mmdportal).  
-2. Inviare una richiesta di supporto intitolata "distribuzione di unità mappate" tramite la sezione supporto **richieste di supporto di >** e fornire tutti i dettagli di condivisione file necessari.  
-3. Le operazioni di Microsoft Managed Desktop consigliano, utilizzando gli aggiornamenti delle richieste di supporto, quando la richiesta è stata completata. Inizialmente questa configurazione verrà distribuita solo ai dispositivi del gruppo di distribuzione di test.  
-4. È necessario verificare e verificare se la configurazione distribuita dal team di operazioni di Microsoft Managed Desktop funziona come previsto. Utilizzare la richiesta di supporto per aggiornare le operazioni di Microsoft Managed Desktop dopo aver completato il testing.  
-5. Il team di Microsoft Managed Desktop Operations distribuirà la configurazione agli altri gruppi di distribuzione. 
+2. Inviare una richiesta di supporto intitolata "distribuzione di unità mappate" tramite la sezione **supporto > richieste di supporto** e fornire tutti i dettagli relativi alla condivisione file necessari.  
+3. Operazioni IT di Microsoft Managed Desktop consiglierà, utilizzando gli aggiornamenti delle richieste di supporto, quando la richiesta è stata completata. Inizialmente questa configurazione verrà distribuita solo ai dispositivi del gruppo di distribuzione di test.  
+4. È necessario verificare e verificare se la configurazione distribuita dalle operazioni IT di Microsoft Managed Desktop funziona come previsto. Rispondere utilizzando la scheda discussione nella richiesta di supporto per inviare una notifica alle operazioni IT di Microsoft Managed Desktop dopo aver completato il testing.  
+5. Il team delle operazioni IT di Microsoft Managed Desktop IT distribuirà quindi la configurazione agli altri gruppi di distribuzione. 

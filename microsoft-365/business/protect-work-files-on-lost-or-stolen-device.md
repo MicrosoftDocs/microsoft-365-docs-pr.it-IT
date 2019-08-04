@@ -3,7 +3,7 @@ title: Proteggere i file di lavoro in caso di perdita o di furto di un dispositi
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4StolenDevice
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
 description: Informazioni sulle impostazioni disponibili per proteggere i file di lavoro in caso di perdita o di furto del dispositivo di un utente.
-ms.openlocfilehash: 1256f54b2ff626ea7b85d91020e355c8b611a8c0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 505b85dabfdd27a9da8b7bcfdf7741dbb22b0ba3
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285351"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074451"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Proteggere i file di lavoro in caso di perdita o di furto di un dispositivo mobile
 

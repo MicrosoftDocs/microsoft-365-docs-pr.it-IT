@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 39a5102d045d9ed79b631a3b477bd1c72dea76de
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: 3687966fd49db3fd58c4ecbb3917e45ec6dfa3c3
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34918729"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425739"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Utilizzo di Microsoft Consulting Services
 
@@ -22,7 +22,7 @@ ms.locfileid: "34918729"
 Per utilizzare la confezione dell'app MCS, **è necessario fornire questi elementi**:
 
 - File del programma di installazione di origine (ad esempio, Setup. exe o. msi).
-- Istruzioni di installazione, specificando i dettagli sul modo in cui deve essere consentita l'installazione finale. Ad esempio, se è presente un collegamento sul desktop per l'app? Che cosa dovrebbe essere la visibilità dell'app? Se l'app si connette a un server e, in caso affermativo, quale? <!--For details, see the [application packaging request template](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx). -->
+- Istruzioni di installazione, specificando i dettagli sul modo in cui deve essere consentita l'installazione finale. Ad esempio, se è presente un collegamento sul desktop per l'app? Che cosa dovrebbe essere la visibilità dell'app? Se l'app si connette a un server e, in caso affermativo, quale? Per informazioni dettagliate, vedere il [modello di richiesta di pacchettizzazione dell'applicazione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx).
 - È necessario eseguire un test di accettazione personalizzato per verificare che l'app funzioni come necessario nell'ambiente in uso.
 
 **MCS si occuperà di queste azioni:**

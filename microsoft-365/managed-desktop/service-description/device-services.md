@@ -3,16 +3,16 @@ title: Servizi per dispositivi desktop Microsoft gestiti
 description: In questo argomento sono elencati i servizi per dispositivi e la limitazione per Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: jdeckerms
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 01e6edf99ff1aa59517f4f5c7d106cd8724fa04b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 533d51da027441ac199c3e1bfefb42812309a91b
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286173"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390653"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Servizi per dispositivi desktop Microsoft gestiti
 

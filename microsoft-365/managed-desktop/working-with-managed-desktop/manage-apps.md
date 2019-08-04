@@ -3,16 +3,16 @@ title: Gestire le app in Microsoft Managed Desktop
 description: Informazioni su come aggiornare le app line-of-business distribuite ai dispositivi Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ce2765ef2ab176dc5d9a1d41db7e26549b007d79
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 87968e1238ee5b3dce6e569846e253dada72dd6d
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285946"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390733"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Gestire le app line-of-business in Microsoft Managed Desktop
 
@@ -25,7 +25,7 @@ Esistono due modi per gestire gli aggiornamenti delle app per le app che sono st
 ## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Aggiornare le app line-of-business in Microsoft Managed Desktop
 
 **Per aggiornare le app line-of-business in Microsoft Managed Desktop Portal**
-1. Accedere al [portale di amministrazione di Microsoft managEd desktop](http://aka.ms/mmdportal).
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mmdportal).
 2. In **inventario**, selezionare **app**.  
 3. Selezionare l'app che si desidera aggiornare e quindi fare clic su **modifica**.
 4. In **Gestisci**selezionare **Proprietà**. 
@@ -43,7 +43,7 @@ L'app aggiornata verrà distribuita nei dispositivi dell'utente.
 **Per aggiornare le app line-of-business in Intune**
 1. Accedere al [portale di Azure](https://azure.portal.com).
 2. Selezionare **tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoring + Management** .
-3. Selezionare app **client Apps >**.
+3. Selezionare **app Client > app**.
 4. Individuare e selezionare l'app nell'elenco delle app.
 5. Nel pannello **Panoramica** , selezionare **Proprietà**.
 6. Selezionare il **file del pacchetto di app**.
@@ -58,7 +58,7 @@ Se viene rilevato un errore quando viene distribuita una nuova versione di un'ap
 
 **Per eseguire il rollback di un'app line-of-business a una versione precedente**
 
-1. Accedere al [portale di amministrazione di Microsoft managEd desktop](http://aka.ms/mmdportal).
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mmdportal).
 2. In **inventario**, selezionare **app**.  
 3. Seleziona l'app di cui hai bisogno per eseguire il rollback e quindi seleziona **modifica**.
 4. In **Gestisci**selezionare **Proprietà**. 

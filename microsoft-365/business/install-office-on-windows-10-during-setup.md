@@ -3,7 +3,7 @@ title: Installare Office in Windows 10 durante l'installazione
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4OfficeInstall
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Informazioni su come distribuire automaticamente Office nei dispositivi Windows 10 durante l'installazione.
-ms.openlocfilehash: b4359a18d93800def558121cdfd7c97ead058180
-ms.sourcegitcommit: db1dfb2df2c2f7beced3b57bc772d106c189e88a
+ms.openlocfilehash: 10d1b14fdc1d4cf937bfe29c51525b0bf2f1a2e7
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33660665"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073991"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installare Office in Windows 10 durante l'installazione
 

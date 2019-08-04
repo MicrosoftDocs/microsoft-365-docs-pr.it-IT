@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 35fa9f53b555de48f4a5acc09d0619ba978ca87a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 0ee9696d441d61fb41359f6502e6f73988749156
+ms.sourcegitcommit: 12fbb429dba7517220191d90816e235583943fe0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291212"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33623150"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fase 5: gestione dei dispositivi mobili per Microsoft 365 Enterprise
 
@@ -162,11 +162,7 @@ Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](m
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
-Informazioni su come gli esperti IT di Microsoft hanno pianificato e distribuito EMS e gestione dei dispositivi con queste risorse:
-
-- [Gestire la produttività mobile moderna con Enterprise Mobility + Security](https://www.microsoft.com/itshowcase/Article/Content/972/Managing-modern-mobile-productivity-with-Enterprise-Mobility--Security)
-- [Lavorare dal proprio dispositivo Windows 10 con Microsoft Intune](https://www.microsoft.com/itshowcase/Article/Content/783/Connecting-to-work-on-your-Windows-10-device-with-Microsoft-Intune)
-- [Abilitare la produttività mobile per i dispositivi iOS, OS X e Android in Microsoft](https://www.microsoft.com/itshowcase/Article/Content/773/Enabling-mobile-productivity-for-iOS-OS-X-and-Android-devices-at-Microsoft)
+Informazioni su come gli esperti IT di Microsoft gestiscono i [dispositivi con EMS](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Come ha agito Contoso con Microsoft 365 Enterprise
 

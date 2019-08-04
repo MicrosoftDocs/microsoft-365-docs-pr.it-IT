@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 10/31/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Informazioni su come installare automaticamente le app di Office a 32 bit nei computer Windows 10 e mantenerle aggiornate.
-ms.openlocfilehash: c8e93746b89925d6b6a928a474fe5736e2834987
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 20269c493b0e3b5a7deb56a24a5e1a9583ef9d0a
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286653"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074651"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>Preparare la distribuzione client di Office per Microsoft 365 Business
 
@@ -57,10 +57,10 @@ La tabella seguente descrive nel dettaglio le azione che gli utenti finali/ammin
   
 |**Stato di installazione iniziale di Office**|**Azione da eseguire prima di installare Office di Microsoft 365 Business**|**Stato finale**|
 |:-----|:-----|:-----|
-|Nessuna famiglia di applicazioni Office installata  <br/> |Nessuna  <br/> |Office 2016 a 32 bit è installato con A portata di clic  <br/> |
-|Versione A portata di clic a 32 bit di Office esistente (2016 o precedente) e nessuna app autonoma  <br/> |Nessuna  <br/> |Aggiornamento all'ultima versione A portata di clic a 32 bit di Office 2016, in base alle necessità **\*** <br/> |
-|Versione A portata di clic a 32 bit di Office esistente e app di Office autonome A portata di clic a 32 o 64 bit (ad esempio Visio, Project)  <br/> |Nessuna  <br/> |Le app autonome non vengono interessate. La famiglia di applicazioni viene aggiornata alla versione A portata di clic a 32 bit di Office 2016  <br/> |
-|Versione A portata di clic a 32 bit di Office esistente e qualsiasi app di Office autonoma a 32 o 64 bit (tranne la versione 2016) installata tramite MSI  <br/> |Nessuna  <br/> |Le app autonome non vengono interessate. La famiglia di applicazioni viene aggiornata alla versione A portata di clic a 32 bit di Office 2016  <br/> ||||
+|Nessuna famiglia di applicazioni Office installata  <br/> |Nessuno  <br/> |Office 2016 a 32 bit è installato con A portata di clic  <br/> |
+|Versione A portata di clic a 32 bit di Office esistente (2016 o precedente) e nessuna app autonoma  <br/> |Nessuno  <br/> |Aggiornamento all'ultima versione A portata di clic a 32 bit di Office 2016, in base alle necessità **\*** <br/> |
+|Versione A portata di clic a 32 bit di Office esistente e app di Office autonome A portata di clic a 32 o 64 bit (ad esempio Visio, Project)  <br/> |Nessuno  <br/> |Le app autonome non vengono interessate. La famiglia di applicazioni viene aggiornata alla versione A portata di clic a 32 bit di Office 2016  <br/> |
+|Versione A portata di clic a 32 bit di Office esistente e qualsiasi app di Office autonoma a 32 o 64 bit (tranne la versione 2016) installata tramite MSI  <br/> |Nessuno  <br/> |Le app autonome non vengono interessate. La famiglia di applicazioni viene aggiornata alla versione A portata di clic a 32 bit di Office 2016  <br/> ||||
 |Qualsiasi versione A portata di clic a 64 bit di Office esistente  <br/> |Disinstallare le app di Office a 64 bit, se è possibile sostituirle con le app di Office a 32 bit  <br/> |Se le app di Office a 64 bit vengono rimosse, viene installata la versione A portata di clic a 32 bit di Office 2016  <br/> |
 |Un'installazione MSI esistente di Office 2016 con o senza app autonome  <br/> |Disinstallare Office 2016 MSI.  <br/> |Viene installata la versione A portata di clic a 32 bit di Office 2016. Nessuna modifica alle app autonome  <br/> |
 |Installazione MSI esistente di Office 2013 (o versione precedente) e/o app autonome di Office  <br/> |Nessuno  <br/> |La versione A portata di clic a 32 bit di Office 2016 e l'installazione MSI di Office preesistente (e le app autonome) coesistono affiancate  <br/> |

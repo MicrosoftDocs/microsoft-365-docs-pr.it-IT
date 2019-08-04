@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 8/13/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Informazioni su come le caratteristiche di protezione in Microsoft 365 business vengono mappate alle impostazioni di Intune. La sottoscrizione fornisce una licenza per modificare le impostazioni di Intune.
-ms.openlocfilehash: ddd520cd059c84e5d64e967fe5631fe2f6bce0d4
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a6aaf6cc06c31b870eb85582f5aa47699919d75d
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278556"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074261"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Corrispondenza tra le caratteristiche di protezione in Microsoft 365 Business e le impostazioni di Intune
 
@@ -88,7 +88,7 @@ Fare clic sul nome del criterio da selezionare, quindi scegliere **Generale, Att
 
 La tabella seguente descrive il mapping tra le impostazioni di configurazione per i dispositivi Windows 10 e le impostazioni di Intune.
   
-per trovare l'impostazione intune, mentre è stato eseguito l'accesso con le credenziali di amministratore di Microsoft 365 Business, accedere a [portale di Azure](https://portal.azure.com), selezionare **altri servizi**e digitare intune nel **filtro**, selezionare il dispositivo **intune** \> ** ** \> **profili**di configurazione. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
+Per trovare l'impostazione Intune, mentre è stato eseguito l'accesso con le credenziali di amministratore di Microsoft 365 business, accedere a [portale di Azure](https://portal.azure.com), selezionare **altri servizi**e digitare Intune nel **filtro**, selezionare il dispositivo **Intune** \> ** ** \> **profili**di configurazione. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Impostazione dei criteri per i dispositivi Windows 10**|**Impostazioni di Intune**|
 |:-----|:-----|

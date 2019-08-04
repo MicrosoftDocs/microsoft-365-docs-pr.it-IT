@@ -3,7 +3,7 @@ title: Eseguire l'aggiornamento di dispositivi Windows a Windows Pro Creators Up
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: "Informazioni su come eseguire l'aggiornamento di dispositivi Windows a Windows 10 Pro Creators Update. "
-ms.openlocfilehash: 13a964b19b1fbd43e9c255a90161ca6b48099305
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: baa0dd6ad1c91a0ad7497ce9496681eb87e65d87
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33399975"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074341"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Eseguire l'aggiornamento di dispositivi Windows a Windows Pro Creators Update .
 

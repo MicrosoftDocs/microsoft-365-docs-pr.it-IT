@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno Smart Phone nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: ab346934ea639e819e4e45dd6560093629ee9cde
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 319f8058aa4504c52cacf5f0d97982d115c41c8a
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353178"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074216"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 Enterprise
 
@@ -54,7 +54,7 @@ Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel mo
     
 2. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     
-3. Nel riquadro utenti attivi, fare clic su **altre > configurazione di autenticazione a più fattori**.
+3. Nel riquadro utenti attivi, fare clic su **altre > configurazione dell'autenticazione a più fattori**.
     
 4. Nell'elenco, selezionare l'account **User 2** .
     
@@ -107,6 +107,6 @@ Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test
 
 [Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
 
-[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
 
 [Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)

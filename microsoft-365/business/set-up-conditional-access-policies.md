@@ -1,5 +1,5 @@
 ---
-title: Impostare i criteri di accesso condizionale
+title: Impostare i criteri di accesso condizionale per le campagne Microsoft 365
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,15 +19,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come configurare i criteri di accesso condizionale per Microsoft 365 business.
-ms.openlocfilehash: a0cc4a9085bdfe6a8d40acc69a020af1c5861fcf
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+description: Informazioni su come configurare i criteri di accesso condizionale per le campagne Microsoft 365.
+ms.openlocfilehash: 7d8e1f16019d151478aae57b1593b0e0758e5b19
+ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913007"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35076310"
 ---
-# <a name="set-up-conditional-access-policies-for-microsoft-365-business"></a>Impostare i criteri di accesso condizionale per Microsoft 365 business
+# <a name="set-up-conditional-access-policies"></a>Impostare i criteri di accesso condizionale
 
 I criteri di [accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) aggiungono sostanziale sicurezza aggiuntiva. Microsoft fornisce una serie di criteri di accesso condizionale previsti che sono consigliati per tutti i clienti. I criteri di base sono un insieme di criteri predefiniti che consentono di proteggere le organizzazioni da numerosi attacchi comuni. Questi attacchi comuni possono includere lo spray per la password, la riproduzione e il phishing.
 

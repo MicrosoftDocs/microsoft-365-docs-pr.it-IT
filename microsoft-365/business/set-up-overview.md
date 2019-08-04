@@ -3,7 +3,7 @@ title: Panoramica della configurazione
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365E_M365SetupBanner
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Panoramica dei passaggi di configurazione per Microsoft 365 business.
-ms.openlocfilehash: efa4d352b00ebba0cb9754c93e773d1ddaef19df
-ms.sourcegitcommit: 720881c1a9c5f708e1b4adf7e5ea4ff8da48ea99
+ms.openlocfilehash: ae7ed0aab36a6e759e0f0c1fbc3d3183273a284e
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970453"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074406"
 ---
 # <a name="overview-of-setup"></a>Panoramica dell'installazione
 

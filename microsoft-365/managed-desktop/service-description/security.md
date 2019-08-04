@@ -3,15 +3,15 @@ title: Sicurezza in Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: b91b646b00869827dfb2131e9df9db38a770d9df
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5987dcaf717ecb2907f02db675a77c3e1d2d2220
+ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278635"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35425669"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sicurezza in Microsoft Managed Desktop
 
@@ -46,9 +46,9 @@ Microsoft Managed Desktop garantisce la sicurezza e la protezione di tutti i dis
 
 Servizio | Descrizione
 --- | ---
-Antivirus | Windows Defender AV è installato e configurato<br>Le definizioni di Windows Defender AV sono aggiornate
+Antivirus | Microsoft Defender AV è installato e configurato<br>Le definizioni AV di Microsoft Defender sono aggiornate
 Crittografia a volume completo |    Windows BitLocker è la soluzione di crittografia dei contratti multilicenza per i dispositivi Microsoft Managed Desktop.<br><br>Dopo aver effettuato l'onboarding di un'organizzazione nel servizio, i dispositivi verranno crittografati utilizzando Windows BitLocker con il modulo TPM (Trust Platform Module) incorporato per impedire l'accesso non autorizzato ai dati locali quando il dispositivo è in modalità sospensione o disattivata. 
-Monitoraggio |    Windows Defender Advanced Threat Protection (Windows Defender ATP) viene utilizzato per il monitoraggio delle minacce alla sicurezza su tutti i dispositivi desktop Microsoft gestiti. Windows Defender ATP consente ai clienti aziendali di rilevare, indagare e rispondere alle minacce avanzate nella propria rete aziendale. Per ulteriori informazioni, vedere [Windows Defender Advanced Threat Protection.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Monitoraggio |    Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) viene utilizzato per il monitoraggio delle minacce alla sicurezza su tutti i dispositivi desktop Microsoft gestiti. Microsoft Defender ATP consente ai clienti aziendali di rilevare, indagare e rispondere alle minacce avanzate nella propria rete aziendale. Per ulteriori informazioni, vedere [protezione avanzata dalle minacce di Microsoft Defender.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 Aggiornamenti del sistema operativo |  I dispositivi Microsoft Managed Desktop sono sempre protetti con gli aggiornamenti della sicurezza più recenti.
 Configurazione sicura del dispositivo |   Microsoft Managed Desktop implementa la linea di base per la sicurezza di Microsoft. Per ulteriori informazioni, vedere [previsioni di sicurezza di Windows.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 
@@ -72,7 +72,7 @@ I clienti sono responsabili della sicurezza della rete.
 
 Servizio | Descrizione
 --- | ---
-VPN | I clienti possiedono l'infrastruttura VPN per garantire che le risorse aziendali limitate possano essere esposte all'esterno della rete Intranet.<br><br>Requisiti minimi: Microsoft Managed Desktop richiede una soluzione VPN compatibile con Windows 10 e supportata. Se l'organizzazione ha bisogno di una soluzione VPN, deve supportare Windows 10 e essere imballata e distribuita tramite Intune. Per ulteriori informazioni, contattare l'editore del software.<br><br>Elemento consigliato<br>-Microsoft consiglia una soluzione VPN moderna che potrebbe essere distribuita facilmente tramite Intune per spingere i profili VPN. In questo modo è possibile accedere a una rete aziendale sempre attiva, senza problemi, affidabile e sicura. Per ulteriori informazioni, vedere [[VPN settings in Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>-I client VPN spEssi o i client VPN legacy non sono consigliati da Microsoft durante l'utilizzo di Microsoft Managed Desktop poiché possono influire sull'ambiente dell'utente finale.<br>-Microsoft consiglia che il traffico Web in uscita vada direttamente a Internet senza passare attraverso la VPN per evitare problemi di prestazioni.<br>-Idealmente, Microsoft consiglia di utilizzare il proxy dell'applicazione di Azure Active Directory invece di una VPN.
+VPN | I clienti possiedono l'infrastruttura VPN per garantire che le risorse aziendali limitate possano essere esposte all'esterno della rete Intranet.<br><br>Requisiti minimi: Microsoft Managed Desktop richiede una soluzione VPN compatibile con Windows 10 e supportata. Se l'organizzazione ha bisogno di una soluzione VPN, deve supportare Windows 10 e essere imballata e distribuita tramite Intune. Per ulteriori informazioni, contattare l'editore del software.<br><br>Elemento consigliato<br>-Microsoft consiglia una soluzione VPN moderna che potrebbe essere distribuita facilmente tramite Intune per spingere i profili VPN. In questo modo è possibile accedere a una rete aziendale sempre attiva, senza problemi, affidabile e sicura. Per ulteriori informazioni, vedere [[VPN settings in Intune]](https://docs.microsoft.com/intune/vpn-settings-configure).<br>-I client VPN spessi o i client VPN legacy non sono consigliati da Microsoft durante l'utilizzo di Microsoft Managed Desktop poiché possono influire sull'ambiente dell'utente finale.<br>-Microsoft consiglia che il traffico Web in uscita vada direttamente a Internet senza passare attraverso la VPN per evitare problemi di prestazioni.<br>-Idealmente, Microsoft consiglia di utilizzare il proxy dell'applicazione di Azure Active Directory invece di una VPN.
 
 
 ## <a name="information-security"></a>Sicurezza delle informazioni

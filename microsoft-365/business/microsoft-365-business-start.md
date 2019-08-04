@@ -3,7 +3,7 @@ title: Introduzione a Microsoft 365 Business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come configurare Microsoft 365 business.
-ms.openlocfilehash: 78f7360c80667b8d34fad9d849cfc2cf83a8577b
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d309700761ee48ef66a8cd3886fd416c79463ed5
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278110"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074301"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Introduzione a Microsoft 365 Business
 
@@ -75,7 +75,7 @@ Seguire la procedura descritta in[set up mobile devices for Microsoft 365 busine
 
 Gli amministratori possono preselezionare le impostazioni per i nuovi dispositivi Windows 10 PC utilizzando [Windows Autopilot](add-autopilot-devices-and-profile.md). Gli utenti possono configurare i dispositivi Windows 10 esistenti o nuovi attenendosi alla procedura descritta in questo argomento: [configurare i PC Windows per gli utenti aziendali di Microsoft 365](set-up-windows-devices.md). Per gli utenti di dispositivi esistenti ****, facoltativamente, è anche possibile[spostare i file in OneDrive for business](move-files-to-onedrive.md). Possono anche utilizzare strumenti di terze parti per spostare i file associati al profilo di Windows in OneDrive.
   
-Se l'organizzazione utilizza Windows Server Active Directory in locale, è possibile configurare Microsoft 365 business per proteggere i dispositivi Windows 10, mantenendo comunque l'accesso alle risorse locali che richiedono l'autenticazione locale. Seguire la procedura descritta in [Enable Domain-joinEd Windows 10 devices to be managed by Microsoft 365 business](manage-windows-devices.md) to set this up. Questo è il metodo preferito e i dispositivi in questo stato sono denominati **dispositivi ibridi di Azure ad Uniti**. 
+Se l'organizzazione utilizza Windows Server Active Directory in locale, è possibile configurare Microsoft 365 business per proteggere i dispositivi Windows 10, mantenendo comunque l'accesso alle risorse locali che richiedono l'autenticazione locale. Seguire la procedura descritta in [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 business](manage-windows-devices.md) to set this up. Questo è il metodo preferito e i dispositivi in questo stato sono denominati **dispositivi ibridi di Azure ad Uniti**. 
   
 Se si conserva un Active Directory locale che contiene alcune risorse locali (ad esempio condivisioni di file e stampanti), è possibile consentire ai **dispositivi di Azure ad-join** di accedere a tali risorse attenendosi alla procedura seguente: [accesso alle risorse locali da un Dispositivo di Azure AD-joined in Microsoft 365 business](access-resources.md).
   

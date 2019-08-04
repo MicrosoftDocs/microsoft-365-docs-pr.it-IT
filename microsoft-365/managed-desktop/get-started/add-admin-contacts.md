@@ -3,16 +3,16 @@ title: Aggiungere i contatti di amministratore nel portale di amministrazione di
 description: Indicare gli utenti che devono contattare per ogni area di interesse.
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 014404ab38ff5871289be186dec150115c3be6ec
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 68f5d5cb46d4aa643b1b09f9204b24dea3d77eb1
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32277542"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390533"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Aggiungere i contatti di amministratore nel portale di amministrazione di Microsoft Managed Desktop
 
@@ -26,17 +26,18 @@ Il portale di amministrazione di Microsoft Managed Desktop richiede che gli uten
 - Amministratore fatturazione
 - Amministratore del supporto tecnico
 
-L'amministratore globale deve essere quello di registrazione del cliente in Microsoft Managed Desktop.  Tutti e cinque i ruoli dispongono dello stesso accesso all'interno del portale di amministrazione per avviare e visualizzare le attività.  Per ulteriori informazioni sull'assegnazione di questi ruoli in Azure AD, vedere [autorizzazioni per il ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+L'amministratore globale deve essere quello di registrazione del cliente in Microsoft Managed Desktop. Tutti e cinque i ruoli dispongono dello stesso accesso all'interno del portale di amministrazione per avviare e visualizzare le attività. Per ulteriori informazioni sull'assegnazione di questi ruoli in Azure AD, vedere [autorizzazioni per il ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
 ## <a name="admin-contact-focus-areas"></a>Aree di interesse per i contatti amministrativi
 
-I contatti amministrativi devono essere la persona o il gruppo migliore in grado di rispondere alle domande e prendere decisioni per diverse aree di interesse.  Microsoft Managed Desktop Operations contatterà questi contatti di amministrazione per le domande relative alle richieste di supporto presentate dal cliente.  Questi contatti di amministratore ricevono notifiche per gli aggiornamenti delle richieste di supporto e i nuovi messaggi.  Tra queste aree sono incluse le seguenti:
+I contatti amministrativi devono essere la persona o il gruppo migliore in grado di rispondere alle domande e prendere decisioni per diverse aree di interesse. Microsoft Managed Desktop Operations contatterà questi contatti di amministrazione per le domande relative alle richieste di supporto presentate dal cliente. Questi contatti di amministratore ricevono notifiche per gli aggiornamenti delle richieste di supporto e i nuovi messaggi. Tra queste aree sono incluse le seguenti:
 
 Area di interesse | Per domande su
 --- | ---
 App | Risoluzione dei problemi relativi agli imballaggi delle app
 Dispositivi | Integrità del dispositivo, risoluzione dei problemi con i dispositivi Microsoft Managed Desktop
 Sicurezza | Risoluzione dei problemi di sicurezza con i dispositivi Microsoft Managed Desktop
+Supporto tecnico IT | nei casi in cui Microsoft Managed Desktop supporta i ticket degli utenti finali al di fuori delle aree di supporto di MMD 
 Altro | Per i problemi non coperti da altre aree
 
 Chiunque sia scelto per questi contatti deve avere le conoscenze e l'autorità necessarie per prendere decisioni per l'ambiente desktop Microsoft gestito. Quando si esegue l'onboarding dell'ambiente Microsoft Managed Desktop, viene richiesto di aggiungere contatti per il supporto tecnico e la sicurezza locali. 
@@ -45,7 +46,7 @@ I contatti amministrativi sono necessari quando si [Invia una richiesta di suppo
 
 **Per aggiungere contatti di amministratore**
 
-1.  Accedere al [portale di amministrazione di Microsoft managEd desktop](http://aka.ms/mwaasportal). 
+1.  Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal). 
 
 2.  In **supporto**, selezionare **contatti di amministratore**. 
 

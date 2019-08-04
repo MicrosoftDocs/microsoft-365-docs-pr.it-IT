@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 08/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurare Azure AD Identity Protection e analizzare gli account correnti nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: bdac512f7645bf78c0a9c6bc5f71b35916bc4812
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: d267bb9dff94acfec46fa1275887f9cade2a7285
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279095"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074086"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD Identity Protection per l'ambiente di testing Microsoft 365 Enterprise
 
@@ -26,7 +26,7 @@ Azure AD Identity Protection consente di rilevare potenziali vulnerabilità che 
 
 Sono disponibili due fasi per la configurazione di Azure AD Identity Protection nell'ambiente di testing Microsoft 365 Enterprise:
 
-1. Creare l'ambiente di testing Microsoft 365 Enterprise.
+1. Creare l'ambiente di testing di Microsoft 365 Enterprise.
 2. Abilitazione e utilizzo di Azure AD Identity Protection.
 
 ![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
@@ -46,7 +46,7 @@ Se si desidera testare Azure AD Identity Protection in un'azienda simulata, segu
 ## <a name="phase-2-enable-and-use-azure-ad-identity-protection"></a>Fase 2: abilitare e utilizzare Azure AD Identity Protection
 
 1. Aprire un'istanza privata del browser e accedere al portale di Azure [https://portal.azure.com](https://portal.azure.com) con l'account di amministratore globale dell'ambiente di testing di Microsoft 365 Enterprise.
-2. Nel portale di Azure, fare clic su **tutti i servizi _GT_ Marketplace**.
+2. Nel portale di Azure, fare clic su **tutti i servizi > Marketplace**.
 3. Digitare **Azure ad Identity Protection** e quindi fare clic su di esso.
 4. Nella barra **iniziale** , fare clic su **onboard** in **Impostazioni**, fare clic su **Aggiungi a Dashboard**, quindi fare clic su **Crea**.
 5. Nel portale di Azure, fare clic su **Azure ad Identity Protection** nel dashboard. 
@@ -69,6 +69,6 @@ Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test
 
 [Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
 
-[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
 
 [Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)

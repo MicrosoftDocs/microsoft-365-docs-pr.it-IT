@@ -3,16 +3,16 @@ title: Installare Microsoft Project o Microsoft Visio nei dispositivi Microsoft 
 description: Informazioni sull'installazione di Microsoft Project o Microsoft Visio sui dispositivi Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, Microsoft Project, Microsoft Visio
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5c820e36b7b397fe770216ee229e38a1da5b034d
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 203db332e1fcd7861f40c69b138ac8274544dceb
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288997"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830474"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installare Microsoft Project o Microsoft Visio nei dispositivi Microsoft Managed Desktop
 
@@ -31,7 +31,7 @@ Gli amministratori devono verificare che soddisfino questi prerequisiti:
 Dopo aver inviato la richiesta di supporto, Microsoft Managed Desktop creerà tre gruppi di Azure AD e tre distribuzioni di applicazioni tramite Microsoft Intune per distribuire le app al tenant.  
 
 **Per distribuire Project e Visio**
-1. **Presentare una richiesta di supporto** Gli amministratori IT devono presentare una richiesta di supporto per rendere queste applicazioni disponibili agli utenti. Per informazioni su come contattare Microsoft Managed Desktop, vedere [supporto di amministrazione per Microsoft managEd desktop](../working-with-managed-desktop/admin-support.md).
+1. **Presentare una richiesta di supporto** Gli amministratori IT devono presentare una richiesta di supporto per rendere queste applicazioni disponibili agli utenti. Per informazioni su come contattare Microsoft Managed Desktop, vedere [supporto di amministrazione per Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
 2. **Assegnare gli utenti ai nuovi gruppi di Azure ad** Microsoft Managed Desktop creerà tre gruppi di Azure AD nel tenant e 3 distribuzioni di applicazioni corrispondenti. Gli amministratori IT devono assegnare gli utenti ai gruppi adatti.
 
 >[!NOTE]
@@ -39,9 +39,9 @@ Dopo aver inviato la richiesta di supporto, Microsoft Managed Desktop creerà tr
 
 Nome del gruppo di Azure AD | Quali utenti assegnare?   
  --- | ---
-Microsoft-Office-Project-install | Gli utenti che hanno bisogno di solo Project
-Microsoft-Office-Visio-install | Gli utenti che hanno bisogno di solo Visio
-Microsoft-Office-Project e Visio-install | Gli utenti che hanno bisogno sia di Project che di Visio
+Ambiente di lavoro moderno-Office-Project-install | Gli utenti che hanno bisogno di solo Project
+Ambiente di lavoro moderno-Office-Visio-install | Gli utenti che hanno bisogno di solo Visio
+Ambiente di lavoro moderno-Office-Project e Visio-install | Gli utenti che hanno bisogno sia di Project che di Visio
 
 Una volta assegnati a questi gruppi, le applicazioni saranno disponibili nel portale aziendale. La sincronizzazione potrebbe richiedere alcuni minuti, ma gli utenti possono installare le app dal portale aziendale. 
 

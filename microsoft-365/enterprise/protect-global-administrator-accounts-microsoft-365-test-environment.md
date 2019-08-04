@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/16/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Attenersi alla procedura seguente per proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: 86b2d325fc710fd8b387bc37cad5f8ea60df001d
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: 7a6f99ae1123b07618dea9910a0bdd993e36ca13
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33353058"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34074146"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-enterprise-test-environment"></a>Proteggere gli account di amministratore globale nell'ambiente di testing di Microsoft 365 Enterprise
 
@@ -66,24 +66,24 @@ Successivamente, creare un nuovo gruppo denominato GlobalAdmins e aggiungere l'a
 4. Fare clic su **Seleziona proprietario** fare clic sull'account amministratore globale, quindi fare clic su **Aggiungi > Chiudi**.
 5. Nell'elenco dei gruppi fare clic sul gruppo **GlobalAdmins** .
 6. Nella pagina **GlobalAdmins** fare clic su **modifica per membro**, quindi fare clic su **Aggiungi membri**.
-7. Nell'elenco, fare clic sull'account **DedicatedAdmin** , quindi fare clic su **Salva _GT_ Close _GT_ Close > Admin Center**.
+7. Nell'elenco, fare clic sull'account **DedicatedAdmin** , quindi fare clic su **salva > chiudi > Chiudi >** interfaccia di amministrazione.
 
 Successivamente, creare criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli account di amministratore globale e negare l'autenticazione se il rischio di ingresso è medio o elevato.
 
 Questo primo criterio richiede che tutti gli account di amministratore globale utilizzino AMF.
 
 1. In una nuova scheda del browser, passare a [https://portal.azure.com](https://portal.azure.com).
-2. Fare clic su **accesso condizionale di Azure Active Directory >**.
+2. Fare clic su **Azure Active Directory > accesso condizionale**.
 3. Nel pannello **criteri di accesso condizionale** fare clic su **criteri di base: richiedere l'autenticazione master per gli amministratori (anteprima)**.
-4. Nei **criteri di base...** Blade, fare clic su **Use Policy immediatamente _GT_ Save**.
+4. Nei **criteri di base...** Blade, fare clic su **Usa criteri immediatamente > Salva**.
 
 Questo secondo criterio blocca l'accesso all'autenticazione dell'account amministratore globale quando il rischio di ingresso è medio o elevato.
 
 1. Nel pannello **criteri di accesso condizionale** fare clic su **nuovo criterio**.
 2. Nel **nuovo** Blade, digitare **Global Administrators** in **Name**.
 3. Nella sezione **assegnazioni** fare clic su **utenti e gruppi**.
-4. Nella scheda **Includi** del Blade **utenti e gruppi** fare clic su **Seleziona utenti e gruppi _GT_ utenti e gruppi > seleziona**.
-5. Nel pannello **Seleziona** , fare clic sul **GlobalAdmins _GT_ selezionare > fatto**.
+4. Nella scheda **Includi** del Blade **utenti e gruppi** fare clic su **Seleziona utenti e gruppi > utenti e gruppi > selezionare**.
+5. Nel pannello **Seleziona** , fare clic sul **GlobalAdmins > seleziona > fatto**.
 6. Nella sezione **assegnazioni** fare clic su **condizioni**.
 7. Nel pannello **condizioni** fare clic su **rischio di accesso**, fare clic **su Sì** per **Configura**, fare clic su **alto** e **medio**, quindi fare clic su **Seleziona** e **Chiudi**.
 8. Nella sezione **controlli di accesso** del **nuovo** Blade, fare clic su **Grant**.
@@ -105,6 +105,6 @@ Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test
 
 [Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)
 
-[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md).
 
 [Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)

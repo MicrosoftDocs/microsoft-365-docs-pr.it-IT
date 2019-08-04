@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 31650774a784f1fe784c30b90bc1f9ae579b34fa
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: f7f1b8377769545c4399f54b0f2eab99a656d24f
+ms.sourcegitcommit: 18e03ab333175eccfc89e38b081022746976e513
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291613"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35595302"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Passaggio 2: distribuire Windows 10 Enterprise per i dispositivi esistenti come aggiornamento sul posto
 
@@ -46,13 +46,13 @@ Esaminare questi requisiti prima di avviare la distribuzione di Windows 10:
 - **Edizioni di Windows idonee per l'aggiornamento** : i dispositivi devono eseguire edizioni di Windows 7 o Windows 8,1 che sono idonee per l'aggiornamento a Windows 10 Enterprise. Per un elenco delle edizioni supportate, vedere [percorsi di aggiornamento di Windows 10](https://aka.ms/win10upgradepaths). 
 - **Dispositivi supportati** : la maggior parte dei computer compatibili con Windows 8,1 sarà compatibile con Windows 10. Potrebbe essere necessario installare i driver aggiornati in Windows 10 affinché i dispositivi funzionino correttamente. Per altre informazioni, vedere [specifiche di Windows 10](https://aka.ms/windows10specifications) .
 - **Preparazione della distribuzione** : prima di iniziare a configurare la distribuzione, assicurarsi di avere la seguente procedura.
-    - Supporto di installazione di Windows 10-il supporto di installazione deve trovarsi in un'unità distinta, con la ISO già montata. È possibile ottenere la ISO da [download abbonaTi MSDN](https://aka.ms/msdn-subscriber-downloads) o dal [centro servizi per contratti multilicenza](https://aka.ms/mvlsc).
+    - Supporto di installazione di Windows 10-il supporto di installazione deve trovarsi in un'unità distinta, con la ISO già montata. È possibile ottenere la ISO da [download abbonati MSDN](https://aka.ms/msdn-subscriber-downloads) o dal [centro servizi per contratti multilicenza](https://aka.ms/mvlsc).
     - Backup dei dati degli utenti-sebbene i dati dell'utente verranno migrati nell'aggiornamento, la procedura consigliata consiste nel configurare uno scenario di backup. Ad esempio, esportare tutti i dati degli utenti in un account OneDrive, BitLocker to go-Encrypted USB Flash Drive o network file server. Per ulteriori informazioni, vedere [eseguire il backup o il trasferimento dei dati in Windows](https://aka.ms/backuptransferdatawindows).
 - **Preparazione dell'ambiente** : si utilizzerà una struttura del Server Configuration Manager esistente per preparare la distribuzione del sistema operativo. Oltre alla configurazione di base, è necessario effettuare le seguenti configurazioni nell'ambiente Configuration Manager:
     1. [Estendere lo schema di Active Directory](https://aka.ms/extendadschema) e [creare un contenitore di gestione del sistema](https://aka.ms/createsysmancontainer).
     2. Abilitare l'individuazione della foresta di Active Directory e l'individuazione del sistema di Active Directory. Per altre informazioni, vedere [Configure Discovery Methods for System Center Configuration Manager](https://aka.ms/configurediscoverymethods).
     3. Creare confini dell'intervallo IP e gruppo di limiti per il contenuto e l'assegnazione del sito. Per altre informazioni, vedere [definire i limiti del sito e i gruppi di limiti per System Center Configuration Manager](https://aka.ms/definesiteboundaries).
-    4. Aggiungere e configurare il ruolo del punto di Reporting Services di Configuration Manager. Per altre informazioni, vedere [ConfigurIng Reporting in Configuration Manager](https://aka.ms/configurereporting).
+    4. Aggiungere e configurare il ruolo del punto di Reporting Services di Configuration Manager. Per altre informazioni, vedere [Configuring Reporting in Configuration Manager](https://aka.ms/configurereporting).
     5. Creare una struttura di cartelle di file System per i pacchetti.
     6. Creare una struttura di cartelle console di Configuration Manager per i pacchetti.
     7. Installare System Center Configuration Manager (Current Branch) e gli eventuali ulteriori prerequisiti di Windows 10.
@@ -121,7 +121,7 @@ Eseguire la procedura seguente per creare una distribuzione per la sequenza di a
 7. Nella pagina **avvisi** accettare le impostazioni predefinite e quindi fare clic su **Avanti**.
 8. Nella pagina **Riepilogo** fare clic su **Avanti**e quindi su **Chiudi**.
 
-## <a name="part-5-start-the-windows-10-upgrade-task-sequence"></a>Parte 5: avviare la sequenza di attività di aggiornamento di Windows 10
+## <a name="part-4-start-the-windows-10-upgrade-task-sequence"></a>Parte 4: avviare la sequenza di attività di aggiornamento di Windows 10
 Eseguire la procedura seguente per avviare la sequenza di attività di aggiornamento di Windows 10 nel dispositivo che si sta aggiornando.
  
 1. Accedere al computer Windows e avviare il **Centro software**.

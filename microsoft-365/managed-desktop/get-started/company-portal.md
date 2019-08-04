@@ -3,16 +3,16 @@ title: Installare i dispositivi Microsoft Managed Desktop del portale aziendale 
 description: Informazioni sull'installazione dell'app portale aziendale nei dispositivi Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, portale aziendale
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/08/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d533de7b68d9fa55ff0a108373d9621068c8fb1e
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: a9ce2b2455b6036170636ac564c450676473ac48
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289111"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390703"
 ---
 # <a name="install-intune-company-portal-on-microsoft-managed-desktop-devices"></a>Installare il portale aziendale di Intune sui dispositivi Microsoft Managed Desktop
 
@@ -38,7 +38,7 @@ In questo argomento vengono fornite informazioni su come eseguire le operazioni 
 ## <a name="step-2---assign-company-portal-to-your-users"></a>Passaggio 2: assegnare il portale aziendale agli utenti
 Inviare una richiesta di supporto per le operazioni di Microsoft Managed Desktop tramite il portale di amministrazione di Microsoft Managed Desktop. Nella richiesta di supporto, richiedere che il portale aziendale sia assegnato agli utenti. Microsoft Managed Desktop distribuirà il portale aziendale nel tenant e installerà l'applicazione sui dispositivi Microsoft Managed Desktop nell'organizzazione.
 
-Per ulteriori informazioni su come inviare richieste di supporto con Microsoft Managed Desktop, vedere [supporto di amministrazione per Microsoft managEd desktop](../working-with-managed-desktop/admin-support.md).
+Per ulteriori informazioni su come inviare richieste di supporto con Microsoft Managed Desktop, vedere [supporto di amministrazione per Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md).
 
 ## <a name="step-3---communicate-change-to-your-users"></a>Passaggio 3: comunicare le modifiche agli utenti
 Come amministratore IT per l'organizzazione, è importante consentire agli utenti di sapere come usare il portale aziendale nell'organizzazione. Microsoft Managed Desktop consiglia di:

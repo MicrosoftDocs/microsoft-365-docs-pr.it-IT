@@ -3,15 +3,15 @@ title: Microsoft Managed Desktop è il posto giusto per te
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
-author: trudyha
+author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: 6b78586f4ce1f81795e01873161a9cbf7768c2ac
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c0866dc4ff4a768bbae2488cdea2655470978f94
+ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283448"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35390693"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Che cos'è Microsoft Managed Desktop?
 
@@ -37,9 +37,9 @@ Microsoft Managed Desktop offre ai clienti una soluzione IT completa che delizia
 
 Microsoft Managed Desktop offre la migliore esperienza utente con la tecnologia più recente, il tutto supportato da Microsoft. 
 
-## <a name="additional-resources"></a>Altre risorse
+## <a name="additional-resources"></a>Risorse aggiuntive
 - [Descrizione del servizio Microsoft Managed Desktop](../service-description/index.md)
-- [Prerequisiti di Microsoft managEd desktop](../get-ready/prerequisites.md).
+- [Prerequisiti di Microsoft Managed Desktop](../get-ready/prerequisites.md).
 
 <!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
 

@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/18/2018
 ms.author: greglin
-ms.openlocfilehash: 88517c6b8de95c54ee9a2e47d4545266eb198249
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 450b14fb82483bd83e0c83dace173540d0281868
+ms.sourcegitcommit: 12fbb429dba7517220191d90816e235583943fe0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289437"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33623130"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fase 3: Windows 10 Enterprise
 
@@ -85,15 +85,7 @@ Per ulteriori informazioni sulle funzionalità di sicurezza disponibili con Wind
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
-Per sbirciare all'interno di Microsoft e scoprire in che modo la società ha pianificato, distribuito e gestisce gli aggiornamenti per Windows 10, vedere:
-
-- [Preparazione dell'organizzazione per una distribuzione semplice di Windows 10](https://www.microsoft.com/itshowcase/windows10deployment?wt.mc_id=bmkg_itsc)
-- [Adozione di Windows as a Service in Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
-- [Distribuzione di Windows 10 in Microsoft come aggiornamento sul posto](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
-- [Implementazione dell'autenticazione utente avanzata con Windows Hello for Business](https://www.microsoft.com/itshowcase/Article/Content/756/Implementing-strong-user-authentication-with-Windows-Hello-for-Business)
-- [Distribuzione di Windows 10: suggerimenti e consigli da IT Microsoft](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (video)
-- [Windows Defender ATP consente di individuare le minacce avanzate](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
-- [Protezione dell'azienda moderna con Windows Defender e Windows Defender ATP](https://www.microsoft.com/itshowcase/Article/Content/903/Securing-the-modern-enterprise-with-Windows-Defender-and-Windows-Defender-ATP) (video)
+Sbircia all'interno di Microsoft e Scopri come la società [ha distribuito Windows 10 Enterprise e utilizza Strong Authentication, Intune e Windows Defender ATP](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR6).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Come ha agito Contoso con Microsoft 365 Enterprise
 
