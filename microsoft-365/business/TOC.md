@@ -15,9 +15,10 @@
 ## Configurazione del dispositivo utente
 ### [Configurare i dispositivi mobili](set-up-mobile-devices.md)
 ### [Configurare i dispositivi Windows](set-up-windows-devices.md)
-## [Protezione](security-features.md)
-### [Proteggere l'azienda](/Office365/Admin/security-and-compliance/secure-your-business-data?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
-### [Configurare le funzionalità di sicurezza avanzate](set-up-advanced-security.md)
+## [Proteggere l'azienda](security-features.md)
+### [Aumentare la protezione dalle minacce](increase-threat-protection.md)
+### [Introduzione all'accesso condizionale](set-up-conditional-access-policies.md)
+### [Configurare le funzionalità di conformità](set-up-compliance.md)
 ## Gestire gli utenti
 ### [Aggiungere utenti](add-users-m365b.md)
 ### [Rimuovere un dipendente](/Office365/Admin/add-users/remove-former-employee?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
