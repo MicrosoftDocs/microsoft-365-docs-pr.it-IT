@@ -3,7 +3,7 @@ title: Infrastruttura di base di Microsoft 365 Enterprise per organizzazioni non
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Esame delle fasi semplificate dell'infrastruttura di base per Microsoft 365 Enterprise per organizzazioni non aziendali.
-ms.openlocfilehash: 64d911a9d59d5b9b1a450a9a122463699ec8eab8
-ms.sourcegitcommit: 2cf0d57b1771b37db773c3eaabac8456a6fa9195
+ms.openlocfilehash: 8e2c254bf352baa14ff62dad500e5cdfa0af4563
+ms.sourcegitcommit: 639607bbf02bdedd3fa5cd7b0984b422fe6c874e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34419815"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35624634"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-for-non-enterprises"></a>Infrastruttura di base di Microsoft 365 Enterprise per organizzazioni non aziendali
 
@@ -42,16 +42,18 @@ In seguito, è necessario configurare la sicurezza aggiuntiva per Microsoft 365.
 
 ## <a name="phase-1-networking"></a>Fase 1: Funzionalità di rete
 
-Le organizzazioni non aziendali dispongono in genere di connessioni a Internet locali in ogni ufficio e non usano server proxy, firewall o dispositivi di controllo dei pacchetti. Il provider di servizi Internet (ISP) in ogni ufficio dispone di un server DNS locale a livello di area geografica, di conseguenza il traffico viene reindirizzato ai server cloud di Microsoft 365 più vicini agli uffici e agli utenti locali.
+Le organizzazioni non aziendali dispongono in genere di connessioni a Internet locali in ogni ufficio e non usano server proxy, firewall o dispositivi di controllo dei pacchetti. Il provider di servizi Internet (ISP) a servizio in ogni ufficio dispone di un server DNS locale a livello di area geografica, di conseguenza il traffico viene reindirizzato al percorso di rete di Microsoft 365 più vicini agli uffici e agli utenti locali.
 
 È quindi necessario solo verificare con l'ISP che la connessione in ogni ufficio:
 
 - Usi un server DNS locale a livello di area geografica.
 - Sia adeguata per le esigenze attuali e future, quando gli utenti inizieranno a usare altri servizi cloud di Microsoft 365.
 
+Se si usano server proxy, firewall o dispositivi di controllo dei pacchetti, per altre [informazioni, vedere infrastruttura di rete](networking-infrastructure.md) per Microsoft 365 Enterprise.
+
 ### <a name="your-configuration-so-far"></a>Configurazione attuale
 
-Ecco una grafica riepilogativa in cui è evidenziato l'elemento della fase 1. La dicitura **Organizzazione** può corrispondere a più uffici, ognuno dei quali dispone di una connessione Internet locale con un ISP che usa un server DNS locale a livello di area geografica. Grazie all'ISP, gli utenti di ogni ufficio possono raggiungere il percorso di rete Microsoft più vicino e le risorse dell'abbonamento a Microsoft 365.
+Ecco una grafica riepilogativa in cui è evidenziato l'elemento della fase 1. La dicitura **Organizzazione** può corrispondere a più uffici, ognuno dei quali dispone di una connessione Internet locale con un ISP che usa un server DNS locale a livello di area geografica. Grazie all'ISP, gli utenti di ogni ufficio possono raggiungere il percorso di rete Microsoft 365 più vicino e le risorse dell'abbonamento a Microsoft 365.
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
@@ -75,11 +77,12 @@ Se non si dispone di un dominio di AD DS locale, creare gruppi di sicurezza in A
 |:-------|:-----|:-----|
 | Di base | Si tratta di uno standard minimo predefinito per la protezione dei dati, delle identità e dei dispositivi che accedono ai dati. <BR><BR> È adatto, in genere, alla maggior parte dei dati dell'organizzazione gestiti dalla maggior parte degli utenti. | Gruppi per gli operatori sul campo, che operano ad esempio nel settore vendite, marketing, assistenza clienti, amministrazione e produzione. |
 | Dati sensibili | Si tratta di un livello di protezione aggiuntivo per un sottoinsieme di dati che richiedono un livello di protezione ulteriore rispetto a quello di base. Questi gruppi includono utenti che usano e creano dati riservati specifici di reparti e progetti e che non devono essere disponibili per tutti gli utenti. | Team di prodotto o marketing che sviluppano prodotti futuri |
-| Riservatezza elevata | Si tratta del livello di protezione più elevato per una quantità generalmente ridotta di dati classificati come altamente riservati, considerati come proprietà intellettuale o segreti commerciali, oppure per dati soggetti al rispetto di normative di sicurezza. |  Team di ricerca, legali e finanziari. <BR><BR> Team che archiviano o usano dati dei clienti o dei partner. |
+| Riservatezza elevata | Si tratta del livello di protezione più elevato per una quantità generalmente ridotta di dati classificati come altamente riservati, considerati come proprietà intellettuale o segreti commerciali, oppure per dati soggetti al rispetto di normative di sicurezza. |  Team di ricerca, legale, finanziario o team che archiviano o usano i dati di clienti o partner. |
+||||
 
 ### <a name="hybrid-identity"></a>Identità ibrida
 
-Se si dispone di un dominio di AD DS locale, configurare Azure AD Connect in un server con sincronizzazione dell'hash delle password (PHS). Per altre informazioni, vedere [Sincronizzare le identità](identity-azure-ad-connect.md).
+Se si ha un dominio di Active Directory locale, è necessario sincronizzare il set di account utente, gruppi e contatti del dominio con il tenant di Azure AD dell'abbonamento a Microsoft 365 Enterprise. Per un’organizzazione non aziendale, configurare Azure AD Connect in un server con sincronizzazione dell'hash delle password (PHS). Per altre informazioni, vedere [Sincronizzare le identità](identity-azure-ad-connect.md).
 
 ### <a name="more-secure-user-access-with-conditional-access-policies"></a>Accessi utente più sicuri con i criteri di accesso condizionale
 
@@ -149,7 +152,7 @@ Ecco una grafica riepilogativa della fase Identità per l'identità ibrida in cu
 
 ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
-Gli elementi nuovi ed evidenziati della fase Identità includono:
+Gli elementi nuovi ed evidenziati della fase identità ibrida includono:
  
 |||
 |:------:|:-----|
@@ -160,17 +163,25 @@ Gli elementi nuovi ed evidenziati della fase Identità includono:
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Criteri di accesso condizionale di Azure AD. |
 |||
 
+Ecco una grafica riepilogativa della fase identità solo cloud in cui sono evidenziati i nuovi elementi.
+
+![](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
+ 
+Gli elementi nuovi ed evidenziati della fase solo cloud includono:
+ 
+|||
+|:------:|:-----|
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Impostazioni di Azure AD per l'autenticazione, per proteggere gli account globali e semplificare la gestione dei gruppi e delle licenze. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Criteri di accesso condizionale di Azure AD. |
+|||
+
+
+
 ## <a name="phase-3-windows-10-enterprise"></a>Fase 3: Windows 10 Enterprise
 
 Per assicurarsi che i dispositivi Windows 10 Enterprise vengano integrati nell'infrastruttura di identità e sicurezza di Microsoft 365, è possibile scegliere tra le opzioni seguenti:
 
-- Solo cloud (il dominio di AD DS locale non è disponibile)
-
-  Aggiungere ogni dispositivo Windows 10 Enterprise al tenant di Azure AD dell'abbonamento.
-
-  Per altre informazioni, vedere [Aggiungere il dispositivo aziendale alla rete dell'organizzazione](https://docs.microsoft.com/it-IT/azure/active-directory/user-help/user-help-join-device-on-network).
-
-- Ibrido (il dominio di AD DS locale non è disponibile)
+- Ibrido (un dominio di AD DS locale non è disponibile)
 
   Aggiungere al tenant di Azure AD ogni dispositivo Windows 10 Enterprise esistente già presente nel dominio di AD DS. Per altre informazioni, vedere [Come configurare dispositivi aggiunti all'identità ibrida di Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=872870).
 
@@ -178,7 +189,14 @@ Per assicurarsi che i dispositivi Windows 10 Enterprise vengano integrati nell'i
 
   Registrare ogni dispositivo Windows 10 Enterprise per la gestione dei dispositivi mobili. Vedere [Registrare un dispositivo di Windows 10 usando i Criteri di gruppo](https://go.microsoft.com/fwlink/p/?linkid=872871) per le istruzioni.
 
-Dopo essere stato installato e aggiunto ogni dispositivo Windows 10 Enterprise installa automaticamente gli aggiornamenti per il servizio cloud Windows Update per le aziende. In un'organizzazione non aziendale non è in genere necessario configurare un'infrastruttura per distribuire e installare gli aggiornamenti.
+- Solo cloud (un dominio di AD DS locale non è disponibile)
+
+  Aggiungere ogni dispositivo Windows 10 Enterprise al tenant di Azure AD dell'abbonamento.
+
+  Per altre informazioni, vedere [Aggiungere il dispositivo aziendale alla rete dell'organizzazione](https://docs.microsoft.com/it-IT/azure/active-directory/user-help/user-help-join-device-on-network).
+
+
+Dopo essere stato installato e aggiunto ogni dispositivo Windows 10 Enterprise installa automaticamente gli aggiornamenti per il servizio cloud Windows Update per le aziende. In un'organizzazione non aziendale non è in genere necessario configurare un'infrastruttura per distribuire e installare gli aggiornamenti Windows 10.
 
 ### <a name="your-configuration-so-far"></a>Configurazione attuale
 
@@ -196,9 +214,9 @@ Gli elementi nuovi ed evidenziati della fase Windows 10 Enterprise includono:
 
 ## <a name="phase-4-office-365-proplus"></a>Fase 4: Office 365 ProPlus
 
-Microsoft 365 Enterprise include Office 365 ProPlus, la versione in abbonamento di Microsoft Office. Come Office 2016 o Office 2019, Office 365 ProPlus viene installato direttamente nei dispositivi client. Office 365 ProPlus riceve però regolarmente le nuove funzionalità. Per altre informazioni, vedere [Informazioni su Office 365 ProPlus nell'azienda](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Enterprise include Office 365 ProPlus, la versione in abbonamento di Microsoft Office. Come Office 2016 o Office 2019, Office 365 ProPlus viene installato direttamente nei dispositivi client. Office 365 ProPlus riceve però regolarmente gli aggiornamenti delle nuove funzionalità. Per altre informazioni, vedere [Informazioni su Office 365 ProPlus nell'azienda](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
-Per l'organizzazione non aziendale, installare manualmente Office 365 ProPlus nei dispositivi. Questa operazione può essere eseguita dall'amministratore durante la preparazione di un nuovo dispositivo per l'uso oppure può essere eseguita dall'utente durante il processo di onboarding.
+Per l'organizzazione non aziendale, installare manualmente Office 365 ProPlus nei dispositivi. Questa operazione può essere eseguita dall'amministratore durante la preparazione di un nuovo dispositivo per l'uso oppure dall'utente durante il processo di onboarding.
 
 In entrambi i casi, l'amministratore o l'utente accede al portale di Office 365 disponibile all'indirizzo https://portal.office.com. Nella scheda **Microsoft Office Home** fare clic su **Installa Office** ed eseguire il processo di installazione.
 
@@ -214,19 +232,19 @@ Gli elementi nuovi ed evidenziati della fase Office 365 ProPlus includono:
  
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus installato nei dispositivi, con il portatile locale come esempio. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus installato nei dispositivi, con un portatile locale come esempio. |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Rete per la distribuzione di contenuti di Office (CDN) per Office 365 ProPlus, a cui i dispositivi accedono per scaricare gli aggiornamenti di Office 365 ProPlus. |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>Fase 5: Gestione dei dispositivi mobili
 
-Microsoft 365 Enterprise include Microsoft Intune per la gestione dei dispositivi mobili. Con Intune è possibile gestire dispositivi iOS, Android, macOS e Windows per proteggere l'accesso alle risorse dell'organizzazione, inclusi i dati. Intune si integra con gli utenti, i gruppi e gli account dei computer di Azure AD.
+Microsoft 365 Enterprise include Microsoft Intune per la gestione dei dispositivi mobili. Con Intune è possibile gestire dispositivi Windows, iOS, Android e macOS per proteggere l'accesso alle risorse dell'organizzazione, inclusi i dati. Intune usa gli account utente, del gruppo e del computer di Azure AD.
 
 Intune offre due tipi di gestione dei dispositivi mobili:
 
 - La gestione dei dispositivi mobili (MDM) avviene quando i dispositivi vengono registrati in Intune. Dopo la registrazione diventano dispositivi gestiti e possono ricevere i criteri, le regole e le impostazioni usate dall'organizzazione. Questi tipi di dispositivi appartengono in genere all'organizzazione e vengono concessi ai dipendenti.
 
-- È possibile che gli utenti con dispositivi personali non vogliano registrare i propri dispositivi o consentirne la gestione in Intune con criteri e impostazioni dell'amministratore. È comunque necessario proteggere le risorse e i dati dell'organizzazione. Per questo scenario è possibile proteggere le app usando la gestione di applicazioni mobili (MAM). Questi tipi di dispositivi sono definiti Bring Your Own Device (BYOD) e, in genere, sono di proprietà dei dipendenti. 
+- È possibile che gli utenti con dispositivi personali non vogliano registrare i propri dispositivi o consentirne la gestione in Intune con criteri e impostazioni dell'amministratore. È comunque necessario proteggere le risorse e i dati dell'organizzazione. Per questo scenario è possibile proteggere le app con la gestione di applicazioni mobili (MAM).  
 
 I criteri di Intune consentono di attivare la conformità dei dispositivi e la protezione delle app. Ecco l'elenco dei criteri di Intune da creare.
 
@@ -253,7 +271,7 @@ Gli elementi nuovi ed evidenziati della fase Gestione dei dispositivi mobili inc
 
 |||
 |:------:|:-----|
-| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | Dispositivi registrati in Intune, che mostrano il portatile locale che esegue Windows 10 Enterprise come esempio. |
+| ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | Dispositivi registrati in Intune, che mostrano un portatile locale che esegue Windows 10 Enterprise come esempio. |
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | Criteri di Intune per la conformità dei dispositivi e la protezione delle app. |
 |||
 
@@ -275,17 +293,17 @@ Il primo passo per una strategia di protezione delle informazioni consiste nel d
 
 - Riservatezza elevata
 
-  Gli esempi includono i dati identificabili come personali di clienti e partner e la proprietà intellettuale dell'organizzazione.
+  Gli esempi includono i dati identificabili come personali di clienti e partner, le informazioni finanziarie e la proprietà intellettuale dell'organizzazione.
 
 In base a questi livelli di sicurezza dei dati, il passaggio successivo consiste nell'identificare e implementare:
 
 - Tipi di informazioni sensibili personalizzati
 
-  Microsoft 365 offre un'ampia scelta di tipi di informazioni riservate, ad esempio il codice fiscale o il numero della carta di credito. Se non si riesce a trovare quello necessario nell'elenco fornito da Microsoft 365, è possibile crearne uno personalizzato.
+  Microsoft 365 offre un'ampia scelta di tipi di informazioni riservate, ad esempio il codice fiscale o il numero della carta di credito. Se non si riesce a trovare quello necessario nell'elenco, è possibile crearne uno personalizzato.
 
 - Etichette di conservazione
 
-  Per garantire la conformità ai criteri dell'organizzazione e alle normative locali, può essere necessario specificare il periodo di conservazione di tipi di documenti specifici o documenti con contenuti specifici. È possibile implementare questa funzionalità per la posta elettronica e i documenti usando le etichette di conservazione.
+  Per garantire la conformità ai criteri dell'organizzazione e alle normative locali, può essere necessario specificare il periodo di conservazione di tipi di documenti specifici o documenti con contenuti specifici. È possibile implementare questa funzionalità per la posta elettronica e il documento usando le etichette di conservazione.
 
 - Etichette di riservatezza
 
@@ -295,7 +313,12 @@ Per altre informazioni, vedere [Tipi di classificazione Microsoft 365](infoprote
 
 Se si usano le etichette di riservatezza con le autorizzazioni, può essere necessario creare gruppi di sicurezza di Azure AD aggiuntivi per definire gli utenti autorizzati a eseguire determinate operazioni su posta elettronica e documenti. 
 
-Ad esempio, è necessario creare un'etichetta di riservatezza RESEARCH per proteggere la posta elettronica e i documenti del team di ricerca. In questo modo è possibile stabilire che alcuni ricercatori devono poter modificare i documenti contrassegnati con l'etichetta di riservatezza RESEARCH, mentre altri dipendenti non ricercatori possono solo visualizzare i documenti contrassegnati con tale etichetta. Questo significa che è necessario creare e gestire due gruppi aggiuntivi:
+Ad esempio, è necessario creare un'etichetta di riservatezza RESEARCH per proteggere la posta elettronica e i documenti del team di ricerca. È possibile stabilire se:
+
+- I ricercatori devono essere in grado di modificare i documenti contrassegnati dall'etichetta della sensibilità della ricerca.
+- I dipendenti non ricercatori devono solo avere la possibilità di visualizzare documenti contrassegnati dall'etichetta della sensibilità della ricerca. 
+
+Questo significa che è necessario creare e gestire due gruppi aggiuntivi:
 
 - RESEARCH-ALL
 - RESEARCH-VIEW
@@ -317,23 +340,23 @@ Gli elementi nuovi ed evidenziati della fase Protezione delle informazioni inclu
 | ![](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | Etichette di riservatezza per i tre livelli di sicurezza che gli utenti possono applicare ai documenti. |
 |||
 
-La grafica non include le etichette di conservazione e i tipi di informazioni personalizzati.
+La grafica non include i tipi di informazioni e etichette di conservazione e personalizzati.
 
 ## <a name="onboarding"></a>Onboarding
 
-Grazie a questa infrastruttura è possibile eseguire l'onboarding di un dipendente per Microsoft 365 Enterprise con questi processi.
+Con l'infrastruttura aziendale di Microsoft 365 Enterprise, è possibile aggiungere facilmente i dipendenti.
 
 ### <a name="a-new-windows-10-enterprise-device"></a>Un nuovo dispositivo Windows 10 Enterprise
 
 Prima di assegnare a un dipendente un nuovo dispositivo Windows 10 Enterprise:
 
+- Per identità ibrida
+
+  Aggiungere il dispositivo al dominio AD DS, aggiungere il dispositivo al tenant di Azure AD e quindi registrare il dispositivo in Intune.
+
 - Per identità solo cloud
 
   Aggiungere il dispositivo al tenant di Azure AD dell'abbonamento a Microsoft 365 Enterprise.
-
-- Per identità ibrida
-
-  Aggiungere il dispositivo ad AD DS, aggiungere il dispositivo al tenant di Azure AD e quindi registrare il dispositivo in Intune.
 
 ### <a name="existing-employee-with-an-ad-ds-user-account"></a>Dipendente esistente con un account utente di AD DS
 
@@ -345,7 +368,11 @@ Durante l'onboarding iniziale per l'organizzazione quando si usa l'identità ibr
 
 Il dipendente esistente dovrebbe già essere aggiunto ai gruppi di AD DS a livello di gruppo di lavoro, reparto e area geografica.
 
-### <a name="new-employee-with-cloud-only-user-account"></a>Nuovo dipendente con account utente solo cloud
+È possibile aggiungere un account utente a più gruppi di Azure AD nell'interfaccia di amministrazione di Microsoft 365. Nelle proprietà dell'account utente fare clic su **Gestisci gruppi > Aggiungere le membership**.
+
+Se si vuole usare PowerShell, vedere questa [cartella di lavoro](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/enterprise/media/Group-License-Mgmt-PowerShell.xlsx?raw=true)di Excel scaricabile, che genera i comandi di PowerShell basati su un account utente specificato e i nomi dei gruppi selezionati.
+
+### <a name="new-employee-with-a-cloud-only-user-account"></a>Nuovo dipendente con account utente solo cloud
 
 Durante l'onboarding iniziale per l'organizzazione quando si usa l'identità solo cloud, aggiungere il nuovo account utente a questi gruppi:
 
@@ -356,7 +383,7 @@ Durante l'onboarding iniziale per l'organizzazione quando si usa l'identità sol
 
 ### <a name="initial-sign-in-to-microsoft-365"></a>Accesso iniziale a Microsoft 365
 
-Quando i dipendenti nuovi o esistenti con un account utente di AD DS accedono per la prima volta a Microsoft 365, invitarli a:
+Per i dipendenti che accedono per la prima volta a Microsoft 365, istruirli a:
 
 1. Accedere ai dispositivi con le credenziali del proprio account utente.
 2. In un browser accedere al portale di Office 365 all'indirizzo https://portal.office.com.
@@ -410,4 +437,4 @@ Dopo l'onboarding ogni dipendente dovrebbe avere:
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Distribuire i [carichi di lavoro e gli scenari](deploy-workloads.md) per sfruttare le funzionalità e la configurazione dell'infrastruttura di base.
+Distribuire i [carichi di lavoro e gli scenari](deploy-workloads.md) per sfruttare le funzionalità e la configurazione dell'infrastruttura di base di Microsoft 365 Enterprise.
