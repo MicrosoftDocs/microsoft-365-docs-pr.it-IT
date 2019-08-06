@@ -10,22 +10,57 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: d810dbfa6abb4935ae9d7078f9ed475123be405c
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: 95805d6d61f2e8454ade16298db78370b0fca9f1
+ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698358"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35078926"
 ---
-# <a name="accountability-readiness-checklists-for-the-gdpr"></a>Elenchi di controllo di preparazione della conformità al GDPR
+# <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Supportare il programma GDPR con elenchi di controllo di preparazione della conformità
 
-Questi elenchi di controllo di preparazione della conformità forniscono un modo pratico per accedere alle informazioni necessarie per supportare il Regolamento generale sulla protezione dei dati (GDPR) quando si utilizzano prodotti e servizi Microsoft.  
+Il regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole per le organizzazioni che offrono beni e servizi alle persone che risiedono nell'Unione europea (UE) o che raccolgono e analizzano i dati dei residenti nell'UE in qualunque luogo si trovi l'utente o la sua azienda. Altri dettagli sono disponibili [nell'argomento relativo al Riepilogo sul GDPR](gdpr.md).
+
+## <a name="accountability-readiness-checklists"></a>Elenchi di controllo di preparazione della conformità
+
+Gli elenchi di controllo di preparazione della conformità vengono forniti per accedere in modo pratico alle informazioni necessarie per l'applicazione del GDPR quando si usano prodotti e servizi Microsoft. L'elenco di controllo elenca i potenziali obblighi che si possono avere nell'ambito del GDPR e indica le informazioni che è possibile usare per supportare la conformità delle organizzazioni. <br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
+
+Esiste una guida specifica per quattro famiglie di prodotti e servizi Microsoft:
 
 - [Office 365](gdpr-arc-Office365.md)
-- [Azure](gdpr-arc-Azure.md)
 - [Dynamics 365](gdpr-arc-Dynamics365.md)
+- [Azure](gdpr-arc-Azure.md)
 - [Servizi professionali e supporto tecnico Microsoft](gdpr-arc-prof-services.md)
 
-## <a name="learn-more"></a>Altre informazioni
+È possibile gestire gli elementi di questo elenco di controllo con [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) usando il codice e il nome dei controlli nel riquadro del GDPR che comprende i controlli gestiti dai clienti.
 
-[Centro protezione Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+Gli elenchi di controllo includono le quattro categorie di base di considerazioni per un programma sulla privacy che supporta il GDPR elencate di seguito, insieme ai requisiti di esempio.
+
+1. Condizioni per la raccolta e l'elaborazione dei dati:
+
+    - Quando si ottiene il consenso?  
+    - Identificare e documentare la finalità  
+    - Valutazione dell'impatto sulla privacy
+
+2. Diritti del soggetto interessato  
+
+    - Definizione delle informazioni degli interessati  
+    - Meccanismo per modificare o revocare il consenso
+
+3. Privacy by design e by default  
+
+    - Limitazione della raccolta  
+    - Conformità ai livelli di identificazione  
+    - File temporanei
+
+4. Protezione e sicurezza dei dati  
+
+    - Informazioni sull'organizzazione e il contesto  
+    - Pianificazione  
+    - Criteri di sicurezza delle informazioni
+
+## <a name="learn-more"></a>Ulteriori informazioni
+
+- [Centro protezione Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
