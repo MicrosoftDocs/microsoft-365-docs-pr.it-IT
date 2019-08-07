@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le risorse a disposizione per la distribuzione di Microsoft 365 Enterprise nell'organizzazione.
-ms.openlocfilehash: 9f67c8b6ac28557e8a37a31ec8ca9e0b318cb79a
-ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
+ms.openlocfilehash: bc678a4bd1b6f4e7332589186767894ee46aa83e
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35937408"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054948"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Distribuire Microsoft 365 Enterprise
 
-Microsoft 365 Enterprise è una combinazione di Office 365, Enterprise Mobility + Security (EMS) e Windows 10 Enterprise che: 
+Microsoft 365 Enterprise è una combinazione di app e servizi di produttività basati sul cloud e locali con Windows 10 Enterprise:  
 
 - Dispone di sicurezza intelligente.
 - È integrato per semplicità.

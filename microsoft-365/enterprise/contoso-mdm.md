@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -12,19 +12,19 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendere come Contoso usa EMS in Microsoft 365 Enterprise per gestire i dispositivi e le app in esecuzione su di essi.
-ms.openlocfilehash: f47d6a1ee608d33802f1c523d3b954af3771f212
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+description: Comprendere come Contoso usa Intune in Microsoft 365 Enterprise per gestire i dispositivi e le app in esecuzione su di essi.
+ms.openlocfilehash: 9f3db160b01a54afa3457703b0333be1ff3a02ec
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278043"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054988"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Gestione dispositivi mobili in Contoso
 
-**Riepilogo:** comprendere come Contoso usa EMS in Microsoft 365 Enterprise per gestire i dispositivi e le app in esecuzione su di essi.
+**Riepilogo:** Comprendere come Contoso usa Intune in Microsoft 365 Enterprise per gestire i dispositivi e le app in esecuzione su di essi.
 
-Enterprise Mobility + Security (EMS) in Microsoft 365 Enterprise è costituito da Microsoft Intune e da un set di servizi di Azure a supporto della gestione e della sicurezza di applicazioni e dispositivi mobili.
+Microsoft 365 Enterprise include Microsoft Intune e un set di servizi di Azure a supporto della gestione e della sicurezza di applicazioni e dispositivi mobili.
 
 Contoso ha molti dipendenti autorizzati alla mobilità, di cui alcuni hanno uffici nelle sedi di Contoso e altri non hanno un ufficio. Contoso era alla ricerca di un modo per garantire la produttività dei dipendenti mantenendo sicuri i dispositivi, i dati di Contoso archiviati in quei dispositivi e il comportamento dell’applicazione.
 

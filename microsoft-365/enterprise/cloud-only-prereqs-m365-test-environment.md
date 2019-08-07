@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un ambiente Microsoft 365 per testare l'accesso di identità e dispositivi per l'autenticazione solo per cloud.
-ms.openlocfilehash: 9721d2972990998ca345f1d48d96494096f9190e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 08f805f77771a056cc9d847dd064b472a46cb166
+ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072566"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36055008"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Prerequisiti di accesso di identità e dispositivi solo per cloud nell’ambiente di testing di Microsoft 365
 
-Le [configurazioni di identità e accesso dei dispositivi](microsoft-365-policies-configurations.md) sono una serie di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure AD), tra cui Office 365 ed Enterprise Mobility + Security (EMS) in Microsoft 365 Enterprise.
+Le [configurazioni di identità e accesso dei dispositivi](microsoft-365-policies-configurations.md) sono una serie di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure AD), tra cui Office 365 e Microsoft Intune in Microsoft 365 Enterprise.
 
 In questo articolo viene descritto come configurare un ambiente di testing di Microsoft 365 che soddisfi i requisiti della [configurazione dei prerequisiti solo per cloud](identity-access-prerequisites.md#prerequisites) per l’accesso di identità e dispositivi.
 

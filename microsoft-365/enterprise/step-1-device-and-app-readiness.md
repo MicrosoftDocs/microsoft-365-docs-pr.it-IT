@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di dispositivi e app nell'ambiente.
-ms.openlocfilehash: eb619cf807c2bd4ad3644dbb26e72b62e30320c7
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 9898090171d9e009a4f43f5362c363f71f08072e
+ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584552"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35830539"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Passaggio 1: preparazione di dispositivi e app
 
@@ -41,7 +41,7 @@ In passato, l'ostacolo principale per l'aggiornamento dei computer desktop degli
 
 Premesso ciò, a seconda delle dimensioni e della longevità dell'organizzazione, la verifica della compatibilità di hardware e applicazioni rimane comunque un passaggio iniziale fondamentale nel nostro processo di distribuzione a 8 fasi consigliato.
 
-In questo articolo viene illustrata la prima fase, Preparazione di dispositivi e app, usando strumenti di valutazione dello stato di preparazione Microsoft come Preparazione aggiornamenti di Desktop Analytics, una soluzione nuova e intelligente basata sul cloud disponibile con la licenza di Windows.
+In questo articolo viene illustrata la prima fase, Conformità dei dispositivi e app, usando gli strumenti per la valutazione e la preparazione di Microsoft tra cui Desktop Analytics, una soluzione intelligente basata sul cloud disponibile con la licenza di Windows.
 
 ## <a name="windows-10-compatibility-scan"></a>Analisi della compatibilità di Windows 10
 
@@ -53,11 +53,11 @@ Una riga di comando ScanOnly di esempio che completa l'analisi di compatibilità
 
 Per altre informazioni su ScanOnly e altre opzioni della riga di comando di Windows, vedere [Opzioni della riga di comando per l'installazione di Windows](https://aka.ms/setupswitches).
 
-## <a name="recommended-tool-desktop-analytics-upgrade-readiness"></a>Strumento consigliato: Preparazione aggiornamenti di Desktop Analytics
+## <a name="recommended-tool-desktop-analytics"></a>Strumento consigliato: Desktop Analytics
 
-Preparazione aggiornamenti di Desktop Analytics offre numerosi vantaggi rispetto ai sistemi di gestione desktop tradizionali ed è lo strumento consigliato. È senza agente e guida l'utente nelle operazioni da eseguire sfruttando le informazioni sulla compatibilità di driver e applicazioni raccolte durante l'aggiornamento di centinaia di milioni di PC. Queste informazioni forniscono una valutazione dettagliata, identificando i problemi di compatibilità che potrebbero impedire l'aggiornamento, con collegamenti alle correzioni consigliate note di Microsoft.
+Desktop Analytics offre numerosi vantaggi rispetto ai sistemi di gestione desktop tradizionali ed è lo strumento che noi consigliamo. È senza agente e guida l'utente nelle operazioni da eseguire sfruttando le informazioni sulla compatibilità di driver e applicazioni raccolte durante l'aggiornamento di centinaia di milioni di PC. Queste informazioni forniscono una valutazione dettagliata, identificando i problemi di compatibilità che potrebbero impedire l'aggiornamento, con collegamenti alle correzioni consigliate note di Microsoft.
 
-Per configurare Preparazione aggiornamenti di Window Analytics, prima di tutto è necessario configurare una sottoscrizione di Azure e includervi un'area di lavoro di Azure Log Analytics. Una volta che il servizio Preparazione aggiornamenti di Desktop Analytics è in esecuzione, è possibile registrare qualsiasi dispositivo Windows 7 SP1 o versioni successive connesso a Internet tramite le impostazioni di Criteri di gruppo. È semplicissimo. Non ci sono agenti da distribuire e il flusso di lavoro visivo di Preparazione aggiornamenti di Desktop Analytics guida l'utente dalla distribuzione pilota alla distribuzione di produzione. Volendo, è possibile esportare i dati da Preparazione aggiornamenti di Desktop Analytics a strumenti per la distribuzione del software come System Center Configuration Manager (Current Branch), per raggiungere direttamente i PC e creare raccolte non appena sono pronti per la distribuzione.
+Per configurare Desktop Analytics, prima di tutto è necessario configurare una sottoscrizione di Azure e includervi un'area di lavoro di Azure Log Analytics. Una volta che il servizio Desktop Analytics è in esecuzione, è possibile registrare qualsiasi dispositivo Windows 7 SP1 o versioni successive connesso a Internet tramite le impostazioni di Criteri di gruppo. È semplicissimo. Non ci sono agenti da distribuire e il flusso di lavoro visivo di Desktop Analytics guida l'utente dalla distribuzione pilota alla distribuzione di produzione. Volendo, è possibile esportare i dati da Desktop Analytics a strumenti per la distribuzione del software come System Center Configuration Manager (Current Branch), per raggiungere direttamente i PC e creare raccolte non appena sono pronti per la distribuzione.
 
 Se al momento Desktop Analytics non è configurato per l'ambiente o se si desidera iscriversi per una prova, accedere alla pagina di Desktop Analytics (http://www.aka.ms/desktopanalytics)) e iniziare.
 
@@ -67,17 +67,15 @@ Il processo di preparazione di dispositivi e app è costituito da quattro passag
 
 ### <a name="1-inventory"></a>1\. Inventario
 
-Il servizio Preparazione aggiornamenti di Desktop Analytics si avvale di un processo senza agente per effettuare un inventario dei computer e delle applicazioni tra i vari desktop in uso.
+Desktop Analytics si avvale di un processo senza agente per effettuare un inventario dei computer e delle applicazioni tra i vari desktop in uso. Inoltre, fornisce report sui siti Internet più visitati, sulle app e sui percorsi Intranet, per semplificare la successiva fase di test della compatibilità.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
-
-Inoltre, fornisce report sui siti Internet più visitati, sulle app e sui percorsi Intranet, per semplificare la successiva fase di test della compatibilità.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
 
 ### <a name="2-prioritize"></a>2\. Assegnazione della priorità
 
-Una volta eseguito l'inventario, Preparazione aggiornamenti di Desktop Analytics consente di identificare e classificare in ordine di priorità l'hardware e le app più comuni usati nell'organizzazione, oltre a indicare su cosa concentrarsi per sbloccare il maggior numero possibile di PC per la distribuzione.
+Una volta eseguito l'inventario, Desktop Analytics consente di identificare e classificare in ordine di priorità l'hardware e le app più comuni usati nell'organizzazione, oltre a indicare su cosa concentrarsi per sbloccare il maggior numero possibile di PC per la distribuzione.
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
@@ -85,9 +83,9 @@ Fornisce inoltre indicazioni utili per valutare se siano necessari aggiornamenti
 
 ### <a name="3-testing"></a>3\. Test
 
-Si noterà che la maggior parte delle applicazioni, dei driver e dei componenti aggiuntivi sottoposti a inventario funzionerà così com'è. Per gli elementi in cui Preparazione aggiornamenti di Desktop Analytics rileva problemi, vengono fornite informazioni note, come dove trovare gli aggiornamenti delle versioni per risolvere i problemi di compatibilità. Anziché dedicare tempo e risorse alla risoluzione di problemi complessi in dispositivi meno recenti e applicazioni non fondamentali e con una distribuzione limitata, è possibile concentrarsi sulla collaborazione con gli utenti per ritirare e sostituire tali elementi.
+Si noterà che la maggior parte delle applicazioni, dei driver e dei componenti aggiuntivi sottoposti a inventario funzionerà così com'è. Per gli elementi in cui Desktop Analytics rileva problemi, vengono fornite informazioni note, ad esempio dove trovare gli aggiornamenti delle versioni per risolvere i problemi di compatibilità. Anziché dedicare tempo e risorse alla risoluzione di problemi complessi in dispositivi meno recenti e applicazioni non fondamentali e con una distribuzione limitata, è possibile concentrarsi sulla collaborazione con gli utenti per ritirare e sostituire tali elementi.
 
-È possibile utilizzare Preparazione aggiornamenti di Desktop Analytics anche per valutare i problemi di compatibilità basati sul browser, identificando siti Web e app Web a cui gli utenti continuano ad accedere con controlli ActiveX, oggetti browser helper, VBScript o altre tecnologie legacy non supportate dal browser Microsoft Edge. Gli utenti dovranno continuare a usare Internet Explorer 11 per questi siti ed è possibile aggiungerli all'[elenco di siti con modalità Enterprise](https://docs.microsoft.com/it-IT/microsoft-edge/deploy/emie-to-improve-compatibility) con Enterprise Mode Site List Manager.
+È possibile usare Desktop Analytics anche per valutare i problemi di compatibilità basati su browser, identificando siti Web e app Web accessibili dagli utenti che usano ancora controlli ActiveX, oggetti browser helper, VBScript o altre tecnologie legacy non supportate dal browser Microsoft Edge. Gli utenti dovranno continuare a usare Internet Explorer 11 per questi siti ed è possibile aggiungerli all'[elenco siti modalità Enterprise](https://docs.microsoft.com/it-IT/microsoft-edge/deploy/emie-to-improve-compatibility)usando l’Enterprise Mode Site List Manager.
 
 Inoltre, per facilitare il passaggio a Office 365 ProPlus, è consigliabile usare [Readiness Toolkit for Office](https://docs.microsoft.com/it-IT/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) per testare la compatibilità dei componenti aggiuntivi e delle macro Microsoft Visual Basic for Applications (VBA).
 
@@ -114,7 +112,7 @@ Un altro strumento utile per valutare la compatibilità delle app di Windows 10 
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>Uso continuativo di strumenti per i dati di diagnostica
 
-Preparazione aggiornamenti di Desktop Analytics non è solo uno strumento che consente di passare a Windows 10 e Office 365 ProPlus. Una volta installato Windows 10 e Office 365 nei computer desktop, è possibile usarlo per gestire la distribuzione e gli aggiornamenti delle funzionalità semestrali per avere sempre le ultime versioni a disposizione.
+Desktop Analytics non è solo uno strumento che consente di passare a Windows 10 e Office 365 ProPlus. Dopo aver installato Windows 10 e Office 365 nel computer desktop, è possibile usarlo per gestire la distribuzione e gli aggiornamenti semestrali delle funzionalità per avere sempre le ultime versioni a disposizione.
 
 ## <a name="next-step"></a>Passaggio successivo 
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: I passaggi per distribuire l'infrastruttura di protezione delle informazioni per Microsoft 365 Enterprise.
-ms.openlocfilehash: a0d2c485b05e0969fe45cfd79c86e4e7dcb1d5ff
-ms.sourcegitcommit: 3b2d3e2b38c4860db977e73dda119a465c669fa4
+ms.openlocfilehash: a00f61cbf2f8d00929a67dae6d401fd99014ec26
+ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33400000"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34073686"
 ---
 # <a name="phase-6-information-protection"></a>Fase 6: protezione delle informazioni
 
@@ -50,11 +50,7 @@ Dopo aver completato questi passaggi, passare ai [criteri uscita](infoprotect-ex
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
-Ulteriori informazioni su come gli esperti IT di Microsoft utilizzano le funzionalità di protezione delle informazioni di Microsoft 356 Enterprise per proteggere le informazioni e difendersi dagli attacchi informatici:
-
-- [Protezione dei file nel cloud con Azure Information Protection](https://www.microsoft.com/itshowcase/Article/Content/924/Protecting-files-in-the-cloud-with-Azure-Information-Protection)
-- [Microsoft utilizza l'intelligence per le minacce per proteggere, rilevare e rispondere alle minacce](https://www.microsoft.com/itshowcase/Article/Content/934/Microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats)
-- [Microsoft contrasta i tentativi di phishing con Office 365](https://www.microsoft.com/itshowcase/Article/Content/956/Microsoft-thwarts-phishing-attempts-with-Office-365)
+Informazioni su come gli esperti IT di Microsoft usano [Azure Information Protection per proteggere i dati](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Come ha agito Contoso con Microsoft 365 Enterprise
 
