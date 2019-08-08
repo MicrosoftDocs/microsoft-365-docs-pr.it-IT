@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 68f5d5cb46d4aa643b1b09f9204b24dea3d77eb1
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 2178b871da412d12bf20dae9b72d7562e2bc4654
+ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390533"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243947"
 ---
 # <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Aggiungere i contatti di amministratore nel portale di amministrazione di Microsoft Managed Desktop
 
@@ -28,13 +28,13 @@ Il portale di amministrazione di Microsoft Managed Desktop richiede che gli uten
 
 L'amministratore globale deve essere quello di registrazione del cliente in Microsoft Managed Desktop. Tutti e cinque i ruoli dispongono dello stesso accesso all'interno del portale di amministrazione per avviare e visualizzare le attività. Per ulteriori informazioni sull'assegnazione di questi ruoli in Azure AD, vedere [autorizzazioni per il ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
-## <a name="admin-contact-focus-areas"></a>Aree di interesse per i contatti amministrativi
+## <a name="admin-contact-areas-of-focus"></a>Aree di contatto di amministrazione dello stato attivo
 
 I contatti amministrativi devono essere la persona o il gruppo migliore in grado di rispondere alle domande e prendere decisioni per diverse aree di interesse. Microsoft Managed Desktop Operations contatterà questi contatti di amministrazione per le domande relative alle richieste di supporto presentate dal cliente. Questi contatti di amministratore ricevono notifiche per gli aggiornamenti delle richieste di supporto e i nuovi messaggi. Tra queste aree sono incluse le seguenti:
 
 Area di interesse | Per domande su
 --- | ---
-App | Risoluzione dei problemi relativi agli imballaggi delle app
+Pacchetti app | Risoluzione dei problemi relativi agli imballaggi delle app
 Dispositivi | Integrità del dispositivo, risoluzione dei problemi con i dispositivi Microsoft Managed Desktop
 Sicurezza | Risoluzione dei problemi di sicurezza con i dispositivi Microsoft Managed Desktop
 Supporto tecnico IT | nei casi in cui Microsoft Managed Desktop supporta i ticket degli utenti finali al di fuori delle aree di supporto di MMD 

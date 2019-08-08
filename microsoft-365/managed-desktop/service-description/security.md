@@ -6,18 +6,18 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 5987dcaf717ecb2907f02db675a77c3e1d2d2220
-ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
+ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
+ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35425669"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243937"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sicurezza in Microsoft Managed Desktop
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop applica un insieme standard di criteri e utilizza molte tecnologie Microsoft per garantire la protezione dei dispositivi desktop Microsoft gestiti, i dati aziendali archiviati e altro ancora. Le aree elencate di seguito sono ulteriormente dettagliate:  
+Microsoft Managed Desktop utilizza diverse tecnologie Microsoft per proteggere i dati e i dispositivi gestiti. In particolare: 
 
 - [Sicurezza dei dati](#data-security) : tipi di dati raccolti da Microsoft Managed Desktop e dove sono archiviati in modo sicuro
 - [Sicurezza](#device-security) dei dispositivi – sicurezza e protezione sui dispositivi Microsoft Managed Desktop
@@ -37,6 +37,7 @@ Di seguito sono elencati i tipi di dati trasmessi dal tenant:
 - Dati di distribuzione e affidabilità delle app
 - Dati sulla distribuzione dei criteri di aggiornamento e di sicurezza
 - Utenti assegnati ai dispositivi
+- Registri di sicurezza del tenant relativi agli account utilizzati da Microsoft Managed Desktop per gestire il servizio
 
 
 
@@ -60,8 +61,7 @@ La gestione delle identità e degli accessi protegge le risorse aziendali e i da
 
 Servizio | Descrizione
 --- | ---
-Autenticazione biometrica |  Windows Hello consente agli utenti di accedere utilizzando la propria faccia o un PIN, rendendo le password più difficili da dimenticare o rubare. Per ulteriori informazioni, vedere [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
-Autenticazione a più fattori | L'autenticazione a più fattori di Azure controlla in modo più rigoroso l'accesso alle funzioni sensibili del servizio Microsoft Managed Desktop fornendo un ulteriore livello di autenticazione mediante un telefono cellulare, nonché la reimpostazione della password in modalità self-service. 
+Autenticazione biometrica |  Windows Hello consente agli utenti di accedere utilizzando la propria faccia o un PIN, rendendo le password più difficili da dimenticare o rubare. I clienti sono responsabili dell'implementazione dei prerequisiti necessari per la loro Active Directory locale per l'utilizzo di questo servizio in una configurazione ibrida. Per ulteriori informazioni, vedere [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 Autorizzazione utente standard |  Per proteggere il sistema e renderlo più sicuro, all'utente verranno assegnate le autorizzazioni utente standard. Questo viene assegnato come parte dell'esperienza di Windows Autopilot out-of-box.
 
 
