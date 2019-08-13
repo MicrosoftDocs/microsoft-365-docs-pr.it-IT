@@ -3,7 +3,7 @@ title: Panoramica di Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 Enterprise.
-ms.openlocfilehash: ec2a8f0d60f50503f8f5cf457c2999598e248053
-ms.sourcegitcommit: 63ca34172fcb9a957ce86b878a4d8d0f935c6a7b
+ms.openlocfilehash: de67f9e99fbb7a3a6e85001ec675f16672f4ef22
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35937423"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297896"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Panoramica di Microsoft 365 Enterprise
 
@@ -59,15 +59,26 @@ Per ulteriori informazioni, vedere [caratteristiche e funzionalità per ogni pia
 
 Il [poster di Microsoft 365 Enterprise](http://aka.ms/m365eposter) è una posizione centrale che consente di visualizzare:
 
-- Vantaggi di Microsoft 365 Enterprise e del relativo mapping ai pilastri dei valori
+- Vantaggi di Microsoft 365 Enterprise e del modo in cui le app e i servizi vengono mappati ai pilastri dei valori
 - Piani di Microsoft 365 Enterprise e quali componenti contengono 
 - I componenti principali del luogo di lavoro moderno, che Microsoft 365 Enterprise consente
-- Gli scenari di valori aziendali chiave di Microsoft 365 Enterprise e quali servizi e prodotti li fanno accadere
+- La [raccolta di produttività di Microsoft 365](https://www.microsoft.com/microsoft-365/success/) e gli scenari rappresentativi per alcuni reparti dell'organizzazione comuni
 - La roadmap di adozione che evidenzia la guida alla [distribuzione](deploy-microsoft-365-enterprise.md) di Microsoft 365 Enterprise
 
 ![](./media/m365-poster/m365e-poster.png)
 
 Per scaricare una copia del poster, fare clic [qui](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/Microsoft365Enterprise.pdf).
+
+
+## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
+
+Per ottenere un'immagine migliore di come spostare l'intera organizzazione ai prodotti e servizi di Microsoft 365 Enterprise, scaricare il poster di [transizione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+
+![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+
+Questo poster a due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e accedere alle linee guida per lo spostamento al prodotto o al servizio corrispondente in Microsoft 365 Enterprise. Include prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, quali gestione dei dispositivi, identità e protezione delle minacce.
+
+È possibile stampare questo poster nei formati lettera, legale o tabloid (11 x 17).
 
 ## <a name="deploying"></a>Distribuzione
 
