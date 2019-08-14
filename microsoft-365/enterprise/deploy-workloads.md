@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Caricare gli utenti dell’organizzazione per la produttività dei carichi di lavoro di Microsoft 365 Enterprise.
-ms.openlocfilehash: 0c81f93b117645974e93870f20d4dfb469dae3ac
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 3e7e030e3684606a906a57856d08ea25c7dc2001
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054928"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297866"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Carichi di lavoro e scenari di Microsoft 365 Enterprise
 
@@ -66,7 +66,7 @@ Ecco alcuni dei carichi di lavoro abituali per effettuare immediatamente la dist
   - [Exchange Online](exchangeonline-workload.md) in modo che gli utenti possano iniziare a usare la posta elettronica basata sul cloud.
 - Se non si ha l'esigenza immediata di archiviare asset digitali altamente regolamentati nel cloud, distribuire [Microsoft Teams](teams-workload.md) e [SharePoint Online](sharepoint-online-onedrive-workload.md) per gli utenti prima del livello **Information protection**.
 
-È necessario decidere come è meglio ordinare e distribuire la configurazione delle fasi dei prerequisiti dell’infrastruttura di base per soddisfare al meglio le esigenze aziendali.
+È necessario decidere come è meglio ordinare e distribuire la configurazione delle fasi dei prerequisiti dell’infrastruttura di base per soddisfare le esigenze aziendali.
 
 ### <a name="best-practice"></a>Procedura consigliata
 
@@ -77,3 +77,4 @@ La fase **Identità** garantisce che l’identità basata sul cloud, solo cloud 
 Sebbene fondamentale e molto importante per le prestazioni complessive, l'implementazione della fase **Networking** sulla rete può essere in corso durante il caricamento degli utenti sui carichi di lavoro, con la consapevolezza che l’applicazione Microsoft 365 e le prestazioni del servizio miglioreranno nel tempo.
 
 Ciò vale soprattutto per le organizzazioni aziendali con più sedi e una combinazione di dispositivi periferici e connessioni Internet.
+

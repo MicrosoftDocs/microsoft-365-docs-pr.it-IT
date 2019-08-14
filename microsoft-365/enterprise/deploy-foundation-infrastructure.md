@@ -3,7 +3,7 @@ title: Infrastruttura di base di Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 08/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le fasi principali della distribuzione dell'infrastruttura di base per Microsoft 365 Enterprise all'interno dell'organizzazione, nota anche come la distribuzione di base.
-ms.openlocfilehash: 0c683f771609c847556f82fe84a17dad13ee34d4
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 0b54225d3ce9043564788e28ddd88426dae611e9
+ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36055023"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297916"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastruttura di base di Microsoft 365 Enterprise
 
@@ -37,14 +37,14 @@ Per un percorso definito end-to-end per la distribuzione, è possibile utilizzar
 
 Le fasi iniziano con le più fondamentali (rete e identità) e quindi creano livelli di impostazioni dell'infrastruttura e gruppi per:
 
-- Installare la versione più sicura e aggiornata di Windows nel dispositivo.
-- Installare la versione più aggiornata di Microsoft Office nei dispositivi.
-- Gestire i dispositivi dell'organizzazione.
+- Installare la versione più sicura e aggiornata di Windows nei dispositivi e mantenerla attuale.
+- Installare la versione più aggiornata di Microsoft Office nei dispositivi e mantenerla attuale.
+- Gestione dei dispositivi dell'organizzazione e accesso alle app.
 - Proteggere le informazioni in tali dispositivi e nel cloud.
 
 Tuttavia, c’è flessibilità nel configurare e nell’implementare fasi o passaggi nelle fasi per soddisfare le necessità di risorse IT e business.
 
-- **Organizzazioni di dimensioni inferiori o nuove**, se necessario, possono seguire le fasi per creare l’infrastruttura in modo metodico.
+- **Organizzazioni di dimensioni inferiori o nuove**, se necessario, possono seguire le fasi per creare l’infrastruttura in modo metodico. Per una distribuzione semplificata per le organizzazioni non, fare clic [qui](deploy-foundation-infrastructure-non-enterprises.md).
 
 -  **Se si ha un'organizzazione aziendale**, visualizzare le fasi come livelli dell'infrastruttura IT invece di un percorso definito, e determinare la strategia migliore per ottenere una finale conformità ai requisiti per ogni livello all'interno dell'organizzazione.
 
@@ -60,7 +60,7 @@ Ecco l'infrastruttura di base della Guida alla distribuzione generale di Microso
 
 ## <a name="at-a-glance"></a>In breve
 
-Il poster Infrastruttura di base di Microsoft 365 Enterprise](http://aka.ms/m365efoundinfraposter) rappresenta una posizione centrale da visualizzare, per ogni fase:
+Il [poster Infrastruttura di base di Microsoft 365 Enterprise](http://aka.ms/m365efoundinfraposter) rappresenta una posizione centrale da visualizzare, per ogni fase:
 
 - Obiettivi generali della fase per amministratori e utenti
 - Servizi, funzionalità e strumenti
@@ -80,7 +80,7 @@ L'infrastruttura di base è un set di configurazione di software e servizi confi
 
 Tuttavia, è importante tenere presente che l'infrastruttura di base di Microsoft 365 Enterprise è indipendente dalla distribuzione di software e servizi agli utenti. ***È possibile configurare i livelli dell'infrastruttura di base senza la necessità di implementare i livelli per tutti gli utenti.***
 
-Di conseguenza è possibile configurare, testare e provare a usare gli elementi dell'infrastruttura di base prima dell'implementazione di questi elementi per i numerosi utenti negli uffici, regioni o reparti dell'organizzazione.
+È possibile configurare, testare e provare a usare gli elementi dell'infrastruttura di base prima dell'implementazione di questi elementi per i numerosi utenti negli uffici, regioni o reparti dell'organizzazione.
 
 Ad esempio, creare le impostazioni per:
 
@@ -102,7 +102,7 @@ Quando si è pronti a distribuire elementi di questa infrastruttura per gli uten
 | Gestione dei dispositivi mobili | Aggiungere account ai gruppi per la registrazione di dispositivi e per i criteri di accesso condizionale basati sul dispositivo. |
 | Protezione delle informazioni | Aggiungere account utenti ai gruppi per le etichette di protezione delle informazioni. |
 
-Dopo che l'infrastruttura di base è completata, testata e provata, è possibile implementare il software installato, ad esempio Windows 10 Enterprise e Office 365 ProPlus, e i servizi e le protezioni basati su cloud, ad esempio la registrazione di dispositivi e i criteri di accesso condizionale, per tutti gli utenti nel modo che meglio soddisfa le risorse IT e gli obiettivi aziendali.
+Dopo che le fasi o gli elementi dell'infrastruttura di base sono completati, testati e provati, è possibile implementare il software installato, ad esempio Windows 10 Enterprise e Office 365 ProPlus, e i servizi e le protezioni basati su cloud, ad esempio la registrazione di dispositivi e i criteri di accesso condizionale, per tutti gli utenti nel modo che meglio soddisfa le risorse IT e gli obiettivi aziendali.
 
 ## <a name="deployment-and-project-management-strategies"></a>Strategie di distribuzione e di gestione progetti
 
@@ -114,7 +114,6 @@ Se l'organizzazione è più piccola e Microsoft 365 Business non è idoneo, vede
 
 
 ## <a name="next-step"></a>Passaggio successivo
-
 
 | Dove sono | Dove devo andare |
 |:-------|:-----|
