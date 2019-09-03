@@ -126,8 +126,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
   - [Serie di video sulla distribuzione desktop di Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
 
-  - 
-  [Distribuzione del sistema operativo in System Center Configuration Manager](https://docs.microsoft.com/it-IT/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Distribuzione del sistema operativo in System Center Configuration Manager](https://docs.microsoft.com/it-IT/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Pianificare la distribuzione di Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
