@@ -59,15 +59,13 @@ Durante il processo di migrazione, è necessario avere sufficiente capacità di 
 
 Se si sta eseguendo un aggiornamento del PC e non si sta formattando la partizione di Windows principale, è anche possibile utilizzare un archivio delle migrazioni con collegamento reale con USMT. Questo processo mantiene lo stato utente sul PC mentre il sistema operativo e le app precedenti vengono rimossi e aggiornati. Con il processo di ripristino derivante dalla stessa partizione locale, questa opzione garantisce miglioramenti delle prestazioni significativi e riduce il traffico di rete.
 
-
-  [Panoramica sull'Utilità migrazione stato utente (USMT)](https://docs.microsoft.com/it-IT/windows/deployment/usmt/usmt-overview)
+[Panoramica sull'Utilità migrazione stato utente (USMT)](https://docs.microsoft.com/it-IT/windows/deployment/usmt/usmt-overview)
 
 ## <a name="onedrive-known-folder-move"></a>Spostamento di cartelle note di OneDrive
 
 Se gli utenti sono su OneDrive o si sta aggiungendo OneDrive nell'ambito della distribuzione, esiste una nuova opzione disponibile. Utilizzando il cloud per sincronizzare i file utente, la funzionalità "Spostamento di cartelle note" di OneDrive offre un livello di flessibilità non possibile con opzioni di migrazione dei file basate sulla rete locale. Se abilitata prima della migrazione, questa funzionalità offre accesso sicuro ai nuovi PC e a quelli aggiornati ed elimina la necessità di creare archivi delle migrazioni temporanei sui propri server. Inoltre, è completamente trasparente per l'utente.
 
-
-  [Reindirizzare e spostare le cartelle note di Windows su OneDrive](https://docs.microsoft.com/it-IT/onedrive/redirect-known-folders)
+[Reindirizzare e spostare le cartelle note di Windows su OneDrive](https://docs.microsoft.com/it-IT/onedrive/redirect-known-folders)
 
 Se si usa già OneDrive, sarà noto che gli utenti possono selezionare le cartelle e i percorsi che desiderano sincronizzare da OneDrive a SharePoint sul proprio dispositivo; tuttavia, ciò grava sull'utente finale. Con lo Spostamento di cartelle note, è possibile selezionare le cartelle Documenti, Desktop e Immagini in un profilo utente e proteggerle tutte su OneDrive. Un utente può farlo da solo o, importante per questo scenario, l'amministratore può [applicare la funzionalità tramite le impostazioni Criteri di gruppo](https://docs.microsoft.com/it-IT/onedrive/use-group-policy?redirectSourcePath=%252fen-us%252farticle%252fUse-Group-Policy-to-control-OneDrive-sync-client-settings-0ecb2cf5-8882-42b3-a6e9-be6bda30899c).
 

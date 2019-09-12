@@ -55,12 +55,11 @@ Per Windows 10, l'utente sarà supportato nella familiarizzazione con funzionali
 
 Sono inoltre presenti controlli di sicurezza e conformità visibili cui gli utenti potrebbero essere esposti. Enterprise Mobility + Security che comprende Azure AD e Microsoft Intune integra funzionalità aggiuntive con Windows 10 e Office 365 che è possibile scegliere per l'aggiornamento del desktop.
 
-[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-security)
+[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/it-IT/cloud-platform/enterprise-mobility-security)
 
 Ad esempio, se è stata attivata l'autenticazione a più fattori, questa utilizza Azure AD e protegge l'accesso dell'utente alle risorse sfruttando l'app o il PIN di un telefono per accedere in modo sicuro ai servizi. Inoltre, Azure Information Protection facilita la classificazione e l'etichettatura dei documenti da parte degli utenti.
 
-
-  [Configurare l'autenticazione a più fattori per utenti di Office 365](https://support.office.com/it-IT/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Configurare l'autenticazione a più fattori per utenti di Office 365](https://support.office.com/it-IT/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 Queste sono solo alcune delle nuove funzionalità che saranno sperimentate dagli utenti e alcune potrebbero coglierli di sorpresa, in modo positivo o meno. Tali sorprese, specialmente se alterano il normale flusso di lavoro, possono comportare più chiamate e ticket per l'helpdesk.
 
