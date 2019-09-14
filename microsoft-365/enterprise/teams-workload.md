@@ -2,7 +2,7 @@
 title: Distribuire Microsoft Teams per Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2018
+ms.date: 08/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Procedura di pianificazione, implementazione e aumento del valore di Microsoft Teams in Microsoft 365 Enterprise nell'organizzazione.
-ms.openlocfilehash: 1e7519817a10eb4aa710dff2d4c74c9390c9f6f6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: fd2e72ddb0dfbcc437d30dee16241fbccc81b05b
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072856"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982617"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Distribuire Microsoft Teams per Microsoft 365 Enterprise
 
@@ -50,14 +50,6 @@ Teams può essere usato per diversi scopi. È necessario capire gli scopi delle 
 Teams deve saper soddisfare team altamente collaborativi e velocissimi che lavorano a stretto contatto e richiedono molti più servizi che la sola posta elettronica che Exchange Online è in grado di fornire. Per fare un esempio, live chat di gruppo con una cronologia registrata e un percorso comune e facile da trovare dove archiviare file e appunti. 
 
 Un modo per vedere i vantaggi di Teams è quello di esaminare il modo in cui un team o un team virtuale interagisce oggi e poi trovare uno scenario di Teams appropriato che sostituisca l'interazione e offra modi più semplici di collaborazione con maggiori funzionalità.
-
-Teams consente i seguenti scenari aziendali per Microsoft 365 Enterprise:
-
-- Comunicare con il team per restare aggiornati, sollecitare input e creare coesione e consenso
-- Coinvolgere i firstline worker per consentire la trasformazione digitale
-- Comprendere le abitudini di lavoro per migliorare la propria influenza e il proprio impatto
-
-Per ulteriori informazioni, vedere [Trasformazione digitale tramite Microsoft 365](http://transform.microsoft.com). 
 
 #### <a name="microsoft-teams-for-highly-regulated-data"></a>Microsoft Teams per dati altamente regolamentati
 
@@ -99,7 +91,7 @@ Usare queste risorse per comprendere la gestione delle licenze di Teams ed esegu
 - [Gestione degli accessi utente per Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/user-access)
 - [Ottenere client per Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/get-clients)
 - [Attivare Microsoft Teams nell'organizzazione di Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
-- [Gestire le funzionalità di Microsoft Teams nell'organizzazione di Office 365](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)
+- [Gestire le funzionalità di Microsoft Teams nell'organizzazione di Office 365](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 
 #### <a name="result"></a>Risultato
 

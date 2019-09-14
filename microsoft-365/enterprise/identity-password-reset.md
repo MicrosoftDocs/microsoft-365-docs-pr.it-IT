@@ -3,7 +3,7 @@ title: "Passaggio 5: Semplificare l'accesso per gli utenti"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare la reimpostazione della password self-service (SSPR) per Azure AD.
-ms.openlocfilehash: b57291aabf1b51e7866dba10ba50eacc27291a2a
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ec81b2931fd4ad599ffcf983ea8a7d764c56404a
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073726"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981797"
 ---
 # <a name="step-5-simplify-access-for-users"></a>Passaggio 5: Semplificare l'accesso per gli utenti
 
@@ -32,7 +32,7 @@ ms.locfileid: "34073726"
 
 In questa sezione verrà consentito agli utenti di reimpostare la password con Azure Active Directory (Azure AD), che è poi replicata nei servizi di Dominio di Active Directory (AD DS) locali. Questo processo è noto come writeback delle password. Con il writeback delle password gli utenti non hanno bisogno di aggiornare le password tramite Active Directory Domain Services locale in cui vengono archiviati gli account utente e i relativi attributi. Questo risulta particolarmente utile per gli utenti remoti o mobili che non dispongono di una connessione remota alla rete locale.
 
-Il writeback delle password è necessario per utilizzare al meglio le funzioni di Identity Protection, come la richiesta agli utenti di cambiare le password locali nel caso in cui sia stato rilevato un alto rischio di violazione dell'account.
+Il writeback delle password è necessario per utilizzare al meglio le capacità di Azure AD Identity Protection, come la richiesta agli utenti di cambiare le password locali nel caso in cui sia stato rilevato un alto rischio di violazione dell'account.
 
 Per ulteriori informazioni e istruzioni di configurazione, vedere [Reimpostazione password self-service di Azure AD con writeback delle password](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback).
 
@@ -92,20 +92,11 @@ In questo passaggio si aggiunge il nome dell'azienda, il logo e altri elementi f
 
 Con Microsoft 365 Enterprise, è possibile personalizzare l'aspetto delle pagine di accesso e del Riquadro di accesso affinché includano il logo e colori dell'azienda e informazioni sull'utente personalizzate. 
 
-Quando un utente prova ad accedere da un dispositivo, vede qualcosa simile a quanto mostrato nell'esempio seguente nella pagina di accesso di Office 365 *prima della personalizzazione*.
-
-![Esempio di pagina di accesso di Office 365 prima della personalizzazione](./media/identity-customize-office-365-sign-in/id-step01-sign-in-before.png)
-
-Ed ecco cosa vedrà lo stesso utente di Contoso Corporation *dopo la personalizzazione*.
-
-![Esempio di pagina di accesso di Office 365 dopo la personalizzazione](./media/identity-customize-office-365-sign-in/id-step01-sign-in-after.png)
-
 Per ulteriori informazioni, vedere [Aggiungere il marchio dell'organizzazione alla pagina di accesso di Office 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
 Per istruzioni sulla configurazione, vedere [Aggiungere il marchio dell'organizzazione alle pagine di accesso e Riquadro di accesso](http://aka.ms/aadpaddbranding).
 
 Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-exit-criteria.md#crit-identity-custom-sign-in) per questa sezione.
-
 
 ## <a name="next-step"></a>Passaggio successivo
 
