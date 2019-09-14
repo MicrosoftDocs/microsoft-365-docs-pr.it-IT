@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, PMI, FAQ, domande frequenti, risposte, business
 ms.date: 06/08/2018
-ms.openlocfilehash: 9f3f82169dcd4454ffb46b1269422688a107f2b0
-ms.sourcegitcommit: 0c1227dc79b66bab529bf178c5672791369ba471
+ms.openlocfilehash: 3ab99b402bf440cd0c113a87dc453ff388a5befb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35630590"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982322"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Domande frequenti su Microsoft 365 Business
 
@@ -72,7 +72,9 @@ Se con l'hardware in esecuzione oggi viene eseguito Windows 7 Pro o versione suc
 Si prevede anche una forte compatibilità in Windows 10 con le applicazioni desktop esistenti (Win32), che consentirà alla maggior parte delle applicazioni esistenti di funzionare senza alcuna modifica. I clienti e i consulenti IT attendibili deve leggere il processo di testing dell'applicazione consigliato per la <a href="https://docs.microsoft.com/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process" target="_blank">compatibilità con Windows 10</a> ed esaminare i <a href="https://products.office.com/office-system-requirements#subscription-plans-section" target="_blank">requisiti del sistema Office</a> per garantire una transizione senza problemi a Microsoft 365 Business. 
 
 ### <a name="what-is-windows-10-business"></a>Che cos'è Windows 10 Business? 
-Windows 10 Business è un set di servizi cloud e di funzionalità di gestione del dispositivo che integrano Windows 10 Pro e abilitano i controlli di sicurezza e di gestione centralizzati di Microsoft 365 Business. Windows 10 Business include anche Windows AutoPilot, un servizio che consente di ottimizzare la distribuzione di nuovi PC Windows 10. Se hai dispositivi con licenza per Windows 7, 8 e 8.1 Professional, Microsoft 365 Business fornisce un aggiornamento a Windows 10 Pro che è il prerequisito per la distribuzione di Windows 10 Business. 
+Windows 10 Business è un set di servizi cloud e di funzionalità di gestione del dispositivo che integrano Windows 10 Pro e abilitano i controlli di sicurezza e di gestione centralizzati di Microsoft 365 Business. Windows 10 Business include anche Windows AutoPilot, un servizio che consente di ottimizzare la distribuzione di nuovi PC Windows 10. Se hai dispositivi con licenza per Windows 7, 8 e 8.1 Professional, Microsoft 365 Business fornisce un aggiornamento a Windows 10 Pro che è il prerequisito per la distribuzione di Windows 10 Business.
+> [!IMPORTANT]
+> Quando si esegue l'aggiornamento, è necessario fornire il codice Product Key originale, altrimenti l'aggiornamento non funzionerà. 
 
 ### <a name="how-does-microsoft-365-business-help-support-our-bring-your-own-device-byod-policy"></a>In che modo Microsoft 365 Business facilita il supporto dei criteri Bring Your Own Device (BYOD)? 
 Molti dipendenti preferiscono utilizzare i propri telefoni cellulari e tablet per accedere a informazioni personali e di lavoro anziché disporre di più dispositivi per ogni scopo. L'uso dei dispositivi personali per il lavoro, anche se è comune, aumenta il rischio che le informazioni aziendali potrebbero finire in mani sbagliate. Molte soluzioni di protezione dati mobili concorrenti richiedono agli utenti di passare a una modalità specifica sul proprio dispositivo oppure utilizzano un altro meccanismo complesso che gli utenti possono trovare intrusivo e pertanto evitano di usare. 

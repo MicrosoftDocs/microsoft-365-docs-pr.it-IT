@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 203db332e1fcd7861f40c69b138ac8274544dceb
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.openlocfilehash: 30374e603350ecf9d5e5542263f004a22ccb0a67
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35830474"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981707"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installare Microsoft Project o Microsoft Visio nei dispositivi Microsoft Managed Desktop
 
@@ -39,9 +39,9 @@ Dopo aver inviato la richiesta di supporto, Microsoft Managed Desktop creerà tr
 
 Nome del gruppo di Azure AD | Quali utenti assegnare?   
  --- | ---
-Ambiente di lavoro moderno-Office-Project-install | Gli utenti che hanno bisogno di solo Project
-Ambiente di lavoro moderno-Office-Visio-install | Gli utenti che hanno bisogno di solo Visio
-Ambiente di lavoro moderno-Office-Project e Visio-install | Gli utenti che hanno bisogno sia di Project che di Visio
+Ambiente di lavoro moderno-Office-Project_Install | Gli utenti che hanno bisogno di solo Project
+Ambiente di lavoro moderno-Office-Visio_Install | Gli utenti che hanno bisogno di solo Visio
+Ambiente di lavoro moderno-Office-Visio_Project_Install | Gli utenti che hanno bisogno sia di Project che di Visio
 
 Una volta assegnati a questi gruppi, le applicazioni saranno disponibili nel portale aziendale. La sincronizzazione potrebbe richiedere alcuni minuti, ma gli utenti possono installare le app dal portale aziendale. 
 

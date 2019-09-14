@@ -1,18 +1,18 @@
 ---
-title: Registrare i dispositivi in Microsoft Managed Desktop per i partner
+title: Procedura per i partner per la registrazione dei dispositivi
 description: Il modo in cui i partner possono registrare i dispositivi in modo che possano essere gestiti da Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 06ec98ebc7ea44a1bf3d8039e3a3ab7102521d3e
-ms.sourcegitcommit: ef749c44d72b5258706be86a4af1aeca4154ead2
+ms.openlocfilehash: 69d9387047cbb14a97f3da1d401b30a97bd7fd90
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35447528"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982717"
 ---
-# <a name="register-devices-in-microsoft-managed-desktop-for-partners"></a>Registrare i dispositivi in Microsoft Managed Desktop per i partner
+# <a name="steps-for-partners-to-register-devices"></a>Procedura per i partner per la registrazione dei dispositivi
 
 
 In questo argomento vengono illustrati i passaggi da seguire per i partner per la registrazione dei dispositivi. Il processo di registrazione dei dispositivi manualmente è documentato in [dispositivi di registrazione in Microsoft Managed Desktop Yourself](register-devices-self.md).
@@ -41,7 +41,7 @@ Il file deve includere le **intestazioni di colonna** identiche a quelle del cam
 >Questo formato è solo per il processo del partner. Il processo per la registrazione automatica è documentato nei [dispositivi di registrazione in Microsoft Managed Desktop Yourself](register-devices-self.md).
 
 >[!IMPORTANT]
->Questi valori devono corrispondere esattamente ai valori del produttore di SMBIOS. È inoltre necessario includere l' *hash hardware* nella prima riga (ma nessun valore nella seconda riga) la virgola finale dopo il valore del *numero di serie* nella seconda riga.
+>Questi valori devono corrispondere esattamente ai valori del produttore di SMBIOS, tra cui le maiuscole e i caratteri speciali. 
 
 - Produttore del dispositivo (ad esempio: SpiralOrbit) 
 - Modello di dispositivo (ad esempio: ContosoABC)
@@ -68,21 +68,18 @@ La registrazione tramite il portale di Azure è identica a quella del servizio s
 | Stato | Descrizione |
 |---------------|-------------|
 | Registrazione in sospeso | La registrazione non è ancora stata completata. Controllare in un secondo momento. |
-| Registrazione non riuscita | La registrazione non è stata completata. Per ulteriori informazioni, fare riferimento a [risoluzione dei problemi](register-devices-self.md#troubleshooting) . |
+| Registrazione non riuscita | La registrazione non è stata completata. Per ulteriori informazioni, vedere [risoluzione dei problemi relativi alla registrazione del dispositivo](register-devices-self.md#troubleshooting-device-registration) . |
 | Pronto per l'utente | La registrazione ha avuto esito positivo e il dispositivo è ora pronto per essere recapitato all'utente finale. Microsoft Managed Desktop li guiderà per la prima volta, quindi non è necessario eseguire ulteriori preparativi. |
 | Attivo | Il dispositivo è stato recapitato all'utente finale ed è stato registrato con il tenant. Questo indica anche che stanno usando regolarmente il dispositivo. |
 | Inattivo | Il dispositivo è stato recapitato all'utente finale ed è stato registrato con il tenant. Tuttavia, non hanno utilizzato il dispositivo di recente (negli ultimi 7 giorni).  |
 
-## <a name="register-devices-by-using-an-api"></a>Registrare i dispositivi tramite un'API
 
-La registrazione da parte dell'API è identica a quella del servizio self-service, tranne per il fatto che la proprietà hash hardware dell'insieme di dispositivi è facoltativa, come descritto nella sezione CSV. 
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 | Messaggio di errore | Dettagli |
 |---------------|-------------|
 | Dispositivo non trovato | Non è stato possibile registrare il dispositivo perché non è stata trovata una corrispondenza per il produttore, il modello o il numero di serie specificato. Confermare questi valori con il fornitore del dispositivo. |
-| Dispositivo non trovato | Non è stato possibile annullare la registrazione di questo dispositivo perché non esiste nell'organizzazione. Non sono necessarie ulteriori azioni. |
 | Hash hardware non valido | L'hash hardware fornito per il dispositivo non è stato formattato correttamente. Fare doppio check sull'hash hardware e quindi inviare di nuovo. |
 | Dispositivo già registrato | Questo dispositivo è già registrato nell'organizzazione. Non sono necessarie ulteriori azioni. |
 | Dispositivo rivendicato da un'altra organizzazione | Questo dispositivo è già stato rivendicato da un'altra organizzazione. Controllare con il fornitore del dispositivo. |

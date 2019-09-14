@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 322da1ccfbd0cf8b5070894580b06fb5b0283f40
-ms.sourcegitcommit: 1d5fc181036b673c4f0b9e161e19395dbfe5a304
+ms.openlocfilehash: 67274f4f6483b3f22e9526df8dfbdd872c0573ef
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35411650"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982017"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -118,7 +118,7 @@ Applicare le impostazioni in base al livello di protezione che si desidera asseg
 ||Richiedi tutti i controlli selezionati|True|Opzione selezionata|
 
 > [!NOTE]
-> Assicurarsi di abilitare questo criterio, scegliendo **** attivato. È inoltre consigliabile utilizzare lo strumento [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) per testare il criterio.
+> Assicurarsi di abilitare questo criterio, scegliendo **attivato.** È inoltre consigliabile utilizzare lo strumento [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) per testare il criterio.
 
 
 
@@ -155,7 +155,7 @@ Nelle tabelle seguenti vengono descritte le impostazioni dei criteri di accesso 
 ||Richiedi tutti i controlli selezionati|True|Opzione selezionata|
 
 > [!NOTE]
-> Assicurarsi di abilitare questo criterio, scegliendo **** attivato. È inoltre consigliabile utilizzare lo strumento [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) per testare il criterio.
+> Assicurarsi di abilitare questo criterio, scegliendo **attivato.** È inoltre consigliabile utilizzare lo strumento [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) per testare il criterio.
 
 
 
@@ -182,7 +182,7 @@ Accedere al [portale di Microsoft Azure (http://portal.azure.com)](http://portal
 **Revisione:** non applicabile
 
 > [!NOTE]
-> Assicurarsi di abilitare questo criterio, scegliendo **** attivato. È inoltre consigliabile utilizzare lo strumento [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) per testare il criterio
+> Assicurarsi di abilitare questo criterio, scegliendo **attivato.** È inoltre consigliabile utilizzare lo strumento [What If](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) per testare il criterio
 
 ## <a name="define-app-protection-policies"></a>Definire i criteri di protezione delle app
 I criteri di protezione delle app definiscono le app consentite e le azioni che possono intraprendere con i dati dell'organizzazione. Creare criteri di protezione delle app di Intune dall'interno del portale di Azure. 
@@ -259,11 +259,11 @@ Per richiedere applicazioni approvate:
 
 8. Scegliere **le condizioni**, selezionare **piattaforme dispositivo**e quindi fare clic su **Configura** .
 
-9. In **Includi**, scegliere **Seleziona piattaforme dispositivo**, quindi **Android** e **iOS**. Fare di nuovo **** clic su **fatti** e fare
+9. In **Includi**, scegliere **Seleziona piattaforme dispositivo**, quindi **Android** e **iOS**. Fare di nuovo clic su **fatti** **e fare**
 
 10. Scegliere **Concedi** nella sezione **Controlli di accesso**.
 
-11. Scegliere **Concedi accesso**, selezionare **Richiedi applicazione client**approvata. Per più controlli, selezionare **Richiedi i controlli selezionati**, quindi scegliere **Seleziona**. 
+11. Scegliere **Concedi accesso**, selezionare **Richiedi applicazione client approvata**. Per più controlli, selezionare **Richiedi i controlli selezionati**, quindi scegliere **Seleziona**. 
 
 12. 	Selezionare **Crea**.
 
@@ -322,11 +322,11 @@ Tutti i criteri descritti in precedenza vengono considerati distribuiti se asseg
 ||Windows Defender antimalware Signature aggiornato|Richiedono||
 ||Protezione in tempo reale|Richiedono|Supportato solo per il desktop di Windows 10|
 
-**Windows Defender ATP**
+**ATP Microsoft Defender**
 
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
-|Windows Defender Advanced Threat Protection Rules|Richiedere che il dispositivo sia a o sotto il Punteggio di rischio del computer|Media||
+|Regole di protezione avanzata dalle minacce di Microsoft Defender|Richiedere che il dispositivo sia a o sotto il Punteggio di rischio del computer|Media||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Richiedere PC conformi (ma non conformi a telefoni e Tablet)
 Prima di aggiungere un criterio per richiedere PC conformi, assicurarsi di registrare i dispositivi per la gestione in Intune. L'utilizzo dell'autenticazione a più fattori è consigliato prima di registrare i dispositivi in Intune per garantire che il dispositivo sia in possesso dell'utente desiderato. 

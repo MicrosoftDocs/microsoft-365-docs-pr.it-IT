@@ -5,7 +5,7 @@ keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 Documentation, 
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2018
+ms.date: 08/28/2019
 ms.topic: conceptual
 ms.prod: microsoft-365-enterprise
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 0ee9696d441d61fb41359f6502e6f73988749156
-ms.sourcegitcommit: 12fbb429dba7517220191d90816e235583943fe0
+ms.openlocfilehash: 570b71a5e766738769b537a2601ede7f01bf078c
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33623150"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982807"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fase 5: gestione dei dispositivi mobili per Microsoft 365 Enterprise
 
@@ -26,17 +26,7 @@ ms.locfileid: "33623150"
 
 *Questa funzionalità si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-Microsoft 365 Enterprise include funzionalità che consentono di gestire i dispositivi e le loro app all'interno dell'organizzazione. Tramite Microsoft Intune, è possibile gestire i dispositivi iOS, Android, macOS e Windows per proteggere l'accesso alle risorse dell'organizzazione, inclusi i dati. Intune si integra con Azure Active Directory (Azure AD) e attiva i seguenti scenari aziendali per Microsoft 365:
-
-- Archiviare e condividere file all'interno e all'esterno dell'organizzazione per collaborare facilmente nell'organizzazione
-- Lavorare ovunque e in qualsiasi momento in modo sicuro attraverso il proprio dispositivo, per ottenere il massimo risultato pur mantenendo flessibile lo stile di lavoro
-- Fornire sicurezza, controlli e visibilità, offrendo conformità verificata nel settore agli standard globali
-- Proteggere le informazioni e ridurre il rischio di perdita di dati
-- Rilevare e proteggere dalle minacce esterne
-- Monitorare, segnalare e analizzare le attività per rispondere prontamente per garantire la sicurezza organizzativa
-- Proteggi gli utenti e i loro account
-
-Per ulteriori informazioni, vedere [Trasformazione digitale tramite Microsoft 365](http://transform.microsoft.com). 
+Microsoft 365 Enterprise include funzionalità che consentono di gestire i dispositivi e le loro app all'interno dell'organizzazione. Tramite Microsoft Intune, è possibile gestire i dispositivi iOS, Android, macOS e Windows per proteggere l'accesso alle risorse dell'organizzazione, inclusi i dati. 
 
 In questa fase, è necessario registrare i dispositivi in Intune e creare e applicare criteri per garantire la sicurezza e la protezione dei dati. L'intera documentazione della raccolta di Intune è [disponibile online](https://docs.microsoft.com/intune). È inoltre consigliabile esaminare la [Guida alla pianificazione della distribuzione, alla progettazione e all'implementazione di Intune](https://docs.microsoft.com/intune/planning-guide) prima di iniziare.
 
@@ -146,7 +136,7 @@ Tenere presente che è necessario avviare Small e utilizzare un approccio a fasi
 Intune è un servizio potente e include numerose funzionalità. Di seguito sono riportate alcune altre attività che è possibile eseguire tramite Intune:
 
 - Gestire software e aggiornamenti nei[PC](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)Windows [Devices](https://docs.microsoft.com/intune/windows-update-for-business-configure) & e nei dispositivi [iOS](https://docs.microsoft.com/intune/software-updates-ios)
-- Abilitare [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) nei dispositivi Windows 10 e utilizzare la conformità e l'accesso condizionale per proteggere l'accesso alle risorse aziendali, ad esempio SharePoint o Exchange Online
+- Attiva [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) nei dispositivi Windows 10 e utilizza la conformità e l'accesso condizionale per proteggere l'accesso alle risorse aziendali, ad esempio SharePoint o Exchange Online
 - Utilizzo di [Lookout](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector), [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector)e di altri partner per la difesa delle minacce per dispositivi mobili
 - Aggiungere un' [autorità di certificazione (CA) partner](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) per emettere e rinnovare i certificati
 - [Fornire indicazioni per gli utenti finali](https://docs.microsoft.com/intune/end-user-educate) nell'app portale aziendale, per ottenere app e altro ancora.
@@ -162,7 +152,7 @@ Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](m
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
-Informazioni su come gli esperti IT di Microsoft gestiscono i [dispositivi con EMS](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
+Informazioni su come gli esperti IT di Microsoft [gestiscono i dispositivi con EMS](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Come ha agito Contoso con Microsoft 365 Enterprise
 

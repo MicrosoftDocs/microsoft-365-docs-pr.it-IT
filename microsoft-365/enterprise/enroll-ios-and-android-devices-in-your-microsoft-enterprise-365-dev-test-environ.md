@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Utilizzare questa guida del laboratorio di testing per registrare i dispositivi nell'ambiente di testing di Microsoft 365 e gestirli in remoto.
-ms.openlocfilehash: b72298df3dbc470358f8cd87e5ca249999812516
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 0dde7acd10ad78327adb4862346639e05a276b4e
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073716"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981997"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Registrazione dei dispositivi iOS e Android nell'ambiente di testing di Microsoft 365 Enterprise
 
@@ -54,7 +54,7 @@ Per bloccare un dispositivo iOS o Android in remoto:
 
 1. Accedere al portale di Azure [https://portal.azure.com](https://portal.azure.com) con le credenziali dell'account di amministratore globale.
 2. Fare clic su **tutti i servizi**, digitare **Intune**, quindi fare clic su **Intune**.
-3. Fare clic su **dispositivi _GT_ tutti i dispositivi**.
+3. Fare clic su **dispositivi > tutti i dispositivi**.
 4. Nell'elenco dei dispositivi, fare clic su un dispositivo iOS o Android, quindi fare clic sull'azione **blocco remoto** .
 
     
@@ -62,8 +62,8 @@ Per reimpostare il passcode in remoto:
 
 1. Se necessario, accedere al portale di Azure [https://portal.azure.com](https://portal.azure.com) con le credenziali dell'account di amministratore globale.
 2. Fare clic su **tutti i servizi**, digitare **Intune**, quindi fare clic su **Intune**.
-3. Fare clic su **dispositivi _GT_ tutti i dispositivi**.
-4. Dall'elenco dei dispositivi gestiti, fare clic su un dispositivo iOS o Android e scegliere **... Altre informazioni**. Scegliere quindi l' **** azione remota del dispositivo di accesso remoto.
+3. Fare clic su **dispositivi > tutti i dispositivi**.
+4. Dall'elenco dei dispositivi gestiti, fare clic su un dispositivo iOS o Android e scegliere **... Altre informazioni**. Scegliere **quindi l'azione** remota del dispositivo di accesso remoto.
 
 Per ulteriori esperimenti, vedere [available device actions](https://docs.microsoft.com/intune/device-management#available-device-actions).
 
@@ -80,4 +80,3 @@ Esplorare le funzionalità e le funzionalità aggiuntive per la [gestione dei di
   
 [Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 
-[Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

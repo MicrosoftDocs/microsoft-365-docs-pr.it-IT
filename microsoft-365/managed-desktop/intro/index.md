@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: c0866dc4ff4a768bbae2488cdea2655470978f94
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 1cde7cda7cf6bb42508aa52460ff2ee254f62967
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390693"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982587"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Che cos'è Microsoft Managed Desktop?
 
@@ -23,8 +23,8 @@ Microsoft Managed Desktop si spinge ulteriormente a combinare la potenza di Micr
 
 
 <table>
-<tr><th>Migliore esperienza</th><th>Tecnologia più recente</th><th>Eseguito da Microsoft</th></tr>
-<tr><td><p>Windows 10</p><p>Office 365 ProPlus</p><p></p><p>Windows Autopilot</p><p>Dispositivo moderno</p></td><td><p>Sempre aggiornato</p><p>Aggiornamenti delle funzionalità semestrali </p><p>aggiornamento di un dispositivo di 2 o 3 anni</p></td><td><p>Configurazione dispositivo</p><p>Monitoraggio e correzione della sicurezza</p><p>Distribuzione di app</p><p>Gestione degli aggiornamenti</p><p>Analisi desktop</p><p>supporto per gli utenti finali 24x7</p></td></tr>
+<tr><th>Delizia gli utenti finali</th><th>Empower IT</th><th>Eseguito da Microsoft</th></tr>
+<tr><td><p>Dispositivo moderno</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Sicurezza integrata</p><p>Login con riconoscimento facciale</p><p>Sempre aggiornato</p></td><td><p>Sicurezza integrata</p><p>Approfondimenti di azione</p><p>Supporto per le operazioni</p><p>Linee guida di esperti di Microsoft</p></td><td><p>Team per le operazioni di sicurezza</p><p>Monitoraggio dello stato</p><p>Backup del cloud per i dati</p><p>Principi apolidi</p><p>supporto per gli utenti finali 24x7</p></td></tr>
 </table>
 
 Microsoft Managed Desktop offre ai clienti una soluzione IT completa che delizia gli utenti e libera le risorse IT per attività più importanti. Questo servizio è stato sviluppato in base ai commenti e suggerimenti che spesso si sentono:

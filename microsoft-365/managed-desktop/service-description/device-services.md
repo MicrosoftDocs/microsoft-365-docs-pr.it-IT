@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 533d51da027441ac199c3e1bfefb42812309a91b
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 57ad4573712f0a407f8576c1a9ef7e19155bb0e1
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390653"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982487"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Servizi per dispositivi desktop Microsoft gestiti
 
@@ -20,13 +20,13 @@ In questo argomento sono elencati i servizi e le limitazioni del servizio per i 
 
 ## <a name="device-services"></a>Servizi per dispositivi
 
-Microsoft fornirà questi servizi per i dispositivi Microsoft Managed Desktop. Per informazioni sui dispositivi Microsoft Managed Desktop Program, vedere [Microsoft Managed](device-list.md)desktop Devices.
+Microsoft fornirà questi servizi per i dispositivi Microsoft Managed Desktop. Per informazioni sui dispositivi Microsoft Managed Desktop Program, vedere [Microsoft Managed Desktop Devices](device-list.md).
 
  | 
  --- | ---
 Supporto | Gli agenti di supporto risponderanno alle domande direttamente correlate alla funzionalità del dispositivo e diagnosticano i problemi dei dispositivi.
 Inventario | Tutti i dispositivi vengono registrati nel portale di amministrazione di Microsoft Managed Desktop per inventario e monitoraggio dello stato.
-Aggiornamenti firmware/driver | Gli aggiornamenti del firmware e dei driver vengono distribuiti e monitorati per la compatibilità da parte di Microsoft. 
+Aggiornamenti firmware/driver | Per impostazione predefinita, i dispositivi Microsoft Managed Desktop ricevono gli aggiornamenti del firmware e dei driver da Windows Update. Non tutti i partner hardware distribuiscono gli aggiornamenti tramite Windows Update. tali aggiornamenti possono essere richiesti separatamente.
 Accessori | Gli accessori disponibili con il dispositivo sono coperti dagli stessi servizi del dispositivo stesso, ma i termini di garanzia possono variare. Fare riferimento alle condizioni di garanzia selezionate quando si selezionano i dispositivi. 
 Configurazione dispositivo    | I dispositivi vengono preconfigurati con la versione corrente di Windows e ricevono le app e le configurazioni tramite il cloud. 
 

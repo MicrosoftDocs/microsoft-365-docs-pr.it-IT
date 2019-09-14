@@ -5,16 +5,15 @@ keywords: Microsoft Managed Desktop, Device, per iniziare, Microsoft 365
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/27/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d1c70275938c8448b5eca07ed374157147856a30
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 9c3f07293ee7edccc6afe18c0341b5d4b0920de0
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390353"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981647"
 ---
-# <a name="get-started-using-microsoft-managed-desktop-devices"></a>Iniziare a usare i dispositivi Microsoft Managed Desktop
+# <a name="get-your-users-ready-to-use-devices"></a>Preparare gli utenti all'utilizzo dei dispositivi
 
 I dispositivi Microsoft Managed Desktop sono già configurati con la versione corrente di Windows. Le configurazioni e le app verranno installate dal cloud Man mano che l'utente completa la configurazione del dispositivo. 
  

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come configurare i criteri di accesso condizionale per le campagne Microsoft 365.
-ms.openlocfilehash: 7d8e1f16019d151478aae57b1593b0e0758e5b19
-ms.sourcegitcommit: 7e46db0b35c188ee6a7b40ab3eb2d76ff6c101c5
+ms.openlocfilehash: 614e3a6e13a14114f40ecf87bf936d4165744503
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35076310"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982382"
 ---
 # <a name="set-up-conditional-access-policies"></a>Impostare i criteri di accesso condizionale
 
@@ -53,7 +53,7 @@ Per ulteriori informazioni su questi criteri, vedere [What are Baseline Policies
 1. Per ogni criterio, vedere le istruzioni specifiche seguenti:
 
   - [Richiedi l'autenticazione a più fattori per gli amministratori](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-- [Reequire Mae per gli utenti](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+- [Richiedi l'autenticazione per gli utenti](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
  - [Blocca l'autenticazione legacy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
   - [Richiedere l'autenticazione dell'AMF per la gestione dei servizi](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 

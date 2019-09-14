@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Informazioni su come spostare la propria azienda in Microsoft 365 business.
-ms.openlocfilehash: e4bb18904355663f9f26f58a3fd3aaf7420e5378
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a3f77bd18b9b900151c50f923b705e4ff0150519
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072741"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982442"
 ---
 # <a name="migrate-to-microsoft-365-business-from-office-365-business-premium"></a>Eseguire la migrazione a Microsoft 365 business da Office 365 Business Premium
 
@@ -35,7 +35,7 @@ Se si dispone già di un abbonamento a Office 365 per le aziende, ad esempio Off
   
 ## <a name="add-microsoft-365-business-licenses"></a>Aggiungere licenze aziendali Microsoft 365
 
-Sono disponibili due modi per ottenere Microsoft 365 business. Se si ha un partner, può acquistare Microsoft 365 business da [Microsoft Partner Center](get-microsoft-365-business.md). Il partner può anche facilitare la transizione a Microsoft 365 business.
+Sono disponibili due modi per ottenere Microsoft 365 business. Un partner può acquistare Microsoft 365 business per l'utente da [Microsoft Partner Center](get-microsoft-365-business.md). Il partner può anche facilitare la transizione a Microsoft 365 business.
   
 Se si gestisce la propria sottoscrizione, è possibile [contattare le vendite](https://www.microsoft.com/microsoft-365/business) per l'acquisto di licenze Microsoft 365 business. 
   
@@ -58,7 +58,7 @@ Se viene fornito un collegamento per l'acquisto delle licenze, è possibile eseg
     
 2. Nella pagina **Personalizza l'accesso e la posta elettronica** , è possibile aggiungere un dominio, scegliendo **Connetti un dominio già** in uso, se si desidera utilizzare questa opportunità per aggiungere un altro dominio all'abbonamento. 
     
-    Se è già stato configurato un dominio, il secondo campo indicherà che continuerà a **utilizzare** \< _il nome_ \> **di dominio per la posta elettronica e l'accesso**.   Se non è stato configurato un dominio con l'abbonamento, sarà necessario **continuare a utilizzare** \< _la società Name.onmicrosoft.com_ \> **per la posta elettronica e l'accesso**.  
+    Se è già stato configurato un dominio, il secondo campo indicherà che **continuerà a utilizzare** \< _il nome_ \> **di dominio per la posta elettronica e l'accesso**.   Se non è stato configurato un dominio con l'abbonamento, sarà necessario **continuare a utilizzare** \< _la società Name.onmicrosoft.com_ \> **per la posta elettronica e l'accesso**.  
     
     Scegliere **Avanti**.
     

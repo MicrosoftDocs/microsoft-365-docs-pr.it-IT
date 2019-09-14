@@ -5,14 +5,13 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 11/7/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 69e8463ce6bfffcd2ee5e8dd0f7f724910b13802
-ms.sourcegitcommit: d137cb1bd67a79d8af84357dc156824830d35aa7
+ms.openlocfilehash: 6c30f9e9a9f45ac8a68c285f4c594b238874f768
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "35924879"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982507"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Supporto per Microsoft Managed Desktop
 
@@ -34,7 +33,7 @@ Il supporto di Microsoft Managed Desktop include:
 Prodotti supportati:
 
 - Windows 10 con Microsoft Defender Advanced Threat Protection 
-- Sottoinsieme della famiglia di prodotti Office 365: Outlook, Word, PowerPoint, Excel, client Skype for business, Microsoft Teams 
+- Queste app di Office 365 ProPlus: Outlook, Word, PowerPoint, Excel, client Skype for business, Microsoft Teams 
 - Microsoft Store for Business 
 - Client di OneDrive for business 
 
@@ -42,8 +41,8 @@ Dettagli del supporto:
 
 - Current: America del Nord, Canada (escluso Québec), Regno Unito, Australia e Nuova Zelanda (24x7x365) 
 - L'inglese è l'unica lingua supportata per le conversazioni telefoniche e di chat con i clienti 
-- Siamo in partnership con, non sostituendo, il supporto tecnico aziendale; Le app line-of-business (LOB), le risorse di rete e così via sono ancora gestite dal supporto tecnico 
-- I dispositivi gestiti Microsoft che risiedono nel gruppo di test e nei dispositivi desktop non gestiti da Microsoft non sono inclusi nell'ambito 
+- Siamo in partnership con, non sostituendo, il supporto tecnico aziendale; le app line-of-business (LOB), le risorse di rete e così via sono ancora gestite dal supporto tecnico 
+- I dispositivi Microsoft Managed Desktop nel gruppo "test" e i dispositivi che non fanno parte di Microsoft Managed Desktop non rientrano nell'ambito 
 
 
 ## <a name="related-topics"></a>Argomenti correlati

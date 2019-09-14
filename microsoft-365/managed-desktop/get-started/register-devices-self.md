@@ -1,62 +1,74 @@
 ---
-title: Registrare i dispositivi in Microsoft Managed Desktop
+title: Registrare i nuovi dispositivi manualmente
 description: Registrare i dispositivi da soli in modo che possano essere gestiti da Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: f1e61cfc7fd1d6d597efbfa2480155e06a3d3eb7
-ms.sourcegitcommit: d6fcd57a0689abbe4ab47489034f52e327f4e5f5
+ms.openlocfilehash: 1e42ebe38cea87b3fedc7ebd7bdb52ceb2f1b2c5
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857299"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981727"
 ---
-# <a name="register-devices-in-microsoft-managed-desktop"></a>Registrare i dispositivi in Microsoft Managed Desktop
+# <a name="register-new-devices-yourself"></a>Registrare i nuovi dispositivi manualmente
 
->[!NOTE]
->In questo argomento vengono illustrati i passaggi da eseguire per la registrazione dei dispositivi. Il processo per i partner è documentato nei [dispositivi di registrazione in Microsoft Managed Desktop for partners](register-devices-partner.md).
+Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi che potrebbero essere già presenti (il che richiede che vengano ristampati). È possibile registrare i dispositivi tramite Microsoft Managed Desktop sul portale di Azure.
 
-Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi che potrebbero essere già presenti (il che richiede che vengano ristampati). È possibile registrare i dispositivi tramite Microsoft Managed Desktop sul portale di Azure o ottenere flessibilità utilizzando un'API.
+> [!NOTE]
+> Utilizzo di un partner per ottenere i dispositivi In caso affermativo, non è necessario preoccuparsi di ottenere gli hash hardware; si occuperà di questo per voi. Assicurarsi che il partner stabilisca una relazione con l'utente al [centro partner](https://partner.microsoft.com/dashboard) e che includa i privilegi di Amministrazione delegati per Azure Active Directory e Office 365. Il partner può ottenere ulteriori informazioni nella [Guida di partner Center](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Una volta che questa relazione è stata stabilita, il partner registrerà semplicemente i dispositivi per conto dell'utente: nessuna ulteriore azione necessaria. Se si desidera visualizzare i dettagli o il proprio partner ha domande, vedere la [procedura per i partner per la registrazione dei dispositivi](register-devices-partner.md). Dopo la registrazione dei dispositivi, è possibile procedere con la [Verifica dell'immagine](#check-the-image) e [la distribuzione dei dispositivi](#deliver-the-device) agli utenti.
 
-## <a name="prepare-to-register-devices"></a>Preparare la registrazione di dispositivi
+## <a name="prepare-to-register-brand-new-devices"></a>Preparare la registrazione di dispositivi nuovi di zecca
 
-Se non sono già stati ottenuti i dispositivi che si desidera utilizzare, controllare i [dispositivi Microsoft Managed Desktop](../service-description/device-list.md) e collaborare con un partner dispositivo per procurarsi dispositivi supportati.
 
-Se si lavora con dispositivi completamente nuovi o si riutilizzano quelli esistenti, per registrarli con Microsoft Managed Desktop, è necessario preparare un **file CSV (delimitato da virgole)**. Questo file deve includere le informazioni seguenti per ogni dispositivo:
+Una volta che i nuovi dispositivi sono disponibili, è necessario eseguire la procedura seguente:
 
->[!NOTE]
->Questo formato è solo per la registrazione in modalità self-service. Il formato dei partner dovrebbe essere utilizzato è documentato nei [dispositivi di registrazione in Microsoft Managed Desktop for partners](register-devices-partner.md).
+1. [Ottenere l'hash hardware per ogni dispositivo.](#obtain-the-hardware-hash)
+2. [Unire i dati hash](#merge-hash-data)
+3. [Registrare i dispositivi in Microsoft Managed Desktop](#register-devices).
+4. [Verificare che l'immagine sia corretta.](#check-the-image)
+5. [Recapito del dispositivo](#deliver-the-device)
 
-Questi valori vengono utilizzati per scopi di visualizzazione e non è necessario corrispondere esattamente alle proprietà del dispositivo.
-- Produttore del dispositivo (ad esempio: SpiralOrbit) 
-- Modello di dispositivo (ad esempio: ContosoABC)
-- Numero di serie del dispositivo
+### <a name="obtain-the-hardware-hash"></a>Ottenere l'hash hardware
 
-L'hash hardware deve essere una corrispondenza esatta.
-- Hash hardware
+Microsoft Managed Desktop identifica ogni dispositivo in modo univoco facendo riferimento al relativo hash hardware. Sono disponibili tre opzioni per ottenere queste informazioni:
 
-Per ottenere l'hash hardware, è possibile richiedere assistenza all'OEM o al partner oppure eseguire la procedura seguente per ogni dispositivo:
+- Rivolgersi al fornitore OEM per il file di registrazione Autopilot, che includerà gli hash hardware.
+- Eseguire uno [script di Windows PowerShell](#powershell-script-method) su ogni dispositivo e raccogliere i risultati in un file.
+- Avviare ogni dispositivo--ma non completare l'esperienza di installazione di Windows--e [raccogliere gli hash su un'unità flash rimovibile](#flash-drive-method).
+
+#### <a name="powershell-script-method"></a>Metodo script di PowerShell
 
 1.  Aprire un prompt di PowerShell con diritti amministrativi.
 2.  Correre`Install-Script -Name Get-MMDRegistrationInfo`
 3.  Correre`powershell -ExecutionPolicy Unrestricted Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 
+#### <a name="flash-drive-method"></a>Metodo dell'unità flash
 
-In alternativa, è possibile eseguire questa procedura in un dispositivo nuovo di zecca (prima di passare per la prima volta tramite OOBE):
-
-1. In un altro dispositivo, inserire un'unità USB.
+1. In un dispositivo diverso da quello che si sta registrando, inserire un'unità USB.
 2. Aprire un prompt di PowerShell con diritti amministrativi.
 3. Correre`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
-4. Attivare il dispositivo di destinazione, ma non avviare l'esperienza di installazione. Se si avvia accidentalmente l'esperienza di installazione, sarà necessario reimpostare o ricreare il dispositivo.
+4. Attivare il dispositivo che si sta registrando, ma *non avviare l'esperienza di installazione*. Se si avvia accidentalmente l'esperienza di installazione, sarà necessario reimpostare o ricreare il dispositivo.
 5. Inserire l'unità USB e quindi premere MAIUSC + F10.
 6. Aprire un prompt di PowerShell con diritti amministrativi e quindi eseguirlo `cd <pathToUsb>`.
 7. Correre`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. Correre`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
-3. Rimuovere l'unità USB e quindi arrestare il dispositivo eseguendo`shutdown -s -t 0`
+9. Rimuovere l'unità USB e quindi arrestare il dispositivo eseguendo`shutdown -s -t 0`
 
 >[!IMPORTANT]
->Non accendere nuovamente il dispositivo di destinazione fino a quando non si è completata la registrazione. 
+>Non accendere il dispositivo che si sta registrando di nuovo fino a quando non si è completata la registrazione. 
+
+
+### <a name="merge-hash-data"></a>Unire i dati hash
+
+Per completare la registrazione, è necessario che i dati dei file CSV siano combinati in un unico file. Di seguito è indicato uno script di PowerShell di esempio per semplificare le operazioni seguenti:
+
+`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+
+### <a name="register-devices"></a>Registrare i dispositivi
+
+Il file CSV deve trovarsi in un formato specifico per la registrazione. Se i dati sono stati raccolti nei passaggi precedenti, il file deve essere già nel formato corretto. Se si ottiene il file da un fornitore, potrebbe essere necessario modificare il formato.
 
 >[!NOTE]
 >Per comodità, è possibile scaricare un [modello](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx) per questo file CSV.
@@ -71,10 +83,9 @@ Il file deve includere le **intestazioni di colonna** identiche a quelle del cam
   ```
 
 >[!NOTE]
->Se si dimentica di modificare i dati di esempio, la registrazione avrà esito negativo.   
+>Se si dimentica di modificare i dati di esempio, la registrazione avrà esito negativo.
 
-
-## <a name="register-devices-by-using-the-azure-portal"></a>Registrare i dispositivi tramite il portale di Azure
+#### <a name="register-devices-by-using-the-azure-portal"></a>Registrare i dispositivi tramite il portale di Azure
 
 Dal portale Microsoft Managed Desktop [Azure](https://aka.ms/mmdportal)selezionare **dispositivi** nel riquadro di spostamento a sinistra. Selezionare **+ registra dispositivi**; verrà aperto il volo:
 
@@ -98,28 +109,35 @@ Eseguire la procedura seguente:
 | Stato | Descrizione |
 |---------------|-------------|
 | Registrazione in sospeso | La registrazione non è ancora stata completata. Controllare in un secondo momento. |
-| Registrazione non riuscita | La registrazione non è stata completata. Per ulteriori informazioni, fare riferimento a [risoluzione dei problemi](register-devices-self.md#troubleshooting) . |
+| Registrazione non riuscita | La registrazione non è stata completata. Per ulteriori informazioni, vedere [risoluzione dei problemi relativi alla registrazione del dispositivo](#troubleshooting-device-registration) . |
 | Pronto per l'utente | La registrazione ha avuto esito positivo e il dispositivo è ora pronto per essere recapitato all'utente finale. Microsoft Managed Desktop li guiderà per la prima volta, quindi non è necessario eseguire ulteriori preparativi. |
 | Attivo | Il dispositivo è stato recapitato all'utente finale ed è stato registrato con il tenant. Questo indica anche che stanno usando regolarmente il dispositivo. |
 | Inattivo | Il dispositivo è stato recapitato all'utente finale ed è stato registrato con il tenant. Tuttavia, non hanno utilizzato il dispositivo di recente (negli ultimi 7 giorni).  | 
 
-
-## <a name="register-devices-by-using-an-api"></a>Registrare i dispositivi tramite un'API
-
-È disponibile un'API REST per consentire una maggiore flessibilità e ripetibilità con frequenti registrazioni di dispositivi separate. Al momento, per utilizzare l'API, chiedere assistenza al contatto Microsoft per partecipare a un'anteprima di questa funzionalità.
-
-
-
-## <a name="troubleshooting"></a>Risoluzione dei problemi
+#### <a name="troubleshooting-device-registration"></a>Risoluzione dei problemi relativi alla registrazione del dispositivo
 
 | Messaggio di errore | Dettagli |
 |---------------|-------------|
 | Dispositivo non trovato | Non è stato possibile registrare il dispositivo perché non è stata trovata una corrispondenza per il produttore, il modello o il numero di serie specificato. Confermare questi valori con il fornitore del dispositivo. |
-| Dispositivo non trovato | Non è stato possibile annullare la registrazione di questo dispositivo perché non esiste nell'organizzazione. Non sono necessarie ulteriori azioni. |
 | Hash hardware non valido | L'hash hardware fornito per il dispositivo non è stato formattato correttamente. Fare doppio check sull'hash hardware e quindi inviare di nuovo. |
 | Dispositivo già registrato | Questo dispositivo è già registrato nell'organizzazione. Non sono necessarie ulteriori azioni. |
 | Dispositivo rivendicato da un'altra organizzazione | Questo dispositivo è già stato rivendicato da un'altra organizzazione. Controllare con il fornitore del dispositivo. |
 | Errore imprevisto | La richiesta non è stata elaborata automaticamente. Contattare il supporto tecnico e fornire l'ID richiesta:<requestId> |
+
+### <a name="check-the-image"></a>Controllare l'immagine
+
+Se il dispositivo proviene da un fornitore di partner di Microsoft Managed Desktop, è necessario che l'immagine sia corretta.
+
+Se si preferisce, è anche possibile applicare l'immagine da soli. Per iniziare, contattare il rappresentante Microsoft che si sta utilizzando e fornirà la posizione e i passaggi per l'applicazione dell'immagine.
+
+### <a name="deliver-the-device"></a>Recapito del dispositivo
+
+> [!IMPORTANT]
+> Prima di distribuire il dispositivo all'utente, verificare di aver ottenuto e applicato le [licenze appropriate](../get-ready/prerequisites.md) per l'utente.
+
+Se vengono applicate tutte le licenze, è possibile [ottenere gli utenti pronti per l'utilizzo dei dispositivi](get-started-devices.md)e quindi l'utente può avviare il dispositivo e procedere con l'esperienza di installazione di Windows.
+
+
 
 
 

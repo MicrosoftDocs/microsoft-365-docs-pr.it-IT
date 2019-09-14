@@ -2,7 +2,7 @@
 title: Distribuire Exchange Online per Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/28/2018
+ms.date: 08/29/2018
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Eseguire il processo di pianificazione, implementazione e guida del valore di Exchange online in Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: c54c80a955d86028ac473857cbdcb8b1a8f272d3
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a13cb36dd313ef3e6763c6c48720bb2b3e935880
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072286"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981877"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Distribuire Exchange Online per Microsoft 365 Enterprise
 
@@ -53,21 +53,6 @@ Un elenco di persone che rappresentano gli aspetti aziendali, tecnici e relativi
 Exchange Online può essere utilizzato per scopi diversi. È necessario capire quali scopi devono essere mappati alle proprie esigenze aziendali sui livelli distinti dell'organizzazione, i gruppi aziendali, i reparti o i singoli team di lavoro e di progetto. È consigliabile rivolgersi a Exchange Online per soddisfare le esigenze di pianificazione e comunicazione individuali e di piccolo gruppo. 
 
 Un modo per visualizzare i vantaggi di Exchange Online consiste nell'esaminare in che modo gli utenti, un team o un v-team interagiscono oggi e quindi individuare uno scenario appropriato che consente di comunicare, pianificare riunioni e collaborare. Tenere presente che [Microsoft teams](teams-workload.md) potrebbe essere una scelta migliore per alcuni degli scenari di collaborazione.
-
-Exchange Online consente i seguenti scenari aziendali strategici per Microsoft 365 Enterprise:
-
-- Collaborare su documenti in tempo reale e non, per semplificare il processo di cooperazione
-- Gestire progetti, attività e scadenze per soddisfare gli obiettivi di business
-- Comprendere le abitudini di lavoro per migliorare la propria influenza e il proprio impatto
-- Comunicare con il team per restare aggiornati, sollecitare input e creare coesione e consenso
-- Archiviare e condividere file all'interno e all'esterno dell'organizzazione per collaborare facilmente nell'organizzazione
-- Lavorare ovunque e in qualsiasi momento in modo sicuro attraverso il proprio dispositivo, per ottenere il massimo risultato pur mantenendo flessibile lo stile di lavoro
-- Proteggere le informazioni e ridurre il rischio di perdita di dati
-- Rilevare e proteggere dalle minacce esterne 
-- Monitorare, segnalare e analizzare le attività per rispondere prontamente per garantire la sicurezza organizzativa
-- Supportare l'organizzazione con privacy e conformità avanzate per soddisfare il regolamento generale sulla protezione dei dati (GDPR)
-
-Per ulteriori informazioni, vedere [Trasformazione digitale tramite Microsoft 365](http://transform.microsoft.com). 
 
 #### <a name="result"></a>Risultato
 Un elenco di scenari di Exchange Online che soddisfano le esigenze dell'organizzazione per la comunicazione, la pianificazione e la collaborazione di breve durata.
