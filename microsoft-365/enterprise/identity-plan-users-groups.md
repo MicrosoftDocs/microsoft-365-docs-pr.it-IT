@@ -3,7 +3,7 @@ title: 'Passaggio 1: pianificazione per utenti e gruppi'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pianificare il set di utenti e gruppi che lavoreranno per l'organizzazione.
-ms.openlocfilehash: 1f879c789e6b531dec7163fa252e0f85459c823d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 05b854c182b6f624cf143ed93920c344391ee416
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072176"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981807"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>Passaggio 1: pianificazione per utenti e gruppi
 
@@ -67,10 +67,10 @@ Inoltre, alcuni servizi cloud possono essere condivisi al di fuori dell'organizz
 
 È possibile utilizzare i gruppi in Azure AD in molteplici modi che semplificano la gestione dell'ambiente cloud. Per esempio, per i gruppi di Azure AD è possibile:
 
-- Usare la licenza basata su gruppo per assegnare automaticamente le licenze per Office 365 ed Enterprise Mobility + Security (EMS) agli account utente appena vengono aggiunti in Azure AD o sincronizzati da Active Directory Domain Services. 
+- Usare le licenze basate su gruppo per assegnare automaticamente le licenze agli account utente appena vengono aggiunti in Azure AD o sincronizzati da Active Directory Domain Services. 
 - Aggiungere account utente a gruppi specifici in modo dinamico in base agli attributi dell'account utente, come per esempio il reparto.  
 - Effettuare automaticamente il provisioning degli utenti per le applicazioni Software as a Service (SaaS) e proteggere l'accesso a tali applicazioni con l'autenticazione a più fattori e altre regole di accesso condizionale.
-- Effettuare il provisioning delle autorizzazioni e dei livelli di accesso per i siti del team di SharePoint Online. I gruppi di Azure AD possono essere utilizzati anche con i criteri di Azure Information Protection per proteggere i file con crittografia e autorizzazioni. 
+- Effettuare il provisioning delle autorizzazioni e dei livelli di accesso per i siti del team di SharePoint Online. I gruppi di Azure AD possono essere usati anche con le etichette di riservatezza o di Azure Information Protection per proteggere i file con crittografia e autorizzazioni. 
 
 ## <a name="results"></a>Risultati
 
@@ -81,7 +81,7 @@ Dopo aver completato questo passaggio, si ottiene quanto segue:
 
 Come checkpoint provvisorio, è possibile vedere i [criteri uscita](identity-exit-criteria.md#crit-identity-user-groups) per questo passaggio.
 
-Dopo avere creato gli utenti e i gruppi di Azure AD, è possibile iniziare ad assegnare le licenze e a usare Exchange Online. Per implementare Exchange Online per gli utenti, vedere [Distribuire Exchange Online per Microsoft 365 Enterprise](exchangeonline-workload.md).
+Dopo avere creato gli utenti e i gruppi di Azure AD, è possibile iniziare ad assegnare le licenze e a usare carichi di lavoro di produttività, ad esempio OneDrive for Business o Exchange Online.
 
 ## <a name="next-step"></a>Passaggio successivo
 

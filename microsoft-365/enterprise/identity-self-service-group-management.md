@@ -3,7 +3,7 @@ title: 'Passaggio 6: Usare i gruppi per facilitare la gestione'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Capire e configurare la gestione dei gruppi self-service di Azure AD.
-ms.openlocfilehash: 67c3a0e45fa253bdaedead03ac1137422ee0f8de
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 97077f5e047f55ea6bf6e532d25d25f4682ff179
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073606"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981777"
 ---
 # <a name="step-6-use-groups-for-easier-management"></a>Passaggio 6: Usare i gruppi per facilitare la gestione
 
@@ -76,12 +76,9 @@ Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-
 
 In questa sezione è possibile configurare gruppi di sicurezza in Azure AD per assegnare automaticamente licenze da un set di abbonamenti a tutti i membri del gruppo. Questa operazione è denominata *licenze basate sui gruppi*. Se un account utente viene aggiunto o rimosso dal gruppo, le licenze per gli abbonamenti del gruppo verranno automaticamente assegnate o rimosse dall'account utente.
 
-Per Microsoft 365 Enterprise è necessario configurare i gruppi di sicurezza di Azure AD per assegnare entrambe queste licenze:
+Per Microsoft 365 Enterprise è necessario configurare i gruppi di sicurezza di Azure AD per assegnare la licenza di Microsoft 365 Enterprise appropriata.
 
-- Office 365 Enterprise E3 o E5
-- Enterprise Mobility + Security (EMS) E3 o E5
-
-Utilizzando i gruppi identificati con il Passaggio 2, cercare quelli che contengono un elenco di account in cui tutti i membri del gruppo dispongono di entrambe le licenze di Office 365 ed EMS. Assicurarsi di avere a disposizione abbastanza licenze per tutti i membri del gruppo. Se le licenze a disposizione sono terminate, i nuovi utenti non potranno ottenerne una fino a quando non saranno di nuovo disponibili.
+Assicurarsi di avere a disposizione abbastanza licenze per tutti i membri del gruppo. Se le licenze a disposizione terminano, i nuovi utenti non potranno ottenerne una finché non ne saranno di nuovo disponibili.
 
 >[!Note]
 >Non è necessario configurare l'*assegnazione delle licenze basate su gruppo* per i gruppi contenenti account Azure business to business (B2B).
@@ -103,6 +100,6 @@ I risultati di questa sezione sono:
 
 Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-exit-criteria.md#crit-identity-group-license) per questa sezione.
 
-## <a name="next-step"></a>Passaggio successivo
-
-[Criteri uscita dell'infrastruttura di identità](identity-exit-criteria.md)
+|||
+|:-------|:-----|
+|![](./media/stepnumbers/Step7.png)| [Configurare la governance delle identità](identity-governance.md) |
