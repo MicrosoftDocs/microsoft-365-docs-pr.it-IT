@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di directory e di rete nell'ambiente.
-ms.openlocfilehash: 8070d08ade5d4b29327ab88bdc36e5f2182c0016
-ms.sourcegitcommit: 03828f954b9dddb265f867fa508178ec0d4a6aeb
+ms.openlocfilehash: 505099607b6c4744af29d00ff04e2535a2c0848e
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35584572"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982727"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Passaggio 2: conformità di directory e rete
 
@@ -73,7 +73,7 @@ Il nuovo modello di servizio include aggiornamenti delle funzionalità per Windo
 
 Il terzo componente da considerare è la personalizzazione. In questo caso è necessario pianificare larghezza di banda di rete per consentire il ripristino di file utente, impostazioni e applicazioni nell'ambito del processo di aggiornamento o sostituzione del PC. Questi elementi, insieme, superano spesso i 20 GB per PC e per alcuni utenti si possono superare i 100 GB.
 
-## <a name="limiting-bandwidth"></a>**Limitazione della larghezza di banda**
+## <a name="limiting-bandwidth"></a>Limitazione della larghezza di banda
 
 Un modo per limitare l'impatto sulla rete del traffico relativo alla distribuzione consiste nel limitare l'impostazione di BITS (Servizio trasferimento intelligente in background) sui client. BITS utilizza una velocità di Bit adattivo (ABR) per modificare la larghezza di banda disponibile per la distribuzione; può essere configurato nel client tramite criteri di gruppo.
 
@@ -87,7 +87,7 @@ Fortunatamente, sono disponibili nuovi strumenti che facilitano la gestione dell
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
 
-## <a name="scavenging-bandwidth"></a>**Scavenging della larghezza di banda**
+## <a name="scavenging-bandwidth"></a>Scavenging della larghezza di banda
 
 LEDBAT (Low Extra Delay Background Transport), supportato in Windows Server 2019 e System Center Configuration Manager (Current Branch), è progettato per ottimizzare il traffico di rete per client Windows.
 
@@ -97,7 +97,7 @@ A differenza della limitazione tradizionale, LEDBAT può utilizzare tutta la lar
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
-## <a name="peer-to-peer-options"></a>**Opzioni peer-to-peer**
+## <a name="peer-to-peer-options"></a>Opzioni peer-to-peer
 
 Le opzioni peer-to-peer vengono sempre più utilizzate nelle migrazioni di Windows 10, per l'imaging del PC, gli aggiornamenti software e la personalizzazione dell'utente. Sono anche utili per facilitare gli aggiornamenti build-to-build dopo la distribuzione iniziale di Windows 10. In questa sezione verranno trattati diversi esempi per aiutare a spostare Windows 10 e il traffico correlato a Office lontano dal centro della rete, riducendo la necessità di approcci classici di limitazione e consentendo ai PC di trovare i file di aggiornamento di cui hanno bisogno sui peer nella loro rete locale piuttosto che scaricandoli da un punto di distribuzione o da Internet.
 

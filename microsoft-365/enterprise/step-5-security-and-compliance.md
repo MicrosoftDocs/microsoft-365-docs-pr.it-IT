@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Considerazioni importanti sulla sicurezza e conformità di Windows e Office.
-ms.openlocfilehash: 791006a6a836f28adb8d71b20e0e887b903752ba
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 472a838c68ed06560f5b81f7854b05b1b2e8eefd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814587"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981757"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Passaggio 5: considerazioni sulla sicurezza e conformità
 
@@ -111,7 +111,7 @@ Inoltre, **[Allegati sicuri](https://docs.microsoft.com/it-IT/office365/security
 
 **[Controllo di applicazioni di Windows Defender](https://docs.microsoft.com/it-IT/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** in Windows 10 opera al di fuori di un elenco di indirizzi consentiti e non consentiti di applicazioni di cui Microsoft ha controllato la sicurezza e tutto viene gestito da criteri di protezione endpoint con Microsoft Intune.
 
-**[Windows Defender Advanced Threat Protection](https://docs.microsoft.com/it-IT/windows/security/threat-protection/windows-defender-atp/overview)** è una piattaforma unificata per la protezione preventiva, il rilevamento post-violazione, l'indagine automatizzata e la risposta. Protegge gli endpoint da minacce informatiche; rileva attacchi avanzati e violazione dei dati, automatizza gli incidenti correlati alla sicurezza e aumenta la sicurezza.
+**[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/it-IT/windows/security/threat-protection/windows-defender-atp/overview)** è una piattaforma unificata per la protezione preventiva, il rilevamento post-violazione, l'indagine automatizzata e la risposta. Protegge gli endpoint da minacce informatiche; rileva attacchi avanzati e violazione dei dati, automatizza gli incidenti correlati alla sicurezza e aumenta la sicurezza.
 
 **[Exploit Guard](https://docs.microsoft.com/it-IT/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)** consente di ridurre la portata dell'attacco per le applicazioni in esecuzione impedendo al malware di entrare in Windows e ai processi non attendibili di accedere alle cartelle protette.
 
