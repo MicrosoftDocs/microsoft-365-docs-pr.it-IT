@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: db0cb3ed472d0f50808339624550f0e98082b737
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: f14016d596f11869fb923106cb174fa5ce255ec3
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698368"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982307"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>Elenco di controllo di preparazione della conformità di Servizi professionali e supporto tecnico Microsoft al GDPR
 
@@ -23,8 +23,8 @@ ms.locfileid: "34698368"
 
 Questo elenco di controllo di preparazione alla conformità offre un modo pratico per accedere alle informazioni necessarie per l'applicazione del GDPR quando si usano Microsoft Professional Services e Servizio Supporto Tecnico Clienti Microsoft. Questo elenco di controllo è destinato ai responsabili del trattamento dei dati personali e comprende i titoli e numeri di riferimento (indicati tra parentesi per ogni argomento) di alcuni controlli per la privacy e sicurezza tratti dagli standard:
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) per i requisiti delle tecniche di sicurezza.
-- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) per i requisiti di gestione della privacy.
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) per le tecniche e i requisiti di gestione delle informazioni sulla privacy.
+- [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) per i requisiti di gestione della sicurezza delle informazioni in generale.
 
 Questa struttura viene usata anche per organizzare la presentazione dei controlli interni che Microsoft Professional Services implementa per supportare il GDPR e che è possibile scaricare dal [Centro protezione del servizio](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 

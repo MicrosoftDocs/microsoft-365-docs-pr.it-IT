@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 2559734241a8b30ec43b26fb0b096faba18138b9
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: 30d6e1566fda4dbc84800bbd4359a689f858f9e4
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778151"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982677"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr"></a>Richieste dell'interessato per il GDPR in Office 365
 
@@ -97,8 +97,8 @@ Nella tabella seguente sono elencate le applicazioni di Office 365 che gli utent
 | ![Icona Excel](media/o365-excel-64x64.png) <br> Excel | ![Icona di Skype for Business](media/o365-skypeforbusiness-64x64.png) <br> Skype for Business |
 | ![Icona di Office Lens](media/o365-lens-64x64.png) <br> Office Lens | ![Icona attività](media/O365-DSR-Doc-Final_image8.png) <br> Attività |
 | ![Icona OneDrive](media/o365-OneDrive-64x64.png) <br> OneDrive for Business |![icona di Teams](media/o365-teams-64x64.png) <br> Teams |
-| ![Icona di OneNote](media/o365-onenote-64x64.png) <br> OneNote| ![Icona To-Do](media/o365-todo-64x64.png) <br> To-Do |
-| ![icona di Outlook](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![Icona del video](media/O365-DSR-Doc-Final_image14.png) <br> Video |
+| ![Icona di OneNote](media/o365-onenote-64x64.png) <br> OneNote| ![Icona Attività](media/o365-todo-64x64.png) <br> Da fare |
+| ![Icona di Outlook](media/o365-outlook-64x64.png) <br> Outlook/Exchange | ![Icona del video](media/O365-DSR-Doc-Final_image14.png) <br> Video |
 | ![Icona persone](media/O365-DSR-Doc-Final_image15.png) <br> Persone | ![Icona Visio](media/o365-visio-64x64.png) <br> Visio |
 | ![Icona PowerPoint](media/o365-powerpoint-64x64.png) <br> PowerPoint | ![Icona Word](media/o365-word-64x64.png) <br> Word
 ||
@@ -256,7 +256,7 @@ Le sezioni seguenti descrivono aspetti da tenere in considerazione quando si cer
 - [Office Lens](#office-lens)
 - [Impostazioni degli ambienti OneDrive for Business e SharePoint](#onedrive-for-business-and-sharepoint-online-experience-settings)
 - [Microsoft Teams per l'istruzione](#microsoft-teams-for-education)
-- [Microsoft To-Do](#microsoft-to-do)
+- [Microsoft To Do](#microsoft-to-do)
 - [Skype for Business](#skype-for-business)
 
 #### <a name="office-lens"></a>Office Lens
@@ -362,9 +362,9 @@ Ecco le indicazioni specifiche per eseguire la ricerca di un blocco appunti dell
    ```
 6.  Eseguire di nuovo la Ricerca contenuto. Nei risultati della ricerca dovrebbero essere inclusi tutti i file di OneNote per il blocco appunti per la classe del team di classe.
 
-#### <a name="microsoft-to-do"></a>Microsoft To-Do
+#### <a name="microsoft-to-do"></a>Microsoft To Do
 
-Le cose da fare (denominate *attività* salvate in *elenchi attività*) in Microsoft To-Do vengono salvate come attività nella cassetta postale di Exchange Online di un utente. Ciò significa che è possibile usare lo strumento Ricerca contenuto per cercare, accedere, eliminare ed esportare le attività. Per altre informazioni, vedere [Configurare Microsoft To-Do](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620).
+Le attività (denominate *to-do* e che vengono salvate in *elenchi di attività*) in Microsoft To Do vengono salvate come attività nella cassetta postale di Exchange Online di un utente. Ciò significa che è possibile usare lo strumento ricerca contenuto per cercare, accedere, eliminare ed esportare le attività. Per altre informazioni, vedere [Configurare Microsoft To Do](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620).
 
 #### <a name="skype-for-business"></a>Skype for Business
 
@@ -456,11 +456,11 @@ Per alcune richieste di esportazione DSR, è consigliabile consentire agli inter
 
 ## <a name="deleting-personal-data"></a>Eliminazione dei dati personali
 
-Il "diritto di cancellazione" dei dati personali dai dati dei clienti di un'organizzazione è un fattore di protezione chiave nel GDPR. La rimozione dei dati personali include l'eliminazione di interi documenti o file o l'eliminazione di dati specifici all'interno di un documento o di un file (che si rivela essere un'azione e un processo analogo a quelli descritti nella sezione di Rettifica di questa guida).
+Il "diritto alla cancellazione" con la rimozione dei dati personali dai dati dei clienti di un'organizzazione è una delle principali protezioni nel GDPR. La rimozione dei dati personali include l'eliminazione di interi documenti o file o l'eliminazione di dati specifici all'interno di un documento o di un file (che si rivela essere un'azione e un processo analogo a quelli descritti nella sezione di Rettifica di questa guida).
 
 Durante l'analisi o la preparazione all'eliminazione di dati personali in risposta a una richiesta DSR, ecco alcuni aspetti importanti per capire come funziona l'eliminazione (o la conservazione) dei dati in Office 365.
 
-- Differenza tra eliminazione temporanea ed eliminazione definitiva - Nei servizi di Office 365 come Exchange Online, SharePoint Online e OneDrive for Business esistono i concetti di *eliminazione temporanea* e di *eliminazione definitiva*, che sono correlati alla recuperabilità di un elemento eliminato (in genere per un periodo limitato) prima che venga rimosso dal cloud Microsoft senza possibilità di ripristinarlo. In questo contesto, un elemento eliminato temporaneamente può essere recuperato da un utente e/o da un amministratore per un periodo di tempo limitato prima dell'eliminazione definitiva. Quando un elemento viene eliminato in modo definitivo, viene contrassegnato per la rimozione permanente e ripulito quando viene elaborato dal servizio di Office 365 corrispondente. Di seguito viene descritto il funzionamento dell'eliminazione temporanea e definitiva per gli elementi nelle cassette postali e nei siti, a prescindere che sia il proprietario dei dati o un amministratore a eseguire l'operazione:
+- **Differenza tra eliminazione temporanea ed eliminazione definitiva:** nei servizi di Office 365 come Exchange Online, SharePoint Online e OneDrive for Business esistono i concetti di* eliminazione temporanea* e di *eliminazione definitiva*, che sono correlati alla recuperabilità di un elemento eliminato (in genere per un periodo limitato) prima che venga rimosso dal cloud Microsoft senza possibilità di ripristinarlo. In questo contesto, un elemento eliminato temporaneamente può essere recuperato da un utente e/o da un amministratore per un periodo di tempo limitato prima dell'eliminazione definitiva. Quando un elemento viene eliminato in modo definitivo, viene contrassegnato per la rimozione permanente e ripulito quando viene elaborato dal servizio di Office 365 corrispondente. Di seguito viene descritto il funzionamento dell'eliminazione temporanea e definitiva per gli elementi nelle cassette postali e nei siti, a prescindere che sia il proprietario dei dati o un amministratore a eseguire l'operazione:
 
     - **Cassette postali:** un elemento viene eliminato temporaneamente quando viene eliminato dalla cartella Posta eliminata o quando un utente lo elimina premendo **MAIUSC+CANC**. Quando un elemento viene eliminato temporaneamente, viene spostato nella cartella Elementi ripristinabili della cassetta postale. L'utente ha la possibilità di recuperare l'elemento finché il periodo di conservazione dell'elemento eliminato non scade. In Office 365, il periodo di conservazione degli elementi eliminati è di 14 giorni, ma può essere esteso fino a 30 giorni da un amministratore. Alla scadenza del periodo di conservazione, l'elemento viene eliminato definitivamente e spostato in una cartella nascosta, denominata cartella delle *Ripuliture*. L'elemento verrà eliminato definitivamente (ripulito) da Office 365 alla successiva elaborazione della cassetta postale. Le cassette postali vengono elaborate una volta ogni sette giorni.
 
@@ -469,7 +469,7 @@ Durante l'analisi o la preparazione all'eliminazione di dati personali in rispos
 > [!NOTE]
 > La comprensione delle azioni che determinano l'eliminazione temporanea o definitiva di un elemento aiuta a stabilire come eliminare i dati conformemente ai requisiti GDPR quando si risponde a una richiesta di eliminazione.
 
-- * * Disposizioni legali e criteri di conservazione — in Office 365, un "blocco" può essere applicato a cassette postali e siti. In breve, questo significa che nulla è stato rimosso definitivamente (eliminazione definitiva), se una cassetta postale o un sito è bloccato, fino alla scadenza del periodo di conservazione di un elemento o finché il blocco non viene rimosso. Questo aspetto è importante nel contesto dell'eliminazione del contenuto del cliente in risposta a un DSR: se un elemento è stato eliminato in modo definitivo da un percorso di contenuto bloccato, l'elemento non viene rimosso definitivamente da Office 365. Ciò significa che potrebbe essere recuperato da un amministratore IT. Se l'organizzazione ha un requisito o criteri secondo cui i dati devono essere eliminati in modo definitivo e non possono essere recuperati in Office 365 in risposta al DSR, il blocco deve essere rimosso da una cassetta postale o un sito per eliminare definitivamente i dati in Office 365. È molto probabile che le linee guida dell'organizzazione per rispondere ai DSR abbiano un processo per determinare se una specifica richiesta di eliminazione DSR o un blocco legale ha la precedenza. Se un blocco viene rimosso al fine di eliminare degli elementi, è possibile reimplementarlo dopo l'eliminazione dell'elemento.
+- **Disposizioni legali e criteri di conservazione:** in Office 365, un "blocco" può essere applicato a cassette postali e siti. In breve, questo significa che nulla è stato rimosso definitivamente (eliminazione definitiva), se una cassetta postale o un sito è bloccato, fino alla scadenza del periodo di conservazione di un elemento o finché il blocco non viene rimosso. Questo aspetto è importante nel contesto dell'eliminazione del contenuto del cliente in risposta a un DSR: se un elemento è stato eliminato in modo definitivo da un percorso di contenuto bloccato, l'elemento non viene rimosso definitivamente da Office 365. Ciò significa che potrebbe essere recuperato da un amministratore IT. Se l'organizzazione ha un requisito o criteri secondo cui i dati devono essere eliminati in modo definitivo e non possono essere recuperati in Office 365 in risposta al DSR, il blocco deve essere rimosso da una cassetta postale o un sito per eliminare definitivamente i dati in Office 365. È molto probabile che le linee guida dell'organizzazione per rispondere ai DSR abbiano un processo per determinare se una specifica richiesta di eliminazione DSR o un blocco legale ha la precedenza. Se un blocco viene rimosso al fine di eliminare degli elementi, è possibile reimplementarlo dopo l'eliminazione dell'elemento.
 
 ### <a name="deleting-documents-in-sharepoint-online-and-onedrive-for-business"></a>Eliminazione di documenti in SharePoint Online e OneDrive for Business
 
@@ -1402,7 +1402,7 @@ Per i dati accessibili tramite le impostazioni del profilo utente, l'utente può
 - Profilo utente
 
     - Se l'utente ha un'identità in Yammer, dispone del controllo completo del profilo. Per informazioni su come visualizzare e modificare il profilo, vedere [Change my Yammer profile and settings](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851) (Modificare il profilo e le impostazioni personali in Yammer).
-    - Se l'utente ha un'identità di Office 365, il profilo utente di Yammer viene estratto automaticamente da Office 365, che ottiene le informazioni del profilo da Azure Active Directory (AAD). Gli utenti di Yammer possono modificare temporaneamente i profili in Yammer, ma le modifiche vengono sovrascritte quando è presente una modifica in AAD, quindi la posizione migliore per visualizzare e modificare i dati della directory è AAD. È necessario che l'utente chieda che AAD venga aggiornato. Per altre informazioni, vedere Gestire gli utenti di Yammer nell'intero ciclo di vita da Office 365 e Aggiungere o modificare le informazioni sul profilo di un utente in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
+    - Se l'utente ha un'identità di Office 365, il profilo utente di Yammer viene estratto automaticamente da Office 365, che ottiene le informazioni del profilo da Azure Active Directory (AAD). Gli utenti di Yammer possono modificare temporaneamente i profili in Yammer, ma le modifiche vengono sovrascritte quando è presente una modifica in AAD, quindi la posizione migliore per visualizzare e modificare i dati della directory è AAD. È necessario che l'utente chieda che AAD venga aggiornato. Per altre informazioni, vedere [Gestire gli utenti di Yammer nell'intero ciclo di vita da Office 365](https://support.office.com/article/Manage-Yammer-users-across-their-life-cycle-from-Office-365-6c4c8fff-6444-404a-bffc-f9da0bcc3039) e [Aggiungere o modificare le informazioni sul profilo di un utente in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
 
 - Impostazioni utente
 

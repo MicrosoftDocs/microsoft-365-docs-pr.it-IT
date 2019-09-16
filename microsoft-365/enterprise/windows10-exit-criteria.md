@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise per Windows 10 Enterprise.
-ms.openlocfilehash: 29ab2373321485d8de892a29132d1af07a318b7b
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 289d20b87d9cefcc63a060fb0dc526cf7a45b071
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074106"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982637"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Fase 3: criteri uscita dell'infrastruttura Windows 10 Enterprise
 
@@ -111,11 +111,11 @@ Windows Defender Exploit Guard è stato distribuito per proteggere i dispositivi
 Se necessario, il [Passaggio 5](windows10-enable-security-features.md#windows10-sec-eg) può aiutare a soddisfare questo requisito.
 
 <a name="crit-windows10-step5c"></a>
-## <a name="required-you-are-using-windows-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Obbligatorio: utilizzo di Windows Defender Advanced Threat Protection (solo Microsoft 365 Enterprise E5)
+## <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Obbligatorio: utilizzo di Microsoft Defender Advanced Threat Protection (solo Microsoft 365 Enterprise E5)
 
-Windows Defender Advanced Threat Protection Defender (ATP) è stato distribuito per rilevare, investigare e rispondere alle minacce avanzate contro la rete e i dispositivi che eseguono Windows 10 Enterprise. 
+Microsoft Defender Advanced Threat Protection Defender (ATP) è stato distribuito per rilevare, investigare e rispondere alle minacce avanzate contro la rete e i dispositivi che eseguono Windows 10 Enterprise. 
 
-Opzionalmente, Windows Defender ATP viene integrato con altri strumenti per espandere le proprie capacità.
+In modo facoltativo, Microsoft Defender ATP viene integrato con altri strumenti per espandere le proprie capacità.
 
 Se necessario, il [Passaggio 5](windows10-enable-security-features.md#windows10-sec-atp) può aiutare a soddisfare questo requisito.
 

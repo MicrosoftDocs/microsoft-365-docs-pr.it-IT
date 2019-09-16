@@ -2,7 +2,7 @@
 title: Carichi di lavoro e scenari di Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2019
+ms.date: 08/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Caricare gli utenti dell’organizzazione per la produttività dei carichi di lavoro di Microsoft 365 Enterprise.
-ms.openlocfilehash: 3e7e030e3684606a906a57856d08ea25c7dc2001
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 730826f388364d1232f1750059002d111279c1be
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297866"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981937"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Carichi di lavoro e scenari di Microsoft 365 Enterprise
 
@@ -34,19 +34,20 @@ Gli scenari usano le funzionalità e i servizi di Microsoft 365 Enterprise in mo
 - Soggetti alle normative internazionali.
 - I dati più importanti per l'organizzazione, ad esempio segreti finanziari o informazioni sulle risorse umane e strategia dell'organizzazione.
 
-Per proteggere questi dati da minacce interne ed esterne, leggere le istruzioni nei [siti Microsoft Teams e SharePoint Online per dati estremamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md). Questo scenario rappresenta una guida per configurare un sito di SharePoint Online o un team di Microsoft Teams per archiviare in modo sicuro i dati più importanti.
+Per proteggere questi dati da minacce interne ed esterne, consultare [Siti Microsoft Teams e SharePoint Online per dati estremamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md). Questo scenario rappresenta una guida per configurare un sito di SharePoint Online o un team di Microsoft Teams per archiviare in modo sicuro i dati più importanti.
 
 Ecco i carichi di lavoro e gli scenari della guida di distribuzione generale di Microsoft 365 Enterprise:
 
 ![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
-Per altri scenari, vedere la [raccolta di produttività Microsoft 365](https://www.microsoft.com/microsoft-365/success/). In questa pagina Web digitare una stringa di ricerca o fare **clic su** filtro in base a e specificare industria, ruoli (reparti) e prodotti in Microsoft 365.
+Per altri scenari, vedere la [raccolta di produttività Microsoft 365](https://www.microsoft.com/microsoft-365/success/). 
 
-Dai risultati, fare clic su una scheda per vedere i passaggi da eseguire.
+1. In questa pagina Web digitare una stringa di ricerca o fare **clic su** filtro in base a e specificare industria, ruoli (reparti) e prodotti in Microsoft 365.
+2. Dai risultati, fare clic su una scheda per vedere i passaggi da eseguire.
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Prerequisiti dell’infrastruttura di base
 
-*Idealmente*, è necessario distribuire i carichi di lavoro e gli scenari dopo aver configurato tutte le fasi [dell'infrastruttura di base](deploy-foundation-infrastructure.md). Per garantire che tutti i livelli sottostanti siano in posizione per fornire integrazione, sicurezza e la migliore esperienza per gli utenti e i loro dispositivi.
+*Idealmente*, è necessario distribuire i carichi di lavoro e gli scenari dopo aver configurato tutte le fasi [dell'infrastruttura di base](deploy-foundation-infrastructure.md). Per garantire che tutti i livelli sottostanti dell’infrastruttura di base siano in posizione per fornire integrazione, sicurezza e la migliore esperienza per gli utenti e i loro dispositivi.
 
 | Fase | Risultato |
 |:-------|:-----|
@@ -57,14 +58,14 @@ Dai risultati, fare clic su una scheda per vedere i passaggi da eseguire.
 | Gestione dei dispositivi mobili | I dispositivi possono essere registrati e gestiti. |
 | Protezione delle informazioni | Le funzionalità di sicurezza di Office 365 sono abilitate e la riservatezza o le etichette di Azure Information Protection sono pronte per proteggere i documenti. |
 
-Tenere presente che questa soluzione è ideale e può richiedere del tempo per essere pianificata, configurata, testata e verificata, in particolare in organizzazioni di grandi dimensioni con l'infrastruttura esistente e più sedi. Non è necessario mettere tutti i livelli in posizione in tutte le sedi per ottenere più velocemente il valore di business da Microsoft 365 Enterprise. 
+Tenere presente che questa soluzione è ideale e può richiedere del tempo per essere pianificata, configurata, testata e verificata, in particolare in organizzazioni di grandi dimensioni con l'infrastruttura esistente e più sedi. Non è necessario completare queste in tutte le sedi per ottenere più velocemente il valore di business da Microsoft 365 Enterprise. 
 
 Ecco alcuni dei carichi di lavoro abituali per effettuare immediatamente la distribuzione: 
 
-- Dopo che il livello **Identità** dell'infrastruttura di base è stata implementata per gli utenti, molte organizzazioni distribuiscono:
+- Dopo che la fase **Identità** dell'infrastruttura di base è stata implementata per gli utenti, molte organizzazioni distribuiscono:
   - [Office 365 ProPlus](office365proplus-infrastructure.md) associato a [OneDrive for Business](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Office 365 ProPlus offre la sicurezza dell'autenticazione moderna e l'esperienza utente dell'ultima versione del client Microsoft Office. La migrazione dei file personali dell'utente a OneDrive for Business riduce l’infrastruttura e la necessità di supportare le home directory e le unità.
   - [Exchange Online](exchangeonline-workload.md) in modo che gli utenti possano iniziare a usare la posta elettronica basata sul cloud.
-- Se non si ha l'esigenza immediata di archiviare asset digitali altamente regolamentati nel cloud, distribuire [Microsoft Teams](teams-workload.md) e [SharePoint Online](sharepoint-online-onedrive-workload.md) per gli utenti prima del livello **Information protection**.
+- Se non si ha l'esigenza immediata di archiviare asset digitali altamente regolamentati nel cloud, distribuire [Microsoft Teams](teams-workload.md) e [SharePoint Online](sharepoint-online-onedrive-workload.md) per gli utenti prima della fase **Information protection**.
 
 È necessario decidere come è meglio ordinare e distribuire la configurazione delle fasi dei prerequisiti dell’infrastruttura di base per soddisfare le esigenze aziendali.
 
@@ -74,7 +75,5 @@ Ecco alcuni dei carichi di lavoro abituali per effettuare immediatamente la dist
 
 La fase **Identità** garantisce che l’identità basata sul cloud, solo cloud o sincronizzata con Active Directory Domain Services (AD DS) locali, contenga gli account di utente e computer e i gruppi per la gestione di accesso e autenticazione. L’autenticazione avanzata per tutti gli utenti, insieme alla protezione avanzata degli account di amministratore, è obbligatoria prima di immettere gli asset digitali dell'organizzazione nel cloud Microsoft 365.
 
-Sebbene fondamentale e molto importante per le prestazioni complessive, l'implementazione della fase **Networking** sulla rete può essere in corso durante il caricamento degli utenti sui carichi di lavoro, con la consapevolezza che l’applicazione Microsoft 365 e le prestazioni del servizio miglioreranno nel tempo.
-
-Ciò vale soprattutto per le organizzazioni aziendali con più sedi e una combinazione di dispositivi periferici e connessioni Internet.
+Sebbene fondamentale e molto importante per le prestazioni complessive, l'implementazione della fase **Networking** può essere in corso durante il caricamento degli utenti sui carichi di lavoro, con la consapevolezza che l’applicazione Microsoft 365 e le prestazioni del servizio miglioreranno nel tempo. Ciò vale soprattutto per le organizzazioni aziendali con più sedi e una combinazione di dispositivi periferici e connessioni Internet.
 

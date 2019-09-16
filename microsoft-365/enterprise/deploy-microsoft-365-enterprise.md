@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le risorse a disposizione per la distribuzione di Microsoft 365 Enterprise nell'organizzazione.
-ms.openlocfilehash: 2f527c8d3afe2d3d0690661c6f01efefd5b0d435
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297906"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982072"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Distribuire Microsoft 365 Enterprise
 
@@ -85,15 +85,15 @@ Per ulteriori informazioni, vedere [Guide al lab di test di Microsoft 365 Enterp
 
 ![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-## <a name="transition-your-entire-organization"></a>Transizione all'intera organizzazione
+## <a name="transition-your-entire-organization"></a>Transizione dell’intera organizzazione
 
-Per avere un quadro più completo su come spostare l'intera organizzazione ai prodotti e servizi in Microsoft 365 Enterprise, scaricare il [poster di transizione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+Per avere un quadro più completo su come spostare l'intera organizzazione ai prodotti e servizi di Microsoft 365 Enterprise, consultare [Transizione dell’organizzazione a Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![Poster della transizione dell’organizzazione a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Questo poster con due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e accedere alle indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 Enterprise. Include i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
 
-È possibile stampare il poster in formato lettera, legale o tabloid (11 x 17).
+È possibile [scaricare il poster di transizione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="how-did-others-do-it"></a>Come hanno fatto altri utenti?
 
@@ -115,7 +115,7 @@ La definizione di una cultura digitale rappresenta la maggiore priorità per ogn
 
 Nel contempo, le funzionalità di sicurezza e l'integrazione dei prodotti sono utili per semplificare le esigenze di gestione e ridurre al minimo il costo totale di proprietà nel ciclo di vita IT. 
 
-Informazioni come Core Services Engineering and Operations (in precedenza Microsoft IT) [hanno pianificato e distribuito una fondazione](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365) che supporta le applicazioni e i servizi che liberano la creatività e favoriscono il lavoro in un ambiente sicuro.
+Informazioni come Core Services Engineering and Operations (in precedenza Microsoft IT) [hanno pianificato e distribuito una fondazione](https://www.microsoft.com/it-IT/itshowcase/deploying-and-managing-microsoft-365) che supporta le applicazioni e i servizi che liberano la creatività e favoriscono il lavoro in un ambiente sicuro.
 
 > [!Note]
 > Questa pagina web è disponibile solo in inglese.

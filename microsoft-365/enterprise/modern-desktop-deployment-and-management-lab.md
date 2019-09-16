@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: a19c9d2de0cb4cb5436a8c3364bab0e24bb866ee
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.openlocfilehash: 045f0e0fd2375c4342896668f69ce1305f4a1d43
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35830504"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981697"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
@@ -96,7 +96,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
   - Windows Defender Application Guard
   - Windows Defender Exploit Guard
   - Controllo di applicazioni di Windows Defender
-  - Windows Defender Advanced Threat Protection
+  - Microsoft Defender Advanced Threat Protection
 
 ### <a name="os-deployment-and-feature-updates"></a>**Distribuzione del sistema operativo e aggiornamenti delle funzionalità**
 
@@ -118,7 +118,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**Scaricare il Lab Kit di distribuzione di Windows e Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*Per scaricare questi contenuti usufruendo di un'esperienza di download ottimale, usare un'ampia larghezza di banda e attendere 30-45 minuti il completamento del provisioning automatico. Per l'ambiente lab sono richiesti almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, sono consigliati 32 GB di memoria disponibili. Il lab scade il 27 agosto 2019; prima di tale data, ne verrà pubblicata una nuova versione.*
+*Per scaricare questi contenuti usufruendo di un'esperienza di download ottimale, usare un'ampia larghezza di banda e attendere 30-45 minuti il completamento del provisioning automatico. Per l'ambiente lab sono richiesti almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, sono consigliati 32 GB di memoria disponibili. Il lab scade il 16 novembre 2019; prima di tale data, ne verrà pubblicata una nuova versione.*
 
 ## <a name="additional-guidance"></a>**Indicazioni aggiuntive**
 

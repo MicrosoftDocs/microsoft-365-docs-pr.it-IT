@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: GDPR
-ms.openlocfilehash: 7fbe7f277825905326a1234249e5bccf7082658d
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.openlocfilehash: 1cd1a73395a7bfeb190f8a31589c27bb95312484
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698318"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982337"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 e notifica di violazione secondo l'RGPD
 
@@ -73,10 +73,10 @@ Il team di Security Response collabora con Microsoft Dynamics 365 Security Engin
 
 - **Falso positivo:** un evento che soddisfa i criteri di rilevamento ma che risulta essere parte di una normale pratica aziendale e può aver bisogno di essere filtrato. Il team del servizio identificherà la causa principale dei falsi positivi e li risolverà in modo sistematico sfruttando le fonti di rilevamento e <span id="_Toc350859432" class="anchor"></span>ottimizzandole se necessario.
 - **Incidente di sicurezza:** un accesso illecito o non autorizzati ai dati del cliente o ai dati di supporto conservati nei dispositivi o nelle sedi Microsoft che ha provocato la perdita, la divulgazione o l'alterazione dei dati del cliente o dei dati di supporto.
-- **Incidenti di sicurezza segnalabili dal cliente (CRSI):** un accesso o un utilizzo illecito o non autorizzato dei sistemi, dei dispositivi o delle sedi Microsoft che ha provocato la divulgazione, la modifica o la perdita dei dati del cliente.
-- **Incidente di privacy:** un tipo di incidente di sicurezza che coinvolge i dati personali. Le procedure di gestione non sono diverse da altri incidenti di sicurezza.
+- **Incidenti di sicurezza/privacy segnalabili dal cliente (CRSPI):** un accesso o un utilizzo illecito o non autorizzato dei sistemi, dei dispositivi o delle sedi Microsoft che ha provocato la divulgazione, la modifica o la perdita dei dati del cliente.
+- **Incidente di privacy**: un sottotipo di incidente di sicurezza che coinvolge i dati personali. Le procedure di gestione non sono diverse da un evento di sicurezza.
 
-Per dichiarare un CRSI, Microsoft deve determinare che l'accesso non autorizzato ai dati dei clienti è o sia stato molto probabile che si sia verificato e/o che sia presente un impegno giuridico o contrattuale che deve essere comportata. È preferibile, ma non obbligatorio, che si conoscano uno specifico impatto sul cliente, l'accesso alle risorse e i passaggi di ripristino. Un incidente viene generalmente dichiarato CRSI dopo la conclusione della fase diagnostica di un incidente di sicurezza. Tuttavia, la dichiarazione può avvenire in qualsiasi momento, in modo che tutte le informazioni pertinenti siano disponibili. Il responsabile per gli incidenti di sicurezza deve trovare delle prove oltre ogni ragionevole dubbio che si sia verificato un evento segnalabile per avviare l'esecuzione del processo di notifica sull'incidente del cliente.
+Per dichiarare un CRSPI, Microsoft deve determinare che l'accesso non autorizzato ai dati dei clienti è o sia stato molto probabile che si sia verificato e/o che sia presente un impegno giuridico o contrattuale che deve essere comportata. È preferibile, ma non obbligatorio, che si conoscano uno specifico impatto sul cliente, l'accesso alle risorse e i passaggi di ripristino. Un incidente viene generalmente dichiarato CRSPI dopo la conclusione della fase diagnostica di un incidente di sicurezza. Tuttavia, la dichiarazione può avvenire in qualsiasi momento, in modo che tutte le informazioni pertinenti siano disponibili. Il responsabile per gli incidenti di sicurezza deve trovare delle prove oltre ogni ragionevole dubbio che si sia verificato un evento segnalabile per avviare l'esecuzione del processo di notifica sull'incidente del cliente.
 
 Durante l'indagine, il team di intervento per la sicurezza lavora a stretto contatto con i consulenti legali globali per contribuire a garantire che le analisi forensi siano eseguite in conformità con gli obblighi legali e gli impegni nei confronti dei clienti. Esistono anche limitazioni significative sulla visualizzazione e gestione dei dati del sistema e del cliente in vari ambienti operativi. I dati sensibili o riservati, così come i dati del cliente, non vengono trasferiti fuori dall'ambiente di produzione senza un'approvazione scritta esplicita da parte del responsabile dell'incidente registrato nel ticket dell'incidente corrispondente.
 
@@ -88,7 +88,7 @@ Microsoft completa anche una relazione finale interna per violazioni dei dati. C
 
 Microsoft Dynamics 365 notifica le violazioni dei dati ai clienti e agli organismi di certificazione, come richiesto. Microsoft si basa su una forte compartimentazione interna nel funzionamento di Dynamics 365. Anche i registri del flusso di dati sono solidi. A vantaggio di questa struttura, la maggior parte degli incidenti può essere indirizzata a clienti specifici. L'obiettivo è fornire ai clienti interessati un avviso accurato, attuabile e tempestivo nel momento in cui i dati vengono violati.
 
-Dopo la dichiarazione di un incidente di sicurezza segnalabile dal cliente, il processo di notifica viene eseguito il più rapidamente possibile, tenendo in considerazione i rischi che ciò comporta alla sicurezza. Generalmente, il processo di progettazione delle notifiche avviene mentre è in corso l'indagine sull'incidente. Le notifiche al cliente sono consegnate con tempestività dal momento in cui viene dichiarata una violazione, *salvo* nelle seguenti circostanze:
+Il processo di notifica nel momento in cui viene dichiarato un CRSPI si verificherà nel modo più rapido possibile, pur considerando i rischi per la sicurezza del passaggio rapido. In generale, il processo di stesura delle notifiche avviene quando l'indagine sull'incidente è in corso. Le notifiche ai cliente vengono recapitate prontamente dall’identificazione di una violazione *tranne* nei casi seguenti:
 
 - Microsoft ritiene che l'atto di esecuzione di una notifica aumenti il rischio per gli altri clienti. Ad esempio, l'atto di notifica può allertare un avversario causando l'impossibilità di porvi rimedio.
 - Altre circostanze insolite o estreme esaminate dall'ufficio legale di Microsoft e dall'Executive Incident Manager.
