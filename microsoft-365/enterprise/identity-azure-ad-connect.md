@@ -3,7 +3,7 @@ title: "Passaggio 3: configurare l'identità ibrida"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/25/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,13 +12,13 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Informazioni sulle opzioni di identità e su come configurare Azure AD Connect per sincronizzare l'ambiente Active Directory Domain Services locale con Azure AD.
-ms.openlocfilehash: 0b494047f984d9fd830e840d2d1f4fafa06fe8ab
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Informazioni sulle opzioni di identità e su come configurare Azure AD Connect per sincronizzare l'ambiente Active Directory Domain Services (AD DS) locale con Azure AD.
+ms.openlocfilehash: ff4fb889bcd45028be9555342d5fc19c8f5ff421
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073826"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982007"
 ---
 # <a name="step-3-configure-hybrid-identity"></a>Passaggio 3: configurare l'identità ibrida
 
@@ -29,7 +29,7 @@ ms.locfileid: "34073826"
 
 *Questo passaggio è obbligatorio per gli ambienti ibridi e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-In questa sezione si sincronizzerà l'ambiente Active Directory Domain Services locale (AD DS) con il tenant di Azure Active Directory (Azure AD) usato dagli abbonamenti a Office 365 ed Enterprise Mobility + Security (EMS).
+In questa sezione si sincronizzerà l'ambiente Active Directory Domain Services (AD DS) locale con il tenant di Azure Active Directory (Azure AD) usato da Office 365, Microsoft Intune e altri servizi basati sul cloud inclusi in Microsoft 365 Enterprise.
 
 Azure AD Connect è lo strumento Microsoft supportato che guida gli amministratori nel processo di sincronizzazione delle sole identità realmente necessarie degli ambienti Azure AD DS con una o più foreste con il proprio tenant di Azure AD. La figura seguente mostra il processo di base per la sincronizzazione di Azure AD Connect.
 
@@ -41,13 +41,17 @@ Azure AD Connect è lo strumento Microsoft supportato che guida gli amministrato
 La prima decisione relativa alla soluzione delle identità ibride, riguarda i requisiti di autenticazione. Le opzioni sono le seguenti:
 
 - Con l'**autenticazione gestita**, Azure AD gestisce il processo di autenticazione per l'accesso utente. Esistono due metodi di autenticazione gestita: 
-    - **Sincronizzazione dell'hash delle password** [Opzione consigliata e obbligatoria per alcune funzionalità Premium]. Questo è il modo più semplice per abilitare l'autenticazione per gli oggetti directory locali in Azure AD. Azure AD Connect estrae la password con hash da Active Directory Domain Services, esegue ulteriori procedure di sicurezza sulla password e la salva in Azure AD. Per altre informazioni, vedere [Implementare la sincronizzazione dell'hash delle password con il servizio di sincronizzazione Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-synchronization).
+    - **Sincronizzazione dell'hash delle password** [Opzione consigliata e obbligatoria per alcune funzionalità Premium]. Questo è il modo più semplice per abilitare l'autenticazione per gli oggetti directory locali in Azure AD. Azure AD Connect estrae la password con hash da Active Directory Domain Services, esegue ulteriori procedure di sicurezza sulla password e la salva in Azure AD. Per altre informazioni, vedere [Implementare la sincronizzazione dell'hash delle password con il servizio di sincronizzazione Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
     - L'**autenticazione pass-through di Azure AD** offre una soluzione di convalida delle password semplice per i servizi basati su Azure AD. Usa un agente in esecuzione in uno o più server locali per convalidare le autenticazioni utente direttamente con Active Directory Domain Services locale. Per altre informazioni, vedere [Accesso utente con l'autenticazione pass-through di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
 - Con l'**autenticazione federata**, il processo di autenticazione viene reindirizzato a un altro provider di identità tramite un server federativo di identità, come Active Directory Federation Services (ADFS), per l'accesso utente. Il provider di identità può fornire altri metodi di autenticazione, ad esempio l'autenticazione basata su una smart card. Per ulteriori informazioni, vedere [Scegliere il giusto metodo di autenticazione per la soluzione delle identità ibride di Azure Active Directory](https://docs.microsoft.com/azure/security/azure-ad-choose-authn).
 
+Guardare questo video per una panoramica dei modelli di identità e dell'autenticazione per Microsoft 365 Enterprise.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
+
 Una volta determinata la soluzione per le identità ibride, scaricare ed eseguire lo [Strumento IdFix DirSync Error Remediation Tool](https://www.microsoft.com/download/details.aspx?id=36832) per analizzare Active Directory Domain Services e cercare eventuali problemi.
 
-Dopo aver risolto tutti i problemi identificati tramite lo strumento IdFix, vedere [Implementare la sincronizzazione dell'hash delle password](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-hash-synchronization) per installare lo strumento Azure AD Connect e configurare la sincronizzazione delle directory tra Active Directory Domain Services locale e il tenant di Azure AD per gli abbonamenti a Office 365 ed EMS. Dopo l'inizio della sincronizzazione, sarà possibile mantenere gli account utente e i gruppi con il provider di identità locale, come Active Directory Domain Services.
+Dopo aver risolto tutti i problemi identificati tramite lo strumento IdFix, vedere [Implementare la sincronizzazione dell'hash delle password](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-implement-password-hash-synchronization) per installare lo strumento Azure AD Connect e configurare la sincronizzazione delle directory tra Active Directory Domain Services locale e il tenant di Azure AD per l’abbonamento a Microsoft 365. Dopo l'inizio della sincronizzazione, sarà possibile mantenere gli account utente e i gruppi con il provider di identità locale, come Active Directory Domain Services.
 
 Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](microsoft-365-policies-configurations.md) per garantire un ambiente di lavoro protetto e produttivo. 
 
@@ -55,7 +59,7 @@ Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](m
 
 - Per i requisiti consigliati per gli ambienti solo cloud, vedere la colonna **Solo cloud** in [Prerequisiti](identity-access-prerequisites.md#prerequisites).
 
-Quando in Azure AD sono presenti gli utenti e i gruppi locali, è possibile iniziare ad assegnare le licenze e a usare Exchange Online. Per implementare Exchange Online per gli utenti ed eseguire la migrazione delle cassette postali locali, vedere [Distribuire Exchange Online per Microsoft 365 Enterprise](exchangeonline-workload.md).
+Quando gli utenti e i gruppi locali sono presenti in Azure AD, è possibile iniziare ad assegnare le licenze e a usare carichi di lavoro di produttività, ad esempio OneDrive for Business e Exchange Online.
 
 |||
 |:-------|:-----|
@@ -69,7 +73,7 @@ Come checkpoint provvisorio, vedere i [criteri di uscita](identity-exit-criteria
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-In questa sezione si installerà un agente di Azure AD Connect Health in ogni server di identità locale per monitorare l'infrastruttura di gestione delle identità e i servizi di sincronizzazione forniti da Azure AD Connect. Le informazioni sul monitoraggio vengono rese disponibili nel portale di Azure AD Connect Health, dove è possibile visualizzare avvisi, il monitoraggio delle prestazioni, analisi sull'utilizzo e altre informazioni.
+In questa sezione verrà installato un agente di Azure AD Connect Health in ogni controller di dominio AD DS locale per monitorare l'infrastruttura di gestione delle identità e i servizi di sincronizzazione forniti da Azure AD Connect. Le informazioni sul monitoraggio vengono rese disponibili nel portale di Azure AD Connect Health, dove è possibile visualizzare avvisi, il monitoraggio delle prestazioni, analisi sull'utilizzo e altre informazioni.
 
 ![Componenti di Azure AD Connect Health](./media/identity-azure-ad-connect-health/identity-azure-ad-connect-health.png)
 
@@ -81,9 +85,9 @@ La decisione di progettazione chiave su come usare Azure AD Connect Health si ba
 Dopo aver completato questa sezione:
 
 - L'agente di Azure AD Connect Health è installato su ciascuno dei server del provider di identità locale.
-- Il portale di Azure AD Connect Health mostra lo stato corrente dell'infrastruttura locale e le attività di sincronizzazione con il tenant di Azure AD per gli abbonamenti a Office 365 e EMS.
+- Il portale di Azure AD Connect Health mostra lo stato corrente dell'infrastruttura locale e delle attività di sincronizzazione con il tenant di Azure AD per l’abbonamento a Microsoft 365.
 
-Come checkpoint provvisorio, è possibile vedere i [criteri uscita](identity-exit-criteria.md#crit-identity-sync-health) per questa sezione.
+Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-exit-criteria.md#crit-identity-sync-health) per questa sezione.
 
 ## <a name="next-step"></a>Passaggio successivo
 
