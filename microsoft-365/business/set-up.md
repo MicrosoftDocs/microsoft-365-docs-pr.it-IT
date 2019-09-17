@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Informazioni su come configurare Microsoft 365 business.
-ms.openlocfilehash: ac9c8b828ff131a15bf057fa8bdc0bf56dd00987
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 1efb7379930f639cf10875cf5aa6731001bb41c8
+ms.sourcegitcommit: 2e5ae52bb641ee1f72c077260b5d0f35622935fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772568"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37005199"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Configurare Microsoft 365 business nell'installazione guidata
 
@@ -57,13 +57,13 @@ Quando si acquista Microsoft 365 business, si ha la possibilità di utilizzare u
     
 4. Seguire i passaggi della procedura guidata per [creare record DNS presso un provider di hosting DNS per Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) che verifica che si è proprietari del dominio. Se si conosce l'host di dominio, vedere anche le [istruzioni specifiche dell'host](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
-    Se il provider di hosting è GoDaddy, il processo è semplice e verrà automaticamente chiesto di accedere e di consentire a Microsoft di eseguire l'autenticazione per conto di:
+    Se il provider di hosting è GoDaddy o un altro host abilitato con [Domain Connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), il processo è semplice e verrà chiesto automaticamente di accedere e di consentire a Microsoft di eseguire l'autenticazione per conto dell'utente:
 
     ![Nella pagina Conferma accesso GoDaddy selezionare autorizza.](media/godaddyauth.png)
 
 ### <a name="add-users-and-assign-licenses"></a>Aggiungere utenti e assegnare licenze
 
-È possibile aggiungere utenti nella procedura guidata, ma è anche possibile aggiungerli in un [secondo momento](add-users-m365b.md) nell'interfaccia di amministrazione. Inoltre, se si dispone di un controller di dominio locale, è possibile aggiungere utenti con [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express).
+È possibile aggiungere utenti nella procedura guidata, ma è anche possibile [aggiungerli in un secondo momento](add-users-m365b.md) nell'interfaccia di amministrazione. Inoltre, se si dispone di un controller di dominio locale, è possibile aggiungere utenti con [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express).
 
 #### <a name="add-users-in-the-wizard"></a>Aggiungere gli utenti nella procedura guidata
 
@@ -89,7 +89,8 @@ Per configurare i servizi, occorre aggiornare alcuni record presso l'host DNS o 
   
 1. La configurazione guidata rileva in genere il registrar e offre un collegamento a istruzioni dettagliate per l'aggiornamento dei record NS presso il suo sito Web. In caso contrario, [modificare i server dei nomi per configurare Office 365 con qualsiasi registrar](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2). 
 
-    - Se si dispone di record DNS esistenti, ad esempio un sito Web esistente, sarà necessario gestire i propri record DNS per assicurarsi che i servizi esistenti siano connessi. Per altre informazioni, vedere [Domain nozioni di base](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) .
+    - Se si dispone di record DNS esistenti, ad esempio un sito Web esistente, ma l'host DNS è abilitato per la [connessione al dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), scegliere **Add records for me**. 
+    - Se sono presenti record DNS con altri host DNS (non abilitati per la connessione al dominio), è necessario gestire i propri record DNS per assicurarsi che i servizi esistenti siano connessi. Per altre informazioni, vedere [Domain nozioni di base](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) .
 
         ![Connect Your Domain Page con I ' ll manage my own DNS Records.](media/connectyourdomainpage.png)
 
@@ -99,7 +100,7 @@ Per configurare i servizi, occorre aggiornare alcuni record presso l'host DNS o 
 
 I criteri configurati nella procedura guidata vengono applicati automaticamente a un [gruppo di sicurezza](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) denominato *tutti gli utenti*. È inoltre possibile creare altri gruppi per assegnare criteri nell'interfaccia di amministrazione.
 
-1. Nella pagina **Proteggi i file di lavoro nei dispositivi mobili** , l'opzione Proteggi i **file di lavoro quando i dispositivi vengono persi o rubati** è selezionata per impostazione predefinita. È possibile abilitare la gestione del modo in cui **gli utenti accedono ai file di Office nei dispositivi mobili**e questo è consigliato.
+1. Nella pagina **Proteggi i file di lavoro nei dispositivi mobili** , l'opzione **Proteggi i file di lavoro quando i dispositivi vengono persi o rubati** è selezionata per impostazione predefinita. È possibile abilitare la gestione del modo in cui **gli utenti accedono ai file di Office nei dispositivi mobili**e questo è consigliato.
 
     ![Schermata della pagina Proteggi file di lavoro su dispositivi mobili.](media/protectworkfilesondevices.png)
 
