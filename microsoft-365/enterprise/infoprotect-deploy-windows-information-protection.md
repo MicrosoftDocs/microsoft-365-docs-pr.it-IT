@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni e distribuzione di Windows Information Protection in Microsoft 365.
-ms.openlocfilehash: e32b09c20e86ff927748f7aedd8b8d769e07916e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a89d61367d3e07cabff0576f16fa359a06dc1ecc
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073563"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36981817"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>Passaggio 4: Configurare Windows Information Protection
 
@@ -30,7 +30,7 @@ Con più dispositivi personali usati per lavoro, aumenta il rischio per le appli
 
 Windows Information Protection (WIP) consente di evitare questi tipi di perdita di dati nei dispositivi Windows 10. Per ulteriori informazioni, vedere [Proteggere i dati dell'organizzazione con WIP](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
-In Microsoft 365 Enterprise, WIP è una combinazione di Windows 10 Enterprise e Microsoft Intune, incluso nell’abbonamento insieme a Enterprise Mobility + Security (EMS). 
+In Microsoft 365 Enterprise, WIP è una combinazione di Windows 10 Enterprise e Microsoft Intune, incluso nell'abbonamento. 
 
 Per distribuire WIP nell'organizzazione con Microsoft 365 Enterprise:
 
@@ -46,7 +46,6 @@ Vedere [Procedure consigliate per WIP]( https://docs.microsoft.com/windows/secur
 Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria.md#crit-infoprotect-step4) che corrispondono a questo passaggio.
 
 ## <a name="next-step"></a>Passaggio successivo
-
 
 |||
 |:-------|:-----|

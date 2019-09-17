@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un sito del team SharePoint Online sicuro o un team di Microsoft Teams per archiviare gli asset digitali più importanti e riservati.
-ms.openlocfilehash: d9740a27cdb90f8d490a6c9a323e968725876deb
-ms.sourcegitcommit: e87c9aa4d6f4756c0a761d3de7c70492b43bf0b9
+ms.openlocfilehash: d056acc9598abc2b896c775e0979451f4961e3fb
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "34681065"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982757"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Siti Microsoft Teams e SharePoint Online per dati altamente riservati
 
@@ -64,10 +64,9 @@ Questo scenario richiede di aver già implementato:
 - [SharePoint Online](sharepoint-online-onedrive-workload.md) per i dati altamente riservati nei siti del team di SharePoint Online.
 - [Microsoft Teams](teams-workload.md), per i dati altamente riservati nei team di Microsoft Teams.
 
-Le fasi seguenti illustrano la progettazione, la configurazione e l'adozione dei siti e dei team di SharePoint Online per dati altamente riservati.
+Le fasi seguenti illustrano come progettare, configurare e facilitare il passaggio a siti e team di SharePoint Online per dati con riservatezza elevata.
 
 Per vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, ha progettato un sito di SharePoint Online per i propri team di ricerca, vedere questo [esempio di configurazione](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
-
 
 Un team con dati altamente riservati richiede che venga creato un sito del team di SharePoint Online per dati altamente riservati. Quindi si crea un nuovo team che utilizza il gruppo Office 365 del sito del team di SharePoint Online. Vedere Fase 2, Passaggio 4 per maggiori informazioni.
 

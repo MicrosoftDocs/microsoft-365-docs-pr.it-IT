@@ -9,7 +9,7 @@ Se necessario, il [Passaggio 1](../windows10-prepare-your-org.md) può aiutare a
 
 ### <a name="optional-your-users-are-added-and-licensed"></a>Facoltativo: gli utenti vengono aggiunti e ricevono una licenza
 
-Gli account corrispondenti agli utenti vengono aggiunti direttamente al tenant di Azure AD per le sottoscrizioni di Office 365 e Intune o dalla sincronizzazione delle directory da Active Directory Domain Services locale.
+Gli account corrispondenti agli utenti vengono aggiunti direttamente al tenant di Azure AD per gli abbonamenti di Office 365 e Intune o dalla sincronizzazione delle directory da Active Directory Domain Services locale.
 
 Una volta aggiunti gli utenti, è possibile assegnare loro le licenze Microsoft 365 Enterprise, direttamente come amministratore globale o utente o automaticamente tramite l'appartenenza al gruppo.
 
@@ -83,10 +83,10 @@ Windows Defender Exploit Guard è stato distribuito per proteggere i dispositivi
 Se necessario, il [Passaggio 5](../windows10-enable-security-features.md#windows10-sec-eg) può aiutare a soddisfare questo requisito.
 
 <a name="crit-windows10-step5c"></a>
-### <a name="required-you-are-using-windows-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Obbligatorio: utilizzo di Windows Defender Advanced Threat Protection (solo Microsoft 365 Enterprise E5)
+### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Obbligatorio: utilizzo di Microsoft Defender Advanced Threat Protection (solo Microsoft 365 Enterprise E5)
 
-Windows Defender Advanced Threat Protection Defender (ATP) è stato distribuito per rilevare, investigare e rispondere alle minacce avanzate contro la rete e i dispositivi che eseguono Windows 10 Enterprise. 
+Microsoft Defender Advanced Threat Protection Defender (ATP) è stato distribuito per rilevare, investigare e rispondere alle minacce avanzate contro la rete e i dispositivi che eseguono Windows 10 Enterprise. 
 
-Opzionalmente, Windows Defender ATP viene integrato con altri strumenti per espandere le proprie capacità.
+In modo facoltativo, Microsoft Defender ATP viene integrato con altri strumenti per espandere le proprie capacità.
 
 Se necessario, il [Passaggio 5](../windows10-enable-security-features.md#windows10-sec-atp) può aiutare a soddisfare questo requisito.

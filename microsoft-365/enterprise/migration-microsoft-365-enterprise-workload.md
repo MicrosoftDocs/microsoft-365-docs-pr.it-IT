@@ -2,7 +2,7 @@
 title: Migrazione a Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/12/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Procedura per la migrazione delle versioni di Microsoft Office, Office Server e Windows a Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: f82e65cdff674884466fe70a299250c92f356186
-ms.sourcegitcommit: 86dba00cd786ac8ea761cdfcd85dfbd33e64d088
+ms.openlocfilehash: 0def2f90a016c6d81f2c05bb3571646d97edf4ca
+ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297881"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982822"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migrazione a Microsoft 365 Enterprise
 
@@ -64,7 +64,7 @@ Office 365 ProPlus installa automaticamente gli aggiornamenti e sfrutta servizi 
 
 ### <a name="office-2010"></a>Office 2010
 
-Per le versioni di Office nel rilascio di Office 2010, la data della fine del supporto è il 13 ottobre 2020. Per ulteriori informazioni, vedere [Guida sulla fine del supporto di Office 2010](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
+Per le versioni di Office nel rilascio di Office 2010, la fine del supporto è il **13 ottobre 2020**. Per altre informazioni, vedere [Roadmap della fine del supporto di Office 2010](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap).
 
 Anziché aggiornare i computer che eseguono Office 2010 a Office 2013 o Office 2016 (entrambi da aggiornare manualmente), è consigliabile: 
 
@@ -115,8 +115,8 @@ Anziché aggiornare i prodotti server nel rilascio di Office 2007 con i prodotti
 
 Per i prodotti server nel rilascio di Office 2010, la data della fine del supporto non è ancora stata determinata per:
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+- Per [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) è il **14 gennaio 2010**.
+- Per [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) è il **13 ottobre 2020**.
 
 Anziché aggiornare questi prodotti server nel rilascio di Office 2010 con i prodotti server nel rilascio di Office 2013 o Office 2016, è consigliabile:
 
@@ -140,11 +140,21 @@ Per i prodotti server nel rilascio di Office 2016, la data della fine del suppor
 2. Presentare le nuove funzionalità e i processi di lavoro agli utenti.
 3. Se i server locali che eseguono prodotti server di Office 2016 non sono più necessari, rimuoverli.
 
-## <a name="migration-for-microsoft-windows"></a>Migrazione per Microsoft Windows
+## <a name="migration-for-microsoft-windows-7-and-81"></a>Migrazione per Microsoft Windows 7 e 8.1
 
-Per eseguire la migrazione dei dispositivi con sistema operativo Windows 7 o Windows 8.1, è possibile eseguire un [aggiornamento sul posto](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade). 
+Il supporto per Windows 7 termina il **14 gennaio 2010**. Per eseguire la migrazione dei dispositivi con sistema operativo Windows 7 o Windows 8.1, è possibile eseguire un [aggiornamento sul posto](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade). 
 
-Per ulteriori metodi, vedere [Scenari di distribuzione di Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). È inoltre possibile [pianificare la distribuzione di Windows 10](https://aka.ms/planforwin10deployment) autonomamente.
+Per altri metodi, vedere [Scenari di distribuzione di Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). È anche possibile [pianificare la distribuzione di Windows 10](https://aka.ms/planforwin10deployment) autonomamente.
+
+## <a name="summary-of-options-for-office-2010-clients-and-servers-and-windows-7"></a>Riepilogo delle opzioni per i client e server di Office 2010 e Windows 7
+
+Per un riepilogo visivo delle opzioni di aggiornamento, migrazione e passaggio al cloud per questi prodotti, vedere il [poster relativo alla fine del supporto](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
+
+[![Immagine del poster per la fine del supporto per client e server di Office 2010 e Windows 7](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+
+Questo poster di una pagina rappresenta un modo rapido per comprendere i vari percorsi che è possibile eseguire per evitare che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del supporto, evidenziando i percorsi preferiti e il supporto delle opzioni in Microsoft 365 Enterprise.
+
+È possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
@@ -156,15 +166,15 @@ Informazioni su come gli esperti IT di Microsoft hanno eseguito la migrazione de
 - [Distribuzione di Windows 10 in Microsoft come aggiornamento sul posto](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
 - [Distribuzione di Windows 10: suggerimenti e consigli da IT Microsoft](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (video)
 
-## <a name="transition-your-entire-organization"></a>Transizione all'intera organizzazione
+## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
 
-Per avere un quadro più completo su come spostare l'intera organizzazione in Microsoft 365 Enterprise, scaricare il [poster di transizione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transitionorgtom365.pdf).
+Per avere un quadro più completo su come spostare l'intera organizzazione ai prodotti e servizi in Microsoft 365 Enterprise, scaricare il [poster di transizione](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-![](./media/deploy-microsoft-365-enterprise/TransitionOrgToM365.png)
+[![Immagine per il poster di transizione a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-Questo poster con due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e accedere alle indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 Enterprise. Include i prodotti di questo articolo e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
+Questo poster con due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e accedere alle indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 Enterprise. Include i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
 
-È possibile stampare il poster in formato lettera, legale o tabloid (11 x 17).
+È possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="result"></a>Risultato
 

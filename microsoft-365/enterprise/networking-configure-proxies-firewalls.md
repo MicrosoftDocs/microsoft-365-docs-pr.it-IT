@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare Web browser e dispositivi periferici per il bypass di traffico a posizioni di Office 365 attendibili.
-ms.openlocfilehash: c7d4391d3274fd36a3f6fbf208cd94ce7b0f9339
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: fbc4956525e2661ce791c6ec81b449dba685d0f0
+ms.sourcegitcommit: 1ca1062ccddd7a46fa0bb4af6ee5f0eb141e7280
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074226"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "36999040"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Passaggio 4: configurare il bypass di traffico
 
@@ -40,10 +40,11 @@ I nomi di dominio DNS e gli intervalli di indirizzi IP sono disponibili all'indi
 
 Consigli di Microsoft:
 
-- Usare gli script Proxy Automatic Configuration (PAC) sui browser Internet dei computer locali per eseguire il bypass dei server proxy per i nomi di dominio DNS dei servizi basati sul cloud di Microsoft 365. Per gli script PAC di Microsoft 365 PAC più recenti, vedere Script Get-Pacfile di PowerShell.
+- Usare gli script Proxy Automatic Configuration (PAC) sui browser Internet dei computer locali per eseguire il bypass dei server proxy per i nomi di dominio DNS dei servizi basati sul cloud di Microsoft 365. Per gli script PAC di Microsoft 365 più recenti, vedere [Script Get-Pacfile di PowerShell](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
+- 
 - Analizzare i dispositivi periferici in uso per determinare l'elaborazione di duplicati e quindi configurarli per inoltrare il traffico agli endpoint delle categorie Ottimizzazione e Consenti senza elaborazione. Questa procedura è nota come bypass di traffico. 
 
-I dispositivi periferici includono firewall, SSL Break and Inspect, dispositivi di ispezione dei pacchetti e sistemi di prevenzione della perdita dei dati. Per configurare e aggiornare le configurazioni di dispositivi periferici, è possibile usare uno script o una chiamata REST per utilizzare un elenco strutturato di endpoint dal servizio Web degli endpoint di Office 365. Per ulteriori informazioni, vedere [Servizio Web per URL e indirizzi IP di Office 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
+I dispositivi periferici includono firewall, SSL Break and Inspect, dispositivi di ispezione dei pacchetti e sistemi di prevenzione della perdita dei dati. Per configurare e aggiornare le configurazioni di dispositivi periferici, è possibile usare uno script o una chiamata REST per utilizzare un elenco strutturato di endpoint dal servizio Web degli endpoint di Office 365. Per ulteriori informazioni, vedere [Servizio Web per URL e indirizzi IP di Office 365](https://docs.microsoft.com/it-IT/office365/enterprise/office-365-ip-web-service#exporting-a-proxy-pac-file).
 
 Tenere presente che questa procedura consente di eseguire il bypass solo per l'elaborazione dei dati di protezione di rete e proxy normale per il traffico agli endpoint delle categorie Ottimizzazione e Consenti di Microsoft 365. Tutto il resto del traffico su Internet verrà trasmesso tramite proxy e sarà soggetto all'elaborazione dei dati di protezione di rete esistente.
 
