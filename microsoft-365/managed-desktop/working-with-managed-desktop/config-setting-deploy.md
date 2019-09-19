@@ -5,14 +5,13 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, Documentation, depl
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/17/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bfa769cab9f8d812fa2533232f66b0d4f8a4edb7
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 5b6a2756514e94cb4f96141d6e7c9f6f2a6dd7ff
+ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390513"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37040803"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Distribuire e monitorare le impostazioni configurabili-Microsoft Managed Desktop
 
@@ -20,7 +19,7 @@ Dopo aver apportato le modifiche alle categorie di impostazioni e a organizzare 
 
 ## <a name="deployment-statuses"></a>Stati di distribuzione 
 
-Queste sono le statue che verranno visualizzate per ogni distribuzione.
+Si tratta degli Stati che verranno visualizzati per ogni distribuzione.
 
 Stato  | Spiegazione 
 --- | --- 
@@ -37,17 +36,15 @@ In queste istruzioni viene visualizzata l'immagine di sfondo del desktop. Dopo a
 **Per distribuire le modifiche**
 
 1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **** configurabile.
+2. In **Impostazioni**, selezionare **configurabile**.
 3. In area di lavoro **stato distribuzione** selezionare l'impostazione che si desidera distribuire e quindi selezionare la distribuzione a fasi da distribuire.
-4. Fare **** clic su Distribuisci per distribuire la modifica a uno dei gruppi di distribuzione.
+4. Fare clic su **Distribuisci** per distribuire la modifica a uno dei gruppi di distribuzione.
 
-![Panoramica dello stato di distribuzione delle impostazioni configurabili](images/deploy-cs-overview.png)
-
-Microsoft Managed Desktop consiglia la distribuzione ai gruppi di distribuzione nell'ordine seguente: test, First, Fast e then Broad. 
+![Panoramica](images/1deployedit.png) dello stato di distribuzione delle impostazioni configurabili Microsoft Managed Desktop consiglia la distribuzione ai gruppi di distribuzione nell'ordine seguente: test, First, Fast e then Broad. 
 
 Quando le modifiche vengono completate in ogni gruppo, lo stato diventa **completo**.
 
-![Completamento della distribuzione delle impostazioni configurabili](images/config-setting-complete.png)
+![Completamento della distribuzione delle impostazioni configurabili](images/2completeedit.png)
 
 ## <a name="revert-deployment"></a>Ripristinare la distribuzione
 
@@ -57,11 +54,11 @@ Vengono illustrati i passaggi da eseguire per ripristinare una modifica utilizza
 
 **Per annullare una modifica**
 1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **** configurabile.
+2. In **Impostazioni**, selezionare **configurabile**.
 3. Nell'area di lavoro **stato distribuzione** selezionare l'impostazione che si desidera ripristinare e quindi selezionare la distribuzione a fasi da ripristinare.
 4. In **necessità di ripristinare questa modifica**, selezionare **Ripristina distribuzione**.
 
-![Ripristinare la distribuzione delle impostazioni configurabili](images/config-setting-revert.png) 
+![Ripristinare la distribuzione delle impostazioni configurabili](images/3revert.png) 
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 - [Panoramica delle impostazioni configurabili](config-setting-overview.md)
