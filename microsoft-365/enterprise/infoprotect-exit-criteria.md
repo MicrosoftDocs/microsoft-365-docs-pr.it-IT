@@ -3,7 +3,7 @@ title: Criteri uscita dell'infrastruttura di protezione delle informazioni
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Esaminare i criteri relativi ai servizi e all'infrastruttura basati sulla protezione delle informazioni per verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise.
-ms.openlocfilehash: 267a6efaef5a5bcfb0ec9f8e0e9f33d525f5ce74
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 02e972a80d4b42ae66193bbbc55d0f1e63be5ba6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071946"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047239"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>Criteri uscita dell'infrastruttura di protezione delle informazioni
 
@@ -88,16 +88,30 @@ Il personale di sicurezza e conformità dati utilizza il dashboard di Sicurezza 
 
 Se necessario, il [Passaggio 5](infoprotect-data-loss-prevention.md) può aiutare a soddisfare questo requisito. 
 
-
 <a name="crit-infoprotect-step6"></a>
+## <a name="optional-email-encryption-is-configured"></a>Facoltativo: la crittografia della posta elettronica è configurata
+
+La crittografia della posta elettronica seguente è stata configurata in base alle esigenze dell'organizzazione:
+
+|||
+|:-------|:-----|
+| **Metodo di crittografia** | **For email sent** (Per la posta elettronica inviata) |
+| [Office 365 Message Encryption (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | Contatti esterni all'organizzazione con la crittografia |
+| [Information Rights Management (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | Sia con crittografia che con le autorizzazioni |
+| [S/MIME (Secure/Multipurpose Internet Mail Extensions)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | Sia con crittografia che con le firme digitali tramite crittografia a chiave pubblica |
+|||
+
+Se necessario, il [Passaggio 6](infoprotect-email-encryption.md) può aiutare a soddisfare questo requisito.
+
+<a name="crit-infoprotect-step7"></a>
 ## <a name="optional-configure-privileged-access-management-in-office-365"></a>Facoltativo: configurare la gestione degli accessi con privilegi in Office 365
 
 Sono state usate le informazioni contenute nell'argomento [Configurare la gestione degli accessi con privilegi in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) per abilitare l'accesso con privilegi e creare uno o più criteri di accesso con privilegi all'interno dell'organizzazione. I criteri sono stati configurati ed è abilitato l'accesso just-in-time ai dati sensibili o alle impostazioni di configurazione critiche.
 
-Se necessario, il [Passaggio 6](infoprotect-configure-privileged-access-management.md) può aiutare a soddisfare questo requisito. 
+Se necessario, il [Passaggio 7](infoprotect-configure-privileged-access-management.md) può aiutare a soddisfare questo requisito. 
 
 ## <a name="results-and-next-steps"></a>Risultati e passaggi successivi
 
-L'infrastruttura di protezione delle informazioni per Microsoft 365 Enterprise usa livelli di sicurezza definiti, maggiore sicurezza per Office 365, classificazione con etichette e tipi di dati riservati, Windows Information Protection, criteri di prevenzione della perdita di dati e gestione degli accessi con privilegi.
+L'infrastruttura di protezione delle informazioni per Microsoft 365 Enterprise usa livelli di sicurezza definiti, maggiore sicurezza per Office 365, classificazione con etichette e tipi di dati riservati, Windows Information Protection, criteri di prevenzione della perdita di dati, crittografia della posta elettronica e gestione degli accessi con privilegi.
 
 Se si sta seguendo la distribuzione end-to-end di Microsoft 365 Enterprise, è possibile a questo punto far sì che i [carichi di lavoro e gli scenari](deploy-workloads.md) sfruttino tutte le funzionalità e la configurazione dell'infrastruttura di base.

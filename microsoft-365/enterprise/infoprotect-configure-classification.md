@@ -3,7 +3,7 @@ title: "Passaggio 2: configurare la classificazione dell'ambiente"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/25/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare i diversi modi per classificare i dati all'interno dell'organizzazione.
-ms.openlocfilehash: 483549e7eaa7f6b77b775cf35bda7b0f42834ad2
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072256"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047299"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Passaggio 2: configurare la classificazione dell'ambiente
 
@@ -63,16 +63,17 @@ Per ulteriori informazioni, vedere la [Panoramica delle etichette di conservazio
 Parte della protezione e dell’implementazione della sicurezza per specifici tipi di documenti e documenti con contenuti specifici consiste nel contrassegnarli con un'etichetta in modo che possa essere applicata la sicurezza aggiuntiva. Con le etichette di riservatezza Microsoft 365 è possibile:
 
 - Applicare le impostazioni di protezione, ad esempio la crittografia, le autorizzazioni o aggiungere una filigrana.
-- Evitare che informazioni riservate escano dall'organizzazione nei dispositivi che eseguono Windows usando la protezione endpoint in Microsoft Intune. 
 - Usare la protezione di endpoint Windows Information Protection (WIP) per impedire che un contenuto venga copiato da un'applicazione di terze parti, ad esempio Twitter o Gmail, o venga copiato su supporti rimovibili, ad esempio un'unità USB.
-- Proteggere i contenuti in app e servizi di terze parti con Microsoft Cloud App Security. 
+- Proteggere i contenuti in app e servizi di terze parti con Microsoft Cloud App Security (CAS). 
 - Classificare il contenuto senza usare nessuna impostazione di protezione.
 
 Se si usano le etichette di riservatezza, è necessario configurare un'etichetta per ogni livello di protezione di sicurezza e delle informazioni. Ad esempio, creare tre etichette di riservatezza per:
 
 - Protezione di base
 - Dati sensibili
-- Protezione per ambienti altamente regolamentati
+- Riservatezza elevata
+
+Se si archiviano file con dati a riservatezza elevata in un sito di SharePoint Online e si vuole che tali file presentino le stesse autorizzazioni del sito quando lasciano il sito, è necessario creare un'ulteriore etichetta di riservatezza le cui autorizzazioni siano identiche a quelle sito.
 
 Per altre informazioni, vedere questa [Panoramica delle etichette di riservatezza](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels).
 

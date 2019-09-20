@@ -3,7 +3,7 @@ title: 'Fase 6: protezione delle informazioni'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: I passaggi per distribuire l'infrastruttura di protezione delle informazioni per Microsoft 365 Enterprise.
-ms.openlocfilehash: a00f61cbf2f8d00929a67dae6d401fd99014ec26
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 3174790d1ee6c9ed05605dd1c3c75405e3eac42b
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073686"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047309"
 ---
 # <a name="phase-6-information-protection"></a>Fase 6: protezione delle informazioni
 
@@ -43,14 +43,15 @@ Successivamente, utilizzare i passaggi seguenti per costruire la protezione dell
 |![](./media/stepnumbers/Step3.png)|[Configurare un livello di sicurezza maggiore per Microsoft 365](infoprotect-configure-increased-security-office-365.md)|
 |![](./media/stepnumbers/Step4.png)|[Configurare Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
 |![](./media/stepnumbers/Step5.png)|[Configurare i criteri di prevenzione della perdita dei dati di Office 365](infoprotect-data-loss-prevention.md)|
-|![](./media/stepnumbers/Step6.png)|[Configurare la gestione degli accessi con privilegi per Office 365](infoprotect-configure-privileged-access-management.md)|
-
+|![](./media/stepnumbers/Step6.png)|[Configurare la crittografia della posta elettronica](infoprotect-email-encryption.md)|
+|![](./media/stepnumbers/Step7.png)|[Configurare la gestione degli accessi con privilegi per Office 365](infoprotect-configure-privileged-access-management.md)|
+|||
 
 Dopo aver completato questi passaggi, passare ai [criteri uscita](infoprotect-exit-criteria.md) per questa fase per garantire che vengano rispettate le condizioni facoltative e obbligatorie per Microsoft 365 Enterprise.
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
-Informazioni su come gli esperti IT di Microsoft usano [Azure Information Protection per proteggere i dati](https://www.microsoft.com/en-us/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
+Informazioni su come gli esperti IT di Microsoft usano [Azure Information Protection per proteggere i dati](https://www.microsoft.com/it-IT/itshowcase/deploying-and-managing-microsoft-365#primaryR9).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Come ha agito Contoso con Microsoft 365 Enterprise
 

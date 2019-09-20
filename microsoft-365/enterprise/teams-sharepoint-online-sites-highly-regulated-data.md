@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un sito del team SharePoint Online sicuro o un team di Microsoft Teams per archiviare gli asset digitali più importanti e riservati.
-ms.openlocfilehash: d056acc9598abc2b896c775e0979451f4961e3fb
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 04984be44ddb2cc1aabc2032970f92e71899b268
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982757"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047339"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Siti Microsoft Teams e SharePoint Online per dati altamente riservati
 
@@ -145,7 +145,7 @@ Attenersi alle istruzioni riportate in [Distribuire un sito del team di SharePoi
 - Creare e popolare i gruppi di accesso per ciascun livello di autorizzazione di SharePoint utilizzato nel sito.
 - Creare e configurare il sito del team isolato.
 
-### <a name="step-2-configure-the-site-for-an-office-365-retention-label-dlp-policy"></a>Passaggio 2: Configurare il sito per un criterio DLP dell'etichetta di conservazione di Office 365
+### <a name="step-2-configure-the-site-for-an-office-365-retention-label"></a>Passaggio 2: Configurare il sito per un'etichetta di conservazione di Office 365
 
 Attenersi alle istruzioni riportate in [Proteggere i file di SharePoint Online con le etichette di Office 365 e la prevenzione della perdita dei dati](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) per:
 
