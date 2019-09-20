@@ -3,7 +3,7 @@ title: Distribuire Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 08/09/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le risorse a disposizione per la distribuzione di Microsoft 365 Enterprise nell'organizzazione.
-ms.openlocfilehash: 896ac2ec0f9964344a416d583858e90a1a59e8fd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
+ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982072"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37050277"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Distribuire Microsoft 365 Enterprise
 
@@ -39,7 +39,7 @@ Esistono tre modi principali per la distribuzione di Microsoft 365 Enterprise:
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack per Microsoft 365
 
-FastTrack è un vantaggio in corso e ripetibile, disponibile come parte dell'abbonamento, che viene recapitato tramite i tecnici Microsoft che consentono di passare nel cloud con i propri tempi. FastTrack consente anche di accedere a partner qualificati per altri servizi. Con oltre 40.000 clienti abilitati ad oggi, FastTrack aiuta a massimizzare il ROI, ad accelerare la distribuzione e ad aumentare l'adozione all'interno dell'organizzazione. Vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+FastTrack è un vantaggio continuativo e ripetibile, *disponibile gratuitamente e come parte dell'abbonamento*, fornito dai tecnici Microsoft per consentire di passare al cloud secondo le proprie tempistiche. FastTrack consente anche di accedere a partner qualificati per altri servizi. Con oltre 40.000 clienti abilitati ad oggi, FastTrack aiuta a massimizzare il ROI, ad accelerare la distribuzione e ad aumentare l'adozione all'interno dell'organizzazione. Vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
 Se si desidera sfruttare FastTrack per la distribuzione di Microsoft 365 Enterprise, è possibile usare l'[assistente distribuzione di Microsoft 365](https://aka.ms/microsoft365setupguide) di FastTrack per indicazioni su come distribuire e configurare l'infrastruttura di base. È necessario essere connessi come amministratore globale in un tenant di Office 365 o Microsoft 365 per accedere alla pagina.
 
@@ -77,23 +77,23 @@ Iniziare in maniera autonoma il percorso di distribuzione end-to-end [qui](deplo
 
 Se non si conosce Microsoft 365 Enterprise o uno specifico prodotto o una caratteristica, uno dei modi migliori per comprendere consiste nel crearla autonomamente e osservarne il funzionamento.
 
-Abbiamo semplificato questo processo con Test Lab Guide (TLGs), che guida la configurazione dell'infrastruttura o una funzione in un ambiente semplificato ma rappresentativo tramite abbonamenti di prova o a pagamento.
+Abbiamo semplificato questo processo con le guide ai lab di test (TLG), che guidano l'utente nella configurazione dell'infrastruttura o di una funzionalità in un ambiente di test semplificato ma rappresentativo, tramite abbonamenti di prova o a pagamento.
 
-Con TLGs è possibile imparare autonomamente, dimostrare, personalizzare o creare una prova di concetto di una configurazione complessa, di un carico di lavoro o di uno scenario end-to-end.
+Con le TLG è possibile imparare autonomamente, dimostrare, personalizzare o creare una prova di concetto di una configurazione complessa, di un carico di lavoro o di uno scenario end-to-end.
 
 Per ulteriori informazioni, vedere [Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md).
 
 ![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-## <a name="transition-your-entire-organization"></a>Transizione dell’intera organizzazione
+## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
 
-Per avere un quadro più completo su come spostare l'intera organizzazione ai prodotti e servizi di Microsoft 365 Enterprise, consultare [Transizione dell’organizzazione a Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Per avere un quadro più completo su come spostare l'intera organizzazione ai prodotti e servizi di Microsoft 365 Enterprise, vedere il poster [Transizione dell'organizzazione a Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Poster della transizione dell’organizzazione a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Poster della transizione dell'organizzazione a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Questo poster con due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e accedere alle indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 Enterprise. Include i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
 
-È possibile [scaricare il poster di transizione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+Si può anche [scaricare il poster sulla transizione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="how-did-others-do-it"></a>Come hanno fatto altri utenti?
 
