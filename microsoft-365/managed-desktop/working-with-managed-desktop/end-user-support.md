@@ -6,18 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0af9134880f018cf814715a8ca3a3b7dc55c5fcd
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: de7f218b5cfe2dcdba6c29aea81bd6004adedf76
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982397"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047229"
 ---
 # <a name="getting-help-for-end-users"></a>Ottenere assistenza per gli utenti finali
 
-Esistono due modi in cui gli utenti dell'organizzazione possono ottenere assistenza con i propri dispositivi Microsoft Managed Desktop: **informazioni** sull'app o sul supporto telefonico. Entrambe le opzioni di supporto sono disponibili per gli utenti 24 ore al giorno, 7 giorni alla settimana. 
+Esistono due modi in cui gli utenti dell'organizzazione possono ottenere assistenza con i propri dispositivi Microsoft Managed Desktop: **informazioni** sull'app o sul supporto telefonico. Entrambe le opzioni di supporto sono disponibili per gli utenti 24 ore al giorno, 7 giorni alla settimana.
+ 
 >[!NOTE]
->I dispositivi che risiedono nel gruppo di test non rientrano nell'ambito di queste opzioni di supporto per gli utenti finali. 
+>Queste opzioni di supporto non sono disponibili per i dispositivi del gruppo di test. 
 
 ## <a name="get-help-app"></a>Ottenere l'app della Guida
 
@@ -38,9 +39,10 @@ Gli utenti finali con i dispositivi Microsoft Managed Desktop hanno anche access
 - Canada (escluso Québec): + 1 855 425 0216
 - Regno Unito: + 44 800 026 0698
 - Australia: + 61 180 037 0619
+- Nuova Zelanda: + 64 988 44380
 
 >[!NOTE]
->Fare in modo che l'indirizzo di posta elettronica dell'organizzazione sia pronto quando si chiama per verificare l'identità. 
+>È necessario che l'indirizzo di posta elettronica dell'organizzazione sia pronto quando si chiama per verificare l'identità. 
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 - [Supporto di amministrazione per Microsoft Managed Desktop](admin-support.md). 

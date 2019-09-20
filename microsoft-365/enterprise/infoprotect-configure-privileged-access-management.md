@@ -1,5 +1,5 @@
 ---
-title: 'Passaggio 6: configurare la gestione degli accessi con privilegi per Office 365'
+title: 'Passaggio 7: configurare la gestione degli accessi con privilegi per Office 365'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Comprendere e configurare la gestione degli accessi con privilegi per Office 365.
-ms.openlocfilehash: fdfb0bc69d1dc05cffd717951cb493995d2123d4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 7ed7a69b89a519895e62b78be4a27cfb7fff2f74
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072096"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047289"
 ---
-# <a name="step-6-configure-privileged-access-management-for-office-365"></a>Passaggio 6: configurare la gestione degli accessi con privilegi per Office 365
+# <a name="step-7-configure-privileged-access-management-for-office-365"></a>Passaggio 7: configurare la gestione degli accessi con privilegi per Office 365
 
 *Questo passaggio è facoltativo e si applica solo alle versioni E5 e Advanced Compliance di Microsoft 365 Enterprise*
 
@@ -39,11 +39,13 @@ Per abilitare la gestione degli accessi con privilegi di Office 365, vedere l’
 
 Per ulteriori informazioni, vedere l’argomento [Gestione degli accessi con privilegi in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
-## <a name="results"></a>Risultati
 
-Il risultato di questo passaggio è un aumento della protezione di Office 365 grazie all’abilitazione del controllo di accesso just-in-time per i dati chiave e le impostazioni di configurazione dell'organizzazione.
+|||
+|:-------|:-----|
+|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Per eseguire questa configurazione in un ambiente di laboratorio di testing, vedere la [Guida al Lab di test di gestione di accessi con privilegi](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
+|||
 
-Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria.md#crit-infoprotect-step6) che corrispondono a questo passaggio.
+Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria.md#crit-infoprotect-step7) che corrispondono a questo passaggio.
 
 ## <a name="next-step"></a>Passaggio successivo
 
