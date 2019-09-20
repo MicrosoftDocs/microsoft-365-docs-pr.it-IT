@@ -60,10 +60,24 @@ Il personale di sicurezza e conformità dati utilizza il dashboard di Sicurezza 
 
 Se necessario, il [Passaggio 5](../infoprotect-data-loss-prevention.md) può aiutare a soddisfare questo requisito. 
 
-
 <a name="crit-infoprotect-step6"></a>
+### <a name="optional-email-encryption-is-configured"></a>Facoltativo: la crittografia della posta elettronica è configurata
+
+La crittografia della posta elettronica seguente è stata configurata in base alle esigenze dell'organizzazione:
+
+|||
+|:-------|:-----|
+| **Metodo di crittografia** | **Per la posta elettronica inviata** |
+| [Office 365 Message Encryption (OME)](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | A contatti esterni all'organizzazione con la crittografia |
+| [Information Rights Management (IRM)](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | Sia con crittografia che con le autorizzazioni |
+| [S/MIME (Secure/Multipurpose Internet Mail Extensions)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | Sia con la crittografia che con le firme digitale con crittografia a chiave pubblica |
+|||
+
+Se necessario, il [Passaggio 6](../infoprotect-email-encryption.md) può aiutare a soddisfare questo requisito.
+
+<a name="crit-infoprotect-step7"></a>
 ### <a name="optional-configure-privileged-access-management-in-office-365"></a>Facoltativo: configurare la gestione degli accessi con privilegi in Office 365
 
 Sono state usate le informazioni contenute nell'argomento [Configurare la gestione degli accessi con privilegi in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) per abilitare l'accesso con privilegi e creare uno o più criteri di accesso con privilegi all'interno dell'organizzazione. I criteri sono stati configurati ed è abilitato l'accesso just-in-time ai dati sensibili o alle impostazioni di configurazione critiche.
 
-Se necessario, il [Passaggio 6](../infoprotect-configure-privileged-access-management.md) può aiutare a soddisfare questo requisito. 
+Se necessario, il [Passaggio 7](../infoprotect-configure-privileged-access-management.md) può aiutare a soddisfare questo requisito. 
