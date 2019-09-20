@@ -3,7 +3,7 @@ title: 'Passaggio 1: definire i livelli di sicurezza e di protezione delle infor
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare i livelli di sicurezza e protezione delle informazioni per l'organizzazione.
-ms.openlocfilehash: 37ef1433f2c117e17c78d297a920424d8e83cbb8
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: a216079e38b173a8b35c49317a072975b0c7f36e
+ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071976"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047259"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>Passaggio 1: definire i livelli di sicurezza e di protezione delle informazioni
 
