@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurare Azure AD Identity Protection e analizzare gli account correnti nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: d267bb9dff94acfec46fa1275887f9cade2a7285
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 97530dcec9c32882bbe3b66eb53eaa6d4668a838
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074086"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071715"
 ---
 # <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Azure AD Identity Protection per l'ambiente di testing Microsoft 365 Enterprise
 
@@ -53,11 +53,11 @@ Se si desidera testare Azure AD Identity Protection in un'azienda simulata, segu
 
    Si dovrebbe vedere un blade di **Azure ad Identity Protection-Overview** con un dashboard. In **vulnerabilità**, si noti che ha determinato il numero di account utente senza registrazione di autenticazione a più fattori. Questo numero può variare in base alle precedenti guide di laboratorio di testing di Microsoft 365 Enterprise eseguite.
 
-6. Fare clic sulle categorie per **** verificare se sono presenti utenti o eventi che sono stati rilevati.
+6. Fare **clic sulle categorie per verificare** se sono presenti utenti o eventi che sono stati rilevati.
 
 Per ulteriori test e sperimentazioni, vedere [simulazione di eventi di rischio](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).
 
-Per informazioni e collegamenti per la distribuzione di Azure AD Identity Protection in produzione, vedere il passaggio di compromesso relativo alla protezione da [credenziali](identity-multi-factor-authentication.md#identity-ident-prot) nella fase Identity.
+Per informazioni e collegamenti per la distribuzione di Azure AD Identity Protection in produzione, vedere il passaggio di compromesso relativo alla protezione da [credenziali](identity-secure-user-sign-ins.md#identity-ident-prot) nella fase Identity.
 
 ## <a name="next-step"></a>Passaggio successivo
 
