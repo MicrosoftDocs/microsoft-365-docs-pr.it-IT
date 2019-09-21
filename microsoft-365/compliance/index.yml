@@ -1,0 +1,93 @@
+### YamlMime:Landing
+title: Documentazione relativa alla conformità a Microsoft 365
+summary: Se l'organizzazione deve essere conforme agli standard legali o normativi, iniziare da qui per ulteriori informazioni sulla conformità in Microsoft 365.
+metadata:
+  title: Documentazione relativa alla conformità a Microsoft 365
+  description: Documentazione per le funzionalità di conformità di Microsoft 365
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 09/20/2019
+  ms.openlocfilehash: 0357312feb1821f343809e93b1a53f2c5df536c4
+  ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 09/20/2019
+  ms.locfileid: "37082854"
+landingContent:
+- title: Gestire la protezione delle informazioni
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Proteggere le informazioni
+      url: protect-information.md
+    - text: Etichette di riservatezza
+      url: sensitivity-labels.md
+    - text: Prevenzione della perdita di dati (DLP)
+      url: data-loss-prevention-policies.md
+    - text: Tipi di informazioni sensibili
+      url: custom-sensitive-info-types.md
+    - text: Crittografia della posta elettronica
+      url: email-encryption.md
+- title: Gestire la governance delle informazioni
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Gestire i record in Microsoft 365
+      url: records-management.md
+    - text: Gestione del piano di archiviazione
+      url: file-plan-manager.md
+    - text: Etichette di conservazione
+      url: labels.md
+    - text: Criteri di conservazione basati su eventi
+      url: event-driven-retention.md
+    - text: Cassette postali inattive
+      url: inactive-mailboxes-in-office-365.md
+    - text: Visualizzare i report sulla governance dei dati
+      url: view-the-data-governance-reports.md
+- title: Gestione dei rischi Insider
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Proteggere l'accesso di utenti e dispositivi
+      url: protect-access-to-data-and-services.md
+    - text: Gestione accessi con privilegi
+      url: privileged-access-management-overview.md
+    - text: Archivio protetto del cliente
+      url: customer-lockbox-requests.md
+    - text: Supervisionare le comunicazioni
+      url: supervision-policies.md
+    - text: Barriere informative
+      url: information-barriers.md
+    - text: Customer Key
+      url: controlling-your-data-using-customer-key.md
+- title: Individuare e rispondere
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Advanced eDiscovery
+      url: overview-ediscovery-20.md
+    - text: Gestire un'analisi dei dati
+      url: overview-data-investigations.md
+    - text: Cercare contenuto
+      url: search-for-content.md
+    - text: Eseguire ricerche nel log di controllo
+      url: search-the-audit-log-in-security-and-compliance.md
+- title: Introduzione alla conformità alle normative
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Compliance Manager
+      url: compliance-manager-overview.md
+    - text: Piano d'azione per la conformità GDPR
+      url: gdpr-action-plan.md
+    - text: Protezione delle informazioni per GDPR
+      url: office-365-info-protection-for-gdpr-overview.md
+    - text: Piano d'azione per la conformità ISO
+      url: iso-action-plan.md
+    - text: Piano d'azione per la conformità NIST
+      url: nist-action-plan.md
