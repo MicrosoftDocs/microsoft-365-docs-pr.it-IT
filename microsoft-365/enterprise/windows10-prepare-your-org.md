@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
-ms.openlocfilehash: 9b09f21c71f578c45a71149cedfd67a8ea9104e6
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 5deae85ae614079c23a373d4ecae7ce81aeb3fcd
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289407"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071775"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Passaggio 1: preparare l'organizzazione per Windows 10 Enterprise
 
@@ -29,9 +29,9 @@ Prima di aggiornare i dispositivi a Windows 10 Enterprise, prendere in considera
   Con un abbonamento a Microsoft 365, viene visualizzato un nome di dominio predefinito che termina con onmicrosoft.com (ad esempio, contoso.onmicrosoft.com). La maggior parte delle organizzazioni preferisce utilizzare uno o più domini propri in modo che gli indirizzi di posta elettronica finiscano con il proprio nome di dominio (come username@contoso.com). Per utilizzare il proprio dominio, è necessario aggiungerlo a Microsoft 365 e verificare di possederlo. Si consiglia di aggiungere e verificare i domini ora in modo che siano pronti a partire ogni volta che si configurano i servizi di Microsoft 365, come la posta elettronica e Skype for business.
 - **Non è necessario aggiungere gli utenti in questo momento** <br>
   Per utilizzare Microsoft 365 Services o installare prodotti Microsoft 365, gli utenti hanno bisogno di account in Microsoft 365 e hanno bisogno di licenze di prodotto. Il modo in cui si aggiungono utenti a Microsoft 365 dipende dal numero di utenti e dal fatto che si disponga attualmente di Active Directory locale. Se non si dispone di Active Directory (o si dispone di Active Directory, ma non si desidera sincronizzarlo con Microsoft 365), è possibile aggiungere gli utenti direttamente a Microsoft 365 e assegnare licenze, singolarmente o in blocco. <br>
-  Se si dispone di Active Directory locale, è possibile [sincronizzarlo con microsoft 365](identity-azure-ad-connect.md#identity-sync) per creare account utente in Azure ad, la directory cloud utilizzata da Microsoft 365. Con questo metodo, è possibile creare account per gli utenti e per i gruppi di sicurezza utilizzati per gestire le autorizzazioni per le risorse (come i documenti o le raccolte siti di SharePoint Online). La sincronizzazione di Active Directory con Microsoft 365 non consentirà di assegnare licenze agli utenti.
+  Se si dispone di Active Directory locale, è possibile [sincronizzarlo con microsoft 365](identity-add-user-accounts.md#identity-sync) per creare account utente in Azure ad, la directory cloud utilizzata da Microsoft 365. Con questo metodo, è possibile creare account per gli utenti e per i gruppi di sicurezza utilizzati per gestire le autorizzazioni per le risorse (come i documenti o le raccolte siti di SharePoint Online). La sincronizzazione di Active Directory con Microsoft 365 non consentirà di assegnare licenze agli utenti.
 - **Non è necessario autorizzare gli utenti in questo momento** <br>
-  Prima che gli utenti possano utilizzare Microsoft 365 Services o installare software dal portale Microsoft 365, sono necessarie licenze di prodotto. In qualità di amministratore globale o di gestione utenti, è possibile assegnare direttamente licenze di prodotti in Microsoft 365 singolarmente o in blocco. È inoltre possibile utilizzare le [licenze basate su gruppo](identity-self-service-group-management.md#identity-group-license) per assegnare automaticamente le licenze quando gli utenti vengono aggiunti a un gruppo specifico. 
+  Prima che gli utenti possano utilizzare Microsoft 365 Services o installare software dal portale Microsoft 365, sono necessarie licenze di prodotto. In qualità di amministratore globale o di gestione utenti, è possibile assegnare direttamente licenze di prodotti in Microsoft 365 singolarmente o in blocco. È inoltre possibile utilizzare le [licenze basate su gruppo](identity-use-group-management.md#identity-group-license) per assegnare automaticamente le licenze quando gli utenti vengono aggiunti a un gruppo specifico. 
 - **È possibile installare Office 365 ProPlus separatamente** <br>
   L'ottenimento di una licenza di Microsoft 365 non installa automaticamente Office 365 ProPlus nei computer client. Per ulteriori informazioni, vedere la [fase 4: Office 365 ProPlus](office365proplus-infrastructure.md) . 
 
