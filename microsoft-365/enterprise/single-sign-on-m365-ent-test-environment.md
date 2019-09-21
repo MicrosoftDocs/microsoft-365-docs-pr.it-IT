@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: informazioni sulla configurazione e sul test di Azure AD Seamless Single Sign-On per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 51543b595a0adf6bd0abcad8bc59be4dc8834e36
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 4d62405bc500bdf0dec8aa8aa6639e0802aa232e
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074136"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071565"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Azure AD Seamless Single Sign-On per l'ambiente di testing di Microsoft 365
 
@@ -109,7 +109,7 @@ Questa configurazione è costituita da:
 - Periodicamente, Azure AD Connect viene eseguito su APP1 per sincronizzare l'elenco di account e gruppi dal tenant di Azure AD degli abbonamenti a Office 365 ed EMS E5 al dominio TESTLAB Active Directory Domain Services. 
 - Azure AD Seamless SSO viene abilitato in modo che i computer sulla rete Intranet simulata possano accedere alle risorse cloud di Microsoft 365 senza specificare una password per l'account utente.
 
-Vedere il passaggio [Semplificare l'accesso utente](identity-password-reset.md#identity-sso) nella fase Identità per informazioni e collegamenti per configurare Azure AD Seamless SSO.
+Vedere il passaggio [Semplificare l'accesso utente](identity-secure-your-passwords.md#identity-sso) nella fase Identità per informazioni e collegamenti per configurare Azure AD Seamless SSO.
 
 ## <a name="next-step"></a>Passaggio successivo
 

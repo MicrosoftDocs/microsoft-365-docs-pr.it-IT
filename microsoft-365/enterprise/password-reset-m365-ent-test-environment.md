@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: informazioni sulla configurazione e sul test di reimpostazione della password per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: de025d6b54b3cc1b69c8e50fec428f58d7754dcb
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8be1e898d0b995ddbed7b63c2f0ce07c969592c8
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073116"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071595"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Reimpostazione della password per l'ambiente di testing di Microsoft 365
 
@@ -85,7 +85,7 @@ Successivamente, testare la reimpostazione della password per l'account utente 2
 9. In **Recuperare l'account**, digitare la nuova password per l'account utente 2 e quindi fare clic su **Fine**. Annotare la password dell'account utente 2 modificata e archiviarla in un luogo sicuro.
 10. In una scheda separata del browser stesso, passare a [ https://portal.office.com ](https://portal.office.com), quindi accedere con il nome dell'account utente 2 e la nuova password. Verrà visualizzata la pagina **Microsoft Office Home**.
 
-Vedere il passaggio [Semplificare la reimpostazione della password](identity-password-reset.md#identity-pw-reset) nella fase Identità per informazioni e collegamenti per configurare la reimpostazione della password.
+Vedere il passaggio [Semplificare la reimpostazione della password](identity-secure-your-passwords.md#identity-pw-reset) nella fase Identità per informazioni e collegamenti per configurare la reimpostazione della password.
 
 ## <a name="next-step"></a>Passaggio successivo
 
