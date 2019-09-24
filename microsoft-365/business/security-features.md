@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Informazioni sulle funzionalità di sicurezza disponibili in Microsoft 365 business.
-ms.openlocfilehash: bd61ad3bf1b34635a7b80f1c9ccf63fa98d31915
-ms.sourcegitcommit: 274af83139ad7da3aa33366c3323d533d95c7db4
+ms.openlocfilehash: 6b8fc215b95913e1beef3a3715119b947a7af406
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017523"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121159"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Funzionalità di sicurezza e conformità di Microsoft 365 business
 
@@ -32,7 +32,7 @@ Microsoft 365 business offre funzionalità di sicurezza semplificate per garanti
     
 ## <a name="microsoft-365-business-admin-center-security-features"></a>Funzionalità di sicurezza dell'interfaccia di amministrazione di Microsoft 365 business
 
-![Banner che puntano https://aka.ms/aboutM365previewa.](media/m365admincenterchanging.png)
+[![Label che consente di sapere che l'interfaccia di amministrazione sta cambiando ed è possibile trovare ulteriori dettagli su aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 È possibile gestire molte delle funzionalità di sicurezza aziendale di Microsoft 365 nell'interfaccia di amministrazione, che consente di abilitare o disabilitare queste funzionalità in modo semplificato. Nell'interfaccia di amministrazione è possibile eseguire le operazioni seguenti:
   

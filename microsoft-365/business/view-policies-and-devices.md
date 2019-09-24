@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Visualizzare i criteri e le azioni dei dispositivi accedendo a Microsoft 365 business con l'amministratore globale di credintials.
-ms.openlocfilehash: 3231cfa61dcc85cda162b05f2c653048e980a8d9
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ea53276f4ee8430031105f2b9c516471c702e839
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072201"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121279"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Visualizzazione e gestione di criteri e dispositivi
 
-![Banner che puntano https://aka.ms/aboutM365previewa.](media/m365admincenterchanging.png)
+[![Label che consente di sapere che l'interfaccia di amministrazione sta cambiando ed è possibile trovare ulteriori dettagli su aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="view-and-edit-device-policies"></a>Visualizzare e modificare i criteri per i dispositivi
 

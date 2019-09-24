@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Informazioni su come configurare Microsoft 365 business.
-ms.openlocfilehash: 1efb7379930f639cf10875cf5aa6731001bb41c8
-ms.sourcegitcommit: 2e5ae52bb641ee1f72c077260b5d0f35622935fe
+ms.openlocfilehash: dbd2e740c85f52d3f43e6cd3d6ce45c478a9b1a9
+ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37005199"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37121319"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Configurare Microsoft 365 business nell'installazione guidata
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>Aggiungere il dominio, gli utenti e i criteri di configurazione
 
-![Banner che puntano https://aka.ms/aboutM365previewa.](media/m365admincenterchanging.png)
+[![Label che consente di sapere che l'interfaccia di amministrazione sta cambiando ed è possibile trovare ulteriori dettagli su aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Quando si acquista Microsoft 365 business, si ha la possibilità di utilizzare un dominio che si è proprietari o di acquistarne uno durante l' [iscrizione](sign-up.md).
 
