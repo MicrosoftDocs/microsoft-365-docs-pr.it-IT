@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Pianificare il set di utenti e gruppi che lavoreranno per l'organizzazione.
-ms.openlocfilehash: 05b854c182b6f624cf143ed93920c344391ee416
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ac7f5e56bae882e01c31cacee856f73b0ead772f
+ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981807"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37071635"
 ---
 # <a name="step-1-plan-for-users-and-groups"></a>Passaggio 1: pianificazione per utenti e gruppi
 
@@ -78,8 +78,6 @@ Dopo aver completato questo passaggio, si ottiene quanto segue:
 
 - Un elenco degli account utente in Azure AD che corrispondono ai dipendenti dell'organizzazione, a fornitori, terzisti e partner esterni che collaborano con l'organizzazione.
 - Un set di gruppi e la loro relativa appartenenza in Azure AD che riflette dei set logici di account utente e altri gruppi per il provisioning automatico delle licenze delle impostazioni di sicurezza per i servizi cloud di Microsoft.
-
-Come checkpoint provvisorio, è possibile vedere i [criteri uscita](identity-exit-criteria.md#crit-identity-user-groups) per questo passaggio.
 
 Dopo avere creato gli utenti e i gruppi di Azure AD, è possibile iniziare ad assegnare le licenze e a usare carichi di lavoro di produttività, ad esempio OneDrive for Business o Exchange Online.
 
