@@ -104,43 +104,11 @@
 ## [Criteri di accesso di Exchange Online consigliati](secure-email-recommended-policies.md)
 ## [Criteri di accesso di SharePoint Online consigliati](sharepoint-file-access-policies.md)
 
-# [Soluzioni per la conformità](../compliance/compliance-solutions-overview.md?toc=/microsoft-365/enterprise/toc.json)
-## [ISO: piano d'azione consigliato](../compliance/iso-action-plan.md)
-## [NIST-piano d'azione consigliato](../compliance/nist-action-plan.md) 
-## [GDPR](../compliance/gdpr.md?toc=/microsoft-365/enterprise/toc.json)
+# [Conformità di Microsoft 365](../compliance/index.yml)
+# [Sicurezza di Microsoft 365](../security/index.yml)
 
-### [Piano d'azione consigliato per GDPR](../compliance/gdpr-action-plan.md)
-
-### [Elenchi di controllo di conformità delle responsabilità](../compliance/gdpr-arc.md)
-#### [Office 365](../compliance/gdpr-arc-Office365.md)
-#### [Azure](../compliance/gdpr-arc-Azure.md)
-#### [Dynamics 365](../compliance/gdpr-arc-Dynamics365.md)
-#### [Servizi professionali e supporto tecnico Microsoft](../compliance/gdpr-arc-prof-services.md)
-
-
-### [Protezione delle informazioni](../compliance/gdpr-information-protection.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [Richieste dell'interessato](../compliance/gdpr-data-subject-requests.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Office 365](../compliance/gdpr-dsr-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure](../compliance/gdpr-dsr-Azure.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Intune](../compliance/gdpr-dsr-Intune.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Dynamics 365](../compliance/gdpr-dsr-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Famiglia di Visual Studio](../compliance/gdpr-dsr-visual-studio-family.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure DevOps Services](../compliance/gdpr-dsr-vsts.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Servizi professionali e supporto tecnico Microsoft](../compliance/gdpr-dsr-prof-services.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [Notifica di violazione](../compliance/gdpr-breach-notification.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Office 365](../compliance/gdpr-breach-Office365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Azure](../compliance/gdpr-breach-Azure.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Dynamics 365](../compliance/gdpr-breach-Dynamics365.md?toc=/microsoft-365/enterprise/toc.json)
-#### [Servizi professionali e supporto tecnico Microsoft](../compliance/gdpr-breach-Microsoft-Support-Professional-Services.md?toc=/microsoft-365/enterprise/toc.json)
-
-### [Valutazioni dell'impatto sulla protezione dei dati](../compliance/gdpr-data-protection-impact-assessments.md)
-#### [Office 365](../compliance/gdpr-dpia-office365.md)
-#### [Azure](../compliance/gdpr-dpia-azure.md)
-#### [Dynamics](../compliance/gdpr-dpia-dynamics.md)
-#### [Servizi professionali e supporto tecnico Microsoft](../compliance/gdpr-dpia-prof-services.md)
-
-### [Responsabile della protezione dei dati di Microsoft](../compliance/gdpr-data-protection-officer.md)
-
-# [Soluzioni di sicurezza](../security/index.yml)
+# [Gestione della continuità aziendale (EBCM) con i servizi cloud](ebcm-understanding-ebcm-with-cloud-services.md)
+## [Responsabilità EBCM del partner cloud e del cliente](ebcm-customer-and-cloud-partner-ebcm-responsibilities.md)
+## [Resilienza dei servizi cloud di Microsoft 365](ebcm-m365-service-resiliency.md)
+## [Sviluppo del piano di continuità](ebcm-developing-your-ebcm-plan.md)
+## [Scenari di attenuazione degli incidenti di servizio](ebcm-microsoft-365-mitigations.md)
