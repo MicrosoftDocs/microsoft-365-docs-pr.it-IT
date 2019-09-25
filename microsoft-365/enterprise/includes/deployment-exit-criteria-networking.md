@@ -1,16 +1,16 @@
 <a name="crit-networking-step1"></a>
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obbligatorio: la rete è pronta per Microsoft 365 Enterprise
 
-- Le sedi hanno una larghezza di banda per Internet adeguata per il traffico di Microsoft 365, compreso Office 365, Microsoft Intune, installazione e aggiornamenti di Windows 10 Enterprise
-- L'architettura della rete globale corrisponde a un'architettura di riferimento di Office 365
-- Le modifiche alla rete sono state sperimentate e verificate e soddisfano i requisiti di latenza del traffico
+- Le sedi hanno una larghezza di banda per Internet adeguata per il traffico di Microsoft 365, compreso Office 365, Microsoft Intune, installazione e aggiornamenti di Windows 10 Enterprise.
+- L'architettura della rete globale corrisponde a un'[architettura di riferimento di Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Le modifiche alla rete sono state sperimentate e verificate e soddisfano i requisiti di latenza del traffico.
 
 Se necessario, il [Passaggio 1](../networking-provide-bandwidth-cloud-services.md) può aiutare a soddisfare questo requisito.
 
 <a name="crit-networking-step2"></a>
 ### <a name="required-your-local-offices-have-local-internet-connections-and-name-resolution"></a>Obbligatorio: gli uffici locali devono avere una risoluzione del nome e connessioni Internet locali
 
-È necessario configurare ogni sede remota con l'accesso Internet tramite un ISP locale i cui server DNS utilizzano un indirizzo IP pubblico locale che identifichi la posizione su Internet. Questo consente agli utenti che hanno accesso a Office 365 e Intune di ottenere le migliori prestazioni possibili.
+È necessario configurare ogni sede remota con l'accesso Internet tramite un ISP locale i cui server DNS utilizzano un indirizzo IP pubblico locale che identifichi la posizione su Internet. Questo consente agli utenti che hanno accesso ai servizi cloud di Microsoft 365.
 
 Se non si utilizza un ISP locale per ogni filiale, le prestazioni potrebbero risentirne, poiché il traffico di rete deve attraversare il backbone dell'organizzazione o le richieste di dati sono servite da server remoti front-end.
 
@@ -20,7 +20,7 @@ Utilizzare uno strumento o un sito Web da un dispositivo nell'ufficio per determ
 Se necessario, il [Passaggio 2](../networking-dns-resolution-same-location.md) può aiutare a soddisfare questo requisito.
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneeded-network-hairpins-are-removed"></a>Facoltativo: gli hairpin di rete non necessari sono stati rimossi
+### <a name="optional-unneccessary-network-hairpins-are-removed"></a>Facoltativo: gli hairpin di rete non necessari sono stati rimossi
 
 Sono stati esaminati gli hairpin di rete ed è stato determinato il loro impatto sulle prestazioni per tutti gli uffici. Ove possibile, sono stati rimossi gli hairpin di rete o è stato utilizzato un provider di sicurezza o una rete di terze parti per implementare il peering di Microsoft 365 ottimale per la rete.
 
