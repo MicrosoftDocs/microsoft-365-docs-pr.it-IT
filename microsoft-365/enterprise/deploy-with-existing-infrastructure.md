@@ -3,7 +3,7 @@ title: Distribuzione di Microsoft 365 Enterprise nell'infrastruttura esistente
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/04/2018
+ms.date: 09/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Andare ai criteri uscita della distribuzione di Microsoft 365 Enterprise quando si dispone di un'infrastruttura esistente.
-ms.openlocfilehash: 8c9c1d1900e9fd1a025d3fd74cc9f358b612a4d1
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073916"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148510"
 ---
 # <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a>Distribuzione di Microsoft 365 Enterprise nell'infrastruttura esistente
 
@@ -27,7 +27,7 @@ Molte organizzazioni dispongono di rete, identità e componenti esistenti oppure
 Prima di uscire da ogni fase, è necessario esaminare i relativi criteri uscita, ovvero un insieme di condizioni necessarie che è necessario soddisfare e di condizioni facoltative da prendere in considerazione. I criteri uscita di ogni fase garantiscono che l'infrastruttura cloud e locale e la risultante configurazione end-to-end soddisfino i requisiti di una distribuzione Microsoft 365 Enterprise.
 
 > [!Note] 
-> FastTrack è un vantaggio continuo e ripetibile, disponibile come parte dell'abbonamento, fornito dai tecnici Microsoft per consentire di passare al cloud secondo le proprie tempistiche. FastTrack inoltre offre l'accesso a partner qualificati per servizi aggiuntivi, in base alle proprie esigenze. Con al momento oltre 40.000 utenti abilitati, FastTrack consente di massimizzare il ROI, di accelerare la distribuzione e di aumentare l'adozione all'interno dell'organizzazione. Vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+> FastTrack è un vantaggio continuo e ripetibile, disponibile gratuitamente come parte dell'abbonamento, fornito dai tecnici Microsoft per consentire di passare al cloud secondo le proprie tempistiche. FastTrack inoltre offre l'accesso a partner qualificati per servizi aggiuntivi, in base alle proprie esigenze. Con al momento oltre 40.000 utenti abilitati, FastTrack consente di massimizzare il ROI, di accelerare la distribuzione e di aumentare l'adozione all'interno dell'organizzazione. Vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
 ## <a name="exit-criteria-for-networking-phase-1"></a>Criteri uscita per la rete (fase 1)
 
@@ -49,7 +49,7 @@ Esaminare le seguenti condizioni obbligatorie e facoltative per l'infrastruttura
 
 ## <a name="exit-criteria-for-office-365-proplus-phase-4"></a>Criteri uscita per Office 365 ProPlus (fase 4)
 
-Soddisfare i requisiti per la valutazione, la pianificazione della distribuzione e la distribuzione dell'infrastruttura di Office 365 ProPlus per Microsoft 365 Enterprise.
+Soddisfare i requisiti per la valutazione, la pianificazione della distribuzione e la distribuzione dell'infrastruttura di Office 365 ProPlus.
 
 [!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
 
