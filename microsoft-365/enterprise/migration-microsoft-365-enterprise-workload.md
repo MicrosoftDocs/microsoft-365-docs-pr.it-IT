@@ -2,7 +2,7 @@
 title: Migrazione a Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Procedura per la migrazione delle versioni di Microsoft Office, Office Server e Windows a Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: 0def2f90a016c6d81f2c05bb3571646d97edf4ca
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 2f5b1b077346e3225252ef25a4e9e685c4892a7c
+ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982822"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37148490"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migrazione a Microsoft 365 Enterprise
 
@@ -30,7 +30,7 @@ Per ottimizzare il valore aziendale della famiglia integrata dei prodotti Micros
 - Windows 7 e Windows 8.1 sui dispositivi a Windows 10 Enterprise
 
 >[!Note]
->Il 14 gennaio 2020, Windows 7 raggiungerà la fine del supporto. Per altre informazioni, fare clic [qui](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
+>Il **14 gennaio 2020** Windows 7 raggiungerà la fine del supporto. Per altre informazioni, fare clic [qui](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
 Eseguire gradualmente tutte le suddette migrazioni permetterà all'organizzazione di diventare un'[area di lavoro moderna](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), un ambiente sicuro e integrato che non pone restrizioni al lavoro in team e alla creatività all'interno dell'organizzazione, il tutto gestito attraverso Microsoft 365 Enterprise. 
@@ -47,8 +47,9 @@ In molte organizzazioni, sia grandi che piccole, è molto comune l'utilizzo di v
 
 - Possono essere [aggiornate](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) con i più recenti aggiornamenti della sicurezza e di risoluzione dei problemi, ma talvolta la procedura è manuale e non applicabile all'organizzazione.
 - Non sono abilitate in modo ottimale per sfruttare le tecnologie cloud di Microsoft e consentire la trasformazione digitale della propria azienda.
+- Non contengono nuove funzionalità.
  
-Microsoft 365 Enterprise include Office 365 ProPlus, una versione dei prodotti client di Office disponibile con una licenza di Microsoft 365 Enterprise, installata e aggiornata da Microsoft Cloud. Per ulteriori informazioni, vedere [Informazioni su Office 365 ProPlus nell'azienda](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Enterprise include Office 365 ProPlus, una versione dei prodotti client di Office disponibile con una licenza di Microsoft 365 Enterprise, installata e aggiornata da Microsoft Cloud. Office 365 ProPlus include aggiornamenti della sicurezza e le funzionalità più recenti. Per altre informazioni, vedere [Informazioni su Office 365 ProPlus nell'azienda](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
 ### <a name="office-2007"></a>Office 2007
 
@@ -72,17 +73,19 @@ Anziché aggiornare i computer che eseguono Office 2010 a Office 2013 o Office 2
 2. Disinstallare Office 2010 dai computer.
 3. Installare Office 365 ProPlus, singolarmente o insieme con un'implementazione IT. Per ulteriori informazioni, vedere [Fase 4: Office 365 ProPlus](office365proplus-infrastructure.md).
 
-Office 365 ProPlus installa automaticamente gli aggiornamenti e sfrutta servizi basati sul cloud in Office 365 per la protezione avanzata e la produttività.
+Office 365 ProPlus installa automaticamente gli aggiornamenti della sicurezza e le nuove funzionalità e sfrutta servizi basati sul cloud in Microsoft 365 per la protezione avanzata e la produttività.
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 e Office 2016
 
-La guida sulla fine del supporto per le versioni Office 2013 e Office 2016 non è ancora stata rilasciata. Tuttavia, come per Office 2010, è ancora possibile [installare gli aggiornamenti](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5), anche se potrebbero non essere effettuati nel modo corretto a seconda delle dimensioni dell'organizzazione. Anziché aggiornare i computer con gli aggiornamenti più recenti per Office 2013 o Office 2016, oppure eseguire l'aggiornamento da Office 2013 a Office 2016, è consigliabile:
+La roadmap per la fine del supporto per le versioni di Office 2013 e Office 2016 non è stata ancora definita. Tuttavia, come per Office 2010, è necessario [installare gli aggiornamenti della sicurezza](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5), che potrebbero non fornire la scalabilità adeguata a seconda delle dimensioni dell'organizzazione.
+
+Anziché continuare ad aggiornare i computer in uso con gli aggiornamenti della sicurezza più recenti per Office 2013 o Office 2016 o anziché aggiornare i computer in uso da Office 2013 a Office 2016, prendere in considerazione quanto segue:
 
 1. Ottenere e assegnare una licenza Microsoft 365 agli utenti.
 2. Disinstallare Office 2013 o Office 2016 dai computer.
 3. Installare Office 365 ProPlus, singolarmente o insieme con un'implementazione IT. Per ulteriori informazioni, vedere [Fase 4: Office 365 ProPlus](office365proplus-infrastructure.md).
 
-Office 365 ProPlus installa automaticamente gli aggiornamenti e sfrutta servizi basati sul cloud in Office 365 per la protezione avanzata e la produttività.
+Office 365 ProPlus installa automaticamente gli aggiornamenti della sicurezza e le nuove funzionalità e sfrutta servizi basati sul cloud in Microsoft 365 per la protezione avanzata e la produttività.
 
 ## <a name="migration-for-microsoft-office-server-products"></a>Migrazione per i prodotti server di Microsoft Office
 
@@ -93,7 +96,7 @@ In molte organizzazioni, sia grandi che piccole, è molto comune l'utilizzo di v
 - Non includono nuove applicazioni per la produttività, come Microsoft Teams.
 - Non includono le funzionalità di sicurezza più recenti, come Exchange Advanced Threat Protection.
 
-Microsoft 365 Enterprise include Office 365, caratterizzato da versioni basate sul cloud dei servizi server di Office che utilizzano alcuni degli stessi strumenti delle versioni locali del prodotto server di Office, come i Web browser e il client Outlook. Questi servizi vengono costantemente aggiornati senza l'intervento di professionisti IT, risparmiando il tempo necessario all'aggiornamento e alla manutenzione dei server locali. I suddetti servizi presentano inoltre miglioramenti non presenti nel prodotto server di Office. 
+Microsoft 365 Enterprise include Office 365, che presenta versioni basate sul cloud dei servizi server di Office che sfruttano alcuni degli stessi strumenti delle versioni locali del prodotto server di Office, come Web browser e il client di Outlook. Questi servizi vengono continuamente aggiornati in termini di sicurezza senza coinvolgere l'IT, consentendo agli utenti di risparmiare tempo per gestire e aggiornare i server locali. Questi servizi dispongono anche di nuovi miglioramenti delle funzionalità che non sono presenti nel prodotto server di Office. 
 
 ### <a name="office-server-2007"></a>Office Server 2007
 
@@ -113,14 +116,14 @@ Anziché aggiornare i prodotti server nel rilascio di Office 2007 con i prodotti
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-Per i prodotti server nel rilascio di Office 2010, la data della fine del supporto non è ancora stata determinata per:
+Per i prodotti server nel rilascio di Office 2010, la fine del supporto è prevista dal **13 ottobre 2020** per:
 
-- Per [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) è il **14 gennaio 2010**.
-- Per [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) è il **13 ottobre 2020**.
+- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
+- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
 Anziché aggiornare questi prodotti server nel rilascio di Office 2010 con i prodotti server nel rilascio di Office 2013 o Office 2016, è consigliabile:
 
-1. Eseguire la migrazione dei dati sui server di Office 2010 a Office 365. Per ricevere assistenza durante questa procedura, vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365) o contattare un partner Microsoft.
+1. Eseguire la migrazione dei dati sui server di Office 2010 a Microsoft 365. Per informazioni in merito, vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365) o assumere un partner Microsoft.
 2. Presentare le nuove funzionalità e i processi di lavoro agli utenti.
 3. Se i server locali che eseguono prodotti server di Office 2010 non sono più necessari, rimuoverli.
 
@@ -142,7 +145,7 @@ Per i prodotti server nel rilascio di Office 2016, la data della fine del suppor
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Migrazione per Microsoft Windows 7 e 8.1
 
-Il supporto per Windows 7 termina il **14 gennaio 2010**. Per eseguire la migrazione dei dispositivi con sistema operativo Windows 7 o Windows 8.1, è possibile eseguire un [aggiornamento sul posto](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade). 
+Il **14 gennaio 2020** Windows 7 raggiungerà la fine del supporto. Per eseguire la migrazione dei dispositivi con sistema operativo Windows 7 o Windows 8.1, è possibile eseguire un [aggiornamento sul posto](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade). 
 
 Per altri metodi, vedere [Scenari di distribuzione di Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). È anche possibile [pianificare la distribuzione di Windows 10](https://aka.ms/planforwin10deployment) autonomamente.
 
