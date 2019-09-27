@@ -7,15 +7,17 @@
 ## [Usare la sottoscrizione gratuita ad Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Pianificare la sicurezza e la conformità in Office 365](plan-for-security-and-compliance.md)
 
-# Gestione dei rischi Insider
+# Gestione dei rischi interni
 ## [Proteggere l'accesso di utenti e dispositivi](protect-access-to-data-and-services.md)
-## [Privileged Access Management](privileged-access-management-overview.md)
-## [Configurare la gestione degli accessi con privilegi](privileged-access-management-configuration.md)
 ## [Customer Lockbox](customer-lockbox-requests.md)
+## [Privileged Access Management]()
+### [Informazioni sulla gestione degli accessi con privilegi](privileged-access-management-overview.md)
+### [Configurare la gestione degli accessi con privilegi](privileged-access-management-configuration.md)
 ## Customer Key
 ### [Controllare i dati in Office 365 con Customer Key](controlling-your-data-using-customer-key.md)
 ### [Domande frequenti sulla crittografia del servizio con Customer Key per Office 365](service-encryption-with-customer-key-faq.md)
-## [Supervisionare le comunicazioni](supervision-policies.md)
+## [Supervisione della comunicazione]()
+### [Informazioni sulla vigilanza sulla comunicazione](supervision-policies.md)
 ### [Configurare i criteri di supervisione per l'organizzazione](configure-supervision-policies.md)
 ## [Barriere informative](information-barriers.md)
 ### [Definire i criteri di barriera delle informazioni](information-barriers-policies.md)
@@ -285,6 +287,7 @@
 ## [Assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md)
 ## [Impostare i limiti di conformità per le indagini eDiscovery in Office 365](set-up-compliance-boundaries.md)
 ## [Soluzione eDiscovery: scenario di compromissione di dati riservati, ricerca ed eliminazione definitiva](data-spillage-scenariosearch-and-purge.md)
+## [Risoluzione dei problemi comuni relativi a eDiscovery](ediscovery-troubleshooting-common-issues.md)
 
 ## Gestire i blocchi
 ### [Creare un blocco di eDiscovery](ediscovery-cases.md#step-4-place-content-locations-on-hold)
