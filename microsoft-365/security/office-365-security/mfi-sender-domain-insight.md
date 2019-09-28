@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sull'Insight del dominio del mittente Fix nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: 42a673c5e6b04109656ef35bb5a80504ed1f42a9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bda6482b2c9264337db9e95f84ff41ce08582363
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084659"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306150"
 ---
 # <a name="fix-sender-domain-insight"></a>Risolvere le informazioni dettagliate del dominio del mittente
 

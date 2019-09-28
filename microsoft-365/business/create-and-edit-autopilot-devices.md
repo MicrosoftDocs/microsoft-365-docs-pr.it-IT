@@ -11,23 +11,19 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Informazioni su come caricare i dispositivi tramite il pilota automatico in Microsoft 365 business. È possibile assegnare un profilo a un dispositivo o a un gruppo di dispositivi.
-ms.openlocfilehash: dee77a014ef519f3487a082edc3cf81058ec1c00
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 9ae94266f5a41d8d115fc92f0f080a6fdbdc9f15
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071641"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288016"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Creare e modificare dispositivi AutoPilot
 
@@ -41,9 +37,9 @@ I dispositivi devono soddisfare questi requisiti:
     
 - Devono essere nuovi dispositivi per i quali non è stata eseguita la Configurazione guidata di Windows.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 business, **** \> scegliere Devices Autopilot. ****
+1. Nell'interfaccia di amministrazione di Microsoft 365 business, scegliere **Devices** \> **Autopilot**.
   
-2. Nella pagina **Autopilot** scegliere la \> scheda **dispositivi** **Aggiungi dispositivi**.
+2. Nella pagina **Autopilot** scegliere la scheda \> **dispositivi** **Aggiungi dispositivi**.
     
     ![In the Devices tab, choose Add devices.](media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   

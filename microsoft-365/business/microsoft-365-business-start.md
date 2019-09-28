@@ -10,22 +10,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come configurare Microsoft 365 business.
-ms.openlocfilehash: d309700761ee48ef66a8cd3886fd416c79463ed5
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 52e3167986bb7ed835762540e8076a3b9b2a0b56
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074301"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287636"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Introduzione a Microsoft 365 Business
 
@@ -73,7 +69,7 @@ Seguire la procedura descritta in[set up mobile devices for Microsoft 365 busine
   
 ### <a name="3-prepare-pcs"></a>3: preparare i PC
 
-Gli amministratori possono preselezionare le impostazioni per i nuovi dispositivi Windows 10 PC utilizzando [Windows Autopilot](add-autopilot-devices-and-profile.md). Gli utenti possono configurare i dispositivi Windows 10 esistenti o nuovi attenendosi alla procedura descritta in questo argomento: [configurare i PC Windows per gli utenti aziendali di Microsoft 365](set-up-windows-devices.md). Per gli utenti di dispositivi esistenti ****, facoltativamente, è anche possibile[spostare i file in OneDrive for business](move-files-to-onedrive.md). Possono anche utilizzare strumenti di terze parti per spostare i file associati al profilo di Windows in OneDrive.
+Gli amministratori possono preselezionare le impostazioni per i nuovi dispositivi Windows 10 PC utilizzando [Windows Autopilot](add-autopilot-devices-and-profile.md). Gli utenti possono configurare i dispositivi Windows 10 esistenti o nuovi attenendosi alla procedura descritta in questo argomento: [configurare i PC Windows per gli utenti aziendali di Microsoft 365](set-up-windows-devices.md). Per gli utenti di dispositivi esistenti, **facoltativamente**, è anche possibile[spostare i file in OneDrive for business](move-files-to-onedrive.md). Possono anche utilizzare strumenti di terze parti per spostare i file associati al profilo di Windows in OneDrive.
   
 Se l'organizzazione utilizza Windows Server Active Directory in locale, è possibile configurare Microsoft 365 business per proteggere i dispositivi Windows 10, mantenendo comunque l'accesso alle risorse locali che richiedono l'autenticazione locale. Seguire la procedura descritta in [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 business](manage-windows-devices.md) to set this up. Questo è il metodo preferito e i dispositivi in questo stato sono denominati **dispositivi ibridi di Azure ad Uniti**. 
   
@@ -92,6 +88,6 @@ Dopo aver configurato i PC con Windows 10, è possibile [installare automaticame
 ## <a name="related-topics"></a>Argomenti correlati
 [Documentazione e risorse su Microsoft 365 Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Gestire Microsoft 365 business](manage.md) [Eseguire la migrazione a Microsoft 365 business](migrate-to-microsoft-365-business.md)
+Gestire la migrazione di [microsoft 365 business](manage.md)[a Microsoft 365 business](migrate-to-microsoft-365-business.md)
   
 

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft (EOP) Exchange Online Protection offre diversi rapporti che consentono di determinare lo stato generale e l'integrità dell'organizzazione. Sono inoltre disponibili strumenti per la risoluzione dei problemi relativi a eventi specifici, ad esempio il mancato recapito di un messaggio ai destinatari desiderati, e report di controllo per assicurare il rispetto dei requisiti di conformità. Nella tabella seguente vengono descritti i report e gli strumenti per la risoluzione dei problemi disponibili per gli amministratori di EOP.
-ms.openlocfilehash: 39ac70c401cb4a630b95fab89fe3a145495c29eb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e1a07d8872bee89689f8ce3e16a87bb69c4b6903
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082809"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306090"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Creazione di rapporti e traccia dei messaggi in Exchange Online Protection
 
@@ -23,11 +23,11 @@ Microsoft (EOP) Exchange Online Protection offre diversi rapporti che consentono
 
 ## <a name="usage-reports"></a>Report sull'uso
 
-**Attività gruppi di office 365**: consente di visualizzare informazioni sul numero di gruppi di Office 365 creati e utilizzati.  
+**Attività gruppi di office 365**: consente di visualizzare informazioni sul numero di gruppi di Office 365 creati e utilizzati.
 
-**Attività di posta elettronica**: consente di visualizzare informazioni sul numero di messaggi inviati, ricevuti e letti nell'intera organizzazione e per utenti specifici.  
+**Attività di posta elettronica**: consente di visualizzare informazioni sul numero di messaggi inviati, ricevuti e letti nell'intera organizzazione e per utenti specifici.
 
-**Utilizzo delle app di posta elettronica**: consente di visualizzare le informazioni sulle app di posta elettronica utilizzate. Questi dati includono il numero totale di connessioni per ogni applicazione e le versioni di Outlook con cui si stabilisce la connessione.  
+**Utilizzo delle app di posta elettronica**: consente di visualizzare le informazioni sulle app di posta elettronica utilizzate. Questi dati includono il numero totale di connessioni per ogni applicazione e le versioni di Outlook con cui si stabilisce la connessione.
 
 **Utilizzo delle cassette postali**: consente di visualizzare informazioni sull'archiviazione utilizzata, sul consumo di quote, sul numero di elementi e sull'ultima attività (invio o lettura) per le cassette postali.
 
@@ -43,11 +43,11 @@ Per ulteriori informazioni, vedere le risorse seguenti:
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Rapporti di conformità & di sicurezza nell'interfaccia di amministrazione di Microsoft 365
 
-Questi report avanzati forniscono un'esperienza di report interattiva per gli amministratori di EOP, che include informazioni di riepilogo e la possibilità di eseguire il drill-down per ulteriori dettagli.  
+Questi report avanzati forniscono un'esperienza di report interattiva per gli amministratori di EOP, che include informazioni di riepilogo e la possibilità di eseguire il drill-down per ulteriori dettagli.
 
-**Advanced Threat Protection (ATP)**: visualizzare informazioni sui collegamenti sicuri e sugli allegati sicuri che fanno parte di ATP.  
+**Advanced Threat Protection (ATP)**: visualizzare informazioni sui collegamenti sicuri e sugli allegati sicuri che fanno parte di ATP.
 
-**EOP**: consente di visualizzare informazioni su rilevamenti di malware, posta contraffatta, rilevamenti di posta indesiderata e flusso di posta da e verso l'organizzazione.  
+**EOP**: consente di visualizzare informazioni su rilevamenti di malware, posta contraffatta, rilevamenti di posta indesiderata e flusso di posta da e verso l'organizzazione.
 
 [Visualizzare i report per Advanced Threat Protection e Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=852409)
 
@@ -63,9 +63,9 @@ Vedere [servizi Web di Reporting di Office 365](https://go.microsoft.com/fwlink/
 
 ## <a name="message-trace"></a>Traccia dei messaggi
 
-Consente di seguire il percorso dei messaggi all'interno di EOP. È possibile stabilire se un messaggio di posta elettronica è stato ricevuto, rifiutato, ritardato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.  
+Consente di seguire il percorso dei messaggi all'interno di EOP. È possibile stabilire se un messaggio di posta elettronica è stato ricevuto, rifiutato, ritardato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
 
-È possibile utilizzare queste informazioni per rispondere in modo efficiente alle domande dell'utente, risolvere i problemi relativi al flusso di posta, convalidare le modifiche apportate ai criteri e ridurre la necessità di contattare il supporto tecnico per assistenza.  
+È possibile utilizzare queste informazioni per rispondere in modo efficiente alle domande dell'utente, risolvere i problemi relativi al flusso di posta, convalidare le modifiche apportate ai criteri e ridurre la necessità di contattare il supporto tecnico per assistenza.
 
 Vedere [traccia di un messaggio di posta elettronica](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)
 
@@ -76,7 +76,7 @@ Consente di tenere traccia di modifiche specifiche apportate all'organizzazione 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Rapporti e latenza e disponibilità dei dati dei messaggi
 
 La tabella seguente descrive quando in EOP le funzionalità di creazione rapporti e dati di traccia dei messaggi sono disponibili e per quanto tempo.
-  
+
 ||||
 |:-----|:-----|:-----|
 |**Tipo di rapporto**|**Dati disponibili per (periodo passato)**|**Latenza**|
@@ -85,4 +85,4 @@ La tabella seguente descrive quando in EOP le funzionalità di creazione rapport
 |Dati di traccia dei messaggi|90 giorni|Quando si esegue la traccia dei messaggi per i messaggi creati da meno di 7 giorni, i messaggi devono essere visualizzati entro un periodo compreso tra 5 e 30 minuti.<br/><br/> Quando si esegua la traccia dei messaggi per messaggi creati da più di 7 giorni, i risultati potrebbero richiedere alcune ore.|
 
 > [!NOTE]
-> La disponibilità e la latenza dei dati sono le stesse se richieste tramite l'interfaccia di amministrazione di Microsoft 365 o Remote PowerShell. 
+> La disponibilità e la latenza dei dati sono le stesse se richieste tramite l'interfaccia di amministrazione di Microsoft 365 o Remote PowerShell.

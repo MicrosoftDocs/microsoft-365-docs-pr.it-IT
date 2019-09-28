@@ -13,21 +13,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Panoramica dei passaggi di configurazione per Microsoft 365 business.
-ms.openlocfilehash: ae7ed0aab36a6e759e0f0c1fbc3d3183273a284e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074406"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288576"
 ---
 # <a name="overview-of-setup"></a>Panoramica dell'installazione
 
@@ -36,7 +33,7 @@ La maggior parte dei passaggi di configurazione può essere effettuata nell'inst
 
 ## <a name="step-1-add-your-domain-and-users"></a>Passaggio 1: aggiungere il dominio e gli utenti
 
-   - **[Aggiungere il dominio](set-up.md#add-your-domain-to-personalize-sign-in)** Se il dominio è stato acquistato durante l' [iscrizione](sign-up.md), questo passaggio è già stato fatto.
+   - **[Aggiungere il dominio](set-up.md#add-your-domain-to-personalize-sign-in)** (se è stato acquistato il dominio durante l' [iscrizione](sign-up.md), questo passaggio è già stato fatto).
 
     - **Aggiungere utenti**. È possibile eseguire questa operazione in uno dei tre modi seguenti:
         - Nella [procedura guidata](set-up.md#add-users-in-the-wizard).

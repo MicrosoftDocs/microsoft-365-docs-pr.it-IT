@@ -11,22 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come configurare Microsoft 365 business.
-ms.openlocfilehash: 64cfa460311af6cdafb637ceb3415511e003e394
-ms.sourcegitcommit: dd0d99d2ff930cd1777d6704f4d88a70adc9ca74
+ms.openlocfilehash: 8568232eb65485f1e016342bb13de9a07f706c00
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35853150"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288536"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Panoramica di Microsoft 365 business
 
@@ -45,7 +41,7 @@ I dati aziendali possono essere compromessi in molti modi. L'utente e gli utenti
 1. Credenziali di accesso compromesse o deboli.
 2. Dispositivo compromesso con un pin debole o un dispositivo di proprietà di un utente.
 3. Utenti che possono copiare/incollare/salvare i dati dell'organizzazione in app personali.
-4. Utenti che installano e utilizzano<sup></sup> app di terze parti con protezione debole.
+4. Utenti che installano e utilizzano app<sup>di terze</sup> parti con protezione debole.
 5. Vulnerabilità della posta elettronica, tra cui la condivisione di dati sensibili, tentativi di phishing, malware e così via.
 6. Quando le persone che non dovrebbero, possono accedere ai documenti con informazioni riservate.
 

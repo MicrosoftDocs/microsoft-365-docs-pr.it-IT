@@ -10,20 +10,17 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
-ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come acquistare e iscriversi a Microsoft 365 business.
-ms.openlocfilehash: 0f92bf35d2a7898d530fd509d8d13c91f32ccab3
-ms.sourcegitcommit: 64a7511d8c5ef527673b4c05753e6bb52ce9ab86
+ms.openlocfilehash: bcdf0adc60c597a5eca485415f33662402d12cf4
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35114923"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37288236"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Iscriversi a Microsoft 365 business
 
@@ -59,4 +56,4 @@ Dopo aver acquistato Microsoft 365 business, eseguire la procedura seguente.
     È quindi possibile passare all'interfaccia di [Amministrazione](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/what-tax-will-i-be-charged?view=o365-worldwide) per completare la [configurazione](set-up.md).
 
     > [!NOTE]
-    > Se, al termine del programma di installazione, si seleziona il collegamento **Vai all'interfaccia di amministrazione**, l'utente verrà portato direttamente all' [](set-up.md) esperienza di configurazione.
+    > Se, al termine del programma di installazione, si seleziona il collegamento **Vai all'interfaccia di amministrazione**, l'utente verrà portato direttamente all' [esperienza di](set-up.md) configurazione.

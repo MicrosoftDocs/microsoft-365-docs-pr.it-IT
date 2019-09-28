@@ -10,21 +10,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- Core_O365Admin_Migration
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Visualizzare i criteri e le azioni dei dispositivi accedendo a Microsoft 365 business con l'amministratore globale di credintials.
-ms.openlocfilehash: ea53276f4ee8430031105f2b9c516471c702e839
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+description: Visualizzare i criteri e le azioni del dispositivo accedendo a Microsoft 365 business con le credenziali di amministratore globale.
+ms.openlocfilehash: 26cb0d4ebe819b6131aaa4d2e18ef3b2ad588a7c
+ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37121279"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37287576"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Visualizzazione e gestione di criteri e dispositivi
 
