@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Caricare gli utenti dell’organizzazione per la produttività dei carichi di lavoro di Microsoft 365 Enterprise.
-ms.openlocfilehash: 730826f388364d1232f1750059002d111279c1be
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: e8608bd18e493aeb0b0b1200a3b9e9aa6083b641
+ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981937"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37306010"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Carichi di lavoro e scenari di Microsoft 365 Enterprise
 
@@ -29,7 +29,11 @@ Per ottenere i vantaggi di creatività e collaborazione di Microsoft 365 Enterpr
 
 Consultare il carico di lavoro della [migrazione](migration-microsoft-365-enterprise-workload.md) per una roadmap generale per eseguire la migrazione di tutta l'organizzazione a Microsoft 365 Enterprise, che include i prodotti client di Microsoft Office, i prodotti locali di Office Server e i dispositivi Microsoft basati su Windows.
 
-Gli scenari usano le funzionalità e i servizi di Microsoft 365 Enterprise in modo integrato per soddisfare le esigenze aziendali. Una di queste è proteggere dati estremamente regolamentati archiviati in Microsoft 365. I dati estremamente regolamentati includono asset digitali, tra cui:
+Gli scenari usano le funzionalità e i servizi di Microsoft 365 Enterprise in modo integrato per soddisfare le esigenze aziendali. 
+
+Una di queste esigenze è assicurarsi che i dipendenti possano lavorare in modo produttivo e sicuro quando non sono direttamente connessi alla Intranet aziendale. Per una roadmap generale su come distribuire gli elementi dell'infrastruttura e favorire l'adozione da parte degli utenti remoti per i carichi di lavoro chiave, ad esempio Team ed Exchange Online, vedere lo scenario [Supportare lavoratori remoti](empower-people-to-work-remotely.md).
+
+Un'altra di queste esigenze è proteggere dati estremamente regolamentati archiviati in Microsoft 365. I dati estremamente regolamentati includono asset digitali, tra cui:
 
 - Soggetti alle normative internazionali.
 - I dati più importanti per l'organizzazione, ad esempio segreti finanziari o informazioni sulle risorse umane e strategia dell'organizzazione.
