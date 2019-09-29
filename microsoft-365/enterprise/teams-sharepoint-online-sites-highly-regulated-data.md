@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un sito del team SharePoint Online sicuro o un team di Microsoft Teams per archiviare gli asset digitali più importanti e riservati.
-ms.openlocfilehash: 04984be44ddb2cc1aabc2032970f92e71899b268
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 1243a88e6553b1d58370a60b5e2fec38d3dbcaf6
+ms.sourcegitcommit: 681ae93ca1d07532944665cf5d99ff1f08c0b46a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047339"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37210052"
 ---
 # <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Siti Microsoft Teams e SharePoint Online per dati altamente riservati
 
