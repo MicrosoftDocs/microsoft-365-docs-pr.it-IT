@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Impostare i criteri di revisione di supervisione per acquisire le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: ccbc5897ef8c6fb6018793ff7e3fe7731ee14710
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dae8969598f5a71814c1b61db83341f30c0cb9d7
+ms.sourcegitcommit: 8e5b799efd3ddd0eae9dd2835c3783103817fb4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083215"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37317618"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurare criteri di supervisione per l'organizzazione
 
@@ -52,10 +52,6 @@ Seguire questa procedura per configurare e usare la supervisione nell'organizzaz
 - **Passaggio 5 (facoltativo)**: [testare i criteri di supervisione](#step-5-test-your-supervision-policy-optional)
 
     Testare i criteri di supervisione per assicurarsi che funzioni come desiderato. È importante garantire che la strategia di conformità soddisfi gli standard.
-
-- **Passaggio 6 (facoltativo)**: [configurare Outlook per i revisori che non desiderano utilizzare il dashboard di supervisione di Office 365 per esaminare le comunicazioni sorvegliate](#step-6-configure-outlook-for-reviewers-optional)
-
-    Configurare Outlook per consentire agli utenti di accedere alla funzionalità di supervisione all'interno del client Outlook in modo che possano valutare e categorizzare ogni elemento.
 
 ## <a name="step-1-set-up-groups-for-supervision-optional"></a>Passaggio 1: configurare i gruppi per la supervisione (facoltativo)
 
@@ -181,70 +177,10 @@ Dopo aver creato un criterio di supervisione, è consigliabile verificare che le
 1. Aprire un client di posta elettronica o Microsoft teams connesso come utente controllato definito nel criterio che si desidera sottoporre a test.
 2. Inviare un messaggio di posta elettronica o Microsoft teams chat che soddisfi i criteri definiti nei criteri di supervisione. Può trattarsi di una parola chiave, dimensioni degli allegati, dominio e così via. Assicurarsi di determinare se le impostazioni condizionali configurate nel criterio sono troppo restrittive o troppo indulgenti.
 
-    > [!Note]
+    > [!NOTE]
     > I messaggi di posta elettronica soggetti a criteri definiti vengono elaborati in tempo quasi reale e possono essere testati immediatamente dopo la configurazione del criterio. Le chat in Microsoft teams possono richiedere fino a 24 ore per il processo completo in un criterio. 
 
 3. Accedere al tenant di Office 365 come un revisore designato nei criteri di supervisione. Passare alla **supervisione** > del*criterio* > personalizzato**aperto** per visualizzare il report per il criterio.
-
-## <a name="step-6-configure-outlook-for-reviewers-optional"></a>Passaggio 6: configurare Outlook per i revisori (facoltativo)
-
-I revisori che desiderano utilizzare Outlook invece del dashboard di supervisione in Office 365 per esaminare le comunicazioni devono configurare il client di Outlook.
-
-### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Passaggio 1: copiare l'indirizzo della cassetta postale di supervisione
-
-Per configurare la revisione per Outlook desktop, è necessario l'indirizzo della cassetta postale di supervisione creata come parte del programma di installazione dei criteri di supervisione.
-  
-> [!NOTE]
-> Se un altro utente ha creato il criterio, è necessario ottenere questo indirizzo da loro per installare il componente aggiuntivo.
-
-**Per trovare l'indirizzo della cassetta postale di supervisione**
-  
-1. Accedere al [centro conformità](https://compliance.microsoft.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
-
-2. Andare a **supervisione**.
-
-3. Selezionare un criterio di supervisione per le comunicazioni che si desidera esaminare.
-
-4. Nel riquadro a comparsa dei dettagli del criterio, in **cassetta postale di supervisione**, copiare l'indirizzo.<br/>![La sezione "cassetta postale di supervisione" del riquadro a comparsa dei dettagli del criterio di supervisione che mostra l'indirizzo della cassetta postale](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
-  
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>Passaggio 2: configurare la cassetta postale di supervisione per l'accesso di Outlook
-
-Successivamente, i revisori devono eseguire un paio di comandi di PowerShell di Exchange online in modo che possano connettere Outlook alla cassetta postale di supervisione.
-  
-1. Connettersi a PowerShell per Exchange Online. [Come eseguire l'operazione](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
-
-2. Eseguire i comandi seguenti, dove *SupervisoryReview {GUID} @domain. onmicrosoft.com* è l'indirizzo copiato nel passaggio 1 sopra e *User* è il nome del revisore che si collegherà alla cassetta postale di supervisione nel passaggio 3.
-
-    ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
-
-    ```Set-Mailbox "<SupervisoryReview{GUID}@domain.onmicrosoft.com>" -HiddenFromAddressListsEnabled: $false```
-
-3. Attendere almeno un'ora prima di passare al passaggio 3.
-
-### <a name="step-3-create-an-outlook-profile-to-connect-to-the-supervision-mailbox"></a>Passaggio 3: creare un profilo di Outlook per la connessione alla cassetta postale di supervisione
-
-Per il passaggio finale, i revisori devono creare un profilo di Outlook per la connessione alla cassetta postale di supervisione.
-
-> [!NOTE]
-> Per creare un nuovo profilo di Outlook, è possibile utilizzare le impostazioni di posta elettronica nel pannello di controllo di Windows. Il percorso da eseguire per accedere a queste impostazioni può dipendere dal sistema operativo Windows (Windows 7, Windows 8 o Windows 10) in uso e dalla versione di Outlook installata.
-  
-1. Aprire il pannello di controllo. Nella casella di **ricerca** nella parte superiore della finestra digitare **mail**.<br/>(Non si è sicuri di come accedere al pannello di controllo? Vedere [dove si trova il pannello di controllo?](https://support.microsoft.com/help/13764/windows-where-is-control-panel)
-  
-2. Aprire l'app di **posta elettronica** .
-
-3. In **configurazione posta elettronica-Outlook**, fare clic su **Mostra profili**.<br/>![La finestra di dialogo "configurazione della posta elettronica-Outlook" con il pulsante ' Mostra profili ' evidenziata](media/28b5dae9-d10c-4f2b-926a-294c857d555c.jpg)
-  
-4. In **posta**, fare clic su **Aggiungi**. Quindi, in **nuovo profilo**, immettere un nome per la cassetta postale di supervisione, ad esempio la **supervisione**.<br/>![La finestra di dialogo ' nuovo profilo ' che mostra il nome ' supervisione ' nella casella ' nome profilo '](media/d02ae181-b541-4ec6-8f51-698f30033204.jpg)
-  
-5. In **Connetti Outlook a Office 365**fare clic su **Connetti a un account diverso**.<br/>![Il messaggio ' Connect Outlook to Office 365' con il collegamento ' Connetti a un account diverso ' evidenziato](media/fac49ff8-a7f0-4e82-a271-9ec045a95de1.jpg)
-  
-6. In **Configurazione account automatico**, scegliere **installazione manuale o tipi di server aggiuntivi**, quindi fare clic su **Avanti**.
-
-7. In **Scegli il tipo di account**, scegli **Office 365**. Nella casella indirizzo di **posta elettronica** immettere quindi l'indirizzo della cassetta postale di supervisione copiata in precedenza.<br/>![La pagina ' Scegli il tipo di account ' della finestra di dialogo ' Aggiungi account ' in Outlook che mostra la casella ' indirizzo di posta elettronica ' evidenziata.](media/4f601236-9f69-4cf6-a58c-0b91204aa8cb.jpg)
-  
-8. Quando richiesto, immettere le credenziali di Office 365.
-
-9. Se l'operazione ha esito positivo, la cartella **nome \<\> criterio** è elencata nella visualizzazione elenco cartelle in Outlook.
 
 ## <a name="powershell-reference"></a>Informazioni di riferimento su PowerShell
 

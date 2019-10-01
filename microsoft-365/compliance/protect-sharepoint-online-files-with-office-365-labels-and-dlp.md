@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Sintesi: applicare etichette di conservazione e criteri di prevenzione della perdita dei dati ai siti del team di SharePoint Online con vari livelli di protezione delle informazioni.'
-ms.openlocfilehash: cf1565f2a3fbe420abf7739528a78befda9dfe82
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 77da4ec44e31fae8db2c37ebc39233f76c5e4dd3
+ms.sourcegitcommit: 8e5b799efd3ddd0eae9dd2835c3783103817fb4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084408"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37317608"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteggere i file di SharePoint Online con le etichette di conservazione e la prevenzione della perdita dei dati
 
@@ -222,14 +222,9 @@ Di seguito è riportata la configurazione risultante per i siti con riservatezza
     
 ## <a name="see-also"></a>Vedere anche
 
-<<<<<<< HEAD [Protezione di file e siti di SharePoint Online](/security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
-<a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizationssecurityoffice-365-securitymicrosoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-omd"></a>[Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
-=======
 [Protezione di file e siti di SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
-[Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
->>>>>>> 9904103ea22646c71f6541e03c7491a767a783ce
+[Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile](../security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adozione del cloud e soluzioni ibride](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 
