@@ -340,7 +340,9 @@
 ### [Campi dei metadati del documento](document-metadata-fields.md)
 ### [Gestire processi](manage-jobs.md)
 
-# [Eseguire ricerche nel log di controllo](search-the-audit-log-in-security-and-compliance.md)
+# Gestire i criteri di controllo e avviso
+## [Eseguire ricerche nel log di controllo](search-the-audit-log-in-security-and-compliance.md)
+## [Gestire i criteri di avviso](alert-policies.md)
 ## [Abilitare o disabilitare la ricerca dei log di controllo](turn-audit-log-search-on-or-off.md)
 ## [Gestire il controllo delle cassette postali](enable-mailbox-auditing.md)
 ## [Proprietà dettagliate nel log di controllo](detailed-properties-in-the-office-365-audit-log.md)
