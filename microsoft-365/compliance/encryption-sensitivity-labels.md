@@ -1,7 +1,7 @@
 ---
 title: Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
-ms.openlocfilehash: ea7eda3558313389bfa2bc752a469e00cc7ae577
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: be41f60f8d0210c779fb6c5a8fdc783cf23fcc19
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148480"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369447"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -135,7 +135,7 @@ Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietari
 
 È possibile usare queste opzioni per consentire agli utenti di assegnare autorizzazioni quando applicano manualmente un'etichetta di riservatezza al contenuto:
 
-- In Outlook, un utente può applicare restrizioni equivalenti all'opzione **Non inoltrare**. Questa opzione è supportata in modo nativo in Outlook per Windows e non richiede di installare il client di etichettatura unificato di Azure Information Protection.
+- In Outlook, un utente può applicare restrizioni equivalenti all'opzione [Non inoltrare](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). Questa opzione è supportata in modo nativo in Outlook per Windows e non richiede di installare il client di etichettatura unificato di Azure Information Protection.
 - In Word, PowerPoint ed Excel, agli utenti viene chiesto di selezionare il livello di autorizzazione per utenti, gruppi o organizzazioni specifici. Poiché questa opzione non è supportata in modo nativo in Outlook per Windows, gli utenti devono installare il client di etichettatura unificato di Azure Information Protection.
 
 Queste opzioni determinano le app in cui verrà visualizzata l'etichetta di riservatezza:

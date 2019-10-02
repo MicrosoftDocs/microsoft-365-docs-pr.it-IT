@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 Enterprise.
-ms.openlocfilehash: f08682709cc47dc8fa6b4fcd48dc4511ff251ba1
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: 8ae6462c2d1de32aa44820f4f417b92bad6db7d3
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050287"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370463"
 ---
 # <a name="microsoft-365-enterprise-overview"></a>Panoramica di Microsoft 365 Enterprise
 
@@ -140,7 +140,7 @@ Per ulteriori informazioni sulla distribuzione, vedere How:
 
 |||
 |:-------|:-----|
-![](./media/m365-poster/m365-fundamentals.svg)| Prepararsi e lavorare per una certificazione Microsoft 365. <BR> Iniziare con le [nozioni fondamentali su Microsoft 365](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+![Formazione sui fondamentali di Microsoft 365](./media/m365-poster/m365-fundamentals.svg)| Prepararsi e lavorare per una certificazione Microsoft 365. <BR> Iniziare con le [nozioni fondamentali su Microsoft 365](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 |||
 
 
