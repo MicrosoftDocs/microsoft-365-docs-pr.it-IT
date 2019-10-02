@@ -8,20 +8,25 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a9755d1caae20694f1198dec0bf3e659bccee8ee
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: a982b493027775add547a87700906a6cbbdaef60
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982607"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369627"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia delle modifiche per la documentazione di Microsoft Managed Desktop
 
-In questo argomento vengono elencati gli argomenti nuovi e aggiornati nella [documentazione relativa a Microsoft Managed Desktop](index.yml).
+In questo argomento vengono elencati gli argomenti nuovi e aggiornati nella [documentazione relativa a Microsoft Managed Desktop](index.yml). Gli argomenti "aggiornati" sono quelli che hanno avuto aggiunte o correzioni materiali: correzioni secondarie come la correzione di errori di battitura, stile o formattazione non sono presenti nell'elenco. È sempre possibile visualizzare la cronologia dei commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repo su GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
-## <a name="september-2019"></a>2019 settembre
+## <a name="september-2019"></a>Settembre 2019
 Argomento nuovo o modificato | Descrizione
 --- | ---
+[Tecnologie Microsoft Managed Desktop](intro/technologies.md) | Argomento aggiornato
+[Ottenere assistenza per gli utenti finali](working-with-managed-desktop/end-user-support.md) | Argomento aggiornato
+[Dispositivi Microsoft Managed Desktop](service-description/device-list.md) | Argomento aggiornato
+[Distribuire e monitorare le impostazioni configurabili-Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Argomento aggiornato
+[Supporto di amministrazione per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Argomento aggiornato
 [Prerequisiti per Microsoft Managed Desktop](get-ready/prerequisites.md) | Argomento aggiornato
 [Configurare i dispositivi Microsoft Managed Desktop](get-started/set-up-devices.md) | Nuovo argomento
 [Registrare i nuovi dispositivi manualmente](get-started/register-devices-self.md) | Argomento aggiornato

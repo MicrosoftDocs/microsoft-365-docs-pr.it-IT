@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 07aee08c8929443b8b4f4805d22a94b0ad9db27a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02cceb0487f357e6b40b634dc6d3cd7349ec2d96
+ms.sourcegitcommit: acf29701bfba3e4843e49a79fde012f3c7a7024a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084235"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37350317"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Collaborare con Microsoft Compliance Manager (anteprima)
 
@@ -94,7 +94,7 @@ Quando si lavora con i gruppi, tenere presente quanto segue:
 
 Compliance Manager (Preview) include una nuova interfaccia per la gestione dei nuovi elementi di dati denominati **gestione tenant**. Questa interfaccia consente di gestire le impostazioni a livello di tenant:
 
-- **Dimensioni:** Consente di visualizzare, aggiungere e personalizzare i metadati per i modelli, le valutazioni e gli elementi di azione che consentono di creare pivot personalizzati per i filtri.
+- **Dimensioni:** Consente di visualizzare i metadati per i modelli, le valutazioni e gli elementi di azione che consentono di creare pivot personalizzati per i filtri.
 - **Proprietari:** Specificare un proprietario per ogni elemento di azione.
 - **Azioni dei clienti:** Gestire l'elenco completo degli elementi delle azioni inclusi in Compliance Manager (Preview) e abilitare/disabilitare il monitoraggio del Punteggio sicuro per le azioni che sono integrate con Secure score.
 
@@ -102,34 +102,7 @@ Selezionare **gestione tenant** per aprire l'interfaccia di gestione e seguire i
 
 ### <a name="dimensions"></a>Dimensioni
 
-Le dimensioni sono insiemi di metadati che forniscono informazioni su un modello, una valutazione o un elemento di azione. Le dimensioni utilizzano il concetto di chiavi e valori, in cui la chiave Dimension rappresenta una proprietà e il valore della dimensione rappresenta valori validi per la proprietà. Ad esempio, in Compliance Manager esistono tre tipi di azioni. Sono definite da una chiave di dimensione per il **tipo di azione** e i valori di dimensione della **documentazione**, **operativo**e **tecnico**. È possibile modificare le dimensioni esistenti o aggiungerne di propri. Quando si importano modelli personalizzati, è spesso necessario aggiungere dimensioni.
-
-#### <a name="add-a-dimension"></a>Aggiungere una dimensione
-
-1. Aprire **gestione tenant** e selezionare **dimensioni**.
-2. Selezionare **+ Aggiungi dimensione**.
-3. Immettere un nome univoco nel campo **chiave** .
-4. Se lo si desidera, è possibile utilizzare contemporaneamente più valori per la stessa chiave, quindi scorrere l'interruttore per **Consenti selezione multipla per le dimensioni** su attivato.
-5. Selezionare **+ Aggiungi** per aggiungere un valore specificando un nome univoco e facendo clic sull'icona Salva.
-6. Ripetere il passaggio 5 per ogni valore che si desidera aggiungere.
-7. Fare clic su **Salva** per salvare la nuova dimensione.
-
-#### <a name="edit-a-dimension"></a>Modificare una dimensione
-
-È possibile rinominare una chiave di dimensione, ma è possibile modificare i valori per le dimensioni personalizzate.
-
-1. Aprire **gestione tenant** e selezionare **dimensioni**.
-2. Individuare la dimensione che si desidera modificare, selezionare i puntini di ellissi (...) accanto e selezionare **modifica**.
-3. Selezionare **+ Aggiungi** per aggiungere un valore specificando un nome univoco e facendo clic sull'icona Salva oppure selezionare il valore che si desidera modificare o eliminare, quindi selezionare **Rimuovi** o **modifica**.
-4. Fare clic su **Salva** dopo aver apportato le modifiche.
-
-#### <a name="delete-a-dimension"></a>Eliminare una dimensione
-
-Se necessario, è possibile eliminare le dimensioni personalizzate.
-
-1. Aprire **gestione tenant** e selezionare **dimensioni**.
-2. Individuare la dimensione che si desidera eliminare, selezionare i puntini di ellissi (...) accanto e selezionare **Elimina**.
-3. Quando viene visualizzato il messaggio di conferma, selezionare **Elimina**.
+Le dimensioni sono insiemi di metadati che forniscono informazioni su un modello, una valutazione o un elemento di azione. Le dimensioni utilizzano il concetto di chiavi e valori, in cui la chiave Dimension rappresenta una proprietà e il valore della dimensione rappresenta valori validi per la proprietà. Ad esempio, in Compliance Manager esistono tre tipi di azioni. Sono definite da una chiave di dimensione per il **tipo di azione** e i valori di dimensione della **documentazione**, **operativo**e **tecnico**. È possibile modificare o eliminare le dimensioni esistenti.
 
 ### <a name="owners"></a>Proprietari
 
@@ -354,11 +327,11 @@ I controlli possono essere visualizzati dal dashboard info Controls. I controlli
 
 ![Dettagli sui controlli di Compliance Manager Microsoft](media/compliance-manager-control-details.png)
 
-Sono disponibili tre tipi di controlli. Due sono forniti da Microsoft nei modelli incorporati e il terzo viene creato e gestito dai clienti nei modelli personalizzati. I tre tipi sono:
+Sono disponibili tre tipi di controlli:
 
-1. **Controlli gestiti da Microsoft (mm):** controlli per cui solo Microsoft è responsabile. Vengono visualizzati nei modelli in-box e vengono aggiunti a Compliance Manager da Microsoft.
-2. **Controlli gestiti dal cliente (cm):** controlli per i quali solo i clienti hanno la responsabilità. Vengono visualizzati nei modelli in-box e vengono aggiunti a Compliance Manager da Microsoft o dai clienti. Il cliente può anche modificare o disabilitare i controlli gestiti dal cliente forniti da Microsoft.
-3. **Controlli condivisi (SM):** si tratta di controlli in cui la responsabilità è condivisa tra Microsoft e il cliente. Questi vengono visualizzati nei modelli in-box e vengono aggiunti a Compliance Manager da Microsoft.
+1. **Controlli gestiti da Microsoft:** questi sono i controlli per cui solo Microsoft ha la responsabilità. Vengono visualizzati nei modelli in-box e vengono aggiunti a Compliance Manager da Microsoft.
+2. **Controlli gestiti dal cliente:** sono controlli per i quali solo i clienti hanno la responsabilità. Vengono visualizzati nei modelli in-box e vengono aggiunti a Compliance Manager dai clienti.
+3. **Controlli di gestione condivisi:** sono i controlli in cui la responsabilità è condivisa tra Microsoft e il cliente. Questi vengono visualizzati nei modelli in-box e vengono aggiunti a Compliance Manager da Microsoft. Il cliente può anche modificare o disabilitare i controlli gestiti da Microsoft.
 
 ### <a name="actions-items"></a>Elementi Actions
 
@@ -423,7 +396,7 @@ Questa scheda include colonne che definiscono i controlli mappati alle azioni el
 - **controlDescription:** Descrizione del controllo da certificazione/standard/normative, ecc.
 - **controlVersion:** Informazioni sulla versione del controllo facoltativo.  Esempio: per il NIST 800-53, il valore corrente è Rev 4, quindi controlVersion è 4.  Per CSA CCM, è 3.0.1.
 - **disattivato:** Utilizzare TRUE o FALSE per indicare se il controllo è stato disabilitato.
-- **ControlType:** Utilizzare CM per indicare che si tratta di controlli gestiti dal cliente.
+- **ControlType:** Utilizzare CC per indicare che si tratta di controlli gestiti dal cliente.
 - **controlComplianceScore:** Somma dello score di tutte le azioni assegnate al controllo.
 - **controlActionTitle:** Doppio elenco delimitato da punti e virgola di tutti i actionTitles per questo controllo come elencato nella scheda azioni. 
 
@@ -449,7 +422,7 @@ Questa scheda include colonne che definiscono singole azioni e include dettagli 
     Product::Office 365;;Certification::NIST CSF
     ```
 
-    Tutte le dimensioni utilizzate in un modello personalizzato devono essere elencate nella scheda dimensioni del file di importazione, anche se sono già elencate nel dashboard dimensioni. Se si aggiungono nuovi valori o chiavi di dimensione, è necessario aggiungerli prima al dashboard dimensioni.
+    Tutte le dimensioni utilizzate in un modello personalizzato devono essere elencate nella scheda dimensioni del file di importazione, anche se sono già elencate nel dashboard dimensioni.
 - **actionScore:** Valore numerico per ogni azione, che rappresenta il punteggio per tale azione. Si consiglia di seguire il modello di punteggio utilizzato dalle valutazioni predefinite, che si basano sulla finalità e sull'applicazione di ogni azione.
 - **actionOwnership:** Doppio elenco delimitato da punti e virgola dei proprietari. Tutti i proprietari elencati devono essere inclusi nella scheda Proprietà.
 - **actionDescription:** Testo di ogni azione, che deve essere univoco. Questo campo supporta la lingua Markdown come descritto di seguito.
@@ -527,7 +500,7 @@ Il testo di grassetto è costituito da due asterischi su ogni parte del testo da
 
 1. Aprire il dashboard **modelli** e selezionare **+ Aggiungi modello**.
 2. Nel campo **immettere il nome del modello** specificare un nome univoco per il modello.
-3. Aggiungere una o più dimensioni. Anche se le dimensioni utilizzate sono già elencate nel dashboard dimensioni, è necessario che siano ancora elencate nel file di importazione.
+3. Selezionare almeno una dimensione dall'elenco disponibile.
 4. Selezionare **Sfoglia** per passare al percorso del file di importazione, selezionarlo e selezionare **Apri**.
 5. Il file di importazione verrà convalidato e indicherà il numero di controlli e famiglie di controllo rilevati. Se si verificano errori, verrà fornito un collegamento a una versione modificata del file di importazione che include informazioni dettagliate sull'errore. Tutti gli errori devono essere risolti prima che i dati vengano importati.
 6. Dopo che i dati hanno superato la convalida, selezionare **Aggiungi a Dashboard**.

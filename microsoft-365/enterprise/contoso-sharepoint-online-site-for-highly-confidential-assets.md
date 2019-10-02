@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: informazioni su come Contoso ha implementato un sito di SharePoint Online per dati altamente regolamentati per semplificare la collaborazione tra i team di ricerca.'
-ms.openlocfilehash: 99599829658e5dc46c8adebfe59f5c6d09b165de
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 6c61d02c802a77afeb93a58b59114741c6630f9e
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072782"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369527"
 ---
 # <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sito di SharePoint Online per le risorse digitali estremamente riservate di Contoso Corporation
 
@@ -52,11 +52,11 @@ Contoso SharePoint Admins ha creato per la prima volta un nuovo sito del team de
 
 - Il livello di autorizzazione controllo completo per l'utilizzo del gruppo di SharePoint proprietari di ricerca, che dispone del gruppo di sicurezza **Research-Admins** come membro
 - Il livello di autorizzazione modifica per l'utilizzo del gruppo di SharePoint membri della ricerca, che ha come membro il gruppo di sicurezza **membri della ricerca** .
-- Il livello di autorizzazione di lettura per l'utilizzo del gruppo di SharePoint visitors Research, che dispone del gruppo di sicurezza dei visualizzatori di **ricerca** come membro
+- Il livello di autorizzazione di lettura per l'utilizzo del gruppo di SharePoint visitors Research, che dispone del gruppo di sicurezza dei **visualizzatori di ricerca** come membro
 
 Di seguito sono riportati i livelli di autorizzazione di SharePoint, i gruppi di SharePoint e i relativi membri.
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
+![Livelli di autorizzazione di SharePoint, gruppi di SharePoint e relativi membri](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
 
 Successivamente, sono state configurate restrizioni aggiuntive per il sito.
 
@@ -88,13 +88,13 @@ Per informazioni dettagliate sulla configurazione, vedere [proteggere i file di 
 
 Ecco la configurazione risultante del sito di **ricerca** per le risorse estremamente riservate.
 
-![](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+![La configurazione risultante del sito * * Research * * per le risorse estremamente riservate](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
 I file nelle cartelle del sito di **ricerca** sono protetti da:
 
 - La sottoetichetta **Research** Azure Information Protection, che applica la crittografia e permssions a ogni file che viaggia con il file quando viene spostato o copiato dal sito di **ricerca** .
 - Il criterio DLP di **ricerca** , che utilizza l'etichetta di conservazione **estremamente riservata** e le impostazioni che impediscono la condivisione dei file con gli utenti esterni.
-- Il set di autorizzazioni per i siti, che consentono l'accesso solo ai **** membri dei gruppi di sicurezza e dell'amministrazione di ricerca-spettatori e dei **visualizzatori** dai membri del gruppo di sicurezza **Research-Admins** .
+- Il set di autorizzazioni per i siti, che consentono l'accesso solo ai membri dei gruppi di sicurezza e dell'amministrazione di ricerca-spettatori **e dei** **visualizzatori** dai membri del gruppo di sicurezza **Research-Admins** .
 
 ## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>Passaggio 5: migrazione dei dati di ricerca di SharePoint locali
 
@@ -112,7 +112,7 @@ Il personale di sicurezza di Contoso ha formato i team di ricerca in un corso ob
 
 Il risultato finale è un ambiente sicuro in cui i ricercatori possono collaborare all'interno dell'organizzazione in un ambiente sicuro. 
 
-Se un documento di ricerca con **** l'etichetta secondaria di ricerca è fuoriuscito dal sito di **ricerca** , è crittografato e accessibile solo ai membri dei gruppi di sicurezza **membri** della ricerca e ai **visualizzatori** di ricerca con credenziali valide.
+Se un documento di ricerca con l' **etichetta secondaria di ricerca è** fuoriuscito dal sito di **ricerca** , è crittografato e accessibile solo ai membri dei gruppi di sicurezza **membri** della ricerca e ai **visualizzatori** di ricerca con credenziali valide.
 
 ## <a name="next-step"></a>Passaggio successivo
 

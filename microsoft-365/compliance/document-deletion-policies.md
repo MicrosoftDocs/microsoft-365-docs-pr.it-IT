@@ -1,7 +1,7 @@
 ---
 title: Panoramica dei criteri di eliminazione dei documenti
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Alla tua organizzazione potrebbe essere richiesto di conservare i documenti per un periodo di tempo a causa di requisiti di conformità, legali o di altro tipo. Tuttavia, se l'organizzazione conserva i documenti più del necessario, si crea un rischio legale non necessario. Con un criterio di eliminazione dei documenti, è possibile ridurre in modo proattivo i rischi eliminando i documenti in un sito dopo un determinato periodo di tempo, ad esempio, è possibile eliminare i documenti nei siti di OneDrive for business degli utenti cinque anni dopo la creazione dei documenti.
-ms.openlocfilehash: 59bc100a19f3597aa1bf16506bf6c7049a35af3b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 87d79f6b8f4381693bf043bc0e04fcfe4359fa90
+ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082918"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37342949"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Panoramica dei criteri di eliminazione dei documenti
 
@@ -44,7 +44,7 @@ I criteri di eliminazione dei documenti sono potenti ma flessibili, ad esempio, 
 
 Oltre ai criteri di eliminazione dei documenti, Office 365 fornisce questi criteri di conservazione per il contenuto del sito:
   
-- [Gestione dei record](https://go.microsoft.com/fwlink/p/?LinkID=404250)
+- [Gestione record](https://go.microsoft.com/fwlink/p/?LinkID=404250)
     
 - [Criteri di gestione delle informazioni per tipi di contenuto, elenchi e raccolte](https://go.microsoft.com/fwlink/p/?LinkID=404239)
     
