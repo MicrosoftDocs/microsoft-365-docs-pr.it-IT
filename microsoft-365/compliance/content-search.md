@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Office 365 e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
-ms.openlocfilehash: ae09d49bdb0b51986e58db72f578de7fa2a0c931
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e3553ff2e3c8398ac4bc00258e41e8d9607b3639
+ms.sourcegitcommit: 53d848ebd4799b285d0f67c49b0aa24c88bd0e23
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083183"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37334256"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 
@@ -409,4 +409,4 @@ Tenere presente quanto segue quando si usano i filtri delle autorizzazioni di ri
 
 - Il parametro **Area** non controlla le ricerche nelle cassette postali di Exchange. Quando eseguono ricerche nelle cassette postali, la ricerca viene estesa a tutti i datacenter. 
     
-Per altre informazioni sull'uso dei filtri delle autorizzazioni di ricerca in un ambiente Multi-Geo, vedere la sezione "Ricerca ed esportazione di contenuto in ambienti Multi-Geo" in [Impostare i limiti di conformità per le indagini eDiscovery in Office 365](tagging-and-assessment-in-advanced-ediscovery.md#searching-and-exporting-content-in-multi-geo-environments).
+Per altre informazioni sull'uso dei filtri delle autorizzazioni di ricerca in un ambiente Multi-Geo, vedere la sezione "Ricerca ed esportazione di contenuto in ambienti Multi-Geo" in [Impostare i limiti di conformità per le indagini eDiscovery](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
