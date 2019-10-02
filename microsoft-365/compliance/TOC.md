@@ -2,6 +2,7 @@
 
 # Introduzione
 ## [Novità del centro conformità](whats-new.md)
+## [Aggiornamenti recenti al contenuto di conformità](recently-updated-topics-mcc.md)
 ## [Centro conformità Microsoft 365](microsoft-365-compliance-center.md)
 ## [Passare al Centro sicurezza e conformità](go-to-the-securitycompliance-center.md)
 ## [Usare la sottoscrizione gratuita ad Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -104,7 +105,7 @@
 ### [Gestione del piano di archiviazione](file-plan-manager.md)
 ### [Etichette di conservazione](labels.md)
 ### [Rispettare la SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Criteri di conservazione basati su eventi](event-driven-retention.md)
 ### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
 ## [Eliminare i dati](disposition-reviews.md)
@@ -125,7 +126,7 @@
 ### Piano di archiviazione
 #### [Gestione del piano di archiviazione](file-plan-manager.md)
 #### [Etichette di conservazione](labels.md)
-#### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
 #### [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
 #### [Visualizzare i report di governance dei dati](view-the-data-governance-reports.md)
