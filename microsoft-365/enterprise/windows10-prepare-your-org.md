@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: josephd
-ms.openlocfilehash: 5deae85ae614079c23a373d4ecae7ce81aeb3fcd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: aafd629b4efcfa1307a25bf8e340236f183998b5
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071775"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370243"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Passaggio 1: preparare l'organizzazione per Windows 10 Enterprise
 
 *Questo articolo si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Prima di aggiornare i dispositivi a Windows 10 Enterprise, prendere in considerazione quanto segue:
 
@@ -67,7 +67,7 @@ Come checkpoint provvisorio, vedere i [criteri di completamento](windows10-exit-
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)| [Distribuire Windows 10 Enterprise per i dispositivi esistenti come aggiornamento sul posto](windows10-deploy-inplaceupgrade.md) |
+|![Passaggio 2](./media/stepnumbers/Step2.png)| [Distribuire Windows 10 Enterprise per i dispositivi esistenti come aggiornamento sul posto](windows10-deploy-inplaceupgrade.md) |
 
 
 

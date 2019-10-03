@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f173bd2357d445b502a4b28b60399d5cdb087cd0
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 2ce02826ae2b0661d3b893c1074e692ce93cf9f3
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289256"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370283"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Passaggio 3: distribuzione di Windows 10 Enterprise per nuovi dispositivi con Windows Autopilot
 
 *Questo articolo si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Se si dispone di nuovi PC con Windows 10, è possibile usare Windows Autopilot per personalizzare l'esperienza di utilizzo della casella di controllo (OOBE) per l'organizzazione e distribuire un nuovo sistema con le app e le impostazioni già configurate. Non ci sono immagini da distribuire, nessun driver da iniettare e nessuna infrastruttura da gestire. Gli utenti possono passare attraverso il processo di distribuzione in modo indipendente, senza che sia necessario consultare l'amministratore IT.
 
@@ -104,7 +104,7 @@ Come checkpoint provvisorio, vedere i [criteri di completamento](windows10-exit-
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Monitorare l'integrità e la conformità del dispositivo](windows10-enable-windows-analytics.md) |
+|![Passaggio 4](./media/stepnumbers/Step4.png)| [Monitorare l'integrità e la conformità del dispositivo](windows10-enable-windows-analytics.md) |
 
 
 

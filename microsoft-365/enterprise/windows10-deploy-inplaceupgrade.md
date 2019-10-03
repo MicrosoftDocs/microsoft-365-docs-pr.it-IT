@@ -10,18 +10,18 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f7f1b8377769545c4399f54b0f2eab99a656d24f
-ms.sourcegitcommit: 18e03ab333175eccfc89e38b081022746976e513
+ms.openlocfilehash: 3e37cebc1721a1bdcce0a30223a8beeb38868e82
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35595302"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370083"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Passaggio 2: distribuire Windows 10 Enterprise per i dispositivi esistenti come aggiornamento sul posto
 
 *Questo articolo si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Il percorso più semplice per aggiornare i computer che eseguono Windows 7 o Windows 8,1 a Windows 10 è tramite un aggiornamento sul posto. È possibile utilizzare una sequenza di attività di System Center Configuration Manager (Configuration Manager) per automatizzare completamente il processo. 
 
@@ -105,7 +105,7 @@ Dopo aver creato la sequenza di attività di aggiornamento, sarà necessario cre
 ### <a name="create-an-operating-system-deployment"></a>Creare una distribuzione del sistema operativo
 Eseguire la procedura seguente per creare una distribuzione per la sequenza di attività.
 
-1. Nella console di Configuration Manager, nell'area di lavoro **raccolta software** fare clic con il pulsante destro del mouse sulla sequenza di attività creata in un passaggio **** precedente e quindi scegliere Distribuisci.
+1. Nella console di Configuration Manager, nell'area di lavoro **raccolta software** fare clic con il pulsante destro del mouse sulla sequenza di attività creata in un passaggio precedente e quindi scegliere **Distribuisci**.
 2. Nella pagina **generale** selezionare la raccolta di **aggiornamento di Windows 10 Enterprise x64** e quindi fare clic su **Avanti**.
 3. Nella pagina **contenuto** selezionare **Avanti**.
 4. Nella pagina **impostazioni di distribuzione** , selezionare le impostazioni seguenti e quindi fare clic su **Avanti**:
@@ -141,7 +141,7 @@ Come checkpoint provvisorio, vedere i [criteri di completamento](windows10-exit-
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Distribuzione di Windows 10 Enterprise per nuovi dispositivi con Windows Autopilot](windows10-deploy-autopilot.md) |
+|![Passaggio 3](./media/stepnumbers/Step3.png)| [Distribuzione di Windows 10 Enterprise per nuovi dispositivi con Windows Autopilot](windows10-deploy-autopilot.md) |
 
 
 

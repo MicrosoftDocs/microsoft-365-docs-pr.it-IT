@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Analogamente alle funzionalità del centro conformità di Microsoft 365, il contenuto della guida è sempre in evoluzione. Stiamo creando continuamente nuovi articoli, aggiornando quelli esistenti ed eseguendo modifiche in base ai commenti e suggerimenti. Scopri cosa c'è di nuovo e aggiornato in questo mese.
-ms.openlocfilehash: 744c1822331c71e718007105f58d1bc64b3c70df
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: d610ab37312a1305809d740a9353822293c48df0
+ms.sourcegitcommit: 3a632d8ec009abf1aac57363eaf78aeeda5db136
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369652"
+ms.locfileid: "37376131"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aggiornamenti recenti a Microsoft 365 content Compliance
 
@@ -34,9 +34,9 @@ Analogamente alle funzionalità del centro conformità di Microsoft 365, il cont
 
 ### <a name="ediscovery"></a>eDiscovery
 
-[Indagare, risolvere i problemi relativi alla risoluzione dei problemi comuni di eDiscovery](ediscovery-troubleshooting-common-issues.md) (nuovo)<br> Include i passaggi di base per la risoluzione dei problemi che è possibile eseguire per identificare e risolvere i problemi che possono verificarsi durante una ricerca di eDiscovery o altrove nel processo di eDiscovery
+[Indagare, risolvere i problemi relativi alla risoluzione dei problemi comuni di eDiscovery](ediscovery-troubleshooting-common-issues.md) (nuovo)<br> Sono inclusi i passaggi di base per la risoluzione dei problemi che è possibile eseguire per identificare e risolvere i problemi che possono verificarsi durante una ricerca di eDiscovery o altrove nel processo di eDiscovery.
 
-###<a name="supervision"></a>Supervisione
+### <a name="supervision"></a>Supervisione
 
 [Configurare i criteri di supervisione per l'organizzazione](configure-supervision-policies.md) (aggiornato)<br>Sono stati rimossi i dettagli sull'utilizzo di Outlook per eseguire le revisioni. Utilizzare invece le opzioni di revisione e tagging disponibili nell'interfaccia utente di supervisione.
 
