@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni e distribuzione di Windows Information Protection in Microsoft 365.
-ms.openlocfilehash: b624db45c4fe3bd75b2158f225176b7a78ba30f8
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 5d327ea97a24d4b1015940688b7702dc761e826d
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047269"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370123"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>Passaggio 4: Configurare Windows Information Protection
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: protezione delle informazioni](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Con più dispositivi personali usati per lavoro, aumenta il rischio per le applicazioni e i dispositivi di una perdita di dati aziendali privati. Ad esempio, un dipendente invia inavvertitamente l'immagine di un piano di marketing per un prodotto futuro attualmente in un sito di social networking o salva un file contenente informazioni strettamente riservate nel proprio sistema pubblico di archiviazione cloud. 
 
@@ -49,6 +49,6 @@ Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)|[Configurare i criteri di prevenzione della perdita dei dati di Office 365](infoprotect-data-loss-prevention.md)|
+|![Passaggio 5](./media/stepnumbers/Step5.png)|[Configurare i criteri di prevenzione della perdita dei dati di Office 365](infoprotect-data-loss-prevention.md)|
 
 

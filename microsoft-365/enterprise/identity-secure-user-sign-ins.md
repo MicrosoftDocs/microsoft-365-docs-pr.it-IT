@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: È possibile rendere più sicuri gli accessi degli utenti ai dispositivi Windows e a Microsoft 365.
-ms.openlocfilehash: edf51b344ed8f9c8e13587cc2ccf0ba1ed081da6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084211"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370193"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Passaggio 3: proteggere e gestire gli accessi degli utenti
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Fase 2 - Identità](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
@@ -92,4 +92,4 @@ Come checkpoint provvisorio, è possibile vedere i [criteri uscita](identity-exi
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)| [Aggiungere gli account utente](identity-add-user-accounts.md) |
+|![Passaggio 4](./media/stepnumbers/Step4.png)| [Aggiungere gli account utente](identity-add-user-accounts.md) |

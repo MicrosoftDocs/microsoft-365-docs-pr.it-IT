@@ -3,7 +3,7 @@ title: 'Passaggio 4: configurare il bypass di traffico'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare Web browser e dispositivi periferici per il bypass di traffico a posizioni di Office 365 attendibili.
-ms.openlocfilehash: fbc4956525e2661ce791c6ec81b449dba685d0f0
-ms.sourcegitcommit: 1ca1062ccddd7a46fa0bb4af6ee5f0eb141e7280
+ms.openlocfilehash: 32aa2216856d5a519fddb55701be745a9dacbd87
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36999040"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370143"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Passaggio 4: configurare il bypass di traffico
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Fase 1 - Rete](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Poiché il traffico su Internet può essere rischioso, le organizzazioni rafforzano la sicurezza delle proprie reti con dispositivi periferici come server proxy, SSL Break and Inspect, dispositivi di ispezione dei pacchetti e sistemi di prevenzione della perdita dei dati. Alcuni dei problemi con i dispositivi di intercettazione delle reti sono descritti nell'articolo sull'utilizzo di dispositivi di rete di terze parti o soluzioni sul traffico di Office 365.
+Poiché il traffico su Internet può essere rischioso, le organizzazioni rafforzano la sicurezza delle proprie reti con dispositivi periferici come server proxy, dispositivi di decrittografia e ispezione SSL, dispositivi di ispezione dei pacchetti e sistemi di prevenzione della perdita dei dati. Alcuni dei problemi con i dispositivi di intercettazione delle reti sono descritti nell'articolo [Utilizzo di soluzioni o dispositivi di rete o di terze parti sul traffico di Office 365](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
 Tuttavia, i nomi di dominio DNS e gli indirizzi IP usati dai servizi basati sul cloud di Microsoft 365 sono noti. Inoltre, il traffico e i servizi stessi sono protetti da numerose funzionalità di sicurezza. Poiché queste misure di sicurezza e protezione sono già presenti, non è necessario che vengano duplicate dai dispositivi periferici. L'elaborazione di misure di sicurezza duplicate e destinazioni intermedie per il traffico di Microsoft 365 può ridurre notevolmente le prestazioni.
 
@@ -41,10 +41,14 @@ I nomi di dominio DNS e gli intervalli di indirizzi IP sono disponibili all'indi
 Consigli di Microsoft:
 
 - Usare gli script Proxy Automatic Configuration (PAC) sui browser Internet dei computer locali per eseguire il bypass dei server proxy per i nomi di dominio DNS dei servizi basati sul cloud di Microsoft 365. Per gli script PAC di Microsoft 365 più recenti, vedere [Script Get-Pacfile di PowerShell](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
-- 
+
 - Analizzare i dispositivi periferici in uso per determinare l'elaborazione di duplicati e quindi configurarli per inoltrare il traffico agli endpoint delle categorie Ottimizzazione e Consenti senza elaborazione. Questa procedura è nota come bypass di traffico. 
 
-I dispositivi periferici includono firewall, SSL Break and Inspect, dispositivi di ispezione dei pacchetti e sistemi di prevenzione della perdita dei dati. Per configurare e aggiornare le configurazioni di dispositivi periferici, è possibile usare uno script o una chiamata REST per utilizzare un elenco strutturato di endpoint dal servizio Web degli endpoint di Office 365. Per ulteriori informazioni, vedere [Servizio Web per URL e indirizzi IP di Office 365](https://docs.microsoft.com/it-IT/office365/enterprise/office-365-ip-web-service#exporting-a-proxy-pac-file).
+Ecco questi suggerimenti nell'infrastruttura di rete.
+
+![Consigli per ottimizzare il traffico locale](./media/networking-configure-proxies-firewalls/bypassing-edge-devices.png)
+
+I dispositivi perimetrali includono firewall, dispositivi di decrittografia e ispezione SSL, dispositivi di ispezione dei pacchetti e sistemi di prevenzione della perdita dei dati. Per configurare e aggiornare le configurazioni dei dispositivi perimetrali, è possibile usare uno script o una chiamata REST per usare un elenco strutturato di endpoint dal servizio Web degli endpoint di Office 365. Per altre informazioni, vedere [Servizio Web per URL e indirizzi IP di Office 365](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
 Tenere presente che questa procedura consente di eseguire il bypass solo per l'elaborazione dei dati di protezione di rete e proxy normale per il traffico agli endpoint delle categorie Ottimizzazione e Consenti di Microsoft 365. Tutto il resto del traffico su Internet verrà trasmesso tramite proxy e sarà soggetto all'elaborazione dei dati di protezione di rete esistente.
 
@@ -55,7 +59,7 @@ Come checkpoint provvisorio, è possibile vedere i [criteri uscita](networking-e
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step5.png)|[Ottimizzare prestazioni di client e del servizio di Office 365](networking-optimize-tcp-performance.md) |
+|![Passaggio 5](./media/stepnumbers/Step5.png)|[Ottimizzare prestazioni di client e del servizio di Office 365](networking-optimize-tcp-performance.md) |
 
 
 
