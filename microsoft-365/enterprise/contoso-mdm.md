@@ -3,7 +3,7 @@ title: Gestione dispositivi mobili in Contoso
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,19 +12,19 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendere come Contoso usa Intune in Microsoft 365 Enterprise per gestire i dispositivi e le app in esecuzione su di essi.
-ms.openlocfilehash: 9f3db160b01a54afa3457703b0333be1ff3a02ec
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+description: Comprendere in che modo Contoso usa Microsoft Intune in Microsoft 365 Enterprise per gestire i dispositivi e le app eseguite nei dispositivi.
+ms.openlocfilehash: b083b7fed67eb08b47daf70c3fd22c181f5a8f77
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054988"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370483"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Gestione dispositivi mobili in Contoso
 
-**Riepilogo:** Comprendere come Contoso usa Intune in Microsoft 365 Enterprise per gestire i dispositivi e le app in esecuzione su di essi.
+**Riepilogo:** comprendere in che modo Contoso usa Microsoft Intune in Microsoft 365 Enterprise per gestire i dispositivi e le app eseguite nei dispositivi.
 
-Microsoft 365 Enterprise include Microsoft Intune e un set di servizi di Azure a supporto della gestione e della sicurezza di applicazioni e dispositivi mobili.
+Microsoft 365 Enterprise include Intune e un set di servizi di Azure per supportare la gestione e la sicurezza di applicazioni e dispositivi mobili.
 
 Contoso ha molti dipendenti autorizzati alla mobilità, di cui alcuni hanno uffici nelle sedi di Contoso e altri non hanno un ufficio. Contoso era alla ricerca di un modo per garantire la produttività dei dipendenti mantenendo sicuri i dispositivi, i dati di Contoso archiviati in quei dispositivi e il comportamento dell’applicazione.
 
@@ -48,7 +48,7 @@ Ecco come Contoso ha configurato l’infrastruttura di gestione dei dispositivi 
 - Ha impostato Intune come autorità di gestione dei dispositivi mobili (MDM) e usa Intune in Azure per amministrare il contenuto e gestire i dispositivi
 - Ha creato gruppi di Azure AD per i dispositivi per la registrazione e le impostazioni di Intune e i criteri di accesso condizionale basati sul dispositivo
 
-  Per altre informazioni, vedere [criteri di accesso condizionale di Contoso](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
+  Per altre informazioni, vedere [Criteri di accesso condizionale di Contoso](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
 
 - Ha abilitato la piattaforma per dispositivi Apple per supportare i dipendenti con iPad, iMac, iPhone e telefoni aziendali basati su iPhone
 - Ha creato criteri di termini e condizioni specifichi per Contoso, visualizzati durante l’installazione del Portale aziendale per i dispositivi mobili di Contoso
@@ -64,6 +64,10 @@ Ecco come Contoso ha configurato l’infrastruttura di gestione dei dispositivi 
   - Una chiara separazione dei dati personali e aziendali. Gli utenti o amministratori possono cancellare in modo selettivo i dati aziendali dal dispositivo, senza modificare i dati personali, ad esempio immagini, account di posta elettronica personale e file personali.
 
 Dopo la distribuzione, Contoso ha registrato PC e smartphone e tablet di proprietà aziendale, aggiungendoli ai gruppi di dispositivi Intune appropriati, e ha distribuito un programma BYOD che consente ai dipendenti di registrare i loro dispositivi personali. I dispositivi registrati hanno ricevuto i criteri Intune, diventando di conseguenza dispositivi e relative applicazioni gestiti e protetti. I dispositivi non registrati dispongono di criteri di gestione delle applicazioni mobili (MAM) che specificano le applicazioni consentite.
+
+Ecco l'architettura di distribuzione di Gestione dispositivi mobili di Contoso.
+
+![Infrastruttura di distribuzione di Gestione dispositivi mobili di Contoso](./media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>Passaggio successivo
 

@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare i diversi modi per classificare i dati all'interno dell'organizzazione.
-ms.openlocfilehash: ca1b4aefca7ee63f1c8fe098c115fc4f0074d9f6
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: e1f0a6b9bdc4b6844037e7e873ed321942e8258e
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047299"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370413"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Passaggio 2: configurare la classificazione dell'ambiente
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: protezione delle informazioni](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 In questo passaggio, si lavora con i team di conformità e legali per definire uno schema di classificazione dei dati dell'organizzazione.
 
@@ -109,5 +109,5 @@ Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)|[Configurare un livello di sicurezza maggiore per Office 365](infoprotect-configure-increased-security-office-365.md)|
+|![Passaggio 3](./media/stepnumbers/Step3.png)|[Configurare un livello di sicurezza maggiore per Office 365](infoprotect-configure-increased-security-office-365.md)|
 

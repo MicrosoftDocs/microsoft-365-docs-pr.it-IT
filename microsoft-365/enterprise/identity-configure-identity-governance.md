@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su Identity Governance per il tenant di Azure AD e su come configurarlo.
-ms.openlocfilehash: 7ba54db29335f4f8f6eefff0cafbdefe3c522d7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3bc0872eefa71288d25ce83ebb8f3c51d8959678
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084213"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370383"
 ---
-# <a name="step-7-configure-identity-governance"></a>Passaggio 7: Configurare Identity Governance
+# <a name="step-7-configure-identity-governance"></a>Passaggio 7: configurare Identity Governance
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Fase 2: identità](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
-Identity Governance consente di proteggere, monitorare e controllare l'accesso alle risorse più importanti e garantire la produttività dei dipendenti. Ad esempio, con Identity Governance è possibile fare in modo che gli utenti giusti abbiano diritto di accesso alle risorse giuste e determinare se l'accesso cambia nel corso del tempo.
+Identity Governance consente di proteggere, monitorare e controllare l'accesso alle risorse strategiche e garantire la produttività dei dipendenti. Ad esempio, con Identity Governance è possibile fare in modo che gli utenti giusti abbiano diritto di accesso alle risorse giuste e determinare se l'accesso cambia nel corso del tempo.
 
 Vedere [questo articolo](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) per maggiori informazioni su Identity Governance per Azure Active Directory (Azure AD).
 

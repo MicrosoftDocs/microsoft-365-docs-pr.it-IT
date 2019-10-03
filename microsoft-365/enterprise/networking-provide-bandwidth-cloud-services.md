@@ -3,7 +3,7 @@ title: 'Passaggio 1: preparare la rete per Microsoft 365'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2019
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere l'esigenza di larghezza di banda Internet per i servizi cloud di Microsoft 365 Enterprise.
-ms.openlocfilehash: a0af61e378618bba4fbda0518543d89ba8da2b4e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: ea92bcbd19c0b4cef16292d652cf5f8aa45aee07
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074186"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370293"
 ---
 # <a name="step-1-prepare-your-network-for-microsoft-365"></a>Passaggio 1: preparare la rete per Microsoft 365
 
 *Questo passaggio è obbligatorio e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Fase 1: collegamento in rete](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Nel Passaggio 1, è necessario:
 
@@ -40,5 +40,5 @@ Come checkpoint provvisorio, vedere i [criteri di completamento](networking-exit
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step2.png)|[Configurare le connessioni Internet locali per ogni sede](networking-dns-resolution-same-location.md)|
+|![Passaggio 2](./media/stepnumbers/Step2.png)|[Configurare le connessioni Internet locali per ogni sede](networking-dns-resolution-same-location.md)|
 

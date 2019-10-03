@@ -13,19 +13,19 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: È necessario rendere le password complesse e gestibili all'interno dell'organizzazione.
-ms.openlocfilehash: 06d936a68432b55912b1c10839336dc94e698f51
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7bb4e0f296b320aa8a24916ded40089246308a20
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084210"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370403"
 ---
 # <a name="step-2-secure-your-passwords"></a>Passaggio 2: proteggere le password
 
-![](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Fase 2: identità](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-password-prot"></a>
-## <a name="prevent-bad-passwords"></a>Evita le password non adeguate
+## <a name="prevent-bad-passwords"></a>Impedire l'uso di password non consentite
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
@@ -98,4 +98,4 @@ Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step3.png)| [Proteggere e gestire gli accessi degli utenti](identity-secure-user-sign-ins.md) |
+|![Passaggio 3](./media/stepnumbers/Step3.png)| [Proteggere e gestire gli accessi degli utenti](identity-secure-user-sign-ins.md) |

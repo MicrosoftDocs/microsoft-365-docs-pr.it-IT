@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Caricare gli utenti dell’organizzazione per la produttività dei carichi di lavoro di Microsoft 365 Enterprise.
-ms.openlocfilehash: 6446e73f79a3dd92d60fa3299e6007e1a5a3fdeb
-ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+ms.openlocfilehash: 9416efe6171f8f3aefee504e5f39d19a2a909073
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37329212"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369427"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Carichi di lavoro e scenari di Microsoft 365 Enterprise
 
@@ -42,12 +42,9 @@ Per proteggere questi dati da minacce interne ed esterne, consultare [Siti Micro
 
 Ecco i carichi di lavoro e gli scenari della guida di distribuzione generale di Microsoft 365 Enterprise:
 
-![](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![I carichi di lavoro e gli scenari della guida di distribuzione generale di Microsoft 365 Enterprise](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 Per altri scenari, vedere la [raccolta di produttività Microsoft 365](https://www.microsoft.com/microsoft-365/success/). 
-
-1. In questa pagina Web digitare una stringa di ricerca o fare **clic su** filtro in base a e specificare industria, ruoli (reparti) e prodotti in Microsoft 365.
-2. Dai risultati, fare clic su una scheda per vedere i passaggi da eseguire.
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Prerequisiti dell’infrastruttura di base
 

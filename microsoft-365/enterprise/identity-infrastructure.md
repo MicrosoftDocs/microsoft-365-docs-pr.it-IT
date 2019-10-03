@@ -13,16 +13,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: La procedura per distribuire l'infrastruttura delle identità di Microsoft 365 Enterprise.
-ms.openlocfilehash: 2d9ffcc5122b5a5dfc94fb007167655e879d6799
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: cb5b714afcacd1e21951ec9f83fd7f09cbd88662
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071695"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370443"
 ---
 # <a name="phase-2-identity"></a>Fase 2: identità
 
-![](./media/deploy-foundation-infrastructure/identity_icon.png)
+![Fase 2: identità](./media/deploy-foundation-infrastructure/identity_icon.png)
 
 In Microsoft 365 Enterprise, un'infrastruttura di gestione delle identità ben pianificata ed eseguita permette una maggiore sicurezza e l'accesso ai carichi di lavoro di produttività e ai relativi dati solo da parte di utenti e dispositivi autenticati.
 
@@ -50,12 +50,12 @@ Utilizzare la seguente procedura per pianificare e distribuire la nuova infrastr
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Creare e proteggere gli account di amministratore globale](identity-create-protect-global-admins.md) |
-|![](./media/stepnumbers/Step2.png)| [Proteggere le password](identity-secure-your-passwords.md) |
-|![](./media/stepnumbers/Step3.png)| [Proteggere e gestire gli accessi degli utenti](identity-secure-user-sign-ins.md) |
-|![](./media/stepnumbers/Step4.png)| [Aggiungere gli account utente](identity-add-user-accounts.md) |
-|![](./media/stepnumbers/Step5.png)| [Usare i gruppi per la gestione](identity-use-group-management.md) |
-|![](./media/stepnumbers/Step6.png)| [Configurare la governance delle identità](identity-configure-identity-governance.md) |
+|![Passaggio 1](./media/stepnumbers/Step1.png)| [Creare e proteggere gli account di amministratore globale](identity-create-protect-global-admins.md) |
+|![Passaggio 2](./media/stepnumbers/Step2.png)| [Proteggere le password](identity-secure-your-passwords.md) |
+|![Passaggio 3](./media/stepnumbers/Step3.png)| [Proteggere e gestire gli accessi degli utenti](identity-secure-user-sign-ins.md) |
+|![Passaggio 4](./media/stepnumbers/Step4.png)| [Aggiungere gli account utente](identity-add-user-accounts.md) |
+|![Passaggio 5](./media/stepnumbers/Step5.png)| [Usare i gruppi per la gestione](identity-use-group-management.md) |
+|![Passaggio 6](./media/stepnumbers/Step6.png)| [Configurare Identity Governance](identity-configure-identity-governance.md) |
 
 Dopo aver completato questi passaggi, passare ai [criteri di uscita](identity-exit-criteria.md) per questa fase per garantire che vengano rispettate le condizioni facoltative e obbligatorie per le identità di Microsoft 365 Enterprise.
 
@@ -74,11 +74,11 @@ Informazioni su come gli esperti IT di Microsoft [gestiscono le identità e l'ac
 
 Vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, [ha distribuito un’infrastruttura di identità ibrida](contoso-identity.md) per i servizi cloud Microsoft 365.
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 
 ## <a name="next-step"></a>Passaggio successivo
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Creare e proteggere gli account di amministratore globale](identity-create-protect-global-admins.md) |
+|![Passaggio 1](./media/stepnumbers/Step1.png)| [Creare e proteggere gli account di amministratore globale](identity-create-protect-global-admins.md) |
