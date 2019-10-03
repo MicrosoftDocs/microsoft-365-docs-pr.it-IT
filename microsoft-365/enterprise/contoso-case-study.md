@@ -3,7 +3,7 @@ title: Microsoft 365 Enterprise per Contoso Corporation
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Modalità di adozione di Microsoft 365 Enterprise da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale.
-ms.openlocfilehash: e587a2c6588faf32aa6882ef1659472365611517
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: 0d5453a5f55314207e0c8403837a83dd66eb70d3
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054918"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369617"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise per Contoso Corporation
 
@@ -42,15 +42,15 @@ Fare riferimento ai seguenti articoli per i dettagli:
 
 - [Rete](contoso-networking.md)
 
-  Gli ingegneri di rete di Contoso hanno ottimizzato il traffico verso il margine intranet e al percorso di rete Microsoft più vicino in Internet.
+  Gli ingegneri di rete di Contoso hanno ottimizzato il traffico per i loro utenti locali in direzione del perimetro della Intranet e del percorso di rete Microsoft più vicino su Internet.
 
 - [Identità](contoso-identity.md)
 
-  L'identità di Contoso nella soluzione cloud sfrutta il provider di identità locale e include l'autenticazione federativa con i provider di identità di terze parti attendibili esistenti.
+  L'identità di Contoso nella soluzione cloud sfrutta la foresta Active Directory Domain Services (AD DS) locale e include l'autenticazione federa con i provider di identità di terze parti attendibili esistenti.
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
-  L’infrastruttura di Windows 10 Enterprise di Contoso distribuisce e installa automaticamente gli aggiornamenti per il sistema operativo principale di PC e dispositivi.
+  L'infrastruttura di Windows 10 Enterprise di Contoso distribuisce e installa automaticamente gli aggiornamenti per i dispositivi che eseguono il sistema operativo principale di PC e dispositivi.
 
 - [Office 365 ProPlus](contoso-o365pp.md)
 
@@ -58,7 +58,7 @@ Fare riferimento ai seguenti articoli per i dettagli:
 
 - [Gestione dei dispositivi mobili](contoso-mdm.md)
 
-  Con molti dipendenti mobili e smartphone e tablet aziendali e personali, Contoso utilizza la gestione dei dispositivi mobili per registrare e proteggere i dispositivi e i dati.
+  Con molti dipendenti mobili e smartphone e tablet aziendali e personali, Contoso utilizza la gestione dei dispositivi mobili per registrare e proteggere i dispositivi e i dati e gestire le app.
 
 - [Protezione delle informazioni](contoso-info-protect.md)
 
@@ -70,7 +70,7 @@ Fare riferimento ai seguenti articoli per i dettagli:
 
 - [Sito di SharePoint Online per risorse digitali estremamente riservate](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
 
-  Per proteggere la proprietà intellettuale e consentire al proprio team di ricerca di collaborare con maggiore facilità, Contoso ha utilizzato un sito di SharePoint Online per i siti di dati altamente regolamentati.
+  Per proteggere la proprietà intellettuale e consentire al proprio team di ricerca di collaborare con maggiore facilità, Contoso ha utilizzato un sito di SharePoint Online per i dati altamente regolamentati.
 
 
 ## <a name="next-step"></a>Passaggio successivo

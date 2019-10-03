@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere come Contoso utilizza le funzionalità di protezione delle informazioni in Microsoft 365 Enterprise per proteggere le proprie risorse digitali nel cloud.
-ms.openlocfilehash: c11636d6fcdb1de634988e85238ce39a703d520d
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 66ae8f4d3ddd71db593daa7b375348e71afeb2f8
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074076"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369597"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protezione delle informazioni per Contoso Corporation
 
@@ -87,7 +87,7 @@ Con la propria identità e l'infrastruttura di gestione dei dispositivi mobili e
 
 La figura 1 mostra il set di criteri di Contoso per la protezione delle informazioni.
 
-![](./media/contoso-info-protect/contoso-info-protect-fig1.png)
+![Criteri di accesso condizionale per dispositivi, Exchange Online e SharePoint Online](./media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 **Figura 1: criteri di accesso condizionale per dispositivi, Exchange Online e SharePoint Online**
  

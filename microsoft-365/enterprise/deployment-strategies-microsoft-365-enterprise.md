@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su alcuni modi in cui è possibile distribuire le fasi dell'infrastruttura di base di Microsoft 365 Enterprise.
-ms.openlocfilehash: d71c46867e27252db90e55f304baa29e4bca4076
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148500"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369437"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Strategie di distribuzione dell'infrastruttura di base di Microsoft 365 Enterprise
 
@@ -51,7 +51,7 @@ Il set di utenti nell'implementazione pilota non è uguale a quello dell'impleme
 
 Per illustrare queste definizioni, in questo articolo si usano le immagini seguenti: 
 
-![](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
+![Immagini che illustrano le definizioni dell'implementazione pilota e utente](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
 L'ombreggiatura nell'immagine relativa all'implementazione utente indica la percentuale di implementazione (da 0% a 100%) nell'organizzazione usando un approccio strutturato o metodico, ad esempio per gruppi, reparti o aree geografiche.
 
@@ -76,7 +76,7 @@ Con una distribuzione seriale si implementa completamente una fase, ovvero si co
 
 Questo diagramma di Gantt mostra una distribuzione seriale semplificata delle fasi 2-6 dell'infrastruttura di base per Microsoft 365 Enterprise.
 
-![](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![Distribuzione seriale delle fasi 2-6 dell'infrastruttura di base](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 Per semplificare la discussione e l'esempio, si presuppone che ogni fase e ogni segmento di distribuzione all'interno di ogni fase richieda lo stesso tempo.
 
@@ -89,7 +89,7 @@ Ecco un'esperienza utente pilota semplificata di esempio:
 - A dicembre si deve usare lo smartphone personale per la MFA. (Identity)
 - A marzo si installa Windows 10 Enterprise nel desktop Windows 8.1. (Windows 10 Enterprise)
 - A giugno si installa Office 365 ProPlus, in sostituzione di Office 2013. (Office 365 ProPlus)
-- A settembre si applicano i criteri di registrazione dei dispositivi e delle app. (Gestione dispositivi mobili)
+- A settembre si applicano i criteri di registrazione dei dispositivi e delle app. (Gestione dei dispositivi mobili)
 - A dicembre si installa il client Azure Information Protection e si impara ad applicare etichette ai documenti. (Information Protection)
 
 Ne risulta una cadenza di 90 giorni tra due implementazioni pilota.
@@ -99,7 +99,7 @@ Ecco un'esperienza utente finale semplificata di esempio:
 - A gennaio si deve usare lo smartphone personale per la MFA. (Identity)
 - Ad aprile si installa Windows 10 Enterprise nel desktop Windows 8.1. (Windows 10 Enterprise)
 - A luglio si installa Office 365 ProPlus, in sostituzione di Office 2013. (Office 365 ProPlus)
-- A ottobre si applicano i criteri di registrazione dei dispositivi e delle app. (Gestione dispositivi mobili)
+- A ottobre si applicano i criteri di registrazione dei dispositivi e delle app. (Gestione dei dispositivi mobili)
 - A gennaio dell'anno successivo si installa il client Azure Information Protection e si impara ad applicare etichette ai documenti. (Information Protection)
 
 Ne risulta una cadenza di 90 giorni tra due implementazioni utente.
@@ -110,7 +110,7 @@ Lo svantaggio di questa strategia di distribuzione è che la distribuzione compl
 
 Per questa strategia di distribuzione si avvia l'implementazione pilota della fase successiva durante l'ultima parte dell'implementazione utente della fase corrente. Ecco la distribuzione delle fasi 2-6 quando l'implementazione pilota viene avviata quando l'implementazione utente della fase precedente sta per terminare.
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
+![Distribuzione in parallelo delle fasi 2-6 con implementazione utente senza sovrapposizione](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 Il risultato finale è che l'implementazione utente per la fase corrente viene completata in tutta l'organizzazione prima dell'avvio di quella successiva. Gli utenti che non sono inclusi nelle implementazioni pilota non devono gestire le implementazioni di più fasi contemporaneamente, ma le implementazioni pilota vengano eseguite in parallelo con quelle utente.
 
@@ -145,7 +145,7 @@ Per questa strategia di distribuzione si avviano:
 
 Ecco un confronto semplificato tra le diverse strategie di distribuzione.
 
-![](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
+![Distribuzione in parallelo delle fasi 2-6 con implementazione utente con sovrapposizione](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
 Il risultato finale è il seguente:
 
@@ -174,11 +174,11 @@ Ne risulta una cadenza di 30 giorni tra due implementazioni utente.
 
 Il vantaggio di questa strategia di distribuzione è che può richiedere anche meno tempo per distribuire completamente l'infrastruttura di base di Microsoft 365 Enterprise, senza che gli utenti finali debbano gestire più implementazioni contemporaneamente. Tuttavia, gli utenti non fanno una pausa tra le fasi successive.
 
-### <a name="up-front-infrastructure-and-rollout-of-end-to-end-configuration"></a>Infrastruttura predisposta in precedenza e implementazione della configurazione end-to-end
+### <a name="up-front-infrastructure-and-rollout-of-the-end-to-end-configuration"></a>Infrastruttura predisposta in precedenza e implementazione della configurazione end-to-end
 
 Per le organizzazioni di dimensioni inferiori che possono comprimere le fasi 2-6 in un unico segmento di distribuzione, la distribuzione risultante è simile alla seguente:
  
-![](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
+![Infrastruttura predisposta in precedenza e implementazione della configurazione end-to-end](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
 
 Il reparto IT configura l'infrastruttura per le fasi 2-6, quindi esegue l'implementazione per gli utenti pilota per verificare la funzionalità end-to-end. Ad esempio, gli utenti pilota ottengono contemporaneamente tutte le funzionalità seguenti:
 

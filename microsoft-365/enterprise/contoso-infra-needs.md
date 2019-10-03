@@ -3,7 +3,7 @@ title: Infrastruttura IT ed esigenze di business di Contoso
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo Microsoft 365 Enterprise può soddisfarne le esigenze di business.
-ms.openlocfilehash: e50a2b17544c1a551d25dffd751d12aec1c15ecd
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+description: Comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo Microsoft 365 Enterprise ha soddisfatto le sue esigenze di business.
+ms.openlocfilehash: d22763cede23d28c76a28c95a6e4772af81a996c
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072616"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369587"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastruttura IT ed esigenze di business di Contoso
 
-**Riepilogo:** comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo Microsoft 365 Enterprise può soddisfarne le esigenze di business.
-
+**Riepilogo:** comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo Microsoft 365 Enterprise ha soddisfatto le sue esigenze di business.
 
 Contoso sta cambiando la propria infrastruttura IT da un modello centralizzato locale a un'infrastruttura comprensiva di cloud che gestisce carichi di lavoro di produttività personale e applicazioni basati sul cloud.
 
@@ -33,7 +32,7 @@ Contoso utilizza un’infrastruttura IT locale principalmente centralizzata, con
 
 La Figura 1 mostra l'ufficio di una sede con centri dati delle applicazioni, una rete perimetrale e Internet.
 
-![](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Infrastruttura IT esistente di Contoso](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **Figura 1: Infrastruttura IT esistente di Contoso**
  
@@ -43,15 +42,15 @@ I centri dati delle applicazioni locali eseguono l'hosting dei seguenti elementi
 - Un set di server SharePoint legacy.
 - Server a livello di organizzazione e di team per l'archiviazione dei file.
 
-Inoltre, ogni sede centrale (hub) regionale che supporta un gruppo di server con un insieme di applicazioni simile. Questi server vengono controllati dai dipartimenti IT regionali.
+Inoltre, ogni ufficio hub regionale supporta un set di server con un set di applicazioni analogo. Questi server sono sotto il controllo dei reparti IT regionali.
 
 La possibilità di eseguire ricerche tra le applicazioni e i dati di questi data center separati e ubicati in più aree geografiche continua a rappresentare una sfida.
 
 Nella rete perimetrale degli uffici di Contoso, gruppi di server forniscono quanto segue:
 
-- Accesso remoto basato su VPN all’intranet di Contoso e proxy Web per i dipendenti nella sede di Parigi.
 - Hosting del sito Web pubblico di Contoso, da cui i clienti possono ordinare prodotti, parti, materiali o assistenza.
 - Hosting dell’extranet Contoso dedicata alla collaborazione e alla comunicazione con i partner.
+- Accesso remoto basato su rete privata virtuale (VPN) alla Intranet di Contoso e proxy Web per i dipendenti nella sede di Parigi.
 
 ## <a name="contosos-business-needs"></a>Esigenze di business di Contoso
 
@@ -81,7 +80,7 @@ Sicurezza:
 
 - Protezione delle informazioni
 
-  Bloccare l'accesso e crittografare le risorse digitali di valore elevato, come i dati dei clienti, le specifiche di progettazione e le informazioni sui dipendenti.
+  Bloccare l'accesso e crittografare le risorse digitali di valore elevato, come i dati dei clienti, le specifiche di progettazione e produzione e le informazioni sui dipendenti.
 
 - Gestione della sicurezza
 
@@ -111,7 +110,7 @@ Gestione:
 
 - Ridurre la spesa IT per la gestione del software dei computer e dei dispositivi client
 
-  Automatizzare l'installazione degli aggiornamenti del sistema operativo Windows e Microsoft Office nell'organizzazione.
+  Automatizzare l'installazione degli aggiornamenti del sistema operativo Windows e Microsoft Office ProPlus nell'organizzazione.
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Tabella delle esigenze di business di Contoso rispetto alle funzionalità di Microsoft 365 Enterprise
 
@@ -121,27 +120,27 @@ Il reparto IT di Contoso ha associato le esigenze di business alle funzionalità
 |:-------|:-----|:-----|
 | **Categoria** | **Esigenza di business** | **Prodotti o funzionalità di Microsoft 365 Enterprise** |
 | Produttività |  |  |
-|  | Semplificare la collaborazione | Teams, SharePoint Online, Skype for Business Online |
-|  | Migliorare la produttività per utenti remoti e mobili | Carichi di lavoro e dati sul cloud di Office 365 |
+|  | Semplificare la collaborazione | Microsoft Teams, SharePoint, OneDrive |
+|  | Migliorare la produttività per lavoratori remoti e mobili | Carichi di lavoro e dati basati sul cloud di Microsoft 365 |
 |  | Favorire la creatività e l'innovazione | Windows Ink, Cortana at Work, PowerPoint |
 | Sicurezza |  |  |
-|  | Gestione di identità e accesso | Account dedicati per gli amministratore globali con MFA (Multi-factor authentication) e Azure AD Privileged Identity Management <BR> MFA per tutti gli account utente <BR> Accesso condizionale <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Gestione di identità e accesso | Account di amministratore globali dedicati con Azure Multi-Factor Authentication (MFA) e Azure AD Privileged Identity Management (PIM) <BR> MFA per tutti gli account utente <BR> Accesso condizionale <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Protezione dalle minacce | Advanced Threat Analytics <BR> Windows Defender <BR> Protezione avanzata dalle minacce <BR> Office 365 Advanced Threat Protection <BR> Analisi delle minacce e risposta alle minacce in Office 365 <BR> |
-|  | Protezione delle informazioni | Azure Information Protection <BR> Prevenzione perdita di dati (DLP) di Office 365 <BR> Windows Information Protection <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | Protezione delle informazioni | Azure Information Protection <BR> Prevenzione perdita di dati (DLP) di Office 365 <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Gestione della sicurezza | Centro sicurezza di Azure  <BR> Windows Defender Security Center |
 | Accesso remoto e mobile e partner commerciali |  |  |
 |  | Migliorare la sicurezza per lavoratori remoti e mobili | Microsoft Intune |
-|  | Ridurre l'infrastruttura di accesso remoto per i dipendenti | Carichi di lavoro e dati sul cloud di Office 365 |
+|  | Ridurre l'infrastruttura di accesso remoto per i dipendenti | Carichi di lavoro e dati basati sul cloud di Microsoft 365 |
 |  | Fornire migliore connettività e ridurre le spese per le transazioni B2B | Autenticazione federata e risorse basate su cloud |
 | Conformità |  |  |
 |  | Rispettare i requisiti normativi applicabili | Funzionalità per il GDPR in Office 365 |
 | Gestione |  |  |
-|  | Ridurre la spesa IT per installare gli aggiornamenti del client | Anelli di distribuzione <BR> Aggiornamento sul posto a Windows 10 e Autopilot <BR> Office 365 ProPlus |
+|  | Ridurre la spesa IT per installare gli aggiornamenti del client | Anelli di distribuzione <BR> Aggiornamenti di Windows 10 Enterprise <BR> Aggiornamenti di Office 365 ProPlus |
 ||||
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Informazioni](contoso-networking.md) sulla rete locale dell'azienda Contoso e come è stata ottimizzata per l'accesso e la latenza alle risorse basate su cloud Microsoft 365 nell'organizzazione.
+[Informazioni](contoso-networking.md) sulla rete locale dell'azienda Contoso e come è stata ottimizzata per l'accesso e la latenza alle risorse basate su cloud Microsoft 365.
 
 ## <a name="see-also"></a>Vedere anche
 

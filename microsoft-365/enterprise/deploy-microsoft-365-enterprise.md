@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le risorse a disposizione per la distribuzione di Microsoft 365 Enterprise nell'organizzazione.
-ms.openlocfilehash: ce4b3dfeb3c13f68b0218f5aea5740b6dc5252d0
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: 1d88ed400d20b15823d3991a1cd099bbb16ffa84
+ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050277"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369537"
 ---
 # <a name="deploy-microsoft-365-enterprise"></a>Distribuire Microsoft 365 Enterprise
 
@@ -65,7 +65,7 @@ Per distribuire autonomamente Microsoft 365 Enterprise, è possibile:
 
 Ecco la relazione tra l'infrastruttura di base e i carichi di lavoro e gli scenari.
 
-![](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![Relazione tra l'infrastruttura di base e i carichi di lavoro e gli scenari](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 I carichi di lavoro e gli scenari operano al di sopra dell'infrastruttura di base. Tuttavia non occorre disporre di tutte le fasi dell'infrastruttura di base completate per iniziare a usare i carichi di lavoro per la produttività e la collaborazione.
 
