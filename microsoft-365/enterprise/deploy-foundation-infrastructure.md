@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le fasi principali della distribuzione dell'infrastruttura di base per Microsoft 365 Enterprise all'interno dell'organizzazione, nota anche come la distribuzione di base.
-ms.openlocfilehash: 016764333b7234681aa06e511227b203f9c9eaea
-ms.sourcegitcommit: 78fa107271252d902e600196a75cfa746bca73e6
+ms.openlocfilehash: c18e4d770aec63da091ad38fc341a87f9d71e9be
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37050307"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370353"
 ---
 # <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastruttura di base di Microsoft 365 Enterprise
 
@@ -28,12 +28,12 @@ Per un percorso definito end-to-end per la distribuzione, è possibile utilizzar
 
 | | Fase | Risultati |
 |:-------|:-----|:-----|
-|![](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Fase 1: Funzionalità di rete](networking-infrastructure.md)| La rete è ottimizzata per l'accesso ai servizi basati sul cloud di Microsoft 365. |
-|![](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Fase 2: identità](identity-infrastructure.md)| Gli account di amministratore sono protetti, gli utenti e gruppi sono sincronizzati e l'autenticazione degli utenti è sicura. |
-|![](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Fase 3: Windows 10 Enterprise](windows10-infrastructure.md)| I computer esistenti basati su Windows possono eseguire l'aggiornamento a Windows 10 Enterprise e vengono installati nuovi dispositivi con Windows 10 Enterprise. |
-|![](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Fase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Gli utenti di Microsoft Office esistenti possono eseguire l'aggiornamento a Office 365 ProPlus. |
-|![](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Fase 5: gestione dei dispositivi mobili](mobility-infrastructure.md)| I dispositivi possono essere registrati e gestiti. |
-|![](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Fase 6: protezione delle informazioni](infoprotect-infrastructure.md)| Le funzionalità di sicurezza di Office 365 sono abilitate e sono pronti etichette e criteri per proteggere i documenti e i messaggi di posta elettronica. |
+|![Fase 1: collegamento in rete](./media/deploy-foundation-infrastructure/networking_icon-small.png)|[Fase 1: Funzionalità di rete](networking-infrastructure.md)| La rete è ottimizzata per l'accesso ai servizi basati sul cloud di Microsoft 365. |
+|![Fase 2: identità](./media/deploy-foundation-infrastructure/identity_icon-small.png)|[Fase 2: identità](identity-infrastructure.md)| Gli account di amministratore sono protetti, gli utenti e gruppi sono sincronizzati e l'autenticazione degli utenti è sicura. |
+|![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Fase 3: Windows 10 Enterprise](windows10-infrastructure.md)| I computer esistenti basati su Windows possono eseguire l'aggiornamento a Windows 10 Enterprise e vengono installati nuovi dispositivi con Windows 10 Enterprise. |
+|![Fase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Fase 4: Office 365 ProPlus](office365proplus-infrastructure.md)| Gli utenti di Microsoft Office esistenti possono eseguire l'aggiornamento a Office 365 ProPlus. |
+|![Fase 5: gestione dei dispositivi mobili](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Fase 5: gestione dei dispositivi mobili](mobility-infrastructure.md)| I dispositivi possono essere registrati e gestiti. |
+|![Fase 6: protezione delle informazioni](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Fase 6: protezione delle informazioni](infoprotect-infrastructure.md)| Le funzionalità di sicurezza di Office 365 sono abilitate e sono pronti etichette e criteri per proteggere i documenti e i messaggi di posta elettronica. |
 
 Le fasi iniziano con le più fondamentali (rete e identità) e quindi creano livelli di impostazioni dell'infrastruttura e gruppi per:
 
@@ -56,7 +56,7 @@ Per visualizzare la struttura del contenuto, vedere questo breve video.
 
 Ecco l'infrastruttura di base della Guida alla distribuzione generale di Microsoft 365 Enterprise:
 
-![](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![Infrastruttura di base della Guida alla distribuzione generale di Microsoft 365 Enterprise](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>In breve
 

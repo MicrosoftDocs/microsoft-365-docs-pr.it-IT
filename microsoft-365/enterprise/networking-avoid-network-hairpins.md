@@ -3,7 +3,7 @@ title: 'Passaggio 3: evitare fenomeni di "hairpinning" di rete'
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/31/2018
+ms.date: 09/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,20 +13,26 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e rimuovere fenomeni di "hairpinning" di rete per prestazioni migliori.
-ms.openlocfilehash: eb233c02d1d4c0198c11d520acca1d680df78a82
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 8d3c971c1295f8f1112c594635bfd791b251bd68
+ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073286"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37370333"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>Passaggio 3: evitare fenomeni di "hairpinning" di rete
 
 *Questo passaggio è obbligatorio e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Fase 1: collegamento in rete](./media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Un [hairpin di rete](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3) si verifica quando il traffico associato a una destinazione viene prima indirizzato a un'altra posizione intermedia, come uno stack di sicurezza in locale, un broker di accesso cloud o un gateway Web basato sul cloud. Un hairpin di rete potrebbe anche essere dovuto a uno scarso routing su Internet a causa dei provider di servizi di rete. Un hairpin aggiunge latenza e può potenzialmente reindirizzare il traffico a una posizione geograficamente lontana.
+Si verifica un ["hairpinning" di rete](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P3) quando il traffico associato per una destinazione viene prima indirizzato a un'altra posizione intermedia, ad esempio uno stack di sicurezza locale, un broker di accesso cloud o un gateway Web basato sul cloud. Ecco un esempio.
+
+![Esempio di "hairpinning" di rete](./media/networking-avoid-network-hairpins/network-hairpin-example.png)
+
+Un "hairpinning" di rete può dipendere anche da un routing insufficiente in Internet causato dai provider di servizi di rete. 
+
+Un "hairpinning" aggiunge latenza e può potenzialmente reindirizzare il traffico a una posizione geograficamente distante.
 
 Per ottimizzare le prestazioni per il traffico verso i servizi basati sul cloud di Microsoft 365, verificare se l'ISP che fornisce la connessione Internet locale dispone di una relazione di peering diretto con Microsoft Global Network nelle immediate vicinanze della posizione in questione. Tali connessioni non hanno hairpin.
 
@@ -38,10 +44,12 @@ Se si utilizza una rete basata sul cloud o servizi di sicurezza per il traffico 
 
 Ove possibile, configurare i router periferici in modo da inviare direttamente il traffico di Microsoft 365 attendibile, anziché inoltrarlo tramite proxy o tunneling attraverso un fornitore di sicurezza di rete basato sul cloud o un cloud di terze parti che elabora il traffico di Internet. 
 
+![Esempio di bypass dell'"hairpinning" di rete](./media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+
 Come checkpoint provvisorio, è possibile vedere i [criteri uscita](networking-exit-criteria.md#crit-networking-step3) per questo passaggio.
 
 ## <a name="next-step"></a>Passaggio successivo
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step4.png)|[Configurare il bypass di traffico](networking-configure-proxies-firewalls.md)|
+|![Passaggio 4](./media/stepnumbers/Step4.png)|[Configurare il bypass di traffico](networking-configure-proxies-firewalls.md)|
