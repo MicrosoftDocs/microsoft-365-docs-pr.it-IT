@@ -3,7 +3,7 @@ title: Indagine automatizzata e risposta (AIR) in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/18/2019
+ms.date: 10/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,27 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Informazioni sulle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 1e600a7a392acc34fac2547a3daa17c0058322b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
+ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083884"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386203"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Indagine automatizzata e risposta (AIR) in Office 365
 
-Le funzionalità di analisi e risposta automatizzate (incluse in [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2) consentono di eseguire processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. AIR può aiutare il team delle operazioni di sicurezza a operare in modo più efficiente ed efficace.
+Le funzionalità di analisi e risposta automatizzate consentono di eseguire processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. AIR può aiutare il team delle operazioni di sicurezza a operare in modo più efficiente ed efficace.
 - Per ottenere una panoramica del funzionamento dell'aria, utilizzare questo articolo.
 - Per iniziare a usare AIR, vedere [indagare e rispondere automaticamente alle minacce in Office 365](office-365-air.md).
 
 > [!NOTE]
 > Per accedere alle funzionalità AEREe, è necessario essere un amministratore globale, un amministratore della sicurezza, un operatore di sicurezza o un lettore di sicurezza. Per ulteriori informazioni su queste autorizzazioni, vedere [Microsoft 365 Security Center: Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+
+L'aria è inclusa nei seguenti abbonamenti:
+- Microsoft 365 E5
+- Sicurezza Microsoft 365 E5
+- Office 365 E5
+- Office 365 Advanced Threat Protection piano 2
 
 ## <a name="the-overall-flow-of-air"></a>Flusso globale dell'aria
 
@@ -57,8 +63,12 @@ Nella versione iniziale di AIR (a partire da aprile 2019), gli avvisi generati d
 
 - Messaggi di posta elettronica contenenti gli URL di phishing rimossi dopo il recapito *
 
+- Modelli di invio di messaggi di posta elettronica sospetti #
+
+- Utente con limitazioni all'invio di posta elettronica #
+
 > [!NOTE]
-> Agli avvisi contrassegnati da un asterisco viene assegnata una gravità *informativa* nei rispettivi criteri di avviso all'interno del centro sicurezza & conformità, con le notifiche di posta elettronica disattivate. Le notifiche tramite posta elettronica possono essere attivate tramite la [configurazione del criterio di avviso](../../compliance/alert-policies.md#alert-policy-settings).
+> Agli avvisi contrassegnati da un asterisco (*) viene assegnata una gravità *informativa* nei rispettivi criteri di avviso all'interno del centro sicurezza & conformità, con le notifiche di posta elettronica disattivate. Le notifiche tramite posta elettronica possono essere attivate tramite la [configurazione del criterio di avviso](../../compliance/alert-policies.md#alert-policy-settings). Gli avvisi contrassegnati con un hash (#) sono generalmente disponibili agli avvisi associati ai PlayBook di anteprima pubblica.
 
 Per visualizzare gli avvisi, nel centro sicurezza & conformità scegliere **avvisi** > **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente. Tenere presente che gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, è necessario modificare il filtro degli avvisi per includere gli avvisi informativi.
 
@@ -74,15 +84,18 @@ Gli schemi di sicurezza che otterrete con AIR sono studiati per affrontare le mi
 
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>Gli schemi di sicurezza vengono implementati in fasi
 
-Come parte di AIR, i PlayBook di sicurezza stanno per essere implementati in fasi. Durante la fase 1 (l'anteprima ha iniziato a girare nel mese di aprile 2019), sono stati rilasciati diversi PlayBook che includono suggerimenti per le azioni riesaminate e approvate dagli amministratori di sicurezza:
+Come parte di AIR, i PlayBook di sicurezza stanno per essere implementati in fasi. La fase 1 è ora generalmente disponibile e include diversi PlayBook che forniscono suggerimenti per le azioni che gli amministratori della sicurezza possono rivedere e approvare:
 - Messaggio phishing visualizzato dall'utente
-- URL fare clic su modifica verdetto 
+- URL fare clic su modifica verdetto
 - Malware rilevato dopo il recapito (ZAP malware)
 - Phishing rilevato dopo il recapito dello ZAP (phishing ZAP)
 
-La fase 1 include anche indagini manuali tramite posta elettronica (tramite [Esplora minacce](threat-explorer.md)).
+La fase 1 include anche il supporto per le indagini manuali tramite posta elettronica (tramite [Esplora minacce](threat-explorer.md)).
 
-La fase 2 è in corso. Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per vedere cos'altro è pianificato e disponibile a breve.
+La fase 2 è ora in corso con i seguenti PlayBook nell' **anteprima pubblica**, fornendo suggerimenti per le azioni e aiutando gli amministratori della sicurezza a esaminare i problemi:
+- Utente segnalato come compromesso (anteprima pubblica)
+
+Ulteriori PlayBook verranno rilasciati Man mano che sono stati completati. Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per vedere cos'altro è pianificato e disponibile a breve.
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>I PlayBook includono analisi e suggerimenti
 

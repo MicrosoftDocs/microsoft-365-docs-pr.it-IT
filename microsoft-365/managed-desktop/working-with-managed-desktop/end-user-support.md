@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de7f218b5cfe2dcdba6c29aea81bd6004adedf76
-ms.sourcegitcommit: 63e35b846d964dde5919a08c2fe432e749e8eff6
+ms.openlocfilehash: 6bb3ebfabe74af82cd62e836e9c3d6dfd606cb88
+ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047229"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "37391219"
 ---
 # <a name="getting-help-for-end-users"></a>Ottenere assistenza per gli utenti finali
 
 Esistono due modi in cui gli utenti dell'organizzazione possono ottenere assistenza con i propri dispositivi Microsoft Managed Desktop: **informazioni** sull'app o sul supporto telefonico. Entrambe le opzioni di supporto sono disponibili per gli utenti 24 ore al giorno, 7 giorni alla settimana.
  
 >[!NOTE]
->Queste opzioni di supporto non sono disponibili per i dispositivi del gruppo di test. 
+>Queste opzioni di supporto non sono disponibili per i dispositivi del gruppo di test.
 
 ## <a name="get-help-app"></a>Ottenere l'app della Guida
 
@@ -29,7 +29,20 @@ Il metodo preferito per fornire supporto agli utenti è **ottenere assistenza**,
 Si tratta di un'applicazione installata su tutti i dispositivi Microsoft Managed Desktop ed è bloccata alla barra delle applicazioni. 
 
 - Gli utenti finali possono richiedere una chiamata a un numero di telefono fornito o chattare online con una rappresentante del servizio.
-- Le richieste che non rientrano nell'ambito di supporto di Microsoft Managed Desktop vengono reindirizzate all'helpdesk IT locale tramite telefonata.  
+- Le richieste che non rientrano nell'ambito di supporto di Microsoft Managed Desktop vengono reindirizzate all'helpdesk IT locale tramite telefonata.
+
+### <a name="prerequisites"></a>Prerequisiti
+Affinché gli utenti finali siano in grado di ottenere assistenza tramite l'app, verificare che siano soddisfatti i prerequisiti seguenti:
+
+- Il dispositivo deve essere registrato con Microsoft Managed Desktop utilizzando uno dei metodi disponibili in [set up Microsoft Managed Desktop Devices](../get-started/set-up-devices.md), ad esempio, [registrare i nuovi dispositivi manualmente](../get-started/register-devices-self.md).
+- La lingua di visualizzazione per il dispositivo deve essere impostata su una qualsiasi delle impostazioni locali in lingua inglese: en-US, en-GB, en-au, en-NZ o en-ca.
+- L'app Get Help dovrebbe essere aggiornata. Per confermare questa operazione, verificare la disponibilità di aggiornamenti delle app in Microsoft Store.
+- Alcuni [endpoint](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) devono essere accessibili dal dispositivo.
+
+> [!NOTE]
+> L'app Get Help può richiedere fino a un'ora dopo che un dispositivo è stato distribuito per funzionare completamente.
+
+Se i prerequisiti sono stati verificati e l'app Ottieni aiuto continua a non funzionare, l'amministratore IT dovrà presentare una richiesta di [supporto](admin-support.md).
 
 ## <a name="phone-support"></a>Assistenza telefonica 
 
@@ -44,7 +57,7 @@ Gli utenti finali con i dispositivi Microsoft Managed Desktop hanno anche access
 >[!NOTE]
 >È necessario che l'indirizzo di posta elettronica dell'organizzazione sia pronto quando si chiama per verificare l'identità. 
 
-## <a name="additional-resources"></a>Risorse aggiuntive
+## <a name="additional-resources"></a>Altre risorse
 - [Supporto di amministrazione per Microsoft Managed Desktop](admin-support.md). 
 - [Supporto per Microsoft Managed Desktop](../service-description/support.md).
 - Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nella sezione **risorse online** dell' [amministratore Microsoft Managed Desktop Portale](https://aka.ms/mwaasportal).
