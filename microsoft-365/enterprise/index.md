@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 title: Documentazione e risorse di Microsoft 365 Enterprise
-ms.openlocfilehash: 38d349fb17303ac9e9979ae9a58682e01578b70a
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: c96656495e9433703b85fb1c5f3610a617100253
+ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283478"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "37391209"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -78,8 +78,9 @@ ms.locfileid: "32283478"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Gestire la &amp; conformità di sicurezza</h3>
-                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Soluzioni per la conformità</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Conformità alla sicurezza &amp; di Office 365</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Piani d'azione per la conformità</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/" target="_blank">Conformità di Microsoft 365</a></p>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/security/" target="_blank">Sicurezza di Microsoft 365</a></p>
                                                 <P><a href="microsoft-365-policies-configurations.md" target="_blank">Accesso &amp; ai dispositivi di identità</a></p>
                                                 <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
                                             </div>
@@ -97,7 +98,7 @@ ms.locfileid: "32283478"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>AdDestrare gli amministratori degli utenti di &</h3>
+                                                <h3>Addestrare gli amministratori & utenti</h3>
                                                 <P><a href="https://docs.microsoft.com/learn/browse/?products=m365" target="_blank">Microsoft 365</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
@@ -140,7 +141,7 @@ ms.locfileid: "32283478"
                                                 <P><a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security" target="_blank">Microsoft Cloud App Security</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune/index" target="_blank">Microsoft Intune</a></p>                              <P><a href="https://docs.microsoft.com/azure/active-directory" target="_blank">Azure Active Directory</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure Information Protection</a></p>
-                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Protezione avanzata dalle minacce di Azure</a></p>
+                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Azure Advanced Threat Protection</a></p>
                                             </div>
                                         </div>
                                     </div>
