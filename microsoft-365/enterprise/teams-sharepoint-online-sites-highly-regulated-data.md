@@ -1,9 +1,9 @@
 ---
-title: Siti Microsoft Teams e SharePoint Online per dati altamente riservati
+title: Siti di SharePoint per dati altamente regolamentati
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2019
+ms.date: 10/04/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,212 +12,199 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Creare un sito del team SharePoint Online sicuro o un team di Microsoft Teams per archiviare gli asset digitali più importanti e riservati.
-ms.openlocfilehash: 1243a88e6553b1d58370a60b5e2fec38d3dbcaf6
-ms.sourcegitcommit: 681ae93ca1d07532944665cf5d99ff1f08c0b46a
+description: Creare un sito del team di SharePoint sicuro in cui archiviare i file più importanti e sensibili.
+ms.openlocfilehash: dc604870826075cee645dd466b82f908e1571339
+ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37210052"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37403185"
 ---
-# <a name="microsoft-teams-and-sharepoint-online-sites-for-highly-regulated-data"></a>Siti Microsoft Teams e SharePoint Online per dati altamente riservati
+# <a name="sharepoint-sites-for-highly-regulated-data"></a>Siti di SharePoint per dati altamente regolamentati
 
 *Questo scenario si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-Poiché Microsoft 365 Enterprise include una gamma completa di servizi basati sul cloud, è possibile creare, archiviare e proteggere i dati altamente riservati, tra cui quelli:
+Microsoft 365 Enterprise include una gamma completa di servizi basati sul cloud, che permettono di creare, archiviare e proteggere i dati altamente regolamentati archiviati nei file, tra cui quelli:
 
 - Soggetti alle normative internazionali.
 - I dati più importanti per l'organizzazione, ad esempio segreti finanziari o informazioni sulle risorse umane e strategia dell'organizzazione.
 
 Affinché una scenario Microsoft 365 Enterprise basata sul cloud soddisfi le esigenze aziendali, è necessario:
 
-- Memorizzare asset digitali, quali documenti, presentazioni, fogli di calcolo e così via, in un sito di SharePoint Online o nella scheda **File** di un team di Microsoft Teams.
-- Bloccare i siti del team per evitare che:
-   - Si acceda solo a un set specifico di account utente tramite l'appartenenza al gruppo, che include gli utenti che possono accedere al sito del team di SharePoint Online con relativo livello di autorizzazione e gli utenti che possono gestirlo.
-   - I membri del sito dalla concessione dell'accesso ad altri utenti.
-   - I non-membri del sito dalla richiesta di accesso al sito.
-- Configurare un'etichetta di conservazione di Office 365 per i siti o i team di SharePoint Online come metodo predefinito per definire i criteri di conservazione dei documenti nel sito o nel team.
-- Bloccare l'invio di file all'esterno dell'organizzazione da parte degli utenti.
-- Crittografare gli asset digitali più riservati del sito o del team.
-- Aggiungere autorizzazioni per gli asset digitali più riservati, in modo che, anche in caso di condivisione all'esterno del sito, all'apertura vengano richieste le credenziali di un account utente che dispone dell'autorizzazione.
+- Archiviare i file (documenti, presentazioni, fogli di calcolo e così via) in un sito del team di SharePoint.
+- Bloccare il sito per impedire:
+  - L'accesso a utenti che non siano membri del gruppo di Office 365 per il sito.
+  - I membri del sito dalla concessione dell'accesso ad altri utenti.
+  - I non-membri del sito dalla richiesta di accesso al sito.
+- Configurare un'etichetta di conservazione di Office 365 per i siti di SharePoint come modo predefinito per impedire agli utenti di inviare file all'esterno dell'organizzazione.
+- Crittografare i file più sensibili del sito con crittografia che segue il file.
+- Aggiungere autorizzazioni per i file più sensibili, in modo che, anche in caso di condivisione all'esterno del sito, all'apertura vengano richieste le credenziali valide di un account utente autorizzato.
 
 La tabella seguente associa i requisiti di questo scenario a una funzionalità di Microsoft 365 Enterprise.
 
 |||
 |:-------|:-----|
 | **Requisito** | **Funzionalità di Microsoft 365 Enterprise** |
-| Memorizzare gli asset digitali | Siti del team di SharePoint Online e team di Office 365 |
-| Bloccare il sito | Autorizzazioni gruppi di Azure AD e sito del team di SharePoint Online |
-| Assegnare un'etichetta agli asset digitali del sito | Etichette di conservazione di Office 365 |
+| Archiviare file | Siti del team di SharePoint |
+| Bloccare il sito | Autorizzazioni per gruppi di Azure Active Directory (Azure AD) e sito del team di SharePoint |
+| Etichettare i file del sito | Etichette di conservazione di Office 365 |
 | Bloccare gli utenti quando inviano file all'esterno dell'organizzazione. | Criteri di prevenzione della perdita di dati (DLP) in Office 365 |
-| Crittografare tutti gli asset digitali del sito | Etichette secondarie di Azure Information Protection in Enterprise Mobility + Security (EMS) |
-| Aggiungere autorizzazioni a tutti gli asset digitali del sito | Etichette secondarie di Azure Information Protection in EMS |
+| Crittografare tutti i file del sito | Sottoetichette di riservatezza di Office 365 |
+| Aggiungere autorizzazioni ai file del sito | Sottoetichette di riservatezza di Office 365 |
 |||
 
-Ecco la configurazione per un sito di SharePoint Online.
+Ecco la configurazione per un sito di SharePoint sicuro.
 
-![Siti Microsoft Teams e SharePoint Online per scenario di dati altamente riservati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![I siti di SharePoint per lo scenario dei dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 Questo scenario richiede di aver già implementato:
 
 - La fase [Identità](identity-infrastructure.md) e i passaggi 1 e 2 della fase [Protezione delle informazioni](infoprotect-infrastructure.md) dell'infrastruttura di base. 
-- [SharePoint Online](sharepoint-online-onedrive-workload.md) per i dati altamente riservati nei siti del team di SharePoint Online.
-- [Microsoft Teams](teams-workload.md), per i dati altamente riservati nei team di Microsoft Teams.
+- [SharePoint](sharepoint-online-onedrive-workload.md).
 
-Le fasi seguenti illustrano come progettare, configurare e facilitare il passaggio a siti e team di SharePoint Online per dati con riservatezza elevata.
+Le fasi seguenti illustrano come progettare, configurare e facilitare l'adozione dei siti di SharePoint per dati altamente regolamentati.
 
-Per vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, ha progettato un sito di SharePoint Online per i propri team di ricerca, vedere questo [esempio di configurazione](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
-
-Un team con dati altamente riservati richiede che venga creato un sito del team di SharePoint Online per dati altamente riservati. Quindi si crea un nuovo team che utilizza il gruppo Office 365 del sito del team di SharePoint Online. Vedere Fase 2, Passaggio 4 per maggiori informazioni.
-
-Ecco la configurazione per un team.
-
-![Siti Microsoft Teams e SharePoint Online per scenario di dati altamente riservati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-team.png)
-
+Per vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, ha progettato un sito di SharePoint per i propri team di ricerca, vedere questo [esempio di configurazione](contoso-sharepoint-online-site-for-highly-confidential-assets.md).
 
 ## <a name="identity-and-device-access-prerequisites"></a>Prerequisiti di identità e accesso dei dispositivi
 
-Per proteggere l'accesso al team o al sito di SharePoint Online, assicurarsi di aver configurato i [criteri di identità e accesso dei dispositivi](identity-access-policies.md) e i [criteri di accesso a SharePoint Online consigliati](sharepoint-file-access-policies.md).
+Per proteggere l'accesso ai siti di SharePoint, assicurarsi di aver configurato i [criteri di identità e accesso dei dispositivi](identity-access-policies.md) e i [criteri di accesso a SharePoint consigliati](sharepoint-file-access-policies.md).
 
 ## <a name="phase-1-design"></a>Fase 1: progettazione
 
-Per creare un sito o un team di SharePoint Online per dati altamente riservati, è necessario innanzitutto identificarne lo scopo. Ad esempio, il reparto di ricerca e sviluppo di un'organizzazione di produzione ha bisogno di un sito di SharePoint Online per archiviare le specifiche di progettazione attuali per i prodotti esistenti e un luogo in cui collaborare su nuovi prodotti. Solo i membri del reparto di ricerca e sviluppo e i dirigenti selezionati saranno autorizzati ad accedere al sito.
+Per creare un sito di SharePoint per i dati altamente regolamentati, è necessario prima di tutto identificarne lo scopo. Ad esempio, il reparto ricerca e sviluppo di un'azienda del settore manifatturiero ha bisogno di un sito di SharePoint per archiviare le specifiche di progettazione attuali per i prodotti esistenti e come luogo in cui collaborare su nuovi prodotti. Solo i membri del reparto di ricerca e sviluppo e i dirigenti selezionati saranno autorizzati ad accedere al sito.
 
 Questo scopo, ad esempio determinerà l'identificazione di elementi essenziali quali:
 
-- L'insieme dei set di autorizzazione di SharePoint Online e i gruppi di SharePoint
-- L'insieme dei gruppi di accesso, i gruppi di sicurezza di Azure AD e i membri da aggiungere ai gruppi di SharePoint
-- L'etichetta di conservazione di Office 365 da assegnare al sito e il set di criteri DLP per l'etichetta
-- Le impostazioni di un'etichetta secondaria di Azure Information Protection che gli utenti applicano agli asset digitali altamente riservati archiviati nel sito
+- L'etichetta di conservazione di Office 365 da assegnare alla sezione Documenti del sito e i criteri DLP per l'etichetta
+- Le impostazioni di una sottoetichetta di riservatezza di Office 365 che gli utenti applicano ai file altamente sensibili archiviati nel sito
 
-Una volta determinate queste impostazioni, utilizzarle per configurare il sito nella Fase 2. 
+Una volta determinate queste impostazioni, usarle per configurare il sito nella Fase 2. 
 
-### <a name="step-1-an-isolated-sharepoint-online-site"></a>Passaggio 1: Sito di SharePoint Online isolato
+### <a name="step-1-office-365-retention-labels-and-dlp-policies"></a>Passaggio 1: Etichette di conservazione di Office 365 e criteri DLP
 
-La versione bloccata di un sito del team di SharePoint Online è nota come sito isolato. A differenza delle impostazioni predefinite dei siti dei team privati, i siti isolati sono configurati per impedire:
-
-- L'accesso agli utenti che non sono membri di gruppi specifici.
-- La richiesta di accesso.
-- La concessione non autorizzata di accesso da parte di membri correnti di gruppi specifici.
-- L'amministrazione del sito da parte dei membri del gruppo di accesso.
-
-La sicurezza dei siti del team di SharePoint Online che contengono asset altamente riservati non cambia a meno che la modifica non venga apportata da un amministratore di SharePoint per il sito.
-
-Vedere [Progettare un sito del team di SharePoint Online isolato](https://docs.microsoft.com/office365/enterprise/design-an-isolated-sharepoint-online-team-site) per avere dettagli su come determinare il set di livelli di autorizzazione, gruppi di SharePoint, gruppi di accesso e membri del gruppo.
-
-### <a name="step-2-office-365-retention-labels-and-dlp-policies"></a>Passaggio 2: Etichette di conservazione di Office 365 e criteri DLP
-
-Quando vengono applicate a un sito del team di SharePoint Online, le etichette di conservazione di Office 365 forniscono un metodo predefinito per classificare tutti gli asset digitali archiviati nel sito.
+Quando vengono applicate alla sezione Documenti di un sito del team di SharePoint, le etichette di conservazione di Office 365 forniscono un metodo predefinito per classificare tutti i file archiviati nel sito.
  
-Per i siti di SharePoint Online per dati altamente riservati, è necessario determinare quale etichetta di conservazione di Office 365 usare.
+Per i siti di SharePoint per dati altamente regolamentati, è necessario determinare quale etichetta di conservazione di Office 365 usare.
 
 Per considerazioni sulla progettazione delle etichette di Office 365, vedere [Classificazione ed etichette di Office 365](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
 
 Per proteggere le informazioni sensibili e prevenirne la divulgazione accidentale o intenzionale, si utilizzano criteri DLP. Per ulteriori informazioni, vedere [Panoramica](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
 
-Per i siti di SharePoint Online per dati altamente riservati, è necessario configurare un criterio DLP per l'etichetta di conservazione di Office 365 assegnata al sito per bloccare gli utenti quando tentano di condividere asset digitali con utenti esterni. 
+Per i siti di SharePoint, è necessario configurare un criterio DLP per l'etichetta di conservazione di Office 365 assegnata al sito per bloccare gli utenti quando provano a condividere file con utenti esterni. 
 
-### <a name="step-3-your-azure-information-protection-sub-label"></a>Passaggio 3: Etichette secondarie di Azure Information Protection
+### <a name="step-2-your-office-365-sensitivity-sublabel"></a>Passaggio 2: Sottoetichetta di riservatezza di Office 365
 
-Per fornire la crittografia e un set di autorizzazioni per gli asset digitali più sensibili, gli utenti devono applicare un'etichetta di Azure Information Protection utilizzando il client di Azure Information Protection. Per utilizzare le etichette di Azure Information Protection per i siti di SharePoint Online per dati altamente riservati, è necessario configurare un'etichetta secondaria di Azure Information Protection in un criterio con ambito. 
+Per fornire la crittografia e un set di autorizzazioni per i file più sensibili, gli utenti devono applicare una sottoetichetta di riservatezza di Office 365.
 
-L'etichetta secondaria è presente sotto l'etichetta esistente. Ad esempio, è possibile creare un'etichetta secondaria Ricerca e sviluppo sotto l'etichetta Altamente riservato. Un criterio con ambito è quello che si applica solo a un sottoinsieme di utenti. Per i siti di SharePoint Online per dati altamente riservati, l'ambito è l'insieme di utenti membri dei gruppi di accesso per il sito.
+Una sottoetichetta esiste sotto un'etichetta esistente. Ad esempio, è possibile creare una sottoetichetta Ricerca e sviluppo sotto l'etichetta Altamente regolamentato. Per i siti di SharePoint per i dati altamente regolamentati, è necessario configurare le autorizzazioni in modo che solo i membri del sito possano aprire e modificare il file a cui è allegata la sottoetichetta.
 
-Le impostazioni dell'etichetta secondaria applicata viaggiano con l'asset. Anche se viene scaricato e condiviso all'esterno del sito, solo gli account utente autenticati che dispongono delle autorizzazioni possono aprirlo.
+Le impostazioni della sottoetichetta applicata seguono il file. Anche se dovesse uscire dal sito, solo gli account utente autenticati con autorizzazioni adeguate potrebbero aprirlo.
+
 
 ### <a name="design-results"></a>Risultati della progettazione
 
 È stato determinato quanto segue:
 
-- Il set di gruppi di SharePoint e i livelli di autorizzazione
-- Il set di gruppi di accesso e i relativi membri per ogni livello di autorizzazione
 - L'etichetta di conservazione appropriata di Office 365 e il criterio DLP ad essa associato
-- Le impostazioni dell'etichetta secondaria di Azure Information Protection che includono crittografia e autorizzazioni
+- Le impostazioni della sottoetichetta di riservatezza di Office 365 che includono crittografia e autorizzazioni
 
 ## <a name="phase-2-configure"></a>Fase 2: Configurazione
 
-In questa fase, le impostazioni determinate nella Fase 1 vengono implementate per creare un sito di SharePoint Online per dati altamente riservati.
+In questa fase, le impostazioni determinate nella Fase 1 vengono implementate per creare un sito di SharePoint per dati altamente regolamentati.
 
-### <a name="step-1-create-and-configure-an-isolated-sharepoint-online-team-site"></a>Passaggio 1: Creare e configurare un sito del team di SharePoint Online isolato
+### <a name="step-1-create-a-private-sharepoint-team-site-with-owners-and-members-of-the-corresponding-office-365-group"></a>Passaggio 1: Creare un sito del team di SharePoint privato con proprietari e membri del gruppo di Office 365 corrispondente
 
-Attenersi alle istruzioni riportate in [Distribuire un sito del team di SharePoint Online isolato](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site) per:
+Seguire [queste istruzioni]( https://support.office.com/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8) per creare un sito del team di SharePoint privato.
 
-- Creare e popolare i gruppi di accesso per ciascun livello di autorizzazione di SharePoint utilizzato nel sito.
-- Creare e configurare il sito del team isolato.
+### <a name="step-2-configure-additional-permissions-settings-for-the-sharepoint-team-site"></a>Passaggio 2: Configurare altre impostazioni delle autorizzazioni per il sito del team di SharePoint
 
-### <a name="step-2-configure-the-site-for-an-office-365-retention-label"></a>Passaggio 2: Configurare il sito per un'etichetta di conservazione di Office 365
+Nel sito di SharePoint configurare queste impostazioni per le autorizzazioni.
 
-Attenersi alle istruzioni riportate in [Proteggere i file di SharePoint Online con le etichette di Office 365 e la prevenzione della perdita dei dati](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) per:
+1.  Nella barra degli strumenti fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
+2.  Nel riquadro **Autorizzazioni sito** fare clic su **Advanced permissions settings** (Impostazioni autorizzazioni avanzate).
+3.  Nella nuova scheda **Autorizzazioni** del browser fare clic su **Impostazioni richieste di accesso**.
+4.  Nella finestra di dialogo **Impostazioni richieste di accesso** deselezionare **Consenti ai membri di condividere il sito e singoli file e cartelle** e **Consenti richieste di accesso** (le tre caselle di controllo devono essere deselezionate), quindi fare clic su **OK**.
 
-- Identificare o creare l'etichetta di conservazione di Office 365 e applicarla al sito di SharePoint Online isolato.
-- Creare e configurare il criterio DLP che blocca gli utenti quando tentano di condividere un asset digitale sul sito di SharePoint Online all'esterno dell'organizzazione.
+Con queste impostazioni, la possibilità per i membri del gruppo di siti di condividere il sito con altri membri o per i non membri di richiedere l'accesso al sito è disabilitata.
 
-### <a name="step-3-create-an-azure-information-protection-sub-label-for-the-site"></a>Passaggio 3: Creare un'etichetta secondaria di Azure Information Protection per il sito
+### <a name="step-3-configure-the-site-for-an-office-365-retention-label"></a>Passaggio 3: Configurare il sito per un'etichetta di conservazione di Office 365
 
-Attenersi alle istruzioni riportate in [Proteggere i file di SharePoint Online con Azure Information Protection](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection) per: 
+Attenersi alle istruzioni riportate in [Proteggere i file di SharePoint con le etichette di Office 365 e la prevenzione della perdita dei dati](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) per:
 
-- Creare e configurare un'etichetta secondaria di Azure Information Protection in un criterio con ambito.
-- Implementazione del client di Azure Information Protection sul computer degli utenti.
+1. Creare e pubblicare un'etichetta di conservazione per i dati altamente regolamentati, se necessario.
+2. Configurare il sito per l'etichetta di conservazione creata nel passaggio 1.
+3. Creare un criterio DLP per i dati altamente regolamentati che usi l'etichetta di conservazione creata nel passaggio 2 e impedisca agli utenti di inviare file all'esterno dell'organizzazione
 
-### <a name="step-4-optional-create-a-team-for-the-highly-regulated-data"></a>Passaggio 4 (facoltativo): Creare un team per i dati altamente riservati
+#### <a name="step-4-create-an-office-365-sensitivity-sublabel-for-the-site"></a>Passaggio 4: Creare una sottoetichetta di riservatezza di Office 365 per il sito
 
-Se si desidera un team per dati altamente riservati, è innanzitutto necessario creare un sito di SharePoint Online per dati altamente riservati. Quando si crea il l'iniziale sito privato del team di SharePoint Online, si specifica un nome per il gruppo di Office 365.
+Diversamente da un'etichetta di riservatezza per dati altamente regolamentati, che chiunque può applicare a qualsiasi file, un sito sicuro deve avere una propria sottoetichetta, in modo che i file a cui è assegnata la sottoetichetta:
 
-Dopo che il sito di SharePoint Online per i dati altamente riservati è completamente configurato, utilizzare questi passaggi per convertirlo in un team per i dati altamente riservati:
+- Siano crittografati e la crittografia segua il file.
+-   Contengano autorizzazioni personalizzate in modo che solo i membri del gruppo del sito possano aprirli.
 
-1. Accedere a Office 365.
-2. Dalla scheda **Microsoft Office Home**, fare clic su **Team**.
-3. Dalla scheda **Microsoft Teams**, nel riquadro per **partecipare o creare un team**, fare clic su **Crea team**.
-4. Nel riquadro **Crea team**, fare clic su **Crea team da gruppo Office 365 esistente**.
-5. Nell'elenco dei gruppi di Office 365, selezionare il nome del gruppo di Office 365 corrispondente al sito di SharePoint Online per i dati altamente riservati, quindi fare clic su **Scegli team**.
+Per implementare questo ulteriore livello di sicurezza per i file archiviati nel sito, è necessario configurare una nuova etichetta di riservatezza, ossia una sottoetichetta dell'etichetta generale per i file altamente regolamentati. La vedranno solo i membri del gruppo per il sito, nell'elenco di sottoetichette per l'etichetta altamente regolamentata.
 
-La scheda **File** del nuovo team elenca i contenuti della cartella **Generale** dell'area **Documenti** del sito SharePoint Online corrispondente. Per visualizzare il resto delle risorse del sito SharePoint Online per il team, fare clic sui puntini di sospensione, quindi su **Apri in SharePoint**.
+Usare le istruzioni disponibili [qui](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) per configurare una sottoetichetta dell'etichetta che si usa per i file altamente regolamentati, con le impostazioni seguenti:
+
+- Il nome della sottoetichetta contiene il nome del sito, per semplificare l'associazione quando si assegna la sottoetichetta a un file.
+- La crittografia è abilitata.
+- Il gruppo di siti ha autorizzazioni di creazione condivisa.
 
 ### <a name="configuration-results"></a>Risultati della configurazione
 
 È stato configurato quanto segue:
 
-- Un sito SharePoint Online isolato
-- Un'etichetta di conservazione di Office 365 assegnata a un sito SharePoint Online isolato
+- Impostazioni di autorizzazione più restrittive nel sito di SharePoint
+- Un'etichetta di conservazione di Office 365 assegnata alla sezione Documenti del sito di SharePoint
 - Un criterio DLP per l'etichetta di conservazione di Office 365
-- Un'etichetta secondaria di Azure Information Protection di un criterio con ambito che gli utenti possono applicare agli asset digitali più sensibili memorizzate nel sito che crittografa l'asset e applica le autorizzazioni
-- Se necessario, un team per i dati altamente riservati basati sul sito di SharePoint Online
+- Una sottoetichetta di riservatezza di Office 365 che gli utenti possono applicare ai file più sensibili archiviati nel sito, che crittografa il file e consente solo l'accesso in modalità di creazione condivisa ai membri del gruppo del sito del team 
 
-## <a name="phase-3-drive-user-adoption"></a>Fase 3: Favorire l'adozione degli utenti
+Di seguito è riportata la configurazione risultante.
 
-Un sito o un team di SharePoint Online per dati altamente riservati è in grado di proteggere tali dati solo se costantemente utilizzato per l'archiviazione e l'accesso ad asset digitali sensibili. Questa è la fase più difficile perché dipende dal cambiamento di abitudini degli utenti. 
+![I siti di SharePoint per lo scenario dei dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
-Ad esempio, i dirigenti che sono abituati a memorizzare file sensibili su unità USB o su soluzioni di archiviazione basate sul cloud personale dovranno ora archiviarli esclusivamente in un sito o un team di SharePoint Online per dati altamente riservati.
+
+Ecco un esempio di un utente che ha applicato la sottoetichetta di riservatezza a un file archiviato nel sito.
+
+![I siti di SharePoint per lo scenario dei dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
+
+
+## <a name="phase-3-drive-user-adoption"></a>Fase 3: Incoraggiare l'adozione da parte degli utenti
+
+Un sito di SharePoint per dati altamente regolamentati può proteggere tali dati solo se viene usato regolarmente per l'archiviazione e l'accesso ai file sensibili. Questa è la fase più difficile, perché dipende dal cambiamento di abitudini degli utenti. 
+
+Ad esempio, i dipendenti che sono abituati ad archiviare file sensibili in unità USB o soluzioni di archiviazione basate sul cloud personale dovranno ora archiviarli esclusivamente in un sito di SharePoint per dati altamente regolamentati.
 
 ### <a name="step-1-train-your-users"></a>Passaggio 1: Formazione degli utenti
 
 Dopo aver completato la configurazione, formare gli utenti membri dei gruppi di accesso al sito:
 
-- Sull'importanza di utilizzare il nuovo sito o team per proteggere risorse preziose e le conseguenze di una perdita di dati altamente riservati, come implicazioni legali, sanzioni per inadempimento alle normative, ransomware o perdita di vantaggi competitivi.
-- Come accedere al sito e ai suoi asset.
+- Sull'importanza di usare il nuovo sito per proteggere file preziosi e le conseguenze di una perdita di dati altamente regolamentati, come implicazioni legali, sanzioni per inadempimento alle normative, ransomware o perdita di vantaggi competitivi.
+- Come accedere al sito e ai suoi file.
 - Come creare nuovi file sul sito e caricare nuovi file memorizzati localmente.
 - In che modo i criteri DLP impediscono di condividere i file esternamente.
-- Come utilizzare il client Azure Information Protection per etichettare asset digitali più sensibili con l'etichetta secondaria configurata.
-- In che modo l'etichetta secondaria di Azure Information Protection protegge un asset anche quando non è più nel sito o team.
+- Come contrassegnare i file più sensibili con la sottoetichetta del sito.
+- Come la sottoetichetta protegge un file anche se fuoriesce dal sito.
 
 Questa formazione dovrebbe includere esercizi pratici in modo che gli utenti possano sperimentare queste operazioni e i loro risultati.
 
 ### <a name="step-2-conduct-periodic-reviews-of-usage-and-files"></a>Passaggio 2: Effettuare revisioni periodiche sull'utilizzo e sui file
 
-Nelle settimane successive alla formazione, l'amministratore di SharePoint per il sito o il team di SharePoint Online può:
+Nelle settimane successive alla formazione, l'amministratore di SharePoint per il sito di SharePoint può:
 
-- Analizzare l'utilizzo del sito o del team e confrontarlo con le aspettative di utilizzo.
-- Verificare che i file altamente sensibili siano stati etichettati correttamente con l'etichetta secondaria di Azure Information Protection.
+- Analizzare l'utilizzo del sito e confrontarlo con le aspettative di utilizzo.
+- Verificare che i file riservati siano stati etichettati correttamente con l'etichetta di riservatezza secondaria.
 
 Ripetere la formazione degli utenti se necessario.
 
 ### <a name="user-adoption-results"></a>Risultati dell'adozione da parte degli utenti
 
-Gli asset digitali sensibili vengono memorizzati esclusivamente nei siti o nei team di SharePoint Online per i dati altamente riservati e agli asset più sensibili viene applicata l'etichetta secondaria di Azure Information Protection configurata.
+I file con elevato livello di regolamentazione vengono archiviati esclusivamente nei siti di SharePoint per dati altamente regolamentati e ai file più sensibili è applicata la sottoetichetta di riservatezza per il sito.
 
 ## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Informazioni sulle modalità di distribuzione di Microsoft 365 Enterprise da parte di Contoso Corporation
 
-Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello internazionale con sede a Parigi, Francia. Visualizzare il modo in cui Contoso ha sviluppato, configurato e quindi ha guidato l'adozione di un [sito di SharePoint Online protetto](contoso-sharepoint-online-site-for-highly-confidential-assets.md) per i team di ricerca a Parigi, Mosca, New York, Pechino e Bangalore. 
+Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello internazionale con sede a Parigi, Francia. Vedere il modo in cui Contoso ha sviluppato, configurato e quindi ha guidato l'adozione di un [sito di SharePoint protetto](contoso-sharepoint-online-site-for-highly-confidential-assets.md) per i team di ricerca a Parigi, Mosca, New York, Pechino e Bengaluru. 
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -225,4 +212,3 @@ Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a
 
 [Guide dei laboratori di testing](m365-enterprise-test-lab-guides.md)
 
-[Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-in-a-dev-test-environment)
