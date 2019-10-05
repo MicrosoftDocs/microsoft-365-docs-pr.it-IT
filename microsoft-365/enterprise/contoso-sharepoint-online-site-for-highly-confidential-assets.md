@@ -1,9 +1,9 @@
 ---
-title: Sito di SharePoint Online per le risorse digitali estremamente riservate di Contoso Corporation
+title: Sito di SharePoint per le risorse digitali estremamente riservate di Contoso Corporation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/15/2019
+ms.date: 10/04/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,109 +12,96 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
-description: 'Riepilogo: informazioni su come Contoso ha implementato un sito di SharePoint Online per dati altamente regolamentati per semplificare la collaborazione tra i team di ricerca.'
-ms.openlocfilehash: 6c61d02c802a77afeb93a58b59114741c6630f9e
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+description: 'Riepilogo: informazioni sul modo in cui Contoso ha implementato un sito di SharePoint per dati altamente regolamentati per semplificare la collaborazione tra i team di ricerca.'
+ms.openlocfilehash: bb3c178ee64d5925f82aef9887c06ceafe51f4ee
+ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369527"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37403225"
 ---
-# <a name="sharepoint-online-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sito di SharePoint Online per le risorse digitali estremamente riservate di Contoso Corporation
+# <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sito di SharePoint per le risorse digitali estremamente riservate di Contoso Corporation
 
- **Riepilogo:** Come Contoso ha implementato un sito di SharePoint Online per dati altamente regolamentati per semplificare la collaborazione tra i propri team di ricerca.
+ **Riepilogo:** Come Contoso ha implementato un sito di SharePoint per dati altamente regolamentati per semplificare la collaborazione tra i propri team di ricerca.
   
-Le risorse più importanti di Contoso sono la proprietà intellettuale in forma di segreti commerciali, come le tecniche di produzione proprietarie e le specifiche di progettazione per i prodotti in sviluppo. Tali risorse sono in formato digitale, archiviate originariamente come file in un sito di SharePoint Server 2016. Quando Contoso ha distribuito Microsoft 365 Enterprise, volevano passare al cloud le risorse digitali locali per semplificare l'accesso e una collaborazione più aperta tra i team di ricerca di Parigi, Mosca, New York, Pechino e Bangalore. 
+Le risorse più importanti di Contoso sono la proprietà intellettuale in forma di segreti commerciali, come le tecniche di produzione proprietarie e le specifiche di progettazione per i prodotti in sviluppo. Tali risorse erano in formato digitale, originariamente memorizzate come file in un sito di SharePoint Server 2016. Quando Contoso ha distribuito Microsoft 365 Enterprise, volevano passare al cloud le risorse digitali locali per semplificare l'accesso e una collaborazione più aperta tra i team di ricerca di Parigi, Mosca, New York, Pechino e Bangalore. 
   
 Tuttavia, a causa della loro natura sensibile, l'accesso a questi file deve essere:
 
-- Limitato all'insieme di utenti autorizzati a visualizzarli o modificarli, con autorizzazioni in uscita per il sito amministrate solo da amministratori di SharePoint. 
-- Protetto con la prevenzione della perdita di dati (DLP) per impedire agli utenti di distribuirli all'esterno del sito.
-- Crittografati e protetti con gli elenchi di controllo di accesso per impedire agli utenti non autorizzati di accedere ai propri contenuti, anche se sono distribuiti all'esterno del sito.
+- Limitato all'insieme di utenti autorizzati ad accedervi. 
+- Protetto con un criterio di prevenzione della perdita di dati (DLP) per impedire agli utenti di distribuirli all'esterno del sito.
+- Crittografati e protetti con autorizzazioni per impedire agli utenti non autorizzati di accedere ai propri contenuti, anche se sono distribuiti all'esterno del sito.
 
-Gli amministratori di sicurezza e di SharePoint nel reparto IT di Contoso hanno deciso di utilizzare un [sito di SharePoint Online per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md).
+Gli amministratori di sicurezza e di SharePoint nel reparto IT di Contoso hanno deciso di utilizzare un [sito di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md).
   
-Contoso ha utilizzato questi passaggi per creare e proteggere i siti del team di SharePoint Online per i propri team di ricerca.
+Contoso ha utilizzato questi passaggi per creare e proteggere i siti del team di SharePoint per i propri team di ricerca.
 
-## <a name="step-1-reviewed-and-verified-the-members-of-research-team-groups"></a>Passaggio 1: Revisione e verifica dei membri dei gruppi del team di ricerca
+## <a name="step-1-created-a-private-sharepoint-team-site"></a>Passaggio 1: creazione di un sito del team di SharePoint privato
 
-Contoso IT Admins ha eseguito una revisione del set di gruppi di sicurezza per i propri team di ricerca. Sono stati rimossi tutti coloro che non erano un ricercatore o che non avevano bisogno di accedere alle risorse di ricerca. 
+Per proteggere l'accesso al sito di SharePoint, Contoso ha configurato i [criteri di accesso di SharePoint consigliati](sharepoint-file-access-policies.md).
 
-Sono stati creati anche questi nuovi gruppi di sicurezza:
+Successivamente, contoso IT Admins ha compilato un elenco degli account utente per i ricercatori negli uffici Parigi, Mosca, New York, Pechino e Bangalore. 
 
-- **Ricerca-amministratori**  Set di amministratori di SharePoint che dispongono del controllo completo sul sito, inclusa la possibilità di modificare le autorizzazioni.
-- **Membri della ricerca**  Set di gruppi di sicurezza per i team di ricerca di tutto il mondo.
-- **Ricerca-visualizzatori**  Il set di utenti di gestione, ad esempio i dirigenti dell'organizzazione di ricerca, che può solo visualizzare le risorse nel sito.
+Successivamente, un amministratore IT di Contoso ha creato un nuovo sito del team privato denominato **Research** e ha aggiunto tutti gli account utente per i suoi ricercatori.
 
-## <a name="step-2-created-an-isolated-sharepoint-online-team-site"></a>Passaggio 2: creazione di un sito del team di SharePoint Online isolato 
+Successivamente, sono state configurate le impostazioni di autorizzazione aggiuntive per il sito per impedire ai ricercatori di condividere l'accesso al sito e impedire ai non ricercatori di richiedere l'accesso al sito.
 
-Contoso SharePoint Admins ha creato per la prima volta un nuovo sito del team denominato **Research**. Sono quindi configurati:
+## <a name="step-2-configured-the-site-for-a-restrictive-dlp-policy"></a>Passaggio 2: configurazione del sito per un criterio DLP restrittivo
 
-- Il livello di autorizzazione controllo completo per l'utilizzo del gruppo di SharePoint proprietari di ricerca, che dispone del gruppo di sicurezza **Research-Admins** come membro
-- Il livello di autorizzazione modifica per l'utilizzo del gruppo di SharePoint membri della ricerca, che ha come membro il gruppo di sicurezza **membri della ricerca** .
-- Il livello di autorizzazione di lettura per l'utilizzo del gruppo di SharePoint visitors Research, che dispone del gruppo di sicurezza dei **visualizzatori di ricerca** come membro
-
-Di seguito sono riportati i livelli di autorizzazione di SharePoint, i gruppi di SharePoint e i relativi membri.
-
-![Livelli di autorizzazione di SharePoint, gruppi di SharePoint e relativi membri](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/spo-permissions.png)
-
-Successivamente, sono state configurate restrizioni aggiuntive per il sito.
-
-Per informazioni dettagliate sulla configurazione, vedere [deploy an isolated SharePoint Online Team Site](https://docs.microsoft.com/office365/enterprise/deploy-an-isolated-sharepoint-online-team-site).
-
-## <a name="step-3-configured-the-site-for-a-restrictive-dlp-policy"></a>Passaggio 3: configurazione del sito per un criterio DLP restrittivo
-
-Per prima cosa, gli amministratori di Contoso hanno applicato l'etichetta di conservazione di Office 365 **estremamente riservata** al sito di **ricerca** .
+Per prima cosa, gli amministratori di Contoso hanno applicato l'etichetta di conservazione di Office 365 **altamente riservata** esistente alla cartella documenti del sito di **ricerca** .
 
 Successivamente, è stato creato un nuovo criterio DLP di Office 365 denominato **Research** :
 
 - Utilizza l'etichetta di conservazione di Office 365 **estremamente riservata** . 
-- Viene applicato al sito di **ricerca** .
 - Blocca gli utenti quando tentano di condividere un asset digitale nel sito di **ricerca** esterno a contoso.
 
-Per informazioni dettagliate sulla configurazione, vedere [proteggere i file di SharePoint Online con etichette di conservazione e DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
+Per informazioni dettagliate sulla configurazione, vedere [proteggere i file di SharePoint con etichette di conservazione e DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
-## <a name="step-4-created-an-azure-information-protection-sub-label-for-the-site"></a>Passaggio 4: creazione di un'etichetta secondaria di Azure Information Protection per il sito
+## <a name="step-4-created-an-office-365-sensitivity-sublabel-for-the-site"></a>Passaggio 4: creazione di una sottoetichetta di riservatezza di Office 365 per il sito
 
-Gli amministratori di Contoso hanno creato una nuova etichetta secondaria di Azure Information Protection denominata **Research** dell'etichetta **altamente riservata** predefinita in un criterio con ambito che:
+Gli amministratori di Contoso hanno creato una nuova sottoetichetta di sensitivity di Office 365 denominata **Research Teams** dell'etichetta **altamente riservata** che:
 
 - Richiede la crittografia.
-- Consente l'accesso completo da parte dei membri del gruppo di sicurezza **membri della ricerca** .
-- Consente l'accesso in lettura ai membri del gruppo di sicurezza **ricerca-visualizzatori** .
+- Consente le autorizzazioni di creazione condivisa per il gruppo **Research** Office 365
+- Si applica al gruppo **Research** Office 365
 
-Successivamente, hanno distribuito il client Azure Information Protection ai dispositivi dei membri del team di ricerca.
+Ecco la configurazione risultante del sito del team di **ricerca** per le risorse estremamente riservate.
 
-Per informazioni dettagliate sulla configurazione, vedere [proteggere i file di SharePoint Online con Azure Information Protection](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection). 
-
-Ecco la configurazione risultante del sito di **ricerca** per le risorse estremamente riservate.
-
-![La configurazione risultante del sito * * Research * * per le risorse estremamente riservate](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+![La configurazione risultante del sito del team di ricerca per le risorse estremamente riservate](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
 I file nelle cartelle del sito di **ricerca** sono protetti da:
 
-- La sottoetichetta **Research** Azure Information Protection, che applica la crittografia e permssions a ogni file che viaggia con il file quando viene spostato o copiato dal sito di **ricerca** .
-- Il criterio DLP di **ricerca** , che utilizza l'etichetta di conservazione **estremamente riservata** e le impostazioni che impediscono la condivisione dei file con gli utenti esterni.
-- Il set di autorizzazioni per i siti, che consentono l'accesso solo ai membri dei gruppi di sicurezza e dell'amministrazione di ricerca-spettatori **e dei** **visualizzatori** dai membri del gruppo di sicurezza **Research-Admins** .
+- Le autorizzazioni per il sito, che consentono l'accesso solo ai membri del gruppo **Research** Office 365.
+- Il criterio DLP di **ricerca** , che utilizza l'etichetta di conservazione e le impostazioni **estremamente riservate** che impediscono la condivisione dei file con gli utenti esterni.
+- La sottoetichetta di sensitivity dei **team di ricerca** , con la crittografia e le autorizzazioni che viaggiano con il file se sono state spostate o copiate dal sito di **ricerca** .
+
+Di seguito è riportato un esempio di un file archiviato nel sito di **ricerca** con la sottoetichetta di riservatezza dei **team di ricerca** assegnati.
+
+![La configurazione risultante del sito del team di ricerca per le risorse estremamente riservate](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
+
 
 ## <a name="step-5-migrated-the-on-premises-sharepoint-research-data"></a>Passaggio 5: migrazione dei dati di ricerca di SharePoint locali
 
-Gli amministratori di Contoso hanno spostato tutti i file di ricerca locali nel sito di SharePoint Server 2016 locale in cartelle nel nuovo sito di **ricerca** di SharePoint Online.
+Gli amministratori di Contoso hanno spostato tutti i file di ricerca locali nel sito di SharePoint Server 2016 locale in cartelle nel nuovo sito di SharePoint per la **ricerca** .
 
-## <a name="step-6-trained-their-users"></a>Passaggio 6: formazione dei propri utenti 
+## <a name="step-6-trained-their-researchers"></a>Passaggio 6: formazione dei ricercatori
 
-Il personale di sicurezza di Contoso ha formato i team di ricerca in un corso obbligatorio che ha superato:
+Il personale di sicurezza di Contoso ha formato i membri del gruppo **Research** Office 365 in un corso obbligatorio che ha eseguito i seguenti controlli:
 
-- Informazioni su come accedere al nuovo sito di **ricerca** di SharePoint Online e ai file esistenti.
+- Informazioni su come accedere al nuovo sito di **ricerca** e ai file esistenti.
 - Come creare nuovi file sul sito e caricare nuovi file memorizzati localmente.
-- Dimostrazione del modo in cui il criterio DLP blocca la condivisione esterna dei file.
-- Informazioni su come utilizzare il client Azure Information Protection per etichettare i file di ricerca con l'etichetta secondaria **Research** .
-- Dimostrazione del modo in cui l'etichetta secondaria di **ricerca** protegge un file anche quando viene perso dal sito.
+- Dimostrazione del modo in cui il criterio DLP della **ricerca** blocca i file dalla condivisione esterna.
+- Come assegnare etichette ai file con la sottoetichetta di sensitivity dei **team di ricerca** .
+- Dimostrazione del modo in cui l'etichetta secondaria dei **team di ricerca** protegge un file anche quando viene perso dal sito.
 
-Il risultato finale è un ambiente sicuro in cui i ricercatori possono collaborare all'interno dell'organizzazione in un ambiente sicuro. 
+Il risultato finale è un ambiente sicuro in cui i ricercatori possono collaborare tra Contoso in un ambiente sicuro su file contenenti informazioni sulla ricerca. 
 
-Se un documento di ricerca con l' **etichetta secondaria di ricerca è** fuoriuscito dal sito di **ricerca** , è crittografato e accessibile solo ai membri dei gruppi di sicurezza **membri** della ricerca e ai **visualizzatori** di ricerca con credenziali valide.
+Se un documento di ricerca con la sottoetichetta del **team di ricerca** lascia il sito di **ricerca** , è crittografato e accessibile solo ai membri dei gruppi di **ricerca** di Office 365 con credenziali dell'account utente valide.
 
 ## <a name="next-step"></a>Passaggio successivo
 
 [Distribuzione](deploy-microsoft-365-enterprise.md) Microsoft 365 Enterprise nell'organizzazione.
 
+## <a name="see-also"></a>Vedere anche
+
+[Raccolta di produttività Microsoft 365](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)
