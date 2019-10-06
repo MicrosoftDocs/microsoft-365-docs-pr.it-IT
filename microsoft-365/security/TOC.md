@@ -17,6 +17,8 @@
 #### [Monitoraggio e creazione di report relativi ai dispositivi](./mtp/monitor-devices.md)
 #### [Monitoraggio e creazione di report relativi alle app](./mtp/monitor-apps.md)
 
+### [Gestire i ticket tramite ServiceNow](./mtp/tickets.md)
+
 ## [Sicurezza di Office 365]()
 ### [Introduzione]()
 #### [Roadmap della sicurezza per Office 365](./office-365-security/security-roadmap.md)
