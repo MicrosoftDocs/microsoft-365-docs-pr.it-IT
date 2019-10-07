@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Configurare l'infrastruttura e le funzionalità di sicurezza necessarie per consentire ai dipendenti di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: 2ff9923d0a301ba6ced720a9934ceb62bdff37c4
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: b73e16a52741a6587e9ed903cab6ddfedf896973
+ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306560"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37403255"
 ---
 # <a name="empower-remote-workers"></a>Supportare i lavoratori remoti
 
@@ -201,5 +201,6 @@ I lavoratori remoti possono usare i propri dispositivi Windows 10 Enterprise o a
 
 [Carichi di lavoro e scenari](deploy-workloads.md)
 
-[Guida all'implementazione](deploy-microsoft-365-enterprise.md)
+[Raccolta di produttività di Microsoft 365](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)
 
+[Guida alla distribuzione](deploy-microsoft-365-enterprise.md)
