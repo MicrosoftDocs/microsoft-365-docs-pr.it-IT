@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: c88b45fb568b0fe29bc967676ea09e89e9084a62
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083231"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417535"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager (anteprima)
 
@@ -111,11 +111,16 @@ I controlli di certificazione vengono in genere implementati da una persona e te
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Compliance Manager utilizza un [modello di autorizzazione](working-with-compliance-manager.md#permissions)per il controllo di accesso basato sui ruoli. Per impostazione predefinita, tutti gli utenti dell'organizzazione con l'account Azure Active Directory (Azure AD) dispongono dell'accesso completo e possono eseguire qualsiasi azione in Compliance Manager. Una volta che l'organizzazione ha implementato il controllo di accesso basato sui ruoli, a qualsiasi utente non assegnato a un ruolo definito di Compliance Manager viene assegnato l'accesso guest. Il personale del servizio Microsoft non ha accesso permanente ai dati immessi o caricati.
+Compliance Manager utilizza un modello di autorizzazione per il controllo di accesso basato sui ruoli. Solo gli utenti a cui è assegnato un ruolo utente possono accedere a Compliance Manager e le azioni consentite da ogni utente sono limitate dal tipo di ruolo. [Visualizzare una tabella](working-with-compliance-manager.md#permissions) in cui sono riportate le azioni consentite per ogni autorizzazione.
 
-Per modificare le autorizzazioni predefinite e implementare un modello di controllo di accesso completamente basato sui ruoli, è necessario aggiungere almeno un utente a ogni ruolo di Compliance Manager. Dopo l'aggiunta di un utente a un ruolo, le autorizzazioni per eseguire le azioni assegnate a tale ruolo vengono rimosse dal set predefinito di autorizzazioni disponibili per tutti gli utenti. Solo gli utenti di cui è stato effettuato il provisioning con il ruolo saranno in grado di accedere a Compliance Manager ed eseguire le azioni consentite da tale ruolo.
+L'amministratore del portale per Compliance Manager può impostare le autorizzazioni per gli altri utenti all'interno di Compliance Manager attenendosi alla procedura seguente:
 
-Se si aggiunge un utente al ruolo per gestire le valutazioni, solo i membri di tale ruolo potranno gestire le valutazioni. Se non si aggiunge un utente al ruolo che consente agli utenti di leggere i dati nelle valutazioni, tutti gli utenti dell'organizzazione possono accedere a Compliance Manager e leggere i dati in qualsiasi valutazione.
+1. Dal menu a discesa **in alto,** selezionare **amministratore**, quindi **Impostazioni**.
+2. Da qui, selezionare il ruolo che si desidera assegnare e quindi aggiungere il dipendente che si desidera assegnare a quel ruolo. Gli utenti saranno quindi in grado di eseguire determinate azioni.
+
+Inoltre, gli utenti a cui è assegnato il [ruolo di lettore globale in Azure Active Directory (Azure ad)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) dispongono dell'autorizzazione di sola lettura per accedere a Compliance Manager. Tuttavia, non è possibile modificare i dati o eseguire azioni all'interno di Compliance Manager.
+
+Si noti che non è più disponibile un ruolo di **accesso Guest** predefinito. A ogni utente deve essere assegnato un ruolo per poter accedere e lavorare all'interno di Compliance Manager.
   
 ## <a name="manage-evidence"></a>Gestione delle evidenze
 

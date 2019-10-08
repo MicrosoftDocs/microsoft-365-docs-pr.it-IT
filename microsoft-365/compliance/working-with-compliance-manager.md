@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 02cceb0487f357e6b40b634dc6d3cd7349ec2d96
-ms.sourcegitcommit: acf29701bfba3e4843e49a79fde012f3c7a7024a
+ms.openlocfilehash: d15899b994e4169c7362144623bc726f3825245d
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37350317"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417585"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Collaborare con Microsoft Compliance Manager (anteprima)
 
@@ -40,7 +40,7 @@ Per iniziare, una valutazione ISO/IEC 27001:2103 per Office 365 viene visualizza
 
 ## <a name="administration"></a>Amministrazione
 
-Esistono funzioni amministrative specifiche disponibili solo per l'amministratore tenant e visibili solo quando si esegue l'accesso con un account di amministratore globale. Tuttavia, finché l'amministratore non assegna i ruoli di Compliance Manager agli utenti, i dati in Compliance Manager sono visibili a tutti gli utenti dell'organizzazione. È consigliabile implementare il controllo di accesso basato sui ruoli per determinare gli utenti autorizzati ad accedere ed eseguire azioni in Compliance Manager.
+Esistono funzioni amministrative specifiche disponibili solo per l'amministratore globale e visibili solo quando si esegue l'accesso con un account di amministratore globale. Dopo che l'amministratore ha assegnato i ruoli di Compliance Manager ad altri utenti, gli utenti possono visualizzare i dati in Compliance Manager ed eseguire azioni determinate dal loro ruolo. L'amministratore può anche fornire accesso in sola lettura a Compliance Manager assegnando all'utente il [ruolo di lettore globale in Azure Active Directory (Azure ad)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Assegnazione di ruoli Compliance Manager agli utenti
 
@@ -551,15 +551,11 @@ Compliance Manager (Preview) supporta anche l'esportazione di modelli in formato
 
 Nella tabella seguente vengono descritte le autorizzazioni di Compliance Manager e gli elementi che consente all'utente di eseguire la procedura. La tabella indica anche il ruolo a cui è assegnata ogni autorizzazione.
 
-||**Compliance Manager - Lettore**|**Compliance Manager - Collaboratore**|**Compliance Manager - Valutatore**|**Compliance Manager - Amministratore**|**Amministratore del portale**|
-|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Leggere i dati:** Gli utenti possono leggere ma non modificare i dati (ad eccezione dei dati del modello e della gestione tenant).  <br> | X | X | X | X  | X |
-|**Modificare i dati:** Gli utenti possono modificare tutti i campi, tranne i campi risultato del test e data di test (ad eccezione dei dati del modello e della gestione tenant).  <br> || X | X  | X | X |
-|**Modificare i risultati dei test:** Gli utenti possono modificare i campi risultato del test e data del test.  <br> ||| X | X | X |
-|**Gestire le valutazioni:** Gli utenti possono creare, archiviare ed eliminare valutazioni.  <br> |||| X | X |
-|**Gestire i dati master:** Gli utenti possono visualizzare, modificare ed eliminare i dati dei modelli e la gestione dei tenant.  <br> |||| X | X |
-|**Gestire gli utenti:** Gli utenti possono aggiungere altri utenti all'interno dell'organizzazione ai ruoli lettore, collaboratore, valutatore e amministratore. Solo gli utenti che dispongono del ruolo di amministratore globale nell'organizzazione possono aggiungere o rimuovere utenti dal ruolo di amministratore del portale.  <br> ||||| X |
-
-### <a name="guest-access"></a>Accesso guest
-  
-Dopo aver configurato l'accesso di Compliance Manager, tutti gli utenti che non dispongono di un ruolo di cui è stato effettuato il provisioning sono nel ruolo **accesso Guest** per impostazione predefinita (che è anche l'esperienza di tutti gli account non basati sull'organizzazione, come gli account Microsoft personali). Gli utenti dell'accesso guest non dispongono dell'accesso completo a tutte le funzionalità di Compliance Manager. Non sono in grado di visualizzare i dati di valutazione della conformità dell'organizzazione, ma sono in grado di utilizzare Compliance Manager per visualizzare i report di valutazione della conformità di Microsoft e i documenti di attendibilità dei servizi.
+||**Lettore globale di Azure AD**|**Compliance Manager - Lettore**|**Compliance Manager - Collaboratore**|**Compliance Manager - Valutatore**|**Compliance Manager - Amministratore**|**Amministratore del portale**|
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|**Leggere i dati:** Gli utenti possono leggere ma non modificare i dati (ad eccezione dei dati del modello e della gestione tenant).  <br> | X | X | X | X | X  | X  |X |
+|**Modificare i dati:** Gli utenti possono modificare tutti i campi, tranne i campi risultato del test e data di test (ad eccezione dei dati del modello e della gestione tenant).  <br> ||| X | X  | X | X |
+|**Modificare i risultati dei test:** Gli utenti possono modificare i campi risultato del test e data del test.  <br> |||| X | X | X |
+|**Gestire le valutazioni:** Gli utenti possono creare, archiviare ed eliminare valutazioni.  <br> ||||| X | X |
+|**Gestire i dati master:** Gli utenti possono visualizzare, modificare ed eliminare i dati dei modelli e la gestione dei tenant.  <br> ||||| X | X |
+|**Gestire gli utenti:** Gli utenti possono aggiungere altri utenti all'interno dell'organizzazione ai ruoli lettore, collaboratore, valutatore e amministratore. Solo gli utenti che dispongono del ruolo di amministratore globale nell'organizzazione possono aggiungere o rimuovere utenti dal ruolo di amministratore del portale.  <br> |||||| X |

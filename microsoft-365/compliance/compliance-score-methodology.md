@@ -12,21 +12,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 148920fac825dab9f67a79bc11907b72218e47bc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: eb6e79d840439acec007fef54bf6cb5ca5633f1e
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083230"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417495"
 ---
 # <a name="compliance-score-methodology-preview"></a>Metodologia del Punteggio di conformità (anteprima)
 
 > [!NOTE]
 > Il punteggio di conformità non esprime una misura assoluta di conformità organizzativa a nessun particolare standard o regolamento. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Nessun servizio può garantire la conformità a uno standard o regolamento e il punteggio di conformità non deve essere interpretato come una garanzia in alcun modo.
 
-Il dashboard di Compliance Manager visualizza un punteggio di conformità totale per le valutazioni in ogni riquadro di valutazione. Si tratta del Punteggio di conformità globale per la valutazione ed è l'accumulo di punti ricevuti per ogni controllo implementato e testato nella valutazione. Per una nuova valutazione, il Punteggio di conformità ha un valore iniziale per i controlli gestiti Microsoft inclusi testati da terze parti indipendenti. Il Punteggio di conformità può aiutare a definire la priorità quali valutazioni e controlli concentrarsi su per migliorare la posizione di conformità globale.
+Il dashboard di Compliance Manager visualizza un punteggio di conformità totale per le valutazioni in ogni riquadro di valutazione. Si tratta del Punteggio di conformità globale per la valutazione ed è l'accumulo di punti ricevuti per ogni controllo implementato e testato nella valutazione. Per una nuova valutazione, il Punteggio di conformità ha un valore iniziale per i controlli gestiti Microsoft inclusi testati da terze parti indipendenti. Il Punteggio di conformità è calcolato in base a punteggi azione gestiti da Microsoft e punteggi azione gestiti dal cliente. Il Punteggio di conformità può aiutare a definire la priorità quali valutazioni e controlli concentrarsi su per migliorare la posizione di conformità globale.
 
-I valori di Punteggio di conformità visualizzati per il controllo vengono applicati *integralmente* al Punteggio di conformità totale su una base pass/fail. Il controllo viene implementato e passa il test di valutazione successivo o non lo è. Non vi è alcun credito parziale per un'implementazione parziale. I punti assegnati vengono aggiunti al Punteggio di conformità quando il controllo è:
+I valori di Punteggio di conformità visualizzati per il controllo vengono applicati *integralmente* al Punteggio di conformità totale su una base pass/fail. Il controllo viene implementato e passa il test di valutazione successivo o non lo è. I punti assegnati vengono aggiunti al Punteggio di conformità quando il controllo è:
 
 - **Lo stato di implementazione** è uguale a **implementato** o all' **implementazione alternativa** e,
 - **Risultato del test** uguale a **superato**.

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 815862616e1bdbf4b3be1d77de2a541ad703149f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3646d86cd9edac95975958458eb52a44fe30d2f5
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083229"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417505"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Note sulla versione per Compliance Manager (anteprima)
 
@@ -26,6 +26,8 @@ L'anteprima pubblica di Compliance Manager fornisce l'accesso tempestivo alle fu
 È possibile utilizzare lo strumento di [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) aggiornato nel [Service Trust Portal](https://servicetrust.microsoft.com) per tenere conto, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>Novità di Compliance Manager (anteprima)
+
+- **Accesso basato sui ruoli a Compliance Manager:** Il ruolo di **accesso Guess** predefinito è stato rimosso. Per consentire a un utente di accedere a Compliance Manager, l'amministratore globale deve [assegnare a ciascun utente un'autorizzazione](compliance-manager-overview#permissions.md).
 
 - **Integrazione con Microsoft Secure Score:** Compliance Manager supporta l'integrazione con [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) tramite la mappatura delle azioni gestite dai clienti a più di 50 operazioni di valutazione sicure. Quando si completa un'azione mappata in Secure score, l'azione corrispondente di Compliance Manager viene aggiornata automaticamente.
 
@@ -38,7 +40,7 @@ L'anteprima pubblica di Compliance Manager fornisce l'accesso tempestivo alle fu
     - **Proprietari:** Specificare un proprietario per ogni elemento di azione.
     - **Azioni dei clienti:** Gestire l'elenco completo degli elementi delle azioni inclusi in Compliance Manager (Preview) e abilitare/disabilitare il monitoraggio del Punteggio sicuro per gli elementi azione integrati con Secure score.
 
-- **Punteggio di conformità aggiornato**: la metodologia è stata modificata per supportare la sincronizzazione con Microsoft Secure score. Il sistema di Punteggio rimuove i crediti di controllo gestiti da Microsoft e si concentra esclusivamente sul completamento dei controlli gestiti dal cliente.
+- **Punteggio di conformità aggiornato**: la metodologia è stata modificata per supportare la sincronizzazione con Microsoft Secure score. Il Punteggio viene calcolato in base a punteggi azione gestiti da Microsoft e a punteggi azione gestiti dal cliente.
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>Problemi noti in Compliance Manager (anteprima)
 
