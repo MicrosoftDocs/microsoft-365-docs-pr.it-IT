@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Office 365
-ms.openlocfilehash: 98a254ad6e356cecd44dac57bbe9f83171ddad73
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 239e880bbdd1b2ef7cbbde7e42fb8392777563a5
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084781"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417575"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Rispondere a un account di posta elettronica compromesso in Office 365
 
@@ -94,7 +94,7 @@ Anche l’accesso all’account è stato riacquisito rapidamente, un utente mali
 ### <a name="step-4-unblock-the-user-from-sending-mail"></a>Passaggio 4 Disattivare il blocco dell’invio di posta elettronica
 
 Se la cassetta postale compromessa è stata usata illecitamente per inviare posta indesiderata, è probabile che la l'invio di posta elettronica sia stato bloccato.
-1. Per sbloccare l’invio di posta elettronica da una cassetta postale, seguire le procedure descritte in [Rimozione di un utente, dominio o indirizzo IP da un elenco di blocco dopo l'invio di posta elettronica indesiderata](https://docs.microsoft.com/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email ).
+1. Per sbloccare l’invio di posta elettronica da una cassetta postale, seguire le procedure descritte in [Rimozione di un utente, dominio o indirizzo IP da un elenco di blocco dopo l'invio di posta elettronica indesiderata](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam).
 
 ### <a name="step-5-optional-block-the-user-account-from-signing-in"></a>Passaggio 5 facoltativo: Bloccare l’accesso all’account dell’utente
 
