@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: 1de7eadfcf95a54917c1d5e2cc0d42cc1ad486a5
-ms.sourcegitcommit: c7f7ff463141f7d7f0970b64e5a04341db7e4fa8
+ms.openlocfilehash: f702423f0b1074b5619ef1c321cc5e9f1daef1d7
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37378653"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417565"
 ---
 # <a name="how-sensitivity-labels-work-in-office-apps"></a>Funzionamento delle etichette di riservatezza nelle app di Office
 
@@ -131,7 +131,8 @@ PowerPoint
 <td><font size="-1">Presto disponibile<sup>3</sup>
 <td><font size="-1">Presto disponibile<sup>3</sup>
 
-<tr><td><font size="-1">Assegnare autorizzazioni predefinite
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">Assegnare autorizzazioni predefinite</a>
 <td><font size="-1"><b>Sì</b><br><font size="-1">1910+</font>
 
 <td><font size="-1"><b>Sì</b><br><font size="-1">16.21.0+</font>
@@ -167,7 +168,8 @@ PowerPoint
 <td><font size="-1">Da definire
 <td><font size="-1">Da definire
 
-<tr><td><font size="-1">Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti
+<tr><td><font size="-1">
+  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti</a>
 <td><font size="-1">Da definire
 
 <td><font size="-1">Da definire
@@ -202,7 +204,7 @@ PowerPoint
 | --- | --- | --- |
 | Word, Excel, PowerPoint in tutte le piattaforme | Immediatamente. | Immediatamente. |
 | Outlook per PC e Mac | Dopo l'invio del messaggio di posta elettronica da Exchange Online | Immediatamente. |
-| Word, Excel, PowerPoint in tutte le piattaforme | Dopo l'invio del messaggio di posta elettronica da Exchange Online | Dopo l'invio del messaggio di posta elettronica da Exchange Online |
+| Outlook sul web, iOS e Android | Dopo l'invio del messaggio di posta elettronica da Exchange Online | Dopo l'invio del messaggio di posta elettronica da Exchange Online |
 
 ## <a name="can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows"></a>È possibile usare le etichette di riservatezza insieme al client di Azure Information Protection in Office per Windows?
 
@@ -228,11 +230,7 @@ Quando sono abilitate le etichette di riservatezza, i [modelli di protezione](ht
 
 ## <a name="can-a-file-or-email-have-more-than-one-classification"></a>Un file o un indirizzo di posta elettronica può avere più di una classificazione?
 
-Gli utenti possono selezionare una sola etichetta alla volta per ogni documento o messaggio di posta elettronica, il che spesso si traduce in una sola classificazione. Tuttavia, se un utente seleziona una sottoetichetta, in realtà applica due etichette contemporaneamente, un'etichetta primaria e un'etichetta secondaria. Usando le etichette secondarie, un file può avere due classificazioni che denotano una relazione padre/figlio per un ulteriore livello di controllo. 
-
-Ad esempio, l'etichetta  **Riservato**  potrebbe contenere etichette secondarie come  **Legale**  e  **Finanza**. È possibile applicare alle etichette secondarie contrassegni visivi di classificazione diversi e modelli di Rights Management diversi. Un utente non può selezionare l'etichetta  **Riservato**  da sola, ma solo con una delle relative sottoetichette, ad esempio  **Legale**. Di conseguenza, l'etichetta visualizzata sarà  **Riservato** / **Legale**. I metadati per quel file includono una proprietà di testo personalizzata per  **Riservato**, una proprietà di testo personalizzata per  **Legale** e un'altra che contiene entrambi i valori (**Riservato Legale**). 
-
-Quando si usano etichette secondarie, non configurare contrassegni visivi, protezione e condizioni sull'etichetta principale. Quando si usano sottolivelli, configurare queste impostazioni solo per l'etichetta secondaria. Se si configurano queste impostazioni sull'etichetta primaria e l'etichetta secondaria corrispondente, le impostazioni dell'etichetta secondaria hanno la precedenza.
+No. Gli utenti possono selezionare una sola etichetta alla volta per ogni documento o messaggio di posta elettronica.
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Quando si etichetta un messaggio di posta elettronica, gli allegati ottengono automaticamente la stessa etichetta?
 
