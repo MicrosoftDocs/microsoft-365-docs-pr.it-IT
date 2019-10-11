@@ -1,30 +1,28 @@
 ---
 title: Report di controllo in EOP
-ms.author: markjjo
-author: markjjo
-manager: laurawi
-ms.date: 11/17/2014
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Gli amministratori possono ottenere informazioni sui rapporti di controllo dell'amministratore disponibili in Exchange Online Protection (EOP)
-ms.openlocfilehash: fd103b89bc7a0d7f1d90ec605952c9d74a7c18bb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5686ff8acef1f1bc3e6ab1d72ba4968ed49480db
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083879"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440573"
 ---
-# <a name="auditing-reports-in-eop"></a><span data-ttu-id="55a39-103">Report di controllo in Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="55a39-103">Auditing reports in EOP</span></span>
+# <a name="auditing-reports-in-eop"></a><span data-ttu-id="efc5b-103">Report di controllo in Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="efc5b-103">Auditing reports in EOP</span></span>
 
-<span data-ttu-id="55a39-104">I rapporti di controllo in Exchange Online Protection (EOP) consentono di soddisfare i requisiti normativi, di conformità e di contenzioso per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="55a39-104">Auditing reports in Exchange Online Protection (EOP) can help you meet regulatory, compliance, and litigation requirements for your organization.</span></span> <span data-ttu-id="55a39-105">È possibile ottenere report di controllo in qualsiasi momento per determinare le modifiche apportate alla configurazione di Exchange Online Protection.</span><span class="sxs-lookup"><span data-stu-id="55a39-105">You can obtain auditing reports at any time to determine the changes that have been made to your EOP configuration.</span></span> <span data-ttu-id="55a39-106">Questi report consentono di risolvere problemi di configurazione o individuare la causa di problemi relativi alla sicurezza o alla conformità.</span><span class="sxs-lookup"><span data-stu-id="55a39-106">These reports can help you troubleshoot configuration issues or find the cause of security-related or compliance-related problems.</span></span>
-  
-## <a name="auditing-reports-in-eop"></a><span data-ttu-id="55a39-107">Report di controllo in EOP</span><span class="sxs-lookup"><span data-stu-id="55a39-107">Auditing reports in EOP</span></span>
+<span data-ttu-id="efc5b-104">I rapporti di controllo in Exchange Online Protection (EOP) consentono di soddisfare i requisiti normativi, di conformità e di contenzioso per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="efc5b-104">Auditing reports in Exchange Online Protection (EOP) can help you meet regulatory, compliance, and litigation requirements for your organization.</span></span> <span data-ttu-id="efc5b-105">È possibile ottenere report di controllo in qualsiasi momento per determinare le modifiche apportate alla configurazione di Exchange Online Protection.</span><span class="sxs-lookup"><span data-stu-id="efc5b-105">You can obtain auditing reports at any time to determine the changes that have been made to your EOP configuration.</span></span> <span data-ttu-id="efc5b-106">Questi report consentono di risolvere problemi di configurazione o individuare la causa di problemi relativi alla sicurezza o alla conformità.</span><span class="sxs-lookup"><span data-stu-id="efc5b-106">These reports can help you troubleshoot configuration issues or find the cause of security-related or compliance-related problems.</span></span>
 
-<span data-ttu-id="55a39-108">Sono disponibili due report di controllo in Exchange Online Protection:</span><span class="sxs-lookup"><span data-stu-id="55a39-108">There are two auditing reports available in EOP:</span></span>
-  
-1. <span data-ttu-id="55a39-109">**Rapporto gruppo di ruoli amministratore**: il rapporto gruppo di ruoli amministratore consente di visualizzare quando un utente viene aggiunto o rimosso dall'appartenenza a un gruppo di ruoli amministratore.</span><span class="sxs-lookup"><span data-stu-id="55a39-109">**Administrator role group report**: The administrator role group report lets you view when a user is added to or removed from membership in an administrator role group.</span></span> <span data-ttu-id="55a39-110">È possibile usare questo report per monitorare le modifiche apportate alle autorizzazioni amministrative assegnate agli utenti dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="55a39-110">You can use this report to monitor changes to the administrative permissions assigned to users in your organization.</span></span> <span data-ttu-id="55a39-111">Per ulteriori informazioni, vedere [eseguire un rapporto del gruppo di ruoli di amministratore in EOP](run-an-administrator-role-group-report-in-eop-eop.md).</span><span class="sxs-lookup"><span data-stu-id="55a39-111">For more information, see [Run an administrator role group report in EOP](run-an-administrator-role-group-report-in-eop-eop.md).</span></span>
+<span data-ttu-id="efc5b-107">Sono disponibili due report di controllo in Exchange Online Protection:</span><span class="sxs-lookup"><span data-stu-id="efc5b-107">There are two auditing reports available in EOP:</span></span>
 
-2. <span data-ttu-id="55a39-112">**Log di controllo dell'amministratore**: il registro di controllo dell'amministratore registra qualsiasi azione (in base ai cmdlet di PowerShell di Exchange Online) da un amministratore o un utente con privilegi amministrativi.</span><span class="sxs-lookup"><span data-stu-id="55a39-112">**Administrator audit log**: The administrator audit log records any action (based on Exchange Online PowerShell cmdlets) by an admin or a user with administrative privileges.</span></span> <span data-ttu-id="55a39-113">Per ulteriori informazioni, vedere [View the Administrator Audit Log](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).</span><span class="sxs-lookup"><span data-stu-id="55a39-113">For more information, see [View the Administrator Audit Log](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).</span></span>
+- <span data-ttu-id="efc5b-108">**Rapporto gruppo di ruoli amministratore**: il rapporto gruppo di ruoli amministratore consente di visualizzare quando un utente viene aggiunto o rimosso dall'appartenenza a un gruppo di ruoli amministratore.</span><span class="sxs-lookup"><span data-stu-id="efc5b-108">**Administrator role group report**: The administrator role group report lets you view when a user is added to or removed from membership in an administrator role group.</span></span> <span data-ttu-id="efc5b-109">È possibile usare questo report per monitorare le modifiche apportate alle autorizzazioni amministrative assegnate agli utenti dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="efc5b-109">You can use this report to monitor changes to the administrative permissions assigned to users in your organization.</span></span> <span data-ttu-id="efc5b-110">Per ulteriori informazioni, vedere [eseguire un rapporto del gruppo di ruoli di amministratore in EOP](run-an-administrator-role-group-report-in-eop-eop.md).</span><span class="sxs-lookup"><span data-stu-id="efc5b-110">For more information, see [Run an administrator role group report in EOP](run-an-administrator-role-group-report-in-eop-eop.md).</span></span>
+
+- <span data-ttu-id="efc5b-111">**Log di controllo dell'amministratore**: il registro di controllo dell'amministratore registra qualsiasi azione (in base ai cmdlet di PowerShell di Exchange Online Protection) da un amministratore o un utente con privilegi amministrativi.</span><span class="sxs-lookup"><span data-stu-id="efc5b-111">**Administrator audit log**: The administrator audit log records any action (based on Exchange Online Protection PowerShell cmdlets) by an admin or a user with administrative privileges.</span></span> <span data-ttu-id="efc5b-112">Per ulteriori informazioni, vedere [View the Administrator Audit Log](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).</span><span class="sxs-lookup"><span data-stu-id="efc5b-112">For more information, see [View the Administrator Audit Log](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).</span></span>
