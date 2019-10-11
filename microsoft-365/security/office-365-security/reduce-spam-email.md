@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Informazioni su vari modi per ridurre la posta indesiderata in Office 365.
-ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 759d56862497444c27d0cc0f081731a3581337bd
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084598"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428427"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Come ridurre la posta indesiderata in Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "37084598"
 
 ## <a name="fixing-allowed-spam"></a>Correzione della posta indesiderata consentita
 
-Capita spesso che i clienti ricevano posta indesiderata nella Posta in arrivo a causa di configurazioni errate. Le configurazioni errate più comuni riguardano la configurazione dei domini in una regola di flusso di posta (nota anche come regola di trasporto) per ignorare i filtri oppure l'inserimento di domini nell'elenco di mittenti consentiti/attendibili. Questa configurazione non è valida perché questi messaggi non sono soggetti al filtro posta indesiderata e diversamente avrebbero potuto essere rilevati.  
+Capita spesso che i clienti ricevano posta indesiderata nella Posta in arrivo a causa di configurazioni errate. Le configurazioni errate più comuni riguardano la configurazione dei domini in una regola di flusso di posta (nota anche come regola di trasporto) per ignorare i filtri oppure l'inserimento di domini nell'elenco di mittenti consentiti/attendibili. Questa configurazione non è valida perché questi messaggi non sono soggetti al filtro posta indesiderata e diversamente avrebbero potuto essere rilevati. Per questo motivo, la creazione di [elenchi di mittenti attendibili](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365) deve essere considerata come soluzione temporanea.  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>Soluzioni ad altre cause comuni della quantità elevata di posta indesiderata
 

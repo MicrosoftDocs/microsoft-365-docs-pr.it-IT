@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori di Office 365 (noto anche come Intelligence del flusso di posta).
-ms.openlocfilehash: 718634f17ad5dd54773f2dc00595d5651cd27b51
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 088af4b6924fde0277901a19437d17c4506ff22b
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083397"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441543"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Intelligence del flusso di posta in Office 365
 
@@ -130,6 +130,6 @@ In genere, questo errore indica che Office 365 ha riscontrato un errore durante 
 
 ## <a name="other-error-codes"></a>Altri codici errore
 
-Office 365 ha difficoltà a recapitare i messaggi al server di posta elettronica locale o partner. Utilizzare le informazioni **Server di destinazione** nell'errore per esaminare l'errore nel proprio ambiente o per modificare il connettore in presenza di un errore di configurazione. 
+Office 365 ha difficoltà a recapitare i messaggi al server di posta elettronica locale o partner. Utilizzare le informazioni **Server di destinazione** nell'errore per esaminare l'errore nel proprio ambiente o per modificare il connettore in presenza di un errore di configurazione.
 
 Se l'errore è generato nell'organizzazione del partner (ad esempio, il provider di servizi cloud di terze parti), è necessario contattarlo e chiedere la risoluzione del problema.

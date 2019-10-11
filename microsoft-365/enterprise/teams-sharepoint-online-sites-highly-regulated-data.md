@@ -13,21 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un sito del team di SharePoint sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: dc604870826075cee645dd466b82f908e1571339
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: ece6547ba596fe53c4f3b3f6bfbaa6570a724c6a
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403185"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437826"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Siti di SharePoint per dati altamente regolamentati
 
 *Questo scenario si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-Microsoft 365 Enterprise include una gamma completa di servizi basati sul cloud, che permettono di creare, archiviare e proteggere i dati altamente regolamentati archiviati nei file, tra cui quelli:
+Microsoft 365 Enterprise include una gamma completa di servizi basati sul cloud, che permettono di creare, archiviare, proteggere e gestire i dati altamente regolamentati archiviati nei file, tra cui quelli:
 
 - Soggetti alle normative internazionali.
 - I dati più importanti per l'organizzazione, ad esempio segreti finanziari o informazioni sulle risorse umane e strategia dell'organizzazione.
+
+>[!Note]
+> Uno scenario simile che usa Microsoft Teams è in fase di sviluppo.
+>
 
 Affinché una scenario Microsoft 365 Enterprise basata sul cloud soddisfi le esigenze aziendali, è necessario:
 

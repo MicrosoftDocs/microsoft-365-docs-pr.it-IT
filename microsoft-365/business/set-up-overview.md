@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Panoramica dei passaggi di configurazione per Microsoft 365 business.
-ms.openlocfilehash: f156d236a783942ec06d457c9b7ca087d12d6f58
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4be0a8aa1b050ee3e20a045eb2c07666765118ed
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288576"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440538"
 ---
-# <a name="overview-of-setup"></a>Panoramica dell'installazione
+# <a name="overview-of-setup"></a>Panoramica dell’installazione
 
 La maggior parte dei passaggi di configurazione può essere effettuata nell'installazione guidata, ma anche le altre opzioni sono elencate.
 
@@ -41,7 +41,7 @@ La maggior parte dei passaggi di configurazione può essere effettuata nell'inst
         - È inoltre possibile [aggiungere gli utenti in un secondo momento](add-users-m365b.md) nell'interfaccia di amministrazione.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Passaggio 2: impostare i criteri di sicurezza e configurare i dispositivi 
 
-  - Utilizzare l' [installazione guidata](set-up.md#set-up-security-policies-and-device-configurations) per configurare i criteri di sicurezza e dispositivi. 
+  - Utilizzare l' [installazione guidata](set-up.md#protect-data-and-devices) per configurare i criteri di sicurezza e dispositivi. 
   - È inoltre possibile aggiungerne altri o modificarli in un secondo momento nell'interfaccia di [Amministrazione](view-policies-and-devices.md) e nel [portale di Intune](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
   - Oltre alle impostazioni di sicurezza nell'installazione guidata, è possibile aumentare la sicurezza aggiungendo le seguenti impostazioni:
 
@@ -62,7 +62,7 @@ La maggior parte dei passaggi di configurazione può essere effettuata nell'inst
    Quando si aggiunge un dispositivo Windows 10 ad Azure AD, i criteri impostati nel [passaggio 2](#step-2-set-up-security-policies-and-configure-devices) vengono applicati.
 
    - Windows 10 Pro è un [requisito indispensabile](pre-requisites-for-data-protection.md) per Microsoft 365 business, ma se si dispone di Windows 7 Pro, Windows 8 Pro o Windows 8,1 Pro, l'abbonamento dà diritto a un [aggiornamento a Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Utilizzare l' [installazione guidata](set-up.md#set-up-security-policies-and-device-configurations) per configurare i criteri per i dispositivi Windows 10.
+    - Utilizzare l' [installazione guidata](set-up.md#protect-data-and-devices) per configurare i criteri per i dispositivi Windows 10.
 
 ## <a name="stes-4-install-office-365-business"></a>Stes 4: installare Office 365 business
 - È possibile installare automaticamente Office nei dispositivi Windows utilizzando l' [installazione guidata](set-up.md#deploy-office-365-client-apps).

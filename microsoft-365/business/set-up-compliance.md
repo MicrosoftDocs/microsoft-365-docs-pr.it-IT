@@ -10,21 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom:
-- MiniMaven
-- MSB365
+ms.custom: OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
-description: Configurare Office 365 Advanced Threat Protection e proteggere i dati sensibili.
-ms.openlocfilehash: 53741a7726222bb32329a401953be72257df95cc
-ms.sourcegitcommit: 7ac06563c6ff034358e8fd3f9298fc426187ade2
+description: Configurare le funzionalità di conformità per impedire la perdita di dati e i dati sensibili dell'etichetta.
+ms.openlocfilehash: a0ba2fa6dbe7c786d577ad7098c1790f569f5acc
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668391"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453918"
 ---
-# <a name="set-up-compliance-features"></a>Configurare le funzionalità di conformità
+# <a name="set-up-compliance-features"></a>Funzionalità di conformità della configurazione
 
 Microsoft 365 business è dotato di funzionalità per proteggere i dati e i dispositivi, nonché per garantire la protezione delle informazioni riservate per i propri clienti e le proprie esigenze.
 
@@ -50,50 +48,23 @@ Per inserire una cassetta postale per il blocco per controversia legale, nell'in
     
 4. Nella finestra di dialogo **blocco per controversia legale** è possibile specificare la durata del blocco per controversia legale nel campo **durata** conservazione per controversia legale, lasciare vuoto il campo se si desidera inserire un blocco infinito. È inoltre possibile aggiungere note e indirizzare il proprietario della cassetta postale a un sito Web che potrebbe essere necessario spiegare meglio il \> **salvataggio**del blocco per controversia legale.
     
-**Conservazione:** È possibile abilitare i criteri di conservazione personalizzati, ad esempio per mantenere un determinato intervallo di tempo o eliminare il contenuto in modo permanente alla fine del periodo di conservazione. Per ulteriori informazioni, vedere [Overview of](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)Retention Policies.
+**Conservazione:** È possibile abilitare i criteri di conservazione personalizzati, ad esempio per mantenere un determinato intervallo di tempo o eliminare il contenuto in modo permanente alla fine del periodo di conservazione. Per ulteriori informazioni, vedere [Overview of Retention Policies](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
 
-## <a name="set-up-azure-information-protection-features"></a>Configurare le funzionalità di protezione delle informazioni di Azure
+## <a name="set-up-sensitivity-labels"></a>Configurare le etichette di riservatezza
 
-Azure Information Protection (AIP) consente di classificare e facoltativamente, proteggere i documenti e i messaggi di posta elettronica, applicando etichette. Le etichette possono essere applicate automaticamente dagli amministratori che definiscono le regole e le condizioni, manualmente dagli utenti o utilizzando una combinazione in cui gli utenti ricevono consigli.
+Le etichette di riservatezza sono dotate di Azure Information Protection (AIP) piano 1 e consentono di classificare e facoltativamente proteggere i documenti e i messaggi di posta elettronica applicando etichette. Le etichette possono essere applicate automaticamente dagli amministratori che definiscono le regole e le condizioni, manualmente dagli utenti o utilizzando una combinazione in cui gli utenti ricevono consigli.
 
-In Outlook sul Web è possibile applicare le seguenti etichette e limitazioni predefinite ai messaggi di posta elettronica:
-  
-- **** Non inoltrare: i destinatari possono leggere il messaggio, ma non possono inoltrare, stampare o copiare il contenuto
-    
-- **Encrypt**: l'intero messaggio è crittografato. I destinatari devono confermare la propria identità prima di accedere al contenuto crittografato e non possono rimuovere la crittografia.
-    
-- **Riservato**: fornisce ai dipendenti dell'organizzazione autorizzazioni complete per il contenuto e gli allegati di posta elettronica, ma non per gli utenti esterni all'organizzazione. I proprietari di dati possono monitorare e revocare il contenuto in qualsiasi momento.
-    
-- **Estremamente riservato**: questa restrizione può essere applicata a dati estremamente riservati, consentendo ai dipendenti di visualizzare, modificare e rispondere, ma non di inoltrare, stampare o copiare i dati. I proprietari di dati possono monitorare e revocare il contenuto in qualsiasi momento.
+Per impostare le etichette di riservatezza, vedere [creare e gestire le etichette di riservatezza](https://support.office.com/en-us/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
 
-### <a name="make-sure-azure-information-protection-is-activated"></a>Verificare che Azure Information Protection sia attivato
 
-Per verificare che AIP sia attivato:
-
-1. Accedere al [portale di Azure](https://portal.azure.com/).
-
-2. Selezionare **tutti i servizi** e digitare in *Azure Information Protection* nella **casella di ricerca**.
-
-3. Dopo la visualizzazione dei risultati, fare clic sul pulsante Start next to **Azure Information Protection** per renderlo preferito e facile da trovare in un secondo momento.
-
-4. Selezionare **Azure Information** \> Protection **Protection Activation** e verificare che lo stato sia impostato su attivato. 
-
-### <a name="view-the-azure-information-protection-policy-and-default-labels"></a>Visualizzare i criteri di protezione delle informazioni di Azure e le etichette predefinite 
-
-Per visualizzare e modificare le etichette esistenti:
-
-1. Nel dashboard di Azure Information Protection selezionare etichette **classificazioni** \> ****. <br/>![Etichette standard per Azure Information Protection.](media/AIPLabels.png)
-
-2. È possibile scegliere qualsiasi etichetta per visualizzare le opzioni, è possibile modificare il nome visualizzato, i colori e così via.
- 
-3. Se si desidera creare il proprio, vedere [modificare e creare nuove etichette](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step2) . 
 
 ### <a name="install-the-azure-information-protection-client-manually"></a>Installare il client Azure Information Protection manualmente
 
 Per installare manualmente il client AIP:
 
-1. Scaricare **AzInfoProtection. exe** dall' [area download Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
+1. Scaricare **AzinfoProtection_UL. exe** dall' [area download Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
  
-2. È possibile verificare che l'installazione abbia avuto esito positivo visualizzando un documento di Word e **** assicurandosi che l'opzione Proteggi sia disponibile nella scheda **Home** . <br/>![Elenco a discesa della scheda protezione in un documento di Word.](media/Word_Protect.png)
+2. È possibile verificare che l'installazione abbia avuto esito positivo visualizzando un documento di Word e assicurandosi che l'opzione **sensitivity** sia disponibile nella scheda **Home** .
+<br/>![Elenco a discesa della scheda protezione in un documento di Word.](media/word-sensitivity.png)
 
 Per ulteriori informazioni, vedere [installare il client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3).

@@ -1,7 +1,7 @@
 ---
 title: Regole del flusso di posta (regole di trasporto in Exchange Online Protection
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -10,25 +10,25 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: È possibile utilizzare le regole del flusso di posta (regole di trasporto) per identificare ed eseguire azioni sui messaggi che passano attraverso l'organizzazione di Office 365.
-ms.openlocfilehash: 50b068c39ad02d04596b6598c31333be79ac28c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: acd661962c1223c4124c492ce66f463d27e7ca10
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084368"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441533"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Regole del flusso di posta (regole di trasporto in Exchange Online Protection
 
 È possibile utilizzare le regole del flusso di posta (note anche come regole di trasporto) per identificare ed eseguire azioni sui messaggi che passano attraverso l'organizzazione di Office 365. Le regole del flusso di posta sono simili alle regole della posta in arrivo che sono disponibili in Outlook e Outlook sul Web. La differenza principale è che le regole del flusso di posta eseguono azioni sui messaggi quando sono in transito e non dopo che il messaggio viene recapitato alla cassetta postale. Le regole del flusso di posta includono un insieme più ricco di condizioni, eccezioni e azioni, che forniscono la flessibilità necessaria per implementare molti tipi di criteri di messaggistica.
-  
+
 In questo articolo sono illustrati i componenti delle regole del flusso di posta e il loro funzionamento.
-  
+
 Per i passaggi per creare, copiare e gestire le regole del flusso di posta, vedere [gestire le regole del flusso di posta in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Per ciascuna regola è possibile applicare, verificare o testare e inviare una notifica al mittente. Per ulteriori informazioni sulle opzioni di testing, vedere [test Mail Flow Rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and [policy Tips in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
-  
+
 Per i report di riepilogo e dettagli sui messaggi che corrispondono alle regole del flusso di posta, vedere [Use Mail Protection Reports in Office 365 to view data about malware, spam, and Rule detections](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
-  
+
 Per implementare determinati criteri di messaggistica usando le regole del flusso di posta, vedere gli argomenti seguenti:
-  
+
 - [Utilizzare le regole del flusso di posta per esaminare gli allegati di messaggi in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [Configurare la crittografia in Office 365 Enterprise](../../compliance/set-up-encryption.md)
@@ -44,20 +44,20 @@ Per implementare determinati criteri di messaggistica usando le regole del fluss
 - [Definire le regole per crittografare o decrittografare i messaggi di posta elettronica](https://go.microsoft.com/fwlink/p/?Linkid=402846)
 
 Nel video seguente viene fornita una dimostrazione dell'impostazione delle regole del flusso di posta in Exchange Online Protection.
-  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
+
 ## <a name="mail-flow-rule-components"></a>Componenti delle regole del flusso di posta
 
 Una regola del flusso di posta è composta da condizioni, eccezioni, azioni e proprietà:
-  
-- **Condizioni**: identificare i messaggi a cui si desidera applicare le azioni. Alcune condizioni esaminano i campi d'intestazione dei messaggi (ad esempio, i campi A, Da, o Cc). Altre condizioni esaminano le proprietà del messaggio (ad esempio, l'oggetto, il corpo, gli allegati, la dimensione o la classificazione). Per la maggior parte delle condizioni l'utente deve specificare un operatore di confronto (ad esempio, uguale a, diverso da o contiene) e un valore da utilizzare per la corrispondenza. Se non sono presenti condizioni o eccezioni, la regola viene applicata a tutti i messaggi. 
+
+- **Condizioni**: identificare i messaggi a cui si desidera applicare le azioni. Alcune condizioni esaminano i campi d'intestazione dei messaggi (ad esempio, i campi A, Da, o Cc). Altre condizioni esaminano le proprietà del messaggio (ad esempio, l'oggetto, il corpo, gli allegati, la dimensione o la classificazione). Per la maggior parte delle condizioni l'utente deve specificare un operatore di confronto (ad esempio, uguale a, diverso da o contiene) e un valore da utilizzare per la corrispondenza. Se non sono presenti condizioni o eccezioni, la regola viene applicata a tutti i messaggi.
 
 Per ulteriori informazioni sulle condizioni delle regole del flusso di posta in Exchange Online Protection, vedere [Mail Flow Rule conditions and Exceptions (Predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-- **Eccezioni**: facoltativamente, identificare i messaggi a cui le azioni non devono essere applicate. Nelle eccezioni sono presenti gli stessi identificatori dei messaggi disponibili nelle condizioni. Le eccezioni sostituiscono le condizioni e impediscono l'esecuzione delle azioni della regola su un messaggio, anche nel caso in cui il messaggio soddisfi tutte le condizioni configurate. 
+- **Eccezioni**: facoltativamente, identificare i messaggi a cui le azioni non devono essere applicate. Nelle eccezioni sono presenti gli stessi identificatori dei messaggi disponibili nelle condizioni. Le eccezioni sostituiscono le condizioni e impediscono l'esecuzione delle azioni della regola su un messaggio, anche nel caso in cui il messaggio soddisfi tutte le condizioni configurate.
 
-- **Azioni**: specificare le operazioni da eseguire per i messaggi che soddisfano le condizioni della regola e non corrispondono ad alcuna eccezione. Sono disponibili molte azioni, ad esempio il rifiuto, l'eliminazione o il reindirizzamento dei messaggi, l'aggiunta di altri destinatari, l'aggiunta di prefissi all'oggetto del messaggio o l'inserimento di dichiarazioni di non responsabilità nel corpo del messaggio. 
+- **Azioni**: specificare le operazioni da eseguire per i messaggi che soddisfano le condizioni della regola e non corrispondono ad alcuna eccezione. Sono disponibili molte azioni, ad esempio il rifiuto, l'eliminazione o il reindirizzamento dei messaggi, l'aggiunta di altri destinatari, l'aggiunta di prefissi all'oggetto del messaggio o l'inserimento di dichiarazioni di non responsabilità nel corpo del messaggio.
 
 Per ulteriori informazioni sulle azioni delle regole del flusso di posta disponibili in Exchange Online Protection, vedere [Mail Flow Rule Actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
@@ -68,18 +68,18 @@ Per ulteriori informazioni sulle azioni delle regole del flusso di posta disponi
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Più condizioni, eccezioni e azioni
 
 Nella tabella seguente è illustrato come in una regola vengono gestite più condizioni, valori della condizione, eccezioni e azioni.
-  
+
 |**Componente**|**Logica**|**Comments**|
 |:-----|:-----|:-----|
 |Più condizioni|E|Un messaggio deve corrispondere a tutte le condizioni della regola. Se occorre una condizione di corrispondenza o un'altra, è possibile utilizzare regole distinte per ogni condizione. Ad esempio, per aggiungere la stessa dichiarazione di non responsabilità nei messaggi con allegati e nei messaggi con testo specifico, è possibile creare una regola per ogni condizione. Nell'interfaccia di amministrazione di Exchange, è possibile copiare facilmente una regola.|
-|Una condizione con più valori|O|Le stesse condizioni consentono di specificare più valori. Il messaggio deve corrispondere a uno qualsiasi (non tutti) dei valori specificati. Ad esempio, se in un messaggio di posta elettronica l'oggetto è Informazioni sul prezzo delle azioni e la condizione **L'oggetto include una o più parole seguenti** è configurata per la corrispondenza alle parole Contoso o azioni, la condizione è soddisfatta perché l'oggetto contiene almeno uno dei valori specificati.  |
+|Una condizione con più valori|OPPURE|Le stesse condizioni consentono di specificare più valori. Il messaggio deve corrispondere a uno qualsiasi (non tutti) dei valori specificati. Ad esempio, se in un messaggio di posta elettronica l'oggetto è Informazioni sul prezzo delle azioni e la condizione **L'oggetto include una o più parole seguenti** è configurata per la corrispondenza alle parole Contoso o azioni, la condizione è soddisfatta perché l'oggetto contiene almeno uno dei valori specificati.  |
 |Più eccezioni|OPPURE|Se un messaggio corrisponde a una qualsiasi delle eccezioni, le azioni non vengono applicate al messaggio. Quest'ultimo non deve necessariamente corrispondere a tutte le eccezioni.|
 |Più azioni|E|I messaggi che corrispondono alle condizioni di una regola prendono tutte le azioni che sono specificate dalla regola. Ad esempio, se vengono selezionate le azioni **Anteponi all'oggetto del messaggio** e **Aggiungi destinatari alla casella Ccn**, verranno applicate entrambe al messaggio.<br/><br/> Tenere presente che alcune azioni come **Elimina il messaggio senza inviare alcuna notifica** impediscono l'applicazione a un messaggio delle regole successive. Altre azioni quali **Inoltra il messaggio** non consentono azioni aggiuntive.<br/><br/> È inoltre possibile impostare un'azione su una regola in modo che quando quella regola viene applicata, le regole successive non vengono applicate al messaggio.|
 
 ### <a name="mail-flow-rule-properties"></a>Proprietà regola flusso di posta
 
 Nella tabella seguente vengono descritte le proprietà della regola che sono disponibili nelle regole di flusso della posta.
-  
+
 |**Nome proprietà nell'interfaccia di amministrazione di Exchange**|**Nome del parametro in PowerShell**|**Descrizione**|
 |:-----|:-----|:-----|
 |**Priorità**|_Priority_|Indica in che ordine le regole vengono applicate ai messaggi. La priorità predefinita si basa sul momento di creazione della regola; le regole meno recenti hanno una priorità superiore rispetto a quelle più nuove, mentre le regole con priorità superiore vengono elaborate prima delle regole con priorità inferiore. <br/><br/> La priorità della regola vengono modificate nell'interfaccia di amministrazione di Exchange spostando la regola verso l'alto o verso il basso nell'elenco delle regole. In PowerShell, impostare il numero di priorità (0 è la priorità più alta). <br/><br/> Ad esempio, in caso di una regola per rifiutare i messaggi che includono un numero di carta di credito e un'altra che richiede l'approvazione, è possibile far applicare per prima la regola per il rifiuto e interrompere l'applicazione delle altre regole.  |
@@ -94,13 +94,13 @@ Nella tabella seguente vengono descritte le proprietà della regola che sono dis
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Modalità di applicazione delle regole del flusso di posta ai messaggi
 
 Tutti i messaggi che transitano nell'organizzazione vengono valutati rispetto alle regole di trasporto abilitate per l'organizzazione. Le regole vengono elaborate nell'ordine elencato nella pagina **regole** del **flusso** \> di posta in EAC o in base al valore del parametro _Priority_ corrispondente in PowerShell.
-  
+
 Ogni regola offre inoltre l'opzione di arrestare l'elaborazione di più regole in caso di corrispondenza della regola. Questa impostazione è importante per i messaggi che corrispondono alle condizioni di più regole del flusso di posta. Quale regola si desidera applicare al messaggio? Tutte? Solo una?
-  
+
 ### <a name="differences-in-processing-based-on-message-type"></a>Differenze di elaborazione in base al tipo di messaggio
 
 Esistono diversi tipi di messaggi che passano attraverso un'organizzazione. Nella seguente tabella sono riportati i tipi di messaggio che possono essere elaborati dalle regole del flusso di posta.
-  
+
 ****
 
 |**Tipo di messaggio**|**È possibile applicare una regola?**|
@@ -121,9 +121,9 @@ Esistono diversi tipi di messaggi che passano attraverso un'organizzazione. Nell
 - Dopo aver creato o modificato una regola del flusso di posta, possono essere necessari fino a 30 minuti affinché la regola nuova o aggiornata venga applicata ai messaggi.
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
-  
+
 [Utilizzare le regole del flusso di posta per esaminare gli allegati di messaggi in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
-  
+
 [Crittografia della posta elettronica in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
-  
+
 [Limiti delle regole di journal, trasporto e Posta in arrivo ](https://go.microsoft.com/fwlink/p/?LinkId=324584)

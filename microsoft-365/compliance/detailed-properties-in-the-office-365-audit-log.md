@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Descrizioni delle proprietà aggiuntive incluse in un record del registro di controllo di Office 365.
-ms.openlocfilehash: 00f2eb2a9259247085973642b317ffbca8ba064a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 04b2c0bf5d4a3a534e166e82b0261f71e7788294
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082960"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437796"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Proprietà dettagliate nel log di controllo di Office 365
 
@@ -32,7 +32,7 @@ Quando si esportano i risultati di una ricerca nel registro di controllo dal cen
 Nella tabella seguente vengono descritte le proprietà incluse (a seconda del servizio Office 365 in cui si verifica un evento) nella colonna **AuditData** a più proprietà. Il **servizio Office 365 con questa** colonna di proprietà indica il servizio e il tipo di attività (utente o amministratore) che include la proprietà. Per informazioni più dettagliate su queste proprietà o su proprietà che potrebbero non essere elencate in questo argomento, vedere [schema API di attività di gestione di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=717993).
   
 > [!TIP]
-> È possibile utilizzare la query di alimentazione in Excel per dividere la colonna in più colonne in modo che ogni proprietà disponga di una colonna. In questo modo si consente di ordinare e filtrare una o più di queste proprietà. Per informazioni su come eseguire questa operazione, vedere la sezione "dividere una colonna per delimitatore" in [dividere una colonna di testo (Power query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662). 
+> È possibile utilizzare la caratteristica di trasformazione JSON in Power query in Excel per dividere la colonna **AuditData** in più colonne in modo che ogni proprietà disponga di una propria colonna. In questo modo è possibile ordinare e filtrare una o più di queste proprietà. Per informazioni su come eseguire questa operazione, vedere [esportazione, configurazione e visualizzazione dei record del registro di controllo](export-view-audit-log-records.md). 
   
 |**Proprietà**|**Descrizione**|**Servizio Office 365 con questa proprietà**|
 |:-----|:-----|:-----|
@@ -44,7 +44,7 @@ Nella tabella seguente vengono descritte le proprietà incluse (a seconda del se
 |ChannelName|Nome di un canale Microsoft teams. Il team in cui si trova il canale è identificato dalle proprietà **TeamName** e **TeamGuid** .|Microsoft Teams|
 |Client|Il dispositivo client, il sistema operativo del dispositivo e il Visualizzatore di dispositivi utilizzato per l'evento login (ad esempio, Nokia Lumia 920; Windows Phone 8; IE Mobile 11).|Azure Active Directory|
 |ClientInfoString|Informazioni sul client di posta elettronica utilizzato per eseguire l'operazione, ad esempio una versione del browser, una versione di Outlook e informazioni sui dispositivi mobili|Exchange (attività delle cassette postali)|
-|ClientIP|L'indirizzo IP del dispositivo utilizzato quando è stata registrata l'attività. L'indirizzo IP viene visualizzato in un formato di indirizzo IPv4 o IPv6.|Exchange ed Azure Active Directory|
+|ClientIP|L'indirizzo IP del dispositivo utilizzato quando è stata registrata l'attività. L'indirizzo IP viene visualizzato in un formato di indirizzo IPv4 o IPv6.<br/><br/>Tenere presente che per l'attività di amministrazione per gli eventi relativi a Azure Active Directory, l'indirizzo IP non è registrato e il valore `null`della proprietà CLIENTIP è. |Exchange ed Azure Active Directory|
 |ClientIPAddress|Uguale a ClientIP.|SharePoint|
 |CreationTime|Data e ora in formato UTC (Coordinated Universal Time) quando l'utente ha eseguito l'attività.|Tutto|
 |DestinationFileExtension|L'estensione di un file copiato o spostato. Questa proprietà viene visualizzata solo per le attività utente filecopiate e filemoved.|SharePoint|
@@ -92,7 +92,8 @@ Nella tabella seguente vengono descritte le proprietà incluse (a seconda del se
 ||||
 
 > [!NOTE]
-> <sup>1</sup> per gli eventi relativi a Azure Active Directory, il valore di un amministratore non viene utilizzato in un record di controllo. I record di controllo per le attività eseguite dagli amministratori indicheranno che un utente normale (ad esempio, **UserType: 0**) ha eseguito l'attività. La proprietà **userid** identificherà la persona (utente o amministratore normale) che ha eseguito l'attività.
+><sup>1</sup> per gli eventi relativi a Azure Active Directory, il valore di un amministratore non viene utilizzato in un record di controllo. I record di controllo per le attività eseguite dagli amministratori indicheranno che un utente normale (ad esempio, **UserType: 0**) ha eseguito l'attività. La proprietà **userid** identificherà la persona (utente o amministratore normale) che ha eseguito l'attività.<br/>
+
 
 Le proprietà descritte sopra vengono visualizzate anche quando si fa clic su **altre informazioni** quando si visualizzano i dettagli di un evento specifico. 
   

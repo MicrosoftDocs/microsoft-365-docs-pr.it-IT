@@ -29,9 +29,9 @@
 ### [Funzionalità di protezione mapping alle impostazioni di Intune](map-protection-features-to-intune-settings.md)
 ### [Impostazioni di protezione delle app per Android e iOS](app-protection-settings-for-android-and-ios.md)
 #### [Convalidare le impostazioni su Android o iOS](validate-settings-on-android-or-ios.md)
-### [Impostazioni di protezione per PC Windows 10](protection-settings-for-windows-10-pcs.md)
+### [Impostazioni di protezione dei dispositivi per i PC Windows 10](protection-settings-for-windows-10-pcs.md)
 #### [Convalidare le impostazioni su PC Windows 10](validate-settings-on-windows-10-pcs.md)
-### [Impostazioni di protezione per i dispositivi Windows 10](protection-settings-for-windows-10-devices.md)
+### [Impostazioni di protezione delle app per PC Windows 10](protection-settings-for-windows-10-devices.md)
 ## [Eseguire la migrazione a Microsoft 365 Business](migrate-to-microsoft-365-business.md)
 ## Fatturazione
 ### [Fattura](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)

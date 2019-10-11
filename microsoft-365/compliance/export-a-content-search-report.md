@@ -18,29 +18,29 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: Invece di esportare i risultati effettivi di una ricerca contenuto nel centro sicurezza & conformità in Office 365, è possibile esportare solo un rapporto sui risultati di ricerca. Il report contiene un riepilogo dei risultati della ricerca e un documento con informazioni dettagliate su ogni elemento che verrebbe esportato.
-ms.openlocfilehash: 8e33a7ba236e0890fc5985aa9a00cba904a40793
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Invece di esportare i risultati effettivi di una ricerca contenuto nel centro sicurezza & conformità in Office 365, è possibile esportare un rapporto sui risultati di ricerca. Il report contiene un riepilogo dei risultati della ricerca e un documento con informazioni dettagliate su ogni elemento che verrebbe esportato.
+ms.openlocfilehash: 9fe006ba595920f938a4d070eb87987137d73f7e
+ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083649"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37437786"
 ---
 # <a name="export-a-content-search-report"></a>Esportare un report di Ricerca contenuto
 
-Invece di esportare il set completo di risultati della ricerca da una ricerca di contenuto nel centro sicurezza & conformità (e da una ricerca di contenuto associata a un caso di eDiscovery), è possibile esportare solo gli stessi rapporti generati quando si esportano i risultati della ricerca. .
+Invece di esportare il set completo di risultati della ricerca da una ricerca di contenuto nel centro sicurezza & Compliance (e da una ricerca di contenuto associata a un caso di eDiscovery), è possibile esportare gli stessi rapporti generati quando si esportano i risultati della ricerca.
   
-Quando si esporta un report, viene scaricato in una cartella con lo stesso nome della ricerca di contenuto, ma accodato con *_ReportsOnly* . Ad esempio, se la ricerca di contenuto è denominata *ContosoCase0815* , il report viene scaricato in una cartella denominata *ContosoCase0815_ReportsOnly* . Per un elenco dei documenti inclusi nel report, vedere [What ' s incluso nel report](#whats-included-in-the-report).
+Quando si esporta un report, viene scaricato in una cartella con lo stesso nome della ricerca di contenuto, ma accodato con *_ReportsOnly*. Ad esempio, se la ricerca di contenuto è denominata *ContosoCase0815*, il report viene scaricato in una cartella denominata *ContosoCase0815_ReportsOnly*. Per un elenco dei documenti inclusi nel report, vedere [What ' s incluso nel report](#whats-included-in-the-report).
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-- Per esportare un rapporto di ricerca contenuto, è necessario assegnare il ruolo di gestione della ricerca di conformità nel centro sicurezza & Compliance. Questo ruolo viene assegnato ai gruppi di ruoli di gestione eDiscovery e dell'organizzazione incorporati. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
+- Per esportare un rapporto di ricerca contenuto, è necessario assegnare il ruolo di gestione della ricerca di conformità nel centro sicurezza & Compliance. Questo ruolo viene assegnato ai gruppi di ruoli di gestione eDiscovery e dell'organizzazione incorporati. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
-- Quando si esporta un report, i dati vengono temporaneamente archiviati in un'area di archiviazione di Windows Azure univoca nel cloud Microsoft prima che vengano scaricati nel computer locale. Verificare che l'organizzazione sia in grado di connettersi all'endpoint in Azure, che è ** \*. blob.Core.Windows.NET** (il carattere jolly rappresenta un identificatore univoco per l'esportazione). I dati dei risultati della ricerca vengono eliminati dall'area di archiviazione di Azure due settimane dopo la sua creazione. 
+- Quando si esporta un report, i dati vengono temporaneamente archiviati in un'area di archiviazione di Azure univoca nel cloud Microsoft prima che vengano scaricati nel computer locale. Assicurarsi che l'organizzazione sia in grado di connettersi all'endpoint in Azure, che è ** \*. blob.Core.Windows.NET** (il carattere jolly rappresenta un identificatore univoco per l'esportazione). I dati dei risultati della ricerca vengono eliminati dall'area di archiviazione di Azure due settimane dopo la sua creazione. 
     
 - Il computer utilizzato per esportare i risultati della ricerca deve soddisfare i seguenti requisiti di sistema:
     
-  - Windows 7 a 32 o 64 bit e versioni successive
+  - versioni a 32 bit o 64 bit di Windows 7 e versioni successive
     
   - Microsoft .NET Framework 4.7
     
@@ -54,13 +54,13 @@ Quando si esporta un report, viene scaricato in una cartella con lo stesso nome 
     
     **Nota:** Microsoft non produce estensioni o componenti aggiuntivi di terze parti per le applicazioni ClickOnce. L'esportazione dei risultati di ricerca utilizzando un browser non supportato con le estensioni di terze parti o i componenti aggiuntivi non è supportata. 
 
-- Se la dimensione totale stimata dei risultati restituiti da una ricerca di contenuto supera&nbsp;i 20 TB, l'esportazione del rapporto avrà esito negativo. Per esportare correttamente il report, provare a restringere l'ambito ed eseguire di nuovo la ricerca in modo che la dimensione stimata dei risultati&nbsp;sia inferiore a 20 TB.
+- Se le dimensioni totali stimate dei risultati restituiti da una ricerca di contenuto superano 2 TB, l'esportazione del rapporto ha esito negativo. Per esportare correttamente il report, provare a restringere l'ambito e rieseguire la ricerca in modo che le dimensioni stimate dei risultati siano inferiori a 2 TB.
 
 - L'esportazione dei rapporti di ricerca del contenuto conta sul numero massimo di esportazioni in esecuzione contemporaneamente e sul numero massimo di esportazioni che un singolo utente può eseguire. Per ulteriori informazioni sui limiti di esportazione, vedere [Export content search results](export-search-results.md#export-limits).
 
 ## <a name="generate-and-download-a-content-search-report"></a>Generare e scaricare un report di ricerca contenuto
 
-La procedura per generare e scaricare un rapporto di ricerca contenuto è molto simile all'esportazione dei risultati della ricerca.
+I passaggi per generare e scaricare un report di ricerca contenuto sono simili all'esportazione dei risultati della ricerca.
   
 ## <a name="step-1-generate-the-report-for-export"></a>Passaggio 1: generare il report per l'esportazione
 
@@ -104,7 +104,7 @@ Il passaggio successivo consiste nel scaricare il report dall'area di archiviazi
   
 1. Nel riquadro dei dettagli per la ricerca per la quale è stato generato il report, in **Esporta rapporto in un computer**, fare clic su **Scarica report**.
     
-    Viene visualizzata la pagina del **rapporto di download** contenente le seguenti informazioni sul rapporto finché non vengono scaricati nel computer. 
+    Viene visualizzata la pagina **download report** che contiene le seguenti informazioni sul rapporto scaricato nel computer. 
     
     - Il numero di elementi che verranno scaricati.
     
@@ -112,11 +112,11 @@ Il passaggio successivo consiste nel scaricare il report dall'area di archiviazi
     
     - Se gli elementi esportati saranno indicizzati o non indicizzati. Gli elementi non indicizzati sono elementi che hanno un formato riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi.
     
-    - Se verranno scaricate o meno versioni di documenti SharePoint.
+    - Se verranno scaricate le versioni dei documenti di SharePoint.
     
     - Lo stato del processo di esportazione del report. È possibile iniziare a scaricare il report anche se la preparazione del report non è stata completata.
     
-2. In **Chiave di esportazione**, fare clic su **Copia negli Appunti**. Questo tasto verrà utilizzato nel passaggio 5 per scaricare il report.
+2. In **Chiave di esportazione**, fare clic su **Copia negli Appunti**. È possibile utilizzare questa chiave nel passaggio 5 per scaricare il report.
     
     > [!IMPORTANT]
     > Poiché tutti gli utenti possono installare e avviare lo strumento di esportazione di eDiscovery e quindi utilizzare questa chiave per scaricare il report di ricerca, assicurarsi di prendere precauzioni per proteggere questa chiave come se si proteggessero le password o altre informazioni relative alla sicurezza. 
@@ -140,14 +140,14 @@ Il passaggio successivo consiste nel scaricare il report dall'area di archiviazi
 
 Quando si genera ed esporta un report sui risultati di una ricerca di contenuto, vengono scaricati i documenti seguenti:
   
-- **Riepilogo di esportazione** -documento di Excel che contiene un riepilogo dell'esportazione. Sono incluse informazioni quali il numero di origini di contenuto di cui è stata eseguita la ricerca, il numero di risultati di ricerca di ogni percorso del contenuto, il numero stimato di elementi, il numero effettivo di elementi che verrebbero esportati e le dimensioni stimate e effettive degli elementi. che verrebbe esportato. 
+- **Riepilogo esportazione:** Documento di Excel che contiene un riepilogo dell'esportazione. Sono incluse informazioni quali il numero di origini di contenuto di cui è stata eseguita la ricerca, il numero di risultati di ricerca di ogni percorso del contenuto, il numero stimato di elementi, il numero effettivo di elementi che verrebbero esportati e le dimensioni stimate e effettive degli elementi. che verrebbe esportato. 
     
     > [!NOTE]
     > Se si includono gli elementi non indicizzati durante l'esportazione del report, il numero di elementi non indicizzati viene incluso nel numero totale di risultati della ricerca stimati e nel numero totale di risultati della ricerca scaricati (se si desidera esportare i risultati della ricerca) elencati nel Esporta rapporto riepilogativo. In altre parole, il numero totale di elementi che verrebbero scaricati è uguale al numero totale di risultati stimati e al numero totale di elementi non indicizzati. 
   
-- **Manifest** -file manifesto (in formato XML) che contiene informazioni su ogni elemento incluso nei risultati della ricerca. 
+- **Manifesto:** File manifesto (in formato XML) che contiene informazioni su ogni elemento incluso nei risultati della ricerca. 
     
-- **Results** -un documento di Excel che contiene una riga contenente informazioni su ogni elemento indicizzato che verrebbe esportato con i risultati della ricerca. Per la posta elettronica, il log dei risultati contiene informazioni su ogni messaggio, tra cui: 
+- **Risultati:** Documento di Excel che contiene una riga contenente informazioni su ogni elemento indicizzato che verrebbe esportato con i risultati della ricerca. Per la posta elettronica, il log dei risultati contiene informazioni su ogni messaggio, tra cui: 
     
   - Il percorso del messaggio nella cassetta postale di origine (e se il messaggio è nella cassetta postale principale o di archiviazione).
     
@@ -168,6 +168,6 @@ Quando si genera ed esporta un report sui risultati di una ricerca di contenuto,
   - Il nome del documento (che si trova nella colonna Oggetto nel log dei risultati).
     
     > [!NOTE]
-    > Il numero di righe del rapporto **risultati** deve essere uguale al numero totale di risultati della ricerca da scaricare meno il numero totale di elementi elencati nel rapporto **elementi non indicizzati** . 
+    > Il numero di righe del rapporto **risultati** deve essere uguale al numero totale di risultati della ricerca meno il numero totale di elementi elencati nel rapporto **elementi non indicizzati** . 
   
-- **Elementi non indicizzati** : documento di Excel contenente informazioni su eventuali elementi non indicizzati che verrebbero inclusi nei risultati della ricerca. Se non si includono gli elementi non indicizzati durante la generazione del report dei risultati della ricerca, il report verrà comunque scaricato, ma sarà vuoto.
+- **Elementi non indicizzati:** Documento di Excel che contiene informazioni su eventuali elementi non indicizzati inclusi nei risultati della ricerca. Se non si includono gli elementi non indicizzati durante la generazione del report dei risultati della ricerca, il report verrà comunque scaricato, ma sarà vuoto.

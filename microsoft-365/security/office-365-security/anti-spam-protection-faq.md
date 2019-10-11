@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: d36499815979fb0b5ac805a98f0c9320fc07a538
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 504fb93a271a60db4c43aa48ba6578a904c8bb5a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083934"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37441093"
 ---
 # <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione da posta indesiderata
 
@@ -79,7 +79,7 @@ Clienti di Exchange Online Protection: [Reporting e traccia dei messaggi in Exch
   
  **D. Qualcuno mi ha inviato un messaggio ma non lo trovo. Sospetto che sia stato identificato come posta indesiderata. Esiste uno strumento per scoprirlo?**
   
-R. Sì, lo strumento di traccia dei messaggi consente di seguire i messaggi di posta elettronica nel loro percorso attraverso il servizio e scoprire cosa è accaduto. Per ulteriori informazioni sull'utilizzo dello strumento di traccia dei messaggi per scoprire perché un messaggio è stato contrassegnato come posta indesiderata, vedere [Il messaggio era contrassegnato come posta indesiderata?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam).
+R. Sì, lo strumento di traccia dei messaggi consente di seguire i messaggi di posta elettronica nel loro percorso attraverso il servizio e scoprire cosa è accaduto. Per ulteriori informazioni su come utilizzare lo strumento di traccia dei messaggi per individuare il motivo per cui un messaggio è stato contrassegnato come posta indesiderata, vedere [un messaggio contrassegnato come posta indesiderata?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
  **D: Il servizio limiterà la posta (limite di frequenza) se gli utenti inviano posta indesiderata in uscita?**
   

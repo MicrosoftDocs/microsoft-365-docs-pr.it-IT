@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: La protezione anti-phishing, con una protezione globale come parte di Office 365 Advanced Threat Protection e la protezione di base in Office 365 Exchange Online Protection, può contribuire a proteggere l'organizzazione da attacchi di phishing basati sulla rappresentazione malevola e altri attacchi di phishing.
-ms.openlocfilehash: e668a4681f37f4a3d6977f9d42c4aa661a07cac7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 620a6f818d3de7c360c3dc22a0ca5822357fb487
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084125"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428407"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP 
 
@@ -39,7 +39,7 @@ cosa fare:
 3. Configurare un criterio anti-phishing o un criterio di anti-phishing ATP.
 
 >[!IMPORTANT]
-> Per ulteriori informazioni sulle modalità di applicazione di più tecnologie, vedere [come vengono combinati i criteri e le protezioni](https://docs.microsoft.com/office365/securitycompliance/how-policies-and-protections-are-combined).
+> Per ulteriori informazioni sulle modalità di applicazione di più tecnologie, vedere [come vengono combinati i criteri e le protezioni](https://docs.microsoft.com/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined).
 
 ## <a name="review-the-prerequisites"></a>Esaminare i prerequisiti
 
@@ -49,7 +49,7 @@ cosa fare:
     |---------|---------|
     |Amministratore globale di Office 365 |Per impostazione predefinita, la persona che si iscrive all'acquisto di Office 365 è un amministratore globale. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .         |
     |Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
-    |Gestione dell'organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+    |Gestione organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
     Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -93,9 +93,6 @@ Quando si configurano o si modificano i criteri di anti-phishing ATP, è possibi
 |**Aggiungere mittenti e domini attendibili** <br/> |Definisce gli indirizzi di posta elettronica e i domini che non verranno considerati come rappresentati da questo criterio. I messaggi provenienti da indirizzi e domini di posta elettronica del mittente che si aggiungono come mittenti e domini attendibili non verranno mai classificati come attacchi basati sulla rappresentazione. Di conseguenza, le azioni e le impostazioni di questo criterio non verranno applicate ai messaggi provenienti da questi mittenti e domini.  <br/><br/>Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci. |Quando gli utenti interagiscono con i domini o gli utenti che attivano la rappresentazione ma sono considerati sicuri. Ad esempio, se un partner ha lo stesso nome di visualizzazione o nome di dominio simile a un utente definito nell'elenco.  <br/> |
 |**Applicato a** <br/> |Definisce i destinatari i cui messaggi di posta elettronica in arrivo saranno soggetti alle regole del criterio. È possibile creare condizioni ed eccezioni per i destinatari associati al criterio.  <br/> Ad esempio, è possibile creare un criterio globale per l'organizzazione applicando la regola a tutti i destinatari del dominio.  <br/> È inoltre possibile creare regole di eccezione, ad esempio una regola che non esegue l'analisi dei messaggi di posta elettronica per un gruppo specifico di destinatari.  <br/> |Ogni criterio deve essere associato a un gruppo di utenti, ad esempio, gli utenti di un determinato dominio.  <br/> |
 |**Soglie di phishing avanzate** <br/> |Definisce il livello di impostazioni per la gestione dei messaggi di phishing.  <br/> **Standard** La posta elettronica sospettata di essere phishing viene gestita nel modo standard.  <br/> In modo **aggressivo** La posta elettronica sospettata di essere phishing con un livello elevato o molto elevato di sicurezza è gestita dal sistema nello stesso modo.  <br/> **Più aggressivo** La posta elettronica sospettata di essere phishing con un livello di confidenza medio, alto o molto elevato viene gestita dal sistema nello stesso modo.  <br/> **Più aggressivo** La posta elettronica sospettata di essere phishing con un livello di confidenza basso, medio, alto o molto elevato viene gestita dal sistema nello stesso modo.  <br/> |Quando si vuole essere più aggressivi nel trattamento di messaggi potenzialmente di phishing all'interno di Office 365. Ad esempio, i messaggi con un'altissima probabilità di essere phishing avranno le azioni più aggressive intraprese su di esse, mentre i messaggi con una probabilità bassa sono state intraprese azioni meno aggressive. Questa impostazione incide anche su altre parti del sistema di filtraggio che combinano i segnali insieme. Ciò non significa necessariamente che vengano implementate azioni diverse.  In sostanza, è possibile impostare la probabilità che la posta venga phishing, per determinare la (stessa) azione designata. La possibilità di spostare i messaggi positivi aumenta man mano che aumenta il livello di impostazioni.  <br/>|
-
-> [!IMPORTANT]
-> ![Nuove](../media/EnableMailboxIntelligenceBasedImpersonation.png) impostazioni importanti dell'immagine, separating * * Mailbox Intelligence "da" Mailbox Intelligence based Impersonation Protection ". La rappresentazione è quando si programatically accedere alla cassetta postale ed eseguire azioni sulla cassetta postale utilizzando uno script, un software API o di terze parti o persino un codice dannoso nella propria cassetta postale.
 
 ## <a name="learn-about-anti-phishing-policy-options"></a>Informazioni sulle opzioni dei criteri di anti-phishing
 

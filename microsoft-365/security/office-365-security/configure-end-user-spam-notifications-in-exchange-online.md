@@ -1,5 +1,5 @@
 ---
-title: Configurare le notifiche di posta indesiderata dell'utente finale in Exchange Online
+title: Configurazione delle notifiche di posta indesiderata dell'utente finale in Exchange Online
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -13,14 +13,14 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: È possibile configurare le notifiche di posta indesiderata dell'utente finale per il criterio di filtro della posta indesiderata a livello di società predefinito o per i criteri di filtro antispam applicati ai domini.
-ms.openlocfilehash: 1c2832110c98af07752ac7dc7fc985fcb75bc0dd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9da8ae5a9fd17db1cd9d92f21950a2ef5eb1a225
+ms.sourcegitcommit: ef5bcfe1e3d7d5a2a3c476477a0f82c84ed709e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084334"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428397"
 ---
-# <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurare le notifiche di posta indesiderata dell'utente finale in Exchange Online
+# <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurazione delle notifiche di posta indesiderata dell'utente finale in Exchange Online
 
 > [!IMPORTANT]
 > Questo argomento è destinato ai clienti di Exchange Online che proteggono le loro cassette postali ospitate su cloud. I clienti autonomi di Exchange Online Protection (EOP) che proteggono le cassette postali locali dovrebbero invece leggere l'argomento seguente: [configurare le notifiche di posta indesiderata dell'utente finale in EOP](configure-end-user-spam-notifications-in-eop.md). 
@@ -61,13 +61,13 @@ Per informazioni sui tasti di scelta rapida che possono essere applicati alle pr
     
 4. Nella finestra di dialogo successiva è possibile configurare le seguenti opzioni:
     
-1. **Abilita le notifiche di spam all'utente finale** Selezionare questa casella di controllo per abilitare le notifiche di posta indesiderata dell'utente finale per questo criterio. Viceversa, se questo criterio è abilitato, è possibile deselezionare la casella di controllo per disabilitare le notifiche di posta indesiderata dell'utente finale per tale criterio. 
+   - **Abilita le notifiche di spam all'utente finale** Selezionare questa casella di controllo per abilitare le notifiche di posta indesiderata dell'utente finale per questo criterio. Viceversa, se questo criterio è abilitato, è possibile deselezionare la casella di controllo per disabilitare le notifiche di posta indesiderata dell'utente finale per tale criterio. 
     
-2. **Invia notifiche di spam agli utenti finali ogni (giorni)** Consente di specificare la frequenza di invio delle notifiche di posta indesiderata dell'utente finale. Il valore predefinito è 3 giorni. È possibile specificare un valore compreso tra 1 e 15 giorni. Se, ad esempio, si specifica 7 giorni, la notifica includerà l'elenco di tutti i messaggi che negli ultimi 7 giorni erano diretti all'utente ma che sono stati invece inviati alla quarantena della posta indesiderata. 
+   - **Invia notifiche di spam agli utenti finali ogni (giorni)** Consente di specificare la frequenza di invio delle notifiche di posta indesiderata dell'utente finale. Il valore predefinito è 3 giorni. È possibile specificare un valore compreso tra 1 e 15 giorni. Se, ad esempio, si specifica 7 giorni, la notifica includerà l'elenco di tutti i messaggi che negli ultimi 7 giorni erano diretti all'utente ma che sono stati invece inviati alla quarantena della posta indesiderata. 
     
-3. **Lingua delle notifiche** Utilizzando l'elenco a discesa, selezionare la lingua in cui scrivere le notifiche di posta indesiderata dell'utente finale per il criterio in questione. 
+   - **Lingua delle notifiche** Utilizzando l'elenco a discesa, selezionare la lingua in cui scrivere le notifiche di posta indesiderata dell'utente finale per il criterio in questione. 
     
-5. Fare clic su **salva**. Nel riquadro destro viene visualizzato un riepilogo delle impostazioni dei criteri di filtro della posta indesiderata, incluse le impostazioni di notifica di posta indesiderata dell'utente finale.
+   - Fare clic su **Salva**. Nel riquadro destro viene visualizzato un riepilogo delle impostazioni dei criteri di filtro della posta indesiderata, incluse le impostazioni di notifica di posta indesiderata dell'utente finale.
     
 > [!NOTE]
 >  Le notifiche di posta indesiderata dell'utente finale saranno funzionali solo per i criteri di filtro della posta indesiderata abilitati. >  Le notifiche di posta indesiderata dell'utente finale vengono inviate solo una volta al giorno. Non è possibile garantire l'ora di recapito della notifica per alcun utente specifico e non è possibile configurarla. 
@@ -76,6 +76,26 @@ Per informazioni sui tasti di scelta rapida che possono essere applicati alle pr
   
 ![Regola di trasporto per verificare le notifiche di posta indesiderata dell'utente finale](../media/EOP-ESN-testspecificusers.jpg)
   
+## <a name="use-the-scc-to-configure-end-user-spam-notifications"></a>Utilizzo di SCC per configurare le notifiche di posta indesiderata dell'utente finale
+
+È inoltre possibile utilizzare il Centro sicurezza e conformità (SCC) per configurare le notifiche di posta indesiderata dell'utente finale. Eseguire la procedura seguente:
+
+1. Aprire il Centro sicurezza e conformità, accedere a **** \> **criteri** \> di gestione della **posta indesiderata** o utilizzare il https://protection.office.com/antispamcollegamento diretto.
+
+2. Fare clic sulla freccia in giù accanto al criterio di filtro posta indesiderata per il quale si vogliono abilitare le notifiche di posta indesiderata dell'utente finale.
+
+3. Fare clic sul collegamento **Configura notifiche di posta indesiderata dell'utente finale** .
+
+4. Nella finestra di dialogo successiva è possibile configurare le seguenti opzioni:
+    
+   - **Abilita le notifiche di spam all'utente finale** Selezionare questa casella di controllo per abilitare le notifiche di posta indesiderata dell'utente finale per questo criterio. Viceversa, se questo criterio è abilitato, è possibile deselezionare la casella di controllo per disabilitare le notifiche di posta indesiderata dell'utente finale per tale criterio. 
+    
+   - **Invia notifiche di spam agli utenti finali ogni (giorni)** Consente di specificare la frequenza di invio delle notifiche di posta indesiderata dell'utente finale. Il valore predefinito è 3 giorni. È possibile specificare un valore compreso tra 1 e 15 giorni. Se, ad esempio, si specifica 7 giorni, la notifica includerà l'elenco di tutti i messaggi che negli ultimi 7 giorni erano diretti all'utente ma che sono stati invece inviati alla quarantena della posta indesiderata. 
+    
+   - **Lingua delle notifiche** Utilizzando l'elenco a discesa, selezionare la lingua in cui scrivere le notifiche di posta indesiderata dell'utente finale per il criterio in questione. 
+    
+   - Fare clic su **Salva**. Nel riquadro viene visualizzato un riepilogo delle impostazioni dei criteri di filtro della posta indesiderata, incluse le impostazioni di notifica di posta indesiderata dell'utente finale.
+
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
 [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md)

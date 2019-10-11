@@ -3,7 +3,7 @@ title: Supportare i lavoratori remoti
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/27/2019
+ms.date: 10/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Configurare l'infrastruttura e le funzionalità di sicurezza necessarie per consentire ai dipendenti di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: b73e16a52741a6587e9ed903cab6ddfedf896973
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 198b01205e7419c4a3aa874c1e6213cce5284576
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403255"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453947"
 ---
 # <a name="empower-remote-workers"></a>Supportare i lavoratori remoti
 
@@ -69,6 +69,13 @@ Per soddisfare questi criteri per i lavoratori remoti, usare le funzionalità di
   - Le organizzazioni con identità ibride possono usare Azure AD Application Proxy anziché connessioni di rete privata virtuale (VPN)
 
 Le fasi seguenti illustrano come distribuire le funzionalità di Microsoft 365 Enterprise per l'accesso remoto e incoraggiarne l'adozione da parte dei lavoratori remoti. Se sono già stati distribuiti elementi di queste fasi, assicurarsi che soddisfino i requisiti indicati prima di passare all'elemento successivo.
+
+<a name="poster"></a> Per un riepilogo di 1 pagina di questo scenario vedere il [poster Supportare i lavoratori remoti](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf).
+
+[![Poster Supportare i lavoratori remoti](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
+
+È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+
 
 ## <a name="phase-1-deploy-microsoft-365-features-and-capabilities-for-remote-workers"></a>Fase 1: distribuire le caratteristiche e le funzionalità di Microsoft 365 per i lavoratori remoti
 

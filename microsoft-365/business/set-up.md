@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Informazioni su come configurare Microsoft 365 business.
-ms.openlocfilehash: d33839693001f36fbb56541775015f739300b043
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 4f31af3fa63416d3b1bd7281f7712313252ad437
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288496"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440599"
 ---
 # <a name="set-up-microsoft-365-business-in-the-setup-wizard"></a>Configurare Microsoft 365 business nell'installazione guidata
 
@@ -44,7 +44,7 @@ Quando si acquista Microsoft 365 business, si ha la possibilità di utilizzare u
     > [!IMPORTANT]
     > Se si è acquistato un dominio durante l'iscrizione, non verrà visualizzato **aggiungere un passaggio di dominio** qui. Andare su [Aggiungi utenti](#add-users-and-assign-licenses) .
 
-    ![Selezionare Aggiungi un dominio.](media/addadomainadmincenter.png)
+    ![Selezionare Vai a installazione.](media/gotosetupinadmincenter.png)
     
 3. Nella procedura guidata, immettere il nome di dominio che si desidera utilizzare (come contoso.com).
 
@@ -70,7 +70,9 @@ Tutti gli utenti aggiunti nella procedura guidata vengono assegnati automaticame
 
 1. Se l'abbonamento a Microsoft 365 business ha utenti esistenti (ad esempio, se è stato utilizzato Azure AD Connect), è possibile assegnare loro le licenze. Procedere con l'aggiunta di licenze anche per questi utenti.
 
-3. Dopo aver aggiunto gli utenti, si otterrà anche un'opzione per condividere le credenziali con i nuovi utenti aggiunti. È possibile scegliere se stamparle, inviarle tramite posta elettronica o scaricarle.
+2. Dopo aver aggiunto gli utenti, si otterrà anche un'opzione per condividere le credenziali con i nuovi utenti aggiunti. È possibile scegliere se stamparle, inviarle tramite posta elettronica o scaricarle.
+
+3. Nel creare team per l'organizzazione, è possibile scegliere di aggiungere Team e aggiungergli gli utenti. È inoltre possibile eseguire questa operazione in un secondo momento. Per ulteriori informazioni, vedere [Create a Company-Wide team](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).
 
 4. Ignorare il passaggio relativo alla migrazione dei messaggi di posta elettronica e scegliere **Avanti** nella pagina **Esegui la migrazione dei messaggi di posta elettronica**. 
 
@@ -86,14 +88,14 @@ Per configurare i servizi, occorre aggiornare alcuni record presso l'host DNS o 
   
 1. La configurazione guidata rileva in genere il registrar e offre un collegamento a istruzioni dettagliate per l'aggiornamento dei record NS presso il suo sito Web. In caso contrario, [modificare i server dei nomi per configurare Office 365 con qualsiasi registrar](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2). 
 
-    - Se si dispone di record DNS esistenti, ad esempio un sito Web esistente, ma l'host DNS è abilitato per la [connessione al dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), scegliere **Add records for me**. 
+    - Se si dispone di record DNS esistenti, ad esempio un sito Web esistente, ma l'host DNS è abilitato per la [connessione al dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), scegliere **Add records for me**. Nella pagina **scegliere i servizi online** accettare tutte le impostazioni predefinite e scegliere **Avanti**, quindi fare clic su **autorizza** nella pagina dell'host DNS.
     - Se sono presenti record DNS con altri host DNS (non abilitati per la connessione al dominio), è necessario gestire i propri record DNS per assicurarsi che i servizi esistenti siano connessi. Per altre informazioni, vedere [Domain nozioni di base](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) .
 
         ![Connect Your Domain Page con I ' ll manage my own DNS Records.](media/connectyourdomainpage.png)
 
 2. Seguire i passaggi della procedura guidata e la posta elettronica e altri servizi verranno configurati per l'utente.
 
-### <a name="set-up-security-policies-and-device-configurations"></a>Impostare i criteri di sicurezza e le configurazioni dei dispositivi 
+### <a name="protect-data-and-devices"></a>Proteggere i dati e i dispositivi 
 
 I criteri configurati nella procedura guidata vengono applicati automaticamente a un [gruppo di sicurezza](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups) denominato *tutti gli utenti*. È inoltre possibile creare altri gruppi per assegnare criteri nell'interfaccia di amministrazione.
 
@@ -113,7 +115,6 @@ I criteri configurati nella procedura guidata vengono applicati automaticamente 
 3. È inoltre possibile scegliere di [installare automaticamente Office](install-office-on-windows-10-during-setup.md) nei dispositivi Windows 10.
 
     ![Schermata della pagina Imposta configurazione dispositivo Windows 10.](media/setwin10config.png)
-
 
 
 ## <a name="deploy-office-365-client-apps"></a>Distribuire le app client di Office 365

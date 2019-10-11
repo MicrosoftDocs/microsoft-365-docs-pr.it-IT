@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
-ms.openlocfilehash: ef2f08c953b91ccefcadd5947d2d0a9f39683ae2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d19a9c86dce42724aa2be00f11ea49ac7cc19d8a
+ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083546"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37440653"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365
 
@@ -123,7 +123,7 @@ Sono disponibili due cmdlet di PowerShell remoti che è possibile utilizzare per
 Passaggi per le cassette postali che si trovano in un server Exchange
 
 1. Connettersi al server di Exchange tramite Remote PowerShell. Seguire la procedura descritta in [Connect to Exchange servers using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps).
-2. Se si desidera rimuovere completamente una singola regola, più regole o tutte le regole di una cassetta postale, utilizzare il [cmdlet Remove-Inbox Rule ](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)-utilizzarla per rimuovere completamente una, più o tutte le regole dalla cassetta postale.
+2. Se si desidera rimuovere completamente una singola regola, più regole o tutte le regole di una cassetta postale, utilizzare il [cmdlet Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule?view=exchange-ps)-utilizzarla per rimuovere completamente una, più o tutte le regole dalla cassetta postale.
 3. Se si desidera mantenere la regola e il relativo contenuto per ulteriori indagini, utilizzare il [cmdlet Disable-InboxRule](https://technet.microsoft.com/en-us/library/dd298120(v=exchg.160).aspx). 
 
 Passaggi per le cassette postali in Exchange Online
@@ -144,8 +144,8 @@ Il modo migliore per proteggere gli account utente e in particolare gli account 
     <li>Monitorare la modalità <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">di accesso e utilizzo</a>degli account utente. Non è possibile impedire la violazione iniziale, ma è possibile ridurre la durata e l'impatto della violazione rilevando prima. È possibile utilizzare questi: <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">criteri di protezione delle app cloud di Office 365</a> per monitorare gli account e allertare attività inusuali. 
         <ol type="a">
             <li><b>Tentativi di accesso non riusciti multipli</b> Questo criterio profila l'ambiente e attiva gli avvisi quando gli utenti eseguono più attività di accesso non riuscite in una singola sessione rispetto alla linea di base acquisita, il che potrebbe indicare una tentativo di violazione.</li>
-            <li><b>Viaggi impossibili</b> - Questo criterio profila l'ambiente e attiva gli avvisi quando vengono rilevate attività dallo stesso utente in posizioni diverse entro un periodo di tempo inferiore a quello previsto tra le due posizioni. Questo potrebbe indicare che un utente diverso utilizza le stesse credenziali. Il rilevamento di questo comportamento anomalo richiede un periodo di apprendimento iniziale di sette giorni durante il quale viene illustrato il modello di attività di un nuovo utente.</li>
-            <li><b>Attività rappresentata insolita (per utente)</b> - Questo criterio profila l'ambiente e attiva gli avvisi quando gli utenti eseguono più attività rappresentate in una singola sessione rispetto alla linea di base appresa, il che potrebbe indicare una tentativo di violazione.</li>
+            <li><b>Impossibile viaggiare</b> - questo criterio profila l'ambiente e attiva gli avvisi quando vengono rilevate attività dallo stesso utente in posizioni diverse entro un periodo di tempo inferiore a quello previsto tra le due posizioni. Questo potrebbe indicare che un utente diverso utilizza le stesse credenziali. Il rilevamento di questo comportamento anomalo richiede un periodo di apprendimento iniziale di sette giorni durante il quale viene illustrato il modello di attività di un nuovo utente.</li>
+            <li><b>Attività rappresentata insolita (per utente)</b> - questo criterio profila l'ambiente e attiva gli avvisi quando gli utenti eseguono più attività rappresentate in una singola sessione rispetto alla linea di base appresa, che potrebbe indicare un tentativo di violazione.</li>
         </ol>
     </li>
     <li>Sfruttare uno strumento come <a href="https://securescore.office.com/">Office 365 Secure Score</a> per gestire le configurazioni e i comportamenti di sicurezza degli account. 

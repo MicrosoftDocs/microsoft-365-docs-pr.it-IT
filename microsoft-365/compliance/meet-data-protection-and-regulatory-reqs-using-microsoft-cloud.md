@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Compliance Manager del Microsoft Service Trust Portal fornisce strumenti per monitorare, implementare e gestire i controlli che aiutano l'organizzazione a garantire la conformità con gli standard di sicurezza e di protezione dei dati (ad esempio GDPR, ISO 27001 e 27018, nonché HIPAA) quando si utilizzano servizi cloud Microsoft, come Office 365 e Microsoft Azure. Compliance Manager aiuta l'incaricato alla protezione dei dati e alla strategia della privacy dell'organizzazione a gestire la conformità e il processo di valutazione del rischio.
-ms.openlocfilehash: 6a06d69456ed1d42497f1d9f377252b079c6daba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 95816ca13818d068066c4e3c7fce371f1eeccc25
+ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084503"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417595"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Utilizzare Compliance Manager per soddisfare i requisiti normativi e garantire la protezione dei dati quando si utilizzano i servizi cloud Microsoft
 
@@ -87,40 +87,29 @@ Una valutazione è costituita da diversi componenti:
   
 ## <a name="permissions-and-role-based-access-control"></a>Autorizzazioni e controllo dell'accesso basato sui ruoli
 
-Per impostazione predefinita, tutti gli utenti dell'organizzazione con un account Office 365 o Azure Active Directory hanno accesso a Compliance Manager e vi possono eseguire qualsiasi operazione. Per passare dal modello delle autorizzazioni predefinite al controllo dell'accesso in base ai ruoli di Compliance Manager, è necessario aggiungere almeno un utente a ciascun ruolo di Compliance Manager (vedere di seguito). Una volta aggiunto un utente a un ruolo, le autorizzazioni per eseguire le operazioni assegnate a tale ruolo vengono rimosse dal set di autorizzazioni predefinito disponibile per tutti gli utenti e solo gli utenti cui è stato fornito tale ruolo potranno accedere a Compliance Manager ed eseguire le operazioni consentite per quel ruolo.
+Compliance Manager usa un modello di autorizzazione di controllo dell'accesso basato sui ruoli. Solo agli utenti a cui è stato assegnato il ruolo utente è consentito di accedere a Compliance Manager e le azioni consentite da ogni utente sono limitate in base al tipo di ruolo.
   
-Una volta implementato l'accesso in base ai ruoli, tutti gli utenti cui non è assegnato un ruolo definito in Compliance Manager avranno accesso come guest.
-  
-> [!NOTE]
-> Per implementare completamente il controllo dell'accesso basato sui ruoli per gestire chi può accedere ed eseguire operazioni in Compliance Manager, è necessario aggiungere un utente a ciascun ruolo, per modificare le impostazioni predefinite. Ad esempio, se si aggiunge un utente al ruolo che consente agli utenti di gestire le valutazioni, solo i membri di quel ruolo potranno gestire le valutazioni. Analogamente, se non si aggiunge un utente al ruolo che consente agli utenti di leggere i dati nelle valutazioni, allora tutti gli utenti dell'organizzazione potranno accedere a Compliance Manager e leggere i dati di qualsiasi valutazione. 
+Si noti che non esiste più un ruolo predefinito **Accesso guest**. A ogni utente deve essere assegnato un ruolo per poter accedere e lavorare in Compliance Manager.
   
 La tabella seguente descrive ogni autorizzazione per Compliance Manager e le operazioni che consente di svolgere all'utente. La tabella indica anche le autorizzazioni assegnate a ciascun ruolo.
   
 ||**Compliance Manager - Lettore**|**Compliance Manager - Collaboratore**|**Compliance Manager - Valutatore**|**Compliance Manager - Amministratore**|**Amministratore del portale**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|**Lettura dati**: gli utenti possono leggere i dati, ma non modificarli.  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Modifica dati**: gli utenti possono modificare tutti i campi, tranne i campi Risultato del test e Data del test.  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Modifica risultati del test**: gli utenti possono modificare i campi Risultato del test e Data del test.  <br/> |||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Gestione valutazioni**: gli utenti possono creare, archiviare ed eliminare le valutazioni.  <br/> ||||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Gestione utenti**: gli utenti possono aggiungere altri utenti dell'organizzazione per i ruoli di lettore, collaboratore, valutatore e amministratore. Solo gli utenti con ruolo di amministratore globale dell'organizzazione possono aggiungere o rimuovere utenti dal ruolo di amministratore del portale.  <br/> |||||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Lettura dati**: gli utenti possono leggere i dati, ma non modificarli.  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|
+|**Modifica dati**: gli utenti possono modificare tutti i campi, tranne i campi Risultato del test e Data del test.  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Modifica risultati del test**: gli utenti possono modificare i campi Risultato del test e Data del test.  <br/> ||<br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Gestione valutazioni**: gli utenti possono creare, archiviare ed eliminare le valutazioni.  <br/> |||<br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Gestione utenti**: gli utenti possono aggiungere altri utenti dell'organizzazione per i ruoli di lettore, collaboratore, valutatore e amministratore. Solo gli utenti con ruolo di amministratore globale dell'organizzazione possono aggiungere o rimuovere utenti dal ruolo di amministratore del portale.  <br/> ||||<br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
-### <a name="guest-access"></a>Accesso guest
-  
-Dopo aver configurato l'accesso a Compliance Manager, tutti gli utenti cui non è stato assegnato un ruolo, hanno il ruolo predefinito di **accesso guest** (lo stesso fornito agli account che non fanno parte dell'organizzazione come gli account Microsoft personali). Gli utenti con accesso guest non hanno accesso completo a tutte le funzionalità di Compliance Manager e non possono visualizzare i dati di valutazione della conformità dell'organizzazione. Tuttavia, sono in grado di usare il servizio per visualizzare i report di valutazione della conformità di Microsoft e i documenti di Service Trust. Per un vedere quali funzionalità sono accessibili e quali non lo sono, vedere le immagini seguenti in cui le funzionalità disponibili sono contrassegnate in blu e quelle non disponibili sono sottolineate in rosso. 
-  
-![Dashboard di Compliance Manager: accesso guest](media/7c9cb09d-ba13-4633-ad89-129a33e291f7.png)
-  
-![Compliance Manager: grafica dell'accesso guest](media/11dade9e-557d-4a7f-ac2a-a5a1c0eaea93.png)
-
 ## <a name="understanding-the-compliance-score"></a>Comprendere il punteggio di conformità
 
-Nell'angolo superiore destro del riquadro del dashboard di Compliance Manager è indicato un punteggio totale relativo alle valutazioni di Office 365. Si tratta del punteggio totale di conformità della valutazione costituito da ciascun punto ricevuto per la valutazione di ogni controllo contrassegnato come implementato e testato. Quando si aggiunge una valutazione, si potrà notare che il processo di completamento del punteggio di conformità è già stato avviato, poiché sono già stati applicati i punti dei controlli gestiti e implementati da Microsoft e testati da terze parti indipendenti.
+Nella dashboard, Compliance Manager visualizza un punteggio totale per la valutazione di Office 365 nell'angolo in alto a destra del riquadro. Si tratta del punteggio di conformità totale per la valutazione ed equivale alla somma dei punti ricevuti per la valutazione di ogni controllo contrassegnato come implementato e testato nella valutazione. Quando si aggiunge una valutazione, si vedrà che il Punteggio di conformità è già in fase di completamento, perché i punti per i controlli gestiti da Microsoft che sono stati implementati da Microsoft e testati da terzi indipendenti sono già stati applicati.
   
 ![Dashboard di Compliance Manager: punteggio di conformità totale](media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
   
 I punti rimanenti derivano dalla valutazione del controllo del cliente e dall'implementazione e dalla verifica dei controlli gestiti dal cliente, ciascuno con un valore specifico che contribuisce al punteggio complessivo di conformità. 
   
-Ciascuna valutazione indica un punteggio di conformità basato sul rischio che consente di valutare il livello di rischio (a causa di non conformità o controllo non riuscito) associato ad ogni controllo (sia controlli gestiti da Microsoft che dai clienti) di una valutazione. Ad ogni controllo gestito dai clienti è assegnato un numero di punti possibili (il livello di gravità) in base a una scala da 1 a 10, in cui più è alto il fattore di rischio se il controllo non viene superato, maggiore è il numero di punti associati, più il fattore di rischio è basso, minore sarà il punteggio. 
+Ogni valutazione mostra un punteggio di conformità basato sul rischio che agevola la valutazione del livello di rischio (per mancata conformità o insuccesso di un controllo) associato a ogni controllo (inclusi sia i controlli gestiti da Microsoft che i controlli gestiti dal cliente) in una valutazione. A ogni controllo gestito dal cliente viene assegnato un numero di punti (denominato *classificazione di gravità) su una scala da 1 a 10, in cui vengono assegnati più punti per i controlli associati a un fattore di rischio maggiore in caso di insuccesso del controllo e meno punti per i controlli a basso rischio. 
   
 Ad esempio, il controllo di valutazione per User Access Management mostrato in basso è classificato con un fattore di rischio molto alto, quindi il punteggio assegnato è 10.
   
@@ -132,7 +121,7 @@ Ad esempio, il controllo di valutazione per User Access Management mostrato in b
   
 Compliance Manager assegna un livello di gravità predefinito ad ogni controllo. La classificazione del rischio viene calcolata in base ai criteri seguenti:
   
-- Se un controllo previene gli incidenti avrà un livello più alto in classifica, se rileva gli incidenti verificatisi o ne corregge l'impatto, la classificazione sarà più bassa. In termini di classificazione della gravità, a un controllo obbligatorio che impedisce una minaccia viene assegnato il numero più alto di punti, mentre ai controlli che sono investigativi o correttivi (indipendentemente dal fatto che siano obbligatori o a discrezione dell'utente) viene assegnato un numero più basso di punti.
+- Se un controllo impedisce il verificarsi di eventi imprevisti (classificazione più alta), rileva gli eventi imprevisti accaduti o corregge l'impatto di un evento imprevisto (classificazione più bassa). In termini di classificazione di gravità, a un controllo obbligatorio che impedisce una minaccia viene assegnato il numero massimo di punti, mentre ai controlli rilevatori o correttivi (indipendentemente dal fatto che siano obbligatori o discrezionali) viene assegnato il numero minimo di punti.
     
 - Se un controllo (dopo che è stato implementato) è obbligatorio e quindi non può essere bypassato dagli utenti (ad esempio, gli utenti devono reimpostare la propria password e soddisfare i requisiti di lunghezza e caratteri della password) o a discrezione dell'utente e può essere bypassato dagli utenti (ad esempio, in caso di regole aziendali che richiedono agli utenti di bloccare i propri schermi quando si allontanano dalla propria postazione).
     
@@ -142,13 +131,13 @@ Compliance Manager assegna un livello di gravità predefinito ad ogni controllo.
     
 I valori del punteggio di conformità indicati per il controllo vengono applicati *completamente* al punteggio di conformità totale in base al risultato - il controllo è implementato e supera il test di valutazione successivo o meno; non vi è alcun credito parziale per un'implementazione parziale. Solo quando il controllo ha lo **stato di implementazione** impostato su **Implementato** o **Implementazione alternativa** e il **risultato del test** è impostato su **Superato** vengono aggiunti punti al punteggio di conformità totale. 
   
-La cosa più importante è che il punteggio di conformità può aiutare a stabilire le priorità su quali controlli concentrarsi per l'implementazione, indicando quali controlli hanno un rischio potenziale più elevato di fallimento relativo a un controllo. Oltre alla definizione delle priorità basata sul rischio, vale la pena notare che quando i controlli di valutazione sono correlati ad altri controlli (all'interno della stessa valutazione o in un'altra valutazione che si trova nello stesso gruppo di valutazioni) il completamento di un singolo controllo può comportare una riduzione significativa in base alla sincronizzazione dei risultati dei test di controllo.
+E soprattutto, il punteggio di conformità consente di stabilire priorità in merito ai controlli su cui concentrarsi per l'implementazione indicando quali controlli hanno un rischio potenziale più alto in caso di insuccesso. Oltre alla definizione delle priorità basata sui rischi, quando i controlli della valutazione sono correlati ad altri controlli (all'interno della stessa valutazione o in un'altra valutazione nello stesso gruppo), il corretto completamento di un singolo controllo può snellire significativamente la procedura grazie alla sincronizzazione dei risultati dei test di controllo.
   
 Nell'immagine seguente, ad esempio, si può notare che Office 365 - valutazione GDPR è valutato al 46% con 51 valutazioni di controllo su 111 completate, per un punteggio di conformità totale di 289 su 600 possibili.
   
 ![Compliance Manager - Riepilogo delle valutazioni](media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
   
-All'interno della valutazione il controllo GDPR 7.5.5 è correlato a 5 altri controlli (7.4.1, 7.4.3, 7.4.4, 7.4.8 e 7.4.9) ciascuno con un punteggio di valutazione del rischio di gravità da moderato ad alto di 6 o 8. Utilizzando il filtro di valutazione, abbiamo selezionato tutti questi controlli, rendendoli visibili nella vista di valutazione, e come mostrato di seguito, nessuno di essi è stato valutato. 
+Nella valutazione, il controllo GDPR 7.5.5 è correlato a 5 altri controlli (7.4.1, 7.4.3, 7.4.4, 7.4.8,.7.4.9), ognuno con un punteggio di 6 o 8 per la classificazione di gravità del rischio da moderata a molto elevata. Usando il filtro delle valutazioni sono stati selezionati e resi visibili tutti questi controlli nella visualizzazione di valutazione e, come si può vedere di seguito, nessuno di essi è stato valutato. 
   
 ![Compliance Manager - Vista di valutazione - Controlli filtro, nessuno valutato](media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Poiché questi 6 controlli sono correlati, il completamento di ognuno di essi comporterà una sincronizzazione dei risultati di questi test attraverso i relativi controlli all'interno di questa valutazione (proprio come per qualsiasi controllo correlato in una valutazione che si trova nello stesso gruppo di valutazione). Al completamento dell'implementazione e della verifica del controllo GDPR 7.5.5, l'area dei dettagli di controllo si aggiorna per mostrare che tutti e 6 i controlli sono stati valutati, con un corrispondente aumento del numero di controlli valutati a 57 e 51% e un cambiamento nel punteggio di conformità totale superiore a 40. 
   
@@ -170,7 +159,7 @@ Il punteggio di conformità, come Microsoft Secure Score, è simile ad altri sis
   
 Le valutazioni in Compliance Manager si basano sul modello di responsabilità condivisa per il cloud computing. Nel modello di responsabilità condivisa, Microsoft e ciascun cliente condividono la responsabilità per la protezione dei dati del cliente quando tali dati sono archiviati nel cloud.
   
-Come mostrato di seguito nella valutazione GDPR di Office 365, Microsoft e i clienti sono responsabili di eseguire una serie di azioni ideate per soddisfare i requisiti dello standard o del regolamento da valutare. Per razionalizzare e comprendere le azioni richieste in una varietà di standard e normative, Compliance Manager tratta tutti gli standard e le normative come se fossero quadri di controllo. Pertanto, le azioni eseguite da Microsoft e dai clienti per ciascuna valutazione implicano l'implementazione e la convalida di vari controlli.
+Come illustrato nella valutazione GDPR di Office 365 seguente, Microsoft e i clienti sono responsabili dell'esecuzione di una serie di azioni ideate per soddisfare i requisiti dello standard o della normativa in fase di valutazione. Per razionalizzare e comprendere le esigenze. Le azioni in un'ampia gamma di standard e normative, Compliance Manager considera tutte le normative e gli standard come se fossero framework di controllo. Quindi, le azioni eseguite da Microsoft e dai clienti per ogni valutazione includono l'implementazione e la convalida di vari controlli.
   
 ![Compliance Manager: valutazione GDPR](media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
   
