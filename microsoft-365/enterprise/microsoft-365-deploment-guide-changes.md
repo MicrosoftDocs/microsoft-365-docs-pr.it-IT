@@ -3,7 +3,7 @@ title: Modifiche al contenuto sulla distribuzione di Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/09/2019
+ms.date: 10/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,16 +13,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contenuto nuovo e modificato nella Guida alla distribuzione di Microsoft 365.
-ms.openlocfilehash: 3ec4c3fd15e0c04a319f2fa78b5298d00835bd0d
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 67d0f51dd1f2602a21d199da1ed7ca6ba6e41c09
+ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437876"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37453992"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Modifiche al contenuto sulla distribuzione di Microsoft 365 Enterprise
 
 ## <a name="october-2019"></a>Ottobre 2019
+
+### <a name="new-content"></a>Nuovo contenuto 
+
+- [Poster Supportare i lavoratori remoti](empower-people-to-work-remotely.md#poster)
+
+  [![Poster Supportare i lavoratori remoti](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
+ 
 
 ### <a name="updates-and-enhancements"></a>Aggiornamenti e miglioramenti
 
