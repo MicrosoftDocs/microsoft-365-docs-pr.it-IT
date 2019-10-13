@@ -14,16 +14,16 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 9751d1e224d2fb4b879a5dbc37cb368af2152987
-ms.sourcegitcommit: 81273a9df49647286235b187fa2213c5ec7e8b62
+ms.openlocfilehash: 1fae59706a77663090d4f29cc6a34b339c11e92c
+ms.sourcegitcommit: 6ef9a98e3d9de44ee4f01870f9189fa676572419
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291376"
+ms.lasthandoff: 10/13/2019
+ms.locfileid: "37481304"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
-In questa serie di articoli viene descritto come configurare l'accesso sicuro ai servizi cloud tramite prodotti Enterprise Mobility + Security mediante l'implementazione di un ambiente e di una configurazione consigliati, tra cui un set prescritto di criteri di accesso condizionale e funzionalità correlate. È possibile utilizzare queste linee guida per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory, inclusi i servizi di Office 365, altri servizi SaaS e le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
+In questa serie di articoli viene descritto come configurare l'accesso sicuro ai servizi cloud tramite prodotti Enterprise Mobility + Security (EMS) mediante l'implementazione di un ambiente e di una configurazione consigliati, tra cui un set prescritto di criteri di accesso condizionale e funzionalità correlate. EMS è un componente di base di Microsoft 365. È possibile utilizzare queste linee guida per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory, inclusi i servizi di Office 365, altri servizi SaaS e le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
 
 Questi suggerimenti sono allineati con Microsoft Secure Score così come il [Punteggio di identità in Azure ad](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/identity-secure-score)e aumentano questi punteggi per l'organizzazione. Questi suggerimenti consentiranno inoltre di implementare questi [cinque passaggi per garantire l'infrastruttura di identità](https://docs.microsoft.com/en-us/azure/security/azure-ad-secure-steps). 
 
@@ -130,7 +130,7 @@ Windows 10 e Office 365 ProPlus è l'ambiente client consigliato per i computer.
 
 Nella tabella seguente vengono riepilogati i suggerimenti per l'utilizzo di queste funzionalità tra i tre livelli di protezione.
 
-|Meccanismo di protezione|Versione di base|Dati sensibili|Protezione per ambienti altamente regolamentati|
+|Meccanismo di protezione|Protezione di base|Dati sensibili|Riservatezza elevata|
 |:-------------------|:-------|:--------|:---------------|
 |**Applicare l'autenticazione a più fattori**|A partire da rischio di accesso medio|A partire da rischio di accesso basso|Per tutte le nuove sessioni|
 |**Applicare la modifica della password**|Per gli utenti con rischio elevato|Per gli utenti con rischio elevato|Per gli utenti con rischio elevato|
@@ -145,4 +145,4 @@ La tabella di cui sopra riflette la tendenza di molte organizzazioni a supportar
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Lavoro preRequisito per l'implementazione dei criteri di identità e accesso ai dispositivi](identity-access-prerequisites.md)
+[Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi](identity-access-prerequisites.md)
