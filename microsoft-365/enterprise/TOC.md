@@ -83,7 +83,7 @@
 ### [Protezione delle informazioni](contoso-info-protect.md)
 ### [Riepilogo sicurezza](contoso-security-summary.md)
 ### [Sito di SharePoint per dati altamente regolamentati](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
-
+## [Modifiche al contenuto sulla distribuzione di Microsoft 365 Enterprise](microsoft-365-deploment-guide-changes.md)
 # [Centro di distribuzione desktop](desktop-deployment-center-home.md)
 ## [Guida introduttiva: indicazioni su utenti, processi e tecnologia](getting-started.md)
 ## [Passaggio 1: conformità di dispositivi e app](step-1-device-and-app-readiness.md)

@@ -19,6 +19,13 @@
 
 ### [Gestire i ticket tramite ServiceNow](./mtp/tickets.md)
 
+
+## [Configurazioni di identità e accesso dei dispositivi](../enterprise/microsoft-365-policies-configurations.md)
+### [Lavoro prerequisito](../enterprise/identity-access-prerequisites.md)
+### [Criteri comuni di identità e accesso dei dispositivi](../enterprise/identity-access-policies.md)
+### [Criteri di accesso di Exchange Online consigliati](../enterprise/secure-email-recommended-policies.md)
+### [Criteri di accesso di SharePoint Online consigliati](../enterprise/sharepoint-file-access-policies.md)
+
 ## [Sicurezza di Office 365]()
 ### [Introduzione]()
 #### [Roadmap della sicurezza per Office 365](./office-365-security/security-roadmap.md)
@@ -43,7 +50,6 @@
 ##### [Domande frequenti sulla protezione antimalware](./office-365-security/anti-malware-protection-faq-eop.md)
 ##### [Protezione antispam e antimalware in Office 365](./office-365-security/anti-malware-protection.md)
 ##### [Domande frequenti sulla protezione da posta indesiderata](./office-365-security/anti-spam-protection-faq.md)
-##### [Controllare la posta indesiderata in uscita in Office 365](./office-365-security/controlling-outbound-spam-in-Office-365.md)
 ##### [Evitare caratteri non validi nelle regole di filtro della posta indesiderata e nel criterio del filtro della posta indesiderata](./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md)
 ##### [Elenchi di mittenti attendibili e bloccati in Exchange Online](./office-365-security/safe-sender-and-blocked-sender-lists-faq.md)
 ##### [Suggerimenti per la sicurezza nei messaggi di posta elettronica in Office 365](./office-365-security/safety-tips-in-office-365.md)
@@ -55,7 +61,7 @@
 ##### [Protezione dalla posta indesiderata in Office 365](./office-365-security/anti-spam-protection.md)
 ##### [Come vengono combinati i criteri e le protezioni](./office-365-security/how-policies-and-protections-are-combined.md)
 ##### [Come ridurre la posta indesiderata in Office 365](./office-365-security/reduce-spam-email.md)
-##### [Controllo della posta indesiderata in uscita in Office 365](./office-365-security/outbound-spam-controls.md)
+##### [Controllare la posta indesiderata in uscita in Office 365](./office-365-security/outbound-spam-controls.md)
 ##### [Bloccare la posta indesiderata utilizzando l'apposito filtro di Office 365 per evitare problemi di falsi negativi](./office-365-security/reduce-spam-email.md)
 ##### [Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware](./office-365-security/zero-hour-auto-purge.md)
 ##### [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
@@ -253,4 +259,8 @@
 
 ### [Office 365 Enterprise](https://docs.microsoft.com/office-365-security/Enterprise)
 ### [Office 365 per le aziende](https://docs.microsoft.com/office-365-security/admin/admin-home)
+
+
+
+
 ## [Conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)
