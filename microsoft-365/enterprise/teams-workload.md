@@ -2,7 +2,7 @@
 title: Distribuire Microsoft Teams per Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/28/2019
+ms.date: 10/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,163 +11,200 @@ ms.collection:
 - M365-collaboration
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Procedura di pianificazione, implementazione e aumento del valore di Microsoft Teams in Microsoft 365 Enterprise nell'organizzazione.
-ms.openlocfilehash: fd2e72ddb0dfbcc437d30dee16241fbccc81b05b
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+description: Informazioni dettagliate su come implementare Microsoft Teams nell'intera organizzazione.
+ms.openlocfilehash: 2e34c4fcada0f80c597faf89b221321ffa9183ba
+ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982617"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37503392"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Distribuire Microsoft Teams per Microsoft 365 Enterprise
 
 *Questo carico di lavoro è incluso sia nelle versioni E3 che E5 di Microsoft 365 Enterprise*
 
-Microsoft Teams raggruppa chat, conferenze, condivisione di documenti e thread in un modo che semplifica la creazione e la condivisione di contenuti nei gruppi. Teams consente di eseguire il lavoro in team e la collaborazione per Microsoft 365 Enterprise ed è un elemento essenziale per consentire il lavoro di squadra con Microsoft 365. Se non si conosce Teams, vedere [Panoramica di Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview).
+Microsoft Teams raggruppa chat, conferenze, condivisione di documenti e thread in un modo che semplifica la creazione e la condivisione di contenuti nei gruppi. Teams consente di eseguire il lavoro in team e la collaborazione per Microsoft 365 Enterprise ed è un elemento essenziale per consentire il lavoro di squadra con Microsoft 365. 
+
+Se non si conosce Teams, vedere [Benvenuti in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview). 
+
+
+## <a name="roll-out-teams-to-your-organization"></a>Distribuire Teams nell'organizzazione
+
+Informazioni preliminari:
+
+- Assicurarsi di aver configurato le fasi corrette dell’[infrastruttura di base](deploy-foundation-infrastructure.md) cosicché i team abbiano gli account utente e le funzionalità di sicurezza necessari. Le fasi di protezione delle informazioni e dell’identità sono le più importanti per l'accesso e l'uso della protezione della posta elettronica e dei file con etichette di conservazione e riservatezza.
+- Informazioni sulla sicurezza e sulla conformità in Teams in [questo articolo](https://docs.microsoft.com/microsoftteams/security-compliance-overview).
+- Informazioni sulle licenze di Office 365 per Teams in [questo articolo](https://docs.microsoft.com/microsoftteams/office-365-licensing).
+
+Per distribuire Teams nell'organizzazione, leggere [Come distribuire Teams](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams).
+
+Per il primo set di funzionalità di Teams, vedere [Chat, team, canali e app in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/deploy-chat-teams-channels-microsoft-teams-landing-page).
+
+Per funzionalità più avanzate di Teams, vedere:
+
+- [Riunioni e conferenze](https://docs.microsoft.com/microsoftteams/deploy-meetings-microsoft-teams-landing-page)
+- [Cloud Voice](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (richiede Microsoft 365 Enterprise E5)
+
+Per monitorare l'utilizzo di Teams nella propria organizzazione, vedere:
+
+- [Analisi tra team e per team in Teams](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/cross-team-per-team-analytics)
+- [Analisi e reporting](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)
+
+
+## <a name="upgrade-to-teams"></a>Eseguire l'aggiornamento a Teams
+
+Se non è già stato eseguito, sarà presto possibile eseguire l'aggiornamento da Skype for Business a Microsoft Teams. Sia che si abbia appena iniziato a lavorare con Teams, sia che lo si usi già insieme a Skype for Business o si sia pronti per l'aggiornamento, forniremo tutto il necessario per passare a Teams con successo.
+
+Sia per l'aggiornamento da Skype for Business Online a Teams sia per quello da un ambiente locale di Skype for Business a Teams, il framework di aggiornamento guiderà il processo in base allo scenario aziendale.
  
-Se si usa Skype for Business, stiamo integrando funzionalità di Skype for Business in Teams. Questa operazione verrà eseguita nel corso del tempo e alla fine Teams diventerà un'esperienza client unica. Microsoft è qui per aiutare i clienti importanti di Skype for Business. Vedere [Journey from Skype for Business to Microsoft Teams](https://docs.microsoft.com/microsoftteams/journey-skypeforbusiness-teams) (Passaggio da Skype for Business a Microsoft Teams) per ulteriori informazioni.
-
-Le seguenti fasi e i seguenti passaggi illustrano il processo di definizione del ruolo di Teams nell'organizzazione, di adozione di Teams da parte dell'organizzazione attraverso una serie di implementazioni progressive e l'uso di Teams e della sua importanza per gli utenti finali. 
-
-Prima di iniziare, assicurarsi di aver configurato le fasi corrette dell’[infrastruttura di base](deploy-foundation-infrastructure.md) cosicché i team abbiano le funzionalità di sicurezza necessarie.
-
-## <a name="phase-1-envision"></a>Fase 1: concezione
-
-In questa fase, si raggruppano le persone per l'implementazione di Teams e si determina il modo in cui l'organizzazione utilizzerà Teams per soddisfare le proprie esigenze aziendali.
-
-### <a name="step-1-gather-your-teams-deployment-members"></a>Passaggio 1: raccogliere i membri per l'implementazione di Teams
-Per una distribuzione corretta di Teams in nell'[infrastruttura di base](deploy-foundation-infrastructure.md) di Microsoft 365, è necessario raccogliere le persone corrette per input e commenti e suggerimenti. Le persone chiave includono decision maker dell'azienda, personale IT come architetti e responsabili dell'implementazione e rappresentanti degli utenti finali. 
-
-Questi tre gruppi assicurano che la distribuzione di Teams includa analisi che soddisfino le esigenze aziendali, aspetti tecnici su licenze e sicurezza e che Teams sia uno strumento di facile utilizzo per l'utente tipico.
-
-#### <a name="result"></a>Risultato
-
-Un elenco di persone che rappresentano gli aspetti aziendali, tecnici e relativi agli utenti finali dell'organizzazione.
-
-### <a name="step-2-determine-and-prioritize-your-teams-business-scenarios"></a>Passaggio 2: determinare e assegnare priorità agli scenari aziendali di Teams
-Teams può essere usato per diversi scopi. È necessario capire gli scopi delle esigenze aziendali sui livelli separati dell'organizzazione, i gruppi aziendali, i reparti e i team che lavorano singolarmente o in progetto. Per esempi che aiutino a definire gli scenari di Teams, vedere [Raccolta di produttività di Microsoft 365](https://www.microsoft.com/microsoft-365/success/?rtc=1). 
-
-Teams deve saper soddisfare team altamente collaborativi e velocissimi che lavorano a stretto contatto e richiedono molti più servizi che la sola posta elettronica che Exchange Online è in grado di fornire. Per fare un esempio, live chat di gruppo con una cronologia registrata e un percorso comune e facile da trovare dove archiviare file e appunti. 
-
-Un modo per vedere i vantaggi di Teams è quello di esaminare il modo in cui un team o un team virtuale interagisce oggi e poi trovare uno scenario di Teams appropriato che sostituisca l'interazione e offra modi più semplici di collaborazione con maggiori funzionalità.
-
-#### <a name="microsoft-teams-for-highly-regulated-data"></a>Microsoft Teams per dati altamente regolamentati
-
-I dati altamente regolamentati sono soggetti a normative internazionali oppure sono i dati più importanti per l'organizzazione, ad esempio segreti commerciali, informazioni sulle risorse finanziare o umane e strategia dell'organizzazione. È possibile configurare un team per l'accesso con restrizioni, la classificazione dei dati, la prevenzione della perdita dei dati e la crittografia per questo tipo di dati. Per informazioni dettagliate, vedere [Siti di Microsoft Teams e di SharePoint Online per i dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md).
-
-#### <a name="result"></a>Risultato
-
-Elenco di scenari di Teams che rispondono alle esigenze della propria organizzazione per la collaborazione e il lavoro in team.
-
-## <a name="phase-2-onboard"></a>Fase 2: onboarding
-
-In questa fase, si pianificano gli aspetti tecnici di una distribuzione di Teams e si inizia l'implementazione per i gruppi di utenti selezionati.
-
-### <a name="prerequisites-identity-and-device-access-configuration"></a>Prerequisiti: configurazione di identità e accesso dei dispositivi
-
-Per proteggere l'accesso ai team, assicurarsi di aver configurato i [criteri di identità e accesso dei dispositivi](identity-access-policies.md) e i [criteri di accesso a SharePoint Online consigliati](sharepoint-file-access-policies.md).
-
-### <a name="step-1-complete-your-technical-planning"></a>Passaggio 1: completare la pianificazione tecnica
-
-Prima di iniziare la pianificazione tecnica, determinare se si desidera utilizzare FastTrack. Se l'organizzazione ha più di 50 postazioni e partecipa a un [piano idoneo](https://technet.microsoft.com/library/dn783224.aspx), è possibile usare [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365), disponibile senza costi aggiuntivi come guida per la pianificazione, distribuzione e l'adozione del servizio. In alternativa, è possibile completare questa operazione utilizzando le procedure guidate di FastTrack Onboarding, disponibili in [FastTrack](https://fasttrack.microsoft.com/) se si accede con il proprio account di Office 365.
-
-Se si esegue la pianificazione autonomamente (o in combinazione con FastTrack), è necessario determinare se la rete e l'organizzazione sono pronte per Teams. È particolarmente importante che siano soddisfatti i criteri di uscita di rete nell'[infrastruttura di base](deploy-foundation-infrastructure.md), con una particolare attenzione alla larghezza di banda, alla velocità effettiva e ai ritardi dovuti al traffico per ottimizzare le prestazioni per le riunioni basate su Teams.
-
-Usare queste risorse per preparare gli aspetti tecnici dell'organizzazione per un'implementazione di Teams: 
-
-- [Valutazione della conformità dell'ambiente per Teams](https://docs.microsoft.com/MicrosoftTeams/environment-readiness)
-- [ Preparare la rete per Teams](https://docs.microsoft.com/MicrosoftTeams/prepare-network)
-- [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-urls-ip-address-ranges)
-
-Per ulteriori informazioni sulla sicurezza in Teams, rivedere le risorse aggiuntive seguenti:
-
-- [Panoramica sulla sicurezza e conformità in Teams](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview)
-- [Gruppi di Office 365 e Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-- [Accesso guest in Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-
-Usare queste risorse per comprendere la gestione delle licenze di Teams ed eseguire la configurazione di Teams per l'organizzazione:
-
-- [Gestione delle licenze di Office 365 per Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-licensing)
-- [Gestione degli accessi utente per Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/user-access)
-- [Ottenere client per Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/get-clients)
-- [Attivare Microsoft Teams nell'organizzazione di Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
-- [Gestire le funzionalità di Microsoft Teams nell'organizzazione di Office 365](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
-
-#### <a name="result"></a>Risultato
-
-La pianificazione di rete, sicurezza e delle licenze di Office 365 viene effettuata e si è pronti a iniziare a distribuire Teams nei gruppi selezionati nell'organizzazione.
-
-### <a name="step-2-run-an-it-pilot"></a>Passaggio 2: eseguire un'implementazione pilota
-
-Nella maggior parte delle organizzazioni di medie e grandi dimensioni, è necessario eseguire un'implementazione pilota con le parti interessate dalla fase 1 e appassionati di informatica. Durante la fase pilota:
-
-- Scegliere uno scenario aziendale di Teams in cui i partecipanti alla fase IT possono fare pratica. Vedere il [kit introduttivo su Microsoft Teams](http://microsoft.com/download/56505) per alcuni suggerimenti.
-- Assegnare a tutti i partecipanti della fase pilota una serie di esercitazioni per testare le chat, l'archiviazione dei file, le riunioni e altre funzionalità basate su Teams.
-- Determinare la strategia di gestione delle modifiche e produrre materiali per guidare l'adozione da parte degli utenti a livello di organizzazione. I materiali sulla gestione delle modifiche possono includere testo per gli annunci tramite posta elettronica, piani di formazione interni, poster hallway e presentazioni. Questi materiali forniscono informazioni su Teams e sui suoi vantaggi all'organizzazione con l'obiettivo di aumentare la consapevolezza e l'utilizzo. Vedere [Strategia di gestione delle modifiche di Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) per alcuni suggerimenti.
-- I partecipanti della fase pilota devono analizzare i materiali sulla strategia di gestione delle modifiche in base alle proprie esperienza. I materiali possono fornire suggerimenti su best practice e su come meglio descrivere i vantaggi di Teams e su come usarli per la collaborazione e il lavoro in team.
-
-#### <a name="result"></a>Risultato
-
-La fase pilota di Teams è completa e i materiali sulla gestione delle modifiche iniziali sono stati sviluppati, rivisti e perfezionati.
-
-### <a name="step-3-roll-out-to-a-business-group"></a>Passaggio 3: implementazione in un gruppo aziendale
-
-Dopo aver completato la fase pilota, implementare Teams in un gruppo aziendale o reparto dell'organizzazione. L'implementazione deve includere:
-
-- Identificazione degli scenari aziendali chiave di Teams all'interno del gruppo aziendale.
-- Attività di annuncio per informare gli utenti di aspettative e sequenze temporali relativa all'utilizzo di Teams per team di reparto, lavoro o progetto.
-- Indirizzare gli utenti alla formazione su Teams o alle risorse per introdurre Teams e che spiegano come usarlo.
-- Un meccanismo di commenti e suggerimenti, ad esempio un team centrale che contiene ogni gruppo aziendali, per raccogliere commenti e problemi degli utenti del gruppo aziendale.
-
-Durante l'implementazione, è possibile perfezionare i materiali di gestione delle modifiche in preparazione dell'implementazione a livello dell'organizzazione.
-
-#### <a name="result"></a>Risultato
-
-Un gruppo aziendale è pronto e ha iniziato a usare Teams e i materiali sulla gestione delle modifiche sono stati testati e perfezionati.
-
-## <a name="phase-3-drive-value"></a>Fase 3: aumentare il valore
-
-In questa fase, è stata completata l'implementazione di Teams nell'organizzazione e si offre supporto ai Teams affinché possano capirne i vantaggi.
-
-### <a name="step-1-roll-out-teams-to-the-rest-of-your-organization"></a>Passaggio 1: implementazione di Teams nel resto dell'organizzazione
-
-Dopo aver completato l'implementazione in un gruppo aziendale specifico, implementare Teams nel resto dell'organizzazione. L'implementazione deve includere:
-
-- Identificazione degli scenari aziendali chiave di Teams all'interno di gruppi aziendali separati.
-- Uso dei materiali di gestione delle modifiche perfezionati per attività di annuncio per informare l'organizzazione su aspettative e tempistiche relative all'uso di Teams per team di reparto, lavoro o progetto.
-- Indirizzare gli utenti alla formazione su Teams o alle risorse per introdurre Teams e che spiegano come usarlo. Vedere le risorse di formazione in [Formazione dell'utente finale su Microsoft Teams](https://docs.microsoft.com/microsoftteams/enduser-training).
-- Un meccanismo di commenti e suggerimenti come, ad esempio, un team centrale che contiene tutti gli altri, per raccogliere commenti e gestire i problemi degli utenti dell'organizzazione. Se l'organizzazione ha meno di 2500 utenti, è possibile usare un canale pubblico in Teams. In caso contrario, è possibile usare un gruppo pubblico in Yammer.
-
-#### <a name="result"></a>Risultato
-
-L'organizzazione è pronta e la strategia di gestione delle modifiche è in essere per informare, formare e consentire agli utenti di iniziare a utilizzare Teams.
-
-### <a name="step-2-measure-usage-manage-satisfaction-and-drive-adoption"></a>Passaggio 2: misurare l'utilizzo, gestire la soddisfazione e favorire l'adozione
-
-Dopo aver distribuito Teams all'intera organizzazione, è necessario continuare a utilizzare la strategia di gestione delle modifiche affinché:
-
-- I dirigenti promuovano Teams come strumento di lavoro in team e collaborazione nell'organizzazione.
-- Incoraggino i singoli utenti a usarlo per le comunicazione e la collaborazione tra gruppi aziendali, di reparto, di lavoro e di progetto.
-
-Ecco alcune attività suggerite:
-
-- Vedere [Linee guida sull'adozione di Office 365](https://aka.ms/successfactors) per informazioni sulle procedure consigliate generali relative all'adozione di servizi cloud. 
-- Vedere i [report attività di Office 365](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263) per comprendere l'utilizzo del servizio di Office 365 nell'organizzazione. Se non si è un amministratore globale di Office 365 per l'organizzazione, chiedere a qualcun altro le autorizzazioni Lettore report per poter accedere ai report attività.
-- Monitorare il luogo in cui vengono pubblicati i commenti e suggerimenti (un canale pubblico in un team centrale o Yammer) per i problemi e i commenti e suggerimenti degli utenti sulle loro esperienze con Teams. Risolvere problemi e rispondere alle domande il più velocemente possibile per impedire disagi e abbandono di Teams da parte degli utenti.
-- Identificare e rafforzare i sostenitori in ogni gruppo aziendale ed evidenziarne gli obiettivi e le best practice relative all'uso di Teams. Riflettere i loro successi nell'organizzazione per mostrare i successi di progetto e l'adozione. L'endorsement da parte di figure leader tecniche in un gruppo aziendale può avere un'influenza potente su responsabili e colleghi.
-
-#### <a name="result"></a>Risultato
-
-L'organizzazione ha adottato Teams come strumento di collaborazione e lavoro in team.
+Per altre informazioni, vedere la [Guida introduttiva per l'aggiornamento a Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here).
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
-Per scoprire come Microsoft ha distribuito e utilizza Microsoft Teams per la collaborazione, vedere:
+Per scoprire come Microsoft ha distribuito e utilizza Teams per la collaborazione, vedere:
 
-- [La distribuzione di Microsoft Teams semplifica la collaborazione e migliora il lavoro in team](https://www.microsoft.com/itshowcase/Article/Content/1013/Deploying-Microsoft-Teams-streamlines-collaboration-and-improves-teamwork)
-- [Microsoft Teams aumenta la collaborazione nella moderna rete aziendale di Microsoft](https://www.microsoft.com/itshowcase/Article/Content/1012/Microsoft-Teams-increases-collaboration-in-the-modern-workplace-at-Microsoft)
+- [La strategia di adozione di Microsoft Teams per preparare i dipendenti a una nuova cultura del lavoro](https://www.microsoft.com/it-IT/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
+- [Microsoft Teams Rooms offre un’esperienza di riunione moderna e a livello globale](https://www.microsoft.com/it-IT/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Gestire le funzionalità di Microsoft Teams nell'organizzazione di Office 365](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
+- [Gestire le funzionalità di Microsoft Teams per l'organizzazione](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 - [Formazione degli amministratori per Microsoft Teams](https://docs.microsoft.com/microsoftteams/itadmin-readiness)
+
+<!--
+
+## Phase 1: Envision
+
+In this phase, you gather the people for your Teams deployment and determine how your organization will use Teams to address its business needs.
+
+### Step 1: Gather your Teams deployment members
+
+For a successful deployment of Teams on top of the Microsoft 365 [foundation infrastructure](deploy-foundation-infrastructure.md), you need to get the right people for input and feedback. Key people include business decision makers, IT staff such as architects and implementers, and advocates for your end users. 
+
+These three groups ensure that your Teams deployment includes considerations that address business needs, technical aspects of licensing and security, and that Teams is something that your typical users will use.
+
+#### Result
+
+A list of people that represent the business, technical, and end user perspectives of your organization.
+
+### Step 2: Determine and prioritize your Teams business scenarios
+Teams can be used for many different purposes. You need to figure out which purposes map to your business needs on the separate levels of your organization, your business groups, your departments, and individual working and project teams. Take a look at the [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/?rtc=1) for examples to help you define Teams scenarios. 
+
+You should target Teams to address fast-moving and highly collaborative teams that work closely together and require many more facilities than just email with Exchange Online can provide. Examples are live group chats with a recorded history and a common and easy-to-find place to store files and notes. 
+
+One way to see the benefits of Teams is to examine how a team or v-team interacts today, and then find an appropriate Teams scenario that replaces the interaction and provides easier ways to collaborate and provide additional capabilities.
+
+#### Microsoft Teams for highly regulated data
+
+Highly regulated data is subject to regional regulations or is the most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy. You can configure a team for restricted access, data classification, data loss prevention, and encryption for this type of data. For the details, see [Microsoft Teams and SharePoint Online sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md).
+
+#### Result
+
+A list of Teams scenarios that address your organization’s needs for collaboration and teamwork.
+
+## Phase 2: Onboard
+
+In this phase, you plan for the technical aspects of a Teams deployment and start rolling out Teams to selected groups of users.
+
+### Prerequisites: Identity and device access configuration
+
+To protect access to teams, ensure that you have configured [identity and device access policies](identity-access-policies.md) and the [recommended SharePoint Online access policies](sharepoint-file-access-policies.md).
+
+### Step 1: Complete your technical planning
+
+Before you begin technical planning, determine whether you want to use FastTrack. If your organization has over 50 seats and is participating in an [eligible plan](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365, you can use [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365), *available at no additional cost* to guide you through planning, deployment and service adoption. Or, you can complete this work yourself using our FastTrack Onboarding Wizards, which are available from [FastTrack](https://fasttrack.microsoft.com/) once you sign in with your Microsoft 365 account.
+
+If you are doing your own planning (or in conjunction with FastTrack), you need to determine if your network and organization are ready for Teams. It is especially important that you meet the exit criteria for [networking](networking-infrastructure.md) in your foundation infrastructure for users connected to your organization network. Pay special attention to bandwidth, throughput, and traffic delays to maximize performance for Teams-based meetings.
+
+Use these resources to prepare the technical aspects of your organization for a Teams rollout: 
+
+- [Check your environment's readiness for Teams](https://docs.microsoft.com/MicrosoftTeams/environment-readiness)
+- [Prepare your network for Teams](https://docs.microsoft.com/MicrosoftTeams/prepare-network)
+- [Office 365 URLs and IP address ranges](https://docs.microsoft.com/MicrosoftTeams/office-365-urls-ip-address-ranges)
+
+For a better understanding of security in Teams, review the following additional resources:
+
+- [Overview of security and compliance in Teams](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview)
+- [Office 365 groups and Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- [Guest access in Teams](https://docs.microsoft.com/microsoftteams/guest-access)
+
+Next, use these resources to understand Teams licensing and to perform the setup of Teams for your organization:
+
+- [Office 365 licensing for Teams](https://docs.microsoft.com/MicrosoftTeams/office-365-licensing)
+- [Manage user access to Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/user-access)
+- [Get clients for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/get-clients)
+- [Turn on Microsoft Teams in your organization](https://docs.microsoft.com/MicrosoftTeams/office-365-set-up)
+- [Manage Microsoft Teams features for your organization](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)
+
+#### Result
+
+Your network, security, and Microsoft 365 licensing planning are done and you are ready to begin rolling out Teams to selected groups in your organization.
+
+### Step 2: Run an IT pilot
+
+In most medium-sized and large organizations, you should run an IT pilot with your stakeholders from Phase 1, early adopters, and technical enthusiasts. During the IT pilot:
+
+- Choose a Teams business scenario in which your IT pilot participants can practice. See the [Microsoft Teams getting started kit](http://microsoft.com/download/56505) for ideas.
+- Give your pilot participants a set of exercises to test Teams-based chats, meetings, file storage, meetings, and other capabilities.
+- Determine your change management strategy and produce materials to drive organization-wide user adoption. 
+
+  Change management materials can include email announcement text, internal training plans, hallway posters, and presentations. These materials will inform your organization about Teams and its benefits with the goals of raising awareness and driving usage. See [change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) for some ideas.
+
+- Have your IT pilot participants review the change management strategy materials based on their experiences. They can provide tips on best practices and advice on how to best describe the benefits of Teams and how to use it for collaboration.
+
+#### Result
+
+Your Teams IT pilot is complete and the initial change management materials have been developed, reviewed, and refined.
+
+### Step 3: Roll out to a business group
+
+After completing your IT pilot, roll out Teams to a business group or department in your organization. This rollout should include:
+
+- Identification of key business scenarios for Teams within the business group.
+- Announcement activities to inform users of the expectations and timelines for Teams usage for departmental, work, or project teams.
+- Delivery of [user training on Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) or links to resources to introduce Teams and how to use it.
+- A feedback mechanism, such as a central team containing everyone in the business group, to collect comments and issues from users in the business group.
+
+During the rollout, you can refine your change management materials in preparation for the organization-wide rollout.
+
+#### Result
+
+A business group is up and running with Teams and the change management materials have been tested and refined.
+
+## Phase 3: Drive value
+
+In this phase, you complete the rollout of Teams to your organization and support your users so that they are realizing its benefits.
+
+### Step 1: Roll out Teams to the rest of your organization
+
+After completing your rollout to a targeted business group, roll out Teams to the rest of your organization. This rollout should include:
+
+- Identification of key business scenarios for Teams within your separate business groups.
+- Use of your refined change management materials for announcement activities to inform your organization of the expectations and timelines for Teams usage for departmental, work, or project teams.
+- Delivery of [user training on Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) or links to resources to introduce Teams and how to use it.
+- A feedback mechanism, such as a central team containing everyone, to collect comments and act on issues from organization users. If your organization has less than 2500 individuals, use a public team or channel in Teams. Otherwise, use a public group in Yammer.
+
+#### Result
+
+Your organization is up and running and your change management strategy is in place to inform, train, and enable users to begin using Teams.
+
+### Step 2: Measure usage, manage satisfaction, and drive adoption
+
+After rolling out Teams to your entire organization, you must continue to employ your change management strategy to:
+
+- Have your leadership promote Teams as the teamwork and collaboration tool for the organization.
+- Encourage individuals to use it for business group, departmental, work, and project team communications and collaboration.
+
+Here are some suggested activities:
+
+- See [Success factors for Office 365](https://aka.ms/successfactors) to learn about general best practices for cloud service adoption. 
+- See [Office 365 activity reports](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263) to understand Office 365 service usage across your organization. If you aren’t an Office 365 global admin for your organization, ask someone who is to grant your user account Reports Reader permissions so you can access activity reports.
+- Monitor your feedback venue (a public channel in a central team or a public Yammer group) for issues and feedback from individuals about their experiences with Teams. Address questions and issues as quickly as you can to prevent frustration and abandonment of Teams by individuals.
+- Identify and nurture your champions in each business group and highlight their accomplishments and best practices using Teams. Reflect their successes out to the organization to show project success and adoption. Endorsement by technical leaders within a business group can exert a powerful influence over leaders and peers.
+
+#### Result
+
+Your organization has adopted Teams as its collaboration and teamwork tool.
+
+
+--> 
