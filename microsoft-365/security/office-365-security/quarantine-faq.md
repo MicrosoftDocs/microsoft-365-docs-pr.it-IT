@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla quarantena in hosting.
-ms.openlocfilehash: 389fa939c2fd35351abad4d355829656c3977deb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 393542596eacd26a4f64237f666fabfe236dceed
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084599"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510533"
 ---
 # <a name="quarantine-faq"></a>Domande frequenti sulla quarantena
 
@@ -47,15 +47,15 @@ R. Per accedere alla quarantena della posta indesiderata dell'utente finale, gli
   
  **D. Un elemento diverso dalla posta indesiderata può essere inviato in quarantena?**
   
-R. I messaggi che corrispondono a una regola del flusso di posta (nota anche come regola di trasporto) possono essere inviati anche alla quarantena dell'amministratore, se questa è l'azione configurata. La quarantena dell'utente finale è riservata esclusivamente alla posta indesiderata.
+R. Sì. I messaggi che corrispondono a una regola del flusso di posta (nota anche come regola di trasporto) insieme ai messaggi identificati come phishing possono essere inviati anche alla quarantena dell'amministratore, se questa è l'azione configurata. La quarantena dell'utente finale è riservata esclusivamente alla posta indesiderata.
   
  **Q. Per quanto tempo i messaggi vengono tenuti in quarantena?**
   
-R. Per impostazione predefinita, i messaggi in quarantena della posta indesiderata vengono mantenuti in quarantena per 30 giorni, mentre i messaggi in quarantena che corrispondono a una regola del flusso di posta vengono mantenuti in quarantena per 7 giorni. Dopo questo periodo di tempo i messaggi sono eliminati e non recuperabili. Il periodo di conservazione per i messaggi in quarantena che corrispondono a una regola del flusso di posta elettronica non è configurabile. Tuttavia, il periodo di conservazione può essere ridotto con l'impostazione **Conserva posta indesiderata per (giorni)** nei criteri di filtro contenuto. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
+R. Per impostazione predefinita, i messaggi in quarantena della posta indesiderata vengono mantenuti in quarantena per 30 giorni, mentre i messaggi in quarantena che corrispondono a una regola del flusso di posta vengono mantenuti in quarantena per un massimo di 30 giorni in base al periodo di conservazione impostato nel criterio di filtro del contenuto predefinito. Dopo questo periodo di tempo i messaggi sono eliminati e non recuperabili. Il periodo di conservazione per i messaggi in quarantena che corrispondono a una regola del flusso di posta elettronica non è configurabile. Tuttavia, il periodo di conservazione può essere ridotto con l'impostazione **Conserva posta indesiderata per (giorni)** nei criteri di filtro contenuto. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
   
  **D. È possibile rilasciare o segnalare più di un messaggio in quarantena alla volta?**
   
-R. La possibilità di rilasciare o segnalare più messaggi contemporaneamente non è attualmente disponibile nell'interfaccia di amministrazione di Exchange o nella quarantena della posta indesiderata dell'utente finale. Tuttavia, gli amministratori possono creare uno script di Windows PowerShell remoto per effettuare questa operazione. Utilizzare il cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) per ricercare messaggi e il cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) per rilasciarli. 
+R. Sì, possono essere rilasciati fino a 100 messaggi contemporaneamente nel portale di quarantena. Gli amministratori possono inoltre creare uno script di Windows PowerShell remoto per eseguire questa attività. Utilizzare il cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) per ricercare messaggi e il cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) per rilasciarli. 
   
  **D. Sono supportati i caratteri jolly nella ricerca dei messaggi in quarantena? Posso cercare i messaggi in quarantena in base a un dominio specifico?**
   

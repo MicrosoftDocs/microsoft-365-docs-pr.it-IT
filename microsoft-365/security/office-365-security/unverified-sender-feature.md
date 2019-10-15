@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
-ms.openlocfilehash: a20dbe070d17499eb1db52a957666d509086bcb8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1b6c834f5d54c54a577b51edf5f135e30990a92c
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083986"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510543"
 ---
 # <a name="unverified-sender"></a>Mittente non verificato
 
@@ -62,7 +62,7 @@ Non tutti i messaggi che non sono in grado di eseguire l'autenticazione sono dan
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Quali criteri utilizza Outlook.com e Outlook sul Web per aggiungere le proprietà'?' è via '?
 
-Per il "?" nell'immagine del mittente: Outlook.com richiede che il messaggio passi l'autenticazione SPF o DKIM. Per ulteriori informazioni, vedere [set up SPF in office 365 per impedire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) e [utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md).
+Per '?' nell'immagine del mittente: Outlook.com richiede che il messaggio passi l'autenticazione SPF o DKIM e riceva un passaggio DMARC oppure un passaggio di autenticazione composita dall'intelligence spoof di Office 365. Per ulteriori informazioni, vedere [set up SPF in office 365 per impedire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) e [utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md).
 
 Per il tag Via: se il dominio nell'indirizzo from è diverso dal dominio nella firma di DKIM o nella posta SMTP da, Outlook.com Visualizza il dominio in uno di questi due campi (preferendo la firma di DKIM).
 

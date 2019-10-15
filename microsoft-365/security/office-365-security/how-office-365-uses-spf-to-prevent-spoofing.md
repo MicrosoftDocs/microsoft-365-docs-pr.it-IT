@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: "Sintesi: In questo articolo viene descritto come Office 365 utilizza il record TXT Sender Policy Framework (SPF) in DNS per verificare che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato. Si applica alla posta in uscita inviata da Office 365. I messaggi inviati da Office 365 a un destinatario all'interno di Office 365 passano sempre SPF."
-ms.openlocfilehash: 2845fc9b20b337764159d9debc04f165dcb4bf62
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7db1259f4ec15fffe46955ba2166b244c5737d43
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083449"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510553"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Utilizzo di Sender Policy Framework (SPF) in Office 365 per impedire lo spoofing
 
@@ -244,6 +244,6 @@ Quando si includono domini di terze parti nel record TXT SPF, è necessario conf
 ## <a name="for-more-information"></a>Ulteriori informazioni
 <a name="SPFTroubleshoot"> </a>
 
-Sono necessarie informazioni sull'aggiunta del record TXT SPF? Sono disponibili [istruzioni dettagliate](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) per aggiornare i record (TXT) SPF in una serie di registrar popolari. [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md) include i campi per intestazione e sintassi utilizzati da Office 365 per i controlli SPF. 
+Sono necessarie informazioni sull'aggiunta del record TXT SPF? Leggere l'articolo [creare record DNS in qualsiasi provider di hosting DNS per Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide#add-a-txt-record-for-spf-to-help-prevent-email-spam) per informazioni dettagliate sull'utilizzo di Sender Policy Framework con il dominio personalizzato in Office 365. [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md) include i campi per intestazione e sintassi utilizzati da Office 365 per i controlli SPF. 
   
 
