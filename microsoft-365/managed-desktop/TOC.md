@@ -15,6 +15,7 @@
 ### [Supporto](service-description/support.md)
 ### [Operazioni e monitoraggio](service-description/operations-and-monitoring.md)
 ### [Requisiti per le applicazioni](service-description/mmd-app-requirements.md)
+### [Personalizzare il servizio](service-description/customizing.md)
 ## [Prepararsi per la registrazione in Microsoft Managed Desktop](get-ready/index.md)
 ### [Prerequisiti per Microsoft Managed Desktop](get-ready/prerequisites.md)
 ### [Preparare la rete](get-ready/network.md)

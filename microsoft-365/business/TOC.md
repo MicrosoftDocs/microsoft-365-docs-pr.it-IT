@@ -8,7 +8,7 @@
 ### [Configurare Microsoft 365 Business](set-up.md)
 ### [Eseguire l'aggiornamento a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
 ### [Preparare la distribuzione del client Office](prepare-for-office-client-deployment.md)
-### [Installare o disinstallare Office automaticamente](auto-install-or-uninstall-office.md)
+### [Aiutare gli utenti a installare Office](help-users-install-office.md)
 ### [Accedere alle risorse locali]()
 #### [Abilitare dispositivi Windows 10 aggiunti a un dominio da gestire](manage-windows-devices.md)
 #### [Accedere alle risorse da un dispositivo aggiunto ad Azure AD](access-resources.md)
