@@ -2,7 +2,7 @@
 
 # Introduzione
 ## [Novità del centro conformità](whats-new.md)
-## [Aggiornamenti recenti al contenuto di conformità](recently-updated-topics-mcc.md)
+## [Aggiornamenti recenti dei contenuti relativi alla conformità](recently-updated-topics-mcc.md)
 ## [Centro conformità Microsoft 365](microsoft-365-compliance-center.md)
 ## [Passare al Centro sicurezza e conformità](go-to-the-securitycompliance-center.md)
 ## [Usare la sottoscrizione gratuita ad Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
@@ -17,8 +17,8 @@
 ## Customer Key
 ### [Controllare i dati in Office 365 con Customer Key](controlling-your-data-using-customer-key.md)
 ### [Domande frequenti sulla crittografia del servizio con Customer Key per Office 365](service-encryption-with-customer-key-faq.md)
-## [Supervisione delle comunicazioni]()
-### [Informazioni sulla supervisione delle comunicazioni](supervision-policies.md)
+## [Supervisione]()
+### [Informazioni sui criteri di supervisione](supervision-policies.md)
 ### [Configurare i criteri di supervisione per l'organizzazione](configure-supervision-policies.md)
 ## [Barriere informative](information-barriers.md)
 ### [Definire i criteri delle barriere informative](information-barriers-policies.md)
@@ -106,7 +106,7 @@
 ### [Gestione del piano di archiviazione](file-plan-manager.md)
 ### [Etichette di conservazione](labels.md)
 ### [Rispettare la SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Criteri di conservazione basati su eventi](event-driven-retention.md)
 ### [Automatizzare la conservazione basata su eventi](automate-event-driven-retention.md)
 ## [Eliminare i dati](disposition-reviews.md)
@@ -127,7 +127,7 @@
 ### Piano di archiviazione
 #### [Gestione del piano di archiviazione](file-plan-manager.md)
 #### [Etichette di conservazione](labels.md)
-#### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/en-us/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+#### [Creare e pubblicare le etichette di conservazione con PowerShell](https://docs.microsoft.com/it-IT/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 #### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
 #### [Visualizzare le attività delle etichette dei documenti](view-label-activity-for-documents.md)
 #### [Visualizzare i report di governance dei dati](view-the-data-governance-reports.md)
@@ -330,14 +330,14 @@
 ### [Esportare documenti dalle prove](export-documents-from-incident.md)
 ### [Scaricare i processi di esportazione](download-export-jobs-from-a-data-investigation.md)
 
-## [Configurare le impostazioni per le indagini sui dati](configure-settings-datainvestigations.md)
+## Configurare le impostazioni di indagine
 ### [Aggiungere o rimuovere membri da un'indagine](add-remove-members.md)
 ### [Configurare le impostazioni di ricerca e analisi](configure-search-analytics-settings.md)
 ### [Chiudere o eliminare un'indagine](close-or-delete-investigation.md)
 
-## Informazioni di riferimento per Indagini sui dati
+## Informazioni di riferimento per le indagini sui dati
 ### [Note sulla versione](data-investigations-release-notes.md)
-### [Limiti in Indagini sui dati](limits-datainvestigations.md)
+### [Limiti nelle indagini sui dati](limits-datainvestigations.md)
 ### [Tipi di file supportati](supported-filetypes-datainvestigations.md)
 ### [Campi dei metadati del documento](document-metadata-fields.md)
 ### [Gestire processi](manage-jobs.md)
