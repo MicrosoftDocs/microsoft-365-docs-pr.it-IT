@@ -6,7 +6,7 @@
 ### [Workshop di formazione per Chief Information Security Officer (CISO)](./office-365-security/ciso-workshop.md)
 #### [Modulo 1 - Presentazione sulla sicurezza informatica in Microsoft](./office-365-security/ciso-workshop-module-1.md)
 #### [Modulo 2 - Gestione della sicurezza](./office-365-security/ciso-workshop-module-2.md)
-#### [Modulo 3 - Gestione di identità e accessi](./office-365-security/ciso-workshop-module-3.md)
+#### [Modulo 3 - Accesso degli utenti con identità e Zero Trust](./office-365-security/ciso-workshop-module-3.md)
 #### [Modulo4a - Strategia di protezione dalle minacce, Parte I](./office-365-security/ciso-workshop-module-4a.md)
 #### [Modulo 4b - Strategia di protezione dalle minacce, Parte II](./office-365-security/ciso-workshop-module-4b.md)
 #### [Modulo 5 - Protezione delle informazioni](./office-365-security/ciso-workshop-module-5.md)
@@ -99,6 +99,7 @@
 #### [Protezione anti-spoofing in Office 365](./office-365-security/anti-spoofing-protection.md)
 ##### [Ulteriori informazioni su spoof intelligence](./office-365-security/learn-about-spoof-intelligence.md)
 ##### [Procedura dettagliata di spoof intelligence](./office-365-security/walkthrough-spoof-intelligence-insight.md)
+##### [Identificare i messaggi sospetti in Outlook.com e Outlook sul web](./office-365-security/unverified-sender-feature.md)
 
 #### [Cos'è EOP?](./office-365-security/what-is-eop.md)
 ##### [Supporto per i messaggi di posta elettronica in ingresso anonimi su IPv6](./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md)
@@ -160,7 +161,7 @@
 
 #### [Esplora minacce (e rilevamenti in tempo reale)](./office-365-security/threat-explorer.md)
 ##### [Visualizzazioni di Esplora minacce](./office-365-security/threat-explorer-views.md)
-##### [Identificare i messaggi sospetti in Outlook.com e Outlook sul web](./office-365-security/unverified-sender-feature.md)
+
 
 #### [Integrazione per una maggiore sicurezza]()
 ##### [Integrare Office 365 ATP con Microsoft Defender ATP](./office-365-security/integrate-office-365-ti-with-wdatp.md)
