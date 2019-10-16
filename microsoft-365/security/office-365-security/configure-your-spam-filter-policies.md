@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Le impostazioni di base del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata.
-ms.openlocfilehash: 38160952827d8e60884877a67aea15521000f63f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fb46e735c4fae73565b6fe008d47a3e7ffd3f4cb
+ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083846"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510563"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurare i criteri di filtro della posta indesiderata
 Le impostazioni del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata. Le impostazioni del filtro della posta indesiderata vengono applicate solo ai messaggi in arrivo e sono di due tipi:
@@ -48,9 +48,9 @@ Per abilitare più impostazioni personalizzate o per aggiungere criteri personal
 
 2. È possibile specificare un nome univoco per i criteri personalizzati, ma non è possibile rinominare quello predefinito. Opzionalmente, è anche possibile specificare una descrizione più dettagliata per i criteri.
 
-3. Sotto la sezione **Azioni per posta indesiderata e inviata in blocco**:
+3. Nella sezione **Azioni per posta indesiderata e inviata in blocco**:
 
-  - Selezionare un'azione per i tipi **Posta indesiderata**, **Posta indesiderata con alta confidenza**, **Posta di phishing** e **Posta elettronica inviata in blocco**. I valori disponibili sono i seguenti: 
+  - Selezionare un'azione per i tipi **Posta indesiderata**, **Posta indesiderata con alta confidenza**, **Posta di phishing con alta confidenza**, **Posta di phishing** e **Posta elettronica inviata in blocco**. I valori disponibili sono i seguenti: 
 
     - **Sposta messaggio nella cartella Posta indesiderata:** sposta i messaggi di destinatari specifici nella cartella Posta indesiderata. Questa è l'azione predefinita per la posta indesiderata, la posta indesiderata con alta confidenza e la posta elettronica inviata in blocco.<br/><br/>
 
