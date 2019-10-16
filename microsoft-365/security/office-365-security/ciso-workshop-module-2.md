@@ -1,8 +1,8 @@
 ---
 title: 'Workshop Chief Information Security Officer (OICOL), modulo 2: gestione della sicurezza'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: 9fba19de7d2fcc406d1c058cb0fad3c80242c64c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b1403b35c9cea10c87f528c6f09c2948f316f27
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083862"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517585"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>OICOL workshop Module 2: gestione della sicurezza 
 
 Informazioni su come aumentare la visibilità e il controllo del proprio patrimonio aziendale ibrido con linee guida integrate, applicazione e monitoraggio automatizzati dei criteri.
 
 - Download PDF Summary: [modulo 2: gestione della sicurezza](../media/ciso-workshop-2-security-management.pdf)
-- Scaricare PowerPoint Summary: [modulo 2: gestione della sicurezza](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-2-security-management.pptx)
+- Scaricare PowerPoint Summary: [modulo 2: gestione della sicurezza](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-2-security-management.pptx)
 
 ## <a name="introduction-security-management-125"></a>Introduzione: gestione della sicurezza (1:25)
 

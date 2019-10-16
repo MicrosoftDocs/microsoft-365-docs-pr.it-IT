@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
-ms.openlocfilehash: 1b6c834f5d54c54a577b51edf5f135e30990a92c
-ms.sourcegitcommit: 9db133b110956bff2942bc903a4484247fc7020a
+ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510543"
+ms.locfileid: "37523631"
 ---
 # <a name="unverified-sender"></a>Mittente non verificato
 
@@ -33,6 +33,15 @@ Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale,
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>Come è possibile identificare un messaggio sospetto nella cartella posta in arrivo?
 
 Outlook.com e Outlook sul Web mostrano gli indicatori quando il mittente di un messaggio non può essere identificato o la loro identità è diversa da quella visualizzata nell'indirizzo da.
+
+## <a name="you-see-a--in-the-sender-image"></a>Viene visualizzato un'?' nell'immagine del mittente
+
+Quando Outlook.com e Outlook sul Web non sono in grado di verificare l'identità del mittente utilizzando le tecniche di autenticazione della posta elettronica, visualizzano una '?' nella foto del mittente. 
+
+![Il messaggio non ha superato la verifica](../media/message-did-not-pass-verification.jpg)
+
+Non tutti i messaggi che non sono in grado di eseguire l'autenticazione sono dannosi. Tuttavia, è necessario prestare particolare attenzione all'interazione con i messaggi che non eseguono l'autenticazione se non si riconosce il mittente. In alternativa, se si riconosce un mittente che in genere non ha un'?' nell'immagine del mittente, ma si inizia improvvisamente a vederlo, potrebbe essere un segno che il mittente viene falsificato.
+
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>Come gestire i messaggi che ricevono il trattamento dei mittenti non verificati 
 
@@ -49,14 +58,6 @@ Se si è un cliente di Office 365, è possibile gestire questa funzionalità tra
     - Aggiungere la coppia di domini tramite il cmdlet PhishFilterPolicy. Per ulteriori informazioni, vedere Set-PhishFilterPolicy e anti-spoofing Protection in Office 365
 
 Inoltre, non viene applicato il trattamento del mittente non verificato se è stato recapitato nella posta in arrivo tramite un elenco di indirizzi consentiti, incluse le regole di trasporto della posta elettronica (ETRs), l'elenco dei domini attendibili (criterio di protezione dalla posta indesiderata), l'elenco dei mittenti attendibili o un utente che ha impostato questo utente come "mittente sicuro" posta in arrivo.
-
-### <a name="you-see-a--in-the-sender-image"></a>Viene visualizzato un'?' nell'immagine del mittente
-
-Quando Outlook.com e Outlook sul Web non sono in grado di verificare l'identità del mittente utilizzando le tecniche di autenticazione della posta elettronica, visualizzano una '?' nella foto del mittente. 
-
-![Il messaggio non ha superato la verifica](../media/message-did-not-pass-verification.jpg)
-
-Non tutti i messaggi che non sono in grado di eseguire l'autenticazione sono dannosi. Tuttavia, è necessario prestare particolare attenzione all'interazione con i messaggi che non eseguono l'autenticazione se non si riconosce il mittente. In alternativa, se si riconosce un mittente che in genere non ha un'?' nell'immagine del mittente, ma si inizia improvvisamente a vederlo, potrebbe essere un segno che il mittente viene falsificato.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

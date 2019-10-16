@@ -1,8 +1,8 @@
 ---
 title: 'Chief Information Security Officer (OICOL) workshop, modulo 4a: strategia di protezione dalle minacce'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: 0bbc9cf6cb102067aadcacdb416f6f538bb2555b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f136f8ccb12ac09048b0b6a9de22ebb37fcc40dd
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083859"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517575"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>Modulo di OICOL workshop 4a: strategia di protezione dalle minacce
 
 Esplorare le principali informazioni relative alla protezione dalle minacce, all'evoluzione della sicurezza, alle strategie e alle mappe stradali di sicurezza.
 
 - Download PDF Riepilogo: [modulo 4a: strategia di protezione dalle minacce](../media/ciso-workshop-4a-threat-protection.pdf)
-- Scaricare PowerPoint Summary: [Module 4a: strategia di protezione dalle minacce](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4a-threat-protection.pptx)
+- Scaricare PowerPoint Summary: [Module 4a: strategia di protezione dalle minacce](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4a-threat-protection.pptx)
 
 ## <a name="introduction-threat-protection-strategy-437"></a>Introduzione: strategia di protezione dalle minacce (4:37)
 

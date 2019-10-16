@@ -1,17 +1,17 @@
 ---
 title: Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop
-description: Mantenere il desktop Microsoft gestito aggiornato è un bilanciamento della velocità e della stabilità.
+description: Mantenere il desktop gestito Microsoft aggiornato è un bilanciamento della velocità e della stabilità.
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c2ab48c87f1239c21e6620ea00640bb3dabbdd45
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: ed95d7d854422fe0cd2379e21b5de36a0c680c4b
+ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981637"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37523581"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop
 

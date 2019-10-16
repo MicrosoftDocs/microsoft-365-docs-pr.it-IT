@@ -1,8 +1,8 @@
 ---
 title: 'Workshop Chief Information Security Officer (OICOL), modulo 1: briefing di Microsoft Cybersecurity'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: 5a4c2cf41ea7af809ba74fe5a4a59f52051850b2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fa572e24a549be2f8f9a56d3f83e53d43a6c5294
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083865"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517515"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>OICOL workshop Module 1: briefing di Microsoft Cybersecurity
 
 Questo modulo illustra le panoramiche sull'igiene della sicurezza critica, sull'architettura di riferimento di Microsoft Cybersecurity, sulla resilienza Cybersecurity, sull'Internet delle cose (sacco) e sulla tecnologia operativa.
 
 - Download PDF Summary: [modulo 1: briefing di Microsoft Cybersecurity](../media/ciso-workshop-1-cybersecurity-briefing.pdf)
-- Download Riepilogo di PowerPoint: [modulo 1: briefing di Microsoft Cybersecurity](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-1-cybersecurity-briefing.pptx)
+- Download Riepilogo di PowerPoint: [modulo 1: briefing di Microsoft Cybersecurity](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-1-cybersecurity-briefing.pptx)
 
 ## <a name="part-1-course-introduction-and-overview-913"></a>Parte 1: introduzione e panoramica del corso (9:13)
 

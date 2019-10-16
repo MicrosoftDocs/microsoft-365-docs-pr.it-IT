@@ -1,8 +1,8 @@
 ---
 title: 'Workshop Chief Information Security Officer (OICOL), modulo 4B: strategia di protezione dalle minacce'
-ms.author: robmazz
-author: robmazz
-manager: laurawi
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: 5644ea7e69381b108dd3e90ec5fb0cbf8738886d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 88cb6ab079afcd420202f5cca47f555895d0d46a
+ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083864"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517505"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>OICOL workshop Module 4B: strategia di protezione dalle minacce 
 
 In questo modulo vengono esaminati l'evoluzione e la traiettoria dei Microsoft Security Operations Center (SOC), alimentati da trilioni di segnali nel grafico Microsoft Intelligent Security.
 
 - Download PDF Summary: [modulo 4B: strategia di protezione dalle minacce](../media/ciso-workshop-4b-threat-protection-strategy.pdf)
-- Download di PowerPoint Summary: [modulo 4B: strategia di protezione dalle minacce](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
+- Download di PowerPoint Summary: [modulo 4B: strategia di protezione dalle minacce](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ## <a name="introduction-threat-protection-strategy-detect-respond-recover-338"></a>Introduzione: strategia di protezione dalle minacce (Detect-Rispondi-Ripristina) (3:38)
 
