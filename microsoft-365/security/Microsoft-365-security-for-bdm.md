@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: gli scenari di minacce e attacchi più comuni attualmente affrontati dalle organizzazioni per gli ambienti Microsoft 365 e le azioni consigliate per attenuare tali rischi.
-ms.openlocfilehash: 16108f71702e2464721fa09fee4c6c298496a2c4
-ms.sourcegitcommit: 6ef9a98e3d9de44ee4f01870f9189fa676572419
+ms.openlocfilehash: c847e11d141dd6b3b4ce7601631259ba73e1703f
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2019
-ms.locfileid: "37481359"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37556821"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 
-In questo articolo vengono illustrati alcuni degli scenari di minacce e attacchi più comuni attualmente affrontati dalle organizzazioni per gli ambienti Microsoft 365 e le azioni consigliate per attenuare tali rischi. Anche se Microsoft 365 è dotato di una vasta gamma di funzionalità di sicurezza preconfigurate, richiede inoltre che il cliente si assuma la responsabilità di proteggere le proprie identità, i dati e i dispositivi utilizzati per accedere ai servizi cloud. 
+In questo articolo vengono illustrati alcuni degli scenari di minacce e attacchi più comuni attualmente affrontati dalle organizzazioni per gli ambienti Microsoft 365 e le azioni consigliate per attenuare tali rischi. Anche se Microsoft 365 è dotato di una vasta gamma di funzionalità di sicurezza preconfigurate, richiede inoltre che il cliente si assuma la responsabilità di proteggere le proprie identità, i dati e i dispositivi utilizzati per accedere ai servizi cloud. Queste linee guida sono state sviluppate da kozeta Beam (Microsoft Cloud Security Architect) e Thiagaraj Paolo (consulente senior Microsoft).
 
 Questo articolo è organizzato in base alla priorità del lavoro, a partire dalla protezione degli account utilizzati per amministrare i servizi e le risorse più importanti, ad esempio il tenant, la posta elettronica e SharePoint. Questo metodo fornisce una soluzione metodica per la sicurezza e la collaborazione con il foglio di calcolo seguente, in modo da poter monitorare lo stato di avanzamento con i team e le parti interessate nell'organizzazione: [Microsoft 365 Security per il foglio di calcolo di BDMs](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx). 
 
