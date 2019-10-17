@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: 6987f5fcb0504ad4b5bee91a417ff632faa11623
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: b00d18e9d14d369716f9c37fb9975f55d3c0eece
+ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523621"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37554123"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>Formazione workshop Chief Information Security Officer (OICOL)
 
@@ -32,7 +32,7 @@ I video del workshop di OICOL e il contenuto del download di file PDF/PowerPoint
 
 - [Modulo 2: gestione della sicurezza](ciso-workshop-module-2.md): informazioni su come aumentare la visibilità e il controllo del proprio patrimonio aziendale ibrido con linee guida integrate, applicazione di criteri automatizzati e monitoraggio.
 
-- [Modulo 3: modulo 3-identità e accesso utente con attendibilità zero](ciso-workshop-module-3.md): informazioni su come includere i concetti di attendibilità zero nella propria strategia di accesso utente e identità per proteggere meglio i dati aziendali all'interno e all'esterno del perimetro della rete.
+- [Modulo 3: modulo 3-identità e accesso utente con attendibilità zero](ciso-workshop-module-3.md): informazioni su come anticipare la relazione di trust zero con la propria strategia di accesso utente e identità per proteggere meglio i dati aziendali all'interno e all'esterno del perimetro della rete
 
 - [Modulo 4a: strategia di protezione dalle minacce, parte I](ciso-workshop-module-4a.md): esplorare le principali informazioni relative alla protezione dalle minacce, all'evoluzione della sicurezza, alle strategie e alle mappe stradali di sicurezza.
 

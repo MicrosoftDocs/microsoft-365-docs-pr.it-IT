@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: 08698a0c8e9bf79ef4c464ef4800d737df1421fc
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: be27e92c44ef6764906448828a94a207bd38bb18
+ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523591"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37554133"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>Modulo di OICOL workshop 3: identità e accesso utente a zero Trust
 
 Poiché la maggior parte degli attacchi moderni comporta compromettere le identità degli utenti, informazioni su come creare un nuovo perimetro di sicurezza delle identità per proteggere le risorse all'esterno della rete aziendale.
 
-- Download PDF Summary: [modulo 3: gestione delle identità e degli accessi](../media/ciso-workshop-3-identity-protection.pdf)
-- Scaricare PowerPoint Summary: [modulo 3: gestione delle identità e degli accessi](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-3-identity-protection.pptx)
+- Download PDF Summary: [modulo 3: identità e accesso degli utenti con attendibilità zero](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
+- Scaricare PowerPoint Summary: [modulo 3: gestione delle identità e degli accessi](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
 
 ## <a name="part-1-identity-and-zero-trust-history-933"></a>Parte 1: identità e cronologia di attendibilità zero (9:33)
 
