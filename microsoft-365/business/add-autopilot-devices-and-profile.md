@@ -10,19 +10,23 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 localization_priority: Normal
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Informazioni su come usare Windows Autopilot per configurare nuovi dispositivi Windows 10 per la propria azienda.
-ms.openlocfilehash: 563c3bbbc9f69996778417b35cfaa64d089770ef
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: d028ea3e902965d55c445dc3b3a02aa315201b25
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37287596"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37574789"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Usare la guida dettagliata per aggiungere profili e dispositivi Autopilot
 
@@ -42,7 +46,7 @@ I dispositivi devono soddisfare questi requisiti:
 
 Se non sono stati ancora creati gruppi di dispositivi o profili, il modo migliore per iniziare consiste nell'eseguire la guida dettagliata. È anche possibile [aggiungere dispositivi](create-and-edit-autopilot-devices.md) e [assegnare profili](create-and-edit-autopilot-profiles.md) senza usare la guida. 
   
-1. Accedere all'interfaccia di amministrazione all' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>indirizzo.
+1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
 2. Nella barra di spostamento a sinistra scegliere **dispositivi** \> **Autopilot**.
 

@@ -10,19 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 description: Configurare Office 365 Advanced Threat Protection e proteggere i dati sensibili.
-ms.openlocfilehash: 81197a8baf1c4d0cbfd898c41a305c1a99bab57c
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 0b0c1ac1d23bc7b167a58ecf93019a77c51c4366
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288116"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37576019"
 ---
-# <a name="increase-threat-protection"></a>Aumentare la protezione dalle minacce
+# <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
 In questo articolo vengono fornite informazioni utili per aumentare la protezione dell'abbonamento a Microsoft 365 per proteggersi da tentativi di phishing, malware e altre minacce. Tali raccomandazioni sono appropriate per le organizzazioni con un maggiore bisogno di sicurezza, come gli uffici legali e le cliniche sanitarie.
 
@@ -146,8 +149,6 @@ Per creare un criterio di anti-phishing ATP, guardare [questo breve video di for
 |Intelligence delle cassette postali  <br/> |Per impostazione predefinita, la funzionalità di intelligence delle cassette postali viene selezionata quando si crea un nuovo criterio anti-phishing. Lasciare **questa impostazione per** ottenere risultati ottimali.  <br/> |
 |Aggiungere mittenti e domini attendibili  <br/> |Qui è possibile aggiungere il proprio dominio o altri domini attendibili.  <br/> |
 |Applicato a  <br/> |Selezionare **il dominio del destinatario**. In **uno di questi**, seleziona **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio *contoso.<span> com <span>*, nell'elenco, quindi selezionare **Aggiungi**. Scegliere **Fine**.  <br/> |
-   
-Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP di Office 365](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>Protezione da allegati e file dannosi con gli allegati sicuri di ATP
 

@@ -1,18 +1,18 @@
 ---
-title: Registrare i nuovi dispositivi manualmente
+title: Registrare manualmente i nuovi dispositivi
 description: Registrare i dispositivi da soli in modo che possano essere gestiti da Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1e42ebe38cea87b3fedc7ebd7bdb52ceb2f1b2c5
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 952fac18db8ecc31fcd041dbfdf45e6ee8edee75
+ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981727"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37577762"
 ---
-# <a name="register-new-devices-yourself"></a>Registrare i nuovi dispositivi manualmente
+# <a name="register-new-devices-yourself"></a>Registrare manualmente i nuovi dispositivi
 
 Microsoft Managed Desktop è in grado di lavorare con dispositivi nuovi di zecca oppure è possibile riutilizzare i dispositivi che potrebbero essere già presenti (il che richiede che vengano ristampati). È possibile registrare i dispositivi tramite Microsoft Managed Desktop sul portale di Azure.
 
@@ -64,7 +64,7 @@ Microsoft Managed Desktop identifica ogni dispositivo in modo univoco facendo ri
 
 Per completare la registrazione, è necessario che i dati dei file CSV siano combinati in un unico file. Di seguito è indicato uno script di PowerShell di esempio per semplificare le operazioni seguenti:
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 ### <a name="register-devices"></a>Registrare i dispositivi
 

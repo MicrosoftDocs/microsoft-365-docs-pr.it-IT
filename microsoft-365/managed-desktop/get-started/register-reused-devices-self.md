@@ -1,18 +1,18 @@
 ---
-title: Registrare manualmente i dispositivi esistenti
+title: Registrare manualmente i dispositivi già presenti
 description: Registrare i dispositivi riutilizzati che potrebbero essere già disponibili in modo che possano essere gestiti da Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: c2527b18c422d53060398f90b7470db8b4959afa
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
+ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982949"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37577772"
 ---
-# <a name="register-existing-devices-yourself"></a>Registrare manualmente i dispositivi esistenti
+# <a name="register-existing-devices-yourself"></a>Registrare manualmente i dispositivi già presenti
 
 >[!NOTE]
 >In questo argomento vengono illustrati i passaggi da eseguire per riutilizzare i dispositivi già presenti e registrarli in Microsoft Managed Desktop. Se si utilizzano dispositivi nuovi di zecca, eseguire i passaggi descritti in [registrare i nuovi dispositivi in Microsoft Managed Desktop](register-devices-self.md) .
@@ -176,7 +176,7 @@ A questo punto è possibile procedere alla [registrazione di dispositivi](#regis
 
 Se i dati dell'hash hardware sono stati raccolti tramite i metodi di PowerShell manuale o di unità flash, è necessario che i dati dei file CSV siano combinati in un unico file per completare la registrazione. Di seguito è indicato uno script di PowerShell di esempio per semplificare le operazioni seguenti:
 
-`Get-ChildItem -Filter *.csv |Select-Object -expandproperty FullName | Import-Csv |ConvertTo-Csv -NoTypeInformation | %{$_.Replace('"','')}| Out-File -Append .\joinedcsv\aggregatedDevices.csv`
+`Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 Con i dati hash Uniti in un unico file CSV, è ora possibile procedere alla [registrazione dei dispositivi](#register-devices).
 

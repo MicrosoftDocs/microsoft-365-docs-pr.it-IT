@@ -8,18 +8,22 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: M365-subscription-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Adm_O365
+- Core_O365Admin_Migration
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: "Informazioni su come eseguire l'aggiornamento di dispositivi Windows a Windows 10 Pro Creators Update. "
-ms.openlocfilehash: 95efe45ec43c027ff62b0468e0cfb1fbcc7b60bf
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 5daebb16dcb98ebcdacfb5c7cf330772b24ab753
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288096"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575489"
 ---
 # <a name="upgrade-windows-devices-to-windows-pro-creators-update"></a>Eseguire l'aggiornamento di dispositivi Windows a Windows Pro Creators Update .
 
@@ -29,11 +33,11 @@ ms.locfileid: "37288096"
     
     - Installare l'aggiornamento dal [sito di download del software Microsoft](https://go.microsoft.com/fwlink/?LinkID=836951 ) -selezionare questa opzione se il dispositivo in cui si è connessi è nello stesso dispositivo di quello che si desidera aggiornare.
     
-      un. Dal sito di download del software, fare clic su **Aggiorna** per avviare l'aggiornamento del dispositivo a Windows 10 Pro Creators Update. 
+      a. Dal sito di download del software, fare clic su **Aggiorna** per avviare l'aggiornamento del dispositivo a Windows 10 Pro Creators Update. 
     
      - Creare un supporto di installazione tramite lo [strumento creazione multimediale](https://go.microsoft.com/fwlink/?LinkID=836960) : selezionare questa opzione per creare un supporto di installazione per l'aggiornamento di Windows 10 Pro Creator (unità flash USB o file ISO) per installare Windows 10 in un PC diverso da quello utilizzato.
     
-        un. Leggere le istruzioni su come utilizzare lo strumento e creare il supporto di installazione. 
+        a. Leggere le istruzioni su come utilizzare lo strumento e creare il supporto di installazione. 
 
 > [!Note]
 > Se si dispone di dispositivi Windows che eseguono Windows 7 Pro, Windows 8 Pro o Windows 8,1 Pro, l'abbonamento a Microsoft 365 business dà diritto a un aggiornamento di Windows 10: non è necessario un codice Product Key.

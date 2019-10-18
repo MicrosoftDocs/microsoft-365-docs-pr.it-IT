@@ -14,18 +14,18 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: In questo argomento viene descritto in che modo gli amministratori di Exchange Online e Exchange Online Protection (EOP) possono trovare, rilasciare e segnalare i messaggi che sono in quarantena nell'interfaccia di amministrazione di Exchange (EAC).
-ms.openlocfilehash: 80bc774d53b82ecd9295ed40f6c8254c7047a2e0
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 8f127dd1e7c14bbf2ae1d3bf23e611ef5c3ac1dc
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441133"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37576034"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Trovare e rilasciare messaggi in quarantena come amministratore
 
 In questo argomento viene descritto in che modo gli amministratori di Exchange Online e Exchange Online Protection (EOP) possono trovare, rilasciare e segnalare i messaggi che sono in quarantena nell'interfaccia di amministrazione di Exchange (EAC). Office 365 indirizza i messaggi alla quarantena perché sono stati identificati come posta indesiderata o hanno trovato una regola del flusso di posta (nota anche come regola di trasporto).
 
-Use the Security &amp; Compliance Center instead of the EAC to complete any of these tasks as well as view and work with messages that were sent to quarantine because they contain malware. For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+È possibile utilizzare il Centro sicurezza & Compliance anziché l'interfaccia di amministrazione di Exchange per completare anche una di queste attività. il portale di quarantena all'interno dell'interfaccia di amministrazione di Exchange (EAC) è impostato su decommisioned.  For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
 
 I messaggi in quarantena vengono elencati nella pagina **quarantena** di EAC. Per impostazione predefinita, i messaggi di posta indesiderata in quarantena vengono ordinati dal più recente al più vecchio nel campo **RICEVUTO**. Per ogni messaggio vengono visualizzati anche i valori di **MITTENTE**, **OGGETTO** e **SCADENZA**. È possibile ordinare in base a uno di tali valori facendo clic sull'intestazione corrispondente. Facendo clic su un'intestazione di colonna una seconda volta l'ordine viene invertito. Nella pagina **quarantena**, è possibile visualizzare al massimo 500 messaggi.
 
@@ -37,7 +37,7 @@ I messaggi in quarantena vengono elencati nella pagina **quarantena** di EAC. Pe
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere "Quarantine" nell'argomento [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
+- Devi disporre delle autorizzazioni per poter eseguire queste procedure.  Per sapere quali autorizzazioni sono necessarie, vedere "Quarantine" nell'argomento [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
 
 - È possibile rilasciare o segnalare più messaggi contemporaneamente nella pagina **quarantena**. In alternativa, è possibile creare uno script di Windows PowerShell remoto per eseguire questa operazione. Utilizzare il cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) per cercare i messaggi e il cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) per rilasciarli.
 
@@ -67,7 +67,7 @@ Nell'interfaccia di amministrazione di Exchange, è possibile filtrare gli eleme
    6. **Scade**: è possibile selezionare che il messaggio sarà eliminato dalla quarantena entro le 24 ore successive ( **oggi**), entro le 48 ore successive ( **prossimi 2 giorni**), entro la settimana successiva ( **prossimi 7 giorni**) oppure è possibile selezionare un intervallo di tempo personalizzato durante che il messaggio verrà eliminato dalla quarantena.
 
       > [!IMPORTANT]
-      > Per impostazione predefinita, i messaggi in quarantena della posta indesiderata vengono mantenuti per 15 giorni, mentre i messaggi in quarantena che corrispondono a una regola del flusso di posta vengono mantenuti in quarantena per 7 giorni. Al termine di questo periodo di tempo Office 365 elimina i messaggi e non sono recuperabili. Il periodo di conservazione per i messaggi in quarantena che corrispondono a una regola del flusso di posta elettronica non è configurabile. Tuttavia, il periodo di conservazione può essere ridotto con l'impostazione **Conserva posta indesiderata per (giorni)** nei criteri di filtro contenuto. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
+      > Per impostazione predefinita, i messaggi in quarantena della posta indesiderata vengono mantenuti per 30 giorni, mentre i messaggi in quarantena che corrispondono a una regola del flusso di posta vengono mantenuti in quarantena per un massimo di 30 giorni, in base al periodo di conservazione impostato nel criterio di filtro del contenuto predefinito. Al termine di questo periodo di tempo Office 365 elimina i messaggi e non sono recuperabili. Il periodo di conservazione per i messaggi in quarantena che corrispondono a una regola del flusso di posta elettronica non è configurabile. Tuttavia, il periodo di conservazione può essere ridotto con l'impostazione **Conserva posta indesiderata per (giorni)** nei criteri di filtro contenuto. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
 
    7. **Tipo** di È possibile specificare se cercare i messaggi in quarantena identificati come **posta indesiderata**o se cercare i messaggi corrispondenti a una regola del flusso di posta (**regola di trasporto**).
 

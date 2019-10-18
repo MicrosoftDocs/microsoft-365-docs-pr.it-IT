@@ -10,18 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
-ms.custom: OKR_SMB_M365
+ms.custom:
+- Core_O365Admin_Migration
+- MiniMaven
+- MSB365
+- OKR_SMB_M365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 'Informazioni su come configurare i dispositivi Windows che eseguono Windows 10 Pro per gli utenti aziendali di Microsoft 365. '
-ms.openlocfilehash: c4edd09d952ed1c98be8f41f6bcbaff8a16319a7
-ms.sourcegitcommit: 6003d6da0a85c97357eb3dba3918eb145f381fe1
+ms.openlocfilehash: 7b6fa2ce3243500c3ddcff7883fa9d8da27dcf86
+ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37288476"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37575569"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurare i dispositivi Windows per utenti di Microsoft 365 Business
 
