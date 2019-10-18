@@ -87,9 +87,9 @@ Ulteriori informazioni sui criteri di avviso e sulla ricerca nel log di controll
 
 -   [Abilitare o disabilitare la ricerca nel log di controllo di Office 365](https://support.office.com/it-IT/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [Eseguire ricerche nel log di controllo](https://support.office.com/it-IT/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [Eseguire ricerche nel log di controllo](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
--   [Search-UnifiedAuditLog](https://technet.microsoft.com/it-IT//library/mt238501(v=exchg.160).aspx) (cmdlet) 
+-   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
 
 -   [Proprietà dettagliate nel log di controllo di Office 365](https://support.office.com/it-IT/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
