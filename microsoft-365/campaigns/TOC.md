@@ -37,4 +37,4 @@
 ## [Ripristinare i dispositivi alle impostazioni di fabbrica](../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json)
 
 # Gestione degli incidenti di sicurezza
-## [Rispondere a un account di posta elettronica compromesso](/office365/securitycompliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json)
+## [Rispondere a un account di posta elettronica compromesso](../compliance/responding-to-a-compromised-email-account?toc=/microsoft-365/campaigns/toc.json)
