@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 67274f4f6483b3f22e9526df8dfbdd872c0573ef
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 3739f9f0ab7a7faa9c0467b29cc6c401254e8f58
+ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982017"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37590500"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -39,7 +39,7 @@ L'utilizzo dell'autenticazione a più fattori è consigliato prima di registrare
 Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine indicato in questa tabella. Tuttavia, i criteri dell'AMF per la protezione sensibile e altamente regolamentata possono essere implementati in qualsiasi momento.
 
 
-|Livello di protezione|Generali|Ulteriori informazioni|
+|Livello di protezione|Generali|Altre informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-modern-authentication)|I client che non utilizzano l'autenticazione moderna possono ignorare le regole di accesso condizionale, quindi è importante bloccarle|
@@ -47,10 +47,10 @@ Per ottenere il tempo necessario per eseguire queste attività, è consigliabile
 |        |[Definire i criteri di protezione delle app](#define-app-protection-policies)|Un criterio per ogni piattaforma (iOS, Android, Windows).|
 |        |[Richiedere applicazioni approvate](#require-approved-apps)|Applicazione della protezione delle app per dispositivi mobili per telefoni e Tablet|
 |        |[Definire i criteri di conformità del dispositivo](#define-device-compliance-policies)|Un criterio per ogni piattaforma|
-|        |[Richiedi PC conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Impone la gestione di Intune dei PC|
+|        |[Richiedere computer conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Impone la gestione di Intune dei PC|
 |**Dati sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Richiedere PC conformi *e* dispositivi mobili](#require-compliant-pcs-and-mobile-devices)|Impone la gestione di Intune per PC e telefono/tablet|
-|**Protezione per ambienti altamente regolamentati**|[Richiede *sempre* l'autenticazione Master](#require-mfa-based-on-sign-in-risk)|
+|**Riservatezza elevata**|[Richiede *sempre* l'autenticazione Master](#require-mfa-based-on-sign-in-risk)|
 | | |
 
 ## <a name="assigning-policies-to-users"></a>Assegnazione di criteri agli utenti
@@ -104,7 +104,7 @@ Applicare le impostazioni in base al livello di protezione che si desidera asseg
 |:---|:---------|:-----|:----|
 |Livello di rischio|Protezione di base|Alto, medio|Controllare entrambi|
 | |Dati sensibili|Alto, medio e basso|Controllare tutti e tre|
-| |Protezione per ambienti altamente regolamentati| |Lasciare deselezionata tutte le opzioni per applicare sempre il Master|
+| |Riservatezza elevata| |Lasciare deselezionata tutte le opzioni per applicare sempre il Master|
 
 **Controlli di accesso**
 
@@ -192,7 +192,7 @@ Creare un criterio per ogni piattaforma:
 - Android
 - Windows 10
 
-Per creare un nuovo criterio di protezione delle app, accedere al portale di Microsoft Azure con le credenziali di amministrazione, quindi passare a **applicazioni per dispositivi mobili > criteri di protezione delle app**. Scegliere **Add a Policy**.
+Per creare un nuovo criterio di protezione delle app, accedere al portale di Microsoft Azure con le credenziali di amministratore, quindi passare ai**criteri di protezione delle app**per le **applicazioni** > client. Scegliere **create Policy**.
 
 Le opzioni dei criteri per la protezione delle app sono leggermente diverse tra iOS e Android. Di seguito sono specificati i criteri per Android. Utilizzarla come guida per gli altri criteri.
 

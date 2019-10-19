@@ -1,23 +1,21 @@
 ---
-title: Introduzione a Microsoft Managed Desktop
+title: Guida introduttiva a Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: a79b71a836444ff745e2e9c64fce023db81c1d17
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 7d007329fbb53da2604e688623621eec86f93f5e
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390503"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595582"
 ---
-# <a name="get-started-with-microsoft-managed-desktop"></a>Introduzione a Microsoft Managed Desktop
+# <a name="get-started-with-microsoft-managed-desktop"></a>Guida introduttiva a Microsoft Managed Desktop
 
-Con Microsoft Managed Desktop, la gestione dei dispositivi desktop viene transizione a un'infrastruttura cloud aziendale. 
+Dopo aver effettuato l'iscrizione al servizio, in questa sezione sono inclusi i passaggi da seguire per partecipare effettivamente al servizio, ottenere e configurare i dispositivi, preparare gli utenti finali e distribuire le app.
 
-## <a name="in-this-section"></a>Contenuto della sezione
-
-- [Aggiungere contatti di amministratore](add-admin-contacts.md)
-- [Ordinare i dispositivi](devices.md)
+- [Aggiungere i contatti di amministratore nel portale di amministrazione di Microsoft Managed Desktop](add-admin-contacts.md)
+- [Configurare i dispositivi Microsoft Managed Desktop](set-up-devices.md)
+- [Distribuire le app ai dispositivi Microsoft Managed Desktop](deploy-apps.md)

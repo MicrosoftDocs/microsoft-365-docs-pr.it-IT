@@ -1,24 +1,25 @@
 ---
 title: Prepararsi per la registrazione in Microsoft Managed Desktop
-description: ''
+description: Passaggi da eseguire per preparare l'organizzazione per la registrazione
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 06/06/2018
-ms.openlocfilehash: 68cf55e5528affef352f144384888c0cb01cfc88
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390543"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37595592"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Prepararsi per la registrazione in Microsoft Managed Desktop
 
-Per ulteriori informazioni, vedere Prerequisiti per Microsoft Managed Desktop. 
-
-## <a name="in-this-section"></a>Contenuto della sezione
+In questi argomenti vengono descritti i passaggi necessari per l'organizzazione per prepararsi alla registrazione, inclusa la verifica che l'ambiente soddisfi i prerequisiti chiave, la configurazione delle reti, la configurazione dei certificati e la preparazione delle app per l'inclusione nel servizio.
 
 - [Prerequisiti per Microsoft Managed Desktop](prerequisites.md)
-- [Configurazione di rete](network.md)
-- [Preparare le app per Microsoft Managed Desktop](apps.md)
+- [Configurazione di rete per Microsoft Managed Desktop](network.md)
+- [Preparare l'accesso alle risorse locali per Microsoft Managed Desktop](network.md)
+- [Preparare unità mappate per Microsoft Managed Desktop](mapped-drives.md)
+- [Preparare certificati e profili di rete per Microsoft Managed Desktop](certs-wifi-lan.md)
+- [App in Microsoft Managed Desktop](apps.md)
+

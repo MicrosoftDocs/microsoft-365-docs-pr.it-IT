@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteggersi da tentativi di phishing e altri attacchi con Microsoft 365 per le campagne.
-ms.openlocfilehash: 4902a2273eef110ced9ae16c3b91f39ac990a736
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 66708fe214815640baf08adace292dee683e382b
+ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772483"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37593861"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Proteggersi da tentativi di phishing e altri attacchi
 
 Microsoft 365 include molte protezioni per proteggersi dagli attacchi, ma ci sono elementi che è possibile eseguire autonomamente per limitare e ridurre al minimo il rischio di attacchi online.
 
-- **Spam o posta** indesiderata È possibile ricevere messaggi di posta indesiderata e non tutti i messaggi di posta indesiderata sono gli stessi. Tuttavia, è possibile ridurre i rischi di attacchi, eliminando la posta indesiderata.
+- **Spam o posta indesiderata** È possibile ricevere messaggi di posta indesiderata e non tutti i messaggi di posta indesiderata sono gli stessi. Tuttavia, è possibile ridurre i rischi di attacchi, eliminando la posta indesiderata.
 - **Phishing** Una truffa di phishing è un messaggio di posta elettronica che sembra legittimo, ma è un tentativo di ottenere le informazioni personali o rubare i vostri soldi.
 - **Spoofing** I truffatori possono anche utilizzare una tecnica denominata spoofing per visualizzarla come se l'utente ha ricevuto un messaggio di posta elettronica da solo. 
 - Il **malware** è un software dannoso che può essere installato nel computer, generalmente installato dopo aver fatto clic su un collegamento o aperto un documento da un messaggio di posta elettronica. Esistono diversi tipi di malware (ad esempio, ransomware, quando il computer viene rilevato), ma non si vuole avere nessuno di essi. 
@@ -42,12 +42,12 @@ Microsoft 365 include molte protezioni per proteggersi dagli attacchi, ma ci son
 
 **Ridurre la posta indesiderata**
 
-Segui questi [10 suggerimenti su come ridurre la posta](https://support.office.com/en-us/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6)indesiderata.
+Segui questi [10 suggerimenti su come ridurre la posta indesiderata](https://support.office.com/en-us/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
 
 **Segnalarlo!**
 
 Segnalare eventuali messaggi di posta elettronica di phishing o di altro Scam ricevuti. Selezionare il messaggio e scegliere **segnala messaggio** sulla barra multifunzione.
-Di seguito sono riportate ulteriori informazioni sulla segnalazione di posta indesiderata [e phishing](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+Di seguito sono riportate ulteriori informazioni sulla segnalazione di posta [indesiderata e phishing](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 **Evitare il phishing**
 - Non rispondere mai a un messaggio di posta elettronica che richiede l'invio di informazioni personali o di account.
@@ -66,7 +66,7 @@ Aiutare i clienti a considerare attendibili le comunicazioni con l'aggiunta di u
 
 Scaricare l'infografica con suggerimenti per l'utente e i membri del team della campagna:
 
-[! La guida per proteggere la grafica delle informazioni della campagna](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)(Downloads/M365CampaignsWhatCanUsersDoToSecure. pdf)
+[![La guida per proteggere la grafica delle informazioni sulla campagna](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx) (PDF)
 

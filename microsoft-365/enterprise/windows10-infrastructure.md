@@ -10,16 +10,16 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/28/2019
 ms.author: greglin
-ms.openlocfilehash: 0b98e48b128eeaea0e0dd5cb9613ece95e991861
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 7253ea698613a38988bd7a6942a4908e9c797e2a
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982747"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37372767"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Fase 3: Windows 10 Enterprise
 
-![](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
+![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon.png)
 
 Microsoft 365 Enterprise include Windows 10 Enterprise, che offre gli strumenti per fare di più e mantenere la sicurezza. Windows 10 Enterprise:
 
@@ -42,7 +42,7 @@ Microsoft 365 Enterprise include Windows 10 Enterprise, che offre gli strumenti 
 | [Utilizzo di System Center Configuration Manager come aggiornamento sul posto](windows10-deploy-inplaceupgrade.md) | Selezionare questa opzione se è necessario aggiornare i computer Windows 7 o Windows 8,1 alla <a href="https://aka.ms/windows-10-release-information" target="_blank">versione corrente</a> di Windows 10 Enterprise e i computer sono attualmente gestiti con <a href="https://aka.ms/introtosccm" target="_blank">System Center Configuration Manager (Current Branch)</a>. |
 | [Utilizzo di Windows Autopilot](windows10-deploy-autopilot.md) | Selezionare questa opzione se si stanno configurando nuovi computer Windows che dispongono di Windows 10 Enterprise, versione 1703 o successiva preinstallata. Gli utenti finali avvierà il programma di installazione utilizzando la configurazione desiderata immettendo le proprie credenziali dell'account aziendale o dell'Istituto di istruzione. |
 
-Se questi scenari di distribuzione non soddisfano le esigenze dell'organizzazione, è possibile conoscere altri scenari e comprendere le funzionalità e le limitazioni di ognuno negli [scenari di distribuzione di Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). È inoltre possibile <a href="https://aka.ms/planforwin10deployment" target="_blank">pianificare la distribuzione di Windows 10</a> autonomamente.
+Se questi scenari di distribuzione non soddisfano le esigenze dell'organizzazione, è possibile conoscere altri scenari e comprendere le funzionalità e le limitazioni di ognuno negli [scenari di distribuzione di Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). È anche possibile <a href="https://aka.ms/planforwin10deployment" target="_blank">pianificare la distribuzione di Windows 10</a> autonomamente.
 
 Per ulteriori informazioni su Windows 10, vedere gli articoli seguenti:
 
@@ -78,10 +78,10 @@ Sbircia all'interno di Microsoft e Scopri come la società [ha distribuito Windo
 
 Vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, ha [distribuito Windows 10 Enterprise](contoso-win10.md).
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Passaggio successivo
 
 |||
 |:-------|:-----|
-|![](./media/stepnumbers/Step1.png)| [Preparare l'organizzazione per Windows 10 Enterprise](windows10-prepare-your-org.md) |
+|![Passaggio 1](./media/stepnumbers/Step1.png)| [Preparare l'organizzazione per Windows 10 Enterprise](windows10-prepare-your-org.md) |

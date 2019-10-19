@@ -5,16 +5,15 @@ metadata:
   title: Documentazione di Microsoft Managed Desktop
   description: null
   keywords: 'dispositivo, app, gestione'
-  author: trudyha
-  ms.author: trudyha
-  ms.date: 11/1/2018
+  author: jaimeo
+  ms.author: jaimeo
   ms.topic: landing-page
   ms.devlang: na
   ms.service: m365-md
 sections:
   - items:
       - type: markdown
-        text: Il modo più semplice per deliziare gli utenti e liberarlo.
+        text: 'Microsoft Managed Desktop riunisce Microsoft 365 Enterprise, la gestione dei dispositivi basati su cloud da Microsoft e il monitoraggio della sicurezza, consentendo di liberare i team IT in modo da concentrarsi sulle esigenze aziendali di base.'
   - items:
       - type: list
         style: cards
@@ -22,27 +21,27 @@ sections:
         columns: 2
         items:
           - href: intro/index.md
-            html: <p>Informazioni su cos'è Microsoft Managed Desktop e sul suo funzionamento.</p>
+            html: '<p>Introduzione a Microsoft Managed Desktop per i decisori--cos''è, come funziona e cosa può fare per te</p>'
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_overview.svg'
-            title: Che cos'è Microsoft Managed Desktop?
+            title: Cos'è Microsoft Managed Desktop?
           - href: service-description/index.md
-            html: <p>Informazioni su ciò che è incluso in Microsoft Managed Desktop.</p>
+            html: <p>Descrizione dettagliata di tutte le parti di Microsoft Managed Desktop</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
             title: Descrizione servizio
           - href: get-ready/index.md
-            html: <p>Informazioni su come prepararsi per la registrazione in Microsoft Managed Desktop.</p>
+            html: <p>Tutti i passaggi per ottenere l'ambiente e l'organizzazione pronti per l'utilizzo con il servizio</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_support.svg'
-            title: Preparati
+            title: Introduzione
           - href: get-started/index.md
-            html: <p>Informazioni su come ordinare i dispositivi e aggiungere contatti.</p>
+            html: '<p>Ottenere l''organizzazione a bordo con Microsoft Managed Desktop, tra cui la configurazione di dispositivi e la distribuzione di app</p>'
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_whats-new.svg'
             title: Attività iniziali
           - href: working-with-managed-desktop/index.md
-            html: <p>Informazioni sulla gestione delle app.</p>
+            html: <p>Tutto sulle operazioni quotidiane con il servizio</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_portal.svg'
             title: Utilizzo di Microsoft Managed Desktop

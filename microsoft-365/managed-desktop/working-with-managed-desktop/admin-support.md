@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 40f26f83e8b3001d2010d3197020f067fc51aaae
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 37c44a43662b6befd92c9710c65814399db4d54f
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982477"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37159684"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Supporto di amministrazione per Microsoft Managed Desktop
 
@@ -50,9 +50,16 @@ Dettagli aggiuntivi:
 - **Orario di ufficio** -per la maggior parte dei paesi, l'orario di ufficio è compreso tra 9:00 e 5:00, ora solare Pacifico.
 - **Compatibilità delle applicazioni** -per un problema di compatibilità delle applicazioni da considerare, deve essere presente un errore riproducente, della stessa versione dell'applicazione, tra la versione precedente e quella corrente di Windows o Office. Per risolvere i problemi di compatibilità delle applicazioni, Microsoft richiede l'utilizzo di un punto di contatto del cliente. L'individuo deve collaborare direttamente con il team di Fast Track per analizzare e risolvere il problema.
 - **Tempo di risposta del cliente** Se un cliente non è in grado di soddisfare i requisiti di risposta previsti, Microsoft retrocederà la richiesta di un livello di gravità, a un minimo di gravità C. Se un cliente non risponde alle richieste di azione, Microsoft consentirà di attenuare e chiudere la richiesta di supporto entro 48 ore dall'ultima richiesta.
- 
 
-## <a name="additional-resources"></a>Risorse aggiuntive
+
+## <a name="providing-administrator-rights-to-specific-users"></a>Fornire i diritti di amministratore per utenti specifici
+
+Durante l'utilizzo del personale di supporto, potrebbe essere necessario fornire i diritti di amministratore locale a un utente di un dispositivo per facilitare la risoluzione dei problemi. A tale scopo, è necessario disporre già dei diritti di amministratore globale o del dispositivo in Microsoft Intune per il proprio account. Eseguire una delle operazioni seguenti, a seconda della situazione:
+
+- Se gli utenti vengono sincronizzati dall'account di Active Directory locale, eseguire **net localgroup Administrators/Add "Contoso\username"** da un prompt dei comandi con privilegi elevati.
+- Se gli utenti vengono creati in Azure Active Directory, eseguire **net localgroup Administrators/Add "AzureAD\UserUpn"** da un prompt dei comandi con privilegi elevati.
+
+## <a name="additional-resources"></a>Altre risorse
 - [Supporto per gli utenti finali per Microsoft Managed Desktop](end-user-support.md). 
 - [Supporto per Microsoft Managed Desktop](../service-description/support.md). 
 - Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nella sezione **risorse online** dell' [amministratore Microsoft Managed Desktop Portale](https://aka.ms/mwaasportal).

@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-hour auto Purge (ZAP) è una funzionalità di protezione della posta elettronica che consente di rilevare i messaggi con posta indesiderata o malware che sono già stati recapitati alle cassette postali degli utenti e quindi di eseguire il rendering del contenuto dannoso innocuo. La modalità di utilizzo di ZAP dipende dal tipo di contenuto dannoso rilevato.
-ms.openlocfilehash: f43826614def99f8807d8777f128d5bc66f7b46a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 725dc9da9119169937231372585489bdf192b11e
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084351"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37319269"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware
 
@@ -56,16 +56,17 @@ Il malware ZAP è abilitato per impostazione predefinita nel criterio di malware
 
 Per la posta identificata come phishing dopo il recapito, ZAP esegue un'azione in base ai criteri di posta indesiderata che l'utente deve coprire. Se l'azione phishing del criterio è impostata per eseguire un'azione su un messaggio di posta elettronica (redirect, DELETE, Quarantine, Move to Junk), ZAP sposterà il messaggio nella cartella posta indesiderata della posta in arrivo dell'utente, indipendentemente dallo stato di lettura della posta. Se l'azione phishing del criterio non è impostata su azione (aggiungere X-header, Modify Subject, No Action), ZAP non eseguirà alcuna azione per la posta. Per ulteriori informazioni su come [configurare i criteri di filtro posta indesiderata](https://docs.microsoft.com//office365/securitycompliance/configure-your-spam-filter-policies) , vedere qui.
 
-Phishing ZAP è abilitato per impostazione predefinita nei criteri di posta indesiderata. È possibile disabilitare phishing ZAP utilizzando il parametro *ZapEnabled* nel cmdlet [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758) in PowerShell di Exchange Online o Exchange Online Protection PowerShell.
+Phishing ZAP è abilitato per impostazione predefinita nei criteri di posta indesiderata. Phishing ZAP può essere disattivato utilizzando il parametro *PhishZapEnabled* di [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), un cmdlet di EOP.
+
+> **[Nota]** il parametro precedente cmdlet *ZapEnabled* che controllava sia phishing che spam ZAP sarà **deprecato il 1 ° febbraio 2020**. Se sono stati scritti script che utilizzano il parametro ZapEnabled, è consigliabile aggiornarli per l'utilizzo di SpamZapEnabled e PhishZapEnabled. Nel periodo di transizione tutti e tre i parametri (ZapEnabled, PhishZapEnabled e SpamZapEnabled) saranno disponibili tramite il cmdlet. Fino a quando non viene impostato in modo esplicito tramite l'interfaccia utente o PowerShell, PhishZapEnabled e SpamZapEnabled visualizzeranno un valore ereditato dal parametro ZapEnabled. Dopo aver impostato i nuovi parametri, non erediterà più dal parametro ZapEnabled. Dopo che è stato deprecato, l'impostazione di ZapEnabled non avrà alcun effetto sulle proprietà PhishZapEnabled o SpamZapEnabled e ZapEnabled verrà rimosso dall'elenco dei parametri nei cmdlet.
 
 ### <a name="spam-zap"></a>Spam ZAP
 
 Per la posta elettronica identificata come posta indesiderata dopo il recapito, ZAP esegue un'azione in base ai criteri di posta indesiderata che l'utente deve coprire. Se l'azione dei criteri di posta indesiderata è impostata per eseguire un'azione su una posta (redirect, DELETE, Quarantine, Move to Junk), ZAP sposterà il messaggio nella cartella posta indesiderata della posta in arrivo dell'utente, se il messaggio non è stato letto. Se l'azione dei criteri di posta indesiderata non è impostata su azione (Aggiungi X-header, modifica oggetto, nessuna azione), ZAP non interverrà sulla posta. Per ulteriori informazioni su come [configurare i criteri di filtro posta indesiderata](configure-your-spam-filter-policies.md) , vedere qui.
 
-Spam ZAP è abilitato per impostazione predefinita nei criteri di posta indesiderata. È possibile disabilitare la posta indesiderata utilizzando il parametro *ZapEnabled* del cmdlet [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758) in PowerShell di Exchange Online o Exchange Online Protection PowerShell.
+Spam ZAP è abilitato per impostazione predefinita nei criteri di posta indesiderata. È possibile disabilitare la posta indesiderata utilizzando il parametro *SpamZapEnabled* del cmdlet [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758) in PowerShell di Exchange Online o Exchange Online Protection PowerShell.
 
-> [!NOTE]
-> Il parametro *ZapEnabled* del cmdlet **Set-HostedContentFilterPolicy** disattiva o attiva sia phishing zap che spam zap per il criterio. Non è possibile abilitare o disabilitare in modo indipendente phishing ZAP e spam ZAP all'interno dello stesso criterio.
+> **[Nota]** il parametro precedente cmdlet *ZapEnabled* che controllava sia phishing che spam ZAP sarà **deprecato il 1 ° febbraio 2020**. Se sono stati scritti script che utilizzano il parametro ZapEnabled, è consigliabile aggiornarli per l'utilizzo di SpamZapEnabled e PhishZapEnabled. Nel periodo di transizione tutti e tre i parametri (ZapEnabled, PhishZapEnabled e SpamZapEnabled) saranno disponibili tramite il cmdlet. Fino a quando non viene impostato in modo esplicito tramite l'interfaccia utente o PowerShell, PhishZapEnabled e SpamZapEnabled visualizzeranno un valore ereditato dal parametro ZapEnabled. Dopo aver impostato i nuovi parametri, non erediterà più dal parametro ZapEnabled. Dopo che è stato deprecato, l'impostazione di ZapEnabled non avrà alcun effetto sulle proprietà PhishZapEnabled o SpamZapEnabled e ZapEnabled verrà rimosso dall'elenco dei parametri nei cmdlet.
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Come vedere se ZAP ha spostato il messaggio
 
@@ -87,10 +88,12 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-Malware
 
 ### <a name="disable-phish-zap-and-spam-zap"></a>Disabilitare phishing ZAP e spam ZAP
 
-In questo esempio viene disabilitato phishing ZAP e spam ZAP nel criterio di filtro dei contenuti denominato "test".
+Per disabilitare phishing e spam ZAP per il tenant O365 o un gruppo di utenti, utilizzare i parametri *PhishZapEnabled* e *SpamZapEnabled* di [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), un cmdlet EOP.
+
+Nell'esempio seguente, phishing e spam ZAP sono disattivati per un criterio di filtro dei contenuti denominato "test".
 
 ```Powershell
-Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
+Set-HostedContentFilterPolicy -Identity Test -PhishZapEnabled $false -SpamZapEnabled $false
 ```
 
 Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758).

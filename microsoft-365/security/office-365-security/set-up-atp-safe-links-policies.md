@@ -15,23 +15,23 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: ba9089cd541e3834b967be4032fe21a4bb948d33
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 82731d961fddf90c2b53bfead1b72a3f35df2b24
+ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084857"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37593881"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
 > [!IMPORTANT]
-> Questo articolo è destinato ai clienti aziendali che dispongono di [Office 365 Advanced Threat Protection](office-365-atp.md). Se si è un utente di casa che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è rivolto ai clienti aziendali di [Office 365 Advanced Threat Protection](office-365-atp.md). Se si è un utente di casa che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 I [collegamenti sicuri di ATP](atp-safe-links.md), una funzionalità di [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), consentono di proteggere l'organizzazione da collegamenti dannosi utilizzati per il phishing e altri attacchi. Se si dispone delle [autorizzazioni necessarie per il Centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md), è possibile configurare i criteri dei collegamenti sicuri di ATP per garantire che, quando gli utenti fanno clic su indirizzi Web (URL), l'organizzazione sia protetta. I criteri dei collegamenti sicuri di ATP possono essere configurati per analizzare gli URL nella posta elettronica e negli URL nei documenti di Office.
   
 Le [nuove funzionalità vengono continuamente aggiunte al trifosfato di adenosina](office-365-atp.md#new-features-in-office-365-atp). Man mano che si aggiungono nuove funzionalità, potrebbe essere necessario apportare modifiche ai criteri dei collegamenti sicuri ATP esistenti.
 
-## <a name="what-to-do"></a>cosa fare 
+## <a name="what-to-do"></a>Operazione 
   
 1. Esaminare i prerequisiti.
     
@@ -51,7 +51,7 @@ Le [nuove funzionalità vengono continuamente aggiunte al trifosfato di adenosin
     |---------|---------|
     |Amministratore globale di Office 365 |Per impostazione predefinita, la persona che si iscrive all'acquisto di Office 365 è un amministratore globale. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .         |
     |Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
-    |Gestione dell'organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+    |Gestione organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
     Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -131,7 +131,7 @@ Le opzioni dei criteri predefinite si applicano a tutti gli utenti dell'organizz
 |Questa opzione  |Produce questo risultato  |
 |---------|---------|
 |**Disattivato** <br/> |Non analizza gli URL nei messaggi di posta elettronica.  <br/> Consente di definire una regola di eccezione, ad esempio una regola che non analizza gli URL nei messaggi di posta elettronica per uno specifico gruppo di destinatari.  <br/> |
-|**Attivato** <br/> |Riscrive gli URL per instradare gli utenti tramite la protezione dei collegamenti sicuri ATP quando gli utenti fanno clic su URL nei messaggi di posta elettronica.  <br/> Verifica un URL quando si fa clic su un elenco di URL bloccati o dannosi.  <br/> |
+|**Attivato** <br/> |Riscrive gli URL in modo che gli utenti vengano instradati tramite la protezione dei collegamenti sicuri ATP quando gli utenti fanno clic su URL nei messaggi di posta elettronica e attivano i collegamenti sicuri ATP all'interno di Outlook (C2R)  <br/> Verifica un URL quando si fa clic su un elenco di URL bloccati o dannosi e attiva una detonazione dell'URL in background in modo asincrono se l'URL non ha una reputazione valida.  <br/> |
 |**Applicazione dell'analisi degli URL in tempo reale per collegamenti e collegamenti sospetti che puntano a file** <br/> |Quando questa opzione è selezionata, vengono analizzati gli URL e i collegamenti sospetti che puntano al contenuto scaricabile.  <br/> |
 |**Attendere il completamento dell'analisi degli URL prima di recapitare il messaggio** <br/> |Quando si seleziona questa opzione, i messaggi che contengono gli URL da analizzare verranno mantenuti fino a quando gli URL avranno terminato l'analisi e verranno confermati come sicuri prima che i messaggi vengano recapitati.  <br/> |
 |**Applicazione di collegamenti sicuri ai messaggi inviati all'interno dell'organizzazione** <br/> | Quando questa opzione è disponibile e selezionata, la protezione dei collegamenti sicuri di ATP viene applicata ai messaggi di posta elettronica inviati tra gli utenti dell'organizzazione, purché gli account di posta elettronica siano ospitati in Office 365.  <br/> |
