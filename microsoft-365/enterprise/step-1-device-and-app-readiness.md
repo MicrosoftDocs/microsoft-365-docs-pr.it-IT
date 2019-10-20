@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di dispositivi e app nell'ambiente.
-ms.openlocfilehash: 9898090171d9e009a4f43f5362c363f71f08072e
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.openlocfilehash: dda8291e8f57e4855e582614573d6971fa3919f1
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35830539"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37422563"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Passaggio 1: preparazione di dispositivi e app
 
