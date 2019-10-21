@@ -99,11 +99,6 @@
 ## [Lab Kit e distribuzione di Windows e Office](modern-desktop-deployment-and-management-lab.md)
 ## [Ottenere assistenza per la distribuzione](find-help-for-modern-desktop-deployment.md)
 
-# [Configurazioni di identità e accesso dei dispositivi](microsoft-365-policies-configurations.md)
-##[Lavoro prerequisito](identity-access-prerequisites.md)
-## [Criteri comuni di identità e accesso dei dispositivi](identity-access-policies.md)
-## [Criteri di accesso di Exchange Online consigliati](secure-email-recommended-policies.md)
-## [Criteri di accesso di SharePoint Online consigliati](sharepoint-file-access-policies.md)
 
 # [Conformità di Microsoft 365](../compliance/index.yml)
 # [Sicurezza di Microsoft 365](../security/index.yml)
