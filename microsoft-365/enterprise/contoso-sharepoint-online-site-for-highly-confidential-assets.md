@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: informazioni sul modo in cui Contoso ha implementato un sito di SharePoint per dati altamente regolamentati per semplificare la collaborazione tra i team di ricerca.'
-ms.openlocfilehash: bb3c178ee64d5925f82aef9887c06ceafe51f4ee
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 08676f9fa89d9cbf932f9d70664ad1d17a153e3b
+ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403225"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37617254"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sito di SharePoint per le risorse digitali estremamente riservate di Contoso Corporation
 
@@ -96,7 +96,7 @@ Il personale di sicurezza di Contoso ha formato i membri del gruppo **Research**
 
 Il risultato finale è un ambiente sicuro in cui i ricercatori possono collaborare tra Contoso in un ambiente sicuro su file contenenti informazioni sulla ricerca. 
 
-Se un documento di ricerca con la sottoetichetta del **team di ricerca** lascia il sito di **ricerca** , è crittografato e accessibile solo ai membri dei gruppi di **ricerca** di Office 365 con credenziali dell'account utente valide.
+Se un documento di ricerca con la sottoetichetta del **team di ricerca** lascia il sito di **ricerca** , è crittografato e accessibile solo ai membri del gruppo **Research** Office 365 con credenziali dell'account utente valide.
 
 ## <a name="next-step"></a>Passaggio successivo
 
@@ -104,4 +104,4 @@ Se un documento di ricerca con la sottoetichetta del **team di ricerca** lascia 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Raccolta di produttività Microsoft 365](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)
+[Raccolta di produttività di Microsoft 365](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)
