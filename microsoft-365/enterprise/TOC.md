@@ -46,6 +46,7 @@
 ### [SharePoint e OneDrive for Business](sharepoint-online-onedrive-workload.md)
 ### [Migrazione](migration-microsoft-365-enterprise-workload.md)
 ### [Supportare i lavoratori remoti](empower-people-to-work-remotely.md)
+### [Teams per dati altamente regolamentati](secure-teams-highly-regulated-data-scenario.md)
 ### [Siti di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md)
 ## [Guide dei laboratori di testing](m365-enterprise-test-lab-guides.md)
 ### [Configurazione di base]()

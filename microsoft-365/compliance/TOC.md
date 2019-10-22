@@ -17,7 +17,7 @@
 ## Customer Key
 ### [Controllare i dati in Office 365 con Customer Key](controlling-your-data-using-customer-key.md)
 ### [Domande frequenti sulla crittografia del servizio con Customer Key per Office 365](service-encryption-with-customer-key-faq.md)
-## [Supervisione]()
+## [Supervisionare le comunicazioni]()
 ### [Informazioni sui criteri di supervisione](supervision-policies.md)
 ### [Configurare i criteri di supervisione per l'organizzazione](configure-supervision-policies.md)
 ## [Barriere informative](information-barriers.md)
@@ -124,6 +124,7 @@
 ### [Video del team Microsoft Data Governance](https://go.microsoft.com/fwlink/?linkid=867039)
 ## Gestione dei record
 ### [Gestione record](records-management.md)
+### [Record](records.md)
 ### Piano di archiviazione
 #### [Gestione del piano di archiviazione](file-plan-manager.md)
 #### [Etichette di conservazione](labels.md)
@@ -349,7 +350,7 @@
 ## [Gestire il controllo delle cassette postali](enable-mailbox-auditing.md)
 ## [Proprietà dettagliate nel log di controllo](detailed-properties-in-the-office-365-audit-log.md)
 ## [Esportare, configurare e visualizzare i record del log di controllo](export-view-audit-log-records.md)
-## [Usare il log di controllo per risolvere i problemi degli scenari comuni](auditing-troubleshooting-scenarios.md)
+## [Usare il log di controllo per individuare i problemi più comuni](auditing-troubleshooting-scenarios.md)
 ## [Usare il controllo di condivisione nel log di controllo](use-sharing-auditing.md)
 ## [Cercare le attività di eDiscovery nel log di controllo](search-for-ediscovery-activities-in-the-audit-log.md)
 
