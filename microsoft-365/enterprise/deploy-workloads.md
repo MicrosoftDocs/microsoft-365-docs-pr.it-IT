@@ -2,7 +2,7 @@
 title: Carichi di lavoro e scenari di Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Caricare gli utenti dell’organizzazione per la produttività dei carichi di lavoro di Microsoft 365 Enterprise.
-ms.openlocfilehash: a68b3a436daf6f1474f55676c6a167ecd4bdd39c
-ms.sourcegitcommit: e1ffb98ac8159d1dc814930fe388d3e37cbdc7e2
+ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
+ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37403245"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37608597"
 ---
 # <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Carichi di lavoro e scenari di Microsoft 365 Enterprise
 
@@ -38,7 +38,12 @@ Un'altra di queste esigenze è proteggere dati estremamente regolamentati archiv
 - Soggetti alle normative internazionali.
 - I dati più importanti per l'organizzazione, ad esempio segreti finanziari o informazioni sulle risorse umane e strategia dell'organizzazione.
 
-Per proteggere questi dati da minacce interne ed esterne, consultare [Siti Microsoft Teams e SharePoint per dati altamente riservati](teams-sharepoint-online-sites-highly-regulated-data.md). Questo scenario rappresenta una guida per configurare un sito di SharePoint o un team di Microsoft Teams per archiviare in modo sicuro i dati più importanti.
+Per proteggere questi dati da minacce interne ed esterne, vedere:
+
+- [Teams per dati altamente regolamentati](secure-teams-highly-regulated-data-scenario.md)
+- [Siti di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md). 
+
+Questi scenari rappresentano una guida per configurare un team di Microsoft Teams o un sito di SharePoint per archiviare in modo sicuro i dati più importanti.
 
 Ecco i carichi di lavoro e gli scenari della guida di distribuzione generale di Microsoft 365 Enterprise:
 
