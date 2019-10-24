@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: La procedura per distribuire l'infrastruttura di Office 365 ProPlus per Microsoft 365 Enterprise.
-ms.openlocfilehash: f20435edc4cdc675d0308774eb493a67723054f4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 5c32257fb9066f170da1f1a3cfe4b865e383cfcb
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982767"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646401"
 ---
 # <a name="phase-4-office-365-proplus"></a>Fase 4: Office 365 ProPlus
 
-![](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![Fase 4: Office 365 ProPlus](./media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 *Questo passaggio si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise e Microsoft 365 Education*
 
-Microsoft 365 Enterprise include Office 365 ProPlus, la versione in abbonamento di Office. Come Office 2016, Office 365 ProPlus include tutte le applicazioni di Office e quelle applicazioni installate direttamente nel dispositivo client. A differenza di Office 2016, Office 365 ProPlus viene aggiornato con nuove funzionalità a intervalli regolari e contiene un modello di gestione delle licenze basato sull'utente che consente alle persone di installare Office in un numero massimo di 5 dispositivi. Per ulteriori informazioni, vedere [Informazioni su Office 365 ProPlus nell'azienda](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Enterprise include Office 365 ProPlus, la versione in abbonamento di Office. Come Office 2019, Office 365 ProPlus include tutte le applicazioni di Office, che vengono installate direttamente nei dispositivi client. A differenza di Office 2019, Office 365 ProPlus viene aggiornato regolarmente con nuove funzionalità e usa un modello di gestione delle licenze basato sugli utenti, che consente di installare Office in più dispositivi. Per maggiori informazioni, vedere [Informazioni su Office 365 ProPlus nell'azienda](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
 In questa fase, si distribuisce Office 365 ProPlus nei dispositivi client nell'ambito di Microsoft 365 Enterprise. Oltre a queste linee guida, consigliamo di usare [Microsoft Fastrack](https://fasttrack.microsoft.com/office) a supporto dell'implementazione. 
 
@@ -53,14 +53,12 @@ L'[articolo sulla pianificazione](https://docs.microsoft.com/DeployOffice/plan-o
 
 ## <a name="step-3-deploy"></a>Passaggio 3: distribuzione
 
-In base al piano di distribuzione del passaggio 2, scegliere la modalità di distribuzione:
+In base al piano di distribuzione, scegliere la modalità di distribuzione:
 
 - **[Distribuire Office 365 ProPlus con System Center Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager):** gestire la distribuzione con Configuration Manager e scaricare e distribuire Office dai punti di distribuzione sulla rete
 
 - **[Distribuire Office 365 ProPlus con lo strumento ODT dal cloud](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud):** gestire la distribuzione con lo strumento ODT e installare Office nei dispositivi client direttamente dalla rete CDN di Office
  
-- **[Distribuire Office 365 ProPlus con lo strumento ODT da un'origine locale](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-a-local-source):** gestire la distribuzione con lo strumento ODT e scaricare e distribuire Office da un'origine locale sulla rete 
-
 - **[Installare autonomamente Office 365 Pro Plus dal portale Office](https://support.office.com/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658):** gestire la distribuzione dal portale Office e far installare agli utenti Office nei propri dispositivi client direttamente dal portale
 
 Molte organizzazioni usano una combinazione di queste opzioni per utenti diversi. Ad esempio, l'organizzazione potrebbe usare Configuration Manager per distribuire Office alla maggior parte dei propri utenti, ma consentire l'installazione autonoma a un piccolo gruppo di dipendenti che non si connettono spesso alla rete interna. 
@@ -75,7 +73,7 @@ Informazioni sul modo in cui gli esperti di Microsoft [distribuiscono e gestisco
 
 Vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, [ha distribuito Office 365 ProPlus](contoso-o365pp.md).
 
-![](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Passaggio successivo
 
