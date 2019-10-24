@@ -3,7 +3,7 @@ title: Siti di SharePoint per dati altamente regolamentati
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/04/2019
+ms.date: 10/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un sito del team di SharePoint sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: ece6547ba596fe53c4f3b3f6bfbaa6570a724c6a
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 7162ced48a64270713dc1eac6e73de053d24b2f4
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437826"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628340"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Siti di SharePoint per dati altamente regolamentati
 
@@ -30,7 +30,7 @@ Microsoft 365 Enterprise include una gamma completa di servizi basati sul cloud,
 - I dati più importanti per l'organizzazione, ad esempio segreti finanziari o informazioni sulle risorse umane e strategia dell'organizzazione.
 
 >[!Note]
-> Uno scenario simile che usa Microsoft Teams è in fase di sviluppo.
+> Uno scenario simile che usa Microsoft Teams è disponibile [qui](secure-teams-highly-regulated-data-scenario.md).
 >
 
 Affinché una scenario Microsoft 365 Enterprise basata sul cloud soddisfi le esigenze aziendali, è necessario:
@@ -50,14 +50,14 @@ La tabella seguente associa i requisiti di questo scenario a una funzionalità d
 |:-------|:-----|
 | **Requisito** | **Funzionalità di Microsoft 365 Enterprise** |
 | Archiviare file | Siti del team di SharePoint |
-| Bloccare il sito | Autorizzazioni per gruppi di Azure Active Directory (Azure AD) e sito del team di SharePoint |
+| Bloccare il sito | Autorizzazioni per gruppi di Office 365 e sito del team di SharePoint |
 | Etichettare i file del sito | Etichette di conservazione di Office 365 |
 | Bloccare gli utenti quando inviano file all'esterno dell'organizzazione. | Criteri di prevenzione della perdita di dati (DLP) in Office 365 |
-| Crittografare tutti i file del sito | Sottoetichette di riservatezza di Office 365 |
-| Aggiungere autorizzazioni ai file del sito | Sottoetichette di riservatezza di Office 365 |
+| Crittografare tutti i file del sito | Etichette o sottoetichette di riservatezza di Office 365 |
+| Aggiungere autorizzazioni ai file del sito | Etichette o sottoetichette di riservatezza di Office 365 |
 |||
 
-Ecco la configurazione per un sito di SharePoint sicuro.
+Ecco una configurazione di esempio per un sito di SharePoint sicuro.
 
 ![I siti di SharePoint per lo scenario dei dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
@@ -99,12 +99,11 @@ Per i siti di SharePoint, è necessario configurare un criterio DLP per l'etiche
 
 ### <a name="step-2-your-office-365-sensitivity-sublabel"></a>Passaggio 2: Sottoetichetta di riservatezza di Office 365
 
-Per fornire la crittografia e un set di autorizzazioni per i file più sensibili, gli utenti devono applicare una sottoetichetta di riservatezza di Office 365.
+Per fornire la crittografia e un set di autorizzazioni per i file più sensibili, gli utenti devono applicare un'etichetta o una sottoetichetta di riservatezza di Office 365. Una sottoetichetta si trova sotto un'etichetta esistente. 
 
-Una sottoetichetta esiste sotto un'etichetta esistente. Ad esempio, è possibile creare una sottoetichetta Ricerca e sviluppo sotto l'etichetta Altamente regolamentato. Per i siti di SharePoint per i dati altamente regolamentati, è necessario configurare le autorizzazioni in modo che solo i membri del sito possano aprire e modificare il file a cui è allegata la sottoetichetta.
+Usare un'etichetta di riservatezza quando è necessario un numero limitato di etichette sia per l'uso globale che per i singoli team privati. Usare una sottoetichetta di riservatezza se si ha un numero elevato di etichette o se si vogliono organizzare le etichette per siti sicuri sotto l'etichetta per i dati altamente regolamentati. 
 
-Le impostazioni della sottoetichetta applicata seguono il file. Anche se dovesse uscire dal sito, solo gli account utente autenticati con autorizzazioni adeguate potrebbero aprirlo.
-
+Le impostazioni dell'etichetta o della sottoetichetta applicata seguono il file. Anche se dovesse uscire dal sito, solo gli account utente autenticati con autorizzazioni adeguate potrebbero aprirlo.
 
 ### <a name="design-results"></a>Risultati della progettazione
 
@@ -125,10 +124,10 @@ Seguire [queste istruzioni]( https://support.office.com/article/create-a-site-in
 
 Nel sito di SharePoint configurare queste impostazioni per le autorizzazioni.
 
-1.  Nella barra degli strumenti fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
-2.  Nel riquadro **Autorizzazioni sito** fare clic su **Advanced permissions settings** (Impostazioni autorizzazioni avanzate).
-3.  Nella nuova scheda **Autorizzazioni** del browser fare clic su **Impostazioni richieste di accesso**.
-4.  Nella finestra di dialogo **Impostazioni richieste di accesso** deselezionare **Consenti ai membri di condividere il sito e singoli file e cartelle** e **Consenti richieste di accesso** (le tre caselle di controllo devono essere deselezionate), quindi fare clic su **OK**.
+1. Nella barra degli strumenti fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
+2. Nel riquadro **Autorizzazioni sito** fare clic su **Modifica impostazioni di condivisione** in **Impostazioni di condivisione**.
+3. In **Impostazioni di condivisione** scegliere **Solo i proprietari del sito possono condividere file, cartelle e il sito**.
+4. Disattivare **Consenti richieste di accesso** e quindi fare clic su **Salva**.
 
 Con queste impostazioni, la possibilità per i membri del gruppo di siti di condividere il sito con altri membri o per i non membri di richiedere l'accesso al sito è disabilitata.
 
@@ -145,13 +144,13 @@ Attenersi alle istruzioni riportate in [Proteggere i file di SharePoint con le e
 Diversamente da un'etichetta di riservatezza per dati altamente regolamentati, che chiunque può applicare a qualsiasi file, un sito sicuro deve avere una propria sottoetichetta, in modo che i file a cui è assegnata la sottoetichetta:
 
 - Siano crittografati e la crittografia segua il file.
--   Contengano autorizzazioni personalizzate in modo che solo i membri del gruppo del sito possano aprirli.
+- Contengano autorizzazioni personalizzate in modo che solo i membri del gruppo del sito possano aprirli.
 
-Per implementare questo ulteriore livello di sicurezza per i file archiviati nel sito, è necessario configurare una nuova etichetta di riservatezza, ossia una sottoetichetta dell'etichetta generale per i file altamente regolamentati. La vedranno solo i membri del gruppo per il sito, nell'elenco di sottoetichette per l'etichetta altamente regolamentata.
+Per implementare questo ulteriore livello di sicurezza per i file archiviati nel sito, è necessario configurare una nuova etichetta di riservatezza oppure una sottoetichetta dell'etichetta generale per i file altamente regolamentati. La vedranno solo i membri del gruppo per il sito, nell'elenco di sottoetichette relative all'etichetta per dati altamente regolamentati.
 
-Usare le istruzioni disponibili [qui](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) per configurare una sottoetichetta dell'etichetta che si usa per i file altamente regolamentati, con le impostazioni seguenti:
+Usare le istruzioni disponibili [qui](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels) per configurare un'etichetta o una sottoetichetta dell'etichetta che si usa per i file altamente regolamentati, con le impostazioni seguenti:
 
-- Il nome della sottoetichetta contiene il nome del sito, per semplificare l'associazione quando si assegna la sottoetichetta a un file.
+- Il nome dell'etichetta o della sottoetichetta contiene il nome del sito, per semplificare l'associazione quando si assegna l'etichetta o la sottoetichetta a un file.
 - La crittografia è abilitata.
 - Il gruppo di siti ha autorizzazioni di creazione condivisa.
 
@@ -162,14 +161,13 @@ Usare le istruzioni disponibili [qui](https://docs.microsoft.com/microsoft-365/c
 - Impostazioni di autorizzazione più restrittive nel sito di SharePoint
 - Un'etichetta di conservazione di Office 365 assegnata alla sezione Documenti del sito di SharePoint
 - Un criterio DLP per l'etichetta di conservazione di Office 365
-- Una sottoetichetta di riservatezza di Office 365 che gli utenti possono applicare ai file più sensibili archiviati nel sito, che crittografa il file e consente solo l'accesso in modalità di creazione condivisa ai membri del gruppo del sito del team 
+- Un'etichetta o una sottoetichetta di riservatezza di Office 365 che gli utenti possono applicare ai file più sensibili archiviati nel sito, che crittografa il file e consente solo l'accesso in modalità di creazione condivisa ai membri del gruppo del sito del team 
 
-Di seguito è riportata la configurazione risultante.
+Ecco la configurazione risultante che usa una sottoetichetta dell'etichetta per dati altamente regolamentati.
 
-![I siti di SharePoint per lo scenario dei dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![Siti di SharePoint per lo scenario dei dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
-
-Ecco un esempio di un utente che ha applicato la sottoetichetta di riservatezza a un file archiviato nel sito.
+Ecco un esempio di un utente che ha applicato la sottoetichetta a un file archiviato nel sito.
 
 ![I siti di SharePoint per lo scenario dei dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
@@ -180,16 +178,16 @@ Un sito di SharePoint per dati altamente regolamentati può proteggere tali dati
 
 Ad esempio, i dipendenti che sono abituati ad archiviare file sensibili in unità USB o soluzioni di archiviazione basate sul cloud personale dovranno ora archiviarli esclusivamente in un sito di SharePoint per dati altamente regolamentati.
 
-### <a name="step-1-train-your-users"></a>Passaggio 1: Formazione degli utenti
+### <a name="step-1-train-your-users"></a>Passaggio 1: formare gli utenti
 
-Dopo aver completato la configurazione, formare gli utenti membri dei gruppi di accesso al sito:
+Dopo aver completato la configurazione, formare gli utenti membri del sito:
 
 - Sull'importanza di usare il nuovo sito per proteggere file preziosi e le conseguenze di una perdita di dati altamente regolamentati, come implicazioni legali, sanzioni per inadempimento alle normative, ransomware o perdita di vantaggi competitivi.
 - Come accedere al sito e ai suoi file.
 - Come creare nuovi file sul sito e caricare nuovi file memorizzati localmente.
 - In che modo i criteri DLP impediscono di condividere i file esternamente.
-- Come contrassegnare i file più sensibili con la sottoetichetta del sito.
-- Come la sottoetichetta protegge un file anche se fuoriesce dal sito.
+- Come contrassegnare i file più sensibili con l'etichetta o la sottoetichetta del sito.
+- In che modo l'etichetta o la sottoetichetta protegge un file anche se viene diffuso all'esterno del sito.
 
 Questa formazione dovrebbe includere esercizi pratici in modo che gli utenti possano sperimentare queste operazioni e i loro risultati.
 
@@ -198,21 +196,27 @@ Questa formazione dovrebbe includere esercizi pratici in modo che gli utenti pos
 Nelle settimane successive alla formazione, l'amministratore di SharePoint per il sito di SharePoint può:
 
 - Analizzare l'utilizzo del sito e confrontarlo con le aspettative di utilizzo.
-- Verificare che i file riservati siano stati etichettati correttamente con l'etichetta di riservatezza secondaria.
+- Verificare che i file altamente sensibili siano stati etichettati correttamente con l'etichetta o la sottoetichetta di riservatezza.
+
+  È possibile vedere i file a cui è assegnata un'etichetta visualizzando una cartella in SharePoint e aggiungendo la colonna **Riservatezza** con l'opzione **Aggiungi colonna** in **Mostra/Nascondi colonne**.
+
 
 Ripetere la formazione degli utenti se necessario.
 
 ### <a name="user-adoption-results"></a>Risultati dell'adozione da parte degli utenti
 
-I file con elevato livello di regolamentazione vengono archiviati esclusivamente nei siti di SharePoint per dati altamente regolamentati e ai file più sensibili è applicata la sottoetichetta di riservatezza per il sito.
+I file altamente regolamentati vengono archiviati esclusivamente nei siti di SharePoint per dati altamente regolamentati e ai file più sensibili è applicata l'etichetta o la sottoetichetta di riservatezza per il sito.
 
 ## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Informazioni sulle modalità di distribuzione di Microsoft 365 Enterprise da parte di Contoso Corporation
 
-Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello internazionale con sede a Parigi, Francia. Vedere il modo in cui Contoso ha sviluppato, configurato e quindi ha guidato l'adozione di un [sito di SharePoint protetto](contoso-sharepoint-online-site-for-highly-confidential-assets.md) per i team di ricerca a Parigi, Mosca, New York, Pechino e Bengaluru. 
+Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello internazionale. Vedere il modo in cui Contoso ha sviluppato, configurato e quindi ha guidato l'adozione di un [sito di SharePoint protetto](contoso-sharepoint-online-site-for-highly-confidential-assets.md) per i team di ricerca a Parigi, Mosca, New York, Pechino e Bengaluru. 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida all'implementazione](deploy-microsoft-365-enterprise.md)
+[Teams per dati altamente regolamentati](secure-teams-highly-regulated-data-scenario.md)
 
-[Guide dei laboratori di testing](m365-enterprise-test-lab-guides.md)
+[Carichi di lavoro e scenari di Microsoft 365 Enterprise](deploy-workloads.md)
 
+[Raccolta di produttività di Microsoft 365](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)
+
+[Guida alla distribuzione](deploy-microsoft-365-enterprise.md)

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un team sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: 5117d310ccd877a7377e6e538e7fba13daaad4ef
-ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
+ms.openlocfilehash: 4ef4d4e9b8ab437c90aac434db158cfb40f066cb
+ms.sourcegitcommit: 7ee256132358a86f8c6ad143816fcfdde011ca74
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37617264"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37628350"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Team per dati altamente regolamentati
 
@@ -40,9 +40,9 @@ Ecco la configurazione risultante con un'etichetta di riservatezza.
 
 ![Configurazione dello scenario del team sicuro](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
  
-## <a name="configuration"></a>Configurazione
+## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>Fase 1: Configurare un team per i dati altamente regolamentati
 
-La configurazione end-to-end di un team sicuro prevede questi passaggi:
+La configurazione end-to-end prevede questi passaggi:
 
 1. Configurare le identità e l'accesso ai dispositivi.
 2. Creare un team privato.
@@ -142,30 +142,20 @@ Ecco la relazione tra l'etichetta di riservatezza e il gruppo del team.
 
 
 >[!Note]
->Se si configura l'etichetta di riservatezza o la sottoetichetta per le autorizzazioni definite dall'utente o con una data di scadenza, non è possibile aprire il file da Teams o SharePoint Online. È necessario usare un'app di Office.
+>Se si configura l'etichetta o la sottoetichetta di riservatezza per le autorizzazioni definite dall'utente o con una data di scadenza, non è possibile aprire il file da Teams o SharePoint. È necessario usare un'app di Office.
 >
 
-## <a name="using-the-team-and-a-sensitivity-label"></a>Uso del team e di un'etichetta di riservatezza
-
-I membri del gruppo del team possono accedere al team e a tutte le relative risorse, tra cui chat, riunioni e altre app. Quando usano file dalla sezione **File** di un canale, i membri del gruppo del team devono assegnare l'etichetta o la sottoetichetta di riservatezza ai file creati per il team sicuro. Ecco un esempio.
-
-![Esempio di etichetta applicata a un file in un team sicuro](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
- 
-Quando l'etichetta viene applicata al file, viene protetto. I membri del gruppo del team possono aprirlo in Teams e collaborare in tempo reale. È crittografato e include le autorizzazioni di creazione condivisa impostate sui membri del gruppo del team. Se il file esce dal sito e viene inviato a un utente malintenzionato, quest'ultimo dovrà specificare le credenziali di un account utente membro del gruppo del team per aprire il file e visualizzarne il contenuto. 
-
-È possibile vedere i file a cui è assegnata un'etichetta visualizzando una cartella in SharePoint Online e aggiungendo la colonna **Riservatezza** con l'opzione **Aggiungi colonna** in **Mostra/Nascondi colonne**.
-
-## <a name="custom-permissions"></a>Autorizzazioni personalizzate
+### <a name="custom-permissions"></a>Autorizzazioni personalizzate
 
 È anche possibile configurare autorizzazioni del sito di SharePoint personalizzate per il sito del team e, se necessario, l'etichetta di riservatezza corrispondente. Ecco due esempi.
 
-### <a name="example-1-delegating-sharepoint-site-administration"></a>Esempio 1: Delega dell'amministrazione del sito di SharePoint
+#### <a name="example-1-delegating-sharepoint-site-administration"></a>Esempio 1: Delega dell'amministrazione del sito di SharePoint
 
 Se il proprietario del team non ha esperienza nell'amministrazione di SharePoint o vuole delegare l'amministrazione del sito del team, può aggiungere l'account utente di un amministratore di SharePoint all'elenco dei proprietari del team. L'amministratore di SharePoint, tuttavia, avrà accesso completo al team e a tutte le risorse e potrà aprire un file a cui è applicata l'etichetta di riservatezza. 
 
 Per evitare questa assegnazione eccessiva di privilegi, aggiungere l'account utente dell'amministratore di SharePoint al gruppo di SharePoint Proprietari del sito del team nelle impostazioni avanzate di autorizzazione del sito. L'amministratore di SharePoint potrà amministrare il sito, ma non potrà accedere al team o alle relative risorse, né aprire file con l'etichetta di riservatezza assegnata.
 
-### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>Esempio 2: Consentire l'accesso in sola visualizzazione ai file con etichetta
+#### <a name="example-2-allowing-view-only-access-to-labeled-files"></a>Esempio 2: Consentire l'accesso in sola visualizzazione ai file con etichetta
 
 Se alcuni membri del personale devono esclusivamente visualizzare il contenuto dei file con etichetta nel sito del team, aggiungere i singoli account utente al:
 
@@ -178,8 +168,48 @@ Ecco le autorizzazioni risultanti nell'etichetta.
  
 I visitatori del sito potranno accedere direttamente al sito del team e visualizzare il contenuto dei file ai quali è applicata la sottoetichetta. Tuttavia, dato che non sono membri del gruppo del team, non saranno in grado di accedere al team o alle relative risorse.
 
+
+## <a name="phase-2-drive-user-adoption-for-team-members"></a>Fase 2: Incoraggiare l'adozione da parte dei membri del team
+
+Dopo aver predisposto il team è opportuno incoraggiare i membri dei team ad adottare il team e le relative misure di sicurezza aggiuntive.
+
+### <a name="step-1-train-your-users"></a>Passaggio 1: Formare gli utenti
+
+I membri del gruppo del team possono accedere al team e a tutte le relative risorse, tra cui chat, riunioni e altre app. Quando usano file dalla sezione **File** di un canale, i membri del gruppo del team devono assegnare l'etichetta o la sottoetichetta di riservatezza ai file creati per il team sicuro. Ecco un esempio.
+
+![Esempio di etichetta applicata a un file in un team sicuro](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+ 
+Quando l'etichetta viene applicata al file, viene protetto. I membri del gruppo del team possono aprirlo in Teams e collaborare in tempo reale. È crittografato e include le autorizzazioni di creazione condivisa impostate sui membri del gruppo del team. Se il file esce dal sito e viene inviato a un utente malintenzionato, quest'ultimo dovrà specificare le credenziali di un account utente membro del gruppo del team per aprire il file e visualizzarne il contenuto. 
+
+Formare i membri del team sugli aspetti seguenti:
+
+- Sull'importanza di usare il nuovo sito per chat, riunioni, file e altre risorse del sito del team e sulle conseguenze di una perdita di dati altamente regolamentati, come implicazioni legali, sanzioni per inadempimento alle normative, ransomware o perdita di vantaggi competitivi.
+- Come accedere al team.
+- Come creare nuovi file sul sito e caricare nuovi file memorizzati localmente.
+- In che modo i criteri DLP impediscono di condividere i file esternamente.
+- Come contrassegnare i file con l'etichetta o la sottoetichetta personalizzata del team.
+- In che modo l'etichetta o la sottoetichetta protegge i file anche se vengono diffusi all'esterno del sito.
+
+Questa formazione deve includere esercizi pratici in modo che i membri del team possano sperimentare queste funzionalità e i relativi risultati.
+
+### <a name="step-2-conduct-periodic-reviews-of-usage-and-address-team-member-feedback"></a>Passaggio 2: Effettuare revisioni periodiche dell'utilizzo e rispondere al feedback dei membri del team
+
+Nelle settimane successive alla formazione:
+
+- Rispondere rapidamente al feedback dei membri del team e ottimizzare i criteri e le configurazioni.
+- Analizzare l'utilizzo del team e confrontarlo con le aspettative di utilizzo.
+- Verificare che i file altamente regolamentati siano stati etichettati correttamente con l'etichetta o la sottoetichetta di riservatezza personalizzata.
+
+  È possibile vedere i file a cui è assegnata un'etichetta visualizzando una cartella in SharePoint e aggiungendo la colonna **Riservatezza** con l'opzione **Aggiungi colonna** in **Mostra/Nascondi colonne**.
+
+Ripetere la formazione degli utenti se necessario.
+
 ## <a name="see-also"></a>Vedere anche
 
 [Siti di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md)
+
+[Carichi di lavoro e scenari di Microsoft 365 Enterprise](deploy-workloads.md)
+
+[Raccolta di produttività di Microsoft 365](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)
 
 [Guida alla distribuzione](deploy-microsoft-365-enterprise.md)
