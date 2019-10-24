@@ -14,12 +14,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui valori di reclamo in blocco di livello (BCL) in Office 365.
-ms.openlocfilehash: 6f9314a5b96dbd641e461dfb564ed8605372a949
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: 822c84ea9b36cfdae1d8faccf7e0c7d9f747c917
+ms.sourcegitcommit: 7830969c8fa41724359657910716f3ce312cc2cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451098"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37650118"
 ---
 # <a name="bulk-complaint-level-values"></a>Valori di livello di reclamo in blocco
 
@@ -39,4 +39,4 @@ Nella tabella seguente vengono descritti i valori BCL attualmente in uso.
 |0|Il messaggio non viene da un mittente in blocco.|
 |1, 2, 3|Il messaggio è proveniente da un mittente in blocco che genera alcuni reclami.|
 |4, 5, 6, 7|Il messaggio è proveniente da un mittente in blocco che genera un numero misto di denunce.|
-|8, 9|Il messaggio è proveniente da un mittente in blocco che genera un numero elevato di denunce|
+|8, 9|Il messaggio è proveniente da un mittente in blocco che genera un numero elevato di denunce.|

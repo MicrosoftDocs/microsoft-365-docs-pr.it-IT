@@ -10,12 +10,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, PMI, FAQ, domande frequenti, risposte, business
 ms.date: 06/08/2018
-ms.openlocfilehash: 18198007bf61d448581335594016433668edb47d
-ms.sourcegitcommit: 23173f7d0ca5079662ef4060371d8ee11bac228e
+ms.openlocfilehash: 23cf7c4770387050c60ac21f537fbd7738a8aab4
+ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37611422"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37646386"
 ---
 # <a name="microsoft-365-business-frequently-asked-questions"></a>Domande frequenti su Microsoft 365 Business
 
@@ -164,7 +164,7 @@ Provider di servizi IT che non sono già partner Microsoft possono scoprire ulte
 I partner che ora vendono Office 365 possono utilizzare gli stessi metodi di vendita consultivi per vendere Microsoft 365 Business. Inoltre, stiamo introducendo ulteriori risorse e formazione per il team di vendita affinché comprenda l'ambiente desktop esistente, l'affidabilità di Active Directory, la mobilità e le esigenze di protezione dei clienti per comunicare in modo efficace il valore completo di Microsoft 365 Business in modo che sia rilevante per il cliente. Trova queste risorse nel portale Office Partner all'indirizzo [http://partners.office.com/microsoft365business](http://partners.office.com/microsoft365business). 
 
 ### <a name="how-can-microsoft-365-business-help-partners-increase-the-profitability"></a>In che modo Microsoft 365 Business consente ai partner di aumentare la redditività? 
-Microsoft 365 Business consente ai partner di ridurre i costi tramite una maggiore efficienza operativa e di ottimizzare i ricavi tramite la vendita di servizi aggiuntivi. Il Forrester Research, Microsoft 365 Business Total Economic Impact (TEI) Study, giugno 2017 (https://partners.office.com/TEIBusiness) illustra che Microsoft 365 Business avrà un impatto positivo sulla redditività dei partner. 
+Microsoft 365 Business consente ai partner di ridurre i costi tramite una maggiore efficienza operativa e di ottimizzare i ricavi tramite la vendita di servizi aggiuntivi. Il Forrester Research, Microsoft 365 Business Total Economic Impact (TEI) Study, giugno 2017 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI) illustra che Microsoft 365 Business avrà un impatto positivo sulla redditività dei partner. 
 
 Nello studio TEI i partner hanno segnalato che con Microsoft 365 Business si aspettano: 
 
