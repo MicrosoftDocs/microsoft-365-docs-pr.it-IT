@@ -3,7 +3,6 @@
   expanded: true
   items:
     - name: Prodotti e servizi
-      expanded: true
       items:
         - name: Gestire le app di terze parti
           href: manage-saas-apps.md
@@ -18,6 +17,18 @@
         - name: Aggiornare gli abbonamenti
           href: /office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide&context=/microsoft-365/commerce/context/context-commerce
     - name: Bollette e pagamenti
+      items:
+        - name: Comprendere la fattura
+          href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
+        - name: Gestione del metodo di pagamento
+          href: /microsoft-store/payment-methods?context=/microsoft-365/commerce/context/context-commerce
+        - name: Gestire i profili di fatturazione
+          href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
+        - name: Cronologia degli ordini
+          href: /microsoft-store/manage-orders-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
+        - name: Direttiva sui servizi di pagamento 2 e autenticazione avanzata dei clienti
+          href: /microsoft-365/commerce/billing-and-payments/psd2.md
+    - name: Account di fatturazione
       items:
         - name: Gestire le informazioni sull'account di fatturazione
           href: /microsoft-store/update-microsoft-store-for-business-account-settings?context=/microsoft-365/commerce/context/context-commerce
