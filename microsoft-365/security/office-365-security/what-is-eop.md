@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: In questo documento introduttivo vengono fornite informazioni utili per comprendere Exchange Online Protection (EOP) e una terminologia importante. Questo è applicabile per i clienti di Office 365 che proteggono le cassette postali ospitate sul cloud di Exchange Online e i clienti autonomi di EOP che proteggono le cassette postali locali, ad esempio Exchange Server 2016.
-ms.openlocfilehash: 0ca3e8215eb57a08362dd836b4519aedd0b6ab84
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2e4de0b62b24498b1153c713523418193e8694b4
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084355"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662522"
 ---
-## <a name="what-is-exchange-online-protection-eop"></a>Che cos'è Exchange Online Protection (EOP)
+# <a name="what-is-exchange-online-protection-eop"></a>Che cos'è Exchange Online Protection (EOP)
 
 Exchange Online Protection (EOP) è un servizio di filtraggio della posta elettronica basato sul cloud che consente di proteggere l'organizzazione da posta indesiderata e malware. Se si dispone di cassette postali in Office 365, queste vengono protette automaticamente da EOP, poiché fanno parte del servizio. Sono incluse le organizzazioni che dispongono di cassette postali sia in Office 365 che in locale, comunemente noto come scenario ibrido. EOP standalone è disponibile anche per i clienti che non dispongono di cassette postali nel cloud ma che desiderano proteggere le cassette postali locali.
 

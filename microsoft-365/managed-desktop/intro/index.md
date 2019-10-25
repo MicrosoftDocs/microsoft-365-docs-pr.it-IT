@@ -6,14 +6,14 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
-ms.openlocfilehash: 1cde7cda7cf6bb42508aa52460ff2ee254f62967
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: d3abfaa0901ff9dbc15aa6fcba3bb7a13e6afb84
+ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982587"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37697731"
 ---
-# <a name="what-is-microsoft-managed-desktop"></a>Che cos'è Microsoft Managed Desktop?
+# <a name="what-is-microsoft-managed-desktop"></a>Cos'è Microsoft Managed Desktop?
 
 <!--from Overview-->
 
@@ -24,7 +24,7 @@ Microsoft Managed Desktop si spinge ulteriormente a combinare la potenza di Micr
 
 <table>
 <tr><th>Delizia gli utenti finali</th><th>Empower IT</th><th>Eseguito da Microsoft</th></tr>
-<tr><td><p>Dispositivo moderno</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Sicurezza integrata</p><p>Login con riconoscimento facciale</p><p>Sempre aggiornato</p></td><td><p>Sicurezza integrata</p><p>Approfondimenti di azione</p><p>Supporto per le operazioni</p><p>Linee guida di esperti di Microsoft</p></td><td><p>Team per le operazioni di sicurezza</p><p>Monitoraggio dello stato</p><p>Backup del cloud per i dati</p><p>Principi apolidi</p><p>supporto per gli utenti finali 24x7</p></td></tr>
+<tr><td><p>Dispositivo moderno</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Sicurezza integrata</p><p>Login con riconoscimento facciale</p><p>Sempre aggiornato</p></td><td><p>Sicurezza integrata</p><p>Approfondimenti di azione</p><p>Supporto per le operazioni</p><p>Linee guida di esperti di Microsoft</p></td><td><p>Team per le operazioni di sicurezza</p><p>Monitoraggio dello stato</p><p>Backup del cloud per i dati</p><p>supporto per gli utenti finali 24x7</p></td></tr>
 </table>
 
 Microsoft Managed Desktop offre ai clienti una soluzione IT completa che delizia gli utenti e libera le risorse IT per attività più importanti. Questo servizio è stato sviluppato in base ai commenti e suggerimenti che spesso si sentono:
@@ -37,7 +37,7 @@ Microsoft Managed Desktop offre ai clienti una soluzione IT completa che delizia
 
 Microsoft Managed Desktop offre la migliore esperienza utente con la tecnologia più recente, il tutto supportato da Microsoft. 
 
-## <a name="additional-resources"></a>Risorse aggiuntive
+## <a name="additional-resources"></a>Altre risorse
 - [Descrizione del servizio Microsoft Managed Desktop](../service-description/index.md)
 - [Prerequisiti di Microsoft Managed Desktop](../get-ready/prerequisites.md).
 

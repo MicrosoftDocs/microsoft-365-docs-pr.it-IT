@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b337f020702b60ceeb02043e9b66d5614f58c228
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+ms.openlocfilehash: d8ba3626fc2b6cb7dbc56d32cb61baf34e43996e
+ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435560"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37697751"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -32,9 +32,9 @@ Secure Score aiuta le organizzazioni a eseguire le operazioni seguenti:
 * Migliorare la propria posizione di sicurezza fornendo individuabilità, visibilità, orientamento e controllo.  
 * Confronta con benchmark e stabilisci indicatori di prestazioni chiave (KPI).
 
-Secure score consente alle organizzazioni di accedere a visualizzazioni robuste di metriche e tendenze, all'integrazione con altri prodotti Microsoft, al confronto tra organizzazioni simili e molto altro ancora. Il Punteggio può anche riflettere quando le soluzioni di terze parti sono state indirizzate alle azioni consigliate.
+Le organizzazioni accedono alla visualizzazione robusta delle metriche e delle tendenze, all'integrazione con altri prodotti Microsoft, al confronto tra organizzazioni simili e molto altro ancora. Il Punteggio può anche riflettere quando le soluzioni di terze parti sono state indirizzate alle azioni consigliate.
 
-Inoltre, è possibile accedere ai consigli e al Punteggio tramite l' [API di Microsoft Graph](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+Inoltre, è possibile accedere ai consigli e al Punteggio tramite l' [API di Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). Informazioni sul [tipo di risorsa Secure Score](https://go.microsoft.com/fwlink/?linkid=2092996).
 
 ## <a name="how-it-works"></a>Funzionamento
 
@@ -45,6 +45,10 @@ Il Punteggio viene aggiornato in tempo reale per riflettere le informazioni pres
 ### <a name="how-improvement-actions-are-scored"></a>Come vengono segnate le azioni di miglioramento
 
 La maggior parte sono segnati in modo binario, se si implementa l'azione di miglioramento, ad esempio la creazione di un nuovo criterio o l'attivazione di un'impostazione specifica, si ottiene il 100% dei punti. Per altre azioni di miglioramento, i punti vengono assegnati come percentuale della configurazione totale. Ad esempio, se l'azione di miglioramento dichiara di ottenere 30 punti proteggendo tutti gli utenti con autenticazione a più fattori e si dispone solo di 5 di 100 utenti totali protetti, si riceverà un punteggio parziale di circa 2 punti (5 protected/100 Total * 30 max pts = 2 PTS  Punteggio parziale).
+
+### <a name="products-included-in-secure-score"></a>Prodotti inclusi nel punteggio sicuro
+
+Sono attualmente disponibili suggerimenti per Office 365 (tra cui SharePoint Online, Exchange Online, OneDrive for business, Microsoft Information Protection e altro ancora), Azure AD, Intune e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza, come Azure ATP e Microsoft Defender ATP. Gli elementi consigliati non riguardano tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate in base a una terza parte. 
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 
@@ -77,19 +81,17 @@ Per accedere all'API del grafico, è necessario disporre di uno degli ambiti seg
 * SecurityEvents. Read. All (per il ruolo di sola lettura)
 * SecurityEvents. ReadWrite. All (per il ruolo di lettura e scrittura)
 
-## <a name="rich-experiences--security-recommendations"></a>Esperienze ricche & consigli per la sicurezza
+## <a name="gain-visibility-into-your-security-posture"></a>Ottenere visibilità nella posizione di sicurezza
 
-In Microsoft Secure score, sono disponibili suggerimenti da Office 365, Azure AD, Intune e cloud app Security, con consigli da Azure Security Center e Microsoft Defender Security Center in arrivo.
-
-Per aiutare le informazioni necessarie più rapidamente, i consigli di Microsoft sono organizzati in gruppi:
+Per facilitare le informazioni necessarie più rapidamente, le azioni di miglioramento di Microsoft sono organizzate in gruppi:
 
 * Identity (account e ruoli di Azure AD)
 * Dati (documenti di Office 365)
-* Dispositivo (dispositivi ATP Microsoft Defender)
+* Dispositivo (dispositivi ATP Microsoft Defender, disponibile a breve)
 * App (applicazioni di posta elettronica e cloud)
 * Infrastructure (risorse di Azure)
 
-Nella pagina Panoramica di Microsoft Secure score, è possibile vedere come vengono divisi i punti tra questi gruppi e quali sono i punti disponibili. La pagina di panoramica è anche il luogo in cui ottenere una visualizzazione completa del punteggio totale, l'andamento storico del Punteggio sicuro con i confronti di benchmark e le azioni di miglioramento prioritarie che possono essere intraprese per migliorare il punteggio. È possibile utilizzare questi dati per agire e fare grandi differenze nella posizione di sicurezza.  
+Nella pagina Panoramica di Microsoft Secure score, è possibile vedere come vengono divisi i punti tra questi gruppi e quali sono i punti disponibili. La pagina di panoramica è anche il luogo in cui ottenere una visualizzazione completa del punteggio totale, l'andamento storico del Punteggio sicuro con i confronti di benchmark e le azioni di miglioramento prioritarie che possono essere intraprese per migliorare il punteggio.
 
 ![Pagina iniziale](../media/secure-score/homepage-original.png)
 di Secure Score*Figura 1: pagina Panoramica del Punteggio di Microsoft Secure*

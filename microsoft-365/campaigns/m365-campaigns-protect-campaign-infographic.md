@@ -21,14 +21,15 @@ search.appverid:
 - MET150
 - MOE150
 description: Operazioni che è possibile eseguire per proteggere la campagna dagli attacchi digitali.
-ms.openlocfilehash: 8e1c958b7434019067c5f85ea534811611a0d037
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 625b72b5bb677769b6ef5cdd3aa2fa10819c5ba2
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772503"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662532"
 ---
-## <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infografica: Proteggi te stesso e la tua campagna dalle minacce digitali 
+# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infografica: Proteggi te stesso e la tua campagna dalle minacce digitali 
+
 I collegamenti seguenti per PowerPoint e PDF possono essere scaricati e stampati in formato tabloid (noto anche come Ledger, 11 x 17 o a3).
 
 [![Immagine per garantire la protezione del grafico informazioni sulla campagna](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
