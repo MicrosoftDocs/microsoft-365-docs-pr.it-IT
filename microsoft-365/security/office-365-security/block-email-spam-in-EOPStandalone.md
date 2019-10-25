@@ -16,14 +16,14 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento destinato agli amministratori della versione autonoma di Exchange Online Protection che contiene informazioni per evitare falsi negativi della posta indesiderata
-ms.openlocfilehash: 5094caf8a5ceded71d68e9bddc5206f6ceb0e493
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ddd26c3ce8c2670118d85fafa2fc912f3d20dddf
+ms.sourcegitcommit: 83b919f8a7fcc4f75044ffc09fecd66fb4ed35b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083869"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37662542"
 ---
-## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizzare il filtro della posta indesiderata di Office 365 con queste impostazioni
+# <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizzare il filtro della posta indesiderata di Office 365 con queste impostazioni
 
 Un amministratore può utilizzare diverse impostazioni del filtro protezione da posta indesiderata di Office 365 per impedire l'invio della posta indesiderata alla posta in arrivo di un utente. Il filtro protezione da posta indesiderata di Office 365 imparerà a bloccare la posta indesiderata e a evitare messaggi falsi negativi se si usano le opzioni elencate qui. In questo contesto, un falso negativo si riferisce a un messaggio di posta indesiderata inviato alla posta in arrivo di un utente.
   
