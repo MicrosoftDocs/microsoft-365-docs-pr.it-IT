@@ -6,25 +6,25 @@ localization_priority: Normal
 ms.author: robmazz
 ms.topic: hub-page
 keywords: Microsoft 365, Microsoft 365 Documentation, Microsoft 365 for business, Microsoft 365 for Enterprise, Microsoft 365 per Education, Enterprise, business, Education, docs, Documentation
-title: Documentazione di Microsoft 365
+title: Documentazione Microsoft 365
 description: 'Trovare documentazione e risorse per Microsoft 365: una soluzione completa e intelligente, tra cui Office 365, Windows 10 e Enterprise Mobility + Security, che consente a tutti di essere creativi e di collaborare in modo sicuro.'
-ms.openlocfilehash: 6026926ad2dd8638a3a9165e99a36b454eeac6bc
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 137479d7e9705a579a6c5aa20cb3a0ae935a1fd8
+ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071765"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37749148"
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1> Documentazione di Microsoft 365</h1>
+        <h1> Documentazione Microsoft 365</h1>
         <ul class="pivots">
             <li>
                 <a href="#home"></a>
                 <ul id="home">
                     <li>
                         <a href="#home-all"></a>
-                        <ul id="home-all" class="cardsW">
+                        <ul id="home-all" class="cardsK">
                             <li class="fullSpan intro"><a href="https://www.microsoft.com/microsoft-365/default.aspx" data-raw-source="[Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)">Microsoft 365</a> è una soluzione completa e intelligente che include Office 365, Windows 10 ed Enterprise Mobility + Security, che consente a tutti di essere creativi e di collaborare in modo sicuro.
                             </li>
                             <li>
@@ -40,7 +40,7 @@ ms.locfileid: "37071765"
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Enterprise</h3>
-                                                    <p>Microsoft 365 Enterprise è progettata per organizzazioni di grandi dimensioni e integra Office 365 Enterprise, Windows 10 Enterprise e Enterprise Mobility + Security.</p>
+                                                    <p>Microsoft 365 Enterprise è progettata per organizzazioni di grandi dimensioni e integra Office 365 Enterprise, Windows 10 Enterprise e Enterprise Mobility + Security.<br></br></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -80,7 +80,7 @@ ms.locfileid: "37071765"
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Education</h3>
-                                                    <p>Microsoft 365 Education consente ai docenti di sbloccare la creatività, promuovere il lavoro di squadra e fornire un'esperienza semplice e sicura in un'unica soluzione a prezzi accessibili creata per l'istruzione.</p>
+                                                    <p>Microsoft 365 Education permette ai docenti di sbloccare la creatività, promuovere la collaborazione e di offrire un'esperienza semplice e sicura in un'unica soluzione conveniente pensata per l'istruzione.<br></br></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -121,6 +121,26 @@ ms.locfileid: "37071765"
                                                     <br />
                                                     <h3>Sicurezza di Microsoft 365</h3>
                                                     <p>Le soluzioni di sicurezza di Microsoft 365 consentono di proteggere l'organizzazione tra le superfici di attacco.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/microsoft-365/campaigns/" target="blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/office/media/hub-tiles/M365-HubTile-Campaigns-Tile-400x140-new2.svg" alt="Microsoft 365 for Campaigns documentation and resources" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <br />
+                                                    <h3>Microsoft 365 per le campagne</h3>
+                                                    <p>La configurazione consigliata per Microsoft 365 business consente di proteggere i dati e le comunicazioni della campagna o dell'azienda.</p>
                                                 </div>
                                             </div>
                                         </div>
