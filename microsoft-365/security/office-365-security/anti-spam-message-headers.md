@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui campi e sui valori di intestazione aggiunti ai messaggi da Exchange Online Protection.
-ms.openlocfilehash: 7a89a5dc0c05bd390669b5008b9d589a89488171
-ms.sourcegitcommit: b0396171d24c6298b809b43bb109d3afed4de5b8
+ms.openlocfilehash: df0e31ad6d1c67c8d7ed92e9b42efb1da0c37731
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37451118"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772260"
 ---
 # <a name="anti-spam-message-headers"></a>Intestazioni messaggi della protezione da posta indesiderata
 
@@ -39,7 +39,6 @@ Dopo aver effettuato l'accesso alle informazioni relative all'intestazione del m
 |CTRY|Il paese dal quale il messaggio è stato connesso al servizio. Questo è determinato dall'indirizzo IP di connessione, il quale potrebbe non essere uguale all'indirizzo IP di invio di origine.|
 |LANG|LANG:   la lingua in cui è scritto il messaggio, come specificato dal codice paese (ad esempio, ru_RU per la Russia).|
 |SCL|Il valore del livello di probabilità di posta indesiderata (SCL) del messaggio. Per ulteriori informazioni sull'interpretazione di questi valori, vedere [Livelli di sicurezza della protezione contro la posta indesiderata](spam-confidence-levels.md).  |
-|PCL|Il valore del livello di confidenza di Phishing (PCL) del messaggio.|
 |SRV:BULK|Il messaggio è stato identificato come un messaggio di posta elettronica in blocco. Se l'**opzione avanzata di filtro della posta indesiderata Blocca tutti i messaggi di posta in blocco** è abilitata, il messaggio verrà contrassegnato come posta indesiderata. Se l'opzione è disabilitata, il messaggio verrà contrassegnato come posta indesiderata solo se il resto delle regole del filtro stabiliscono che è indesiderato.|
 |SFV:SFE|Il filtro è stato ignorato e il messaggio è stato lasciato passare perché è stato inviato da un indirizzo presente in un singolo elenco dei mittenti attendibili.|
 |SFV:BLK|Il filtro è stato ignorato e il messaggio è stato bloccato perché è stato inviato da un indirizzo presente in un singolo elenco dei mittenti bloccati.  <br/> **Suggerimento:** Per ulteriori informazioni su come gli utenti finali possono creare elenchi di mittenti attendibili e bloccati, vedere [Bloccati o consentiti (impostazioni della posta indesiderata)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook sul web) e [Panoramica del filtro della posta indesiderata](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook).|
@@ -66,8 +65,7 @@ Nella tabella seguente vengono descritti i campi utili nell'intestazione del mes
 
 |**Campo di intestazione**|**Descrizione**|
 |:-----|:-----|
-|PCL|Il Livello di probabilità di phishing (PCL) del messaggio, che indica se si tratta di un messaggio di phishing. Lo stato restituito può avere i seguenti valori numerici: <br/>**0-3**: il contenuto del messaggio non dovrebbe essere phishing. <br/>**4-8**: è probabile che il contenuto del messaggio sia phishing. <br/>**-9990**: (solo Exchange Online Protection) è probabile che il contenuto del messaggio sia phishing.  <br/>  I valori vengono usati per determinare l'azione eseguita dal client di posta elettronica sui messaggi. Ad esempio, Outlook utilizza l'indicatore PCL per bloccare il contenuto dei messaggi sospetti. Per ulteriori informazioni sul phishing e su come Outlook elabora i messaggi di phishing, vedere [Attivare o disattivare i collegamenti nei messaggi di posta elettronica](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8).|
-|
+|BCL|Il Livello di reclamo in blocco (BCL) del messaggio consente di distinguere i diversi tipi di mittenti di posta inviata in massa. È rappresentato come valore compreso tra 0 e 9. Per i valori e altre informazioni su BCL, vedere [Valori del Livello di reclamo in blocco](bulk-complaint-level-values.md).|
 
 ## <a name="authentication-results-message-header"></a>Intestazione del messaggio Authentication-results
 
