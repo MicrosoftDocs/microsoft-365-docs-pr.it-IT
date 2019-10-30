@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) è un servizio di filtro della posta elettronica che aiuta l'organizzazione a proteggersi da spam e malware e include funzionalità in grado di tutelare l'organizzazione dalle violazioni dei criteri di messaggistica.
-ms.openlocfilehash: e091946792e78f47f5c0ab5a001bf45ca4de6b08
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: b00de649bf0517d3c5cda99f1c20579ad1dfeec5
+ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440453"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772270"
 ---
 # <a name="exchange-online-protection-overview"></a>Panoramica su Exchange Online Protection
 
@@ -56,13 +56,13 @@ EOP esegue il bilanciamento del carico tra i datacenter ma solo all'intero di un
 
 ## <a name="eop-plans-and-features"></a>Piani e funzionalità di EOP
 
-I piani di sottoscrizione EOP disponibili sono:
+I piani di sottoscrizione di EOP disponibili sono i seguenti:
 
-- **EOP autonomo**: dove EOP protegge le cassette postali locali.
+- **EOP standalone**: ti iscrivi a EOP per proteggere l'organizzazione di posta elettronica locale.
 
-- **Funzionalità di EOP in Exchange Online**: dove EOP protegge le cassette postali ospitate sul cloud di Exchange Online.
+- **Funzionalità di EOP in Exchange Online**: tutti gli abbonamenti che includono Exchange Online (standalone o come parte di Office 365) utilizzano EOP per proteggere le cassette postali di Exchange Online.
 
-- **Exchange Enterprise CAL with Services**: dove EOP protegge le cassette postali locali, come EOP autonomo, e include la prevenzione della perdita di dati (DLP) e la creazione di report tramite i servizi Web.
+- **Exchange Enterprise CAL with Services**: se si dispone di un'organizzazione di Exchange locale in cui sono state acquistate altre licenze di Exchange Enterprise CAL with Services, EOP è parte integrante dei servizi inclusi.
 
 Per ulteriori informazioni sui requisiti, i limiti importanti e le funzionalità disponibili in tutti i piani di sottoscrizione EOP; vedere [Descrizione del servizio Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=320619).
 
