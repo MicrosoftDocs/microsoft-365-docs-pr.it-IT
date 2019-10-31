@@ -13,12 +13,12 @@ ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: Trovare le risposte alle domande più frequenti sugli acquisti in modalità self-service.
-ms.openlocfilehash: f88d815b83da1038f3c5854a7499a5efaa029320
-ms.sourcegitcommit: 96cbcfe8b02a5efc2d5a4fc070753ea96f298fda
+ms.openlocfilehash: 7cf1fa1b12ab11e777754cba8f75cc4bead95279
+ms.sourcegitcommit: 29d85279c76ffaaa3f45e7ea3bdb590f54847fd6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37749168"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37885580"
 ---
 # <a name="self-service-purchase-faq"></a>Domande frequenti sull'acquisto in modalità self-service
 
@@ -29,15 +29,15 @@ ms.locfileid: "37749168"
 
 ### <a name="what-changes-did-microsoft-announce-around-self-service-purchases-for-the-power-platform-products"></a>Quali modifiche sono state annunciate da Microsoft in merito all'acquisto in modalità self-service per i prodotti Power Platform?
 
-All'inizio del 19 novembre 2019, le funzionalità di acquisto, sottoscrizione e gestione delle licenze self-service per i prodotti Power Platform (Power BI, PowerApps e Flow) saranno disponibili per la maggior parte dei clienti commerciali del cloud negli Stati Uniti. L'acquisto in modalità self-service offre agli utenti la possibilità di provare nuove tecnologie e consentire loro di sviluppare soluzioni in grado di avvantaggiare in ultima analisi le organizzazioni di grandi dimensioni. Questa funzionalità non sarà disponibile per i tenant che sono governativi, no profit o Education, in questo momento. Gli appalti centrali e i team IT avranno visibilità su tutti gli utenti che acquistano e distribuiscono soluzioni di acquisto in modalità self-service tramite l'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a>.
+All'inizio del 19 novembre 2019, le funzionalità di acquisto, sottoscrizione e gestione delle licenze self-service per i prodotti Power Platform (Power BI, PowerApps e Flow) saranno disponibili per la maggior parte dei clienti commerciali del cloud negli Stati Uniti. L'acquisto in modalità self-service offre agli utenti la possibilità di provare nuove tecnologie e consentire loro di sviluppare soluzioni in grado di avvantaggiare in ultima analisi le organizzazioni di grandi dimensioni. Questa funzionalità non sarà disponibile per i tenant negli Stati Uniti, che sono governativi, no profit o Education, in questo momento. Gli appalti centrali e i team IT avranno visibilità su tutti gli utenti che acquistano e distribuiscono soluzioni di acquisto in modalità self-service tramite l'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a>.
 
 ### <a name="why-is-microsoft-adding-a-self-service-purchase-option-for-the-power-platform-products"></a>Perché Microsoft aggiunge un'opzione di acquisto self-service per i prodotti Power Platform?
 
-Come risultato della trasformazione digitale, i ruoli tradizionali stanno cambiando. Dato che i dipendenti diventano più indipendenti e più esperti nella tecnologia, è stata aumentata la richiesta di utenti e organizzazioni per consentire agli utenti di acquistare abbonamenti in proprio. Lo scopo dell'opzione di acquisto self-service è quello di consentire agli utenti di sviluppare soluzioni proprie per sbloccare la produttività e influire sull'impatto aziendale, rispettando nel contempo la governance dei dati e la conformità delle organizzazioni.
+Nel mondo di oggi, gli utenti finali e i reparti sono sempre più alla ricerca e all'acquisto di soluzioni tecnologiche da soli. Sono state ricevute numerose richieste da questi clienti per consentire l'acquisto in modalità self-service di prodotti Power Platform. È necessario rispondere a questa esigenza del cliente, ma anche bilanciare le esigenze degli amministratori IT, che spesso perdono la visibilità e il controllo quando le persone all'interno dell'organizzazione adottano soluzioni di terze parti a loro insaputa. Con l'imminente funzionalità self-service per i prodotti Power Platform, gli amministratori IT avranno una visibilità completa su tutti gli acquisti self-service che si svolgono all'interno dell'organizzazione e i criteri di governance dei dati impostati a livello organizzativo verranno attribuiti a abbonamenti acquistati tramite self-service. Gli amministratori possono anche assegnare licenze esistenti o acquistare ulteriori abbonamenti di prodotti Power Platform tramite accordi e prezzi esistenti per gli utenti assegnati agli acquisti in modalità self-service. Dopo aver assegnato queste licenze acquistate in modo centralizzato, gli amministratori possono quindi richiedere che gli acquirenti cancellino le sottoscrizioni esistenti. Microsoft sta esplorando i modi per semplificare e snellire questo processo per gli amministratori in futuro.
 
 ### <a name="when-will-self-service-purchase-for-the-power-platform-products-be-available"></a>Quando sarà disponibile l'acquisto in modalità self-service per i prodotti Power Platform?
 
-Microsoft sta avviando l'acquisto self-service per Power BI il 19 novembre 2019 ai clienti negli Stati Uniti, con ulteriori mercati disponibili nei prossimi mesi. PowerApps e Microsoft Flow verranno aggiunti il 4 dicembre 2019. Questa funzionalità non sarà disponibile per i tenant che sono governativi, no profit o Education, in questo momento.
+Microsoft sta avviando l'acquisto self-service per Power BI il 19 novembre 2019 ai clienti negli Stati Uniti, con ulteriori mercati disponibili nei prossimi mesi. PowerApps e Microsoft Flow verranno aggiunti il 4 dicembre 2019. Questa funzionalità non sarà disponibile per i tenant negli Stati Uniti, che sono governativi, no profit o Education, in questo momento.
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>L'acquisto self-service deve essere abilitato per i servizi oltre i prodotti Power Platform?
 
@@ -97,11 +97,11 @@ Mentre tutti gli utenti di Azure AD nelle organizzazioni idonee sono autorizzati
 
 ### <a name="why-are-self-service-purchases-not-subject-to-admin-approval"></a>Perché gli acquisti in modalità self-service non sono soggetti all'approvazione dell'amministratore?
 
-I clienti che hanno richiesto questa funzionalità consentono agli amministratori di mantenere il controllo sui servizi e di rispettare la governance dei dati e la conformità. Per ulteriori informazioni sulla gestione delle entità di servizio di Azure AD, vedere [set-MsolServicePrincipal viene](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0). Inoltre, gli amministratori hanno la massima visibilità su chi ha effettuato un acquisto in modalità self-service e a quali utenti dei loro inquilini è stata assegnata una licenza da un acquisto in modalità self-service. Le organizzazioni possono quindi fare affidamento sui propri criteri interni, procedure e comunicazioni per garantire che gli utenti che effettuano acquisti in modalità self-service siano conformi ai criteri aziendali. 
+È possibile rispondere ai clienti che hanno richiesto acquisti in modalità self-service pur rispettando il controllo dell'amministratore sui servizi. Gli amministratori hanno la massima visibilità su chi ha effettuato un acquisto in modalità self-service e a quali utenti dei loro inquilini è stata assegnata una licenza da un acquisto self-service. Le organizzazioni possono anche fare affidamento su criteri interni, procedure e comunicazioni per garantire che gli utenti che effettuano acquisti in modalità self-service siano conformi ai criteri aziendali.  Come un esempio di come controllare l'accesso ai servizi: [set-MsolServicePrincipal viene](https://docs.microsoft.com/powershell/module/msonline/set-msolserviceprincipal?view=azureadps-1.0) può essere utilizzato per impedire l'utilizzo del prodotto nell'intero tenant.
 
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>In che modo Microsoft rispetta la governance dei dati e la conformità abilitando l'acquisto in modalità self-service?
 
-Gli amministratori mantengono il controllo su quali servizi e prodotti sono abilitati all'interno del tenant in base ai requisiti di conformità e governance dei dati. Inoltre, tutti i criteri di gestione dei dati e di accesso, che l'organizzazione ha abilitato, continueranno a essere applicati ai servizi abilitati per l'acquisto in modalità self-service.
+Gli amministratori mantengono il controllo su quali servizi e prodotti sono abilitati all'interno del tenant in base ai requisiti di conformità e governance dei dati. Inoltre, tutti i criteri di gestione e di accesso ai dati, che l'organizzazione ha abilitato, si applicano ai servizi abilitati per l'acquisto in modalità self-service.
 
 ### <a name="who-owns-the-product-data-created-from-self-service-purchases"></a>Chi possiede i dati del prodotto creati con gli acquisti in modalità self-service?
 
