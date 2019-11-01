@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: be27e92c44ef6764906448828a94a207bd38bb18
-ms.sourcegitcommit: 96eae24db7ce1c9d794da4598c1a392487df8437
+ms.openlocfilehash: 89b275c621ef0d4d7fe1f95625c34a51ee4c506f
+ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37554133"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "37911397"
 ---
 # <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a>Modulo di OICOL workshop 3: identità e accesso utente a zero Trust
 
-Poiché la maggior parte degli attacchi moderni comporta compromettere le identità degli utenti, informazioni su come creare un nuovo perimetro di sicurezza delle identità per proteggere le risorse all'esterno della rete aziendale.
+Informazioni su come anticipare la relazione di trust zero con la propria strategia di accesso utente e identità per proteggere meglio i dati aziendali all'interno e all'esterno del perimetro della rete.
 
 - Download PDF Summary: [modulo 3: identità e accesso degli utenti con attendibilità zero](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
 - Scaricare PowerPoint Summary: [modulo 3: gestione delle identità e degli accessi](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
