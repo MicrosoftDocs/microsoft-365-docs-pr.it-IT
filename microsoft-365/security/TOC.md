@@ -15,6 +15,8 @@
 ## [Configurazioni di identità e accesso dei dispositivi](../enterprise/microsoft-365-policies-configurations.md)
 ### [Lavoro prerequisito](../enterprise/identity-access-prerequisites.md)
 ### [Criteri comuni di identità e accesso dei dispositivi](../enterprise/identity-access-policies.md)
+### [Criteri per utenti guest ed esterni](../enterprise/identity-access-policies-guest-access.md)
+### [Criteri di accesso di Teams consigliati](../enterprise/teams-access-policies.md)
 ### [Criteri di accesso di Exchange Online consigliati](../enterprise/secure-email-recommended-policies.md)
 ### [Criteri di accesso di SharePoint Online consigliati](../enterprise/sharepoint-file-access-policies.md)
 
