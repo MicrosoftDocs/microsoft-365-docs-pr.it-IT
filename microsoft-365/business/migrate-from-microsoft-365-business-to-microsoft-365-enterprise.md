@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Informazioni su come spostare la propria azienda da Microsoft 365 business a Microsoft 365 Enterprise E3.
-ms.openlocfilehash: efdf4030a2a638a3fd56d1c415fcc6e6ac261c1a
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
+ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772719"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931854"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Eseguire la migrazione da Microsoft 365 business a Microsoft 365 Enterprise E3
 
@@ -34,10 +34,10 @@ Ad esempio, la tua azienda è cresciuta e ha bisogno di più di 300 licenze (Con
 
 In alternativa, l'azienda ha bisogno di funzionalità dell'organizzazione, ad esempio Office 365 ProPlus, Windows 10 Enterprise E3 o licenze CAL (Enterprise Client Access License).
 
-La migrazione è semplice: basta cambiare licenza. Tutti i dati e la configurazione della sottoscrizione corrente vengono mantenuti. Non vi è nulla da fare per prepararsi per la migrazione e niente da fare dopo, tranne che per trarre vantaggio dalle nuove funzionalità. 
+L'aggiornamento è semplice: è possibile avviare l'aggiornamento [dall'interfaccia di amministrazione](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide). Tutti i dati e la configurazione della sottoscrizione corrente vengono mantenuti. Non vi è nulla da fare per prepararsi per la migrazione e niente da fare dopo, tranne che per trarre vantaggio dalle nuove funzionalità. 
 
 >[!Note]
->È inoltre possibile utilizzare un abbonamento a Microsoft 365 business per un massimo di 300 seggi e ottenere un abbonamento a Microsoft 365 Enterprise E3 per più di 300 seggi. Tuttavia, Office 365 ATP non è incluso in Microsoft 365 Enterprise E3. È consigliabile aggiungere altre licenze ATP di Office 365 per gli utenti nella sottoscrizione Microsoft 365 Enterprise E3.
+>È inoltre possibile utilizzare un abbonamento a Microsoft 365 business per un massimo di 300 seggi e ottenere un abbonamento a Microsoft 365 Enterprise E3 per più di 300 seggi. Tuttavia, Office 365 ATP non è incluso in Microsoft 365 Enterprise E3. Per una continua protezione dalle minacce, è necessario aggiungere altre licenze ATP di Office 365, in modo che tutti gli utenti nell'ambito dei criteri di sicurezza ATP di Office 365 siano concessi in licenza.
 >
 
 ## <a name="differences-between-microsoft-365-business-and-microsoft-365-enterprise"></a>Differenze tra Microsoft 365 business e Microsoft 365 Enterprise
@@ -104,7 +104,7 @@ Gli utenti possono ora usufruire dello spazio di archiviazione illimitato nelle 
 È possibile iniziare a utilizzare il servizio di individuazione delle app Cloud, Azure AD Connect Health e SSO per più di 10 app.
 
 >[!Note]
->Dopo aver eseguito la migrazione a Microsoft 365 Enterprise E3, non è più possibile gestione clienti di Outlook e MileIQ.
+>Gli utenti migrati a Microsoft 365 Enterprise E3 non sono più in grado di utilizzare Gestione clienti di Outlook e MileIQ.
 >
 
 <a name="threat-protection"></a>
@@ -127,7 +127,7 @@ Windows 10 business include queste protezioni:
 Windows 10 Enterprise E3 include anche la gestione aziendale dell'isolamento basato sull'hardware per Microsoft Edge.
 
 >[!Note]
->Dopo aver eseguito la migrazione a Microsoft 365 Enterprise E3, non è più disponibile Office 365 ATP. È possibile acquistare altre licenze ATP di Office 365 per la sottoscrizione Microsoft 365 Enterprise E3 e assegnarle agli account utente.
+>Gli utenti migrati a Microsoft 365 Enterprise E3 dovranno richiedere una licenza ATP di Office 365 per la protezione dalle minacce continuate. Assicurarsi di acquistare altre licenze ATP di Office 365 in modo che tutti gli utenti nell'ambito della polizia ATP di Office 365 siano concessi in licenza. 
 >
 
 ### <a name="device-management-with-intune"></a>Gestione dei dispositivi con Intune
