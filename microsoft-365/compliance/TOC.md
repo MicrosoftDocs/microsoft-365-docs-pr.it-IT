@@ -82,6 +82,12 @@
 #### [Aggiornamento alle nuove funzionalità di Office 365 Message Encryption](legacy-information-for-message-encryption.md)
 #### [Configurare Microsoft Azure AD Rights Management per la versione precedente della Crittografia messaggi di Office 365](set-up-azure-rms-for-previous-version-message-encryption.md)
 
+## [Informazioni sulla classificazione dei dati (anteprima)](data-classification-overview.md)
+### [Visualizzazione delle attività con etichette (anteprima)](data-classification-activity-explorer.md)
+### [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-getting-started-with.md)
+### [Utilizzo di un classificatore pronto all'uso (anteprima)](classifier-using-a-ready-to-use-classifier)
+### [Creazione e training di un classificatore (anteprima)](classifier-creating-a-trainable-classifier.md)
+
 # Gestire la governance delle informazioni
 ## [Importare dati](importing-pst-files-to-office-365.md)
 ### [Usare il caricamento di rete per importare i file PST](use-network-upload-to-import-pst-files.md)
