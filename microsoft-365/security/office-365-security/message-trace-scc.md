@@ -9,18 +9,21 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: a936a3b24c97e9336550527750afa800345891e6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3f5855f8951d91c1124a3f204c72e5f6e37d7e80
+ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084716"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968526"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
 ## <a name="overview"></a>Panoramica
 
 La traccia dei messaggi nel centro sicurezza & conformità segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
+
+> [!NOTE]
+> Per eseguire la traccia dei messaggi, è necessario che l'amministratore sia membro del gruppo Gestione organizzazione, gestione conformità o supporto tecnico.
 
 La traccia dei messaggi nel centro sicurezza & conformità migliora quando la traccia dei messaggi è disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni della traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti su cosa è successo ai propri messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
 
@@ -29,7 +32,7 @@ La traccia dei messaggi nel centro sicurezza & conformità migliora quando la tr
 
 ## <a name="open-message-trace"></a>Aprire la traccia dei messaggi
 
-1. [Accedere a Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con il proprio account aziendale o dell'istituto di istruzione.
+1. [Accedere a Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con l'account aziendale o dell'istituto di istruzione.
 
 2. Selezionare l'icona di avvio delle app ![Icona di avvio delle app di Office 365](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) nell'angolo in alto a sinistra e scegliere **Amministratore**.
 
@@ -60,7 +63,7 @@ I valori predefiniti sono **tutti i mittenti** e **tutti i destinatari**, ma è 
 - **A queste persone**: fare clic in questo campo per selezionare uno o più destinatari nell'organizzazione.
 
 > [!NOTE]
-> È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati`*@contoso.com` ( `scot?@contoso.com`o), ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente.<br/>È possibile incollare più mittenti o elenco di destinatari separati da un punto`;`e virgola (). Sono consentiti i simboli`\s`spazi`\r`(), ritorno a`\n`capo () o righe successive ().
+> È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati, ad esempio `*@contoso.com`, ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente.<br/>È possibile incollare più mittenti o elenco di destinatari separati da un punto`;`e virgola (). Sono consentiti i simboli`\s`spazi`\r`(), ritorno a`\n`capo () o righe successive ().
 
 ### <a name="time-range"></a>Intervallo di tempo
 
