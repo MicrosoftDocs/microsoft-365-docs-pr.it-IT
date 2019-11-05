@@ -4,6 +4,7 @@
 ## [Novità del centro conformità](whats-new.md)
 ## [Aggiornamenti recenti dei contenuti relativi alla conformità](recently-updated-topics-mcc.md)
 ## [Centro conformità Microsoft 365](microsoft-365-compliance-center.md)
+## [Catalogo delle soluzioni Microsoft 365 (anteprima)](microsoft-365-solution-catalog.md)
 ## [Passare al Centro sicurezza e conformità](go-to-the-securitycompliance-center.md)
 ## [Usare la sottoscrizione gratuita ad Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Pianificare la sicurezza e la conformità in Office 365](plan-for-security-and-compliance.md)
@@ -17,9 +18,13 @@
 ## Customer Key
 ### [Controllare i dati in Office 365 con Customer Key](controlling-your-data-using-customer-key.md)
 ### [Domande frequenti sulla crittografia del servizio con Customer Key per Office 365](service-encryption-with-customer-key-faq.md)
-## Supervisionare le comunicazioni
-### [Informazioni sui criteri di supervisione](supervision-policies.md)
-### [Configurare i criteri di supervisione per l'organizzazione](configure-supervision-policies.md)
+## Conformità delle comunicazioni
+### [Informazioni sulla conformità delle comunicazioni (anteprima)](communication-compliance.md)
+### [Configurare la conformità delle comunicazioni in Microsoft 365 (anteprima)](communication-compliance-configure.md)
+### [Esaminare e correggere gli avvisi di conformità delle comunicazioni (anteprima)](communication-compliance-investigate-remediate.md)
+### [Riferimento alle funzionalità per la conformità delle comunicazioni (anteprima)](communication-compliance-feature-reference.md)
+### [Criteri di supervisione in Office 365](supervision-policies.md)
+### [Configurare i criteri di supervisione per Office 365](configure-supervision-policies.md)
 ## [Barriere informative](information-barriers.md)
 ### [Definire i criteri delle barriere informative](information-barriers-policies.md)
 ### [Attributi per i criteri delle barriere informative](information-barriers-attributes.md)
@@ -31,6 +36,8 @@
 ### [Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza](encryption-sensitivity-labels.md)
 ### [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)
 ### [Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)
+### [Usare etichette di riservatezza con team, gruppi e siti](sensitivity-labels-teams-groups-sites.md)
+### [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 ### [Etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md)
 
 ## [Data loss prevention (DLP)](data-loss-prevention-policies.md)
@@ -85,10 +92,11 @@
 ## [Informazioni sulla classificazione dei dati (anteprima)](data-classification-overview.md)
 ### [Visualizzazione delle attività con etichette (anteprima)](data-classification-activity-explorer.md)
 ### [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-getting-started-with.md)
-### [Utilizzo di un classificatore pronto all'uso (anteprima)](classifier-using-a-ready-to-use-classifier)
+### [Utilizzo di un classificatore pronto all'uso (anteprima)](classifier-using-a-ready-to-use-classifier.md)
 ### [Creazione e training di un classificatore (anteprima)](classifier-creating-a-trainable-classifier.md)
 
 # Gestire la governance delle informazioni
+## [Gestire la governance delle informazioni](manage-information-governance.md)
 ## [Importare dati](importing-pst-files-to-office-365.md)
 ### [Usare il caricamento di rete per importare i file PST](use-network-upload-to-import-pst-files.md)
 ### [Usare la spedizione unità per importare i file PST](use-drive-shipping-to-import-pst-files-to-office-365.md)
@@ -363,11 +371,16 @@
 
 # Gestire i rischi di conformità
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
-## [Compliance Manager (classico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [Compliance Manager (anteprima)](compliance-manager-overview.md)
-### [Novità di Compliance Manager (anteprima)](compliance-manager-release-notes.md)
-### [Uso di Compliance Manager (anteprima)](working-with-compliance-manager.md)
-### [Metodologia del punteggio di conformità (anteprima)](compliance-score-methodology.md)
+## Punteggio di conformità e Compliance Manager
+### [Punteggio di conformità (anteprima)](compliance-score.md)
+### [Configurare il punteggio di conformità (anteprima)](compliance-score-setup.md)
+### [Uso del punteggio di conformità (anteprima)](working-with-compliance-score.md)
+### [Calcolo del punteggio di conformità (anteprima)](compliance-score-methodology.md)
+### [Note sulla versione del punteggio di conformità (anteprima)](compliance-score-release-notes.md)
+### [Compliance Manager (anteprima)](compliance-manager-overview.md)
+#### [Novità di Compliance Manager (anteprima)](compliance-manager-release-notes.md)
+#### [Uso di Compliance Manager (anteprima)](working-with-compliance-manager.md)
+#### [Compliance Manager (classico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
 ## [Strumento di richiesta dell'interessato nell'ambito del GDPR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Information Protection di Office 365 per il GDPR](office-365-information-protection-for-gdpr.md)
@@ -389,8 +402,8 @@
 # [Piani di azione per la conformità alle normative](compliance-solutions-overview.md)
 
 ## [ISO: piano d'azione consigliato](iso-action-plan.md)
-## [NIST: piano d'azione consigliato](nist-action-plan.md) 
-
+## [NIST: piano d'azione consigliato](nist-action-plan.md)
+## [CCPA: domande frequenti](ccpa-faq.md)
 ## [GDPR](gdpr.md)
 ### [Piano d'azione consigliato per il GDPR](gdpr-action-plan.md)
 
@@ -587,6 +600,7 @@
 #### [PASF (Regno Unito)](offering-pasf-uk.md)
 
 ### Nord America
+#### [California Consumer Privacy Act (CCPA)](offering-ccpa.md)
 #### [Legge sulla privacy canadese](offering-canadian-privacy-laws.md)
 
 ### Sud America
