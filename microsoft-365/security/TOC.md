@@ -203,16 +203,16 @@
 ##### [Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica](./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 ##### [Creare siti del team in un ambiente di sviluppo/test per la campagna politica](./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
+#### [File protetti in Microsoft Teams](./office-365-security/secure-files-in-teams.md)
+##### [Distribuire team per tre livelli di protezione dei file](./office-365-security/deploy-teams-three-tiers.md)
+##### [Proteggere i file nei team con etichette di conservazione e prevenzione della perdita dei dati](./office-365-security/deploy-teams-retention-DLP.md)
+##### [Proteggere i file nei team con etichette di riservatezza](./office-365-security/deploy-teams-sensitivity-labels.md)
+##### [Proteggere Teams per i file in un ambiente di sviluppo/test](./office-365-security/secure-team-for-files-in-a-dev-test-environment.md)
+
 #### [Protezione di file e siti di SharePoint Online](./office-365-security/secure-sharepoint-online-sites-and-files.md)
 ##### [Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test](./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md)
 
-#### [Siti del team di SharePoint Online isolati](./office-365-security/isolated-sharepoint-online-team-sites.md)
-##### [Progettare un sito del team di SharePoint Online isolato](./office-365-security/design-an-isolated-sharepoint-online-team-site.md)
-##### [Distribuire un sito del team di SharePoint Online isolato](./office-365-security/deploy-an-isolated-sharepoint-online-team-site.md)
-##### [Gestire un sito del team di SharePoint Online isolato](./office-365-security/manage-an-isolated-sharepoint-online-team-site.md)
-##### [Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test](./office-365-security/isolated-sharepoint-online-team-site-dev-test-environment.md)
 #### [integrazione server SIEM](./office-365-security/siem-server-integration.md)
-
 
 #### [Exchange Online Protection](./office-365-security/exchange-online-protection-overview.md)
 ##### [Funzionalità di EOP](./office-365-security/eop-features.md)
