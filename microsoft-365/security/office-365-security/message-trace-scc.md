@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 3f5855f8951d91c1124a3f204c72e5f6e37d7e80
-ms.sourcegitcommit: 9206e7f2d61b5ba7f788fe5e7f75a2218c12c716
+ms.openlocfilehash: eb3730602fbef5162df48ec7795a9ac8c2b24bdd
+ms.sourcegitcommit: 83e564f07a2a039c0fb993ac5697241d33827acb
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968526"
+ms.locfileid: "37993731"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -63,7 +63,7 @@ I valori predefiniti sono **tutti i mittenti** e **tutti i destinatari**, ma è 
 - **A queste persone**: fare clic in questo campo per selezionare uno o più destinatari nell'organizzazione.
 
 > [!NOTE]
-> È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati, ad esempio `*@contoso.com`, ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente.<br/>È possibile incollare più mittenti o elenco di destinatari separati da un punto`;`e virgola (). Sono consentiti i simboli`\s`spazi`\r`(), ritorno a`\n`capo () o righe successive ().
+> È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati, ad esempio `*@contoso.com`, ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente.<br/>È possibile incollare più mittenti o elenchi di destinatari separati da punti e virgola (`;`). spazi (`\s`), ritorni a`\r`capo () o righe successive`\n`().
 
 ### <a name="time-range"></a>Intervallo di tempo
 
