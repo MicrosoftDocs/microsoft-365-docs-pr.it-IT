@@ -3,7 +3,7 @@ title: Modifiche al contenuto sulla distribuzione di Microsoft 365 Enterprise
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/30/2019
+ms.date: 10/31/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,31 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contenuto nuovo e modificato nella Guida alla distribuzione di Microsoft 365.
-ms.openlocfilehash: 6c965efcbbfebe4fd80ac983674a7d183793e946
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.openlocfilehash: 605805d715243c9ef00f681616976be0f4b6b705
+ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37889935"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37929279"
 ---
 # <a name="changes-to-microsoft-365-enterprise-deployment-content"></a>Modifiche al contenuto sulla distribuzione di Microsoft 365 Enterprise
 
 ## <a name="october-2019"></a>Ottobre 2019
 
 ### <a name="new-content"></a>Nuovo contenuto 
+
+
+- [Poster Team per dati altamente regolamentati](secure-teams-highly-regulated-data-scenario.md#poster)
+
+  [![Poster Team per dati altamente regolamentati](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+
+  È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+
+- [Poster Siti di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md#poster)
+
+  [![Poster Siti di SharePoint per dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+
+  È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 - [Distribuzione di Windows 10 con il poster di Autopilot](windows10-deploy-autopilot.md) 
 
@@ -47,7 +60,7 @@ ms.locfileid: "37889935"
 
 - [Poster Supportare i lavoratori remoti](empower-people-to-work-remotely.md#poster)
 
-  [![Poster Supportare i lavoratori remoti](./media/empower-people-to-work-remotely/empower-remote-workers-poster-half.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
+  [![Poster Supportare i lavoratori remoti](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
  
 
 ### <a name="updates-and-enhancements"></a>Aggiornamenti e miglioramenti

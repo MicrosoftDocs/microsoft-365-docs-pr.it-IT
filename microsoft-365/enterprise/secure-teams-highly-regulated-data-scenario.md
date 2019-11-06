@@ -3,7 +3,7 @@ title: Team per dati altamente regolamentati
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 10/31/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,18 +13,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un team sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: d917e14719744dad8a681e15a8547655c3a0457f
-ms.sourcegitcommit: d95aab99d7827dbb9248280044748ca05ebec786
+ms.openlocfilehash: c4a7c724b6fbb4515deba1a207eea31902f822e0
+ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37657803"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37929224"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Team per dati altamente regolamentati
 
 Questo articolo contiene suggerimenti e procedure per la configurazione di un team privato in Microsoft Teams che limiti l'accesso alle funzionalità di Teams, ad esempio chat, riunioni e file, ai soli membri e ai proprietari del gruppo di Office 365 per il team. 
 
 Oltre all'accesso privato basato sul gruppo Office 365, questo articolo descrive come configurare il sito del team di SharePoint privato sottostante, a cui è possibile accedere dalla sezione **File** di un canale del team, per implementare la sicurezza aggiuntiva necessaria per archiviare dati altamente regolamentati. In questo sito del team di SharePoint è possibile archiviare e collaborare su file, pagine, un calendario condiviso, attività, un blocco appunti ed elenchi.
+
+>[!Note]
+> Uno scenario analogo con SharePoint è disponibile [qui](teams-sharepoint-online-sites-highly-regulated-data.md).
+>
 
 Gli elementi della configurazione di un team per dati altamente regolamentati sono:
 
@@ -39,7 +43,13 @@ Gli elementi della configurazione di un team per dati altamente regolamentati so
 Ecco la configurazione risultante con un'etichetta di riservatezza.
 
 ![Configurazione dello scenario del team sicuro](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
- 
+
+<a name="poster"></a> Per un riepilogo di una pagina per questo scenario, vedere il [poster Team per dati altamente regolamentati](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
+
+[![Poster Team per dati altamente regolamentati](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+
+È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+
 ## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>Fase 1: Configurare un team per i dati altamente regolamentati
 
 La configurazione end-to-end prevede questi passaggi:

@@ -3,7 +3,7 @@ title: Guide al lab di test di Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 11/04/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Utilizzare queste guide al lab di test per configurare dimostrazioni, modelli di verifica o ambienti di sviluppo e test per Microsoft 365 Enterprise.
-ms.openlocfilehash: 082d110ca7b25d3613ee276b30066683cd0232b5
-ms.sourcegitcommit: 64a21c59d31a283ccbe87d16f0a174998e3aeba8
+ms.openlocfilehash: dadde9d6366e2d5d12bf632d0b77bf60ba9cdbab
+ms.sourcegitcommit: 78f2c5f89f4f59e4c1865369fc6ba82486881e8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37733423"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37964427"
 ---
 # <a name="microsoft-365-enterprise-test-lab-guides"></a>Guide al lab di test di Microsoft 365 Enterprise
 
@@ -32,9 +32,10 @@ Queste guide permettono di creare anche ambienti appositi per lo sviluppo e il t
   
 ![Guide del laboratorio di testing per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-> [!TIP]
-> Fare clic [qui](https://aka.ms/m365etlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
-  
+Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
+
+[![Serie di guide al lab di test di Microsoft 365 Enterprise](./media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+
 ## <a name="base-configuration"></a>Configurazione di base
 
 Per prima cosa è necessario creare un ambiente di testing per [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) che includa Office 365 E5, Enterprise Mobility + Security (EMS) E5 e Windows 10 Enterprise. È possibile creare due tipi di configurazione di base diversi:
@@ -117,6 +118,4 @@ Per verificare le funzionalità e le capacità relative alla gestione delle info
     
    Configurare la gestione degli accessi con privilegi per l'accesso just-in-time alle attività con privilegi e privilegi elevati nell'organizzazione di Office 365.
 
-## <a name="see-also"></a>Vedere anche
 
-[Testare Office 365 con le guide al lab di test (TLG) per l'adozione del cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
