@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5b6a2756514e94cb4f96141d6e7c9f6f2a6dd7ff
-ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
+ms.openlocfilehash: 7e3827dc12c04d2c7952f9321a70714691c5ed47
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37040803"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012301"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Distribuire e monitorare le impostazioni configurabili-Microsoft Managed Desktop
 
@@ -35,7 +35,7 @@ In queste istruzioni viene visualizzata l'immagine di sfondo del desktop. Dopo a
 
 **Per distribuire le modifiche**
 
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
 2. In **Impostazioni**, selezionare **configurabile**.
 3. In area di lavoro **stato distribuzione** selezionare l'impostazione che si desidera distribuire e quindi selezionare la distribuzione a fasi da distribuire.
 4. Fare clic su **Distribuisci** per distribuire la modifica a uno dei gruppi di distribuzione.
@@ -53,13 +53,13 @@ Dopo aver distribuito una modifica, è possibile ripristinare **lo stato della d
 Vengono illustrati i passaggi da eseguire per ripristinare una modifica utilizzando l'immagine di sfondo del desktop come esempio. 
 
 **Per annullare una modifica**
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
 2. In **Impostazioni**, selezionare **configurabile**.
 3. Nell'area di lavoro **stato distribuzione** selezionare l'impostazione che si desidera ripristinare e quindi selezionare la distribuzione a fasi da ripristinare.
 4. In **necessità di ripristinare questa modifica**, selezionare **Ripristina distribuzione**.
 
 ![Ripristinare la distribuzione delle impostazioni configurabili](images/3revert.png) 
 
-## <a name="additional-resources"></a>Risorse aggiuntive
+## <a name="additional-resources"></a>Altre risorse
 - [Panoramica delle impostazioni configurabili](config-setting-overview.md)
-- [Informazioni di riferimento sulle impostazioni configurabili](config-setting-ref.md) 
+- [Riferimento alle impostazioni configurabili](config-setting-ref.md) 

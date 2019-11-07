@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: da8f88251f6d1ae3185641dd408b29aa41cd7ea9
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390413"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012261"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Riferimento alle impostazioni configurabili-Microsoft Managed Desktop
 
@@ -31,9 +31,9 @@ Questi requisiti devono essere soddisfatti per un'immagine di sfondo del desktop
 ### <a name="customize-and-deploy-desktop-background-picture"></a>Personalizzare e distribuire l'immagine di sfondo del desktop
 
 **Per aggiungere un'immagine di sfondo del desktop personalizzata**
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **** configurabile.
-3. Nell' **** area di lavoro configurabile selezionare **immagine di sfondo del desktop**. 
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
+2. In **Impostazioni**, selezionare **configurabile**.
+3. Nell'area di lavoro **configurabile** selezionare **immagine di sfondo del desktop**. 
 4. Immettere il percorso dell'immagine che si desidera utilizzare. 
 5. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test. 
 
@@ -47,9 +47,9 @@ Le pagine iniziali del browser vengono aperte nelle singole schede quando gli ut
 ### <a name="customize-and-deploy-browser-start-pages"></a>Personalizzare e distribuire le pagine iniziali del browser
 
 **Per aggiungere una pagina iniziale del browser**
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **** configurabile.
-3. Nell' **** area di lavoro configurabile selezionare **pagine iniziali del browser**. 
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
+2. In **Impostazioni**, selezionare **configurabile**.
+3. Nell'area di lavoro **configurabile** selezionare **pagine iniziali del browser**. 
 4. Selezionare **Aggiungi pagina iniziale**.
 5. Nella **pagina Aggiungi inizio browser**immettere l'URL del sito che si desidera utilizzare e quindi fare clic su **Aggiungi pagina iniziale**. 
 6. Ripetere i passaggi 1-5 per altre pagine iniziali del browser. 
@@ -72,15 +72,15 @@ Questi requisiti devono essere soddisfatti per il file dell'elenco dei siti in m
 
 Queste procedure consigliate sono disponibili per consentire ai clienti di prendere decisioni per modernizzare l'infrastruttura IT:
 - **Scegliere un numero limitato di siti** : Microsoft Managed Desktop utilizza Microsoft Edge come browser preferito per migliorare la sicurezza complessiva per l'organizzazione e l'usabilità per gli utenti. La maggior parte dei siti in questo elenco è per le app Web legacy che richiedono una versione precedente di un browser che non includerà il numero di funzionalità di sicurezza. 
-- Si consideri **un'alternativa** : si consideri un sito diverso o un'app Web che non richiede un browser meno recente. In alternativa, è consigliabile aggiornare il sito in modo che possa utilizzare browser più recenti. I browser più recenti utilizzano la tecnologia più recente e contribuiscono a migliorare la sicurezza.
+- Si **consideri un'alternativa** : si consideri un sito diverso o un'app Web che non richiede un browser meno recente. In alternativa, è consigliabile aggiornare il sito in modo che possa utilizzare browser più recenti. I browser più recenti utilizzano la tecnologia più recente e contribuiscono a migliorare la sicurezza.
 
 ### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>Personalizzare e distribuire il percorso dell'elenco delle modalità sito Enterprise
 
 **Per aggiungere una posizione nell'elenco delle modalità sito dell'organizzazione**
 
-1.  Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
-2.  In **Impostazioni**, selezionare **** configurabile.
-3.  Nell' **** area di lavoro configurabile selezionare **percorso dell'elenco dei siti in modalità Enterprise**. 
+1.  Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
+2.  In **Impostazioni**, selezionare **configurabile**.
+3.  Nell'area di lavoro **configurabile** selezionare **percorso dell'elenco dei siti in modalità Enterprise**. 
 4.  Immettere il percorso HTTPS per l'elenco di siti. 
 5.  Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
@@ -100,18 +100,18 @@ Specificare il nome di dominio completo (FQDN) per i siti Intranet o Internet pe
 
 **Per aggiungere un sito attendibile**
 
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **** configurabile.
-3. Nell' **** area di lavoro configurabile selezionare **siti attendibili**e quindi fare clic su **Aggiungi sito attendibile**. 
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
+2. In **Impostazioni**, selezionare **configurabile**.
+3. Nell'area di lavoro **configurabile** selezionare **siti attendibili**e quindi fare clic su **Aggiungi sito attendibile**. 
 4. In **Aggiungi sito attendibile**immettere l'URL, scegliere un'area di sicurezza e quindi fare clic su **Aggiungi sito attendibile**. 
 5. Ripetere i passaggi 1-4 per ogni sito attendibile che si desidera aggiungere. 
 6. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
 **Per rimuovere un sito attendibile**
 
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **** configurabile.
-3. Nell' **** area di lavoro configurabile selezionare **siti attendibili**. 
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
+2. In **Impostazioni**, selezionare **configurabile**.
+3. Nell'area di lavoro **configurabile** selezionare **siti attendibili**. 
 4. Selezionare il sito che si desidera eliminare, quindi selezionare **Elimina**. 
 5. Ripetere i passaggi 1-4 per ogni sito attendibile che si desidera eliminare. 
 6. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
@@ -134,14 +134,14 @@ Questi requisiti devono essere soddisfatti per le eccezioni del server proxy e d
 
 **Per aggiungere una singola eccezione del sito proxy**
 
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal)
-2. In **Impostazioni**, selezionare **** configurabile.
-3. Nell' **** area di lavoro configurabile selezionare **proxy**. 
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal)
+2. In **Impostazioni**, selezionare **configurabile**.
+3. Nell'area di lavoro **configurabile** selezionare **proxy**. 
 4. Immettere l' **Indirizzo** e il **numero di porta** del server proxy, quindi selezionare **Aggiungi eccezione proxy**. 
 5. Immettere l'URL di un sito http valido e quindi fare clic su **Aggiungi eccezione proxy**. 
 6. Ripetere i passaggi 1-5 per ogni sito attendibile che si desidera aggiungere. 
 7. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
-## <a name="additional-resources"></a>Risorse aggiuntive
+## <a name="additional-resources"></a>Altre risorse
 - [Panoramica delle impostazioni configurabili](config-setting-overview.md) 
-- [Distribuire le impostazioni configurabili](config-setting-deploy.md)
+- [Distribuire impostazioni configurabili](config-setting-deploy.md)

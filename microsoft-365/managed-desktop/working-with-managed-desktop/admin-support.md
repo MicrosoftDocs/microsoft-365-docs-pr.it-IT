@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 37c44a43662b6befd92c9710c65814399db4d54f
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b17b5a3458458ff0c73c93fa184ef8ff6a064199
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37159684"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011997"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Supporto di amministrazione per Microsoft Managed Desktop
 
@@ -21,7 +21,7 @@ ms.locfileid: "37159684"
 >Assicurarsi di aver [configurato un contatto di amministratore per l'](../get-started/add-admin-contacts.md) applicazione di pacchetti, dispositivi, sicurezza e altro. Non è possibile inviare una richiesta di supporto in una di queste aree se un contatto di amministratore non è configurato.
 
 **Per inviare una richiesta di supporto**
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal). 
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal). 
 2. Nelle **richieste di supporto**, selezionare **+ nuovo ticket di supporto**.
 3. Selezionare il **tipo di richiesta di supporto** corrispondente alla guida necessaria. La tabella seguente illustra le opzioni. 
 4. Selezionare il **livello di gravità**. Per ulteriori informazioni, vedere [definizioni di gravità delle richieste di supporto](#sev). 

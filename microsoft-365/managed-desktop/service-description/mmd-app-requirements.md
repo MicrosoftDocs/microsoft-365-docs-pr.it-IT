@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e0ca142e2ef84f198ee154c5b7c7f4f6621c37c
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 6b5f1d7cf8070808aecb57c7f5b2c16ec84b37d6
+ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982457"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38020369"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Requisiti per le app di Microsoft Managed Desktop
 
@@ -38,7 +38,7 @@ Alcuni tipi di applicazioni non sono consentiti sui dispositivi Microsoft Manage
 
 ## <a name="restricted-app-behaviors"></a>Comportamenti delle app con limitazioni
 
-Alcuni comportamenti delle app possono influire negativamente sull'esperienza dell'utente o possono presentare un rischio per la sicurezza per i dispositivi desktop Microsoft gestiti. Le app con i comportamenti seguenti non sono autorizzate a essere eseguite nell'ambiente Microsoft Managed Desktop senza una specifica esenzione da parte di Microsoft.
+Alcuni comportamenti delle app possono influire negativamente sull'esperienza dell'utente o possono presentare un rischio per la sicurezza per i dispositivi desktop Microsoft gestiti. Le app con i comportamenti seguenti non sono autorizzate a essere eseguite nell'ambiente Microsoft Managed Desktop senza una specifica di Microsoft.
 
 Esperienza utente:
 - Installare servizi in background
@@ -58,5 +58,5 @@ Sicurezza:
 
 Microsoft Managed Desktop supporta solo i driver di dispositivo disponibili tramite Windows Update o la posta in arrivo installata con il dispositivo gestito Microsoft. 
 
-Se un'applicazione richiede un driver specifico per l'esecuzione, è considerata un'applicazione limitata e richiede una deroga per la distribuzione in Microsoft Managed Desktop. 
+Se un'applicazione richiede un driver specifico per l'esecuzione, è considerata un'applicazione limitata e richiede la distribuzione in Microsoft Managed Desktop. 
 

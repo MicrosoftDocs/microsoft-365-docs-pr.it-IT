@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 87968e1238ee5b3dce6e569846e253dada72dd6d
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390733"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012411"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Gestire le app line-of-business in Microsoft Managed Desktop
 
@@ -25,7 +25,7 @@ Esistono due modi per gestire gli aggiornamenti delle app per le app che sono st
 ## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Aggiornare le app line-of-business in Microsoft Managed Desktop
 
 **Per aggiornare le app line-of-business in Microsoft Managed Desktop Portal**
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mmdportal).
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mmdportal).
 2. In **inventario**, selezionare **app**.  
 3. Selezionare l'app che si desidera aggiornare e quindi fare clic su **modifica**.
 4. In **Gestisci**selezionare **Proprietà**. 
@@ -58,7 +58,7 @@ Se viene rilevato un errore quando viene distribuita una nuova versione di un'ap
 
 **Per eseguire il rollback di un'app line-of-business a una versione precedente**
 
-1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mmdportal).
+1. Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mmdportal).
 2. In **inventario**, selezionare **app**.  
 3. Seleziona l'app di cui hai bisogno per eseguire il rollback e quindi seleziona **modifica**.
 4. In **Gestisci**selezionare **Proprietà**. 

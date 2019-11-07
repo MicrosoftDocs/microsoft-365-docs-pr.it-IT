@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: dd86637aeb0d8a8690729a97e81ad5e2bea62818
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 7282e1f9d780c127dd70845efefa90aa03e57537
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982889"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011847"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Configurare i dispositivi Microsoft Managed Desktop
 
@@ -24,7 +24,7 @@ Si consiglia di collaborare con uno dei partner del dispositivo approvati. Per u
 1. Esaminare l'elenco dei [dispositivi attualmente approvati](../service-description/device-list.md).
 2. Ordinare i dispositivi per l'utilizzo di un partner di dispositivo approvato.
 3. Una volta arrivati, eseguire una delle operazioni seguenti:
-    - [Registrare i nuovi dispositivi manualmente](register-devices-self.md)
+    - [Registrare manualmente i nuovi dispositivi](register-devices-self.md)
     - Collaborare con un partner per la registrazione dei dispositivi
 4. Preparare [gli utenti](get-started-devices.md) a utilizzare i dispositivi Microsoft Managed Desktop
 
@@ -32,6 +32,17 @@ Si consiglia di collaborare con uno dei partner del dispositivo approvati. Per u
 
 1. Esaminare l'elenco dei [dispositivi attualmente approvati](../service-description/device-list.md) per identificare quali dispositivi sono stati approvati per l'utilizzo con Microsoft Managed Desktop. Se si riutilizza un dispositivo esistente, sarà necessario ricrearlo.
 2. Eseguire una delle operazioni seguenti:
-    - [Registrare manualmente i dispositivi esistenti](register-reused-devices-self.md)
+    - [Registrare manualmente i dispositivi già presenti](register-reused-devices-self.md)
     - Collaborare con un partner per la registrazione dei dispositivi
 3. Preparare [gli utenti](get-started-devices.md) a utilizzare i dispositivi Microsoft Managed Desktop
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Passaggi per iniziare a utilizzare Microsoft Managed Desktop
+
+1. [Aggiungere e verificare i contatti di amministratore nel portale di amministrazione](add-admin-contacts.md)
+2. [Regolare l'accesso condizionale](conditional-access.md)
+3. [Assegnare licenze](assign-licenses.md)
+4. [Distribuire il portale aziendale di Intune](company-portal.md)
+5. [Abilitazione del roaming dello stato dell'organizzazione](enterprise-state-roaming.md)
+6. Configurare i dispositivi (questo argomento)
+7. [Preparare gli utenti a usare i dispositivi](get-started-devices.md)
+8. [Distribuire le app](deploy-apps.md)

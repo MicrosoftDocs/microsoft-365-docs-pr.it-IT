@@ -1,22 +1,24 @@
 ---
-title: Aggiungere i contatti di amministratore nel portale di amministrazione di Microsoft Managed Desktop
+title: Aggiungere e verificare i contatti di amministratore nel portale di amministrazione
 description: Indicare gli utenti che devono contattare per ogni area di interesse.
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2178b871da412d12bf20dae9b72d7562e2bc4654
-ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
+ms.openlocfilehash: 3f77a5f6f0af83ea82d2ab3cea0798b95e27c2d2
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243947"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38012067"
 ---
-# <a name="add-admin-contacts-in-microsoft-managed-desktop-admin-portal"></a>Aggiungere i contatti di amministratore nel portale di amministrazione di Microsoft Managed Desktop
+# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Aggiungere e verificare i contatti di amministratore nel portale di amministrazione
 
-Esistono diversi modi in cui il servizio Microsoft Managed Desktop comunica con i clienti. Per semplificare la comunicazione e verificare che i contatti migliori siano stati verificati, è necessario fornire un set di contatti di amministratore. Microsoft Managed Desktop IT Operations contatterà queste persone per risolvere i problemi di assistenza per il tenant. 
+Esistono diversi modi in cui il servizio Microsoft Managed Desktop comunica con i clienti. Per semplificare la comunicazione e verificare che il controllo venga effettuato con gli utenti giusti, è necessario fornire un set di contatti di amministratore. Microsoft Managed Desktop IT Operations contatterà queste persone per risolvere i problemi di assistenza per il tenant.
+
+> [!IMPORTANT]
+> Potrebbe essere già stato aggiunto questi contatti nel portale di amministrazione. In caso affermativo, prendere un momento per verificare che l'elenco dei contatti sia accurato, in quanto Microsoft Managed Desktop **deve** essere in grado di raggiungerli se si verifica un grave incidente.
 
 ## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory Access per il portale di amministrazione di Microsoft Managed Desktop
 
@@ -26,27 +28,27 @@ Il portale di amministrazione di Microsoft Managed Desktop richiede che gli uten
 - Amministratore fatturazione
 - Amministratore del supporto tecnico
 
-L'amministratore globale deve essere quello di registrazione del cliente in Microsoft Managed Desktop. Tutti e cinque i ruoli dispongono dello stesso accesso all'interno del portale di amministrazione per avviare e visualizzare le attività. Per ulteriori informazioni sull'assegnazione di questi ruoli in Azure AD, vedere [autorizzazioni per il ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
+È necessario che l'amministratore globale sia quello che deve registrare la propria organizzazione in Microsoft Managed Desktop. Tutti e cinque i ruoli dispongono dello stesso accesso all'interno del portale di amministrazione per avviare e visualizzare le attività. Per ulteriori informazioni sull'assegnazione di questi ruoli in Azure AD, vedere [autorizzazioni per il ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
 
 ## <a name="admin-contact-areas-of-focus"></a>Aree di contatto di amministrazione dello stato attivo
 
-I contatti amministrativi devono essere la persona o il gruppo migliore in grado di rispondere alle domande e prendere decisioni per diverse aree di interesse. Microsoft Managed Desktop Operations contatterà questi contatti di amministrazione per le domande relative alle richieste di supporto presentate dal cliente. Questi contatti di amministratore ricevono notifiche per gli aggiornamenti delle richieste di supporto e i nuovi messaggi. Tra queste aree sono incluse le seguenti:
+I contatti amministrativi devono essere la persona o il gruppo migliore in grado di rispondere alle domande e prendere decisioni per diverse aree di interesse. **Microsoft Managed Desktop Operations contatterà questi contatti di amministrazione per le domande relative alle richieste di supporto presentate dal cliente.** Questi contatti di amministratore ricevono notifiche per gli aggiornamenti delle richieste di supporto e i nuovi messaggi. Tra queste aree sono incluse le seguenti:
 
 Area di interesse | Per domande su
 --- | ---
 Pacchetti app | Risoluzione dei problemi relativi agli imballaggi delle app
 Dispositivi | Integrità del dispositivo, risoluzione dei problemi con i dispositivi Microsoft Managed Desktop
 Sicurezza | Risoluzione dei problemi di sicurezza con i dispositivi Microsoft Managed Desktop
-Supporto tecnico IT | nei casi in cui Microsoft Managed Desktop supporta i ticket degli utenti finali al di fuori delle aree di supporto di MMD 
+Supporto tecnico IT | nei casi in cui il personale di supporto passa oltre i ticket degli utenti finali al di fuori delle aree di supporto di Microsoft Managed Desktop 
 Altro | Per i problemi non coperti da altre aree
 
-Chiunque sia scelto per questi contatti deve avere le conoscenze e l'autorità necessarie per prendere decisioni per l'ambiente desktop Microsoft gestito. Quando si esegue l'onboarding dell'ambiente Microsoft Managed Desktop, viene richiesto di aggiungere contatti per il supporto tecnico e la sicurezza locali. 
+**Chiunque sia scelto per questi contatti deve avere le conoscenze e l'autorità necessarie per prendere decisioni per l'ambiente desktop Microsoft gestito.** Quando si esegue l'onboarding dell'ambiente Microsoft Managed Desktop, viene richiesto di aggiungere contatti per il supporto tecnico e la sicurezza locali. 
 
 I contatti amministrativi sono necessari quando si [Invia una richiesta di supporto](../working-with-managed-desktop/support.md). È necessario disporre di un contatto di amministrazione per l'area dello stato attivo della richiesta di supporto. 
 
 **Per aggiungere contatti di amministratore**
 
-1.  Accedere al [portale di amministrazione di Microsoft Managed Desktop](http://aka.ms/mwaasportal). 
+1.  Accedere al [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal). 
 
 2.  In **supporto**, selezionare **contatti di amministratore**. 
 
@@ -62,3 +64,13 @@ I contatti amministrativi sono necessari quando si [Invia una richiesta di suppo
 
 5. Ripetere l'attività per ogni area di interesse. 
 
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Passaggi per iniziare a utilizzare Microsoft Managed Desktop
+
+1. Aggiungere e verificare i contatti di amministratore nel portale di amministrazione (questo argomento)
+2. [Regolare l'accesso condizionale](conditional-access.md)
+3. [Assegnare licenze](assign-licenses.md)
+4. [Installare il portale aziendale di Intune nei dispositivi](company-portal.md)
+5. [Abilitazione del roaming dello stato dell'organizzazione](enterprise-state-roaming.md)
+6. [Configurare i dispositivi Microsoft Managed Desktop](set-up-devices.md)
+7. [Preparare gli utenti a usare i dispositivi](get-started-devices.md)
+8. [Distribuire le app ai dispositivi](deploy-apps.md)

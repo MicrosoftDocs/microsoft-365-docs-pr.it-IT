@@ -1,20 +1,19 @@
 ---
-title: Installare i dispositivi Microsoft Managed Desktop del portale aziendale di Intune
+title: Installare il portale aziendale di Intune nei dispositivi
 description: Informazioni sull'installazione dell'app portale aziendale nei dispositivi Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, portale aziendale
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 03/08/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a9ce2b2455b6036170636ac564c450676473ac48
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.openlocfilehash: 121771dd2474d58e7bd6a0d56218563c8785d4bf
+ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390703"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38011957"
 ---
-# <a name="install-intune-company-portal-on-microsoft-managed-desktop-devices"></a>Installare il portale aziendale di Intune sui dispositivi Microsoft Managed Desktop
+# <a name="install-intune-company-portal-on-on-devices"></a>Installare il portale aziendale di Intune nei dispositivi
 
 Microsoft Managed Desktop richiede che gli amministratori IT installino il portale aziendale di Intune per gli utenti con dispositivi Microsoft Managed Desktop. Di seguito sono illustrati alcuni vantaggi per l'organizzazione:
 - Gli utenti dispongono di un unico posto per esplorare e installare le applicazioni disponibili. 
@@ -44,3 +43,14 @@ Per ulteriori informazioni su come inviare richieste di supporto con Microsoft M
 Come amministratore IT per l'organizzazione, è importante consentire agli utenti di sapere come usare il portale aziendale nell'organizzazione. Microsoft Managed Desktop consiglia di:
 - Procedure per l'installazione di applicazioni dal portale aziendale. Per ulteriori informazioni, vedere [Install and share apps on your device](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows).
 - Come inviare richieste agli amministratori IT per le applicazioni che non sono attualmente disponibili.
+
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Passaggi per iniziare a utilizzare Microsoft Managed Desktop
+
+1. [Aggiungere e verificare i contatti di amministratore nel portale di amministrazione](add-admin-contacts.md)
+2. [Regolare l'accesso condizionale](conditional-access.md)
+3. [Assegnare licenze](assign-licenses.md)
+4. Distribuire il portale aziendale di Intune (questo argomento)
+5. [Abilitazione del roaming dello stato dell'organizzazione](enterprise-state-roaming.md)
+6. [Configurare i dispositivi](set-up-devices.md)
+7. [Preparare gli utenti a usare i dispositivi](get-started-devices.md)
+8. [Distribuire le app](deploy-apps.md)
