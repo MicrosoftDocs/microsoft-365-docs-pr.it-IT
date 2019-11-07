@@ -1,5 +1,5 @@
 # Microsoft 365 Business
-## [Microsoft 365](index.md)
+## [Microsoft 365](index.yml)
 ## [Che cos'è Microsoft 365 Business?](microsoft-365-business-overview.md)
 ## [Acquistare Microsoft 365 Business](sign-up.md)
 ## [Prerequisiti per la protezione dei dati personali](pre-requisites-for-data-protection.md)
@@ -32,7 +32,10 @@
 ### [Impostazioni di protezione dei dispositivi per i PC Windows 10](protection-settings-for-windows-10-pcs.md)
 #### [Convalidare le impostazioni su PC Windows 10](validate-settings-on-windows-10-pcs.md)
 ### [Impostazioni di protezione delle app per PC Windows 10](protection-settings-for-windows-10-devices.md)
-## [Eseguire la migrazione a Microsoft 365 Business](migrate-to-microsoft-365-business.md)
+## Eseguire la migrazione a Microsoft 365 Business
+### [Eseguire la migrazione da Office 365 Business Premium](migrate-to-microsoft-365-business.md)
+### [Eseguire la migrazione da Office 365 E3](migrate-from-e3.md)
+### [Eseguire la migrazione a Microsoft 365 Enterprise](migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md)
 ## Fatturazione
 ### [Fattura](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
 ### [Paga](/Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json)
