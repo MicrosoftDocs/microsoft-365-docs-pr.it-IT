@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 per le campagne
-ms.openlocfilehash: 02fb7f62466f5830f83128126a89f7e6a830dc16
-ms.sourcegitcommit: 204deabd34e5ee38b59d4742d75e74e3873cf892
+ms.openlocfilehash: d80e25aedaf3a0160fc6ed926222dd3c12cf7466
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35183321"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029080"
 ---
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 per le campagne
 ===========================
@@ -55,7 +55,7 @@ Questa raccolta include gli elementi seguenti:
 Per ulteriori informazioni su ciò che è incluso, vedere [Microsoft 365 business](https://www.microsoft.com/microsoft-365/business). 
 
 
-<a name="get-started"></a>Attività iniziali
+<a name="get-started"></a>Introduzione
 --------------------------
 
 <ul class="panelContent cardsJ">
@@ -65,7 +65,7 @@ Per ulteriori informazioni su ciò che è incluso, vedere [Microsoft 365 busines
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
+                            <img src="https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -168,7 +168,7 @@ Dopo aver configurato l'ambiente Microsoft 365 sicuro, è possibile utilizzare l
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Condivisione di file e video</h3>
+                        <h3>Condividere file e video</h3>
                         <p>Salvare i file e i video nel cloud in modo che siano disponibili per tutte le persone appropriate.</p>
                         <p><a href="share-files-and-videos.md">Avviare la condivisione</a></p>
                     </div>

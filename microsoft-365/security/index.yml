@@ -13,18 +13,18 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: a621e7fab430e332c44b45a84e0e1a8272025a16
-  ms.sourcegitcommit: a77c4889c5b7d3b8f16e74917079300e8f222941
+  ms.openlocfilehash: 8a93fc27b8d59484ae603d7bf76e954420e64966
+  ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 09/30/2019
-  ms.locfileid: "37329194"
+  ms.lasthandoff: 11/07/2019
+  ms.locfileid: "38029300"
 landingContent:
 - title: Microsoft Threat Protection
   linkLists:
   - linkListType: overview
     links:
-    - text: Che cos'è Microsoft Threat Protection?
+    - text: Che cos’è Microsoft Threat Protection?
       url: mtp/microsoft-threat-protection.md
     - text: Centro sicurezza Microsoft 365
       url: mtp/overview-security-center.md
@@ -35,7 +35,7 @@ landingContent:
     - text: Che cos'è Microsoft Defender ATP?
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
     - text: Panoramica delle funzionalità
-      url: https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview
+      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
 - title: Office 365 ATP
   linkLists:
   - linkListType: overview
@@ -49,31 +49,31 @@ landingContent:
   - linkListType: overview
     links:
     - text: Che cos'è Azure ATP?
-      url: https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp
+      url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
     - text: Architettura ATP di Azure
-      url: https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-architecture
+      url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
 - title: Centro sicurezza di Azure
   linkLists:
   - linkListType: overview
     links:
     - text: Che cos'è il Centro sicurezza di Azure?
-      url: https://docs.microsoft.com/en-us/azure/security-center/security-center-intro
+      url: https://docs.microsoft.com/azure/security-center/security-center-intro
     - text: Funzionalità supportate
-      url: https://docs.microsoft.com/en-us/azure/security-center/security-center-services
+      url: https://docs.microsoft.com/azure/security-center/security-center-services
 - title: Microsoft Cloud App Security
   linkLists:
   - linkListType: overview
     links:
     - text: Che cos'è Microsoft cloud app Security?
-      url: https://docs.microsoft.com/en-us/cloud-app-security/what-is-cloud-app-security
+      url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
     - text: Introduzione a Microsoft cloud app Security
-      url: https://docs.microsoft.com/en-us/cloud-app-security/getting-started-with-cloud-app-security
+      url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
 - title: Sentinella di Azure (anteprima)
   linkLists:
   - linkListType: overview
     links:
     - text: Che cos'è Azure Sentinel? Anteprima
-      url: https://docs.microsoft.com/en-us/azure/sentinel/overview
+      url: https://docs.microsoft.com/azure/sentinel/overview
 - title: Gestione della sicurezza
   linkLists:
   - linkListType: overview
