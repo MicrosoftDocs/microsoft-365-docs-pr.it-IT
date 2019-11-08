@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 description: Informazioni su come leggere e comprendere la fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: e0af9ec0808de97e55ef550c6feb51a146dbb5f6
-ms.sourcegitcommit: 1e3916bbe94d4fbb858566e7db5018e1e46bcd0d
+ms.openlocfilehash: 79d652f56617837019322b7329d918488283659a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37646438"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029040"
 ---
 # <a name="understand-your-invoice"></a>Comprendere la fattura
 
 La fattura fornisce un riepilogo degli addebiti e delle istruzioni per il pagamento. È possibile [visualizzare la fattura online](#view-your-online-invoice) nell'interfaccia di amministrazione di Microsoft 365. È anche possibile scaricarlo nel formato di documento portatile (. pdf) per inviare tramite posta elettronica.
 
-Se si dispone di un abbonamento a Office 365, vedere [visualizzare la fattura per office 365 for business](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
+Se si dispone di un abbonamento a Office 365, vedere [visualizzare la fattura per office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
 
 ## <a name="understand-the-invoice-header"></a>Informazioni sull'intestazione della fattura
 
@@ -50,13 +50,13 @@ Il **Riepilogo di fatturazione** Visualizza il riepilogo degli addebiti dopo il 
 | --- | --- |
 | Addebiti|Numero totale di prodotti acquistati per il periodo di fatturazione e relativi oneri e tasse. Gli acquisti vengono aggregati per fornire una visualizzazione concisa della fattura. |
 | Riconoscimenti |Crediti ricevuti da resi |
-| Crediti di Azure applicati |I crediti di Azure che vengono applicati automaticamente a Azure addebita ogni periodo di fatturazione. Se non si dispone di alcun credito di Azure, questo campo è nascosto. Per ulteriori informazioni sui crediti di Azure, vedere [Track Microsoft Customer Agreement Azure Credit Balance](https://docs.microsoft.com/en-us/azure/billing/billing-mca-check-azure-credits-balance). |
+| Crediti di Azure applicati |I crediti di Azure che vengono applicati automaticamente a Azure addebita ogni periodo di fatturazione. Se non si dispone di alcun credito di Azure, questo campo è nascosto. Per ulteriori informazioni sui crediti di Azure, vedere [Track Microsoft Customer Agreement Azure Credit Balance](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
 | Subtotale |L'importo preimpostale dovuto |
 | Imposta |Il tipo e la quantità di tasse pagate, a seconda del paese del profilo di fatturazione. Se non è necessario pagare le tasse, non viene visualizzata alcuna tassa sulla fattura. |
 
 ### <a name="understand-your-charges"></a>Comprendere le tariffe
 
-Le pagine di addebiti mostrano i costi ripartiti per prodotto. Per i clienti di Azure, le tariffe potrebbero essere organizzate in base alla sezione fattura. Per ulteriori informazioni sul modo in cui vengono utilizzate le sezioni fatture con i prodotti di Azure, vedere le sezioni relative alle [fatture](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview#invoice-sections) in [iniziare a utilizzare il proprio account di fatturazione Microsoft](https://docs.microsoft.com/en-us/azure/billing/billing-mca-overview). All'interno di ogni ordine di prodotto, il costo è suddiviso per famiglia di servizi.
+Le pagine di addebiti mostrano i costi ripartiti per prodotto. Per i clienti di Azure, le tariffe potrebbero essere organizzate in base alla sezione fattura. Per ulteriori informazioni sul modo in cui vengono utilizzate le sezioni fatture con i prodotti di Azure, vedere le sezioni relative alle [fatture](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) in [iniziare a utilizzare il proprio account di fatturazione Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-overview). All'interno di ogni ordine di prodotto, il costo è suddiviso per famiglia di servizi.
 
 | Termine |Descrizione |
 | --- | --- |
@@ -76,7 +76,7 @@ L'importo totale dovuto per ogni famiglia di servizi viene calcolato sottraendo 
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-Se sulla fattura sono presenti costi di Azure che si desiderano maggiori dettagli, vedere [understand addebits on your Microsoft Customer Agreement fatture](https://docs.microsoft.com/en-us/azure/billing/billing-mca-understand-your-bill).
+Se sulla fattura sono presenti costi di Azure che si desiderano maggiori dettagli, vedere [understand addebits on your Microsoft Customer Agreement fatture](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Comprendere l'ultima pagina fattura
 
@@ -110,4 +110,4 @@ Le fatture sono disponibili online. Un collegamento alla fattura online è dispo
 
 Se hai domande o hai bisogno di aiuto con i crediti di Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Crea una richiesta di supporto con supporto di Azure</a>.
 
-In caso di domande o di assistenza per la fattura nell'interfaccia di amministrazione di Microsoft 365, [contattare il supporto tecnico per i prodotti business](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products).
+In caso di domande o di assistenza per la fattura nell'interfaccia di amministrazione di Microsoft 365, [contattare il supporto tecnico per i prodotti business](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).

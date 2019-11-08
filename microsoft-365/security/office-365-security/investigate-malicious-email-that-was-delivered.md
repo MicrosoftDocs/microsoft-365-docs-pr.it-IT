@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: bf099dfe8fffdc763d42122e466c982bb90b6492
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 57d419c291fdfed3a5d7237ae2021e9ef06723f5
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083426"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031901"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Individuare e studiare messaggi di posta elettronica dannosi che sono stati recapitati in Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "37083426"
 
 Verificare che vengano soddisfatti i seguenti requisiti:
   
-- L'organizzazione dispone di [Office 365 Advanced Threat Protection](office-365-atp.md) e le [licenze vengono assegnate agli utenti](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+- L'organizzazione dispone di [Office 365 Advanced Threat Protection](office-365-atp.md) e le [licenze vengono assegnate agli utenti](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
     
 - La [registrazione di controllo di Office 365](../../compliance/turn-audit-log-search-on-or-off.md) è attivata per l'organizzazione. 
     
@@ -174,7 +174,7 @@ La **sequenza temporale della posta elettronica** è un campo in Esplora minacce
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Protezione avanzata dalle minacce di Office 365](office-365-ti.md)
+[Office 365 Advanced Threat Protection](office-365-ti.md)
   
 [Protezione dalle minacce in Office 365](protect-against-threats.md)
   

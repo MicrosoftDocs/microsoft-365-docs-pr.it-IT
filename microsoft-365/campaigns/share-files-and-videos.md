@@ -1,5 +1,5 @@
 ---
-title: Condivisione di file e video
+title: Condividere file e video
 ms.author: stevhord
 author: twerner
 manager: scotv
@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Condividere file e video all'interno della propria campagna con Microsoft teams e SharePoint.
-ms.openlocfilehash: c554ba2b4e7945cefa9a1e7114b3726efa58561e
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 14daa826e7df961baefaf7f6e7a17530842aad25
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772343"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031191"
 ---
-# <a name="share-files-and-videos"></a>Condivisione di file e video
+# <a name="share-files-and-videos"></a>Condividere file e video
 
 Quando è necessario controllare gli utenti che possono visualizzare e gli utenti che possono modificare i file, è necessario archiviarli in una posizione sicura, in cui è possibile verificare che le autorizzazioni vengano applicate in modo appropriato. È possibile utilizzare Microsoft teams per archiviare i file e quindi condividere i file all'interno o all'esterno della propria campagna con Microsoft teams o inviando collegamenti di SharePoint. L'invio di un collegamento piuttosto che di un allegato di posta elettronica significa che è possibile sapere chi è la visualizzazione e la modifica dei file e non possono essere visualizzati o modificati senza la propria autorizzazione. 
 
@@ -62,7 +62,7 @@ Per condividere un collegamento sicuro con un ospite, senza utilizzare Microsoft
 
 Per creare e condividere video, attenersi alla seguente procedura.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWrv0F]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
 Scaricare un'infografica in [formato PDF](https://go.microsoft.com/fwlink/?linkid=2079435) o [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) per ottenere una breve panoramica dei modi per condividere i file.
 

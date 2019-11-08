@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Scoprire in che modo le funzionalità di intelligence in Office 365 Advanced Threat Protection consentono di ricercare le minacce per la propria organizzazione, di rispondere a malware, phishing e altri attacchi che Office 365 ha rilevato per conto dell'utente e di cercare una minaccia indicatori.
-ms.openlocfilehash: 18350245036a39ccda32c6a09ba97fb9c9449d41
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 749ddef383839043141027ace4a2d906932b7e91
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084618"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031871"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Analisi delle minacce e risposta alle minacce in Office 365
 
@@ -38,7 +38,7 @@ Le funzionalità di ricerca e di risposta alle minacce consentono di approfondir
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Familiarizzare con gli strumenti di ricerca e di risposta alle minacce
 
-La superficie delle funzionalità di ricerca e risposta alle &amp; minacce nel centro sicurezza e conformità, come un insieme di strumenti e flussi di lavoro di risposta, tra cui il [dashboard di minacce](#threat-dashboard), [Explorer](#threat-explorer), [incidenti](#incidents), [simulatore di attacco](#attack-simulator)e [Risposta & di analisi automatizzata](automated-investigation-response-office.md).
+Analisi delle minacce e funzionalità di risposta emergono &amp; nel centro sicurezza e conformità, come un insieme di strumenti e flussi di lavoro di risposta, tra cui il [dashboard di minacce](#threat-dashboard), l' [esploratore](#threat-explorer), gli [incidenti](#incidents), il [simulatore di attacco](#attack-simulator)e la risposta all' [analisi & automatizzata](automated-investigation-response-office.md).
   
 ### <a name="threat-dashboard"></a>Dashboard di minacce
 
@@ -87,7 +87,7 @@ Nell'ambito dell'offerta di Office 365 Advanced Threat Protection piano 2, gli a
 Le funzionalità di ricerca e risposta alle minacce di Office 365 sono incluse in Office 365 Advanced Threat Protection Plan 2 e Enterprise E5. 
 
 > [!TIP]
-> Se l'organizzazione dispone di un abbonamento a Office 365 che non include queste funzionalità di analisi e di risposta alle minacce, è possibile acquistare Office 365 Advanced Threat Protection Plan 2 come componente aggiuntivo. Per ulteriori informazioni sulle opzioni di piano, vedere [Descrizione del servizio office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) e [acquistare o modificare un componente aggiuntivo per Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
+> Se l'organizzazione dispone di un abbonamento a Office 365 che non include queste funzionalità di analisi e di risposta alle minacce, è possibile acquistare Office 365 Advanced Threat Protection Plan 2 come componente aggiuntivo. Per ulteriori informazioni sulle opzioni di piano, vedere [Descrizione del servizio office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) e [acquistare o modificare un componente aggiuntivo per Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
   
 1. In qualità di amministratore globale di Office 365, [https://admin.microsoft.com](https://admin.microsoft.com) passare a e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. 
     

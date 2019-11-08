@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Utilizzare questo articolo come guida per configurare ora le funzionalità di protezione dalle minacce.
-ms.openlocfilehash: 7d18c8901b1edcc9e5238ed092bdb27bec684b1b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7bad500d50deb5afb8a1adf984332446f6de1086
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084602"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032181"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protezione dalle minacce in Office 365
 
@@ -37,8 +37,8 @@ Le funzionalità di protezione dalle minacce sono incluse in tutte le sottoscriz
 
 |Tipo di protezione  |Requisito di sottoscrizione  |
 |---------|---------|
-|Protezione anti-malware    | [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EOP        |
-|Protezione da URL e file dannosi nei documenti di posta elettronica e di Office    | [Protezione avanzata dalle minacce di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) ATP       |
+|Protezione anti-malware    | [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP)        |
+|Protezione da URL e file dannosi nei documenti di posta elettronica e di Office    | [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)       |
 |Protezione anti-phishing    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
 |Protezione anti-phishing avanzata    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
 |Protezione dalla posta indesiderata     | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
@@ -47,13 +47,13 @@ Le funzionalità di protezione dalle minacce sono incluse in tutte le sottoscriz
 
 ### <a name="roles-and-permissions"></a>Ruoli e autorizzazioni
 
-È necessario essere assegnati a un ruolo appropriato per configurare i criteri nel [Centro sicurezza & conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Nella tabella seguente sono inclusi alcuni esempi: 
+È necessario essere assegnati a un ruolo appropriato per configurare i criteri nel [Centro sicurezza & conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). La tabella seguente include alcuni esempi: 
 
 |Ruolo o gruppo di ruoli  |Altre informazioni  |
 |---------|---------|
 |Amministratore globale di Office 365 |[Informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Amministratore della sicurezza |[Autorizzazioni per il ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Gestione dell'organizzazione di Exchange Online |[Autorizzazioni in Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br>e<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Amministratore della sicurezza |[Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Gestione organizzazione di Exchange Online |[Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>e<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
 Per ulteriori informazioni, vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -135,7 +135,7 @@ Per configurare i [collegamenti sicuri di ATP](atp-safe-links.md), esaminare e m
 
 6. Fare clic su **Salva**.
 
-Per ulteriori informazioni, vedere [configurare i criteri dei collegamenti sicuri ATP di Office 365](set-up-atp-safe-links-policies.md). 
+Per altre informazioni, vedere [Configurare i criteri Collegamenti sicuri in Office 365 ATP](set-up-atp-safe-links-policies.md). 
 
 ## <a name="part-3---anti-phishing-protection"></a>Parte 3-protezione anti-phishing
 
@@ -193,7 +193,7 @@ Oltre alla configurazione della protezione da malware, URL e file dannosi, phish
 
 ### <a name="zero-hour-auto-purge-for-email"></a>Spurgo automatico zero-hour per la posta elettronica
 
-[Spurgo automatico zero-hour](zero-hour-auto-purge.md) (ZAP) è disponibile in abbonamenti che includono [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). Questa protezione è attivata per impostazione predefinita. Tuttavia, le condizioni seguenti devono essere soddisfatte affinché la protezione sia attiva:
+Lo Zap ( [zero-hour auto Purge](zero-hour-auto-purge.md) ) è disponibile in abbonamenti che includono [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). Questa protezione è attivata per impostazione predefinita. Tuttavia, le condizioni seguenti devono essere soddisfatte affinché la protezione sia attiva:
 
 - Le azioni di posta indesiderata sono impostate in modo da **spostare messaggi nella cartella posta indesiderata** nei criteri di protezione dalla [posta](anti-spam-protection.md)
 
@@ -209,7 +209,7 @@ La registrazione di controllo è disponibile in abbonamenti che includono [Excha
 
 Dopo aver configurato le funzionalità di protezione dalle minacce, verificare la modalità di funzionamento di tali caratteristiche, rivedere e rivedere i criteri in base alle esigenze e guardare le nuove funzionalità e gli aggiornamenti dei servizi.
 
-|cosa fare  |Risorse per ulteriori informazioni  |
+|Operazione  |Risorse per approfondire  |
 |---------|---------|
 |Vedere come funzionano le funzionalità di protezione dalle minacce per l'organizzazione visualizzando i report    |[Dashboard di sicurezza](security-dashboard.md)<br/>[Rapporti di sicurezza della posta elettronica](../../compliance/view-email-security-reports.md)<br/>[Report per Office 365 ATP](view-reports-for-atp.md)<br/>[Esplora minacce](threat-explorer.md)    |
 |Rivedere e rivedere periodicamente i criteri di protezione dalle minacce in base alle esigenze    |[Secure Score](../mtp/microsoft-secure-score.md)<br/>[Smart report e informazioni dettagliate](reports-and-insights-in-security-and-compliance.md)<br/>[Funzionalità di analisi e risposta alle minacce di Office 365](keep-users-safe-with-office-365-ti.md)          |

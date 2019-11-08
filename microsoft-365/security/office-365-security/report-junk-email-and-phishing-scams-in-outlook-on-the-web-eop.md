@@ -1,5 +1,5 @@
 ---
-title: 'Segnalare la posta indesiderata e i tentativi di phishing in Outlook sul Web '
+title: 'Segnalare posta indesiderata e tentativi di phishing in Outlook sul web '
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,14 +14,14 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Gli utenti di Microsoft Outlook sul Web possono segnalare la posta indesiderata (posta indesiderata) e i tentativi di phishing utilizzando le opzioni di segnalazione della posta elettronica predefinite. È inoltre possibile consentire a Microsoft di sapere se un messaggio di posta elettronica è stato erroneamente identificato come posta indesiderata.
-ms.openlocfilehash: 0191394c1e0c0f43c65af977c219630c65b6a292
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f066181e912060b137437893dee545787fa405a2
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082810"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031801"
 ---
-# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Segnalare la posta indesiderata e i tentativi di phishing in Outlook sul Web 
+# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Segnalare posta indesiderata e tentativi di phishing in Outlook sul web 
 
 Può essere frustrante quando gli utenti dell'organizzazione ricevono messaggi di posta indesiderata o manca un messaggio di posta elettronica importante perché è stato erroneamente identificato come posta indesiderata. La ottimizzazione dei filtri per la posta indesiderata di Exchange Online Protection (EOP) è sempre più accurata e gli utenti finali possono essere utili per questo processo. Gli utenti di Microsoft Outlook sul Web possono segnalare la posta indesiderata (posta indesiderata) e i tentativi di phishing utilizzando le opzioni di segnalazione della posta elettronica predefinite. È inoltre possibile consentire a Microsoft di sapere se un messaggio di posta elettronica è stato erroneamente identificato come posta indesiderata.
   
@@ -64,7 +64,7 @@ Quando un messaggio viene identificato erroneamente come posta indesiderata da O
 
 [Informazioni generali sulla posta indesiderata e sul phishing](https://go.microsoft.com/fwlink/p/?LinkId=270068)
 
-[Componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
+[Componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook](https://docs.microsoft.com/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteggersi da tentativi di phishing e altri attacchi con Microsoft 365 per le campagne.
-ms.openlocfilehash: 66708fe214815640baf08adace292dee683e382b
-ms.sourcegitcommit: cccf6ceade81d27e9d0b65c17d26b5fc7493eecd
+ms.openlocfilehash: be00cdc0c70c2a2f6ac9292e933031280b7c4616
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37593861"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029060"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Proteggersi da tentativi di phishing e altri attacchi
 
@@ -42,12 +42,12 @@ Microsoft 365 include molte protezioni per proteggersi dagli attacchi, ma ci son
 
 **Ridurre la posta indesiderata**
 
-Segui questi [10 suggerimenti su come ridurre la posta indesiderata](https://support.office.com/en-us/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
+Segui questi [10 suggerimenti su come ridurre la posta indesiderata](https://support.office.com/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
 
 **Segnalarlo!**
 
 Segnalare eventuali messaggi di posta elettronica di phishing o di altro Scam ricevuti. Selezionare il messaggio e scegliere **segnala messaggio** sulla barra multifunzione.
-Di seguito sono riportate ulteriori informazioni sulla segnalazione di posta [indesiderata e phishing](https://support.office.com/en-us/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+Di seguito sono riportate ulteriori informazioni sulla segnalazione di posta [indesiderata e phishing](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 **Evitare il phishing**
 - Non rispondere mai a un messaggio di posta elettronica che richiede l'invio di informazioni personali o di account.
@@ -56,11 +56,11 @@ Di seguito sono riportate ulteriori informazioni sulla segnalazione di posta [in
 - Se il messaggio di posta elettronica sembra provenire da una società, contattare il servizio clienti della società tramite telefono o Web browser per verificare se il messaggio di posta elettronica è legittimo.
 - Eseguire una ricerca nel Web per la riga dell'oggetto di posta elettronica seguita dalla parola Hoax per vedere se qualcun altro ha segnalato la truffa.
 
-Leggere circa cinque tipi comuni di truffe in [relazione a abusi, tentativi di phishing o spoofing](https://support.office.com/en-us/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3).
+Leggere circa cinque tipi comuni di truffe in [relazione a abusi, tentativi di phishing o spoofing](https://support.office.com/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3).
 
 **Verificare che i messaggi di posta elettronica siano legittimi per gli altri utenti**
 
-Aiutare i clienti a considerare attendibili le comunicazioni con l'aggiunta di una firma digitale per dimostrare di essere provenienti da un utente. Vedere [proteggere i messaggi tramite una firma digitale](https://support.office.com/en-us/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
+Aiutare i clienti a considerare attendibili le comunicazioni con l'aggiunta di una firma digitale per dimostrare di essere provenienti da un utente. Vedere [proteggere i messaggi tramite una firma digitale](https://support.office.com/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
 
 ## <a name="help-protect-your-campaign-from-online-threats"></a>Proteggi la tua campagna dalle minacce online
 
@@ -75,6 +75,6 @@ Scaricare l'infografica con suggerimenti per l'utente e i membri del team della 
 ## <a name="set-it-up"></a>Configurazione
 
 Ulteriori informazioni su come eseguire le operazioni seguenti:
-- [Mantenere i file e le comunicazioni sicure con Office](https://support.office.com/en-us/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
-- [Soggiorno sicuro e privato sul posto di lavoro](https://support.office.com/en-us/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
+- [Mantenere i file e le comunicazioni sicure con Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)
+- [Soggiorno sicuro e privato sul posto di lavoro](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)
   

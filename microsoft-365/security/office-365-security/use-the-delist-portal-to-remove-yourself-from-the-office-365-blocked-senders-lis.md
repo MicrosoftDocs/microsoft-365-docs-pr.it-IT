@@ -14,12 +14,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Viene visualizzato un messaggio di errore quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica si trova in Office 365? Se si ritiene di non dover ricevere tale messaggio di errore, è possibile utilizzare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati di Office 365.
-ms.openlocfilehash: 8158d18cb71a15fc79132c7cd4e232e7e2837806
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c02234379fe2b5d8fc09f81b1b407fec45900e3f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082786"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030620"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco mittenti bloccati di Office 365
 
@@ -31,7 +31,7 @@ Microsoft utilizza l'elenco dei mittenti bloccati per proteggere i propri client
   
 Gli utenti scoprono di essere stati aggiunti all'elenco quando ricevono una risposta a un messaggio di posta elettronica che include un errore simile a quanto segue:
   
-> 550 5.7.606-649 Access Denied, Banned Inviing IP [_indirizzo IP_]; Per richiedere la rimozione da questo elenco, https://sender.office.com/ visitare e seguire le indicazioni. Per ulteriori informazioni, vedere [rapporti di mancato recapito della posta elettronica in Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
+> 550 5.7.606-649 Access Denied, Banned Inviing IP [_indirizzo IP_]; Per richiedere la rimozione da questo elenco, https://sender.office.com/ visitare e seguire le indicazioni. Per ulteriori informazioni, vedere [rapporti di mancato recapito della posta elettronica in Office 365](https://go.microsoft.com/fwlink/?LinkID=526653).
   
 _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di posta. 
   

@@ -1,5 +1,5 @@
 ---
-title: La lotta alla posta indesiderata inviata a Office 365
+title: Contrastare la posta indesiderata inviata a Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,14 +14,14 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: La Guida di orientamento alla sicurezza della posta elettronica di Microsoft comporta un approccio cross-product senza eguali. La tecnologia di filtraggio della posta indesiderata e anti-phishing di Exchange Online Protection (EOP) è in corso di applicazione nelle piattaforme e-mail di Microsoft per offrire agli utenti gli strumenti e le innovazioni più recenti di protezione da posta indesiderata e anti-phishing in tutta la rete. L'obiettivo di EOP è offrire un servizio di posta elettronica completo e utilizzabile che aiuti a rilevare e proteggere gli utenti dalla posta indesiderata, dalle minacce alla posta elettronica fraudolente (phishing) e da malware.
-ms.openlocfilehash: 0a73d428e952c0c0cb340d91a52768a42ae204a1
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7c1b74d2ddb98d1250f80455163c5f0b8690b0de
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083490"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032371"
 ---
-# <a name="fighting-junk-email-sent-to-office-365"></a>La lotta alla posta indesiderata inviata a Office 365
+# <a name="fighting-junk-email-sent-to-office-365"></a>Contrastare la posta indesiderata inviata a Office 365
 
 La Guida di orientamento alla sicurezza della posta elettronica di Microsoft comporta un approccio cross-product senza eguali. La tecnologia di filtraggio della posta indesiderata e anti-phishing di Exchange Online Protection (EOP) è in corso di applicazione nelle piattaforme e-mail di Microsoft per offrire agli utenti gli strumenti e le innovazioni più recenti di protezione da posta indesiderata e anti-phishing in tutta la rete. L'obiettivo di EOP è offrire un servizio di posta elettronica completo e utilizzabile che aiuti a rilevare e proteggere gli utenti dalla posta indesiderata, dalle minacce alla posta elettronica fraudolente (phishing) e da malware.
   
@@ -66,9 +66,9 @@ Lo spoofing del dominio è un modo per imitare un indirizzo di posta elettronica
   
 EOP utilizza sender Protection Framework (SPF), DomainKeys identificò la posta (DKIM) e l'autenticazione dei messaggi basata sul dominio, la creazione di report e la conformità (DMARC) e altre autenticazioni implicite per verificare che i messaggi provengono dal dominio da cui predicono di provenire . È consigliabile che tutti i mittenti utilizzino SPF e DKIM per proteggere i destinatari dalla posta indesiderata e dalle truffe di phishing. È consigliabile che i mittenti ritengano di pubblicare un DMARC per rifiutare o mettere in quarantena la posta inviata da mittenti non autorizzati.
   
-- Per ulteriori informazioni su SPF, vedere [RFC 7208](https://tools.ietf.org/html/rfc7208) and [Sender Policy Framework](http://www.openspf.org/).
+- Per ulteriori informazioni su SPF, vedere [RFC 7208](https://tools.ietf.org/html/rfc7208) and [Sender Policy Framework](https://www.openspf.org/).
     
-- Per ulteriori informazioni su DKIM, vedere [RFC 6376](https://tools.ietf.org/html/rfc6376) e [DKIM.org](http://dkim.org/).
+- Per ulteriori informazioni su DKIM, vedere [RFC 6376](https://tools.ietf.org/html/rfc6376) e [DKIM.org](https://dkim.org/).
     
 - Per ulteriori informazioni su DMARC, vedere [DMARC.org](https://dmarc.org/).
     

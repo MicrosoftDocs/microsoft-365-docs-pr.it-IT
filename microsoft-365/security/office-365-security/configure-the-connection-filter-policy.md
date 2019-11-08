@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Per assicurarsi che la posta elettronica inviata da persone di cui si ha fiducia non sia bloccata, è possibile utilizzare i criteri di filtro delle connessioni per creare un elenco di indirizzi consentiti, noto anche come elenco dei mittenti attendibili, di indirizzo IP attendibile. È inoltre possibile creare un elenco di mittenti bloccati.
-ms.openlocfilehash: 09da8b2b7ee6c584d479ffc1206e7b3cf72d1eb8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 541960ce5339e1334cdc61e1f88bff9be48fe2bd
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083848"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032431"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurare i criteri di filtro delle connessioni
 
@@ -42,13 +42,13 @@ Il seguente video mostra i passaggi di configurazione per i criteri del filtro d
 
 - Tempo stimato per il completamento: 15 minuti
 
-- Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere "protezione da posta indesiderata" nell'argomento [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
+- Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere "protezione da posta indesiderata" nell'argomento [Feature Permissions in Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
 
 - Per ottenere l'indirizzo IP del mittente per il quale vuoi consentire o bloccare i messaggi, puoi guardare l'intestazione Internet del messaggio. Cercare l'intestazione CIP come descritto in [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md). Per informazioni su come visualizzare l'intestazione di un messaggio in vari client di posta elettronica, vedere [message header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583).
 
 - I messaggi di posta elettronica inviati da un indirizzo IP dell'elenco indirizzi IP bloccati vengono rifiutati, non contrassegnati come posta indesiderata e non si verifica alcun filtro aggiuntivo.
 
-- La seguente procedura di filtro di connessione può essere eseguita anche tramite PowerShell remota. Utilizzare il cmdlet [Get-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) per rivedere le impostazioni e [Set-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) per modificare le impostazioni del criterio del filtro di connessione. Per informazioni su come usare Windows PowerShell per connettersi a Exchange Online Protection, vedere [Connessione a Exchange Online Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Per informazioni su come usare Windows PowerShell per connettersi a Exchange Online, vedere [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- La seguente procedura di filtro di connessione può essere eseguita anche tramite PowerShell remota. Utilizzare il cmdlet [Get-HostedConnectionFilterPolicy](https://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) per rivedere le impostazioni e [Set-HostedConnectionFilterPolicy](https://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) per modificare le impostazioni del criterio del filtro di connessione. Per informazioni su come usare Windows PowerShell per connettersi a Exchange Online Protection, vedere [Connessione a Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Per informazioni su come usare Windows PowerShell per connettersi a Exchange Online, vedere [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>Utilizzare EAC per modificare il criterio del filtro connessioni predefinito
 
@@ -75,7 +75,7 @@ Di seguito sono riportate ulteriori considerazioni cui fare attenzione durante l
   
 ### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>Specificazione di un intervallo CIDR al di fuori dell'intervallo consigliato
 
-Per specificare un intervallo di indirizzi IP CIDR da/1 a/23, è necessario creare una regola del flusso di posta che opera nell'intervallo di indirizzi IP che imposta il livello di probabilità di posta indesiderata per **ignorare il filtro posta indesiderata** (ovvero che tutti i messaggi ricevuti all'interno di questo intervallo di indirizzi IP sono impostato su "non posta indesiderata" e nessun filtro aggiuntivo viene eseguito dal servizio). Tuttavia, se uno di questi indirizzi IP viene visualizzato in uno degli elenchi di blocco di proprietà di Microsoft o in uno degli elenchi di blocco di terze parti, i messaggi verranno bloccati. È pertanto consigliabile utilizzare l'intervallo di indirizzi IP da/24 a/32.
+Per specificare un intervallo di indirizzi IP CIDR da/1 a/23, è necessario creare una regola del flusso di posta che opera nell'intervallo di indirizzi IP che imposta il livello di probabilità di posta indesiderata (SCL) per **ignorare il filtro posta indesiderata** (ovvero che tutti i messaggi ricevuti all'interno di questo intervallo di indirizzi IP sono impostati su "not spam") Tuttavia, se uno di questi indirizzi IP viene visualizzato in uno degli elenchi di blocco di proprietà di Microsoft o in uno degli elenchi di blocco di terze parti, i messaggi verranno bloccati. È pertanto consigliabile utilizzare l'intervallo di indirizzi IP da/24 a/32.
   
 Per creare la regola del flusso di posta, eseguire la procedura seguente.
   
@@ -91,7 +91,7 @@ Per creare la regola del flusso di posta, eseguire la procedura seguente.
 
 6. Nella casella **Effettuare le seguenti operazioni**, impostare l'azione scegliendo **Modificare le proprietà dei messaggi**, quindi **imposta il livello di probabilità di posta indesiderata (SCL)**. Nella casella **specifica SCL**, selezionare **Ignora il filtro di protezione da posta indesiderata**, quindi fare clic su **ok**.
 
-7. Se lo si desidera, è possibile effettuare le selezioni per controllare la regola, testare la regola, attivare la regola per un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarlo. [Procedure per le regole del flusso di posta in Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) sono disponibili ulteriori informazioni su queste selezioni.
+7. Se lo si desidera, è possibile effettuare le selezioni per controllare la regola, testare la regola, attivare la regola per un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarlo. [Procedure per le regole del flusso di posta in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) sono disponibili ulteriori informazioni su queste selezioni.
 
 8. Fare clic su **Salva** per salvare la regola. La regola viene visualizzata nell'elenco delle regole.
 
@@ -121,7 +121,7 @@ A tale scopo, eseguire la procedura seguente:
 
 8. Nella casella **specificare** il dominio, immettere il dominio per il quale si desidera ignorare il filtro di posta indesiderata, ad esempio **contosob.com**. Fare **** ![clic su Aggiungi](../media/ITPro-EAC-AddIcon.gif) icona per spostarlo nell'elenco delle frasi. Ripetere la procedura per aggiungere ulteriori domini come eccezioni e fare clic su **ok** una volta terminato. 
 
-9. Se lo si desidera, è possibile effettuare le selezioni per controllare la regola, testare la regola, attivare la regola per un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarlo. [Procedure per le regole del flusso di posta in Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) sono disponibili ulteriori informazioni su queste selezioni.
+9. Se lo si desidera, è possibile effettuare le selezioni per controllare la regola, testare la regola, attivare la regola per un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarlo. [Procedure per le regole del flusso di posta in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) sono disponibili ulteriori informazioni su queste selezioni.
 
 10. Fare clic su **Salva** per salvare la regola. La regola viene visualizzata nell'elenco delle regole.
 
@@ -131,7 +131,7 @@ Dopo aver creato e applicato la regola, il filtro posta indesiderata per l'indir
 
 I messaggi provenienti da indirizzi IP consentiti configurati nei criteri di filtro delle connessioni sono ancora soggetti al filtro della posta indesiderata negli scenari seguenti:
 
-- L'indirizzo IP di origine nel criterio di filtro delle connessioni è configurato anche in un connettore in ingresso basato su IP in locale in *qualsiasi* tenant (chiamiamo questo tenant a) **e** tenant a e il server Exchange Online Protection che incontra prima la il messaggio in Office 365 entrambi si trova nella stessa foresta di Active Directory nei datacenter Microsoft. In questo scenario, **IPV: Cal** viene aggiunto alle intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md) del messaggio (indicante il filtro per la posta indesiderata ignorata), ma il messaggio è ancora soggetto al filtro di posta indesiderata.
+- L'indirizzo IP di origine nel criterio di filtro delle connessioni è configurato anche in un connettore in ingresso basato su IP in locale, in *qualsiasi* tenant (chiamiamo questo tenant a), **e** il tenant a e il server Exchange Online Protection che prima incontra il messaggio in Office 365 entrambi si trova nella stessa foresta di Active Directory nei datacenter Microsoft. In questo scenario, **IPV: Cal** viene aggiunto alle intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md) del messaggio (indicante il filtro per la posta indesiderata ignorata), ma il messaggio è ancora soggetto al filtro di posta indesiderata.
 
 - Il tenant (in cui sono stati configurati i criteri di filtro delle connessioni) e Exchange Online Protection Server che prima rileva il messaggio in Office 365 entrambi si trovano in foreste di Active Directory diverse nei datacenter Microsoft. In questo scenario, **IPV: Cal** non viene aggiunto alle intestazioni del messaggio, quindi il messaggio è ancora soggetto al filtro di posta indesiderata.
 

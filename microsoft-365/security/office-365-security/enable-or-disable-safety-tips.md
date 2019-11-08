@@ -14,12 +14,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: Indica agli amministratori di Office 365 e EOP come abilitare e disabilitare i suggerimenti per la sicurezza nei messaggi di posta elettronica.
-ms.openlocfilehash: e5331236338d4b36cd8fd9b9ab68b69e4f122d57
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fc7b993d8d57c961338873ad400dea4c65caa494
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083530"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038875"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Abilitare o disabilitare i suggerimenti per la sicurezza in Office 365
 
@@ -32,76 +32,74 @@ Per vedere alcuni esempi e conoscere le informazioni visualizzate in suggeriment
 Contenuto dell'argomento:
   
 - [Per abilitare o disabilitare i suggerimenti per la sicurezza tramite il centro &amp; sicurezza e conformità di Office 365](enable-or-disable-safety-tips.md#SandCCsafetytip)
-    
+
 - [Per abilitare o disabilitare i suggerimenti per la sicurezza tramite PowerShell](enable-or-disable-safety-tips.md#pshellsafetytip)
-    
+
 ## <a name="to-enable-or-disable-safety-tips-by-using-the-office-365-security-amp-compliance-center"></a>Per abilitare o disabilitare i suggerimenti per la sicurezza tramite il centro &amp; sicurezza e conformità di Office 365
 <a name="SandCCsafetytip"> </a>
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
-    
+
 2. Accedere a Office 365 con l'account di lavoro o della scuola.
-    
-3. Scegliere \> **criteri**di **gestione delle minacce** . 
-    
+
+3. Scegliere \> **criteri**di **gestione delle minacce** .
+
 4. Nella pagina **criterio** scegliere protezione da **posta indesiderata**.
-    
+
     ![In questa schermata viene illustrato come accedere alla pagina delle impostazioni di protezione da posta indesiderata nel centro sicurezza &amp; e conformità.](../media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
   
-5. Nella pagina impostazioni di protezione da **posta indesiderata** scegliere la scheda **personalizzato** . 
-    
+5. Nella pagina impostazioni di protezione da **posta indesiderata** scegliere la scheda **personalizzato** .
+
     ![In questa schermata viene visualizzato il percorso della scheda personalizzato nella pagina impostazioni di protezione da posta indesiderata nel centro sicurezza &amp; e conformità.](../media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
   
 6. Se necessario, scegliere l'opzione **impostazioni personalizzate** per attivare le impostazioni personalizzate. Se l'opzione impostazioni personalizzate è impostata su **disattivato**, non sarà possibile modificare i criteri di filtro della posta indesiderata.
-    
+
     ![In questa schermata vengono visualizzate le impostazioni dei criteri di filtro della posta indesiderata personalizzate disattivate.](../media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
   
 7. Espandere il criterio di posta indesiderata da modificare e quindi scegliere **modifica criterio**. Ad esempio, fare clic sulla freccia in giù accanto a **criteri di filtro della posta indesiderata predefiniti**. In alternativa, se si desidera, è possibile creare un nuovo criterio scegliendo **Aggiungi un criterio**.
-    
-8. Espandere la **posta indesiderata e le** azioni in blocco. 
-    
-9. Per abilitare i suggerimenti di sicurezza, sotto suggerimenti per la **sicurezza**, selezionare la casella **di controllo su** . Per disabilitare i suggerimenti per la sicurezza, deselezionare la casella **di controllo su** . 
-    
+
+8. Espandere la **posta indesiderata e le** azioni in blocco.
+
+9. Per abilitare i suggerimenti di sicurezza, sotto suggerimenti per la **sicurezza**, selezionare la casella **di controllo su** . Per disabilitare i suggerimenti per la sicurezza, deselezionare la casella **di controllo su** .
+
 10. Fare clic su **Salva**.
-    
+
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>Per abilitare o disabilitare i suggerimenti per la sicurezza tramite PowerShell
 <a name="pshellsafetytip"> </a>
 
 Gli amministratori possono utilizzare PowerShell di Exchange Online per abilitare o disabilitare i suggerimenti per la sicurezza. Utilizzare il cmdlet Set-HostedContentFilterPolicy per abilitare o disabilitare i suggerimenti per la sicurezza in un criterio di filtro della posta indesiderata.
   
-1. Connettersi a PowerShell per Exchange Online. Per informazioni, vedere [Connect to Exchange Online PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=396554).
-    
+1. Connettersi a PowerShell per Exchange Online. Per informazioni, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+
 2. Eseguire il cmdlet Set-HostedContentFilterPolicy per abilitare o disabilitare i suggerimenti per la sicurezza:
-    
-  ```
+
+  ```powershell
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
   ```
 
 Dove:
-    
+
   -  *Nome criterio* è il nome del criterio che si desidera modificare, ad esempio **default**.
-    
+
   -  `$true`Attiva suggerimenti di sicurezza per i criteri di filtro della posta indesiderata. 
-    
+
   -  `$false`Disattiva i suggerimenti di sicurezza per i criteri di filtro della posta indesiderata. 
-    
+
     Ad esempio, per disabilitare i suggerimenti per la sicurezza per i criteri di filtro della posta indesiderata predefiniti, eseguire il seguente comando:
-    
-  ```
+
+  ```powershell
   PS C:\> Set-HostedContentFilterPolicy -Identity "default" -InlineSafetyTipsEnabled $false
   ```
 
 Per ulteriori informazioni su questo cmdlet, vedere [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
-    
+
 ## <a name="still-need-help"></a>Serve ulteriore assistenza?
 <a name="pshellsafetytip"> </a>
 
 Se i suggerimenti per la sicurezza sono stati disabilitati, ma vengono ancora visualizzati nei messaggi di posta elettronica, controllare queste operazioni:
   
 - Non è possibile disabilitare i suggerimenti per la sicurezza per Outlook sul Web. Provare a visualizzare lo stesso messaggio di posta elettronica in un altro client, ad esempio Outlook.
-    
-- I suggerimenti per la sicurezza sono attivati per impostazione predefinita per tutti gli utenti che utilizzano EOP, inclusi tutti gli utenti di Office 365. Per disabilitare i suggerimenti per la sicurezza visualizzati nella posta elettronica, è necessario disabilitarli utilizzando un criterio di filtro della posta indesiderata, come descritto in questo argomento. Dopo aver configurato il criterio, assicurarsi che sia abilitato. Per informazioni sull'abilitazione dei criteri di filtro della posta indesiderata, vedere [Configure Your Spam Filter Policies](https://technet.microsoft.com/library/jj200684.aspx).
-    
-Per altri modi per combattere la posta indesiderata e il phishing, vedere [Office 365 E-mail protezione dalla posta indesiderata](anti-spam-protection.md).
-  
 
+- I suggerimenti per la sicurezza sono attivati per impostazione predefinita per tutti gli utenti che utilizzano EOP, inclusi tutti gli utenti di Office 365. Per disabilitare i suggerimenti per la sicurezza visualizzati nella posta elettronica, è necessario disabilitarli utilizzando un criterio di filtro della posta indesiderata, come descritto in questo argomento. Dopo aver configurato il criterio, assicurarsi che sia abilitato. Per informazioni sull'abilitazione dei criteri di filtro della posta indesiderata, vedere [Configure Your Spam Filter Policies](https://technet.microsoft.com/library/jj200684.aspx).
+
+Per altri modi per combattere la posta indesiderata e il phishing, vedere [Office 365 E-mail protezione dalla posta indesiderata](anti-spam-protection.md).

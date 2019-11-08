@@ -14,12 +14,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure consigliate per aiutare a proteggere gli utenti da messaggi di posta elettronica abusivi, indesiderati o dannosi.
-ms.openlocfilehash: e897b5ecf7fb31581c22e2a6e3cc80f927f43454
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 0957e34008f4e05693218970c458656d73d9c0fe
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441423"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031811"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Informazioni di riferimento: criteri, procedure e linee guida
 
@@ -83,7 +83,7 @@ Microsoft collabora attivamente con gli enti del settore e i provider di servizi
 
 - [Alleanza Fiduciaria online](https://www.otalliance.org/resources)
 
-- [Coalizione &amp; provider di mittenti di posta elettronica](http://www.espcoalition.org/)
+- [Coalizione &amp; provider di mittenti di posta elettronica](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>Segnalazione di abusi e posta indesiderata
 

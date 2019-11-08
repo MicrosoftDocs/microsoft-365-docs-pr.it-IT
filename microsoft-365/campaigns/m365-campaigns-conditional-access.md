@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come richiedere l'utilizzo dell'AMF e configurare i criteri di accesso condizionale per Microsoft 365 business.
-ms.openlocfilehash: 570edce03a68dad56c895e2484a5162496d7a3eb
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: b4ea67037339ae1a00f12d7b51e4584d259264e4
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772543"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031341"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Richiedere l'autenticazione a più fattori e configurare i criteri di accesso condizionale
 
@@ -75,11 +75,11 @@ Per richiedere che tutti gli utenti eseguano l'accesso con una seconda forma di 
     ![Pagina in cui sono elencati i criteri di base per l'accesso condizionale.](media/casettings.png)
 2. Per ogni criterio, vedere le istruzioni specifiche seguenti:
 
-    - [Richiedi l'autenticazione a più fattori per gli amministratori](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
+    - [Richiedi l'autenticazione a più fattori per gli amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
 
        
-    -   [Richiedi l'autenticazione per gli utenti](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
-    - [Blocca l'autenticazione legacy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+    -   [Richiedi l'autenticazione per gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+    - [Blocca l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
     - [Richiedere l'autenticazione dell'AMF per la gestione dei servizi](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 È possibile configurare criteri aggiuntivi, ad esempio per le app client approvate. Per ulteriori informazioni, vedere la [documentazione relativa all'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/) .

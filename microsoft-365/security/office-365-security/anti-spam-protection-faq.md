@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 504fb93a271a60db4c43aa48ba6578a904c8bb5a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441093"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034187"
 ---
 # <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione da posta indesiderata
 
@@ -33,13 +33,13 @@ In questo argomento vengono riportate le domande frequenti e le risposte sulla p
 R. **Per i messaggi in ingresso:** La maggior parte della posta indesiderata viene eliminata tramite il filtro delle connessioni, che si basa sull'indirizzo IP del mittente. Il servizio quindi analizza il contenuto del messaggio. Per impostazione predefinita, la posta indesiderata sottoposta a filtro contenuto viene inviata alla cartella Posta indesiderata del destinatario. Questa azione può essere modificata. Ad esempio, è possibile scegliere di inviare i messaggi di posta indesiderata alla quarantena configurando il criterio di filtro contenuto. 
   
 > [!IMPORTANT]
-> Per i clienti autonomi di EOP: per verificare che l'azione **Sposta messaggio all'indesiderata cartella di posta elettronica** funzioni con le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server locali per rilevare intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Per i clienti autonomi di EOP: per verificare che l'azione **Sposta messaggio nell'indesiderata cartella di posta elettronica** funzioni con le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Per i messaggi in uscita:** Il messaggio viene instradato tramite il pool di recapito ad alto rischio o restituito e non recapitato. Nel secondo caso il mittente riceve una messaggio di notifica dello stato del recapito indicante l'impossibilità di recapitare il messaggio. 
   
  **D. che cos'è una variante di posta indesiderata di zero-day e come viene gestita dal servizio?**
   
-R. Una variante di posta indesiderata di zero-day è una variante di posta indesiderata di prima generazione sconosciuta che non è mai stata acquisita o analizzata, quindi i filtri per i contenuti di posta indesiderata non dispongono ancora di informazioni disponibili per il rilevamento. Dopo che un campione di posta indesiderata di zero giorni viene acquisito e analizzato dai nostri analisti di posta indesiderata, se soddisfa i criteri di classificazione della posta indesiderata, i filtri del contenuto di posta indesiderata vengono aggiornati per rilevarlo e non è più considerato "zero-day" ( **Nota:** se si riceve un messaggio che potrebbe essere una variante di posta indesiderata di zero giorni, per aiutarci a migliorare il servizio, inviare il messaggio a Microsoft utilizzando uno dei metodi descritti in [inviare messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft per Analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).)
+R. Una variante di posta indesiderata di zero-day è una variante di posta indesiderata di prima generazione sconosciuta che non è mai stata acquisita o analizzata, quindi i filtri per i contenuti di posta indesiderata non dispongono ancora di informazioni disponibili per il rilevamento. Dopo che un campione di posta indesiderata di zero giorni viene acquisito e analizzato dai nostri analisti di posta indesiderata, se soddisfa i criteri di classificazione della posta indesiderata, i filtri del contenuto di posta indesiderata vengono aggiornati per rilevarlo e non è più considerato "zero-day" ( **Nota:** se si riceve un messaggio che potrebbe essere una variante di posta indesiderata di zero giorni, per aiutarci a migliorare il servizio, inviare il messaggio a Microsoft utilizzando uno dei metodi descritti in [inviare messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).)
   
  **D. È necessario configurare il servizio per fornire la protezione dalla posta indesiderata?**
   
@@ -73,13 +73,13 @@ R. I messaggi di posta indesiderata e non possono essere inviati a Microsoft per
   
 A. Sì, ad esempio, è possibile ottenere un rapporto di rilevamento della posta indesiderata nell'interfaccia di amministrazione di Microsoft 365. Questo report Visualizza il volume di posta indesiderata come numero di messaggi univoci. Per ulteriori informazioni sulla segnalazione, vedere i seguenti collegamenti:
   
-Clienti di Exchange Online: [monitoraggio, creazione di rapporti e traccia dei messaggi in Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Clienti di Exchange Online: [monitoraggio, creazione di rapporti e traccia dei messaggi in Exchange Online](https://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
 Clienti di Exchange Online Protection: [Reporting e traccia dei messaggi in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
   
  **D. Qualcuno mi ha inviato un messaggio ma non lo trovo. Sospetto che sia stato identificato come posta indesiderata. Esiste uno strumento per scoprirlo?**
   
-R. Sì, lo strumento di traccia dei messaggi consente di seguire i messaggi di posta elettronica nel loro percorso attraverso il servizio e scoprire cosa è accaduto. Per ulteriori informazioni su come utilizzare lo strumento di traccia dei messaggi per individuare il motivo per cui un messaggio è stato contrassegnato come posta indesiderata, vedere [un messaggio contrassegnato come posta indesiderata?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
+R. Sì, lo strumento di traccia dei messaggi consente di seguire i messaggi di posta elettronica nel loro percorso attraverso il servizio e scoprire cosa è accaduto. Per ulteriori informazioni su come utilizzare lo strumento di traccia dei messaggi per individuare il motivo per cui un messaggio è stato contrassegnato come posta indesiderata, vedere [un messaggio contrassegnato come posta indesiderata?](https://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
  **D: Il servizio limiterà la posta (limite di frequenza) se gli utenti inviano posta indesiderata in uscita?**
   
@@ -89,15 +89,15 @@ R. Se più della metà della posta inviata da un utente tramite il servizio entr
   
  **D. È possibile utilizzare un provider antimalware e di protezione dalla posta indesiderata di terze parti insieme a Exchange Online?**
   
-A. Sì, è possibile configurare un altro servizio antimalware e di protezione dalla posta indesiderata per proteggere le cassette postali di Exchange Online. Per eseguire questa attività per la posta in ingresso, è necessario reindirizzare i messaggi di posta elettronica al provider di terze parti modificando i record MX in modo che puntino a tale provider e quindi reindirizzare i messaggi a EOP per l'ulteriore elaborazione. Per eseguire questa attività per la posta in uscita, è necessario configurare la destinazione di recapito dei messaggi per il provider di terze parti (smart host), come indicato in [Scenario: Outbound Smart Hosting](http://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
+A. Sì, è possibile configurare un altro servizio antimalware e di protezione dalla posta indesiderata per proteggere le cassette postali di Exchange Online. Per eseguire questa attività per la posta in ingresso, è necessario reindirizzare i messaggi di posta elettronica al provider di terze parti modificando i record MX in modo che puntino a tale provider e quindi reindirizzare i messaggi a EOP per l'ulteriore elaborazione. Per eseguire questa attività per la posta in uscita, è necessario configurare la destinazione di recapito dei messaggi per il provider di terze parti (smart host), come indicato in [Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
   
  **D. Microsoft dispone di documentazione su come è possibile proteggersi da tentativi di phishing?**
   
 R. Sì. Consultare i seguenti articoli:
   
-[Articoli di Privacy e Sicurezza online su tentativi di phishing, truffe di false lotterie e altri tipi di frode](http://go.microsoft.com/fwlink/p/?LinkId=325606)
+[Articoli di Privacy e Sicurezza online su tentativi di phishing, truffe di false lotterie e altri tipi di frode](https://go.microsoft.com/fwlink/p/?LinkId=325606)
   
-[E-mail e phishing: guida per la protezione del computer](http://go.microsoft.com/fwlink/p/?LinkID=325607)
+[E-mail e phishing: guida per la protezione del computer](https://go.microsoft.com/fwlink/p/?LinkID=325607)
   
  **D. I messaggi di posta indesiderata e malware vengono analizzati da coloro a cui sono indirizzati o vengono trasferiti a entità giudiziarie?**
   

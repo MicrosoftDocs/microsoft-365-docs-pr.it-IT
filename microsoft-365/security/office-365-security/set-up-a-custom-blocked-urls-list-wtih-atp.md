@@ -15,17 +15,17 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare un elenco di URL bloccati per l'organizzazione utilizzando Office 365 Advanced Threat Protection. Gli URL bloccati verranno applicati ai messaggi di posta elettronica e ai documenti di Office in base ai criteri dei collegamenti sicuri di ATP.
-ms.openlocfilehash: 738509978bfafb44cd289113ef77c3d12fb79a78
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ab79f86646ffd195b31d46980c3bd3bd3bb8f444
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084133"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032061"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri ATP di Office 365
 
 > [!IMPORTANT]
-> Questo articolo è destinato ai clienti aziendali che dispongono di [Office 365 Advanced Threat Protection](office-365-atp.md). Se si è un utente di casa che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è rivolto ai clienti aziendali di [Office 365 Advanced Threat Protection](office-365-atp.md). Se si è un utente di casa che cerca informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), l'organizzazione può disporre di un elenco personalizzato di indirizzi Web (URL) bloccati. Quando viene bloccato un URL, gli utenti che fanno clic sui collegamenti all'URL bloccato vengono indirizzati a una [pagina di avviso](atp-safe-links-warning-pages.md) simile all'immagine seguente: 
   
@@ -45,7 +45,7 @@ Per modificare (o definire) i criteri ATP, è necessario essere assegnati a uno 
 |---------|---------|
 |Amministratore globale di Office 365 |Per impostazione predefinita, la persona che si iscrive all'acquisto di Office 365 è un amministratore globale. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .         |
 |Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
-|Gestione dell'organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Gestione organizzazione di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 > [!TIP]
 > Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
@@ -66,7 +66,7 @@ Per modificare (o definire) i criteri ATP, è necessario essere assegnati a uno 
 
 Quando si aggiungono URL all'elenco, tenere presente quanto segue: 
 
-- Non includere una barra ( **/**) alla fine dell'URL. Ad esempio, invece di immettere `http://www.contoso.com/`, immetti `http://www.contoso.com`.
+- Non includere una barra ( **/**) alla fine dell'URL. Ad esempio, invece di immettere `https://www.contoso.com/`, immetti `https://www.contoso.com`.
     
 - È possibile specificare un URL di solo dominio (come `contoso.com` or `tailspintoys.com`). Questo bloccherà gli scatti su qualsiasi URL che contiene il dominio.
 
@@ -76,10 +76,10 @@ Quando si aggiungono URL all'elenco, tenere presente quanto segue:
     
 |**Voce di esempio**|**Cosa fa**|
 |:-----|:-----|
-|`contoso.com`o`*contoso.com*`  <br/> |Blocca il dominio, i sottodomini e i percorsi, ad esempio `https://www.contoso.com` `http://sub.contoso.com`, e`http://contoso.com/abc`  <br/> |
-|`http://contoso.com/a`  <br/> |Blocca un sito `http://contoso.com/a` , ma non altri percorsi secondari come`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |Blocca un sito `http://contoso.com/a` e altri percorsi secondari come`http://contoso.com/a/b`  <br/> |
-|`http://toys.contoso.com*`  <br/> |Blocca un sottodominio ("giocattoli" in questo caso), ma consente di fare clic su altri URL `http://contoso.com` di `http://home.contoso.com`dominio (come or).  <br/> |
+|`contoso.com`o`*contoso.com*`  <br/> |Blocca il dominio, i sottodomini e i percorsi, ad esempio `https://www.contoso.com` `https://sub.contoso.com`, e`https://contoso.com/abc`  <br/> |
+|`https://contoso.com/a`  <br/> |Blocca un sito `https://contoso.com/a` , ma non altri percorsi secondari come`https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a*`  <br/> |Blocca un sito `https://contoso.com/a` e altri percorsi secondari come`https://contoso.com/a/b`  <br/> |
+|`https://toys.contoso.com*`  <br/> |Blocca un sottodominio ("giocattoli" in questo caso), ma consente di fare clic su altri URL `https://contoso.com` di `https://home.contoso.com`dominio (come or).  <br/> |
    
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Come definire le eccezioni per alcuni utenti di un'organizzazione

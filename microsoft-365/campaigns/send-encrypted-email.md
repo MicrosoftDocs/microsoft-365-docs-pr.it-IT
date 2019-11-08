@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come inviare messaggi di posta elettronica crittografati tramite Outlook.
-ms.openlocfilehash: 7420073ba768f0e5adba33d673d3ccd6369e306c
-ms.sourcegitcommit: 2f4a61f02ea90102ded8e5d71c9b78a1f7f6b789
+ms.openlocfilehash: e7028f69f4418ae0ff0183653c509fc9ad6171ac
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778141"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031231"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Crittografare o contrassegnare il messaggio di posta elettronica sensibile
 
@@ -46,11 +46,11 @@ Prima di inviare messaggi di posta elettronica con informazioni riservate o sens
 
 ## <a name="set-it-up"></a>Configurazione
 
-Se si desidera crittografare un messaggio che non soddisfa una regola predefinita o che l'amministratore non ha impostato regole, è possibile applicare una serie di regole di crittografia diverse prima di inviare il messaggio. Per inviare un messaggio crittografato da Outlook 2013 o 2016 o Outlook 2016 per Mac, selezionare **opzioni > autorizzazioni**, quindi selezionare l'opzione di protezione necessaria. È anche possibile inviare un messaggio crittografato selezionando **** il pulsante Proteggi in Outlook sul Web. Per ulteriori informazioni, vedere [inviare, visualizzare e rispondere a messaggi crittografati in Outlook per PC](https://support.office.com/en-us/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US).
+Se si desidera crittografare un messaggio che non soddisfa una regola predefinita o che l'amministratore non ha impostato regole, è possibile applicare una serie di regole di crittografia diverse prima di inviare il messaggio. Per inviare un messaggio crittografato da Outlook 2013 o 2016 o Outlook 2016 per Mac, selezionare **opzioni > autorizzazioni**, quindi selezionare l'opzione di protezione necessaria. È anche possibile inviare un messaggio crittografato selezionando il pulsante **Proteggi** in Outlook sul Web. Per ulteriori informazioni, vedere [inviare, visualizzare e rispondere a messaggi crittografati in Outlook per PC](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="admin-settings"></a>Impostazioni di amministratore
 
-È possibile ottenere informazioni su come configurare la crittografia della posta elettronica alla [crittografia della posta elettronica in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/email-encryption).
+È possibile ottenere informazioni su come configurare la crittografia della posta elettronica alla [crittografia della posta elettronica in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
 
 ### <a name="automatically-encrypt-email-messages"></a>Crittografia automatica dei messaggi di posta elettronica
 
@@ -62,9 +62,9 @@ Gli amministratori possono creare regole del flusso di posta per proteggere auto
 2. Scegliere il riquadro amministratore. 
 3. Nell'interfaccia di amministrazione scegliere **admin centers > Exchange**. 
 
-Per ulteriori informazioni, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
+Per ulteriori informazioni, vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
 
 ### <a name="brand-your-encryption-messages"></a>Personalizzare i messaggi di crittografia
 
-È anche possibile applicare la personalizzazione della campagna per personalizzare l'aspetto e il testo nei messaggi di posta elettronica. Per ulteriori informazioni, vedere [aggiungere il marchio dell'organizzazione ai messaggi crittografati](https://docs.microsoft.com/en-us/office365/securitycompliance/email-encryption).
+È anche possibile applicare la personalizzazione della campagna per personalizzare l'aspetto e il testo nei messaggi di posta elettronica. Per ulteriori informazioni, vedere [aggiungere il marchio dell'organizzazione ai messaggi crittografati](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
 

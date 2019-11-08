@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteggersi da tentativi di phishing e altri attacchi con Microsoft 365 per le campagne.
-ms.openlocfilehash: 686a69a7e712e80c4f58cade24a69465fb4e7d33
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 2533710ccb7b173f5cc1fd19b185fcd32b7801c9
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772453"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031291"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Proteggere i PC e i Mac Windows 10 non gestiti
 
@@ -48,9 +48,9 @@ Se il PC o Mac Windows 10 non è gestito dall'organizzazione, assicurarsi di con
 ## <a name="windows-10tabwindows10"></a>[Windows 10](#tab/Windows10)
 **Attivazione della crittografia del dispositivo**<p>
 
-La crittografia del dispositivo è disponibile su una vasta gamma di dispositivi Windows e consente di proteggere i dati crittografati. Se si attiva la crittografia del dispositivo, solo gli utenti autorizzati saranno in grado di accedere al dispositivo e ai dati. Per istruzioni, vedere [abilitare la crittografia del dispositivo](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) .
+La crittografia del dispositivo è disponibile su una vasta gamma di dispositivi Windows e consente di proteggere i dati crittografati. Se si attiva la crittografia del dispositivo, solo gli utenti autorizzati saranno in grado di accedere al dispositivo e ai dati. Per istruzioni, vedere [abilitare la crittografia del dispositivo](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) .
 
- Se la crittografia del dispositivo non è disponibile nel dispositivo, è possibile abilitare invece la [crittografia BitLocker](https://support.microsoft.com/en-us/help/4028713/windows-10-turn-on-device-encryption) standard. (BitLocker non è disponibile in Windows 10 Home Edition). 
+ Se la crittografia del dispositivo non è disponibile nel dispositivo, è possibile abilitare invece la [crittografia BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) standard. (BitLocker non è disponibile in Windows 10 Home Edition). 
 
 
 
@@ -59,10 +59,10 @@ Se si dispone di Windows 10, è possibile ottenere la protezione antivirus più 
 
 Windows Update Scarica automaticamente gli aggiornamenti per la sicurezza di Windows per mantenere il PC sicuro e proteggerlo dalle minacce.
 
-Se si dispone di una versione precedente di Windows e si utilizza Microsoft Security Essentials, è consigliabile passare alla sicurezza di Windows. Per ulteriori informazioni, vedere [proteggere il dispositivo con Windows Security](https://support.microsoft.com/en-us/help/17464/windows-10-help-protect-my-device-with-windows-security) .
+Se si dispone di una versione precedente di Windows e si utilizza Microsoft Security Essentials, è consigliabile passare alla sicurezza di Windows. Per ulteriori informazioni, vedere [proteggere il dispositivo con Windows Security](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security) .
 
 **Attivazione di Windows Firewall**<p>
-È consigliabile eseguire sempre Windows Firewall anche se è stato attivato un altro firewall. La disattivazione di Windows Firewall potrebbe rendere il dispositivo (e la rete, se ne esiste uno) più vulnerabile all'accesso non autorizzato. Per istruzioni, vedere [attivazione o disattivazione di Windows Firewall](https://support.microsoft.com/en-us/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)
+È consigliabile eseguire sempre Windows Firewall anche se è stato attivato un altro firewall. La disattivazione di Windows Firewall potrebbe rendere il dispositivo (e la rete, se ne esiste uno) più vulnerabile all'accesso non autorizzato. Per istruzioni, vedere [attivazione o disattivazione di Windows Firewall](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)
 
 ## <a name="mactabmac"></a>[Mac](#tab/Mac)
 **Utilizzo di FileVault per crittografare il disco Mac**<p>

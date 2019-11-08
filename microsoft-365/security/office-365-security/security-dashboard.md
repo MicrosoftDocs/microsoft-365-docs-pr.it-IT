@@ -14,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: 8f86aa654c79bac2409d64b43d0cf7bb563c1412
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8ce6e21bcc25853e641ee20126ffd38c785e76f7
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083965"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033937"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 
@@ -64,7 +64,7 @@ I dettagli dipendono dal fatto che la sottoscrizione di Office 365 includa [Exch
 
 |Se l'abbonamento è incluso in... |Vedrai questi dettagli |
 |---------|---------|
-|EOP ma non Office 365 ATP     |Messaggi di posta elettronica dannosi che sono stati rilevati e bloccati da EOP<br> Vedere [Threat Protection status report (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report).| |
+|EOP ma non Office 365 ATP     |Messaggi di posta elettronica dannosi che sono stati rilevati e bloccati da EOP<br> Vedere [Threat Protection status report (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report).| 
 |Office 365 ATP |Contenuto dannoso e messaggi di posta elettronica dannosi rilevati e bloccati da EOP e Office 365 ATP<br>Numero aggregato di messaggi di posta elettronica univoci con contenuti dannosi bloccati dal motore antimalware, da [zero-hour auto Purge](zero-hour-auto-purge.md)e dalle funzionalità ATP (inclusi [collegamenti sicuri](atp-safe-links.md), [allegati sicuri](atp-safe-attachments.md)e [anti-phishing ATP](atp-anti-phishing.md)).<br>Vedere [rapporto sullo stato della protezione dalle minacce (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
 
 Per visualizzare o accedere al widget dello stato di protezione dalle minacce, è necessario disporre delle autorizzazioni per visualizzare i report di Advanced Threat Protection. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i rapporti ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
@@ -111,7 +111,7 @@ Nella parte inferiore del dashboard di sicurezza è presente una sezione **Trend
   
 ![La sezione Trends riepiloga le tendenze del flusso di posta elettronica per l'organizzazione](../media/trends.png)
   
-Inoltre, se la sottoscrizione di Office 365 dell'organizzazione include [office 365 Advanced Threat Protection Plan 2](office-365-ti.md), in questa sezione è disponibile anche un rapporto **avvisi di gestione delle minacce di recente** che consente al team di sicurezza di visualizzare e intraprendere un'azione avvisi di sicurezza ad alta priorità. 
+Inoltre, se la sottoscrizione di Office 365 dell'organizzazione include [office 365 Advanced Threat Protection Plan 2](office-365-ti.md), è disponibile un rapporto di **avvisi di gestione delle minacce recente** in questa sezione che consente al team di sicurezza di visualizzare e intervenire su avvisi di sicurezza ad alta priorità. 
 
 Per visualizzare o accedere al widget messaggi di posta elettronica inviati e ricevuti, è necessario disporre delle autorizzazioni per visualizzare i report di Advanced Threat Protection. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i rapporti ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
@@ -123,7 +123,7 @@ Per visualizzare o accedere al widget recenti avvisi di gestione delle minacce, 
   
 [Visualizzare i report per Office 365 Advanced Threat Protection](view-reports-for-atp.md)
   
-[Protezione avanzata dalle minacce di Office 365](office-365-atp.md)
+[Office 365 Advanced Threat Protection](office-365-atp.md)
   
 [Indagine e risposta alle minacce di Office 365](office-365-ti.md)
   

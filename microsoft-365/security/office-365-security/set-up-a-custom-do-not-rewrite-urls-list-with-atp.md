@@ -15,12 +15,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Quando si configurano i criteri per i collegamenti sicuri di ATP, è possibile includere un elenco di URL da non riscrivere per consentire ad alcuni utenti dell'organizzazione di visitare i siti inclusi nell'elenco.
-ms.openlocfilehash: 512d4ce507c191b00bc2d21f61d5efbf2dffcb57
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 1068f7e2ac75f9c4403475e1fa9bc4da57fabe51
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772140"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032051"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurare un elenco di URL non di riscrittura personalizzato utilizzando i collegamenti sicuri ATP di Office 365
 
@@ -69,19 +69,19 @@ Per modificare (o definire) i criteri ATP, è necessario essere assegnati a un r
 
 - Gli URL specificati nell'elenco "non riscrivere" sono esclusi dall'analisi dei collegamenti sicuri ATP per i destinatari specificati.
  
-- Se nell'elenco "non riscrivere" è già presente un elenco di URL, assicurarsi di esaminare l'elenco e aggiungere i caratteri jolly in base alle esigenze. Ad esempio, se l'elenco esistente dispone di una voce `http://contoso.com/a` come e si desidera includere i sottopercorsi come `http://contoso.com/a/b` nel criterio, aggiungere un carattere jolly alla voce in modo che appaia come `http://contoso.com/a/*`.
+- Se nell'elenco "non riscrivere" è già presente un elenco di URL, assicurarsi di esaminare l'elenco e aggiungere i caratteri jolly in base alle esigenze. Ad esempio, se l'elenco esistente dispone di una voce `https://contoso.com/a` come e si desidera includere i sottopercorsi come `https://contoso.com/a/b` nel criterio, aggiungere un carattere jolly alla voce in modo che appaia come `https://contoso.com/a/*`.
     
 - Non includere una barra (/) negli URL specificati nell'elenco "non riscrivere". Ad esempio, invece di immettere `contoso.com/` l'elenco "non riscrivere", immettere `contoso.com`.
 
-- Quando si specifica un elenco "non riscrivere" per un criterio di collegamenti sicuri ATP, è possibile includere fino a tre asterischi jolly (\*). I caratteri jolly\*() vengono utilizzati per includere in modo esplicito prefissi o sottodomini `http://` , `https://`ad esempio o. Una voce, ad esempio `contoso.com` , non è identica `*.contoso.com/*` a quella dell'elenco "non riscrivere". È necessario disporre `*.contoso.com/*` se si desidera consentire agli utenti di visitare un dominio e i relativi sottodomini e percorsi.
+- Quando si specifica un elenco "non riscrivere" per un criterio di collegamenti sicuri ATP, è possibile includere fino a tre asterischi jolly (\*). I caratteri jolly\*() vengono utilizzati per includere in modo esplicito prefissi o sottodomini `https://` , `https://`ad esempio o. Una voce, ad esempio `contoso.com` , non è identica `*.contoso.com/*` a quella dell'elenco "non riscrivere". È necessario disporre `*.contoso.com/*` se si desidera consentire agli utenti di visitare un dominio e i relativi sottodomini e percorsi.
     
 Nella tabella seguente sono elencati esempi di elementi che è possibile immettere e quali effetti hanno tali voci.
     
 |**Voce di esempio**|**Cosa fa**|
 |:-----|:-----|
-|`contoso.com`|Consente ai destinatari di visitare un sito `http://contoso.com` , ad esempio, ma non sottodomini o percorsi.|
-|`*.contoso.com/*`  <br/> |Consente ai destinatari di visitare un dominio, sottodomini e percorsi, ad esempio `http://www.contoso.com`, `https://www.contoso.com` `https://maps.contoso.com`, o`http://www.contoso.com/a`  <br/> |
-|`http://contoso.com/a`  <br/> |Consente ai destinatari specifici di visitare un sito `http://contoso.com/a`, ad esempio, ma non i sottopercorsi come`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a/*`  <br/> |Consente ai destinatari specifici di visitare un sito `http://contoso.com/a` come e i sottopercorsi come`http://contoso.com/a/b`  <br/> |
+|`contoso.com`|Consente ai destinatari di visitare un sito `https://contoso.com` , ad esempio, ma non sottodomini o percorsi.|
+|`*.contoso.com/*`  <br/> |Consente ai destinatari di visitare un dominio, sottodomini e percorsi, ad esempio `https://www.contoso.com`, `https://www.contoso.com` `https://maps.contoso.com`, o`https://www.contoso.com/a`  <br/> |
+|`https://contoso.com/a`  <br/> |Consente ai destinatari specifici di visitare un sito `https://contoso.com/a`, ad esempio, ma non i sottopercorsi come`https://contoso.com/a/b`  <br/> |
+|`https://contoso.com/a/*`  <br/> |Consente ai destinatari specifici di visitare un sito `https://contoso.com/a` come e i sottopercorsi come`https://contoso.com/a/b`  <br/> |
    
  

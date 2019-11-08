@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Se l'organizzazione invia una gran quantità di posta in blocco contrassegnata come posta indesiderata, potrebbe essere bloccata dall'invio di messaggi di posta elettronica con Office 365. Leggere questo articolo per ulteriori informazioni sul motivo per cui questo accade e su cosa è possibile fare.
-ms.openlocfilehash: 1985f9726a32e2726fd2814e5ec9079ad3ec211e
-ms.sourcegitcommit: 6c42fb7123b9688f9b53bc7fa91fb8cdfcf4c718
+ms.openlocfilehash: 28677e2bbfad7f44595de1300e42b9c58ab99c2b
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37455068"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031851"
 ---
 # <a name="control-outbound-spam-in-office-365"></a>Controllare la posta indesiderata in uscita in Office 365
 
@@ -33,7 +33,7 @@ Noi prendiamo sul serio la gestione della posta indesiderata in uscita perché l
 
 - **Abilitare le notifiche quando un account invia messaggi di posta indesiderata o arrestati**: gli amministratori possono ottenere Ccn ogni volta che un messaggio viene contrassegnato come posta indesiderata in uscita e inviato tramite il pool ad alto rischio. Monitorando questa cassetta postale, un amministratore può rilevare se dispone di un account compromesso nella propria rete o se il filtro di posta indesiderata contrassegna per un messaggio di posta elettronica come posta indesiderata. Per ulteriori informazioni sulla configurazione dei criteri di posta indesiderata in uscita, vedere [qui](configure-the-outbound-spam-policy.md).
 
-- **Esaminare manualmente i reclami di posta indesiderata dai provider di posta elettronica di**terze parti: molti servizi di posta elettronica di terze parti come Outlook.com, Yahoo e AOL forniscono un ciclo di commenti e suggerimenti in cui se un utente del servizio contrassegna una posta elettronica dal servizio come posta indesiderata, il messaggio viene inviato di nuovo a noi per la revisione. Per ulteriori informazioni sul supporto dei mittenti per Outlook.com, fare clic [qui](https://sendersupport.olc.protection.outlook.com/pm/services.aspx).
+- **Esaminare manualmente i reclami di posta indesiderata dai provider di posta elettronica di**terze parti: molti servizi di posta elettronica di terze parti come Outlook.com, Yahoo e AOL forniscono un ciclo di commenti e suggerimenti in cui se un utente del servizio contrassegna una posta elettronica dal servizio come posta indesiderata, il messaggio viene inserito e inviato nuovamente a noi per la revisione. Per ulteriori informazioni sul supporto dei mittenti per Outlook.com, fare clic [qui](https://sendersupport.olc.protection.outlook.com/pm/services.aspx).
 
 ## <a name="what-eop-does-to-control-outbound-spam"></a>Cosa fa EOP per controllare la posta indesiderata in uscita
 
@@ -47,7 +47,7 @@ Noi prendiamo sul serio la gestione della posta indesiderata in uscita perché l
 
    Un singolo messaggio contrassegnato come posta indesiderata potrebbe essere una classificazione errata da parte del motore di posta indesiderata e noto anche come falso positivo. Lo inviamo attraverso il pool ad alto rischio per dargli la possibilità di uscire; Tuttavia, un numero elevato di messaggi in un intervallo di tempo breve è indicativo di un problema e, quando ciò accade, blocca l'account dall'invio di qualsiasi altro messaggio di posta elettronica. Esistono diverse soglie per gli account di posta elettronica individuali così come in aggregato per l'intero tenant.
 
-4. **Disabilitare gli account offensivi quando si inviano troppi messaggi di posta elettronica in un intervallo di tempo troppo breve**: oltre ai limiti sopra riportati che cercano una parte di messaggio contrassegnata come posta indesiderata, esistono anche dei limiti che bloccano gli account al raggiungimento di un limite globale indipendentemente dal indica se i messaggi vengono contrassegnati come posta indesiderata o meno. Il motivo per cui questo limite esiste è perché un account compromesso potrebbe inviare messaggi di posta indesiderata zero-day che sono stati persi dal filtro di posta indesiderata. Poiché è difficile, se non impossibile, a volte distinguere tra una campagna di mailing di massa legittima e una massiccia campagna di posta indesiderata, questi limiti vengono attivati per limitare eventuali danni.
+4. **Disabilitare gli account offensivi quando si inviano troppi messaggi di posta elettronica in un intervallo di tempo troppo breve**: oltre ai limiti sopra riportati che cercano una parte di messaggio contrassegnata come posta indesiderata, esistono anche limiti che bloccano gli account quando raggiungono un limite globale indipendentemente dal fatto che i messaggi siano o meno contrassegnati come posta indesiderata. Il motivo per cui questo limite esiste è perché un account compromesso potrebbe inviare messaggi di posta indesiderata zero-day che sono stati persi dal filtro di posta indesiderata. Poiché è difficile, se non impossibile, a volte distinguere tra una campagna di mailing di massa legittima e una massiccia campagna di posta indesiderata, questi limiti vengono attivati per limitare eventuali danni.
 
 > [!NOTE]
 > Per #3 e #4, non vengono pubblicizzati i limiti esatti per impedire agli spammer di giocare nel sistema e per garantire che sia possibile modificare i limiti quando necessario. I limiti sono abbastanza alti in modo che un utente medio dell'azienda non li colpisca mai e sia sufficientemente basso da contenere la maggior parte dei danni che uno spammer può eseguire.
@@ -60,7 +60,7 @@ Noi prendiamo sul serio la gestione della posta indesiderata in uscita perché l
 
 2. **Utilizzare un messaggio di posta elettronica di terze parti per inviare la comunicazione di massa**: sono presenti diversi messaggi di posta elettronica di terze parti, la cui unica attività è quella di inviare messaggi di posta elettronica in blocco. Possono collaborare con i clienti per assicurarsi che dispongano di una buona prassi di posta elettronica e che dispongano di risorse dedicate per l'applicazione.
 
-Il gruppo di lavoro per la messaggistica, la telefonia mobile, antiabuso di malware (MAAWG) pubblica il roster di appartenenza [qui](http://www.maawg.org/about/roster). Numerosi provider di posta elettronica in blocco sono presenti nell'elenco e sono noti come cittadini Internet responsabili.
+Il gruppo di lavoro per la messaggistica, la telefonia mobile, antiabuso di malware (MAAWG) pubblica il roster di appartenenza [qui](https://www.maawg.org/about/roster). Numerosi provider di posta elettronica in blocco sono presenti nell'elenco e sono noti come cittadini Internet responsabili.
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 

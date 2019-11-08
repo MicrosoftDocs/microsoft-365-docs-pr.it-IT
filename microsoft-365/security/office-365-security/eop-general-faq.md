@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'Di seguito vengono riportate le risposte alle domande più frequenti sul servizio di filtro della posta elettronica ospitato su cloud di Microsoft Exchange Online Protection (EOP). Per ulteriori argomenti sulle domande frequenti (FAQ), accedere ai collegamenti seguenti:'
-ms.openlocfilehash: b49bb92cea781dc2c2120f1c0512a9de5182f16a
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 838e69ad52dbb7f2012c5d8605e41c91ba4c6b7e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441503"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033867"
 ---
 # <a name="eop-general-faq"></a>Domande frequenti su Exchange Online Protection
 
@@ -33,7 +33,7 @@ Di seguito vengono riportate le risposte alle domande più frequenti sul servizi
 
 - [Domande frequenti sulla protezione antimalware](anti-malware-protection-faq-eop.md)
 
-- [Domande frequenti su Traccia messaggio](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
+- [Domande frequenti su Traccia messaggio](https://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
 
 **D. Definizione di EOP**
   
@@ -63,7 +63,7 @@ R. Office 365 è il nome dato a una raccolta di prodotti e servizi a cui è poss
   
 R. L'interfaccia di amministrazione di Microsoft 365 avrà alcune di queste informazioni. Se si ha un impatto su un evento di servizio, dovrebbe essere visualizzato un avviso di comunicazione (in genere accompagnato da un'icona del campanello) dopo aver eseguito l'accesso all'interfaccia di amministrazione di Microsoft 365. Si consiglia di leggere e intervenire su tutti gli elementi, come necessario.
   
-In relazione alle funzionalità EOP, la [guida a Office 365 for business](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) è un ottima risorsa per trovare informazioni sulle nuove imminenti funzionalità. Verranno inoltre disposte articoli di Blog sulle nuove funzionalità per il sito Web [Microsoft 365 Blog](https://www.microsoft.com/en-us/microsoft-365/blog/) .
+In relazione alle funzionalità EOP, la [guida a Office 365 for business](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) è un ottima risorsa per trovare informazioni sulle nuove imminenti funzionalità. Verranno inoltre disposte articoli di Blog sulle nuove funzionalità per il sito Web [Microsoft 365 Blog](https://www.microsoft.com/microsoft-365/blog/) .
   
 **D. Il servizio funziona con le versioni legacy di Exchange (ad esempio, Exchange Server 2010) e negli ambienti non Exchange?**
   

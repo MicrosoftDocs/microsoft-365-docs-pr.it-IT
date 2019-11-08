@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Prepararsi per il Centro sicurezza e conformità di Microsoft 365
-ms.openlocfilehash: 839fe075f0d7d9038a3f3820f633ea9c643f3cf2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7b2cf40c812afc59116d42687cff6ceb0e7b0423
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084643"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38034347"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>I nuovi Microsoft 365 Security Center e Microsoft 365 Compliance Center sono ora generalmente disponibili
 
@@ -26,7 +26,7 @@ ms.locfileid: "37084643"
 
 Il nuovo [Centro sicurezza di Microsoft 365](../mtp/overview-security-center.md) include un dashboard che consente di gestire e monitorare la sicurezza in tutte le identità, i dati, i dispositivi, le app e l'infrastruttura. È inoltre possibile accedere facilmente al nuovo [Punteggio di Microsoft Secure](../mtp/microsoft-secure-score.md), ai nuovi report sulle minacce dei dispositivi, ai nuovi rapporti sulle minacce di identità e ai report di sicurezza delle app cloud. 
 
-[![Nuovo Centro sicurezza di Microsoft 365](../media/m365-security-center.png)](../mtp/overview-security-center.md)
+[![Nuovo Centro sicurezza Microsoft 365](../media/m365-security-center.png)](../mtp/overview-security-center.md)
 
 Quando si utilizza Microsoft 365 Security Center per la prima volta, vengono visualizzate le informazioni sulla parte superiore dello schermo per iniziare. Vedrai anche come esplorare facilmente le funzionalità di sicurezza che più ti interessano. Per ulteriori informazioni, vedere [Overview of the Microsoft 365 Security Center](../mtp/overview-security-center.md).
 
@@ -37,7 +37,7 @@ Sarà possibile accedere al centro sicurezza Microsoft 365 all'indirizzo [https:
 
 ## <a name="microsoft-365-compliance-center"></a>Centro conformità Microsoft 365
 
-Il nuovo [centro conformità di microsoft 365](../../compliance/microsoft-365-compliance-center.md) fornisce visibilità in Microsoft Compliance Manager, che rispecchia la posizione di conformità globale e fornisce le azioni consigliate per la configurazione delle impostazioni in modo da soddisfare la conformità complessa obblighi. 
+Il nuovo [centro conformità di microsoft 365](../../compliance/microsoft-365-compliance-center.md) fornisce visibilità in Microsoft Compliance Manager, che rispecchia la posizione di conformità globale e fornisce le azioni consigliate per configurare le impostazioni in modo da soddisfare gli obblighi di conformità complessi. 
 
 È possibile accedere facilmente alle etichette e ai criteri per la conservazione e la sensibilità, la prevenzione della perdita di dati (DLP), la governance dei dati, eDiscovery, le richieste del soggetto dei dati (richieste DSR), la gestione delle case e la sicurezza delle app cloud. Inoltre, è possibile ottenere Insight e sfruttare l'automazione intelligente per ridurre i rischi di conformità e salvaguardare la propria azienda digitale. 
 
@@ -60,18 +60,18 @@ Se si dispone di un altro abbonamento, ad esempio un piano autonomo che include 
 
 ### <a name="easy-access"></a>Facile accesso!
 
-Con una navigazione migliorata, soluzioni integrate e un'esperienza semplificata, è possibile visualizzare e accedere alle informazioni più interessate e sfruttare le potenti soluzioni di sicurezza e conformità in Microsoft 365. Mentre più funzionalità e soluzioni vengono aggiunte nei prossimi mesi, il centro[https://protection.microsoft.com](https://protection.microsoft.com)sicurezza & conformità di Office 365 è ancora disponibile.
+Con una navigazione migliorata, soluzioni integrate e un'esperienza semplificata, è possibile visualizzare e accedere alle informazioni più interessate e sfruttare le potenti soluzioni di sicurezza e conformità in Microsoft 365. Mentre più funzionalità e soluzioni vengono aggiunte nei prossimi mesi, il centro[https://protection.office.com](https://protection.office.com)sicurezza & conformità di Office 365 è ancora disponibile.
 
 Per accedere al centro conformità & sicurezza di Office 365, nel riquadro di spostamento a sinistra dello schermo, scegliere **altre risorse**. Quindi, sotto **Office 365 security & Compliance Center**, scegliere **Apri**.
 
 ### <a name="smooth-transition"></a>Transizione agevole!
 
-È possibile prevedere una transizione graduale ai nuovi centri. Infine, l'ex centro[https://protection.microsoft.com](https://protection.microsoft.com)protezione & conformità di Microsoft 365 verrà ritirato. Anche se l'esperienza dell'amministratore cambierà, ciò non influisce sulle configurazioni di conformità e sicurezza correnti. Se l'organizzazione dispone di Microsoft 365 Enterprise E3 o E5, gli amministratori della sicurezza e della conformità possono:
+È possibile prevedere una transizione graduale ai nuovi centri. Infine, il Centro sicurezza & conformità di Microsoft 365 verrà ritirato. Anche se l'esperienza dell'amministratore cambierà, ciò non influisce sulle configurazioni di conformità e sicurezza correnti. Se l'organizzazione dispone di Microsoft 365 Enterprise E3 o E5, gli amministratori della sicurezza e della conformità possono:
 
 - Passare direttamente a [https://security.microsoft.com](https://security.microsoft.com) e [https://compliance.microsoft.com](https://compliance.microsoft.com); <br>oppure  
 - Passare all'interfaccia di amministrazione di Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)() e passare da qui (nel riquadro di spostamento, fare clic su **Mostra tutto**, quindi scegliere **sicurezza** o **conformità**).
 
-È inoltre possibile configurare e gestire le impostazioni nel centro[https://protection.office.com](http://protection.office.com)di sicurezza & Compliance di Office 365 esistente. Le configurazioni verranno mantenute sia nel centro sicurezza & conformità di Office 365 che nel centro protezione Microsoft 365 e Microsoft 365 Compliance Center.  
+È inoltre possibile configurare e gestire le impostazioni nel centro[https://protection.office.com](https://protection.office.com)di sicurezza & Compliance di Office 365 esistente. Le configurazioni verranno mantenute sia nel centro sicurezza & conformità di Office 365 che nel centro protezione Microsoft 365 e Microsoft 365 Compliance Center.  
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni necessarie
 
@@ -95,22 +95,22 @@ Nella tabella seguente sono riepilogati gli utenti che possono accedere a vari p
 
 |Portale |Amministratore globale |Amministratore della sicurezza, operatore di sicurezza o lettore di sicurezza|Amministratore di conformità o amministratore dei dati di conformità |
 |---------|---------|---------|---------|
-|[Centro sicurezza & conformità](https://protection.office.com) |Sì |Sì  |Sì |
+|[Centro sicurezza e conformità di Office 365](https://protection.office.com) |Sì |Sì  |Sì |
 |[Centro sicurezza Microsoft 365](https://security.microsoft.com) |Sì  | Sì  | No        |
 |[Centro conformità Microsoft 365](https://compliance.microsoft.com) | Sì | No | Sì |
 |[Compliance Manager](https://aka.ms/compliancemanager) |Sì | Sì |Sì  |
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |Sì |Sì |No |
 |[Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/)  |Sì |Sì |No |
-|[Protezione avanzata dalle minacce di Azure](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |Sì |Sì |No |
+|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |Sì |Sì |No |
 |[ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) |Sì |Sì |No |
 |[Protezione delle identità](https://docs.microsoft.com/azure/active-directory/identity-protection)     |Sì |Sì |No |
-|[Gestione delle identità con privilegi](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Sì |Sì |No |
+|[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Sì |Sì |No |
 |[Intune](https://docs.microsoft.com/intune)     |Sì |Sì |Sì |
 |[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |Sì |Sì |Sì |
 |[Secure Score](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |Sì |Sì |No |
 |[Exchange](https://docs.microsoft.com/exchange/)     |Sì |Sì |Sì |
 
-## <a name="additional-resources"></a>Risorse aggiuntive
+## <a name="additional-resources"></a>Altre risorse
 
 [Centro sicurezza Microsoft 365](../mtp/overview-security-center.md)
 

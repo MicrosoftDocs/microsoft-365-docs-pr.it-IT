@@ -8,13 +8,13 @@ Il progetto ha adottato il [Codice di comportamento di Microsoft Open Source](ht
 
 # <a name="legal-notices"></a>Note legali
 
-Microsoft e qualsiasi contributore concede una licenza alla documentazione Microsoft e ad altri contenuti di questo repository sotto la [licenza pubblica internazionale Creative Commons attribution 4,0](https://creativecommons.org/licenses/by/4.0/legalcode), vedere il file di [licenza](LICENSE) e concedere una licenza a qualsiasi codice nel repository sotto la [licenza mit](https://opensource.org/licenses/MIT), vedere il file di [codice della licenza](LICENSE-CODE) .
+Microsoft and any Contributors concede una licenza alla documentazione Microsoft e ad altri contenuti di questo repository sotto la [licenza pubblica internazionale Creative Commons attribuzione 4,0](https://creativecommons.org/licenses/by/4.0/legalcode), vedere il file [di licenza](LICENSE) e concedere una licenza a qualsiasi codice nel repository sotto la [licenza mit](https://opensource.org/licenses/MIT), vedere il file di [codice della licenza](LICENSE-CODE) .
 
 Microsoft, Windows, Microsoft Azure e/o altri prodotti e servizi Microsoft a cui viene fatto riferimento nella documentazione possono essere marchi o marchi registrati di Microsoft negli Stati Uniti e/o negli altri paesi.
 Le licenze per questo progetto non consentono di utilizzare i nomi, i loghi o i marchi di Microsoft.
-Le linee guida relative ai marchi generali di Microsoft http://go.microsoft.com/fwlink/?LinkID=254653sono disponibili all'indirizzo.
+Le linee guida relative ai marchi generali di Microsoft https://go.microsoft.com/fwlink/?LinkID=254653sono disponibili all'indirizzo.
 
-Le informazioni sulla privacy sono reperibili all'indirizzohttps://privacy.microsoft.com/en-us/
+Le informazioni sulla privacy sono reperibili all'indirizzohttps://privacy.microsoft.com/
 
 Microsoft e tutti i collaboratori predispongono tutti gli altri diritti, sia in base ai rispettivi diritti d'autore, brevetti o marchi, sia per implicazione, preclusione o altro.
 

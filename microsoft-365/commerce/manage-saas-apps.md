@@ -11,12 +11,12 @@ ms.author: TrudyHa
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/31/2019
-ms.openlocfilehash: 72ef33199f3cde42ec86b4d64d13828116510d8f
-ms.sourcegitcommit: a263fc5a598363ca809a3cb990d41393bf38d3b7
+ms.openlocfilehash: f14809e58c1580333ba4e412a2b442df79e61975
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34592338"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029030"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gestire le sottoscrizioni delle app di terze parti per l'organizzazione
 
@@ -24,7 +24,7 @@ ms.locfileid: "34592338"
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Come ottenere le app software-come-a-Service
 Esistono alcuni modi per acquistare app di terze parti.
-- **Acquisto diretto** – i clienti possono acquistare direttamente abbonamenti da [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource](http://www.appsource.com/). 
+- **Acquisto diretto** – i clienti possono acquistare direttamente abbonamenti da [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource](https://www.appsource.com/). 
 - **Acquisto partner** – collaborare con un partner tramite centro partner per l'acquisto di sottoscrizioni. 
 - **Proposta Microsoft** – rispondere a una proposta di Microsoft Sales che include app di terze parti. 
 
@@ -54,9 +54,9 @@ Gli amministratori devono attivare le app di terze parti prima di assegnarle agl
 
 **Per attivare le app di terze parti**
 1. Andare all'interfaccia di [amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=837890)e accendere **provare l'anteprima**.
-2. Selezionare i prodotti di **fatturazione** > **& Services** > **Apps**.
+2. Selezionare i prodotti di **fatturazione** > **&** > **app**servizi.
 3. Individuare e selezionare l'app che si desidera gestire. 
-4. In **Impostazioni & azioni**, selezionare **Gestisci nel portale di Publisher**. 
+4. In **impostazioni & azioni**fare clic **su Gestisci nel portale di Publisher**. 
 
 Verrà indirizzato al sito dell'app Publisher in cui è possibile attivare l'app. 
 
@@ -71,14 +71,14 @@ Dopo aver attivato l'applicazione, l'app rimarrà attiva a meno che non venga an
 | Modificare la quantità di licenza <br> Gestire la modalità di pagamento della fattura <br> Gestire la modalità di pagamento della fattura <br> Cambiare il metodo di pagamento (carta di credito) <br> Visualizza fattura <br> Annullare l'abbonamento all'app | Configurare un'app (una volta per ogni app) <br> Assegnare licenze agli utenti <br> Supporto tecnico |
 
 ## <a name="assign-licenses"></a>Assegnare licenze
-Gli amministratori devono attivare le app di terze parti prima di assegnarle agli utenti. Sono attivati nel portale dell'editore di terze parti. Nella pagina App fare clic sul collegamento per assegnare le licenze nella sezione azioni &.
+Gli amministratori devono attivare le app di terze parti prima di assegnarle agli utenti. Sono attivati nel portale dell'editore di terze parti. Nella pagina app, in impostazioni & azioni, selezionare il collegamento per assegnare le licenze.
 
 **Per assegnare app di terze parti**
 
 1. Andare all'interfaccia di [amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=837890)e accendere **provare l'anteprima**.
-2. Selezionare i prodotti di **fatturazione** > **& Services** > **Apps**.
+2. Selezionare i prodotti di **fatturazione** > **&** > **app**servizi.
 3. Individuare e selezionare l'app che si desidera gestire. 
-4. In **Actions &**, selezionare il collegamento da **gestire nel portale di Publisher**. 
+4. In **impostazioni & azioni**selezionare il collegamento da **gestire nel portale di Publisher**. 
  
 ## <a name="change-license-quantity"></a>Modificare la quantità di licenza
 Gli amministratori possono modificare il numero di licenze possedute dalla propria organizzazione. Questo vale solo per le app acquistate con prezzi basati su Seat.
@@ -86,7 +86,7 @@ Gli amministratori possono modificare il numero di licenze possedute dalla propr
 **Per modificare la quantità di licenza**
 
 1. Andare all'interfaccia di [amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=837890)e accendere **provare l'anteprima**.
-2. Selezionare i prodotti di **fatturazione** > **& Services** > **Apps**.
+2. Selezionare i prodotti di **fatturazione** > **&** > **app**servizi.
 3. Individuare e selezionare l'app che si desidera gestire. 
 4. Selezionare **Cambia quantità di licenza**. 
 
@@ -97,12 +97,12 @@ Le app software-come-a-Service dispongono ognuna di un profilo di fatturazione a
 - **Informazioni di contatto** – indirizzo di fatturazione e nome del contatto
 - **Ruoli** : ruoli che consentono di modificare il profilo di fatturazione, pagare le bollette o utilizzare il metodo di pagamento sul profilo di fatturazione per effettuare l'acquisto. 
 
-Per ulteriori informazioni sui profili di fatturazione, vedere [understand Billing](https://docs.microsoft.com/microsoft-store/billing-profile)Profiles. 
+Per ulteriori informazioni sui profili di fatturazione, vedere [understand Billing Profiles](https://docs.microsoft.com/microsoft-store/billing-profile). 
 
 **Per modificare il profilo di fatturazione su una sottoscrizione di app software-come-a-Service**
 
 1. Andare all'interfaccia di [amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=837890)e accendere **provare l'anteprima**.
-2. Selezionare i prodotti di **fatturazione** > **& Services** > **Apps**.
+2. Selezionare i prodotti di **fatturazione** > **&** > **app**servizi.
 3. Individuare e selezionare l'app che si desidera gestire. 
 4. Fare clic su **modifica**accanto a **profilo di fatturazione**.
 
@@ -114,6 +114,6 @@ I clienti possono annullare l'applicazione software-as-a-Service dalla pagina ap
 **Per annullare la sottoscrizione di applicazioni software-come-a-Service**
 
 1. Andare all'interfaccia di [amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=837890)e accendere **provare l'anteprima**.
-2. Selezionare i prodotti di **fatturazione** > **& Services** > **Apps**.
+2. Selezionare i prodotti di **fatturazione** > **&** > **app**servizi.
 3. Individuare e selezionare l'app che si desidera gestire. 
-4. In **Impostazioni & azioni**selezionare **Annulla sottoscrizione**.
+4. In **impostazioni & azioni**selezionare **Annulla sottoscrizione**.

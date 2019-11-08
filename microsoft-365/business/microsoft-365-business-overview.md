@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come configurare Microsoft 365 business.
-ms.openlocfilehash: 0c717271da17ff4bf28d8d3546df3a9da427dba5
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: 86af927c05168fabe5a72f331c14c9f3e5cbc1dd
+ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697766"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038950"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Panoramica di Microsoft 365 business
 
 ## <a name="what-is-microsoft-365-business"></a>Che cos'è Microsoft 365 business
 
-Microsoft 365 Business è un set completo di strumenti per la produttività e la collaborazione aziendali sempre aggiornati, tra cui Outlook, Word, Excel e altri prodotti di Office. È possibile proteggere i file di lavoro in tutti i dispositivi iOS, Android e Windows 10 con sicurezza di livello aziendale semplice da gestire.
+Microsoft 365 business è un servizio di sottoscrizione che include gli strumenti di produttività di Office 365 e funzionalità avanzate che consentono di proteggere la propria azienda da Cyberthreats, proteggere i dati e gestire i dispositivi.
   
 Microsoft 365 business è destinato a un massimo di 300 licenze, per ulteriori informazioni, vedere [microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) Documentation.
 
@@ -98,4 +98,4 @@ Per visualizzare l'elenco completo delle funzionalità di sicurezza, vedere [Mic
 
 - Se non si dispone di un partner e si desidera ottenere Microsoft 365 business, è possibile [acquistarlo qui](https://www.microsoft.com/microsoft-365/business) e seguire le istruzioni di [iscrizione](sign-up.md) .
 
-- È inoltre possibile accedere a un [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en-us_UF_FAS) per acquistare Microsoft 365 business e ottenere assistenza per la configurazione.
+- È inoltre possibile accedere a un [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en-us_UF_FAS) per acquistare Microsoft 365 business e ottenere assistenza per la configurazione.
