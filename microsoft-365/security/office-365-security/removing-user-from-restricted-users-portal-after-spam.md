@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Se un utente invia continuamente messaggi di posta elettronica da Office 365 che vengono classificati come posta indesiderata, all'utente sarà impedito di inviare altri messaggi e-mail.
-ms.openlocfilehash: d0409a16a8584e7561f04a30fcc4184bfa41d87c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4abb37bbda20d17b19144d6f62b4ef1a4fc8fb4c
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084343"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032161"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Rimozione di un utente dal portale Utenti con restrizioni dopo l'invio di posta indesiderata
 
@@ -34,7 +34,7 @@ Se un utente invia continuamente messaggi di posta elettronica che vengono class
 
 Tempo stimato per il completamento: 5 minuti
   
-Devi disporre delle autorizzazioni per poter eseguire queste procedure.  Per sapere quali autorizzazioni sono necessarie, vedere la voce "Protezione da posta indesiderata" nell'argomento [Autorizzazioni funzionalità in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx).
+Devi disporre delle autorizzazioni per poter eseguire queste procedure.  Per sapere quali autorizzazioni sono necessarie, vedere la voce "Protezione da posta indesiderata" nell'argomento [Autorizzazioni funzionalità in Exchange Online](https://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx).
 
 La seguente procedura può essere eseguita anche tramite PowerShell remota. Utilizzare il cmdlet Get-BlockedSenderAddress per ottenere l'elenco degli utenti con restrizioni e Remove-BlockedSenderAddress per rimuovere la restrizione. Per informazioni su come usare Windows PowerShell per connettersi a Exchange Online, vedere [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
@@ -81,10 +81,10 @@ I comandi di PowerShell per utenti con restrizioni sono:
 
 [Rispondere a un account di posta elettronica compromesso](../../compliance/responding-to-a-compromised-email-account.md)
 
-[Informazioni sull'avviso relativo agli utenti ai quali è stato impedito di inviare posta elettronica](https://docs.microsoft.com/it-IT/office365/securitycompliance/alert-policies)
+[Informazioni sull'avviso relativo agli utenti ai quali è stato impedito di inviare posta elettronica](https://docs.microsoft.com/office365/securitycompliance/alert-policies)
 
 [Pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
 
-[Criteri di avviso nel Centro sicurezza e conformità](https://docs.microsoft.com/it-IT/office365/securitycompliance/alert-policies)
+[Criteri di avviso nel Centro sicurezza e conformità](https://docs.microsoft.com/office365/securitycompliance/alert-policies)

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di dispositivi e app nell'ambiente.
-ms.openlocfilehash: dda8291e8f57e4855e582614573d6971fa3919f1
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: b24bd278804e81c53a28bf99971a087fe5b7c3c0
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37422563"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031631"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Passaggio 1: preparazione di dispositivi e app
 
@@ -59,7 +59,7 @@ Desktop Analytics offre numerosi vantaggi rispetto ai sistemi di gestione deskto
 
 Per configurare Desktop Analytics, prima di tutto è necessario configurare una sottoscrizione di Azure e includervi un'area di lavoro di Azure Log Analytics. Una volta che il servizio Desktop Analytics è in esecuzione, è possibile registrare qualsiasi dispositivo Windows 7 SP1 o versioni successive connesso a Internet tramite le impostazioni di Criteri di gruppo. È semplicissimo. Non ci sono agenti da distribuire e il flusso di lavoro visivo di Desktop Analytics guida l'utente dalla distribuzione pilota alla distribuzione di produzione. Volendo, è possibile esportare i dati da Desktop Analytics a strumenti per la distribuzione del software come System Center Configuration Manager (Current Branch), per raggiungere direttamente i PC e creare raccolte non appena sono pronti per la distribuzione.
 
-Se al momento Desktop Analytics non è configurato per l'ambiente o se si desidera iscriversi per una prova, accedere alla pagina di Desktop Analytics (http://www.aka.ms/desktopanalytics)) e iniziare.
+Se al momento Desktop Analytics non è configurato per l'ambiente o se si desidera iscriversi per una prova, accedere alla pagina di Desktop Analytics (https://www.aka.ms/desktopanalytics)) e iniziare.
 
 ## <a name="device-and-app-readiness-process"></a>Processo di preparazione di dispositivi e app
 
@@ -85,9 +85,9 @@ Fornisce inoltre indicazioni utili per valutare se siano necessari aggiornamenti
 
 Si noterà che la maggior parte delle applicazioni, dei driver e dei componenti aggiuntivi sottoposti a inventario funzionerà così com'è. Per gli elementi in cui Desktop Analytics rileva problemi, vengono fornite informazioni note, ad esempio dove trovare gli aggiornamenti delle versioni per risolvere i problemi di compatibilità. Anziché dedicare tempo e risorse alla risoluzione di problemi complessi in dispositivi meno recenti e applicazioni non fondamentali e con una distribuzione limitata, è possibile concentrarsi sulla collaborazione con gli utenti per ritirare e sostituire tali elementi.
 
-È possibile usare Desktop Analytics anche per valutare i problemi di compatibilità basati su browser, identificando siti Web e app Web accessibili dagli utenti che usano ancora controlli ActiveX, oggetti browser helper, VBScript o altre tecnologie legacy non supportate dal browser Microsoft Edge. Gli utenti dovranno continuare a usare Internet Explorer 11 per questi siti ed è possibile aggiungerli all'[elenco siti modalità Enterprise](https://docs.microsoft.com/it-IT/microsoft-edge/deploy/emie-to-improve-compatibility)usando l’Enterprise Mode Site List Manager.
+È possibile usare Desktop Analytics anche per valutare i problemi di compatibilità basati su browser, identificando siti Web e app Web accessibili dagli utenti che usano ancora controlli ActiveX, oggetti browser helper, VBScript o altre tecnologie legacy non supportate dal browser Microsoft Edge. Gli utenti dovranno continuare a usare Internet Explorer 11 per questi siti ed è possibile aggiungerli all'[elenco siti modalità Enterprise](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility)usando l’Enterprise Mode Site List Manager.
 
-Inoltre, per facilitare il passaggio a Office 365 ProPlus, è consigliabile usare [Readiness Toolkit for Office](https://docs.microsoft.com/it-IT/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) per testare la compatibilità dei componenti aggiuntivi e delle macro Microsoft Visual Basic for Applications (VBA).
+Inoltre, per facilitare il passaggio a Office 365 ProPlus, è consigliabile usare [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) per testare la compatibilità dei componenti aggiuntivi e delle macro Microsoft Visual Basic for Applications (VBA).
 
 ![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -103,7 +103,7 @@ Man mano che vengono esaminati problemi, un numero sempre maggiore di PC diventa
 
 L'inventario software di Configuration Manager è un'alternativa all'uso di soluzioni di analisi basate sul cloud per valutare lo stato di preparazione di dispositivi e app. È possibile tenere traccia del numero di installazioni ed eseguire il drill-down in computer specifici per definire più facilmente le priorità per il test e la convalida della compatibilità, oltre che impostare pacchetti di applicazioni come compatibili con Windows 10 tramite le impostazioni del pacchetto. Anche se questa opzione non offre la possibilità di confrontare le informazioni di compatibilità note con i servizi di analisi di Microsoft, può rappresentare una soluzione efficace per un set ridotto di applicazioni con priorità per il testing manuale. 
 
-Per altre informazioni, vedere [Introduzione all'inventario software in System Center Configuration Manager](https://docs.microsoft.com/it-IT/sccm/core/clients/manage/inventory/introduction-to-software-inventory) e come configurare i requisiti della piattaforma nei pacchetti applicazioni in [Pacchetti e programmi di System Center Configuration Manager](https://docs.microsoft.com/it-IT/sccm/apps/deploy-use/packages-and-programs).
+Per altre informazioni, vedere [Introduzione all'inventario software in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/inventory/introduction-to-software-inventory) e come configurare i requisiti della piattaforma nei pacchetti applicazioni in [Pacchetti e programmi di System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
 
 
 ## <a name="desktop-app-assure"></a>Desktop App Assure

@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Passaggi del processo di pianificazione, distribuzione e promozione del valore di SharePoint all'interno dell'organizzazione.
-ms.openlocfilehash: 0cad129cdca5f5dcc072f583b2b651a2547fc5fd
-ms.sourcegitcommit: 68c54a45dd663027528b99f883c6ef04b04b19b0
+ms.openlocfilehash: 74ab3b65597cdf1752dd5dbf9179724464c998a3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37469148"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031641"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Distribuire SharePoint e OneDrive per Microsoft 365 Enterprise
 
@@ -165,7 +165,7 @@ L'organizzazione ha adottato SharePoint in Microsoft 365 Enterprise per supporta
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
-Per dare un'occhiata in casa Microsoft e scoprire in che modo ha distribuito SharePoint, vedere [SharePoint nel cloud: informazioni su come Microsoft ha eseguito la migrazione](https://www.microsoft.com/it-IT/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration).
+Per dare un'occhiata in casa Microsoft e scoprire in che modo ha distribuito SharePoint, vedere [SharePoint nel cloud: informazioni su come Microsoft ha eseguito la migrazione](https://www.microsoft.com/itshowcase/sharepoint-to-the-cloud-learn-how-microsoft-ran-its-own-migration).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

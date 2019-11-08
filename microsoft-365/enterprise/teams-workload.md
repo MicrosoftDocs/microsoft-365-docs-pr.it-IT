@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni dettagliate su come implementare Microsoft Teams nell'intera organizzazione.
-ms.openlocfilehash: e6a4ccc1b7ec5989707e2195b66fa1cf987cd091
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.openlocfilehash: 3f4ed40f3c28e9b8ce5c22dfa9bd93e9b1a9e1cb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "37889925"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033601"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Distribuire Microsoft Teams per Microsoft 365 Enterprise
 
@@ -63,8 +63,8 @@ Per altre informazioni, vedere la [Guida introduttiva per l'aggiornamento a Micr
 
 Per scoprire come Microsoft ha distribuito e utilizza Teams per la collaborazione, vedere:
 
-- [La strategia di adozione di Microsoft Teams per preparare i dipendenti a una nuova cultura del lavoro](https://www.microsoft.com/it-IT/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
-- [Microsoft Teams Rooms offre un’esperienza di riunione moderna e a livello globale](https://www.microsoft.com/it-IT/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
+- [La strategia di adozione di Microsoft Teams per preparare i dipendenti a una nuova cultura del lavoro](https://www.microsoft.com/itshowcase/microsoft-teams-adoption-strategy-prepares-employees-for-a-new-culture-of-work)
+- [Microsoft Teams Rooms offre un’esperienza di riunione moderna e a livello globale](https://www.microsoft.com/itshowcase/with-microsoft-teams-rooms-comes-a-globally-scalable-modern-meeting-experience)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

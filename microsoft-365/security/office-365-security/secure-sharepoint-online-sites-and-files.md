@@ -14,16 +14,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
+- SPO_Content
 ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Riepilogo: suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.'
-ms.openlocfilehash: b11edac77b5b4e3ebd26d1234bbebdf8b2e0880a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 62b7227239c52f50f2dc437e1ddedc663a5bb01d
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084143"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035706"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteggere siti e file di SharePoint Online
 
@@ -101,9 +102,9 @@ Se non si consente la condivisione esterna, gli utenti con esigenze aziendali tr
   
 ### <a name="device-access-settings"></a>Impostazioni di accesso dispositivo
 
-Le impostazioni di accesso dispositivo per SharePoint Online e OneDrive for Business consentono di determinare se l'accesso è limitato solo al browser (non è possibile scaricare i file) o se l'accesso è bloccato. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](https://docs.microsoft.com/it-IT/sharepoint/control-access-from-unmanaged-devices). 
+Le impostazioni di accesso dispositivo per SharePoint Online e OneDrive for Business consentono di determinare se l'accesso è limitato solo al browser (non è possibile scaricare i file) o se l'accesso è bloccato. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices). 
 
-Per usare impostazioni di accesso dispositivo con i criteri di accesso condizionale consigliati in Azure Active Directory, vedere [Suggerimenti sui criteri per la protezione di siti e file di SharePoint](https://docs.microsoft.com/it-IT/microsoft-365/enterprise/sharepoint-file-access-policies).
+Per usare impostazioni di accesso dispositivo con i criteri di accesso condizionale consigliati in Azure Active Directory, vedere [Suggerimenti sui criteri per la protezione di siti e file di SharePoint](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies).
   
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
@@ -170,7 +171,7 @@ Esistono due modi per concedere agli utenti esterni l'accesso ai file protetti c
   
 - Aggiungere utenti esterni a un gruppo di Azure AD che viene usato per configurare la protezione di un'etichetta
     
-     È necessario per prima cosa aggiungere l'account come utente B2B nella propria directory. Il [caching dell'appartenenza a gruppi da parte di Azure Rights Management](https://docs.microsoft.com/information-protection/plan-design/prepare#group-membership-caching-by-azure-rights-management) può richiedere un paio d'ore. Con questo metodo, le autorizzazioni vengono concesse per tutti i file esistenti protetti con l'etichetta, inclusi i file protetti prima dell'aggiunta di un utente al gruppo di Azure AD.
+     È necessario per prima cosa aggiungere l'account come utente B2B nella propria directory. Il [caching dell'appartenenza a gruppi da parte di Azure Rights Management](https://docs.microsoft.com/information-protection/plan-design/prepare) può richiedere un paio d'ore. Con questo metodo, le autorizzazioni vengono concesse per tutti i file esistenti protetti con l'etichetta, inclusi i file protetti prima dell'aggiunta di un utente al gruppo di Azure AD.
     
 - Aggiungere utenti esterni direttamente alla protezione dell'etichetta
     

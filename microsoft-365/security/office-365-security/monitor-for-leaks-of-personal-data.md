@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali.
-ms.openlocfilehash: 51e681d751e9d36872a47fcde1390c3dda8a2184
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b4ca34f3446a0067c6497d844e5b79a78d0eb35e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084630"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032241"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorare la perdita di dati personali
 
@@ -59,7 +59,7 @@ Inoltre, è possibile utilizzare i report DLP per ottimizzare i criteri DLP, qua
 
 I report DPL sono disponibili nel centro sicurezza e nel centro conformità. Passare a Report \> Visualizza report. Sotto Prevenzione della perdita dei dati scegliere Corrispondenze della regola e dei criteri di prevenzione della perdita dei dati o Falsi positivi e override dei criteri di prevenzione della perdita dei dati.
 
-Per ulteriori informazioni, vedere [Visualizzare i report di prevenzione della perdita di dati](https://support.office.com/it-IT/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
+Per ulteriori informazioni, vedere [Visualizzare i report di prevenzione della perdita di dati](https://support.office.com/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
 
 ![Report che mostra le corrispondenze ai criteri DLP](../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -77,21 +77,21 @@ I team di conformità e sicurezza delle informazioni possono utilizzare questi s
 
 I team di sicurezza delle informazioni possono anche cercare nel log di controllo per analizzare sospette violazioni dei dati e determinarne l'eventuale causa e gravità. Questa funzionalità integrata agevola la conformità agli articoli 33 e 34 dell'RGPD, secondo i quali le notifiche devono essere fornite all'autorità di supervisione dell'RGPD e ai soggetti dei dati interessati da una violazione dei dati entro uno specifico periodo di tempo. Le voci del log di controllo vengono conservate solo per 90 giorni nel servizio (spesso è consigliabile e molte organizzazioni hanno richiesto un periodo di conservazione di tali log anche maggiore).
 
-Sono disponibili soluzioni che consentono di sottoscrivere i log di controllo unificati tramite l'API Office 365 Management Activity, di archiviare voci di log secondo necessità e che forniscono dashboard e avvisi avanzati. Un esempio è [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/it-IT/azure/operations-management-suite/oms-solution-office-365).
+Sono disponibili soluzioni che consentono di sottoscrivere i log di controllo unificati tramite l'API Office 365 Management Activity, di archiviare voci di log secondo necessità e che forniscono dashboard e avvisi avanzati. Un esempio è [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365).
 
 Ulteriori informazioni sui criteri di avviso e sulla ricerca nel log di controllo:
 
--   [Criteri di avviso nei centri di sicurezza e di conformità di Microsoft 365](https://support.office.com/it-IT/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Criteri di avviso nei centri di sicurezza e di conformità di Microsoft 365](https://support.office.com/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
--   [Eseguire ricerche nel il log di controllo per le attività di utente e amministratore in Office 365](https://support.office.com/it-IT/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduzione)
+-   [Eseguire ricerche nel il log di controllo per le attività di utente e amministratore in Office 365](https://support.office.com/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduzione)
 
--   [Abilitare o disabilitare la ricerca nel log di controllo di Office 365](https://support.office.com/it-IT/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+-   [Abilitare o disabilitare la ricerca nel log di controllo di Office 365](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [Eseguire ricerche nel log di controllo](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [Eseguire ricerche nel log di controllo](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
--   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
+-   [Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501(v=exchg.160).aspx) (cmdlet) 
 
--   [Proprietà dettagliate nel log di controllo di Office 365](https://support.office.com/it-IT/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+-   [Proprietà dettagliate nel log di controllo di Office 365](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -125,11 +125,11 @@ Nota: verificare che "Analizza automaticamente i file per le etichette di classi
 
 Ulteriori informazioni:
 
--   [Distribuzione di Cloud App Security](https://docs.microsoft.com/it-IT/cloud-app-security/getting-started-with-cloud-app-security)
+-   [Distribuzione di Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [Ulteriori informazioni su Microsoft Cloud App Security](https://www.microsoft.com/it-IT/cloud-platform/cloud-app-security)
+-   [Ulteriori informazioni su Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
--   [Blocco dei download di informazioni sensibili tramite il proxy di Microsoft Cloud App Security](https://docs.microsoft.com/it-IT/cloud-app-security/use-case-proxy-block-session-aad)
+-   [Blocco dei download di informazioni sensibili tramite il proxy di Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>File di esempio e criteri di attività per rilevare la condivisione di dati personali
 

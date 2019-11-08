@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Descrizione dell’argomento resilienza
-ms.openlocfilehash: 4c718674a70186b004d8fefc5381074dba81c164
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: f2fd50a662076904daf3133e0edf45808ef2c39d
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122286"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031051"
 ---
 # <a name="built-in-resiliency"></a>Resilienza predefinita
 
@@ -26,7 +26,7 @@ Come provider di servizi cloud, Microsoft riconosce la necessità di guadagnare 
 
 **“Tempo di inattività di SharePoint Online**: periodo di tempo in cui gli utenti non riescono né a leggere né a scrivere qualunque parte di una raccolta siti di SharePoint Online per cui dispongono delle autorizzazioni appropriate".
 
-È possibile trovare le definizioni di tempo di inattività per ogni servizio nei [Contratti di servizio](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+È possibile trovare le definizioni di tempo di inattività per ogni servizio nei [Contratti di servizio](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
 Per ridurre al minimo i tempi di inattività, sia previsti che non previsti, i servizi di Microsoft 365 sono progettati e gestiti per essere altamente disponibili e resistenti ai guasti concentrandosi su quattro aree:
 

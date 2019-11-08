@@ -9,18 +9,19 @@ ms.topic: article
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Riepilogo: creare siti del team di SharePoint Online pubblici, privati, riservati ed estremamente riservati in un ambiente di sviluppo/test.'
-ms.openlocfilehash: d60d113f9b8eac453e8a516b4d5e373896ace0ec
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6bf18c3d010d7e624666745842f7f3c41176b1b3
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084909"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035696"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test
 

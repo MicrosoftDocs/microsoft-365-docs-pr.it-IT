@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 045f0e0fd2375c4342896668f69ce1305f4a1d43
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b8d6ae3a6721a3563cc68fcec9dd7f9d470bb31e
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981697"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031111"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
@@ -26,7 +26,7 @@ Questi lab pratici scaricabili sono incentrati sulla distribuzione di Windows 10
 
 Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione di desktop che eseguono Windows 10 Enterprise e Office 365 ProPlus. I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano System Center Configuration Manager, Desktop Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
 
-Come parte del processo di [distribuzione del desktop](http://www.aka.ms/howtoshift) per Windows 10 e Office 365 ProPlus, la creazione di un ambiente lab sandbox o isolato è il punto di partenza consigliato quando si inizia a esplorare gli aggiornamenti dello strumento di distribuzione e a testare l'automazione correlata alla distribuzione.
+Come parte del processo di [distribuzione del desktop](https://www.aka.ms/howtoshift) per Windows 10 e Office 365 ProPlus, la creazione di un ambiente lab sandbox o isolato è il punto di partenza consigliato quando si inizia a esplorare gli aggiornamenti dello strumento di distribuzione e a testare l'automazione correlata alla distribuzione.
 
 Il lab kit può essere scaricato gratuitamente e utilizza un software di valutazione.
 
@@ -122,11 +122,11 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 ## <a name="additional-guidance"></a>**Indicazioni aggiuntive**
 
-  - [Centro di distribuzione desktop](http://www.aka.ms/howtoshift)
+  - [Centro di distribuzione desktop](https://www.aka.ms/howtoshift)
 
-  - [Serie di video sulla distribuzione desktop di Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
+  - [Serie di video sulla distribuzione desktop di Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Distribuzione del sistema operativo in System Center Configuration Manager](https://docs.microsoft.com/it-IT/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Distribuzione del sistema operativo in System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Pianificare la distribuzione di Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come preparare gli utenti finali al passaggio a Windows 10 e Office 365 ProPlus tramite comunicazioni e formazione.
-ms.openlocfilehash: 6592734c89ea280a658007f53020641a0bc956b8
-ms.sourcegitcommit: 7e806db3d44ec223754efe1e9613b2c7117c4788
+ms.openlocfilehash: 46a9a21fe60d2cf16f0e24483c5e6ab261714b23
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814557"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033661"
 ---
 # <a name="step-8-user-communications-and-training"></a>Passaggio 8: comunicazioni e formazione utente
 
@@ -55,11 +55,11 @@ Per Windows 10, l'utente sarà supportato nella familiarizzazione con funzionali
 
 Sono inoltre presenti controlli di sicurezza e conformità visibili cui gli utenti potrebbero essere esposti. Enterprise Mobility + Security che comprende Azure AD e Microsoft Intune integra funzionalità aggiuntive con Windows 10 e Office 365 che è possibile scegliere per l'aggiornamento del desktop.
 
-[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/it-IT/cloud-platform/enterprise-mobility-security)
+[Microsoft Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
 Ad esempio, se è stata attivata l'autenticazione a più fattori, questa utilizza Azure AD e protegge l'accesso dell'utente alle risorse sfruttando l'app o il PIN di un telefono per accedere in modo sicuro ai servizi. Inoltre, Azure Information Protection facilita la classificazione e l'etichettatura dei documenti da parte degli utenti.
 
-[Configurare l'autenticazione a più fattori per utenti di Office 365](https://support.office.com/it-IT/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Configurare l'autenticazione a più fattori per utenti di Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
 Queste sono solo alcune delle nuove funzionalità che saranno sperimentate dagli utenti e alcune potrebbero coglierli di sorpresa, in modo positivo o meno. Tali sorprese, specialmente se alterano il normale flusso di lavoro, possono comportare più chiamate e ticket per l'helpdesk.
 
@@ -101,7 +101,7 @@ Parallelamente alla pianificazione di dispositivi, utenti, reparti e tempistiche
 
 Per mettere insieme i contenuti della formazione, è possibile accedere a brevi video formativi con istruzioni dettagliate sulla raccolta di produttività di Microsoft FastTrack.
 
-[Raccolta di produttività di Microsoft FastTrack](https://www.microsoft.com/en-us/microsoft-365/success/?rtc=2)
+[Raccolta di produttività di Microsoft FastTrack](https://www.microsoft.com/microsoft-365/success/?rtc=2)
 
 Sono disponibili centinaia di argomenti, in base agli argomenti rilevanti per l'organizzazione, tra cui: creazione di contenuti di maggiore impatto, condivisione di siti e contenuti, trasformazione del lavoro di gruppo e sblocco della produttività con dispositivi moderni.
 

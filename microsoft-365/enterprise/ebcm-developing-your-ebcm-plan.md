@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aspetti da considerare durante lo sviluppo di un piano di continuità aziendale compatibile con il cloud.
-ms.openlocfilehash: 4a133c65f6a5a2de44e871995886a01c2ce8e9a9
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122336"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031071"
 ---
 # <a name="developing-your-continuity-plan"></a>Sviluppare il piano di continuità
 
@@ -43,7 +43,7 @@ Questo è un documento BIA per `name of the service, system, process, or functio
 |Criticità|`develop your own classifications, but here are some examples: mission critical, important, deferrable`|
 |Business unit|`name of the business unit that owns this business function`|
 |Processo (servizio, funzionalità)|`the name of the process, service, or feature`|
-|Responsabile senior gruppo aziendale|`the name and contact information of the senior leader of the business group that owns this business process`|
+|responsabile senior gruppo aziendale|`the name and contact information of the senior leader of the business group that owns this business process`|
 |La tecnologia ha uno SLA o un OLA interno stabilito?|`please explain in as much detail as possible`|
 |La tecnologia ha uno SLA o un OLA **esterno** stabilito?|`please explain in as much detail as possible`|
 |La tecnologia ha un mandato esecutivo noto per la gestione dello SLA di uno specifico processo? In caso affermativo, spiegare in dettaglio.|`details here`|
