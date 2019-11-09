@@ -1,0 +1,67 @@
+### YamlMime:Hub
+title: Microsoft 365 centro assistenza per amministratori e professionisti IT
+summary: Esplorare le risorse per la guida e la formazione di Microsoft 365.
+brand: m365
+metadata:
+  title: Microsoft 365 centro assistenza per amministratori e professionisti IT
+  description: Configurare, distribuire e gestire Microsoft 365 per supportare l'organizzazione, le piccole imprese, la campagna o gli educatori e gli studenti
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.topic: hub-page
+  ms.collection: m365-security-compliance
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 11/08/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 770cd0927ebab80a545b56de04ed3d4de0226989
+  ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 11/08/2019
+  ms.locfileid: "38076366"
+highlightedContent:
+  items:
+  - title: Formazione per gli amministratori e i professionisti IT
+    itemType: learn
+    url: https://docs.microsoft.com/learn/m365/
+  - title: Formazione per gli utenti finali
+    itemType: learn
+    url: https://support.microsoft.com
+  - title: Formazione per le aziende di piccole dimensioni
+    itemType: learn
+    url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+  - title: Guide di laboratorio di testing per professionisti IT
+    itemType: how-to-guide
+    url: ./enterprise/m365-enterprise-test-lab-guides.md
+  - title: Microsoft 365 Tech community
+    itemType: get-started
+    url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+  - title: Risorse per sviluppatori
+    itemType: reference
+    url: https://developer.microsoft.com/microsoft-365
+additionalContent:
+  sections:
+  - title: Ottenere assistenza con Microsoft 365
+    summary: Selezionare una scheda per ulteriori informazioni su Microsoft 365.
+    items:
+    - title: Microsoft 365 Business
+      summary: Ideato per le aziende di piccole e medie dimensioni. Eseguire la propria azienda con la versione più recente di Windows e le app di Office come Excel e Outlook. Sfruttare la protezione dei dati e la sicurezza che si estende a tutti i dispositivi aziendali.
+      url: ./business/index.yml
+    - title: Microsoft 365 Enterprise
+      summary: Progettata per organizzazioni di grandi dimensioni. Proteggere la propria azienda e trasformare la modalità di utilizzo delle app di Office, Windows 10 ed Enterprise Mobility + Security.
+      url: ./enterprise/index.md
+    - title: Microsoft 365 Education
+      summary: Progettato per gli educatori per sbloccare la creatività, promuovere il lavoro di squadra e fornire un'esperienza semplice e sicura in un'unica soluzione a prezzi accessibili creata per l'istruzione.
+      url: https://docs.microsoft.com/education/
+    - title: Conformità di Microsoft 365
+      summary: Aiutare l'organizzazione a gestire le informazioni, a proteggersi dai rischi e a rispettare gli standard legali o normativi.
+      url: ./compliance/index.yml
+    - title: Sicurezza di Microsoft 365
+      summary: Aiutare a proteggere l'organizzazione tra le superfici di attacco.
+      url: ./security/index.yml
+    - title: Microsoft 365 per le campagne
+      summary: Mantenere la campagna o i dati business e le comunicazioni sicure con la configurazione consigliata per Microsoft 365 business.
+      url: ./campaigns/index.md
+    - title: NUOVO-Microsoft 365 Training and Certification at Microsoft Learn
+      summary: Nuovi percorsi di apprendimento per aumentare le competenze di Microsoft 365 e ottenere le certificazioni.
+      url: https://docs.microsoft.com/learn/m365/
