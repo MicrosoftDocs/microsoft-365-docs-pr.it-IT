@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 7e84aa35d3269e4b22fd8ea868b55249b422f268
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d858706a80cf66772ea3a422e07d4f773935446c
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034187"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076320"
 ---
 # <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione da posta indesiderata
 
@@ -71,7 +71,7 @@ R. I messaggi di posta indesiderata e non possono essere inviati a Microsoft per
   
  **D. È possibile ricevere rapporti sulla posta indesiderata?**
   
-A. Sì, ad esempio, è possibile ottenere un rapporto di rilevamento della posta indesiderata nell'interfaccia di amministrazione di Microsoft 365. Questo report Visualizza il volume di posta indesiderata come numero di messaggi univoci. Per ulteriori informazioni sulla segnalazione, vedere i seguenti collegamenti:
+R. Sì, ad esempio, è possibile ottenere un rapporto di rilevamento della posta indesiderata nell'interfaccia di amministrazione di Microsoft 365. Questo report Visualizza il volume di posta indesiderata come numero di messaggi univoci. Per ulteriori informazioni sulla segnalazione, vedere i seguenti collegamenti:
   
 Clienti di Exchange Online: [monitoraggio, creazione di rapporti e traccia dei messaggi in Exchange Online](https://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
@@ -89,7 +89,7 @@ R. Se più della metà della posta inviata da un utente tramite il servizio entr
   
  **D. È possibile utilizzare un provider antimalware e di protezione dalla posta indesiderata di terze parti insieme a Exchange Online?**
   
-A. Sì, è possibile configurare un altro servizio antimalware e di protezione dalla posta indesiderata per proteggere le cassette postali di Exchange Online. Per eseguire questa attività per la posta in ingresso, è necessario reindirizzare i messaggi di posta elettronica al provider di terze parti modificando i record MX in modo che puntino a tale provider e quindi reindirizzare i messaggi a EOP per l'ulteriore elaborazione. Per eseguire questa attività per la posta in uscita, è necessario configurare la destinazione di recapito dei messaggi per il provider di terze parti (smart host), come indicato in [Scenario: Outbound Smart Hosting](https://technet.microsoft.com/library/431b3f02-4efd-4bd3-94e7-eecd03f8ef5e.aspx).
+A. Sì, è possibile configurare un altro servizio antimalware e di protezione dalla posta indesiderata per proteggere le cassette postali di Exchange Online. Per eseguire questa attività per la posta in ingresso, è necessario reindirizzare i messaggi di posta elettronica al provider di terze parti modificando i record MX in modo che puntino a tale provider e quindi reindirizzare i messaggi a EOP per l'ulteriore elaborazione. Per eseguire questa operazione per la posta in uscita, configurare la destinazione del recapito dei messaggi per il provider di terze parti (SmartHost).
   
  **D. Microsoft dispone di documentazione su come è possibile proteggersi da tentativi di phishing?**
   
@@ -125,7 +125,7 @@ R. Le linee guida presentate di seguito rappresentano le procedure ottimali per 
     
     [Configurazione di SPF in Office 365 per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-    [Create DNS records for Office 365](https://go.microsoft.com/fwlink/?LinkID=275414)
+    [Domande frequenti sui domini](/office365/admin/setup/domains-faq)
     
 5. **Per accedere alla posta elettronica con DKIM, utilizzare la canonicalizzazione semplice.**
     

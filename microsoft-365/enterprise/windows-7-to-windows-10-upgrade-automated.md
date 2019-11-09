@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aggiornamenti automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
-ms.openlocfilehash: 4d1601c23d160d5618d491cd168583c78b54181c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033631"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078085"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Aggiornamenti sul posto automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
 
@@ -44,7 +44,7 @@ Gli aggiornamenti sul posto possono essere automatizzati con strumenti di distri
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Aggiornamento di un numero ridotto di computer
 
-Per un singolo computer o un numero ridotto di computer, l'approccio manuale all'aggiornamento in genere è l'opzione migliore rispetto agli approcci più automatizzati. È possibile trovare il software e le licenze necessari nel [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=808282), presso altri rivenditori software o nel [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx) se si dispone di contratti multilicenza. Per istruzioni dettagliate sull'aggiornamento di un singolo PC a Windows 10 e le opzioni di ripristino post-aggiornamento, vedere la [guida dettagliata all'aggiornamento manuale da Windows 7 a Windows 10](https://docs.microsoft.com/it-IT/microsoft-365/enterprise/windows-7-to-windows-10-upgrade).
+Per un singolo computer o un numero ridotto di computer, l'approccio manuale all'aggiornamento in genere è l'opzione migliore rispetto agli approcci più automatizzati. È possibile trovare il software e le licenze necessari nel [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=808282), presso altri rivenditori software o nel [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx) se si dispone di contratti multilicenza. Per istruzioni dettagliate sull'aggiornamento di un singolo PC a Windows 10 e le opzioni di ripristino post-aggiornamento, vedere la [guida dettagliata all'aggiornamento manuale da Windows 7 a Windows 10](https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade).
 
 ## <a name="how-to-upgrade-many-computers"></a>Come eseguire l'aggiornamento di più computer
 

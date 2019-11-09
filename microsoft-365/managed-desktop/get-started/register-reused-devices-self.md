@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51db9c88710605c6203023b343edc4359556d57d
-ms.sourcegitcommit: 9aaedbab11fd1a1d289eeb8f853d321f32cb7edc
+ms.openlocfilehash: e11b72228dceb5a4999e6b9398efde02a41ca163
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37577772"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074738"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrare manualmente i dispositivi già presenti
 
@@ -71,20 +71,25 @@ Se sono stati soddisfatti tutti questi prerequisiti, è possibile raccogliere le
 4. In **Generatore report**selezionare **origine dati:**. Selezionare l'origine dati predefinita, che dovrebbe iniziare con "AutoGen". 
 5. Scegliere **tipo di query come testo**e quindi immettere la query seguente:
 
-```
 
+
+
+```sql
 SELECT comp.manufacturer0      AS Manufacturer,  
        comp.model0             AS Model,  
        bios.serialnumber0      AS Serial_Number,  
        mdm.devicehardwaredata0 AS HardwareHash  
-FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp  
+FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
+
        INNER JOIN Fn_rbac_gs_pc_bios(@UserSIDs) bios  
                ON comp.resourceid = bios.resourceid  
        INNER JOIN Fn_rbac_gs_mdm_devdetail_ext01(@UserSIDs) mdm  
                ON comp.resourceid = mdm.resourceid
-
-
 ```
+
+
+
+
 5. Passare alla scheda **campo** , i valori wehre per il **nome del campo** e l' **origine campo** devono essere già inseriti. Se non lo sono, fare clic su **Aggiungi**, quindi selezionare **campo query**. Immettere il **nome del campo** e l' **origine del campo**.
 6. Ripetere questa procedura per ognuno di questi valori: 
     - Produttore 
@@ -115,7 +120,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp 
 
 
 > [!IMPORTANT]
-> La query in Configuration Manager non consente l'esecuzione di spazi nei nomi di colonna esportati. Ecco perché i passaggi sono stati immessi in "Serial_Number" e "HardwareHash". Dopo aver esportato il file CSV, è necessario modificare le intestazioni dei rapporti per leggere il *numero di serie* e l' *hash hardware* come illustrato di seguito prima di procedere con la registrazione dei dispositivi.
+> La query in Configuration Manager non consente l'esecuzione di spazi nei nomi di colonna esportati. Questo è il motivo per cui i passaggi sono stati immessi "Serial_Number" e "HardwareHash". Dopo aver esportato il file CSV, è necessario modificare le intestazioni dei rapporti per leggere il *numero di serie* e l' *hash hardware* come illustrato di seguito prima di procedere con la registrazione dei dispositivi.
 
 A questo punto è possibile procedere alla [registrazione dei dispositivi tramite il portale di Azure](#register-devices-by-using-the-azure-portal).
 

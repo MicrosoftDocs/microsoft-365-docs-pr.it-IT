@@ -1,19 +1,20 @@
 ---
-title: Preparare i certificati e i profili di rete per Microsoft Managed Desktop
+title: Preparare certificati e profili di rete per Microsoft Managed Desktop
 description: certs/WiFi/LAN
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7c260ce7b3fcb488cb22fb054eeb6ba322fee94b
-ms.sourcegitcommit: ef1382ca224a0c108df2633a6550786666691e1c
+ms.openlocfilehash: eadaa3ab7e381081be4e47054e70d7b8d1924385
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34391267"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074678"
 ---
-# <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparare i certificati e i profili di rete per Microsoft Managed Desktop  
+# <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparare certificati e profili di rete per Microsoft Managed Desktop  
  
 L'autenticazione basata su certificato è un requisito comune per i clienti che utilizzano Microsoft Managed Desktop. Potrebbe essere necessario disporre di certificati per accedere a Wi-Fi o LAN, per connettersi a soluzioni VPN o per accedere alle risorse interne nell'organizzazione.   
  
@@ -49,7 +50,7 @@ Prima di distribuire un profilo di configurazione di rete cablata ai dispositivi
 1. Accedere a un dispositivo che dispone del profilo 802.1 x esistente configurato ed è connesso alla rete LAN.  
 2. Aprire un prompt dei comandi con credenziali amministrative. 
 3. Individuare il nome dell'interfaccia LAN eseguendo l' **interfaccia netsh interface show**. 
-4. Esportare il codice XML del profilo LAN eseguendo **netsh lan export profile folder =.  Interface = "INTERFACE_NAME"**. 
+4. Esportare il codice XML del profilo LAN eseguendo **netsh lan export profile folder =.  Interface = "interface_name"**. 
 5. Se è necessario testare il profilo esportato sul dispositivo Microsoft Managed Desktop, eseguire **Netsh LAN Add profile filename = "PATH_AND_FILENAME. xml" Interface = "INTERFACE_NAME"**. 
  
  
@@ -78,8 +79,8 @@ Dopo aver esportato il profilo LAN, è possibile preparare i criteri per Microso
  
 Per distribuire certificati e profili, eseguire la procedura seguente:
 
-1. Creare un profilo per ogni certificato radice e intermedio (vedere [creare profili di certificati attendibili](https://docs.microsoft.com/intune/certificates-configure#step-3-create-trusted-certificate-profiles)). Ognuno di questi profili deve avere una descrizione che include una data di scadenza nel formato gg/MM/AAAA. **I profili dei certificati senza una data di scadenza non verranno distribuiti.**
-2. Creare un profilo per ogni SCEP o PKCS (vedere [Create a SCEP certificate profile](https://docs.microsoft.com/intune/certificates-scep-configure#create-a-scep-certificate-profile) or [Create a PKCS certificate profile](https://docs.microsoft.com/intune/certficates-pfx-configure#create-a-pkcs-certificate-profile)) ognuno di questi profili deve avere una descrizione che includa una data di scadenza nel formato gg/mm/aaaa. **I profili dei certificati senza una data di scadenza non verranno distribuiti.**
+1. Creare un profilo per ogni certificato radice e intermedio (vedere [creare profili di certificati attendibili](https://docs.microsoft.com/intune/protect/certificates-configure#step-3-create-trusted-certificate-profiles). Ognuno di questi profili deve avere una descrizione che include una data di scadenza nel formato gg/MM/AAAA. **I profili dei certificati senza una data di scadenza non verranno distribuiti.**
+2. Creare un profilo per ogni SCEP o PKCS (vedere [Create a SCEP certificate profile](https://docs.microsoft.com/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile) or [Create a PKCS certificate profile](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) ognuno di questi profili deve avere una descrizione che includa una data di scadenza nel formato gg/mm/aaaa. **I profili dei certificati senza una data di scadenza non verranno distribuiti.**
 3. Creare un profilo per ogni rete WiFi aziendale (vedere [Impostazioni Wi-Fi per i dispositivi Windows 10 e versioni successive](https://docs.microsoft.com/intune/wi-fi-settings-windows)).
 4. Creare un profilo per ogni VPN aziendale (vedere [Windows 10 e le impostazioni dei dispositivi olografici di Windows per aggiungere connessioni VPN tramite Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
 5. Inviare una richiesta di supporto intitolata "distribuzione di certificati" o "distribuzione del profilo Wi-Fi" per le operazioni IT di Microsoft Managed Desktop tramite il portale di amministrazione di Microsoft Managed Desktop per esaminare e distribuire il profilo di configurazione in "dispositivi di lavoro moderni – test ". Microsoft Managed Desktop IT Operations consente di sapere quando la richiesta è stata completata tramite la richiesta di supporto nel portale di amministrazione. 

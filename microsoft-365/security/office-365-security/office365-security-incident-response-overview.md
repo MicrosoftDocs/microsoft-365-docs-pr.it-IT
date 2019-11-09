@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Questa soluzione indica quali sono gli attacchi di Cybersecurity più comuni che possono essere presenti in Office 365 e come rispondervi
-ms.openlocfilehash: 71289c42ab5f86fee088e5bb158746a8b809caa9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33cacf98efb78826f2655376b19a9d05d12955e7
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084622"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078075"
 ---
 # <a name="office-365-security-incident-response"></a>Intervento in caso di incidente di sicurezza di Office 365
 
@@ -46,7 +46,7 @@ Controllare di nuovo qui mensilmente, in quanto verranno aggiunti altri articoli
 
 ## <a name="incident-response-articles"></a>Articoli sugli incidenti di risposta
 
-- [Rispondere a un account di posta elettronica compromesso in Office 365](/compliance/responding-to-a-compromised-email-account.md)
+- [Rispondere a un account di posta elettronica compromesso in Office 365](~/compliance/responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteggere Office 365 come un professionista della sicurezza informatica
 L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.  Usare il [Roadmap di protezione di Office 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Office 365.

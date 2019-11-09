@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 971b17d3f9fad15d5c254d47af9b6eb30b66633c
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: ceda5765ca6450959c99222daf457cf7584401ba
+ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38011947"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074728"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Procedura per i partner per la registrazione dei dispositivi
 
@@ -35,6 +35,8 @@ Il file deve includere le **intestazioni di colonna** identiche a quelle del cam
   
   
   ```
+
+
 
 
 >[!NOTE]
