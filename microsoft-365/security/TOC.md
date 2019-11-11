@@ -3,6 +3,7 @@
 ## Guida introduttiva
 ### [Sicurezza Microsoft 365 per decision maker aziendali](Microsoft-365-security-for-bdm.md)
 ### [Secure Score](./mtp/microsoft-secure-score.md)
+### [Secure Score (anteprima)](./mtp/microsoft-secure-score-preview.md)
 ### [Workshop di formazione per Chief Information Security Officer (CISO)](./office-365-security/ciso-workshop.md)
 #### [Modulo 1 - Presentazione sulla sicurezza informatica in Microsoft](./office-365-security/ciso-workshop-module-1.md)
 #### [Modulo 2 - Gestione della sicurezza](./office-365-security/ciso-workshop-module-2.md)
