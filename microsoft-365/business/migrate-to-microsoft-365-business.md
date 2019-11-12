@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Passaggi che aggiornano la propria azienda da Office 365 Business Premium a Microsoft 365 business.
-ms.openlocfilehash: 1e337b908f848da1d33cbd8e662652550d302b14
-ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38002126"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231412"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Eseguire l'aggiornamento a Microsoft 365 business da Office 365 Business Premium
 
@@ -38,37 +38,6 @@ Per ulteriori informazioni su Microsoft 365 business, vedere [Microsoft.com](htt
 ## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Qual è la differenza tra Office 365 Business Premium e Microsoft 365 business?
 È stato aggiunto un confronto affiancato di questi due piani alla [Descrizione del servizio Microsoft 365 business](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
 
-1. Dopo aver acquistato nuove licenze e questa è la prima volta che l'utente ha eseguito, il banner di installazione per Microsoft 365 business verrà visualizzato all'inizio dell'interfaccia di amministrazione.
-    
-    > [!NOTE]
-    > Il banner di installazione è la possibilità di aggiungere nuovi utenti, un nuovo dominio ed eseguire la migrazione della posta elettronica per i nuovi utenti. Se non si prevede di eseguire alcuna operazione, è consigliabile continuare con la procedura guidata e scegliere opzioni predefinite per farla scomparire dalla Home page di amministrazione. 
-  
-   ![Scegliere Avvia installazione in Microsoft 365 business è pronto per impostare banner.](media/8d3b0d97-7cca-497f-9364-4b00ad670209.png)
-  
-    Scegliere **Avvia configurazione**.
-    
-2. Nella pagina **Personalizza l'accesso e la posta elettronica** , è possibile aggiungere un dominio, scegliendo **Connetti un dominio già** in uso, se si desidera utilizzare questa opportunità per aggiungere un altro dominio all'abbonamento. 
-    
-    Se è già stato configurato un dominio, il secondo campo indicherà che **continuerà a utilizzare** \< _il nome_ \> **di dominio per la posta elettronica e l'accesso**.   Se non è stato configurato un dominio con l'abbonamento, sarà necessario **continuare a utilizzare** \< _la società Name.onmicrosoft.com_ \> **per la posta elettronica e l'accesso**.  
-    
-    Scegliere **Avanti**.
-    
-    ![Nella pagina Personalizza l'accesso e la posta elettronica scegliere di aggiungere un dominio oppure utilizzarne uno utilizzato.](media/c3f5cfb2-1189-4d2f-803b-c9feb008a7a3.png)
-  
-3. Nella pagina **Aggiungi nuovi utenti** , è possibile aggiungere nuovi utenti, se si dispone di nuovi dipendenti a cui si desidera assegnare le licenze di Microsoft 365 business. 
-    
-    Se non si dispone di nuovi dipendenti da aggiungere e si desidera assegnare licenze agli utenti esistenti, scegliere **Avanti**.
-    
-4. Nella pagina **migrate messaggi di posta elettronica** è possibile scegliere di eseguire la migrazione della posta elettronica per tutti i nuovi utenti aggiunti al passaggio 3. È anche possibile ignorare questo passaggio. Scegliere **Avanti**.
-    
-5. Nell'ultima pagina, scegliere **Vai all'interfaccia di amministrazione**e continuare l'installazione lì.
-    
-6. Nell'interfaccia di amministrazione, passare a utenti **attivi**degli **utenti** \> .
-    
-7. Selezionare l'utente a cui si desidera assegnare la licenza **Microsoft 365 business** e quindi scegliere **modifica** accanto a **licenze di prodotto**.
-    
-    ![Nella scheda utente, scegliere Modifica accanto a licenze di prodotto.](media/be0fe2d8-7ff8-447c-88f6-d212ed78451c.png)
-  
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
 - **Quando scegliere l'aggiornamento?** L'aggiornamento è la scelta giusta quando si desidera aggiornare **tutti gli utenti** assegnati a un singolo piano. Quando si sceglie l'opzione di aggiornamento, tutti i piani di utenti vengono passati a un altro piano contemporaneamente. Se non si desidera aggiornare tutti gli utenti assegnati a un singolo piano, acquistare le licenze per il nuovo piano (in questo caso Microsoft 365 business) e [assegnare tali licenze singolarmente](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) a ogni utente che si desidera aggiornare. 
