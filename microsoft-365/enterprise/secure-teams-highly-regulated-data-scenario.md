@@ -3,7 +3,7 @@ title: Team per dati altamente regolamentati
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 10/31/2019
+ms.date: 11/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un team sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: c4a7c724b6fbb4515deba1a207eea31902f822e0
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: 97cc19b0b0067dc0eaca845dd16621be823f1334
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929224"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302953"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Team per dati altamente regolamentati
 
@@ -115,7 +115,7 @@ Ecco la configurazione risultante finora.
  
 ### <a name="step-4-create-a-retention-label-and-dlp-policy"></a>Passaggio 4: Creare un'etichetta di conservazione e i criteri DLP
 
-Seguire [queste istruzioni](https://docs.microsoft.com/microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp) per:
+Seguire [queste istruzioni](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp) per:
 
 1. Creare e pubblicare un'etichetta di conservazione per i dati altamente regolamentati, se necessario.
 2. Configurare il sito del team per l'etichetta di conservazione creata nel passaggio 1.
