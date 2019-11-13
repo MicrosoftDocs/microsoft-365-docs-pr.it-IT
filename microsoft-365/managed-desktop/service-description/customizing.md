@@ -6,21 +6,20 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5c9e53278f76665d1b48da0fbeb4555565c183aa
-ms.sourcegitcommit: 543ac29a15412a348b61db2297e7bcdcca842206
+ms.openlocfilehash: aca3bb6413aaab7620b1e1277c821a79dba4bb2f
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38020379"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302903"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Eccezioni al piano di servizio
 
 Microsoft Managed Desktop fornisce un elenco di dispositivi a cura, [impostazioni del dispositivo standard](device-policies.md), requisiti per le applicazioni e determinate [impostazioni configurabili](../working-with-managed-desktop/config-setting-overview.md), tutte progettate per offrire un'esperienza sicura, produttiva e piacevole per gli utenti finali. È consigliabile rimanere sempre con il servizio fornito. Tuttavia, si riconosce che alcuni dettagli del servizio potrebbero non corrispondere esattamente alle esigenze dell'organizzazione. Se si ritiene che sia necessario modificare il servizio in qualche modo, è importante seguire i processi seguenti per richiedere tali modifiche.
-
  
 ## <a name="types-of-exceptions"></a>Tipi di eccezioni
-Un'eccezione è una o più modifiche apportate alla configurazione di base di Microsoft Managed Desktop; gli esempi variano dalla configurazione delle porte USB alla distribuzione di un nuovo agente di sicurezza. Raggruppare diverse eccezioni nel modo seguente:
 
+Un'eccezione è una o più modifiche apportate alla configurazione di base di Microsoft Managed Desktop; gli esempi variano dalla configurazione delle porte USB alla distribuzione di un nuovo driver di dispositivo. Raggruppare diverse eccezioni nel modo seguente:
 
 |Tipo  |Descrizione  |
 |---------|---------|
@@ -31,18 +30,15 @@ Un'eccezione è una o più modifiche apportate alla configurazione di base di Mi
 |Generali     | Impostazioni di Windows 10 o Office 365 ProPlus su un dispositivo gestito        |
 |Dispositivi     | Dispositivi che non sono presenti nell' [elenco](device-list.md) dispositivi di Microsoft Managed Desktop        |
 |Altro     |  Tutto ciò che non rientra nelle altre aree       |
-
-
-
  
 ## <a name="request-an-exception"></a>Richiedere un'eccezione
 
 Inviare richieste tramite il portale di amministrazione di Microsoft Managed Desktop mediante la creazione di una richiesta di modifica. Assicurarsi di includere i dettagli seguenti:
--    Tipo: qual è la categoria di excmption? (vedere la tabella precedente)
--   Requisito: qual è il requisito aziendale specifico per l'?
+
+-   Tipo di esenzione: quale categoria di eccezione è? (vedere la tabella precedente)
+-   Requisito: qual è il requisito aziendale specifico per l'eccezione?
 -   Proposta: qual è la soluzione che richiede la propria azienda?
 -   Sequenza temporale: per quanto tempo si desidera che l'eccezione venga ultimata? 
-
 
 ## <a name="how-we-assess-an-exception-request"></a>Come viene valutata una richiesta di eccezione
 
@@ -64,11 +60,11 @@ Vengono esaminate le eccezioni per garantire che non violino nessuna di queste c
 -   Un'eccezione non deve influire sulla stabilità del sistema, ad esempio causando arresti anomali o blocchi della modalità kernel.
 -   La modifica non deve limitare l'utilizzo del servizio o il conflitto con la tecnologia di base di Microsoft Managed Desktop.
 
-Queste condizioni potrebbero cambiare in futuro. Se si apportano tali modifiche, verrà fornita una notifica di 30 giorni prima che le condizioni vengano applicate.
+Queste condizioni potrebbero cambiare in futuro. Se si apportano tali modifiche, verrà fornita una notifica di 30 giorni prima che le condizioni vengano applicate.  Se Microsoft Managed Desktop fornisce un modo alternativo per rispondere a un'eccezione approvata, Microsoft Managed Desktop notificherà al cliente che Microsoft Managed Desktop può modificare il modo in cui viene supportato l'eccezione. 
 
 ## <a name="revoking-approval-for-an-exception"></a>Revoca dell'approvazione per un'eccezione
 
-Dopo l'approvazione e la distribuzione di un'eccezione richiesta, è possibile che si verifichino problemi che violano le condizioni chiave non evidenti quando è stata approvata la modifica in primo luogo. In questa situazione, potrebbe essere necessario revocare l'approvazione per il.
+Dopo l'approvazione e la distribuzione di un'eccezione richiesta, è possibile che si verifichino problemi che violano le condizioni chiave non evidenti quando è stata approvata la modifica in primo luogo. In questo caso, potrebbe essere necessario revocare l'approvazione per l'eccezione.
  
 In tal caso, verrà notificato tramite il portale di amministrazione di Microsoft Managed Desktop. Dal primo momento in cui viene effettuata la notifica, sono disponibili 90 giorni per rimuovere l'eccezione prima che i dispositivi con l'eccezione non siano più associati ai contratti di servizio Microsoft Managed Desktop. Verranno inviate diverse notifiche in base a una sequenza temporale rigorosa, tuttavia, un grave incidente o una minaccia potrebbe richiedere di modificare la sequenza temporale o le decisioni relative a un'eccezione. Non verrà *rimossa* un'eccezione senza il consenso, ma qualsiasi dispositivo con un'eccezione revocata non sarà più associato al contratto di servizio. Ecco la cronologia delle notifiche che verranno inviate:
 
@@ -76,5 +72,6 @@ In tal caso, verrà notificato tramite il portale di amministrazione di Microsof
 - **Secondo avviso (30 giorni dopo):** Viene fornita una seconda notifica, incluse le stesse informazioni fornite nel primo avviso. 
 - **Terza notifica (60 giorni dopo il primo avviso):** Viene fornita una terza notifica, incluse le stesse informazioni fornite nel primo avviso. 
 - **Avviso finale (1 settimana prima della scadenza di 90 giorni):** Viene fornito un quarto avviso, incluse le stesse informazioni fornite nel primo avviso.
-- **90 giorni dopo il primo avviso:** I contratti di servizio Microsoft Managed Desktop Level non si applicano più ai dispositivi che dispongono della revoca. In qualsiasi momento, è possibile contestare la decisione e fornire ulteriori informazioni per considerazione, tra cui l'aggiornamento, le modifiche alla configurazione o la modifica del software. 
+- **90 giorni dopo il primo avviso:** I contratti di servizio Microsoft Managed Desktop Level non si applicano più ai dispositivi con l'eccezione revocata. In qualsiasi momento, è possibile contestare la decisione e fornire ulteriori informazioni per considerazione, tra cui l'aggiornamento, le modifiche alla configurazione o la modifica del software. 
+
 

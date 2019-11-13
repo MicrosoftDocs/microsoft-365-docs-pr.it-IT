@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Gli amministratori possono ottenere informazioni sugli avvisi e le code in coda nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: ef8b4acd4008f3039030049893f83a5e49e1efc2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 66bd4116cfb84d15bbecafa269fcc2c7a88789d8
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084676"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290546"
 ---
 # <a name="queue-alerts-and-queues"></a>Avvisi di coda e code
 
@@ -26,9 +26,9 @@ Quando i messaggi non possono essere inviati dall'organizzazione di Office 365 a
 
 - Sono state apportate modifiche alla rete o al firewall nell'ambiente locale.
 
-Office 365 continuerà a essere recapitato per 48 ore. Dopo 48 ore, i messaggi scadranno e verranno restituiti ai mittenti nei rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo).
+Office 365 continuerà a essere recapitato per 24 ore. Dopo 24 ore, i messaggi scadranno e verranno restituiti ai mittenti nei rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo).
 
-Se il volume della posta in coda supera la soglia predefinita (il valore predefinito è 2000 messaggi), gli avvisi saranno disponibili nel dashboard del flusso di posta in **avvisi recenti**e gli amministratori riceveranno una notifica tramite posta elettronica (per il loro indirizzo di posta elettronica alternativo) . Per configurare la soglia di avviso, il limite di notifica giornaliero e/o i destinatari dell'avviso, vedere la sezione **personalizzare gli avvisi di coda** riportati di seguito.
+Se il volume della posta in coda supera la soglia predefinita (il valore predefinito è 2000 messaggi), gli avvisi saranno disponibili nel dashboard del flusso di posta in **avvisi recenti**e gli amministratori riceveranno una notifica tramite posta elettronica (per il loro indirizzo di posta elettronica alternativo). Per configurare la soglia di avviso, il limite di notifica giornaliero e/o i destinatari dell'avviso, vedere la sezione **personalizzare gli avvisi di coda** riportati di seguito.
 
 ![Avvisi di coda nell'area avvisi recenti del dashboard del flusso di posta elettronica nel centro sicurezza & conformità](../media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 

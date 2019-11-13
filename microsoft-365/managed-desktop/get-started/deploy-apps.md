@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5f1e2bd2440b5c38c958d3182684e87643f2e853
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: a064a41fc7ab69e31d49553f600dfd6bb91ef7b0
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012027"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302913"
 ---
 # <a name="deploy-apps-to-devices"></a>Distribuire le app ai dispositivi
 Parte dell'onboarding di Microsoft Managed Desktop include l'aggiunta e la distribuzione di app ai dispositivi dell'utente. Dopo aver utilizzato il portale Microsoft Managed Desktop, è possibile aggiungere e distribuire le app. 
@@ -83,7 +83,7 @@ Tipo di assegnazione delle app |   Utilizzo di gruppo   | Nome di Azure AD di es
 --- | --- | ---
 Disponibili |  L'app sarà disponibile nell'app o nel sito Web del portale aziendale. | MMD – *nome applicazione* – disponibile
 Obbligatorio |  L'app è installata nei dispositivi nei gruppi selezionati. | MMD – *nome dell'app* – obbligatorio
-Uninstall |  L'app TThe viene disinstallata dai dispositivi nei gruppi selezionati. | MMD – *nome applicazione* – disinstallazione
+Uninstall |  L'app viene disinstallata dai dispositivi nei gruppi selezionati. | MMD – *nome applicazione* – disinstallazione
 
 Aggiungere gli utenti a questi gruppi per rendere l'app disponibili, installare l'app o rimuovere l'app dal proprio dispositivo Microsoft Managed Desktop. 
 
@@ -102,11 +102,11 @@ Aggiungere gli utenti a questi gruppi per rendere l'app disponibili, installare 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Passaggi per iniziare a utilizzare Microsoft Managed Desktop
 
-1. [Aggiungere e verificare i contatti di amministratore nel portale di amministrazione](add-admin-contacts.md)
-2. [Regolare l'accesso condizionale](conditional-access.md)
+1. [Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione](add-admin-contacts.md)
+2. [Modificare l'accesso condizionale](conditional-access.md)
 3. [Assegnare licenze](assign-licenses.md)
-4. [Distribuire il portale aziendale di Intune](company-portal.md)
-5. [Abilitazione del roaming dello stato dell'organizzazione](enterprise-state-roaming.md)
+4. [Distribuire il Portale aziendale Intune](company-portal.md)
+5. [Abilitare Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Configurare i dispositivi](set-up-devices.md)
 7. [Preparare gli utenti a usare i dispositivi](get-started-devices.md)
 8. Distribuire le app (questo argomento)

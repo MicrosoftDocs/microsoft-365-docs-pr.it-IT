@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: "Conoscere i prerequisiti per la configurazione dell'organizzazione con Microsoft 365 business. "
-ms.openlocfilehash: 3bf02ab831a1eb158959490ff7f4d4274a15bb3f
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 157abf0a3396ab374297441bf90d6defc4093390
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575839"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290531"
 ---
 # <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Prerequisiti per proteggere i dati nei dispositivi con Microsoft 365 Business
 
@@ -34,6 +34,8 @@ Il primo passaggio per la configurazione dell'organizzazione con Microsoft 365 B
 - I dispositivi Windows devono eseguire Windows 7 Professional, Windows 8 Pro o Windows 8,1 Pro.
     
     [Eseguire l'aggiornamento di dispositivi Windows a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md) .
+    
+    Se si esegue Windows 10 Home, è necessario **acquistare** Windows 10 Pro. Per le istruzioni, vedere [Upgrade Windows 10 Home to Windows 10 Pro](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US) . 
     
 - Rimuovere i dispositivi dalle soluzioni di gestione dei dispositivi mobili (Mobile Iron, AirWatch e così via). Sarà necessario registrare tutti gli utenti nell'organizzazione per la gestione dei dispositivi mobili di Microsoft 365 Business.
     
