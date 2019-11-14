@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Informazioni su come creare, modificare, eliminare o rimuovere profili Autopilot.
-ms.openlocfilehash: 4305340a2fc5df8202cf4d85f9e2541690bf9ed0
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f7fdc2632e93c48e043fe158842f8395d6a89e14
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574719"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320239"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Creare e modificare profili AutoPilot
 
@@ -40,17 +40,17 @@ Un profilo si applica a un dispositivo o a un gruppo di dispositivi.
   
 2. Nella pagina **Autopilot** scegliere la scheda \> **profili** **creare profilo**.
     
-3. Nella pagina **Crea profilo** immettere un nome per il profilo che ne faciliti l'identificazione, ad esempio Marketing, quindi attivare l'impostazione desiderata (per altre informazioni, vedere [Informazioni sulle impostazioni del profilo AutoPilot](autopilot-profile-settings.md)) e infine scegliere **Salva**.
+3. Nella pagina **Crea profilo** , immettere un nome per il profilo che consenta di identificarlo, ad esempio marketing. Attiva l'impostazione desiderata e quindi scegli **Salva**. Per ulteriori informazioni sulle impostazioni dei profili Autopilot, vedere [informazioni sulle impostazioni dei profili Autopilot](autopilot-profile-settings.md).
     
     ![Enter name and turn on settings in the Create profile panel.](media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### <a name="apply-profile-to-a-device"></a>Assegnare il profilo a un dispositivo
 
-Dopo aver creato un profilo, è possibile applicarlo a un dispositivo o a un gruppo di dispositivi. È possibile selezionare un profilo esistente nella [guida dettagliata](add-autopilot-devices-and-profile.md), applicarlo a nuovi dispositivi oppure sostituire un profilo esistente per un dispositivo o un gruppo di dispositivi. 
+Dopo aver creato un profilo, è possibile applicarlo a un dispositivo o a un gruppo di dispositivi. È possibile selezionare un profilo esistente nella [Guida dettagliata](add-autopilot-devices-and-profile.md) e applicarlo ai nuovi dispositivi oppure sostituire un profilo esistente per un dispositivo o un gruppo di dispositivi. 
   
 1. Nella pagina **Prepara Windows** scegliere la scheda **Dispositivi**. 
     
-2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **Dispositivo** scegliere un profilo nell'elenco a discesa **Profilo assegnato** \> **Salva**.
+2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **dispositivo** scegliere un profilo dall'elenco \> a discesa **profilo assegnato** **Salva**.
     
     ![In the Device panel, select an Assigned profile to apply it.](media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -62,7 +62,7 @@ Dopo avere assegnato un profilo a un dispositivo, è possibile aggiornarlo anche
 
 1. Nella pagina **Prepara Windows** scegliere la scheda **Profili**. 
     
-2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **Profilo** aggiornare una qualsiasi delle impostazioni disponibili \> **Salva**.
+2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **profilo** aggiornare le impostazioni \> disponibili per il **salvataggio**.
     
     Se si esegue questa operazione prima che un utente connetta il dispositivo a Internet, il profilo viene applicato al processo di configurazione.
     
@@ -70,7 +70,7 @@ Dopo avere assegnato un profilo a un dispositivo, è possibile aggiornarlo anche
 
 1. Nella pagina **Prepara Windows** scegliere la scheda **Profili**. 
     
-2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **Profilo** fare clic su **Elimina profilo** \> **Salva**.
+2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **profilo** selezionare **Delete profile** \> **Save**.
     
     Quando si elimina un profilo, questo viene rimosso da un dispositivo o da un gruppo di dispositivi a cui è stato assegnato.
     
@@ -78,5 +78,5 @@ Dopo avere assegnato un profilo a un dispositivo, è possibile aggiornarlo anche
 
 1. Nella pagina **Prepara Windows** scegliere la scheda **Dispositivi**. 
     
-2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **Dispositivo** scegliere **Nessuno** nell'elenco a discesa **Profilo assegnato** \> **Salva**.
+2. Selezionare la casella di controllo accanto a un nome di dispositivo e nel pannello **dispositivo** scegliere **nessuno** nell'elenco \> a discesa **profilo assegnato** **Salva**.
     

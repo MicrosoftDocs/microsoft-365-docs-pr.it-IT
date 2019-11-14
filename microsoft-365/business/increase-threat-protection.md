@@ -18,24 +18,24 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare Office 365 Advanced Threat Protection e proteggere i dati sensibili.
-ms.openlocfilehash: 1827b70f1e4d78a072753390c1a99d7cb4bd5cfd
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 00a40ceb6d51add2ebe8cc7ca4c299fe07a10b89
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030765"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320109"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
 In questo articolo vengono fornite informazioni utili per aumentare la protezione dell'abbonamento a Microsoft 365 per proteggersi da tentativi di phishing, malware e altre minacce. Tali raccomandazioni sono appropriate per le organizzazioni con un maggiore bisogno di sicurezza, come gli uffici legali e le cliniche sanitarie.
 
-Prima di iniziare, controllare il Punteggio di Office 365 Secure score. Office 365 Secure Score analizza la sicurezza dell'organizzazione di Office 365 in base alle normali attività e alle impostazioni di sicurezza e assegna un punteggio. Iniziare prendendo nota del punteggio corrente. L'esecuzione delle azioni consigliate in questo articolo aumenta il punteggio. L'obiettivo non è quello di ottenere il punteggio massimo, ma di essere a conoscenza delle opportunità di protezione dell'ambiente che non influiscono negativamente sulla produttività per gli utenti. 
+Prima di iniziare, controllare il Punteggio di Office 365 Secure score. Office 365 Secure Score analizza la sicurezza dell'organizzazione di Office 365 in base alle normali attività e alle impostazioni di sicurezza e assegna un punteggio. Iniziare prendendo nota del punteggio corrente. Per aumentare il punteggio, completare le azioni consigliate in questo articolo. L'obiettivo non è quello di raggiungere il punteggio massimo, ma di essere a conoscenza delle opportunità di protezione dell'ambiente che non influiscono negativamente sulla produttività per gli utenti. 
 
 Per ulteriori informazioni, vedere [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Aumentare il livello di protezione da malware nella posta elettronica
 
-L'ambiente Office 365 o Microsoft 365 include la protezione da malware, ma è possibile aumentare questa protezione bloccando gli allegati con tipi di file comunemente utilizzati per il malware. Per aumentare la protezione antimalware nei messaggi di posta elettronica:
+L'ambiente Office 365 o Microsoft 365 include la protezione da malware. È possibile aumentare questa protezione bloccando gli allegati con i tipi di file comunemente utilizzati per il malware. Per aumentare la protezione antimalware nei messaggi di posta elettronica:
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con le credenziali dell'account di amministratore. 
     
@@ -43,36 +43,38 @@ L'ambiente Office 365 o Microsoft 365 include la protezione da malware, ma è po
     
 3. Fare doppio clic sul criterio predefinito per modificare il criterio a livello di società.
     
-4. Fare clic su **Impostazioni**.
+4. Selezionare **Impostazioni**.
     
-5. In **filtro tipi di allegati comuni**selezionare **** attivato. I tipi di file bloccati sono elencati nella finestra direttamente sotto questo controllo.  Assicurarsi di aggiungere i tipi di FileType seguenti:
-   - Ade, ADP, Ani, Bas, bat, chm, cmd, com, cpl, CRT, HLP, HT, HTA, inf, ins, ISP, job, js, JSE, lnk, MDA, mdb, MDE, MDZ, MSC, MSI, msp, MST (PCD), reg, SCR, SCT, SHS, URL, VB, VBE, vbs, WSC, wsf, WSH, exe, PIF  <br/> È possibile aggiungere o eliminare i tipi di file in un secondo momento, se necessario.
+5. In **filtro tipi di allegati comuni**selezionare **** attivato. I tipi di file bloccati sono elencati nella finestra direttamente sotto questo controllo. Assicurarsi di aggiungere questi tipi di file:
+   - Ade, ADP, Ani, Bas, bat, chm, cmd, com, cpl, CRT, HLP, HT, HTA, inf, ins, ISP, job, js, JSE, lnk, MDA, mdb, MDE, MDZ, MSC, MSI, msp, MST (PCD), reg, SCR, SCT, SHS, URL, VB, VBE, vbs, WSC, wsf, WSH, exe, PIF  <br/> 
+   
+   Se necessario, è possibile aggiungere o eliminare i tipi di file in un secondo momento.
     
-6. Fare clic su **Salva**.
+6. Selezionare **Salva.**
     
 Per ulteriori informazioni, vedere [anti-malware Protection](https://go.microsoft.com/fwlink/?linkid=2015692&amp;clcid=0x409).
   
 ## <a name="protect-against-ransomware"></a>Protezione da ransomware
 
-Ransomware limita l'accesso ai dati crittografando i file o bloccando gli schermi del computer. Tenta quindi di estorcere denaro dalle vittime chiedendo "Ransom", generalmente in forma di cryptocurrencies come Bitcoin, in Exchange per l'accesso ai dati. 
+Ransomware limita l'accesso ai dati crittografando i file o bloccando gli schermi del computer. Tenta quindi di estorcere denaro dalle vittime chiedendo "riscatto", di solito in forma di cryptocurrencies come Bitcoin, in Exchange per l'accesso ai dati. 
   
-È possibile proteggere contro ransomware creando una o più regole del flusso di posta per bloccare le estensioni di file comunemente utilizzate per ransomware (queste sono state aggiunte nell' [aumento del livello di protezione da malware in mail](#raise-the-level-of-protection-against-malware-in-mail) Step) oppure per avvisare gli utenti che ricevono questi allegati nella posta elettronica.
+Per proteggersi da ransomware, creare una o più regole del flusso di posta per bloccare le estensioni di file comunemente utilizzate per il ransomware. (Sono state aggiunte queste regole per [aumentare il livello di protezione contro il malware nel passaggio di posta elettronica](#raise-the-level-of-protection-against-malware-in-mail) ). È inoltre possibile avvisare gli utenti che ricevono questi allegati tramite posta elettronica.
 
-Oltre ai file bloccati nel passaggio precedente, è inoltre consigliabile creare una regola per avvisare gli utenti prima di aprire allegati di file di Office che includono macro. Il ransomware può essere nascosto all'interno delle macro, quindi gli utenti non possono aprire questi file dalle persone che non conoscono.
+Oltre ai file bloccati nel passaggio precedente, è consigliabile creare una regola per avvisare gli utenti prima di aprire gli allegati di file di Office che includono macro. Ransomware può essere nascosto all'interno delle macro, quindi avvisa gli utenti di non aprire questi file da persone che non conoscono.
 
 Per creare una regola di trasporto della posta:
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> Accedere all'interfaccia di amministrazione e scegliere interfaccia di **Amministrazione** \> di **Exchange**.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>Accedere all'interfaccia di amministrazione e scegliere interfaccia di **Amministrazione** \> di **Exchange**.
     
-2. Nella categoria **flusso di posta** , fare clic su **regole**.
+2. Nella categoria **flusso di posta** , selezionare **regole**.
     
-3. Fare **+** clic su, quindi fare clic su **Crea una nuova regola**.
+3. Selezionare **+**, quindi selezionare **Crea una nuova regola**.
     
-4. Fare clic su **altre opzioni** nella parte inferiore della finestra di dialogo per visualizzare il set completo di opzioni. 
+4. Selezionare **altre opzioni** nella parte inferiore della finestra di dialogo per visualizzare il set completo di opzioni. 
     
-5. Applicare le impostazioni nella tabella seguente per la regola. Lasciare l'impostazione predefinita per le altre impostazioni, a meno che non si desideri modificarle.
+5. Applicare le impostazioni nella tabella seguente per la regola. Utilizzare i valori predefiniti per le altre impostazioni, a meno che non si desideri modificarli.
     
-6. Fare clic su **Salva**.
+6. Selezionare **Salva**.
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**||
 |:-----|:-----|:-----|
@@ -80,33 +82,31 @@ Per creare una regola di trasporto della posta:
 |Applica questa regola se. . .  <br/> |Qualsiasi allegato. . . l'estensione del file corrisponde. . .  <br/> |
 |Specificare parole o frasi  <br/> |Aggiungere questi tipi di file:  <br/> dotm, docm, xlsm, sltm, xla, xlam, XLL, pptm, potm, ppam, ppsm, sldm  <br/>|
 |Eseguire le operazioni seguenti. . .  <br/> |Invia una notifica al destinatario tramite messaggio  <br/> |
-|Fornire il testo del messaggio  <br/> |Non aprire questo tipo di file da utenti non noti perché potrebbero contenere macro con codice dannoso.  <br/> |
+|Fornire il testo del messaggio  <br/> |Non aprire questi tipi di file da utenti che non si conoscono perché potrebbero contenere macro con codice dannoso.  <br/> |
    
 Per ulteriori informazioni, vedere:
   
 - [Come gestire ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
 - [Ripristinare il OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
-    
-
 
 ## <a name="stop-auto-forwarding-for-email"></a>Interrompere l'inoltro automatico per la posta elettronica
 
-Gli hacker che accedono alla cassetta postale di un utente possono rubare la posta impostando la cassetta postale in modo da inoltrare automaticamente la posta elettronica. Ciò può verificarsi anche senza la consapevolezza dell'utente. È possibile evitare che ciò accada configurando una regola del flusso di posta. 
+Gli hacker che accedono alla cassetta postale di un utente possono rubare la posta impostando la cassetta postale in modo da inoltrare automaticamente la posta elettronica. Ciò può verificarsi anche senza la consapevolezza dell'utente. Per evitare che ciò accada, configurare una regola del flusso di posta. 
   
 Per creare una regola di trasporto della posta, guardare [questo breve video](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) o eseguire la procedura seguente:
   
-1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su interfaccia di **Amministrazione** \> di **Exchange**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare interfaccia di **Amministrazione** \> di **Exchange**.
     
-2. Nella categoria **flusso di posta** , fare clic su **regole**.
+2. Nella categoria **flusso di posta** , selezionare **regole**.
     
-3. Fare **+** clic su, quindi fare clic su **Crea una nuova regola**.
+3. Selezionare **+**, quindi selezionare **Crea una nuova regola**.
     
-4. Fare clic su **altre opzioni** nella parte inferiore della finestra di dialogo per visualizzare il set completo di opzioni. 
+4. Per visualizzare tutte le opzioni, selezionare **altre opzioni** nella parte inferiore della finestra di dialogo. 
     
-5. Applicare le impostazioni nella tabella seguente. Lasciare l'impostazione predefinita per le altre impostazioni, a meno che non si desideri modificarle.
+5. Applicare le impostazioni nella tabella seguente. Utilizzare i valori predefiniti per le altre impostazioni, a meno che non si desideri modificarli.
     
-6. Fare clic su **Salva**.
+6. Selezionare **Salva**.
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**|
 |:-----|:-----|
@@ -123,7 +123,6 @@ Se sono stati configurati uno o più domini personalizzati per l'ambiente Office
   
 Si consiglia di iniziare a utilizzare questa protezione creando un criterio per proteggere gli utenti più importanti e il dominio personalizzato. 
 
-  
 Per creare un criterio di anti-phishing ATP, guardare [questo breve video di formazione](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)o completare i passaggi seguenti:
   
 1. Passare a [https://protection.office.com](https://protection.office.com). 
@@ -134,7 +133,7 @@ Per creare un criterio di anti-phishing ATP, guardare [questo breve video di for
     
 4. Nella pagina **anti-phishing** selezionare **+ Crea**. Viene avviata una procedura guidata che consente di definire i criteri di anti-phishing.
     
-5. Specificare il nome, la descrizione e le impostazioni del criterio come consigliato nel grafico riportato di seguito. Per ulteriori informazioni, vedere informazioni [sulle opzioni relative ai criteri di anti-phishing ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options) . 
+5. Specificare il nome, la descrizione e le impostazioni del criterio come consigliato nella tabella seguente. Per ulteriori informazioni, vedere informazioni [sulle opzioni dei criteri di anti-phishing ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options). 
     
 6. Dopo aver esaminato le impostazioni, fare clic su **crea questo criterio** o su **Salva**, a seconda dei casi.
     
@@ -145,7 +144,7 @@ Per creare un criterio di anti-phishing ATP, guardare [questo breve video di for
 |Descrizione  <br/> |Garantire che la maggior parte del personale importante e del nostro dominio non siano rappresentati.  <br/> |
 |Aggiungere gli utenti a Protect  <br/> |Seleziona **+ Aggiungi una condizione, il destinatario è**. Digitare i nomi utente oppure immettere l'indirizzo di posta elettronica del candidato, del responsabile della campagna e di altri membri del personale importanti. È possibile aggiungere fino a 20 indirizzi interni ed esterni che si desidera proteggere dalla rappresentazione.  <br/> |
 |Aggiungere domini da proteggere  <br/> |Selezionare **+ Aggiungi una condizione, il dominio del destinatario è**. Se ne è stata definita una, immettere il dominio personalizzato associato all'abbonamento a Microsoft 365. È possibile immettere più di un dominio.  <br/> |
-|Scegliere azioni  <br/> |Se la posta elettronica viene inviata da un utente rappresentato: scegliere **reindirizza messaggio a un altro indirizzo di posta elettronica**e quindi digitare l'indirizzo di posta elettronica dell'amministratore della sicurezza. ad esempio, *Alice<span><span>@contoso. com*.          Se il messaggio di posta elettronica viene inviato da un dominio rappresentato: scegliere **Quarantine Message**.  <br/> |
+|Scegliere azioni  <br/> |Se la posta elettronica viene inviata da un utente rappresentato: scegliere **reindirizza messaggio a un altro indirizzo di posta elettronica**e quindi digitare l'indirizzo di posta elettronica dell'amministratore della sicurezza. ad esempio, *Alice<span><span>@contoso. com*. Se il messaggio di posta elettronica viene inviato da un dominio rappresentato: scegliere **Quarantine Message**.  <br/> |
 |Intelligence delle cassette postali  <br/> |Per impostazione predefinita, la funzionalità di intelligence delle cassette postali viene selezionata quando si crea un nuovo criterio anti-phishing. Lasciare **questa impostazione per** ottenere risultati ottimali.  <br/> |
 |Aggiungere mittenti e domini attendibili  <br/> |Qui è possibile aggiungere il proprio dominio o altri domini attendibili.  <br/> |
 |Applicato a  <br/> |Selezionare **il dominio del destinatario**. In **uno di questi**, seleziona **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio *contoso.<span> com <span>*, nell'elenco, quindi selezionare **Aggiungi**. Scegliere **Fine**.  <br/> |
@@ -156,7 +155,7 @@ Gli utenti inviano, ricevono e condividono regolarmente gli allegati, ad esempio
   
 Per creare un criterio degli allegati sicuri di ATP, guardare [questo breve video](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)o completare i passaggi seguenti:
   
-1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con l'account di amministratore. 
+1. Passare a [https://protection.office.com](https://protection.office.com)e accedere con l'account di amministratore. 
     
 2. Nel riquadro di spostamento a &amp; sinistra del Centro sicurezza e conformità di Office 365 fare clic su **criteri**in **gestione minacce**.
     
@@ -195,7 +194,7 @@ A volte gli hacker nascondono siti Web dannosi nei collegamenti nei messaggi di 
     
 Per configurare i collegamenti sicuri di ATP, guardare [questo breve video di formazione](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)o completare i passaggi seguenti:
   
-1. Passare a [https://protection.office.com](https://protection.office.com) e accedere con l'account di amministratore. 
+1. Passare a [https://protection.office.com](https://protection.office.com)e accedere con l'account di amministratore. 
     
 2. Nel riquadro di spostamento a &amp; sinistra del Centro sicurezza e conformità di Office 365 fare clic su **criteri**in **gestione minacce**.
     
@@ -207,15 +206,15 @@ Per modificare il criterio predefinito:
     
 2. In **impostazioni che si applicano al contenuto tranne che alla posta elettronica**, selezionare **Office 365 ProPlus, Office per iOS e Android**.
     
-3. Fare clic su **Salva**. 
+3. Selezionare **Salva**. 
     
 Per creare un nuovo criterio mirato a tutti i destinatari nel dominio:
   
-1. Nella pagina collegamenti sicuri, in **criteri che si applicano all'intera organizzazione**, fare **+** clic per creare un nuovo criterio. 
+1. Nella pagina collegamenti sicuri, in **criteri che si applicano all'intera organizzazione**, selezionare **+** per creare un nuovo criterio. 
     
 2. Applicare le impostazioni elencate nella tabella seguente.
     
-3. Fare clic su **Salva**. 
+3. Selezionare **Salva**. 
 
 |**Impostazione o opzione**|**Impostazione consigliata** <br/>|
 |:-----|:-----|
@@ -232,6 +231,6 @@ Per ulteriori informazioni, vedere [collegamenti sicuri ATP di Office 365](https
 
 2. Selezionare **tutti i servizi** e digitare *Intune* nella **casella di ricerca**.
 
-3. Dopo la visualizzazione dei risultati, fare clic sul pulsante Start accanto a **Microsoft Intune** per renderlo un favorito e facile da trovare in un secondo momento.
+3. Dopo la visualizzazione dei risultati, selezionare l'inizio accanto a **Microsoft Intune** per renderlo preferito e facile da trovare in un secondo momento.
 
 Oltre all'interfaccia di amministrazione, è possibile utilizzare Intune per registrare e gestire i dispositivi dell'organizzazione. Per ulteriori informazioni, vedere [capabilities by metodo di registrazione per i dispositivi di Windows](https://docs.microsoft.com/intune/enrollment-method-capabs) e le [Opzioni di registrazione per i dispositivi gestiti da Intune](https://docs.microsoft.com/intune/enrollment-options).

@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Riepilogo: suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.'
-ms.openlocfilehash: 62b7227239c52f50f2dc437e1ddedc663a5bb01d
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 15b67d2569f2c8ceafb16973ae2bf6862ebb9ded
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035706"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38311110"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteggere siti e file di SharePoint Online
 
  **Riepilogo:** suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.
   
-In questo articolo vengono forniti suggerimenti per la configurazione dei siti del team di SharePoint Online e per la protezione di file che consentono di collaborare in modo semplice pur garantendo alti livelli di sicurezza. In questo articolo vengono definiti quattro tipi di configurazione, a partire da un sito pubblico all'interno dell'organizzazione con i criteri di condivisione più aperti. Ogni configurazione aggiuntiva rappresenta un passaggio significativo per la protezione, ma rende la collaborazione e l'accesso alle risorse più difficile per il set di utenti rilevante. Utilizzare questi suggerimenti come punto di partenza e modificare le configurazioni per soddisfare le esigenze dell'organizzazione. 
+In questo articolo vengono forniti suggerimenti per la configurazione dei siti del team di SharePoint Online e per la protezione di file che consentono di collaborare in modo semplice pur garantendo alti livelli di sicurezza. In questo articolo vengono definiti quattro tipi di configurazione, a partire da un sito pubblico all'interno dell'organizzazione con i criteri di condivisione più aperti. Ogni configurazione aggiuntiva rappresenta un passaggio significativo per la protezione, ma rende la collaborazione e l'accesso alle risorse più difficile per il set di utenti rilevante. Utilizzare questi suggerimenti come punto di partenza e modificare le configurazioni per soddisfare le esigenze dell'organizzazione.
   
 Le configurazioni descritte in questo articolo sono allineate alle raccomandazioni di Microsoft per i tre livelli di protezione per dati, identità e dispositivi:
   
@@ -40,7 +40,7 @@ Le configurazioni descritte in questo articolo sono allineate alle raccomandazio
     
 - Protezione dati altamente riservati
     
-Per altre informazioni su questi livelli e sulle funzionalità consigliate per ogni livello, vedere le risorse seguenti. 
+Per altre informazioni su questi livelli e sulle funzionalità consigliate per ogni livello, vedere le risorse seguenti.
   
 - [Protezione di dispositivi e identità per Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365IDP)
     
@@ -54,7 +54,7 @@ I consigli per i siti del team di SharePoint Online si basano su una vasta gamma
 
 Come illustrato nell'esempio:
   
-- la protezione di base include due opzioni per i siti del team di SharePoint Online, un sito pubblico e uno privato. I siti pubblici possono essere individuati e sono accessibili da chiunque nell'organizzazione. I siti privati possono essere individuati e sono accessibili solo dai membri del sito. Entrambe le configurazioni del sito consentono la condivisione all'esterno del gruppo. 
+- la protezione di base include due opzioni per i siti del team di SharePoint Online, un sito pubblico e uno privato. I siti pubblici possono essere individuati e sono accessibili da chiunque nell'organizzazione. I siti privati possono essere individuati e sono accessibili solo dai membri del sito. Entrambe le configurazioni del sito consentono la condivisione all'esterno del gruppo.
     
 - I siti per la protezione dei dati sensibili ed estremamente riservati sono siti privati con accesso limitato solo ai membri di gruppi specifici.
     

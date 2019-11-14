@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Informazioni su come acquistare Microsoft 365 business da Microsoft Partner Center.
-ms.openlocfilehash: 09d2f24fba1725278b663d5c3159163a56dcdc59
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+ms.openlocfilehash: be38ba6869ed9419b2c34e6b4f86ce4aad6a6c52
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038920"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320169"
 ---
 # <a name="get-microsoft-365-business"></a>Ottenere Microsoft 365 Business
 
@@ -36,23 +36,23 @@ Se non si dispone di un partner e si desidera ottenere Microsoft 365 business, �
 
 Per istruzioni dettagliate, vedere [iscriversi a Microsoft 365 business](sign-up.md) .
 
-È inoltre possibile accedere a un [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) per acquistare Microsoft 365 business e ottenere assistenza per la configurazione.
+È inoltre possibile accedere a un [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) per acquistare Microsoft 365 business e ottenere assistenza per l'installazione.
   
 ## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>Ottenere Microsoft 365 Business presso il Centro per i partner Microsoft
 
 1. Accedere al [Centro per i partner Microsoft](https://go.microsoft.com/fwlink/p/?linkid=849910) con le credenziali create al momento della registrazione al programma Cloud Service Provider (CSP). 
     
-2. Nel dashboard dei partner selezionare Clienti, quindi selezionare il cliente o aggiungere un nuovo cliente prima di ottenere Microsoft 365 Business.
+2. Nel dashboard partner scegliere **clienti**, quindi selezionare il cliente o aggiungere un nuovo cliente prima di ottenere Microsoft 365 business.
     
-    ![In the Microsoft Partner center, add a new customer.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
+    ![In Microsoft Partner Center, aggiungere un cliente.](media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
 3. Nella pagina **sottoscrizione** del cliente selezionare **Aggiungi sottoscrizione**, scegliere l'opzione Small Business in catalogo e quindi scegliere **Microsoft 365 business**.
     
     Selezionare il numero di licenze necessarie (fino a 300). Se si dispone di più di 300 utenti, vedere invece [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) . 
     
-    ![On the New subscription page choose small business.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
+    ![Nella pagina nuova sottoscrizione scegliere Small Business.](media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
-    Completare i passaggi restanti per aggiungere un nuovo cliente includendo il nome della società.
+    Completare gli altri passaggi per l'aggiunta di un nuovo cliente, incluso il nome dell'azienda.
     
 
 

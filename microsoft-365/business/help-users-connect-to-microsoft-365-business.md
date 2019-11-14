@@ -24,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: Informazioni su cosa aspettarsi dopo il completamento dell'installazione di Business Cloud Suite.
-ms.openlocfilehash: b11c247e8d857f8c7a4d41f633267038b3dd86c6
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: d19438d6e085ba27ec3fb0308005a9bf473383e1
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37574699"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320189"
 ---
 # <a name="help-users-connect-to-microsoft-365-business"></a>Aiutare gli utenti a connettersi a Microsoft 365 Business
 
-Al termine dell'installazione, i criteri predefiniti per i dispositivi sono attivi e pronti per l'applicazione. Nei dispositivi mobili gli utenti scaricheranno le app di Office e i criteri verranno applicati all'accesso dell'utente con l'account aziendale o dell'istituto di istruzione. Prima di applicare i criteri a PC Windows, ad esempio per un aggiornamento sul posto, sono necessarie altre operazioni. Vedere e condividere gli argomenti seguenti per semplificare la procedura di installazione e di connessione per gli utenti.
+Dopo aver completato l'installazione, i criteri di dispositivo predefiniti sono disponibili e sono pronti per l'applicazione. Nei dispositivi mobili, gli utenti scaricano le app di Office. I criteri vengono quindi applicati quando l'utente accede con il proprio account aziendale o dell'Istituto di istruzione. Prima di applicare i criteri a PC Windows, ad esempio per un aggiornamento sul posto, sono necessarie altre operazioni. Vedere e condividere gli argomenti seguenti per consentire agli utenti di ottenere la configurazione e la connessione:
   
 [Configurare i dispositivi Windows per utenti di Microsoft 365 Business](set-up-windows-devices.md)
   

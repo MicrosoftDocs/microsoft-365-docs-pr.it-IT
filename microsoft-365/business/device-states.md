@@ -22,16 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Informazioni sugli stati dei dispositivi in Microsoft 365 business.
-ms.openlocfilehash: 06e5c800e6a104785c1fd0724223e05d7729722e
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: b55e6a5d538ec28d195225e93797cea27afd2e8b
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072721"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320209"
 ---
 # <a name="device-states"></a>Stati dei dispositivi
-
-## <a name="device-states"></a>Stati dei dispositivi
 
 Ai dispositivi inclusi nell'elenco **Azioni dispositivo** (home page di amministrazione \> **Azioni dispositivo**) possono essere assegnati gli stati seguenti.
   
@@ -43,12 +41,12 @@ Ai dispositivi inclusi nell'elenco **Azioni dispositivo** (home page di amminist
 |Disattivazione in sospeso  <br/> |Microsoft 365 Business sta predisponendo la rimozione dei dati aziendali dal dispositivo.  <br/> |
 |Disattivazione in corso  <br/> |Microsoft 365 Business sta attualmente rimuovendo i dati aziendali dal dispositivo.  <br/> |
 |Disattivazione non riuscita  <br/> | L'azione di rimozione dei dati aziendali non è riuscita.  <br/> |
-|Disattivazione annullata  <br/> |L'azione di disattivazione è stata annullata.  <br/> |
+|Ritiro annullato  <br/> |L'azione ritirata è stata annullata.  <br/> |
 |Cancellazione dei dati in sospeso  <br/> |In attesa dell'avvio del ripristino delle impostazioni predefinite.  <br/> |
 |Cancellazione dei dati in corso  <br/> |Il ripristino delle impostazioni predefinite è stato avviato.  <br/> |
-|Cancellazione dei dati non riuscita  <br/> |Non è stato possibile ripristinare le impostazioni predefinite.  <br/> |
-|Cancellazione dei dati annullata  <br/> |La cancellazione dei dati di fabbrica è stata annullata.  <br/> |
-|Non integro  <br/> |Indica che un'azione è in sospeso o in corso, ma il dispositivo non è stato archiviato per più di 30 giorni.  <br/> |
+|Cancellazione dei dati non riuscita  <br/> |Impossibile eseguire la reimpostazione di fabbrica.  <br/> |
+|Cancellazione annullata  <br/> |Il wipe di fabbrica è stato annullato.  <br/> |
+|Non integro  <br/> |Un'azione è in sospeso (o in corso), ma il dispositivo non è stato archiviato per 30 + giorni.  <br/> |
 |Eliminazione in sospeso  <br/> |L'azione di eliminazione è in sospeso.  <br/> |
 |Rilevato  <br/> |Microsoft 365 Business ha rilevato il dispositivo.  <br/> |
    
