@@ -13,14 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su Identity Governance per il tenant di Azure AD e su come configurarlo.
-ms.openlocfilehash: 3bc0872eefa71288d25ce83ebb8f3c51d8959678
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: d9a9a63f46230a07b35052a3b02231f7b5315d9e
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370383"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302923"
 ---
-# <a name="step-7-configure-identity-governance"></a>Passaggio 7: configurare Identity Governance
+# <a name="step-6-configure-identity-governance"></a>Passaggio 6: Configurare Identity Governance
 
 ![Fase 2: identità](./media/deploy-foundation-infrastructure/identity_icon-small.png)
 
