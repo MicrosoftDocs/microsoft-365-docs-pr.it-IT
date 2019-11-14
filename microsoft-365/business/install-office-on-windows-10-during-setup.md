@@ -22,19 +22,17 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Informazioni su come distribuire automaticamente Office nei dispositivi Windows 10 durante l'installazione.
-ms.openlocfilehash: 64585d0a34e409822959939d5ae40fac57ff943b
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: fbc11553452ae5068ad7013a409901dee5b3570d
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575999"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320049"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Installare Office in Windows 10 durante l'installazione
 
 ![Banner che puntano https://aka.ms/aboutM365previewa.](media/m365admincenterchanging.png)
 
-Questa opzione è disattivata per impostazione predefinita. È possibile attivarla per assicurare che gli utenti abbiano la versione più recente di Office in esecuzione in tutti i dispositivi Windows 10, ma è prima necessario verificare che siano soddisfatti tutti i prerequisiti. Per consentire a questa impostazione di effettuare il push del software nel dispositivo, è necessario che gli utenti abbiano una licenza per Microsoft 365 Business, oltre ad altri requisiti descritti in [Preparare la distribuzione client di Office per Microsoft 365 Business](prepare-for-office-client-deployment.md). 
+Questa opzione è disattivata per impostazione predefinita. È possibile attivarla per assicurarsi che gli utenti dispongano della versione più recente di Office in tutti i dispositivi Windows 10, ma prima di tutto verificare che siano soddisfatti tutti i prerequisiti. Gli utenti devono essere concessi in licenza per Microsoft 365 business per questa impostazione per inserire il software nel dispositivo, oltre ad altri requisiti descritti in [Prepare for Office Client Deployment by microsoft 365 business](prepare-for-office-client-deployment.md). 
   
-È consigliabile accettare le impostazioni predefinite durante l'installazione. Se si vogliono specificare impostazioni diverse per gruppi di utenti diversi, è possibile gestire la distribuzione di Office in base ai singoli gruppi dopo l'installazione. Passare a **Dispositivi** \> **Gestisci la distribuzione di Office** dalla home page dell'interfaccia di amministrazione. Per istruzioni dettagliate, vedere [Installare o disinstallare automaticamente Office nei dispositivi Windows 10](auto-install-or-uninstall-office.md).
-  
-
+È consigliabile accettare l'impostazione predefinita durante l'installazione. Se si vogliono specificare impostazioni diverse per gruppi di utenti diversi, è possibile gestire la distribuzione di Office in base ai singoli gruppi dopo l'installazione. Passare a **Dispositivi** \> **Gestisci la distribuzione di Office** dalla home page dell'interfaccia di amministrazione. Per istruzioni dettagliate, vedere [Installare o disinstallare automaticamente Office nei dispositivi Windows 10](auto-install-or-uninstall-office.md).

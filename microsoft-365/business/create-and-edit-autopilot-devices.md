@@ -23,24 +23,24 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Informazioni su come caricare i dispositivi tramite il pilota automatico in Microsoft 365 business. È possibile assegnare un profilo a un dispositivo o a un gruppo di dispositivi.
-ms.openlocfilehash: 4eadaa800aa174bcd9cac50375f68c8471e1684e
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 1dd6b1a574166379e29465bf3699e47e3b155e0b
+ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575409"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38320259"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Creare e modificare dispositivi AutoPilot
 
 ## <a name="upload-a-list-of-devices"></a>Caricare un elenco di dispositivi
 
-Per caricare i dispositivi, è possibile usare la [Guida dettagliata](add-autopilot-devices-and-profile.md) oppure usare la scheda **Dispositivi**. 
+È possibile utilizzare la [Guida dettagliata](add-autopilot-devices-and-profile.md) per caricare i dispositivi, ma è anche possibile caricare i dispositivi nella scheda **dispositivi** . 
   
-I dispositivi devono soddisfare questi requisiti:
+I dispositivi devono soddisfare i requisiti seguenti:
   
-- Devono eseguire Windows 10 1703 o versione successiva.
+- Windows 10, versione 1703 o successiva
     
-- Devono essere nuovi dispositivi per i quali non è stata eseguita la Configurazione guidata di Windows.
+- Nuovi dispositivi che non sono stati eseguiti tramite Windows out-of-Box Experience
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 business, scegliere **Devices** \> **Autopilot**.
   
@@ -48,13 +48,13 @@ I dispositivi devono soddisfare questi requisiti:
     
     ![In the Devices tab, choose Add devices.](media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. Nel riquadro **Aggiungi dispositivi** , passare a un [file CSV elenco dispositivi](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) che è stato preparato \> **Salva** \> **Chiudi**.
+3. Nel pannello **Aggiungi dispositivi** , passare a un [file CSV dell'elenco dei](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) dispositivi preparato \> **Salva** \> **Chiudi**.
     
-    È possibile ottenere queste informazioni dal produttore dell'hardware o usare lo [script di PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) che consente di generare un file CSV. 
+    È possibile ottenere queste informazioni dal fornitore dell'hardware oppure è possibile utilizzare lo [script di PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) per generare un file CSV. 
     
 ## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a>Assegnare un profilo a un dispositivo o a un gruppo di dispositivi
 
-1. Nella pagina **Prepara Windows** scegliere la scheda **Dispositivi** e selezionare la casella di controllo accanto a uno o più dispositivi. 
+1. Nella pagina **prepara Windows** scegliere la scheda **dispositivi** e selezionare la casella di controllo accanto a uno o più dispositivi. 
     
 2. Nel pannello **Dispositivo** selezionare un profilo dall'elenco a discesa **Profilo assegnato**. 
     
