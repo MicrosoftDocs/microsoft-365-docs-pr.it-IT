@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un ambiente Microsoft 365 per testare l’accesso di identità e dispositivi con i prerequisiti per l'autenticazione pass-through.
-ms.openlocfilehash: b8c9ebefacf81293b553aecf8ead0a387c18758b
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 348885b2cc7a0d6134dce49cd0a2a39706c5e71d
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34073025"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627490"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Prerequisiti per l’accesso di identità e dispositivi per l’autenticazione pass-through nell’ambiente di testing di Microsoft 365
 
@@ -97,13 +97,13 @@ Per Skype for Business Online:
 
 2. Eseguire questo comando.
 
-  ```
+  ```powershell
   Set-CsOAuthConfiguration -ClientAdalAuthOverride Allowed
   ```
 
 3. Verificare che la modifica sia stata applicata con questo comando.
 
-  ```
+  ```powershell
   Get-CsOAuthConfiguration
   ```
 

@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: 0f7b4ddec9c52861b4ecf4a7e86831efcce402d6
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c1c39745b2dc891b4dc079ecd657eaf0d883af23
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370263"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627460"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>Passaggio 5: distribuire le funzionalità di sicurezza di Windows 10 Enterprise
 
@@ -33,7 +33,7 @@ Questo passaggio illustra come è possibile distribuire, gestire, configurare e 
 
 * [Windows Defender Antivirus](#windows-defender-antivirus)
 * [Windows Defender Exploit Guard](#windows-defender-exploit-guard)
-* [Protezione avanzata dalle minacce di Microsoft Defender](#windows10-sec-atp)
+* [Microsoft Defender Advanced Threat Protection](#windows10-sec-atp)
 
 <a name="windows10-sec-av"></a>
 ## <a name="windows-defender-antivirus"></a>Windows Defender Antivirus
@@ -57,8 +57,8 @@ Per informazioni sulle opzioni di configurazione, fare riferimento a questo elen
 
 È possibile utilizzare la [Guida di valutazione di protezione AV di Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/evaluate-windows-defender-antivirus) per valutare il livello di protezione e l'impatto di Windows Defender AV sulla rete. Questo può essere utile anche nella creazione di una configurazione iniziale o come "Guida introduttiva" e viene aggiornato regolarmente per fornire i suggerimenti più utili per la configurazione e l'abilitazione delle caratteristiche per garantire la massima protezione.
 
-### <a name="reporting"></a>Creazione di rapporti
-È possibile ottenere i report utilizzando uno strumento di configurazione, ad esempio System Center Configuration Manager o Microsoft Intune. È inoltre possibile ottenere i report da Update Compliance (OMS) o dal consumo di registri eventi di Windows in SIEM. Se si dispone di una licenza per Microsoft Defender ATP, è anche possibile ottenere rapporti nei rilevamenti AV di Windows Defender ed eseguire la correzione di base. Per altre informazioni, vedere le risorse seguenti:
+### <a name="reporting"></a>Reporting
+È possibile ottenere i report utilizzando uno strumento di configurazione, ad esempio Microsoft endpoint Configuration Manager o Microsoft Intune. È inoltre possibile ottenere i report da Update Compliance (OMS) o dal consumo di registri eventi di Windows in SIEM. Se si dispone di una licenza per Microsoft Defender ATP, è anche possibile ottenere rapporti nei rilevamenti AV di Windows Defender ed eseguire la correzione di base. Per altre informazioni, vedere le risorse seguenti:
 * [Distribuire, gestire e segnalare su Windows Defender AV](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus)
 * [Relazione sulla protezione AV di Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/report-monitor-windows-defender-antivirus)
 * [Panoramica del portale di Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=861596)
@@ -81,8 +81,8 @@ Per distribuire, gestire e configurare Windows Defender exploit Guard, seguire l
 
 È possibile utilizzare una serie di argomenti di valutazione per contribuire a valutare il livello di protezione e l'impatto di Windows Defender exploit Guard sulla rete. Questo può essere utile anche nella creazione di una configurazione iniziale o come "Guida introduttiva" e gli argomenti e le linee guida vengono aggiornati regolarmente per fornire i suggerimenti più utili per la configurazione e l'abilitazione delle caratteristiche per garantire la massima protezione. Per altre informazioni, [valutare Windows Defender exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard).
 
-### <a name="reporting"></a>Creazione di rapporti
-È possibile ottenere i report utilizzando uno strumento di configurazione, ad esempio System Center Configuration Manager o Intune. È inoltre possibile ottenere i report utilizzando i registri eventi di Windows in SIEM. Se si dispone di una licenza per Microsoft Defender ATP, è anche possibile ottenere rapporti nei rilevamenti AV di Windows Defender ed eseguire la correzione di base. Per altre informazioni, vedere le risorse seguenti:
+### <a name="reporting"></a>Reporting
+È possibile ottenere i report utilizzando uno strumento di configurazione, ad esempio Configuration Manager o Intune. È inoltre possibile ottenere i report utilizzando i registri eventi di Windows in SIEM. Se si dispone di una licenza per Microsoft Defender ATP, è anche possibile ottenere rapporti nei rilevamenti AV di Windows Defender ed eseguire la correzione di base. Per altre informazioni, vedere le risorse seguenti:
 * [Visualizzare gli eventi di Windows Defender exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard)
 * [Panoramica del portale di Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=861596)
 
@@ -91,7 +91,7 @@ Per distribuire, gestire e configurare Windows Defender exploit Guard, seguire l
 
 
 <a name="windows10-sec-atp"></a>
-## <a name="microsoft-defender-advanced-threat-protection"></a>Protezione avanzata dalle minacce di Microsoft Defender
+## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
 Microsoft Defender ATP, disponibile solo con il piano Microsoft 365 Enterprise E5, è un servizio di sicurezza che consente ai clienti aziendali di rilevare, analizzare e rispondere alle minacce avanzate nelle reti. Per ulteriori informazioni su Microsoft Defender ATP, i requisiti minimi e su come gestire questa funzionalità, vedere:
 
 * [ATP Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)

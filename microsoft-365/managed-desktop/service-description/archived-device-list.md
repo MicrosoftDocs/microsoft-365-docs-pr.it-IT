@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 70cde49eb162e33ee99d59eb2ba9782ac1b7db30
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: ccc4d7e2fae0a8e5ee6e3a7d71fb55edc8f04930
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012311"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640587"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati da Microsoft Managed Desktop
 
@@ -32,6 +32,7 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 
 | Modello  | Specifiche minime  | Requisiti aggiuntivi   | Data di pensionamento |
 |---------|---------|---------|---------|
+| [HP EliteBook 830/840/850 G5](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario  | **Feb 15, 2023** |
 |[Laptop Surface](https://www.microsoft.com/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB di RAM | Nessuno | **20 maggio 2022** |
 |[Surface Pro](https://www.microsoft.com/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB/Intel i5/8 GB di RAM | Nessuno | **15 giugno 2022** |
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Passaggi che aggiornano la propria azienda da Office 365 Business Premium a Microsoft 365 business.
-ms.openlocfilehash: f3a25746cf123fa471c29084a62a6fcfc1542a02
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38231412"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640562"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Eseguire l'aggiornamento a Microsoft 365 business da Office 365 Business Premium
 
@@ -40,8 +40,8 @@ Per ulteriori informazioni su Microsoft 365 business, vedere [Microsoft.com](htt
 
 ## <a name="before-you-get-started"></a>Prima di iniziare
 
-- **Quando scegliere l'aggiornamento?** L'aggiornamento è la scelta giusta quando si desidera aggiornare **tutti gli utenti** assegnati a un singolo piano. Quando si sceglie l'opzione di aggiornamento, tutti i piani di utenti vengono passati a un altro piano contemporaneamente. Se non si desidera aggiornare tutti gli utenti assegnati a un singolo piano, acquistare le licenze per il nuovo piano (in questo caso Microsoft 365 business) e [assegnare tali licenze singolarmente](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) a ogni utente che si desidera aggiornare. 
-- **Alcuni componenti aggiuntivi potrebbero impedire l'aggiornamento** Se si tenta di avviare un aggiornamento e si dispone di un componente aggiuntivo che impedisce di continuare, è possibile rimuovere il componente aggiuntivo e quindi aggiungerlo in un secondo momento, se ne è ancora necessario. 
+- **Quando si sceglie di eseguire l'aggiornamento?** L'aggiornamento è la scelta giusta quando si desidera aggiornare **tutti gli utenti** assegnati a un singolo piano. Quando si sceglie l'opzione di aggiornamento, tutti i piani di utenti vengono passati a un altro piano contemporaneamente. Se non si desidera aggiornare tutti gli utenti assegnati a un singolo piano, acquistare le licenze per il nuovo piano (in questo caso Microsoft 365 business) e [assegnare tali licenze singolarmente](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) a ogni utente che si desidera aggiornare. 
+- **Alcuni componenti aggiuntivi potrebbero impedire l'aggiornamento** Se si tenta di avviare un aggiornamento e si dispone di un componente aggiuntivo che impedisce di continuare, è possibile rimuovere il componente aggiuntivo e quindi aggiungerlo in un secondo momento, se necessario. 
 - **Se il piano è stato prepagato** Non esiste un percorso di aggiornamento semplice per i piani prepagati. È possibile sapere se si dispone di un piano prepagato perché si configura il piano utilizzando un ID prodotto che potrebbe essere stato acquistato in un archivio. Contattare un partner, accedere a Microsoft Store oppure attendere che il piano prepagato SCADA per passare a un nuovo piano.
 
 ## <a name="upgrade-to-microsoft-365-business"></a>Eseguire l'aggiornamento a Microsoft 365 business
@@ -56,12 +56,12 @@ Acquistare le licenze attenendosi alla procedura seguente nella [nuova](https://
       ![Nello screenshot viene mostrato dove selezionare l'aggiornamento nell'interfaccia di amministrazione.](media/SelectUpgrade.png)
 
   > [!NOTE]
-  > Se viene visualizzato un messaggio in cui viene indicato che l'aggiornamento della sottoscrizione non è supportato con la gestione delle licenze basate su gruppo in Azure Active Directory, è possibile ignorare questo valore se non si dispone di un'organizzazione di grandi dimensioni. Le organizzazioni che hanno selezionato questa opzione sapranno di usare le licenze basate su gruppo.
+  > Se viene visualizzato un messaggio che indica che **l'aggiornamento dell'abbonamento non è supportato con la gestione delle licenze basate su gruppo in Azure Active Directory**, è possibile ignorare questa operazione a meno che non si disponga di un'organizzazione di grandi dimensioni. Le organizzazioni che hanno selezionato questa opzione sapranno di usare le licenze basate su gruppo.
 
 4. Successivamente, è possibile visualizzare un elenco di piani di Office a cui è possibile eseguire l'aggiornamento. In questo caso, trovare il piano aziendale Microsoft 365. È possibile scorrere verso il basso se si desidera visualizzare tutte le app e i servizi di Office inclusi in questo piano. In **microsoft 365 business**, selezionare **upgrade** to Add Microsoft 365 business to your cart.
 5. Nel carrello:
-    1. Verranno incluse automaticamente le licenze per tutti gli utenti correnti nel carrello. Se sono necessarie più o meno licenze, è necessario [acquistare e assegnare tali licenze singolarmente](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
-    2. È possibile modificare il modo in cui si desidera pagare mensilmente o annualmente. Selezionare il menu a discesa per scegliere.
+    1. Verranno incluse automaticamente le licenze per tutti gli utenti correnti. Se sono necessarie più o meno licenze, è necessario [acquistare e assegnare tali licenze singolarmente](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
+    2. È possibile modificare la modalità di pagamento: mensile o annuale. Selezionare il menu a discesa per scegliere.
 6. Selezionare **Vai a checkout in** cui verrà visualizzato un riepilogo dell'acquisto, incluso il metodo di pagamento per questo account. È anche possibile aggiungere un codice promozionale qui se si dispone di uno.
 7. Selezionare l' **ordine** di esecuzione per completare l'acquisto.
 Microsoft impiega alcuni minuti per configurare i nuovi piani di servizio. Per verificare lo stato di avanzamento, selezionare **Controlla stato aggiornamento**. 
@@ -78,7 +78,7 @@ Ora che sono state assegnate licenze aziendali Microsoft 365, completare i passa
     
 2. Nella pagina **Criteri dispositivo** selezionare **Aggiungi**.
     
-3. Nel riquadro **Aggiungi criterio** assegnare un nome al criterio (ad esempio, proteggere i file di lavoro) e quindi scegliere un **tipo di criterio** dall'elenco a discesa. 
+3. Nel riquadro **Aggiungi criterio** assegnare un nome al criterio (ad esempio, proteggere i file di lavoro) e quindi scegliere un **tipo di criterio** nell'elenco a discesa. 
     
     È possibile configurare i criteri di applicazione per la protezione dei file su dispositivi Android e iPhone, oltre a Windows 10, ed è possibile configurare i criteri di configurazione del dispositivo per i dispositivi Windows 10 di proprietà dell'azienda. Per informazioni dettagliate, vedere i seguenti collegamenti:
     
@@ -96,6 +96,3 @@ Ora che sono state assegnate licenze aziendali Microsoft 365, completare i passa
   - Vedere [configurare i dispositivi Windows per gli utenti di Microsoft 365 business](set-up-windows-devices.md) per i passaggi per i dispositivi Windows. 
     
   - Vedere [configurare i dispositivi mobili per gli utenti di Microsoft 365 business](set-up-mobile-devices.md) per i passaggi per i telefoni Android e iPhone. 
-
-
-

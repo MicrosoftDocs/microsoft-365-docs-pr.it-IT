@@ -1,5 +1,5 @@
 ---
-title: Informazioni generali su Microsoft 365 business
+title: Panoramica di Microsoft 365 business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Informazioni su come configurare Microsoft 365 business.
-ms.openlocfilehash: 86af927c05168fabe5a72f331c14c9f3e5cbc1dd
-ms.sourcegitcommit: 550ea6f093ec35182e7c65a2811e9bfb07ec7d01
+description: Per ulteriori informazioni, vedere Microsoft 365 business.
+ms.openlocfilehash: 03e16c336a2d6d3d8ffd5875ed7419bba3c7e378
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038950"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633400"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Panoramica di Microsoft 365 business
 
@@ -35,7 +35,7 @@ ms.locfileid: "38038950"
 
 Microsoft 365 business è un servizio di sottoscrizione che include gli strumenti di produttività di Office 365 e funzionalità avanzate che consentono di proteggere la propria azienda da Cyberthreats, proteggere i dati e gestire i dispositivi.
   
-Microsoft 365 business è destinato a un massimo di 300 licenze, per ulteriori informazioni, vedere [microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) Documentation.
+Microsoft 365 business è destinato a un massimo di 300 licenze. Per ulteriori informazioni, vedere documentazione relativa a [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) .
 
 Vedere [Descrizione servizio Microsoft 365 business](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) per l'intero elenco delle caratteristiche.
   
@@ -43,12 +43,12 @@ Vedere [Descrizione servizio Microsoft 365 business](https://docs.microsoft.com/
 
 I dati aziendali possono essere compromessi in molti modi. L'utente e gli utenti possono compromettere la sicurezza dell'organizzazione quando si accede con credenziali compromesse o si visualizzano i dati dell'organizzazione su diversi dispositivi e applicazioni. In particolare, l'organizzazione è a rischio:
 
-1. Credenziali di accesso compromesse o deboli.
-2. Dispositivo compromesso con un pin debole o un dispositivo di proprietà di un utente.
-3. Utenti che possono copiare/incollare/salvare i dati dell'organizzazione in app personali.
-4. Utenti che installano e utilizzano app<sup>di terze</sup> parti con protezione debole.
-5. Vulnerabilità della posta elettronica, tra cui la condivisione di dati sensibili, tentativi di phishing, malware e così via.
-6. Quando le persone che non dovrebbero, possono accedere ai documenti con informazioni riservate.
+- Credenziali di accesso compromesse o deboli.
+- Dispositivo compromesso con un pin debole o un dispositivo di proprietà di un utente.
+- Utenti che possono copiare/incollare/salvare i dati dell'organizzazione in app personali.
+- Utenti che installano e utilizzano app di terze parti con una sicurezza debole.
+- Vulnerabilità del messaggio di posta elettronica, tra cui la condivisione di dati sensibili, tentativi di phishing, malware e così via.
+- Quando le persone che non dovrebbero, possono accedere ai documenti con informazioni riservate.
 
 Microsoft 365 business contribuisce alla salvaguardia dei dati in ognuna di queste istanze. Le funzionalità di sicurezza che proteggono i dati business sono descritte nella figura seguente.
 
@@ -58,7 +58,7 @@ Microsoft 365 business contribuisce alla salvaguardia dei dati in ognuna di ques
 
 Microsoft 365 business aiuta a **difendersi dalle minacce** :
 
-Scansione di qualsiasi collegamento nei messaggi di posta elettronica e nei documenti in tempo reale per bloccare siti Web non sicuri (collegamenti sicuri di ATP).
+- Scansione dei collegamenti nei messaggi di posta elettronica e nei documenti in tempo reale per bloccare i siti Web non sicuri (collegamenti sicuri di ATP).
 
 - Esecuzione di analisi avanzate degli allegati di posta elettronica in un ambiente sandbox per rilevare malware di recente sviluppo (allegati sicuri di ATP). 
 
@@ -66,23 +66,23 @@ Scansione di qualsiasi collegamento nei messaggi di posta elettronica e nei docu
 
 - Impostazione di criteri avanzati che consentono di disabilitare l'accesso da posizioni non attendibili o di ignorare l'autenticazione a più fattori da luoghi attendibili, ad esempio la rete di Office (Azure AMF, compresi gli indirizzi IP attendibili e l'accesso condizionale). 
 
-- Applicazione della protezione antimalware in tutti i dispositivi Windows 10 dell'azienda e protezione dei file in cartelle di sistema chiave dalle modifiche apportate da ransomware (Windows Defender)
+- Applicazione della protezione antimalware in tutti i dispositivi Windows 10 dell'organizzazione e protezione dei file nelle cartelle del sistema chiave dalle modifiche apportate da ransomware (Windows Defender)
 
 I **dati dell'azienda sono protetti** da:
 
 - Utilizzo del rilevamento automatico per evitare che informazioni sensibili, come i numeri di previdenza sociale o le carte di credito, fuoriescano dalla propria azienda (prevenzione della perdita di dati). 
 
-- Crittografia dei messaggi di posta elettronica sensibili per poter comunicare in modo sicuro con i clienti o con altre persone esterne all'azienda, assicurando che solo il destinatario possa leggere il messaggio (Office 365 Message Encryption).
+- Crittografia dei messaggi di posta elettronica sensibili per poter comunicare in modo sicuro con clienti o altre persone all'esterno dell'organizzazione. In questo modo, solo il destinatario previsto può leggere il messaggio (Office 365 Message Encryption).
 
 - Controllare chi ha accesso alle informazioni dell'azienda applicando restrizioni quali non **copiare** e non **inoltrare** messaggi di posta elettronica e documenti (Azure Information Protection, piano 1).
 
-- Abilitazione dell'archiviazione cloud illimitata in modo da poter mantenere la posta elettronica di tutte le aziende, incluse le cassette postali degli ex dipendenti (archiviazione Exchange Online).
+- Abilitazione dell'archiviazione cloud illimitata in modo da poter mantenere la posta elettronica di tutti gli utenti dell'organizzazione, incluse le cassette postali di ex dipendenti (archiviazione Exchange Online).
 
 I **dispositivi sono protetti** da:
 
-- Controllo dei dispositivi e degli utenti che possono accedere ai dati di Office 365; con le opzioni che impediscono agli utenti di eseguire l'accesso da computer di casa, app non approvate o al di fuori dell'orario di lavoro (accesso condizionale).
+- Controllo dei dispositivi e degli utenti che possono accedere ai dati di Office 365, con opzioni che impediscono agli utenti di eseguire l'accesso da computer di casa, app non approvate o al di fuori dell'orario di lavoro (accesso condizionale).
 
-- Applicazione di criteri di sicurezza per la protezione dei dati aziendali nei dispositivi iOS e Android.  Ad esempio, è possibile richiedere agli utenti di fornire un PIN o un'impronta digitale per accedere ai dati business e crittografare i dati nei dispositivi mobili (app Protection for Office Mobile Apps).
+- Applicazione di criteri di sicurezza per la protezione dei dati aziendali nei dispositivi iOS e Android. Ad esempio, è possibile richiedere agli utenti di fornire un PIN o un'impronta digitale per accedere ai dati business e crittografare i dati nei dispositivi mobili (app Protection for Office Mobile Apps).
 
 - Mantenere i documenti aziendali, i messaggi di posta elettronica e altri dati all'interno delle app di Office per dispositivi mobili approvati e impedire ai dipendenti di salvarli nelle app e nelle posizioni non autorizzate (app Protection for Office Mobile Apps).
 
@@ -90,11 +90,11 @@ I **dispositivi sono protetti** da:
 
 - Utilizzo di controlli semplificati per la gestione dei criteri per tutti i PC Windows 10 nella propria azienda, l'applicazione della crittografia BitLocker e l'installazione automatica di aggiornamenti critici di Windows (applicazione dei criteri di Windows Update).
 
-Per visualizzare l'elenco completo delle funzionalità di sicurezza, vedere [Microsoft 365 Business Security features](security-features.md). Dopo aver [configurato Microsoft 365 business](set-up.md), vedere [configurare i criteri di sicurezza avanzati](set-up-advanced-security.md) per iniziare a utilizzare le funzionalità di sicurezza non incluse nell'installazione guidata. Leggere anche i [primi 10 modi per proteggere i piani aziendali di Office 365 e Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) per una buona panoramica su come configurare le protezioni contro i criminali informatici e gli hacker.
+Per visualizzare l'elenco completo delle funzionalità di sicurezza, vedere [Microsoft 365 Business Security features](security-features.md). Dopo aver [configurato Microsoft 365 business](set-up.md), vedere [configurare i criteri di sicurezza avanzati](set-up-advanced-security.md) per iniziare a utilizzare le funzionalità di sicurezza che non sono incluse nell'installazione guidata. Leggere anche i [primi 10 modi per proteggere i piani aziendali di Office 365 e Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) per una buona panoramica su come configurare le protezioni contro i criminali informatici e gli hacker.
 
 ## <a name="get-microsoft-365-business"></a>Ottenere Microsoft 365 Business
 
-- I partner riceveranno Microsoft 365 Business: [Ottenere Microsoft 365 Business dal Centro per i partner Microsoft](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+- Se si ha un partner, otterranno Microsoft 365 business: [ottenere microsoft 365 business da Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
 
 - Se non si dispone di un partner e si desidera ottenere Microsoft 365 business, è possibile [acquistarlo qui](https://www.microsoft.com/microsoft-365/business) e seguire le istruzioni di [iscrizione](sign-up.md) .
 

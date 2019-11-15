@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come spostare la propria azienda in Microsoft 365 business da Office 365 E3.
-ms.openlocfilehash: 5142038110cada6e1da77d405c82f119e0f9e4d3
-ms.sourcegitcommit: 0fa897d06b664c0ed005817752da1426d4ee17cb
+ms.openlocfilehash: f624ee7ef7c00ac4d1fe413500d0cd081a156748
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38002432"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640577"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Migrazione da Office 365 E3 a Microsoft 365 business 
 
-Microsoft 365 business offre tutto il necessario per le piccole aziende, combinando le app di produttività basate su cloud di Best-in-Class con la gestione e la sicurezza dei dispositivi semplici.  Se attualmente si dispone di un abbonamento a Office 365 E3, ma non si dispone di più di 300 dipendenti, valutare la possibilità di passare a Microsoft 365 business per aggiungere funzionalità di sicurezza.
+Microsoft 365 business offre tutto il necessario per le piccole aziende, combinando le app di produttività basate su cloud di Best-in-Class con la gestione e la sicurezza dei dispositivi semplici. Se attualmente si dispone di un abbonamento a Office 365 E3, ma non si dispone di più di 300 dipendenti, valutare la possibilità di passare a Microsoft 365 business per aggiungere funzionalità di sicurezza.
 
 La migrazione è semplice: prima di tutto si cambia la licenza e tutti i dati e le informazioni degli utenti nell'abbonamento corrente vengono mantenuti. Dopo la migrazione, sarà necessario configurare le caratteristiche aggiunte in Microsoft 365 business.
 
@@ -62,15 +62,15 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 business e 
 |**Licenza di accesso client (CAL Rights)**|||
 |Famiglia di prodotti Enterprise CAL (Exchange, SharePoint, Skype)||![Incluso con Office 365 E3](./media/check-mark.png)|
 
-<sup>1</sup> la versione Microsoft 365 business delle app di Office non include l'attivazione di contratti multilicenza tramite criteri di gruppo, la telemetria delle app, i controlli di aggiornamento, il confronto dei fogli di calcolo e la richiesta e la Business Intelligence.
+<sup>1</sup> la versione Microsoft 365 business delle app di Office non include l'attivazione di contratti multilicenza tramite criteri di gruppo, la telemetria delle app, i controlli di aggiornamento, il confronto dei fogli di calcolo e la richiesta o la Business Intelligence
 
 ## <a name="migration"></a>Migrazione
 
-Per eseguire la migrazione della sottoscrizione, vedere [passare a un piano diverso manualmente](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually) per istruzioni se si desidera spostare solo alcune persone in Microsoft 365 business, è possibile [aggiornare automaticamente tutti](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan)gli utenti oppure è possibile collaborare con il partner per spostare l'E3 sottoscrizione e licenze a un abbonamento a Microsoft 365 business.
+Per eseguire la migrazione della sottoscrizione, vedere [passare a un piano diverso manualmente](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually) per istruzioni se si desidera spostare solo poche persone a Microsoft 365 business. È inoltre possibile [aggiornare automaticamente tutti gli utenti](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan)o collaborare con il partner per spostare la sottoscrizione E3 e le licenze a un abbonamento a Microsoft 365 business.
 Nelle sezioni seguenti vengono descritte le modifiche che è necessario apportare, se presenti, e le operazioni che è possibile eseguire dopo la migrazione.
 
 ### <a name="office-365-e3-subscription-configuration-and-data"></a>Configurazione e dati dell'abbonamento a Office 365 E3
-Non è necessario apportare modifiche alla sottoscrizione o ai dati correnti prima della migrazione, che include:
+Non è necessario apportare modifiche alla sottoscrizione corrente o ai dati prima di eseguire la migrazione, che include:
 
 - Configurazione della sottoscrizione, ad esempio i record DNS e i nomi di dominio.
 - Gli account utente e di gruppo e le impostazioni di autenticazione, ad esempio l'autenticazione a più fattori o i criteri di accesso condizionale.
@@ -78,7 +78,7 @@ Non è necessario apportare modifiche alla sottoscrizione o ai dati correnti pri
 
 ### <a name="windows-10"></a>Windows 10
 
-Se le finestre non sono già presenti nell'aggiornamento di Windows Pro Creator, sarà necessario eseguire l'aggiornamento [a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
+Se le finestre non sono già presenti nell'aggiornamento di Windows Pro Creator, è possibile aggiornarle [nell'aggiornamento a Windows Pro Creators](upgrade-to-windows-pro-creators-update.md).
 
 ### <a name="set-up-policies-to-protect-user-devices-and-files"></a>Impostare i criteri per la protezione dei dispositivi e dei file utente
 
@@ -87,7 +87,7 @@ Se le finestre non sono già presenti nell'aggiornamento di Windows Pro Creator,
 
 Dopo aver assegnato le licenze a Microsoft 365 business, è possibile iniziare a proteggere i dispositivi e i file degli utenti.
 
-Se tutti gli utenti dell'organizzazione sono stati aggiornati a Microsoft 365 business, verrà visualizzata la procedura guidata set up nella Home page e sarà possibile seguire l' [installazione di microsoft 365 business nella procedura guidata di configurazione](set-up.md) per proteggere i file e i dispositivi mobili.
+Se tutti gli utenti dell'organizzazione sono stati aggiornati a Microsoft 365 business, viene visualizzata l'installazione guidata nella Home page e è possibile eseguire la configurazione [guidata di microsoft 365 business nei](set-up.md) passaggi di configurazione per proteggere i file e i dispositivi mobili.
 
 È inoltre possibile eseguire questi passaggi nella pagina dispositivi:
   
@@ -97,7 +97,7 @@ Se tutti gli utenti dell'organizzazione sono stati aggiornati a Microsoft 365 bu
     
 3. Nel riquadro **Aggiungi criterio** assegnare un nome al criterio e quindi scegliere un tipo di **criterio** dall'elenco a discesa. 
     
-    È possibile configurare i criteri di applicazione per la protezione dei file su dispositivi Android e iPhone, oltre a Windows 10, ed è possibile configurare i criteri di configurazione del dispositivo per i dispositivi Windows 10 di proprietà dell'azienda. Per informazioni dettagliate, vedere i seguenti collegamenti:
+     È possibile configurare i criteri di applicazione per la protezione dei file su dispositivi Android e iPhone, oltre a Windows 10, ed è possibile configurare i criteri di configurazione del dispositivo per i dispositivi Windows 10 di proprietà dell'azienda. Per informazioni dettagliate, vedere i seguenti collegamenti:
     
   - [Configurare le impostazioni di protezione delle app per i dispositivi Android o iOS](app-protection-settings-for-android-and-ios.md)
     
@@ -113,7 +113,7 @@ Se tutti gli utenti dell'organizzazione sono stati aggiornati a Microsoft 365 bu
 
 ### <a name="threat-protection"></a>Protezione dalle minacce
 
-Dopo aver eseguito la migrazione a Microsoft 365 business, è necessario disporre di Office 365 ATP. Vedere [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) per una panoramica e per configurare vedere [configurare i collegamenti sicuri di ATP](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), [configurare gli allegati sicuri di ATP](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5) e [configurare il sistema anti-phishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)ATP.
+Dopo aver eseguito la migrazione a Microsoft 365 business, è necessario disporre di Office 365 ATP. Per una panoramica, vedere [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) . Per impostare, vedere [set up ATP Safe Links](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), [set up ATP Safe Attachments](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)e [set up ATP anti-phishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 

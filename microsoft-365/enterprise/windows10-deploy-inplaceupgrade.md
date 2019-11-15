@@ -1,7 +1,7 @@
 ---
 title: Distribuire Windows 10 Enterprise per i dispositivi esistenti come aggiornamento sul posto
-description: Vengono fornite indicazioni per la configurazione e la distribuzione di un'immagine di Windows 10 Enterprise tramite System Center Configuration Manager come aggiornamento sul posto.
-keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 Documentation, Windows 10 Enterprise, Deployment, upgrade sul posto, Configuration Manager, System Center Configuration Manager
+description: Vengono fornite indicazioni per la configurazione e la distribuzione di un'immagine di Windows 10 Enterprise tramite Microsoft endpoint Configuration Manager come aggiornamento sul posto.
+keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 Documentation, Windows 10 Enterprise, Deployment, upgrade sul posto, Configuration Manager, Configuration Manager
 author: greg-lindsay
 localization_priority: Normal
 ms.collection: M365-modern-desktop
@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: f7dfa5c72a98dacc7a772ea034df6696621a8ef6
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: f3a518ca448bf56c4328bbc34fe29a41d5f16488
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302933"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627470"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Passaggio 2: distribuire Windows 10 Enterprise per i dispositivi esistenti come aggiornamento sul posto
 
@@ -23,13 +23,13 @@ ms.locfileid: "38302933"
 
 ![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-Il percorso più semplice per aggiornare i computer che eseguono Windows 7 o Windows 8,1 a Windows 10 è tramite un aggiornamento sul posto. È possibile utilizzare una sequenza di attività di System Center Configuration Manager (Configuration Manager) per automatizzare completamente il processo. 
+Il percorso più semplice per aggiornare i computer che eseguono Windows 7 o Windows 8,1 a Windows 10 è tramite un aggiornamento sul posto. È possibile utilizzare una sequenza di attività di gestione configurazione (Configuration Manager) per automatizzare completamente il processo. 
 
 Se sono presenti computer che eseguono Windows 7 o Windows 8,1, è consigliabile questo percorso se l'organizzazione sta distribuendo Windows 10. In questo modo viene utilizzato il programma di installazione di Windows (Setup. exe) per eseguire un aggiornamento sul posto, che consente di conservare automaticamente tutti i dati, le impostazioni, le applicazioni e i driver dalla versione del sistema operativo esistente. Questo richiede il minimo sforzo, perché non è necessaria alcuna infrastruttura di distribuzione complessa.
 
 Seguire questa procedura per configurare e distribuire un'immagine di Windows 10 Enterprise utilizzando Configuration Manager come aggiornamento sul posto.
 
-## <a name="the-windows-10-deployment-with-system-center-configuration-manager-poster"></a>Distribuzione di Windows 10 con il poster di System Center Configuration Manager
+## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>La distribuzione di Windows 10 con il poster di Configuration Manager
 
 Il poster di Configuration Manager è una pagina in modalità landscape (17x11). Fare clic sull'immagine seguente per visualizzare un file PDF nel browser. 
 
@@ -43,9 +43,9 @@ In primo luogo, utilizzare la funzionalità di preparazione per l'aggiornamento 
 
 Vedere [gestire gli aggiornamenti di Windows con la preparazione dell'aggiornamento](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness) per ulteriori informazioni, per iniziare, utilizzare e risolvere i problemi relativi all'aggiornamento.
 
-Successivamente, seguire la guida per l'utilizzo di System Center Configuration Manager (Current Branch) per aggiornare il sistema operativo Windows 7 o versioni successive a Windows 10. Come per qualsiasi distribuzione ad alto rischio, è consigliabile eseguire il backup dei dati degli utenti prima di continuare. Lo spazio di archiviazione cloud di OneDrive è pronto per l'uso per gli utenti con licenza di Microsoft 365 e può essere utilizzato per archiviare in modo sicuro i propri file. Per altre informazioni, vedere [Guida](https://aka.ms/ODfBquickstartguide)introduttiva di OneDrive. Per accedere a questa pagina, è necessario eseguire l'accesso come amministratore del tenant o amministratore globale in un tenant di Office 365 o Microsoft 365.
+Successivamente, seguire la guida per l'utilizzo di Configuration Manager (Current Branch) per aggiornare il sistema operativo Windows 7 o versioni successive a Windows 10. Come per qualsiasi distribuzione ad alto rischio, è consigliabile eseguire il backup dei dati degli utenti prima di continuare. Lo spazio di archiviazione cloud di OneDrive è pronto per l'uso per gli utenti con licenza di Microsoft 365 e può essere utilizzato per archiviare in modo sicuro i propri file. Per altre informazioni, vedere [Guida](https://aka.ms/ODfBquickstartguide)introduttiva di OneDrive. Per accedere a questa pagina, è necessario eseguire l'accesso come amministratore del tenant o amministratore globale in un tenant di Office 365 o Microsoft 365.
 
-Per un elenco delle versioni di gestione configurazione e delle versioni client di Windows 10 corrispondenti supportate, vedere [supporto per Windows 10 per System Center Configuration Manager](https://aka.ms/supportforwin10sccm).
+Per un elenco delle versioni di Configuration Manager e delle versioni client di Windows 10 corrispondenti supportate, vedere [supporto per Windows 10 per Configuration Manager](https://aka.ms/supportforwin10sccm).
 
 **Per verificare la disponibilità dell'aggiornamento di Windows**
 
@@ -58,12 +58,12 @@ Esaminare questi requisiti prima di avviare la distribuzione di Windows 10:
     - Backup dei dati degli utenti-sebbene i dati dell'utente verranno migrati nell'aggiornamento, la procedura consigliata consiste nel configurare uno scenario di backup. Ad esempio, esportare tutti i dati degli utenti in un account OneDrive, BitLocker to go-Encrypted USB Flash Drive o network file server. Per ulteriori informazioni, vedere [eseguire il backup o il trasferimento dei dati in Windows](https://aka.ms/backuptransferdatawindows).
 - **Preparazione dell'ambiente** : si utilizzerà una struttura del Server Configuration Manager esistente per preparare la distribuzione del sistema operativo. Oltre alla configurazione di base, è necessario effettuare le seguenti configurazioni nell'ambiente Configuration Manager:
     1. [Estendere lo schema di Active Directory](https://aka.ms/extendadschema) e [creare un contenitore di gestione del sistema](https://aka.ms/createsysmancontainer).
-    2. Abilitare l'individuazione della foresta di Active Directory e l'individuazione del sistema di Active Directory. Per altre informazioni, vedere [Configure Discovery Methods for System Center Configuration Manager](https://aka.ms/configurediscoverymethods).
-    3. Creare confini dell'intervallo IP e gruppo di limiti per il contenuto e l'assegnazione del sito. Per altre informazioni, vedere [definire i limiti del sito e i gruppi di limiti per System Center Configuration Manager](https://aka.ms/definesiteboundaries).
+    2. Abilitare l'individuazione della foresta di Active Directory e l'individuazione del sistema di Active Directory. Per altre informazioni, vedere [Configure Discovery Methods for Configuration Manager](https://aka.ms/configurediscoverymethods).
+    3. Creare confini dell'intervallo IP e gruppo di limiti per il contenuto e l'assegnazione del sito. Per altre informazioni, vedere [definire i limiti del sito e i gruppi di limiti per Configuration Manager](https://aka.ms/definesiteboundaries).
     4. Aggiungere e configurare il ruolo del punto di Reporting Services di Configuration Manager. Per altre informazioni, vedere [Configuring Reporting in Configuration Manager](https://aka.ms/configurereporting).
     5. Creare una struttura di cartelle di file System per i pacchetti.
     6. Creare una struttura di cartelle console di Configuration Manager per i pacchetti.
-    7. Installare System Center Configuration Manager (Current Branch) e gli eventuali ulteriori prerequisiti di Windows 10.
+    7. Installare Configuration Manager (Current Branch) e gli eventuali ulteriori prerequisiti di Windows 10.
 
 ## <a name="part-2-add-a-windows-10-os-image-using-configuration-manager"></a>Parte 2: aggiungere un'immagine del sistema operativo Windows 10 tramite Configuration Manager
 A questo punto è necessario creare un pacchetto di aggiornamento del sistema operativo che contenga il supporto di installazione completo di Windows 10. Nei passaggi seguenti viene utilizzato Configuration Manager per creare un pacchetto di aggiornamento per Windows 10 Enterprise x64.
@@ -94,7 +94,7 @@ Per creare una sequenza di attività di aggiornamento, eseguire le operazioni se
 Dopo aver creato la sequenza di attività di aggiornamento, sarà necessario creare una raccolta che contenga i dispositivi da aggiornare.
 
 > [!NOTE]
-> Utilizzare le impostazioni seguenti per testare la distribuzione su un singolo dispositivo. È possibile utilizzare regole di appartenenza diverse per includere gruppi di dispositivi quando si è pronti. Per altre informazioni, vedere [come creare raccolte in System Center Configuration Manager](https://aka.ms/sccm-create-collections).
+> Utilizzare le impostazioni seguenti per testare la distribuzione su un singolo dispositivo. È possibile utilizzare regole di appartenenza diverse per includere gruppi di dispositivi quando si è pronti. Per altre informazioni, vedere [come creare raccolte in Configuration Manager](https://aka.ms/sccm-create-collections).
 
 1. Nella console di Configuration Manager, nell'area di lavoro **asset e conformità** , fare clic con il pulsante destro del mouse su **Raccolte dispositivi**e quindi scegliere **Crea insieme di dispositivi**. 
 2. Nella pagina **generale** della creazione guidata raccolta dispositivi immettere le impostazioni seguenti e quindi fare clic su **Avanti**:

@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Informazioni su come spostare la propria azienda da Microsoft 365 business a Microsoft 365 Enterprise E3.
-ms.openlocfilehash: 1ef32960905f1336f9ac92231d463959e3bfd01c
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 77760aa8ea5b79f39d4c069d86e79a3cec6844e9
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931854"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640785"
 ---
-# <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Eseguire la migrazione da Microsoft 365 business a Microsoft 365 Enterprise E3
+# <a name="migrate-from-microsoft-365-business-to-microsoft-365-enterprise-e3"></a>Eseguire la migrazione da Microsoft 365 Business a Microsoft 365 Enterprise E3
 
 Microsoft 365 business offre tutto il necessario per le piccole aziende, combinando le app di produttività basate su cloud di Best-in-Class con la gestione e la sicurezza dei dispositivi semplici che consentono ai dipendenti di svolgere al meglio le proprie attività. In alcuni casi, tuttavia, potrebbe essere necessario eseguire la migrazione della sottoscrizione Microsoft 365 business a Microsoft 365 Enterprise. 
 
@@ -34,7 +34,7 @@ Ad esempio, la tua azienda è cresciuta e ha bisogno di più di 300 licenze (Con
 
 In alternativa, l'azienda ha bisogno di funzionalità dell'organizzazione, ad esempio Office 365 ProPlus, Windows 10 Enterprise E3 o licenze CAL (Enterprise Client Access License).
 
-L'aggiornamento è semplice: è possibile avviare l'aggiornamento [dall'interfaccia di amministrazione](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide). Tutti i dati e la configurazione della sottoscrizione corrente vengono mantenuti. Non vi è nulla da fare per prepararsi per la migrazione e niente da fare dopo, tranne che per trarre vantaggio dalle nuove funzionalità. 
+L'aggiornamento è semplice: è possibile avviare l'aggiornamento [dall'interfaccia di amministrazione](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan?view=o365-worldwide). Tutti i dati e la configurazione della sottoscrizione corrente vengono mantenuti. Non è necessario eseguire alcuna operazione per prepararsi per la migrazione e non è più possibile eseguire le nuove funzionalità. 
 
 >[!Note]
 >È inoltre possibile utilizzare un abbonamento a Microsoft 365 business per un massimo di 300 seggi e ottenere un abbonamento a Microsoft 365 Enterprise E3 per più di 300 seggi. Tuttavia, Office 365 ATP non è incluso in Microsoft 365 Enterprise E3. Per una continua protezione dalle minacce, è necessario aggiungere altre licenze ATP di Office 365, in modo che tutti gli utenti nell'ambito dei criteri di sicurezza ATP di Office 365 siano concessi in licenza.
@@ -87,13 +87,13 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 business e 
 
 ## <a name="migration"></a>Migrazione
 
-Per eseguire la migrazione, collaborare con il proprio partner per spostare la sottoscrizione e le licenze di Microsoft 365 business in un abbonamento a Microsoft 365 Enterprise E3 con le proprie licenze.
+Per eseguire la migrazione, collaborare con il partner per spostare l'abbonamento e le licenze di Microsoft 365 business a un abbonamento a Microsoft 365 Enterprise E3 appropriato con le relative licenze.
 
 Nelle sezioni seguenti vengono descritte le modifiche che è necessario apportare, se presenti, e le operazioni che è possibile eseguire dopo la migrazione.
 
 ### <a name="microsoft-365-subscription-configuration-and-data"></a>Configurazione e dati della sottoscrizione Microsoft 365
 
-Non è necessario apportare modifiche alla sottoscrizione o ai dati correnti prima della migrazione, che include:
+Non è necessario apportare modifiche alla sottoscrizione corrente o ai dati prima di eseguire la migrazione, che include:
 
 - Configurazione della sottoscrizione, ad esempio i nomi di dominio DNS.
 - Gli account utente e di gruppo e le impostazioni di autenticazione, ad esempio l'autenticazione a più fattori o i criteri di accesso condizionale.

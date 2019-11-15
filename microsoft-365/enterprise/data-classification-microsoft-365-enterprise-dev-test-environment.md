@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per creare e utilizzare le etichette di conservazione di Office 365 nei documenti nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: 66e06f9a89b102c131bc29af17c4564fabbab9b4
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: 1bcd3ab2d8069ad85d48ecf682d3b7d49e7cf739
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072416"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639786"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Classificazione dei dati per l'ambiente di testing Microsoft 365 Enterprise
 
@@ -26,9 +26,9 @@ Con le istruzioni riportate in questo articolo, è possibile configurare la clas
 ![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Fare clic [qui](https://aka.ms/m365etlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
+> Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
 
 Se si desidera solo configurare le etichette di conservazione di Office 365 in modo semplice con i requisiti minimi, seguire le istruzioni contenute in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -107,7 +107,7 @@ Successivamente, configurare la cartella dei documenti del sito del team di Sens
   
 1. Nella scheda **SensitiveFiles** del browser fare clic su **documenti**.
     
-2. Fare clic sull'icona delle impostazioni e selezionare **Impostazioni libreria**.
+2. Fare clic sull'icona delle impostazioni e selezionare **Impostazioni raccolta**.
     
 3. In **Autorizzazioni e gestione** fare clic su **Apply label to items in this library** (Applica etichetta agli elementi in questa libreria).
     
@@ -115,7 +115,7 @@ Successivamente, configurare la cartella dei documenti del sito del team di Sens
 
 Successivamente, creare un nuovo documento nel sito di SensitiveFiles e modificarne l'etichetta di conservazione.
     
-1. Nella cartella documenti fare clic su **nuovo documento di Word di >**.
+1. Nella cartella documenti fare clic su **nuovo > documento di Word**.
     
 2. Digitare del testo nel documento vuoto. Attendere che il testo venga salvato.
     

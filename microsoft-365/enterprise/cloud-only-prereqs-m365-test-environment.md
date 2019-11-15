@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un ambiente Microsoft 365 per testare l'accesso di identità e dispositivi per l'autenticazione solo per cloud.
-ms.openlocfilehash: 08f805f77771a056cc9d847dd064b472a46cb166
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+ms.openlocfilehash: eb70153bc2868289fde41ad9a68ffa3a44b01b59
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36055008"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627372"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Prerequisiti di accesso di identità e dispositivi solo per cloud nell’ambiente di testing di Microsoft 365
 
@@ -92,13 +92,13 @@ Per Skype for Business Online:
 
 2. Eseguire questo comando.
 
-  ```
+  ```powershell
   Set-CsOAuthConfiguration -ClientAdalAuthOverride Allowed
   ```
 
 3. Verificare che la modifica sia stata applicata con questo comando.
 
-  ```
+  ```powershell
   Get-CsOAuthConfiguration
   ```
 

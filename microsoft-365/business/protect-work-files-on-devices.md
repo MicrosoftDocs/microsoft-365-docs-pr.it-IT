@@ -25,23 +25,21 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: "Informazioni sulla configurazione predefinita e sull'aggiunta dei criteri di gestione delle applicazioni per proteggere i dati aziendali nei dispositivi mobili personali degli utenti. "
-ms.openlocfilehash: 348f3d0dad9f3a7957f12eea7c7e7be2d1706aa6
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 6c4534f70ea7d8b8c93283e92278f1aa08ab94bf
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575799"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640750"
 ---
 # <a name="protect-work-files-on-devices"></a>Proteggere i file di lavoro nei dispositivi
 
-Al giorno d'oggi gli utenti sono molto legati ai propri dispositivi. Ciò significa che la vita personale e la vita lavorativa si sovrappongono e nel dispositivo personale di un dipendente possono essere presenti dati aziendali. Le impostazioni configurate qui possono consentire di riprendere il controllo e di fornire la protezione per i file di lavoro, senza alcun impatto sulle impostazioni o sui dati personali dell'utente.
+Nel mondo di oggi, gli utenti sono legati ai propri dispositivi e, per la collisione personale e lavorativa, i dati aziendali possono finire sul dispositivo personale di un dipendente. Le impostazioni configurate in questo articolo consentono di eseguire il controllo e di garantire la protezione dei file di lavoro, senza influire su nessuna delle impostazioni o dei dati personali dell'utente.
   
 ## <a name="configuring-policies-during-setup"></a>Configurazione dei criteri durante l'installazione
 
-Durante l'installazione vengono aggiunti tre criteri di gestione, ovvero uno per Android, uno per iOS e uno per Windows 10. Ogni criterio avrà le stesse impostazioni e verrà applicato a tutti gli utenti. I criteri vengono attivati quando l'utente connette il proprio account aziendale al telefono cellulare.
+Durante l'installazione vengono aggiunti tre criteri di gestione, ovvero uno per Android, uno per iOS e uno per Windows 10. Ogni criterio ha le stesse impostazioni e si applica a tutti gli utenti. I criteri vengono attivati quando l'utente connette il proprio account aziendale al telefono cellulare.
   
 È consigliabile accettare la configurazione predefinita durante l'installazione. Al termine dell'installazione è possibile aggiungere altri criteri per perfezionare la configurazione e per applicare livelli diversi di controllo per gruppi di utenti specifici.
   
 Per aggiungere i criteri dopo l'installazione, vedere [Gestire criteri e dispositivi nell'interfaccia di amministrazione](manage.md).
-  
-

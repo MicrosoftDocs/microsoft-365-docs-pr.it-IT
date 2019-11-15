@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per abilitare altre impostazioni di sicurezza di Microsoft 365 nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: d51f9ada68969823eadbb4fad55392358a6ddee8
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: f430acb4a7fd1842a4ae26025ad5a63cccf8392f
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34072136"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640368"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Maggiore sicurezza di Microsoft 365 per l'ambiente di testing di Microsoft 365 Enterprise
 
@@ -26,9 +26,9 @@ Con le istruzioni riportate in questo articolo, è possibile configurare altre i
 ![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Fare clic [qui](https://aka.ms/m365etlgstack) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
+> Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: creare l'ambiente di testing di Microsoft 365 Enterprise
+## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
 
 Se si desidera configurare una maggiore sicurezza di Microsoft 365 in modo semplice con i requisiti minimi, seguire le istruzioni in [Lightweight base Configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -52,7 +52,7 @@ Per le app che non supportano l'autenticazione moderna non è possibile applicar
     
   - Se si utilizza l'ambiente di testing Enterprise Microsoft 365 simulato, utilizzare il [portale di Azure](https://portal.azure.com) per connettersi alla macchina virtuale CLIENT1 e quindi eseguire l'accesso da CLIENT1.
  
-2. Nella nuova scheda dell'interfaccia di **amministrazione di Microsoft 365** fare clic su interfaccia di **amministrazione di > SharePoint**.
+2. Nella nuova scheda dell'interfaccia di **amministrazione di Microsoft 365** fare clic su interfaccia di **Amministrazione > SharePoint**.
 3. Nella nuova scheda dell'interfaccia di **amministrazione di SharePoint** , fare clic su **controllo di accesso**.
 4. In **app che non supportano l'autenticazione moderna**fare clic su **blocca**e quindi su **OK**.
 
@@ -61,7 +61,7 @@ Per le app che non supportano l'autenticazione moderna non è possibile applicar
 
 Office 365 Advanced Threat Protection (ATP) per SharePoint, OneDrive e Microsoft teams protegge l'organizzazione dall'involontaria condivisione di file dannosi.
 
-1. Accedere al [Centro sicurezza e conformità di Office 365 &](https://protection.office.com) e accedere con l'account di amministratore globale.
+1. Accedere al [centro conformità & sicurezza di Office 365](https://protection.office.com) e accedere con l'account di amministratore globale.
 
 2. Nel riquadro di spostamento a sinistra, in **gestione delle minacce**, scegliere **criteri > allegati sicuri**. 
 
@@ -74,7 +74,7 @@ Office 365 Advanced Threat Protection (ATP) per SharePoint, OneDrive e Microsoft
 
 Il malware è composto da virus e spyware. I virus infettano altri programmi e dati e si diffondono nel computer cercando programmi da infettare. Il termine spyware indica il malware che raccoglie informazioni personali, quali informazioni di accesso e dati personali, inviandoli all'autore del malware. 
 
-Office 365 dispone di funzionalità di filtro antispamming e di protezione da posta indesiderata che consentono di proteggere i messaggi in ingresso e in uscita da software dannoso e di proteggersi dalla posta indesiderata. Per ulteriori informazioni, vedere [protezione antimalware di _AMP_ anti-spam in Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
+Office 365 dispone di funzionalità di filtro antispamming e di protezione da posta indesiderata che consentono di proteggere i messaggi in ingresso e in uscita da software dannoso e di proteggersi dalla posta indesiderata. Per ulteriori informazioni, vedere [anti-spam & anti-malware Protection in Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection)
 
 Per assicurarsi che l'elaborazione antimalware sia in esecuzione su file con tipi di file allegati comuni:
 
@@ -82,7 +82,7 @@ Per assicurarsi che l'elaborazione antimalware sia in esecuzione su file con tip
 2. Fare clic su **anti-malware**.
 3. Fare doppio clic sul criterio denominato **default**.
 4. Nella finestra **criteri antimalware** fare clic su **Impostazioni**.
-4. In **filtro tipi di allegati comuni**, fare clic **su > Save**.
+4. In **filtro tipi di allegati comuni**, fare clic **su > Salva**.
 
 
 ## <a name="phase-3-examine-the-threat-management-dashboard"></a>Fase 3: esaminare il dashboard di gestione delle minacce

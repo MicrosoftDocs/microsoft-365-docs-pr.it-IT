@@ -20,20 +20,20 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
-description: Informazioni su come consentire a Microsoft 365 di proteggere gli annunci locali con i dispositivi Windows 10.
-ms.openlocfilehash: 392c57a7350a901c1481be632e880cc9fcaa6140
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Informazioni su come abilitare Microsoft 365 per proteggere i dispositivi Windows 10 associati a Active Directory locale.
+ms.openlocfilehash: 93e3364fc94f3878bec13d0a87b17a7d3678a4cc
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575979"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633270"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business"></a>Abilitare i dispositivi Windows 10 associati a un dominio per essere gestiti da Microsoft 365 business
 
 Se l'organizzazione utilizza Windows Server Active Directory in locale, è possibile configurare Microsoft 365 business per proteggere i dispositivi Windows 10, mantenendo comunque l'accesso alle risorse locali che richiedono l'autenticazione locale.
-Per configurarlo, è possibile implementare i **dispositivi ibridi di Azure ad Uniti**. Si tratta di dispositivi che si uniscono sia a Active Directory locale che a Azure Active Directory.
+Per impostare questa protezione, è possibile implementare i **dispositivi ibridi di Azure ad Uniti**. Questi dispositivi sono associati sia a Active Directory locale che a Azure Active Directory.
 
-Nei video seguenti vengono illustrati i passaggi per la configurazione di questa procedura per lo scenario più comune, che è anche dettagliato nei passaggi seguenti.
+In questo video vengono illustrati i passaggi da eseguire per la configurazione dello scenario più comune, che è anche dettagliato nei passaggi successivi.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
@@ -44,9 +44,9 @@ Prima di sincronizzare gli utenti e i computer dal dominio Active Directory loca
 
    - Verificare che nella directory non siano presenti duplicati per gli attributi seguenti: **mail**, **proxyAddresses**e **userPrincipalName**. Questi valori devono essere univoci e tutti i duplicati devono essere rimossi.
    
-   - È consigliabile che l'attributo **userPrincipalName** (UPN) per ogni account utente locale sia configurato in modo che corrisponda all'indirizzo di posta elettronica principale corrispondente all'utente con licenza Microsoft 365. Ad esempio *Mary.Shelley@contoso.com* anziché *Mary @ contoso. local*
+   - Si consiglia di configurare l'attributo **userPrincipalName** (UPN) per ogni account utente locale in modo che corrisponda all'indirizzo di posta elettronica principale corrispondente all'utente con licenza Microsoft 365. Ad esempio: *Mary.Shelley@contoso.com* anziché *Mary@contoso. local*
    
-   - Se il dominio Active Directory termina con un suffisso non instradabile come *. local* o *. LAN*, invece di un suffisso instradabile su Internet, ad esempio *. com* o *. org*, sarà necessario modificare prima il suffisso UPN degli account utente locali come descritto in [Preparare un dominio non instradabile per la sincronizzazione della directory](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
+   - Se il dominio Active Directory termina con un suffisso non instradabile come *. local* o *. LAN*, invece di un suffisso instradabile su Internet, ad esempio *. com* o *. org*, modificare il suffisso UPN degli account utente locali come descritto in [preparare un dominio non instradabile per la sincronizzazione della directory](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization). 
 
 ## <a name="2-install-and-configure-azure-ad-connect"></a>2. installare e configurare Azure AD Connect
 
@@ -55,28 +55,28 @@ Per sincronizzare gli utenti, i gruppi e i contatti da Active Directory locale a
 > [!NOTE]
 > I passaggi sono esattamente gli stessi per Microsoft 365 business. 
 
-Quando si configurano le opzioni per Azure AD Connect, è consigliabile abilitare la **sincronizzazione delle password** e l' **accesso Single Sign-on senza**problemi, nonché la funzionalità **writeback delle password** , supportata anche in Microsoft 365 business.
+Quando si configurano le opzioni per Azure AD Connect, è consigliabile abilitare la **sincronizzazione delle password**, l' **accesso Single Sign-on senza**problemi e la funzionalità writeback delle **password** , supportata anche in Microsoft 365 business.
 
 > [!NOTE]
 > Sono disponibili ulteriori passaggi per il writeback delle password oltre la casella di controllo in Azure AD Connect. Per ulteriori informazioni, vedere [How-to: Configure password writeback](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback). 
 
 ## <a name="3-configure-hybrid-azure-ad-join"></a>3. configurare la join ibrido di Azure AD
 
-Prima di abilitare i dispositivi Windows 10 a essere Uniti ad Azure ibrido, è necessario verificare che vengano soddisfatti i prerequisiti seguenti:
+Prima di abilitare i dispositivi Windows 10 a essere Uniti ad Azure ibrido, verificare che siano soddisfatti i prerequisiti seguenti:
 
    - Si sta eseguendo la versione più recente di Azure AD Connect.
 
    - Azure AD Connect ha sincronizzato tutti gli oggetti computer dei dispositivi in cui si desidera essere Uniti AD Azure ibrido. Se gli oggetti computer appartengono a specifiche unità organizzative (OU), assicurarsi che le unità organizzative siano impostate per la sincronizzazione anche in Azure AD Connect.
 
-Per registrare i dispositivi Windows 10 aggiunti a un dominio come ibridi di Azure AD Uniti, seguire la procedura illustrata nell' [esercitazione: Configure Hybrid Azure Active Directory join for Managed](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)Domains. Ciò consentirà agli ibridi di attivare Active Directory locale con Windows 10 e renderli pronti per il cloud.
+Per registrare i dispositivi Windows 10 aggiunti a un dominio come ibridi di Azure AD Uniti, seguire la procedura illustrata nell' [esercitazione: Configure Hybrid Azure Active Directory join for Managed](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)Domains. Questo ibrido consente di abilitare Active Directory locale esistente in computer Windows 10 e renderli pronti per il cloud.
     
 ## <a name="4-enable-automatic-enrollment-for-windows-10"></a>4. abilitare la registrazione automatica per Windows 10
 
- Per registrare automaticamente i dispositivi Windows 10 per la gestione dei dispositivi mobili in Intune, vedere [registrazione di un dispositivo Windows 10 automaticamente tramite criteri di gruppo](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy). È possibile impostare criteri di gruppo a livello di computer locale o per operazioni in blocco, è possibile creare questa impostazione di criteri di gruppo nel controller di dominio utilizzando la console Gestione criteri di gruppo e i modelli ADMX.
+ Per registrare automaticamente i dispositivi Windows 10 per la gestione dei dispositivi mobili in Intune, vedere [registrazione di un dispositivo Windows 10 automaticamente tramite criteri di gruppo](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy). È possibile impostare criteri di gruppo a livello di computer locale o per operazioni in blocco, è possibile utilizzare la console Gestione criteri di gruppo e i modelli ADMX per creare questa impostazione di criteri di gruppo nel controller di dominio.
 
 ## <a name="5-configure-seamless-single-sign-on"></a>5. configurare l'accesso Single Sign-on senza problemi
 
-  SSO senza soluzione di continuità firmerà automaticamente gli utenti nelle proprie risorse cloud di Microsoft 365 quando utilizzeranno computer aziendali. È sufficiente distribuire una delle due opzioni di criteri di gruppo descritte in [Azure Active Directory Single Sign-on senza problemi: avvio veloce](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-2-enable-the-feature). L'opzione **criteri di gruppo** non consente agli utenti di modificare le relative impostazioni, mentre l'opzione **preferenza criteri di gruppo** consente di impostare i valori, ma anche di lasciarli configurabili dall'utente.
+  SSO senza soluzione di continuità firma automaticamente gli utenti nelle risorse cloud di Microsoft 365 quando utilizzano i computer aziendali. È sufficiente distribuire una delle due opzioni di criteri di gruppo descritte in [Azure Active Directory Single Sign-on senza problemi: avvio veloce](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-2-enable-the-feature). L'opzione **criteri di gruppo** non consente agli utenti di modificare le relative impostazioni, mentre l'opzione **preferenza criteri di gruppo** consente di impostare i valori, ma anche di lasciarli configurabili dall'utente.
 
 ## <a name="6-set-up-windows-hello-for-business"></a>6. configurare Windows Hello for business
 

@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Informazioni su come gestire le attività di amministrazione di Microsoft 365 business correlate, i dispositivi mobili, Windows 10PCs e molte di queste attività.
-ms.openlocfilehash: 1e39adad50688686ef1d03ef7ed51534e067e6b3
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+description: Informazioni su come gestire le attività di amministrazione di Microsoft 365 business correlate, i dispositivi mobili, i PC Windows 10 e molte di queste attività.
+ms.openlocfilehash: ee1c856c6c0005842df8b3581a602dd539490bea
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575959"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633310"
 ---
 # <a name="manage-microsoft-365-business"></a>Gestire Microsoft 365 Business
 
@@ -32,7 +32,7 @@ ms.locfileid: "37575959"
 
 La maggior parte dei [contenuti amministrativi](/Office365/Admin/admin-home.md) per Office 365 for business si applica anche a Microsoft 365 business.
 
-- [Aggiungere altri utenti a Microsoft 365 Business](add-users-m365b.md)
+- [Aggiungere altri utenti a Microsoft 365 business](add-users-m365b.md)
     
 - [Visualizzare criteri e dispositivi](view-policies-and-devices.md)
     
@@ -40,7 +40,7 @@ La maggior parte dei [contenuti amministrativi](/Office365/Admin/admin-home.md) 
     
 - [Corrispondenza tra le caratteristiche di protezione in Microsoft 365 Business e le impostazioni di Intune](map-protection-features-to-intune-settings.md)
     
-Vedere le sezioni seguenti su come usare Microsoft 365 Business per proteggere i dati dell'organizzazione su PC e dispositivi mobili.
+Vedere le sezioni seguenti su come usare Microsoft 365 business per proteggere i dati dell'organizzazione su PC e dispositivi mobili.
   
 ## <a name="manage-mobile-devices"></a>Gestire i dispositivi mobili
 
@@ -48,7 +48,7 @@ Vedere le sezioni seguenti su come usare Microsoft 365 Business per proteggere i
     
 - [Configurare le impostazioni di protezione delle app per i dispositivi Android o iOS](app-protection-settings-for-android-and-ios.md)
     
-    Vedere [convalidare le impostazioni di protezione delle app su un dispositivo Android o iOS](validate-settings-on-android-or-ios.md) per assicurarsi che l'operazione sia stata eseguita. 
+    Per verificare che l'operazione sia stata eseguita, vedere [convalidare le impostazioni di protezione delle app in un dispositivo Android o iOS](validate-settings-on-android-or-ios.md). 
     
 - [Rimuovere i dati aziendali dai dispositivi](remove-company-data.md)
     
@@ -62,11 +62,11 @@ Vedere le sezioni seguenti su come usare Microsoft 365 Business per proteggere i
     
 - [Configurare le impostazioni di protezione per i dispositivi Windows 10](protection-settings-for-windows-10-pcs.md)
     
-    Vedere [Verificare le impostazioni di protezione per i dispositivi Windows 10](validate-settings-on-windows-10-pcs.md) per assicurarsi che siano applicate. 
+    Per verificare che l'operazione sia stata eseguita, vedere [convalidare le impostazioni di protezione del dispositivo nei dispositivi Windows 10](validate-settings-on-windows-10-pcs.md). 
     
 - [Configurare le impostazioni di protezione delle app per i dispositivi Windows 10](protection-settings-for-windows-10-devices.md)
     
-    Vedere [Verificare le impostazioni di protezione delle app nei PC Windows 10](validate-protection-settings-on-windows-10-pcs.md) per assicurarsi che siano applicate. 
+    Per assicurarsi che l'operazione sia stata eseguita, vedere [convalidare le impostazioni di protezione delle app nei PC Windows 10](validate-protection-settings-on-windows-10-pcs.md). 
     
 - [Rimuovere i dati aziendali dai dispositivi](remove-company-data.md)
     
@@ -88,9 +88,9 @@ Gli argomenti seguenti descrivono come usare Windows AutoPilot in Microsoft 365 
     
 - [Informazioni sulle impostazioni dei profili AutoPilot](autopilot-profile-settings.md)
     
-## <a name="set-up-and-pre-requisite-information"></a>Configurazione e informazioni prerequisite
+## <a name="set-up-and-prerequisite-information"></a>Configurare e informazioni sui prerequisiti
 
-- [Prerequisiti per proteggere i dati nei dispositivi con Microsoft 365 Business](pre-requisites-for-data-protection.md)
+- [Prerequisiti per la protezione dei dati nei dispositivi con Microsoft 365 business](pre-requisites-for-data-protection.md)
     
 - [Configurare Microsoft 365 Business usando la configurazione guidata](set-up.md)
     
@@ -98,8 +98,4 @@ Gli argomenti seguenti descrivono come usare Windows AutoPilot in Microsoft 365 
     
 - [Abilitare i dispositivi Windows 10 associati a un dominio per essere gestiti da Microsoft 365 business](manage-windows-devices.md)
     
-[Altre funzionalità di sicurezza](security-features.md#additional-security-features)
-    
-
-  
-
+- [Altre funzionalità di sicurezza](security-features.md#additional-security-features)

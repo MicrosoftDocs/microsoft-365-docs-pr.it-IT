@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Per gli amministratori: informazioni su come abilitare l'archiviazione in espansione automatica in Office 365, che consente agli utenti di disporre di spazio di archiviazione illimitato per le cassette postali di Exchange Online. È possibile abilitare l'archiviazione in espansione automatica per l'intera organizzazione o solo per utenti specifici."
-ms.openlocfilehash: b140cf9bed811c5af2de2e5441bd3c296ed7effe
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b5191aa080722b5bb3150c92d922b6b150fc545e
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083699"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627092"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Abilitare l'archiviazione illimitata in Office 365-Guida per gli amministratori
 
 È possibile utilizzare la funzionalità di archiviazione per l'espansione automatica di Exchange online in Office 365 per abilitare lo spazio di archiviazione illimitato per le cassette postali di archiviazione. Quando l'archiviazione in espansione automatica è attivata, lo spazio di archiviazione aggiuntivo viene aggiunto automaticamente alla cassetta postale di archiviazione di un utente quando si avvicina al limite di archiviazione. Il risultato è una capacità illimitata di archiviazione delle cassette postali. È possibile abilitare l'archiviazione in espansione automatica per tutti gli utenti dell'organizzazione o solo per i clienti specifici. Per ulteriori informazioni sull'archiviazione automatica, vedere [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - È necessario essere un amministratore globale dell'organizzazione di Office 365 o un membro del gruppo di ruoli Gestione organizzazione nell'organizzazione di Exchange Online per abilitare l'archiviazione in espansione automatica per l'intera organizzazione o per utenti specifici. In alternativa, è necessario essere membri di un gruppo di ruoli a cui è stato assegnato il ruolo destinatari di posta elettronica per abilitare l'archiviazione in espansione automatica per utenti specifici.
     
@@ -48,10 +48,10 @@ ms.locfileid: "37083699"
     
 2. Eseguire il seguente comando in PowerShell di Exchange Online per abilitare l'archiviazione in espansione automatica per l'intera organizzazione.
 
-    ```
+    ```powershell
     Set-OrganizationConfig -AutoExpandingArchive
     ```
-  
+
 ## <a name="enable-auto-expanding-archiving-for-specific-users"></a>Abilitazione dell'archiviazione con espansione automatica per utenti specifici
 
 Invece di abilitare l'archiviazione automatica per tutti gli utenti dell'organizzazione, è possibile abilitarla solo per utenti specifici. È possibile eseguire questa operazione perché solo alcuni utenti potrebbero avere la necessità di disporre di una capacità di archiviazione di grandi dimensioni.
@@ -68,7 +68,7 @@ Questo spazio aggiuntivo viene aggiunto per evitare eventuali problemi di archiv
     
 2. Eseguire il seguente comando in PowerShell di Exchange Online per abilitare l'archiviazione in espansione automatica per un utente specifico. Come spiegato in precedenza, la cassetta postale di archiviazione dell'utente (archivio principale) deve essere abilitata prima di poter attivare l'archiviazione in espansione automatica per tale utente.
     
-    ```
+    ```powershell
     Enable-Mailbox <user mailbox> -AutoExpandingArchive
     ```
 
@@ -80,7 +80,7 @@ Questo spazio aggiuntivo viene aggiunto per evitare eventuali problemi di archiv
 
 Per verificare che l'archiviazione con espansione automatica sia abilitata per l'organizzazione, eseguire il comando seguente in PowerShell di Exchange Online.
 
-```
+```powershell
 Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 ```
 
@@ -88,9 +88,10 @@ Il valore `True` indica che l'archiviazione con espansione automatica è abilita
   
 Per verificare che l'archiviazione con espansione automatica sia abilitata per un utente specifico, eseguire il comando seguente in PowerShell di Exchange Online.
   
-```
+```powershell
 Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 ```
+
 Il valore `True` indica che l'archiviazione con espansione automatica è abilitata per l'utente. 
   
 Dopo aver abilitato l'archiviazione automatica, tenere presenti le considerazioni seguenti:
@@ -102,11 +103,11 @@ Dopo aver abilitato l'archiviazione automatica, tenere presenti le considerazion
     ![Le proprietà ArchiveQuota e ArchiveWarningQuota vengono ignorate dopo l'abilitazione dell'archiviazione con espansione automatica](media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - È inoltre possibile utilizzare PowerShell per abilitare le cassette postali di archiviazione. Ad esempio, è possibile eseguire il comando seguente in Exchange Online PowerShell per abilitare le cassette postali di archiviazione per tutti gli utenti la cui cassetta postale di archiviazione non è già abilitata.
 
-    ```
+    ```powershell
     Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
     ```
 
@@ -116,7 +117,7 @@ Dopo aver abilitato l'archiviazione automatica, tenere presenti le considerazion
     
 - L'archiviazione in espansione automatica è supportata per le cassette postali di archiviazione basate sul cloud in una distribuzione ibrida di Exchange per gli utenti che dispongono di una cassetta postale principale locale. Tuttavia, dopo che l'archiviazione in espansione automatica è abilitata per una cassetta postale di archiviazione basata sul cloud, non è possibile disattivare la cassetta postale di archiviazione nell'organizzazione di Exchange locale. L'archiviazione in espansione automatica non è supportata per le cassette postali locali in Exchange Server 2010.
     
-- Per un elenco di client di Outlook che gli utenti possono utilizzare per accedere agli elementi nell'area di archiviazione aggiuntiva nella propria cassetta postale di archiviazione, vedere la sezione relativa ai requisiti di Outlook per l'accesso agli elementi in un archivio automatico espanso in [Panoramica dell'archiviazione illimitata in Office 365](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive) .
+- Per un elenco di client di Outlook che gli utenti possono utilizzare per accedere agli elementi nell'area di archiviazione aggiuntiva nella propria cassetta postale di archiviazione, vedere la sezione "requisiti di Outlook per l'accesso agli elementi in un archivio con espansione automatica" in [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
     
 - Come spiegato in precedenza, 10 GB viene aggiunto alla quota di archiviazione della cassetta postale di archivio principale dell'utente (e alla cartella elementi ripristinabili se la cassetta postale è in attesa) quando si esegue il comando **Enable-Mailbox-AutoExpandingArchive** . Questo fornisce ulteriore spazio di archiviazione fino a quando non viene effettuato il provisioning dell'ambiente di archiviazione automatico (che può richiedere fino a 30 giorni). Questo spazio di archiviazione aggiuntivo non viene aggiunto quando si esegue il **Set-OrganizationConfig-AutoExpandingArchive** per abilitare l'archiviazione in espansione automatica per tutte le cassette postali dell'organizzazione. Se è stata abilitata l'archiviazione automatica per l'intera organizzazione, ma è necessario aggiungere altri 10 GB di spazio di archiviazione per un utente specifico, è possibile eseguire il comando **Enable-Mailbox-AutoExpandingArchive** su tale cassetta postale. Verrà visualizzato un messaggio di errore che indica che l'archiviazione in espansione automatica è già stata abilitata, ma che lo spazio di archiviazione aggiuntivo verrà aggiunto alla cassetta postale. 
 

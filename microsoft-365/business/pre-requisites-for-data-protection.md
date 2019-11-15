@@ -1,5 +1,5 @@
 ---
-title: Prerequisiti per proteggere i dati nei dispositivi con Microsoft 365 Business
+title: Prerequisiti per la protezione dei dati nei dispositivi con Microsoft 365 business
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -17,33 +17,30 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: "Conoscere i prerequisiti per la configurazione dell'organizzazione con Microsoft 365 business. "
-ms.openlocfilehash: 157abf0a3396ab374297441bf90d6defc4093390
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+description: Conoscere i prerequisiti per la configurazione dell'organizzazione con Microsoft 365 business.
+ms.openlocfilehash: 874a85859e315ef17e10fdd8094860e1e6bf2560
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38290531"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640542"
 ---
-# <a name="pre-requisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Prerequisiti per proteggere i dati nei dispositivi con Microsoft 365 Business
+# <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Prerequisiti per la protezione dei dati nei dispositivi con Microsoft 365 business
 
-Il primo passaggio per la configurazione dell'organizzazione con Microsoft 365 Business consiste nell'assicurarsi di poter soddisfare i prerequisiti.
+Il primo passaggio per la configurazione dell'organizzazione con Microsoft 365 business consiste nel verificare che siano in grado di rispondere ai prerequisiti.
   
-## <a name="pre-requisites"></a>Requisiti preliminari
+## <a name="prerequisites"></a>Prerequisiti
 
 - I dispositivi Windows devono eseguire Windows 7 Professional, Windows 8 Pro o Windows 8,1 Pro.
     
     [Eseguire l'aggiornamento di dispositivi Windows a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md) .
     
-    Se si esegue Windows 10 Home, è necessario **acquistare** Windows 10 Pro. Per le istruzioni, vedere [Upgrade Windows 10 Home to Windows 10 Pro](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US) . 
+    Se si sta eseguendo Windows 10 Home, è necessario **acquistare** Windows 10 Pro. Per le istruzioni, vedere [Upgrade Windows 10 Home to Windows 10 Pro](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US) . 
     
-- Rimuovere i dispositivi dalle soluzioni di gestione dei dispositivi mobili (Mobile Iron, AirWatch e così via). Sarà necessario registrare tutti gli utenti nell'organizzazione per la gestione dei dispositivi mobili di Microsoft 365 Business.
+- Rimuovere i dispositivi dalle soluzioni di gestione mobile (ferro mobile, orologio e così via). Verranno registrati tutti gli utenti dell'organizzazione in Microsoft 365 Business Mobile Management.
     
 - Apple iOS 8.0 e versioni successive.
     
-    Google Android 4.0 e versioni successive (incluso Samsung KNOX Standard 4.0 e versioni successive). Per altre informazioni, vedere [Dispositivi supportati da Intune](https://go.microsoft.com/fwlink/p/?linkid=852307).
+    Google Android 4.0 e versioni successive (incluso Samsung KNOX Standard 4.0 e versioni successive). Per ulteriori informazioni, vedere [dispositivi supportati da Intune](https://go.microsoft.com/fwlink/p/?linkid=852307).
     
-- Se nei computer degli utenti sono presenti applicazioni di Office esistenti, vedere [Preparare la distribuzione client di Office](prepare-for-office-client-deployment.md) per informazioni sui passaggi che potrebbe essere necessario eseguire prima di poter configurare Microsoft 365 Business per installare Office 2016 nei computer degli utenti. 
-    
-
-
+- Se si dispone di applicazioni di Office esistenti nei computer degli utenti, leggere [prepararsi per l'installazione del client di Office](prepare-for-office-client-deployment.md) per comprendere i passaggi che potrebbe essere necessario eseguire prima di poter configurare Microsoft 365 business per l'installazione di Office 2016 nei computer degli utenti. 

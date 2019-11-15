@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Informazioni su come le caratteristiche di protezione in Microsoft 365 business vengono mappate alle impostazioni di Intune. La sottoscrizione fornisce una licenza per modificare le impostazioni di Intune.
-ms.openlocfilehash: 2e26bffe289170eb17b07325ab8b57285eecee38
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: b7d87e9a174e942a6533ae034b4f4a551ae2159f
+ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575939"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38633290"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-map-to-intune-settings"></a>Corrispondenza tra le caratteristiche di protezione in Microsoft 365 Business e le impostazioni di Intune
 
@@ -36,11 +36,13 @@ ms.locfileid: "37575939"
 
 La tabella seguente descrive il mapping tra le impostazioni dei criteri per le applicazioni Android e iOS e le impostazioni di Intune.
   
-Per trovare l'impostazione Intune, durante l'accesso con le credenziali di amministratore di Microsoft 365 business, accedere a interfaccia di **Amministrazione**e quindi **Intune**.
+Per trovare l'impostazione Intune, accedere con le credenziali di amministratore di Microsoft 365 business e passare a interfaccia di **Amministrazione**, quindi **Intune**.
   
- **Importante:** Un abbonamento Microsoft 365 business fornisce una licenza per modificare tutte le impostazioni di Intune. [Per iniziare, vedere Introduzione a Intune.](https://docs.microsoft.com/intune/introduction-intune)
+ > [!IMPORTANT]
+ > 
+ > Un abbonamento Microsoft 365 business fornisce una licenza per modificare tutte le impostazioni di Intune. [Per iniziare, vedere Introduzione a Intune.](https://docs.microsoft.com/intune/introduction-intune)
   
-Fare clic sul nome del criterio da selezionare, ad esempio Criteri per le applicazioni per Android, quindi scegliere **Impostazioni criteri**.
+Selezionare il nome del criterio che &mdash; si desidera, ad esempio, i &mdash; criteri delle applicazioni per Android e quindi scegliere **impostazioni dei criteri**.
   
 In **Proteggi i file di lavoro in caso di furto o smarrimento dei dispositivi**
   
@@ -59,8 +61,8 @@ In **Gestisci la modalità di accesso ai file di Office nei dispositivi mobili**
 |Crittografa i file di lavoro  <br/> |Crittografa dati app  <br/> |
 |In **Gestisci la modalità di accesso ai file di Office nei dispositivi mobili** <br/> ||
 |Richiedi un PIN o l'impronta digitale per accedere alle app di Office  <br/> | Richiedi PIN per l'accesso  <br/>  Viene impostato anche:  <br/> **Consenti PIN semplice** su **Sì** <br/> **Lunghezza PIN** su 4  <br/> **Consenti impronta digitale anziché PIN** su **Sì** <br/> **Disabilita il PIN dell'app quando il PIN del dispositivo è gestito** su **No** <br/> |
-|Reimposta il PIN dopo il numero di tentativi di accesso falliti seguente (disabilitato se il PIN non è obbligatorio)  <br/> |Numero di tentativi prima della reimpostazione del PIN  <br/> |
-|Richiedi agli utenti di accedere di nuovo dopo che le app di Office sono rimaste inattive per (disabilitato se il PIN non è obbligatorio)  <br/> | Controlla di nuovo i requisiti di accesso dopo (minuti)  <br/>  Viene impostato anche:  <br/> **Timeout** è impostato su minuti  <br/>  Si tratta dello stesso numero di minuti impostato in Microsoft 365 Business.  <br/> **Periodo di prova offline** è impostato su 720 minuti per impostazione predefinita  <br/> |
+|Reimposta il PIN quando il login ha esito negativo molte volte (disabilitato se il PIN non è obbligatorio)  <br/> |Numero di tentativi prima della reimpostazione del PIN  <br/> |
+|Richiedere agli utenti di accedere di nuovo dopo che le app di Office sono rimaste inattive (disabilitato se il PIN non è obbligatorio)  <br/> | Controlla di nuovo i requisiti di accesso dopo (minuti)  <br/>  Viene impostato anche:  <br/> **Timeout** è impostato su minuti  <br/>  Si tratta dello stesso numero di minuti impostato in Microsoft 365 Business.  <br/> **Periodo di prova offline** è impostato su 720 minuti per impostazione predefinita  <br/> |
 |Nega l'accesso ai file di lavoro nei dispositivi jailbroken o rooted  <br/> |Blocca l'esecuzione delle app gestite nei dispositivi jailbroken o rooted  <br/> |
 |Consenti agli utenti di copiare contenuti dalle app di Office in quelle personali  <br/> | Limita le operazioni taglia, copia e incolla con le altre app  <br/>  Se l'opzione Microsoft 365 Business è impostata su **Attivato**, anche queste tre opzioni sono impostate su **Tutte le app** in Intune:  <br/> **Consenti all'app di trasferire i dati ad altre app** <br/> **Consenti all'app di ricevere i dati da altre app** <br/> **Limita le operazioni taglia, copia e incolla con le altre app** <br/>  Se l'opzione Microsoft 365 Business è impostata su **Attivato**, tutte le opzioni di Intune sono impostate su:  <br/> **Consenti all'app di trasferire i dati ad altre app** è impostato su **App gestite da criteri** <br/> **Consenti all'app di ricevere i dati da altre app** è impostato su **Tutte le app** <br/> **Limita le operazioni taglia, copia e incolla con le altre app** è impostato su **App gestite da criteri con Incolla in** <br/> |
 |||
@@ -69,17 +71,19 @@ In **Gestisci la modalità di accesso ai file di Office nei dispositivi mobili**
 
 La tabella seguente descrive il mapping tra le impostazioni dei criteri per le applicazioni di Windows 10 e le impostazioni di Intune.
   
-Per trovare l'impostazione Intune, mentre è stato eseguito l'accesso con le credenziali di amministratore di Microsoft 365 business, accedere a [portale di Azure](https://portal.azure.com), selezionare **altri servizi**e digitare Intune nel **filtro**, selezionare **protezione** \> **app di Intune Criteri delle app**.
+Per trovare l'impostazione Intune, accedere con le credenziali di amministratore di Microsoft 365 business e passare a [portale di Azure](https://portal.azure.com). Selezionare **altri servizi**e digitare Intune nel **filtro**. Selezionare **** \> **criteri app**di protezione delle app di Intune.
   
- **Importante**: Un abbonamento a Microsoft 365 Business fornisce una licenza per modificare solo le impostazioni di Intune che corrispondono alle impostazioni disponibili in Microsoft 365 Business. 
+ > [!IMPORTANT]
+ >
+ >Un abbonamento Microsoft 365 business fornisce una licenza per modificare solo le impostazioni di Intune che vengono mappate alle impostazioni disponibili in Microsoft 365 business. 
   
-Fare clic sul nome del criterio da selezionare, quindi scegliere **Generale, Attività**, **App consentite**, **Escludi le app**, **Impostazioni obbligatorie** o **Impostazioni avanzate** dal riquadro di spostamento a sinistra per esplorare le impostazioni disponibili. 
+Per esplorare le impostazioni disponibili, selezionare il nome del criterio desiderato e quindi scegliere **generale, assegnazioni**, **app consentite**, **applicazioni esenti**, **impostazioni necessarie**o **Impostazioni avanzate** dal riquadro di spostamento a sinistra. 
   
 |**Impostazione dei criteri per le applicazioni di Windows 10**|**Impostazioni di Intune**|
 |:-----|:-----|
 |Crittografa i file di lavoro  <br/> |**Impostazioni avanzate** \> **Protezione dei dati**: **Revoca le chiavi di crittografia all'annullamento della registrazione** e **Revoca l'accesso ai dati protetti quando il dispositivo esegue la registrazione a MDM** sono entrambi impostati su **Attivato**.  <br/> |
-|Impedire agli utenti di copiare i dati aziendali in file personali.  <br/> |**Impostazioni obbligatorie** \> **Modalità di Windows Information Protection**. **Attivato** in Microsoft 365 Business esegue il mapping a: **Nascondi sostituzioni**, **Disattivato** in Microsoft 365 Business esegue il mapping a: **Disattivato**.  <br/> |
-|Controllo dell'accesso ai documenti di Office  <br/> | Se impostato su **Attivato** in Microsoft 365 Business,  <br/> **Impostazioni avanzate** \> **Access**, **Usa Windows Hello for Business come metodo per l'accesso a Windows** è impostato su **Attivato**, con le impostazioni aggiuntive seguenti:  <br/> **Imposta il numero minimo di caratteri necessari per il PIN** è impostato su **4**.  <br/> **Configura l'uso di lettere maiuscole nel PIN di Windows Hello for Business** è impostato su **Non consentire l'uso delle lettere maiuscole nel PIN**.  <br/> **Configura l'uso di lettere minuscole nel PIN di Windows Hello for Business** è impostato su **Non consentire l'uso delle lettere minuscole nel PIN**.  <br/> **Configura l'uso di caratteri speciali nel PIN di Windows Hello for Business** è impostato su **Non consentire l'uso di caratteri speciali nel PIN**.  <br/> **Specificare il periodo di tempo (in giorni) durante il quale è possibile usare un PIN prima che il sistema richieda all'utente di modificarlo** è impostato su **0**.  <br/> **Specificare il numero di PIN precedenti che possono essere associati a un account utente e non possono essere riutilizzati** è impostato su **0**.  <br/> **Numero di errori di autenticazione consentiti prima della cancellazione dei dati del dispositivo** è impostato sullo stesso valore di Microsoft 365 Business (5 per impostazione predefinita).  <br/> **Intervallo di tempo massimo (in minuti) consentito in caso di inattività del dispositivo dopo il quale il dispositivo verrà bloccato tramite PIN o password** è impostato sullo stesso valore di Microsoft 365 Business.  <br/> |
+|Impedire agli utenti di copiare i dati aziendali in file personali.  <br/> |**Impostazioni obbligatorie** \> **Modalità di Windows Information Protection**. **In microsoft** 365 business maps to: **Hide Overrides**, **off** in Microsoft 365 business maps to: **off**.  <br/> |
+|Controllo dell'accesso ai documenti di Office  <br/> | Se impostato su **Attivato** in Microsoft 365 Business,  <br/> **Impostazioni avanzate** \> **Access**, **Usa Windows Hello for Business come metodo per l'accesso a Windows** è impostato su **Attivato**, con le impostazioni aggiuntive seguenti:  <br/> **Imposta il numero minimo di caratteri necessari per il PIN** è impostato su **4**.  <br/> **Configura l'uso di lettere maiuscole nel PIN di Windows Hello for Business** è impostato su **Non consentire l'uso delle lettere maiuscole nel PIN**.  <br/> **Configura l'uso di lettere minuscole nel PIN di Windows Hello for Business** è impostato su **Non consentire l'uso delle lettere minuscole nel PIN**.  <br/> **Configura l'uso di caratteri speciali nel PIN di Windows Hello for Business** è impostato su **Non consentire l'uso di caratteri speciali nel PIN**.  <br/> **Specificare il periodo di tempo (in giorni) che può essere utilizzato da un PIN prima che il sistema richieda che l'utente possa cambiare** è impostato su **0**.  <br/> **Specificare il numero di PIN precedenti che possono essere associati a un account utente e non possono essere riutilizzati** è impostato su **0**.  <br/> **Numero di errori di autenticazione consentiti prima della cancellazione dei dati del dispositivo** è impostato sullo stesso valore di Microsoft 365 Business (5 per impostazione predefinita).  <br/> **Intervallo di tempo massimo (in minuti) consentito in caso di inattività del dispositivo dopo il quale il dispositivo verrà bloccato tramite PIN o password** è impostato sullo stesso valore di Microsoft 365 Business.  <br/> |
 |Abilita il recupero dei dati protetti  <br/> |**Impostazioni avanzate** \> **Protezione dei dati**: **Mostra l'icona di Protezione dei dati aziendali** e **Usa Azure RMS per WIP** sono impostati su **Attivato**.  <br/> |
 |Proteggi altre posizioni sul cloud aziendale  <br/> |**Impostazioni avanzate** \> **Domini protetti** e **Risorse cloud** mostrano i domini e i siti di SharePoint.  <br/> |
 |I file usati da queste app sono protetti  <br/> |L'elenco delle app protette si trova in **App consentite**.  <br/> |
@@ -89,7 +93,7 @@ Fare clic sul nome del criterio da selezionare, quindi scegliere **Generale, Att
 
 La tabella seguente descrive il mapping tra le impostazioni di configurazione per i dispositivi Windows 10 e le impostazioni di Intune.
   
-Per trovare l'impostazione Intune, mentre è stato eseguito l'accesso con le credenziali di amministratore di Microsoft 365 business, accedere a [portale di Azure](https://portal.azure.com), selezionare **altri servizi**e digitare Intune nel **filtro**, selezionare il dispositivo **Intune** \> ** ** \> **profili**di configurazione. Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
+Per trovare l'impostazione Intune, accedere con le credenziali di amministratore di Microsoft 365 business e passare a [portale di Azure](https://portal.azure.com), selezionare **altri servizi**e digitare Intune nel **filtro**, selezionare **profili**di **configurazione** \> dei dispositivi di **Intune** \> . Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Impostazione dei criteri per i dispositivi Windows 10**|**Impostazioni di Intune**|
 |:-----|:-----|
@@ -99,7 +103,7 @@ Per trovare l'impostazione Intune, mentre è stato eseguito l'accesso con le cre
 |Consenti agli utenti di scaricare app da Microsoft Store  <br/> |Criteri URI personalizzati  <br/> |
 |Consenti agli utenti di accedere a Cortana  <br/> |**Generale** \> **Cortana** è impostato su **blocca** in Intune quando è impostato su **Disattivato** in Microsoft 365 Business.  <br/> |
 |Consenti agli utenti di ricevere da Microsoft suggerimenti e pubblicità su Windows  <br/> |**Contenuti in evidenza di Windows**, tutto bloccato se questa opzione è impostata su **Disattivato** in Microsoft 365 Business.  <br/> |
-|Mantieni automaticamente aggiornati i dispositivi Windows 10  <br/> | Questa impostazione si trova in **Microsoft Intune** \> **Aggiornamenti del servizio - Anelli di aggiornamento di Windows 10**. Scegliere **Criterio di aggiornamento per i dispositivi Windows 10**, quindi **Proprietà** \> **Impostazioni**.      <br/>  Quando l'opzione Microsoft 365 Business è impostata su **Attivato**, vengono configurate tutte le impostazioni seguenti:  <br/> Il **ramo di manutenzione** è impostato su **CB** (CBB se è disattivato in Microsoft 365 Business).  <br/> **Aggiornamenti ai prodotti Microsoft** è impostato su **Consenti**.  <br/> **Driver di Windows** è impostato su **Consenti**.  <br/> **Comportamento di aggiornamento automatico** è impostato su **Installa automaticamente durante la manutenzione** con:  <br/> **Inizio dell'orario di attività** è impostato su **6**.  <br/> **Fine dell'orario di attività** è impostato su **22**.  <br/> **Periodo di differimento dell'aggiornamento qualitativo (giorni)** è impostato su **0**.  <br/> **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)** è impostato su **0**.  <br/> **Modalità di download con ottimizzazione recapito** è impostato su **HTTP combinato con peering dietro la stessa NAT**.  <br/> |
+|Mantieni automaticamente aggiornati i dispositivi Windows 10  <br/> | Questa impostazione è in aggiornamenti del servizio **Microsoft Intune** \> **-anelli di aggiornamento di Windows 10**, scegliere **criteri di aggiornamento per i dispositivi Windows 10**e quindi **Impostazioni** **Proprietà** \> .  <br/>  Quando l'impostazione business Microsoft 365 è impostata **su**attivato, vengono impostate tutte le impostazioni seguenti:  <br/> Il **ramo di manutenzione** è impostato su **CB** (CBB se è disattivato in Microsoft 365 Business).  <br/> **Aggiornamenti ai prodotti Microsoft** è impostato su **Consenti**.  <br/> **Driver di Windows** è impostato su **Consenti**.  <br/> **Comportamento di aggiornamento automatico** è impostato su **Installa automaticamente durante la manutenzione** con:  <br/> **Inizio dell'orario di attività** è impostato su **6**.  <br/> **Fine dell'orario di attività** è impostato su **22**.  <br/> **Periodo di differimento dell'aggiornamento qualitativo (giorni)** è impostato su **0**.  <br/> **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)** è impostato su **0**.  <br/> **Modalità di download con ottimizzazione recapito** è impostato su **HTTP combinato con peering dietro la stessa NAT**.  <br/> |
 |||
    
 

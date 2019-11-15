@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gli account di amministratore globale devono avere un trattamento speciale per proteggerli dal compromesso delle credenziali.
-ms.openlocfilehash: 72de7d683a9c2a080f7be69e585d16d8122cd46d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370213"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627082"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Passaggio 1: creare e proteggere gli account di amministratore globale
 
@@ -47,7 +47,7 @@ Per ulteriori protezioni, vedere [Proteggere gli account di amministratore globa
 I risultati di questa sezione sono:
 
 - Gli unici account utente dell'abbonamento a cui è assegnato il ruolo di amministratore globale sono gli account di amministratore globale dedicati. Per verificarlo, usare il comando seguente di Azure Active Directory PowerShell per Graph: 
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | Where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 - A tutti gli altri account utente che gestiscono i servizi dell'abbonamento sono assegnati ruoli di amministratore associati ai propri ruoli professionali.
