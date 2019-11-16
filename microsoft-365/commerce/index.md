@@ -11,17 +11,17 @@ ms.date: 5/29/2019
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.openlocfilehash: f25274c1cf06bf2900de3a45686156f33d3143aa
-ms.sourcegitcommit: a75e3a93b3431bd26b0d072b37a9c5eb3dcb1c7f
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37889910"
 ---
 # <a name="manage-commercial-purchases-in-microsoft-365-admin-center"></a>Gestire gli acquisti commerciali nell'interfaccia di amministrazione di Microsoft 365
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-| Argomento | Description |
+| Argomento | Descrizione |
 | ----- | ----------- |
 | [Gestire le app di terze parti](manage-saas-apps.md) | Gli amministratori possono gestire gli abbonamenti alle app di terze parti per l'organizzazione. |
 | [Acquistare licenze](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-licenses?view=o365-worldwide) | Acquistare le licenze di Office 365 per l'organizzazione. |

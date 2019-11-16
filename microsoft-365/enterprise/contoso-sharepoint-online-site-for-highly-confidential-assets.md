@@ -13,17 +13,15 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: informazioni sul modo in cui Contoso ha implementato un sito di SharePoint per dati altamente regolamentati per semplificare la collaborazione tra i team di ricerca.'
-ms.openlocfilehash: 08676f9fa89d9cbf932f9d70664ad1d17a153e3b
-ms.sourcegitcommit: 80dc9ceb14e3eb3ae61b0fc2c8c3d73d564a7ef9
+ms.openlocfilehash: ce813407c0f4c6f7b68aa997bf5e54b86a24ff2d
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37617254"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672712"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sito di SharePoint per le risorse digitali estremamente riservate di Contoso Corporation
 
- **Riepilogo:** Come Contoso ha implementato un sito di SharePoint per dati altamente regolamentati per semplificare la collaborazione tra i propri team di ricerca.
-  
 Le risorse più importanti di Contoso sono la proprietà intellettuale in forma di segreti commerciali, come le tecniche di produzione proprietarie e le specifiche di progettazione per i prodotti in sviluppo. Tali risorse erano in formato digitale, originariamente memorizzate come file in un sito di SharePoint Server 2016. Quando Contoso ha distribuito Microsoft 365 Enterprise, volevano passare al cloud le risorse digitali locali per semplificare l'accesso e una collaborazione più aperta tra i team di ricerca di Parigi, Mosca, New York, Pechino e Bangalore. 
   
 Tuttavia, a causa della loro natura sensibile, l'accesso a questi file deve essere:

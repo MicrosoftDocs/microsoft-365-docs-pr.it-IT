@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui rilevamenti di Esplora risorse e in tempo reale &amp; nel centro sicurezza e conformità.
-ms.openlocfilehash: 01985c69d1d89536d16b166eafc23df37ee53d0a
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: e3f205a75c30397382b63112df4503f7a1d23582
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639891"
+ms.locfileid: "38673282"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -81,11 +81,15 @@ La **cronologia della posta elettronica** è un'altra funzionalità di Esplora r
 Per ulteriori informazioni sull'analisi di messaggi di posta [elettronica dannosi, vedere Find and indagate email dannose che è stato recapitato in Office 365](https://docs.microsoft.com/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
 
-È inoltre possibile **esportare i report** in Microsoft Excel per visualizzare sia l'ID del messaggio di rete, sia il loro verdetto di clic, in cui è possibile capire in che modo il traffico è stato creato più facilmente. Ecco come funziona. A partire da Threat Management sulla barra di avvio veloce di Office 365, fare clic su questa catena:
+Sarà inoltre possibile **esportare i report per i clic URL** in Microsoft Excel per visualizzare sia l'ID del messaggio di rete, sia il loro verdetto di clic, in cui è possibile capire dove è stato creato il traffico dell'URL. Ecco come funziona. A partire da Threat Management sulla barra di avvio veloce di Office 365, fare clic su questa catena:
 
-**Explorer > View phishing > clic > URL principali**
+**Explorer > View phishing > fare clic su > Top URLs o URL Top clic > fare clic su qualsiasi record per aprire il riquadro a comparsa URL**
 
 Quando si fa clic su un URL nell'elenco, verrà visualizzato un nuovo pulsante Esporta nel riquadro di volo. Utilizzare questo pulsante per spostare i dati in un foglio di calcolo di Excel per semplificare la creazione di report.
+
+È possibile raggiungere lo stesso percorso in rilevamenti in tempo reale, come segue:
+
+**Esplora > rilevamenti in tempo reale > visualizzare gli URL di phishing > > Top URLs o Top click > fare clic su qualsiasi record per aprire il riquadro a comparsa URL > passare alla scheda clic.**
 
 > [!TIP]
 > ID messaggio di rete mappare il clic di nuovo su mail specifiche quando si esegue una ricerca tramite Explorer o gli strumenti di terze parti associati tramite ID messaggio di rete. La ricerca nell'ID messaggio di rete fornirà agli amministratori la posta elettronica specifica associata a un risultato di clic. In caso di esportazione, l'identificazione correlata dell'ID messaggio di rete rende l'analisi più rapida e potente.

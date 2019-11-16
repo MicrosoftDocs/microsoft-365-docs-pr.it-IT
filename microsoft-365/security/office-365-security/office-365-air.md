@@ -4,7 +4,7 @@ keywords: ARIA, autoIR, ATP, automatizzato, investigazione, risposta, correzione
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Iniziare a utilizzare le funzionalità di risposta agli incidenti automatici in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 293b567cf24e9c6b0e33e28e9dd1ca0453fd0cd1
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+ms.openlocfilehash: 13f7e95829b8cf3adf17a40cf7b02c5322b15ea7
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37385733"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673422"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Analizzare e rispondere automaticamente alle minacce in Office 365
 
@@ -37,13 +37,15 @@ Con l'aria, quando vengono attivati determinati avvisi, vengono avviati uno o pi
 - [Visualizzare i dettagli relativi a un avviso relativo a un'indagine](#view-details-about-an-alert-related-to-an-investigation)
 
 > [!NOTE]
-> Per eseguire le attività descritte in questo articolo, è necessario essere un amministratore globale, un amministratore della sicurezza, un operatore di sicurezza o un lettore di sicurezza. Per ulteriori informazioni, vedere [Microsoft 365 Security Center: Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+> Per eseguire le attività descritte in questo articolo, è necessario disporre delle autorizzazioni appropriate. Ad esempio, è possibile che Myst sia un amministratore globale, un amministratore della sicurezza, un operatore di sicurezza o un lettore di sicurezza. [Per ulteriori informazioni, vedere ruoli e autorizzazioni per il Centro sicurezza di Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
 L'aria è inclusa nei seguenti abbonamenti:
 - Microsoft 365 E5
-- Sicurezza Microsoft 365 E5
+- Microsoft 365 E5 Security
 - Office 365 E5
-- Office 365 Advanced Threat Protection piano 2
+- Office 365 Advanced Threat Protection (Piano 2)
+
+Se non si dispone di uno di questi abbonamenti, [avviare una versione di valutazione gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
 

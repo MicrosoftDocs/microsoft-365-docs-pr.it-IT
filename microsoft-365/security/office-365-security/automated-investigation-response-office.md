@@ -1,9 +1,9 @@
 ---
-title: Indagine automatizzata e risposta (AIR) in Office 365
+title: Risposta agli incidenti automatici (AIR) in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 10/03/2019
+ms.date: 11/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,28 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Informazioni sulle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 99eea4d723a2d9f27528eb951c758b33e0390f93
-ms.sourcegitcommit: d4aa94716b33e6c270ae7adfbdc4c19cf4a0087d
+description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
+ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37386203"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673402"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Indagine automatizzata e risposta (AIR) in Office 365
+# <a name="automated-incident-response-air-in-office-365"></a>Risposta agli incidenti automatici (AIR) in Office 365
 
-Le funzionalità di analisi e risposta automatizzate consentono di eseguire processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. AIR può aiutare il team delle operazioni di sicurezza a operare in modo più efficiente ed efficace.
+Le funzionalità di risposta agli incidenti automatici consentono di eseguire processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. AIR può aiutare il team delle operazioni di sicurezza a operare in modo più efficiente ed efficace.
 - Per ottenere una panoramica del funzionamento dell'aria, utilizzare questo articolo.
 - Per iniziare a usare AIR, vedere [indagare e rispondere automaticamente alle minacce in Office 365](office-365-air.md).
 
 > [!NOTE]
 > Per accedere alle funzionalità AEREe, è necessario essere un amministratore globale, un amministratore della sicurezza, un operatore di sicurezza o un lettore di sicurezza. Per ulteriori informazioni su queste autorizzazioni, vedere [Microsoft 365 Security Center: Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
-
-L'aria è inclusa nei seguenti abbonamenti:
-- Microsoft 365 E5
-- Sicurezza Microsoft 365 E5
-- Office 365 E5
-- Office 365 Advanced Threat Protection piano 2
 
 ## <a name="the-overall-flow-of-air"></a>Flusso globale dell'aria
 
@@ -72,7 +66,7 @@ Nella versione iniziale di AIR (a partire da aprile 2019), gli avvisi generati d
 
 Per visualizzare gli avvisi, nel centro sicurezza & conformità scegliere **avvisi** > **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente. Tenere presente che gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, è necessario modificare il filtro degli avvisi per includere gli avvisi informativi.
 
-Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione eventi e informazioni di sicurezza, è possibile inviare avvisi di Office 365 a tale sistema tramite notifica tramite posta elettronica o tramite la [ API di attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche di avviso per l'analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro sicurezza & conformità, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
+Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione eventi e informazioni di sicurezza, è possibile inviare avvisi di Office 365 a tale sistema tramite notifica tramite posta elettronica o tramite l' [API di gestione di office 365 Management](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche di avviso per l'analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro sicurezza & conformità, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
 
 ![Avvisi relativi al collegamento alle indagini](../media/air-alerts-page-details.png) 
 
@@ -118,18 +112,22 @@ Nella pagina indagini automatizzate vengono visualizzate le indagini dell'organi
 - Esportare i dati in un file. csv.
 
 Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azioni. Durante l'esecuzione dell'indagine, lo stato cambia per indicare se sono state trovate minacce e se le azioni sono state approvate. 
-- **Inizio**: l'analisi viene accodata per iniziare a breve
-- **Running**: l'inchiesta è iniziata e sta conducendo la sua analisi
-- **Non sono state trovate minacce**: l'inchiesta ha completato l'analisi e non sono state trovate minacce
-- **Terminato dal sistema**: l'inchiesta non è stata chiusa ed è scaduta dopo 7 giorni
-- **Azione in sospeso**: l'inchiesta ha rilevato minacce con azioni consigliate
-- **Minacce trovate**: l'inchiesta ha rilevato minacce, ma le minacce non sono disponibili in Air
-- **Corretti**: l'inchiesta è stata completata ed è stata completamente rimediata (tutte le azioni sono state approvate)
-- **Parzialmente rimediato**: l'inchiesta è terminata e sono state approvate alcune delle azioni consigliate
-- **Terminato dall'utente**: un amministratore ha terminato l'indagine
-- **Failed**: si è verificato un errore durante l'analisi che impediva di raggiungere una conclusione sulle minacce
-- **Accodamento tramite limitazione**: l'analisi è in attesa di essere analizzata a causa di limitazioni di elaborazione del sistema (per proteggere le prestazioni del servizio)
-- **Terminata mediante limitazione**: l'analisi non è stata completata in tempi sufficienti a causa di limitazioni dell'elaborazione del volume e del sistema di analisi. È possibile riattivare l'indagine selezionando il messaggio di posta elettronica in Esplora risorse e selezionando l'azione indaga.
+
+
+|Stato  |Cosa significa  |
+|---------|---------|
+|In avvio | L'analisi viene accodata per iniziare a breve |
+|In esecuzione | L'inchiesta è iniziata e sta conducendo la sua analisi |
+|Non sono state trovate minacce | L'indagine ha completato l'analisi e non sono state trovate minacce |
+|Terminato dal sistema | L'inchiesta non è stata chiusa ed è scaduta dopo 7 giorni |
+|Azione in sospeso | L'inchiesta ha rilevato minacce con azioni consigliate |
+|Minacce trovate | L'inchiesta ha rilevato minacce, ma le minacce non dispongono di azioni disponibili in AIR |
+|Corretti | L'inchiesta è stata completata ed è stata completamente rimediata (tutte le azioni sono state approvate) |
+|Parzialmente rimediato | L'inchiesta è terminata e sono state approvate alcune delle azioni consigliate |
+|Terminato dall'utente | Un amministratore ha terminato l'indagine |
+|Failed | Si è verificato un errore durante l'indagine che impediva di raggiungere una conclusione sulle minacce |
+|Accodamento tramite limitazione | L'indagine è in attesa di analisi a causa di limitazioni di elaborazione del sistema (per proteggere le prestazioni del servizio) |
+|Terminata mediante limitazione | L'inchiesta non è stata completata in tempi sufficienti a causa di limitazioni del volume e dell'elaborazione del sistema di analisi. È possibile riattivare l'indagine selezionando il messaggio di posta elettronica in Esplora risorse e selezionando l'azione indaga. |
 
 ### <a name="investigation-graph"></a>Grafico di analisi
 
@@ -189,7 +187,8 @@ Si consideri, ad esempio, lo scenario seguente. Il primo gruppo di tre messaggi 
 
 ![Messaggi di posta elettronica di analisi AEREa con dettagli a comparsa](../media/air-investigationemailpageflyoutdetails.png)
 
-* Nota: nel contesto della posta elettronica, è possibile che venga visualizzata una superficie di minaccia per l'anomalia dei volumi come parte dell'indagine. Un'anomalia del volume indica un picco nei messaggi di posta elettronica simili nei pressi del tempo dell'evento di indagine rispetto ai tempi precedenti. Questo picco del traffico di posta elettronica con caratteristiche simili (ad esempio, dominio del mittente e del soggetto, somiglianza del corpo e IP del mittente) è tipico dell'inizio delle campagne di posta elettronica o degli attacchi. Tuttavia, la massa, la posta indesiderata e le campagne di posta elettronica legittime condividono queste caratteristiche. Le anomalie dei volumi rappresentano una potenziale minaccia e, di conseguenza, potrebbero essere meno gravi rispetto alle minacce di malware o phishing identificate con motori anti-virus, detonazione o reputazione dannosa.
+> [!NOTE]
+> Nel contesto della posta elettronica, è possibile che venga visualizzata una superficie di minaccia per l'anomalia del volume come parte dell'indagine. Un'anomalia del volume indica un picco nei messaggi di posta elettronica simili nei pressi del tempo dell'evento di indagine rispetto ai tempi precedenti. Questo picco del traffico di posta elettronica con caratteristiche simili (ad esempio, dominio del mittente e del soggetto, somiglianza del corpo e IP del mittente) è tipico dell'inizio delle campagne di posta elettronica o degli attacchi. Tuttavia, la massa, la posta indesiderata e le campagne di posta elettronica legittime condividono queste caratteristiche. Le anomalie dei volumi rappresentano una potenziale minaccia e, di conseguenza, potrebbero essere meno gravi rispetto alle minacce di malware o phishing identificate con motori anti-virus, detonazione o reputazione dannosa.
 
 ### <a name="user-investigation"></a>Analisi degli utenti
 
@@ -299,12 +298,12 @@ Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che veng
 
 ## <a name="how-to-get-air"></a>Come ottenere aria
 
-Gli abbonamenti di Office 365 AIR sono inclusi nelle sottoscrizioni seguenti:
+Office 365 AIR è incluso negli abbonamenti seguenti:
 
-- Microsoft 365 Enterprise E5
-- Office 365 Enterprise E5
+- Microsoft 365 E5
+- Office 365 E5
 - Microsoft Threat Protection
-- Office 365 Advanced Threat Protection piano 2
+- Office 365 Advanced Threat Protection (Piano 2)
 
 Se non si dispone di una o più di queste sottoscrizioni, [avviare una versione di valutazione gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
 
@@ -317,3 +316,4 @@ Per ulteriori informazioni sulla disponibilità delle funzionalità, visitare la
 [Informazioni su AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 
 
 [Visitare la Guida di orientamento di Microsoft 365 per vedere cosa succederà tra breve e in uscita](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare Office 365 Advanced Threat Protection e proteggere i dati sensibili.
-ms.openlocfilehash: 00a40ceb6d51add2ebe8cc7ca4c299fe07a10b89
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: bca5400a04ca2986496c4a704289474887eb834b
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320109"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676009"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
@@ -86,7 +86,7 @@ Per creare una regola di trasporto della posta:
    
 Per ulteriori informazioni, vedere:
   
-- [Come gestire ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
+- [Come gestire ransomware](https://go.microsoft.com/fwlink/?linkid=2016501)
     
 - [Ripristinare il OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
@@ -178,7 +178,7 @@ Per creare un criterio degli allegati sicuri di ATP, guardare [questo breve vide
 |Reindirizza l'allegato sul rilevamento  <br/> |Attiva reindirizzamento (selezionare questa casella) immettere l'account di amministratore o la configurazione di una cassetta postale per la quarantena.          Applicare la selezione precedente se la ricerca di malware per gli allegati non è stata eseguita o si verifica un errore (selezionare questa casella).  <br/> |
 |Applicato a  <br/> |Il dominio del destinatario è. . . Selezionare il dominio.  <br/> |
    
-Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP di Office 365](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
 
 

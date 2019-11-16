@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Panoramica dei passaggi di configurazione per Microsoft 365 business.
-ms.openlocfilehash: 50f172c235aa06aa78fec60fc119ac7f568df308
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 3e1cf240db673a7b961ec8aa574f3e09efee476b
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575589"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676029"
 ---
 # <a name="overview-of-setup"></a>Panoramica dell’installazione
 
@@ -70,7 +70,6 @@ La maggior parte dei passaggi di configurazione può essere effettuata nell'inst
 
 ## <a name="stes-4-install-office-365-business"></a>Stes 4: installare Office 365 business
 - È possibile installare automaticamente Office nei dispositivi Windows utilizzando l' [installazione guidata](set-up.md#deploy-office-365-client-apps).
-- [Installare automaticamente Office](auto-install-or-uninstall-office.md) dall'interfaccia di amministrazione.
 - Consente agli utenti di [installare le app di Office](https://docs.microsoft.com/office365/admin/setup/install-applications) per Windows e i dispositivi.
      
 ## <a name="advanced"></a>Impostazioni avanzate
@@ -82,6 +81,6 @@ La maggior parte dei passaggi di configurazione può essere effettuata nell'inst
 
      - Se l'organizzazione utilizza Windows Server Active Directory in locale, è possibile configurare Microsoft 365 business per proteggere i dispositivi Windows 10, mantenendo comunque l'accesso alle risorse locali che richiedono l'autenticazione locale. Seguire la procedura descritta in [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 business](manage-windows-devices.md) to set this up. Questo è il metodo preferito e i dispositivi in questo stato sono denominati dispositivi ibridi di Azure AD Uniti.
 
-    - Se l'azienda dispone di un Active Directory locale che contiene alcune risorse locali, ad esempio condivisioni di file e stampanti, è possibile consentire ai dispositivi di Azure AD-join di accedere a tali risorse attenendosi alla procedura seguente: [accesso alle risorse locali da un Dispositivo di Azure AD-joined in Microsoft 365 business](access-resources.md).
+    - Se l'azienda dispone di un Active Directory locale che contiene alcune risorse locali, ad esempio condivisioni di file e stampanti, è possibile consentire ai dispositivi di Azure AD-join di accedere a tali risorse attenendosi alla procedura descritta di seguito: [accesso alle risorse locali da un dispositivo di Azure ad-join in Microsoft 365 business](access-resources.md).
 
   

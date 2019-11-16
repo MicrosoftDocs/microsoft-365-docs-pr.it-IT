@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere l'infrastruttura di rete di Contoso e come utilizza la tecnologia SD-WAN per prestazioni di rete ottimali per i servizi cloud di Microsoft 365 Enterprise.
-ms.openlocfilehash: f448296828f350560451727efdd96097862da8dc
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: 87584660805608c45b36e13804ca1dab6b8e7d17
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369547"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673172"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Servizi di rete per Contoso Corporation
-
-**Riepilogo:** comprendere l'infrastruttura di rete di Contoso e come utilizza la tecnologia SD-WAN per prestazioni di rete ottimali per i servizi cloud di Microsoft 365 Enterprise.
 
 Per adottare un'infrastruttura cloud globale, i tecnici di rete di Contoso hanno realizzato un cambiamento fondamentale nel modo in cui il traffico di rete si sposta verso i servizi cloud. Invece di un modello hub e spoke interno, incentrato sulla connettività di rete e sul traffico per il livello successivo della gerarchia di uffici di Contoso, si sono adoperati per mappare le posizioni degli utenti al punto di uscita Internet locale e le connessioni locali alla posizione di rete Microsoft 365 più vicina su Internet.
 

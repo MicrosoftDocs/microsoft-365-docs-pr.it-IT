@@ -13,16 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sul modo in cui Contoso usa le funzionalità di sicurezza in Microsoft 365 Enterprise.
-ms.openlocfilehash: ada72460adffce46951b8784d90b6cfa29b35bc3
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b49312b94aef35afc5febeae0fd4dc71b7c642af
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031101"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38672682"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Riepilogo della sicurezza di Microsoft 365 Enterprise per Contoso Corporation
-
-**Riepilogo:** informazioni sul modo in cui Contoso usa le funzionalità di sicurezza in Microsoft 365 Enterprise.
 
 Per ottenere l'approvazione della distribuzione di Microsoft 365 Enterprise dal reparto di sicurezza IT, è stata effettuata un'analisi approfondita della sicurezza. Ecco i requisiti di sicurezza di Contoso per il cloud:
 

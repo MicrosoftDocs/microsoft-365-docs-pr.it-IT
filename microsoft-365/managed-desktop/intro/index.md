@@ -7,10 +7,10 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 10/24/2018
 ms.openlocfilehash: 45baa63fc475917a10c87cc66d1346af48479645
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38012037"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Cos'è Microsoft Managed Desktop?
@@ -37,7 +37,7 @@ Microsoft Managed Desktop offre ai clienti una soluzione IT completa che delizia
 
 Microsoft Managed Desktop offre la migliore esperienza utente con la tecnologia più recente, il tutto supportato da Microsoft. 
 
-## <a name="additional-resources"></a>Altre risorse
+## <a name="additional-resources"></a>Risorse aggiuntive
 - [Descrizione del servizio Microsoft Managed Desktop](../service-description/index.md)
 - [Prerequisiti di Microsoft Managed Desktop](../get-ready/prerequisites.md).
 

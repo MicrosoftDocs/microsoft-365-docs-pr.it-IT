@@ -12,18 +12,20 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per creare e utilizzare le etichette di conservazione di Office 365 nei documenti nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: 1bcd3ab2d8069ad85d48ecf682d3b7d49e7cf739
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: e0186bcfc786356b34aff45b1b1e67f54dd40001
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639786"
+ms.locfileid: "38672662"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Classificazione dei dati per l'ambiente di testing Microsoft 365 Enterprise
 
+*Questa guida del laboratorio di testing può essere utilizzata per ambienti di testing Microsoft 365 Enterprise e Office 365 Enterprise.*
+
 Con le istruzioni riportate in questo articolo, è possibile configurare la classificazione dei dati utilizzando le etichette di conservazione di Office 365 nell'ambiente di testing di Microsoft 365 Enterprise.
 
-![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guide del laboratorio di testing per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.

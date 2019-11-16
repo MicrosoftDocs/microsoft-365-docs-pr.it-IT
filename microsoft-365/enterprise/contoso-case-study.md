@@ -13,16 +13,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Modalità di adozione di Microsoft 365 Enterprise da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale.
-ms.openlocfilehash: 0d5453a5f55314207e0c8403837a83dd66eb70d3
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: e7c79612b18bdd21d8fd137abe11f8f26cfd6eff
+ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369617"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38673222"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Enterprise per Contoso Corporation
-
-**Riepilogo:** modalità di adozione di Microsoft 365 Enterprise da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale.
 
 Microsoft 365 Enterprise è la principale offerta cloud di Microsoft che combina le app e i servizi per la produttività basati sul clous e le funzionalità di Windows 10 Enterprise e Advanced Security in una soluzione completa e intelligente che consente a tutti essere creativi e di collaborare in modo sicuro. 
 
