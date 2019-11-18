@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: La procedura per distribuire l'infrastruttura di Office 365 ProPlus per Microsoft 365 Enterprise.
-ms.openlocfilehash: 05615c4c9020326da6b2e3e97b162dbb8d132854
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a51a37a321b450d233d7f9fd6da28b5828514d13
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033651"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627450"
 ---
 # <a name="phase-4-office-365-proplus"></a>Fase 4: Office 365 ProPlus
 
@@ -44,7 +44,7 @@ Prima di distribuire Office 365 ProPlus, seguire le istruzioni in [Valutazione d
 
 Dopo la valutazione dell'ambiente, seguire le istruzioni in [Pianificazione della distribuzione di Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus) per creare un piano di distribuzione. Include le decisioni seguenti: 
 
-- Come distribuire Office, incluso lo strumento da usare (ad esempio, System Center Configuration Manager o lo strumento di distribuzione di Office) e da dove installare Office
+- Come distribuire Office, incluso lo strumento da usare (ad esempio, Microsoft Endpoint Configuration Manager o lo strumento di distribuzione di Office) e da dove installare Office
 - Come gestire gli aggiornamenti in Office
 - Quali canali di aggiornamento usare (i canali di aggiornamento di Office controllano la frequenza con cui gli utenti ricevono aggiornamenti delle funzionalità nelle proprie applicazioni Office)
 - I pacchetti di installazione di Office e i gruppi di distribuzione da usare, tra cui le applicazioni di Office e le lingue che devono essere installate per determinati utenti
@@ -55,7 +55,7 @@ L'[articolo sulla pianificazione](https://docs.microsoft.com/DeployOffice/plan-o
 
 In base al piano di distribuzione, scegliere la modalità di distribuzione:
 
-- **[Distribuire Office 365 ProPlus con System Center Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager):** gestire la distribuzione con Configuration Manager e scaricare e distribuire Office dai punti di distribuzione sulla rete
+- **[Distribuire Office 365 ProPlus con Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager):** gestire la distribuzione con Configuration Manager e scaricare e distribuire Office dai punti di distribuzione sulla rete.
 
 - **[Distribuire Office 365 ProPlus con lo strumento ODT dal cloud](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud):** gestire la distribuzione con lo strumento ODT e installare Office nei dispositivi client direttamente dalla rete CDN di Office
  

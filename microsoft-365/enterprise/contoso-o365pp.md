@@ -3,7 +3,7 @@ title: Distribuzione di Office 365 ProPlus per Contoso
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/13/2018
+ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,17 +12,17 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Informazioni sul modo in cui Contoso usa System Center Configuration Manager per distribuire Office 365 ProPlus.
-ms.openlocfilehash: 8367f6456b6e32c62e03f611114177f4dbe6622f
-ms.sourcegitcommit: d9b462e035416bfa4b3d42467902c75859c55381
+description: Informazioni sul modo in cui Contoso usa Microsoft Endpoint Configuration Manager per distribuire Office 365 ProPlus.
+ms.openlocfilehash: ef13ac14be68b12e9483bd20f385e0cd16f51152
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054998"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627352"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Distribuzione di Office 365 ProPlus per Contoso
 
-**Riepilogo:** informazioni sul modo in cui Contoso usa System Center Configuration Manager per distribuire Office 365 ProPlus.
+**Riepilogo:** Informazioni sul modo in cui Contoso usa Microsoft Endpoint Configuration Manager per distribuire Office 365 ProPlus.
 
 Contoso ha aggiornato i propri PC a Windows 10 Enterprise e Office 365 ProPlus per offrire una collaborazione più efficiente, una maggiore sicurezza e un'esperienza desktop più moderna. Dopo aver valutato le esigenze aziendali e dell'infrastruttura, Contoso ha identificato i seguenti requisiti chiave per la distribuzione:
 
@@ -33,7 +33,7 @@ Contoso ha aggiornato i propri PC a Windows 10 Enterprise e Office 365 ProPlus p
 
 ## <a name="deployment-tools"></a>Strumenti di distribuzione
 
-In base ai propri requisiti, Contoso ha scelto di distribuire Windows e Office con System Center Configuration Manager (Current Branch). Configuration Manager è in grado di scalare per gli ambienti di grandi dimensioni e fornisce controllo esteso sull'installazione, gli aggiornamenti e le impostazioni. Inoltre, dispone di funzionalità integrate per semplificare e rendere più efficiente la distribuzione e la gestione di Office, tra cui:
+In base ai propri requisiti, Contoso ha scelto di distribuire Windows 10 Enterprise e Office 365 ProPlus con Configuration Manager (Current Branch). Configuration Manager si adatta ad ambienti di grandi dimensioni e fornisce un controllo completo sull'installazione, gli aggiornamenti e le impostazioni. Inoltre, dispone di funzionalità integrate per semplificare e rendere più efficiente la distribuzione e la gestione di Office, tra cui:
 
 - Peer cache, che può aiutare con una capacità di rete limitata quando si effettua la distribuzione su dispositivi in posizioni remote
 - Il dashboard di gestione client di Office, che semplifica la distribuzione di Office e il monitoraggio degli aggiornamenti e consente agli amministratori di accedere alle funzionalità di gestione e distribuzione più recenti
@@ -73,9 +73,13 @@ Per completare la distribuzione di Office, Contoso ha implementato la procedura 
 
 Poiché Contoso ha scelto di aggiornare automaticamente i dispositivi dal cloud, non è stato necessario gestire il processo in Configuration Manager. I dispositivi vengono aggiornati automaticamente direttamente dal cloud basato sul canale di aggiornamento che è stato definito come parte della distribuzione iniziale. 
 
+Ecco l'architettura di distribuzione degli aggiornamenti continui e di installazione di Office 365 ProPlus di Contoso.
+
+![Infrastruttura di distribuzione di Office 365 ProPlus di Contoso](./media/contoso-o365pp/contoso-o365pp-fig1.png)
+ 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Informazioni](contoso-mdm.md) su come Contoso usa Intune in Microsoft 365 Enterprise per gestire i suoi dispositivi e le app in esecuzione su di essi nell'organizzazione.
+[Informazioni su](contoso-mdm.md) come Contoso usa Microsoft Intune in Microsoft 365 Enterprise per gestire i dispositivi e le app in esecuzione su di essi nell'organizzazione.
 
 ## <a name="see-also"></a>Vedere anche
 

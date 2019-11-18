@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Questo articolo descrive come Office 365 riduce gli attacchi di phishing che usoano domini di mittenti contraffatti, vale a dire che sono oggetto di spoofing. Per ottenere questo risultato analizza i messaggi e blocca quelli che non possono essere autenticati né tramite metodi di autenticazione di posta elettronica standard né con altre tecniche di reputazione del mittente. Questa modifica è stata implementata per ridurre il numero di attacchi di phishing a cui sono esposte le organizzazioni in Office 365.
-ms.openlocfilehash: 7b793d3244343111f1894ff8aae77c2d6ea8f4f3
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: d435df901bf460c58a5b49e82458be1d6cf39eaf
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034287"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38640805"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 
@@ -59,7 +59,7 @@ In secondo luogo, i messaggi contraffatti creano incertezza negli utenti che con
   
 Il messaggio proviene da Microsoft ma, allo stesso tempo, gli utenti ricevono messaggi di phishing che potrebbero indurli a fare clic su un collegamento e a lasciare le credenziali, a scaricare malware o rispondere a un messaggio con informazioni sensibili. Poiché è difficile capire la differenza tra una reimpostazione della password autentica e una contraffatta, molti utenti ignorano questi messaggi, li segnalano come posta indesiderata o li segnalano inutilmente a Microsoft come tentativi di phishing.
 
-Per interrompere lo spoofing, le industrie che gestiscono i filtri di posta elettronica hanno sviluppato dei protocolli di autenticazione di posta elettronica, come i protocolli [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email), e [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC impedisce lo spoofing analizzando il mittente di un messaggio, quello visualizzato dall’utente nel client di posta elettronica (negli esempi precedenti, è service.outlook.com, outlook.com e accountprotection.microsoft.com), con il dominio che ha superato i controlli SPF o DKIM. Ovvero, il dominio visualizzato dall'utente è stato autenticato e pertanto non è contraffatto. Per maggiori dettagli, consultare la sezione "*Informazioni sul motivo per cui l’autenticazione della posta elettronica non è sempre sufficiente per interrompere lo spoofing"* più avanti in questo articolo.
+Per interrompere lo spoofing, le industrie che gestiscono i filtri di posta elettronica hanno sviluppato dei protocolli di autenticazione di posta elettronica, come i protocolli [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email), e [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC impedisce allo spoofing di esaminare il mittente di un messaggio. Ovvero il mittente che gli utenti vedono nel proprio client di posta elettronica come service.outlook.com, outlook.com e accountprotection.microsoft.com negli esempi precedenti. Inoltre, gli utenti possono anche vedere che il dominio ha superato i controlli SPF o DKIM, il che significa che il dominio è stato autenticato e pertanto non è stato contraffatto. Per maggiori dettagli, consultare la sezione "*Informazioni sul motivo per cui l’autenticazione della posta elettronica non è sempre sufficiente per interrompere lo spoofing"* più avanti in questo articolo.
   
 Tuttavia, il problema è che i record di autenticazione della posta elettronica sono facoltativi, non necessari. Di conseguenza, mentre i domini con criteri di autenticazione sicuri come microsoft.com e skype.com sono protetti dallo spoofing, i domini che pubblicano con criteri di autenticazione più deboli o senza criteri sono obiettivi che possono essere contraffatti. A partire da marzo 2018, solo il 9% dei domini delle aziende Fortune 500 ha pubblicato con criteri di autenticazione di posta elettronica sicuri.  Il restante 91% può essere contraffatto da un truffatore e, a meno che il filtro della posta elettronica non lo rilevi utilizzando un altro criterio, il messaggio contraffatto può essere recapitato a un utente finale per ingannarlo:
   

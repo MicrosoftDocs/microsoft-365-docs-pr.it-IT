@@ -12,24 +12,24 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendere in che modo Contoso ha utilizzato System Center Configuration Manager per la distribuzione degli aggiornamenti sul posto per Windows 10 Enterprise.
-ms.openlocfilehash: a63a973bed4bf62ebf7c2534d4c55a4e3b8ef60c
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+description: Comprendere in che modo Contoso ha usato Microsoft Endpoint Configuration Manager per la distribuzione degli aggiornamenti sul posto per Windows 10 Enterprise.
+ms.openlocfilehash: a36e933d31ac6d629b649f07d6b8c9a4fe950ec8
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370473"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627332"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Distribuzione di Windows 10 Enterprise per Contoso
 
-**Riepilogo:** comprendere in che modo Contoso ha utilizzato System Center Configuration Manager per la distribuzione degli aggiornamenti sul posto per Windows 10 Enterprise.
+**Riepilogo:** Comprendere in che modo Contoso ha usato Microsoft Endpoint Configuration Manager per la distribuzione degli aggiornamenti sul posto per Windows 10 Enterprise.
 
 Prima dell'implementazione estesa di Microsoft 365 Enterprise, Contoso disponeva di PC compatibili con Windows e dispositivi con una combinazione di Windows 7 (10%), Windows 8.1 (65%) e Windows 10 (25%). Contoso voleva aggiornare i PC a Windows 10 Enterprise per usufruire della maggiore sicurezza e della riduzione dei costi IT generati dalle distribuzioni automatiche degli aggiornamenti. 
 
 Dopo aver valutato la propria infrastruttura e le proprie esigenze aziendali, Contoso ha identificato i seguenti requisiti chiave per la distribuzione:
 
 - Esecuzione di Windows 10 Enterprise sul maggior numero possibile di computer e dispositivi
-- Sfruttamento dell'infrastruttura System Center Configuration Manager esistente per l'implementazione degli aggiornamenti sul posto
+- Sfruttamento dell'infrastruttura di Configuration Manager esistente per l'implementazione degli aggiornamenti sul posto
 - Controllo sulle versioni di Windows 10 Enterprise da distribuire e sugli aggiornamenti che vengono eseguiti tramite gli anelli
 - PC e dispositivi devono rimanere sempre aggiornati con costi di amministrazione dell'IT minimi e un impatto minimo sugli utenti finali
 
@@ -51,7 +51,7 @@ Prima e durante gli aggiornamenti sul posto di Windows 10 Enterprise, Contoso ut
 
   Identifica i dispositivi che si arrestano spesso in modo anomalo e quindi potrebbe essere necessario ricreare o sostituire e i driver di dispositivo che causano arresti anomali, con suggerimenti sulle versioni alternative di tali driver che potrebbero ridurre il numero di errori. Notifica la presenza di configurazioni errate di Windows Information Protection con invio di messaggi agli utenti finali.
  
-Contoso dispone di un'infrastruttura System Center Configuration Manager (Current Branch). Configuration Manager è in grado di scalare per gli ambienti di grandi dimensioni e fornisce controllo esteso sull'installazione, gli aggiornamenti e le impostazioni. Inoltre, dispone di funzionalità integrate per semplificare e rendere più efficiente la distribuzione e la gestione di Windows 10 Enterprise.
+Contoso dispone di un'infrastruttura di Configuration Manager (Current Branch) esistente. Configuration Manager si adatta ad ambienti di grandi dimensioni e fornisce un controllo completo sull'installazione, gli aggiornamenti e le impostazioni. Inoltre, dispone di funzionalità integrate per semplificare e rendere più efficiente la distribuzione e la gestione di Windows 10 Enterprise.
 
 ## <a name="planning-process"></a>Processo di pianificazione
 
@@ -83,7 +83,7 @@ Ecco l'architettura di distribuzione degli aggiornamenti sul posto e degli aggio
 
 Questa infrastruttura è costituita da:
 
-- System Center Configuration Manager, che effettua le seguenti operazioni:
+- Configuration Manager, che:
   - Ottiene le immagini per i pacchetti di Windows 10 Enterprise da Microsoft Volume Licensing Center in Microsoft Network.
   - Si tratta del punto di amministrazione centrale per i pacchetti di distribuzione.
 - Punti di distribuzione regionali che in genere si trovano negli hub regionali di Contoso.
@@ -91,7 +91,7 @@ Questa infrastruttura è costituita da:
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Informazioni su](contoso-o365pp.md) come Contoso si avvale dell'infrastruttura di System Center Configuration Manager per distribuire e mantenere aggiornato Office 365 ProPlus nell'organizzazione. 
+[Informazioni su](contoso-o365pp.md) come Contoso si avvale dell'infrastruttura di Configuration Manager per distribuire e mantenere aggiornato Office 365 ProPlus nell'organizzazione. 
 
 ## <a name="see-also"></a>Vedere anche
 

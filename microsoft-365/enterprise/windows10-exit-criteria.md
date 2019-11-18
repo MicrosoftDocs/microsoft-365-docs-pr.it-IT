@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Verificare che la configurazione soddisfi i criteri di Microsoft 365 Enterprise per Windows 10 Enterprise.
-ms.openlocfilehash: 268423de91309947381509017d386c62a5ef23da
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 98dd4b71f1c2af6d72580066d73e75dfd4aa60ff
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37372807"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38627530"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Fase 3: criteri uscita dell'infrastruttura Windows 10 Enterprise
 
@@ -99,14 +99,14 @@ Se necessario, il [Passaggio 4](windows10-enable-windows-analytics.md) può aiut
 <a name="crit-windows10-step5a"></a>
 ## <a name="required-you-are-using-windows-defender-antivirus-or-your-own-antimalware-solution"></a>Obbligatorio: utilizzo di Windows Defender Antivirus o la propria soluzione antimalware
 
-Windows Defender Antivirus o la propria soluzione antivirus sono stati distribuiti per proteggere i dispositivi che eseguono Windows 10 Enterprise da software dannoso. Se è stato distribuito Windows Defender Antivirus, è stato implementato un metodo di segnalazione, come System Center Configuration Manager o Microsoft Intune, per monitorare eventi e attività antivirus.
+Windows Defender Antivirus o la propria soluzione antivirus sono stati distribuiti per proteggere i dispositivi che eseguono Windows 10 Enterprise da software dannoso. Se è stato distribuito Windows Defender Antivirus, è stato implementato un metodo di segnalazione, come Microsoft Endpoint Configuration Manager o Microsoft Intune, per monitorare eventi e attività antivirus.
 
 Se necessario, il [Passaggio 5](windows10-enable-security-features.md#windows10-sec-av) può aiutare a soddisfare questo requisito.
 
 <a name="crit-windows10-step5b"></a>
 ## <a name="required-you-are-using-windows-defender-exploit-guard"></a>Obbligatorio: utilizzo di Windows Defender Exploit Guard
 
-Windows Defender Exploit Guard è stato distribuito per proteggere i dispositivi che eseguono Windows 10 Enterprise da intrusioni ed è stato implementato un metodo di segnalazione, come System Center Configuration Manager o Microsoft Intune, per monitorare eventi e attività di intrusione.
+Windows Defender Exploit Guard è stato distribuito per proteggere i dispositivi che eseguono Windows 10 Enterprise da intrusioni ed è stato implementato un metodo di segnalazione, come Configuration Manager o Microsoft Intune, per monitorare eventi e attività di intrusione.
 
 Se necessario, il [Passaggio 5](windows10-enable-security-features.md#windows10-sec-eg) può aiutare a soddisfare questo requisito.
 
