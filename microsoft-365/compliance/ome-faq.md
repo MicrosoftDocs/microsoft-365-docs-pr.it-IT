@@ -3,7 +3,7 @@ title: Domande frequenti sulla crittografia dei messaggi di Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/11/2019
+ms.date: 11/14/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -12,22 +12,17 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Domande su come funzionano le nuove funzionalità di protezione dei messaggi di Office 365? Controllare la risposta qui.
-ms.openlocfilehash: 1625ecd3f2c7991e2726539bcfa0c772d1ffea59
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8fea73b73ab49dcfb0ac67935a9e027e87eb721a
+ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084447"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38686631"
 ---
 # <a name="office-365-message-encryption-faq"></a>Domande frequenti su Office 365 Message Encryption
 
 Domande su come funzionano le nuove funzionalità di protezione dei messaggi di Office 365? Controllare la risposta qui. Inoltre, vedere le [domande frequenti sulla protezione dei dati in Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) per le risposte alle domande sul servizio di protezione dei dati, Azure Rights Management, in Azure Information Protection.
 
-||
-|:-----|
-|Questo articolo fa parte di una serie più ampia di articoli sulla crittografia dei messaggi di Office 365. Questo articolo è destinato agli amministratori e professionisti IT. Se si cercano solo informazioni sull'invio o la ricezione di un messaggio crittografato, vedere l'elenco degli articoli in [Office 365 Message Encryption (OME)](ome.md) e individuare l'articolo che meglio si adatta alle proprie esigenze. |
-||
-  
 ## <a name="what-is-office-365-message-encryption-ome"></a>Che cos'è la crittografia dei messaggi (OME) di Office 365?
 
 OME combina la crittografia della posta elettronica e le funzionalità di gestione dei diritti. Le funzionalità di Rights management si basano sulla tecnologia Azure Information Protection.
@@ -42,7 +37,7 @@ OME combina la crittografia della posta elettronica e le funzionalità di gestio
 
 - Se si utilizza Exchange Online con Active Directory Rights Management Service (AD RMS), non è possibile abilitare immediatamente queste nuove funzionalità. Al contrario, è necessario [migrare ad RMS in Azure Information Protection per](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) primo. Dopo aver completato la migrazione, è possibile configurare correttamente OME.
 
-    Se si sceglie di continuare a utilizzare AD RMS locale con Exchange Online invece di eseguire la migrazione a Azure Information Protection, non sarà possibile utilizzare queste nuove funzionalità.
+  Se si sceglie di continuare a utilizzare AD RMS locale con Exchange Online invece di eseguire la migrazione a Azure Information Protection, non sarà possibile utilizzare queste nuove funzionalità.
 
 ## <a name="what-subscriptions-do-i-need-to-use-the-new-ome-capabilities"></a>Quali abbonamenti sono necessari per utilizzare le nuove funzionalità OME?
 
@@ -64,7 +59,7 @@ Per ulteriori informazioni su BYOK, vedere [Planning and implementing your Azure
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>L'approccio di Microsoft alle richieste di dati di terze parti, ad esempio le citazioni, è stato modificato da OME e BYOK con Azure Information Protection?
 
-No. OME e l'opzione per fornire e controllare le proprie chiavi di crittografia, denominate BYOK, da Azure Information Protection non sono state progettate per rispondere alle citazioni di polizia. OME, con BYOK per Azure Information Protection, è stato ideato per i clienti con conformità. Microsoft richiede molto sul serio le richieste di terze parti per i dati dei clienti. Come provider di servizi cloud, è sempre favorevole alla privacy dei dati del cliente. Nel caso in cui venga visualizzato un mandato di comparizione, si cerca sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il Blog di Brad Smith: [proteggere i dati dei clienti dallo spionaggio governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Pubblicheremo periodicamente informazioni dettagliate sulla richiesta ricevuta. Per ulteriori informazioni sulle richieste di dati di terze parti, vedere Redirecting [to government and Law Enforcement richieste to Access Customer data](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) on the Microsoft Trust Center. Vedere inoltre la sezione relativa alla divulgazione dei dati del cliente nelle [condizioni di servizi online (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
+No. OME e l'opzione per fornire e controllare le proprie chiavi di crittografia, denominate BYOK, da Azure Information Protection non sono state progettate per rispondere alle citazioni di polizia. OME, con BYOK per Azure Information Protection, è stato ideato per i clienti con conformità. Microsoft richiede molto sul serio le richieste di terze parti per i dati dei clienti. Come provider di servizi cloud, è sempre favorevole alla privacy dei dati del cliente. Nel caso in cui venga visualizzato un mandato di comparizione, si cerca sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il Blog di Brad Smith: [proteggere i dati dei clienti dallo spionaggio governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Pubblicheremo periodicamente informazioni dettagliate sulla richiesta ricevuta. Per ulteriori informazioni sulle richieste di dati di terze parti, vedere Redirecting [to government and Law Enforcement richieste to Access Customer data](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) on the Microsoft Trust Center. Vedere inoltre la sezione relativa alla divulgazione dei dati del cliente nelle [condizioni di servizi online (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>In che modo questa funzionalità è correlata alle funzionalità di crittografia dei messaggi di Office 365 (OME) e Information Rights Management (IRM) legacy?
 
@@ -106,13 +101,19 @@ Gli utenti locali possono inviare messaggi crittografati tramite le regole del f
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quali tipi di file sono supportati come allegati nei messaggi di posta elettronica protetti? Gli allegati ereditano i criteri di protezione associati ai messaggi di posta elettronica protetti?
 
-È possibile allegare qualsiasi tipo di file a un messaggio protetto, tuttavia i criteri di protezione vengono applicati solo nei formati di file menzionati in [questo](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)articolo. 
+È possibile allegare qualsiasi tipo di file a un messaggio protetto, tuttavia i criteri di protezione vengono applicati solo nei formati di file menzionati in [questo](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)articolo.
   
 Se è supportato un formato di file, ad esempio un file di Word, Excel o PowerPoint, il file è sempre protetto, anche dopo che l'allegato è stato scaricato dal destinatario. Ad esempio, se un allegato è protetto da non inoltrare e il destinatario originale Scarica e inoltra l'allegato a un nuovo destinatario, il nuovo destinatario non sarà in grado di aprire il file protetto.
   
 ## <a name="are-pdf-file-attachments-supported"></a>Gli allegati di file PDF sono supportati?
 
-Se si collega un file PDF a un messaggio protetto, il messaggio verrà protetto, ma non verrà applicata alcuna protezione aggiuntiva al file PDF dopo che il destinatario lo ha ricevuto. Questo significa che il destinatario può salvare come, inoltrare, copiare e stampare il file PDF.
+Sì! È possibile abilitare la crittografia per gli allegati PDF per le organizzazioni di Office 365. Per abilitare la crittografia per gli allegati PDF, eseguire il comando seguente in [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+
+```powershell
+Set-IRMConfiguration -EnablePdfEncryption $true
+```
+
+La crittografia in formato PDF consente di proteggere i documenti PDF sensibili tramite una comunicazione sicura o una collaborazione sicura. I messaggi ereditano la protezione OME del criterio di prevenzione della perdita di dati (DLP) o della regola del flusso di posta in Exchange Online. Se un utente di Outlook o Outlook sul Web collega un allegato PDF non protetto a un messaggio protetto, il messaggio eredita la protezione del messaggio. Gli utenti possono aprire solo gli allegati crittografati nelle applicazioni che supportano i file PDF protetti, ad esempio il portale OME e il Visualizzatore di informazioni di Azure Information Protection.
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Gli allegati di OneDrive for business sono supportati?
 
@@ -120,24 +121,36 @@ Not yet. Gli allegati di OneDrive for business non sono supportati e gli utenti 
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>È possibile crittografare automaticamente i messaggi impostando i criteri?
 
-Sì. Utilizzare le regole del flusso di posta in Exchange Online per crittografare automaticamente un messaggio in base a determinate condizioni. Ad esempio, è possibile creare criteri basati sull'ID destinatario, sul dominio del destinatario o sul contenuto del corpo o dell'oggetto del messaggio. Vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365.](define-mail-flow-rules-to-encrypt-email.md)
+Sì. Utilizzare le regole del flusso di posta in Exchange Online per crittografare automaticamente un messaggio in base a determinate condizioni. Ad esempio, è possibile creare criteri basati sull'ID destinatario, sul dominio del destinatario o sul contenuto del corpo o dell'oggetto del messaggio. Vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md).
   
+## <a name="can-i-automatically-remove-encryption-on-incoming-and-outgoing-mail"></a>È possibile rimuovere automaticamente la crittografia sulla posta in arrivo e in uscita?
+
+Gli amministratori possono impostare una regola del flusso di posta per rimuovere la crittografia per la posta in uscita. Non è possibile impostare una regola per rimuovere la crittografia per la posta in arrivo.
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>È possibile crittografare automaticamente i messaggi mediante l'impostazione di criteri di prevenzione della perdita di dati ( &amp; DLP) tramite il Centro sicurezza e conformità?
 
 Sì! È possibile configurare le regole del flusso di posta in Exchange Online o utilizzando DLP nel centro &amp; sicurezza e conformità.
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>È possibile aprire i messaggi crittografati inviati a una cassetta postale condivisa?
 
-I messaggi attualmente crittografati non sono supportati per una cassetta postale condivisa.
+Sì! I messaggi crittografati sono supportati per una cassetta postale condivisa. Sono valide alcune limitazioni.
+
+## <a name="is-delegated-access-supported"></a>L'accesso delegato è supportato?
+
+Non in questo momento.
 
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>È possibile personalizzare i messaggi crittografati con il marchio dell'azienda?
 
-Sì! Per informazioni sulla personalizzazione dei messaggi di posta elettronica e del portale OME, vedere Aggiungere il marchio dell'organizzazione ai messaggi crittografati. Vedere [aggiungere il marchio dell'organizzazione ai messaggi crittografati.](add-your-organization-brand-to-encrypted-messages.md)
+Sì! Per informazioni sulla personalizzazione dei messaggi di posta elettronica e del portale OME, vedere Aggiungere il marchio dell'organizzazione ai messaggi crittografati. Vedere [aggiungere il marchio dell'organizzazione ai messaggi crittografati](add-your-organization-brand-to-encrypted-messages.md).
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Esistono funzionalità di creazione di report o Insight per i messaggi di posta elettronica crittografati?
 
-È presente un rapporto di crittografia nel centro sicurezza e conformità. Vedere [visualizzare i report sulla sicurezza della posta elettronica nel centro sicurezza & Compliance.](view-email-security-reports.md)
+È presente un rapporto di crittografia nel centro sicurezza e conformità. Vedere [visualizzare i report sulla sicurezza della posta elettronica nel centro sicurezza & Compliance](view-email-security-reports.md).
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>È possibile utilizzare la crittografia dei messaggi con funzionalità di conformità, ad esempio eDiscovery?
 
 Sì. Tutti i messaggi di posta elettronica crittografati sono individuabili dalle funzionalità di conformità di Office 365.
+
+## <a name="can-i-remove-encryption-from-email"></a>È possibile rimuovere la crittografia dal messaggio di posta elettronica?
+
+Gli amministratori possono impostare una regola del flusso di posta per rimuovere la crittografia dalla posta in uscita. Non è possibile rimuovere la crittografia tramite una regola del flusso di posta dai messaggi in arrivo.

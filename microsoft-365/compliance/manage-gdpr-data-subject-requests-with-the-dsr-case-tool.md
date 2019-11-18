@@ -13,14 +13,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Il GDPR fornisce ai cittadini dell'Unione europea (denominati soggetti dei dati) diritti specifici per i loro dati personali; tali diritti includono l'ottenimento di copie, la richiesta di modifiche, la limitazione dell'elaborazione, l'eliminazione o la ricezione in formato elettronico. Una richiesta formale da parte di un soggetto dei dati di intraprendere un'azione sui loro dati personali è denominata richiesta del soggetto dei dati o DSR. È possibile utilizzare i casi DSR nel centro conformità di Office 365 e Microsoft 365 per gestire le indagini DSR dell'organizzazione.
-ms.openlocfilehash: 8a4882070509991ca91403c96b55825fac3a2536
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b1e6eac17c95e3d0fe638711483802c829fdd56
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083808"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686553"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR nel centro sicurezza & Compliance
 
@@ -103,7 +104,7 @@ Il passaggio successivo consiste nel creare un caso DSR. Quando si crea un caso,
   
     A questo punto, è possibile eseguire una delle due operazioni seguenti:
     
-    un. Facendo clic su **Mostra i risultati della ricerca** viene avviata la ricerca. Questa è la selezione predefinita. La ricerca incorporata eseguita quando si seleziona questa opzione e i risultati restituiti vengono descritti nel passaggio 3.
+    a. Facendo clic su **Mostra i risultati della ricerca** viene avviata la ricerca. Questa è la selezione predefinita. La ricerca incorporata eseguita quando si seleziona questa opzione e i risultati restituiti vengono descritti nel passaggio 3.
     
     b. Se si fa clic su **fine** , il nuovo caso DSR viene chiuso senza avviare la ricerca incorporata. Quando si seleziona questa opzione, il nuovo caso DSR viene visualizzato nella pagina **richieste del soggetto dei dati** .
     
@@ -133,13 +134,13 @@ Dopo aver creato un caso DSR e aver aggiunto membri, il passaggio successivo con
     
 Di seguito è riportato l'aspetto della query con parole chiave per la ricerca incorporata che viene creata automaticamente quando si crea un caso DSR.
   
-```
+```powershell
 participants:"<email address>" OR author:"<display name>" OR createdby:"<display name>"
 ```
 
 Ad esempio, se il nome del soggetto dei dati è ina Fanucci, la query di parole chiave avrà l'aspetto seguente:
   
-```
+```powershell
 participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 ```
 
@@ -198,7 +199,7 @@ Il computer utilizzato per esportare i dati deve soddisfare i seguenti requisiti
     
     ![Configurare le impostazioni di esportazione](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
-    un. In **Opzioni di output**selezionare la prima opzione (**tutti gli elementi, ad eccezione di quelli che dispongono di un formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi**) per esportare solo gli elementi indicizzati. Il motivo per cui non si desidera esportare gli elementi parzialmente indicizzati dalla ricerca integrata è dato che verranno esportati anche gli elementi parzialmente indicizzati provenienti da altri utenti. Per esportare solo gli elementi parzialmente indicizzati per il soggetto dei dati, si consiglia di creare una ricerca distinta. Per ulteriori informazioni, vedere [esportare gli elementi parzialmente indicizzati](#exporting-partially-indexed-items) nella sezione "ulteriori informazioni sull'utilizzo dello strumento del caso DSR".
+    a. In **Opzioni di output**selezionare la prima opzione (**tutti gli elementi, ad eccezione di quelli che dispongono di un formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi**) per esportare solo gli elementi indicizzati. Il motivo per cui non si desidera esportare gli elementi parzialmente indicizzati dalla ricerca integrata è dato che verranno esportati anche gli elementi parzialmente indicizzati provenienti da altri utenti. Per esportare solo gli elementi parzialmente indicizzati per il soggetto dei dati, si consiglia di creare una ricerca distinta. Per ulteriori informazioni, vedere [esportare gli elementi parzialmente indicizzati](#exporting-partially-indexed-items) nella sezione "ulteriori informazioni sull'utilizzo dello strumento del caso DSR".
     
     b. In **Esporta contenuto di Exchange come**selezionare la terza opzione, **un file PST contenente tutti i messaggi in una singola cartella**. Poiché alcuni dei risultati possono essere per gli elementi originati dalla cassetta postale di un altro utente, questa opzione consente di elencare solo l'elemento in una singola cartella senza indicare la cassetta postale effettiva ed è l'opzione migliore da utilizzare per la deduplicazione dei risultati come consigliato nell'elemento successivo. . Questa opzione consente inoltre agli elementi di revisione del soggetto dei dati in ordine cronologico (gli elementi sono ordinati in base alla data di invio) senza dover esplorare la struttura delle cartelle della cassetta postale originale per ogni elemento.
     
@@ -263,7 +264,7 @@ Per modificare i percorsi di contenuto per la ricerca:
     
     ![Pagina Modifica riquadro a comparsa posizioni](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
   
-    un. La sezione attiva/disattiva in **Seleziona tutto** in cassetta postale nella parte superiore della pagina a comparsa è selezionata, che indica che tutte le cassette postali vengono cercate. Per limitare l'ambito della ricerca, fare clic sull'interruttore per deselezionarlo e quindi fare clic su **Scegli utenti, gruppi o team** e scegliere cassette postali specifiche per la ricerca.
+    a. La sezione attiva/disattiva in **Seleziona tutto** in cassetta postale nella parte superiore della pagina a comparsa è selezionata, che indica che tutte le cassette postali vengono cercate. Per limitare l'ambito della ricerca, fare clic sull'interruttore per deselezionarlo e quindi fare clic su **Scegli utenti, gruppi o team** e scegliere cassette postali specifiche per la ricerca.
     
     b. L'opzione toggle in **Seleziona tutto** nella sezione siti al centro della pagina a comparsa è selezionata, che indica che vengono ricercati tutti i siti. Per limitare la ricerca ai siti selezionati, deselezionare l'opzione toggle e quindi fare clic su **Scegli siti**. È necessario aggiungere ogni sito specifico di cui si desidera eseguire la ricerca, incluso l'account OneDrive del soggetto dei dati.
     
@@ -272,7 +273,7 @@ Per modificare i percorsi di contenuto per la ricerca:
 3. Se si modificano i percorsi di contenuto nella ricerca incorporata, fare clic su **Salva &amp; esecuzione** per riavviare la ricerca. 
 
 > [!NOTE]
-> Quando si esegue una ricerca in tutte le posizioni delle cassette postali o solo in cassette postali specifiche, quando si esportano i risultati della ricerca vengono inclusi i dati di altre applicazioni di Office 365 salvate nelle cassette postali degli utenti. Questi dati non vengono inclusi nei risultati della ricerca stimati e non sono disponibili per l'anteprima. Ma è incluso quando si esportano e si scaricano i risultati della ricerca. Per ulteriori informazioni sulle applicazioni che archiviano i dati nella cassetta postale di un utente, vedere il [contenuto archiviato nelle cassette postali di Exchange Online](what-is-stored-in-exo-mailbox.md).
+> Quando si esegue una ricerca in tutte le posizioni delle cassette postali o solo in cassette postali specifiche, quando si esportano i risultati della ricerca vengono inclusi i dati di altre applicazioni di Office 365 salvate nelle cassette postali degli utenti. I dati non vengono inclusi nei risultati della ricerca stimati e non vengono visualizzati in anteprima. Ma è incluso quando si esportano e si scaricano i risultati della ricerca. Per ulteriori informazioni sulle applicazioni che archiviano i dati nella cassetta postale di un utente, vedere il [contenuto archiviato nelle cassette postali di Exchange Online](what-is-stored-in-exo-mailbox.md).
   
 ## <a name="more-information-about-using-the-dsr-case-tool"></a>Ulteriori informazioni sull'utilizzo dello strumento di caso DSR
 
@@ -331,7 +332,7 @@ Quando si esportano i dati dal servizio di roaming di Office, i dati vengono sal
     
     ![Opzioni di esportazione per l'esportazione dei dati di utilizzo del servizio di roaming di Office](media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
   
-    un. In **Opzioni di output**selezionare la prima opzione (**tutti gli elementi, ad eccezione di quelli che dispongono di un formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi**) per esportare solo gli elementi indicizzati.
+    a. In **Opzioni di output**selezionare la prima opzione (**tutti gli elementi, ad eccezione di quelli che dispongono di un formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi**) per esportare solo gli elementi indicizzati.
     
     b. In **Esporta contenuto di Exchange come**selezionare la seconda opzione, **un file PST contenente tutti i messaggi**.
     
@@ -414,7 +415,7 @@ Di seguito viene indicato un processo di alto livello per la ricerca di elementi
     
   - Nella casella **parole chiave** utilizzare la query di ricerca seguente: 
     
-    ```
+    ```powershell
     itemclass:ipm.post AND "<email address of the data subject>"
     ```
 

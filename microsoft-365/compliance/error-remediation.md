@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 614397a81fd898975e5163c669fb8693fcdfe77c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c7bc6043722059b04d7fb99663a7dfb8815de697
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083677"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686415"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Correzione degli errori durante l'elaborazione dei dati per un'indagine
 
@@ -54,7 +54,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
     >È consigliabile utilizzare un percorso di file locale anziché un percorso di rete remoto per ottenere prestazioni ottimali.
 
     > [!NOTE]
-    > Se non è stato installato AzCopy, è possibile installarlo da qui:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+    > Se non è stato installato AzCopy, è possibile installarlo da qui:https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
 
 6. Copiare il comando predefinito facendo clic su **copia negli Appunti**. Avviare un prompt dei comandi di Windows, incollare il comando e quindi premere **invio**.  
 

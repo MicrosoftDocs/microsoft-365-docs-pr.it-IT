@@ -13,12 +13,12 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: Utilizzare lo script di Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente nel centro conformità di Office 365 o Microsoft 365. Quando si clona una ricerca, viene creata una nuova ricerca (con un nuovo nome) che contiene le stesse proprietà della ricerca originale. È quindi possibile modificare la nuova ricerca modificando la query di parole chiave o l'intervallo di date e quindi eseguirlo.
-ms.openlocfilehash: 2622b77045d3b4a92ad2e8a1852e1ddbaaca3368
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 25aa5d6a1ba19f697a6ccf474e055faf6a19d6bd
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083247"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686549"
 ---
 # <a name="clone-a-content-search"></a>Clonare una ricerca contenuto
 
@@ -32,7 +32,7 @@ Perché clonare le ricerche di contenuto?
     
 - Per ridurre le dimensioni dei risultati della ricerca; Se ad esempio si dispone di una ricerca che restituisce troppi risultati da esportare, è possibile clonare la ricerca e quindi aggiungere una condizione di ricerca in base a un intervallo di date per ridurre il numero di risultati della ricerca.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per eseguire lo script descritto in questo argomento, è necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & Compliance.
     
@@ -58,7 +58,7 @@ Per clonare una ricerca:
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `CloneSearch.ps1`.
     
-  ```
+  ```powershell
   # This PowerShell script clones an existing Content Search in the Office 365 security and compliance center.
   # Get login credentials from the user
   if(!$UserCredential)
@@ -120,7 +120,7 @@ Per clonare una ricerca:
     
 3. Eseguire lo script; Per esempio:
     
-    ```
+    ```powershell
     .\CloneSearch.ps1
     ```
 

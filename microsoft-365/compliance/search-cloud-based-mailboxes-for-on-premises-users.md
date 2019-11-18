@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilizzare lo strumento di ricerca contenuto nel centro sicurezza & Compliance per cercare ed esportare i dati di chat di MicrosoftTeams (denominati chat di 1xN) per gli utenti locali in una distribuzione ibrida di Exchange.
-ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97b849e682c0902b6a2d48919c2f2cd1257d8691
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084740"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686610"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Ricerca di cassette postali basate sul cloud per gli utenti locali in Office 365
 
@@ -86,7 +86,7 @@ Dopo che la funzionalità è stata abilitata, è possibile utilizzare la ricerca
     
 3. Se necessario, creare la query di parole chiave e aggiungere condizioni alla query di ricerca. Per cercare solo i dati delle chat del team, è possibile aggiungere la query seguente nella casella **parole chiave** : 
     
-    ```
+    ```text
     kind:im
     ``` 
 
@@ -112,15 +112,15 @@ Dopo che la funzionalità è stata abilitata, è possibile utilizzare la ricerca
     
 2. Eseguire il seguente comando di PowerShell per creare una ricerca di contenuto che esegua ricerche nelle cassette postali basate sul cloud degli utenti locali.
     
-    ```
+    ```powershell
     New-ComplianceSearch <name of new search> -ContentMatchQuery <search query> -ExchangeLocation <on-premises user> -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
-   
+
     Il parametro *IncludeUserAppContent* viene utilizzato per specificare la cassetta postale basata sul cloud per l'utente o gli utenti specificati dal parametro *ExchangeLocation* . *AllowNotFoundExchangeLocationsEnabled* consente alle cassette postali basate sul cloud per gli utenti locali. Quando si utilizza il `$true` valore per questo parametro, la ricerca non tenta di convalidare l'esistenza della cassetta postale prima che venga eseguita. Questa operazione è necessaria per eseguire ricerche nelle cassette postali basate sul cloud per gli utenti locali, in quanto questi tipi di cassette postali non vengono risolti come cassette postali normali. 
     
     Nell'esempio seguente vengono ricercate le chat di Teams (che sono messaggi istantanei) che contengono la parola chiave "Redstone" nella cassetta postale basata sul cloud di Sara Davis, che è un utente locale nell'organizzazione contoso.
   
-    ```
+    ```powershell
     New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 

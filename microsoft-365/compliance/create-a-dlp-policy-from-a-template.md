@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: db32748b25296ef82c56160e95535ac488eb65a5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2f7618f80f02865816a1f937b36c9f09b794b77d
+ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083160"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "38686342"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
 
@@ -168,7 +168,7 @@ Di seguito sono riportati i diversi stati e il loro significato.
 |**Attivato** <br/> |Il criterio è attivo e applicato. Il criterio è stato distribuito correttamente a tutte le origini del contenuto.  <br/> |
 |**Disattivazione in corso...** <br/> |Il criterio viene rimosso dalle origini del contenuto che include. Il criterio potrebbe essere ancora attivo e applicato in alcune origini. La disattivazione di un criterio potrebbe richiedere fino a 45 minuti.  <br/> |
 |**Disattivato** <br/> |Il criterio non è attivo e non applicato. Le impostazioni del criterio (origini, parole chiave, durata e così via) vengono salvate.  <br/> |
-|**Eliminazione di...** <br/> |Il criterio è in corso di eliminazione. Il criterio non è attivo e non applicato.  <br/> |
+|**Eliminazione di...** <br/> |Il criterio è in corso di eliminazione. Il criterio non è attivo e non applicato. Per i criteri delet richiede di solito un'ora <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Disattivare un criterio DLP
 

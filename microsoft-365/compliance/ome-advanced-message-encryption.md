@@ -7,19 +7,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 10/8/2019
+ms.date: 10/16/2019
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
-description: La crittografia avanzata dei messaggi in Office 365 consente alle organizzazioni di soddisfare gli obblighi di conformità abilitando gli amministratori a scadere e revocare l'accesso tramite un portale Web di Office 365 ai messaggi di posta elettronica crittografati.
-ms.openlocfilehash: eb6e95b1cbf24ab19df6a595c34721c84c831211
-ms.sourcegitcommit: 27a7a373ca77375fdab0690a899135fad16c3cf5
+description: La crittografia avanzata dei messaggi in Office 365 consente alle organizzazioni di soddisfare i propri obblighi di conformità consentendo agli amministratori di fare ancora di più con i messaggi protetti.
+ms.openlocfilehash: 7594a6ed2226081e54af957268cf0ca3fe403767
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435510"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686429"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Office 365 Advanced Message Encryption
 
@@ -29,16 +29,18 @@ La crittografia avanzata dei messaggi in Office 365 consente ai clienti di soddi
 
 È possibile revocare e impostare solo una data di scadenza per i messaggi di posta elettronica inviati a destinatari esterni.
 
-Con la crittografia avanzata dei messaggi di Office 365, ogni volta che si applica un modello di personalizzazione personalizzato, Office 365 applica un wrapper alla posta elettronica adatta alla regola del flusso di posta a cui viene applicato il modello. È possibile revocare solo i messaggi e applicare le date di scadenza ai messaggi che gli utenti ricevono tramite il portale. In altre parole, il messaggio di posta elettronica con un modello di personalizzazione personalizzato è stato applicato.
-
 ## <a name="get-started-with-office-365-advanced-message-encryption"></a>Iniziare a usare la crittografia avanzata dei messaggi di Office 365
 
-Negli argomenti seguenti viene descritto come configurare e utilizzare la crittografia avanzata dei messaggi.
+Negli articoli seguenti viene descritto come configurare e utilizzare la crittografia avanzata dei messaggi.
 
-L'organizzazione deve disporre di un abbonamento che include la crittografia avanzata dei messaggi di Office 365. Per informazioni dettagliate sulle sottoscrizioni supportate, vedere [Message Policy and Compliance Service Description](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance).
+L'organizzazione deve disporre di un abbonamento che include la crittografia avanzata dei messaggi di Office 365. Per informazioni dettagliate sulle sottoscrizioni supportate, vedere [Message Policy and Compliance Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance).
 
 Se non è già stata configurata la crittografia dei messaggi di Office 365, vedere [configurare le nuove funzionalità di crittografia dei messaggi di office 365](set-up-new-message-encryption-capabilities.md).
+
+Con la crittografia avanzata dei messaggi non si è limitati a un singolo modello di branding. In alternativa, è possibile creare e utilizzare modelli di branding multipli. Per informazioni, vedere [aggiungere il marchio dell'organizzazione ai messaggi crittografati](add-your-organization-brand-to-encrypted-messages.md).
 
 [Impostare una data di scadenza per la posta elettronica crittografata tramite la crittografia avanzata dei messaggi di Office 365](ome-advanced-expiration.md). Controllare i messaggi di posta elettronica sensibili condivisi all'esterno dell'organizzazione con criteri automatici che migliorano la protezione, in scadenza l'accesso tramite un portale web sicuro ai messaggi di posta elettronica crittografati
 
 [Revocare la posta elettronica crittografata tramite la crittografia avanzata dei messaggi di Office 365](revoke-ome-encrypted-mail.md). Controllare i messaggi di posta elettronica sensibili condivisi all'esterno dell'organizzazione e migliorare la protezione revocando l'accesso tramite un portale web sicuro ai messaggi di posta elettronica crittografati.  
+
+Con la crittografia avanzata dei messaggi di Office 365, ogni volta che si applica un modello di personalizzazione personalizzato, Office 365 applica un wrapper alla posta elettronica adatta alla regola del flusso di posta a cui viene applicato il modello. È possibile revocare solo i messaggi e applicare le date di scadenza ai messaggi che gli utenti ricevono tramite il portale. In altre parole, il messaggio di posta elettronica con un modello di personalizzazione personalizzato è stato applicato. Per ulteriori informazioni e un esempio, vedere le linee guida per [garantire che tutti i destinatari esterni utilizzino il portale ome per leggere la posta crittografata, solo la crittografia avanzata dei messaggi di Office 365](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only).

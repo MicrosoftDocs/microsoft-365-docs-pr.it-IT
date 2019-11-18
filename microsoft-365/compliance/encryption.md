@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Con Office 365, il contenuto viene crittografato a riposo e in transito con la crittografia, i protocolli e le tecnologie più forti disponibili. Ottenere una panoramica della crittografia in Office 365.
-ms.openlocfilehash: 1dd31990e4a284c81ce9fa8b2aced45b8a06a0c6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e63eb239f37f5f68da05f90998baf5bf6201fb71
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083683"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686414"
 ---
 # <a name="encryption-in-office-365"></a>Crittografia in Office 365
 
@@ -37,19 +37,19 @@ Il processo di crittografia codifica i dati (denominati con testo non crittograf
   
 La crittografia non impedisce l'intercettazione del contenuto. La crittografia è parte di una strategia di protezione delle informazioni più ampia per la propria organizzazione. Utilizzando la crittografia, è possibile garantire che solo le parti autorizzate possano utilizzare i dati crittografati.
   
-È possibile disporre di più livelli di crittografia sul posto contemporaneamente. Ad esempio, è possibile crittografare i messaggi di posta elettronica e anche i canali di comunicazione tramite i quali il flusso di posta elettronica scorre. Con Office 365, i dati vengono crittografati a riposo e in transito, utilizzando diversi protocolli di crittografia avanzata e tecnologie che includono Transport Layer Security/Secure Sockets Layer (TLS/SSL), IPSec (Internet Protocol Security) e Advanced Encryption Standard (AES).
+È possibile disporre di più livelli di crittografia sul posto contemporaneamente. Ad esempio, è possibile crittografare i messaggi di posta elettronica e anche i canali di comunicazione tramite i quali il flusso di posta elettronica scorre. Con Office 365, i dati vengono crittografati a riposo e in transito, utilizzando diversi protocolli di crittografia avanzata e tecnologie che includono Transport Layer Security/Secure Sockets Layer (TLS/SSL), IPSec (Internet Protocol Security) e AES (Advanced Encryption Standard).
   
 ## <a name="encryption-for-data-at-rest-and-data-in-transit"></a>Crittografia dei dati a riposo e dati in transito
 
- **Esempi di dati a riposo** sono i file caricati in una raccolta di SharePoint, i dati di Project online, i documenti caricati in una riunione di Skype for business, i messaggi di posta elettronica e gli allegati archiviati nelle cartelle di Office 365 cassetta postale e file caricati su OneDrive for business.
+ **Esempi di dati a riposo** sono i file caricati in una raccolta di SharePoint, i dati di Project online, i documenti caricati in una riunione di Skype for business, i messaggi di posta elettronica e gli allegati archiviati in cartelle nella cassetta postale di Office 365 e i file caricati in OneDrive for business.
   
  Tra gli **esempi di dati in transito** sono inclusi i messaggi di posta elettronica in fase di recapito o le conversazioni che si svolgono in una riunione online. In Office 365, i dati sono in transito ogni volta che il dispositivo di un utente comunica con un server di Office 365 o quando un server Office 365 comunica con un altro server.
   
 Con Office 365, più livelli e tipi di crittografia interagiscono per proteggere i dati. Nella tabella seguente sono inclusi alcuni esempi, con collegamenti a ulteriori informazioni.
   
-|**Tipi di contenuto**|**Tecnologie di crittografia**|**Risorse per ulteriori informazioni**|
+|**Tipi di contenuto**|**Tecnologie di crittografia**|**Risorse per approfondire**|
 |:-----|:-----|:-----|
-|File in un dispositivo. Questi file possono includere i messaggi di posta elettronica salvati in una cartella, i documenti di Office salvati in un computer, un tablet o un telefono o i dati salvati nel cloud Microsoft.  <br/> |BitLocker nei datacenter Microsoft. BitLocker può essere utilizzato anche nei computer client, ad esempio Windows e Tablet  <br/> Distributed Key Manager (DKM) nei datacenter Microsoft  <br/> Chiave cliente per Office 365  <br/> |[Centro IT di Windows: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centro protezione Microsoft: crittografia](https://www.microsoft.com/en-us/TrustCenter/Security/Encryption) <br/> [Serie di controlli di sicurezza cloud: crittografia dei dati a riposo](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Come Exchange Online protegge le informazioni riservate della posta elettronica](exchange-online-secures-email-secrets.md) <br/> [Controllare i dati in Office 365 con Customer Key](controlling-your-data-using-customer-key.md) <br/> |
+|File in un dispositivo. Questi file possono includere i messaggi di posta elettronica salvati in una cartella, i documenti di Office salvati in un computer, un tablet o un telefono o i dati salvati nel cloud Microsoft.  <br/> |BitLocker nei datacenter Microsoft. BitLocker può essere utilizzato anche nei computer client, ad esempio Windows e Tablet  <br/> Distributed Key Manager (DKM) nei datacenter Microsoft  <br/> Chiave cliente per Office 365  <br/> |[Centro IT di Windows: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centro protezione Microsoft: crittografia](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [Serie di controlli di sicurezza cloud: crittografia dei dati a riposo](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Come Exchange Online protegge le informazioni riservate della posta elettronica](exchange-online-secures-email-secrets.md) <br/> [Controllare i dati in Office 365 con Customer Key](controlling-your-data-using-customer-key.md) <br/> |
 |File in transito tra gli utenti. Questi file possono includere documenti di Office o elementi di elenchi di SharePoint condivisi tra gli utenti.  <br/> |TLS per i file in transito  <br/> |[Crittografia dei dati in OneDrive for Business e SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype for business online: sicurezza e archiviazione](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
 |Messaggi di posta elettronica in transito tra i destinatari. Questo messaggio di posta elettronica include la posta elettronica ospitata da Exchange Online.  <br/> |Crittografia dei messaggi di Office 365 con Azure Rights Management, S/MIME e TLS per la posta elettronica in transito  <br/> |[Office 365 Message Encryption (OME)](ome.md) <br/> [Crittografia della posta elettronica in Office 365](email-encryption.md) <br/> [Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica in Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 
@@ -57,7 +57,7 @@ Con Office 365, più livelli e tipi di crittografia interagiscono per proteggere
 
 Office 365 fornisce soluzioni gestite da Microsoft per la crittografia dei volumi, la crittografia dei file e la crittografia delle cassette postali in Office 365. Inoltre, Office 365 fornisce soluzioni di crittografia che è possibile gestire e controllare. Queste soluzioni di crittografia sono basate su Azure.
   
-Per ulteriori informazioni, vedere le risorse seguenti:
+Per altre informazioni, vedere le risorse seguenti:
   
 - [Che cos'è Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 

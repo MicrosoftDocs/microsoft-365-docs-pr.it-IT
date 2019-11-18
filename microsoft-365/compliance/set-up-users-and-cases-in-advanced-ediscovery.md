@@ -1,9 +1,9 @@
 ---
 title: Configurare gli utenti e i casi in Office 365 Advanced eDiscovery
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Informazioni su come configurare i ruoli utente, creare casi e assegnare gli utenti ai casi in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: e53d304445aa7d171766d38496d95a0d6cb47792
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e6fa3581fe15c089292e7585e7d053b817ae167b
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084115"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38686464"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurare gli utenti e i casi in Office 365 Advanced eDiscovery
 
@@ -35,7 +35,7 @@ Prima di configurare i casi e gli utenti in Advanced eDiscovery, è necessario q
     
 - È necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza &amp; e conformità di Office 365 per creare un caso di eDiscovery e aggiungere membri. Per aggiungersi al gruppo di ruoli eDiscovery Manager nel centro &amp; sicurezza e conformità, è necessario essere un amministratore globale dell'organizzazione di Office 365. Se non si è un amministratore globale, è necessario chiedere a un amministratore globale di aggiungerlo al gruppo di ruoli eDiscovery Manager. Per ulteriori informazioni, vedere:
     
-  - [Autorizzazioni nel centro sicurezza &amp; e conformità di Microsoft 365](/security/office-365-security/protect-against-threats.md)
+  - [Autorizzazioni nel centro sicurezza &amp; e conformità di Microsoft 365](~/security/office-365-security/protect-against-threats.md)
     
   - [Assegnare le autorizzazioni di eDiscovery nel centro sicurezza &amp; e conformità di Microsoft 365](assign-ediscovery-permissions.md)
     

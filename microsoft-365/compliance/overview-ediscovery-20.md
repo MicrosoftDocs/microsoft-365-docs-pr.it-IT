@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritta la nuova versione di Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: e63fe05cf9a2e236247da3c45674b53cc830546d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: abeb4e6b9a465e4f1df857187ef709b5dc2c86b5
+ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084201"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "38686321"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Panoramica della soluzione avanzata di eDiscovery in Microsoft 365
 
@@ -35,19 +35,19 @@ Il flusso di lavoro incorporato di Advanced eDiscovery è allineato al processo 
 
 A livello elevato, ecco come Advanced eDiscovery supporta il flusso di lavoro di EDRM:
 
-- **Identificazione** – dopo aver individuato potenziali persone di interesse in un'indagine, è possibile aggiungerli come depositari (denominati anche *depositari dei dati*, in quanto potrebbero essere in possesso di informazioni rilevanti per l'inchiesta) a un avanzato caso eDiscovery. Dopo che gli utenti vengono aggiunti come depositari, è facile conservare, raccogliere e rivedere i documenti del custode.
+- **Identificazione.** Dopo aver identificato potenziali persone di interesse in un'indagine, è possibile aggiungerle come depositari (denominate anche *depositari dei dati*, in quanto potrebbero essere in possesso di informazioni rilevanti per l'indagine) in un caso di eDiscovery avanzato. Dopo che gli utenti vengono aggiunti come depositari, è facile conservare, raccogliere e rivedere i documenti del custode.
 
-- **Preservation** – per preservare e proteggere i dati rilevanti per un'indagine, Advanced eDiscovery consente di effettuare una conservazione legale sulle origini dati associate ai depositari in un caso. È inoltre possibile inserire i dati non detentivi in attesa. Advanced eDiscovery dispone anche di un flusso di lavoro di comunicazione incorporato in modo da poter inviare notifiche di archiviazione legale ai depositari e tenere conto dei loro ringraziamenti.
+- **Conservazione.** Per conservare e proteggere i dati rilevanti per un'indagine, Advanced eDiscovery consente di inserire una conservazione legale sulle origini dati associate ai depositari in un caso. È inoltre possibile inserire i dati non detentivi in attesa. Advanced eDiscovery dispone anche di un flusso di lavoro di comunicazione incorporato in modo da poter inviare notifiche di archiviazione legale ai depositari e tenere conto dei loro ringraziamenti.
 
-- **Raccolta** – dopo aver identificato (e conservato) le origini dati rilevanti per l'analisi, è possibile utilizzare lo strumento di ricerca incorporato in Advanced eDiscovery per la ricerca e la raccolta di dati in tempo reale dalle origini dati di custodia (e dalle origini dati non detentive , se applicabile), che potrebbero essere rilevanti per il caso.
+- **Raccolta.** Dopo aver identificato (e conservato) le origini dati rilevanti per l'analisi, è possibile utilizzare lo strumento di ricerca incorporato in Advanced eDiscovery Search for and Collect Live Data from the affidatario Data Sources (e non-affidatario Data Sources, se applicabile) potrebbe essere pertinente per il caso.
 
-- **Elaborazione** – dopo aver raccolto tutti i dati rilevanti per il caso, il passaggio successivo consiste nell'elaborarla per ulteriori analisi. In Advanced eDiscovery, i dati sul posto identificati nella fase di raccolta vengono copiati in un percorso di archiviazione di Azure (denominato *set di revisione*), in cui viene fornita una visualizzazione statica dei dati del caso. 
+- **Elaborazione.** Dopo aver raccolto tutti i dati rilevanti per il caso, il passaggio successivo consiste nel processo per ulteriori riesami e analisi. In Advanced eDiscovery, i dati sul posto identificati nella fase di raccolta vengono copiati in un percorso di archiviazione di Azure (denominato *set di revisione*), in cui viene fornita una visualizzazione statica dei dati del caso. 
  
-- **Revisione** – dopo aver aggiunto i dati a un set di revisione, è possibile visualizzare documenti specifici ed eseguire un'altra query per ridurre i dati a ciò che è più pertinente per il caso. Inoltre, è possibile annotare e contrassegnare documenti specifici.
+- **Recensione.** Dopo aver aggiunto i dati a un set di revisione, è possibile visualizzare documenti specifici ed eseguire un'altra query per ridurre i dati a ciò che è più pertinente per il caso. Inoltre, è possibile annotare e contrassegnare documenti specifici.
  
-- **Analysis** – Advanced eDiscovery fornisce uno strumento di analisi integrata che consente di eliminare i dati dall'insieme di revisione che si determina non è pertinente all'inchiesta. Oltre a ridurre il volume dei dati rilevanti, Advance eDiscovery aiuta anche a salvare i costi di revisione legale, consentendo di organizzare il contenuto per semplificare e rendere più efficiente il processo di revisione.
+- **Analisi.** Advanced eDiscovery fornisce uno strumento di analisi integrata che consente di eliminare i dati dall'insieme di revisione che si determina non è pertinente per l'indagine. Oltre a ridurre il volume dei dati rilevanti, Advance eDiscovery aiuta anche a salvare i costi di revisione legale, consentendo di organizzare il contenuto per semplificare e rendere più efficiente il processo di revisione.
 
-- **Produzione** e **presentazione** – quando si è pronti, è possibile esportare i documenti da un set di revisione per la revisione legale. È possibile esportare documenti nel formato nativo o in un formato specificato per EDRM in modo che possano essere importati in applicazioni di revisione di terze parti.
+- **Produzione** e **presentazione.** Quando si è pronti, è possibile esportare i documenti da un set di revisione per la revisione legale. È possibile esportare documenti nel formato nativo o in un formato specificato per EDRM in modo che possano essere importati in applicazioni di revisione di terze parti.
 
 ## <a name="advanced-ediscovery-workflow"></a>Flusso di lavoro avanzato di eDiscovery
 
@@ -81,12 +81,14 @@ Utilizzare la scheda **ricerche** per creare ricerche per cercare le origini dat
 
 Utilizzare la scheda **revisione dei set** per esaminare e analizzare il contenuto raccolto dal sistema Live e aggiungerlo a un set di revisione. Un *set di revisione* è una raccolta statica di tali dati (in altre parole, una copia offline di dati) dei dati di custodia (e, se applicabile, i dati non detentivi) raccolti nella fase precedente del flusso di lavoro di eDiscovery. Quando si aggiungono i risultati di ricerca a un set di revisione, viene attivato un processo che estrae i file dai contenitori, estrae i metadati ed estrae il testo. Al termine del processo, il sistema crea un nuovo indice di tutti i dati raccolti dai depositari e lo aggiunge al set di revisione. Dopo aver aggiunto i dati al set di revisione, è possibile eseguire altre query per limitare i dati del caso, visualizzare i dati come testo o nel formato di file nativo e annotare, redigere e contrassegnare i documenti nel set di revisione. È inoltre possibile eseguire analisi avanzate, ad esempio la duplicazione dei documenti, il threading di posta elettronica e i temi. Dopo aver abbattuto i dati solo su ciò che è pertinente per il caso, è possibile scaricare i documenti direttamente o esportarli insieme ai metadati, alle annotazioni e ai tag dei file. Per ulteriori informazioni, vedere:
 
-- [Esaminare i dati dei casi in Advanced eDiscovery](reviewing-data-in-review-set.md)
-- [Analizzare i dati in un set di revisione in Advanced eDiscovery](analyzing-data-in-review-set.md)
+- [Visualizzare i documenti in un insieme da rivedere](view-documents-in-review-set.md)
+- [Eseguire query sui dati in un insieme da rivedere](review-set-search.md)
+- [Contrassegnare i documenti in un insieme da rivedere](tagging-documents.md)
+- [Analizzare i dati in un set di Revisione](analyzing-data-in-review-set.md)
 
 ## <a name="exporting-data-for-review-and-presentation"></a>Esportazione di dati per la revisione e la presentazione
 
-Dopo aver esportato i dati da un set di revisione, utilizzare la scheda **Esporta** per gestire un processo di esportazione e scaricare i dati da un set di revisione. Quando si esporta un set di revisione, i dati vengono caricati in un percorso di archiviazione di Azure e quindi sono disponibili per il download in un computer locale. È possibile ottenere la chiave di valutazione dell'archiviazione necessaria per scaricare i dati esportati nella scheda **esportazioni** . Per ulteriori informazioni, vedere [esportare i dati del caso in Advanced eDiscovery](exporting-data-ediscover20.md).
+Dopo aver esportato i dati da un set di revisione, utilizzare la scheda **Esporta** per gestire un processo di esportazione e scaricare i dati da un set di revisione. Quando si esporta un set di revisione, i dati vengono caricati in una posizione di archiviazione di Azure fornita da Microsoft (o in un percorso di archiviazione di Azure gestito dall'organizzazione). Dopo che è stato caricato in Azure, è disponibile per il download in un computer locale. È possibile ottenere la chiave di valutazione dell'archiviazione necessaria per scaricare i dati esportati nella scheda **esportazioni** . Per ulteriori informazioni, vedere [esportare i dati del caso in Advanced eDiscovery](exporting-data-ediscover20.md).
 
 ## <a name="managing-jobs"></a>Gestione dei processi
 

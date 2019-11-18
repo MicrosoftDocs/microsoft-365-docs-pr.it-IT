@@ -14,21 +14,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a creare regole del flusso di posta (regole di trasporto) per crittografare e decrittografare i messaggi utilizzando la crittografia dei messaggi di Office 365.
-ms.openlocfilehash: 75b8e3c977a2708eb1edb8e2b94f555aa54045ca
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 17a04941d7132dbe50f8a79ec3b8879b300b414e
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082972"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "38686332"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365
 
 In qualità di amministratore globale di Office 365, è possibile creare regole del flusso di posta (note anche come regole di trasporto) per proteggere i messaggi di posta elettronica inviati e ricevuti. È possibile configurare le regole per crittografare i messaggi di posta elettronica in uscita e rimuovere la crittografia dai messaggi crittografati provenienti dall'interno dell'organizzazione o dalle risposte ai messaggi crittografati inviati dall'organizzazione. Per creare queste regole, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o Exchange Online PowerShell. Oltre alle regole di crittografia generali, è inoltre possibile scegliere di abilitare o disabilitare le opzioni di crittografia dei messaggi individuali per gli utenti finali.
-
-||
-|:-----|
-|Questo articolo fa parte di una serie più ampia di articoli sulla crittografia dei messaggi di Office 365. Questo articolo è destinato agli amministratori e professionisti IT. Se si cercano solo informazioni sull'invio o la ricezione di un messaggio crittografato, vedere l'elenco degli articoli in [Office 365 Message Encryption (OME)](ome.md) e individuare l'articolo che meglio si adatta alle proprie esigenze. |
-||
 
 Se di recente è stata eseguita la migrazione da AD RMS a Azure Information Protection, è necessario esaminare le regole del flusso di posta esistenti per assicurarsi che possano continuare a funzionare nel nuovo ambiente. Inoltre, se si desidera sfruttare le nuove funzionalità di crittografia dei messaggi di Office 365 disponibili tramite Azure Information Protection, è necessario aggiornare le regole del flusso di posta esistenti. In caso contrario, gli utenti continueranno a ricevere messaggi di posta elettronica crittografati che utilizzano il formato di allegato HTML precedente anziché la nuova esperienza OME senza problemi. Se non è ancora stato configurato OME, vedere [configurare le nuove funzionalità di crittografia dei messaggi di Office 365](set-up-new-message-encryption-capabilities.md) per informazioni.
 

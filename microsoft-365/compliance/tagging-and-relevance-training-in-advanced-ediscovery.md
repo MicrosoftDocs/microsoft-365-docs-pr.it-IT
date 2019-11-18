@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Informazioni sui passaggi da contrassegnare e quindi utilizzare un campione di formazione di 40 file durante la fase di formazione per pertinenza di Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 569fdfd6e5369459d55bb3ecfa2ebc32f0a10005
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 78c8446a30868b2c01f6831630cadc21916e6476
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084091"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38686635"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Formazione di tagging e pertinenza in Office 365 Advanced eDiscovery
 
@@ -37,15 +37,14 @@ Dopo aver completato la valutazione in Advanced eDiscovery e immettendo la fase 
   
     Nella scheda **tag** viene visualizzato il nome visualizzato del file. Potrebbe trattarsi del percorso, dell'oggetto di posta elettronica, del titolo o del nome definito dall'utente. L'ID, il percorso del file o il percorso del testo può essere copiato facendo clic con il pulsante destro del mouse sul percorso del file. 
     
-    Le statistiche di tagging della scheda **tag** mostrano il numero di campione del file (nella parte superiore del riquadro sinistro), il numero del file attualmente visualizzato al di fuori dei file totali del campione (parte inferiore del riquadro destro) e il numero totale corrente di file contrassegnati nell'esempio (parte inferiore di t ha lasciato il riquadro), che cambia man mano che si modificano i file. Questo vale per tutti i tag di pertinenza effettuati, sia in valutazione, formazione, catch-up o test. 
+    Le statistiche di tagging della scheda **tag** mostrano il numero di campione del file (nella parte superiore del riquadro sinistro), il numero del file attualmente visualizzato al di fuori dei file totali del campione (parte inferiore del riquadro destro) e il numero totale corrente di file contrassegnati nell'esempio (in basso nel riquadro sinistro), che cambia quando si Tag file. Questo vale per tutti i tag di pertinenza effettuati, sia in valutazione, formazione, catch-up o test. 
     
     Le icone che indicano l'esistenza di commenti, tag e file di famiglia vengono visualizzate nella visualizzazione file in una barra sopra il file.
     
 2. Determinare la pertinenza del file per il problema del caso e contrassegnare il file utilizzando i pulsanti icona o i tasti di scelta rapida per l'opzione di tagging, come illustrato nella tabella seguente:
-    
-| |
+
 |**Opzione di tagging**|**Descrizione**|**Tasti di scelta rapida**|**Per più problemi-tasti di scelta rapida per i tag di massa**|
-|:-----|:-----|:-----|:-----|
+|-----|-----|-----|-----|
 |R  <br/> |Pertinenti  <br/> |Z  <br/> |MAIUSC + Z  <br/> |
 |NR  <br/> |Non pertinente  <br/> |X  <br/> |MAIUSC + X  <br/> |
 |Saltare  <br/> |Saltare  <br/> |C  <br/> |Maiusc + A  <br/> |

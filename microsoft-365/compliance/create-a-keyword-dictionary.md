@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 04/11/2019
+ms.date: ''
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Per identificare le informazioni riservate a volte è necessario cercare delle parole chiave, in particolare quando si identifica un contenuto generico, ad esempio comunicazioni relative al settore sanitario, o contenuti con linguaggio inappropriato o esplicito. Anche se è possibile creare elenchi di parole chiave nei tipi di informazioni riservate, questi elenchi hanno dimensioni limitate e richiedono la modifica di file XML per crearli o modificarli. I dizionari di parole chiave offrono una gestione semplificata delle parole chiave e, su scala molto più ampia, supportano fino a 100.000 termini per dizionario.
-ms.openlocfilehash: 5e99cad328115ad6b49982ea4c5749cdea6e43ed
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 73ca1e83f716af076f99b1bcb8fba4fbb6e69d9d
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083130"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38686463"
 ---
 # <a name="create-a-keyword-dictionary"></a>Creare un dizionario di parole chiave
 
@@ -73,13 +73,13 @@ Spesso, quando è necessario creare un dizionario di grandi dimensioni, è possi
     
 3. Leggere il file in una variabile eseguendo questo cmdlet:
     
-    ```
+    ```powershell
     $fileData = Get-Content <filename> -Encoding Byte -ReadCount 0
     ```
 
 4. Creare il dizionario eseguendo questo cmdlet:
     
-    ```
+    ```powershell
     New-DlpKeywordDictionary -Name <name> -Description <description> -FileData $fileData
     ```
 
@@ -91,7 +91,7 @@ Ad esempio, modificheremo alcuni termini in PowerShell, salviamo i termini local
 
 Prima di tutto, recuperare l'oggetto dizionario:
   
-```
+```powershell
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
@@ -99,7 +99,7 @@ La `$dict` stampa mostrerà le varie variabili. Le parole chiave stesse vengono 
 
 Prima di modificare il dizionario, è necessario riportare la stringa di termini in una matrice utilizzando il `.split(',')` metodo. Verranno quindi ripuliti gli spazi indesiderati tra le parole chiave `.trim()` con il metodo, lasciando solo le parole chiave che è possibile utilizzare. 
   
-```
+```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
 ```
 
@@ -109,71 +109,68 @@ Nell'ultimo passaggio le parole chiave sono state salvate in una matrice. Ci son
   
 Eseguire il comando `$terms` per visualizzare l'elenco attuale di termini. L'output del comando avrà questo aspetto: 
   
-```
-aarskog's syndrome
-abandonment
-abasia
-abderhalden-kaufmann-lignac
-abdominalgia
-abduction contracture
-abetalipoproteinemia
-abiotrophy
-ablatio
-ablation
-ablepharia
-abocclusion
-abolition
-aborter
-abortion
-abortus
-aboulomania
-abrami's disease
-```
+`aarskog's syndrome`
+`abandonment`
+`abasia`
+`abderhalden-kaufmann-lignac`
+`abdominalgia`
+`abduction contracture`
+`abetalipoproteinemia`
+`abiotrophy`
+`ablatio`
+`ablation`
+`ablepharia`
+`abocclusion`
+`abolition`
+`aborter`
+`abortion`
+`abortus`
+`aboulomania`
+`abrami's disease`
 
 Eseguire questo comando per specificare i termini da rimuovere:
   
-```
+```powershell
 $termsToRemove = @('abandonment', 'ablatio')
 ```
 
 Eseguire questo comando per rimuovere effettivamente i termini dall'elenco:
   
-```
+```powershell
 $updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
 ```
 
 Eseguire il comando `$updatedTerms` per visualizzare l'elenco aggiornato di termini. L'output del comando è simile al seguente (i termini specificati sono stati rimossi): 
   
-```
-aarskog's syndrome
-abasia
-abderhalden-kaufmann-lignac
-abdominalgia
-abduction contracture
-abetalipo proteinemia
-abiotrophy
-ablation
-ablepharia
-abocclusion
-abolition
-aborter
-abortion
-abortus
-aboulomania
-abrami's disease
+`aarskog's syndrome`
+`abasia`
+`abderhalden-kaufmann-lignac`
+`abdominalgia`
+`abduction contracture`
+`abetalipo proteinemia`
+`abiotrophy`
+`ablation`
+`ablepharia`
+`abocclusion`
+`abolition`
+`aborter`
+`abortion`
+`abortus`
+`aboulomania`
+`abrami's disease`
 ```
 
-A questo punto, salvare il dizionario in locale e aggiungere qualche altro termine. È possibile aggiungere i termini qui in PowerShell, ma sarà comunque necessario esportare il file in locale per assicurarsi che sia stato salvato con la codifica Unicode e che contenga BOM.
+Now save the dictionary locally and add a few more terms. You could add the terms right here in PowerShell, but you'll still need to export the file locally to ensure it's saved with Unicode encoding and contains the BOM.
   
-Salvare il dizionario in locale eseguendo quanto segue:
+Save the dictionary locally by running the following:
   
-```
+```powershell
 Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 ```
 
 Ora basta aprire il file, aggiungere gli altri termini e salvare il file con la codifica Unicode (UTF-16). A questo punto, è possibile caricare i termini aggiornati e aggiornare il dizionario esistente.
   
-```
+```powershell
 PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
 ```
 
@@ -183,7 +180,7 @@ Ora il dizionario esistente è aggiornato. Il campo `Identity` prende il nome de
 
 I dizionari per parole chiave possono essere utilizzati come parte dei requisiti di corrispondenza per un tipo di informazioni riservate personalizzato oppure come tipo di informazioni riservate. Entrambi richiedono la creazione di un [tipo di informazioni riservate personalizzato](create-a-custom-sensitive-information-type-in-scc-powershell.md). Seguire le istruzioni riportate nell'articolo collegato per creare un tipo di informazioni riservate. Dopo aver utilizzato il codice XML, è necessario l'identificatore GUID del dizionario per utilizzarlo.
   
-```
+```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
         <IdMatch idRef=". . ."/>
@@ -193,27 +190,25 @@ I dizionari per parole chiave possono essere utilizzati come parte dei requisiti
 
 Per ottenere l'identità del dizionario, eseguire questo comando e copiare il valore della proprietà **Identity**: 
   
-```
+```powershell
 Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
 L'output del comando avrà questo aspetto:
   
-```
-RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255
-Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f
-Name              : Diseases
-Description       : Names of diseases and injuries from ICD-10-CM lexicon
-KeywordDictionary : aarskog's syndrome, abandonment, abasia, abderhalden-kaufmann-lignac, abdominalgia, abduction contracture, abetalipo
-                    proteinemia, abiotrophy, ablatio, ablation, ablepharia, abocclusion, abolition, aborter, abortion, abortus, aboulomania,
-                    abrami's disease, abramo
-IsValid           : True
-ObjectState       : Unchanged
-```
+`RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255`
+`Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f`
+`Name              : Diseases`
+`Description       : Names of diseases and injuries from ICD-10-CM lexicon`
+`KeywordDictionary : aarskog's syndrome, abandonment, abasia, abderhalden-kaufmann-lignac, abdominalgia, abduction contracture, abetalipo` `proteinemia, abiotrophy, ablatio, ablation, ablepharia, abocclusion, abolition, aborter, abortion, abortus, aboulomania,`
+                    `abrami's disease, abramo`
+`IsValid           : True`
+`ObjectState       : Unchanged`
+
 
 Incollare l'identità nel file XML del tipo di informazioni riservate personalizzato e caricarlo. Il dizionario verrà visualizzato nell'elenco dei tipi di informazioni riservate e potrà essere usato direttamente nei criteri, specificando il numero di parole chiave che devono avere una corrispondenza.
   
-```
+```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f" />
@@ -226,5 +221,3 @@ Incollare l'identità nel file XML del tipo di informazioni riservate personaliz
       </Resource>
     </LocalizedStrings>
 ```
-
-

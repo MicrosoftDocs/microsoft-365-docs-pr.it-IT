@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Informazioni su come configurare il registro di sistema di Windows per aumentare la velocità effettiva dei dati quando si scaricano i risultati della ricerca e i dati di ricerca dal centro sicurezza & compliance e Advanced eDiscovery in Office 365.
-ms.openlocfilehash: 44f595e6beffcc3d6789ad7b6f70ad77a48381cb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f74d164250f9d5b9b8315fe2651d3374457451ed
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083595"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686558"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365
 
-Quando si utilizza lo strumento di esportazione di eDiscovery di Office 365 per scaricare i risultati di una ricerca di contenuto nel centro sicurezza & conformità o scaricare i dati da Office 365 Advanced eDiscovery, lo strumento avvia un certo numero di operazioni di esportazione simultanee per scaricare il dati al computer locale. Per impostazione predefinita, il numero di operazioni simultanee è impostato su 8 volte il numero di core nel computer che si sta utilizzando per scaricare i dati. Ad esempio, se si dispone di un computer dual core (che significa due unità di elaborazione centrale in un unico chip), il numero predefinito di operazioni di esportazione simultanee è 16. Per aumentare la velocità effettiva di trasferimento dei dati e velocizzare il processo di download, è possibile aumentare il numero di operazioni simultanee configurando un'impostazione del registro di sistema di Windows nel computer utilizzato per scaricare i risultati della ricerca. Per velocizzare il processo di download, è consigliabile iniziare con un'impostazione di 24 operazioni simultanee.
+Quando si utilizza lo strumento di esportazione di eDiscovery di Office 365 per scaricare i risultati di una ricerca di contenuto nel centro sicurezza & conformità o scaricare i dati da Office 365 Advanced eDiscovery, lo strumento avvia un certo numero di operazioni di esportazione simultanee per scaricare i dati nel computer locale. Per impostazione predefinita, il numero di operazioni simultanee è impostato su 8 volte il numero di core nel computer che si sta utilizzando per scaricare i dati. Ad esempio, se si dispone di un computer dual core (che significa due unità di elaborazione centrale in un unico chip), il numero predefinito di operazioni di esportazione simultanee è 16. Per aumentare la velocità effettiva di trasferimento dei dati e velocizzare il processo di download, è possibile aumentare il numero di operazioni simultanee configurando un'impostazione del registro di sistema di Windows nel computer utilizzato per scaricare i risultati della ricerca. Per velocizzare il processo di download, è consigliabile iniziare con un'impostazione di 24 operazioni simultanee.
   
 Se si scaricano i risultati della ricerca in una rete con larghezza di banda ridotta, l'aumento di questa impostazione può avere un impatto negativo. In alternativa, potrebbe essere possibile aumentare l'impostazione su più di 24 operazioni simultanee in una rete a larghezza di banda elevata (il numero massimo di operazioni simultanee è 48). Dopo aver configurato l'impostazione del registro di sistema, potrebbe essere necessario modificarla per individuare il numero ottimale di operazioni simultanee per l'ambiente.
   
@@ -33,7 +33,7 @@ Eseguire la procedura seguente nel computer che verrà utilizzato per scaricare 
     
 2. Salvare il testo seguente in un file del registro di sistema di Windows utilizzando un suffisso FileName di. reg. ad esempio, ConcurrentOperations. reg. 
     
-    ```
+    ```text
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool]
     "DownloadConcurrency"="24"
@@ -54,7 +54,7 @@ Eseguire la procedura seguente nel computer che verrà utilizzato per scaricare 
     > [!IMPORTANT]
     > Dopo aver creato o modificato l' `DownloadConcurrency` impostazione del registro di sistema, assicurarsi di creare un nuovo processo di esportazione o di riavviare un processo di esportazione esistente per i risultati di ricerca o i dati che si desidera scaricare. Per ulteriori dettagli, vedere la sezione [ulteriori informazioni](#more-information) . 
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - La prima volta che si esegue il file con estensione reg creato in questa procedura viene creata una nuova chiave del registro di sistema. L' `DownloadConcurrency` impostazione del registro di sistema viene quindi modificata ogni volta che viene modificato e rieseguito il file. reg Edit. 
     

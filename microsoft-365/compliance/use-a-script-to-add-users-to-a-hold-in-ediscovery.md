@@ -7,6 +7,8 @@ ms.date: 1/23/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,28 +16,28 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: Eseguire uno script per aggiungere rapidamente le cassette postali e i siti di OneDrive for business a una nuova esenzione associata a un caso di eDiscovery nel centro sicurezza & conformità.
-ms.openlocfilehash: c680e584a6f729b3d6d0d74b84ddd0e03da6dc9a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7a7ea582391e2fbfcef8b63d331d64f52db4460c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084060"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686599"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Utilizzo di uno script per aggiungere gli utenti a un'esenzione in un caso di eDiscovery nel centro sicurezza & Compliance
 
 Il Centro sicurezza & conformità fornisce numerosi cmdlet di Windows PowerShell che consentono di automatizzare le attività che richiedono tempo per la creazione e la gestione dei casi di eDiscovery. Attualmente, utilizzando lo strumento case di eDiscovery nel centro sicurezza & conformità per inserire un numero elevato di posizioni di contenuto del custode in attesa richiede tempo e preparazione. Ad esempio, prima di creare un'esenzione, è necessario raccogliere l'URL per ogni sito di OneDrive for business che si desidera inserire in attesa. Quindi, per ogni utente che si desidera inserire in attesa, è necessario aggiungere la propria cassetta postale e il proprio sito di OneDrive for business all'esenzione. Nelle versioni future del Centro sicurezza & conformità, questo sarà più facile da fare. Fino a quel momento, è possibile utilizzare lo script in questo articolo per automatizzare il processo.
   
-Lo script richiede il nome del dominio del sito Web dell'organizzazione, ad esempio **Contoso** nell'URL https://contoso-my.sharepoint.com), il nome di un caso di eDiscovery esistente, il nome della nuova esenzione associata al caso, un elenco di indirizzi di posta elettronica degli utenti che si desidera per il blocco e una query di ricerca da utilizzare se si desidera creare un blocco basato su query. Lo script ottiene quindi l'URL del sito di OneDrive for business per ogni utente nell'elenco, crea la nuova esenzione e quindi aggiunge la cassetta postale e il sito di OneDrive for business per ogni utente nell'elenco all'esenzione. Lo script genera anche file di registro che contengono informazioni sul nuovo blocco. 
+Lo script richiede il nome del dominio del sito Web dell'organizzazione, ad esempio **Contoso** nell'URL https://contoso-my.sharepoint.com), il nome di un caso di eDiscovery esistente, il nome del nuovo blocco associato al caso, un elenco di indirizzi di posta elettronica degli utenti che si desidera conservare e una query di ricerca da utilizzare se si desidera creare un blocco basato su query. Lo script ottiene quindi l'URL del sito di OneDrive for business per ogni utente nell'elenco, crea la nuova esenzione e quindi aggiunge la cassetta postale e il sito di OneDrive for business per ogni utente nell'elenco all'esenzione. Lo script genera anche file di registro che contengono informazioni sul nuovo blocco. 
   
 Di seguito vengono illustrati i passaggi per eseguire questa operazione:
   
 [Passaggio 1: Installare SharePoint Online Management Shell](#step-1-install-the-sharepoint-online-management-shell)
   
-[Passaggio 2: generazione di un elenco di utenti](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
+[Passaggio 2: generazione di un elenco di utenti](#step-2-generate-a-list-of-users)
   
-[Passaggio 3: eseguire lo script per creare un blocco e aggiungere utenti](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
+[Passaggio 3: eseguire lo script per creare un blocco e aggiungere utenti](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - È necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & compliance e un amministratore globale di SharePoint Online per eseguire lo script nel passaggio 3. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza & conformità di Office 365](assign-ediscovery-permissions.md).
     
@@ -56,22 +58,18 @@ Il primo passaggio consiste nell'installare SharePoint Online Management Shell s
 Andare a [configurare l'ambiente di Windows PowerShell per SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkID=286318) ed eseguire il passaggio 1 e il passaggio 2 per installare SharePoint Online Management Shell nel computer locale. 
 
 ## <a name="step-2-generate-a-list-of-users"></a>Passaggio 2: generazione di un elenco di utenti
-<a name="step2"> </a>
 
 Lo script nel passaggio 3 creerà un'esenzione associata a un caso di eDiscovery e i siti di aggiunta di cassette postali e OneDrive for business di un elenco di utenti all'esenzione. È possibile digitare gli indirizzi di posta elettronica in un file di testo oppure eseguire un comando in Windows PowerShell per ottenere un elenco di indirizzi di posta elettronica e salvarli in un file (che si trova nella stessa cartella in cui verrà salvato lo script nel passaggio 3).
   
 Di seguito è riportato un comando di PowerShell (eseguito utilizzando Remote PowerShell connesso all'organizzazione di Exchange Online) per ottenere un elenco di indirizzi di posta elettronica per tutti gli utenti dell'organizzazione e salvarlo in un file di testo denominato HoldUsers. txt.
   
-```
+```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
 Dopo aver eseguito il comando, aprire il file di testo e rimuovere l'intestazione che contiene il nome della `PrimarySmtpAddress`proprietà. Quindi rimuovere tutti gli indirizzi di posta elettronica ad eccezione di quelli per gli utenti che si desidera aggiungere al blocco che verrà creato nel passaggio 3. Verificare che non vi siano righe vuote prima o dopo l'elenco di indirizzi di posta elettronica.
   
-
-  
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Passaggio 3: eseguire lo script per creare un blocco e aggiungere utenti
-<a name="step3"> </a>
 
 Quando si esegue lo script in questo passaggio, vengono richieste le informazioni seguenti. Assicurarsi di avere queste informazioni pronte prima di eseguire lo script.
   
@@ -87,11 +85,11 @@ Quando si esegue lo script in questo passaggio, vengono richieste le informazion
     
 - **Se si desidera attivare o meno** l'esenzione, è possibile fare in modo che lo script riattivi il blocco dopo la creazione oppure che lo script crei il blocco senza abilitarlo. Se non è stato attivato lo script, è possibile attivarlo in un secondo momento nel centro sicurezza & Compliance oppure eseguendo i comandi di PowerShell seguenti: 
     
-  ```
+  ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
   ```
 
-  ```
+  ```powershell
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
@@ -101,7 +99,7 @@ Dopo aver raccolto le informazioni che verranno richieste dallo script, il passa
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `AddUsersToHold.ps1`.
     
-  ```
+  ```powershell
   #script begin
   " " 
   write-host "***********************************************"
@@ -119,7 +117,7 @@ Dopo aver raccolto le informazioni che verranno richieste dallo script, il passa
           return;
       }
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
-  # To install, go to http://go.microsoft.com/fwlink/p/?LinkId=255251
+  # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
   {
       $SharePointClient = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
@@ -127,7 +125,7 @@ Dopo aver raccolto le informazioni che verranno richieste dallo script, il passa
       $SPUserProfile = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
       if (!$SharePointClient)
       {
-          Write-Error "The SharePoint Online Management Shell isn't installed. Please install it from: http://go.microsoft.com/fwlink/p/?LinkId=255251 and then re-run this script."
+          Write-Error "The SharePoint Online Management Shell isn't installed. Please install it from: https://go.microsoft.com/fwlink/p/?LinkId=255251 and then re-run this script."
           return;
       }
   }
@@ -278,7 +276,7 @@ Dopo aver raccolto le informazioni che verranno richieste dallo script, il passa
     
 3. Eseguire lo script; Per esempio:
     
-      ```
+      ```powershell
     .\AddUsersToHold.ps1
       ```
 

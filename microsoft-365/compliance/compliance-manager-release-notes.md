@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 3646d86cd9edac95975958458eb52a44fe30d2f5
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 1a490212b2275b9f297e2585e7242f5331d0fe56
+ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417505"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "38686371"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Note sulla versione per Compliance Manager (anteprima)
 
@@ -27,11 +27,9 @@ L'anteprima pubblica di Compliance Manager fornisce l'accesso tempestivo alle fu
 
 ## <a name="whats-new-in-compliance-manager-preview"></a>Novità di Compliance Manager (anteprima)
 
-- **Accesso basato sui ruoli a Compliance Manager:** Il ruolo di **accesso Guess** predefinito è stato rimosso. Per consentire a un utente di accedere a Compliance Manager, l'amministratore globale deve [assegnare a ciascun utente un'autorizzazione](compliance-manager-overview#permissions.md).
+- **Accesso basato sui ruoli a Compliance Manager:** Il ruolo predefinito di **accesso Guest** è stato rimosso. Per consentire a un utente di accedere a Compliance Manager, l'amministratore globale deve [assegnare a ciascun utente un'autorizzazione](compliance-manager-overview.md#permissions).
 
-- **Integrazione con Microsoft Secure Score:** Compliance Manager supporta l'integrazione con [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) tramite la mappatura delle azioni gestite dai clienti a più di 50 operazioni di valutazione sicure. Quando si completa un'azione mappata in Secure score, l'azione corrispondente di Compliance Manager viene aggiornata automaticamente.
-
-- **Importare valutazioni personalizzate:** Oltre alle valutazioni predefinite, Compliance Manager ora supporta l'importazione di modelli personalizzati. È possibile creare valutazioni personalizzate per qualsiasi prodotto o servizio e per qualsiasi norma o regolamento.
+- **Punteggio di conformità aggiornato**: Il Punteggio di conformità include ora i punteggi per le azioni gestite da Microsoft. Il punteggio aumenterà di conseguenza.
 
 - **Elementi Actions:** Gli elementi azione sono ora singoli elementi e molti includono la raccolta di telemetria dall'API Microsoft Secure Score Graph. Se possibile, le raccomandazioni per l'azione tecnica sono ora collegate alla pagina di configurazione applicabile nel servizio Office 365.
 
@@ -39,8 +37,6 @@ L'anteprima pubblica di Compliance Manager fornisce l'accesso tempestivo alle fu
     - **Dimensioni:** Consente di visualizzare, aggiungere e personalizzare i metadati per i modelli, le valutazioni e gli elementi di azione che consentono di creare pivot personalizzati per i filtri.
     - **Proprietari:** Specificare un proprietario per ogni elemento di azione.
     - **Azioni dei clienti:** Gestire l'elenco completo degli elementi delle azioni inclusi in Compliance Manager (Preview) e abilitare/disabilitare il monitoraggio del Punteggio sicuro per gli elementi azione integrati con Secure score.
-
-- **Punteggio di conformità aggiornato**: la metodologia è stata modificata per supportare la sincronizzazione con Microsoft Secure score. Il Punteggio viene calcolato in base a punteggi azione gestiti da Microsoft e a punteggi azione gestiti dal cliente.
 
 ## <a name="known-issues-in-compliance-manager-preview"></a>Problemi noti in Compliance Manager (anteprima)
 
@@ -52,8 +48,11 @@ Nelle sezioni seguenti vengono illustrati i problemi noti da risolvere nelle pro
 
 ### <a name="secure-score"></a>Secure Score
 
-- I risultati del Punteggio sicuro non sono disponibili per alcuni elementi di azioni in determinate sottoscrizioni di Microsoft 365 e Office 365. Il risultato del Punteggio sicuro è' non è stato possibile rilevare ' in questi casi.
+- I risultati del Punteggio sicuro non sono disponibili per alcuni elementi di azioni in determinate sottoscrizioni di Microsoft 365 e Office 365. **Non è stato possibile rilevare** il risultato del Punteggio sicuro in questi casi.
 - A volte vengono restituiti risultati di Punteggio sicuro per i criteri corrispondenti e gli elementi di azione non completati.
+- Per i nuovi tenant, gli aggiornamenti del Punteggio sicuro per tutte le azioni vengono attivati automaticamente. L'amministratore globale può impostare l'opzione di aggiornamento continuo per il Punteggio sicuro su disattivato, che disattiva gli aggiornamenti per tutte le azioni.
+- Quando gli aggiornamenti del Punteggio sicuro sono attivati, le azioni vengono monitorate attivamente dal punteggio sicuro, anche se la data di test dell'azione non verrà aggiornata per riflettere il monitoraggio.
+- Quando vengono create nuove valutazioni, i punteggi includono automaticamente i punteggi dei controlli gestiti da Microsoft e l'integrazione del Punteggio sicuro.
 
 ### <a name="microsoft-managed-controls"></a>Controlli gestiti da Microsoft
 
@@ -69,12 +68,9 @@ Nelle sezioni seguenti vengono illustrati i problemi noti da risolvere nelle pro
 
 - Quando si importa un modello, tutte le valutazioni basate su tale modello riflettono tutte le famiglie di controlli facenti parte del modello. Tuttavia, se si aggiungono nuove famiglie di controlli al modello, tutte le valutazioni esistenti non riflettono le modifiche. Solo le nuove valutazioni create al di fuori del modello aggiornato riflettono le modifiche.
 
-### <a name="filters"></a>Filtri
-
-- Il filtro sugli elementi o sui controlli di azione non produce in modo coerente risultati corretti.
-
 ### <a name="templates"></a>Modelli
 
+- Quando si crea un modello, è necessario includere le dimensioni per il **prodotto** e la **certificazione** per garantire che il modello venga visualizzato nel punteggio di conformità.
 - I modelli archiviati sono modificabili e non devono essere modificabili.
 - I modelli bloccati consentono la creazione di una valutazione quando non dovrebbero. Il blocco di un modello deve impedire che venga utilizzato per creare valutazioni.
 

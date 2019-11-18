@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore nativo per importare i dati di terze parti da origini dati, ad esempio pagine business di Facebook, Twitter, pagine società di LinkedIn e Instant Bloomberg. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per poter utilizzare le funzionalità di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e mantenimento, per gestire la governance dei dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 2dde58e4d3ead0064e28c1ba1bfc04485c7a25df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 74b35281f72277c4698b835a63613288dce7d9ce
+ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083313"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686443"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>Utilizzare un connettore di esempio per archiviare i dati di Facebook in Office 365 (anteprima)
 
@@ -23,7 +23,7 @@ La funzionalità di esempio del connettore per l'archiviazione dei dati di Faceb
 
 Utilizzare un connettore di esempio nel centro sicurezza & compliance in Office 365 per importare e archiviare i dati da pagine business di Facebook a Office 365. Dopo aver configurato e configurato un connettore di esempio, si connette alla pagina business di Facebook (su base pianificata), converte il contenuto degli elementi di Facebook in un formato di messaggio di posta elettronica e quindi importa tali elementi in una cassetta postale in Office 365.
 
-Dopo aver importato i dati di Facebook, è possibile applicare le funzionalità di conformità di Office 365, ad esempio il blocco per controversia legale, la ricerca di contenuto, l'archiviazione sul posto, il controllo, la supervisione e i criteri di conservazione di Office 365 sui dati di Facebook. Ad esempio, quando una cassetta postale viene inserita nella conservazione per controversia legale o assegnata a un criterio di mantenimento, vengono conservati i dati di Facebook. È possibile cercare i dati di terze parti utilizzando la ricerca contenuto o associare la cassetta postale in cui vengono archiviati i dati di Facebook con un custode in un caso avanzato di eDiscovery. L'utilizzo di un connettore per l'importazione e l'archiviazione dei dati di Facebook in Office 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
+Dopo aver importato i dati di Facebook, è possibile applicare le funzionalità di conformità di Office 365, ad esempio il blocco per controversia legale, la ricerca di contenuto, l'archiviazione sul posto, il controllo, la [conformità alla comunicazione](communication-compliance.md)e i criteri di conservazione di Office 365 ai dati di Facebook. Ad esempio, quando una cassetta postale viene inserita nella conservazione per controversia legale o assegnata a un criterio di mantenimento, vengono conservati i dati di Facebook. È possibile cercare i dati di terze parti utilizzando la ricerca contenuto o associare la cassetta postale in cui vengono archiviati i dati di Facebook con un custode in un caso avanzato di eDiscovery. L'utilizzo di un connettore per l'importazione e l'archiviazione dei dati di Facebook in Office 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
 > [!NOTE]
 > In questo momento, solo i connettori di esempio per le pagine business di Facebook e [Twitter](archive-twitter-data-with-sample-connector.md) sono disponibili per l'anteprima. Sono disponibili più connettori di esempio.
@@ -85,9 +85,9 @@ Per istruzioni dettagliate, vedere [creare una nuova risorsa Web App in Azure](d
 
 Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate), vengono fornite le informazioni seguenti, che sono state copiate in un file di testo dopo aver completato i passaggi precedenti, durante la creazione della risorsa Web App.
 
-- APISecretKey — è possibile creare questo segreto durante il completamento di questo passaggio; viene utilizzato nel passaggio 7.
-- StorageAccountConnectionString: l'URI della stringa di connessione copiato dopo la creazione dell'account di archiviazione di Azure nel passaggio 3.
-- tenantId-l'ID tenant dell'organizzazione di Office 365 copiato dopo aver creato l'app Facebook Connector in Azure Active Directory nel passaggio 2.
+- APISecretKey: questo segreto è stato creato durante il completamento di questo passaggio. viene utilizzato nel passaggio 7.
+- StorageAccountConnectionString: URI della stringa di connessione copiato dopo la creazione dell'account di archiviazione di Azure nel passaggio 3.
+- tenantId: l'ID tenant dell'organizzazione di Office 365 copiato dopo aver creato l'app Facebook Connector in Azure Active Directory nel passaggio 2.
 
 Inoltre, è possibile caricare il file SampleConnector. zip (scaricato nel passaggio 1) in questo passaggio per distribuire il codice sorgente per l'app connettore Facebook.
 
@@ -118,7 +118,7 @@ Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate
 - I webhook di Facebook verificano il token (ottenuto nel passaggio 5)
 - ID applicazione di Azure Active Directory (ID applicazione AAD ottenuto nel passaggio 2)
 - Segreto dell'applicazione di Azure Active Directory (segreto dell'applicazione AAD ottenuto nel passaggio 2)
-- URI dell'applicazione di Azure Active Directory (l'URI dell'applicazione AAD ottenuto nel passaggio 2, ad esempio,https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)
+- URI dell'applicazione di Azure Active Directory (l'URI dell'applicazione AAD ottenuto nel passaggio 2, ad esempio,`https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)`
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Passaggio 7: configurare un connettore personalizzato nel centro sicurezza & Compliance
 

@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilizzare il pulsante Riprova per risolvere le ricerche di contenuto che presentano errori di posizione del contenuto.
-ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b35c2985efeafa3192a2404047fe62e28e04157e
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084777"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686612"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Riprovare una ricerca contenuto per risolvere un errore del percorso del contenuto
 
 Quando si utilizza la ricerca contenuto nel centro sicurezza e conformità per eseguire ricerche in un numero elevato di cassette postali, è possibile che si verifichino errori di ricerca analoghi a quelli riportati di seguito:
 
-```
+```text
 Error
 
 The search on the following locations failed:

@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & conformità a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
-ms.openlocfilehash: 198459eb013c2f34b1a440d29375069175bfb0c6
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d416e1e808ae6045f5510e0a051f038e4b38c06
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083765"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686568"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
@@ -33,9 +34,9 @@ Tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultat
   
 L'esportazione dei risultati di una ricerca di contenuto comporta la preparazione dei risultati e il relativo download a un computer locale.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-- Per esportare i risultati della ricerca, è necessario assegnare il ruolo di gestione export nel centro sicurezza & Compliance. Questo ruolo è assegnato al gruppo di ruoli Gestore di eDiscovery incorporato. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
+- Per esportare i risultati della ricerca, è necessario assegnare il ruolo di gestione export nel centro sicurezza & Compliance. Questo ruolo è assegnato al gruppo di ruoli Gestore di eDiscovery incorporato. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
 - Il computer utilizzato per esportare i risultati della ricerca deve soddisfare i seguenti requisiti di sistema:
     
@@ -47,7 +48,7 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
     
      - Microsoft Edge
     
-        O
+        OPPURE
     
      - Microsoft Internet Explorer 10 e versioni successive
     
@@ -65,17 +66,17 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
     
     Aggiungere le righe seguenti al file *Machine. config* da qualche parte tra `<configuration>` i `</configuration>` tag e. Assicurarsi di sostituire `ProxyServer` e `Port` con i valori corretti per l'organizzazione; ad esempio, `proxy01.contoso.com:80` . 
     
-    ```
+    ```text
     <system.net>
        <defaultProxy enabled="true" useDefaultCredentials="true">
-         <proxy proxyaddress="http://ProxyServer :Port " 
+         <proxy proxyaddress="https://ProxyServer :Port " 
                 usesystemdefault="False" 
                 bypassonlocal="True" 
                 autoDetect="False" />
        </defaultProxy>
     </system.net>
     ```
-    
+
 ## <a name="step-1-prepare-search-results-for-export"></a>Passaggio 1: Preparare i risultati della ricerca per l'esportazione
 
 Il primo passaggio consiste nel preparare i risultati della ricerca per l'esportazione. Quando si preparano i risultati, vengono caricati in una posizione di archiviazione di Azure fornita da Microsoft nel cloud Microsoft. Il contenuto delle cassette postali e dei siti viene caricato a una velocità massima di 2 GB/ora.
@@ -170,7 +171,7 @@ Come spiegato in precedenza, è possibile aumentare la velocità di download con
     
 
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Di seguito sono riportate altre informazioni sull'esportazione dei risultati della ricerca.
   
@@ -256,7 +257,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
     Se si esportano sia gli elementi indicizzati che quelli parzialmente indicizzati oppure se si esportano solo gli elementi indicizzati da una ricerca di contenuto che restituisce tutti gli elementi, verrà scaricato lo stesso numero di elementi. Questo accade anche se i risultati della ricerca stimati per la ricerca di contenuto (visualizzati nelle statistiche di ricerca nel centro sicurezza & conformità) continueranno a includere una stima distinta per il numero di elementi parzialmente indicizzati. Si supponga, ad esempio, che la stima di una ricerca che includa tutti gli elementi (nessuna parola chiave nella query di ricerca) indichi che sono stati trovati 1.000 elementi e che sono stati trovati anche gli elementi parzialmente indicizzati 200. In questo caso, gli elementi 1.000 includono gli elementi parzialmente indicizzati poiché la ricerca restituisce tutti gli elementi. In altre parole, sono disponibili 1.000 elementi totali restituiti dalla ricerca e non 1.200 elementi (come si potrebbe immaginare). Se si esportano i risultati della ricerca e si sceglie di esportare gli elementi indicizzati e parzialmente indicizzati (o di esportare solo elementi parzialmente indicizzati), verranno scaricati gli elementi 1.000. Di nuovo, perché gli elementi parzialmente indicizzati sono inclusi nei risultati regolari (indicizzati) quando si utilizza una query di ricerca vuota per restituire tutti gli elementi. In questo stesso esempio, se si sceglie di esportare solo gli elementi parzialmente indicizzati, verranno scaricati solo gli elementi 200 non indicizzati.
     
-    Si noti inoltre che nell'esempio precedente (quando si esportano elementi indicizzati e parzialmente indicizzati o si esportano solo elementi indicizzati), il rapporto **riepilogativo di esportazione** incluso con i risultati di ricerca esportati elenca 1.000 elementi stimati e 1.000 scaricati gli elementi per gli stessi motivi descritti in precedenza. 
+    Si noti inoltre che nell'esempio precedente (quando si esportano elementi indicizzati e parzialmente indicizzati o si esportano solo elementi indicizzati), il rapporto **riepilogativo di esportazione** incluso con i risultati di ricerca esportati elenca 1.000 elementi stimati e 1.000 gli elementi scaricati per gli stessi motivi descritti in precedenza. 
     
 - Se la ricerca da cui si stanno esportando i risultati è stata una ricerca di percorsi di contenuto specifici o di tutti i percorsi di contenuto dell'organizzazione, verranno esportati solo gli elementi parziali provenienti da percorsi di contenuto che contengono elementi che corrispondono ai criteri di ricerca. In altre parole, se non sono presenti risultati della ricerca in una cassetta postale o in un sito, tutti gli elementi parzialmente indicizzati in tale cassetta postale o sito non verranno esportati. Il motivo è che l'esportazione di elementi parzialmente indicizzati da un numero elevato di posizioni nell'organizzazione potrebbe aumentare la probabilità di errori di esportazione e aumentare il tempo necessario per esportare e scaricare i risultati della ricerca.
     
@@ -269,7 +270,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     ![Scegliere l'opzione di esportazione in base al fatto che un sito contenga un elemento indicizzato che corrisponda ai criteri di ricerca.](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
-    un. Vengono esportati solo gli elementi indicizzati che soddisfano i criteri di ricerca. Non vengono esportati elementi parzialmente indicizzati.
+    a. Vengono esportati solo gli elementi indicizzati che soddisfano i criteri di ricerca. Non vengono esportati elementi parzialmente indicizzati.
     
     b. Se non sono presenti elementi indicizzati provenienti da un sito che soddisfano i criteri di ricerca, gli elementi parzialmente indicizzati provenienti dallo stesso sito non vengono esportati. Se nei risultati della ricerca vengono restituiti elementi indicizzati provenienti da un sito, gli elementi parzialmente indicizzati provenienti da tale sito vengono esportati. In altre parole, vengono esportati solo gli elementi parzialmente indicizzati provenienti da siti che contengono elementi che soddisfano i criteri di ricerca.
     
@@ -277,7 +278,7 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
     Se si sceglie di esportare gli elementi parzialmente indicizzati, gli elementi delle cassette postali parzialmente indicizzati vengono esportati in un file PST separato indipendentemente dall'opzione scelta in **Esporta contenuto di Exchange con nome**.
 
-- Se nei risultati della ricerca vengono restituiti elementi parzialmente indicizzati (poiché altre proprietà degli elementi parzialmente indicizzati corrispondono ai criteri di ricerca), tali voci vengono esportate con i risultati di ricerca normali. Pertanto, se si sceglie di esportare sia gli elementi indicizzati sia gli elementi parzialmente indicizzati (selezionando **tutti gli elementi, compresi quelli che dispongono di un formato non riconosciuto, vengono crittografati o non sono stati indicizzati per altri motivi** , opzione di esportazione), gli elementi parzialmente indicizzati esportati con i risultati regolari verrà elencato nel rapporto Results. csv. Non verranno elencati nel rapporto elementi non indicizzati. csv.
+- Se nei risultati della ricerca vengono restituiti elementi parzialmente indicizzati (poiché altre proprietà degli elementi parzialmente indicizzati corrispondono ai criteri di ricerca), tali voci vengono esportate con i risultati di ricerca normali. Pertanto, se si sceglie di esportare sia gli elementi indicizzati sia gli elementi parzialmente indicizzati (selezionando tutti gli elementi **, compresi quelli che dispongono di un formato non riconosciuto, vengono crittografati o non sono stati indicizzati per altri motivi, è** possibile esportare l'opzione), gli elementi parzialmente indicizzati esportati con i risultati normali verranno elencati nel report results. csv. Non verranno elencati nel rapporto elementi non indicizzati. csv.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Esportazione di singoli messaggi o file PST
   

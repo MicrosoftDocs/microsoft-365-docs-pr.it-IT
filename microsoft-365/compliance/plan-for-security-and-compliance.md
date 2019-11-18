@@ -3,7 +3,7 @@ title: Pianificare la conformità &amp; della sicurezza in Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 3/15/2018
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Pagina di destinazione per pianificare la sicurezza e la conformità
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3619a5e22a5bc957b001dd4f42a9569a7543e6b5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 86eef432f30ea9a437f0857f693d62eb23f4ba8d
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084156"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38686471"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Pianificare la conformità &amp; della sicurezza in Office 365
 
@@ -51,7 +51,7 @@ La protezione dell'accesso ai dati e ai servizi di Office 365 è cruciale per la
 
 Esaminare e pianificare le funzionalità di protezione dei file organizzate da tre livelli di protezione.
   
-[PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
 ## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Passaggio 5: sfruttare il Centro sicurezza &amp; e conformità di Microsoft 365
 
@@ -59,9 +59,9 @@ Il centro &amp; sicurezza e conformità fornisce un'unica visualizzazione nei co
   
 - [Accedere al centro sicurezza &amp; e conformità di Office 365](go-to-the-securitycompliance-center.md)
     
-- [Permissions in the Office 365 Security &amp; Compliance Center](/security/office-365-security/protect-against-threats.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
-- [Fornire agli utenti l'accesso al centro sicurezza &amp; e conformità di Office 365](/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Fornire agli utenti l'accesso al centro sicurezza &amp; e conformità di Office 365](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>Passaggio 6: utilizzare scenari di sicurezza end-to-end come punti di partenza
 
@@ -69,7 +69,7 @@ Utilizzare queste configurazioni consigliate come punto di partenza per scenari 
   
 - [Criteri di posta elettronica e configurazioni sicure](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
     
-- [Contoso nel Microsoft Cloud](http://aka.ms/cloudarchcontoso)
+- [Contoso nel Microsoft Cloud](https://aka.ms/cloudarchcontoso)
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 Admin Center e dashboard
 
@@ -80,5 +80,3 @@ Configurare le impostazioni di sicurezza e conformità in questi centri di ammin
 |Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Interfaccia di amministrazione di Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Interfaccia di amministrazione di Exchange  <br/>  Interfaccia di amministrazione di SharePoint e interfaccia di amministrazione di OneDrive for business  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestione delle applicazioni per dispositivi mobili Microsoft  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
-   
-

@@ -1,5 +1,5 @@
 ---
-title: Eliminare gli elementi dal percorso originale
+title: Eliminare elementi dalla posizione originale
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro sicurezza & conformità per eliminare gli elementi dai percorsi originali.
-ms.openlocfilehash: d855a8e4c69d64cdb37c40b37b042c2571af67a8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c121cda03a4f5143275074aa288ae1f0a5548bfc
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070641"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38686526"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Eliminare gli elementi dal percorso originale (anteprima)
 
@@ -27,9 +29,9 @@ La caratteristica per eliminare gli elementi dal percorso originale è in antepr
 
 Se si utilizzano indagini sui dati, è possibile eliminare gli elementi dai percorsi originali. Questo significa che è possibile eliminare gli elementi da cassette postali di Exchange, siti di SharePoint e account di OneDrive nell'organizzazione. Poiché gli elementi sono stati raccolti come prova, sono presenti copie degli elementi conservati nel set di prove per ulteriori indagini o come riferimento.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-- Per eliminare gli elementi, è necessario assegnare il ruolo di **ricerca ed eliminazione** nel centro sicurezza & Compliance. Questo ruolo viene assegnato per impostazione predefinita al gruppo di ruoli investigatore dati incorporato. 
+- Per eliminare gli elementi, è necessario assegnare il ruolo di **ricerca ed eliminazione** nel centro sicurezza & Compliance. Questo ruolo viene assegnato per impostazione predefinita al gruppo di ruoli investigatore dati incorporato.
 
 - La procedura descritta in questo argomento presuppone che sia stata eseguita una ricerca associata a un'indagine e che i risultati della ricerca siano stati aggiunti a un set di evidenze. Dopo che i risultati della ricerca sono stati evidenziati, è possibile selezionare uno o più elementi da eliminare. Per ulteriori informazioni, vedere [Search for data in an Investigation](search-for-data.md).
 
@@ -41,7 +43,7 @@ Per eliminare gli elementi dal percorso originale, eseguire la procedura seguent
 
 1. Nello strumento **indagini dati** aprire l'analisi dei dati contenente gli elementi che si desidera eliminare e quindi fare clic sulla scheda **Evidence** .
 
-2. Selezionare gli elementi che si desidera eliminare. È possibile selezionare tutti gli elementi nel set di evidenze oppure selezionare solo un sottoinsieme di elementi. 
+2. Selezionare gli elementi che si desidera eliminare. È possibile selezionare tutti gli elementi nel set di evidenze oppure selezionare solo un sottoinsieme di elementi.
 
    > [!NOTE]
    > Se si selezionano gli allegati di un messaggio di posta elettronica o di un file allegato a un documento in SharePoint e OneDrive, l'elemento padre verrà selezionato ed eliminato anche quando l'elemento viene eliminato dal percorso originale. Analogamente, se si seleziona un elemento con allegati, l'elemento padre e tutti gli allegati vengono eliminati.
@@ -57,11 +59,11 @@ Per eliminare gli elementi dal percorso originale, eseguire la procedura seguent
    > [!NOTE]
    > Nella schermata precedente, il numero di elementi indica il numero di elementi selezionati per l'eliminazione. Il numero di documenti indica il numero totale di elementi, inclusi i file associati a un elemento padre. Ad esempio, se si seleziona un messaggio di posta elettronica e il messaggio contiene un documento di Word allegato, il numero di elementi e documenti visualizzati in **documenti selezionati sarebbe solo** **1 elementi (2 documenti)**.
 
-È possibile monitorare lo stato del processo **Elimina elementi dal percorso originale** nella scheda **processi** . fare clic sul processo per visualizzare la pagina del riquadro a comparsa. 
+È possibile monitorare lo stato del processo **Elimina elementi dal percorso originale** nella scheda **processi** . fare clic sul processo per visualizzare la pagina del riquadro a comparsa.
 
 ![Pagina riquadro a comparsa per eliminare gli elementi dal processo percorsi originali](media/DataInvestigationsDeleteItems3.png)
 
-Quando gli elementi del processo vengono eliminati, lo stato del processo è impostato su **esito positivo**. Viene visualizzata anche la data e l'ora del processo completato. 
+Quando gli elementi del processo vengono eliminati, lo stato del processo è impostato su **esito positivo**. Viene visualizzata anche la data e l'ora del processo completato.
 
 ![Processo elementi eliminati completati](media/DataInvestigationsDeleteItems4.png)
 

@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Installare e utilizzare Esplora archivi di Azure per scaricare i documenti esportati da un set di revisione in Advanced eDiscovery.
-ms.openlocfilehash: 4846a77d26079303f85778e71e6bdf2804ccea5e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 412ec48865c6cb7e511e3f6068fe02d87a99f831
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082911"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686573"
 ---
 # <a name="download-export-jobs"></a>Scaricare processi di esportazione
 
 Quando si esportano i documenti da un set di revisione in un caso avanzato di eDiscovery, i documenti vengono caricati in una posizione di archiviazione di Azure fornita da Microsoft o in un percorso di archiviazione di Azure gestito dall'organizzazione. Il tipo di percorso di archiviazione di Azure utilizzato dipende dall'opzione selezionata quando i documenti sono stati esportati. 
 
-In questo articolo vengono fornite le istruzioni per l'utilizzo di Microsoft Azure Storage Explorer per la connessione a un percorso di archiviazione di Azure per cercare e scaricare i documenti esportati. Per ulteriori informazioni su Esplora archivi di Azure, vedere [Guida introduttiva: utilizzare Esplora risorse di Azure](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+In questo articolo vengono fornite le istruzioni per l'utilizzo di Microsoft Azure Storage Explorer per la connessione a un percorso di archiviazione di Azure per cercare e scaricare i documenti esportati. Per ulteriori informazioni su Esplora archivi di Azure, vedere [Guida introduttiva: utilizzare Esplora risorse di Azure](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="step-1-install-the-azure-storage-explorer"></a>Passaggio 1: installare l'archivio di archiviazione di Azure
 
@@ -73,7 +73,7 @@ Il passaggio finale consiste nell'utilizzare l'esploratore di archiviazione di A
 
     Viene aperto il nodo **contenitori BLOB** (in **account** > di archiviazione **(contenitori associati)** \> . 
 
-    ![](./media/AzureStorageConnect5.png)
+    ![Esportare processi nel nodo contenitori BLOB](./media/AzureStorageConnect5.png)
 
     Contiene un contenitore denominato con il nome visualizzato del passaggio 4. Questo contenitore contiene una cartella per ogni processo di esportazione creato. Queste cartelle sono denominate con un ID che corrisponde all'ID del processo di esportazione. È possibile trovare questi ID di esportazione (e il nome dell'esportazione) in **informazioni di supporto** nella pagina a comparsa per ogni processo di **preparazione dei dati per l'esportazione** elencato nella scheda **processi** .
 

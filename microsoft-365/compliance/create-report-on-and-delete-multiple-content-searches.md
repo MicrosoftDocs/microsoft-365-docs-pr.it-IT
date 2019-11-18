@@ -7,24 +7,26 @@ ms.date: 6/26/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Informazioni su come automatizzare le attività di ricerca contenuto come la creazione di ricerche e l'esecuzione di report tramite gli script di PowerShell nel centro sicurezza & compliance in Office 365.
-ms.openlocfilehash: 75caf75d576ac4a24779de15f5b05cb7fe8fa724
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 43f6046521ef121f52b2a5abe26d2cd6a322d22c
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083070"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686588"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Creare, analizzare ed eliminare più ricerche di contenuto
 
  Creare rapidamente e segnalare le ricerche di individuazione è spesso un passaggio importante in eDiscovery e nelle indagini quando si cerca di conoscere i dati sottostanti e la ricchezza e la qualità delle ricerche. Per eseguire questa operazione, la sicurezza & Compliance Center PowerShell offre un set di cmdlet per automatizzare le attività di ricerca del contenuto in termini di tempo. Questi script consentono di creare una serie di ricerche in modo semplice e rapido e quindi di eseguire i report dei risultati di ricerca stimati che consentono di determinare la quantità di dati in questione. È inoltre possibile utilizzare gli script per creare diverse versioni delle ricerche per confrontare i risultati prodotti da ognuno di essi. Questi script consentono di identificare e abbattere i dati in modo rapido ed efficiente. 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per eseguire gli script descritti in questo argomento, è necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & Compliance. 
     
@@ -42,7 +44,7 @@ Il file con valori delimitati da virgole (CSV) creato in questo passaggio contie
   
 1. Copiare e incollare il testo seguente in un file txt tramite il blocco note. Salvare il file in una cartella nel computer locale. Gli altri script vengono salvati anche in questa cartella.
     
-    ```
+    ```text
     ExchangeLocation,SharePointLocation,ContentMatchQuery,StartDate,EndDate
     sarad@contoso.onmicrosoft.com,https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com,(lawsuit OR legal),1/1/2000,12/31/2005
     sarad@contoso.onmicrosoft.com,https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com,(lawsuit OR legal),1/1/2006,12/31/2010
@@ -72,7 +74,7 @@ Il passaggio successivo consiste nel connettersi al centro di sicurezza & Compli
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `ConnectSCC.ps1`. Salvare il file nella stessa cartella in cui è stato salvato il file CSV nel passaggio 1.
     
-    ```
+    ```powershell
     # Get login credentials 
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
@@ -82,15 +84,15 @@ Il passaggio successivo consiste nel connettersi al centro di sicurezza & Compli
 
 2. Nel computer locale, aprire Windows PowerShell, passare alla cartella in cui si trova lo script creato nel passaggio precedente, quindi eseguire lo script. Per esempio:
     
-    ```
+    ```powershell
     .\ConnectSCC.ps1
     ```
-  
+
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Passaggio 3: eseguire lo script per creare e avviare le ricerche
 
 Lo script in questo passaggio creerà una ricerca di contenuto distinta per ogni riga del file CSV creato nel passaggio 1. Quando si esegue questo script, verranno richiesti due valori:
   
-- **ID gruppo di ricerca** -questo nome fornisce un modo semplice per organizzare le ricerche create dal file CSV. Tutte le ricerche create vengono denominate con l'ID del gruppo di ricerca e quindi viene aggiunto un numero al nome della ricerca. Ad esempio, se si immette **ContosoCase** per l'ID del gruppo di ricerca, le ricerche verranno denominate **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3**e così via. Si noti che il nome digitato è distinzione tra maiuscole e minuscole. Quando si utilizza l'ID del gruppo di ricerca nel passaggio 4 e nel passaggio 5, è necessario utilizzare lo stesso caso in cui è stato creato. 
+- **ID gruppo di ricerca** -questo nome fornisce un modo semplice per organizzare le ricerche create dal file CSV. Tutte le ricerche create vengono denominate con l'ID del gruppo di ricerca e quindi viene aggiunto un numero al nome della ricerca. Ad esempio, se si immette **ContosoCase** per l'ID del gruppo di ricerca, le ricerche vengono denominate **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3**e così via. Si noti che il nome digitato è distinzione tra maiuscole e minuscole. Quando si utilizza l'ID del gruppo di ricerca nel passaggio 4 e nel passaggio 5, è necessario utilizzare lo stesso caso in cui è stato creato. 
     
 - **File CSV** : il nome del file CSV creato nel passaggio 1. Assicurarsi di includere l'utilizzo del nome file completo, includere l'estensione del file CSV. ad esempio, `ContosoCase.csv`.
     

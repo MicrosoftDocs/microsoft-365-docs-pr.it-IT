@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: Con Office 365, alcune funzionalità di crittografia sono attivate per impostazione predefinita. altre funzionalità possono essere configurate per soddisfare determinati requisiti legali o di conformità.
-ms.openlocfilehash: 3bb76d70bd364bd461721d6277516801b3675031
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f758bc026ee1ef8b071b92d29c950c3f436305a3
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083992"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686423"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>Configurare la crittografia in Office 365 Enterprise
 
@@ -40,4 +40,4 @@ Con Office 365, sono disponibili diverse funzionalità di crittografia per impos
 
 ## <a name="additional-information"></a>Informazioni aggiuntive
 
-Per ulteriori informazioni sulle soluzioni di protezione dei file che includono le opzioni di crittografia, vedere [File Protection Solutions in Office 365](https://www.microsoft.com/en-us/download/details.aspx?id=55523).
+Per ulteriori informazioni sulle soluzioni di protezione dei file che includono le opzioni di crittografia, vedere [File Protection Solutions in Office 365](https://www.microsoft.com/download/details.aspx?id=55523).

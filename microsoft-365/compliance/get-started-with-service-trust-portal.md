@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Per i report di conformità alle normative di Office 365, Azure e Dynamics 365 online, per visualizzare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e come è possibile essere conformi alle norme ISO, HIPAA, NIST, FINRA, GDPR e FedRAMP quando si utilizzano questi servizi online.
-ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 22968c23b1d521b8fd48e9eccd4679e0a6dd2ed2
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082886"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686557"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introduzione a Microsoft Service Trust Portal
 
@@ -86,10 +86,10 @@ Fornisce informazioni di conformità specifiche per l'industria e le aree geogra
 
     - Istruzione
     - Servizi finanziari
-    - Governo
-    - Integrità
+    - Enti pubblici
+    - Sanità
     - Produzione
-    - Dettaglio
+    - Vendita al dettaglio
 
 - **Regions** -fornisce pareri legali su Microsoft Cloud Services conformità con varie leggi di vari paesi. Alcuni paesi sono Australia, Repubblica Ceca, Germania, Polonia, Romania, Spagna e Regno Unito.
   
@@ -169,4 +169,4 @@ Il Service Trust Portal consente di visualizzare il contenuto della pagina in di
   
 Il feedback è molto importante per noi. Fare clic sul pulsante feedback nella parte inferiore della pagina per inviarci commenti su cosa hai fatto o non ti piace, oppure suggerimenti per migliorare i prodotti o le caratteristiche del prodotto.
   
-![](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![Che tipo di feedback hai](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

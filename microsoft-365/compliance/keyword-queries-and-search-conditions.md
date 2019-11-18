@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Informazioni sulla posta elettronica e sulle proprietà dei file che è possibile cercare nelle cassette postali di Exchange Online e nei siti di SharePoint o OneDrive for business utilizzando lo strumento di ricerca contenuto nel centro sicurezza & Compliance.  '
-ms.openlocfilehash: 5b3438537e2936fa140052c6869f84937e103746
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e01953c6397c8c7ca9f38780537f3f7546b238fb
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082892"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686554"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Query con parole chiave e condizioni di ricerca per Ricerca contenuto
 
@@ -74,7 +75,7 @@ Nella tabella seguente sono elencate le proprietà dei messaggi di posta elettro
 
 ## <a name="searchable-site-properties"></a>Proprietà dei siti disponibili per la ricerca
 
-Nella tabella seguente sono riportate alcune delle proprietà di SharePoint e OneDrive for business che è possibile cercare utilizzando la funzionalità Ricerca contenuto nel centro sicurezza & Compliance oppure utilizzando il comando **New-ComplianceSearch** o **set-ComplianceSearch **cmdlet. Nella tabella è incluso un esempio della sintassi _Property: value_ per ogni proprietà e una descrizione dei risultati della ricerca restituiti dagli esempi. 
+Nella tabella seguente sono riportate alcune delle proprietà di SharePoint e OneDrive for business che è possibile cercare utilizzando la funzionalità Ricerca contenuto nel centro sicurezza & Compliance oppure utilizzando il cmdlet **New-ComplianceSearch** o **set-ComplianceSearch** . Nella tabella è incluso un esempio della sintassi _Property: value_ per ogni proprietà e una descrizione dei risultati della ricerca restituiti dagli esempi. 
   
 Per un elenco completo delle proprietà di SharePoint di cui è possibile eseguire la ricerca, vedere [Overview of indicizzazione e managed properties in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). È possibile cercare le proprietà contrassegnate con un **Sì** nella colonna **Queryable** . 
   
@@ -145,7 +146,7 @@ Gli operatori di ricerca booleani, come **and**, **or**e **not**, consentono di 
 |:-----|:-----|:-----|
 |E|keyword1 AND keyword2|Restituisce gli elementi che includono tutte le parole chiave o `property:value` le espressioni specificate. Ad esempio, `from:"Ann Beebe" AND subject:northwind` restituisce tutti i messaggi inviati da Ann Beebe che contengono la parola Northwind nella riga dell'oggetto. <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Restituisce gli elementi che *contengono* `keyword2` o `keyword3` *e* che contengono `keyword1`anche.   Questo esempio è pertanto equivalente alla query `(keyword2 OR keyword3) AND keyword1`.  <br/> La query `keyword1 + keyword2` (con uno spazio dopo il **+** simbolo) non è identica a quella utilizzata dall'operatore * * e * *. Questa query equivale a `"keyword1 + keyword2"` restituire gli elementi con la fase `"keyword1 + keyword2"`esatta.|
-|O|keyword1 OR keyword2|Restituisce gli elementi che includono una o più parole chiave o `property:value` espressioni specificate. <sup>2</sup>|
+|OPPURE|keyword1 OR keyword2|Restituisce gli elementi che includono una o più parole chiave o `property:value` espressioni specificate. <sup>2</sup>|
 |NON|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> NOT Kind: im|Esclude gli elementi specificati da una parola chiave o `property:value` da un'espressione. Nel secondo esempio vengono esclusi i messaggi inviati da Ann Beebe. Nel terzo esempio vengono escluse le conversazioni di messaggistica istantanea, ad esempio le conversazioni di Skype for business salvate nella cartella della cassetta postale cronologia conversazioni. <sup>2</sup>|
 |-|keyword1-keyword2|Equivale all'operatore **NOT**. In questo modo, la query restituisce `keyword1` elementi che contengono e escludono `keyword2`gli elementi che contengono.|
 |VICINO|keyword1 NEAR(n) keyword2|Restituisce gli elementi con parole che sono una accanto all'altra, dove n equivale al numero delle parole separate. Ad esempio, `best NEAR(5) worst` restituisce tutti gli elementi in cui la parola "Worst" è all'interno di cinque parole "Best". Se non viene specificato alcun numero, la distanza predefinita è di otto parole. <sup>2</sup>|
@@ -277,7 +278,7 @@ Tenere presente quanto segue quando si utilizzano le condizioni di ricerca.
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>Esempi
 
-Negli esempi seguenti viene illustrata la versione basata su GUI di una query di ricerca con condizioni, la sintassi delle query di ricerca visualizzata nel riquadro dei dettagli della ricerca selezionata (restituita anche dal cmdlet **Get-ComplianceSearch** ) e la logica del query KQL corrispondente. 
+Negli esempi seguenti viene illustrata la versione basata su GUI di una query di ricerca con condizioni, la sintassi delle query di ricerca che viene visualizzata nel riquadro dei dettagli della ricerca selezionata (restituita anche dal cmdlet **Get-ComplianceSearch** ) e la logica della query KQL corrispondente. 
   
 #### <a name="example-1"></a>Esempio 1
 
@@ -379,13 +380,13 @@ Solo i documenti condivisi tramite la terza opzione (condivisi con **persone spe
 
 È possibile utilizzare la query di parole chiave seguente per cercare in modo specifico il contenuto nelle conversazioni di Skype for business:
 
-```
+```powershell
 kind:im
 ```
 
 La query di ricerca precedente restituisce anche chat da Microsoft teams. Per evitare questo risultato, è possibile restringere i risultati della ricerca per includere solo le conversazioni di Skype for business utilizzando la seguente query di parole chiave:
 
-```
+```powershell
 kind:im AND subject:conversation
 ```
 
@@ -393,7 +394,7 @@ La query con parole chiave precedente esclude le chat in Microsoft teams perché
 
 Per cercare le conversazioni di Skype for business che si sono verificate in un intervallo di date specifico, utilizzare la seguente query di parole chiave:
 
-```
+```powershell
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
 

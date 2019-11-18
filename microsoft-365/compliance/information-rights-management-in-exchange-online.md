@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: È possibile configurare IRM di Exchange Online per l'utilizzo di Active Directory Rights Management Service (AD RMS), se necessario, per soddisfare i requisiti dell'organizzazione. Non si tratta di una cosa comune. Se non si dispone di un requisito per l'utilizzo di AD RMS, utilizzare invece la crittografia dei messaggi di Office.
-ms.openlocfilehash: f5611ca7efeae0ab60ef90ebf4f8a225ea1332e7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1c3bdf02f31f57f1328f0244d539d0dc88e7ba89
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082830"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686420"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>Crittografia della posta di Exchange Online con AD RMS
 
@@ -43,6 +43,6 @@ Una volta abilitata, la protezione IRM può essere applicata ai messaggi come ri
     
 - **Gli amministratori possono utilizzare le regole di protezione del trasporto per applicare la protezione IRM automaticamente a Outlook e Outlook sul web.** È possibile creare regole di protezione del trasporto per proteggere i messaggi mediante IRM. Configurare l'azione della regola di protezione del trasporto per applicare un modello dei criteri per i diritti AD RMS ai messaggi che soddisfano la condizione della regola. Dopo avere abilitato IRM, i modelli dei criteri per i diritti AD RMS dell'organizzazione sono disponibili per essere utilizzati con l'azione della regola di protezione del trasporto chiamata **Applica protezione dei diritti al messaggio con**.
     
-- **Gli amministratori possono creare regole di protezione di Outlook.** Le regole di protezione di Outlook applicano automaticamente la protezione IRM ai messaggi in Outlook 2010 e non in Outlook sul web, in base alle condizioni del messaggio che includono il reparto del mittente, il destinatario del messaggio e se i destinatari si trovano all'interno o all'esterno dell'organizzazione. Per ulteriori informazioni, vedere [Create an Outlook Protection Rule](http://technet.microsoft.com/library/da64750d-faaf-44de-ad8c-888eba7fbdbf.aspx).
+- **Gli amministratori possono creare regole di protezione di Outlook.** Le regole di protezione di Outlook applicano automaticamente la protezione IRM ai messaggi in Outlook 2010 e non in Outlook sul web, in base alle condizioni del messaggio che includono il reparto del mittente, il destinatario del messaggio e se i destinatari si trovano all'interno o all'esterno dell'organizzazione. Per ulteriori informazioni, vedere [Create an Outlook Protection Rule](https://technet.microsoft.com/library/da64750d-faaf-44de-ad8c-888eba7fbdbf.aspx).
     
 

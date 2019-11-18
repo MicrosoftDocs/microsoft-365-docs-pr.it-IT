@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare Office 365 eDiscovery e gli strumenti di ricerca per gestire e rispondere a un evento di fuoriuscita dei dati nell'organizzazione.
-ms.openlocfilehash: bf6c22a593a2611b86012cd51e3e2932a13dfe4d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082987"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686583"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie di soluzioni di eDiscovery: scenario di fuoriuscita dei dati-ricerca ed eliminazione
 
@@ -82,7 +82,7 @@ Per creare una ricerca di contenuto associata a un caso di eDiscovery, vedere la
 
 Dopo aver creato una ricerca di contenuto, è necessario esaminare e convalidare i risultati della ricerca e verificare che siano costituiti solo dai messaggi di posta elettronica che devono essere eliminati. In una ricerca di contenuto, è possibile visualizzare in anteprima un campionamento casuale di 1.000 messaggi di posta elettronica senza esportare i risultati della ricerca per evitare un ulteriore versamento dei dati. Per ulteriori informazioni sulle limitazioni relative all'anteprima, vedere [limits for content search](limits-for-content-search.md).
   
-Se si dispone di più di 1.000 cassette postali o più di 100 messaggi di posta elettronica per cassetta postale da esaminare, è possibile suddividere la ricerca iniziale in più ricerche utilizzando parole chiave aggiuntive o condizioni quali l'intervallo di date o il mittente/destinatario ed esaminare i risultati di ogni ricerca. individualmente. Assicurarsi di prendere nota di tutte le query di ricerca da utilizzare quando si eliminano i messaggi nel [passaggio 7](#step-7-permanently-delete-the-spilled-data).
+Se si dispone di più di 1.000 cassette postali o più di 100 messaggi di posta elettronica per cassetta postale da esaminare, è possibile suddividere la ricerca iniziale in più ricerche utilizzando parole chiave aggiuntive o condizioni quali l'intervallo di date o il mittente/destinatario ed esaminare i risultati di ogni ricerca singolarmente. Assicurarsi di prendere nota di tutte le query di ricerca da utilizzare quando si eliminano i messaggi nel [passaggio 7](#step-7-permanently-delete-the-spilled-data).
 
 Se a un custode o a un utente finale viene assegnata una licenza di Office 36 E5, è possibile esaminare fino a 10.000 risultati della ricerca in una sola volta utilizzando Office 365 Advanced eDiscovery. Se sono presenti più di 10.000 messaggi di posta elettronica da rivedere, è possibile dividere la query di ricerca per intervallo di date ed esaminare ogni risultato singolarmente, in base alla quale i risultati della ricerca vengono ordinati per data. In Advanced eDiscovery, è possibile contrassegnare i risultati della ricerca utilizzando l' **etichetta come** caratteristica nel pannello anteprima e filtrare il risultato della ricerca in base al tag etichettato. Questa operazione è utile quando si collabora con un revisore secondario. Utilizzando strumenti di analisi aggiuntivi in Advanced eDiscovery, ad esempio il riconoscimento ottico dei caratteri, il threading della posta elettronica e la codifica predittiva, è possibile elaborare e rivedere rapidamente migliaia di messaggi e contrassegnarli per ulteriori riesami. Vedere [la pagina relativa alla configurazione rapida di Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
 
@@ -174,24 +174,24 @@ Utilizzando i percorsi delle cassette postali raccolte e preparate nel passaggio
     
 2. Eseguire il comando riportato di seguito:
     
-    ```
+    ```powershell
     Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
     ```
-  
+
 3. Rieseguire il comando precedente per ogni cassetta postale contenente i dati riversati, sostituendo il valore del parametro Identity. Per esempio:
 
-    ```
+    ```powershell
     Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-    ```
+    ```powershell
     Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
     ```
 
-   ```
+   ```powershell
    Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
    ```
-  
+
 Come indicato in precedenza, è anche possibile creare uno [script di PowerShell](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) ed eseguirlo su un elenco di cassette postali in modo che lo script elimini i dati versati in ogni cassetta postale.
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Passaggio 8: verificare, fornire una prova di eliminazione e controllo

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni sulla gestione degli accessi con privilegi in Office 365
-ms.openlocfilehash: 7547568d6ea2a13de5391d5a827df2921833838c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9bc2aab9c9758daf35aa14a41d7997a0bff5764f
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084434"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686435"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Gestione degli accessi con privilegi in Office 365
 
@@ -94,4 +94,4 @@ Avviare [la configurazione dell'organizzazione per la gestione degli accessi con
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 
-[Guida interattiva: monitorare e controllare le attività dell'amministratore con la gestione degli accessi con privilegi](https://content.cloudguides.com/en-us/guides/Privileged%20Access%20Management)
+[Guida interattiva: monitorare e controllare le attività dell'amministratore con la gestione degli accessi con privilegi](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

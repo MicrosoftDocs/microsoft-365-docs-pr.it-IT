@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 820bab0a128f952cf5d96208f5d561f4994bd859
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9c3111069ff30784af5fe781200de5e770c79066
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084242"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38686637"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 
@@ -107,7 +107,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_argentina_national_id trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_argentina_national_id trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_argentina_national_id.
 
 ```xml
@@ -211,12 +211,12 @@ Nove lettere e numeri:
 - Due cifre 
 - Cinque cifre o lettere (senza distinzione tra maiuscole/minuscole)
 
-O
+OPPURE
 
 - 1-2 lettere facoltative (senza distinzione tra maiuscole/minuscole) 
 - 4-9 cifre
 
-O
+OPPURE
 
 - Nove cifre o lettere (senza distinzione tra maiuscole/minuscole)
 
@@ -587,8 +587,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare CEP_Regex_AzureDocumentDBAuthKey trova il contenuto che corrisponde al modello.
-- L'espressione regolare CEP_CommonExampleKeywords non **trova contenuto** corrispondente al modello.
+- L'espressione regolare CEP_Regex_AzureDocumentDBAuthKey trova contenuti che corrispondono al modello.
+- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -647,8 +647,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare CEP_Regex_AzureConnectionString trova il contenuto che corrisponde al modello.
-- L'espressione regolare CEP_CommonExampleKeywords non **trova contenuto** corrispondente al modello.
+- L'espressione regolare CEP_Regex_AzureConnectionString trova contenuti che corrispondono al modello.
+- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -707,8 +707,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare CEP_Regex_AzureIoTConnectionString trova il contenuto che corrisponde al modello.
-- L'espressione regolare CEP_CommonExampleKeywords non **trova contenuto** corrispondente al modello.
+- L'espressione regolare CEP_Regex_AzureIoTConnectionString trova contenuti che corrispondono al modello.
+- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -757,8 +757,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare CEP_Regex_AzurePublishSettingPasswords trova il contenuto che corrisponde al modello.
-- L'espressione regolare CEP_CommonExampleKeywords non **trova contenuto** corrispondente al modello.
+- L'espressione regolare CEP_Regex_AzurePublishSettingPasswords trova contenuti che corrispondono al modello.
+- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
 
 
 ```xml
@@ -813,8 +813,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare CEP_Regex_AzureRedisCacheConnectionString trova il contenuto corrispondente al modello.
-- L'espressione regolare CEP_CommonExampleKeywords non **trova contenuto** corrispondente al modello.
+- L'espressione regolare CEP_Regex_AzureRedisCacheConnectionString trova contenuti che corrispondono al modello.
+- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -867,7 +867,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare CEP_Regex_AzureSAS trova il contenuto che corrisponde al modello.
+- L'espressione regolare CEP_Regex_AzureSAS trova contenuti che corrispondono al modello.
 
 ```xml
 <!--Azure SAS-->
@@ -907,8 +907,8 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare CEP_Regex_AzureServiceBusConnectionString trova il contenuto corrispondente al modello.
-- L'espressione regolare CEP_CommonExampleKeywords non **trova contenuto** corrispondente al modello.
+- L'espressione regolare CEP_Regex_AzureServiceBusConnectionString trova contenuti che corrispondono al modello.
+- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -965,9 +965,9 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare CEP_Regex_AzureStorageAccountKey trova il contenuto che corrisponde al modello.
-- L'espressione regolare CEP_AzureEmulatorStorageAccountFilter non **trova contenuto** corrispondente al modello.
-- L'espressione regolare CEP_CommonExampleKeywords non **trova contenuto** corrispondente al modello.
+- L'espressione regolare CEP_Regex_AzureStorageAccountKey trova contenuti che corrispondono al modello.
+- L'espressione regolare CEP_AzureEmulatorStorageAccountFilter **non** trova il contenuto corrispondente al modello.
+- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1024,7 +1024,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare CEP_Regex_AzureStorageAccountKeyGeneric trova il contenuto che corrisponde al modello.
+- L'espressione regolare CEP_Regex_AzureStorageAccountKeyGeneric trova contenuti che corrispondono al modello.
 
 ```xml
 <!--Azure Storage Account Key (Generic)-->
@@ -1057,7 +1057,7 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_belgium_national_number trova contenuto che corrisponde al modello.
+- La funzione Func_belgium_national_number trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_belgium_national_number.
 - Il checksum ha esito positivo.
 
@@ -1125,12 +1125,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_brazil_cpf trova contenuto che corrisponde al modello.
+- La funzione Func_brazil_cpf trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_brazil_cpf.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_brazil_cpf trova contenuto che corrisponde al modello.
+- La funzione Func_brazil_cpf trova contenuto corrispondente al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -1185,12 +1185,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_brazil_cnpj trova contenuto che corrisponde al modello.
+- La funzione Func_brazil_cnpj trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_brazil_cnpj.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_brazil_cnpj trova contenuto che corrisponde al modello.
+- La funzione Func_brazil_cnpj trova contenuto corrispondente al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -1261,12 +1261,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_brazil_rg trova contenuto che corrisponde al modello.
+- La funzione Func_brazil_rg trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_brazil_rg.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_brazil_rg trova contenuto che corrisponde al modello.
+- La funzione Func_brazil_rg trova contenuto corrispondente al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -1440,7 +1440,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_ [province_name] _drivers_license_name
 
 - L'abbreviazione della provincia, ad esempio, AB
 - Il nome della provincia, ad esempio, Alberta
@@ -1707,8 +1707,8 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: l'espressione regolare Regex_canada_phin trova contenuto che corrisponde al modello.
-Sono state trovate almeno due parole chiave di Keyword_canada_phin o Keyword_canada_provinces..
+Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: l'espressione regolare Regex_canada_phin trova contenuto corrispondente al modello.
+Sono state trovate almeno due parole chiave provenienti da Keyword_canada_phin o Keyword_canada_provinces..
 
 ```xml
 <!-- Canada PHIN -->
@@ -1867,12 +1867,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_chile_id_card trova contenuto che corrisponde al modello.
+- La funzione Func_chile_id_card trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_chile_id_card.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_chile_id_card trova contenuto che corrisponde al modello.
+- La funzione Func_chile_id_card trova contenuto corrispondente al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -1926,12 +1926,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_china_resident_id trova contenuto che corrisponde al modello.
+- La funzione Func_china_resident_id trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_china_resident_id.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_china_resident_id trova contenuto che corrisponde al modello.
+- La funzione Func_china_resident_id trova contenuto corrispondente al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -2223,7 +2223,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_croatia_id_card trova contenuto che corrisponde al modello.
+- La funzione Func_croatia_id_card trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_croatia_id_card.
 
 ```xml
@@ -2263,12 +2263,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_croatia_oib_number trova contenuto che corrisponde al modello.
+- La funzione Func_croatia_oib_number trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_croatia_oib_number.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_croatia_oib_number trova contenuto che corrisponde al modello.
+- La funzione Func_croatia_oib_number trova contenuto corrispondente al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -2304,7 +2304,7 @@ Nove cifre con Slash opzionale (formato precedente) 10 cifre con barra di inoltr
 Nove cifre (formato obsoleto):
 - 9 cifre
 
-O
+OPPURE
 
 - Sei cifre che rappresentano la data di nascita
 - Una barra
@@ -2313,7 +2313,7 @@ O
 10 cifre (nuovo formato):
 - 10 cifre
 
-O
+OPPURE
 
 - Sei cifre che rappresentano la data di nascita
 - Una barra 
@@ -2325,7 +2325,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è 85% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_czech_id_card trova contenuto che corrisponde al modello.
+Un criterio DLP è 85% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_czech_id_card trova contenuto corrispondente al modello.
 Viene trovata una parola chiave da Keyword_czech_id_card.
 Il checksum ha esito positivo.
 
@@ -2362,7 +2362,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: l'espressione regolare Regex_denmark_id trova contenuto che corrisponde al modello.
+Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: l'espressione regolare Regex_denmark_id trova contenuto corrispondente al modello.
 Viene trovata una parola chiave da Keyword_denmark_id.
 Il checksum ha esito positivo.
 
@@ -2836,12 +2836,12 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
    
 ## <a name="finland-passport-number"></a>Finlandia - Numero di passaporto
 
-Combinazione di formato di nove lettere e combinazioni di caratteri di nove lettere e cifre: due lettere (senza distinzione tra maiuscole/minuscole) sette cifre checksum nessuna definizione un criterio DLP è 75% sicuro che sia stato rilevato questo tipo di informazioni riservate se, all'interno di un prossimità di 300 caratteri: l'espressione regolare Regex_finland_passport_number trova il contenuto che corrisponde al modello.
+Combinazione di formato di nove lettere e combinazioni di caratteri di nove lettere e cifre: due lettere (senza distinzione tra maiuscole/minuscole) sette cifre checksum nessuna definizione un criterio DLP è 75% sicuro che sia stato rilevato questo tipo di informazioni riservate se, all'interno di un prossimità di 300 caratteri: l'espressione regolare Regex_finland_passport_number trova il contenuto corrispondente al modello.
 Viene trovata una parola chiave da Keyword_finland_passport_number.
 <!-- Finland Passport Number -->
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
 </Entity>
-Parole chiave Keyword_finland_passport_number passaporto passi
+Parole chiave Keyword_finland_passport_number Passport proc
    
 ## <a name="france-drivers-license-number"></a>Francia - Numero della patente di guida
 
@@ -3001,12 +3001,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 95%, entro 300 caratteri, se:
-- La funzione Func_french_insee o Func_fr_insee trova contenuto che corrisponde al modello.
+- La funzione Func_french_insee o Func_fr_insee trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_fr_insee.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_french_insee o Func_fr_insee trova contenuto che corrisponde al modello.
+- La funzione Func_french_insee o Func_fr_insee trova contenuto corrispondente al modello.
 - Non vengono trovate parole chiave da Keyword_fr_insee.
 - Il checksum ha esito positivo.
 
@@ -3306,7 +3306,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
-- L'espressione regolare Regex_germany_id_card trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_germany_id_card trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_germany_id_card.
 
 ```xml
@@ -3356,7 +3356,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_greece_id_card trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_greece_id_card trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_greece_id_card.
 
 ```xml
@@ -3398,12 +3398,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_hong_kong_id_card trova contenuto che corrisponde al modello.
+- La funzione Func_hong_kong_id_card trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_hong_kong_id_card.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
-- La funzione Func_hong_kong_id_card trova contenuto che corrisponde al modello.
+- La funzione Func_hong_kong_id_card trova contenuto corrispondente al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -3480,7 +3480,7 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare Regex_india_permanent_account_number trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_india_permanent_account_number trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_india_permanent_account_number.
 - Il checksum ha esito positivo.
 
@@ -3522,10 +3522,10 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è 85% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_india_aadhaar trova contenuto che corrisponde al modello.
+Un criterio DLP è 85% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_india_aadhaar trova contenuto corrispondente al modello.
 Viene trovata una parola chiave da Keyword_india_aadhar.
 Il checksum ha esito positivo.
-Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_india_aadhaar trova contenuto che corrisponde al modello.
+Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_india_aadhaar trova contenuto corrispondente al modello.
 Il checksum ha esito positivo.
 ```xml
 <!-- India Unique Identification (Aadhaar) number -->
@@ -3572,11 +3572,11 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_indonesia_id_card trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_indonesia_id_card trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_indonesia_id_card.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_indonesia_id_card trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_indonesia_id_card trova contenuti che corrispondono al modello.
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -3726,7 +3726,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - Viene trovata una parola chiave da Dictionary_icd_10_codes.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- Viene trovata una parola chiave da Dictionary_icd_10_.
+- Viene trovata una parola chiave da Dictionary_icd_10_ aggiornata.
 
 ```xml
       <!-- ICD-10 CM -->
@@ -3816,14 +3816,14 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_ireland_pps trova contenuto che corrisponde al modello.
+- La funzione Func_ireland_pps trova contenuto corrispondente al modello.
 - Si verifica una delle situazioni seguenti:
     - Viene trovata una parola chiave da Keyword_ireland_pps.
     - La funzione Func_eu_date rileva una data nel formato corretto.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%, entro 300 caratteri, se:
-- La funzione Func_ireland_pps trova contenuto che corrisponde al modello.
+- La funzione Func_ireland_pps trova contenuto corrispondente al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -4324,7 +4324,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_jp_residence_card_number trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_jp_residence_card_number trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_residence_card_number.
 
 ```xml
@@ -4369,7 +4369,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare Regex_malaysia_id_card_number trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_malaysia_id_card_number trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_malaysia_id_card_number.
 
 ```xml
@@ -4434,9 +4434,9 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_netherlands_bsn trova contenuto che corrisponde al modello.
+- La funzione Func_netherlands_bsn trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_netherlands_bsn.
-- La funzione Func_eu_date2 rileva una data nel formato di data appropriato.
+- La funzione Func_eu_date2 trova una data nel formato di data appropriato.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -4501,7 +4501,7 @@ Keyword_nz_terms
 
 - NHI 
 - New Zealand 
-- Integrità 
+- Sanità 
 - trattamento 
    
 ## <a name="norway-identification-number"></a>Norvegia - Numero di identificazione
@@ -4525,11 +4525,11 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_norway_id_number trova contenuto che corrisponde al modello.
+- La funzione Func_norway_id_number trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_norway_id_number.
 - Il checksum ha esito positivo.
 - Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_norway_id_numbe trova contenuto che corrisponde al modello.
+- La funzione Func_norway_id_numbe trova contenuto corrispondente al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -4580,7 +4580,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_philippines_unified_id trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_philippines_unified_id trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_philippines_id.
 
 ```xml
@@ -4618,7 +4618,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_polish_national_id trova contenuto che corrisponde al modello.
+Un criterio DLP è 75% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri: la funzione Func_polish_national_id trova contenuto corrispondente al modello.
 Viene trovata una parola chiave da Keyword_polish_national_id_passport_number.
 Il checksum ha esito positivo.
 
@@ -4742,7 +4742,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare Regex_portugal_citizen_card trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_portugal_citizen_card trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_portugal_citizen_card.
 
 ```xml
@@ -4827,12 +4827,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare Regex_singapore_nric trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_singapore_nric trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_singapore_nric.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_singapore_nric trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_singapore_nric trova contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -4884,7 +4884,7 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_south_africa_identification_number trova contenuto che corrisponde al modello.
+- La funzione Func_south_africa_identification_number trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_south_africa_identification_number.
 - Il checksum ha esito positivo.
 
@@ -4929,12 +4929,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_south_korea_resident_number trova contenuto che corrisponde al modello.
+- La funzione Func_south_korea_resident_number trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_south_korea_resident_number.
 - Il checksum ha esito positivo.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_south_korea_resident_number trova contenuto che corrisponde al modello.
+- La funzione Func_south_korea_resident_number trova contenuto corrispondente al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -5021,10 +5021,10 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- L'espressione regolare CEP_Regex_SQLServerConnectionString trova il contenuto che corrisponde al modello.
+- L'espressione regolare CEP_Regex_SQLServerConnectionString trova contenuti che corrispondono al modello.
 - **Non** viene trovata una parola chiave da CEP_GlobalFilter.
-- L'espressione regolare CEP_PasswordPlaceHolder non **trova contenuto** corrispondente al modello.
-- L'espressione regolare CEP_CommonExampleKeywords non **trova contenuto** corrispondente al modello.
+- L'espressione regolare CEP_PasswordPlaceHolder **non** trova il contenuto corrispondente al modello.
+- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
 
 ```sql
 <!---SQL Server Connection String>
@@ -5326,7 +5326,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_taiwan_passport trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_taiwan_passport trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_taiwan_passport.
 
 ```xml
@@ -5372,7 +5372,7 @@ No
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- L'espressione regolare Regex_taiwan_resident_certificate trova il contenuto che corrisponde al modello.
+- L'espressione regolare Regex_taiwan_resident_certificate trova contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_taiwan_resident_certificate.
 
 ```xml
@@ -5422,11 +5422,11 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_Thai_Citizen_Id trova contenuto che corrisponde al modello.
+- La funzione Func_Thai_Citizen_Id trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_Thai_Citizen_Id.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_Thai_Citizen_Id trova contenuto che corrisponde al modello.
+- La funzione Func_Thai_Citizen_Id trova contenuto corrispondente al modello.
 
 ```xml
 <!-- Thai Citizen ID -->
@@ -5470,11 +5470,11 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione Func_Turkish_National_Id trova contenuto che corrisponde al modello.
+- La funzione Func_Turkish_National_Id trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_Turkish_National_Id.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_Turkish_National_Id trova contenuto che corrisponde al modello.
+- La funzione Func_Turkish_National_Id trova contenuto corrispondente al modello.
 
 ```xml
 <!-- Turkish National Identity -->
@@ -5509,7 +5509,7 @@ Combinazione di 18 lettere e numeri nel formato specificato
 18 lettere e cifre:
 - Cinque lettere (senza distinzione fra maiuscole/minuscole) o la cifra 9 al posto di una lettera 
 - Una cifra 
-- 5 cifre nel formato data GGMMA relativo alla data di nascita 
+- Cinque cifre nel formato data MMDDY per data di nascita (il settimo carattere viene incrementato di 50 se il driver è di tipo femminile, ovvero 51 a 62 invece di 01 a 12)
 - Due lettere (senza distinzione fra maiuscole/minuscole) o la cifra 9 al posto di una lettera 
 - Cinque cifre
 
@@ -5677,7 +5677,7 @@ Due modelli possibili:
 - Sei cifre
 - ' A ',' B ',' c'o ' d'(come il prefisso, solo alcuni caratteri sono consentiti nel suffisso, senza distinzione tra maiuscole e minuscole)
 
-O
+OPPURE
 
 - Due lettere
 - Uno spazio o un trattino
@@ -5997,7 +5997,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - identification cards# 
 
 
-#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_ [state_name] _drivers_license_name
 
 - Abbreviazione dello stato (ad esempio, "NY") 
 - Nome dello stato (ad esempio, "New York")    
@@ -6107,7 +6107,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 ### <a name="pattern"></a>Modello
 
 Quattro funzioni cercano SNSS in quattro modelli diversi:
-- Func_ssn trova SNSS con una formattazione complessa pre2011 che è formattata con trattini o spazi (ddd-dd-dddd o ddd dd dddd)
+- Func_ssn trova SNSS con una formattazione complessa pre2011 formattata con trattini o spazi (ddd-dd-dddd o ddd dd dddd)
 - Func_unformatted_ssn trova SNSS con una formattazione complessa pre2011 che non è formattata come nove cifre consecutive (ddddddddd)
 - Func_randomized_formatted_ssn trova post-2011 SNSS formattati con trattini o spazi (ddd-dd-dddd o ddd dd dddd)
 - Func_randomized_unformatted_ssn trova post-2011 SNSS che non sono formattati come nove cifre consecutive (ddddddddd)
@@ -6126,7 +6126,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 - La funzione Func_us_address trova un indirizzo nel formato corretto.
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione Func_unformatted_ssn trova contenuto che corrisponde al modello.
+- La funzione Func_unformatted_ssn trova contenuto corrispondente al modello.
 - Viene trovata una parola chiave da Keyword_ssn.
 - La funzione Func_us_date rileva una data nel formato corretto.
 - La funzione Func_us_address trova un indirizzo nel formato corretto.
@@ -6146,14 +6146,14 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 55%,
 Un criterio DLP è 40% fiducioso di aver rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
 - La funzione Func_ssn restituisce contenuti che corrispondono al modello.
 - La funzione Func_unformatted_ssn non trovare contenuti che corrispondono al modello.
-- La funzione Func_randomized_unformatted_ssn non trova contenuto corrispondente al modello.
+- La funzione Func_randomized_unformatted_ssn non trova il contenuto corrispondente al modello.
 - Non viene trovata una parola chiave da Keyword_ssn.
  
 Oppure
 
 - La funzione Func_randomized_formatted_ssn restituisce contenuti che corrispondono al modello.
 - La funzione Func_unformatted_ssn non trovare contenuti che corrispondono al modello.
-- La funzione Func_randomized_unformatted_ssn non trova contenuto corrispondente al modello.
+- La funzione Func_randomized_unformatted_ssn non trova il contenuto corrispondente al modello.
 - Non viene trovata una parola chiave da Keyword_ssn.
 
 ```xml

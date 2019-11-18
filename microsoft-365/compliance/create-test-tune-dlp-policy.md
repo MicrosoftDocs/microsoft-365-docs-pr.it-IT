@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: b13dab63514dc8658479dbd68d5a014dc7347bb8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9748e3dc51a322ad3a77bab800d64925da95eeeb
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083060"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686407"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
@@ -107,7 +107,7 @@ Per dimostrare il rilevamento di TFN in maniera piuttosto smussata, un messaggio
 
 ![Numero di file fiscale australiano che non supera il checksum](media/DLP-create-test-tune-email-test1.png)
 
-In confronto, un messaggio di posta elettronica con le parole "Tax File Number" e un TFN valido che passa il checksum attiverà il criterio. Per il record qui, il TFN che si sta utilizzando è stato ricavato da un sito Web che genera un TFNs valido, ma non genuino. Esistono siti simili che generano [numeri di carta di credito validi ma fasulli](http://www.fakecreditcardgenerator.net/). Tali siti sono molto utili perché uno degli errori più comuni durante il testing di un criterio DLP consiste nell'utilizzare un numero fittizio non valido e non passerà il checksum (e pertanto non attiverà il criterio).
+In confronto, un messaggio di posta elettronica con le parole "Tax File Number" e un TFN valido che passa il checksum attiverà il criterio. Per il record qui, il TFN che si sta utilizzando è stato ricavato da un sito Web che genera un TFNs valido, ma non genuino. Esistono siti simili che generano [numeri di carta di credito validi ma fasulli](https://www.fakecreditcardgenerator.net/). Tali siti sono molto utili perché uno degli errori più comuni durante il testing di un criterio DLP consiste nell'utilizzare un numero fittizio non valido e non passerà il checksum (e pertanto non attiverà il criterio).
 
 ![Numero di file fiscale australiano che supera il checksum](media/DLP-create-test-tune-email-test2.png)
 
@@ -203,7 +203,7 @@ Quando si è soddisfatti del fatto che i criteri DLP siano in grado di rilevare 
 
 ![Opzione per abilitare i criteri](media/DLP-create-test-tune-turn-on-policy.png)
  
-Se si è in attesa di vedere quando il criterio avrà effetto, [connettersi al centro sicurezza & Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) ed eseguire il [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) per visualizzare il proprietà distributionstatus.
+Se si è in attesa di vedere quando il criterio avrà effetto, [connettersi al centro sicurezza & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) ed eseguire il [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) per visualizzare il proprietà distributionstatus.
 
 ![Running cmdlet in PowerShell](media/DLP-create-test-tune-PowerShell.png)
 

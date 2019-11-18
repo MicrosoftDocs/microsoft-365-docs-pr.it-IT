@@ -7,17 +7,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utilizzare la ricerca contenuto nel centro sicurezza & conformità per eseguire le raccolte mirate. Un insieme mirato indica che gli elementi che rispondono a un caso o a elementi privilegiati si trovano in una cassetta postale o in una cartella del sito specifica. Utilizzare lo script in questo articolo per ottenere l'ID o il percorso della cartella specifica della cassetta postale o delle cartelle del sito che si desidera ricercare.
-ms.openlocfilehash: 525e2daf5b9dc8268e2b5db2eaab17099bf5bc0d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 02cd78f9ebb02f7c41e0703ba4ddb78bfd184000
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084052"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686598"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utilizzare la ricerca contenuto in Office 365 per le raccolte mirate
 
@@ -26,15 +28,15 @@ La funzionalità di ricerca contenuto nel centro sicurezza &amp; e conformità d
 > [!NOTE]
 > Per restituire il contenuto presente in una cartella di un sito di SharePoint o OneDrive for business, lo script in questo argomento utilizza la proprietà gestita DocumentLink anziché la proprietà Path. La proprietà DocumentLink è più robusta della proprietà Path perché restituirà tutto il contenuto di una cartella, mentre la proprietà Path non restituirà alcuni file multimediali.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-- Per eseguire lo script nel passaggio 1, è necessario essere membri del gruppo di &amp; ruoli eDiscovery Manager nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
+- Per eseguire lo script nel passaggio 1, è necessario essere membri del gruppo di &amp; ruoli eDiscovery Manager nel centro sicurezza e conformità. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
     Inoltre, è necessario essere assegnati al ruolo destinatari di posta elettronica nell'organizzazione di Exchange Online. Questo è necessario per eseguire il cmdlet **Get-MailboxFolderStatistics** , incluso nello script nel passaggio 1. Per impostazione predefinita, il ruolo destinatari di posta viene assegnato ai gruppi di ruoli Gestione organizzazione e gestione destinatari in Exchange Online. Per ulteriori informazioni sull'assegnazione delle autorizzazioni in Exchange Online, vedere [Manage Role Group Members](https://go.microsoft.com/fwlink/p/?linkid=692102). È inoltre possibile creare un gruppo di ruoli personalizzato, assegnare il ruolo destinatari di posta elettronica e quindi aggiungere i membri che devono eseguire lo script nel passaggio 1. Per ulteriori informazioni, vedere [Gestire gruppi di ruoli](https://go.microsoft.com/fwlink/p/?linkid=730688).
     
 - Ogni volta che si esegue lo script nel passaggio 1, viene creata una nuova sessione di PowerShell remota. In questo modo, è possibile utilizzare tutte le sessioni remote di PowerShell disponibili. Per evitare che ciò accada, è possibile eseguire il comando riportato di seguito per disconnettere le sessioni di PowerShell remote attive.
     
-  ```
+  ```powershell
   Get-PSSession | Remove-PSSession
   ```
 
@@ -62,7 +64,7 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del 
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell utilizzando un suffisso FileName di. ps1. ad esempio, `GetFolderSearchParameters.ps1`.
     
-  ```
+  ```powershell
   #########################################################################################################
   # This PowerShell script will prompt you for:                             #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
@@ -177,7 +179,7 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi del 
     
 3. Eseguire lo script; Per esempio:
     
-      ```
+      ```powershell
       .\GetFolderSearchParameters.ps1
       ```
 
@@ -203,7 +205,7 @@ Nell'esempio del passaggio 2 viene illustrata la query utilizzata per eseguire l
   
 ### <a name="script-output-for-site-folders"></a>Output dello script per le cartelle del sito
 
-Se si sta ottenendo il percorso della proprietà **documentlink** da siti di SharePoint o OneDrive for business, lo script si connette al centro sicurezza & Compliance tramite Remote PowerShell, crea una nuova ricerca di contenuto che cerca il sito per le cartelle e Visualizza quindi un elenco delle cartelle che si trovano nel sito specificato. Lo script Visualizza il nome di ogni cartella e aggiunge il prefisso di **documentlink** all'URL della cartella. Poiché la proprietà **documentlink** è una proprietà per la ricerca, è possibile `documentlink:<path>` utilizzare la coppia Property: value in una query di ricerca nel passaggio 2 per eseguire una ricerca nella cartella. Lo script Visualizza un massimo di 200 cartelle del sito. Se sono presenti più di 200 cartelle del sito, vengono visualizzate quelle più recenti.
+Se si riceve il percorso della proprietà **documentlink** da siti di SharePoint o OneDrive for business, lo script si connette al centro sicurezza & conformità tramite Remote PowerShell, crea una nuova ricerca di contenuto in cui vengono eseguite ricerche nel sito per le cartelle e quindi viene visualizzato un elenco delle cartelle che si trovano nel sito specificato. Lo script Visualizza il nome di ogni cartella e aggiunge il prefisso di **documentlink** all'URL della cartella. Poiché la proprietà **documentlink** è una proprietà per la ricerca, è possibile `documentlink:<path>` utilizzare la coppia Property: value in una query di ricerca nel passaggio 2 per eseguire una ricerca nella cartella. Lo script Visualizza un massimo di 200 cartelle del sito. Se sono presenti più di 200 cartelle del sito, vengono visualizzate quelle più recenti.
   
 Di seguito è riportato un esempio dell'output restituito dallo script per le cartelle del sito.
   
@@ -245,29 +247,29 @@ Di seguito sono riportati alcuni esempi di `folderid` utilizzo `documentlink` de
   
 - In questo esempio vengono cercate tre cartelle di cassette postali diverse. È possibile utilizzare una sintassi di query simile per cercare le cartelle nascoste nella cartella elementi ripristinabili di un utente.
     
-  ```
+  ```powershell
   folderid:<folderid> OR folderid:<folderid> OR folderid:<folderid>
   ```
 
 - In questo esempio viene eseguita la ricerca di elementi che contengono una frase esatta in una cartella della cassetta postale.
     
-  ```
+  ```powershell
   folderid:<folderid> AND "Contoso financial results"
   ```
 
 - In questo esempio viene eseguita una ricerca in una cartella del sito e in tutte le sottocartelle per i documenti che contengono le lettere "NDA" nel titolo.
     
-  ```
+  ```powershell
   documentlink:<path> AND filename:nda
   ```
 
 - In questo esempio viene eseguita una ricerca in una cartella del sito e in qualsiasi sottocartella per i documenti che sono stati modificati all'interno di un intervallo di date.
     
-  ```
+  ```powershell
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
-  
-## <a name="more-information"></a>Ulteriori informazioni
+
+## <a name="more-information"></a>Altre informazioni
 
 Quando si utilizza lo script in questo articolo, è necessario tenere presente quanto segue per eseguire le raccolte mirate.
   

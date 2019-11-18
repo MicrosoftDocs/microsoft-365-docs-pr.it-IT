@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Informazioni su come gli amministratori possono utilizzare PowerShell di Exchange Online e un file CSV per importare in blocco i contatti esterni nell'elenco indirizzi globale.
-ms.openlocfilehash: 08fe7666f03c7fe60555133292be9e27a9ffa413
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 272223d9ab61b2c5ae17043cf4523d49da306de9
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083253"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686533"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importare in blocco i contatti esterni in Exchange Online
 
@@ -47,10 +47,10 @@ Il primo passaggio consiste nel creare un file CSV che contiene informazioni su 
     > [!TIP]
     > Se la lingua contiene caratteri speciali, ad esempio **å**, **ä**e **ö** in svedese, salvare il file CSV con UTF-8 o altra codifica Unicode quando si salva il file nel blocco note. 
   
-    ```
+    ```text
     ExternalEmailAddress,Name,FirstName,LastName,StreetAddress,City,StateorProvince,PostalCode,Phone,MobilePhone,Pager,HomePhone,Company,Title,OtherTelephone,Department,CountryOrRegion,Fax,Initials,Notes,Office,Manager
     danp@fabrikam.com,Dan Park,Dan,Park,1234 23rd Ave,Golden,CO,80215,206-111-1234,303-900-1234,555-1212,123-456-7890,Fabrikam,Shipping clerk,555-5555,Shipping,US,123-4567,R.,Good worker,31/1663,Dan Park
-    pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park 
+    pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park
     ```
 
     La prima riga, o riga di intestazione, del file CSV elenca le proprietà dei contatti che è possibile utilizzare quando vengono importati in Exchange Online. Ogni nome di proprietà è separato da una virgola. Ogni riga sotto la riga di intestazione rappresenta i valori delle proprietà per l'importazione di un singolo contatto esterno. 
@@ -75,7 +75,7 @@ Il passaggio successivo consiste nell'utilizzare il file CSV creato nel passaggi
     
 3. Per creare i contatti esterni, eseguire il comando riportato di seguito:
 
-    ```
+    ```powershell
     Import-Csv .\ExternalContacts.csv|%{New-MailContact -Name $_.Name -DisplayName $_.Name -ExternalEmailAddress $_.ExternalEmailAddress -FirstName $_.FirstName -LastName $_.LastName}
     ```
 
@@ -86,7 +86,7 @@ Il passaggio successivo consiste nell'utilizzare il file CSV creato nel passaggi
     > [!TIP]
     > Per istruzioni sulla connessione a EAC, vedere interfaccia di [amministrazione di Exchange in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=328197). 
   
-5. Se necessario **, fare clic su** ![Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) l'icona Aggiorna per aggiornare l'elenco e vedere i contatti esterni che sono stati importati. 
+5. Se necessario, fare clic su **Aggiorna** per aggiornare l'elenco e vedere i contatti esterni che sono stati importati. 
     
     I contatti importati verranno visualizzati nella rubrica condivisa in Outlook e Outlook sul Web.
     
@@ -103,12 +103,12 @@ Dopo aver eseguito il comando nel passaggio 2, vengono creati i contatti esterni
     
 3. Eseguire i due comandi seguenti per aggiungere le altre proprietà dal file CSV ai contatti esterni creati nel passaggio 2.
     
-    ```
+    ```powershell
     $Contacts = Import-CSV .\ExternalContacts.csv
   
     ```
 
-    ```
+    ```powershell
     $contacts | ForEach {Set-Contact $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
     ```
 
@@ -140,19 +140,19 @@ Alcune aziende possono utilizzare i contatti esterni solo in modo che possano es
     
 2. Per nascondere un singolo contatto esterno, eseguire il comando riportato di seguito.
     
-    ```
+    ```powershell
     Set-MailContact <external contact> -HiddenFromAddressListsEnabled $true 
     ```
- 
+
     Ad esempio, per nascondere Pilar Pinilla dalla rubrica condivisa, eseguire il comando seguente:
 
-    ```
+    ```powershell
     Set-MailContact "Pilar Pinilla" -HiddenFromAddressListsEnabled $true
     ```
-   
+
 3. Per nascondere tutti i contatti esterni dalla rubrica condivisa, eseguire il comando seguente:
 
-    ```
+    ```powershell
     Get-Contact -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailContact')} | Set-MailContact -HiddenFromAddressListsEnabled $true  
     ```
 

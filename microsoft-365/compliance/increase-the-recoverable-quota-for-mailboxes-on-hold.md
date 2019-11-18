@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: "Abilitare la cassetta postale di archiviazione e attivare l'archiviazione automatica per aumentare le dimensioni della cartella elementi ripristinabili per una cassetta postale in Office 365. "
-ms.openlocfilehash: 4c2e36dae3c8677579569d55a9c5b88efb5c54e5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 266437d77ba4f3a82fa69db6a997fd58748fa834
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082867"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686563"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentare la quota degli elementi ripristinabili per le cassette postali bloccate
 
@@ -45,7 +45,7 @@ Quando la quota di archiviazione per la cartella elementi ripristinabili nella c
     > [!NOTE]
     > Dopo aver abilitato l'archivio per una cassetta postale vicina al superamento della quota di archiviazione per la cartella elementi ripristinabili, potrebbe essere necessario eseguire l'Assistente cartelle gestite per attivare manualmente l'assistente per elaborare la cassetta postale in modo che gli elementi scaduti vengano spostati nell' Cartella elementi ripristinabili nella cassetta postale di archiviazione. Per istruzioni, vedere [passaggio 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) . Tenere presente che gli altri elementi della cassetta postale dell'utente possono essere spostati nella nuova cassetta postale di archiviazione. È consigliabile informare l'utente che può verificarsi dopo aver abilitato la cassetta postale di archiviazione. 
   
-- **Creare un criterio di conservazione personalizzato per le cassette postali in attesa** -oltre che per abilitare la cassetta postale di archiviazione e l'archiviazione automatica per le cassette postali in blocco per controversia legale o in blocco sul posto, potrebbe essere necessario creare un criterio di conservazione personalizzato per le cassette postali in tenere. In questo modo è possibile applicare un criterio di conservazione alle cassette postali in blocco che differiscono dal criterio di gestione record di messaggistica predefinito applicato alle cassette postali che non sono in attesa. In questo modo è possibile applicare i tag di conservazione appositamente progettati per le cassette postali in blocco. Questo include la creazione di un nuovo tag di conservazione per la cartella elementi ripristinabili. 
+- **Creare un criterio di conservazione personalizzato per le cassette postali in attesa** -oltre che per abilitare la cassetta postale di archiviazione e l'archiviazione automatica per le cassette postali in blocco per controversia legale o in blocco sul posto, potrebbe essere necessario creare un criterio di conservazione personalizzato per le cassette postali in attesa. In questo modo è possibile applicare un criterio di conservazione alle cassette postali in blocco che differiscono dal criterio di gestione record di messaggistica predefinito applicato alle cassette postali che non sono in attesa. In questo modo è possibile applicare i tag di conservazione appositamente progettati per le cassette postali in blocco. Questo include la creazione di un nuovo tag di conservazione per la cartella elementi ripristinabili. 
     
 Nella parte restante di questo argomento vengono descritte le procedure dettagliate per creare un criterio di conservazione personalizzato per le cassette postali in blocco.
   
@@ -65,13 +65,13 @@ Il primo passaggio consiste nel creare un tag di conservazione personalizzato (d
     
 2. Eseguire il seguente comando per creare un nuovo RPT per la cartella elementi ripristinabili: 
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name <Name of RPT> -Type RecoverableItems -AgeLimitForRetention <Number of days> -RetentionAction MoveToArchive
     ```
 
     Ad esempio, il comando seguente crea un RPT per la cartella elementi ripristinabili denominata "elementi ripristinabili 30 giorni per le cassette postali in attesa", con un periodo di conservazione di 30 giorni. Ciò significa che, dopo che un elemento è stato nella cartella elementi ripristinabili per 30 giorni, verrà spostato nella cartella elementi ripristinabili nella cassetta postale di archiviazione dell'utente.
     
-    ```
+    ```powershell
     New-RetentionPolicyTag -Name "Recoverable Items 30 days for mailboxes on hold" -Type RecoverableItems -AgeLimitForRetention 30 -RetentionAction MoveToArchive
     ```
 
@@ -118,17 +118,17 @@ Prima di creare il nuovo criterio di conservazione, determinare i tag di conserv
   
 Eseguire il seguente comando per creare nuovi criteri di conservazione per le cassette postali in blocco. 
   
-```
+```powershell
 New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list of retention tags>
 
 ```
 
 Ad esempio, il comando seguente consente di creare i criteri di conservazione e i tag di conservazione collegati che vengono visualizzati nella figura precedente.
   
-```
+```powershell
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
-  
+
 ## <a name="step-3-apply-the-new-retention-policy-to-mailboxes-on-hold"></a>Passaggio 3: applicare il nuovo criterio di conservazione alle cassette postali in blocco
 
 L'ultimo passaggio consiste nell'applicare i nuovi criteri di conservazione creati nel passaggio 2 alle cassette postali in attesa nell'organizzazione. È possibile utilizzare EAC o Exchange Online PowerShell per applicare il criterio di conservazione a una singola cassetta postale o a più cassette postali. 
@@ -161,27 +161,27 @@ L'ultimo passaggio consiste nell'applicare i nuovi criteri di conservazione crea
   
 In questo esempio viene applicato il nuovo criterio di conservazione alla cassetta postale di Pilar Pinilla.
   
-```
+```powershell
 Set-Mailbox "Pilar Pinilla" -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
 In questo esempio viene applicato il nuovo criterio di conservazione a tutte le cassette postali dell'organizzazione in blocco per controversia legale.
   
-```
+```powershell
 $LitigationHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'}
 ```
 
-```
+```powershell
 $LitigationHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
 In questo esempio viene applicato il nuovo criterio di conservazione a tutte le cassette postali dell'organizzazione che si trovano in blocco sul posto.
   
-```
+```powershell
 $InPlaceHolds = Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null}
 ```
 
-```
+```powershell
 $InPlaceHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for Mailboxes on Hold"
 ```
 
@@ -189,39 +189,39 @@ $InPlaceHolds.DistinguishedName | Set-Mailbox -RetentionPolicy "MRM Policy for M
   
 Di seguito sono riportati alcuni esempi per verificare che i comandi negli esempi precedenti abbiano applicato il criterio di conservazione "criteri di gestione record di messaggistica per cassette postali in attesa" alle cassette postali in blocco per controversia legale e cassette postali sull'archiviazione sul posto.
   
-```
+```powershell
 Get-Mailbox "Pilar Pinilla" | Select RetentionPolicy
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.LitigationHoldEnabled -eq 'True'} | FT DisplayName,RetentionPolicy -Auto
 ```
 
-```
+```powershell
 Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | FT DisplayName,RetentionPolicy -Auto
 ```
-  
+
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>Optional Passaggio 4: eseguire l'Assistente cartelle gestite per applicare le nuove impostazioni di conservazione
 
 Dopo aver applicato il nuovo criterio di conservazione alle cassette postali in attesa, possono essere necessari fino a 7 giorni in Exchange Online affinché l'Assistente cartelle gestite elabori queste cassette postali utilizzando le impostazioni del nuovo criterio di conservazione. Invece di attendere l'esecuzione dell'Assistente cartelle gestite, è possibile utilizzare il cmdlet **Start-ManagedFolderAssistant** per attivare manualmente l'assistente per elaborare le cassette postali a cui è stato applicato il nuovo criterio di conservazione. 
   
 Eseguire il seguente comando per avviare l'Assistente cartelle gestite per la cassetta postale di Pilar Pinilla.
   
-```
+```powershell
 Start-ManagedFolderAssistant "Pilar Pinilla"
 ```
 
 Eseguire i seguenti comandi per avviare l'Assistente cartelle gestite per tutte le cassette postali in attesa.
   
-```
+```powershell
 $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlaceHolds -ne $null) -or ($_.LitigationHoldEnabled -eq "True")}
 ```
 
-```
+```powershell
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Dopo aver abilitato la cassetta postale di archiviazione di un utente, è consigliabile comunicare all'utente che altri elementi della cassetta postale (non solo gli elementi nella cartella elementi ripristinabili) potrebbero essere spostati nella cassetta postale di archiviazione. Ciò è dovuto al fatto che il criterio di gestione record di messaggistica predefinito assegnato alle cassette postali di Exchange Online contiene un tag di conservazione (denominati 2 anni di spostamento in Archivio) che sposta gli elementi nella cassetta postale di archiviazione due anni dopo la data in cui l'elemento è stato recapitato alla cassetta postale o creato dal utente. Per ulteriori informazioni, vedere [criteri di conservazione predefiniti in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     

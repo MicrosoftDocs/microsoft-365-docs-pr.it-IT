@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: 'Utilizzare uno script di PowerShell per creare una ricerca eDiscovery sul posto in Exchange online in base a una ricerca creata nel centro sicurezza & conformità. '
-ms.openlocfilehash: f3d5eb76dfa91334bccae42e0ddb66a71f739a6f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a16bf747da2d2eb8219ac4c13f4ff8c34d37b2c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084062"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686602"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Usare Ricerca contenuto nel flusso di lavoro di eDiscovery
 
@@ -48,7 +48,7 @@ Il primo passaggio consiste nell'utilizzare il Centro sicurezza & Compliance (o 
     
 4. In **Dove si vuole effettuare la ricerca?**, fare clic su **Cerca in tutte le cassette postali**, quindi su **Avanti**.
     
-5. Nella casella sotto **Dove si vuole effettuare la ricerca?**, digitare una query di ricerca. È possibile specificare parole chiave, proprietà del messaggio, come ad esempio, le date di invio e ricezione o le proprietà del documento, quali ad esempio, i nomi dei file o la data dell'ultima modifica apportata a un documento. È possibile utilizzare una query più complessa che utilizza un operatore booleano, ad esempio e, o, non o vicino, oppure è anche possibile cercare informazioni riservate (ad esempio i numeri di previdenza sociale) nei messaggi. Per ulteriori informazioni sulla creazione di query di ricerca, vedere [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
+5. Nella casella sotto **Dove si vuole effettuare la ricerca?**, digitare una query di ricerca. È possibile specificare parole chiave, proprietà dei messaggi come le date di invio o ricezione o proprietà dei documenti come il nome file o la data dell'ultima modifica apportata. È possibile utilizzare una query più complessa che utilizza un operatore booleano, ad esempio e, o, non o vicino, oppure è anche possibile cercare informazioni riservate (ad esempio i numeri di previdenza sociale) nei messaggi. Per ulteriori informazioni sulla creazione di query di ricerca, vedere [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
 6. Fare clic su **Ricerca** per salvare le impostazioni di ricerca e avviare la ricerca. 
     
@@ -62,11 +62,11 @@ Il primo passaggio consiste nell'utilizzare il Centro sicurezza & Compliance (o 
   
 Di seguito è riportato un esempio di utilizzo di PowerShell per eseguire una ricerca in tutte le cassette postali dell'organizzazione. La query di ricerca restituisce tutti i messaggi inviati tra il 1° gennaio 2015 e il 30 giugno 2015 e contenenti la frase "relazione finanziaria" nella riga dell'oggetto. Il primo comando crea la ricerca e il secondo la esegue. 
   
-```
+```powershell
 New-ComplianceSearch -Name "Search All-Financial Report" -ExchangeLocation all -ContentMatchQuery 'sent>=01/01/2015 AND sent<=06/30/2015 AND subject:"financial report"'
 ```
 
-```
+```powershell
 Start-ComplianceSearch -Identity "Search All-Financial Report"
 ```
 
@@ -80,7 +80,7 @@ Per facilitare la creazione di una ricerca di contenuto con non più di 1.000 ca
   
 1. Salvare il testo seguente in un file di script di PowerShell utilizzando un suffisso FileName di. ps1. Ad esempio, è possibile salvarlo in un file denominato `SourceMailboxes.ps1`.
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -112,7 +112,7 @@ Per facilitare la creazione di una ricerca di contenuto con non più di 1.000 ca
 
 2. In PowerShell Centro sicurezza & conformità, passare alla cartella in cui si trova lo script creato nel passaggio precedente, quindi eseguire lo script. Per esempio:
     
-    ```
+    ```powershell
     .\SourceMailboxes.ps1
     ```
 
@@ -128,7 +128,7 @@ Il passaggio successivo consiste nel connettere Windows PowerShell al centro sic
   
 1. Salvare il testo seguente in un file di script di Windows PowerShell con il suffisso del nome .ps1. Ad esempio, è possibile salvarlo in un file denominato `ConnectEXO-CC.ps1`.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
@@ -139,7 +139,7 @@ Il passaggio successivo consiste nel connettere Windows PowerShell al centro sic
 
 2. Nel computer locale, aprire Windows PowerShell, passare alla cartella in cui si trova lo script creato nel passaggio precedente, quindi eseguire lo script. Per esempio:
     
-    ```
+    ```powershell
     .\ConnectEXO-CC.ps1
     ```
 
@@ -167,7 +167,7 @@ Dopo aver creato la sessione Dual PowerShell nel passaggio 2, il passaggio succe
     
 1. Salvare il testo seguente in un file di script di Windows PowerShell con il suffisso del nome ps1. Ad esempio, è possibile salvarlo in un file denominato `CreateMBSearchFromComplianceSearch.ps1`.
     
-  ```
+  ```powershell
   [CmdletBinding()]
   Param(
       [Parameter(Mandatory=$True,Position=1)]
@@ -231,12 +231,11 @@ Dopo aver creato la sessione Dual PowerShell nel passaggio 2, il passaggio succe
   {
     New-MailboxSearch "$msPrefix$i" -SourceMailboxes $mailboxes -SearchQuery $query -EstimateOnly;
   }
-  
   ```
 
 2. Nella sessione di Windows PowerShell creata al passaggio 2 passare alla cartella in cui si trova lo script creato nel passaggio precedente, quindi eseguire lo script. Per esempio:
     
-    ```
+    ```powershell
     .\CreateMBSearchFromComplianceSearch.ps1
     ```
 
@@ -276,7 +275,7 @@ Dopo aver avviato la ricerca eDiscovery sul posto creata dallo script nel passag
     
 4. Fare clic su **Salva** per creare il blocco sul posto e riavviare la ricerca. 
     
-[Return to top](use-content-search-in-ediscovery.md#top)
+[Inizio pagina](use-content-search-in-ediscovery.md#top)
   
 ### <a name="copy-the-search-results"></a>Copiare i risultati della ricerca
 

@@ -2,8 +2,8 @@
 title: Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
 ms.author: chrfox
 author: chrfox
-manager: dansimp
-ms.date: 06/14/2019
+manager: laurawi
+ms.date: ''
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,16 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: 198b2de6d26b260840f0e578e4b50f0693708a94
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084876"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38686509"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
 
@@ -214,23 +215,13 @@ Attualmente, Outlook 2013 e versioni successive supporta la visualizzazione dei 
 - Contenuto contiene
 - Contenuto condiviso
 
-Attualmente stiamo lavorando al supporto per mostrare suggerimenti per i criteri per altre condizioni. Queste funzionalità sono:
-
-- Non è stato possibile analizzare il contenuto di un allegato di posta elettronica
-- Il contenuto di un allegato di posta elettronica non ha completato l'analisi
-- L'estensione del file allegato è
-- L'allegato è protetto da password
-- La proprietà Document è
-- Il dominio del destinatario è
-- L'indirizzo IP del mittente è
-
 Tenere presente che tutte queste condizioni funzionano in Outlook, in cui corrispondono ai contenuti e applicano azioni protettive sul contenuto. Tuttavia, la visualizzazione di suggerimenti per i criteri per gli utenti non è ancora supportata.
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Suggerimenti per i criteri nell'interfaccia di amministrazione di Exchange e nel centro &amp; sicurezza e conformità di Office 365
 
 I suggerimenti per i criteri possono essere compatibili con i criteri DLP e le regole del flusso di posta creati nell'interfaccia di amministrazione di Exchange oppure con i &amp; criteri DLP creati nel centro sicurezza e conformità di Office 365, ma non in entrambi. Ciò è dovuto al fatto che questi criteri sono archiviati in posizioni diverse, ma i suggerimenti per i criteri possono essere disegnati solo da una singola posizione.
   
-Se sono stati configurati suggerimenti per i criteri nell'interfaccia di amministrazione di Exchange, eventuali suggerimenti per i criteri configurati nel centro sicurezza &amp; e conformità di Office 365 non verranno visualizzati per gli utenti in Outlook sul Web e Outlook 2013 e versioni successive finché non si disattivano i suggerimenti in Exchange interfaccia di amministrazione. In questo modo, le regole del flusso di posta di Exchange correnti (note anche come regole di trasporto) continueranno a funzionare fino a quando non si sceglie &amp; di passare al centro sicurezza e conformità di Office 365.
+Se sono stati configurati suggerimenti per i criteri nell'interfaccia di amministrazione di Exchange, gli eventuali suggerimenti per i criteri &amp; configurati nel centro sicurezza e conformità di Office 365 non verranno visualizzati per gli utenti in Outlook sul Web e Outlook 2013 e versioni successive finché non si disattivano i suggerimenti nell'interfaccia di amministrazione di Exchange. In questo modo, le regole del flusso di posta di Exchange correnti (note anche come regole di trasporto) continueranno a funzionare fino a quando non si sceglie &amp; di passare al centro sicurezza e conformità di Office 365.
   
 Si noti che, mentre i suggerimenti per i criteri possono essere disegnati solo da una singola posizione, le notifiche di posta elettronica vengono sempre inviate, anche se si &amp; utilizzano i criteri DLP sia nel centro conformità sicurezza di Office 365 sia nell'interfaccia di amministrazione di Exchange.
   
@@ -295,5 +286,3 @@ Per impostazione predefinita, i suggerimenti per i criteri mostrano un testo sim
 - [Elementi inclusi nei modelli di criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
 - [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
-    
-

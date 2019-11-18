@@ -13,19 +13,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Installare e utilizzare Esplora archivi di Azure per scaricare i documenti esportati da un set di revisione in Advanced eDiscovery.
-ms.openlocfilehash: d7af50b37383e69c666084a93b5b91591a76c114
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Installare e utilizzare Esplora archivi di Azure per scaricare i documenti esportati da Evidence in un'indagine di dati.
+ms.openlocfilehash: af71cb43f91c940e4c5edb8ca7be39f4bca9b3be
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082920"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686576"
 ---
 # <a name="download-export-jobs"></a>Scaricare processi di esportazione
 
-Quando si esportano i documenti da un set di revisione in un caso avanzato di eDiscovery, i documenti vengono caricati in una posizione di archiviazione di Azure fornita da Microsoft o in un percorso di archiviazione di Azure gestito dall'organizzazione. Il tipo di percorso di archiviazione di Azure utilizzato dipende dall'opzione selezionata quando i documenti sono stati esportati. 
+Quando si esportano documenti da Evidence in un'analisi dei dati, i documenti vengono caricati in una posizione di archiviazione di Azure fornita da Microsoft o in un percorso di archiviazione di Azure gestito dall'organizzazione. Il tipo di percorso di archiviazione di Azure utilizzato dipende dall'opzione selezionata quando i documenti sono stati esportati. 
 
-In questo articolo vengono fornite le istruzioni per l'utilizzo di Microsoft Azure Storage Explorer per la connessione a un percorso di archiviazione di Azure per cercare e scaricare i documenti esportati. Per ulteriori informazioni su Esplora archivi di Azure, vedere [Guida introduttiva: utilizzare Esplora risorse di Azure](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+In questo articolo vengono fornite le istruzioni per l'utilizzo di Microsoft Azure Storage Explorer per la connessione a un percorso di archiviazione di Azure per cercare e scaricare i documenti esportati. Per ulteriori informazioni su Esplora archivi di Azure, vedere [Guida introduttiva: utilizzare Esplora risorse di Azure](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="step-1-install-the-azure-storage-explorer"></a>Passaggio 1: installare l'archivio di archiviazione di Azure
 
@@ -35,7 +35,7 @@ Il primo passaggio consiste nel scaricare e installare Esplora archivi di Azure.
 
 Il passaggio successivo consiste nell'ottenere l'URL della firma di accesso condiviso (SAS) che viene generato quando è stato creato il processo di esportazione per [esportare i documenti da un set di revisione](export-documents-from-review-set.md). È possibile copiare l'URL SAS per i documenti caricati in una posizione di archiviazione di Azure fornita da Microsoft o un percorso di archiviazione di Azure gestito dall'organizzazione. In entrambi i casi, è possibile utilizzare l'URL SAS per connettersi al percorso di archiviazione di Azure nel passaggio 3.
 
-1. Nella pagina **Advanced eDiscovery** passare al caso, quindi fare clic sulla scheda **esportazioni** .
+1. Nella pagina **indagini dati** passare all'analisi e quindi fare clic sulla scheda **esportazioni** .
 
 2. Nella scheda **esportazioni** fare clic sul processo di esportazione che si desidera scaricare.
 
@@ -61,7 +61,7 @@ Il passaggio finale consiste nell'utilizzare l'esploratore di archiviazione di A
 
     ![Incollare l'URL SAS nella casella URI](media/AzureStorageConnect3.png)
 
-    Si noti che una parte dell'URL SAS viene visualizzata nella casella **nome visualizzato** . Verrà utilizzato come nome visualizzato del contenitore creato negli **account di archiviazione** dopo la connessione al percorso di archiviazione. Questo nome è costituito dall'ID del caso Advanced eDiscovery e da un identificatore univoco. È possibile mantenere il nome visualizzato predefinito o modificarlo. Se viene modificato, il nome visualizzato deve essere univoco.
+    Si noti che una parte dell'URL SAS viene visualizzata nella casella **nome visualizzato** . Verrà utilizzato come nome visualizzato del contenitore creato negli **account di archiviazione** dopo la connessione al percorso di archiviazione. Questo nome è costituito dall'ID dell'analisi dei dati e da un identificatore univoco. È possibile mantenere il nome visualizzato predefinito o modificarlo. Se viene modificato, il nome visualizzato deve essere univoco.
 
 5.  Fare clic su **Avanti**.
 
@@ -73,7 +73,7 @@ Il passaggio finale consiste nell'utilizzare l'esploratore di archiviazione di A
 
     Viene aperto il nodo **contenitori BLOB** (in **account** > di archiviazione **(contenitori associati)** \> . 
 
-    ![](media/AzureStorageConnect5.png)
+    ![Esportare processi nel nodo contenitori BLOB](media/AzureStorageConnect5.png)
 
     Contiene un contenitore denominato con il nome visualizzato del passaggio 4. Questo contenitore contiene una cartella per ogni processo di esportazione creato. Queste cartelle sono denominate con un ID che corrisponde all'ID del processo di esportazione. È possibile trovare questi ID di esportazione (e il nome dell'esportazione) in **informazioni di supporto** nella pagina a comparsa per ogni processo di **preparazione dei dati per l'esportazione** elencato nella scheda **processi** .
 
@@ -101,7 +101,7 @@ Il passaggio finale consiste nell'utilizzare l'esploratore di archiviazione di A
  
 8. Per esportare tutto il contenuto nell'esportazione, selezionare la cartella Export, quindi fare clic su **download**.
 
-9. Specificare il percorso in cui si desidera scaricare i file esportati e quindi fare clic su Seleziona cartella.
+9. Specificare il percorso in cui si desidera scaricare i file esportati e quindi fare clic su **Seleziona cartella**.
 
     Esplora archivi di Azure consente di avviare il processo di esportazione. Lo stato del download degli elementi esportati viene visualizzato nel riquadro **attività** . Quando il download è stato completato, viene visualizzato un messaggio.
 

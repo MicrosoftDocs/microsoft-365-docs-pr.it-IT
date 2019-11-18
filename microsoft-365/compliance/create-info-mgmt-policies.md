@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 description: I criteri di gestione delle informazioni consentono all'organizzazione di controllare il periodo di conservazione del contenuto, di verificare le persone che hanno a che fare con il contenuto e di aggiungere codici a barre o etichette ai documenti. Un criterio può contribuire a garantire la conformità ai regolamenti legali e governativi o ai processi aziendali interni. In qualità di amministratore, è possibile configurare un criterio per controllare la modalità di gestione dei documenti e la durata della conservazione dei documenti.
-ms.openlocfilehash: 85113393f534a6b17f75962d02518a5a8c65dd8b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d8572f570db7b0223bc2f08cd78875224897e02c
+ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083087"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38686512"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Creare e applicare criteri di gestione delle informazioni
 
@@ -90,7 +91,7 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
     
 ||||||**1.**|* * Scegliere * * aggiungere una fase di conservazione per i record... * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> | Selezionare un'opzione periodo di conservazione per specificare quando i documenti o gli elementi sono impostati in modo che scadano. Eseguire una delle operazioni seguenti:  <br/>  Per impostare la data di scadenza in base a una proprietà date, in **evento** \> **questa fase si basa su una proprietà date sull'elemento**e quindi selezionare l'azione documento o elemento (ad esempio, creato o modificato) e l'incremento del tempo dopo questa azione ( ad esempio, il numero di giorni, mesi o anni) quando si desidera che l'elemento scada.  <br/>  Per utilizzare una formula di conservazione personalizzata per determinare la scadenza, scegliere **imposta da una formula di conservazione personalizzata installata nel server**.  <br/> > [!NOTE]> questa opzione è disponibile solo se è stata configurata una formula personalizzata dall'amministratore.           |
+||||||2.  <br/> | Selezionare un'opzione periodo di conservazione per specificare quando i documenti o gli elementi sono impostati in modo che scadano. Eseguire una delle operazioni seguenti:  <br/>  Per impostare la data di scadenza in base a una proprietà date, in **evento** \> **questa fase si basa su una proprietà date sull'elemento**e quindi selezionare l'azione documento o elemento (ad esempio, creato o modificato) e l'incremento del tempo dopo questa azione, ad esempio il numero di giorni, mesi o anni, quando si desidera che l'elemento scada.  <br/>  Per utilizzare una formula di conservazione personalizzata per determinare la scadenza, scegliere **imposta da una formula di conservazione personalizzata installata nel server**.  <br/> > [!NOTE]> questa opzione è disponibile solo se è stata configurata una formula personalizzata dall'amministratore.           |
 ||||||3.  <br/> |L'opzione **avvia un flusso di lavoro** è disponibile solo se si definisce un criterio per un elenco, una raccolta o un tipo di contenuto a cui è già associato un flusso di lavoro. Verrà quindi data la possibilità di scegliere tra i flussi di lavoro.  <br/> |
 ||||||4.  <br/> |Nella sezione **ricorrenza** selezionare **Ripeti azione di questo passaggio...** e immettere la frequenza con cui si desidera che l'azione venga rieseguita.  <br/> > [!NOTE]> questa opzione è disponibile solo se l'azione selezionata può essere ripetuta. Ad esempio, non è possibile impostare la ricorrenza per l'azione **Elimina definitivamente**.           |
 ||||||5.  <br/> |Scegliere **OK**.  <br/> |
@@ -101,8 +102,8 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
     
 ||||||1. * * * *|Nella pagina Modifica criterio, * * **in** **controllo** **\>** **Abilita controllo** * *, quindi selezionare le caselle di controllo accanto agli eventi per cui si desidera mantenere una traccia di controllo. * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||**2.** <br/> |**Per richiedere agli utenti di inserire i codici a barre nei documenti,** **scegliere** **Richiedere agli utenti di inserire un codice a barre prima del salvataggio o della stampa** **.** <br/> |
-||||||**3.** <br/> |**Scegliere** **OK** * * per applicare la funzionalità di controllo al criterio. ** <br/> |
+||||||**2.** <br/> |**Per richiedere agli utenti di inserire i codici a barre nei documenti,** **scegliere** **Richiedi agli utenti di inserire un codice a barre prima del salvataggio o della stampa** **.** <br/> |
+||||||**3.** <br/> |Fare **clic** su **OK** * * per applicare la funzionalità di controllo al criterio. ** <br/> |
 |||||||La funzionalità dei criteri di controllo consente alle organizzazioni di creare e analizzare percorsi di controllo per i documenti e di elencare gli elementi, ad esempio elenchi di attività, elenchi di problemi, gruppi di discussione e calendari. Questa caratteristica dei criteri garantisce un registro di controllo in cui vengono registrati gli eventi, ad esempio il momento di visualizzazione, modifica o eliminazione del contenuto.  <br/> |
 |||||||Quando il controllo è abilitato nell'ambito di un criterio di gestione delle informazioni, gli amministratori possono visualizzare i dati di controllo nei report sull'utilizzo dei criteri basati su Microsoft Excel e riassumendo l'utilizzo corrente. Gli amministratori possono utilizzare questi report per determinare come vengono utilizzate le informazioni all'interno dell'organizzazione. Tali rapporti possono inoltre consentire alle organizzazioni di verificare e documentare la conformità normativa o di indagare su potenziali problemi.  <br/> |
 |||||||Nel registro di controllo vengono registrate le informazioni seguenti: nome dell'evento, data e ora dell'evento e nome di sistema dell'utente che ha eseguito l'azione.  <br/> |
@@ -172,7 +173,7 @@ Se il **tipo di contenuto** viene visualizzato come origine, fare clic su **Camb
     
 7. Nella finestra di dialogo Proprietà Stage selezionare un'opzione periodo di conservazione per specificare quando i documenti o gli elementi sono impostati in modo che scadano. Eseguire una delle operazioni seguenti:
     
-  - Per impostare la data di scadenza in base a una proprietà date, in **evento** \> **questa fase si basa su una proprietà date sull'elemento**e quindi selezionare l'azione documento o elemento (ad esempio, creato o modificato) e l'incremento del tempo dopo questa azione ( ad esempio, il numero di giorni, mesi o anni) quando si desidera che l'elemento scada. 
+  - Per impostare la data di scadenza in base a una proprietà date, in **evento** \> **questa fase si basa su una proprietà date sull'elemento**e quindi selezionare l'azione documento o elemento (ad esempio, creato o modificato) e l'incremento del tempo dopo questa azione, ad esempio il numero di giorni, mesi o anni, quando si desidera che l'elemento scada. 
     
   - Per utilizzare una formula di conservazione personalizzata per determinare la scadenza, scegliere **imposta da una formula di conservazione personalizzata installata nel server**. 
     

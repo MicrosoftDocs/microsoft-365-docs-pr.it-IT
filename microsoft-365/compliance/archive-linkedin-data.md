@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore nativo per importare i dati da una pagina società di LinkedIn a Office 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per poter utilizzare le funzionalità di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e mantenimento, per gestire la conformità dei dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1117eb6b7c756519ad07cafc52a635d65999d9e0
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083309"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686534"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Configurare un connettore per archiviare i dati di LinkedIn in Office 365 (anteprima)
 
@@ -65,20 +65,16 @@ Dopo aver creato il connettore, è possibile tornare alla pagina di **archiviazi
 
 Per visualizzare ulteriori dettagli, fare clic sul connettore nell'elenco nella pagina **archivio dati di terze parti** per visualizzarne la pagina. In **stato**, l'intervallo di date visualizzato indica il filtro di età che è stato selezionato quando è stato creato il connettore. 
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Gli elementi di LinkedIn vengono importati nella cartella posta in arrivo nella cassetta postale di archiviazione in Office 365. Vengono visualizzati come messaggi di posta elettronica. Il nome visualizzato del mittente del messaggio è il nome della pagina della società LinkedIn. L'indirizzo di posta elettronica effettivo del mittente è l'indirizzo di posta elettronica della cassetta postale di archiviazione. Il nome della pagina società è inoltre preaccodato alla riga dell'oggetto. 
 
 - A causa del comportamento precedente, è possibile cercare le `from` proprietà `subject` o la posta elettronica quando si utilizza uno strumento di Microsoft eDiscovery per cercare gli elementi di LinkedIn archiviati in Office 365. Ad esempio, se il nome della pagina società è "Contoso Company page", è possibile utilizzare una delle coppie *proprietà: valore* seguenti nella query di ricerca con parole chiave:
    
-   ```
-   from:"Contoso Company Page"
-   ```
+   > from: "Contoso Company page"
 
     Oppure
 
-   ```
-   subject:"Contoso Company Page"
-   ```
+   > oggetto: "pagina azienda Contoso"
 
 - Per semplificare l'individuazione o la gestione degli elementi di LinkedIn importati in Office 365, il proprietario della cassetta postale di archiviazione (o tutti gli utenti che hanno assegnato l'autorizzazione FullAccess) può impostare una regola di posta in arrivo per spostare gli elementi da una pagina società di LinkedIn a una cartella specifica. Questa operazione è utile se la cassetta postale di archiviazione viene utilizzata per archiviare gli elementi importati da origini dati di terze parti diverse. Ad esempio, è possibile creare una regola di posta in arrivo che sposta tutti gli elementi che contengono il nome di una specifica pagina di LinkedIn società nel campo oggetto in una cartella specifica.

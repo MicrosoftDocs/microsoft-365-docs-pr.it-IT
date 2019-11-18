@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: In qualità di amministratore globale di Office 365, è possibile applicare il marchio dell'organizzazione ai messaggi di posta elettronica crittografati dell'organizzazione e ai contenuti del portale di crittografia.
-ms.openlocfilehash: dd08ffad4a50cafd90f2306645e93e623b8076cd
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ea68e8ddb9e29c4948d8ee51b8d7b6a94501c986
+ms.sourcegitcommit: fa9d24aae563727fc8d67c4054c8d307a1a540ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083363"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "38686331"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Aggiungere il logo della propria organizzazione ai messaggi crittografati
 
@@ -33,13 +33,13 @@ In qualità di amministratore di Exchange Online o Exchange Online Protection, �
 
 - Testo visualizzato nel portale OME
 
-- Logo visualizzato nel messaggio di posta elettronica e nel portale OME
+- Logo visualizzato nel messaggio di posta elettronica e nel portale OME o se utilizzare un logo
 
 - Colore di sfondo nel messaggio di posta elettronica e nel portale OME
 
 È anche possibile ripristinare l'aspetto predefinito in qualsiasi momento.
 
- Se si desidera un maggiore controllo, è possibile utilizzare la crittografia avanzata dei messaggi di Office 365 e creare più modelli per i messaggi di posta elettronica crittografati provenienti dall'organizzazione. Utilizzando questi modelli, è possibile controllare più solo l'aspetto dei messaggi di posta elettronica, ma anche controllare le parti dell'esperienza dell'utente finale. Ad esempio, è possibile specificare se i destinatari di posta elettronica a cui è applicato il modello e che utilizzano Google, Yahoo e gli account Microsoft possono utilizzare questi account per accedere al portale di crittografia dei messaggi di Office 365. È possibile utilizzare i modelli per soddisfare diversi casi di utilizzo, ad esempio:
+Se si desidera un maggiore controllo, è possibile utilizzare la crittografia avanzata dei messaggi di Office 365 e creare più modelli per i messaggi di posta elettronica crittografati provenienti dall'organizzazione. Utilizzando questi modelli, è possibile controllare più solo l'aspetto dei messaggi di posta elettronica, ma anche controllare le parti dell'esperienza dell'utente finale. Ad esempio, è possibile specificare se i destinatari di posta elettronica a cui è applicato il modello e che utilizzano Google, Yahoo e gli account Microsoft possono utilizzare questi account per accedere al portale di crittografia dei messaggi di Office 365. È possibile utilizzare i modelli per soddisfare diversi casi di utilizzo, ad esempio:
 
 - Modelli per ogni reparto, ad esempio finanza, vendite e così via.
 
@@ -52,38 +52,29 @@ In qualità di amministratore di Exchange Online o Exchange Online Protection, �
 - Se si desidera che i messaggi di posta elettronica inviati a destinatari esterni scadano dopo un determinato numero di giorni.
 
 Dopo aver creato i modelli, è possibile applicarli ai messaggi di posta elettronica crittografati utilizzando le regole del flusso di messaggi di Exchange. Se si dispone della crittografia avanzata dei messaggi di Office 365, è possibile revocare tutti i messaggi di posta elettronica che sono stati creati utilizzando questi modelli.
+
+## <a name="work-with-ome-branding-templates"></a>Utilizzo dei modelli di personalizzazione OME
+
+È possibile modificare diverse funzionalità all'interno di un modello di branding. È possibile modificare, ma non rimuovere il modello predefinito. Se si dispone di una crittografia avanzata dei messaggi, è anche possibile creare, modificare e rimuovere modelli personalizzati. Utilizzare Windows PowerShell per l'utilizzo di un modello di personalizzazione alla volta. Per utilizzare questi cmdlet, è necessario disporre di un account aziendale o dell'Istituto di istruzione che disponga delle autorizzazioni di amministratore globale nell'organizzazione di Office 365.
+
+- [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-omeconfiguration) : consente di modificare il modello di personalizzazione predefinito o un modello personalizzato di personalizzazione creato.
+- [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) -creare un nuovo modello di branding, solo crittografia avanzata dei messaggi.
+- [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/remove-omeconfiguration) -rimuove un modello di personalizzazione personalizzato, solo la crittografia avanzata dei messaggi. Non è possibile eliminare il modello di personalizzazione predefinito.
   
-||
-|:-----|
-|Questo articolo fa parte di una serie più ampia di articoli sulla crittografia dei messaggi di Office 365. Questo articolo è destinato agli amministratori e professionisti IT. Se si cercano solo informazioni sull'invio o la ricezione di un messaggio crittografato, vedere l'elenco degli articoli in [Office 365 Message Encryption (OME)](ome.md) e individuare l'articolo che meglio si adatta alle proprie esigenze.|
-||
+## <a name="modify-an-ome-branding-template"></a>Modificare un modello di branding OME
 
-## <a name="create-branding-templates"></a>Creare modelli di personalizzazione
+Utilizzare Windows PowerShell per modificare un modello di branding alla volta. Se si dispone di una crittografia avanzata dei messaggi, è anche possibile creare, modificare e rimuovere modelli personalizzati.
 
-È possibile creare modelli di personalizzazione per l'organizzazione in Windows PowerShell con il cmdlet New-OMEConfiguration. Dopo aver creato il modello, è possibile definire i pezzi del modello utilizzando il cmdlet Set-OMEConfiguration. È possibile creare più modelli.
-
-![Parti di posta elettronica personalizzabili](media/ome-template-breakout.png)
-  
 1. Utilizzo di un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione di Office 365, avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per istruzioni, vedere [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Utilizzare il cmdlet New-OMEConfiguration per creare un nuovo modello.
+2. Modificare il modello utilizzando il cmdlet Set-OMEConfiguration come descritto in [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) oppure utilizzare la seguente tabella grafica e per indicazioni.
 
-   ```powershell
-   New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
-   ```
-
-   For example,
-
-   ```powershell
-   New-OMEConfiguration -Identity "Branding template 1"
-   ```
-
-3. Definire le personalizzazioni per il modello appena definito utilizzando il cmdlet Set-OMEConfiguration come descritto in [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) oppure utilizzare la seguente tabella per istruzioni.
+![Parti di posta elettronica personalizzabili](media/ome-template-breakout.png)
 
 |**Per personalizzare questa funzionalità dell'esperienza di crittografia**|**Utilizzare questi comandi**|
 |:-----|:-----|
 |Colore di sfondo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
-|Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formati di file supportati: png, jpg, bmp o tiff  <br/> Dimensione ottimale relativa al file del logo: inferiore a 40 KB  <br/> Dimensioni ottimali relative all'immagine del logo: 170x70 pixel|
+|Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formati di file supportati: png, jpg, bmp o tiff  <br/> Dimensione ottimale relativa al file del logo: inferiore a 40 KB  <br/> Dimensioni ottimali dell'immagine del logo: 170x70 pixel. Se l'immagine supera queste dimensioni, il logo viene ridimensionato per essere visualizzato nel portale. Il servizio non modifica il file grafico stesso. Per ottenere risultati ottimali, utilizzare le dimensioni ottimali.|
 |Testo accanto al nome e all'indirizzo di posta elettronica del mittente|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
 |Testo visualizzato sul pulsante "Leggi messaggio"|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
 |Testo visualizzato al di sotto del pulsante "messaggio di lettura"|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
@@ -92,25 +83,70 @@ Dopo aver creato i modelli, è possibile applicarli ai messaggi di posta elettro
 |Per abilitare o disabilitare l'autenticazione con un codice Pass una tantum per questo modello personalizzato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **Esempi:** <br/>Per abilitare i codici di accesso una tantum per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> Per disabilitare i codici di accesso una tantum per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
 |Per abilitare o disabilitare l'autenticazione con identità Microsoft, Google o Yahoo per questo modello personalizzato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -SocialIdSignIn <$true|$false>` <br/> **Esempi:** <br/>Per abilitare gli ID di social networking per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> Per disabilitare gli ID di social networking per questo modello personalizzato <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
-## <a name="to-remove-brand-customizations-from-the-ome-portal-and-email-messages-encrypted-by-ome"></a>Per rimuovere le personalizzazioni del marchio dal portale OME e dai messaggi di posta elettronica crittografati da OME
+## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>Creare un modello di branding OME (Advanced Message Encryption)
+
+Se si dispone della crittografia dei messaggi avanzata di Office 365, è possibile creare modelli di personalizzazione personalizzati per l'organizzazione utilizzando il cmdlet [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) . Dopo aver creato il modello, è possibile modificare il modello utilizzando il cmdlet Set-OMEConfiguration, come descritto in [Modify an ome branding template](#modify-an-ome-branding-template). È possibile creare più modelli.
+
+Per creare un nuovo modello di personalizzazione personalizzato:
+
+1. Utilizzo di un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione di Office 365, avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per istruzioni, vedere [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+
+2. Utilizzare il cmdlet [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) per creare un nuovo modello.
+
+   ```powershell
+   New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
+   ```
+
+   For example,
+
+   ```powershell
+   New-OMEConfiguration -Identity "Custom branding template"
+   ```
+
+## <a name="return-the-default-branding-template-to-its-original-values"></a>Ripristinare i valori originali del modello di personalizzazione predefinito
+
+Per rimuovere tutte le modifiche dal modello predefinito, incluse le personalizzazioni del marchio e così via, eseguire la procedura seguente:
   
-1. [Connettersi a PowerShell per Exchange Online](https://aka.ms/exopowershell).
+1. Utilizzo di un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione di Office 365, avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per istruzioni, vedere [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Utilizzare il cmdlet **set-OMEConfiguration** come descritto in [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration). Per rimuovere le personalizzazioni personalizzate dell'organizzazione dai valori DisclaimerText, EmailText e PortalText, impostare il valore su una stringa vuota `""`. Per tutti i valori di immagine, ad esempio logo, impostare il `"$null"`valore su.
 
-**Opzioni di personalizzazione della crittografia**
+   Nella tabella seguente vengono descritte le impostazioni predefinite dell'opzione di personalizzazione della crittografia.
 
-**Per ripristinare il testo e l'immagine predefiniti per questa funzionalità dell'esperienza di crittografia**|**Utilizzare questi comandi**|
-|:-----|:-----|
-|Testo predefinito che accompagna i messaggi di posta elettronica crittografati  <br/> Il testo predefinito viene visualizzato sopra le istruzioni per la visualizzazione di messaggi crittografati|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-|dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
-|testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Esempio ripristinando il valore predefinito:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
-|Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Esempio ripristinando il valore predefinito:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
-|Colore di sfondo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **Esempio ripristinando il valore predefinito:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+   **Per ripristinare il testo e l'immagine predefiniti per questa funzionalità dell'esperienza di crittografia**|**Utilizzare questi comandi**|
+   |:-----|:-----|
+   |Testo predefinito che accompagna i messaggi di posta elettronica crittografati  <br/> Il testo predefinito viene visualizzato sopra le istruzioni per la visualizzazione di messaggi crittografati|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
+   |testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Esempio ripristinando il valore predefinito:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
+   |Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Esempio ripristinando il valore predefinito:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
+   |Colore di sfondo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **Esempio ripristinando il valore predefinito:** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+   |
 
-## <a name="create-an-exchange-mail-flow-rule-that-applies-custom-branding-to-encrypted-emails"></a>Creare una regola del flusso di posta di Exchange che applica la personalizzazione personalizzata ai messaggi di posta elettronica crittografati
+## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>Rimuovere un modello di personalizzazione personalizzato (Advanced Message Encryption)
 
-Dopo aver creato un modello di branding, è possibile creare regole del flusso di posta di Exchange per applicare il marchio personalizzato in base a determinate condizioni. Una regola di questo tipo applicherà il marchio personalizzato negli scenari seguenti:
+È possibile rimuovere o eliminare solo i modelli di personalizzazione che sono stati apportati. Non è possibile rimuovere il modello di personalizzazione predefinito.
+
+Per rimuovere un modello di personalizzazione personalizzato:
+  
+1. Utilizzo di un account aziendale o dell'Istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione di Office 365, avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per istruzioni, vedere [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+
+2. Utilizzare il cmdlet **Remove-OMEConfiguration** come indicato di seguito:
+
+   ```powershell
+   Remove-OMEConfiguration -Identity "<OMEConfigurationIdParameter>
+   ```
+
+   For example,
+
+   ```powershell
+   Remove-OMEConfiguration -Identity "Branding template 1"
+   ```
+
+   Per ulteriori informazioni, vedere [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/remove-omeconfiguration).
+
+## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Creare una regola del flusso di posta di Exchange che applica il branding personalizzato ai messaggi di posta elettronica crittografati
+
+Dopo aver modificato il modello predefinito o creato nuovi modelli di branding, è possibile creare le regole del flusso di posta di Exchange per applicare il marchio personalizzato in base a determinate condizioni. Una regola di questo tipo applicherà il marchio personalizzato negli scenari seguenti:
 
 - Se il messaggio di posta elettronica è stato crittografato manualmente dall'utente finale dal client Outlook o Outlook sul Web (in precedenza noto come Outlook Web App)
 
@@ -128,16 +164,16 @@ Per informazioni su come creare una regola del flusso di posta di Exchange che a
 
 5. In **nome**Digitare un nome per la regola, ad esempio branding per il reparto vendite.
 
-6. In **applica questa regola se** si seleziona una condizione, selezionare la condizione in cui **il mittente si trova all'interno dell'organizzazione** e altre condizioni desiderate nell'elenco delle condizioni disponibili. Ad esempio, potrebbe essere necessario applicare un modello di branding specifico a:
+6. In **applica questa regola se**, selezionare la condizione in cui **il mittente si trova all'interno dell'organizzazione** e altre condizioni desiderate nell'elenco delle condizioni disponibili. Ad esempio, potrebbe essere necessario applicare un modello di branding specifico a:
 
-     - Tutti i messaggi di posta elettronica crittografati inviati dai membri del reparto Finanze
-     - Messaggi di posta elettronica crittografati inviati con una determinata parola chiave, ad esempio "esterno" o "partner"
-     - Messaggi di posta elettronica crittografati inviati a un dominio specifico
+   - Tutti i messaggi di posta elettronica crittografati inviati dai membri del reparto Finanze
+   - Messaggi di posta elettronica crittografati inviati con una determinata parola chiave, ad esempio "esterno" o "partner"
+   - Messaggi di posta elettronica crittografati inviati a un dominio specifico
 
-7. Da **procedere come segue**, selezionare **modifica la sicurezza** > dei messaggi**applicare il marchio personalizzato ai messaggi ome**. Successivamente, dal menu a discesa, selezionare un modello di branding tra quelli creati.
+7. Da **procedere come segue**, selezionare **modifica la sicurezza** > dei messaggi**applicare il marchio personalizzato ai messaggi ome**. Successivamente, dal menu a discesa, selezionare un modello di branding da quelli creati o modificati.
 
 8. Optional Se si desidera che la regola del flusso di posta applichi anche la crittografia oltre al marchio personalizzato, **fare quanto segue**, selezionare **modifica sicurezza messaggio** e quindi fare clic su **applica crittografia messaggi di Office 365 e protezione dei diritti**. Selezionare un modello RMS nell'elenco, scegliere **Salva**e quindi fare clic su **OK**.
   
-     L'elenco dei modelli include tutti i modelli e le opzioni predefiniti, nonché tutti i modelli personalizzati creati per l'utilizzo da parte di Office 365. Se l'elenco è vuoto, verificare di aver configurato la crittografia dei messaggi di Office 365 con le nuove funzionalità descritte in [configurare le nuove funzionalità di crittografia dei messaggi di office 365](set-up-new-message-encryption-capabilities.md). Per informazioni sui modelli predefiniti, vedere [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Per informazioni sull'opzione non **inoltrare** , vedere non [inoltrare l'opzione per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Per informazioni sull'opzione **solo crittografia** , vedere [opzione di crittografia solo per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   L'elenco dei modelli include tutti i modelli e le opzioni predefiniti, nonché tutti i modelli personalizzati creati per l'utilizzo da parte di Office 365. Se l'elenco è vuoto, verificare di aver configurato la crittografia dei messaggi di Office 365 con le nuove funzionalità descritte in [configurare le nuove funzionalità di crittografia dei messaggi di office 365](set-up-new-message-encryption-capabilities.md). Per informazioni sui modelli predefiniti, vedere [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Per informazioni sull'opzione non **inoltrare** , vedere non [inoltrare l'opzione per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Per informazioni sull'opzione **solo crittografia** , vedere [opzione di crittografia solo per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
-     Se si desidera specificare un'altra azione, è possibile scegliere **Aggiungi azione** .
+   Fare clic su **Aggiungi azione** se si desidera specificare un'altra azione.

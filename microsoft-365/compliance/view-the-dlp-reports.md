@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i report DLP in Office 365, è possibile visualizzare rapidamente il numero di corrispondenze di criteri DLP, sostituzioni o falsi positivi. controllare se si sta facendo una tendenza verso l'alto o verso il basso nel tempo; filtrare il report in modi diversi; e visualizzare ulteriori dettagli selezionando un punto su una linea del grafico.
-ms.openlocfilehash: f3161854a19f9f9a04390eec508ae43e92119f96
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 94569ef24814204263820fb5fdb7a8cb72da20e4
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084255"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686410"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Visualizzare i report di prevenzione della perdita di dati
 
@@ -85,18 +85,18 @@ Per visualizzare i report DLP nel centro sicurezza & Compliance, è necessario a
 
 Per utilizzare la maggior parte dei cmdlet per il centro &amp; sicurezza e conformità, è necessario:
   
-1. [Connettersi al Centro sicurezza e conformità Office 365 utilizzando sessione remota di PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409).
+1. [Connettersi al Centro sicurezza e conformità Office 365 utilizzando sessione remota di PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409).
     
-2. Utilizzare uno di questi [cmdlet del centro &amp; sicurezza e conformità di Office 365](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Utilizzare uno di questi [cmdlet del centro &amp; sicurezza e conformità di Office 365](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 Tuttavia, i report DLP devono estrarre dati dall'intera sede di Office 365, incluso Exchange Online. Per questo motivo, i cmdlet per i report DLP sono disponibili in PowerShell di Exchange Online, non in PowerShell &amp; per il Centro sicurezza e conformità. Pertanto, per utilizzare i cmdlet per i report DLP, è necessario eseguire le operazioni seguenti:
   
-1. [Connettersi a Exchange Online usando una sessione remota di PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connettersi a Exchange Online usando una sessione remota di PowerShell](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. Utilizzare uno di questi cmdlet per i report DLP:
     
-      - [Get-DlpDetectionsReport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+      - [Get-DlpDetectionsReport](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
     
-      - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+      - [Get-DlpDetailReport](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
 

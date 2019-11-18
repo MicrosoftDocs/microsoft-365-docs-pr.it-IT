@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Informazioni su come Exchange Online e Office 365 utilizzano TLS (Transport Layer Security) e la segretezza di inoltro (FS) per proteggere le comunicazioni tramite posta elettronica. Ottenere anche informazioni sul certificato emesso da Microsoft per Exchange Online.
-ms.openlocfilehash: e165be9a3407abfcc165054f7f147eeb2d2c0a82
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 34667714840e23be5d19aed8f47a539ea1474ab4
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083650"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686402"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica in Office 365
 
@@ -88,7 +88,7 @@ Il nuovo certificato viene emesso da un'autorità di certificazione (CA) diversa
 Il nuovo certificato richiede la connessione agli endpoint della nuova CA come parte della convalida del certificato. La mancata esecuzione di questa operazione può comportare un impatto negativo sul flusso di posta. Se si proteggono i server di posta elettronica con firewall che consentono solo ai server di posta elettronica di connettersi con determinate destinazioni, è necessario controllare se il server è in grado di convalidare il nuovo certificato. Per confermare che il server può utilizzare il nuovo certificato, eseguire la procedura seguente:
 
 1. Connettersi al server Exchange locale utilizzando Windows PowerShell e quindi eseguire il comando riportato di seguito:  
-  `certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl`
+  `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
 2. Nella finestra visualizzata fare clic su **Recupera**.
 3. Quando l'utilità completa il controllo, restituisce uno stato. Se lo stato è visualizzato **OK**, il server di posta è in grado di convalidare correttamente il nuovo certificato. In caso contrario, è necessario determinare cosa sta causando la mancata esecuzione delle connessioni. È molto probabile che sia necessario aggiornare le impostazioni di un firewall. L'elenco completo degli endpoint che devono essere accessibili include:
     - ocsp.globalsign.com

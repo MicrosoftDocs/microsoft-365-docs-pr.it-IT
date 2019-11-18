@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Office 365. Questi tipi di esenzioni includono il blocco per controversia legale, eDiscovery holds e i criteri di conservazione di Office 365. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello di organizzazione
-ms.openlocfilehash: 47e7ffff1703c0de94f014dc18e249cc9775e3e2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3319d65f7260a50cdcd38a36b6135a3cc42fb874
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082891"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686560"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -41,7 +41,7 @@ Office 365 offre diversi modi in cui l'organizzazione può impedire che il conte
     - **Criteri di conservazione a livello dell'organizzazione:** Si tratta di criteri che vengono assegnati a tutti i percorsi di contenuto dell'organizzazione. È possibile utilizzare il cmdlet **Get-OrganizationConfig** in PowerShell di Exchange Online per ottenere informazioni sui criteri di conservazione a livello dell'organizzazione.
   Per ulteriori informazioni, vedere la sezione "applicazione di un criterio di conservazione a un'intera organizzazione o a percorsi specifici" in [Overview of Office 365 Retention Policies](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
-- **[Etichette di conservazione di office 365](labels.md):** se un utente applica un'etichetta di conservazione di Office 365 (una configurata in modo da conservare il contenuto o conservare e quindi eliminare il contenuto) in *qualsiasi* cartella o elemento della propria cassetta postale, viene posizionata una sospensione sulla cassetta postale come se la cassetta postale fosse in blocco per controversia legale o assegnato a un criterio di conservazione di Office 365. Per ulteriori informazioni, vedere l' [argomento relativo all'identificazione delle cassette postali in attesa perché è stata applicata un'etichetta di conservazione a una cartella o a una](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) sezione di elementi in questo articolo.
+- **[Etichette di conservazione di office 365](labels.md):** se un utente applica un'etichetta di conservazione di Office 365 (una configurata in modo da conservare il contenuto o conservare e quindi eliminare il contenuto) in *qualsiasi* cartella o elemento della propria cassetta postale, l'esenzione viene posizionata sulla cassetta postale come se la cassetta postale è stata inserita nella conservazione per controversia legale o assegnata a un criterio di archiviazione di 365 Office Per ulteriori informazioni, vedere l' [argomento relativo all'identificazione delle cassette postali in attesa perché è stata applicata un'etichetta di conservazione a una cartella o a una](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) sezione di elementi in questo articolo.
 
 Per gestire le cassette postali in blocco, potrebbe essere necessario identificare il tipo di blocco applicato a una cassetta postale, in modo da poter eseguire attività quali la modifica della durata del blocco, la rimozione temporanea o permanente del blocco o l'esclusione di una cassetta postale da un criterio di conservazione di Office 365. In questi casi, il primo passaggio consiste nell'identificare il tipo di blocco applicato alla cassetta postale. Poiché in una singola cassetta postale è possibile applicare più blocchi (e tipi di esenzioni diversi), è necessario identificare tutti gli appigli inseriti in una cassetta postale se si desidera rimuovere o modificare un'esenzione.
 
@@ -59,7 +59,7 @@ Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [C
 
 Eseguire il seguente comando per ottenere informazioni sulle esenzioni e sui criteri di conservazione di Office 365 applicati a una cassetta postale.
 
-```
+```powershell
 Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 ```
 
@@ -80,7 +80,7 @@ Nella tabella seguente viene descritto come identificare diversi tipi di esenzio
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
 Se la proprietà *InPlaceHolds* è vuota quando si esegue il cmdlet **Get-Mailbox** , è possibile che siano ancora presenti uno o più criteri di conservazione di Office 365 a livello di organizzazione applicati alla cassetta postale. Eseguire il seguente comando in PowerShell di Exchange Online per ottenere un elenco di GUID per i criteri di conservazione di Office 365 a livello di organizzazione.
 
-```
+```powershell
 Get-OrganizationConfig | FL InPlaceHolds
 ```
 
@@ -125,15 +125,15 @@ Dopo aver ottenuto il GUID di un'esenzione applicato a una cassetta postale, il 
 
 Eseguire i seguenti comandi in PowerShell per il Centro sicurezza & Compliance per identificare un blocco di eDiscovery applicato alla cassetta postale. Utilizzare il GUID (escluso il prefisso UniH) per il blocco eDiscovery identificato nel passaggio 1. Il primo comando crea una variabile che contiene informazioni sul blocco. Questa variabile viene utilizzata negli altri comandi. Nel secondo comando viene visualizzato il nome del caso di eDiscovery a cui è associato il blocco. Il terzo comando Visualizza il nome del blocco e un elenco delle cassette postali a cui è applicato il blocco.
 
-```
+```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
 ```
 
-```
+```powershell
 Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```
 
-```
+```powershell
 $CaseHold | FL Name,ExchangeLocation
 ```
 
@@ -143,16 +143,17 @@ Per connettersi a PowerShell per Centro sicurezza & Compliance, vedere [Connect 
 
 Eseguire il seguente comando in PowerShell di Exchange Online per identificare il blocco sul posto applicato alla cassetta postale. Utilizzare il GUID per il blocco sul posto identificato nel passaggio 1. Il comando Visualizza il nome del blocco e un elenco delle cassette postali a cui è applicato il blocco.
 
-```
+```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
+
 Se il GUID per il blocco sul posto inizia con il `cld` prefisso, assicurarsi di includere il prefisso quando si esegue il comando precedente.
 
 ### <a name="office-365-retention-policies"></a>Criteri di conservazione di Office 365
 
 Eseguire il seguente comando in PowerShell per la sicurezza & Compliance Center per identificare i criteri di conservazione di Office 365 (a livello di organizzazione o di posizione specifica) applicati alla cassetta postale. Utilizzare il GUID (che non include il prefisso MBX, SKP o GRP o il suffisso di azione) identificato nel passaggio 1.
 
-```
+```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
@@ -166,7 +167,7 @@ Ogni volta che un utente applica un'etichetta di conservazione configurata per m
 
 Per visualizzare il valore della proprietà *ComplianceTagHoldApplied* , eseguire il comando seguente in PowerShell di Exchange Online:
 
-```
+```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
@@ -178,20 +179,21 @@ Dopo la rimozione di qualsiasi tipo di blocco da una cassetta postale, il valore
 
 Per visualizzare il valore della proprietà *DelayHoldApplied* per una cassetta postale, eseguire il comando seguente in PowerShell di Exchange Online.
 
-```
+```powershell
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
 Per rimuovere il ritardo di attesa prima della scadenza, è possibile eseguire il comando seguente in PowerShell di Exchange Online: 
  
-```
+```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
+
 Per utilizzare il parametro *RemoveDelayHoldApplied* , è necessario che sia assegnato il ruolo di blocco legale in Exchange Online. 
 
 Per rimuovere il blocco di ritardo su una cassetta postale inattiva, eseguire il comando seguente in PowerShell di Exchange Online:
 
-```
+```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 

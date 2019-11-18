@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Descrizioni delle proprietà aggiuntive incluse in un record del registro di controllo di Office 365.
-ms.openlocfilehash: 04b2c0bf5d4a3a534e166e82b0261f71e7788294
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: a08c958df43905ea84f7a241f9f0fbf48502d164
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437796"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38686337"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Proprietà dettagliate nel log di controllo di Office 365
 
@@ -44,8 +44,7 @@ Nella tabella seguente vengono descritte le proprietà incluse (a seconda del se
 |ChannelName|Nome di un canale Microsoft teams. Il team in cui si trova il canale è identificato dalle proprietà **TeamName** e **TeamGuid** .|Microsoft Teams|
 |Client|Il dispositivo client, il sistema operativo del dispositivo e il Visualizzatore di dispositivi utilizzato per l'evento login (ad esempio, Nokia Lumia 920; Windows Phone 8; IE Mobile 11).|Azure Active Directory|
 |ClientInfoString|Informazioni sul client di posta elettronica utilizzato per eseguire l'operazione, ad esempio una versione del browser, una versione di Outlook e informazioni sui dispositivi mobili|Exchange (attività delle cassette postali)|
-|ClientIP|L'indirizzo IP del dispositivo utilizzato quando è stata registrata l'attività. L'indirizzo IP viene visualizzato in un formato di indirizzo IPv4 o IPv6.<br/><br/>Tenere presente che per l'attività di amministrazione per gli eventi relativi a Azure Active Directory, l'indirizzo IP non è registrato e il valore `null`della proprietà CLIENTIP è. |Exchange ed Azure Active Directory|
-|ClientIPAddress|Uguale a ClientIP.|SharePoint|
+|ClientIP|L'indirizzo IP del dispositivo utilizzato quando è stata registrata l'attività. L'indirizzo IP viene visualizzato in un formato di indirizzo IPv4 o IPv6.<br/><br/> Per alcuni servizi, il valore visualizzato in questa proprietà può essere l'indirizzo IP di un'applicazione attendibile (ad esempio, Office nelle app Web) che chiama il servizio per conto di un utente e non l'indirizzo IP del dispositivo utilizzato dalla persona che ha eseguito l'attività. <br/><br/>Inoltre, per le attività amministrative (o attività eseguite da un account di sistema) per gli eventi di Azure Active Directory, l'indirizzo IP non è registrato e il valore della proprietà `null`CLIENTIP è. |Azure Active Directory, Exchange, SharePoint|
 |CreationTime|Data e ora in formato UTC (Coordinated Universal Time) quando l'utente ha eseguito l'attività.|Tutto|
 |DestinationFileExtension|L'estensione di un file copiato o spostato. Questa proprietà viene visualizzata solo per le attività utente filecopiate e filemoved.|SharePoint|
 |NomefileDestinazione|Il nome del file viene copiato o spostato. Questa proprietà viene visualizzata solo per le azioni filecopiate e filemoved.|SharePoint|
@@ -83,12 +82,12 @@ Nella tabella seguente vengono descritte le proprietà incluse (a seconda del se
 |TeamName|Nome di un team in Microsoft teams.|Microsoft Teams|
 |UserAgent|Informazioni sul browser dell'utente. Queste informazioni sono fornite dal browser.|SharePoint|
 |UserDomain|Informazioni sull'identità relative all'organizzazione tenant dell'utente (attore) che ha eseguito l'azione.|Azure Active Directory|
-|UserID|L'utente che ha eseguito l'azione, specificata nella proprietà **Operation** , che ha provocato la registrazione del record. Tenere presente che i record relativi all'attività eseguita dagli account di sistema, ad esempio SHAREPOINT\system o NT AUTHORITY\SYSTEM, sono inclusi anche nel registro di controllo.|Tutto|
+|UserID|L'utente che ha eseguito l'azione, specificata nella proprietà **Operation** , che ha provocato la registrazione del record. I record relativi all'attività eseguita dagli account di sistema, ad esempio SHAREPOINT\system o NT AUTHORITY\SYSTEM, sono inclusi anche nel registro di controllo.|Tutto|
 |UserKey|ID alternativo per l'utente identificato nella proprietà **userid** . Ad esempio, questa proprietà viene popolata con l'ID univoco Passport (PUID) per gli eventi eseguiti dagli utenti in SharePoint. Questa proprietà può anche specificare lo stesso valore della proprietà **userid** per gli eventi che si verificano in altri servizi ed eventi eseguiti dagli account di sistema.|Tutto|
 |UserSharedWith|Utente a cui è stata condivisa una risorsa. Questa proprietà è inclusa se il valore della proprietà **Operation** è **SharingSet**. Questo utente è elencato anche nella colonna **Shared con** del report.|SharePoint|
 |UserType|Il tipo di utente che ha eseguito l'operazione. I valori riportati di seguito indicano il tipo di utente. <br/> <br/> **0** -un utente normale. <br/>**2** -un amministratore dell'organizzazione di Office 365. <sup>1</sup> <br/>**3** -un account di sistema dell'amministratore o del datacenter di Microsoft datacenter. <br/>**4** -un account di sistema. <br/>**5** -un'applicazione. <br/>**6** -un'entità di servizio.<br/>**7** -un criterio personalizzato.<br/>**8** -un criterio di sistema.|Tutto|
 |Version|Indica il numero di versione dell'attività (identificata dalla proprietà **Operation** ) registrata.|Tutto|
-|Carico di lavoro|Il servizio Office 365 in cui si è verificata l'attività. I valori possibili per questa proprietà sono:  <br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/><br/>Compliance<br/>Skype for business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>Project<br/>PowerApps<br/>analisi del luogo di lavoro**|Tutto|
+|Carico di lavoro|Il servizio Office 365 in cui si è verificata l'attività. I valori possibili per questa proprietà sono:  <br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>conformità<br/>Sway<br/>Skype for business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/><br/><br/><br/><br/><br/>Yammer MicrosoftTeams ThreatIntelligence MicrosoftFlow MicrosoftStream DlpSharePointClassificationData<br/>Project PowerApps analisi dei luoghi di lavoro<br/><br/>**|Tutto|
 ||||
 
 > [!NOTE]

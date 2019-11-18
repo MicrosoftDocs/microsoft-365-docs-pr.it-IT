@@ -10,18 +10,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore nativo per importare i dati dallo strumento Instant Bloomberg chat in Office 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per consentire l'utilizzo di funzionalità di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: eda68a0fdc887a2042a78683eaef0693264d0684
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 97923fbd9bec8f5ae5fad822947c57bab08fe218
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083308"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38686369"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Configurare un connettore per archiviare i dati di Bloomberg istantanei in Office 365
 
 Utilizzare un connettore nativo nel centro sicurezza & compliance in Office 365 per importare e archiviare i dati della chat dei servizi finanziari dallo strumento [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) Collaboration. Dopo aver configurato e configurato un connettore, si connette al sito FTP sicuro Bloomberg (SFTP) dell'organizzazione una volta al giorno, converte il contenuto dei messaggi di chat in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali di Office 365.
 
-Dopo che i dati di Bloomberg istantanei vengono archiviati nelle cassette postali degli utenti, è possibile applicare le funzionalità di conformità di Office 365, ad esempio il blocco per controversia legale, la ricerca di contenuto, l'archiviazione sul posto, il controllo e i criteri di conservazione di Office 365 ai dati istantanei Ad esempio, è possibile cercare i messaggi di chat di Bloomberg istantanei usando la ricerca di contenuto o associare la cassetta postale che contiene i dati di Bloomberg istantanei con un custode in un caso avanzato di eDiscovery. L'utilizzo di un connettore Bloomberg istantaneo per l'importazione e l'archiviazione dei dati in Office 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
+Dopo che i dati di Bloomberg istantanei vengono archiviati nelle cassette postali degli utenti, è possibile applicare le funzionalità di conformità di Office 365, ad esempio il blocco per controversia legale, la ricerca di contenuto, l'archiviazione sul posto, il controllo, la [conformità alla comunicazione](communication-compliance.md)e i criteri di conservazione di Office 365 ai dati Ad esempio, è possibile cercare i messaggi di chat di Bloomberg istantanei usando la ricerca di contenuto o associare la cassetta postale che contiene i dati di Bloomberg istantanei con un custode in un caso avanzato di eDiscovery. L'utilizzo di un connettore Bloomberg istantaneo per l'importazione e l'archiviazione dei dati in Office 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
 ## <a name="overview-of-archiving-instant-bloomberg-data"></a>Panoramica dell'archiviazione dei dati di messaggistica istantanea di Bloomberg
 
@@ -37,11 +37,11 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
     
 4. Il connettore importa gli elementi del messaggio di chat nella cassetta postale di un utente specifico o in una cassetta postale alternativa. Il connettore viene utilizzato utilizzando il valore della proprietà *CorporateEmailAddress* . Ogni messaggio di chat contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante del messaggio di chat. Se un elemento viene importato in una cassetta postale utente specifica o nella cassetta postale alternativa, si basa sui seguenti criteri:
     
-    un. **Elementi che hanno un valore nella proprietà CorporateEmailAddress che corrisponde a un account utente di Office 365:** Se il connettore può associare l'indirizzo di posta elettronica nella proprietà *CorporateEmailAddress* a un account utente specifico in Office 365, l'elemento viene copiato nella cartella posta in arrivo nella cassetta postale di Office 365 dell'utente.
+    a. **Elementi che hanno un valore nella proprietà CorporateEmailAddress che corrisponde a un account utente di Office 365:** Se il connettore può associare l'indirizzo di posta elettronica nella proprietà *CorporateEmailAddress* a un account utente specifico in Office 365, l'elemento viene copiato nella cartella posta in arrivo nella cassetta postale di Office 365 dell'utente.
     
     b. **Elementi che dispongono di un valore nella proprietà CorporateEmailAddress che non corrisponde a un account utente di Office 365:** Se il connettore non è in grado di associare un indirizzo di posta elettronica nella proprietà *CorporateEmailAddress* a un account utente specifico di Office 365, l'elemento viene copiato nella cartella posta in arrivo di una cassetta postale alternativa "catch-all" in Office 365.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Molti dei passaggi di implementazione necessari per archiviare i dati di Bloomberg istantanei sono esterni a Office 365 e devono essere completati prima di poter creare il connettore nel centro sicurezza & Compliance.
 
@@ -119,7 +119,7 @@ L'ultimo passaggio consiste nel creare un connettore Bloomberg istantaneo nel ce
 5. Nella pagina **cassetta postale alternativa** , digitare l'indirizzo di posta elettronica di una cassetta postale che viene utilizzata per archiviare i messaggi di chat da Instant Bloomberg che non sono associati a una cassetta postale dell'utente nell'organizzazione.
 
    > [!NOTE]
-   > Ogni messaggio di chat in ogni conversazione in Instant Bloomberg include una proprietà denominata *CorporateEmailAddress*, che contiene l'indirizzo di posta elettronica dell'organizzazione per il partecipante alla chat. Durante il processo di importazione, il connettore tenta di importare i messaggi di chat in una cassetta postale di un utente in Office 365 che ha gli stessi indirizzi di posta elettronica che corrispondono a quello della proprietà *CorporateEmailAddress* . Se non esiste una cassetta postale di Office 365 con lo stesso indirizzo di quella nella proprietà *CorporateEmailAddress* , il connettore importa il messaggio di chat nella cassetta postale alternativa specificata in questa pagina. In questo momento, i messaggi di chat istantanea di Bloomberg archiviati nella cassetta postale alternativa non sono monitorati da criteri di supervisione in Office 365.
+   > Ogni messaggio di chat in ogni conversazione in Instant Bloomberg include una proprietà denominata *CorporateEmailAddress*, che contiene l'indirizzo di posta elettronica dell'organizzazione per il partecipante alla chat. Durante il processo di importazione, il connettore tenta di importare i messaggi di chat in una cassetta postale di un utente in Office 365 che ha gli stessi indirizzi di posta elettronica che corrispondono a quello della proprietà *CorporateEmailAddress* . Se non esiste una cassetta postale di Office 365 con lo stesso indirizzo di quello della proprietà *CorporateEmailAddress* , il connettore importa il messaggio di chat nella cassetta postale alternativa specificata in questa pagina.
 
 6. Fare clic su **Avanti**, rivedere le impostazioni e quindi fare clic su **prepara** per creare il connettore.
 

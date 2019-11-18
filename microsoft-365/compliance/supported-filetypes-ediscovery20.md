@@ -14,16 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3dbebb20d179f78e97a8ae18fb810a8cb53c45ed
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
+ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084101"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "38686340"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipi di file supportati in Advanced eDiscovery
 
 Advanced eDiscovery supporta molti tipi di file a diversi livelli, descritti nella tabella seguente. Questo elenco non è stato completato e verranno aggiunti nuovi tipi di file man mano che si continua il test di convalida. Le tabelle indicano se un tipo di file è supportato per l'estrazione del testo (OCR per le immagini), visualizzabile nel Visualizzatore nativo e supporta anche il Visualizzatore di annotazioni in Advanced eDiscovery.
+
 
 ## <a name="archive--container"></a>Archivio/contenitore
 
@@ -32,7 +33,19 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli, descritti nel
 | applicazione/x-7z-compresso | Sì | Sì | Sì | .7z |
 | applicazione/x-rar-compresso | Sì | Sì | Sì | . rar |
 | applicazione/x-tar | Sì | Sì | Sì | . tar |
-| applicazione/zip | Sì | Sì | Sì | . zip |
+| applicazione/zip | Sì | Sì | Sì | .zip |
+||||||||
+
+## <a name="audio--video"></a>Audio/video
+
+| Tipo MIME | Identificazione file | Estrazione dei metadati | Estrazione del testo | Visualizzatore nativo | Visualizzatore annotazioni | Estensioni possibili |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| applicazione/MP4 | Sì | Sì | No | Sì | No | . F4V;. m4a;. m4v;. MP4;. mp4v;. MPEG;. MPEG4 |
+| audio/MPEG | Sì | Sì | No | Sì | No | . MPEG |
+| video/3GPP | Sì | Sì | No | Sì | No | .3GP |
+| video/3GPP2 | Sì | Sì | No | Sì | No | .3G2;. 3gp2 |
+| video/QuickTime | Sì | Sì | No | Sì | No | . Moov;. MOV;. QT |
+| video/x-M4V | Sì | Sì | No | Sì | No | . m4v |
 ||||||||
 
 ## <a name="database"></a>Database
@@ -47,7 +60,7 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli, descritti nel
 | Tipo MIME | Identificazione file | Estrazione dei metadati | Estrazione del testo | Visualizzatore nativo | Visualizzatore annotazioni | Estensioni possibili |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | Application/vnd. MS-Outlook | Sì | Sì | Sì | Sì | Sì | . msg |
-| messaggio/RFC822 | Sì | Sì | Sì | Sì | Sì | . eml |
+| messaggio/RFC822 | Sì | Sì | Sì | Sì | Sì | .eml |
 | Text/vCard-contatti | Sì | Sì | Sì | Sì | Sì | . vcf |
 ||||||||
 
@@ -95,6 +108,13 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli, descritti nel
 | Application/vnd. openxmlformats-officedocument. SpreadsheetML. template | Sì | Sì | Sì | Sì | Sì | . xltx |
 ||||||||
 
+## <a name="microsoft-onenote"></a>Microsoft OneNote
+
+| Tipo MIME | Identificazione file | Estrazione dei metadati | Estrazione del testo | Visualizzatore nativo | Visualizzatore annotazioni | Estensioni possibili |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| applicazione/OneNote | Sì | Sì | Sì | Sì | No | . One |
+||||||||
+
 ## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
 
 | Tipo MIME | Identificazione file | Estrazione dei metadati | Estrazione del testo | Visualizzatore nativo | Visualizzatore annotazioni | Estensioni possibili |
@@ -103,6 +123,13 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli, descritti nel
 | Application/vnd. openxmlformats-officedocument. PresentationML. Presentation | Sì | Sì | Sì | Sì | Sì | .pptx |
 | Application/vnd. openxmlformats-officedocument. PresentationML. slideshow | Sì | Sì | Sì | Sì | Sì | . ppsx |
 | Application/vnd. openxmlformats-officedocument. PresentationML. template | Sì | Sì | Sì | Sì | Sì | . potx |
+||||||||
+
+## <a name="microsoft-project"></a>Microsoft Project
+
+| Tipo MIME | Identificazione file | Estrazione dei metadati | Estrazione del testo | Visualizzatore nativo | Visualizzatore annotazioni | Estensioni possibili |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| Application/vnd. MS-Project | Sì | Sì | Sì | No | Sì | . mpp |
 ||||||||
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher

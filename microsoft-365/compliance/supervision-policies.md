@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di supervisione in Office 365
-ms.openlocfilehash: fc143982ab7ec465bb379e0032b4d99a5d28edec
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bac0f99683c87eb57ee8a69334010573c69acc55
+ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084106"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38686439"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di supervisione in Office 365
 
-I criteri di supervisione in Office 365 consentono di acquisire le comunicazioni dei dipendenti per l'esame da revisori designati. È possibile definire criteri specifici che consentono di acquisire messaggi di posta elettronica interni ed esterni, Microsoft teams o comunicazioni di terze parti nell'organizzazione. I revisori possono quindi esaminare i messaggi per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione e risolverli con il tipo di classificazione. 
+I criteri di supervisione in Office 365 consentono di acquisire le comunicazioni dei dipendenti per l'esame da revisori designati. È possibile definire criteri specifici che consentono di acquisire messaggi di posta elettronica interni ed esterni, Microsoft teams o comunicazioni di terze parti nell'organizzazione. I revisori possono quindi esaminare i messaggi per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione e risolverli con il tipo di classificazione.
 
 Questi criteri possono anche aiutare a superare molte sfide di conformità moderne, tra cui:
 
@@ -38,6 +38,8 @@ In alcune organizzazioni può verificarsi una separazione dei compiti tra il sup
 Per una breve panoramica dei criteri di supervisione, vedere il [video sui criteri di supervisione](https://youtu.be/C3Y8WZ7o_dI) sul [canale Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
 Per ulteriori informazioni sui miglioramenti e la disponibilità delle funzionalità di supervisione imminenti, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
+
+Si desidera provare la nuova esperienza di conformità della comunicazione in Microsoft 365? Consultare le funzionalità nuove e migliorate disponibili in [Compliance Communication in Microsoft 365 (Preview)](communication-compliance.md).
 
 ## <a name="scenarios-for-supervision-policies"></a>Scenari per i criteri di supervisione
 
@@ -111,7 +113,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 
 È possibile includere i tipi di informazioni riservate nell'ambito del criterio di supervisione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Come parte del servizio di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md)di Office 365, la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
 
-- Finanziari
+- Finanze
 - Medicale e sanitarie
 - Privacy
 - Tipo di informazioni personalizzato
@@ -152,7 +154,7 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
   
 |**Condizione**|**Come utilizzare questa condizione**|
 |:-----|:-----|
-| **Il messaggio viene ricevuto da uno di questi domini**  <br><br> **Il messaggio non viene ricevuto da nessuno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi ricevuti. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica immesso viene applicato separatamente, solo un dominio o un indirizzo di posta elettronica devono essere applicati per il criterio da applicare al messaggio. <br><br> Se si desidera monitorare tutti i messaggi di posta elettronica provenienti da un dominio specifico ma si desidera escludere il messaggio che non è necessario esaminare (newsletter, annunci e così via), è necessario configurare la condizione che **non sia stato ricevuto da nessuno di questi domini** la condizione che escluda la Indirizzo di posta elettronica (ad esempio "newsletter@contoso.com"). |
+| **Il messaggio viene ricevuto da uno di questi domini**  <br><br> **Il messaggio non viene ricevuto da nessuno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi ricevuti. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica immesso viene applicato separatamente, solo un dominio o un indirizzo di posta elettronica devono essere applicati per il criterio da applicare al messaggio. <br><br> Se si desidera monitorare tutti i messaggi di posta elettronica provenienti da un dominio specifico ma si desidera escludere il messaggio che non è necessario esaminare (newsletter, annunci e così via), è necessario configurare la condizione che **non sia stato ricevuto da nessuno di questi domini** la condizione che escluda l'indirizzo di posta elettronica (ad esempio "newsletter@contoso.com"). |
 | **Il messaggio viene inviato a uno di questi domini**  <br><br> **Il messaggio non viene inviato a uno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi inviati. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica viene applicato separatamente, per applicare il criterio al messaggio è necessario un solo dominio o un indirizzo di posta elettronica. <br><br> Se si desidera monitorare tutti i messaggi di posta elettronica inviati a un dominio specifico, ma si desidera escludere quelli inviati che non richiedono la revisione, è necessario configurare due condizioni: <br> -Un **messaggio viene inviato a una qualsiasi di queste condizioni dei domini** che definisce il dominio ("contoso.com") e <br> -Un **messaggio non viene inviato a una di queste condizioni di dominio** che escluda l'indirizzo di posta elettronica ("subscriptions@contoso.com"). |
 | **Il messaggio è classificato con una qualsiasi di queste etichette**  <br><br> **Il messaggio non è classificato con nessuna di queste etichette** | Per applicare il criterio quando determinate etichette di conservazione sono incluse o escluse in un messaggio. Le etichette di conservazione devono essere configurate separatamente e le etichette configurate vengono scelte come parte di questa condizione. Ogni etichetta scelta viene applicata separatamente (è necessario applicare solo una di queste etichette per il criterio da applicare al messaggio). Per ulteriori informazioni sulla configurazione delle etichette di conservazione, vedere [Overview of retention labels](labels.md).|
 | **Il messaggio contiene una o più delle seguenti parole**  <br><br> **Il messaggio contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un messaggio, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (solo una di queste righe deve richiedere il criterio da applicare al messaggio). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](supervision-policies.md#Matchwords).|
@@ -164,7 +166,7 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Corrispondenza di parole e frasi a messaggi di posta elettronica o allegati
 <a name="Matchwords"></a> Ogni riga di parole immesse viene applicata separatamente (è necessario applicare solo una riga per la condizione di criteri da applicare al messaggio di posta elettronica o all'allegato). Ad esempio, usiamo la condizione, il **messaggio contiene una o più delle seguenti parole**, con le parole chiave "Banker" e "insider trading" su righe separate. Il criterio si applica a tutti i messaggi che includono la parola "Banker" o la frase "insider trading". Per applicare questa condizione di criteri, è necessario che si verifichi solo una di queste parole o frasi. Le parole del messaggio o dell'allegato devono corrispondere esattamente a quelle immesse.
 
-Per analizzare i messaggi di posta elettronica e gli allegati per le stesse parole chiave, creare un [criterio di prevenzione della perdita di dati](create-test-tune-dlp-policy.md) con un dizionario di parole [chiave personalizzato](create-a-keyword-dictionary.md) per i termini che si desidera monitorare. Questa configurazione dei criteri identifica le parole chiave definite che vengono visualizzate nel messaggio di posta elettronica **o** nell'allegato di posta elettronica. L'utilizzo delle impostazioni standard dei criteri condizionali (*messaggio contiene una di queste parole* e un *allegato contiene una di queste parole*) per identificare i termini nei messaggi e negli allegati richiede che i termini siano presenti **sia** nel messaggio che nel allegato.
+Per analizzare i messaggi di posta elettronica e gli allegati per le stesse parole chiave, creare un [criterio di prevenzione della perdita di dati](create-test-tune-dlp-policy.md) con un dizionario di parole [chiave personalizzato](create-a-keyword-dictionary.md) per i termini che si desidera monitorare. Questa configurazione dei criteri identifica le parole chiave definite che vengono visualizzate nel messaggio di posta elettronica **o** nell'allegato di posta elettronica. L'utilizzo delle impostazioni standard dei criteri condizionali (*messaggio contiene una di queste parole* e un *allegato contiene una di queste parole*) per identificare i termini nei messaggi e negli allegati richiede che i termini siano presenti **sia** nel messaggio che nell'allegato.
   
 ##### <a name="enter-multiple-conditions"></a>Immettere più condizioni
 
@@ -276,7 +278,7 @@ Visualizzare le attività di controllo nel log di controllo unificato o con il c
 
 Ad esempio, nell'esempio seguente vengono restituite le attività per tutte le attività di revisione di supervisione (criteri e regole) ed elenchi di informazioni dettagliate per ogni:
 
-```
+```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
@@ -285,3 +287,4 @@ Oltre alle informazioni fornite nei report e nei registri di supervisione, è an
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 
 Per configurare i criteri di supervisione per l'organizzazione, vedere [configurare i criteri di supervisione](configure-supervision-policies.md).
+

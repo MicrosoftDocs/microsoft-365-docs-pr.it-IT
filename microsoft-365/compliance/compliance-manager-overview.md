@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 428e4ef319d53bf161903fc9584037800d0b3d3b
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 723f1372b9214367985cc6b42c41e94c3f201b89
+ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417535"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38686347"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager (anteprima)
 
@@ -105,22 +105,22 @@ Un controllo condiviso si riferisce a qualsiasi controllo in cui Microsoft e i c
 
 [Gli elementi Actions](working-with-compliance-manager.md#controls-and-actions) sono inclusi nei controlli gestiti dal cliente come parte della funzionalità di gestione dei flussi di lavoro incorporata che è possibile utilizzare per gestire e monitorare i progressi compiuti verso il completamento della valutazione.
 
-Gli utenti dell'organizzazione possono utilizzare Compliance Manager per esaminare i controlli gestiti dal cliente da tutte le valutazioni per cui sono stati assegnati. Quando un utente accede a Compliance Manager e apre il dashboard **elementi azione** , viene visualizzato un elenco di elementi azione assegnati. A seconda del ruolo di Compliance Manager assegnato all'utente, è in grado di fornire dettagli sull'implementazione o sui test, aggiornare lo stato o assegnare elementi di azione.
+Gli utenti dell'organizzazione possono utilizzare Compliance Manager per esaminare i controlli gestiti dal cliente da tutte le valutazioni per cui sono stati assegnati. Quando un utente accede a Responsabile Conformità e apre la dashboard **Azioni**, viene visualizzato un elenco delle attività assegnate all'utente stesso. In base al ruolo di Compliance Manager assegnatogli, l'utente può fornire dettagli relativi all'implementazione o al test, aggiornare lo stato o assegnare attività.
 
 I controlli di certificazione vengono in genere implementati da una persona e testati da un altro. Ad esempio, dopo aver completato gli elementi di azione inizialmente assegnati a una persona per l'implementazione, gli elementi di azione vengono assegnati alla persona successiva per testare e caricare la prova. Gli utenti che dispongono di autorizzazioni sufficienti per le assegnazioni di controllo possono assegnare e riassegnare gli elementi di azione. In questo modo è possibile gestire in modo centralizzato le assegnazioni dei controlli e il routing decentralizzato degli elementi di azione tra gli implementatori e i tester.
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Compliance Manager utilizza un modello di autorizzazione per il controllo di accesso basato sui ruoli. Solo gli utenti a cui è assegnato un ruolo utente possono accedere a Compliance Manager e le azioni consentite da ogni utente sono limitate dal tipo di ruolo. [Visualizzare una tabella](working-with-compliance-manager.md#permissions) in cui sono riportate le azioni consentite per ogni autorizzazione.
+Compliance Manager usa un modello di autorizzazione di controllo dell'accesso basato sui ruoli. Solo agli utenti a cui è stato assegnato il ruolo utente è consentito di accedere a Compliance Manager e le azioni consentite da ogni utente sono limitate in base al tipo di ruolo. [Visualizzare una tabella](working-with-compliance-manager.md#permissions) in cui sono riportate le azioni consentite per ogni autorizzazione.
 
 L'amministratore del portale per Compliance Manager può impostare le autorizzazioni per gli altri utenti all'interno di Compliance Manager attenendosi alla procedura seguente:
 
 1. Dal menu a discesa **in alto,** selezionare **amministratore**, quindi **Impostazioni**.
 2. Da qui, selezionare il ruolo che si desidera assegnare e quindi aggiungere il dipendente che si desidera assegnare a quel ruolo. Gli utenti saranno quindi in grado di eseguire determinate azioni.
 
-Inoltre, gli utenti a cui è assegnato il [ruolo di lettore globale in Azure Active Directory (Azure ad)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) dispongono dell'autorizzazione di sola lettura per accedere a Compliance Manager. Tuttavia, non è possibile modificare i dati o eseguire azioni all'interno di Compliance Manager.
+Inoltre, gli utenti a cui è assegnato il [ruolo di lettore globale in Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) dispongono dell'autorizzazione di sola lettura per accedere a Compliance Manager. Tuttavia, non è possibile modificare i dati o eseguire azioni all'interno di Compliance Manager.
 
-Si noti che non è più disponibile un ruolo di **accesso Guest** predefinito. A ogni utente deve essere assegnato un ruolo per poter accedere e lavorare all'interno di Compliance Manager.
+Si noti che non esiste più un ruolo predefinito **Accesso guest**. A ogni utente deve essere assegnato un ruolo per poter accedere e lavorare in Compliance Manager.
   
 ## <a name="manage-evidence"></a>Gestione delle evidenze
 
@@ -131,28 +131,30 @@ Compliance Manager può archiviare la prova delle attività di implementazione p
 Compliance Manager fornisce [modelli](working-with-compliance-manager.md#templates) preconfigurati per le valutazioni e consente di creare modelli personalizzati per i controlli gestiti dal cliente per soddisfare i requisiti di conformità. I nuovi modelli vengono creati importando le informazioni sui controlli da un file di Excel oppure è possibile creare un modello da una copia di un modello esistente.
 
 I modelli preconfigurati inclusi in Compliance Manager sono i seguenti:
- 
-- [ISO 27001:2013](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en)
-- [ISO 27018:2019](https://www.iso.org/obp/ui/#iso:std:iso-iec:27018:ed-2:v1:en)
-- [NIST 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final)
-- [NIST 800-171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)
-- [NIST Cybersecurity Framework (CSF)](https://www.nist.gov/cyberframework)
-- [Cloud Control Matrix (CCM) Cloud Security Alliance (CSA) 3.0.1](https://cloudsecurityalliance.org/working-groups/cloud-controls-matrix/#_overview)
-- [Opuscolo sulla sicurezza delle istituzioni finanziarie federali (FFIEC)](https://ithandbook.ffiec.gov/it-booklets/information-security.aspx) 
-- [](https://www.hhs.gov/hipaa/for-professionals/index.html) / [Hitech](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html) HIPAA
-- [FedRAMP moderato](https://www.fedramp.gov/documents/)
-- [GDPR Unione europea](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
+
+1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+3. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+4. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+5. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+6. [Matrice dei controlli cloud di Cloud Security Alliance (CSA) (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+8. [Opuscolo sulla sicurezza delle istituzioni finanziarie federali (FFIEC)](https://go.microsoft.com/fwlink/?linkid=2109077) 
+8. [](https://go.microsoft.com/fwlink/?linkid=2109078) / [Hitech](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
+9. [FedRAMP moderato](https://go.microsoft.com/fwlink/?linkid=2108869)
+10. [GDPR Unione europea](https://go.microsoft.com/fwlink/?linkid=2108870)
+11. [California Consumer Privacy Act (CCPA)-anteprima](https://go.microsoft.com/fwlink/?linkid=2108871)
+12. [Linea di base per la protezione dei dati di Microsoft 365](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
 
 ## <a name="compliance-score"></a>Punteggio di conformità
 
-Il [Punteggio di conformità](compliance-score-methodology.md) è un componente di base di Compliance Manager che aiuta l'organizzazione a comprendere e gestire la conformità. Analogamente al Punteggio di sicurezza di [Microsoft](../security/mtp/microsoft-secure-score.md), il Punteggio di conformità è un sistema di punteggio basato sul comportamento per le attività relative alla protezione dei dati, alla privacy e alla sicurezza nell'organizzazione. Il Punteggio di conformità per una valutazione è espressione di conformità a un determinato standard o normative. Più alto è il punteggio numerico, maggiore è la posizione di conformità per la valutazione. La comprensione della metodologia di valutazione della conformità è cruciale per la definizione di priorità delle azioni di controllo gestite dal cliente.
+[Microsoft Compliance Score (Preview)](compliance-score.md) è una funzionalità del centro conformità di Microsoft 365 che consente di comprendere la posizione di conformità dell'organizzazione. Calcola un punteggio basato sui rischi misurando lo stato di avanzamento del processo di completamento delle azioni che consentono di ridurre i rischi per la protezione dei dati e gli standard normativi. La conoscenza del Punteggio di conformità globale aiuta l'organizzazione a comprendere e gestire la conformità. Capire in [che modo viene calcolato il Punteggio di conformità](compliance-score-methodology.md).
   
 > [!IMPORTANT]
-> Il punteggio di conformità non esprime una misura assoluta di conformità organizzativa a nessun particolare standard o regolamento. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Nessun servizio può garantire la conformità a uno standard o regolamento e il punteggio di conformità non deve essere interpretato come una garanzia in alcun modo.
+> Il Punteggio di conformità non esprime una misura assoluta di conformità organizzativa rispetto a una norma o a un regolamento particolari. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Nessun servizio può garantire che l'utente sia conforme a una norma o a una regolamentazione e che il Punteggio di conformità non debba essere interpretato come garanzia in alcun modo.
 
 ## <a name="secure-score-integration"></a>Integrazione del Punteggio sicuro
 
-Compliance Manager è integrato con [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) per applicare automaticamente il credito al Punteggio sicuro al Punteggio di conformità per gli elementi di azione sincronizzati. Questo è configurabile per singoli elementi di azione e fornisce un aggiornamento continuo tra gli elementi.
+Compliance Manager è integrato con [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md) per applicare automaticamente il credito al Punteggio sicuro al Punteggio di conformità per gli elementi di azione sincronizzati. Questa operazione è configurabile per singoli elementi azione o tutte le azioni a livello globale e fornisce gli aggiornamenti da un punteggio sicuro.
 
 Ad esempio, si dispone di un requisito relativo alla sicurezza per l'attivazione di Azure Rights Management nell'organizzazione che si applica anche a un elemento di azione correlato alla conformità. Quando Azure Rights Management viene attivato ed elaborato dal punteggio sicuro, Compliance Manager riceve la notifica dell'aggiornamento e il punteggio dell'azione viene aggiornato automaticamente con il credito di completamento.
 

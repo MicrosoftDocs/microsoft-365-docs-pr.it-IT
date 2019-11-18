@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Creare un criterio di archiviazione ed eliminazione in Office 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
-ms.openlocfilehash: ca43498d785f1a5525a8159e7e553bd36257a7c2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 801f97b658df08cd3c548c6aed99018a8613b473
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084003"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686611"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurare un criterio di archiviazione ed eliminazione per le cassette postali nell'organizzazione di Office 365
 
@@ -44,7 +44,7 @@ La procedura descritta in questo articolo consentirà di impostare un criterio d
     
 È possibile seguire alcuni o tutti i passaggi descritti in questo articolo per configurare un criterio di eliminazione e archiviazione per le cassette postali nella propria organizzazione. È consigliabile testare questo processo su poche cassette postali prima di implementarlo in tutte le cassette postali dell'organizzazione.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per eseguire la procedura descritta in questo argomento, è necessario essere un amministratore globale dell'organizzazione di Office 365. 
     
@@ -125,7 +125,7 @@ In primo luogo, verrà creato un tag dei criteri predefiniti di archiviazione pe
     
 3. **Periodo di conservazione** Selezionare **quando l'elemento raggiunge la data di validità seguente (in giorni)** e quindi immettere la durata del periodo di conservazione. Per questo scenario, gli elementi verranno spostati nella cassetta postale di archiviazione dopo 1095 giorni (3 anni).
     
-4. **Commenti** Optional Digitare un commento che spieghi lo scopo del tag di conservazione personalizzato. 
+4. **Commento** (facoltativo) digitare un commento che spieghi lo scopo del tag di conservazione personalizzato. 
     
 3. Fare clic su **Salva** per creare la tag di archiviazione personalizzato. 
     
@@ -147,7 +147,7 @@ Successivamente, verrà creato un altro tag personalizzato, ma questo sarà un c
     
 3. **Periodo di conservazione** Selezionare **quando l'elemento raggiunge la data di validità seguente (in giorni)** e quindi immettere la durata del periodo di conservazione. Per questo scenario, gli elementi verranno eliminati dopo 2555 giorni (7 anni).
     
-4. **Commenti** Optional Digitare un commento che spieghi lo scopo del tag di conservazione personalizzato. 
+4. **Commento** (facoltativo) digitare un commento che spieghi lo scopo del tag di conservazione personalizzato. 
     
 3. Fare clic su **Salva** per creare il tag di eliminazione personalizzato. 
     
@@ -171,7 +171,7 @@ L'ultimo tag di conservazione creato è un tag del criterio di conservazione (RP
     
 4. **Periodo di conservazione** Selezionare **quando l'elemento raggiunge la data di validità seguente (in giorni)** e quindi immettere la durata del periodo di conservazione. Per questo scenario, gli elementi verranno eliminati dopo 1825 giorni (5 anni).
     
-5. **Commenti** Optional Digitare un commento che spieghi lo scopo del tag di conservazione personalizzato. 
+5. **Commento** (facoltativo) digitare un commento che spieghi lo scopo del tag di conservazione personalizzato. 
     
 3. Fare clic su **Salva** per creare il RPT personalizzato per la cartella Posta eliminata. 
     
@@ -242,7 +242,7 @@ Di seguito sono riportati i passaggi per connettersi a Exchange Online PowerShel
   
 1. Nel computer locale aprire Windows PowerShell ed eseguire il comando seguente.
     
-    ```
+    ```powershell
     $UserCredential = Get-Credential
     ```
 
@@ -250,19 +250,19 @@ Di seguito sono riportati i passaggi per connettersi a Exchange Online PowerShel
     
 2. Eseguire il comando riportato di seguito.
     
-    ```
+    ```powershell
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     ```
 
 3. Eseguire il comando riportato di seguito.
     
-    ```
+    ```powershell
     Import-PSSession $Session
     ```
 
 4. Per verificare di essere connessi alla propria organizzazione Exchange Online, eseguire il seguente comando per visualizzare un elenco di tutte le cassette postali dell'organizzazione:
     
-    ```
+    ```powershell
     Get-Mailbox
     ```
 
@@ -271,11 +271,11 @@ Di seguito sono riportati i passaggi per connettersi a Exchange Online PowerShel
   
 5. Eseguire i due comandi seguenti per avviare l'Assistente cartelle gestite per tutte le cassette postali degli utenti nell'organizzazione.
     
-    ```
+    ```powershell
     $Mailboxes = Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"}
     ```
 
-    ```
+    ```powershell
     $Mailboxes.Identity | Start-ManagedFolderAssistant
     ```
 
@@ -289,19 +289,21 @@ Nel passaggio 4, è necessario assegnare il nuovo criterio di conservazione alle
 
 2. Eseguire il seguente comando per visualizzare le informazioni sui piani delle cassette postali nell'organizzazione.
 
-    ```
+    ```powershell
     Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
     ```
+    
     Tenere presente il piano della cassetta postale impostato come predefinito.
 
 3. Eseguire il seguente comando per assegnare il nuovo criterio di conservazione creato nel passaggio 3, ad esempio il **criterio di conservazione e archiviazione delle case alpine**, nel piano della cassetta postale predefinito. In questo esempio si presuppone che il nome del piano della cassetta postale predefinito sia **ExchangeOnlineEnterprise**.
 
-    ```
+    ```powershell
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
     ```
+
 4. È possibile rieseguire il comando riportato nel passaggio 2 per verificare che il criterio di conservazione assegnato al piano della cassetta postale predefinito sia stato modificato.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Come viene calcolato il periodo di validità della conservazione? L'età di conservazione degli elementi della cassetta postale viene calcolata a partire dalla data di recapito o dalla data di creazione per gli elementi, ad esempio i messaggi Draft che non sono stati inviati ma che sono stati creati dall'utente. Quando Assistente cartelle gestite elabora gli elementi in una cassetta postale, applica una data di inizio e una data di scadenza a tutti gli elementi con tag di conservazione utilizzando l'azione di conservazione Elimina e consenti ripristino o Elimina definitivamente. Gli elementi con un tag di archiviazione vengono contrassegnati con una data di spostamento. 
     

@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utilizzare lo strumento eDiscovery ricerca contenuto per cercare gli elementi importati nelle cassette postali di Office 365 da un'origine dati di terze parti. È possibile creare una query per cercare tutti gli elementi importati o creare una query per la ricerca di tipi di dati specifici di terze parti. In questo articolo vengono elencati i valori che è possibile utilizzare in una query di parole chiave per eseguire la ricerca nei tipi di dati di terze parti che è possibile importare in Office 365.
-ms.openlocfilehash: 2d531557054398be4ca963a9b09943f1bf583d10
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 57a39049ae1df3707a96311c9138195b7cc4c83a
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084041"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686596"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-to-office-365"></a>Utilizzare la ricerca contenuto per eseguire la ricerca di dati di terze parti importati in Office 365
 
@@ -29,7 +29,7 @@ Per ulteriori informazioni sull'importazione di dati di terze parti e un elenco 
 
 Per cercare (o inserire un blocco) qualsiasi tipo di dati di terze parti importati in Office 365, è possibile utilizzare la `kind:externaldata` coppia proprietà-valore del messaggio nella casella parola chiave per una ricerca contenuto o durante la creazione di un blocco basato su query. Ad esempio, per cercare gli elementi importati da un'origine dati di terze parti e contenere la parola "contoso" nella proprietà Subject dell'elemento importato, è necessario utilizzare la query seguente: 
   
-```
+```powershell
 kind:externaldata AND subject:contoso
 ```
 
@@ -41,13 +41,13 @@ Quando si creano query per la ricerca e la conservazione dei dati di terze parti
 
 Anziché cercare tutti i tipi di dati di terze parti, è possibile creare query che cercano solo un tipo di dati di terze parti tramite la seguente coppia di *proprietà del messaggio: valore* nella casella parola chiave per una ricerca contenuto:
   
-```
+```powershell
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
 Ad esempio, per cercare i dati di Facebook che contengono la parola "contoso" nella proprietà Subject, è necessario utilizzare la query seguente:
   
-```
+```powershell
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 

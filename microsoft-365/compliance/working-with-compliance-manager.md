@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: d15899b994e4169c7362144623bc726f3825245d
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: e8e1ae997bf48f38e66319aec6ee07d0a84768c8
+ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417585"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38686459"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Collaborare con Microsoft Compliance Manager (anteprima)
 
@@ -40,9 +40,11 @@ Per iniziare, una valutazione ISO/IEC 27001:2103 per Office 365 viene visualizza
 
 ## <a name="administration"></a>Amministrazione
 
-Esistono funzioni amministrative specifiche disponibili solo per l'amministratore globale e visibili solo quando si esegue l'accesso con un account di amministratore globale. Dopo che l'amministratore ha assegnato i ruoli di Compliance Manager ad altri utenti, gli utenti possono visualizzare i dati in Compliance Manager ed eseguire azioni determinate dal loro ruolo. L'amministratore può anche fornire accesso in sola lettura a Compliance Manager assegnando all'utente il [ruolo di lettore globale in Azure Active Directory (Azure ad)](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
+Esistono funzioni amministrative specifiche disponibili solo per l'amministratore globale e visibili solo quando si esegue l'accesso con un account di amministratore globale. L'amministratore globale può assegnare le autorizzazioni utente e può abilitare gli aggiornamenti automatici del Punteggio sicuro per tutte le azioni.
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Assegnazione di ruoli Compliance Manager agli utenti
+
+Dopo che l'amministratore ha assegnato i ruoli di Compliance Manager ad altri utenti, gli utenti possono visualizzare i dati in Compliance Manager ed eseguire azioni determinate dal loro ruolo. L'amministratore può anche fornire accesso in sola lettura a Compliance Manager assegnando all'utente il [ruolo di lettore globale in Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).
 
 Ogni ruolo di Compliance Manager ha autorizzazioni leggermente diverse. È possibile visualizzare le autorizzazioni assegnate a ogni ruolo, vedere gli utenti in cui si trovano i ruoli e aggiungere o rimuovere utenti da tale ruolo tramite il Service Trust Portal. Selezionare la voce di menu di **Amministrazione** e scegliere **Settings** to view.
   
@@ -58,7 +60,7 @@ Per aggiungere o rimuovere utenti da ruoli Compliance Manager.
 
 4. Nell'elenco a discesa **Seleziona ruolo** selezionare il ruolo che si desidera gestire.
 
-5. Gli utenti aggiunti a ogni ruolo sono elencati nella pagina **Seleziona ruolo** .
+5. Gli utenti aggiunti a ciascun ruolo sono aggiunti nella pagina **Seleziona ruolo**.
 
 6. Per aggiungere utenti a questo ruolo, fare clic su **Aggiungi**. Nella finestra di dialogo **Aggiungi utenti** selezionare il campo utente. È possibile scorrere l'elenco degli utenti disponibili o iniziare a digitare il nome utente per filtrare l'elenco in base al termine di ricerca. Selezionare l'utente per aggiungere quell'account all'elenco **Aggiungi utenti** provisioning con tale ruolo. Se si desidera aggiungere più utenti contemporaneamente, iniziare a digitare un nome utente per filtrare l'elenco e quindi selezionare l'utente da aggiungere all'elenco. Selezionare **Salva** per eseguire il provisioning del ruolo selezionato per gli utenti. 
 
@@ -67,6 +69,18 @@ Per aggiungere o rimuovere utenti da ruoli Compliance Manager.
 7. Per rimuovere gli utenti da questo ruolo, selezionarli e selezionare **Elimina**.
 
     ![Compliance Manager-eliminare gli utenti](media/compliance-manager-delete-users.png)
+
+### <a name="controlling-automatic-secure-score-updates"></a>Controllo degli aggiornamenti automatici del Punteggio sicuro
+
+Gli aggiornamenti del Punteggio sicuro possono essere attivati automaticamente per tutte le azioni, possono essere disattivati per tutte le azioni oppure possono essere impostati per azione individuale.
+
+1. Accedere al [Service Trust Portal](https://servicetrust.microsoft.com) con l'account di amministratore globale.
+
+2. Sulla barra dei menu del Service Trust Portal in alto, selezionare **amministratore** e quindi scegliere **Impostazioni**.
+
+4. Nella scheda **Punteggio sicuro** selezionare il pulsante appropriato per l'impostazione desiderata.
+
+**Nota:** Solo l'amministratore globale può abilitare o disattivare gli aggiornamenti automatici per tutte le azioni. L'amministratore di Compliance Manager può abilitare gli aggiornamenti automatici per singole azioni, ma non per tutte le azioni a livello globale.
 
 ## <a name="groups"></a>Gruppi
 
@@ -87,7 +101,7 @@ Quando si lavora con i gruppi, tenere presente quanto segue:
 - I nuovi gruppi possono copiare informazioni da un gruppo esistente quando si crea una nuova valutazione. Tutte le informazioni aggiunte ai campi dei dettagli di implementazione e del piano di test e di risposta di gestione di controlli gestiti dal cliente dalle valutazioni del gruppo da cui si sta effettuando la copia vengono copiate negli stessi controlli gestiti dal cliente (o correlati) nel nuovo Valutazione. Se si sta aggiungendo una nuova valutazione a un gruppo esistente, le informazioni comuni provenienti da valutazioni di quel gruppo vengono copiate nella nuova valutazione.
 - I nomi dei gruppi (denominati anche *ID gruppo*) devono essere univoci all'interno dell'organizzazione.
 - I gruppi possono contenere valutazioni per la stessa certificazione/regolamentazione, ma ogni gruppo può contenere solo una valutazione per una coppia specifica del servizio cloud/certificazione. Ad esempio, un gruppo non può contenere due valutazioni per Office 365 e NIST CSF. Un gruppo può contenere più valutazioni per lo stesso servizio cloud solo se la corrispondente certificazione/regolamentazione per ognuno di essi è diversa.
-- Dopo aver aggiunto una valutazione a un gruppo di valutazione, non è possibile modificare il raggruppamento. È possibile rinominare il gruppo di valutazione, che modifica il nome del gruppo di valutazione per tutte le valutazioni associate a tale gruppo. È possibile creare una valutazione e un nuovo gruppo di valutazione e copiare informazioni da una valutazione esistente, che crea in modo efficace un duplicato di tale valutazione in un gruppo di valutazione differente.
+- Dopo aver aggiunto una valutazione a un gruppo di valutazione, non è possibile modificare il raggruppamento. È possibile rinominare il gruppo di valutazione, che modifica il nome del gruppo di valutazione per tutte le valutazioni associate a tale gruppo. È possibile creare una valutazione e un nuovo gruppo di valutazioni, quindi copiare le informazioni da una valutazione esistente, creando così un duplicato della valutazione in un gruppo di valutazione diverso in modo facile e veloce.
 - L'archiviazione di una valutazione interrompe la relazione tra tale valutazione e il gruppo. Qualsiasi ulteriore aggiornamento ad altre valutazioni correlate non viene più riflesso nella valutazione archiviata.
 
 ## <a name="tenant-management"></a>Gestione tenant
@@ -103,6 +117,9 @@ Selezionare **gestione tenant** per aprire l'interfaccia di gestione e seguire i
 ### <a name="dimensions"></a>Dimensioni
 
 Le dimensioni sono insiemi di metadati che forniscono informazioni su un modello, una valutazione o un elemento di azione. Le dimensioni utilizzano il concetto di chiavi e valori, in cui la chiave Dimension rappresenta una proprietà e il valore della dimensione rappresenta valori validi per la proprietà. Ad esempio, in Compliance Manager esistono tre tipi di azioni. Sono definite da una chiave di dimensione per il **tipo di azione** e i valori di dimensione della **documentazione**, **operativo**e **tecnico**. È possibile modificare o eliminare le dimensioni esistenti.
+
+> [!IMPORTANT]
+> È possibile aggiungere nuove dimensioni, che possono essere assegnate ai modelli già importati. È inoltre possibile aggiungere nuove dimensioni a qualsiasi nuovo modello creato.
 
 ### <a name="owners"></a>Proprietari
 
@@ -154,11 +171,6 @@ A colpo d'occhio, è possibile visualizzare il titolo, il proprietario, la categ
 8. Selezionare la **X** per chiudere la lama Descrizione.
 9. Fare clic su **Salva** per salvare l'azione del cliente.
 
-#### <a name="edit-a-customer-action"></a>Modificare un'azione del cliente
-
-1. Selezionare i puntini di ellisse (...) per l'azione che si desidera modificare e selezionare **modifica**.
-2. Modificare l'azione in base alle esigenze e selezionare **Salva**.
-
 #### <a name="delete-a-customer-action"></a>Eliminare un'azione del cliente
 
 1. Selezionare i puntini di ellisse (...) per l'azione che si desidera modificare e selezionare **Elimina**.
@@ -188,7 +200,7 @@ A colpo d'occhio, è possibile visualizzare il titolo, il proprietario, la categ
 - Il titolo della valutazione.
 - Le dimensioni della valutazione, tra cui la certificazione, l'ambiente e il prodotto applicati alla valutazione.
 - La data in cui è stata creata e la data in cui è stata modificata per l'ultima volta.
-- Il Punteggio di valutazione visualizzato come percentuale.
+- Il Punteggio di valutazione visualizzato come percentuale. Questo punteggio include automaticamente i punteggi dei controlli gestiti da Microsoft e dal punteggio sicuro.
 - Indicatori di stato che indicano il numero di controlli gestiti da Microsoft e Customer-mangd.
 
 ### <a name="copying-information-from-existing-assessments"></a>Copiare le informazioni da valutazioni esistenti
@@ -215,9 +227,7 @@ Quando si crea una valutazione, si ha la possibilità di copiare le informazioni
 
 3. Selezionare **Salva** per creare la valutazione.
 
-### <a name="viewing-assessments"></a>Visualizzazione delle valutazioni
-
-#### <a name="view-an-assessment"></a>Visualizzazione di una valutazione
+### <a name="view-an-assessment"></a>Visualizzazione di una valutazione
   
 1. Nel dashboard valutazioni selezionare il nome della valutazione per aprirlo e visualizzare le informazioni sugli elementi di azione e sui controlli.
 
@@ -282,40 +292,39 @@ Per le valutazioni, viene visualizzato il dashboard informazioni controlli:
 
 Il report di valutazione viene scaricato come file di Excel nella sessione del browser. Il nome dei file per il file di Excel è predefinito per il titolo della valutazione.
 
-### <a name="archive-a-template-or-an-assessment"></a>Archiviare un modello o una valutazione
+### <a name="hide-a-template-or-an-assessment"></a>Nascondere un modello o una valutazione
 
-Al termine di un modello o di una valutazione e non è più necessario ai fini della conformità, è possibile archiviarlo. Quando un modello o una valutazione viene archiviata, viene rimossa dalla visualizzazione predefinita ed è necessario controllare la casella di controllo Mostra archiviata per visualizzarla.
+Al termine di un modello o di una valutazione e non è più necessario ai fini della conformità, è possibile nasconderlo dalla visualizzazione. Quando un modello o una valutazione è nascosta, viene rimossa dalla visualizzazione predefinita ed è necessario selezionare **Includi** casella di controllo nascosta per visualizzarla.
 
-![Visualizzazione azione Microsoft Compliance Manager](media/compliance-manager-archive-assessment-view.png)
-  
+![Visualizzazione modello nascosto Compliance Manager](media/compliance-manager-hidden-template.png "Modello nascosto di Compliance Manager")
+
 > [!IMPORTANT]
-> Le valutazioni archiviate non conservano i collegamenti ai documenti di prova caricati. È consigliabile esportare la valutazione prima dell'archiviazione per mantenere i collegamenti ai documenti di prova nel report.
+> Le valutazioni nascoste non conservano i collegamenti ai documenti di prova caricati. È consigliabile esportare la valutazione prima di nasconderla per mantenere i collegamenti ai documenti di prova nel report.
   
-#### <a name="archive-a-template"></a>Archiviare un modello
+#### <a name="hiding-a-template"></a>Nascondere un modello
 
 1. Aprire il dashboard dei **modelli** .
-2. Individuare il modello che si desidera archiviare e selezionare l'icona archivia.
-3. Quando viene visualizzato il messaggio di conferma, selezionare **Archivia**.
+2. Individuare il modello che si desidera nascondere e nei puntini di ellissi della relativa riga selezionare **Nascondi**.
+3. Quando viene visualizzato il messaggio di conferma, selezionare **Nascondi**.
 
-#### <a name="archive-an-assessment"></a>Archiviare una valutazione
+#### <a name="hide-an-assessment"></a>Nascondere una valutazione
 
 1. Aprire il dashboard **valutazioni** .
-2. Selezionare il **gruppo** dall'elenco a discesa contenente la valutazione che si desidera archiviare.
-3. Individuare la valutazione che si desidera archiviare e selezionare l'icona archivia.
-4. Quando viene visualizzato il messaggio di conferma, selezionare **Archivia**.
+2. Selezionare il **gruppo** dall'elenco a discesa contenente la valutazione che si desidera nascondere.
+3. Individuare la valutazione che si desidera nascondere e i puntini di ellisse, selezionare **Nascondi**.
+4. Quando viene visualizzato il messaggio di conferma, selezionare **Nascondi**.
 
-#### <a name="view-archived-assessments"></a>Visualizzazione delle valutazioni archiviate
+#### <a name="view-hidden-assessments"></a>Visualizzazione di valutazioni nascoste
   
-1. Aprire la scheda Dashboard **valutazioni** e selezionare la casella di controllo **Mostra archiviati** .
-2. Le valutazioni archiviate vengono visualizzate nella sezione **analisi archiviate** .
-3. Selezionare il nome di valutazione per aprire e visualizzare la valutazione.
+1. Aprire la scheda Dashboard **valutazioni** e selezionare la casella di controllo **Includi nascosto** .
+2. Le valutazioni nascoste vengono visualizzate nella sezione **valutazioni nascoste** .
 
-#### <a name="activate-an-archived-assessment"></a>Attivazione di una valutazione archiviata
+#### <a name="unhide-an-assessment"></a>Scoprire una valutazione
 
-1. Nella scheda **valutazioni** e selezionare la casella di controllo **Mostra archiviati** .
-2. Le valutazioni archiviate vengono visualizzate nella sezione **analisi archiviate** .
-3. Individuare la valutazione che si desidera attivare e selezionare l'icona attiva.
-4. Quando viene visualizzato il messaggio di conferma, selezionare **attiva**.
+1. Nella scheda **valutazioni** selezionare la casella di controllo **Includi nascosto** .
+2. Le valutazioni nascoste vengono visualizzate nella sezione **valutazioni nascoste** .
+3. Individuare la valutazione che si desidera visualizzare e i puntini di ellisse, selezionare **Scopri**.
+4. Quando viene visualizzato il messaggio di conferma, seleziona **Scopri**.
 
 ## <a name="controls-and-actions"></a>Controlli e azioni
 
@@ -507,6 +516,9 @@ Il testo di grassetto è costituito da due asterischi su ogni parte del testo da
 7. Il modello importato viene visualizzato nel dashboard **modelli** ed è stato **importato**. Selezionare i puntini di ellisse (...) e selezionare **pubblica** per pubblicare il modello. Quando viene visualizzato il messaggio di conferma, selezionare **pubblica**. Lo stato del modello cambia nell' **approvazione in sospeso**.
 8. Un altro utente con il ruolo di amministratore di Compliance Manager deve approvare il modello nel dashboard dei modelli. È necessario selezionare i puntini di ellisse (...) e selezionare **approva**. Quando viene visualizzato il messaggio di conferma, selezionare **approva**. Il modello è ora pronto per l'uso.
 
+> [!IMPORTANT]
+> Quando si crea un modello, è necessario includere le dimensioni per il **prodotto** e la **certificazione** per garantire che il modello venga visualizzato nel punteggio di conformità.
+
 ### <a name="customize-a-template"></a>Personalizzare un modello
 
 I modelli possono essere personalizzati tramite l'aggiunta di controlli personalizzati. Tutti i controlli personalizzati sono considerati controlli gestiti dal cliente.
@@ -531,6 +543,9 @@ I modelli possono essere personalizzati tramite l'aggiunta di controlli personal
 12. Quando sono state selezionate tutte le azioni applicabili, selezionare **assegna**.
 13. Fare clic su **Salva** per salvare il nuovo controllo.
 
+> [!NOTE]
+> Tutte le modifiche apportate a un modello non verranno riflesse nelle valutazioni esistenti. Gli aggiornamenti dei modelli devono essere eseguiti prima e quindi applicati a una nuova valutazione, in modo che le modifiche vengano visualizzate.
+
 ### <a name="export-a-template-to-json"></a>Esportare un modello in JSON
 
 Compliance Manager (Preview) supporta anche l'esportazione di modelli in formato JSON (JavaScript Object Notation). In questo modo è possibile scambiare i dati di Compliance Manager con altri sistemi che supportano JSON.
@@ -553,7 +568,7 @@ Nella tabella seguente vengono descritte le autorizzazioni di Compliance Manager
 
 ||**Lettore globale di Azure AD**|**Compliance Manager - Lettore**|**Compliance Manager - Collaboratore**|**Compliance Manager - Valutatore**|**Compliance Manager - Amministratore**|**Amministratore del portale**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|**Leggere i dati:** Gli utenti possono leggere ma non modificare i dati (ad eccezione dei dati del modello e della gestione tenant).  <br> | X | X | X | X | X  | X  |X |
+|**Leggere i dati:** Gli utenti possono leggere ma non modificare i dati (ad eccezione dei dati del modello e della gestione tenant).  <br> | X | X | X | X | X  | X |
 |**Modificare i dati:** Gli utenti possono modificare tutti i campi, tranne i campi risultato del test e data di test (ad eccezione dei dati del modello e della gestione tenant).  <br> ||| X | X  | X | X |
 |**Modificare i risultati dei test:** Gli utenti possono modificare i campi risultato del test e data del test.  <br> |||| X | X | X |
 |**Gestire le valutazioni:** Gli utenti possono creare, archiviare ed eliminare valutazioni.  <br> ||||| X | X |

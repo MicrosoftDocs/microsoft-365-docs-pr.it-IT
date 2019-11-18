@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Quando non è più necessario conservare il contenuto di una cassetta postale inattiva di Office 365, è possibile eliminare definitivamente la cassetta postale inattiva rimuovendo l'esenzione. Dopo aver rimosso il blocco, la cassetta postale inattiva viene contrassegnata per l'eliminazione e viene eliminata definitivamente dopo l'elaborazione.
-ms.openlocfilehash: b6cea7284ccb930ef10ec96c082291acb9f66f2f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c4cf9385d5b642f410c210c6372e4ff469838377
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070644"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686586"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Eliminare una cassetta postale inattiva in Office 365
 
@@ -46,13 +46,13 @@ Come affermato in precedenza, potrebbe essere applicato un blocco per controvers
   
 Eseguire il seguente comando per visualizzare le informazioni sul blocco per tutte le cassette postali inattive dell'organizzazione.
   
-```
+```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
 ```
 
 Il valore di **True** per la proprietà **LitigationHoldEnabled** indica che la cassetta postale inattiva ha un blocco per controversia legale. Se in una cassetta postale inattiva è abilitato un blocco sul posto, il GUID del blocco viene visualizzato come il valore per la proprietà **InPlaceHolds**. Ad esempio, i risultati seguenti per due cassette postali inattive mostrano che un blocco per controversia legale è applicato ad Ann Beebe e che due blocchi sul posto sono applicati a Pilar Pinilla. 
   
-```
+```text
 DisplayName           : Ann Beebe
 Name                  : annb
 IsInactiveMailbox     : True
@@ -77,7 +77,7 @@ Dopo aver identificato il tipo di blocco applicato alla cassetta postale inattiv
 
 Come descritto in precedenza, è necessario utilizzare Windows PowerShell per rimuovere un blocco per controversia legale da una cassetta postale inattiva. Non è possibile usare l'interfaccia di amministrazione di Exchange. Eseguire il comando riportato di seguito per rimuovere un blocco per controversia legale.
   
-```
+```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
 ```
 
@@ -99,9 +99,9 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 1. Se si conosce il nome del blocco sul posto che si desidera eliminare, è possibile passare al passaggio successivo. In caso contrario, eseguire il seguente comando per ottenere il nome del blocco sul posto applicato alla cassetta postale inattiva che si desidera eliminare definitivamente. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
-```
-  Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
-```
+   ```powershell
+   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
+   ```
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
@@ -117,29 +117,29 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 1. Creare una variabile che contiene le proprietà del blocco sul posto che si desidera eliminare. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
-```
-  $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
-```
+   ```powershell
+   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
+   ```
 
 2. Disattivare il blocco in Blocco sul posto.
     
-```
-  Set-MailboxSearch $InPlaceHold.Name -InPlaceHoldEnabled $false
-```
+   ```powershell
+   Set-MailboxSearch $InPlaceHold.Name -InPlaceHoldEnabled $false
+   ```
 
 3. Eliminare il blocco sul posto.
     
-```
-  Remove-MailboxSearch $InPlaceHold.Name
-```
+   ```powershell
+   Remove-MailboxSearch $InPlaceHold.Name
+   ```
 
 #### <a name="use-the-eac-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>Usare EAC per rimuovere una cassetta postale inattiva da un blocco sul posto
 
 1. Se si conosce il nome del blocco sul posto che si desidera applicare alla cassetta postale inattiva, è possibile passare al passaggio successivo. In caso contrario, eseguire il seguente comando per ottenere il nome del blocco sul posto applicato alla cassetta postale. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
-```
-  Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
-```
+   ```powershell
+   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
+   ```
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
@@ -159,49 +159,49 @@ Se il blocco sul posto contiene un numero elevato di cassette postali di origine
   
 1. Creare una variabile che contiene le proprietà del blocco sul posto applicato alla cassetta postale inattiva. Utilizzare il GUID del blocco sul posto che è stato acquisito nel [Passaggio 1: Identificare i blocchi su una cassetta postale inattiva](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
-```
-  $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
-```
+    ```powershell
+    $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
+    ```
 
 2. Verificare che la cassetta postale inattiva sia elencata come cassetta postale di origine per il blocco sul posto. 
     
-```
-  $InPlaceHold.Sources
-```
+   ```powershell
+   $InPlaceHold.Sources
+   ```
 
    **Nota:** La proprietà *Sources* del blocco sul posto identifica le cassette postali di origine in base alle rispettive proprietà *legacyExchangeDN* . Poiché questa proprietà identifica le cassette postali inattive in modo univoco, l'utilizzo della proprietà *Sources* dal blocco sul posto consente di evitare la rimozione della cassetta postale errata. Ciò consente inoltre di evitare problemi se due cassette postali hanno lo stesso alias o indirizzo SMTP. 
    
 3. Rimuovere la cassetta postale inattiva dall'elenco delle cassette postali di origine nella variabile. Assicurarsi di usare il **LegacyExchangeDN** della cassetta postale inattiva restituito dal comando nel passaggio precedente. 
     
-```
-  $InPlaceHold.Sources.Remove("<LegacyExchangeDN of the inactive mailbox>")
-```
+    ```powershell
+    $InPlaceHold.Sources.Remove("<LegacyExchangeDN of the inactive mailbox>")
+    ```
 
-    For example, the following command removes the inactive mailbox for Pilar Pinilla.
+    Ad esempio, il seguente comando consente di rimuovere la cassetta postale inattiva per Pilar Pinilla.
     
-  ```
-  $InPlaceHold.Sources.Remove("/o=contoso/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=9c8dfff651ec4908950f5df60cbbda06-pilarp")
-  ```
+    ```powershell
+    $InPlaceHold.Sources.Remove("/o=contoso/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/ cn=9c8dfff651ec4908950f5df60cbbda06-pilarp")
+    ```
 
 4. Verificare che la cassetta postale inattiva venga rimossa dall'elenco delle cassette postali di origine nella variabile.
     
-```
-  $InPlaceHold.Sources
-```
+   ```powershell
+   $InPlaceHold.Sources
+   ```
 
 5. Modificare il blocco sul posto con l'elenco aggiornato delle cassette postali di origine, che non include la cassetta postale inattiva.
     
-```
-  Set-MailboxSearch $InPlaceHold.Name -SourceMailboxes $InPlaceHold.Sources
-```
+   ```powershell
+   Set-MailboxSearch $InPlaceHold.Name -SourceMailboxes $InPlaceHold.Sources
+   ```
 
 6. Verificare che la cassetta postale inattiva venga rimossa dall'elenco delle cassette postali di origine per il blocco sul posto.
     
-```
-  Get-MailboxSearch $InPlaceHold.Name | FL Sources
-```
+   ```powershell
+   Get-MailboxSearch $InPlaceHold.Name | FL Sources
+   ```
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - **Una cassetta postale inattiva è un tipo di cassetta postale con eliminazione temporanea.** In Exchange Online, una cassetta postale con eliminazione temporanea è una cassetta postale che è stata eliminata, ma che può essere recuperata entro un periodo di conservazione specifico. Il periodo di conservazione delle cassette postali con eliminazione temporanea in Exchange Online è pari a 30 giorni. Ciò significa che la cassetta postale può essere recuperata entro 30 giorni dall'eliminazione temporanea. Dopo 30 giorni, una cassetta postale con eliminazione temporanea viene contrassegnata per l'eliminazione definitiva e non può essere ripristinata. 
     
@@ -213,7 +213,7 @@ Se il blocco sul posto contiene un numero elevato di cassette postali di origine
     
 - **Come vengono visualizzate le informazioni su una cassetta postale inattiva dopo la rimozione del blocco?** Dopo la rimozione di un'esenzione e la cassetta postale inattiva viene ripristinata a una cassetta postale eliminata temporaneamente, non verrà restituita utilizzando il parametro *InactiveMailboxOnly* con il cmdlet **Get-Mailbox** . Tuttavia, è possibile visualizzare le informazioni sulla cassetta postale utilizzando il comando **Get-Mailbox -SoftDeletedMailbox**. Ad esempio: 
     
-```
+  ```text
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
   Placeholds,WhenSoftDeleted,IsInactiveMailbox
   Name                   : pilarp
@@ -222,7 +222,7 @@ Se il blocco sul posto contiene un numero elevato di cassette postali di origine
   InPlaceHolds           : {}
   WhenSoftDeleted        : 10/30/2014 1:19:04 AM
   IsInactiveMailbox      : False
-```
-  
-Nell'esempio precedente, la proprietà *WhenSoftDeleted* identifica la data di eliminazione temporanea, che in questo esempio è il 30 ottobre 2014. Se questa cassetta postale eliminata temporaneamente è stata precedentemente una cassetta postale inattiva per la quale è stato rimosso il blocco, verrà eliminato definitivamente 30 giorni dopo il valore della proprietà *WhenSoftDeleted* . In questo caso, la cassetta postale viene eliminata definitivamente dopo il 30 novembre 2014.
+  ```
+
+  Nell'esempio precedente, la proprietà *WhenSoftDeleted* identifica la data di eliminazione temporanea, che in questo esempio è il 30 ottobre 2014. Se questa cassetta postale eliminata temporaneamente è stata precedentemente una cassetta postale inattiva per la quale è stato rimosso il blocco, verrà eliminato definitivamente 30 giorni dopo il valore della proprietà *WhenSoftDeleted* . In questo caso, la cassetta postale viene eliminata definitivamente dopo il 30 novembre 2014.
 

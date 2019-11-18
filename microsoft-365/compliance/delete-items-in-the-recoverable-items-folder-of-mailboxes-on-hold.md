@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Per gli amministratori: eliminare gli elementi nella cartella elementi ripristinabili di un utente per una cassetta postale di Exchange Online, anche se la cassetta postale è in attesa legale. Si tratta di un modo efficace per eliminare i dati che sono stati accidentalmente riversati in Office 365.'
-ms.openlocfilehash: 9da469af900c2610762338029aa80d31c7f10363
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1954ac4db8b978b0b1c3cdc8cee080cc0f0e6c22
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37070735"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686581"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa-Guida per l'amministratore
 
@@ -43,7 +43,7 @@ La cartella elementi ripristinabili per una cassetta postale di Exchange Online 
 > [!CAUTION]
 > Le procedure descritte in questo articolo determinano l'eliminazione definitiva (eliminata) dei dati da una cassetta postale di Exchange Online. Questo significa che i messaggi eliminati dalla cartella elementi ripristinabili non possono essere recuperati e non saranno disponibili per la ricerca legale o per altri scopi di conformità. Se si desidera eliminare i messaggi da una cassetta postale che è stata bloccata come parte di un blocco per controversia legale, archiviazione sul posto, blocco di eDiscovery o criteri di conservazione di Office 365 creati nel centro sicurezza e conformità, consultare la gestione dei record o i reparti legali prima di rimuovere il blocco. È possibile che l'organizzazione disponga di un criterio che definisce se una cassetta postale in attesa o un evento di perdita dei dati ha la priorità. 
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - È necessario essere assegnati entrambi i ruoli di gestione seguenti in Exchange Online per cercare ed eliminare i messaggi dalla cartella elementi ripristinabili nel passaggio 5.
     
@@ -71,7 +71,7 @@ Inoltre, è necessario ottenere le impostazioni di accesso client delle cassette
     
 2. Eseguire il seguente comando per ottenere informazioni sul ripristino di un singolo elemento e sul periodo di conservazione degli elementi eliminati.
 
-    ```
+    ```powershell
     Get-Mailbox <username> | FL SingleItemRecoveryEnabled,RetainDeletedItemsFor
     ```
 
@@ -79,7 +79,7 @@ Inoltre, è necessario ottenere le impostazioni di accesso client delle cassette
     
 3. Eseguire il seguente comando per ottenere le impostazioni di accesso alle cassette postali per la cassetta postale. 
     
-    ```
+    ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
@@ -87,7 +87,7 @@ Inoltre, è necessario ottenere le impostazioni di accesso client delle cassette
     
 4. Eseguire il seguente comando per ottenere informazioni sulle esenzioni e sui criteri di conservazione di Office 365 applicati alla cassetta postale.
     
-    ```
+    ```powershell
     Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
     ```
 
@@ -97,9 +97,10 @@ Inoltre, è necessario ottenere le impostazioni di accesso client delle cassette
   
 5. Eseguire il seguente comando per ottenere informazioni su tutti i criteri di conservazione di Office 365 a livello di organizzazione. 
 
-    ```
+    ```powershell
     Get-OrganizationConfig | FL InPlaceHolds
     ```
+   
    Se l'organizzazione dispone di criteri di conservazione di Office 365 a livello di organizzazione, sarà necessario escludere la cassetta postale da questi criteri nel passaggio 3.
 
    > [!TIP]
@@ -107,7 +108,7 @@ Inoltre, è necessario ottenere le impostazioni di accesso client delle cassette
   
 6. Eseguire il seguente comando per ottenere la dimensione corrente e il numero totale di elementi nelle cartelle e nelle sottocartelle della cartella elementi ripristinabili nella cassetta postale principale dell'utente. 
 
-    ```
+    ```powershell
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
@@ -138,19 +139,19 @@ Eseguire le operazioni seguenti in PowerShell di Exchange Online.
     ```   
     Set-CASMailbox <username> -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
     ```
-   
+
    > [!NOTE]
     > Per disabilitare tutti i metodi di accesso client alla cassetta postale, potrebbero essere necessari fino a 60 minuti. Si noti che la disabilitazione di questi metodi di accesso non disconnetterà il proprietario della cassetta postale a cui è attualmente connesso. Se il proprietario non ha eseguito l'accesso, non sarà in grado di accedere alla propria cassetta postale dopo che questi metodi di accesso sono stati disabilitati. 
   
 2. Eseguire il seguente comando per aumentare il periodo di conservazione degli elementi eliminati per un massimo di 30 giorni. Si presuppone che l'impostazione corrente sia inferiore a 30 giorni. 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 30
     ```
 
 3. Per disabilitare il ripristino di un singolo elemento, eseguire il comando riportato di seguito.
     
-    ```
+    ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $false
     ```
 
@@ -159,7 +160,7 @@ Eseguire le operazioni seguenti in PowerShell di Exchange Online.
   
 4. Eseguire il seguente comando per evitare che l'Assistente cartelle gestite esegua l'elaborazione della cassetta postale. Come spiegato in precedenza, è possibile disabilitare l'Assistente cartelle gestite solo se un criterio di conservazione di Office 365 con un blocco di conservazione non viene applicato alla cassetta postale. 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $true
     ```
 
@@ -174,7 +175,7 @@ L'ultimo passaggio prima di poter eliminare gli elementi dalla cartella elementi
   
 Eseguire il seguente comando in Exchange Online PowerShell per rimuovere un blocco per controversia legale dalla cassetta postale.
 
-```
+```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $false
 ```
 
@@ -186,31 +187,31 @@ Set-Mailbox <username> -LitigationHoldEnabled $false
   
 Eseguire il seguente comando in PowerShell di Exchange Online per identificare il blocco sul posto applicato alla cassetta postale. Utilizzare il GUID per il blocco sul posto identificato nel passaggio 1. 
 
-```
+```powershell
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
-   
+
 Dopo aver identificato il blocco sul posto, è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o Exchange Online PowerShell per rimuovere la cassetta postale dall'esenzione. Per ulteriori informazioni, vedere [Creare o rimuovere un'archiviazione sul posto](https://go.microsoft.com/fwlink/?linkid=852668).
   
  ### <a name="office-365-retention-policies-applied-to-specific-mailboxes"></a>Criteri di conservazione di Office 365 applicati a cassette postali specifiche
   
 Eseguire il seguente comando in [PowerShell per Security & Compliance Center](https://go.microsoft.com/fwlink/?linkid=627084) per identificare i criteri di conservazione di Office 365 applicati alla cassetta postale. Utilizzare il GUID (escluso il `mbx` prefisso `skp` o) per i criteri di conservazione identificati nel passaggio 1. 
 
-```
+```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
-   
+
 Dopo aver identificato il criterio di conservazione, passare alla pagina \> **conservazione** **governance data** nel centro sicurezza & conformità, modificare i criteri di conservazione identificati nel passaggio precedente e rimuovere la cassetta postale dall'elenco dei destinatari inclusi nel criterio di conservazione. 
   
  ### <a name="organization-wide-office-365-retention-policies"></a>Criteri di conservazione di Office 365 a livello di organizzazione
   
 I criteri di conservazione di Office 365 a livello di organizzazione e di Exchange sono applicati a tutte le cassette postali dell'organizzazione. Vengono applicati a livello di organizzazione (non a livello di cassetta postale) e vengono restituiti quando si esegue il cmdlet **Get-OrganizationConfig** nel passaggio 1. Per identificare i criteri di conservazione di Office 365 a livello di organizzazione, eseguire il comando riportato di seguito in PowerShell per la [sicurezza & Compliance Center](https://go.microsoft.com/fwlink/?linkid=627084) . Utilizzare il GUID (escluso il `mbx` prefisso) per i criteri di conservazione a livello dell'organizzazione identificati nel passaggio 1. 
 
-```
+```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Dopo aver identificato i criteri di conservazione di Office 365 a livello di organizzazione, passare alla pagina \> **conservazione** **governance data** nel centro sicurezza & conformità, modificare tutti i criteri di conservazione a livello di organizzazione identificati nell' passaggio precedente e aggiungere la cassetta postale all'elenco dei destinatari esclusi. In questo modo, la cassetta postale dell'utente verrà rimossa dal criterio di conservazione. 
+Dopo aver identificato i criteri di conservazione di Office 365 a livello di organizzazione, passare alla pagina \> **conservazione** **governance data** nel centro sicurezza & conformità, modificare tutti i criteri di conservazione a livello di organizzazione identificati nel passaggio precedente e aggiungere la cassetta postale all'elenco dei destinatari esclusi. In questo modo, la cassetta postale dell'utente verrà rimossa dal criterio di conservazione. 
 
 ### <a name="office-365-retention-labels"></a>Etichette di conservazione di Office 365
 
@@ -218,7 +219,7 @@ Ogni volta che un utente applica un'etichetta configurata per mantenere il conte
 
 Per visualizzare il valore della proprietà *ComplianceTagHoldApplied* , eseguire il comando seguente in PowerShell di Exchange Online:
 
-```
+```powershell
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
@@ -230,15 +231,15 @@ Per ulteriori informazioni sulle etichette, vedere [Overview of Office 365 label
   
 Per identificare il blocco associato a un caso di eDiscovery applicato alla cassetta postale, eseguire i comandi seguenti in [PowerShell Centro sicurezza & Compliance](https://go.microsoft.com/fwlink/?linkid=627084) . Utilizzare il GUID (escluso il `UniH` prefisso) per il blocco eDiscovery identificato nel passaggio 1. Si noti che il secondo comando Visualizza il nome del caso di eDiscovery a cui è associato il blocco. il terzo comando Visualizza il nome dell'esenzione. 
   
-```
+```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
 ```
 
-```
+```powershell
 Get-ComplianceCase $CaseHold.CaseId | FL Name
 ```
 
-```
+```powershell
 $CaseHold.Name
 ```
 
@@ -250,7 +251,7 @@ Dopo la rimozione di qualsiasi tipo di blocco da una cassetta postale, il valore
 
 Prima di poter eliminare gli elementi nel passaggio 5, è necessario rimuovere il blocco di ritardo dalla cassetta postale. Per prima cosa, determinare se il blocco di ritardo viene applicato alla cassetta postale eseguendo il comando seguente in PowerShell di Exchange Online:
 
-```
+```powershell
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
@@ -258,9 +259,10 @@ Se il valore della proprietà *DelayHoldApplied* è impostato su **false**, nell
 
 Se il valore della proprietà *DelayHoldApplied* è impostato su **true**, eseguire il comando riportato di seguito per rimuovere il blocco di ritardo:
 
-```
+```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
+
 Tenere presente che è necessario essere assegnati al ruolo di blocco legale in Exchange Online per utilizzare il parametro *RemoveDelayHoldApplied* .
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Passaggio 5: eliminare gli elementi nella cartella elementi ripristinabili
@@ -284,7 +286,7 @@ Negli esempi seguenti viene illustrata la sintassi dei comandi per ognuna di que
 
 In questo esempio vengono copiati tutti gli elementi della cartella elementi ripristinabili dell'utente in una cartella della cassetta postale di individuazione dell'organizzazione. In questo modo è possibile esaminare gli elementi prima di eliminarli definitivamente.
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
 ```
 
@@ -294,15 +296,15 @@ Nell'esempio precedente, non è necessario copiare gli elementi nella cassetta p
 
 In questo esempio vengono copiati tutti gli elementi della cartella elementi ripristinabili dell'utente in una cartella della cassetta postale di individuazione dell'organizzazione e quindi vengono eliminati gli elementi dalla cartella elementi ripristinabili dell'utente.
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>" -DeleteContent
 ```
- 
+
 ### <a name="example-3"></a>Esempio 3
 
 In questo esempio vengono eliminati tutti gli elementi nella cartella elementi ripristinabili dell'utente, senza copiarli in una cassetta postale di destinazione. 
 
-```
+```powershell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
 ```
 
@@ -312,38 +314,38 @@ Di seguito sono riportati alcuni esempi di utilizzo del parametro *SearchQuery* 
   
 In questo esempio vengono restituiti i messaggi che contengono una frase specifica nel campo Subject.
   
-```
+```powershell
 SearchQuery 'subject:"MAIL_BOX VALIDATION/UPGRADE!!!"' 
 ```
 
 In questo esempio vengono restituiti i messaggi che sono stati inviati entro l'intervallo di date specificato.
   
-```
+```powershell
 SearchQuery 'sent>=06/01/2016 AND sent<=09/01/2016'
 ```
- 
+
 In questo esempio vengono restituiti i messaggi che sono stati inviati alla persona specificata.
 
-```
+```powershell
 SearchQuery 'to:garthf@alpinehouse.com'
 ```
-   
+
 ### <a name="verify-that-items-were-deleted"></a>Verificare che gli elementi siano stati eliminati
 
 Per verificare la corretta eliminazione degli elementi dalla cartella elementi ripristinabili di una cassetta postale, utilizzare il cmdlet **Get-MailboxFolderStatistics** in PowerShell di Exchange Online per controllare la dimensione e il numero di elementi nella cartella elementi ripristinabili. È possibile confrontare queste statistiche con quelle raccolte nel passaggio 1. 
   
 Eseguire il seguente comando per ottenere la dimensione corrente e il numero totale di elementi nelle cartelle e nelle sottocartelle della cartella elementi ripristinabili nella cassetta postale principale dell'utente. 
   
-```
+```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
-   
+
 Eseguire il seguente comando per ottenere le dimensioni e il numero totale di elementi nelle cartelle e nelle sottocartelle della cartella elementi ripristinabili nella cassetta postale di archiviazione dell'utente. 
 
-```
+```powershell
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
-  
+
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Passaggio 6: ripristinare lo stato precedente della cassetta postale
 
 Il passaggio finale consiste nel ripristinare la configurazione precedente della cassetta postale. Questo significa reimpostare le proprietà modificate nel passaggio 2 e riapplicare le esenzioni rimosse al passaggio 3. Ciò include:
@@ -365,29 +367,29 @@ Eseguire i passaggi seguenti (nella sequenza specificata) in PowerShell di Excha
   
 1. Eseguire il seguente comando per ripristinare il valore originale del periodo di conservazione degli elementi eliminati. Si presuppone che l'impostazione precedente sia inferiore a 30 giorni. ad esempio, 14 giorni. 
     
-    ```
+    ```powershell
     Set-Mailbox <username> -RetainDeletedItemsFor 14
     ```
-   
+
 2. Eseguire il seguente comando per riattivare il ripristino di un singolo elemento.
    
-    ```
+    ```powershell
     Set-Mailbox <username> -SingleItemRecoveryEnabled $true
     ```
 
 3. Eseguire il seguente comando per riabilitare tutti i metodi di accesso client alla cassetta postale.
     
-    ```
+    ```powershell
     Set-CASMailbox <username> -EwsEnabled $true -ActiveSyncEnabled $true -MAPIEnabled $true -OWAEnabled $true -ImapEnabled $true -PopEnabled $true
     ```
-   
+
 4. Riapplicare le esenzioni rimosse nel passaggio 3. A seconda del tipo di blocco, utilizzare una delle procedure seguenti.
     
     **Conservazione per controversia legale**
     
     Eseguire il seguente comando per riattivare un blocco per controversia legale per la cassetta postale.
     
-    ```
+    ```powershell
     Set-Mailbox <username> -LitigationHoldEnabled $true
     ```
 
@@ -409,21 +411,21 @@ Eseguire i passaggi seguenti (nella sequenza specificata) in PowerShell di Excha
     
 5. Eseguire il seguente comando per consentire all'Assistente cartelle gestite di elaborare di nuovo la cassetta postale. Come indicato in precedenza, è consigliabile attendere 24 ore dopo la riapplicazione di un blocco o un criterio di conservazione di Office 365 (e verificare che sia sul posto) prima di abilitare di nuovo l'Assistente cartelle gestite. 
 
-    ```
+    ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $false
     ```
-   
+
 6. Per verificare che la cassetta postale sia stata ripristinata alla configurazione precedente, è possibile eseguire i comandi seguenti e quindi confrontare le impostazioni con quelle raccolte nel passaggio 1.
 
-    ```
+    ```powershell
     Get-Mailbox <username> | FL ElcProcessingDisabled,InPlaceHolds,LitigationHoldEnabled,RetainDeletedItemsFor,SingleItemRecoveryEnabled
     ```
 
-    ```
+    ```powershell
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
-  
-## <a name="more-information"></a>Ulteriori informazioni
+
+## <a name="more-information"></a>Altre informazioni
 
 Di seguito viene riportata una tabella in cui viene descritto come identificare diversi tipi di esenzioni in base ai valori della proprietà *InPlaceHolds* quando si eseguono i cmdlet **Get-Mailbox** o **Get-OrganizationConfig** . Per informazioni più dettagliate, vedere [How to identificare il tipo di blocco posizionato su una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 

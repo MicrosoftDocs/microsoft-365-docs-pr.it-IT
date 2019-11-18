@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Vengono descritti tutti i campi inclusi nei report di esportazione per Advanced eDiscovery.
-ms.openlocfilehash: 3e73cc1c106dfa98bd35f84c352fc89d0e45b74d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 54287b4319a3fd7cf5be8aaf74d3a375253cba1f
+ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083636"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38686633"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Esportare i campi di report in Office 365 Advanced eDiscovery
 
@@ -62,8 +62,8 @@ Nella tabella seguente sono elencati i campi per ogni modello di esportazione.
 |Email_recipient_domains  <br/> |Posta elettronica  <br/> |Domini di posta elettronica destinatari (a, CC e Ccn).  <br/> |Sì  <br/> |Sì  <br/> |
 |Email_date_received  <br/> |Posta elettronica  <br/> |Data in cui è stata ricevuta la posta elettronica.  <br/> |Sì  <br/> |Sì  <br/> |
 |Email_action  <br/> |Posta elettronica  <br/> |Valori: secondo l'oggetto di posta elettronica: "forward" (per "FW:"), "Rispondi" (per "RE:") o "altro" (altro testo soggetto).  <br/> |Sì  <br/> |Sì  <br/> |
-|Meeting_Start_Date/ora  <br/> ||La data e l'ora in cui è stato avviato un elemento della riunione.  <br/> |Sì  <br/> |Sì  <br/> |
-|Meeting_End_Date/ora  <br/> ||La data e l'ora di fine di un elemento della riunione.  <br/> |Sì  <br/> |Sì  <br/> |
+|Meeting_Start_Date/Time  <br/> ||La data e l'ora in cui è stato avviato un elemento della riunione.  <br/> |Sì  <br/> |Sì  <br/> |
+|Meeting_End_Date/Time  <br/> ||La data e l'ora di fine di un elemento della riunione.  <br/> |Sì  <br/> |Sì  <br/> |
 |File_relevance_score  <br/> |Pertinenza  <br/> |Punteggio di pertinenza (0-100). Per ogni problema.  <br/> |Sì  <br/> |Sì  <br/> |
 |Family_relevance_score  <br/> |Pertinenza  <br/> |Punteggio di pertinenza massimo della famiglia (0-100). Per ogni problema.  <br/> |Sì  <br/> |Sì  <br/> |
 |Relevance_tag  <br/> |Pertinenza  <br/> |Tag del file, se il file è stato contrassegnato manualmente in pertinenza. Per ogni problema.  <br/> |Sì  <br/> |Sì  <br/> |
@@ -72,7 +72,7 @@ Nella tabella seguente sono elencati i campi per ogni modello di esportazione.
 |Marked_as_seed  <br/> |Pertinenza  <br/> |Tag del file, se è stato impostato come file di inizializzazione in pertinenza per ogni problema/categoria.  <br/> |Sì  <br/> |Sì  <br/> |
 |Marked_as_pre-Tagged  <br/> |Pertinenza  <br/> |Contrassegnare il file, se è stato impostato come precodificato in pertinenza per problema/categoria.  <br/> |Sì  <br/> |Sì  <br/> |
 |Relevance_status_description  <br/> |Pertinenza  <br/> |Descrizione dello stato di pertinenza.  <br/> |Sì  <br/> |Sì  <br/> |
-|Commento  <br/> |Generale  <br/> |Commento immesso dall'utente.  <br/> |Sì  <br/> |Sì  <br/> |
+|Aggiungere commenti  <br/> |Generale  <br/> |Commento immesso dall'utente.  <br/> |Sì  <br/> |Sì  <br/> |
 |Export_input_path  <br/> |Elaborazione  <br/> |Esporta percorso di input.  <br/> |Sì  <br/> |Sì  <br/> |
 |Pivot_ID  <br/> |Quasi duplicati  <br/> |ID pivot del file.  <br/> |Sì  <br/> |Sì  <br/> |
 |Family_size  <br/> |Elaborazione  <br/> |Numero di file in una famiglia.  <br/> |Sì  <br/> |Sì  <br/> |
@@ -90,7 +90,7 @@ Nella tabella seguente sono elencati i campi per ogni modello di esportazione.
 |Input_path  <br/> |Elaborazione  <br/> |Percorso del file di input.  <br/> |Sì  <br/> |Sì  <br/> |
 |Input_date_modified  <br/> |Elaborazione  <br/> |Data e ora dell'Ultima modifica del file di input.  <br/> |Sì  <br/> |Sì  <br/> |
 |ND_ET_sort_excl_attach  <br/> |Analisi  <br/> |Concatenazione del set di messaggi di posta elettronica e set ND per la revisione. ' S'è aggiunto come prefisso ai set ND è È viene aggiunto al messaggio di posta elettronica imposta.  <br/> |Sì  <br/> |Sì  <br/> |
-|ND_ET_sort_incl_attach  <br/> |Analisi  <br/> |La concatenazione del set di messaggi di posta elettronica e del set ND per la revisione ' d'viene aggiunta come prefisso ai set ND è È viene aggiunta ai set di messaggi di posta elettronica. Inoltre, ciascun messaggio di posta elettronica all'interno di un Email_set è seguito dagli allegati corretti.  <br/> |Sì  <br/> |Sì  <br/> |
+|ND_ET_sort_incl_attach  <br/> |Analisi  <br/> |La concatenazione del set di messaggi di posta elettronica e del set ND per la revisione ' d'viene aggiunta come prefisso ai set ND è È viene aggiunta ai set di messaggi di posta elettronica. Inoltre, ogni messaggio di posta elettronica all'interno di un Email_set è seguito dagli allegati corretti.  <br/> |Sì  <br/> |Sì  <br/> |
 |Deduped_custodians  <br/> |Generale  <br/> |Custodi dei file deduplicati  <br/> |Sì  <br/> |Sì  <br/> |
 |Deduped_file_IDs  <br/> |Generale  <br/> |ID dei file deduplicati  <br/> |Sì  <br/> |Sì  <br/> |
 |Deduped_paths  <br/> |Generale  <br/> |Percorsi dei file deduplicati  <br/> |Sì  <br/> |Sì  <br/> |
@@ -130,9 +130,7 @@ Nella tabella seguente sono elencati i campi per ogni modello di esportazione.
 |Set_order_inclusives_first  <br/> |Posta elettronica  <br/> |Messaggi di posta elettronica e allegati: contatore ordine cronologico (incluso per primo). Documenti: pivot prima e resto per Punteggio di somiglianza, discendente.  <br/> |No  <br/> |Sì  <br/> |
 |Tagged_By  <br/> |Pertinenza  <br/> |Utente che ha aggiunto il file in pertinenza per il problema specifico.  <br/> |No  <br/> |Sì  <br/> |
 |Word_count  <br/> |Analisi  <br/> |Numero di parole nel documento.  <br/> |No  <br/> |Sì  <br/> |
-|||||||||||
-||||||
-||||||
+|
    
 ## <a name="related-topics"></a>Argomenti correlati
 

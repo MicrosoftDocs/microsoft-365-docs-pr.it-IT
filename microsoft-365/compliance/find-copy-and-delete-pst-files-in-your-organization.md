@@ -11,12 +11,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Utilizzare lo strumento di raccolta PST di Microsoft per cercare la rete dell'organizzazione per ottenere un inventario dei file PST sparsi nell'organizzazione. Dopo aver trovato i file PST, è possibile utilizzare lo strumento di raccolta PST per copiarli in una posizione centrale in modo da poterli importare in Office 365.
-ms.openlocfilehash: 000da8aec988e85f935a96aabe9faa48932aaeaa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 703208b574a723eb4f91aad0a892d6ea4abf427b
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083740"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686562"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Utilizzare lo strumento di raccolta PST per trovare, copiare ed eliminare i file PST nell'organizzazione
 
@@ -41,9 +41,9 @@ Ecco una breve panoramica del processo di utilizzo dello strumento di raccolta P
     
 4. **[Passaggio 4: importare i file PST in Office 365](#step-4-import-the-pst-files-to-office-365)** -dopo aver copiato i file PST in un'unica posizione, è possibile importarli nelle cassette postali di Exchange Online. 
     
-5. **[Passaggio 5: eliminare i file PST trovati nella rete](#step-5-delete-the-pst-files-found-on-your-network)** -dopo che i file PST trovati e raccolti sono stati importati nelle cassette postali di Exchange online in Office 365, è possibile utilizzare lo strumento di raccolta PST per eliminare i file PST dai percorsi originali in cui sono stati rilevati nel passaggio 1. 
+5. **[Passaggio 5: eliminare i file PST trovati nella rete](#step-5-delete-the-pst-files-found-on-your-network)** -dopo che i file PST trovati e raccolti sono stati importati nelle cassette postali di Exchange online in Office 365, è possibile utilizzare lo strumento di raccolta PST per eliminare i file PST dai percorsi originali in cui sono stati trovati nel passaggio 1. 
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Eseguire la procedura seguente per scaricare lo strumento di raccolta PST nel computer locale. 
     
@@ -78,7 +78,7 @@ Per esempi di sintassi da `Locations` utilizzare per ognuno di questi tipi di pe
     
 4. Eseguire il seguente comando per trovare i file PST in un percorso specificato.
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName <Name> -Locations <Locations to search for PSTs> -LogLocation <Location to store log files> -ConfigurationLocation <Location to store configuration files>
     ```
 
@@ -97,7 +97,7 @@ Per esempi di sintassi da `Locations` utilizzare per ognuno di questi tipi di pe
    
     Di seguito è riportato un esempio della sintassi per il comando DataCollectorMaster. exe che utilizza i valori effettivi per ogni parametro:
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -LogLocation "c:\users\admin\desktop\PSTCollection" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"
     ```
 
@@ -138,7 +138,7 @@ Per bloccare l'accesso ai file PST:
     
 3. Eseguire il seguente comando per bloccare l'accesso ai file PST trovati nel passaggio 1.
 
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -BlockChangesToFiles -BlockNewFiles
     ```
 
@@ -156,10 +156,10 @@ Per bloccare l'accesso ai file PST:
    
     Di seguito è riportato un esempio della sintassi per il comando DataCollectorMaster. exe che utilizza i valori effettivi per ogni parametro:
 
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection" -BlockChangesToFiles -BlockNewFiles
     ```
-    
+
     Viene richiesto di confermare che si desidera bloccare nuovi file PST o modifiche ai file PST esistenti. Dopo aver verificato che si desidera continuare e che il comando venga eseguito correttamente, viene visualizzato un messaggio in cui viene indicato che è stato creato un nuovo oggetto Criteri di gruppo denominato "PST Usage Controls".
     
 ## <a name="step-3-copy-the-pst-files-to-a-collection-location"></a>Passaggio 3: copiare i file PST in una posizione di raccolta
@@ -175,7 +175,7 @@ Il passaggio successivo consiste nel copiare i file PST che sono stati trovati q
     
 3. Eseguire il seguente comando per copiare i file PST in un percorso specificato.
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName <Name of job from Step 1> -Locations <same locations from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
@@ -190,11 +190,11 @@ Il passaggio successivo consiste nel copiare i file PST che sono stati trovati q
     | `ConfigurationLocation` <br/> |Specifica la cartella che contiene il file di configurazione XML che è stato creato quando è stato eseguito lo strumento nella modalità di ricerca. Utilizzare lo stesso valore utilizzato per questo parametro nel passaggio 1.  <br/> | `-ConfigurationLocation "c:\users\admin\desktop \PSTCollection\Configuration"` <br/> |
     | `CopyLocation` <br/> |Specifica la posizione dell'insieme in cui si desidera copiare i file PST. È possibile copiare i file in un file server, in una condivisione file di rete o in un'unità disco rigido. La posizione deve esistere prima di eseguire lo strumento nella modalità raccolta. Lo strumento non crea la posizione e restituirà un messaggio di errore che indica che non esiste.  <br/> Inoltre, è necessario scrivere le autorizzazioni per la posizione dell'insieme specificata da questo parametro.  <br/> | `-CopyLocation "\\FILESERVER03\PSTs"` <br/> |
     | `LogLocation` <br/> |Specifica la cartella in cui verrà copiato il file di registro per la modalità di raccolta. Si tratta di un parametro facoltativo. Se non è incluso, il file di registro viene copiato nella cartella in cui è stato scaricato lo strumento di raccolta PST. È consigliabile utilizzare la stessa posizione del log utilizzata per l'esecuzione dello strumento nella modalità di ricerca nel passaggio 1, in modo che tutti i file di registro vengano salvati nella stessa cartella.  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
-    | `ForceRestart` <br/> |Questa opzione opzionale consente di rieseguire lo strumento nella modalità raccolta per un processo di raccolta PST esistente. Se in precedenza è stato eseguito lo strumento nella modalità raccolta, ma è stato eseguito di nuovo lo strumento nella modalità di `ForceRestart` ricerca con l'opzione per eseguire una nuova analisi delle posizioni per i file PST, è possibile utilizzare questa opzione per rieseguire lo strumento in modalità insieme e ricopiare i file PST trovati quando il rieseguire la scansione delle posizioni. Quando si utilizza `ForceRestart` l'opzione in modalità raccolta, lo strumento ignora tutte le operazioni di raccolta precedenti e tenta di copiare i file PST da zero.  <br/> | `-ForceRestart` <br/> |
+    | `ForceRestart` <br/> |Questa opzione opzionale consente di rieseguire lo strumento nella modalità raccolta per un processo di raccolta PST esistente. Se in precedenza è stato eseguito lo strumento nella modalità raccolta, ma è stato eseguito di nuovo lo strumento nella modalità di `ForceRestart` ricerca con l'opzione per rieseguire l'analisi delle posizioni per i file PST, è possibile utilizzare questa opzione per ripetere l'esecuzione dello strumento in modalità insieme e ricopiare i file PST che sono stati trovati quando i percorsi sono stati rianalizzati. Quando si utilizza `ForceRestart` l'opzione in modalità raccolta, lo strumento ignora tutte le operazioni di raccolta precedenti e tenta di copiare i file PST da zero.  <br/> | `-ForceRestart` <br/> |
    
     Di seguito è riportato un esempio della sintassi dello strumento DataCollectorMaster. exe che utilizza i valori effettivi di ogni parametro:
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -CopyLocation "\\FILESERVER03\PSTs" -LogLocation "c:\users\admin\desktop\PSTCollection"
     ```
 
@@ -230,7 +230,7 @@ Dopo che i file PST trovati e raccolti sono stati importati nelle cassette posta
     
 3. Eseguire il seguente comando per eliminare i file PST.
 
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
@@ -243,14 +243,14 @@ Dopo che i file PST trovati e raccolti sono stati importati nelle cassette posta
     | `JobName` <br/> |Specifica il nome di un processo di raccolta PST esistente. È necessario utilizzare lo stesso nome del processo utilizzato per l'esecuzione dello strumento nella modalità di ricerca e nella modalità raccolta del passaggio 1 e del passaggio 3. Il nome del processo viene inoltre aggiunto al nome del file di registro creato quando si esegue lo strumento in modalità di eliminazione.  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |Specifica la cartella che contiene il file di configurazione XML che è stato creato quando è stato eseguito lo strumento nella modalità raccolta. Utilizzare lo stesso valore utilizzato per questo parametro nel passaggio 3.  <br/> | `-ConfigurationLocation "c:\users\admin\ desktop\PSTCollection\Configuration"` <br/> |
     | `LogLocation` <br/> |Specifica la cartella in cui verrà copiato il file di registro per la modalità di eliminazione. Si tratta di un parametro facoltativo. Se non è incluso, il file di registro viene copiato nella cartella in cui è stato scaricato lo strumento di raccolta PST. È consigliabile utilizzare la stessa posizione del log utilizzata per l'esecuzione dello strumento nelle modalità di ricerca e raccolta del passaggio 1 e del passaggio 3, in modo che tutti i file di registro vengano salvati nella stessa cartella.  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
-    | `ForceRestart` <br/> |Questa opzione opzionale consente di rieseguire lo strumento in modalità di eliminazione per un processo di raccolta PST esistente. Se in precedenza è stato eseguito lo strumento in modalità di eliminazione, ma è stato eseguito di nuovo lo strumento nella modalità `ForceRestart` di ricerca con l'opzione per rieseguire l'analisi delle posizioni per i file PST, è possibile utilizzare questa opzione per ripetere l'esecuzione dello strumento in modalità di eliminazione ed eliminare i file PST trovati quando il nuovo SCA nned le posizioni. Quando si utilizza `ForceRestart` l'opzione in modalità di eliminazione, lo strumento ignora le operazioni di eliminazione precedenti e tenta di eliminare di nuovo i file PST.  <br/> | `-ForceRestart` <br/> 
+    | `ForceRestart` <br/> |Questa opzione opzionale consente di rieseguire lo strumento in modalità di eliminazione per un processo di raccolta PST esistente. Se in precedenza è stato eseguito lo strumento in modalità di eliminazione, ma in seguito è stato eseguito nuovamente lo strumento nella `ForceRestart` modalità di ricerca con l'opzione per eseguire di nuovo l'analisi delle posizioni per i file PST, è possibile utilizzare questa opzione per rieseguire lo strumento in modalità di eliminazione ed eliminare i file PST che sono stati trovati quando i percorsi sono stati rianalizzati. Quando si utilizza `ForceRestart` l'opzione in modalità di eliminazione, lo strumento ignora le operazioni di eliminazione precedenti e tenta di eliminare di nuovo i file PST.  <br/> | `-ForceRestart` <br/> 
 
     Di seguito è riportato un esempio della sintassi dello strumento DataCollectorMaster. exe che utilizza i valori effettivi di ogni parametro:
     
-    ```
+    ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection"
     ```
-   
+
     Dopo aver eseguito il comando, vengono visualizzati messaggi di stato dettagliati che mostrano lo stato di avanzamento dell'eliminazione dei file PST che sono stati rilevati nel passaggio 1 e raccolti nel passaggio 3. Dopo un po', un messaggio di stato finale indica se si sono verificati errori e la posizione in cui viene copiato il log. Gli stessi messaggi di stato vengono copiati nel file. log.
     
 ### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>Risultati dell'esecuzione di DataCollectorMaster. exe in modalità di eliminazione

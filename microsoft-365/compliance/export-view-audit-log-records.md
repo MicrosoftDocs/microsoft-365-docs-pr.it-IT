@@ -1,5 +1,5 @@
 ---
-title: Esportare, configurare e visualizzare i record del registro di controllo
+title: Esportare, configurare e visualizzare i record del log di controllo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Dopo aver esportato e scaricato i risultati di una ricerca nel registro di controllo di Office 365 in un file CSV, è possibile utilizzare la caratteristica di trasformazione JSON nell'editor di query di alimentazione in Excel per dividere ogni proprietà nell'oggetto JSON nella colonna AuditData nella propria colonna. In questo modo è possibile individuare rapidamente i dati di controllo specifici che si stanno cercando.
-ms.openlocfilehash: 7dac373e8f25ead38dddbe2663e521b35b3153ef
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9b422877c10f086553a695e43c50f02d389dd2b5
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083635"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686565"
 ---
-# <a name="export-configure-and-view-audit-log-records"></a>Esportare, configurare e visualizzare i record del registro di controllo
+# <a name="export-configure-and-view-audit-log-records"></a>Esportare, configurare e visualizzare i record del log di controllo
 
 Dopo aver eseguito una ricerca nel registro di controllo di Office 365 e aver scaricato i risultati della ricerca in un file CSV, il file contiene una colonna denominata **AuditData**, che contiene informazioni aggiuntive su ogni evento. I dati contenuti in questa colonna sono formattati come un oggetto JSON, che contiene più proprietà configurate come coppie *proprietà: valore* separate da virgole. È possibile utilizzare la caratteristica di trasformazione JSON nell'editor di query di alimentazione in Excel per dividere ogni proprietà nell'oggetto JSON nella colonna **AuditData** in più colonne in modo che ogni proprietà disponga di una propria colonna. In questo modo è possibile ordinare e filtrare una o più di queste proprietà, che consentono di individuare rapidamente i dati di controllo specifici che si stanno cercando.
 
@@ -108,11 +108,11 @@ Di seguito sono riportati alcuni suggerimenti ed esempi relativi all'esportazion
 
    In questo esempio, eseguire i comandi seguenti per restituire tutti i record relativi alle operazioni di condivisione di SharePoint. 
    
-   ```
+   ```powershell
    $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointSharingOperation
    ```
 
-   ```
+   ```powershell
    $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
    ```
 
@@ -122,10 +122,10 @@ Di seguito sono riportati alcuni suggerimenti ed esempi relativi all'esportazion
    
    - È possibile includere solo un valore singolo per questo parametro. Per cercare i record di controllo per altri tipi di record, è necessario eseguire di nuovo i due comandi precedenti per specificare un tipo di record diverso e accodare tali risultati al file CSV originale. Ad esempio, è necessario eseguire questi due comandi per aggiungere le attività dei file di SharePoint dallo stesso intervallo di date al file PowerShellAuditlog. csv.
 
-       ```
+       ```powershell
       $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation
       ```
 
-      ```
+      ```powershell
       $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | Export-Csv -Append -Path c:\AuditLogs\PowerShellAuditlog.csv -NoTypeInformation
-      ```
+      ```powershell

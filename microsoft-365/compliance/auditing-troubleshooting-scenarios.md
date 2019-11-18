@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 - MOE150
 description: È possibile utilizzare lo strumento di ricerca del registro di controllo di Office 365 per risolvere i problemi comuni, ad esempio l'analisi di un account compromesso, la ricerca di chi ha configurato l'inoltro della posta elettronica per una cassetta postale o il motivo per cui un utente esterno è stato in grado di eseguire correttamente l'accesso alla propria organizzazione.
-ms.openlocfilehash: 255fd323ca08dd4ea759648fbe0673f5e5254c22
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f075d4317e8da748b6eca654747a2757c0040558
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083297"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38686538"
 ---
-# <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Eseguire una ricerca nel registro di controllo di Office 365 per la risoluzione dei problemi comuni
+# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Eseguire una ricerca nel registro di controllo di Office 365 per esaminare i problemi di supporto comuni
 
-In questo articolo viene descritto come utilizzare lo strumento di ricerca del registro di controllo di Office 365 per la risoluzione dei problemi relativi agli scenari di supporto comuni. Ciò include l'utilizzo del log di controllo per:
+In questo articolo viene descritto come utilizzare lo strumento di ricerca del registro di controllo di Office 365 per esaminare i problemi di supporto comuni. Ciò include l'utilizzo del log di controllo per:
 
 - Individuare l'indirizzo IP del computer utilizzato per accedere a un account compromesso
 - Determinare gli utenti che configurano l'inoltro della posta elettronica per una cassetta postale
@@ -51,7 +51,7 @@ In questa sezione vengono descritte le nozioni di base per la creazione e l'esec
   
 4. È possibile configurare i criteri di ricerca seguenti. Ogni scenario di risoluzione dei problemi in questo articolo consiglia specifiche linee guida per la configurazione di questi campi.
     
-    un. **Attività:** Fare clic sull'elenco a discesa per visualizzare le attività di cui è possibile eseguire la ricerca. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Selezionando **Mostra risultati per tutte le attività** vengono visualizzati i risultati di tutte le attività che soddisfano gli altri criteri di ricerca. È inoltre necessario lasciare vuoto questo campo in alcuni degli scenari di risoluzione dei problemi.
+    a. **Attività:** Fare clic sull'elenco a discesa per visualizzare le attività di cui è possibile eseguire la ricerca. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Selezionando **Mostra risultati per tutte le attività** vengono visualizzati i risultati di tutte le attività che soddisfano gli altri criteri di ricerca. È inoltre necessario lasciare vuoto questo campo in alcuni degli scenari di risoluzione dei problemi.
     
     b. Data di **inizio** e **Data di fine:** Selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati entro quel periodo. Gli ultimi sette giorni sono selezionati per impostazione predefinita. La data e l'ora vengono visualizzate in formato UTC (Coordinated Universal Time). L'intervallo di date massimo che è possibile specificare è 90 giorni.
 
@@ -110,17 +110,17 @@ A questo punto, è necessario esaminare i dettagli di ogni record di controllo p
 
 ![Informazioni dettagliate dal record di controllo](media/emailforwarding2.png)
 
-un. Nel campo **ObjectID** viene visualizzato l'alias della cassetta postale in cui è stato impostato l'inoltro della posta elettronica. Questa cassetta postale viene visualizzata anche nella colonna **elemento** nella pagina dei risultati di ricerca.
+a. Nel campo **ObjectID** viene visualizzato l'alias della cassetta postale in cui è stato impostato l'inoltro della posta elettronica. Questa cassetta postale viene visualizzata anche nella colonna **elemento** nella pagina dei risultati di ricerca.
 
 b. Nel campo **parametri** , il valore *ForwardingSmtpAddress* indica che l'inoltro della posta elettronica è stato impostato sulla cassetta postale. In questo esempio, la posta viene inoltrata all'indirizzo di posta elettronica mike@contoso.com, che si trova all'esterno dell'organizzazione di alpinehouse.onmicrosoft.com.
 
-c. Il valore *true* per il parametro *DeliverToMailboxAndForward* indica che una copia del messaggio viene recapitata a Sarad@alpinehouse.onmicrosoft.com *ed* è inoltrata all'indirizzo di posta elettronica specificato dal *ForwardingSmtpAddress *parametro, che in questo esempio è Mike@contoso.com. Se il valore del parametro *DeliverToMailboxAndForward* è impostato su *false*, la posta elettronica viene inoltrata solo all'indirizzo specificato dal parametro *ForwardingSmtpAddress* . Non viene recapitato alla cassetta postale specificata nel campo **ObjectID** .
+c. Il valore *true* per il parametro *DeliverToMailboxAndForward* indica che una copia del messaggio viene recapitata a Sarad@alpinehouse.onmicrosoft.com *e* viene inoltrata all'indirizzo di posta elettronica specificato dal parametro *ForwardingSmtpAddress* , che in questo esempio è Mike@contoso.com. Se il valore del parametro *DeliverToMailboxAndForward* è impostato su *false*, la posta elettronica viene inoltrata solo all'indirizzo specificato dal parametro *ForwardingSmtpAddress* . Non viene recapitato alla cassetta postale specificata nel campo **ObjectID** .
 
 d. Il campo **userid** indica l'utente che ha impostato l'inoltro della posta elettronica sulla cassetta postale specificata nel campo **ObjectID** . Questo utente viene inoltre visualizzato nella colonna **utente** della pagina dei risultati di ricerca. In questo caso, sembra che il proprietario della cassetta postale abbia impostato l'inoltro della posta elettronica sulla sua cassetta postale.
 
 Se si determina che l'inoltro della posta elettronica non deve essere impostato sulla cassetta postale, è possibile rimuoverlo eseguendo il comando seguente in PowerShell di Exchange Online:
 
-```
+```powershell
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
@@ -186,7 +186,7 @@ Dopo aver eseguito la ricerca, i record di controllo per questa attività vengon
 
 ![Record di controllo per la nuova regola di posta in arrivo](media/NewInboxRuleRecord.png)
 
-un. Nel campo **ObjectID** viene visualizzato il nome completo della regola di posta in arrivo. Questo nome include l'alias della cassetta postale dell'utente (ad esempio, Sarad) e il nome della regola di posta in arrivo (ad esempio, "move messages from admin").
+a. Nel campo **ObjectID** viene visualizzato il nome completo della regola di posta in arrivo. Questo nome include l'alias della cassetta postale dell'utente (ad esempio, Sarad) e il nome della regola di posta in arrivo (ad esempio, "move messages from admin").
 
 b. Nel campo **parametri** viene visualizzata la condizione della regola di posta in arrivo. In questo esempio, la condizione è specificata dal parametro *from* . Il valore definito per il parametro *from* indica che la regola di posta in arrivo agisce sul messaggio di posta elettronica inviato da admin@alpinehouse.onmicrosoft.com. Per un elenco completo dei parametri che possono essere utilizzati per definire le condizioni delle regole di posta in arrivo, vedere l'articolo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
@@ -207,7 +207,7 @@ Di seguito è riportato un esempio e le descrizioni delle proprietà rilevanti i
 
 ![Esempio di record di controllo per l'autenticazione pass-thru completata](media/PassThroughAuth1.png)
 
-   un. Questo campo indica che l'utente che ha tentato di accedere a una risorsa nell'organizzazione non è stato trovato nell'Azure AD dell'organizzazione.
+   a. Questo campo indica che l'utente che ha tentato di accedere a una risorsa nell'organizzazione non è stato trovato nell'Azure AD dell'organizzazione.
 
    b. In questo campo viene visualizzato l'UPN dell'utente esterno che ha tentato di accedere a una risorsa nell'organizzazione. Questo ID utente viene identificato anche nelle proprietà **User** e **userid** del record di controllo.
 
@@ -232,7 +232,7 @@ Di seguito sono riportati due esempi di scenari che comportano l'accesso di un *
 
    ![Ricerca di tutte le attività eseguite dall'utente esterno](media/PassThroughAuth2.png)
 
-    Oltre alle attività dell' **utente connesso** , è possibile che vengano restituiti altri record di controllo, ad esempio per indicare a un utente dell'organizzazione risorse condivise con l'utente esterno e se l'utente esterno ha eseguito l'accesso, la modifica o il download di un documento sono stati condivisi con essi.
+    Oltre alle attività dell' **utente connesso** , è possibile che vengano restituiti altri record di controllo, ad esempio per indicare a un utente dell'organizzazione risorse condivise con l'utente esterno e se l'utente esterno ha eseguito l'accesso, la modifica o il download di un documento condiviso con essi.
 
 - Cercare le attività di condivisione di SharePoint che indicano che un file è stato condiviso con l'utente esterno identificato da un utente che ha **eseguito l'accesso al** record di controllo. Per ulteriori informazioni, vedere [use sharing audit in the Office 365 audit log](use-sharing-auditing.md).
 

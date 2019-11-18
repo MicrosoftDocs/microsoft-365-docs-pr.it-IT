@@ -7,23 +7,25 @@ ms.date: 7/31/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- SPO_Content
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Oltre alla linea di base, la crittografia a livello di volume abilitata tramite BitLocker e Distributed Key Manager (DKM), Office 365 offre un ulteriore livello di crittografia a livello di applicazione per il contenuto dei clienti in Office 365, inclusi i dati di Exchange Online, Skype for business, SharePoint Online e OneDrive for business. Si tratta della crittografia del servizio.
-ms.openlocfilehash: 8b15369571e3a6c021ae0c7337782a0d64436297
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0dbc3839d5dfda98460db70de667e2f469bc1291
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084011"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38686497"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Domande frequenti sulla crittografia del servizio con Customer Key per Office 365
 
 Oltre alla linea di base, la crittografia a livello di volume abilitata tramite BitLocker e Distributed Key Manager (DKM), Office 365 offre un ulteriore livello di crittografia a livello di applicazione per il contenuto dei clienti in Office 365, inclusi i dati di Exchange Online, Skype for business, SharePoint Online e OneDrive for business. Si tratta della crittografia del servizio.
   
-La chiave del cliente è basata sulla crittografia del servizio e consente di fornire e controllare le chiavi utilizzate per crittografare i dati a riposo in Office 365 come descritto nelle [condizioni dei servizi online (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx). La chiave del cliente consente di soddisfare gli obblighi di conformità perché si controllano le chiavi di crittografia utilizzate da Office 365 per decrittografare i dati.
+La chiave del cliente è basata sulla crittografia del servizio e consente di fornire e controllare le chiavi utilizzate per crittografare i dati a riposo in Office 365 come descritto nelle [condizioni dei servizi online (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx). La chiave del cliente consente di soddisfare gli obblighi di conformità perché si controllano le chiavi di crittografia utilizzate da Office 365 per decrittografare i dati.
   
 Per fornire commenti e suggerimenti sulla chiave del cliente, inclusa la documentazione, inviare le proprie idee, consigli e prospettive a customerkeyfeedback@microsoft.com.
   
@@ -46,16 +48,16 @@ BYOK con Azure Information Protection per Exchange Online è disponibile nelle f
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>La crittografia dei messaggi di Office 365 e la propria chiave con Azure Information Protection modifica l'approccio di Microsoft alle richieste di dati di terze parti, ad esempio le citazioni in giudizio?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-No. La crittografia dei messaggi di Office 365 e l'opzione per fornire e controllare le proprie chiavi di crittografia con Bring your own key (BYOK) per Azure Information Protection non è stato creato per rispondere alle citazioni di polizia. La crittografia dei messaggi di Office 365 con BYOK per AIP è stata progettata per soddisfare i clienti che hanno la necessità di rispettare i propri obblighi di conformità interni o esterni. Microsoft richiede molto sul serio le richieste di terze parti per i dati dei clienti. Come provider di servizi cloud, è sempre favorevole alla privacy dei dati del cliente. Nel caso in cui venga visualizzato un mandato di comparizione, si cerca sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il Blog di Brad Smith: [proteggere i dati dei clienti dallo spionaggio governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Pubblichiamo periodicamente informazioni dettagliate sulla richiesta che riceviamo [qui](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+No. La crittografia dei messaggi di Office 365 e l'opzione per fornire e controllare le proprie chiavi di crittografia con Bring your own key (BYOK) per Azure Information Protection non è stato creato per rispondere alle citazioni di polizia. La crittografia dei messaggi di Office 365 con BYOK per AIP è stata progettata per soddisfare i clienti che hanno la necessità di rispettare i propri obblighi di conformità interni o esterni. Microsoft richiede molto sul serio le richieste di terze parti per i dati dei clienti. Come provider di servizi cloud, è sempre favorevole alla privacy dei dati del cliente. Nel caso in cui venga visualizzato un mandato di comparizione, si cerca sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il Blog di Brad Smith: [proteggere i dati dei clienti dallo spionaggio governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Pubblichiamo periodicamente informazioni dettagliate sulla richiesta che riceviamo [qui](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data).
   
-Per ulteriori informazioni, vedere il [Centro protezione Microsoft](https://www.microsoft.com/en-us/trustcenter/default.aspx) relativo alle richieste di dati di terze parti e alla "divulgazione dei dati del cliente" nelle condizioni per i [servizi online (OST) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
+Per ulteriori informazioni, vedere il [Centro protezione Microsoft](https://www.microsoft.com/trustcenter/default.aspx) relativo alle richieste di dati di terze parti e alla "divulgazione dei dati del cliente" nelle condizioni per i [servizi online (OST) ](https://www.microsoft.com/Licensing/product-licensing/products.aspx).
   
 ## <a name="does-service-encryption-with-customer-key-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>La crittografia del servizio con la chiave del cliente modifica l'approccio di Microsoft alle richieste di dati di terze parti, ad esempio le citazioni?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-No. La chiave del cliente non è stata progettata per rispondere alle citazioni di polizia. È stato ideato per i clienti regolamentati per soddisfare gli obblighi di conformità interni o esterni. Microsoft richiede molto sul serio le richieste di terze parti per i dati dei clienti. Come provider di servizi cloud, è sempre favorevole alla privacy dei dati del cliente. Nel caso in cui venga visualizzato un mandato di comparizione, si cerca sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il Blog di Brad Smith: [proteggere i dati dei clienti dallo spionaggio governativo](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Pubblichiamo periodicamente informazioni dettagliate sulla richiesta che riceviamo [qui](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+No. La chiave del cliente non è stata progettata per rispondere alle citazioni di polizia. È stato ideato per i clienti regolamentati per soddisfare gli obblighi di conformità interni o esterni. Microsoft richiede molto sul serio le richieste di terze parti per i dati dei clienti. Come provider di servizi cloud, è sempre favorevole alla privacy dei dati del cliente. Nel caso in cui venga visualizzato un mandato di comparizione, si cerca sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il Blog di Brad Smith: [proteggere i dati dei clienti dallo spionaggio governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Pubblichiamo periodicamente informazioni dettagliate sulla richiesta che riceviamo [qui](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
   
-Per ulteriori informazioni, vedere il [Centro protezione Microsoft](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) relativo alle richieste di dati di terze parti e alla "divulgazione dei dati del cliente" nelle condizioni per i [servizi online (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx) . 
+Per ulteriori informazioni, vedere il [Centro protezione Microsoft](https://www.microsoft.com/trustcenter/Privacy/govt-requests-for-data) relativo alle richieste di dati di terze parti e alla "divulgazione dei dati del cliente" nelle condizioni per i [servizi online (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx) . 
   
 ## <a name="is-fasttrack-support-available-for-implementing-customer-key"></a>È disponibile il supporto di FastTrack per l'implementazione del codice "Customer Key"?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -89,15 +91,15 @@ Sì. È possibile utilizzare il cmdlet Set-MailUser di Windows PowerShell per as
 ## <a name="how-do-i-verify-that-encryption-with-customer-key-is-activated-and-office-365-has-finished-encrypting-with-customer-key"></a>Come verificare che la crittografia con la chiave del cliente sia attivata e che Office 365 abbia completato la crittografia con la chiave del cliente.
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online e Skype for business:** È possibile [connettersi a Exchange Online tramite Remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) e quindi utilizzare il cmdlet **[Get-MailboxStatistics]** per ogni cassetta postale che si desidera controllare. Nell'output del cmdlet Get-MailboxStatistics, la proprietà _IsEncrypted_ restituisce il valore **true** se la cassetta postale è crittografata e il valore **false** , se non lo è. Se la cassetta postale è crittografata, il valore restituito per la proprietà _DataEncryptionPolicyID_ è il GUID della funzionalità DEP con cui è crittografata la cassetta postale. Per ulteriori informazioni sull'esecuzione di questo cmdlet, vedere [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx) e using PowerShell with Exchange Online. 
+ **Exchange Online e Skype for business:** È possibile [connettersi a Exchange Online tramite Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx) e quindi utilizzare il cmdlet **[Get-MailboxStatistics]** per ogni cassetta postale che si desidera controllare. Nell'output del cmdlet Get-MailboxStatistics, la proprietà _IsEncrypted_ restituisce il valore **true** se la cassetta postale è crittografata e il valore **false** , se non lo è. Se la cassetta postale è crittografata, il valore restituito per la proprietà _DataEncryptionPolicyID_ è il GUID della funzionalità DEP con cui è crittografata la cassetta postale. Per ulteriori informazioni sull'esecuzione di questo cmdlet, vedere [Get-MailboxStatistics](https://technet.microsoft.com/library/bb124612%28v=exchg.160%29.aspx) e using PowerShell with Exchange Online. 
   
-Se le cassette postali non vengono crittografate dopo aver atteso 72 ore dal momento in cui è stata assegnata la DEP, avviare lo spostamento di una cassetta postale A tale scopo, [connettersi a Exchange Online tramite Remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) e quindi utilizzare il cmdlet New-MoveRequest e specificare l'alias della cassetta postale come indicato di seguito: 
+Se le cassette postali non vengono crittografate dopo aver atteso 72 ore dal momento in cui è stata assegnata la DEP, avviare lo spostamento di una cassetta postale A tale scopo, [connettersi a Exchange Online tramite Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx) e quindi utilizzare il cmdlet New-MoveRequest e specificare l'alias della cassetta postale come indicato di seguito: 
   
-```
+```powershell
 New-MoveRequest <alias>
 ```
 
- **SharePoint Online e OneDrive for business:** È possibile [connettersi a PowerShell di SharePoint Online](https://technet.microsoft.com/en-us/library/fp161372.aspx)e quindi utilizzare il cmdlet **[Get-SPODataEncryptionPolicy]** per controllare lo stato del tenant. La proprietà * * _state_* * restituisce un valore **registrato** se la crittografia a chiave del cliente è abilitata e tutti i file in tutti i siti sono stati crittografati. Se la crittografia è ancora in corso, questo cmdlet fornisce informazioni su quale percentuale di siti è stata completata. 
+ **SharePoint Online e OneDrive for business:** È possibile [connettersi a PowerShell di SharePoint Online](https://technet.microsoft.com/library/fp161372.aspx)e quindi utilizzare il cmdlet **[Get-SPODataEncryptionPolicy]** per controllare lo stato del tenant. La proprietà * * _state_* * restituisce un valore **registrato** se la crittografia a chiave del cliente è abilitata e tutti i file in tutti i siti sono stati crittografati. Se la crittografia è ancora in corso, questo cmdlet fornisce informazioni su quale percentuale di siti è stata completata. 
   
 ## <a name="if-i-want-to-switch-to-a-different-set-of-keys-how-long-does-it-take-for-the-new-set-of-keys-to-protect-my-data"></a>Se si desidera passare a un set di chiavi diverso, quanto tempo è necessario per il nuovo set di chiavi per proteggere i dati?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -140,7 +142,7 @@ Sono disponibili tre modi per utilizzare la chiave di disponibilità con Exchang
   
 Office 365 utilizza la chiave di disponibilità sia per la disponibilità del servizio che per il ripristino da uno stato di chiave del cliente non integro per Exchange Online. È presente una gerarchia di chiavi utilizzate dal codice "Customer Key". Questa gerarchia è illustrata nella figura seguente.
   
-![](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
+![Un elemento grafico Visualizza la gerarchia delle chiavi nel codice "Customer Key"](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
   
 Se entrambe le chiavi di Azure Key Vault di un singolo criterio di crittografia dei dati (DEP, Data Encryption Policy) non sono disponibili, Office 365 può utilizzare il tasto disponibilità per passare a una nuova funzionalità di protezione esecuzione programmi. Office 365 determina se utilizzare la chiave di disponibilità per la disponibilità del servizio in modo diverso a seconda che si tratti di un'attività avviata dall'utente, ad esempio quando un utente Scarica la posta elettronica per il client di Outlook o un'attività avviata dal sistema, ad esempio l'indicizzazione il contenuto delle cassette postali o per le ricerche di eDiscovery ha attivato il processo.
   
@@ -206,7 +208,7 @@ Per SharePoint Online, l'amministratore di Office 365 che configura la chiave de
   
 Per Exchange Online, le cassette postali "utente" e "utente di posta" devono essere concessi in licenza. Per tutti gli altri utenti, ad esempio le cassette postali condivise, non è necessario disporre di una licenza per la chiave del cliente. Per verificare la corretta licenza della cassetta postale di Exchange Online, eseguire il cmdlet seguente:
   
-```
+```powershell
 (Get-Mailbox <alias >).PersistedCapabilities
 ```
 
@@ -220,7 +222,7 @@ No. Per definizione, le sottoscrizioni di valutazione hanno una durata limitata.
 ## <a name="how-much-will-using-customer-key-cost"></a>Quanto verrà utilizzato il costo chiave del cliente?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Oltre alle licenze necessarie per la chiave del cliente, i clienti dovranno pagare un costo per l'utilizzo di Key Vault. In [Azure Key Vault pricing Details](https://azure.microsoft.com/en-us/pricing/details/key-vault/) descrive il modello di costo e assisterà alla stima. Non esiste alcun modo per prevedere il costo esatto che un cliente incorrerà perché i modelli di utilizzo variano. L'esperienza ha mostrato che il costo è molto basso e generalmente rientra nell'intervallo compreso tra $0,002 e $0,005 per utente al mese, più il costo dei tasti con backup HSM. Il costo sarà anche variabile in base alla configurazione di registrazione scelta dal cliente e alla quantità di spazio di archiviazione di Azure utilizzata per i log delle chiavi di Azure Key. 
+Oltre alle licenze necessarie per la chiave del cliente, i clienti dovranno pagare un costo per l'utilizzo di Key Vault. In [Azure Key Vault pricing Details](https://azure.microsoft.com/pricing/details/key-vault/) descrive il modello di costo e assisterà alla stima. Non esiste alcun modo per prevedere il costo esatto che un cliente incorrerà perché i modelli di utilizzo variano. L'esperienza ha mostrato che il costo è molto basso e generalmente rientra nell'intervallo compreso tra $0,002 e $0,005 per utente al mese, più il costo dei tasti con backup HSM. Il costo sarà anche variabile in base alla configurazione di registrazione scelta dal cliente e alla quantità di spazio di archiviazione di Azure utilizzata per i log delle chiavi di Azure Key. 
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>

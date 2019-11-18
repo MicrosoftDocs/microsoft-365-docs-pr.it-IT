@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sulle richieste dell'archivio protetto dei clienti che consentono di controllare il modo in cui un tecnico del supporto Microsoft può accedere ai dati durante l'esecuzione di un problema.
-ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a19b8f7933cfae06c462d204148f53b441126f58
+ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083026"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38686493"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Archivio protetto dei clienti in Office 365
 
@@ -114,7 +114,7 @@ Un amministratore di Office 365 può abilitare i controlli archivio clienti nell
 I record di controllo che corrispondono alle richieste dell'archivio protetto dei clienti vengono registrati nel registro di controllo di Office 365 ed è possibile accedervi utilizzando lo [strumento di ricerca del registro di controllo](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) nel centro sicurezza & conformità di Office 365. Le azioni relative a un cliente che accettano o negano una richiesta e le azioni eseguite da ingegneri Microsoft (quando le richieste di accesso sono approvate) vengono registrate nel registro di controllo di Office 365. È possibile eseguire la ricerca e la revisione dei record di controllo.
 
 > [!NOTE]
-> È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per ulteriori informazioni, vedere [Search the audit log in the Office 365 Security & Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
+> È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per ulteriori informazioni, vedere [Search the audit log in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Eseguire una ricerca nel registro di controllo per attività correlate alle richieste dell'archivio protetto dei clienti
 
@@ -132,7 +132,7 @@ Ecco come creare una query di ricerca del registro di controllo per restituire i
   
 4. Configurare i seguenti criteri di ricerca:
 
-    un. **Attività** -lasciare vuoto questo campo in modo che la ricerca restituisca i record di controllo per tutte le attività. Questa operazione è necessaria per restituire eventuali record di controllo relativi alle richieste dell'archivio protetto dei clienti e alle attività corrispondenti eseguite dagli ingegneri Microsoft.
+    a. **Attività** -lasciare vuoto questo campo in modo che la ricerca restituisca i record di controllo per tutte le attività. Questa operazione è necessaria per restituire eventuali record di controllo relativi alle richieste dell'archivio protetto dei clienti e alle attività corrispondenti eseguite dagli ingegneri Microsoft.
 
     b. Data di **inizio** e **Data di fine** : selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati entro quel periodo.
 
@@ -162,7 +162,7 @@ Quando una persona all'interno dell'organizzazione approva o nega una richiesta 
 |:---------- |:----------|
 | Data       | La data e l'ora in cui è stata approvata o negata la richiesta di archivio clienti.
 | Indirizzo IP | L'indirizzo IP del computer utilizzato dal responsabile approvazione per approvare o rifiutare una richiesta. |
-| Utente       | L'account di servizio BOXServiceAccount\[@\]customerforest. prod.Outlook.com.            |
+| Utente       | L'account di servizio\[BOXServiceAccount@\]customerforest. prod.Outlook.com.            |
 | Attività   | Set-AccessToCustomerDataRequest; si tratta dell'attività di controllo che viene registrata quando si approva o si nega una richiesta di archivio protetto dei clienti.                                |
 | Elemento       | Il GUID della richiesta di archivio protetto dei clienti                             |
 
@@ -216,7 +216,7 @@ Il contenuto del cliente è costituito dai dati creati dagli utenti di servizi e
 
 - Inferenze e tutte le inferenze successive, se il contenuto del cliente resta
 
-Per ulteriori informazioni sul contenuto dei clienti in Office 365, vedere il [Centro protezione di office 365](https://products.office.com/en-US/business/office-365-trust-center-privacy/).
+Per ulteriori informazioni sul contenuto dei clienti in Office 365, vedere il [Centro protezione di office 365](https://products.office.com/business/office-365-trust-center-privacy/).
 
 #### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>Chi riceve una notifica quando è presente una richiesta di accesso al contenuto?
 
@@ -270,9 +270,9 @@ Se un cliente rifiuta una richiesta di archivio clienti, non viene eseguito alcu
 
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>L'archivio protetto dei clienti protegge dalle richieste di dati provenienti da agenzie di applicazione della legge o altre terze parti?
 
-No. Microsoft richiede sul serio le richieste di terze parti per i dati dei clienti. Come provider di servizi cloud, Microsoft sostiene sempre la privacy dei dati del cliente. Nel caso in cui venga visualizzato un mandato di comparizione, Microsoft cerca sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il Blog di Brad Smith: [proteggere i dati dei clienti dallo spionaggio governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Pubblicheremo periodicamente [informazioni dettagliate](https://www.microsoft.com/en-us/corporate-responsibility/lerr) sulle richieste di applicazione della legge ricevute da Microsoft.
+No. Microsoft richiede sul serio le richieste di terze parti per i dati dei clienti. Come provider di servizi cloud, Microsoft sostiene sempre la privacy dei dati del cliente. Nel caso in cui venga visualizzato un mandato di comparizione, Microsoft cerca sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il Blog di Brad Smith: [proteggere i dati dei clienti dallo spionaggio governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Pubblicheremo periodicamente [informazioni dettagliate](https://www.microsoft.com/corporate-responsibility/lerr) sulle richieste di applicazione della legge ricevute da Microsoft.
 
-Per ulteriori informazioni, vedere il [Centro protezione Microsoft](https://www.microsoft.com/en-us/trustcenter/default.aspx) relativo alle richieste di dati di terze parti e la sezione "divulgazione di dati dei clienti" nei [termini dei servizi online](https://www.microsoft.com/Licensing/product-licensing/products.aspx) .
+Per ulteriori informazioni, vedere il [Centro protezione Microsoft](https://www.microsoft.com/trustcenter/default.aspx) relativo alle richieste di dati di terze parti e la sezione "divulgazione di dati dei clienti" nei [termini dei servizi online](https://www.microsoft.com/Licensing/product-licensing/products.aspx) .
 
 #### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>In che modo Microsoft garantisce che un membro del proprio personale non sia in grado di accedere al contenuto dei clienti nelle applicazioni di Office 365?
 

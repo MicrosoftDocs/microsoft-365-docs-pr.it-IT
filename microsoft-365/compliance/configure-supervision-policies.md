@@ -1,5 +1,5 @@
 ---
-title: Configurare criteri di supervisione per l'organizzazione
+title: Configurare i criteri di supervisione per Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,15 +15,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Impostare i criteri di revisione di supervisione per acquisire le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: dae8969598f5a71814c1b61db83341f30c0cb9d7
-ms.sourcegitcommit: 8e5b799efd3ddd0eae9dd2835c3783103817fb4b
+description: Configurare la supervisione della comunicazione per Office 365
+ms.openlocfilehash: 694f35fd42fb534292130695efa12bacc114713c
+ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37317618"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38686523"
 ---
-# <a name="configure-supervision-policies-for-your-organization"></a>Configurare criteri di supervisione per l'organizzazione
+# <a name="configure-supervision-policies-for-office-365"></a>Configurare i criteri di supervisione per Office 365
+
+> [!IMPORTANT]
+> Questo argomento si applica alla configurazione di criteri di supervisione in una sottoscrizione di Office 365. Se si desidera configurare la conformità delle comunicazioni per una sottoscrizione di Microsoft 365, vedere [Configure Communications compliance in microsoft 365 (Preview)](communication-compliance-configure.md).
 
 Utilizzare i criteri di supervisione per acquisire le comunicazioni dei dipendenti per l'esame da revisori interni o esterni. Per ulteriori informazioni su come i criteri di supervisione consentono di monitorare le comunicazioni nell'organizzazione, vedere [criteri di supervisione in Office 365](supervision-policies.md).
 
@@ -33,13 +36,13 @@ Utilizzare i criteri di supervisione per acquisire le comunicazioni dei dipenden
   
 Seguire questa procedura per configurare e usare la supervisione nell'organizzazione di Office 365:
   
-- **Passaggio 1 (facoltativo)**: [configurare i gruppi per la supervisione](#step-1-set-up-groups-for-supervision-optional) 
+- **Passaggio 1 (facoltativo)**: [configurare i gruppi per la supervisione](#step-1-set-up-groups-for-supervision-optional)
 
-    Prima di iniziare a utilizzare la supervisione, determinare gli utenti che devono esaminare le comunicazioni e che eseguono le recensioni. Se si desidera iniziare a usare solo alcuni utenti per vedere come funziona la supervisione, è possibile ignorare la configurazione dei gruppi per il momento.
+    Prima di iniziare a utilizzare i criteri di supervisione, determinare gli utenti che devono esaminare le comunicazioni e le revisioni. Se si desidera iniziare a usare solo alcuni utenti per vedere come funziona la supervisione, è possibile ignorare la configurazione dei gruppi per il momento.
 
 - **Passaggio 2 (obbligatorio)**: [rendere disponibile la supervisione nell'organizzazione](#step-2-make-supervision-available-in-your-organization-required)
 
-    Aggiungersi al gruppo di ruolo revisione di supervisione per impostare i criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina di **supervisione** nel centro conformità. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Aggiungersi al gruppo di ruolo revisione di supervisione per impostare i criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina di **supervisione** nel centro sicurezza e conformità di Office 365. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Passaggio 3 (facoltativo)**: [creare tipi di informazioni riservate personalizzate e dizionari per parole chiave personalizzate](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -47,17 +50,17 @@ Seguire questa procedura per configurare e usare la supervisione nell'organizzaz
 
 - **Passaggio 4 (obbligatorio)**: [impostare un criterio di supervisione](#step-4-set-up-a-supervision-policy-required)
 
-    È possibile creare criteri di supervisione nel centro conformità. Questi criteri definiscono le comunicazioni soggette a revisione nell'organizzazione e specifica chi esegue le revisioni. Le comunicazioni includono la posta elettronica e le comunicazioni di Microsoft teams e le comunicazioni della piattaforma di terze parti (come Facebook, Twitter e così via).
+    È possibile creare criteri di supervisione nel centro sicurezza e conformità di Office 365. Questi criteri definiscono le comunicazioni soggette a revisione nell'organizzazione e specifica chi esegue le revisioni. Le comunicazioni includono la posta elettronica e le comunicazioni di Microsoft teams e le comunicazioni della piattaforma di terze parti (come Facebook, Twitter e così via). I criteri di supervisione creati nelle organizzazioni di Office 365 non sono supportati per la supervisione delle comunicazioni negli abbonamenti a Microsoft 365.
 
-- **Passaggio 5 (facoltativo)**: [testare i criteri di supervisione](#step-5-test-your-supervision-policy-optional)
+- **Passaggio 5 (facoltativo)**: [testare i criteri di supervisione della comunicazione](#step-5-test-your-supervision-policy-optional)
 
     Testare i criteri di supervisione per assicurarsi che funzioni come desiderato. È importante garantire che la strategia di conformità soddisfi gli standard.
 
 ## <a name="step-1-set-up-groups-for-supervision-optional"></a>Passaggio 1: configurare i gruppi per la supervisione (facoltativo)
 
- Quando si crea un criterio di supervisione, si definisce chi ha le proprie comunicazioni recensite e chi esegue le revisioni. Nei criteri si utilizzeranno gli indirizzi di posta elettronica per identificare singoli o gruppi di persone. Per semplificare la configurazione, è possibile creare gruppi per gli utenti che hanno la propria comunicazione riesaminata e i gruppi per gli utenti che esaminano tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi. Ad esempio, si desidera monitorare le comunicazioni tra due gruppi distinti di persone o se si desidera specificare un gruppo che non verrà controllato.
+ Quando si crea un criterio di supervisione, si definisce chi ha le proprie comunicazioni analizzate e chi esegue le revisioni. Nei criteri si utilizzeranno gli indirizzi di posta elettronica per identificare singoli o gruppi di persone. Per semplificare la configurazione, è possibile creare gruppi per gli utenti che hanno analizzato le comunicazioni e i gruppi per gli utenti che esaminano tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi. Ad esempio, si desidera monitorare le comunicazioni tra due gruppi distinti di persone o se si desidera specificare un gruppo che non verrà controllato.
 
-Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'organizzazione per i criteri di supervisione:
+Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'organizzazione per i criteri di supervisione della comunicazione:
 
 | **Membro del criterio** | **Gruppi supportati** | **Gruppi non supportati** |
 |:-----|:-----|:-----|
@@ -74,14 +77,15 @@ Per gestire gli utenti controllati nelle organizzazioni aziendali di grandi dime
     - **MemberJoinRestriction = chiuso**. Assicura che gli utenti non possano aggiungersi al gruppo di distribuzione.
     - **ModerationEnabled = true**. Garantisce che tutti i messaggi inviati a questo gruppo siano soggetti all'approvazione e che il gruppo non venga utilizzato per comunicare al di fuori della configurazione dei criteri di supervisione.
 
-    ```
+    ```PowerShell
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
+
 2. Selezionare un [attributo personalizzato di Exchange](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) inutilizzato per registrare gli utenti aggiunti al criterio di supervisione nell'organizzazione.
 
 3. Eseguire il seguente script di PowerShell su una pianificazione ricorrente per aggiungere gli utenti ai criteri di supervisione:
 
-    ```
+    ```PowerShell
     $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
     $i = 0
     ForEach ($M in $Mbx) 
@@ -102,7 +106,7 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
 ## <a name="step-2-make-supervision-available-in-your-organization-required"></a>Passaggio 2: rendere disponibile la supervisione nell'organizzazione (obbligatorio)
 
-Per rendere disponibile la **supervisione** come opzione di menu nel centro conformità, è necessario essere assegnati al ruolo amministratore revisione di supervisione.
+Per rendere disponibile la **supervisione** come opzione di menu nel centro sicurezza e conformità di Office 365, è necessario disporre del ruolo di amministratore revisione di supervisione.
   
 A tale scopo, è possibile aggiungere se stessi come membro del gruppo di ruolo revisione di supervisione oppure creare un gruppo di ruoli.
   
@@ -110,23 +114,23 @@ A tale scopo, è possibile aggiungere se stessi come membro del gruppo di ruolo 
 
 1. Accedere [https://protection.office.com](https://protection.office.com) con le credenziali per un account di amministratore nell'organizzazione di Office 365.
 
-2. Nel centro conformità, accedere a **autorizzazioni**.
+2. Nel centro sicurezza e conformità di Office 365 accedere a **autorizzazioni**.
 
 3. Selezionare il gruppo di ruoli **revisione di supervisione** e quindi fare clic sull'icona modifica.
 
-4. Nella sezione **membri** aggiungere gli utenti che si desidera gestire la supervisione per l'organizzazione.
+4. Nella sezione **membri** aggiungere gli utenti a cui si desidera gestire la supervisione della comunicazione per l'organizzazione.
 
 ### <a name="create-a-new-role-group"></a>Creare un nuovo gruppo di ruoli
 
 1. Accedere [https://protection.office.com](https://protection.office.com) con le credenziali per un account di amministratore nell'organizzazione di Office 365.
 
-2. Nel centro conformità, accedere a **autorizzazioni** e quindi fare clic su Aggiungi**+**().
+2. Nel centro sicurezza e conformità di Office 365 accedere a **autorizzazioni** e quindi fare clic su Aggiungi**+**().
 
 3. Nella sezione **ruoli** fare clic su Aggiungi (**+**) e scorrere verso il basso fino a **amministratore revisione di supervisione**. Aggiungere questo ruolo al gruppo di ruoli.
 
-4. Nella sezione **membri** aggiungere gli utenti che si desidera gestire la supervisione per l'organizzazione.
+4. Nella sezione **membri** aggiungere gli utenti a cui si desidera gestire la supervisione della comunicazione per l'organizzazione.
 
-Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
+Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [Permissions in the Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="enable-remote-powershell-access-for-reviewers-if-email-is-hosted-on-exchange-online"></a>Abilitare l'accesso remoto a PowerShell per i revisori (se la posta elettronica è ospitata su Exchange Online)
 
@@ -157,7 +161,7 @@ Utilizzare un editor di testo, ad esempio il blocco note, per creare un file che
   
 1. Accedere [https://protection.office.com](https://protection.office.com) con le credenziali per un account di amministratore nell'organizzazione di Office 365.
 
-2. Nel centro conformità, selezionare **supervisione**.
+2. Nel centro sicurezza e conformità di Office 365 selezionare **supervisione**.
   
 3. Selezionare **Crea** e seguire la procedura guidata per configurare la configurazione dei criteri. Se si utilizza la procedura guidata, sarà necessario:
 
@@ -172,7 +176,7 @@ Utilizzare un editor di testo, ad esempio il blocco note, per creare un file che
 
 ## <a name="step-5-test-your-supervision-policy-optional"></a>Passaggio 5: testare i criteri di supervisione (facoltativo)
 
-Dopo aver creato un criterio di supervisione, è consigliabile verificare che le condizioni definite vengano applicate in modo corretto dal criterio. È inoltre possibile [testare i criteri di prevenzione della perdita di dati (DLP)](create-test-tune-dlp-policy.md) se i criteri di supervisione includono tipi di informazioni riservate. Eseguire la procedura seguente per verificare i criteri di supervisione:
+Dopo aver creato un criterio di supervisione della comunicazione, è consigliabile verificare che le condizioni definite vengano applicate in modo corretto dal criterio. È inoltre possibile [testare i criteri di prevenzione della perdita di dati (DLP)](create-test-tune-dlp-policy.md) se i criteri di supervisione includono tipi di informazioni riservate. Eseguire la procedura seguente per verificare i criteri di supervisione:
 
 1. Aprire un client di posta elettronica o Microsoft teams connesso come utente controllato definito nel criterio che si desidera sottoporre a test.
 2. Inviare un messaggio di posta elettronica o Microsoft teams chat che soddisfi i criteri definiti nei criteri di supervisione. Può trattarsi di una parola chiave, dimensioni degli allegati, dominio e così via. Assicurarsi di determinare se le impostazioni condizionali configurate nel criterio sono troppo restrittive o troppo indulgenti.
@@ -180,18 +184,5 @@ Dopo aver creato un criterio di supervisione, è consigliabile verificare che le
     > [!NOTE]
     > I messaggi di posta elettronica soggetti a criteri definiti vengono elaborati in tempo quasi reale e possono essere testati immediatamente dopo la configurazione del criterio. Le chat in Microsoft teams possono richiedere fino a 24 ore per il processo completo in un criterio. 
 
-3. Accedere al tenant di Office 365 come un revisore designato nei criteri di supervisione. Passare alla **supervisione** > del*criterio* > personalizzato**aperto** per visualizzare il report per il criterio.
+3. Accedere al tenant di Office 365 come un revisore designato nei criteri di supervisione della comunicazione. Passare alla **supervisione** > del*criterio* > personalizzato**aperto** per visualizzare il report per il criterio.
 
-## <a name="powershell-reference"></a>Informazioni di riferimento su PowerShell
-
-Se necessario, è possibile creare e gestire i criteri di supervisione con i cmdlet di PowerShell seguenti:
-
-- [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2?view=exchange-ps)
-- [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2?view=exchange-ps)
-- [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2?view=exchange-ps)
-- [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2?view=exchange-ps)
-- [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule?view=exchange-ps)
-- [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule?view=exchange-ps)
-- [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity)
-- [Get-SupervisoryReviewOverallProgressReport](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewoverallprogressreport)
-- [Get-SupervisoryReviewTopCasesReport](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewtopcasesreport)

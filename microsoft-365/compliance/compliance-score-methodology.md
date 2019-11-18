@@ -1,5 +1,5 @@
 ---
-title: Metodologia del Punteggio di conformità
+title: Calcolo del Punteggio di conformità
 ms.author: chvukosw
 author: chvukosw
 manager: laurawi
@@ -11,74 +11,75 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: eb6e79d840439acec007fef54bf6cb5ca5633f1e
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+description: Informazioni sul modo in cui il Punteggio di conformità di Microsoft calcola un punteggio personalizzato sulla base delle azioni intraprese per risolvere i rischi e migliorare la conformità alla postura.
+ms.openlocfilehash: e3bb9bc2d9d833eea8c5a9e4a29334d9777aebac
+ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417495"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38686346"
 ---
-# <a name="compliance-score-methodology-preview"></a>Metodologia del Punteggio di conformità (anteprima)
+# <a name="microsoft-compliance-score-calculation-preview"></a>Calcolo del Punteggio di conformità Microsoft (anteprima)
 
-> [!NOTE]
-> Il punteggio di conformità non esprime una misura assoluta di conformità organizzativa a nessun particolare standard o regolamento. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Nessun servizio può garantire la conformità a uno standard o regolamento e il punteggio di conformità non deve essere interpretato come una garanzia in alcun modo.
+> [!IMPORTANT]
+> Il Punteggio di conformità non esprime una misura assoluta di conformità organizzativa rispetto a una norma o a un regolamento particolari. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Le raccomandazioni del Punteggio di conformità e del Compliance Manager non devono essere interpretate come garanzia di conformità. Questo servizio è attualmente in anteprima ed è soggetto ai termini e alle condizioni nelle condizioni dei [servizi online](https://go.microsoft.com/fwlink/?linkid=2108910).
 
-Il dashboard di Compliance Manager visualizza un punteggio di conformità totale per le valutazioni in ogni riquadro di valutazione. Si tratta del Punteggio di conformità globale per la valutazione ed è l'accumulo di punti ricevuti per ogni controllo implementato e testato nella valutazione. Per una nuova valutazione, il Punteggio di conformità ha un valore iniziale per i controlli gestiti Microsoft inclusi testati da terze parti indipendenti. Il Punteggio di conformità è calcolato in base a punteggi azione gestiti da Microsoft e punteggi azione gestiti dal cliente. Il Punteggio di conformità può aiutare a definire la priorità quali valutazioni e controlli concentrarsi su per migliorare la posizione di conformità globale.
+## <a name="overview"></a>Panoramica
 
-I valori di Punteggio di conformità visualizzati per il controllo vengono applicati *integralmente* al Punteggio di conformità totale su una base pass/fail. Il controllo viene implementato e passa il test di valutazione successivo o non lo è. I punti assegnati vengono aggiunti al Punteggio di conformità quando il controllo è:
+Il dashboard del Punteggio di conformità Visualizza un punteggio che misura lo stato di avanzamento del completamento delle azioni di miglioramento all'interno dei controlli. I punti si accumulano quando si completano le azioni.
+
+Il Punteggio viene calcolato in base al completamento delle azioni gestite da Microsoft e delle azioni gestite dal cliente. Ogni azione ha un impatto diverso sulla partitura, a seconda dei possibili rischi, quindi il punteggio può contribuire a definire la priorità su quale azione concentrarsi per migliorare la postura complessiva di conformità.
+
+I valori di Punteggio di conformità visualizzati per il controllo vengono applicati *integralmente* al punteggio totale su una base di pass/fail. Il controllo viene implementato e passa il test di valutazione successivo o non lo è. I punti assegnati vengono aggiunti al Punteggio di conformità quando il controllo è:
 
 - **Lo stato di implementazione** è uguale a **implementato** o all' **implementazione alternativa** e,
 - **Risultato del test** uguale a **superato**.
 
-## <a name="compliance-score"></a>Punteggio di conformità
-  
-In Compliance Manager, i punteggi della linea di base passano dal livello di controllo al livello dell'elemento Action. I punteggi si basano sullo scopo (Detective, preventivo o correttivo) e sull'applicazione (discrezionale o obbligatoria) dell'azione.
+La somma dei punti ottenuti adottando azioni di miglioramento è il Punteggio di controllo. La somma dei punteggi di controllo è il Punteggio di valutazione. La somma dei punteggi di valutazione è il Punteggio di conformità globale
 
-Gli elementi azione vengono mappati ai controlli e quando un controllo viene mappato a più elementi azione, la somma dei punteggi degli elementi azione è il Punteggio di controllo. La somma del Punteggio di controllo per tutti i controlli in una determinata valutazione è il Punteggio di valutazione. Il Punteggio medio di tutte le valutazioni in un gruppo è il Punteggio di conformità per tale gruppo.
+## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Punteggio iniziale basato sulla linea di base per la protezione dei dati di Microsoft 365
   
-### <a name="mandatory-or-discretionary-controls"></a>Controlli obbligatori o discrezionali
+Punteggio di conformità consente di ottenere un punteggio esterno alla casella di controllo basato sulla linea di base per la protezione dei dati di Microsoft 365, che è un insieme di controlli che include le normative fondamentali e gli standard per la protezione dei dati e la governance dei dati generale. Questa linea di base estrae gli elementi principalmente dal NIST CSF (Istituto nazionale per gli standard e la tecnologia Cybersecurity Framework) e ISO (organizzazione internazionale per la standardizzazione), nonché da FedRAMP (gestione federale dei rischi e delle autorizzazioni Program) e GDPR (regolamentazione generale sulla protezione dei dati dell'Unione europea).
+
+## <a name="how-compliance-score-continuously-assesses-controls"></a>Come il Punteggio di conformità valuta continuamente i controlli
+
+Il Punteggio di conformità analizza automaticamente l'ambiente Microsoft 365 e rileva le impostazioni di sistema, aggiornando continuamente e automaticamente lo stato del controllo tecnico. Ad esempio, se si è attivata l'autenticazione a più fattori nel portale di Azure AD, il Punteggio di conformità rileva l'impostazione e lo riflette nei dettagli della soluzione di Access Control. Viceversa, se non si è attivato l'AMF, il Punteggio di conformità contrassegna come azione consigliata da eseguire.
+
+Il Punteggio di conformità aggiorna lo stato del controllo ogni 24 ore. Dopo aver seguito una raccomandazione per implementare un controllo, verrà visualizzato lo stato del controllo aggiornato il giorno successivo.
+
+Durante l'anteprima pubblica, la valutazione continua è disponibile per i controlli delle porzioni, ma non per tutti.
   
- I **controlli obbligatori** sono azioni che non possono essere ignorate intenzionalmente o accidentalmente. Un esempio di controllo obbligatorio comune è costituito da un criterio password gestito in modo centralizzato che consente di impostare i requisiti per la lunghezza, la complessità e la scadenza delle password. Gli utenti devono essere conformi a questi requisiti per accedere al sistema.
+## <a name="control-types-and-points"></a>Tipi di controllo e punti
+
+Il Punteggio di conformità tiene traccia di due tipi di controlli, gestiti da Microsoft e gestiti dal cliente, ognuno dei quali ha punti che contribuiscono alla valutazione complessiva:
+
+1. I **punti gestiti dal cliente** contribuiscono al Punteggio di conformità basato sui controlli gestiti dall'organizzazione.
+2. I **punti gestiti da Microsoft** contribuiscono al Punteggio di conformità basato sui controlli gestiti da Microsoft come provider di servizi cloud.
+
+Ai controlli viene assegnato un valore di punteggio a seconda che siano obbligatori o discrezionali e siano essi preventivo, investigativo o correttivo, come descritto di seguito.
+
+### <a name="mandatory-and-discretionary-controls"></a>Controlli obbligatori e discrezionali
+
+ - I **controlli obbligatori** sono azioni che non possono essere ignorate intenzionalmente o accidentalmente. Un esempio è un criterio di password gestito in modo centralizzato che consente di impostare i requisiti per la lunghezza, la complessità e la scadenza delle password. Gli utenti devono essere conformi a questi requisiti per accedere al sistema.
   
- I **controlli discrezionali** fanno affidamento sugli utenti per comprendere i criteri e agire di conseguenza. Ad esempio, un criterio che richiede agli utenti di bloccare il proprio computer quando lo lasciano è un controllo discrezionale, perché si basa sull'utente.
+ - I **controlli discrezionali** fanno affidamento sugli utenti per comprendere i criteri e agire di conseguenza. Ad esempio, un criterio che richiede agli utenti di bloccare il proprio computer quando lo lasciano è un controllo discrezionale, perché si basa sull'utente.
   
-### <a name="preventative-detective-or-corrective-controls"></a>Controlli preventivo, investigativo o correttivo
+### <a name="preventative-detective-and-corrective-controls"></a>Controlli preventivo, investigativo e correttivo
   
- I **controlli preventivi** sono azioni che impediscono rischi specifici. Ad esempio, la protezione delle informazioni a riposo tramite la crittografia è un controllo preventivo contro gli attacchi, le violazioni. La separazione dei compiti è un controllo preventivo per gestire i conflitti di interesse e prevenire le frodi.
+ - I **controlli preventivi** affrontano rischi specifici. Ad esempio, la protezione delle informazioni a riposo tramite la crittografia è un controllo preventivo per gli attacchi e le violazioni. La separazione dei compiti è un controllo preventivo per la gestione dei conflitti di interesse e la protezione contro le frodi.
   
- I **controlli detective** sono azioni che monitorano attivamente i sistemi per identificare condizioni o comportamenti irregolari che rappresentano il rischio o che possono essere utilizzati per rilevare intrusioni o determinare se si è verificata una violazione. Il controllo dell'accesso di sistema e l'auditing delle azioni amministrative privilegiate sono tipi di controlli di monitoraggio detective. I controlli di conformità normativi sono un tipo di controllo detective utilizzato per individuare i problemi del processo.
+ - **Detective Controls** monitora attivamente i sistemi per identificare condizioni o comportamenti irregolari che rappresentano i rischi o che possono essere utilizzati per rilevare intrusioni o determinare se si verifica una violazione. Il controllo dell'accesso di sistema e l'auditing delle azioni amministrative privilegiate sono tipi di controlli di monitoraggio detective. I controlli di conformità normativi sono un tipo di controllo detective utilizzato per individuare i problemi del processo.
   
-I **Controlli correttivi** sono controlli che tentano di mantenere al minimo gli effetti negativi di un incidente di sicurezza, intraprendere azioni correttive per ridurre l'effetto immediato e invertire il danno, se possibile. La risposta agli incidenti sulla privacy è un controllo correttivo per limitare i danni e ripristinare i sistemi a uno stato operativo dopo una violazione.
+- I **Controlli correttivi** tentano di mantenere al minimo gli effetti negativi di un incidente di sicurezza, intraprendere azioni correttive per ridurre l'effetto immediato e, se possibile, invertire i danni. La risposta agli incidenti sulla privacy è un controllo correttivo per limitare i danni e ripristinare i sistemi a uno stato operativo dopo una violazione.
   
-Ogni controllo ha un valore assegnato in Compliance Manager in base al rischio che rappresenta:
+Ogni controllo ha un valore assegnato nel punteggio di conformità basato sul rischio che rappresenta:
 
 |**Tipo**|**Punteggio assegnato**|
 |:-----|:-----|
 | Obbligatorio preventivo | 27 |
-| Discrezionale preventiva | 9  |
+| Discrezionale preventiva | 9 |
 | Detective obbligatorio | 3 |
 | Discrezionale detective | 1 |
 | Obbligatorio correttivo | 3 |
 | Discrezionale correttiva | 1 |
   
-## <a name="action-item-workflow"></a>Flusso di lavoro elementi azione
-
-Di seguito è indicato il flusso di lavoro di base per un elemento di azione tipico:
-  
-1. La conformità, il rischio, la privacy e/o il responsabile della protezione dei dati di un'organizzazione assegna un'attività a un utente dell'organizzazione per implementare un controllo. Tale persona potrebbe essere:
-
-    - Proprietario di un criterio aziendale.
-    - Un responsabile dell'implementazione IT.
-    - Un altro individuo nell'organizzazione con la responsabilità di eseguire l'attività.
-
-2. Tale individuo esegue le attività necessarie per implementare il controllo, carica la prova dell'implementazione in Compliance Manager e contrassegna il controllo associato all'elemento di azione implementato. Una volta completate queste attività, assegnano l'elemento azione a un valutatore per la convalida.
-
-    I valutatori possono essere:
-
-    - Valutatori interni che eseguono la convalida dei controlli all'interno di un'organizzazione.
-    - Valutatori esterni che esaminano, verificano e certificano la conformità, ad esempio le organizzazioni indipendenti di terze parti che controllano i servizi cloud di Microsoft.
-
-3. Il valutatore convalida il controllo ed esamina l'evidenza e contrassegna il controllo come valutato e i risultati della valutazione.
-
-Una volta valutati tutti i controlli associati a una valutazione, la valutazione è stata completata.
