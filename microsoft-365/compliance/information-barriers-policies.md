@@ -1,5 +1,5 @@
 ---
-title: Definire i criteri di barriera delle informazioni
+title: Definire i criteri delle barriere informative
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
-ms.openlocfilehash: 8ad6dd5e098438de0904fb511c631afbc761ff5b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d5dfbcb4410739d8d935b50a8e4ad069145e6a5
+ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083739"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38690642"
 ---
 # <a name="define-policies-for-information-barriers"></a>Definire i criteri per le barriere informative
 
@@ -58,8 +58,8 @@ Quando si definiscono i criteri per gli ostacoli alle informazioni, è possibile
 
 Oltre alle [licenze e le autorizzazioni necessarie](information-barriers.md#required-licenses-and-permissions), verificare che siano soddisfatti i requisiti seguenti: 
      
-- **Dati della directory**. Verificare che la struttura dell'organizzazione sia riflessa nei dati della directory. Per eseguire questa operazione, verificare che gli attributi degli account utente, ad esempio appartenenza a gruppo, nome reparto e così via, siano inseriti correttamente in Azure Active Directory (o Exchange Online). Per ulteriori informazioni, vedere le risorse seguenti:
-  - [Attributi per i criteri di barriera delle informazioni](information-barriers-attributes.md)
+- **Dati della directory**. Verificare che la struttura dell'organizzazione sia riflessa nei dati della directory. Per eseguire questa operazione, verificare che gli attributi degli account utente, ad esempio appartenenza a gruppo, nome reparto e così via, siano inseriti correttamente in Azure Active Directory (o Exchange Online). Per altre informazioni, vedere le risorse seguenti:
+  - [Attributi per i criteri delle barriere informative](information-barriers-attributes.md)
   - [Aggiungere o aggiornare le informazioni del profilo di un utente tramite Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
@@ -77,7 +77,7 @@ Oltre alle [licenze e le autorizzazioni necessarie](information-barriers.md#requ
 
    1. Eseguire i cmdlet di PowerShell seguenti:
 
-      ```
+      ```powershell
       Login-AzureRmAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
@@ -108,7 +108,10 @@ Quando si ha un elenco iniziale di gruppi e criteri, procedere all'identificazio
 
 ### <a name="identify-segments"></a>Identificare i segmenti
 
-Oltre all'elenco iniziale dei criteri, creare un elenco di segmenti per l'organizzazione. Gli utenti che saranno inclusi nei criteri di barriera delle informazioni devono appartenere a un segmento e nessun utente deve appartenere a due o più segmenti. Ogni segmento può disporre di un solo criterio barriera informativo applicato. 
+Oltre all'elenco iniziale dei criteri, creare un elenco di segmenti per l'organizzazione. Gli utenti che saranno inclusi nei criteri di barriera delle informazioni devono appartenere a un segmento. Pianificare attentamente i segmenti come un utente può essere in un solo segmento. Ogni segmento può disporre di un solo criterio barriera informativo applicato.
+
+> [!IMPORTANT]
+> Un utente può trovarsi in un solo segmento.
 
 Determinare gli attributi dei dati di directory dell'organizzazione che verranno utilizzati per definire i segmenti. È possibile utilizzare *Department*, *member*o uno qualsiasi degli attributi supportati. Assicurarsi di avere valori nell'attributo selezionato per gli utenti. [Vedere l'elenco degli attributi supportati per le barriere informative](information-barriers-attributes.md).
 
@@ -243,7 +246,7 @@ I criteri di barriera delle informazioni non sono attivi finché non vengono imp
 
 Con PowerShell, è possibile visualizzare lo stato degli account utente, i segmenti, i criteri e l'applicazione di criteri, come indicato nella tabella seguente.
 
-|Per visualizzare questo  |Esegui questa operazione  |
+|Per visualizzare questo  |Eseguire l'operazione seguente  |
 |---------|---------|
 |Account utente     |Utilizzare il cmdlet **Get-InformationBarrierRecipientStatus** con i parametri Identity. <p>Sintassi`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>È possibile utilizzare qualsiasi valore che identifichi in modo univoco ogni utente, ad esempio nome, alias, nome distinto, nome di dominio canonico, indirizzo di posta elettronica o GUID. <p>Esempio:  `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In questo esempio, si fa riferimento a due account utente in Office 365: *meganb* per *Megan*e *alexw* per *Alex*. <p>È inoltre possibile utilizzare questo cmdlet per un singolo utente: `Get-InformationBarrierRecipientStatus -Identity <value>` <p>Questo cmdlet restituisce informazioni sugli utenti, ad esempio i valori degli attributi e tutti i criteri di barriera delle informazioni applicati.|
 |Segmenti     |Utilizzare il cmdlet **Get-OrganizationSegment** .<p>Sintassi`Get-OrganizationSegment` <p>In questo modo verrà visualizzato un elenco di tutti i segmenti definiti per l'organizzazione.         |

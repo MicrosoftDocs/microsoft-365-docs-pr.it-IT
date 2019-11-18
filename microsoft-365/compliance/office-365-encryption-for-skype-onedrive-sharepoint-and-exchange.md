@@ -13,13 +13,14 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 description: 'Riepilogo: Descrizione della crittografia per Skype, OneDrive, SharePoint e Exchange Online.'
-ms.openlocfilehash: 55141f671e6cb3d7ea837bfcf9701e37a18fb7ba
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 220f3060bd9581b22183bbb56e68c3ec930d0c24
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084469"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38690637"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Crittografia di Office 365 per Skype for business, OneDrive for business, SharePoint Online ed Exchange Online
 
@@ -63,7 +64,7 @@ Le credenziali utilizzate per accedere ai contenitori di archiviazione di Azure 
 > [!NOTE]
 > Per i clienti di Office 365 Stati Uniti, i BLOB di dati sono archiviati nell'archivio governativo degli Stati Uniti di Azure. Inoltre, l'accesso alle chiavi di SharePoint online in Office 365 Stati Uniti è limitato al personale di Office 365 che è stato sottoposto a screening specifico. Il personale delle operazioni governative degli Stati Uniti di Azure non ha accesso all'archivio delle chiavi di SharePoint Online utilizzato per crittografare i BLOB di dati.
 
-Per ulteriori informazioni sulla crittografia dei dati in SharePoint Online e OneDrive for business, vedere [crittografia dei dati in OneDrive for business e SharePoint Online](https://technet.microsoft.com/en-us/library/dn905447.aspx).
+Per ulteriori informazioni sulla crittografia dei dati in SharePoint Online e OneDrive for business, vedere [crittografia dei dati in OneDrive for business e SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx).
 
 ### <a name="list-items-in-sharepoint-online"></a>Voci di elenco in SharePoint Online
 

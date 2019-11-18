@@ -11,18 +11,18 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: informazioni sulla crittografia in Microsoft Dynamics 365.'
-ms.openlocfilehash: 7c2a352dd712b0db9d2ad623745f854b863dd2e0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 58afc2d35ece4b5bfd7594aad483606e6f867823
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084462"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38690553"
 ---
 # <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Crittografia di Office 365 in Microsoft Dynamics 365
 
-Microsoft utilizza la tecnologia di crittografia per proteggere i dati dei clienti in Dynamics 365 mentre è in fase di riposo in un database Microsoft e durante il transito tra i dispositivi utente e i datacenter. Le connessioni stabilite tra i clienti e i centri dati Microsoft vengono crittografate e tutti gli endpoint pubblici sono protetti con TLS standard del settore. TLS stabilisce efficacemente una connessione da browser a server con protezione avanzata per garantire la riservatezza e l'integrità dei dati tra desktop e Datacenter. Dopo che la crittografia dei dati è attivata, non può essere disattivata. Per ulteriori informazioni, vedere [crittografia dei dati a livello di campo](https://msdn.microsoft.com/en-us/library/dn481562.aspx).
+Microsoft utilizza la tecnologia di crittografia per proteggere i dati dei clienti in Dynamics 365 mentre è in fase di riposo in un database Microsoft e durante il transito tra i dispositivi utente e i datacenter. Le connessioni stabilite tra i clienti e i centri dati Microsoft vengono crittografate e tutti gli endpoint pubblici sono protetti con TLS standard del settore. TLS stabilisce efficacemente una connessione da browser a server con protezione avanzata per garantire la riservatezza e l'integrità dei dati tra desktop e Datacenter. Dopo che la crittografia dei dati è attivata, non può essere disattivata. Per ulteriori informazioni, vedere [crittografia dei dati a livello di campo](https://msdn.microsoft.com/library/dn481562.aspx).
 
-Dynamics 365 utilizza la crittografia a livello di cella Microsoft SQL Server standard per un set di attributi di entità predefiniti che contengono informazioni riservate, ad esempio i nomi utente e le password di posta elettronica. Questa funzionalità può consentire alle organizzazioni di soddisfare i requisiti di conformità associati a FIPS 140-2. La crittografia dei dati a livello di campo è particolarmente importante in scenari che sfruttano il [router di posta elettronica di Microsoft Dynamics CRM](https://technet.microsoft.com/en-us/library/hh699800.aspx), che deve archiviare i nomi utente e le password per consentire l'integrazione tra un'istanza di Dynamics 365 e un servizio di posta elettronica. 
+Dynamics 365 utilizza la crittografia a livello di cella Microsoft SQL Server standard per un set di attributi di entità predefiniti che contengono informazioni riservate, ad esempio i nomi utente e le password di posta elettronica. Questa funzionalità può consentire alle organizzazioni di soddisfare i requisiti di conformità associati a FIPS 140-2. La crittografia dei dati a livello di campo è particolarmente importante in scenari che sfruttano il [router di posta elettronica di Microsoft Dynamics CRM](https://technet.microsoft.com/library/hh699800.aspx), che deve archiviare i nomi utente e le password per consentire l'integrazione tra un'istanza di Dynamics 365 e un servizio di posta elettronica. 
 
 Tutte le istanze di Dynamics 365 utilizzano la [crittografia (Transparent Data Encryption) di Microsoft SQL Server](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) per eseguire la crittografia in tempo reale dei dati quando vengono scritti su disco (a riposo). Transcript crittografa SQL Server, database SQL di Azure e file di dati di Azure SQL data warehouse. Per impostazione predefinita, Microsoft archivia e gestisce le chiavi di crittografia del database per le istanze di Dynamics 365. Le chiavi utilizzate da Dynamics 365 per gli strumenti finanziari sono generate dall'API di protezione dei dati di .NET Framework. 
 

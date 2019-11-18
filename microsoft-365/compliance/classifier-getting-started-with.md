@@ -1,0 +1,103 @@
+---
+title: Guida introduttiva a Microsoft 365 classificatori (anteprima)
+ms.author: chrfox
+author: chrfox
+manager: laurawi
+audience: Admin
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: None
+ms.collection: M365-security-compliance
+search.appverid:
+- MOE150
+- MET150
+description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato e si conferma che i risultati sono accurati, è possibile utilizzarlo per eseguire una ricerca nel contenuto delle organizzazioni, classificarlo per applicare etichette di conservazione o di sensibilità o includerlo nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
+ms.openlocfilehash: 6b8574b7c87f0b038c46894940cb8d15b152ab5c
+ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38690545"
+---
+# <a name="getting-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
+
+Classificare ed etichettare il contenuto in modo che possa essere protetto e gestito correttamente è il punto di partenza per la disciplina di protezione delle informazioni. Microsoft 365 ha tre modi per classificare il contenuto.
+
+## <a name="manually"></a>Manualmente
+
+Ciò richiede il giudizio umano e l'azione. Un amministratore può utilizzare le etichette preesistenti e i tipi di informazioni riservate oppure crearne di propri e quindi pubblicarli. Gli utenti e gli amministratori li applicano al contenuto quando lo incontrano. È quindi possibile proteggere il contenuto e gestirne la disposizione.
+
+## <a name="automated-pattern-matching"></a>Corrispondenza del modello automatizzata
+
+Questa categoria di meccanismi di classificazione include la ricerca di contenuto per:
+
+- Parole chiave o valori di metadati (parola chiave Query Language)
+- utilizzo di modelli di informazioni riservate in precedenza identificati come la sicurezza sociale, la carta di credito o il conto corrente bancario [(tipi di informazioni riservate)](what-the-sensitive-information-types-look-for.md)
+- Riconoscimento di un elemento perché è una variante su un modello [(stampa su dito documento)](document-fingerprinting.md)
+- utilizzo della presenza di stringhe esatte [(corrispondenza esatta dei dati)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+
+È quindi possibile applicare automaticamente le etichette di conservazione e di riservatezza che rendono il contenuto disponibile per l'utilizzo in [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md) e nei [criteri di conservazione](retention-policies.md).
+
+## <a name="trainable-classifiers"></a>Classificatori addestrabili
+
+Questo metodo di classificazione è particolarmente adatto ai contenuti che, per sua natura, non sono predisposti per essere facilmente identificati tramite i metodi di corrispondenza dei modelli manuale o automatico. Questo metodo di classificazione è più relativo all'addestramento di un classificatore per identificare un elemento in base a ciò che l'elemento è, non per elementi che si trovano nell'elemento (pattern matching). Un classificatore apprende come identificare un tipo di contenuto cercando un centinaio di esempi del contenuto che si desidera classificare. Si inizia con l'alimentazione di esempi che sono definitivamente nella categoria, quindi una volta che elabora tali, è possibile testarla conferendole una combinazione di esempi di corrispondenza e non corrispondenti. Il classificatore effettua quindi stime sull'eventuale ricaduta o meno di un determinato elemento nella categoria che si sta creando. È quindi necessario confermare i risultati, ordinare i valori positivi, negativi, falsi positivi e falsi negativi per aumentare l'accuratezza delle stime. Quando si pubblica il classificatore addestrato, l'ordinamento viene ordinato tramite gli elementi in posizioni, come SharePoint Online, Exchange e OneDrive e classifica il contenuto.
+
+> [!IMPORTANT]
+> Entrambi i tipi di classificatori sono disponibili come condizione per [l'applicazione automatica dei criteri delle etichette di conservazione in base a una condizione e alla](labels.md#applying-a-retention-label-automatically-based-on-conditions) [conformità della comunicazione](communication-compliance.md).
+
+> [!IMPORTANT]
+> I classificatori addestrabili funzionano solo con elementi che non sono crittografati e sono in lingua inglese.
+
+## <a name="types-of-classifiers"></a>Tipi di classificatori
+
+Sono disponibili per l'utilizzo di classificatori e classificatori addestrabili. Ottenere un classificatore addestrabile a uno stato di pubblicazione richiede un investimento di tempo per addestrarlo. Per iniziare a utilizzare i classificatori, Microsoft 365 viene fornito con alcuni classificatori pronti all'uso.
+
+> [!NOTE]
+> Prima di utilizzare un classificatore pronto per l'utilizzo nel flusso di lavoro di classificazione e etichettatura, è consigliabile verificarlo in base a un campione del contenuto delle organizzazioni che si adatta alla categoria per verificare che le stime di classificazione soddisfino le proprie aspettative.
+
+### <a name="understanding-ready-to-use-classifiers"></a>Informazioni sui classificatori pronti all'uso
+
+Microsoft 365 include sei classificatori pronti all'uso:
+
+- **Lingua offensiva**: consente di rilevare gli elementi di testo che contengono parolacce, legature, scherni e espressioni mascherate (ovvero espressioni che hanno lo stesso significato di un termine più offensivo).
+- **Resumes**: consente di rilevare gli elementi che sono account testuali di qualifiche personali, didattiche, professionali del richiedente, esperienze lavorative e altre informazioni di identificazione personale
+- **Codice sorgente**: consente di rilevare gli elementi che contengono una serie di istruzioni e istruzioni scritte nei linguaggi di programmazione ampiamente utilizzati.
+- **Molestie**: rileva una categoria specifica di elementi di testo di lingua offensiva relativi alla condotta offensiva che mira a una o più persone in base alle caratteristiche seguenti: razza, etnia, religione, origine nazionale, genere, orientamento sessuale, età, disabilità.
+- **Parolacce**: rileva una categoria specifica di elementi di testo di lingua offensiva che contengono espressioni che imbarazzano la maggior parte delle persone
+- **Threat**: rileva una categoria specifica di elementi di testo offensivi relativi alle minacce per commettere violenze o arrecare danni fisici a una persona o a una proprietà
+
+Questi vengono visualizzati nella visualizzazione classificazione dei**classificati** di **Microsoft 365 Compliance Center** > **Data Classification (Preview)** > con `Ready to use`lo stato di.
+
+![classificatori-pronto per l'uso-classificatori](media/classifiers-ready-to-use-classifiers.png)
+
+> [!IMPORTANT]
+> Si noti che la lingua offensiva, la molestia, la profanità e i classificatori di minacce funzionano solo con il testo ricercabile non sono esaustivi o completi.  Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare questi classificatori a sua discrezione. Anche se i classificatori possono assistere la propria organizzazione nel monitoraggio di un'offensiva e di altre lingue utilizzate, i classificatori non affrontano le conseguenze di tale lingua e non sono destinati a fornire il solo mezzo di monitoraggio o di risposta dell'organizzazione all'utilizzo di tale lingua. La propria organizzazione e non Microsoft o le sue affiliate resta responsabile di tutte le decisioni relative al monitoraggio, all'applicazione, al blocco, alla rimozione e alla conservazione di qualsiasi contenuto identificato da un classificatore preformato.
+
+#### <a name="process-flow-for-using-ready-to-use-classifiers"></a>Flusso di processo per l'utilizzo dei classificatori pronti all'uso
+
+I classificatori pronti all'uso non devono essere addestrati, ma è necessario verificare che vengano identificati i tipi di contenuto a cui sono necessari prima di utilizzarli nelle soluzioni di conformità. Il testing di un classificatore preconfigurato segue questo flusso.
+
+![Processing Flow testing di un classificatore preconfigurato](media/classifier-pre-trained-classifier-flow.png)
+
+### <a name="understanding-trainable-classifiers"></a>Informazioni sui classificatori addestrabili
+
+Quando i classificatori pronti all'uso non soddisfano le proprie esigenze, è possibile creare e formare i propri classificatori. Si tratta di un lavoro significativamente più coinvolgente nella creazione di un proprio, ma sarà molto meglio adattare le proprie esigenze alle organizzazioni. Per ulteriori informazioni su come utilizzare un classificatore preconfigurato, vedere [utilizzo di un classificatore pronto per l'uso](classifier-using-a-ready-to-use-classifier.md)
+
+> [!IMPORTANT]
+> Solo l'utente che crea un classificatore addestrabile può formare e rivedere le stime eseguite dal classificatore.
+
+#### <a name="process-flow-for-creating-trainable-classifiers"></a>Flusso di processo per la creazione di classificatori addestrabili
+
+La creazione e la pubblicazione di un classificatore addestrabile per l'utilizzo in soluzioni di conformità come i criteri di conservazione e la supervisione della comunicazione seguono questo flusso. Per ulteriori informazioni sulla creazione di un classificatore addestrabile, vedere [creazione di un classificatore addestrabile](classifier-creating-a-trainable-classifier.md).
+
+![classificatore addestrabile del flusso di processo](media/classifier-trainable-classifier-flow.png)
+
+## <a name="see-also"></a>Vedere anche
+
+- [etichette di conservazione](labels.md)
+- [criteri di conservazione](retention-policies.md)
+- [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md)
+- [etichette di riservatezza](sensitivity-labels.md)
+- [tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+- [stampa di impronte digitali del documento](document-fingerprinting.md)
+- [corrispondenza esatta dei dati](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
