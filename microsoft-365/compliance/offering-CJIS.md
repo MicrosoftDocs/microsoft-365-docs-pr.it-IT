@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 52b5718ecbd558cf1bf5e89702b6574c87841040
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 069f4dac1b04a75ff30339f8cecde4e8f82c044a
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690584"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699736"
 ---
 # <a name="compliance-offering-criminal-justice-information-services-cjis-security-policy"></a>Offerta di conformità: criteri di sicurezza per i servizi di CJIS (Criminal Justice Information Services)
 
@@ -53,13 +53,13 @@ L'FBI non offre la certificazione della conformità di Microsoft ai requisiti di
 
 [Requisiti cloud di Microsoft CJIS](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## <a name="cjis-status-in-the-united-states"></a>Stato CJIS negli Stati Uniti
+## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>Stato CJIS negli Stati Uniti (corrente di 9/23/2019)
 
-36 gli Stati e il distretto di Columbia con i contratti di gestione, evidenziati sulla mappa in verde includono:
+37 gli Stati e il distretto di Columbia con i contratti di gestione, evidenziati sulla mappa in verde includono:
 
-Alabama, Alaska, Arkansas, Arizona, California, Colorado, Florida, Georgia, Hawaii, Illinois, indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Missouri, Montana, New Jersey, New York, Nevada, North Carolina, Oklahoma, Oregon, Pennsylvania, Rhode Island, Carolina del sud, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington D.C., West Virginia.
+Alabama, Alaska, Arkansas, Arizona, California, Colorado, Florida, Georgia, Hawaii, Illinois, indiana, Iowa, Kansas, Kentucky, Maine, Massachusetts, Michigan, Minnesota, Missouri, Montana, New Jersey, New York, Nevada, North Carolina, Oklahoma, Oregon, Pennsylvania, Rhode Island, Carolina del sud, Tennessee, Texas, Utah, Vermont, Virginia, Washington, Washington D.C., West Virginia, Wisconsin.
 
-L'impegno di Microsoft per soddisfare i controlli normativi applicabili di CJIS consente alle organizzazioni di giustizia penale di implementare soluzioni basate sul cloud ed essere conformi ai criteri di sicurezza di CJIS V 5.7.
+L'impegno di Microsoft per soddisfare i controlli normativi applicabili di CJIS consente alle organizzazioni di giustizia penale di implementare soluzioni basate sul cloud ed essere conformi ai criteri di sicurezza di CJIS V 5.8.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
