@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come configurare Microsoft 365 business.
-ms.openlocfilehash: 5986e3fb7786ebb3fa7bcf42b34345be98af44a2
-ms.sourcegitcommit: 9a057e70637dcfe06d4f729a96c02be989cf9e25
+ms.openlocfilehash: f269e970cc1ee5ba7455ea799b238db577116f09
+ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38633430"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704116"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Introduzione a Microsoft 365 Business
 
@@ -80,7 +80,6 @@ Se l'organizzazione utilizza Windows Server Active Directory in locale, è possi
   
 Se si conserva un Active Directory locale che contiene alcune risorse locali (ad esempio condivisioni di file e stampanti), è possibile consentire ai **dispositivi di Azure ad-join** di accedere a tali risorse attenendosi alla procedura seguente: [accedere alle risorse locali da un dispositivo di Azure ad-join in Microsoft 365 business](access-resources.md).
   
-Dopo aver configurato i PC con Windows 10, è possibile [installare automaticamente Office](auto-install-or-uninstall-office.md) nei dispositivi. 
   
 ## <a name="contact-support"></a>Contattare il supporto
 

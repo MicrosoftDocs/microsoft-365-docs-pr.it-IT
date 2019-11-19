@@ -7,18 +7,18 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: eec0243b7724eac852a9145a4e4fadcc13fae097
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
+ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627560"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38697159"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Preparare gli utenti a usare i dispositivi
 
 Una volta che un dispositivo Microsoft Managed Desktop è nelle mani dell'utente finale, la Guida introduttiva è semplice e veloce. I dispositivi vengono preconfigurati con la versione corrente di Windows e le configurazioni e le app vengono installate dal cloud Man mano che l'utente completa la configurazione. 
  
-Per renderlo ancora più semplice, offriamo una guida che consente di fare una passeggiata per gli utenti attraverso la configurazione iniziale e di fornire risorse di supporto sia per la configurazione che per l'utilizzo in un secondo momento, se necessario. È possibile personalizzare questa guida per includere alcuni dettagli specifici dell'organizzazione. È quindi possibile distribuire la guida direttamente agli utenti insieme al proprio dispositivo. Sono disponibili due versioni, una per le organizzazioni che utilizzano il sistema di supporto di Microsoft (l'app Get Help), una per coloro che forniscono il proprio supporto interno per gli utenti finali.
+Per renderlo ancora più semplice, offriamo una guida che consente di fare una passeggiata per gli utenti attraverso la configurazione iniziale e di fornire risorse di supporto sia per la configurazione che per l'utilizzo in un secondo momento, se necessario. È possibile personalizzare questa guida per includere alcuni dettagli specifici dell'organizzazione. È quindi possibile distribuire la guida direttamente agli utenti insieme al proprio dispositivo. Sono disponibili due versioni, una per le organizzazioni che utilizzano il sistema di supporto di Microsoft (l'app Get Help), una per coloro che forniscono supporto alternativo per gli utenti.
 
 ## <a name="to-prepare-the-guide"></a>Per preparare la guida
 
