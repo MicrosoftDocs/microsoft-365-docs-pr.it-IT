@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un team sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: f787951748cc1fb0b6b207b4b3aca0de1c29e3d7
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d875c3148a019774e038d18a75bb6fb2c2413463
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627500"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699766"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Team per dati altamente regolamentati
 
@@ -48,7 +48,7 @@ Ecco la configurazione risultante con un'etichetta di riservatezza.
 
 [![Poster Team per dati altamente regolamentati](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
-È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>Fase 1: Configurare un team per i dati altamente regolamentati
 
@@ -213,6 +213,10 @@ Nelle settimane successive alla formazione:
   È possibile vedere i file a cui è assegnata un'etichetta visualizzando una cartella in SharePoint e aggiungendo la colonna **Riservatezza** con l'opzione **Aggiungi colonna** in **Mostra/Nascondi colonne**.
 
 Ripetere la formazione degli utenti se necessario.
+
+## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Utilizzo di un team sicuro per un progetto interno di Contoso Corporation
+
+Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello internazionale. Usare l'esempio di Contoso per scoprire in che modo configurare e incoraggiare l'adozione di un [team sicuro](contoso-team-for-top-secret-project.md) per un progetto interno allo scopo di sviluppare e commercializzare un nuovo set di prodotti e servizi. 
 
 ## <a name="see-also"></a>Vedere anche
 

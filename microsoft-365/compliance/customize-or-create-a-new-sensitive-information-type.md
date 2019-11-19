@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Informazioni su come modificare o creare nuovi tipi di informazioni riservate di Office 365 per RGPD.
-ms.openlocfilehash: 264e310c019c47d1b3109b20fbdd61b323ec5530
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 81717e10de794f5ab5885470d0bcbcd795e43044
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083016"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38708132"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizzare o creare un nuovo tipo di informazione riservata
 
@@ -71,7 +71,7 @@ Per personalizzare un tipo di informazione riservata:
 
 7.  Caricare il nuovo tipo di informazione riservata.
 
-8.  Rieffettuare una ricerca per indicizzazione del contenuto per identificare l'informazione riservata. Vedere [Richiedere manualmente la ricerca per indicizzazione e la reindicizzazione di un sito](https://support.office.com/it-IT/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
+8.  Rieffettuare una ricerca per indicizzazione del contenuto per identificare l'informazione riservata. Vedere [Richiedere manualmente la ricerca per indicizzazione e la reindicizzazione di un sito](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>Esempio: modificare il tipo di informazione riservata "Numero di carta di debito dell'Unione Europea"
 
@@ -141,15 +141,15 @@ Potrebbe essere necessario creare query aggiuntive per trovare dati personali so
 
 Utilizzare queste risorse per formulare e ottimizzare query tramite KQL:
 
--   [Riferimenti per la sintassi (DMC) di Keyword Query Language (KQL)](https://docs.microsoft.com/it-IT/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   [Riferimenti per la sintassi (DMC) di Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Eseguire una Ricerca contenuto](https://support.office.com/it-IT/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Eseguire una Ricerca contenuto](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
-Ricerca contenuto fornisce un'altra risorsa che consente di sviluppare query KQL e tipi di informazioni riservate: le parole chiave. Perché utilizzare l'elenco delle parole chiave? È possibile ottenere le statistiche che mostrano quanti elementi corrispondo a ciascuna parola chiave. Questo può essere utile per trovare rapidamente le parole chiave più o meno efficaci. Per ulteriori informazioni sulle statistiche di ricerca, vedere [Visualizzare statistiche delle parole chiave per i risultati di Ricerca contenuto](https://support.office.com/it-IT/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+Ricerca contenuto fornisce un'altra risorsa che consente di sviluppare query KQL e tipi di informazioni riservate: le parole chiave. Perché utilizzare l'elenco delle parole chiave? È possibile ottenere le statistiche che mostrano quanti elementi corrispondo a ciascuna parola chiave. Questo può essere utile per trovare rapidamente le parole chiave più o meno efficaci. Per ulteriori informazioni sulle statistiche di ricerca, vedere [Visualizzare statistiche delle parole chiave per i risultati di Ricerca contenuto](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 
 Le parole chiave in ogni riga sono collegate dall'operatore OR nella query di ricerca creata. È inoltre possibile utilizzare una frase parola chiave (racchiusa tra parentesi) in una riga.
 
-Per ulteriori informazioni, vedere [Query delle parole chiave e condizioni di ricerca per ricerca contenuto](https://support.office.com/it-IT/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
+Per ulteriori informazioni, vedere [Query delle parole chiave e condizioni di ricerca per ricerca contenuto](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>Esempio: identificare indirizzi e-mail tramite Ricerca contenuto
 
@@ -374,7 +374,7 @@ Contoso fa sempre riferimento ai clienti utilizzando un CCN nella corrispondenza
 ```xml
 \<?xml version="1.0" encoding="utf-8"?\>
 
-\<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce"\>
+\<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce"\>
 
 \<RulePack id="130ae63b-a91e-4a12-9e02-a90e36a83d7f"\>
 

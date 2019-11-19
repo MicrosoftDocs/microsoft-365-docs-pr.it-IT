@@ -15,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Questa soluzione mostra come proteggere i dati riservati archiviati nei servizi di Office 365.
-ms.openlocfilehash: 6765a6dd389ad4b08bb6eaa74aac68381e0c5731
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9540eb41c6603a7ee09cb5499d09f464353d9fd9
+ms.sourcegitcommit: 4d9a075f4c890fa5bbd1751740a5540edbc1b999
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084452"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "38710062"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>Information Protection di Office 365 per GDPR
 
@@ -28,12 +28,12 @@ ms.locfileid: "37084452"
   
 Questa soluzione include suggerimenti prescrittivi per individuare, classificare, proteggere e monitorare i dati personali. Questa soluzione utilizza l'RGPD come esempio, ma è possibile applicare lo stesso processo per raggiungere la conformità con molti altri regolamenti.
 
-[![Immagine del cursore nel poster di Office 365 Information Protection per GDPR.](media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
+[![Immagine del cursore nel poster di Office 365 Information Protection per GDPR.](media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
 
-[PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)
+[PDF](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)
   
-Per informazioni sulle richieste DSR per il GDPR, vedere [Richieste dell'interessato per il GDPR in Office 365](https://docs.microsoft.com/microsoft-365/gdpr-dsr-office365?toc=/microsoft-365/enterprise/toc.json). 
+Per informazioni sulle richieste DSR per il GDPR, vedere [Richieste dell'interessato per il GDPR in Office 365](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365). 
 
 ## <a name="see-also"></a>Vedere anche
   
-[Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)

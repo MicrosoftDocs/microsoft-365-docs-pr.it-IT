@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un sito del team di SharePoint sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: cfa1f7d85f7dd4d20b293c73b0b8f7d8e2577d02
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: f8ccda85256e1f590f80a9302897e2950c59d154
+ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37929244"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38699746"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Siti di SharePoint per dati altamente regolamentati
 
@@ -72,7 +72,8 @@ Le fasi seguenti illustrano come progettare, configurare e facilitare l'adozione
 
 [![Poster Siti di SharePoint per dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
-È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+
 
 ## <a name="identity-and-device-access-prerequisites"></a>Prerequisiti di identità e accesso dei dispositivi
 
@@ -211,7 +212,7 @@ Ripetere la formazione degli utenti se necessario.
 
 I file altamente regolamentati vengono archiviati esclusivamente nei siti di SharePoint per dati altamente regolamentati e ai file più sensibili è applicata l'etichetta o la sottoetichetta di riservatezza per il sito.
 
-## <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Informazioni sulle modalità di distribuzione di Microsoft 365 Enterprise da parte di Contoso Corporation
+## <a name="how-the-contoso-corporation-used-a-sharepoint-site-for-highly-regulated-data"></a>Utilizzo di un sito di SharePoint per dati altamente regolamentati
 
 Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello internazionale. Vedere il modo in cui Contoso ha sviluppato, configurato e quindi ha guidato l'adozione di un [sito di SharePoint protetto](contoso-sharepoint-online-site-for-highly-confidential-assets.md) per i team di ricerca a Parigi, Mosca, New York, Pechino e Bengaluru. 
 

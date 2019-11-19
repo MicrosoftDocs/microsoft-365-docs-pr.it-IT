@@ -11,17 +11,18 @@ ms.collection:
 - Strat_O365_Enterprise
 - GDPR
 - M365-security-compliance
+- SPO_Content
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come usare i criteri DLP per proteggere i dati personali in Office 365.
-ms.openlocfilehash: f6d6d69f7c776b9b49ea360367117a9ce86293b2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083335"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38708139"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Applicare protezione ai dati personali in Office 365
 
@@ -41,7 +42,7 @@ Con DLP, è possibile:
 
 -   Visualizzare report DLP che indicano i contenuti corrispondenti ai criteri DLP dell'organizzazione.
 
-Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita dei dati](https://support.office.com/it-IT/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
+Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita dei dati](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
 ![Opzioni per la creazione del criterio DLP](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -79,7 +80,7 @@ L'elenco seguente elenca tre configurazioni per aumentare la protezione con DLP.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Riconoscimento</td>
+<td align="left">Informazioni sulla presenza</td>
 <td align="left"><p>Inviare notifiche tramite posta elettronica ai team di conformità quando questi dati vengono individuati nei documenti su SharePoint Online e OneDrive for Business.</p>
 <p>Personalizzare e mostrare suggerimenti per i criteri ai dipendenti in SharePoint e OneDrive for Business quando si accede ai documenti contenenti questi dati.</p>
 <p>Rilevare e segnalare quando questi dati vengono condivisi.</p></td>
@@ -142,7 +143,7 @@ Descrizione: visualizzare suggerimenti per i criteri ai dipendenti, informare i 
 <tr class="odd">
 <td align="left">Comunicare agli utenti quando il contenuto corrisponde alle impostazioni dei criteri</td>
 <td align="left"><p>Selezionare questa casella ("Mostra suggerimenti per i criteri agli utenti e invia loro una notifica tramite posta elettronica").</p>
-<p>Fare clic su "Personalizza suggerimento e messaggio di posta elettronica" e aggiornali per il proprio ambiente. Vedere le notifiche predefinite in questo articolo: <a href="https://support.office.com/it-IT/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Invio di notifiche tramite posta elettronica e visualizzazione dei suggerimenti per i criteri per i criteri DLP</a>.</p></td>
+<p>Fare clic su "Personalizza suggerimento e messaggio di posta elettronica" e aggiornali per il proprio ambiente. Vedere le notifiche predefinite in questo articolo: <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Invio di notifiche tramite posta elettronica e visualizzazione dei suggerimenti per i criteri per i criteri DLP</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Rilevare quando una determinata quantità di informazioni riservata viene condivisa in una sola volta</td>
@@ -176,14 +177,14 @@ Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni
 <table>
 <thead>
 <tr class="header">
-<th align="left">Ambito della protezione<strong></th>
+<th align="left"><strong>Ambito della protezione</strong></th>
 <th align="left"><strong>Funzionalità</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">Protezione a livello di posta elettronica e documento (include posta in transito, ma non le cassette postali inattive al momento)</td>
-<td align="left"><p>Tipi di informazioni sensibili</p>
+<td align="left"><p>Tipi di informazioni riservate</p>
 <p>Etichette di Office</p>
 <p>Criteri di prevenzione della perdita dei dati</p>
 <p>Crittografia dei messaggi di Office 365</p></td>
@@ -300,7 +301,7 @@ Nella tabella riportata di seguito vengono riassunti i controlli che è possibil
 
 Ulteriori informazioni:
 
--   [Gestire la condivisione esterna per l'ambiente di SharePoint Online](https://support.office.com/it-IT/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [Gestire la condivisione esterna per l'ambiente di SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 -   [Condividere siti o documenti con utenti esterni alla propria organizzazione](https://support.office.com/it-IT/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
@@ -351,7 +352,7 @@ I criteri di accesso ai dispositivi per SharePoint e OneDrive for Business richi
 </tbody>
 </table>
 
-Altre informazioni: [Interfaccia di amministrazione di SharePoint Online: controllare l'accesso da dispositivi non gestiti](https://support.office.com/it-IT/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
+Altre informazioni: [Interfaccia di amministrazione di SharePoint Online: controllare l'accesso da dispositivi non gestiti](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>Protezione dell'accesso al servizio per identità e dispositivi
 
@@ -359,9 +360,9 @@ Microsoft consiglia di configurare la protezione per identità e dispositivi che
 
 La protezione dell'accesso per identità e dispositivi offre un livello di protezione di base per garantire che le identità non siano compromesse, i dispositivi siano sicuri e i dati dell'organizzazione aperti sui dispositivi siano isolati e protetti.
 
-Per suggerimenti iniziali e indicazioni sulla configurazione, vedere [Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazioni Agile](https://docs.microsoft.com/it-IT/microsoft-365-enterprise/microsoft-security-guidance).
+Per suggerimenti iniziali e indicazioni sulla configurazione, vedere [Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazioni Agile](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
-Per ambienti con identità ibride con AD FS, vedere [Configurazioni e criteri di sicurezza consigliati](https://docs.microsoft.com/it-IT/microsoft-365-enterprise/microsoft-security-guidance).
+Per ambienti con identità ibride con AD FS, vedere [Configurazioni e criteri di sicurezza consigliati](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
 La seguente illustrazione descrive il modo in cui si relazionano i servizi cloud (SaaS, PaaS), i tipi di account (account del dominio tenant vs account B2B) e le funzionalità di accesso al servizio. È importante notare quali funzionalità possono essere usate con gli account B2B.
 

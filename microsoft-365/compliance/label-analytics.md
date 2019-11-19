@@ -1,7 +1,7 @@
 ---
 title: Visualizzare l'utilizzo delle etichette con Analisi delle etichette
-ms.author: stephow
-author: stephow-MSFT
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dopo aver creato le etichette di conservazione e le etichette di riservatezza, è opportuno verificare l'utilizzo nel tenant. Con Analisi delle etichette, disponibile nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365, è possibile visualizzare rapidamente le etichette usate più di frequente e sapere dove vengono applicate.
-ms.openlocfilehash: 297987d420b5ed05bf4fdeb86513bc7c4ddec609
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 45cebbe67a773b76289920554d4e39fcbce789cc
+ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083730"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38710070"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Visualizzare l'utilizzo delle etichette con Analisi delle etichette
 
@@ -38,9 +38,9 @@ La funzionalità Analisi delle etichette è disponibile nel [Centro conformità 
 
 ## <a name="sensitivity-label-usage"></a>Utilizzo dell'etichetta di riservatezza
 
-I dati relativi all'utilizzo dell'etichetta di riservatezza vengono estratti dai report di Azure Information Protection. Per altre informazioni, vedere [Reporting centralizzato per Azure Information Protection](https://docs.microsoft.com/it-IT/azure/information-protection/reports-aip).
+I dati relativi all'utilizzo dell'etichetta di riservatezza vengono estratti dai report di Azure Information Protection. Per altre informazioni, vedere [Reporting centralizzato per Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
-Tenere presente che i [prerequisiti](https://docs.microsoft.com/it-IT/azure/information-protection/reports-aip#prerequisites-for-azure-information-protection-analytics) dei report di Azure Information Protection si applicano anche ad Analisi delle etichette per le etichette di riservatezza nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365. È ad esempio necessaria una sottoscrizione di Azure che include Log Analytics perché questi report vengono generati in seguito all'invio di eventi di controllo per la protezione delle informazioni da client e scanner di Azure Information Protection a una posizione centralizzata basata sul servizio Azure Log Analytics.
+Tenere presente che i [prerequisiti](/azure/information-protection/reports-aip#prerequisites) dei report di Azure Information Protection si applicano anche ad Analisi delle etichette per le etichette di riservatezza nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365. È ad esempio necessaria una sottoscrizione di Azure che include Log Analytics perché questi report vengono generati in seguito all'invio di eventi di controllo per la protezione delle informazioni da client e scanner di Azure Information Protection a una posizione centralizzata basata sul servizio Azure Log Analytics.
 
 Per l'utilizzo delle etichette di riservatezza:
 
@@ -97,5 +97,5 @@ Per visualizzare l'analisi delle etichette, è necessario disporre di uno dei ru
 - Amministratore della sicurezza
 - Ruolo con autorizzazioni di lettura per la sicurezza
 
-Con questi report viene inoltre usato Monitoraggio di Azure per archiviare i dati in un'area di lavoro Log Analytics di proprietà dell'organizzazione. È quindi opportuno aggiungere l'utente come lettore all'area di lavoro di Monitoraggio di Azure in cui sono archiviati i dati. Per altre informazioni, vedere [Autorizzazioni necessarie per la funzionalità di analisi di Azure Information Protection](https://docs.microsoft.com/it-IT/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
+Con questi report viene inoltre usato Monitoraggio di Azure per archiviare i dati in un'area di lavoro Log Analytics di proprietà dell'organizzazione. È quindi opportuno aggiungere l'utente come lettore all'area di lavoro di Monitoraggio di Azure in cui sono archiviati i dati. Per altre informazioni, vedere [Autorizzazioni necessarie per la funzionalità di analisi di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
 

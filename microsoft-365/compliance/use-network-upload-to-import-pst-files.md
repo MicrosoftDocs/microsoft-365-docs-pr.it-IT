@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Per gli amministratori: informazioni su come usare il caricamento in rete per importare più file PST in blocco nelle cassette postali degli utenti in Office 365.'
-ms.openlocfilehash: a11bd934cf45a8f90ae7f558814a1b6d9e839914
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8596108902cadd82cbab4bd128d457858b5c63c3
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084891"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38710074"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Usare il caricamento in rete per importare file PST dell'organizzazione in Office 365
 
@@ -127,11 +127,11 @@ A questo punto, è possibile usare lo strumento AzCopy.exe per caricare i file P
     
 3. Eseguire il comando seguente per caricare i file su Office 365.
 
-    ```
+    ```powershell
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
   
     ```
- 
+
     > [!IMPORTANT] 
     > Specificare una directory come percorso di origine nel comando precedente. Non è possibile specificare un file PST singolo. Tutti i file PST nella directory di origine verranno caricati.
  
@@ -147,9 +147,8 @@ A questo punto, è possibile usare lo strumento AzCopy.exe per caricare i file P
    
 Di seguito è riportato un esempio di sintassi dello strumento AzCopy.exe nella quale verranno utilizzati i valori effettivi di ogni parametro:
     
-```
+```powershell
   AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
-  
 ```
 
 Dopo aver eseguito il comando, vengono visualizzati messaggi di stato che indicano lo stato di avanzamento del caricamento dei file PST. Un messaggio di stato finale mostra il numero totale di file caricati correttamente. 
@@ -200,8 +199,7 @@ Una volta caricati i file PST nel percorso di Archiviazione di Azure per l'organ
     
 2. Aprire o salvare il file CSV nel computer locale. Nell'esempio seguente viene visualizzato un file di mapping di importazione PST completo (aperto nel Blocco note). È molto più facile usare Microsoft Excel per modificare il file CSV.
 
-
-    ```
+    ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -214,6 +212,7 @@ Una volta caricati i file PST nel percorso di Archiviazione di Azure per l'organ
     Exchange,PSTFiles,zrinkam.pst,zrinkam@contoso.onmicrosoft.com,FALSE,,,,,
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
+    
     Nella prima riga o in quella dell'intestazione del file CSV vengono elencati i parametri che verranno usati dal servizio di importazione PST per importare i file PST nelle cassette postali dell'utente. Ogni nome di parametro è separato da una virgola. Ogni riga al di sotto di quella dell'intestazione riporta i valori del parametro che consentono di importare un file PST in una cassetta postale specifica. È necessaria una riga per ogni file PST da importare nella cassetta postale di un utente. Assicurarsi di sostituire i dati segnaposto nel file di mapping con i dati effettivi.
 
    **Nota:** non apportare modifiche nella riga di intestazione, compresi i parametri SharePoint. Questi verranno ignorati durante il processo di impostazione PST. 
@@ -354,7 +353,7 @@ Di seguito viene riportata un'illustrazione e una descrizione del processo di ca
   
 - Ecco un esempio di URL della firma di accesso condiviso ottenuto nel passaggio 1. L'esempio include anche la sintassi del comando che si esegue nello strumento AzCopy.exe per caricare i file PST su Office365. Assicurarsi di adottare alcune precauzioni per proteggere l'URL della firma di accesso condiviso, come si farebbe con le password o altre informazioni correlate alla sicurezza.
 
-    ```
+    ```text
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
