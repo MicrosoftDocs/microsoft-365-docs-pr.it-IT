@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 'Informazioni su come configurare i dispositivi Windows che eseguono Windows 10 Pro per gli utenti aziendali di Microsoft 365. '
-ms.openlocfilehash: 7b6fa2ce3243500c3ddcff7883fa9d8da27dcf86
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: f929c64b00e4ebf24e9f82fcfea433119abf2f1c
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575569"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718880"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurare i dispositivi Windows per utenti di Microsoft 365 Business
 
@@ -41,7 +41,7 @@ Vedere [verificare che il dispositivo sia connesso a Azure](#verify-the-device-i
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Unire i dispositivi Windows 10 a Azure AD dell'organizzazione.
 
-Dopo aver eseguito l'aggiornamento a Windows 10 Pro Creators Update di tutti i dispositivi nell'organizzazione (oppure se già lo eseguono), è possibile unirli a Azure Active Directory dell'organizzazione. Dopo aver unito i dispositivi, questi verranno automaticamente aggiornati a Windows 10 Business, che fa parte dell'abbonamento a Microsoft 365 Business.
+Quando tutti i dispositivi Windows nell'organizzazione sono stati aggiornati a Windows 10 Pro Creators Update o sono già in esecuzione l'aggiornamento di Windows 10 Pro Creator, è possibile aggiungere questi dispositivi a Azure Active Directory dell'organizzazione. Una volta che i dispositivi sono Stati Uniti, verranno aggiornati automaticamente a Windows 10 business, che fa parte dell'abbonamento a Microsoft 365 business.
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>Per un dispositivo Windows 10 Pro nuovo o appena aggiornato
 
@@ -89,7 +89,7 @@ Per un nuovo dispositivo che esegue Windows 10 Pro Creators Update oppure appena
   
    ![On the Make sure this is your organization screen, click Join](media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
-Se sono stati caricati file in OneDrive for Business, sincronizzarli nuovamente. Se è stato usato uno strumento di terze parti per eseguire la migrazione del profilo e dei file, sincronizzare anch'essi con il nuovo profilo.
+Se sono stati caricati file in OneDrive for Business, sincronizzarli nuovamente. Se è stato utilizzato uno strumento di terze parti per eseguire la migrazione di profili e file, sincronizzarli anche con il nuovo profilo.
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Verificare che il dispositivo sia connesso a Azure AD
 
@@ -97,7 +97,7 @@ Per verificare lo stato della sincronizzazione, nella pagina **Accedi all'aziend
   
 Nella pagina Stato sincronizzazione fare clic su Sincronizza per ottenere i criteri di gestione più recenti per i dispositivi mobili nel PC.
   
-Per iniziare a usare l'account di Microsoft 365 Business, passare al pulsante **Start** di Windows, fare clic con il pulsante destro del mouse sull'immagine dell'account corrente e quindi scegliere **Cambia account**. Accedere usando l'indirizzo di posta elettronica e la password della propria organizzazione.
+Per iniziare a usare l'account Microsoft 365 business, passare al pulsante **Start** di Windows, fare clic con il tasto destro del mouse sull'immagine corrente dell'account e quindi **cambiare account**. Accedere usando l'indirizzo di posta elettronica e la password della propria organizzazione.
   
 ![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
   

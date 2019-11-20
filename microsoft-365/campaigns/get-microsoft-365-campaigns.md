@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Ottenere Microsoft 365 per le campagne in modo da poter proteggere la propria campagna dalle minacce di Cybersecurity a posta elettronica, dati e comunicazioni.
-ms.openlocfilehash: 0e038f3b33db957d3503ee091b075b767c30eeda
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 96c86c3cbd942e0ffe31cfdf29a216c63c52bfc4
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772513"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748267"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Ottenere Microsoft 365 per le campagne
 
@@ -41,7 +41,7 @@ Se non si è idonei per i prezzi speciali, Microsoft 365 business è ancora il m
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Che cosa include Microsoft 365 per le campagne?
 Questa configurazione di Microsoft 365 business include controlli semplici che consentono all'utente e al personale di collaborare in modo sicuro: 
 - **Proteggere l'identità dell'utente**: assicurarsi che gli utenti siano quelli che dicono di essere quando accedono per inviare messaggi di posta elettronica o per accedere ai file (autenticazione a più fattori).
-- **Proteggere le**informazioni riservate: proteggere le informazioni riservate per monitorare le informazioni che vengono condivise all'esterno dell'organizzazione (prevenzione della perdita di dati).
+- **Proteggere le informazioni riservate**: proteggere le informazioni riservate per monitorare le informazioni che vengono condivise all'esterno dell'organizzazione (prevenzione della perdita di dati).
 - **Proteggi i dispositivi mobili**: Proteggi i dati nei dispositivi mobili (criteri di protezione delle app per dispositivi mobili).
 - **Proteggi da contenuti dannosi**: Impedisci l'accesso a contenuti dannosi tramite analisi degli allegati di posta elettronica (Advanced Threat Protection).
 - **Protezione delle password**: impostare le password in modo che non scadano più sicure e che contribuiscano a impedire interruzioni del lavoro (criteri password). 

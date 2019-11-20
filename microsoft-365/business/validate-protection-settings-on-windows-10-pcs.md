@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Informazioni su come convalidare le impostazioni di protezione delle app di Microsoft 365 in dispositivi Windows 10.
-ms.openlocfilehash: 7710accf9a3cd1db788dd5215ab6d7bbb97e48a6
-ms.sourcegitcommit: 66bb5af851947078872a4d31d3246e69f7dd42bb
+ms.openlocfilehash: c54b053c1f6efbca8fd02431c416793a044c6821
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34074381"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38721861"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Verificare le impostazioni di protezione delle app nei PC Windows 10
 
 ## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a>Verificare che gli utenti non possano copiare i dati aziendali in file personali sui dispositivi aziendali
 
-Dopo aver [configurato i criteri di protezione delle app](protection-settings-for-windows-10-devices.md), possono essere necessarie alcune ore prima che i criteri siano applicati ai dispositivi degli utenti. Se è stata **attivata** l'impostazione **Impedisci agli utenti di copiare dati aziendali in file personali e forzali a salvare i file di lavoro in OneDrive for Business** per i dispositivi di proprietà dell'azienda, è possibile eseguire questo controllo nel dispositivo dell'utente dopo che si è connesso ad Azure Active Directory e ha eseguito l'accesso. 
+Dopo aver [configurato i criteri di protezione delle app](protection-settings-for-windows-10-devices.md), possono essere necessarie alcune ore prima che i criteri siano applicati ai dispositivi degli utenti. Se è stata **attivata l'** opzione **Impedisci agli utenti di copiare i dati dell'azienda in file personali e forzarli a salvare i file di lavoro in OneDrive for business** per i dispositivi di proprietà della società, è possibile controllare questo sul dispositivo dell'utente dopo che è stato connesso a Azure ad e che è stato eseguito l'accesso. 
   
  **Verificare le impostazioni di connessione**
   
@@ -38,11 +38,11 @@ Dopo aver [configurato i criteri di protezione delle app](protection-settings-fo
     
     ![Click or tap Info on the Connected to Azure AD dialog.](media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. Nella pagina **Gestito da** \<nome tenant\> è possibile visualizzare le **Informazioni di connessione** che includono un **Indirizzo server di gestione** come quello visualizzato nella figura seguente. 
+2. Nella pagina **gestito da** \<nome\> tenant, è possibile visualizzare le **informazioni di connessione** che includono un **indirizzo del server di gestione** come quello illustrato nella figura seguente. 
     
     ![Managed by page shows connection info of the device manager URL.](media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
- **Verificare che non sia possibile incollare dati aziendali in un'app non gestita**
+ **Verificare che non sia possibile incollare i dati della società in un'app non gestita**
   
 1. Aprire Outlook 2016 installato da Microsoft 365 Business.
     
@@ -50,7 +50,7 @@ Dopo aver [configurato i criteri di protezione delle app](protection-settings-fo
     
     Aprire Blocco note e provare a incollare il contenuto.
     
-    Si riceverà un messaggio di errore che indica che l'app non può accedere al contenuto.
+    Verrà visualizzato un messaggio di errore che indica che l'app non può accedere al contenuto.
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
@@ -60,7 +60,7 @@ Dopo aver [configurato i criteri di protezione delle app](protection-settings-fo
 
  **Verificare le impostazioni di connessione**
   
-1. Nel dispositivo personale Windows 10 in cui si è connessi come utente locale, passare a **Impostazioni di Windows** e fare clic o toccare **Account** \> **Accedi all'azienda o all'istituto di istruzione**.
+1. Nel dispositivo personale Windows 10 in cui si è connessi come utenti locali, andare a impostazioni di **Windows**, quindi fare clic o toccare **account** \> **o accedere a School**.
     
 2. Scegliere **Connetti** in **Accedi all'azienda o all'istituto di istruzione**.
     
@@ -68,13 +68,13 @@ Dopo aver [configurato i criteri di protezione delle app](protection-settings-fo
     
 4. Nella pagina **Accedi all'azienda o all'istituto di istruzione** scegliere **Account aziendale o dell'istituto di istruzione**, quindi scegliere **Informazioni**.
     
-    ![Click or tap Info on the Work or school account dalog.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![Fare clic o toccare informazioni nella finestra di dialogo account aziendale o dell'Istituto di istruzione.](media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
-5. Nella pagina **Accedi all'azienda o all'istituto di istruzione** è possibile visualizzare le **Informazioni di connessione** che includono un **Indirizzo server di gestione** come quello visualizzato nella figura seguente e le parole  *wip*  e  *mam*  . 
+5. Nella pagina **accesso al lavoro o all'Istituto di istruzione** , è possibile visualizzare le **informazioni di connessione** che includono un indirizzo del **server di gestione** come quello illustrato nella figura seguente e include le parole *WIP* e *Mam* all'interno. 
     
     ![Managed by page shows connection info URL that includes the words mam and wpi.](media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
- **Verificare che non sia possibile incollare dati aziendali in un'app non gestita**
+ **Verificare che non sia possibile incollare i dati della società in un'app non gestita**
   
 1. Aprire Outlook 2016 e aggiungere l'account di Microsoft 365 Business, se necessario, quindi accedere con le credenziali di Microsoft 365 Business.
     
@@ -82,7 +82,7 @@ Dopo aver [configurato i criteri di protezione delle app](protection-settings-fo
     
     Aprire Blocco note e provare a incollare il contenuto.
     
-    Si riceverà un messaggio di errore che indica che l'app non può accedere al contenuto.
+    Verrà visualizzato un messaggio di errore che indica che l'app non può accedere al contenuto.
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   

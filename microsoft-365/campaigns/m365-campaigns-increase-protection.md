@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Ottenere assistenza per aumentare il livello di protezione in Microsoft 365 business
-ms.openlocfilehash: 9b17af7f6dde321fb8da758f0cc8223e5f488121
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: ce37f6d31037c442d6cabd6adc07f5f0138add54
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676104"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748307"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
 In questo articolo vengono fornite informazioni utili per aumentare la protezione dell'abbonamento a Microsoft 365 per proteggersi da tentativi di phishing, malware e altre minacce. Tali raccomandazioni sono appropriate per le organizzazioni con un maggiore bisogno di sicurezza, come campagne politiche, studi legali e cliniche sanitarie. 
 
-Prima di iniziare, controllare il Punteggio di Office 365 Secure score. Office 365 Secure Score analizza la sicurezza dell'organizzazione di Office 365 in base alle normali attività e alle impostazioni di sicurezza e assegna un punteggio. Iniziare prendendo nota del punteggio corrente. L'esecuzione delle azioni consigliate in questo articolo aumenta il punteggio. L'obiettivo non è quello di ottenere il punteggio massimo, ma di essere a conoscenza delle opportunità di protezione dell'ambiente che non influiscono negativamente sulla produttività per gli utenti. 
+Prima di iniziare, controllare il Punteggio di Office 365 Secure score. Office 365 Secure Score analizza la sicurezza dell'organizzazione di Office 365 in base alle normali attività e alle impostazioni di sicurezza e assegna un punteggio. Iniziare prendendo nota del punteggio corrente. L'esecuzione delle azioni consigliate in questo articolo aumenta il punteggio. L'obiettivo non è quello di raggiungere il punteggio massimo, ma di essere a conoscenza delle opportunità di protezione dell'ambiente che non influiscono negativamente sulla produttività per gli utenti. 
 
 Per ulteriori informazioni, vedere [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
@@ -59,11 +59,11 @@ Per ulteriori informazioni, vedere [anti-malware Protection](https://go.microsof
 
 ## <a name="protect-against-ransomware"></a>Protezione da ransomware
 
-Ransomware limita l'accesso ai dati crittografando i file o bloccando gli schermi del computer. Tenta quindi di estorcere denaro dalle vittime chiedendo "Ransom", generalmente in forma di cryptocurrencies come Bitcoin, in Exchange per l'accesso ai dati. 
+Ransomware limita l'accesso ai dati crittografando i file o bloccando gli schermi del computer. Tenta quindi di estorcere denaro dalle vittime chiedendo "riscatto", di solito in forma di cryptocurrencies come Bitcoin, in Exchange per l'accesso ai dati. 
   
 È possibile proteggere contro ransomware creando una o più regole del flusso di posta per bloccare le estensioni di file comunemente utilizzate per ransomware (queste sono state aggiunte nell' [aumento del livello di protezione da malware in mail](#raise-the-level-of-protection-against-malware-in-mail) Step) oppure per avvisare gli utenti che ricevono questi allegati nella posta elettronica.
 
-Oltre ai file bloccati nel passaggio precedente, è inoltre consigliabile creare una regola per avvisare gli utenti prima di aprire allegati di file di Office che includono macro. Il ransomware può essere nascosto all'interno delle macro, quindi gli utenti non possono aprire questi file dalle persone che non conoscono.
+Oltre ai file bloccati nel passaggio precedente, è buona norma creare una regola per avvisare gli utenti prima di aprire gli allegati di file di Office che includono macro. Ransomware può essere nascosto all'interno delle macro, quindi avvisa gli utenti di non aprire questi file da persone che non conoscono.
 
 Per creare una regola di trasporto della posta:
   
@@ -128,7 +128,6 @@ Se sono stati configurati uno o più domini personalizzati per l'ambiente Office
   
 Si consiglia di iniziare a utilizzare questa protezione creando un criterio per proteggere gli utenti più importanti e il dominio personalizzato. 
 
-  
 Per creare un criterio di anti-phishing ATP, guardare [questo breve video di formazione](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)o completare i passaggi seguenti:
   
 1. Passare a [https://protection.office.com](https://protection.office.com). 
@@ -139,7 +138,7 @@ Per creare un criterio di anti-phishing ATP, guardare [questo breve video di for
     
 4. Nella pagina **anti-phishing** selezionare **+ Crea**. Viene avviata una procedura guidata che consente di definire i criteri di anti-phishing.
     
-5. Specificare il nome, la descrizione e le impostazioni del criterio come consigliato nel grafico riportato di seguito. Per ulteriori informazioni, vedere informazioni [sulle opzioni relative ai criteri di anti-phishing ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) . 
+5. Specificare il nome, la descrizione e le impostazioni del criterio come consigliato nel grafico riportato di seguito. Per ulteriori informazioni, vedere informazioni [sulle opzioni dei criteri di anti-phishing ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies). 
     
 6. Dopo aver esaminato le impostazioni, fare clic su **crea questo criterio** o su **Salva**, a seconda dei casi.
     
@@ -161,7 +160,7 @@ Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP d
 
 ![Banner che puntano https://aka.ms/aboutM365previewa.](../business/media/m365admincenterchanging.png)
 
-In primo luogo, assicurarsi che, nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> amministrazione, sia attivata la nuova anteprima dell'interfaccia di amministrazione. attiva l'interruttore accanto al testo **del nuovo**interfaccia di amministrazione.
+Prima di tutto, assicurarsi <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> che nell'interfaccia di amministrazione si sia attivata la nuova anteprima dell'interfaccia di amministrazione. Attiva l'interruttore accanto al testo **del nuovo**interfaccia di amministrazione.
 
    ![Nuova anteprima dell'interfaccia di amministrazione.](media/previewon.png)
 
@@ -172,11 +171,11 @@ Se la pagina di **installazione** non è ancora visualizzata con le schede del t
     ![Scegliere View per aumentare la protezione dalle minacce avanzate.](media/startatp.png) 
 
 3. Nella pagina **aumenta protezione dalle minacce avanzate** scegliere **inizia**.
-4. Nel riquadro che si apre, selezionare le caselle di controllo accanto a **collegamenti e allegati in messaggi di posta elettronica**, **analizzare file in SharePoint, OneDrive e team**e **analizzare i collegamenti nelle app desktop e Office Online di Office** in **elementi di analisi per contenuti dannosi**.
+4. Nel riquadro che si apre, selezionare le caselle di controllo accanto a **collegamenti e allegati di posta elettronica**, **analizzare i file in SharePoint, OneDrive e teams**e **analizzare i collegamenti in Office Desktop e Office Online Apps** in **analisi elementi per contenuti dannosi**.
 
       - In **collegamenti e allegati di posta elettronica**, digitare tutti gli utenti o gli utenti specifici di cui si desidera analizzare la posta elettronica.
 
-    ![Controllare tutte le caselle di controllo in aumentare la protestazione dalle minacce avanzate.](media/setatp.png)
+    ![Selezionare tutte le caselle di controllo in aumenta protezione dalle minacce avanzate.](media/setatp.png)
 5. Scegliere **create Policy** per abilitare gli allegati sicuri di ATP e i collegamenti sicuri ATP.
 
 ### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>Configurare gli allegati sicuri di ATP nel centro sicurezza & Compliance
@@ -288,9 +287,9 @@ Nella figura seguente vengono illustrati i criteri predefiniti inclusi in Micros
 
 È possibile impedire agli utenti dell'organizzazione di condividere i propri calendari oppure è possibile gestire anche ciò che può essere condiviso. Ad esempio, è possibile limitare la condivisione solo ai tempi di disponibilità.
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> Accedere all'interfaccia di amministrazione e scegliere servizi di **Impostazioni** \> **& componenti** aggiuntivi
+1. Accedere all' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> interfaccia di amministrazione e scegliere servizi di **Impostazioni** \> **& i componenti**aggiuntivi.
 2. Nella pagina **servizi & componenti** aggiuntivi scegliere **Calendario**e scegliere se gli utenti dell'organizzazione possono condividere i propri calendari con utenti esterni che dispongono di Office 365 o Exchange o con chiunque. 
-    Se si sceglie la condivisione con tutti gli utenti, è possibile decidere di condividere solo le informazioni sulla disponibilità.
+    Se si sceglie l'opzione Condividi con tutti gli utenti, è possibile decidere di condividere solo le informazioni sulla disponibilità.
 
 3. Scegliere **Salva modifiche** nella parte inferiore della pagina.
 

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare l'autenticazione a più fattori per Microsoft 365 business.
-ms.openlocfilehash: 3aa08670551da3754784237e14a35e94c6f64250
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 59a3ff7a9494ccfc44fa701c6f605a9bd9eeafcf
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575624"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715058"
 ---
 # <a name="multi-factor-authentication"></a>Autenticazione a più fattori
 
@@ -31,7 +31,7 @@ L'autenticazione a più fattori richiede agli utenti di accedere con un secondo 
 
 ## <a name="set-up-mfa-in-the-microsoft-365-admin-center"></a>Configurare il master nell'interfaccia di amministrazione di Microsoft 365
 
-[![Label che consente di sapere che l'interfaccia di amministrazione sta cambiando ed è possibile trovare ulteriori dettagli su aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali di amministratore globale. 
 2. Sul NAV sinistro, scegliere **Setup**.
@@ -40,4 +40,4 @@ L'autenticazione a più fattori richiede agli utenti di accedere con un secondo 
 
   :::image type="content" source="media/turnonmfa.png" alt-text="Schermata di attiva pagina di attivazione dell'AMF.":::
 
-5. Nel pannello **sicurezza di accesso** per la forza, controllare entrambi o uno dei **richiede l'autenticazione a più fattori per gli amministratori**, quindi scegliere **Crea criterio**.
+5. Nel pannello **sicurezza di accesso rinforzare** , controllare entrambi o uno di **richiedere l'autenticazione a più fattori per gli amministratori**, quindi scegliere **create Policy**.

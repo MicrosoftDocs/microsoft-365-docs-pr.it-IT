@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 11cbdaf47e06536afd996fd41c3ea603967e2685
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 64b5ffab59b19945b20bc614f09963ca43027afe
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640348"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715508"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop 
 
@@ -20,7 +20,7 @@ Per ulteriori informazioni su Microsoft Managed Desktop, vedere [documentazione 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere uno dei modelli seguenti e soddisfare o superare le specifiche elencate per la RAM, la famiglia di processori e lo spazio su disco. Non sono supportate altre personalizzazioni.
+Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere uno dei modelli seguenti e soddisfare o superare le specifiche elencate per la RAM, la famiglia di processori e lo spazio su disco. 
 
 I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si desidera ordinare i dispositivi, utilizzare i contatti del canale commerciale per assicurarsi di scegliere le configurazioni corrette. In questa tabella la *Data di archiviazione* è la data in cui questi modelli saranno soggetti a una più breve durata del servizio Microsoft Managed Desktop; Tutti questi dispositivi onboarded dopo questa data non riceveranno un termine completo di tre anni di supporto da Microsoft Managed Desktop. I dispositivi archiviati sono elencati anche nei [dispositivi archiviati di Microsoft Managed Desktop](archived-device-list.md). *Data di pensionamento* è la data in cui questo modello non sarà più supportato da Microsoft Managed Desktop. A tale data, tutti i dispositivi registrati di questo modello verranno rimossi da Microsoft Managed Desktop, indipendentemente dal momento in cui sono stati registrati.
 
@@ -41,7 +41,7 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 | [PC notebook HP EliteBook 830/840/850 G6](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario | Nov 30, 2020 | Nov 30, 2023 |
 | [PC notebook HP EliteBook X360 830 G6](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario | Nov 30, 2020 | Nov 30, 2023 |
 | [HP Elite X2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS03AV, videocamera IR necessaria | 14 maggio 2020 | 14 maggio 2023 |
-| [HP EliteBook X360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 56 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria | 14 maggio 2020 | 14 maggio 2023 |
+| [HP EliteBook X360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria | 14 maggio 2020 | 14 maggio 2023 |
 | [HP EliteBook X360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria | 23 ottobre 2020 | 23 ottobre 2023 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV | 18 luglio 2020 | 18 luglio 2023 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB/Intel i3/8 GB di RAM | SKU con 5VS04AV | 18 luglio 2020 | 18 luglio 2023 |

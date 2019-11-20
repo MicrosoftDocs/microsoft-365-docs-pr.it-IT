@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: 'Informazioni su come usare Microsoft 365 business to Factory reimpostare i dispositivi Windows 10. '
-ms.openlocfilehash: 70e4fac2112db177587c04f58fbe8f8d0247ffa9
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 867b87b488ec13c7b84a9eb810a076fbb6da545d
+ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575719"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38715163"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Ripristinare le impostazioni del produttore per i dispositivi Windows 10
 
-[![Label che consente di sapere che l'interfaccia di amministrazione sta cambiando ed è possibile trovare ulteriori dettagli su aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Il ripristino delle impostazioni predefinite ripristina le impostazioni originali di un dispositivo, ossia quelle disponibili al momento dell'acquisto. Tutte le app e i dati aggiunti nel dispositivo dopo l'acquisto vengono rimossi. È possibile usare Microsoft 365 Business per eseguire un ripristino delle impostazioni predefinite dei dispositivi Windows 10 gestiti.
   
-1. Accedere all'interfaccia di amministrazione all' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>indirizzo.. 
+1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
 2. Nella barra di spostamento a sinistra, scegliere **gestione** **dispositivi** \> .
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Learn how to validate the Microsoft 365 Business app protection settings in your Android or iOS devices.
-ms.openlocfilehash: 309dbf5bdba81bbf8ad0a9707c136a03c4a28586
-ms.sourcegitcommit: bd52f7b662887f552f90c46f69d6a2a42fb66914
+ms.openlocfilehash: 3879084b42e8c00cc4abcd86c1a3d6761c0697a6
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37575529"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718900"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Convalidare le impostazioni di protezione delle app nei dispositivi Android o iOS
 
@@ -33,15 +33,15 @@ Seguire le istruzioni riportate nelle sezioni seguenti per convalidare le impost
   
 ## <a name="android"></a>Android
   
-### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>Verificare che le impostazioni di protezione delle app funzionino nei dispositivi degli utenti
+### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>Verificare che le impostazioni di protezione delle app funzionino sui dispositivi utente
 
 Dopo avere [impostato le configurazioni delle app per dispositivi Android](app-protection-settings-for-android-and-ios.md) per proteggere le app, è possibile seguire queste procedure per verificare che le impostazioni scelte funzionino. 
   
-Accertarsi prima di tutto che i criteri si applichino all'app in cui dovranno essere verificati.
+Prima di tutto, assicurarsi che il criterio si applichi all'app in cui si intende convalidarla.
   
 1. Nell'[interfaccia di amministrazione](https://portal.office.com) di Microsoft 365 Business scegliere **Criteri** \> **Modifica criterio**.
     
-2. Scegliere **Criteri per le applicazioni per Android** per le impostazioni create al momento della configurazione oppure scegliere un altro criterio creato e verificare che sia applicato a Outlook, ad esempio. 
+2. Scegliere **criteri applicazione per Android** per le impostazioni create al momento della configurazione o un altro criterio creato e verificare che sia applicato a Outlook, ad esempio. 
     
     ![Shows all the apps for which this policy protects files.](media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
@@ -49,25 +49,25 @@ Accertarsi prima di tutto che i criteri si applichino all'app in cui dovranno es
 
 Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Controllo dell'accesso ai documenti di Office**, espandere **Gestisci la modalità di accesso ai file di Office nei dispositivi mobili** e verificare che l'opzione **Richiedi un PIN o l'impronta digitale per accedere alle app di Office** sia **attivata**.
   
-![Make sure that the Require a PIN or fingerprint to acces Office apps is set to On.](media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![Assicurarsi che il PIN o l'impronta digitale per accedere alle app di Office sia impostato su attivato.](media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
 1. Nel dispositivo Android dell'utente aprire Outlook e accedere con le credenziali di Microsoft 365 Business dell'utente.
     
-2. Verrà anche chiesto di immettere un PIN o di usare l'impronta digitale.
+2. Verrà inoltre richiesto di immettere un PIN o di utilizzare un'impronta digitale.
     
     ![Enter a PIN on your Android device to access Office apps.](media/9e8ecfee-8122-4a3a-8918-eece80344310.png)
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>Verificare il criterio Reimposta il PIN dopo il numero di tentativi non riusciti
 
-Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Controllo dell'accesso ai documenti di Office**, espandere **Gestisci la modalità di accesso ai file di Office nei dispositivi mobili** e verificare che l'opzione **Reimposta il PIN dopo il numero di tentativi non riusciti** sia impostata su un numero. Il valore predefinito è 5. 
+Nel riquadro **modifica criterio** fare clic su **modifica** accanto a **controllo di accesso ai documenti di Office**, quindi **gestire la modalità di accesso degli utenti ai file di Office nei dispositivi mobili**e verificare che il **pin di reset dopo il numero di tentativi non riusciti** sia impostato su un numero. Questo è 5 per impostazione predefinita. 
   
 1. Nel dispositivo Android dell'utente aprire Outlook e accedere con le credenziali di Microsoft 365 Business dell'utente.
     
-2. Immettere un PIN non corretto per il numero di volte specificato dal criterio. Verrà visualizzato l'avviso **È stato raggiunto il limite di tentativi per il PIN** con la richiesta di reimpostare il PIN. 
+2. Immettere un PIN non corretto per il numero di volte specificato dal criterio. Verrà visualizzato un messaggio che indica che è stato **raggiunto il limite di tentativi** per reimpostare il PIN. 
     
     ![After too many incorrect PIN attempts, you need to reset your PIN.](media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
-3. Scegliere **Reimposta PIN**. Verrà chiesto di accedere con le credenziali di Microsoft 365 Business dell'utente e quindi di impostare un nuovo PIN.
+3. Scegliere **Reimposta PIN**. Verrà richiesto di eseguire l'accesso con le credenziali aziendali Microsoft 365 dell'utente e quindi di impostare un nuovo PIN.
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>Verificare il criterio Forza gli utenti a salvare tutti i file di lavoro in OneDrive for Business
 
@@ -81,7 +81,7 @@ Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Protezione
     
     ![Tap the down arrow next to an attachment to try to save it.](media/b22573bb-91ce-455f-84fa-8feb2846b117.png)
   
-    Nella parte inferiore dello schermo verrà visualizzato il messaggio **Non è possibile salvare nel dispositivo**. 
+    Vedrai che **non è possibile salvare nel dispositivo** nella parte inferiore dello schermo. 
     
     ![Warning text that indicates cannot save a file locally to an Android.](media/52ca3f3d-7ed0-4a52-9621-4872da6ea9c5.png)
   
@@ -90,15 +90,15 @@ Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Protezione
   
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>Verificare il criterio Richiedi all'utente di accedere di nuovo se le app di Office sono rimaste inattive per il periodo di tempo specificato
 
-Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Controllo dell'accesso ai documenti di Office**, espandere **Gestisci la modalità di accesso ai file di Office nei dispositivi mobili** e verificare che l'opzione **Richiedi agli utenti di accedere di nuovo dopo che le app di Office sono rimaste inattive per** sia impostata su un numero di minuti. Il valore predefinito è 30 minuti. 
+Nel riquadro **modifica criterio** fare clic su **modifica** accanto a **controllo di accesso ai documenti di Office**, quindi **gestire la modalità di accesso degli utenti ai file di Office nei dispositivi mobili**e verificare che gli utenti siano autorizzati a accedere di **nuovo dopo che le app di Office sono rimaste inattive per** un determinato numero di minuti. Questo è 30 minuti per impostazione predefinita. 
   
 1. Nel dispositivo Android dell'utente aprire Outlook e accedere con le credenziali di Microsoft 365 Business dell'utente, quindi immettere il PIN se richiesto.
     
 2. Dovrebbe essere visualizzata la posta in arrivo di Outlook. Non usare il dispositivo Android per almeno 30 minuti o comunque per un periodo di tempo superiore a quello specificato nel criterio. Il dispositivo probabilmente diventerà inattivo.
     
-3. Accedere di nuovo a Outlook nel dispositivo Android.
+3. Accedere di nuovo a Outlook sul dispositivo Android.
     
-4. Verrà chiesto di immettere il PIN per poter accedere di nuovo a Outlook.
+4. Verrà richiesto di immettere il PIN prima di poter accedere di nuovo a Outlook.
     
 ### <a name="validate-protect-work-files-with-encryption"></a>Verificare il criterio Proteggi i file di lavoro con la crittografia
 
@@ -106,7 +106,7 @@ Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Protezione
   
 1. Nel dispositivo Android dell'utente aprire Outlook e accedere con le credenziali di Microsoft 365 Business dell'utente, quindi immettere il PIN se richiesto.
     
-2. Aprire un messaggio di posta elettronica che contiene alcuni file di immagine allegati.
+2. Aprire un messaggio di posta elettronica contenente alcuni allegati di file di immagine.
     
 3. Toccare l'icona della freccia in giù accanto alle informazioni sull'allegato per salvarlo.
     
@@ -126,11 +126,11 @@ Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Protezione
 
 Dopo avere [impostato le configurazioni delle app per dispositivi iOS](app-protection-settings-for-android-and-ios.md) per proteggere le app, è possibile seguire queste procedure per verificare che le impostazioni scelte funzionino. 
   
-Accertarsi prima di tutto che i criteri si applichino all'app in cui dovranno essere verificati.
+Prima di tutto, assicurarsi che il criterio si applichi all'app in cui si intende convalidarla.
   
 1. Nell'[interfaccia di amministrazione](https://portal.office.com) di Microsoft 365 Business scegliere **Criteri** \> **Modifica criterio**.
     
-2. Scegliere **Criteri per le applicazioni per iOS** per le impostazioni create al momento della configurazione oppure scegliere un altro criterio creato e verificare che sia applicato a Outlook, ad esempio. 
+2. Scegliere **criteri applicazione per iOS** per le impostazioni create al momento dell'installazione o un altro criterio creato e verificare che sia applicato a Outlook, ad esempio. 
     
     ![Shows all the apps for which this policy protects files.](media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
@@ -138,25 +138,25 @@ Accertarsi prima di tutto che i criteri si applichino all'app in cui dovranno es
 
 Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Controllo dell'accesso ai documenti di Office**, espandere **Gestisci la modalità di accesso ai file di Office nei dispositivi mobili** e verificare che l'opzione **Richiedi un PIN o l'impronta digitale per accedere alle app di Office** sia **attivata**.
   
-![Make sure that the Require a PIN or fingerprint to acces Office apps is set to On.](media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![Assicurarsi che il PIN o l'impronta digitale per accedere alle app di Office sia impostato su attivato.](media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
 1. Nel dispositivo iOS dell'utente aprire Outlook e accedere con le credenziali di Microsoft 365 Business dell'utente.
     
-2. Verrà anche chiesto di immettere un PIN o di usare l'impronta digitale.
+2. Verrà inoltre richiesto di immettere un PIN o di utilizzare un'impronta digitale.
     
     ![Enter a PIN on your IOS device to access Office apps.](media/06fc5cf3-9f19-4090-b23c-14bb59805b7a.png)
   
 ### <a name="validate-reset-pin-after-number-of-failed-attempts"></a>Verificare il criterio Reimposta il PIN dopo il numero di tentativi non riusciti
 
-Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Controllo dell'accesso ai documenti di Office**, espandere **Gestisci la modalità di accesso ai file di Office nei dispositivi mobili** e verificare che l'opzione **Reimposta il PIN dopo il numero di tentativi non riusciti** sia impostata su un numero. Il valore predefinito è 5. 
+Nel riquadro **modifica criterio** fare clic su **modifica** accanto a **controllo di accesso ai documenti di Office**, quindi **gestire la modalità di accesso degli utenti ai file di Office nei dispositivi mobili**e verificare che il **pin di reset dopo il numero di tentativi non riusciti** sia impostato su un numero. Questo è 5 per impostazione predefinita. 
   
 1. Nel dispositivo iOS dell'utente aprire Outlook e accedere con le credenziali di Microsoft 365 Business dell'utente.
     
-2. Immettere un PIN non corretto per il numero di volte specificato dal criterio. Verrà visualizzato l'avviso **È stato raggiunto il limite di tentativi per il PIN** con la richiesta di reimpostare il PIN. 
+2. Immettere un PIN non corretto per il numero di volte specificato dal criterio. Verrà visualizzato un messaggio che indica che è stato **raggiunto il limite di tentativi** per reimpostare il PIN. 
     
     ![After too many incorrect PIN attempts, you need to reset your PIN.](media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
-3. Scegliere **OK**. Verrà chiesto di accedere con le credenziali di Microsoft 365 Business dell'utente e quindi di impostare un nuovo PIN.
+3. Scegliere **OK**. Verrà richiesto di eseguire l'accesso con le credenziali aziendali Microsoft 365 dell'utente e quindi di impostare un nuovo PIN.
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>Verificare il criterio Forza gli utenti a salvare tutti i file di lavoro in OneDrive for Business
 
@@ -170,21 +170,21 @@ Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Protezione
     
     ![Tap the Save option after you open an attachment to try to save it.](media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
   
-3. Dovrebbe essere visualizzata solo un'opzione per OneDrive for Business. In caso contrario, toccare **Aggiungi account** e selezionare **OneDrive for Business** nella schermata **Aggiungi account di archiviazione**. Quando richiesto, specificare le credenziali di Microsoft 365 Business dell'utente finale per accedere. 
+3. Dovrebbe essere visualizzata solo un'opzione per OneDrive for Business. In caso contrario, toccare **Aggiungi account** e selezionare **OneDrive for business** dalla schermata **Aggiungi account di archiviazione** . Quando richiesto, specificare le credenziali di Microsoft 365 Business dell'utente finale per accedere. 
     
     Toccare **Salva** e selezionare **OneDrive for Business**.
     
 ### <a name="validate-require-user-to-sign-in-again-if-office-apps-have-been-idle-for-a-specified-time"></a>Verificare il criterio Richiedi all'utente di accedere di nuovo se le app di Office sono rimaste inattive per il periodo di tempo specificato
 
-Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Controllo dell'accesso ai documenti di Office**, espandere **Gestisci la modalità di accesso ai file di Office nei dispositivi mobili** e verificare che l'opzione **Richiedi agli utenti di accedere di nuovo dopo che le app di Office sono rimaste inattive per** sia impostata su un numero di minuti. Il valore predefinito è 30 minuti. 
+Nel riquadro **modifica criterio** fare clic su **modifica** accanto a **controllo di accesso ai documenti di Office**, quindi **gestire la modalità di accesso degli utenti ai file di Office nei dispositivi mobili**e verificare che gli utenti siano autorizzati a accedere di **nuovo dopo che le app di Office sono rimaste inattive per** un determinato numero di minuti. Questo è 30 minuti per impostazione predefinita. 
   
 1. Nel dispositivo iOS dell'utente aprire Outlook e accedere con le credenziali di Microsoft 365 Business dell'utente, quindi immettere il PIN se richiesto.
     
 2. Dovrebbe essere visualizzata la posta in arrivo di Outlook. Non usare il dispositivo iOS per almeno 30 minuti o comunque per un periodo di tempo superiore a quello specificato nel criterio. Il dispositivo probabilmente diventerà inattivo.
     
-3. Accedere di nuovo a Outlook nel dispositivo iOS.
+3. Accedere di nuovo a Outlook sul dispositivo iOS.
     
-4. Verrà chiesto di immettere il PIN per poter accedere di nuovo a Outlook.
+4. Verrà richiesto di immettere il PIN prima di poter accedere di nuovo a Outlook.
     
 ### <a name="validate-protect-work-files-with-encryption"></a>Verificare il criterio Proteggi i file di lavoro con la crittografia
 
@@ -192,7 +192,7 @@ Nel riquadro **Modifica criterio** scegliere **Modifica** accanto a **Protezione
   
 1. Nel dispositivo iOS dell'utente aprire Outlook e accedere con le credenziali di Microsoft 365 Business dell'utente, quindi immettere il PIN se richiesto.
     
-2. Aprire un messaggio di posta elettronica che contiene alcuni file di immagine allegati.
+2. Aprire un messaggio di posta elettronica contenente alcuni allegati di file di immagine.
     
 3. Toccare l'allegato e quindi toccare l'opzione **Salva** sotto di esso. 
     

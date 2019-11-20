@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come richiedere l'utilizzo dell'AMF e configurare i criteri di accesso condizionale per Microsoft 365 business.
-ms.openlocfilehash: b4ea67037339ae1a00f12d7b51e4584d259264e4
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 0279fff8dd4143c883b2f1633907ac197c65f04a
+ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031341"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748287"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Richiedere l'autenticazione a più fattori e configurare i criteri di accesso condizionale
 
@@ -59,7 +59,7 @@ Per richiedere che tutti gli utenti eseguano l'accesso con una seconda forma di 
     ![Rendere più sicura la scheda di accesso.](media/setupmfa.png)
 3. Nella pagina make Sign-in More Secure scegliere **Get Started**.
  
-4. Nel riquadro sicurezza accesso rinforzare selezionare le caselle di controllo accanto a **Richiedi autenticazione a più fattori per gli amministratori** e **richiedere agli utenti di registrarsi per l'autenticazione a più fattori e bloccare l'accesso se viene rilevato un rischio**.
+4. Nel riquadro di sicurezza di accesso rinforzato selezionare le caselle di controllo accanto a **Richiedi autenticazione a più fattori per gli amministratori** e **richiedere agli utenti di registrarsi per l'autenticazione a più fattori e bloccare l'accesso se viene rilevato un rischio**.
     Assicurarsi di escludere l'account di amministratore [Emergency](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) o "Break-Glass" dal requisito AMF nella casella **Trova utenti** .
     
     ![Rinforzare la pagina di sicurezza sing-in.](media/requiremfa.png)
@@ -70,16 +70,14 @@ Per richiedere che tutti gli utenti eseguano l'accesso con una seconda forma di 
 
 1. Accedere a [portale di Azure](https://portal.azure.com)e quindi passare a **accesso condizionale**di **Azure Active Directory** \> .
     
-    I criteri di base sono elencati nella pagina ed è possibile vedere che richiedono l'AMF per gli amministratori e la protezione degli utenti finali sono già abilitati dopo aver completato la procedura in [Require AMF](#require-mfa).
+    I criteri di base sono elencati nella pagina ed è possibile vedere che richiedono l' **AMF per gli amministratori** e la **protezione degli utenti finali** sono già abilitati dopo aver completato la procedura in [Require AMF](#require-mfa).
 
     ![Pagina in cui sono elencati i criteri di base per l'accesso condizionale.](media/casettings.png)
 2. Per ogni criterio, vedere le istruzioni specifiche seguenti:
 
     - [Richiedi l'autenticazione a più fattori per gli amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
-
-       
-    -   [Richiedi l'autenticazione per gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
+    - [Richiedi l'autenticazione per gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
     - [Blocca l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
     - [Richiedere l'autenticazione dell'AMF per la gestione dei servizi](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
-È possibile configurare criteri aggiuntivi, ad esempio per le app client approvate. Per ulteriori informazioni, vedere la [documentazione relativa all'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/) .
+È possibile configurare criteri aggiuntivi, ad esempio per le app client approvate. Per ulteriori informazioni, vedere la [documentazione relativa all'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/).
