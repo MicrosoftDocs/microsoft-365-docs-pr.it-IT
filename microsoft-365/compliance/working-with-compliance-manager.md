@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: e8e1ae997bf48f38e66319aec6ee07d0a84768c8
-ms.sourcegitcommit: 93cef4906c5495ae293450ceb52d6cc336f52b53
+ms.openlocfilehash: b1d67a71d8440923552e4702f7035bd24b166fec
+ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38686459"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38718685"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Collaborare con Microsoft Compliance Manager (anteprima)
 
@@ -421,13 +421,13 @@ Questa scheda include colonne che definiscono singole azioni e include dettagli 
 
 - **actionDimensionValues:** Doppio elenco delimitato da punti e virgola delle dimensioni applicabili dalla scheda dimensioni, utilizzando il formato seguente:
 
-    ```
+    ```Markdown
     Dimension Key::Dimension Value;;Dimension Key::Dimension Value.
     ```
     
     Ad esempio:
 
-    ```
+    ```Markdown
     Product::Office 365;;Certification::NIST CSF
     ```
 
@@ -461,7 +461,7 @@ I modelli e le valutazioni supportano l'utilizzo della lingua Markdown per alcun
 
 Gli elenchi puntati sono rappresentati come asterischi anziché punti elenco di Word o Excel. Ad esempio:
 
-```
+```Markdown
 * Item A
 * Item B
 * Item C
@@ -480,15 +480,16 @@ I numeri sono rappresentati come numeri, ma con spazi per il rientro (tre spazi 
 
 I collegamenti ipertestuali vengono costruiti posizionando le parentesi attorno al testo del collegamento ipertestuale e il collegamento ipertestuale stesso tra parentesi immediatamente accanto alla parentesi chiusa.  Ad esempio:
 
-```
+```Markdown
 Click [here](https://www.microsoft.com) to go to Microsoft’s home page.
 ```
 Il testo viene eseguito nel modo seguente: fare clic [qui](https://www.microsoft.com) per accedere alla Home page di Microsoft.
+
 Come illustrato nell'esempio precedente, Compliance Manager non esegue il rendering degli URL con la sottolineatura.
 
 Il testo di grassetto è costituito da due asterischi su ogni parte del testo da applicare in grassetto.  Ad esempio:
 
-```
+```Markdown
 **This text will render in bold**
 ```
 **Questo testo viene eseguito il rendering in grassetto**
