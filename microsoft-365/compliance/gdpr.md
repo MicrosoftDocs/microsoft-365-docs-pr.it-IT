@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 11bf048dd1cd913d8344929b5025a65638d47f4b
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078936"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749821"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Riepilogo del Regolamento generale sulla protezione dei dati
 
@@ -66,7 +68,7 @@ Le richieste dell'interessato forniscono un mezzo per gli interessati per eserci
 - **Quali azioni sono necessarie per il completamento di una richiesta dell'interessato?** Le richieste dell'interessato implicano sei attività, ovvero individuazione, accesso, rettifica, limitazione, esportazione ed eliminazione.
 - **Quali sono le origini dati?** Una considerevole quantità dei dati dell'organizzazione viene generata da [applicazioni di Office](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) come Excel e Outlook. È inoltre possibile trovare i dati rilevanti per una richiesta dell'interessato nelle [informazioni approfondite](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365) generate dai prodotti e servizi Microsoft e [dai log generati dal sistema](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs).
 - **Quali tipi di dati è necessario cercare?** È possibile trovare i dati personali nei dati dei clienti, nelle informazioni approfondite generate dai prodotti e dai servizi Microsoft e nei log generati dal sistema.
-- **In che modo è possibile cercare i dati personali?** La ricerca dei dati personali potrebbe variare in base ai prodotti e ai servizi Microsoft. Gli strumenti di ricerca includono [Ricerca contenuto](https://docs.microsoft.com/it-IT/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) o la funzionalità di [ricerca in-app](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs). Gli amministratori possono accedere ai [log generati dal sistema](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs) associati all'attività di un utente.  
+- **In che modo è possibile cercare i dati personali?** La ricerca dei dati personali potrebbe variare in base ai prodotti e ai servizi Microsoft. Gli strumenti di ricerca includono [Ricerca contenuto](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-the-content-search-ediscovery-tool-to-respond-to-dsrs) o la funzionalità di [ricerca in-app](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#using-in-app-functionality-to-respond-to-dsrs). Gli amministratori possono accedere ai [log generati dal sistema](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#part-3-responding-to-dsrs-for-system-generated-logs) associati all'attività di un utente.  
 - **In che formato dovrebbero essere resi disponibili i dati personali?** Il "diritto alla portabilità dei dati" del GDPR consente all'interessato di richiedere una copia dei dati personali in un "formato leggibile su computer, di uso comune e strutturato" e di richiedere che l'organizzazione trasmetta questi file a un altro titolare del trattamento dei dati.
 
 ### <a name="data-protection-impact-assessment"></a>Valutazione dell'impatto sulla protezione dei dati

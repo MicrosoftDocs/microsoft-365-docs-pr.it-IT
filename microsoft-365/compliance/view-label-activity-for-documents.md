@@ -1,24 +1,26 @@
 ---
 title: Visualizzare le attività delle etichette per i documenti
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: 5/9/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- SPO_Content
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: Con Esplora attività con etichette nel Centro sicurezza e conformità di Office 365, è possibile cercare e visualizzare rapidamente le attività con etichette per tutto il contenuto di SharePoint e OneDrive for Business degli ultimi 30 giorni. Si tratta di dati in tempo reale che offrono un quadro chiaro di ciò che accade nel tenant.
-ms.openlocfilehash: 6b68c82e364432107d616c5184959cd879cdcb9a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 99e3f461ed1ff38b2f204a2823299a3c441c995f
+ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084261"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38710072"
 ---
 # <a name="view-label-activity-for-documents"></a>Visualizzare le attività delle etichette per i documenti
 
@@ -36,7 +38,7 @@ Ad esempio, con Esplora attività con etichette è possibile:
     
 - Visualizzare le attività con etichette per le cartelle e i singoli documenti. A breve sarà possibile visualizzare il numero dei file nella cartella che sono stati denominati dopo aver assegnato un'etichetta alla cartella.
     
-Esplora attività con etichette è disponibile nel Centro sicurezza&amp; e conformità > **Governance dei dati** > **Esplora attività con etichette**.
+Explorer attività etichette è disponibile nel &amp;Centro sicurezza e conformità > **Governance delle informazioni** > **Explorer attività etichette**.
   
 Esplora attività con etichette richiede un abbonamento a Office 365 Enterprise E5.
   

@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 3a07400f6c3e788734b4d959080e2008eb7b0cfe
-ms.sourcegitcommit: 6e2a54ec395eaef4c4658ca52322c3d0f184ca02
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: c4e9cdeb953e01ee44caa1ba8031332da4e245be
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34698288"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "38749837"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Servizi professionali e supporto tecnico di Microsoft e notifica di violazione secondo l'RGPD
 
@@ -27,7 +29,7 @@ L'azione del team Servizi professionali di Microsoft, che si occupa di interveni
 
 ## <a name="data-protection-incident-response-overview"></a>Panoramica sull'intervento in caso di incidenti di protezione dei dati 
 
-Servizi professionali di Microsoft si impegna a proteggere i clienti e ad attuare una notevole quantità di misure di prevenzione affinché non si verifichino incidenti di protezione dei dati, per non mancare alla fiducia riposta dai clienti nella società. Un incidente di protezione dei dati nell’organizzazione Servizi professionali consiste in una violazione della sicurezza che porta alla accidentale o illecita distruzione, perdita, alterazione, divulgazione non autorizzata di o accesso non autorizzato a dati personali o di consultazione o supporto durante il trattamento da parte di Microsoft. I clienti commerciali che hanno acquistato supporto tecnico Premier, Unified Support o Microsoft Consulting Services possono fare riferimento alla lingua in Servizi Professionali Microsoft Addendum relativo alla Protezione dei Dati Personali in <http://aka.ms/professionalservicesdpa/>.
+Servizi professionali di Microsoft si impegna a proteggere i clienti e ad attuare una notevole quantità di misure di prevenzione affinché non si verifichino incidenti di protezione dei dati, per non mancare alla fiducia riposta dai clienti nella società. Un incidente di protezione dei dati nell’organizzazione Servizi professionali consiste in una violazione della sicurezza che porta alla accidentale o illecita distruzione, perdita, alterazione, divulgazione non autorizzata di o accesso non autorizzato a dati personali o di consultazione o supporto durante il trattamento da parte di Microsoft. I clienti commerciali che hanno acquistato supporto tecnico Premier, Unified Support o Microsoft Consulting Services possono fare riferimento alla lingua in Servizi Professionali Microsoft Addendum relativo alla Protezione dei Dati Personali in <https://aka.ms/professionalservicesdpa/>.
 
 ## <a name="scope--limits-of-data-protection-incident-response-process"></a>Ambito e limiti del processo di intervento in caso di incidenti di protezione dei dati
 
@@ -54,7 +56,7 @@ Microsoft Professional Services monitora continuamente gli incidenti di protezio
 I processi di rilevamento usati da Servizi professionali di Microsoft sono progettati per rilevare gli incidenti di protezione dei dati e avviare indagini. Ad esempio:
 
 - Le vulnerabilità di sicurezza vengono segnalate al sistema di segnalazione Microsoft o riportate direttamente al team di intervento in caso di incidenti di protezione dei dati Servizi professionali.
-- I clienti possono inviare segnalazioni tramite il [portale di assistenza clienti](http://support.microsoft.com) per descrivere attività sospette.
+- I clienti possono inviare segnalazioni tramite il [portale di assistenza clienti](https://support.microsoft.com) per descrivere attività sospette.
 - Il personale di Servizi professionali invia l’escalation. I dipendenti Microsoft sono addestrati per identificare e intensificare potenziali problemi riguardanti la sicurezza.
 - Per i sistemi e gli strumenti utilizzati nel processo di fornitura di servizi professionali, i team delle operazioni utilizzano avvisi di sistema automatici tramite framework di monitoraggio e avviso interni. Questi avvisi potrebbero interferire con avvisi basati su firma come antimalware, rilevamento di intrusioni o tramite algoritmi progettati per tracciare il profilo dell'attività prevista e segnalare anomalie.
 
