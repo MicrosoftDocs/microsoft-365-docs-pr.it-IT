@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: La procedura per distribuire l'infrastruttura di Office 365 ProPlus per Microsoft 365 Enterprise.
-ms.openlocfilehash: a51a37a321b450d233d7f9fd6da28b5828514d13
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 30e3956eba0e990d8d07a41dae924c3005f34d75
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627450"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757753"
 ---
 # <a name="phase-4-office-365-proplus"></a>Fase 4: Office 365 ProPlus
 
@@ -59,7 +59,7 @@ In base al piano di distribuzione, scegliere la modalità di distribuzione:
 
 - **[Distribuire Office 365 ProPlus con lo strumento ODT dal cloud](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud):** gestire la distribuzione con lo strumento ODT e installare Office nei dispositivi client direttamente dalla rete CDN di Office
  
-- **[Installare autonomamente Office 365 Pro Plus dal portale Office](https://support.office.com/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658):** gestire la distribuzione dal portale Office e far installare agli utenti Office nei propri dispositivi client direttamente dal portale
+- **[Installare autonomamente Office 365 Pro Plus dal portale Office](https://docs.microsoft.com/deployoffice/manage-software-download-settings-office-365):** gestire la distribuzione dal portale Office e far installare agli utenti Office nei propri dispositivi client direttamente dal portale
 
 Molte organizzazioni usano una combinazione di queste opzioni per utenti diversi. Ad esempio, l'organizzazione potrebbe usare Configuration Manager per distribuire Office alla maggior parte dei propri utenti, ma consentire l'installazione autonoma a un piccolo gruppo di dipendenti che non si connettono spesso alla rete interna. 
 

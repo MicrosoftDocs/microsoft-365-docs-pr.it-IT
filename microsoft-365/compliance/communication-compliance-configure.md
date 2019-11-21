@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Impostare i criteri di conformità della comunicazione per configurare le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: 76b28443d2fa77967933ea61f2724a2a5ff072be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 0a830914a22968119d836e2190a6f133d91fd305
+ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686361"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38755604"
 ---
 # <a name="configure-communication-compliance-for-microsoft-365-preview"></a>Configurare la conformità alla comunicazione per Microsoft 365 (anteprima)
 
@@ -42,7 +42,7 @@ Seguire questa procedura per configurare e usare la conformità della comunicazi
 
 - **Passaggio 2 (obbligatorio)**: [rendere la conformità della comunicazione disponibile nell'organizzazione](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Aggiungersi al ruolo **amministratore revisione di supervisione** per impostare i criteri. È inoltre necessario assegnare i ruoli di **gestione** e **Revisione** dei casi a persone o gruppi che avranno un'azione investigativa e di correzione dei messaggi con corrispondenze di criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Aggiungersi al ruolo **amministratore revisione di supervisione** per impostare i criteri. È inoltre necessario creare un gruppo con l' **amministratore revisione di supervisione**, i ruoli di **gestione dei casi** e di **Revisione** per persone o gruppi che avranno un'azione investigativa e di correzione sui messaggi con corrispondenze di criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Passaggio 3 (obbligatorio)**: [impostare un criterio di conformità della comunicazione](#step-3-create-a-communication-compliance-policy-required)
 
@@ -77,29 +77,7 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
 ## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a>Passaggio 2: rendere la conformità della comunicazione disponibile nell'organizzazione (obbligatorio)
 
-Per rendere la **conformità di comunicazione** disponibile come opzione di menu in Microsoft 365 Compliance Center, è necessario essere assegnati al ruolo di amministratore revisione di supervisione. Per esaminare e correggere i messaggi con le corrispondenze di criteri, è necessario che i ruoli di gestione e **Revisione** dei **casi** siano assegnati.
-  
-A tale scopo, è possibile aggiungere se stessi come membro del gruppo di ruolo revisione di supervisione oppure creare un nuovo gruppo di ruoli.
-  
-### <a name="add-required-roles-to-the-supervisory-reviewer-role-group"></a>Aggiungere i ruoli necessari al gruppo di ruoli revisore di supervisione
-
-1. Accedere [https://compliance.microsoft.com](https://compliance.microsoft.com) con le credenziali per un account di amministratore nell'organizzazione Microsoft 365.
-
-2. Nel centro conformità di Microsoft 365, andare a **autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
-
-3. Selezionare il gruppo di ruoli **revisione di supervisione** e quindi fare clic su **modifica** nella sezione **ruoli assegnati** della pagina dei dettagli.
-
-4. Selezionare **modifica**, quindi fare clic su **Aggiungi**. Selezionare la casella di controllo per la gestione e la **Revisione**dei **casi** , quindi fare clic su **Aggiungi**.
-
-5. Fare clic su **fine**e quindi su **Salva**.
-
-6. Nella sezione **membri** selezionare **modifica** per aggiungere gli utenti a cui si desidera gestire la conformità di comunicazione per l'organizzazione.
-
-7. Selezionare **modifica**, quindi fare clic su **Aggiungi**. Selezionare la casella di controllo per tutti gli utenti e i gruppi che si desidera gestire i messaggi con le corrispondenze di criteri, quindi selezionare **Aggiungi**.
-
-8. Fare clic su **fine**e quindi su **Salva**.
-
-9. Selezionare **Chiudi** per uscire dalla pagina dei dettagli del gruppo di ruoli.
+Per rendere la **conformità di comunicazione** disponibile come opzione di menu in Microsoft 365 Compliance Center, è necessario essere assegnati al ruolo di **amministratore revisione di supervisione** . Inoltre, per esaminare e correggere i messaggi con le corrispondenze di criteri, è necessario creare un gruppo per i revisori con l' **amministratore revisione di supervisione**, i ruoli di **gestione dei casi** e di **Revisione** .
 
 ### <a name="create-a-new-role-group"></a>Creare un nuovo gruppo di ruoli
 

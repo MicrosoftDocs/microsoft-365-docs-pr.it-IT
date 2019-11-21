@@ -12,12 +12,12 @@ ms.collection:
 - commerce
 ms.custom: ''
 description: Ulteriori informazioni sulla nuova funzionalità di assegnazione.
-ms.openlocfilehash: 3414fce02844629826edc6d9474f746aa27cfa2e
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: fff63b3c61ad95696e7f7677a34154ad65e82259
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012478"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753575"
 ---
 # <a name="allotment-basics"></a>Nozioni di base di assegnazione
 
@@ -47,4 +47,4 @@ Per iniziare a utilizzare un riparto, è necessario essere un amministratore glo
 
 ## <a name="getting-started"></a>Introduzione
 
-La funzionalità di assegnazione è disponibile in un'anteprima privata solo per un numero limitato di clienti. Se si è interessati ad unirsi, compilare questo modulo:[https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)
+La funzionalità di assegnazione è disponibile in un'anteprima privata solo per un numero limitato di clienti. Se si è interessati a partecipare, compilare questo modulo: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).

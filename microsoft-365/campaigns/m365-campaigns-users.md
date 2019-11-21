@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come Microsoft 365 per le campagne influisce sugli utenti.
-ms.openlocfilehash: beded4f9346a8e05244a28cb28c06a1b5410b12a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11a141ba24aa45c0c60dec064877f319f0b5ded2
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031241"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753595"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>In che modo Microsoft 365 per le campagne influisce sugli utenti
 
@@ -53,7 +53,7 @@ Tutti gli utenti che si aggiungono all'ambiente dovranno richiedere alcuni minut
 Dopo aver configurato queste informazioni, agli utenti verrà richiesto di utilizzare l'app Authenticator quando si accede ai dati dell'organizzazione su questi dispositivi, inclusa la posta elettronica. 
 
 ## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Mantenere i Mac di BYOD e i PC Windows 10 freschi 
-È inoltre importante che gli utenti mantengano aggiornato il dispositivo di lavoro principale:
+È inoltre importante che gli utenti mantengano il dispositivo di lavoro primario aggiornato:
 - Installare le versioni più recenti delle app desktop di Office e mantenerle aggiornate con gli aggiornamenti, quando richiesto. 
 - Rimanere al di sopra degli aggiornamenti del sistema operativo, ad esempio gli aggiornamenti di Windows.
 
@@ -74,7 +74,3 @@ Gli utenti potrebbero essere tentati di condividere e archiviare i file dell'org
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurare i dispositivi Windows 10 gestiti
 È consigliabile che i membri del personale più importanti utilizzino i dispositivi Windows 10 appena acquisiti che si desidera gestire. Vi mostreremo come [gestire e proteggere questi dispositivi](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Questo garantisce che i membri del personale che sono la destinazione di valore più alto per gli hacker ricevano la maggior parte della protezione. 
-
-
-
-  

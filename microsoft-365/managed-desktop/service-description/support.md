@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6c30f9e9a9f45ac8a68c285f4c594b238874f768
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 134e971e00fc64d3ea005d32ed95359ed8fb8feb
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982507"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757663"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Supporto per Microsoft Managed Desktop
 
@@ -39,7 +39,7 @@ Prodotti supportati:
 
 Dettagli del supporto:
 
-- Current: America del Nord, Canada (escluso Québec), Regno Unito, Australia e Nuova Zelanda (24x7x365) 
+- Corrente: Stati Uniti, Canada (escluso Québec), Regno Unito, Belgio, Lussemburgo, Paesi Bassi, Australia e Nuova Zelanda (24x7x365) 
 - L'inglese è l'unica lingua supportata per le conversazioni telefoniche e di chat con i clienti 
 - Siamo in partnership con, non sostituendo, il supporto tecnico aziendale; le app line-of-business (LOB), le risorse di rete e così via sono ancora gestite dal supporto tecnico 
 - I dispositivi Microsoft Managed Desktop nel gruppo "test" e i dispositivi che non fanno parte di Microsoft Managed Desktop non rientrano nell'ambito 

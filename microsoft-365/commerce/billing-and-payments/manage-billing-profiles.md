@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 description: Informazioni su come i profili di fatturazione supportano le fatture.
 keywords: Profilo di fatturazione, fatture, addebiti, spese gestite
-ms.openlocfilehash: 9db8b949cb07c8386505234d9d88aa2627a752b5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4b46709cf877ea8689f72b66d5ac357272e4737d
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029050"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753545"
 ---
 # <a name="manage-billing-profiles"></a>Gestire i profili di fatturazione
 Per i clienti commerciali che acquistano prodotti e servizi da Microsoft, i profili di fatturazione consentono di personalizzare gli elementi inclusi nella fattura e come vengono pagate le fatture.
 
 I profili di fatturazione includono le informazioni seguenti:
 
-- Nome **account** &mdash; di fatturazione dell'account di fatturazione a cui è associato il profilo
-- **Metodi** &mdash; di pagamento carte di credito o di debito, conti correnti bancari, assegno o bonifico bancario
-- Indirizzo di fatturazione **delle informazioni** &mdash; di contatto e nome del contatto
-- Le **Impostazioni** &mdash; delle fatture valutano in base al paese dell'account di fatturazione, un numero di ordine facoltativo e l'opzione per la ricezione delle fatture come allegati di posta elettronica
-- Autorizzazioni per le **autorizzazioni** &mdash; che consentono di modificare il profilo di fatturazione, pagare le bollette o utilizzare il metodo di pagamento sul profilo di fatturazione per effettuare gli acquisti
+- Nome **account** &ndash; di fatturazione dell'account di fatturazione a cui è associato il profilo
+- **Metodi** &ndash; di pagamento carte di credito o di debito, conti correnti bancari, assegno o bonifico bancario
+- Indirizzo di fatturazione **delle informazioni** &ndash; di contatto e nome del contatto
+- Le **Impostazioni** &ndash; delle fatture valutano in base al paese dell'account di fatturazione, un numero di ordine facoltativo e l'opzione per la ricezione delle fatture come allegati di posta elettronica
+- Autorizzazioni per le **autorizzazioni** &ndash; che consentono di modificare il profilo di fatturazione, pagare le bollette o utilizzare il metodo di pagamento sul profilo di fatturazione per effettuare gli acquisti
 
 Utilizzare i profili di fatturazione per controllare gli acquisti e personalizzare la fattura. Viene generata una fattura mensile per i prodotti acquistati con il profilo di fatturazione. È possibile personalizzare la fattura, ad esempio aggiornare il numero dell'ordine di acquisto e la preferenza della fattura di posta elettronica.
 

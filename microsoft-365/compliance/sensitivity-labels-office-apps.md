@@ -1,242 +1,153 @@
 ---
-title: Funzionamento delle etichette di riservatezza nelle app di Office
-ms.author: greglin
-author: greg-lindsay
+title: Etichette di riservatezza nelle app di Office
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: ''
+ms.date: 11/20/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.
-ms.openlocfilehash: f702423f0b1074b5619ef1c321cc5e9f1daef1d7
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
-ms.translationtype: HT
+description: Informazioni su come gli utenti lavorano con le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
+ms.openlocfilehash: 1b472185df2d45717cba6cfca30176768bf9cd4e
+ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417565"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38755594"
 ---
-# <a name="how-sensitivity-labels-work-in-office-apps"></a>Funzionamento delle etichette di riservatezza nelle app di Office
+# <a name="sensitivity-labels-in-office-apps"></a>Etichette di riservatezza nelle app di Office
 
-## <a name="what-prerequisites-are-there-to-use-sensitivity-labels-in-office-applications"></a>Quali sono i prerequisiti per usare le etichette di riservatezza nelle applicazioni di Office?
+In questo articolo viene descritto:
 
-### <a name="common-requirements"></a>Requisiti comuni 
+- Requisiti per l'ambiente prima di applicare etichette di riservatezza a messaggi di posta elettronica, file e allegati.
+- Quali funzionalità dell'etichetta di riservatezza sono supportate da ogni app di Office.
+- Cosa succede quando si combinano le etichette di riservatezza con altre tecnologie di sicurezza e conformità di Microsoft che funzionano con le app di Office.
+- In che modo gli utenti dell'organizzazione possono utilizzare le etichette di riservatezza quando lavorano con le app di Office per Windows e le app di Office per il Web.
+- Dove andare per ottenere le persone nell'organizzazione avviate con etichette di riservatezza.
 
-- Occorre [configurare e pubblicare nel Centro sicurezza e conformità](https://aka.ms/managemip) etichette di riservatezza unificate
-- Gli utenti devono avere effettuato l'accesso a Office con il proprio account aziendale.
-- Gli utenti devono avere una licenza di Office 365 E3 o superiore.
+## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Requisiti di sottoscrizione e licenze per le etichette di riservatezza
 
-### <a name="additional-requirements-for-office-for-windows"></a>Requisiti aggiuntivi per Office per Windows 
+Gli utenti devono disporre di almeno una delle seguenti licenze assegnate:
 
-- Il client di Azure Information Protection non deve essere in esecuzione in Office. Vedere anche: [È possibile usare le etichette di riservatezza insieme al client di Azure Information Protection in Office per Windows?](#can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows).
+- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) o superiori
 
-### <a name="additional-requirements-for-outlook-on-all-platforms"></a>Altri requisiti per Outlook in tutte le piattaforme 
+- [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) o superiori
 
-- Nella configurazione dell'etichetta, se si attiva il contrassegno del contenuto, è necessario usare Exchange Online per inserire il contrassegno del contenuto in transito.
+- [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) o superiore
 
-## <a name="what-sensitivity-label-capabilities-are-supported-in-office-today"></a>Quali funzionalità delle etichette di riservatezza sono attualmente supportate in Office? 
+Il client di etichettatura incorporato di Office supporta le etichette di riservatezza con una versione di sottoscrizione di Office. Il client non supporta le versioni autonome, ad esempio Office 2016 o Office 2019.
 
-<table border="1" cellspacing="0" cellpadding="0">
-<th><font size="-1">Funzionalità<th><font size="-1">Windows<th><font size="-1">Mac<th colspan="2"><font size="-1">iOS<th colspan="2"><font size="-1">Android<th colspan="2"><font size="-1">Web</tr>
-<tr><td>
+Per utilizzare l'etichetta di riservatezza automatica o consigliata, gli utenti hanno bisogno di una delle licenze seguenti:
 
-<td><font size="-1"> Word<br>
-Excel<br>
-PowerPoint<br>
-Outlook
+- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) o superiori
 
+- [Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software) o superiori
 
-<td><font size="-1"> Word<br>
-Excel<br>
-PowerPoint<br>
-Outlook
+- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/) o superiore
 
-<td><font size="-1"> Word<br>
-Excel<br>
-PowerPoint
-<td><font size="-1"> Outlook
+## <a name="support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Supporto per le funzionalità di etichetta di riservatezza in Word, Excel e PowerPoint
 
-<td><font size="-1"> Word<br>
-Excel<br>
-PowerPoint
-<td><font size="-1"> Outlook
+Per ogni funzionalità, nella tabella seguente sono elencate le versioni minime necessarie per tale applicazione. TBD significa che non è possibile utilizzare tale funzionalità su tale piattaforma.
 
-<td><font size="-1"> Word<br>
-Excel<br>
-PowerPoint
-<td><font size="-1"> Outlook </b>
-</tr>
+|Funzionalità                                                                                                        |Desktop di Windows |Desktop Mac |iOS    |Android      |Web                                                         |
+|------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
+|[Applica, modifica o Rimuovi manualmente l'etichetta](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Applicare un'etichetta predefinita](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | TBD                                                        |
+|[Richiedere una giustificazione per la modifica di un'etichetta](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Fornire un collegamento a una pagina della Guida personalizzata](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Contrassegnare il contenuto](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Assegnare le autorizzazioni adesso](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
+|[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
+|
+  [Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](sensitivity-labels.md#what-label-policies-can-do)   | TBD            | TBD        | TBD   | TBD         | TBD                                                        |
+|[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | Anteprima: in roll-out to [Office Insider](https://office.com/insider)                                  | TBD | TBD | TBD | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
+|Supporto per il [salvataggio automatico](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) e la [CoAuthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sui documenti etichettati e protetti | TBD | TBD | TBD | TBD | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
+|
 
-<tr>
-<td><font size="-1">Applicare, cambiare o rimuovere manualmente l'etichetta<td><font size="-1"><b>Sì</b><br><font size="-1">1910+</font>
+## <a name="support-for-sensitivity-label-capabilities-in-outlook"></a>Supporto per le funzionalità di etichetta di riservatezza in Outlook
 
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.21.0+</font>
+Per ogni funzionalità, nella tabella seguente sono elencate le versioni minime necessarie per tale applicazione. TBD significa che non è possibile utilizzare tale funzionalità su tale piattaforma.
 
-<td><font size="-1"><b>Sì</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Presto disponibile<sup>3</sup><td><font size="-1">Presto disponibile<sup>3</sup>
+|Funzionalità                                                                                                        |Desktop di Outlook su Windows |Desktop di Outlook su Mac  |Outlook su iOS |Outlook su Android |Outlook sul web |
+|------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
+|[Applica, modifica o Rimuovi manualmente l'etichetta](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sì               |
+|[Applicare un'etichetta predefinita](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sì               |
+|[Richiedere una giustificazione per la modifica di un'etichetta](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sì               |
+|[Fornire un collegamento a una pagina della Guida personalizzata](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sì               |
+|[Contrassegnare il contenuto](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sì               |
+|[Assegnare le autorizzazioni adesso](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sì               |
+|[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sì               |
+|[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | TBD                       | TBD                    | TBD           | TBD               | TBD               |
+|
+  [Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](sensitivity-labels.md#what-label-policies-can-do)   | TBD                       | TBD                    | TBD           | TBD               | TBD               |
+|[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | TBD                       | TBD                    | TBD           | TBD               | Anteprima: in roll-out to [Targeted Release](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide) |
+|
 
-<tr>
-<td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Applicare un'etichetta predefinita</a>
-<td><font size="-1"><b>Sì</b><br><font size="-1">1910+</font>
+## <a name="about-the-office-built-in-labeling-client"></a>Informazioni sul client di etichettatura incorporato di Office
 
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.21.0+</font>
+Il client di etichettatura incorporato di Office Scarica le etichette e le impostazioni dei criteri dai seguenti centri di amministrazione:
 
-<td><font size="-1"><b>Sì</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Presto disponibile<sup>3</sup>
+- Centro sicurezza e conformità di Office 365
 
-<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Richiedere una giustificazione per la modifica di un'etichetta</a><sup>1</sup>
-<td><font size="-1"><b>Sì</b><br><font size="-1">1910+</font>
+- Centro sicurezza Microsoft 365
 
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.21.0+</font>
+- Centro conformità Microsoft 365
 
-<td><font size="-1"><b>Sì</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Presto disponibile<sup>3</sup>
+Il client di etichettatura incorporato di Office è abilitato automaticamente per gli utenti a cui sono stati [pubblicati](sensitivity-labels.md#what-label-policies-can-do) uno o più criteri di etichetta.
 
-<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Fornire un collegamento a una pagina della Guida personalizzata</a>
-<td><font size="-1"><b>Sì</b><br><font size="-1">1910+</font>
+Per utilizzare il client di etichettatura incorporato in Office in Windows, non è possibile eseguire il componente aggiuntivo di Azure Information Protection contemporaneamente in Office. È possibile disinstallare temporaneamente o definitivamente il client Azure Information Protection oppure è possibile lasciarlo installato e configurare Office per impedirne l'esecuzione.
 
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.21.0+</font>
+1. Completare una delle seguenti opzioni:
 
-<td><font size="-1"><b>Sì</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Presto disponibile<sup>3</sup>
+    **Per più computer:** Configurare l'impostazione **utilizza la funzionalità di sensitivity in Office per applicare e visualizzare le etichette** di criteri di gruppo. Trovare questa impostazione in **Configurazione utente/modelli amministrativi/Microsoft Office 2016/impostazioni di sicurezza**. Distribuire questa impostazione tramite criteri di gruppo o utilizzando il [servizio criteri cloud di Office](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
 
-<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do">Contrassegnare il contenuto</a>
-<td><font size="-1"><b>Sì</b><br><font size="-1">1910+</font>
-
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.21.0+</font>
-
-<td><font size="-1"><b>Sì</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.0.11231+</font
-><td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-
-<tr><td><font size="-1">
-  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now">Assegnare autorizzazioni predefinite</a>
-<td><font size="-1"><b>Sì</b><br><font size="-1">1910+</font>
-
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.21.0+</font>
-
-<td><font size="-1"><b>Sì</b><br><font size="-1">2.21+</font>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1"><b>Sì</b><br><font size="-1">16.0.11231+</font>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Presto disponibile<sup>3</sup>
-
-<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions">Consentire agli utenti di assegnare autorizzazioni</a>
-<td><font size="-1"><b>Sì</b><sup>2</sup><br><font size="-1">1910+</font>
-
-<td><font size="-1"><b>Sì</b><sup>2</sup><br><font size="-1">16.21.0+</font>
-
-<td><font size="-1">Da definire
-<td><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Da definire<td
-><font size="-1">Presto disponibile<sup>3</sup>
-<td><font size="-1">Da definire
-<td><font size="-1">Presto disponibile<sup>3</sup>
-
-<tr><td><font size="-1">Inviare dati di <a href="https://docs.microsoft.com/microsoft-365/compliance/label-analytics">analisi delle etichette</a> per gli amministratori
-<td><font size="-1">Da definire
-
-<td><font size="-1">Da definire
-
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-
-<tr><td><font size="-1">
-  <a href="https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do">Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti</a>
-<td><font size="-1">Da definire
-
-<td><font size="-1">Da definire
-
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-
-<tr><td><font size="-1"><a href="https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically">Applicare automaticamente un'etichetta di riservatezza al contenuto</a>
-<td><font size="-1">Da definire
-
-<td><font size="-1">Da definire
-
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-<td><font size="-1">Da definire
-</table>
-
-<br><sup>1</sup>Se configurato, agli utenti viene chiesto di giustificare il downgrade delle etichette. Tuttavia, i dati relativi alla giustificazione non sono ancora resi disponibili agli amministratori. Diventeranno disponibili quando sarà supportata la funzionalità di invio dati di analisi delle etichette per gli amministratori.
-<br><sup>2</sup>La funzionalità per consentire agli utenti di assegnare le autorizzazioni è attualmente disponibile solo in Outlook per Windows e per Mac. La disponibilità per Word, Excel e PowerPoint è da definire.
-<br><sup>3</sup>Previsto per il quarto trimestre 2019.
-
-## <a name="when-do-content-marks-or-encryption-get-applied-after-content-is-given-a-sensitivity-label"></a>Quando vengono applicati i contrassegni o la crittografia dopo l'assegnazione di un'etichetta di riservatezza al contenuto?
-
-| Applicazione | Contrassegno contenuto | Crittografia
-| --- | --- | --- |
-| Word, Excel, PowerPoint in tutte le piattaforme | Immediatamente. | Immediatamente. |
-| Outlook per PC e Mac | Dopo l'invio del messaggio di posta elettronica da Exchange Online | Immediatamente. |
-| Outlook sul web, iOS e Android | Dopo l'invio del messaggio di posta elettronica da Exchange Online | Dopo l'invio del messaggio di posta elettronica da Exchange Online |
-
-## <a name="can-sensitivity-labels-run-alongside-the-azure-information-protection-client-in-office-for-windows"></a>È possibile usare le etichette di riservatezza insieme al client di Azure Information Protection in Office per Windows?
-
-No. Le etichette di riservatezza vengono disattivate se il client di Azure Information Protection viene caricato in Office per Windows.
-
-Se è installato il client di Azure Information Protection, ma si vogliono usare invece le etichette di riservatezza, è possibile:
-
-1. Configurare l'impostazione di Criteri di gruppo  **Utilizzo della funzionalità Riservatezza di Office per applicare e visualizzare le etichette di riservatezza**, disponibile in **Configurazione utente\Modelli amministrativi/Microsoft Office 2016/Impostazioni di sicurezza**.
-
-  >Nota: questa impostazione può essere distribuita tramite i meccanismi tradizionali di distribuzione di Criteri di gruppo oppure dal [servizio criteri cloud di Office](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service). 
- 
-  In alternativa, è possibile disinstallare o  [disabilitare](https://support.office.com/article/view-manage-and-install-add-ins-in-office-programs-16278816-1948-4028-91e5-76dca5380f8d) il client di Azure Information Protection. 
+    **Per un singolo computer:** Vedere la sezione relativa alla visualizzazione, gestione e installazione dei componenti aggiuntivi in programmi di Office e [disabilitare o rimuovere definitivamente](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d) il componente aggiuntivo di Azure Information Protection in un singolo computer.
 
 2. Riavviare tutte le applicazioni di Office.
 
-## <a name="will-sensitivity-labels-be-supported-in-non-subscription-versions-of-office-like-office-2016-or-office-2019"></a>Le etichette di riservatezza verranno supportate nelle versioni di Office non in abbonamento, come Office 2016 o Office 2019?
+Per ulteriori informazioni sulle app client per la protezione delle informazioni, vedere [la sezione client di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/use-client).
 
-No. Le etichette di riservatezza verranno supportate solo nell'abbonamento a Office 365 e non saranno supportate in alcuna versione non in abbonamento. Tuttavia, nelle versioni di Office non in abbonamento è possibile usare il  client di etichettatura unificata di Azure Information Protection. 
+## <a name="protection-templates-and-sensitivity-labels"></a>Modelli di protezione e etichette di riservatezza
 
-## <a name="i-previously-deployed-protection-templates-before-setting-up-sensitivity-labels-where-did-they-go"></a>In precedenza, prima di configurare le etichette di riservatezza. sono stati distribuiti modelli di protezione. Dove sono finiti?
+I modelli di [protezione](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)definiti dall'amministratore, ad esempio quelli definibili per la crittografia dei messaggi di Office 365, sono nascosti dall'esperienza utente di Office quando le etichette di riservatezza sono abilitate perché sono ridondanti con etichette di riservatezza che dispongono di crittografia abilitata.
 
-Quando sono abilitate le etichette di riservatezza, i [modelli di protezione](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) definiti dall'amministratore sono nascosti dall'esperienza utente di Office in quanto ridondanti, visto che le etichette di riservatezza hanno la crittografia abilitata. 
+## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Applicare etichette di riservatezza a file, messaggi di posta elettronica e allegati
 
-## <a name="can-a-file-or-email-have-more-than-one-classification"></a>Un file o un indirizzo di posta elettronica può avere più di una classificazione?
+Gli utenti possono applicare una sola etichetta alla volta per ogni documento o messaggio di posta elettronica.
 
-No. Gli utenti possono selezionare una sola etichetta alla volta per ogni documento o messaggio di posta elettronica.
+Quando si etichetta un messaggio di posta elettronica con allegati, gli allegati non ereditano l'etichetta. Se gli allegati dispongono di un'etichetta che conservano l'etichetta applicata separatamente. Se gli allegati non dispongono di un'etichetta, gli allegati rimarranno privi di un'etichetta. Tuttavia, se l'etichetta del messaggio di posta elettronica applica la protezione, la protezione viene applicata agli allegati di Office.
 
-## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Quando si etichetta un messaggio di posta elettronica, gli allegati ottengono automaticamente la stessa etichetta?
+## <a name="sensitivity-label-compatibility"></a>Compatibilità delle etichette di riservatezza
 
-No. Quando si etichetta un messaggio di posta elettronica con allegati, gli allegati non ereditano la stessa etichetta. Gli allegati restano senza etichetta o conservano un'eventuale etichetta applicata separatamente. Tuttavia, se l'etichetta del messaggio di posta elettronica applica la protezione, la protezione viene applicata agli allegati di Office.
+**Con le app illuminate da RMS**. Se si apre un documento o un messaggio di posta elettronica etichettato _e crittografato_ in un' [applicazione illuminata da RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) che non supporta le etichette di riservatezza, l'app continua a applicare la crittografia e la gestione dei diritti.
 
-## <a name="additional-resources"></a>Altre risorse
+**Con il client di Azure Information Protection**. È possibile visualizzare e modificare le etichette di riservatezza applicate ai documenti e ai messaggi di posta elettronica con il client di etichettatura incorporato di Office con il client Azure Information Protection e l'altro modo.
 
-[Domande frequenti sulla classificazione e l'etichettatura in Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)<br>
-[Applicare etichette di riservatezza ai documenti e ai messaggi di posta elettronica in Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+**Con altre versioni di Office**. Qualsiasi utente autorizzato può aprire documenti e messaggi di posta elettronica identificati in altre versioni di Office. Tuttavia, è possibile visualizzare o modificare l'etichetta solo nelle versioni di Office supportate o nel client di Azure Information Protection. Le versioni delle app di Office supportate sono elencate nelle tabelle di questo articolo.
+
+## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>Supporto per i file di SharePoint e OneDrive protetti da etichette di riservatezza
+
+Per utilizzare il client di etichettatura incorporato di Office in Office sul Web, il documento deve trovarsi in un'istanza di OneDrive for business o SharePoint Online che ha optato per l' [Abilitazione delle etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+## <a name="when-office-365-applies-marks-and-encryption-to-content"></a>Quando Office 365 applica contrassegni e la crittografia al contenuto
+
+Office 365 applica i contrassegni di contenuto o la crittografia con un'etichetta di riservatezza in modo diverso a seconda dell'applicazione utilizzata.
+
+| Applicazione | Contrassegno contenuto | Crittografia |
+| --- | --- | --- |
+| Word, Excel, PowerPoint in tutte le piattaforme | Immediatamente. | Immediatamente. |
+| Outlook per PC e Mac | Dopo che Exchange Online ha inviato il messaggio di posta elettronica | Immediatamente. |
+| Outlook sul web, iOS e Android | Dopo che Exchange Online ha inviato il messaggio di posta elettronica | Dopo che Exchange Online ha inviato il messaggio di posta elettronica |
+|
+
+## <a name="more-resources"></a>Altre risorse
+
+[Domande frequenti sulla classificazione e l'etichettatura in Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)
+
+[Applicare etichette di riservatezza ai documenti e ai messaggi di posta elettronica in Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)

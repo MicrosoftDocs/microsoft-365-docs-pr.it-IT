@@ -11,12 +11,12 @@ ms.author: TrudyHa
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 05/31/2019
-ms.openlocfilehash: f14809e58c1580333ba4e412a2b442df79e61975
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 047c93dd6dbeeb1e55bfc22b337f42870f34e104
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029030"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753555"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gestire le sottoscrizioni delle app di terze parti per l'organizzazione
 
@@ -35,7 +35,7 @@ I provider di app vendono le proprie app a una tariffa forfettaria o acquistando
 - **Licenze** : le app sono prezzate dalla licenza. I clienti assegnano le licenze a ciascun utente nella propria organizzazione
 
 ## <a name="supported-regions"></a>Aree supportate
-Il supporto per le app di terze parti è disponibile in queste aree geografiche:
+Il supporto per le app di terze parti è disponibile in queste aree:
 - Argentina
 - Australia
 - Canada
@@ -50,7 +50,7 @@ Il supporto per le app di terze parti è disponibile in queste aree geografiche:
 - Europa occidentale
 
 ## <a name="set-up-app"></a>Configurare un'app
-Gli amministratori devono attivare le app di terze parti prima di assegnarle agli utenti. Sono attivati nel portale dell'editore di terze parti. 
+Gli amministratori devono attivare le app di terze parti prima di assegnarle agli utenti. Queste app vengono attivate nel portale dell'editore di terze parti. 
 
 **Per attivare le app di terze parti**
 1. Andare all'interfaccia di [amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=837890)e accendere **provare l'anteprima**.
@@ -60,7 +60,7 @@ Gli amministratori devono attivare le app di terze parti prima di assegnarle agl
 
 Verrà indirizzato al sito dell'app Publisher in cui è possibile attivare l'app. 
 
-## <a name="managing-3rd-party-apps"></a>Gestione delle app di terze parti
+## <a name="managing-third-party-apps"></a>Gestione delle app di terze parti
 Gli amministratori gestiscono le app di terze parti in due posizioni: l'interfaccia di amministrazione di Microsoft 365 e il portale del provider di applicazioni di terze parti. Di seguito sono riportate le operazioni che è possibile eseguire in ogni portale.
 
 ### <a name="app-status"></a>Stato dell'app
@@ -71,7 +71,7 @@ Dopo aver attivato l'applicazione, l'app rimarrà attiva a meno che non venga an
 | Modificare la quantità di licenza <br> Gestire la modalità di pagamento della fattura <br> Gestire la modalità di pagamento della fattura <br> Cambiare il metodo di pagamento (carta di credito) <br> Visualizza fattura <br> Annullare l'abbonamento all'app | Configurare un'app (una volta per ogni app) <br> Assegnare licenze agli utenti <br> Supporto tecnico |
 
 ## <a name="assign-licenses"></a>Assegnare licenze
-Gli amministratori devono attivare le app di terze parti prima di assegnarle agli utenti. Sono attivati nel portale dell'editore di terze parti. Nella pagina app, in impostazioni & azioni, selezionare il collegamento per assegnare le licenze.
+Gli amministratori devono attivare le app di terze parti prima di assegnarle agli utenti. Vengono attivati nel portale dell'editore di terze parti. Nella pagina app, in **impostazioni & azioni**, selezionare il collegamento per assegnare le licenze.
 
 **Per assegnare app di terze parti**
 

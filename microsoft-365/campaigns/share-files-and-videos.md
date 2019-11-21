@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Condividere file e video all'interno della propria campagna con Microsoft teams e SharePoint.
-ms.openlocfilehash: 14daa826e7df961baefaf7f6e7a17530842aad25
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 446285c375b64c6622905d3320de92c4ddb2dca0
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031191"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753615"
 ---
 # <a name="share-files-and-videos"></a>Condividere file e video
 
-Quando è necessario controllare gli utenti che possono visualizzare e gli utenti che possono modificare i file, è necessario archiviarli in una posizione sicura, in cui è possibile verificare che le autorizzazioni vengano applicate in modo appropriato. È possibile utilizzare Microsoft teams per archiviare i file e quindi condividere i file all'interno o all'esterno della propria campagna con Microsoft teams o inviando collegamenti di SharePoint. L'invio di un collegamento piuttosto che di un allegato di posta elettronica significa che è possibile sapere chi è la visualizzazione e la modifica dei file e non possono essere visualizzati o modificati senza la propria autorizzazione. 
+Quando è necessario controllare chi può visualizzare e chi può modificare i file, è necessario archiviare i file in una posizione sicura, in cui è possibile verificare che le autorizzazioni vengano applicate in modo appropriato. È possibile utilizzare Microsoft teams per archiviare i file e quindi condividere i file all'interno o all'esterno della propria campagna tramite Microsoft teams o inviando collegamenti di SharePoint. L'invio di un collegamento piuttosto che di un allegato di posta elettronica significa che è possibile sapere chi è la visualizzazione e la modifica dei file e non possono essere visualizzati o modificati senza la propria autorizzazione. 
 
 ![Diagramma di una finestra di Microsoft teams, visualizzazione delle schede dei file e collegamento Get nel menu](media/m365-democracy-teams-sharefiles.png)
 

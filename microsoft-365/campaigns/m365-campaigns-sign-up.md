@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Procedura dettagliata per la registrazione di Microsoft 365 per le campagne. Proteggi la tua campagna dalle minacce di Cybersecurity alla posta elettronica, ai dati e alla comunicazione.
-ms.openlocfilehash: 178fa371d0f299c58168957b82b0c7da74b37742
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: b6866a3c2291b00934b5808777f795e5b99faa34
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772463"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753605"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Iscriversi a Microsoft 365 per le campagne 
 
@@ -55,8 +55,8 @@ Ecco come completare l'iscrizione a Microsoft 365 per le campagne.
     > Se la propria campagna o la propria parte non è proprietaria di un dominio e si è deciso quale dominio si desidera, è possibile acquistarne uno ora selezionandolo.
 
 4. **Provare. Sei tu. Non. A. robot. pagina**:
-    1. Preparare il telefono e selezionare **Text me** (oppure chiamami **** se si preferisce). Quindi immetti il tuo numero di telefono. 
-    2. Quando si seleziona **Text me**, è possibile inviare un codice di verifica. Oppure ti chiameremo con un codice se selezioni chiamami. ****
+    1. Preparare il telefono e selezionare **Text me** (oppure **chiamami** se si preferisce). Quindi immetti il tuo numero di telefono. 
+    2. Quando si seleziona **Text me**, è possibile inviare un codice di verifica. Oppure ti chiameremo con un codice se selezioni **chiamami**.
     3. Immettere il codice del messaggio di testo (o chiamata) e selezionare **Avanti**. Aspettatevi una breve attesa. 
 5. **Dove si utilizzerà questa pagina**: immettere il numero di telefono e la posizione principale della campagna.  Select **Next**. 
 6. **Come funziona questa pagina di aspetto**:
@@ -78,11 +78,11 @@ Se si dispone già di una sottoscrizione esistente a Office 365 for business, ad
 2. Nella pagina di **benvenuto, è possibile conoscere** la pagina, fare clic o toccare si **desidera aggiungere questo a un abbonamento esistente? Accedi**.
     
     ![Scegliere Accedi nell'angolo in alto a destra.](media/addtoexisting.png)
-3. Nella pagina di accesso, immettere l'alias di amministratore per la sottoscrizione esistente, ad esempio, *Alice @ VoteContoso<span></span>. org* e quindi scegliere **Avanti**, immettere la password e scegliere **Accedi**.
-4. In **questo aspetto,** immettere il numero di utenti di cui si dispone e scegliere **Avanti**. Si noti che non è necessario immettere un codice promozionale qui perché è già incluso nell'URL dell'invito.
+3. Nella pagina di accesso, immettere l'alias di amministratore per la sottoscrizione esistente, ad esempio *Alice@VoteContoso<span></span>. org*, scegliere **Avanti**, immettere la password e quindi fare clic su **Accedi**.
+4. In **questo aspetto,** immettere il numero di utenti di cui si dispone e scegliere **Avanti**. Non è necessario immettere un codice promozionale qui perché è già incluso nell'URL dell'invito.
 5. Nella pagina **come si desidera pagare?** , immettere il metodo di pagamento e scegliere **Ordina ordine**.
 
-Una volta completati questi passaggi, è possibile [assegnare le nuove licenze](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) al personale della campagna. 
+Dopo aver completato questi passaggi, si è pronti per [assegnare le nuove licenze](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) al personale della campagna. 
 
 
 ## <a name="whats-next"></a>Operazioni successive

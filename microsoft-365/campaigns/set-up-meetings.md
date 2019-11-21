@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare riunioni online con Microsoft teams.
-ms.openlocfilehash: 67a58b17d3e5153d8e0f36788f68ca7c0e204d6f
-ms.sourcegitcommit: 75b97d1ff617bc4b1b0ef9135dfe6a8842ea1b52
+ms.openlocfilehash: 7ecdec3f7dc329f1ff70bf8d72a7ca5bc946636f
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35772303"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753585"
 ---
 # <a name="set-up-meetings"></a>Configurare le riunioni
 
@@ -40,8 +40,8 @@ Scaricare un'infografica in [formato PDF](https://go.microsoft.com/fwlink/?linki
 ## <a name="best-practices"></a>Procedure consigliate
 
 Seguire queste procedure consigliate per le riunioni online:
-1. Pianificare le riunioni online direttamente in Microsoft teams. È possibile scegliere un team e un canale e i team invitano i partecipanti del team o del canale automaticamente.
-2. È necessaria una riunione improvvisata? Se si è in una chat uno-a-uno, scegliere **Meet Now** per avviare una chiamata video o audio con la persona con cui si sta chattando. 
+- Pianificare le riunioni online direttamente in Microsoft teams. È possibile scegliere un team e un canale e i team invitano i partecipanti del team o del canale automaticamente.
+- È necessaria una riunione improvvisata? Se si è in una chat uno-a-uno, scegliere **Meet Now** per avviare una chiamata video o audio con la persona con cui si sta chattando. 
 
 
 ## <a name="schedule-a-meeting"></a>Pianificare una riunione
