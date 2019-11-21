@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: informazioni sulla configurazione e sul test di Azure AD Seamless Single Sign-On per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 2845b3ec7d1725219fcbbb14ed4c1067a11a90bc
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: a32dca8c37d9e6788aef801e9f99a90b724e86b1
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673292"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757673"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Azure AD Seamless Single Sign-On per l'ambiente di testing di Microsoft 365
 
@@ -49,9 +49,9 @@ Seguire le istruzioni riportate in [sincronizzazione hash delle password per Mic
   
 Questa configurazione è costituita da: 
   
-- Abbonamenti di valutazione o a pagamento a Office 365 E5 ed EMS E5.
+- Abbonamenti di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
-- Azure AD Connect viene eseguito su APP1 per sincronizzare periodicamente il dominio TESTLAB di Active Directory Domain Services con il tenant Azure AD degli abbonamenti a Office 365 ed EMS E5.
+- Azure AD Connect viene eseguito su APP1 per sincronizzare periodicamente il dominio TESTLAB di Active Directory Domain Services con il tenant di Azure AD dell'abbonamento a Microsoft 365 o a Office 365.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>Fase 2: configurare Azure AD Connect su APP1 per Azure AD Seamless Single Sign-On
 
@@ -106,9 +106,9 @@ Di seguito è riportata la configurazione risultante:
  
 Questa configurazione è costituita da:
 
-- Abbonamenti di valutazione o a pagamento a Office 365 E5 ed EMS E5 con dominio DNS testlab.\<nome dominio> registrato.
+- Abbonamenti di valutazione o a pagamento a Microsoft 365 E5 o a Office 365 E5 con il dominio DNS testlab.\<nome dominio> registrato.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
-- Periodicamente, Azure AD Connect viene eseguito su APP1 per sincronizzare l'elenco di account e gruppi dal tenant di Azure AD degli abbonamenti a Office 365 ed EMS E5 al dominio TESTLAB Active Directory Domain Services. 
+- Azure AD Connect viene eseguito su APP1 per sincronizzare l'elenco di account e gruppi dal tenant di Azure AD dell'abbonamento a Microsoft 365 o a Office 365 al dominio TESTLAB di Active Directory Domain Services. 
 - Azure AD Seamless SSO viene abilitato in modo che i computer sulla rete Intranet simulata possano accedere alle risorse cloud di Microsoft 365 senza specificare una password per l'account utente.
 
 Vedere il passaggio [Semplificare l'accesso utente](identity-secure-your-passwords.md#identity-sso) nella fase Identità per informazioni e collegamenti per configurare Azure AD Seamless SSO.

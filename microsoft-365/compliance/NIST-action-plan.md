@@ -12,12 +12,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 5c43a0e26dfc052c23cbaf349bd541d996dca558
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 9a1ca4898696923b7dcbe22879906b25ccebcd13
+ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "38710060"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757653"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Piano d'azione di Microsoft 365 per NIST 800-53: le priorità per i primi 30 giorni, 90 giorni e oltre
 
@@ -25,7 +25,7 @@ Microsoft 365 offre alle aziende un framework di controlli gestiti nel cloud per
 
 Microsoft è un leader affermato della sicurezza nel cloud. Il nostro team vanta anni di esperienza nella realizzazione di software aziendale e nella gestione dei servizi online. Ci evolviamo continuamente e aggiorniamo i nostri servizi e le applicazioni per fornire un servizio di produttività nel cloud sicuro che soddisfi i rigorosi standard di conformità del settore. I servizi cloud Microsoft per enti pubblici, tra cui Office 365 U.S. Government, soddisfano i complessi requisiti del Federal Risk and Authorization Management Program (FedRAMP) degli Stati Uniti, consentendo agli enti governativi statunitensi di realizzare vantaggi quali la riduzione dei costi e la massima sicurezza di Microsoft Cloud.
 
-Questo articolo include un piano d'azione che definisce le priorità da seguire per soddisfare i requisiti dello standard NIST 800-53. Questo piano d'azione è stato sviluppato in collaborazione con Protiviti, un partner Microsoft specializzato nella conformità alle normative. È possibile ottenere ulteriori informazioni su come utilizzare questo piano d'azione su Microsoft Ignite partecipando a questa sessione: [Chart your Microsoft 365 compliance path and information protection strategy](https://myignite.techcommunity.microsoft.com/sessions/65720?source=sessions), presentata da Maithili Dandige (Microsoft) e Antonio Maio (Protiviti).
+Questo articolo include un piano di azione che definisce le priorità da seguire per soddisfare i requisiti dello standard NIST 800-53. Il piano di azione è stato sviluppato in collaborazione con Protiviti, un partner Microsoft specializzato nella conformità alle normative. 
 
 ## <a name="action-plan-outcomes"></a>Obiettivi del piano di azione
 
