@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 13267597bb29708fcf477a79168e6873a7ccdd90
-ms.sourcegitcommit: b8dd1cb1da936f2b7c9ed621bce6ef5b3588427c
+ms.openlocfilehash: 6f024337ac134cc830dfb61286e7f8e53d41c169
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37400342"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191221"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novità di Office 365 ATP
 
@@ -40,23 +40,27 @@ Office 365 ATP è disponibile in due piani: Office 365 ATP piano 1 e Office 365 
 
 Office 365 ATP Plan 2 è incluso in Office 365 Enterprise E5, Office 365 Education a5 e Microsoft 365 Enterprise E5. Office 365 ATP Plan 1 è incluso in Microsoft 365 business. Se l'abbonamento corrente non include Office 365 ATP, [contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644)e vedere in che modo ATP può funzionare per la propria organizzazione. 
 
+## <a name="november-2019"></a>Novembre 2019
+
+- [Consultare le nuove funzionalità di rilevamento e risposta degli utenti compromesse (Preview)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) (Office 365 ATP Plan 2)
+
 ## <a name="september-2019"></a>Settembre 2019
 
-- [Sfruttare la risposta degli incidenti automatici (Air) in office 365](automated-investigation-response-office.md) (Office 365 ATP piano 2)
+- [Utilizzare la risposta automatizzata agli incidenti (Air) in office 365](automated-investigation-response-office.md) (Office 365 ATP piano 2)
 
 - [Integrazione con office 365 ATP Air Events Using the office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)
 
 - [Visualizzare le intestazioni di posta elettronica e scaricare il corpo del messaggio di posta elettronica](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body) (Office 365 ATP piano 1 o piano 2)
 
-## <a name="august-2019"></a>2019 agosto
+## <a name="august-2019"></a>Agosto 2019
 
 - [Visualizzare la cronologia della posta elettronica](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Office 365 ATP piano 1 o piano 2)
 
-## <a name="july-2019"></a>2019 luglio
+## <a name="july-2019"></a>Luglio 2019
 
 - [Controllare l'azione di recapito e la posizione dei messaggi di posta elettronica](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Office 365 ATP piano 1 o 2)
 
- ## <a name="june-2019"></a>2019 giugno
+ ## <a name="june-2019"></a>Giugno 2019
 
 - [Visualizzare i dati relativi agli URL di phishing e fare clic su Verdet](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP piano 1 o piano 2)
 

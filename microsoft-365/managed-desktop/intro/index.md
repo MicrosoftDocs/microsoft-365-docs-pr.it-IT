@@ -5,46 +5,104 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 10/24/2018
-ms.openlocfilehash: 45baa63fc475917a10c87cc66d1346af48479645
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: a0f48fefcbb77f5972b91f7fbfbd9dffa6ad7f32
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38012037"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191206"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Cos'è Microsoft Managed Desktop?
 
-<!--from Overview-->
 
-Siamo sempre alla ricerca di modi per rendere più produttivo e sicuro il posto di lavoro del cliente. L'utilizzo del servizio Microsoft 365 inizia con l'abilitazione dei dipendenti a collaborare in un ambiente creativo, sicuro, per dispositivi e app.
+Microsoft Managed Desktop è un servizio basato su cloud che riunisce [microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (tra cui [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise e [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) e aggiunge queste caratteristiche:
 
-Microsoft Managed Desktop si spinge ulteriormente a combinare la potenza di Microsoft 365 Enterprise su un dispositivo moderno, con Gestione endpoint, protezione e sicurezza forniti ed eseguiti da Microsoft.
+- Distribuzione del dispositivo per gli utenti finali
+- Gestione e operazioni del servizio IT
+- Monitoraggio e risposta alla sicurezza
+- Supporto per gli utenti finali
+
+Microsoft Managed Desktop offre una soluzione per molte delle sfide che le aziende e i loro utenti oggi offrono:
+- La transizione al mondo agile del software come servizio è scoraggiante.
+- Gli utenti finali desiderano un'esperienza di lavoro connessa e abilitata.
+- Molti processi di gestione e sicurezza IT correnti sono obsoleti, intensi in termini di tempo e costosi.
+- Le aziende desiderano concentrarsi su ciò che li rende in modo univoco efficace, anziché mantenere l'infrastruttura digitale.
+
+Gli utenti finali apprezzeranno le versioni più recenti di Windows 10 e Office 365 ProPlus Apps (e molto altro ancora), utilizzando dispositivi e software curati e rigorosamente testati per ottimizzare le prestazioni e l'affidabilità. Inoltre, non dovrai mai preoccuparti di mantenere aggiornato questo software perché succede automaticamente, seguendo una sequenza di implementazione accurata che viene monitorata in ogni passaggio della procedura. E i dispositivi registrati sono monitorati 24x7 per questioni tecniche e di sicurezza, quindi se qualcosa va storto, la guida sarà in corso.
 
 
-<table>
-<tr><th>Delizia gli utenti finali</th><th>Empower IT</th><th>Eseguito da Microsoft</th></tr>
-<tr><td><p>Dispositivo moderno</p><p>Windows 10</p><p>Office 365 ProPlus</p><p>Sicurezza integrata</p><p>Login con riconoscimento facciale</p><p>Sempre aggiornato</p></td><td><p>Sicurezza integrata</p><p>Approfondimenti di azione</p><p>Supporto per le operazioni</p><p>Linee guida di esperti di Microsoft</p></td><td><p>Team per le operazioni di sicurezza</p><p>Monitoraggio dello stato</p><p>Backup del cloud per i dati</p><p>supporto per gli utenti finali 24x7</p></td></tr>
-</table>
+## <a name="unique-to-microsoft-managed-desktop"></a>Univoco per Microsoft Managed Desktop
 
-Microsoft Managed Desktop offre ai clienti una soluzione IT completa che delizia gli utenti e libera le risorse IT per attività più importanti. Questo servizio è stato sviluppato in base ai commenti e suggerimenti che spesso si sentono:
-- Gli utenti desiderano la tecnologia più recente.
-- Voglio costi più prevedibili.
-- Voglio concentrarmi sul mio core business. 
-- Sto annegando in complessità. 
-- Voglio essere più strategico. 
-- È difficile trovare un numero sufficiente di talento.  
+Naturalmente non c'è nulla che impedisca di ottenere e gestire i propri dispositivi e le distribuzioni di Microsoft 365. Che cosa offre Microsoft Managed Desktop oltre questo?
 
-Microsoft Managed Desktop offre la migliore esperienza utente con la tecnologia più recente, il tutto supportato da Microsoft. 
+Per gli utenti finali:
 
-## <a name="additional-resources"></a>Risorse aggiuntive
-- [Descrizione del servizio Microsoft Managed Desktop](../service-description/index.md)
-- [Prerequisiti di Microsoft Managed Desktop](../get-ready/prerequisites.md).
+- Tempi di avvio per i dispositivi Microsoft Managed Desktop circa un quarto lungo.
+- Almeno due volte la durata della batteria
+- Circa un terzo del numero di arresti anomali di dispositivo all'anno
+- Mobilità del dispositivo tramite il [roaming dello stato dell'organizzazione](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), consentendo agli utenti di avere la stessa esperienza indipendentemente dal dispositivo di accesso
+
+Per gli amministratori IT:
+
+- Insights dashboard costantemente aggiornati su utilizzo, affidabilità, integrità dei dispositivi e altri dati su dispositivi e utenti
+- Circa *un decimo* della quantità di tempo necessaria per aggiornare il 95% dei dispositivi
+- Più tempo per concentrarsi su altre attività di amministrazione IT, grazie alla [gestione dei dispositivi](#device-management) fornita dal servizio.
+- Maggiore consapevolezza delle prestazioni dei dispositivi e delle app e l'avvertimento precoce dei problemi di sicurezza dal [monitoraggio del dispositivo](#device-monitoring).
+
+## <a name="device-management"></a>Gestione dei dispositivi
+Microsoft Managed Desktop assume la responsabilità di gestire i dispositivi registrati e il software Microsoft che utilizzano.
+
+- **Hardware:** Invece del reparto IT che ha a disposizione per la ricerca e il testing dei dispositivi (e dei relativi driver), i dispositivi specifici vengono accuratamente testati da Microsoft Managed Desktop, ottenendo un [elenco curato di dispositivi](../service-description/device-list.md) che soddisfano i requisiti di prestazioni a livello aziendale e che sono garantiti per funzionare con il servizio. È possibile ottenere i dispositivi manualmente (o collaborare con un partner) o riutilizzare i dispositivi già presenti, purché siano presenti nell'elenco approvato. La registrazione dei dispositivi è semplice e semplice e, prima di essere distribuita, è anche possibile [personalizzare](../working-with-managed-desktop/config-setting-overview.md) alcuni aspetti dell'esperienza del dispositivo per gli utenti finali.
+- **Aggiornamenti:** Microsoft Managed Desktop consente di configurare e gestire tutti gli aspetti dei [gruppi di distribuzione](../service-description/updates.md) per la qualità di Windows 10 e gli aggiornamenti delle funzionalità, i driver, il firmware, le definizioni di antivirus e gli aggiornamenti di Office ProPlus. Questo include i test e la verifica estensivi di tutti gli aggiornamenti, garantendo che i dispositivi registrati siano sempre aggiornati e minimizzi le interruzioni, liberando il reparto IT da tale attività in continuazione.
+- **App:** Come parte di Microsoft 365 Enterprise, Microsoft fornisce (e gestisce) diverse applicazioni Microsoft principali. Tuttavia, è probabile che siano presenti anche altre app di cui hai bisogno per la tua azienda. Invece del reparto IT che deve testare, creare pacchetti e distribuire le app che Microsoft ti aiuta a distribuirle e che possono essere utili per l' [app desktop](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) , se necessario. Per ulteriori informazioni, vedere [app in Microsoft Managed Desktop](../get-ready/apps.md).
+
+
+## <a name="device-monitoring"></a>Monitoraggio del dispositivo
+
+È consigliabile mantenere la sicurezza dei dispositivi con un centro operazioni di sicurezza dedicato che monitora i dispositivi e utilizza i dati delle minacce univoche analizzate da Microsoft ogni mese. Queste funzionalità di sicurezza sono state integrate anziché aggiunte in un secondo momento.
+
+È inoltre possibile monitorare l'integrità dei dispositivi e fornire informazioni dettagliate sulle prestazioni del dispositivo. Per ulteriori informazioni [, vedere Gestione e monitoraggio di Microsoft Managed Desktop](../service-description/operations-and-monitoring.md)
+
+
+## <a name="need-more-details"></a>Occorrono maggiori dettagli?
+Per ulteriori informazioni sul valore di Microsoft Managed Desktop, incluse le storie dei clienti, vedere [Microsoft Managed Desktop](https://aka.ms/mmd). Per iniziare, è possibile utilizzare una guida di [orientamento](https://aka.ms/AA6jiam) e un riepilogo di [una pagina](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/microsoft-managed-desktop-data-sheet-v20191114.pdf)scaricabile. È possibile trovare le ultime notizie sul [Blog](https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/bg-p/MicrosoftManagedDesktop)di Microsoft Managed Desktop.
+
+Se Microsoft Managed Desktop sembra appropriato per la propria organizzazione, è possibile approfondire la documentazione aggiuntiva che spiega meglio il servizio, come preparare la propria organizzazione per la registrazione, come iniziare a utilizzare il servizio e successivamente le operazioni in esecuzione. il modo in cui gli utenti finali possono ottenere facilmente assistenza, se necessario. Se si è già pronti per salire a bordo, iniziare a contattare il [team dell'account locale](https://pages.email.office.com/contactmmd/).
+
+**Altre informazioni generali e di sfondo** In primo luogo per i decisori tecnici e aziendali, questi argomenti illustrano in dettaglio la suddivisione dei ruoli e delle responsabilità tra l'organizzazione e Microsoft, maggiori informazioni sulle tecnologie utilizzate in Microsoft Managed Desktop e sul modo in cui il servizio si inserisce in una strategia più ampia come parte del framework ITIL.
+
+- [Ruoli e responsabilità di Microsoft Managed Desktop](roles-and-responsibilities.md)
+- [Tecnologie Microsoft Managed Desktop](technologies.md)
+- [Microsoft Managed Desktop e ITIL](../MMD-and-ITSM.md)
+- [Descrizione del servizio Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
+
+Prepararsi **per la registrazione** In questi argomenti vengono descritti i passaggi necessari per l'organizzazione per prepararsi alla registrazione, inclusa la verifica che l'ambiente soddisfi i prerequisiti, la configurazione delle reti, l'impostazione dei certificati e la preparazione delle app.
+
+- [Prerequisiti per Microsoft Managed Desktop](../get-ready/prerequisites.md)
+- [Configurazione di rete per Microsoft Managed Desktop](../get-ready/network.md)
+- [Preparare l'accesso alle risorse locali per Microsoft Managed Desktop](../get-ready/authentication.md)
+- [Preparare unità mappate per Microsoft Managed Desktop](../get-ready/mapped-drives.md)
+- [Preparare certificati e profili di rete per Microsoft Managed Desktop](../get-ready/certs-wifi-lan.md)
+- [App in Microsoft Managed Desktop](../get-ready/apps.md)
+
+**Introduzione** Quando si è pronti per la registrazione, in questa sezione sono inclusi i passaggi da seguire per partecipare effettivamente al servizio, ottenere e configurare i dispositivi, preparare gli utenti finali e distribuire le app.
+
+- [Aggiungere i contatti di amministratore nel portale di amministrazione di Microsoft Managed Desktop](../get-started/add-admin-contacts.md)
+- [Configurare i dispositivi Microsoft Managed Desktop](../get-started/set-up-devices.md)
+- [Distribuire le app ai dispositivi Microsoft Managed Desktop](../get-started/deploy-apps.md)
+
+**Utilizzo di Microsoft Managed Desktop** In questa sezione sono incluse informazioni sulla vita quotidiana del servizio, ad esempio il modo in cui gli amministratori IT possono ottenere supporto, se necessario, la modalità di supporto per gli utenti finali, la gestione delle app dopo la distribuzione e la modalità di utilizzo delle impostazioni personalizzabili sui dispositivi.
+
+- [Supporto di amministrazione per Microsoft Managed Desktop](../working-with-managed-desktop/admin-support.md)
+- [Ottenere assistenza per gli utenti finali](../working-with-managed-desktop/end-user-support.md)
+- [Impostazioni configurabili-Microsoft Managed Desktop](../working-with-managed-desktop/config-setting-overview.md)
+
+
+
+
 
 <!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  
-## <a name="in-this-section"></a>Contenuto della sezione
-- [Ruoli e responsabilità](roles-and-responsibilities.md)
-- [Tecnologie](technologies.md)
+

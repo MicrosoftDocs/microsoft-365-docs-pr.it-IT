@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul modo in cui il Punteggio di conformità di Microsoft calcola un punteggio personalizzato sulla base delle azioni intraprese per risolvere i rischi e migliorare la conformità alla postura.
-ms.openlocfilehash: e3bb9bc2d9d833eea8c5a9e4a29334d9777aebac
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686346"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793660"
 ---
-# <a name="microsoft-compliance-score-calculation-preview"></a>Calcolo del Punteggio di conformità Microsoft (anteprima)
+# <a name="microsoft-compliance-score-preview-calculation"></a>Calcolo del Punteggio di conformità Microsoft (anteprima)
 
 > [!IMPORTANT]
 > Il Punteggio di conformità non esprime una misura assoluta di conformità organizzativa rispetto a una norma o a un regolamento particolari. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Le raccomandazioni del Punteggio di conformità e del Compliance Manager non devono essere interpretate come garanzia di conformità. Questo servizio è attualmente in anteprima ed è soggetto ai termini e alle condizioni nelle condizioni dei [servizi online](https://go.microsoft.com/fwlink/?linkid=2108910).
@@ -77,9 +77,9 @@ Ogni controllo ha un valore assegnato nel punteggio di conformità basato sul ri
 |**Tipo**|**Punteggio assegnato**|
 |:-----|:-----|
 | Obbligatorio preventivo | 27 |
-| Discrezionale preventiva | 9 |
-| Detective obbligatorio | 3 |
-| Discrezionale detective | 1 |
-| Obbligatorio correttivo | 3 |
-| Discrezionale correttiva | 1 |
+| Discrezionale preventiva | 9  |
+| Detective obbligatorio | 3  |
+| Discrezionale detective | 1  |
+| Obbligatorio correttivo | 3  |
+| Discrezionale correttiva | 1  |
   

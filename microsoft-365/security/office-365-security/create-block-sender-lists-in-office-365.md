@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Blocca le opzioni dell'elenco dei mittenti includono i mittenti bloccati di Outlook, gli elenchi di mittenti/domini di protezione dalla posta indesiderata, gli elenchi di indirizzi IP bloccati e le regole di trasporto di Exchange (ETRs) denominate anche regole
-ms.openlocfilehash: 7f52472f54fb1de93f02b271ec6338da3fb1af93
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032401"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793710"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Creare elenchi di mittenti bloccati in Office 365
 
@@ -49,7 +49,7 @@ La procedura per la configurazione di questo tipo di configurazione è diversa t
 
 Quando si verifica un impatto su più utenti, l'ambito è più ampio ed è necessario utilizzare un criterio di protezione dalla posta indesiderata a livello di mittente/dominio. La procedura dettagliata è disponibile in [configurare il documento dei criteri di filtro della posta indesiderata](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) . Qualsiasi messaggio bloccato tramite questo metodo seguirà l'azione di posta indesiderata configurata nel criterio.
 
-Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci.
+Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci; anche se, sarà possibile immettere 30 voci nel portale. Per aggiungere più di 30 voci, è necessario utilizzare PowerShell.
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Utilizzare le regole di trasporto di Exchange (ETRs) per bloccare mittenti specifici
 

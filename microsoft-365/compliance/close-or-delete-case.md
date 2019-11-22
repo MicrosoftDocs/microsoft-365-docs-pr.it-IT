@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 30697bfafdd7db69444b97345733f3d8ec5be92a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e2719df640a202f5ad88534920ef525f6da97189
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083243"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191171"
 ---
 # <a name="close-or-delete-a-case"></a>Chiudere o eliminare un caso
 
@@ -35,16 +35,16 @@ Quando viene completata la causa legale o l'indagine supportata da un caso di eD
 
 Per chiudere un caso:
 
-1. Dalla pagina **Advanced eDiscovery** , passare al caso.
+1. Nella pagina **Advanced eDiscovery** selezionare il caso che si desidera chiudere.
 
-2. Andare a **Impostazioni** e selezionare **case Information**. 
+2. Nella scheda **Impostazioni** , in **informazioni sul caso**, fare clic su **Seleziona**.
 
-3. Fare clic su **Chiudi caso**. 
+3. Fare clic su **Chiudi caso**.
 
 Per eliminare un caso:
 
-1. Dalla pagina **Advanced eDiscovery** , passare al caso.
+1. Nella pagina **Advanced eDiscovery** selezionare il caso che si desidera eliminare.
 
-2. Andare a **Impostazioni** e selezionare **case Information**. 
+2. Nella scheda **Impostazioni** , in **informazioni sul caso**, fare clic su **Seleziona**.
 
 3. Fare clic su **Delete case**. 

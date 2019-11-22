@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Se si vuole essere sicuri di ricevere la posta da un mittente specifico, poiché si considera attendibile l'elenco dei messaggi consentiti in un criterio di filtro posta indesiderata nell'interfaccia di amministrazione di Exchange.
-ms.openlocfilehash: 2a161573e3b51f12cd7582df26a021fab3f8de84
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033691"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793680"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Creare elenchi di mittenti attendibili in Office 365
 
@@ -87,7 +87,7 @@ Quando non è possibile utilizzare ETRs per consentire a livello globale un mitt
 
 L'opzione meno desiderabile consiste nell'autorizzare il mittente/dominio. Questa opzione dovrebbe essere evitata *se possibile* , poiché ignora completamente la protezione da posta indesiderata/spoofing/phishing e non valuta l'autenticazione del mittente. Questo metodo aumenta il rischio di ricezione di messaggi di posta elettronica da parte di attori non validi ed è consigliato solo temporaneamente e solo quando si esegue il test. La procedura dettagliata è disponibile in [configurare il documento dei criteri di filtro della posta indesiderata](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) .
 
-Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci.
+Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci; anche se, sarà possibile immettere 30 voci nel portale. Per aggiungere più di 30 voci, è necessario utilizzare PowerShell.
 
 > [!CAUTION]
 > La configurazione di criteri di protezione da posta indesiderata per *consentire il dominio mittente/Consenti* genera messaggi che ignorano il filtro posta indesiderata per un messaggio proveniente da mittenti nell'elenco Consenti oppure b) eventuali mittenti provenienti da un dominio consentito. Questo metodo aumenta significativamente il rischio che gli spammer possano falsificare il dominio di invio (o rappresentare l'indirizzo di posta elettronica completo), che ignora tutti i filtri per la posta indesiderata, i controlli di autenticazione del mittente e invierà il messaggio direttamente nella posta in arrivo di una persona.

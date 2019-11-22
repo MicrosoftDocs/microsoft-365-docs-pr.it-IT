@@ -14,23 +14,23 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Le opzioni avanzate per il filtro della posta indesiderata offrono agli amministratori la possibilità di esaminare vari attributi di contenuto di un messaggio. La presenza di tali attributi in un messaggio ne aumenta il punteggio posta indesiderata, aumentando così la probabilità di essere identificato come posta indesiderata, o lo contrassegna come posta indesiderata. Le opzioni ASF sono mirate e specifiche proprietà dei messaggio, ad esempio tag HTML e reindirizzamento URL, che in genere si trovano nei messaggi di posta indesiderata.
-ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bfb559ece8a69f0d641cdb2ad552d7e831eda416
+ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084557"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793700"
 ---
 # <a name="advanced-spam-filtering-options"></a>Opzioni avanzate per il filtraggio della posta indesiderata
+
+> [!NOTE]
+> Le impostazioni del filtro di protezione da posta indesiderata avanzate dei criteri di protezione da posta indesiderata sono attualmente obsolete. Le impostazioni consigliate devono essere **disattivate.** Le funzioni disponibili nel filtro di posta indesiderata avanzato sono state integrate in altre parti dello stack di filtro.
 
 Le opzioni avanzate per il filtro della posta indesiderata offrono agli amministratori la possibilità di esaminare vari attributi di contenuto di un messaggio. La presenza di tali attributi in un messaggio ne aumenta il punteggio posta indesiderata, aumentando così la probabilità di essere identificato come posta indesiderata, o lo contrassegna come posta indesiderata. Le opzioni ASF sono mirate e specifiche proprietà dei messaggio, ad esempio tag HTML e reindirizzamento URL, che in genere si trovano nei messaggi di posta indesiderata.
   
 L'abilitazione delle opzioni AFS è un approccio aggressivo al filtraggio della posta indesiderata e i messaggi filtrati con queste opzioni non possono essere segnalati come falsi positivi. Tali messaggi possono essere identificati tramite notifiche periodiche di posta indesiderata all'utente finale e vengono salvati dalla quarantena di posta indesiderata. Inoltre possono essere identificati tramite il testo X-header che è specifico per ogni opzione ASF e che appare nell'intestazione Internet dei messaggi cui è stata collegata un'opzione ASF. Per ulteriori informazioni, vedere [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md).
   
 Le opzioni ASF possono essere attivate, disattivate o impostate in modalità test quando si modificano i criteri di filtro contenuto. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md). La modalità di test non è disponibile per il rapporto di **mancato recapito**, **record SPF: non riuscito**, **filtro ID mittente condizionale: errore non riuscito**e opzioni di **posta in blocco** . 
-  
-> > [!TIP]
->  Valutare l'abilitazione delle opzioni ASF in modalità test per ottimizzare il blocco della posta indesiderata in base al proprio ambiente. Per i clienti con elevate percentuali di posta indesiderata per specifiche opzioni ASF, si consiglia di verificare tali opzioni prima di implementarle nell'ambiente di produzione. Se si è preoccupati per il phishing nell'organizzazione, abilitare l'opzione **record SPF: non riuscito** . 
   
 Nella tabella seguente viene descritta ciascuna opzione avanzata di filtraggio della posta indesiderata.
   

@@ -14,41 +14,53 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 446f3f2588a79cb328476db490f1f555448b5ce7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8eadfbeb1a78edd12129c97dc3144a45c5c409cf
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084775"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191271"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Eseguire query sui dati in un insieme da rivedere
 
-Nella maggior parte dei casi, sarà utile essere in grado di approfondire gli elementi presenti in un set di revisione e organizzarli per la revisione in modo più efficiente. Le query all'interno di un set di revisione consentono di eseguire questa operazione consentendo di concentrarsi su un sottoinsieme di documenti che soddisfano i criteri definiti dall'utente in una sola volta.
+Nella maggior parte dei casi, sarà utile essere in grado di approfondire i dati in un set di revisione e organizzare tali dati per facilitare una revisione più efficiente. L'utilizzo di query in un set di revisione consente di concentrarsi su un sottoinsieme di documenti che soddisfano i criteri della revisione.
 
-## <a name="creating-and-running-a-query-within-a-review-set"></a>Creazione e esecuzione di una query all'interno di un set di Revisione
+## <a name="creating-and-running-a-query-in-a-review-set"></a>Creazione e esecuzione di una query in un set di Revisione
 
-Per creare ed eseguire una query all'interno del set di recensioni, fare clic su "nuova query" nel set di recensioni. Dopo aver denominati la query e aver definito le condizioni, fare clic su "Salva" per eseguire la query. Per eseguire una query salvata in precedenza, è sufficiente fare clic sulla query salvata. Fare riferimento ai [campi dei metadati del documento](document-metadata-fields.md) per un elenco di metadati di cui è possibile eseguire la ricerca.
+Per creare ed eseguire una query sui documenti in un set di revisione, fare clic su **nuova query** nel set di revisione. Dopo aver denominato la query e aver definito le condizioni, fare clic su **Salva** per salvare ed eseguire la query. Per eseguire una query salvata in precedenza, fare clic su una query salvata. 
 
-## <a name="building-your-query"></a>Creazione di una query
+![Esaminare le query di set](media/AeDReviewSetQueries.png)
 
-È possibile creare la query utilizzando una combinazione di schede di condizione e lingua di query nella scheda condizione parole chiave. È possibile raggruppare le schede delle condizioni insieme come blocco per creare una query più complessa.
+## <a name="building-a-review-set-query"></a>Creazione di una query del set di Revisione
 
-### <a name="condition-card"></a>Scheda condizione
+È possibile creare una query utilizzando una combinazione di schede di condizione e lingua di query nella scheda condizione parole chiave. È inoltre possibile raggruppare le schede delle condizioni insieme come blocco (denominato *gruppo di condizioni*) per creare una query più complessa. Per un elenco e una descrizione delle proprietà dei metadati di cui è possibile eseguire la ricerca, vedere [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+
+### <a name="condition-cards"></a>Schede delle condizioni
 
 Tutti i campi ricercabili in un set di revisione dispongono di una scheda di condizione corrispondente che è possibile utilizzare per creare la query.
 
 Sono disponibili più tipi di schede di condizione:
-- FREETEXT: la scheda di stato FREETEXT viene utilizzata per i campi di testo, ad esempio subject. È possibile elencare più termini di ricerca separandoli con una virgola.
-- Data: la scheda condizione data viene utilizzata per i campi data, ad esempio la data dell'Ultima modifica.
-- Opzioni di ricerca: la scheda delle opzioni di ricerca fornirà un elenco di valori possibili per il campo specifico del set di revisione. Viene utilizzato per i campi, ad esempio sender, in cui è presente un numero finito di valori possibili nel set di revisione.
-- Keyword: la scheda condizione parola chiave è una specifica istanza della scheda di condizione di FREETEXT che è possibile utilizzare per cercare i termini oppure utilizzare la lingua di query simile a KQL. Per ulteriori informazioni, vedere di seguito.
+
+- FREETEXT: viene utilizzata una scheda di condizione FREETEXT per i campi di testo, ad esempio subject. È possibile elencare più termini di ricerca separandoli con una virgola.
+
+- Data: viene utilizzata una scheda condizione data per i campi data, ad esempio la data dell'Ultima modifica.
+
+- Opzioni di ricerca: una scheda condizione opzioni di ricerca fornirà un elenco di valori possibili per il campo specifico del set di revisione. Viene utilizzato per i campi, ad esempio sender, in cui è presente un numero finito di valori possibili nel set di revisione.
+
+- Keyword: una scheda di condizione di parola chiave è un'istanza specifica di FREETEXT Condition card che è possibile utilizzare per cercare i termini oppure utilizzare la lingua di query KQL-like. Per ulteriori informazioni, vedere di seguito.
 
 ### <a name="query-language"></a>Lingua query
 
-Oltre alle schede delle condizioni, è possibile utilizzare una lingua di query simile a KQL nella scheda Parole chiave per creare la query. Il linguaggio di query supporta la sintassi di KQL standard, come e, o, non e vicino (n). Supporta anche caratteri jolly con caratteri singoli (?) e caratteri jolly (*).
+Oltre alle schede delle condizioni, è possibile utilizzare un linguaggio di query simile a KQL nella scheda Parole chiave per creare la query. Il linguaggio di query per le query dei set di revisione supporta gli operatori booleani standard, ad esempio e, o, non e vicino (n). Supporta anche un carattere jolly con caratteri singoli (?) e un carattere jolly a più caratteri (*).
 
-## <a name="filter"></a>Filtro
+## <a name="using-filters"></a>Utilizzo di filtri
 
-Oltre alle query che è possibile salvare, è possibile sovrapporre ulteriori condizioni al volo ai risultati delle query utilizzando filtri. I filtri differiscono dalle query in pochi modi significativi:
-- I filtri sono transitori (ovvero non sono permanenti su sessioni diverse), mentre le query vengono salvate nel set di revisione.
-- I filtri sono sempre additivi. i filtri verranno applicati in base alla query in vigore al momento, mentre l'applicazione di una query sostituirà la query in effetti.
+Oltre alle query che è possibile salvare, è possibile utilizzare i filtri set di revisione per applicare rapidamente condizioni aggiuntive a una query del set di revisione. In questo modo è possibile affinare ulteriormente i risultati visualizzati da una query del set di revisione. 
+
+![Esaminare i filtri impostati](media/AeDReviewSetFilters.png)
+
+I filtri differiscono dalle query in due modi significativi:
+
+- I filtri sono transitori. Non vengono mantenuti oltre la sessione esistente. In altre parole, non è possibile salvare un filtro. Le query vengono salvate nel set di revisione e vengono accessibili ogni volta che si apre il set di revisione.
+
+- I filtri sono sempre additivi. I filtri vengono applicati oltre alla query del set di revisione corrente. L'applicazione di una query diversa sostituirà i risultati restituiti dalla query corrente.

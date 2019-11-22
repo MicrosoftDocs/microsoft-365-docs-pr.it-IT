@@ -13,18 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5f574fa4fa53e83e2af4ea563c63106e8206c3d5
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+description: Un elenco di tipi di file supportati in Microsoft 365 Advanced eDiscovery. Questo include un elenco dei tipi di file di immagine supportati dalla funzionalità OCR in Advanced eDiscovery.
+ms.openlocfilehash: ff9fdc77226ee476de3fe89a980b2658720749bf
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "38686340"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191241"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipi di file supportati in Advanced eDiscovery
 
-Advanced eDiscovery supporta molti tipi di file a diversi livelli, descritti nella tabella seguente. Questo elenco non è stato completato e verranno aggiunti nuovi tipi di file man mano che si continua il test di convalida. Le tabelle indicano se un tipo di file è supportato per l'estrazione del testo (OCR per le immagini), visualizzabile nel Visualizzatore nativo e supporta anche il Visualizzatore di annotazioni in Advanced eDiscovery.
-
+Advanced eDiscovery supporta molti tipi di file a diversi livelli, descritti nelle tabelle seguenti. Questo elenco non è stato completato e verranno aggiunti nuovi tipi di file man mano che si continua il test di convalida. Queste tabelle indicano se un tipo di file è supportato per l'estrazione del testo (e il riconoscimento ottico dei caratteri o l'estrazione del testo OCR per i file di immagine), visualizzabile nel Visualizzatore nativo e supporta anche il Visualizzatore di annotazioni in Advanced eDiscovery.
 
 ## <a name="archive--container"></a>Archivio/contenitore
 
@@ -115,7 +114,7 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli, descritti nel
 | applicazione/OneNote | Sì | Sì | Sì | Sì | No | . One |
 ||||||||
 
-## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
+## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
 
 | Tipo MIME | Identificazione file | Estrazione dei metadati | Estrazione del testo | Visualizzatore nativo | Visualizzatore annotazioni | Estensioni possibili |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |

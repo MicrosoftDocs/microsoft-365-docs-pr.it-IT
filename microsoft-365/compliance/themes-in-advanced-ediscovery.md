@@ -14,19 +14,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b26b031b767f23504294880f4424be5042350c71
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ba57a89365c2a76dec215f56d7ed0755f27be12d
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084750"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191207"
 ---
 # <a name="themes"></a>Temi
-In che modo una persona scrive un documento? In genere iniziano con una o più idee che vogliono trasmettere nel documento e compongono l'utilizzo di parole che si allineano con le idee. Più è prevalente un'idea, più le parole che sono correlate a quell'idea tendono ad essere. In questo modo viene spiegato come gli utenti utilizzano i documenti. la cosa importante da leggere è la lettura di un documento e le idee che il documento sta cercando di trasmettere e quali idee vengono visualizzate e quali sono le relazioni tra le idee.
+
+In che modo una persona scrive un documento? In genere iniziano con una o più idee che vogliono trasmettere nel documento e compongono l'utilizzo di parole che si allineano con le idee. Più è prevalente un'idea, più le parole che sono correlate a quell'idea tendono ad essere. In questo modo si informa come gli utenti utilizzano i documenti. La cosa importante da capire dalla lettura di un documento è l'idea che il documento sta cercando di trasmettere, quali sono le idee in cui vengono visualizzate e quali sono le relazioni tra le idee.
 
 Questo può essere esteso a come una persona desidera utilizzare un insieme di documenti. Desiderano vedere quali idee sono presenti nei set e quali documenti si riferiscono a queste idee. Inoltre, se trovano un particolare documento di interesse, vogliono essere in grado di visualizzare i documenti che discutono di idee simili.
 
-Il modulo themes cerca di simulare il modo in cui gli umani ragionano sui documenti, analizzando i "temi" descritti in un set di revisione e assegnando loro i documenti. I temi fanno un ulteriore passo e identifica per documento il "tema dominante"; vale a dire il tema più visualizzato.
+La funzionalità temi in Advanced eDiscovery tenta di simulare il modo in cui gli umani ragionano sui documenti, analizzando i *temi* discussi in un set di revisione e assegnando un tema ai documenti nel set di revisione. In Advanced eDiscovery, i temi fanno un ulteriore passo avanti e identificano il *tema dominante* in ciascun documento. Il tema dominante è quello che viene visualizzato più spesso in un documento.
 
 ## <a name="how-does-themes-work"></a>Modalità di funzionamento dei temi
-Themes analizza i documenti con testo in un set di revisione per analizzare i temi comuni che vengono visualizzati tra i documenti. Assegna quindi tali temi ai documenti in cui vengono visualizzati. Le etichette vengono inoltre contrassegnate con le parole utilizzate nei documenti rappresentativi del tema. Poiché un documento può avere più di un argomento, in molti casi a un documento sono assegnati più temi. Il tema più prominente in un documento è designato come tema dominante.
+
+La funzionalità temi analizza i documenti con testo in un set di revisione per analizzare i temi comuni visualizzati in tutti i documenti del set di revisione. Advanced eDiscovery assegna tali temi ai documenti in cui vengono visualizzati. Contrassegna inoltre ogni tema con le parole utilizzate nei documenti rappresentativi del tema. Poiché un documento può contenere diversi tipi di argomenti, Advanced eDiscovery spesso assegna più temi ai documenti. Il tema più prominente in un documento è designato come tema dominante.

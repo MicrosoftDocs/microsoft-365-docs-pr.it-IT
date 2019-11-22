@@ -13,43 +13,71 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5aa83f4f736c239b1cdfe940f27cfaa4b981ff64
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Configurare le impostazioni avanzate di eDiscovery che si applicano a tutti i set di revisione in un caso. Sono incluse le impostazioni per l'analisi e l'OCR.
+ms.openlocfilehash: f34f10c08be582389346b3aedc899bd9f4906a93
+ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083221"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191141"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurare le impostazioni di ricerca e analisi
 
+È possibile configurare le impostazioni per ogni caso eDiscovery avanzato per controllare la funzionalità seguente.
+
+- Quasi duplicati e threading della posta elettronica
+- Temi
+- Query set di revisione generata automaticamente
+- Ignora testo
+- Riconoscimento ottico del carattere
+
+Per configurare le impostazioni di ricerca e analisi per un caso:
+
+1. Nella pagina **Advanced eDiscovery** selezionare il caso.
+
+2. Nella scheda **Impostazioni** , in **Search & Analytics**, fare clic su **Seleziona**.
+
+   Viene visualizzata la pagina Impostazioni case. Queste impostazioni vengono applicate a tutti i set di revisione in un caso.
+
+   ![Configurare le impostazioni di analisi e ricerca per un caso avanzato di eDiscovery](media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi duplicati e threading della posta elettronica
 
-In questa sezione, è possibile impostare parametri per il rilevamento duplicati, vicino al rilevamento duplicati e al threading tramite posta elettronica.
+In questa sezione, è possibile impostare parametri per il rilevamento duplicati, vicino al rilevamento duplicati e al threading tramite posta elettronica. Per ulteriori informazioni, vedere [near duplicate detection](near-duplicates.md) and [email Threading](email-threading.md).
 
-- Attiva/disattiva: Includi rilevamento duplicato, vicino al rilevamento duplicato e threading della posta elettronica come parte del flusso di analisi se abilitato. Poiché si basano sull'uno dall'altro, è necessario abilitarli o disabilitarli tutti.
+- **Quasi duplicati/threading della posta elettronica:** Quando si esegue l'analisi dei dati in un set di revisione, quando si attiva il rilevamento duplicati, vicino al rilevamento duplicati e al threading della posta elettronica, vengono inclusi come parte del flusso di lavoro.
 
-- Soglia: se il livello di somiglianza di due documenti si trova al di sopra della soglia, verranno inseriti nello stesso set di duplicati vicino.
+- **Soglia di somiglianza tra documenti e messaggi di posta elettronica:** Se il livello di somiglianza per due documenti è superiore alla soglia, entrambi i documenti vengono inseriti nello stesso set di duplicati vicino.
 
-- Nascondi i duplicati per impostazione predefinita: se questa impostazione è attivata, per impostazione predefinita verrà applicato un filtro per nascondere i documenti duplicati nel set di verifica. Se necessario, è possibile rimuovere manualmente il filtro nel set di verifica.
-
-- Numero minimo/massimo di parole: quasi duplicati e il threading della posta elettronica verrà eseguito solo sui documenti che hanno almeno il numero minimo di parole e il numero massimo di parole.
-Per ulteriori informazioni, vedere [near duplicate detection](near-duplicates.md) and [email Threading](email-threading.md).
+- **Numero minimo/massimo di parole:** Queste impostazioni specificano che l'analisi nei pressi dei duplicati e del threading della posta elettronica viene eseguita solo sui documenti che hanno almeno il numero minimo di parole e al massimo il numero di parole.
 
 ## <a name="themes"></a>Temi
 
-In questa sezione, è possibile impostare parametri per i temi.
+In questa sezione, è possibile impostare parametri per i temi. Per ulteriori informazioni, vedere [Themes](themes-in-advanced-ediscovery.md).
 
-- Abilita/Disabilita: Includi temi il clustering come parte del flusso di analisi se abilitato.
-- Regolare il numero massimo di temi dinamicamente dinamicamente: in alcuni casi, non sono disponibili documenti sufficienti per produrre il numero di temi desiderato. Se questa impostazione è attivata, anziché tentare di forzare il numero massimo di temi desiderato, il sistema regola in modo dinamico il numero massimo di temi.
-- Numero massimo di temi: numero desiderato di temi
-- Includere numeri nei temi: quando è abilitata, includerà i numeri durante la generazione di temi.  
+- **Temi:** Quando si attiva l'operazione, il clustering dei temi viene eseguito come parte del flusso di lavoro quando si esegue l'analisi dei dati in un set di revisione.
 
-## <a name="optical-character-recognition-ocr"></a>Riconoscimento ottico caratteri (OCR)
+- **Numero massimo di temi:** Specifica il numero massimo di temi che possono essere generati quando si esegue l'analisi dei dati in un set di revisione.
 
-Quando questa impostazione è attivata, l'OCR verrà eseguito su immagini che vengono ingerite nei set di revisione in modo che possano essere ricercabili.
+- **Includere numeri nei temi:** Quando si attivano i numeri (che identificano un tema) vengono inclusi durante la generazione di temi. 
+
+- **Modificare dinamicamente il numero massimo di temi:** In determinate situazioni, potrebbe non essere disponibile un numero sufficiente di documenti in un set di riesame per ottenere i numeri di temi desiderati. Quando questa impostazione è abilitata, Advanced eDiscovery regola in modo dinamico il numero massimo di temi anziché tentare di applicare il numero massimo di temi.
+
+## <a name="review-set-query"></a>Verifica set di query
+
+Se si seleziona la casella **di controllo crea automaticamente una richiesta di ricerca salvata dopo l'analisi** , la query Advanced eDiscovery autogenerates Review set viene chiamata per la **revisione.** 
+
+![La query per la revisione generata automaticamente](media/AeDForReviewQuery.png)
+
+Questa query sostanzialmente filtra gli elementi duplicati dal set di revisione. In questo modo è possibile esaminare gli elementi univoci nel set di revisione. Questa query viene creata solo quando si esegue analisi per qualsiasi set di revisione nel caso. Per ulteriori informazioni, vedere [query sui dati di un](review-set-search.md)set di revisione.
 
 ## <a name="ignore-text"></a>Ignora testo
 
-Esistono casi in cui alcuni testi diminuiscono la qualità dell'analisi, ad esempio le dichiarazioni di non responsabilità lunghe che vengono aggiunte a determinati messaggi di posta elettronica, indipendentemente dal contenuto del messaggio. Se si è a conoscenza di tali casi, è possibile escludere questo testo da analisi specificando il testo (RegEx è supportato) e quali moduli devono essere esclusi per il testo.
+Vi sono situazioni in cui un determinato testo diminuirà la qualità dell'analisi, ad esempio le dichiarazioni di non responsabilità lunghe che vengono aggiunte ai messaggi di posta elettronica indipendentemente dal contenuto del messaggio di posta elettronica. Se si conosce il testo che deve essere ignorato, è possibile escluderlo da analisi specificando la stringa di testo e la funzionalità di analisi (quasi duplicati, Threading di posta elettronica, temi e pertinenza) in base alla quale il testo dovrebbe essere escluso. Anche l'utilizzo di espressioni regolari (RegEx) come testo ignorato è supportato. 
+
+## <a name="optical-character-recognition-ocr"></a>Riconoscimento ottico caratteri (OCR)
+
+Quando questa impostazione è attivata, l'OCR verrà eseguito sui file di immagine aggiunti ai set di revisione in modo che il testo dell'immagine possa essere esaminato, cercato, taggato e analizzato. Per ulteriori informazioni, vedere:
+
+- [Aggiungere i risultati della ricerca a un insieme da rivedere](add-data-to-review-set.md#optical-character-recognition)
+- [Tipi di file di immagine supportati](supported-filetypes-ediscovery20.md#image)
