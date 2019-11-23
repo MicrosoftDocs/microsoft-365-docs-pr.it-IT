@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
-ms.openlocfilehash: 6f3d11a510756871d6688dc948e2a50b4d59406d
-ms.sourcegitcommit: eed48c21790d31a85292f7e39bf1e30c42f10d36
+ms.openlocfilehash: f758213802d32b4154924d1ab4a3d8bbff49e717
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37523631"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204262"
 ---
 # <a name="unverified-sender"></a>Mittente non verificato
 
 > [!NOTE] 
-> Questi aggiornamenti stanno per essere implementati e potrebbero non essere ancora disponibili per tutti gli utenti.
+> Questi aggiornamenti stanno per essere implementati e potrebbero non essere ancora disponibili per tutti gli utenti. Questa funzionalità è supportata per gli utenti di outlook.com Enterprise. Non è attualmente disponibile per i consumer outlook.com.
 
 Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
 
@@ -51,11 +51,11 @@ Se si è un cliente di Office 365, è possibile gestire questa funzionalità tra
 
     ![Modifica dei mittenti non autenticati nell'interfaccia grafica.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
-- Se un amministratore ha identificato un falso positivo e un mittente non deve ricevere il trattamento del mittente non verificato, è possibile eseguire una delle azioni seguenti per aggiungere il mittente all'elenco Consenti spoof di spoofing Intelligence:
+- Se un amministratore ha identificato un falso positivo e un mittente non deve ricevere il trattamento del mittente non verificato, è possibile eseguire una delle operazioni seguenti per aggiungere il mittente all'elenco Consenti spoofing di informazioni spoof:
         
-    - Aggiungere la coppia di domini tramite lo spoofing Intelligence Insight. Per ulteriori informazioni, vedere Procedura dettagliata: spoofing Intelligence Insight
+    - Aggiungere la coppia di domini tramite lo spoofing Intelligence Insight. Per ulteriori informazioni, vedere [procedura dettagliata: spoofing Intelligence Insight](https://docs.microsoft.com/microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight).
                 
-    - Aggiungere la coppia di domini tramite il cmdlet PhishFilterPolicy. Per ulteriori informazioni, vedere Set-PhishFilterPolicy e anti-spoofing Protection in Office 365
+    - Aggiungere la coppia di domini tramite il cmdlet PhishFilterPolicy. Per ulteriori informazioni, vedere [set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) e [set up Office 365 ATP anti-phishing and anti-phishing Policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
 
 Inoltre, non viene applicato il trattamento del mittente non verificato se è stato recapitato nella posta in arrivo tramite un elenco di indirizzi consentiti, incluse le regole di trasporto della posta elettronica (ETRs), l'elenco dei domini attendibili (criterio di protezione dalla posta indesiderata), l'elenco dei mittenti attendibili o un utente che ha impostato questo utente come "mittente sicuro" posta in arrivo.
 

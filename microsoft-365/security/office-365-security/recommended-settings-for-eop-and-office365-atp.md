@@ -13,25 +13,26 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: 9ef3344bd6497495d3d2279f570a8090d4fa4573
-ms.sourcegitcommit: d8d001c03c28c10bea005d1c9b5f4a8f393af706
+ms.openlocfilehash: d49f465aa66cd3c720e83b28569da2770300067e
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38677535"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204258"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
-**Exchange Online Protection (EOP)** è il fulcro della sicurezza per le sottoscrizioni di Office 365 e consente ai messaggi di posta elettronica dannosi di raggiungere le cassette postali dei dipendenti. Tuttavia, con attacchi nuovi e sofisticati che emergono ogni giorno, sono spesso necessarie protezioni migliorate. **Office 365 Advanced Threat Protection (ATP)** ATP piano 1 o ATP piano 2 contengono funzionalità aggiuntive che forniscono agli amministratori più livelli di sicurezza, controllo ed indagini. 
+**Exchange Online Protection (EOP)** è il fulcro della sicurezza per le sottoscrizioni di Office 365 e consente ai messaggi di posta elettronica dannosi di raggiungere le cassette postali dei dipendenti. Tuttavia, con attacchi nuovi e sofisticati che emergono ogni giorno, sono spesso necessarie protezioni migliorate. **Office 365 Advanced Threat Protection (ATP)** ATP piano 1 o ATP piano 2 contengono funzionalità aggiuntive che forniscono agli amministratori più livelli di sicurezza, controllo ed indagini.
 
-Anche se si autorizza gli amministratori della sicurezza a personalizzare le impostazioni di sicurezza, esistono due livelli di sicurezza in EOP e Office 365 ATP che è consigliabile: **standard** e **strict**. L'ambiente e i bisogni di ogni cliente sono diversi, ma riteniamo che questi livelli di configurazioni del filtro della posta consentano di evitare che la posta indesiderata raggiunga la posta in arrivo dei dipendenti nella maggior parte delle situazioni. 
+Anche se si autorizza gli amministratori della sicurezza a personalizzare le impostazioni di sicurezza, esistono due livelli di sicurezza in EOP e Office 365 ATP che è consigliabile: **standard** e **strict**. L'ambiente e i bisogni di ogni cliente sono diversi, ma riteniamo che questi livelli di configurazioni del filtro della posta consentano di evitare che la posta indesiderata raggiunga la posta in arrivo dei dipendenti nella maggior parte delle situazioni.
 
 In questo argomento vengono descritte le impostazioni consigliate da Microsoft per proteggere gli utenti di Office 365.
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Protezione da posta indesiderata, anti-malware e anti-phishing in EOP
+
 Le funzionalità di protezione da posta indesiderata, anti-malware e anti-phishing sono caratteristiche di EOP che possono essere configurate dagli amministratori. Si consiglia di eseguire le seguenti configurazioni.
 
-### <a name="anti-spam-policy"></a>Criteri di protezione da posta indesiderata
+### <a name="eop-anti-spam-policy-settings"></a>Impostazioni dei criteri di protezione da posta indesiderata di EOP
 
 |Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---------|---------|---------|---------|
@@ -71,7 +72,7 @@ Nel criterio di protezione da posta indesiderata sono presenti diversi altri par
 |MarkAsSpamNdrBackscatter|
 |MarkAsSpamSpfRecordHardFail|
 
-#### <a name="outbound-spam-filter-policy"></a>Criteri di filtro della posta indesiderata in uscita
+#### <a name="eop-outbound-spam-filter-policy-settings"></a>Impostazioni del filtro per la posta indesiderata in uscita EOP
 
 |Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---------|---------|---------|---------|
@@ -80,7 +81,7 @@ Nel criterio di protezione da posta indesiderata sono presenti diversi altri par
 |Limiti dei destinatari dei criteri di posta indesiderata in uscita-limite giornaliero|800|1000||
 |Azione quando un utente supera i limiti|Impedire all'utente di inviare messaggi di posta elettronica|Impedire all'utente di inviare messaggi di posta elettronica||
 
-### <a name="anti-malware-policy"></a>Criteri anti-malware
+### <a name="eop-anti-malware-policy-settings"></a>Impostazioni dei criteri anti-malware di EOP
 
 |Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---------|---------|---------|---------|
@@ -90,26 +91,28 @@ Nel criterio di protezione da posta indesiderata sono presenti diversi altri par
 |Notifica ai mittenti interni del messaggio non recapitato|Disattivato|Disattivato||
 |Notifica ai mittenti esterni del messaggio non recapitato|Disattivato|Disattivato||
 
-### <a name="anti-phishing-policy"></a>Criteri di anti-phishing
+### <a name="eop-anti-phishing-policy-settings"></a>Impostazioni dei criteri di anti-phishing di EOP
 
 |Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
 |---------|---------|---------|---------|
-|Abilitare la protezione antispoofing|Attivato|Attivato||
+|Abilitare la protezione anti-spoofing|Attivato|Attivato||
 |Abilitazione del mittente non autenticato (tagging)|Attivato|Attivato||
 |Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio|Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari|Mettere in quarantena il messaggio||
 
-## <a name="office-365-advanced-threat-protection-atp-security"></a>Sicurezza di Office 365 Advanced Threat Protection (ATP)
-Ulteriori vantaggi per la sicurezza sono disponibili con una sottoscrizione di Office 365 Advanced Threat Protection. Per le notizie e le informazioni più recenti, è possibile visualizzare le [novità di Office 365 ATP](whats-new-in-office-365-atp.md). 
+## <a name="office-365-advanced-threat-protection-security"></a>Protezione avanzata dalle minacce di Office 365
+
+Ulteriori vantaggi per la sicurezza sono disponibili con una sottoscrizione di Office 365 Advanced Threat Protection (ATP). Per le notizie e le informazioni più recenti, è possibile visualizzare le [novità di Office 365 ATP](whats-new-in-office-365-atp.md).
 
 Office 365 ATP include i criteri per i collegamenti sicuri e gli allegati sicuri per evitare che la posta elettronica con allegati potenzialmente dannosi venga recapitata e per impedire agli utenti di fare clic su URL potenzialmente non sicuri.
 
 > [!IMPORTANT]
-> L'anti-phishing avanzato è uno dei vantaggi offerti da un abbonamento ATP di Office 365. Abilitata per impostazione predefinita, l'anti-phishing ***deve*** essere configurato utilizzando i criteri prima di iniziare a filtrare la posta. L'oblio di configurare i criteri di anti-phishing potrebbe espongono gli utenti a messaggi di posta elettronica rischiosi. Assicurarsi di configurare i criteri di anti-phishing dopo l'aggiunta di una sottoscrizione di Office 365 ATP.
+> L'anti-phishing avanzato è uno dei vantaggi offerti da un abbonamento ATP di Office 365. Anche se è abilitato per impostazione predefinita, è ***necessario*** configurare almeno un criterio anti-phishing prima che possa iniziare a filtrare la posta. L'oblio di configurare i criteri di anti-phishing potrebbe espongono gli utenti a messaggi di posta elettronica rischiosi. Assicurarsi di configurare i criteri di anti-phishing dopo l'aggiunta di una sottoscrizione di Office 365 ATP.
 
 Se è stata aggiunta una sottoscrizione di Office 365 ATP all'EOP, impostare le configurazioni seguenti.
 
-### <a name="office-atp-anti-phishing-policy"></a>Criteri di anti-phishing ATP di Office
-I clienti di EOP ottengono un set di criteri anti-phishing di base ma con Office 365 ATP, gli amministratori ottengono altre caratteristiche e controlli per prevenire, rilevare e remidiare gli attacchi.
+### <a name="office-atp-anti-phishing-policy-settings"></a>Impostazioni dei criteri di anti-phishing di Office ATP
+
+I clienti di EOP ottengono un anti-phishing di base come descritto in precedenza, ma Office 365 ATP include altre funzionalità e controlli che consentono di prevenire, rilevare e correggere gli attacchi.
 
 |Nome della funzionalità di sicurezza della rappresentazione|Standard|Rigorosa|Aggiungere commenti|
 |---------|---------|---------|---------|
@@ -128,7 +131,7 @@ I clienti di EOP ottengono un set di criteri anti-phishing di base ma con Office
 
 |Nome della funzionalità di sicurezza spoof|Standard|Rigorosa|Aggiungere commenti|
 |---------|---------|---------|---------|
-|Abilitare la protezione antispoofing|Attivato|Attivato||
+|Abilitare la protezione anti-spoofing|Attivato|Attivato||
 |Abilitazione del mittente non autenticato (tagging)|Attivato|Attivato||
 |Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio|Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari|Mettere in quarantena il messaggio||
 |EnableAuthenticationSafetyTip|True|True|Questa impostazione è disponibile solo in PowerShell|
@@ -161,7 +164,7 @@ Non monitorare quando gli utenti fanno clic su collegamenti sicuri|Disattivato|D
 |Reindirizza l'allegato sul rilevamento|Abilitato|Abilitato|Reindirizzare l'indirizzo di posta elettronica per un amministratore della sicurezza che sa come determinare se l'allegato è un malware o meno|
 |Risposta agli allegati sicuri ATP se si verifica un errore durante l'analisi di malware per gli allegati|Abilitato|Abilitato||
 
-## <a name="miscellaneous-settings-for-eop-or-office-365-atp"></a>Impostazioni varie per EOP o Office 365 ATP
+## <a name="miscellaneous-settings"></a>Miscellaneous settings (Impostazioni varie)
 
 Queste impostazioni riguardano una serie di caratteristiche che non si adattano necessariamente alle categorie specifiche sopra riportate. Alcune di queste impostazioni sono esterne al centro sicurezza & conformità.
 

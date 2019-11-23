@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6eb10fda5df4d21068c9a3194cc4b97ba1afaaf3
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: 0288dfd2ee84f406c4bcdf4a604d1370afeefed7
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982547"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202177"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Ruoli e responsabilità di Microsoft Managed Desktop
 
@@ -41,7 +41,7 @@ Di seguito è riportato un ulteriore gruppo di ruoli e responsabilità comuni ch
 
 Ruolo o responsabilità | Descrizione
 --- | ---
-Gestione delle modifiche | Microsoft invierà una notifica ai clienti, in anticipo, quando dovranno essere apportate modifiche all'ambiente desktop Microsoft gestito. Il cliente deve disporre di un processo di gestione delle modifiche e di un contatto stabilito con Microsoft Managed Desktop Operations team. È inoltre necessario che il cliente disponga di risorse per la revisione e l'approvazione di tali modifiche. Per ulteriori informazioni, vedere [Operations and Monitoring](../service-description/operations-and-monitoring.md).  
+Gestione delle modifiche | Microsoft invierà una notifica ai clienti, in anticipo, quando dovranno essere apportate modifiche all'ambiente desktop Microsoft gestito. Per ulteriori informazioni, vedere [modifiche e comunicazioni del servizio](../service-description/servicechanges.md)<br><br>Il cliente deve disporre di un processo di gestione delle modifiche e di un contatto stabilito con Microsoft Managed Desktop Operations team. È inoltre necessario che il cliente disponga di risorse per la revisione e l'approvazione di tali modifiche. Per ulteriori informazioni, vedere [Operations and Monitoring](../service-description/operations-and-monitoring.md).  
 Gestione delle identità | Il cliente è responsabile della creazione degli account utente, dell'assegnazione degli utenti ai gruppi e dell'aggiornamento dei metadati. 
 Configurazione e gestione di Office 365 ProPlus | Microsoft è responsabile della distribuzione di applicazioni di Office per gli utenti finali e tali applicazioni vengono mantenute aggiornate. <br><br> Il cliente ha la responsabilità di gestire i criteri e i servizi di Office 365, incluse le responsabilità di amministrazione di Exchange Online:<br>-Amministrazione della posta elettronica<br>-Configurazione della cassetta postale e della regola<br>-Gestione in locale di Exchange<br><br>Il cliente è responsabile anche degli strumenti di collaborazione, dell'amministrazione di SharePoint Server, della gestione del dominio, dei criteri di sicurezza e delle informazioni impostati nel portale di amministrazione di Office 365. 
 Supporto per gli utenti finali | Il cliente è responsabile della fornitura del supporto per gli utenti finali per: <br>-Sull'infrastruttura del sito: tutte le connessioni di rete e Internet, l'infrastruttura VPN e la configurazione dei client, le apparecchiature locali per conferenze, stampanti, server proxy e configurazione, firewall.<br><br>-Risorse cloud a livello di azienda: posta elettronica, SharePoint, servizi di collaborazione e altre infrastrutture cloud che si riferiscono all'impronta tecnologica a livello aziendale.<br><br>-Line of business e qualsiasi altra applicazione specifica della società.

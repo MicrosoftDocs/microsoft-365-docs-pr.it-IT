@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: a0f48fefcbb77f5972b91f7fbfbd9dffa6ad7f32
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 7c2cb707f606d6f3f622a72a9fea9fb437626b2b
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191206"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204235"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Cos'è Microsoft Managed Desktop?
 
@@ -35,14 +35,14 @@ Gli utenti finali apprezzeranno le versioni più recenti di Windows 10 e Office 
 
 Naturalmente non c'è nulla che impedisca di ottenere e gestire i propri dispositivi e le distribuzioni di Microsoft 365. Che cosa offre Microsoft Managed Desktop oltre questo?
 
-Per gli utenti finali:
+I criteri e le previsioni di sicurezza offrono agli utenti finali questi vantaggi:
 
 - Tempi di avvio per i dispositivi Microsoft Managed Desktop circa un quarto lungo.
 - Almeno due volte la durata della batteria
 - Circa un terzo del numero di arresti anomali di dispositivo all'anno
 - Mobilità del dispositivo tramite il [roaming dello stato dell'organizzazione](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), consentendo agli utenti di avere la stessa esperienza indipendentemente dal dispositivo di accesso
 
-Per gli amministratori IT:
+Gli amministratori IT traggono vantaggio da queste caratteristiche:
 
 - Insights dashboard costantemente aggiornati su utilizzo, affidabilità, integrità dei dispositivi e altri dati su dispositivi e utenti
 - Circa *un decimo* della quantità di tempo necessaria per aggiornare il 95% dei dispositivi
@@ -65,7 +65,7 @@ Microsoft Managed Desktop assume la responsabilità di gestire i dispositivi reg
 
 
 ## <a name="need-more-details"></a>Occorrono maggiori dettagli?
-Per ulteriori informazioni sul valore di Microsoft Managed Desktop, incluse le storie dei clienti, vedere [Microsoft Managed Desktop](https://aka.ms/mmd). Per iniziare, è possibile utilizzare una guida di [orientamento](https://aka.ms/AA6jiam) e un riepilogo di [una pagina](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/microsoft-managed-desktop-data-sheet-v20191114.pdf)scaricabile. È possibile trovare le ultime notizie sul [Blog](https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/bg-p/MicrosoftManagedDesktop)di Microsoft Managed Desktop.
+Per ulteriori informazioni sul valore di Microsoft Managed Desktop, incluse le storie dei clienti, vedere [Microsoft Managed Desktop](https://aka.ms/mmd). Per iniziare, è possibile utilizzare una guida di [orientamento](https://aka.ms/AA6jiam) e un riepilogo di [una pagina](https://aka.ms/AA6ob3h)scaricabile. È possibile trovare le ultime notizie sul [Blog](https://aka.ms/AA6l2dd)di Microsoft Managed Desktop.
 
 Se Microsoft Managed Desktop sembra appropriato per la propria organizzazione, è possibile approfondire la documentazione aggiuntiva che spiega meglio il servizio, come preparare la propria organizzazione per la registrazione, come iniziare a utilizzare il servizio e successivamente le operazioni in esecuzione. il modo in cui gli utenti finali possono ottenere facilmente assistenza, se necessario. Se si è già pronti per salire a bordo, iniziare a contattare il [team dell'account locale](https://pages.email.office.com/contactmmd/).
 
@@ -87,9 +87,14 @@ Prepararsi **per la registrazione** In questi argomenti vengono descritti i pass
 
 **Introduzione** Quando si è pronti per la registrazione, in questa sezione sono inclusi i passaggi da seguire per partecipare effettivamente al servizio, ottenere e configurare i dispositivi, preparare gli utenti finali e distribuire le app.
 
-- [Aggiungere i contatti di amministratore nel portale di amministrazione di Microsoft Managed Desktop](../get-started/add-admin-contacts.md)
+- [Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione](../get-started/add-admin-contacts.md)
+- [Modificare l'accesso condizionale](../get-started/conditional-access.md)
+- [Assegnare licenze](../get-started/assign-licenses.md)
+- [Installare il portale aziendale di Intune nei dispositivi](../get-started/company-portal.md)
+- [Abilitare Enterprise State Roaming](../get-started/enterprise-state-roaming.md)
 - [Configurare i dispositivi Microsoft Managed Desktop](../get-started/set-up-devices.md)
-- [Distribuire le app ai dispositivi Microsoft Managed Desktop](../get-started/deploy-apps.md)
+- [Preparare gli utenti a usare i dispositivi](../get-started/get-started-devices.md)
+- [Distribuire le app ai dispositivi](../get-started/deploy-apps.md)
 
 **Utilizzo di Microsoft Managed Desktop** In questa sezione sono incluse informazioni sulla vita quotidiana del servizio, ad esempio il modo in cui gli amministratori IT possono ottenere supporto, se necessario, la modalità di supporto per gli utenti finali, la gestione delle app dopo la distribuzione e la modalità di utilizzo delle impostazioni personalizzabili sui dispositivi.
 

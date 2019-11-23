@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per Exchange Online Protection (EOP) per eseguire una configurazione corretta ed evitare che si verifichino errori comuni.
-ms.openlocfilehash: 2a6a05093dc27b3e6c681a6f66474c3499d65cfd
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 95b415038fdddd1548b23edb89921084d70850c6
+ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37440553"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39204245"
 ---
 # <a name="best-practices-for-configuring-eop"></a>Procedure consigliate per la configurazione di Exchange Online Protection
 
@@ -31,16 +31,16 @@ Se nell'organizzazione sono già presenti account utente in un ambiente Active D
 
 ## <a name="spf-record-customization-to-help-prevent-spoofing"></a>Personalizzazione del record SPF per prevenire spoofing
 
-Quando si configura EOP, si aggiunge un record SPF (Sender Policy Fremework)  per EOP ai record DNS. Il record SPF consente di evitare lo spoofing. Per ulteriori informazioni sul modo in cui un record SPF impedisce lo spoofing e come è possibile aggiungere gli indirizzi IP locali al record SPF, vedere [set up SPF in Office 365 per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+Quando si configura EOP, è stato aggiunto un record SPF (Sender Policy Framework) per EOP ai record DNS. Il record SPF consente di evitare lo spoofing. Per ulteriori informazioni sul modo in cui un record SPF impedisce lo spoofing e come è possibile aggiungere gli indirizzi IP locali al record SPF, vedere [set up SPF in Office 365 per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
 
 ## <a name="set-anti-spam-options"></a>Impostazione delle opzioni di posta indesiderata
 
-Gestire le impostazioni del filtro di connessione aggiungendo gli indirizzi IP agli elenchi IP consentiti e di blocco IP e selezionando l'opzione **Abilita elenco indirizzi attendibili** , che dovrebbe ridurre il numero di falsi positivi (posta elettronica buona classificata come posta indesiderata) ricevuti. Per ulteriori informazioni, vedere [Configure the Connection Filter Policy](configure-the-connection-filter-policy.md). Per ulteriori impostazioni di posta indesiderata che si applicano all'intera organizzazione, vedere [come impedire che la posta elettronica reale venga contrassegnata come posta indesiderata in office 365](../../compliance/prevent-email-from-being-marked-as-spam.md) o [su come ridurre la posta indesiderata in Office 365](reduce-spam-email.md)). Questi argomenti sono utili se si dispone di un controllo a livello di amministratore e si desidera impedire falsi positivi o falsi negativi.
+Gestire le impostazioni del filtro di connessione aggiungendo indirizzi IP agli elenchi IP consentiti e di blocco IP e selezionando l'opzione **Abilita elenco indirizzi attendibili** , che dovrebbe ridurre il numero di falsi positivi (messaggi validi erroneamente classificati come posta indesiderata) ricevuti. Per ulteriori informazioni, vedere [Configure the Connection Filter Policy](configure-the-connection-filter-policy.md). Per ulteriori impostazioni di posta indesiderata che si applicano all'intera organizzazione, vedere [come impedire che la posta elettronica reale venga contrassegnata come posta indesiderata in office 365](../../compliance/prevent-email-from-being-marked-as-spam.md) o [su come ridurre la posta indesiderata in Office 365](reduce-spam-email.md)). Questi argomenti sono utili se si dispone di un controllo a livello di amministratore e si desidera impedire falsi positivi o falsi negativi.
 
-Gestire i filtri del contenuto rivedendo e facoltativamente cambiando le impostazioni predefinite. Ad esempio, è possibile modificare l'azione per ciò che accade ai messaggi rilevati dalla posta indesiderata. Se si desidera perseguire un approccio aggressivo al filtro posta indesiderata, è possibile configurare le opzioni di filtro posta indesiderata avanzate. È consigliabile testare queste opzioni prima di implementarle nell'ambiente di produzione (attivando l'operazione) è consigliabile che le organizzazioni preoccupate del phishing attivino il **record SPF: opzione non riuscita** . Per ulteriori informazioni, vedere [configurare i criteri di filtro della posta indesiderata e le](configure-your-spam-filter-policies.md) [Opzioni avanzate](advanced-spam-filtering-asf-options.md)per il filtro
+Gestire i filtri del contenuto rivedendo e facoltativamente cambiando le impostazioni predefinite. Ad esempio, è possibile modificare l'azione per ciò che accade ai messaggi rilevati dalla posta indesiderata. Se si desidera perseguire un approccio aggressivo al filtro posta indesiderata, è possibile configurare le opzioni di filtro posta indesiderata avanzate. È consigliabile testare queste opzioni prima di implementarle nell'ambiente di produzione (attivando l'applicazione). È consigliabile che le organizzazioni preoccupate del phishing attivino l'opzione **record SPF: non riuscito** . Per ulteriori informazioni, vedere [configurare i criteri di filtro della posta indesiderata e le](configure-your-spam-filter-policies.md) [Opzioni avanzate](advanced-spam-filtering-asf-options.md)per il filtro
 
 > [!IMPORTANT]
-> Se si utilizza l'azione filtro contenuto predefinito, **spostare il messaggio nella cartella posta indesiderata**, per assicurarsi che questa azione funzioni con le cassette postali locali, è necessario configurare le regole del flusso di posta (note anche come regole di trasporto) in Exchange locale Server per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+> Se si utilizza l'azione filtro contenuto predefinito, **spostare il messaggio nella cartella posta indesiderata**, per verificare che l'azione funzioni con le cassette postali locali, è necessario configurare le regole del flusso di posta (note anche come regole di trasporto) nell'organizzazione di Exchange locale per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 Si consiglia di esaminare le [domande frequenti sulla protezione da posta indesiderata](anti-spam-protection-faq.md), inclusa la sezione procedure consigliate per la posta in uscita, che consentirà di recapitare i messaggi in uscita.
 
@@ -48,15 +48,15 @@ Si consiglia di esaminare le [domande frequenti sulla protezione da posta indesi
 
 ## <a name="set-anti-malware-options"></a>Impostazione delle opzioni antimalware
 
-Rivedere e regolare le impostazioni di filtro antimalware nell'Interfaccia di amministrazione di Exchange (EAC). Per ulteriori informazioni, vedere [Configure anti-malware Policies](configure-anti-malware-policies.md). Inoltre, si consiglia di leggere le altre domande frequenti relative alla protezione antimalware in [Anti-malware protection FAQ](anti-malware-protection-faq-eop.md).
+Esaminare e ottimizzare le impostazioni del filtro antimalware. Per ulteriori informazioni, vedere [Configure anti-malware Policies](configure-anti-malware-policies.md). Inoltre, si consiglia di leggere le altre domande frequenti relative alla protezione antimalware in [Anti-malware protection FAQ](anti-malware-protection-faq-eop.md).
 
-Se si teme che i file eseguibili possano contenere malware, è opportuno creare una regola del flusso di posta di Exchange che consente di bloccare tutti gli allegati contenenti contenuti eseguibili. Seguire la procedura illustrata in [come ridurre le minacce di malware tramite il blocco dei file allegati in Exchange Online Protection](https://support.microsoft.com/kb/2959596) per bloccare i tipi di file elencati in [Use Mail Flow Rules to inspect Message Attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+Se si è preoccupati per i file eseguibili contenenti malware, è possibile creare una regola del flusso di posta che blocchi qualsiasi allegato di posta elettronica con contenuto eseguibile. Seguire la procedura illustrata in [come ridurre le minacce di malware tramite il blocco dei file allegati in Exchange Online Protection](https://support.microsoft.com/kb/2959596) per bloccare i tipi di file elencati in [Use Mail Flow Rules to inspect Message Attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
-È possibile utilizzare Filtro tipi di allegato comuni nell'interfaccia di amministrazione di Exchange. Selezionare **** \> **filtri antimalware**per la protezione. È possibile creare una regola del flusso di posta che blocchi tutti gli allegati di posta elettronica con contenuto eseguibile.
+È possibile utilizzare il [filtro dei tipi di allegati comuni](protect-against-threats.md#part-1---anti-malware-protection) nei criteri anti-malware.
 
-Per una maggiore protezione, si consiglia di utilizzare le regole del flusso di posta per bloccare alcune o tutte le seguenti estensioni: aade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh. È possibile eseguire questa operazione utilizzando la condizione **Tutte le estensioni dei file allegati che includono le seguenti parole**.
+Per una maggiore protezione, si consiglia di utilizzare le regole del flusso di posta per bloccare alcune o tutte le seguenti estensioni: aade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh. A tale scopo, è possibile utilizzare l' **estensione di qualsiasi file allegato che include** la condizione di parole.
 
-Gli amministratori e gli utenti finali possono segnalare malware che non sono stati rilevati dal filtro oppure un file che è stato erroneamente identificato come malware contattando Microsoft e richiedendo un'analisi. Per ulteriori informazioni, vedere [Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md).
+Gli amministratori e gli utenti finali possono inviare malware che hanno superato i filtri oppure inviare un file che si ritiene erroneamente identificato come malware, tramite l'invio a Microsoft per l'analisi. Per ulteriori informazioni, vedere [Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md).
 
 ## <a name="create-mail-flow-rules"></a>Creazione di regole del flusso di posta
 
@@ -66,9 +66,9 @@ Quando si distribuisce una nuova regola alla produzione, selezionare prima una d
 
 Quando si distribuiscono nuove regole, prendere in considerazione l'aggiunta dell'azione aggiuntiva **Genera rapporto operazioni non consentite** per monitorare la regola in azione.
 
-In una configurazione ibrida, con parte dell'organizzazione in locale e parte in Office 365, è possibile creare regole che si applicano all'intera organizzazione. A tale scopo, utilizzare condizioni disponibili sia in locale che in Office 365. Anche se la maggior parte delle condizioni è disponibile in entrambe le distribuzioni, ne esistono alcune specifiche di un particolare scenario di distribuzione. Per ulteriori informazioni, vedere [regole del flusso di posta (regole di trasporto) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+Negli ambienti ibridi in cui l'organizzazione include sia Exchange locale che Office 365, prendere in considerazione le condizioni che si utilizzano nelle regole del flusso di posta. Se si desidera che le regole vengano applicate all'intera organizzazione, assicurarsi di utilizzare le condizioni disponibili sia in Exchange locale che in Office 365. Anche se la maggior parte delle condizioni sono disponibili in entrambi gli ambienti, sono disponibili solo in un ambiente o nell'altro. Per ulteriori informazioni, vedere [regole del flusso di posta (regole di trasporto) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
-Se si desidera, è possibile esaminare gli allegati di posta elettronica per i messaggi in transito all'interno dell'organizzazione impostando regole del flusso di posta. È possibile quindi eseguire un'azione sui messaggi presi in esame basandosi sui contenuti o sulle caratteristiche degli allegati. Per ulteriori informazioni, vedere [Use Mail Flow Rules to inspect Message Attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments).
+È possibile utilizzare le regole del flusso di posta per esaminare gli allegati dei messaggi in transito all'interno dell'organizzazione. Configurare le condizioni della regola in modo da cercare gli allegati e quindi intervenire sugli allegati rilevati. Per ulteriori informazioni, vedere [Use Mail Flow Rules to inspect Message Attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments).
 
 ### <a name="phishing-and-spoofing-prevention"></a>Prevenzione di phishing e spoofing
 
@@ -86,12 +86,6 @@ Se si desidera, è possibile esaminare gli allegati di posta elettronica per i m
 
 > [!CAUTION]
 > Si consiglia di creare questa regola di trasporto solo se si è certi che nessun messaggio di posta elettronica legittimo proveniente dal proprio dominio venga inviato da Internet al proprio server di posta. Ciò può accadere quando un messaggio viene inviato da un utente dell'organizzazione a un destinatario esterno e successivamente inoltrato a un altro destinatario dell'organizzazione.
-
-### <a name="extension-blocking"></a>Blocco delle estensioni
-
-Se si teme che i file eseguibili possano contenere malware, è possibile configurare dei criteri antimalware che consentono di bloccare tutti gli allegati contenenti contenuti eseguibili. Seguire la procedura descritta in [Configure anti-malware Policies](configure-anti-malware-policies.md).
-
-Per una maggiore protezione, si consiglia di bloccare alcune o tutte le seguenti estensioni: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh.
 
 ## <a name="reporting-and-troubleshooting"></a>Segnalazione e risoluzione degli errori
 
