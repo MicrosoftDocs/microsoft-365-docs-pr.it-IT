@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aggiungere i risultati di una ricerca associata a un caso di eDiscovery avanzato. Gli elementi vengono copiati dal percorso originale e copiati in una posizione di archiviazione di Azure fornita da Microsoft. Gli elementi vengono anche reindicizzati e Advanced eDiscovery eseguirà il riconoscimento ottico dei caratteri (OCR) sui file di immagine e caricherà il testo dell'immagine per la revisione e l'analisi.
-ms.openlocfilehash: 0a1b2a245e3a650d6a35bc1032539e7b7e969dc9
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 99fe0cce8bd872ecd5f4a94699857c36c3a4d617
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191181"
+ms.locfileid: "39202327"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Aggiungere i risultati della ricerca a un insieme da rivedere
 
@@ -57,6 +57,6 @@ Dopo aver selezionato e configurato una delle opzioni precedenti, scegliere un s
 
 ## <a name="optical-character-recognition"></a>Riconoscimento ottico del carattere
 
-Quando si aggiungono i risultati di ricerca a un set di revisione, la funzionalità di riconoscimento ottico dei caratteri (OCR) in Advanced eDiscovery estrae automaticamente il testo dalle immagini e include il testo dell'immagine con i dati aggiunti a un set di revisione. In questo modo è possibile eseguire ulteriori riesami e analisi sul testo nelle immagini. OCR è supportato per file sciolti, allegati di posta elettronica e immagini incorporate. Per un elenco dei formati di file immagine supportati per l'OCR, vedere [tipi di file supportati in Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
+Quando si aggiungono i risultati di ricerca a un set di revisione, la funzionalità di riconoscimento ottico dei caratteri (OCR) in Advanced eDiscovery estrae automaticamente il testo dalle immagini e include il testo dell'immagine con i dati aggiunti a un set di revisione. È possibile visualizzare il testo estratto nel Visualizzatore di testo del file di immagine selezionato nel set di revisione. In questo modo è possibile eseguire ulteriori riesami e analisi sul testo nelle immagini. OCR è supportato per file sciolti, allegati di posta elettronica e immagini incorporate. Per un elenco dei formati di file immagine supportati per l'OCR, vedere [tipi di file supportati in Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
 
 È necessario abilitare la funzionalità OCR per ogni caso creato in Advanced eDiscovery. Per ulteriori informazioni, vedere [configurare le impostazioni di ricerca e analisi](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

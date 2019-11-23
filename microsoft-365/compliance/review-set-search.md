@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8eadfbeb1a78edd12129c97dc3144a45c5c409cf
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: b37ff9bf96ff641750acc9ac47ef9c27b566651c
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191271"
+ms.locfileid: "39202347"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Eseguire query sui dati in un insieme da rivedere
 
@@ -51,11 +51,11 @@ Sono disponibili più tipi di schede di condizione:
 
 ### <a name="query-language"></a>Lingua query
 
-Oltre alle schede delle condizioni, è possibile utilizzare un linguaggio di query simile a KQL nella scheda Parole chiave per creare la query. Il linguaggio di query per le query dei set di revisione supporta gli operatori booleani standard, ad esempio e, o, non e vicino (n). Supporta anche un carattere jolly con caratteri singoli (?) e un carattere jolly a più caratteri (*).
+Oltre alle schede delle condizioni, è possibile utilizzare un linguaggio di query simile a KQL nella scheda Parole chiave per creare la query. Il linguaggio di query per le query dei set di revisione supporta gli operatori booleani standard, ad esempio **e**, **o**, **non**e **vicino**. Supporta anche un carattere jolly con caratteri singoli (?) e un carattere jolly a più caratteri (*).
 
 ## <a name="using-filters"></a>Utilizzo di filtri
 
-Oltre alle query che è possibile salvare, è possibile utilizzare i filtri set di revisione per applicare rapidamente condizioni aggiuntive a una query del set di revisione. In questo modo è possibile affinare ulteriormente i risultati visualizzati da una query del set di revisione. 
+Oltre alle query che è possibile salvare, è possibile utilizzare i filtri set di revisione per applicare rapidamente condizioni aggiuntive a una query del set di revisione. In questo modo è possibile affinare ulteriormente i risultati visualizzati da una query del set di revisione.
 
 ![Esaminare i filtri impostati](media/AeDReviewSetFilters.png)
 

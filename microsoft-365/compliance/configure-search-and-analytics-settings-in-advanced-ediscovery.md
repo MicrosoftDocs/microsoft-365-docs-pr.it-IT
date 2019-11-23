@@ -14,21 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Configurare le impostazioni avanzate di eDiscovery che si applicano a tutti i set di revisione in un caso. Sono incluse le impostazioni per l'analisi e l'OCR.
-ms.openlocfilehash: f34f10c08be582389346b3aedc899bd9f4906a93
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 2def41ecc090b54cd3d6b789c2d9890392d1e0d3
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191141"
+ms.locfileid: "39202197"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurare le impostazioni di ricerca e analisi
 
 È possibile configurare le impostazioni per ogni caso eDiscovery avanzato per controllare la funzionalità seguente.
 
 - Quasi duplicati e threading della posta elettronica
+
 - Temi
+
 - Query set di revisione generata automaticamente
+
 - Ignora testo
+
 - Riconoscimento ottico del carattere
 
 Per configurare le impostazioni di ricerca e analisi per un caso:
@@ -69,7 +73,7 @@ Se si seleziona la casella **di controllo crea automaticamente una richiesta di 
 
 ![La query per la revisione generata automaticamente](media/AeDForReviewQuery.png)
 
-Questa query sostanzialmente filtra gli elementi duplicati dal set di revisione. In questo modo è possibile esaminare gli elementi univoci nel set di revisione. Questa query viene creata solo quando si esegue analisi per qualsiasi set di revisione nel caso. Per ulteriori informazioni, vedere [query sui dati di un](review-set-search.md)set di revisione.
+Questa query sostanzialmente filtra gli elementi duplicati dal set di revisione. In questo modo è possibile esaminare gli elementi univoci nel set di revisione. La query viene creata solo quando si esegue analisi per un set di revisione nel caso. Per ulteriori informazioni, vedere [query sui dati di un](review-set-search.md)set di revisione.
 
 ## <a name="ignore-text"></a>Ignora testo
 
@@ -77,7 +81,8 @@ Vi sono situazioni in cui un determinato testo diminuirà la qualità dell'anali
 
 ## <a name="optical-character-recognition-ocr"></a>Riconoscimento ottico caratteri (OCR)
 
-Quando questa impostazione è attivata, l'OCR verrà eseguito sui file di immagine aggiunti ai set di revisione in modo che il testo dell'immagine possa essere esaminato, cercato, taggato e analizzato. Per ulteriori informazioni, vedere:
+Quando questa impostazione è attivata, l'OCR verrà eseguito sui file di immagine aggiunti ai set di revisione in modo che il testo dell'immagine possa essere esaminato, cercato, taggato e analizzato. È possibile visualizzare il testo estratto nel Visualizzatore di testo del file di immagine selezionato nel set di revisione. Per ulteriori informazioni, vedere:
 
 - [Aggiungere i risultati della ricerca a un insieme da rivedere](add-data-to-review-set.md#optical-character-recognition)
+
 - [Tipi di file di immagine supportati](supported-filetypes-ediscovery20.md#image)

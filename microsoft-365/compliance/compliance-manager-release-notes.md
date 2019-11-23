@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 1a490212b2275b9f297e2585e7242f5331d0fe56
-ms.sourcegitcommit: 5c6c30ec5541d2fb77e53a1309db1fe7b75fc3e2
+ms.openlocfilehash: 1f233a6bc19f4a7afa495f49ad77e39e496c1dc5
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "38686371"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202167"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Note sulla versione per Compliance Manager (anteprima)
 
@@ -51,8 +51,10 @@ Nelle sezioni seguenti vengono illustrati i problemi noti da risolvere nelle pro
 - I risultati del Punteggio sicuro non sono disponibili per alcuni elementi di azioni in determinate sottoscrizioni di Microsoft 365 e Office 365. **Non è stato possibile rilevare** il risultato del Punteggio sicuro in questi casi.
 - A volte vengono restituiti risultati di Punteggio sicuro per i criteri corrispondenti e gli elementi di azione non completati.
 - Per i nuovi tenant, gli aggiornamenti del Punteggio sicuro per tutte le azioni vengono attivati automaticamente. L'amministratore globale può impostare l'opzione di aggiornamento continuo per il Punteggio sicuro su disattivato, che disattiva gli aggiornamenti per tutte le azioni.
+  - **Nota**: quando le organizzazioni distribuiscono per la prima volta Microsoft 365 o Office 365, sono necessari circa sette giorni per ottenere un punteggio sicuro per raccogliere completamente i dati e fattorizzarli nello score. Durante questo periodo, l'impostazione dell'opzione aggiornamento continuo Punteggio sicuro su **disattivato** e l'impostazione manuale di un'azione su **implementata** consentiranno di contare tale azione verso il punteggio. Dopo sette giorni iniziali, la riattivazione dell'aggiornamento continuo dei punteggi sicuri consentirà il monitoraggio continuo da quel momento in poi.
 - Quando gli aggiornamenti del Punteggio sicuro sono attivati, le azioni vengono monitorate attivamente dal punteggio sicuro, anche se la data di test dell'azione non verrà aggiornata per riflettere il monitoraggio.
 - Quando vengono create nuove valutazioni, i punteggi includono automaticamente i punteggi dei controlli gestiti da Microsoft e l'integrazione del Punteggio sicuro.
+- Tutte le azioni che non sono supportate dall'integrazione del Punteggio sicuro possono essere implementate manualmente. Un'implementazione manuale consentirà di fattorizzare lo score del gruppo dell'azione.
 
 ### <a name="microsoft-managed-controls"></a>Controlli gestiti da Microsoft
 
