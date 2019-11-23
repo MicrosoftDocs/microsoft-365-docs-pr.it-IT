@@ -3,7 +3,7 @@ title: Autenticazione pass-through per l'ambiente di testing di Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: configurare l'autenticazione pass-through per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 98e0ad4b216fdc3940c0077cb308d6271ffed678
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: ed21007932b455c4f24af83434af75d44e583574
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757723"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202317"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticazione pass-through per l'ambiente di testing di Microsoft 365
 
@@ -78,13 +78,13 @@ Questa fase riguarda la configurazione di Azure AD Connect su APP1 per l'uso del
 
 10. Fare clic su **Autenticazione pass-through**. Nel riquadro **Autenticazione pass-through** sono elencati i server in cui sono installati gli Agenti di autenticazione. APP1 sarà presente nell'elenco. Chiudere il riquadro **Autenticazione pass-through**.
 
-Successivamente, verificare la possibilità di accedere all'abbonamento a Office 365 con il nome utente <strong>user1@testlab.</strong>\<dominio pubblico> dell'account User1.
+Successivamente, verificare la possibilità di accedere all'abbonamento con il nome utente <strong>user1@testlab.</strong>\<dominio pubblico> dell'account User1.
 
-1. Da APP1, disconnettersi da Office 365, quindi accedere nuovamente specificando un account diverso.
+1. Da APP1, disconnettersi e quindi accedere nuovamente specificando un account diverso.
 
 2. Quando vengono richiesti nome utente e password, specificare <strong>user1@testlab.</strong>\<dominio pubblico> e la password per User1. Dovrebbe essere possibile accedere come User1.
 
-Si noti che sebbene User1 disponga di autorizzazioni di amministratore di dominio per il dominio TESTLAB di Active Directory Domain Services, non è un amministratore globale di Office 365. Di conseguenza, l'icona **Amministratore** non sarà visibile.
+Si noti che sebbene User1 disponga di autorizzazioni di amministratore di dominio per il dominio TESTLAB AD DS, non è un amministratore globale. Di conseguenza, l'icona **Amministratore** non sarà visibile.
 
 Di seguito è riportata la configurazione risultante:
 
@@ -106,5 +106,3 @@ Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test
 [Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 
 [Documentazione di Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
-
-

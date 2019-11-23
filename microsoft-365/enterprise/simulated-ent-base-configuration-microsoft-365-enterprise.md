@@ -3,7 +3,7 @@ title: Configurazione di base dell'organizzazione simulata per Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilizzare questa guida al lab di test per creare un ambiente di testing dell'organizzazione simulata per Microsoft 365 Enterprise.
-ms.openlocfilehash: 98eb336a0f63f47b4b79de44c46fcd81f1d9c9f6
-ms.sourcegitcommit: 2bdd7b535a7d2a4896df130b7047f8c85f4d47b4
+ms.openlocfilehash: b89df6cad03084a8d9119f03f5c07d01a9c96061
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38711880"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202390"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>La configurazione di base per l'organizzazione simulata
 
@@ -364,177 +364,26 @@ In questa fase viene creato un nuovo abbonamento a Microsoft 365 E5 che usa un n
 
   Questo comporta un costo aggiuntivo, ma consente di disporre di un ambiente di testing di base per provare funzioni, configurazioni e scenari senza scadenza. È possibile usare lo stesso ambiente di testing durante il lungo periodo per prove di funzionamento, dimostrazioni a colleghi, gestione, nonché sviluppo e test delle applicazioni. Questo è il metodo consigliato.
 
-Per avviare l'abbonamento di valutazione a Microsoft 365 E5, è necessario innanzitutto un nome di società fittizia e un nuovo account Microsoft.
-  
-1. Si consiglia di utilizzare una variante del nome aziendale Contoso per il nome dell'azienda, che è un nome aziendale fittizio utilizzato nel contenuto di esempio di Microsoft, ma non è obbligatorio. Registrare il nome della società fittizia qui: ![](./media/Common-Images/TableLine.png)
-    
-2. Per registrare un nuovo account Microsoft, andare su [https://outlook.com](https://outlook.com) e creare un account con un nuovo account di posta elettronica e indirizzo. Utilizzare questo account per iscriversi a Office 365.
-    
-  - Registrare il nome e cognome del nuovo account qui: ![](./media/Common-Images/TableLine.png)
-    
-  - Registrare l'indirizzo e-mail del nuovo account qui: ![](./media/Common-Images/TableLine.png)@outlook.com
-    
-### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrare una sottoscrizione di valutazione di Office 365 E5
+### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrare un abbonamento di valutazione di Office 365 E5
 
-Si inizia con un abbonamento di valutazione a Office 365 E5 e quindi si aggiunge l'abbonamento a Microsoft 365 E5.
+Connettersi a CLIENT1 con l'account CORP\User1 dal portale di Azure.
 
-1. Per l'ambiente di sviluppo/test aziendale simulato di Office 365, connettersi a CLIENT1 con l'account CORP\User1 dal portale di Azure.  Dalla schermata Start, eseguire Microsoft Edge e andare su [https://aka.ms/e5trial](https://aka.ms/e5trial).
-    
-2. Nella pagina **Benvenuto, vogliamo conoscerti meglio**, specificare:
-    
-  - La posizione fisica dell'utente
-    
-  - Nome e cognome del nuovo account Microsoft
-    
-  - Il nuovo indirizzo di account di posta elettronica
-    
-  - Un numero di telefono dell'ufficio
-    
-  - Il nome dell'azienda fittizia
-    
-  - Dimensioni dell'organizzazione comprese tra 250-999 persone
-    
-3. Fare clic su **Ultimo passaggio**.
-    
-4. Nella pagina **Crea ID utente**, digitare un nome utente in base al nuovo indirizzo di posta elettronica, il nome della società fittizia dopo il segno @ (rimuovere tutti gli spazi nel nome), quindi una password (due volte) del nuovo account di Office 365. 
-    
-    Annotare la password in un posto sicuro.
-    
-    Registrare il nome della società fittizia, a cui fare riferimento con **nome dell'organizzazione**, qui: ![](./media/Common-Images/TableLine.png)
-    
-5. Fare clic su **Crea account**.
-    
-6. Nella pagina **Dimostra che non sei un robot**, digitare il numero di telefono di un telefono che riceve SMS, quindi fare clic su **Inviami un SMS**.
-    
-7. Immettere il codice di verifica del messaggio di testo ricevuto, quindi fare clic su **Avanti**.
-    
-8. Registrare l'URL della pagina di accesso qui (selezionare e copiare): ![](./media/Common-Images/TableLine.png)
-    
-9. Registrare l'ID utente qui (selezionare e copiare): ![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    Questo valore verrà denominato **Nome amministratore globale di Office 365**.
-    
-10. Quando viene visualizzato **Sei pronto per partire**, selezionarlo.
-    
-11. Nella pagina successiva, attendere che Office 365 completi la configurazione e che siano disponibili tutti i riquadri.
-    
-Dovrebbe essere visualizzata la pagina principale del portale di Office 365 dalla quale è possibile accedere ai servizi di Office e all'interfaccia di amministrazione di Microsoft 365.
-  
-È stato creato un abbonamento di valutazione a Office 365 in modo che l'ambiente di sviluppo/test includa un tenant di Azure AD diverso da quelli a pagamento attualmente in uso. Questa separazione indica che è possibile aggiungere e rimuovere utenti e gruppi nel tenant di test senza influire sugli abbonamenti di produzione.
-    
-### <a name="configure-your-office-365-e5-trial-subscription"></a>Configurare un abbonamento di valutazione a Office 365 E5
+Per creare un nuovo abbonamento di valutazione di Office 365 E5, seguire le istruzioni riportate nella [fase 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-office-365-e5-subscription) della guida al lab di test sulla configurazione di base.
 
-È quindi possibile configurare l'abbonamento a Office 365 E5 con altri utenti e assegnare loro le licenze di Office 365 E5.
-  
-Seguire le istruzioni in [Connettersi a Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) per connettersi all'abbonamento a Office 365 con il modulo Azure Active Directory PowerShell for Graph dalla macchina virtuale CLIENT1.
-    
-Nella finestra di dialogo Richiesta credenziali di Windows PowerShell, digitare il nome dell'amministratore globale Office 365 (ad esempio: jdoe@contosotoycompany.onmicrosoft.com) e la password.
-  
-Immettere il nome dell'organizzazione (ad esempio: contosotoycompany), il prefisso internazionale a due caratteri, una password comune di account e quindi eseguire i comandi seguenti dal prompt di PowerShell:
+Per configurare il nuovo abbonamento di valutazione di Office 365 E5, seguire le istruzioni riportate nella [fase 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) della guida al lab di test sulla configurazione di base.
 
-```powershell
-$orgName="<organization name>"
-$loc="<two-character country code, such as US>"
-$commonPW="<common user account password>"
-$PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-$PasswordProfile.Password=$commonPW
+#### <a name="using-an-office-365-e5-test-environment"></a>Uso di un ambiente di testing di Office 365 E5
 
-$userUPN= "user2@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 2" -GivenName User -SurName 2 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user2"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user3@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 3" -GivenName User -SurName 3 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user3"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-
-$userUPN= "user4@" + $orgName + ".onmicrosoft.com"
-New-AzureADUser -DisplayName "User 4" -GivenName User -SurName 4 -UserPrincipalName $userUPN -UsageLocation $loc -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName "user4"
-$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$License.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value "ENTERPRISEPREMIUM" -EQ).SkuID
-$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$LicensesToAssign.AddLicenses = $License
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
-```
-> [!NOTE]
-> L'uso di una password comune qui consente l'automazione e agevola la configurazione per un ambiente di sviluppo e test. Ovviamente, questo approccio è sconsigliato per le sottoscrizioni di produzione. 
-
-#### <a name="record-key-information-for-future-reference"></a>Registrare informazioni chiave per riferimenti futuri
-
-Si consiglia di stampare questo articolo per registrare le informazioni specifiche necessarie per questo ambiente nei 30 giorni dell'abbonamento di valutazione a Office 365. È possibile estendere l'abbonamento di prova per altri 30 giorni. Per un ambiente di sviluppo/test permanente, creare un nuovo abbonamento a pagamento con un tenant di Azure AD separato e un numero limitato di licenze.
-
-Registrare questi valori:
-  
-- Nome amministratore globale di Office 365: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (dal passaggio 9 della fase 2)
-    
-    Annotare anche la password dell'account in una posizione sicura.
-    
-- Nome dell'organizzazione della sottoscrizione di valutazione: ![](./media/Common-Images/TableLine.png) onmicrosoft.com (dal passaggio 4 della fase 2)
-    
-- Per elencare gli account di User 2, User 3, User 4, e User 5, eseguire i comandi seguenti dal modulo di Microsoft Azure Active Directory per il prompt di Windows PowerShell:
-    
-  ```powershell
-  Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
-  ```
-
-    Registrare i nomi degli account qui:
-    
-  - Nome account utente User 2: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - Nome account utente User 3: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - Nome account utente User 4: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-  - Nome account utente User 5: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    Registrare anche la password comune degli account in un posto sicuro.
-   
-
-#### <a name="using-an-office-365-e5-devtest-environment"></a>Uso di un ambiente di sviluppo/test di Office 365 E5
-
-Se tutto ciò che serve è un ambiente di sviluppo/test di Office 365, è possibile fermarsi qui. 
+Se tutto ciò che serve è un ambiente di testing di Office 365, è possibile fermarsi qui. 
 
 Per altre guide al lab di test valide sia per Office 365 che per Microsoft 365, vedere [Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md).
-  
+
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Aggiungere un abbonamento di valutazione a Microsoft 365 E5
 
-È quindi possibile sottoscrivere un abbonamento di valutazione a Microsoft 365 E5 e aggiungerlo alla stessa organizzazione dell'abbonamento di valutazione a Office 365 E5.
+Per aggiungere un abbonamento di valutazione a Microsoft 365 E5 e configurare gli account utente con licenze, seguire le istruzioni riportate nella [fase 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) della guida al lab di test sulla configurazione di base.
+
   
-Aggiungere prima l'abbonamento di valutazione a Microsoft 365 E5 e assegnare una licenza di Microsoft 365 all'account di amministratore globale.
-  
-1. Con un'istanza privata di un browser Internet, accedere all'interfaccia di amministrazione di Microsoft 365 all'indirizzo [https://admin.microsoft.com](https://admin.microsoft.com) con le credenziali dell'account di amministratore globale.
-    
-2. Nella pagina dell'**interfaccia di amministrazione di Microsoft 365** fare clic su **Fatturazione > Acquisto di servizi** nella barra di spostamento sinistra.
-    
-3. Nella pagina **Acquisto di servizi** individuare la voce **Microsoft 365 E5**. Posizionare il puntatore del mouse su di essa e fare clic su **Avvia valutazione gratuita**.
-
-4. Nella pagina **Valutazione di Microsoft 365 E5** scegliere di ricevere una chiamata o un SMS, immettere il numero di telefono, quindi fare clic su **Inviami un SMS** o **Chiamami**.
-
-5. Nella pagina **Conferma l'ordine**, fare clic su **Prova adesso**.
-
-6. Nella pagina **Ricevuta ordine**, fare clic su **Continua**.
-
-7. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su **Utenti attivi**, quindi sull'account dell'amministratore.
-
-8. Per **Licenze di prodotti** fare clic su **Modifica**.
-
-9. Disattivare la licenza per Office 365 Enterprise E5 e attivare la licenza per Microsoft 365 E5.
-
-10. Fare clic su **Salva > Chiudi > Chiudi**.
-
-Successivamente, ripetere i passaggi da 8 a 11 della procedura precedente per tutti gli altri account (Utente 2, Utente 3, Utente 4 e Utente 5).
-  
-> [!NOTE]
-> L'abbonamento di valutazione a Microsoft 365 E5 dura 30 giorni. Per un ambiente di test permanente, convertire questo abbonamento di valutazione in uno a pagamento con un numero limitato di licenze. 
-  
-### <a name="results"></a>Risultati
+## <a name="results"></a>Risultati
 
 A questo punto, l'ambiente di test dispone di:
   

@@ -3,7 +3,7 @@ title: Sincronizzazione hash delle password per l'ambiente di testing di Microso
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/13/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: configurare e illustrare la sincronizzazione hash delle password e l'accesso per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: e1055f9a4a64c05f55d4a5446f637ba195c0377c
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: ef08fcf59602d7812875015971d00a34526576d6
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757733"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202457"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Sincronizzazione hash delle password per l'ambiente di testing di Microsoft 365
 
@@ -54,9 +54,9 @@ Questa configurazione è costituita da:
 
 In questa fase si aggiunge un dominio pubblico DNS che viene aggiunto all'abbonamento.
 
-Innanzitutto, utilizzare il provider di registrazione DNS pubblico per creare un nuovo nome di dominio DNS pubblico basato sul proprio nome di dominio corrente e aggiungerlo all'abbonamento a Office 365. È consigliabile utilizzare il nome **testlab.**\<dominio pubblico>. Ad esempio, se il nome di dominio pubblico è <span>**contoso</span>.com**, aggiungere il nome di dominio pubblico **<span>testlab</span>.contoso.com**.
+Innanzitutto, usare il provider di registrazione DNS pubblico per creare un nuovo nome di dominio DNS pubblico basato sul proprio nome di dominio corrente e aggiungerlo all'abbonamento. È consigliabile usare il nome **testlab.**\<dominio pubblico>. Ad esempio, se il nome di dominio pubblico è **<span>contoso</span>.com**, aggiungere il nome di dominio pubblico **<span>testlab</span>.contoso.com**.
   
-Successivamente, aggiungere il dominio **testlab.**\<dominio pubblico> all'abbonamento a pagamento o di valutazione a Office 365 eseguendo la procedura di registrazione del dominio. Tale procedura consiste nell'aggiungere altri record DNS al dominio **testlab.**\<dominio pubblico>. Per altre informazioni, vedere [Aggiungere utenti e dominio a Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
+Successivamente, aggiungere il dominio **testlab.**\<dominio pubblico> all'abbonamento a pagamento o di valutazione a Office 365 o Microsoft 365 eseguendo la procedura di registrazione del dominio. Tale procedura consiste nell'aggiungere altri record DNS al dominio **testlab.**\<dominio pubblico>. Per altre informazioni, vedere [Aggiungere un dominio a Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain). 
 
 Questa è la configurazione risultante.
   
@@ -70,7 +70,7 @@ Questa configurazione è costituita da:
 Si noti come il testlab.\<nome di dominio pubblico> a questo punto è:
 
 - Ospitato da record DNS pubblici.
-- Registrato negli abbonamenti a Office 365 ed EMS.
+- Registrato negli abbonamenti a Microsoft 365 o Office 365.
 - Il dominio di AD DS nella rete Intranet simulata.
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>Fase 3: installare Azure AD Connect su APP1
@@ -97,7 +97,7 @@ In primo luogo, installare e configurare Azure AD Connect su APP1.
     
 6. Nella pagina **Impostazioni rapide**, fare clic su **Usa impostazioni rapide**.
     
-7. Nella pagina **Connessione ad Azure AD**, digitare il nome dell’account amministratore globale di Office 365 in **Nome utente**, digitare la password in **Password** e fare clic su **Avanti**.
+7. Nella pagina **Connessione ad Azure AD**, digitare il nome dell'account amministratore globale in **Nome utente**, digitare la password in **Password** e fare clic su **Avanti**.
     
 8. Nella pagina **Connessione ad AD DS**, digitare **TESTLAB\\User1** in **Nome utente**, digitare la relativa password in **Password** e fare clic su **Avanti**.
     
@@ -111,19 +111,19 @@ In primo luogo, installare e configurare Azure AD Connect su APP1.
     
     Si noti l'account denominato **User1**. Questo account deriva dal dominio TESTLAB AD DS ed è la prova che la sincronizzazione della directory ha funzionato.
     
-13. Fare clic sull'account **User1**. Per le licenze di prodotti, fare clic su **Modifica**.
+13. Fare clic sull'account **User1** e quindi fare clic su **Licenze e app**.
     
-14. In **Licenze di prodotti**, selezionare il paese e fare clic sul controllo **Disattiva** per **Office 365 Enterprise E5** (passando ad **Attiva**). Eseguire la stessa operazione per la licenza **Enterprise Mobility + Security E5**. 
+14. In **Licenze di prodotto** selezionare la posizione, se necessario, disabilitare la licenza di **Office 365 E5** e abilitare la licenza di **Microsoft 365 E5**. 
 
 15. Fare clic su **Salva** nella parte inferiore della pagina e selezionare **Chiudi**.
     
-Successivamente, verificare la possibilità di accedere all'abbonamento a Office 365 con il nome utente <strong>user1@testlab.</strong>\<nome dominio> nome utente dell'account User1.
+Successivamente, verificare la possibilità di accedere all'abbonamento con il nome utente <strong>user1@testlab.</strong>\<nome dominio> nome utente dell'account User1.
 
-1. Da APP1, disconnettersi da Office 365, quindi accedere nuovamente specificando un account diverso.
+1. Da APP1, disconnettersi e quindi accedere nuovamente specificando un account diverso.
 
 2. Quando vengono richiesti nome utente e password, specificare <strong>user1@testlab.</strong>\<nome dominio> e la password per User1. Dovrebbe essere possibile accedere come User1. 
  
-Si noti che sebbene User1 disponga di autorizzazioni di amministratore di dominio per il dominio TESTLAB AD DS, non è un amministratore globale di Office 365. Di conseguenza, l'icona **Amministratore** non sarà visibile. 
+Si noti che sebbene User1 disponga di autorizzazioni di amministratore di dominio per il dominio TESTLAB AD DS, non è un amministratore globale. Di conseguenza, l'icona **Amministratore** non sarà visibile. 
 
 Questa è la configurazione risultante.
 
