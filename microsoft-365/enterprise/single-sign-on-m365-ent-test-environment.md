@@ -3,7 +3,7 @@ title: Azure AD Seamless Single Sign-On per l'ambiente di testing di Microsoft 3
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: informazioni sulla configurazione e sul test di Azure AD Seamless Single Sign-On per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: a32dca8c37d9e6788aef801e9f99a90b724e86b1
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: f263ab507e392c1172d28b5d6ef111d8d9f40682
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757673"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202237"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Azure AD Seamless Single Sign-On per l'ambiente di testing di Microsoft 365
 
@@ -81,7 +81,7 @@ In questa fase, si configura Azure AD Connect su APP1 per Azure AD Seamless Sing
 
 11. Dal portale di Azure, nel riquadro sinistro fare clic su **Azure Active Directory > Azure AD Connect**. Verificare che la funzionalità **Accesso Single Sign-On facile** venga visualizzata come **Attivata**.
 
-Successivamente, verificare la possibilità di accedere all'abbonamento a Office 365 con il nome utente <strong>user1@testlab.</strong>\<dominio pubblico> dell'account User1.
+Successivamente, verificare la possibilità di accedere all'abbonamento con il nome utente <strong>user1@testlab.</strong>\<dominio pubblico> dell'account User1.
 
 1. Da Internet Explorer su AAP1, fare clic sull'icona delle impostazioni, quindi fare clic su **Opzioni Internet**.
  
@@ -93,11 +93,11 @@ Successivamente, verificare la possibilità di accedere all'abbonamento a Office
 
 5. In **Aggiungi questo sito Web alla zona**, digitare **https<span>://</span>autologon.microsoftazuread-sso.com**, quindi fare clic su **Aggiungi > Chiudi > OK > OK**.
 
-6. Disconnettersi da Office 365, quindi accedere nuovamente specificando un account diverso.
+6. Disconnettersi e quindi accedere nuovamente specificando un account diverso.
 
 7. Quando viene richiesto di accedere, specificare il nome <strong>user1@testlab.</strong>\<dominio pubblico>, quindi fare clic su **Avanti**. È quindi possibile accedere come User1 senza che venga richiesta una password. Ciò dimostra che Seamless SSO funziona correttamente.
 
-Si noti che sebbene User1 disponga di autorizzazioni di amministratore di dominio per il dominio TESTLAB di Active Directory Domain Services, non è un amministratore globale per Azure AD e Office 365. Di conseguenza, l'icona **Amministratore** non sarà visibile.
+Si noti che sebbene User1 disponga di autorizzazioni di amministratore di dominio per il dominio TESTLAB di Active Directory Domain Services, non è un amministratore globale per Azure AD. Di conseguenza, l'icona **Amministratore** non sarà visibile.
 
 Di seguito è riportata la configurazione risultante:
 
