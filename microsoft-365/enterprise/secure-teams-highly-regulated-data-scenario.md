@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un team sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: d875c3148a019774e038d18a75bb6fb2c2413463
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: cc29bbc076bf4d66593f785a1e4d1f881a530d83
+ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699766"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39202427"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Team per dati altamente regolamentati
 
@@ -213,6 +213,12 @@ Nelle settimane successive alla formazione:
   È possibile vedere i file a cui è assegnata un'etichetta visualizzando una cartella in SharePoint e aggiungendo la colonna **Riservatezza** con l'opzione **Aggiungi colonna** in **Mostra/Nascondi colonne**.
 
 Ripetere la formazione degli utenti se necessario.
+
+## <a name="demonstrate-this-in-a-test-environment"></a>Eseguire una dimostrazione in un ambiente di test
+
+Per creare il proprio ambiente di test per testare i team per i file sensibili e altamente riservati, vedere [queste istruzioni](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment). 
+
+![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
 
 ## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Utilizzo di un team sicuro per un progetto interno di Contoso Corporation
 
