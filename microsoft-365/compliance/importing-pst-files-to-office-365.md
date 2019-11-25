@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: "Per gli amministratori: informazioni sull'uso del servizio di importazione nel Centro sicurezza e conformità per importare dati di posta elettronica (file PST) nelle cassette postali degli utenti in Exchange Online. Questo argomento include le domande frequenti e spiega il funzionamento del processo di importazione PST."
-ms.openlocfilehash: 4682114ad150f818dfe39fe662bc3440d655e4ea
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 948ba22ff88b72a3af92edb39bfdc28cfde4c385
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083583"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39218841"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Panoramica dell'importazione di file PST dell'organizzazione in Office 365
 
@@ -96,7 +96,7 @@ Ecco un'illustrazione e una descrizione del processo di importazione PST complet
     
   - Usare i [criteri di conservazione](retention-policies.md) nel Centro sicurezza e conformità per determinare il periodo di conservazione del contenuto delle cassette postali, allo scadere del quale il contenuto viene eliminato. 
 
-  - Usare i [criteri di supervisione](supervision-policies.md) per esaminare i messaggi e assicurarsi siano conformi con gli standard dei messaggi e aggiungere un tipo di classificazione.
+  - Usare i [criteri di conformità della comunicazione](communication-compliance.md) per esaminare i messaggi assicurandosi che siano conformi agli standard dei messaggi e aggiungere un tipo di classificazione.
     
 - L'importazione di dati in Office365 consente di evitare la perdita di dati. I dati di posta elettronica importati in Office 365 ereditano le funzionalità ad alta disponibilità di Exchange Online.
     
