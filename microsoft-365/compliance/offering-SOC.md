@@ -1,0 +1,138 @@
+---
+title: Service Organization Controls (SOC)
+description: I servizi cloud Microsoft sono conformi agli standard di Service Organization Controls per la sicurezza operativa.
+keywords: Microsoft 365, conformità, offerte
+localization_priority: Priority
+ms.prod: Microsoft-365-enterprise
+ms.topic: article
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+audience: itpro
+ms.collection: M365-security-compliance
+hideEdit: true
+ms.openlocfilehash: c773d2e4f69b415745e0a327e497ce26ed62c223
+ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "39218675"
+---
+# <a name="compliance-offering-service-organization-controls-soc"></a>Offerta per la conformità: Service Organization Controls (SOC)
+
+## <a name="soc-1-2-and-3-reports-overview"></a>Panoramica dei Report SOC 1, 2 e 3
+
+Sempre più spesso le aziende affidano funzioni di base come l'archiviazione dei dati e l'accesso alle applicazioni a provider di servizi cloud e ad altre organizzazioni di servizi. In risposta, l'American Institute of Certified Public Accountants (AICPA) ha messo a punto il framework Service Organization Controls (SOC), uno standard per i controlli che proteggono la riservatezza e la privacy delle informazioni archiviate ed elaborate nel cloud. Questo framework è in linea con l'International Standard on Assurance Engagements (ISAE), lo standard dei report per le organizzazioni di servizi internazionali.
+
+I controlli dei servizi basati sul framework SOC si suddividono in due categorie, SOC 1 e SOC 2, applicabili ai servizi cloud Microsoft inclusi.
+
+Un controllo SOC 1, destinato alle società CPA che effettuano controlli sui rendiconti finanziari, valuta l'efficacia dei controlli interni di un provider di servizi cloud che interessano i rapporti finanziari di un cliente che usa i servizi cloud del provider. Lo Statement on Standards for Attestation Engagements (SSAE 18) e l'International Standards for Assurance Engagements n. 3402 (ISAE 3402) sono gli standard di esecuzione del controllo e la base del report SOC 1.
+
+Un controllo SOC 2 valuta l'efficacia del sistema di un provider di servizi cloud in base ai criteri e ai principi dei servizi attendibili AICPA. L'impegno alla certificazione secondo gli standard di certificazione AT Sezione 101 è la base dei report SOC 2 e SOC 3.
+
+Alla conclusione di un controllo SOC 1 o SOC 2, il revisore del servizio trasmette il suo parere in un report SOC 1 Tipo 2 o SOC 2 Tipo 2, in cui descrive il sistema del provider di servizi cloud e valuta la correttezza della descrizione dei controlli fatta dal provider stesso. Valuta inoltre se i controlli del provider di servizi cloud sono stati progettati in modo appropriato, se erano in funzione in una determinata data e se funzionavano efficacemente in un periodo di tempo specificato.
+
+I revisori possono inoltre creare un report SOC 3, ovvero una versione abbreviata del report di controllo SOC 2 Tipo 2, per gli utenti che desiderano la convalida dei controlli dei provider, ma non necessitano un report SOC 2 completo. Un report SOC 3 può essere assegnato solo se il provider di servizi cloud ha un'opinione di controllo senza riserva per SOC 2.
+
+## <a name="microsoft-and-soc-1-2-and-3-reports"></a>Microsoft e i Report SOC 1, 2 e 3
+
+I servizi cloud di Microsoft vengono sottoposti a controlli almeno annuali rispetto al framework di reporting SOC da parte di auditor di terze parti indipendenti. Il controllo dei servizi cloud Microsoft include controlli per la sicurezza dati, la disponibilità, l'integrità di elaborazione e la riservatezza secondo quanto applicabile ai principi di affidabilità interni all'ambito per ciascun servizio.
+
+Microsoft ha superato i controlli SOC 1 Type 2, SOC 2 Type 2 e SOC 3. In generale, la disponibilità dei report SOC 1 e SOC 2 è limitata ai clienti che hanno firmato accordi di riservatezza con Microsoft, mentre il report SOC 3 è di dominio pubblico.
+
+Per informazioni sui vantaggi dei report SOC 1, 2 e 3 in Microsoft Cloud: [Scaricare i principi fondamentali dei report SOC 1 e SOC 2 Tipo 2](https://aka.ms/soc_backgrounder)
+
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+
+### <a name="covered-services-for-soc-1-and-soc-2"></a>Servizi coperti da SOC 1 e SOC 2
+
+- Azure, Azure per enti pubblici e Azure Germania [Elenco dettagliato](https://aka.ms/AzureCompliance)
+- Cloud App Security
+- Dynamics 365 e Dynamics 365 U.S. Government [Elenco dettagliato](https://aka.ms/d365-compliance-list)
+- Graph
+- Intune
+- Servizio cloud Microsoft Flow come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense [Elenco dettagliato](https://go.microsoft.com/fwlink/p/?LinkID=2077751); Yammer ha superato il controllo SOC 1 Tipo 1
+- Office 365 Germania
+- Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
+- Stream
+- Azure DevOps Services
+
+### <a name="covered-services-for-soc-3"></a>Servizi coperti da SOC 3
+
+- Azure, Azure per enti pubblici e Azure Germania [Elenco dettagliato](https://aka.ms/AzureCompliance)
+- Cloud App Security
+- Graph
+- Intune
+- Servizio cloud Microsoft Flow come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Power BI
+- Stream
+
+## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
+
+### <a name="audit-cycle"></a>Ciclo di controllo
+
+I servizi cloud Microsoft vengono controllati almeno una volta l'anno rispetto agli standard SOC 1 (SSAE18, ISAE 3402) e SOC 2 (Sezione AT 101).
+
+#### <a name="azure-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft
+
+- [Report di Azure e Azure per enti pubblici SOC 1 Tipo 2](https://go.microsoft.com/fwlink/p/?linkid=2099601)
+- [Report Azure e Azure per enti pubblici SOC 2 Tipo 2](https://aka.ms/azuresoc2auditreport)
+- [Report Azure e Azure per enti pubblici SOC 3](https://aka.ms/azuresoc3auditreport)
+
+#### <a name="dynamics-365"></a>Dynamics 365
+
+- [Report Dynamics 365 SOC 1 Tipo 2](https://aka.ms/Dynamics365SOC1AuditReport)
+- [Report di controllo Dynamics 365 SOC 2 AT 101 Tipo II](https://aka.ms/Dynamics365SOC2AuditReport)
+- [Visualizzare le lettere ponte e altri report di controllo](https://aka.ms/auditreports)
+
+#### <a name="office-365"></a>Office 365
+
+- [Report di controllo Office 365 SOC 1 SSAE 16 Tipo II](https://aka.ms/office365soc1auditreport)
+- [Report di controllo Office 365 SOC 2 AT 101 Tipo II](https://aka.ms/Office365SOC2AuditReport)
+- [Report di controllo Office 365 Customer Lockbox SOC 1 SSAE 16](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
+- [Report di controllo Yammer SOC 2 AT 101 Tipo II](https://aka.ms/YammerSOC2AuditReport).
+- [Report di controllo Yammer SOC 2 AT 101 Tipo I](https://aka.ms/YammerSOC2Type1AuditReport).
+- [Visualizzare le lettere ponte e altri report di controllo](https://aka.ms/auditreports)
+
+## <a name="frequently-asked-questions"></a>Domande frequenti
+
+**Come posso ottenere copie dei report SOC?**
+
+Con i report, il revisore può confrontare i risultati dei servizi cloud Microsoft per le aziende ai requisiti normativi e legali che ti riguardano.
+
+- Puoi visualizzare tutti i report SOC tramite [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx).
+- I clienti di Azure DevOps Service che non riescono ad accedere alla [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx) possono inviare messaggi di posta elettronica [Azure DevOps](mailto:AzureDevOpsSOCReport@microsoft.com) per i report SOC 1 e SOC 2. Questo messaggio di posta elettronica serve a richiede solo report SOC di Azure DevOps.
+
+**Con quale frequenza vengono emessi report SOC di Azure?**
+
+I report SOC per Azure, Cloud app Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft si basano su una finestra di 12 mesi (periodo di controllo) con nuovi report emessi trimestralmente. L'aumento della frequenza di controllo fornisce una copertura più tempestiva mediante un report SOC, che offre una maggiore garanzia attraverso un revisore esterno rispetto a una lettera ponte. I clienti possono [scaricare](https://aka.ms/stp) i report più recenti dal Service Trust Portal.
+
+**Devo sottoporre a controlli i data center di Microsoft?**
+
+No. Microsoft condivide le certificazioni e i report di controllo indipendenti con i clienti affinché questi ultimi possano verificare l'adeguamento di Microsoft agli impegni di sicurezza.
+
+**Posso usare la conformità di Microsoft nel processo di certificazione della mia organizzazione?**
+
+Sì. Quando esegui la migrazione delle applicazioni e dei dati ai servizi cloud Microsoft, puoi ricorrere ai controlli e alle certificazioni di Microsoft. I report indipendenti attestano l'efficacia dei controlli che Microsoft ha implementato per mantenere la sicurezza e la privacy dei tuoi dati.
+
+**Qual è la fase iniziale del percorso di adeguamento della mia organizzazione?**
+
+Il [SOC Toolkit for Service Organizations ](https://aka.ms/soc-toolkit) è una risorsa utile per comprendere i processi di reporting SOC e per promuoverne l'utilizzo all'interno della tua organizzazione.
+
+## <a name="resources"></a>Risorse
+
+ - [Proteggere meglio i dati con i servizi cloud Microsoft](https://www.microsoft.com/trustcenter/guidance/protect-data)
+ - [Report Service Organization Control (SOC)](https://aka.ms/mssocreports)
+ - [Standard di controllo SSAE 16](https://www.ssae-16.com/)
+ - [Standard ISAE 3402](https://isae3402.com/)
+ - [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+ - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
+ - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+ - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf).
