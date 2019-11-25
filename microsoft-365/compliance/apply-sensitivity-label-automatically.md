@@ -1,10 +1,11 @@
 ---
 title: Applicare automaticamente un'etichetta di riservatezza al contenuto
-ms.author: laurawi
-author: laurawi
+ms.author: krowley
+author: kccross
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
+ms.date: 11/01/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: f0287eff3a462bc6f30c18c561203ba1a9a9dc19
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: eccc60dc7a306f3e7b2eb128ed45a92af65491a5
+ms.sourcegitcommit: cd748ca00088275372f51fbf8c4bc72bfd3e1437
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37343109"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "39233223"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -32,8 +33,7 @@ La possibilità di applicare automaticamente etichette di riservatezza al conten
 
 - Gli utenti non hanno più bisogno di conoscere i criteri e possono concentrarsi sul loro lavoro.
 
-> [!NOTE]
-> La possibilità di applicare automaticamente le etichette richiede automaticamente una sottoscrizione ad Azure Information Protection P2. A tale scopo, è necessario [scaricare e installare il client di assegnazione delle etichette unificato Azure Information Protection](https://docs.microsoft.com/it-IT/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Microsoft sta lavorando al supporto nativo per questa funzionalità nelle applicazioni di Office, in modo che il client di assegnazione delle etichette unificato Azure Information Protection non sia necessario. In più, il client di assegnazione delle etichette unificato viene eseguito solo in Windows, quindi questa funzionalità non è ancora supportata in Mac, iOS e Android.
+Per informazioni sui requisiti di licenza, vedere [Etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md).
 
 Le impostazioni per l’applicazione automatica di etichette sono disponibili quando si crea un'etichetta di riservatezza nel Centro conformità Microsoft 365, Centro sicurezza Microsoft 365 o Centro sicurezza e conformità di Office 365 in **Classificazione** > **Etichette di riservatezza**.
 
@@ -42,14 +42,14 @@ Le impostazioni per l’applicazione automatica di etichette sono disponibili qu
 ## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Applicare automaticamente un'etichetta di riservatezza in base alle condizioni
 
 Una delle funzionalità più efficaci delle etichette di riservatezza è la possibilità di applicarle automaticamente al contenuto che soddisfa determinate condizioni. In questo caso, gli utenti dell'organizzazione non dovranno applicare le etichette di riservatezza, perché Office 365 lo farà al loro posto.
-   
-Si può scegliere di applicare automaticamente le etichette di riservatezza al contenuto se include tipi specifici di informazioni riservate. Quando si configura l'applicazione automatica di un'etichetta di riservatezza, viene visualizzato lo stesso elenco di tipi di informazioni riservate relativo alla creazione di un criterio di prevenzione della perdita di dati. È quindi possibile, ad esempio, applicare automaticamente un'etichetta Estremamente riservato a qualsiasi contenuto che includa informazioni personali dei clienti (PII), ad esempio numeri di carta di credito o numeri di previdenza sociale. 
+
+Si può scegliere di applicare automaticamente le etichette di riservatezza al contenuto se include tipi specifici di informazioni riservate. Quando si configura l'applicazione automatica di un'etichetta di riservatezza, viene visualizzato lo stesso elenco di tipi di informazioni riservate relativo alla creazione di un criterio di prevenzione della perdita di dati. È quindi possibile, ad esempio, applicare automaticamente un'etichetta Estremamente riservato a qualsiasi contenuto che includa informazioni personali dei clienti (PII), ad esempio numeri di carta di credito o numeri di previdenza sociale.
 
 ![Opzioni per il numero di istanze e l'accuratezza della corrispondenza](media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-Dopo aver scelto i tipi di informazioni riservate, è possibile definire la condizione modificando il numero di istanze o l'accuratezza della corrispondenza. Per altre informazioni, vedere [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match) (Ottimizzazione delle regole per rendere più facile o difficile la corrispondenza).
+Dopo aver scelto i tipi di informazioni riservate, è possibile definire la condizione modificando il numero di istanze o l'accuratezza della corrispondenza. Per altre informazioni su queste opzioni, vedere [Ottimizzazione delle regole affinché siano più facili o difficili da soddisfare](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
-È anche possibile scegliere se una condizione deve rilevare tutti i tipi di informazioni riservate o solo uno di essi. Infine, per rendere le condizioni più flessibili o complesse, è possibile aggiungere gruppi e usare gli operatori logici tra i gruppi. Per altre informazioni, vedere [Grouping and logical operators](data-loss-prevention-policies.md#grouping-and-logical-operators) (Raggruppamento e operatori logici).
+Inoltre, è possibile scegliere se una condizione deve rilevare tutti i tipi di informazioni riservate o solo uno. Per rendere le condizioni più flessibili o complesse, è possibile aggiungere gruppi e usare operatori logici tra i gruppi. Per altre informazioni, vedere [Raggruppamento e operatori logici](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 Quando viene applicata automaticamente un'etichetta di riservatezza, l'utente riceve una notifica nella propria applicazione di Office, quindi potrà scegliere **OK** per chiudere la notifica.
 
@@ -57,9 +57,9 @@ Quando viene applicata automaticamente un'etichetta di riservatezza, l'utente ri
 
 ## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Consigliare all'utente di applicare un'etichetta di riservatezza
 
-Se si preferisce, invece di applicare automaticamente un'etichetta di riservatezza al contenuto, si può consigliare agli utenti di applicarla. Questa opzione offre agli utenti la flessibilità di accettare la classificazione e l'eventuale protezione associata o di chiudere il suggerimento, se l'etichetta non è adatta al documento o al messaggio di posta elettronica.
+Se si preferisce, è possibile consigliare agli utenti di applicare l'etichetta. Con questa opzione, gli utenti possono accettare la classificazione e le eventuali protezioni associate o chiudere il suggerimento se l'etichetta non è adatta al documento o al messaggio di posta elettronica.
 
-Le etichette consigliate sono supportate in Word, PowerPoint ed Excel e richiedono l'installazione del client di etichettatura unificata di Azure Information Protection. Microsoft sta lavorando al supporto per le etichette consigliate in Outlook.
+Le etichette consigliate sono supportate in Word, PowerPoint ed Excel e richiedono l'installazione del client di etichettatura unificata di Azure Information Protection.
 
 ![Opzione per consigliare un'etichetta di riservatezza agli utenti](media/Sensitivity-labels-Recommended-label-option.png)
 
@@ -73,9 +73,9 @@ Ecco un esempio di un avviso quando si configura una condizione per applicare un
 
 - Non è possibile usare la classificazione automatica per i documenti e i messaggi di posta elettronica in precedenza etichettati manualmente o associati automaticamente a una classificazione superiore. È possibile applicare una singola etichetta di riservatezza a un documento o un messaggio di posta elettronica (oltre a una singola etichetta di conservazione).
 
-- La classificazione consigliata si applica a Word, Excel e PowerPoint al salvataggio dei documenti. Microsoft sta lavorando al supporto per l'assegnazione di etichette consigliate in Outlook.
+- La classificazione consigliata si applica a Word, Excel e PowerPoint al salvataggio dei documenti.
 
-- Non è possibile usare la classificazione consigliata per i documenti etichettati in precedenza con una classificazione superiore. In questo caso, quando il contenuto è già stato etichettato con una classificazione superiore, l'utente non visualizzerà l'avviso con il consiglio e il suggerimento per i criteri.
+- Non è possibile usare la classificazione consigliata per i documenti etichettati in precedenza con una classificazione superiore. Quando il contenuto è già stato etichettato con una classificazione superiore, l'utente non visualizzerà l'avviso con il consiglio e il suggerimento per i criteri.
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Modalità di valutazione di più condizioni quando si applicano a più etichette
 
