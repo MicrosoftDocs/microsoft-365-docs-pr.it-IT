@@ -16,13 +16,13 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Informazioni su come usare i criteri DLP per proteggere i dati personali in Office 365.
-ms.openlocfilehash: 12d6de9b8012062e26daec922d5c55fa0f52381a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: Informazioni su come usare i criteri di prevenzione della perdita dei dati (DLP) per proteggere i dati personali in Office 365.
+ms.openlocfilehash: e3f7bdc589b34da0aad8baabd5b54bcfd59f25b9
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708139"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256783"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Applicare protezione ai dati personali in Office 365
 
@@ -84,7 +84,7 @@ L'elenco seguente elenca tre configurazioni per aumentare la protezione con DLP.
 <td align="left"><p>Inviare notifiche tramite posta elettronica ai team di conformità quando questi dati vengono individuati nei documenti su SharePoint Online e OneDrive for Business.</p>
 <p>Personalizzare e mostrare suggerimenti per i criteri ai dipendenti in SharePoint e OneDrive for Business quando si accede ai documenti contenenti questi dati.</p>
 <p>Rilevare e segnalare quando questi dati vengono condivisi.</p></td>
-<td align="left"><p>Sensibilizzare con il team di conformità e i dipendenti in merito a dove vengono archiviati questi dati.</p>
+<td align="left"><p>Sensibilizzare il team di conformità e i dipendenti in merito a dove vengono archiviati questi dati.</p>
 <p>Formare i dipendenti sui criteri aziendali per la gestione dei documenti contenenti questi dati.</p>
 <p>Non impedire ai dipendenti di condividere questi dati internamente o esternamente.</p>
 <p>È possibile esaminare i report DLP sui dati condivisi e decidere se è necessario aumentare la protezione.</p></td>
@@ -100,7 +100,7 @@ L'elenco seguente elenca tre configurazioni per aumentare la protezione con DLP.
 <tr class="odd">
 <td align="left">Impedire la condivisione interna ed esterna</td>
 <td align="left"><p>Limitare l'accesso ai documenti contenenti questi dati in SharePoint Online e OneDrive for Business quando i contenuti vengono condivisi internamente o esternamente.</p>
-<p>Impedire l'invio di messaggi di posta elettronica contenente questi dati ai destinatari esterni e interni.</p></td>
+<p>Impedire l'invio di messaggi di posta elettronica contenenti questi dati a destinatari esterni e interni.</p></td>
 <td align="left"><p>Impedisce la condivisione interna ed esterna di questi dati.</p>
 <p>I dipendenti potrebbero non essere in grado di completare attività che richiedono di utilizzare questi dati.</p>
 <p>È possibile esaminare i report DLP sui dati condivisi internamente ed esternamente e decidere se è necessario formare l'utente finale.</p></td>
@@ -156,11 +156,11 @@ Descrizione: visualizzare suggerimenti per i criteri ai dipendenti, informare i 
 
 Tutti i percorsi includono:
 
--   SharePoint Online
+- SharePoint Online
 
--   Account OneDrive for Business
+- Account OneDrive for Business
 
--   Cassette postali di Exchange
+- Cassette postali di Exchange
 
 Poiché Ricerca contenuto al momento non consente di testare tipi di informazioni riservate con la posta elettronica, prendere in considerazione l'idea di creare criteri separati per Exchange con un set secondario di informazioni riservate in ogni criterio, monitorando l'implementazione di questi criteri.
 
