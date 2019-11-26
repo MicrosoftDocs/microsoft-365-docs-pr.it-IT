@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: d49f465aa66cd3c720e83b28569da2770300067e
-ms.sourcegitcommit: 2de2faea7da80712f448e35c2d6c425944013b7e
+ms.openlocfilehash: 895715c35dd124bbcea56ed0eb479cfc4281d157
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39204258"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257551"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
@@ -164,24 +164,3 @@ Non monitorare quando gli utenti fanno clic su collegamenti sicuri|Disattivato|D
 |Reindirizza l'allegato sul rilevamento|Abilitato|Abilitato|Reindirizzare l'indirizzo di posta elettronica per un amministratore della sicurezza che sa come determinare se l'allegato è un malware o meno|
 |Risposta agli allegati sicuri ATP se si verifica un errore durante l'analisi di malware per gli allegati|Abilitato|Abilitato||
 
-## <a name="miscellaneous-settings"></a>Miscellaneous settings (Impostazioni varie)
-
-Queste impostazioni riguardano una serie di caratteristiche che non si adattano necessariamente alle categorie specifiche sopra riportate. Alcune di queste impostazioni sono esterne al centro sicurezza & conformità.
-
-Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
-|---------|---------|---------|---------|
-|[Configurazione di SPF in Office 365 per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sì|Sì||
-|[Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md)|Sì|Sì||
-|[Utilizzare DMARC per convalidare la posta elettronica in Office 365](use-dmarc-to-validate-email.md)|Sì|Sì|Utilizzare Action = Quarantine per standard e Action = Reject per strict.|
-|Distribuire il componente aggiuntivo dei messaggi di report per migliorare la segnalazione degli utenti finali di messaggi di posta elettronica sospetti|Sì|Sì||
-|Pianificare i report di malware e posta indesiderata|Sì|Sì||
-|L'inoltro automatico ai domini esterni deve essere non consentito o monitorato|Sì|Sì||
-|Il controllo unificato dovrebbe essere abilitato|Sì|Sì||
-|Connettività IMAP alla cassetta postale|Disattivato|Disattivato||
-|Connettività POP alla cassetta postale|Disattivato|Disattivato||
-|Invio con autenticazione SMTP alla cassetta postale|Disattivato|Disattivato||
-|Connettività EWS alla cassetta postale|Disattivato|Disattivato||
-|Connettività di PowerShell|Disattivato|Disattivato||
-|Utilizzare l'intelligence spoof per i mittenti whitelist quando possibile|Sì|Sì||
-|Blocco Edge basato su directory (DBEB)|Abilitato|Abilitato|Tipo di dominio = autorevole|
-|[Configurare l'autenticazione a più fattori per tutti gli account di amministrazione](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Abilitato|Abilitato||
