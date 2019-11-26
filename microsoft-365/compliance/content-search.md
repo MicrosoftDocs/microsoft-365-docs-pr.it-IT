@@ -10,18 +10,19 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Office 365 e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
-ms.openlocfilehash: e3553ff2e3c8398ac4bc00258e41e8d9607b3639
-ms.sourcegitcommit: 53d848ebd4799b285d0f67c49b0aa24c88bd0e23
+ms.openlocfilehash: ba3a8ffd495d58726c24ad7abd2e115d2e1c2b8b
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37334256"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39266145"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 
@@ -37,7 +38,7 @@ ms.locfileid: "37334256"
     
 - Gruppi di Office 365
     
-Dopo aver eseguito una Ricerca contenuto, il numero di percorsi dei contenuti e il numero stimato dei risultati della ricerca vengono visualizzati nel profilo della ricerca. È anche possibile visualizzare rapidamente le statistiche, come i percorsi di contenuto che contengono la maggior parte degli elementi corrispondenti alla query di ricerca. Dopo l'esecuzione di una ricerca, è possibile visualizzare in anteprima i risultati o esportarli in un computer locale.
+Dopo aver eseguito una Ricerca contenuto, il numero di percorsi dei contenuti e il numero stimato dei risultati della ricerca vengono visualizzati nelle statistiche della ricerca. È anche possibile visualizzare rapidamente le statistiche, come i percorsi di contenuto che contengono la maggior parte degli elementi corrispondenti alla query di ricerca. Dopo l'esecuzione di una ricerca, è possibile visualizzare in anteprima i risultati o esportarli in un computer locale.
 
 ## <a name="create-a-search"></a>Creare una ricerca
 
@@ -103,11 +104,10 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
 Per accedere nuovamente alla ricerca contenuto o accedere ad altre ricerche contenuto elencate nella pagina **Ricerca contenuto**, selezionare la ricerca e quindi fare clic su **Apri**. 
   
 Per cancellare i risultati o creare un'altra ricerca, fare clic su ![Icona Aggiungi](media/O365-MDM-CreatePolicy-AddIcon.gif) **Nuova ricerca**. 
-
   
 ## <a name="preview-search-results"></a>Visualizza in anteprima i risultati della ricerca
 
-Sono disponibili due impostazioni di configurazione per l'anteprima dei risultati della ricerca. Dopo aver eseguito una nuova ricerca o aperto una ricerca esistente, fare clic su ** Singoli risultati ** per visualizzare le impostazioni di anteprima seguenti: 
+Sono disponibili due impostazioni di configurazione per l'anteprima dei risultati della ricerca. Dopo aver eseguito una nuova ricerca o aperto una ricerca esistente, fare clic su **Singoli risultati** per visualizzare le impostazioni di anteprima seguenti: 
   
 ![Impostazioni di visualizzazione dell'anteprima risultati della ricerca](media/83519477-1c85-4442-8886-481f186fd758.png)
   
@@ -133,7 +133,7 @@ Per visualizzare le statistiche della ricerca:
     
 2. Nella pagina a comparsa fare clic su **Apri query**. 
     
-3. Nell'elenco a discesa **Singoli risultati** fare clic su **Profilo di ricerca**.
+3. Nell'elenco a discesa **Singoli risultati** fare clic su **Statistiche ricerca**.
     
 4. Nell'elenco a discesa **Tipo** fare clic su una delle opzioni seguenti in base alle statistiche di ricerca che si vogliono visualizzare. 
     
@@ -244,13 +244,12 @@ Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei 
     
 - Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà di un team o di un gruppo di Office 365. È un buon modo per ottenere l'URL del sito associato a un gruppo o a un team. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Office 365 denominato Senior Leadership Team: 
     
-  ```
+  ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
   DisplayName            : Senior Leadership Team
   Alias                  : seniorleadershipteam
   PrimarySmtpAddress     : seniorleadershipteam@contoso.onmicrosoft.com
   SharePointSiteUrl      : https://contoso.sharepoint.com/sites/seniorleadershipteam
-  
   ```
 
     > [!NOTE]
@@ -260,7 +259,7 @@ Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei 
     
 - Per ottenere un elenco dei membri di un gruppo di Office 365 o di un team, è possibile visualizzare le proprietà nella pagina **Home \>Gruppi** nell’interfaccia di amministrazione di Microsoft 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online: 
     
-  ```
+  ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
   ```
 
@@ -387,19 +386,19 @@ Si supponga, ad esempio, che un manager di eDiscovery debba cercare contenuto di
 
 **Nord America**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-NAM" -Users ediscovery-nam@contoso.com -Region NAM -Action ALL
 ```
 
 **Europa**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-EUR" -Users ediscovery-eur@contoso.com -Region EUR -Action ALL
 ```
 
 **Asia Pacifico**
 
-```
+```powershell
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-APC" -Users ediscovery-apc@contoso.com -Region APC -Action ALL
 ```
 

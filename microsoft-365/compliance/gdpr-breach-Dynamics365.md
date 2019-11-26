@@ -9,13 +9,15 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: 1cd1a73395a7bfeb190f8a31589c27bb95312484
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: 92979fd66ac2d51c48b7a0836be5eb1133ae242a
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982337"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39266139"
 ---
 # <a name="dynamics-365-and-breach-notification-under-the-gdpr"></a>Dynamics 365 e notifica di violazione secondo l'RGPD
 
@@ -71,7 +73,7 @@ Microsoft assegna all'indagine adeguati livelli di priorità e gravità determin
 
 Il team di Security Response collabora con Microsoft Dynamics 365 Security Engineers e Subject Matter Experts (SME) per classificare l'evento sulla base di dati concreti tratti dalle prove raccolte. Un incidente di sicurezza può essere classificato come:
 
-- **Falso positivo:** un evento che soddisfa i criteri di rilevamento ma che risulta essere parte di una normale pratica aziendale e può aver bisogno di essere filtrato. Il team del servizio identificherà la causa principale dei falsi positivi e li risolverà in modo sistematico sfruttando le fonti di rilevamento e <span id="_Toc350859432" class="anchor"></span>ottimizzandole se necessario.
+- **Falso positivo:** un evento che soddisfa i criteri di rilevamento ma che risulta essere parte di una normale pratica aziendale e può aver bisogno di essere filtrato. Il team del servizio identificherà la causa principale dei falsi positivi e li risolverà in modo sistematico sfruttando le fonti di rilevamento e ottimizzandole se necessario.
 - **Incidente di sicurezza:** un accesso illecito o non autorizzati ai dati del cliente o ai dati di supporto conservati nei dispositivi o nelle sedi Microsoft che ha provocato la perdita, la divulgazione o l'alterazione dei dati del cliente o dei dati di supporto.
 - **Incidenti di sicurezza/privacy segnalabili dal cliente (CRSPI):** un accesso o un utilizzo illecito o non autorizzato dei sistemi, dei dispositivi o delle sedi Microsoft che ha provocato la divulgazione, la modifica o la perdita dei dati del cliente.
 - **Incidente di privacy**: un sottotipo di incidente di sicurezza che coinvolge i dati personali. Le procedure di gestione non sono diverse da un evento di sicurezza.
@@ -97,8 +99,8 @@ Microsoft Dynamics 365 fornisce ai clienti informazioni dettagliate che consento
 
 La notifica di una violazione dei dati personali verrà consegnata al cliente con qualsiasi mezzo selezionato da Microsoft, anche via email. La notifica di una violazione dei dati verrà inviata all'elenco dei contatti del cliente/amministratori (solo i tenant interessati) fornito nel Centro sicurezza di Office e configurabile dal cliente/amministratore del tenant. Per garantire che la notifica possa essere consegnata con successo, è responsabilità del cliente assicurarsi che le informazioni di contatto amministrative su ciascun abbonamento e portale di servizi online siano corrette.
 
-Il team di Microsoft Dynamics 365 per enti pubblici può anche decidere di notificare ulteriori informazioni al personale Microsoft, ad esempio il servizio clienti (CSS) e l'Account Manager del cliente (AM) o il Technical Account Manager (TAM). Tali figure hanno spesso strette relazioni con il cliente e possono facilitare una correzione più rapida.<span id="_Appendix_A" class="anchor"></span>
+Il team di Microsoft Dynamics 365 può anche decidere di notificare ulteriori informazioni al personale Microsoft, ad esempio il servizio clienti (CSS) e l'Account Manager del cliente (AM) o il Technical Account Manager (TAM). Tali figure hanno spesso strette relazioni con il cliente e possono facilitare una correzione più rapida.
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 - [Centro protezione Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

@@ -12,15 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MET150
 description: I criteri di prevenzione della perdita dei dati del Centro sicurezza e conformità permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Office 365.
-ms.openlocfilehash: 940db3e32c67ee0c457bd499f63a562343f09e2b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b9035fde858d8040be14073f61d6c4e9629df53b
+ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082997"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "39266143"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -105,7 +106,10 @@ Le condizioni disponibili a questo punto consentono di determinare se:
     
 - Il contenuto include un'etichetta. Per altre informazioni, vedere la sezione seguente [Uso di un'etichetta come condizione nei criteri di prevenzione della perdita dei dati](#using-a-label-as-a-condition-in-a-dlp-policy).
     
-- Il contenuto viene condiviso con utenti esterni o interni all’organizzazione.
+- Il contenuto viene condiviso con utenti esterni o interni all'organizzazione.
+
+> [!NOTE]
+> Gli utenti che hanno account non guest nel tenant di Active Directory o di Azure Active Directory di un'organizzazione host sono considerati come utenti interni all'organizzazione.
     
 #### <a name="types-of-sensitive-information"></a>Tipi di informazioni riservate
 
@@ -322,7 +326,11 @@ Per questi motivi, le indicazioni per la creazione di regole con diverse accurat
     
 Per ulteriori informazioni sulle etichette, vedere [Panoramica delle etichette di conservazione](labels.md).
   
-Dopo aver creato un'etichetta, è possibile usarla come condizione nei criteri di prevenzione della perdita dei dati. Ad esempio, questa operazione può essere utile perché:
+Dopo aver creato un'etichetta, è possibile usarla come condizione nei criteri di prevenzione della perdita dei dati. 
+
+![Etichette come condizione](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+Ad esempio, questa operazione può essere utile perché:
   
 - È stata pubblicata un'etichetta denominata **Riservato** che consente alle persone nell'organizzazione di applicare manualmente l'etichetta ai messaggi di posta elettronica e ai documenti riservati. Usando questa etichetta come condizione nei criteri di prevenzione della perdita dei dati è possibile impedire che il contenuto etichettato come **Riservato** venga condiviso con utenti esterni all'organizzazione. 
     
@@ -332,9 +340,10 @@ Dopo aver creato un'etichetta, è possibile usarla come condizione nei criteri d
     
 - È stata pubblicata un'etichetta denominata **Team dirigenti - Riservato** nelle cassette postali di Exchange e negli account di OneDrive di un gruppo di dirigenti. Usando questa etichetta come condizione nei criteri di prevenzione della perdita dei dati è possibile applicare azioni di conservazione e di protezione allo stesso sottoinsieme di contenuti e utenti. 
     
-Usando le etichette come condizioni nei criteri di prevenzione della perdita dei dati è possibile applicare in modo selettivo le azioni di protezione a uno specifico set di contenuti, posizioni o utenti.
-  
-![Etichette come condizione](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+Usando le etichette come condizioni nei criteri di prevenzione della perdita dei dati è possibile applicare in modo selettivo le azioni di protezione a uno specifico set di contenuti, posizioni o utenti. 
+
+> [!NOTE]
+> Se si specifica un'etichetta di conservazione come condizione in un criterio di prevenzione della perdita dei dati e si includono anche Exchange e/o Teams come posizione, si riceverà un messaggio di errore simile al seguente: "La protezione del contenuto con etichetta nei messaggi di posta elettronica e di Teams non è supportata. Rimuovere l'etichetta seguente o disattivare Exchange e Teams come posizione". Questo perché il trasporto di Exchange non valuta i metadati dell'etichetta durante l'invio e il recapito dei messaggi. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>Il supporto per le etichette di riservatezza sarà disponibile a breve
 
