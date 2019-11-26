@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b331bba76f45a11a4d1c8c0552b27759cf49608a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 60436db997d75d92e7d17fc27f66eb3944b419d8
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083347"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256903"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizzare i dati in un set di revisione in Advanced eDiscovery
 
-Quando il numero di documenti raccolti è di grandi dimensioni, può essere molto difficile rivederli tutti. Advanced eDiscovery fornisce una serie di strumenti per analizzare i documenti in modo da ridurre il volume dei documenti da rivedere senza perdite di informazioni e per facilitare l'organizzazione dei documenti in maniera coerente. Per ulteriori informazioni su queste funzionalità, vedere:
+Quando il numero di documenti raccolti è di grandi dimensioni, può essere difficile rivederli tutti. Advanced eDiscovery fornisce una serie di strumenti per analizzare i documenti in modo da ridurre il volume dei documenti da rivedere senza perdite di informazioni e per facilitare l'organizzazione dei documenti in maniera coerente. Per ulteriori informazioni su queste funzionalità, vedere:
 
 - [Rilevamento dei documenti simili](near-duplicates.md)
 
@@ -43,7 +43,7 @@ Per analizzare i dati in un set di Revisione:
 
 È possibile controllare lo stato di avanzamento dell'analisi nella scheda **processi** del caso.
 
- Dopo aver completato l'analisi, è possibile visualizzare il report di analisi, eseguire query all'interno del set di recensioni sugli output dell'analisi (vedere [query nel set di recensioni](review-set-search.md)) e vedere i documenti correlati di un documento specifico (vedere [revisione dei dati nel set](reviewing-data-in-review-set.md)di analisi).
+ Dopo aver completato l'analisi, è possibile visualizzare il rapporto analitico, eseguire query all'interno del set di recensioni sugli output dell'analisi (vedere [query nel set di recensioni](review-set-search.md)) e vedere i documenti correlati di un documento specifico (vedere [reviewing data in Review set](reviewing-data-in-review-set.md)).
 
 ## <a name="analytics-report"></a>Report di analisi
 

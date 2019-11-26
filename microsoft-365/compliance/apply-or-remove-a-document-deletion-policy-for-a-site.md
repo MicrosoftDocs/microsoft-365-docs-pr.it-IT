@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Le organizzazioni spesso sono soggette a regolamentazioni di conformità, normative legali o di altro tipo, che richiedono di mantenere i documenti per un certo periodo di tempo. Tuttavia, mantenere i documenti più a lungo del necessario può esporre l'organizzazione a rischi legali. Per questo motivo, la tua organizzazione potrebbe aver creato un criterio di eliminazione del documento per il tuo sito; per esempio, potrebbe essere necessario eliminare i documenti dell'attività generale cinque anni dopo la loro creazione.
-ms.openlocfilehash: 3f5228c26cc4e12c129a57e2141e3eea50d029a2
-ms.sourcegitcommit: 1eecd7b127462585c35b0c96a179d37db45f6013
+ms.openlocfilehash: 2eaa864cda726e6e36625f81358da76856db7db4
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37342959"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256763"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Applicare o rimuovere un criterio di eliminazione del documento per un sito
 
-Le organizzazioni spesso sono soggette a regolamentazioni di conformità, normative legali o di altro tipo, che richiedono di mantenere i documenti per un certo periodo di tempo. Tuttavia, mantenere i documenti più a lungo del necessario può esporre l'organizzazione a rischi legali. Per questo motivo, la tua organizzazione potrebbe aver creato un criterio di eliminazione del documento per il tuo sito; per esempio, potrebbe essere necessario eliminare i documenti dell'attività generale cinque anni dopo la loro creazione.
+Le organizzazioni spesso sono soggette a regolamentazioni di conformità, normative legali o di altro tipo, che richiedono di mantenere i documenti per un certo periodo di tempo. Tuttavia, mantenere i documenti più a lungo del necessario può esporre l'organizzazione a rischi legali. Per questo motivo, è possibile che l'organizzazione abbia creato un criterio di eliminazione dei&mdash;documenti per il sito, ad esempio, i documenti aziendali generali potrebbero essere necessari per essere eliminati cinque anni dopo la loro creazione.
   
 A seconda dell'organizzazione, un criterio di eliminazione del documento può essere:
   
@@ -33,11 +33,11 @@ A seconda dell'organizzazione, un criterio di eliminazione del documento può es
     
   - Selezionare un altro criterio, se disponibile.
     
-  - Disattivare completamente il criterio, se non è rilevante ai fini del contenuto del sito.
+  - Escludere completamente il criterio se non è pertinente per il contenuto del sito.
     
 - **Né obbligatorio né predefinito** In questo caso, nessun criterio è applicato al sito automaticamente e il proprietario del sito deve eseguire determinate azioni per applicarne uno. 
     
-Un criterio di eliminazione del documento può contenere più di una regola. Per esempio, una regola potrebbe definire l'eliminazione dei documenti dopo un anno dalla loro creazione, mentre un'altra regola potrebbe definire l'eliminazione dei documenti dopo un anno dall'ultima modifica apportata loro. Se un criterio contiene più di una regola, puoi selezionare quella più appropriata per il tuo sito. La regola di eliminazione verrà applicata a tutte le librerie all'interno del sito. Solo un criterio e una regola alla volta possono essere attivi in un sito. Come un criterio, anche una regola può essere impostata come predefinita, in modo che sia applicata automaticamente quando viene applicato il criterio corrispondente.
+Un criterio di eliminazione dei documenti può contenere più di&mdash;una regola, ad esempio, una regola potrebbe dire eliminare i documenti un anno dopo che sono stati creati, ma un'altra regola potrebbe dire eliminare i documenti un anno dopo l'ultima modifica. Se un criterio contiene più di una regola, è possibile selezionare la regola che meglio si applica al sito. La regola di eliminazione verrà applicata a tutte le raccolte all'interno del sito. Solo un criterio e una regola alla volta possono essere attivi in un sito. Analogamente a un criterio, è possibile impostare una regola come predefinita, in modo che venga applicata automaticamente quando viene applicato il criterio.
   
 Infine, i criteri di eliminazione del documento vengono ereditati. Quando selezioni un criterio o una regola per il tuo sito, tale scelta viene ereditata da tutti i siti secondari, anche se il proprietario di un sito secondario può interrompere l'ereditarietà selezionando un criterio o una regola diversi. Quando selezioni un criterio o una regola, tieni presente il contenuto di eventuali siti secondari all'interno del tuo sito.
   
@@ -85,7 +85,7 @@ Questo elenco è solo in modalità visualizzazione e consente al proprietario de
   
   - **Per rifiutare l'esclusione di un criterio** Scegliere **opt-out: do note Delete** \> **Save**.
     
-    In qualità di proprietario del sito, puoi disattivare un criterio di eliminazione del documento se decidi che quel criterio non è applicabile al contenuto del sito. Tuttavia, non puoi disattivare un criterio che è stato contrassegnato come **obbligatorio**.
+    Come proprietario di un sito, è possibile escludere un criterio di eliminazione dei documenti se si determina che il criterio non è applicabile al contenuto del sito. Tuttavia, non è possibile escludere un criterio contrassegnato come **obbligatorio**.
     
     ![Opzione opt-out](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
@@ -99,7 +99,7 @@ Un sito può utilizzare altri criteri per il mantenimento e l'eliminazione dei c
     
 Se applichi un criterio di eliminazione del documento a un sito che già utilizza criteri tipo di contenuto o criteri di gestione delle informazioni per un elenco o una libreria, tali criteri vengono ignorati mentre il criterio di eliminazione del documento è attivo. Se altri criteri vengono ignorati, verrà visualizzato il messaggio "contenuto in questo sito utilizza i criteri di eliminazione dei documenti".
   
-Questo significa che dovresti pianificare un sito che utilizzi solo criteri destinati a contenuti strutturati (criteri di gestione delle informazioni e criteri tipo di contenuto) o contenuti non strutturati (criteri di eliminazione del documento) e non ad entrambi. Se disattivi il criterio di eliminazione del documento, l'errore segnalato dall'avviso non verrà visualizzato e continueranno a funzionare altri tipi di criteri.
+Questo significa che dovresti pianificare un sito che utilizzi solo criteri destinati a contenuti strutturati (criteri di gestione delle informazioni e criteri tipo di contenuto) o contenuti non strutturati (criteri di eliminazione del documento) e non ad entrambi. Se si sceglie di escludere un criterio di eliminazione dei documenti, l'avviso non verrà visualizzato e altri tipi di criteri continueranno a funzionare.
   
 I criteri di eliminazione del documento non hanno alcun effetto sui criteri sito.
   

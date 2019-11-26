@@ -18,26 +18,26 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: È possibile utilizzare Information Rights Management (IRM) per controllare e proteggere i file scaricati da elenchi o raccolte.
-ms.openlocfilehash: 82cbbf7fdea4a534c2bc73bf0f817d6fc3a249de
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: cd970f5e89a08de133511c99b8209b389f32cd87
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686518"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256813"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Applicazione di Information Rights Management (IRM) a un elenco o a una raccolta
 
 È possibile utilizzare Information Rights Management (IRM) per controllare e proteggere i file scaricati da elenchi o raccolte.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Il servizio Azure Rights Management (Azure RMS) di Azure Information Protection e l'equivalente locale, Active Directory Rights Management Services (AD RMS), supportano Information Rights Management per i siti. Non sono necessarie installazioni separate o aggiuntive.
     
-- Prima di applicare IRM a un elenco o a una raccolta, è necessario che sia abilitato per la prima volta da un amministratore del sito.
+- Prima di applicare IRM a un elenco o a una raccolta, è innanzitutto necessario abilitarlo da un amministratore del sito.
     
 - Per applicare IRM a un elenco o a una raccolta, è necessario disporre delle autorizzazioni di amministratore per l'elenco o la raccolta.
     
-- Se si utilizza SharePoint Online, è possibile che gli utenti verifichino timeout durante il download di file protetti con IRM di grandi dimensioni. In questo caso, applicare la protezione IRM tramite le applicazioni di Office e archiviare file di grandi dimensioni in una raccolta di SharePoint che non utilizza IRM.
+- Se si utilizza SharePoint Online, è possibile che gli utenti verifichino timeout durante il download di file protetti con IRM di grandi dimensioni. In questo caso, applicare la protezione IRM tramite le applicazioni di Office e archiviare i file più grandi in una raccolta di SharePoint che non utilizza IRM.
     
 > [!NOTE]
 > Se si utilizza SharePoint Server 2013, è necessario che un amministratore del server installi protettori su tutti i server Web front-end per ogni tipo di file che gli utenti dell'organizzazione desiderano proteggere tramite IRM. 
@@ -53,7 +53,7 @@ ms.locfileid: "38686518"
     
     ![Pulsanti delle impostazioni della raccolta di SharePoint sulla barra multifunzione](media/cdf718fa-d792-40fc-8026-00c3b80b9e05.png)
   
-3. In **autorizzazioni e gestione**fare clic su **Information Rights Management**. Se il collegamento Information Rights Management non è visualizzato, IRM potrebbe non essere abilitato per il sito. Contattare l'amministratore del server per verificare se è possibile abilitare IRM per il sito. Il collegamento Information Rights Management non è visualizzato per le raccolte immagini.
+3. In **autorizzazioni e gestione**fare clic su **Information Rights Management**. Se non viene visualizzato il collegamento Information Rights Management, IRM potrebbe non essere abilitato per il sito. Contattare l'amministratore del server per verificare se è possibile abilitare IRM per il sito. Il collegamento Information Rights Management non è visualizzato per le raccolte immagini.
     
 4. Nella pagina **impostazioni di Information Rights Management** selezionare la casella di controllo **limitare l'autorizzazione per i documenti in questa raccolta** per applicare le autorizzazioni limitate ai documenti scaricati dall'elenco o dalla raccolta. 
     
@@ -70,7 +70,7 @@ ms.locfileid: "38686518"
 |Richiedere che gli utenti verifichino le proprie credenziali a intervalli specifici.  <br/> Selezionare questa opzione se si desidera limitare l'accesso al contenuto a un determinato periodo di tempo. Se si seleziona questa opzione, le licenze di pubblicazione degli utenti per accedere al contenuto scadranno dopo il numero di giorni specificato e gli utenti saranno tenuti a tornare al server per verificare le credenziali e scaricare una nuova copia.  <br/> |Selezionare la casella di controllo **intervalli (giorni) per gli utenti devono verificare le proprie credenziali** e quindi specificare il numero di giorni per cui si desidera visualizzare il documento.  <br/> |
 | Impedire agli utenti di caricare documenti che non supportano IRM nell'elenco o nella raccolta.  <br/>  Se si seleziona questa opzione, gli utenti non saranno in grado di caricare uno dei tipi di file seguenti:  <br/>  I tipi di file che non dispongono di protettori IRM corrispondenti sono installati in tutti i server Web front-end.  <br/>  Tipi di file che SharePoint Server 2010 non è in grado di decrittografare.  <br/>  Tipi di file che sono protetti da IRM in un altro programma  <br/> |Selezionare la casella di controllo non **consentire agli utenti di caricare i documenti che non supportano IRM** .  <br/> |
 |Rimuovere le autorizzazioni limitate dall'elenco o dalla raccolta in base a una data specifica.  <br/> |Selezionare la casella di controllo **Interrompi la limitazione dell'accesso alla raccolta** e quindi selezionare la data desiderata.  <br/> |
-|Controllare l'intervallo di memorizzazione nella cache delle credenziali per il programma concesso in licenza per l'apertura del documento.  <br/> |Nell' **intervallo imposta protezione e credenziali di gruppo**immettere theinterval per le credenziali di memorizzazione nella cache in numero di giorni.  <br/> |
+|Controllare l'intervallo di memorizzazione nella cache delle credenziali per il programma concesso in licenza per l'apertura del documento.  <br/> |Nell' **intervallo imposta protezione e credenziali di gruppo**immettere l'intervallo per le credenziali di memorizzazione nella cache in numero di giorni.  <br/> |
 |Consenti protezione di gruppo in modo che gli utenti possano condividerli con i membri dello stesso gruppo.  <br/> |Selezionare **Consenti protezione gruppo**e immettere il nome del gruppo per la condivisione.  <br/> |
    
 8. Dopo aver selezionato le opzioni desiderate, fare clic su **OK**.

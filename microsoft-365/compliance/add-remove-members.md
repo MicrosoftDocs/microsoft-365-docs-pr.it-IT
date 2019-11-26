@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b5fabd3b0a1e6e1951143b1a3778ced4e01a6288
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 154273f4f55e48c959f601a00901e26e421db725
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083369"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257014"
 ---
 # <a name="add-or-remove-members-from-a-data-investigation"></a>Aggiungere o rimuovere membri da un'analisi dei dati
 
@@ -29,15 +29,15 @@ ms.locfileid: "37083369"
 
 2. Andare a **Impostazioni** e selezionare "accesso & autorizzazioni".
  
-3. Fare clic su **Aggiorna**.
+3. Selezionare **Aggiorna**.
  
-4. In **Gestisci membri**fare clic su Aggiungi icona Aggiungi per aggiungere membri all'indagine. È inoltre possibile scegliere di aggiungere un gruppo di ruoli all'analisi. In **Gestisci gruppi di ruoli**fare clic su Aggiungi icona Aggiungi. 
+4. In **Gestisci membri**selezionare Aggiungi icona Aggiungi per aggiungere membri all'indagine. È inoltre possibile scegliere di aggiungere un gruppo di ruoli all'analisi. In **Gestisci gruppi di ruoli**selezionare Aggiungi icona Aggiungi. 
      Tenere presente che i gruppi di ruoli controllano l'autorizzazione per accedere all'indagine. Questo significa che è possibile aggiungere solo le persone a cui è assegnato un gruppo di ruoli investigatore dati o gruppi di ruoli personalizzati con il ruolo di gestione analisi dati.
  
-5. Nell'elenco di utenti o gruppi di ruoli che possono essere aggiunti come membri dell'indagine fare clic sulla casella di controllo accanto ai nomi degli utenti o dei gruppi di ruoli che si desidera aggiungere.
+5. Nell'elenco di utenti o gruppi di ruoli che possono essere aggiunti come membri dell'analisi, selezionare la casella di controllo accanto ai nomi degli utenti o dei gruppi di ruoli che si desidera aggiungere.
 
-6. Dopo aver selezionato gli utenti o i gruppi di ruoli da aggiungere come membri del gruppo, fare clic su **Aggiungi**.
+6. Dopo aver selezionato gli utenti o i gruppi di ruoli da aggiungere come membri del gruppo, selezionare **Aggiungi**.
 
-7. In **Gestisci questa indagine**, fare clic su **Salva** per salvare il nuovo elenco dei membri dell'indagine.
+7. In **Gestisci questa indagine**, seleziona **Salva** per salvare il nuovo elenco dei membri dell'indagine.
 
 8. Fare clic su **Salva** per salvare il nuovo elenco dei membri dell'indagine.
