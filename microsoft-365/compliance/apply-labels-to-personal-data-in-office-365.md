@@ -15,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come utilizzare le etichette di Office per il piano di protezione RGPD.
-ms.openlocfilehash: 518e5352861242bfbf9220f876edcb4b616493df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 023d6e2d3db1b6ec844801598df1925f3660217f
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083345"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256913"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Applicare le etichette ai dati personali in Office 365
 
@@ -80,7 +80,7 @@ Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni
 <p>Dati cliente
 </p></td>
 <td align="left"><p>Avvisa quando i file con questi attributi...</p>
-<p>Scegliere uno o più attributi: attributi PII predefinito, tipo di informazioni riservate di Office 365, etichetta di riservatezza (AIP), espressione personalizzata</p>
+<p>Scegliere uno o più attributi: attributo PII predefinito, tipologia di informazioni riservate di Office 365, etichetta di riservatezza (AIP), espressione personalizzata</p>
 <p>. . . in qualsiasi app SaaS approvata vengono condivisi all'esterno dell'organizzazione</p><p>Nota: le etichette di conservazione non sono attualmente supportate in Cloud App Security.</td>
 </tr>
 <tr class="even">
@@ -114,7 +114,6 @@ L'ordine con cui vengono creati i criteri da applicare automaticamente e il fatt
 
 Se sono presenti più regole che assegnano un'etichetta da applicare automaticamente e il contenuto soddisfa le condizioni di più regole, viene assegnata l'etichetta della regola meno recente. Per questo motivo, è importante pianificare con attenzione i criteri delle etichette prima di configurarli. Se un'organizzazione ha l'esigenza di modificare la priorità dei criteri delle etichette, è necessario eliminarli e crearli di nuovo.
 
-
 ### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a>Le etichette applicate manualmente dall'utente hanno la precedenza su quelle applicate automaticamente
 
 
@@ -127,10 +126,10 @@ Le etichette assegnate automaticamente possono essere aggiornate creando nuovi c
 
 Assicurarsi che il piano di implementazione delle etichette includa:
 
--   Creare i criteri di applicazione automatica secondo l'ordine di priorità.
+- Creare i criteri di applicazione automatica secondo l'ordine di priorità.
 
 
--   Allocare il tempo necessario all'applicazione automatica delle etichette prima di consentire agli utenti di applicarle manualmente. Potrebbe essere necessaria anche una settimana per applicare le etichette a tutti i contenuti che corrispondono alle condizioni.
+- Allocare il tempo necessario all'applicazione automatica delle etichette prima di consentire agli utenti di applicarle manualmente. Potrebbe essere necessaria anche una settimana per applicare le etichette a tutti i contenuti che corrispondono alle condizioni.
 
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>Esempio di priorità per creare i criteri di applicazione automatica
@@ -213,8 +212,8 @@ La figura seguente mostra come creare un'etichetta Dati cliente da applicare aut
 
 Nella figura:
 
--   Viene creata l'etichetta "Dati del cliente".
+- Viene creata l'etichetta "Dati del cliente".
 
--   I tipi di informazioni riservate desiderate per l'RGPD sono: codice fiscale belga, numero di carta di credito, numero identità Croazia, codice fiscale Finlandese.
+- I tipi di informazioni riservate desiderate per l'RGPD sono: codice fiscale belga, numero di carta di credito, numero identità Croazia, codice fiscale Finlandese.
 
--   La creazione di un criterio di applicazione automatica assegna l'etichetta "Dati del cliente" a qualsiasi file che include uno dei tipi di informazioni riservate aggiunto al criterio.
+- La creazione di un criterio di applicazione automatica assegna l'etichetta "Dati del cliente" a qualsiasi file che include uno dei tipi di informazioni riservate aggiunto al criterio.

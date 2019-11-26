@@ -10,17 +10,18 @@ localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 9885463e61c36713cbd7be82ac1ef2caaee70e7a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
+ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082804"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "39233519"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -86,13 +87,13 @@ Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del regis
 
 - Se si desidera disattivare la ricerca nel log di controllo in Office 365 per la propria organizzazione, è possibile eseguire questo comando nell'istanza di PowerShell remota connessa all'organizzazione di Exchange Online:
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
   ```
 
     Per attivare di nuovo la ricerca nel log di controllo, è possibile eseguire il comando seguente in PowerShell di Exchange Online:
 
-  ```
+  ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
@@ -213,6 +214,9 @@ I risultati includono le informazioni seguenti relative a ogni evento restituito
 
 - **Indirizzo IP**: indirizzo IP del dispositivo usato durante la registrazione dell'attività. L'indirizzo IP viene visualizzato in formato IPv4 o IPv6.
 
+   > [!NOTE]
+  > Per alcuni servizi, il valore visualizzato in questo campo potrebbe corrispondere all'indirizzo IP di un'applicazione attendibile, ad esempio un'app di Office sul Web, che chiama il servizio per conto di un utente e non l'indirizzo IP del dispositivo usato dalla persona che ha eseguito l'attività. Inoltre, per le attività amministratore (o attività eseguite da un account di sistema) per gli eventi correlati ad Azure Active Directory, l'indirizzo IP non viene registrato e il valore visualizzato nel campo è `null`.
+
 - **Utente**: utente (o account del servizio) che ha eseguito l'azione che ha attivato l'evento.
 
 - **Attività**: attività eseguita dall'utente. Questo valore corrisponde alle attività selezionate nell'elenco a discesa **Attività**. Per un evento del log di controllo dell'amministratore di Exchange, il valore in questa colonna è un cmdlet di Exchange.
@@ -296,8 +300,9 @@ Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
 |[Attività di amministrazione utenti](#user-administration-activities)|[Attività di amministrazione gruppi di Azure AD](#azure-ad-group-administration-activities)|[Attività di amministrazione applicazioni](#application-administration-activities)|
 |[Attività di amministrazione ruoli](#role-administration-activities)|[Attività di amministrazione directory](#directory-administration-activities)|[Attività di eDiscovery](#ediscovery-activities)|
 |[Attività di Advanced eDiscovery](#advanced-ediscovery-activities)|[Attività di Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Attività di Microsoft Teams](#microsoft-teams-activities)|[Attività di Yammer](#yammer-activities)|[Attività di Microsoft Flow](#microsoft-flow-activities)|
-|[Attività di Microsoft PowerApps](#microsoft-powerapps)|[Attività di Microsoft Stream](#microsoft-stream-activities)|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)|
+|[Attività di Microsoft Teams](#microsoft-teams-activities)|[Attività di Microsoft Teams per il settore sanitario](#microsoft-teams-healthcare-activities)|[Attività di Yammer](#yammer-activities)|
+|[Attività di Microsoft Flow](#microsoft-flow-activities)|[Attività di Microsoft PowerApps](#microsoft-powerapps)|[Attività di Microsoft Stream](#microsoft-stream-activities)|
+[Attività di amministrazione di Exchange](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>Attività su file e pagine
@@ -439,7 +444,7 @@ La tabella seguente elenca gli eventi correlati all'assegnazione di autorizzazio
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
-|Amministratore raccolta siti aggiunto|SiteCollectionAdminAdded|Un proprietario o un amministratore della raccolta siti aggiunge una persona come amministratore della raccolta siti per un sito. Gli amministratori della raccolta siti hanno autorizzazioni di controllo completo per la raccolta siti e tutti i siti secondari. Anche questa attività viene registrata quando un amministratore si concede l'accesso all'account OneDrive di un utente (modificando il profilo utente nell'interfaccia di amministrazione di SharePoint o [usando l'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)).|
+|Amministratore raccolta siti aggiunto|SiteCollectionAdminAdded|Un proprietario o un amministratore della raccolta siti aggiunge una persona come amministratore della raccolta siti per un sito. Gli amministratori della raccolta siti hanno autorizzazioni di controllo completo per la raccolta siti e tutti i siti secondari. Questa attività viene registrata anche quando un amministratore concede a se stesso l'accesso all'account OneDrive di un utente (modificando il profilo utente nell'interfaccia di amministrazione di SharePoint o [usando l'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)).|
 |Utente o gruppo aggiunto al gruppo di SharePoint|AddedToGroup|Un utente ha aggiunto un membro o un guest a un gruppo di SharePoint. Questa operazione può essere stata intenzionale oppure è il risultato di un'altra attività, ad esempio un evento di condivisione.|
 |L'ereditarietà dei livelli di autorizzazione è stata interrotta|PermissionLevelsInheritanceBroken|Un elemento è stato modificato in modo che non erediti più i livelli di autorizzazione dal relativo padre.|
 |L'ereditarietà di condivisione è stata interrotta|SharingInheritanceBroken|Un elemento è stato modificato in modo che non erediti più le autorizzazioni di condivisione dal relativo padre.|
@@ -680,7 +685,7 @@ La registrazione di controllo per Power BI non è abilitata per impostazione pre
 
 ### <a name="microsoft-workplace-analytics-activities"></a>Attività di Microsoft Workplace Analytics
 
-Workplace Analytics offre informazioni dettagliate sul modo in cui i gruppi collaborano nell'organizzazione di Office 365. La tabella seguente elenca le attività eseguite dagli utenti a cui è assegnato il ruolo di amministratore o i ruoli di analista in Workplace Analytics. Gli utenti a cui è stato assegnato il ruolo di analista hanno accesso completo a tutte le caratteristiche del servizio e usano il prodotto per eseguire l'analisi. Gli utenti a cui è stato assegnato il ruolo di amministratore possono configurare le impostazioni di privacy e le impostazioni predefinite del sistema e possono preparare, caricare e verificare i dati aziendali in Workplace Analytics. Per ulteriori informazioni, vedere [Workplace Analytics](https://docs.microsoft.com/it-IT/workplace-analytics/index-orig).
+Workplace Analytics offre informazioni dettagliate sul modo in cui i gruppi collaborano nell'organizzazione di Office 365. La tabella seguente elenca le attività eseguite dagli utenti a cui è assegnato il ruolo di amministratore o i ruoli di analista in Workplace Analytics. Gli utenti a cui è stato assegnato il ruolo di analista hanno accesso completo a tutte le caratteristiche del servizio e usano il prodotto per eseguire l'analisi. Gli utenti a cui è stato assegnato il ruolo di amministratore possono configurare le impostazioni di privacy e le impostazioni predefinite del sistema e possono preparare, caricare e verificare i dati aziendali in Workplace Analytics. Per ulteriori informazioni, vedere [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -724,8 +729,16 @@ La tabella seguente elenca le attività degli utenti e degli amministratori di M
 |Rimozione di una scheda|TabRemoved|Un utente rimuove una scheda da un canale.|
 |Connettore aggiornato|ConnectorUpdated|Un utente ha modificato un connettore in un canale.|
 |Scheda aggiornata|TabUpdated|Un utente ha modificato una scheda in un canale.|
-|Utente connesso a Teams|TeamsSessionStarted|Un utente accede a un client Microsoft Teams.|
+|Utente connesso a Teams|TeamsSessionStarted|Un utente accede a un client di Microsoft Teams. Questo evento non acquisisce le attività di aggiornamento del token.|
 ||||
+
+### <a name="microsoft-teams-healthcare-activities"></a>Attività di Microsoft Teams per il settore sanitario
+
+Se l'organizzazione usa l'[applicazione Pazienti](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) in Microsoft Teams, è possibile cercare nel log di controllo le attività correlate all'utilizzo dell'app. Se l'ambiente è configurato per supportare l'app Pazienti, nell'elenco di selezione **Attività** è disponibile un altro gruppo di attività correlato.
+
+![Attività di Microsoft Teams per il settore sanitario nell'elenco di selezione Attività](media/TeamsHealthcareAuditActivities.png)
+
+Per una descrizione delle attività dell'app Pazienti, vedere [Log di controllo per l'app Pazienti](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
 ### <a name="yammer-activities"></a>Attività di Yammer
 
@@ -758,7 +771,7 @@ La tabella seguente elenca le attività degli utenti e degli amministratori di Y
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
-È possibile eseguire una ricerca nel log di controllo per le attività in PowerApps. Queste attività includono la creazione, l'avvio e la pubblicazione di un'app. Anche l'assegnazione di autorizzazioni alle app è controllata. Per una descrizione di tutte le attività di PowerApps vedere [Registrazione delle attività per PowerApps](https://docs.microsoft.com/it-IT/power-platform/admin/logging-powerapps#what-events-are-audited).
+È possibile eseguire una ricerca nel log di controllo per le attività in PowerApps. Queste attività includono la creazione, l'avvio e la pubblicazione di un'app. Anche l'assegnazione di autorizzazioni alle app è controllata. Per una descrizione di tutte le attività di PowerApps vedere [Registrazione delle attività per PowerApps](https://docs.microsoft.com/power-platform/admin/logging-powerapps#what-events-are-audited).
 
 ### <a name="microsoft-stream-activities"></a>Attività di Microsoft Stream
 
@@ -840,7 +853,7 @@ No. La pipeline dei servizi di controllo è quasi in tempo reale, pertanto non s
 
 **I dati di controllo di Office 365 vengono trasportati nelle diverse aree geografiche?**
 
-No. Attualmente sono presenti distribuzioni di pipeline di controllo nelle aree NA (Nord America), EMEA (Europa, Medio Oriente e Africa) ed APAC (Asia Pacifico). Tuttavia, i dati possono essere trasportati in queste aree geografiche per il bilanciamento del carico e solo durante i problemi del sito attivo. Durante l'esecuzione di queste attività, i dati in transito sono crittografati.
+No. Attualmente sono presenti distribuzioni di pipeline di controllo nelle aree NA (Nord America), EMEA (Europa, Medio Oriente e Africa) ed APAC (Asia Pacifico). Tuttavia, i dati possono essere trasportati in queste aree geografiche per il bilanciamento del carico e solo durante i problemi del sito live. Durante l'esecuzione di queste attività, i dati in transito sono crittografati.
 
 **I dati di controllo sono crittografati?**
 

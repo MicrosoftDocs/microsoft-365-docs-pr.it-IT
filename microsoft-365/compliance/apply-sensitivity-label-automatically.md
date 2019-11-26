@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: eccc60dc7a306f3e7b2eb128ed45a92af65491a5
-ms.sourcegitcommit: cd748ca00088275372f51fbf8c4bc72bfd3e1437
+ms.openlocfilehash: 3c5b52c89c9a5eb9e78e670bce0b5c3edec89cd1
+ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "39233223"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39256713"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
