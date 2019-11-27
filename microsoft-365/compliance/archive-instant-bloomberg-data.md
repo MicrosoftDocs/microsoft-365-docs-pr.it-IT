@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore nativo per importare i dati dallo strumento Instant Bloomberg chat in Office 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per consentire l'utilizzo di funzionalità di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 97923fbd9bec8f5ae5fad822947c57bab08fe218
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 8a9a388c62ca59dfcdb2f123fd0776e619f8d38e
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686369"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615606"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Configurare un connettore per archiviare i dati di Bloomberg istantanei in Office 365
 
@@ -29,7 +29,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 ![Processo di importazione e archiviazione di Bloomberg istantaneo](media/InstantBloombergDataArchiving.png)
 
-1. L'organizzazione collabora con Bloomberg per configurare un sito Bloomberg SFTP. Si lavorerà anche con Bloomberg per configurare Instant Bloomberg per copiare i messaggi di chat nel sito Bloomberg SFTP.
+1. L'organizzazione collabora con Bloomberg per configurare un sito Bloomberg SFTP. È inoltre possibile collaborare con Bloomberg per configurare Instant Bloomberg per copiare i messaggi di chat nel sito Bloomberg SFTP.
 
 2. Una volta ogni 24 ore, i messaggi di chat provenienti da Instant Bloomberg vengono copiati nel sito Bloomberg SFTP.
     
@@ -67,7 +67,7 @@ Molti dei passaggi di implementazione necessari per archiviare i dati di Bloombe
 
     - Numero di porta per il sito Bloomberg SFTP
 
-- L'utente che crea un connettore Bloomberg istantaneo nel passaggio 3 (e che Scarica le chiavi pubbliche e l'indirizzo IP nel passaggio 1) deve essere assegnato al ruolo di importazione/esportazione delle cassette postali in Exchange Online. Questa operazione è necessaria per accedere alla pagina di **archiviazione dei dati di terze parti** nel centro sicurezza & Compliance. Per impostazione predefinita, questo ruolo non è assegnato a nessun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
+- L'utente che crea un connettore Bloomberg istantaneo nel passaggio 3 (e che Scarica le chiavi pubbliche e l'indirizzo IP nel passaggio 1) deve essere assegnato al ruolo di importazione/esportazione delle cassette postali in Exchange Online. Questa operazione è necessaria per accedere alla pagina di **archiviazione dei dati di terze parti** nel centro sicurezza & Compliance. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
 ## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>Passaggio 1: ottenere le chiavi pubbliche di SSH e PGP
 
@@ -114,7 +114,7 @@ L'ultimo passaggio consiste nel creare un connettore Bloomberg istantaneo nel ce
 
     - **URL sftp:** URL per il sito Bloomberg SFTP (ad esempio, sftp.bloomberg.com).
 
-    - **Porta SFTP:** Il numero di porta per il sito Bloomberg SFTP. Il connettore utilizza questo per la connessione al sito SFTP.
+    - **Porta SFTP:** Il numero di porta per il sito Bloomberg SFTP. Il connettore utilizza questa porta per la connessione al sito SFTP.
 
 5. Nella pagina **cassetta postale alternativa** , digitare l'indirizzo di posta elettronica di una cassetta postale che viene utilizzata per archiviare i messaggi di chat da Instant Bloomberg che non sono associati a una cassetta postale dell'utente nell'organizzazione.
 

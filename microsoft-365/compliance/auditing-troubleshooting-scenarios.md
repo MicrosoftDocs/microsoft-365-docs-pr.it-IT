@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: È possibile utilizzare lo strumento di ricerca del registro di controllo di Office 365 per risolvere i problemi comuni, ad esempio l'analisi di un account compromesso, la ricerca di chi ha configurato l'inoltro della posta elettronica per una cassetta postale o il motivo per cui un utente esterno è stato in grado di eseguire correttamente l'accesso alla propria organizzazione.
-ms.openlocfilehash: f075d4317e8da748b6eca654747a2757c0040558
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: È possibile utilizzare lo strumento di ricerca del registro di controllo di Office 365 per risolvere i problemi comuni, ad esempio l'analisi di un account compromesso, la ricerca di chi ha configurato l'inoltro della posta elettronica per una cassetta postale o il motivo per cui un utente esterno ha eseguito correttamente l'accesso all'organizzazione.
+ms.openlocfilehash: a9901168ef4c8e2d2128fb143cbe134a04fb4e2c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686538"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39603790"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Eseguire una ricerca nel registro di controllo di Office 365 per esaminare i problemi di supporto comuni
 
@@ -33,11 +33,11 @@ In questo articolo viene descritto come utilizzare lo strumento di ricerca del r
 
 ## <a name="using-the-office-365-audit-log-search-tool"></a>Utilizzo dello strumento di ricerca del registro di controllo di Office 365
 
-Tutti gli scenari di risoluzione dei problemi descritti in questo articolo si basano sull'utilizzo dello strumento di ricerca del registro di controllo nel centro sicurezza e conformità di Office 365. In questa sezione sono elencate le autorizzazioni necessarie per eseguire una ricerca nel registro di controllo e vengono descritti i passaggi per accedere alle ricerche del registro di controllo e eseguirle. Ogni sezione scenario fornisce indicazioni specifiche su come configurare una query di ricerca del registro di controllo e su cosa cercare nelle informazioni dettagliate nei record di controllo corrispondenti ai criteri di ricerca.
+Tutti gli scenari di risoluzione dei problemi descritti in questo articolo si basano sull'utilizzo dello strumento di ricerca del registro di controllo nel centro sicurezza e conformità di Office 365. In questa sezione sono elencate le autorizzazioni necessarie per eseguire una ricerca nel registro di controllo e vengono descritti i passaggi per accedere alle ricerche del registro di controllo e eseguirle. In ogni sezione dello scenario viene illustrato come configurare una query di ricerca del registro di controllo e cosa cercare nelle informazioni dettagliate nei record di controllo corrispondenti ai criteri di ricerca.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorizzazioni necessarie per l'utilizzo dello strumento di ricerca del registro di controllo
 
-È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e gestione organizzazione nella pagina **autorizzazioni** nell'interfaccia di amministrazione di Exchange. Gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per ulteriori informazioni, vedere [gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+È necessario essere assegnati ai registri di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina **Autorizzazioni** nell'Interfaccia di amministrazione di Exchange. Gli amministratori globali di Office 365 e Microsoft 365 vengono aggiunti automaticamente come membri del gruppo di ruoli Gestione organizzazione in Exchange Online. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
 ### <a name="running-audit-log-searches"></a>Esecuzione delle ricerche nei registri di controllo
 
@@ -45,23 +45,23 @@ In questa sezione vengono descritte le nozioni di base per la creazione e l'esec
 
 1. Accedere a [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) e accedere con l'account aziendale o dell'Istituto di istruzione.
     
-    Viene visualizzata la pagina di **ricerca del registro di controllo** . 
+    Viene visualizzata la pagina **Ricerca log di controllo**. 
     
-    ![Configurare i criteri e quindi fare clic su Cerca per eseguire la ricerca](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configurare i criteri e quindi selezionare Cerca per eseguire la ricerca](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
 4. È possibile configurare i criteri di ricerca seguenti. Ogni scenario di risoluzione dei problemi in questo articolo consiglia specifiche linee guida per la configurazione di questi campi.
     
-    a. **Attività:** Fare clic sull'elenco a discesa per visualizzare le attività di cui è possibile eseguire la ricerca. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Selezionando **Mostra risultati per tutte le attività** vengono visualizzati i risultati di tutte le attività che soddisfano gli altri criteri di ricerca. È inoltre necessario lasciare vuoto questo campo in alcuni degli scenari di risoluzione dei problemi.
+    a. **Attività:** Selezionare l'elenco a discesa per visualizzare le attività di cui è possibile eseguire la ricerca. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Selezionando **Mostra risultati per tutte le attività** vengono visualizzati i risultati di tutte le attività che soddisfano gli altri criteri di ricerca. È inoltre necessario lasciare vuoto questo campo in alcuni degli scenari di risoluzione dei problemi.
     
-    b. Data di **inizio** e **Data di fine:** Selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati entro quel periodo. Gli ultimi sette giorni sono selezionati per impostazione predefinita. La data e l'ora vengono visualizzate in formato UTC (Coordinated Universal Time). L'intervallo di date massimo che è possibile specificare è 90 giorni.
+    b. Data di **inizio** e **Data di fine:** Selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati entro quel periodo. Gli ultimi sette giorni sono selezionati per impostazione predefinita. La data e l'ora sono specificate in formato UTC (Coordinated Universal Time). L'intervallo massimo che è possibile specificare è 90 giorni.
 
-    c. **Utenti:** Fare clic in questa casella e quindi selezionare uno o più utenti per visualizzare i risultati della ricerca. I record di controllo per l'attività selezionata eseguita dagli utenti selezionati in questa casella vengono visualizzati nell'elenco dei risultati. Lasciare vuota questa casella per restituire le voci per tutti gli utenti (e gli account di servizio) nell'organizzazione.
+    c. **Utenti:** Fare clic in questa casella e quindi selezionare uno o più utenti per visualizzare i risultati della ricerca. I record di controllo per l'attività selezionata eseguita dagli utenti selezionati in questa casella vengono visualizzati nell'elenco dei risultati. Lasciare la casella vuota per restituire le voci per tutti gli utenti (e gli account del servizio) nell'organizzazione.
     
-    d. **File, cartella o sito:** Digitare il nome di un file o di una cartella per la ricerca di attività correlate al file della cartella che contiene la parola chiave specificata. È inoltre possibile specificare un URL di un file o di una cartella. Se si utilizza un URL, assicurarsi che il tipo di percorso URL completo o se si digita solo una parte dell'URL non includa caratteri o spazi speciali. Lasciare vuota questa casella per restituire le voci per tutti i file e le cartelle nell'organizzazione. Questo campo viene lasciato vuoto in tutti gli scenari di risoluzione dei problemi descritti in questo articolo.
+    d. **File, cartella o sito:** Digitare il nome di un file o di una cartella per la ricerca di attività correlate al file della cartella che contiene la parola chiave specificata. È anche possibile specificare un URL di un file o una cartella. Se si utilizza un URL, assicurarsi che il tipo di percorso URL completo o se si digita solo una parte dell'URL non includa caratteri o spazi speciali. Lasciare questa casella vuota per restituire le voci per tutti i file e le cartelle nell'organizzazione. Questo campo viene lasciato vuoto in tutti gli scenari di risoluzione dei problemi descritti in questo articolo.
     
-5. Fare clic su **Cerca** per eseguire la ricerca utilizzando i criteri di ricerca. 
+5. Selezionare **Cerca** per eseguire la ricerca utilizzando i criteri di ricerca. 
     
-    I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in **risultati** nella pagina **Ricerca log di controllo** . In ognuna delle sezioni di questo articolo vengono fornite indicazioni sugli aspetti da cercare nel contesto dello scenario di risoluzione dei problemi specifico.
+    I risultati della ricerca vengono caricati e dopo alcuni istanti vengono visualizzati sotto **risultati** nella pagina di **ricerca del registro di controllo** . In ognuna delle sezioni di questo articolo vengono fornite indicazioni sugli aspetti da cercare nel contesto dello scenario di risoluzione dei problemi specifico.
 
     Per ulteriori informazioni sulla visualizzazione, il filtro o l'esportazione dei risultati di ricerca del registro di controllo, vedere:
 
@@ -86,7 +86,7 @@ Data di **inizio** e **Data di fine:** Selezionare un intervallo di date applica
 
 **File, cartella o sito:** Lasciare vuoto questo campo.
 
-Dopo aver eseguito la ricerca, l'indirizzo IP di ogni attività viene visualizzato nella colonna **indirizzo IP** nei risultati della ricerca. Fare clic sul record nei risultati della ricerca per visualizzare informazioni più dettagliate sulla pagina a comparsa.
+Dopo aver eseguito la ricerca, l'indirizzo IP di ogni attività viene visualizzato nella colonna **indirizzo IP** nei risultati della ricerca. Selezionare il record nei risultati della ricerca per visualizzare informazioni più dettagliate sulla pagina a comparsa.
 
 ## <a name="determine-who-set-up-email-forwarding-for-a-mailbox"></a>Determinare gli utenti che configurano l'inoltro della posta elettronica per una cassetta postale
 
@@ -102,11 +102,11 @@ Data di **inizio** e **Data di fine:** Selezionare un intervallo di date applica
 
 **File, cartella o sito:** Lasciare vuoto questo campo.
 
-Dopo aver eseguito la ricerca, fare clic su **Filtra risultati** nella pagina dei risultati di ricerca. Nella casella in intestazione colonna **attività** digitare **Set-Mailbox** in modo che vengano visualizzati solo i record di controllo correlati al cmdlet **Set-Mailbox** .
+Dopo aver eseguito la ricerca, selezionare **Filtra i risultati** nella pagina dei risultati di ricerca. Nella casella in intestazione colonna **attività** digitare **Set-Mailbox** in modo che vengano visualizzati solo i record di controllo correlati al cmdlet **Set-Mailbox** .
 
 ![Filtraggio dei risultati di una ricerca nel registro di controllo](media/emailforwarding1.png)
 
-A questo punto, è necessario esaminare i dettagli di ogni record di controllo per determinare se l'attività è correlata all'inoltro della posta elettronica. Fare clic sul record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi fare clic su **altre informazioni**. Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni che indicano che l'inoltro della posta elettronica è stato impostato sulla cassetta postale.
+A questo punto, è necessario esaminare i dettagli di ogni record di controllo per determinare se l'attività è correlata all'inoltro della posta elettronica. Selezionare il record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi selezionare **altre informazioni**. Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni che indicano che l'inoltro della posta elettronica è stato impostato sulla cassetta postale.
 
 ![Informazioni dettagliate dal record di controllo](media/emailforwarding2.png)
 
@@ -114,7 +114,7 @@ a. Nel campo **ObjectID** viene visualizzato l'alias della cassetta postale in c
 
 b. Nel campo **parametri** , il valore *ForwardingSmtpAddress* indica che l'inoltro della posta elettronica è stato impostato sulla cassetta postale. In questo esempio, la posta viene inoltrata all'indirizzo di posta elettronica mike@contoso.com, che si trova all'esterno dell'organizzazione di alpinehouse.onmicrosoft.com.
 
-c. Il valore *true* per il parametro *DeliverToMailboxAndForward* indica che una copia del messaggio viene recapitata a Sarad@alpinehouse.onmicrosoft.com *e* viene inoltrata all'indirizzo di posta elettronica specificato dal parametro *ForwardingSmtpAddress* , che in questo esempio è Mike@contoso.com. Se il valore del parametro *DeliverToMailboxAndForward* è impostato su *false*, la posta elettronica viene inoltrata solo all'indirizzo specificato dal parametro *ForwardingSmtpAddress* . Non viene recapitato alla cassetta postale specificata nel campo **ObjectID** .
+c. Il valore *true* per il parametro *DeliverToMailboxAndForward* indica che una copia del messaggio viene recapitata a Sarad@alpinehouse.onmicrosoft.com *ed* è inoltrata all'indirizzo di posta elettronica specificato dal parametro *ForwardingSmtpAddress* , che in questo esempio è Mike@contoso.com. Se il valore del parametro *DeliverToMailboxAndForward* è impostato su *false*, la posta elettronica viene inoltrata solo all'indirizzo specificato dal parametro *ForwardingSmtpAddress* . Non viene recapitato alla cassetta postale specificata nel campo **ObjectID** .
 
 d. Il campo **userid** indica l'utente che ha impostato l'inoltro della posta elettronica sulla cassetta postale specificata nel campo **ObjectID** . Questo utente viene inoltre visualizzato nella colonna **utente** della pagina dei risultati di ricerca. In questo caso, sembra che il proprietario della cassetta postale abbia impostato l'inoltro della posta elettronica sulla sua cassetta postale.
 
@@ -146,7 +146,7 @@ Data di **inizio** e **Data di fine:** Selezionare un intervallo di date applica
 
 **File, cartella o sito:** Lasciare vuoto questo campo.
 
-Dopo aver eseguito la ricerca, è possibile filtrare i risultati della ricerca per visualizzare i record di controllo per gli elementi eliminati temporaneamente o per gli elementi eliminati in modo rigido. Fare clic sul record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi fare clic su **altre informazioni**. Ulteriori informazioni sull'elemento eliminato, ad esempio la riga dell'oggetto e la posizione dell'elemento quando è stata eliminata, vengono visualizzate nel campo **AffectedItems** . Nelle schermate seguenti viene mostrato un esempio del campo **AffectedItems** da un elemento eliminato temporaneamente e da un elemento eliminato definitivamente.
+Dopo aver eseguito la ricerca, è possibile filtrare i risultati della ricerca per visualizzare i record di controllo per gli elementi eliminati temporaneamente o per gli elementi eliminati in modo rigido. Selezionare il record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi selezionare **altre informazioni**. Ulteriori informazioni sull'elemento eliminato, ad esempio la riga dell'oggetto e la posizione dell'elemento quando è stata eliminata, vengono visualizzate nel campo **AffectedItems** . Nelle schermate seguenti viene mostrato un esempio del campo **AffectedItems** da un elemento eliminato temporaneamente e da un elemento eliminato definitivamente.
 
 **Esempio di campo AffectedItems per l'elemento eliminato temporaneamente**
 
@@ -160,7 +160,7 @@ Dopo aver eseguito la ricerca, è possibile filtrare i risultati della ricerca p
 
 Gli utenti possono recuperare gli elementi eliminati temporaneamente se il periodo di conservazione degli elementi eliminati non è scaduto. In Exchange Online, il periodo di conservazione degli elementi eliminati predefinito è di 14 giorni, ma gli amministratori possono aumentare questa impostazione fino a un massimo di 30 giorni. Indirizzare gli utenti a [recuperare elementi o messaggi di posta elettronica eliminati in Outlook sul Web](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) per istruzioni sul ripristino degli elementi eliminati.
 
-Come spiegato in precedenza, gli amministratori potrebbero essere in grado di recuperare gli elementi eliminati definitivamente se il periodo di conservazione degli elementi eliminati non è scaduto o se la cassetta postale è in attesa, in questo caso gli elementi vengono conservati fino alla scadenza della durata del blocco. Quando si esegue una ricerca di contenuto, gli elementi eliminati temporaneamente e eliminati nella cartella elementi ripristinabili vengono restituiti nei risultati della ricerca se corrispondono alla query di ricerca. Per ulteriori informazioni sull'esecuzione di ricerche di contenuto, vedere [Content search in Office 365](content-search.md).
+Come spiegato in precedenza, gli amministratori potrebbero essere in grado di recuperare gli elementi eliminati definitivamente se il periodo di conservazione degli elementi eliminati non è scaduto o se la cassetta postale è in attesa, in questo caso gli elementi vengono mantenuti fino alla scadenza della durata del blocco. Quando si esegue una ricerca di contenuto, gli elementi eliminati temporaneamente e eliminati nella cartella elementi ripristinabili vengono restituiti nei risultati della ricerca se corrispondono alla query di ricerca. Per ulteriori informazioni sull'esecuzione di ricerche di contenuto, vedere [Content search in Office 365](content-search.md).
 
 > [!TIP]
 > Per cercare gli elementi di posta elettronica eliminati, cercare tutto o parte della riga dell'oggetto visualizzata nel campo **AffectedItems** del record di controllo.
@@ -182,7 +182,7 @@ Data di **inizio** e **Data di fine:** Selezionare un intervallo di date applica
 
 **File, cartella o sito:** Lasciare vuoto questo campo.
 
-Dopo aver eseguito la ricerca, i record di controllo per questa attività vengono visualizzati nei risultati della ricerca. Fare clic su un record di controllo per visualizzare la pagina dei **Dettagli** del riquadro a comparsa e quindi fare clic su **altre informazioni**. Le informazioni sulle impostazioni delle regole di posta in arrivo vengono visualizzate nel campo **parametri** . Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni sulle regole di posta in arrivo.
+Dopo aver eseguito la ricerca, i record di controllo per questa attività vengono visualizzati nei risultati della ricerca. Selezionare un record di controllo per visualizzare la pagina dei **Dettagli** del riquadro a comparsa e quindi selezionare **altre informazioni**. Le informazioni sulle impostazioni delle regole di posta in arrivo vengono visualizzate nel campo **parametri** . Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni sulle regole di posta in arrivo.
 
 ![Record di controllo per la nuova regola di posta in arrivo](media/NewInboxRuleRecord.png)
 
@@ -198,12 +198,12 @@ d. Il campo **userid** indica l'utente che ha creato la regola di posta in arriv
 
 Quando si esaminano i record di controllo nel registro di controllo di Office 365, è possibile che vengano visualizzati record che indicano che un utente esterno è stato autenticato da Azure Active Directory e che è stato eseguito l'accesso all'organizzazione. Ad esempio, un amministratore in contoso.onmicrosoft.com può visualizzare un record di controllo che indica che un utente proveniente da un'organizzazione di Office 365 diversa (ad esempio fabrikam.onmicrosoft.com) ha eseguito correttamente l'accesso a contoso.onmicrosoft.com. Analogamente, è possibile che vengano visualizzati i record di controllo che indicano che gli utenti con un account Microsoft (MSA), ad esempio Outlook.com o Live.com, hanno effettuato correttamente l'accesso all'organizzazione. In questi casi, l'attività controllata è l' **utente**che ha effettuato l'accesso. 
 
-Questo comportamento è in base alla progettazione. Azure Active Directory (Azure AD), il servizio directory di Office 365, consente di fare qualcosa chiamato *autenticazione pass-through* quando un utente esterno tenta di accedere a un sito di SharePoint o a una posizione di OneDrive nell'organizzazione. Quando l'utente esterno tenta di eseguire questa operazione, viene richiesto di immettere le credenziali di Office 365. Azure Active Directory utilizza le credenziali per autenticare l'utente, in modo che solo Azure AD verifichi che l'utente sia quello che dicono di essere. L'indicazione dell'account di accesso con esito positivo nel record di controllo è il risultato di Azure AD Authenticating the user. L'account di accesso con esito positivo non implica che l'utente sia stato in grado di accedere alle risorse o di eseguire altre azioni nell'organizzazione. Indica solo che l'utente è stato autenticato da Azure AD. Per consentire agli utenti pass-through di accedere alle risorse di SharePoint o OneDrive, un utente dell'organizzazione deve condividere in modo esplicito una risorsa con l'utente esterno inviando un collegamento di condivisione di un invito o di condivisione anonima. 
+Tale comportamento è preimpostato. Azure Active Directory (Azure AD), il servizio directory di Office 365, consente di fare qualcosa chiamato *autenticazione pass-through* quando un utente esterno tenta di accedere a un sito di SharePoint o a una posizione di OneDrive nell'organizzazione. Quando l'utente esterno tenta di eseguire questa operazione, viene richiesto di immettere le credenziali di Office 365. Azure Active Directory utilizza le credenziali per autenticare l'utente, in modo che solo Azure AD verifichi che l'utente sia quello che dicono di essere. L'indicazione dell'account di accesso con esito positivo nel record di controllo è il risultato di Azure AD Authenticating the user. L'account di accesso con esito positivo non significa che l'utente sia stato in grado di accedere alle risorse o di eseguire altre azioni nell'organizzazione. Indica solo che l'utente è stato autenticato da Azure AD. Per consentire a un utente pass-through di accedere alle risorse di SharePoint o OneDrive, un utente dell'organizzazione deve condividere in modo esplicito una risorsa con l'utente esterno inviando un collegamento di condivisione di un invito o di condivisione anonima. 
 
 > [!NOTE]
 > Azure AD consente l'autenticazione pass-through solo per *le applicazioni di terze parti*, ad esempio SharePoint Online e OneDrive for business. Non è consentito per altre applicazioni di terze parti.
 
-Di seguito è riportato un esempio e le descrizioni delle proprietà rilevanti in un record di controllo per l'evento **connesso dall'utente** che è il risultato dell'autenticazione pass-through. Fare clic sul record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi fare clic su **altre informazioni**.
+Di seguito è riportato un esempio e le descrizioni delle proprietà rilevanti in un record di controllo per un utente che ha **eseguito l'accesso** a un evento che è il risultato dell'autenticazione pass-through. Selezionare il record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi selezionare **altre informazioni**.
 
 ![Esempio di record di controllo per l'autenticazione pass-thru completata](media/PassThroughAuth1.png)
 
@@ -221,9 +221,9 @@ Per ulteriori informazioni sulle altre proprietà visualizzate in un record di c
 
 Di seguito sono riportati due esempi di scenari che comportano l'accesso di un **utente con** esito positivo all'attività di controllo a causa dell'autenticazione pass-through: 
 
-  - Un utente con un account Microsoft (ad esempio SaraD@outlook.com) ha tentato di accedere a un documento in un account OneDrive for business in fourthcoffee.onmicrosoft.com e il relativo account utente non è un corrispondente per SaraD@outlook.com in fourthcoffee.onmicrosoft.com.
+  - Un utente con un account Microsoft (ad esempio SaraD@outlook.com) ha tentato di accedere a un documento in un account OneDrive for business in fourthcoffee.onmicrosoft.com e non è presente un account utente Guest corrispondente per SaraD@outlook.com in fourthcoffee.onmicrosoft.com.
 
-  - Un utente con un account aziendale o dell'Istituto di istruzione in un'organizzazione di Office 365 (ad esempio pilarp@fabrikam.onmicrosoft.com) ha tentato di accedere a un sito di SharePoint in contoso.onmicrosoft.com e il loro non è un account utente Guest corrispondente per pilarp@fabrikam.com in contoso.onmicrosoft.com.
+  - Un utente con un account aziendale o dell'Istituto di istruzione in un'organizzazione di Office 365 (ad esempio pilarp@fabrikam.onmicrosoft.com) ha tentato di accedere a un sito di SharePoint in contoso.onmicrosoft.com e non è presente un account utente Guest corrispondente per pilarp@fabrikam.com in contoso.onmicrosoft.com.
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Suggerimenti per l'analisi degli account di accesso riusciti risultanti dall'autenticazione pass-through
@@ -232,8 +232,8 @@ Di seguito sono riportati due esempi di scenari che comportano l'accesso di un *
 
    ![Ricerca di tutte le attività eseguite dall'utente esterno](media/PassThroughAuth2.png)
 
-    Oltre alle attività dell' **utente connesso** , è possibile che vengano restituiti altri record di controllo, ad esempio per indicare a un utente dell'organizzazione risorse condivise con l'utente esterno e se l'utente esterno ha eseguito l'accesso, la modifica o il download di un documento condiviso con essi.
+    Oltre all'utente che ha **effettuato l'accesso** , è possibile che vengano restituiti altri record di controllo, ad esempio per indicare a un utente dell'organizzazione risorse condivise con l'utente esterno e se l'utente esterno ha eseguito l'accesso, la modifica o il download di un documento condiviso con essi.
 
-- Cercare le attività di condivisione di SharePoint che indicano che un file è stato condiviso con l'utente esterno identificato da un utente che ha **eseguito l'accesso al** record di controllo. Per ulteriori informazioni, vedere [use sharing audit in the Office 365 audit log](use-sharing-auditing.md).
+- Cercare le attività di condivisione di SharePoint che indichino che un file è stato condiviso con l'utente esterno identificato da un utente che ha **eseguito l'accesso al** record di controllo. Per altre informazioni, vedere [Usare il controllo della condivisione nel log di controllo di Office 365](use-sharing-auditing.md).
 
 - Esportare i risultati della ricerca del registro di controllo che contengono record rilevanti per l'analisi in modo che sia possibile utilizzare Excel per cercare altre attività correlate all'utente esterno. Per ulteriori informazioni, vedere [esportare, configurare e visualizzare i record del registro di controllo](export-view-audit-log-records.md).

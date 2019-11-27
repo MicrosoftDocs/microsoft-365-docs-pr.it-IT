@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Ottenere una panoramica della fase di valutazione e del relativo ruolo per determinare la ricchezza dei problemi durante la formazione di pertinenza in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 77d9449ad15fd3a53709f2a28a96b06ab54556eb
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 727b432a541e1316952faa7dc9c5b8e40ac4295c
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083291"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615636"
 ---
 # <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Comprendere la valutazione in rilevanza in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Advanced eDiscovery consente di valutare precocemente, ad esempio, i problemi definiti e i dati importati per un caso. Advanced eDiscovery consente all'esperto di prendere decisioni relative a un approccio adottato e di applicarle al progetto di revisione dei documenti.
+Advanced eDiscovery consente di valutare precocemente, ad esempio, i problemi definiti e i dati importati per un caso. Advanced eDiscovery consente all'esperto di prendere decisioni su un approccio adottato e di applicare queste decisioni al progetto di revisione del documento.
   
 ## <a name="understanding-assessment"></a>Informazioni sulla valutazione
 
@@ -35,7 +35,7 @@ Maggiore è il numero di file rilevanti nel set di valutazione, maggiore è la p
   
 Le statistiche, presentate nelle schede traccia e decidi durante l'allenamento e dopo il calcolo del batch, includono stime di richiamo per diversi insiemi di revisione. In statistica, le stime basate su un set di esempio (in questo caso, i file di valutazione) includono il margine di errore e il livello di confidenza del margine di errore. Ad esempio, il richiamo stimato del 80% potrebbe avere un margine di errore pari o meno al 5% con un livello di confidenza pari al 95%. Questo significa che il richiamo stimato è effettivamente 75%-85% e questa stima ha 95% di confidenza. Maggiore è il set di valutazione, il margine di errore diventa più piccolo e le statistiche sono più accurate. 
   
-Dopo che l'esperto ha esaminato un gruppo di valutazione iniziale di 500 file, la pertinenza è in grado di determinare il margine di errore corrente dei valori di richiamo. La pertinenza consentirà anche di impostare un margine di errore predefinito che consiglia di raggiungere per ottimizzare il set di valutazione. Di seguito sono riportati alcuni esempi:
+Dopo che l'esperto ha esaminato un gruppo di valutazione iniziale di 500 file, la pertinenza può determinare il margine di errore corrente dei valori di richiamo. Pertinenza consiglierà anche un margine di errore predefinito da raggiungere per ottimizzare il set di valutazione. Ecco alcuni esempi:
   
 - Se il set di valutazione ha già restituito un margine di errore pari o meno al 10%, la pertinenza consiglierà di passare alla formazione (non è necessaria alcuna revisione di valutazione supplementare). 
     

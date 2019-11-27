@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore nativo per importare i dati di terze parti da origini dati, ad esempio pagine business di Facebook, Twitter, pagine società di LinkedIn e Instant Bloomberg. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per poter utilizzare le funzionalità di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e mantenimento, per gestire la governance dei dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 74b35281f72277c4698b835a63613288dce7d9ce
-ms.sourcegitcommit: 6e01543b3fff50a28719478b19b644991ba7505a
+ms.openlocfilehash: 9479734fd1fcc65b4db7fd7e9a1ffc0f2c5fda59
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686443"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615596"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>Utilizzare un connettore di esempio per archiviare i dati di Facebook in Office 365 (anteprima)
 
@@ -31,7 +31,7 @@ Dopo aver importato i dati di Facebook, è possibile applicare le funzionalità 
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Prerequisiti per la configurazione di un connettore per le pagine business di Facebook
 
-Prima di poter impostare e configurare un connettore di esempio nel centro sicurezza & Compliance, è necessario completare i prerequisiti seguenti per importare e archiviare i dati dalle pagine aziendali di Facebook dell'organizzazione. 
+Completare i prerequisiti seguenti prima di poter impostare e configurare un connettore di esempio nel centro sicurezza & Compliance per importare e archiviare i dati dalle pagine aziendali di Facebook dell'organizzazione. 
 
 - Per le pagine business dell'organizzazione è necessario un account di Facebook (è necessario accedere a questo account quando si configura il connettore). Attualmente, è possibile archiviare i dati solo da pagine business di Facebook; non è possibile archiviare i dati provenienti da singoli profili Facebook.
 
@@ -46,15 +46,15 @@ Prima di poter impostare e configurare un connettore di esempio nel centro sicur
 
 - L'organizzazione deve autorizzare il servizio di importazione di Office 365 per accedere ai dati delle cassette postali nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Office 365 e quindi accettare la richiesta.
 
-- All'utente che configura il connettore personalizzato nella sicurezza & conformità (al passaggio 7) deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato a nessun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
+- All'utente che configura il connettore personalizzato nella sicurezza & conformità (al passaggio 7) deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
 ## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>Passaggio 1: scaricare il pacchetto di app del connettore precompilato da GitHub
 
 Il primo passaggio consiste nel scaricare il codice sorgente per l'app del connettore Facebook precompilata che utilizzerà un'API di Facebook per connettersi alle pagine business di Facebook ed estrarre i dati di Facebook in modo da poterli importare in Office 365.
 
 1. Accedere a [questo sito GitHub](https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases). 
-2. Nella versione più recente, fare clic sul file **SampleConnector. zip** .
-3. Salvare il file ZIP in un percorso del computer locale. È possibile caricare il file zip in Azure nel passaggio 4.
+2. Nella versione più recente, selezionare il file **SampleConnector. zip** .
+3. Salvare il file ZIP in un percorso del computer locale. È possibile caricare il file ZIP in Azure nel passaggio 4.
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Passaggio 2: creare un'app in Azure Active Directory
 
@@ -83,15 +83,15 @@ Il passaggio successivo consiste nel creare una risorsa Web App in Azure per il 
 
 Per istruzioni dettagliate, vedere [creare una nuova risorsa Web App in Azure](deploy-facebook-connector.md#step-4-create-a-new-web-app-resource-in-azure).
 
-Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate), vengono fornite le informazioni seguenti, che sono state copiate in un file di testo dopo aver completato i passaggi precedenti, durante la creazione della risorsa Web App.
+Quando si seguono le istruzioni dettagliate per completare questo passaggio, vengono fornite le informazioni seguenti (copiate in un file di testo dopo aver completato i passaggi precedenti) quando si crea la risorsa Web App.
 
-- APISecretKey: questo segreto è stato creato durante il completamento di questo passaggio. viene utilizzato nel passaggio 7.
+- APISecretKey: questo segreto è stato creato durante il completamento di questo passaggio. Viene utilizzato nel passaggio 7.
 - StorageAccountConnectionString: URI della stringa di connessione copiato dopo la creazione dell'account di archiviazione di Azure nel passaggio 3.
 - tenantId: l'ID tenant dell'organizzazione di Office 365 copiato dopo aver creato l'app Facebook Connector in Azure Active Directory nel passaggio 2.
 
 Inoltre, è possibile caricare il file SampleConnector. zip (scaricato nel passaggio 1) in questo passaggio per distribuire il codice sorgente per l'app connettore Facebook.
 
-Dopo aver completato questo passaggio, assicurarsi di copiare l'URL del servizio app (ad esempio https://fbconnector.azurewebsites.net),. È necessario utilizzare questa opzione per completare il passaggio 5, il passaggio 6 e il passaggio 7.
+Dopo aver completato questo passaggio, assicurarsi di copiare l'URL del servizio app (ad esempio https://fbconnector.azurewebsites.net),. È necessario utilizzare questo URL per completare il passaggio 5, il passaggio 6 e il passaggio 7.
 
 ## <a name="step-5-register-the-web-app-on-facebook"></a>Passaggio 5: registrare l'app Web su Facebook
 
@@ -122,7 +122,7 @@ Durante il completamento di questo passaggio (seguendo le istruzioni dettagliate
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Passaggio 7: configurare un connettore personalizzato nel centro sicurezza & Compliance
 
-Il passaggio finale consiste nel configurare il connettore personalizzato nel centro sicurezza & Compliance che importerà i dati dalle pagine aziendali di Facebook a una cassetta postale specificata in Office 365. Dopo aver completato questo passaggio, il servizio di importazione di Office 365 avvierà il processo di importazione dei dati dalle pagine business di Facebook a Office 365. 
+Il passaggio finale consiste nel configurare il connettore personalizzato nel centro sicurezza & Compliance che importerà i dati dalle pagine aziendali di Facebook a una cassetta postale specificata in Office 365. Dopo aver completato questo passaggio, il servizio di importazione di Office 365 inizierà a importare i dati dalle pagine business di Facebook a Office 365. 
 
 Per istruzioni dettagliate, vedere [configurare un connettore personalizzato nel centro sicurezza & Compliance](deploy-facebook-connector.md#step-7-set-up-a-custom-connector-in-the-security--compliance-center). 
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Opt-in e utilizzo del modello di rilevamento dei privilegi avvocato-client per utilizzare il rilevamento basato sull'apprendimento automatico del contenuto con privilegi quando si esaminano i contenuti in un caso avanzato di eDiscovery.
-ms.openlocfilehash: 943b788dfea62433f0f6c1dca3b6b105cf92bae8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a483941ba5d28527eb509f2e1bbd129434430244
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083282"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39603780"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configurare il rilevamento dei privilegi avvocato-client in Advanced eDiscovery
 
@@ -29,7 +29,7 @@ Un aspetto importante e costoso della fase di revisione di un processo di eDisco
 > [!NOTE]
 > Prima di poterlo utilizzare, è necessario optare per il modello di rilevamento dei privilegi avvocato-client. Vedere il [passaggio 1](#step-1-opt-in-to-attorney-client-privilege-detection) per le istruzioni.
 
-## <a name="how-does-it-work"></a>Funzionamento.
+## <a name="how-does-it-work"></a>Come funziona
 
 Quando è abilitato il rilevamento dei privilegi di avvocato-client, tutti i documenti in un set di revisione verranno elaborati dal modello di rilevamento del privilegio avvocato-client quando si [analizzano i dati](analyzing-data-in-review-set.md) nel set di revisione. Il modello cerca due elementi:
 
@@ -53,39 +53,39 @@ Queste tre proprietà sono anche ricercabili all'interno di un set di revisione.
 
 ## <a name="set-up-the-attorney-client-privilege-detection-model"></a>Configurare il modello di rilevamento dei privilegi avvocato-client
 
-Per abilitare il modello di rilevamento dei privilegi avvocato-client, l'organizzazione deve accettare l'opt-in e quindi caricare un elenco di avvocati.
+Per abilitare il modello di rilevamento dei privilegi avvocato-client, è necessario che l'organizzazione Opti e quindi carichi un elenco di avvocati.
 
-### <a name="step-1-opt-in-to-attorney-client-privilege-detection"></a>Passaggio 1: opt-in al rilevamento dei privilegi di procuratore-client
+### <a name="step-1-opt-in-to-attorney-client-privilege-detection"></a>Passaggio 1: opt-in per il rilevamento dei privilegi avvocato-client
 
 Come indicato in precedenza, il modello di rilevamento dei privilegi del procuratore-client è in anteprima. Pertanto, una persona all'interno dell'organizzazione eDiscovery Administrator (un membro del sottogruppo amministratore di eDiscovery nel gruppo di ruoli di eDiscovery Manager) deve scegliere di rendere disponibile il modello nei casi di eDiscovery avanzati.
 
 1. Nel centro sicurezza & conformità, accedere a **eDiscovery > Advanced eDiscovery**.
 
-2. Nella Home page di **Advanced eDiscovery** , nel riquadro **delle impostazioni** , fare clic su **Configura caratteristiche sperimentali**.
+2. Nella Home page di **Advanced eDiscovery** fare clic su **Configura caratteristiche sperimentali**nel riquadro **Impostazioni** .
 
-   ![Fare clic su "Configura funzionalità sperimentali"](media/AeDExperimentalFeatures.png)
+   ![Selezionare "Configura funzionalità sperimentali"](media/AeDExperimentalFeatures.png)
 
-3. Nella scheda **caratteristiche sperimentali** fare clic su **Gestisci impostazione privilegio avvocato-client**.
+3. Nella scheda **caratteristiche sperimentali** selezionare **Gestisci impostazione di privilegio avvocato-client**.
 
-4. Nella pagina riquadro a comparsa **avvocato-client Privilege** fare clic sull'interruttore per attivare la funzionalità e quindi fare clic su **Salva**.
+4. Nella pagina del riquadro a comparsa dei **privilegi avvocato-client** , utilizzare l'interruttore per attivare la funzionalità e quindi selezionare **Salva**.
 
 ### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Passaggio 2: caricare un elenco di avvocati (facoltativo)
 
-Per sfruttare al meglio il modello di rilevamento dei privilegi di avvocato e client e utilizzare i risultati del **procuratore** o del rilevamento **potenzialmente privilegiato** descritto in precedenza, è consigliabile caricare un elenco di indirizzi di posta elettronica per l' avvocati e persone giuridiche che lavorano per la propria organizzazione. 
+Per sfruttare al meglio il modello di rilevamento dei privilegi avvocato-client e utilizzare i risultati del **procuratore** o del rilevamento **potenzialmente privilegiato** descritto in precedenza, si consiglia di caricare un elenco di indirizzi di posta elettronica per gli avvocati e gli addetti legali che lavorano per la propria organizzazione. 
 
 Per caricare un elenco di avvocati per l'utilizzo da parte del modello di rilevamento dei privilegi avvocato-client:
 
 1. Creare un file. csv (senza una riga di intestazione) e aggiungere l'indirizzo di posta elettronica per ogni persona appropriata su una riga distinta. Salvare il file nel computer locale.
 
-2. Nella Home page di **Advanced eDiscovery** , nel riquadro **delle impostazioni** , fare clic su **Configura caratteristiche sperimentali**, quindi fare clic su **Gestisci impostazione privilegi avvocato-client**.
+2. Nella Home page di **Advanced eDiscovery** fare clic su **Configura caratteristiche sperimentali**nella sezione **Impostazioni** e quindi selezionare **Gestisci impostazione privilegio avvocato-client**.
 
    Viene visualizzata la pagina **Privilege avvocato-client** e l'interruttore di **rilevamento dei privilegi del procuratore-client** è attivato.
 
    ![Pagina del riquadro a comparsa dei privilegi avvocato-cliente](media/AeDUploadAttorneyList.png)
 
-3. Fare clic su **Sfoglia** e quindi individuare e selezionare il file. csv creato nel passaggio 1.
+3. Selezionare **Sfoglia** e quindi individuare e selezionare il file. csv creato nel passaggio 1.
 
-4. Fare clic su **Salva** per caricare l'elenco degli avvocati.
+4. Selezionare **Salva** per caricare l'elenco degli avvocati.
 
 ## <a name="use-the-attorney-client-privilege-detection-model"></a>Utilizzare il modello di rilevamento dei privilegi avvocato-client
 
@@ -95,13 +95,13 @@ Seguire la procedura descritta in questa sezione per utilizzare il rilevamento d
 
 Uno dei modi principali per visualizzare i risultati del rilevamento dei privilegi del procuratore-client nel processo di revisione consiste nell'utilizzare un gruppo di smart tag. Un gruppo di smart tag indica i risultati del rilevamento dei privilegi avvocato-client e Visualizza i risultati in linea accanto ai tag in un gruppo di smart tag. In questo modo è possibile identificare rapidamente i documenti potenzialmente privilegiati durante la revisione del documento. Inoltre, è possibile utilizzare i tag del gruppo smart tag per contrassegnare i documenti come privilegiati o non privilegiati. Per ulteriori informazioni sugli smart tag, vedere [configurare gli smart tag in Advanced eDiscovery](smart-tags.md).
 
-1. Nel set di revisione contenente i documenti analizzati nel passaggio 1 fare clic su **Gestisci Revisione set** e quindi su **Gestisci Tag**.
+1. Nel set di revisione che contiene i documenti analizzati nel passaggio 1, selezionare **Gestisci Revisione set** e quindi selezionare **Gestisci Tag**.
  
-2. In **tag**fare clic sul pulsante a discesa accanto a **Aggiungi gruppo** e quindi fare clic su **Aggiungi gruppo smart tag**.
+2. In **tag**selezionare l'elenco a discesa accanto a **Aggiungi gruppo** e quindi fare clic su **Aggiungi gruppo smart tag**.
 
-   ![Fare clic su "Aggiungi gruppo smart tag"](media/AeDCreateSmartTag.png)
+   ![Seleziona "Aggiungi gruppo smart tag"](media/AeDCreateSmartTag.png)
 
-3. Nella pagina **scegliere un modello per la smart tag** fare clic su **Seleziona** accanto a **privilegio avvocato-client**.
+3. Nella pagina **scegliere un modello per la smart tag** scegliere **Seleziona** accanto a **privilegio avvocato-client**.
 
    Viene visualizzato un gruppo di tag denominato **procuratore-Client Privilege** . Contiene due tag figlio denominati **positivi** e **negativi**, che corrispondono ai possibili risultati prodotti dal modello.
 
@@ -111,7 +111,7 @@ Uno dei modi principali per visualizzare i risultati del rilevamento dei privile
 
 ### <a name="step-2-analyze-a-review-set"></a>Passaggio 2: analizzare un set di Revisione
 
-Quando si analizzano i documenti in un set di revisione, verrà eseguito anche il modello di rilevamento dei privilegi di avvocato-client e le proprietà corrispondenti (descritte in[modalità di funzionamento?](#how-does-it-work) verranno aggiunte a tutti i documenti del set di revisione. Per ulteriori informazioni sull'analisi dei dati nel set di revisione, vedere [analyze data in a Review set in Advanced eDiscovery](analyzing-data-in-review-set.md).
+Quando si analizzano i documenti in un set di revisione, viene eseguito anche il modello di rilevamento dei privilegi di avvocato-client e le proprietà corrispondenti (descritte in [modalità di funzionamento?](#how-does-it-work) verranno aggiunte a tutti i documenti del set di revisione. Per ulteriori informazioni sull'analisi dei dati nel set di revisione, vedere [analyze data in a Review set in Advanced eDiscovery](analyzing-data-in-review-set.md).
 
 ### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>Passaggio 3: utilizzare il gruppo smart tag per la revisione dei contenuti con privilegi
 
@@ -125,7 +125,7 @@ Dopo aver analizzato il set di revisione e aver configurato gli smart tag, il pa
 
 Se il modello determina che un documento non contiene contenuto di natura legale o che non contiene un partecipante all'elenco degli avvocati, non viene visualizzata alcuna etichetta nel pannello di tagging.
 
-Ad esempio, nelle schermate seguenti vengono visualizzati due documenti. il primo contiene contenuto di natura legale e ha un partecipante trovato nell'elenco degli avvocati; la seconda non contiene né e pertanto non Visualizza etichette.
+Ad esempio, nelle schermate seguenti vengono visualizzati due documenti. Il primo contiene contenuto di natura legale e ha un partecipante trovato nell'elenco degli avvocati. La seconda non contiene né e pertanto non Visualizza etichette.
 
 ![Documento con etichette legali e di contenuto legale](media/AeDTaggingPanelLegalContentAttorney.png)
 
