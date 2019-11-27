@@ -1,7 +1,7 @@
 ---
-title: Richieste del soggetto dei dati per l'RGPD
+title: Richieste degli interessati nell'ambito del GDPR e del CCPA
 description: ''
-keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR
+keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -9,21 +9,25 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: GDPR
-ms.openlocfilehash: dc4352ac14f42a227f1572b0c7f1442aa4dec838
-ms.sourcegitcommit: c201f5cc13d501e5207ebad166e42f90260af0c4
+ms.collection:
+- GDPR
+- M365-security-compliance
+ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078906"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39268536"
 ---
-# <a name="data-subject-requests-and-the-gdpr"></a>Richieste dell’interessato e GDPR
+# <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Richieste degli interessati nell'ambito del GDPR e del CCPA
 
-Il regolamento generale per la protezione dei dati (GDPR) introduce nuove regole per le organizzazioni che offrono beni e servizi alle persone che risiedono nell'Unione europea (UE) o che raccolgono e analizzano i dati dei residenti nell'UE in qualunque luogo si trovi l'utente o la sua azienda. Altri dettagli sono disponibili [nell'argomento Riepilogo sul GDPR](gdpr.md). <br><br>
+Il Regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole per le organizzazioni che offrono beni e servizi alle persone che risiedono nell'Unione europea (UE) o che raccolgono e analizzano i dati dei residenti nell'UE in qualunque luogo si trovi l'utente o la sua azienda. Altri dettagli sono disponibili [nell'argomento relativo al Riepilogo sul GDPR](gdpr.md).
+
+Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo di determinate divulgazioni, protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite".  <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
 
-Questo documento illustra come completare le richieste dell’interessato (DSR) secondo il GDPR usando i prodotti e i servizi Microsoft.
+Questo documento illustra come completare le richieste dell'interessato (DSR) secondo il GDPR e il CCPA usando i prodotti e i servizi Microsoft.
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -37,8 +41,8 @@ Questo documento illustra come completare le richieste dell’interessato (DSR) 
 
 Definizioni utili per i termini relativi al GDPR usati nel documento:
 
-- *Titolare del trattamento dei dati (Titolare)*: una persona giuridica, un'autorità pubblica, un'agenzia o un altro organismo che, da solo o congiuntamente con altri, determina le finalità e le modalità di trattamento dei dati personali.  
-- *Dati personali* e *soggetto interessato*: qualsiasi informazione relativa a una persona naturale identificata o identificabile (soggetto interessato); una persona naturale identificabile è una persona che può essere identificata, direttamente o indirettamente.  
+- *Titolare del trattamento dei dati (titolare)*: una persona giuridica, un'autorità pubblica, un'agenzia o un altro organismo che, da solo o congiuntamente con altri, determina le finalità e le modalità di trattamento dei dati personali.  
+- *Dati personali* e *interessato*: qualsiasi informazione relativa a una persona fisica identificata o identificabile (interessato); una persona fisica identificabile è una persona che può essere identificata, direttamente o indirettamente.  
 - *Responsabile*: una persona fisica o giuridica, un'autorità pubblica o un altro ente che si occupa del trattamento dei dati personali per conto del titolare.  
 - *Dati dei clienti*: dati prodotti e archiviati nelle attività quotidiane di gestione della propria attività.
 
@@ -46,7 +50,9 @@ Definizioni utili per i termini relativi al GDPR usati nel documento:
 
 Il regolamento generale sulla protezione dei dati (GDPR) attribuisce alle persone (definite nel regolamento "soggetti interessati") il diritto di gestire i dati personali raccolti da un datore di lavoro o da un altro tipo di organizzazione o organismo (definito titolare del trattamento dei dati o semplicemente titolare del trattamento). In base al regolamento GDPR, ai soggetti dei dati vengono assegnati diritti specifici per i dati personali, tra i quali il diritto di ottenere copie dei dati personali stessi, richiedere modifiche di tali dati, limitarne l'elaborazione, eliminarli o riceverli in formato elettronico in modo che possano essere trasferiti a un altro titolare.
 
-In quanto titolare, è necessario prendere in considerazione ogni richiesta dell’interessato e fornire una risposta sostanziale, eseguendo l'azione richiesta o fornendo una spiegazione del motivo per cui la richiesta non può essere soddisfatta dal titolare. Un titolare deve rivolgersi al proprio consulente legale o alla conformità relativamente all'idoneità di qualsiasi richiesta dell’interessato specifica.
+Il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  
+
+In quanto titolare, è necessario prendere in considerazione ogni richiesta dell'interessato e fornire una risposta sostanziale, eseguendo l'azione richiesta o fornendo una spiegazione del motivo per cui la richiesta non può essere soddisfatta dal titolare. Un titolare deve rivolgersi al proprio consulente legale o alla conformità relativamente all'idoneità di qualsiasi richiesta dell’interessato specifica.
 
 È possibile che nel completamento di una richiesta siano coinvolti diversi processi, soggetti alle regole di conformità al GDPR dell'organizzazione.
   

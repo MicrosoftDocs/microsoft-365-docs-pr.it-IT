@@ -13,14 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Compliance Manager del Microsoft Service Trust Portal fornisce strumenti per monitorare, implementare e gestire i controlli che aiutano l'organizzazione a garantire la conformità con gli standard di sicurezza e di protezione dei dati (ad esempio GDPR, ISO 27001 e 27018, nonché HIPAA) quando si utilizzano servizi cloud Microsoft, come Office 365 e Microsoft Azure. Compliance Manager aiuta l'incaricato alla protezione dei dati e alla strategia della privacy dell'organizzazione a gestire la conformità e il processo di valutazione del rischio.
-ms.openlocfilehash: 95816ca13818d068066c4e3c7fce371f1eeccc25
-ms.sourcegitcommit: 15173ab87325b7d79bab683702b35d77a355cd6b
+ms.openlocfilehash: 4c3f979caf2fdc3a2dc942e49fd33a09d2d1589a
+ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417595"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "39268548"
 ---
-# <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Utilizzare Compliance Manager per soddisfare i requisiti normativi e garantire la protezione dei dati quando si utilizzano i servizi cloud Microsoft
+# <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance Manager (classico)
+
+> [!NOTE]
+> Questa documentazione descrive un prodotto legacy. È sconsigliato usare questa versione di Compliance Manager, mentre invece è consigliato usare il nuovo [Punteggio di conformità Microsoft](compliance-score.md).
 
  *Compliance Manager non è disponibile in Office 365 gestito da 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) o Office 365 Dipartimento della Difesa.* 
   
@@ -831,4 +834,4 @@ Compliance Manager è progettato per essere aggiornato regolarmente per stare al
 
 - [Annuncio della disponibilità generale di Compliance Manager](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
 
-- [Microsoft 365 offre una strategia di protezione delle informazioni per facilitare la conformità al GDPR](https://blogs.office.com/it-IT/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
+- [Microsoft 365 offre una strategia di protezione delle informazioni per facilitare la conformità al GDPR](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)

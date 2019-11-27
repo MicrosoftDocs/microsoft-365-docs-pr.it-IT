@@ -1,7 +1,7 @@
 ---
 title: Panoramica della conservazione basata su eventi
-ms.author: stephow
-author: stephow-MSFT
+ms.author: laurawi
+author: laurawi
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di conservazione, si può basare un periodo di conservazione sul momento in cui si verifica un determinato tipo di evento. L'evento attiva l'inizio del periodo di conservazione e a tutto il contenuto in cui è applicata un'etichetta per quel tipo di evento vengono applicate le azioni di conservazione dell'etichetta. La conservazione basata su eventi viene usata generalmente nell'ambito di un processo di gestione dei record.
-ms.openlocfilehash: 1f258296017734c80cb3719eb0b830593f69b220
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
+ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083654"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "39268533"
 ---
 # <a name="overview-of-event-driven-retention"></a>Panoramica della conservazione basata su eventi
 
@@ -42,7 +42,7 @@ La conservazione basata su eventi viene generalmente utilizzata come parte di un
 - Le etichette basate su eventi di solito attivano una revisione per l'eliminazione alla fine del periodo di conservazione, in modo che un Record Manager possa esaminare e eliminare manualmente il contenuto. Per ulteriori informazioni, vedere [Panoramica delle revisioni per l'eliminazione](disposition-reviews.md).
     
 Un'etichetta basata su un evento ha le stesse funzionalità di qualsiasi etichetta in Office 365. Per ulteriori informazioni, vedere [Panoramica delle etichette](labels.md).
-    
+
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Informazioni sulla relazione tra tipi di eventi, etichette, eventi e ID delle risorse
 
 Per utilizzare correttamente la conservazione basata su eventi, è importante comprendere la relazione tra tipi di eventi, etichette, eventi e ID delle risorse come illustrato qui. Una spiegazione segue il diagramma.
@@ -75,9 +75,12 @@ Di seguito viene illustrato il flusso di lavoro principale per la conservazione 
   
 ![Diagramma del flusso di lavoro per la configurazione di conservazione basata su eventi](media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
   
+> [!TIP]
+> Vedere [Gestire il ciclo di vita dei documenti di SharePoint con etichette di conservazione](auto-apply-retention-labels-scenario.md) per uno scenario dettagliato sull'uso delle proprietà gestite in SharePont per applicare automaticamente etichette di conservazione e implementare la conservazione basata su eventi.
+
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Passaggio 1: creare un'etichetta il cui periodo di conservazione sia basato su un evento
 
-Nel riquadro di spostamento sinistro del Centro conformità Microsoft 365, del Centro sicurezza Microsoft 365 o del Centro sicurezza e conformità di Office 365 scegliere **Classificazione > **Etichette di conservazione** >  scheda **Etichette**> **Crea un'etichetta**.
+Nel riquadro di spostamento sinistro del Centro conformità Microsoft 365, del Centro sicurezza Microsoft 365 o del Centro sicurezza e conformità di Office 365 scegliere **ClassificazioneEtichette di conservazione scheda Etichette> Crea un'etichetta.
   
 Quando si crea l'etichetta, attivare la conservazione, quindi scegliere l'opzione mostrata di seguito per conservare o eliminare il contenuto in base a un evento. Ciò significa che le impostazioni di conservazione non avranno effetto fino al Passaggio 5, quando verrà creato un evento nella pagina **Eventi**. 
   
@@ -123,9 +126,7 @@ ID risorsa è semplicemente un'altra proprietà dei documenti in SharePoint e On
   
 ### <a name="step-5-create-an-event"></a>Passaggio 5: creare un evento
 
-Quando si verifica un'istanza particolare di quel tipo di evento, ad esempio quando un prodotto raggiunge la fine del ciclo di vita, accedere alla pagina Eventi nel Centro sicurezza e conformità e creare un evento. È necessario attivare manualmente un evento creandolo.
-  
-![Pagina Eventi del Centro sicurezza e conformità](media/811bddfb-a7e9-4990-bf5e-abe0dfb91809.png)
+Quando si verifica un'istanza particolare di quel tipo di evento, ad esempio quando un prodotto raggiunge la fine del ciclo di vita, accedere alla pagina **Gestione record** > **Eventi** nel Centro sicurezza e conformità e creare un evento. È necessario attivare manualmente un evento creandolo.
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Passaggio 6: scegliere lo stesso tipo di evento utilizzato per l'etichetta nel Passaggio 2
 
