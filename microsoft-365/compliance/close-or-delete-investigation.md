@@ -14,24 +14,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4d74685aec0de4d26a7bd52c3cb53f475ca8490b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3a888458dce090091fbba020d1fa17ec6d56e0f5
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083242"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633825"
 ---
 # <a name="close-or-delete-an-investigation"></a>Chiudere o eliminare un'indagine
 
 ## <a name="close-an-investigation"></a>Chiudere un'indagine
 
- Dopo aver completato l'indagine ed eseguito le azioni correttive appropriate, è possibile che si desideri mantenere la prova raccolta, ma chiudere il caso in modo che sia possibile tracciare facilmente i riferimenti in futuro. Dopo aver chiuso l'indagine, questa è ancora elencata nella pagina indagini sui dati nel centro sicurezza & conformità. Vengono mantenuti i dettagli, le esenzioni, le ricerche e i membri di un caso chiuso. In un secondo momento, è possibile riaprire le indagini chiuse.
+ Dopo aver completato l'analisi e aver eseguito le azioni correttive appropriate, è possibile che si desideri mantenere la prova raccolta, ma chiudere il caso in modo che sia possibile riferirlo facilmente in futuro. Una volta terminata l'indagine, è ancora elencata nella pagina indagini sui dati nel centro sicurezza & conformità. Vengono mantenuti i dettagli, le esenzioni, le ricerche e i membri di un caso chiuso. In un secondo momento, è possibile riaprire le indagini chiuse.
 
 Per chiudere un'indagine:
 
-1. Nella scheda **Impostazioni** fare clic su **informazioni di analisi**.
+1. Nella scheda **Impostazioni** selezionare informazioni di **analisi**.
 
-2. Fare clic su **Chiudi analisi**. 
+2. Selezionare **Chiudi analisi**. 
 
 
 ## <a name="delete-an-investigation"></a>Eliminare un'analisi
@@ -40,6 +40,6 @@ A volte è possibile che si desideri eliminare l'evidenza perché contiene dati 
 
 Per eliminare un'analisi:
 
-1. Nella scheda **Impostazioni** fare clic su **informazioni di analisi**.
+1. Nella scheda **Impostazioni** selezionare informazioni di **analisi**.
 
-2. Fare clic su **Elimina analisi**. 
+2. Selezionare **Elimina analisi**. 

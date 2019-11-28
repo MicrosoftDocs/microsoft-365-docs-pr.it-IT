@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzare classificatori addestrabili quando uno dei classificatori di caselle pronti per l'uso non soddisfa le proprie esigenze. Un classificatore Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. In questo argomento viene illustrato come creare un classificatore personalizzato.
-ms.openlocfilehash: 1d62b70d821593ff7d8d3889c0da0e0b5cc9809f
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 2b1955a2079a26792e973eec1848fcdac8c58218
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38690639"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633983"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creazione di un classificatore addestrabile (anteprima)
 
@@ -38,7 +38,7 @@ Quando si desidera che un classificatore addestrabile sia in grado di identifica
 
 ## <a name="testing-content"></a>Test del contenuto
 
-Dopo che il classificatore addestratore ha elaborato campioni positivi sufficienti per creare un modello di stima, è necessario verificare le stime che consente di verificare se il classificatore può distinguere correttamente tra gli elementi che corrispondono alla categoria e gli elementi che non lo sono. A tale scopo, è necessario nutrirlo con un altro, che si spera più grande, insieme di contenuto umano raccolto che è costituito da campioni che devono rientrare nella categoria e campioni che non lo faranno. Dopo averli elaborati, si procederà manualmente ai risultati e si verificherà se ogni previsione è corretta, non corretta o non si è certi. Il classificatore addestrabile utilizza questi commenti e suggerimenti per migliorare il modello di stima.
+Dopo che il classificatore addestratore ha elaborato campioni positivi sufficienti per creare un modello di stima, è necessario verificare le stime che consente di verificare se il classificatore può distinguere correttamente tra gli elementi che corrispondono alla categoria e gli elementi che non lo fanno. A tale scopo, è necessario nutrirlo con un altro, che si spera più grande, insieme di contenuto umano raccolto che è costituito da campioni che devono rientrare nella categoria e campioni che non lo faranno. Dopo averli elaborati, si procede manualmente ai risultati e si verifica se ogni previsione è corretta, non corretta o non si è certi. Il classificatore addestrabile utilizza questi commenti e suggerimenti per migliorare il modello di stima.
 
 > [!TIP]
 > Per ottenere risultati ottimali, avere 10.000 elementi nel set di campioni di test con una distribuzione uniforme di corrispondenze positive e negative.
@@ -92,7 +92,7 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 
 13. Scegliere `Add items to test`.
 
-14. Immettere il sito di SharePoint Online, la raccolta e l'URL della cartella esatti per il sito di contenuto di test del passaggio 12. Scegliere `Add`.
+14. Immettere il sito, la raccolta e l'URL della cartella di SharePoint Online esatti per il sito di contenuto di test del passaggio 12. Scegliere `Add`.
 
 15. Completare la procedura guidata scegliendo `Done`. Il classificatore addestrabile richiederà fino a un'ora per l'elaborazione dei file di test.
 

@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato e si conferma che i risultati sono accurati, è possibile utilizzarlo per eseguire una ricerca nel contenuto delle organizzazioni, classificarlo per applicare etichette di conservazione o di sensibilità o includerlo nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: 6b8574b7c87f0b038c46894940cb8d15b152ab5c
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
+ms.openlocfilehash: 458f7e6c9f15bac71cd3dadf2ed64e1c1f4ef1c5
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38690545"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633865"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
 
@@ -25,7 +25,7 @@ Classificare ed etichettare il contenuto in modo che possa essere protetto e ges
 
 ## <a name="manually"></a>Manualmente
 
-Ciò richiede il giudizio umano e l'azione. Un amministratore può utilizzare le etichette preesistenti e i tipi di informazioni riservate oppure crearne di propri e quindi pubblicarli. Gli utenti e gli amministratori li applicano al contenuto quando lo incontrano. È quindi possibile proteggere il contenuto e gestirne la disposizione.
+Questo metodo richiede il giudizio umano e l'azione. Un amministratore può utilizzare le etichette preesistenti e i tipi di informazioni riservate oppure crearne di propri e quindi pubblicarli. Gli utenti e gli amministratori li applicano al contenuto quando lo incontrano. È quindi possibile proteggere il contenuto e gestirne la disposizione.
 
 ## <a name="automated-pattern-matching"></a>Corrispondenza del modello automatizzata
 
@@ -33,14 +33,14 @@ Questa categoria di meccanismi di classificazione include la ricerca di contenut
 
 - Parole chiave o valori di metadati (parola chiave Query Language)
 - utilizzo di modelli di informazioni riservate in precedenza identificati come la sicurezza sociale, la carta di credito o il conto corrente bancario [(tipi di informazioni riservate)](what-the-sensitive-information-types-look-for.md)
-- Riconoscimento di un elemento perché è una variante su un modello [(stampa su dito documento)](document-fingerprinting.md)
+- Riconoscere un elemento perché è una variante su un modello [(stampa su un dito del documento)](document-fingerprinting.md)
 - utilizzo della presenza di stringhe esatte [(corrispondenza esatta dei dati)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
-È quindi possibile applicare automaticamente le etichette di conservazione e di riservatezza che rendono il contenuto disponibile per l'utilizzo in [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md) e nei [criteri di conservazione](retention-policies.md).
+È quindi possibile applicare automaticamente le etichette di riservatezza e conservazione per rendere il contenuto disponibile per l'utilizzo in [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md) e nei [criteri di conservazione](retention-policies.md).
 
 ## <a name="trainable-classifiers"></a>Classificatori addestrabili
 
-Questo metodo di classificazione è particolarmente adatto ai contenuti che, per sua natura, non sono predisposti per essere facilmente identificati tramite i metodi di corrispondenza dei modelli manuale o automatico. Questo metodo di classificazione è più relativo all'addestramento di un classificatore per identificare un elemento in base a ciò che l'elemento è, non per elementi che si trovano nell'elemento (pattern matching). Un classificatore apprende come identificare un tipo di contenuto cercando un centinaio di esempi del contenuto che si desidera classificare. Si inizia con l'alimentazione di esempi che sono definitivamente nella categoria, quindi una volta che elabora tali, è possibile testarla conferendole una combinazione di esempi di corrispondenza e non corrispondenti. Il classificatore effettua quindi stime sull'eventuale ricaduta o meno di un determinato elemento nella categoria che si sta creando. È quindi necessario confermare i risultati, ordinare i valori positivi, negativi, falsi positivi e falsi negativi per aumentare l'accuratezza delle stime. Quando si pubblica il classificatore addestrato, l'ordinamento viene ordinato tramite gli elementi in posizioni, come SharePoint Online, Exchange e OneDrive e classifica il contenuto.
+Questo metodo di classificazione è particolarmente adatto ai contenuti che non sono facilmente identificabili tramite i metodi di corrispondenza dei modelli manuale o automatico. Questo metodo di classificazione è più relativo all'addestramento di un classificatore per identificare un elemento in base a ciò che l'elemento è, non per elementi che si trovano nell'elemento (pattern matching). Un classificatore apprende come identificare un tipo di contenuto esaminando centinaia di esempi del contenuto che si desidera classificare. Si inizia con l'alimentazione di esempi che sono definitivamente nella categoria. Dopo averli elaborati, è possibile testarli conferendogli una combinazione di esempi di corrispondenza e non corrispondenti. Il classificatore effettua quindi stime per determinare se un determinato elemento rientra nella categoria che si sta creando. Sono quindi convalidati i risultati, vengono ordinati gli aspetti positivi, negativi, falsi positivi e falsi negativi per aumentare l'accuratezza delle stime. Quando si pubblica il classificatore addestrato, l'ordinamento viene ordinato tramite gli elementi in posizioni come SharePoint Online, Exchange e OneDrive e classifica il contenuto.
 
 > [!IMPORTANT]
 > Entrambi i tipi di classificatori sono disponibili come condizione per [l'applicazione automatica dei criteri delle etichette di conservazione in base a una condizione e alla](labels.md#applying-a-retention-label-automatically-based-on-conditions) [conformità della comunicazione](communication-compliance.md).
@@ -60,11 +60,11 @@ Sono disponibili per l'utilizzo di classificatori e classificatori addestrabili.
 Microsoft 365 include sei classificatori pronti all'uso:
 
 - **Lingua offensiva**: consente di rilevare gli elementi di testo che contengono parolacce, legature, scherni e espressioni mascherate (ovvero espressioni che hanno lo stesso significato di un termine più offensivo).
-- **Resumes**: consente di rilevare gli elementi che sono account testuali di qualifiche personali, didattiche, professionali del richiedente, esperienze lavorative e altre informazioni di identificazione personale
+- **Resumes**: rileva gli elementi che sono account testuali di qualifiche personali, didattiche, professionali del richiedente, esperienze lavorative e altre informazioni di identificazione personale.
 - **Codice sorgente**: consente di rilevare gli elementi che contengono una serie di istruzioni e istruzioni scritte nei linguaggi di programmazione ampiamente utilizzati.
 - **Molestie**: rileva una categoria specifica di elementi di testo di lingua offensiva relativi alla condotta offensiva che mira a una o più persone in base alle caratteristiche seguenti: razza, etnia, religione, origine nazionale, genere, orientamento sessuale, età, disabilità.
-- **Parolacce**: rileva una categoria specifica di elementi di testo di lingua offensiva che contengono espressioni che imbarazzano la maggior parte delle persone
-- **Threat**: rileva una categoria specifica di elementi di testo offensivi relativi alle minacce per commettere violenze o arrecare danni fisici a una persona o a una proprietà
+- **Parolacce**: rileva una categoria specifica di elementi di testo di lingua offensiva che contengono espressioni che imbarazzano la maggior parte delle persone.
+- **Threat**: rileva una categoria specifica di elementi di testo offensivi relativi alle minacce per commettere violenze o arrecare danni fisici a una persona o a una proprietà.
 
 Questi vengono visualizzati nella visualizzazione classificazione dei**classificati** di **Microsoft 365 Compliance Center** > **Data Classification (Preview)** > con `Ready to use`lo stato di.
 
@@ -81,14 +81,14 @@ I classificatori pronti all'uso non devono essere addestrati, ma è necessario v
 
 ### <a name="understanding-trainable-classifiers"></a>Informazioni sui classificatori addestrabili
 
-Quando i classificatori pronti all'uso non soddisfano le proprie esigenze, è possibile creare e formare i propri classificatori. Si tratta di un lavoro significativamente più coinvolgente nella creazione di un proprio, ma sarà molto meglio adattare le proprie esigenze alle organizzazioni. Per ulteriori informazioni su come utilizzare un classificatore preconfigurato, vedere [utilizzo di un classificatore pronto per l'uso](classifier-using-a-ready-to-use-classifier.md)
+Quando i classificatori pronti all'uso non soddisfano le proprie esigenze, è possibile creare e formare i propri classificatori. È molto più necessario collaborare con la creazione dei propri utenti, ma sarà molto meglio adattare le proprie esigenze alle organizzazioni. Per ulteriori informazioni su come utilizzare un classificatore preconfigurato, vedere [utilizzo di un classificatore pronto per l'uso](classifier-using-a-ready-to-use-classifier.md)
 
 > [!IMPORTANT]
 > Solo l'utente che crea un classificatore addestrabile può formare e rivedere le stime eseguite dal classificatore.
 
 #### <a name="process-flow-for-creating-trainable-classifiers"></a>Flusso di processo per la creazione di classificatori addestrabili
 
-La creazione e la pubblicazione di un classificatore addestrabile per l'utilizzo in soluzioni di conformità come i criteri di conservazione e la supervisione della comunicazione seguono questo flusso. Per ulteriori informazioni sulla creazione di un classificatore addestrabile, vedere [creazione di un classificatore addestrabile](classifier-creating-a-trainable-classifier.md).
+La creazione e la pubblicazione di un classificatore addestrabile per l'utilizzo in soluzioni di conformità, ad esempio i criteri di conservazione e la supervisione della comunicazione, seguono questo flusso. Per ulteriori informazioni sulla creazione di un classificatore addestrabile, vedere [creazione di un classificatore addestrabile](classifier-creating-a-trainable-classifier.md).
 
 ![classificatore addestrabile del flusso di processo](media/classifier-trainable-classifier-flow.png)
 

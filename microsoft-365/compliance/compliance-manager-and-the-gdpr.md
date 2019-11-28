@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0d2edb2f7362fa8e8bea6ae82c417f61072bccff
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083241"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633615"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance Manager e GDPR
 
@@ -48,7 +48,7 @@ Cercare un account utente:
 
 ## <a name="export-a-report-of-account-data-history"></a>Esportare un report di cronologia dei dati dell'account
 
-Per ogni account utente identificato, è possibile generare un report delle dipendenze collegate a questo account. Queste informazioni consentono di riassegnare gli elementi dell'azione aperta o di garantire l'accesso alle prove precedentemente caricate.
+Per ogni account utente identificato, è possibile generare un report delle dipendenze collegate all'account. Queste informazioni consentono di riassegnare gli elementi dell'azione aperta o di garantire l'accesso alle prove precedentemente caricate.
   
  Per generare ed esportare un report:
   
@@ -69,6 +69,6 @@ Per eliminare l'elemento di azione dell'account utente e la cronologia del caric
   
 1. Selezionare **Elimina**.
 
-    Viene visualizzata una finestra di dialogo di conferma, "*questo rimuove tutte le assegnazioni di elementi di azione di controllo e la cronologia del caricamento del documento per l'utente selezionato. Questa azione è permanente. Si è sicuri di voler continuare?*"
+    Viene visualizzata una finestra di dialogo di conferma: "*rimuove tutte le assegnazioni di elementi di azione di controllo e la cronologia di caricamento del documento per l'utente selezionato. Questa azione è permanente. Si è sicuri di voler continuare?*"
 
 2. Per continuare seleziona **OK**, altrimenti seleziona **Annulla**.

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sulla conformità della comunicazione in Microsoft 365
-ms.openlocfilehash: 3765e8236b319eaadc543782f2254aefaa8914a2
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 8c8e94209d2db575dd8338afa6f4c5c968033683
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686354"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633665"
 ---
 # <a name="communication-compliance-in-microsoft-365-preview"></a>Conformità della comunicazione in Microsoft 365 (anteprima)
 
@@ -31,7 +31,7 @@ I criteri di conformità della comunicazione in Microsoft 365 consentono di supe
 
 - Analisi dei tipi di canali di comunicazione in aumento
 - Volume crescente di dati dei messaggi
-- Applicazione di regolamentazione & il rischio di multe
+- Applicazione di regolamentazione e rischio di ammende
 
 In alcune organizzazioni può verificarsi una separazione dei compiti tra il supporto IT e il gruppo di gestione della conformità. Microsoft 365 supporta la separazione tra la configurazione della conformità della comunicazione e la configurazione dei criteri per l'analisi delle comunicazioni. Ad esempio, il gruppo IT di un'organizzazione potrebbe essere responsabile dell'impostazione delle autorizzazioni e dei gruppi di ruoli per supportare i criteri di conformità della comunicazione configurati e gestiti dal team di conformità dell'organizzazione.
 
@@ -49,7 +49,7 @@ I criteri di conformità della comunicazione possono fornire assistenza per la r
 
 - **Conformità alle normative**
 
-    La maggior parte delle organizzazioni deve soddisfare alcuni tipi di standard di conformità normativi nell'ambito delle normali procedure operative. Queste normative richiedono spesso che le organizzazioni implementino un qualche tipo di processo di supervisione o sorveglianza per la messaggistica appropriata per il proprio settore. La regola FINRA (Financial Industry Regulatory Authority) 3110 è un buon esempio di un requisito che consente alle organizzazioni di disporre di procedure di supervisione per analizzare le comunicazioni dei dipendenti e i tipi di attività in cui si impegna. Un altro esempio potrebbe essere la necessità di esaminare le comunicazioni del broker-dealer nell'organizzazione per salvaguardare le attività relative a riciclaggio di denaro, insider trading, collusioni o tangenti. I criteri di conformità della comunicazione consentono all'organizzazione di soddisfare questi requisiti fornendo una procedura per l'analisi e il report sulle comunicazioni aziendali.
+    La maggior parte delle organizzazioni deve soddisfare alcuni tipi di standard di conformità normativi nell'ambito delle normali procedure operative. Queste normative richiedono spesso che le organizzazioni implementino un qualche tipo di processo di supervisione o sorveglianza per la messaggistica appropriata per il proprio settore. La regola FINRA (Financial Industry Regulatory Authority) 3110 è un buon esempio di un requisito che consente alle organizzazioni di disporre di procedure di supervisione per analizzare le comunicazioni dei dipendenti e i tipi di attività in cui si impegna. Un altro esempio potrebbe essere la necessità di esaminare le comunicazioni del broker-dealer nell'organizzazione per salvaguardare le attività relative a possibili operazioni di riciclaggio, insider trading, collusioni o tangenti. I criteri di conformità della comunicazione consentono all'organizzazione di soddisfare questi requisiti fornendo una procedura per l'analisi e il report sulle comunicazioni aziendali.
 
 ## <a name="new-enhancements"></a>Nuovi miglioramenti
 
@@ -79,15 +79,15 @@ I flussi di lavoro di correzione incorporati consentono di identificare e interv
 - **Rilevazione esatta e quasi duplicata**: oltre alla scansione dei termini esatti corrispondenti ai criteri di conformità della comunicazione, vicino ai gruppi di rilevamento duplicati, i termini e i messaggi analoghi sono insieme per velocizzare il processo di revisione.
 - **Nuovi filtri**: indagare e correggere gli avvisi di criteri più velocemente con i filtri dei messaggi per diversi campi, tra cui il mittente, il destinatario, la data, i domini e molto altro ancora.
 - **Visualizzazioni dei messaggi migliorate**: le azioni di analisi e correzione sono ora più rapide con le nuove visualizzazioni origine messaggio, testo e annotazioni. Gli allegati dei messaggi ora sono visualizzabili per fornire un contesto completo quando si eseguono operazioni di correzione.
-- **Visualizzazione cronologia utenti**: visualizzazione cronologica di tutte le attività di correzione dei messaggi degli utenti, ad esempio le notifiche e le escalation precedenti per le corrispondenze di criteri, ora forniscono revisori con più contesto durante il processo di correzione del flusso di lavoro. Le istanze di criteri per la prima volta o la ripetizione di corrispondenze per gli utenti sono ora archiviate e facilmente visualizzabili.
+- **Visualizzazione cronologia utenti**: visualizzazione cronologica di tutte le attività di correzione dei messaggi degli utenti, ad esempio le notifiche e le escalation precedenti per le corrispondenze di criteri, ora vengono forniti revisori con più contesto durante il processo di correzione del flusso di lavoro. Le istanze di criteri per la prima volta o la ripetizione di corrispondenze per gli utenti sono ora archiviate e facilmente visualizzabili.
 
 ### <a name="actionable-insights"></a>Approfondimenti di azione
 
 I nuovi dashboard interattivi per gli avvisi, le corrispondenze di criteri, le azioni e le tendenze consentono di visualizzare rapidamente lo stato degli avvisi in sospeso e risolti nell'organizzazione.
 
-- **Avvisi intelligenti proattivi**: gli avvisi per le corrispondenze di criteri che richiedono attenzione immediata includono nuovi dashboard per gli elementi in sospeso ordinati in base alla gravità e la nuova notifica di posta elettronica automatica inviata ai revisori designati.
+- **Avvisi intelligenti proattivi**: gli avvisi per le corrispondenze di criteri che richiedono attenzione immediata includono nuovi dashboard per gli elementi in sospeso ordinati in base alla gravità e alle nuove notifiche di posta elettronica automatiche inviate ai revisori designati.
 - **Dashboard interattivi**: i nuovi dashboard visualizzano le corrispondenze di criteri, le azioni in sospeso e risolte e le tendenze degli utenti e dei criteri.
-- **Supporto**per il controllo: un registro completo delle attività di revisione e dei criteri è facilmente esportato dal centro conformità di Microsoft 365 per supportare le richieste di revisione di controllo.
+- **Supporto**per il controllo: un registro completo delle attività relative ai criteri e alle riesami è facilmente esportato dal centro conformità di Microsoft 365 per supportare le richieste di revisione di controllo.
 
 ## <a name="integration-with-microsoft-365-services"></a>Integrazione con i servizi Microsoft 365
 
@@ -126,14 +126,14 @@ In questo passaggio, si esaminano i problemi rilevati come corrispondenti ai cri
 - **Avvisi**: quando un messaggio corrisponde a un criterio di supervisione, viene generato automaticamente un avviso. Per ogni avviso, è possibile visualizzare lo stato, la gravità, il tempo rilevato e se viene assegnato un caso e il relativo stato. I nuovi avvisi vengono visualizzati nella Home page conformità comunicazione e nella pagina **avvisi** e sono elencati in ordine di gravità.
 - **Gestione dei problemi**: per ogni avviso, è possibile intraprendere azioni investigative per contribuire a correggere il problema rilevato nel messaggio.
 - **Revisione del documento**: durante l'analisi di un problema, è possibile utilizzare diverse visualizzazioni del messaggio per valutare adeguatamente il problema rilevato. Le visualizzazioni includono un riepilogo delle conversazioni, visualizzazioni di solo testo, annotazioni e dettagli della conversazione di comunicazione.
-- Revisione della **cronologia delle attività degli utenti**: visualizzare la cronologia delle attività dei messaggi utente e le azioni di correzione, ad esempio le notifiche e le escalation precedenti per le corrispondenze di criteri.
+- Revisione della **cronologia delle attività degli utenti**: visualizzare la cronologia delle attività dei messaggi degli utenti e le azioni di correzione, ad esempio le notifiche e le escalation precedenti, per le corrispondenze di criteri.
 - **Filtri**: utilizzare filtri quali il mittente, il destinatario, la data e l'oggetto per limitare rapidamente gli avvisi del messaggio che si desidera esaminare.
 
 ### <a name="remediate"></a>Correzione
 
 Il passaggio successivo consiste nel correggere i problemi di conformità della comunicazione analizzati utilizzando le opzioni seguenti:
 
-- **Resolve**: dopo la revisione di un problema, è possibile risolvere i problemi risolvendo l'avviso. La risoluzione di un avviso lo rimuove dalla coda degli avvisi in sospeso e l'azione viene mantenuta come voce nella coda risolta per il criterio di corrispondenza. Gli avvisi vengono risolti automaticamente dopo aver segnato l'avviso come falso positivo, inviando un avviso a un dipendente sull'avviso o aprendo un nuovo caso per l'avviso.
+- **Resolve**: dopo la revisione di un problema, è possibile risolvere i problemi risolvendo l'avviso. La risoluzione di un avviso lo rimuove dalla coda degli avvisi in sospeso e l'azione viene mantenuta come voce nella coda risolta per i criteri di corrispondenza. Gli avvisi vengono risolti automaticamente dopo aver segnato l'avviso come falso positivo, inviando un avviso a un dipendente sull'avviso o aprendo un nuovo caso per l'avviso.
 - **Tag un messaggio**: nell'ambito della risoluzione di un problema, è possibile contrassegnare il messaggio rilevato come conforme, non conforme, o come discutibile come si riferisce ai criteri e agli standard per l'organizzazione. Il tagging può aiutare a filtrare gli avvisi per i criteri per le escalation o come parte di altri processi di revisione interni.
 - **Notifica all'utente**: spesso gli utenti violano accidentalmente o inavvertitamente un criterio di conformità della comunicazione. È possibile utilizzare la funzionalità Notify per fornire un avviso all'utente e per risolvere il problema.
 - **Escalation a un altro revisore**: a volte, il revisore iniziale di un problema deve essere inserito da altri revisori per contribuire alla risoluzione dell'evento. È possibile inoltrare facilmente i problemi dei messaggi ai revisori in altre aree dell'organizzazione nell'ambito del processo di risoluzione.

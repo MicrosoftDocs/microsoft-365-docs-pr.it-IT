@@ -14,16 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fc198bd5aa042cad2aadbe35ae4f19f66effe2bf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082930"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633585"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi dei metadati del documento in Advanced eDiscovery
 
-Nella tabella seguente sono elencati i campi dei metadati per i documenti in un set di revisione in un caso in Advanced eDiscovery. La tabella indica il nome del campo metadati, se il campo può essere cercato quando si esegue una query in un set di revisione, se il campo è presente quando si visualizzano i metadati dei file di un documento selezionato in un set di revisione e se il campo è incluso quando i documenti a re esportato.
+Nella tabella seguente sono elencati i campi dei metadati per i documenti in un set di revisione in un caso in Advanced eDiscovery. La tabella contiene le informazioni seguenti:
+
+- Nome del campo dei metadati (nella colonna **nome campo** ).
+
+- Nome della proprietà di cui è possibile eseguire la ricerca durante l'esecuzione di una [query del set di revisione](review-set-search.md) (nella colonna **nome campo ricercabile** ). Una cella vuota indica che non è possibile cercare il campo in una query del set di revisione.
+
+- Nome del campo dei metadati incluso quando vengono esportati i documenti (nella colonna **nome campo esportato** ).  Una cella vuota indica che il campo meta data non è incluso nei metadati esportati.
+
+- Nome del campo dei metadati visualizzato quando si visualizzano i metadati dei file di un documento selezionato in un set di revisione (nella colonna **nome campo di visualizzazione** ). Una cella vuota indica che il campo metadati non è incluso quando si visualizzano i file di dati di un documento.
+
+- Descrizione del campo meta data (nella **colonna Descrizione**).
 
 | Nome del campo | Nome del campo ricercabile | Nome del campo esportato | Nome del campo di visualizzazione | Descrizione |
 | :- |  :- |  :- |  :- |  :- |
@@ -72,10 +82,10 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 | ExtractedTextLength |  | Extracted_text_length |  | Numero di caratteri nel testo estratto. |
 | Pertinenza della famiglia Punteggio caso problema 1 |  | Family_relevance_score_case_issue_1 |  | Pertinenza della famiglia Punteggio caso problema 1 dalla pertinenza. |
 | FamilyDuplicateSet |  | Family_duplicate_set |  | Identificatore numerico per le famiglie che sono duplicati esatti tra loro (stesso contenuto e tutti gli stessi allegati). |
-| ID famiglia | FamilyId | Family_ID | ID famiglia | Gruppi di ID famiglia insieme tutti gli elementi; per la posta elettronica, sono inclusi il messaggio e tutti gli allegati. per i documenti, includere il documento e tutti gli elementi incorporati. |
+| ID famiglia | FamilyId | Family_ID | ID famiglia | Gruppi di ID famiglia insieme tutti gli elementi; per la posta elettronica, sono inclusi il messaggio e tutti gli allegati. per i documenti, sono inclusi il documento e tutti gli elementi incorporati. |
 | Dimensione famiglia |  | Family_size | Dimensione famiglia | Numero di documenti nella famiglia. |
 | Rilevanza del file caso problema 1 |  | File_relevance_score_case_issue_1 |  | Numero di rilevanza dei file caso problema 1 dalla pertinenza. |
-| Classe file | Fileclass | File_class | Classe file | Per il contenuto di SharePoint e OneDrive: **Document**; per i contenuti di Exchange: **e-mail**o **allegato**. |
+| Classe file | Fileclass | File_class | Classe file | Per il contenuto di SharePoint e OneDrive: **Document**; per il contenuto da Exchange: * * E-mail o **allegato**. |
 | ID file | FileId | File_ID | ID file | Identificatore di documento univoco all'interno del caso.|
 | Data di creazione del file System |  | File_system_date_created | Data di creazione del file System | Data creazione dal file System (si applica solo ai dati non di Office 365). |
 | Data del file System modificato |  | File_system_date_modified | Data del file System modificato | Data di modifica del file System (si applica solo ai dati non di Office 365). |
@@ -87,7 +97,7 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 | Tipo inclusivo | InclusiveType | Inclusive_type | Tipo inclusivo | Tipo incluso calcolato per analisi: **0** -non incluso; **1** -Inclusive; **2** -incluso meno; copia **3** -inclusive. |
 | In Rispondi a ID |  | In_reply_to_ID | In Rispondi a ID | In Rispondi a ID del messaggio. |
 | È rappresentativo | Rappresentante | Is_representative | È rappresentativo | Un documento in ogni set di duplicati esatti è contrassegnato come rappresentante. |
-| Classe Item | ItemClass | Item_class | Classe Item | Classe Item fornita da Exchange Server; ad esempio **IPM. Note** |
+| Classe Item | ItemClass | Item_class | Classe Item | Classe Item fornita da Exchange Server; ad esempio, **IPM. Note** |
 | Last modified date | LastModifiedDate | Doc_date_modified | Last modified date | Data dell'Ultima modifica da metadati del documento. |
 | ID di carico | LoadId | Load_ID | ID di carico | ID carico, in cui l'elemento è stato caricato in un set di revisione. |
 | Posizione | Posizione | Posizione | Posizione | Stringa che indica il tipo di percorso da cui sono stati provenienti i documenti.<br />Dati importati non O365-><br />Teams-> Teams<br />ESO-> Exchange<br />SharePoint ><br />OneDrive for business-> OneDrive |
@@ -142,11 +152,11 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 | Tag | Tag | Tag | Tag | Tag applicati in un set di revisione. |
 | Elenco temi | Tema | Themes_list | Elenco temi | Elenco temi come calcolato per l'analisi. |
 | Titolo | Titolo | Doc_title | Titolo | Titolo dei metadati del documento. |
-| A | A | Email_to | A | Campo per per i tipi di messaggio.  Format è **DisplayName\<SmtpAddress>** |
+| A | A | Email_to | A | To Field per i tipi di messaggio.  Format è **DisplayName\<SmtpAddress>** |
 | Univoco nel set di posta elettronica | UniqueInEmailSet |  | Univoco nel set di posta elettronica | False se è presente un duplicato dell'allegato nel relativo set di posta elettronica. |
 | È stato rimediato | WasRemediated | Was_Remediated | È stato rimediato | Ha valore true se l'elemento è stato rimediato, altrimenti false. |
 | Word count | WordCount | Word_count | Word count | Numero di parole nell'elemento. |
 ||||||
 
   > [!NOTE]
-  > Per ulteriori informazioni sui campi ricercabili quando si esegue una ricerca diretta su Office 365, fare riferimento a [query di parole chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md)
+  > Per ulteriori informazioni sulle proprietà disponibili per la ricerca durante la ricerca di percorsi di contenuto di Office 365 quando si raccolgono dati per un caso avanzato di eDiscovery, vedere [keyword queries and Search Conditions for content search](keyword-queries-and-search-conditions.md).

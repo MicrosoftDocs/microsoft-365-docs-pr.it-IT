@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: be2ba99f7779640df90c35101e96839fb87156d4
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: f8683fd3b3462a44856266ec0e3bef96829b032c
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615616"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633655"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager (anteprima)
 
@@ -51,7 +51,7 @@ I [gruppi](working-with-compliance-manager.md#groups) sono contenitori che conse
 
 ## <a name="assessments"></a>Valutazioni
 
-Le [valutazioni](working-with-compliance-manager.md#assessments) sono contenitori che consentono di organizzare i controlli in base alle responsabilità condivise tra Microsoft e l'organizzazione per valutare i rischi per la sicurezza e la conformità dei servizi cloud. Le valutazioni consentono di implementare le misure di salvaguardia della protezione dei dati specificate da standard di conformità e standard di protezione dei dati applicabili, regolamenti o leggi. Consentono di discernere la protezione dei dati e la posizione di conformità rispetto allo standard del settore selezionato per il servizio cloud Microsoft selezionato. Le valutazioni sono state completate dall'implementazione dei controlli inclusi nella valutazione che corrispondono a uno standard di certificazione.
+Le [valutazioni](working-with-compliance-manager.md#assessments) sono contenitori che consentono di organizzare i controlli per le responsabilità condivise tra Microsoft e l'organizzazione per valutare i rischi per la sicurezza e la conformità dei servizi cloud. Le valutazioni consentono di implementare le misure di salvaguardia della protezione dei dati specificate da standard di conformità e standard di protezione dei dati applicabili, regolamenti o leggi. Consentono di discernere la protezione dei dati e la posizione di conformità rispetto allo standard del settore selezionato per il servizio cloud Microsoft selezionato. Le valutazioni sono state completate dall'implementazione dei controlli inclusi nella valutazione che corrispondono a uno standard di certificazione.
 
 Per impostazione predefinita, Compliance Manager crea le seguenti valutazioni per l'organizzazione:
 
@@ -107,7 +107,7 @@ Un controllo condiviso si riferisce a qualsiasi controllo in cui Microsoft e i c
 
 Gli utenti dell'organizzazione possono utilizzare Compliance Manager per esaminare i controlli gestiti dal cliente da tutte le valutazioni per cui sono stati assegnati. Quando un utente accede a Responsabile Conformità e apre la dashboard **Azioni**, viene visualizzato un elenco delle attività assegnate all'utente stesso. In base al ruolo di Compliance Manager assegnatogli, l'utente può fornire dettagli relativi all'implementazione o al test, aggiornare lo stato o assegnare attività.
 
-I controlli di certificazione vengono in genere implementati da una persona e testati da un altro. Ad esempio, dopo aver completato gli elementi di azione inizialmente assegnati a una persona per l'implementazione, gli elementi di azione vengono assegnati alla persona successiva per testare e caricare la prova. Gli utenti che dispongono di autorizzazioni sufficienti per le assegnazioni di controllo possono assegnare e riassegnare gli elementi di azione. In questo modo è possibile gestire in modo centralizzato le assegnazioni dei controlli e il routing decentralizzato degli elementi di azione tra gli implementatori e i tester.
+I controlli di certificazione vengono in genere implementati da una persona e testati da un altro. Ad esempio, dopo aver completato gli elementi dell'azione inizialmente assegnati a una persona per l'implementazione, gli elementi di azione vengono assegnati alla persona successiva per testare e caricare la prova. Gli utenti che dispongono di autorizzazioni sufficienti per le assegnazioni di controllo possono assegnare e riassegnare gli elementi di azione. In questo modo è possibile gestire in modo centralizzato le assegnazioni dei controlli e il routing decentralizzato degli elementi di azione tra gli implementatori e i tester.
 
 ## <a name="permissions"></a>Autorizzazioni
 
@@ -116,15 +116,15 @@ Compliance Manager usa un modello di autorizzazione di controllo dell'accesso ba
 L'amministratore del portale per Compliance Manager può impostare le autorizzazioni per gli altri utenti all'interno di Compliance Manager attenendosi alla procedura seguente:
 
 1. Dal menu a discesa **in alto,** selezionare **amministratore**, quindi **Impostazioni**.
-2. Da qui, selezionare il ruolo che si desidera assegnare e quindi aggiungere il dipendente che si desidera assegnare a quel ruolo. Gli utenti saranno quindi in grado di eseguire determinate azioni.
+2. Selezionare il ruolo che si desidera assegnare e quindi aggiungere il dipendente che si desidera assegnare a quel ruolo. Gli utenti saranno quindi in grado di eseguire determinate azioni.
 
-Inoltre, gli utenti a cui è assegnato il [ruolo di lettore globale in Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) dispongono dell'autorizzazione di sola lettura per accedere a Compliance Manager. Tuttavia, non è possibile modificare i dati o eseguire azioni all'interno di Compliance Manager.
+Inoltre, gli utenti a cui è assegnato il [ruolo di lettore globale in Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) dispongono dell'autorizzazione di sola lettura per accedere a Compliance Manager. Tuttavia, non sono in grado di modificare i dati o di eseguire azioni all'interno di Compliance Manager.
 
-Si noti che non esiste più un ruolo predefinito **Accesso guest**. A ogni utente deve essere assegnato un ruolo per poter accedere e lavorare in Compliance Manager.
+Non esiste più un ruolo di **accesso Guest** predefinito. A ogni utente deve essere assegnato un ruolo per poter accedere e lavorare in Compliance Manager.
   
 ## <a name="manage-evidence"></a>Gestione delle evidenze
 
-Compliance Manager può archiviare la prova delle attività di implementazione per l'esecuzione di test e la convalida dei controlli gestiti dal cliente. Evidence include documenti, fogli di calcolo, schermate, immagini, script, file di output dello script e altri file. Compliance Manager riceve automaticamente anche la telemetria e crea un record di prova per gli elementi azione integrati con il Punteggio sicuro. Tutti i dati caricati come elementi di prova in Compliance Manager sono archiviati negli Stati Uniti nei siti di archiviazione cloud Microsoft. Questi dati vengono replicati tra le aree di Azure situate nel sudest asiatico e nell'Europa occidentale.
+Compliance Manager è in grado di archiviare la prova delle attività di implementazione per l'esecuzione di test e la convalida dei controlli gestiti dal cliente. Evidence include documenti, fogli di calcolo, schermate, immagini, script, file di output dello script e altri file. Compliance Manager riceve automaticamente anche la telemetria e crea un record di prova per gli elementi azione integrati con il Punteggio sicuro. Tutti i dati caricati come elementi di prova in Compliance Manager sono archiviati negli Stati Uniti nei siti di archiviazione cloud Microsoft. Questi dati vengono replicati tra le aree di Azure situate nel sudest asiatico e nell'Europa occidentale.
 
 ## <a name="templates"></a>Modelli
 

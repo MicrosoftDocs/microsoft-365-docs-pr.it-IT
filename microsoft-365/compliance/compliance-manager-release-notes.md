@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 1f233a6bc19f4a7afa495f49ad77e39e496c1dc5
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: bc702778fc135429067352cac824a31c0b60a406
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202167"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633635"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Note sulla versione per Compliance Manager (anteprima)
 
@@ -83,7 +83,7 @@ Nelle sezioni seguenti vengono illustrati i problemi noti da risolvere nelle pro
 ### <a name="supported-browsers"></a>Browser supportati
 
 - Sono supportate le versioni più recenti di Microsoft Edge, Chrome e Safari.
-- Possono verificarsi casi in cui i dati aggiornati non vengono visualizzati fino a quando il browser non viene aggiornato.
+- Possono verificarsi casi in cui i dati aggiornati non vengono visualizzati fino a quando non viene aggiornato il browser.
 - La versione di anteprima di Microsoft Edge non è supportata ma non ha problemi noti.
 - Internet Explorer non è supportato.
 

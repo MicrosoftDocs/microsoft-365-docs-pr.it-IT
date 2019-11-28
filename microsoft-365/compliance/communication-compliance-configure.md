@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Impostare i criteri di conformità della comunicazione per configurare le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: 0a830914a22968119d836e2190a6f133d91fd305
-ms.sourcegitcommit: 5f96fa472cbdca30c2cfe24d66c9c6fcaedb1a6b
+ms.openlocfilehash: 24b821158ca0f6d7486d1177256f5b1ce9123479
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38755604"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633625"
 ---
 # <a name="configure-communication-compliance-for-microsoft-365-preview"></a>Configurare la conformità alla comunicazione per Microsoft 365 (anteprima)
 
@@ -38,15 +38,15 @@ Seguire questa procedura per configurare e usare la conformità della comunicazi
   
 - **Passaggio 1 (facoltativo)**: [configurare i gruppi per la conformità della comunicazione](#step-1-set-up-groups-for-communication-compliance-optional) 
 
-    Prima di iniziare a utilizzare la conformità alla comunicazione, determinare gli utenti che devono esaminare le comunicazioni e che eseguono le revisioni. Se si desidera iniziare a usare solo alcuni utenti per vedere come funziona la conformità di comunicazione, è possibile ignorare la configurazione dei gruppi per il momento.
+    Prima di iniziare a utilizzare la conformità alla comunicazione, determinare gli utenti che devono esaminare le comunicazioni e le recensioni. Se si desidera iniziare a usare solo alcuni utenti per vedere come funziona la conformità di comunicazione, è possibile ignorare la configurazione dei gruppi per il momento.
 
 - **Passaggio 2 (obbligatorio)**: [rendere la conformità della comunicazione disponibile nell'organizzazione](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Aggiungersi al ruolo **amministratore revisione di supervisione** per impostare i criteri. È inoltre necessario creare un gruppo con l' **amministratore revisione di supervisione**, i ruoli di **gestione dei casi** e di **Revisione** per persone o gruppi che avranno un'azione investigativa e di correzione sui messaggi con corrispondenze di criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Aggiungersi al ruolo **amministratore revisione di supervisione** per impostare i criteri. È inoltre necessario creare un gruppo con l' **amministratore revisione di supervisione**, la **gestione dei casi**e i ruoli di **Revisione** per persone o gruppi che avranno un'azione di verifica e correzione nei messaggi con corrispondenze di criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Passaggio 3 (obbligatorio)**: [impostare un criterio di conformità della comunicazione](#step-3-create-a-communication-compliance-policy-required)
 
-    È possibile creare criteri di conformità della comunicazione nel centro conformità di Microsoft 365. Questi criteri definiscono le comunicazioni soggette a revisione nell'organizzazione e specifica chi esegue le revisioni. Le comunicazioni includono la posta elettronica, Microsoft teams, Skype for business e le comunicazioni della piattaforma di terze parti (come Facebook, Twitter e così via).
+    È possibile creare criteri di conformità della comunicazione nel centro conformità di Microsoft 365. Questi criteri definiscono le comunicazioni che sono soggette a revisione nell'organizzazione e specifica chi esegue le revisioni. Le comunicazioni includono la posta elettronica, Microsoft teams, Skype for business e le comunicazioni della piattaforma di terze parti (come Facebook, Twitter e così via).
 
 - **Passaggio 4 (facoltativo)**: [creare modelli di avviso](#step-4-create-employee-notice-templates-optional) per i dipendenti
 
@@ -58,7 +58,7 @@ Seguire questa procedura per configurare e usare la conformità della comunicazi
 
 ## <a name="step-1-set-up-groups-for-communication-compliance-optional"></a>Passaggio 1: configurare i gruppi per la conformità delle comunicazioni (facoltativo)
 
- Quando si crea un criterio di conformità della comunicazione, è possibile definire gli utenti che hanno esaminato le comunicazioni e che eseguono le revisioni. Nei criteri si utilizzeranno gli indirizzi di posta elettronica per identificare singoli o gruppi di persone. Per semplificare la configurazione, è possibile creare gruppi per gli utenti che hanno la propria comunicazione riesaminata e i gruppi per gli utenti che esaminano tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi. Ad esempio, si desidera monitorare le comunicazioni tra due gruppi distinti di persone o se si desidera specificare un gruppo che non verrà controllato.
+ Quando si crea un criterio di conformità della comunicazione, è possibile definire gli utenti che hanno esaminato le comunicazioni e che eseguono le revisioni. Nei criteri si utilizzeranno gli indirizzi di posta elettronica per identificare singoli o gruppi di persone. Per semplificare la configurazione, è possibile creare gruppi per gli utenti che hanno la propria comunicazione riesaminata e i gruppi per gli utenti che esaminano tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi. Ad esempio, se si desidera monitorare le comunicazioni tra due gruppi distinti di persone o se si desidera specificare un gruppo che non verrà controllato.
 
 Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'organizzazione per i criteri di conformità della comunicazione:
 
@@ -77,7 +77,7 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
 ## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a>Passaggio 2: rendere la conformità della comunicazione disponibile nell'organizzazione (obbligatorio)
 
-Per rendere la **conformità di comunicazione** disponibile come opzione di menu in Microsoft 365 Compliance Center, è necessario essere assegnati al ruolo di **amministratore revisione di supervisione** . Inoltre, per esaminare e correggere i messaggi con le corrispondenze di criteri, è necessario creare un gruppo per i revisori con l' **amministratore revisione di supervisione**, i ruoli di **gestione dei casi** e di **Revisione** .
+Per rendere la **conformità di comunicazione** disponibile come opzione di menu in Microsoft 365 Compliance Center, è necessario essere assegnati al ruolo di **amministratore revisione di supervisione** . Inoltre, per esaminare e correggere i messaggi con le corrispondenze di criteri, è necessario creare un gruppo per i revisori con l' **amministratore revisione di supervisione**, la **gestione dei casi**e i ruoli di **Revisione** .
 
 ### <a name="create-a-new-role-group"></a>Creare un nuovo gruppo di ruoli
 
@@ -117,23 +117,23 @@ Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [P
     Se si sceglie di utilizzare la procedura guidata dei criteri per creare un criterio personalizzato, sarà necessario:
 
     - Assegnare al criterio un nome e una descrizione. Non è possibile modificare i nomi dei criteri dopo la creazione del criterio.
-    - Scegliere gli utenti o i gruppi da controllare, inclusa la scelta di tutti gli utenti dell'organizzazione, di utenti e gruppi specifici o di altri utenti e gruppi che si desidera escludere. -
+    - Scegliere gli utenti o i gruppi da controllare, inclusi tutti gli utenti dell'organizzazione, utenti e gruppi specifici o altri utenti e gruppi che si desidera escludere. -
     - Scegliere i revisori per il criterio. I revisori possono essere singoli utenti o [gruppi di sicurezza abilitati alla posta elettronica](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). Tutti i revisori devono disporre di cassette postali ospitate in Exchange Online.
-    - Scegliere i canali di comunicazione da analizzare, tra cui Exchange, Microsoft teams o Skype for business. È inoltre possibile scegliere di analizzare le origini di terze parti se è stato configurato un connettore in Microsoft 365.
+    - Scegliere i canali di comunicazione da analizzare, tra cui Exchange, Microsoft teams o Skype for business. Se si è configurato un connettore in Microsoft 365, è inoltre possibile scegliere di eseguire l'analisi delle origini di terze parti.
     - Scegliere la direzione di comunicazione da monitorare, incluse le comunicazioni in ingresso, in uscita o interne.
     - Definire le [condizioni](communication-compliance-feature-reference.md#ConditionalSettings)dei criteri di conformità della comunicazione. È possibile scegliere tra l'indirizzo del messaggio, la parola chiave, i tipi di file e le condizioni di corrispondenza delle dimensioni.
-    - Scegliere se si desidera includere tipi di informazioni riservate. È possibile selezionare i tipi di informazioni riservate predefinite e personalizzate. Scegliere tra tipi di informazioni riservate personalizzate esistenti o dizionari per parole chiave personalizzate nella procedura guidata criteri di conformità della comunicazione, è possibile creare questi elementi prima di eseguire la procedura guidata, se necessario. Se lo si desidera, è anche possibile creare nuovi tipi di informazioni riservate dall'interno della procedura guidata criteri di conformità della comunicazione.
+    - Scegliere se si desidera includere tipi di informazioni riservate. È possibile selezionare i tipi di informazioni riservate predefinite e personalizzate. Scegliere tra tipi di informazioni riservate personalizzate esistenti o dizionari di parole chiave personalizzati nella procedura guidata criteri di conformità della comunicazione. È possibile creare questi elementi prima di eseguire la procedura guidata, se necessario. È inoltre possibile creare nuovi tipi di informazioni riservate dall'interno della procedura guidata criteri di conformità della comunicazione.
     - Scegliere se si desidera abilitare il modello di lingua offensivo. In questo modo viene rilevato il linguaggio inappropriato inviato o ricevuto nel corpo dei messaggi di posta elettronica.
     - Definire la percentuale di comunicazioni da esaminare.
     - Esaminare le selezioni dei criteri e creare il criterio.
 
 5. Selezionare **Crea criterio** quando si utilizzano i modelli o **Invia** quando si utilizza la procedura guidata per i criteri personalizzati.
 
-6. La pagina **criteri è stata creata** viene visualizzata con linee guida su quando verranno attivati i criteri e le comunicazioni verranno acquisite.
+6. La pagina **criteri è stata creata** viene visualizzata con linee guida su quando verranno attivati i criteri e quali comunicazioni verranno acquisite.
 
 ## <a name="step-4-create-employee-notice-templates-optional"></a>Passaggio 4: creare modelli di avviso per i dipendenti (facoltativo)
 
-Se si desidera avere la possibilità di rispondere a un avviso di criteri inviando un avviso di sollecito al dipendente associato, è necessario creare almeno un modello di avviso nell'organizzazione. I campi del modello di avviso sono modificabili prima dell'invio come parte del processo di correzione degli avvisi e la creazione di un modello di avviso personalizzato per ogni criterio di conformità della comunicazione è consigliata.
+Se si desidera avere la possibilità di rispondere a un avviso di criteri inviando un avviso di sollecito al dipendente associato, è necessario creare almeno un modello di avviso nell'organizzazione. I campi del modello di avviso sono modificabili prima di essere inviati come parte del processo di correzione degli avvisi e la creazione di un modello di avviso personalizzato per ogni criterio di conformità della comunicazione è consigliata.
 
 1. Accedere [https://compliance.microsoft.com](https://compliance.microsoft.com) con le credenziali per un account di amministratore nell'organizzazione Microsoft 365.
 
@@ -153,11 +153,11 @@ Se si desidera avere la possibilità di rispondere a un avviso di criteri invian
 
 ## <a name="step-5-test-your-communication-compliance-policy-optional"></a>Passaggio 5: testare i criteri di conformità della comunicazione (facoltativo)
 
-Dopo aver creato un criterio di conformità della comunicazione, è consigliabile verificare che le condizioni definite vengano applicate in modo corretto dal criterio. È inoltre possibile [testare i criteri di prevenzione della perdita di dati (DLP)](create-test-tune-dlp-policy.md) se i criteri di conformità della comunicazione includono tipi di informazioni riservate. Assicurarsi di fornire i criteri per l'attivazione in modo che le comunicazioni che si desidera testare vengano acquisite.
+Dopo aver creato un criterio di conformità della comunicazione, è consigliabile testarlo per assicurarsi che le condizioni definite vengano applicate correttamente dal criterio. È inoltre possibile [testare i criteri di prevenzione della perdita di dati (DLP)](create-test-tune-dlp-policy.md) se i criteri di conformità della comunicazione includono tipi di informazioni riservate. Assicurarsi di fornire i criteri per l'attivazione in modo che le comunicazioni che si desidera testare vengano acquisite.
 
 Eseguire la procedura seguente per testare i criteri di conformità della comunicazione:
 
-1. Aprire un client di posta elettronica o Microsoft teams connesso come utente controllato definito nel criterio che si desidera sottoporre a test.
+1. Aprire un client di posta elettronica o Microsoft teams mentre è stato eseguito l'accesso come utente controllato definito nel criterio che si desidera sottoporre a test.
 2. Inviare un messaggio di posta elettronica o Microsoft teams chat che soddisfi i criteri definiti nel criterio di conformità della comunicazione. Può trattarsi di una parola chiave, dimensioni degli allegati, dominio e così via. Assicurarsi di determinare se le impostazioni condizionali configurate nel criterio sono troppo restrittive o troppo indulgenti.
 
     > [!NOTE]

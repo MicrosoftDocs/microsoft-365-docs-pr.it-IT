@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Office 365. Questi tipi di esenzioni includono il blocco per controversia legale, eDiscovery holds e i criteri di conservazione di Office 365. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello di organizzazione
-ms.openlocfilehash: 3319d65f7260a50cdcd38a36b6135a3cc42fb874
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 13e7bcec4d6ce7a04b069552b599e742c8777e8a
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686560"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634013"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -175,30 +175,56 @@ Per ulteriori informazioni sulle etichette di conservazione, vedere [Overview of
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Gestione delle cassette postali in attesa del ritardo
 
-Dopo la rimozione di qualsiasi tipo di blocco da una cassetta postale, il valore della proprietà della cassetta postale *DelayHoldApplied* è impostato su **true**. Questo problema si verifica quando l'Assistente cartelle gestite elabora la cassetta postale e rileva che è stata rimossa un'esenzione. Si tratta di un *blocco di ritardo* che indica che la rimozione effettiva del blocco viene posticipata di 30 giorni per evitare che i dati vengano eliminati definitivamente (eliminati) dalla cassetta postale. In questo modo gli amministratori avranno la possibilità di cercare o recuperare gli elementi della cassetta postale che verranno eliminati dopo la rimozione del blocco. Quando viene immessa una conservazione per la cassetta postale, la cassetta postale è ancora considerata attiva per una durata illimitata, come se la cassetta postale fosse in conservazione per controversia legale. Dopo 30 giorni, scade il ritardo e Office 365 tenterà automaticamente di rimuovere il blocco di ritardo (impostando la proprietà *DelayHoldApplied* su **false**) in modo che il blocco venga rimosso. Dopo che la proprietà *DelayHoldApplied* è stata impostata su **false**, gli elementi contrassegnati per la rimozione vengono eliminati alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite.
+Dopo la rimozione di qualsiasi tipo di blocco da una cassetta postale, viene applicato un *blocco di ritardo* . Questo significa che la rimozione effettiva del blocco viene posticipata di 30 giorni per impedire che i dati vengano eliminati definitivamente (eliminati) dalla cassetta postale. In questo modo gli amministratori avranno la possibilità di cercare o recuperare gli elementi della cassetta postale che verranno eliminati dopo la rimozione di un'esenzione. Un blocco di ritardo viene inserito in una cassetta postale alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite e viene rilevato che è stata rimossa un'esenzione. In particolare, un blocco di ritardo viene applicato a una cassetta postale quando l'Assistente cartelle gestite imposta una delle seguenti proprietà della cassetta postale su **true**:
 
-Per visualizzare il valore della proprietà *DelayHoldApplied* per una cassetta postale, eseguire il comando seguente in PowerShell di Exchange Online.
+- **DelayHoldApplied:** Questa proprietà si applica al contenuto relativo alla posta elettronica (generato da utenti che utilizzano Outlook e Outlook sul Web) archiviato nella cassetta postale di un utente.
+
+- **DelayReleaseHoldApplied:** Questa proprietà si applica ai contenuti basati sul cloud (generati da app non Outlook, ad esempio Microsoft teams, Microsoft Forms e Microsoft Yammer) archiviati nella cassetta postale di un utente. I dati del cloud generati da un'app Microsoft vengono in genere archiviati in una cartella nascosta della cassetta postale di un utente.
+ 
+ Quando una conservazione di ritardo viene posizionata sulla cassetta postale (quando una delle proprietà precedenti è impostata su **true**), la cassetta postale è ancora considerata in attesa per una durata di conservazione illimitata, come se la cassetta postale fosse in conservazione per controversia legale. Dopo 30 giorni, la sospensione del ritardo scade e Office 365 tenterà automaticamente di rimuovere il blocco di ritardo (impostando la proprietà DelayHoldApplied o DelayReleaseHoldApplied su **false**) in modo che il blocco venga rimosso. Dopo che entrambe le proprietà sono state impostate su **false**, gli elementi corrispondenti contrassegnati per la rimozione vengono eliminati alla successiva elaborazione della cassetta postale da parte dell'Assistente cartelle gestite.
+
+Per visualizzare i valori per le proprietà DelayHoldApplied e DelayReleaseHoldApplied di una cassetta postale, eseguire il comando seguente in PowerShell di Exchange Online.
 
 ```powershell
-Get-Mailbox <username> | FL DelayHoldApplied
+Get-Mailbox <username> | FL *HoldApplied*
 ```
 
-Per rimuovere il ritardo di attesa prima della scadenza, è possibile eseguire il comando seguente in PowerShell di Exchange Online: 
+Per rimuovere il ritardo di attesa prima della scadenza, è possibile eseguire uno o entrambi i comandi seguenti in PowerShell di Exchange Online, a seconda della proprietà che si desidera modificare: 
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Per utilizzare il parametro *RemoveDelayHoldApplied* , è necessario che sia assegnato il ruolo di blocco legale in Exchange Online. 
+Oppure
+ 
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
+```
 
-Per rimuovere il blocco di ritardo su una cassetta postale inattiva, eseguire il comando seguente in PowerShell di Exchange Online:
+Per utilizzare i parametri *RemoveDelayHoldApplied* o *RemoveDelayReleaseHoldApplied* , è necessario essere assegnati al ruolo di blocco legale in Exchange Online. 
+
+Per rimuovere il blocco di ritardo su una cassetta postale inattiva, eseguire uno dei comandi seguenti in PowerShell di Exchange Online:
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
+Oppure
+
+```powershell
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
+```
+
 > [!TIP]
 > Il modo migliore per specificare una cassetta postale inattiva nel comando precedente consiste nell'utilizzare il nome distinto o il valore GUID di Exchange. L'utilizzo di uno di questi valori consente di non specificare accidentalmente la cassetta postale errata. 
+
+Per ulteriori informazioni sull'utilizzo di questi parametri per la gestione delle esenzioni di ritardo, vedere [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+
+Tenere presenti le considerazioni seguenti quando si gestisce una cassetta postale in attesa di ritardo:
+
+- Se la proprietà DelayHoldApplied o DelayReleaseHoldApplied è impostata su **true** e una cassetta postale (o l'account utente di Office 365 corrispondente) è stata eliminata, la cassetta postale diventa una cassetta postale inattiva. Questo perché una cassetta postale viene considerata attiva se la proprietà è impostata su **true**e l'eliminazione di una cassetta postale in attesa risulta in una cassetta postale inattiva. Per eliminare una cassetta postale e non renderla una cassetta postale inattiva, è necessario impostare entrambe le proprietà su **false**.
+
+- Come indicato in precedenza, una cassetta postale viene considerata attiva per un periodo di attesa illimitato se la proprietà DelayHoldApplied o DelayReleaseHoldApplied è impostata su **true**. Tuttavia, ciò non significa che *tutto* il contenuto della cassetta postale sia conservato. Dipende dal valore impostato su ogni proprietà. Si supponga, ad esempio, che entrambe le proprietà siano impostate su **true** perché le esenzioni vengono rimosse dalla cassetta postale. Si rimuove quindi solo il blocco di ritardo applicato ai dati del cloud non Outlook (utilizzando il parametro *RemoveDelayReleaseHoldApplied* ). La volta successiva che l'Assistente cartelle gestite elabora la cassetta postale, gli elementi non di Outlook contrassegnati per la rimozione vengono eliminati. Tutti gli elementi di Outlook contrassegnati per la rimozione non verranno eliminati perché la proprietà DelayHoldApplied è ancora impostata su **true**. L'opposto sarebbe anche vero: se DelayHoldApplied è impostato su **false** e DelayReleaseHoldApplied è impostato su **true**, verranno eliminati solo gli elementi di Outlook contrassegnati per la rimozione.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

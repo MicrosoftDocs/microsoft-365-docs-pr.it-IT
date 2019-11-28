@@ -13,24 +13,24 @@ search.appverid:
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: Utilizzare lo script di Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente nel centro conformità di Office 365 o Microsoft 365. Quando si clona una ricerca, viene creata una nuova ricerca (con un nuovo nome) che contiene le stesse proprietà della ricerca originale. È quindi possibile modificare la nuova ricerca modificando la query di parole chiave o l'intervallo di date e quindi eseguirlo.
-ms.openlocfilehash: 25aa5d6a1ba19f697a6ccf474e055faf6a19d6bd
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 87d9c75dc0a2b58b95ad6f2aaeb6c55f178e515f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686549"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633845"
 ---
 # <a name="clone-a-content-search"></a>Clonare una ricerca contenuto
 
-La creazione di una ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 che consente di eseguire ricerche in molte cassette postali o in siti di SharePoint e OneDrive for business può richiedere un po' di tempo. La specifica dei siti da cercare può anche essere soggetta a errori se si digita un URL in modo improprio. Per evitare questi problemi, è possibile utilizzare lo script di Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente. Quando si clona una ricerca, viene creata una nuova ricerca, con un nome diverso, che contiene le stesse proprietà, ad esempio i percorsi di contenuto e la query di ricerca, come la ricerca originale. È quindi possibile modificare la nuova ricerca (modificando la query di parole chiave o l'intervallo di date) ed eseguirla.
+Creazione di una ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 che consente di eseguire ricerche in molte cassette postali o in siti di SharePoint e OneDrive for business può richiedere un po' di tempo. La specifica dei siti da cercare può anche essere soggetta a errori se si digita un URL in modo improprio. Per evitare questi problemi, è possibile utilizzare lo script di Windows PowerShell in questo articolo per clonare rapidamente una ricerca di contenuto esistente. Quando si clona una ricerca, viene creata una nuova ricerca, con un nome diverso, che contiene le stesse proprietà, ad esempio i percorsi di contenuto e la query di ricerca, come ricerca originale. È quindi possibile modificare la nuova ricerca modificando la query di parole chiave o l'intervallo di date ed eseguirlo.
   
 Perché clonare le ricerche di contenuto?
   
 - Per confrontare i risultati delle diverse query di ricerca con parole chiave eseguite negli stessi percorsi di contenuto.
     
-- Per evitare di dover immettere nuovamente un numero elevato di posizioni di contenuto quando si crea una nuova ricerca.
+- Per evitare di dover immettere di nuovo un numero elevato di posizioni di contenuto quando si crea una nuova ricerca.
     
-- Per ridurre le dimensioni dei risultati della ricerca; Se ad esempio si dispone di una ricerca che restituisce troppi risultati da esportare, è possibile clonare la ricerca e quindi aggiungere una condizione di ricerca in base a un intervallo di date per ridurre il numero di risultati della ricerca.
+- Per ridurre le dimensioni dei risultati della ricerca. Se ad esempio si dispone di una ricerca che restituisce troppi risultati da esportare, è possibile clonare la ricerca e quindi aggiungere una condizione di ricerca in base a un intervallo di date per ridurre il numero di risultati della ricerca.
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -132,7 +132,7 @@ Per clonare una ricerca:
     
     - Nome della nuova ricerca.
     
-    Lo script crea la nuova ricerca del contenuto, ma non la avvia. In questo modo è possibile modificare ed eseguire la ricerca nel passaggio successivo. Per visualizzare le proprietà della nuova ricerca, è possibile eseguire il cmdlet **Get-ComplianceSearch** o andare alla pagina **Ricerca contenuto** o **eDiscovery** nel centro conformità, a seconda che la nuova ricerca sia o meno associata a un caso. 
+    Lo script crea la nuova ricerca del contenuto, ma non la avvia. In questo modo è possibile modificare ed eseguire la ricerca nel passaggio successivo. Per visualizzare le proprietà della nuova ricerca, è possibile eseguire il cmdlet **Get-ComplianceSearch** o andare alla pagina **Ricerca contenuto** o **eDiscovery** nel centro conformità, a seconda che la nuova ricerca sia associata a un caso. 
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Passaggio 2: modificare ed eseguire la ricerca clonata nel centro conformità
 

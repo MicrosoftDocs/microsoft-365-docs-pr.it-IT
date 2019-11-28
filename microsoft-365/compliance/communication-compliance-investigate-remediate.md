@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Esaminare e correggere gli avvisi di conformità della comunicazione in Microsoft 365.
-ms.openlocfilehash: 8aaf74ceafc737487bd97bb7c71b26fc139aacf0
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 336ce22813b60a4543941b18e11acf525570bb26
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686358"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39633685"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Esaminare e correggere gli avvisi di conformità delle comunicazioni (anteprima)
 
@@ -31,7 +31,7 @@ Dopo aver configurato i criteri di conformità della comunicazione, si inizierà
 
 Il primo passaggio per esaminare i problemi rilevati dai criteri consiste nell'esaminare gli avvisi generati nel centro conformità di Microsoft 365. Nel centro conformità sono presenti diverse aree che consentono di esaminare rapidamente gli avvisi, a seconda di come si preferisce visualizzare il raggruppamento degli avvisi:
 
-- **Home page Compliance Communication**: quando si esegue [https://compliance.microsoft.com](https://compliance.microsoft.com) l'accesso utilizzando le credenziali per un account di amministratore nell'organizzazione Microsoft 365, selezionare > **Overview** **Compliance Communication**per visualizzare la Home page conformità comunicazione. Di seguito vengono visualizzate le informazioni seguenti:
+- **Home page Compliance Communication**: quando si accede all' [https://compliance.microsoft.com](https://compliance.microsoft.com) utilizzo delle credenziali per un account di amministratore nell'organizzazione Microsoft 365, selezionare > **Overview** **Compliance Communication**per visualizzare la Home page conformità comunicazione. Di seguito vengono visualizzate le informazioni seguenti:
     - Avvisi che richiedono la revisione elencata dalla gravità elevata a quella bassa. Selezionare un avviso per avviare la pagina dei dettagli dell'avviso e avviare le azioni di correzione.
     - Corrispondenze di criteri recenti elencate in base al nome del criterio.
     - Elementi risolti elencati in base al nome del criterio.
@@ -112,7 +112,7 @@ Indipendentemente dal punto in cui si inizia a esaminare gli avvisi o il filtro 
     - **Risoluzione**: se si seleziona il controllo **Risolvi** , il messaggio viene rimosso immediatamente dalla coda degli **avvisi in sospeso** e non è possibile eseguire altre operazioni sul messaggio. Selezionando **Risolvi**, l'avviso è stato sostanzialmente chiuso senza ulteriore classificazione e non può essere riaperto per ulteriori azioni. Tutti i messaggi risolti vengono visualizzati nella scheda **risolti** .
     - **False positive**: è sempre possibile risolvere un messaggio come falso positivo in qualsiasi momento durante il flusso di lavoro per la revisione dei messaggi. Il messaggio non può essere riaperto e tutti i messaggi falsi positivi sono visualizzati nella scheda **risolti** .
     - **Tag As**: contrassegnare il messaggio come *conforme*, *non conforme*o come *discutibile* in relazione ai criteri e agli standard per l'organizzazione. L'aggiunta di tag e commenti di tagging può aiutare a filtrare gli avvisi per i criteri per le escalation o come parte di altri processi di revisione interni. Dopo aver completato il tagging, è anche possibile scegliere di risolvere il messaggio per spostarlo fuori dalla coda di revisione in sospeso.
-    - **Notify**: è possibile utilizzare il controllo **Notify** per assegnare un modello di avviso personalizzato all'avviso e per inviare un avviso all'utente. Scegliere il modello di avviso appropriato e selezionare **Invia** a posta elettronica un promemoria per il dipendente che ha inviato il messaggio e per risolvere il problema.
+    - **Notify**: è possibile utilizzare il controllo **Notify** per assegnare un modello di avviso personalizzato all'avviso e per inviare un avviso all'utente. Scegliere il modello di avviso appropriato e quindi fare clic su **Invia** alla posta elettronica un promemoria per il dipendente che ha inviato il messaggio e per risolvere il problema.
     - **Escalation**: se si utilizza il controllo **escalation** , è possibile scegliere chi altro nell'organizzazione deve esaminare il messaggio. Scegliere da un elenco di revisori configurati per inviare una notifica tramite posta elettronica che richiede ulteriori riesami dell'avviso del messaggio. Il revisore selezionato può utilizzare un collegamento nella notifica di posta elettronica per passare direttamente agli elementi che sono stati escalati per la revisione.
 
 4. **Determinare se i dettagli dei messaggi devono essere archiviati all'esterno della conformità di comunicazione**: i dettagli del messaggio possono essere esportati o scaricati se è necessario archiviarli in una soluzione di archiviazione separata. Se si seleziona il controllo **download** , vengono aggiunti automaticamente i messaggi selezionati a un. File ZIP che può essere salvato nello spazio di archiviazione all'esterno di Microsoft 365.

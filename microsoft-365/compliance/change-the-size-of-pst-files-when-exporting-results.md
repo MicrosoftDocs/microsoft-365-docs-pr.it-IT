@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: È possibile modificare le dimensioni predefinite dei file PST scaricati nel computer quando si esportano i risultati della ricerca di eDiscovery.
-ms.openlocfilehash: b3bba45ce336b143ed948db384673f0a1a5a456f
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 3a302164a1de6d383e2e120dd7a849e692e622eb
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686535"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634003"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modificare le dimensioni dei file PST quando si esportano i risultati della ricerca di eDiscovery
 
 Quando si utilizza lo strumento di esportazione di eDiscovery di Office 365 per esportare i risultati di una ricerca di eDiscovery dai diversi strumenti di eDiscovery di Microsoft, le dimensioni predefinite di un file PST che può essere esportato sono 10 GB. Se si desidera modificare queste dimensioni predefinite, è possibile modificare il registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Un motivo per farlo è un file PST che può essere adattato ai supporti rimovibili, ad esempio un DVD, un disco compatto o un'unità USB. 
   
 > [!NOTE]
->  Lo strumento di esportazione di Office 365 eDiscovery viene utilizzato per esportare i risultati della ricerca quando si utilizza lo strumento di ricerca contenuto nel centro sicurezza e conformità, eDiscovery in locale in Exchange Online e il centro eDiscovery in SharePoint Online.
+> Lo strumento di esportazione di Office 365 eDiscovery viene utilizzato per esportare i risultati della ricerca quando si utilizza lo strumento di ricerca contenuto nel centro sicurezza e conformità, eDiscovery in locale in Exchange Online e il centro eDiscovery in SharePoint Online.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Creare un'impostazione del registro di sistema per modificare le dimensioni dei file PST quando si esportano i risultati della ricerca di eDiscovery
 
@@ -43,7 +43,7 @@ Eseguire la procedura seguente nel computer che verrà utilizzato per esportare 
     
     |**Dimensioni in GB (circa)**|**Dimensioni in byte**|
     |:-----|:-----|
-    |.7 GB (700 MB)  <br/> |751619277  <br/> |
+    |0,7 GB (700 MB)  <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
     |8 GB  <br/> |8589934592  <br/> |
@@ -68,7 +68,7 @@ Le dimensioni predefinite di 10 GB si basano sul feedback dei clienti; 10 GB è 
   
  **È consigliabile aumentare o diminuire la dimensione predefinita dei file PST?**
   
-I clienti tendono a ridurre il limite di dimensione, in modo che i risultati della ricerca possano adattarsi ai supporti rimovibili che possono inviare fisicamente altre posizioni all'interno della propria organizzazione. Non è consigliabile aumentare le dimensioni predefinite perché i file PST di dimensioni superiori a 10 GB potrebbero avere problemi di danneggiamento.
+I clienti tendono a ridurre il limite di dimensione, in modo che i risultati della ricerca possano adattarsi a un supporto rimovibile che può essere importato fisicamente in altre posizioni all'interno della propria organizzazione. Non è consigliabile aumentare le dimensioni predefinite perché i file PST di dimensioni superiori a 10 GB potrebbero avere problemi di danneggiamento.
   
  **Per quale computer è necessario eseguire questa operazione?**
   
@@ -80,4 +80,4 @@ No, non è necessario riavviare il computer. Tuttavia, se lo strumento di esport
   
  **Una chiave del registro di sistema esistente viene modificata o viene creata una nuova chiave?**
   
-La prima volta che si esegue il file con estensione reg creato in questa procedura viene creata una nuova chiave del registro di sistema. L'impostazione viene quindi modificata ogni volta che viene modificato e rieseguito il file. reg Edit.
+La prima volta che si esegue il file con estensione reg creato in questa procedura viene creata una nuova chiave del registro di sistema. L'impostazione viene quindi modificata ogni volta che viene modificato ed eseguito il file. reg Edit.
