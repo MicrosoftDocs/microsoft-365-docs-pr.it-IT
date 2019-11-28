@@ -1,20 +1,20 @@
 ---
-title: Informazioni di utilizzo
+title: Dati analitici sull'utilizzo
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f1d1deb031d26f9dec687b73be86ec8a2491a50
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: a3367785d858c1d2546571fa1ad8a8c1b96cf59f
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256863"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634023"
 ---
-# <a name="usage-insights"></a>Informazioni di utilizzo
-Questa visualizzazione fornisce le metriche di utilizzo per i dispositivi Microsoft Managed Desktop. 
+# <a name="usage-insights"></a>Dati analitici sull'utilizzo
+Questa visualizzazione fornisce le metriche di utilizzo per i dispositivi Microsoft Managed Desktop. A tal fine, un'app viene considerata "in uso" se è in esecuzione e in stato di inattività.
 
 Per visualizzare i dati di utilizzo, selezionare la scheda **utilizzo** .
 

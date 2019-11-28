@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-hour auto Purge (ZAP) è una funzionalità di protezione della posta elettronica che consente di rilevare i messaggi con posta indesiderata o malware che sono già stati recapitati alle cassette postali degli utenti e quindi di eseguire il rendering del contenuto dannoso innocuo. La modalità di utilizzo di ZAP dipende dal tipo di contenuto dannoso rilevato.
-ms.openlocfilehash: dd702e88dc2400367330d9cb1b54b5b0017334e4
-ms.sourcegitcommit: caa3f681a68daf5e463093a922c3d6f378143d91
+ms.openlocfilehash: 8496887f135e5a2c6496f969d420ae6eaa8f4908
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191231"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631586"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware
 
@@ -42,7 +42,7 @@ Gli elenchi consentiti, [le regole del flusso di posta](https://go.microsoft.com
 
 ### <a name="malware-zap"></a>Malware ZAP
 
-Per il malware appena rilevato, ZAP rimuove gli allegati dai messaggi di posta elettronica, lasciando il corpo del messaggio nella cassetta postale dell'utente. Gli allegati vengono rimossi indipendentemente dallo stato di lettura della posta.
+Per il malware appena rilevato, ZAP sposta l'intero messaggio, incluso il relativo allegato, per la quarantena di malware. I messaggi vengono spostati indipendentemente dallo stato di lettura della posta. Se si riceve un segnale di malware per un messaggio nel processo di analisi del recapito dinamico, ZAP prenderà una mossa per azione indesiderata sul messaggio. Successivamente, il recapito dinamico consente di terminare il periodo di analisi del recapito e di eseguire l'azione appropriata.
 
 Il malware ZAP è abilitato per impostazione predefinita nel criterio di malware. È possibile disabilitare lo ZAP antimalware utilizzando il parametro *ZapEnabled* nel cmdlet [set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy) in PowerShell di Exchange Online o Exchange Online Protection PowerShell. Malware ZAP può anche essere abilitato o disabilitato modificando il criterio di malware nel centro sicurezza e conformità.
 
@@ -58,7 +58,7 @@ Per la posta elettronica identificata come posta indesiderata dopo il recapito, 
 
 Spam ZAP è abilitato per impostazione predefinita nei criteri di posta indesiderata. È possibile disabilitare la posta indesiderata utilizzando il parametro *SpamZapEnabled* del cmdlet [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758) in PowerShell di Exchange Online o Exchange Online Protection PowerShell.
 
-###<a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>Requisiti, esclusioni e notifiche di phishing e spam ZAP
+### <a name="phish-and-spam-zap-requirements-exclusions-and-notices"></a>Requisiti, esclusioni e notifiche di phishing e spam ZAP
 
 > [!IMPORTANT]
 > il parametro precedente del cmdlet *ZapEnabled* che ha controllato sia phishing che spam ZAP sarà **deprecato il 1 ° febbraio 2020**. Se sono stati scritti script che utilizzano il parametro ZapEnabled, è consigliabile aggiornarli per l'utilizzo di SpamZapEnabled e PhishZapEnabled. Nel periodo di transizione tutti e tre i parametri (ZapEnabled, PhishZapEnabled e SpamZapEnabled) saranno disponibili tramite il cmdlet. Fino a quando non viene impostato in modo esplicito tramite l'interfaccia utente o PowerShell, PhishZapEnabled e SpamZapEnabled visualizzeranno un valore ereditato dal parametro ZapEnabled. Dopo aver impostato i nuovi parametri, non erediterà più dal parametro ZapEnabled. Dopo che è stata deprecata l'impostazione ZapEnabled non avrà alcun effetto sulle proprietà PhishZapEnabled o SpamZapEnabled e ZapEnabled verrà rimosso dall'elenco dei parametri nei cmdlet.

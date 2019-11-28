@@ -1,5 +1,5 @@
 ---
-title: Cronologia delle modifiche per la documentazione di Microsoft Managed Desktop
+title: Cronologia modifiche per la documentazione di Microsoft Managed Desktop
 description: In questo argomento vengono elencati gli argomenti nuovi e aggiornati per Microsoft Managed Desktop.
 keywords: cronologia modifiche
 ms.prod: m365-md
@@ -8,16 +8,43 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a982b493027775add547a87700906a6cbbdaef60
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+ms.openlocfilehash: b66fb73b635eb102bcd474cc884db6d0fa4cdfb6
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369627"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634063"
 ---
-# <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia delle modifiche per la documentazione di Microsoft Managed Desktop
+# <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia modifiche per la documentazione di Microsoft Managed Desktop
 
 In questo argomento vengono elencati gli argomenti nuovi e aggiornati nella [documentazione relativa a Microsoft Managed Desktop](index.yml). Gli argomenti "aggiornati" sono quelli che hanno avuto aggiunte o correzioni materiali: correzioni secondarie come la correzione di errori di battitura, stile o formattazione non sono presenti nell'elenco. È sempre possibile visualizzare la cronologia dei commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repo su GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="november-2019"></a>Novembre 2019
+Argomento nuovo o modificato | Descrizione
+--- | ---
+[Usare i dati analitici](working-with-managed-desktop/insights.md) | Nuovo argomento
+[Dati analitici sull'utilizzo](working-with-managed-desktop/usage-insights.md) | Nuovo argomento
+[Dati analitici sull'affidabilità](working-with-managed-desktop/reliability-insights.md) | Nuovo argomento
+[Dispositivi Microsoft Managed Desktop](service-description/device-list.md) | Argomento aggiornato
+[Pagina principale di Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/) | Argomento aggiornato
+[Cos'è Microsoft Managed Desktop?](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | Argomento aggiornato
+[Preparare gli utenti a usare i dispositivi](get-started/get-started-devices.md) | Argomento aggiornato
+[Eccezioni al piano di servizio](service-description/customizing.md) | Argomento aggiornato
+
+
+## <a name="october-2019"></a>Ottobre 2019
+Argomento nuovo o modificato | Descrizione
+--- | ---
+[Eccezioni al piano di servizio](service-description/customizing.md) | Nuovo argomento
+[Ottenere assistenza per gli utenti finali](working-with-managed-desktop/end-user-support.md) | Argomento aggiornato
+[Supporto di amministrazione per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Argomento aggiornato
+[Modifiche al servizio e comunicazione](service-description/servicechanges.md) | Nuovo argomento
+[Registrare manualmente i nuovi dispositivi](get-started/register-devices-self.md) | Argomento aggiornato
+[Registrare manualmente i dispositivi già presenti](get-started/register-reused-devices-self.md) | Argomento aggiornato
+[Aree geografiche e lingue supportate da Microsoft Managed Desktop](service-description/regions-languages.md) | Argomento aggiornato
+
+
+
 
 ## <a name="september-2019"></a>Settembre 2019
 Argomento nuovo o modificato | Descrizione
@@ -29,14 +56,14 @@ Argomento nuovo o modificato | Descrizione
 [Supporto di amministrazione per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Argomento aggiornato
 [Prerequisiti per Microsoft Managed Desktop](get-ready/prerequisites.md) | Argomento aggiornato
 [Configurare i dispositivi Microsoft Managed Desktop](get-started/set-up-devices.md) | Nuovo argomento
-[Registrare i nuovi dispositivi manualmente](get-started/register-devices-self.md) | Argomento aggiornato
-[Registrare manualmente i dispositivi esistenti](get-started/register-reused-devices-self.md) | Nuovo argomento
+[Registrare manualmente i nuovi dispositivi](get-started/register-devices-self.md) | Argomento aggiornato
+[Registrare manualmente i dispositivi già presenti](get-started/register-reused-devices-self.md) | Nuovo argomento
 [Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop](service-description/updates.md) | Argomento aggiornato
 
-## <a name="august-2019"></a>2019 agosto
+## <a name="august-2019"></a>Agosto 2019
 Argomento nuovo o modificato | Descrizione
 --- | ---
-[Utilizzo di Microsoft Consulting Services](get-ready/apps-mcs.md) | Argomento aggiornato
+[Lavorare con Microsoft Consulting Services](get-ready/apps-mcs.md) | Argomento aggiornato
 [Supporto di amministrazione per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Argomento aggiornato
 [Ottenere assistenza per gli utenti finali](working-with-managed-desktop/end-user-support.md) | Argomento aggiornato
 [Prerequisiti per Microsoft Managed Desktop](get-ready/prerequisites.md) | Argomento aggiornato
@@ -44,32 +71,32 @@ Argomento nuovo o modificato | Descrizione
 
 
 
-## <a name="july-2019"></a>2019 luglio
+## <a name="july-2019"></a>Luglio 2019
 Argomento nuovo o modificato | Descrizione
 --- | ---
-[Utilizzo di Microsoft Consulting Services](get-ready/apps-mcs.md) | Argomento aggiornato
-[Microsoft Managed Desktop and ITIL](MMD-and-ITSM.md) | Nuovo argomento
-[Configurazione dispositivo](service-description/device-policies.md) | Argomento aggiornato
+[Lavorare con Microsoft Consulting Services](get-ready/apps-mcs.md) | Argomento aggiornato
+[Microsoft Managed Desktop e ITIL](MMD-and-ITSM.md) | Nuovo argomento
+[Configurazione del dispositivo](service-description/device-policies.md) | Argomento aggiornato
 
 
-## <a name="june-2019"></a>2019 giugno
+## <a name="june-2019"></a>Giugno 2019
 Argomento nuovo o modificato | Descrizione
 --- | ---
 [App in Microsoft Managed Desktop](get-ready/apps.md) | Argomento aggiornato
-[Utilizzo di Microsoft Consulting Services](get-ready/apps-mcs.md) | Nuovo argomento
+[Lavorare con Microsoft Consulting Services](get-ready/apps-mcs.md) | Nuovo argomento
 [Ruoli e responsabilità di Microsoft Managed Desktop](intro/roles-and-responsibilities.md) | Argomento aggiornato
 [Ciclo di vita del prodotto Microsoft Managed Desktop](service-description/device-lifecycle.md) | Nuovo argomento
 
 
 
-## <a name="may-2019"></a>2019 maggio
+## <a name="may-2019"></a>Maggio 2019
 Argomento nuovo o modificato | Descrizione
 --- | ---
 [Aree geografiche e lingue supportate da Microsoft Managed Desktop](service-description/regions-languages.md) | Argomento aggiornato
 [Dispositivi Microsoft Managed Desktop](service-description/device-list.md) | Argomento aggiornato
 [Dispositivi archiviati da Microsoft Managed Desktop](service-description/archived-device-list.md) | Nuovo argomento
 [Preparare unità mappate per Microsoft Managed Desktop](get-ready/mapped-drives.md) | Nuovo argomento
-[Preparare i certificati e i profili di rete per Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | Nuovo argomento
+[Preparare certificati e profili di rete per Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | Nuovo argomento
 [Ordinare i dispositivi Microsoft Managed Desktop](get-started/devices.md) | Argomento aggiornato
 [Ottenere assistenza per gli utenti finali](working-with-managed-desktop/end-user-support.md)
 
@@ -92,9 +119,9 @@ Argomento nuovo o modificato | Descrizione
 ## <a name="february-2019"></a>Febbraio 2019
 Argomento nuovo o modificato | Descrizione
 --- | ---
-[Dispositivi di programma](service-description/device-list.md) | È stato aggiornato con supporto per determinati dispositivi Dell e HP.
+[Dispositivi del programma](service-description/device-list.md) | È stato aggiornato con supporto per determinati dispositivi Dell e HP.
 [Panoramica delle impostazioni configurabili](working-with-managed-desktop/config-setting-overview.md) | Nuovo argomento
-[Informazioni di riferimento sulle impostazioni configurabili](working-with-managed-desktop/config-setting-ref.md) | Nuovo argomento
+[Riferimento alle impostazioni configurabili](working-with-managed-desktop/config-setting-ref.md) | Nuovo argomento
 [Monitorare e distribuire le impostazioni configurabili](working-with-managed-desktop/config-setting-deploy.md) | Nuovo argomento
 [Introduzione ai dispositivi](get-started/get-started-devices.md) | Nuovo argomento
 

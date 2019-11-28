@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 70be19947e31d8c2b918d12887d63b1b360cf37b
-ms.sourcegitcommit: 3df6b6092542d466661c0fa08b7bfe7cec441b55
+ms.openlocfilehash: f46f5164340ec257a056a2f31bec8f846bb4a54a
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254375"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634053"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop 
 
@@ -25,7 +25,7 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si desidera ordinare i dispositivi, utilizzare i contatti del canale commerciale per assicurarsi di scegliere le configurazioni corrette. In questa tabella la *Data di archiviazione* è la data in cui questi modelli saranno soggetti a una più breve durata del servizio Microsoft Managed Desktop; Tutti questi dispositivi onboarded dopo questa data non riceveranno un termine completo di tre anni di supporto da Microsoft Managed Desktop. I dispositivi archiviati sono elencati anche nei [dispositivi archiviati di Microsoft Managed Desktop](archived-device-list.md). *Data di pensionamento* è la data in cui questo modello non sarà più supportato da Microsoft Managed Desktop. A tale data, tutti i dispositivi registrati di questo modello verranno rimossi da Microsoft Managed Desktop, indipendentemente dal momento in cui sono stati registrati.
 
 >[!NOTE]
->I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma verranno forniti 90 giorni di preavviso per eventuali modifiche che interessano l'archiviazione o la data di pensionamento.
+>I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma verranno forniti 90 giorni di preavviso per eventuali modifiche che interessano l'archiviazione o la data di pensionamento. I dispositivi aggiunti più di recente sono contrassegnati **\*** con.
 
 
 **Dispositivi Microsoft Managed Desktop**
@@ -38,8 +38,8 @@ I collegamenti ai dispositivi sono disponibili solo per il riferimento. Se si de
 | [Dell Latitude 5490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-14-5490-laptop?cid=265768&st=dell%2Blatitude%2B5490&VEN1=yKFOheND,73873544881479,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B5490&lid=5980636&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | Gen 9, 2020  | Gen 9, 2023  |
 | [Dell Latitude 7200 2-in-1/7300/7400](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-7200-2-in-1-business-laptop/spd/latitude-12-7200-2-in-1-laptop) | 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | 1 maggio 2021  | 1 maggio 2024  |
 | [Dell Latitude 7390 7390 2-in-1/7490](https://www.dell.com/en-us/work/shop/cty/pdp/spd/latitude-13-7390-2-in-1-laptop?cid=265768&st=dell%2Blatitude%2B7390%2B2-in-1&VEN1=bRXisqe7,73255069985268,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Blatitude%2B7390%2B2-in-1&lid=5981275&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB di RAM   | Telecamera IR obbligatoria | Gen 9, 2020 | Gen 9, 2023 |
-| [PC notebook HP EliteBook 830/840/850 G6](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario | Nov 30, 2020 | Nov 30, 2023 |
-| [PC notebook HP EliteBook X360 830 G6](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario | Nov 30, 2020 | Nov 30, 2023 |
+| **\*[PC notebook HP EliteBook 830/840/850 G6](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features)** | 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario | Nov 30, 2020 | Nov 30, 2023 |
+| **\*[PC notebook HP EliteBook X360 830 G6](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc)** | 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario | Nov 30, 2020 | Nov 30, 2023 |
 | [HP Elite X2 1013 G3](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-1013-3074457345617296670--1#!&tab=features) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS03AV, videocamera IR necessaria | 14 maggio 2020 | 14 maggio 2023 |
 | [HP EliteBook X360 1030 G3](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1030-g2--1#tab=features) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria | 14 maggio 2020 | 14 maggio 2023 |
 | [HP EliteBook X360 1040 G5](https://store.hp.com/us/en/mdp/laptops/hp-elitebook-x360-1040-3074457345617328670--1#!&tab=features) | 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria | 23 ottobre 2020 | 23 ottobre 2023 |
