@@ -1,6 +1,6 @@
 ---
-title: Richieste del soggetto dei dati per il GDPR in Azure DevOps
-keywords: Visual Studio Team Services, VSTS, documentazione Azure DevOps, privacy, GDPR
+title: Richieste degli interessati per Azure DevOps nell'ambito del GDPR e del CCPA
+keywords: Visual Studio Team Services, VSTS, documentazione Azure DevOps, privacy, GDPR, CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: devops
@@ -9,19 +9,23 @@ ms.date: 06/11/2018
 author: jitojo
 ms.author: jominana
 manager: douge
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5ccb1961fe1751604b32bb5b37595b0884b395
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3af519ed13b8c647d359ea9c8d1faaff2c34209e
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071485"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39268847"
 ---
-# <a name="azure-devops-services-data-subject-requests-for-the-gdpr"></a>Richieste dell'interessato per il GDPR in Azure DevOps Services
+# <a name="azure-devops-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Azure DevOps Services nell'ambito del GDPR e del CCPA
 
-Il [Regolamento generale sulla protezione dei dati (GDPR)](http://ec.europa.eu/justice/data-protection/reform/index_en.htm) dell'Unione europea garantisce alle persone, denominate come *interessati* nel regolamento, il diritto di gestire i dati personali raccolti da un *titolare del trattamento dei dati*. Il titolare del trattamento dei dati, o semplicemente *titolare*, è il datore di lavoro o un'altra organizzazione o agenzia. I dati personali sono descritti nel GDPR come dati che si riferiscono a una persona fisica identificata o identificabile. Il GDPR garantisce agli interessati diritti specifici sui propri dati personali. Tali diritti includono la possibilità di ottenere delle copie dei dati personali, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico affinché possano essere trasferiti a un altro titolare. Una richiesta formale di un interessati rivolta a un titolare in merito a un'operazione da effettuare sui propri dati personali è denominata *Richiesta DSR* (Data Subject Rights, Diritti dell'interessato) o DSR.
+Il [Regolamento generale sulla protezione dei dati (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) dell'Unione europea garantisce alle persone, denominate come *interessati* nel regolamento, il diritto di gestire i dati personali raccolti da un *titolare del trattamento dei dati*. Il titolare del trattamento dei dati, o semplicemente *titolare*, è il datore di lavoro o un'altra organizzazione o agenzia. I dati personali sono descritti nel GDPR come dati che si riferiscono a una persona fisica identificata o identificabile. Il GDPR garantisce agli interessati diritti specifici sui propri dati personali. Tali diritti includono la possibilità di ottenere delle copie dei dati personali, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico affinché possano essere trasferiti a un altro titolare. Una richiesta formale di un interessati rivolta a un titolare in merito a un'operazione da effettuare sui propri dati personali è denominata *Richiesta DSR* (Data Subject Rights, Diritti dell'interessato) o DSR.
+
+Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo per determinate divulgazioni, di protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". In generale, le vendite sono definite per includere la condivisione dei dati per un motivo importante. Per altre informazioni sul CCPA, vedere il [California Consumer Privacy Act](offering-ccpa.md) e le [Domande frequenti sul California Consumer Privacy Act](ccpa-faq.md).
 
 Per informazioni generali sul GDPR, consultare la [sezione riguardante il GDPR del Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
@@ -33,11 +37,11 @@ Gli articoli riguardanti l'[informativa sulla privacy di Microsoft](https://priv
 
 ## <a name="personal-data-we-collect"></a>Dati personali raccolti da Microsoft
 
-Microsoft raccoglie i dati dagli utenti per eseguire e migliorare Azure DevOps Services. Azure DevOps Services raccoglie due categorie di dati: i dati dei clienti e i log generati dal sistema. I dati dei clienti includono dati transazionali e interazionali identificabili dall'utente di cui Azure DevOps Services necessita per eseguire il servizio. I log generati dal sistema includono i dati sull'utilizzo del servizio che vengono aggregati per ogni area e funzionalità del prodotto.
+Microsoft raccoglie i dati dagli utenti per eseguire e migliorare Azure DevOps Services. Azure DevOps Services raccoglie due categorie di dati, i dati dei clienti e i log generati dal sistema. I dati dei clienti includono dati transazionali e interazionali identificabili dell'utente necessari ad Azure DevOps Services necessita per fornire il servizio. I log generati dal sistema includono i dati sull'utilizzo del servizio che vengono aggregati per ogni area e funzionalità del prodotto.
 
 ## <a name="delete-azure-devops-data"></a>Eliminare i dati di Azure DevOps
 
-Il primo passaggio per eliminare i dati dei clienti Azure DevOps Services associati e per rendere anonimi i dati personali identificabili trovati nei log generati dal sistema è quello di chiudere l'account identificativo di Azure Active Directory (AAD) o l'account Microsoft (MSA). Azure DevOps Services è considerato un sistema di record con rigide regole di integrità, tracciabilità e controllo. Questi obblighi esistenti riguardano gli obblighi di cancellazione e conservazione per il GDPR. La chiusura dell'account identificativo non altera, rimuove o modifica elementi e record associati all'identità individuale nell'organizzazione di Azure DevOps Services. Microsoft assicura che, nel momento in cui viene eliminato un'intera organizzazione di Azure DevOps Services, tutti i dati personali identificabili e i log generati dal sistema rilevati in tale organizzazione vengono rimossi dal sistema (dopo il periodo di eliminazione temporanea di 30 giorni dell'organizzazione di Azure DevOps Services richiesto).
+Il primo passaggio per eliminare i dati dei clienti Azure DevOps Services associati e per rendere anonimi i dati personali identificabili trovati nei log generati dal sistema è quello di chiudere l'account identificativo di Azure Active Directory (AAD) o l'account Microsoft (MSA). Azure DevOps Services è considerato un sistema di record con rigide regole di integrità, tracciabilità e controllo. Questi obblighi esistenti riguardano gli obblighi di cancellazione e conservazione per il GDPR. La chiusura dell'account identificativo non altera, rimuove o modifica elementi e record associati all'identità individuale nell'organizzazione di Azure DevOps Services. Microsoft assicura che, nel momento in cui viene eliminata un'intera organizzazione Azure DevOps Services, tutti i dati personali identificabili e i log generati dal sistema rilevati in tale organizzazione vengono rimossi dal sistema (dopo il periodo di eliminazione temporanea di 30 giorni dell'organizzazione Azure DevOps Services richiesto).
 
 ## <a name="export-azure-devops-data"></a>Esportare i dati di Azure DevOps
 

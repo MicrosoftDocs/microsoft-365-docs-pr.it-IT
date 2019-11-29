@@ -15,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Determinare se l'organizzazione implementerà etichette nell'ambito del piano RGPD.
-ms.openlocfilehash: c0886ac68cd2d7a6ca7514f39636e74c5b2043ad
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4470f766ad2f8fd2d914e0e45deac8604028ddb5
+ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083318"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615646"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Progettare uno schema di classificazione per i dati personali
 
@@ -28,7 +28,7 @@ I precedenti articoli di questa serie si focalizzano sull'uso dei tipi di inform
 
 Nota: definire uno schema di classificazione per un'organizzazione e configurare criteri, etichette e condizioni richiede una pianificazione attenta. È importante comprendere che non si tratta di una procedura IT. Accertarsi di collaborare con il proprio team legale e della conformità per sviluppare una classificazione e uno schema di etichette appropriati per i dati della propria organizzazione.
 
-## <a name="decide-if-you-are-using-labels-in-addition-to-sensitive-data-types"></a>Decidere se utilizzare le etichette oltre ai tipi di dati riservati
+## <a name="decide-if-youre-using-labels-in-addition-to-sensitive-data-types"></a>Decidere se utilizzare le etichette oltre ai tipi di dati riservati
 
 È possibile adottare uno dei due approcci di classificazione in Office 365 per le informazioni personali. Ciascuno di essi può essere utilizzato per la protezione RGPD. Se si decide di usare solo i tipi di informazioni riservate per la classificazione, è possibile ignorare il resto di questo argomento.
 
@@ -36,25 +36,23 @@ Scegliere una delle seguenti opzioni:
 
 ### <a name="option-1-use-only-office-365-sensitive-information-types"></a>Opzione 1: usare solo tipi di informazioni riservate di Office 365
 
--   I tipi di informazioni riservate sono utili per identificare e proteggere i dati personali soggetti a RGPD e altri tipi di normative.
+- I tipi di informazioni riservate sono utili per identificare e proteggere i dati personali soggetti a RGPD e altri tipi di normative.
 
--   Sono più facili da usare se l'organizzazione non dispone o non intende implementare un piano di governance dei dati più ampio con le etichette.
+- Sono più facili da usare se l'organizzazione non dispone o non intende implementare un piano di governance dei dati più ampio con le etichette.
 
--   Funzionano con le regole DLP (come le etichette di conservazione).
+- Funzionano con le regole DLP (come le etichette di conservazione).
 
--   I tipi di informazioni sensibili sono compatibili con Cloud App Security per consentire agli utenti di rilevare le informazioni riservate in altre app SaaS.
+- I tipi di informazioni sensibili sono compatibili con Cloud App Security per consentire agli utenti di rilevare le informazioni riservate in altre app SaaS.
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Opzione 2: usare tipi di informazioni sensibili + etichette di conservazione
 
--   I tipi di informazioni sensibili devono applicare automaticamente le etichette ai dati personali soggetti a GDPR, quindi rappresentano un prerequisito.
+- I tipi di informazioni sensibili devono applicare automaticamente le etichette ai dati personali soggetti a GDPR, quindi rappresentano un prerequisito.
 
--   L'uso delle etichette di conservazione consente di includere dati personali soggetti a GDPR in un piano di governance dei dati più ampio per l'organizzazione.
-
-
+- L'uso delle etichette di conservazione consente di includere dati personali soggetti a GDPR in un piano di governance dei dati più ampio per l'organizzazione.
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>Sviluppare uno schema di etichette che include dati personali
 
-Prima di utilizzare funzioni tecniche per applicare etichette e protezione, è opportuno esaminare l'organizzazione per definire uno schema di classificazione. L'organizzazione dovrebbe già avere uno schema di classificazione che semplifica l'aggiunta di dati personali. Questo argomento include uno schema di classificazione di esempio. È possibile utilizzarlo come punto di partenza, se necessario.
+Prima di utilizzare funzioni tecniche per applicare etichette e protezione, è opportuno esaminare l'organizzazione per definire uno schema di classificazione. L'organizzazione dovrebbe già avere uno schema di classificazione che semplifica l'aggiunta di dati personali. Questo argomento include uno schema di classificazione di esempio. È possibile utilizzare questo esempio come punto di partenza, se necessario.
 
 ### <a name="getting-started"></a>Introduzione
 
@@ -64,21 +62,21 @@ Iniziare decidendo la quantità e i nomi delle etichette da implementare. Esegui
 
 Durante la progettazione e l'implementazione di criteri, etichette e condizioni, seguire questi suggerimenti:
 
--   Utilizzare lo schema di classificazione esistente (se disponibile): molte organizzazioni già utilizzano la classificazione dei dati in qualche modo. Esaminare attentamente lo schema di assegnazione delle etichette esistente e, se possibile, usarlo così com'è. La scelta sarà influenzata dall'utilizzo di etichette note agli utenti finali.
+- Utilizzare lo schema di classificazione esistente (se disponibile) &ndash; molte organizzazioni già utilizzano la classificazione dei dati in qualche modo. Esaminare attentamente lo schema di assegnazione delle etichette esistente e, se possibile, usarlo così com'è. La scelta sarà influenzata dall'utilizzo di etichette note agli utenti finali.
 
--   Iniziare con criteri ed etichette predefiniti: tutte le soluzioni sono dotate di un set di criteri ed etichette predefiniti. Esaminarli attentamente nell'ambito dei requisiti aziendali e legali dell'organizzazione e scegliere di usare quelli, anziché crearne di nuovi.
+- Iniziare con criteri ed etichette predefiniti &ndash; tutte le soluzioni sono dotate di un set di criteri ed etichette predefiniti. Esaminarli attentamente nell'ambito dei requisiti aziendali e legali dell'organizzazione e scegliere di usare quelli, anziché crearne di nuovi.
 
--   Iniziare con poche etichette: potenzialmente non ci sono limiti alla quantità di etichette che è possibile creare. Tuttavia, un gran numero di etichette e etichette secondarie influirà in modo negativo sull'adozione. Un numero eccessivo di scelte spesso è sinonimo di nessuna scelta.
+- Iniziare con poche etichette &ndash; potenzialmente non ci sono limiti alla quantità di etichette che è possibile creare. Tuttavia, un gran numero di etichette e etichette secondarie influirà in modo negativo sull'adozione. Un numero eccessivo di scelte spesso è sinonimo di nessuna scelta.
 
--   Utilizzare scenari e casi d'uso: identificare casi d'uso comuni all'interno dell'organizzazione e scenari derivati da RGPD per verificare se la configurazione pianificata per la classificazione e l'assegnazione di etichette è efficace.
+- Utilizzare scenari e casi d'uso &ndash; identificare casi d'uso comuni all'interno dell'organizzazione e scenari derivati da RGPD per verificare se la configurazione pianificata per la classificazione e l'assegnazione di etichette è efficace.
 
--   Per ogni richiesta di nuova etichetta, è opportuno chiedersi: tutti gli scenari o i casi d'uso necessitano realmente di una nuova etichetta o è possibile utilizzare quelle già disponibili? Mantenere il numero di etichette al minimo migliora l'adozione.
+- Per ogni richiesta di nuova etichetta, è opportuno chiedersi &ndash; tutti gli scenari o i casi d'uso necessitano realmente di una nuova etichetta o è possibile utilizzare quelle già disponibili? Mantenere il numero di etichette al minimo migliora l'adozione.
 
--   Utilizzare etichette secondarie per i reparti chiave, alcuni reparti hanno esigenze specifiche che richiedono etichette specifiche. Definire queste etichette come secondarie rispetto a un'etichetta esistente e utilizzare criteri con ambito assegnati a gruppi di utenti, anziché a livello globale.
+- Utilizzare etichette secondarie per i reparti chiave &ndash; alcuni reparti hanno esigenze specifiche che richiedono etichette specifiche. Definire queste etichette come secondarie rispetto a un'etichetta esistente e utilizzare criteri con ambito assegnati a gruppi di utenti, anziché a livello globale.
 
--   Prendere in considerazione i criteri con ambito, criteri destinati a sottoinsiemi di utenti che impediscono un "sovraccarico di etichette". Un criterio con ambito consente di abilitare l'assegnazione di etichette (secondarie) specifiche per ruoli o reparti solo ai dipendenti che lavorano per un determinato reparto.
+- Prendere in considerazione i criteri con ambito &ndash; criteri destinati a sottoinsiemi di utenti che impediscono un "sovraccarico di etichette". Un criterio con ambito consente di abilitare l'assegnazione di etichette (secondarie) specifiche per ruoli o reparti solo ai dipendenti che lavorano per un determinato reparto.
 
--   Utilizzare nomi significativi per le etichette (si consiglia di non usare termini specifici, standard o acronimi). Provare a usare nomi familiari agli utenti finali per migliorarne l'adozione. Anziché usare etichette come PII, PCI, HIPAA, LBI, MBI e HBI, scegliere nomi quali Non aziendale, Pubblico, Generale, Riservato ed Estremamente riservato.
+- Utilizzare nomi significativi per le etichette (si consiglia di non usare termini specifici, standard o acronimi) &ndash; Provare a usare nomi familiari agli utenti finali per migliorarne l'adozione. Anziché usare etichette come PII, PCI, HIPAA, LBI, MBI e HBI, scegliere nomi quali Non aziendale, Pubblico, Generale, Riservato ed Estremamente riservato.
 
 ### <a name="example-classification-schema"></a>Schema di classificazione di esempio
 

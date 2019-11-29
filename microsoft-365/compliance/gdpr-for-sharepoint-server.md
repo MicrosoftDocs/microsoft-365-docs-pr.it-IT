@@ -8,20 +8,25 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Informazioni su come gestire i requisiti GDPR nell'ambiente SharePoint Server locale.
-ms.openlocfilehash: 6da9d635506eafc2b976cf6a87f68370f40e327a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: dba20f2f85bc9a474b39e427ed2628a2f9c9f437
+ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082890"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "39625401"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>GDPR per SharePoint Server
+
+Si applica a:
+- SharePoint Server 2013
+- SharePoint Server 2016
+- SharePoint Server 2019
 
 Nell'ambito di protezione delle informazioni personali, si consiglia quanto segue:
 
 -   Classificare i propri dati utilizzando Azure Information Protection
 
--   Eseguire SharePoint Server con una configurazione con privilegi minimi. Per ulteriori informazioni, vedere [Pianificare l'amministrazione con privilegi minimi in SharePoint Server](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration) e [Sicurezza per SharePoint Server](https://docs.microsoft.com/it-IT/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server).
+-   Eseguire SharePoint Server con una configurazione con privilegi minimi. Per ulteriori informazioni, vedere [Pianificare l'amministrazione con privilegi minimi in SharePoint Server](https://docs.microsoft.com/SharePoint/security-for-sharepoint-server/plan-for-least-privileged-administration) e [Sicurezza per SharePoint Server](https://docs.microsoft.com/sharepoint/security-for-sharepoint-server/security-for-sharepoint-server).
 
 -   [Attivare la crittografia BitLocker nei server](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server).
 
@@ -35,7 +40,7 @@ L'approccio consigliato per i contenuti generati dall'utente inclusi nei siti e 
 
 L'approccio consigliato per le condivisioni file e per i siti e le raccolte di SharePoint include i seguenti passaggi:
 
-1.  **[Installare e configurare lo scanner di Azure Information Protection.](https://docs.microsoft.com/it-IT/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[Installare e configurare lo scanner di Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   Scegliere i tipi di dati sensibili da usare.
 
@@ -65,7 +70,7 @@ L'approccio consigliato per le condivisioni file e per i siti e le raccolte di S
 
 Quando si applicano etichette a dati sensibili, assicurarsi di assegnare un'etichetta non configurata con la protezione. La protezione include la crittografia che impedisce ai servizi di rilevare i dati sensibili nei file.
 
-Per ulteriori informazioni sull'uso dello scanner di Azure Information Protection per individuare ed etichettare dati personali, vedere [Toolkit per l'individuazione di dati GDPR di Microsoft](http://aka.ms/gdprpartners) (http://aka.ms/gdprpartners).
+Per ulteriori informazioni sull'uso dello scanner di Azure Information Protection per individuare ed etichettare dati personali, vedere [Toolkit per l'individuazione di dati GDPR di Microsoft](https://aka.ms/gdprpartners) (https://aka.ms/gdprpartners).
 
 Per informazioni sulla configurazione dello scanner per le condizioni e l'utilizzo della prevenzione della perdita dei dati (DLP) di Office 365 con tipi di informazioni riservate, vedere [Come configurare le condizioni per la classificazione automatica e consigliata per Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-classification). Si noti che i nuovi tipi di informazioni riservate di Office 365 non saranno immediatamente disponibili per l'uso con lo scanner e che i tipi di informazioni riservate personalizzate non possono essere usati con lo scanner.
 
@@ -85,7 +90,7 @@ La rimozione delle informazioni personali (come ad esempio metadati o commenti i
 
 ### <a name="uls-logs"></a>Registri ULS
 
-Il servizio di registrazione unificato (ULS) e la Registrazione di utilizzo in SharePoint Server consentono di tracciare una varietà di funzioni di sistema e possono contenere le informazioni utente. I Registri ULS e i registri di utilizzo consistono in file di testo che è possibile cercare con molti strumenti di ricerca. Il [cmdlet Merge-SPLogFile PowerShell](https://docs.microsoft.com/it-IT/powershell/module/sharepoint-server/merge-splogfile) consente di restituire i record dai Registri ULS su più server in una farm.
+Il servizio di registrazione unificato (ULS) e la Registrazione di utilizzo in SharePoint Server consentono di tracciare una varietà di funzioni di sistema e possono contenere le informazioni utente. I Registri ULS e i registri di utilizzo consistono in file di testo che è possibile cercare con molti strumenti di ricerca. Il [cmdlet Merge-SPLogFile PowerShell](https://docs.microsoft.com/powershell/module/sharepoint-server/merge-splogfile) consente di restituire i record dai Registri ULS su più server in una farm.
 
 È consigliabile impostare i criteri di conservazione dei registri per il valore minimo richiesto per le attività aziendali. Per informazioni sulla configurazione della registrazione in SharePoint Server, vedere [Configurare la registrazione diagnostica in SharePoint Server](https://docs.microsoft.com/SharePoint/administration/configure-diagnostic-logging).
 

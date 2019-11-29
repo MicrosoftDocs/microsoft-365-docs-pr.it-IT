@@ -19,17 +19,15 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Riepilogo: suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.'
-ms.openlocfilehash: 15b67d2569f2c8ceafb16973ae2bf6862ebb9ded
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: e724370c439f8330b28c32fc36d2ea39b303f6ec
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38311110"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631311"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteggere siti e file di SharePoint Online
 
- **Riepilogo:** suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.
-  
 In questo articolo vengono forniti suggerimenti per la configurazione dei siti del team di SharePoint Online e per la protezione di file che consentono di collaborare in modo semplice pur garantendo alti livelli di sicurezza. In questo articolo vengono definiti quattro tipi di configurazione, a partire da un sito pubblico all'interno dell'organizzazione con i criteri di condivisione più aperti. Ogni configurazione aggiuntiva rappresenta un passaggio significativo per la protezione, ma rende la collaborazione e l'accesso alle risorse più difficile per il set di utenti rilevante. Utilizzare questi suggerimenti come punto di partenza e modificare le configurazioni per soddisfare le esigenze dell'organizzazione.
   
 Le configurazioni descritte in questo articolo sono allineate alle raccomandazioni di Microsoft per i tre livelli di protezione per dati, identità e dispositivi:
@@ -62,7 +60,7 @@ Come illustrato nell'esempio:
     
 - I criteri di [prevenzione della perdita dei dati](../../compliance/data-loss-prevention-policies.md) sono configurati in modo che le etichette di conservazione Sensibile ed Estremamente riservato avvisino o impediscano agli utenti di inviare questi tipi di file all'esterno dell'organizzazione.
     
-- Se necessario per lo scenario specifico, è possibile usare le [etichette di riservatezza](../../compliance/sensitivity-labels.md) per proteggere file estremamente riservati con la crittografia e le autorizzazioni. Per i clienti di Azure Information Protection, è possibile usare le etichette di Azure Information Protection nel Centro conformità Microsoft 365 e, qualora si scegliesse di eseguire operazioni di configurazione aggiuntive o avanzate, le etichette saranno sincronizzate con il portale di Azure. Le etichette di Azure Information Protection e le etichette di riservatezza di Office 365 sono completamente compatibili tra loro. Questo significa, ad esempio, che non è necessario riclassificare o etichettare nuovamente contenuti etichettati da Azure Information Protection. Questo livello di protezione non è necessario per tutti i clienti. 
+- Se necessario per lo scenario specifico, è possibile usare le [etichette di riservatezza](../../compliance/sensitivity-labels.md) per proteggere file estremamente riservati con la crittografia e le autorizzazioni. Per i clienti di Azure Information Protection, è possibile usare le etichette di Azure Information Protection nel Centro conformità Microsoft 365 e, qualora si scegliesse di eseguire operazioni di configurazione aggiuntive o avanzate, le etichette saranno sincronizzate con il portale di Azure. Le etichette di Azure Information Protection e le etichette di riservatezza di Office 365 sono completamente compatibili tra loro. Questo significa, ad esempio, che non è necessario riclassificare o etichettare nuovamente contenuti etichettati da Azure Information Protection. Non tutti i clienti necessitano di questo livello di protezione. 
     
 ## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Impostazioni a livello di tenant per SharePoint Online e OneDrive for Business
 
@@ -117,20 +115,20 @@ La tabella seguente contiene il riepilogo delle operazioni di configurazione per
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 ||**Protezione di base 1** <br/> |**Protezione di base 2** <br/> |**Protezione dati sensibili** <br/> |**Riservatezza elevata** <br/> |
-|Descrizione  <br/> |Individuazione e collaborazione aperte all'interno dell'organizzazione.  <br/> |Sito privato e gruppo con condivisione consentita all'esterno del gruppo.  <br/> |Sito isolato, in cui i livelli di accesso sono definiti dall'appartenenza a gruppi specifici. La condivisione è consentita solo ai membri del sito. La prevenzione della perdita di dati avvisa gli utenti quando tentano di inviare file all'esterno dell'organizzazione.  <br/> |Sito isolato + crittografia dei file e autorizzazioni con Azure Information Protection. La prevenzione della perdita dei dati impedisce agli utenti di inviare file all'esterno dell'organizzazione.  <br/> |
+|Descrizione  <br/> |Individuazione e collaborazione aperte all'interno dell'organizzazione.  <br/> |Sito privato e gruppo con condivisione consentita all'esterno del gruppo.  <br/> |Sito privato con condivisione consentita solo ai membri del sito. La prevenzione della perdita dei dati avvisa gli utenti quando tentano di inviare file all'esterno dell'organizzazione.  <br/> |Sito privato e crittografia e autorizzazioni file con etichette di riservatezza. La prevenzione della perdita dei dati impedisce agli utenti di inviare file all'esterno dell'organizzazione.  <br/> |
 |Sito del team privato o pubblico  <br/> |Pubblico  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |Chi può accedere?  <br/> |Tutti gli utenti dell'organizzazione, inclusi gli utenti B2B e gli utenti guest.  <br/> |Solo i membri del sito. Altri utenti possono richiedere l'accesso.  <br/> |Solo i membri del sito. Altri utenti possono richiedere l'accesso.  <br/> |Solo i membri. Altri utenti non possono richiedere l'accesso.  <br/> |
 |Controlli di condivisione a livello di sito  <br/> |Condivisione consentita con chiunque. Impostazioni predefinite.  <br/> |Condivisione consentita con chiunque. Impostazioni predefinite.  <br/> |I membri non possono condividere l'accesso al sito.  <br/> I non membri possono richiedere l'accesso al sito, ma tali richieste devono essere gestite da un amministratore del sito.  <br/> |I membri non possono condividere l'accesso al sito.  <br/> I non membri non possono richiedere l'accesso al sito o ai contenuti.  <br/> |
 |Controlli di accesso dispositivo a livello di sito  <br/> |Nessun controllo aggiuntivo.  <br/> |Nessun controllo aggiuntivo.  <br/> |Impedire agli utenti di scaricare file su dispositivi collegati non compatibili o non di dominio. Ciò consente di accedere solo al browser da tutti gli altri dispositivi.  <br/> |Bloccare il download di file su dispositivi collegati non compatibili o non di dominio.  <br/> |
 |Etichette di conservazione  <br/> |Pubblico di livello interno  <br/> |Private  <br/> |Dati sensibili  <br/> |Highly Confidential (Riservatezza elevata)  <br/> |
 |Criteri di prevenzione della perdita di dati (DLP)  <br/> |||Gli utenti vengono avvisati se inviano file con etichetta Sensitive (Dati sensibili) all'esterno dell'organizzazione.  <br/> Per bloccare la condivisione esterna di tipi di dati riservati, ad esempio numeri di carta di credito o altri dati personali, è possibile configurare criteri DLP aggiuntivi per questi tipi di dati (inclusi i tipi di dati personalizzati che è necessario configurare).  <br/> |Bloccare l'invio di file contrassegnati come estremamente riservati all'esterno dell'organizzazione da parte degli utenti. Consentire agli utenti di sostituire questa impostazione specificando giustificazioni, inclusa l'informazione sugli utenti con cui si condivide il file.  <br/> |
-|Etichette di riservatezza  <br/> ||||Usare le etichette di riservatezza per crittografare e concedere automaticamente le autorizzazioni per i file. Le etichette di riservatezza usano Azure Information Protection per crittografare i file. Questa protezione viaggia con i file in caso di perdita.  <br/> Office 365 non può leggere i file crittografati con Azure Information Protection. Inoltre, i criteri DLP possono funzionare solo con i metadati (comprese le etichette), ma non con i contenuti di tali file (ad esempio i numeri di carta di credito all'interno dei file).  <br/> |
+|Etichette di riservatezza  <br/> ||||Usare le etichette di riservatezza per crittografare e concedere automaticamente le autorizzazioni per i file. Questa protezione viaggia con i file in caso di perdita.  <br/> Office 365 non può leggere file crittografati con etichette di riservatezza. Inoltre, i criteri DLP funzionano solo con i metadati, incluse le etichette, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.  <br/> |
    
 Per la procedura di distribuzione dei quattro tipi diversi di siti del team di SharePoint Online in questa soluzione, vedere [Distribuire siti di SharePoint Online per tre livelli di protezione](../../compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection.md). 
   
 ## <a name="office-365-retention-labels"></a>Etichette di conservazione di Office 365
 
-L'uso delle etichette di conservazione è consigliato per ambienti con dati sensibili. Dopo aver configurato e pubblicato le etichette di conservazione:
+L'uso delle etichette di conservazione è consigliato per ambienti con dati sensibili ed estremamente riservati. Dopo aver configurato e pubblicato le etichette di conservazione:
   
 - È possibile applicare un'etichetta predefinita a una raccolta documenti in un sito del team di SharePoint Online, in modo che tutti i documenti nella raccolta dispongano di un'etichetta predefinita. 
     
@@ -158,16 +156,16 @@ Per la procedura di configurazione delle etichette di conservazione e dei criter
   
 ## <a name="sensitivity-labels"></a>Etichette di riservatezza 
 
-Se necessario per lo scenario di sicurezza specifico, è possibile usare le etichette di riservatezza per applicare le protezioni che seguono i file ovunque vanno. Le etichette di riservatezza nel Centro conformità Microsoft 365 sono uguali alle etichette di Azure Information Protection. Per questa soluzione, si consiglia di usare criteri di Azure Information Protection con ambito e un'etichetta secondaria dell'etichetta Highly Confidential (Riservatezza elevata) per crittografare e concedere le autorizzazioni per i file che devono essere protetti con il massimo livello di sicurezza. 
+Se necessario per lo scenario di sicurezza specifico, è possibile usare le etichette di riservatezza per applicare le protezioni che seguono i file ovunque vanno. Le etichette di riservatezza nel Centro conformità Microsoft 365 sono uguali alle etichette di Azure Information Protection. Per questa soluzione, si consiglia di usare un'etichetta di riservatezza o un'etichetta secondaria dell'etichetta di riservatezza Highly Confidential (Riservatezza elevata) per crittografare e concedere le autorizzazioni per i file che devono essere protetti con il massimo livello di sicurezza. 
   
-Tenere presente che quando si applica la crittografia di Azure Information Protection ai file archiviati in Office 365, il servizio non è in grado di elaborare il contenuto di questi file. La creazione condivisa, eDiscovery, la ricerca, Delve e altre funzionalità di collaborazione non funzionano. I criteri di prevenzione della perdita dei dati funzionano solo con i metadati, incluse le etichette di conservazione, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.
+Tenere presente che quando la crittografia dell'etichetta di riservatezza viene applicata ai file di Office 365, il servizio non può elaborare il contenuto di tali file. La creazione condivisa, eDiscovery, la ricerca, Delve e altre funzionalità di collaborazione non funzionano. I criteri di prevenzione della perdita dei dati funzionano solo con i metadati, incluse le etichette di conservazione, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.
 
 Per altre informazioni, vedere [Panoramica delle etichette di riservatezza](../../compliance/sensitivity-labels.md).
 
     
 ### <a name="adding-permissions-for-external-users"></a>Aggiunta delle autorizzazioni per gli utenti esterni
 
-Esistono due modi per concedere agli utenti esterni l'accesso ai file protetti con Azure Information Protection. In entrambi i casi gli utenti esterni devono avere un account Azure AD. Se gli utenti esterni non sono membri di un'organizzazione che usa Azure AD, possono ottenere un account Azure AD come utente singolo da questa pagina di iscrizione: [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
+Esistono due modi per concedere agli utenti esterni l'accesso ai file protetti con un'etichetta di riservatezza. In entrambi i casi gli utenti esterni devono avere un account Azure AD. Se gli utenti esterni non sono membri di un'organizzazione che usa Azure AD, possono ottenere un account Azure AD come utente singolo da questa pagina di iscrizione: [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
   
 - Aggiungere utenti esterni a un gruppo di Azure AD che viene usato per configurare la protezione di un'etichetta
     
@@ -177,9 +175,9 @@ Esistono due modi per concedere agli utenti esterni l'accesso ai file protetti c
     
      È possibile aggiungere tutti gli utenti di un'organizzazione (ad esempio Fabrikam.com), un gruppo di Azure AD (ad esempio, un gruppo dell'amministrazione all'interno di un'organizzazione) o un singolo utente. Ad esempio, è possibile aggiungere un team esterno di autorità della protezione per un'etichetta. Con questo metodo, vengono concesse le autorizzazioni solo ai file protetti con l'etichetta dopo che viene aggiunta un'entità esterna alla protezione.
     
-### <a name="deploying-and-using-azure-information-protection"></a>Distribuzione e uso di Azure Information Protection
+### <a name="deploying-and-using-a-sensitivity-label"></a>Distribuzione e uso dell'etichetta di riservatezza.
 
-Per la procedura di configurazione di Azure Information Protection in questa soluzione, vedere [Proteggere i file di SharePoint Online con Azure Information Protection](../../compliance/protect-sharepoint-online-files-with-azure-information-protection.md).
+Per la procedura di configurazione di un'etichetta di riservatezza in questa soluzione, vedere [Proteggere i file di SharePoint Online con un'etichetta di riservatezza](../../compliance/protect-sharepoint-online-files-with-sensitivity-label.md).
   
 
 ## <a name="next-step"></a>Passaggio successivo
