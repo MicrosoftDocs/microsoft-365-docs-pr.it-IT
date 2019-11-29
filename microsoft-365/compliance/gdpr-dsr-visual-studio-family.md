@@ -1,7 +1,7 @@
 ---
-title: Richieste dell'interessato per il GDPR nella famiglia Visual Studio
-description: Richieste dell'interessato per il GDPR nella famiglia Visual Studio
-keywords: Visual Studio, Visual Studio Code, Visual Studio per Mac, documentazione di Visual Studio, privacy, GDPR
+title: Richieste degli interessati per la famiglia Visual Studio nell'ambito del GDPR e del CCPA
+description: Richieste degli interessati per la famiglia Visual Studio nell'ambito del GDPR e del CCPA
+keywords: Visual Studio, Visual Studio Code, Visual Studio per Mac, documentazione di Visual Studio, privacy, GDPR, CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: visual-studio-family
@@ -10,23 +10,29 @@ ms.date: 05/24/2018
 author: PoulChapman
 ms.author: olholder
 manager: pchapman
-ms.collection: GDPR
+ms.collection:
+- GDPR
+- M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: 744935cb41e1521970e6fac05493129eaaf7910d
-ms.sourcegitcommit: 0dde96d5864e5b16ea24cfb302930b041c7a8091
+ms.openlocfilehash: 96cb6820e24a378351c82264929c3aec99e6d4f6
+ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "34431547"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "39624799"
 ---
-# <a name="visual-studio-family-data-subject-requests-for-the-gdpr"></a>Richieste dell'interessato per il GDPR nella famiglia Visual Studio
+# <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per la famiglia Visual Studio nell'ambito del GDPR e del CCPA
 
-Il [Regolamento generale sulla protezione dei dati (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) dell'Unione europea garantisce alle persone (denominate come _interessati_ nel regolamento) il diritto di gestire i loro dati personali. I dati personali sono ampiamente descritti nel GDPR come dati che si riferiscono a una persona fisica identificata o identificabile. Il GDPR garantisce agli interessati diritti specifici sui propri dati personali; tali diritti includono la possibilità di ottenere delle copie dei dati personali, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico. Una richiesta formale di un interessato rivolta a un titolare (un impiegato o un tipo di agenzia o organizzazione che detiene il controllo dei dati personali) in merito a un'operazione da effettuare sui propri dati personali è denominata _Richiesta DSR (Data Subject Rights, Diritti dell'interessato)_ o DSR. Per le informazioni generali sul GDPR, vedere la[sezione GDPR del Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+Il [Regolamento generale sulla protezione dei dati (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) dell'Unione europea garantisce alle persone (denominate nel regolamento _interessati_) il diritto di gestire i loro dati personali. I dati personali sono ampiamente descritti nel GDPR come dati che si riferiscono a una persona fisica identificata o identificabile. Il GDPR garantisce agli interessati diritti specifici sui propri dati personali; tali diritti includono la possibilità di ottenere delle copie dei dati personali, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico. Una richiesta formale di un interessato rivolta a un titolare (un impiegato o un tipo di agenzia o organizzazione che detiene il controllo dei dati personali) in merito a un'operazione da effettuare sui propri dati personali è denominata _Richiesta dell'interessato_.
+
+Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo di determinate divulgazioni, protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". In generale, la definizione di vendite include la condivisione di dati a titolo oneroso. Per altre informazioni sul CCPA, vedere il [California Consumer Privacy Act](offering-ccpa.md) e le [Domande frequenti sul California Consumer Privacy Act](ccpa-faq.md).
+
+Per informazioni generali sul GDPR, consultare la [sezione riguardante il GDPR del Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ## <a name="products-covered-by-this-guide"></a>Prodotti inclusi in questa guida
 
-Questa guida spiega come utilizzare gli strumenti Microsoft per esportare o eliminare i dati personali raccolti durante una sessione di utilizzo autenticato (con accesso effettuato) di Visual Studio e di Visual Studio per le estensioni Mac e Microsoft e per Visual Studio Code. La guida illustra inoltre come effettuare richieste dell'interessato per i dati personali raccolti durante l'utilizzo dei siti Web della Community degli sviluppatori di Visual Studio, NuGet.org e ASP.NET. Questi prodotti possono consentire l'uso di strumenti ed estensioni non Microsoft, inoltre Microsoft non ha il ruolo di responsabile o titolare del trattamento di dati per questi strumenti ed estensioni. Gli utenti dovranno contattare il provider di tali estensioni o strumenti per comprenderne i criteri riguardanti i dati personali e la raccolta.
+Questa guida illustra come usare gli strumenti Microsoft per esportare o eliminare i dati personali raccolti durante una sessione autenticata (dopo aver effettuato l'accesso) di Visual Studio, Visual Studio per Mac e delle estensioni Microsoft per questi prodotti e per Visual Studio Code. La guida illustra inoltre come effettuare richieste dell'interessato per i dati personali raccolti durante l'uso dei siti Web Developer Community di Visual Studio, NuGet.org e ASP.NET. Questi prodotti possono consentire l'uso di strumenti ed estensioni non Microsoft e Microsoft non ha il ruolo di responsabile o titolare del trattamento di dati per questi strumenti ed estensioni. Gli utenti dovranno contattare il provider di tali estensioni o strumenti per conoscerne i criteri riguardanti i dati personali e la raccolta.
 
 ## <a name="additional-privacy-information"></a>Ulteriori informazioni sulla privacy
 
@@ -72,8 +78,8 @@ Gli utenti possono controllare le impostazioni della privacy per questi prodotti
 
 I titolari possono gestire i dati dei clienti e i log generati dal sistema raccolti dagli interessati con uno di questi metodi, a seconda di come sia registrato il prodotto della famiglia di Visual Studio o l'estensione Microsoft. In alcuni casi, è necessario utilizzare entrambi i metodi. Entrambi i metodi consentono ai titolari di scaricare una copia della cronologia attività gestita da tale metodo. La chiusura di un account AAD o MSA elimina i dati dei clienti di Visual Studio associati e rende anonimi i dati personali identificabili nei log generati dal sistema relativi a tali prodotti. I log generati dal sistema resi anonimi vengono conservati per un periodo massimo di 18 mesi.
 
-- Gli utenti che hanno registrato un prodotto della famiglia di Visual Studio con un account supportato da un tenant di Azure, ad esempio un account AAD o un account del servizio gestito associato a una sottoscrizione di Azure, possono seguire le istruzioni contenute in [Richieste degli interessati per Azure nell'ambito del GDPR](gdpr-dsr-azure.md).
-- Gli utenti che hanno registrato un prodotto della famiglia di Visual Studio senza un account supportato da un tenant di Azure, ad esempio molti account che usano un Account Microsoft (MSA), possono utilizzare [il Microsoft Privacy Response Center basato sul Web](https://aka.ms/userprivacysite), disponibile tramite il proprio account Microsoft, per visualizzare, controllare ed eliminare i dati dell'attività associati all'account Microsoft presenti in più servizi Microsoft. In questo scenario, l'utente ha il ruolo di titolare per i propri dati personali.
+- Gli utenti che hanno registrato un prodotto della famiglia Visual Studio usando un account supportato da un tenant di Azure, ad esempio un account AAD o un account del servizio gestito associato a una sottoscrizione di Azure, possono seguire le istruzioni contenute in [Richieste degli interessati per Azure nell'ambito del GDPR](gdpr-dsr-azure.md).
+- Gli utenti che hanno registrato un prodotto della famiglia Visual Studio senza un account supportato da un tenant di Azure, ad esempio molti account che usano un account Microsoft (MSA), possono usare [il Microsoft Privacy Response Center basato sul Web](https://aka.ms/userprivacysite), disponibile tramite il proprio account Microsoft, per visualizzare, controllare ed eliminare i dati dell'attività associati all'account Microsoft presenti in più servizi Microsoft. In questo scenario, l'utente ha il ruolo di titolare per i propri dati personali.
 
 > [!NOTE]
 > Quando il titolare di un account MSA elimina il proprio account, i dati personali relativi a questi prodotti vengono eliminati, che l'account risulti supportato da un tenant di Azure o meno; inoltre, i log generati dal sistema vengono resi anonimi.
@@ -148,7 +154,7 @@ L'eliminazione rimuove le informazioni seguenti dalla [Community degli sviluppat
 
 Per avviare un'eliminazione, procedere come segue:
 
-1. Accedere a [Community degli sviluppatori](https://developercommunity.visualstudio.com). Nell'angolo superiore destro, fare clic sul profilo e selezionare **Profilo e preferenze**.
+1. Accedere alla [Community degli sviluppatori](https://developercommunity.visualstudio.com). Nell'angolo in alto a destra fare clic sul profilo e selezionare **Profilo e preferenze**.
 2. Fare clic sulla scheda **Privacy** e quindi su **Elimina dati e account** per avviare l'eliminazione dei dati.
 3. Verrà visualizzata una schermata di conferma.
 4. Digitare "elimina" nella casella e quindi fare clic su **Elimina account**.
@@ -162,11 +168,11 @@ Quando si fa clic su **Elimina account:**
 - Se si segnala un nuovo problema o si effettua l'accesso nella [Community degli sviluppatori](https://developercommunity.visualstudio.com), si verrà identificati come nuovi utenti.
 - Se si elimina l'account dalla [Community degli sviluppatori](https://developercommunity.visualstudio.com), questo non verrà eliminato dagli altri servizi Microsoft.
 
-## <a name="xamarin-forums-and-bugzilla"></a>Forum di Xamarin e Bugzilla
+## <a name="xamarin-forums"></a>Forum di Xamarin
 
 ### <a name="personal-data-we-collect"></a>Dati personali raccolti da Microsoft
 
-Tramite la community di utenti del [Forum di Xamarin](https://forums.xamarin.com) e i siti Web di segnalazione bug di [Xamarin Bugzilla](https://bugzilla.xamarin.com/), Microsoft raccoglie i dati forniti per riprodurre e risolvere i problemi che possono verificarsi con i propri prodotti e servizi. Questi dati includono dati personali e feedback pubblici. I dati personali raccolti sono i dati degli account utente (ad esempio, i nomi utente e indirizzi di posta elettronica associati agli account del Forum di Xamarin o di Xamarin Bugzilla) e i feedback pubblici che includono bug, problemi, commenti e soluzioni fornite tramite il Forum di Xamarin o il sito Web di segnalazione di bug di Xamarin Bugzilla.
+Tramite la community di utenti dei [Forum di Xamarin](https://forums.xamarin.com/), Microsoft raccoglie i dati forniti per riprodurre e risolvere i problemi che possono verificarsi con i propri prodotti e servizi. Questi dati includono dati personali e feedback pubblici. I dati personali raccolti sono i dati degli account utente (ad esempio, nomi utente e indirizzi di posta elettronica associati agli account dei Forum di Xamarin) e i feedback pubblici includono bug, problemi, commenti e soluzioni fornite tramite i Forum di Xamarin.
 
 ### <a name="how-you-can-control-your-data"></a>Come controllare i dati
 
@@ -184,19 +190,8 @@ I Forum di Xamarin sono ospitati da terze parti, i Forum Vanilla. Per richiedere
 
 I Forum di Xamarin sono ospitati da terze parti, i Forum Vanilla. Per richiedere l'eliminazione dei dati personali e pubblici, gli utenti devono contattare forums@xamarin.com (monitorato dal team di Xamarin). Microsoft provvederà manualmente alla richiesta di eliminazione dei dati personali dell'utente.
 
-#### <a name="bugzilla-for-xamarin"></a>Bugzilla per Xamarin
-
-##### <a name="view"></a>Visualizzazione
-
-Gli utenti che possiedono un account attivo di Xamarin Bugzilla possono visualizzare tutti i bug che vengono segnalati e tutti i commenti che vengono aggiunti ai bug facendo clic sui collegamenti nella home page di Xamarin Bugzilla.
-
-##### <a name="export"></a>Esportazione
-
-L'esportazione dei dati personali non è supportata.
-
-##### <a name="delete"></a>Eliminazione
-
-Per richiedere l'eliminazione dei dati personali utilizzati in relazione al sito Web di segnalazione di bug di Xamarin Bugzilla, gli utenti possono chiudere l'account di Xamarin Bugzilla andando nella [pagina delle preferenze dell'utente](https://bugzilla.xamarin.com/userprefs.cgi) e scegliendo la **scheda Chiudi account**. Immettere la password di Bugzilla e selezionare la casella per confermare di voler eliminare definitivamente l'account. I feedback pubblici (ad esempio bug, problemi, commenti e soluzioni) che gli utenti hanno pubblicato in Xamarin Bugzilla non verranno eliminati dopo la ricezione di una richiesta di eliminazione. I feedback pubblici verranno invece resi anonimi, rimuovendo il nome e l'indirizzo di posta elettronica associato ai feedback pubblici creati dall'utente che ha richiesto l'eliminazione dell'account.
+> [!NOTE]
+> Bugzilla per Xamarin non accetta più nuovi problemi. I titolari di account di Xamarin Bugzilla possono visualizzare un archivio di tutti i bug che hanno segnalato e di tutti i commenti che hanno aggiunto all'indirizzo [https://xamarin.github.io/bugzilla-archives/](https://xamarin.github.io/bugzilla-archives/). Per richiedere l'eliminazione dei dati personali contenuti nell'archivio, gli utenti possono inviare una richiesta all'indirizzo [https://github.com/xamarin/bugzilla-archives/issues/new/choose](https://github.com/xamarin/bugzilla-archives/issues/new/choose). I feedback pubblici, quali bug, problemi, commenti e soluzioni, che gli utenti hanno pubblicato su Xamarin Bugzilla non verranno eliminati dopo il ricevimento di una richiesta di eliminazione. Verranno invece anonimizzati, rimuovendo il nome e l'indirizzo di posta elettronica associati ai feedback pubblici creati dall'utente che invia la richiesta di eliminazione.
 
 ## <a name="nuget"></a>NuGet
 
@@ -215,16 +210,6 @@ Per informazioni su DSR per il sito Web IIS.NET, vedere [Sito Web IIS.NET e trat
 ### <a name="surveymonkey"></a>SurveyMonkey
 
 Di tanto in tanto, Microsoft invita i clienti a fornire feedback relativi a questi prodotti tramite SurveyMonkey. Questi dati vengono eliminati entro 28 giorni. Nella gestione delle richieste dell'interessato per questi prodotti, se Microsoft riceve risposte autenticate ai sondaggi, queste vengono incluse nell'esportazione ed eliminate insieme alle richieste dell'interessato.
-
-### <a name="uservoice"></a>UserVoice
-
-Microsoft invita i clienti a fornire suggerimenti sui prodotti usando i siti UserVoice.com per questi prodotti. Questi siti, come le richieste dell'interessato, sono gestiti in modo indipendente da UserVoice.
-
-- [https://visualstudio.uservoice.com/](https://visualstudio.uservoice.com/)
-- [https://aspnet.uservoice.com/](https://aspnet.uservoice.com/)
-- [https://xamarin.uservoice.com/](https://xamarin.uservoice.com/)
-
-Per le richieste dell'interessato relative a questi dati vedere la guida di UserVoice su [come esportare i dati](https://feedback.uservoice.com/knowledgebase/articles/1850245-export-my-personal-data) oppure [come eliminare i dati](https://feedback.uservoice.com/knowledgebase/articles/1848856-delete-my-profile-information).
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 
