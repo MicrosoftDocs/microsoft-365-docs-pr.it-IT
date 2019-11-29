@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 43ab1083ad028ee53ad355a84fda17b02decbc70
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
+ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39233519"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39634043"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -59,7 +59,9 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 
 - Attività utente e amministratore in Microsoft PowerApps
 
-## <a name="before-you-begin"></a>Prima di iniziare
+- Attività utente e amministratore in Microsoft Forms
+
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del registro di controllo di Office 365.
 
@@ -125,7 +127,9 @@ Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del regis
   |SharePoint Online e OneDrive for Business|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Yammer||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  ||||
 
 - Azure Active Directory (Azure AD) è il servizio directory per Office 365. Il log di controllo unificato contiene le attività di utenti, gruppi, applicazioni, domini e directory eseguite nell'interfaccia di amministrazione di Microsoft 365 o nel portale di gestione di Azure. Per un elenco completo degli eventi di Azure AD, vedere [Eventi del report di controllo di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
 
@@ -302,7 +306,7 @@ Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
 |[Attività di Advanced eDiscovery](#advanced-ediscovery-activities)|[Attività di Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Attività di Microsoft Teams](#microsoft-teams-activities)|[Attività di Microsoft Teams per il settore sanitario](#microsoft-teams-healthcare-activities)|[Attività di Yammer](#yammer-activities)|
 |[Attività di Microsoft Flow](#microsoft-flow-activities)|[Attività di Microsoft PowerApps](#microsoft-powerapps)|[Attività di Microsoft Stream](#microsoft-stream-activities)|
-[Attività di amministrazione di Exchange](#exchange-admin-audit-log)|||
+|[Attività di Microsoft Forms](#microsoft-forms-activities)|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>Attività su file e pagine
@@ -776,6 +780,43 @@ La tabella seguente elenca le attività degli utenti e degli amministratori di Y
 ### <a name="microsoft-stream-activities"></a>Attività di Microsoft Stream
 
 È possibile eseguire una ricerca nel log di controllo per le attività in Microsoft Stream. Queste attività includono le attività video eseguite dagli utenti, le attività dei canali del gruppo e le attività amministrative, ad esempio la gestione degli utenti, la gestione delle impostazioni dell'organizzazione e l'esportazione dei report. Per una descrizione di queste attività, vedere la sezione "Attività registrate in Microsoft Stream" in [Log di controllo di Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
+
+### <a name="microsoft-forms-activities"></a>Attività di Microsoft Forms
+
+La tabella seguente elenca le attività degli utenti e degli amministratori di Microsoft Forms registrate nel log di controllo di Office 365. Microsoft Forms è uno strumento per la creazione di moduli, test e sondaggi usato per raccogliere dati a scopo di analisi. 
+
+Dove indicato di seguito nelle descrizioni, alcune operazioni contengono parametri di attività aggiuntivi.
+
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:-----|:-----|:-----|
+|Commento creato|CreateComment|Il proprietario del modulo aggiunge un commento o il punteggio a un test.|
+|Modulo creato|CreateForm|Il proprietario del modulo crea un nuovo modulo.|
+|Modulo modificato|EditForm|Il proprietario del modulo modifica un modulo, ad esempio creando, eliminando o modificando una domanda. <br><br>La proprietà EditOperation:stringa indica il nome dell'operazione di modifica. Le operazioni possibili sono: CreateQuestion, CreateQuestionChoice, DeleteQuestion, DeleteQuestionChoice, DeleteFormImage, DeleteQuestionImage, UpdateQuestion, UpdateQuestionChoice, UploadFormImage/Bing/Onedrive, UploadQuestionImage e ChangeTheme.  <br><br>La maggior parte dei nomi delle operazioni è di chiara interpretazione. <br><br>FormImage include qualsiasi posizione all'interno di Forms in cui l'utente può caricare un'immagine, ad esempio in una query o come tema di sfondo.|
+|Modulo spostato|MoveForm|Il proprietario del modulo sposta un modulo. <br><br>La proprietà DestinationUserId:stringa indica l'ID utente della persona che ha spostato il modulo. La proprietà NewFormId:stringa è il nuovo ID per il modulo appena copiato.|
+|Modulo eliminato|DeleteForm|Il proprietario del modulo elimina un modulo. Include SoftDelete (uso dell'opzione Elimina e spostamento del modulo nel Cestino) e HardDelete (svuotamento del Cestino).|
+|Modulo visualizzato (fase di progettazione)|ViewForm|Il proprietario del modulo apre un modulo esistente per la modifica.|
+|Modulo visualizzato in anteprima|PreviewForm|Il proprietario del modulo visualizza un modulo in anteprima usando la funzione Anteprima.|
+|Modulo esportato|ExportForm|Il proprietario del modulo esporta i risultati in Excel. <br><br>La proprietà ExportFormat:stringa indica se il file di Excel è scaricato oppure online.|
+|Condivisione del modulo per la copia consentita|AllowShareFormForCopy|Il proprietario del modulo crea un collegamento a un modello per condividere il modulo con altri utenti. Questo evento viene registrato quando il proprietario del modulo fa clic per generare l'URL del modello.|
+|Condivisione del modulo per la copia non consentita|DisallowShareFormForCopy|Il proprietario del modulo elimina il collegamento al modello.|
+|Coautore del modulo aggiunto|AddFormCoauthor|Un utente usa un collegamento per la collaborazione per aiutare nella progettazione o nella visualizzazione delle risposte. Questo evento viene registrato quando un utente usa un URL di collaborazione (non quando viene generato l'URL di collaborazione).|
+|Coautore del modulo rimosso|RemoveFormCoauthor|Il proprietario del modulo elimina un collegamento per la collaborazione.|
+|Pagina di risposta visualizzata|ViewRuntimeForm|L'utente ha aperto una pagina di risposta per la visualizzazione. Questo evento viene registrato indipendentemente dal fatto che l'utente invii o meno una risposta.|
+|Risposta creata|CreateResponse|Simile alla ricezione di una nuova risposta.  Un utente ha inviato una risposta a un modulo. <br><br>Le proprietà ResponseId:stringa e ResponderId:stringa indicano quale risultato viene visualizzato. <br><br>Per un partecipante anonimo, la proprietà ResponderId sarà Null.|
+|Risposta aggiornata|UpdateResponse|Il proprietario del modulo ha aggiornato un commento o il punteggio di un test. <br><br>Le proprietà ResponseId:stringa e ResponderId:stringa indicano quale risultato viene visualizzato. <br><br>Per un partecipante anonimo, la proprietà ResponderId sarà Null.|
+|Tutte le risposte eliminate|DeleteAllResponses|Il proprietario del modulo elimina tutti i dati delle risposte.|
+|Risposta eliminata|DeleteResponse|Il proprietario del modulo elimina una risposta. <br><br>La proprietà ResponseId:stringa indica la risposta eliminata.|
+|Risposte visualizzate|ViewResponses|Il proprietario del modulo visualizza l'elenco aggregato di risposte. <br><br>La proprietà ViewType:stringa indica se il proprietario del modulo visualizza i dati in dettaglio o in forma aggregata|
+|Risposta visualizzata|ViewResponse|Il proprietario del modulo visualizza una risposta specifica. <br><br>Le proprietà ResponseId:stringa e ResponderId:stringa indicano quale risultato viene visualizzato. <br><br>Per un partecipante anonimo, la proprietà ResponderId sarà Null.|
+|Collegamento di riepilogo creato|GetSummaryLink|Il proprietario del modulo crea un collegamento ai risultati di riepilogo per condividere i risultati.|
+|Collegamento di riepilogo eliminato|DeleteSummaryLink|Il proprietario del modulo elimina il collegamento ai risultati di riepilogo.|
+|Stato di phishing modulo aggiornato|UpdatePhishingStatus|Questo evento viene registrato ogni volta che viene modificato il valore dettagliato dello stato di sicurezza interno, indipendentemente dal fatto che sia stato modificato lo stato di sicurezza finale, ad esempio il modulo ora è chiuso o aperto. Ciò significa che potrebbero comparire eventi evento duplicati senza il cambiamento dello stato di sicurezza finale.|
+|Invito a Forms Pro inviato|ProInvitation|L'utente fa clic per attivare una versione di valutazione Pro.|
+|Impostazione modulo aggiornata|UpdateFormSetting|Il proprietario del modulo aggiorna un'impostazione del modulo. <br><br>La proprietà FormSettingName:stringa indica il nome e il nuovo valore dell'impostazione.|
+|Impostazione utente aggiornata|UpdateUserSetting|Il proprietario del modulo aggiorna un'impostazione utente. <br><br>La proprietà UserSettingName:stringa indica il nome e il nuovo valore dell'impostazione|
+|Moduli elencati|ListForms|Il proprietario del modulo sta visualizzando un elenco di moduli. <br><br>La proprietà ViewType:stringa indica la visualizzazione esaminata dal proprietario del modulo: tutti i moduli, condivisi con l'utente o moduli dei gruppi|
+|Risposta inviata|SubmitResponse|Un utente invia una risposta a un modulo. <br><br>La proprietà IsInternalForm:booleano indica se il partecipante si trova nella stessa organizzazione del proprietario del modulo.|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Log di controllo dell'amministratore di Exchange
 
