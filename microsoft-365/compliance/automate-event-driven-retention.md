@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Questo argomento illustra come configurare i flussi di processo aziendale in modo da automatizzare la conservazione attraverso gli eventi usando l'API REST di Microsoft 365.
-ms.openlocfilehash: 5977b79c47166fdafc76dfdb122b4fd37b63a875
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b4ae97ad9564f61e65b990a0054fcf13d88f1d8d
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708134"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631066"
 ---
 # <a name="automate-event-based-retention"></a>Automatizzare la conservazione basata su eventi
 
-L'esplosione del contenuto nelle organizzazioni e il modo in cui può diventare ROT (redundant, obsolete, trivial, cioè ridondante, obsoleto e banale), è una cosa seria. Per continuare a soddisfare gli obblighi di conformità normativa, legale e finanziaria, le aziende devono poter conservare e proteggere le informazioni importanti e trovare rapidamente ciò che conta. Conservare solo informazioni importanti e pertinenti è fondamentale per il successo di un'azienda.
+L'esplosione del contenuto nelle organizzazioni e il modo in cui può diventare ROT (redundant, obsolete, trivial, cioè ridondante, obsoleto e banale), è una cosa seria. Per continuare a soddisfare gli obblighi di conformità normativa, legale e finanziaria, le organizzazioni devono poter conservare e proteggere le informazioni importanti e trovare rapidamente ciò che conta. Conservare solo informazioni importanti e pertinenti è fondamentale per il successo di un’organizzazione.
 
-Di conseguenza, le organizzazioni possono sfruttare le soluzioni di conservazione nel Centro sicurezza e conformità di Office 365. La conservazione può essere attivata usando [etichette di conservazione](labels.md), che consentono di [basare il periodo di conservazione su un evento specifico](event-driven-retention.md). In genere, il periodo di conservazione si basa su una data nota, come la data di creazione o dell'ultima modifica del contenuto. Tuttavia, le organizzazioni fanno fronte anche a requisiti di smaltimento dei contenuti in base al verificarsi di un evento, ad esempio 7 anni dopo che un dipendente ha lasciato l'azienda.
+Per riuscirci, le organizzazioni possono sfruttare le soluzioni di conservazione nel Centro sicurezza e conformità di Office 365. La conservazione può essere attivata usando [etichette di conservazione](labels.md), che consentono di [basare il periodo di conservazione su un evento specifico](event-driven-retention.md). In genere, il periodo di conservazione si basa su una data nota, come la data di creazione o dell'ultima modifica del contenuto. Tuttavia, le organizzazioni fanno fronte anche a requisiti di smaltimento dei contenuti in base al verificarsi di un evento, ad esempio sette anni dopo che un dipendente ha lasciato l’organizzazione.
 
 Per garantire lo smaltimento conforme del contenuto, è fondamentale conoscere la data in cui si verifica un evento. Con il rapido aumento del volume di contenuti, diventa sempre più difficile conservare e smaltire i contenuti in maniera puntuale e conforme.
 
@@ -48,7 +48,7 @@ Questa sezione descrive le operazioni da eseguire prima della conservazione del 
 
 ### <a name="identify-roles"></a>Identificare i ruoli
 
-Identificare i ruoli diversi in un'organizzazione che esegue attività di Gestione record, responsabile della conservazione efficace ed efficiente dei documenti aziendali.
+Identificare i diversi ruoli in un'organizzazione che eseguono attività di Gestione record e che sarebbero i responsabili della conservazione efficace ed efficiente dei documenti aziendali.
 
   | **Persona**| **Ruolo**|
   | - | - |
@@ -59,21 +59,21 @@ Identificare i ruoli diversi in un'organizzazione che esegue attività di Gestio
 
 ### <a name="set-up-the-security--compliance-center"></a>Configurare il Centro sicurezza e conformità
   
-1. L'amministratore di conformità crea un tipo di evento, ad esempio Licenziamento dipendente, Scadenza contratto oppure Fine produzione. Vedere la procedura dettagliata nell'articolo sulla [conservazione basata su eventi](event-driven-retention.md).
+1. L'amministratore di conformità crea un tipo di evento, &ndash;ad esempio Licenziamento dipendente, Scadenza contratto oppure Fine produzione. Vedere il processo dettagliato in [Conservazione basata su eventi](event-driven-retention.md).
     
-1. L'amministratore di conformità crea un'etichetta di conservazione in base a un evento e la associa a un tipo di evento.
+2. L'amministratore di conformità crea un'etichetta di conservazione in base a un evento e la associa a un tipo di evento.
     
-1. Ci sono 4 tipi di trigger per le etichette di conservazione:
+    Ci sono quattro tipi di trigger per le etichette di conservazione:
             
     1. Data creazione
                 
-    1. Data ultima modifica
+    2. Data ultima modifica
                 
-    1. Data etichetta (quando il contenuto è stato etichettato)
+    3. Data etichetta (quando il contenuto è stato etichettato)
                 
-    1. Basata su eventi
+    4. Basata su eventi
     
-1. L'amministratore di conformità pubblica l'etichetta.
+3. L'amministratore di conformità pubblica l'etichetta.
 
 ### <a name="set-up-sharepoint"></a>Configurare SharePoint
    
@@ -81,29 +81,29 @@ Per creare un repository dei record, l'amministratore di conformità deve:
 
 1. Creare un sito di SharePoint.
 
-1. Eseguire una delle operazioni seguenti:
+2. Eseguire una delle operazioni seguenti:
         
     - Creare una raccolta di SharePoint: configurare un'etichetta basata su eventi a livello di raccolta. Per altre informazioni, vedere [Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, una cartella o un set di documenti di SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
           
-    - Configurare un set di documenti in SharePoint. Per altre informazioni, vedere [Introduzione ai set di documenti](https://support.office.com/article/Introduction-to-Document-Sets-3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).
+    - Configura un set di documenti in SharePoint. Per ulteriori informazioni, vedere [Introduzione ai set di documenti](https://support.office.com/article/3DBCD93E-0BED-46B7-B1BA-B31DE2BCD234).
       
-1. Assegnare ID risorsa (cioè un nome o codice del prodotto usato dall'organizzazione, ad esempio il numero dipendente) al set di documenti di ogni dipendente. Assegnando l'ID risorsa alla cartella, ogni elemento in essa contenuto eredita automaticamente lo stesso ID risorsa. Ciò significa che è possibile attivare il periodo di conservazione di tutti gli elementi con lo stesso evento.
+3. Assegna un ID risorsa a ogni set di documenti dei dipendenti. Un ID risorsa è il nome o codice di un prodotto usato dall'organizzazione, ad esempio il Numero dipendente può essere un ID risorsa. Assegnando l'ID risorsa alla cartella, ogni elemento nella cartella eredita automaticamente lo stesso ID risorsa. Di conseguenza, il periodo di conservazione di tutti gli elementi nella cartella sarà generato dallo stesso evento.
 
 ## <a name="ways-to-trigger-event-based-retention"></a>Modi per attivare la conservazione basata su eventi
 
 Esistono due modi in cui è possibile attivare la conservazione basata su eventi:
 
-- **Con l'interfaccia di amministrazione**: questo processo può essere utile per conservare meno contenuti contemporaneamente o quando la frequenza di attivazione della conservazione è bassa, ad esempio mensile o annuale. Per altre informazioni su questo metodo, vedere [Panoramica della conservazione basata su eventi](event-driven-retention.md). Questa modalità di attivazione della conservazione può tuttavia comportare tempi eccessivi ed è più soggetta ad errori, impedendo così la scalabilità. Di conseguenza, per migliorare la sicurezza e la conformità dei dati, è consigliabile adottare una soluzione semplificata e automatica per attivare la conservazione.
+- **Uso dell'interfaccia di amministrazione** Si tratta di un processo che può essere sfruttato per conservare meno contenuto alla volta o per ridurre la frequenza di attivazione della conservazione e renderla, ad esempio, mensile o annuale. Per ulteriori informazioni su questo processo, vedere [Panoramica della conservazione basata su eventi](event-driven-retention.md). Tuttavia, questo metodo di attivazione della conservazione può richiedere tempo e causare errori, e diminuire così la scalabilità. Di conseguenza, una soluzione automatica e semplice per attivare la conservazione può aumentare la sicurezza e la conformità dei dati.
 
 - **Con l'API REST di M365**: questo processo è utile quando occorre conservare grandi quantità di contenuto contemporaneamente e/o la frequenza di attivazione della conservazione è alta, ad esempio giornaliera o settimanale. Il flusso rileva il verificarsi di un evento nel sistema line-of-business e crea automaticamente un evento correlato nel Centro di sicurezza e conformità. Non è necessario creare manualmente un evento nell'interfaccia ogni volta che se ne verifica uno.
 
 Sono disponibili due opzioni per usare l'API REST:
 
-- **Microsoft Flow o un'applicazione simile** consente di attivare automaticamente l'occorrenza di un evento. Microsoft Flow è un agente di orchestrazione per la connessione ad altri sistemi. Microsoft Flow non richiede una soluzione personalizzata.
+- **Microsoft Flow o delle applicazioni simili** possono essere usate per attivare automaticamente la ricorrenza di un evento. Microsoft Flow è un agente di orchestrazione per la connessione ad altri sistemi. L'uso di Microsoft Flow non richiede una soluzione personalizzata.
 
 - **PowerShell o un client HTTP per le chiamate all'API REST**: usare PowerShell (versione 6 o successive) per chiamare l'API REST di Microsoft 365 per creare eventi. 
 
-Un'API REST è un endpoint del servizio che supporta i set di operazioni HTTP (metodi), che consentono di creare/recuperare/aggiornare/eliminare l'accesso alle risorse del servizio. Per altre informazioni, vedere [Components of a REST API request/response](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse) (Componenti della richiesta-risposta di un'API REST). In questo caso, con le API REST di Microsoft 365, è possibile creare e recuperare eventi con le operazioni (metodi) POST e GET.
+Un'API Rest è un endpoint di servizio che supporta set di operazioni HTTP (metodi), che forniscono l'accesso alle risorse del servizio per la creazione, il ripristino, l’aggiornamento e l’eliminazione. Per altre informazioni, vedere [Componenti di una richiesta/risposta dell'API REST](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). In questo caso, con l'API REST di Microsoft 365, è possibile creare e recuperare gli eventi usando le operazioni (metodi) POST e GET.
 
 ## <a name="example-scenarios"></a>Scenari di esempio
 
@@ -111,13 +111,13 @@ Considerare i seguenti scenari.
 
 ### <a name="scenario-1-employees-leaving-the-organization"></a>Scenario 1: Dipendenti che lasciano l'organizzazione 
 
-Un'organizzazione crea e archivia per ogni dipendente numerosi documenti che vengono gestiti e conservati durante il rispettivo periodo di impiego. Tuttavia, quando il dipendente lascia l'organizzazione o alla cessazione del rapporto di lavoro, l'organizzazione è obbligata in virtù dei requisiti legali e aziendali a conservare la documentazione relativa al dipendente per un periodo concordato.
+Un’organizzazione crea e archivia numerosi documenti relativi all’impiego di ogni singolo dipendente. Questi documenti sono gestiti e conservati durante il periodo di lavoro di ogni dipendente. Tuttavia, quando il dipendente lascia l'organizzazione o quando termina il periodo di lavoro, l'organizzazione è tenuta a rispettare i requisiti legali e aziendali e a mantenere i documenti di tale dipendente per un lasso di tempo concordato.
 
 Quindi, se più dipendenti lasciassero l'organizzazione ogni giorno, l'organizzazione dovrebbe attivare quotidianamente l'intervallo di conservazione per centinaia o migliaia di documenti.
 
-Oltre a tutto questo, occorre calcolare il periodo di conservazione per ciascun dipendente in base alla formula Data licenziamento dipendente + numero di giorni, mesi o anni in base al tipo di record del dipendente. Ad esempio, il periodo di conservazione dei documenti di assicurazione contro gli infortuni sul lavoro rispetto ai benefit del dipendente potrebbe differire.
+Oltre a tutto questo, occorre calcolare il periodo di conservazione per ciascun dipendente in base alla formula Data licenziamento dipendente + numero di giorni, mesi o anni in base al tipo di record del dipendente. Ad esempio, il periodo di conservazione dei documenti relativi alla retribuzione del lavoratore e ai benefit dipendenti potrebbe differire.
 
-Il diagramma seguente mostra come è possibile associare più etichette a un singolo evento. In questo caso, tutti i file con l'etichetta Assicurazione contro gli infortuni sul lavoro e quelli con l'etichetta Benefit dipendenti sono associati a un singolo evento, cioè l'abbandono dell'organizzazione da parte del dipendente. Ciascuno di questi file ha un diverso intervallo di conservazione, perciò quando un dipendente lascia l'organizzazione i file con ciascuna etichetta saranno caratterizzati da un diverso periodo di conservazione. Per attivare i diversi intervalli di conservazione per ogni tipo di file o etichetta per ciascun dipendente è un'attività davvero complessa, figurarsi per più dipendenti.
+Il diagramma di seguito illustra come possano essere presenti più etichette associate a un singolo evento. In questo caso, tutti i file con l’etichetta Assicurazione contro gli infortuni sul lavoro e tutti i file con l’etichetta Benefit dipendenti sono associati a un singolo evento, ossia il licenziamento del dipendente dall'organizzazione. Ognuno dei vari file ha intervalli di conservazione diversi. Quindi, quando un dipendente lascia l'organizzazione, i file raggruppati sotto ogni etichetta hanno un periodo di conservazione diverso. L'attivazione di tutti questi intervalli di conservazione, diversi per ogni tipo di file o etichetta e per ogni dipendente, è un'operazione molto complessa. Ancora di più lo è eseguire questa operazione per più dipendenti.
 
 ![Diagramma del tipo di evento, evento ed etichette](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
@@ -129,21 +129,19 @@ Di conseguenza, un processo automatizzato per attivare i diversi intervalli di c
 
   - L'amministratore crea le cartelle del dipendente nel set di documenti, ad esempio Angela Barbariol, Luca Udinesi.
 
-  - L'amministratore aggiunge i documenti dei dipendenti, ad esempio Benefit, Paghe, Assicurazione contro gli infortuni sul lavoro, a ogni cartella dipendente
+  - L'amministratore aggiunge i documenti dei dipendenti, ad esempio Benefit, Paghe, Assicurazione contro gli infortuni sul lavoro, a ogni cartella dipendente.
 
   - L'amministratore assegna l'ID risorsa a ogni cartella dipendente. 
 
-  - L'amministratore SCC
-
-  - accede al Centro sicurezza e conformità
+  - L'amministratore SCC accede al Centro sicurezza e conformità.
 
   - L'amministratore SCC crea tipi di eventi correlati al dipendente, come "Licenziamento del dipendente", "Assunzione del dipendente".
 
   - L'amministratore SCC crea l'etichetta "Conservazione dipendente".
 
-  - L'etichetta "Conservazione dipendente" viene pubblicata e applicata manualmente o automaticamente ai documenti dei dipendenti in SharePoint
+  - L'etichetta "Conservazione dipendente" viene pubblicata e applicata manualmente o automaticamente ai documenti dei dipendenti in SharePoint.
 
-  - Un sistema di gestione delle risorse umane come Workday può eseguire periodicamente Microsoft Flow per gestire i documenti dei dipendenti
+  - Un sistema di gestione delle risorse umane come Workday può eseguire periodicamente Microsoft Flow per gestire i documenti dei dipendenti.
 
   - Se un dipendente ha lasciato l'organizzazione, Flow attiverà l'API REST di conservazione basata sugli eventi di M365 che avvierà l'intervallo di conservazione nei documenti del dipendente specifico.
 
@@ -407,9 +405,9 @@ Passaggio 2: Eseguire lo script seguente.
 
 #### <a name="verify-the-outcome-in-both-options"></a>Verificare il risultato in entrambe le opzioni
 
-Passaggio1: Passare al Centro sicurezza e conformità
+Passaggio 1: Passare al Centro sicurezza e conformità.
 
-Passaggio 2: Scegliere Eventi in Governance dei dati
+Passaggio 2: Scegliere **Eventi** in **Governance dei dati**.
 
 Passaggio 3: Verificare di aver creato l'evento.
 
@@ -417,7 +415,7 @@ Passaggio 3: Verificare di aver creato l'evento.
 
 ### <a name="scenario-2-contracts-expiring"></a>Scenario 2: Contratti in scadenza
 
-Un'organizzazione può avere più record per un unico contratto con clienti, fornitori e partner. Questi documenti possono trovarsi in una raccolta documenti, ad esempio SharePoint. La fine del contratto determina l'inizio del periodo di conservazione dei documenti associati al contratto. Ad esempio: è necessario conservare tutti i record relativi ai contratti per cinque anni dalla scadenza del contratto. L'evento che attiva il periodo di conservazione di cinque anni è la scadenza del contratto.
+Un'organizzazione può avere più record per un singolo contratto con clienti, fornitori e partner. Questi documenti possono trovarsi in una raccolta documenti come SharePoint. Il termine di un contratto determina l'inizio del periodo di conservazione dei documenti associati al contratto. Ad esempio, tutti i record relativi ai contratti devono essere conservati per cinque anni dalla data di scadenza del contratto. L'evento che attiva il periodo di conservazione di cinque anni è la scadenza del contratto.
 
 Un sistema di Customer Relationship Management (CRM) può interagire con Microsoft 365 per attivare la conservazione dei documenti contrattuali
 
@@ -427,19 +425,19 @@ Un sistema di Customer Relationship Management (CRM) può interagire con Microso
 
   - L'amministratore crea una raccolta di SharePoint con varie cartelle per ogni tipo di contratto.
 
-  - L'amministratore aggiunge i documenti contrattuali, ad esempio Contratti di licenza e Contratti di sviluppo, a ogni cartella di contratto
+  - L'amministratore aggiunge i documenti contrattuali, ad esempio Contratti di licenza e Contratti di sviluppo, a ogni cartella di contratto.
 
-  - L'amministratore assegna l'ID risorsa a ogni cartella di contratto
+  - L'amministratore assegna l'ID risorsa a ogni cartella di contratto.
 
-  - L'amministratore SCC accede al Centro sicurezza e conformità
+  - L'amministratore SCC accede al Centro sicurezza e conformità.
 
-  - L'amministratore SCC crea tipi di eventi correlati al contratto, come "Creazione contratto", "Scadenza contratto".
+  - L'amministratore SCC crea tipi di eventi correlati al contratto, come "Creazione contratto" o "Scadenza contratto".
 
   - L'amministratore SCC crea l'etichetta "Scadenza contratto".
 
-  - L'etichetta "Scadenza contratto" viene pubblicata e applicata manualmente o automaticamente ai documenti contrattuali in SharePoint
+  - L'etichetta "Scadenza contratto" viene pubblicata e applicata manualmente o automaticamente ai documenti contrattuali in SharePoint.
 
-  - Il sistema di gestione dei contrati può eseguire periodicamente Microsoft Flow o un'applicazione simile per gestire i documenti contrattuali
+  - Il sistema di gestione dei contratti può eseguire periodicamente Microsoft Flow o un'applicazione simile per gestire i documenti contrattuali.
 
   - Se un contratto scade, Microsoft Flow attiverà l'API REST di conservazione basata sugli eventi di M365 che avvierà l'intervallo di conservazione nei documenti del contratto specifico.
 
@@ -453,21 +451,21 @@ Un sistema ERP (Enterprise Resource Planning) può utilizzare Microsoft 365 e Mi
 
 ![Diagramma di ruoli e attività per uno scenario di ciclo di vita del prodotto](media/automate-event-driven-retention-product-lifecycle-expiration.png)
 
-  - L'amministratore crea cartelle del prodotto nel set di documenti, ad esempio Prodotto 1, Prodotto 2, ecc.
+  - L'amministratore crea delle cartelle di prodotto nel set di documenti, ad esempio Prodotto 1, Prodotto 2, ecc.
 
-  - L'amministratore aggiunge i documenti del prodotto, ad esempio Specifiche di produzione, Prezzi del prodotto, Licenze del prodotto a ogni cartella di prodotto
+  - L'amministratore aggiunge i documenti del prodotto, ad esempio Specifiche di produzione, Prezzi del prodotto, Licenze del prodotto a ogni cartella.
 
   - L'amministratore assegna l'ID risorsa a ogni cartella di prodotto.
 
-  - L'amministratore SCC accede al Centro sicurezza e conformità
+  - L'amministratore SCC accede al Centro sicurezza e conformità.
 
   - L'amministratore SCC crea tipi di eventi correlati al prodotto, come "Inizio produzione", "Fine produzione".
 
   - L'amministratore SCC crea l'etichetta "Fine produzione".
 
-  - L'etichetta "Fine produzione" viene pubblicata e applicata manualmente o automaticamente ai documenti del prodotto in SharePoint
+  - L'etichetta "Fine produzione" viene pubblicata e applicata manualmente o automaticamente ai documenti del prodotto in SharePoint.
 
-  - I sistemi ERP possono eseguire periodicamente Microsoft Flow o applicazioni simili per gestire i documenti del prodotto
+  - I sistemi ERP possono eseguire periodicamente Microsoft Flow o applicazioni simili per gestire i documenti del prodotto.
 
   - Se un prodotto esce fuori produzione, Microsoft Flow attiverà l'API REST di conservazione basata sugli eventi di M365 che avvierà l'intervallo di conservazione nei documenti del prodotto specifico.
 
@@ -475,11 +473,11 @@ Un sistema ERP (Enterprise Resource Planning) può utilizzare Microsoft 365 e Mi
 
 ### <a name="using-redirect-302-response-results-to-call-the-rest-api"></a>Uso dei risultati della risposta Redirect 302 per chiamare l'API REST
 
-1.  Chiamare un evento di conservazione POST usando l'URL dell'API REST <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (sono necessarie le autorizzazioni di amministratore globale)
+1. Chiamare un evento di conservazione POST usando l'URL dell'API REST <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (sono necessarie le autorizzazioni di amministratore globale)
 
-2.  Controllare il codice di risposta. Se è 302, ottenere l'URL reindirizzato dalla proprietà Posizione dell'intestazione della risposta
+2. Controllare il codice di risposta. Se è 302, ottenere l'URL reindirizzato dalla proprietà Posizione dell'intestazione della risposta
 
-3.  Chiamare nuovamente l'evento di conservazione POST usando l'URL reindirizzato.
+3. Chiamare nuovamente l'evento di conservazione POST usando l'URL reindirizzato.
 
 ## <a name="credits"></a>Riconoscimenti
 
