@@ -13,19 +13,19 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: In Office 365, è possibile utilizzare le etichette di conservazione per implementare una pianificazione di conservazione per l'organizzazione. I responsabili dei record manager o della conformità potrebbero dover creare e pubblicare centinaia di etichette di conservazione. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità; tuttavia, creare le etichette di conservazione una alla volta richiede molto tempo e non è pratico. Utilizzando lo script e i file .csv forniti in basso, è possibile creare e pubblicare in blocco le etichette di conservazione e i criteri per le etichette di conservazione. Innanzitutto, si crea un elenco delle etichette di conservazione e un elenco dei relativi criteri in Excel, quindi si creano in blocco le etichette di conservazione e i criteri per le etichette di conservazione utilizzando PowerShell. In questo modo è facile creare e pubblicare contemporaneamente tutte le etichette di conservazione necessarie per la pianificazione della conservazione.
-ms.openlocfilehash: 2be7c2251a3a35f32ff9754134cca1f5958b447a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+description: In Office 365 è possibile usare le etichette di conservazione per implementare una pianificazione di conservazione per l'organizzazione. Con lo script e i file CSV forniti, è possibile creare e pubblicare in blocco etichette di conservazione e criteri di etichetta di conservazione tramite PowerShell.
+ms.openlocfilehash: b2bf7f4a4934e1c5b0c88005e586dd6b0d38e3f9
+ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708138"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39631596"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Creare e pubblicare in blocco etichette di conservazione tramite PowerShell
 
 In Office 365, è possibile usare le etichette di conservazione per implementare una pianificazione di conservazione dell'organizzazione. I responsabili dei record o della conformità potrebbero dover creare e pubblicare centinaia di etichette di conservazione. È possibile farlo attraverso l'interfaccia utente nel Centro sicurezza e conformità; tuttavia, creare le etichette di conservazione una alla volta richiede molto tempo e non è pratico.
   
-Utilizzando lo script e i file .csv forniti in basso, è possibile creare e pubblicare in blocco le etichette e i criteri per le etichette. Innanzitutto, si crea un elenco delle etichette e un elenco dei relativi criteri in Excel, quindi si creano in blocco le etichette e i criteri per le etichette utilizzando PowerShell. In questo modo è facile creare e pubblicare contemporaneamente tutte le etichette necessarie per la pianificazione di conservazione.
+Con lo script e i file CSV forniti di seguito, è possibile creare in blocco etichette di conservazione e criteri di etichetta di conservazione. Prima di tutto, creare un elenco di etichette di conservazione e un elenco dei criteri di etichetta di conservazione in Excel e quindi usare PowerShell per creare in blocco le etichette di conservazione e i criteri di etichetta di conservazione contenuti in tali elenchi. In questo modo si possono creare e pubblicare facilmente e contemporaneamente tutte le etichette di conservazione richieste dalla pianificazione di conservazione.
   
 Per ulteriori informazioni sulle etichette di conservazione, vedere [Panoramica delle etichette](labels.md).
   
@@ -69,7 +69,7 @@ Note:
     
 - Se il file .csv contiene un criterio per le etichette di con conservazione con lo stesso nome di un altro già esistente, lo script ignora la creazione di quel criterio. Non vengono creati criteri per le etichette di conservazione duplicati.
     
-- Lo script pubblica solo etichette di conservazione che vengono applicate manualmente al contenuto. Lo script non supporta etichette di conservazione applicate automaticamente al contenuto.
+- Lo script pubblica solo le etichette di conservazione applicate manualmente al contenuto. Questo script non supporta le etichette di conservazione applicate automaticamente al contenuto.
     
 - Se si modificano o rinominano le intestazioni delle colonne, lo script avrà esito negativo. Lo script richiede un file .csv nel formato fornito qui.
     
