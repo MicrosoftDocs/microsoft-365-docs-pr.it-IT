@@ -1,0 +1,106 @@
+### YamlMime:Hub
+title: Documentazione e risorse di Microsoft 365 Enterprise
+summary: App di produttività Best-in-Class con servizi cloud intelligenti che trasformano la modalità di lavoro.
+brand: m365
+metadata:
+  title: Documentazione e risorse di Microsoft 365 Enterprise
+  description: Informazioni sulla documentazione del prodotto e sulle risorse disponibili per Microsoft 365 Enterprise per professionisti IT, Information Worker e Partners.
+  services: service
+  ms.prod: microsoft-365-enterprise
+  ms.service: O365-seccomp
+  ms.topic: hub-page
+  ms.collection: M365-subscription-management
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 11/29/2019
+  ms.openlocfilehash: 945412e8e66fe558971ceacf3a57023b5bba6e5f
+  ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 12/03/2019
+  ms.locfileid: "39669539"
+highlightedContent:
+  items:
+  - title: Informazioni su Microsoft 365 Enterprise
+    itemType: get-started
+    url: microsoft-365-overview.md
+  - title: Accelerare la distribuzione con FastTrack
+    itemType: quickstart
+    url: https://www.microsoft.com/fasttrack/microsoft-365
+  - title: Addestrare i professionisti IT e gli amministratori
+    itemType: learn
+    url: https://docs.microsoft.com/learn/m365/
+conceptualContent:
+  title: Ottenere assistenza con Microsoft 365 Enterprise e altre risorse
+  summary: Esplorare le funzionalità e i servizi di Microsoft 365 Enterprise Deployment.
+  items:
+  - title: Seguire la Guida di orientamento alla distribuzione
+    links:
+    - url: deploy-microsoft-365-enterprise.md
+      itemType: deploy
+      text: Panoramica della distribuzione
+    - url: deploy-foundation-infrastructure.md
+      itemType: how-to-guide
+      text: Infrastruttura di base
+    - url: deploy-workloads.md
+      itemType: how-to-guide
+      text: Carichi di lavoro e scenari
+    - url: desktop-deployment-center-home.md
+      itemType: get-started
+      text: Centro di distribuzione desktop
+  - title: Distribuire gli elementi chiave
+    links:
+    - url: identity-infrastructure.md
+      itemType: how-to-guide
+      text: Infrastruttura di identità
+    - url: https://docs.microsoft.com/windows/deployment/
+      itemType: get-started
+      text: Windows 10 Enterprise
+    - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
+      itemType: deploy
+      text: Office 365 ProPlus
+    - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
+      itemType: deploy
+      text: Microsoft Intune
+  - title: Distribuire scenari chiave
+    links:
+    - url: secure-teams-highly-regulated-data-scenario.md
+      itemType: how-to-guide
+      text: Microsoft Teams per dati altamente regolamentati
+    - url: teams-sharepoint-online-sites-highly-regulated-data.md
+      itemType: how-to-guide
+      text: Siti di SharePoint per dati altamente regolamentati
+    - url: empower-people-to-work-remotely.md
+      itemType: how-to-guide
+      text: Operatori remoti
+    - url: migration-microsoft-365-enterprise-workload.md
+      itemType: deploy
+      text: Client e server di Office e migrazione di Windows
+  - title: Gestire Microsoft 365 Enterprise
+    links:
+    - url: https://docs.microsoft.com/windows/deployment/update/
+      itemType: how-to-guide
+      text: Windows 10 Enterprise
+    - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
+      itemType: concept
+      text: Office 365 ProPlus
+    - url: https://docs.microsoft.com/intune/apps/app-management
+      itemType: get-started
+      text: App con Intune
+    - url: https://docs.microsoft.com/office365/
+      itemType: get-started
+      text: Servizi di Office 365
+additionalContent:
+  sections:
+  - title: Altre risorse
+    summary: Per ulteriori informazioni, vedere altre caratteristiche e risorse di Microsoft 365.
+    items:
+    - title: Conformità di Microsoft 365
+      summary: Aiutare l'organizzazione a gestire le informazioni, a proteggersi dai rischi e a rispettare gli standard legali o normativi.
+      url: https://docs.microsoft.com/microsoft-365/compliance/index
+    - title: Sicurezza di Microsoft 365
+      summary: Proteggere l'organizzazione tra le superfici di attacco con robuste soluzioni e servizi di sicurezza.
+      url: https://docs.microsoft.com/microsoft-365/security/index
+    - title: Microsoft 365 Technical Community
+      summary: Connettere e collaborare con i peer e gli esperti della Microsoft Tech community e condividere le procedure consigliate di Microsoft 365.
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

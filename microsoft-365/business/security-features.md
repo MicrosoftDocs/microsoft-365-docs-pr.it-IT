@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Informazioni sulle funzionalità di sicurezza disponibili in Microsoft 365 business.
-ms.openlocfilehash: f24836ef93c529eddc05c767d6e4fa8af6aef314
-ms.sourcegitcommit: 5d11f516e78ea4a74145e19ba2300f0792c8bac1
+ms.openlocfilehash: 98eb0c2015ed6088b2d5e8621c8e72a5b63f2a17
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38715143"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668849"
 ---
 # <a name="microsoft-365-business-security-and-compliance-features"></a>Funzionalità di sicurezza e conformità di Microsoft 365 business
 
@@ -74,7 +74,8 @@ Le funzionalità avanzate di Microsoft 365 business sono disponibili per aiutare
     L'accesso all'interfaccia di amministrazione di Intune nel portale di Azure consente di configurare altre funzionalità di sicurezza, ad esempio la gestione dei dispositivi MacOS, iPhone e Android, insieme a Advanced Device Management per Windows, che non sono disponibili tramite Microsoft 365 Business Admin Center.
 - **Stesso [accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) come piano di Azure ad P1**
 
-    L'accesso condizionale può aiutare a proteggere l'organizzazione dal rischio di accesso, a tentativi di accessi da una rete o a impostazioni locali imprevisti, a tentativi di accesso da tipi di dispositivo rischiosi e così via. I criteri di accesso condizionale vengono applicati dopo che la prima autenticazione è stata completata e utilizza i segnali del primo evento di autenticazione per determinare se l'accesso al tentativo deve essere approvato, negato o se è presente un numero maggiore di prove, ad esempio la seconda forma di Identification) è obbligatorio.
+
+    L'accesso condizionale può aiutare a proteggere l'organizzazione dal rischio di accesso, a tentativi di accessi da una rete o a impostazioni locali imprevisti, a tentativi di accesso da tipi di dispositivo rischiosi e così via. I criteri di accesso condizionale vengono applicati dopo che la prima autenticazione è stata completata e utilizza i segnali del primo evento di autenticazione per determinare se l'accesso al tentativo deve essere approvato, negato o se sono presenti ulteriori prove, ad esempio una seconda forma di identificazione. è obbligatorio.
 
     Le funzionalità di accesso condizionale incluse sono:
 
