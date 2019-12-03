@@ -18,18 +18,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Riepilogo: Applicare la protezione delle informazioni di Azure per proteggere i file in un sito del team di SharePoint Online di livello estremamente riservato.'
-ms.openlocfilehash: b5251d393249e9023f6f437cb3df6c074ebdf436
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: 51950bd3c9790dedd2801e98234ff16470db6421
+ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39638061"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39668804"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>Proteggere i file di SharePoint Online con un'etichetta di riservatezza
 
 Seguire la procedura descritta in questo articolo per configurare un'etichetta di riservatezza di Office 365 per fornire la crittografia e le autorizzazioni per i file. Questi file possono essere aggiunti a una raccolta di SharePoint configurata per la protezione di livello estremamente riservato. In alternativa, è possibile aprire un file direttamente dal sito e applicare l'etichetta. La protezione tramite crittografia e autorizzazioni è veicolata da un file quando viene scaricato dal sito. 
 
-La procedura fa parte di una soluzione più ampia per configurare la protezione estremamente riservata per i siti di SharePoint e i file al loro interno. Per ulteriori informazioni, vedere [Siti e file di Secure SharePoint Online](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection). 
+La procedura fa parte di una soluzione più ampia per configurare la protezione estremamente riservata per i siti di SharePoint e i file al loro interno. Per ulteriori informazioni, vedere [Siti e file di Secure SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md). 
 
 L'uso delle etichette di riservatezza per i file in SharePoint Online non è consigliato per tutti i clienti, ma è disponibile come opzione per i clienti che hanno l'esigenza di questo livello di protezione per un sottoinsieme di file.
 
@@ -44,7 +44,7 @@ Per implementare questo ulteriore livello di sicurezza per i file in un determin
 
 - Usare un'etichetta di riservatezza quando è necessario un numero limitato di etichette sia per l'uso globale che per i singoli team privati.
 
-- Usare una sottoetichetta di riservatezza se si ha un numero elevato di etichette o se si vogliono organizzare le etichette per i team estremamente riservati sotto l'etichetta per i dati altamente regolamentati.
+- Usare una sottoetichetta di riservatezza se si ha un numero elevato di etichette o se si vogliono organizzare le etichette per i team estremamente riservati sotto un'etichetta generica per dati estremamente riservati.
 
 Seguire [queste istruzioni ](encryption-sensitivity-labels.md) per configurare un'etichetta separata o una sottoetichetta con le impostazioni seguenti:
 
@@ -67,7 +67,7 @@ Esistono due modi per concedere agli utenti esterni l'accesso ai file protetti c
 
 ## <a name="see-also"></a>Vedere anche
 
-[Protezione di file e siti di SharePoint Online](https://docs.microsoft.com/microsoft-365/compliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection)
+[Protezione di file e siti di SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
   
 [Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
