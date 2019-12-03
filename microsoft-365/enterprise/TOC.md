@@ -1,4 +1,4 @@
-# [Documentazione e risorse di Microsoft 365 Enterprise](index.md)
+# [Documentazione e risorse di Microsoft 365 Enterprise](index.yml)
 # [Panoramica di Microsoft 365 Enterprise](microsoft-365-overview.md)
 # [Distribuzione di Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
 ## [Distribuire l'infrastruttura di base](deploy-foundation-infrastructure.md)
