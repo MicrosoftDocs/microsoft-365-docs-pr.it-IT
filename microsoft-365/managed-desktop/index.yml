@@ -24,26 +24,31 @@ sections:
             html: '<p>Introduzione a Microsoft Managed Desktop per i decisori--cos''è, come funziona e cosa può fare per te</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_overview.svg'
+              alt: ''
             title: Cos'è Microsoft Managed Desktop?
           - href: service-description/index.md
             html: <p>Descrizione dettagliata di tutte le parti di Microsoft Managed Desktop</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+              alt: ''
             title: Descrizione servizio
           - href: get-ready/index.md
             html: <p>Tutti i passaggi per ottenere l'ambiente e l'organizzazione pronti per l'utilizzo con il servizio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_support.svg'
+              alt: ''
             title: Introduzione
           - href: get-started/index.md
             html: '<p>Ottenere l''organizzazione a bordo con Microsoft Managed Desktop, tra cui la configurazione di dispositivi e la distribuzione di app</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-            title: Introduzione
+              alt: ''
+            title: Attività iniziali
           - href: working-with-managed-desktop/index.md
             html: <p>Tutto sulle operazioni quotidiane con il servizio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_portal.svg'
+              alt: ''
             title: Utilizzo di Microsoft Managed Desktop
   - title: Nuovi articoli e post di Blog
     items:
