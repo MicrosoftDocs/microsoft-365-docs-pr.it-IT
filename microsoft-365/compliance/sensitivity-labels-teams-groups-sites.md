@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile applicare etichette a Microsoft teams, gruppi di Office 365 e siti di SharePoint.
-ms.openlocfilehash: 72bdfef27ba20fabb0d59852e4e20425b2747425
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: a6c187227703395ed5fe3d926dabe30e6203fca5
+ms.sourcegitcommit: 909f18d6c497086899fa239b5b5e0bb91f1e7804
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818838"
+ms.locfileid: "39819132"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)
 
@@ -77,15 +77,15 @@ Queste immagini mostrano:
   }
 ```
 
-Quando si Abilita l'anteprima, Office 365 non utilizza più le vecchie classificazioni per i nuovi gruppi e i siti di SharePoint. Se è stata utilizzata la [classificazione del sito di Azure ad](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["classificazione"]), i gruppi e i siti esistenti continuano a visualizzare le vecchie classificazioni. Per visualizzare le nuove classificazioni, convertirle. Per informazioni su come convertirli, vedere [se è stata utilizzata la classificazione del sito di Azure ad classico](#if-you-used-classic-azure-ad-site-classification).
+Quando si Abilita l'anteprima, Office 365 non utilizza più le vecchie classificazioni per i nuovi gruppi e i siti di SharePoint. Se è stata utilizzata la [classificazione del sito di Azure ad](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["classificazione"]), i gruppi e i siti esistenti continuano a visualizzare le vecchie classificazioni. Per visualizzare le nuove classificazioni, convertirle. Per informazioni su come convertirli, vedere [se è stata utilizzata la classificazione del sito di Azure ad classico](#if-you-used-classic-azure-ad-site-classification). 
 
-## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Impostare le impostazioni del sito e del gruppo quando si creano (o modificano) le etichette di riservatezza
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Impostare le impostazioni del sito e del gruppo quando si creano o si modificano etichette di riservatezza
 
-Dopo aver abilitato l'anteprima, eseguire la procedura seguente per creare etichette di riservatezza. Le modifiche apportate a queste impostazioni possono richiedere fino a 24 ore di sincronizzazione.
+Dopo aver abilitato l'anteprima, eseguire la procedura seguente per creare o modificare le etichette di riservatezza. È necessario completare questa procedura per utilizzare le nuove etichette di riservatezza con i siti e i gruppi, anche se sono già state definite etichette. Le modifiche apportate a queste impostazioni possono richiedere fino a 24 ore di sincronizzazione.
 
 1. Nel centro conformità di Microsoft 365, selezionare **classificazione** > **etichette di riservatezza**.
 
-2. Selezionare **Crea un'etichetta**.
+2. Selezionare **Crea un'etichetta**. Se si dispone già di un'etichetta, passare al passaggio successivo.
 
 3. Selezionare le opzioni desiderate e quindi nella scheda **Impostazioni sito e gruppo** scegliere:
 
@@ -97,6 +97,14 @@ Dopo aver abilitato l'anteprima, eseguire la procedura seguente per creare etich
 
 > [!IMPORTANT]
 > Solo le impostazioni del sito e del gruppo hanno effetto quando si applica un'etichetta a un team, a un gruppo o a un sito. Altre impostazioni, ad esempio la crittografia e la marcatura del contenuto, non vengono applicate a tutto il contenuto all'interno del team, del gruppo o del sito. Analogamente, se si crea un'etichetta e non si attivano le impostazioni del sito e del gruppo, l'etichetta sarà ancora disponibile quando gli utenti creano team, gruppi e siti, ma non eseguiranno alcuna operazione quando gli utenti lo applicano.
+
+[Informazioni su come pubblicare un'etichetta di riservatezza](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
+
+## <a name="troubleshoot-sensitivity-label-deployment"></a>Risoluzione dei problemi relativi alla distribuzione di etichette sensibili
+
+Se si verificano problemi durante la creazione di un gruppo di team o di Office 365 dopo aver abilitato queste impostazioni o apportato una modifica alla descrizione di un'etichetta, salvare l'etichetta, attendere qualche ora e quindi provare a creare di nuovo il gruppo team o Office 365.
+
+Se non si è ancora in grado di visualizzare la nuova etichetta di riservatezza da SharePoint Online, contattare immediatamente il supporto tecnico Microsoft.
 
 [Informazioni su come pubblicare un'etichetta di riservatezza](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
