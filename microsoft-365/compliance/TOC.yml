@@ -1,6 +1,6 @@
 - name: Conformità di Microsoft 365
   href: index.yml
-- name: Introduzione
+- name: Attività iniziali
   items:
     - name: Novità del centro conformità
       href: whats-new.md
@@ -317,6 +317,8 @@
           href: export-search-results.md
         - name: Esportare un report di Ricerca contenuto
           href: export-a-content-search-report.md
+        - name: Utilizzare lo strumento di esportazione di eDiscovery in Microsoft Edge
+          href: configure-edge-to-export-search-results.md
         - name: Cercare ed eliminare messaggi di posta elettronica
           href: search-for-and-delete-messages-in-your-organization.md
         - name: Eseguire ricerche nelle cassette postali basate sul cloud di utenti locali in Office 365
@@ -1106,7 +1108,7 @@
           items:
             - name: California Consumer Privacy Act (CCPA)
               href: offering-ccpa.md
-            - name: Legge sulla privacy canadese
+            - name: Normativa sulla privacy in Canada
               href: offering-canadian-privacy-laws.md
         - name: Sud America
           items:

@@ -3,7 +3,7 @@ title: Domande frequenti sulla crittografia dei messaggi di Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Domande su come funzionano le nuove funzionalità di protezione dei messaggi di Office 365? Controllare la risposta qui.
-ms.openlocfilehash: 8fea73b73ab49dcfb0ac67935a9e027e87eb721a
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 95efde63ff9cf4c53522c0242a33001a35d2e334
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38686631"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818848"
 ---
 # <a name="office-365-message-encryption-faq"></a>Domande frequenti su Office 365 Message Encryption
 
@@ -133,7 +133,11 @@ Sì! È possibile configurare le regole del flusso di posta in Exchange Online o
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>È possibile aprire i messaggi crittografati inviati a una cassetta postale condivisa?
 
-Sì! I messaggi crittografati sono supportati per una cassetta postale condivisa. Sono valide alcune limitazioni.
+Sì! I messaggi crittografati sono supportati per una cassetta postale condivisa.
+
+- Gli utenti possono aprire mail protette in una cassetta postale condivisa in cui la cassetta postale condivisa ha ricevuto un messaggio di posta elettronica protetto come parte di un gruppo di distribuzione.
+
+- Gli utenti possono visualizzare gli allegati che ereditano la protezione dai messaggi di posta elettronica quando utilizzano Outlook per Windows, Outlook per Mac e Outlook sul Web.
 
 ## <a name="is-delegated-access-supported"></a>L'accesso delegato è supportato?
 

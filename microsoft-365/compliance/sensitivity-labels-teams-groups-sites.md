@@ -1,9 +1,9 @@
 ---
-title: Utilizzare le etichette di riservatezza con Microsoft teams, i gruppi di Office 365 e i siti di SharePoint (anteprima pubblica)
+title: Usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/13/2019
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile applicare etichette a Microsoft teams, gruppi di Office 365 e siti di SharePoint.
-ms.openlocfilehash: 5fc7fec199482449baf9174d6e854d0a5564faa6
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: 72bdfef27ba20fabb0d59852e4e20425b2747425
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686529"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818838"
 ---
-# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Utilizzare le etichette di riservatezza con Microsoft teams, i gruppi di Office 365 e i siti di SharePoint (anteprima pubblica)
+# <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)
 
 Quando si creano etichette di riservatezza nel [centro conformità di microsoft 365](https://protection.office.com/), è possibile applicarle a Microsoft teams, gruppi di Office 365 e siti di SharePoint. È possibile associare i criteri alle etichette da controllare:
 
@@ -37,6 +37,8 @@ A questo punto, è anche possibile abilitare le etichette di riservatezza per i 
 ## <a name="about-the-public-preview-for-microsoft-teams-office-365-groups-and-sharepoint-sites"></a>Informazioni sull'anteprima pubblica per Microsoft teams, i gruppi di Office 365 e i siti di SharePoint
 
 Le etichette di riservatezza per Microsoft teams, i gruppi di Office 365 e i siti di SharePoint vengono gradualmente distribuite ai tenant e potrebbero cambiare prima del rilascio finale.
+
+L'anteprima pubblica non funziona con le reti di distribuzione del contenuto di Office 365 (reti CDN).
 
 ## <a name="overview"></a>Panoramica
 
@@ -77,9 +79,9 @@ Queste immagini mostrano:
 
 Quando si Abilita l'anteprima, Office 365 non utilizza più le vecchie classificazioni per i nuovi gruppi e i siti di SharePoint. Se è stata utilizzata la [classificazione del sito di Azure ad](/sharepoint/dev/solution-guidance/modern-experience-site-classification) ($Setting ["classificazione"]), i gruppi e i siti esistenti continuano a visualizzare le vecchie classificazioni. Per visualizzare le nuove classificazioni, convertirle. Per informazioni su come convertirli, vedere [se è stata utilizzata la classificazione del sito di Azure ad classico](#if-you-used-classic-azure-ad-site-classification).
 
-## <a name="set-site-and-group-settings-when-you-create-sensitivity-labels"></a>Impostare le impostazioni del sito e del gruppo quando si creano etichette di riservatezza
+## <a name="set-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>Impostare le impostazioni del sito e del gruppo quando si creano (o modificano) le etichette di riservatezza
 
-Dopo aver abilitato l'anteprima, attenersi alla seguente procedura:
+Dopo aver abilitato l'anteprima, eseguire la procedura seguente per creare etichette di riservatezza. Le modifiche apportate a queste impostazioni possono richiedere fino a 24 ore di sincronizzazione.
 
 1. Nel centro conformità di Microsoft 365, selezionare **classificazione** > **etichette di riservatezza**.
 

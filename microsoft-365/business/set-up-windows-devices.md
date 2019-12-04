@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 'Informazioni su come configurare i dispositivi Windows che eseguono Windows 10 Pro per gli utenti aziendali di Microsoft 365. '
-ms.openlocfilehash: f929c64b00e4ebf24e9f82fcfea433119abf2f1c
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: b377c1e69d117b893b256880cd3b9972e33345c7
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718880"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812879"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurare i dispositivi Windows per utenti di Microsoft 365 Business
 
@@ -37,7 +37,13 @@ Se sono presenti dispositivi Windows che eseguono Windows 7 Pro, Windows 8 Pro o
   
 Per altre informazioni su come eseguire l'aggiornamento di dispositivi Windows Pro a Windows 10 Pro Creators Update, seguire i passaggi descritti in questo argomento: [Eseguire l'aggiornamento di dispositivi Windows a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
   
-Vedere [verificare che il dispositivo sia connesso a Azure](#verify-the-device-is-connected-to-azure-ad) ad per verificare che l'aggiornamento sia stato effettuato o che l'aggiornamento abbia avuto esito positivo. 
+Vedere [verificare che il dispositivo sia connesso a Azure](#verify-the-device-is-connected-to-azure-ad) ad per verificare che l'aggiornamento sia stato effettuato o che l'aggiornamento abbia avuto esito positivo.
+
+Guardare un breve video sulla connessione di Windows a Microsoft 365.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
+
+Se è stato trovato utile questo video, vedere la [serie completa di formazione per le piccole imprese e quelle nuove a Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Unire i dispositivi Windows 10 a Azure AD dell'organizzazione.
 
@@ -115,3 +121,6 @@ Verificare che i dispositivi Windows 10 uniti a Azure AD siano stati aggiornati 
 
 Per configurare i dispositivi mobili, vedere [Configurare i dispositivi mobili per utenti di Microsoft 365 Business](set-up-mobile-devices.md). Per impostare i criteri di protezione del dispositivo o dell'app, vedere [Gestire Microsoft 365 Business](manage.md).
   
+## <a name="see-also"></a>Vedere anche
+
+[Video di formazione aziendale Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

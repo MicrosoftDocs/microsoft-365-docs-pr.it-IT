@@ -1,38 +1,31 @@
 ---
-title: Configurazione dispositivo
+title: Configurazione del dispositivo
 description: Informazioni sui criteri predefiniti applicati ai dispositivi Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 93c7cca75f513008706b4a52b4bbc1bc033341aa
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.openlocfilehash: 5eb91a45d844863b27ee208bda2bee812789851e
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35830484"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813846"
 ---
-# <a name="device-configuration"></a>Configurazione dispositivo
+# <a name="device-configuration"></a>Configurazione del dispositivo
 
 
 <!--This topic is the target for a "Learn more" link in the Enterprise Agreement (aka.ms/dev-config); do not delete.-->
 
 <!-- Device configuration and Security Addendum-->
 
-Quando viene configurato un nuovo dispositivo Microsoft Managed Desktop, è necessario garantire la corretta configurazione per Microsoft Managed Desktop. Questo include un insieme di criteri predefiniti che vengono impostati come parte del processo di onboarding. Per evitare conflitti, non modificare questi criteri. 
+Quando viene configurato un nuovo dispositivo Microsoft Managed Desktop, è necessario garantire la corretta configurazione per Microsoft Managed Desktop. Questo include un insieme di criteri predefiniti che vengono impostati come parte del processo di onboarding. Questi criteri vengono recapitati utilizzando la gestione dei dispositivi mobili (MDM) quando possibile. Per ulteriori informazioni, vedere [gestione dei dispositivi mobili](https://docs.microsoft.com/windows/client-management/mdm/). 
 
-I dispositivi arriveranno con un'immagine della firma, quindi aggiungeranno il dominio di Azure Active Directory quando il primo utente accede. Il dispositivo installerà automaticamente i criteri e le applicazioni necessari senza che sia necessario un intervento IT.
+>[!NOTE]
+>Per evitare conflitti, non modificare questi criteri.
 
-## <a name="why-mdm-over-group-policy"></a>Perché MDM su criteri di gruppo
-
-Esistono alcuni motivi per utilizzare la gestione dei dispositivi mobili (MDM) anziché criteri di gruppo:
-
-- Sicurezza-i criteri MDM sono più sicuri. Criteri di gruppo è stato creato per funzionare al meglio con l'identità locale, mentre MDM è stato disegnato per funzionare al meglio con Cloud Identity Management (Azure Active Directory).
-- Affidabilità: i criteri MDM offrono una distribuzione di criteri più affidabile. Inoltre, le impostazioni MDM sovrascrivono i criteri oggetto Criteri di gruppo (GPO). A partire da Windows 10, versione 1803, le impostazioni MDM sono prioritarie rispetto ai valori dei criteri di gruppo, che supportano i clienti che si spostano alla gestione moderna. 
-- Allinea con Microsoft Managed Desktop Vision-fornisce un monitoraggio più completo sulla distribuzione dei criteri e supporta l'approccio basato su gruppo per l'implementazione graduale delle modifiche dei criteri con la possibilità di sospendere/riprendere la distribuzione, se necessario.
-
-Per ulteriori informazioni, vedere [gestione dei dispositivi mobili](https://docs.microsoft.com/windows/client-management/mdm/). 
+I dispositivi arriveranno con un'immagine della firma, quindi aggiungeranno il dominio di Azure Active Directory quando il primo utente accede. Il dispositivo installerà automaticamente i criteri e le applicazioni necessari senza intervenire dal personale IT.
 
 ## <a name="default-policies"></a>Criteri predefiniti
 

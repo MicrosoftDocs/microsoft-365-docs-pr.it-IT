@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -22,22 +23,28 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Per ulteriori informazioni, vedere Microsoft 365 business.
-ms.openlocfilehash: abd1e8374ef7530a879de71ab7ad0125f1ca4616
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 419754b5ea06baabac8c170a860e076dc7fa8f81
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676079"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39812859"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Panoramica di Microsoft 365 business
 
 ## <a name="what-is-microsoft-365-business"></a>Che cos'è Microsoft 365 business
 
 Microsoft 365 business è un servizio di sottoscrizione che include gli strumenti di produttività di Office 365 e funzionalità avanzate che consentono di proteggere la propria azienda da Cyberthreats, proteggere i dati e gestire i dispositivi.
+
+Guardare questo video per una breve panoramica di Microsoft 365 business.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
+Se è stato trovato utile questo video, vedere la [serie completa di formazione per le piccole imprese e quelle nuove a Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+
 Microsoft 365 business è destinato a un massimo di 300 licenze. Per ulteriori informazioni, vedere documentazione relativa a [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) .
 
-Vedere [Descrizione servizio Microsoft 365 business](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) per l'intero elenco delle caratteristiche.
+Vedere la [Descrizione del servizio Microsoft 365 business](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) per l'intero elenco delle caratteristiche.
   
 ## <a name="small-business-security-needs"></a>Requisiti di sicurezza per le aziende di piccole dimensioni
 
@@ -102,3 +109,7 @@ Per visualizzare l'elenco completo delle funzionalità di sicurezza, vedere [Mic
 
     > [!NOTE]
     > Questo collegamento è solo per gli archivi negli Stati Uniti
+
+## <a name="see-also"></a>Vedere anche
+
+[Video di formazione aziendale Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Invece di esportare i risultati effettivi di una ricerca contenuto nel centro sicurezza & conformità in Office 365, è possibile esportare un rapporto sui risultati di ricerca. Il report contiene un riepilogo dei risultati della ricerca e un documento con informazioni dettagliate su ogni elemento che verrebbe esportato.
-ms.openlocfilehash: 9fe006ba595920f938a4d070eb87987137d73f7e
-ms.sourcegitcommit: db580dc2626328d324f65c7380a5816a500688a7
+ms.openlocfilehash: 5146120afd9ea36845f5a0d19619da35379438d5
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37437786"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676793"
 ---
 # <a name="export-a-content-search-report"></a>Esportare un report di Ricerca contenuto
 
@@ -32,7 +32,7 @@ Invece di esportare il set completo di risultati della ricerca da una ricerca di
   
 Quando si esporta un report, viene scaricato in una cartella con lo stesso nome della ricerca di contenuto, ma accodato con *_ReportsOnly*. Ad esempio, se la ricerca di contenuto è denominata *ContosoCase0815*, il report viene scaricato in una cartella denominata *ContosoCase0815_ReportsOnly*. Per un elenco dei documenti inclusi nel report, vedere [What ' s incluso nel report](#whats-included-in-the-report).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per esportare un rapporto di ricerca contenuto, è necessario assegnare il ruolo di gestione della ricerca di conformità nel centro sicurezza & Compliance. Questo ruolo viene assegnato ai gruppi di ruoli di gestione eDiscovery e dell'organizzazione incorporati. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
@@ -44,15 +44,17 @@ Quando si esporta un report, viene scaricato in una cartella con lo stesso nome 
     
   - Microsoft .NET Framework 4.7
     
-  - Browser supportato:
-    
-    - Microsoft Edge
-    
-      oppure
-    
-    - Microsoft Internet Explorer 10 e versioni successive
-    
-    **Nota:** Microsoft non produce estensioni o componenti aggiuntivi di terze parti per le applicazioni ClickOnce. L'esportazione dei risultati di ricerca utilizzando un browser non supportato con le estensioni di terze parti o i componenti aggiuntivi non è supportata. 
+- Per eseguire lo strumento di esportazione di eDiscovery<sup>1</sup>, è necessario utilizzare uno dei seguenti browser supportati:
+
+  - Microsoft Edge <sup>2</sup>
+
+    OPPURE
+
+  - Microsoft Internet Explorer 10 e versioni successive
+
+  > [!NOTE]
+  > <sup>1</sup> Microsoft non produce estensioni o componenti aggiuntivi di terze parti per le applicazioni ClickOnce. L'esportazione dei risultati di ricerca utilizzando un browser non supportato con le estensioni di terze parti o i componenti aggiuntivi non è supportata.<br/>
+  > <sup>2</sup> come risultato delle recenti modifiche apportate a Microsoft Edge, il supporto ClickOnce non è più abilitato per impostazione predefinita. Per istruzioni sull'abilitazione del supporto ClickOnce in Edge, vedere [utilizzare lo strumento di esportazione di eDiscovery di Office 365 in Microsoft Edge](configure-edge-to-export-search-results.md).
 
 - Se le dimensioni totali stimate dei risultati restituiti da una ricerca di contenuto superano 2 TB, l'esportazione del rapporto ha esito negativo. Per esportare correttamente il report, provare a restringere l'ambito e rieseguire la ricerca in modo che le dimensioni stimate dei risultati siano inferiori a 2 TB.
 

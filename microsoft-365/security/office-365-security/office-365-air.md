@@ -4,7 +4,7 @@ keywords: ARIA, autoIR, ATP, automatizzato, investigazione, risposta, correzione
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Iniziare a utilizzare le funzionalità di risposta agli incidenti automatici in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 13f7e95829b8cf3adf17a40cf7b02c5322b15ea7
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 9db3a788f5a2f2c7101b5165935884c1d76bccbd
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673422"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813866"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Analizzare e rispondere automaticamente alle minacce in Office 365
 
@@ -35,17 +35,6 @@ Con l'aria, quando vengono attivati determinati avvisi, vengono avviati uno o pi
 - [Visualizzare i dettagli di un'indagine](#view-details-of-an-investigation)
 - [Esaminare e approvare le azioni in seguito a un'indagine](#review-and-approve-actions) 
 - [Visualizzare i dettagli relativi a un avviso relativo a un'indagine](#view-details-about-an-alert-related-to-an-investigation)
-
-> [!NOTE]
-> Per eseguire le attività descritte in questo articolo, è necessario disporre delle autorizzazioni appropriate. Ad esempio, è possibile che Myst sia un amministratore globale, un amministratore della sicurezza, un operatore di sicurezza o un lettore di sicurezza. [Per ulteriori informazioni, vedere ruoli e autorizzazioni per il Centro sicurezza di Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
-
-L'aria è inclusa nei seguenti abbonamenti:
-- Microsoft 365 E5
-- Microsoft 365 E5 Security
-- Office 365 E5
-- Office 365 Advanced Threat Protection (Piano 2)
-
-Se non si dispone di uno di questi abbonamenti, [avviare una versione di valutazione gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
 
@@ -120,10 +109,8 @@ Per impostare questa impostazione, utilizzare le risorse seguenti:
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Ulteriori informazioni sugli avvisi](../../compliance/alert-policies.md)
-
-[Trovare e studiare manualmente messaggi di posta elettronica dannosi che sono stati recapitati in Office 365](investigate-malicious-email-that-was-delivered.md)
-
-[Informazioni su AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-
-[Visitare la Guida di orientamento di Microsoft 365 per vedere cosa succederà tra breve e in uscita](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Informazioni su come ottenere l'aria e vedere le autorizzazioni necessarie](automated-investigation-response-office.md#how-to-get-air)
+- [Ulteriori informazioni sugli avvisi](../../compliance/alert-policies.md)
+- [Trovare e studiare manualmente messaggi di posta elettronica dannosi che sono stati recapitati in Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Informazioni su AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Visitare la Guida di orientamento di Microsoft 365 per vedere cosa succederà tra breve e in uscita](https://www.microsoft.com/microsoft-365/roadmap?filters=)

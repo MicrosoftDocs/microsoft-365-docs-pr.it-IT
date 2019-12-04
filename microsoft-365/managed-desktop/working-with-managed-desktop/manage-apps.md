@@ -4,15 +4,16 @@ description: Informazioni su come aggiornare le app line-of-business distribuite
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 425ba674ca9911e4c93bda4fc9ad61cec7fb85b7
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7aca4713aae189e39133e08a1fbcad6fd75e6a70
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012411"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813856"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Gestire le app line-of-business in Microsoft Managed Desktop
 
@@ -41,7 +42,7 @@ L'app aggiornata verrà distribuita nei dispositivi dell'utente.
 ## <a name="update-line-of-business-apps-in-intune"></a>Aggiornare le app line-of-business in Intune
 
 **Per aggiornare le app line-of-business in Intune**
-1. Accedere al [portale di Azure](https://azure.portal.com).
+1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoring + Management** .
 3. Selezionare **app Client > app**.
 4. Individuare e selezionare l'app nell'elenco delle app.

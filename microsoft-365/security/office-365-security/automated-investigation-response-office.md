@@ -3,7 +3,7 @@ title: Risposta agli incidenti automatici (AIR) in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 11/15/2019
+ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +13,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 18da20491f9641b8313304e350f9c224b63cc5d9
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: dc1f2a4c0c91cf7b1e2d351f173367e34c5d3323
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673402"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813916"
 ---
 # <a name="automated-incident-response-air-in-office-365"></a>Risposta agli incidenti automatici (AIR) in Office 365
 
 Le funzionalità di risposta agli incidenti automatici consentono di eseguire processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. AIR può aiutare il team delle operazioni di sicurezza a operare in modo più efficiente ed efficace.
 - Per ottenere una panoramica del funzionamento dell'aria, utilizzare questo articolo.
 - Per iniziare a usare AIR, vedere [indagare e rispondere automaticamente alle minacce in Office 365](office-365-air.md).
-
-> [!NOTE]
-> Per accedere alle funzionalità AEREe, è necessario essere un amministratore globale, un amministratore della sicurezza, un operatore di sicurezza o un lettore di sicurezza. Per ulteriori informazioni su queste autorizzazioni, vedere [Microsoft 365 Security Center: Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
 ## <a name="the-overall-flow-of-air"></a>Flusso globale dell'aria
 
@@ -47,24 +44,22 @@ Nelle sezioni seguenti vengono fornite ulteriori informazioni su AIR, inclusi i 
 
 Gli [avvisi](../../compliance/alert-policies.md#viewing-alerts) rappresentano trigger per i flussi di lavoro del team di operazioni di sicurezza per la risposta agli incidenti. Definire la priorità del set di avvisi appropriato per l'analisi, assicurandosi che non vi siano minacce non indirizzate. Quando le indagini sugli avvisi vengono eseguite manualmente, i team delle operazioni di sicurezza devono cercare e correlare le entità (ad esempio, il contenuto, i dispositivi e gli utenti) a rischio di minacce. Tali attività e flussi di lavoro richiedono molto tempo e coinvolgono più strumenti e sistemi. Con AIR, l'analisi e la risposta vengono automatizzate in avvisi chiave per la sicurezza e la gestione delle minacce che attivano automaticamente gli schemi di risposta alla sicurezza. 
 
-Nella versione iniziale di AIR (a partire da aprile 2019), gli avvisi generati dai seguenti criteri di avviso per singoli eventi vengono analizzati automaticamente. 
+Nella versione iniziale di AIR (a partire da aprile 2019), gli avvisi generati dai seguenti tipi di criteri di avviso a evento singolo vengono analizzati automaticamente:  
 
 - È stato rilevato un clic URL potenzialmente dannoso
-
 - Messaggi di posta elettronica segnalati dall'utente come phishing *
-
 - Messaggi di posta elettronica contenenti malware rimossi dopo il recapito *
-
 - Messaggi di posta elettronica contenenti gli URL di phishing rimossi dopo il recapito *
-
 - Modelli di invio di messaggi di posta elettronica sospetti #
-
 - Utente con limitazioni all'invio di posta elettronica #
 
 > [!NOTE]
 > Agli avvisi contrassegnati da un asterisco (*) viene assegnata una gravità *informativa* nei rispettivi criteri di avviso all'interno del centro sicurezza & conformità, con le notifiche di posta elettronica disattivate. Le notifiche tramite posta elettronica possono essere attivate tramite la [configurazione del criterio di avviso](../../compliance/alert-policies.md#alert-policy-settings). Gli avvisi contrassegnati con un hash (#) sono generalmente disponibili agli avvisi associati ai PlayBook di anteprima pubblica.
 
-Per visualizzare gli avvisi, nel centro sicurezza & conformità scegliere **avvisi** > **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente. Tenere presente che gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, è necessario modificare il filtro degli avvisi per includere gli avvisi informativi.
+Per visualizzare gli avvisi, nel centro sicurezza & conformità scegliere **avvisi** > **Visualizza avvisi**. Selezionare un avviso per visualizzare i dettagli, quindi utilizzare il collegamento **Visualizza analisi** per passare all' [analisi](#investigation-graph)corrispondente. 
+
+> [!NOTE]
+> Gli avvisi informativi sono nascosti nella visualizzazione avviso per impostazione predefinita. Per visualizzarli, modificare il filtro degli avvisi per includere gli avvisi informativi.
 
 Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione eventi e informazioni di sicurezza, è possibile inviare avvisi di Office 365 a tale sistema tramite notifica tramite posta elettronica o tramite l' [API di gestione di office 365 Management](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche di avviso per l'analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro sicurezza & conformità, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
 
@@ -259,7 +254,7 @@ Azioni acquisire i passaggi consigliati da Microsoft al termine di un'indagine. 
 
 Quando un utente dell'organizzazione invia un messaggio di posta elettronica e lo segnala a Microsoft utilizzando il [componente aggiuntivo per i messaggi di report per Outlook o Outlook Web Access](enable-the-report-message-add-in.md), il report viene inviato anche al sistema ed è visibile in Esplora nella visualizzazione segnalata dall'utente. Questo messaggio visualizzato dall'utente ora attiva un avviso informativo basato sul sistema, che avvia automaticamente il PlayBook di analisi.
 
-Durante la fase di analisi radice, vengono valutati vari aspetti del messaggio di posta elettronica. Queste funzionalità sono:
+Durante la fase di analisi radice, vengono valutati vari aspetti del messaggio di posta elettronica. Ad esempio:
 - Determinazione del tipo di minaccia che potrebbe essere;
 - Chi lo ha inviato;
 - In cui è stato inviato il messaggio di posta elettronica (infrastruttura di invio);
@@ -308,6 +303,15 @@ Office 365 AIR è incluso negli abbonamenti seguenti:
 Se non si dispone di una o più di queste sottoscrizioni, [avviare una versione di valutazione gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
 
 Per ulteriori informazioni sulla disponibilità delle funzionalità, visitare la [disponibilità delle funzionalità tra i piani di Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+
+## <a name="required-permissions-to-use-air-capabilities"></a>Autorizzazioni necessarie per l'utilizzo delle funzionalità AEREe
+
+Le autorizzazioni vengono concesse tramite alcuni ruoli, ad esempio quelli descritti nella tabella seguente: 
+
+|Attività |Ruoli necessari |
+|--|--|
+|Per impostare le caratteristiche dell'aria |Uno dei seguenti: <br/>- **Amministratore globale**<br/>- **Amministratore della sicurezza** <br/>Questi ruoli possono essere assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
+|Per approvare o rifiutare le azioni consigliate|Uno dei seguenti (questi ruoli possono essere assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)):<br/>- **Amministratore globale** <br/>- **Amministratore della sicurezza**<br/>- **Lettore di sicurezza** <br/>---e---<br/>- **Search and Purge** (questo ruolo è assegnato solo nel [Centro sicurezza & conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center))
 
 ## <a name="next-steps"></a>Passaggi successivi
 

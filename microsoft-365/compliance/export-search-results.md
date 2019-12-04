@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & conformità a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
-ms.openlocfilehash: 3d416e1e808ae6045f5510e0a051f038e4b38c06
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: b3c978f57533623a6e58d22919430f4e02e78b77
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686568"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676783"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
@@ -34,7 +34,7 @@ Tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultat
   
 L'esportazione dei risultati di una ricerca di contenuto comporta la preparazione dei risultati e il relativo download a un computer locale.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per esportare i risultati della ricerca, è necessario assegnare il ruolo di gestione export nel centro sicurezza & Compliance. Questo ruolo è assegnato al gruppo di ruoli Gestore di eDiscovery incorporato. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
@@ -44,15 +44,17 @@ L'esportazione dei risultati di una ricerca di contenuto comporta la preparazion
     
   - Microsoft .NET Framework 4.7
     
-  - Browser supportato:
+- Per eseguire lo strumento di esportazione di eDiscovery<sup>1</sup>, è necessario utilizzare uno dei seguenti browser supportati:
+
+  - Microsoft Edge <sup>2</sup>
+  
+    OPPURE
+
+  - Microsoft Internet Explorer 10 e versioni successive
     
-     - Microsoft Edge
-    
-        OPPURE
-    
-     - Microsoft Internet Explorer 10 e versioni successive
-    
-    **Nota:** Microsoft non produce estensioni o componenti aggiuntivi di terze parti per le applicazioni ClickOnce. L'esportazione dei risultati di ricerca utilizzando un browser non supportato con le estensioni di terze parti o i componenti aggiuntivi non è supportata. 
+  > [!NOTE]
+  > <sup>1</sup> Microsoft non produce estensioni o componenti aggiuntivi di terze parti per le applicazioni ClickOnce. L'esportazione dei risultati di ricerca utilizzando un browser non supportato con le estensioni di terze parti o i componenti aggiuntivi non è supportata.<br/>
+  > <sup>2</sup> come risultato delle recenti modifiche apportate a Microsoft Edge, il supporto ClickOnce non è più abilitato per impostazione predefinita. Per istruzioni sull'abilitazione del supporto ClickOnce in Edge, vedere [utilizzare lo strumento di esportazione di eDiscovery di Office 365 in Microsoft Edge](configure-edge-to-export-search-results.md).
     
 - Quando si scaricano i risultati della ricerca (descritti nel passaggio 2), è possibile aumentare la velocità di download configurando un'impostazione del registro di sistema di Windows nel computer utilizzato per esportare i risultati della ricerca. Per ulteriori informazioni, vedere [aumentare la velocità di download quando si esportano i risultati di ricerca di eDiscovery da Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
@@ -171,7 +173,7 @@ Come spiegato in precedenza, è possibile aumentare la velocità di download con
     
 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Di seguito sono riportate altre informazioni sull'esportazione dei risultati della ricerca.
   

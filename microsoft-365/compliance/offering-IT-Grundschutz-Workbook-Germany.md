@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ccb90c9b814c6e38793f48e671ddd07a16177045
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 9d9309c7840fd9ca6d0038444c40884dcb92ae83
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39625241"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676663"
 ---
 # <a name="compliance-offering-it-grundschutz-compliance-workbook"></a>Offerta per la conformità: manuale di conformità IT-Grundschutz
 
@@ -63,7 +63,6 @@ Microsoft Cloud per la Germania si trova fisicamente in Germania e rispetta i re
 - [IT-Grundschutz](https://www.bsi.bund.de/EN/Topics/ITGrundschutz/ITGrundschutzHome/itgrundschutzhome_node.html;jsessionid=5ABC53411232B460035220974AE634C4.1_cid351)
 - [Cataloghi IT-Grundschutz v.15](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/International/GSK_15_EL_EN_Draft.pdf?__blob=publicationFile&v=2) (2015)
 - [Standard BSI](https://www.bsi.bund.de/EN/Publications/BSIStandards/BSIStandards_node.html)
-- [Processo di certificazione IT-Grundschutz](https://www.bsi.bund.de/EN/Topics/ITGrundschutz/ITGrundschutzCertification/itgrundschutzcertification_node.html)
 - [Manuale di conformità IT-Grundschutz per Azure Germania](https://aka.ms/grundschutzworkbook)
 - [Requisiti dei Sistemi di gestione della sicurezza delle informazioni ISO/IEC 27001:2013](offering-iso-27001.md)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

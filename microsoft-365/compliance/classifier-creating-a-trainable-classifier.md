@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzare classificatori addestrabili quando uno dei classificatori di caselle pronti per l'uso non soddisfa le proprie esigenze. Un classificatore Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. In questo argomento viene illustrato come creare un classificatore personalizzato.
-ms.openlocfilehash: 2b1955a2079a26792e973eec1848fcdac8c58218
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: cb3cda9777d692a56263e92cd908eb09bfa99895
+ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633983"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39813374"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creazione di un classificatore addestrabile (anteprima)
 
@@ -28,6 +28,9 @@ Per ulteriori informazioni sui diversi tipi di classificatori, vedere [Guida int
 Questa sequenza temporale riflette una distribuzione di esempio.
 
 ![addestrare-classificatore-sequenza temporale](media/trainable-classifier-deployment-timeline_border.png)
+
+> [!TIP]
+> L'opzione opt-in è necessaria per la prima volta per i classificatori addestrabili. Per completare una valutazione di base del contenuto delle organizzazioni, sono necessari dodici giorni per Microsoft 365.
 
 ## <a name="seed-content"></a>Contenuto del seeding
 
@@ -42,9 +45,6 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 
 > [!TIP]
 > Per ottenere risultati ottimali, avere 10.000 elementi nel set di campioni di test con una distribuzione uniforme di corrispondenze positive e negative.
-
-> [!TIP]
-> L'opzione opt-in è necessaria per la prima volta per i classificatori addestrabili. Per completare una valutazione di base del contenuto delle organizzazioni, sono necessari dodici giorni per Microsoft 365.
 
 ## <a name="how-to-create-a-trainable-classifier"></a>Come creare un classificatore addestrabile
 
@@ -107,6 +107,8 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 ![casella di controllo elementi](media/classifier-trainable-review-detail.png)
 
 19. Esaminare *almeno 200 elementi* .
+
+<!-- insert Analyze steps here-->
 
 20. Continuare a esaminare fino a quando l'accuratezza raggiunge almeno il 70 `Publish the classifier` % e `Ready to use`lo stato è.
 
