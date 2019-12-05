@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile applicare etichette a Microsoft teams, gruppi di Office 365 e siti di SharePoint.
-ms.openlocfilehash: a6c187227703395ed5fe3d926dabe30e6203fca5
-ms.sourcegitcommit: 909f18d6c497086899fa239b5b5e0bb91f1e7804
+ms.openlocfilehash: ebe5e00c3458782e1874274cb508326968461ce3
+ms.sourcegitcommit: 1bd81cf48c7fab1b8aaf7c3f550ce42ab02136dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819132"
+ms.locfileid: "39822492"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)
 
@@ -102,11 +102,9 @@ Dopo aver abilitato l'anteprima, eseguire la procedura seguente per creare o mod
 
 ## <a name="troubleshoot-sensitivity-label-deployment"></a>Risoluzione dei problemi relativi alla distribuzione di etichette sensibili
 
-Se si verificano problemi durante la creazione di un gruppo di team o di Office 365 dopo aver abilitato queste impostazioni o apportato una modifica alla descrizione di un'etichetta, salvare l'etichetta, attendere qualche ora e quindi provare a creare di nuovo il gruppo team o Office 365.
+Se si verificano problemi durante la creazione di un gruppo di team o di Office 365 dopo aver abilitato queste impostazioni o apportato una modifica alla descrizione di una etichetta di riservatezza, salvare l'etichetta, attendere qualche ora e quindi provare a creare di nuovo il gruppo team o Office 365.
 
 Se non si è ancora in grado di visualizzare la nuova etichetta di riservatezza da SharePoint Online, contattare immediatamente il supporto tecnico Microsoft.
-
-[Informazioni su come pubblicare un'etichetta di riservatezza](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)
 
 ## <a name="apply-a-sensitivity-label-to-a-new-team"></a>Applicazione di un'etichetta di riservatezza a un nuovo team
 

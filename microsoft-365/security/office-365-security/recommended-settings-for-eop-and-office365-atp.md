@@ -13,12 +13,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: fa88f80a0f7423a57850e2d8ad690f2472a23a7c
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615656"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837330"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
@@ -41,7 +41,7 @@ Le funzionalità di protezione da posta indesiderata, anti-malware e anti-phishi
 |Azione di rilevamento della posta elettronica di phishing|Metti in quarantena messaggio|Metti in quarantena messaggio||
 |Azione di rilevamento della posta elettronica phishing con elevata sicurezza|Metti in quarantena messaggio|Metti in quarantena messaggio||
 |Azione di rilevamento della posta elettronica in blocco|Sposta messaggio nella cartella Posta indesiderata|Metti in quarantena messaggio||
-|Impostare la soglia di posta elettronica in blocco su|6|4|Il valore predefinito è attualmente 7, ma è consigliabile che la maggior parte delle organizzazioni mvoe almeno 6|
+|Impostare la soglia di posta elettronica in blocco su|6 |4 |Il valore predefinito è attualmente 7, ma è consigliabile che la maggior parte delle organizzazioni lo sposti fino ad almeno 6|
 |Periodo di conservazione della quarantena|30 giorni|30 giorni||
 |Suggerimenti per la sicurezza|Attivato|Attivato||
 |Mittenti consentiti|Nessuna|Nessuna||

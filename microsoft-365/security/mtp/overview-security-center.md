@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 5779bc02575a01c86333eaa9dbc9e9667c87f5ee
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 12446dcb69b9f2324afcece9f230605fdcfcfdc8
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034207"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831997"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Panoramica del Centro sicurezza di Microsoft 365
 
@@ -25,9 +25,7 @@ La gestione della sicurezza dell'azienda per proteggersi da un paesaggio di mina
 
 Immettere Microsoft 365 Security Center: la nuova Home page per il monitoraggio e la gestione della sicurezza in tutte le identità, i dati, i dispositivi, le app e l'infrastruttura di Microsoft. In questa sezione è possibile visualizzare facilmente l'integrità della sicurezza dell'organizzazione, agire per configurare dispositivi, utenti e app e ottenere avvisi per attività sospette. Microsoft 365 Security Center è stato appositamente progettato per gli amministratori della sicurezza e i team delle operazioni di sicurezza per gestire e proteggere meglio la propria organizzazione.
 
-I nuovi Microsoft 365 Security Center e Microsoft 365 Compliance Center sono aree di lavoro specializzate progettate per soddisfare le esigenze dei team di sicurezza e del team di conformità. Queste soluzioni sono integrate tra i servizi di Microsoft 365 e offrono informazioni utili per ridurre i rischi e salvaguardare la propria azienda digitale.
-
-Per ulteriori [informazioni, è possibile prepararsi](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance) per il nuovo Centro sicurezza Microsoft 365 e per il centro conformità Microsoft 365.
+I nuovi Microsoft 365 Security Center e [microsoft 365 Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) sono aree di lavoro specializzate progettate per soddisfare le esigenze dei team di sicurezza e del team di conformità. Queste soluzioni sono integrate tra i servizi di Microsoft 365 e offrono informazioni utili per ridurre i rischi e salvaguardare la propria azienda digitale.
 
 Visitare il Centro sicurezza Microsoft 365 all'security.microsoft.com.  
 

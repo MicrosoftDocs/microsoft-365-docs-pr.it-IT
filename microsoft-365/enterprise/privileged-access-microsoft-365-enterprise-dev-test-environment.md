@@ -13,20 +13,20 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Utilizzare questa guida del laboratorio di testing per abilitare la gestione degli accessi con privilegi nell'ambiente di testing Microsoft 365 Enterprise.
-ms.openlocfilehash: 68d542b3f97022abc65b94162f333e7059f614a8
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 7e6a2ddea341f49c737409d8586bd9e70c9b2b79
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673342"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831817"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365 Enterprise
 
-*Questa guida del laboratorio di testing può essere utilizzata per ambienti di testing Microsoft 365 Enterprise e Office 365 Enterprise.*
+*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che Office 365 Enterprise.*
 
 Con le istruzioni riportate in questo articolo, è possibile configurare la gestione degli accessi con privilegi per aumentare la sicurezza nell'ambiente di testing Microsoft 365 Enterprise.
 
-![Guide del laboratorio di testing per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
@@ -62,7 +62,7 @@ In questa fase, è possibile verificare che il criterio di accesso privilegiato 
 
 Innanzitutto, connettersi a Exchange Management PowerShell con le credenziali di un utente configurato come amministratore globale nell'ambiente di testing e tentare di creare una nuova regola del journal. L'attività [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps) non è attualmente definita in un criterio di accesso con privilegi per l'organizzazione.
 
-1. Nel computer locale, aprire e accedere al modulo Exchange Online Remote PowerShell nel modulo di PowerShell remoto di **Microsoft Corporation** > **Microsoft Exchange Online** utilizzando l'account di amministratore globale per l'ambiente di testing.
+1. Nel computer locale, aprire e accedere al modulo Exchange Online Remote PowerShell nel modulo di PowerShell remoto di Microsoft **Corporation** > **Microsoft Exchange Online** utilizzando l'account di amministratore globale per l'ambiente di testing.
 
 2. In Exchange Management PowerShell, creare una nuova regola del journal per l'organizzazione:
 
@@ -101,7 +101,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Requisiti di approvazione del test per l'attività New-JournalRule definita in un criterio di accesso con privilegi
 
-1. Nel computer locale, aprire e accedere al modulo Exchange Online Remote PowerShell nel modulo di PowerShell remoto Microsoft **Corporation** > **Microsoft Exchange Online** utilizzando un account di amministratore globale per l'ambiente di testing.
+1. Nel computer locale, aprire e accedere al modulo Exchange Online Remote PowerShell nel modulo di PowerShell remoto di Microsoft **Corporation** > **Microsoft Exchange Online** utilizzando un account di amministratore globale per l'ambiente di testing.
 
 2. In Exchange Management PowerShell, creare una nuova regola del journal per l'organizzazione:
 
@@ -109,7 +109,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
 ```
 
-3. Visualizzazione dell'errore "autorizzazioni Insuffient" in Exchange Management PowerShell:
+3. Visualizzazione dell'errore "autorizzazioni insufficienti" in Exchange Management PowerShell:
 
 ```ExchangeManagementPowerShell
 Insufficient permissions. Please raise an elevated access request for this task.
@@ -153,7 +153,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Testare la creazione di una nuova regola del journal con accesso privilegiato approvato per l'attività New-JournalRule
 
-1. Nel computer locale, aprire e accedere al modulo Exchange Online Remote PowerShell nel modulo di PowerShell remoto di **Microsoft Corporation** > **Microsoft Exchange Online** utilizzando l'account di amministratore globale per l'ambiente di testing.
+1. Nel computer locale, aprire e accedere al modulo Exchange Online Remote PowerShell nel modulo di PowerShell remoto di Microsoft **Corporation** > **Microsoft Exchange Online** utilizzando l'account di amministratore globale per l'ambiente di testing.
 
 2. In Exchange Management PowerShell, creare una nuova regola del journal per l'organizzazione:
 

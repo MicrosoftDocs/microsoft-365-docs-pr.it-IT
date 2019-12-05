@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni su come i profili di fatturazione supportano le fatture.
 keywords: Profilo di fatturazione, fatture, addebiti, spese gestite
-ms.openlocfilehash: 4b46709cf877ea8689f72b66d5ac357272e4737d
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
+ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753545"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39837390"
 ---
 # <a name="manage-billing-profiles"></a>Gestire i profili di fatturazione
 Per i clienti commerciali che acquistano prodotti e servizi da Microsoft, i profili di fatturazione consentono di personalizzare gli elementi inclusi nella fattura e come vengono pagate le fatture.

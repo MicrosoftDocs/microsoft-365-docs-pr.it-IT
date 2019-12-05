@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come effettuare l'accesso, configurare le autorizzazioni e comprendere il dashboard per il Punteggio di conformità di Microsoft, che semplifica e automatizza le valutazioni dei rischi.
-ms.openlocfilehash: 7bff479d4cd7e3f200f7fc169eb351299eec8a39
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 03bcc5663e3b57728eb4ba791bbcba9593e5afc7
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793650"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831179"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Configurazione del Punteggio di conformità Microsoft (anteprima)
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 L'amministratore globale di Microsoft 365 per l'organizzazione sarà probabilmente il primo utente ad accedere al Punteggio di conformità. Si consiglia di accedere all'amministratore globale e di impostare le autorizzazioni utente come indicato di seguito quando si visita il Punteggio di conformità per la prima volta.
 
@@ -63,8 +63,6 @@ Per impostare le autorizzazioni nel centro conformità di Microsoft 365:
 
 1. Accedere al [centro conformità di Microsoft 365](https://compliance.microsoft.com) e accedere con l'account di amministratore globale.
 2. Selezionare **autorizzazioni** nel riquadro di spostamento a sinistra. Da qui, è possibile visualizzare i ruoli e assegnare le autorizzazioni.
-
-Per informazioni dettagliate, vedere [ruoli e autorizzazioni nel centro conformità di Microsoft 365](../security/office-365-security/microsoft-security-and-compliance.md#required-licenses-and-permissions).
 
 ## <a name="understand-the-compliance-score-dashboard"></a>Comprendere il dashboard del Punteggio di conformità
 
