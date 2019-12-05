@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0cf7a32d50c6fd648894934ccbb32d84959bd12b
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 275781c8e5b25555e7b65f830b8c703827d80849
+ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39232904"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39676683"
 ---
 # <a name="compliance-offering-center-for-financial-industry-information-systems-fisc"></a>Offerta di conformità: Center for Financial Industry Information Systems (FISC)
 
@@ -40,12 +40,9 @@ Microsoft ha incaricato periti esterni di verificare se Microsoft Azure, Dynamic
 
 Gli istituiti finanziari possono confidare su questa valutazione dell'adeguamento in queste tre aree per servizi di infrastruttura e piattaforma interni all'ambito di Azure, Dynamics 365, Office 365 e Microsoft Cloud App Security.
 
-I vantaggi di FISC sul cloud Microsoft:
+[Ulteriori informazioni sulla valutazione da parte di periti esterni e collegamenti ai siti del perito (solo in giapponese)](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx).
 
-- [Informazioni di base su FISC Japan](https://aka.ms/fisc-backgrounder)
-- [Ulteriori informazioni sulla valutazione da parte di periti esterni e collegamenti ai siti del perito (solo in giapponese)](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx) 
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Cloud App Security

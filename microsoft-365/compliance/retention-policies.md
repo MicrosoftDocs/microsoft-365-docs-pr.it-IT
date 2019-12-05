@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: e8014b04df0991c89c6f487b3f9d8e176b9cff75
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: caeec733b3b5722f25210d0d2566e1dd9a5cd95e
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "39638041"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818988"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -213,9 +213,9 @@ Come per i criteri a livello di organizzazione, un criterio applicabile a una qu
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Criteri con specifiche inclusioni o esclusioni
 
-È anche possibile applicare i criteri di conservazione a specifici utenti. A questo scopo, attivare lo **Stato** di tale posizione e quindi usare i collegamenti per includere o escludere determinati utenti, gruppi di Office 365 o posizioni. 
+È anche possibile applicare i criteri di conservazione a specifici utenti, gruppi di Office 365 o siti. A questo scopo, attivare lo **Stato** di tale posizione e quindi usare i collegamenti per includere o escludere determinati utenti, gruppi di Office 365 o siti. 
   
-Si noti però che sono previsti i limiti seguenti per i criteri di conservazione che includono o escludono più di 1.000 utenti specifici:
+Si noti però che sono previsti i limiti seguenti per i criteri di conservazione che includono o escludono più di 1.000 posizioni specifiche:
   
 - I criteri di conservazione di questo tipo non possono contenere più di 1.000 cassette postali e 100 raccolte siti.
     

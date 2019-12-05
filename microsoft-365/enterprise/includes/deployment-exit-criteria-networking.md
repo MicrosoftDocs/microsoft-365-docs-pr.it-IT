@@ -20,7 +20,7 @@ Utilizzare uno strumento o un sito Web da un dispositivo nell'ufficio per determ
 Se necessario, il [Passaggio 2](../networking-dns-resolution-same-location.md) può aiutare a soddisfare questo requisito.
 
 <a name="crit-networking-step3"></a>
-### <a name="optional-unneccessary-network-hairpins-are-removed"></a>Facoltativo: gli hairpin di rete non necessari sono stati rimossi
+### <a name="optional-unnecessary-network-hairpins-are-removed"></a>Facoltativo: gli hairpin di rete non necessari sono stati rimossi
 
 Sono stati esaminati gli hairpin di rete ed è stato determinato il loro impatto sulle prestazioni per tutti gli uffici. Ove possibile, sono stati rimossi gli hairpin di rete o è stato utilizzato un provider di sicurezza o una rete di terze parti per implementare il peering di Microsoft 365 ottimale per la rete.
 
