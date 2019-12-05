@@ -11,12 +11,12 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1b0e4ae933591f41c99a4b88d31eca6504322c92
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 877c9f0c757406c8e9bc9483ab39350a2c814deb
+ms.sourcegitcommit: 1bd81cf48c7fab1b8aaf7c3f550ce42ab02136dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39218695"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39822482"
 ---
 # <a name="compliance-offering-payment-card-industry-pci-data-security-standard-dss"></a>Offerte per la conformità: Payment Card Industry (PCI) Data Security Standard (DSS)
 
@@ -100,4 +100,4 @@ Attualmente, solo i file e i documenti caricati su OneDrive for Business e Share
 
 ## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI_DSS_Compliance_Backgrounder.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI-DSS-Compliance.pdf).
