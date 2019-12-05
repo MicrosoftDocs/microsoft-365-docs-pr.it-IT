@@ -1,0 +1,484 @@
+- name: Sicurezza di Microsoft 365
+  href: index.yml
+  items:
+    - name: Informazioni di base
+      items:
+        - name: Sicurezza Microsoft 365 per decision maker aziendali
+          href: Microsoft-365-security-for-bdm.md
+        - name: Secure Score
+          href: ./mtp/microsoft-secure-score.md
+        - name: Secure Score (anteprima)
+          href: ./mtp/microsoft-secure-score-preview.md
+        - name: Workshop di formazione per Chief Information Security Officer (CISO)
+          href: ./office-365-security/ciso-workshop.md
+          items:
+            - name: Modulo 1 - Presentazione sulla sicurezza informatica in Microsoft
+              href: ./office-365-security/ciso-workshop-module-1.md
+            - name: Modulo 2 - Gestione della sicurezza
+              href: ./office-365-security/ciso-workshop-module-2.md
+            - name: Modulo 3 - Accesso degli utenti con identità e Zero Trust
+              href: ./office-365-security/ciso-workshop-module-3.md
+            - name: 'Modulo4a - Strategia di protezione dalle minacce, Parte I'
+              href: ./office-365-security/ciso-workshop-module-4a.md
+            - name: 'Modulo 4b - Strategia di protezione dalle minacce, Parte II'
+              href: ./office-365-security/ciso-workshop-module-4b.md
+            - name: Modulo 5 - Protezione delle informazioni
+              href: ./office-365-security/ciso-workshop-module-5.md
+    - name: Configurazioni di identità e accesso dei dispositivi
+      href: ../enterprise/microsoft-365-policies-configurations.md
+      items:
+        - name: Lavoro prerequisito
+          href: ../enterprise/identity-access-prerequisites.md
+        - name: Criteri comuni di identità e accesso dei dispositivi
+          href: ../enterprise/identity-access-policies.md
+        - name: Criteri per utenti guest ed esterni
+          href: ../enterprise/identity-access-policies-guest-access.md
+        - name: Criteri di accesso di Teams consigliati
+          href: ../enterprise/teams-access-policies.md
+        - name: Criteri di accesso di Exchange Online consigliati
+          href: ../enterprise/secure-email-recommended-policies.md
+        - name: Criteri di accesso di SharePoint Online consigliati
+          href: ../enterprise/sharepoint-file-access-policies.md
+    - name: Microsoft Threat Protection
+      items:
+        - name: Panoramica
+          items:
+            - name: Che cos’è Microsoft Threat Protection?
+              href: mtp/microsoft-threat-protection.md
+            - name: Centro sicurezza Microsoft 365
+              href: mtp/overview-security-center.md
+        - name: Ricerca in Microsoft 365
+          href: ./mtp/hunting.md
+        - name: Report
+          items:
+            - name: Monitorare e visualizzare i report
+              href: ./mtp/monitoring-and-reporting.md
+            - name: Monitoraggio e creazione di report relativi alle identità
+              href: ./mtp/monitor-and-report-identities.md
+            - name: Monitoraggio e creazione di report relativi ai dati
+              href: ./mtp/monitor-data.md
+            - name: Monitoraggio e creazione di report relativi ai dispositivi
+              href: ./mtp/monitor-devices.md
+            - name: Monitoraggio e creazione di report relativi alle app
+              href: ./mtp/monitor-apps.md
+        - name: Gestire i ticket tramite ServiceNow
+          href: ./mtp/tickets.md
+    - name: Sicurezza di Office 365
+      items:
+        - name: Attività iniziali
+          items:
+            - name: Roadmap per la sicurezza di Office 365
+              href: ./office-365-security/security-roadmap.md
+            - name: Configurare il tenant di Office 365 per una maggiore sicurezza
+              href: ./office-365-security/tenant-wide-setup-for-increased-security.md
+            - name: Nuovo Centro sicurezza Microsoft 365
+              href: ./mtp/overview-security-center.md
+            - name: Autorizzazioni nel Centro sicurezza e conformità
+              href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
+            - name: Fornire agli utenti l'accesso al Centro sicurezza
+              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
+        - name: Protezione dalle minacce
+          href: ./office-365-security/protect-against-threats.md
+          items:
+            - name: Protezione dalla posta indesiderata e antimalware
+              href: ./office-365-security/anti-spam-and-anti-malware-protection.md
+              items:
+                - name: Opzioni avanzate per il filtraggio della posta indesiderata
+                  href: ./office-365-security/advanced-spam-filtering-asf-options.md
+                - name: Pool di recapito ad alto rischio per i messaggi in uscita
+                  href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
+                - name: Domande frequenti sulla protezione antimalware
+                  href: ./office-365-security/anti-malware-protection-faq-eop.md
+                - name: Protezione antispam e antimalware in Office 365
+                  href: ./office-365-security/anti-malware-protection.md
+                - name: Domande frequenti sulla protezione da posta indesiderata
+                  href: ./office-365-security/anti-spam-protection-faq.md
+                - name: Evitare caratteri non validi nelle regole di filtro della posta indesiderata e nel criterio del filtro della posta indesiderata
+                  href: ./office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md
+                - name: Elenchi di mittenti attendibili e bloccati in Exchange Online
+                  href: ./office-365-security/safe-sender-and-blocked-sender-lists-faq.md
+                - name: Suggerimenti per la sicurezza nei messaggi di posta elettronica in Office 365
+                  href: ./office-365-security/safety-tips-in-office-365.md
+                - name: Notifica di esempio quando a un mittente viene impedito di inviare posta indesiderata in uscita.
+                  href: ./office-365-security/sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md
+                - name: Utilizzare le notifiche di posta indesiderata dell'utente finale per segnalare i messaggi di posta indesiderata in quarantena
+                  href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
+                - name: Contrastare la posta indesiderata inviata a Office 365
+                  href: ./office-365-security/fighting-junk-email.md
+                - name: Rilevamento dei virus in SharePoint Online
+                  href: ./office-365-security/virus-detection-in-spo.md
+                - name: Protezione dalla posta indesiderata in Office 365
+                  href: ./office-365-security/anti-spam-protection.md
+                - name: Come vengono combinati i criteri e le protezioni
+                  href: ./office-365-security/how-policies-and-protections-are-combined.md
+                - name: Come ridurre la posta indesiderata in Office 365
+                  href: ./office-365-security/reduce-spam-email.md
+                - name: Controllare la posta indesiderata in uscita in Office 365
+                  href: ./office-365-security/outbound-spam-controls.md
+                - name: Bloccare la posta indesiderata con il filtro di posta indesiderata di Office 365 per prevenire il problema dei falsi negativi
+                  href: ./office-365-security/reduce-spam-email.md
+                - name: 'Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware'
+                  href: ./office-365-security/zero-hour-auto-purge.md
+                - name: Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti
+                  href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
+                - name: Segnalazione di messaggi di posta elettronica indesiderata a Microsoft
+                  href: ./office-365-security/report-junk-email-messages-to-microsoft.md
+                - name: Gestire gli elenchi di mittenti attendibili per messaggi inviati in blocco
+                  href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
+                - name: Configurare i criteri antimalware
+                  href: ./office-365-security/configure-anti-malware-policies.md
+                - name: Configurare i criteri di protezione dalla posta indesiderata
+                  href: ./office-365-security/configure-the-anti-spam-policies.md
+                - name: Creare-blocco-elenchi-mittente-in-office-365
+                  href: ./office-365-security/Create-block-sender-lists-in-office-365.md
+                - name: Creare-elenchi-mittenti-attendibili-in-office-365
+                  href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
+                - name: Configurare i criteri di filtro della posta indesiderata
+                  href: ./office-365-security/configure-your-spam-filter-policies.md
+                - name: Configurare i criteri di filtro delle connessioni
+                  href: ./office-365-security/configure-the-connection-filter-policy.md
+                - name: Configurare i criteri della posta indesiderata in uscita
+                  href: ./office-365-security/configure-the-outbound-spam-policy.md
+                - name: Rimozione di un utente dal portale Utenti con restrizioni dopo l'invio di posta indesiderata
+                  href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
+                - name: Livelli di probabilità di posta indesiderata
+                  href: ./office-365-security/spam-confidence-levels.md
+                - name: Correggere il codice errore 5.7.7xx in Exchange Online
+                  href: ./office-365-security/fix-error-code-5-7-7xx-in-exchange-online.md
+                - name: Usare le regole del flusso di posta per impostare il livello di confidenza di posta indesiderata nei messaggi
+                  href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+                - name: Inviare messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
+                  href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+                - name: Invii dell'amministratore in Office 365
+                  href: ./office-365-security/admin-submission.md
+                - name: Inviare malware e file non pericolosi a Microsoft per l'analisi
+                  href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                - name: Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco mittenti bloccati di Office 365
+                  href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+                - name: Intestazioni messaggi della protezione da posta indesiderata
+                  href: ./office-365-security/anti-spam-message-headers.md
+            - name: Protezione anti-phishing in Office 365
+              href: ./office-365-security/anti-phishing-protection.md
+              items:
+                - name: Ottimizzare la protezione anti-phishing
+                  href: ./office-365-security/tuning-anti-phishing.md
+                - name: Funzionalità di anti-phishing ATP in Office 365
+                  href: ./office-365-security/atp-anti-phishing.md
+                - name: Configurare i criteri di anti-phishing e anti-phishing ATP
+                  href: ./office-365-security/set-up-anti-phishing-policies.md
+                - name: Verifica dell'indirizzo del mittente in Office 365 per bloccare il phishing
+                  href: ./office-365-security/how-office-365-validates-the-from-address.md
+            - name: Protezione anti-spoofing in Office 365
+              href: ./office-365-security/anti-spoofing-protection.md
+              items:
+                - name: Altre informazioni su spoof intelligence
+                  href: ./office-365-security/learn-about-spoof-intelligence.md
+                - name: Procedura dettagliata di spoof intelligence
+                  href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
+                - name: Identificare i messaggi sospetti in Outlook.com e Outlook sul web
+                  href: ./office-365-security/unverified-sender-feature.md
+            - name: Cos'è Exchange Online Protection?
+              href: ./office-365-security/what-is-eop.md
+              items:
+                - name: Supporto per i messaggi di posta elettronica in ingresso anonimi su IPv6
+                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
+                - name: Bloccare la posta indesiderata nella versione autonoma di Exchange Online Protection
+                  href: ./office-365-security/block-email-spam-in-EOPStandalone.md
+                - name: Configurazione delle notifiche di posta indesiderata dell'utente finale in EOP
+                  href: ./office-365-security/configure-end-user-spam-notifications-in-eop.md
+                - name: Configurazione delle notifiche di posta indesiderata dell'utente finale in Exchange Online
+                  href: ./office-365-security/configure-end-user-spam-notifications-in-exchange-online.md
+                - name: Segnalare posta indesiderata e tentativi di phishing in Outlook sul web
+                  href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+                - name: Proteggere le cassette postali locali con Exchange Online Protection
+                  href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
+                - name: Installazione del componente aggiuntivo di report di posta indesiderata per Microsoft Outlook
+                  href: ./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md
+                - name: Disattivare la creazione di report per la posta indesiderata in Outlook sul web
+                  href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
+                - name: Differenza tra posta elettronica indesiderata e posta elettronica in blocco
+                  href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
+            - name: Messaggi di posta elettronica in quarantena in Office 365
+              href: ./office-365-security/quarantine-email-messages.md
+              items:
+                - name: Gestire i messaggi e i file in quarantena come amministratore
+                  href: ./office-365-security/manage-quarantined-messages-and-files.md
+                - name: Trovare e rilasciare messaggi in quarantena come utente
+                  href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
+                - name: Domande frequenti sulla quarantena in Office 365
+                  href: ./office-365-security/quarantine-faq.md
+                - name: Usare le notifiche di posta indesiderata dell'utente per rilasciare e segnalare i messaggi in quarantena in Office 365
+                  href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
+            - name: Convalida e autenticazione della posta elettronica
+              items:
+                - name: Uso di SPF in Office 365 per prevenire lo spoofing
+                  href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
+                - name: Configurare SPF in Office 365 per prevenire lo spoofing
+                  href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
+                - name: Usare DKIM per convalidare la posta elettronica in uscita
+                  href: ./office-365-security/use-dkim-to-validate-outbound-email.md
+                - name: Supporto per la convalida di messaggi firmati con DKIM
+                  href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
+                - name: Usare DMARC per convalidare la posta elettronica
+                  href: ./office-365-security/use-dmarc-to-validate-email.md
+            - name: Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità
+              href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
+              items:
+                - name: Panoramica del Dashboard sulla sicurezza
+                  href: ./office-365-security/security-dashboard.md
+                  items:
+                    - name: 'Procedura: da un report dettagliato alle informazioni dettagliate'
+                      href: ./office-365-security/from-a-detailed-report-to-an-insight.md
+                    - name: 'Procedura: dalle informazioni dettagliate a un report dettagliato'
+                      href: ./office-365-security/from-an-insight-to-a-detailed-report.md
+                    - name: 'Procedura: da una dashboard alle informazioni dettagliate'
+                      href: ./office-365-security/from-a-dashboard-to-an-insight.md
+                    - name: Creare una pianificazione per un report
+                      href: ./office-365-security/create-a-schedule-for-a-report.md
+                    - name: Gestire le pianificazioni per più report
+                      href: ./office-365-security/manage-schedules-for-multiple-reports.md
+                    - name: Configurare e scaricare un report personalizzato
+                      href: ./office-365-security/set-up-and-download-a-custom-report.md
+                    - name: Scaricare i report esistenti
+                      href: ./office-365-security/download-existing-reports.md
+                - name: Abilitare o disabilitare i suggerimenti per la sicurezza in Office 365
+                  href: ./office-365-security/enable-or-disable-safety-tips.md
+                - name: Visualizzare informazioni sui file dannosi
+                  href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+        - name: Protezione avanzata dalle minacce
+          href: ./office-365-security/office-365-atp.md
+          items:
+            - name: Vedere le novità
+              items:
+                - name: Novità di Office 365 ATP
+                  href: office-365-security/whats-new-in-office-365-atp.md
+            - name: Attività di configurazione ATP per amministratori
+              items:
+                - name: Attività di configurazione di amministratore globale
+                  items:
+                    - name: Configurare i criteri dei collegamenti sicuri di ATP
+                      href: ./office-365-security/set-up-atp-safe-links-policies.md
+                    - name: Configurare i criteri degli allegati sicuri di ATP
+                      href: ./office-365-security/set-up-atp-safe-attachments-policies.md
+                    - name: Configurare un elenco personalizzato di URL da "non riscrivere"
+                      href: ./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md
+                    - name: Configurare un elenco personalizzato di URL bloccati
+                      href: ./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md
+                - name: Attività di configurazione di amministratore dei ruoli
+                  items:
+                    - name: 'Attivare ATP per SharePoint, OneDrive e Microsoft Teams'
+                      href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
+            - name: Informazioni sulle campagne di attacco più recenti con l'analisi delle minacce
+              href: ./mtp/latest-attack-campaigns.md
+            - name: Visualizzare e leggere i report ATP
+              href: ./office-365-security/view-reports-for-atp.md
+            - name: Significato delle pagine di avviso dei collegamenti sicuri di ATP
+              href: ./office-365-security/atp-safe-links-warning-pages.md
+            - name: Usare gli indicatori delle minacce
+              href: ./office-365-security/threat-trackers.md
+            - name: Usare il simulatore di attacchi in Office 365
+              href: ./office-365-security/attack-simulator.md
+            - name: Proteggere gli utenti con l'analisi e la risposta alle minacce
+              href: ./office-365-security/keep-users-safe-with-office-365-ti.md
+            - name: Analizzare e rispondere automaticamente alle minacce in Office 365
+              href: ./office-365-security/office-365-air.md
+            - name: Identificare e analizzare i messaggi di posta elettronica dannosi recapitati
+              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: Esplora minacce (e rilevamenti in tempo reale)
+              href: ./office-365-security/threat-explorer.md
+              items:
+                - name: Visualizzazioni di Esplora minacce
+                  href: ./office-365-security/threat-explorer-views.md
+            - name: Integrazione per una maggiore sicurezza
+              items:
+                - name: Integrare Office 365 ATP con Microsoft Defender ATP
+                  href: ./office-365-security/integrate-office-365-ti-with-wdatp.md
+                - name: Integrazione delle tecnologie per le informazioni di sicurezza e gestione degli eventi con Office 365 ATP
+                  href: ./office-365-security/siem-integration-with-office-365-ti.md
+            - name: Come funziona ATP
+              items:
+                - name: Funzionamento di Collegamenti sicuri ATP
+                  href: ./office-365-security/how-atp-safe-links-works.md
+                - name: Funzionamento di Allegati sicuri di ATP
+                  href: ./office-365-security/how-atp-safe-attachments-works.md
+                - name: Dettagli su recapito dinamico e anteprima
+                  href: ./office-365-security/dynamic-delivery-and-previewing.md
+                - name: 'ATP per SharePoint, OneDrive e Microsoft Teams'
+                  href: ./office-365-security/atp-for-spo-odb-and-teams.md
+                - name: Funzionamento di analisi e risposta alle minacce
+                  href: ./office-365-security/office-365-ti.md
+                - name: Funzionamento di Analisi e risposta alle minacce automatizzate
+                  href: ./office-365-security/automated-investigation-response-office.md
+        - name: Gestione degli incidenti di sicurezza
+          items:
+            - name: Intervento in caso di incidente di sicurezza di Office 365
+              href: ./office-365-security/office365-security-incident-response-overview.md
+            - name: Rilevare e rimediare a concessioni di consenso illecite in Office 365
+              href: ./office-365-security/detect-and-remediate-illicit-consent-grants.md
+            - name: Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365
+              href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
+            - name: Rispondere a un account di posta elettronica compromesso in Office 365
+              href: office-365-security/responding-to-a-compromised-email-account.md
+        - name: Flusso di posta
+          items:
+            - name: Abilitare il componente aggiuntivo Segnala messaggio
+              href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: Traccia messaggio nel Centro sicurezza e conformità
+              href: ./office-365-security/message-trace-scc.md
+            - name: Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
+              href: ./office-365-security/mail-flow-insights-v2.md
+              items:
+                - name: Report Mappa flusso di posta
+                  href: ./office-365-security/mfi-mail-flow-map-report.md
+                - name: Informazioni dettagliate sullo stato del flusso di posta del dominio principale
+                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
+                - name: Report sui client di autenticazione SMTP
+                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
+                - name: Risolvere le informazioni dettagliate del dominio del mittente
+                  href: ./office-365-security/mfi-sender-domain-insight.md
+                - name: Rapporto di mancato recapito
+                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: Report di dominio non accettato
+                  href: ./office-365-security/mfi-non-accepted-domain-report.md
+                - name: Flusso di posta in ingresso e in uscita
+                  href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
+                - name: Avvisi di coda e code
+                  href: ./office-365-security/mfi-queue-alerts-and-queues.md
+                - name: Report dei messaggi inoltrati automaticamente
+                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+                - name: Informazioni dettagliate sul ciclo di posta
+                  href: ./office-365-security/mfi-mail-loop-insight.md
+                - name: Informazioni dettagliate sulle regole del flusso di posta lento
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+        - name: Soluzioni di sicurezza
+          items:
+            - name: 'Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazioni Agile'
+              href: ./office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
+              items:
+                - name: Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
+                  href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+                - name: Creare siti del team in un ambiente di sviluppo/test per la campagna politica
+                  href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+            - name: Proteggere i file in Microsoft Teams
+              href: ./office-365-security/secure-files-in-teams.md
+              items:
+                - name: Distribuire team per tre livelli di protezione dei file
+                  href: ./office-365-security/deploy-teams-three-tiers.md
+                - name: Proteggere i file nei team con etichette di conservazione e prevenzione della perdita dei dati
+                  href: ./office-365-security/deploy-teams-retention-DLP.md
+                - name: Proteggere i file nei team con etichette di riservatezza
+                  href: ./office-365-security/deploy-teams-sensitivity-labels.md
+                - name: Proteggere Teams per i file in un ambiente di sviluppo/test
+                  href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
+            - name: Proteggere siti e file di SharePoint Online
+              href: ./office-365-security/secure-sharepoint-online-sites-and-files.md
+              items:
+                - name: Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test
+                  href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
+            - name: Integrazione server SIEM
+              href: ./office-365-security/siem-server-integration.md
+            - name: Exchange Online Protection
+              href: ./office-365-security/exchange-online-protection-overview.md
+              items:
+                - name: Funzionalità di Exchange Online Protection
+                  href: ./office-365-security/eop-features.md
+                - name: Autorizzazioni per le funzionalità in Exchange Online Protection
+                  href: ./office-365-security/feature-permissions-in-eop.md
+                - name: Interfaccia di amministrazione di Exchange in Exchange Online Protection
+                  href: ./office-365-security/exchange-admin-center-in-exchange-online-protection-eop.md
+                - name: Configurare il servizio Exchange Online Protection
+                  href: ./office-365-security/set-up-your-eop-service.md
+                  items:
+                    - name: Procedure consigliate per la configurazione di Exchange Online Protection
+                      href: ./office-365-security/best-practices-for-configuring-eop.md
+                    - name: Impostazioni consigliate per la configurazione della sicurezza di EOP e Office 365 ATP
+                      href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
+                    - name: Script di esempio per l'applicazione delle impostazioni di Exchange Online Protection a più tenant
+                      href: ./office-365-security/sample-script-for-applying-eop-settings-to-multiple-tenants.md
+                    - name: Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra organizzazione di Exchange Online Protection
+                      href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
+                    - name: 'Passaggio a Exchange Online Protection da Google Postini, Barracuda Spam e Virus Firewall o Cisco IronPort'
+                      href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+                    - name: Posta indesiderata costituita da falsi rapporti di mancato recapito ed Exchange Online Protection
+                      href: ./office-365-security/backscatter-messages-and-eop.md
+                - name: Criteri e conformità della messaggistica in Exchange Online Protection
+                  href: ./office-365-security/messaging-policy-and-compliance-in-eop.md
+                  items:
+                    - name: Report di controllo in Exchange Online Protection
+                      href: ./office-365-security/auditing-reports-in-eop.md
+                    - name: Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection
+                      href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
+                - name: Gestire destinatari e gruppi di ruoli amministratore in Exchange Online Protection
+                  href: ./office-365-security/manage-recipients-and-admin-role-groups-in-eop.md
+                  items:
+                    - name: Gestire destinatari in Exchange Online Protection
+                      href: ./office-365-security/manage-recipients-in-eop.md
+                    - name: Gestire utenti di posta in Exchange Online Protection
+                      href: ./office-365-security/manage-mail-users-in-eop.md
+                    - name: Gestire gruppi in Exchange Online Protection
+                      href: ./office-365-security/manage-groups-in-eop.md
+                    - name: Gestire autorizzazioni gruppo di ruoli di amministratore in Exchange Online Protection
+                      href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
+                - name: Flusso di posta in Exchange Online Protection
+                  href: ./office-365-security/mail-flow-in-eop.md
+                  items:
+                    - name: Come assicurarsi che un messaggio non venga contrassegnato come indesiderato
+                      href: ./office-365-security/how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md
+                    - name: Regole del flusso di posta (regole di trasporto)
+                      href: ./office-365-security/mail-flow-rules-transport-rules-0.md
+                    - name: Usare le regole del flusso di posta per configurare il filtro per i messaggi inviati in blocco
+                      href: ./office-365-security/use-transport-rules-to-configure-bulk-email-filtering.md
+                    - name: Usare le regole del flusso di posta per vedere quali segnalazioni gli utenti inviano a Microsoft
+                      href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
+                    - name: Riduzione dei pericoli di malware tramite blocco dei file allegati
+                      href: ./office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
+                    - name: Creazione di report e traccia messaggio
+                      href: ./office-365-security/reporting-and-message-trace-in-exchange-online-protection.md
+                    - name: Intelligence del flusso di posta in Office 365
+                      href: ./office-365-security/mail-flow-intelligence-in-office-365.md
+                - name: Quarantena
+                  href: ./office-365-security/quarantine.md
+                  items:
+                    - name: Trovare e rilasciare messaggi in quarantena come amministratore
+                      href: ./office-365-security/find-and-release-quarantined-messages-as-an-administrator.md
+                - name: Supporto tecnico e risoluzione dei problemi
+                  href: ./office-365-security/troubleshooting-and-support-information.md
+                  items:
+                    - name: Risoluzione dei problemi della posta elettronica inviati a Office 365
+                      href: ./office-365-security/troubleshooting-mail-sent-to-office-365.md
+                    - name: Guida e supporto tecnico per Exchange Online Protection
+                      href: ./office-365-security/help-and-support-for-eop.md
+                    - name: Domande frequenti su Exchange Online Protection
+                      href: ./office-365-security/eop-general-faq.md
+                    - name: 'Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in Exchange Online Protection'
+                      href: ./office-365-security/eop-queued-deferred-and-bounced-messages-faq.md
+                    - name: Domande frequenti sull'amministrazione delegata
+                      href: ./office-365-security/delegated-administration-faq.md
+                - name: 'Informazioni di riferimento: criteri, procedure e linee guida'
+                  href: ./office-365-security/reference-policies-practices-and-guidelines.md
+                  items:
+                    - name: Invio di posta a Office 365
+                      href: ./office-365-security/sending-mail-to-office-365.md
+                    - name: Servizi per utenti che non sono clienti
+                      href: ./office-365-security/services-for-non-customers.md
+        - name: Funzionalità di sicurezza legacy
+          items:
+            - name: S/MIME
+              href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+              items:
+                - name: S/MIME per la crittografia e la firma dei messaggi
+                  href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+                - name: Configurare le impostazioni S/MIME per Outlook sul web
+                  href: ./office-365-security/configure-s-mime-settings-for-outlook-web-app.md
+                - name: Inviare e ricevere messaggi crittografati e firmati tramite S/MIME
+                  href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
+                - name: Sincronizzare i certificati dell'utente con Office 365 per S/MIME
+                  href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
+                - name: Configurare la raccolta di certificati virtuali per convalidare S/MIME
+                  href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
+        - name: Office 365 Enterprise
+          href: 'https://docs.microsoft.com/office-365-security/Enterprise'
+        - name: Office 365 per le aziende
+          href: 'https://docs.microsoft.com/office-365-security/admin/admin-home'
+    - name: Conformità di Microsoft 365
+      href: 'https://docs.microsoft.com/microsoft-365/compliance/'

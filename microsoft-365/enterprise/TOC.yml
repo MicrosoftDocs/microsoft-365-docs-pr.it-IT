@@ -1,0 +1,234 @@
+- name: Documentazione e risorse di Microsoft 365 Enterprise
+  href: index.yml
+- name: Panoramica di Microsoft 365 Enterprise
+  href: microsoft-365-overview.md
+- name: Distribuire Microsoft 365 Enterprise
+  href: deploy-microsoft-365-enterprise.md
+  items:
+    - name: Distribuire l'infrastruttura di base
+      href: deploy-foundation-infrastructure.md
+      items:
+        - name: Fase 1-rete
+          href: networking-infrastructure.md
+          items:
+            - name: 'Passaggio 1: preparare la rete per Microsoft 365'
+              href: networking-provide-bandwidth-cloud-services.md
+            - name: 'Passaggio 2: configurare le connessioni Internet locali per ogni ufficio'
+              href: networking-dns-resolution-same-location.md
+            - name: 'Passaggio 3: evitare i tornanti di rete'
+              href: networking-avoid-network-hairpins.md
+            - name: 'Passaggio 4: configurare il bypass di traffico'
+              href: networking-configure-proxies-firewalls.md
+            - name: Passaggio 5-ottimizzare le prestazioni del servizio client e Office 365
+              href: networking-optimize-tcp-performance.md
+            - name: Criteri uscita di rete
+              href: networking-exit-criteria.md
+        - name: Fase 2-identità
+          href: identity-infrastructure.md
+          items:
+            - name: 'Passaggio 1: creare e proteggere gli account di amministratore globale'
+              href: identity-create-protect-global-admins.md
+            - name: 'Passaggio 2: proteggere le password'
+              href: identity-secure-your-passwords.md
+            - name: 'Passaggio 3: garantire la sicurezza e la gestione degli accessi degli utenti'
+              href: identity-secure-user-sign-ins.md
+            - name: Passaggio 4-aggiungere gli account utente
+              href: identity-add-user-accounts.md
+            - name: Passaggio 5-utilizzare i gruppi per la gestione
+              href: identity-use-group-management.md
+            - name: 'Passaggio 6: configurare la governance delle identità'
+              href: identity-configure-identity-governance.md
+            - name: Esaminare i criteri uscita
+              href: identity-exit-criteria.md
+        - name: Fase 3-Windows 10 Enterprise
+          href: windows10-infrastructure.md
+          items:
+            - name: 'Passaggio 1: preparare l''organizzazione'
+              href: windows10-prepare-your-org.md
+            - name: 'Passaggio 2: eseguire la distribuzione come aggiornamento sul posto'
+              href: windows10-deploy-inplaceupgrade.md
+            - name: 'Passaggio 3: distribuzione per nuovi dispositivi'
+              href: windows10-deploy-autopilot.md
+            - name: 'Passaggio 4: monitorare l''integrità e la conformità del dispositivo'
+              href: windows10-enable-windows-analytics.md
+            - name: Passaggio 5-distribuire le funzionalità di sicurezza
+              href: windows10-enable-security-features.md
+            - name: 'Criteri uscita di Windows 10 Enterprise '
+              href: windows10-exit-criteria.md
+        - name: Fase 4-Office 365 ProPlus
+          href: office365proplus-infrastructure.md
+          items:
+            - name: Criteri uscita di Office 365 ProPlus
+              href: office365proplus-exit-criteria.md
+        - name: Fase 5-gestione dei dispositivi mobili
+          href: mobility-infrastructure.md
+          items:
+            - name: Criteri uscita di gestione di dispositivi mobili
+              href: mobility-infrastructure-exit-criteria.md
+        - name: 'Fase 6: protezione delle informazioni'
+          href: infoprotect-infrastructure.md
+          items:
+            - name: 'Passaggio 1: definire i livelli di sicurezza e protezione delle informazioni'
+              href: infoprotect-define-sec-infoprotect-levels.md
+            - name: 'Passaggio 2: configurare la classificazione per l''ambiente'
+              href: infoprotect-configure-classification.md
+            - name: 'Passaggio 3: configurare un livello di sicurezza maggiore per Microsoft 365'
+              href: infoprotect-configure-increased-security-office-365.md
+            - name: 'Passaggio 4: configurare Windows Information Protection'
+              href: infoprotect-deploy-windows-information-protection.md
+            - name: Passaggio 5-configurare la prevenzione della perdita dei dati di Office 365
+              href: infoprotect-data-loss-prevention.md
+            - name: 'Passaggio 6: configurare la crittografia della posta elettronica'
+              href: infoprotect-email-encryption.md
+            - name: 'Passaggio 7: configurare la gestione degli accessi con privilegi per Office 365'
+              href: infoprotect-configure-privileged-access-management.md
+            - name: Criteri uscita della protezione delle informazioni
+              href: infoprotect-exit-criteria.md
+        - name: Strategie di distribuzione
+          href: deployment-strategies-microsoft-365-enterprise.md
+        - name: Distribuire un'infrastruttura esistente
+          href: deploy-with-existing-infrastructure.md
+        - name: Distribuzione per gli scenari non aziendali
+          href: deploy-foundation-infrastructure-non-enterprises.md
+    - name: Distribuire carichi di lavoro e scenari
+      href: deploy-workloads.md
+      items:
+        - name: Microsoft Teams
+          href: teams-workload.md
+        - name: Exchange Online
+          href: exchangeonline-workload.md
+        - name: SharePoint e OneDrive for Business
+          href: sharepoint-online-onedrive-workload.md
+        - name: Migrazione
+          href: migration-microsoft-365-enterprise-workload.md
+        - name: Supportare i lavoratori remoti
+          href: empower-people-to-work-remotely.md
+        - name: Team per dati altamente regolamentati
+          href: secure-teams-highly-regulated-data-scenario.md
+        - name: Siti di SharePoint per dati altamente regolamentati
+          href: teams-sharepoint-online-sites-highly-regulated-data.md
+    - name: Guide all'ambiente di test
+      href: m365-enterprise-test-lab-guides.md
+      items:
+        - name: Configurazione di base
+          items:
+            - name: Semplificato
+              href: lightweight-base-configuration-microsoft-365-enterprise.md
+            - name: Organizzazione simulata
+              href: simulated-ent-base-configuration-microsoft-365-enterprise.md
+        - name: Identità
+          items:
+            - name: Sincronizzazione degli hash delle password
+              href: password-hash-sync-m365-ent-test-environment.md
+            - name: Autenticazione pass-through
+              href: pass-through-auth-m365-ent-test-environment.md
+            - name: Autenticazione federata
+              href: federated-identity-for-your-office-365-dev-test-environment.md
+            - name: Accesso Single Sign-On facile di Azure AD
+              href: single-sign-on-m365-ent-test-environment.md
+            - name: Autenticazione a più fattori
+              href: multi-factor-authentication-microsoft-365-test-environment.md
+            - name: Proteggere gli account amministratore globale
+              href: protect-global-administrator-accounts-microsoft-365-test-environment.md
+            - name: Writeback delle password
+              href: password-writeback-m365-ent-test-environment.md
+            - name: Reimpostazione delle password
+              href: password-reset-m365-ent-test-environment.md
+            - name: Licenze automatiche e appartenenza a gruppi
+              href: automate-licenses-group-membership-microsoft-365-test-environment.md
+            - name: Azure AD Identity Protection
+              href: azure-ad-identity-protection-microsoft-365-test-environment.md
+            - name: Accesso a identità e dispositivi
+              href: identity-device-access-m365-test-environment.md
+              items:
+                - name: Solo cloud
+                  href: cloud-only-prereqs-m365-test-environment.md
+                - name: Sincronizzazione degli hash delle password
+                  href: phs-prereqs-m365-test-environment.md
+                - name: Autenticazione pass-through
+                  href: pta-prereqs-m365-test-environment.md
+        - name: Gestione dei dispositivi mobili
+          items:
+            - name: Registrazione di dispositivi iOS e Android
+              href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
+            - name: Criteri di conformità dei dispositivi
+              href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
+        - name: Protezione delle informazioni
+          items:
+            - name: Sicurezza di Microsoft 365 aumentata
+              href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
+            - name: Classificazione dei dati
+              href: data-classification-microsoft-365-enterprise-dev-test-environment.md
+            - name: Gestione accessi con privilegi
+              href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
+    - name: Case study di Contoso
+      href: contoso-case-study.md
+      items:
+        - name: Panoramica
+          href: contoso-overview.md
+        - name: Infrastruttura IT ed esigenze di Contoso
+          href: contoso-infra-needs.md
+        - name: Rete
+          href: contoso-networking.md
+        - name: Identità
+          href: contoso-identity.md
+        - name: Windows 10 Enterprise
+          href: contoso-win10.md
+        - name: Office 365 ProPlus
+          href: contoso-o365pp.md
+        - name: Gestione dei dispositivi mobili
+          href: contoso-mdm.md
+        - name: Protezione delle informazioni
+          href: contoso-info-protect.md
+        - name: Riepilogo sicurezza
+          href: contoso-security-summary.md
+        - name: Team per un progetto interno
+          href: contoso-team-for-top-secret-project.md
+        - name: Sito di SharePoint per dati altamente regolamentati
+          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
+    - name: Modifiche al contenuto sulla distribuzione di Microsoft 365 Enterprise
+      href: microsoft-365-deploment-guide-changes.md
+- name: Centro di distribuzione desktop
+  href: desktop-deployment-center-home.md
+  items:
+    - name: 'Guida introduttiva: indicazioni su utenti, processi e tecnologie'
+      href: getting-started.md
+    - name: 'Passaggio 1: preparazione di dispositivi e app'
+      href: step-1-device-and-app-readiness.md
+    - name: 'Passaggio 2: conformità di directory e rete'
+      href: step-2-directory-and-network-readiness.md
+    - name: Passaggio 3 - Distribuzione di Office e app line-of-business
+      href: step-3-office-and-lob-app-delivery.md
+    - name: Passaggio 4 - Migrazione delle impostazioni e dei file utente
+      href: step-4-user-files-and-settings-migration.md
+    - name: Passaggio 5 - Considerazioni sulla sicurezza e conformità
+      href: step-5-security-and-compliance.md
+    - name: Passaggio 6 - Distribuzione del sistema operativo e aggiornamenti delle funzionalità
+      href: step-6-os-deployment-and-feature-updates.md
+    - name: Passaggio 7 - Manutenzione di Windows e Office
+      href: step-7-windows-and-office-as-a-service.md
+    - name: 'Passaggio 8: comunicazioni e formazione utente'
+      href: step-8-user-communications-and-training.md
+    - name: Aggiornamento manuale da Windows 7 a Windows 10
+      href: windows-7-to-windows-10-upgrade-manual.md
+    - name: Aggiornamenti automatici da Windows 7 a Windows 10
+      href: windows-7-to-windows-10-upgrade-automated.md
+    - name: Lab Kit e distribuzione di Windows e Office
+      href: modern-desktop-deployment-and-management-lab.md
+    - name: Ottenere assistenza per la distribuzione
+      href: find-help-for-modern-desktop-deployment.md
+- name: Conformità di Microsoft 365
+  href: ../compliance/index.yml
+- name: Sicurezza di Microsoft 365
+  href: ../security/index.yml
+- name: Gestione della continuità aziendale della società con i servizi cloud
+  href: ebcm-understanding-ebcm-with-cloud-services.md
+  items:
+    - name: Responsabilità EBCM del cliente e del partner cloud
+      href: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
+    - name: Resilienza dei servizi cloud di Microsoft 365
+      href: ebcm-m365-service-resiliency.md
+    - name: Sviluppare il piano di continuità
+      href: ebcm-developing-your-ebcm-plan.md
+    - name: Scenari di mitigazione degli eventi imprevisti del servizio
+      href: ebcm-microsoft-365-mitigations.md
