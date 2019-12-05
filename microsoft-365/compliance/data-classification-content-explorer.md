@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora contenuto consente di visualizzare in modo nativo gli elementi con etichetta.
-ms.openlocfilehash: 6f062901acbf149f6fc56c266d10b370ed0c1112
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 9e9ad76d2bdd7f74368121346f7e04d1208803ff
+ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "39268550"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39818858"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Utilizzo di Esplora contenuto di classificazione dei dati (anteprima)
 
@@ -27,7 +27,19 @@ Esplora contenuto di classificazione dei dati consente di visualizzare in modo n
 
 ## <a name="content-explorer"></a>Esplora contenuto
 
-Esplora contenuto è uno snapshot corrente degli elementi che hanno un'etichetta di riservatezza, un'etichetta di conservazione o sono stati classificati come tipo di informazioni riservate nell'organizzazione.
+Esplora contenuto mostra uno snapshot corrente degli elementi che hanno un'etichetta di riservatezza, un'etichetta di conservazione o sono stati classificati come tipo di informazioni riservate nell'organizzazione.
+
+### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
+
+I [criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md) aiutano a proteggere le informazioni riservate definite come **tipo di informazioni sensibili**. Microsoft 365 include le [definizioni per molti tipi di informazioni sensibili comuni](what-the-sensitive-information-types-look-for.md) in varie aree geografiche, pronte per l'uso. Ad esempio, un numero di carta di credito, numeri di conto corrente bancario, numeri di documento di identità e numeri di servizio Windows Live ID.
+
+### <a name="sensitivity-labels"></a>Etichette di riservatezza
+
+Un'[etichetta di sensibilità](sensitivity-labels.md) è semplicemente un contrassegno che indica il valore dell'elemento per l'organizzazione. Può essere applicata manualmente o automaticamente. Una volta applicata, viene incorporata nel documento e lo seguirà ovunque. Un'etichetta di riservatezza abilita varie misure protettive, ad esempio la filigrana obbligatoria o la crittografia. Con la protezione dell'endpoint abilitata, è anche possibile impedire a un elemento di eludere il controllo dell'organizzazione.
+
+### <a name="retention-labels"></a>Etichette di conservazione
+
+Un'[etichetta di conservazione](labels.md) consente di definire per quanto tempo viene conservato un elemento etichettato prima di essere eliminato. Vengono applicate manualmente o automaticamente tramite criteri. Possono essere utili per favorire la conformità dell'organizzazione ai requisiti di legge e normativi.
 
 ![schermata compressa di Esplora contenuto](media/data-classification-content-explorer-1.png)
 
@@ -55,3 +67,4 @@ L'account usato per accedere a Esplora contenuto deve essere in uno o entrambi i
 - [Etichette di conservazione](labels.md)
 - [Tipi di informazioni riservate disponibili da cercare](what-the-sensitive-information-types-look-for.md)
 - [Panoramica dei criteri di conservazione](retention-policies.md)
+- [Panoramica della prevenzione della perdita dei dati](data-loss-prevention-policies.md)
