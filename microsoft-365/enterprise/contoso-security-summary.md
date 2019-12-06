@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sul modo in cui Contoso usa le funzionalità di sicurezza in Microsoft 365 Enterprise.
-ms.openlocfilehash: b49312b94aef35afc5febeae0fd4dc71b7c642af
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: fb5e99f775c8e23b8ea522ca15b115a5c5d3aedf
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672682"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831887"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Riepilogo della sicurezza di Microsoft 365 Enterprise per Contoso Corporation
 
@@ -56,7 +56,7 @@ Conformemente alle procedure consigliate sulla sicurezza e ai requisiti di distr
 
   Invece di assegnare il ruolo di amministratore globale a tutti gli account utente, Contoso ha creato tre account di amministratore globale dedicati con password complesse e li ha protetti con Azure Multi-Factor Authentication (MFA) e Azure Active Directory (Azure AD) Privileged Identity Management (PIM). PIM è disponibile solo con Microsoft 365 Enterprise E5.
 
-  L'accesso con un account di amministratore globale viene effettuato soltanto per determinate attività di amministrazione, le password sono conosciute soltanto da un gruppo limitato di dipendenti e possono essere usate solo durante l'intervallo di tempo configurato con PIM di Azure AD. 
+  L'accesso con un account di amministratore globale viene effettuato soltanto per determinate attività di amministrazione, le password sono note solo a un gruppo limitato di dipendenti e possono essere usate solo durante l'intervallo di tempo configurato con la tecnologia PIM di Azure AD. 
 
   Gli amministratori della sicurezza di Contoso hanno assegnato meno ruoli di amministrazione agli account che fanno riferimento alla funzione e alla responsabilità professionale di un addetto IT.
 

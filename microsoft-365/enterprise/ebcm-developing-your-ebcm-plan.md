@@ -13,20 +13,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aspetti da considerare durante lo sviluppo di un piano di continuità aziendale compatibile con il cloud.
-ms.openlocfilehash: e7bd9ad7d1bd14db761ec399e260bbfc23954d99
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a9f8b7f6950375fb976202a10da03662c3b2715a
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031071"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831669"
 ---
 # <a name="developing-your-continuity-plan"></a>Sviluppare il piano di continuità
 
 Questo argomento contiene indicazioni su come sviluppare un piano di continuità aziendale che tenga conto delle dipendenze di Microsoft 365. Vengono consigliati metodi per analizzare le funzioni aziendali e identificare quelle che dipendono dai servizi Microsoft 365. Si eseguirà questa analisi con la consapevolezza che si verificheranno errori dei servizi e che è necessario prepararsi per questa eventualità.
 
-In generale, la pianificazione della continuità aziendale implica quattro aspetti, la valutazione, la pianificazione, la convalida delle funzionalità, le comunicazioni e il coordinamento.
+In generale, la pianificazione della continuità aziendale implica quattro aspetti, ovvero la valutazione, la pianificazione, la convalida delle funzionalità, nonché le comunicazioni e il coordinamento.
 
-## <a name="assesment"></a>Valutazione
+## <a name="assessment"></a>Valutazione
 È necessario prima di tutto identificare le funzioni aziendali presenti nell'organizzazione e i servizi e i processi che le supportano. Questo include il completamento di un'analisi dell'impatto aziendale, nota come Business Impact Assessment (BIA), in cui ogni funzione aziendale è classificata in base alla criticità e si identificano i processi e i servizi da cui ognuna di esse dipende. Ecco una tabella di esempio che può essere utile per iniziare a creare la propria valutazione.
 
 **Esempio di Business Impact Assessment (BIA)**
@@ -49,7 +49,7 @@ Questo è un documento BIA per `name of the service, system, process, or functio
 |La tecnologia ha un mandato esecutivo noto per la gestione dello SLA di uno specifico processo? In caso affermativo, spiegare in dettaglio.|`details here`|
 |La perdita o la compromissione dei dati associati a questo servizio può attivare un evento principale? In caso affermativo, spiegare in dettaglio.|`details here`|
 |Il servizio dispone di un'alternativa per alcune o tutte le relative funzioni e funzionalità principali? In caso affermativo, spiegare in dettaglio.|`details here`|
-|Il servizio elabora, archivia o trasmette dati personali (PII) dei clienti? In caso affermativo, spiegare in dettaglio.|`details here`|
+|Il servizio elabora, archivia o trasmette dati dei clienti, ad esempio informazioni personali? In caso affermativo, spiegare in dettaglio.|`details here`|
 |Stato BIA|`develop your own status classification, here are some examples: planned, started, in-progress, complete, on-hold, expired`|
 |Data di completamento|`the date this BIA was completed`|
 |Facilitatore BIA|`name of the person or group who is responsible for developing and maintaining this BIA`|

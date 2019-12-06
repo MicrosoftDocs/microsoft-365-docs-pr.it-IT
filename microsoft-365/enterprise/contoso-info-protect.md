@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come Contoso usa le funzionalità di protezione delle informazioni disponibili in Microsoft 365 Enterprise per proteggere le proprie risorse digitali nel cloud.
-ms.openlocfilehash: f5893414a0aab3d0ab89eb180f0c907d4379194c
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: d6167896c3e42c5fef373de7c5be7123467936f4
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673202"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831679"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protezione delle informazioni per Contoso Corporation
 
@@ -65,7 +65,7 @@ Contoso ha utilizzato i seguenti passaggi per preparare Microsoft 365 Enterprise
 
 4. Ha creato siti di SharePoint protetti per dati sensibili e altamente regolamentati con autorizzazioni che bloccano l'accesso
 
-   Sia i siti sensibili che quelli altamente regolamentati sono stati configurati come [siti isolati](https://docs.microsoft.com/office365/enterprise/isolated-sharepoint-online-team-sites), in cui le autorizzazioni predefinite del sito del team di SharePoint sono state personalizzate. I siti di SharePoint riservati e altamente regolamentati sono stati configurati anche con un'etichetta di conservazione corrispondente. I file archiviati nei siti di SharePoint altamente regolamentati sono protetti con una sottoetichetta di riservatezza dell'etichetta per dati altamente regolamentati. Per altre informazioni, vedere [Siti di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md).
+   Come siti del team privati sono stati configurati sia siti per dati sensibili che per dati altamente regolamentati con restrizioni aggiuntive delle autorizzazioni. I siti di SharePoint per dati riservati e altamente regolamentati sono stati configurati anche con un'etichetta di conservazione corrispondente. I file archiviati nei siti di SharePoint altamente regolamentati sono protetti con una sottoetichetta di riservatezza dell'etichetta per dati altamente regolamentati. Per altre informazioni, vedere [Siti di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 5.  Ha spostato i dati dai siti di SharePoint locali e le condivisioni di file ai nuovi siti di SharePoint
 

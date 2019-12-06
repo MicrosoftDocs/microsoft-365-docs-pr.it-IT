@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sul modo in cui Contoso usa Microsoft Endpoint Configuration Manager per distribuire Office 365 ProPlus.
-ms.openlocfilehash: e0e1343d2ed36b1c76ad4708545c4e6d4010bb45
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 7649a4a5c77c7f743e3339db6f91b7afc3b1343f
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673162"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831987"
 ---
 # <a name="office-365-proplus-deployment-for-contoso"></a>Distribuzione di Office 365 ProPlus per Contoso
 
@@ -31,7 +31,7 @@ Contoso ha aggiornato i propri PC a Windows 10 Enterprise e Office 365 ProPlus p
 
 ## <a name="deployment-tools"></a>Strumenti di distribuzione
 
-Sulla base delle proprie esigenze, Contoso ha deciso di distribuire Windows 10 Enterprise e Office 365 ProPlus con Configuration Manager (Current Branch). Configuration Manager si ridimensiona per ambienti di grandi dimensioni, consente un controllo completo su installazione, aggiornamenti e impostazioni. Inoltre offre funzionalità integrate per semplificare e rendere più efficiente la distribuzione e la gestione di Office, tra cui:
+In base ai propri requisiti, Contoso ha scelto di distribuire Windows 10 Enterprise e Office 365 ProPlus con Configuration Manager (Current Branch). Configuration Manager si adatta ad ambienti di grandi dimensioni e fornisce un controllo completo sull'installazione, gli aggiornamenti e le impostazioni. Inoltre, dispone di funzionalità integrate per semplificare e rendere più efficiente la distribuzione e la gestione di Office, tra cui:
 
 - Peer cache, che può aiutare con una capacità di rete limitata quando si effettua la distribuzione su dispositivi in posizioni remote
 - Il dashboard di gestione client di Office, che semplifica la distribuzione di Office e il monitoraggio degli aggiornamenti e consente agli amministratori di accedere alle funzionalità di gestione e distribuzione più recenti
@@ -49,7 +49,7 @@ Office 365 ProPlus dispone di un nuovo modello di rilascio: Office come servizio
 
 Anziché gestire gli aggiornamenti a Office con Configuration Manager, Contoso ha abilitato gli aggiornamenti automatici dal cloud. Gli aggiornamenti basati sul cloud hanno ridotto le attività amministrative facendo in modo che i dispositivi siano sempre aggiornati. 
 
-Contoso ha seguito lo stesso approccio in due fasi degli aggiornamenti delle funzionalità usate per la distribuzione di Office: i dispositivi nel gruppo pilota hanno ricevuto gli aggiornamenti delle funzionalità quattro mesi prima dei dispositivi nel resto dell'organizzazione (il gruppo di grandi dimensioni). Per farlo per Office, Contoso ha usato due [canali di aggiornamento](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) consigliati: 
+Contoso ha seguito lo stesso approccio di due fasi per gli aggiornamenti delle funzionalità usate per la distribuzione di Office: i dispositivi nel gruppo pilota hanno ricevuto aggiornamenti delle funzionalità quattro mesi prima dei dispositivi nel resto dell'organizzazione (il gruppo di grandi dimensioni). Per farlo per Office, Contoso ha usato due [canali di aggiornamento](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) consigliati: 
 
 - Canale semestrale (mirato) per gli aggiornamenti del gruppo pilota 
 - Canale semestrale per gli aggiornamenti del gruppo di grandi dimensioni 
@@ -69,7 +69,7 @@ Per completare la distribuzione di Office, Contoso ha implementato la procedura 
 7. In Configuration Manager, ha distribuito i pacchetti di Windows e Office ai punti di distribuzione nella propria rete, quindi ha eseguito le sequenze di attività di distribuzione di Configuration Manager per distribuire il pacchetto pilota di Office 365 ProPlus nel gruppo pilota.
 8. Una volta risolti i problemi di compatibilità con il gruppo pilota, Contoso ha eseguito le sequenze di attività per distribuire il pacchetto completo di Office 365 ProPlus nel gruppo di grandi dimensioni.
 
-Poiché Contoso ha scelto di aggiornare automaticamente i dispositivi dal cloud, non è stato necessario gestire il processo in Configuration Manager. I dispositivi vengono aggiornati automaticamente direttamente dal cloud basato sul canale di aggiornamento che è stato definito come parte della distribuzione iniziale. 
+Poiché Contoso ha scelto di aggiornare automaticamente i dispositivi dal cloud, non è stato necessario gestire il processo in Configuration Manager. I dispositivi vengono aggiornati automaticamente direttamente dal cloud basato sul canale di aggiornamento che è stato definito durante la distribuzione iniziale. 
 
 Ecco l'architettura di distribuzione degli aggiornamenti continui e di installazione di Office 365 ProPlus di Contoso.
 

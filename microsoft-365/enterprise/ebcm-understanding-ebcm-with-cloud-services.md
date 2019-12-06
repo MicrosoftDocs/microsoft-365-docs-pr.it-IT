@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sul diverso impatto dei servizi cloud inclusi nell'offerta IT sulla pianificazione e l'implementazione della continuità aziendale.
-ms.openlocfilehash: 9b8d769670b53a75c2b48254cb0026488995274a
-ms.sourcegitcommit: 7690c8bfdea6e6d245cfa7c5b09b913b092cde0a
+ms.openlocfilehash: 86ceac67b90acfbb90a35d9a528a89d619668722
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37122256"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831837"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Gestione della continuità aziendale della società con i servizi cloud
 

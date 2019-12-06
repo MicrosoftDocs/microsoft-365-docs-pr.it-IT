@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulle attività di Microsoft nel corso di un incidente di servizio in modo da poter preparare meglio i piani di continuità aziendale.
-ms.openlocfilehash: c74bb83352f87faf0bb7f50e8aec4ac813516d3c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
+ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031081"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831867"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Responsabilità del partner di cloud e dei clienti nella gestione della continuità aziendale
 
@@ -32,9 +32,9 @@ In qualità di partner affidabile, Microsoft crea servizi cloud altamente resili
 Microsoft informa gli amministratori di Microsoft 365 aggiornando il Dashboard sull'integrità del servizio (SHD) specifico del tenant nel portale di amministrazione di Microsoft 365. Gli aggiornamenti per gli incidenti di servizio sono in genere forniti con cadenza oraria. Se è necessaria una frequenza diversa, verranno fornite informazioni sulle modifiche apportate alle registrazioni comunicazione di SHD.
 
 ## <a name="targeted"></a>Mirate
-Nella maggior parte dei casi, quando i sistemi di monitoraggio rilevano un problema, è possibile identificare la base di clienti interessata, da un singolo cliente fino all'area geografica o oltre e indirizzare le comunicazioni necessarie a tali clienti. Questo consente di individuare le informazioni necessarie per la propria azienda e di non essere distratti dalle notifiche non rilevanti. Ad esempio, se è interessato un determinato database di cassette postali, è possibile identificare esattamente i clienti che hanno utenti nell'infrastruttura interessata e assisterli con le comunicazioni. Se l'ambito dell'impatto dell'incidente non è chiaro, le comunicazioni verranno ampliate al più ampio gruppo di clienti potenzialmente interessato.
+Nella maggior parte dei casi, quando i sistemi di monitoraggio rilevano un problema, è possibile identificare la base di clienti interessata, da un singolo cliente fino all'area geografica o oltre e indirizzare le comunicazioni necessarie a tali clienti. Questo consente di individuare le informazioni necessarie per la propria azienda e di non essere distratti dalle notifiche non rilevanti. Ad esempio, se è interessato un determinato database di cassette postali, è possibile identificare esattamente i clienti che hanno utenti nell'infrastruttura interessata e assisterli con le comunicazioni. Se l'ambito dell'impatto dell'incidente non è chiaro, le comunicazioni verranno estese al più ampio gruppo di clienti potenzialmente interessato.
 
-## <a name="highly-avaliable"></a>Altamente disponibili
+## <a name="highly-available"></a>A disponibilità elevata
 Microsoft gestisce più canali per le comunicazioni sullo stato dei servizi utilizzabili dai clienti.
 
 - Se l'interfaccia di amministrazione o il dashboard sull’integrità dei servizi nell'interfaccia di amministrazione non sono disponibili, è possibile monitorare lo stato del servizio tramite il [sito di backup](https://status.office365.com/).
