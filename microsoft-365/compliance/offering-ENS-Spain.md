@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 921728f67377cced15be3e730db9598d322fc49b
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 2aa99ca339f6842447fd9e440960bec327c38025
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233649"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859926"
 ---
-# <a name="compliance-offering-spain-esquema-nacional-de-seguridad-ens-high-level-security-measures"></a>Offerta di conformità: misure di sicurezza di alto livello dell'Esquema Nacional de Seguridad (ENS) spagnolo
+# <a name="spain-esquema-nacional-de-seguridad-ens-high-level-security-measures"></a>Misure di sicurezza di alto livello dell'Esquema Nacional de Seguridad (ENS) spagnolo
 
 ## <a name="spain-ens-overview"></a>Informazioni generali sull'ENS spagnolo
 

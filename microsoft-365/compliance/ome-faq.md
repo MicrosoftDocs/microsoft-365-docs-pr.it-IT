@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Domande su come funzionano le nuove funzionalità di protezione dei messaggi di Office 365? Controllare la risposta qui.
-ms.openlocfilehash: 95efde63ff9cf4c53522c0242a33001a35d2e334
-ms.sourcegitcommit: 99d759d5c4e7d81266c3ebc087eaa37486cc0bc1
+ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39818848"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39866418"
 ---
 # <a name="office-365-message-encryption-faq"></a>Domande frequenti su Office 365 Message Encryption
 
@@ -119,6 +119,10 @@ La crittografia in formato PDF consente di proteggere i documenti PDF sensibili 
 
 Not yet. Gli allegati di OneDrive for business non sono supportati e gli utenti finali non possono crittografare un messaggio di posta elettronica che contiene un allegato cloud OneDrive for business.
   
+## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>Quali client di posta elettronica supportano l'anteprima degli allegati crittografati nei messaggi di posta elettronica protetti?
+
+Quando gli allegati sono protetti da un messaggio protetto, i client di Outlook offrono la possibilità di visualizzare in anteprima il documento direttamente. Outlook supporta l'anteprima dei documenti di Office (docx, xlsx, pptx, doc, xls, PPT). Outlook sul Web supporta l'anteprima dei documenti di Office (docx, xlsx, pptx) e PDF.  
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>È possibile crittografare automaticamente i messaggi impostando i criteri?
 
 Sì. Utilizzare le regole del flusso di posta in Exchange Online per crittografare automaticamente un messaggio in base a determinate condizioni. Ad esempio, è possibile creare criteri basati sull'ID destinatario, sul dominio del destinatario o sul contenuto del corpo o dell'oggetto del messaggio. Vedere [definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365](define-mail-flow-rules-to-encrypt-email.md).
