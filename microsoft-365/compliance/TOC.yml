@@ -1,6 +1,6 @@
 - name: Conformità di Microsoft 365
   href: index.yml
-- name: Attività iniziali
+- name: Informazioni di base
   items:
     - name: Novità del centro conformità
       href: whats-new.md
@@ -106,7 +106,7 @@
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: Funzionamento della prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange
               href: how-dlp-works-between-admin-centers.md
-    - name: Tipi di informazioni riservate
+    - name: Tipi di informazioni sensibili
       items:
         - name: Elementi cercati dai tipi di informazioni sensibili
           href: what-the-sensitive-information-types-look-for.md
@@ -1071,7 +1071,7 @@
               href: 'https://aka.ms/TRUCS-Compliance'
         - name: Australia/Pacifico
           items:
-            - name: CCSL/IRAP (Australia)
+            - name: IRAP/CCSL (Australia)
               href: offering-CCSL-IRAP-Australia.md
             - name: Framework NZ CC (Nuova Zelanda)
               href: offering-nz-cc-framework-nz.md

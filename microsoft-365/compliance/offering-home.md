@@ -10,12 +10,12 @@ keywords: Microsoft, Microsoft 365, conformità, offerta
 localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
-ms.openlocfilehash: 15fa462b9cae68b613f7d6d28563acaebb7fa762
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: d93e7071c43bc1d9f5ded5d4c7dd7d1a5af1cd62
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38686456"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859436"
 ---
 # <a name="microsoft-compliance-offerings"></a>Offerte per la conformità Microsoft
 
@@ -155,7 +155,7 @@ Microsoft offre una serie completa di offerte di conformità che consentono all'
                         <p><a href="offering-bir-2012-netherlands.md">BIR 2012 (Paesi Bassi)</a></p>
                         <p><a href="offering-c5-germany.md">C5 (Germania)</a></p>
                         <p><a href="offering-ccpa.md">CCPA (Stati Uniti)</a></p>
-                        <p><a href="offering-ccsl-irap-australia.md">CCSL/IRAP (Australia)</a></p>
+                        <p><a href="offering-ccsl-irap-australia.md">IRAP/CCSL (Australia)</a></p>
                         <p><a href="offering-cs-mark-gold-japan.md">CS Mark Gold (Giappone)</a></p>
                         <p><a href="offering-cyber-essentials-plus-uk.md">Cyber Essentials Plus (Regno Unito)</a></p>
                         <p><a href="offering-canadian-privacy-laws.md">Legge sulla privacy canadese</a></p>
