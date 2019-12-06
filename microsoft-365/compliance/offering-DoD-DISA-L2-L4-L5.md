@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ad34c497e82ef8e61e61d6953afcca5815f1bc06
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: d805c5dab7e8ebeb31ea94895356a6529bcd970d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690570"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859956"
 ---
-# <a name="compliance-offering-us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Offerta di conformità: autorizzazione provvisoria del dipartimento della difesa degli Stati Uniti ai livelli di impatto 2, 4 e 5
+# <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorizzazione provvisoria del dipartimento della difesa degli Stati Uniti (DoD) ai livelli di impatto 2, 4 e 5
 
 ## <a name="dod-and-disa-overview"></a>Panoramica di DoD e DISA
 
@@ -55,24 +55,24 @@ In base alle autorizzazioni di FedRAMP, il supporto di servizi cloud DISA ha con
 
 Impact Level 2 include informazioni non classificate non controllate, ovvero dati autorizzati per il rilascio pubblico. Vengono inoltre riportate altre informazioni non classificate che, pur non essendo considerate "mission critical", richiedono comunque un livello minimo di controllo di accesso. Questa autorizzazione consente ai clienti del governo federale statunitense di distribuire informazioni non sensibili e applicazioni e siti Web di difesa di base sui servizi cloud Microsoft in ambito.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Servizi coperti per il livello di impatto 5 di DoD
 
 - [Amministrazione di Azure per DoD](https://aka.ms/AzureCompliance)
-- [Difesa del governo degli Stati Uniti di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ### <a name="covered-services-for-dod-impact-level-4"></a>Servizi coperti per il livello di impatto di DoD 4
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
-- [Difesa del governo degli Stati Uniti di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ### <a name="covered-services-for-dod-impact-level-2"></a>Servizi coperti per il livello di impatto 2 di DoD
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Governo degli Stati Uniti Dynamics 365](https://aka.ms/d365-compliance-list)
 - [Office 365 governo degli Stati Uniti](https://aka.ms/o365-compliance-framework)
-- Servizio cloud di Power BI come servizio autonomo o come incluso in un piano o in una famiglia di prodotti di Office 365
+- Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
@@ -84,7 +84,7 @@ Ottenere un vantaggio su come approfittare dei vantaggi del cloud in Government 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**È possibile utilizzare la conformità di Microsoft nel processo di certificazione dell'organizzazione?**
+**Posso usare la conformità di Microsoft nel processo di certificazione della mia organizzazione?**
 
 Sì. Tutte le agenzie DoD possono fare affidamento sulle certificazioni dei servizi cloud Microsoft come fondamento per qualsiasi programma o iniziativa che richiede un'autorizzazione DoD. Questo vale anche per altre organizzazioni che supportano DoD e richiedono servizi cloud. Tuttavia, è necessario ottenere le autorizzazioni per i componenti esterni a questi servizi.
 
@@ -102,10 +102,10 @@ Inoltre, le offerte di Microsoft al di fuori del limite certificato FedRAMP che 
 - [Supporto per il servizio del cloud DISA](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
 - [Protezione delle informazioni non classificate controllate nei sistemi informativi e nelle organizzazioni non federali](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [Framework Cybersecurity NIST](https://www.nist.gov/cyberframework)
-- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Cloud di Microsoft Government](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Quadro di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf).

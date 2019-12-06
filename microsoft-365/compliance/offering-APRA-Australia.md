@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: dbbe64b20578860d3635876ec9fb1bd3c523c9b1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 8d6314b7a2adf3f677c8343ddece9cb27bff073e
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690561"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859246"
 ---
-# <a name="compliance-offering-australian-prudential-regulation-authority-apra"></a>Offerta di conformità: Australian Prudential Regulation Authority (APRA)
+# <a name="australian-prudential-regulation-authority-apra"></a>Autorità per la regolamentazione prudenziale australiana (APRA)
 
 ## <a name="apra-overview"></a>Panoramica di APRA
 
@@ -48,7 +48,7 @@ Facendo affidamento sul nostro approccio globale alla sicurezza dei rischi nel c
 
 Ottenere supporto pratico per lo spostamento di dati e carichi di lavoro in Azure in conformità con le normative di APRA: [scaricare un elenco di controllo di conformità per gli istituti finanziari in Australia](https://aka.ms/microsoftaprachecklistjun17)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -74,11 +74,11 @@ Sì. La normativa sulla privacy generale (che si applica a tutti i settori, non 
 - [Microsoft Response to the APRA Information paper sul cloud](https://aka.ms/navigatecloudaustralia)
 - [Esplorazione del percorso verso il cloud: elenco di controllo di conformità per gli istituti finanziari in Australia](https://aka.ms/microsoftaprachecklistjun17)
 - [Microsoft Australia: cloud in servizi finanziari](https://www.microsoft.com/en-sg/apac/trustedcloud/australia-financial-service.aspx)
-- [Programma di conformità per i servizi finanziari Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Conformità ai servizi finanziari in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Servizi Microsoft Business Cloud e servizi finanziari](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Financial Services Compliance Program di Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Conformità dei servizi finanziari in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Servizi finanziari e servizi cloud aziendali di Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf).

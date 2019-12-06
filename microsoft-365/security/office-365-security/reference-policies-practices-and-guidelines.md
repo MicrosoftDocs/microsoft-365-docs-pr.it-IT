@@ -14,12 +14,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure consigliate per aiutare a proteggere gli utenti da messaggi di posta elettronica abusivi, indesiderati o dannosi.
-ms.openlocfilehash: 0957e34008f4e05693218970c458656d73d9c0fe
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a1e1e213c01eea5a07b616e72955303f21c6d2ae
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031811"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872062"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Informazioni di riferimento: criteri, procedure e linee guida
 
@@ -73,7 +73,7 @@ I mittenti, gli ISP e gli altri provider di servizi dovrebbero gestire attivamen
 
 ## <a name="office-365-limits"></a>Limiti relativi a Office 365
 
-I mittenti devono attenersi ai limiti di Office 365 elencati nei [limiti di Exchange Online Protection](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx).
+I mittenti devono attenersi ai limiti di Office 365 elencati nei [limiti di Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## <a name="email-delivery-resources-and-organizations"></a>Risorse e organizzazioni per il recapito della posta elettronica
 

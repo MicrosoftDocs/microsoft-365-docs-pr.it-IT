@@ -14,12 +14,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Per mantenere la fiducia degli utenti nell'utilizzo della posta elettronica, Microsoft ha messo a punto vari criteri e tecnologie che consentono di proteggere gli utenti.
-ms.openlocfilehash: cabb583aebc1baff1eb9f8286fceb2864b26deea
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f98044b65b49bd9594708ea9e6f798156037ac34
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031771"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871262"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Servizi per i non clienti che inviano la posta a Office 365
 
@@ -50,7 +50,7 @@ Microsoft offre diverse opzioni di supporto per gli utenti che hanno problemi ne
 
 - Contattare il cliente di Office 365 che si sta tentando di inviare tramite posta elettronica utilizzando un altro metodo e chiedergli di contattare il supporto tecnico Microsoft e di aprire un ticket di supporto per conto dell'utente. In alcuni casi, per motivi legali, il supporto tecnico Microsoft deve comunicare direttamente con il mittente che possiede lo spazio IP che viene bloccato. Tuttavia, i non clienti in genere non sono in grado di aprire ticket di supporto.
 
-  Per ulteriori informazioni sul supporto tecnico Microsoft per Office 365, vedere [support](https://technet.microsoft.com/library/office-365-support.aspx).
+  Per ulteriori informazioni sul supporto tecnico Microsoft per Office 365, vedere [support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support).
 
 ## <a name="office-365-anti-spam-ip-delist-portal"></a>Portale di delist IP di protezione da posta indesiderata di Office 365
 

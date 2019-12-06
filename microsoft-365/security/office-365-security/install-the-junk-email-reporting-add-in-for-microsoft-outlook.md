@@ -12,12 +12,12 @@ ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: In questa articleSupported LanguagesInstall la segnalazione della posta indesiderata Add-inuninstall the junk email Reporting Add-inFor more information
-ms.openlocfilehash: 7f294ed78affba6e55f2372b81b517bbd25d3f08
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 508d542be4862a6a06b795fc7a4b97bdc405d430
+ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083435"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39865888"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installazione del componente aggiuntivo di report di posta indesiderata per Microsoft Outlook
   
@@ -59,13 +59,12 @@ Il componente aggiuntivo per la segnalazione della posta indesiderata supporta l
 - Spagnolo
     
 ## <a name="install-the-junk-email-reporting-add-in"></a>Installazione del componente aggiuntivo per la segnalazione della posta indesiderata
-<a name="sectionSection1"> </a>
 
 È possibile installare il componente aggiuntivo di report di posta indesiderata:
   
-- Tramite l'esecuzione del pacchetto di Windows Installer come per qualsiasi altro file .msi. Durante l'installazione del componente aggiuntivo, un'interfaccia GUI consente di aprire i prompt nelle schermate di installazione. Per ulteriori informazioni, vedere [Installazione del componente aggiuntivo di report di posta indesiderata tramite l'Installazione guidata](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard). O
+- Tramite l'esecuzione del pacchetto di Windows Installer come per qualsiasi altro file .msi. Durante l'installazione del componente aggiuntivo, un'interfaccia GUI consente di aprire i prompt nelle schermate di installazione. Per ulteriori informazioni, vedere [Installazione del componente aggiuntivo di report di posta indesiderata tramite l'Installazione guidata](#install-the-junk-email-reporting-add-in-using-the-setup-wizard). O
     
-- Tramite l'esecuzione di un'installazione invisibile che elimina l'interfaccia utente dell'installazione, consentendo di specificare le opzioni della riga di comando che eseguono uno script di installazione. Durante l'installazione del componente aggiuntivo, sono disponibili ulteriori opzioni di configurazione che non sono presenti nell'interfaccia GUI. Per ulteriori informazioni, vedere [Installazione del componente aggiuntivo di report di posta indesiderata in modalità invisibile](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode).
+- Tramite l'esecuzione di un'installazione invisibile che elimina l'interfaccia utente dell'installazione, consentendo di specificare le opzioni della riga di comando che eseguono uno script di installazione. Durante l'installazione del componente aggiuntivo, sono disponibili ulteriori opzioni di configurazione che non sono presenti nell'interfaccia GUI. Per ulteriori informazioni, vedere [Installazione del componente aggiuntivo di report di posta indesiderata in modalità invisibile](#install-the-junk-email-reporting-add-in-using-silent-mode).
     
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
@@ -87,7 +86,6 @@ L'installazione del componente aggiuntivo di report di posta indesiderata per Mi
 > È necessario disporre dei privilegi di amministratore del computer su cui si installa il componente aggiuntivo. 
   
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Installazione del componente aggiuntivo di report di posta indesiderata tramite l'Installazione guidata
-<a name="BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard"> </a>
 
 1. Chiudere Outlook nel proprio computer.
     
@@ -108,7 +106,6 @@ L'installazione del componente aggiuntivo di report di posta indesiderata per Mi
 9. Scegliere la freccia in giù accanto a **Posta indesiderata** per visualizzare altre opzioni, ad esempio **Segnala come phishing** per segnalare tentativi di phishing a Microsoft. Nella cartella della posta indesiderata, è inoltre possibile selezionare **Segnala come attendibile** se un messaggio di posta elettronica è stato identificato erroneamente come posta indesiderata. 
     
 ### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a>Installazione del componente aggiuntivo di report di posta indesiderata in modalità invisibile
-<a name="BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode"> </a>
 
 1. Chiudere Outlook nel proprio computer.
     
@@ -135,9 +132,9 @@ L'installazione del componente aggiuntivo di report di posta indesiderata per Mi
   
     Per aggiungere entrambi questi parametri opzionali in base agli esempi riportati, specificare quanto segue per un computer in esecuzione sulla piattaforma x86 Outlook: 
     
-  ```
-  msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
-  ```
+      ```
+      msiexec /qn /i JunkReportingAdd-in.x86-en.msi. MaxMessageSelection=16 BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"
+      ```
 
 4. Al termine dell'installazione, avviare Outlook.
     
@@ -146,21 +143,19 @@ L'installazione del componente aggiuntivo di report di posta indesiderata per Mi
 6. Scegliere la freccia in giù accanto a **Posta indesiderata** per visualizzare altre opzioni, ad esempio **Segnala come phishing** per segnalare tentativi di phishing a Microsoft. Nella cartella della posta indesiderata, è inoltre possibile selezionare **Segnala come attendibile** se un messaggio di posta elettronica è stato identificato erroneamente come posta indesiderata. 
     
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>Disinstallazione del componente aggiuntivo per la segnalazione della posta indesiderata
-<a name="sectionSection2"> </a>
 
 È possibile disinstallare il componente aggiuntivo di report di posta indesiderata seguendo uno dei metodi riportati di seguito:
   
-- Rimuovendo il componente aggiuntivo mediante il Pannello di controllo di Windows. Per ulteriori informazioni, vedere [Disinstallazione del componente aggiuntivo per la segnalazione della posta indesiderata dal Pannello di controllo](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel). O
+- Rimuovendo il componente aggiuntivo mediante il Pannello di controllo di Windows. Per ulteriori informazioni, vedere [Disinstallazione del componente aggiuntivo per la segnalazione della posta indesiderata dal Pannello di controllo](#uninstall-the-junk-email-reporting-add-in-from-control-panel).
     
-- Eseguendo il pacchetto di Windows Installer e selezionando l'opzione di disinstallazione. Per ulteriori informazioni, vedere [Disinstallazione del componente aggiuntivo per la segnalazione della posta indesiderata eseguendo il pacchetto di Windows Installer](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage). O
+- Eseguire il pacchetto di Windows Installer e selezionare l'opzione di disinstallazione. Per ulteriori informazioni, vedere [disinstallare il componente aggiuntivo per la segnalazione della posta indesiderata eseguendo il pacchetto di Windows Installer](#uninstall-the-junk-email-reporting-add-in-by-running-the-windows-installer-package).
     
-- Eseguendo un'installazione invisibile mediante l'opzione di disinstallazione. Per ulteriori informazioni, vedere [Disinstallazione del componente aggiuntivo per la segnalazione della posta indesiderata in modalità invisibile](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#MK_UninstalltheJunkEmailReportingAdd-ininSilentMode).
+- Eseguendo un'installazione invisibile mediante l'opzione di disinstallazione. Per ulteriori informazioni, vedere [Disinstallazione del componente aggiuntivo per la segnalazione della posta indesiderata in modalità invisibile](#uninstall-the-junk-email-reporting-add-in-in-silent-mode).
     
 > [!NOTE]
 > È necessario disporre dei privilegi di amministratore del computer su cui si disinstalla il componente aggiuntivo. 
   
 ### <a name="uninstall-the-junk-email-reporting-add-in-from-control-panel"></a>Disinstallazione del componente aggiuntivo per la segnalazione della posta indesiderata dal Pannello di controllo
-<a name="BKMK_UninstalltheJunkEmailReportingAdd-infromControlPanel"> </a>
 
 1. Chiudere Outlook nel proprio computer.
     
@@ -175,7 +170,6 @@ L'installazione del componente aggiuntivo di report di posta indesiderata per Mi
 6. Avviare nuovamente Outlook per verificare che il componente aggiuntivo non sia più presente nella barra multifunzione di Outlook.
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-by-running-the-windows-installer-package"></a>Disinstallazione del componente aggiuntivo per la segnalazione della posta indesiderata eseguendo il pacchetto di Windows Installer
-<a name="BKMK_UninstalltheJunkEmailReportingAddinbyRunningtheWindowsInstallerPackage"> </a>
 
 1. Chiudere Outlook nel proprio computer.
     
@@ -191,7 +185,6 @@ L'installazione del componente aggiuntivo di report di posta indesiderata per Mi
 4. Avviare nuovamente Outlook per verificare che il componente aggiuntivo non sia più presente nella barra multifunzione di Outlook.
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-in-silent-mode"></a>Disinstallazione del componente aggiuntivo per la segnalazione della posta indesiderata in modalità invisibile
-<a name="MK_UninstalltheJunkEmailReportingAdd-ininSilentMode"> </a>
 
 1. Chiudere Outlook nel proprio computer.
     
@@ -209,7 +202,6 @@ L'installazione del componente aggiuntivo di report di posta indesiderata per Mi
 4. Avviare nuovamente Outlook per verificare che il componente aggiuntivo non sia più presente nella barra multifunzione di Outlook.
     
 ## <a name="for-more-information"></a>Ulteriori informazioni
-<a name="sectionSection3"> </a>
 
 [Segnalazione di messaggi indesiderati a Microsoft](report-junk-email-messages-to-microsoft.md)
   

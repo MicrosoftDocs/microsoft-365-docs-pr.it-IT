@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 283b6a45807547f9a8d0521cf2c6793a2a15c4d6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b0bb12a4c7f7120d1a607de53ec97d7e8ce915e8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690611"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859396"
 ---
-# <a name="compliance-offering-us-export-administration-regulations-ear"></a>Offerta di conformità: US Export Administration Regulations (EAR)
+# <a name="us-export-administration-regulations-ear"></a>Normative per l'esportazione degli Stati Uniti (EAR)
 
 ## <a name="about-the-ear"></a>Informazioni sull'EAR
 
@@ -46,13 +46,13 @@ Il dipartimento del commercio statunitense, che applica l'EAR, ha ritenuto che i
 - **Crittografia end-to-end**. Approfittando del porto sicuro per la crittografia end-to-end per i percorsi di archiviazione fisica specificati nell'EAR, i servizi cloud di Microsoft in-scope offrono funzionalità di crittografia che consentono di proteggere i rischi per il controllo delle esportazioni. Offrono inoltre ai clienti una [vasta gamma di opzioni per la crittografia dei dati](https://aka.ms/Azure-Encryption-Overview) in transito e a riposo e la flessibilità di scegliere tra le opzioni di crittografia.
 - **Strumenti e protocolli che impediscono l'esportazione ritenuta non autorizzata**. L'utilizzo della crittografia contribuisce anche alla protezione da una potenziale esportazione ritenuta (o considerata riesportazione) sotto l'EAR, perché anche se un utente non statunitense ha accesso ai dati crittografati, non viene rilevato nulla se non sono in grado di leggere o comprendere i dati mentre sono crittografati. Pertanto, non vi è alcuna "liberazione" dei dati controllati.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
-- [Azure e Azure Government](https://aka.ms/AzureCompliance)
+- [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - [Amministrazione di Office 365 (GCC-High e DoD)](https://aka.ms/Office-365-Export-Controls)
 - Intune
 
-## <a name="how-to-implement"></a>Modalità di implementazione
+## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 Panoramica dei controlli di esportazione degli Stati Uniti e indicazioni per i clienti che valutano gli obblighi derivanti dall'EAR.
 
@@ -88,4 +88,4 @@ Gli Stati Uniti dispongono anche di regolamenti di controllo di esportazione dis
 - [Restrizioni all'esportazione per la crittografia](https://docs.microsoft.com/windows/uwp/security/export-restrictions-on-cryptography)
 - [Microsoft e FIPS 140-2](offering-fips-140-2.md)
 - [Microsoft e ITAR](offering-itar.md)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

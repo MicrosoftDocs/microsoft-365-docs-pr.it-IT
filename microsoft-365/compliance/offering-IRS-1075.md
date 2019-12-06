@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 91d2d00b951252d8c8a1c9d8d405ff6c5fd888e2
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 30509260e83f1aaa59c57365357e18a3f12097c4
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690593"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859726"
 ---
-# <a name="compliance-offering-us-internal-revenue-service-publication-1075"></a>Offerta di conformità: pubblicazione degli Stati Uniti Internal Revenue Service 1075
+# <a name="us-internal-revenue-service-publication-1075"></a>Pubblicazione 1075 degli Stati Uniti Internal Revenue Service
 
 ## <a name="us-internal-revenue-service-publication-1075-overview"></a>Pubblicazione del servizio ricavo interno US 1075 Panoramica
 
@@ -42,15 +42,15 @@ Per aiutare gli enti governativi nelle loro attività di conformità, Microsoft:
 
 Informazioni sui vantaggi dell'IRS 1075 sul cloud Microsoft: [scaricare l'irs 1075 Backgrounder](https://aka.ms/irs1075-backgrounder)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 Le autorizzazioni di FedRAMP sono concesse a tre livelli di impatto in base alle linee guida del NIST: basso, medio e alto. Tali livelli incidono sull'impatto che la perdita di riservatezza, integrità o disponibilità può avere su un'organizzazione, a bassa (effetto limitato), a livello medio (effetto avverso grave) e alta (effetto grave o catastrofico).
 
-- [Azure e Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
+- [Azure e Azure per enti pubblici](https://azure.microsoft.com/global-infrastructure/government/)
 - Governo degli Stati Uniti Dynamics 365
-- [Office 365 e Office 365 US Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Difesa del governo degli Stati Uniti di Office 365
-- Servizio cloud di Power BI come servizio autonomo o come incluso in un piano o in una famiglia di prodotti di Office 365
+- [Office 365 e Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Office 365 U.S. Government Defense
+- Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
@@ -79,10 +79,10 @@ No. Gli unici ambienti in cui è possibile archiviare ed elaborare FTI sono Azur
 
 - [Pubblicazione IRS 1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)
 - [Programma di salvaguardia dell'IRS](https://www.irs.gov/uac/Safeguards-Program)
-- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-- [Microsoft Cloud per il governo](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Quadro di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Cloud per enti pubblici](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf).

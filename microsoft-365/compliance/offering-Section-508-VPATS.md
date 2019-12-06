@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 86973d36149a938507c93938b9d97a99761ece8b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 044e92561c86829477339dbd6db2a5fde2da87bb
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690613"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859466"
 ---
-# <a name="compliance-offering-us-section-508"></a>Offerta di conformità: sezione statunitense 508
+# <a name="us-section-508"></a>Sezione 508 degli Stati Uniti
 
 ## <a name="about-us-section-508"></a>Informazioni sugli Stati Uniti sezione 508
 
@@ -30,28 +30,28 @@ Poiché si tratta di un importante provider di servizi software e cloud per i go
 
 La conformità di Microsoft alla sezione 508 del regolamento degli Stati Uniti punta all'impegno a rendere accessibili la tecnologia e i dati per tutti i clienti. La sezione 508 degli Stati Uniti è il requisito di accessibilità specifico degli Stati Uniti, che integra EN 301 549 (Europa) e WCAG (International).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
-- [Azure e Azure Government](https://go.microsoft.com/fwlink/p/?linkid=2051569)
+- [Azure e Azure per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
-- Governo degli Stati Uniti Dynamics 365 e Dynamics 365
+- Dynamics 365 e Dynamics 365 U.S. Government
 - Intune
-- [Office 365 e Office 365 US Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- [Difesa del governo degli Stati Uniti di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 e Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Windows Server 2016
 
-## <a name="microsoft-accessibility-conformance-reports"></a>Rapporti di conformità di Microsoft Accessibility
+## <a name="microsoft-accessibility-conformance-reports"></a>Report Microsoft sulla conformità agli standard di accessibilità
 
-Trovare i [rapporti di conformità](https://go.microsoft.com/fwlink/p/?linkid=2050974) per tutti i prodotti e servizi.
+Sono disponibili [report di conformità](https://go.microsoft.com/fwlink/p/?linkid=2050974) per tutti i prodotti e i servizi Microsoft.
 
 ## <a name="resources"></a>Risorse
 
 - [Pagina Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?linkid=2051579): esplorare i modi in cui Microsoft innova in modo che tutti abbiano la possibilità di ottenere altre informazioni.
-- [Centro di accessibilità di office 365](https://go.microsoft.com/fwlink/p/?linkid=2051801): risorse di Office 365 per persone con disabilità.
-- [Segreteria telefonica](https://go.microsoft.com/fwlink/p/?linkid=2050890)per gli utenti aziendali: supporto dedicato per i clienti aziendali con domande sull'accessibilità dei prodotti e servizi o conformità.
+- [Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801): le risorse di Office 365 per persone con disabilità.
+- [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): supporto dedicato per clienti aziendali con domande sull'accessibilità sui prodotti e servizi Microsoft o sulla conformità.
 - [Programma del tester attendibile del DHS](https://go.microsoft.com/fwlink/?linkid=2052171): ottenere informazioni sul programma del tester attendibile del Department of Homeland Security (DHS), in cui partecipa Microsoft.
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf).

@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8924905e83d1911dc30a420319d61940b75bfe05
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: e7b3dbad49fd57005dffd7e39e61906efdab771d
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690625"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859346"
 ---
-# <a name="compliance-offering-nist-sp-800171"></a>Offerta di conformità: NIST SP 800 – 171
+# <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
 ## <a name="about-nist-sp-800171"></a>Informazioni su NIST SP 800 – 171
 
@@ -39,7 +39,7 @@ I requisiti NIST SP 800 – 171 sono un sottoinsieme di NIST SP 800-53, lo stand
 
 Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca, società di consulenza, appaltatori manifatturieri, deve soddisfare i severi requisiti del NIST SP 800 – 171. Questo attestato indica che i servizi cloud in ambito Microsoft possono ospitare i clienti che desiderano distribuire i carichi di lavoro cui con la certezza che Microsoft sia pienamente conforme. Ad esempio, tutti i contraenti DoD che elaborano, archiviano o trasmettono "informazioni di difesa coperte" utilizzando i servizi cloud Microsoft in ambito nei sistemi informativi, soddisfano le clausole del dipartimento della difesa degli Stati Uniti che richiedono la conformità con la sicurezza di DFARS. requisiti di NIST SP 800 – 171.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - [Governo degli Stati Uniti Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -50,7 +50,7 @@ Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca
 
 - [Attestazione del governo di Azure per la conformità con NIST SP 800 – 171](https://aka.ms/Azure-NIST-800-171)
 
-## <a name="how-to-implement"></a>Modalità di implementazione
+## <a name="how-to-implement"></a>Come implementare
 
 - [Cianografia del NIST SP 800 – 171](https://aka.ms/NIST-800-171-Blueprint): ottenere supporto per l'implementazione di carichi di lavoro in Azure conformi al NIST SP 800 – 171.
 
@@ -67,9 +67,9 @@ Sì. I clienti Microsoft possono utilizzare i controlli controllati descritti ne
 - [Autorizzazioni di FedRAMP per i servizi cloud Microsoft](https://marketplace.fedramp.gov/index.html?status=Compliant&sort=productName#/products)
 - [NIST 800-171 3,3 Audit and Accountability con Office 365 GCC High](https://info.summit7systems.com/blog/nist-3.3-audit-and-accountability-with-office-365)
 - [Microsoft e NIST Cybersecurity Framework](offering-nist-csf.md)
-- [Cloud di Microsoft Government](https://www.microsoft.com/enterprise/government)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cloud Microsoft per enti pubblici](https://www.microsoft.com/enterprise/government)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ).

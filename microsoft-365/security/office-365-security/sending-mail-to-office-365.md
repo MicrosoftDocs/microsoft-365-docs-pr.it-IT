@@ -14,18 +14,18 @@ ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
 description: Questi articoli consentono ai mittenti esterni di migliorare la propria reputazione e di aumentare la capacità di inviare messaggi di posta elettronica agli utenti in Office 365. Sono inoltre disponibili informazioni su come è possibile segnalare i tentativi di phishing e di posta indesiderata anche se non si è un utente di Office 365.
-ms.openlocfilehash: 335118eb49a078b79ae36f4813c530fe15643bae
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: da19605f97c906fae158bb8299339ffb82755faf
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032081"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39872032"
 ---
 # <a name="sending-mail-to-office-365"></a>Invio di posta a Office 365
 
 Questi articoli consentono ai mittenti esterni di migliorare la propria reputazione e di aumentare la capacità di inviare messaggi di posta elettronica agli utenti in Office 365. Sono inoltre disponibili informazioni su come è possibile segnalare i tentativi di phishing e di posta indesiderata anche se non si è un utente di Office 365.
 
-Se non si è un cliente di Office 365, ma si sta tentando di inviare messaggi di posta elettronica a un utente che si trova nel posto giusto. Se sei un amministratore di Office 365 e hai bisogno di aiuto per la lotta alla posta indesiderata, questa non è la sezione giusta per te. Passare invece alla [protezione da posta indesiderata e anti-malware](https://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx).
+Se non si è un cliente di Office 365, ma si sta tentando di inviare messaggi di posta elettronica a un utente che si trova nel posto giusto. Se sei un amministratore di Office 365 e hai bisogno di aiuto per la lotta alla posta indesiderata, questa non è la sezione giusta per te. Al contrario, passare alla [protezione da posta indesiderata e anti-malware in Office 365](anti-spam-and-anti-malware-protection.md).
 
 |**Per informazioni su...**|**Vedere...**|
 |:-----|:-----|

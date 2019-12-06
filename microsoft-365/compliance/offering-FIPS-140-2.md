@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 91dab1a0f064d35e836a921864817e670fd998b5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 4921fdaa2c6dc7199adb810f5320972f0c1ef8db
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690568"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859826"
 ---
-# <a name="compliance-offering-federal-information-processing-standard-fips-publication-140-2"></a>Offerta di conformità: pubblicazione FIPS (Federal Information Processing Standard) 140-2
+# <a name="federal-information-processing-standard-fips-publication-140-2"></a>Pubblicazione FIPS (Federal Information Processing Standard) 140-2
 
 ## <a name="fips-140-2-standard-overview"></a>Standard FIPS 140-2 Overview
 
@@ -32,13 +32,13 @@ Microsoft mantiene un impegno attivo per soddisfare i requisiti di 140-2, dopo a
 
 Per informazioni tecniche sui moduli di crittografia di Microsoft Windows, sui criteri di sicurezza per ogni modulo e sul catalogo dei dettagli del certificato di CMVP, vedere il [contenuto di Windows e Windows Server FIPS 140-2](https://aka.ms/AA6ehud).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 Mentre l'attuale guida all'implementazione di CMVP FIPS 140-2 preclude una convalida FIPS 140-2 per un servizio cloud stesso; i provider di servizi cloud possono scegliere di ottenere e gestire moduli di crittografia FIPS 140 convalidati per gli elementi di elaborazione che compongono il servizio cloud. Tra gli altri servizi Microsoft online che includono componenti, che sono stati convalidati da FIPS 140-2, sono inclusi i seguenti:
 
-- [Azure e Azure Government](https://docs.microsoft.com/azure/azure-government/documentation-government-plan-security)
+- [Azure e Azure per enti pubblici](https://docs.microsoft.com/azure/azure-government/documentation-government-plan-security)
 - [Government Dynamics 365 e Dynamics 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365)
-- [Office 365, Office 365 US Government e Office 365 US Government Defense](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
+- [Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -83,8 +83,8 @@ Si tratta di due standard di sicurezza distinti con finalità diverse, ma comple
 - [Requisiti di sicurezza di FIPS Pub 140-2 per i moduli di crittografia](https://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf)
 - [Programma di convalida del modulo di crittografia NIST](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows, Windows Server e FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf).

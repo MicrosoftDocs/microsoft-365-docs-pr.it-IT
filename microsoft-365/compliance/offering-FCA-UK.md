@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 55cb9e1901231f63b5e02b44b97c029359718625
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: f009914f2a5178104968fe443bbac0655f5541b9
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690563"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859886"
 ---
-# <a name="compliance-offering-united-kingdom-financial-conduct-authority-fca"></a>Offerta di conformità: Regno Unito Financial conduzione finanziaria (FCA)
+# <a name="united-kingdom-financial-conduct-authority-fca"></a>Autorità di condotta finanziaria del Regno Unito (FCA)
 
 ## <a name="fca-uk-overview"></a>Panoramica di FCA (Regno Unito)
 
@@ -40,11 +40,11 @@ Informazioni su come Azure è in grado di abilitare la conformità FCA nelle ban
 
 [Scaricare Microsoft approach to FCA finald cloud Guidance](https://go.microsoft.com/fwlink/p/?linkid=2101561)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
-- Servizio cloud di Power BI come servizio autonomo o come incluso in un piano o in una famiglia di prodotti di Office 365
+- Servizio cloud Power BI, indipendente o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -59,11 +59,11 @@ Sì. Tuttavia, sebbene le risposte di Microsoft a questo Framework siano conferm
 - [Elenco di controllo cloud Microsoft per gli istituti finanziari nel Regno Unito](https://aka.ms/Azure-UK-compliance)
 - [FG 16/5-linee guida per le aziende che esternalizzano al cloud e ad altri servizi IT di terze parti](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)
 - [Abilitazione della conformità: l'approccio Microsoft alla guida al cloud finalizzata a FCA](https://go.microsoft.com/fwlink/p/?linkid=2101561)
-- [Programma di conformità per i servizi finanziari Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
-- [Conformità ai servizi finanziari in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
-- [Servizi Microsoft Business Cloud e servizi finanziari](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Financial Services Compliance Program di Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Conformità dei servizi finanziari in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Servizi finanziari e servizi cloud aziendali di Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf).

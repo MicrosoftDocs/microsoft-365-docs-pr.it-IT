@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d37557c1df1edfc026960b5a7d256d5d3fbc7a0b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7e8d24aecb2343ed03a1d224b21060619426717f
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690565"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859876"
 ---
-# <a name="compliance-offering-food-and-drug-administration-cfr-title-21-part-11"></a>Offerta di conformità: Food and Drug Administration CFR Title 21 parte 11
+# <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR Titolo 21 parte 11
 
 ## <a name="fda-cfr-title-21-overview"></a>Panoramica della FDA CFR Title 21
 
@@ -42,14 +42,14 @@ I clienti possono richiedere l'accesso ai rapporti di conformità, in base ai te
 
 Informazioni su come accelerare la distribuzione della FDA CFR Title 21: [scaricare la guida alla qualificazione di Azure FDA 21](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 Anche se non vi è alcuna certificazione per la conformità con il titolo QRC 21 parte 11, i seguenti servizi cloud di Microsoft Enterprise sono stati sottoposti a controlli di terze parti indipendenti, che possono aiutare i clienti a rispettare le proprie attività. Questi servizi includono:
 
 - Azure: Servizi cloud, archiviazione, gestione traffico, macchine virtuali e rete virtuale
 - Intune
-- [Governo degli Stati Uniti Dynamics 365 e Dynamics 365](https://aka.ms/d365-compliance-list)
-- [Office 365 e Office 365 US Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Dynamics 365 e Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
+- [Office 365 e Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
@@ -69,7 +69,7 @@ I controlli controllati implementati da Microsoft contribuiscono a garantire la 
 
 **Come è possibile ottenere le copie dei report di un revisore?**
 
-Il [Service Trust Portal](https://aka.ms/stphelp) fornisce rapporti di conformità controllati in modo indipendente. È possibile utilizzare il portale per richiedere i rapporti di controllo in modo che i revisori possano confrontare i risultati dei servizi cloud di Microsoft con i propri requisiti legali e normativi.
+Il [Service Trust Portal](https://aka.ms/stphelp) fornisce report di conformità controllati in modo indipendente. È possibile utilizzare il portale per richiedere i rapporti di controllo in modo che i revisori possano confrontare i risultati dei servizi cloud di Microsoft con i propri requisiti legali e normativi.
 
 **È possibile utilizzare la conformità di Microsoft nel processo di certificazione per la propria organizzazione?**
 
@@ -86,11 +86,11 @@ Microsoft garantisce che i servizi cloud aziendali soddisfino i termini definiti
 - [Guida della FDA per l'industria parte 11: registri elettronici e firme](https://www.fda.gov/RegulatoryInformation/Guidances/ucm125067.htm)
 - [Linee guida per la qualificazione per Azure](https://aka.ms/azurefda21cfrpart11qualguide)
 - [Linee guida per la qualificazione di Office 365](https://aka.ms/o365-qualification-guideline)
-- [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-- [Condizioni dei servizi online Microsoft](https://aka.ms/Online-Services-Terms)
-- [Microsoft Cloud per il governo](https://aka.ms/govt-cloud)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
+- [Microsoft Cloud per enti pubblici](https://aka.ms/govt-cloud)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf).

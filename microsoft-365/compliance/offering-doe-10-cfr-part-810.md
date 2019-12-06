@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1e7f850a06a95f86c2afd5c8bccc77ff5431dda4
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: fe87cde60847a0f5d935b50f433cd9b95702bebf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690610"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859406"
 ---
-# <a name="compliance-offering-us-doe-10-cfr-part-810"></a>Offerta di conformità: US DoE 10 CFR parte 810
+# <a name="us-doe-10-cfr-part-810"></a>US DoE 10 CFR parte 810
 
 ## <a name="microsoft-and-doe-10-cfr-part-810"></a>Microsoft e DoE 10 CFR parte 810
 
@@ -31,12 +31,12 @@ FedRAMP offre una linea di base appropriata per garantire che Azure Government o
 
 Inoltre, Azure Government è un cloud della community del governo degli Stati Uniti che è fisicamente separato dal cloud di Azure. Fornisce garanzie aggiuntive relative ai requisiti specifici di screening del background da parte del governo degli Stati Uniti, compresi controlli specifici che limitano l'accesso alle informazioni e ai sistemi per i cittadini degli Stati Uniti tra il personale di Azure Operations.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - Intune
 
-## <a name="how-to-implement"></a>Modalità di implementazione
+## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 - [Standard CIP di NERC & cloud computing](https://aka.ms/AzureNERC): indicazioni per le utilità elettriche e le entità registrate per la distribuzione di carichi di lavoro su Azure o Azure Government.
 
@@ -63,9 +63,9 @@ I clienti che distribuiscono dati in Azure government sono responsabili del prop
 - [Servizi cloud di Azure e controlli di esportazione degli Stati Uniti](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 - [Microsoft e FedRAMP](offering-fedramp.md)
 - [Microsoft e DoD](offering-dod-disa-l2-l4-l5.md)
-- [Cloud di Microsoft Government](https://www.microsoft.com/enterprise/government)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Cloud Microsoft per enti pubblici](https://www.microsoft.com/enterprise/government)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/A/E/3/AE309D0E-F8D5-42C9-9B36-86FF51464AFC/DOE_10CFR_Part810-Compliance.pdf).

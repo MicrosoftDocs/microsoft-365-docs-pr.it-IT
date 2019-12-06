@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3ec66f54c8db21bf4d94feb22c5dd17ee4b45ef5
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 1cfd4b00c8c23aedb33ca832c37e0147d3beca0c
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690624"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859296"
 ---
-# <a name="compliance-offering-police-assured-secure-facilities-pasf-united-kingdom"></a>Offerta di conformità: Secure facilities (PASF) per la polizia (Regno Unito)
+# <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Servizi di sicurezza garantiti dalla polizia (PASF) Regno Unito
 
 ## <a name="about-pasf"></a>Informazioni su PASF
 
@@ -34,7 +34,7 @@ Microsoft accetta un approccio olistico alla sicurezza per la difesa. I datacent
 
 Queste certificazioni sono state configurate con le misure da intraprendere per proteggere la sicurezza fisica dei datacenter. Si adotta un approccio a più livelli che inizia con la progettazione, la creazione e l'utilizzo dei Data Center per il controllo rigoroso dell'accesso fisico alle aree in cui sono archiviati i dati del cliente. I datacenter gestiti da Microsoft dispongono di livelli di protezione estensivi con l'approvazione di accesso necessaria nel perimetro della struttura, nel perimetro dell'edificio, all'interno dell'edificio e nel piano del datacenter. In questo modo si riduce il rischio che gli utenti non autorizzati accedano all'accesso fisico ai dati e alle risorse dei data center.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -44,7 +44,7 @@ Queste certificazioni sono state configurate con le misure da intraprendere per 
 
 Il NPIRMT controlla un datacenter di Azure ogni anno, ciclando annualmente nei quattro datacenter Microsoft nel Regno Unito. La valutazione di NPIRMT che i datacenter Microsoft sono PASF è disponibile tramite l'Home Office per i clienti che stanno conducendo la propria valutazione dei rischi di Azure e di altri servizi cloud Microsoft.
 
-## <a name="how-to-implement"></a>Modalità di implementazione
+## <a name="how-to-implement"></a>Come implementare
 
 - [Cianografia ufficiale di Azure UK](https://servicetrust.microsoft.com/ViewPage/UKBlueprints): aiuta i clienti britannici ad accelerare le distribuzioni di IaaS e PaaS di carichi di lavoro conformi in Azure.
 
@@ -59,9 +59,9 @@ Sì. L'applicazione della legge può utilizzare la valutazione di NPIRMT di Azur
 - [Politica di accreditamento per la polizia nazionale](http://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
 - [Servizi di Azure, locali e sicurezza fisica](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Normative Microsoft e ISO/IEC 27001:2013 ISM](offering-iso-27001.md)
-- [Condizioni dei servizi online Microsoft](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Condizioni di Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf).

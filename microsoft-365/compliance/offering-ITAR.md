@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b79cd30c225631b93c92f8199d008d24ecc9a06d
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690596"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859656"
 ---
-# <a name="compliance-offering-international-traffic-in-arms-regulations-itar"></a>Offerta di conformità: International Traffic in Arms Regulations (ITAR)
+# <a name="international-traffic-in-arms-regulations-itar"></a>Traffico internazionale nelle normative sulle armi (ITAR)
 
 ## <a name="itar-overview"></a>Panoramica di ITAR
 
@@ -36,10 +36,10 @@ Il ITAR ha obblighi specifici per segnalare le violazioni, che possono fornire a
   
 I clienti che desiderano ospitare dati regolati da ITAR dovrebbero collaborare con i propri account Microsoft e i team di gestione delle licenze per ulteriori informazioni, ottenere contratti adeguati e accedere a rilevanti Information Architecture System.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
-- [Difesa del governo degli Stati Uniti di Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -54,8 +54,8 @@ Contattare il rappresentante dell'account Microsoft.
 - [Utilizzo di Azure Government con dati controllati da ITAR](https://aka.ms/azure-itar-guide)
 - [Amministrazione di Azure](https://azure.microsoft.com/features/gov/)
 - [Office 365 governo degli Stati Uniti](https://products.office.com/government/office-365-web-services-for-government)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf).

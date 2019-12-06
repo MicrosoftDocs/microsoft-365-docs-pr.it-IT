@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 3372332529f9391b5cea8da4095d04178e8b731b
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 437029198d48ef8b2d9d91466108fbef989486c2
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813876"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859286"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati da Microsoft Managed Desktop
 
@@ -34,6 +34,7 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 | Modello  | Specifiche minime  | Requisiti aggiuntivi   | Data di pensionamento |
 |---------|---------|---------|---------|
 | HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario  | **Feb 15, 2023** |
+|Surface Book 2| 256 GB/Intel i5/8 GB di RAM | Nessuno | **16 novembre 2022** |
 |Laptop Surface| 256 GB/Intel i5/8 GB di RAM | Nessuno | **20 maggio 2022** |
 |Surface Pro| 256 GB/Intel i5/8 GB di RAM | Nessuno | **15 giugno 2022** |
 

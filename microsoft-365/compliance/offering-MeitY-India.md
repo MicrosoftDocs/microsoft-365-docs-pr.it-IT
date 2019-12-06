@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 34e20578d09079031d4a41bafdf199d055ced09a
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: b5fb48ebaf16d2f7c17645c347185326cde6eefa
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690588"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859576"
 ---
-# <a name="compliance-offering-ministry-of-electronics-and-information-technology-meity"></a>Offerta di conformità: Ministry of Electronics and Information Technology (Riccardo)
+# <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministry of Electronics and Information Technology (Riccardo)
 
 ## <a name="meity-overview"></a>Panoramica di Riccardo
 
@@ -38,7 +38,7 @@ Nel novembre 2017, Microsoft è diventato uno dei primi provider di servizi clou
 
 L'accreditamento di Riccardo di Microsoft è stato il risultato di un rigoroso audit condotto dalla Directional testing and Quality Certification (STQC), un'organizzazione del governo che fornisce servizi di controllo della qualità, utilizzando un Framework di valutazione in base al lavoro dell'iniziativa cloud di MeghRaj. Tramite Microsoft Azure, le organizzazioni del settore pubblico possono ora attingere a una vasta gamma di modelli di distribuzione e offerte di servizi, tra cui l'infrastruttura come servizio (IaaS), la piattaforma come servizio (PaaS), il ripristino di emergenza, DevOps e il backup gestito.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -58,8 +58,8 @@ La messa a disposizione dei servizi governativi ai cittadini online è una parte
 - [Ministero dell'elettronica e della tecnologia dell'informazione](https://meity.gov.in/)
 - [Iniziativa cloud di MeghRaj](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Provider di servizi cloud accreditati](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf).

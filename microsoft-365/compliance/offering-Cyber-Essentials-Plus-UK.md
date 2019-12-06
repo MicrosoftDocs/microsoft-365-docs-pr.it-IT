@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 28f30ec3181a90f259d6cafd9a3548d7a1ad5852
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 795a8b94c53aa94731d6c55786312b1baef6a685
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690581"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859986"
 ---
-# <a name="compliance-offering-united-kingdom-cyber-essentials-plus"></a>Offerta di conformità: Regno Unito Cyber Essentials PLUS
+# <a name="united-kingdom-cyber-essentials-plus"></a>Regno Unito Cyber Essentials PLUS
 
 ## <a name="uk-cyber-essentials-plus-overview"></a>Informazioni generali su Cyber Essentials PLUS
 
@@ -47,8 +47,8 @@ La [certificazione di Azure Cyber Essentials Plus](https://aka.ms/AzureCyberEPlu
 ## <a name="resources"></a>Risorse
 
 - [Schema di Cyber Essentials: Framework Assurance](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf).

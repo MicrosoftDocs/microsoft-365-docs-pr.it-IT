@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 02259b8c9e957e29ce695330a80b2a252478c0e1
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 7ed252a681942d7c00840d3902f4c48e80231331
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690562"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859866"
 ---
-# <a name="compliance-offering-family-educational-rights-and-privacy-act-ferpa"></a>Offerta di conformità: diritti didattici per la famiglia e legge sulla privacy (FERPA)
+# <a name="family-educational-rights-and-privacy-act-ferpa"></a>Legge sull'educazione alla famiglia e la Privacy Act (FERPA)
 
 ## <a name="ferpa-overview"></a>Panoramica di FERPA
 
@@ -40,14 +40,14 @@ A causa di questi impegni contrattuali, i clienti che sono soggetti a FERPA, sia
 
 Informazioni sui vantaggi di FERPA nel cloud Microsoft: [scaricare il backgrounder di FERPA](https://aka.ms/ferpa-compliance)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 I servizi per i quali Microsoft accetta di essere designati come "ufficiali scolastici" con "interessi educativi legittimi" nei dati dei clienti includono:
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365, Office 365 US Government e Office 365 US Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- [Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI, PowerApps e Microsoft Flow come servizio autonomo o come incluso in un piano o in una famiglia di prodotti di Office 365
 - Azure DevOps Services
 - Windows Defender ATP
@@ -74,9 +74,9 @@ La legge federale degli Stati Uniti incarica la protezione della privacy dei rec
 - [Federal Register: regola finale di FERPA](https://aka.ms/ferpa-reg)
 - [Guida all'implementazione di FERPA per Microsoft Azure](https://aka.ms/azureferpa)
 - [Mapping del Framework di conformità di FERPA di Azure](https://aka.ms/AzureFERPAMapping)
-- [Condizioni dei servizi online Microsoft](https://aka.ms/Online-Services-Terms)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf).

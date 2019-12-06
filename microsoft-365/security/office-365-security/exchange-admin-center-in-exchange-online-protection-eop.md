@@ -14,18 +14,18 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: L'Interfaccia di amministrazione di Exchange (EAC) è la console di gestione basata sul Web per Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: bc825f7ebefa5d2d73a6e9cb954389a7d76cbd73
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 6ef800b9f440f67d45f3eaa08b4731989fcf2652
+ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032381"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871862"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Interfaccia di amministrazione di Exchange in Exchange Online Protection
 
 L'Interfaccia di amministrazione di Exchange (EAC) è la console di gestione basata sul Web per Microsoft Exchange Online Protection (EOP).
 
-Per informazioni sulla versione di Exchange Server in questo argomento, vedere Vedere interfaccia [di amministrazione di Exchange in exchange 2013](https://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
+Per informazioni sulla versione di Exchange Server in questo argomento, vedere Vedere interfaccia [di amministrazione di Exchange in Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).
 
 Per informazioni sulla versione di Exchange online in questo argomento, vedere Vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 

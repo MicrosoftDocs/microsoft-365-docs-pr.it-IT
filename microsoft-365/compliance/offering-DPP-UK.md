@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ac12047420e29a0c096dffac884ab584a38fad9b
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 3adc0bcc75886476de9f088c1f539c63fe4e4be8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690567"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859966"
 ---
-# <a name="compliance-offering-digital-production-partnership-dpp-united-kingdom"></a>Offerta di conformità: Digital Production partnership (DPP) Regno Unito
+# <a name="digital-production-partnership-dpp-united-kingdom"></a>Digital Production partnership (DPP) Regno Unito
 
 ## <a name="about-the-dpp"></a>Informazioni sul DPP
 
@@ -32,7 +32,7 @@ Microsoft Azure ha ricevuto il DPP committed to Security Mark per la trasmission
   
 Questo significa che i broadcaster e altri clienti multimediali che utilizzano Azure possono avere fiducia che il suo robusto servizio di sicurezza e resiliente può contribuire a soddisfare le esigenze specifiche del settore broadcast, dallo sviluppo del programma alla trasmissione.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 
@@ -43,7 +43,7 @@ Il contrassegno di trasmissione di Azure è valido per un anno e viene rinnovato
 - [Elenco di controllo dei requisiti di sicurezza per broadcaster di Azure NABA DPP](https://aka.ms/Azure-CTS-Broadcast-Checklist)
 - [DPP impegnato in società di sicurezza aggiudicate i marchi](https://aka.ms/Azure-Asset-Mgmt)
 
-## <a name="how-to-implement"></a>Modalità di implementazione
+## <a name="how-to-implement"></a>Come implementare
 
 - [Asset Management Hardening Guide](https://aka.ms/Azure-Asset-Mgmt): procedure consigliate in Azure Proteggi il contenuto prerilascio da divulgazione, modifica o eliminazione non autorizzata.
 - [Servizi di Azure Media](https://docs.microsoft.com/azure/media-services/): creare soluzioni che raggiungano la codifica video ad alta definizione e lo streaming video di qualità broadcast.
@@ -52,8 +52,8 @@ Il contrassegno di trasmissione di Azure è valido per un anno e viene rinnovato
 
 - [DPP dedicato al programma di sicurezza broadcast Checklist Guida utente](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [Le emittenti NABA e DPP si uniscono per promuovere i requisiti di sicurezza cibernetica dei fornitori](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare l'offerta Backgrounder
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento Backgrounder per questa offerta? Scaricare il [file PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf).
+È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf).

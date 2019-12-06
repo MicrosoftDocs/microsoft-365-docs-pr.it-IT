@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 87ae15ddadf50ac19f9325cd1e0279f542cedfba
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: 115b0499d481b29361c74db1dfa0481933616405
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38690612"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859416"
 ---
-# <a name="compliance-offering-california-consumer-privacy-act-ccpa"></a>Offerta di conformità: California Consumer Privacy Act (CCPA)
+# <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
 ## <a name="ccpa-overview"></a>Panoramica di CCPA
 
@@ -26,9 +26,9 @@ La California Consumer Privacy Act (CCPA) è la prima legge globale sulla privac
 
 La CCPA si applica solo alle società che operano in California che soddisfano una o più delle seguenti condizioni: (1) hanno un reddito annuo lordo superiore a $25 milioni, oppure (2) derivano più del 50% del loro reddito annuo dalla vendita della California consumer Personal informazioni o (3) acquistare, vendere o condividere le informazioni personali di più di 50.000 consumatori California ogni anno.
 
-Il CCPA entra in vigore il 1 ° gennaio 2020. Tuttavia, l'applicazione da parte del procuratore generale della California (AG) inizierà il 1 ° luglio 2020.
+Il CCPA entrerà in vigore il 1° gennaio 2020. Tuttavia, l'applicazione da parte del procuratore generale della California (AG) inizierà il 1 ° luglio 2020.
 
-La California AG implicherà la CCPA e avrà il potere di emettere ammende di non conformità. Il CCPA fornisce anche un diritto d'azione privato che è limitato alle violazioni dei dati. Sotto il diritto d'azione privato, i danni possono essere compresi tra $100 e $750 per ogni incidente per ogni utente. La California AG può anche applicare la CCPA nella sua interezza con la possibilità di riscuotere una penale civile non superiore a $2.500 per violazione o $7.500 per violazione intenzionale.
+La California AG implicherà la CCPA e avrà il potere di emettere ammende di non conformità. Il CCPA fornisce anche un diritto d'azione privato che è limitato alle violazioni dei dati. In base a tale diritto, i danni possono essere quantificati tra $ 100 e $ 750 per incidente per utente. L'attorney general della California può anche applicare il CCPA nella sua interezza, che prevede una penale civile non superiore a $ 2.500 per violazione o $ 7.500 per violazione intenzionale.
 
 ## <a name="microsoft-and-the-ccpa"></a>Microsoft e CCPA
 
@@ -36,7 +36,7 @@ Per i clienti commerciali che operano in California, Microsoft fungerà da "prov
 
 Come indicato nell'OST, Microsoft è conforme a tutte le leggi e normative applicabili alla sua fornitura dei servizi online, che includerà il CCPA.  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud di Microsoft in-scope
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Operazioni di sviluppo di Azure
@@ -50,14 +50,14 @@ Come indicato nell'OST, Microsoft è conforme a tutte le leggi e normative appli
 
 Di seguito sono riportati alcuni passaggi da eseguire per prepararsi per l'CCPA:
 
-- Iniziare a sfruttare la valutazione di GDPR in Compliance Manager come parte del programma di privacy di CCPA.
+- Iniziare a sfruttare la valutazione per il GDPR in Compliance Manager nell'ambito del programma sulla privacy del CCPA.
 - Stabilire un processo per rispondere in modo efficiente alle richieste di accesso del soggetto dei dati (DSARs) utilizzando lo strumento richieste degli interessati.
-- Impostare etichette e criteri per individuare, classificare & Label e proteggere i dati sensibili con Microsoft Information Protection.
-- Utilizzare le funzionalità di crittografia della posta elettronica per controllare ulteriormente le informazioni riservate.
+- Impostare etichette e criteri per individuare, classificare ed etichettare e proteggere i dati sensibili con Microsoft Information Protection.
+- Usare le funzionalità di crittografia della posta elettronica per controllare ulteriormente le informazioni riservate.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**Come influenzerà la CCPA sulla mia azienda?**
+**In che modo il CCPA influenzerà le aziende?**
 
 Molti dei diritti di CCPA offerti ai californiani sono simili ai diritti forniti da GDPR, incluse le richieste relative alla divulgazione e all'oggetto Right (DSR), ad esempio l'accesso, l'eliminazione e la portabilità. In questo modo, il cliente può esaminare le soluzioni di GDPR già esistenti per aiutarle con la conformità CCPA.
 
@@ -65,29 +65,29 @@ Per iniziare il viaggio di CCPA, è necessario concentrarsi sulla scoperta delle
 
 **Quali sono le differenze tra GDPR e CCPA?**
 
-Sono presenti molte differenze. È più facile concentrarsi sulle similitudini, tra cui:
+Ci sono molte differenze. È più facile evidenziare le analogie, tra cui:
 
 - Obblighi di trasparenza/divulgazione,
 - Diritti dei clienti per l'accesso, l'eliminazione e la ricezione di una copia dei dati
 - Definizione di "provider di servizi" analoga al modo in cui GDPR definisce "processori" con un impegno contrattuale analogo e
 - Definizione di "business" che comprende la definizione GDPR di "controller".
 
-La maggiore differenza in CCPA è il requisito fondamentale per abilitare un opt-out dalla vendita dei dati a terze parti (con "vendita" ampiamente definite per includere la condivisione dei dati per considerazione importante).
+La principale differenza con il CCPA è costituita dal requisito principale che consente di rifiutare esplicitamente la distribuzione di dati a terze parti (con l'ampia definizione di "vendita" per includere la condivisione dei dati a titolo oneroso).
 
-**Quali diritti devono essere abilitati dalle aziende nell'ambito di CCPA?**
+**Quali diritti devono essere garantiti dalle aziende ai sensi del CCPA?**
 
 Il CCPA richiede attività regolamentate che raccolgono, trasferiscono e vendono informazioni personali, tra le altre cose:
 
-- Fornire informazioni divulgative ai consumatori, prima della raccolta, per quanto riguarda le categorie e gli scopi della raccolta.
+- Fornire informazioni dettagliate ai clienti, prima della raccolta, relative alle categorie e agli scopi della raccolta.
 - Fornire informazioni più dettagliate su una privacy policy relativa alle fonti, ai fini aziendali e alle categorie di dati personali raccolti, incluso il modo in cui tali categorie vengono vendute o trasferite ad altre entità.
 - Abilitare i diritti DSR di accesso, eliminazione e portabilità per gli elementi specifici di informazioni personali che sono stati raccolti dall'utente.
 - Abilitare un controllo che consenta ai consumatori di rifiutare la vendita dei dati del consumer. Tuttavia, i trasferimenti per le entità esenti, ad esempio i provider di servizi, saranno consentiti.
 - Per i minorenni, al di sotto dei 16 anni, abilitare un processo di opt-in in modo che nessuna vendita delle informazioni personali del minorenne possa verificarsi senza partecipare attivamente alla vendita.
-- Garantire che i consumatori non siano discriminati per esercitare i propri diritti in CCPA.
+- Assicurarsi che gli utenti non siano discriminati per aver esercitato uno dei diritti ai sensi del CCPA.
 
-**In che modo l'CCPA si applica ai bambini?**
+**In che modo si applicano i principi del CCPA ai minori?**
 
-- CCPA introduce gli obblighi di consenso dei genitori coerenti con Children ' s Online Privacy Protection Act (COPPA) per i bambini di età inferiore ai 13 anni.
+- Il CCPA introduce obblighi di consenso dei genitori coerenti con la legge Children's Online Privacy Protection Act (COPPA) per bambini di età inferiore ai 13 anni.
 - Per i bambini tra i 13 e i 16 anni, CCPA impone un nuovo obbligo di ottenere il consenso opt-in dal bambino.
 
 ## <a name="resources"></a>Risorse
@@ -95,5 +95,5 @@ Il CCPA richiede attività regolamentate che raccolgono, trasferiscono e vendono
 - [5 suggerimenti per prepararsi per la nuova legge sulla privacy del consumer californiano](https://aka.ms/M365ComplianceBlog_RSA)
 - [Guida introduttiva a CCPA](https://info.microsoft.com/ww-landing-Five-tips-to-help-you-prepare-for-the-California-Consumer-Privacy-Act.html)
 - [Richieste del soggetto dei dati e GDPR](gdpr-data-subject-requests.md)
-- [Domande frequenti su California Consumer Privacy Act (CCPA)](ccpa-faq.md)
-- [Conformità al Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Domande frequenti sul California Consumer Privacy Act (CCPA)](ccpa-faq.md)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
