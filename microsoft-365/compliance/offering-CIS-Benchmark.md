@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 968e2196bec0ff853c8f68625ca078f384d8951d
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 264f592357c9030865d3acd6dc138878bedf41bf
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39233609"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860056"
 ---
-# <a name="compliance-offering-center-for-internet-security-cis-benchmarks"></a>Offerte per la conformità: benchmark del Center for Internet Security (CIS)
+# <a name="center-for-internet-security-cis-benchmarks"></a>Benchmark del Center for Internet Security (CIS)
 
 ## <a name="about-cis-benchmarks"></a>Informazioni sui benchmark CIS
 

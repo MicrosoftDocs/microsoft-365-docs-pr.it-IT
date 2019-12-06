@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c882f427ea3d03a649751db514f8239676c6f7af
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 33bd7c3626e29471495e9d7d7d251fc65c4e7892
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39192528"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859936"
 ---
-# <a name="compliance-offering-european-standards-en-301-549-reports"></a>Offerta per la conformità: report sugli standard europei EN 301 549
+# <a name="european-standards-en-301-549-reports"></a>Report sugli standard europei EN 301 549
 
 ## <a name="about-en-301-549"></a>Informazioni sugli standard EN 301 549
 

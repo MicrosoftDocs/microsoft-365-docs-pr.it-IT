@@ -11,22 +11,22 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3c1bfd0d77eb2dd1a928355441cd8bb1ca5d574c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3bb251b888ba98bd1a815bde0aed0584a4a9bc13
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "39625293"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859306"
 ---
-# <a name="compliance-offering-personal-data-protection-act-pdpa-argentina"></a>Offerta di conformità: legge sulla protezione dei dati personali in Argentina
+# <a name="personal-data-protection-act-pdpa-argentina"></a>Legge sulla protezione dei dati personali in Argentina
 
 ## <a name="about-the-pdpa"></a>Informazioni sulla legge sulla protezione dei dati personali
 
-In conformità con la Costituzione nazionale argentina, la [legge sulla protezione dei dati personali 25.326](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) ([Ley de Protección de los Datos Personales](https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) è stata resa esecutiva nel 2000 per tutelare la privacy dei dati personali e fornire alle persone accesso alle informazioni archiviate nei registri e database pubblici e privati. L'agenzia di accesso alle informazioni pubbliche argentina ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) al servizio del Capo del Gabinetto dei Ministri è tenuto a far rispettare tale legge.
+In conformità con la Costituzione nazionale argentina, la [legge sulla protezione dei dati personali 25.326](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) è stata resa esecutiva nel 2000 per tutelare la privacy dei dati personali e fornire alle persone accesso alle informazioni archiviate nei registri e database pubblici e privati. L'agenzia di accesso alle informazioni pubbliche argentina ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) al servizio del Capo del Gabinetto dei Ministri è tenuto a far rispettare tale legge.
 
 La legge sulla protezione dei dati personali è in linea con il modello legislativo europeo per la tutela della privacy dei dati e l'Argentina è stato il primo paese in America Latina a raggiungere un requisito di "adeguatezza" per i trasferimenti dei dati dall'UE.
 
-Nel 2016, l'AAIP ha emesso un nuovo regolamento, la [direttiva 60-E/2016](https://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (versione in spagnolo), che regola i trasferimenti transfrontalieri dei dati personali. Ai sensi di tale disposizione, sono stati approvati tipi di modelli (in parte basati sul modello di trasferimento dati vigente nell'UE) per tali trasferimenti ai titolari del trattamento dei dati e ai responsabili del trattamento dei dati.
+Nel 2016, l'AAIP ha emesso un nuovo regolamento, la [direttiva 60-E/2016](http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (versione in spagnolo), che regola i trasferimenti transfrontalieri dei dati personali. Ai sensi di tale disposizione, sono stati approvati tipi di modelli (in parte basati sul modello di trasferimento dati vigente nell'UE) per tali trasferimenti ai titolari del trattamento dei dati e ai responsabili del trattamento dei dati.
 
 ## <a name="microsoft-and-the-pdpa"></a>Microsoft e la legge sulla protezione dei dati personali
 

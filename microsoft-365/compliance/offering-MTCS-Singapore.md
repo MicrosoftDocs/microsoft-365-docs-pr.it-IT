@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 95f3d0a8a502dc1a3100366d9c73419b2e7d06d4
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: df2c929523f651b7220fb0546928509dd8c0b6ad
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39195427"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859586"
 ---
-# <a name="compliance-offering-multi-tier-cloud-security-mtcs-standard-for-singapore"></a>Offerta di conformità: Standard Multi-Tier Cloud Security (MTCS) per Singapore
+# <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>Standard Multi-Tier Cloud Security (MTCS) per Singapore
 
 ## <a name="mtcs-overview"></a>Panoramica sul MTCS
 
@@ -47,7 +47,7 @@ Scopri tutti i vantaggi di MTCS su Microsoft Cloud: [scarica lo standard MTCS pe
 - [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2051700)
 - Cloud App Security
 - Genomica
-- Grafico
+- Graph
 - Bot per i servizi sanitari
 - Intune
 - Flow

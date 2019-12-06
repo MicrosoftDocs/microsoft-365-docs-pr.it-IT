@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9d9309c7840fd9ca6d0038444c40884dcb92ae83
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: 306ac54b80ff7187b5377ad2b140df7b64028e69
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676663"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859666"
 ---
-# <a name="compliance-offering-it-grundschutz-compliance-workbook"></a>Offerta per la conformità: manuale di conformità IT-Grundschutz
+# <a name="it-grundschutz-compliance-workbook"></a>Manuale di conformità IT-Grundschutz
 
 ## <a name="it-grundschutz-compliance-workbook-overview"></a>Panoramica del manuale di conformità IT-Grundschutz
 
