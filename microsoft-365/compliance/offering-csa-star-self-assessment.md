@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 28f526845ccaee4ea914c3859d4a2a9c34068048
-ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
+ms.openlocfilehash: 73a21ba3089646df55ad51a7918749f29691aad8
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "38763033"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39859426"
 ---
-# <a name="compliance-offering-cloud-security-alliance-csa-star-self-assessment"></a>Offerta per la conformità: autovalutazione Cloud Security Alliance (CSA) STAR
+# <a name="cloud-security-alliance-csa-star-self-assessment"></a>Autovalutazione Cloud Security Alliance (CSA) STAR
 
 ## <a name="csa-star-self-assessment-overview"></a>Panoramica sull’autovalutazione CSA STAR
 
@@ -67,7 +67,7 @@ Consente ai CSP di documentare in modo trasparente la propria conformità alle p
 **Quali sono i livelli di controllo CSA STAR raggiunti dai servizi cloud Microsoft per le aziende?**
 
 - **Livello 1**: **Autovalutazione CSA STAR**: Azure, Dynamics 365 e Office 365. L'autovalutazione è un'offerta gratuita fornita dai provider di servizi cloud per documentare i propri controlli di sicurezza e consentire ai clienti di valutare la sicurezza del servizio.
-- **Livello 2**: **Certificazione CSA STAR**: Azure, Cloud App Security, Intune e Power BI. La certificazione STAR si basa sull’ottenimento della certificazione ISO/IEC 27001 e sul rispetto dei criteri specificati nel CCM. Viene rilasciata dopo una rigorosa valutazione di terze parti dei controlli e delle procedure di sicurezza di un provider di servizi cloud.
+- **Livello 2**: **Certificazione CSA STAR**: Azure, Cloud App Security, Intune e Power BI. La certificazione STAR si basa sull'ottenimento della certificazione ISO/IEC 27001 e sul rispetto dei criteri specificati nella CCM. Viene rilasciata dopo una rigorosa valutazione eseguita da terze parti dei controlli e delle procedure di sicurezza di un provider di servizi cloud.
 - **Livello 2** - **Attestazione CSA STAR**: Azure e Intune. La CSA e l’AICPA hanno collaborato per fornire delle linee guida per le CPA per l'esecuzione di impegni SOC 2, usando i criteri dell’AICPA (Principi dei servizi attendibili, AT 101) e il CSA CCM. L'attestazione STAR si basa su queste linee guida e viene riconosciuta dopo una rigorosa valutazione indipendente dei provider di servizi cloud.
 
 ## <a name="resources"></a>Risorse

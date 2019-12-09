@@ -11,14 +11,14 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: ecc702232156d6dcef161f0c19a829641542b6e3
-ms.sourcegitcommit: b2197dbf723d11992bbad568a84df3ef3cff421d
+ms.openlocfilehash: 6158a9584e70615b1f20e5ffbc25c46a33cac8a9
+ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "39195635"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39860076"
 ---
-# <a name="compliance-offering-content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>Offerta per la conformità: Standard CPS (Content Protection & Security) della CDSA (Content Delivery & Security Association)
+# <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>Standard CPS (Content Protection & Security) della CDSA (Content Delivery & Security Association)
 
 ## <a name="cdsa-overview"></a>Panoramica sulla CDSA
 
