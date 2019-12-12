@@ -10,48 +10,48 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: 44a870263a832e2d130e0404c5e2ad0736a5fae5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1f4e9afb86d475a7dd7261dfe26ff0b5a17826f
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034378"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962633"
 ---
-# <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a><span data-ttu-id="a4c4a-103">Modulo di OICOL workshop 3: identità e accesso utente a zero Trust</span><span class="sxs-lookup"><span data-stu-id="a4c4a-103">CISO Workshop Module 3: Identity and Zero Trust User Access</span></span>
+# <a name="ciso-workshop-module-3-identity-and-zero-trust-user-access"></a><span data-ttu-id="3dbdb-103">Modulo di OICOL workshop 3: identità e accesso utente a zero Trust</span><span class="sxs-lookup"><span data-stu-id="3dbdb-103">CISO Workshop Module 3: Identity and Zero Trust User Access</span></span>
 
-<span data-ttu-id="a4c4a-104">Informazioni su come anticipare la relazione di trust zero con la propria strategia di accesso utente e identità per proteggere meglio i dati aziendali all'interno e all'esterno del perimetro della rete.</span><span class="sxs-lookup"><span data-stu-id="a4c4a-104">Learn how to advance zero trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter.</span></span>
+<span data-ttu-id="3dbdb-104">Informazioni su come anticipare la relazione di trust zero con la propria strategia di accesso utente e identità per proteggere meglio i dati aziendali all'interno e all'esterno del perimetro della rete.</span><span class="sxs-lookup"><span data-stu-id="3dbdb-104">Learn how to advance zero trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter.</span></span>
 
-- <span data-ttu-id="a4c4a-105">Download PDF Summary: [modulo 3: identità e accesso degli utenti con attendibilità zero](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)</span><span class="sxs-lookup"><span data-stu-id="a4c4a-105">Download PDF summary: [Module 3: Identity and Zero Trust User Access](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)</span></span>
-- <span data-ttu-id="a4c4a-106">Scaricare PowerPoint Summary: [modulo 3: gestione delle identità e degli accessi](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)</span><span class="sxs-lookup"><span data-stu-id="a4c4a-106">Download PowerPoint summary: [Module 3: Identity and Access Management](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)</span></span>
+- <span data-ttu-id="3dbdb-105">Download PDF Summary: [modulo 3: identità e accesso degli utenti con attendibilità zero](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)</span><span class="sxs-lookup"><span data-stu-id="3dbdb-105">Download PDF summary: [Module 3: Identity and Zero Trust User Access](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)</span></span>
+- <span data-ttu-id="3dbdb-106">Scaricare PowerPoint Summary: [modulo 3: gestione delle identità e degli accessi](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)</span><span class="sxs-lookup"><span data-stu-id="3dbdb-106">Download PowerPoint summary: [Module 3: Identity and Access Management](../media/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)</span></span>
 
-## <a name="part-1-identity-and-zero-trust-history-933"></a><span data-ttu-id="a4c4a-107">Parte 1: identità e cronologia di attendibilità zero (9:33)</span><span class="sxs-lookup"><span data-stu-id="a4c4a-107">Part 1: Identity and Zero Trust History (9:33)</span></span>
+## <a name="part-1-identity-and-zero-trust-history-933"></a><span data-ttu-id="3dbdb-107">Parte 1: identità e cronologia di attendibilità zero (9:33)</span><span class="sxs-lookup"><span data-stu-id="3dbdb-107">Part 1: Identity and Zero Trust History (9:33)</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhs]
 
-## <a name="part-2-zero-trust-definition-and-models-1537"></a><span data-ttu-id="a4c4a-108">Parte 2: definizione e modelli di attendibilità zero (15:37)</span><span class="sxs-lookup"><span data-stu-id="a4c4a-108">Part 2: Zero Trust Definition and Models (15:37)</span></span>
+## <a name="part-2-zero-trust-definition-and-models-1537"></a><span data-ttu-id="3dbdb-108">Parte 2: definizione e modelli di attendibilità zero (15:37)</span><span class="sxs-lookup"><span data-stu-id="3dbdb-108">Part 2: Zero Trust Definition and Models (15:37)</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YaUL]
 
-## <a name="part-3-strategy-and-priorities-954"></a><span data-ttu-id="a4c4a-109">Parte 3: strategia e priorità (9:54)</span><span class="sxs-lookup"><span data-stu-id="a4c4a-109">Part 3: Strategy and Priorities (9:54)</span></span>
+## <a name="part-3-strategy-and-priorities-954"></a><span data-ttu-id="3dbdb-109">Parte 3: strategia e priorità (9:54)</span><span class="sxs-lookup"><span data-stu-id="3dbdb-109">Part 3: Strategy and Priorities (9:54)</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YvHy]
 
-## <a name="part-4-account-security-measuring-cost-of-attack-password-less-authentication-1311"></a><span data-ttu-id="a4c4a-110">Parte 4: sicurezza degli account: misurazione del costo di un attacco senza password-autenticazione (13:11)</span><span class="sxs-lookup"><span data-stu-id="a4c4a-110">Part 4: Account Security: Measuring Cost of Attack Password-less Authentication (13:11)</span></span>
+## <a name="part-4-account-security-measuring-cost-of-attack-password-less-authentication-1311"></a><span data-ttu-id="3dbdb-110">Parte 4: sicurezza degli account: misurazione del costo di un attacco senza password-autenticazione (13:11)</span><span class="sxs-lookup"><span data-stu-id="3dbdb-110">Part 4: Account Security: Measuring Cost of Attack Password-less Authentication (13:11)</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
 
-##  <a name="part-5-zero-trust-user-access-reference-architecture-842"></a><span data-ttu-id="a4c4a-111">Parte 5: zero Trust architettura di riferimento per l'accesso utente (8:42)</span><span class="sxs-lookup"><span data-stu-id="a4c4a-111">Part 5: Zero Trust User Access Reference Architecture (8:42)</span></span>
+##  <a name="part-5-zero-trust-user-access-reference-architecture-842"></a><span data-ttu-id="3dbdb-111">Parte 5: zero Trust architettura di riferimento per l'accesso utente (8:42)</span><span class="sxs-lookup"><span data-stu-id="3dbdb-111">Part 5: Zero Trust User Access Reference Architecture (8:42)</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhx]
 
-##  <a name="part-6-build-an-identity-perimeter-1357"></a><span data-ttu-id="a4c4a-112">Parte 6: creare un perimetro di identità (13:57)</span><span class="sxs-lookup"><span data-stu-id="a4c4a-112">Part 6: Build an Identity Perimeter (13:57)</span></span>
+##  <a name="part-6-build-an-identity-perimeter-1357"></a><span data-ttu-id="3dbdb-112">Parte 6: creare un perimetro di identità (13:57)</span><span class="sxs-lookup"><span data-stu-id="3dbdb-112">Part 6: Build an Identity Perimeter (13:57)</span></span>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
 
-## <a name="part-7-identity-system-security-337"></a><span data-ttu-id="a4c4a-113">Parte 7: sicurezza del sistema di identità (3:37)</span><span class="sxs-lookup"><span data-stu-id="a4c4a-113">Part 7: Identity System Security (3:37)</span></span>
+## <a name="part-7-identity-system-security-337"></a><span data-ttu-id="3dbdb-113">Parte 7: sicurezza del sistema di identità (3:37)</span><span class="sxs-lookup"><span data-stu-id="3dbdb-113">Part 7: Identity System Security (3:37)</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMf]
 
-##  <a name="part-8-lowering-risk-using-business-to-business-and-business-to-customer-447"></a><span data-ttu-id="a4c4a-114">Parte 8: riduzione dei rischi con l'utilizzo di business-to-business e business-to-Customer (4:47)</span><span class="sxs-lookup"><span data-stu-id="a4c4a-114">Part 8: Lowering Risk using business-to-business and business-to-customer (4:47)</span></span>
+##  <a name="part-8-lowering-risk-using-business-to-business-and-business-to-customer-447"></a><span data-ttu-id="3dbdb-114">Parte 8: riduzione dei rischi con l'utilizzo di business-to-business e business-to-Customer (4:47)</span><span class="sxs-lookup"><span data-stu-id="3dbdb-114">Part 8: Lowering Risk using business-to-business and business-to-customer (4:47)</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMi]

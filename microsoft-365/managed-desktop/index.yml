@@ -43,7 +43,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
               alt: ''
-            title: Attività iniziali
+            title: Informazioni di base
           - href: working-with-managed-desktop/index.md
             html: <p>Tutto sulle operazioni quotidiane con il servizio</p>
             image:
@@ -71,7 +71,14 @@ sections:
             title: '[E-book] Deliziare la propria azienda con un ambiente di lavoro moderno'
             image:
               src: 'https://docs.microsoft.com/media/common/i_guide.svg'
+              alt: ''
   - title: Video
     items:
+      - type: paragraph
+        text: 'Per ulteriori informazioni sui vantaggi di Microsoft Managed Desktop, vedere il VP of Technology at the Indiana Pacers.'
       - type: markdown
         text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
+      - type: paragraph
+        text: Il responsabile generale di Microsoft Managed Desktop condivide tutti i punti salienti del servizio alla conferenza annuale Ignite.
+      - type: markdown
+        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
