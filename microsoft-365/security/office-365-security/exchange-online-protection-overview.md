@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) è un servizio di filtro della posta elettronica che aiuta l'organizzazione a proteggersi da spam e malware e include funzionalità in grado di tutelare l'organizzazione dalle violazioni dei criteri di messaggistica.
-ms.openlocfilehash: b00de649bf0517d3c5cda99f1c20579ad1dfeec5
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 2083b71655b1d5bbf30adbb7bfff3229cfb07525
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772270"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970492"
 ---
 # <a name="exchange-online-protection-overview"></a>Panoramica su Exchange Online Protection
 
@@ -38,7 +38,7 @@ Per capire come funziona EOP, aiuta osservare il modo in cui elabora la posta in
 
 ![Diagramma del processo di posta elettronica.](../media/GitHubBugs/emailprocessingineop1.png)
 
-Un messaggio in arrivo passa inizialmente tramite il filtro connessioni, che controlla la reputazione del mittente e controlla il messaggio per il malware. La maggior parte della posta indesiderata viene interrotta a questo punto e viene eliminata da EOP. I messaggi continuano tramite il filtro dei criteri, in cui i messaggi vengono valutati in base alle regole del flusso di posta personalizzate (note anche come regole di trasporto) create o applicate da un modello. Ad esempio, è possibile disporre di una regola che invia una notifica a un responsabile quando la posta arriva da un mittente specifico. (I controlli di prevenzione della perdita di dati si verificano anche a questo punto, se si dispone di tale caratteristica, vedere la [Descrizione del servizio Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=320619)). Successivamente, i messaggi passano attraverso il filtro contenuto, in cui il contenuto viene controllato per la terminologia o le proprietà comuni alla posta indesiderata. Un messaggio determinato come posta indesiderata dal filtro contenuto può essere inviato alla cartella posta indesiderata di un utente o alla quarantena, tra le altre opzioni (inclusa la posta in arrivo o la cartella personalizzata), in base alle impostazioni. Dopo che un messaggio ha superato tutti questi livelli di protezione, viene recapitato al destinatario.
+Un messaggio in arrivo passa inizialmente tramite il filtro connessioni, che controlla la reputazione del mittente e controlla il messaggio per il malware. La maggior parte della posta indesiderata viene interrotta a questo punto e viene eliminata da EOP. I messaggi continuano tramite il filtro dei criteri, in cui i messaggi vengono valutati in base alle regole del flusso di posta personalizzate (note anche come regole di trasporto) create o applicate da un modello. Ad esempio, è possibile disporre di una regola che invia una notifica a un responsabile quando la posta arriva da un mittente specifico. (I controlli di prevenzione della perdita di dati si verificano anche a questo punto, se si dispone di tale caratteristica, vedere la [Descrizione del servizio Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)). Successivamente, i messaggi passano attraverso il filtro contenuto, in cui il contenuto viene controllato per la terminologia o le proprietà comuni alla posta indesiderata. Un messaggio determinato come posta indesiderata dal filtro contenuto può essere inviato alla cartella posta indesiderata di un utente o alla quarantena, tra le altre opzioni (inclusa la posta in arrivo o la cartella personalizzata), in base alle impostazioni. Dopo che un messaggio ha superato tutti questi livelli di protezione, viene recapitato al destinatario.
 
 ### <a name="eop-datacenters"></a>Datacenter EOP
 
@@ -64,7 +64,7 @@ I piani di sottoscrizione di EOP disponibili sono i seguenti:
 
 - **Exchange Enterprise CAL with Services**: se si dispone di un'organizzazione di Exchange locale in cui sono state acquistate altre licenze di Exchange Enterprise CAL with Services, EOP è parte integrante dei servizi inclusi.
 
-Per ulteriori informazioni sui requisiti, i limiti importanti e le funzionalità disponibili in tutti i piani di sottoscrizione EOP; vedere [Descrizione del servizio Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=320619).
+Per informazioni sui requisiti, i limiti importanti e la disponibilità delle funzionalità in tutti i piani di sottoscrizione di EOP, vedere la [Descrizione del servizio Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 ## <a name="setting-up-eop"></a>Configurare EOP
 

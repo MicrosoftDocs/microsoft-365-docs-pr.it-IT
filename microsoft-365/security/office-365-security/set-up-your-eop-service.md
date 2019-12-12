@@ -10,19 +10,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: In questo argomento viene illustrato come configurare Microsoft Exchange Online Protection (EOP). Se si è arrivati qui dalla configurazione guidata dei domini di Office 365, tornare alla configurazione guidata dei domini di Office 365 se non si desidera utilizzare Exchange Online Protection. Per ulteriori informazioni su come configurare i connettori, vedere Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 189c3bb08609eb2604e77b5140e866711e8f1a09
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 4cd7d6e82c07d0b5a942427c947181b2d4e80c37
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032001"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970112"
 ---
 # <a name="set-up-your-eop-service"></a>Configurare il servizio Exchange Online Protection
 
 In questo argomento viene illustrato come configurare Microsoft Exchange Online Protection (EOP). Se si è arrivati qui dalla configurazione guidata dei domini di Office 365, tornare alla configurazione guidata dei domini di Office 365 se non si desidera utilizzare Exchange Online Protection. Per ulteriori informazioni su come configurare i connettori, vedere [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
-> In questo argomento si presuppone che siano presenti cassette postali locali e che si desideri proteggerle con EOP, noto come scenario autonomo. Se si desidera ospitare tutte le cassette postali nel cloud con Exchange Online, non è necessario completare tutti i passaggi descritti in questo argomento. Accedere a [Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286312) per iscriversi e acquistare le cassette postali cloud. Se si desidera ospitare alcune delle cassette postali in locale e alcune nel cloud, questo è conosciuto come uno scenario ibrido. Richiede impostazioni di flusso di posta più avanzate. Le [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) spiegano il flusso di posta ibrido e dispongono di collegamenti a risorse che illustrano come configurarlo.
+> In questo argomento si presuppone che siano presenti cassette postali locali e che si desideri proteggerle con EOP, noto come scenario autonomo. Se si desidera ospitare tutte le cassette postali nel cloud con Exchange Online, non è necessario completare tutti i passaggi descritti in questo argomento. Andare a [confrontare i piani di Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) per iscriversi e acquistare le cassette postali cloud. Se si desidera ospitare alcune delle cassette postali in locale e alcune nel cloud, questo è conosciuto come uno scenario ibrido. Richiede impostazioni di flusso di posta più avanzate. Le [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) spiegano il flusso di posta ibrido e dispongono di collegamenti a risorse che illustrano come configurarlo.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
@@ -30,7 +30,7 @@ In questo argomento viene illustrato come configurare Microsoft Exchange Online 
 
 - Per configurare i connettori, l'account deve essere un amministratore globale di Office 365 o un amministratore aziendale di Exchange (gruppo dei ruoli di gestione dell'organizzazione). Per informazioni, vedere [Feature Permissions in EOP](feature-permissions-in-eop.md).
 
-- Se non si è iscritti a EOP, visitare [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=282660) e scegliere di acquistare o provare il servizio.
+- Se non si è iscritti a EOP, visitare [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) e scegliere di acquistare o provare il servizio.
 
 - Per informazioni sui tasti di scelta rapida che possono essere applicati alle procedure descritte in questo argomento, vedere tasti [di scelta rapida per l'interfaccia di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -39,7 +39,7 @@ In questo argomento viene illustrato come configurare Microsoft Exchange Online 
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Passaggio 1: utilizzare l'interfaccia di amministrazione di Microsoft 365 per aggiungere e verificare il dominio
 
-1. Nell'interfaccia di [amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=521888)passare a **installazione** per aggiungere il dominio al servizio.
+1. Nell'interfaccia di [amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)passare a **installazione** per aggiungere il dominio al servizio.
 
 2. Seguire la procedura di aggiunta dei record DNS applicabili al provider che ospita i DNS per verificare la proprietà del dominio.
 

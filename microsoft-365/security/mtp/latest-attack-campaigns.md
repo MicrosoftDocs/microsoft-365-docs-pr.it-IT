@@ -1,8 +1,8 @@
 ---
-title: Comprendere le più recenti campagne e tecniche di attacco con minacce analitiche
-description: Descrive i report interattivi di Threat Analytics
+title: Comprendere le campagne e le tecniche di attacco più recenti con Threat Analytics nel centro sicurezza di Microsoft 365
+description: Descrive i report interattivi di Threat Analytics nel centro sicurezza Microsoft 365
 keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, Threat Analytics, Microsoft Defender ATP, Cyber, posizione di sicurezza, minacce emergenti
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 24d4e5c227ddcb3366e5573b8b04b04a52437873
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fca4a16c2b5526cf5fe004e0d836921a7d5c9b84
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084981"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910537"
 ---
-# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Comprendere le campagne e le tecniche di attacco più recenti con Threat Analytics
+# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Comprendere le campagne e le tecniche di attacco più recenti con Threat Analytics 
 
 Le minacce cibernetiche stanno diventando sempre più frequenti e sofisticate. È fondamentale per le organizzazioni valutare rapidamente la propria posizione di sicurezza e la resilienza in base a minacce emergenti specifiche.
 

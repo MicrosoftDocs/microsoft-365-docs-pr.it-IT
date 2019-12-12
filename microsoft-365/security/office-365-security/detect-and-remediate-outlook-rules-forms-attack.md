@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere le regole di Outlook e gli attacchi per iniezioni di moduli personalizzati in Office 365
-ms.openlocfilehash: 5a35a227baf7c2d07ca0e7a28f791d65311c96b9
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: d5f4a653463f4105df025bf29679465ca5335098
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871892"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970792"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365
 
@@ -98,7 +98,7 @@ Per confermare l'attacco, è possibile utilizzare uno dei due metodi seguenti:
 
 1. Aprire il client Outlook degli utenti come utente. È possibile che l'utente abbia bisogno di assistenza per esaminare le regole sulla propria cassetta postale.
 
-2. Fare riferimento a [gestire i messaggi di posta elettronica utilizzando le regole](https://support.office.com/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59#ID0EAABAAA=2010) dell'articolo per le procedure su come aprire l'interfaccia delle regole nelle versioni 2007, 2010 o 2013 di Outlook.
+2. Fare riferimento a [gestire i messaggi di posta elettronica utilizzando le regole](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59) dell'articolo per le procedure su come aprire l'interfaccia delle regole in Outlook.
 
 3. Cercare le regole che l'utente non ha creato o qualsiasi regola imprevista o regole con nomi sospetti.
 
@@ -110,7 +110,7 @@ Per confermare l'attacco, è possibile utilizzare uno dei due metodi seguenti:
 
 1. Aprire il client Outlook utente come utente.
 
-2. Attenersi alla procedura descritta in, [Mostra la scheda sviluppo](https://support.office.com/article/show-the-developer-tab-e1192344-5e56-4d45-931b-e5fd9bea2d45) per la versione degli utenti di Outlook.
+2. Attenersi alla procedura descritta in, [Mostra la scheda sviluppo](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45) per la versione degli utenti di Outlook.
 
 3. Aprire la scheda ora visibile per gli sviluppatori in Outlook e fare clic su **Progetta modulo**.
 
@@ -156,13 +156,13 @@ Se si riscontrano prove di uno di questi attacchi, la correzione è semplice, è
 
 1. Identificare tutti i dispositivi che l'utente ha utilizzato con Outlook. Tutti devono essere puliti da possibili malware. Non consentire all'utente di accedere e utilizzare la posta elettronica fino a quando tutti i dispositivi vengono puliti.
 
-2. Seguire la procedura descritta in [eliminare una regola](https://support.office.com/article/Delete-a-rule-2F0E7139-F696-4422-8498-44846DB9067F) per ogni dispositivo.
+2. Seguire la procedura descritta in [eliminare una regola](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f) per ogni dispositivo.
 
 3. Se non si è sicuri della presenza di altri malware, è possibile formattare e reinstallare tutto il software nel dispositivo. Per i dispositivi mobili è possibile seguire i passaggi dei costruttori per reimpostare il dispositivo nell'immagine Factory.
 
 4. Installare le versioni più aggiornate di Outlook. Tenere presente che la versione corrente di Outlook blocca entrambi i tipi di questo attacco per impostazione predefinita.
 
-5. Dopo che tutte le copie offline della cassetta postale sono state rimosse, reimpostare la password dell'utente (utilizzare un valore di alta qualità) e seguire i passaggi descritti nell'installazione di autenticazione a più [fattori per gli utenti di Office 365 se l'](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6) AMF non è già stata abilitata. In questo modo, le credenziali dell'utente non vengono esposte tramite altri strumenti (ad esempio, il riutilizzo di phishing o password).
+5. Dopo che tutte le copie offline della cassetta postale sono state rimosse, reimpostare la password dell'utente (utilizzare un valore di alta qualità) e seguire i passaggi descritti nell'installazione di autenticazione a più [fattori per gli utenti di Office 365 se l'](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) AMF non è già stata abilitata. In questo modo, le credenziali dell'utente non vengono esposte tramite altri strumenti (ad esempio, il riutilizzo di phishing o password).
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
@@ -190,7 +190,7 @@ Sono disponibili due cmdlet di PowerShell remoti che è possibile utilizzare per
 
 Le regole e gli exploit dei moduli vengono utilizzati solo da un utente malintenzionato dopo che hanno rubato o violato uno degli account degli utenti. Pertanto, il primo passaggio per impedire l'utilizzo di tali exploit nei confronti dell'organizzazione consiste nel proteggere in modo aggressivo gli account utente. Alcuni dei modi più comuni in cui gli account vengono violati sono gli attacchi di phishing o di [spruzzatura delle password](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) .
 
-Il modo migliore per proteggere gli account utente e in particolare gli account di amministratore consiste nel [configurare l'autenticazione a più fattori per gli utenti di Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6). È inoltre necessario:
+Il modo migliore per proteggere gli account utente e in particolare gli account di amministratore consiste nel [configurare l'autenticazione a più fattori per gli utenti di Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). È inoltre necessario:
 
 - Monitorare la modalità [di accesso e utilizzo](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)degli account utente. Non è possibile impedire la violazione iniziale, ma è possibile ridurre la durata e l'impatto della violazione rilevando prima. È possibile utilizzare questi [criteri di sicurezza dell'app cloud di Office 365](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) per monitorare gli account e allertare attività inusuali:
 
@@ -204,7 +204,7 @@ Il modo migliore per proteggere gli account utente e in particolare gli account 
 
 ### <a name="second-keep-your-outlook-clients-current"></a>Secondo: mantenere aggiornati i client Outlook
 
-Le versioni completamente aggiornate e con patch di Outlook 2013 e 2016 disabilitano per impostazione predefinita l'azione regola/maschera "Avvia applicazione". In questo modo, anche se un utente malintenzionato viola l'account, la regola e le azioni del modulo verranno bloccate. È possibile installare gli aggiornamenti più recenti e le patch di sicurezza attenendosi alla procedura descritta in [Install Office Updates](https://support.office.com/article/Install-Office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5).
+Le versioni completamente aggiornate e con patch di Outlook 2013 e 2016 disabilitano per impostazione predefinita l'azione regola/maschera "Avvia applicazione". In questo modo, anche se un utente malintenzionato viola l'account, la regola e le azioni del modulo verranno bloccate. È possibile installare gli aggiornamenti più recenti e le patch di sicurezza attenendosi alla procedura descritta in [Install Office Updates](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
 Ecco le versioni delle patch per i client Outlook 2013 e 2016:
 
@@ -234,7 +234,7 @@ I clienti con installazioni di Exchange locali dovrebbero considerare di bloccar
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteggere Office 365 come un professionista della sicurezza informatica
 
-L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti. Usare il [Roadmap di protezione di Office 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Office 365.
+L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti. Utilizzare la [Roadmap di sicurezza di office 365-priorità principali per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate di Microsoft consigliati per la protezione del tenant di Office 365.
 
 - Attività da eseguire i primi 30 giorni. Queste hanno effetto immediato e sono a basso impatto per gli utenti.
 

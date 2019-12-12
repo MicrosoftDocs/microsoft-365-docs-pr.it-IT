@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come risolvere i problemi di posta elettronica per il codice di errore 5.7.7 XX in Exchange Online (tenant bloccato dall'invio di messaggi di posta elettronica).
-ms.openlocfilehash: d89cc0caeebbf37336a3b00346b3393dd5e74e78
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 9c95a8aa3f2dbc7b44524b4392090f7435d2800b
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39865848"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970452"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Risolvere i problemi di recapito della posta elettronica per il codice di errore 5.7.7 XX in Exchange Online
 
@@ -51,23 +51,23 @@ Se il tenant viene bloccato per l'invio di messaggi di posta elettronica, è nec
 
 1. Assicurarsi di registrare tutti i domini nell'interfaccia di amministrazione di Microsoft 365. Ulteriori informazioni sono disponibili [qui](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Cercare connettori inusuali. Gli attori maligni spesso creano nuovi connettori in ingresso nel tenant di Office 365 per inviare la posta indesiderata. Ulteriori informazioni su come controllare i connettori sono disponibili [qui](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector). 
+2. Cercare connettori inusuali. Gli attori maligni spesso creano nuovi connettori in ingresso nel tenant di Office 365 per inviare la posta indesiderata. Ulteriori informazioni su come controllare i connettori sono disponibili [qui](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector).
 
 3. Bloccare i server locali e assicurarsi che non vengano compromessi.
 
-> [!TIP]
-> Vi sono numerosi fattori coinvolti in questo articolo, soprattutto se si tratta di server di terze parti. Indipendentemente da ciò, è necessario essere in grado di confermare che tutti i messaggi che lasciano i server siano legittimi.
+   > [!TIP]
+   > Vi sono numerosi fattori coinvolti in questo articolo, soprattutto se si tratta di server di terze parti. Indipendentemente da ciò, è necessario essere in grado di confermare che tutti i messaggi che lasciano i server siano legittimi.
 
-4. Dopo aver completato l'operazione, è necessario chiamare il supporto tecnico Microsoft e chiedere di ottenere il tenant sbloccato per inviare di nuovo i domini non registrati.  Fornire il codice di errore è utile, ma sarà necessario dimostrare che l'ambiente è protetto e che la posta indesiderata non verrà più inviata. Ulteriori informazioni sull'apertura di un caso di supporto sono disponibili [qui](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
-  
+4. Dopo aver completato l'operazione, è necessario chiamare il supporto tecnico Microsoft e chiedere di ottenere il tenant sbloccato per inviare di nuovo i domini non registrati.  Fornire il codice di errore è utile, ma sarà necessario dimostrare che l'ambiente è protetto e che la posta indesiderata non verrà più inviata. Ulteriori informazioni sull'apertura di un caso di supporto sono disponibili [qui](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
 [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
 
-[Rapporti di mancato recapito della posta elettronica in Office 365](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
+[Rapporti di mancato recapito della posta elettronica in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
 [Configurare l'inoltro della posta elettronica per una cassetta postale](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
-[Come configurare un dispositivo multifunzionale o un'applicazione all'invio di posta elettronica tramite Office 365](https://support.office.com/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
+[Come configurare un dispositivo multifunzionale o un'applicazione all'invio di posta elettronica tramite Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3)
 
 [Gestire i domini accettati in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).

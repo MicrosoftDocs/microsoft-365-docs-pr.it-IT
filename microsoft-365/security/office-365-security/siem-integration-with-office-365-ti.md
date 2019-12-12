@@ -15,12 +15,12 @@ ms.date: 11/22/2019
 ms.collection:
 - M365-security-compliance
 description: Integrare il server SIEM dell'organizzazione con Office 365 Advanced Threat Protection e gli eventi relativi alle minacce correlati nell'API di gestione delle attività di Office 365.
-ms.openlocfilehash: 5b3cdfa48f64bb3d73f02b3d9b20dee510a2f409
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 93253982b9920cd133419e0fc61650cadfa9d192
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202437"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967929"
 ---
 # <a name="siem-integration-with-office-365-advanced-threat-protection"></a>Integrazione di SIEM con Office 365 Advanced Threat Protection
 
@@ -28,7 +28,7 @@ Se l'organizzazione utilizza un server di gestione eventi e incidenti di sicurez
 
 L'API di gestione delle attività di Office 365 recupera informazioni sulle azioni e sugli eventi degli utenti, dell'amministratore, del sistema e dei criteri dai registri delle attività di Office 365 e Azure Active Directory dell'organizzazione. Lo [schema office 365 Advanced Threat Protection](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) è compatibile con Advanced Threat Protection, quindi se l'organizzazione dispone di Office 365 Advanced Threat Protection Plan 1 o Plan 2 o Office 365 E5, è comunque possibile utilizzare la stessa API per l'integrazione del server Siem. 
 
-Come parte dei nostri aggiornamenti recenti, sono stati aggiunti anche eventi di indagine dalla risposta di incidenti automatici da Office 365 ATP Plan 2 all'interno dell'API di gestione. Oltre a includere i dati relativi ai dettagli relativi alle indagini di base, quali ID, nome e stato, contiene anche informazioni di alto livello sulle azioni e sulle entità di indagine.   
+Come parte degli aggiornamenti più recenti, sono stati aggiunti anche eventi provenienti da funzionalità di analisi e risposta automatizzate in Office 365 ATP Plan 2 all'interno dell'API di gestione di Office 365 Management. Oltre a includere i dati relativi ai dettagli relativi alle indagini di base, quali ID, nome e stato, contiene anche informazioni di alto livello sulle azioni e sulle entità di indagine.   
 
 Il server SIEM o un altro sistema analogo deve eseguire il polling del carico di lavoro **generale** per accedere agli eventi di rilevamento. Per ulteriori informazioni, vedere [Introduzione alle API di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). Inoltre, i seguenti valori di **AuditLogRecordType** sono rilevanti per gli eventi ATP di Office 365:
 
@@ -41,7 +41,7 @@ Il server SIEM o un altro sistema analogo deve eseguire il polling del carico di
 |28|ThreatIntelligence|Eventi di phishing e malware da Exchange Online Protection e Office 365 Advanced Threat Protection.|
 |41|ThreatIntelligenceUrl|Collegamenti sicuri ATP gli eventi Time-of-Block e Block override di Office 365 Advanced Threat Protection.|
 |47|ThreatIntelligenceAtpContent|Eventi di phishing e malware per i file in SharePoint Online, OneDrive for business e Microsoft teams dalla protezione avanzata dalle minacce di Office 365.|
-|64|Indagine|Eventi di risposta agli incidenti automatici che includono i dettagli dell'indagine e gli elementi rilevanti di Office 365 Advanced Threat Protection Plan 2.|
+|64|Indagine|Eventi di ricerca e di risposta automatizzati, ad esempio i dettagli dell'indagine e gli elementi rilevanti di Office 365 Advanced Threat Protection Plan 2.|
 
 
 > [!IMPORTANT]
@@ -51,7 +51,7 @@ Il server SIEM o un altro sistema analogo deve eseguire il polling del carico di
 
 [Analisi delle minacce e risposta alle minacce in Office 365](office-365-ti.md)
 
-[Risposta agli incidenti automatici (AIR) in Office 365](automated-investigation-response-office.md)
+[Indagine automatizzata e risposta (AIR) in Office 365](automated-investigation-response-office.md)
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
 

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
-ms.openlocfilehash: e02723b0c8e2d5b5309054babf27f0f3e9587a88
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: 3be67348b9522832a754e83e57e4a99e4f9147b3
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441113"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970422"
 ---
 # <a name="help-and-support-for-eop"></a>Guida e supporto tecnico per Exchange Online Protection
 
@@ -23,17 +23,17 @@ Le risorse di supporto tecnico, elencate di seguito, consentiranno agli utenti d
 
 ## <a name="self-support-options"></a>Opzioni di supporto in autonomia
 
-Durante la registrazione, il portale Office 365 fornisce informazioni sullo stato dei servizi dell'organizzazione. Inoltre, la sezione relativa all'integrità del servizio di Office 365 mostra lo stato corrente del servizio, i dettagli su eventuali interruzioni o inattività del servizio ed elenca i periodi di manutenzione pianificati. Il portale di Office 365 fornisce informazioni sui problemi noti e le relative soluzioni previste. Se si è interessati da un evento a livello di servizio, verrà visualizzato un avviso (generalmente unito all'icona di una campana). Si consiglia di leggere e intervenire su tutti gli elementi, come necessario. Per ulteriori informazioni relative all'area di integrità del servizio di Office 365, vedere [Continuità e integrità del servizio](https://go.microsoft.com/fwlink/?LinkId=394289). È possibile trovare ulteriori informazioni autonomamente utilizzando i siti degli strumenti, dei forum e delle community elencati di seguito.
+Durante la registrazione, il portale Office 365 fornisce informazioni sullo stato dei servizi dell'organizzazione. Inoltre, la sezione relativa all'integrità del servizio di Office 365 mostra lo stato corrente del servizio, i dettagli su eventuali interruzioni o inattività del servizio ed elenca i periodi di manutenzione pianificati. Il portale di Office 365 fornisce informazioni sui problemi noti e le relative soluzioni previste. Se si è interessati da un evento a livello di servizio, verrà visualizzato un avviso (generalmente unito all'icona di una campana). Si consiglia di leggere e intervenire su tutti gli elementi, come necessario. Per ulteriori informazioni sull'area di integrità dei servizi di Office 365, vedere [Service Health and Continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). È possibile trovare ulteriori informazioni autonomamente utilizzando i siti degli strumenti, dei forum e delle community elencati di seguito.
 
-Articolo relativo alle [informazioni generali dei prodotti per Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=279912)
+Articolo relativo alle [informazioni generali dei prodotti per Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-Articolo relativo al [supporto di Office 365 e Exchange Online](https://go.microsoft.com/fwlink/?LinkId=299655)
+[Contattare il supporto tecnico per i prodotti per le aziende - Guida dell’amministratore](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
 
-Articolo relativo alla [community di Office 365](https://go.microsoft.com/fwlink/?LinkId=299656)
+Articolo relativo alla [community di Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-Articolo relativo alla [risoluzione dei problemi autonoma di Office 365](https://go.microsoft.com/fwlink/?LinkId=299657)
+[Assistente di supporto e ripristino Microsoft (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
 
-Articolo relativo alla [procedura guidata dettagliata del flusso di posta in Office 365](https://go.microsoft.com/fwlink/?LinkId=323470)
+[Risoluzione dei problemi relativi al flusso di posta](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Supporto assistito di Microsoft
 
@@ -43,7 +43,7 @@ Articolo relativo alla [procedura guidata dettagliata del flusso di posta in Off
 
 I clienti di EOP che hanno stipulato un contratto con il Supporto Premier Microsoft possono ricevere assistenza tramite i normali canali del Supporto Premier Microsoft. Ciò consente loro di ricevere l'accesso a tutti i processi e a tutte le risorse disponibili ai clienti del Supporto Premier, ad esempio TAM (Technical Account Manager) Premier e inoltro di casi. Il Supporto Premier per Microsoft Online Services estende la struttura del Supporto Premier oltre i prodotti locali ai prodotti online fornendo agli utenti un tipo di assistenza omogenea per tutti i prodotti e servizi. Questo servizio serve a garantire che i clienti possano risolvere rapidamente i problemi incontrati e semplifica l'attività di gestione del supporto per componenti diversi di un'infrastruttura IT.
 
-Per ulteriori informazioni sull'utilità del Supporto Premier per l'ottimizzazione del valore degli investimenti nell'IT dell'organizzazione, vedere [Supporto Premier Microsoft Premier](https://go.microsoft.com/fwlink/?LinkId=317437).
+Per ulteriori informazioni su come il supporto Premier può aiutare l'organizzazione a massimizzare il valore dagli investimenti IT, vedere [supporto Premier per i partner](https://partner.microsoft.com/support/microsoft-services-premier-support).
 
 ### <a name="ask-for-help-on-the-web"></a>Richiedere assistenza sul Web
 

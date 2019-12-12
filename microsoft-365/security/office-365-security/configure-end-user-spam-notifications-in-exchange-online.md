@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: È possibile configurare le notifiche di posta indesiderata dell'utente finale per il criterio di filtro della posta indesiderata a livello di società predefinito o per i criteri di filtro antispam applicati ai domini.
-ms.openlocfilehash: 0eef6f508a775513ff5c6e061d12e023534eb0bd
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 0b1b88a60ba1f14aa482dc8214739930b69cca05
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871932"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39909836"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurazione delle notifiche di posta indesiderata dell'utente finale in Exchange Online
 
@@ -31,17 +31,11 @@ Le notifiche di posta indesiderata dell'utente finale contengono un elenco di tu
   
 Dopo la ricezione di un messaggio di notifica, gli utenti finali possono scegliere tra le seguenti opzioni:
 
-**Visualizzare in anteprima** il messaggio se si desidera visualizzare in anteprima il contenuto o l'intestazione prima di eseguire l'azione.
-
-**Scaricare** il messaggio se si desidera esaminare il messaggio e gli allegati (se presenti) del dispositivo prima di eseguire l'azione.
+**Blocca mittente** se si desidera che in Office 365 venga aggiunto il mittente all'elenco dei mittenti bloccati.
 
 **Rilascia** se il messaggio non è posta indesiderata e si desidera che Office 365 invii il messaggio alla cassetta postale.
 
-**Rilascia & Consenti al mittente** se il messaggio non è posta indesiderata e si desidera che Office 365 aggiunga il mittente all'elenco Mittenti attendibili e destinatari per i messaggi di posta elettronica futuri. Tenere presente che l'amministratore può disporre di altre configurazioni Consenti/blocca a livello di organizzazione che sostituiscono l'elenco dei mittenti attendibili.
-
-**Rilascia & report**, se il messaggio non è posta indesiderata e si desidera inviare il messaggio alla cassetta postale e segnalarlo a Microsoft per l'analisi.
-
-**Blocca** se si desidera che in Office 365 venga aggiunto il mittente all'elenco dei mittenti bloccati.
+**Revisione** per passare al portale di quarantena all'interno del centro sicurezza & Compliance, se si desidera eseguire altre operazioni, ad esempio l'anteprima o il rilascio.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 

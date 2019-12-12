@@ -14,16 +14,16 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: In qualità di amministratore globale di Office 365, è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale colpisca la propria azienda.
-ms.openlocfilehash: bb68850587647f7e96c940de10e3da23cd5e83de
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: e5f304a7c706875216c58330b1225d341b2b59df
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37306180"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971934"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulatore di attacchi in Office 365
 
-**Riepilogo** Se si è un amministratore globale di Office 365 o un amministratore della sicurezza e l'organizzazione dispone di Office 365 Advanced Threat Protection Plan 2, che include le [funzionalità di analisi e di risposta alle minacce](office-365-ti.md), è possibile utilizzare il simulatore di attacco per l'esecuzione scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale impatti la linea di base. Leggere questo articolo per ulteriori informazioni.
+**Riepilogo** Se si è un amministratore globale di Office 365 o un amministratore della sicurezza e l'organizzazione dispone di Office 365 Advanced Threat Protection Plan 2, che include le [funzionalità di analisi e di risposta alle minacce](office-365-ti.md), è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale impatti la linea di base. Leggere questo articolo per ulteriori informazioni.
 
 ## <a name="the-attacks"></a>Gli attacchi
 
@@ -47,7 +47,7 @@ Assicurarsi che l'utente e l'organizzazione soddisfino i seguenti requisiti per 
 
 - Si è un amministratore globale o un amministratore di sicurezza di Office 365
 
-- L'autenticazione a più fattori e l' [accesso condizionale](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) sono attivati, almeno per l'account di amministratore globale di Office 365 e gli amministratori della sicurezza che utilizzeranno simulatore di attacco. (Idealmente, l'autenticazione a più fattori e l'accesso condizionale sono attivati per tutti gli utenti dell'organizzazione.)
+- L'autenticazione a più fattori e l' [accesso condizionale](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) sono attivati, almeno per l'account di amministratore globale di Office 365 e gli amministratori della sicurezza che utilizzeranno simulatore di attacco. (Idealmente, l'autenticazione a più fattori e l'accesso condizionale sono attivati per tutti gli utenti dell'organizzazione.)
 
 - L'organizzazione dispone [di Office 365 Advanced Threat Protection Plan 2](office-365-atp.md), con simulatore di attacco visibile &amp; nel centro sicurezza e conformità (andare a **Threat Management** \> **Attack Simulator**)
 
@@ -85,7 +85,7 @@ Questo attacco è incentrato sull'eventualità di modificare il messaggio a cui 
 
 6. Specificare il testo o il campo **da** . Si tratta del campo che viene visualizzato come indirizzo di posta elettronica del mittente nel client di posta elettronica di ricezione.
 
-   È possibile immettere uno spazio dei nomi di posta elettronica esistente all'interno dell'organizzazione (in questo modo l'indirizzo di posta elettronica viene effettivamente risolto nel client di ricezione, facilitando un modello di attendibilità molto elevato) oppure è possibile immettere un indirizzo di posta elettronica esterno. L'indirizzo di posta elettronica specificato non deve esistere effettivamente, ma ha bisogno di seguire il formato di un indirizzo SMTP valido, ad esempio `user@domainname.extension`.
+   È possibile immettere uno spazio dei nomi di posta elettronica esistente all'interno dell'organizzazione (in questo modo l'indirizzo di posta elettronica viene effettivamente risolto nel client di ricezione, facilitando un modello di attendibilità molto elevato) oppure è possibile immettere un indirizzo di posta elettronica esterno. L'indirizzo di posta elettronica specificato non deve esistere effettivamente, ma è necessario seguire il formato di un indirizzo SMTP valido, ad esempio `user@domainname.extension`.
 
 7. Usando il selettore a discesa, selezionare un URL del server di accesso di phishing che rispecchi il tipo di contenuto che si avrà all'interno dell'attacco. È possibile scegliere tra diversi URL a tema, ad esempio recapito dei documenti, tecnico, retribuzione e così via. Questo è effettivamente l'URL a cui gli utenti designati devono fare clic.
 
@@ -137,7 +137,7 @@ Un attacco di password con forza bruta nei confronti di un'organizzazione viene 
 
 ## <a name="new-features-in-attack-simulator"></a>Nuove funzionalità in Attack Simulator
 
-Nuove funzionalità sono state aggiunte di recente a Attack Simulator. Queste funzionalità sono:
+Nuove funzionalità sono state aggiunte di recente a Attack Simulator. Ad esempio:
 
 - Funzionalità di creazione di report avanzate. La possibilità di visualizzare dati quali il tempo più rapido (o più lento) per aprire un messaggio di posta elettronica di simulazione di attacco, il tempo più rapido (o più lento) per fare clic su un collegamento nel messaggio e altre visualizzazioni.
 
@@ -145,7 +145,7 @@ Nuove funzionalità sono state aggiunte di recente a Attack Simulator. Queste fu
 
 - Importazione del destinatario CSV. La possibilità di utilizzare un file. csv per importare l'elenco dei destinatari di destinazione invece di usare lo strumento di selezione Rubrica.
 
-Altre nuove caratteristiche stanno per essere attaccate al simulatore d'attacco. Queste funzionalità sono:
+Altre nuove caratteristiche stanno per essere attaccate al simulatore d'attacco. Ad esempio:
 
 - Simulazione di phishing del payload degli allegati. La possibilità di utilizzare un allegato come payload per la simulazione di phishing al posto di un URL.
 
@@ -155,4 +155,4 @@ Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/m
 
 [Descrizione del servizio Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Protezione avanzata dalle minacce di Office 365](office-365-atp.md)
+[Office 365 Advanced Threat Protection](office-365-atp.md)

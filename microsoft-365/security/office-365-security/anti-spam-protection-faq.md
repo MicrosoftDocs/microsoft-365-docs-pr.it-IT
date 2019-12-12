@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 04cffc6c6e09794e4c92653c1a09dd43718f38c0
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: b782c58bc3694bd27024f9aa7cdb2316c6d2a48a
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871992"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971970"
 ---
 # <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione da posta indesiderata
 
@@ -93,11 +93,7 @@ A. Sì, è possibile configurare un altro servizio antimalware e di protezione d
 
  **D. Microsoft dispone di documentazione su come è possibile proteggersi da tentativi di phishing?**
 
-R. Sì. Consultare i seguenti articoli:
-
-[Articoli di Privacy e Sicurezza online su tentativi di phishing, truffe di false lotterie e altri tipi di frode](https://go.microsoft.com/fwlink/p/?LinkId=325606)
-
-[E-mail e phishing: guida per la protezione del computer](https://go.microsoft.com/fwlink/p/?LinkID=325607)
+R. Sì, si prega di leggere [proteggere la privacy su Internet](https://support.microsoft.com/help/4091455)
 
  **D. I messaggi di posta indesiderata e malware vengono analizzati da coloro a cui sono indirizzati o vengono trasferiti a entità giudiziarie?**
 
@@ -125,7 +121,7 @@ R. Le linee guida presentate di seguito rappresentano le procedure ottimali per 
 
     [Configurazione di SPF in Office 365 per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-    [Domande frequenti sui domini](/office365/admin/setup/domains-faq)
+    [Domande frequenti sui domini](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 5. **Per accedere alla posta elettronica con DKIM, utilizzare la canonicalizzazione semplice.**
 
@@ -159,25 +155,25 @@ R. Le linee guida presentate di seguito rappresentano le procedure ottimali per 
 
     Double opt-in è una procedura che richiede che l'utente esegua due azioni per registrarsi per la posta di marketing.
 
-1. La prima azione consiste nel selezionare una casella di controllo precedentemente non selezionata per indicare che desidera ricevere ulteriori offerte o messaggi di posta elettronica.
+   1. La prima azione consiste nel selezionare una casella di controllo precedentemente non selezionata per indicare che desidera ricevere ulteriori offerte o messaggi di posta elettronica.
 
-2. La seconda azione viene eseguita quando il commerciante invia un messaggi di posta elettronica di conferma all'indirizzo di posta elettronica fornito dall'utente chiedendogli di fare clic sul un collegamento sensibile al tempo per completare la conferma.
+   2. La seconda azione viene eseguita quando il commerciante invia un messaggi di posta elettronica di conferma all'indirizzo di posta elettronica fornito dall'utente chiedendogli di fare clic sul un collegamento sensibile al tempo per completare la conferma.
 
-    L'utilizzo della doppia conferma contribuisce alla buona reputazione per i mittenti di posta elettronica in blocco.
+      L'utilizzo della doppia conferma contribuisce alla buona reputazione per i mittenti di posta elettronica in blocco.
 
 10. **I mittenti in blocco devono creare contenuto trasparente per cui possono essere ritenuti responsabili:**
 
-1. Le espressioni che richiedono ai destinatari di aggiungere il mittente alla rubrica devono indicare che tale azione non è una garanzia di recapito.
+    1. Le espressioni che richiedono ai destinatari di aggiungere il mittente alla rubrica devono indicare che tale azione non è una garanzia di recapito.
 
-2. Quando si costruiscono i reindirizzamenti nel corpo del messaggio, utilizzare uno stile di collegamento coerente.
+    2. Quando si costruiscono i reindirizzamenti nel corpo del messaggio, utilizzare uno stile di collegamento coerente.
 
-3. Non inviare immagini o allegati di grandi dimensioni o messaggi composti unicamente da un'immagine.
+    3. Non inviare immagini o allegati di grandi dimensioni o messaggi composti unicamente da un'immagine.
 
-4. Nell'uso di pixel di verifica (bug Web o beacon), indicarne chiaramente la presenza delle impostazioni P3P o della privacy pubblica.
+    4. Nell'uso di pixel di verifica (bug Web o beacon), indicarne chiaramente la presenza delle impostazioni P3P o della privacy pubblica.
 
 11. **Formattare le notifiche di stato di recapito in uscita.**
 
-    Quando si generano messaggi di notifica dello stato di recapito, i mittenti devono seguire il formato di restituzione al mittente in [RFC 3464](https://go.microsoft.com/fwlink/?LinkId=279715).
+    Quando si generano messaggi di notifica dello stato di recapito, i mittenti devono seguire il formato di restituzione al mittente in [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt).
 
 12. **Rimuovere gli indirizzi di posta elettronica di restituzione per utenti inesistenti.**
 
@@ -189,12 +185,10 @@ R. Le linee guida presentate di seguito rappresentano le procedure ottimali per 
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Protezione dalla posta indesiderata in Office 365](https://support.office.com/article/6a601501-a6a8-4559-b2e7-56b59c96a586)
+[Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
 
 [Elenchi di mittenti attendibili e bloccati in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
 [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md)
 
 [Posta indesiderata costituita da falsi rapporti di mancato recapito ed EOP](backscatter-messages-and-eop.md)
-
-

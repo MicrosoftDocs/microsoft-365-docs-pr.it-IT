@@ -13,18 +13,21 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: 5f91c321e0644bc526b8f02028e794935cac3265
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 4afdb87adebfa9e685e1109f4532e4356f44a710
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837330"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971544"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
 **Exchange Online Protection (EOP)** è il fulcro della sicurezza per le sottoscrizioni di Office 365 e consente ai messaggi di posta elettronica dannosi di raggiungere le cassette postali dei dipendenti. Tuttavia, con attacchi nuovi e sofisticati che emergono ogni giorno, sono spesso necessarie protezioni migliorate. **Office 365 Advanced Threat Protection (ATP)** ATP piano 1 o ATP piano 2 contengono funzionalità aggiuntive che forniscono agli amministratori più livelli di sicurezza, controllo ed indagini.
 
 Anche se si autorizza gli amministratori della sicurezza a personalizzare le impostazioni di sicurezza, esistono due livelli di sicurezza in EOP e Office 365 ATP che è consigliabile: **standard** e **strict**. L'ambiente e i bisogni di ogni cliente sono diversi, ma riteniamo che questi livelli di configurazioni del filtro della posta consentano di evitare che la posta indesiderata raggiunga la posta in arrivo dei dipendenti nella maggior parte delle situazioni.
+
+> [!IMPORTANT]
+> La configurazione della posta indesiderata deve essere abilitata sulla cassetta postale per consentire il corretto funzionamento del filtro. Questo è abilitato per impostazione predefinita, ma dovrebbe essere controllato se il filtro non sembra funzionare. Per ulteriori informazioni, vedere [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) . 
 
 In questo argomento vengono descritte le impostazioni consigliate da Microsoft per proteggere gli utenti di Office 365.
 
@@ -41,7 +44,7 @@ Le funzionalità di protezione da posta indesiderata, anti-malware e anti-phishi
 |Azione di rilevamento della posta elettronica di phishing|Metti in quarantena messaggio|Metti in quarantena messaggio||
 |Azione di rilevamento della posta elettronica phishing con elevata sicurezza|Metti in quarantena messaggio|Metti in quarantena messaggio||
 |Azione di rilevamento della posta elettronica in blocco|Sposta messaggio nella cartella Posta indesiderata|Metti in quarantena messaggio||
-|Impostare la soglia di posta elettronica in blocco su|6 |4 |Il valore predefinito è attualmente 7, ma è consigliabile che la maggior parte delle organizzazioni lo sposti fino ad almeno 6|
+|Impostare la soglia di posta elettronica in blocco su|6 |4 |Il valore predefinito è attualmente 7, ma è consigliabile modificarlo su 6. Per ulteriori informazioni, vedere [valori dei livelli di reclamo in blocco](bulk-complaint-level-values.md).|
 |Periodo di conservazione della quarantena|30 giorni|30 giorni||
 |Suggerimenti per la sicurezza|Attivato|Attivato||
 |Mittenti consentiti|Nessuna|Nessuna||
@@ -163,4 +166,3 @@ Non monitorare quando gli utenti fanno clic su collegamenti sicuri|Disattivato|D
 |Risposta malware per gli allegati sicuri ATP|Blocco|Blocco||
 |Reindirizza l'allegato sul rilevamento|Abilitato|Abilitato|Reindirizzare l'indirizzo di posta elettronica per un amministratore della sicurezza che sa come determinare se l'allegato è un malware o meno|
 |Risposta agli allegati sicuri ATP se si verifica un errore durante l'analisi di malware per gli allegati|Abilitato|Abilitato||
-

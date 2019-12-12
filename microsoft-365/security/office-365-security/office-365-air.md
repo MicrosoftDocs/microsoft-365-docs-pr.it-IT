@@ -4,7 +4,6 @@ keywords: ARIA, autoIR, ATP, automatizzato, investigazione, risposta, correzione
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 12/03/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,32 +12,38 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Iniziare a utilizzare le funzionalità di risposta agli incidenti automatici in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 9db3a788f5a2f2c7101b5165935884c1d76bccbd
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+description: Iniziare a utilizzare le funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
+ms.openlocfilehash: 3f13b1de2747dcb6672f56989ff73cdf485e49b6
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813866"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967989"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Analizzare e rispondere automaticamente alle minacce in Office 365
 
 ## <a name="overview"></a>Panoramica
 
-A seconda dell'abbonamento, [Office 365 Advanced Threat Protection](office-365-atp.md) è in grado di includere le funzionalità di risposta agli incidenti automatici (Air) in grado di salvare il tempo e lo sforzo del team per le operazioni di sicurezza per gestire gli avvisi e le minacce.
+A seconda dell'abbonamento, la [protezione avanzata dalle minacce di Office 365](office-365-atp.md) può includere funzionalità di analisi e risposta automatizzate in grado di salvare il tempo e lo sforzo del team per le operazioni di sicurezza per gestire gli avvisi e le minacce.
 
-- Per iniziare a utilizzare le funzionalità AEREe in Office 365, utilizzare questo articolo. 
-- Per ottenere una panoramica del funzionamento dell'aria, vedere [Automatic Incident Response (Air) in Office 365](automated-investigation-response-office.md).
+- Per iniziare a usare le funzionalità di analisi e risposta automatizzate in Office 365, utilizzare questo articolo. 
+- Per ottenere una panoramica di come funziona, vedere [Automatic Investigation and Response in Office 365](automated-investigation-response-office.md).
 
-Con l'aria, quando vengono attivati determinati avvisi, vengono avviati uno o più schemi di sicurezza e viene avviata un'indagine automatizzata. Durante e dopo un processo di analisi automatizzato, il team degli amministratori e delle operazioni di sicurezza può:
+> [!TIP]
+> Si dispone di Microsoft 365 E5 o Microsoft 365 E3 insieme all'identità & protezione dalle minacce? Valutare la possibilità di provare l' [analisi automatizzata e la risposta (Air) in Microsoft Threat Protection](../mtp/mtp-autoir.md).
+
+Con le funzionalità di analisi e risposta automatizzate, quando vengono attivati determinati avvisi, vengono avviati uno o più schemi di sicurezza e il processo di analisi automatizzato inizia. Durante e dopo un processo di analisi automatizzato, il team di sicurezza può eseguire le operazioni seguenti:
 
 - [Visualizzare i dettagli di un'indagine](#view-details-of-an-investigation)
 - [Esaminare e approvare le azioni in seguito a un'indagine](#review-and-approve-actions) 
 - [Visualizzare i dettagli relativi a un avviso relativo a un'indagine](#view-details-about-an-alert-related-to-an-investigation)
 
+> [!IMPORTANT]
+> Per eseguire le attività descritte in questo articolo, è necessario disporre delle autorizzazioni appropriate. Vedere le [autorizzazioni necessarie per utilizzare le funzionalità aeree](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities).
+
 ## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
 
-1. In qualità di amministratore globale di Office 365, amministratore della sicurezza o lettore di sicurezza [https://protection.office.com](https://protection.office.com) , accedere a e accedere. Questo porta al centro sicurezza & Compliance.
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere. Questo porta al centro sicurezza & Compliance.
 
 2. Eseguire una delle operazioni seguenti:
 
@@ -60,7 +65,7 @@ Con l'aria, quando vengono attivati determinati avvisi, vengono avviati uno o pi
 
 In Office 365, le indagini automatizzate in genere determinano una o più azioni consigliate. Tuttavia, non vengono eseguite azioni finché non vengono approvate dal team di operazioni di sicurezza. Utilizzare la procedura seguente per esaminare e approvare le azioni.
 
-1. In qualità di amministratore globale di Office 365, amministratore della sicurezza o lettore di sicurezza [https://protection.office.com](https://protection.office.com) , accedere a e accedere. 
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere. 
 
 2. Andare a > **indagini**sulla **gestione delle minacce**.
 
@@ -76,7 +81,7 @@ In Office 365, le indagini automatizzate in genere determinano una o più azioni
 
 Alcuni tipi di avvisi attivano l'analisi automatizzata in Office 365. Per ulteriori informazioni, vedere [Alerts](automated-investigation-response-office.md#alerts). Utilizzare la procedura seguente per visualizzare i dettagli relativi a un avviso associato a un'indagine automatizzata.
 
-1. In qualità di amministratore globale di Office 365, amministratore della sicurezza o lettore di sicurezza [https://protection.office.com](https://protection.office.com) , accedere a e accedere. Questo porta al centro sicurezza & Compliance.
+1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere. Questo porta al centro sicurezza & Compliance.
 
 2. Andare a > **indagini**sulla **gestione delle minacce**.
 

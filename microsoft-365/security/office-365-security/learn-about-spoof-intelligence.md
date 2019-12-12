@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Utilizzare l'intelligence spoof nel centro &amp; sicurezza e conformità nella pagina impostazioni di protezione da posta indesiderata per esaminare tutti i mittenti che eseguono lo spoofing dei domini che fanno parte dell'organizzazione o lo spoofing di domini esterni. L'intelligence di spoofing è disponibile come parte di Office 365 Enterprise E5 o separatamente come parte di Advanced Threat Protection e Exchange Online Protection.
-ms.openlocfilehash: 35dee30472317349b330a8507fbf3d7e9573100e
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 67c992dea66d5497d232db3c030cc00dd00db45b
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871812"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970432"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Altre informazioni su spoof intelligence
 
@@ -106,7 +106,7 @@ Se si dispone di un abbonamento a Office 365 Enterprise E5 o se è stata acquist
 
 Oltre a consentire o impedire a un determinato mittente di inviare messaggi di posta elettronica contraffatti all'organizzazione, è anche possibile configurare la modalità di riduzione del filtro e l'azione da eseguire quando viene trovato un messaggio di spoofing.
 
-La protezione anti-spoofing viene applicata ai messaggi di posta elettronica inviati da mittenti provenienti da domini esterni all'organizzazione di Office 365. È possibile applicare il criterio ai destinatari le cui cassette postali sono concessi in licenza per Office 365 Enterprise E5, Advanced Threat Protection e a ottobre 2018 anche clienti di EOP. È possibile gestire i criteri di anti-spoofing insieme alle altre impostazioni anti-phishing. Per ulteriori informazioni sulle impostazioni anti-phishing, vedere [configurare i criteri di anti-phishing di Office 365](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions).
+La protezione anti-spoofing viene applicata ai messaggi di posta elettronica inviati da mittenti provenienti da domini esterni all'organizzazione di Office 365. È possibile applicare il criterio ai destinatari le cui cassette postali sono concessi in licenza per Office 365 Enterprise E5, Advanced Threat Protection e a ottobre 2018 anche clienti di EOP. È possibile gestire i criteri di anti-spoofing insieme alle altre impostazioni anti-phishing. Per ulteriori informazioni sulle impostazioni anti-phishing, vedere [set up Office 365 ATP anti-phishing and anti-phishing Policies](set-up-anti-phishing-policies.md).
 
 Office 365 include la protezione anti-spoofing predefinita che è sempre in esecuzione. Questa protezione predefinita non è visibile nel centro conformità &amp; di sicurezza o recuperabile tramite i cmdlet di Windows PowerShell. Non è possibile modificare la protezione anti-spoofing predefinita. Al contrario, è possibile configurare il modo in cui Office 365 impone la protezione anti-spoofing in ogni criterio di anti-phishing creato.
 

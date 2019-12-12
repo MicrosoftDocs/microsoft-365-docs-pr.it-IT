@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Panoramica dei passaggi di installazione per Microsoft 365 business.
-ms.openlocfilehash: 425c465262c266ca764ae8c7a52130903fa635a5
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39812779"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967624"
 ---
 # <a name="overview-of-setup"></a>Panoramica dell’installazione
 
@@ -50,14 +50,16 @@ La maggior parte dei passaggi di installazione può essere effettuata nell'insta
   
   Oltre alle impostazioni di sicurezza nell'installazione guidata, è possibile aumentare la sicurezza aggiungendo le seguenti impostazioni:
 
-      - **Protezione antimalware per la posta elettronica**
-      - **Anti-phishing ATP**
-      - **Archiviazione Exchange Online**
-      - **Protezione delle informazioni di Azure (PLAN1**)
 
-          Per iniziare, vedere, [impostare i criteri di sicurezza avanzati](set-up-advanced-security.md).
+- **Protezione antimalware per la posta elettronica**
+- **Anti-phishing ATP**
+- **Archiviazione Exchange Online**
+- **Protezione delle informazioni di Azure (PLAN1**)
 
-        Vedere anche [i primi 10 modi per proteggere l'azienda Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) per una roadmap delle migliori procedure di sicurezza.
+
+Per iniziare, vedere, [impostare i criteri di sicurezza avanzati](set-up-advanced-security.md).
+
+Vedere anche [i primi 10 modi per proteggere l'azienda Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) per una roadmap delle migliori procedure di sicurezza.
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Passaggio 3: configurare e gestire i dispositivi Windows 10
 

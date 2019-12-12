@@ -5,16 +5,16 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 88abd7bd8b2b4a9af37a1daf5579ac6268a9f927
-ms.sourcegitcommit: e5aa684dab9b4dbe92002d31e69e7225bd8f95a1
+ms.openlocfilehash: 431b28635f856ebd50e1de4129c00149e1e7c78d
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35348885"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962343"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Ciclo di vita del prodotto Microsoft Managed Desktop
 
-Vantaggi per gli utenti finali di Microsoft Managed Desktop garantire che utilizzino sempre dispositivi che offrono le migliori funzionalità di prestazioni, affidabilità, progettazione e sicurezza (come il supporto di funzionalità come Windows Hello). Per ottenere questo risultato, Microsoft Managed Desktop gestisce un breve catalogo di [dispositivi](device-list.md)approvati continuamente aggiornati. 
+Vantaggi per gli utenti finali di Microsoft Managed Desktop garantire che utilizzino sempre dispositivi che offrono le migliori funzionalità di prestazioni, affidabilità, progettazione e sicurezza (come il supporto di funzionalità come Windows Hello). Per ottenere questo risultato, Microsoft Managed Desktop gestisce un breve catalogo di [dispositivi approvati](device-list.md)continuamente aggiornati. 
  
 In questo argomento vengono illustrati in dettaglio il ciclo di vita dei dispositivi che vengono aggiunti e rimossi dal catalogo approvato. 
 
@@ -33,9 +33,9 @@ In questo argomento vengono illustrati in dettaglio il ciclo di vita dei disposi
 
 La sequenza intera è illustrata in questa figura:
 
-![sequenza temporale del ciclo di vita](images/non-dark1-edits.PNG)
+![Timeline del ciclo di vita: a partire dalla disponibilità generale del prodotto, la "disponibilità primaria" è durata due anni. Durante questo periodo la finestra di certificazione termina e ad un certo punto il dispositivo è onboarded. Al termine della disponibilità primaria, il prodotto viene archiviato e il "periodo di tolleranza" di tre anni inizia. A partire da quando il dispositivo è onboarded, ha un periodo di tre anni di utilizzo fino a quando non viene rimosso dalla gestione. Al termine del periodo di tolleranza, il prodotto viene rimosso dal catalogo.](images/non-dark1-edits.PNG)
 
-I prodotti rimangono nel catalogo per un massimo di 24 mesi, ma i *dispositivi* restano in gestione per 3 anni in base alle date di registrazione individuali. In effetti, ogni prodotto ha tre date importanti, ma ogni dispositivo ne ha uno solo. Per i prodotti, tutte e tre le date vengono calcolate in base alla *Data di approvazione*e pertanto si pubblicano queste date al momento dell'approvazione, in modo da poter sempre guardare avanti e pianificare adeguatamente l'intero ciclo di vita del prodotto.
+I prodotti rimangono nel catalogo per un massimo di 24 mesi, ma i <em>dispositivi</em> restano in gestione per 3 anni in base alle date di registrazione individuali. In effetti, ogni prodotto ha tre date importanti, ma ogni dispositivo ne ha uno solo. Per i prodotti, tutte e tre le date vengono calcolate in base alla <em>Data di approvazione</em>e pertanto si pubblicano queste date al momento dell'approvazione, in modo da poter sempre guardare avanti e pianificare adeguatamente l'intero ciclo di vita del prodotto.
 
 In questa tabella vengono riportate le date di esempio per un prodotto teorico:
 
@@ -75,7 +75,7 @@ Questo periodo è il fulcro della disponibilità del prodotto:
 
 Qualsiasi dispositivo registrato durante questo periodo riceve tutti i tre anni di supporto di Microsoft Managed Desktop (come mostrato dalla sequenza temporale blu). Questo periodo dura fino a quando una data di fine non è impostata su 24 mesi dalla data di disponibilità generale.
 
-È possibile pensare a questo periodo in modo efficace "registrazione aperta", in modo da massimizzare il valore di Microsoft Managed Desktop, è consigliabile indirizzare i modelli di acquisizione e i prodotti selezionati entro questo periodo. Come piccolo esempio, un cliente deve evitare di accontentarsi di un periodo di due anni per il roll-out utilizzando un prodotto che si trova nel mese finale di disponibilità principale: la maggior parte di questi dispositivi non riceverà i tre anni completi di Microsoft Managed Desktop Management (vedere [Grace periodo](#product-grace-period) per ulteriori informazioni.  
+È possibile pensare a questo periodo in modo efficace "registrazione aperta", in modo da massimizzare il valore di Microsoft Managed Desktop, è consigliabile indirizzare i modelli di acquisizione e i prodotti selezionati entro questo periodo. Come piccolo esempio, un cliente deve evitare di accontentarsi di un periodo di due anni per il roll-out utilizzando un prodotto che si trova nel mese finale di disponibilità principale: la maggior parte di questi dispositivi non riceverà i tre anni completi di gestione di Microsoft Managed Desktop (vedere il [periodo di tolleranza](#product-grace-period) per ulteriori informazioni).  
 
 ## <a name="product-grace-period"></a>Periodo di tolleranza del prodotto
 

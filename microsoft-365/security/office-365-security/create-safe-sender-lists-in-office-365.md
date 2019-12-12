@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Se si vuole essere sicuri di ricevere la posta da un mittente specifico, poiché si considera attendibile l'elenco dei messaggi consentiti in un criterio di filtro posta indesiderata nell'interfaccia di amministrazione di Exchange.
-ms.openlocfilehash: f4ece6f7528b301ed7046df84ca18915d833dbbf
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 1e804e73b8e2b98107c955004bac240793375ab9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793680"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970852"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Creare elenchi di mittenti attendibili in Office 365
 
@@ -74,7 +74,7 @@ Non aggiungere domini che possiedi o domini più diffusi (ad esempio `microsoft.
 
 ## <a name="use-outlook-safe-senders-end-user-managed"></a>Utilizzare i mittenti attendibili di Outlook (gestiti dall'utente finale)
 
-Invece di autorizzare un indirizzo, un dominio o un indirizzo IP a livello globale, gli utenti finali possono anche consentire l'invio di indirizzi tramite mittenti attendibili di Outlook. La procedura per impostare questa impostazione è diversa tra [Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46) e il [client Outlook](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Quando i messaggi vengono autorizzati correttamente a causa di mittenti attendibili, si vedrà SFV: SFE in X-Forefront-antispam-report** che indica che il filtro di posta indesiderata/spoofing/phishing verrà ignorato.
+Invece di autorizzare un indirizzo, un dominio o un indirizzo IP a livello globale, gli utenti finali possono anche consentire l'invio di indirizzi tramite mittenti attendibili di Outlook. La procedura per impostare questa impostazione è diversa tra [Outlook sul Web](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46) e il [client di Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Quando i messaggi vengono autorizzati correttamente a causa di mittenti attendibili, si vedrà SFV: SFE in X-Forefront-antispam-report** che indica che il filtro di posta indesiderata/spoofing/phishing verrà ignorato.
 
 ## <a name="use-anti-spam-policy-ip-allow-lists"></a>Utilizzare gli elenchi di criteri di protezione da posta indesiderata IP
 

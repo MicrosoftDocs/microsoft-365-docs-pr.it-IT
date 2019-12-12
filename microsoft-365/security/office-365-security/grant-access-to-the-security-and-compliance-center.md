@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Gli utenti devono essere autorizzati a utilizzare le autorizzazioni nel centro sicurezza & conformità di Office 365 prima di poter gestire qualsiasi funzionalità di sicurezza o conformità.
-ms.openlocfilehash: 5f9688662714a4a33f2c6e3483cf902e0f61def9
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: 698a319b4297a00e0c248df495b7013fa3ae3542
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37305950"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970442"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365
 
@@ -41,7 +41,7 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile assegna
 
 ## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Utilizzare l'interfaccia di amministrazione per concedere a un altro utente l'accesso al centro sicurezza & conformità
 
-1. [Accedere a Office 365 e passare all'interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?LinkId=525275).
+1. [Accedere a Office 365 e passare all'interfaccia di amministrazione](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center).
 
 2. Nell'interfaccia di amministrazione di Microsoft 365 aprire interfaccia di **Amministrazione** e quindi fare clic su **sicurezza & conformità**.
 
@@ -65,7 +65,7 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile assegna
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Utilizzo di PowerShell per consentire a un altro utente di accedere al centro sicurezza & Compliance
 
-1. [Connettersi a PowerShell di Office 365 Security & Compliance Center](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Connettersi a PowerShell per Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Usa il comando **Add-RoleGroupMember** per aggiungere un utente al ruolo Gestione organizzazione, come mostrato nell'esempio seguente.
 
@@ -79,7 +79,7 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile assegna
 
    - _Member_ è la cassetta postale, il gruppo di protezione universale (USG) o il computer da aggiungere al gruppo di ruoli. Puoi specificare solo un membro per volta.
 
-Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
 
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
@@ -89,4 +89,4 @@ Per verificare di aver concesso agli utenti l'accesso al centro sicurezza & conf
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860).
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember).

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra.
-ms.openlocfilehash: 94d37e4e39b690c681b83a159d57d20109470497
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 4081c5ec67dc88429fd748014534830c42a816f8
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866758"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971604"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra organizzazione di Exchange Online Protection
 
@@ -181,7 +181,7 @@ A questo punto è possibile esaminare e raccogliere le informazioni dall'interfa
 
 5. Registrare il record MX o il record TXT che verrà utilizzato per verificare il dominio e completare l'installazione guidata.
 
-6. Aggiungere i record TXT di verifica ai record DNS. In questo modo sarà possibile verificare rapidamente i domini nell'organizzazione di origine dopo averli rimossi dall'organizzazione di destinazione. Per ulteriori informazioni sulla configurazione di record DNS, vedere [Creare record DNS per Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
+6. Aggiungere i record TXT di verifica ai record DNS. In questo modo sarà possibile verificare rapidamente i domini nell'organizzazione di origine dopo averli rimossi dall'organizzazione di destinazione. Per ulteriori informazioni sulla configurazione del DNS, vedere [creare record DNS in qualsiasi provider di hosting DNS per Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Passaggio 3: Forzare i mittenti a inserire la posta in coda 
 
@@ -191,7 +191,8 @@ Per forzare i mittenti a inserire la posta in coda è possibile aggiornare i rec
 
 Un'altra opzione consiste nell'inserire un record MX non valido in ogni dominio in cui vengono conservati i record DNS del dominio (noto anche come servizio di hosting DNS). In questo modo il mittente inserirà la posta in coda e ritenterà (i tentativi di invio vengono ripetuti per 48 ore, ma tale periodo può variare da provider a provider). È possibile utilizzare invalid.outlook.com come una destinazione MX non valida. La riduzione del valore Durata (TTL) a 5 minuti nei record MX contribuirà alla distribuzione della modifica nei provider DNS più rapidamente.
 
-Per ulteriori informazioni sulla configurazione di record DNS, vedere [Creare record DNS per Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
+Per ulteriori informazioni sulla configurazione del DNS, vedere [creare record DNS in qualsiasi provider di hosting DNS per Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+
 
 > [!IMPORTANT]
 > Provider diversi inseriscono la posta in coda per periodi di tempo diversi. Sarà necessario configurare rapidamente il nuovo tenant e ripristinare le impostazioni DNS per evitare di inviare rapporti di mancato recapito (NDR) al mittente se scade la durata di accodamento.

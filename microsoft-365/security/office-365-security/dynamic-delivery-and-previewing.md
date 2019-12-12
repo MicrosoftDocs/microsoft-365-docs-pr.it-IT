@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Quando si configurano i criteri per gli allegati sicuri di ATP, è possibile scegliere recapito dinamico per evitare ritardi nei messaggi e consentire agli utenti di visualizzare in anteprima gli allegati analizzati.
-ms.openlocfilehash: 203f5082701f1f3eeea36b385918328cb85deb81
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3cf914325b493098f61c84f27c102dd64fd7d8e9
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083531"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970782"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Recapito dinamico e anteprima con allegati sicuri ATP di Office 365
 
@@ -45,7 +45,7 @@ La maggior parte dei file PDF e i documenti di Office possono essere visualizzat
 
 Con il recapito dinamico, gli utenti possono leggere e rispondere immediatamente ai propri messaggi di posta elettronica, mentre gli allegati vengono analizzati. 
 
-L'analisi degli allegati sicuri ATP si verifica nella stessa area in cui si trovano i dati di Office 365. Per ulteriori informazioni sulla geografia del Data Center, vedere [dove si trovano i dati?](https://products.office.com/where-is-your-data-located?geo=All) 
+L'analisi degli allegati sicuri ATP si verifica nella stessa area in cui si trovano i dati di Office 365. Per ulteriori informazioni sulla geografia del Data Center, vedere [dove si trovano i dati?](https://products.office.com/where-is-your-data-located?geo=All)
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>Cosa succede quando qualcuno inoltra un messaggio di posta elettronica che contiene un allegato?
 

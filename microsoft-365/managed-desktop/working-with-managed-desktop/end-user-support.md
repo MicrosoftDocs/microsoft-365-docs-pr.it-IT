@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6bb3ebfabe74af82cd62e836e9c3d6dfd606cb88
-ms.sourcegitcommit: 4dc7b5b1ccdb7e8f683104f1b9eec90025b3ad0e
+ms.openlocfilehash: c53813a96772389f8ae180663ca3131701e47365
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "37391219"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962203"
 ---
 # <a name="getting-help-for-end-users"></a>Ottenere assistenza per gli utenti finali
 
@@ -24,7 +24,7 @@ Esistono due modi in cui gli utenti dell'organizzazione possono ottenere assiste
 
 Il metodo preferito per fornire supporto agli utenti è **ottenere assistenza**, un'interfaccia di facile utilizzo integrata nel dispositivo utente finale.  
 
-![Ottenere assistenza](images/get-help.png)
+![Icona della Guida per l'app](images/get-help.png)
 
 Si tratta di un'applicazione installata su tutti i dispositivi Microsoft Managed Desktop ed è bloccata alla barra delle applicazioni. 
 
@@ -51,6 +51,8 @@ Gli utenti finali con i dispositivi Microsoft Managed Desktop hanno anche access
 - Stati Uniti: + 1 855 425 0216
 - Canada (escluso Québec): + 1 855 425 0216
 - Regno Unito: + 44 800 026 0698
+- Belgio: + 32 800 58533
+- Lussemburgo: + 352 800 40119
 - Australia: + 61 180 037 0619
 - Nuova Zelanda: + 64 988 44380
 
@@ -60,4 +62,4 @@ Gli utenti finali con i dispositivi Microsoft Managed Desktop hanno anche access
 ## <a name="additional-resources"></a>Altre risorse
 - [Supporto di amministrazione per Microsoft Managed Desktop](admin-support.md). 
 - [Supporto per Microsoft Managed Desktop](../service-description/support.md).
-- Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nella sezione **risorse online** dell' [amministratore Microsoft Managed Desktop Portale](https://aka.ms/mwaasportal).
+- Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nella sezione **risorse online** del [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal).

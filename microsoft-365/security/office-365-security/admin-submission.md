@@ -1,5 +1,5 @@
 ---
-title: Invii di amministratore in Office 365, O365 invii, Office 365 spam problem, O365 false negative, Submit phishing in Office 365, inviare la posta elettronica per l'analisi, la posta elettronica sospetti in Office 365, analizzare una posta elettronica, avere Microsoft Scan per phishing, avere Microsoft Scan per la posta indesiderata, invio posta elettronica, inviare messaggi di posta elettronica
+title: Invii di amministratore in Office 365, O365 invii, Office 365 spam problem, O365 false negative, Submit phishing in Office 365, inviare la posta elettronica per l'analisi, la posta elettronica sospetti in Office 365, analizzare una posta elettronica, avere Microsoft Scan per phishing, avere Microsoft Scan per la posta indesiderata, invio posta elettronica, inviare messaggi di posta elettronica, messaggi di posta elettronica dodgy, messaggi di cattiva attore, messaggi sospetti e non attendibili
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come inviare messaggi di posta elettronica sospetti, sospette mail di phishing, spam e altre potenzialmente nocive, URL e file dal tenant di Office 365 a Microsoft per l'analisi.
-ms.openlocfilehash: 5ca5eab2feab1243a83eb60c9320fd48dfb59f12
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 3d53c8270e84cd6f6298b9b39cc7e37262aed7b0
+ms.sourcegitcommit: 9c9044885eb9754ce69f2f08afdcc13c782ce2f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084932"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39915217"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Come inviare messaggi di posta indesiderata, phishing, URL e file sospetti a Microsoft per l'analisi di Office 365
 
@@ -26,11 +26,11 @@ Gli amministratori possono inviare messaggi di posta elettronica utilizzando il 
 
 Quando si invia un messaggio di posta elettronica, si ottengono informazioni su tutti i criteri che possono aver consentito la posta elettronica in arrivo nel tenant, nonché l'esame degli URL e degli allegati della posta. I criteri che possono aver consentito a un messaggio di posta elettronica includono l'elenco dei mittenti attendibili di un singolo utente e i criteri di livello tenant, ad esempio le regole di ETR. 
 
-## <a name="how-to-submit-content-to-microsoft-for-office-365-scanning"></a>Come inviare contenuti a Microsoft per l'analisi di Office 365
+## <a name="how-to-direct-suspicious-content-to-microsoft-for-office-365-scanning"></a>Come indirizzare i contenuti sospetti a Microsoft per l'analisi di Office 365
 
 Per inviare contenuto a Microsoft fare clic sul pulsante **nuovo invio** nella parte superiore sinistra della pagina invii. Viene visualizzato un riquadro a comparsa sul lato destro della pagina con l'opzione per inviare un messaggio di posta elettronica, un URL o un file. 
 
-### <a name="submit-an-email-to-microsoft"></a>Inviare un messaggio di posta elettronica a Microsoft
+### <a name="submit-a-questionable-email-to-microsoft"></a>Inviare un messaggio di posta elettronica discutibile a Microsoft
 ![Esempio di invio tramite posta elettronica](../media/submission-flyout-email.PNG)
 1. Per inviare un messaggio di posta elettronica, selezionare **posta elettronica** e specificare l' **ID della rete** di posta elettronica o caricare il file di posta elettronica. 
 
@@ -44,7 +44,7 @@ Per inviare contenuto a Microsoft fare clic sul pulsante **nuovo invio** nella p
 
 4. Fare clic sul pulsante **Invia** .
 
-### <a name="submit-a-url-to-microsoft"></a>Invio di un URL a Microsoft
+### <a name="send-a-suspect-url-to-microsoft"></a>Inviare un URL sospetto a Microsoft
 ![Esempio di invio tramite posta elettronica](../media/submission-url-flyout.png)
 1. Per inviare un **URL selezionare URL dal riquadro a comparsa** . Digitare l'URL completo, incluso il protocollo (**https://**). 
 
@@ -53,7 +53,7 @@ Per inviare contenuto a Microsoft fare clic sul pulsante **nuovo invio** nella p
 2. Fare clic sul pulsante **Invia** . 
 
 
-### <a name="submit-a-file-to-microsoft"></a>Inviare un file a Microsoft
+### <a name="submit-a-suspected-file-to-microsoft"></a>Inviare un file sospetto a Microsoft
 ![Esempio di invio tramite posta elettronica](../media/submission-file-flyout.PNG)
 1. Per inviare un file seleziona **file** dal riquadro a comparsa e caricare il file che si desidera analizzare. 
 
@@ -62,7 +62,7 @@ Per inviare contenuto a Microsoft fare clic sul pulsante **nuovo invio** nella p
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Office 365 Advanced Threat Protection piano 2](office-365-ti.md)
+[Office 365 Advanced Threat Protection (Piano 2)](office-365-ti.md)
   
 [Protezione dalle minacce in Office 365](protect-against-threats.md)
   

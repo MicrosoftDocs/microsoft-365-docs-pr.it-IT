@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: Ottenere una panoramica dei report e delle informazioni di avialable nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 5c6ef13bbbb46de63dfb0cfecfa0824d8e50547d
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: 33e02ff96621df72b2224cc8dc9b3666caab3429
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38034177"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967969"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Smart report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365
 
@@ -50,7 +50,7 @@ Nelle procedure dettagliate riportate di seguito viene illustrato come spostarsi
 |:-----|:-----|:-----|
 |**Report &amp; centro conformità di sicurezza** (all up)  <br/> Suggerimenti e consigli principali e collegamenti ai report di conformità della &amp; sicurezza, inclusi i report di prevenzione della perdita di dati, le etichette, i report sulla sicurezza della posta elettronica, i report di protezione avanzata delle minacce e altro ancora  <br/> |Nel centro sicurezza &amp; e conformità, andare al **** \> **Dashboard** dei report <br/> |[Monitorare e visualizzare i report nel centro sicurezza di Microsoft 365](../mtp/monitoring-and-reporting.md) <br/> |
 |**Prevenzione della perdita dei dati** <br/> Criteri di prevenzione della perdita di dati corrispondenze, falsi positivi e sostituzioni e collegamenti per creare o modificare criteri  <br/> |Nel centro sicurezza &amp; e conformità, accedere a **** \> **criteri** di prevenzione della perdita di dati <br/> |[View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md) <br/> |
-|**Governance dei dati** <br/> Informazioni sul modo in cui vengono applicate le etichette, etichette classificate come record, tendenze delle etichette e altro ancora  <br/> |Nel centro sicurezza &amp; e conformità, accedere a \> **Dashboard** di **governance dei dati** <br/> |[Visualizzare i report di governance dei dati](../../compliance/view-the-data-governance-reports.md) <br/> |
+|**Governance dei dati** <br/> Informazioni sul modo in cui vengono applicate le etichette, etichette classificate come record, tendenze delle etichette e altro ancora  <br/> |Nel centro sicurezza &amp; e conformità, visitare il **Dashboard** **Information Governance** \> <br/> |[Visualizzare i report di governance dei dati](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**Dashboard di gestione delle minacce** (indicato anche come dashboard di sicurezza e dashboard di intelligence di Threat)  <br/> Rilevamenti di minacce, tendenze di malware, utenti di destinazione principali, dettagli sui messaggi di posta elettronica inviati e ricevuti e altro ancora  <br/> |Nel centro sicurezza &amp; e conformità, accedere a **Threat Management** \> **Dashboard** <br/> |[Panoramica del dashboard di sicurezza](security-dashboard.md) <br/> |
 |**Esplora minacce** (noto anche come esploratore) o **rilevamenti in tempo reale** <br/> Sospetti di malware rilevati nei messaggi di posta elettronica e file in Office 365  <br/> |Nel centro sicurezza &amp; e conformità, accedere a **Threat Management** \> **Explorer** o ai **rilevamenti in tempo reale**<br/> |[Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md) <br/> |
 |**Report di protezione avanzata dalle minacce e messaggi di sicurezza** <br/> Report sulla sicurezza della posta elettronica e sulla protezione delle minacce (inclusi malware, posta indesiderata, phishing e spoofing)  <br/> |Nel centro sicurezza &amp; e conformità, andare al **** \> **Dashboard** dei report <br/> |[Visualizzare i report per Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità](../../compliance/view-email-security-reports.md) <br/> |

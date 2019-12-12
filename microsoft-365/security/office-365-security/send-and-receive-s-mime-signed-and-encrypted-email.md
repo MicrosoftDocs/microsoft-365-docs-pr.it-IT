@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: La procedura di invio di un messaggio crittografato con S/MIME in Microsoft Outlook è molto simile a quella di invio di un messaggio non crittografato.
-ms.openlocfilehash: 63f45688946f1946f0b0a63cec748d0f0c6a50ee
-ms.sourcegitcommit: 84d88a857e82b1a8a0d466057a2e330e8b1692e4
+ms.openlocfilehash: ccea4e3359ecb9a5b214e4d19afa3e188b1b2865
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37305930"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970282"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>Inviare e ricevere messaggi di posta elettronica firmati e crittografati con S/MIME in Exchange Online
 
-La procedura di invio di un messaggio crittografato con S/MIME in Microsoft Outlook è molto simile a quella di invio di un messaggio non crittografato. Per ulteriori informazioni sulla lettura o l'invio di messaggi crittografati con S/MIME da un programma di posta elettronica, ad esempio Outlook sul Web (in precedenza noto come Outlook Web App), vedere [utilizzare Outlook per inviare e rispondere a messaggi crittografati con s/MIME](https://go.microsoft.com/fwlink/p/?LinkId=392520).
+La procedura di invio di un messaggio crittografato con S/MIME in Microsoft Outlook è molto simile a quella di invio di un messaggio non crittografato. Per ulteriori informazioni sulla lettura o l'invio di messaggi crittografati con S/MIME da un programma di posta elettronica, ad esempio Outlook sul Web (in precedenza noto come Outlook Web App), vedere [crittografare i messaggi tramite S/MIME in Outlook sul Web](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 

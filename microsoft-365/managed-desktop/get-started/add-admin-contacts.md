@@ -1,19 +1,19 @@
 ---
-title: Aggiungere e verificare i contatti di amministratore nel portale di amministrazione
+title: Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione
 description: Indicare gli utenti che devono contattare per ogni area di interesse.
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3f77a5f6f0af83ea82d2ab3cea0798b95e27c2d2
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012067"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962613"
 ---
-# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Aggiungere e verificare i contatti di amministratore nel portale di amministrazione
+# <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione
 
 Esistono diversi modi in cui il servizio Microsoft Managed Desktop comunica con i clienti. Per semplificare la comunicazione e verificare che il controllo venga effettuato con gli utenti giusti, è necessario fornire un set di contatti di amministratore. Microsoft Managed Desktop IT Operations contatterà queste persone per risolvere i problemi di assistenza per il tenant.
 
@@ -52,25 +52,25 @@ I contatti amministrativi sono necessari quando si [Invia una richiesta di suppo
 
 2.  In **supporto**, selezionare **contatti di amministratore**. 
 
-    ![Menu di supporto, contatti amministrativi](images/admincontacts.png)
+    ![Menu di supporto, contatti amministrativi vicino alla parte superiore selezionata](images/admincontacts.png)
 
 3. Seleziona **Aggiungi**.
 
-    ![Pulsante di aggiunta al portale di amministrazione](images/adminadd.png)
+    ![Portale di amministrazione, pulsante Aggiungi, a sinistra di esportazione e aggiornamento](images/adminadd.png)
 
 4.  Selezionare un' **area di messa a fuoco** e immettere le informazioni per il contatto. 
 
-    ![elenco delle aree di interesse](images/areaoffocus.png)
+    ![elenco delle aree di interesse, ad esempio altre, app e sicurezza](images/areaoffocus.png)
 
 5. Ripetere l'attività per ogni area di interesse. 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Passaggi per iniziare a utilizzare Microsoft Managed Desktop
 
 1. Aggiungere e verificare i contatti di amministratore nel portale di amministrazione (questo argomento)
-2. [Regolare l'accesso condizionale](conditional-access.md)
+2. [Modificare l'accesso condizionale](conditional-access.md)
 3. [Assegnare licenze](assign-licenses.md)
 4. [Installare il portale aziendale di Intune nei dispositivi](company-portal.md)
-5. [Abilitazione del roaming dello stato dell'organizzazione](enterprise-state-roaming.md)
+5. [Abilitare Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Configurare i dispositivi Microsoft Managed Desktop](set-up-devices.md)
 7. [Preparare gli utenti a usare i dispositivi](get-started-devices.md)
 8. [Distribuire le app ai dispositivi](deploy-apps.md)

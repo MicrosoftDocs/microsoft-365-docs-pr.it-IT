@@ -1,8 +1,8 @@
 ---
-title: Monitoraggio e creazione di report dei dati in Microsoft 365 Security Center
+title: Monitoraggio e creazione di report dei dati nel centro sicurezza Microsoft 365
 description: Descrive in che modo è possibile monitorare l'attività degli utenti che potrebbe causare la divulgazione di dati non autorizzati.
 keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, monitoraggio, report, dati
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 8c4b94eb286e1d226f9854c1de03909a94d44fca
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 9952500b625599f4db588a5c9dc85404be383b6b
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084941"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910190"
 ---
-# <a name="data-monitoring-and-reporting-in-microsoft-365-security-center"></a>Monitoraggio e creazione di report dei dati in Microsoft 365 Security Center
+# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio e creazione di report dei dati nel centro sicurezza Microsoft 365
 
 La categoria **dati** consente di monitorare le attività degli utenti che possono portare alla divulgazione di dati non autorizzati. Di seguito sono riportate le relazioni esistenti sui criteri DLP di Office 365 e un report di criteri DLP di terze parti.
 
@@ -30,4 +30,4 @@ La categoria **dati** consente di monitorare le attività degli utenti che posso
 * Numero di sostituzioni dei criteri DLP o falsi positivi riportati
 * Quante corrispondenze di criteri DLP sono state verificate in servizi cloud di terze parti tramite Microsoft cloud app Security
 
-![Categoria dati della pagina report](../media/security-docs/data.png)
+![Categoria dati della pagina report](../images/data.png)

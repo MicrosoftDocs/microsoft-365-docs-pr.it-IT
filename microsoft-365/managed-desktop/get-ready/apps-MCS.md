@@ -1,19 +1,19 @@
 ---
-title: Utilizzo di Microsoft Consulting Services
+title: Lavorare con Microsoft Consulting Services
 description: preparazione e passaggi da seguire per lavorare con MCS per il pacchetto delle app
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, Documentation, Apps, MCS, Packaging
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3687966fd49db3fd58c4ecbb3917e45ec6dfa3c3
-ms.sourcegitcommit: b9663acecf0bfdca2486818ec7e08a6f882d0dc9
+ms.openlocfilehash: 4491504616eb4bb447f12d08dddb12c73c2a88ac
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35425739"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962623"
 ---
-# <a name="working-with-microsoft-consulting-services"></a>Utilizzo di Microsoft Consulting Services
+# <a name="working-with-microsoft-consulting-services"></a>Lavorare con Microsoft Consulting Services
 
 È possibile collaborare con Microsoft Consulting Services (MCS) per ottenere le app in pacchetti per l'utilizzo con Microsoft Managed Desktop. Per i dettagli esatti, collaborare con il proprio account Representative per contattare MCS e l'ambito del progetto di packaging app specifico.
 
@@ -35,7 +35,7 @@ Per utilizzare la confezione dell'app MCS, **è necessario fornire questi elemen
 
 Avviare il processo di creazione del pacchetto caricando le informazioni sull'app nel portale Microsoft Managed Desktop. Il team di packaging esamina i nuovi invii ogni Giovedi. Dopo la revisione e la confezione, le app in pacchetti vengono recapitate il venerdì seguente. È possibile creare pacchetti fino a cinque app alla settimana, ma il servizio può essere ridimensionato per soddisfare le proprie esigenze.
 
-![calendario che mostra la revisione, il packaging e le date di consegna delle app](images/MCS-cal.png)
+![calendario che mostra l'afflusso di app su un Giovedi (il 21 in questo esempio), la convalida dei contenuti multimediali il giorno successivo, la confezione del lunedì seguente (il venticinquesimo) e il recapito delle app il venerdì successivo (29)](images/MCS-cal.png)
 
 Una volta che l'app è stata recapitata, verrà inviata una notifica. A questo punto, sono necessari 21 giorni per eseguire il test di accettazione e disconnettersi sul lavoro nel portale Microsoft Managed Desktop. Se si scopre qualche problema con l'app durante il test di accettazione, rifiutare l'applicazione nel portale Microsoft Managed Desktop e si sarà connessi tramite posta elettronica con un Packager MCS per comprendere e risolvere il problema.
 

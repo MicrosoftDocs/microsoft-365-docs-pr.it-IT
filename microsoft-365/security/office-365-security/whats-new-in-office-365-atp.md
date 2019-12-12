@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3f9d4e1dff1f324e8e2c3eedb502ef0480d2c25e
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 4d9401c7568534e9f9a0036ef273964d327dbf06
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202417"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971404"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novità di Office 365 ATP
 
@@ -28,21 +28,18 @@ ms.locfileid: "39202417"
 
 In questo articolo vengono elencate le nuove funzionalità nell'ultima versione di Office 365 ATP. Le caratteristiche attualmente in anteprima sono denotate con **(Preview)**.
 
->Non si dispone ancora di Office 365 ATP? [Contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644). 
+> [!TIP]
+> Non si dispone ancora di Office 365 ATP? [Contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP - Piano 1 e Piano 2
 
-Office 365 ATP è disponibile in due piani: Office 365 ATP piano 1 e Office 365 ATP piano 2.
- 
-Nella tabella seguente sono riepilogate le informazioni incluse in ogni piano. 
+Office 365 ATP è disponibile in due piani: Office 365 ATP piano 1 e Office 365 ATP piano 2. [Per ulteriori informazioni, vedere cosa è incluso in ogni piano](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
-|Office 365 ATP piano 1  |Office 365 ATP piano 2  |
-|---------|---------|
-|Funzionalità di configurazione, protezione e rilevamento:<br/>- [Allegati sicuri](atp-safe-attachments.md)<br/>- [Collegamenti sicuri](atp-safe-links.md)<br/>- [ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Protezione avanzata antiphishing](atp-anti-phishing.md)<br/>- [Rilevamenti in tempo reale](threat-explorer.md)     |Funzionalità di Office 365 ATP Plan 1<br/>---più---<br/>Funzionalità di automazione, analisi, correzione e formazione:<br/>- [Inseguimenti di minacce](threat-trackers.md)<br/>- [Esplora minacce](threat-explorer.md)<br/>- [Risposta agli incidenti automatici](automated-investigation-response-office.md)<br/>- [Simulatore di attacco](attack-simulator.md)         |
+## <a name="december-2019"></a>Dicembre 2019
 
-- Office 365 ATP Plan 2 è incluso in Office 365 E5, Office 365 a5 e Microsoft 365 E5. 
-- Office 365 ATP Plan 1 è incluso in Microsoft 365 business. 
-- Se l'abbonamento corrente non include Office 365 ATP, [contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644)e vedere in che modo ATP può funzionare per la propria organizzazione. 
+- [Esportare i dati di clic su URL per l'analisi offline](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP piano 1 o piano 2)
+
+- [Visualizzazioni della campagna in Office 365 ATP (**Anteprima**)](campaigns.md)
 
 ## <a name="november-2019"></a>Novembre 2019
 
@@ -50,9 +47,9 @@ Nella tabella seguente sono riepilogate le informazioni incluse in ogni piano.
 
 ## <a name="september-2019"></a>Settembre 2019
 
-- [Utilizzare la risposta automatizzata agli incidenti (Air) in office 365](automated-investigation-response-office.md) (Office 365 ATP piano 2)
+- [Utilizzare le funzionalità di analisi e risposta automatizzate in office 365](automated-investigation-response-office.md) (Office 365 ATP piano 2)
 
-- [Integrazione con office 365 ATP Air Events Using the office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)
+- [Integrazione con gli eventi di risposta e analisi automatizzati di office 365 ATP tramite l'API di attività di gestione](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) di Office 365 (Office 365 ATP Plan 2)
 
 - [Visualizzare le intestazioni di posta elettronica e scaricare il corpo del messaggio di posta elettronica](investigate-malicious-email-that-was-delivered.md#view-the-email-headers-and-download-the-email-body) (Office 365 ATP piano 1 o piano 2)
 
@@ -64,10 +61,9 @@ Nella tabella seguente sono riepilogate le informazioni incluse in ogni piano.
 
 - [Controllare l'azione di recapito e la posizione dei messaggi di posta elettronica](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Office 365 ATP piano 1 o 2)
 
- ## <a name="june-2019"></a>Giugno 2019
+## <a name="june-2019"></a>Giugno 2019
 
 - [Visualizzare i dati relativi agli URL di phishing e fare clic su Verdet](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP piano 1 o piano 2)
-
 
 ## <a name="see-also"></a>Vedere anche
 

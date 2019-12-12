@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 'Sintesi: gestire il sito del team di SharePoint Online isolato con queste procedure.'
-ms.openlocfilehash: fd34a8af35b546266cf5d7cf308dbd387207eb1e
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 1b033d8c08b4b263c854213ce7b2a9fc2c0baede
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202447"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971734"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Gestire un sito del team di SharePoint Online isolato
 
@@ -146,7 +146,7 @@ In alcuni casi, un sottoinsieme di utenti che lavorano all'interno del sito isol
   
 Per creare una sottocartella di documenti con autorizzazioni personalizzate, eseguire le operazioni seguenti:
   
-1. Accedere a Office 365 con un account che è membro del gruppo di accesso degli amministratori del sito. Per informazioni, vedere [Dove accedere a Office 365 per le aziende](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere a Office 365 con un account che è membro del gruppo di accesso degli amministratori del sito. Per informazioni, vedere [Dove accedere a Office 365 per le aziende](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Accedere al sito del team isolato e fare clic su **Documenti**.
     

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La definizione degli utenti di posta è una parte importante della gestione del servizio Exchange Online Protection (EOP).
-ms.openlocfilehash: 065fdae30dea49220c10fd455b7ac346e70c18de
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 2871ec73a06a092aa5cfdab0d9648d8cc5311460
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871772"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971744"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gestire utenti di posta in Exchange Online Protection
 
@@ -63,13 +63,13 @@ Nella presente sezione vengono fornite informazioni sulla gestione degli utenti 
 
   - **Quarantena della posta indesiderata dell'utente finale**: per accedere alla quarantena della posta indesiderata dell'utente finale, gli utenti finali devono disporre di un ID utente e una password validi di Office 365. I clienti EOP che proteggono le cassette postali locali devono essere utenti di posta elettronica validi.
 
-  - **Regole del flusso di posta**: quando si utilizza la sincronizzazione della directory, gli utenti e i gruppi di Active Directory esistenti vengono caricati automaticamente nel cloud ed è quindi possibile creare regole del flusso di posta (note anche come regole di trasporto) che devono essere indirizzate a utenti e/o gruppi specifici senza dover aggiungerle manualmente tramite l'EAC o Exchange Online Protection PowerShell. Si noti che non è possibile sincronizzare i [gruppi di distribuzione dinamici](https://go.microsoft.com/fwlink/?LinkId=507569) tramite la sincronizzazione delle directory.
+  - **Regole del flusso di posta**: quando si utilizza la sincronizzazione della directory, gli utenti e i gruppi di Active Directory esistenti vengono caricati automaticamente nel cloud ed è quindi possibile creare regole del flusso di posta (note anche come regole di trasporto) che devono essere indirizzate a utenti e/o gruppi specifici senza dover aggiungerle manualmente tramite l'EAC o Exchange Online Protection PowerShell. Si noti che non è possibile sincronizzare i [gruppi di distribuzione dinamici](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) tramite la sincronizzazione delle directory.
 
-Ottenere le autorizzazioni necessarie e preparare la sincronizzazione della directory, come descritto in [Preparazione della sincronizzazione della directory](https://go.microsoft.com/fwlink/p/?LinkId=308908).
+Ottenere le autorizzazioni necessarie e prepararsi per la sincronizzazione della directory, come descritto in [che cos'è Hybrid Identity with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 ### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>Per sincronizzare le directory degli utenti con Azure Active Directory Connect (AAD Connect)
 
-Per sincronizzare gli utenti con Azure Active Directory (AAD), è necessario innanzitutto **attivare la sincronizzazione della directory**, come descritto in [Activate Synchronization directory](https://go.microsoft.com/fwlink/p/?LinkId=308909).
+Per sincronizzare gli utenti con Azure Active Directory (AAD), è necessario prima di tutto **attivare la sincronizzazione della directory**, come descritto in [Azure ad Connect Sync: understand and Customize Synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
 La successiva è l'installazione e la configurazione di un computer locale per l'esecuzione di AAD Connect (se non è già presente una--una cosa degna di essere verificata in anticipo). La [configurazione di AAD Connect, l'argomento Express Way](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) spiega come configurare e sincronizzare gli account da locale AD Azure ad con AAD Connect.
 

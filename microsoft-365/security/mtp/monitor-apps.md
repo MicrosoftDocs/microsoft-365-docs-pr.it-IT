@@ -1,8 +1,8 @@
 ---
-title: Monitoraggio e creazione di report delle app in Microsoft 365 Security Center
+title: Monitoraggio e creazione di report delle app nel centro sicurezza Microsoft 365
 description: Descrive come è possibile ottenere ulteriori informazioni sull'utilizzo delle app Cloud nell'organizzazione
 keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, monitoraggio, report, app
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: ellevin
@@ -12,14 +12,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 29dd1f4ebb8d65bb6079cdc4467f1aa5e33ae906
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 8688088508f57fca1ba62dd41c28cd204df5c05e
+ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084956"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39910285"
 ---
-# <a name="app-monitoring-and-reporting-in-microsoft-365-security-center"></a>Monitoraggio e creazione di report delle app in Microsoft 365 Security Center
+# <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio e creazione di report delle app nel centro sicurezza Microsoft 365
 
 Questi rapporti offrono maggiori informazioni su come vengono utilizzate le app Cloud nell'organizzazione, inclusi i tipi di app, il livello di rischio e gli avvisi.
 
@@ -27,7 +27,7 @@ Questi rapporti offrono maggiori informazioni su come vengono utilizzate le app 
 
 La **protezione della posta** elettronica Visualizza gli account di posta elettronica a rischio. È possibile fare clic su un account per esaminare ulteriormente il Centro sicurezza di Microsoft Defender.
 
-![Scheda di protezione della posta elettronica](../media/security-docs/email-protection.png)
+![Scheda di protezione della posta elettronica](../images/email-protection.png)
 
 ## <a name="monitor-app-permissions-granted-by-users"></a>Monitorare le autorizzazioni delle app concesse dagli utenti
 
@@ -35,25 +35,25 @@ La **protezione della posta** elettronica Visualizza gli account di posta elettr
 
 I fattori di rischio partono da informazioni generali, ad esempio l'editore app, per le misure di sicurezza e i controlli, ad esempio se l'app supporta la crittografia a riposo o fornisce un registro di controllo delle attività degli utenti.
 
-![Cloud app Security OAuth Apps Card](../media/security-docs/cloud-app-security-oauth-apps.png)
+![Cloud app Security OAuth Apps Card](../images/cloud-app-security-oauth-apps.png)
 
 ## <a name="monitor-cloud-app-user-accounts"></a>Monitorare gli account utente delle app Cloud
 
 Gli **account delle app cloud per gli elenchi di revisione** possono richiedere attenzione.
 
-![Account app cloud per la scheda di Revisione](../media/security-docs/cloud-app-accounts-for-review.png)
+![Account app cloud per la scheda di Revisione](../images/cloud-app-accounts-for-review.png)
 
 ## <a name="understand-which-cloud-apps-are-used"></a>Informazioni sulle app Cloud utilizzate
 
 Le **app del cloud scoperte (categorie)** mostrano quali tipi di app vengono utilizzate nell'organizzazione e si collegano al dashboard di individuazione cloud in cloud app Security. Per ulteriori informazioni, vedere [Guida introduttiva: lavorare con le app scoperte](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
 
-![Scheda categorie di applicazioni cloud scoperte](../media/security-docs/discovered-cloud-apps-categories.png)
+![Scheda categorie di applicazioni cloud scoperte](../images/discovered-cloud-apps-categories.png)
 
 ## <a name="monitor-where-users-access-cloud-apps"></a>Monitorare la posizione in cui gli utenti accedono alle app Cloud
 
 Le **posizioni delle attività delle app Cloud** mostrano dove gli utenti accedono alle app cloud.
 
-![Scheda percorsi attività app Cloud](../media/security-docs/cloud-app-activity-locations.png)
+![Scheda percorsi attività app Cloud](../images/cloud-app-activity-locations.png)
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>Monitorare l'integrità dei carichi di lavoro dell'infrastruttura
 
@@ -63,4 +63,4 @@ Azure Security Center fornisce la gestione della sicurezza unificata e la protez
 
 Per ulteriori informazioni, vedere [documentazione relativa al centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/).
 
-![Scheda di integrità dell'infrastruttura](../media/security-docs/infrastructure-health.png)
+![Scheda di integrità dell'infrastruttura](../images/infrastructure-health.png)

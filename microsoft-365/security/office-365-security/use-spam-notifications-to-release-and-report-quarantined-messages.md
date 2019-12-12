@@ -16,28 +16,28 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: Se l'amministratore abilita le notifiche per gli utenti, riceverà un messaggio di notifica che elenca i messaggi inviati alla cassetta postale che sono stati identificati come posta indesiderata, in blocco o in messaggi di phishing. È possibile rilasciare o segnalare i messaggi dopo la notifica.
-ms.openlocfilehash: 7042f847dbc8df9d60efc694a07a258eff411f6d
-ms.sourcegitcommit: 333ecfb8bfeb34f9f08d82d295b40d37de6ba8b9
+ms.openlocfilehash: 4cf592f0aec948c3c8f6383cf288fb32ac644cd6
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772210"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971364"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Usare le notifiche di posta indesiderata dell'utente per rilasciare e segnalare i messaggi in quarantena in Office 365
 
 Se l'amministratore abilita le notifiche di posta indesiderata per gli utenti, riceverà un messaggio di notifica che elenca i messaggi indirizzati alla cassetta postale che sono stati identificati come posta indesiderata e in quarantena
-  
+
 > [!TIP]
-> Se si è un amministratore e si desidera abilitare questa funzionalità, è possibile scegliere l'opzione quando si [modifica un criterio di protezione da posta indesiderata predefinito](https://go.microsoft.com/fwlink/?LinkId=800313). 
-  
+> Se si è un amministratore e si desidera abilitare questa funzionalità, è possibile scegliere l'opzione quando si [modifica un criterio di protezione da posta indesiderata predefinito](configure-your-spam-filter-policies.md).
+
 Il messaggio ricevuto include il numero di messaggi di posta indesiderata in quarantena e la data e l'ora (in formato UTC (Universal Coordinated Time) dell'ultimo messaggio nell'elenco. L'elenco include quanto segue per ogni messaggio:
-  
-- **Mittente** Il nome e l'indirizzo di posta elettronica del messaggio in quarantena. 
-    
-- **Oggetto** Oggetto del messaggio in quarantena. 
-    
-- **Data** Data e ora (in formato UTC) del messaggio in quarantena.     
-  
+
+- **Mittente** Il nome e l'indirizzo di posta elettronica del messaggio in quarantena.
+
+- **Oggetto** Oggetto del messaggio in quarantena.
+
+- **Data** Data e ora (in formato UTC) del messaggio in quarantena.
+
 Di seguito sono riportate le azioni che è possibile eseguire con un messaggio in quarantena:
 
 - **Blocca mittente** se si desidera che in Office 365 venga aggiunto il mittente all'elenco dei mittenti bloccati.
@@ -45,9 +45,7 @@ Di seguito sono riportate le azioni che è possibile eseguire con un messaggio i
 - **Revisione** per passare al portale di quarantena all'interno del Centro sicurezza e conformità se si desidera eseguire altre operazioni, ad esempio l'anteprima o il rilascio.
 
 Tenere presente quanto segue:
-  
-- I messaggi in quarantena perché hanno trovato una regola del flusso di posta non sono inclusi nei messaggi in quarantena dell'utente. Nell'elenco sono presenti solo i messaggi di posta indesiderata in quarantena.
-    
-- È possibile rilasciare un messaggio e segnalarlo come falso positivo (non indesiderato) solo una volta.
-    
 
+- I messaggi in quarantena perché hanno trovato una regola del flusso di posta non sono inclusi nei messaggi in quarantena dell'utente. Nell'elenco sono presenti solo i messaggi di posta indesiderata in quarantena.
+
+- È possibile rilasciare un messaggio e segnalarlo come falso positivo (non indesiderato) solo una volta.

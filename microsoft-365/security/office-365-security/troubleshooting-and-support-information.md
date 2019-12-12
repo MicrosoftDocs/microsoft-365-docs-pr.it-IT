@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono descritti i passaggi utili alla risoluzione dei problemi a beneficio degli utenti finali e amministratori, inoltre sono fornite le informazioni su come contattare il supporto tecnico per l'assistenza.
-ms.openlocfilehash: c87744608930603f70e6be1132a0b405e9646b57
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: a6a4b94db3e34442d326942641b10db15d104d71
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441193"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971624"
 ---
 # <a name="troubleshooting-and-support-information"></a>Supporto tecnico e risoluzione dei problemi
 
@@ -86,6 +86,6 @@ Se si ha bisogno di assistenza per l'installazione, la configurazione o la disin
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Abilitare il componente aggiuntivo Segnala messaggio](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Abilitare il componente aggiuntivo Segnala messaggio](enable-the-report-message-add-in.md)
 
 [Segnalazione di messaggi indesiderati a Microsoft](report-junk-email-messages-to-microsoft.md)

@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8ecc117b2bc6e7cec3dcf0470a6d3c61ad34adf0
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 1f642d2790af5f4ec83dd1bbe57a9be249d095d1
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634033"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962333"
 ---
 # <a name="reliability-insights"></a>Dati analitici sull'affidabilità
 
 Questa visualizzazione fornisce un riepilogo di integrità dei dispositivi gestiti. Per visualizzare i dati di attendibilità, selezionare la scheda **affidabilità** .
 
 
-![Riquadro affidabilità](images/insights_reliability.png)
+![Riquadro di affidabilità: affidabilità tra i dispositivi in alto a sinistra e affidabilità nel grafico temporale in alto a destra, tabella problemi principali nella parte inferiore. Pulsanti di guida e commenti e suggerimenti in basso a destra.](images/insights_reliability.png)
 
 La sezione **affidabilità tra i dispositivi** offre un riepilogo rapido dell'integrità della distribuzione negli ultimi 14 giorni segnalando la percentuale di dispositivi considerati "integro" e il tempo medio osservato dopo l'ultimo errore segnalato. 
 

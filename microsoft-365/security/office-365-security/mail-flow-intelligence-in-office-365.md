@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori di Office 365 (noto anche come Intelligence del flusso di posta).
-ms.openlocfilehash: d49937afb379b43821d905001e8aee21ca86eb52
-ms.sourcegitcommit: b91d75d2631166ddd158d26a0a476e26391a58ac
+ms.openlocfilehash: ee02be439cd3bd9405aea7a94410af794808f259
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "37886859"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971774"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Intelligence del flusso di posta in Office 365
 
@@ -60,7 +60,7 @@ In genere, questo errore indica che Office 365 ha riscontrato un errore di conne
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Come risolvere il codice di errore 450 4.4.316?
 
-- Se si dispone di cassette postali nell'ambiente locale, è necessario modificare le impostazioni del firewall per consentire le connessioni dagli indirizzi IP di Office 365 sulla porta TCP 25 ai server di posta elettronica locali. Per visualizzare un elenco degli indirizzi IP di Office 365, vedere [URL e intervalli di indirizzi IP per Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2.aspx).
+- Se si dispone di cassette postali nell'ambiente locale, è necessario modificare le impostazioni del firewall per consentire le connessioni dagli indirizzi IP di Office 365 sulla porta TCP 25 ai server di posta elettronica locali. Per visualizzare un elenco degli indirizzi IP di Office 365, vedere [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 - Se non devono essere recapitati più messaggi nell'ambiente locale, fare clic su **Correggi ora** nell'avviso affinché Office 365 possa rifiutare immediatamente i messaggi con destinatari non validi. Questo consente di ridurre il rischio di superare la quota dell'organizzazione per i destinatari non validi, che possono compromettere il recapito dei messaggi normali. In alternativa, è possibile utilizzare le istruzioni seguenti per risolvere manualmente il problema:
 
@@ -74,7 +74,7 @@ In genere, questo errore indica che Office 365 ha riscontrato un errore di conne
 
        - Disabilitare il connettore facendo clic su **modifica** ![icona](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) modifica e deselezionando **attiva**.
 
-  - Modificare il dominio accettato in Office 365 associato all'ambiente di posta elettronica locale dall' **inoltro interno** a **autorevole**. Per istruzioni, vedere [Manage Accepted Domains in Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=785428).
+  - Modificare il dominio accettato in Office 365 associato all'ambiente di posta elettronica locale dall' **inoltro interno** a **autorevole**. Per istruzioni, vedere [Manage Accepted Domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
   **Nota**: in genere, queste modifiche impiegano tra 30 minuti e un'ora per rendere effettive le operazioni. Dopo un'ora, verificare che l'errore non sia più stato ricevuto.
 

@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 040747a540c7f5e63d61eb149f9183ed2e5d2782
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: fa10c4168720565770ec0a3bc4bb06486155c3cc
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871762"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970332"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -99,7 +99,7 @@ Il valore predefinito è **2 giorni**, ma è possibile specificare intervalli di
 
 - **Errore**: il messaggio non è stato recapitato.
 
-- In **quarantena**: il messaggio è stato messo in quarantena (come posta indesiderata, massa o phishing). For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/4c234874-015e-4768-8495-98fcccfc639b.aspx).
+- In **quarantena**: il messaggio è stato messo in quarantena (come posta indesiderata, massa o phishing). For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 
 - **Filtrato come posta indesiderata**: il messaggio è stato identificato come posta indesiderata e rifiutato o bloccato (non in quarantena).
 

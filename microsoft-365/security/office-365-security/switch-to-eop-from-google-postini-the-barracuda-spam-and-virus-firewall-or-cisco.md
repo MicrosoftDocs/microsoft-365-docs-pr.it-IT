@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: Lo scopo di questo argomento è quello di aiutare l'utente a comprendere il processo per passare a Exchange Online Protection (EOP) da un'applicazione per l'igiene della posta elettronica locale o un servizio di protezione basato su cloud, nonché di fornire risorse per iniziare.
-ms.openlocfilehash: ebb06951513f742b5b1a1917513960ffa144d127
-ms.sourcegitcommit: cbf117a4cd92a907115c9f10752f3c557361e586
+ms.openlocfilehash: c9d8bc73ee6226bececed7d8a4fc66b0eccfa6e1
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441203"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971395"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Passaggio a Exchange Online Protection da Google Postini, Barracuda Spam e Virus Firewall o Cisco IronPort
 
@@ -25,7 +25,7 @@ Se si è nuovi di EOP e si desidera leggere una panoramica delle sue caratterist
 
 Prima di effettuare il passaggio a EOP, è importante considerare se ospitare le cassette postali protette da EOP nel cloud, con Exchange Online, in locale o in uno scenario ibrido. Ibrido significa che alcune cassette postali sono locali e altre sono ospitate su Exchange Online. Ciascuno di questi scenari di hosting: cloud, locale, ibrido è possibile. Tuttavia la procedura di impostazione può variare. Di seguito sono riportate alcune considerazioni che faciliteranno l'utente nella scelta della distribuzione appropriata:
 
-- **Protezione EOP con cassette postali locali**: questo scenario è appropriato se si dispone di un'infrastruttura di hosting della posta che si desidera utilizzare oppure se si dispone di requisiti aziendali per mantenere le cassette postali in locale e si desidera utilizzare EOP come posta elettronica basata sul cloud protezione. [Passare a EOP autonomo](#switch-to-eop-standalone) descrive lo scenario in maggiore dettaglio.
+- **Protezione EOP con cassette postali locali**: questo scenario è appropriato se si dispone di un'infrastruttura di hosting della posta che si desidera utilizzare oppure se si dispone di requisiti aziendali per mantenere le cassette postali in locale e si desidera utilizzare EOP come protezione della posta elettronica basata sul cloud. [Passare a EOP autonomo](#switch-to-eop-standalone) descrive lo scenario in maggiore dettaglio.
 
 - **Protezione EOP con cassette postali di Exchange Online**: questo scenario è appropriato se si desidera che la protezione di EOP e tutte le cassette postali siano ospitate nel cloud. Può facilitare la riduzione della complessità, poiché non è necessario mantenere i server di messaggistica in locale. [Passaggio a Exchange Online](#switch-to-exchange-online) descrive questo scenario.
 
@@ -37,7 +37,7 @@ Se attualmente le cassette postali sono ospitate in locale e si utilizza un'appl
 
 ## <a name="switch-to-exchange-online"></a>Passaggio a Exchange Online
 
-Se si dispone di cassette postali locali protette da un'applicazione locale è possibile passare alle cassette postali basate su cloud di Exchange Online e alla protezione EOP per sfruttare le funzionalità di protezione e messaggistica basata su cloud di Office 365. Per iniziare, accedere a Office 365 e aggiungere il proprio dominio. Questo scenario non richiede di impostare connettori, poiché non esistono routing alle cassette postali locali. Iniziare dalla [pagina di accesso di Office 365](https://www.microsoft.com/office365/online-software.aspx). [Introduzione a Office 365](https://go.microsoft.com/fwlink/p/?LinkId=275407) fornisce risorse per acquisire familiarità con le proprie caratteristiche.
+Se si dispone di cassette postali locali protette da un'applicazione locale è possibile passare alle cassette postali basate su cloud di Exchange Online e alla protezione EOP per sfruttare le funzionalità di protezione e messaggistica basata su cloud di Office 365. Per iniziare, accedere a Office 365 e aggiungere il proprio dominio. Questo scenario non richiede di impostare connettori, poiché non esistono routing alle cassette postali locali. Iniziare a [ottenere le ultime funzionalità avanzate con Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) per iscriversi e familiarizzare con le sue caratteristiche.
 
 Durante il processo di impostazione di Office 365 verranno creati utenti di cassette postali basate su cloud.
 
