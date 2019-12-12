@@ -14,19 +14,19 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Ottenere una panoramica delle pagine di avviso che è possibile visualizzare quando Office 365 Advanced Threat Protection è al lavoro.
-ms.openlocfilehash: 50f72c02596c317e3b5090b00382c6caef6ff746
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2c14947f9d9b988eb4f5086500da0d4455f50a43
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083911"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970952"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Pagine di avviso per collegamenti sicuri ATP di Office 365
 
 > [!IMPORTANT]
-> Questo articolo è destinato ai clienti aziendali che dispongono di [Office 365 Advanced Threat Protection](office-365-atp.md). Se si utilizza Outlook.com, Office 365 Home o Office 365 Personal e si cercano informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Questo articolo è rivolto ai clienti aziendali di [Office 365 Advanced Threat Protection](office-365-atp.md). Se si utilizza Outlook.com, Office 365 Home o Office 365 Personal e si cercano informazioni sui collegamenti sicuri di Outlook, vedere [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[Protezione avanzata dalle minacce di Office 365](office-365-atp.md) (ATP) consente di proteggere l'organizzazione da tentativi di phishing e malware tramite funzionalità, ad esempio [collegamenti sicuri di ATP](atp-safe-links.md), [allegati sicuri di ATP](atp-safe-attachments.md)e [protezione anti-phishing](anti-phishing-protection.md). Quando la protezione è sul posto, vengono controllati i collegamenti (URL) nei messaggi di posta elettronica e nei documenti di Office. Se un URL viene identificato come sospetto o dannoso, potrebbe essere impedito di aprire l'URL quando si fa clic su di esso. Invece di passare direttamente al sito, è possibile che venga visualizzata una pagina di avviso. 
+[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) consente di proteggere l'organizzazione da tentativi di phishing e malware tramite funzionalità, ad esempio [collegamenti sicuri di ATP](atp-safe-links.md), [allegati sicuri di ATP](atp-safe-attachments.md)e [protezione anti-phishing](anti-phishing-protection.md). Quando la protezione è sul posto, vengono controllati i collegamenti (URL) nei messaggi di posta elettronica e nei documenti di Office. Se un URL viene identificato come sospetto o dannoso, potrebbe essere impedito di aprire l'URL quando si fa clic su di esso. Invece di passare direttamente al sito, è possibile che venga visualizzata una pagina di avviso. 
   
 Leggere questo articolo per visualizzare esempi di pagine di avviso che potrebbero essere visualizzate, insieme agli aggiornamenti recenti delle pagine di avviso.
   

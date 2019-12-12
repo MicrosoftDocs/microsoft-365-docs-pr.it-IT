@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di impedire la posta indesiderata in Exchange Online e Office 365. Ottenere troppi messaggi di posta indesiderata in Office 365? È possibile personalizzare i filtri posta indesiderata e le impostazioni dei criteri di protezione da posta indesiderata
-ms.openlocfilehash: b18ec01419e73923b4c37d9666da97423b0cb81b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 16f58efbf326f1450689a8e13624be520f7a4902
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871972"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970902"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protezione dalla posta indesiderata in Office 365
 
@@ -32,9 +32,9 @@ Questo articolo è destinato agli amministratori di Office 365. Se non si è un 
 
  **Filtro connessioni**: quando si utilizza il filtro connessioni, Office 365 verifica la reputazione del mittente prima di consentire l'esecuzione di un messaggio. È possibile creare un elenco Consenti o un elenco di mittenti attendibili per essere certi di ricevere tutti i messaggi inviati da un indirizzo IP specifico o da un intervallo di indirizzi IP. È inoltre possibile creare un elenco di indirizzi IP da cui bloccare i messaggi, denominati elenco bloccati. Per ulteriori informazioni, vedere [Configurare i criteri di filtro delle connessioni](configure-the-connection-filter-policy.md). Se si è preoccupati per la posta indesiderata in Office 365, utilizzare il filtro connessioni per impedire la posta indesiderata.
 
-Per i clienti che dispongono di Office 365 Enterprise E5 o che hanno acquistato licenze di Advanced Threat Protection (ATP), il filtro delle connessioni viene utilizzato da spoofing Intelligence per creare gli elenchi Consenti e blocca dei mittenti che eseguono lo spoofing del dominio. Per ulteriori informazioni, vedere [Learn more about spoofing Intelligence](https://go.microsoft.com/fwlink/?LinkID=735009).
+Per i clienti che dispongono di Office 365 Enterprise E5 o che hanno acquistato licenze di Advanced Threat Protection (ATP), il filtro delle connessioni viene utilizzato da spoofing Intelligence per creare gli elenchi Consenti e blocca dei mittenti che eseguono lo spoofing del dominio. Per ulteriori informazioni, vedere [Learn more about spoofing Intelligence](learn-about-spoof-intelligence.md).
 
- **Filtro posta indesiderata**: Office 365 verifica la coerenza delle caratteristiche del messaggio con la posta indesiderata utilizzando il filtro posta È possibile modificare le azioni da intraprendere per i messaggi identificati come posta indesiderata e scegliere se filtrare i messaggi scritti in determinate lingue o inviati da paesi o aree geografiche specifiche. È inoltre possibile abilitare le opzioni avanzate per il filtro della posta indesiderata se si desidera perseguire un approccio aggressivo al filtro posta indesiderata. Inoltre, è possibile configurare le notifiche di posta indesiderata dell'utente finale per informare gli utenti quando i messaggi destinati ad essi sono stati inviati alla quarantena. (L'invio di messaggi alla quarantena è una delle azioni configurabili). Da queste notifiche, gli utenti finali possono rilasciare falsi positivi e segnalarli a Microsoft per l'analisi. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](https://go.microsoft.com/fwlink/p/?LinkId=617147). Per impedire la posta indesiderata in Office 365, utilizzare il filtro posta indesiderata, se si è preoccupati per la posta indesiderata in Office 365, utilizzare il filtro connessioni per impedire la posta indesiderata.
+ **Filtro posta indesiderata**: Office 365 verifica la coerenza delle caratteristiche del messaggio con la posta indesiderata utilizzando il filtro posta È possibile modificare le azioni da intraprendere per i messaggi identificati come posta indesiderata e scegliere se filtrare i messaggi scritti in determinate lingue o inviati da paesi o aree geografiche specifiche. È inoltre possibile abilitare le opzioni avanzate per il filtro della posta indesiderata se si desidera perseguire un approccio aggressivo al filtro posta indesiderata. Inoltre, è possibile configurare le notifiche di posta indesiderata dell'utente finale per informare gli utenti quando i messaggi destinati ad essi sono stati inviati alla quarantena. (L'invio di messaggi alla quarantena è una delle azioni configurabili). Da queste notifiche, gli utenti finali possono rilasciare falsi positivi e segnalarli a Microsoft per l'analisi. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md). Per impedire la posta indesiderata in Office 365, utilizzare il filtro posta indesiderata, se si è preoccupati per la posta indesiderata in Office 365, utilizzare il filtro connessioni per impedire la posta indesiderata.
 
 > [!NOTE]
 > Per i clienti autonomi di EOP: per impostazione predefinita, i filtri per la posta indesiderata di EOP inviano messaggi di posta indesiderata alla cartella posta indesiderata Tuttavia, per assicurarsi che il **messaggio di spostamento all'azione della cartella posta indesiderata** funzionerà con le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
@@ -45,7 +45,7 @@ Nel video seguente viene fornita una panoramica della configurazione del filtro 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
 
-Per ulteriori informazioni, vedere l'argomento [Configure Spam Filter Policies](https://go.microsoft.com/fwlink/p/?LinkId=617147) .
+Per ulteriori informazioni, vedi l'argomento [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
 
 ## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>Controllare i messaggi in uscita per impedire la posta indesiderata in Office 365
 
@@ -65,11 +65,11 @@ Per ulteriori informazioni, vedere l'argomento [Configure Spam Filter Policies](
 
 Se si è preoccupati per la posta indesiderata, il phishing e lo spoofing in Office 365, utilizzare SPF, DKIM e DMARC insieme per evitare la posta indesiderata e la falsificazione di spoofing.
 
- **Impostazioni gestite dall'utente finale**: se si cercano informazioni su come gli utenti finali possono gestire le proprie impostazioni di posta indesiderata, vedere [Panoramica del filtro della posta indesiderata](https://go.microsoft.com/fwlink/?LinkId=270065) (per gli utenti di Microsoft Outlook) oppure [acquisire messaggi di posta indesiderata e phishing](https://go.microsoft.com/fwlink/?LinkId=270068) (per gli utenti di Outlook sul Web). Se si utilizza EOP per proteggere le cassette postali locali, accertarsi di utilizzare la sincronizzazione della directory per verificare che tali impostazioni siano sincronizzate con il servizio. Per ulteriori informazioni su come configurare la sincronizzazione delle directory, vedere "Utilizzare la sincronizzazione delle directory per gestire gli utenti di posta elettronica" in [Gestione utenti di posta in EOP](manage-mail-users-in-eop.md).
+ **Impostazioni gestite dall'utente finale**: se si cercano informazioni su come gli utenti finali possono gestire le proprie impostazioni di posta indesiderata, vedere [Panoramica del filtro della posta indesiderata](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) (per gli utenti di Microsoft Outlook) oppure [acquisire messaggi di posta indesiderata e phishing](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31) (per gli utenti di Outlook sul Web). Se si utilizza EOP per proteggere le cassette postali locali, accertarsi di utilizzare la sincronizzazione della directory per verificare che tali impostazioni siano sincronizzate con il servizio. Per ulteriori informazioni su come configurare la sincronizzazione delle directory, vedere "Utilizzare la sincronizzazione delle directory per gestire gli utenti di posta elettronica" in [Gestione utenti di posta in EOP](manage-mail-users-in-eop.md).
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Blog: perché la posta indesiderata e il phishing passano da Office 365?](https://go.microsoft.com/fwlink/?LinkId=528179 )
+[Blog: perché la posta indesiderata e il phishing passano da Office 365?](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
 
 [Domande frequenti sulla protezione da posta indesiderata](anti-spam-protection-faq.md)
 
@@ -85,8 +85,8 @@ Se si è preoccupati per la posta indesiderata, il phishing e lo spoofing in Off
 
 ## <a name="more-resources"></a>Altre risorse
 
-[Ottenere assistenza dai forum della community di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+[Ottenere assistenza dai forum della community di Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Amministratori: Accedere e creare una richiesta di servizio](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[Amministratori: Accedere e creare una richiesta di servizio](https://portal.office.com/AdminPortal/Home?ref=support)
 
-[Amministratori: Contattare il supporto](https://go.microsoft.com/fwlink/p/?LinkID=518322)
+[Supporto di AContact for Business Products-guida per gli amministratori](https://docs.microsoft.com/Office365/Admin/contact-support-for-business-products)

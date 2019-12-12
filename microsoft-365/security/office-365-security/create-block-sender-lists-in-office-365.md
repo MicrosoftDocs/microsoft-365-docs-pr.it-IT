@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Blocca le opzioni dell'elenco dei mittenti includono i mittenti bloccati di Outlook, gli elenchi di mittenti/domini di protezione dalla posta indesiderata, gli elenchi di indirizzi IP bloccati e le regole di trasporto di Exchange (ETRs) denominate anche regole
-ms.openlocfilehash: 27e0a1881c50031f180192b6bc02f3d606e7b76c
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: f4fab732a92df2a2500212c9825d2b3e710b0a07
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793710"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39970892"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Creare elenchi di mittenti bloccati in Office 365
 
@@ -43,7 +43,7 @@ Quando si verifica un impatto solo su un numero limitato di utenti, è necessari
 > [!IMPORTANT]
 > Se i messaggi indesiderati sono newsletter provenienti da un'origine attendibile e riconoscibile, l'annullamento della sottoscrizione al messaggio di posta elettronica è un'altra opzione per impedire all'utente di ricevere i messaggi di posta elettronica in futuro.
 
-La procedura per la configurazione di questo tipo di configurazione è diversa tra [Outlook Web App](https://support.office.com/article/block-or-allow-junk-email-settings-48c9f6f7-2309-4f95-9a4d-de987e880e46) e il [client di Outlook](https://support.office.com/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Quando i messaggi vengono bloccati correttamente a causa di mittenti bloccati, verrà visualizzato SFV: BLK in X-Forefront-antispam-report** che indica che il messaggio è stato bloccato.
+La procedura per la configurazione di questo tipo di configurazione è diversa tra [Outlook sul Web](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46) e il [client di Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). **Quando i messaggi vengono bloccati correttamente a causa di mittenti bloccati, verrà visualizzato SFV: BLK in X-Forefront-antispam-report** che indica che il messaggio è stato bloccato.
 
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>Utilizzare i criteri di protezione dalla posta indesiderata e gli elenchi di blocco dei domini
 
