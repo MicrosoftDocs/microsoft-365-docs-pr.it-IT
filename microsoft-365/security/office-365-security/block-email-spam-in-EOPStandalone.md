@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento destinato agli amministratori della versione autonoma di Exchange Online Protection che contiene informazioni per evitare falsi negativi della posta indesiderata
-ms.openlocfilehash: cc0237ddc127c9818ae9cf4916187485e4d1dee7
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 1c82bd65906f79898677136e02fd619bbe4c5214
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871952"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971904"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizzare il filtro della posta indesiderata di Office 365 con queste impostazioni
 
@@ -31,7 +31,7 @@ Un amministratore può utilizzare diverse impostazioni del filtro protezione da 
 
 È possibile personalizzare il filtro protezione da posta indesiderata di Office 365 aggiungendo l'indirizzo IP del mittente all'elenco indirizzi IP bloccati del filtro connessioni:
 
-1. Ottenere le intestazioni del messaggio da bloccare nel client di posta come Outlook o Outlook sul web (noto in precedenza come Outlook Web App), come descritto in [Analizzatore intestazione messaggio](https://go.microsoft.com/fwlink/p/?LinkId=306583).
+1. Ottenere le intestazioni del messaggio da bloccare nel client di posta come Outlook o Outlook sul web (noto in precedenza come Outlook Web App), come descritto in [Visualizzare le intestazioni dei messaggi di posta elettronica in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
 2. Cercare l'indirizzo IP dopo il tag CIP nell'intestazione X-Forefront-Antispam-Report tramite l'[analizzatore intestazione messaggio](https://testconnectivity.microsoft.com/?tabid=mha) o manualmente.
 
@@ -49,7 +49,7 @@ La posta indesiderata è per lo più composta da posta inviata in blocco, come n
 
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>Gli utenti della posta elettronica possono contribuire anche a garantire il blocco dei messaggi indesiderati e dei falsi negativi usando il filtro della posta indesiderata di Office 365
 
-Può risultare utile per le iniziative di protezione dalla posta indesiderata di Office 365 volte a evitare falsi negativi e posta indesiderata, dire agli utenti di aggiungere l'indirizzo del mittente della posta indesiderata all'elenco dei mittenti bloccati in [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) o [Outlook sul web](https://go.microsoft.com/fwlink/p/?LinkId=294862). Per iniziare in Outlook sul web, fare clic su **Impostazioni** \> **Opzioni** \> **Blocca o consenti** e quindi aggiungere l'indirizzo all'elenco **Mittenti bloccati**, come illustrato di seguito.
+Può risultare utile per le iniziative di protezione dalla posta indesiderata di Office 365 volte a evitare falsi negativi e posta indesiderata, dire agli utenti di aggiungere l'indirizzo del mittente della posta indesiderata all'elenco dei mittenti bloccati in [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) o [Outlook sul web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d). Per iniziare in Outlook sul web, fare clic su **Impostazioni** \> **Opzioni** \> **Blocca o consenti** e quindi aggiungere l'indirizzo all'elenco **Mittenti bloccati**, come illustrato di seguito.
 
 ![Blocco di un mittente in Outlook sul web](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Questo articolo descrive come Office 365 riduce gli attacchi di phishing che usoano domini di mittenti contraffatti, vale a dire che sono oggetto di spoofing. Per ottenere questo risultato analizza i messaggi e blocca quelli che non possono essere autenticati né tramite metodi di autenticazione di posta elettronica standard né con altre tecniche di reputazione del mittente. Questa modifica è stata implementata per ridurre il numero di attacchi di phishing a cui sono esposte le organizzazioni in Office 365.
-ms.openlocfilehash: 182b422f5ebfac440777eeb975732fe7cd48822b
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 5685fc29f97c9aa41e472926c4e1f26bfcfd1432
+ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871982"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39971994"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 
@@ -105,7 +105,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**Motivo**|**Descrizione**|
-|0xx |Il messaggio non ha eseguito l’autenticazione composita.<br/>**000** indica che il messaggio ha avuto esito negativo per DMARC con un'azione di rifiuto o quarantena.   <br/>**001** indica che il messaggio non ha eseguito l’autenticazione implicita della posta elettronica. Questo significa che non ha pubblicato record di posta elettronica l'autenticazione del dominio mittente o in caso affermativo, sono stati prevedono criteri errore (errore contorni SPF o indipendente, criteri DMARC p = nessuna).  <br/>**002** indica che l'organizzazione dispone di un criterio per la coppia mittente/dominio esplicitamente vietato dall'invio di messaggi di posta elettronica contraffatti, questa impostazione è impostata manualmente da un amministratore.   <br/>**010** indica che il messaggio ha generato errore per DMARC con un'azione di rifiuto o quarantena, e che il dominio di invio è uno dei domini accettati dell'organizzazione (questo fa parte dello spoofing self-to-self o intra-org). <br/> |
+|0xx |Il messaggio non ha eseguito l’autenticazione composita.<br/>**000** indica che il messaggio ha avuto esito negativo per DMARC con un'azione di rifiuto o quarantena.   <br/>**001** indica che il messaggio non ha eseguito l’autenticazione implicita della posta elettronica. Questo significa che non ha pubblicato record di posta elettronica l'autenticazione del dominio mittente o in caso affermativo, sono stati prevedono criteri errore (errore contorni SPF o indipendente, criteri DMARC p = nessuna).  <br/>**002** indica che l'organizzazione dispone di un criterio per la coppia mittente/dominio esplicitamente vietato dall'invio di messaggi di posta elettronica contraffatti, questa impostazione è impostata manualmente da un amministratore.   <br/>**010** indica che il messaggio ha generato errore per DMARC con un'azione di rifiuto o quarantena, e che il dominio di invio è uno dei domini accettati dell'organizzazione (questo fa parte dello spoofing self-to-self o intra-org).|
 |1xx, 2xx, 3xx, 4xx e 5xx|Corrispondono a vari codici interni che indicano i motivi per cui un messaggio ha superato l'autenticazione implicita o non ha ricevuto l'autenticazione ma non è stata applicata alcuna azione.|
 |6xx|Indica che il messaggio non ha superato l'autenticazione implicita della posta elettronica e che il dominio di invio è uno dei domini accettati dell'organizzazione (questo fa parte dello spoofing self-to-self o intra-org).|
 
@@ -259,9 +259,9 @@ Un messaggio può essere contraffatto in diversi modi (vedere [Differenziazione 
 
 |**Tipo di spoofing**|**Categoria**|**Suggerimento sulla sicurezza presente?**|**Si applica a**|
 |:-----|:-----|:-----|:-----|
-|Errore DMARC (quarantena o rifiuto)  <br/> |HSPM (impostazione predefinita), può anche essere SPM o PHSH  <br/> |No (non ancora)  <br/> |Tutti i clienti di Office 365, Outlook.com  <br/> |
-|Self-to-self  <br/> |SPM  <br/> |Sì  <br/> |Tutte le organizzazioni di Office 365, Outlook.com  <br/> |
-|Fra domini  <br/> |SPOOFING  <br/> |Sì  <br/> |Clienti di Office 365 Advanced Threat Protection e E5   <br/> |
+|Errore DMARC (quarantena o rifiuto)|HSPM (impostazione predefinita), può anche essere SPM o PHSH|No (non ancora)|Tutti i clienti di Office 365, Outlook.com|
+|Self-to-self|SPM|Sì|Tutte le organizzazioni di Office 365, Outlook.com|
+|Fra domini|SPOOFING|Sì|Clienti di Office 365 Advanced Threat Protection e E5 |
 
 ### <a name="changing-your-anti-spoofing-settings"></a>Modifica delle impostazioni di protezione da spoofing
 
@@ -321,8 +321,8 @@ Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnfor
 ```powershell
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false
-
 ```
+
 > [!IMPORTANT]
 > Se il primo hop nel percorso di posta elettronica è Office 365 e si ricevono troppi messaggi di posta elettronica legittimi contrassegnati come spoofing, è consigliabile configurare i mittenti autorizzati a inviare messaggi di posta elettronica contraffatti al proprio dominio (vedere la sezione *"Gestione dei mittenti legittimi che inviano posta elettronica non autenticata"* ).  Se si ottengono ancora troppi falsi positivi (ovvero messaggi legittimi contrassegnati come spoofing), non è consigliabile disabilitare completamente la protezione anti-spoofing. Al contrario, è consigliabile scegliere una protezione di base invece di una protezione elevata. È preferibile utilizzare i falsi positivi piuttosto che esporre la propria organizzazione a messaggi di posta elettronica contraffatti che potrebbero imporre costi significativamente più alti a lungo termine.
 
@@ -332,15 +332,15 @@ Office 365 tiene conto di chi sta inviando messaggi di posta elettronica non aut
 
 Tuttavia, l’amministratore può specificare quali mittenti sono autorizzati a inviare messaggi di posta elettronica come spoof, ignorando la decisione di Office 365.
 
-**Metodo 1: se l'organizzazione è proprietaria del dominio, configurare l'autenticazione della posta elettronica**
+#### <a name="method-1---if-your-organization-owns-the-domain-set-up-email-authentication"></a>Metodo 1: se l'organizzazione è proprietaria del dominio, configurare l'autenticazione della posta elettronica
 
 Questo metodo può essere utilizzato per risolvere lo spoofing intra-org e lo spoofing fra domini nei casi in cui si è proprietari o si interagisce con più tenant.  Consente inoltre di risolvere lo spoofing fra domini in cui si invia ad altri clienti all'interno di Office 365 e anche a terze parti ospitate in altri provider.
 
 Per ulteriori informazioni, vedere [Clienti di Office 365](#customers-of-office-365).
 
-**Metodo 2: utilizzare l'Intelligence spoof per configurare i mittenti consentiti di posta elettronica non autenticata**
+#### <a name="method-2---use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>Metodo 2: utilizzare spoof intelligence per configurare i mittenti di posta elettronica non autenticata consentiti
 
-È inoltre possibile utilizzare l' [Intelligence spoof ](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) per consentire ai mittenti di trasmettere messaggi non autenticati alla propria organizzazione.
+È inoltre possibile utilizzare l' [Intelligence spoof ](learn-about-spoof-intelligence.md) per consentire ai mittenti di trasmettere messaggi non autenticati alla propria organizzazione.
 
 Per i domini esterni, l'utente falsificato è il dominio nell'indirizzo Da:, mentre l'infrastruttura di invio è l'indirizzo IP di invio (suddiviso in /24 intervalli CIDR) o il dominio dell'organizzazione del record PTR (nella schermata seguente, l'IP di invio potrebbe essere 131.107.18.4 il cui record PTR è outbound.mail.protection.outlook.com e quest’ultimo sarebbe visualizzato come outlook.com per l'infrastruttura di invio).
 
@@ -375,13 +375,13 @@ Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSende
 
 Questo consentirà a bing.com di inviare messaggi di posta elettronica non autenticati da \*.outlook.com.
 
-**Metodo 3: creare una voce Consenti per la coppia mittente/destinatario**
+#### <a name="method-3---create-an-allow-entry-for-the-senderrecipient-pair"></a>Metodo 3: creare una voce Consenti per la coppia mittente/destinatario
 
 È inoltre possibile scegliere di ignorare tutti i filtri di posta indesiderata per un mittente specifico. Per ulteriori informazioni, vedere [Come aggiungere il mittente a un elenco di indirizzi in Office 365 in modo sicuro](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/).
 
 Se si utilizza questo metodo, si ignorerà la posta indesiderata e parte del filtro per phishing, ma non il filtro per malware.
 
-**Metodo 4: contattare il mittente e chiedere di configurare l'autenticazione della posta elettronica**
+#### <a name="method-4---contact-the-sender-and-ask-them-to-set-up-email-authentication"></a>Metodo 4: contattare il mittente e chiedere di configurare l'autenticazione della posta elettronica
 
 A causa dei problemi generati dalla posta indesiderata e dal phishing, Microsoft consiglia a tutti i mittenti di configurare l'autenticazione della posta elettronica.  Se si conosce un amministratore del dominio di invio, contattarlo e richiedere di configurare i record di autenticazione della posta elettronica in modo che non sia necessario aggiungere eventuali sostituzioni.  Per ulteriori informazioni, vedere [Amministratori di domini che non sono clienti di Office 365](#administrators-of-domains-that-are-not-office-365-customers)"più avanti in questo articolo.
 
@@ -656,7 +656,7 @@ La tecnologia anti-spoofing di Microsoft è stata distribuita inizialmente alle 
 
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Come si fa a segnalare messaggi di posta indesiderata o non a Microsoft?
 
-È possibile utilizzare il componente aggiuntivo per i [messaggi di report per Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) oppure, se non è installato, [inviare messaggi di posta indesiderata e non insieme ai tentativi di phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+È possibile utilizzare il componente aggiuntivo per i [messaggi di report per Outlook](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) oppure, se non è installato, [inviare messaggi di posta indesiderata e non insieme ai tentativi di phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
 
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Sono un amministratore di dominio che non sa chi sono tutti i mittenti.
 
