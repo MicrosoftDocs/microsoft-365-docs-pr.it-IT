@@ -10,12 +10,13 @@ keywords: Microsoft, Microsoft 365, conformità, offerta
 localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
-ms.openlocfilehash: d93e7071c43bc1d9f5ded5d4c7dd7d1a5af1cd62
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 7aabeb51ef2a72452320b059ab51f72ca0d9f49f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859436"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804059"
 ---
 # <a name="microsoft-compliance-offerings"></a>Offerte per la conformità Microsoft
 
@@ -46,7 +47,7 @@ Microsoft offre una serie completa di offerte di conformità che consentono all'
                         <p><a href="offering-ISO-27701.md">ISO 27701</a></p>
                         <p><a href="offering-ISO-9001.md">ISO 9001</a></p>
                         <p><a href="offering-soc.md">SOC</a></p>
-                        <p><a href="offering-wcag-2-1.md">WCAG 2.1</a></p>
+                        <p><a href="offering-wcag-2-1.md">WCAG</a></p>
                     </div>
                 </div>
             </div>
@@ -130,6 +131,7 @@ Microsoft offre una serie completa di offerte di conformità che consentono all'
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (India)</a></p>
                         <p><a href="offering-sec-17a-4.md">SEC 17a-4</a></p>
+                        <p><a href="offering-sec-reg-sci.md">SEC Regulation SCI</a></p>
                         <p><a href="offering-shared-assessments.md">Valutazioni condivise</a></p>
                         <p><a href="offering-sox.md">SOX</a></p>
                         <p><a href="offering-tisax-germany.md">TISAX (Germania)</a></p>

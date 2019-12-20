@@ -1,7 +1,7 @@
 ---
 title: Numero di identificazione nazionale dell'Unione europea
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di identificazione nazionale dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: c00619ed649db53777fa3629deac0162a3589475
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083676"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805939"
 ---
 # <a name="eu-national-identification-number"></a>Numero di identificazione nazionale dell'Unione europea
 
@@ -1182,5 +1182,5 @@ Per informazioni dettagliate, vedere la sezione "Sweden National ID" per [indivi
   
 ## <a name="see-also"></a>Vedere anche
 
-[Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
+[Tipi di informazioni riservate disponibili da cercare](what-the-sensitive-information-types-look-for.md)
 

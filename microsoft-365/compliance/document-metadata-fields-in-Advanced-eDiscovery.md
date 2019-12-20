@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 51f242408e749e7d9bde60a9d462d4a9156f68fc
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 39ce4518e12b4446b339cbf7341a354bf5bd8876
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633585"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805969"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi dei metadati del documento in Advanced eDiscovery
 
@@ -35,15 +35,15 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 
 - Descrizione del campo meta data (nella **colonna Descrizione**).
 
-| Nome del campo | Nome del campo ricercabile | Nome del campo esportato | Nome del campo di visualizzazione | Descrizione |
-| :- |  :- |  :- |  :- |  :- |
+|Nome del campo|Nome del campo ricercabile|Nome del campo esportato|Nome del campo di visualizzazione|Descrizione|
+|:-|:-|:-|:-|:-|
 | ID contenuto allegato | AttachmentContentId |  | ID contenuto allegato | ID contenuto allegato dell'elemento. |
 | Nomi degli allegati | AttachmentNames | Attachment_Names | Nomi degli allegati | Elenco di nomi degli allegati. |
 | Punteggio Privilege del cliente del procuratore | AttorneyClientPrivilegeScore |  | Punteggio Privilege del cliente del procuratore | Punteggio di contenuto del modello di privilegio avvocato-client. |
 | Author | Author | Doc_authors | Author | Autore dei metadati del documento. |
 | Ccn | Ccn | Email_bcc | Ccn | Campo Ccn per i tipi di messaggio.  Format è **DisplayName \<SmtpAddress>**. |
 | CC | CC | Email_cc | CC | Campo CC per i tipi di messaggio.  Format è **DisplayName \<SmtpAddress>**. |
-| Etichette di conformità | ComplianceLabels | Compliance_labels | Etichette di conformità | Etichette di conformità applicate in Office 365. |
+| Etichette di conformità | ComplianceLabels | Compliance_labels | Etichette di conformità |[Etichette di conservazione](labels.md) applicate ai contenuti di Office 365. |
 | Percorso composto | CompoundPath | Compound_path | Percorso composto | Percorso leggibile che descrive l'origine dell'elemento. |
 | Contenuto | Contenuto |  |  | Testo estratto dell'elemento. |
 | Corpo di conversazione | Corpo di conversazione |  | Corpo di conversazione | Corpo di conversazione dell'elemento. |

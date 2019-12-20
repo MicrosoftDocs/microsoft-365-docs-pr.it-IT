@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 115b0499d481b29361c74db1dfa0481933616405
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: b6f24cb1afcefc9ddbe468530855603e7ee0f484
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859416"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804189"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -96,4 +97,4 @@ Il CCPA richiede attività regolamentate che raccolgono, trasferiscono e vendono
 - [Guida introduttiva a CCPA](https://info.microsoft.com/ww-landing-Five-tips-to-help-you-prepare-for-the-California-Consumer-Privacy-Act.html)
 - [Richieste del soggetto dei dati e GDPR](gdpr-data-subject-requests.md)
 - [Domande frequenti sul California Consumer Privacy Act (CCPA)](ccpa-faq.md)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

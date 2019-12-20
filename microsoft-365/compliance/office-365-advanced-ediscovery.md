@@ -3,6 +3,7 @@ title: Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Informazioni su come Office 365 Advanced eDiscovery può essere utile per analizzare i dati di Office 365, semplificare le revisioni dei documenti e prendere decisioni per eDiscovery efficienti.
-ms.openlocfilehash: 8af18c49511373dfa53fdb515f37dce37ef35150
-ms.sourcegitcommit: 31392b9599f4b4e9981a1278d6beb9f0a2839ecf
+ms.openlocfilehash: 4c72444765f75a77d3b62dbd2675b0c277d3d6ba
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "38686324"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803793"
 ---
 # <a name="office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery
 
@@ -30,7 +31,7 @@ Advanced eDiscovery semplifica e velocizza il processo di revisione del document
   
  **Perché Advanced eDiscovery?** Office 365 Advanced eDiscovery si basa sull'insieme esistente di funzionalità di eDiscovery in Office 365. Ad esempio, è possibile utilizzare la funzionalità di ricerca nel centro sicurezza &amp; e conformità di Office 365 per eseguire una ricerca iniziale di tutte le origini di contenuto dell'organizzazione per identificare e raccogliere i dati che possono essere rilevanti per uno specifico caso legale. Successivamente, è possibile eseguire un'analisi su tali dati applicando il testo analitico, l'apprendimento automatico e la funzionalità di codifica predittiva e di rilevanza di Advanced eDiscovery. In questo modo, l'organizzazione elaborerà rapidamente migliaia di messaggi di posta elettronica, documenti e altri tipi di dati per individuare gli elementi più probabili rilevanti per un caso specifico. Il set di dati ridotto può quindi essere esportato fuori da Office 365 per ulteriori riesami. 
   
-## <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Informazioni di base
 
 Il modo più rapido per iniziare a utilizzare Advanced eDiscovery consiste nel creare un caso e preparare i risultati della ricerca nel centro sicurezza & conformità, caricare i risultati in Advanced eDiscovery, quindi eseguire l'analisi Express per analizzare i dati dei casi e quindi esportare i risultati per la revisione esterna.
   

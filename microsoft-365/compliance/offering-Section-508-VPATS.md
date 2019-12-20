@@ -11,24 +11,25 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 044e92561c86829477339dbd6db2a5fde2da87bb
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6d7bcb6beccc9059d3a7f75fc52b307648f314c2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859466"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804229"
 ---
 # <a name="us-section-508"></a>Sezione 508 degli Stati Uniti
 
 ## <a name="about-us-section-508"></a>Informazioni sugli Stati Uniti sezione 508
 
-Il Congresso degli Stati Uniti ha modificato la legge sulla riabilitazione in 1998 e 2000 per richiedere alle agenzie federali di rendere i propri prodotti elettronici e informatici (IET), come software, hardware, contenuto elettronico e documentazione di supporto, accessibili a persone con disabilità. Sezione 508 della legge sulla riabilitazione della manodopera degli Stati Uniti del 1973 (29 US Code § 794d), come modificato, impone che le agenzie federali procurano, mantengano e utilizzino l'EIT in modo da garantire che i dipendenti federali con disabilità abbiano accesso e utilizzo comparabili, Data e EIT rispetto ad altri impiegati federali.  
-  
-Poiché si tratta di un importante provider di servizi software e cloud per i governi federali e statali degli Stati Uniti, Microsoft si impegna a rispettare tutti gli standard governativi rilevanti e i controlli di conformità. Aderendo a questi standard di [accessibilità di vasta portata](https://go.microsoft.com/fwlink/?linkid=2052068), Microsoft garantisce che tutti i clienti, sia all'interno che all'esterno del governo, possano utilizzare i prodotti e i servizi Microsoft.
+Il Congresso degli Stati Uniti ha modificato la legge sulla riabilitazione in 1998 e 2000 per richiedere alle agenzie federali di rendere i propri prodotti elettronici e informatici (IET), come software, hardware, contenuto elettronico e documentazione di supporto, accessibili a persone con disabilità. Sezione 508 della legge sulla riabilitazione della manodopera degli Stati Uniti del 1973 (29 US Code § 794d), come modificato, impone che le agenzie federali procurano, mantengano e utilizzino l'EIT in modo da garantire che i dipendenti federali con disabilità abbiano accesso e utilizzo comparabili, Data e EIT rispetto ad altri impiegati federali.
+
+Microsoft è un importante provider di servizi software e cloud per i governi federali e statali degli Stati Uniti.  Per aiutare i clienti governativi a prendere decisioni sugli appalti, Microsoft pubblica i rapporti di conformità per l'accessibilità che descrivono la misura in cui i prodotti e i servizi supportano i criteri della sezione 508.  Queste informazioni consentono ai clienti di Microsoft di determinare se un determinato prodotto o servizio soddisferà le proprie esigenze specifiche.
 
 ## <a name="microsoft-and-us-section-508"></a>Sezione Microsoft e Stati Uniti 508
 
-La conformità di Microsoft alla sezione 508 del regolamento degli Stati Uniti punta all'impegno a rendere accessibili la tecnologia e i dati per tutti i clienti. La sezione 508 degli Stati Uniti è il requisito di accessibilità specifico degli Stati Uniti, che integra EN 301 549 (Europa) e WCAG (International).
+La valutazione di Microsoft degli Stati Uniti sezione 508 nello sviluppo di prodotti e servizi punta al suo impegno a rendere accessibili la tecnologia e i dati per tutti i clienti.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
@@ -50,7 +51,7 @@ Sono disponibili [report di conformità](https://go.microsoft.com/fwlink/p/?link
 - [Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801): le risorse di Office 365 per persone con disabilità.
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): supporto dedicato per clienti aziendali con domande sull'accessibilità sui prodotti e servizi Microsoft o sulla conformità.
 - [Programma del tester attendibile del DHS](https://go.microsoft.com/fwlink/?linkid=2052171): ottenere informazioni sul programma del tester attendibile del Department of Homeland Security (DHS), in cui partecipa Microsoft.
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 

@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8ed1da925da40b439d449638887808aa9830d6e0
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 0fbe175d16a7b588e8c0cb3e7b5457459c314bdc
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859362"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804039"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 
@@ -102,7 +103,7 @@ Microsoft fornisce le offerte più complete rispetto ad altri provider di serviz
 - [Ordine esecutivo presidenziale per il potenziamento della CyberSecurity delle reti federali e delle infrastrutture critiche](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Condizioni dei Servizi online](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 

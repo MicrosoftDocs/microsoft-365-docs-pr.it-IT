@@ -3,6 +3,7 @@ title: Definire i problemi e assegnare gli utenti in Office 365 Advanced eDiscov
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Informazioni su come aggiungere o modificare un problema, incluso l'assegnazione degli utenti, o eliminare un problema relativo a un caso di eDiscovery in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: a7dad3cce54a3162cedf3c14e521f5e8fe966acf
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a56942eec8f43ba9fd6175807437e71701c29e39
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37071317"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806099"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Definire i problemi e assegnare gli utenti in Office 365 Advanced eDiscovery
 
@@ -51,7 +52,7 @@ In Advanced eDiscovery, è possibile definire uno o più problemi all'interno di
   
 7. In **utenti selezionati**, nell'elenco a discesa accanto al nome dell'utente selezionato, selezionare una delle seguenti modalità di campionamento: 
     
-  - **On**: i file possono essere visualizzati e contrassegnati. Questa impostazione è quella predefinita.
+  - **On**: i file possono essere visualizzati e contrassegnati. Questa è l'impostazione predefinita.
     
   - **Inattivo**: i file possono essere visualizzati; Tagged è facoltativo.
     

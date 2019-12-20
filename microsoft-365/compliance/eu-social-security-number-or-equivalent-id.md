@@ -1,7 +1,7 @@
 ---
 title: Codice di previdenza sociale dell'Unione europea o ID equivalente
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando rileva il numero di previdenza sociale dell'Unione europea o il tipo di informazioni riservate ID equivalente. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: b42a8d927e18f813eb6ef6d1d55b2de15ea9dcd5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0666818dc892070f5c2f0c34abd8ca33d1253e33
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083669"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805929"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>Codice di previdenza sociale dell'Unione europea o ID equivalente
 
@@ -608,7 +608,7 @@ Per informazioni dettagliate, vedere la sezione "Spagna Social previdenza social
     
   - L'ultima cifra del numero di serie indica il sesso per l'assegnazione di un numero dispari per il maschio e per un numero pari per la femmina
     
-  - Fino a 1990, l'assegnazione del numero di serie corrispondeva alla contea in cui è Nato il portatore del numero o (se è nato prima del 1947) dove viveva, secondo i registri delle tasse, il 1 ° gennaio 1947, con un codice speciale (solitamente 9 come settima cifra) per immigrati 
+  - Fino a 1990, l'assegnazione del numero di serie corrispondeva alla contea in cui è Nato il portatore del numero o (se è nato prima del 1947) dove viveva, secondo i registri delle tasse, il 1 ° gennaio 1947, con un codice speciale (solitamente 9 come settima cifra) per gli immigrati. 
     
 - Una cifra di controllo
     
@@ -673,5 +673,5 @@ identifikationsnumret #
   
 ## <a name="see-also"></a>Vedere anche
 
-[Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
+[Tipi di informazioni riservate disponibili da cercare](what-the-sensitive-information-types-look-for.md)
 

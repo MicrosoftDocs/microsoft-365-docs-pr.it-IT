@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 8d28327e4627351c27140e954c2fa26571d1689d
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: cdaf19b59960745e32e00b6833cea5edfd6258a5
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860046"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805409"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Criteri di sicurezza per i servizi di CJIS (Criminal Justice Information Services)
 
@@ -81,7 +82,7 @@ I [criteri di sicurezza di CJIS](https://aka.ms/cjis-security-policy) riguardano
 - [Criteri di sicurezza di CJIS](https://aka.ms/cjis-security-policy)
 - [Criteri di sicurezza di CJIS versione 5,3 Backgrounder](https://aka.ms/cjis-backgrounder)
 - [Linee guida per l'implementazione di CJIS per Azure Government](https://aka.ms/cjisimplementationguidelines)
-- [Quadro di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/?linkid=2087246)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 

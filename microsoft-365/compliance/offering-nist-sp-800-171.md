@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: e7b3dbad49fd57005dffd7e39e61906efdab771d
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a7967a4bd12f98f3654f2b5006568c868a7e134f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859346"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804019"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -50,7 +51,7 @@ Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca
 
 - [Attestazione del governo di Azure per la conformità con NIST SP 800 – 171](https://aka.ms/Azure-NIST-800-171)
 
-## <a name="how-to-implement"></a>Come implementare
+## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 - [Cianografia del NIST SP 800 – 171](https://aka.ms/NIST-800-171-Blueprint): ottenere supporto per l'implementazione di carichi di lavoro in Azure conformi al NIST SP 800 – 171.
 

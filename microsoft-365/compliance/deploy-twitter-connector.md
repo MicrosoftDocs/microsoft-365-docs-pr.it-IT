@@ -1,5 +1,5 @@
 ---
-title: Distribuire un connettore per archiviare i dati di Twitter in Office 365
+title: Distribuire un connettore per archiviare i dati di Twitter
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore nativo per importare e archiviare i dati di Twitter in Office 365. Dopo aver importato i dati in Office 365, è possibile utilizzare le funzionalità di conformità, ad esempio la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire la governance dei dati di Twitter dell'organizzazione.
-ms.openlocfilehash: fda03e3e489b0ae9c754f2eba18bc60785bb3def
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: 87faad6546d70b1e3893e2f5737af189ebb5f77b
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686500"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806149"
 ---
-# <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>Distribuire un connettore per archiviare i dati di Twitter in Office 365
+# <a name="deploy-a-connector-to-archive-twitter-data"></a>Distribuire un connettore per archiviare i dati di Twitter
 
 Questo articolo contiene il processo dettagliato per la distribuzione di un connettore che utilizza il servizio di importazione di Office 365 per importare i dati dall'account Twitter dell'organizzazione a Office 365. Per una panoramica generale di questo processo e un elenco dei prerequisiti necessari per distribuire un connettore Twitter, vedere [use a sample Connector to Archive Twitter data in Office 365 (Preview)](archive-twitter-data-with-sample-connector.md). 
 
@@ -206,7 +206,7 @@ L'app per sviluppatori di Twitter è ora pronta per essere utilizzata.
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security-and-compliance-center"></a>Passaggio 7: configurare un connettore personalizzato nel centro sicurezza e conformità
 
-1.  Andare a <https://protection.office.com> e quindi fare clic su data **governance \> Import \> Archive data di terze parti**.
+1.  Passare a <https://protection.office.com> e quindi fare clic su **dati di terze parti sull' \> importazione \> di governance delle informazioni**.
 
     ![Passare alla pagina di archiviazione dei dati di terze parti nel centro sicurezza e conformità](media/TCimage36.png)
 

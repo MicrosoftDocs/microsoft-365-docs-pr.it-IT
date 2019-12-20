@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni sulla configurazione della gestione degli accessi con privilegi in Office 365
-ms.openlocfilehash: 46bfeaf0c73c4598fcdaa65d654201620396600c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 5b7bf33f41bc722c557f2b515c5ab027bd401a2a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084435"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40803764"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configurazione della gestione degli accessi con privilegi in Office 365
 
@@ -35,7 +35,7 @@ Seguire questa procedura per configurare e usare l'accesso privilegiato nell'org
 
 - [Passaggio 1: creare un gruppo del responsabile approvazione](privileged-access-management-configuration.md#step1)
 
-    Prima di iniziare a utilizzare l'accesso ai privilegi, determinare chi deve disporre dell'autorizzazione di approvazione per le richieste in arrivo per l'accesso a attività con privilegi elevati. Qualsiasi utente che fa parte del gruppo responsabili approvazione è in grado di approvare le richieste di accesso. Questa impostazione viene abilitata creando un gruppo di sicurezza abilitato alla posta elettronica in Office 365.
+    Prima di iniziare a utilizzare l'accesso ai privilegi, determinare chi deve disporre dell'autorizzazione di approvazione per le richieste in arrivo per l'accesso a attività con privilegi elevati. Qualsiasi utente che fa parte del gruppo responsabili approvazione è in grado di approvare le richieste di accesso. Questo gruppo è abilitato mediante la creazione di un gruppo di sicurezza abilitato alla posta elettronica in Office 365.
 
 - [Passaggio 2: abilitare l'accesso con privilegi](privileged-access-management-configuration.md#step2)
 
@@ -52,7 +52,7 @@ Seguire questa procedura per configurare e usare l'accesso privilegiato nell'org
 Dopo aver concesso l'approvazione, l'utente richiedente può eseguire l'attività desiderata e l'accesso privilegiato autorizzerà ed eseguirà l'attività per conto dell'utente. L'approvazione rimane valida per la durata richiesta (la durata predefinita è di 4 ore), durante la quale il richiedente può eseguire l'attività desiderata più volte. Tutte queste esecuzioni vengono registrate e rese disponibili per il controllo di sicurezza e conformità. 
 
 > [!NOTE]
-> Se si desidera utilizzare Exchange Management PowerShell per abilitare e configurare l'accesso con privilegi, seguire la procedura descritta in [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to Connect to Exchange Online PowerShell with your Office 365 credenziali. Non è necessario abilitare l'autenticazione a più fattori per l'organizzazione di Office 365 per l'utilizzo dei passaggi per abilitare l'accesso privilegiato durante la connessione a PowerShell di Exchange Online. La connessione con l'autenticazione a più fattori consente di creare un token OAuth utilizzato dall'accesso privilegiato per la firma delle richieste.
+> Se si desidera utilizzare Exchange Management PowerShell per abilitare e configurare l'accesso con privilegi, seguire la procedura descritta in [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to Connect to Exchange Online PowerShell with your Office 365 Credentials. Non è necessario abilitare l'autenticazione a più fattori per l'organizzazione di Office 365 per l'utilizzo dei passaggi per abilitare l'accesso privilegiato durante la connessione a PowerShell di Exchange Online. La connessione con l'autenticazione a più fattori consente di creare un token OAuth utilizzato dall'accesso privilegiato per la firma delle richieste.
 
 <a name="step1"> </a>
 
@@ -78,9 +78,9 @@ Dopo aver concesso l'approvazione, l'utente richiedente può eseguire l'attivit�
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali per un account di amministratore nell'organizzazione.
 
-2. Nell'interfaccia di amministrazione, passare a **Impostazioni > sicurezza &** > **accesso privilegiato**alla privacy.
+2. Nell'interfaccia di amministrazione, passare a **Impostazioni > impostazioni > sicurezza & privacy** > **accesso privilegiato**.
 
-3. Abilitare le **autorizzazioni necessarie per il controllo di accesso privilegiato** .
+3. Abilitare il controllo **Richiedi approvazioni per le attività privilegiate** .
 
 4. Assegnare il gruppo del responsabile approvazione creato nel passaggio 1 come **gruppo dei responsabili approvazione predefiniti**.
 

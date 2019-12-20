@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 08ae4841f2523d5b5df576906bdf04e798d8e60f
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 915e70065e6efb05424c710bb3e8a98902857c6c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859516"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804249"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Securities and Exchange Commission (SEC) Rule 17a-4 (f) Stati Uniti
 
@@ -42,7 +43,7 @@ Per valutare Azure e Office 365 compliance with SEC Rule 17a-4 (f), Microsoft ha
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
@@ -54,7 +55,7 @@ Per valutare Azure e Office 365 compliance with SEC Rule 17a-4 (f), Microsoft ha
 
 [SEC 17a-4 (f) valutazione di conformità: Microsoft Security & Compliance Center with Exchange Online](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-## <a name="how-to-implement"></a>Come implementare
+## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 ### <a name="financial-services-regulation"></a>Regolamentazione dei servizi finanziari
 
@@ -70,7 +71,7 @@ Utilizzare le anteprime dei casi, le esercitazioni e altre risorse per creare so
 
 ## <a name="resources"></a>Risorse
 
-- Archiviazione in Microsoft Office 365, conservazione dei dati e regola 17a-4
+- [Archiviazione in Microsoft Office 365, conservazione dei dati e regola 17a-4](https://www.microsoft.com/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)
 - [Conformità servizi finanziari Microsoft](https://download.microsoft.com/download/6/4/7/64707E3E-6D3E-45D0-8207-A0EA3201B4A6/Microsoft%20Cloud%20-%20Financial%20Services%20Compliance%20Program%20\(Print\).pdf)
 - [Programma di conformità Microsoft Business Cloud Services e servizi finanziari](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Financial Services Compliance Program di Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)

@@ -3,6 +3,7 @@ title: Esportare i risultati in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: "Informazioni su come definire le opzioni per l'esportazione dei risultati da Office 365 Advanced eDiscovery, inclusa la procedura per specificare i parametri per un batch di esportazione. "
-ms.openlocfilehash: ad11ac742f3157811523164c7e4d063e1d101343
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6d535c24a3acfeb09f45ff26e0792f852bf7e016
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083634"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805869"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Esportare i risultati in Office 365 Advanced eDiscovery
 
@@ -112,7 +113,7 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
   
    - In **Impostazioni campo per la revisione**, in selezionare l'elenco a discesa dello **scenario** , selezionare lo scenario e l'ambito della revisione. Le impostazioni vengono visualizzate in base alla selezione.
     
-      - **Esaminare tutti i** (impostazione predefinita): tutti i messaggi di posta elettronica, gli allegati e i documenti sono selezionati per impostazione predefinita. 
+      - **Verifica tutto** (impostazione predefinita): tutti i messaggi di posta elettronica, gli allegati e i documenti sono selezionati per impostazione predefinita. 
     
       - **Esaminare tutti i contenuti univoci in un set**: inclusioni e copie univoche inclusive, allegati univoci nel livello di posta elettronica, rappresentativi da ogni serie di duplicati esatti.
     
@@ -120,7 +121,7 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
     
       - **Esaminare tutti i contenuti univoci e i relativi file di famiglia**: inclusivi, allegati univoci nel livello di posta elettronica, rappresentativi da ogni serie di duplicati esatti, Espandi fino a includere file di famiglia.
     
-      - **Personalizzato** (consente di definire le opzioni nella finestra di dialogo): l'impostazione predefinita è quella di mantenere le selezioni correnti e attivare tutte le opzioni di dialogo, per consentire la selezione. Se si seleziona questa opzione, è possibile personalizzare le impostazioni per i messaggi di posta elettronica, i documenti, gli allegati e varie.
+      - **Personalizzato** (consente di definire le opzioni nella finestra di dialogo): l'impostazione predefinita consiste nel mantenere le selezioni correnti e attivare tutte le opzioni di dialogo, per consentire la selezione. Se si seleziona questa opzione, è possibile personalizzare le impostazioni per i messaggi di posta elettronica, i documenti, gli allegati e varie.
     
     - In **messaggi di posta elettronica**selezionare i messaggi di posta elettronica che si desidera esportare.
     
@@ -187,7 +188,7 @@ Nella tabella seguente sono elencati i file di output generati quando si esegue 
 |Input o file nativi  <br/> |Cartella file  <br/> |Cartella che contiene i file nativi e di input dei file esportati.  <br/> |
 |Esporta elenco  <br/> |XLSX  <br/> |Metadati dei file esportati in formato xlsx. I campi nei file sono conformi all'utente modello selezionato per l'esportazione. Se necessario, vengono creati diversi file, ognuno contenente le righe di 100 150K. Se un determinato valore contiene più caratteri di una cella di Excel che può contenere (attualmente il limite è 32.767 caratteri), il valore verrà tagliato fino alla lunghezza massima consentita. Se viene tagliato un valore, il colore di sfondo della cella è rosso per indicare l'utente. " Partecipanti al messaggio di posta elettronica "è un esempio di un campo che può superare il limite di lunghezza, se il messaggio di posta elettronica è stato inviato a una distribuzione di grandi dimensioni. Per informazioni dettagliate sui campi di output, vedere [Export report Fields](export-report-fields-in-advanced-ediscovery.md) .  <br/> |
 |Carica file  <br/> |CSV  <br/> |Metadati dei file esportati in formato CSV per il caricamento in un'altra applicazione. I campi nei file sono conformi all'utente modello selezionato per l'esportazione.  <br/> |
-|Indicatore di esito positivo  <br/> |txt  <br/> |Creato solo quando viene esportato in un BLOB di Azure di terze parti. Se l'esportazione ha esito positivo, il file verrà creato. In caso di errore o di esito positivo parziale, il file non verrà creato. Il file verrà creato nella cartella radice, consentendo la verifica automatica su diversi Stati di batch/sessioni di esportazione. Si tratta di un file vuoto. Il suo nome è: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
+|Indicatore di esito positivo  <br/> |txt  <br/> |Creato solo quando viene esportato in un BLOB di Azure di terze parti. Se l'esportazione ha esito positivo, il file verrà creato. In caso di errore o di esito positivo parziale, il file non verrà creato. Il file verrà creato nella cartella radice, consentendo la verifica automatica su diversi Stati di batch/sessioni di esportazione. Si tratta di un file vuoto. Il nome è: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    
 ## <a name="see-also"></a>Vedere anche
 

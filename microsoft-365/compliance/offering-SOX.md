@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1bc568d6db13dd91d0e16e29633dccc58e28fc2a
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 35e1887d37f3ca5840d595c7927ff4d6064e08d9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859476"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804239"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>Sarbanes-Oxley Act del 2002 (SOX)
 
@@ -46,7 +47,7 @@ Per ulteriori informazioni su come utilizzare i report di conformità di Microso
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Servizio cloud Power BI, indipendente o incluso in un piano o in una famiglia di prodotti con marchio Office 365
+- Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
