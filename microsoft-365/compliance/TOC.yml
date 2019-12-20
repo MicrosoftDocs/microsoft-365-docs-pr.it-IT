@@ -203,7 +203,7 @@
           href: use-network-upload-to-import-rms-encrypted-pst-files.md
         - name: Domande frequenti sull'importazione di file PST
           href: faqimporting-pst-files-to-office-365.md
-        - name: Archiviare i dati di terze parti in Office 365
+        - name: Archiviazione dei dati di terze parti
           href: archiving-third-party-data.md
           items:
             - name: Usare un connettore di esempio per archiviare i dati di Facebook
@@ -317,8 +317,6 @@
           href: export-search-results.md
         - name: Esportare un report di Ricerca contenuto
           href: export-a-content-search-report.md
-        - name: Utilizzare lo strumento di esportazione di eDiscovery in Microsoft Edge
-          href: configure-edge-to-export-search-results.md
         - name: Cercare ed eliminare messaggi di posta elettronica
           href: search-for-and-delete-messages-in-your-organization.md
         - name: Eseguire ricerche nelle cassette postali basate sul cloud di utenti locali in Office 365
@@ -749,7 +747,6 @@
         - name: GDPR per le condivisioni dei file di Windows Server locale
           href: gdpr-for-on-premises-file-shares.md
 - name: Piani di azione per la conformità alle normative
-  href: compliance-solutions-overview.md
   items:
     - name: 'ISO: piano d''azione consigliato'
       href: iso-action-plan.md
@@ -855,7 +852,7 @@
           href: offering-iso-9001.md
         - name: SOC
           href: offering-soc.md
-        - name: WCAG 2.1
+        - name: WCAG
           href: offering-wcag-2-1.md
     - name: Governo degli Stati Uniti
       items:
@@ -935,6 +932,8 @@
               href: offering-rbi-irdai-india.md
             - name: SEC 17a-4
               href: offering-sec-17a-4.md
+            - name: SEC Regulation SCI
+              href: offering-sec-reg-sci.md
             - name: SOC
               href: offering-soc.md
             - name: SOX
