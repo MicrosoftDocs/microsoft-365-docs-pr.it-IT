@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Questa soluzione indica quali sono gli attacchi di Cybersecurity più comuni che possono essere presenti in Office 365 e come rispondervi
-ms.openlocfilehash: d908b32a5c3cb01476ab9b7604861eb94c7a2745
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: c55a5d561fec4219d29926036842836174b790da
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971594"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823828"
 ---
 # <a name="office-365-security-incident-response"></a>Intervento in caso di incidente di sicurezza di Office 365
 
@@ -51,11 +51,11 @@ Controllare di nuovo qui mensilmente, in quanto verranno aggiunti altri articoli
 
 ## <a name="incident-response-articles"></a>Articoli sugli incidenti di risposta
 
-- [Rispondere a un account di posta elettronica compromesso in Office 365](~/compliance/responding-to-a-compromised-email-account.md)
+- [Rispondere a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md)
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteggere Office 365 come un professionista della sicurezza informatica
 
-L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.  Utilizzare la [Roadmap di sicurezza di office 365-priorità principali per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate di Microsoft consigliati per la protezione del tenant di Office 365.
+L'abbonamento a Office 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.  Usare il [Roadmap di protezione di Office 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Office 365.
 
 - Attività da eseguire i primi 30 giorni.  Queste hanno effetto immediato e sono a basso impatto per gli utenti.
 

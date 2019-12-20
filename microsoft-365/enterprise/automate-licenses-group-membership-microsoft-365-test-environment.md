@@ -3,7 +3,7 @@ title: Automatizzare la gestione delle licenze e dell'appartenenza ai gruppi per
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/21/2019
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurare la gestione delle licenze basate su gruppo e l'appartenenza a gruppi dinamici nell'ambiente di testing Microsoft 365 Enterprise.
-ms.openlocfilehash: b1f3bc4a44e66d162360e82295c8f2877131cd07
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: facff7eb556299c0312fa7488a35a96151bb1882
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202477"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802121"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-enterprise-test-environment"></a>Automatizzare la gestione delle licenze e dell'appartenenza ai gruppi per l'ambiente di testing Microsoft 365 Enterprise
 
@@ -49,28 +49,26 @@ Se si desidera testare la licenza automatizzata e l'appartenenza a un gruppo in 
 
 Per prima cosa, è necessario creare un nuovo gruppo di vendita e aggiungere una regola di appartenenza a un gruppo dinamico in modo che gli account utente con il reparto impostato su Sales vengano automaticamente aggiunti al gruppo Sales.
 
-1. Se si utilizza un'istanza privata del browser Internet, accedere al portale di Office 365 [https://portal.office.com](https://portal.office.com) con l'account di amministratore globale dell'abbonamento al laboratorio di testing di Office 365 E5.
+1. Se si utilizza un'istanza privata del browser Internet, accedere al portale di Office 365 [https://portal.office.com](https://portal.office.com) con l'account di amministratore globale dell'abbonamento al laboratorio di testing di Microsoft 365 E5.
 2. In una scheda separata del browser, accedere al portale di Azure all'indirizzo [https://portal.azure.com](https://portal.azure.com).
-3. Nel portale di Azure fare clic su **Azure Active Directory > Utenti e gruppi > Tutti i gruppi**.
-4. Nel pannello **tutti i gruppi** fare clic su **nuovo gruppo**.
+3. Nel portale di Azure, digitare **gruppi** nella casella di ricerca e quindi fare clic su **gruppi**.
+4. nel riquadro **tutti i gruppi** fare clic su **nuovo gruppo**.
 5. In **tipo di gruppo**, selezionare **Office 365**.
 6. In **nome gruppo**digitare **Sales**.
-7. In **tipo di appartenenza**, selezionare **utente dinamico** .
-8. Fare clic su **Aggiungere query dinamica**.
-9. Selezionare **Reparto** in **Dove aggiungere utenti**
-10. Nel campo successivo, selezionare **Uguale a**.
-11. Nel campo successivo digitare **Sales**.
-12. Fare clic su **Aggiungi query** e quindi su **Crea**.
-13. Chiudere le lame **gruppo** e **gruppi-tutti i gruppi** .
+7. In **tipo di appartenenza**, selezionare **utente dinamico**.
+8. Fare clic su **membri utente dinamici**.
+9. Nel riquadro **delle regole di appartenenza dinamica** : 
+   - Selezionare la proprietà **Department** .
+   - Selezionare l'operatore **Equals** .
+   - Digitare **Sales** in **value**.
+10. Fare clic su **Salva**.
+11. Fare clic su **Crea**.
 
 Successivamente, è possibile configurare il gruppo vendite in modo che ai membri venga assegnata automaticamente la licenza Microsoft 365 E5.
 
-1. Nel pannello **Panoramica** di Azure Active Directory, fare clic su **licenze > tutti i prodotti**.
-2. Nell'elenco, selezionare **Micrsooft 365 E5**, quindi fare clic su **assegna**.
-3. Sul blade di **assegnazione della licenza** , fare clic su **utenti e gruppi**.
-4. Nell'elenco dei gruppi, selezionare il gruppo **vendite** .
-5. Fare clic su **Seleziona**, quindi su **Assegna**.
-6. Chiudere la scheda del portale di Azure nel browser.
+1. Fare clic sul gruppo **vendite** e quindi su **licenze**.
+2. Nel riquadro **Aggiorna assegnazioni licenze** selezionare **Microsoft 365 E5**e quindi fare clic su **Salva**.
+3. Chiudere la scheda del portale di Azure nel browser.
 
 Successivamente, è possibile testare l'appartenenza a gruppi dinamici e la gestione delle licenze automatiche nell'account User 4. 
 

@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Il filtro di protezione da posta indesiderata in uscita è sempre abilitato se si utilizza il servizio per l'invio di messaggi di posta elettronica in uscita, proteggendo così l'organizzazione utilizzando il servizio e i destinatari previsti.
-ms.openlocfilehash: 06c74b578d7c18ad2f193bcbd4a8f9cdb6794416
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 43939022dc365f5b28418d96ae1217e159312da1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970872"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808441"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurare i criteri della posta indesiderata in uscita
 
@@ -61,11 +61,11 @@ Utilizzare la procedura seguente per modificare il criterio della posta indeside
 
    All'amministratore del dominio, specificato con questa impostazione, verrà comunicato che i messaggi in uscita di tale utente sono bloccati.  Per vedere come è fatta la notifica, vedere [Notifica di esempio quando a un mittente viene impedito di inviare posta indesiderata in uscita.](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md).
 
-   [Nota] Viene inoltre generato un avviso di sistema che indica che l'utente è stato limitato.  Per ulteriori informazioni sull'avviso e sul ripristino dell'utente, vedere Rimozione di [un utente dal portale degli utenti con restrizioni dopo l'invio di posta indesiderata](removing-user-from-restricted-users-portal-after-spam.md).
+   > [Nota] Viene inoltre generato un avviso di sistema che indica che l'utente è stato limitato.  Per ulteriori informazioni sull'avviso e sul ripristino dell'utente, vedere Rimozione di [un utente dal portale degli utenti con restrizioni dopo l'invio di posta indesiderata](removing-user-from-restricted-users-portal-after-spam.md).
 
 4. Espandere la sezione **limiti dei destinatari** per specificare il numero massimo di destinatari che un utente può inviare all'ora per i destinatari interni ed esterni insieme al numero massimo giornaliero.
 
-    [Nota] Il numero massimo per qualsiasi input è 10.000.  Per ulteriori informazioni [, vedere ricezione e invio dei limiti all'interno di Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+    > [Nota] Il numero massimo per qualsiasi input è 10.000.  Per ulteriori informazioni [, vedere ricezione e invio dei limiti all'interno di Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 7. Specificare l' **azione** da eseguire quando un utente supera i limiti specificati.  Di seguito sono riportate le azioni possibili:
     * **Impedire all'utente di inviare messaggi di posta elettronica fino al giorno seguente**.  Dopo aver superato il limite di invio (interno, esterno o giornaliero) verrà generato un avviso per l'amministratore e l'utente non sarà in grado di inviare ulteriori messaggi di posta elettronica fino al giorno seguente, in base all'ora UTC. Non è possibile che l'amministratore esegua l'override di questo blocco.

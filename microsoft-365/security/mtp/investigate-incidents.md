@@ -17,19 +17,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 716feb3317989ebcc89593c89d05a6717b4ca0ee
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 869c97e32639f4553e49b99069c4bfd180e09f46
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911289"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808651"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>Analisi degli incidenti in Microsoft Threat Protection
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
 Microsoft Threat Protection aggrega tutti gli avvisi, le risorse, le indagini e le prove relativi a dispositivi, utenti e cassette postali per avere un quadro generale della portata dell'attacco. 

@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a identificare i motivi per cui e come è stato ottenuto un messaggio di phishing e cosa fare per evitare ulteriori messaggi di phishing in futuro.
-ms.openlocfilehash: bbcd57f649485cb753e3917a073ffec2b94cba24
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 03f4df5f552dab48283f18ec367ee6979afd9c89
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084808"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823848"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ottimizzare la protezione anti-phishing in Office 365
 
@@ -23,7 +23,7 @@ Anche se Office 365 viene fornito con una vasta gamma di funzionalità di anti-p
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>First Things First: Deal with any compromised accounts e assicuratevi di bloccare altri messaggi di phishing dall'ottenere
 
-Se l'account di un destinatario è stato compromesso a causa del messaggio di phishing, seguire la procedura descritta in [risposta a un account di posta elettronica compromesso in Office 365](../../compliance/responding-to-a-compromised-email-account.md).
+Se l'account di un destinatario è stato compromesso a causa del messaggio di phishing, seguire la procedura descritta in [risposta a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md).
 
 Se l'abbonamento include Advanced Threat Protection (ATP), è possibile utilizzare [Office 365 Threat Intelligence](office-365-ti.md) per identificare gli altri utenti che hanno ricevuto anche il messaggio di phishing. Sono disponibili altre opzioni per bloccare i messaggi di phishing:
 
@@ -71,7 +71,7 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
 
   - [Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md)
 
-  - [Utilizzo di DMARC per convalidare la posta elettronica in Office 365](use-dmarc-to-validate-email.md)
+  - [Utilizzare DMARC per convalidare la posta elettronica in Office 365](use-dmarc-to-validate-email.md)
 
 - Quando possibile, è consigliabile recapitare la posta elettronica per il dominio direttamente a Office 365. In altre parole, puntare il record MX del dominio di Office 365 a Office 365. Exchange Online Protection (EOP) è in grado di fornire la migliore protezione per gli utenti del cloud quando la posta viene recapitata direttamente a Office 365. Se è necessario utilizzare un sistema di posta elettronica di terze parti di fronte a EOP, assicurarsi di aver seguito le indicazioni [qui](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud).
 

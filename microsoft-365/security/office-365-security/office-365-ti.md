@@ -3,7 +3,7 @@ title: Office 365 Threat Investigation and response capabilities in Office 365 A
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 12/04/2019
+ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Scoprire in che modo le funzionalità di intelligence in Office 365 Advanced Threat Protection consentono di ricercare le minacce per la propria organizzazione, di rispondere a malware, phishing e altri attacchi che Office 365 ha rilevato per conto dell'utente e di cercare una minaccia indicatori.
-ms.openlocfilehash: 1e8a3cee67a3fdb56042bc83dac7b09367241bf3
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 45c12647b999e626cb620046aabc95fb4bfa8f4c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967999"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808121"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Analisi delle minacce e risposta alle minacce in Office 365
 
@@ -38,7 +38,7 @@ Superficie delle funzionalità di ricerca e risposta alle minacce &amp; nel cent
 - [Dashboard di minacce](#threat-dashboard)
 - [Explorer](#threat-explorer)
 - [Incidenti](#incidents)
-- [Simulatore di attacco](#attack-simulator)
+- [Simulatore di attacchi](#attack-simulator)
 - [Analisi e risposta alle minacce automatizzate](automated-investigation-response-office.md)
 
 ### <a name="threat-dashboard"></a>Dashboard di minacce
@@ -67,7 +67,7 @@ Per visualizzare l'elenco degli eventi imprevisti correnti per l'organizzazione,
   
 ![Nel centro sicurezza &amp; e conformità scegliere Threat Management \> Review](../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
-### <a name="attack-simulator"></a>Simulatore di attacco
+### <a name="attack-simulator"></a>Simulatore di attacchi
 
 Utilizzare simulatore di attacco per configurare ed eseguire attacchi cibernetici realistici nell'organizzazione e identificare le persone vulnerabili prima che un cyberattack reale influisca sulla propria azienda. Per ulteriori informazioni, vedere [Attack Simulator in Office 365](attack-simulator.md).
 
@@ -87,7 +87,7 @@ Le funzionalità di ricerca e risposta alle minacce di Office 365 sono incluse i
 
 ## <a name="required-roles-and-permissions"></a>Ruoli e autorizzazioni necessari
 
-Office 365 Advanced Threat Protection utilizza il controllo di accesso basato sui ruoli. Le autorizzazioni vengono assegnate tramite i ruoli in Azure Active Directory, nell'interfaccia di amministrazione di Microsoft 365 o nel centro protezione & conformità di Office 365.
+Office 365 Advanced Threat Protection utilizza il controllo di accesso basato sui ruoli. Le autorizzazioni vengono assegnate tramite alcuni ruoli in Azure Active Directory, nell'interfaccia di amministrazione di Microsoft 365 o nel centro protezione & conformità di Office 365.
 
 > [!TIP]
 > Anche se alcuni ruoli, ad esempio amministratore della sicurezza, possono essere assegnati nel centro conformità & sicurezza di Office 365, considerare l'utilizzo dell'interfaccia di amministrazione di Microsoft 365 o di Azure Active Directory. Per informazioni sui ruoli, sui gruppi di ruoli e sulle autorizzazioni, vedere le risorse seguenti:

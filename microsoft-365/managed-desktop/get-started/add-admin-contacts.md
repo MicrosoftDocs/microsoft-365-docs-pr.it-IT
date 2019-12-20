@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f592644b0aa2853839dd83025a112d0fd3c563df
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962613"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823838"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione
 
@@ -44,7 +44,7 @@ Altro | Per i problemi non coperti da altre aree
 
 **Chiunque sia scelto per questi contatti deve avere le conoscenze e l'autorità necessarie per prendere decisioni per l'ambiente desktop Microsoft gestito.** Quando si esegue l'onboarding dell'ambiente Microsoft Managed Desktop, viene richiesto di aggiungere contatti per il supporto tecnico e la sicurezza locali. 
 
-I contatti amministrativi sono necessari quando si [Invia una richiesta di supporto](../working-with-managed-desktop/support.md). È necessario disporre di un contatto di amministrazione per l'area dello stato attivo della richiesta di supporto. 
+I contatti amministrativi sono necessari quando si [Invia una richiesta di supporto](../service-description/support.md). È necessario disporre di un contatto di amministrazione per l'area dello stato attivo della richiesta di supporto. 
 
 **Per aggiungere contatti di amministratore**
 

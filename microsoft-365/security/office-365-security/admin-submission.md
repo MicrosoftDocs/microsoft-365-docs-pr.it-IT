@@ -1,5 +1,5 @@
 ---
-title: Invii di amministratore in Office 365, O365 invii, Office 365 spam problem, O365 false negative, Submit phishing in Office 365, inviare la posta elettronica per l'analisi, la posta elettronica sospetti in Office 365, analizzare una posta elettronica, avere Microsoft Scan per phishing, avere Microsoft Scan per la posta indesiderata, invio posta elettronica, inviare messaggi di posta elettronica, messaggi di posta elettronica dodgy, messaggi di cattiva attore, messaggi sospetti e non attendibili
+title: Invii di amministratore in Office 365, O365 invii, Office 365 spam problem, O365 false negative, Submit phishing in Office 365, inviare la posta elettronica per l'analisi, la posta elettronica sospetti in Office 365, analizzare una posta elettronica, avere Microsoft Scan per phishing, avere Microsoft Scan per la posta indesiderata, invio posta elettronica, inviare messaggi di posta elettronica, messaggi di posta elettronica dodgy, cattiva attore, posta elettronica sospetta, non attendibile, segnalare messaggi di phishing a Microsoft, segnalare messaggi di posta elettronica di phishing a Microsoft, segnalare e-mail dannose a Microsoft, segnalare la posta indesiderata a Microsoft, segnalare il malware nella posta elettronica a Microsoft, spam messaggi di posta elettronica in posta in arrivo Office 365, virus in e-mail Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come inviare messaggi di posta elettronica sospetti, sospette mail di phishing, spam e altre potenzialmente nocive, URL e file dal tenant di Office 365 a Microsoft per l'analisi.
-ms.openlocfilehash: 3d53c8270e84cd6f6298b9b39cc7e37262aed7b0
-ms.sourcegitcommit: 9c9044885eb9754ce69f2f08afdcc13c782ce2f9
+ms.openlocfilehash: 54cb42f8c02f2f41ad583d640a090509817911ee
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39915217"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808551"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Come inviare messaggi di posta indesiderata, phishing, URL e file sospetti a Microsoft per l'analisi di Office 365
 

@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: gli scenari di minacce e attacchi più comuni attualmente affrontati dalle organizzazioni per gli ambienti Microsoft 365 e le azioni consigliate per attenuare tali rischi.
-ms.openlocfilehash: 7a8e593a1e4280327b82802bb08a57370e4db652
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 3d2c7fc289930e3cc73deddcd43f25efc321a237
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030520"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801251"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 
@@ -25,7 +25,7 @@ Questo articolo è organizzato in base alla priorità del lavoro, a partire dall
 
 [![Immagine del pollice Microsoft 365 adesso Security consigliati foglio di calcolo](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
-Microsoft fornisce lo strumento di valutazione sicura all'interno del tenant per analizzare automaticamente la posizione di sicurezza in base alle attività normali, assegnare un punteggio e fornire suggerimenti per il miglioramento della sicurezza. Prima di prendere le azioni consigliate in questo articolo, prendere nota del punteggio corrente e suggerimenti. Le azioni consigliate in questo articolo aumenteranno il punteggio. L'obiettivo non è quello di ottenere il punteggio massimo, ma di essere a conoscenza delle opportunità di protezione dell'ambiente che non influiscono negativamente sulla produttività per gli utenti. Vedere [Microsoft Secure Score](mtp/microsoft-secure-score.md).
+Microsoft fornisce lo strumento di valutazione sicura all'interno del tenant per analizzare automaticamente la posizione di sicurezza in base alle attività normali, assegnare un punteggio e fornire suggerimenti per il miglioramento della sicurezza. Prima di prendere le azioni consigliate in questo articolo, prendere nota del punteggio corrente e suggerimenti. Le azioni consigliate in questo articolo aumenteranno il punteggio. L'obiettivo non è quello di ottenere il punteggio massimo, ma di essere a conoscenza delle opportunità di protezione dell'ambiente in modo da non influire negativamente sulla produttività per gli utenti. Vedere [Microsoft Secure Score](mtp/microsoft-secure-score.md).
 
 Un'altra cosa prima di iniziare. . . Assicurarsi di aver [attivato il registro di controllo di Office 365](../compliance/search-the-audit-log-in-security-and-compliance.md). Questi dati sono necessari in un secondo momento, nel caso in cui sia necessario indagare su un incidente o una violazione. 
 
@@ -46,14 +46,14 @@ Nel diagramma seguente vengono illustrate queste funzionalità.
 Suggerimenti aggiuntivi:
 - Verificare che gli account sincronizzati da locale non siano assegnati ai ruoli di amministratore per i servizi cloud. Ciò consente di evitare che un utente malintenzionato sfrutti gli account locali per ottenere l'accesso amministrativo ai servizi cloud. 
 - Assicurarsi che gli account di servizio non siano assegnati ai ruoli di amministratore. Tali account spesso non vengono monitorati e impostati con password che non scadono. Per iniziare, assicurarsi che gli account di servizio di AADConnect e ADFS non siano amministratori globali per impostazione predefinita.
-- Rimuovere le licenze dagli account di amministratore. A meno che non esista un caso specifico per l'assegnazione di licenze a account di amministratore specifici, rimuovere le licenze da tali account. 
+- Rimuovere le licenze dagli account di amministratore. A meno che non esista un caso di utilizzo specifico per assegnare le licenze a account di amministratore specifici, rimuovere le licenze da tali account. 
 
 ## <a name="reduce-the-surface-of-attack"></a>Ridurre la superficie di attacco
 
 L'area di interesse successiva è la riduzione della superficie di attacco. Questa operazione può essere eseguita con il minimo sforzo e l'impatto degli utenti e dei servizi. Riducendo la superficie di attacco, i pirati informatici hanno meno modi per sferrare un attacco all'organizzazione.
 
 Ecco alcuni esempi:
-- Disabilitare i protocolli POP3, IMAP e SMTP. La maggior parte delle organizzazioni moderne non utilizza più i protocolli meno recenti. È possibile disabilitarli in modo sicuro e consentire solo le eccezioni in base alle esigenze. 
+- Disabilitare i protocolli POP3, IMAP e SMTP. La maggior parte delle organizzazioni moderne non utilizza più i protocolli meno recenti. È possibile disabilitarli in modo sicuro e consentire le eccezioni solo in base alle esigenze. 
 - Ridurre e mantenere il numero di amministratori globali del tenant al minimo assoluto necessario. Questo riduce direttamente la superficie di attacco per tutte le applicazioni cloud. 
 - Ritirare i server e le applicazioni non più utilizzati nell'ambiente. 
 - Implementare un processo per disabilitare ed eliminare gli account non più utilizzati. 

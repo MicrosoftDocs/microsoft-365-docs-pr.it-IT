@@ -15,16 +15,16 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Utilizzare questo articolo come guida per configurare ora le funzionalità di protezione dalle minacce.
-ms.openlocfilehash: c88e94378672836abef5f300bffe09f578ed3880
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: b4e3aba1b03d9c5df9eae50813169a9b9d394f6f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872092"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808051"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protezione dalle minacce in Office 365
 
-Office 365 include una vasta gamma di funzionalità di protezione dalle minacce. Di seguito è illustrata una guida introduttiva che è possibile utilizzare come elenco di controllo per verificare che le funzionalità di protezione delle minacce siano configurate per l'organizzazione. Se si è nuovi per le funzionalità di protezione dalle minacce in Office 365 o si è sicuri di dove iniziare, utilizzare le linee guida seguenti come punto di partenza. 
+Office 365 include una vasta gamma di funzionalità di protezione dalle minacce. Di seguito è illustrata una guida introduttiva che è possibile utilizzare come elenco di controllo per verificare che le funzionalità di protezione delle minacce siano configurate per l'organizzazione. Se si è nuovi per le funzionalità di protezione dalle minacce in Office 365 o si è sicuri di dove iniziare, utilizzare le linee guida seguenti come punto di partenza.
 
 > [!IMPORTANT]
 > **Per ogni tipo di criterio sono incluse le impostazioni consigliate iniziali, tuttavia sono disponibili molte opzioni ed è possibile modificare le impostazioni in base alle esigenze specifiche dell'organizzazione**. Consenti circa 30 minuti affinché i criteri o le modifiche vengano elaborati tramite il Data Center.
@@ -47,7 +47,7 @@ Le funzionalità di protezione dalle minacce sono incluse in tutte le sottoscriz
 
 ### <a name="roles-and-permissions"></a>Ruoli e autorizzazioni
 
-È necessario essere assegnati a un ruolo appropriato per configurare i criteri nel [Centro sicurezza & conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). La tabella seguente include alcuni esempi: 
+È necessario essere assegnati a un ruolo appropriato per configurare i criteri nel [Centro sicurezza & conformità](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). La tabella seguente include alcuni esempi:
 
 |Ruolo o gruppo di ruoli|Altre informazioni|
 |---------|---------|
@@ -59,7 +59,7 @@ Per ulteriori informazioni, vedere [Permissions in the Office &amp; 365 Security
 
 ## <a name="part-1---anti-malware-protection"></a>Parte 1-protezione antimalware
 
-La [protezione antimalware](anti-malware-protection.md) è disponibile in abbonamenti che includono [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). 
+La [protezione antimalware](anti-malware-protection.md) è disponibile in abbonamenti che includono [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
 1. Nel [Centro sicurezza & conformità](https://protection.office.com)scegliere**antimalware**per**criteri** > di **gestione** > delle minacce.
 
@@ -81,7 +81,7 @@ La protezione del tempo di clic da URL e file dannosi è disponibile in abboname
 
 ### <a name="atp-safe-attachments-policies"></a>Criteri per gli allegati sicuri ATP
 
-Per configurare gli [allegati sicuri di ATP](atp-safe-attachments.md), è necessario definire almeno un criterio per gli allegati sicuri ATP. 
+Per configurare gli [allegati sicuri di ATP](atp-safe-attachments.md), è necessario definire almeno un criterio per gli allegati sicuri ATP.
 
 1. Nel [Centro sicurezza & conformità](https://protection.office.com), scegliere gli**allegati sicuri**per i**criteri** > di **gestione** > delle minacce ATP.
 
@@ -91,17 +91,17 @@ Per configurare gli [allegati sicuri di ATP](atp-safe-attachments.md), è necess
 
 4. Specificare le impostazioni seguenti:
 
-    - Nella casella **nome** Digitare `Block malware`.
+   - Nella casella **nome** Digitare `Block malware`.
 
-    - Nella sezione Response scegliere **Block**.
+   - Nella sezione Response scegliere **Block**.
 
-    - Nella sezione **allegato di reindirizzamento** selezionare l'opzione **Abilita reindirizzamento**e quindi specificare l'indirizzo di posta elettronica per l'amministratore o l'operatore di sicurezza dell'organizzazione che rivedrà i file rilevati.
+   - Nella sezione **allegato di reindirizzamento** selezionare l'opzione **Abilita reindirizzamento**e quindi specificare l'indirizzo di posta elettronica per l'amministratore o l'operatore di sicurezza dell'organizzazione che rivedrà i file rilevati.
 
-    - Nella sezione **applicato a** scegliere **il dominio del destinatario**. Selezionare quindi il dominio, scegliere **Aggiungi**e quindi fare clic su **OK**.
+   - Nella sezione **applicato a** scegliere **il dominio del destinatario**. Selezionare quindi il dominio, scegliere **Aggiungi**e quindi fare clic su **OK**.
 
 5. Fare clic su **Salva**.
 
-6. (**Passaggio aggiuntivo consigliato**) Come amministratore globale o amministratore di SharePoint Online, eseguire il cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** con il parametro **DisallowInfectedFileDownload** impostato su *true* per l'ambiente Office 365. In questo modo si impedisce l'apertura, lo spostamento, la copia o la condivisione di file che vengono rilevati come dannosi.  
+6. (**Passaggio aggiuntivo consigliato**) Come amministratore globale o amministratore di SharePoint Online, eseguire il cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** con il parametro **DisallowInfectedFileDownload** impostato su *true* per l'ambiente Office 365. In questo modo si impedisce l'apertura, lo spostamento, la copia o la condivisione di file che vengono rilevati come dannosi.
 
 Per ulteriori informazioni, vedere [configurare i criteri per gli allegati sicuri ATP di office 365](set-up-atp-safe-attachments-policies.md) e [abilitare Office 365 ATP per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md).
 
@@ -119,23 +119,23 @@ Per configurare i [collegamenti sicuri di ATP](atp-safe-links.md), esaminare e m
 
 5. Specificare le impostazioni seguenti:
 
-    - Nella casella **nome** Digitare un nome, ad esempio `Safe Links`.
+   - Nella casella **nome** Digitare un nome, ad esempio `Safe Links`.
 
-    - Nella sezione **selezionare l'azione** scegliere **attivato.**
+   - Nella sezione **selezionare l'azione** scegliere **attivato.**
 
-    - Selezionare le opzioni seguenti:
+   - Selezionare le opzioni seguenti:
 
-        - **Utilizzare gli allegati sicuri per analizzare il contenuto scaricabile** 
+     - **Utilizzare gli allegati sicuri per analizzare il contenuto scaricabile**
 
-        - **Applicazione di collegamenti sicuri ai messaggi di posta elettronica inviati all'interno dell'organizzazione**
+     - **Applicazione di collegamenti sicuri ai messaggi di posta elettronica inviati all'interno dell'organizzazione**
 
-        - **Non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale**
+     - **Non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale**
 
-    - Nella sezione **applicato a** scegliere **il dominio del destinatario**. Selezionare quindi il dominio, scegliere **Aggiungi**e quindi fare clic su **OK**.
+   - Nella sezione **applicato a** scegliere **il dominio del destinatario**. Selezionare quindi il dominio, scegliere **Aggiungi**e quindi fare clic su **OK**.
 
 6. Fare clic su **Salva**.
 
-Per altre informazioni, vedere [Configurare i criteri Collegamenti sicuri in Office 365 ATP](set-up-atp-safe-links-policies.md). 
+Per altre informazioni, vedere [Configurare i criteri Collegamenti sicuri in Office 365 ATP](set-up-atp-safe-links-policies.md).
 
 ## <a name="part-3---anti-phishing-protection"></a>Parte 3-protezione anti-phishing
 
@@ -147,23 +147,25 @@ La [protezione anti-phishing](anti-phishing-protection.md) è disponibile in abb
 
 3. Nella sezione **rappresentazione** fare clic su **modifica**e quindi specificare le impostazioni seguenti:
 
-    - Nella scheda **Aggiungi utenti da proteggere** , attiva la protezione. Aggiungere quindi gli utenti, ad esempio i membri del Consiglio dell'organizzazione, il CEO, il CFO e altri leader senior. (È possibile digitare un singolo indirizzo di posta elettronica o fare clic per visualizzare un elenco).
+   - Nella scheda **Aggiungi utenti da proteggere** , attiva la protezione. Aggiungere quindi gli utenti, ad esempio i membri del Consiglio dell'organizzazione, il CEO, il CFO e altri leader senior. (È possibile digitare un singolo indirizzo di posta elettronica o fare clic per visualizzare un elenco).
 
-    - Nella scheda **Aggiungi domini da proteggere** , attiva **automaticamente Includi i domini che possiedo**. Se si dispone di domini personalizzati, aggiungere anche quelli.
+   - Nella scheda **Aggiungi domini da proteggere** , attiva **automaticamente Includi i domini che possiedo**. Se si dispone di domini personalizzati, aggiungere anche quelli.
 
-    - Nella scheda **azioni** selezionare **Sposta messaggio nelle cartelle di posta indesiderata dei destinatari** per entrambi gli utenti rappresentati e per il dominio rappresentato e attiva suggerimenti per la sicurezza.
+   - Nella scheda **azioni** , selezionare **quarantena il messaggio** sia per l' **utente rappresentato** sia per le opzioni di **dominio rappresentate** . Inoltre, attiva suggerimenti per la sicurezza della rappresentazione.
 
-    - Nella scheda **Intelligence della cassetta postale** , verificare che l'intelligence della cassetta postale sia attivata.
+   - Nella scheda **Intelligence della cassetta postale** , verificare che l'intelligence della cassetta postale sia attivata. Inoltre, abilitare la protezione della rappresentazione basata sull'Intelligence delle cassette postali. Nel caso in cui il messaggio **di posta elettronica venga inviato da un elenco di utenti rappresentati** , scegliere **Quarantine**.
 
-    - Nella scheda **Verifica le impostazioni** , dopo aver esaminato le impostazioni, fare clic su **Salva**.
+   - Nella scheda **Aggiungi mittenti attendibili e domini** specificare gli eventuali mittenti o domini attendibili che si desidera aggiungere.
+
+   - Nella scheda **Verifica le impostazioni** , dopo aver esaminato le impostazioni, fare clic su **Salva**.
 
 4. Nella sezione **spoofing** fare clic su **modifica**e quindi specificare le impostazioni seguenti:
 
-    - Nella scheda **Impostazioni filtro spoofing** verificare che la protezione anti-spoofing sia attivata.
+   - Nella scheda **Impostazioni filtro spoofing** verificare che la protezione anti-spoofing sia attivata.
 
-    - Nella scheda **azioni** scegliere Sposta messaggio nelle cartelle di posta indesiderata dei destinatari.
+   - Nella scheda **azioni** scegliere **quarantena il messaggio**.
 
-    - Nella scheda **Verifica le impostazioni** , dopo aver esaminato le impostazioni, fare clic su **Salva**. Se non sono state apportate modifiche, fare clic su **Annulla**.
+   - Nella scheda **Verifica le impostazioni** , dopo aver esaminato le impostazioni, fare clic su **Salva**. Se non sono state apportate modifiche, fare clic su **Annulla**.
 
 5. Chiudere la pagina impostazioni di criteri predefinite.
 
@@ -179,9 +181,9 @@ La [protezione da posta indesiderata](anti-spam-protection.md) è disponibile in
 
 3. Espandere **criteri di filtro della posta indesiderata predefiniti**, fare clic su **modifica criteri**e quindi specificare le impostazioni seguenti:
 
-    - Nella sezione **azioni di posta indesiderata e di massa** impostare la soglia su un valore pari a 5 o 6.
+   - Nella sezione **azioni di posta indesiderata e di massa** impostare la soglia su un valore pari a 5 o 6.
 
-    - Nella sezione **Consenti elenchi** esaminare (e, se necessario, modificare) i propri mittenti e domini consentiti.
+   - Nella sezione **Consenti elenchi** esaminare (e, se necessario, modificare) i propri mittenti e domini consentiti.
 
 4. Fare clic su **Salva**.
 
@@ -209,7 +211,7 @@ La registrazione di controllo è disponibile in abbonamenti che includono [Excha
 
 Dopo aver configurato le funzionalità di protezione dalle minacce, verificare la modalità di funzionamento di tali caratteristiche, rivedere e rivedere i criteri in base alle esigenze e guardare le nuove funzionalità e gli aggiornamenti dei servizi.
 
-|Procedura|Risorse per approfondire|
+|Operazione|Risorse per approfondire|
 |---------|---------|
 |Vedere come funzionano le funzionalità di protezione dalle minacce per l'organizzazione visualizzando i report|[Dashboard di sicurezza](security-dashboard.md)<br/>[Rapporti di sicurezza della posta elettronica](../../compliance/view-email-security-reports.md)<br/>[Report per Office 365 ATP](view-reports-for-atp.md)<br/>[Esplora minacce](threat-explorer.md)|
 |Rivedere e rivedere periodicamente i criteri di protezione dalle minacce in base alle esigenze|[Secure Score](../mtp/microsoft-secure-score.md)<br/>[Smart report e informazioni dettagliate](reports-and-insights-in-security-and-compliance.md)<br/>[Funzionalità di analisi e risposta alle minacce di Office 365](keep-users-safe-with-office-365-ti.md)|
