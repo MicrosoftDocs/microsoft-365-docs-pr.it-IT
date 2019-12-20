@@ -3,6 +3,7 @@ title: Importare contenuto non Office 365 per l'analisi di eDiscovery avanzata
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Come eseguire la procedura per importare il contenuto che non viene archiviato in O365 in un BLOB di Azure in modo che possa essere analizzato con AeD
-ms.openlocfilehash: 1c971c9f95d03d05db76f80344adeb93b0a72c06
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: aa14a54c20ac580c6412e8dc534ec44520abb3c8
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083582"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823788"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importare contenuto non Office 365 per l'analisi di eDiscovery avanzata
 
@@ -39,7 +40,7 @@ Se si utilizza la funzionalità carica non Office 365 come descritto in questa p
     
 - Un caso di eDiscovery esistente
     
-- Tutti i file per il caricamento raccolti in cartelle in cui è presente una cartella per ogni custode e il nome delle cartelle è in questo formato *alias @ NomeDominio* . L' *alias @ DomainName* deve essere Users Office 365 alias and Domain. È possibile raccogliere tutte le cartelle *alias @ DomainName* in una cartella radice. La cartella radice può contenere solo le cartelle *alias @ DomainName* , non devono essere presenti file liberi nella cartella radice. 
+- Tutti i file per il caricamento raccolti in cartelle in cui è presente una cartella per ogni custode e il nome delle cartelle è in questo formato *alias@domainname* . I *alias@domainname* devono essere utenti di Office 365 alias e Domain. È possibile raccogliere tutte le cartelle di *alias@domainname* in una cartella radice. La cartella radice può contenere solo le cartelle *alias@domainname* , non devono essere presenti file liberi nella cartella radice. 
     
 - Un account che sia un Manager di eDiscovery o un amministratore di eDiscovery
     
@@ -47,7 +48,8 @@ Se si utilizza la funzionalità carica non Office 365 come descritto in questa p
     
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Caricare il contenuto non Office 365 in Advanced eDiscovery
 
-1. In qualità di Manager di eDiscovery o amministratore di eDiscovery, aprire **eDiscovery**e aprire il caso in cui verranno caricati i dati non di Office 365. Se è necessario creare un caso, vedere [gestire i casi di eDiscovery nel centro sicurezza &amp; e conformità di Office 365](manage-ediscovery-cases.md)
+
+1. In qualità di Manager di eDiscovery o amministratore di eDiscovery, aprire **eDiscovery**e aprire il caso in cui verranno caricati i dati non di Office 365. Se è necessario creare un caso, vedere [gestire i casi di eDiscovery nel centro sicurezza &amp; e conformità di Office 365](ediscovery-cases.md)
     
 2. Fare clic su **cambia in Advanced eDiscovery**
     
@@ -76,7 +78,7 @@ Se si utilizza la funzionalità carica non Office 365 come descritto in questa p
     Per ulteriori informazioni sulla sintassi di Azcopy, vedere [trasferire dati con la Azcopy in Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) . 
     
     > [!IMPORTANT]
-    > Deve essere presente una cartella radice per utente e il nome della cartella deve essere nel formato *alias @ NomeDominio* . 
+    > Deve essere presente una cartella radice per utente e il nome della cartella deve trovarsi nel formato *alias@domainname* . 
   
 8. Dopo aver completato il caricamento delle cartelle, tornare a Advanced eDiscovery. Il contenuto delle cartelle che è stato caricato è ora pronto per essere elaborato in Advanced eDiscovery. Selezionare il contenitore e fare clic sul pulsante elabora. Per ulteriori informazioni sull'elaborazione avanzata di eDiscovery, vedere, [eseguire il modulo di processo e caricare i dati in Office 365 Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
     
@@ -84,6 +86,4 @@ Se si utilizza la funzionalità carica non Office 365 come descritto in questa p
     > Dopo che il contenitore è stato elaborato correttamente in Advanced eDiscovery, non sarà più possibile aggiungere nuovo contenuto allo spazio di archiviazione SAS in Azure. Se si raccolgono contenuto aggiuntivo e si desidera aggiungerlo al caso per l'analisi avanzata di eDiscovery, è necessario creare un nuovo contenitore di **dati non Office 365** e ripetere questa procedura. 
   
     > [!NOTE]
-    > Se il contenitore non *elabora correttamente a causa di problemi di denominazione delle cartelle* e quindi si corregge i problemi, sarà comunque necessario creare un nuovo contenitore e riconnetterlo e caricarlo nuovamente utilizzando le procedure illustrate in questo articolo. 
-  
-
+    > Se il contenitore non *elabora correttamente a causa di problemi di denominazione delle cartelle* e quindi si corregge i problemi, sarà comunque necessario creare un nuovo contenitore e riconnetterlo e caricarlo nuovamente utilizzando le procedure illustrate in questo articolo.

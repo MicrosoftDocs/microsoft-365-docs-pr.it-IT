@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0b4c31408f14bfca45358086678cb2d4e4f7eaae
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4be943b83d1b2286a01731de87dd2b0af34cb322
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860086"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805479"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>Programma del valutatore registrato per la sicurezza delle informazioni del governo australiano (IRAP)
 
@@ -89,4 +90,4 @@ Iniziare con [cos'è IRAP?](https://www.cyber.gov.au/irap/what-irap) e seguirlo 
 - [Pagina Australia del Microsoft Service Trust Portal (STP)](https://aka.ms/au-irap)
 - [Guide per la sicurezza e i gateway Australia](https://docs.microsoft.com/azure/azure-australia)
 - [Servizi cloud certificati ASD](https://acsc.gov.au/infosec/irap/certified_clouds.htm)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

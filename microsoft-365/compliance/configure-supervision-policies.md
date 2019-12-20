@@ -1,5 +1,6 @@
 ---
-title: Configurare i criteri di supervisione per Office 365
+title: Configurare i criteri di supervisione
+description: Configurare la supervisione della comunicazione per Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,15 +16,15 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Configurare la supervisione della comunicazione per Office 365
-ms.openlocfilehash: 694f35fd42fb534292130695efa12bacc114713c
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+titleSuffix: Office 365 Compliance
+ms.openlocfilehash: 67e7d1a8fe1ca2f64031cab9bdee72ac22c70886
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38686523"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806629"
 ---
-# <a name="configure-supervision-policies-for-office-365"></a>Configurare i criteri di supervisione per Office 365
+# <a name="configure-supervision-policies-in-office-365"></a>Configurare i criteri di supervisione in Office 365
 
 > [!IMPORTANT]
 > Questo argomento si applica alla configurazione di criteri di supervisione in una sottoscrizione di Office 365. Se si desidera configurare la conformità delle comunicazioni per una sottoscrizione di Microsoft 365, vedere [Configure Communications compliance in microsoft 365 (Preview)](communication-compliance-configure.md).

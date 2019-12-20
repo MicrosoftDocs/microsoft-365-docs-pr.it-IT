@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 offre una serie di diversi strumenti di eDiscovery che è possibile utilizzare per la ricerca e la conservazione dei contenuti trovati in posizioni diverse, ad esempio le cassette postali di Exchange, i siti di SharePoint e OneDrive for business, i gruppi di Office 365 e le conversazioni di Skype for business.
-ms.openlocfilehash: b21ed978762819e73493d1ca409f922e695cf29d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33d3ca2e86a1ee4a2c191e72198d80c4c52c69e9
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083549"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823758"
 ---
 # <a name="ediscovery-in-office-365"></a>eDiscovery in Office 365
 
@@ -38,7 +38,7 @@ Nella tabella seguente sono riportati i collegamenti agli argomenti che consento
   
 |**Argomento**|**Descrizione**|
 |:-----|:-----|
-|[Eseguire una ricerca contenuto nel centro sicurezza & Compliance](run-a-content-search-in-the-security-and-compliance-center.md) <br/> |Informazioni su come utilizzare lo strumento di ricerca contenuto per cercare le cassette postali, le cartelle pubbliche, i gruppi di Office 365, Microsoft teams, i siti di SharePoint Online, un'unità per le posizioni aziendali e le conversazioni di Skype for business nell'organizzazione di Office 365 in una singola ricerca.  <br/> |
+|[Eseguire una Ricerca contenuto](content-search.md) <br/> |Informazioni su come utilizzare lo strumento di ricerca contenuto per cercare le cassette postali, le cartelle pubbliche, i gruppi di Office 365, Microsoft teams, i siti di SharePoint Online, un'unità per le posizioni aziendali e le conversazioni di Skype for business nell'organizzazione di Office 365 in una singola ricerca.  <br/> |
 |[Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md) <br/> |Informazioni sulle proprietà di posta elettronica e sui file e sulle condizioni di ricerca che è possibile utilizzare per cercare il contenuto nelle cassette postali e nei siti dell'organizzazione di Office 365.  <br/> |
 |[Visualizzare le statistiche delle parole chiave per i risultati della Ricerca contenuto](view-keyword-statistics-for-content-search.md) <br/> |Informazioni su come utilizzare le statistiche di ricerca per visualizzare e confrontare le statistiche per una o più ricerche di contenuto e per configurare ricerche nuove ed esistenti per restituire le statistiche per ogni parola chiave nella query di ricerca.  <br/> |
 |[Modificare in blocco le ricerche di contenuto nel centro sicurezza & conformità](bulk-edit-content-searches.md) <br/> |Informazioni su come modificare in blocco le query di ricerca e i percorsi di contenuto di una o più ricerche di contenuto.  <br/> |
@@ -64,7 +64,7 @@ Nella tabella seguente sono riportati i collegamenti agli argomenti che consento
   
 |**Argomento**|**Descrizione**|
 |:-----|:-----|
-|[Gestire i casi di eDiscovery nel centro sicurezza & Compliance](manage-ediscovery-cases.md) <br/> |Informazioni su come creare e gestire i casi di eDiscovery nel centro sicurezza & Compliance.  <br/> |
+|[Gestire i casi di eDiscovery nel centro sicurezza & Compliance](ediscovery-cases.md) <br/> |Informazioni su come creare e gestire i casi di eDiscovery nel centro sicurezza & Compliance.  <br/> |
 |[Assegnare le autorizzazioni di eDiscovery nel centro sicurezza & conformità di Office 365](assign-ediscovery-permissions.md) <br/> |Informazioni su come assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance. È possibile assegnare le autorizzazioni per consentire agli utenti di creare casi di eDiscovery, creare esenzioni associate a un caso di eDiscovery, eseguire ricerche di contenuto, visualizzare in anteprima i risultati della ricerca ed esportare i risultati della ricerca.  <br/> |
 |[Creare un report su esenzioni nei casi di eDiscovery in Office 365](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |Informazioni su come utilizzare lo script di Windows PowerShell in questo articolo per generare un report che contiene tutte le esenzioni associate ai casi di eDiscovery nel centro sicurezza & Compliance.  <br/> |
 |[Utilizzo di uno script per aggiungere gli utenti a un'esenzione in un caso di eDiscovery nel centro sicurezza & Compliance](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |Informazioni su come utilizzare lo script di Windows PowerShell in questo articolo per aggiungere rapidamente le cassette postali e i siti di OneDrive for business per un elenco di utenti a un nuovo blocco associato a un caso di eDiscovery nel centro sicurezza & Compliance.  <br/> |
@@ -74,4 +74,4 @@ Nella tabella seguente sono riportati i collegamenti agli argomenti che consento
 
 La soluzione avanzata di eDiscovery in Microsoft 365 si basa sulle funzionalità esistenti di eDiscovery e analisi di Office 365. Questa nuova soluzione, denominata *Advanced eDiscovery*, offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare il contenuto rispondente alle indagini interne ed esterne dell'organizzazione. Consente inoltre ai team legali di gestire l'intero flusso di lavoro di notifica per la conservazione legale per comunicare con i depositari coinvolti in un caso. 
 
-Per ulteriori informazioni, vedere [Overview of the Advanced eDiscovery Solution in Microsoft 365](overview-ediscovery-20.md).
+Per altre informazioni, vedere [Panoramica della soluzione Advanced eDiscovery in Microsoft 365.](overview-ediscovery-20.md)

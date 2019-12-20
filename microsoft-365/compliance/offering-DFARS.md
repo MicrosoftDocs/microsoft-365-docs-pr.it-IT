@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 267a506881e8eecdf2ded50e9858054c022dfae1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: f5627194ad21b73cae664c808d2bba9f4254d8b5
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859976"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805249"
 ---
 # <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>Supplemento per la normativa federale sull'acquisizione della difesa (DFARS)
 
@@ -78,4 +79,4 @@ Inoltre, le offerte di Microsoft al di fuori del limite certificato FedRAMP che 
 - [Microsoft Cloud per enti pubblici](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Condizioni dei Servizi online](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Informazioni non classificate controllate (cui)](https://www.archives.gov/cui/registry/category-list)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

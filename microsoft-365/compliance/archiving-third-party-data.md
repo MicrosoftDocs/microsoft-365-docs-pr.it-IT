@@ -1,5 +1,5 @@
 ---
-title: Archiviare i dati di terze parti in Office 365
+title: Archiviazione dei dati di terze parti
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Gli amministratori possono importare i dati di terze parti dalle piattaforme di social media, dalle piattaforme di messaggistica istantanea e dalle piattaforme di collaborazione documenti alle cassette postali nell'organizzazione di Office 365. In questo modo è possibile archiviare i dati da Facebook, Twitter e altre origini dati di terze parti in Office 365. È quindi possibile utilizzare e applicare le funzionalità di conformità di Office 365 (ad esempio, blocco legale, eDiscovery, archiviazione sul posto e criteri di conservazione) per i dati di terze parti.
-ms.openlocfilehash: 084cacf1c2bef8b5786e6dba804f9a1e87001338
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 10ec436887816080716ecd8870e2b2da8021e9af
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615586"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807465"
 ---
-# <a name="archive-third-party-data-in-office-365"></a>Archiviare i dati di terze parti in Office 365
+# <a name="archive-third-party-data"></a>Archiviazione dei dati di terze parti
 
 Office 365 consente agli amministratori di importare e archiviare i dati di terze parti dalle piattaforme per i social media, dalle piattaforme di messaggistica istantanea e dalle piattaforme di collaborazione documenti, alle cassette postali dell'organizzazione di Office 365. Tra gli esempi di origini dati di terze parti che è possibile importare in Office 365 sono inclusi i servizi seguenti: 
   

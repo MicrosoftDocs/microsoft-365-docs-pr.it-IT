@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Informazioni sulla posta elettronica e sulle proprietà dei file che è possibile cercare nelle cassette postali di Exchange Online e nei siti di SharePoint o OneDrive for business utilizzando lo strumento di ricerca contenuto nel centro sicurezza & Compliance.  '
-ms.openlocfilehash: c4135e52f88f72cde171cbc6c897359cd8e13e05
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 5c5aafebf0dabfd43487c0c410088fe2a50aef35
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699686"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808501"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Query con parole chiave e condizioni di ricerca per Ricerca contenuto
 
@@ -50,7 +50,7 @@ Nella tabella seguente sono elencate le proprietà dei messaggi di posta elettro
   
 |**Proprietà**|**Descrizione proprietà**|**Esempi**|**Risultati di ricerca restituiti dagli esempi**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|I nomi dei file allegati a un messaggio di posta elettronica.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*`|Messaggi che contengono un file allegato denominato annualreport.ppt. Nel secondo esempio, utilizzando il carattere jolly si ottengono dei messaggi contenenti la parola "annual" nel nome file di un allegato.|
+|AttachmentNames|I nomi dei file allegati a un messaggio di posta elettronica.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:. pptx|Messaggi che contengono un file allegato denominato annualreport.ppt. Nel secondo esempio, utilizzando il carattere jolly si ottengono dei messaggi contenenti la parola "annual" nel nome file di un allegato. Nel terzo esempio vengono restituiti tutti gli allegati con estensione di file PPTX.|
 |Ccn|Il campo Ccn di un messaggio di posta elettronica. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|Tutti gli esempi restituiscono messaggi contenenti Pilar Pinilla nel campo Bcc (Ccn).|
 |Categoria| Le categorie da cercare. Le categorie possono essere definite dagli utenti tramite Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). I valori possibili sono i seguenti:  <br/><br/>  blu  <br/>  verde  <br/>  arancione  <br/>  viola  <br/>  rosso  <br/>  giallo|`category:"Red Category"`|I messaggi ai quali è stata assegnata la categoria di colore rosso nelle cassette postali di origine. |
 |CC|Campo CC di un messaggio di posta elettronica. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|In entrambi gli esempi, i messaggi con Pilar Pinilla specificati nel campo CC.|
@@ -192,7 +192,7 @@ Creare una condizione utilizzando le proprietà comuni quando si cercano cassett
 |Mittente/autore|Per la posta elettronica, l'utente che ha inviato un messaggio. Per i documenti, l'utente menzionato nel campo dell'autore dei documenti di Office. È possibile digitare più nomi, separati da virgole. Due o più valori sono collegati logicamente dall'operatore **OR**.|
 |Dimensione (in byte)|Per la posta elettronica e i documenti, la dimensione dell'elemento (in byte).|
 |Subject/title|Per la posta elettronica, il testo nella riga dell'oggetto di un messaggio. Per i documenti, il titolo del documento. Come spiegato in precedenza, la proprietà title è costituita da metadati specificati nei documenti di Microsoft Office. È possibile digitare il nome di più di un oggetto/titolo, separati da virgole. Due o più valori sono collegati logicamente dall'operatore **OR**.|
-|Tag di conformità|Per la posta elettronica e i documenti, le etichette che sono state assegnate ai messaggi e ai documenti automaticamente dai criteri di etichetta o dalle etichette che sono state assegnate manualmente dagli utenti. Le etichette vengono utilizzate per classificare la posta elettronica e i documenti per la governance dei dati e applicare le regole di conservazione in base alla classificazione definita dall'etichetta. È possibile digitare parte del nome dell'etichetta e utilizzare un carattere jolly oppure digitare il nome dell'etichetta completo. Per ulteriori informazioni, vedere [Overview of labels in Office 365](labels.md).|
+|Etichetta di conformità|Per la posta elettronica e i documenti, le etichette di conservazione che sono state assegnate ai messaggi e ai documenti automaticamente dai criteri di etichetta o dalle etichette di conservazione che sono state assegnate manualmente dagli utenti. Le etichette di conservazione vengono utilizzate per classificare la posta elettronica e i documenti per la governance delle informazioni e applicare le regole di conservazione in base alle impostazioni definite dall'etichetta. È possibile digitare parte del nome dell'etichetta di conservazione e utilizzare un carattere jolly oppure digitare il nome dell'etichetta completo. Per ulteriori informazioni, vedere [Overview of retention labels](labels.md).|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>Condizioni per le proprietà della posta
@@ -313,7 +313,6 @@ In questo esempio vengono restituiti i documenti o gli elementi della posta elet
  `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype="aspx")`
   
 #### <a name="example-3"></a>Esempio 3
-<a name="conditionexamples"> </a>
 
 In questo esempio vengono restituiti i messaggi di posta elettronica o le riunioni del calendario inviate tra 12/1/2016 e 11/30/2016 e che contengono parole che iniziano con "Phone" o "smartphone".
   
