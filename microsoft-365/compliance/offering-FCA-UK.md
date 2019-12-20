@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: f009914f2a5178104968fe443bbac0655f5541b9
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 582f7175ae7eb851c1a58497369d069d7f295aa8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859886"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805059"
 ---
 # <a name="united-kingdom-financial-conduct-authority-fca"></a>Autorità di condotta finanziaria del Regno Unito (FCA)
 
@@ -44,7 +45,7 @@ Informazioni su come Azure è in grado di abilitare la conformità FCA nelle ban
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
-- Servizio cloud Power BI, indipendente o incluso in un piano o in una famiglia di prodotti con marchio Office 365
+- Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -62,7 +63,7 @@ Sì. Tuttavia, sebbene le risposte di Microsoft a questo Framework siano conferm
 - [Financial Services Compliance Program di Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Conformità dei servizi finanziari in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servizi finanziari e servizi cloud aziendali di Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 

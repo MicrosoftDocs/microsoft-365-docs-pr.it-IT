@@ -3,7 +3,7 @@ title: Utilizzare il caricamento di rete per importare i file PST crittografati 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: Informazioni su come utilizzare il caricamento di rete per importare i file PST crittografati con RMS nelle cassette postali degli utenti in Office 365.
-ms.openlocfilehash: c31658ead08fd1c72447f1182af28c32db421842
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 59aa489d6f4a3dd2545d5a2475f9e70e65529230
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686623"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802291"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>Utilizzare il caricamento di rete per importare i file PST crittografati con RMS su Office 365
 
 **Questo articolo è per gli amministratori. Si sta tentando di importare i file PST nella propria cassetta postale? Vedere [importare messaggi di posta elettronica, contatti e calendario da un file PST di Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
-Utilizzare l'opzione caricamento di rete e il servizio di importazione di Office 365 per importare i file PST nelle cassette postali degli utenti. Caricamento di rete significa che si caricano i file PST un'area di archiviazione temporanea nel cloud Microsoft. Successivamente, il servizio di importazione di Office 365 copia i file PST dall'area di archiviazione nelle cassette postali degli utenti di destinazione. Una nuova funzionalità del servizio di importazione consente di crittografare i file PST prima che vengano caricati e archiviati nel cloud Microsoft. Questi file verranno decrittografati durante l'importazione verso le cassette postali dell'utente. 
+Utilizzare l'opzione caricamento di rete e il servizio di importazione di Office 365 per importare i file PST nelle cassette postali degli utenti. Con il caricamento in rete, i file PST vengono caricati in un'area di archiviazione temporanea nel cloud Microsoft. Il servizio di importazione di Office 365 copia quindi i file PST dall'area di archiviazione alle cassette postali utente di destinazione. Una nuova funzionalità del servizio di importazione consente di crittografare i file PST prima che vengano caricati e archiviati nel cloud Microsoft. Questi file verranno decrittografati durante l'importazione verso le cassette postali dell'utente. 
   
 Di seguito sono riportati i passaggi necessari per crittografare e importare i file PST nelle cassette postali di Office 365:
   
@@ -53,34 +53,36 @@ Per ulteriori informazioni sull'importazione di dati in Office 365, vedere [Over
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- È necessario essere assegnati al ruolo di esportazione delle cassette postali in Exchange Online per importare i file PST nelle cassette postali di Office 365. Per impostazione predefinita, questo ruolo non è assegnato a nessun gruppo di ruoli in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. Per ulteriori informazioni, vedere la sezione "aggiungere un ruolo a un gruppo di ruoli" o "creare un gruppo di ruoli" in [Manage Role](https://go.microsoft.com/fwlink/p/?LinkId=730688)groups.
+- All'utente deve essere assegnato il ruolo di importazione/esportazione di cassette postali in Exchange Online per importare i file PST nelle cassette postali di Office 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione/importazione cassette postali al gruppo di ruoli Gestione organizzazione. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. Per altre informazioni, vedere le sezioni "Aggiungere un ruolo a un gruppo di ruoli" o "Creare un gruppo di ruoli" in [Gestire gruppi di ruoli](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
-    Per creare processi di importazione nel centro sicurezza & conformità, è inoltre necessario che sia vero uno dei seguenti valori:
+    Inoltre, per creare processi di importazione nel Centro sicurezza e conformità, una delle seguenti condizioni deve essere vera:
     
-  - È necessario essere assegnati al ruolo destinatari di posta elettronica in Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups.
+  - All'utente deve essere assegnato il ruolo Destinatari di posta in Exchange Online. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli Gestione organizzazione e Gestione destinatari.
     
     Oppure
     
-  - È necessario essere un amministratore globale dell'organizzazione di Office 365.
+  - L'utente deve essere un amministratore globale nell'organizzazione di Office 365.
     
   > [!TIP]
-  > Valutare la possibilità di creare un nuovo gruppo di ruoli in Exchange Online specificamente progettato per l'importazione di file PST in Office 365. Per il livello minimo di privilegi necessari per importare i file PST, assegnare i ruoli di importazione e esportazione delle cassette postali al nuovo gruppo di ruoli e quindi aggiungere membri. 
+  > Prendere in considerazione la creazione di un nuovo gruppo di ruoli in Exchange Online appositamente creato per l'importazione dei file PST in Office 365. Per il livello minimo di privilegi necessari per importare i file PST, assegnare i ruoli di importazione/esportazione di cassette postali e Destinatari di posta al nuovo gruppo di ruoli, quindi aggiungere i membri. 
+
+- I file PST di grandi dimensioni potrebbero influire sulle prestazioni del processo di importazione PST. Pertanto, è consigliabile che ogni file PST caricato nel percorso di archiviazione di Azure nel passaggio 2 non sia superiore a 20 GB.
   
-- È necessario archiviare i file PST che si desidera importare in Office 365 in un file server o in una cartella condivisa all'interno dell'organizzazione. Nel passaggio 5, è possibile eseguire Office 365 ImportTool, che consente di crittografare e caricare i file PST archiviati in questo file server o cartella condivisa in Office 365.
+- È necessario archiviare i file PST da importare in Office 365 in un file server o in una cartella condivisa dell'organizzazione. Nel passaggio 5, è possibile eseguire Office 365 ImportTool, che consente di crittografare e caricare i file PST archiviati in questo file server o cartella condivisa in Office 365.
     
-- Questa procedura prevede la copia e il salvataggio di una copia della chiave di crittografia, una chiave di archiviazione e di una serie di chiavi e URL di identificazione. Queste informazioni verranno utilizzate nel passaggio 5 per crittografare e caricare i file PST. Adottare le dovute precauzioni per proteggere questi file nello stesso in modo in cui vengono protette password o altre informazioni di sicurezza. Ad esempio, potrebbe essere necessario salvarli in un documento di Microsoft Word protetto da password oppure su un'unità USB crittografata. Vedere la sezione [Ulteriori informazioni](#more-information) per consultare un esempio di queste chiavi, ID e URL. 
+- Questa procedura prevede la copia e il salvataggio di una copia della chiave di crittografia, una chiave di archiviazione e di una serie di chiavi e URL di identificazione. Queste informazioni verranno utilizzate nel passaggio 5 per crittografare e caricare i file PST. Adottare le dovute precauzioni per proteggere tali file nello stesso in modo in cui vengono protette password o altre informazioni di sicurezza. Ad esempio, potrebbe essere necessario salvarle in un documento di Microsoft Word protetto da password oppure su un'unità USB crittografata. Vedere la sezione [Ulteriori informazioni](#more-information) per consultare un esempio di queste chiavi, ID e URL. 
     
-- È possibile importare i file PST in una cassetta postale inattiva in Office 365. A tale scopo, specificare il GUID della cassetta postale inattiva nel `Mailbox` parametro nel file di mapping di importazione PST. Per ulteriori informazioni, vedere [passaggio 7](#step-7-create-the-pst-import-mapping-file) . 
+- È possibile importare i file PST in una cassetta postale inattiva di Office 365. A questo scopo, specificare il GUID della cassetta postale inattiva nel parametro `Mailbox` del file di mapping di importazione PST. Per ulteriori informazioni, vedere [passaggio 7](#step-7-create-the-pst-import-mapping-file) . 
     
-- In una distribuzione ibrida di Exchange, è possibile importare i file PST in una cassetta postale di archiviazione basata sul cloud per un utente la cui cassetta postale principale è in locale. A tale scopo, eseguire le operazioni seguenti nel file di mapping di importazione PST:
+- In una distribuzione ibrida di Exchange è possibile importare i file PST in una cassetta postale di archiviazione basata sul cloud per un utente la cui cassetta postale principale si trova in locale. A questo scopo, procedere come segue nel file di mapping di importazione PST:
     
-  - Specificare l'indirizzo di posta elettronica per la cassetta postale locale dell'utente nel `Mailbox` parametro. 
+  - Specificare l'indirizzo di posta elettronica della cassetta postale locale dell'utente nel parametro `Mailbox`. 
     
-  - Specificare il valore **true** nel `IsArchive` parametro. 
+  - Specificare il valore **TRUE** nel parametro `IsArchive`. 
     
     Per ulteriori informazioni, vedere [passaggio 7](#step-7-create-the-pst-import-mapping-file) . 
     
-- Dopo aver importato i file PST in una cassetta postale di Office 365, l'impostazione di conservazione per la cassetta postale è attivata per una durata indefinita. Questo significa che i criteri di conservazione assegnati alla cassetta postale non verranno elaborati fino a quando non si disattiva il blocco di conservazione o si imposta una data per disattivare il blocco. Perché eseguire questa operazione? Se i messaggi importati in una cassetta postale sono obsoleti, potrebbero essere eliminati definitivamente (eliminati) perché il periodo di conservazione è scaduto in base alle impostazioni di conservazione configurate per la cassetta postale. Se si posiziona la cassetta postale su conservazione, il proprietario della cassetta postale consentirà di gestire i messaggi appena importati o di modificare le impostazioni di conservazione per la cassetta postale. Vedere la sezione [ulteriori informazioni](#more-information) per suggerimenti sulla gestione del blocco di conservazione. 
+- Dopo l'importazione dei file PST in una cassetta postale di Office 365, l'impostazione di blocco della conservazione per la cassetta postale viene attivata per una durata indefinita. Questo significa che i criteri di conservazione assegnati alla cassetta postale non vengono elaborati finché non si disattiva il blocco della conservazione o non si imposta una data per disattivare il blocco. Qual è il motivo di questa impostazione? Se i messaggi importati in una cassetta postale sono vecchi, potrebbero essere eliminati in modo definitivo perché il loro periodo di conservazione è scaduto in base alle impostazioni di conservazione configurate per la cassetta postale. Se la cassetta postale viene mantenuta in conservazione, il proprietario della cassetta postale consentirà di gestire questi nuovi messaggi importati o di modificare le impostazioni di conservazione per la cassetta postale. Vedere la sezione [ulteriori informazioni](#more-information) per suggerimenti sulla gestione del blocco di conservazione. 
     
 - Se non è necessario crittografare i file PST prima di caricarli in Office 365, vedere [usare il caricamento di rete per importare i file PST in office 365](use-network-upload-to-import-pst-files.md).
     
@@ -88,7 +90,7 @@ Per ulteriori informazioni sull'importazione di dati in Office 365, vedere [Over
   
 ## <a name="step-1-set-up-azure-rights-management-for-pst-import"></a>Passaggio 1: configurare Azure Rights Management per l'importazione PST 
 
-L'importazione PST utilizza la funzionalità di crittografia fornita dal servizio Azure Rights Management (Azure RMS) in Office 365. Questo consente di crittografare i file PST prima di caricarli in Office 365. 
+L'importazione PST utilizza la funzionalità di crittografia fornita dal servizio Azure Rights Management (Azure RMS) in Office 365. In questo modo è possibile crittografare i file PST prima di caricarli in Office 365. 
   
 La configurazione di Azure RMS per l'importazione PST è costituita da tre passaggi:
   
@@ -216,7 +218,7 @@ Il passaggio successivo consiste nell'ottenere l'ID tenant e l'URL della posizio
 
 ## <a name="step-4-download-the-pst-import-tools-and-copy-the-sas-url"></a>Passaggio 4: scaricare gli strumenti di importazione PST e copiare l'URL SAS
 
-Dopo aver configurato Azure RMS e aver ottenuto gli ID necessari per crittografare i file PST, il passaggio successivo consiste nel scaricare e installare gli strumenti che verranno eseguiti nel passaggio 5 per crittografare e caricare i file PST in Office 365. Questi strumenti sono lo strumento di AzCopy di Azure e lo strumento di crittografia dei dati di Office 365. È inoltre possibile copiare l'URL SAS per la propria organizzazione. Questo URL è una combinazione dell'URL di rete per la posizione di archiviazione di Azure nel cloud Microsoft per l'organizzazione e una chiave di firma di accesso condiviso (SAS). Questa chiave fornisce le autorizzazioni necessarie per caricare i file PST nel percorso di archiviazione di Azure. Salvarlo nello stesso file in cui sono state copiate le altre informazioni nel passaggio 2 e nel passaggio 3. Come indicato in precedenza, prendere precauzioni per proteggere l'URL SAS. 
+Dopo aver configurato Azure RMS e aver ottenuto gli ID necessari per crittografare i file PST, il passaggio successivo consiste nel scaricare e installare gli strumenti che verranno eseguiti nel passaggio 5 per crittografare e caricare i file PST in Office 365. Questi strumenti sono lo strumento di AzCopy di Azure e lo strumento di crittografia dei dati di Office 365. È inoltre possibile copiare l'URL SAS per la propria organizzazione. Questo URL è una combinazione dell'URL di rete del percorso di Archiviazione di Azure nel cloud Microsoft per l'organizzazione e di una chiave di firma di accesso condiviso. La chiave fornisce le autorizzazioni necessarie per caricare i file PST nel percorso di Archiviazione di Azure. Salvarlo nello stesso file in cui sono state copiate le altre informazioni nel passaggio 2 e nel passaggio 3. Come indicato in precedenza, prendere precauzioni per proteggere l'URL SAS. 
   
 > [!IMPORTANT]
 > È necessario utilizzare Azure AzCopy versione 5,0 per caricare correttamente i file PST nel percorso di archiviazione di Azure. Le versioni più recenti dello strumento AzCopy non sono supportate per l'importazione di file PST in Office 365. Assicurarsi di scaricare lo strumento AzCopy dalla pagina **Carica file sulla rete** attenendosi alle procedure descritte in questo passaggio. 
@@ -225,9 +227,9 @@ Dopo aver configurato Azure RMS e aver ottenuto gli ID necessari per crittografa
     
 2. Accedere a Office 365 utilizzando le credenziali di un account amministratore nell'organizzazione di Office 365.
     
-3. Nel riquadro sinistro fare clic su **governance dei dati** e quindi fare clic su **Importa**.
+3. Nel riquadro a sinistra, fare clic su **Information Governance** \> **Import** \> Import **PST files**.
     
-4. Nella pagina **Importa**, fare clic su **Vai al servizio di importazione**.
+4. Nella pagina **importazione file PST** fare clic su **Vai al servizio di importazione**.
     
 5. Nella pagina **Importa dati in Office 365** fare clic su **nuovo processo** ![Aggiungi icona](media/ITPro-EAC-AddIcon.gif)e quindi fare clic su **carica messaggi di posta elettronica (file PST)**.
     
@@ -252,7 +254,10 @@ Dopo aver configurato Azure RMS e aver ottenuto gli ID necessari per crittografa
  
 ## <a name="step-5-encrypt-and-upload-your-pst-files-to-office-365"></a>Passaggio 5: crittografare e caricare i file PST in Office 365
 
-Dopo aver completato il passaggio 1 al passaggio 4, è possibile utilizzare lo strumento O365ImportTool. exe per crittografare e caricare i file PST in Office 365. Questo strumento consente di crittografare i file PST e quindi di caricarli e archiviarli in una posizione di archiviazione di Azure nel cloud Microsoft. Per completare questo passaggio, è necessario che i file PST siano posizionati in una condivisione file o in un file server dell'organizzazione. In questa procedura, tale posizione viene definita anche come directory di origine. A ogni esecuzione dello strumento O365ImportTool.exe, è possibile specificare una directory di origine differente. 
+Dopo aver completato il passaggio 1 al passaggio 4, è possibile utilizzare lo strumento O365ImportTool. exe per crittografare e caricare i file PST in Office 365. Questo strumento consente di crittografare i file PST e quindi di caricarli e archiviarli in una posizione di archiviazione di Azure nel cloud Microsoft. Per completare questo passaggio, è necessario che i file PST si trovino in una condivisione file o in un file server nell'organizzazione. In questa procedura, tale posizione viene definita anche come directory di origine. A ogni esecuzione dello strumento O365ImportTool.exe, è possibile specificare una directory di origine differente. 
+
+> [!NOTE]
+> Come indicato in precedenza, ogni file PST da caricare nel percorso di archiviazione di Azure non deve essere superiore a 20 GB. I file PST di dimensioni superiori a 20 GB possono influire sulle prestazioni del processo di importazione PST avviato nel passaggio 8.
   
 1. Aprire un prompt dei comandi nel computer locale.
     
@@ -264,18 +269,18 @@ Dopo aver completato il passaggio 1 al passaggio 4, è possibile utilizzare lo s
     O365ImportTool.exe /srcdir:<Location of PST files> /protect-rmsserver:<RMS licensing location> /protect-tenantid:<BPOSId> /protect-key:<Symmetric key> /transfer:upload /upload-dest:<Network upload URL> /upload-destSAS:<SAS key>
     ```
 
-    Nella tabella seguente vengono descritti i parametri e i relativi valori. Tenere presente che le informazioni dei passaggi precedenti vengono utilizzate nei valori di questi parametri.
+    Nella tabella seguente vengono descritti i parametri e i relativi valori. Le informazioni ottenute nei passaggi precedenti vengono utilizzate nei valori di questi parametri.
     
     |**Parametro**|**Descrizione**|**Esempio**|
     |:-----|:-----|:-----|
-    | `/srcdir:` <br/> |Specifica la directory di origine nell'organizzazione che contiene i file PST che verranno caricati in Office 365.  <br/> | `/srcdir:\\FILESERVER01\PSTs` <br/> |
+    | `/srcdir:` <br/> |Specifica la directory di origine nell'organizzazione che contiene i file PST che verranno caricati su Office365.  <br/> | `/srcdir:\\FILESERVER01\PSTs` <br/> |
     | `/protect-rmsserver:` <br/> |Specifica il percorso di licenza per il servizio Azure RMS. Utilizzare il valore della `LicensingIntranetDistributionPointUrl` proprietà ottenuta nel passaggio 3. Tenere presente che il valore di questo parametro è racchiuso tra virgolette doppie ("").  <br/> | `/protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing"` <br/> |
     | `/protect-tenantid:` <br/> |Specifica l'identità dell'organizzazione di Azure RMS. Utilizzare il valore della `BPOSId` proprietà ottenuta nel passaggio 3.  <br/> | `/protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b` <br/> |
     | `/protect-key:` <br/> |Specifica la chiave simmetrica ottenuta nel passaggio 2. Racchiudere il valore di questo parametro tra virgolette doppie (" ").  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
     | `/transfer:` <br/> |Specifica se si desidera carica i file PST sulla rete o trasferirli su un disco rigido. Il valore `upload` indica che il caricamento dei file viene eseguito tramite la rete. Il valore `drive` indica che si sta spedendo il PST su un disco rigido.  <br/> | `/transfer:upload` <br/> |
-    | `/upload-dest:` <br/> |Specifica la destinazione in Office 365 in cui verrà caricato il file PST; si tratta del percorso di archiviazione di Azure per l'organizzazione. Il valore di questo parametro è costituito dall'URL di caricamento di rete dall'URL SAS copiato nel passaggio 4. Racchiudere il valore di questo parametro tra virgolette doppie (" ").  <br/><br/> **Suggerimento:** (facoltativo) è possibile specificare una sottocartella nel percorso di archiviazione di Azure per caricare i file PST crittografati. A tale scopo, aggiungere un percorso di sottocartella (dopo "ingestiondata") nell'URL di caricamento della rete. Nel primo esempio non viene specificata una sottocartella. Questo significa che il PST verrà caricato nella radice (denominata *ingestiondata* ) del percorso di archiviazione di Azure. Nel secondo esempio vengono caricati i file PST in una sottocartella (denominata *EncryptedPSTs* ) nel percorso di archiviazione di Azure.           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> Oppure  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
-    | `/upload-destSAS:` <br/> |Specifica la chiave SAS per l'organizzazione. Il valore di questo parametro è costituito dalla chiave SAS dall'URL SAS copiato nel passaggio 4. Si noti che il primo carattere della chiave SAS è un punto interrogativo ("?"). Racchiudere il valore di questo parametro tra virgolette doppie (" ").  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
-    | `/recurse` <br/> |Questa opzione opzionale consente di specificare la modalità ricorsiva in modo che lo strumento O365ImportTool. exe copierà i file PST che si trovano in sottocartelle nella directory di origine specificata dal `/srcdir:` parametro.  <br/><br/> **Nota:** Se si include questo parametro, i file PST nelle sottocartelle avranno un percorso di file diverso nel percorso di archiviazione di Azure dopo che sono stati caricati. È necessario specificare il percorso esatto nel file CSV creato al passaggio 7.           | `/recurse` <br/> |
+    | `/upload-dest:` <br/> |Specifica la destinazione in Office 365 in cui verrà caricato il file PST; si tratta del percorso di archiviazione di Azure per l'organizzazione. Il valore di questo parametro è costituito dall'URL di caricamento di rete dall'URL SAS copiato nel passaggio 4. Racchiudere il valore di questo parametro tra virgolette doppie (" ").  <br/><br/> **Suggerimento:** (facoltativo) è possibile specificare una sottocartella nel percorso di archiviazione di Azure per caricare i file PST crittografati. A tale scopo, aggiungere un percorso di sottocartella (dopo "ingestiondata") nell'URL di caricamento della rete. Nel primo esempio non viene specificata una sottocartella. Questo significa che il PST verrà caricato nella radice (denominata *ingestiondata*) del percorso di archiviazione di Azure. Nel secondo esempio vengono caricati i file PST in una sottocartella (denominata *EncryptedPSTs*) nel percorso di archiviazione di Azure.           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> Oppure  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
+    | `/upload-destSAS:` <br/> |Specifica la chiave SAS per l'organizzazione. Il valore di questo parametro è costituito dalla chiave SAS dall'URL SAS copiato nel passaggio 4. Il primo carattere della chiave SAS è un punto interrogativo ("?"). Racchiudere il valore di questo parametro tra virgolette doppie (" ").<br/><br/>**Nota:** Se si utilizza l'URL SAS in un file di script o batch, è necessario tenere presente che alcuni caratteri devono essere evasi. Ad esempio, è necessario `%` passare a `%%` e passare `&` a. `^&` | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `/recurse` <br/> |Questa opzione opzionale consente di specificare la modalità ricorsiva in modo che lo strumento O365ImportTool. exe copi i file PST che si trovano in sottocartelle nella directory di origine specificata dal `/srcdir:` parametro.  <br/><br/> **Nota:** se si include questa opzione, i file PST delle cartelle secondarie, una volta caricati, avranno un percorso dei file diverso nel percorso di Archiviazione di Azure. È necessario specificare il percorso esatto nel file CSV creato al passaggio 7.           | `/recurse` <br/> |
    
     Di seguito è riportato un esempio di sintassi dello strumento O365ImportTool.exe nella quale verranno utilizzati i valori effettivi di ogni parametro:
     
@@ -292,30 +297,30 @@ Dopo aver completato il passaggio 1 al passaggio 4, è possibile utilizzare lo s
 
 Come passaggio facoltativo, è possibile installare e utilizzare Microsoft Azure Storage Explorer (che è uno strumento gratuito open source) per visualizzare l'elenco dei file PST caricati nel BLOB di Azure. Per eseguire questa operazione, sono disponibili tre validi motivi:
   
-- Verificare che i file PST dalla cartella condivisa o dal server di file dell'organizzazione siano stati correttamente caricati nel BLOB di Azure.
+- Verificare che i file PST siano stati caricati in modo corretto dalla cartella condivisa o dal file server dell'organizzazione nel BLOB di Azure.
 
 - Verificare che i file PST siano crittografati. I file PST crittografati `.pfile` hanno un'estensione aggiunta al nome file PST; ad esempio, `pilarp.pst.pfile`.
     
-- Verificare il nome del file (e il percorso della sottocartella se ne è stato incluso uno) per ognuno di essi. Ciò è particolarmente utile quando si crea il file di mapping PST nel passaggio successivo poiché è necessario specificare sia il nome del file sia il percorso della cartella per ogni file PST. La verifica di questi nomi consente di ridurre i potenziali errori nel file di mapping PST.
+- Verificare il nome file (e il percorso della sottocartella, se incluso) per ogni file PST caricato nel BLOB di Azure. Questo è utile per creare il file di mapping PST nel passaggio successivo, perché per ogni file PST è necessario specificare il percorso della cartella e il nome del file. Verificando questi nomi è possibile ridurre il rischio di errori nel file di mapping PST.
     
-Microsoft Azure Storage Explorer è in anteprima. 
+Lo strumento Microsoft Azure Storage Explorer è in anteprima. 
   
  > [!IMPORTANT]
->  Non è possibile utilizzare l'esploratore di archiviazione di Azure per caricare o modificare i file PST. L'unico metodo supportato per l'importazione di file PST in Office 365 è l'utilizzo di AzCopy. Inoltre, non è possibile eliminare i file PST caricati nel BLOB di Azure. Se si tenta di eliminare un file PST, si riceve un errore relativo all'assenza delle autorizzazioni necessarie. Tenere presente che tutti i file PST vengono eliminati automaticamente dall'area di archiviazione di Azure. If there are no import jobs in progress, then all PST files in the **ingestiondata** container are deleted 30 days after the most recent import job was created. 
+>  Non è possibile usare Azure Storage Explorer per caricare o modificare i file PST. L'unico metodo di importazione dei file PST in Office 365 supportato prevede l'uso di AzCopy. Inoltre, non si possono eliminare i file PST caricati nel BLOB di Azure. Se si tenta di eliminare un file PST, si riceve un errore relativo all'assenza delle autorizzazioni necessarie. Tutti i file PST vengono eliminati automaticamente dall'area di archiviazione di Azure. Se non ci sono processi di importazione in corso, tutti i file PST nel contenitore **ingestiondata** vengono eliminati 30 giorni dopo la creazione del processo di importazione più recente. 
   
-Per installare Azure Storage Explorer e connettersi all'area di archiviazione di Azure:
+Per installare Azure Storage Explorer e connettersi all'area di Archiviazione di Azure:
   
 1. Scaricare e installare lo [strumento Microsoft Azure Storage Explorer](https://go.microsoft.com/fwlink/p/?LinkId=544842).
     
-2. Avviare Microsoft Azure Storage Explorer, fare clic con il pulsante destro del mouse su **account di archiviazione** nel riquadro sinistro, quindi fare clic su **Connetti a spazio di archiviazione di Azure**. 
+2. Avviare Microsoft Azure Storage Explorer, fare clic con il pulsante destro del mouse su **Account di archiviazione** nel riquadro sinistro e quindi scegliere **Connetti ad Archiviazione di Azure**. 
     
-    ![Fare clic con il pulsante destro del mouse su account di archiviazione e quindi scegliere Connetti a archiviazione](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+    ![Fare clic con il pulsante destro del mouse su Account di archiviazione e quindi scegliere Connetti ad Archiviazione di Azure](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
 3. Nella casella in **connessione a spazio di archiviazione di Azure**, incollare l'URL SAS ottenuto nel passaggio 4, quindi fare clic su **Avanti**. 
     
     ![Incollare l'URL SAS nella casella della pagina di archiviazione per la connessione ad Azure](media/5d034128-e087-48e1-9ebc-4c9fa262d5b7.png)
   
-4. Nella pagina **Riepilogo connessione** è possibile esaminare le informazioni sulla connessione e quindi fare clic su **Connetti**. 
+4. Nella pagina **Riepilogo connessione** è possibile rivedere le informazioni sulla connessione e quindi fare clic su **Connetti**. 
     
 5. In **account di archiviazione**espandere il nodo **(Service SAS)** e quindi espandere il nodo **contenitori BLOB** . 
     
@@ -325,17 +330,17 @@ Per installare Azure Storage Explorer e connettersi all'area di archiviazione di
   
     Viene visualizzata l'area di archiviazione di Azure, con un elenco dei file PST caricati nel passaggio 5.
     
-    ![Esplora archivi di Azure mostra un elenco di file con estensione PST caricati](media/a448ae43-e744-4153-8304-22b59e93883c.png)
+    ![Azure Storage Explorer mostra un elenco dei file PST caricati](media/a448ae43-e744-4153-8304-22b59e93883c.png)
   
-7. Al termine dell'utilizzo di Microsoft Azure Storage Explorer, fare clic con il pulsante destro del mouse su **ingestiondata**e quindi scegliere Disconnetti per disconnettersi dall' **area di archiviazione** di Azure. In caso contrario, verrà visualizzato un errore al successivo tentativo di associazione. 
+7. Dopo aver finito di usare Microsoft Azure Storage Explorer, fare clic con il pulsante destro del mouse su **ingestiondata** e quindi scegliere **Scollega** per scollegarsi dall'area di Archiviazione di Azure. In caso contrario, verrà visualizzato un messaggio di errore al successivo tentativo di collegamento. 
     
-    ![Fare clic con il pulsante destro del mouse sull’inserimento e su Disconnetti per disconnettersi dall'area di archiviazione Azure](media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
+    ![Fare clic con il pulsante destro del mouse su ingestiondata e scegliere e scegliere Scollega per disconnettersi dall'area di Archiviazione di Azure](media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
   
 ## <a name="step-7-create-the-pst-import-mapping-file"></a>Passaggio 7: creare il file di mapping di importazione PST
 
 Dopo che i file PST sono stati crittografati e caricati nel percorso di archiviazione di Azure per l'organizzazione di Office 365, il passaggio successivo consiste nel creare un file con valori delimitati da virgole (CSV) che specifichi le cassette postali degli utenti a cui verranno importati i file PST. È necessario inviare il file CSV nel passaggio successivo a quello di creazione del processo di importazione PST.
   
-1. [Scaricare una copia del file di mapping di importazione PST](https://go.microsoft.com/fwlink/p/?LinkId=544717). 
+1. [Scaricare una copia del file di mapping dell'importazione PST](https://go.microsoft.com/fwlink/p/?LinkId=544717). 
     
 2. Aprire o salvare il file CSV nel computer locale. Nell'esempio seguente viene visualizzato un file di mapping di importazione PST completo (aperto nel Blocco note). È molto più facile usare Microsoft Excel per modificare il file CSV.
     
@@ -362,28 +367,28 @@ Dopo che i file PST sono stati crittografati e caricati nel percorso di archivia
     
     |**Parametro**|**Descrizione**|**Esempio**|
     |:-----|:-----|:-----|
-    | `Workload` <br/> |Specifica il servizio Office 365 in cui verranno importati i dati. Per importare i file PST nelle cassette postali `Exchange`degli utenti, utilizzare.  <br/> | `Exchange` <br/> |
-    | `FilePath` <br/> |Specifica il percorso della cartella nel percorso di archiviazione di Azure in cui sono stati caricati i file PST nel passaggio 5.  <br/>  Se non è stato incluso un nome di sottocartella facoltativo nell'URL di rete `/upload-dest:` nel parametro del passaggio 5, lasciare vuoto questo parametro nel file CSV. Se è stato incluso un nome di sottocartella, specificarlo in questo parametro. Il valore di questo parametro è distinzione tra maiuscole e minuscole. In entrambi i casi, *non* includere "ingestiondata" nel valore del `FilePath` parametro.  <br/> <br/>**Importante:** Il caso del nome del percorso del file deve essere lo stesso che è stato utilizzato se è stato incluso un nome di sottocartella facoltativo nell'URL SAS `/upload-dest:` nel parametro del passaggio 5. Ad esempio, se si utilizza `EncryptedPSTs` il nome della sottocartella nel passaggio 5 e quindi si `encryptedpsts` utilizza il `FilePath` parametro nel file CSV, l'importazione del file PST avrà esito negativo. Assicurarsi di utilizzare lo stesso caso in entrambe le istanze.           |(lasciare vuoto)  <br/> Oppure  <br/>  `EncryptedPSTs` <br/> |
-    | `Name` <br/> |Specifica il nome del file PST che verrà importato nella cassetta postale.  Il valore di questo parametro è distinzione tra maiuscole e minuscole. Poiché i file PST caricati nel percorso di archiviazione di Azure sono crittografati, viene `.pfile` aggiunta un'estensione al nome file PST. È necessario aggiungere l' `.pfile` estensione al nome dei file pst nel file CSV.  <br/><br/> **Importante:** Il caso del nome del file PST nel file CSV deve corrispondere al file PST caricato nel percorso di archiviazione di Azure nel passaggio 5. Ad esempio, se si utilizza `annb.pst.pfile` il `Name` parametro nel file CSV, ma il nome del file pst effettivo è `AnnB.pst`, l'importazione per il file PST avrà esito negativo. Assicurarsi che il nome del file PST nel documento CSV utilizzi lo stesso caso del file PST effettivo.           | `annb.pst.pfile` <br/> |
-    | `Mailbox` <br/> |Specifica l'indirizzo di posta elettronica della cassetta postale nella quale verrà importato il file PST.   <br/> Per importare un file PST in una cassetta postale inattiva, è necessario specificare il GUID della cassetta postale per questo parametro. Per ottenere questo GUID, eseguire il seguente comando di PowerShell in Exchange Online:`Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **Nota:** In alcuni casi, è possibile disporre di più cassette postali con lo stesso indirizzo di posta elettronica, in cui una cassetta postale è una cassetta postale attiva e l'altra è in uno stato di eliminazione temporanea (o inattivo). In questi casi, è necessario specificare il GUID della cassetta postale per identificare in modo univoco la cassetta postale in cui importare il file PST. Per ottenere questo GUID per le cassette postali attive, eseguire il seguente `Get-Mailbox - <identity of active mailbox> | FL Guid`comando di PowerShell:. Per ottenere il GUID per le cassette postali eliminate temporaneamente (o inattive), eseguire il comando seguente.`Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> Oppure  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | Specifica se importare o meno il file PST nella cassetta postale di archiviazione dell'utente. Esistono due opzioni:  <br/> Valore **false** Importa il file PST nella cassetta postale principale dell'utente.  <br/> **Vero** Importa il file PST nella cassetta postale di archiviazione dell'utente.  <br/>  If you leave this parameter blank, the PST file is imported to the user's primary mailbox.  <br/><br/> **Nota:** Per importare un file PST in una cassetta postale di archiviazione basata sul cloud per un utente la cui cassetta postale principale è in locale, è sufficiente specificare **true** per questo parametro e specificare l'indirizzo di posta elettronica per la cassetta postale `Mailbox` locale dell'utente per il parametro.           | `FALSE` <br/> Oppure  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | Specifica la cartella delle cassette postali a cui è stato importato il file PST.  <br/>  Se si omette questo parametro, il file PST verrà importato in una nuova cartella denominata **importata** che si trova a livello di radice della cassetta postale (allo stesso livello della cartella posta in arrivo e delle altre cartelle di cassette postali predefinite).  <br/>  Se si specifica `/`, gli elementi del file pst verranno importati direttamente nella cartella posta in arrivo dell'utente.  <br/>  Se si specifica `/<foldername>`, gli elementi del file pst verranno importati in una sottocartella denominata * \<FolderName\> * . Ad esempio, se è stato `/ImportedPst`utilizzato, gli elementi verrebbero importati in una sottocartella denominata **ImportedPst**. Questa sottocartella sarà disponibile nella cartella posta in arrivo dell'utente.  <br/><br/> **Suggerimento:** Valutare l'esecuzione di alcuni batch di test per sperimentare questo parametro in modo da poter determinare il percorso della cartella migliore in cui importare i file di PST.           |(lasciare vuoto)  <br/> Oppure  <br/>  `/` <br/> Oppure  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |Questo parametro facoltativo consente di specificare un valore numerico per la tabella codici da utilizzare per l'importazione dei file PST nel formato di file ANSI. Questo parametro viene utilizzato per l'importazione di file PST dalle organizzazioni cinesi, giapponesi e coreane (CJK), in quanto generalmente utilizzano un set di caratteri a doppio byte (DBCS) per la codifica dei caratteri. Se questo parametro non viene utilizzato per importare i file PST per le lingue che utilizzano i caratteri DBCS per i nomi delle cartelle delle cassette postali, i nomi delle cartelle vengono spesso alterati dopo l'importazione. Per un elenco dei valori supportati da utilizzare per questo parametro, vedere [Code Page Identifiers](https://go.microsoft.com/fwlink/p/?LinkId=328514).  <br/><br/> **Nota:** Come indicato in precedenza, si tratta di un parametro facoltativo e non è necessario includerlo nel file CSV. In alternativa, è possibile includerla e lasciare il valore vuoto per una o più righe.           |(lasciare vuoto)  <br/> Oppure  <br/>  `932`(ovvero l'identificatore di tabella codici per ANSI/OEM giapponese)  <br/> |
-    | `SPFileContainer` <br/> |Per l'importazione PST, omettere questo parametro.   <br/> |Non applicabile  <br/> |
-    | `SPManifestContainer` <br/> |Per l'importazione PST, omettere questo parametro.   <br/> |Non applicabile  <br/> |
-    | `SPSiteUrl` <br/> |Per l'importazione PST, omettere questo parametro.   <br/> |Non applicabile  <br/> |
+    | `Workload` <br/> |Specifica il servizio di Office365 nel quale verranno importati i dati. Per importare file PST nelle cassette postali degli utenti, usare `Exchange`.  <br/> | `Exchange` <br/> |
+    | `FilePath` <br/> |Specifica il percorso della cartella nel percorso di archiviazione di Azure in cui sono stati caricati i file PST nel passaggio 5.  <br/>  Se non è stato incluso un nome di sottocartella facoltativo nell'URL di rete `/upload-dest:` nel parametro del passaggio 5, lasciare vuoto questo parametro nel file CSV. Se è stato incluso un nome di sottocartella, specificarlo in questo parametro. Per il valore di questo parametro è rilevante la distinzione tra maiuscole e minuscole. In entrambi i casi, *non* includere "ingestiondata" nel valore per il parametro `FilePath`.  <br/> <br/>**Importante:** Il caso del nome del percorso del file deve essere lo stesso che è stato utilizzato se è stato incluso un nome di sottocartella facoltativo nell'URL SAS `/upload-dest:` nel parametro del passaggio 5. Ad esempio, se si utilizza `EncryptedPSTs` il nome della sottocartella nel passaggio 5 e quindi si `encryptedpsts` utilizza il `FilePath` parametro nel file CSV, l'importazione del file PST avrà esito negativo. Assicurarsi di usare la stessa combinazione di maiuscole e minuscole in entrambi i casi.           |(lasciare vuoto)  <br/> Oppure  <br/>  `EncryptedPSTs` <br/> |
+    | `Name` <br/> |Specifica il nome del file PST che verrà importato nella cassetta postale dell'utente. Per il valore di questo parametro è rilevante la distinzione tra maiuscole e minuscole. Poiché i file PST caricati nel percorso di archiviazione di Azure sono crittografati, viene `.pfile` aggiunta un'estensione al nome file PST. È necessario aggiungere l' `.pfile` estensione al nome dei file pst nel file CSV.  <br/><br/> **Importante:** Il caso del nome del file PST nel file CSV deve corrispondere al file PST caricato nel percorso di archiviazione di Azure nel passaggio 5. Ad esempio, se si usa `annb.pst.pfile` nel parametro `Name` nel file CSV, ma il nome del file PST effettivo è `AnnB.pst`, l'importazione del file PST avrà esito negativo. Assicurarsi che il nome del file PST nel file CSV contenga la stessa combinazione di maiuscole e minuscole del file PST effettivo.           | `annb.pst.pfile` <br/> |
+    | `Mailbox` <br/> |Specifica l'indirizzo di posta elettronica della cassetta postale in cui verrà importato il file PST.   <br/> Per importare un file PST in una cassetta postale inattiva, è necessario specificare il GUID della cassetta postale in questo parametro. Per ottenere questo GUID, eseguire il comando di PowerShell seguente in Exchange Online: `Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **Nota:** In alcuni casi, è possibile disporre di più cassette postali con lo stesso indirizzo di posta elettronica, in cui una cassetta postale è una cassetta postale attiva e l'altra è in uno stato di eliminazione temporanea (o inattivo). In una situazione di questo tipo è necessario specificare il GUID della cassetta postale per identificare in modo univoco la cassetta postale in cui importare il file PST. Per ottenere questo GUID per le cassette postali attive, eseguire il comando di PowerShell seguente: `Get-Mailbox - <identity of active mailbox> | FL Guid`. Per ottenere il GUID per le cassette postali eliminate temporaneamente (o inattive), eseguire il comando seguente.`Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> Oppure  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `IsArchive` <br/> | Specifica se importare o meno il file PST nella cassetta postale di archiviazione dell'utente. Esistono due opzioni:  <br/> Valore **false** Importa il file PST nella cassetta postale principale dell'utente.  <br/> **Vero** Importa il file PST nella cassetta postale di archiviazione dell'utente.  <br/>  Se si lascia vuoto questo parametro, il file PST viene importato nella cassetta postale principale dell'utente.  <br/><br/> **Nota:** Per importare un file PST in una cassetta postale di archiviazione basata sul cloud per un utente la cui cassetta postale principale è in locale, è sufficiente specificare **true** per questo parametro e specificare l'indirizzo di posta elettronica per la cassetta postale `Mailbox` locale dell'utente per il parametro.           | `FALSE` <br/> Oppure  <br/>  `TRUE` <br/> |
+    | `TargetRootFolder` <br/> | Specifica la cartella della casetta postale in cui viene importato il file PST.  <br/>  Se si omette questo parametro, il file PST verrà importato in una nuova cartella denominata **importata** che si trova a livello di radice della cassetta postale (allo stesso livello della cartella posta in arrivo e delle altre cartelle di cassette postali predefinite).  <br/>  Se si specifica `/`, gli elementi del file pst verranno importati direttamente nella cartella posta in arrivo dell'utente.  <br/>  Se si specifica `/<foldername>`, gli elementi del file pst verranno importati in una sottocartella denominata * \<FolderName\> * . Ad esempio, se è stato `/ImportedPst`utilizzato, gli elementi verrebbero importati in una sottocartella denominata **ImportedPst**. Questa sottocartella sarà disponibile nella cartella posta in arrivo dell'utente.  <br/><br/> **Suggerimento:** Valutare l'esecuzione di alcuni batch di test per sperimentare questo parametro in modo da poter determinare il percorso della cartella migliore per l'importazione dei file PST.           |(lasciare vuoto)  <br/> Oppure  <br/>  `/` <br/> Oppure  <br/>  `/ImportedPst` <br/> |
+    | `ContentCodePage` <br/> |Questo parametro facoltativo specifica un valore numerico per la tabella codici da usare per l'importazione dei file PST nel formato ANSI. Questo parametro viene usato per l'importazione di file PST da organizzazioni cinesi, giapponesi e coreane perché queste lingue in genere usano un set di caratteri a due byte (DBCS) per la codifica dei caratteri. Se non si usa questo parametro per importare file PST per le lingue che usano il set di caratteri DBCS per i nomi delle cartelle delle cassette postali, i nomi delle cartelle spesso appaiono illeggibili dopo l'importazione. Per un elenco dei valori supportati da usare per questo parametro, vedere la pagina dedicata agli [identificatori delle tabelle codici](https://go.microsoft.com/fwlink/p/?LinkId=328514).  <br/><br/> **Nota:** come indicato in precedenza, si tratta di un parametro facoltativo che non è necessario inserire nel file CSV. Può anche essere incluso lasciando il valore vuoto per una o più righe.           |(lasciare vuoto)  <br/> Oppure  <br/>  `932` (identificatore della tabella codici per il giapponese ANSI/OEM)  <br/> |
+    | `SPFileContainer` <br/> |Per l'importazione PST, omettere questo parametro.  <br/> |Non applicabile  <br/> |
+    | `SPManifestContainer` <br/> |Per l'importazione PST, omettere questo parametro.  <br/> |Non applicabile  <br/> |
+    | `SPSiteUrl` <br/> |Per l'importazione PST, omettere questo parametro.  <br/> |Non applicabile  <br/> |
   
 ## <a name="step-8-create-a-pst-import-job-in-office-365"></a>Passaggio 8: creare un processo di Importazione PST in Office 365
 
-L'ultimo passaggio consiste nel creare il processo di importazione PST nel servizio di importazione di Office 365. Come descritto in precedenza, verrà inviato il file di mapping di importazione PST creato al passaggio 7. Dopo aver creato il nuovo processo, il servizio di importazione utilizzerà le informazioni contenute nel file di mapping per annullare la crittografia e importare i file PST (caricati in Office 365 nel passaggio 5) nella cassetta postale utente specificata. 
+L'ultimo passaggio consiste nel creare il processo di importazione PST nel servizio di importazione di Office 365. Come descritto in precedenza, verrà inviato il file di mapping di importazione PST creato al passaggio 7. Dopo aver creato il nuovo processo, il servizio di importazione utilizzerà le informazioni contenute nel file di mapping per decrittografare e importare i file PST (caricati in Office 365 nel passaggio 5) nella cassetta postale utente specificata. 
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
 2. Accedere a Office 365 utilizzando le credenziali di un account amministratore nell'organizzazione di Office 365.
     
-3. Nel riquadro sinistro fare clic su **governance dei dati** e quindi fare clic su **Importa**.
+3. Nel riquadro sinistro, fare clic su **governance delle informazioni > importare > importare i file PST**.
     
-4. Nella pagina **Importa**, fare clic su **Vai al servizio di importazione**.
+4. Nella pagina **importazione file PST** fare clic su **Vai al servizio di importazione**.
     
 5. Nella pagina **Importa dati in Office 365** fare clic su **nuovo processo**![Aggiungi icona](media/ITPro-EAC-AddIcon.gif)e quindi fare clic su **carica messaggi di posta elettronica (file PST)**.
     
@@ -398,7 +403,7 @@ L'ultimo passaggio consiste nel creare il processo di importazione PST nel servi
     > [!NOTE]
     > Come spiegato in precedenza, quando i file PST sono crittografati `.pfile` , viene aggiunta un'estensione al nome file PST. È necessario aggiungere l' `.pfile` estensione al nome dei file pst nel file CSV. In caso contrario, la convalida del file CSV avrà esito negativo. 
   
-    Il file CSV deve essere convalidato per creare un processo di importazione PST. Se la convalida ha esito negativo, fare clic sul collegamento **Non valido** nella colonna **Stato**. Viene aperta una copia del file di mapping di importazione PST e viene visualizzato un messaggio di errore per ogni riga del file con errore. 
+    Il file CSV deve essere convalidato per creare un processo di importazione PST. Se la convalida ha esito negativo, fare clic sul collegamento **Non valido** nella colonna **Stato**. Viene aperta una copia del file di mapping di importazione PST, con un messaggio di errore per ogni riga del file che ha avuto esito negativo. 
     
 10. Quando il file di mapping PST viene convalidato, leggere i termini e le condizioni, quindi fare clic sulla casella di controllo.
     
@@ -412,7 +417,7 @@ L'ultimo passaggio consiste nel creare il processo di importazione PST nel servi
  
 ## <a name="more-information"></a>Altre informazioni
 
-- Perché importare i file PST in Office 365?
+- Perché importare i file PST in Office 365
     
   - È un ottimo modo per eseguire la migrazione della posta elettronica dell'organizzazione a Office 365.
     

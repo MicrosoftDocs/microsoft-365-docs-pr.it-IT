@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 viene fornito con i classificatori pronti all'uso per l'apprendimento automatico che è possibile utilizzare per identificare ed etichettare il contenuto all'interno dell'organizzazione. In questo argomento vengono illustrate le modalità di preparazione per l'utilizzo dei classificatori pronti all'uso.
-ms.openlocfilehash: 7e10bb94f84dd10a1ac22126106531d8ad309c47
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+description: Microsoft 365 è dotato di un numero di classificatori pronti all'uso per l'apprendimento automatico che è possibile utilizzare per identificare ed etichettare il contenuto nell'organizzazione. In questo argomento vengono illustrate le modalità di preparazione per l'utilizzo dei classificatori pronti all'uso.
+ms.openlocfilehash: 6eaa3689dce1bfb37fdad6b1b22dcac3539bb31e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633855"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807415"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>Utilizzo di un classificatore pronto all'uso (anteprima)
 
@@ -34,7 +34,7 @@ Microsoft ha formato e testato un certo numero di classificatori che utilizzano 
 > Prima di utilizzare i classificatori pronti per l'utilizzo nel flusso di lavoro di classificazione e etichettatura, è consigliabile testarlo su un campione del contenuto dell'organizzazione che si adatta alla categoria per verificare che le stime di classificazione soddisfino le proprie aspettative.
 
 > [!IMPORTANT]
-> Si noti che la lingua offensiva, la molestia, la profanità e i classificatori di minacce funzionano solo con il testo ricercabile e non sono esaustivi o completi. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare questi classificatori a propria discrezione. Anche se i classificatori possono assistere la propria organizzazione nel monitoraggio di un'offensiva e di altre lingue utilizzate, i classificatori non affrontano le conseguenze di tale lingua e non sono destinati a fornire il solo mezzo di monitoraggio o di risposta dell'organizzazione all'utilizzo di tale lingua. La propria organizzazione e non Microsoft o le sue affiliate resta responsabile di tutte le decisioni relative al monitoraggio, all'applicazione, al blocco, alla rimozione e alla conservazione di qualsiasi contenuto identificato da un classificatore preconfigurato.
+> Si noti che la lingua offensiva, la molestia, la profanità e i classificatori di minacce funzionano solo con il testo ricercabile non sono esaustivi o completi. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare questi classificatori a sua discrezione. Anche se i classificatori possono assistere la propria organizzazione nel monitoraggio di un'offensiva e di altre lingue utilizzate, i classificatori non affrontano le conseguenze di tale lingua e non sono destinati a fornire il solo mezzo di monitoraggio o di risposta dell'organizzazione all'utilizzo di tale lingua. La propria organizzazione e non Microsoft o le sue affiliate resta responsabile di tutte le decisioni relative al monitoraggio, all'applicazione, al blocco, alla rimozione e alla conservazione di qualsiasi contenuto identificato da un classificatore preformato.
 
 ## <a name="how-to-prepare-for-and-use-a-ready-to-use-classifier"></a>Come prepararsi e usare un classificatore pronto per l'uso
 

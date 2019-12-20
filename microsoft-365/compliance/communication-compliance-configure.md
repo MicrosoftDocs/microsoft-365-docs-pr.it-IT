@@ -1,5 +1,6 @@
 ---
-title: Configurare la conformità alla comunicazione per Microsoft 365 (anteprima)
+title: Configurare la conformità delle comunicazioni (anteprima)
+description: Impostare i criteri di conformità della comunicazione per configurare le comunicazioni dei dipendenti per la revisione.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,15 +16,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Impostare i criteri di conformità della comunicazione per configurare le comunicazioni dei dipendenti per la revisione.
-ms.openlocfilehash: 24b821158ca0f6d7486d1177256f5b1ce9123479
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 101078adea821b5ddd3d525d26a7e9dbca1e1512
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633625"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807375"
 ---
-# <a name="configure-communication-compliance-for-microsoft-365-preview"></a>Configurare la conformità alla comunicazione per Microsoft 365 (anteprima)
+# <a name="configure-communication-compliance-in-microsoft-365-preview"></a>Configurare la conformità delle comunicazioni in Microsoft 365 (anteprima)
 
 > [!IMPORTANT]
 > Questo argomento si applica alla configurazione della conformità di comunicazione in un abbonamento a Microsoft 365. Se si desidera configurare i criteri di supervisione per una sottoscrizione a Office 365, vedere [Configure supervisioning for office 365](supervision-policies.md).
@@ -38,7 +38,7 @@ Seguire questa procedura per configurare e usare la conformità della comunicazi
   
 - **Passaggio 1 (facoltativo)**: [configurare i gruppi per la conformità della comunicazione](#step-1-set-up-groups-for-communication-compliance-optional) 
 
-    Prima di iniziare a utilizzare la conformità alla comunicazione, determinare gli utenti che devono esaminare le comunicazioni e le recensioni. Se si desidera iniziare a usare solo alcuni utenti per vedere come funziona la conformità di comunicazione, è possibile ignorare la configurazione dei gruppi per il momento.
+    Prima di iniziare a utilizzare la conformità alla comunicazione, determinare gli utenti che devono esaminare le comunicazioni e che eseguono le revisioni. Se si desidera iniziare a usare solo alcuni utenti per vedere come funziona la conformità di comunicazione, è possibile ignorare la configurazione dei gruppi per il momento.
 
 - **Passaggio 2 (obbligatorio)**: [rendere la conformità della comunicazione disponibile nell'organizzazione](#step-2-make-communication-compliance-available-in-your-organization-required)
 
@@ -46,7 +46,7 @@ Seguire questa procedura per configurare e usare la conformità della comunicazi
 
 - **Passaggio 3 (obbligatorio)**: [impostare un criterio di conformità della comunicazione](#step-3-create-a-communication-compliance-policy-required)
 
-    È possibile creare criteri di conformità della comunicazione nel centro conformità di Microsoft 365. Questi criteri definiscono le comunicazioni che sono soggette a revisione nell'organizzazione e specifica chi esegue le revisioni. Le comunicazioni includono la posta elettronica, Microsoft teams, Skype for business e le comunicazioni della piattaforma di terze parti (come Facebook, Twitter e così via).
+    È possibile creare criteri di conformità della comunicazione nel centro conformità di Microsoft 365. Questi criteri definiscono le comunicazioni soggette a revisione nell'organizzazione e specifica chi esegue le revisioni. Le comunicazioni includono la posta elettronica, Microsoft teams, Skype for business e le comunicazioni della piattaforma di terze parti (come Facebook, Twitter e così via).
 
 - **Passaggio 4 (facoltativo)**: [creare modelli di avviso](#step-4-create-employee-notice-templates-optional) per i dipendenti
 
@@ -55,6 +55,10 @@ Seguire questa procedura per configurare e usare la conformità della comunicazi
 - **Passaggio 5 (facoltativo)**: [testare i criteri di conformità della comunicazione](#step-5-test-your-communication-compliance-policy-optional)
 
     Testare i criteri di conformità della comunicazione per assicurarsi che funzioni come desiderato. È importante garantire che la strategia di conformità soddisfi gli standard.
+
+- **Passaggio 6 (facoltativo)**: [abilitare il controllo per i criteri di conformità della comunicazione](#step-6-enable-auditing-for-your-communication-compliance-policies-optional)
+
+    Abilitare il controllo per l'organizzazione per registrare le attività di gestione per i criteri di conformità della comunicazione.
 
 ## <a name="step-1-set-up-groups-for-communication-compliance-optional"></a>Passaggio 1: configurare i gruppi per la conformità delle comunicazioni (facoltativo)
 
@@ -76,6 +80,9 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 - [Panoramica dei gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
 ## <a name="step-2-make-communication-compliance-available-in-your-organization-required"></a>Passaggio 2: rendere la conformità della comunicazione disponibile nell'organizzazione (obbligatorio)
+
+> [!Important]
+> Per impostazione predefinita, gli amministratori globali non possono accedere alle funzionalità di conformità della comunicazione. I ruoli assegnati a questo passaggio sono necessari prima che vengano accessibili tutte le funzionalità di conformità della comunicazione.
 
 Per rendere la **conformità di comunicazione** disponibile come opzione di menu in Microsoft 365 Compliance Center, è necessario essere assegnati al ruolo di **amministratore revisione di supervisione** . Inoltre, per esaminare e correggere i messaggi con le corrispondenze di criteri, è necessario creare un gruppo per i revisori con l' **amministratore revisione di supervisione**, la **gestione dei casi**e i ruoli di **Revisione** .
 
@@ -122,8 +129,8 @@ Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [P
     - Scegliere i canali di comunicazione da analizzare, tra cui Exchange, Microsoft teams o Skype for business. Se si è configurato un connettore in Microsoft 365, è inoltre possibile scegliere di eseguire l'analisi delle origini di terze parti.
     - Scegliere la direzione di comunicazione da monitorare, incluse le comunicazioni in ingresso, in uscita o interne.
     - Definire le [condizioni](communication-compliance-feature-reference.md#ConditionalSettings)dei criteri di conformità della comunicazione. È possibile scegliere tra l'indirizzo del messaggio, la parola chiave, i tipi di file e le condizioni di corrispondenza delle dimensioni.
-    - Scegliere se si desidera includere tipi di informazioni riservate. È possibile selezionare i tipi di informazioni riservate predefinite e personalizzate. Scegliere tra tipi di informazioni riservate personalizzate esistenti o dizionari di parole chiave personalizzati nella procedura guidata criteri di conformità della comunicazione. È possibile creare questi elementi prima di eseguire la procedura guidata, se necessario. È inoltre possibile creare nuovi tipi di informazioni riservate dall'interno della procedura guidata criteri di conformità della comunicazione.
-    - Scegliere se si desidera abilitare il modello di lingua offensivo. In questo modo viene rilevato il linguaggio inappropriato inviato o ricevuto nel corpo dei messaggi di posta elettronica.
+    - Scegliere se si desidera includere tipi di informazioni riservate. In questo passaggio è possibile selezionare i tipi di informazioni riservate predefinite e personalizzate. Scegliere tra tipi di informazioni riservate personalizzate esistenti o dizionari di parole chiave personalizzati nella procedura guidata criteri di conformità della comunicazione. È possibile creare questi elementi prima di eseguire la procedura guidata, se necessario. È inoltre possibile creare nuovi tipi di informazioni riservate dall'interno della procedura guidata criteri di conformità della comunicazione.
+    - Scegliere se si desidera abilitare il classificatore di lingua offensivo. Questo classificatore rileva la lingua inappropriata inviata o ricevuta nel corpo dei messaggi di posta elettronica.
     - Definire la percentuale di comunicazioni da esaminare.
     - Esaminare le selezioni dei criteri e creare il criterio.
 
@@ -158,7 +165,7 @@ Dopo aver creato un criterio di conformità della comunicazione, è consigliabil
 Eseguire la procedura seguente per testare i criteri di conformità della comunicazione:
 
 1. Aprire un client di posta elettronica o Microsoft teams mentre è stato eseguito l'accesso come utente controllato definito nel criterio che si desidera sottoporre a test.
-2. Inviare un messaggio di posta elettronica o Microsoft teams chat che soddisfi i criteri definiti nel criterio di conformità della comunicazione. Può trattarsi di una parola chiave, dimensioni degli allegati, dominio e così via. Assicurarsi di determinare se le impostazioni condizionali configurate nel criterio sono troppo restrittive o troppo indulgenti.
+2. Inviare un messaggio di posta elettronica o Microsoft teams chat che soddisfi i criteri definiti nel criterio di conformità della comunicazione. Questo test può essere una parola chiave, le dimensioni degli allegati, il dominio e così via. Assicurarsi di determinare se le impostazioni condizionali configurate nel criterio sono troppo restrittive o troppo indulgenti.
 
     > [!NOTE]
     > Le comunicazioni in tutti i canali di origine possono richiedere fino a 24 ore per il processo completo in un criterio.
@@ -166,3 +173,12 @@ Eseguire la procedura seguente per testare i criteri di conformità della comuni
 3. Accedere a Microsoft 365 come un revisore designato nei criteri di conformità della comunicazione. Passare a > **avvisi** **conformità comunicazione**per visualizzare gli avvisi per i criteri.
 
 4. Correggere l'avviso utilizzando i controlli di correzione e verificare che l'avviso sia stato risolto correttamente.
+
+## <a name="step-6-enable-auditing-for-your-communication-compliance-policies-optional"></a>Passaggio 6: abilitare il controllo per i criteri di conformità della comunicazione (facoltativo)
+
+Dopo aver testato i criteri, è possibile abilitare il controllo in modo che le attività associate alla gestione della conformità della comunicazione vengano registrate. Può trattarsi di un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento in cui cambia il criterio di conformità della comunicazione.
+
+Quando il controllo è abilitato, i criteri di conformità della comunicazione hanno percorsi di controllo incorporati per una completa preparazione per i controlli interni o esterni. È possibile utilizzare il controllo **Esporta attività di revisione** nella pagina principale per qualsiasi criterio per generare un file di controllo o per visualizzare le attività di controllo nel log di controllo unificato se il controllo è abilitato.
+
+Per attivare il controllo, fare clic su **Avvia registrazione attività utente e amministratore** nella pagina di **ricerca del registro di controllo** nel centro sicurezza & conformità di Office 365. Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione. Dopo aver attivato il controllo, viene visualizzato un messaggio che indica che il registro di controllo viene preparato e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. Questa procedura deve essere eseguita una sola volta. Per ulteriori informazioni sul log di controllo, vedere [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+

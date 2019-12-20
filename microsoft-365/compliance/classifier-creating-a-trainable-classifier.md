@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzare classificatori addestrabili quando uno dei classificatori di caselle pronti per l'uso non soddisfa le proprie esigenze. Un classificatore Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. In questo argomento viene illustrato come creare un classificatore personalizzato.
-ms.openlocfilehash: cb3cda9777d692a56263e92cd908eb09bfa99895
-ms.sourcegitcommit: 8fda7852b2a5baa92b8a365865b014ea6d100bbc
+ms.openlocfilehash: 6343635bb8e9dac12a8dde0867b3468347c2e84a
+ms.sourcegitcommit: d656fd58e5491cfb7fee16b55dc7a58904ed128d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39813374"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39891087"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creazione di un classificatore addestrabile (anteprima)
 
@@ -30,7 +30,7 @@ Questa sequenza temporale riflette una distribuzione di esempio.
 ![addestrare-classificatore-sequenza temporale](media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> L'opzione opt-in è necessaria per la prima volta per i classificatori addestrabili. Per completare una valutazione di base del contenuto delle organizzazioni, sono necessari dodici giorni per Microsoft 365.
+> L'opzione opt-in è necessaria per la prima volta per i classificatori addestrabili. Per completare una valutazione di base del contenuto delle organizzazioni, sono necessari dodici giorni per Microsoft 365. Contattare l'amministratore globale per iniziare a utilizzare il processo di opt-in.
 
 ## <a name="seed-content"></a>Contenuto del seeding
 

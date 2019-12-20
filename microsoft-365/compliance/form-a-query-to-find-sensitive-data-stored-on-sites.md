@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la prevenzione della perdita di dati (DLP) in SharePoint Online, è possibile individuare i documenti che contengono dati riservati in tutto il tenant. Dopo aver individuato i documenti, è possibile collaborare con i proprietario al fine di proteggere i dati. In questo argomento viene illustrato come creare una query per cercare dati riservati.
-ms.openlocfilehash: 0cf5d0446d8f12560e8fd7b0948dc5b6ce2bbe0f
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: 66cf1f5c4072422c3de8572a5bf4b6f39755cff3
+ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686515"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40823648"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Creare una query per trovare i dati sensibili archiviati nei siti
 
@@ -88,7 +88,7 @@ Non tutte le query vengono create allo stesso modo. Nella tabella seguente vengo
 
 [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
   
-[Eseguire una ricerca contenuto nel centro sicurezza &amp; e conformità di Office 365](run-a-content-search-in-the-security-and-compliance-center.md)
+[Eseguire una Ricerca contenuto](content-search.md)
   
 [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
   

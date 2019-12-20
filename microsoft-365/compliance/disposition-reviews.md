@@ -1,7 +1,7 @@
 ---
 title: Panoramica delle recensioni sulla disposizione
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di conservazione che conserva il contenuto in Microsoft 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
-ms.openlocfilehash: 22079fc92cabc902cd7afee7e187b7e186aa2328
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 55a6f52a92c23d8c7fc2464c846faf730617ef2f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082931"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806069"
 ---
 # <a name="overview-of-disposition-reviews"></a>Panoramica delle recensioni sulla disposizione
 
@@ -116,7 +116,7 @@ Nella pagina **disposizione in sospeso** , è possibile visualizzare le disposiz
   
 - La **disposizione in sospeso** Visualizza gli elementi che hanno raggiunto la fine del periodo di conservazione e richiedono una revisione della disposizione. Dopo aver esaminato ogni elemento, decidere se si desidera applicare un'etichetta di conservazione diversa, estenderne il periodo di conservazione o eliminarla definitivamente. È possibile selezionare più elementi.
     
-- La scheda **elementi eliminati** indica che le disposizioni sono state approvate per l'eliminazione durante una revisione della disposizione e sono ora in fase di eliminazione definitiva. Gli elementi in cui è stata applicata un'etichetta di conservazione diversa o il periodo di conservazione esteso nell'ambito di una revisione non verranno visualizzati in questa posizione.
+- La scheda **elementi** eliminati indica che le disposizioni sono state approvate per l'eliminazione durante una revisione della disposizione e che sono state eliminate definitivamente o gli elementi contrassegnati come record che sono stati eliminati. Gli elementi in cui è stata applicata un'etichetta di conservazione diversa o il periodo di conservazione esteso nell'ambito di una revisione non verranno visualizzati in questa posizione.
 
 ![Schede disposizione](media/Retention-Disposition-tabs.png)
     

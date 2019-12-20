@@ -1,5 +1,6 @@
 ---
-title: Conformità della comunicazione in Microsoft 365 (anteprima)
+title: Conformità alla comunicazione (anteprima)
+description: Informazioni sulla conformità della comunicazione in Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,13 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Informazioni sulla conformità della comunicazione in Microsoft 365
-ms.openlocfilehash: 8c8e94209d2db575dd8338afa6f4c5c968033683
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 2e54a9d6e0cb74d7e58cda9869548214a7c69582
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633665"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807355"
 ---
 # <a name="communication-compliance-in-microsoft-365-preview"></a>Conformità della comunicazione in Microsoft 365 (anteprima)
 
@@ -93,7 +93,7 @@ I nuovi dashboard interattivi per gli avvisi, le corrispondenze di criteri, le a
 
 I criteri di conformità della comunicazione consentono di analizzare e acquisire i messaggi su diversi canali di comunicazione per esaminare e correggere rapidamente i problemi di conformità:
 
-- **Microsoft teams**: Chat Communications and Associated Attachments for Public and private [Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) Channels and single chats sono supportate nella conformità alla comunicazione come origine canale autonoma o con altri servizi Microsoft 365. I criteri ora analizzano automaticamente tutti i canali e i team di Microsoft teams per utenti specifici definiti in un criterio, eliminando la necessità di mantenere un elenco di mapping separato per le assegnazioni di Microsoft teams.
+- **Microsoft teams**: Chat Communications per i canali [Microsoft](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) pubblici e privati e le chat individuali sono supportate nella conformità della comunicazione come origine canale autonoma o con altri servizi Microsoft 365. I criteri ora analizzano automaticamente tutti i canali e i team di Microsoft teams per utenti specifici definiti in un criterio, eliminando la necessità di mantenere un elenco di mapping separato per le assegnazioni di Microsoft teams.
 - **Exchange Online**: tutte le cassette postali ospitate in [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) nell'organizzazione Microsoft 365 sono idonee per l'analisi. Messaggi di posta elettronica e allegati corrispondenti alle condizioni dei criteri di conformità della comunicazione sono immediatamente disponibili per il monitoraggio e nei report di supervisione Exchange Online è ora un canale di origine facoltativo e non è più necessario nei criteri di conformità della comunicazione.
 - **Skype for business online**: i criteri di conformità della comunicazione supportano l'analisi delle comunicazioni chat e degli allegati associati in [Skype for business online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Origini**di terze parti: è possibile eseguire l'analisi dei messaggi provenienti da origini di terze [parti](archiving-third-party-data.md) per i dati importati nelle cassette postali dell'organizzazione Microsoft 365. La conformità alla comunicazione supporta le connessioni a diverse piattaforme popolari, tra cui Instant Bloomberg, Facebook, Twitter e altri.
@@ -111,6 +111,9 @@ L'identificazione e la risoluzione dei problemi di conformità con la conformit�
 ### <a name="configure"></a>Configurare
 
 In questo passaggio del flusso di lavoro vengono identificati i requisiti di conformità e vengono configurati i criteri di conformità della comunicazione. I modelli di criteri rappresentano un ottimo modo per non solo configurare rapidamente un nuovo criterio di conformità, ma anche per modificare e aggiornare rapidamente i criteri in base alle modifiche apportate ai requisiti. Ad esempio, potrebbe essere necessario testare rapidamente un criterio per la lingua offensiva e l'antimolestia sulle comunicazioni per un piccolo gruppo di utenti prima di configurare un criterio per tutti gli utenti dell'organizzazione.
+
+> [!Important]
+> Per impostazione predefinita, gli amministratori globali non possono accedere alle funzionalità di conformità della comunicazione. Per abilitare le autorizzazioni per le funzionalità di conformità della comunicazione, vedere [make Communication Compliance available in Your Organization](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required).
 
 È possibile scegliere tra i seguenti modelli di criteri nel centro conformità di Microsoft 365:
 

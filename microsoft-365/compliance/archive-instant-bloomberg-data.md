@@ -1,5 +1,5 @@
 ---
-title: Configurare un connettore per archiviare i dati di Bloomberg istantanei in Office 365
+title: Configurare un connettore per archiviare i dati di Instant Bloomberg
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore nativo per importare i dati dallo strumento Instant Bloomberg chat in Office 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per consentire l'utilizzo di funzionalità di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e ritenzione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 8a9a388c62ca59dfcdb2f123fd0776e619f8d38e
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 55b0acf6a2643fed4a994604e92e4c0e218da5d9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615606"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807751"
 ---
-# <a name="set-up-a-connector-to-archive-instant-bloomberg-data-in-office-365"></a>Configurare un connettore per archiviare i dati di Bloomberg istantanei in Office 365
+# <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurare un connettore per archiviare i dati di Instant Bloomberg
 
 Utilizzare un connettore nativo nel centro sicurezza & compliance in Office 365 per importare e archiviare i dati della chat dei servizi finanziari dallo strumento [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) Collaboration. Dopo aver configurato e configurato un connettore, si connette al sito FTP sicuro Bloomberg (SFTP) dell'organizzazione una volta al giorno, converte il contenuto dei messaggi di chat in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali di Office 365.
 
@@ -41,7 +41,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
     
     b. **Elementi che dispongono di un valore nella proprietà CorporateEmailAddress che non corrisponde a un account utente di Office 365:** Se il connettore non è in grado di associare un indirizzo di posta elettronica nella proprietà *CorporateEmailAddress* a un account utente specifico di Office 365, l'elemento viene copiato nella cartella posta in arrivo di una cassetta postale alternativa "catch-all" in Office 365.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Molti dei passaggi di implementazione necessari per archiviare i dati di Bloomberg istantanei sono esterni a Office 365 e devono essere completati prima di poter creare il connettore nel centro sicurezza & Compliance.
 
@@ -73,7 +73,7 @@ Molti dei passaggi di implementazione necessari per archiviare i dati di Bloombe
 
 Il primo passaggio consiste nell'ottenere una copia delle chiavi pubbliche per Secure Shell (SSH) e la Pretty Good Privacy (PGP). È possibile utilizzare questi tasti nel passaggio 2 per configurare il sito Bloomberg SFTP per consentire il connettore (creato nel passaggio 3) per connettersi al sito SFTP e trasferire i dati di chat immediata di Bloomberg nelle cassette postali di Office 365. È inoltre possibile ottenere un indirizzo IP in questo passaggio, che viene utilizzato per la configurazione del sito Bloomberg SFTP.
 
-1. Passare a <https://protection.office.com> e quindi fare clic su **Importa governance \> dei dati** e quindi su **archivia dati di terze parti**.
+1. Passare a <https://protection.office.com> e quindi fare clic su**dati di terze parti**sull' > importazione di **governance \> delle informazioni**.
 
 2. Nella pagina **archiviazione dei dati di terze parti** , fare clic su **Aggiungi connettore**, quindi fare clic su **Instant Bloomberg**.
 
@@ -100,7 +100,7 @@ Il passaggio successivo consiste nell'utilizzare le chiavi pubbliche SSH e PGP e
 
 L'ultimo passaggio consiste nel creare un connettore Bloomberg istantaneo nel centro sicurezza & Compliance. Il connettore utilizza le informazioni fornite per la connessione al sito Bloomberg SFTP e trasferisce i messaggi di chat nelle caselle della cassetta postale dell'utente corrispondente in Office 365. 
 
-1. Passare a <https://protection.office.com> e quindi fare clic su **Importa governance \> dei dati** e quindi su **archivia dati di terze parti**.
+1. Passare a <https://protection.office.com> e quindi fare clic su**dati di terze parti**sull' > importazione di **governance \> delle informazioni**.
 
 2. Nella pagina **archiviazione dei dati di terze parti** , fare clic su **Aggiungi connettore**, quindi fare clic su **Instant Bloomberg**.
 

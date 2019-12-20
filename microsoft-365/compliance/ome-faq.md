@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Domande su come funzionano le nuove funzionalità di protezione dei messaggi di Office 365? Controllare la risposta qui.
-ms.openlocfilehash: f8b92e7156921548499ecbb1876787f63eeb3259
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: 8f9621ea440bf089ebc8fa3e35b38ff636657555
+ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866418"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962563"
 ---
 # <a name="office-365-message-encryption-faq"></a>Domande frequenti su Office 365 Message Encryption
 
@@ -69,10 +69,10 @@ Le nuove funzionalità per la crittografia dei messaggi di Office 365 rappresent
 
 |**Funzionalità**|**Versioni precedenti di OME**|**IRM**|**Nuove funzionalità OME**|
 |:-----|:-----|:-----|:-----|
-|**Invio di un messaggio di posta elettronica crittografato**|Solo tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato da Outlook per PC, Outlook per Mac o Outlook sul Web. o tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato da Outlook per PC, Outlook per Mac o Outlook sul Web. o tramite le regole del flusso di posta|
+|**Invio di un messaggio di posta elettronica crittografato**|Solo tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato da Outlook per Windows, Outlook per Mac o Outlook sul Web. o tramite le regole del flusso di posta di Exchange|L'utente finale è stato avviato da Outlook per Windows, Outlook per Mac o Outlook sul Web. o tramite le regole del flusso di posta|
 |**Gestione dei diritti**|-|Non inoltrare l'opzione e i modelli personalizzati|Opzione non inoltrare, opzione solo crittografia, modelli predefiniti e personalizzati|
 |**Tipo di destinatario supportato**|Solo destinatari esterni|Solo destinatari interni|Destinatari interni ed esterni|
-|**Esperienza per il destinatario**|I destinatari esterni hanno ricevuto un messaggio HTML che hanno scaricato e aperto in un browser o in un'app per dispositivi mobili scaricati.|I destinatari interni hanno ricevuto solo messaggi di posta elettronica crittografati in Outlook per PC, Outlook per Mac e Outlook sul Web.|I destinatari interni ed esterni ricevono messaggi di posta elettronica in Outlook per PC, Outlook per Mac, Outlook sul Web, Outlook per Android e Outlook per iOS oppure tramite un portale Web, indipendentemente dal fatto che siano o meno presenti nella stessa organizzazione di Office 365 o in qualsiasi ufficio 365 organizzazione. Il portale OME non richiede alcun download separato.|
+|**Esperienza per il destinatario**|I destinatari esterni hanno ricevuto un messaggio HTML che hanno scaricato e aperto in un browser o in un'app per dispositivi mobili scaricati.|I destinatari interni hanno ricevuto solo messaggi di posta elettronica crittografati in Outlook per Windows, Outlook per Mac e Outlook sul Web.|I destinatari interni ed esterni ricevono messaggi di posta elettronica in Outlook per Windows, Outlook per Mac, Outlook sul Web, Outlook per Android e Outlook per iOS oppure tramite un portale Web, indipendentemente dal fatto che siano o meno presenti nella stessa organizzazione di Office 365 o in qualsiasi ufficio 365 organizzazione. Il portale OME non richiede alcun download separato.|
 |**Portare il proprio supporto chiave**|Non disponibile|Non disponibile| BYOK supportato|
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>Come si abilitano le nuove funzionalità OME per la propria organizzazione?
@@ -93,11 +93,11 @@ Gli utenti locali possono inviare messaggi crittografati tramite le regole del f
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>Quale client di posta elettronica è necessario utilizzare per creare un messaggio crittografato OME? Quali applicazioni sono supportate per l'invio di messaggi protetti?
 
-È possibile creare messaggi protetti da Outlook 2016 e Outlook 2013 per PC e Mac e da Outlook sul Web.
+È possibile creare messaggi protetti da Outlook 2016 e Outlook 2013 per Windows e Mac e da Outlook sul Web.
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Quali client di posta elettronica sono supportati per la lettura e la risposta ai messaggi di posta elettronica protetti?
 
-È possibile leggere e rispondere da Outlook per PC e Mac (2013 e 2016), Outlook sul Web e Outlook Mobile (Android e iOS) se si è un utente di Office 365. È inoltre possibile utilizzare il client di posta elettronica nativo iOS se l'organizzazione lo consente. Se non si è un utente di Office 365, è possibile leggere e rispondere a messaggi crittografati sul Web tramite il Web browser.
+È possibile leggere e rispondere da Outlook per Windows e Mac (2013 e 2016), Outlook sul Web e Outlook Mobile (Android e iOS) se si è un utente di Office 365. È inoltre possibile utilizzare il client di posta elettronica nativo iOS se l'organizzazione lo consente. Se non si è un utente di Office 365, è possibile leggere e rispondere a messaggi crittografati sul Web tramite il Web browser.
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quali tipi di file sono supportati come allegati nei messaggi di posta elettronica protetti? Gli allegati ereditano i criteri di protezione associati ai messaggi di posta elettronica protetti?
 
@@ -135,18 +135,6 @@ Gli amministratori possono impostare una regola del flusso di posta per rimuover
 
 Sì! È possibile configurare le regole del flusso di posta in Exchange Online o utilizzando DLP nel centro &amp; sicurezza e conformità.
   
-## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>È possibile aprire i messaggi crittografati inviati a una cassetta postale condivisa?
-
-Sì! I messaggi crittografati sono supportati per una cassetta postale condivisa.
-
-- Gli utenti possono aprire mail protette in una cassetta postale condivisa in cui la cassetta postale condivisa ha ricevuto un messaggio di posta elettronica protetto come parte di un gruppo di distribuzione.
-
-- Gli utenti possono visualizzare gli allegati che ereditano la protezione dai messaggi di posta elettronica quando utilizzano Outlook per Windows, Outlook per Mac e Outlook sul Web.
-
-## <a name="is-delegated-access-supported"></a>L'accesso delegato è supportato?
-
-Non in questo momento.
-
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>È possibile personalizzare i messaggi crittografati con il marchio dell'azienda?
 
 Sì! Per informazioni sulla personalizzazione dei messaggi di posta elettronica e del portale OME, vedere Aggiungere il marchio dell'organizzazione ai messaggi crittografati. Vedere [aggiungere il marchio dell'organizzazione ai messaggi crittografati](add-your-organization-brand-to-encrypted-messages.md).
@@ -162,3 +150,32 @@ Sì. Tutti i messaggi di posta elettronica crittografati sono individuabili dall
 ## <a name="can-i-remove-encryption-from-email"></a>È possibile rimuovere la crittografia dal messaggio di posta elettronica?
 
 Gli amministratori possono impostare una regola del flusso di posta per rimuovere la crittografia dalla posta in uscita. Non è possibile rimuovere la crittografia tramite una regola del flusso di posta dai messaggi in arrivo.
+
+## <a name="is-delegated-access-supported"></a>L'accesso delegato è supportato?
+
+Non in questo momento.
+
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>È possibile aprire i messaggi crittografati inviati a una cassetta postale condivisa?
+
+Sì! I messaggi crittografati sono supportati per una cassetta postale condivisa.
+
+- Gli utenti possono aprire mail protette in una mMailbox condivisa in cui la cassetta postale condivisa ha ricevuto un messaggio di posta elettronica protetto come parte di un gruppo di distribuzione.
+
+- Gli utenti possono visualizzare gli allegati che ereditano la protezione dai messaggi di posta elettronica quando utilizzano Outlook per Windows, Outlook per Mac e Outlook sul Web.
+
+Nella tabella seguente sono elencati i client supportati per le cassette postali condivise.
+
+| Piattaforma | Leggere la posta elettronica | Visualizzazione degli allegati di posta elettronica |
+|----------|-----------|------------------------|
+| Outlook sul web | Sì | Sì                |
+|  Outlook per Windows| Sì | Sì                |
+| Outlook per Mac    | Sì | Sì                |
+| Outlook per Android| Sì | No                 |
+| Outlook per iOS    | Sì | No                 |
+|
+
+Sono attualmente presenti due limitazioni note:
+
+- È supportato solo l'accesso fornito dall'assegnazione diretta degli utenti alla cassetta postale condivisa. Non è supportato l'assegnazione tramite un gruppo di sicurezza abilitato alla posta elettronica.
+
+- Non è possibile aprire gli allegati ai messaggi di posta elettronica ricevuti nei dispositivi mobili tramite Outlook Mobile.

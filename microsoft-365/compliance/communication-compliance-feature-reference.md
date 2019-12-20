@@ -1,5 +1,6 @@
 ---
 title: Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni (anteprima)
+description: Riferimento alla funzionalità per la conformità delle comunicazioni in Microsoft 365. Informazioni dettagliate e specifiche per ogni componente di funzionalità.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,13 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Riferimento alla funzionalità per la conformità delle comunicazioni in Microsoft 365. Informazioni dettagliate e specifiche per ogni componente di funzionalità.
-ms.openlocfilehash: 8ad7cb3d1d5e8e61fbd86dbdb4eea9b8e369e6ad
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: dc654a877e12eed308b5f8be9fd001ef9093398d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633595"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807931"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni (anteprima)
 
@@ -87,15 +87,19 @@ Prima di poter assegnare il connettore a un criterio di conformità della comuni
 
 ## <a name="policy-settings"></a>Impostazioni dei criteri
 
+### <a name="users"></a>Utenti
+
+È possibile selezionare **tutti gli utenti** o definire utenti specifici in un criterio di conformità della comunicazione. Se si seleziona **tutti gli utenti** , il criterio viene applicato a tutti gli utenti e a tutti i gruppi a cui è incluso un utente come membro. La definizione di utenti specifici applica il criterio agli utenti definiti e a tutti i gruppi a cui gli utenti definiti sono inclusi come membri.
+
 ### <a name="direction"></a>Direction
 
 Per impostazione predefinita, la **direzione è** la condizione viene visualizzata e non può essere rimossa. Le impostazioni relative alla direzione di comunicazione in un criterio vengono scelte singolarmente o contemporaneamente:
 
-- In **ingresso**: è possibile scegliere in **ingresso** per esaminare le comunicazioni inviate **alle** persone scelte per la supervisione **da** parte di utenti non inclusi nel criterio.
-- In **uscita**: è possibile scegliere in **uscita** se si desidera esaminare le comunicazioni inviate **dalle** persone che si è scelto di controllare **per** gli utenti non inclusi nel criterio.
+- In **ingresso**: è possibile scegliere in **ingresso** per esaminare le comunicazioni inviate **alle** persone scelte per la supervisione.
+- In **uscita**: è possibile scegliere in **uscita** se si desidera esaminare le comunicazioni inviate **dalle** persone scelte per la supervisione.
 - **Internal**: è possibile scegliere **Internal** per esaminare le comunicazioni inviate **tra** le persone identificate nel criterio.
 
-### <a name="sensitive-information-types"></a>Tipi di informazioni riservate
+### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
 
 È possibile includere i tipi di informazioni riservate nell'ambito del criterio di conformità della comunicazione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Nell'ambito del servizio di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md)di Office 365, la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
 
@@ -108,11 +112,11 @@ Per ulteriori informazioni sui dettagli riservati e sui modelli inclusi nei tipi
 
 ### <a name="custom-keyword-dictionaries"></a>Dizionari per parole chiave personalizzate
 
-Configure custom keyword Dictionary (o lessici) per fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria. I dizionari per parole chiave supportano fino a 100.000 termini per dizionario. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di conformità della comunicazione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che è possibile [importare nel centro conformità](create-a-keyword-dictionary.md).
+Configure custom keyword Dictionary (o lessici) per fornire una gestione semplice delle parole chiave specifiche per l'organizzazione o l'industria. I dizionari per parole chiave supportano fino a 100.000 termini per dizionario e supportano qualsiasi lingua. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio oppure disporre di un solo dizionario di parole chiave per ogni criterio. Questi dizionari sono assegnati a un criterio di conformità della comunicazione e possono essere provenienti da un file, ad esempio un elenco con estensione CSV o txt, oppure da un elenco che è possibile [importare nel centro conformità](create-a-keyword-dictionary.md). Utilizzare i dizionari personalizzati quando è necessario supportare termini o lingue specifiche per l'organizzazione e i criteri.
 
 ### <a name="classifiers"></a>Classificatori
 
-I classificatori incorporati analizzano i messaggi inviati o ricevuti su tutti i canali di comunicazione nell'organizzazione per diversi tipi di problemi di conformità. I classificatori utilizzano una combinazione di intelligenza artificiale e parole chiave per identificare la lingua nei messaggi suscettibili di violare i criteri di anti-molestia. I classificatori supportano attualmente solo le parole chiave in inglese nei messaggi.
+I classificatori incorporati analizzano i messaggi inviati o ricevuti su tutti i canali di comunicazione nell'organizzazione per diversi tipi di problemi di conformità. I classificatori utilizzano una combinazione di intelligenza artificiale e parole chiave per identificare la lingua nei messaggi suscettibili di violare i criteri di anti-molestia. I classificatori incorporati supportano attualmente solo le parole chiave in inglese nei messaggi.
 
 Conformità della comunicazione i classificatori incorporati analizzano le comunicazioni per i termini e i sentimenti per i seguenti tipi di lingua:
 
@@ -138,8 +142,8 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
 | **Il messaggio viene ricevuto da uno di questi domini**  <br><br> **Il messaggio non viene ricevuto da nessuno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi ricevuti. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica immesso viene applicato separatamente, solo un dominio o un indirizzo di posta elettronica devono essere applicati per il criterio da applicare al messaggio. <br><br> Se si desidera eseguire l'analisi di tutti i messaggi di posta elettronica da un dominio specifico, ma si desidera escludere il messaggio che non è necessario esaminare (newsletter, annunci e così via), è necessario configurare un **messaggi non ricevuti da una delle seguenti condizioni dei domini** che escludono l'indirizzo di posta elettronica (ad esempio "newsletter@contoso.com"). |
 | **Il messaggio viene inviato a uno di questi domini**  <br><br> **Il messaggio non viene inviato a uno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi inviati. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica viene applicato separatamente, per applicare il criterio al messaggio è necessario un solo dominio o un indirizzo di posta elettronica. <br><br> Se si desidera eseguire l'analisi di tutti i messaggi di posta elettronica inviati a un dominio specifico, ma si desidera escludere il messaggio inviato che non è necessario rivedere, è necessario configurare due condizioni: <br> -Un **messaggio viene inviato a una qualsiasi di queste condizioni dei domini** che definisce il dominio ("contoso.com") e <br> -Un **messaggio non viene inviato a una di queste condizioni di dominio** che escluda l'indirizzo di posta elettronica ("subscriptions@contoso.com"). |
 | **Il messaggio è classificato con una qualsiasi di queste etichette**  <br><br> **Il messaggio non è classificato con nessuna di queste etichette** | Per applicare il criterio quando determinate etichette di conservazione sono incluse o escluse in un messaggio. Le etichette di conservazione devono essere configurate separatamente e le etichette configurate vengono scelte come parte di questa condizione. Ogni etichetta scelta viene applicata separatamente (è necessario applicare solo una di queste etichette per il criterio da applicare al messaggio). Per ulteriori informazioni sulla configurazione delle etichette di conservazione, vedere [Overview of retention labels](labels.md).|
-| **Il messaggio contiene una o più delle seguenti parole**  <br><br> **Il messaggio contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un messaggio, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (solo una di queste righe deve richiedere il criterio da applicare al messaggio). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](communication-compliance-feature-reference.md#Matchwords).|
-| **L'allegato contiene una o più delle seguenti parole**  <br><br> **L'allegato contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un allegato del messaggio, ad esempio un documento di Word, immettere ogni parola o frase su una riga distinta. Ogni riga di parole immesse viene applicata separatamente (è necessario applicare solo una riga affinché il criterio venga applicato all'allegato). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](communication-compliance-feature-reference.md#Matchwords).|
+| **Il messaggio contiene una o più delle seguenti parole**  <br><br> **Il messaggio contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un messaggio, immettere ogni parola o frase e separare con una virgola. Ogni parola immessa viene applicata separatamente (è necessario applicare solo una parola per il criterio da applicare al messaggio). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](communication-compliance-feature-reference.md#Matchwords).|
+| **L'allegato contiene una o più delle seguenti parole**  <br><br> **L'allegato contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi sono incluse o escluse in un allegato del messaggio (ad esempio un documento di Word), immettere ogni parola o frase e separare con una virgola. Ogni parola immessa viene applicata separatamente (è necessario applicare solo una parola per il criterio da applicare all'allegato). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che [corrisponde a parole e frasi a messaggi di posta elettronica o allegati](communication-compliance-feature-reference.md#Matchwords).|
 | **Attachment è uno qualsiasi di questi tipi di file**  <br><br> **Attachment è nessuno di questi tipi di file** | Per controllare le comunicazioni che includono o escludono tipi specifici di allegati, immettere le estensioni di file, ad esempio. exe o. pdf. Se si desidera includere o escludere più estensioni di file, immetterle su righe separate. Per applicare il criterio, è necessario che sia presente una sola estensione per gli allegati.|
 | **La dimensione del messaggio è superiore a**  <br><br> **La dimensione del messaggio non è maggiore di** | Per esaminare i messaggi in base a una determinata dimensione, utilizzare queste condizioni per specificare le dimensioni massime o minime che un messaggio può avere prima che sia soggetto a revisione. Ad esempio, se si specifica che **la dimensione del messaggio è maggiore di** \> **1,0 MB**, tutti i messaggi che sono 1,01 MB e superiori sono soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
 | **L'allegato è più grande di**  <br><br> **L'allegato non è più grande di** | Per esaminare i messaggi in base alle dimensioni degli allegati, specificare le dimensioni massime o minime che un allegato può avere prima che il messaggio e i suoi allegati siano soggetti a revisione. Ad esempio, se si specifica **Attachment è maggiore di** \> **2,0 MB**, tutti i messaggi con allegati 2,01 MB e oltre sono soggetti a revisione. Per questa condizione è possibile scegliere byte, kilobyte, megabyte o gigabyte.|
@@ -147,7 +151,7 @@ Nella tabella seguente vengono illustrate altre informazioni su ogni condizione.
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Corrispondenza di parole e frasi a messaggi di posta elettronica o allegati
 <a name="Matchwords"> </a>
 
-Ogni riga di parole immesse viene applicata separatamente (è necessario applicare solo una riga per la condizione di criteri da applicare al messaggio di posta elettronica o all'allegato). Ad esempio, usiamo la condizione, il **messaggio contiene una o più delle seguenti parole**, con le parole chiave "Banker" e "insider trading" su righe separate. Il criterio si applica a tutti i messaggi che includono la parola "Banker" o la frase "insider trading". Per applicare questa condizione di criteri, è necessario che si verifichi solo una di queste parole o frasi. Le parole del messaggio o dell'allegato devono corrispondere esattamente a quelle immesse.
+Ogni parola immessa e separata con una virgola viene applicata separatamente (è necessario applicare solo una parola per la condizione di criteri da applicare al messaggio di posta elettronica o all'allegato). Ad esempio, usiamo la condizione, il **messaggio contiene una di queste parole**, con le parole chiave "Banker" e "insider trading" separati da una virgola (banchiere, insider trading). Il criterio si applica a tutti i messaggi che includono la parola "Banker" o la frase "insider trading". Per applicare questa condizione di criteri, è necessario che si verifichi solo una di queste parole o frasi. Le parole del messaggio o dell'allegato devono corrispondere esattamente a quelle immesse.
 
 Per analizzare i messaggi di posta elettronica e gli allegati per le stesse parole chiave, creare un [criterio di prevenzione della perdita di dati](create-test-tune-dlp-policy.md) con un dizionario di parole [chiave personalizzato](create-a-keyword-dictionary.md) per i termini che si desidera analizzare nei messaggi. Questa configurazione dei criteri identifica le parole chiave definite che vengono visualizzate nel messaggio di posta elettronica **o** nell'allegato di posta elettronica. Utilizzando le impostazioni standard dei criteri condizionali (il*messaggio contiene una di queste parole* e l' *allegato contiene una di queste parole*) per identificare i termini nei messaggi e negli allegati è necessario che i termini siano presenti **sia** nel messaggio che nell'allegato.
   
@@ -253,7 +257,10 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 
 ## <a name="audit"></a>Audit
 
-In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Può trattarsi di un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento in cui un criterio di conformità della comunicazione cambia. I criteri di conformità della comunicazione hanno percorsi di controllo incorporati per una preparazione completa per i controlli interni o esterni. Le cronologie di controllo dettagliate di ogni azione di creazione, modifica ed eliminazione vengono acquisite dai criteri di comunicazione per fornire la prova delle procedure di supervisione.
+In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Può trattarsi di un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento in cui cambia il criterio di conformità della comunicazione. I criteri di conformità della comunicazione hanno percorsi di controllo incorporati per una preparazione completa per i controlli interni o esterni. Le cronologie di controllo dettagliate di ogni azione di creazione, modifica ed eliminazione vengono acquisite dai criteri di comunicazione per fornire la prova delle procedure di supervisione.
+
+> [!Important]
+> È necessario che il controllo sia abilitato per l'organizzazione prima che vengano registrati gli eventi di conformità della comunicazione. Per abilitare il controllo, vedere [Enable Auditing for your Communication Compliance Policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
 
 Per visualizzare le attività relative ai criteri di conformità della comunicazione, selezionare il controllo **Esporta attività di revisione** nella pagina principale per tutti i criteri. In questo modo viene generato un file di controllo nel formato CSV che contiene le informazioni seguenti:
 

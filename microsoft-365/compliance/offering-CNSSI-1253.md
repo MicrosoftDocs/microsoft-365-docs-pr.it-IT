@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 12af7c84a922e3db0b7d234dce6f4095ba062a64
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 7e5d72b6a8992b8db91820c04b451979b474aeb9
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860036"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805419"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Commissione per i sistemi di sicurezza nazionale istruzione no. 1253 (CNSSI 1253)
 
@@ -44,7 +45,7 @@ La conformità di Azure Government con i requisiti esigenti di CNSSI 1253 signif
 
 Azure Government CNSSI 1253 Attestation of Compliance to the CNSSI 1253 High-High-higher Baseline
 
-## <a name="how-to-implement"></a>Come implementare
+## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 - [Documentazione di Azure Government](https://docs.microsoft.com/azure/azure-government/): guide e procedure guidate consentono agli sviluppatori di distribuire e gestire i servizi utilizzando Azure Government.
 

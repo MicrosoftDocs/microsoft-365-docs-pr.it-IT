@@ -1,5 +1,5 @@
 ---
-title: Distribuire un connettore per archiviare i dati di Facebook in Office 365
+title: Distribuire un connettore per archiviare i dati di Facebook
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore nativo per l'importazione e l'archiviazione di pagine business di Facebook in Office 365. Dopo aver importato i dati in Office 365, è possibile utilizzare le funzionalità di conformità, ad esempio la conservazione legale, la ricerca di contenuto e i criteri di ritenzione per gestire la governance dei dati di Facebook dell'organizzazione.
-ms.openlocfilehash: 786ff97c558a5618643783de803c742c50185f00
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e1ab281b8a3b684f408f80f86246778a9ee6267d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686498"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806259"
 ---
-# <a name="deploy-a-connector-to-archive-facebook-data-in-office-365"></a>Distribuire un connettore per archiviare i dati di Facebook in Office 365
+# <a name="deploy-a-connector-to-archive-facebook-data"></a>Distribuire un connettore per archiviare i dati di Facebook
 
 Questo articolo contiene il processo dettagliato per la distribuzione di un connettore che utilizza il servizio di importazione di Office 365 per importare i dati da pagine business di Facebook a Office 365. Per una panoramica generale di questo processo e un elenco dei prerequisiti necessari per distribuire un connettore Facebook, vedere [use a sample Connector to Archive Facebook Data in Office 365 (Preview)](archive-facebook-data-with-sample-connector.md). 
 
@@ -232,9 +232,9 @@ Scaricare il pacchetto precompilato dalla sezione Release nell'archivio GitHub a
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Passaggio 7: configurare un connettore personalizzato nel centro sicurezza & Compliance
 
-1. Andare a <https://protection.office.com> e quindi fare clic su data **governance \> Import \> Archive data di terze parti**.
+1. Passare a <https://protection.office.com> e quindi fare clic su **dati di terze parti sull' \> importazione \> di governance delle informazioni**.
 
-   ![Accedere al centro sicurezza e conformità e fare clic su data governance > Import > Archive data di terze parti](media/FBCimage44.png)
+   ![Accedere al centro sicurezza e conformità e fare clic su Information Governance > Import > Archive data di terze parti](media/FBCimage44.png)
 
 2.  Fare clic su **Aggiungi connettore** e quindi su **pagine di Facebook**.
 

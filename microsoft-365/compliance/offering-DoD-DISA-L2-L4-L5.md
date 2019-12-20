@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: d805c5dab7e8ebeb31ea94895356a6529bcd970d
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 2fa27680dcc9e0ee7fb495164683a291cc167d59
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859956"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805229"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorizzazione provvisoria del dipartimento della difesa degli Stati Uniti (DoD) ai livelli di impatto 2, 4 e 5
 
@@ -102,7 +103,7 @@ Inoltre, le offerte di Microsoft al di fuori del limite certificato FedRAMP che 
 - [Supporto per il servizio del cloud DISA](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
 - [Protezione delle informazioni non classificate controllate nei sistemi informativi e nelle organizzazioni non federali](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [Framework Cybersecurity NIST](https://www.nist.gov/cyberframework)
-- [Quadro di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 

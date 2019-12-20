@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3adc0bcc75886476de9f088c1f539c63fe4e4be8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: b49a898c3a517b6c9468478ad7b7eddeeee1755c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859966"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805239"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>Digital Production partnership (DPP) Regno Unito
 
@@ -43,7 +44,7 @@ Il contrassegno di trasmissione di Azure è valido per un anno e viene rinnovato
 - [Elenco di controllo dei requisiti di sicurezza per broadcaster di Azure NABA DPP](https://aka.ms/Azure-CTS-Broadcast-Checklist)
 - [DPP impegnato in società di sicurezza aggiudicate i marchi](https://aka.ms/Azure-Asset-Mgmt)
 
-## <a name="how-to-implement"></a>Come implementare
+## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 - [Asset Management Hardening Guide](https://aka.ms/Azure-Asset-Mgmt): procedure consigliate in Azure Proteggi il contenuto prerilascio da divulgazione, modifica o eliminazione non autorizzata.
 - [Servizi di Azure Media](https://docs.microsoft.com/azure/media-services/): creare soluzioni che raggiungano la codifica video ad alta definizione e lo streaming video di qualità broadcast.
@@ -52,7 +53,7 @@ Il contrassegno di trasmissione di Azure è valido per un anno e viene rinnovato
 
 - [DPP dedicato al programma di sicurezza broadcast Checklist Guida utente](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [Le emittenti NABA e DPP si uniscono per promuovere i requisiti di sicurezza cibernetica dei fornitori](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 

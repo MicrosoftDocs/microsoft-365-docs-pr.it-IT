@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b5fb48ebaf16d2f7c17645c347185326cde6eefa
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 5ec81552de43d2e67a4987b0efbaf5582be26e40
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859576"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804449"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministry of Electronics and Information Technology (Riccardo)
 
@@ -41,7 +42,8 @@ L'accreditamento di Riccardo di Microsoft è stato il risultato di un rigoroso a
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Intune
+- [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
@@ -58,7 +60,7 @@ La messa a disposizione dei servizi governativi ai cittadini online è una parte
 - [Ministero dell'elettronica e della tecnologia dell'informazione](https://meity.gov.in/)
 - [Iniziativa cloud di MeghRaj](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Provider di servizi cloud accreditati](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 

@@ -1,5 +1,5 @@
 ---
-title: Configurare un criterio di archiviazione ed eliminazione per le cassette postali nell'organizzazione di Office 365
+title: Configurare criteri di archiviazione ed eliminazione per le cassette postali in un'organizzazione di Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,14 +17,14 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Creare un criterio di archiviazione ed eliminazione in Office 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
-ms.openlocfilehash: 801f97b658df08cd3c548c6aed99018a8613b473
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6da5d9bc180623778925697419f0ca39acee9185
+ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686611"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39967769"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurare un criterio di archiviazione ed eliminazione per le cassette postali nell'organizzazione di Office 365
+# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurare criteri di archiviazione ed eliminazione per le cassette postali in un'organizzazione di Office 365
 
  In Office 365, gli amministratori possono creare un criterio di eliminazione e archiviazione che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente ed Elimina automaticamente gli elementi dalla cassetta postale. L'amministratore esegue questa operazione creando un criterio di conservazione assegnato alle cassette postali e sposta gli elementi nella cassetta postale di archiviazione di un utente dopo un determinato periodo di tempo e che elimina anche gli elementi dalla cassetta postale dopo aver raggiunto un determinato limite di validità. Le regole effettive che determinano gli elementi spostati o eliminati e quando ciò accade sono denominati tag di conservazione. I tag di conservazione sono collegati a un criterio di conservazione, che a sua sua è assegnato alla cassetta postale di un utente. Un tag di conservazione applica le impostazioni di conservazione ai singoli messaggi e alle cartelle della cassetta postale di un utente. Definisce per quanto tempo un messaggio rimane nella cassetta postale e l'azione che viene eseguita quando il messaggio raggiunge l'età di conservazione specificata. Quando un messaggio raggiunge il periodo di validità della conservazione, viene spostato nella cassetta postale di archiviazione dell'utente oppure viene eliminato. 
   
@@ -44,7 +44,7 @@ La procedura descritta in questo articolo consentirà di impostare un criterio d
     
 È possibile seguire alcuni o tutti i passaggi descritti in questo articolo per configurare un criterio di eliminazione e archiviazione per le cassette postali nella propria organizzazione. È consigliabile testare questo processo su poche cassette postali prima di implementarlo in tutte le cassette postali dell'organizzazione.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per eseguire la procedura descritta in questo argomento, è necessario essere un amministratore globale dell'organizzazione di Office 365. 
     
@@ -64,7 +64,7 @@ Il primo passaggio consiste nell'abilitare la cassetta postale di archiviazione 
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. Nel centro sicurezza & conformità, accedere a \> **Archivio**di **governance dei dati** .
+3. Nel centro sicurezza & conformità, accedere a archivio **informazioni sulla governance** \> ****.
     
     Viene visualizzato un elenco delle cassette postali nell'organizzazione e se la corrispondente cassetta postale di archiviazione è abilitata o disabilitata. 
     

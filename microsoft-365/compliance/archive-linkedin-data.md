@@ -1,5 +1,5 @@
 ---
-title: Configurare un connettore per archiviare i dati di LinkedIn in Office 365 (anteprima)
+title: Configurare un connettore per archiviare i dati di LinkedIn (anteprima)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore nativo per importare i dati da una pagina società di LinkedIn a Office 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per poter utilizzare le funzionalità di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e mantenimento, per gestire la conformità dei dati di terze parti dell'organizzazione.
-ms.openlocfilehash: bd11102a15396132cb192d8b0a4cc9a0dfca5645
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: 6aff67ea9112b8215ba5b10dbdd6ce3a08876984
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615626"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807791"
 ---
-# <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Configurare un connettore per archiviare i dati di LinkedIn in Office 365 (anteprima)
+# <a name="set-up-a-connector-to-archive-linkedin-data-preview"></a>Configurare un connettore per archiviare i dati di LinkedIn (anteprima)
 
 La funzionalità del connettore per l'archiviazione dei dati da LinkedIn Company Pages in Office 365 è in anteprima.
 
@@ -35,7 +35,7 @@ Dopo che i dati della pagina della società LinkedIn sono archiviati in una cass
 
 ## <a name="create-a-linkedin-connector"></a>Creare un connettore LinkedIn
 
-1. Andare a <https://protection.office.com> e selezionare **Importa data governance \> ** , quindi selezionare **archivia dati di terze parti**.
+1. Andare a <https://protection.office.com> e quindi fare clic su **Importa informazioni sulla governance \> > archiviazione dei dati di terze parti**.
 
 2. Nella pagina **archivio dati di terze parti** selezionare **Aggiungi un connettore**e quindi fare clic su **LinkedIn**.
 
@@ -65,7 +65,7 @@ Dopo aver creato il connettore, è possibile tornare alla pagina di **archiviazi
 
 Per visualizzare ulteriori dettagli, selezionare il connettore nell'elenco nella pagina **archivia dati di terze parti** per visualizzarne la pagina. In **stato**, l'intervallo di date visualizzato indica il filtro di età che è stato selezionato quando è stato creato il connettore. 
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Gli elementi di LinkedIn vengono importati nella cartella posta in arrivo nella cassetta postale di archiviazione in Office 365. Vengono visualizzati come messaggi di posta elettronica. Il nome visualizzato del mittente del messaggio è il nome della pagina della società LinkedIn. L'indirizzo di posta elettronica effettivo del mittente è l'indirizzo di posta elettronica della cassetta postale di archiviazione. Il nome della pagina società è inoltre preaccodato alla riga dell'oggetto. 
 
