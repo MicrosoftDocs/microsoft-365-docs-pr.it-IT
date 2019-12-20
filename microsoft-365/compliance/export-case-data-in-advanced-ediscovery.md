@@ -3,6 +3,7 @@ title: Esportare i dati del caso in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: "Informazioni sulle linee guida per l'esportazione dei dati del caso di eDiscovery e dei risultati per la revisione tramite il processo di esportazione in Office 365 Advanced eDiscovery.  "
-ms.openlocfilehash: 936a9e15c2a8ad4ad6698c1145d969ec76810010
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 22713d38bf93f32a59646d6b0105f6c0cece69bd
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083648"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805809"
 ---
 # <a name="export-case-data-in-office-365-advanced-ediscovery"></a>Esportare i dati del caso in Office 365 Advanced eDiscovery
 

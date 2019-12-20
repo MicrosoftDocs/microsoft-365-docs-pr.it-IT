@@ -1,7 +1,7 @@
 ---
 title: Numero di identificazione fiscale dell'Unione europea
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In questo argomento viene illustrato l'aspetto di un criterio di prevenzione della perdita di dati (DLP) quando viene rilevato il tipo di informazioni riservate del numero di identificazione fiscale dell'Unione europea. Questo tipo di informazioni riservate definisce modelli, parole chiave e altre evidenze diverse per ogni paese.
-ms.openlocfilehash: adcd9be9b5f8775ad39010d771ff2ac214df1e17
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0ee76fa46bb22b2754098d053ab769b862fdd3f2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083664"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805849"
 ---
 # <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale dell'Unione europea
 
@@ -2027,5 +2027,5 @@ Tax File No.
   
 ## <a name="see-also"></a>Vedere anche
 
-[Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
+[Tipi di informazioni riservate disponibili da cercare](what-the-sensitive-information-types-look-for.md)
 

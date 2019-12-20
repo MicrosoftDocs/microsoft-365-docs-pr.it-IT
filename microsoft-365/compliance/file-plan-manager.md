@@ -1,7 +1,7 @@
 ---
 title: Panoramica della gestione del piano file
-ms.author: stephow
-author: stephow-MSFT
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,25 +14,31 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri di etichette di conservazione ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
-ms.openlocfilehash: 38bfb1e6a6cde931804e518660ddf6c2b45205b0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a79f24beb83c27873824973410daff953e989175
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083750"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805889"
 ---
 # <a name="overview-of-file-plan-manager"></a>Panoramica della gestione del piano file
 
-La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri di etichette di conservazione ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
+La funzionalità Gestione del piano di archiviazione fornisce funzionalità avanzate per la gestione di criteri di etichette di conservazione ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l'intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, fino all'eliminazione finale. 
+
+Per accedere a Gestione del piano di archiviazione nel Centro sicurezza e conformità, passare a **Gestione record** > **Piano di archiviazione**.
 
 ![Pagina del piano file](media/file-plan-page.png)
 
 ## <a name="accessing-file-plan-manager"></a>Accesso alla gestione del piano file
 
 I requisiti per accedere al piano file sono due:
+
 - Un abbonamento a Office 365 Enterprise E5.
-- L’utente dispone di uno dei ruoli seguenti nel Centro sicurezza e conformità:
+
+- All'utente è stato assegnato uno dei ruoli seguenti nel Centro sicurezza e conformità:
+    
     - Responsabile della conservazione
+    
     - Responsabile della conservazione solo visualizzazione
 
 ## <a name="default-retention-labels-and-label-policy"></a>Etichette di conservazione e criteri di etichetta predefiniti
@@ -58,7 +64,7 @@ La gestione del piano file semplifica la visualizzazione unica delle impostazion
 
 Si noti che le etichette di conservazione create all'esterno del piano file saranno disponibili nel piano file e viceversa.
 
-Nella tabella **etichette piano file** sono disponibili le seguenti informazioni e funzionalità aggiuntive:
+Nella scheda **Etichette** del piano di archiviazione sono disponibili le funzionalità e le informazioni aggiuntive seguenti:
 
 ### <a name="label-settings-columns"></a>Colonne impostazioni etichetta
 
@@ -83,17 +89,17 @@ Nella tabella **etichette piano file** sono disponibili le seguenti informazioni
 
 ![Impostazioni delle etichette nel piano file](media/file-plan-label-columns.png)
 
-### <a name="retention-label-file-plan-descriptors-columns"></a>Colonne dei descrittori del piano file delle etichette di conservazione
+### <a name="retention-label-file-plan-descriptors-columns"></a>Colonne dei descrittori del piano di archiviazione delle etichette di conservazione
 
-È ora possibile includere altre informazioni nella configurazione delle etichette di conservazione. L’inserimento di descrittori del piano file nelle etichette di conservazione migliora la gestibilità e l'organizzazione del piano file.
+È ora possibile includere altre informazioni nella configurazione delle etichette di conservazione. L'inserimento di descrittori del piano di archiviazione nelle etichette di conservazione consente di ottimizzare la gestione e l'organizzazione del piano di archiviazione.
 
-Per iniziare, la gestione del piano file fornisce alcuni valori predefiniti per: funzione/reparto, categoria, tipo di autorità e disposizione/citazione. È possibile aggiungere nuovi valori al descrittore del piano file quando si crea o si modifica un'etichetta di conservazione.
+Per iniziare, Gestione del piano di archiviazione fornisce alcuni valori predefiniti per Funzione/reparto, Categoria, Tipo di autorità e Clausola/citazione. È possibile aggiungere nuovi valori al descrittore del piano di archiviazione quando si crea o si modifica un'etichetta di conservazione. È anche possibile specificare descrittori del piano di archiviazione durante l'importazione di etichette di conservazione nel piano. 
 
 Ecco una visualizzazione del passaggio dei descrittori del piano file quando si crea o modifica un'etichetta di conservazione.
 
-![Descrittori del piano file](media/file-plan-descriptors.png)
+![Descrittori del piano di archiviazione](media/file-plan-descriptors.png)
 
-Ecco una visualizzazione delle colonne dei descrittori del piano file nella scheda etichette della gestione del piano file.
+Ecco una visualizzazione delle colonne dei descrittori del piano di archiviazione nella scheda **Etichette** di Gestione del piano di archiviazione.
 
 ![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
 
@@ -101,7 +107,7 @@ Ecco una visualizzazione delle colonne dei descrittori del piano file nella sche
 
 Dalla gestione del piano file, è possibile esportare i dettagli di tutte le etichette di conservazione in un file CSV per agevolare le analisi di conformità periodiche con le parti interessate responsabili della governance dei dati all'interno dell'organizzazione.
 
-Per esportare tutte le etichette di conservazione, passare a **gestione del piano file** \> **azioni del piano file** \> **esporta etichette**.
+Per esportare tutte le etichette di conservazione, nella pagina **Piano di archiviazione** selezionare **Azioni piano file** \> **Esporta etichette**.
 
 ![Opzione per esportare il piano file](media/file-plan-export-labels-option.png)
 
@@ -109,52 +115,58 @@ Verrà aperto un file CSV che contiene tutte le etichette di conservazione esist
 
 ![File CSV con tutte le etichette di conservazione](media/file-plan-csv-file.png)
 
-## <a name="import-retention-labels-into-your-file-plan"></a>Importare le etichette di conservazione nel piano file
+## <a name="import-retention-labels-into-your-file-plan"></a>Importare le etichette di conservazione nel piano di archiviazione
 
-Dalla gestione del piano file, è possibile importare in blocco nuove etichette di conservazione nonché modificare le etichette di conservazione esistenti.
+In Gestione del piano di archiviazione è possibile importare in blocco nuove etichette di conservazione nonché modificare le etichette di conservazione esistenti.
 
-Per importare nuove etichette di conservazione e aggiornare le etichette di conservazione esistenti, passare a **gestione del piano file** \> **azioni del piano file** \> **importa etichette**.
+Per importare nuove etichette di conservazione e modificare le etichette di conservazione esistenti: 
 
-![Opzione per importare il piano file](media/file-plan-import-labels-option.png)
+1. Nella pagina **Piano di archiviazione** passare a **Azioni piano file** > **Importa etichette**.
 
-![Opzione per scaricare un modello di piano file vuoto](media/file-plan-blank-template-option.png)
+   ![Opzione per importare il piano file](media/file-plan-import-labels-option.png)
 
-Scaricare un modello vuoto (o creare a partire da un'esportazione del piano file corrente).
+   ![Opzione per scaricare un modello di piano file vuoto](media/file-plan-blank-template-option.png)
 
-![Modello di piano file vuoto aperto in Excel](media/file-plan-blank-template.png)
+2. Scaricare un modello vuoto per importare le nuove etichette di conservazione. In alternativa, è possibile iniziare con il file CSV esportato durante l'esportazione delle etichette di conservazione esistenti nell'organizzazione.
 
-Compilare il modello. Questa tabella fornisce valori validi.
+   ![Modello di piano di archiviazione vuoto aperto in Excel](media/file-plan-blank-template.png)
 
-|**Proprietà**|**Tipo**|**Valori validi**|
-|:-----|:-----|:-----|
-|LabelName|Stringa|Se il valore contiene degli spazi, è necessario racchiuderlo tra virgolette (").|
-|Commento|Stringa|Se il valore contiene degli spazi, è necessario racchiuderlo tra virgolette ("). |
-|Note|Stringa|Personalizzato|
-|IsRecordLabel|Stringa|$true: L'etichetta è un'etichetta record.</br>$false: L'etichetta non è un'etichetta record. Questo è il valore predefinito.|
-|RetentionAction|Stringa|Elimina</br>Conserva</br>KeepAndDelete |
-|RetentionDuration|Stringa|La proprietà specifica per quanti giorni mantenere il contenuto. I valori validi sono:</br>Un numero intero positivo.</br>Il valore è illimitato.|
-|RetentionType|Stringa|La proprietà specifica se la durata del periodo di conservazione è stata calcolata a partire dalla data di creazione del contenuto, dalla data etichettata (contrassegnata) o dalla data dell'ultima modifica. I valori validi sono:</br>CreationAgeInDays</br>EventAgeInDays</br>ModificationAgeInDays</br>TaggedAgeInDays |
-|ReviewerEmail|SmtpAddress[]|Questa proprietà consente di specificare l'indirizzo di posta elettronica del revisore per le azioni di conservazione Delete e KeepAndDelete. È possibile indicare più indirizzi di posta elettronica separati da virgole.|
-|ReferenceId|Stringa|Personalizzato|
-|Departmentname|Stringa|Personalizzato|
-|Categoria|Stringa|Personalizzato|
-|Sottocategoria|Stringa|Personalizzato|
-|AuthorityType|Stringa|Personalizzato|
-|CitationName|Stringa|Personalizzato|
-|CitationUrl|Stringa|Personalizzato|
-|CitationJurisdiction|Stringa|Personalizzato|
-|Normativa|Stringa|Personalizzato|
-|EventType|Stringa|Questa proprietà specifica la regola di conservazione associata all'etichetta. È possibile utilizzare qualsiasi valore che identifichi la regola in modo univoco. Ad esempio:</br>Nome</br>Nome distinto (DN)</br>GUID </br>È possibile usare il cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/it-IT/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) per visualizzare le regole di conservazione disponibili.|
+3. Compilare il modello. Di seguito sono descritte le proprietà e i valori validi per ogni proprietà nel modello del piano di archiviazione.<br/>
 
-![Modello del piano file compilato con le informazioni](media/file-plan-filled-out-template.png)
+   |**Proprietà**|**Tipo**|**Valori validi**|
+   |:-----|:-----|:-----|
+   |LabelName|Stringa|Questa proprietà specifica il nome dell'etichetta di conservazione.|
+   |Comment|Stringa|Usare questa proprietà per aggiungere una descrizione relativa all'etichetta di conservazione per gli amministratori. Questa descrizione viene visualizzata solo agli amministratori che gestiscono l'etichetta nel Centro sicurezza e conformità.|
+   |Notes|Stringa|Usare questa proprietà per aggiungere una descrizione relativa all'etichetta di conservazione per gli utenti. Questa descrizione viene visualizzata quando gli utenti passano con il mouse sull'etichetta in app quali Outlook, SharePoint e OneDrive. Se si lascia vuota questa proprietà, viene visualizzata una descrizione predefinita, che illustra le impostazioni di conservazione dell'etichetta. |
+   |IsRecordLabel|Stringa|Questa proprietà specifica se l'etichetta è un'etichetta record. Gli elementi contrassegnati con un'etichetta record sono dichiarati come record. I valori validi sono:</br>**TRUE**: l'etichetta è un'etichetta record. Tenere presente che gli elementi dichiarati come record non possono essere eliminati. </br>**FALSE**: l'etichetta non è un'etichetta record. Questo è il valore predefinito.|
+   |RetentionAction|Stringa|Questa proprietà specifica l'azione da intraprendere dopo la scadenza del valore specificato dalla proprietà RetentionDuration. I valori validi sono:</br>**Delete**: gli elementi più vecchi del valore specificato dalla proprietà RetentionDuration vengono eliminati.</br>**Keep**: gli elementi vengono mantenuti per la durata specificata dalla proprietà RetentionDuration e non viene eseguita alcuna azione alla scadenza del periodo definito per la durata. </br>**KeepAndDelete**: gli elementi vengono mantenuti per la durata specificata dalla proprietà RetentionDuration e quindi vengono eliminati alla scadenza del periodo definito per la durata.   |
+   |RetentionDuration|Stringa|La proprietà specifica per quanti giorni mantenere il contenuto. I valori validi sono:</br>**Unlimited**: gli elementi verranno mantenuti a tempo indeterminato. </br>***n***: un numero intero positivo, ad esempio **365**. 
+   |RetentionType|Stringa|Questa proprietà specifica se la durata del periodo di conservazione è stata calcolata a partire dalla data di creazione del contenuto, dalla data dell'evento, dalla data di etichettatura (aggiunta del contrassegno) o dalla data dell'ultima modifica. I valori validi sono:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
+   |ReviewerEmail|SmtpAddress|Quando questa proprietà è popolata, verrà attivata una revisione delle clausole alla scadenza della durata della conservazione. Questa proprietà consente di specificare l'indirizzo di posta elettronica del revisore per le azioni di conservazione **Delete** e **KeepAndDelete**. È possibile includere l'indirizzo di posta elettronica di singoli utenti, gruppi di distribuzione o di sicurezza oppure di gruppi di Office 365. È possibile indicare più indirizzi di posta elettronica separati da virgole.|
+   |ReferenceId|Stringa|Questa proprietà specifica il valore visualizzato nel descrittore **ID riferimento** del piano di archiviazione.| 
+   |DepartmentName|Stringa|Questa proprietà specifica il valore visualizzato nel descrittore **Funzione/reparto** del piano di archiviazione.|
+   |Category|Stringa|Questa proprietà specifica il valore visualizzato nel descrittore **Categoria** del piano di archiviazione.|
+   |SubCategory|Stringa|Questa proprietà specifica il valore visualizzato nel descrittore **Sottocategoria** del piano di archiviazione.|
+   |AuthorityType|Stringa|Questa proprietà specifica il valore visualizzato nel descrittore **Tipo di autorità** del piano di archiviazione.|
+   |CitationName|Stringa|Questa proprietà specifica il nome della citazione visualizzata nel descrittore **Clausola/citazione** del piano di archiviazione, ad esempio "Sarbanes-Oxley Act del 2002". |
+   |CitationUrl|Stringa|Questa proprietà specifica l'URL visualizzato nel descrittore **Clausola/citazione** del piano di archiviazione.|
+   |CitationJurisdiction|Stringa|Questa proprietà specifica la giurisdizione o l'agenzia visualizzata nel descrittore **Clausola/citazione** del piano di archiviazione, ad esempio "U.S. Securities and Exchange Commission (SEC)".|
+   |Regulatory|Stringa|Lasciare vuota. Questa proprietà non viene usata al momento.|
+   |EventType|Stringa|Questa proprietà specifica la regola di conservazione associata all'etichetta. È possibile utilizzare qualsiasi valore che identifichi la regola in modo univoco. Ad esempio:</br>**Nome**</br>**Nome distinto (DN)**</br>**GUID** </br>È possibile usare il cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) per visualizzare le regole di conservazione disponibili. Tenere presente che se si esportano etichette da un'organizzazione di Office 365, non è possibile usare i valori per la proprietà EventType di tale organizzazione durante l'importazione delle etichette in un'altra organizzazione di Office 365. Questa limitazione è dovuta al fatto che i valori di EventType sono specifici di un'organizzazione. |
+   |||
 
-Caricare il modello compilato e la gestione del piano file convaliderà le voci e visualizzerà le statistiche di importazione.
+   Ecco un esempio di modello che contiene informazioni sulle etichette di conservazione.
 
-![Statistiche di importazione del piano file](media/file-plan-import-statistics.png)
+   ![Modello del piano di archiviazione compilato con le informazioni](media/file-plan-filled-out-template.png)
 
-Se è presente un errore di convalida, l'importazione del piano file continuerà a convalidare ogni voce nel file di importazione e visualizzerà tutti gli errori che fanno riferimento a numeri di linea o riga nel file di importazione, copierà i risultati degli errori visualizzati in modo che sia possibile facilmente tornare al file di importazione e correggere gli errori. 
+4. Al passaggio 3 della pagina della procedura guidata di importazione del piano di archiviazione fare clic su **Cerca file** per caricare il modello compilato. 
 
-Al termine dell'importazione, tornare alla gestione del piano file per associare le nuove etichette di conservazione ai criteri nuovi o esistenti delle etichette di conservazione.
+   Gestione del piano di archiviazione convaliderà le voci e visualizzerà le statistiche di importazione.
 
-![Opzione per pubblicare le etichette](media/file-plan-publish-labels-option.png)
+   ![Statistiche di importazione del piano di archiviazione](media/file-plan-import-statistics.png)
 
+   Se è presente un errore di convalida, la funzionalità di importazione del piano di archiviazione continuerà a convalidare ogni voce nel file di importazione e visualizzerà tutti gli errori che fanno riferimento a numeri di riga nel file di importazione, quindi copierà i risultati degli errori visualizzati in modo che sia possibile facilmente tornare al file di importazione e correggere gli errori.
+
+5. Al termine dell'importazione, tornare a Gestione del piano di archiviazione per associare le nuove etichette di conservazione ai criteri nuovi o esistenti delle etichette di conservazione.
+
+   ![Opzione per pubblicare le etichette](media/file-plan-publish-labels-option.png)
