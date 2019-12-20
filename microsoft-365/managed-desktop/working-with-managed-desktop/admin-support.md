@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b17b5a3458458ff0c73c93fa184ef8ff6a064199
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: faa0e904ef2a07ccd209ef91630ce6fc8205e347
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38011997"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801197"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Supporto di amministrazione per Microsoft Managed Desktop
 
@@ -41,7 +41,7 @@ Il tempo di risposta iniziale è il periodo da quando si invia la richiesta di s
 Livello di gravità  | Situazione dei clienti |  Tempo di risposta iniziale   | Risposta del cliente prevista
 --- | --- | --- | ---
 **Gravità A – impatto critico** |  **Impatto aziendale critico**<br><br>L'azienda del cliente ha una perdita significativa o un calo dei servizi e richiede attenzione immediata.<br><br>**Impatto maggiore sulla compatibilità delle applicazioni**<br><br>L'intera azienda del cliente subisce un impatto finanziario a causa di crash o perdita di funzionalità critiche | Iniziale: < 1 ora<br>Aggiornamento: 60 minuti<br>24x7 disponibile | Quando si seleziona Severity A, si conferma che il problema ha un impatto critico sull'azienda, con grave perdita e degrado dei servizi. <br><br>Il problema richiede una risposta immediata e si impegna a una continua operazione 24x7 ogni giorno con il team Microsoft fino alla risoluzione, altrimenti Microsoft può a propria discrezione ridurre la gravità al livello B.<br><br> È inoltre necessario verificare che Microsoft disponga di informazioni di contatto accurate. 
-**Gravità B-impatto moderato** |  **Impatto aziendale moderato**<br><br>L'azienda del cliente ha una perdita o un peggioramento moderato dei servizi, ma il lavoro può ragionevolmente continuare in modo compromessa.<br><br>**Impatto moderato sulla compatibilità delle applicazioni**<br><br>Un gruppo aziendale specifico non è più produttivo, a causa di un comportamento di crash o di perdita di funzionalità critiche. |  Iniziale: < 4 ore<br>Aggiornamento: 12 ore<br>Orario di ufficio (24x7 disponibile) | Quando si seleziona Severity B, si conferma che il problema ha un impatto moderato sull'azienda con perdita e degrado dei servizi, ma le soluzioni alternative consentono una continuità di business ragionevole, seppur temporanea. <br><br>Il problema richiede una risposta urgente. Se si è scelto 24x7 quando si invia la richiesta di supporto, è necessario eseguire un'operazione continua 24x7 ogni giorno con il team Microsoft fino alla risoluzione, altrimenti Microsoft può a propria discrezione decrementare il livello C. Se si è scelto il supporto per l'orario di ufficio quando si invia un incidente di gravità B, Microsoft vi contatterà solo durante l'orario di ufficio.<br><br>È inoltre necessario verificare che Microsoft disponga di informazioni di contatto accurate.
+**Gravità B-impatto moderato** |  **Impatto aziendale moderato**<br><br>L'azienda del cliente ha una perdita o un peggioramento moderato dei servizi, ma il lavoro può ragionevolmente continuare in modo compromessa.<br><br>**Impatto moderato sulla compatibilità delle applicazioni**<br><br>Un gruppo aziendale specifico non è più produttivo, a causa di un comportamento di crash o di perdita di funzionalità critiche. |  Iniziale: < 4 ore<br>Aggiornamento: 12 ore<br>Orario di ufficio (24x7 disponibile) | Quando si seleziona Severity B, si conferma che il problema ha un impatto moderato sull'azienda con perdita e degrado dei servizi, ma le soluzioni alternative consentono una continuità di business ragionevole, seppur temporanea. <br><br>Il problema richiede una risposta urgente. Se si è scelto 24x7 quando si invia la richiesta di supporto, si esegue il commit di un'operazione continua 24x7 ogni giorno con il team di Microsoft fino alla risoluzione, altrimenti Microsoft potrebbe, a propria discrezione, ridurre la gravità al livello C. Se si è scelto il supporto per l'orario di ufficio quando si invia un incidente di gravità B, Microsoft vi contatterà solo durante l'orario di ufficio.<br><br>È inoltre necessario verificare che Microsoft disponga di informazioni di contatto accurate.
 **Gravità C – impatto minimo** |   **Impatto aziendale minimo**<br><br> L'attività del cliente è in funzione con impedimenti minimi dei servizi.<br><br>**Impatto di compatibilità delle applicazioni secondarie**<br><br>Gli utenti potenzialmente non correlati riscontrano problemi di compatibilità minori che non impediscono la produttività |    Iniziale: < 8 ore<br>Aggiornamento: 24 ore<br>Ore lavorative  | Quando si seleziona gravità C, si conferma che il problema ha un impatto minimo sulla propria azienda con impedimenti minori del servizio.<br><br>Per un incidente di gravità C, Microsoft vi contatterà solo durante l'orario di ufficio.<br><br>È inoltre necessario verificare che Microsoft disponga delle informazioni di contatto accurate
 
 Dettagli aggiuntivi:
@@ -51,8 +51,15 @@ Dettagli aggiuntivi:
 - **Compatibilità delle applicazioni** -per un problema di compatibilità delle applicazioni da considerare, deve essere presente un errore riproducente, della stessa versione dell'applicazione, tra la versione precedente e quella corrente di Windows o Office. Per risolvere i problemi di compatibilità delle applicazioni, Microsoft richiede l'utilizzo di un punto di contatto del cliente. L'individuo deve collaborare direttamente con il team di Fast Track per analizzare e risolvere il problema.
 - **Tempo di risposta del cliente** Se un cliente non è in grado di soddisfare i requisiti di risposta previsti, Microsoft retrocederà la richiesta di un livello di gravità, a un minimo di gravità C. Se un cliente non risponde alle richieste di azione, Microsoft consentirà di attenuare e chiudere la richiesta di supporto entro 48 ore dall'ultima richiesta.
 
+## <a name="provide-feedback"></a>Commenti e suggerimenti
 
-## <a name="providing-administrator-rights-to-specific-users"></a>Fornire i diritti di amministratore per utenti specifici
+È possibile apprezzare i propri commenti e utilizzarli per migliorare l'esperienza di supporto dell'amministratore.
+
+Una volta che il ticket è nello stato **attenuato** o **risolto** , è possibile condividere i propri commenti e suggerimenti sulla propria esperienza con quel particolare problema. A tale scopo, andare alla pagina **richieste di supporto** nel portale di amministrazione. Selezionare il ticket specifico. Nel Fly-in visualizzato a destra, selezionare la scheda **feedback** e fornire le informazioni richieste. Fare attenzione a non includere informazioni personali nel modulo di commenti e suggerimenti. Per ulteriori informazioni sulla privacy, vedere l'informativa [sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
+
+![Modulo commenti e suggerimenti](images/feedback_form.png)
+
+## <a name="provide-administrator-rights-to-specific-users"></a>Fornire i diritti di amministratore per utenti specifici
 
 Durante l'utilizzo del personale di supporto, potrebbe essere necessario fornire i diritti di amministratore locale a un utente di un dispositivo per facilitare la risoluzione dei problemi. A tale scopo, è necessario disporre già dei diritti di amministratore globale o del dispositivo in Microsoft Intune per il proprio account. Eseguire una delle operazioni seguenti, a seconda della situazione:
 
@@ -62,4 +69,4 @@ Durante l'utilizzo del personale di supporto, potrebbe essere necessario fornire
 ## <a name="additional-resources"></a>Altre risorse
 - [Supporto per gli utenti finali per Microsoft Managed Desktop](end-user-support.md). 
 - [Supporto per Microsoft Managed Desktop](../service-description/support.md). 
-- Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nella sezione **risorse online** dell' [amministratore Microsoft Managed Desktop Portale](https://aka.ms/mwaasportal).
+- Se si è già abbonati a Microsoft Managed Desktop, è possibile trovare procedure dettagliate, flussi di processo, istruzioni di lavoro e domande frequenti sulla guida di amministrazione di Microsoft Managed Desktop nella sezione **risorse online** del [portale di amministrazione di Microsoft Managed Desktop](https://aka.ms/mwaasportal).

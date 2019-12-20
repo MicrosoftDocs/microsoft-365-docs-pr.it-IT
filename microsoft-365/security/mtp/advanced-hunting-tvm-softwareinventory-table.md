@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f7c7ab393a956aa894a0ca8704ea0e99a82addc9
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 6aca41e46af8ba94f87e7ee91059c3d11a4fbe9e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911197"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808631"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La `DeviceTvmSoftwareInventoryVulnerabilities` tabella nello schema per Ricerca avanzata contiene l'inventario [Gestione delle minacce e delle vulnerabilità](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) dei software sui dispositivi, oltre alle vulnerabilità di tali prodotti software. La tabella include anche informazioni su sistema operativo, ID CVE ID e grado di vulnerabilità. Utilizzare questo riferimento per creare query che forniscano informazioni dalla tabella.
 
@@ -35,8 +35,8 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata vedere [le i
 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
-| `MachineId` | stringa | Identificatore univoco per il computer nel servizio |
-| `ComputerName` | stringa | Nome di dominio completo (FQDN) del computer |
+| `DeviceId` | stringa | Identificatore univoco per il computer nel servizio |
+| `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
 | `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione sul computer. Ciò indica specifici sistemi operativi, incluse variazioni all'interno della stessa famiglia di prodotti, come Windows 10 e Windows 7. |
 | `OSVersion` | stringa | Versione del sistema operativo in esecuzione sul computer |
 | `OSArchitecture` | stringa | Architettura del sistema operativo in esecuzione sul computer |

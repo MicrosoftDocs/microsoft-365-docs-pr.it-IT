@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1f2deef2c9ffc26f604194ff2d27d5f094471021
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911246"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808711"
 ---
 # <a name="emailevents"></a>EmailEvents
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La tabella `EmailEvents` nello schema per [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni riguardanti gli eventi che interessano l'elaborazione dei messaggi di posta elettronica in Office 365 ATP. Utilizzare questo riferimento per creare query che forniscano informazioni da questa tabella.
 
@@ -35,7 +35,7 @@ Per informazioni su altre tabelle nello schema per ricerca avanzata, [vedere il 
 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | Data e ora in cui è stato registrato l'evento |
+| `Timestamp` | datetime | Data e ora in cui è stato registrato l'evento |
 | `EmailId` | stringa | Indirizzo di posta elettronica e identificatore del destinatario univoci |
 | `NetworkMessageId` | stringa | Identificatore univoco per il messaggio di posta elettronica, generato da Office 365 |
 | `InternetMessageId` | stringa | Identificatore pubblico per il messaggio di posta elettronica impostato dal sistema di invio |

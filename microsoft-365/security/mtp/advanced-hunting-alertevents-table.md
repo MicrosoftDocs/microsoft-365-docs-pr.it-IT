@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4d83b659a98c56cc59e88f9777aa73ca2e25b745
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: ee14dcc1c2ae0a2bc6fa3c094d757441515f00de
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911230"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807015"
 ---
 # <a name="alertevents"></a>AlertEvents
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La tabella `AlertEvents` nello schema per [Ricerca avanzata](advanced-hunting-overview.md) contiene informazioni sugli avvisi di Microsoft Defender Advanced Threat Protection. Utilizzare questo riferimento per creare query che forniscano informazioni da questa tabella.
 
@@ -36,9 +36,9 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
 | `AlertId` | stringa | Identificatore univoco dell'avviso |
-| `EventTime` | datetime | Data e ora in cui è stato registrato l’evento |
-| `MachineId` | stringa | Identificatore univoco per il computer nel servizio |
-| `ComputerName` | stringa | Nome di dominio completo (FQDN) del computer |
+| `Timestamp` | datetime | Data e ora in cui è stato registrato l’evento |
+| `DeviceId` | stringa | Identificatore univoco per il computer nel servizio |
+| `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
 | `Severity` | stringa | Indica il potenziale impatto (alto, medio o basso) dell'indicatore di minaccia o della violazione identificata dall'avviso |
 | `Category` | stringa | Tipo di indicatore di minaccia o di attività di violazione identificate dall'avviso |
 | `Title` | stringa | Titolo dell'avviso |
@@ -46,7 +46,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
 | `RemoteUrl` | stringa | URL o nome di dominio completo (FQDN) connesso a |
 | `RemoteIP` | stringa | Indirizzo IP connesso a |
-| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare eventi univoci, questa colonna deve essere usata in combinazione con le colonne ComputerName ed EventTime |
+| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e timestamp. |
 | `Table` | stringa | Tabella che contiene i dettagli dell'evento |
 
 ## <a name="related-topics"></a>Argomenti correlati

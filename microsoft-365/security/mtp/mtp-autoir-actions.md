@@ -16,19 +16,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5c690d07af285b5232d383bb89071c3b64343772
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: edc952a0361ee8cfa6ed3df2eaf80f0fc4bf7fd5
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911276"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808461"
 ---
 # <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>Approvare o rifiutare azioni in sospeso dalle indagini automatizzate
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Quando viene eseguita un’indagine automatizzata, può dare come risultato una o più [azioni di correzione](mtp-action-center.md#remediation-actions) che richiedono l’approvazione prima di procedere. Ad esempio, potrebbe essere necessario eliminare un gruppo di email o potrebbe essere necessario eliminare un file in quarantena. È importante approvare (o rifiutare) le azioni in sospeso il prima possibile in modo che l’indagine automatizzata possa essere completata nel tempo previsto. 
 

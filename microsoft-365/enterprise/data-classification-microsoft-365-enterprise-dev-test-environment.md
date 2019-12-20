@@ -3,7 +3,7 @@ title: Classificazione dei dati per l'ambiente di testing Microsoft 365 Enterpri
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,20 +12,20 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per creare e utilizzare le etichette di conservazione di Office 365 nei documenti nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: e0186bcfc786356b34aff45b1b1e67f54dd40001
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: dba98ca7a38291c9ce22e9a275585975e6b840ee
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38672662"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802051"
 ---
 # <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Classificazione dei dati per l'ambiente di testing Microsoft 365 Enterprise
 
-*Questa guida del laboratorio di testing può essere utilizzata per ambienti di testing Microsoft 365 Enterprise e Office 365 Enterprise.*
+*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che Office 365 Enterprise.*
 
 Con le istruzioni riportate in questo articolo, è possibile configurare la classificazione dei dati utilizzando le etichette di conservazione di Office 365 nell'ambiente di testing di Microsoft 365 Enterprise.
 
-![Guide del laboratorio di testing per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
@@ -43,19 +43,19 @@ Se si desidera configurare le etichette di conservazione di Office 365 in un'azi
 
 In questa fase, vengono create le etichette di conservazione per i diversi livelli di conservazione per le cartelle di documenti di SharePoint Online.
 
-1. Accedere al [portale Conformità Microsoft 365](https://compliance.microsoft.com) con l'account di amministratore globale.
+1. Accedere al [Centro sicurezza Microsoft 365](https://security.microsoft.com/homepage) con l'account di amministratore globale.
     
-2. Dalla scheda **Home: Conformità Microsoft 365** del browser fare clic su **Classificazioni > Etichette**.
+2. Dalla scheda **sicurezza Home-Microsoft 365** del browser, fare clic su **classificazione > etichette di conservazione**.
     
-3. Fare clic su **Etichette di conservazione > Crea un'etichetta**.
+3. Fare clic su **Crea un'etichetta**.
     
-4. Nel riquadro **Assegnare un nome all'etichetta** digitare **Internal Public****** e quindi fare clic su **Avanti**.
+4. Nel riquadro **Name Your label** , digitare **Public Internal** in **Name Your label**, quindi fare clic su **Next**.
 
-5. Nel riquadro **Descrittori del piano di archiviazione** fare clic su **Avanti**.
+5. Nel riquadro dei **descrittori del piano file** fare clic su **Avanti**.
     
-6. Nel riquadro **Impostazioni etichetta** impostare **Conservazione** su **Sì**, se necessario, e quindi fare clic su **Avanti**.
+6. Nel riquadro **Impostazioni etichetta** , se necessario, impostare la **conservazione** **su**attivato e quindi fare clic su **Avanti**.
     
-7. Nel riquadro **Rivedere le impostazioni** fare clic su **Crea etichetta**.
+7. Nel riquadro **Verifica le impostazioni** fare clic su **crea l'etichetta**.
     
 8. Ripetere i passaggi da 3 a 7 per altre etichette con i nomi seguenti:
     
@@ -65,13 +65,13 @@ In questa fase, vengono create le etichette di conservazione per i diversi livel
     
   - Highly Confidential (Riservatezza elevata)
   
-9. Dal riquadro **Home > Etichette** fare clic su **Publish labels** (Pubblica etichette).
+9. Nel riquadro **etichette di conservazione** fare clic su **pubblica etichette**.
     
-10. Nel riquadro **Choose labels to publish** (Scegli etichette da pubblicare) fare clic su **Choose labels to publish** (Scegli etichette da pubblicare).
+10. Nel riquadro **Scegli etichette** da pubblicare, fare clic su **Scegli etichette da pubblicare**.
     
-11. Nel riquadro **Choose labels** (Scegli etichette) fare clic su **Aggiungi** e selezionare le quattro etichette.
+11. Nel riquadro **Scegli etichette** , fare clic su **Aggiungi** e selezionare le quattro etichette.
     
-12. Fare clic su **Fine**.
+12. Fare clic su **Aggiungi**e quindi su **fine**.
     
 13. Nel riquadro **Choose labels to publish** (Scegli etichette da pubblicare) fare clic su **Avanti**.
     
@@ -79,7 +79,7 @@ In questa fase, vengono create le etichette di conservazione per i diversi livel
     
 15. Nel riquadro **Denomina il criterio** digitare **Example organization** in **Nome**, quindi fare clic su **Avanti**.
     
-16. Nel riquadro **Verifica le impostazioni** fare clic su **Publish labels** (Pubblica etichette), quindi fare clic su **Chiudi**.
+16. Nel riquadro **Verifica le impostazioni** fare clic su **pubblica etichette**.
  
 Tenere presente che potrebbero essere necessari alcuni minuti per la pubblicazione delle etichette di conservazione.
 
@@ -89,7 +89,7 @@ In questa fase, viene individuato il comportamento predefinito dell'etichetta di
 
 Per prima cosa, creare un sito del team di SharePoint Online a livello di riserva:
   
-1. Usando un browser sul computer locale, accedere al [portale di Office 365](https://portal.office.com) con il proprio account amministratore globale.
+1. Se si utilizza un'istanza privata del browser, accedere al [portale di Office 365](https://portal.office.com) utilizzando l'account di amministratore globale.
     
 2. Nell'elenco dei riquadri fare clic su **SharePoint**.
     
@@ -103,15 +103,15 @@ Per prima cosa, creare un sito del team di SharePoint Online a livello di riserv
     
 7.  In **Impostazioni privacy** selezionare **Private - only members can access this site** (Privato: solo i membri possono accedere a questo sito) e quindi fare clic su **Avanti**.
     
-8. Nel riquadro **Who do you want to add?** (Chi si desidera aggiungere?) fare clic su **Fine**.
+8. Nel riquadro **chi si desidera aggiungere?** , fare clic su **fine**.
     
 Successivamente, configurare la cartella dei documenti del sito del team di SensitiveFiles per l'etichetta di conservazione riservata.
   
 1. Nella scheda **SensitiveFiles** del browser fare clic su **documenti**.
     
-2. Fare clic sull'icona delle impostazioni e selezionare **Impostazioni raccolta**.
+2. Fare clic sull'icona delle impostazioni e selezionare **Impostazioni libreria**.
     
-3. In **Autorizzazioni e gestione** fare clic su **Apply label to items in this library** (Applica etichetta agli elementi in questa libreria).
+3. In **autorizzazioni e gestione**fare clic su **Applica etichetta agli elementi contenuti nell'elenco o nella raccolta**. Se questa opzione non viene visualizzata, le etichette di conservazione non vengono ancora pubblicate. Provare questo passaggio in un secondo momento.
     
 4. In **impostazioni-Applica etichetta**, selezionare **sensibile** nell'elenco a discesa e quindi fare clic su **Salva**.
 
@@ -123,13 +123,13 @@ Successivamente, creare un nuovo documento nel sito di SensitiveFiles e modifica
     
 3. Nella barra dei menu fare clic su **documenti condivisi**.
     
-4. Fare clic sull'icona di Word accanto al nome del file **Document. docx** .
+4. Fare clic sul pulsante con i puntini di sospensione verticali accanto al nome del file **Document. docx** e quindi fare clic su **Dettagli**.
     
-5. Nel riquadro di destra, nella sezione **Proprietà** , in **Applica etichetta di conservazione**, tenere presente che il documento ha l'etichetta **riservata** applicata automaticamente.
+5. Nel riquadro di destra, nella sezione **Proprietà** , in **Apply Retention label**, tenere presente che il documento ha l'etichetta di conservazione **riservata** applicata automaticamente.
     
 6. Fare clic su **modifica tutto**.
     
-7. Nel riquadro **Document. docx** , in **Applica etichetta**, selezionare l'etichetta **estremamente riservata** , quindi fare clic su **Salva**.
+7. Nel riquadro **Document. docx** , in **Apply Retention label**, selezionare l'etichetta **estremamente riservata** , quindi fare clic su **Salva**.
 
 Per informazioni e collegamenti su come distribuire le etichette di conservazione di Office 365 in produzione, vedere la pagina [Configura classificazione per il](infoprotect-configure-classification.md) passaggio dell'ambiente nella fase di **protezione delle informazioni** .
 

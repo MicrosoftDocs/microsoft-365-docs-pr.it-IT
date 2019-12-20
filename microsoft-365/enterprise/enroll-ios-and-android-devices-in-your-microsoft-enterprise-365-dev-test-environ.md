@@ -3,7 +3,7 @@ title: Registrazione dei dispositivi iOS e Android nell'ambiente di testing di M
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/11/2018
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Utilizzare questa guida del laboratorio di testing per registrare i dispositivi nell'ambiente di testing di Microsoft 365 e gestirli in remoto.
-ms.openlocfilehash: b98e184d3216a779fc495cf65b73d3a2b212e257
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 98670e64045b36dcdafb46c6ff798b8be7fd6dc1
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694073"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801871"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Registrazione dei dispositivi iOS e Android nell'ambiente di testing di Microsoft 365 Enterprise
 
@@ -25,7 +25,7 @@ ms.locfileid: "38694073"
 
 Seguendo le istruzioni riportate in questo articolo, sarà possibile registrare e testare le funzionalità di base per la gestione dei dispositivi mobili per iOS e Android nell'ambiente di testing di Microsoft 365 Enterprise.
 
-![Guide del laboratorio di testing per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
@@ -55,7 +55,7 @@ Microsoft Intune fornisce sia la funzionalità di blocco remoto sia quella di re
 Per bloccare un dispositivo iOS o Android in remoto:
 
 1. Accedere al portale di Azure [https://portal.azure.com](https://portal.azure.com) con le credenziali dell'account di amministratore globale.
-2. Fare clic su **tutti i servizi**, digitare **Intune**, quindi fare clic su **Intune**.
+2. Nella scheda portale di Azure nel browser, digitare **Intune** nella casella di ricerca e quindi fare clic su **Intune**.
 3. Fare clic su **dispositivi > tutti i dispositivi**.
 4. Nell'elenco dei dispositivi, fare clic su un dispositivo iOS o Android, quindi fare clic sull'azione **blocco remoto** .
 
@@ -63,7 +63,7 @@ Per bloccare un dispositivo iOS o Android in remoto:
 Per reimpostare il passcode in remoto:
 
 1. Se necessario, accedere al portale di Azure [https://portal.azure.com](https://portal.azure.com) con le credenziali dell'account di amministratore globale.
-2. Fare clic su **tutti i servizi**, digitare **Intune**, quindi fare clic su **Intune**.
+2. Nella scheda portale di Azure nel browser, digitare **Intune** nella casella di ricerca e quindi fare clic su **Intune**.
 3. Fare clic su **dispositivi > tutti i dispositivi**.
 4. Dall'elenco dei dispositivi gestiti, fare clic su un dispositivo iOS o Android e scegliere **... Altre informazioni**. Scegliere **quindi l'azione** remota del dispositivo di accesso remoto.
 

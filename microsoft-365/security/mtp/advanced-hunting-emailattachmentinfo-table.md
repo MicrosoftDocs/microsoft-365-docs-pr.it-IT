@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9f6a4aa68826133bee0437116b2fbf3fde4e7e00
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 9368185fff037b8c3c2f5b70a178f2485fda3736
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911229"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808721"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La tabella `EmailAttachmentInfo` nello schema per [ricerca avanzata](advanced-hunting-overview.md) contiene informazioni riguardanti gli allegati dei messaggi di posta elettronica elaborati da Office 365 ATP. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
@@ -35,7 +35,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
-| `EventTime` | datetime | Data e ora di registrazione dell'evento |
+| `Timestamp` | datetime | Data e ora di registrazione dell'evento |
 | `AttachmentId` | stringa | Identificatore univoco dell'allegato di posta elettronica |
 | `NetworkMessageId` | stringa | Identificatore univoco per la posta elettronica, generato da Office 365 |
 | `SenderFromAddress` | stringa | Indirizzo di posta elettronica del mittente nell'intestazione DA, visibile ai destinatari del messaggio sui propri client di posta elettronica |

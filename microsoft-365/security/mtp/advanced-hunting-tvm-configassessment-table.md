@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2fee44c0d9c9ff30ca23ccef863e056cadee7de8
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: d03b278fbf029b08b476f20292315807a3f5e32a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911199"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808621"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Ogni riga della tabella `DeviceTvmSecureConfigurationAssessment` contiene un evento di valutazione per una specifica configurazione di sicurezza della [Gestione delle minacce e della vulnerabilità](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Usare questo riferimento per controllare i risultati più recenti della valutazione e determinare se i dispositivi sono conformi.
 
@@ -35,8 +35,8 @@ Per informazioni su altre tabelle nello schema di Ricerca avanzata vedere [le in
 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
-| `MachineId` | stringa | Identificatore univoco per il computer nel servizio |
-| `ComputerName` | stringa | Nome di dominio completo (FQDN) del computer |
+| `DeviceId` | stringa | Identificatore univoco per il computer nel servizio |
+| `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
 | `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione sul computer. Ciò indica specifici sistemi operativi, incluse variazioni all'interno della stessa famiglia di prodotti, come Windows 10 e Windows 7.|
 | `Timestamp` | datetime | Data e ora in cui è stato generato il record |
 | `ConfigurationId` | stringa | Identificatore univoco di una configurazione specifica |

@@ -15,19 +15,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ed5dd99d2ac569353ed72ddf67d906dfe21e7cd0
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 7c6c92aeec6c1644472103a1aaf175eb813d5758
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911204"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808681"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Ricerca avanzata si basa sul [linguaggio delle query in Esplora dati](https://docs.microsoft.com/azure/kusto/query/). È possibile usare la sintassi e gli operatori di Esplora dati per creare query che individuano informazioni nello [schema](advanced-hunting-schema-tables.md) specificamente strutturate per Ricerca avanzata. Per comprendere meglio questi concetti, eseguire la prima query.
 
@@ -37,16 +37,16 @@ nel Centro sicurezza Microsoft 365 andare su **Ricerca** per eseguire la prima q
 
 ```
 // Finds PowerShell execution events that could involve a download.
-ProcessCreationEvents  
-| where EventTime > ago(7d)
+DeviceProcessEvents 
+| where Timestamp > ago(7d)
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE") 
 | where ProcessCommandLine has "Net.WebClient"
         or ProcessCommandLine has "DownloadFile"
         or ProcessCommandLine has "Invoke-WebRequest"
         or ProcessCommandLine has "Invoke-Shellcode"
         or ProcessCommandLine contains "http:"
-| project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
-| top 100 by EventTime
+| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| top 100 by Timestamp
 ```
 
 Questo è come apparirà in Ricerca avanzata.
@@ -57,15 +57,15 @@ La query inizia con un breve commento che descrive il contenuto. In un secondo m
 
 ```
 // Finds PowerShell execution events that could involve a download.
-ProcessCreationEvents
+DeviceProcessEvents
 ```
 
-La query viene in genere avviata con un nome di tabella seguito da una serie di elementi avviati da una pipe (`|`). In questo esempio, iniziamo aggiungendo il nome della tabella `ProcessCreationEvents` e gli elementi reindirizzati, se necessario.
+La query viene in genere avviata con un nome di tabella seguito da una serie di elementi avviati da una pipe (`|`). In questo esempio, iniziamo aggiungendo il nome della tabella `DeviceProcessEvents` e gli elementi reindirizzati, se necessario.
 
 Il primo elemento reindirizzato è l'ambito del filtro del periodo entro i sette giorni precedenti. Il mantenimento dell'intervallo di tempo il più possibile ravvicinato assicura che le query vengano eseguite bene, che restituiscano risultati gestibili e che non scadano.
 
 ```
-| where EventTime > ago(7d)
+| where Timestamp > ago(7d)
 ```
 
 L'intervallo di tempo è seguito immediatamente da una ricerca di file che rappresenta l'applicazione di PowerShell.
@@ -87,8 +87,8 @@ In seguito, la query cerca le righe di comando usate in genere con PowerShell pe
 Ora che la query identifica chiaramente i dati da individuare, è possibile aggiungere elementi che definiscono come appaiono i risultati. `project` restituisce colonne specifiche e `top` limita il numero di risultati, rendendo i risultati ben formattati, ragionevolmente grandi e facili da elaborare.
 
 ```
-| project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
-| top 100 by EventTime'
+| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| top 100 by Timestamp'
 ```
 
 Fare clic su **Esegui query** per visualizzare i risultati. È possibile espandere la visualizzazione dello schermo in modo da concentrarsi sulla query di ricerca e sui risultati.

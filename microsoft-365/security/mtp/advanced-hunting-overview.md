@@ -15,23 +15,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 03cd648a178d63b2b964e0136c105068f4d1c6ca
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: 23942b1d39bacfab470d41fca1ea630ad7b80ea3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39911238"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808701"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Cercare in modo proattivo minacce con la ricerca avanzata di Microsoft Threat Protection
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query che permette di esplorare dati non elaborati fino a 30 giorni. È possibile controllare in modo proattivo eventi nella rete per localizzare indicatori ed entità interessanti. L'accesso flessibile ai dati facilita la ricerca non vincolata delle minacce conosciute e potenziali.
 
-nel Centro sicurezza Microsoft 365, la ricerca avanzata supporta query che esaminano i dati di Microsoft Defender ATP, di dispositivi caricati e di Office 365 ATP, fornendo i dati dalle email. Per utilizzare la ricerca avanzata, [attivare Microsoft Threat Protection](mtp-enable.md).
+Nel centro sicurezza Microsoft 365, Advanced Hunting supporta le query che esaminano i dati di Microsoft Defender ATP, coprendo i dati dai dispositivi onboarded e Office 365 ATP, fornendo dati provenienti da messaggi di posta elettronica. Per utilizzare la ricerca avanzata, [attivare Microsoft Threat Protection](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Introduzione alla ricerca avanzata
 

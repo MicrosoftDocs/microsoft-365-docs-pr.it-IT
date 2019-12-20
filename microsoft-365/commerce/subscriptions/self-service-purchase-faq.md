@@ -9,16 +9,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: Trovare le risposte alle domande più frequenti sugli acquisti in modalità self-service.
-ms.openlocfilehash: fb295315eca84614e78792d0900318610c26b239
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.custom: aka.ms/self-service-purchase-faq
+ms.openlocfilehash: d8edca60687a269c062f44a23500b204b965863c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757693"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806239"
 ---
 # <a name="self-service-purchase-faq"></a>Domande frequenti sull'acquisto in modalità self-service
 

@@ -1,8 +1,8 @@
-- name: Documentazione e risorse di Microsoft 365 Enterprise
+- name: Microsoft 365 per la documentazione e le risorse dell'organizzazione
   href: index.yml
-- name: Panoramica di Microsoft 365 Enterprise
+- name: Panoramica di Microsoft 365 per Enterprise
   href: microsoft-365-overview.md
-- name: Distribuire Microsoft 365 Enterprise
+- name: Distribuire Microsoft 365 per Enterprise
   href: deploy-microsoft-365-enterprise.md
   items:
     - name: Distribuire l'infrastruttura di base
@@ -186,7 +186,7 @@
           href: contoso-team-for-top-secret-project.md
         - name: Sito di SharePoint per dati altamente regolamentati
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Modifiche al contenuto sulla distribuzione di Microsoft 365 Enterprise
+    - name: Modifiche apportate a Microsoft 365 per la distribuzione del contenuto aziendale
       href: microsoft-365-deploment-guide-changes.md
 - name: Centro di distribuzione desktop
   href: desktop-deployment-center-home.md
@@ -221,7 +221,7 @@
   href: ../compliance/index.yml
 - name: Sicurezza di Microsoft 365
   href: ../security/index.yml
-- name: Gestione della continuità aziendale della società con i servizi cloud
+- name: Gestione della continuità aziendale (EBCM) con i servizi cloud
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
     - name: Responsabilità EBCM del cliente e del partner cloud

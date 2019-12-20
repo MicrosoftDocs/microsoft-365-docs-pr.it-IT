@@ -3,7 +3,7 @@ title: Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,20 +13,22 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: Configurare l'autenticazione a più fattori tramite messaggi di testo inviati a uno Smart Phone nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: af4ae63f52fa74084dfddf0e6861c5ae3ba2aedb
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: ea87ab6f169829d74339b64b6edb3978bea9ca9a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673262"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801401"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Autenticazione a più fattori per l'ambiente di testing di Microsoft 365 Enterprise
 
-*Questa guida del laboratorio di testing può essere utilizzata per ambienti di testing Microsoft 365 Enterprise e Office 365 Enterprise.*
+*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che Office 365 Enterprise.*
 
-Per un ulteriore livello di sicurezza per l'accesso a Office 365 o qualsiasi servizio o applicazione che utilizza il tenant di Azure AD per l'organizzazione, è possibile abilitare l'autenticazione a più fattori di Azure, che richiede più di un semplice nome utente e una password per verificare un account. Con l'autenticazione a più fattori, agli utenti viene richiesto di riconoscere una telefonata, digitare un codice di verifica inviato in un messaggio di testo oppure specificare una password per l'app negli smartphone dopo aver inserito correttamente le password. L'accesso è consentito solo dopo che un secondo fattore di autenticazione viene soddisfatto. 
+Per un ulteriore livello di sicurezza per l'accesso a Microsoft 365 o qualsiasi servizio o applicazione che utilizza il tenant di Azure AD per l'abbonamento, è possibile abilitare l'autenticazione a più fattori di Azure, che richiede più di un semplice nome utente e una password per verificare un account. 
+
+Con l'autenticazione a più fattori, agli utenti viene richiesto di riconoscere una telefonata, digitare un codice di verifica inviato in un messaggio di testo oppure specificare una password per l'app negli smartphone dopo aver inserito correttamente le password. L'accesso è consentito solo dopo che un secondo fattore di autenticazione viene soddisfatto. 
   
-In questo articolo viene descritto come abilitare e testare l'autenticazione basata su messaggi di testo per un account specifico.
+In questo articolo viene descritto come abilitare e testare l'autenticazione basata su messaggi di testo per un account utente specifico.
   
 Sono disponibili due fasi per configurare l'autenticazione a più fattori per un account nell'ambiente di testing di Microsoft 365 Enterprise:
   
@@ -34,7 +36,9 @@ Sono disponibili due fasi per configurare l'autenticazione a più fattori per un
     
 2. Abilitare e testare l'autenticazione a più fattori per l'account User 2.
 
-![Guide del laboratorio di testing per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+3. Abilitare e testare l'autenticazione a più fattori con un criterio di accesso condizionale (facoltativo).
+
+![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
@@ -56,7 +60,7 @@ Abilitare l'autenticazione a più fattori per l'account User 2 procedendo nel mo
     
 2. Nel riquadro di spostamento sinistro fare clic su **Utenti > Utenti attivi**.
     
-3. Nel riquadro utenti attivi, fare clic su **altre > configurazione dell'autenticazione a più fattori**.
+3. Nel riquadro utenti attivi fare clic su **autenticazione**a più fattori.
     
 4. Nell'elenco, selezionare l'account **User 2** .
     
@@ -96,6 +100,38 @@ Completare la configurazione dell'account User 2 per utilizzare un messaggio di 
     
     Verrà visualizzato il portale di Office per l'utente 2 nella scheda **Microsoft Office Home** del browser.
 
+## <a name="phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy"></a>Fase 3: abilitare e testare l'autenticazione a più fattori con un criterio di accesso condizionale
+
+*Questa fase può essere utilizzata solo per un ambiente di testing di Microsoft 365 Enterprise.*
+
+In questa fase è possibile abilitare l'autenticazione a più fattori per l'account User 3 utilizzando un gruppo e un criterio di accesso condizionale.
+
+Successivamente, creare un nuovo gruppo denominato MFAUsers e aggiungere l'account User 3.
+
+1. Nella scheda interfaccia di **amministrazione di Microsoft 365** fare clic su **gruppi** nel riquadro di spostamento sinistro e quindi su **gruppi**.
+2. Fare clic su **Aggiungi gruppo**.
+3. Nel riquadro **scegliere un tipo di gruppo** selezionare **sicurezza**e quindi fare clic su **Avanti**.
+4. Nel riquadro **Configura le nozioni di base** fare clic su **Crea gruppo**e quindi fare clic su **Chiudi**.
+5. Nel riquadro **revisione e termina aggiunta gruppo** digitare **MFAUsers**e quindi fare clic su **Avanti**.
+6. Nell'elenco dei gruppi fare clic sul gruppo **MFAUsers** .
+7. Nel riquadro **MFAUsers** , fare clic su **membri**, quindi fare clic su **Visualizza tutti e Gestisci membri**.
+8. Nel riquadro **MFAUsers** , fare clic su **Aggiungi membri**, selezionare l'account **User 3** e quindi fare clic su **Salva > Chiudi > Chiudi**.
+
+Successivamente, creare un criterio di accesso condizionale per richiedere l'autenticazione a più fattori per i membri del gruppo MFAUsers.
+
+1. In una nuova scheda del browser, passare a [https://portal.azure.com](https://portal.azure.com).
+2. Fare clic su **Azure Active Directory > sicurezza > accesso condizionale**.
+3. Nel riquadro **criteri di accesso condizionale** fare clic su **nuovo criterio**.
+4. Nel **nuovo** riquadro, digitare **AMF per gli account utente** in **nome**.
+5. Nella sezione **assegnazioni** fare clic su **utenti e gruppi**.
+6. Nella scheda **Includi** del riquadro **utenti e gruppi** fare clic su **Seleziona utenti e gruppi > utenti e gruppi > selezionare**.
+7. Nel riquadro **Seleziona** fare clic sul gruppo **MFAUsers** e quindi fare clic su **Seleziona > operazione completata**.
+8. Nella sezione **controlli di accesso** del **nuovo** riquadro fare clic su **Concedi**.
+9. Nel riquadro **Concedi** , fare clic su **Richiedi autenticazione**a più fattori, quindi fare clic su **Seleziona**.
+10. Nel **nuovo** riquadro, fare clic **su** attiva per **abilitare il criterio**, quindi fare clic su **Crea**.
+11. Chiudere le schede di interfaccia di amministrazione di **Azure Portal** e **Microsoft 365** .
+
+Per testare questo criterio, disconnettersi e accedere con l'account User 3. È necessario che venga richiesto di configurare l'autenticazione master. Questo dimostra che è in corso l'applicazione del criterio MFAUsers.
 
 Per informazioni e collegamenti per la distribuzione dell'autenticazione a più fattori in produzione, vedere la procedura di [configurazione dell'autenticazione](identity-secure-user-sign-ins.md#identity-mfa) a più fattori nella fase Identity.
     

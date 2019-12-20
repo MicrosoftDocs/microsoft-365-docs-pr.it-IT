@@ -1,6 +1,6 @@
 ---
 title: Come vengono combinati i criteri e le protezioni quando la posta viene contrassegnata con un contrassegno rosso
-description: Quali criteri si applicano e quali azioni eseguire, quando la posta elettronica è contrassegnata da malware, posta indesiderata, posta indesiderata elevata, phishing e bulk da EOP e/o ATP.
+description: Vengono descritti i criteri e le protezioni che si applicano quando la posta elettronica rileva più protezioni e viene analizzata da più forme di rilevamento. Quali criteri si applicano e quali azioni eseguire, quando la posta elettronica è contrassegnata da malware, posta indesiderata, posta indesiderata elevata, phishing e bulk da EOP e/o ATP.
 keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1f1885730d1063a0c36d172f1f9d0e4ac4fb59c7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4ca5333f4b07878f8c7d206b78cf884f4e4eec82
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083443"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807990"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Quali criteri si applicano quando più metodi di protezione e analisi di rilevamento vengono eseguiti nel messaggio di posta elettronica
 
@@ -34,13 +34,13 @@ I criteri riportati di seguito si applicano a _tutte le organizzazioni_.
 |3     | Alta probabilità di posta indesiderata      | HSPM        | Configurare i criteri di filtro della posta indesiderata        |
 |4     | Spoofing        | SPOOFING        | Criteri di anti-phishing, spoofing Intelligence        |
 |5     | Posta indesiderata         | SPM         | Configurare i criteri di filtro della posta indesiderata         |
-|6     | Invio in blocco         | BULK        | Configurare i criteri di filtro della posta indesiderata         |
+|6      | Invio in blocco         | BULK        | Configurare i criteri di filtro della posta indesiderata         |
 
 Inoltre, questi criteri si applicano alle _organizzazioni con ATP_.
 
 |Priority |Criteri  |Categoria  |Dove gestito |
 |---------|---------|---------|---------|
-|7     | Rappresentazione del dominio         | DIMP         | Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP         |
+|7      | Rappresentazione del dominio         | DIMP         | Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP         |
 |8      | Rappresentazione utente        | UIMP         | Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP          |
 
 Ad esempio, se si dispone di due criteri con le rispettive priorità:

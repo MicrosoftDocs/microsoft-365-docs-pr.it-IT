@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
 ms.author: greglin
-ms.openlocfilehash: c1c39745b2dc891b4dc079ecd657eaf0d883af23
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: d7e71eda9cf0750ce44a978dca742b43f2101d63
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627460"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801261"
 ---
 # <a name="step-5-deploy-windows-10-enterprise-security-features"></a>Passaggio 5: distribuire le funzionalità di sicurezza di Windows 10 Enterprise
 
@@ -92,9 +92,9 @@ Per distribuire, gestire e configurare Windows Defender exploit Guard, seguire l
 
 <a name="windows10-sec-atp"></a>
 ## <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
-Microsoft Defender ATP, disponibile solo con il piano Microsoft 365 Enterprise E5, è un servizio di sicurezza che consente ai clienti aziendali di rilevare, analizzare e rispondere alle minacce avanzate nelle reti. Per ulteriori informazioni su Microsoft Defender ATP, i requisiti minimi e su come gestire questa funzionalità, vedere:
+Microsoft Defender ATP, disponibile solo con il piano Microsoft 365 E5, è un servizio di sicurezza che consente ai clienti aziendali di rilevare, analizzare e rispondere alle minacce avanzate nelle reti. Per ulteriori informazioni su Microsoft Defender ATP, i requisiti minimi e su come gestire questa funzionalità, vedere:
 
-* [ATP Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
+* [Microsoft Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 * [Requisiti minimi](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection)
 
 ### <a name="deployment-management-and-configuration"></a>Distribuzione, gestione e configurazione

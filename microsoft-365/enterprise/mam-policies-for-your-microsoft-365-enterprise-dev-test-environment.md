@@ -3,7 +3,7 @@ title: Criteri di conformità dei dispositivi per l'ambiente di testing di Micro
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2018
+ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,20 +12,20 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per aggiungere criteri di conformità dei dispositivi di Intune all'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: c323779399f6f440e1f9104e6611023a18ffe59e
-ms.sourcegitcommit: ea48c86c727dcd9d4b3b970b14a4260337f158f9
+ms.openlocfilehash: 8a746f99e16444527c44267eddbaec9f5e5156eb
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38694103"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801631"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Criteri di conformità dei dispositivi per l'ambiente di testing di Microsoft 365 Enterprise
 
 *Questa guida al lab di test può essere usata solo per ambienti di testing di Microsoft 365 Enterprise.*
 
-Con le istruzioni riportate in questo articolo, è possibile aggiungere un criterio di conformità del dispositivo Intune all'ambiente di testing di Microsoft 365 Enterprise.
+Con le istruzioni riportate in questo articolo, è possibile aggiungere un criterio di conformità del dispositivo Intune per i dispositivi Windows 10 e Office 365 ProPlus all'ambiente di testing di Microsoft 365 Enterprise.
 
-![Guide del laboratorio di testing per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
@@ -48,49 +48,46 @@ In questa fase, è possibile creare un criterio di conformità del dispositivo p
     
 2. In una nuova scheda del browser, aprire il portale di Azure all' [https://portal.azure.com](https://portal.azure.com)indirizzo.
 
-3. Nella scheda portale di Azure nel browser, nel riquadro di spostamento, fare clic su **tutti i servizi**, digitare **Intune**, quindi fare clic su **Intune**.
+3. Dalla scheda portale di Azure nel browser, digitare **Intune** nella casella di ricerca e quindi fare clic su **Intune**.
     
-4. Se viene visualizzato un messaggio **che non è stato abilitato** per la gestione **dei** dispositivi, fare clic su di esso. Sul blade di **gestione dei dispositivi mobili** , fare clic su **autorità MDM di Intune**, quindi fare clic su **Scegli**. Aggiornare la scheda del browser.
+4. Se viene visualizzato un messaggio **che non è ancora stato abilitato** per la gestione dei dispositivi nel riquadro di **Microsoft Intune** , fare clic su di esso. Nel riquadro **autorità di gestione dei dispositivi mobili** , fare clic su **autorità MDM di Intune**, quindi fare clic su **Scegli**. Aggiornare la scheda del browser.
     
 5. Nel riquadro di spostamento a sinistra fare clic su **Gruppi**.
     
-6. Nel pannello **gruppi-tutti i gruppi** fare clic su **+ nuovo gruppo**.
+6. Nel riquadro **gruppi-tutti i gruppi** fare clic su **+ nuovo gruppo**.
     
-7. Nel pannello **gruppo** , selezionare **Office 365** o **sicurezza** per **tipo di gruppo**, digitare utenti dei **dispositivi Windows 10 gestiti** in **nome**, selezionare **assegnato** in **tipo di appartenenza**e quindi fare clic su **Crea**. 
+7. Nel riquadro **gruppo** , selezionare **Office 365** o **sicurezza** per il **tipo di gruppo**, digitare **utenti dei dispositivi Windows 10 gestiti** in **nome**, selezionare **assegnato** in **tipo di appartenenza**e quindi fare clic su **Crea**. 
     
-8. Chiudere il pannello **Gruppo**.
+8. Fare clic su **Microsoft Intune**. Nell'elenco **attività rapide** del riquadro di **Microsoft Intune** fare clic su **Crea un criterio di conformità**.
     
-11. Chiudere il Blade **gruppi-tutti i gruppi** .
+9. Nel riquadro **profili criteri di conformità** fare clic su **Crea criterio**.
     
-12. Nell'elenco **attività rapide** del Blade di **Microsoft Intune** fare clic su **Crea un criterio di conformità**.
+10. Nel riquadro **Crea criterio** , in **nome**, digitare **Windows 10**. In **piattaforma**selezionare **Windows 10 e versioni successive**, fare clic su **OK** nel riquadro **criteri di conformità di Windows 10** e quindi fare clic su **Crea**. 
     
-13. Nel pannello **Profili dei criteri di conformità**, fare clic su **Crea criterio**.
+11. Fare clic su **profili criteri di conformità**e quindi fare clic sul nome del criterio di **Windows 10** .
     
-14. Nel pannello **Crea criterio** , in **nome**, digitare **Windows 10**. In **piattaforma**selezionare **Windows 10 e versioni successive**, fare clic su **OK** nel Blade **criteri di conformità di Windows 10** e quindi fare clic su **Crea**. Chiudere il Blade **Windows 10** .
+12. Nel riquadro di **Windows 10** , fare clic su **assegnazioni**, quindi fare clic su **Seleziona gruppi da includere**.
     
-15. Nel pannello **profili dei criteri di conformità** , fare clic sul nome del criterio di **Windows 10** .
+13. Nel riquadro **Seleziona gruppi da includere** fare clic sul gruppo **utenti di dispositivi di Windows 10 gestiti** e quindi fare clic su **Seleziona**.
     
-16. Nel pannello di **Windows 10** , fare clic su **assegnazioni**, quindi fare clic su **Seleziona gruppi da includere**.
+14. Fare clic su **Salva**, fare clic su **Microsoft Intune-Panoramica**, quindi fare clic su **app client** nella barra di spostamento a sinistra.
     
-17. Nel pannello **Seleziona gruppi da includere** , fare clic sul gruppo **utenti di dispositivi Windows 10 gestiti** e quindi fare clic su **Seleziona**.
-    
-18. Fare clic su **Salva**e quindi chiudere il Blade **Windows 10-assegnazioni** .
-    
-19. Chiudere il pannello **Profili dei criteri di conformità**.
-    
-20. Sul blade di **Microsoft Intune** , fare clic su **app client** nella barra di spostamento a sinistra.
-    
-21. Sul Blade **Apps client** fare clic su **app**e quindi su **Aggiungi**. 
+15. Nel riquadro **app client** fare clic su **app**e quindi su **Aggiungi**. 
 
-22. Nel pannello **Aggiungi applicazione** selezionare tipo di **app**e quindi selezionare **Windows 10** in **Office 365 Suite**.
+16. Nel riquadro **Aggiungi app** selezionare tipo di **app**e quindi selezionare **Windows 10** in **Office 365 Suite**.
 
-23. Fare clic su **Configura app Suite**e quindi fare clic su **OK**.
+17. Nel riquadro **Aggiungi app** , seleziona **informazioni sulla famiglia di applicazioni**.
+ 
+18. Nel riquadro **delle informazioni della famiglia di applicazioni** , digitare **Office 365 ProPlus** sia in **nome famiglia** che in **Descrizione famiglia**.
+Fare clic su OK.
 
-24. Fare clic su **informazioni su App Suite**, digitare le app **di Office per Windows 10** in **nome della famiglia**, le app **di Office per Windows 10** nella **Descrizione della famiglia**e quindi fare clic su **OK**.
+19. Nel riquadro **Aggiungi app** , selezionare **Configure app Suite**, quindi fare clic su **OK**.
 
-25. Fare clic su **impostazioni della famiglia di applicazioni**, selezionare **semestrale** nel **canale di aggiornamento**e quindi fare clic su **OK**.
+20. Nel riquadro **Aggiungi app** selezionare impostazioni della **famiglia di applicazioni**.
 
-26. Nel pannello **Aggiungi applicazione** fare clic su **Aggiungi**.
+21. Per il **canale di aggiornamento**, selezionare **semestrale**e quindi fare clic su **OK**.
+
+22. Nel riquadro **Aggiungi applicazione** fare clic su **Aggiungi**.
 
 Ora si dispone di un criterio di conformità del dispositivo per testare le app selezionate nei criteri di conformità dei dispositivi **Windows 10** e per i membri del gruppo di **utenti del dispositivo Windows 10 gestito** . Tenere presente che selezionando Office 365 come tipo di gruppo verranno create risorse aggiuntive. 
   
