@@ -16,19 +16,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 7d3923a3032653f9bfc4a59dc98fe06953975bac
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
-ms.translationtype: MT + HT Review
+ms.openlocfilehash: d33844c1bd774f6b53dbbaa428762c4832fccb85
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967919"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806985"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Visualizzare i dettagli e i risultati di un'indagine automatizzata
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!include[Prerelease information](prerelease.md)]
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Quando si verifica un'indagine automatizzata in Microsoft Threat Protection, i dettagli di tale indagine sono disponibili durante e dopo il processo di indagine automatizzata. Se di dispone delle [autorizzazioni necessarie](mtp-action-center.md#required-permissions-for-action-center-tasks), è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. La vista dei dettagli dell'indagine consente di avere uno stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
 

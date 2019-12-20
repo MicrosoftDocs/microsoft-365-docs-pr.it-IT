@@ -157,7 +157,7 @@
             - name: Configurare il tenant di Office 365 per una maggiore sicurezza
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: Nuovo Centro sicurezza Microsoft 365
-              href: ./office-365-security/microsoft-security-and-compliance.md
+              href: ./mtp/overview-security-center.md
             - name: Autorizzazioni nel Centro sicurezza e conformità
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: Fornire agli utenti l'accesso al Centro sicurezza
@@ -405,7 +405,7 @@
             - name: Rilevare e risolvere gli attacchi injection alle regole e ai moduli personalizzati di Outlook in Office 365
               href: ./office-365-security/detect-and-remediate-outlook-rules-forms-attack.md
             - name: Rispondere a un account di posta elettronica compromesso in Office 365
-              href: office-365-security/responding-to-a-compromised-email-account.md
+              href: ./office-365-security/responding-to-a-compromised-email-account.md
         - name: Flusso di posta
           items:
             - name: Abilitare il componente aggiuntivo Segnala messaggio
