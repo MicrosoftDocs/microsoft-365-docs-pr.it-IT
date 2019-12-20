@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gli account di amministratore globale devono avere un trattamento speciale per proteggerli dal compromesso delle credenziali.
-ms.openlocfilehash: 257caf197df74d32b438a17158598237cf4c58b5
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 1a0274967798e6c2ba6048e5a2cfd70e73cb0671
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627082"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801831"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Passaggio 1: creare e proteggere gli account di amministratore globale
 
@@ -72,7 +72,7 @@ In questa sezione si procederà alla configurazione di Azure AD Privileged Ident
 
 Invece di essere amministratori permanenti degli account di amministratore, diventano amministratori idonei. Il ruolo di amministratore è inattivo finché qualcuno non lo richiede. Sarà quindi necessario completare un processo di attivazione per aggiungere il ruolo di amministratore all'account di amministratore per un determinato periodo di tempo. Al termine di tale periodo, PIM rimuove il ruolo di amministratore dall'account di amministratore.
 
-PIM è disponibile con Azure Active Directory Premium P2, incluso in Microsoft 365 Enterprise E5. In alternativa, è possibile acquistare singole licenze di Azure Active Directory Premium P2 per gli account di amministratore.
+PIM è disponibile con Azure Active Directory Premium P2, incluso in Microsoft 365 E5. In alternativa, è possibile acquistare singole licenze di Azure Active Directory Premium P2 per gli account di amministratore.
 
 Per attivare Azure PIM per gli account tenant e amministratore Azure Active Directory, vedere la [procedura per configurare PIM](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
 

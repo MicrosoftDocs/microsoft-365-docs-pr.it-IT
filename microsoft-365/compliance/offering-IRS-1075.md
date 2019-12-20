@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 30509260e83f1aaa59c57365357e18a3f12097c4
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4df4d225658c03433384ca85e5e9d15eed5f1ac8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859726"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804819"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>Pubblicazione 1075 degli Stati Uniti Internal Revenue Service
 
@@ -79,7 +80,7 @@ No. Gli unici ambienti in cui è possibile archiviare ed elaborare FTI sono Azur
 
 - [Pubblicazione IRS 1075](https://www.irs.gov/pub/irs-pdf/p1075.pdf)
 - [Programma di salvaguardia dell'IRS](https://www.irs.gov/uac/Safeguards-Program)
-- [Quadro di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Cloud per enti pubblici](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 

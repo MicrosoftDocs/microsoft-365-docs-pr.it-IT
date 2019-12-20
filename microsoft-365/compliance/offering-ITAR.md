@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9fa4195daa12ebbdafa33851f2bf458bde3d36ac
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: a15b787904149073394bfc08a3ae8faf119d7ac8
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859656"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804609"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>Traffico internazionale nelle normative sulle armi (ITAR)
 
@@ -54,7 +55,7 @@ Contattare il rappresentante dell'account Microsoft.
 - [Utilizzo di Azure Government con dati controllati da ITAR](https://aka.ms/azure-itar-guide)
 - [Amministrazione di Azure](https://azure.microsoft.com/features/gov/)
 - [Office 365 governo degli Stati Uniti](https://products.office.com/government/office-365-web-services-for-government)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 

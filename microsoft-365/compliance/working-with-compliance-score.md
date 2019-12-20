@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come utilizzare gli strumenti di flusso di lavoro in Microsoft Compliance score per facilitare la gestione della conformità per l'organizzazione.
-ms.openlocfilehash: 9dc3eb41b1ad686e1c9e1f0a4cf2df66ccb3ffbe
-ms.sourcegitcommit: 544b10cc3abe04a47438085d51c4250c9238f76f
+ms.openlocfilehash: 9c3871db720666319eb8a0523ff8150efd753f91
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38686350"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802135"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Utilizzo del Punteggio di conformità Microsoft (anteprima)
 
@@ -193,7 +193,7 @@ In questa pagina è possibile visualizzare rapidamente informazioni importanti s
 
 ### <a name="default-assessments"></a>Valutazioni predefinite
 
-Per impostazione predefinita, nella pagina valutazioni verrà visualizzata la valutazione della linea di base per la protezione dei dati di Microsoft 365. Se si desidera aggiungere ulteriori valutazioni per coprire altre normative e standard, è possibile gestire le valutazioni in Compliance Manager. Il Punteggio di conformità fornisce più di dieci valutazioni fuori scatola, incluse quelle per GDPR, CCPA, ISO 27001, ISO 27018, NIST 800-53, NIST 800-171, NIST CSF, CSA CCM, FFIEC, HIPAA/HITECH e FedRAMP.
+Per impostazione predefinita, nella pagina valutazioni verrà visualizzata la valutazione della linea di base per la protezione dei dati di Microsoft 365. Il Punteggio di conformità fornisce anche diverse valutazioni fuori sede ([vedere l'elenco completo](compliance-score.md#templates)). Se si desidera aggiungere ulteriori valutazioni per coprire ulteriori normative e standard, è possibile eseguire questa operazione in Compliance Manager.
 
 ### <a name="managing-assessments"></a>Gestione delle valutazioni
 

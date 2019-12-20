@@ -1,5 +1,5 @@
 ---
-title: Infrastruttura di base di Microsoft 365 Enterprise
+title: Infrastruttura di base di Microsoft 365 per le aziende
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,19 +12,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendere le fasi principali della distribuzione dell'infrastruttura di base per Microsoft 365 Enterprise all'interno dell'organizzazione, nota anche come la distribuzione di base.
-ms.openlocfilehash: c18e4d770aec63da091ad38fc341a87f9d71e9be
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+description: Comprendere le fasi principali della distribuzione dell'infrastruttura di base per Microsoft 365 per le aziende all'interno dell'organizzazione, nota anche come la distribuzione di base.
+ms.openlocfilehash: 78bfaf64fc247a88b30df4f2cf2a7f8b962dfdb6
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370353"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801961"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Infrastruttura di base di Microsoft 365 Enterprise
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Infrastruttura di base di Microsoft 365 per le aziende
 
-Se si esegue la distribuzione end-to-end di Microsoft 365 Enterprise autonomamente, è necessario innanzitutto creare una base fissa sulla quale le applicazioni e i servizi possano sbloccare creatività e collaborazione in un ambiente protetto. Questa base è chiamata anche *distribuzione di base*.
+Se si esegue la distribuzione end-to-end di Microsoft 365 per le aziende autonomamente, è necessario innanzitutto creare una base fissa sulla quale le applicazioni e i servizi possano sbloccare creatività e collaborazione in un ambiente protetto. Questa base è chiamata anche *distribuzione di base*.
 
-Per un percorso definito end-to-end per la distribuzione, è possibile utilizzare queste fasi per pianificare e distribuire l'infrastruttura di base di Microsoft 365 Enterprise:
+Per un percorso definito end-to-end per la distribuzione, è possibile utilizzare queste fasi per pianificare e distribuire l'infrastruttura di base di Microsoft 365 per le aziende:
 
 | | Fase | Risultati |
 |:-------|:-----|:-----|
@@ -48,19 +48,19 @@ Tuttavia, c’è flessibilità nel configurare e nell’implementare fasi o pass
 
 -  **Se si ha un'organizzazione aziendale**, visualizzare le fasi come livelli dell'infrastruttura IT invece di un percorso definito, e determinare la strategia migliore per ottenere una finale conformità ai requisiti per ogni livello all'interno dell'organizzazione.
 
-Al termine di ogni fase, è necessario esaminare i *criteri di uscita*, comprese le condizioni necessarie che è necessario soddisfare e le condizioni facoltative da prendere in considerazione. I criteri di uscita per ogni fase assicurano che la risultante configurazione end-to-end e l’infrastruttura cloud e locale soddisfino i requisiti per una distribuzione di Microsoft 365 Enterprise.
+Al termine di ogni fase, è necessario esaminare i *criteri di uscita*, comprese le condizioni necessarie che è necessario soddisfare e le condizioni facoltative da prendere in considerazione. I criteri di uscita per ogni fase assicurano che la risultante configurazione end-to-end e l’infrastruttura cloud e locale soddisfino i requisiti per una distribuzione di Microsoft 365 per le aziende.
 
 Per visualizzare la struttura del contenuto, vedere questo breve video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE23VRG]
 
-Ecco l'infrastruttura di base della Guida alla distribuzione generale di Microsoft 365 Enterprise:
+Ecco l'infrastruttura di base della Guida alla distribuzione generale di Microsoft 365 per le aziende:
 
-![Infrastruttura di base della Guida alla distribuzione generale di Microsoft 365 Enterprise](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
+![Infrastruttura di base della Guida alla distribuzione generale di Microsoft 365 per le aziende](./media/deploy-foundation-infrastructure/m365-deploy-content-arch-foundation.png)
 
 ## <a name="at-a-glance"></a>In breve
 
-Il [poster Infrastruttura di base di Microsoft 365 Enterprise](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) rappresenta una posizione centrale da visualizzare, per ogni fase:
+Il [poster Infrastruttura di base di Microsoft 365 per le aziende](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) rappresenta una posizione centrale da visualizzare, per ogni fase:
 
 - Obiettivi generali della fase per amministratori e utenti
 - Servizi, funzionalità e strumenti
@@ -69,16 +69,16 @@ Il [poster Infrastruttura di base di Microsoft 365 Enterprise](media/deploy-foun
 - Processo di onboarding di un nuovo utente
 - Monitoraggio e aggiornamento
 
-[![Immagine del poster dell'infrastruttura di base di Microsoft 365 Enterprise](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+[![Immagine per il poster dell'infrastruttura di base di Microsoft 365 per le aziende](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
 Per scaricare una copia del poster, fare clic [qui](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 
 
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>Configurazione dell'infrastruttura vs. implementazione dell’utente
 
-L'infrastruttura di base è un set di configurazione di software e servizi configurati che, se combinati insieme per un utente, consentono di sfruttare l'intera gamma di funzionalità e protezioni offerte da Microsoft 365 Enterprise. La destinazione finale del percorso di distribuzione end-to-end consiste nell'applicare questa infrastruttura a tutti gli utenti e i dispositivi basati su Windows. 
+L'infrastruttura di base è un set di configurazione di software e servizi configurati che, se combinati insieme per un utente, consentono di sfruttare l'intera gamma di funzionalità e protezioni offerte da Microsoft 365 per le aziende. La destinazione finale del percorso di distribuzione end-to-end consiste nell'applicare questa infrastruttura a tutti gli utenti e i dispositivi basati su Windows. 
 
-Tuttavia, è importante tenere presente che l'infrastruttura di base di Microsoft 365 Enterprise è indipendente dalla distribuzione di software e servizi agli utenti. ***È possibile configurare i livelli dell'infrastruttura di base senza la necessità di implementare i livelli per tutti gli utenti.***
+Tuttavia, è importante tenere presente che l'infrastruttura di base di Microsoft 365 per le aziende è indipendente dalla distribuzione di software e servizi agli utenti. ***È possibile configurare i livelli dell'infrastruttura di base senza la necessità di implementare i livelli per tutti gli utenti.***
 
 È possibile configurare, testare e provare a usare gli elementi dell'infrastruttura di base prima dell'implementazione di questi elementi per i numerosi utenti negli uffici, regioni o reparti dell'organizzazione.
 

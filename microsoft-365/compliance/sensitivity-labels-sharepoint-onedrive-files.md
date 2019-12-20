@@ -1,7 +1,7 @@
 ---
 title: Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: c050aefb9feebbb3ff37a8504ba1b8385fb0ff49
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: c62db0d77ed805c607e79bf25cb9816a554cb6d2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686507"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802829"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)
 
@@ -75,19 +75,24 @@ Per questa anteprima, utilizzare la versione di OneDrive Sync App 19.002.0121.00
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>Preparare la shell di gestione di SharePoint Online per l'anteprima
 
-Prima di abilitare l'anteprima, verificare che sia in esecuzione la versione più recente di SharePoint Online Management Shell. Se si ha già la versione più recente, è possibile procedere e abilitare l'anteprima.
+Prima di abilitare l'anteprima, verificare che sia in esecuzione SharePoint Online Management Shell versione 16.0.19418.12000 o versioni successive. Se si ha già la versione più recente, è possibile procedere e abilitare l'anteprima.
 
-Per preparare SharePoint Online Management Shell per l'anteprima:
+1. Se è stata installata una versione precedente di SharePoint Online Management Shell dalla raccolta di PowerShell, è possibile aggiornare il modulo eseguendo il cmdlet seguente.
 
-1. Se è stata installata una versione precedente di SharePoint Online Management Shell, passare a installazione **applicazioni** e disinstallare "SharePoint Online Management Shell".
+    ```PowerShell
+    Update-Module -Name Microsoft.Online.SharePoint.PowerShell
+    ```
 
-2. In un Web browser passare alla pagina Centro download e [scaricare la versione più recente di SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
+2. In alternativa, se è stata installata una versione precedente di SharePoint Online Management Shell dall'area download Microsoft, è anche possibile **aggiungere o rimuovere programmi** e disinstallare SharePoint Online Management Shell.
 
-3. Selezionare la lingua e quindi fare clic su **download**.
+3. In un Web browser passare alla pagina Centro download e [scaricare la versione più recente di SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
-4. Scegliere tra il file x64 e x86. msi. Scaricare il file x64 se si esegue la versione di Windows a 64 bit o il file x86 se si esegue la versione a 32 bit. Se non si conosce, vedere [la versione del sistema operativo Windows in esecuzione?](https://support.microsoft.com/help/13443/windows-which-operating-system).
+4. Selezionare la lingua e quindi fare clic su **download**.
 
-5. Dopo aver scaricato il file, eseguire il file e seguire i passaggi illustrati nell'installazione guidata.
+5. Scegliere tra il file x64 e x86. msi. Scaricare il file x64 se si esegue la versione di Windows a 64 bit o il file x86 se si esegue la versione a 32 bit. Se non si conosce, vedere [la versione del sistema operativo Windows in esecuzione?](https://support.microsoft.com/help/13443/windows-which-operating-system)
+
+
+6. Dopo aver scaricato il file, eseguire il file e seguire i passaggi illustrati nell'installazione guidata.
 
 ## <a name="enable-the-preview-by-using-microsoft-powershell-opt-in"></a>Abilitare l'anteprima tramite Microsoft PowerShell (opt-in)
 

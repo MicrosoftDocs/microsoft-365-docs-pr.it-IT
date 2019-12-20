@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Se un nuovo dipendente o un altro utente ha bisogno dell'accesso al contenuto di una cassetta postale inattiva in Office 365, è possibile ripristinare (o unire) il contenuto della cassetta postale inattiva a una cassetta postale esistente.
-ms.openlocfilehash: fe71825435dd3dbcc0e1db79591a78ead83218ba
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 8cd8477695523fc6d1f7e8f0a1c939e8700720ba
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686614"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802995"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>Ripristinare una cassetta postale inattiva in Office 365
 
@@ -31,7 +31,7 @@ Una cassetta postale inattiva (che è un tipo di cassetta postale eliminata temp
 
 Per ulteriori informazioni sulle differenze tra ripristino e recupero di una cassetta postale inattiva, vedere la sezione **more information** in questo articolo.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - È necessario utilizzare Exchange Online PowerShell per ripristinare una cassetta postale inattiva. Non è possibile usare l'interfaccia di amministrazione di Exchange (EAC). Per istruzioni dettagliate, vedere [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
 
@@ -74,7 +74,7 @@ Utilizzare il cmdlet **New-MailboxRestoreRequest** con i parametri  _SourceMailb
 
 ## <a name="restore-the-archive-from-an-inactive-mailbox"></a>Ripristinare l'archivio da una cassetta postale inattiva
 
-Se una cassetta postale inattiva dispone di una cassetta postale di archiviazione, è anche possibile ripristinarla nella cassetta postale di archiviazione di una cassetta postale esistente. Per ripristinare l'archivio da una cassetta postale inattiva, è necessario aggiungere le opzioni  _SourceIsArchive_ e  _TargetIsAchive_ al comando utilizzato per ripristinare una cassetta postale inattiva. 
+Se una cassetta postale inattiva dispone di una cassetta postale di archiviazione, è anche possibile ripristinarla nella cassetta postale di archiviazione di una cassetta postale esistente. Per ripristinare l'archivio da una cassetta postale inattiva, è necessario aggiungere le opzioni  _SourceIsArchive_ e  _TargetIsAchive_ al comando utilizzato per ripristinare una cassetta postale inattiva.
   
 1. Creare una variabile che contiene le proprietà della cassetta postale inattiva.
 
@@ -82,7 +82,7 @@ Se una cassetta postale inattiva dispone di una cassetta postale di archiviazion
     $InactiveMailbox = Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox>
     ```
 
-    > [!IMPORTANT]
+    > [!NOTE]
     > Nel comando precedente, usare il valore della proprietà **DistinguishedName** o **ExchangeGUID** per identificare la cassetta postale inattiva. Queste proprietà sono univoche per ogni cassetta postale nell'organizzazione, mentre è possibile che una cassetta postale attiva e una cassetta postale inattiva possano avere lo stesso indirizzo SMTP primario. 
   
 2. Ripristinare il contenuto dell'archivio dalla cassetta postale inattiva (archivio di origine) all'archivio di una cassetta postale esistente (archivio di destinazione). In questo esempio, il contenuto dell'archivio di origine viene copiato in una cartella denominata "Archivio della cassetta postale inattiva" nell'archivio della cassetta postale di destinazione.
@@ -93,7 +93,7 @@ Se una cassetta postale inattiva dispone di una cassetta postale di archiviazion
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- **Qual è la differenza principale tra il recupero e il ripristino di una cassetta postale inattiva?** When you recover an inactive mailbox, the mailbox is basically converted to a new mailbox, the contents and folder structure of the inactive mailbox are retained, and the mailbox is linked to a new user account. After it's recovered, the inactive mailbox no longer exists, and any changes made to the content in the new mailbox will affect the content that was originally on hold in the inactive mailbox. Conversely, when you restore an inactive mailbox, the contents are merely copied to another mailbox. The inactive mailbox is preserved and remains an inactive mailbox. Any changes made to the content in the target mailbox won't affect the original content held in the inactive mailbox. La cassetta postale inattiva può comunque essere cercata utilizzando lo [strumento di ricerca del contenuto](run-a-content-search-in-the-security-and-compliance-center.md) nel centro sicurezza & conformità, il suo contenuto può essere ripristinato in un'altra cassetta postale oppure può essere recuperato o eliminato in un secondo momento.
+- **Qual è la differenza principale tra il recupero e il ripristino di una cassetta postale inattiva?** When you recover an inactive mailbox, the mailbox is basically converted to a new mailbox, the contents and folder structure of the inactive mailbox are retained, and the mailbox is linked to a new user account. After it's recovered, the inactive mailbox no longer exists, and any changes made to the content in the new mailbox will affect the content that was originally on hold in the inactive mailbox. Conversely, when you restore an inactive mailbox, the contents are merely copied to another mailbox. The inactive mailbox is preserved and remains an inactive mailbox. Any changes made to the content in the target mailbox won't affect the original content held in the inactive mailbox. La cassetta postale inattiva può comunque essere cercata utilizzando lo [strumento di ricerca del contenuto](content-search.md), i suoi contenuti possono essere ripristinati in un'altra cassetta postale oppure può essere recuperata o eliminata in un secondo momento.
 
 - **Come si trovano le cassette postali inattive?** Per ottenere un elenco delle cassette postali inattive nell'organizzazione e visualizzare le informazioni utili per il ripristino di una cassetta postale inattiva, è possibile eseguire questo comando.
 

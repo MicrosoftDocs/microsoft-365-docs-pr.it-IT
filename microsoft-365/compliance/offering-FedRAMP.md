@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 0e967520dbbac845861168d3eea5053e18a46edf
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: da8e7e473210c42cb5d95f2701779561c95b6bb3
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859806"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804949"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programma per la gestione delle autorizzazioni e dei rischi federali (FedRAMP)
 
@@ -69,8 +70,8 @@ Dopo aver concesso un P-ATO, un CSP richiede ancora un'autorizzazione, ovvero un
 - Intune
 - [Office 365 e Office 365 U.S. Government](https://aka.ms/o365-compliance-framework)
 - Office 365 U.S. Government Defense
-- Servizio cloud Power BI, indipendente o incluso in un piano o in una famiglia di prodotti con marchio Office 365
-- ATP Microsoft Defender
+- Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
+- Microsoft Defender ATP
 
 > [!NOTE]
 > L'utilizzo di Azure Active Directory all'interno di Azure Government richiede l'utilizzo di componenti distribuiti all'esterno di Azure Government sul cloud pubblico di Azure.
@@ -109,10 +110,10 @@ Sì. È possibile utilizzare le certificazioni dei servizi cloud Microsoft come 
 ## <a name="resources"></a>Risorse
 
 - [Programma federale di gestione dei rischi e delle autorizzazioni](https://www.fedramp.gov/)
-- [Quadro di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Framework di valutazione della sicurezza di FedRAMP](https://go.microsoft.com/fwlink/p/?linkid=2099507)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 

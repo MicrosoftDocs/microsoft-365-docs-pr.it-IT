@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c125b3cf01824c5791917bed45766b62cea7cdd5
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 7d2d718aa8c502afedce0fe99d6f444f78735246
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859746"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804809"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Portabilità e responsabilità dell'assicurazione malattia (HIPAA) & atti HITECH
 
@@ -107,7 +108,7 @@ Per assistere i clienti con questa attività, Microsoft ha pubblicato queste gui
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Understanding HIPAA compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 maggio 2016)
 - [Guida all'implementazione di Azure HIPAA](https://aka.ms/azure-hipaa-guide)
-- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 

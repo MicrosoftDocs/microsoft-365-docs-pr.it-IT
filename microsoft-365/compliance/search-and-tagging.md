@@ -3,6 +3,7 @@ title: Ricerca e tagging
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: In Advanced eDiscovery, il modulo di ricerca e tagging consente di cercare, visualizzare in anteprima e organizzare i documenti nel caso. Attualmente, questo modulo è in versione beta.
-ms.openlocfilehash: b3e660e6dca014323cfd06f10c14747751aeb386
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f5e192988519a9190aa53efef35a8e584e0987cc
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084170"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802899"
 ---
 # <a name="search-and-tagging"></a>Ricerca e tagging
 
@@ -55,8 +56,8 @@ Nella tabella seguente sono elencate le proprietà che è possibile cercare util
 |**titolo** <br/> | Il titolo di un documento del sito. <br/> |
 |**dominanttheme**\* <br/> | Il tema dominante di un elemento. <br/> |
 |**tema**\* <br/> | Temi associati a un elemento. <br/> |
-|**readpercentile_[issuenum]**\*\* <br/> | Il percentile di lettura di un elemento, per il problema definito da [issuenum]. <br/> |
-|**relevancescore_[issuenum]**\*\* <br/> | Il Punteggio di pertinenza di un elemento, per il problema definito da [issuenum]. <br/> |
+|**readpercentile_ [issuenum]**\*\* <br/> | Il percentile di lettura di un elemento, per il problema definito da [issuenum]. <br/> |
+|**relevancescore_ [issuenum]**\*\* <br/> | Il Punteggio di pertinenza di un elemento, per il problema definito da [issuenum]. <br/> |
 |**relevancetag_ [TagName]**\*\* <br/> | Se un elemento è stato contrassegnato manualmente per la pertinenza, il tag definito da [TagName]. <br/> |
 |||
 

@@ -3,6 +3,7 @@ title: Tagging e valutazione in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 09/14/2017
 audience: Admin
 ms.topic: article
@@ -13,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Esaminare i passaggi necessari per eseguire la formazione di valutazione, compresi i file di tagging, e la revisione dei risultati della valutazione in Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 067f8933bd7fc1286e468d664bf4dbd754e64f00
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 33a79bd6a9debb203a5685dde11b9350da6006af
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084094"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40802749"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Tagging e valutazione in Office 365 Advanced eDiscovery
 
@@ -118,7 +119,7 @@ Quando la ricchezza è molto bassa, il numero di file di valutazione aggiuntivi 
 In assenza di stabilizzazione basata statisticamente, vi saranno risultati con un livello di precisione e confidenza inferiore. Tuttavia, questi risultati possono essere utilizzati per trovare i file rilevanti quando non è necessario conoscere la percentuale di file rilevanti trovati. Analogamente, questo stato può essere utilizzato per formare problemi con una ricchezza bassa, in cui i punteggi rilevati possono accelerare l'accesso ai file rilevanti per un problema specifico.
   
 > [!TIP]
-> Nella scheda ** \> Tracking pertinenza** , espansione visualizzazione problema, sono disponibili le seguenti opzioni di visualizzazione: > il passaggio successivo consigliato, ad esempio il **passaggio successivo: il tagging** può essere ignorato (per ogni problema) facendo clic sul pulsante **modifica** alla sua destra e quindi selezionando un passaggio diverso nel **passaggio successivo**. Quando l'indicatore di stato di valutazione non è stato completato, la valutazione sarà la successiva opzione consigliata per contrassegnare i file di valutazione e aumentare l'accuratezza delle statistiche. > è possibile modificare il margine di errore e valutarne l'impatto, facendo clic su **modifica**e nella **finestra di dialogo livello di valutazione**, modificando il **margine di errore di destinazione per le stime di richiamo**e facendo clic su **Aggiorna valori**. Inoltre, in questa finestra di dialogo, è possibile visualizzare le opzioni avanzate facendo clic su **Avanzate**. > è possibile visualizzare le statistiche aggiuntive a livello di valutazione e il relativo impatto facendo clic su **Visualizza**. Nella finestra di dialogo Risultati dettagli visualizzati, le statistiche sono disponibili per ogni problema, quando sono presenti almeno 500 file di valutazione contrassegnati e almeno 18 file sono contrassegnati come rilevanti per il problema. 
+> Nella scheda ** \> Tracking pertinenza** , espansione visualizzazione problema, sono disponibili le seguenti opzioni di visualizzazione: > il passaggio successivo consigliato, ad esempio il **passaggio successivo: il tagging** può essere ignorato (per problema) facendo clic sul pulsante **modifica** a destra e quindi selezionando un passaggio diverso nel **passaggio successivo**. Quando l'indicatore di stato di valutazione non è stato completato, la valutazione sarà la successiva opzione consigliata per contrassegnare i file di valutazione e aumentare l'accuratezza delle statistiche. > è possibile modificare il margine di errore e valutarne l'impatto, facendo clic su **modifica**e nella **finestra di dialogo livello di valutazione**, modificando il **margine di errore di destinazione per le stime di richiamo**e facendo clic su **Aggiorna valori**. Inoltre, in questa finestra di dialogo, è possibile visualizzare le opzioni avanzate facendo clic su **Avanzate**. > è possibile visualizzare le statistiche aggiuntive a livello di valutazione e il relativo impatto facendo clic su **Visualizza**. Nella finestra di dialogo Risultati dettagli visualizzati, le statistiche sono disponibili per ogni problema, quando sono presenti almeno 500 file di valutazione contrassegnati e almeno 18 file sono contrassegnati come rilevanti per il problema. 
   
 ## <a name="see-also"></a>Vedere anche
 
