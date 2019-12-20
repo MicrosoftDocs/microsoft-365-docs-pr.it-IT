@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Documentazione e risorse di Microsoft 365 Enterprise
+title: Microsoft 365 per la documentazione e le risorse dell'organizzazione
 summary: App di produttività Best-in-Class con servizi cloud intelligenti che trasformano la modalità di lavoro.
 brand: m365
 metadata:
-  title: Documentazione e risorse di Microsoft 365 Enterprise
-  description: Informazioni sulla documentazione del prodotto e sulle risorse disponibili per Microsoft 365 Enterprise per professionisti IT, Information Worker e Partners.
+  title: Microsoft 365 per la documentazione e le risorse dell'organizzazione
+  description: Informazioni sulla documentazione del prodotto e sulle risorse disponibili per Microsoft 365 per Enterprise per professionisti IT, Information Worker e Partners.
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp
@@ -13,15 +13,15 @@ metadata:
   author: robmazz
   ms.author: robmazz
   ms.date: 11/29/2019
-  ms.openlocfilehash: 945412e8e66fe558971ceacf3a57023b5bba6e5f
-  ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+  ms.openlocfilehash: d7c4eccccc47a9264cdd14fab2b7740789dd33b0
+  ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 12/03/2019
-  ms.locfileid: "39669539"
+  ms.lasthandoff: 12/19/2019
+  ms.locfileid: "40801671"
 highlightedContent:
   items:
-  - title: Informazioni su Microsoft 365 Enterprise
+  - title: Informazioni su Microsoft 365 per Enterprise
     itemType: get-started
     url: microsoft-365-overview.md
   - title: Accelerare la distribuzione con FastTrack
@@ -31,8 +31,8 @@ highlightedContent:
     itemType: learn
     url: https://docs.microsoft.com/learn/m365/
 conceptualContent:
-  title: Ottenere assistenza con Microsoft 365 Enterprise e altre risorse
-  summary: Esplorare le funzionalità e i servizi di Microsoft 365 Enterprise Deployment.
+  title: Ottenere assistenza con Microsoft 365 per Enterprise e altre risorse
+  summary: Esplorare Microsoft 365 per informazioni su Guida alla distribuzione aziendale, funzionalità e servizi.
   items:
   - title: Seguire la Guida di orientamento alla distribuzione
     links:
@@ -76,7 +76,7 @@ conceptualContent:
     - url: migration-microsoft-365-enterprise-workload.md
       itemType: deploy
       text: Client e server di Office e migrazione di Windows
-  - title: Gestire Microsoft 365 Enterprise
+  - title: Gestire Microsoft 365 per Enterprise
     links:
     - url: https://docs.microsoft.com/windows/deployment/update/
       itemType: how-to-guide

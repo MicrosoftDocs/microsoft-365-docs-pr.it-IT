@@ -5,10 +5,6 @@
       items:
         - name: Sicurezza Microsoft 365 per decision maker aziendali
           href: Microsoft-365-security-for-bdm.md
-        - name: Secure Score
-          href: ./mtp/microsoft-secure-score.md
-        - name: Secure Score (anteprima)
-          href: ./mtp/microsoft-secure-score-preview.md
         - name: Workshop di formazione per Chief Information Security Officer (CISO)
           href: ./office-365-security/ciso-workshop.md
           items:
@@ -55,61 +51,61 @@
               href: ./mtp/troubleshoot.md
         - name: Procedure guidate
           items:
-            - name: Abilitare Microsoft Threat Protection
+            - name: Attivare Microsoft Threat Protection
               href: mtp/mtp-enable.md
             - name: Incidenti
               items:
                 - name: Panoramica
                   href: mtp/incidents-overview.md
-                - name: Priorità degli incidenti
+                - name: Assegnare priorità agli incidenti
                   href: mtp/incident-queue.md
-                - name: Esaminare gli eventi non consentiti
+                - name: Indagare sugli eventi imprevisti
                   href: mtp/investigate-incidents.md
-                - name: Gestire gli eventi non consentiti
+                - name: Gestire gli eventi imprevisti
                   href: mtp/manage-incidents.md
             - name: Analisi e risposta alle minacce automatizzate
               items:
                 - name: Panoramica dell'aria
                   href: mtp/mtp-autoir.md
-                - name: Accedere al centro azioni
+                - name: Accedere al centro notifiche
                   href: mtp/mtp-action-center.md
                 - name: Visualizzare i risultati dell'aria
                   href: mtp/mtp-autoir-results.md
                 - name: Approva o rifiuta le azioni in sospeso
                   href: mtp/mtp-autoir-actions.md
-            - name: Caccia avanzata
+            - name: Ricerca avanzata
               items:
                 - name: Ricerca in Microsoft 365
                   href: mtp/hunting.md
                 - name: Panoramica della ricerca avanzata
                   href: mtp/advanced-hunting-overview.md
-                - name: Informazioni sul linguaggio di query
+                - name: Capire il linguaggio delle query
                   href: mtp/advanced-hunting-query-language.md
-                - name: Utilizzo di query condivise
+                - name: Utilizzare le query condivise
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Caccia su dispositivi e messaggi di posta elettronica
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Comprendere lo schema
                   href: mtp/advanced-hunting-schema-tables.md
                   items:
-                    - name: MachineInfo
-                      href: mtp/advanced-hunting-machineinfo-table.md
-                    - name: MachineNetworkInfo
-                      href: mtp/advanced-hunting-machinenetworkinfo-table.md
-                    - name: ProcessCreationEvents
-                      href: mtp/advanced-hunting-processcreationevents-table.md
-                    - name: NetworkCommunicationEvents
-                      href: mtp/advanced-hunting-networkcommunicationevents-table.md
-                    - name: FileCreationEvents
-                      href: mtp/advanced-hunting-filecreationevents-table.md
-                    - name: RegistryEvents
-                      href: mtp/advanced-hunting-registryevents-table.md
-                    - name: LogonEvents
-                      href: mtp/advanced-hunting-logonevents-table.md
-                    - name: ImageLoadEvents
-                      href: mtp/advanced-hunting-imageloadevents-table.md
-                    - name: MiscEvents
-                      href: mtp/advanced-hunting-miscevents-table.md
+                    - name: DeviceInfo
+                      href: mtp/advanced-hunting-deviceinfo-table.md
+                    - name: DeviceNetworkInfo
+                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceFileEvents
+                      href: mtp/advanced-hunting-devicefileevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: mtp/advanced-hunting-deviceregistryevents-table.md
+                    - name: DeviceLogonEvents
+                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceEvents
+                      href: mtp/advanced-hunting-deviceevents-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
                     - name: EmailAttachmentInfo
@@ -357,7 +353,9 @@
                   items:
                     - name: 'Attivare ATP per SharePoint, OneDrive e Microsoft Teams'
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: Informazioni sulle campagne di attacco più recenti con l'analisi delle minacce
+            - name: Visualizzazioni della campagna
+              href: ./office-365-security/campaigns.md
+            - name: Informazioni sugli attacchi più recenti con Threat Analytics
               href: ./mtp/latest-attack-campaigns.md
             - name: Visualizzare e leggere i report ATP
               href: ./office-365-security/view-reports-for-atp.md
