@@ -71,19 +71,19 @@ Se necessario, il [Passaggio 4](../windows10-enable-windows-analytics.md) può a
 <a name="crit-windows10-step5a"></a>
 ### <a name="required-you-are-using-windows-defender-antivirus-or-your-own-antimalware-solution"></a>Obbligatorio: utilizzo di Windows Defender Antivirus o la propria soluzione antimalware
 
-Windows Defender Antivirus o la propria soluzione antivirus sono stati distribuiti per proteggere i dispositivi che eseguono Windows 10 Enterprise da software dannoso. Se è stato distribuito Windows Defender Antivirus, è stato implementato un metodo di segnalazione, come System Center Configuration Manager o Microsoft Intune, per monitorare eventi e attività antivirus.
+Windows Defender Antivirus o la propria soluzione antivirus sono stati distribuiti per proteggere i dispositivi che eseguono Windows 10 Enterprise da software dannoso. Se è stato distribuito Windows Defender Antivirus, è stato implementato un metodo di segnalazione, come Microsoft Endpoint Configuration Manager o Microsoft Intune, per monitorare eventi e attività antivirus.
 
 Se necessario, il [Passaggio 5](../windows10-enable-security-features.md#windows10-sec-av) può aiutare a soddisfare questo requisito.
 
 <a name="crit-windows10-step5b"></a>
 ### <a name="required-you-are-using-windows-defender-exploit-guard"></a>Obbligatorio: utilizzo di Windows Defender Exploit Guard
 
-Windows Defender Exploit Guard è stato distribuito per proteggere i dispositivi che eseguono Windows 10 Enterprise da intrusioni ed è stato implementato un metodo di segnalazione, come System Center Configuration Manager o Microsoft Intune, per monitorare eventi e attività di intrusione.
+Windows Defender Exploit Guard è stato distribuito per proteggere i dispositivi che eseguono Windows 10 Enterprise da intrusioni ed è stato implementato un metodo di segnalazione, come Configuration Manager o Microsoft Intune, per monitorare eventi e attività di intrusione.
 
 Se necessario, il [Passaggio 5](../windows10-enable-security-features.md#windows10-sec-eg) può aiutare a soddisfare questo requisito.
 
 <a name="crit-windows10-step5c"></a>
-### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-enterprise-e5-only"></a>Obbligatorio: utilizzo di Microsoft Defender Advanced Threat Protection (solo Microsoft 365 Enterprise E5)
+### <a name="required-you-are-using-microsoft-defender-advanced-threat-protection-microsoft-365-e5-only"></a>Obbligatorio: utilizzo di Microsoft Defender Advanced Threat Protection (solo Microsoft 365 E5)
 
 Microsoft Defender Advanced Threat Protection Defender (ATP) è stato distribuito per rilevare, investigare e rispondere alle minacce avanzate contro la rete e i dispositivi che eseguono Windows 10 Enterprise. 
 

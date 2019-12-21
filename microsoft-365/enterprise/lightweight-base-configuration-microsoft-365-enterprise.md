@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilizzare questa guida al lab di test per creare un ambiente di testing semplificato per testare Microsoft 365 Enterprise.
-ms.openlocfilehash: 6f49982fe71196f3c147c1638b402ee63bb861c1
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 0bbb54ca054ce1f4f96a32c887fba60b982375de
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202307"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801651"
 ---
 # <a name="the-lightweight-base-configuration"></a>La configurazione di base
 
@@ -43,23 +43,23 @@ Si inizia con un abbonamento di valutazione a Office 365 E5 e quindi si aggiunge
 
 Per avviare la sottoscrizione di valutazione di Office 365 E5, è necessario innanzitutto un nome di società fittizia e un nuovo account Microsoft.
   
-1. Si consiglia di utilizzare una variante del nome aziendale Contoso per il nome dell'azienda, che è un nome aziendale fittizio utilizzato nel contenuto di esempio di Microsoft, ma non è obbligatorio. Registrare il nome della società fittizia qui: ![](./media/Common-Images/TableLine.png)
+1. Si consiglia di utilizzare una variante del nome aziendale Contoso per il nome dell'azienda, che è un nome aziendale fittizio utilizzato nel contenuto di esempio di Microsoft, ma non è obbligatorio. Registrare il nome della società fittizia qui: ![Riga](./media/Common-Images/TableLine.png)
     
 2. Per registrare un nuovo account Microsoft, andare su [https://outlook.com](https://outlook.com) e creare un account con un nuovo account di posta elettronica e indirizzo. Utilizzare questo account per iscriversi a Office 365.
     
-  - Registrare il nome e cognome del nuovo account qui: ![](./media/Common-Images/TableLine.png)
+  - Registrare il nome e cognome del nuovo account qui: ![Riga](./media/Common-Images/TableLine.png)
     
-  - Registrare l'indirizzo e-mail del nuovo account qui: ![](./media/Common-Images/TableLine.png)@outlook.com
+  - Registrare l'indirizzo di posta elettronica del nuovo account qui: ![Riga](./media/Common-Images/TableLine.png)@outlook.com
     
-### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrare una sottoscrizione di valutazione di Office 365 E5
+### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrare un abbonamento di valutazione di Office 365 E5
 
 1. Aprire il browser Internet nel computer e passare a [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
 2. Nella pagina **Grazie per aver scelto Office 365 E5** specificare l'indirizzo e-mail del nuovo account al passaggio 1.
 3. Nel passaggio 2 del processo dell'abbonamento di valutazione digitare le informazioni richieste e quindi eseguire la verifica.
 4. Nel passaggio 3 digitare un nome di organizzazione e quindi il nome dell'account che sarà amministratore globale dell'abbonamento. 
-5. Per il passaggio 4, registrare la pagina di accesso qui (selezionare e copiare): ![](./media/Common-Images/TableLine.png) 
-6. Registrare l'ID utente qui: ![](./media/Common-Images/TableLine.png).onmicrosoft.com  
+5. Per il passaggio 4, registrare la pagina di accesso qui (selezionare e copiare): ![Riga](./media/Common-Images/TableLine.png) 
+6. Registrare l'ID utente qui: ![Riga](./media/Common-Images/TableLine.png).onmicrosoft.com  
    Annotare la password in un posto sicuro.
    Questo valore verrà denominato **Nome amministratore globale di Office 365**.
 8. Fare clic su **Vai alla configurazione**.
@@ -119,11 +119,11 @@ Si consiglia di stampare questo articolo per registrare le informazioni specific
 
 Registrare questi valori:
   
-- Nome amministratore globale di Office 365: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (dal passaggio 6 della fase 1)
+- Nome amministratore globale di Office 365: ![Riga](./media/Common-Images/TableLine.png).onmicrosoft.com (dal passaggio 6 della fase 1)
     
     Annotare anche la password di questo account in una posizione sicura.
     
-- Nome dell'organizzazione dell'abbonamento di valutazione: ![](./media/Common-Images/TableLine.png) (dal passaggio 4 della fase 1)
+- Nome dell'organizzazione dell'abbonamento di valutazione: ![Riga](./media/Common-Images/TableLine.png) (dal passaggio 4 della fase 1)
     
 - Per elencare gli account di User 2, User 3, User 4, e User 5, eseguire i comandi seguenti dal modulo di Microsoft Azure Active Directory per il prompt di Windows PowerShell:
     
@@ -133,13 +133,13 @@ Registrare questi valori:
 
     Registrare i nomi degli account qui:
     
-  - Nome account utente User 2: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nome account utente 2: user2@![Riga](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nome account utente User 3: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nome account utente 3: user3@![Riga](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nome account utente User 4: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nome account utente 4: user4@![Riga](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Nome account utente User 5: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - Nome account utente 5: user5@![Riga](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Registrare anche la password comune degli account in un posto sicuro.
    

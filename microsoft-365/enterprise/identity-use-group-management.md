@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: È possibile usare i gruppi per automatizzare la gestione di alcune attività amministrative.
-ms.openlocfilehash: 0d46a2af5683b8da40275302460d453f1f14acbe
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 49cdb0c3d394cb423d0565d7093f1b32b6661158
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831659"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801711"
 ---
 # <a name="step-5-use-groups-for-management"></a>Passaggio 5: Usare i gruppi per la gestione
 
@@ -27,7 +27,7 @@ ms.locfileid: "39831659"
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>Consentire agli utenti di creare e gestire i propri gruppi
 
-*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
+*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365*
 
 In questa sezione verranno identificati i gruppi di Azure Active Directory (AD Azure) che possono essere gestiti dai proprietari del gruppo invece che dagli amministratori IT. Detta *gestione dei gruppi in modalità self-service*, questa caratteristica consente ai proprietari del gruppo a cui non sono stati assegnati ruoli di amministrazione per creare e gestire gruppi di sicurezza. 
 
@@ -44,7 +44,7 @@ Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-
 <a name="identity-dyn-groups"></a>
 ## <a name="set-up-dynamic-group-membership"></a>Configurare l'appartenenza a gruppi dinamici
 
-*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
+*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365*
 
 In questa sezione si creerà una serie di regole che aggiungono o rimuovono automaticamente gli account utente dai membri di un gruppo di Azure AD. Questa operazione è denominata *appartenenza dinamica al gruppo*. Le regole si basano sugli attributi dell’account utente, come il reparto o paese.
 
@@ -74,7 +74,7 @@ Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-
 <a name="identity-group-license"></a>
 ## <a name="set-up-automatic-licensing"></a>Configurare l'assegnazione automatica delle licenze
 
-*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
+*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365*
 
 In questa sezione è possibile configurare gruppi di sicurezza in Azure AD per assegnare automaticamente licenze da un set di abbonamenti a tutti i membri del gruppo. Questa operazione è denominata *licenze basate sui gruppi*. Se un account utente viene aggiunto o rimosso dal gruppo, le licenze per gli abbonamenti del gruppo verranno automaticamente assegnate o rimosse dall'account utente.
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: È necessario rendere le password complesse e gestibili all'interno dell'organizzazione.
-ms.openlocfilehash: 375f4a678e85dccb544ffaf56f648e98609841d9
-ms.sourcegitcommit: 2aeafb631aaabc53eea0a8029711eb891e48d249
+ms.openlocfilehash: 143f7727846316100e4133ccf4b34646645bfd7f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37746512"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801741"
 ---
 # <a name="step-2-secure-your-passwords"></a>Passaggio 2: proteggere le password
 
@@ -27,7 +27,7 @@ ms.locfileid: "37746512"
 <a name="identity-password-prot"></a>
 ## <a name="prevent-bad-passwords"></a>Impedire l'uso di password non consentite
 
-*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
+*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365*
 
 Per creare le password degli account utente, tutti gli utenti devono attenersi alla [Guida alle password di Microsoft](https://www.microsoft.com/research/publication/password-guidance/).
 
@@ -46,7 +46,7 @@ Come checkpoint provvisorio, è possibile vedere i [criteri uscita](identity-exi
 <a name="identity-pw-reset"></a>
 ## <a name="simplify-password-resets"></a>Semplificare le reimpostazioni delle password
 
-*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
+*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365*
 
 In questa sezione viene abilitata la reimpostazione della password self-service per consentire agli utenti di reimpostare o sbloccare le password o gli account. Per segnalare abusi o usi impropri è possibile utilizzare la reportistica dettagliata, che tiene traccia degli accessi degli utenti al sistema, insieme alle notifiche. È necessario attivare il writeback della password prima di implementare le reimpostazioni delle password.
 

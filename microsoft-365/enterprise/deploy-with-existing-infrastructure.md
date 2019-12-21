@@ -1,5 +1,5 @@
 ---
-title: Distribuzione di Microsoft 365 Enterprise nell'infrastruttura esistente
+title: Distribuzione di Microsoft 365 per aziende nell'infrastruttura esistente
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,19 +12,19 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Andare ai criteri uscita della distribuzione di Microsoft 365 Enterprise quando si dispone di un'infrastruttura esistente.
-ms.openlocfilehash: 1b464398b981133e2851760d7bfe16869f1d1429
-ms.sourcegitcommit: 328b31f69663669b3c656b2e4db529f70d1c753e
+description: Andare ai criteri uscita della distribuzione di Microsoft 365 per aziende quando si dispone di un'infrastruttura esistente.
+ms.openlocfilehash: 1b3ed8edd84a1879f4cd46795fc55e3625a97be2
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "37148510"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801931"
 ---
-# <a name="deployment-of-microsoft-365-enterprise-with-existing-infrastructure"></a>Distribuzione di Microsoft 365 Enterprise nell'infrastruttura esistente
+# <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>Distribuzione di Microsoft 365 per aziende nell'infrastruttura esistente
 
-Molte organizzazioni dispongono di rete, identità e componenti esistenti oppure di prodotti Microsoft locali e servizi basati sul cloud. In questo articolo viene illustrata ogni fase della distribuzione di Microsoft 365 Enterprise affinché sia possibile determinare rapidamente come adattare o modificare l'infrastruttura esistente.
+Molte organizzazioni dispongono di rete, identità e componenti esistenti oppure di prodotti Microsoft locali e servizi basati sul cloud. In questo articolo viene illustrata ogni fase della distribuzione di Microsoft 365 per aziende affinché sia possibile determinare rapidamente come adattare o modificare l'infrastruttura esistente.
 
-Prima di uscire da ogni fase, è necessario esaminare i relativi criteri uscita, ovvero un insieme di condizioni necessarie che è necessario soddisfare e di condizioni facoltative da prendere in considerazione. I criteri uscita di ogni fase garantiscono che l'infrastruttura cloud e locale e la risultante configurazione end-to-end soddisfino i requisiti di una distribuzione Microsoft 365 Enterprise.
+Prima di uscire da ogni fase, è necessario esaminare i relativi criteri uscita, ovvero un insieme di condizioni necessarie che è necessario soddisfare e di condizioni facoltative da prendere in considerazione. I criteri uscita di ogni fase garantiscono che l'infrastruttura cloud e locale e la risultante configurazione end-to-end soddisfino i requisiti di una distribuzione di Microsoft 365 per aziende.
 
 > [!Note] 
 > FastTrack è un vantaggio continuo e ripetibile, disponibile gratuitamente come parte dell'abbonamento, fornito dai tecnici Microsoft per consentire di passare al cloud secondo le proprie tempistiche. FastTrack inoltre offre l'accesso a partner qualificati per servizi aggiuntivi, in base alle proprie esigenze. Con al momento oltre 40.000 utenti abilitati, FastTrack consente di massimizzare il ROI, di accelerare la distribuzione e di aumentare l'adozione all'interno dell'organizzazione. Vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365).

@@ -3,7 +3,7 @@ title: Team per dati altamente regolamentati
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 11/12/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un team sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: fe397dbd091415b15bbc48d54bfa59c432437788
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: b35c4e8332b73b44042430651cbba9daa2c59c04
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631266"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801421"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Team per dati altamente regolamentati
 
@@ -38,29 +38,21 @@ Gli elementi della configurazione di un team per dati altamente regolamentati so
   - Impedisce ai non-membri del sito di richiedere accesso al sito.
 - Un'etichetta di conservazione di Office 365 per il sito di SharePoint sottostante che viene applicata automaticamente ai nuovi file nel sito come strumento predefinito per definire i criteri di conservazione.
 - Criteri di prevenzione della perdita dei dati che usano l'etichetta di conservazione e impediscono agli utenti di condividere o inviare file all'esterno dell'organizzazione.
-- Un'etichetta di riservatezza di Office 365 o una sottoetichetta di un'etichetta per dati altamente regolamentati con crittografia abilitata e autorizzazioni di creazione condivisa per il gruppo di Office 365 del team. Gli utenti applicano l'etichetta o la sottoetichetta ai file archiviati nella sezione **File** del team dall'opzione della barra dei menu Riservatezza in Word, Excel e PowerPoint.
+- Un'etichetta di riservatezza di Office 365 o una sottoetichetta di un'etichetta per dati altamente regolamentati con crittografia abilitata e autorizzazioni di creazione condivisa per il gruppo di Office 365 del team. Gli utenti applicano l'etichetta o la sottoetichetta ai file archiviati nella sezione **File** del team dall'opzione della barra dei menu **Riservatezza** in Word, Excel e PowerPoint.
 
 Ecco la configurazione risultante con un'etichetta di riservatezza.
 
 ![Configurazione dello scenario del team sicuro](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+
+Per una rapida panoramica, guardare questo breve video.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a> Per un riepilogo di una pagina per questo scenario, vedere il [poster Team per dati altamente regolamentati](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
 
 [![Poster Team per dati altamente regolamentati](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
 È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
-
-
-<!--
-
-[Quick-Learn test (vertical): PDF](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pdf)
-
-[Quick-Learn test: PowerPoint](./media/secure-teams-highly-regulated-data-scenario/Click-Through-Test.pptx)
-
-[Horizontal PDF (Quick Start)](./media/secure-teams-highly-regulated-data-scenario/Sideways.pdf)
-
---> 
-
 
 ## <a name="phase-1-configure-a-team-for-highly-regulated-data"></a>Fase 1: Configurare un team per i dati altamente regolamentati
 

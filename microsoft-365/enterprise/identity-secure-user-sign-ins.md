@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: È possibile rendere più sicuri gli accessi degli utenti ai dispositivi Windows e a Microsoft 365.
-ms.openlocfilehash: 6f45d61694cabd10587ff13bd787fa42bdaeac01
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: c1379cfdd65204a27c8147ade8c8c8704e441f1f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370193"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801731"
 ---
 # <a name="step-3-secure-and-manage-your-user-sign-ins"></a>Passaggio 3: proteggere e gestire gli accessi degli utenti
 
@@ -28,7 +28,7 @@ ms.locfileid: "37370193"
 <a name="identity-windows-hello"></a>
 ## <a name="use-windows-hello-for-business"></a>Usare Windows Hello for Business
 
-*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
+*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365*
 
 Windows Hello for Business in Windows 10 Enterprise sostituisce le password con l'autenticazione complessa a due fattori durante l'accesso a un dispositivo Windows. I due fattori sono un nuovo tipo di credenziale utente che è associato a un dispositivo e a una biometria o a un PIN.
 
@@ -38,7 +38,7 @@ Per altre informazioni, vedere [Panoramica di Windows Hello for Business](https:
 <a name="identity-mfa"></a>
 ## <a name="set-up-azure-multi-factor-authentication"></a>Impostare l’autenticazione a più fattori di Azure
 
-*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
+*Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365*
 
 Durante questo passaggio, verrà impostata l’autenticazione a più fattori di Azure per aggiungere un secondo livello di sicurezza agli accessi e alle transazioni degli utenti. L'autenticazione a più fattori richiede un altro metodo di verifica dopo che gli utenti hanno immesso correttamente la password. Senza l’autenticazione a più fattori, la password è l'unico metodo di verifica. Il problema delle password è che molte di esse possono essere indovinate facilmente da un utente malintenzionato o condivise in modo inconsapevolmente con parti non affidabili.
 

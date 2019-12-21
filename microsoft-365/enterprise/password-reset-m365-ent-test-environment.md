@@ -3,7 +3,7 @@ title: Reimpostazione della password per l'ambiente di testing di Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/19/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: informazioni sulla configurazione e sul test di reimpostazione della password per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: 100db14b7940d68a185c3f6065df053aed7fbf73
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: 930c5b4a4ddcc4866a586ff444380ff6dcd66238
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757713"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801411"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Reimpostazione della password per l'ambiente di testing di Microsoft 365
 
@@ -33,9 +33,9 @@ Questo articolo descrive come configurare e testare la reimpostazione della pass
 
 1.  Creare l'ambiente di testing di Microsoft 365 Enterprise.
 2.  Attivare il writeback delle password.
-3.  Configurare e testare la reimpostazione della password per l'account utente 2.
+3.  Configurare e testare la reimpostazione della password per l'account utente 3.
     
-![Guide del laboratorio di testing per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
@@ -52,7 +52,6 @@ Questa configurazione è costituita da:
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. 
 - Azure AD Connect viene eseguito su APP1 per sincronizzare il dominio TESTLAB di Active Directory Domain Services con il tenant di Azure AD dell'abbonamento a Microsoft 365 o a Office 365.
 
-
 ## <a name="phase-2-enable-password-writeback"></a>Fase 2: Abilitare il writeback delle password
 
 Seguire le istruzioni in[Fase 2 delle guide al lab di test sul writeback delle password](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).
@@ -67,25 +66,26 @@ Innanzitutto, abilitare la reimpostazione della password per gli account in un g
 
 1. Aprire [https://portal.azure.com](https://portal.azure.com) da un'istanza privata del browser, quindi accedere usando le credenziali dell'account di amministratore globale.
 2. Nel portale di Azure fare clic su **Azure Active Directory > Gruppi > Nuovo gruppo**.
-3. Impostare **Tipo di gruppo** su **Sicurezza**, **Nome del gruppo** su **Reimpostazione della password** e **Tipo di appartenenza** su **Assegnato**. Fare clic su **Crea**.
-5. Fare clic sul gruppo **Reimpostazione della password** nell'elenco, quindi fare clic su **Membri**.
-6. Fare clic su **Aggiungi membri**, su **Utente 2**, quindi su **Seleziona**. Chiudere le pagine **Reimpostazione della password** e **Gruppo**.
-7. Nella pagina di Azure Active Directory, fare clic su **Reimpostazione della password**.
-8. Dalla pagina **Proprietà**, sotto l'opzione **Reimpostazione password self-service abilitata**, scegliere **Selezionato**.
-9. Da **Seleziona gruppo**, selezionare **Reimpostazione della password**, quindi fare clic su **Salva**.
-10. Chiudere l'istanza privata del browser.
+3. Impostare **Tipo di gruppo** su **Sicurezza**, **Nome del gruppo** su **Reimpostazione della password** e **Tipo di appartenenza** su **Assegnato**. 
+4. Fare clic su **Membri**, trovare e selezionare **Utente 3**, quindi fare clic su **Seleziona** e infine fare clic su **Crea**.
+5. Chiudere il riquadro **Gruppi**.
+6. Nel menu di spostamento a sinistra del riquadro di Azure Active Directory fare clic su **Reimpostazione password**.
+7. Nel riquadro **Reimpostazione password-Proprietà** scegliere **Selezionato** sotto l'opzione **Reimpostazione password self-service abilitata**.
+8. Fare clic su **Seleziona gruppo**, selezionare il gruppo **PWReset** e quindi fare clic su **Seleziona > Salva**.
+9. Chiudere l'istanza privata del browser.
 
-Successivamente, testare la reimpostazione della password per l'account utente 2.
+Successivamente, testare la reimpostazione della password per l'account utente 3.
 
 1. Aprire una nuova istanza privata del browser e passare alla pagina [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
-2. Accedere con le credenziali dell'account utente 2.
-3. In **Mantenere l'accesso all'account **, inserire il proprio numero di telefono cellulare e l'account di posta elettronica personale o aziendale per l'autenticazione.
-4. Dopo che sono stati verificati entrambi, fare clic su **Approvato** e chiudere l'istanza privata del browser.
-5. Aprire una nuova istanza del browser privata e accedere a [https://aka.ms/sspr](https://aka.ms/sspr).
-6. Accedere con le credenziali dell'account utente 2, digitare i caratteri del CAPTCHA e quindi fare clic su **Avanti**.
-8. Come **primo passaggio di verifica**, fare clic su **Inviare un messaggio all'indirizzo di posta elettronica alternativo**, quindi fare clic su **Posta elettronica**. All'avvenuta ricezione, digitare il codice di verifica e quindi fare clic su **Avanti**.
-9. In **Recuperare l'account**, digitare la nuova password per l'account utente 2 e quindi fare clic su **Fine**. Annotare la password dell'account utente 2 modificata e archiviarla in un luogo sicuro.
-10. In una scheda separata del browser stesso, passare a [ https://portal.office.com ](https://portal.office.com), quindi accedere con il nome dell'account utente 2 e la nuova password. Verrà visualizzata la pagina **Microsoft Office Home**.
+2. Accedere con le credenziali dell'account utente 3.
+3. In **Sono necessarie altre informazioni ** fare clic su **Avanti**. 
+5. In **Mantenere l'accesso all'account **, inserire il proprio numero di telefono cellulare e l'account di posta elettronica personale o aziendale per l'autenticazione.
+7. Dopo che sono stati verificati entrambi, fare clic su **Approvato** e chiudere l'istanza privata del browser.
+8. Aprire una nuova istanza del browser privata e accedere a [https://aka.ms/sspr](https://aka.ms/sspr).
+9. Digitare il nome dell'account utente 3, digitare i caratteri del CAPTCHA e quindi fare clic su **Avanti**.
+10. Come **primo passaggio di verifica**, fare clic su **Inviare un messaggio all'indirizzo di posta elettronica alternativo**, quindi fare clic su **Posta elettronica**. All'avvenuta ricezione, digitare il codice di verifica e quindi fare clic su **Avanti**.
+11. In **Tornare all'account** digitare una nuova password per l'account utente 3 e quindi fare clic su **Fine**. Prendere nota della password cambiata dell'account utente 3 e conservarla in un luogo sicuro.
+12. In una scheda separata del browser stesso, passare a [https://portal.office.com](https://portal.office.com) e quindi accedere con il nome dell'account utente 3 e la nuova password. Verrà visualizzata la **Home Page Microsoft Office**.
 
 Vedere il passaggio [Semplificare la reimpostazione della password](identity-secure-your-passwords.md#identity-pw-reset) nella fase Identità per informazioni e collegamenti per configurare la reimpostazione della password.
 
