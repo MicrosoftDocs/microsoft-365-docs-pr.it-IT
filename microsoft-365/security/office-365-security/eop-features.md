@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Nella tabella seguente viene fornito un elenco delle funzionalità disponibili nel servizio di filtro della posta elettronica ospitato in Exchange Online Protection (EOP).
-ms.openlocfilehash: 06f2de012963333f1040861dd8268b6b088f627c
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 82bdd8e932c194573ad7482c5a561d092897d010
+ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970592"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "40840175"
 ---
 # <a name="eop-features"></a>Funzionalità di Exchange Online Protection
 
@@ -93,5 +93,5 @@ Nella tabella seguente viene fornito un elenco delle funzionalità disponibili n
 |Assistenza tecnica telefonica e Web 7 giorni su 7, 24 ore su 24|Per ulteriori informazioni sulle opzioni di supporto e la guida di EOP, vedere [Guida e supporto tecnico per EOP](help-and-support-for-eop.md).|
 |**Altre funzionalità**||
 |Rete di server globale con ridondanza geografica|EOP viene eseguito in una rete globale di datacenter progettati per offrire la massima disponibilità. Per ulteriori informazioni, vedere la sezione relativa ai datacenter di EOP in [Panoramica su Exchange Online Protection](exchange-online-protection-overview.md).  |
-|L'accodamento dei messaggi sul server locale non consente di accettare la posta|I messaggi il cui recapito è ritardato rimangono nelle code per 2 giorni. I tentativi di invio dei messaggi sono basati sul tipo di errore ricevuto dal sistema di posta elettronica del destinatario. In media, l'intervallo tra i tentativi di invio è di 5 minuti. Per ulteriori informazioni, vedere [Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in EOP](eop-queued-deferred-and-bounced-messages-faq.md).  |
+|L'accodamento dei messaggi sul server locale non consente di accettare la posta|I messaggi in differimento rimangono nelle code per un giorno. I tentativi di invio dei messaggi variano in base all'errore ricevuto dal sistema di posta elettronica del destinatario. In media, l'intervallo tra i tentativi di invio è di 5 minuti. Per ulteriori informazioni, vedere [Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in EOP](eop-queued-deferred-and-bounced-messages-faq.md).|
 |Crittografia dei messaggi di Office 365 disponibile come servizio aggiuntivo|Per ulteriori informazioni, vedere [Crittografia in Office 365](https://docs.microsoft.com/office365/securitycompliance/encryption).|
