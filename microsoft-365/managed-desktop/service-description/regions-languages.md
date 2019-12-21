@@ -6,18 +6,18 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bdd11728b6b3b5ebaf0eea507906e4fc31adb7b5
-ms.sourcegitcommit: d9350b6465d1404d32bcba8f5fc5a203085e6b82
+ms.openlocfilehash: b517ab49681b7e9251cd5b577c9522db32aea4cb
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786731"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "37422533"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Aree geografiche e lingue supportate da Microsoft Managed Desktop
 
 In questo argomento vengono fornite informazioni dettagliate sulle aree e le lingue supportate da Microsoft Managed Desktop. 
 
-- **Aree geografiche:** Stati Uniti, Canada (escluso Québec), Regno Unito, Australia e Nuova Zelanda
+- **Aree geografiche:** Stati Uniti, Canada (escluso Québec), Regno Unito, Belgio, Lussemburgo, Paesi Bassi, Australia e Nuova Zelanda
 - **Lingue:** L'inglese è l'unica lingua supportata attualmente disponibile per gli utenti nei dispositivi gestiti. Questo è applicabile sia al [supporto dell'amministratore](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) sia alle opzioni di supporto per gli [utenti finali](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) . 
 
 Tuttavia, i clienti possono comunque utilizzare dispositivi gestiti all'esterno delle aree elencate in alto senza interruzioni del servizio Microsoft Managed Desktop. Ad esempio, un dipendente basato nel Regno Unito può lavorare in modo sicuro e ricevere gli aggiornamenti sul dispositivo gestito durante il viaggio in Asia, Europa o Sud America.

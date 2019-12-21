@@ -13,12 +13,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 3739f9f0ab7a7faa9c0467b29cc6c401254e8f58
-ms.sourcegitcommit: aa878adee65a1cdf87d4cabda41ab35673957f40
+ms.openlocfilehash: b2e9670d700d8c09caf861f5a24b0570e0f74256
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37590500"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "37746552"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -50,7 +50,7 @@ Per ottenere il tempo necessario per eseguire queste attività, è consigliabile
 |        |[Richiedere computer conformi](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Impone la gestione di Intune dei PC|
 |**Dati sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](#require-mfa-based-on-sign-in-risk)| |
 |         |[Richiedere PC conformi *e* dispositivi mobili](#require-compliant-pcs-and-mobile-devices)|Impone la gestione di Intune per PC e telefono/tablet|
-|**Riservatezza elevata**|[Richiede *sempre* l'autenticazione Master](#require-mfa-based-on-sign-in-risk)|
+|**Dati altamente regolamentati**|[Richiede *sempre* l'autenticazione Master](#require-mfa-based-on-sign-in-risk)|
 | | |
 
 ## <a name="assigning-policies-to-users"></a>Assegnazione di criteri agli utenti
@@ -104,7 +104,7 @@ Applicare le impostazioni in base al livello di protezione che si desidera asseg
 |:---|:---------|:-----|:----|
 |Livello di rischio|Protezione di base|Alto, medio|Controllare entrambi|
 | |Dati sensibili|Alto, medio e basso|Controllare tutti e tre|
-| |Riservatezza elevata| |Lasciare deselezionata tutte le opzioni per applicare sempre il Master|
+| |Dati altamente regolamentati| |Lasciare deselezionata tutte le opzioni per applicare sempre il Master|
 
 **Controlli di accesso**
 
@@ -162,7 +162,7 @@ Nelle tabelle seguenti vengono descritte le impostazioni dei criteri di accesso 
 ## <a name="high-risk-users-must-change-password"></a>Gli utenti ad alto rischio devono modificare la password
 Per assicurarsi che tutti gli account compromessi degli utenti a rischio elevato siano costretti a modificare la password durante l'accesso, è necessario applicare i criteri seguenti.
 
-Accedere al [portale di Microsoft Azure (http://portal.azure.com)](http://portal.azure.com/) con le credenziali di amministratore e selezionare **Azure AD Identity Protection > Criteri di rischio utente**.
+Accedere al [portale di Microsoft Azure (https://portal.azure.com)](https://portal.azure.com/) con le credenziali di amministratore e selezionare **Azure AD Identity Protection > Criteri di rischio utente**.
 
 **Assegnazioni**
 
@@ -225,7 +225,7 @@ Nelle tabelle seguenti vengono descritte le impostazioni consigliate:
 |Accesso|Richiedi PIN per l'accesso|Sì||
 ||Seleziona tipo|Numerico||
 ||Consenti PIN semplice|No||
-||Lunghezza PIN|6||
+||Lunghezza PIN|6 ||
 ||Consenti impronta digitale anziché PIN|Sì||
 ||Disabilitare il PIN dell'app quando il PIN del dispositivo è gestito|Sì||
 ||Richiedi credenziali aziendali per l'accesso|No||
@@ -308,7 +308,7 @@ Tutti i criteri descritti in precedenza vengono considerati distribuiti se asseg
 |Password|Richiedere una password per sbloccare i dispositivi mobili|Richiedono||
 ||Password semplici|Blocco||
 ||Tipo di password|Impostazione predefinita del dispositivo||
-||Lunghezza minima password|6||
+||Lunghezza minima password|6 ||
 ||Numero massimo di minuti di inattività prima che sia necessaria la password|15 |Questa impostazione è supportata per le versioni Android 4,0 e successive o per KNOX 4,0 o versione precedente. Per i dispositivi iOS, è supportato per iOS 8,0 e superiori|
 ||Scadenza password (giorni)|41||
 ||Numero di password precedenti per impedire il riutilizzo|5||
@@ -322,11 +322,11 @@ Tutti i criteri descritti in precedenza vengono considerati distribuiti se asseg
 ||Windows Defender antimalware Signature aggiornato|Richiedono||
 ||Protezione in tempo reale|Richiedono|Supportato solo per il desktop di Windows 10|
 
-**ATP Microsoft Defender**
+**Microsoft Defender ATP**
 
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
-|Regole di protezione avanzata dalle minacce di Microsoft Defender|Richiedere che il dispositivo sia a o sotto il Punteggio di rischio del computer|Media||
+|Regole di protezione avanzata dalle minacce di Microsoft Defender|Richiedere che il dispositivo sia a o sotto il Punteggio di rischio del computer|Medio||
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Richiedere PC conformi (ma non conformi a telefoni e Tablet)
 Prima di aggiungere un criterio per richiedere PC conformi, assicurarsi di registrare i dispositivi per la gestione in Intune. L'utilizzo dell'autenticazione a più fattori è consigliato prima di registrare i dispositivi in Intune per garantire che il dispositivo sia in possesso dell'utente desiderato. 

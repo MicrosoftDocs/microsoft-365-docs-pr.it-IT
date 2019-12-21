@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9f1631b054a46cac83140e07460807b2ba0edac3
-ms.sourcegitcommit: a4657a499967751d4c2dfc6cd1904258ab8be193
+ms.openlocfilehash: beab5df5b978cc3e2fd6dd345609a22209501298
+ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37040778"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "37113719"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Tecnologie Microsoft Managed Desktop
 
@@ -24,22 +24,22 @@ Microsoft 365 Enterprise Licensing è necessaria per tutti gli utenti di Microso
 
 In questo argomento vengono riepilogati i componenti inclusi nelle licenze Enterprise necessarie, con una descrizione del modo in cui il servizio utilizza ogni componente con i dispositivi Microsoft Managed Desktop. I ruoli e le responsabilità specifici per ogni area sono descritti in tutta la documentazione relativa a Microsoft Managed Desktop. 
 
-## <a name="office-365-e3"></a>Office 365 E3
+## <a name="office-365-e3-or-e5"></a>Office 365 E3 o E5
  |
  --- | ---
-Office 365 ProPlus (64 bit) | Queste applicazioni di Office verranno fornite con il dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for business, OneNote.<br><br>Le versioni complete di 64 bit di Microsoft Project e Microsoft Visio non sono incluse. Tuttavia, poiché l'installazione di queste applicazioni dipende dall'installazione di Office 365 ProPlus, Microsoft Managed Desktop ha creato distribuzioni e gruppi di sicurezza predefiniti di Microsoft Intune che è possibile utilizzare per distribuire queste applicazioni in una licenza utenti finali. Per ulteriori informazioni, vedere [Install Microsoft Project o Microsoft Visio su Microsoft Managed Desktop Devices](../get-started/project-visio.md)
-OneDrive for Business |Azure Active Directory Single Sign-on è abilitato per gli utenti finali al primo accesso a OneDrive for business<br><br>È incluso il reindirizzamento delle cartelle note per le cartelle "desktop", "documento" e "immagini"; abilitata e configurata da Microsoft Managed Desktop. 
+Office 365 ProPlus (64 bit) | Queste applicazioni di Office verranno fornite con il dispositivo: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for business, OneNote.<br><br>Le versioni complete di 64 bit di Microsoft Project e Microsoft Visio non sono incluse. Tuttavia, poiché l'installazione di queste applicazioni dipende dall'installazione di Office 365 ProPlus, Microsoft Managed Desktop ha creato distribuzioni e gruppi di sicurezza predefiniti di Microsoft Intune che è possibile utilizzare per distribuire queste applicazioni in una licenza utenti finali. Per ulteriori informazioni, vedere [Install Microsoft Project o Microsoft Visio su Microsoft Managed Desktop Devices](../get-started/project-visio.md).
+OneDrive for Business |Azure Active Directory Single Sign-on è abilitato per gli utenti finali al primo accesso a OneDrive for business.<br><br>È incluso il reindirizzamento delle cartelle note per le cartelle "desktop", "documento" e "immagini"; abilitata e configurata da Microsoft Managed Desktop. 
 Archivia le app |    Microsoft Sway e Power BI non vengono forniti con il dispositivo. Queste app sono disponibili per il download da Microsoft Store.
 Applicazioni Win32 |    I team non vengono forniti con il dispositivo, ma vengono inclusi nel pacchetto e forniti da Microsoft per i dispositivi desktop Microsoft gestiti. Il client Azure Information Protection non viene fornito con il dispositivo, ma è possibile ottenere questo pacchetto per la distribuzione. 
 Applicazioni Web |  Yammer, Office in un browser, approfondendo, Flow, StaffHub, PowerApps e Planner non vengono forniti con il dispositivo. Gli utenti possono accedere alla versione Web di queste applicazioni con un browser.
 
 
-## <a name="windows-10-enterprise-e5"></a>Windows 10 Enterprise E5
+## <a name="windows-10-enterprise-e3-or-e5"></a>Windows 10 Enterprise E3 o E5
 
  |
  --- | ---
 Virtualizzazione di applicazioni (App-V) |    I clienti possono distribuire pacchetti App-V utilizzando il client di gestione delle app Win32 di Intune.
-Protezione avanzata dalle minacce di Microsoft Defender |  Microsoft Managed Desktop utilizza questo strumento per monitorare la sicurezza dei dispositivi. 
+Microsoft Defender Advanced Threat Protection |  Microsoft Managed Desktop utilizza questo strumento per monitorare la sicurezza dei dispositivi. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
