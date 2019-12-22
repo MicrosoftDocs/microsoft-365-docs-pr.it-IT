@@ -1,5 +1,5 @@
 ---
-title: Carichi di lavoro e scenari di Microsoft 365 Enterprise
+title: Carichi di lavoro e scenari di Microsoft 365 per le aziende
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 10/21/2019
@@ -11,25 +11,25 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Caricare gli utenti dell’organizzazione per la produttività dei carichi di lavoro di Microsoft 365 Enterprise.
-ms.openlocfilehash: 2fbc3b5063ab0ed675b9d1a3873877e5486a3d6c
-ms.sourcegitcommit: 740278bb96fdfb329869a43f3bbe4ba5458c28e1
+description: Caricare gli utenti dell’organizzazione nei carichi di lavoro produttivi di Microsoft 365 per le aziende.
+ms.openlocfilehash: ff0e4b06972ed53933eb7780759bfcd53e286353
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37608597"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801901"
 ---
-# <a name="microsoft-365-enterprise-workloads-and-scenarios"></a>Carichi di lavoro e scenari di Microsoft 365 Enterprise
+# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Carichi di lavoro e scenari di Microsoft 365 per le aziende
 
-Per ottenere i vantaggi di creatività e collaborazione di Microsoft 365 Enterprise, distribuire questi carichi di lavoro sull'infrastruttura di base:
+Per ottenere i vantaggi in termini di creatività e collaborazione di Microsoft 365 per le aziende, distribuire questi carichi di lavoro sull'infrastruttura di base:
 
 - [Microsoft Teams](teams-workload.md)
 - [Exchange Online](exchangeonline-workload.md)
 - [SharePoint e OneDrive](sharepoint-online-onedrive-workload.md)
 
-Vedere l'articolo sulla [migrazione](migration-microsoft-365-enterprise-workload.md) per una roadmap generale su come eseguire la migrazione di tutta l'organizzazione a Microsoft 365 Enterprise, che includa i prodotti client di Microsoft Office, i prodotti locali di Office Server e i dispositivi basati su Microsoft Windows.
+Vedere l'articolo sulla [migrazione](migration-microsoft-365-enterprise-workload.md) per una roadmap generale su come eseguire la migrazione di tutta l'organizzazione a Microsoft 365 per le aziende che includa i prodotti client di Microsoft Office, i prodotti locali di Office Server e i dispositivi basati su Microsoft Windows.
 
-Gli scenari usano le funzionalità e i servizi di Microsoft 365 Enterprise in modo integrato per soddisfare le esigenze aziendali. 
+Gli scenari usano le funzionalità e i servizi di Microsoft 365 per le aziende in modo integrato per soddisfare le esigenze aziendali. 
 
 Una di queste esigenze è assicurarsi che i dipendenti possano lavorare in modo produttivo e sicuro quando non sono direttamente connessi alla Intranet aziendale. Per una roadmap generale su come distribuire gli elementi dell'infrastruttura e favorire l'adozione da parte degli utenti remoti per i carichi di lavoro chiave, ad esempio Team ed Exchange Online, vedere lo scenario [Supportare i lavoratori remoti](empower-people-to-work-remotely.md).
 
@@ -45,9 +45,9 @@ Per proteggere questi dati da minacce interne ed esterne, vedere:
 
 Questi scenari rappresentano una guida per configurare un team di Microsoft Teams o un sito di SharePoint per archiviare in modo sicuro i dati più importanti.
 
-Ecco i carichi di lavoro e gli scenari della guida di distribuzione generale di Microsoft 365 Enterprise:
+Ecco i carichi di lavoro e gli scenari della guida di distribuzione generale di Microsoft 365 per le aziende:
 
-![I carichi di lavoro e gli scenari della guida di distribuzione generale di Microsoft 365 Enterprise](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![Carichi di lavoro e scenari della guida di distribuzione generale di Microsoft 365 per le aziende](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 Vedere la [raccolta di produttività Microsoft 365](https://aka.ms/productivitylibrary)(https://aka.ms/productivitylibrary) per altri scenari. 
 
@@ -64,7 +64,7 @@ Vedere la [raccolta di produttività Microsoft 365](https://aka.ms/productivityl
 | Gestione dei dispositivi mobili | I dispositivi possono essere registrati e gestiti. |
 | Protezione delle informazioni | Le funzionalità di protezione delle informazioni di Microsoft 365 sono configurate e la riservatezza o le etichette di Azure Information Protection sono pronte per proteggere i documenti e la posta elettronica. |
 
-Tenere presente che questa soluzione è ideale e può richiedere del tempo per essere pianificata, configurata, testata e verificata, in particolare in organizzazioni di grandi dimensioni con l'infrastruttura esistente e più sedi. Non è necessario completare queste in tutte le sedi per ottenere più velocemente il valore di business da Microsoft 365 Enterprise. 
+Tenere presente che questa soluzione è ideale e può richiedere del tempo per essere pianificata, configurata, testata e verificata, in particolare in organizzazioni di grandi dimensioni con l'infrastruttura esistente e più sedi. Non è necessario completare queste fasi in tutte le sedi per sfruttare più velocemente il valore aziendale di Microsoft 365 per le aziende. 
 
 Ecco alcuni dei carichi di lavoro abituali per effettuare immediatamente la distribuzione: 
 
