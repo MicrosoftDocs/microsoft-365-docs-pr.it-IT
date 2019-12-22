@@ -1,7 +1,7 @@
 ---
-title: Report sugli standard europei EN 301 549
+title: Standard europei EN 301 549
 description: Microsoft Cloud include molti servizi e trova spazio in numerosi report riguardanti la conformità.
-keywords: Microsoft 365, conformità, offerte
+keywords: Microsoft 365, conformità, soluzioni
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,26 +11,27 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 33bd7c3626e29471495e9d7d7d251fc65c4e7892
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3bb38720caaa27b0f8deba26046410c0d8f25d6c
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859936"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40805209"
 ---
-# <a name="european-standards-en-301-549-reports"></a>Report sugli standard europei EN 301 549
+# <a name="european-standards-en-301-549"></a>Standard europei EN 301 549
 
 ## <a name="about-en-301-549"></a>Informazioni sugli standard EN 301 549
 
-Gli standard EN 301 549 stabiliscono gli idonei criteri di accessibilità per la fornitura pubblica di prodotti e servizi in ambito di tecnologie dell'informazione e della comunicazione (TIC). Si tratta di set di criteri destinati ai prodotti e servizi TIC, come siti Web, software e dispositivi digitali. Gli EN 301 549 sono stati rilasciati nel 2014 dall'Istituto Europeo per gli Standard nelle Telecomunicazioni (ETSI, European Telecom Standards Institute) dietro richiesta della Commissione europea; nel 2018 sono stati aggiornati alla versione 2.1.2. Tali standard sono destinati a regolare gli approvvigionamenti da parte di enti pubblici e governativi. Gli EN 301 549, al punto 9.2 incorporano gli standard WCAG 2.1 per l'accessibilità Web.
+Gli standard EN 301 549 stabiliscono i criteri di accessibilità adatti ai prodotti e servizi nell’ambito delle tecnologie dell'informazione e della comunicazione (ICT). Si tratta di un set di standard destinati ai prodotti e servizi ICT, come siti Web, software e dispositivi digitali. Gli EN 301 549 sono stati rilasciati nel 2014 dall'Istituto Europeo per gli Standard nelle Telecomunicazioni (ETSI, European Telecom Standards Institute) dietro richiesta della Commissione europea e l’ultimo aggiornamento alla versione 3.1.1 risale al mese di novembre 2019. Gli EN 301 549 3.1.1 incorporano gli standard [WCAG](offering-WCAG-2-1.md) per l'accessibilità dei contenuti Web.
 
-Microsoft è uno dei principali provider di software e servizi cloud per gli stati europei, di conseguenza si impegna a rispettare tutte [le norme e i controlli di conformità](https://go.microsoft.com/fwlink/p/?linkid=2051708) pertinenti. Garantendo la conformità a questi standard di accessibilità su vasta scala, Microsoft assicura che tutti i clienti, sia interni che esterni agli enti pubblici, possano usare i servizi e i prodotti Microsoft.
+Microsoft è uno dei principali provider di software e servizi cloud per gli stati europei. Per aiutare i clienti pubblici a prendere decisioni di acquisizione, Microsoft pubblica i report sulla conformità agli standard di accessibilità (ACR) che descrivono il grado di corrispondenza dei prodotti e dei servizi Microsoft ai criteri della norma EN 301 549. Le informazioni contenute negli ACR consentono ai clienti Microsoft di determinare se un prodotto o un servizio soddisferà le loro esigenze specifiche.
 
 ## <a name="microsoft-and-en-301-549"></a>Microsoft e gli standard EN 301 549
 
-L'aderenza agli standard EN 301 549 da parte di Microsoft indica il suo forte impegno per garantire accessibilità a tutti i clienti. EN 301 549 costituisce lo standard di accessibilità specifico per l'Europa, che va ad integrare i criteri della Section 508 statunitense e dei WCAG 2.1, che hanno valenza internazionale.
+Il rispetto della norma EN 301 549 nello sviluppo dei prodotti e servizi di Microsoft dimostra l’impegno per favorire l'accessibilità per tutti i clienti.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft associati
 
 - [Azure e Azure per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
@@ -51,6 +52,6 @@ Sono disponibili [report di conformità](https://go.microsoft.com/fwlink/p/?link
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): supporto dedicato per clienti aziendali con domande sull'accessibilità sui prodotti e servizi Microsoft o sulla conformità.
 - [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/F/B/B/FBB0D35E-A1B3-4078-A75D-702368311649/China-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/F/B/B/FBB0D35E-A1B3-4078-A75D-702368311649/China-Compliance.pdf).
