@@ -1,5 +1,5 @@
 ---
-title: Strategie di distribuzione dell'infrastruttura di base di Microsoft 365 Enterprise
+title: Strategie di distribuzione dell'infrastruttura di base di Microsoft 365 per le aziende
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,24 +12,24 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Informazioni su alcuni modi in cui è possibile distribuire le fasi dell'infrastruttura di base di Microsoft 365 Enterprise.
-ms.openlocfilehash: 0c700c10969142116cc73fc90e8fd283fa6fc6dc
-ms.sourcegitcommit: c6eab4a9f1b70e7ff0db6b2a1128a4db2591cbaf
+description: Informazioni su alcune modalità di distribuzione delle fasi dell'infrastruttura di base di Microsoft 365 per le aziende.
+ms.openlocfilehash: 354ce1a30b91f602049143dc0e93fe01629e6b04
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37369437"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801891"
 ---
-# <a name="microsoft-365-enterprise-foundation-infrastructure-deployment-strategies"></a>Strategie di distribuzione dell'infrastruttura di base di Microsoft 365 Enterprise
+# <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Strategie di distribuzione dell'infrastruttura di base di Microsoft 365 per le aziende
 
-Per distribuire le fasi dell'[infrastruttura di base](deploy-foundation-infrastructure.md) di Microsoft 365 Enterprise e implementarne le capacità, il software e i servizi agli utenti, è possibile scegliere tra numerose opzioni. Per iniziare a gestire i progetti di questa attività, che può essere lunga e complessa a seconda delle dimensioni dell'organizzazione e dell'infrastruttura esistente, prendere in considerazione le strategie di distribuzione seguenti:
+Per distribuire le fasi dell'[infrastruttura di base](deploy-foundation-infrastructure.md) di Microsoft 365 per le aziende e implementarne le capacità, il software e i servizi agli utenti, è possibile scegliere tra numerose opzioni. Per iniziare a gestire i progetti di questa attività, che può essere lunga e complessa a seconda delle dimensioni dell'organizzazione e dell'infrastruttura esistente, prendere in considerazione le strategie di distribuzione seguenti:
 
 - Distribuzione seriale
 - Distribuzione in parallelo con implementazione utente senza sovrapposizione
 - Distribuzione in parallelo con implementazione utente con sovrapposizione
 - Infrastruttura predisposta in precedenza e implementazione della configurazione end-to-end
 
-Usare queste strategie come suggerimenti su come gestire l'intero progetto e comprendere più rapidamente i vantaggi offerti da Microsoft 365 Enterprise per l'azienda.
+Usare queste strategie come suggerimenti su come gestire l'intero progetto e comprendere più rapidamente i vantaggi aziendali offerti da Microsoft 365 per le aziende.
 
 >[!Note]
 >Questo articolo contiene ipotesi e semplificazioni per descrivere in modo coerente le strategie di distribuzione. Queste strategie sono generalizzate, di conseguenza non implicano tempistiche specifiche, né possono essere considerate valide per qualsiasi situazione e organizzazione.
@@ -74,14 +74,14 @@ Con una distribuzione seriale si implementa completamente una fase, ovvero si co
 - Dipendenze delle tecnologie IT
 - Gestione delle modifiche aziendali e riluttanza degli utenti finali
 
-Questo diagramma di Gantt mostra una distribuzione seriale semplificata delle fasi 2-6 dell'infrastruttura di base per Microsoft 365 Enterprise.
+Questo diagramma di Gantt mostra una distribuzione in serie semplificata delle fasi 2-6 dell'infrastruttura di base per Microsoft 365 per le aziende.
 
 ![Distribuzione seriale delle fasi 2-6 dell'infrastruttura di base](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 Per semplificare la discussione e l'esempio, si presuppone che ogni fase e ogni segmento di distribuzione all'interno di ogni fase richieda lo stesso tempo.
 
 >[!Note]
->Fase 1: la connessione dell'infrastruttura di base di Microsoft 365 Enterprise è una fase di competenza esclusiva del reparto IT. Gli utenti possono usufruire dei vantaggi di una connettività ottimizzata alle risorse cloud di Microsoft, ma non sono obbligati a farlo.
+>Fase 1: la connessione dell'infrastruttura di base di Microsoft 365 per le aziende è una fase di competenza esclusiva del reparto IT. Gli utenti possono usufruire dei vantaggi di una connettività ottimizzata alle risorse cloud di Microsoft, ma non sono obbligati a farlo.
 >
 
 Ecco un'esperienza utente pilota semplificata di esempio:
@@ -104,7 +104,7 @@ Ecco un'esperienza utente finale semplificata di esempio:
 
 Ne risulta una cadenza di 90 giorni tra due implementazioni utente.
 
-Lo svantaggio di questa strategia di distribuzione è che la distribuzione completa dell'infrastruttura di base di Microsoft 365 Enterprise può richiedere molto tempo.
+Lo svantaggio di questa strategia di distribuzione è che la distribuzione completa dell'infrastruttura di base di Microsoft 365 per le aziende può richiedere molto tempo.
 
 ### <a name="parallel-deployment-with-non-overlapping-user-rollout-parallel-1"></a>Distribuzione in parallelo con implementazione utente senza sovrapposizione (in parallelo 1)
 
@@ -134,7 +134,7 @@ Ecco un'esperienza utente finale semplificata di esempio:
 
 Ne risulta una cadenza di 60 giorni tra due implementazioni utente.
 
-Il vantaggio di questa strategia di distribuzione è che può richiedere meno tempo per distribuire completamente l'infrastruttura di base di Microsoft 365 Enterprise, senza che il reparto IT e gli utenti debbano gestire più implementazioni contemporaneamente.
+Il vantaggio di questa strategia di distribuzione dell’infrastruttura di base di Microsoft 365 per le aziende è che può essere completata in meno tempo, senza che il reparto IT e gli utenti debbano gestire più implementazioni contemporaneamente.
 
 ### <a name="parallel-deployment-with-overlapping-user-rollout-parallel-2"></a>Distribuzione in parallelo con implementazione utente con sovrapposizione (in parallelo 2)
 
@@ -172,7 +172,7 @@ Ecco un'esperienza utente finale semplificata di esempio:
 
 Ne risulta una cadenza di 30 giorni tra due implementazioni utente.
 
-Il vantaggio di questa strategia di distribuzione è che può richiedere anche meno tempo per distribuire completamente l'infrastruttura di base di Microsoft 365 Enterprise, senza che gli utenti finali debbano gestire più implementazioni contemporaneamente. Tuttavia, gli utenti non fanno una pausa tra le fasi successive.
+Il vantaggio di questa strategia di distribuzione dell’infrastruttura di base di Microsoft 365 per le aziende è che può essere completata in ancora meno tempo, senza che gli utenti finali debbano gestire più implementazioni contemporaneamente. Tuttavia, gli utenti non fanno una pausa tra le fasi successive.
 
 ### <a name="up-front-infrastructure-and-rollout-of-the-end-to-end-configuration"></a>Infrastruttura predisposta in precedenza e implementazione della configurazione end-to-end
 
@@ -192,4 +192,4 @@ Al termine dell'implementazione pilota, viene avviata l'implementazione utente i
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Avviare la distribuzione di Microsoft 365 Enterprise con l'[infrastruttura di base](deploy-foundation-infrastructure.md).
+Avviare la distribuzione di Microsoft 365 per le aziende con l'[infrastruttura di base](deploy-foundation-infrastructure.md).

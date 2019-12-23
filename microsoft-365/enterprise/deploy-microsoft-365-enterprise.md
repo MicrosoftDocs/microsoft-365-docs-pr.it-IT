@@ -1,5 +1,5 @@
 ---
-title: Distribuire Microsoft 365 Enterprise
+title: Distribuire Microsoft 365 per le aziende
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -12,17 +12,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendere le risorse a disposizione per la distribuzione di Microsoft 365 Enterprise nell'organizzazione.
-ms.openlocfilehash: 35f5c789d4e8db13cb46a568fc58f49bce4d3c96
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+description: Comprendere le risorse a disposizione per la distribuzione nell'organizzazione di Microsoft 365 per le aziende.
+ms.openlocfilehash: 4181a5efeb7ba63812703ae5eb81667240314e9a
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031961"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40801921"
 ---
-# <a name="deploy-microsoft-365-enterprise"></a>Distribuire Microsoft 365 Enterprise
+# <a name="deploy-microsoft-365-for-enterprise"></a>Distribuire Microsoft 365 per le aziende
 
-Microsoft 365 Enterprise è una combinazione di app e servizi di produttività basati sul cloud e locali con Windows 10 Enterprise:  
+Microsoft 365 per le aziende è una combinazione di app e servizi per la produttività basati sul cloud e locali con Windows 10 Enterprise che:  
 
 - Dispone di sicurezza intelligente.
 - È integrato per semplicità.
@@ -31,29 +31,29 @@ Microsoft 365 Enterprise è una combinazione di app e servizi di produttività b
 
 È possibile realizzare questi vantaggi implementando i carichi di lavoro di infrastruttura e produttività in modo integrato, che include servizi e funzionalità di sicurezza all'avanguardia.
 
-Esistono tre modi principali per la distribuzione di Microsoft 365 Enterprise:
+Esistono tre modalità di distribuzione principali di Microsoft 365 per le aziende:
 
 - Eseguire questa operazione con i tecnici Microsoft usando [FastTrack per Microsoft 365](#fasttrack-for-microsoft-365).
 - Eseguire questa operazione con il supporto di Microsoft Consulting Services o un [partner Microsoft](https://partner.microsoft.com/).
-- Procedere autonomamente con la[Guida alla distribuzione di Microsoft 365 Enterprise](#microsoft-365-enterprise-deployment-guide).
+- Procedere autonomamente con la[Guida alla distribuzione di Microsoft 365 per le aziende](#microsoft-365-for-enterprise-deployment-guide).
 
 ## <a name="fasttrack-for-microsoft-365"></a>FastTrack per Microsoft 365
 
 FastTrack è un vantaggio continuativo e ripetibile, *disponibile gratuitamente e come parte dell'abbonamento*, fornito dai tecnici Microsoft per consentire di passare al cloud secondo le proprie tempistiche. FastTrack consente anche di accedere a partner qualificati per altri servizi. Con oltre 40.000 clienti abilitati ad oggi, FastTrack aiuta a massimizzare il ROI, ad accelerare la distribuzione e ad aumentare l'adozione all'interno dell'organizzazione. Vedere [FastTrack per Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
 
-Se si desidera sfruttare FastTrack per la distribuzione di Microsoft 365 Enterprise, è possibile usare l'[assistente distribuzione di Microsoft 365](https://aka.ms/microsoft365setupguide) di FastTrack per indicazioni su come distribuire e configurare l'infrastruttura di base. È necessario essere connessi come amministratore globale in un tenant di Office 365 o Microsoft 365 per accedere alla pagina.
+Se si desidera sfruttare FastTrack per la distribuzione di Microsoft 365 per le aziende, è possibile usare l'[assistente per la distribuzione di Microsoft 365](https://aka.ms/microsoft365setupguide) di FastTrack per indicazioni su come distribuire e configurare l'infrastruttura di base. È necessario essere connessi come amministratore globale in un tenant di Office 365 o Microsoft 365 per accedere alla pagina.
 
 Iniziare il percorso di distribuzione end-to-end con FastTrack [qui](https://fasttrack.microsoft.com/microsoft365).
 
-## <a name="microsoft-365-enterprise-deployment-guide"></a>Guida alla distribuzione di Microsoft 365 Enterprise.
+## <a name="microsoft-365-for-enterprise-deployment-guide"></a>Guida alla distribuzione di Microsoft 365 per le aziende
 
-La guida alla distribuzione di Microsoft 365 Enterprise fornisce istruzioni per la configurazione corretta e richiesta dei prodotti Microsoft 365 Enterprise e le loro funzionalità.
+La guida alla distribuzione di Microsoft 365 per le aziende fornisce istruzioni per la configurazione corretta e necessaria dei prodotti e delle funzionalità di Microsoft 365 per le aziende.
 
-Per distribuire autonomamente Microsoft 365 Enterprise, è possibile:
+Per distribuire autonomamente Microsoft 365 per le aziende, è possibile:
 
 - Distribuire l'[infrastruttura di base](deploy-foundation-infrastructure.md) per la sicurezza integrata e l'integrazione per una gestione semplificata che rende più semplice garantire che il software client sia aggiornato con i più recenti miglioramenti della produttività e della sicurezza. 
  
-  L'infrastruttura di base è organizzato come una serie di fasi numerate costruite l’una sull’altra e mirate ad un ambiente che supporta gli scenari e i carichi di lavoro di Microsoft 365 Enterprise. 
+  L'infrastruttura di base è organizzata come una serie di fasi numerate costruite l’una sull’altra e mirate ad un ambiente che supporta gli scenari e i carichi di lavoro di Microsoft 365 per le aziende. 
 
   **Organizzazioni di dimensioni inferiori o nuove** possono seguire le fasi per creare l’infrastruttura in modo metodico.
 
@@ -75,33 +75,33 @@ Iniziare in maniera autonoma il percorso di distribuzione end-to-end [qui](deplo
 
 "*Ciò che dobbiamo imparare a fare, lo impariamo facendolo.*" - Aristotele
 
-Se non si conosce Microsoft 365 Enterprise o uno specifico prodotto o una caratteristica, uno dei modi migliori per comprendere consiste nel crearla autonomamente e osservarne il funzionamento.
+Se non si ha familiarità con Microsoft 365 per le aziende o uno specifico prodotto o una funzionalità, uno dei modi migliori per capirne il funzionamento consiste nel svilupparlo autonomamente e vederlo in azione.
 
 Abbiamo semplificato questo processo con le guide ai lab di test (TLG), che guidano l'utente nella configurazione dell'infrastruttura o di una funzionalità in un ambiente di test semplificato ma rappresentativo, tramite abbonamenti di prova o a pagamento.
 
 Con le TLG è possibile imparare autonomamente, dimostrare, personalizzare o creare una prova di concetto di una configurazione complessa, di un carico di lavoro o di uno scenario end-to-end.
 
-Per ulteriori informazioni, vedere [Guide al lab di test di Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md).
+Per ulteriori informazioni, vedere [Guide al lab di test di Microsoft 365 per le aziende](m365-enterprise-test-lab-guides.md).
 
 ![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 ## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
 
-Per avere un quadro più completo su come spostare l'intera organizzazione ai prodotti e servizi di Microsoft 365 Enterprise, vedere il poster [Transizione dell'organizzazione a Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Per avere un quadro più completo su come spostare l'intera organizzazione ai prodotti e servizi di Microsoft 365 per le aziende, vedere il poster [Transizione dell'organizzazione a Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Poster della transizione dell'organizzazione a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
-Questo poster con due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e accedere alle indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 Enterprise. Include i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
+Questo poster a due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e ottenere le indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 per le aziende. Include i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
 
 Si può anche [scaricare il poster sulla transizione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="how-did-others-do-it"></a>Come hanno fatto altri utenti?
 
-Usare queste risorse per comprendere come altri utenti hanno distribuito e stanno usando Microsoft 365 Enterprise.
+Usare queste risorse per comprendere come altri utenti hanno distribuito e stanno usando Microsoft 365 per le aziende.
 
-### <a name="how-customers-use-microsoft-365-enterprise"></a>Utilizzo di Microsoft 365 Enterprise da parte dei clienti
+### <a name="how-customers-use-microsoft-365-for-enterprise"></a>Utilizzo di Microsoft 365 per le aziende da parte dei clienti
 
-Usare il sito Storie dei clienti per scoprire in che modo i clienti Microsoft usano Microsoft 365 Enterprise.
+Usare il sito Storie di clienti per scoprire in che modo i clienti Microsoft usano Microsoft 365 per le aziende.
 
 1. Passare a [https://customers.microsoft.com/](https://customers.microsoft.com/) e fare clic su **Cerca**.
 2. Nel riquadro sinistro selezionare la lingua in **Lingua**.
@@ -109,9 +109,9 @@ Usare il sito Storie dei clienti per scoprire in che modo i clienti Microsoft us
 4. Selezionare **Microsoft 365** in **Prodotto**.
 5. Fare clic su una scheda per accedere al case study del cliente.
 
-### <a name="how-microsoft-uses-microsoft-365-enterprise"></a>Utilizzo di Microsoft 365 Enterprise da parte di Microsoft
+### <a name="how-microsoft-uses-microsoft-365-for-enterprise"></a>Utilizzo di Microsoft 365 per le aziende da parte di Microsoft
 
-La definizione di una cultura digitale rappresenta la maggiore priorità per ogni leader che si impegna a favorire un’area di lavoro moderna. Microsoft 365 è stato sviluppato per supportare questo tipo di cambiamento culturale, aiutando i leader che provano a liberare la creatività e aumentare la collaborazione di tutti i dipendenti. Stabilire l’infrastruttura Microsoft di base ha innescato esattamente questo tipo di cambiamento di cultura digitale. L'implementazione di Microsoft 365 Enterprise ha consentito di distribuire la tecnologia di collaborazione, come Microsoft Teams ed Exchange Online, e di condividere dati sensibili online attraverso i siti Intranet di SharePoint.
+La definizione di una cultura digitale rappresenta la maggiore priorità per ogni leader che si impegna a favorire un’area di lavoro moderna. Microsoft 365 è stato sviluppato per supportare questo tipo di cambiamento culturale, aiutando i leader che provano a liberare la creatività e aumentare la collaborazione di tutti i dipendenti. Stabilire l’infrastruttura Microsoft di base ha innescato esattamente questo tipo di cambiamento di cultura digitale. L'implementazione di Microsoft 365 per le aziende ha consentito di sviluppare tecnologie di collaborazione come Microsoft Teams ed Exchange Online, e di condividere dati riservati online attraverso i siti Intranet di SharePoint.
 
 Nel contempo, le funzionalità di sicurezza e l'integrazione dei prodotti sono utili per semplificare le esigenze di gestione e ridurre al minimo il costo totale di proprietà nel ciclo di vita IT. 
 
@@ -120,9 +120,9 @@ Informazioni come Core Services Engineering and Operations (in precedenza Micros
 > [!Note]
 > Questa pagina web è disponibile solo in inglese.
 
-### <a name="how-the-contoso-corporation-deployed-microsoft-365-enterprise"></a>Informazioni sulle modalità di distribuzione di Microsoft 365 Enterprise da parte di Contoso Corporation
+### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Informazioni sulle modalità di distribuzione di Microsoft 365 per le aziende da parte di Contoso Corporation
 
-Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello internazionale con sede a Parigi, Francia. Vedere come [Contoso ha distribuito Microsoft 365 Enterprise](contoso-case-study.md) e ha affrontato importanti decisioni di progettazione e dettagli di implementazione riguardanti rete, identità, Windows 10 Enterprise, Office 365 ProPlus, gestione dei dispositivi mobili, protezione delle informazioni e sicurezza. 
+Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello internazionale con sede a Parigi, Francia. Vedere come [Contoso ha distribuito Microsoft 365 per le aziende](contoso-case-study.md) e ha affrontato decisioni di progettazione e dettagli di implementazione importanti riguardanti la rete, l’identità, Windows 10 Enterprise, Office 365 ProPlus, la gestione dei dispositivi mobili, la protezione delle informazioni e la sicurezza. 
 
 ## <a name="stay-current-with-deployment-content"></a>Rimanere aggiornati sul contenuto sulla distribuzione
 
