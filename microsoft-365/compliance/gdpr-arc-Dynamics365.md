@@ -13,12 +13,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 055c19715ff5dcd28ae05489600a31b2f7904e72
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 828c4f7faaae1225d438a4d34b159d981b31b141
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749843"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806519"
 ---
 # <a name="dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>Elenco di controllo di preparazione della conformità di Dynamics 365 all'RGPD
 
@@ -26,7 +27,7 @@ ms.locfileid: "38749843"
 
 Questo elenco di controllo offre un modo pratico per accedere alle informazioni necessarie per l'applicazione del GDPR quando si usa Microsoft Dynamics 365. Questo elenco di controllo è destinato ai responsabili del trattamento dei dati personali e comprende i titoli e numeri di riferimento (indicati tra parentesi per ogni argomento) di alcuni controlli per la privacy e sicurezza tratti dagli standard:
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) per i requisiti delle tecniche di sicurezza.
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) per i requisiti delle tecniche di sicurezza.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) per i requisiti di gestione della privacy.
 
 È possibile gestire gli elementi di questo elenco di controllo con Compliance Manager [[15](gdpr-arc-Dynamics365.md#15)] usando il codice e il nome dei controlli nel riquadro del GPDR che comprende i *controlli gestiti dai clienti*.

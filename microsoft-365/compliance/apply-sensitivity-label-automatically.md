@@ -1,11 +1,11 @@
 ---
 title: Applicare automaticamente un'etichetta di riservatezza al contenuto
-ms.author: krowley
-author: kccross
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: 11/01/2019
+ms.date: 12/13/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 3c5b52c89c9a5eb9e78e670bce0b5c3edec89cd1
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 77a0b3cdf88301677451fe7fe1bac58de2a40a5f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39256713"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807841"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -33,7 +33,7 @@ La possibilità di applicare automaticamente etichette di riservatezza al conten
 
 - Gli utenti non hanno più bisogno di conoscere i criteri e possono concentrarsi sul loro lavoro.
 
-Per informazioni sui requisiti di licenza, vedere [Etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md).
+Per informazioni sui requisiti di licenza, vedere [Requisiti di abbonamento e licenza per le etichette di riservatezza](sensitivity-labels-office-apps.md#subscription-and-licensing-requirements-for-sensitivity-labels).
 
 Le impostazioni per l’applicazione automatica di etichette sono disponibili quando si crea un'etichetta di riservatezza nel Centro conformità Microsoft 365, Centro sicurezza Microsoft 365 o Centro sicurezza e conformità di Office 365 in **Classificazione** > **Etichette di riservatezza**.
 

@@ -1,7 +1,7 @@
 ---
 title: Automatizzare la conservazione basata su eventi
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Questo argomento illustra come configurare i flussi di processo aziendale in modo da automatizzare la conservazione attraverso gli eventi usando l'API REST di Microsoft 365.
-ms.openlocfilehash: b4ae97ad9564f61e65b990a0054fcf13d88f1d8d
-ms.sourcegitcommit: bf30a2314376f0b7d577741b97df017969737d11
+ms.openlocfilehash: b2aadaf4e450167cf7bff864569652c05deb7298
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39631066"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40807435"
 ---
 # <a name="automate-event-based-retention"></a>Automatizzare la conservazione basata su eventi
 
@@ -407,7 +407,7 @@ Passaggio 2: Eseguire lo script seguente.
 
 Passaggio 1: Passare al Centro sicurezza e conformità.
 
-Passaggio 2: Scegliere **Eventi** in **Governance dei dati**.
+Passaggio 2: Scegliere **Eventi** in **Governance delle informazioni**.
 
 Passaggio 3: Verificare di aver creato l'evento.
 

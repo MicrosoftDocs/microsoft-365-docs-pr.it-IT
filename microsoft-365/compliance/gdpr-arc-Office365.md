@@ -12,12 +12,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 66a3478ed625b3c7453992e04070d57beef173eb
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: c31107588e6d7841e93c3a1cd653790f3937c21e
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749846"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40808531"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-office-365"></a>Elenco di controllo per l'applicazione del GDPR all'uso di Microsoft Office 365
 
@@ -31,7 +32,7 @@ Inoltre, gli elementi dell'elenco di controllo in *5.* *Protezione e sicurezza d
 
 L'elenco di controllo e Compliance Manager sono destinati ai responsabili del trattamento dei dati personali e comprendono i titoli e numeri di riferimento (indicati tra parentesi per ogni argomento) di alcuni controlli per la privacy e sicurezza tratti dagli standard:
 
-- [ISO/IEC CD 27552](https://shop.bsigroup.com/ProductDetail?pid=000000000030351735) per i requisiti delle tecniche di sicurezza.
+- [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail?pid=000000000030351736) per i requisiti delle tecniche di sicurezza.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) per i requisiti di gestione della privacy.
 
 Questa struttura viene usata anche per organizzare la presentazione dei controlli interni che Microsoft Office 365 implementa per supportare il GDPR e che è possibile scaricare dal [Centro protezione del servizio](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).

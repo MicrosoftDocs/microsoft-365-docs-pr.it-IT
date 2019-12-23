@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 4d8587438d564d98d9b30897ebdf5bf8722a09c8
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859486"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804259"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -108,7 +109,7 @@ Con i report, il revisore può confrontare i risultati dei servizi cloud Microso
 
 **Con quale frequenza vengono emessi report SOC di Azure?**
 
-I report SOC per Azure, Cloud app Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft si basano su una finestra di 12 mesi (periodo di controllo) con nuovi report emessi trimestralmente. L'aumento della frequenza di controllo fornisce una copertura più tempestiva mediante un report SOC, che offre una maggiore garanzia attraverso un revisore esterno rispetto a una lettera ponte. I clienti possono [scaricare](https://aka.ms/stp) i report più recenti dal Service Trust Portal.
+I report SOC per Azure, Cloud app Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft si basano su una finestra di 12 mesi (periodo di controllo) con nuovi report emessi ogni sei mesi (i fine periodo sono il 31 marzo e il 30 settembre). Le lettere ponte vengono emesse a gennaio per coprire il periodo 01/10 - 31/12 e a luglio per coprire il periodo 01/04 - 30/06. I clienti possono [scaricare](https://aka.ms/stp) i report più recenti dal Service Trust Portal.
 
 **Devo sottoporre a controlli i data center di Microsoft?**
 
@@ -133,6 +134,6 @@ Il [SOC Toolkit for Service Organizations ](https://aka.ms/soc-toolkit) è una r
  - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
  - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf).

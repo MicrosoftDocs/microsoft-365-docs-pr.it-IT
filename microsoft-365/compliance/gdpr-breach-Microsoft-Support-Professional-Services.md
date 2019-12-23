@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: c4e9cdeb953e01ee44caa1ba8031332da4e245be
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 4e932b160f6c203d65070706bc485fe6582ba4cc
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749837"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806459"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Servizi professionali e supporto tecnico di Microsoft e notifica di violazione secondo l'RGPD
 
@@ -35,7 +36,7 @@ Servizi professionali di Microsoft si impegna a proteggere i clienti e ad attuar
 
 Il processo di notifica di violazione dei dati personali inizia quando si dichiara che si è verificata una [violazione dei dati personali].
 
-Affinché possa essere dichiarata come tale, il team di intervento in caso di incidenti di protezione dei dati di Microsoft deve stabilire che si sia verificato un incidente di protezione dei dati come descritto sopra o molto analogo. Si avrà una dichiarazione non appena tutte le informazioni pertinenti saranno disponibili per determinare il verificarsi di tale incidente.
+Affinché possa essere dichiarata come tale, il team di intervento in caso di incidenti di protezione dei dati di Microsoft deve stabilire che si sia verificato un incidente di protezione dei dati come descritto sopra. Si avrà una dichiarazione non appena tutte le informazioni pertinenti saranno disponibili per determinare il verificarsi di tale incidente.
 
 Data la natura dei servizi professionali, alcuni eventi che sembrano incidenti di protezione dei dati di Microsoft in realtà non lo sono, perché si verificano a causa di azioni del cliente o sui sistemi del cliente. Microsoft non monitora o interviene in caso di incidenti relativi alla protezione dei dati all’interno della sfera di responsabilità del cliente. Tuttavia, quando rileva un incidente di questo tipo causato dal cliente, lo classifica come tale (denominato "evento" dal team preposto) e informa il cliente della sua esistenza e lo assiste nell'intervento, nella misura di interazione con Microsoft richiesta. Alcuni esempi di incidenti di protezione dei dati causati dal cliente includono l’invio involontario di password e altri dati sensibili a Microsoft, di richieste per eliminare dati e di notifiche sull’essere vittima di frodi.
 
@@ -76,11 +77,11 @@ Online sono disponibili gli standard di formazione, che devono essere completati
 
 Quando l'organizzazione Servizi professionali di Microsoft identifica un incidente di protezione dei dati, segue un piano di intervento secondo lo standard di settore documentato, che parte dal determinare che siano soddisfatti i criteri degli incidenti di protezione dei dati. Quando si verifica un incidente di protezione dei dati, in genere, alla valutazione segue immediatamente una dichiarazione, tuttavia, a seconda della complessità, la dichiarazione può verificarsi in un momento qualsiasi in cui sono disponibili le informazioni necessarie, ovvero anche dopo la fase di indagine. D'altra parte, il team ha facoltà di dichiarare un incidente di protezione dei dati solo in base a un ragionevole sospetto che si sia verificato. Il team può anche alternare tra le varie fasi con l'avanzamento dell'indagine.
 
-Microsoft completa inoltre una relazione finale interna per gli incidenti di protezione dei dati. Come parte di questo esercizio, vengono valutate l'adeguatezza dell'intervento, le procedure operative e tutti gli aggiornamenti che possono essere necessari alla *procedura operativa standard di intervento in caso di incidenti di protezione dei dati* o che i processi correlati siano identificati e implementati. Le relazioni finali interne per le violazioni dei dati sono registrazioni altamente riservate non disponibili per i clienti. Le relazioni finali possono, tuttavia, essere riassunte e incluse nelle notifiche di eventi al cliente. Come parte del ciclo di controllo di routine, queste relazioni finali vengono esaminate da revisori esterni a garanzia del follow-up.
+In base al livello della riservatezza, Microsoft può inoltre completare una relazione finale interna per gli incidenti di protezione dei dati. Come parte di questo esercizio, vengono valutate l'adeguatezza dell'intervento, le procedure operative e tutti gli aggiornamenti che possono essere necessari alla *procedura operativa standard di intervento in caso di incidenti di protezione dei dati* o che i processi correlati siano identificati e implementati. Le relazioni finali interne per le violazioni dei dati sono registrazioni altamente riservate non disponibili per i clienti. Le relazioni finali possono, tuttavia, essere riassunte e incluse nelle notifiche di eventi al cliente. Come parte del ciclo di controllo di routine, queste relazioni finali vengono esaminate da revisori esterni a garanzia del follow-up.
 
 ### <a name="notification"></a>Notifica
 
-Quando Microsoft Professional Services dichiara un incidente di protezione dei dati con il GDPR, le notifiche sono destinate ai clienti entro 72 ore. L'obbligo di notifica di 72 ore è un impegno assunto da Servizi professionali, non un requisito legale nel GDPR.
+Quando Microsoft Professional Services dichiara un incidente relativo alla protezione dei dati ai sensi del GDPR, Microsoft indirizza la notifica ai propri clienti entro 72 ore. 
 
 Dopo la dichiarazione di un incidente di protezione dei dati, il processo di notifica viene eseguito il più rapidamente possibile, tenendo in considerazione i rischi che ciò comporta alla sicurezza. Per garantire che la notifica venga recapitata, è responsabilità del cliente assicurarsi che le informazioni di contatto amministrative in ogni account, sottoscrizione e portale dei servizi online applicabile siano corrette. Anche se l'obiettivo è quello di offrire ai clienti interessati un avviso tempestivo e accurato, per ottemperare all’impegno di notifica entro 72 ore, la notifica iniziale potrebbe non includere tutti i dettagli, poiché questi potrebbero non essere disponibili durante le fasi iniziali dell'incidente. Inoltre, Microsoft potrebbe volutamente non rivelare alcuni dettagli a causa delle circostanze relative all'incidente di protezione dei dati. Ad esempio, potrebbe essere necessario non rivelare i dettagli se l'operazione di inviare una notifica aumenta il rischio per altri clienti o interferisce con la possibilità delle forze dell’ordine o di Microsoft di individuare il soggetto dannoso.
 
@@ -95,6 +96,6 @@ Quando si avvisano i clienti dell’avvenuta violazione di dati personali, Micro
 - Quantità di record di dati personali interessati/esposti, se nota
 - Dettagli su fornitori/rappresentante responsabile del trattamento, se coinvolti nella violazione
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
-Altre informazioni su Microsoft Professional Services sono disponibili nel Centro protezione di Microsoft (<https://www.microsoft.com/trustcenter/professional-services>). 
+Altre informazioni su Microsoft Professional Services (<https://aka.ms/pstrust>). 

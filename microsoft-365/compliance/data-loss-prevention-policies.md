@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: I criteri di prevenzione della perdita dei dati del Centro sicurezza e conformità permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Office 365.
-ms.openlocfilehash: b9035fde858d8040be14073f61d6c4e9629df53b
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e2fab1df550382f44e09629e5b82a079d6f6555f
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "39266143"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40806619"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -79,7 +79,9 @@ In un criterio DLP sono disponibili alcuni elementi di base:
 I criteri di prevenzione della perdita dei dati consentono di trovare e proteggere le informazioni riservate in tutto Office 365, indipendentemente dal fatto che si trovino in un sito di Exchange Online, SharePoint Online, OneDrive for Business o Microsoft Teams. È possibile scegliere di proteggere il contenuto in un messaggio di posta elettronica di Exchange, nei messaggi delle chat e dei canali di Microsoft Teams e in tutte le raccolte di SharePoint o OneDrive o di selezionare percorsi specifici per i criteri.
   
 ![Opzioni per le posizioni in cui è possibile applicare i criteri di prevenzione della perdita dei dati](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
-  
+
+ Se si sceglie di includere gruppi di distribuzione specifici in Exchange, i criteri DLP verranno applicati solo ai membri di quel gruppo. Analogamente, escludendo un gruppo di distribuzione si escluderanno tutti i membri di quel gruppo di distribuzione dalla valutazione dei criteri. È possibile scegliere di applicare un criterio ai membri delle liste di distribuzione, dei gruppi di distribuzione dinamici e dei gruppi di sicurezza. Una politica DLP non può contenere più di 50 inclusioni ed esclusioni.
+
 Se si sceglie di includere o escludere specifici siti di SharePoint o account di OneDrive, i criteri di prevenzione della perdita dei dati possono contenere non più di 100 inclusioni ed esclusioni di questo tipo. Anche se questi limiti esistono, è importante sapere che possono essere superati applicando criteri a livello di organizzazione o validi per intere posizioni.
   
 ### <a name="rules"></a>Regole
@@ -166,7 +168,9 @@ Nella notifica di posta elettronica e nel suggerimento per i criteri viene spieg
 Ecco l'aspetto di un suggerimento per i criteri in un account di OneDrive for Business.
   
 ![Suggerimento per i criteri per un documento in un account di OneDrive](media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
-  
+
+ Per ulteriori informazioni sulle notifiche all'utente e i suggerimenti per i criteri nei criteri DLP, vedere [Utilizzare notifiche e suggerimenti per i criteri](use-notifications-and-policy-tips.md).
+
 #### <a name="incident-reports"></a>Rapporti operazioni non consentite
 
 Quando viene trovata una corrispondenza con una regola, è possibile inviare il report dell'evento al responsabile della conformità (o a chiunque si voglia) con i relativi dettagli. Il report include informazioni sull'elemento con cui è stata trovata una corrispondenza, sull'effettivo contenuto che ha soddisfatto la regola, oltre al nome dell'ultima persona che ha modificato il contenuto. Per i messaggi di posta elettronica, il report include anche il messaggio originale che corrisponde ai criteri di prevenzione della perdita dei dati, sotto forma di allegato.
@@ -221,7 +225,7 @@ Ad esempio, il criterio predefinito **Stati Uniti - HIPAA** ha una regola che us
 
 Quando si creano regole in un criterio, a ogni regola viene assegnata una priorità nell'ordine di creazione, ovvero la regola creata per prima avrà la priorità più alta, la regola creata per seconda avrà la seconda priorità e così via. 
   
-![Regole in ordine di priorità](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
+![Regole in ordine di priorità](media/dlp-rules-in-priority-order.png)
   
 Dopo aver configurato più criteri di prevenzione della perdita dei dati, è possibile cambiare la priorità di uno o più criteri. Per farlo, selezionare un criterio, scegliere **Modifica criterio**e usare l'elenco **priorità** per specificare la priorità.
 

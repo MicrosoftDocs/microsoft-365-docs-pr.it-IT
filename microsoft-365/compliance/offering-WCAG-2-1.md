@@ -1,7 +1,7 @@
 ---
-title: Linee guida per l'accessibilità dei contenuti Web (WCAG) 2.1
-description: Microsoft pubblica i report del livello di conformità AA delle linee guida WCAG 2.1 che rispecchiano il prodotto o il servizio completo oppure parti del prodotto che possono essere installate separatamente.
-keywords: Microsoft 365, conformità, offerte
+title: Linee guida per l'accessibilità dei contenuti Web
+description: Microsoft pubblica i report del livello di conformità AA delle linee guida WCAG che rispecchiano il prodotto o il servizio completo oppure parti del prodotto che possono essere installate separatamente.
+keywords: Microsoft 365, conformità, soluzioni
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -11,32 +11,33 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a1887bd2b6c04836ebb11d224fcc59debcd88e55
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 316347bb212e415848586c88936bd345fd5d1a94
+ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859446"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40804209"
 ---
-# <a name="web-content-accessibility-guidelines-21"></a>Linee guida per l'accessibilità dei contenuti Web (WCAG) 2.1
+# <a name="web-content-accessibility-guidelines"></a>Linee guida per l'accessibilità dei contenuti Web
 
-## <a name="about-wcag-21"></a>Informazioni sulle linee guida WCAG 2.1
+## <a name="about-wcag"></a>Informazioni sulle linee guida WCAG
 
-Le linee guida WCAG 2.1 consentono di definire una struttura per lo sviluppo di contenuti Web allo scopo di migliorare l'accessibilità per persone con disabilità, nonché per utenti di dispositivi con capacità grafiche limitate. Le linee guida WCAG 2.0 sono state pubblicate nel 2008 dal World Wide Web Consortium (W3C), un'organizzazione internazionale che si occupa della creazione di standard Web, e sono state aggiornate alla versione 2.1 nel mese di giugno del 2018. Nel 2012 le linee guida WCAG 2.0 sono state pubblicate anche dall'ISO (International Organization for Standardization) nella norma ISO/IEC 40500:2012.  
+Le linee guida per l'accessibilità dei contenuti Web (WCAG) forniscono un framework per rendere più accessibili i contenuti Web per le persone con disabilità. Le linee guida WCAG versione 2.0 sono state pubblicate nel 2008 dal World Wide Web Consortium (W3C), un'organizzazione internazionale che si occupa della creazione di standard Web, e sono state aggiornate alla versione 2.1 nel mese di giugno del 2018. Nel 2012 le linee guida WCAG 2.0 sono state pubblicate anche dall'ISO (International Organization for Standardization) nella norma ISO/IEC 40500:2012.
+
+Il contenuto conforme alle linee guida WCAG 2.1 è conforme anche alle linee guida WCAG 2.0. Per i criteri che richiedono la conformità alle linee guida WCAG 2.0, le linee guida WCAG 2.1 possono offrire un metodo alternativo per garantire la conformità.
+
+Microsoft è uno dei principali provider di software e servizi cloud per clienti, aziende e autorità governative in tutto il mondo. Per aiutare i clienti a prendere decisioni di acquisto, Microsoft pubblica i report sulla conformità agli standard di accessibilità che descrivono il grado di corrispondenza dei prodotti e dei servizi Microsoft ai criteri WCAG. Queste informazioni consentono ai clienti Microsoft di determinare se un determinato prodotto o un servizio soddisferà le loro esigenze specifiche.
   
-Il contenuto conforme alle linee guida WCAG 2.1 è conforme anche alle linee guida WCAG 2.0. Per i criteri che richiedono la conformità alle linee guida WCAG 2.0, le linee guida WCAG 2.1 possono offrire un metodo alternativo per garantire la conformità.  
-  
-I requisiti di conformità per ogni linea guida sono misurati in tre livelli: A, AA e AAA. Microsoft è uno dei principali provider di software e servizi cloud per stati ed enti pubblici di tutto il mondo, di conseguenza si impegna a rispettare tutte [le norme internazionali e i controlli di conformità](https://go.microsoft.com/fwlink/p/?linkid=2052226) pertinenti. Garantendo la conformità a questi standard di accessibilità su vasta scala, Microsoft assicura che tutti i clienti, sia interni che esterni agli enti pubblici, possano usare i servizi e i prodotti Microsoft.  
+## <a name="microsoft-and-wcag"></a>Microsoft e le linee guida WCAG
 
-## <a name="microsoft-and-wcag-21"></a>Microsoft e le linee guida WCAG 2.1
+Il rispetto degli standard WCAG nello sviluppo dei prodotti e servizi da parte di Microsoft dimostra il suo impegno a rendere accessibili i dati e la tecnologia per tutti i clienti.
 
-La conformità allo standard WCAG 2.1 (ISO/IEC 40500) è indicativa dell'impegno di Microsoft a rendere tecnologie e dati accessibili a tutti i clienti. Lo standard WCAG 2.1 (ISO/IEC 40500) è il requisito internazionale di accessibilità che integra le norme EN 301 549 (Europa) e Section 508 (Stati Uniti).  
-  
-Microsoft pubblica report delle linee guida WCAG 2.1 che rispecchiano il prodotto o il servizio completo. Non crea in genere report per singole funzionalità o componenti. È talvolta possibile che Microsoft rilasci un nuovo componente di un prodotto esistente o una nuova versione di un componente esistente, che gli utenti possono scegliere di installare separatamente. Anche in tal caso è possibile che Microsoft pubblichi un report WCAG 2.1 per tale componente.  
-  
-[Scaricare gli standard di accessibilità WCAG 2.1 (ISO/IEC 40500)](https://go.microsoft.com/fwlink/p/?linkid=2052226)
+Microsoft pubblica report delle linee guida WCAG che rispecchiano il prodotto o il servizio completo. Non crea in genere report per singole funzionalità o componenti. È talvolta possibile che Microsoft rilasci un nuovo componente di un prodotto esistente o una nuova versione di un componente esistente, che gli utenti possono scegliere di installare separatamente. Anche in tal caso è possibile che Microsoft pubblichi un report WCAG per tale componente.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+[Scaricare gli standard di accessibilità WCAG (ISO/IEC 40500)](https://www.w3.org/WAI/standards-guidelines/wcag/)
+
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft associati
 
 - [Azure e Azure per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2051569)
 - Azure DevOps Services
@@ -48,22 +49,15 @@ Microsoft pubblica report delle linee guida WCAG 2.1 che rispecchiano il prodott
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Report Microsoft sulla conformità agli standard di accessibilità
 
-Sono disponibili report WCAG per tutti i prodotti e i servizi Microsoft.
-
-[**Altre informazioni**](https://go.microsoft.com/fwlink/p/?linkid=2050974)
+Consultare i report WCAG per [tutti i prodotti e i servizi Microsoft](https://go.microsoft.com/fwlink/p/?linkid=205097).
 
 ## <a name="resources"></a>Risorse
 
-Sito Microsoft sull'accessibilità: consente di ottenere informazioni sull'uso delle funzionalità di accessibilità e di esplorare le novità Microsoft che permettono a tutti gli utenti di lavorare in modo più proficuo.
+- [Sito Microsoft sull'accessibilità](https://www.microsoft.com/accessibility): consente di ottenere informazioni sull'uso delle funzionalità di accessibilità e di esplorare le novità Microsoft che permettono a tutti gli utenti di lavorare in modo più proficuo.
+- [Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801): le risorse di Office 365 per persone con disabilità.
+- [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): supporto dedicato per clienti aziendali con domande sull'accessibilità sui prodotti e servizi Microsoft o sulla conformità.
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-[Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801)
-    - Risorse di Office 365 per persone con disabilità.
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-[Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890)
-    - Supporto dedicato per clienti aziendali con domande sull'accessibilità sui prodotti e servizi Microsoft o sulla conformità.
-
-[Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
-
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf).
