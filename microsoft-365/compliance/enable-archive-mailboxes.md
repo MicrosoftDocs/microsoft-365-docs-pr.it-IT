@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Usare il Centro sicurezza e conformità in Office 365 per abilitare le cassette postali di archiviazione per supportare la conservazione dei messaggi, eDiscovery e i requisiti dei blocchi dell'organizzazione.
-ms.openlocfilehash: 29c90b85b4f8d05664ea6d28f8997265b7e14b49
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 4c115b53f5e47caa785b32c3a356a6a52af83b41
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967359"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850900"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Abilitare le cassette postali di archiviazione nel Centro sicurezza e conformità
   
 L'archiviazione in Office 365 (denominata anche Archiviazione sul posto) fornisce agli utenti ulteriore spazio di archiviazione per la cassetta postale. Dopo aver attivato le cassette postali di archiviazione, gli utenti possono accedere ai messaggi e archiviarli nelle cassette postali tramite Microsoft Outlook e Outlook sul Web (in precedenza noto come Outlook Web App). Gli utenti possono anche spostare o copiare i messaggi dalla cassetta postale principale a quella di archiviazione. Inoltre, possono ripristinare gli elementi eliminati dalla cartella Elementi ripristinabili nella propria cassetta postale di archiviazione con lo strumento Recupera elementi eliminati. 
   
 > [!NOTE]
-> La funzionalità di archiviazione a espansione automatica di Office 365 offre fino a 1 TB di spazio di archiviazione aggiuntivo nelle cassette postali di archiviazione. Dopo aver attivato l'archiviazione a espansione automatica, quando viene raggiunto il limite di archiviazione iniziale nella cassetta postale di un utente, Office 365 aggiunge automaticamente ulteriore spazio di archiviazione. Ciò significa che gli utenti non esauriranno lo spazio di archiviazione delle cassette postali e che non sarà necessario compiere ulteriori operazioni dopo aver abilitato la cassetta postale di archiviazione e attivato l'archiviazione a espansione automatica per l'organizzazione. Per altre informazioni, vedere [Panoramica dell'archiviazione illimitata Office 365](unlimited-archiving.md). 
+> La funzionalità di archiviazione a espansione automatica di Office 365 offre spazio di archiviazione aggiuntivo nelle cassette postali di archiviazione. Dopo aver attivato l'archiviazione a espansione automatica, quando viene raggiunto il limite di archiviazione iniziale nella cassetta postale di un utente, Office 365 aggiunge automaticamente ulteriore spazio di archiviazione. Ciò significa che gli utenti non esauriranno lo spazio di archiviazione delle cassette postali e che non sarà necessario compiere ulteriori operazioni dopo aver abilitato la cassetta postale di archiviazione e attivato l'archiviazione a espansione automatica per l'organizzazione. Per altre informazioni, vedere [Panoramica dell'archiviazione illimitata Office 365](unlimited-archiving.md). 
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
