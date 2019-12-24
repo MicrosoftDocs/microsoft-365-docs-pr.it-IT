@@ -23,14 +23,20 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Panoramica dei passaggi di installazione per Microsoft 365 business.
-ms.openlocfilehash: f531830bffbe1cb6ce4e39ee2ba12da5738a2684
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 4aca617015cceb85ca35c8d8ada7b83d1416d959
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967624"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850805"
 ---
 # <a name="overview-of-setup"></a>Panoramica dell’installazione
+
+Guardare un breve video sulla configurazione aziendale di Microsoft 365.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+Se è stato trovato utile questo video, vedere la [serie completa di formazione per le piccole imprese e quelle nuove a Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 La maggior parte dei passaggi di installazione può essere effettuata nell'installazione guidata, ma anche le altre opzioni sono elencate.
 
@@ -50,14 +56,12 @@ La maggior parte dei passaggi di installazione può essere effettuata nell'insta
   
   Oltre alle impostazioni di sicurezza nell'installazione guidata, è possibile aumentare la sicurezza aggiungendo le seguenti impostazioni:
 
-
 - **Protezione antimalware per la posta elettronica**
 - **Anti-phishing ATP**
 - **Archiviazione Exchange Online**
 - **Protezione delle informazioni di Azure (PLAN1**)
 
-
-Per iniziare, vedere, [impostare i criteri di sicurezza avanzati](set-up-advanced-security.md).
+Per iniziare, vedere [configurare i criteri di sicurezza avanzati](set-up-advanced-security.md).
 
 Vedere anche [i primi 10 modi per proteggere l'azienda Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) per una roadmap delle migliori procedure di sicurezza.
 
