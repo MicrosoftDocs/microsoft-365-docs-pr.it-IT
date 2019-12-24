@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilizzare il Centro sicurezza & conformità per creare e gestire i casi di eDiscovery nell'organizzazione. È possibile assegnare membri al caso, inserire posizioni di contenuto in attesa, eseguire ricerche di contenuto associate al caso e esportare i risultati della ricerca. È inoltre possibile preparare i dati dei casi per un'ulteriore analisi in Advanced eDiscovery.
-ms.openlocfilehash: cf880e6f54f2ab91bae23c3ecf468f88627f3025
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: efd5d20d72794ff6f71d2b1c6858bee615b14f3a
+ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686584"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "40854061"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>casi di eDiscovery nel centro sicurezza & Compliance
 
@@ -57,7 +57,10 @@ Utilizzare il flusso di lavoro seguente per configurare e usare i casi di eDisco
 
 Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate relative a eDiscovery alle persone, in modo da poterle aggiungere a un caso di eDiscovery nel passaggio 2. È necessario essere membri del gruppo di ruoli Gestione organizzazione (o essere assegnati al ruolo di gestione dei ruoli) nel centro sicurezza & conformità per assegnare le autorizzazioni di eDiscovery. Nell'elenco seguente vengono descritti i gruppi di ruoli correlati a eDiscovery nel centro sicurezza & Compliance. 
   
-- **Revisore.** Questo gruppo di ruoli ha le autorizzazioni più restrittive relative a eDiscovery. Lo scopo principale di questo gruppo di ruoli è consentire ai membri di visualizzare e accedere ai dati del caso in Office 365 Advanced eDiscovery. I membri di questo gruppo possono visualizzare e aprire solo l'elenco dei casi nella pagina **eDiscovery** nel centro sicurezza & conformità di cui sono membri. Dopo che l'utente ha eseguito l'accesso a un caso nel centro sicurezza e conformità, è possibile fare clic su **passa a Advanced eDiscovery** per accedere ai dati del caso in Advanced eDiscovery e analizzarli. Non è possibile creare casi, aggiungere membri a un caso, creare esenzioni, creare ricerche, visualizzare in anteprima i risultati della ricerca, esportare i risultati della ricerca o preparare i risultati per Advanced eDiscovery. 
+- **Revisore.** Questo gruppo di ruoli ha le autorizzazioni più restrittive relative a eDiscovery. Lo scopo principale di questo gruppo di ruoli è consentire ai membri di visualizzare e accedere ai dati del caso in [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md) (noto anche come *Advanced eDiscovery V1*). I membri di questo gruppo possono visualizzare e aprire solo l'elenco dei casi nella pagina **eDiscovery** nel centro sicurezza & conformità di cui sono membri. Dopo che l'utente ha eseguito l'accesso a un caso nel centro sicurezza e conformità, è possibile fare clic su **passa a Advanced eDiscovery** per accedere ai dati del caso in Advanced eDiscovery e analizzarli. Non è possibile creare casi, aggiungere membri a un caso, creare esenzioni, creare ricerche, visualizzare in anteprima i risultati della ricerca, esportare i risultati della ricerca o preparare i risultati per Advanced eDiscovery. 
+
+   > [!NOTE]
+   > A questo punto, gli utenti membri del gruppo di ruoli reviewer non possono accedere ai dati in [Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md) (noto anche come *Advanced eDiscovery V2*). Per aggiungere membri a un caso in Advanced eDiscovery V2 in modo che possano esaminare i dati dei casi, un utente deve essere membro del gruppo di ruoli Gestione eDiscovery.
     
 - **eDiscovery Manager.** I membri di questo gruppo di ruoli possono creare e gestire casi di eDiscovery. Possono aggiungere e rimuovere membri, inserire posizioni di contenuto in attesa, creare e modificare le ricerche di contenuto associate a un caso, esportare i risultati di una ricerca di contenuto e preparare i risultati della ricerca per l'analisi in Advanced eDiscovery. In questo gruppo di ruoli sono presenti due sottogruppi. La differenza tra questi sottogruppi dipende dall'ambito.
     
@@ -524,7 +527,7 @@ Quando si riapre un caso, tutte le esenzioni sul posto quando il caso è stato c
   |:-----|:-----|
   |Numero massimo di casi per un'organizzazione  <br/> |Nessun limite  <br/> |
   |Numero massimo di case conservate per un'organizzazione  <br/> |10.000  <br/> |
-  |Numero massimo di cassette postali in un singolo blocco maiuscole/minuscole  <br/> |1,000  <br/> |
+  |Numero massimo di cassette postali in un singolo blocco maiuscole/minuscole  <br/> |1.000  <br/> |
   |Numero massimo di siti di SharePoint e OneDrive for business in un unico blocco del caso  <br/> |100  <br/> |
    
 - **Che dire dei casi creati nella pagina di gestione dei casi in Advanced eDiscovery?** È possibile accedere a un elenco dei casi di eDiscovery avanzati precedenti facendo clic sul collegamento nella parte inferiore della pagina **eDiscovery** nel centro sicurezza & conformità. Tuttavia, per eseguire qualsiasi operazione in un caso meno recente, è necessario contattare il supporto di Office 365 e richiedere che il caso venga spostato in un nuovo caso di eDiscovery nel centro sicurezza & Compliance. 

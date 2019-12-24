@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Per gli amministratori: informazioni su come abilitare l'archiviazione in espansione automatica in Office 365, che consente agli utenti di disporre di spazio di archiviazione illimitato per le cassette postali di Exchange Online. È possibile abilitare l'archiviazione in espansione automatica per l'intera organizzazione o solo per utenti specifici."
-ms.openlocfilehash: b5191aa080722b5bb3150c92d922b6b150fc545e
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 4059e007039a62e415fd0b5847d1d8fa120a1570
+ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38627092"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "40850890"
 ---
 # <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Abilitare l'archiviazione illimitata in Office 365-Guida per gli amministratori
 
 È possibile utilizzare la funzionalità di archiviazione per l'espansione automatica di Exchange online in Office 365 per abilitare lo spazio di archiviazione illimitato per le cassette postali di archiviazione. Quando l'archiviazione in espansione automatica è attivata, lo spazio di archiviazione aggiuntivo viene aggiunto automaticamente alla cassetta postale di archiviazione di un utente quando si avvicina al limite di archiviazione. Il risultato è una capacità illimitata di archiviazione delle cassette postali. È possibile abilitare l'archiviazione in espansione automatica per tutti gli utenti dell'organizzazione o solo per i clienti specifici. Per ulteriori informazioni sull'archiviazione automatica, vedere [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - È necessario essere un amministratore globale dell'organizzazione di Office 365 o un membro del gruppo di ruoli Gestione organizzazione nell'organizzazione di Exchange Online per abilitare l'archiviazione in espansione automatica per l'intera organizzazione o per utenti specifici. In alternativa, è necessario essere membri di un gruppo di ruoli a cui è stato assegnato il ruolo destinatari di posta elettronica per abilitare l'archiviazione in espansione automatica per utenti specifici.
     
@@ -124,4 +124,4 @@ Dopo aver abilitato l'archiviazione automatica, tenere presenti le considerazion
 - Gli amministratori non possono modificare la quota di archiviazione.
 
 > [!IMPORTANT]
-> L'archiviazione in espansione automatica è supportata solo per le cassette postali utilizzate per singoli utenti o per le cassette postali condivise con una frequenza di crescita non superiore a 1 GB al giorno. L'utilizzo dell'inserimento nel journal, delle regole di trasporto o delle regole di inoltro automatico per copiare i messaggi in una cassetta postale di archiviazione ai fini dell'archiviazione non è consentito. Una cassetta postale di archiviazione di un utente è destinata esclusivamente a quell'utente. Microsoft si riserva il diritto di non consentire uno spazio di archiviazione illimitato nei casi in cui una cassetta postale di archiviazione dell'utente sia utilizzata per l'archiviazione di dati di altri utenti.
+> L'archiviazione in espansione automatica è supportata solo per le cassette postali utilizzate per singoli utenti o per le cassette postali condivise con una frequenza di crescita non superiore a 1 GB al giorno. L'utilizzo dell'inserimento nel journal, delle regole di trasporto o delle regole di inoltro automatico per copiare i messaggi in una cassetta postale di archiviazione ai fini dell'archiviazione non è consentito. Una cassetta postale di archiviazione di un utente è destinata esclusivamente a quell'utente. Microsoft si riserva il diritto di negare l'archiviazione illimitata nei casi in cui la cassetta postale di archiviazione di un utente viene utilizzata per archiviare i dati di archiviazione per altri utenti o in altri casi di utilizzo inappropriato.
