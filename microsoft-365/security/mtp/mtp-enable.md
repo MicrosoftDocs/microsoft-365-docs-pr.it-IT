@@ -1,7 +1,7 @@
 ---
 title: Attivare Microsoft Threat Protection nel Centro sicurezza Microsoft 365
 description: Informazioni su come abilitare Microsoft Threat Protection e iniziare a integrare i problemi di sicurezza e le relative risposte.
-keywords: guida introduttiva, MTP, Microsoft Threat Protection, M365, sicurezza, posizione dei dati
+keywords: Introduzione, abilitare MTP, Microsoft Threat Protection, M365, sicurezza, percorso dati, autorizzazioni necessarie, idoneità licenza
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7790e079d4b39b5d41961a26bb17009adb1bec1d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 842c3be031e96467c8b82e8cf482435e66124960
+ms.sourcegitcommit: 5b0a2e11c86c00e6e6b534f8b0a19962d1bb2805
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808451"
+ms.lasthandoff: 12/27/2019
+ms.locfileid: "40881977"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Attivare Microsoft Threat Protection
 
@@ -33,8 +33,10 @@ ms.locfileid: "40808451"
 
 Microsoft Threat Protection unifica il processo di risposta agli eventi imprevisti integrando le funzionalità principali in Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, Microsoft Cloud App Security e Azure ATP. Questa esperienza unificata aggiunge importanti funzionalità alle quali è possibile accedere nel Centro sicurezza Microsoft 365.
 
-## <a name="check-your-eligibility"></a>Verificare l'idoneità
+## <a name="check-license-eligibility-and-required-permissions"></a>Verificare l'idoneità delle licenze e le autorizzazioni necessarie
 I clienti che dispongono di Microsoft 365 E5 o di una licenza equivalente possono usare Microsoft Threat Protection. Per altre informazioni [consultare i requisiti di licenza](prerequisites.md#licensing-requirements).
+
+ Per poter abilitare Microsoft Threat Protection, è necessario essere un **amministratore globale** o un **amministratore della sicurezza** in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## <a name="start-using-the-service"></a>Iniziare a usare il servizio
 L'attivazione del servizio Microsoft Threat Protection aggrega i dati dai vari servizi integrati. I dati vengono elaborati e archiviati in modo centralizzato per identificare nuovi approfondimenti e consentire flussi di lavoro di risposte centralizzate.
@@ -44,7 +46,7 @@ Prima dell'attivazione del servizio, nel Centro sicurezza Microsoft 365 ([securi
 ![Immagine del menu del Centro sicurezza Microsoft 365 senza funzionalità di Microsoft Threat Protection](../images/mtp-off.png)
 *Centro sicurezza Microsoft 365 con Microsoft Threat Protection disattivato*
 
-Per attivare il servizio Microsoft Threat Protection, passare a **Impostazioni** > **Microsoft Threat Protection** > ** Consenso esplicito/rifiuto esplicito** nel Centro sicurezza Microsoft 365. Per eseguire questa attività, è necessario ricoprire il ruolo di amministratore globale oppure di amministratore della sicurezza in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Per attivare il servizio Microsoft Threat Protection, passare a **Impostazioni** > **Microsoft Threat Protection** > ** Consenso esplicito/rifiuto esplicito** nel Centro sicurezza Microsoft 365.
 
 Se è stato eseguito il provisioning di Microsoft Defender ATP per l'organizzazione, i dati verranno archiviati ed elaborati nella stessa area data center selezionata per i [dati di Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Se non si dispone di Microsoft Defender ATP, verrà chiesto di scegliere una nuova area data center specifica per Microsoft Threat Protection. Sarà necessario fornire il consenso prima che i dati vengano condivisi tra i servizi e gli aggregati.
 
