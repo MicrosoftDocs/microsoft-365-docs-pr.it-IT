@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 06/26/2019
+ms.date: 12/30/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 29e0c8d485d89498fe952d29d8b68f808c4aaaf3
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 3055a5330707b3654998fbdc937ead239742cb32
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970132"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910157"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -31,7 +31,7 @@ I [collegamenti sicuri di ATP](atp-safe-links.md), una funzionalità di [Office 
   
 Le [nuove funzionalità vengono continuamente aggiunte al trifosfato di adenosina](office-365-atp.md#new-features-in-office-365-atp). Man mano che si aggiungono nuove funzionalità, potrebbe essere necessario apportare modifiche ai criteri dei collegamenti sicuri ATP esistenti.
 
-## <a name="what-to-do"></a>Procedura 
+## <a name="what-to-do"></a>Operazione 
   
 1. Esaminare i prerequisiti.
     
@@ -122,8 +122,8 @@ Le opzioni dei criteri predefinite si applicano a tutti gli utenti dell'organizz
 |Questa opzione  |Produce questo risultato  |
 |---------|---------|
 | **Blocca gli URL seguenti** <br/>    | Consente all'organizzazione di disporre di un elenco personalizzato di URL che vengono bloccati automaticamente. Quando gli utenti fanno clic su un URL in questo elenco, verranno indirizzati a una [pagina di avviso](atp-safe-links-warning-pages.md) che spiega perché l'URL è bloccato. Per ulteriori informazioni, vedere [configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri di Office 365 ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
-| **Office 365 ProPlus, Office per iOS e Android** <br/>    | Quando questa opzione è selezionata, la protezione dei collegamenti sicuri di ATP viene applicata agli URL nei file di Word, Excel e PowerPoint su Windows o Mac OS, sui documenti di Office su iOS o su dispositivi Android, Visio 2016 su Windows e le versioni Web delle app di Office (Word, PowerPoint, Excel e OneNote), se l'utente ha eseguito l'accesso a Office 365. |
-| **Non monitorare quando gli utenti fanno clic su collegamenti sicuri di ATP** <br/>  | Quando questa opzione è selezionata, fare clic su dati per gli URL in Word, Excel, PowerPoint e documenti di Visio non archiviati.  <br/> |
+| **Office 365 ProPlus, Office per iOS e Android** <br/>    | Quando questa opzione è selezionata, la protezione dei collegamenti sicuri di ATP viene applicata agli URL nei file di Word, Excel e PowerPoint su Windows o Mac OS, i messaggi di posta elettronica in Outlook, i documenti di Office nei dispositivi iOS o Android, i file di Visio 2016 su Windows e i file aperti nelle versioni Web di App di Office (Word, PowerPoint, Excel, Outlook e OneNote), a condizione che l'utente abbia eseguito l'accesso a Office 365. |
+| **Non monitorare quando gli utenti fanno clic su collegamenti sicuri di ATP** <br/>  | Quando questa opzione è selezionata, fare clic su dati per gli URL in Word, Excel, PowerPoint, documenti di Visio e messaggi di posta elettronica di Outlook non archiviati.  <br/> |
 |**Non consentire agli utenti di fare clic su collegamenti sicuri ATP all'URL originale** <br/> |Quando questa opzione è selezionata, gli utenti non possono continuare a passare una [pagina di avviso](atp-safe-links-warning-pages.md) a un URL determinato come dannoso.  <br/> |
 
 ### <a name="policies-that-apply-to-specific-email-recipients"></a>Criteri che si applicano ai destinatari di posta elettronica specifici

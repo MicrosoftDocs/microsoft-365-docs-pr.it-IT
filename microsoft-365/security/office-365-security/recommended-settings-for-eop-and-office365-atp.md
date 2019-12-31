@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: 4aff384d571444e5641d3bcff58df136d27c7624
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: 84f4f04b648acb94302541ed967dc8a7bd539ace
+ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40832049"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910117"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
@@ -32,20 +32,23 @@ Anche se si autorizza gli amministratori della sicurezza a personalizzare le imp
 
 In questo argomento vengono descritte le impostazioni consigliate da Microsoft per proteggere gli utenti di Office 365.
 
+> [!TIP]
+> È disponibile un nuovo modulo di PowerShell che può essere scaricato dall'analizzatore di configurazione di Office 365 Advanced Threat Protection recommended Configuration Analyzer (ORCA) che consente di determinare alcune di queste impostazioni. Quando viene eseguito come amministratore nel tenant, Get-ORCAReport contribuirà a generare una valutazione delle impostazioni di protezione da posta indesiderata, anti-phishing e altre informazioni di igiene dei messaggi. È possibile scaricare questo modulo all' https://www.powershellgallery.com/packages/ORCA/indirizzo.
+
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Protezione da posta indesiderata, anti-malware e anti-phishing in EOP
 
 Le funzionalità di protezione da posta indesiderata, anti-malware e anti-phishing sono caratteristiche di EOP che possono essere configurate dagli amministratori. Si consiglia di eseguire le seguenti configurazioni.
 
 ### <a name="eop-anti-spam-policy-settings"></a>Impostazioni dei criteri di protezione da posta indesiderata di EOP
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Azione di rilevamento della posta indesiderata|Sposta messaggio nella cartella Posta indesiderata|Metti in quarantena messaggio||
 |Azione di rilevamento di posta indesiderata con elevata sicurezza|Metti in quarantena messaggio|Metti in quarantena messaggio||
 |Azione di rilevamento della posta elettronica di phishing|Metti in quarantena messaggio|Metti in quarantena messaggio||
 |Azione di rilevamento della posta elettronica phishing con elevata sicurezza|Metti in quarantena messaggio|Metti in quarantena messaggio||
 |Azione di rilevamento della posta elettronica in blocco|Sposta messaggio nella cartella Posta indesiderata|Metti in quarantena messaggio||
-|Impostare la soglia di posta elettronica in blocco su|6 |4|Il valore predefinito è attualmente 7, ma è consigliabile modificarlo su 6. Per ulteriori informazioni, vedere [valori dei livelli di reclamo in blocco](bulk-complaint-level-values.md).|
+|Impostare la soglia di posta elettronica in blocco su|6 |4 |Il valore predefinito è attualmente 7, ma è consigliabile modificarlo su 6. Per ulteriori informazioni, vedere [valori dei livelli di reclamo in blocco](bulk-complaint-level-values.md).|
 |Periodo di conservazione della quarantena|30 giorni|30 giorni||
 |Suggerimenti per la sicurezza|Attivato|Attivato||
 |Mittenti consentiti|Nessuna|Nessuna||
@@ -78,16 +81,16 @@ Nel criterio di protezione da posta indesiderata sono presenti diversi altri par
 
 #### <a name="eop-outbound-spam-filter-policy-settings"></a>Impostazioni del filtro per la posta indesiderata in uscita EOP
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
-|Limiti per i destinatari dei criteri di posta indesiderata in uscita-limite orario esterno|500|400||
-|Limiti per i destinatari dei criteri di posta indesiderata in uscita-limite orario interno|1000|800||
-|Limiti dei destinatari dei criteri di posta indesiderata in uscita-limite giornaliero|1000|800||
+|Limiti per i destinatari dei criteri di posta indesiderata in uscita-limite orario esterno|400|500||
+|Limiti per i destinatari dei criteri di posta indesiderata in uscita-limite orario interno|800|1000||
+|Limiti dei destinatari dei criteri di posta indesiderata in uscita-limite giornaliero|800|1000||
 |Azione quando un utente supera i limiti|Impedire all'utente di inviare messaggi di posta elettronica|Impedire all'utente di inviare messaggi di posta elettronica||
 
 ### <a name="eop-anti-malware-policy-settings"></a>Impostazioni dei criteri anti-malware di EOP
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Risposta di rilevamento malware|No|No|Se il malware viene rilevato in un allegato di posta elettronica, il messaggio verrà messo in quarantena e può essere rilasciato solo da un amministratore.|
 |"Filtro tipo di allegato comune" per il blocco dei tipi di file sospetti|Attivato|Attivato||
@@ -97,7 +100,7 @@ Nel criterio di protezione da posta indesiderata sono presenti diversi altri par
 
 ### <a name="eop-anti-phishing-policy-settings"></a>Impostazioni dei criteri di anti-phishing di EOP
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Abilitare la protezione anti-spoofing|Attivato|Attivato||
 |Abilitazione del mittente non autenticato (tagging)|Attivato|Attivato||
@@ -118,7 +121,7 @@ Se è stata aggiunta una sottoscrizione di Office 365 ATP all'EOP, impostare le 
 
 I clienti di EOP ottengono un anti-phishing di base come descritto in precedenza, ma Office 365 ATP include altre funzionalità e controlli che consentono di prevenire, rilevare e correggere gli attacchi.
 
-|Nome della funzionalità di sicurezza della rappresentazione|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza della rappresentazione|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |(Modifica criteri di rappresentazione) Aggiungere gli utenti a Protect|Attivato|Attivato|Dipende dall'organizzazione, ma è consigliabile aggiungere gli utenti nei ruoli chiave. Internamente, potrebbe trattarsi del CEO, del CFO e di altri leader senior. Esternamente, questi potrebbero includere i membri del Consiglio o il Consiglio di amministrazione.|
 |(Modifica criteri di rappresentazione) Includi automaticamente i domini che possiedo|Attivato|Attivato||
@@ -133,7 +136,7 @@ I clienti di EOP ottengono un anti-phishing di base come descritto in precedenza
 |Se il messaggio di posta elettronica viene inviato da un utente rappresentato protetto dalla funzionalità di intelligence delle cassette postali|Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari|Mettere in quarantena il messaggio||
 |(Modifica criteri di rappresentazione) Aggiungere mittenti e domini attendibili|Nessuna|Nessuna|Dipende dall'organizzazione, ma è consigliabile aggiungere utenti o domini che vengono contrassegnati erroneamente come phishing a causa solo della rappresentazione e non di altri filtri.|
 
-|Nome della funzionalità di sicurezza spoof|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza spoof|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Abilitare la protezione anti-spoofing|Attivato|Attivato||
 |Abilitazione del mittente non autenticato (tagging)|Attivato|Attivato||
@@ -143,13 +146,13 @@ I clienti di EOP ottengono un anti-phishing di base come descritto in precedenza
 |EnableSuspiciousSafetyTip|False|True|Questa impostazione è disponibile solo in PowerShell|
 |TreatSoftPassAsAuthenticated|True|False|Questa impostazione è disponibile solo in PowerShell|
 
-|Nome della funzionalità di sicurezza delle impostazioni avanzate|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza delle impostazioni avanzate|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Soglie di phishing avanzate|2-aggressivo|3-maggiore aggressività||
 
 ### <a name="safe-links-settings"></a>Impostazioni collegamenti attendibili
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Usare i collegamenti sicuri di ATP nelle app di Office 365, Office per iOS e Android|Abilitato|Abilitato|Questo rientra nei criteri dei collegamenti sicuri ATP che si applicano all'intera organizzazione|
 Non monitorare quando gli utenti fanno clic su collegamenti sicuri|Disattivato|Disattivato|Questo è per entrambi i criteri che si applicano all'intera organizzazione e tutti i criteri che si applicano a destinatari specifici|
@@ -161,7 +164,7 @@ Non monitorare quando gli utenti fanno clic su collegamenti sicuri|Disattivato|D
 
 ### <a name="safe-attachments"></a>Allegati sicuri
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Attivare ATP per SharePoint, OneDrive e Microsoft Teams|Abilitato|Abilitato||
 |Risposta malware per gli allegati sicuri ATP|Blocco|Blocco||
