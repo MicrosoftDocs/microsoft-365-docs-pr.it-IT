@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Informazioni sui limiti effettivi per la funzionalità di ricerca contenuto nel centro sicurezza & conformità in Office 365, ad esempio il numero massimo di ricerche simultanee. '
-ms.openlocfilehash: 6933fcb2a7b54c3617b2c01d54fa50fa4955ead2
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0574908468b5c2c94f1feb78c0845bc0a0e2afff
+ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082819"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40911464"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Limiti per la ricerca di contenuto nel centro sicurezza & conformità
 
@@ -39,8 +39,8 @@ Nella tabella seguente sono elencati i limiti di ricerca nel centro sicurezza & 
 |Il numero massimo di ricerche di contenuto che possono essere eseguite contemporaneamente nell'organizzazione.  <br/> |Nessun limite  <br/> |
 |Il numero massimo di ricerche di contenuto che un singolo utente può avviare contemporaneamente. Si noti che è probabile che questo limite venga colpito quando l'utente tenta di avviare più ricerche utilizzando il comando **get \| -ComplianceSearch Start-ComplianceSearch** nel centro sicurezza & Compliance Center PowerShell.  <br/> |10   <br/> |
 |Il numero massimo di elementi per ogni cassetta postale utente visualizzati nella pagina di anteprima quando si visualizzano i risultati della ricerca contenuto.  <br/> |100  <br/> |
-|Il numero massimo di elementi presenti in tutte le cassette postali degli utenti visualizzati nella pagina di anteprima quando si visualizzano i risultati della ricerca del contenuto. Vengono visualizzati gli elementi più recenti.  <br/> |1,000  <br/> |
-|Il numero massimo di cassette postali utente che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 1000 cassette postali che contengono contenuto che corrisponde alla query di ricerca, solo le cassette postali di 1000 con la maggior parte dei risultati della ricerca saranno disponibili per l'anteprima.  <br/> |1,000  <br/> |
+|Il numero massimo di elementi presenti in tutte le cassette postali degli utenti visualizzati nella pagina di anteprima quando si visualizzano i risultati della ricerca del contenuto. Vengono visualizzati gli elementi più recenti.  <br/> |1.000  <br/> |
+|Il numero massimo di cassette postali utente che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 1000 cassette postali che contengono contenuto che corrisponde alla query di ricerca, solo le cassette postali di 1000 con la maggior parte dei risultati della ricerca saranno disponibili per l'anteprima.  <br/> |1.000  <br/> |
 |Il numero massimo di elementi presenti nei siti di SharePoint e OneDrive for business visualizzati nella pagina di anteprima quando si visualizzano i risultati della ricerca in base al contenuto. Vengono visualizzati gli elementi più recenti.  <br/> |200  <br/> |
 |Il numero massimo di siti (in SharePoint e OneDrive for business) che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 200 siti totali che contengono contenuto che corrisponde alla query di ricerca, solo i primi 200 siti con i risultati di ricerca più saranno disponibili per l'anteprima.  <br/> |200  <br/> |
 |Il numero massimo di elementi per ogni cassetta postale di cartelle pubbliche visualizzati nella pagina di anteprima quando si visualizzano i risultati della ricerca contenuto.  <br/> |100  <br/> |
@@ -48,7 +48,7 @@ Nella tabella seguente sono elencati i limiti di ricerca nel centro sicurezza & 
 |Il numero massimo di cassette postali pubbliche che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 500 cassette postali delle cartelle pubbliche che contengono contenuto che corrisponde alla query di ricerca, solo le cassette postali delle cartelle pubbliche Top 500 con la maggior parte dei risultati della ricerca saranno disponibili per l'anteprima.  <br/> |500  <br/> |
 |Numero massimo di caratteri per la query di ricerca (compresi gli operatori e le condizioni) per una ricerca di contenuto.  <br/><br/> **Nota:** Questo limite ha effetto dopo che la query è stata espansa, il che significa che la query verrà espansa rispetto a ciascuna delle parole chiave. Ad esempio, se una query di ricerca contiene 15 parole chiave e parametri e condizioni aggiuntivi, la query viene espansa di 15 volte, ognuno con gli altri parametri e le condizioni della query. Pertanto, anche se il numero di caratteri nella query di ricerca potrebbe essere inferiore al limite, è la query espansa che può contribuire a superare questo limite.  <br/> |**Cassette postali:** 10.000  <br/> **Siti:** 4.000 quando si effettua la ricerca in tutti i siti o 2.000 quando si effettua la ricerca fino a 20 siti <sup>1</sup> <br/> |
 |Numero massimo di varianti restituite quando si utilizza un carattere jolly prefisso per cercare una frase esatta in una query di ricerca o quando si utilizza un carattere jolly di prefisso e l'operatore booleano **near** o **ONEAR** .  <br/> |10.000 <sup>2</sup> <br/> |
-|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso. ad esempio, `time*` `one*`,, o `set*`.  <br/> |3  <br/> |
+|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso. ad esempio, `time*` `one*`,, o `set*`.  <br/> |3   <br/> |
 |Il numero massimo di cassette postali in una ricerca di contenuto in cui è possibile eliminare gli elementi eseguendo un'azione di "ricerca ed eliminazione" (tramite il comando **New-ComplianceSearchAction-Purge** ). Se la ricerca di contenuto a cui si sta eseguendo un'azione di eliminazione ha più cassette postali di origine rispetto a questo limite, l'azione Purge avrà esito negativo. Per ulteriori informazioni sulla ricerca e sul Purge, vedere [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione di Office 365](search-for-and-delete-messages-in-your-organization.md).  <br/> |50.000  <br/> |
    
 > [!NOTE]
@@ -60,8 +60,7 @@ Nella tabella seguente vengono descritti i limiti di indicizzazione che possono 
   
 |**Limite di indicizzazione**|**Note**|**Descrizione**|
 |:-----|:-----|:-----|
-|Dimensione massima degli allegati (esclusi i file di Excel)  <br/> |150 MB  <br/> |Le dimensioni massime di un allegato di posta elettronica che analizzerà l'indicizzazione. Qualsiasi allegato che è più grande di questo limite non verrà analizzato per l'indicizzazione e il messaggio con l'allegato verrà contrassegnato come parzialmente indicizzato.  <br/> <br/>**Nota:** L'analisi è il processo in cui il servizio di indicizzazione estrae il testo dall'allegato, rimuove i caratteri non necessari come la punteggiatura e gli spazi e quindi divide il testo in parole (in un processo denominato tokenation), che vengono quindi memorizzate nell'indice.           |
-|Dimensioni massime dei file di Excel  <br/> |4 MB  <br/> |La dimensione massima di un file di Excel che si trova in un sito o collegato a un messaggio di posta elettronica che verrà analizzato per l'indicizzazione. Qualsiasi file di Excel di dimensioni superiori a questo limite non verrà analizzato e il file o l'indirizzo di posta elettronica il messaggio con l'allegato file verrà contrassegnato come non indicizzato.  <br/> |
+|Dimensione massima degli allegati|150 MB  <br/> |Le dimensioni massime di un allegato di posta elettronica che analizzerà l'indicizzazione. Qualsiasi allegato che è più grande di questo limite non verrà analizzato per l'indicizzazione e il messaggio con l'allegato verrà contrassegnato come parzialmente indicizzato.  <br/> <br/>**Nota:** L'analisi è il processo in cui il servizio di indicizzazione estrae il testo dall'allegato, rimuove i caratteri non necessari come la punteggiatura e gli spazi e quindi divide il testo in parole (in un processo denominato tokenation), che vengono quindi memorizzate nell'indice.           |
 |Numero massimo di allegati  <br/> |250  <br/> |Numero massimo di file allegati a un messaggio di posta elettronica che verranno analizzati per l'indicizzazione. Se un messaggio contiene più di 250 allegati, i primi 250 allegati vengono analizzati e indicizzati e il messaggio viene contrassegnato come indicizzato parzialmente perché aveva allegati aggiuntivi che non sono stati analizzati.  <br/> |
 |Profondità massima degli allegati  <br/> |30  <br/> |Numero massimo di allegati nidificati analizzati. Ad esempio, se a un messaggio di posta elettronica è associato un altro messaggio e al messaggio allegato è associato un documento di Word, il documento di Word e il messaggio allegato verranno indicizzati. Questo comportamento continuerà fino a 30 allegati nidificati.  <br/> |
 |Numero massimo di immagini collegate  <br/> |0  <br/> |Un'immagine associata a un messaggio di posta elettronica viene ignorata dal parser e non è indicizzata.  <br/> |
@@ -71,7 +70,7 @@ Nella tabella seguente vengono descritti i limiti di indicizzazione che possono 
 |Dimensione massima del corpo nell'indice  <br/> |67 milioni caratteri  <br/> |Il numero totale di caratteri presenti nel corpo di un messaggio di posta elettronica e di tutti gli allegati. Quando un messaggio di posta elettronica viene indicizzato, tutto il testo nel corpo del messaggio e in tutti gli allegati viene concatenato in una singola stringa. Le dimensioni massime della stringa indicizzata sono 67 milioni caratteri.  <br/> |
 |Numero massimo di token univoci nel corpo  <br/> |1 milione  <br/> |Come spiegato in precedenza, i token sono il risultato dell'estrazione del testo dal contenuto, la rimozione della punteggiatura e degli spazi e quindi la suddivisione in parole (denominate token) memorizzate nell'indice. Ad esempio, la frase `"cat, mouse, bird, dog, dog"` contiene 5 token. Ma solo 4 di questi sono token univoci. Vi è un limite di 1 milione token univoci per ogni messaggio di posta elettronica, che consente di evitare che l'indice venga troppo esteso con token casuali.  <br/> |
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Esistono ulteriori limiti relativi a diversi aspetti della ricerca del contenuto, ad esempio l'esportazione dei risultati di ricerca e l'indicizzazione del contenuto. Per una descrizione di questi limiti, vedere gli argomenti seguenti:
   
