@@ -3,7 +3,7 @@ title: Risolvere i problemi di recapito della posta elettronica per il codice di
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 06/11/2019
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come risolvere i problemi di posta elettronica per il codice di errore 5.7.7 XX in Exchange Online (tenant bloccato dall'invio di messaggi di posta elettronica).
-ms.openlocfilehash: 9c95a8aa3f2dbc7b44524b4392090f7435d2800b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 69ee2b7d707ae88cca7aa5d4a5f39e8458f6925f
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970452"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959654"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Risolvere i problemi di recapito della posta elettronica per il codice di errore 5.7.7 XX in Exchange Online
 
@@ -27,42 +27,52 @@ In questo argomento vengono descritte le operazioni che è possibile eseguire se
 
 ## <a name="57705-tenant-has-exceeded-threshold-restriction-what-you-need-to-know"></a>5.7.705: tenant ha superato la restrizione di soglia: informazioni utili
 
-I mittenti interni possono vedere questo rapporto di mancato recapito quando si tenta di inviare messaggi di posta elettronica se il tenant è stato compromesso. Questo solitamente occus quando la maggior parte del traffico proveniente dal tenant è stata rilevata come sospetta e ha portato al divieto di inviare l'abilità per il tenant. Questo può verificarsi anche se gli utenti inviano una grande quantità di posta in blocco da Office 365. Come indicato nella descrizione del servizio, i clienti di Exchange Online che hanno la necessità di inviare messaggi di posta elettronica commerciali legittimi (ad esempio, i bollettini dei clienti) devono utilizzare provider di terze parti specializzati in tali servizi.
+Una volta che gli utenti (collettivamente come organizzazione) inviano una certa quantità di messaggi di posta elettronica sospetti tramite il servizio, tutti gli utenti possono essere impediti di inviare messaggi di posta elettronica fino a quando il problema non viene risolto. Questo è in genere il risultato di un compromesso (più comune) o l'invio di posta elettronica troppo voluminosa. Gli utenti riceveranno un rapporto di mancato recapito che dichiara:
 
-Una volta che gli utenti collettivamente, come tenant, inviano una certa quantità di posta sospette tramite il servizio, a tutti gli utenti può essere impedito di inviare posta finché il problema non viene risolto. Gli utenti riceveranno un rapporto di mancato recapito (NDR) che indica quanto segue:
+`550 5.7.705 Access denied, tenant has exceeded threshold`
 
-- 550 5.7.705 accesso negato, il tenant ha superato la soglia
+In rari casi, ciò può verificarsi anche se si rinnova l'abbonamento dopo che è già scaduto. Il servizio può sincronizzare le nuove informazioni di sottoscrizione (in genere, non più di un giorno), ma è possibile che l'organizzazione possa essere bloccata dall'invio di messaggi di posta elettronica nel frattempo. Il modo migliore per evitare questo comportamento è assicurarsi che l'abbonamento non scada.
 
 ## <a name="57750-unregistered-domain-email-restriction-what-you-need-to-know"></a>5.7.750: limitazione della posta elettronica del dominio non registrato: informazioni utili
 
-Office 365 consente ai tenant di inoltrare alcuni messaggi tramite Exchange Online Protection (EOP). Un esempio supportato potrebbe essere quello in cui gli utenti dispongono di una cassetta postale di Office 365 e un utente esterno invia loro la posta elettronica, ma l'inoltro della posta elettronica è configurato in modo che rientri nella cassetta postale esterna dell'utente. Questo è il più comune negli ambienti scolastici in cui gli studenti desiderano sfruttare la propria interfaccia di posta elettronica personale, ma continuano a ricevere messaggi di posta elettronica correlati alla scuola. Un altro esempio è quando i clienti sono in uno scenario ibrido e dispongono di server locali che inviano messaggi di posta elettronica da EOP.
+Office 365 consente ai tenant di inoltrare alcuni messaggi tramite Exchange Online Protection (EOP). Ad esempio:
+
+- Una cassetta postale di Office 365 riceve la posta elettronica da un mittente esterno. L'inoltro della posta è configurato nella cassetta postale di Office 365, quindi il messaggio torna all'indirizzo di posta elettronica esterno dell'utente. Questo scenario è più comune negli ambienti di istruzione in cui gli studenti desiderano utilizzare gli account di posta elettronica personali per visualizzare i messaggi correlati alla scuola.
+
+- Envrionments ibrido che dispongono di server di posta elettronica locali che inviano la posta in uscita tramite EOP.
 
 ### <a name="problems-with-unregistered-domains"></a>Problemi relativi ai domini non registrati
 
-Il problema è quando i server locali vengono compromessi e finiscono con l'inoltro di un volume elevato di posta indesiderata fuori EOP. In quasi tutti i casi, i connettori giusti sono configurati, ma il messaggio di posta elettronica viene inviato dall'annullamento della registrazione, noto anche come Unprovisioned, Domains. Office 365 consente una quantità ragionevole di messaggi di posta elettronica provenienti da domini non registrati, ma un dominio accettato deve essere configurato nell'interfaccia di amministrazione per ogni dominio in cui si intende inviare.
+Il problema è che i server di posta elettronica compromessi locali inoltrano un elevato volume di posta indesiderata tramite EOP. In quasi tutti i casi, i connettori sono configurati correttamente, ma il messaggio di posta elettronica viene inviato da domini non registrati (noti anche come non provisioning). Office 365 consente una quantità ragionevole di messaggi di posta elettronica da domini non registrati, ma è necessario configurare tutti i domini che si utilizza per inviare messaggi di posta elettronica come dominio accettato.
 
-Una volta compromesso, ai tenant verrà impedito di inviare la posta in uscita per i domini non registrati. Gli utenti riceveranno un rapporto di mancato recapito (NDR) che indica quanto segue:
+Una volta compromesso, ai tenant verrà impedito di inviare la posta elettronica in uscita per i domini non registrati. Gli utenti riceveranno un rapporto di mancato recapito che dichiara:
 
-- 550 servizio 5.7.750 non disponibile. Client bloccato dall'invio di domini non registrati
+`550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
 ## <a name="how-to-unblocking-tenant-in-order-to-send-again"></a>Come sbloccare tenant per inviare di nuovo
 
-Se il tenant viene bloccato per l'invio di messaggi di posta elettronica, è necessario eseguire diverse operazioni:
+Se il tenant è bloccato dall'invio di messaggi di posta elettronica, è necessario eseguire diverse operazioni:
 
-1. Assicurarsi di registrare tutti i domini nell'interfaccia di amministrazione di Microsoft 365. Ulteriori informazioni sono disponibili [qui](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Verificare che tutti i domini di posta elettronica siano registrati. Per ulteriori informazioni, vedere [aggiungere un dominio a Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) e [gestire i domini accettati in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Cercare connettori inusuali. Gli attori maligni spesso creano nuovi connettori in ingresso nel tenant di Office 365 per inviare la posta indesiderata. Ulteriori informazioni su come controllare i connettori sono disponibili [qui](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-inboundconnector).
+2. Cercare [connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inusuali. Gli attori maligni spesso creano nuovi connettori in ingresso nell'organizzazione di Office 365 per inviare posta indesiderata. Per visualizzare i connettori esistenti, vedere [convalidare i connettori in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
-3. Bloccare i server locali e assicurarsi che non vengano compromessi.
+3. Controllare gli utenti compromessi, come descritto in [risposta a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md).
+
+4. [Abilitare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) per tutti gli amministratori dell'organizzazione di Office 365.
+
+5. Bloccare i server di posta elettronica locali e verificare che non vengano compromessi.
 
    > [!TIP]
-   > Vi sono numerosi fattori coinvolti in questo articolo, soprattutto se si tratta di server di terze parti. Indipendentemente da ciò, è necessario essere in grado di confermare che tutti i messaggi che lasciano i server siano legittimi.
+   > Esistono molti fattori, soprattutto se si utilizzano server di terze parti. Indipendentemente da ciò, è necessario verificare che tutti i messaggi di posta elettronica in uscita siano legittimi.
 
-4. Dopo aver completato l'operazione, è necessario chiamare il supporto tecnico Microsoft e chiedere di ottenere il tenant sbloccato per inviare di nuovo i domini non registrati.  Fornire il codice di errore è utile, ma sarà necessario dimostrare che l'ambiente è protetto e che la posta indesiderata non verrà più inviata. Ulteriori informazioni sull'apertura di un caso di supporto sono disponibili [qui](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+6. Chiamare il supporto tecnico Microsoft e chiedere che il tenant venga sbloccato per inviare di nuovo i domini non registrati. Il codice di errore è utile, ma è necessario dimostrare che l'ambiente è stato protetto e che non è in grado di inviare posta indesiderata. Per aprire un caso di supporto, vedere [contattare il supporto per i prodotti aziendali-Guida per gli amministratori](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
 [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
+
+[Guida alla posta in blocco nella sezione limiti di invio della descrizione del servizio Exchange Online](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Rapporti di mancato recapito della posta elettronica in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 

@@ -3,7 +3,7 @@ title: Invio di messaggi di posta indesiderata e non e tentativi di phishing a M
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/19/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: "Gli utenti possono inviare messaggi di posta indesiderata falsi negativi e falsi positivi a Microsoft per l'analisi. "
-ms.openlocfilehash: fb939c4166bc6c732f831dc767bffe1cfd7a2f7c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 316945ae026649b16ecfced62baef2ddc41db444
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084843"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959644"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Inviare messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
 
@@ -58,8 +58,8 @@ Per inviare messaggi di posta indesiderata o tentativi di phishing a Microsoft:
     
 3. Copiare e incollare il messaggio di posta indesiderata o di phishing nel nuovo messaggio come allegato. 
     
-    > [!NOTE]
-    > È possibile allegare più messaggi al nuovo messaggio. Assicurarsi che tutti i messaggi siano dello stesso tipo, ovvero messaggi di truffa di phishing o messaggi di posta indesiderata. > Lasciare vuoto il corpo del nuovo messaggio. 
+   > [!NOTE]
+   > • È possibile allegare più messaggi nel nuovo messaggio. Assicurarsi che tutti i messaggi siano dello stesso tipo: messaggi di truffa di phishing o messaggi di posta indesiderata. <br/><br/>• Lasciare vuoto il corpo del nuovo messaggio. <br/><br/>• Utilizzare i formati. msg (formato Outlook predefinito) o. eml (predefinito di Outlook sul Web Format) per i messaggi allegati.
   
 4. Fare clic su **Invia**.
     
@@ -72,7 +72,7 @@ Gli amministratori possono esaminare altre informazioni sulle impostazioni di po
   
 È possibile inviare messaggi non di posta indesiderata nei modi seguenti:
   
-- Se si utilizza l'azione **Sposta messaggio all'interno della cartella posta indesiderata** quando si configurano i filtri del contenuto (questa è l'azione predefinita), gli utenti possono rilasciare messaggi falsi positivi nella cartella posta indesiderata di Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). . 
+- Se si utilizza l'azione **Sposta messaggio all'interno della cartella posta indesiderata** quando si configurano i filtri del contenuto (questa è l'azione predefinita), gli utenti possono rilasciare messaggi falsi positivi nella cartella posta indesiderata di Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). 
     
   - Gli utenti di Outlook possono rilasciare messaggi falsi positivi utilizzando l'opzione di menu **non indesiderata** con il pulsante destro del mouse. Tuttavia, è necessario inviare il messaggio a Microsoft tramite posta elettronica, come illustrato nella procedura descritta in questo articolo. 
     

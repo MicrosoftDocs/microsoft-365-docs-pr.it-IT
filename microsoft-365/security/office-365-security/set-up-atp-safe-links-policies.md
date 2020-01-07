@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 12/30/2019
+ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 3055a5330707b3654998fbdc937ead239742cb32
-ms.sourcegitcommit: a1bfa92c637ce8af40d2b6edf36f702eb40eb692
+ms.openlocfilehash: 7914c29f932469cdcea7436d1084536eaaf3d093
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "40910157"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959664"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -108,6 +108,9 @@ Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefini
   - Nella sezione **applicato a** , scegliere **il destinatario è un membro di**, quindi scegliere il gruppo o i gruppi che si desidera includere nel criterio. Scegliere **Aggiungi**e quindi fare clic su **OK**.
     
 6. Fare clic su **Salva**.
+
+> [!NOTE]
+> I criteri per i collegamenti sicuri ATP con priorità maggiore avranno la precedenza. Se un utente è soggetto a due o più poliziotti, solo il criterio di priorità più alta avrà effetto.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Passaggio 4: informazioni sulle opzioni dei criteri collegamenti sicuri di ATP
 

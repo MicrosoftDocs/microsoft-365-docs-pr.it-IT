@@ -13,23 +13,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Utilizzare questa guida del laboratorio di testing per abilitare la gestione degli accessi con privilegi nell'ambiente di testing Microsoft 365 Enterprise.
-ms.openlocfilehash: 7e6a2ddea341f49c737409d8586bd9e70c9b2b79
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: f0010b4d6aa85902473676d023d8b4fb9f4018bc
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831817"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959634"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestione degli accessi con privilegi per l'ambiente di testing di Microsoft 365 Enterprise
 
-*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che Office 365 Enterprise.*
+*Questa guida al lab di test può essere usata sia per ambienti di testing di Microsoft 365 Enterprise che di Office 365 Enterprise.*
 
 Con le istruzioni riportate in questo articolo, è possibile configurare la gestione degli accessi con privilegi per aumentare la sicurezza nell'ambiente di testing Microsoft 365 Enterprise.
 
 ![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-> [!TIP]
-> Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
+>[!TIP]
+>Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Fase 1: Creare l'ambiente di testing di Microsoft 365 Enterprise
 
@@ -37,8 +37,8 @@ Se si desidera configurare la gestione degli accessi con privilegi in modo sempl
   
 Se si desidera configurare la gestione degli accessi con privilegi in un'azienda simulata, seguire le istruzioni riportate nell' [autenticazione pass-through](pass-through-auth-m365-ent-test-environment.md).
   
-> [!NOTE]
-> Se si verifica la gestione degli accessi con privilegi non è necessario l'ambiente di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di AD DS. Viene fornito come opzione in modo che sia possibile testare la gestione degli accessi con privilegi e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
+>[!NOTE]
+>Se si verifica la gestione degli accessi con privilegi non è necessario l'ambiente di testing dell'organizzazione simulata, che include una rete Intranet simulata connessa a Internet e la sincronizzazione della directory per una foresta di AD DS. Viene fornito come opzione in modo che sia possibile testare la gestione degli accessi con privilegi e sperimentarla in un ambiente che rappresenta un'organizzazione tipica. 
 
 ## <a name="phase-2-configure-privileged-access-management"></a>Fase 2: configurare la gestione degli accessi con privilegi
 
@@ -74,8 +74,8 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Creare un nuovo criterio di accesso privilegiato per l'attività New-JournalRule
 
-> [!NOTE]
-> Se non sono già stati completati i passaggi 1 e 2 della fase 2 della guida, seguire la procedura seguente per creare un gruppo del responsabile approvazione denominato "revisori di accesso Privilege" e per abilitare l'accesso con privilegi nell'ambiente di testing.
+>[!NOTE]
+>Se non sono già stati completati i passaggi 1 e 2 della fase 2 della guida, seguire la procedura seguente per creare un gruppo del responsabile approvazione denominato "revisori di accesso Privilege" e per abilitare l'accesso con privilegi nell'ambiente di testing.
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali dell'account di amministratore globale per l'ambiente di testing.
 
