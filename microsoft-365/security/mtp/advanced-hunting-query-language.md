@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7c6c92aeec6c1644472103a1aaf175eb813d5758
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: df811e38c55becf9ba52de40891fc1201d0afae0
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808681"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966884"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
@@ -35,7 +35,7 @@ Ricerca avanzata si basa sul [linguaggio delle query in Esplora dati](https://do
 
 nel Centro sicurezza Microsoft 365 andare su **Ricerca** per eseguire la prima query. Usare l'esempio seguente:
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents 
 | where Timestamp > ago(7d)
@@ -55,7 +55,7 @@ Questo è come apparirà in Ricerca avanzata.
 
 La query inizia con un breve commento che descrive il contenuto. In un secondo momento si può decidere di salvare la query e condividerla con altri utenti dell'organizzazione.
 
-```
+```kusto
 // Finds PowerShell execution events that could involve a download.
 DeviceProcessEvents
 ```
@@ -64,19 +64,19 @@ La query viene in genere avviata con un nome di tabella seguito da una serie di 
 
 Il primo elemento reindirizzato è l'ambito del filtro del periodo entro i sette giorni precedenti. Il mantenimento dell'intervallo di tempo il più possibile ravvicinato assicura che le query vengano eseguite bene, che restituiscano risultati gestibili e che non scadano.
 
-```
+```kusto
 | where Timestamp > ago(7d)
 ```
 
 L'intervallo di tempo è seguito immediatamente da una ricerca di file che rappresenta l'applicazione di PowerShell.
 
-```
+```kusto
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
 ```
 
 In seguito, la query cerca le righe di comando usate in genere con PowerShell per scaricare i file.
 
-```
+```kusto
 | where ProcessCommandLine has "Net.WebClient"
         or ProcessCommandLine has "DownloadFile"
         or ProcessCommandLine has "Invoke-WebRequest"
@@ -86,7 +86,7 @@ In seguito, la query cerca le righe di comando usate in genere con PowerShell pe
 
 Ora che la query identifica chiaramente i dati da individuare, è possibile aggiungere elementi che definiscono come appaiono i risultati. `project` restituisce colonne specifiche e `top` limita il numero di risultati, rendendo i risultati ben formattati, ragionevolmente grandi e facili da elaborare.
 
-```
+```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
 | top 100 by Timestamp'
 ```
