@@ -1,7 +1,7 @@
 ---
 title: Considerazioni sulla sicurezza e sulla privacy di cloud computing del governo neozelandese
 description: Microsoft NZ affronta le domande pubblicate nella nuova Zelanda cloud computing Framework.
-keywords: Microsoft 365, conformità, offerte
+keywords: Microsoft 365, conformità, soluzioni
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1f0ed98386a33b84d109fb94093b3d03cefc127b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: da5fbef7ed9ceb136f276e2d6baab0c94bba3c22
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803999"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959535"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>Considerazioni sulla sicurezza e sulla privacy di cloud computing del governo neozelandese
 
@@ -37,7 +37,7 @@ Informazioni sui vantaggi offerti da NZ CC Framework sul cloud Microsoft: [scari
 
 Informazioni su come accelerare la distribuzione del Framework NZ CC con il modello di sicurezza e conformità di Azure: [scaricare la risposta di Azure per il Framework NZ CC](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft associati
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -62,10 +62,10 @@ Se l'Agenzia è tenuta a effettuare la certificazione e l'accreditamento del sis
 - [Conformità di Microsoft Azure nel contesto dei requisiti per la sicurezza e la privacy in Nuova Zelanda](https://aka.ms/azurecompliancenewzealand)
 - [Strategia ICT del governo NZ 2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [Requisiti governativi NZ per il cloud computing](https://aka.ms/NZ-Cloud-Requirements)
-- [Cloud Computing: considerazioni sulla sicurezza delle informazioni e sulla privacy (ISPC)](https://aka.ms/NZ-Cloud-Computing-Considerations)
+- [Cloud Computing: considerazioni sulla sicurezza delle informazioni e sulla privacy (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Office 365: integrazione e architettura di riferimento per la posta elettronica](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (altre linee guida di Microsoft NZ sull'adozione del servizio cloud)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Microsoft Responses to "cloud computing IPSC"
 
@@ -75,6 +75,6 @@ Se l'Agenzia è tenuta a effettuare la certificazione e l'accreditamento del sis
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf).

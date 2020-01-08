@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi di barriere informative
+title: Risoluzione dei problemi relativi alle barriere informative
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilizzare questo articolo come guida per la risoluzione dei problemi relativi alle barriere informative.
-ms.openlocfilehash: 47549029ffbaa5ead028c18e97850b30f8072011
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 07c3c6fc12ec1b288ae9499715ddadb21764f6ef
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082832"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970804"
 ---
-# <a name="troubleshooting-information-barriers"></a>Risoluzione dei problemi di barriere informative
+# <a name="troubleshooting-information-barriers"></a>Risoluzione dei problemi relativi alle barriere informative
 
 Gli [ostacoli alle informazioni](information-barriers.md) consentono all'organizzazione di rimanere conforme ai requisiti legali e ai regolamenti di settore. Ad esempio, con barriere informative, è possibile limitare le comunicazioni tra gruppi specifici di utenti per evitare conflitti di interesse o altri problemi. Per ulteriori informazioni su come configurare le barriere informative, vedere [define Policies for Information barriers](information-barriers-policies.md).
 
@@ -34,7 +34,7 @@ In questo caso, gli utenti segnalano problemi imprevisti che comunicano con altr
 - Un utente può trovare, ma non è in grado di selezionare, un altro utente in Microsoft teams.
 - Un utente può visualizzare un altro utente, ma non è in grado di inviare messaggi a un altro utente in Microsoft teams.
 
-### <a name="what-to-do"></a>cosa fare
+### <a name="what-to-do"></a>Operazione
 
 Determinare se gli utenti sono coinvolti in un criterio barriera informativo. A seconda del modo in cui vengono configurati i criteri, gli ostacoli alle informazioni potrebbero funzionare come previsto. In alternativa, potrebbe essere necessario perfezionare i criteri dell'organizzazione.
 
@@ -71,7 +71,7 @@ Determinare se gli utenti sono coinvolti in un criterio barriera informativo. A 
     |---------|---------|
     |`Get-OrganizationSegment`<p>Utilizzare questo cmdlet con un parametro Identity.     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>In questo esempio vengono riportate informazioni sul segmento con GUID *c96e0837-C232-4a8a-841E-ef45787d8fcd*.         |
 
-    Esaminare i dettagli del segmento. Se necessario, [modificare un segmento](information-barriers-edit-segments-policies.md.md#edit-a-segment)e quindi riutilizzare il `Start-InformationBarrierPoliciesApplication` cmdlet.
+    Esaminare i dettagli del segmento. Se necessario, [modificare un segmento](information-barriers-edit-segments-policies.md#edit-a-segment)e quindi riutilizzare il `Start-InformationBarrierPoliciesApplication` cmdlet.
 
     **Se si verificano ancora problemi con il criterio barriera informativo, contattare il supporto**.
 
@@ -79,7 +79,7 @@ Determinare se gli utenti sono coinvolti in un criterio barriera informativo. A 
 
 In questo caso, anche se le barriere informative sono definite, attive e applicate, le persone che dovrebbero essere impossibilitate a comunicare tra loro sono in grado di chattare e di chiamarsi a vicenda in Microsoft teams.
 
-### <a name="what-to-do"></a>cosa fare
+### <a name="what-to-do"></a>Operazione
 
 Verificare che gli utenti in questione siano inclusi in un criterio barriera informativo. 
 
@@ -99,8 +99,8 @@ Verificare che gli utenti in questione siano inclusi in un criterio barriera inf
     
     |Risultati  |Cosa fare dopo  |
     |---------|---------|
-    |Nessun segmento è elencato per l'utente o gli utenti selezionati     |Eseguire una delle operazioni seguenti:<br/>-Assegnare gli utenti a un segmento esistente modificando i relativi profili utente in Azure Active Directory. Vedere [configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).<br/>-Definire un segmento utilizzando un [attributo supportato per le barriere informative](information-barriers-attributes.md). [Definire quindi un nuovo criterio](information-barriers-policies.md#part-2-define-information-barrier-policies) o [modificare un criterio esistente](information-barriers-edit-segments-policies.md.md#edit-a-policy) per includere tale segmento.  |
-    |I segmenti sono elencati ma non sono stati assegnati criteri barriera informativi a tali segmenti     |Eseguire una delle operazioni seguenti:<br/>- [Definire un nuovo criterio barriera informativo](information-barriers-policies.md#part-2-define-information-barrier-policies) per ogni segmento in questione<br/>- [Modificare un criterio barriera di informazioni esistente](information-barriers-edit-segments-policies.md.md#edit-a-policy) per assegnarlo al segmento corretto         |
+    |Nessun segmento è elencato per l'utente o gli utenti selezionati     |Eseguire una delle operazioni seguenti:<br/>-Assegnare gli utenti a un segmento esistente modificando i relativi profili utente in Azure Active Directory. Vedere [configurare le proprietà degli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).<br/>-Definire un segmento utilizzando un [attributo supportato per le barriere informative](information-barriers-attributes.md). [Definire quindi un nuovo criterio](information-barriers-policies.md#part-2-define-information-barrier-policies) o [modificare un criterio esistente](information-barriers-edit-segments-policies.md#edit-a-policy) per includere tale segmento.  |
+    |I segmenti sono elencati ma non sono stati assegnati criteri barriera informativi a tali segmenti     |Eseguire una delle operazioni seguenti:<br/>- [Definire un nuovo criterio barriera informativo](information-barriers-policies.md#part-2-define-information-barrier-policies) per ogni segmento in questione<br/>- [Modificare un criterio barriera di informazioni esistente](information-barriers-edit-segments-policies.md#edit-a-policy) per assegnarlo al segmento corretto         |
     |I segmenti sono elencati e ognuno di essi è incluso in un criterio barriera informativo     |-Eseguire il `Get-InformationBarrierPolicy` cmdlet per verificare che i criteri di barriera delle informazioni siano attivi<br/>-Eseguire il `Get-InformationBarrierPoliciesApplicationStatus` cmdlet per verificare che i criteri vengano applicati<br/>-Eseguire il `Start-InformationBarrierPoliciesApplication` cmdlet per applicare tutti i criteri di barriera delle informazioni attive          |
     
 
@@ -108,7 +108,7 @@ Verificare che gli utenti in questione siano inclusi in un criterio barriera inf
 
 In questo caso, i criteri per la barriera delle informazioni sono in vigore e uno o più utenti sono inaspettatamente bloccati dalla comunicazione con altri membri di Microsoft teams. Anziché rimuovere tutti i criteri di barriera delle informazioni, è possibile rimuovere uno o più singoli utenti dai criteri di barriera delle informazioni. 
 
-### <a name="what-to-do"></a>cosa fare
+### <a name="what-to-do"></a>Operazione
 
 I criteri barriera di informazioni vengono assegnati a segmenti di utenti. I segmenti vengono definiti utilizzando determinati [attributi nei profili degli account utente](information-barriers-attributes.md). Se è necessario rimuovere un criterio da un singolo utente, prendere in considerazione la possibilità di modificare il profilo dell'utente in Azure Active Directory in modo che l'utente non sia più incluso in un segmento influenzato dalle barriere informative.
 
@@ -129,7 +129,7 @@ I criteri barriera di informazioni vengono assegnati a segmenti di utenti. I seg
 
 Dopo aver eseguito il cmdlet **Start-InformationBarrierPoliciesApplication** , il processo richiede molto tempo per il completamento.
 
-### <a name="what-to-do"></a>cosa fare
+### <a name="what-to-do"></a>Operazione
 
 Tenere presente che, quando si esegue il cmdlet applicazione criteri, i criteri di barriera delle informazioni vengono applicati (o rimossi), utente per utente, per tutti gli account nell'organizzazione. Se si dispone di numerosi utenti, sarà necessario un po' di tempo per elaborarli. (Come linee guida generali, è necessario circa un'ora per elaborare gli account utente di 5.000).
 
@@ -147,14 +147,14 @@ Tenere presente che, quando si esegue il cmdlet applicazione criteri, i criteri 
     |Stato  |Passaggio successivo  |
     |---------|---------|
     |**Non avviato**     |Se dopo aver eseguito il cmdlet **Start-InformationBarrierPoliciesApplication** sono stati eseguiti più di 45 minuti, esaminare il log di controllo per verificare se sono presenti errori nelle definizioni dei criteri o in qualche altro motivo per cui l'applicazione non è stata avviata. |
-    |**Operazione non riuscita**     |Se l'applicazione ha avuto esito negativo, esaminare il log di controllo. Esaminare inoltre i segmenti e i criteri. Gli utenti sono assegnati a più di un segmento? I segmenti sono assegnati a più di un poliicy? Se necessario, [modificare i segmenti](information-barriers-edit-segments-policies.md.md#edit-a-segment) e/o [modificare i criteri](information-barriers-edit-segments-policies.md.md#edit-a-policy), quindi eseguire di nuovo il cmdlet **Start-InformationBarrierPoliciesApplication** .  |
+    |**Operazione non riuscita**     |Se l'applicazione ha avuto esito negativo, esaminare il log di controllo. Esaminare inoltre i segmenti e i criteri. Gli utenti sono assegnati a più di un segmento? I segmenti sono assegnati a più di un poliicy? Se necessario, [modificare i segmenti](information-barriers-edit-segments-policies.md#edit-a-segment) e/o [modificare i criteri](information-barriers-edit-segments-policies.md#edit-a-policy), quindi eseguire di nuovo il cmdlet **Start-InformationBarrierPoliciesApplication** .  |
     |**In corso**     |Se l'applicazione è ancora in corso, è necessario più tempo per il completamento. Se sono stati diversi giorni, raccogliere i registri di controllo e quindi contattare il supporto tecnico. |
 
 ## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>Problema: non vengono applicati criteri barriera di informazioni
 
 In questo caso, sono stati definiti segmenti, criteri di barriere informativi definiti e si è tentato di applicare tali criteri. Tuttavia, quando si esegue il `Get-InformationBarrierPoliciesApplicationStatus` cmdlet, è possibile vedere che l'applicazione del criterio ha avuto esito negativo.
 
-### <a name="what-to-do"></a>cosa fare
+### <a name="what-to-do"></a>Operazione
 
 Assicurarsi che l'organizzazione non disponga di [Criteri rubrica di Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) sul posto. Tali criteri impediscono l'applicazione dei criteri di barriera delle informazioni.
 

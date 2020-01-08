@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
-ms.openlocfilehash: 3d5dfbcb4410739d8d935b50a8e4ad069145e6a5
-ms.sourcegitcommit: 8ca97fa879ae4ea44468be629d6c32b429efeeec
+ms.openlocfilehash: 11195e588a983bb5617dd3f556734074bc0060b0
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38690642"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970844"
 ---
 # <a name="define-policies-for-information-barriers"></a>Definire i criteri per le barriere informative
 
@@ -43,7 +43,7 @@ Quando si definiscono i criteri per gli ostacoli alle informazioni, è possibile
 
 - L' **applicazione criterio** viene completata dopo la definizione di tutti i criteri di barriera delle informazioni e si è pronti per applicarli all'interno dell'organizzazione.
 
-## <a name="the-work-flow-at-a-glance"></a>Il flusso di lavoro in un colpo d'occhio
+## <a name="the-work-flow-at-a-glance"></a>Flusso di lavoro in breve
 
 |Fase    |Elementi coinvolti  |
 |---------|---------|
@@ -51,7 +51,7 @@ Quando si definiscono i criteri per gli ostacoli alle informazioni, è possibile
 |[Parte 1: segmentare gli utenti nell'organizzazione](#part-1-segment-users)     |-Determinare quali criteri sono necessari<br/>-Creare un elenco di segmenti da definire<br/>-Identificare gli attributi da utilizzare<br/>-Definire i segmenti in termini di filtri per i criteri        |
 |[Parte 2: definire i criteri di barriera delle informazioni](#part-2-define-information-barrier-policies)     |-Definire i criteri (non è ancora applicabile)<br/>-Scegliere tra due tipi (blocca o Consenti) |
 |[Parte 3: applicare i criteri di barriera delle informazioni](#part-3-apply-information-barrier-policies)     |-Impostare i criteri per lo stato attivo<br/>-Eseguire l'applicazione per i criteri<br/>-Visualizzare lo stato dei criteri         |
-|(Se necessario) [Modificare un segmento o un criterio](information-barriers-edit-segments-policies.md.md)    |-Modificare un segmento<br/>-Modificare o rimuovere un criterio<br/>-Rieseguire l'applicazione del criterio<br/>-Visualizzare lo stato dei criteri         |
+|(Se necessario) [Modificare un segmento o un criterio](information-barriers-edit-segments-policies.md)    |-Modificare un segmento<br/>-Modificare o rimuovere un criterio<br/>-Rieseguire l'applicazione del criterio<br/>-Visualizzare lo stato dei criteri         |
 |(Se necessario) [Risoluzione dei problemi](information-barriers-troubleshooting.md)|-Intervenire quando le cose non funzionano come previsto|
 
 ## <a name="prerequisites"></a>Prerequisiti
@@ -260,11 +260,11 @@ Sono disponibili risorse che consentono di gestire i criteri di barriera delle i
 
 - Se si verifica un problema con gli ostacoli alle informazioni, vedere [Troubleshooting Information barriers](information-barriers-troubleshooting.md).
 
-- Per arrestare l'applicazione dei criteri, vedere [arrestare un'istanza di criteri](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
+- Per arrestare l'applicazione dei criteri, vedere [arrestare un'istanza di criteri](information-barriers-edit-segments-policies.md#stop-a-policy-application).
 
-- Per rimuovere un criterio di barriera delle informazioni, vedere [rimuovere un criterio](information-barriers-edit-segments-policies.md.md#remove-a-policy).
+- Per rimuovere un criterio di barriera delle informazioni, vedere [rimuovere un criterio](information-barriers-edit-segments-policies.md#remove-a-policy).
 
-- Per apportare modifiche ai segmenti o ai criteri, vedere [modificare (o rimuovere) i criteri di barriera delle informazioni](information-barriers-edit-segments-policies.md.md).
+- Per apportare modifiche ai segmenti o ai criteri, vedere [modificare (o rimuovere) i criteri di barriera delle informazioni](information-barriers-edit-segments-policies.md).
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Esempio: reparti, segmenti e criteri di contoso
 

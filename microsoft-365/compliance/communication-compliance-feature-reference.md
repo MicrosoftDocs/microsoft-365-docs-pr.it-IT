@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: dc654a877e12eed308b5f8be9fd001ef9093398d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ece7264eba56aa9b389b0dc3555d69e71cc30ad5
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807931"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959614"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni (anteprima)
 
@@ -29,8 +29,8 @@ ms.locfileid: "40807931"
 
 È possibile creare criteri di conformità della comunicazione per le organizzazioni Microsoft 365 nel centro conformità di Microsoft 365. Se si dispone di un'organizzazione di Office 365, verranno [configurati i criteri di supervisione](configure-supervision-policies.md) nel centro sicurezza & conformità di Office 365. I criteri di conformità della comunicazione definiscono le comunicazioni e gli utenti soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che devono soddisfare le comunicazioni e specificano chi deve eseguire le revisioni. Gli utenti inclusi nel gruppo di ruoli **amministratore revisione di supervisione** possono impostare i criteri e tutti coloro a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se necessario, è possibile esportare la cronologia delle modifiche apportate a un criterio a un file con estensione CSV che include anche lo stato degli avvisi in sospeso, degli elementi escalation e degli elementi risolti. I criteri non possono essere rinominati e possono essere eliminati quando non sono più necessari.
 
-> [!NOTE]
-> I criteri di supervisione creati nel centro sicurezza e conformità di Office 365 per le sottoscrizioni di Office 365 non possono eseguire la migrazione a Microsoft 365. Se si esegue la migrazione da un abbonamento a Office 365 a un abbonamento a Microsoft 365, sarà necessario creare nuovi criteri di conformità per la comunicazione per sostituire il criterio di supervisione esistente.
+>[!NOTE]
+>I criteri di supervisione creati nel centro sicurezza e conformità di Office 365 per le sottoscrizioni di Office 365 non possono eseguire la migrazione a Microsoft 365. Se si esegue la migrazione da un abbonamento a Office 365 a un abbonamento a Microsoft 365, sarà necessario creare nuovi criteri di conformità per la comunicazione per sostituire il criterio di supervisione esistente.
 
 ## <a name="policy-templates"></a>Modelli dei criteri
 
@@ -46,8 +46,8 @@ I modelli di criteri sono impostazioni predefinite che è possibile utilizzare p
 
 Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario determinare chi ha bisogno delle proprie comunicazioni. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone da sorvegliare. Alcuni esempi di questi gruppi sono i gruppi di Office 365, le liste di distribuzione basate su Exchange e i canali Microsoft teams. È inoltre possibile escludere utenti o gruppi specifici dall'analisi con un gruppo di esclusione specifico o un elenco di gruppi.
 
-> [!IMPORTANT]
-> Gli utenti interessati dai criteri di conformità della comunicazione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato oppure essere inclusi in un abbonamento a Office 365 Enterprise E5. Se non si dispone di un piano Enterprise E5 esistente e si vuole provare la conformità alla comunicazione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!IMPORTANT]
+>Gli utenti interessati dai criteri di conformità della comunicazione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato oppure essere inclusi in un abbonamento a Office 365 Enterprise E5. Se non si dispone di un piano Enterprise E5 esistente e si vuole provare la conformità alla comunicazione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="reviewers"></a>Revisori
 
@@ -198,8 +198,8 @@ Se si desidera creare più di un semplice messaggio di posta elettronica basato 
 </html>
 ```
 
-> [!NOTE]
-> L'implementazione dell'attributo HTML href nei modelli di notifica di conformità di comunicazione supporta attualmente solo virgolette singole anziché virgolette doppie per i riferimenti URL.
+>[!NOTE]
+>L'implementazione dell'attributo HTML href nei modelli di notifica di conformità di comunicazione supporta attualmente solo virgolette singole anziché virgolette doppie per i riferimenti URL.
 
 ## <a name="filters"></a>Filtri
 
@@ -232,8 +232,8 @@ Per i criteri di conformità della comunicazione, i valori dei criteri di avviso
 | Soglia | 4 attività |
 | Finestra | 60 minuti |
 
-> [!Note]
-> Le impostazioni dei trigger di soglia dei criteri di avviso per le attività supportano un valore minimo di 3 o superiore per i criteri di conformità della comunicazione.
+>[!Note]
+>Le impostazioni dei trigger di soglia dei criteri di avviso per le attività supportano un valore minimo di 3 o superiore per i criteri di conformità della comunicazione.
 
 È possibile modificare le impostazioni predefinite per i trigger per il numero di attività, il periodo per le attività e per gli utenti specifici nei criteri di avviso nella pagina **criteri di avviso** nel centro sicurezza & conformità di Office 365.
 
@@ -259,8 +259,8 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 
 In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Può trattarsi di un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento in cui cambia il criterio di conformità della comunicazione. I criteri di conformità della comunicazione hanno percorsi di controllo incorporati per una preparazione completa per i controlli interni o esterni. Le cronologie di controllo dettagliate di ogni azione di creazione, modifica ed eliminazione vengono acquisite dai criteri di comunicazione per fornire la prova delle procedure di supervisione.
 
-> [!Important]
-> È necessario che il controllo sia abilitato per l'organizzazione prima che vengano registrati gli eventi di conformità della comunicazione. Per abilitare il controllo, vedere [Enable Auditing for your Communication Compliance Policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
+>[!Important]
+>È necessario che il controllo sia abilitato per l'organizzazione prima che vengano registrati gli eventi di conformità della comunicazione. Per abilitare il controllo, vedere [Enable Auditing for your Communication Compliance Policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
 
 Per visualizzare le attività relative ai criteri di conformità della comunicazione, selezionare il controllo **Esporta attività di revisione** nella pagina principale per tutti i criteri. In questo modo viene generato un file di controllo nel formato CSV che contiene le informazioni seguenti:
 

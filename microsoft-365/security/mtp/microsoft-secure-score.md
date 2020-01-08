@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 943c32aa535a319829bd93bde190a5fead12ef08
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 8a471b08f9c7178c86d4f4bd7b7341b3555ffba7
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39910515"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970914"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -60,21 +60,21 @@ Per avere l'autorizzazione per accedere a Microsoft Secure score, è necessario 
 
 Con l'accesso in lettura e in scrittura, è possibile apportare modifiche e interagire direttamente con il Punteggio sicuro. È inoltre possibile assegnare l'accesso in sola lettura ad altri utenti.
 
-* CompanyAdministrator
-* SecurityAdministrator
-* ExchangeAdmin
-* SharePointAdmin
+* Amministratore globale
+* Amministratore della sicurezza
+* Amministratore di Exchange
+* Amministratore di SharePoint
 
 ### <a name="read-only-roles"></a>Ruoli di sola lettura
 
 Con l'accesso in sola lettura, non è possibile modificare lo stato o le note per un'azione di miglioramento, modificare le aree dei punteggi o modificare i confronti personalizzati.
 
-* HelpdeskAdmin
-* UserAccountAdmin
-* ServiceSupportAdmin
-* SecurityReader
-* SecurityOperator
-* GlobalReader
+* Amministratore del supporto tecnico
+* Amministratore utenti
+* Amministratore del servizio
+* Ruolo con autorizzazioni di lettura per la sicurezza
+* Operatore della sicurezza
+* Lettore globale
 
 ### <a name="graph-api"></a>API del grafico
 

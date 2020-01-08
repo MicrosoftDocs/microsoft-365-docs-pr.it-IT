@@ -58,7 +58,7 @@
         - name: Risoluzione dei problemi relativi alle barriere informative
           href: information-barriers-troubleshooting.md
         - name: Modificare i criteri delle barriere informative
-          href: information-barriers-edit-segments-policies.md.md
+          href: information-barriers-edit-segments-policies.md
 - name: Gestire la protezione delle informazioni
   href: protect-information.md
   items:

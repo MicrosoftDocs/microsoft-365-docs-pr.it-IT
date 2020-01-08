@@ -14,20 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: Opt-in e utilizzo del modello di rilevamento dei privilegi avvocato-client per utilizzare il rilevamento basato sull'apprendimento automatico del contenuto con privilegi quando si esaminano i contenuti in un caso avanzato di eDiscovery.
-ms.openlocfilehash: a483941ba5d28527eb509f2e1bbd129434430244
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+description: Utilizzare il modello di rilevamento dei privilegi avvocato-client per utilizzare il rilevamento basato sull'apprendimento automatico del contenuto con privilegi quando si esaminano i contenuti in un caso avanzato di eDiscovery.
+ms.openlocfilehash: bf1b2112c47019c59f955ace21a25b099f91128f
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603780"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970864"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configurare il rilevamento dei privilegi avvocato-client in Advanced eDiscovery
 
 Un aspetto importante e costoso della fase di revisione di un processo di eDiscovery consiste nell'esaminare i documenti per il contenuto con privilegi. Advanced eDiscovery fornisce il rilevamento basato sull'apprendimento automatico del contenuto con privilegi per rendere più efficiente questo processo. Questa funzionalità è denominata *rilevamento dei privilegi di avvocato-client*.
-
-> [!NOTE]
-> Prima di poterlo utilizzare, è necessario optare per il modello di rilevamento dei privilegi avvocato-client. Vedere il [passaggio 1](#step-1-opt-in-to-attorney-client-privilege-detection) per le istruzioni.
 
 ## <a name="how-does-it-work"></a>Come funziona
 
@@ -53,11 +50,11 @@ Queste tre proprietà sono anche ricercabili all'interno di un set di revisione.
 
 ## <a name="set-up-the-attorney-client-privilege-detection-model"></a>Configurare il modello di rilevamento dei privilegi avvocato-client
 
-Per abilitare il modello di rilevamento dei privilegi avvocato-client, è necessario che l'organizzazione Opti e quindi carichi un elenco di avvocati.
+Per abilitare il modello di rilevamento dei privilegi avvocato-client, è necessario che l'organizzazione lo accenda e quindi carichi un elenco di avvocati.
 
-### <a name="step-1-opt-in-to-attorney-client-privilege-detection"></a>Passaggio 1: opt-in per il rilevamento dei privilegi avvocato-client
+### <a name="step-1-turn-on-attorney-client-privilege-detection"></a>Passaggio 1: attivazione del rilevamento dei privilegi di avvocato-client
 
-Come indicato in precedenza, il modello di rilevamento dei privilegi del procuratore-client è in anteprima. Pertanto, una persona all'interno dell'organizzazione eDiscovery Administrator (un membro del sottogruppo amministratore di eDiscovery nel gruppo di ruoli di eDiscovery Manager) deve scegliere di rendere disponibile il modello nei casi di eDiscovery avanzati.
+Una persona che è un amministratore di eDiscovery nell'organizzazione (un membro del sottogruppo di amministratore di eDiscovery nel gruppo di ruoli di gestione di eDiscovery) deve rendere disponibile il modello nei casi di eDiscovery avanzati.
 
 1. Nel centro sicurezza & conformità, accedere a **eDiscovery > Advanced eDiscovery**.
 

@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilizzare le barriere informative per garantire la conformità della comunicazione tramite Microsoft teams all'interno dell'organizzazione.
-ms.openlocfilehash: 31de709e5ac834ad628110088b0dab80efe85950
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 352f101a443b015840b09b82626f7dbee9cfb79e
+ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690549"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40970834"
 ---
 # <a name="information-barriers"></a>Barriere informative
 
@@ -53,7 +53,7 @@ Se le persone coinvolte sono incluse in un criterio barriera informativo per imp
 
 Per ulteriori informazioni sull'esperienza utente con barriere informative, vedere [barriere informative in Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
-## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni necessarie
+## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
 Gli ostacoli alle informazioni stanno per essere implementati e sono inclusi negli abbonamenti, ad esempio:
 
@@ -83,5 +83,4 @@ Per ulteriori informazioni sui ruoli e le autorizzazioni, vedere [Permissions in
 
 - [Definire i criteri per le barriere informative](information-barriers-policies.md)
 
-- [Modificare (o rimuovere) i criteri di barriera delle informazioni](information-barriers-edit-segments-policies.md.md) 
-
+- [Modificare (o rimuovere) i criteri di barriera delle informazioni](information-barriers-edit-segments-policies.md) 

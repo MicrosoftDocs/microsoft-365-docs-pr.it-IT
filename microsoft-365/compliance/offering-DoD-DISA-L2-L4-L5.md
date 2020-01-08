@@ -1,7 +1,7 @@
 ---
 title: Autorizzazione provvisoria del dipartimento della difesa degli Stati Uniti (DoD)
 description: Autorizzazioni provvisorie del Department of Defense (DoD) di Microsoft ricevute ai livelli di impatto 5, 4 e 2.
-keywords: Microsoft 365, conformità, offerte
+keywords: Microsoft 365, conformità, soluzioni
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2fa27680dcc9e0ee7fb495164683a291cc167d59
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805229"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959555"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorizzazione provvisoria del dipartimento della difesa degli Stati Uniti (DoD) ai livelli di impatto 2, 4 e 5
 
@@ -56,7 +56,7 @@ In base alle autorizzazioni di FedRAMP, il supporto di servizi cloud DISA ha con
 
 Impact Level 2 include informazioni non classificate non controllate, ovvero dati autorizzati per il rilascio pubblico. Vengono inoltre riportate altre informazioni non classificate che, pur non essendo considerate "mission critical", richiedono comunque un livello minimo di controllo di accesso. Questa autorizzazione consente ai clienti del governo federale statunitense di distribuire informazioni non sensibili e applicazioni e siti Web di difesa di base sui servizi cloud Microsoft in ambito.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft associati
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Servizi coperti per il livello di impatto 5 di DoD
 
@@ -100,13 +100,13 @@ Inoltre, le offerte di Microsoft al di fuori del limite certificato FedRAMP che 
 ## <a name="resources"></a>Risorse
 
 - [Guida ai requisiti di sicurezza per il cloud computing della difesa (SRG) e altri documenti](https://public.cyber.mil/dccs/dccs-documents/)
-- [Supporto per il servizio del cloud DISA](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
+- [Supporto per il servizio del cloud DISA](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [Protezione delle informazioni non classificate controllate nei sistemi informativi e nelle organizzazioni non federali](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [Framework Cybersecurity NIST](https://www.nist.gov/cyberframework)
 - [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf).

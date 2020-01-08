@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 1ae0b469e2edd6970f3384f2777bb9bdc5cad2a6
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bd9d86a5a5d96e8f7978f5c2482eb127b0379a09
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802669"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959525"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di supervisione in Office 365
 
@@ -68,8 +68,8 @@ I criteri di supervisione possono assistere il monitoraggio delle comunicazioni 
 
 Prima di iniziare a usare la supervisione, è necessario determinare chi ha bisogno delle proprie comunicazioni. Nei criteri, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone da sorvegliare. Alcuni esempi di questi gruppi sono i gruppi di Office 365, le liste di distribuzione basate su Exchange e i canali Microsoft teams. È inoltre possibile escludere utenti o gruppi specifici dalla supervisione con un gruppo controllato o un elenco di gruppi.
 
-> [!IMPORTANT]
-> Gli utenti monitorati dai criteri di supervisione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato o essere inclusi in un abbonamento a Office 365 Enterprise E5. Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+>[!IMPORTANT]
+>Gli utenti monitorati dai criteri di supervisione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato o essere inclusi in un abbonamento a Office 365 Enterprise E5. Se non si dispone di un piano Enterprise E5 esistente e si vuole provare a eseguire la supervisione, è possibile [iscriversi per una versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Revisori
 
@@ -129,11 +129,11 @@ Configure custom keyword Dictionary (o lessici) per fornire una gestione semplic
 
 Monitorare i messaggi di posta elettronica inviati o ricevuti nell'organizzazione per la lingua offensiva. Il modello utilizza una combinazione di apprendimento automatico, intelligenza artificiale e parole chiave per identificare la lingua nei messaggi di posta elettronica suscettibili di violare i criteri di anti-molestia e bullismo. Il modello di lingua offensiva attualmente supporta le parole chiave in inglese e monitora il corpo dei messaggi di posta elettronica.
 
-> [!NOTE]
-> Creare un [criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md) con un [dizionario di parole chiave personalizzato](create-a-keyword-dictionary.md) dei termini bloccati se è necessario eseguire le operazioni seguenti:
+>[!NOTE]
+>Creare un [criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md) con un [dizionario di parole chiave personalizzato](create-a-keyword-dictionary.md) dei termini bloccati se è necessario eseguire le operazioni seguenti:
 >
-> - monitorare le comunicazioni di Microsoft teams nell'organizzazione per la lingua offensiva
-> - Impedisci o blocca la lingua offensiva nelle comunicazioni nell'organizzazione
+>- monitorare le comunicazioni di Microsoft teams nell'organizzazione per la lingua offensiva
+>- Impedisci o blocca la lingua offensiva nelle comunicazioni nell'organizzazione
 
 Tenere presente che il modello non fornisce un elenco esaustivo di lingua offensiva. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare il modello a sua discrezione. Anche se il modello può aiutare l'organizzazione a monitorare il linguaggio offensivo, il modello non è destinato a fornire il solo mezzo di monitoraggio o di indirizzamento di tale lingua da parte dell'organizzazione. La propria organizzazione, non Microsoft, resta responsabile di tutte le decisioni relative al monitoraggio e al blocco del linguaggio offensivo.
 
@@ -235,8 +235,8 @@ Utilizzare i rapporti di supervisione per visualizzare l'attività di revisione 
 2. Accedere al **Dashboard** dei **report** \> o alla **supervisione** per visualizzare il widget report di supervisione per un riepilogo delle attività correnti sui criteri di supervisione.
 3. Selezionare il widget di **supervisione** per aprire la pagina del rapporto dettagliato.
 
-> [!NOTE]
-> Se non si è in grado di accedere alla pagina **report** , verificare di essere membri del gruppo di ruolo revisione di supervisione, come descritto in [rendere la supervisione disponibile nell'organizzazione](configure-supervision-policies.md). L'inclusione in questo gruppo di ruoli consente di creare e gestire i criteri di supervisione ed eseguire il report.
+>[!NOTE]
+>Se non si è in grado di accedere alla pagina **report** , verificare di essere membri del gruppo di ruolo revisione di supervisione, come descritto in [rendere la supervisione disponibile nell'organizzazione](configure-supervision-policies.md). L'inclusione in questo gruppo di ruoli consente di creare e gestire i criteri di supervisione ed eseguire il report.
   
 ### <a name="how-to-use-the-report"></a>Come utilizzare il report
 
@@ -260,8 +260,8 @@ Di seguito viene indicata una scomposizione dei valori visualizzati nella colonn
 | **Competenza** | Numero totale (giornaliero) dei messaggi provenienti da origini dati di Exchange, teams e di terze parti analizzati da un criterio di supervisione |
 | **Risolto** | Il numero totale di messaggi provenienti da origini dati di Exchange, teams e di terze parti classificate come **risolte**|
 
-> [!NOTE]
-> I criteri di supervisione devono essere sottoposto a provisioning prima che vengano visualizzati nei report. Se i criteri vengono eliminati, i dati cronologici vengono ancora visualizzati. Tuttavia, sono indicati come "criteri non esistenti" e la funzione di **esportazione** non è disponibile.
+>[!NOTE]
+>I criteri di supervisione devono essere sottoposto a provisioning prima che vengano visualizzati nei report. Se i criteri vengono eliminati, i dati cronologici vengono ancora visualizzati. Tuttavia, sono indicati come "criteri non esistenti" e la funzione di **esportazione** non è disponibile.
 
 ## <a name="audit"></a>Audit
 
@@ -288,4 +288,3 @@ Oltre alle informazioni fornite nei report e nei registri di supervisione, è an
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 
 Per configurare i criteri di supervisione per l'organizzazione, vedere [configurare i criteri di supervisione](configure-supervision-policies.md).
-
