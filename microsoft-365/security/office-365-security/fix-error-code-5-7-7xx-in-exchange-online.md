@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come risolvere i problemi di posta elettronica per il codice di errore 5.7.7 XX in Exchange Online (tenant bloccato dall'invio di messaggi di posta elettronica).
-ms.openlocfilehash: 69ee2b7d707ae88cca7aa5d4a5f39e8458f6925f
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: cbfff7fc0905206a0302f7e1a458718637d934b7
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959654"
+ms.locfileid: "40962305"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Risolvere i problemi di recapito della posta elettronica per il codice di errore 5.7.7 XX in Exchange Online
 
@@ -53,7 +53,7 @@ Una volta compromesso, ai tenant verrà impedito di inviare la posta elettronica
 
 Se il tenant è bloccato dall'invio di messaggi di posta elettronica, è necessario eseguire diverse operazioni:
 
-1. Verificare che tutti i domini di posta elettronica siano registrati. Per ulteriori informazioni, vedere [aggiungere un dominio a Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) e [gestire i domini accettati in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Verificare che tutti i domini di posta elettronica siano registrati. Per ulteriori informazioni, vedere [aggiungere un dominio a Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) e [gestire i domini accettati in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 2. Cercare [connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inusuali. Gli attori maligni spesso creano nuovi connettori in ingresso nell'organizzazione di Office 365 per inviare posta indesiderata. Per visualizzare i connettori esistenti, vedere [convalidare i connettori in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
@@ -72,7 +72,7 @@ Se il tenant è bloccato dall'invio di messaggi di posta elettronica, è necessa
 
 [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
 
-[Guida alla posta in blocco nella sezione limiti di invio della descrizione del servizio Exchange Online](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
+[Guida alla posta in blocco nella sezione limiti di invio della descrizione del servizio Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)
 
 [Rapporti di mancato recapito della posta elettronica in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
