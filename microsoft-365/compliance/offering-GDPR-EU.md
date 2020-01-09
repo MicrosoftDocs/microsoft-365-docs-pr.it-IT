@@ -11,76 +11,81 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3002d8bca20f7505287420d700aff60fec1af966
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859776"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959604"
 ---
-# <a name="general-data-protection-regulation-gdpr"></a><span data-ttu-id="dd8d7-104">Regolamento generale sulla protezione dei dati (GDPR)</span><span class="sxs-lookup"><span data-stu-id="dd8d7-104">General Data Protection Regulation (GDPR)</span></span>
+# <a name="general-data-protection-regulation-gdpr"></a><span data-ttu-id="e60e0-104">Regolamento generale sulla protezione dei dati (GDPR)</span><span class="sxs-lookup"><span data-stu-id="e60e0-104">General Data Protection Regulation (GDPR)</span></span>
 
-## <a name="learn-about-gdpr-compliance-best-practices"></a><span data-ttu-id="dd8d7-105">Scopri di più sulle procedure consigliate di conformità al GDPR</span><span class="sxs-lookup"><span data-stu-id="dd8d7-105">Learn about GDPR compliance best practices</span></span>
+## <a name="learn-about-gdpr-compliance-best-practices"></a><span data-ttu-id="e60e0-105">Scopri di più sulle procedure consigliate di conformità al GDPR</span><span class="sxs-lookup"><span data-stu-id="e60e0-105">Learn about GDPR compliance best practices</span></span>
 
-<span data-ttu-id="dd8d7-106">Scopri le procedure consigliate di trattamento della privacy e l'approccio adottato da Microsoft in merito alle normative in Journey to GDPR Compliance (Percorso verso la conformità al GDPR).</span><span class="sxs-lookup"><span data-stu-id="dd8d7-106">Discover privacy program best practices and how Microsoft approaches regulations in Journey to GDPR Compliance.</span></span> <span data-ttu-id="dd8d7-107">Scopri in che modo prodotti come Microsoft 365 e le funzionalità di prevenzione della perdita dei dati di Office 365 ti aiutano a raggiungere la conformità.</span><span class="sxs-lookup"><span data-stu-id="dd8d7-107">Learn how Microsoft 365 and Office 365 data loss prevention help you achieve compliance.</span></span>
+<span data-ttu-id="e60e0-106">Scopri le procedure consigliate di trattamento della privacy e l'approccio adottato da Microsoft in merito alle normative in Journey to GDPR Compliance (Percorso verso la conformità al GDPR).</span><span class="sxs-lookup"><span data-stu-id="e60e0-106">Discover privacy program best practices and how Microsoft approaches regulations in Journey to GDPR Compliance.</span></span> <span data-ttu-id="e60e0-107">Scopri in che modo prodotti come Microsoft 365 e le funzionalità di prevenzione della perdita dei dati di Office 365 ti aiutano a raggiungere la conformità.</span><span class="sxs-lookup"><span data-stu-id="e60e0-107">Learn how Microsoft 365 and Office 365 data loss prevention help you achieve compliance.</span></span>
 
-[<span data-ttu-id="dd8d7-108">Scarica l'e-book ora</span><span class="sxs-lookup"><span data-stu-id="dd8d7-108">Download the e-book now</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2048383)
+[<span data-ttu-id="e60e0-108">Scarica l'e-book ora</span><span class="sxs-lookup"><span data-stu-id="e60e0-108">Download the e-book now</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2048383)
 
-## <a name="accountability-documentation"></a><span data-ttu-id="dd8d7-109">Documentazione sull'adeguamento</span><span class="sxs-lookup"><span data-stu-id="dd8d7-109">Accountability documentation</span></span>
+## <a name="accountability-documentation"></a><span data-ttu-id="e60e0-109">Documentazione sull'adeguamento</span><span class="sxs-lookup"><span data-stu-id="e60e0-109">Accountability documentation</span></span>
 
-<span data-ttu-id="dd8d7-110">[Accedi alla documentazione sul GDPR: trova informazioni sulle funzionalità nei servizi Microsoft usati per soddisfare i requisiti del GDPR.</span><span class="sxs-lookup"><span data-stu-id="dd8d7-110">[Access GDPR documentation — Find information about capabilities in Microsoft services used to address requirements of the GDPR.</span></span>
+<span data-ttu-id="e60e0-110">[Accedi alla documentazione sul GDPR: trova informazioni sulle funzionalità nei servizi Microsoft usati per soddisfare i requisiti del GDPR.</span><span class="sxs-lookup"><span data-stu-id="e60e0-110">[Access GDPR documentation — Find information about capabilities in Microsoft services used to address requirements of the GDPR.</span></span>
 
-<span data-ttu-id="dd8d7-111">[Elenco di controllo per la preparazione all'adeguamento: un modo pratico per accedere alle informazioni necessarie per l'applicazione del GDPR quando si usano i servizi Microsoft.</span><span class="sxs-lookup"><span data-stu-id="dd8d7-111">[Accountability readiness checklist — A convenient way to access information you may need to support GDPR when using Microsoft services.</span></span>
+<span data-ttu-id="e60e0-111">[Elenco di controllo per la preparazione all'adeguamento: un modo pratico per accedere alle informazioni necessarie per l'applicazione del GDPR quando si usano i servizi Microsoft.</span><span class="sxs-lookup"><span data-stu-id="e60e0-111">[Accountability readiness checklist — A convenient way to access information you may need to support GDPR when using Microsoft services.</span></span>
 
-## <a name="gdpr-customer-stories"></a><span data-ttu-id="dd8d7-112">Storie dei clienti sul GDPR</span><span class="sxs-lookup"><span data-stu-id="dd8d7-112">GDPR customer stories</span></span>
+## <a name="gdpr-customer-stories"></a><span data-ttu-id="e60e0-112">Storie dei clienti sul GDPR</span><span class="sxs-lookup"><span data-stu-id="e60e0-112">GDPR customer stories</span></span>
 
-### <a name="abrona-prepares-for-gdpr-with-microsoft-365"></a><span data-ttu-id="dd8d7-113">Abrona si prepara per il GDPR con Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="dd8d7-113">Abrona prepares for GDPR with Microsoft 365</span></span>
+### <a name="abrona-prepares-for-gdpr-with-microsoft-365"></a><span data-ttu-id="e60e0-113">Abrona si prepara per il GDPR con Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="e60e0-113">Abrona prepares for GDPR with Microsoft 365</span></span>
 
-<span data-ttu-id="dd8d7-114">Scopri come l'organizzazione sanitaria olandese Abrona sta usando tecnologie Microsoft come Compliance Manager e Azure Information Protection per prepararsi per il GDPR.</span><span class="sxs-lookup"><span data-stu-id="dd8d7-114">See how Dutch healthcare organization Abrona is using Microsoft technologies such as Compliance Manager and Azure Information Protection to prepare for GDPR.</span></span>
+<span data-ttu-id="e60e0-114">Scopri come l'organizzazione sanitaria olandese Abrona sta usando tecnologie Microsoft come Compliance Manager e Azure Information Protection per prepararsi per il GDPR.</span><span class="sxs-lookup"><span data-stu-id="e60e0-114">See how Dutch healthcare organization Abrona is using Microsoft technologies such as Compliance Manager and Azure Information Protection to prepare for GDPR.</span></span>
 
-[<span data-ttu-id="dd8d7-115">Guarda il video</span><span class="sxs-lookup"><span data-stu-id="dd8d7-115">Watch now</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2048705)
+[<span data-ttu-id="e60e0-115">Guarda il video</span><span class="sxs-lookup"><span data-stu-id="e60e0-115">Watch now</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2048705)
 
-### <a name="inail-prepares-for-gdpr-with-microsoft-365"></a><span data-ttu-id="dd8d7-116">INAIL si prepara per il GDPR con Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="dd8d7-116">INAIL prepares for GDPR with Microsoft 365</span></span>
+### <a name="inail-prepares-for-gdpr-with-microsoft-365"></a><span data-ttu-id="e60e0-116">INAIL si prepara per il GDPR con Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="e60e0-116">INAIL prepares for GDPR with Microsoft 365</span></span>
 
-<span data-ttu-id="dd8d7-117">Scopri come il cliente Microsoft INAIL sta usando Azure Information Protection per classificare, etichettare e proteggere i propri dati sensibili durante il processo di preparazione al GDPR.</span><span class="sxs-lookup"><span data-stu-id="dd8d7-117">Learn how Microsoft customer INAIL is using Azure Information Protection to classify, label, and protect their sensitive data as they prepare for GDPR.</span></span>
+<span data-ttu-id="e60e0-117">Scopri come il cliente Microsoft INAIL sta usando Azure Information Protection per classificare, etichettare e proteggere i propri dati sensibili durante il processo di preparazione al GDPR.</span><span class="sxs-lookup"><span data-stu-id="e60e0-117">Learn how Microsoft customer INAIL is using Azure Information Protection to classify, label, and protect their sensitive data as they prepare for GDPR.</span></span>
 
-[<span data-ttu-id="dd8d7-118">Guarda il video</span><span class="sxs-lookup"><span data-stu-id="dd8d7-118">Watch now</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2048894)
+[<span data-ttu-id="e60e0-118">Guarda il video</span><span class="sxs-lookup"><span data-stu-id="e60e0-118">Watch now</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2048894)
 
-## <a name="more-information-on-gdpr"></a><span data-ttu-id="dd8d7-119">Altre informazioni sul GDPR</span><span class="sxs-lookup"><span data-stu-id="dd8d7-119">More information on GDPR</span></span>
+## <a name="more-information-on-gdpr"></a><span data-ttu-id="e60e0-119">Altre informazioni sul GDPR</span><span class="sxs-lookup"><span data-stu-id="e60e0-119">More information on GDPR</span></span>
 
-- <span data-ttu-id="dd8d7-120">Proteggi la privacy individuale: [Guarda il webcast](https://go.microsoft.com/fwlink/p/?linkid=2048711)</span><span class="sxs-lookup"><span data-stu-id="dd8d7-120">Safeguard individual privacy — [Watch the webcast](https://go.microsoft.com/fwlink/p/?linkid=2048711)</span></span>
-- <span data-ttu-id="dd8d7-121">Garantisci la privacy con Microsoft 365: [Altre informazioni](https://go.microsoft.com/fwlink/p/?linkid=2048712)</span><span class="sxs-lookup"><span data-stu-id="dd8d7-121">Enable privacy with Microsoft 365 — [Learn more](https://go.microsoft.com/fwlink/p/?linkid=2048712)</span></span>
-- <span data-ttu-id="dd8d7-122">Governance dei dati per la conformità: [Altre informazioni](https://go.microsoft.com/fwlink/p/?linkid=2052751)</span><span class="sxs-lookup"><span data-stu-id="dd8d7-122">Data governance for compliance — [Learn more](https://go.microsoft.com/fwlink/p/?linkid=2052751)</span></span>
-- <span data-ttu-id="dd8d7-123">Valuta la conformità al GDPR: [Esegui la valutazione](https://go.microsoft.com/fwlink/?linkid=2048712)</span><span class="sxs-lookup"><span data-stu-id="dd8d7-123">Assess your GDPR compliance — [Take the assessment](https://go.microsoft.com/fwlink/?linkid=2048712)</span></span>
+- <span data-ttu-id="e60e0-120">Proteggi la privacy individuale: [Guarda il webcast](https://go.microsoft.com/fwlink/p/?linkid=2048711)</span><span class="sxs-lookup"><span data-stu-id="e60e0-120">Safeguard individual privacy — [Watch the webcast](https://go.microsoft.com/fwlink/p/?linkid=2048711)</span></span>
+- <span data-ttu-id="e60e0-121">Garantisci la privacy con Microsoft 365: [Altre informazioni](https://go.microsoft.com/fwlink/p/?linkid=2048712)</span><span class="sxs-lookup"><span data-stu-id="e60e0-121">Enable privacy with Microsoft 365 — [Learn more](https://go.microsoft.com/fwlink/p/?linkid=2048712)</span></span>
+- <span data-ttu-id="e60e0-122">Governance dei dati per la conformità: [Altre informazioni](https://go.microsoft.com/fwlink/p/?linkid=2052751)</span><span class="sxs-lookup"><span data-stu-id="e60e0-122">Data governance for compliance — [Learn more](https://go.microsoft.com/fwlink/p/?linkid=2052751)</span></span>
+- <span data-ttu-id="e60e0-123">Valuta la conformità al GDPR: [Esegui la valutazione](https://go.microsoft.com/fwlink/?linkid=2048712)</span><span class="sxs-lookup"><span data-stu-id="e60e0-123">Assess your GDPR compliance — [Take the assessment](https://go.microsoft.com/fwlink/?linkid=2048712)</span></span>
 
-## <a name="additional-gdpr-resources"></a><span data-ttu-id="dd8d7-124">Altre risorse sul GDPR</span><span class="sxs-lookup"><span data-stu-id="dd8d7-124">Additional GDPR resources</span></span>
+## <a name="additional-gdpr-resources"></a><span data-ttu-id="e60e0-124">Altre risorse sul GDPR</span><span class="sxs-lookup"><span data-stu-id="e60e0-124">Additional GDPR resources</span></span>
 
-### <a name="gdpr-faq"></a><span data-ttu-id="dd8d7-125">Domande frequenti sul GDPR</span><span class="sxs-lookup"><span data-stu-id="dd8d7-125">GDPR FAQ</span></span>
+### <a name="gdpr-faq"></a><span data-ttu-id="e60e0-125">Domande frequenti sul GDPR</span><span class="sxs-lookup"><span data-stu-id="e60e0-125">GDPR FAQ</span></span>
 
-<span data-ttu-id="dd8d7-126">[Altre informazioni](https://www.microsoft.com/trust-center/privacy/gdpr-faqs) sui nostri impegni contrattuali nei confronti dei clienti e il nostro impegno rispetto alla conformità al GDPR.</span><span class="sxs-lookup"><span data-stu-id="dd8d7-126">[Learn more](https://www.microsoft.com/trust-center/privacy/gdpr-faqs) about our contractual commitments to our customers plus our own commitment to GDPR compliance.</span></span>
+<span data-ttu-id="e60e0-126">[Altre informazioni](https://www.microsoft.com/trust-center/privacy/gdpr-faqs) sui nostri impegni contrattuali nei confronti dei clienti e il nostro impegno rispetto alla conformità al GDPR.</span><span class="sxs-lookup"><span data-stu-id="e60e0-126">[Learn more](https://www.microsoft.com/trust-center/privacy/gdpr-faqs) about our contractual commitments to our customers plus our own commitment to GDPR compliance.</span></span>
 
-### <a name="isoiec-27701-privacy-information-management-system-pims"></a><span data-ttu-id="dd8d7-127">ISO/IEC 27701 Privacy Information Management System (PIMS)</span><span class="sxs-lookup"><span data-stu-id="dd8d7-127">ISO/IEC 27701 Privacy Information Management System (PIMS)</span></span>
+### <a name="isoiec-27701-privacy-information-management-system-pims"></a><span data-ttu-id="e60e0-127">ISO/IEC 27701 Privacy Information Management System (PIMS)</span><span class="sxs-lookup"><span data-stu-id="e60e0-127">ISO/IEC 27701 Privacy Information Management System (PIMS)</span></span>
 
-[<span data-ttu-id="dd8d7-128">Altre informazioni</span><span class="sxs-lookup"><span data-stu-id="dd8d7-128">Learn more</span></span>](offering-iso-27701.md)
+[<span data-ttu-id="e60e0-128">Altre informazioni</span><span class="sxs-lookup"><span data-stu-id="e60e0-128">Learn more</span></span>](offering-iso-27701.md)
 
-### <a name="compliance-manager"></a><span data-ttu-id="dd8d7-129">Compliance Manager</span><span class="sxs-lookup"><span data-stu-id="dd8d7-129">Compliance Manager</span></span>
+### <a name="compliance-manager"></a><span data-ttu-id="e60e0-129">Compliance Manager</span><span class="sxs-lookup"><span data-stu-id="e60e0-129">Compliance Manager</span></span>
 
-<span data-ttu-id="dd8d7-130">Usa [Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) per eseguire una valutazione costante dei rischi, ottieni informazioni utili e semplifica il processo verso la conformità.</span><span class="sxs-lookup"><span data-stu-id="dd8d7-130">Use [Compliance manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) to help perform ongoing risk assessments, get actionable insights, and simplify your compliance processes.</span></span>
+<span data-ttu-id="e60e0-130">Usa [Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) per eseguire una valutazione costante dei rischi, ottieni informazioni utili e semplifica il processo verso la conformità.</span><span class="sxs-lookup"><span data-stu-id="e60e0-130">Use [Compliance manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) to help perform ongoing risk assessments, get actionable insights, and simplify your compliance processes.</span></span>
 
-### <a name="security-and-compliance-center"></a><span data-ttu-id="dd8d7-131">Centro sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="dd8d7-131">Security and Compliance Center</span></span>
+### <a name="microsoft-365-compliance-center"></a><span data-ttu-id="e60e0-131">Centro conformità Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="e60e0-131">Microsoft 365 compliance center</span></span>
 
-<span data-ttu-id="dd8d7-132">Con i [Centri sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-and-compliance) di Microsoft 365 puoi scoprire gli strumenti di controllo per sicurezza e conformità.</span><span class="sxs-lookup"><span data-stu-id="dd8d7-132">The Microsoft 365 [security & compliance centers](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-and-compliance) lets you discover security and compliance controls.</span></span>
+<span data-ttu-id="e60e0-132">Con il [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) puoi scoprire gli strumenti di controllo per la conformità.</span><span class="sxs-lookup"><span data-stu-id="e60e0-132">The Microsoft 365 [security & compliance centers](microsoft-365-compliance-center.md) lets you discover security and compliance controls.</span></span>
 
-### <a name="discover-compliance-solutions"></a><span data-ttu-id="dd8d7-133">Scopri le soluzioni per la conformità</span><span class="sxs-lookup"><span data-stu-id="dd8d7-133">Discover Compliance Solutions</span></span>
+### <a name="microsoft-365-security-center"></a><span data-ttu-id="e60e0-133">Centro sicurezza Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="e60e0-133">Microsoft 365 security center</span></span>
 
-<span data-ttu-id="dd8d7-134">[Altre informazioni](https://products.office.com/business/security-and-compliance/compliance-solutions) sugli strumenti integrati che usano l'intelligence per ridurre i rischi.</span><span class="sxs-lookup"><span data-stu-id="dd8d7-134">[Learn more](https://products.office.com/business/security-and-compliance/compliance-solutions) about integrated tools that use intelligence to reduce risk.</span></span>
+<span data-ttu-id="e60e0-134">Con il [Centro sicurezza Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) puoi scoprire gli strumenti di controllo per la sicurezza.</span><span class="sxs-lookup"><span data-stu-id="e60e0-134">The Microsoft 365 [security & compliance centers](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) lets you discover security and compliance controls.</span></span>
 
-### <a name="safeguard-individual-privacy"></a><span data-ttu-id="dd8d7-135">Proteggi la privacy individuale</span><span class="sxs-lookup"><span data-stu-id="dd8d7-135">Safeguard individual privacy</span></span>
+### <a name="discover-compliance-solutions"></a><span data-ttu-id="e60e0-135">Scopri le soluzioni per la conformità</span><span class="sxs-lookup"><span data-stu-id="e60e0-135">Discover Compliance Solutions</span></span>
 
-<span data-ttu-id="dd8d7-136">Leggi il blog sulla protezione dei diritti alla privacy individuale con Microsoft Cloud per scoprire gli argomenti principali del Regolamento generale sulla protezione dei dati (GDPR) e come Microsoft 365 e Microsoft Cloud contribuiscono a garantire la conformità dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="dd8d7-136">Read Safeguarding individual privacy rights with the Microsoft Cloud to learn about essential General Data Protection Regulation (GDPR) topics including how Microsoft 365 and the Microsoft Cloud help keep your organization compliant.</span></span>
+<span data-ttu-id="e60e0-136">[Altre informazioni](https://products.office.com/business/security-and-compliance/compliance-solutions) sugli strumenti integrati che usano l'intelligence per ridurre i rischi.</span><span class="sxs-lookup"><span data-stu-id="e60e0-136">[Learn more](https://products.office.com/business/security-and-compliance/compliance-solutions) about integrated tools that use intelligence to reduce risk.</span></span>
 
-<span data-ttu-id="dd8d7-137">[Leggi il blog di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2048733).</span><span class="sxs-lookup"><span data-stu-id="dd8d7-137">[Read the Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?linkid=2048733).</span></span>
+### <a name="safeguard-individual-privacy"></a><span data-ttu-id="e60e0-137">Proteggi la privacy individuale</span><span class="sxs-lookup"><span data-stu-id="e60e0-137">Safeguard individual privacy</span></span>
 
-### <a name="microsoft-trust-center"></a><span data-ttu-id="dd8d7-138">Centro protezione Microsoft</span><span class="sxs-lookup"><span data-stu-id="dd8d7-138">Microsoft Trust Center</span></span>
+<span data-ttu-id="e60e0-138">Leggi il blog sulla protezione dei diritti alla privacy individuale con Microsoft Cloud per scoprire gli argomenti principali del Regolamento generale sulla protezione dei dati (GDPR) e come Microsoft 365 e Microsoft Cloud contribuiscono a garantire la conformità dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e60e0-138">Read Safeguarding individual privacy rights with the Microsoft Cloud to learn about essential General Data Protection Regulation (GDPR) topics including how Microsoft 365 and the Microsoft Cloud help keep your organization compliant.</span></span>
 
-[<span data-ttu-id="dd8d7-139">Conformità in Microsoft Trust Center</span><span class="sxs-lookup"><span data-stu-id="dd8d7-139">Compliance on the Microsoft Trust Center</span></span>](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+<span data-ttu-id="e60e0-139">[Leggi il blog di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2048733).</span><span class="sxs-lookup"><span data-stu-id="e60e0-139">[Read the Microsoft 365 blog](https://go.microsoft.com/fwlink/p/?linkid=2048733).</span></span>
+
+### <a name="microsoft-trust-center"></a><span data-ttu-id="e60e0-140">Centro protezione Microsoft</span><span class="sxs-lookup"><span data-stu-id="e60e0-140">Microsoft Trust Center</span></span>
+
+[<span data-ttu-id="e60e0-141">Conformità in Microsoft Trust Center</span><span class="sxs-lookup"><span data-stu-id="e60e0-141">Compliance on the Microsoft Trust Center</span></span>](https://www.microsoft.com/trust-center/compliance/compliance-overview)
