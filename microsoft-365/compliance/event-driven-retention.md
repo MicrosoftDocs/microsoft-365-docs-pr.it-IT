@@ -1,7 +1,7 @@
 ---
 title: Panoramica della conservazione basata su eventi
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di conservazione, si può basare un periodo di conservazione sul momento in cui si verifica un determinato tipo di evento. L'evento attiva l'inizio del periodo di conservazione e a tutto il contenuto in cui è applicata un'etichetta per quel tipo di evento vengono applicate le azioni di conservazione dell'etichetta. La conservazione basata su eventi viene usata generalmente nell'ambito di un processo di gestione dei record.
-ms.openlocfilehash: 08e4f8b5a761cfd80d1b2039c5e2b7a9c1fee981
-ms.sourcegitcommit: 0830be61e21570ee3a2589e35c21f358b52585c0
+ms.openlocfilehash: 109b6104f2a06559beae0148b581854f44e6394a
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "39268533"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989572"
 ---
 # <a name="overview-of-event-driven-retention"></a>Panoramica della conservazione basata su eventi
 
@@ -61,7 +61,7 @@ Per utilizzare correttamente la conservazione basata su eventi, è importante co
     
   - Parole chiave (per gli articoli di Exchange). In questo esempio, l'organizzazione utilizza un codice prodotto nei messaggi contenenti i record del prodotto, pertanto la parola chiave per gli elementi di Exchange è uguale all'ID risorsa per i documenti di SharePoint e OneDrive.
     
-  - La data in cui si è verificato l'evento. Questa data viene utilizzata come inizio del periodo di conservazione. Questa data può essere solo la data attuale o futura, non una passata.
+  - La data in cui si è verificato l'evento. Questa data viene utilizzata come inizio del periodo di conservazione. Questa data può essere la data attuale, una futura o una passata.
     
 4. Dopo aver creato un evento, tale data dell'evento viene sincronizzata con tutto il contenuto che ha un'etichetta di quel tipo di evento e che contiene l'ID risorsa o la parola chiave specificati. Come qualsiasi etichetta, questa sincronizzazione può richiedere fino a 7 giorni. Nel diagramma sopra riportato, il periodo di conservazione di tutti gli elementi cerchiati in rosso è attivato da questo evento. In altre parole, quando questo prodotto raggiunge la fine del suo ciclo di vita, quell'evento attiva il periodo di conservazione per i record di quel prodotto.
     
