@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come risolvere i problemi di posta elettronica per il codice di errore 5.7.7 XX in Exchange Online (tenant bloccato dall'invio di messaggi di posta elettronica).
-ms.openlocfilehash: cbfff7fc0905206a0302f7e1a458718637d934b7
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: ff0e26447a7bcdeccfcc1983af63abea905849e4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962305"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989531"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Risolvere i problemi di recapito della posta elettronica per il codice di errore 5.7.7 XX in Exchange Online
 
@@ -55,18 +55,20 @@ Se il tenant è bloccato dall'invio di messaggi di posta elettronica, è necessa
 
 1. Verificare che tutti i domini di posta elettronica siano registrati. Per ulteriori informazioni, vedere [aggiungere un dominio a Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) e [gestire i domini accettati in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Cercare [connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inusuali. Gli attori maligni spesso creano nuovi connettori in ingresso nell'organizzazione di Office 365 per inviare posta indesiderata. Per visualizzare i connettori esistenti, vedere [convalidare i connettori in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
+2. [Abilitare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) per tutti gli amministratori dell'organizzazione di Office 365.
 
-3. Controllare gli utenti compromessi, come descritto in [risposta a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md).
+3. Verificare che tutti i domini di posta elettronica siano registrati. Per ulteriori informazioni, vedere [aggiungere un dominio a Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) e [gestire i domini accettati in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-4. [Abilitare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) per tutti gli amministratori dell'organizzazione di Office 365.
+4. Cercare [connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inusuali. Gli attori maligni spesso creano nuovi connettori in ingresso nell'organizzazione di Office 365 per inviare posta indesiderata. Per visualizzare i connettori esistenti, vedere [convalidare i connettori in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
-5. Bloccare i server di posta elettronica locali e verificare che non vengano compromessi.
+5. Controllare gli utenti compromessi, come descritto in [risposta a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md).
+
+6. Bloccare i server di posta elettronica locali e verificare che non vengano compromessi.
 
    > [!TIP]
    > Esistono molti fattori, soprattutto se si utilizzano server di terze parti. Indipendentemente da ciò, è necessario verificare che tutti i messaggi di posta elettronica in uscita siano legittimi.
 
-6. Chiamare il supporto tecnico Microsoft e chiedere che il tenant venga sbloccato per inviare di nuovo i domini non registrati. Il codice di errore è utile, ma è necessario dimostrare che l'ambiente è stato protetto e che non è in grado di inviare posta indesiderata. Per aprire un caso di supporto, vedere [contattare il supporto per i prodotti aziendali-Guida per gli amministratori](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+7. Chiamare il supporto tecnico Microsoft e chiedere che il tenant venga sbloccato per inviare di nuovo la posta elettronica. Il codice di errore è utile, ma è necessario dimostrare che l'ambiente è stato protetto e che non è in grado di inviare posta indesiderata. Per aprire un caso di supporto, vedere [contattare il supporto per i prodotti aziendali-Guida per gli amministratori](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 

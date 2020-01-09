@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Utilizzare l'intelligence spoof nel centro &amp; sicurezza e conformità nella pagina impostazioni di protezione da posta indesiderata per esaminare tutti i mittenti che eseguono lo spoofing dei domini che fanno parte dell'organizzazione o lo spoofing di domini esterni. L'intelligence di spoofing è disponibile come parte di Office 365 Enterprise E5 o separatamente come parte di Advanced Threat Protection e Exchange Online Protection.
-ms.openlocfilehash: 67c992dea66d5497d232db3c030cc00dd00db45b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 2f6a68446698747fe31261c7e892c50e6ec5c7f4
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970432"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989491"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Altre informazioni su spoof intelligence
 
@@ -79,9 +79,9 @@ Il criterio di intelligence contraffatto configurato viene sempre applicato da O
 
     ![Schermata che mostra l'accesso alla pagina di protezione da posta indesiderata](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
-4. Nella pagina impostazioni di protezione da **posta indesiderata** nel riquadro destro selezionare la scheda **personalizzato** , quindi scorrere verso il basso e quindi espandere **criteri di intelligence spoof**.
+4. Nella pagina impostazioni di protezione da **posta indesiderata** nel riquadro destro scorrere verso il basso ed espandere **criteri di intelligence spoof**.
 
-    ![Schermata che mostra l'accesso alle impostazioni personalizzate di protezione dalla posta indesiderata](../media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![spoof](https://user-images.githubusercontent.com/41186174/71801032-6228f100-3062-11ea-8461-682b910418c2.png)
 
 5. Per visualizzare l'elenco dei mittenti che falsificano il dominio, fare clic su **Rivedi nuovi mittenti** e selezionare la scheda **domini** .
 

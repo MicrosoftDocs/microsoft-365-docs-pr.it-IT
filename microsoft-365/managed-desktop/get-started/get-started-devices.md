@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ae544592184b9de1b5a515ccd21af74185486d58
-ms.sourcegitcommit: f64397f3b144de36605da8d7116c46010765346d
+ms.openlocfilehash: 59cdb911c46fbb2ad5dd998810297a5502c8fa0c
+ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38697159"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989551"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Preparare gli utenti a usare i dispositivi
 
@@ -23,7 +23,7 @@ Per renderlo ancora più semplice, offriamo una guida che consente di fare una p
 ## <a name="to-prepare-the-guide"></a>Per preparare la guida
 
 1. Scaricare la versione appropriata per la propria organizzazione:
-- [Microsoft Managed Desktop-Guida introduttiva al dispositivo (ottenere la versione di assistenza)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v2.pdf) -utilizzare questa versione se gli utenti finali utilizzeranno il sistema di supporto di Microsoft.
+- [Microsoft Managed Desktop-Guida introduttiva al dispositivo (ottenere la versione di assistenza)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) -utilizzare questa versione se gli utenti finali utilizzeranno il sistema di supporto di Microsoft.
 - [Microsoft Managed Desktop-Guida introduttiva al dispositivo](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) -utilizzare questa versione se gli utenti finali *non* utilizzeranno il sistema di supporto di Microsoft.
 2. Utilizzare qualsiasi applicazione in grado di aprire i file PDF per inserire i dettagli rilevanti per la propria organizzazione:
     - Nome della rete a cui gli utenti devono connettersi per continuare l'installazione (passaggio 3 della guida)
@@ -33,9 +33,9 @@ Per renderlo ancora più semplice, offriamo una guida che consente di fare una p
 
 ## <a name="ready-to-use-guide"></a>"Guida pronta per l'uso"
 
-È inoltre disponibile una versione più generica della Guida per le organizzazioni che non hanno la necessità di personalizzarla. Sono disponibili due versioni, una per le organizzazioni che utilizzano il sistema di supporto di Microsoft (l'app Get Help), una per coloro che forniscono il proprio supporto interno per gli utenti finali.
+È inoltre disponibile una versione più generica della Guida per le organizzazioni che non hanno la necessità di personalizzarla. Sono disponibili due versioni, una per le organizzazioni che utilizzano il sistema di supporto di Microsoft (l'app Get Help), una per coloro che forniscono supporto alternativo per gli utenti. 
 
-- [Microsoft Managed Desktop-Guida introduttiva al dispositivo (ottenere la versione di assistenza-pronto per l'uso)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v2.pdf) -utilizzare questa versione se gli utenti finali utilizzeranno il sistema di supporto di Microsoft.
+- [Microsoft Managed Desktop-Guida introduttiva al dispositivo (ottenere la versione di assistenza-pronto per l'uso)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) -utilizzare questa versione se gli utenti finali utilizzeranno il sistema di supporto di Microsoft.
 - [Microsoft Managed Desktop-iniziare a usare il dispositivo (pronto per l'uso)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) -utilizzare questa versione se gli utenti finali *non* utilizzeranno il sistema di supporto di Microsoft.
 
 A questo punto, si è pronti per passare alla distribuzione delle app:
