@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come risolvere i problemi di posta elettronica per il codice di errore 5.7.7 XX in Exchange Online (tenant bloccato dall'invio di messaggi di posta elettronica).
-ms.openlocfilehash: ff0e26447a7bcdeccfcc1983af63abea905849e4
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: 831efac29bb2e878585f97419dfd9dca67c67409
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989531"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995230"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Risolvere i problemi di recapito della posta elettronica per il codice di errore 5.7.7 XX in Exchange Online
 
@@ -39,7 +39,7 @@ Office 365 consente ai tenant di inoltrare alcuni messaggi tramite Exchange Onli
 
 - Una cassetta postale di Office 365 riceve la posta elettronica da un mittente esterno. L'inoltro della posta è configurato nella cassetta postale di Office 365, quindi il messaggio torna all'indirizzo di posta elettronica esterno dell'utente. Questo scenario è più comune negli ambienti di istruzione in cui gli studenti desiderano utilizzare gli account di posta elettronica personali per visualizzare i messaggi correlati alla scuola.
 
-- Envrionments ibrido che dispongono di server di posta elettronica locali che inviano la posta in uscita tramite EOP.
+- Ambienti ibridi che dispongono di server di posta elettronica locali che inviano la posta in uscita tramite EOP.
 
 ### <a name="problems-with-unregistered-domains"></a>Problemi relativi ai domini non registrati
 
@@ -57,7 +57,7 @@ Se il tenant è bloccato dall'invio di messaggi di posta elettronica, è necessa
 
 2. [Abilitare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) per tutti gli amministratori dell'organizzazione di Office 365.
 
-3. Verificare che tutti i domini di posta elettronica siano registrati. Per ulteriori informazioni, vedere [aggiungere un dominio a Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain) e [gestire i domini accettati in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+3. Verificare che tutti i domini di posta elettronica siano registrati. Per ulteriori informazioni, vedere [aggiungere un dominio a Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) e [gestire i domini accettati in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 4. Cercare [connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)inusuali. Gli attori maligni spesso creano nuovi connettori in ingresso nell'organizzazione di Office 365 per inviare posta indesiderata. Per visualizzare i connettori esistenti, vedere [convalidare i connettori in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 

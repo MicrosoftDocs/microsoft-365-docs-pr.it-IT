@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Panoramica dei passaggi di installazione per Microsoft 365 business.
-ms.openlocfilehash: 4aca617015cceb85ca35c8d8ada7b83d1416d959
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: cab999493bf86ed0adf32521eaf6b3943f107f79
+ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850805"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995251"
 ---
 # <a name="overview-of-setup"></a>Panoramica dell’installazione
 
@@ -36,7 +36,7 @@ Guardare un breve video sulla configurazione aziendale di Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Se è stato trovato utile questo video, vedere la [serie completa di formazione per le piccole imprese e quelle nuove a Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 La maggior parte dei passaggi di installazione può essere effettuata nell'installazione guidata, ma anche le altre opzioni sono elencate.
 
@@ -61,7 +61,7 @@ La maggior parte dei passaggi di installazione può essere effettuata nell'insta
 - **Archiviazione Exchange Online**
 - **Protezione delle informazioni di Azure (PLAN1**)
 
-Per iniziare, vedere [configurare i criteri di sicurezza avanzati](set-up-advanced-security.md).
+Per iniziare, vedere [aumentare la protezione dalle minacce](increase-threat-protection.md) e configurare le funzionalità di [conformità](set-up-compliance.md).
 
 Vedere anche [i primi 10 modi per proteggere l'azienda Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) per una roadmap delle migliori procedure di sicurezza.
 
@@ -91,4 +91,4 @@ Quando si aggiunge un dispositivo Windows 10 ad Azure AD, i criteri impostati pe
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video di formazione aziendale Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
