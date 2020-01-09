@@ -199,23 +199,21 @@
           href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: Filtrare i dati durante l'importazione dei file PST
           href: filter-data-when-importing-pst-files.md
-        - name: Usare il caricamento di rete per importare i file PST crittografati con RMS
-          href: use-network-upload-to-import-rms-encrypted-pst-files.md
         - name: Domande frequenti sull'importazione di file PST
           href: faqimporting-pst-files-to-office-365.md
-        - name: Archiviazione dei dati di terze parti
-          href: archiving-third-party-data.md
-          items:
-            - name: Usare un connettore di esempio per archiviare i dati di Facebook
-              href: archive-facebook-data-with-sample-connector.md
-            - name: Usare un connettore di esempio per archiviare i dati di Twitter
-              href: archive-twitter-data-with-sample-connector.md
-            - name: Configurare un connettore per archiviare i dati di LinkedIn
-              href: archive-linkedin-data.md
-            - name: Configurare un connettore per archiviare i dati di Instant Bloomberg
-              href: archive-instant-bloomberg-data.md
-            - name: Collaborare con un partner per archiviare i dati di terze parti
-              href: work-with-partner-to-archive-third-party-data.md
+    - name: Archiviazione dei dati di terze parti
+      href: archiving-third-party-data.md
+      items:
+        - name: Configurare un connettore per archiviare i dati di Facebook
+          href: archive-facebook-data-with-sample-connector.md
+        - name: Configurare un connettore per archiviare i dati di Twitter
+          href: archive-twitter-data-with-sample-connector.md
+        - name: Configurare un connettore per archiviare i dati di LinkedIn
+          href: archive-linkedin-data.md
+        - name: Configurare un connettore per archiviare i dati di Instant Bloomberg
+          href: archive-instant-bloomberg-data.md
+        - name: Collaborare con un partner per archiviare i dati di terze parti
+          href: work-with-partner-to-archive-third-party-data.md
     - name: Archiviare i dati
       items:
         - name: Abilitare le cassette postali di archiviazione
