@@ -3,7 +3,7 @@ title: Usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 
 ms.author: krowley
 author: cabailey
 manager: laurawi
-ms.date: 12/13/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile applicare etichette a Microsoft Teams, gruppi di Office 365 e siti di SharePoint.
-ms.openlocfilehash: edaa13a21d5eb9069c6e4dce509c13456dec3d89
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4a8cf810ba29c2bb025b50e1529081a1a9ba6843
+ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802879"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40966894"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)
 
@@ -70,7 +70,9 @@ A questo punto si è pronti per abilitare l'anteprima delle etichette di riserva
 
 1. In una sessione di PowerShell, connettersi ad Azure Active Directory con un account aziendale o dell'istituto di istruzione dotato di privilegi di amministratore globale. Ad esempio, eseguire:
     
-        Connect-AzureAD
+    ```powershell
+    Connect-AzureAD
+    ````
     
     Per le istruzioni complete, vedere [Connettersi ad Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#connect-to-azure-ad).
 
@@ -97,7 +99,7 @@ A questo punto si è pronti per abilitare l'anteprima delle etichette di riserva
 
 3. Nella stessa sessione di PowerShell, connettersi al Centro sicurezza e conformità usando un account aziendale o dell'istituto di istruzione con privilegi di amministratore globale. Per istruzioni, vedere [Connettersi a PowerShell per Centro sicurezza e conformità di Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-4. Eseguire i comandi seguenti:
+4. Eseguire i comandi seguenti per sincronizzare le etichette con Azure AD, in modo da poterle usare con i gruppi di Office 365:
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -218,7 +220,36 @@ Per visualizzare e modificare le etichette, usare la pagina Siti attivi nella nu
 
 ## <a name="change-site-and-group-settings-for-a-label"></a>Modificare le impostazioni a livello di sito e gruppo
 
-Come procedura consigliata, non modificare le impostazioni dopo aver applicato un'etichetta a più team, gruppi o siti. Se è necessario apportare modifiche, è necessario usare uno script di Azure AD PowerShell per applicare manualmente gli aggiornamenti. Questo metodo assicura che tutti i gruppi, i siti e i gruppi esistenti applichino la nuova impostazione.
+Ogni volta che si apporta una modifica alle impostazioni di sito e gruppo per un'etichetta, è necessario eseguire i comandi di PowerShell seguenti in modo che i team, i siti e i gruppi possano usare le nuove impostazioni. Come procedura consigliata, non modificare le impostazioni di sito e gruppo per un'etichetta dopo aver applicato l'etichetta a più team, gruppi o siti.
+
+1. Eseguire i comandi seguenti per connettersi a PowerShell per Centro sicurezza e conformità di Office 365 e ottenere l'elenco delle etichette di riservatezza e i relativi GUID.
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
+    Import-PSSession $Session
+    Get-Label |ft Name, Guid
+    ```
+
+2. Prendere nota del GUID dell'etichetta o delle etichette modificate.
+
+3. Ora connettersi a PowerShell per Exchange Online ed eseguire il cmdlet Get-UnifiedGroup, specificando il GUID dell'etichetta al posto del GUID di esempio "e48058ea-98e8-4940-8db0-ba1310fd955e": 
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session
+    $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    ```
+
+4. Per ogni gruppo, riapplicare l'etichetta di riservatezza specificando il GUID dell'etichetta al posto del GUID di esempio "e48058ea-98e8-4940-8db0-ba1310fd955e":
+    
+    ```powershell
+    foreach ($g in $groups)
+    {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    ```
 
 ## <a name="support-for-the-new-sensitivity-labels"></a>Supporto delle nuove etichette di riservatezza
 

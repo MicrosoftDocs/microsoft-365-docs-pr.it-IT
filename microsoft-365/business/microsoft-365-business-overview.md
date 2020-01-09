@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Per ulteriori informazioni, vedere Microsoft 365 business.
-ms.openlocfilehash: 1d4eb62a31cc44ab8dc75964c038f0a3deef4005
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: eafd03be90c128051c8c91bc339af69a0a613136
+ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831434"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40999555"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Panoramica di Microsoft 365 business
 
@@ -42,7 +42,7 @@ Guardare questo video per una breve panoramica di Microsoft 365 business.<br><br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Se è stato trovato utile questo video, vedere la [serie completa di formazione per le piccole imprese e quelle nuove a Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
 
 Microsoft 365 business è destinato a un massimo di 300 licenze. Per ulteriori informazioni, vedere documentazione relativa a [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) .
 
@@ -99,7 +99,7 @@ I **dispositivi sono protetti** da:
 
 - Utilizzo di controlli semplificati per la gestione dei criteri per tutti i PC Windows 10 nella propria azienda, l'applicazione della crittografia BitLocker e l'installazione automatica di aggiornamenti critici di Windows (applicazione dei criteri di Windows Update).
 
-Per visualizzare l'elenco completo delle funzionalità di sicurezza, vedere [Microsoft 365 Business Security features](security-features.md). Dopo aver [configurato Microsoft 365 business](set-up.md), vedere [configurare i criteri di sicurezza avanzati](set-up-advanced-security.md) per iniziare a utilizzare le funzionalità di sicurezza che non sono incluse nell'installazione guidata. Leggere anche i [primi 10 modi per proteggere i piani aziendali di Office 365 e Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) per una buona panoramica su come configurare le protezioni contro i criminali informatici e gli hacker.
+Per visualizzare l'elenco completo delle funzionalità di sicurezza, vedere [Microsoft 365 Business Security features](security-features.md). Dopo aver [configurato Microsoft 365 business](set-up.md), vedere [aumentare la protezione dalle minacce](increase-threat-protection.md) e configurare le funzionalità di [conformità](set-up-compliance.md) per iniziare a utilizzare le funzionalità di sicurezza che non sono incluse nell'installazione guidata. Leggere anche i [primi 10 modi per proteggere i piani aziendali di Office 365 e Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) per una buona panoramica su come configurare le protezioni contro i criminali informatici e gli hacker.
 
 ## <a name="get-microsoft-365-business"></a>Ottenere Microsoft 365 Business
 
@@ -114,4 +114,4 @@ Per visualizzare l'elenco completo delle funzionalità di sicurezza, vedere [Mic
 
 ## <a name="see-also"></a>Vedere anche
 
-[Video di formazione aziendale Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

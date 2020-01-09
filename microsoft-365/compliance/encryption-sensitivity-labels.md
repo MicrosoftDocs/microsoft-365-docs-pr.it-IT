@@ -1,7 +1,7 @@
 ---
 title: Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
-ms.openlocfilehash: aae46b8a6fa18c9af32005bca87ad80638b5b6c0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 55a4096fb802608ac8c0e9777dc20b1026ba6b60
+ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708124"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962315"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -48,10 +48,10 @@ La crittografia utilizza Azure Rights Management (Azure RMS). Azure RMS usa i cr
 
 ## <a name="how-to-turn-on-encryption-for-a-sensitivity-label"></a>Come attivare la crittografia per un'etichetta di riservatezza
 
-Per iniziare, è sufficiente impostare **Crittografia** su **Attiva** e quindi scegliere se:
+Per iniziare, impostare **Crittografia** su **Attiva** e quindi scegliere se:
 
 - **Assegnare le autorizzazioni adesso**, in modo da determinare esattamente quali utenti ottengono le autorizzazioni per il contenuto con tale etichetta. Per ulteriori informazioni, vedere la sezione successiva [Assegnare le autorizzazioni adesso](#assign-permissions-now).
-- **Consentire agli utenti di assegnare le autorizzazioni** quando applicano l'etichetta al contenuto. In questo modo è possibile consentire agli utenti dell'organizzazione una certa flessibilità, che potrebbe essere necessaria per collaborare e svolgere il proprio lavoro. Per ulteriori informazioni, vedere la sezione successiva [Consentire agli utenti di assegnare le autorizzazioni](#let-users-assign-permissions).
+- **Consentire agli utenti di assegnare le autorizzazioni** quando applicano l'etichetta al contenuto. In questo modo è possibile consentire agli utenti dell'organizzazione una certa flessibilità, che potrebbe essere necessaria per collaborare e svolgere il proprio lavoro. Per altre informazioni, vedere la sezione [Consentire agli utenti di assegnare le autorizzazioni](#let-users-assign-permissions) in questa pagina.
 
 Ad esempio, se si ha un'etichetta di riservatezza denominata **Riservatezza elevata** da applicare al contenuto più riservato, è consigliabile decidere ora chi ottiene quali autorizzazioni per il contenuto.
 
@@ -61,7 +61,7 @@ In alternativa, se si ha un'etichetta di riservatezza denominata **Contratti com
 
 ## <a name="assign-permissions-now"></a>Assegnare le autorizzazioni adesso
 
-Utilizzare le opzioni seguenti per controllare chi può accedere ai documenti e ai messaggi di posta elettronica a cui verrà applicata tale etichetta. È possibile:
+Usare le opzioni seguenti per controllare chi può accedere ai documenti e ai messaggi di posta elettronica a cui verrà applicata tale etichetta. È possibile:
 
 1. **Consentire l'accesso al contenuto etichettato solo entro una determinata scadenza**, che può essere una data specifica o un determinato numero di giorni dopo che è stata applicata l'etichetta. Al termine di questo periodo, gli utenti non potranno aprire l'elemento etichettato. Se si specifica una data, sarà rispettato il proprio fuso orario corrente. Si noti che alcuni client di posta elettronica potrebbero non applicare la scadenza e mostrare messaggi di posta elettronica che hanno superato la data di scadenza a causa dei meccanismi di memorizzazione nella cache.
 
@@ -73,7 +73,7 @@ Utilizzare le opzioni seguenti per controllare chi può accedere ai documenti e 
 
 Quando un utente apre un documento o un messaggio di posta elettronica protetto da un'etichetta di riservatezza, gli viene concessa una licenza d'uso di Azure Rights Management per quel contenuto. Questa licenza d'uso è un certificato che contiene i diritti di utilizzo dell'utente per il documento o il messaggio di posta elettronica e la chiave di crittografia usata per crittografare il contenuto. La licenza d'uso contiene anche una data di scadenza (se è stata impostata) e il periodo di validità della licenza d'uso.
 
-Se non è stata impostata alcuna data di scadenza, il periodo di validità predefinito del contratto di licenza con l'utente finale per un tenant è di 30 giorni. Per la durata della licenza d'uso, all'utente non viene richiesto di ripetere l'autenticazione o specificare una nuova autorizzazione per il contenuto. Ciò consente all'utente di continuare ad aprire il documento o il messaggio di posta elettronica protetto senza una connessione Internet. Quando scade il periodo di validità della licenza d'uso, al successivo accesso al documento o al messaggio di posta elettronica protetto, l'utente deve ripetere l'autenticazione o specificare una nuova autorizzazione.
+Se non è stata impostata alcuna data di scadenza, il periodo di validità predefinito del contratto di licenza con l'utente finale per un tenant è di 30 giorni. Per la durata della licenza d'uso, all'utente non viene richiesto di ripetere l'autenticazione o specificare una nuova autorizzazione per il contenuto. Questo processo consente all'utente di continuare ad aprire il documento o il messaggio di posta elettronica protetto senza una connessione Internet. Quando scade il periodo di validità della licenza d'uso, al successivo accesso al documento o al messaggio di posta elettronica protetto, l'utente deve ripetere l'autenticazione o specificare una nuova autorizzazione.
 
 Oltre al nuovo processo di autenticazione, vengono valutati nuovamente il gruppo a cui appartiene l'utente e i relativi criteri. Questo significa che, se dopo l'ultimo accesso, sono cambiati i criteri o il gruppo di appartenenza dell'utente, anche le autorizzazioni per accedere allo stesso documento o messaggio di posta elettronica potrebbero essere cambiate.
 
@@ -113,9 +113,9 @@ Per ulteriori informazioni sulle singole specifiche autorizzazioni, vedere [Diri
 
 ![Opzioni per scegliere autorizzazioni preimpostate o personalizzate](media/Sensitivity-Choose-permissions-settings.png)
 
-Si noti che la stessa etichetta può concedere autorizzazioni diverse a vari utenti. Ad esempio, una singola etichetta può assegnare alcuni utenti come Revisore e un altro utente come Coautore, come mostrato di seguito.
+Si noti che la stessa etichetta può concedere autorizzazioni diverse a vari utenti. Ad esempio, una singola etichetta può assegnare alcuni utenti come Revisore e un altro utente come Coautore, come mostrato nello screenshot seguente.
 
-Per eseguire questa operazione, aggiungere utenti o gruppi, assegnargli le autorizzazioni e salvare le impostazioni. Quindi ripetere questi passaggi, aggiungendo utenti e assegnando loro le autorizzazioni, salvando le impostazioni ogni volta. È possibile farlo con la frequenza desiderata, in modo da poter definire autorizzazioni diverse per utenti diversi.
+Per eseguire questa operazione, aggiungere utenti o gruppi, assegnargli le autorizzazioni e salvare le impostazioni. Quindi ripetere questi passaggi, aggiungendo utenti e assegnando loro le autorizzazioni, salvando le impostazioni ogni volta. È possibile ripetere questa configurazione con la frequenza desiderata, in modo da poter definire autorizzazioni diverse per utenti diversi.
 
 ![Utenti diversi con autorizzazioni diverse](media/Sensitivity-Multiple-users-permissions.png)
 
@@ -147,7 +147,7 @@ Queste opzioni determinano le app in cui verrà visualizzata l'etichetta di rise
 Un'etichetta di riservatezza che consente agli utenti di assegnare autorizzazioni può essere applicata al contenuto solo manualmente dagli utenti. Non può essere applicata automaticamente o usata come etichetta consigliata.
 
 > [!NOTE]
-> Consentire agli utenti di assegnare autorizzazioni richiede un abbonamento ad Azure Information Protection. Per usare questa funzionalità in Word, PowerPoint ed Excel, è necessario scaricare e installare il [client di etichettatura unificato di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Stiamo lavorando al supporto nativo di questa funzionalità nelle app di Office, in modo che il client di Azure Information Protection non sia necessario. Inoltre, il client viene eseguito solo in Windows, quindi questa caratteristica non è ancora supportata in Mac, iOS, Android o Office per il Web.
+> Consentire agli utenti di assegnare autorizzazioni richiede un abbonamento ad Azure Information Protection. Per usare questa funzionalità in Word, PowerPoint ed Excel, è necessario scaricare e installare il [client di etichettatura unificato di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Stiamo lavorando al supporto nativo di questa funzionalità nelle app di Office, in modo che il client di Azure Information Protection non sia necessario. Inoltre, questo client viene eseguito solo in Windows, quindi questa funzionalità non è ancora supportata in Mac, iOS, Android o in Office per il Web.
 
 ![Impostazioni di crittografia per le autorizzazioni definite dall'utente](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
@@ -215,5 +215,5 @@ Ad esempio, gli utenti non possono visualizzare i messaggi di posta elettronica 
 
 Per assicurarsi che Exchange possa supportare questi ulteriori scenari, consultare gli articoli seguenti:
 
-- Per Exchange Online, vedere le istruzioni per [Exchange Online: configurazione di IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchange-online-irm-configuration).
+- Per Exchange Online, vedere le istruzioni per [Exchange Online: configurazione di IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
 - Per Exchange locale, è necessario distribuire il [connettore RMS e configurare i server Exchange](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 

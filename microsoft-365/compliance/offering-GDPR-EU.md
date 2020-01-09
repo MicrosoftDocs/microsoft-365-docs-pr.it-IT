@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 3002d8bca20f7505287420d700aff60fec1af966
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
+ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859776"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40959604"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>Regolamento generale sulla protezione dei dati (GDPR)
 
@@ -67,9 +68,13 @@ Scopri come il cliente Microsoft INAIL sta usando Azure Information Protection p
 
 Usa [Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) per eseguire una valutazione costante dei rischi, ottieni informazioni utili e semplifica il processo verso la conformità.
 
-### <a name="security-and-compliance-center"></a>Centro sicurezza e conformità
+### <a name="microsoft-365-compliance-center"></a>Centro conformità Microsoft 365
 
-Con i [Centri sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-and-compliance) di Microsoft 365 puoi scoprire gli strumenti di controllo per sicurezza e conformità.
+Con il [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) puoi scoprire gli strumenti di controllo per la conformità.
+
+### <a name="microsoft-365-security-center"></a>Centro sicurezza Microsoft 365
+
+Con il [Centro sicurezza Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center) puoi scoprire gli strumenti di controllo per la sicurezza.
 
 ### <a name="discover-compliance-solutions"></a>Scopri le soluzioni per la conformità
 
