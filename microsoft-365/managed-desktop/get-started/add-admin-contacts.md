@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d34d7082150b4131634fb695ce6664ded50e6f9d
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 9233118a2112aae33a5b784b6495709cbd3345f5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823838"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004921"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione
 
@@ -25,7 +25,7 @@ Esistono diversi modi in cui il servizio Microsoft Managed Desktop comunica con 
 Il portale di amministrazione di Microsoft Managed Desktop richiede che gli utenti che accedono al portale dispongano di uno di questi ruoli di Azure Active Directory (AD):
 - Amministratore globale
 - Amministratore del servizio Intune
-- Amministratore fatturazione
+- Ruolo con autorizzazioni di lettura globali
 - Amministratore del supporto tecnico
 
 È necessario che l'amministratore globale sia quello che deve registrare la propria organizzazione in Microsoft Managed Desktop. Tutti e cinque i ruoli dispongono dello stesso accesso all'interno del portale di amministrazione per avviare e visualizzare le attività. Per ulteriori informazioni sull'assegnazione di questi ruoli in Azure AD, vedere [autorizzazioni per il ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). 
