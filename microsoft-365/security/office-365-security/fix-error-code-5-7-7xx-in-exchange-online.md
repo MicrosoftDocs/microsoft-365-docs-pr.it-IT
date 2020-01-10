@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come risolvere i problemi di posta elettronica per il codice di errore 5.7.7 XX in Exchange Online (tenant bloccato dall'invio di messaggi di posta elettronica).
-ms.openlocfilehash: 831efac29bb2e878585f97419dfd9dca67c67409
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: 4e82df78cfb83865142defb14cec0841ab29ba95
+ms.sourcegitcommit: 55cb11c2475f40d0f1c64cf45446bf383d7d5f86
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995230"
+ms.locfileid: "41002976"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Risolvere i problemi di recapito della posta elettronica per il codice di errore 5.7.7 XX in Exchange Online
 
@@ -49,11 +49,11 @@ Una volta compromesso, ai tenant verrà impedito di inviare la posta elettronica
 
 `550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains`
 
-## <a name="how-to-unblocking-tenant-in-order-to-send-again"></a>Come sbloccare tenant per inviare di nuovo
+## <a name="unblocking-tenant-in-order-to-send-again"></a>Sblocco del tenant per l'invio di nuovo
 
 Se il tenant è bloccato dall'invio di messaggi di posta elettronica, è necessario eseguire diverse operazioni:
 
-1. Verificare che tutti i domini di posta elettronica siano registrati. Per ulteriori informazioni, vedere [aggiungere un dominio a Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) e [gestire i domini accettati in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Modificare la password per gli account di amministratore. Se un tenant è bloccato dall'invio, è probabile che un account di amministratore sia stato compromesso. La modifica delle password è il primo passaggio per impedire all'aggressore di fare più danni.
 
 2. [Abilitare l'AMF](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) per tutti gli amministratori dell'organizzazione di Office 365.
 
@@ -66,7 +66,7 @@ Se il tenant è bloccato dall'invio di messaggi di posta elettronica, è necessa
 6. Bloccare i server di posta elettronica locali e verificare che non vengano compromessi.
 
    > [!TIP]
-   > Esistono molti fattori, soprattutto se si utilizzano server di terze parti. Indipendentemente da ciò, è necessario verificare che tutti i messaggi di posta elettronica in uscita siano legittimi.
+   > Esistono molti fattori, soprattutto se si utilizzano server di terze parti. Indipendentemente da ciò, è necessario verificare che la posta in uscita non includa posta indesiderata.
 
 7. Chiamare il supporto tecnico Microsoft e chiedere che il tenant venga sbloccato per inviare di nuovo la posta elettronica. Il codice di errore è utile, ma è necessario dimostrare che l'ambiente è stato protetto e che non è in grado di inviare posta indesiderata. Per aprire un caso di supporto, vedere [contattare il supporto per i prodotti aziendali-Guida per gli amministratori](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
