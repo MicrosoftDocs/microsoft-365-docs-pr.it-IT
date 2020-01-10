@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5ce06f582966f7209d4b539f9de41e8045b98519
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 0f54ee771f4358c5c99c3338366eb277013c15e3
+ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970924"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41012179"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (anteprima)
 
@@ -148,6 +148,23 @@ Nella scheda **tendenze & metriche** sono disponibili diversi grafici e grafici 
 ## <a name="risk-awareness"></a>Sensibilizzazione ai rischi
 
 Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in base alle configurazioni di sistema, al comportamento degli utenti e ad altre misure relative alla sicurezza. non si tratta di una misura assoluta del modo in cui il sistema o i dati verranno violati. Piuttosto, rappresenta la misura in cui sono stati adottati controlli di sicurezza nell'ambiente Microsoft, che possono contribuire a compensare il rischio di essere violati. Nessun servizio online è completamente immune dalle violazioni della sicurezza e il Punteggio sicuro non deve essere interpretato come garanzia contro la violazione della sicurezza in alcun modo.
+
+## <a name="whats-coming"></a>Cosa succede?
+
+### <a name="mfa-improvement-action-updates"></a>Aggiornamenti dell'azione per il miglioramento dell'AMF
+
+Per riflettere la necessità per le aziende di garantire la massima sicurezza durante l'applicazione di criteri che funzionano con le loro attività, Microsoft Secure Score rimuove tre azioni di miglioramento incentrate sull'autenticazione a più fattori e l'aggiunta di due.
+
+I tre che verranno rimossi:
+- Registrare tutti gli utenti per l'autenticazione a più fattori
+- Richiedi l'AMF per tutti gli utenti
+- Richiedere l'autenticazione master per i ruoli con privilegi di Azure AD
+
+Nuove azioni di miglioramento:
+- Garantire che tutti gli utenti possano completare l'autenticazione a più fattori per l'accesso sicuro
+- Richiedere l'AMF per i ruoli amministrativi
+
+ Queste nuove azioni di miglioramento richiedono la registrazione di utenti o amministratori per l'autenticazione a più fattori (AMF) all'interno della directory e la definizione del set di criteri appropriato che soddisfano le esigenze dell'organizzazione. L'obiettivo principale è la flessibilità garantendo che tutti gli utenti e gli amministratori siano in grado di eseguire l'autenticazione con più fattori o richieste di verifica dell'identità basata sui rischi. Che può assumere la forma di impostazione dei valori predefiniti di sicurezza che consentono a Microsoft di decidere quando contestare gli utenti per l'AMF o che dispongono di più criteri che applicano decisioni a livello di ambito.
 
 ## <a name="whats-new"></a>Novità 
 
