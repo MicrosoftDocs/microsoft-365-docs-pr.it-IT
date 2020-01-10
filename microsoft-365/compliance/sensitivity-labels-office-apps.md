@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come gli utenti lavorano con le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
-ms.openlocfilehash: 092c8510acac5cafa6417f93eae19731db5df270
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 32ad0abf61de5a64aac6914532f59bb5602e9d83
+ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970954"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40999590"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>Etichette di riservatezza nelle app di Office
 
@@ -50,11 +50,13 @@ Per utilizzare l'etichetta di riservatezza automatica o consigliata, gli utenti 
 
 - [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
-## <a name="support-for-sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Supporto per le funzionalità di etichetta di riservatezza in Word, Excel e PowerPoint
+## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Supporto per le funzionalità delle etichette di riservatezza nelle app
 
-Per ogni funzionalità, nella tabella seguente sono elencate le versioni minime necessarie per l'app per supportare le etichette di riservatezza utilizzando l'etichettatura incorporata.
+Per ogni funzionalità, nelle tabelle seguenti sono elencate le versioni minime necessarie per l'app per supportare le etichette di riservatezza utilizzando l'etichettatura incorporata. Le nuove versioni vengono rese disponibili in tempi diversi per i diversi canali di aggiornamento. Per ulteriori informazioni, tra cui la configurazione del canale di aggiornamento in modo che sia possibile testare una nuova funzionalità di etichettatura interessata, vedere [Overview of Update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
 
 Altre funzionalità sono disponibili quando si installa il client di etichettatura unificata di Azure Information Protection, che viene eseguito solo nei computer Windows. Per questi dettagli, vedere [confrontare i client di etichettatura per i computer Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
+
+### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Funzionalità delle etichette di riservatezza in Word, Excel e PowerPoint
 
 |Funzionalità                                                                                                        |Desktop di Windows |Desktop Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
@@ -72,11 +74,7 @@ Altre funzionalità sono disponibili quando si installa il client di etichettatu
 |Supporto per il [salvataggio automatico](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) e la [CoAuthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sui documenti etichettati e protetti | In Revisione | In Revisione | In Revisione | In Revisione | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
-## <a name="support-for-sensitivity-label-capabilities-in-outlook"></a>Supporto per le funzionalità di etichetta di riservatezza in Outlook
-
-Per ogni funzionalità, nella tabella seguente sono elencate le versioni minime necessarie per tale applicazione.
-
-Altre funzionalità sono disponibili quando si installa il client di etichettatura unificata di Azure Information Protection, che viene eseguito solo nei computer Windows. Per questi dettagli, vedere [confrontare i client di etichettatura per i computer Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
+### <a name="sensitivity-label-capabilities-in-outlook"></a>Funzionalità delle etichette di riservatezza in Outlook
 
 |Funzionalità                                                                                                        |Desktop di Outlook su Windows |Desktop di Outlook su Mac  |Outlook su iOS |Outlook su Android |Outlook sul Web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|

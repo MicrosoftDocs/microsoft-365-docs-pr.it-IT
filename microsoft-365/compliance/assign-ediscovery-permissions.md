@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Assegnare le autorizzazioni necessarie per eseguire le attività relative a eDiscovery utilizzando il Centro sicurezza & Compliance.
-ms.openlocfilehash: 434fe9f4876bb29df98de5575611069b0afc6860
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+ms.openlocfilehash: 548af12811287dce3461e5ce7d5f1ffa905eef73
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854041"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004841"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance
 
@@ -43,7 +43,7 @@ Il gruppo di ruoli principale di eDiscovery nel centro sicurezza & conformità �
 > [!NOTE]
 > Per analizzare i dati di un utente tramite Advanced eDiscovery, all'utente (custode dei dati) deve essere assegnata una licenza di Office 365 E5. In alternativa, agli utenti con una licenza di Office 365 E1 o E3 può essere assegnata una licenza di eDiscovery autonoma avanzata. Gli amministratori e i responsabili della conformità assegnati ai casi e utilizzano Advanced eDiscovery per analizzare i dati non hanno bisogno di una licenza E5.  
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - È necessario essere membri del gruppo di ruoli Gestione organizzazione o essere assegnati al ruolo di gestione ruolo per assegnare le autorizzazioni di eDiscovery nel centro sicurezza & conformità.
     
@@ -128,7 +128,7 @@ Questo ruolo consente agli utenti di accedere ai dati del caso in [Office 365 Ad
 
 ### <a name="rms-decrypt"></a>Decrittografia RMS
 
-Questo ruolo consente agli utenti di decrittografare i messaggi di posta elettronica crittografati con RMS durante l'esportazione dei risultati di ricerca o la preparazione dei risultati di ricerca per l'analisi Per ulteriori informazioni sulla decrittografia dei risultati di ricerca durante l'esportazione, vedere [Export content search results](export-search-results.md).
+Questo ruolo consente agli utenti di decrittografare i messaggi di posta elettronica protetti da diritti quando si esportano i risultati della ricerca o la preparazione dei risultati di ricerca per analisi Per ulteriori informazioni sulla decrittografia dei risultati di ricerca durante l'esportazione, vedere [Export content search results](export-search-results.md).
 
 ### <a name="search-and-purge"></a>Ricerca ed eliminazione
 

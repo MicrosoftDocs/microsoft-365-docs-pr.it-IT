@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b37ff9bf96ff641750acc9ac47ef9c27b566651c
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 140ccc3984dc09a794d822eb3ff02f139d87fcd5
+ms.sourcegitcommit: ef658406da9d081e5e7a5f3aac8290c2f03f7aff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202347"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41004821"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Eseguire query sui dati in un insieme da rivedere
 
@@ -27,7 +27,7 @@ Nella maggior parte dei casi, sarà utile essere in grado di approfondire i dati
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>Creazione e esecuzione di una query in un set di Revisione
 
-Per creare ed eseguire una query sui documenti in un set di revisione, fare clic su **nuova query** nel set di revisione. Dopo aver denominato la query e aver definito le condizioni, fare clic su **Salva** per salvare ed eseguire la query. Per eseguire una query salvata in precedenza, fare clic su una query salvata. 
+Per creare ed eseguire una query sui documenti in un set di revisione, fare clic su **nuova query** nel set di revisione. Dopo aver denominato la query e aver definito le condizioni, fare clic su **Salva** per salvare ed eseguire la query. Per eseguire una query salvata in precedenza, fare clic su una query salvata.
 
 ![Esaminare le query di set](media/AeDReviewSetQueries.png)
 
