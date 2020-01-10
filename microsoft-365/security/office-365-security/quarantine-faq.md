@@ -3,7 +3,7 @@ title: Domande frequenti sulla quarantena
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 06/16/2017
+ms.date: ''
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla quarantena in hosting.
-ms.openlocfilehash: f8d7d0820685671c4cbe9ae7671058cc60d8e637
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: d275a919e58d2a908fb10d4dff412ebe0859662f
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971554"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021842"
 ---
 # <a name="quarantine-faq"></a>Domande frequenti sulla quarantena
 
@@ -27,7 +27,7 @@ In questo argomento vengono riportate le domande frequenti e le risposte sulla q
 
  **D. come è la gestione dei messaggi in quarantena per i malware?**
 
-È necessario utilizzare il Centro sicurezza &amp; e conformità per visualizzare e gestire i messaggi inviati alla quarantena perché contengono malware. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
+È necessario utilizzare il Centro sicurezza & conformità per visualizzare e utilizzare i messaggi inviati alla quarantena perché contengono malware. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 
  **D. Come configurare il servizio per inviare messaggi di posta indesiderata in quarantena?**
 
@@ -35,19 +35,19 @@ R. Per impostazione predefinita, i messaggi sottoposti a filtro contenuto vengon
 
  **D. Il servizio consente ad amministratori e utenti finali di gestire i messaggi di posta indesiderata messi in quarantena?**
 
-R. Gli amministratori possono cercare i e visualizzare i dettagli sui messaggi di posta elettronica in quarantena nell'interfaccia di amministrazione di Exchange (EAC). Dopo aver individuato il messaggio, è possibile rilasciarlo a specifici utenti e segnalarlo come falso positivo (non indesiderato) al team di analisi di posta indesiderata di Microsoft. Per ulteriori informazioni, vedere [Individuazione e rilascio dei messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md).
+R. In qualità di amministratore, è possibile cercare e visualizzare i dettagli su tutti i messaggi di posta elettronica in quarantena nel centro sicurezza e conformità (SCC). Dopo aver individuato il messaggio, è possibile rilasciarlo a specifici utenti e segnalarlo come falso positivo (non indesiderato) al team di analisi di posta indesiderata di Microsoft. Per ulteriori informazioni, vedere [gestire i messaggi e i file in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md).
 
 Gli utenti finali possono gestire i propri messaggi messi in quarantena tramite gli strumenti indicati di seguito:
 
 - Interfaccia utente per la quarantena della posta indesiderata. Per ulteriori informazioni, vedere [trovare e rilasciare i messaggi in quarantena come utente in Office 365](find-and-release-quarantined-messages-as-a-user.md).
 
- **D. Come è possibile garantire l'accesso alla quarantena della posta indesiderata per gli utenti finali?**
+ **D. come si concede l'accesso alla quarantena per gli utenti finali?**
 
 R. Per accedere alla quarantena della posta indesiderata dell'utente finale, gli utenti finali devono disporre di un ID utente e una password di Office 365 validi. I clienti di EOP che proteggono le cassette postali locali devono essere utenti di posta elettronica validi creati tramite la sincronizzazione della directory o EAC. Per ulteriori informazioni sulla gestione degli utenti, gli amministratori di EOP possono fare riferimento per [gestire gli utenti di posta elettronica in EOP](manage-mail-users-in-eop.md). Per i clienti autonomi di EOP, si consiglia di utilizzare la sincronizzazione della directory e di abilitare il blocco Edge basato su directory. Per ulteriori informazioni, vedere [use directory based Edge Blocking to Reject messages sent to invalid recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
- **D. Un elemento diverso dalla posta indesiderata può essere inviato in quarantena?**
+ **D. quali messaggi possono essere consentiti per l'accesso degli utenti in quarantena?**
 
-R. Sì. I messaggi che corrispondono a una regola del flusso di posta (nota anche come regola di trasporto) insieme ai messaggi identificati come phishing possono essere inviati anche alla quarantena dell'amministratore, se questa è l'azione configurata. La quarantena dell'utente finale è riservata esclusivamente alla posta indesiderata.
+R. Gli utenti finali possono accedere ai propri phishing, alla posta indesiderata e ai messaggi in blocco. Gli utenti finali non possono accedere al proprio malware, ad alta sicurezza phishing, o ai messaggi che corrispondono a una regola del flusso di posta (nota anche come regola di trasporto). Questi sono disponibili solo nella quarantena di amministratore. 
 
  **Q. Per quanto tempo i messaggi vengono tenuti in quarantena?**
 

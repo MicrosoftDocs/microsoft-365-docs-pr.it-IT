@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'In qualità di amministratore, è possibile visualizzare, rilasciare e segnalare messaggi in quarantena falsi positivi in Office 365. È possibile configurare i criteri in modo che Office 365 filtri i messaggi e li invii in quarantena per diversi motivi: perché sono stati identificati come posta indesiderata, in blocco, phishing, malware o perché hanno trovato una regola del flusso di posta. '
-ms.openlocfilehash: 615d88f63f738ca443b9ff377bb08fdaa97fe2dc
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970934"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021862"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestire i messaggi e i file in quarantena come amministratore in Office 365
 
@@ -31,26 +31,15 @@ Per impostazione predefinita, Office 365 invia i messaggi di phishing e i messag
 
 Per utilizzare i messaggi in quarantena o i file in quarantena, è necessario disporre delle autorizzazioni di amministratore globale (GA) in Office 365 o essere membri di uno o più gruppi di ruoli Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) .
 
-> [!IMPORTANT]
-> Per impostazione predefinita, i messaggi di posta indesiderata, di massa e di phishing vengono mantenuti in quarantena per 30 giorni. I messaggi in quarantena perché corrispondono a una regola del flusso di posta vengono mantenuti in quarantena per 7 giorni. I messaggi di malware vengono mantenuti in quarantena per 15 giorni. È possibile personalizzare il tempo di quarantena della posta indesiderata nelle impostazioni di protezione da posta indesiderata nel centro sicurezza & conformità. I messaggi eliminati dalla quarantena in Office 365 non possono essere recuperati. Se lo si desidera, è possibile modificare il periodo di conservazione per i messaggi in quarantena nei criteri di filtro della protezione da posta indesiderata. Per ulteriori informazioni, vedere [impostazione del periodo di conservazione della quarantena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime).
+## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>Quali autorizzazioni sono necessarie per accedere alla quarantena dell'amministratore?
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+Le autorizzazioni per la gestione della quarantena sono controllate dall'appartenenza ai gruppi di ruoli **Security & Compliance Center* . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the Office 365 security & Compliance Center](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-Anche se la quarantena si trova nel centro sicurezza & Compliance, le autorizzazioni per la gestione dei messaggi in quarantena sono controllate dall'appartenenza ai gruppi di ruoli di **Exchange Online** . Per ulteriori informazioni sui gruppi di ruoli in Exchange Online, vedere [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+I gruppi di ruoli di sicurezza & conformità che forniscono le autorizzazioni per la gestione della quarantena sono i seguenti:
 
-I gruppi di ruoli di Exchange Online che forniscono le autorizzazioni per la gestione dei file di quarantena sono i seguenti:
-
-- **Gestione dell'organizzazione**: gli amministratori globali sono membri automatici di questo gruppo.
+- **Amministratore della quarantena**
 
 - **Amministratore della sicurezza**
-
-- **Gestione di Hygiene**
-
-I gruppi di ruoli di Exchange Online che forniscono le autorizzazioni per la visualizzazione dei file di quarantena sono i seguenti:
-
-- **View-Only Organization Management**
-
-- **Ruolo con autorizzazioni di lettura per la sicurezza**
 
 ## <a name="view-your-organizations-quarantined-messages"></a>Visualizzare i messaggi in quarantena dell'organizzazione
 
