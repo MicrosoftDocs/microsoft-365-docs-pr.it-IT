@@ -1,9 +1,9 @@
 ---
-title: Visualizzare i report per Office 365 Advanced Threat Protection
+title: Visualizzare i report per Office 365 Advanced Threat Protection, i report di malware, i report di phishing, gli account compromessi, lo stato di protezione URL, i report di minacce
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 05/21/2019
+ms.date: 01/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come trovare e utilizzare i report per Office 365 Advanced Threat Protection nel centro &amp; sicurezza e conformità.
-ms.openlocfilehash: 9ad177e96184913be61e098a1aafa294a123199b
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+description: Trovare e utilizzare i report per Office 365 Advanced Threat Protection nel centro &amp; sicurezza e conformità.
+ms.openlocfilehash: a03fc9e14017255faf8c1c7f58cf2baa65823962
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866408"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022389"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per Office 365 Advanced Threat Protection
 
@@ -41,7 +41,27 @@ Leggere questo articolo per ottenere una panoramica dei rapporti ATP e su come u
 
 Il rapporto **sullo stato della protezione dalle minacce** è una singola visualizzazione che raggruppa informazioni su contenuto dannoso e messaggi di posta elettronica dannosi rilevati e bloccati da [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) e [Office 365 ATP](office-365-atp.md). Questo report è utile per la visualizzazione di rilevamenti nel tempo (fino a 90 giorni) e consente agli amministratori della sicurezza di identificare le tendenze o determinare se i criteri devono essere adattati. 
 
-Il rapporto sullo stato di protezione di minacce fornisce un numero aggregato di messaggi di posta elettronica univoci con contenuti dannosi, ad esempio i file o gli indirizzi del sito Web (URL) bloccati dal motore antimalware, da [zero-hour auto Purge (ZAP)](zero-hour-auto-purge.md)e dalle caratteristiche ATP come i [collegamenti sicuri](atp-safe-links.md)di ATP, gli [allegati sicuri di ATP](atp-safe-attachments.md)e le [funzionalità di anti-phishing ATP](atp-anti-phishing.md). 
+Il rapporto fornisce un numero aggregato di messaggi di posta elettronica univoci con contenuti dannosi, ad esempio i file o gli indirizzi del sito Web (URL) bloccati dal motore antimalware, da [zero-hour auto Purge (ZAP)](zero-hour-auto-purge.md)e dalle caratteristiche ATP come i [collegamenti sicuri](atp-safe-links.md)di ATP, gli [allegati sicuri di ATP](atp-safe-attachments.md)e le [funzionalità di anti-phishing ATP](atp-anti-phishing.md). 
+
+I filtri e i guasti delle informazioni consentono la categorizzazione più granulare delle informazioni contenute nel rapporto. In particolare, è incluso un menu ' Break Down ' per la *posta elettronica > phishing* e la *posta elettronica > visualizzazioni malware*. I dati verranno suddivisi in:
+
+| |  |
+|---------|---------|
+|In base al tipo di rilevamento    | Quali criteri hanno consentito di intercettare tali minacce?         |
+|Tramite la tecnologia di rilevamento     | La tecnologia Microsoft sottostante ha rilevato la minaccia?        |
+|In base allo stato di recapito     | Che cosa è successo ai messaggi di posta elettronica rilevati come minacce?         |
+| | |
+
+> [!TIP]
+> Sia la > di posta elettronica phishing | Le visualizzazioni di malware presentano guasti granulari per le tecnologie di rilevamento mostrate, con categorie come la *reputazione dei file generati da ATP*, la *detonazione dei file*, la *detonazione degli URL*, l' *anti-spoofing: errore DMARC*, ad esempio, utili per individuare esattamente quale caratteristica ha portato la propria organizzazione a rilevare le minacce.
+
+![Elenco a discesa rapporto sullo stato di protezione dalle minacce che mostra ' scomposizione per '.](../media/tp-threatProtectStatRpt-BreakDownBy.png)
+
+Queste visualizzazioni offrono la possibilità di esportare, tramite un clic su un pulsante (in > di posta elettronica phishing, posta elettronica > malware e contenuto > visualizzazioni malware). I dati aggregati esportati nel computer possono essere aperti in Excel.
+
+![In questo elemento grafico viene illustrato come scegliere Esporta come opzione dal menu della visualizzazione malware, a destra tra la pianificazione e il rapporto di richiesta.](../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+Le visualizzazioni panoramica e messaggi di posta elettronica visualizzano le informazioni entro le ore successive all'elaborazione anziché entro 24 ore (demand re. velocità maggiore qui è stato un segnale chiaro)!
 
 > [!NOTE]
 > Un rapporto sullo stato della protezione dalle minacce è disponibile per i clienti che dispongono di [Office 365 ATP](office-365-atp.md) o [Exchange Online Protection](exchange-online-protection-eop.md) (EOP); Tuttavia, le informazioni visualizzate nel rapporto sullo stato di protezione di minacce per i clienti ATP probabilmente conterranno dati diversi da quelli che potrebbero essere visualizzati dai clienti di EOP. Ad esempio, il rapporto sullo stato della protezione dalle minacce per i clienti ATP conterrà informazioni sui [file dannosi rilevati in SharePoint Online, OneDrive o Microsoft teams](atp-for-spo-odb-and-teams.md). Tali informazioni sono specifiche di ATP, quindi i clienti che hanno EOP ma non ATP non vedranno tali dettagli nella loro relazione sullo stato di protezione dalle minacce.
@@ -61,7 +81,28 @@ Per impostazione predefinita, il rapporto sullo stato della protezione dalle min
 È inoltre possibile utilizzare il menu **Visualizza dati in base** a per modificare le informazioni visualizzate nel report. 
   
 ![Opzioni di visualizzazione per il rapporto sullo stato della protezione da ATP](../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
-  
+
+## <a name="url-protection-status-report"></a>Rapporto sullo stato di protezione URL
+
+Questo rapporto è basato sui dati raccolti e sui rischi rilevati, per clic (mentre la maggior parte dei rapporti correlati alla minaccia di posta elettronica sono per i dati del messaggio). Questo report è stato creato per mostrare minacce provenienti da collegamenti ipertestuali nei messaggi di posta elettronica e nei documenti, per clic. Sono disponibili due visualizzazioni:
+
+|  |  |
+|---------|---------|
+|Azione di protezione dell'URL fare clic su   | Vedere il numero di URL bloccati, bloccati ma ignorati con un clic da un utente, ignorati con un clic da un utente e consentiti.        |
+|URL fare clic su applicazione     | Vedere l'applicazione da cui è stato fatto clic sull'URL.        |
+|  |  |
+
+Nella tabella Details, è possibile visualizzare ulteriori informazioni su informazioni sui tempi e sugli utenti di clic. Infine, tenere presente che il rapporto sullo stato di protezione URL Mostra la caratteristica protezione dalla funzionalità collegamenti sicuri ATP, quindi solo i clienti che hanno abilitato i collegamenti sicuri di ATP vedranno i dati riportati in questo report.
+
+> [!NOTE]
+> Si tratta di un *report di tendenza di protezione*, in cui i dati rappresentano le tendenze di un DataSet più grande. La creazione di report non è disponibile in tempo reale. Per l'URL in tempo reale, fare clic su dati, continuare a utilizzare la traccia URL.
+
+## <a name="compromised-users-report"></a>Report utenti compromessi
+
+Questo report, disponibile per tutti gli utenti con Exchange Online Protection, Visualizza il numero di account utente contrassegnati come membri sospetti o limitati, dati particolarmente utili come account immettere uno degli Stati che indicano che l'account utente potrebbe essere problematico o addirittura compromessa. Con uso frequente, il report utente compromesso può individuare picchi e persino tendenze, in account contrassegnati in Stati sospetti o con restrizioni, in cui è possibile che si verifichi un problema con la sicurezza e il benessere del tenant.
+
+![Il report utenti compromessi così come viene visualizzato in Office 365.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="atp-file-types-report"></a>Report dei tipi di file di ATP
 
 Il rapporto **tipi di file ATP** Visualizza il tipo di file rilevati come dannosi dagli [allegati sicuri di ATP](atp-safe-attachments.md).
@@ -106,7 +147,7 @@ Per visualizzare e utilizzare i rapporti descritti in questo articolo, **è nece
 - Per il centro &amp; sicurezza e conformità, è necessario che sia assegnato uno dei ruoli seguenti:
     - Gestione organizzazione
     - Amministratore della sicurezza (è possibile assegnarlo nell'interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ())
-    - Lettore di sicurezza
+    - Ruolo con autorizzazioni di lettura per la sicurezza
 
 - Per Exchange Online, è necessario che sia assegnato uno dei ruoli seguenti nell'interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) o con i cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
     - Gestione organizzazione
