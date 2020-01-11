@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come effettuare l'accesso, configurare le autorizzazioni e comprendere il dashboard per il Punteggio di conformità di Microsoft, che semplifica e automatizza le valutazioni dei rischi.
-ms.openlocfilehash: 03bcc5663e3b57728eb4ba791bbcba9593e5afc7
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 79e93a102107433ed2b493a56381bc60ca544157
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831179"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021912"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Configurazione del Punteggio di conformità Microsoft (anteprima)
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 L'amministratore globale di Microsoft 365 per l'organizzazione sarà probabilmente il primo utente ad accedere al Punteggio di conformità. Si consiglia di accedere all'amministratore globale e di impostare le autorizzazioni utente come indicato di seguito quando si visita il Punteggio di conformità per la prima volta.
 
@@ -72,7 +72,7 @@ Il dashboard del Punteggio di conformità è stato creato per fornire una visual
 
 ### <a name="overall-compliance-score"></a>Punteggio di conformità globale
 
-Il Punteggio di conformità, evidenziato in primo piano nella parte superiore, presenta una percentuale basata sui punti ottenibili per il completamento delle azioni di miglioramento relative agli standard e alle normative sulla protezione dei dati. 
+Il Punteggio di conformità, evidenziato in primo piano nella parte superiore, presenta una percentuale basata sui punti ottenibili per il completamento delle azioni di miglioramento relative agli standard e alle normative sulla protezione dei dati.
 
 Quando si giunge al Punteggio di conformità per la prima volta, il punteggio iniziale è basato sulla linea di base di protezione dei dati integrata di Microsoft 365, ovvero un insieme di controlli che include normative e standard di settore. Poiché il Punteggio di conformità analizza il sistema delle soluzioni Microsoft 365 esistenti, fornisce una valutazione iniziale della postura di conformità in base alle impostazioni di privacy e sicurezza attualmente abilitate dall'organizzazione.
 
@@ -95,14 +95,14 @@ In questa sezione viene fornita una visualizzazione più dettagliata del puntegg
 
 ### <a name="filtering-your-dashboard-view"></a>Filtrare la visualizzazione del dashboard
 
-È possibile filtrare la visualizzazione del dashboard per visualizzare solo gli elementi relativi a specifiche normative e standard, soluzioni, tipo di azione, gruppi o categorie di protezione dei dati. Il filtraggio della visualizzazione in questo modo consente di filtrare anche il punteggio nel dashboard, mostrando quanti punti sono stati raggiunti fuori dai possibili punti totali in base ai criteri di filtro.
+È possibile filtrare la visualizzazione del dashboard per visualizzare solo gli elementi relativi a specifiche normative e standard, soluzioni, tipo di azione, [gruppi di valutazioni configurati](working-with-compliance-manager.md#groups)o categorie di protezione dei dati. Il filtraggio della visualizzazione in questo modo consente di filtrare anche il punteggio nel dashboard, mostrando quanti punti sono stati raggiunti fuori dai possibili punti totali in base ai criteri di filtro.
 
 Per applicare i filtri:
 
 1. Selezionare **filtro** sul lato superiore destro del dashboard.
 2. Selezionare i criteri di filtro dal riquadro **filtri** a comparsa, quindi fare clic su **applica**.
 
-Vedrai il tuo punteggio regolato in tempo reale e vedrai solo azioni di miglioramento, soluzioni e informazioni sulla scomposizione dei punteggi che corrispondono ai criteri di filtro. Se si disattiva il Punteggio di conformità, la visualizzazione filtrata rimane quando si effettua l'accesso.
+Dopo l'applicazione di un filtro, vedrai il tuo punteggio regolato in tempo reale. La percentuale del Punteggio di conformità e le informazioni di ripartizione e le azioni e le soluzioni di miglioramento, ora riguardano solo i dati trattati dai criteri di filtro. Se si disattiva il Punteggio di conformità, la visualizzazione filtrata rimane quando si effettua l'accesso.
 
 Per rimuovere i filtri:
 

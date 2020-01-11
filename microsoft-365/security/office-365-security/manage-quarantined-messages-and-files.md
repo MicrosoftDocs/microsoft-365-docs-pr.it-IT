@@ -3,7 +3,7 @@ title: Gestire i messaggi e i file in quarantena come amministratore in Office 3
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date: 09/05/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'In qualità di amministratore, è possibile visualizzare, rilasciare e segnalare messaggi in quarantena falsi positivi in Office 365. È possibile configurare i criteri in modo che Office 365 filtri i messaggi e li invii in quarantena per diversi motivi: perché sono stati identificati come posta indesiderata, in blocco, phishing, malware o perché hanno trovato una regola del flusso di posta. '
-ms.openlocfilehash: b13b369383a44608bd74d8a92ea6eb40ce6284d0
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: 610a5e584f8731440150f643365b4d307b87adf2
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021862"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023330"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestire i messaggi e i file in quarantena come amministratore in Office 365
 
@@ -33,9 +33,11 @@ Per utilizzare i messaggi in quarantena o i file in quarantena, è necessario di
 
 ## <a name="what-permissions-are-needed-to-access-administrator-quarantine"></a>Quali autorizzazioni sono necessarie per accedere alla quarantena dell'amministratore?
 
-Le autorizzazioni per la gestione della quarantena sono controllate dall'appartenenza ai gruppi di ruoli **Security & Compliance Center* . Per ulteriori informazioni sui gruppi di ruoli nel centro sicurezza & Compliance, vedere [Permissions in the Office 365 security & Compliance Center](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+Le autorizzazioni per la gestione della quarantena sono controllate dall'appartenenza ai gruppi di ruoli *Centro sicurezza & conformità* (in particolare, il ruolo di **quarantena** ). Per ulteriori informazioni sui ruoli e sui gruppi di ruolo nel centro sicurezza & Compliance, vedere [Permissions in the Office 365 security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-I gruppi di ruoli di sicurezza & conformità che forniscono le autorizzazioni per la gestione della quarantena sono i seguenti:
+I gruppi di ruoli di sicurezza & conformità che forniscono le autorizzazioni per la gestione della quarantena per impostazione predefinita sono:
+
+- **Gestione organizzazione** (amministratori globali)
 
 - **Amministratore della quarantena**
 

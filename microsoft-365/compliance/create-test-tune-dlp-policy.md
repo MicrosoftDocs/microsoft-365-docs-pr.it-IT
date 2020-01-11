@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: f51c0648025b65be1030a84409dd3686fe616b1a
-ms.sourcegitcommit: ba223b4fd069fc6fd09c2a2e34c770a18bc7b2a2
+ms.openlocfilehash: fe075c004c397baa2ed568a56c9d675cdd788857
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39866358"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021972"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
@@ -101,7 +101,7 @@ Per dimostrare il rilevamento di TFN in maniera piuttosto smussata, un messaggio
 
 ![Numero di file fiscale australiano che non supera il checksum](media/DLP-create-test-tune-email-test1.png)
 
-In confronto, un messaggio di posta elettronica con le parole "Tax File Number" e un TFN valido che passa il checksum attiverà il criterio. Per il record qui, il TFN che si sta utilizzando è stato ricavato da un sito Web che genera un TFNs valido, ma non genuino. Esistono siti simili che generano [numeri di carta di credito validi ma fasulli](https://www.fakecreditcardgenerator.net/). Tali siti sono molto utili perché uno degli errori più comuni durante il testing di un criterio DLP consiste nell'utilizzare un numero fittizio non valido e non passerà il checksum (e pertanto non attiverà il criterio).
+In confronto, un messaggio di posta elettronica con le parole "Tax File Number" e un TFN valido che passa il checksum attiverà il criterio. Per il record qui, il TFN che si sta utilizzando è stato ricavato da un sito Web che genera un TFNs valido, ma non genuino. Tali siti sono molto utili perché uno degli errori più comuni durante il testing di un criterio DLP consiste nell'utilizzare un numero fittizio non valido e non passerà il checksum (e pertanto non attiverà il criterio).
 
 ![Numero di file fiscale australiano che supera il checksum](media/DLP-create-test-tune-email-test2.png)
 
@@ -177,7 +177,6 @@ L'utente può segnalare il falso positivo e l'amministratore può esaminare perc
 
 Questo caso di patente di guida è un buon esempio di approfondimento. Il motivo per cui si è verificato questo falso positivo è che il tipo di "licenza di guida australiana" verrà attivato da qualsiasi stringa di 9 cifre (anche quella che fa parte di una stringa di 10 cifre), entro 300 caratteri di prossimità delle parole chiave "Sydney NSW" (senza distinzione tra maiuscole e minuscole). In questo modo viene attivato dal numero di telefono e dalla firma di posta elettronica, solo perché l'utente si trova a Sydney.
 
-È interessante notare che se "Sydney, NSW" ha una virgola, il criterio DLP non viene attivato. Non ho alcuna idea del perché una virgola fa qualsiasi differenza qui, né perché altre città e stati in Australia non sono inclusi nelle parole chiave per il tipo di informazioni sulla licenza del conducente australiano, ma ci si va. Quindi, cosa possiamo fare? Sono disponibili due opzioni.
 
 Un'opzione consiste nel rimuovere il tipo di informazioni sulla licenza del conducente australiano dal criterio. È presente perché è parte del modello di criteri DLP, ma non è necessario utilizzarlo. Se si è interessati solo ai numeri di file fiscali e non alle licenze del conducente, è possibile rimuoverlo solo. Ad esempio, è possibile rimuoverlo dalla regola del volume basso nel criterio, ma lasciarlo nella regola volume alto, in modo che vengano ancora rilevati gli elenchi delle licenze per più driver.
 
@@ -191,7 +190,7 @@ Oltre a modificare il numero di istanze, è anche possibile regolare l'accuratez
 
 Infine, se si vuole ottenere anche un po' più avanzato, è possibile personalizzare qualsiasi tipo di informazioni riservate-ad esempio, è possibile rimuovere "Sydney NSW" dall'elenco di parole chiave per la [patente di guida australiana](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number), per eliminare il falso positivo attivato sopra. Per informazioni su come eseguire questa operazione tramite XML e PowerShell, vedere questo argomento relativo alla [personalizzazione di un tipo di informazione riservata incorporato](customize-a-built-in-sensitive-information-type.md).
 
-## <a name="turn-off-a-dlp-policy"></a>Disattivare un criterio DLP
+## <a name="turn-on-a-dlp-policy"></a>Attivazione di un criterio DLP
 
 Quando si è soddisfatti del fatto che i criteri DLP siano in grado di rilevare accuratamente ed efficacemente i tipi di informazioni riservate e che gli utenti finali siano pronti per gestire i criteri, è possibile abilitare il criterio.
 

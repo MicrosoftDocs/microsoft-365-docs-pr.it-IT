@@ -13,19 +13,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft teams. Leggere questo articolo per ulteriori informazioni su come funziona.
-ms.openlocfilehash: 9c8c122a84a739a0cc2942f63ff319121510415b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 55a13d44ab3cff777ee8ed4610d746c3649bf558
+ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082934"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41022361"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita di dati e Microsoft Teams
 
 > [!NOTE]
-> Le funzionalità di prevenzione della perdita di dati sono state aggiunte di recente a Microsoft teams chat and Channel messages per gli utenti con licenza per Office 365 Advanced Compliance, che è disponibile come opzione autonoma ed è inclusa in Office 365 E5 e Microsoft 365 E5 Compliance. Office 365 e Microsoft 365 E3 includono la protezione DLP per SharePoint Online, OneDrive ed Exchange Online. Questo include anche i file condivisi tramite team perché i team utilizzano SharePoint Online e OneDrive per condividere file.
+> Le funzionalità di prevenzione della perdita dei dati sono state aggiunte di recente ai messaggi di chat e canali di Microsoft Teams per gli utenti con licenza di Office 365 Advanced Compliance, che è disponibile come opzione indipendente e incluso in Office 365 E5 e Microsoft 365 E5 Compliance. Office 365 e Microsoft 365 E3 includono la protezione DLP per SharePoint Online, OneDrive ed Exchange Online. Questo include anche i file condivisi tramite team perché i team utilizzano SharePoint Online e OneDrive per condividere file.
 Il supporto per la protezione DLP in teams chat richiede E5.
-Per ulteriori informazioni sui requisiti di licenza, vedere [Microsoft 365 tenant-Level Licensing Services guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le licenze dei servizi a livello di tenant di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Panoramica di DLP per Microsoft Teams
 
@@ -109,6 +109,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti i percorsi oppure selezionare **Consenti percorsi specifici**e quindi scegliere **Avanti**.<br/>Se sono stati scelti percorsi specifici, selezionarli per il criterio DLP e quindi scegliere **Avanti**.<br/>![Posizioni dei criteri DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Se si desidera verificare che i documenti che contengono informazioni riservate non siano condivisi in modo improprio, verificare che i **siti di SharePoint** e gli **account di OneDrive** siano attivati insieme ai **messaggi di chat e dei canali di Team**.
+    > I canali di Microsoft teams dipendono fortemente dalla funzionalità di Exchange Online. Verificare che l'indirizzo di **posta elettronica di Exchange** sia abilitato anche per i criteri da applicare per il contenuto dei canali.  
 <br/>
 
 6. Nella scheda **impostazioni dei criteri** , in **Personalizza il tipo di contenuto che si desidera proteggere**, mantenere le impostazioni predefinite semplici oppure scegliere **Usa impostazioni avanzate**e quindi scegliere **Avanti**. Se si scelgono le impostazioni avanzate, è possibile creare o modificare regole per i criteri. Per ottenere assistenza, vedere [Simple Settings vs Advanced Settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).

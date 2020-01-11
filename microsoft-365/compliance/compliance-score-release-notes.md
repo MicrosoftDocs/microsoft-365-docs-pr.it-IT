@@ -12,26 +12,36 @@ search.appverid:
 - MOE150
 - MET150
 description: Note sulla versione e i problemi noti di Microsoft Compliance Score (Preview), una funzionalità del centro conformità di M365 che consente di semplificare e automatizzare le valutazioni dei rischi.
-ms.openlocfilehash: d46e8a621b6f4daa1275a78b5cc1e6917e0a997c
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: b1054a455b2d2c78cfa6131410941b1a36738a43
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793640"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021932"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Note sulla versione di Microsoft Compliance Score (Preview)
 
-L'anteprima pubblica del Punteggio di conformità di Microsoft fornisce l'accesso tempestivo alle funzionalità e agli aggiornamenti imminenti.
+L'anteprima pubblica del Punteggio di conformità di Microsoft fornisce l'accesso tempestivo alle funzionalità e agli aggiornamenti imminenti. Per informazioni sulle novità, vedere spesso questa pagina.
 
 La conformità Score è una nuova funzionalità del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che calcola un punteggio basato sui rischi, misurando i progressi compiuti verso il completamento delle azioni consigliate che consentono di ridurre i rischi di conformità.
 
-## <a name="compliance-score-and-compliance-manager-relationship"></a>Relazione tra Punteggio di conformità e Compliance Manager
+## <a name="whats-new"></a>Novità
+
+### <a name="new-templates-for-assessments"></a>Nuovi modelli per le valutazioni
+
+I nuovi modelli preconfigurati per le valutazioni vengono rilasciati in produzione per il Punteggio di conformità (anteprima) Man mano che diventano disponibili. Controllare l' [elenco completo dei modelli qui](compliance-score.md#templates). I modelli aggiunti di recente includono:
+
+- ISO 27701:2019
+- IRAP/governo australiano ISM (anteprima)
+
+
+### <a name="compliance-score-relationship-to-compliance-manager"></a>Relazione tra Punteggio di conformità e Compliance Manager
 
 Molte delle funzioni di conformità gestite in Compliance Manager possono ora essere eseguite nel punteggio di conformità. Tuttavia, alcune funzionalità risiedono ancora solo in Compliance Manager e alcune funzionalità precedenti in Compliance Manager vengono modificate durante il periodo di anteprima pubblica. 
 
 Tenere presente questi punti quando si lavora con score compliance e Compliance Manager durante l'anteprima pubblica:
 
-- **Gestione delle valutazioni**: gli utenti possono visualizzare le valutazioni e i relativi dettagli sullo stato nel punteggio di conformità. Tuttavia, gli utenti possono eseguire solo attività di gestione della valutazione in Compliance Manager ([vedere le istruzioni](working-with-compliance-manager.md#assessments)) e attività e sono limitate a quanto segue:
+- **Gestione delle valutazioni**: gli utenti possono visualizzare le valutazioni e i relativi dettagli sullo stato nel punteggio di conformità. Tuttavia, gli utenti possono eseguire solo attività di gestione della valutazione in Compliance Manager ([vedere le istruzioni](working-with-compliance-manager.md#assessments)) e le attività sono limitate alle seguenti:
     - Caricare nuove valutazioni, ma non modificare le valutazioni esistenti. Se è necessario modificare una valutazione esistente, sarà necessario caricare un nuovo modello.
     - Valutazioni dell'esportazione
     - Valutazioni dell'archivio
@@ -40,7 +50,7 @@ Tenere presente questi punti quando si lavora con score compliance e Compliance 
    - Gli utenti devono accedere a Compliance Manager per creare nuovi modelli ed esportare modelli esistenti. 
    - I modelli esistenti non possono essere personalizzati. Leggere le istruzioni per la [gestione dei modelli in Compliance Manager](working-with-compliance-manager.md#templates).
    - Quando si crea un modello, è necessario includere le dimensioni per il **prodotto** e la **certificazione** per garantire che il modello venga visualizzato nel punteggio di conformità.
- - **Impostazione delle autorizzazioni**: Punteggio di conformità gli utenti che non sono stati precedentemente concessi autorizzazioni in Compliance Manager devono disporre delle autorizzazioni impostate nel centro conformità di Microsoft 365. Gli utenti i cui ruoli sono stati precedentemente impostati in Compliance Manager possono utilizzare lo stesso livello di accesso quando si lavora nel punteggio di conformità.
+ - **Impostazione delle autorizzazioni**: Punteggio di conformità gli utenti che non sono stati precedentemente concessi autorizzazioni in Compliance Manager devono disporre delle autorizzazioni impostate nel centro conformità di Microsoft 365 (ulteriori[informazioni](compliance-score-setup.md#set-user-permissions-and-assign-roles)). Gli utenti i cui ruoli sono stati precedentemente impostati in Compliance Manager possono utilizzare lo stesso livello di accesso quando si lavora nel punteggio di conformità.
 - **Trasferimento di dati**: le organizzazioni con dati che risiedono in Gestione conformità vedranno tali dati nel punteggio di conformità e viceversa.
 - **Accesso a Compliance Manager dal punteggio di conformità**: se un utente ha eseguito l'accesso a Score compliance e seleziona un collegamento per accedere a Compliance Manager, l'utente non dovrà accedere di nuovo. Dopo aver fatto clic sul collegamento, una nuova scheda viene visualizzata nel browser con una finestra di dialogo. Nella sezione superiore con l'intestazione, "già un cliente dei servizi cloud Microsoft? Accedere al proprio account, "selezionare il pulsante di **accesso** per accedere automaticamente a Compliance Manager.
 
@@ -50,7 +60,7 @@ Nelle sezioni seguenti vengono illustrati i problemi noti da risolvere nelle pro
 
 ### <a name="launch-now-links-in-certain-improvement-actions"></a>Avviare i collegamenti ora in determinate azioni di miglioramento
 
-In determinate azioni di miglioramento, selezionando il collegamento **Avvia ora** visualizzato al di sotto delle istruzioni di implementazione viene restituito un errore. Per accedere alla destinazione appropriata, ovvero l'interfaccia di amministrazione di SharePoint, eseguire la procedura seguente:
+In determinate azioni di miglioramento, selezionando il collegamento **Avvia ora** visualizzato al di sotto delle istruzioni di implementazione viene restituito un errore. Per accedere alla destinazione appropriata, che è l'interfaccia di amministrazione di SharePoint, eseguire la procedura seguente:
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com).
 2. Scegliere **Mostra tutto**dal menu di spostamento a sinistra.

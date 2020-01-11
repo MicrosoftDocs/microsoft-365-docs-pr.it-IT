@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 556d3994241db65b70feec55ac0f96469f549361
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai prodotti Microsoft.
+ms.openlocfilehash: 2bc7ccc4c6c236c0c730ac3fc651701d9a76bedf
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962253"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41022012"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Collaborare con Microsoft Compliance Manager (anteprima)
 
@@ -30,11 +30,11 @@ Chiunque abbia un account Microsoft o un account organizzativo di Azure Active D
   
 1. Passare a [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
 
-2. Accedere con l'account del servizio Microsoft. Si tratta dell'account utente di Office 365, Microsoft 365 o Azure Active Directory (Azure AD).
+2. Accedere con l'account del servizio Microsoft, ovvero l'account utente di Office 365, Microsoft 365 o Azure Active Directory (Azure AD).
 
-3. Nel Service Trust Portal selezionare **Compliance Manager**. Questa è la versione di anteprima di Compliance Manager. **Compliance Manager (Classic)** è il collegamento alla versione precedente di Compliance Manager.
+3. Nel Service Trust Portal, è consigliabile selezionare **Compliance Manager**, ovvero la versione di anteprima con le funzionalità più recenti. **Compliance Manager (Classic)** consente di eseguire la versione precedente di Compliance Manager.
 
-4. Quando viene visualizzato il contratto di non divulgazione, leggerlo e selezionare **Accetto** per continuare. È necessario concordare una sola volta e quindi viene visualizzato il dashboard di Compliance Manager.
+4. Quando viene visualizzato il contratto di non divulgazione, leggerlo e selezionare **concordare**, che visualizza quindi il dashboard di Compliance Manager.
 
 Per iniziare, una valutazione ISO/IEC 27001:2103 per Office 365 viene visualizzata per impostazione predefinita per l'organizzazione.
 
@@ -84,25 +84,40 @@ Gli aggiornamenti del Punteggio sicuro possono essere attivati automaticamente p
 
 ## <a name="groups"></a>Gruppi
 
-I gruppi consentono di organizzare logicamente le valutazioni e di condividere le informazioni comuni e le attività del flusso di lavoro tra le valutazioni che dispongono dello stesso o dei controlli gestiti dal cliente. È possibile raggruppare le valutazioni per anno, standard, servizi, team, divisione o agenzie all'interno dell'organizzazione per ridurre al minimo le azioni gestite dal cliente:
+I gruppi sono contenitori che consentono di organizzare valutazioni e condividere le informazioni comuni e le attività del flusso di lavoro tra le valutazioni che dispongono dello stesso o dei controlli gestiti dal cliente.
+
+È possibile raggruppare le valutazioni in modo logico, ad esempio per anno, standard, di servizio o in base ai team, alle divisioni o alle aree geografiche dell'organizzazione. Di seguito sono riportati alcuni esempi di due gruppi e le relative valutazioni sottostanti:
   
-- **FFIEC è valutazioni 2019**
+- **FFIEC è valutazioni 2020**
   - Office 365 + FFIEC è
   - Intune + FFIEC è
 - **Sicurezza dei dati e valutazione della privacy**
   - Office 365 e ISO 27001:2013
   - Office 365 e ISO 27018:2014
 
-Quando si crea una nuova valutazione, è necessario creare un nuovo gruppo per la valutazione o assegnare la valutazione a un gruppo esistente. I gruppi non possono essere creati come entità autonome. È consigliabile determinare una strategia di raggruppamento per l'organizzazione *prima* di aggiungere nuove valutazioni. Per impostazione predefinita, un gruppo denominato "gruppo predefinito" è disponibile per le valutazioni iniziali. I gruppi non dispongono di alcuna proprietà di sicurezza. Tutte le autorizzazioni sono associate alle valutazioni.
+> [!NOTE]
+> È consigliabile determinare una strategia di raggruppamento per l'organizzazione *prima* di aggiungere nuove valutazioni. Per impostazione predefinita, un gruppo denominato "gruppo predefinito" è disponibile per le valutazioni iniziali.
 
-Quando si lavora con i gruppi, tenere presente quanto segue:
+### <a name="how-to-create-a-group"></a>Come creare un gruppo
+
+I gruppi non possono essere creati come entità autonome. Un gruppo deve contenere sempre almeno una valutazione, quindi per creare un gruppo è necessario innanzitutto creare una valutazione da inserire nel gruppo. Seguire la procedura riportata di seguito per creare un gruppo:
+
+1. Creare una nuova valutazione selezionando **+ Aggiungi valutazione** nei pressi della parte superiore del dashboard.
+2. Nel riquadro a comparsa di **valutazione** , immettere un titolo per la valutazione e selezionare un modello dal menu a discesa.
+3. In **selezionare un gruppo o aggiungere un nuovo**gruppo, selezionare **Aggiungi un nuovo gruppo** e immettere il nome del gruppo nel campo sottostante.
+4. Per copiare le informazioni da un gruppo esistente, attivare o disattivare l'opzione **consente di copiare i dati da un gruppo esistente?** passare a attivato **.** Selezionare il gruppo che si desidera copiare dal menu a discesa sottostante e selezionare le caselle di controllo dei campi che si desidera riportare nella nuova valutazione del nuovo gruppo.
+5. Selezionare **Salva**. Al termine, il riquadro a comparsa viene chiuso e il nuovo gruppo viene visualizzato automaticamente nel dashboard.
+
+Cosa sapere quando si lavora con i gruppi:
   
-- I controlli relativi alla valutazione in diverse valutazioni all'interno dello stesso gruppo vengono aggiornati automaticamente quando sono stati completati.
-- I nuovi gruppi possono copiare informazioni da un gruppo esistente quando si crea una nuova valutazione. Tutte le informazioni aggiunte ai campi dei dettagli di implementazione e del piano di test e di risposta di gestione di controlli gestiti dal cliente dalle valutazioni del gruppo da cui si sta effettuando la copia vengono copiate negli stessi controlli gestiti dal cliente (o correlati) nel nuovo Valutazione. Se si sta aggiungendo una nuova valutazione a un gruppo esistente, le informazioni comuni provenienti da valutazioni di quel gruppo vengono copiate nella nuova valutazione.
 - I nomi dei gruppi (denominati anche *ID gruppo*) devono essere univoci all'interno dell'organizzazione.
-- I gruppi possono contenere valutazioni per la stessa certificazione/regolamentazione, ma ogni gruppo può contenere solo una valutazione per una coppia specifica del servizio cloud/certificazione. Ad esempio, un gruppo non può contenere due valutazioni per Office 365 e NIST CSF. Un gruppo può contenere più valutazioni per lo stesso servizio cloud solo se la corrispondente certificazione/regolamentazione per ognuno di essi è diversa.
-- Dopo aver aggiunto una valutazione a un gruppo di valutazione, non è possibile modificare il raggruppamento. È possibile rinominare il gruppo di valutazione, che modifica il nome del gruppo di valutazione per tutte le valutazioni associate a tale gruppo. È possibile creare una valutazione e un nuovo gruppo di valutazioni, quindi copiare le informazioni da una valutazione esistente, creando così un duplicato della valutazione in un gruppo di valutazione diverso in modo facile e veloce.
-- L'archiviazione di una valutazione interrompe la relazione tra tale valutazione e il gruppo. Qualsiasi ulteriore aggiornamento ad altre valutazioni correlate non viene più riflesso nella valutazione archiviata.
+- I gruppi non dispongono di alcuna proprietà di sicurezza. Tutte le autorizzazioni sono associate alle valutazioni.
+- Dopo aver aggiunto una valutazione a un gruppo, non è possibile modificare il raggruppamento. È possibile rinominare il gruppo di valutazione, che modifica il nome del gruppo di valutazione per tutte le valutazioni associate a tale gruppo.
+- I controlli relativi alla valutazione in diverse valutazioni all'interno dello stesso gruppo vengono aggiornati automaticamente quando sono stati completati.
+- Se si aggiunge una nuova valutazione a un gruppo esistente, le informazioni comuni provenienti da valutazioni di quel gruppo vengono copiate nella nuova valutazione.
+- I gruppi possono contenere valutazioni per la stessa certificazione o regolamentazione, ma ogni gruppo può contenere solo una valutazione per una coppia specifica di certificazione di prodotto. Ad esempio, un gruppo non può contenere due valutazioni per Office 365 e NIST CSF. Un gruppo può contenere più valutazioni per lo stesso prodotto solo se la certificazione o la normativa corrispondente per ognuna di esse è diversa.
+- Se si nasconde una valutazione, la relazione tra tale valutazione e il gruppo viene interrotta. Qualsiasi ulteriore aggiornamento ad altre valutazioni correlate non viene più riflesso nella valutazione nascosta. ([Informazioni su come nascondere le valutazioni).](#hide-a-template-or-an-assessment)
+- Non è possibile eliminare i gruppi.
 
 ## <a name="tenant-management"></a>Gestione tenant
 

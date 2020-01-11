@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Trovare le risposte alle domande frequenti sul punteggio di conformità di Microsoft, che consente alle organizzazioni di semplificare e automatizzare le valutazioni dei rischi.
-ms.openlocfilehash: bc0ddfe71a3de2bbfa2c9c9a0fdc507a540daf90
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: ff53b2f3c7cde3dc9f78ccf13cb3fa8f75e7afa6
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "39625421"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41021982"
 ---
 # <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft Compliance Score (Preview) domande frequenti
 
@@ -41,7 +41,7 @@ Il Punteggio di conformità e Compliance Manager condividono lo stesso backend, 
 
 Il Punteggio di conformità è utile per tutti gli utenti dell'organizzazione che svolgono un ruolo nel monitoraggio della conformità e nell'esecuzione di attività che consentano di rispettare gli standard normativi. Con punteggio di conformità, non è necessario avere familiarità con le normative e gli standard per contribuire a migliorare la protezione dei dati dell'organizzazione. Il Punteggio di conformità è il punto di partenza ottimale per tutti gli utenti. Da qui, è possibile visualizzare il Punteggio di conformità, sapere quali azioni consigliate possono contribuire a ridurre al minimo i rischi e, in molti casi, avviare direttamente le soluzioni per intraprendere tali azioni.
 
-Per il momento, Compliance Manager è il luogo in cui gli utenti possono gestire le valutazioni e creare modelli personalizzati per la creazione di valutazioni. Per ulteriori informazioni, vedere [quali azioni sono supportate solo da Compliance Manager](compliance-score-release-notes.md#compliance-score-and-compliance-manager-relationship) durante l'anteprima pubblica.
+Per il momento, Compliance Manager è il luogo in cui gli utenti possono gestire le valutazioni e creare modelli personalizzati per la creazione di valutazioni. Per ulteriori informazioni, vedere [quali azioni sono supportate solo da Compliance Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager) durante l'anteprima pubblica.
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Se si dispone di un punteggio elevato, significa che sono pienamente conforme?
 
