@@ -1,7 +1,7 @@
 ---
 title: Panoramica delle etichette di conservazione
-ms.author: laurawi
-author: laurawi
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le etichette di conservazione in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È possibile utilizzare le etichette di conservazione per implementare la gestione dei record in Office 365.
-ms.openlocfilehash: dcf350f34a30d27aa66d3e4395b2441694537bae
-ms.sourcegitcommit: 9a420b16aaa401a822ccfd9b133977ad8bd1024b
+ms.openlocfilehash: 9327e23a25143fa032ea9501a9d89ec6f47950bd
+ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39621109"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023370"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -55,7 +55,7 @@ Con le etichette di conservazione è possibile:
    - Gli utenti non hanno più bisogno di conoscere i criteri di governance dai dati e possono concentrarsi sul loro lavoro.
 
   > [!NOTE]
-  > La possibilità di applicare automaticamente etichette richiede una licenza di Office 365 Enterprise E5 per ogni utente che dispone delle autorizzazioni per modificare il contenuto a cui è stata assegnata automaticamente un’etichetta in un sito o in una cassetta postale. Per gli utenti che dispongono di accesso di sola lettura non è necessaria una licenza.
+  > La possibilità di applicare automaticamente etichette richiede una licenza di Office 365 Enterprise E5 per ogni utente con autorizzazioni per modificare il contenuto a cui è stata assegnata automaticamente un'etichetta in un sito o la cui cassetta postale è selezionata per l'applicazione automatica delle etichette. Per gli utenti che hanno accesso in sola lettura al contenuto o rispondono a messaggi di posta elettronica con etichette non è necessaria una licenza.
       
 - **Implementare la gestione dei record in Office 365**, compresi posta elettronica e documenti. È possibile usare un'etichetta di conservazione per classificare il contenuto come record. In questo caso, non è possibile cambiare o rimuovere l'etichetta e il contenuto non può essere modificato o eliminato. 
 

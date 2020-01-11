@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 4a43573893ecc16539810cfcfe85c8df469d06dd
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 73ad56a335b02de090becdc55e34dc3e90bc4389
+ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634043"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41022022"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -65,7 +65,7 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 
 Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del registro di controllo di Office 365.
 
-- È necessario che l'amministratore corrente o un altro amministratore attivi la registrazione di controllo prima di iniziare a eseguire ricerche nel log di controllo di Office 365. Per attivare la registrazione, fare clic su **Avvia registrazione attività utenti e amministratore** nella pagina **Ricerca log di controllo** nella pagina Centro sicurezza e conformità. Se questo collegamento non è visibile, il controllo è stato già attivato per la propria organizzazione. Dopo l'attivazione, verrà visualizzato un messaggio che indica che è in corso la preparazione del log di controllo e che sarà possibile eseguire una ricerca in un paio d'ore, dopo il completamento della preparazione. Questa procedura deve essere eseguita una sola volta.
+- È necessario che l'amministratore corrente o un altro amministratore attivi la registrazione di controllo prima di iniziare a eseguire ricerche nel log di controllo di Office 365. Per attivare la registrazione, fare clic su **Attiva il controllo** nella pagina **Ricerca log di controllo** del Centro sicurezza e conformità. Se questo collegamento non è visibile, il controllo è stato già attivato per la propria organizzazione. Dopo l'attivazione, verrà visualizzato un messaggio che indica che è in corso la preparazione del log di controllo e che sarà possibile eseguire una ricerca in un paio d'ore, dopo il completamento della preparazione. Questa procedura deve essere eseguita una sola volta. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](turn-audit-log-search-on-or-off.md).
 
   > [!NOTE]
   > Microsoft sta per impostare come predefinita l'attivazione del controllo. Nel frattempo, è possibile attivarlo come descritto in precedenza.
@@ -335,6 +335,7 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |(nessuno)|FileModifiedExtended|Elemento correlato all'attività "File modificato" (FileModified). Un evento FileModifiedExtended viene registrato quando la stessa persona modifica in modo continuativo un file per un periodo prolungato (fino a 3 ore). <br/><br/> Lo scopo della registrazione di eventi FileModifiedExtended è di ridurre il numero di eventi FileModified registrati quando si modifica un file in modo continuativo. Ciò consente di ridurre il numero di record FileModified per un'attività utente sostanzialmente identica e consente di concentrarsi sull'evento FileModified iniziale (e più importante).|
 |File spostato|FileMoved|Un utente sposta un documento dalla posizione corrente in un sito a una nuova posizione.|
 |(nessuno)|FilePreviewed|L'utente visualizza in anteprima i file in un sito di SharePoint Online o di OneDrive for Business. Questi eventi si verificano in genere in volumi elevati in base a una singola attività, ad esempio la visualizzazione di una raccolta immagini.|
+|Query di ricerca eseguita|SearchQueryPerformed|Un account utente o di sistema esegue una ricerca in SharePoint o in OneDrive for Business. Alcuni scenari comuni in cui un account del servizio esegue una query di ricerca includono l'applicazione di criteri di conservazione o di blocco di eDiscovery a siti e account di OneDrive e i casi in cui le etichette di conservazione o riservatezza vengono applicate automaticamente al contenuto del sito. In molti di questi casi, il nome dell'account di servizio registrato nel campo relativo all'utente del record di controllo è **app@sharepoint**. </br></br> **Suggerimento:** i campi ApplicationDisplayName e EventData nel record di controllo per l'attività Query di ricerca eseguita possono essere utili per identificare lo scenario o il servizio che ha generato questo evento.|
 |Tutte le versioni secondarie di un file vengono spostate nel Cestino|FileVersionsAllMinorsRecycled|L'utente elimina tutte le versioni secondarie dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel Cestino del sito.|
 |Tutte le versioni di un file vengono spostate nel Cestino|FileVersionsAllRecycled|L'utente elimina tutte le versioni dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel Cestino del sito.|
 |La versione di un file viene spostata nel Cestino|FileVersionRecycled|L'utente una versione dalla cronologia delle versioni di un file. La versione eliminata viene spostata nel Cestino del sito.|
