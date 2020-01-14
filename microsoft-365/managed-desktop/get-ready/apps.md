@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: db89e3b1f8b5b8073eab62e4b4d38087e1e73fa4
-ms.sourcegitcommit: 498340389e1c34f49f0b2da382c23c8d5334ae47
+ms.openlocfilehash: ea6cc92fe84cc39502e3db97361ff9d294fdfca2
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34913047"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112660"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>App in Microsoft Managed Desktop
 
@@ -32,7 +32,7 @@ In dotazione con la licenza Microsoft Managed Desktop sono disponibili versioni 
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Cosa fa Microsoft per supportare le app che forniamo
 
-Microsoft fornirà servizi completi per la distribuzione, l'aggiornamento e il supporto per le app di Office 365 ProPlus incluse. Le versioni a portata di clic di Microsoft Project e Visio *non* sono incluse per impostazione predefinita, ma Microsoft Managed Desktop fornirà ai gruppi di distribuzione che consentono all'amministratore IT di gestire le licenze e di distribuire queste applicazioni in modo appropriato per la propria organizzazione. Microsoft sosterrà gli utenti finali di queste applicazioni tramite i canali di supporto di Microsoft Managed Desktop.
+Microsoft fornirà servizi completi per la distribuzione, l'aggiornamento e il supporto per le app di Office 365 ProPlus incluse. Le versioni a portata di clic di Microsoft Project e Visio *non* sono incluse per impostazione predefinita, ma Microsoft Managed Desktop fornirà ai gruppi di distribuzione che consentono all'amministratore IT di gestire le licenze e distribuirle in modo appropriato per la propria organizzazione. Microsoft sosterrà gli utenti finali di queste applicazioni tramite i canali di supporto di Microsoft Managed Desktop.
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Cosa devi fare per supportare le app che fornisci
 
@@ -46,7 +46,7 @@ Sono ancora necessarie alcune operazioni da eseguire con queste app:
 
 Naturalmente, è probabile che si disponga di una serie di altre app necessarie per le operazioni aziendali. Questi possono essere distribuiti solo ai dispositivi Microsoft Managed Desktop mediante la pipeline di distribuzione di Microsoft Intune. Se l'applicazione ne ha bisogno, è possibile farli impacchettare da un fornitore (che potrebbe essere un fornitore non Microsoft o Microsoft Consulting Services (MCS)) oppure se si dispone dei mezzi necessari, è possibile imballarli personalmente. Successivamente, aggiungere questi pacchetti al portale Microsoft Managed Desktop e assegnarli ai gruppi di Azure Active Directory per attivare la distribuzione. 
 
-Se le app vengono attualmente distribuite tramite System Center Configuration Manager, Microsoft Managed Desktop può fornire una query per valutare le app e individuare quelle pronte per la migrazione a Microsoft Intune e quali potrebbero essere necessarie per la rettifica .
+Se le app vengono attualmente distribuite tramite Microsoft endpoint Configuration Manager, Microsoft Managed Desktop può fornire una query per valutare le app e individuare quelle pronte per la migrazione a Microsoft Intune e quali potrebbero richiedere alcuni regolazione.
 
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Preparare le proprie app per l'inclusione in Microsoft Managed Desktop

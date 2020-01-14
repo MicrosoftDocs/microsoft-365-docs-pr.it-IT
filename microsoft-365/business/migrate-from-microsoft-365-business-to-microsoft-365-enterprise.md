@@ -1,5 +1,5 @@
 ---
-title: Eseguire la migrazione da Microsoft 365 business a Microsoft 365 E3
+title: Eseguire la migrazione da Microsoft 365 Business a Microsoft 365 E3
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Informazioni su come spostare la propria azienda da Microsoft 365 business a Microsoft 365 E3.
-ms.openlocfilehash: dc715bbf4cef8a742a28a6452e83b6e8d2f7cdd8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7d10889a446543a3e9126aaaa1e3fbe6861f87a4
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805619"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111870"
 ---
-# <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Eseguire la migrazione da Microsoft 365 business a Microsoft 365 E3
+# <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Eseguire la migrazione da Microsoft 365 Business a Microsoft 365 E3
 
 Microsoft 365 business offre tutto il necessario per le piccole aziende, combinando le app di produttività basate su cloud di Best-in-Class con la gestione e la sicurezza dei dispositivi semplici che consentono ai dipendenti di svolgere al meglio le proprie attività. In alcuni casi, tuttavia, potrebbe essere necessario eseguire la migrazione della sottoscrizione Microsoft 365 business a Microsoft 365 E3. 
 
@@ -74,7 +74,7 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 business e 
 | Prevenzione della perdita dei dati di Office 365, piano di protezione delle informazioni di Azure 1  | ![Incluso in Microsoft 365 business](./media/check-mark.png)   | ![Incluso in Microsoft 365 E3](./media/check-mark.png) | 
 | Protezione delle informazioni sulle finestre per Endpoint DLP    | ![Incluso in Microsoft 365 business](./media/check-mark.png)   | ![Incluso in Microsoft 365 E3](./media/check-mark.png) | 
 | **Licenza di accesso client (CAL Rights)**    | | |   
-| Suite Enterprise CAL (Exchange, SharePoint, Skype, Windows, System Center Configuration Manager, Windows Rights Management)| |        ![Incluso in Microsoft 365 E3](./media/check-mark.png) | 
+| Famiglia di prodotti Enterprise CAL (Exchange, SharePoint, Skype, Windows, Microsoft endpoint Configuration Manager, Windows Rights Management)| |       ![Incluso in Microsoft 365 E3](./media/check-mark.png) | 
 | **Conformità**        | | | 
 | Archiviazione di posta elettronica illimitata | ![Incluso in Microsoft 365 business](./media/check-mark.png)   | ![Incluso in Microsoft 365 E3](./media/check-mark.png) | 
 | Compliance Manager    | ![Incluso in Microsoft 365 business](./media/check-mark.png)   | ![Incluso in Microsoft 365 E3](./media/check-mark.png) | 

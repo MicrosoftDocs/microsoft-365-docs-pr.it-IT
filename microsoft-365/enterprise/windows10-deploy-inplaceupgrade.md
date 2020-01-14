@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
 ms.author: greglin
-ms.openlocfilehash: 08d10dae35023d3e1d9f1e98d36e52f283ec04fa
-ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
+ms.openlocfilehash: 27ed024c47ac671625563d8bf060017cb1757c4c
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38669682"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112690"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Passaggio 2: distribuire Windows 10 Enterprise per i dispositivi esistenti come aggiornamento sul posto
 
@@ -27,7 +27,7 @@ Il percorso più semplice per aggiornare i computer che eseguono Windows 7 o Win
 
 Se sono presenti computer che eseguono Windows 7 o Windows 8,1, è consigliabile questo percorso se l'organizzazione sta distribuendo Windows 10. In questo modo viene utilizzato il programma di installazione di Windows (Setup. exe) per eseguire un aggiornamento sul posto, che consente di conservare automaticamente tutti i dati, le impostazioni, le applicazioni e i driver dalla versione del sistema operativo esistente. Questo richiede il minimo sforzo, perché non è necessaria alcuna infrastruttura di distribuzione complessa.
 
-Seguire questa procedura per configurare e distribuire un'immagine di Windows 10 Enterprise utilizzando Configuration Manager come aggiornamento sul posto.
+Eseguire la procedura seguente per configurare e distribuire un'immagine di Windows 10 Enterprise utilizzando Microsoft endpoint Configuration Manager come aggiornamento sul posto.
 
 ## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>La distribuzione di Windows 10 con il poster di Configuration Manager
 
@@ -45,7 +45,7 @@ Vedere [gestire gli aggiornamenti di Windows con la preparazione dell'aggiorname
 
 Successivamente, seguire la guida per l'utilizzo di Configuration Manager (Current Branch) per aggiornare il sistema operativo Windows 7 o versioni successive a Windows 10. Come per qualsiasi distribuzione ad alto rischio, è consigliabile eseguire il backup dei dati degli utenti prima di continuare. Lo spazio di archiviazione cloud di OneDrive è pronto per l'uso per gli utenti con licenza di Microsoft 365 e può essere utilizzato per archiviare in modo sicuro i propri file. Per altre informazioni, vedere [Guida](https://aka.ms/ODfBquickstartguide)introduttiva di OneDrive. Per accedere a questa pagina, è necessario eseguire l'accesso come amministratore del tenant o amministratore globale in un tenant di Office 365 o Microsoft 365.
 
-Per un elenco delle versioni di Configuration Manager e delle versioni client di Windows 10 corrispondenti supportate, vedere [supporto per Windows 10 per Configuration Manager](https://aka.ms/supportforwin10sccm).
+Per un elenco delle versioni di Configuration Manager e delle versioni client di Windows 10 corrispondenti supportate, vedere [supporto per Windows 10 per Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
 
 **Per verificare la disponibilità dell'aggiornamento di Windows**
 
@@ -94,7 +94,7 @@ Per creare una sequenza di attività di aggiornamento, eseguire le operazioni se
 Dopo aver creato la sequenza di attività di aggiornamento, sarà necessario creare una raccolta che contenga i dispositivi da aggiornare.
 
 > [!NOTE]
-> Utilizzare le impostazioni seguenti per testare la distribuzione su un singolo dispositivo. È possibile utilizzare regole di appartenenza diverse per includere gruppi di dispositivi quando si è pronti. Per altre informazioni, vedere [come creare raccolte in Configuration Manager](https://aka.ms/sccm-create-collections).
+> Utilizzare le impostazioni seguenti per testare la distribuzione su un singolo dispositivo. È possibile utilizzare regole di appartenenza diverse per includere gruppi di dispositivi quando si è pronti. Per altre informazioni, vedere [come creare raccolte in Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/collections/create-collections).
 
 1. Nella console di Configuration Manager, nell'area di lavoro **asset e conformità** , fare clic con il pulsante destro del mouse su **Raccolte dispositivi**e quindi scegliere **Crea insieme di dispositivi**. 
 2. Nella pagina **generale** della creazione guidata raccolta dispositivi immettere le impostazioni seguenti e quindi fare clic su **Avanti**:

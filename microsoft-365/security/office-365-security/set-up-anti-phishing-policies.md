@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: La protezione anti-phishing, con una protezione globale come parte di Office 365 Advanced Threat Protection e la protezione di base in Office 365 Exchange Online Protection, può contribuire a proteggere l'organizzazione da attacchi di phishing basati sulla rappresentazione malevola e altri attacchi di phishing.
-ms.openlocfilehash: c3efed345baec7b0350d089a56e931006a4724a6
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 235bac70380d8eadb006ce0c903036a1fd471cff
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970272"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112630"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP 
 
@@ -147,7 +147,7 @@ L'amministratore della sicurezza di Contoso può utilizzare valori analoghi al s
 
 Una volta attivati i criteri di anti-phishing, è possibile vedere come funzionano le funzionalità di protezione dalle minacce per l'organizzazione visualizzando i report. Per ulteriori informazioni, vedere le risorse seguenti:
 
-- [Visualizzare i report per Office 365 ATP](view-reports-for-atp.md) o [visualizzare i report sulla sicurezza della posta elettronica](../../compliance/view-email-security-reports.md)
+- [Visualizzare i report per Office 365 ATP](view-reports-for-atp.md) o [visualizzare i report sulla sicurezza della posta elettronica](view-email-security-reports.md)
 
 - [Utilizzare Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md)
 

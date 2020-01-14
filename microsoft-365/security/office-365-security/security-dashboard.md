@@ -14,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: 8ce6e21bcc25853e641ee20126ffd38c785e76f7
-ms.sourcegitcommit: b424ea039c5915975f3efce8793bfc8dd2fdf906
+ms.openlocfilehash: f7fc45ca1df86fa29c6e2af69da5258fe6d564b6
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033937"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112650"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 
@@ -64,7 +64,7 @@ I dettagli dipendono dal fatto che la sottoscrizione di Office 365 includa [Exch
 
 |Se l'abbonamento è incluso in... |Vedrai questi dettagli |
 |---------|---------|
-|EOP ma non Office 365 ATP     |Messaggi di posta elettronica dannosi che sono stati rilevati e bloccati da EOP<br> Vedere [Threat Protection status report (EOP)](../../compliance/view-email-security-reports.md#threat-protection-status-report).| 
+|EOP ma non Office 365 ATP     |Messaggi di posta elettronica dannosi che sono stati rilevati e bloccati da EOP<br> Vedere [Threat Protection status report (EOP)](view-email-security-reports.md#threat-protection-status-report).| 
 |Office 365 ATP |Contenuto dannoso e messaggi di posta elettronica dannosi rilevati e bloccati da EOP e Office 365 ATP<br>Numero aggregato di messaggi di posta elettronica univoci con contenuti dannosi bloccati dal motore antimalware, da [zero-hour auto Purge](zero-hour-auto-purge.md)e dalle funzionalità ATP (inclusi [collegamenti sicuri](atp-safe-links.md), [allegati sicuri](atp-safe-attachments.md)e [anti-phishing ATP](atp-anti-phishing.md)).<br>Vedere [rapporto sullo stato della protezione dalle minacce (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
 
 Per visualizzare o accedere al widget dello stato di protezione dalle minacce, è necessario disporre delle autorizzazioni per visualizzare i report di Advanced Threat Protection. Per ulteriori informazioni, vedere [quali autorizzazioni sono necessarie per visualizzare i rapporti ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
@@ -119,7 +119,7 @@ Per visualizzare o accedere al widget recenti avvisi di gestione delle minacce, 
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità](../../compliance/view-email-security-reports.md)
+[Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità](view-email-security-reports.md)
   
 [Visualizzare i report per Office 365 Advanced Threat Protection](view-reports-for-atp.md)
   

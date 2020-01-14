@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: Ottenere una panoramica dei report e delle informazioni di avialable nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 33e02ff96621df72b2224cc8dc9b3666caab3429
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 88a6cb080b0550274e86dcebb0e96be69e170317
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967969"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111920"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Smart report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365
 
@@ -53,7 +53,7 @@ Nelle procedure dettagliate riportate di seguito viene illustrato come spostarsi
 |**Governance dei dati** <br/> Informazioni sul modo in cui vengono applicate le etichette, etichette classificate come record, tendenze delle etichette e altro ancora  <br/> |Nel centro sicurezza &amp; e conformità, visitare il **Dashboard** **Information Governance** \> <br/> |[Visualizzare i report di governance dei dati](../../compliance/view-the-data-governance-reports.md) <br/> |
 |**Dashboard di gestione delle minacce** (indicato anche come dashboard di sicurezza e dashboard di intelligence di Threat)  <br/> Rilevamenti di minacce, tendenze di malware, utenti di destinazione principali, dettagli sui messaggi di posta elettronica inviati e ricevuti e altro ancora  <br/> |Nel centro sicurezza &amp; e conformità, accedere a **Threat Management** \> **Dashboard** <br/> |[Panoramica del dashboard di sicurezza](security-dashboard.md) <br/> |
 |**Esplora minacce** (noto anche come esploratore) o **rilevamenti in tempo reale** <br/> Sospetti di malware rilevati nei messaggi di posta elettronica e file in Office 365  <br/> |Nel centro sicurezza &amp; e conformità, accedere a **Threat Management** \> **Explorer** o ai **rilevamenti in tempo reale**<br/> |[Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md) <br/> |
-|**Report di protezione avanzata dalle minacce e messaggi di sicurezza** <br/> Report sulla sicurezza della posta elettronica e sulla protezione delle minacce (inclusi malware, posta indesiderata, phishing e spoofing)  <br/> |Nel centro sicurezza &amp; e conformità, andare al **** \> **Dashboard** dei report <br/> |[Visualizzare i report per Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità](../../compliance/view-email-security-reports.md) <br/> |
+|**Report di protezione avanzata dalle minacce e messaggi di sicurezza** <br/> Report sulla sicurezza della posta elettronica e sulla protezione delle minacce (inclusi malware, posta indesiderata, phishing e spoofing)  <br/> |Nel centro sicurezza &amp; e conformità, andare al **** \> **Dashboard** dei report <br/> |[Visualizzare i report per Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità](view-email-security-reports.md) <br/> |
 |**Flusso di posta** <br/> Informazioni sui messaggi di posta elettronica inviati e ricevuti, gli avvisi recenti, i mittenti e i destinatari principali, i rapporti di inoltro della posta elettronica e altro ancora  <br/> |Nel centro sicurezza &amp; e conformità, accedere a **** \> **Dashboard** flusso di posta <br/> |[Approfondimenti sul flusso di posta nel Centro sicurezza e conformità](mail-flow-insights-v2.md)<br/> |
 |**Conformità al GDPR** <br/> Informazioni sulla conformità di GDPR, inclusi i collegamenti agli argomenti di dati, le tendenze &amp; delle etichette e i casi chiusi attivi  <br/> |Nel centro sicurezza &amp; e conformità, passare a **Data Privacy** \> **GDPR dashboard** <br/> |[Information Protection di Office 365 per il GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
 |**Registro di controllo** <br/> Informazioni sulle attività di Office 365, utenti, file o cartelle e altro ancora  <br/> |Nel centro sicurezza &amp; e conformità, andare alla **ricerca nel registro di controllo** analisi \> di **ricerca &amp; ** <br/> |[Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità di Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
