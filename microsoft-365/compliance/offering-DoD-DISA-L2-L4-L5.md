@@ -1,7 +1,7 @@
 ---
 title: Autorizzazione provvisoria del dipartimento della difesa degli Stati Uniti (DoD)
 description: Autorizzazioni provvisorie del Department of Defense (DoD) di Microsoft ricevute ai livelli di impatto 5, 4 e 2.
-keywords: Microsoft 365, conformità, soluzioni
+keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6a41cb2c55e1711048c863cd6f2f7e26e9ee5bc
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: ad9659799494a3aaad4a3436b263ebcfd2b56d1c
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959555"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112500"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorizzazione provvisoria del dipartimento della difesa degli Stati Uniti (DoD) ai livelli di impatto 2, 4 e 5
 
@@ -36,7 +36,7 @@ I servizi cloud governativi di Microsoft soddisfano i requisiti esigenti del dip
 - Informazioni sui vantaggi di DoD DISA L2, L4, L5 sul cloud Microsoft: [scaricare il reparto della difesa DISA Backgrounder](https://aka.ms/disa-backgrounder)
 - Informazioni su come accelerare la distribuzione del modello di protezione DISA L2, L4, L5 con il progetto di sicurezza e conformità di Azure: [scaricare le implementazioni dei controlli di sicurezza di Azure DOD Level 5](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
 
-## <a name="dod-impact-level-5-provisional-authorization"></a>[Autorizzazione provvisoria del livello di impatto di DoD 5
+## <a name="dod-impact-level-5-provisional-authorization"></a>Autorizzazione provvisoria del livello di impatto del DoD 5
 
 Il supporto del servizio di cloud DISA ha concesso un livello di impatto 5 PA per Microsoft Azure Government per la difesa. DISA ha anche concesso a Office 365 US Government Defense un livello di impatto 5 della difesa. Il livello di impatto 5 copre le informazioni non classificate controllate (cui) ritenute dalla legge, da altre normative governative o dall'agenzia che possiede le informazioni e ha bisogno di un livello di protezione superiore a quello previsto dal livello 4. Copre anche sistemi di sicurezza nazionali non classificati.
 

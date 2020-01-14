@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Office 365 Advanced eDiscovery v 1.0 vengono anche ritirati entro lo stesso periodo di tempo.
-ms.openlocfilehash: c0cef17acf0028472a9b92352afd51786a8ae25c
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: cb24c40cc2018fba6d1feb13ef0d6426abd2c49a
+ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970824"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41107905"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Pensionamento degli strumenti di eDiscovery legacy
 
@@ -59,7 +59,7 @@ Nelle sezioni seguenti di questo articolo vengono fornite indicazioni su ogni ca
 
 Secondo l'annuncio originale del 1 ° luglio 2017, il eDiscovery sul posto & la funzionalità di blocco nell'interfaccia di amministrazione di Exchange (EAC) è in fase di ritirata. La pagina dei & di eDiscovery sul posto nell'interfaccia di amministrazione di Exchange consentiva di cercare, conservare ed esportare il contenuto proveniente dalla rete. EDiscovery sul posto consente inoltre di copiare i risultati della ricerca in una cassetta postale di individuazione in modo che sia possibile esaminare il contenuto e renderlo disponibile per le richieste legali, normative e pubbliche da parte di altri responsabili di eDiscovery.
 
-Perché tutte queste funzionalità (ad eccezione della copia dei risultati di ricerca in una cassetta postale di individuazione) sono ora disponibili negli strumenti di ricerca contenuto, eDiscovery e Advanced eDiscovery nel [centro conformità di microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (con funzionalità, affidabilità e supporto migliorati per una vasta gamma di servizi Microsoft 365), è consigliabile iniziare a usare questi strumenti appena possibile. Per facilitare la transizione a questi altri strumenti di eDiscovery, nella tabella seguente sono elencati gli strumenti che è possibile utilizzare invece di eDiscovery sul posto e blocco sul posto.
+Poiché tutte queste funzionalità (ad eccezione della copia dei risultati di ricerca in una cassetta postale di individuazione) sono ora disponibili negli strumenti ricerca contenuto, eDiscovery e Advanced eDiscovery nel [centro conformità di microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (con funzionalità, affidabilità e supporto migliorati per una vasta gamma di servizi Microsoft 365), è consigliabile iniziare a usare questi strumenti appena possibile. Per facilitare la transizione a questi altri strumenti di eDiscovery, nella tabella seguente sono elencati gli strumenti che è possibile utilizzare invece di eDiscovery sul posto e blocco sul posto.
 
 ### <a name="scope-of-affected-organizations"></a>Ambito delle organizzazioni coinvolte
     
@@ -114,7 +114,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <li>
 <p>Applicazione di criteri all'intera organizzazione </p>
 </li><li>
-<p>Applicazione di criteri di polizia a posizioni di contenuto specifiche quali Exchange Online, SharePoint Online, OneDrive for business, Skype for business, Microsoft teams e Office 365 groups</p></li>
+<p>Applicazione dei criteri a posizioni di contenuto specifiche quali Exchange Online, SharePoint Online, OneDrive for business, Skype for business, Microsoft teams e Office 365 groups</p></li>
 <li>
 <p>Applicazione di criteri a utenti specifici</p></li></ul>
 <p>Per ulteriori informazioni, vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">Overview of Retention Policies</a>.</td>
@@ -205,7 +205,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <tr class="odd">
 <td>Copiare i risultati della ricerca in una cassetta postale di individuazione</td>
 <td>Nessuno</td>
-<td>Non è disponibile una sostituzione diretta per questa funzionalità poiché non fornisce l'accesso a tutti i servizi di Microsoft 365. Per le soluzioni alternative, vedere le domande frequenti seguenti.</td>
+<td>Non è disponibile una sostituzione diretta per questa funzionalità poiché non fornisce l'accesso a tutti i servizi di Microsoft 365. Vedere le domande frequenti seguenti per soluzioni alternative.</td>
 </tr>
 </tbody>
 </table>
@@ -268,7 +268,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></p></td>
-<td><p>I cmdlet ComplianceSearch e ComplianceSearchAction interagiscono per facilitare la ricerca e l'eliminazione del contenuto. È possibile creare ed eseguire una ricerca con cmdlet <strong>New-ComplianceSearch</strong> e <strong>New-ComplianceSearch</strong> , quindi è possibile eliminare il contenuto utilizzando il comando <strong>New-ComplianceSearchAction-Purge e-PurgeType</strong> .</p>
+<td><p>I cmdlet ComplianceSearch e ComplianceSearchAction interagiscono per facilitare la ricerca e l'eliminazione del contenuto. È possibile creare ed eseguire una ricerca con cmdlet <strong>New-ComplianceSearch</strong> e <strong>New-ComplianceSearch</strong> , quindi è possibile eliminare il contenuto utilizzando il comando <strong>New-ComplianceSearchAction-Purge-PurgeType</strong> . Per ulteriori informazioni, vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">cercare ed eliminare i messaggi</span></a>.</p>
 </td>
 </tr>
 <tr class="odd">
@@ -317,7 +317,7 @@ A questo punto, si consiglia di iniziare a eseguire la transizione del flusso di
     
 - 2020 aprile 1: non è possibile creare nuovi casi avanzati di eDiscovery v 1.0.
     
-- 1 luglio 2020: il supporto tecnico Microsoft non fornisce supporto. Consultare [questo avviso](https://go.microsoft.com/fwlink/?linkid=2113221). Non sarà possibile aggiungere nuovi dati (preparare i risultati della ricerca per Advanced eDiscovery) a tutti i casi. È possibile continuare a utilizzare i dati nei casi esistenti a proprio rischio e pericolo.
+- 1 luglio 2020: il supporto tecnico Microsoft non fornisce supporto. Vedere [questo avviso](https://go.microsoft.com/fwlink/?linkid=2113221). Non sarà possibile aggiungere nuovi dati (preparare i risultati della ricerca per Advanced eDiscovery) a tutti i casi. È possibile continuare a utilizzare i dati nei casi esistenti a proprio rischio e pericolo.
 
 ### <a name="alternative-tools"></a>Strumenti alternativi
     

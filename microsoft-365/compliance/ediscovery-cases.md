@@ -1,5 +1,5 @@
 ---
-title: casi di eDiscovery nel centro sicurezza & Compliance
+title: Gestire i casi di eDiscovery nel Centro sicurezza e conformità
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,21 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
-description: Utilizzare il Centro sicurezza & conformità per creare e gestire i casi di eDiscovery nell'organizzazione. È possibile assegnare membri al caso, inserire posizioni di contenuto in attesa, eseguire ricerche di contenuto associate al caso e esportare i risultati della ricerca. È inoltre possibile preparare i dati dei casi per un'ulteriore analisi in Advanced eDiscovery.
-ms.openlocfilehash: efd5d20d72794ff6f71d2b1c6858bee615b14f3a
-ms.sourcegitcommit: 952d2d4e0efa77cfbb583971ef7056e664d409e3
+description: Utilizzare il Centro sicurezza & conformità per creare e gestire i casi di eDiscovery nell'organizzazione. È possibile assegnare membri al caso, inserire posizioni di contenuto in attesa, eseguire ricerche di contenuto associate al caso e esportare i risultati della ricerca. È inoltre possibile preparare i dati dei casi per un'ulteriore analisi in Office 365 Advanced eDiscovery.
+ms.openlocfilehash: 3d5e67edf30f1b1f78e6c4992760c18d1493e108
+ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854061"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41107915"
 ---
-# <a name="ediscovery-cases-in-the-security--compliance-center"></a>casi di eDiscovery nel centro sicurezza & Compliance
+# <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gestire i casi di eDiscovery nel Centro sicurezza e conformità
 
 È possibile utilizzare i casi di eDiscovery nel centro conformità di Office 365 e Microsoft 365 per controllare gli utenti autorizzati a creare, accedere e gestire i casi di eDiscovery nell'organizzazione. Se l'organizzazione dispone di un abbonamento a Office 365 E5, è anche possibile utilizzare i casi di eDiscovery per analizzare i risultati della ricerca tramite Office 365 Advanced eDiscovery.
   
 Un caso di eDiscovery consente di aggiungere membri a un caso, controllare i tipi di azione che i membri del caso specifico possono eseguire, conservare i percorsi di contenuti attinenti a un caso legale e associare più ricerche di contenuto a un caso singolo. È inoltre possibile esportare i risultati di una ricerca di contenuto associata a un caso oppure preparare i risultati della ricerca per l'analisi in Advanced eDiscovery. I casi di eDiscovery sono un'ottima soluzione per limitare chi ha accesso a ricerche di contenuto e risultati della ricerca per un caso legale specifico nell'organizzazione.
   
-Utilizzare il flusso di lavoro seguente per configurare e usare i casi di eDiscovery nel centro sicurezza & compliance e Advanced eDiscovery.
+Utilizzare il flusso di lavoro seguente per configurare e utilizzare i casi di eDiscovery nel centro sicurezza & compliance e Advanced eDiscovery.
 
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
@@ -51,7 +51,7 @@ Utilizzare il flusso di lavoro seguente per configurare e usare i casi di eDisco
 
 [Optional Passaggio 10: riaprire un caso chiuso](#optional-step-10-re-open-a-closed-case)
 
-[Ulteriori informazioni](#more-information)
+[Altre informazioni](#more-information)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 
@@ -148,7 +148,7 @@ Dopo aver creato un caso, il passaggio successivo consiste nell'aggiungere membr
   
 ## <a name="step-4-place-content-locations-on-hold"></a>Passaggio 4: posizionare i percorsi di contenuto in attesa
 
-È possibile utilizzare un caso eDiscovery per creare blocchi al fine di conservare contenuti che potrebbero essere attinenti al caso. È possibile applicare un blocco alle cassette postali e ai siti di OneDrive for business di persone che sono depositarie nel caso. È inoltre possibile inserire un blocco nel sito di gruppo cassetta postale, sito di SharePoint e OneDrive for business per un gruppo di Office 365. Analogamente, è possibile applicare un'esenzione alla cassetta postale e al sito associati a Microsoft teams. Quando si posizionano le posizioni di contenuto in attesa, il contenuto viene mantenuto fino a quando non viene rimosso il blocco dal percorso del contenuto o fino a quando non viene eliminato il blocco.
+È possibile utilizzare un caso eDiscovery per creare blocchi al fine di conservare contenuti che potrebbero essere attinenti al caso. È possibile applicare un blocco alle cassette postali e ai siti di OneDrive for business di persone che sono depositarie nel caso. È inoltre possibile inserire un blocco nel sito di gruppo cassetta postale, sito di SharePoint e OneDrive for business per un gruppo di Office 365. Analogamente, è possibile applicare un blocco alle cassette postali e ai siti associati a Microsoft teams o ai gruppi di Yammer. Quando si posizionano le posizioni di contenuto in attesa, il contenuto viene mantenuto fino a quando non viene rimosso il blocco dal percorso del contenuto o fino a quando non viene eliminato il blocco.
 
 > [!NOTE]
 > Dopo aver attivato il blocco del contenuto, sono necessarie fino a 24 ore per rendere effettive le esenzioni. 
@@ -186,14 +186,14 @@ Per creare un'esenzione per un caso di eDiscovery:
     
     ![Scegliere i percorsi dei contenuti da mettere in attesa](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Posta elettronica di Exchange.** Fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** . per specificare le cassette postali da inserire in attesa. Utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione (per inserire un'esenzione nelle cassette postali dei membri del gruppo) per effettuare il blocco. È inoltre possibile inserire un blocco sulla cassetta postale associata per un gruppo di Office 365 o un team di Microsoft. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
+   a. **Posta elettronica di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** . per specificare le cassette postali da inserire in attesa. Utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione (per inserire un'esenzione nelle cassette postali dei membri del gruppo) per effettuare il blocco. È inoltre possibile inserire un blocco sulla cassetta postale associata per un team di Microsoft, un gruppo di Yammer o un gruppo di Office 365. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
     
     > [!NOTE]
     > Quando si fa clic su **Scegli utenti, gruppi o team** per specificare le cassette postali da inserire in attesa, lo strumento di selezione delle cassette postali visualizzato è vuoto. Si tratta di un'impostazione predefinita per migliorare le prestazioni. Per aggiungere persone a questo elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca. 
-  
-   b. **Siti di SharePoint.** Fare clic su **Scegli siti** e quindi fare clic su **Scegli nuovo sito** per specificare i siti di SharePoint e OneDrive for business in attesa. Digitare l'URL per ogni sito che si desidera conservare. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Office 365 o un team di Microsoft. Fare clic su **Scegli**e quindi su **fine**.
+
+   b. **Siti di SharePoint** -fare clic su **Scegli siti** , quindi fare di nuovo clic su **Choose sites** per specificare i siti di SharePoint e OneDrive for business in attesa. Digitare l'URL per ogni sito che si desidera conservare. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un team di Microsoft, un gruppo di Yammer o un gruppo di Office 365. Fare clic su **Scegli**e quindi su **fine**.
     
-    Vedere la sezione [ulteriori informazioni](#more-information) per suggerimenti su come mettere in attesa i gruppi di Office 365 e Microsoft teams. 
+    Vedere la sezione [ulteriori informazioni](#more-information) per suggerimenti su come mettere in attesa Microsoft teams, gruppi di Yammer e gruppi di Office 365. 
     
     > [!NOTE]
     > Nel caso raro che il nome dell'entità utente (UPN, User Principal Name) di una persona venga modificato, l'URL per il relativo account OneDrive verrà modificato anche per incorporare il nuovo UPN. In questo caso, è necessario modificare il blocco aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente. 
@@ -272,7 +272,7 @@ Dopo aver creato un caso di eDiscovery, e archiviato i depositari correlati al c
     
     ![Posizioni, posizioni in attesa](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **Tutte le posizioni.** Selezionare questa opzione per eseguire la ricerca in tutti i percorsi di contenuto dell'organizzazione. Quando si seleziona questa opzione, è possibile scegliere di effettuare una ricerca in tutte le cassette postali di Exchange (incluse le cassette postali per tutti i gruppi di Office 365 e Microsoft Teams), tutti i siti di SharePoint e OneDrive for business (che include i siti per tutti i gruppi di Office 365 e Microsoft Teams) e tutte le cartelle pubbliche.
+    - **Tutte le posizioni** : selezionare questa opzione per eseguire la ricerca in tutti i percorsi di contenuto dell'organizzazione. Quando si seleziona questa opzione, è possibile scegliere di effettuare una ricerca in tutte le cassette postali di Exchange (incluse le cassette postali per tutti i team Microsoft, i gruppi di Yammer e i gruppi di Office 365), tutti i siti di SharePoint e OneDrive for business (inclusi i siti per tutti gli utenti di Microsoft Teams, gruppi di Yammer e gruppi di Office 365) e tutte le cartelle pubbliche.
     
     - **Tutte le posizioni in attesa.** Selezionare questa opzione per cercare tutti i percorsi di contenuto che sono stati inseriti in attesa nel caso. Se il caso contiene più esenzioni, i percorsi di contenuto di tutte le esenzioni verranno ricercati quando si seleziona questa opzione. Inoltre, se un percorso di contenuto è stato posizionato in un blocco basato su query, vengono ricercati solo gli elementi che sono in attesa quando si esegue la ricerca di contenuto che si sta creando in questo passaggio. Ad esempio, se un utente è stato inserito in una conservazione basata su query che conserva gli elementi inviati o creati prima di una data specifica, solo gli elementi verranno ricercati utilizzando i criteri di ricerca della ricerca contenuto. Questa operazione viene eseguita collegando la query di blocco del caso e la query di ricerca del contenuto da parte di un operatore **and** . Vedere la sezione [ulteriori informazioni](#more-information) alla fine di questo articolo per ulteriori informazioni sulla ricerca di contenuto del caso. 
     
@@ -288,9 +288,9 @@ Dopo aver creato un caso di eDiscovery, e archiviato i depositari correlati al c
     
       - Quando si fa clic su **Scegli utenti, gruppi o team** per specificare le cassette postali da cercare, lo strumento di selezione delle cassette postali visualizzato è vuoto. Si tratta di un'impostazione predefinita per migliorare le prestazioni. Per aggiungere destinatari all'elenco, fare clic su **Scegli utenti, gruppi o team**, digitare un nome, almeno 3 caratteri, nella casella di ricerca, selezionare la casella di controllo accanto al nome, quindi fare clic su **Scegli**. 
     
-      - È possibile aggiungere le cassette postali inattive, i gruppi di Office 365, Microsoft teams e i gruppi di distribuzione all'elenco delle cassette postali da cercare. Non sono supportati i gruppi di distribuzione dinamici. Se si aggiungono gruppi di Office 365 o Microsoft teams, viene eseguita la ricerca nella cassetta postale del gruppo o del team. Le cassette postali dei membri del gruppo non vengono cercate.
+      - È possibile aggiungere cassette postali inattive, Microsoft teams, gruppi di Yammer, gruppi di Office 365 e gruppi di distribuzione all'elenco delle cassette postali da cercare. Non sono supportati i gruppi di distribuzione dinamici. Se si aggiungono Microsoft teams, gruppi di Yammer o gruppi di Office 365, viene eseguita la ricerca nella cassetta postale del gruppo o del team. le cassette postali dei membri del gruppo non vengono cercate.
     
-      - Per aggiungere siti fare clic su **Scegli siti**, fare di nuovo clic su **Scegli siti** e quindi digitare l'URL per ogni sito che si desidera ricercare. È inoltre possibile aggiungere l'URL per il sito di SharePoint per i gruppi di Office 365 e Microsoft teams. 
+      - Per aggiungere siti fare clic su **Scegli siti**, fare di nuovo clic su **Scegli siti** e quindi digitare l'URL per ogni sito che si desidera ricercare. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un team di Microsoft, un gruppo di Yammer o un gruppo di Office 365. 
     
 10. Dopo aver selezionato i percorsi di contenuto in cui eseguire la ricerca, fare clic su **fine** e quindi su **Salva**.
     
@@ -519,7 +519,31 @@ Quando si riapre un caso, tutte le esenzioni sul posto quando il caso è stato c
     
     Al termine del processo, lo stato del caso viene modificato in **attivo** nella pagina **eDiscovery** . 
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="optional-step-11-delete-a-case"></a>Optional Passaggio 11: eliminazione di un caso
+
+È inoltre possibile eliminare i casi attivi e chiusi. Quando si elimina un caso, tutte le ricerche e le esportazioni nel caso vengono eliminate ed è stata rimossa dall'elenco dei casi nella pagina **eDiscovery** nel centro sicurezza & conformità. Non è possibile riaprire un caso eliminato. 
+
+Prima di poter eliminare un caso (che sia attivo o chiuso), è necessario prima eliminare *tutti* gli appigli associati al caso. Che include l'eliminazione di esenzioni con stato **disattivata**. 
+
+Per eliminare un'esenzione:
+
+1. Andare alla scheda **esenzioni** nel caso in cui si desidera eliminare.
+
+2. Fare clic sul blocco che si desidera eliminare.
+
+3. Nella pagina a comparsa fare clic su **Elimina blocco**.
+
+Per eliminare un caso:
+
+1. Nel centro sicurezza & conformità, fare clic su **eDiscovery** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
+    
+2. Fare clic sul nome del caso che si desidera eliminare.
+
+3. In **Gestione stato caso** nella pagina riquadro a comparsa fare clic su **Elimina caso**.
+
+Se il caso in cui si sta tentando di eliminare contiene ancora le esenzioni, verrà visualizzato un messaggio di errore. Sarà necessario eliminare tutte le esenzioni associate al caso e quindi riprovare per eliminare il caso.
+
+## <a name="more-information"></a>Ulteriori informazioni
 
 - **Esistono limiti per i casi di eDiscovery o per i detiene associati a un caso di eDiscovery?** Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esenzioni del caso.
     
@@ -527,7 +551,7 @@ Quando si riapre un caso, tutte le esenzioni sul posto quando il caso è stato c
   |:-----|:-----|
   |Numero massimo di casi per un'organizzazione  <br/> |Nessun limite  <br/> |
   |Numero massimo di case conservate per un'organizzazione  <br/> |10.000  <br/> |
-  |Numero massimo di cassette postali in un singolo blocco maiuscole/minuscole  <br/> |1.000  <br/> |
+  |Numero massimo di cassette postali in un singolo blocco maiuscole/minuscole  <br/> |1,000  <br/> |
   |Numero massimo di siti di SharePoint e OneDrive for business in un unico blocco del caso  <br/> |100  <br/> |
    
 - **Che dire dei casi creati nella pagina di gestione dei casi in Advanced eDiscovery?** È possibile accedere a un elenco dei casi di eDiscovery avanzati precedenti facendo clic sul collegamento nella parte inferiore della pagina **eDiscovery** nel centro sicurezza & conformità. Tuttavia, per eseguire qualsiasi operazione in un caso meno recente, è necessario contattare il supporto di Office 365 e richiedere che il caso venga spostato in un nuovo caso di eDiscovery nel centro sicurezza & Compliance. 

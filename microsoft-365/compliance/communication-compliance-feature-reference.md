@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ece7264eba56aa9b389b0dc3555d69e71cc30ad5
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 886ede889e1843c7f7e94b89aeffb89d59a0120a
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959614"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111850"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni (anteprima)
 
@@ -277,6 +277,12 @@ Ad esempio, nell'esempio seguente vengono restituite le attività per tutte le a
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
+```
+
+In questo esempio vengono restituite le attività di aggiornamento per i criteri di conformità della comunicazione:
+
+```PowerShell
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?

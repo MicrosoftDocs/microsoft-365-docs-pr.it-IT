@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 101078adea821b5ddd3d525d26a7e9dbca1e1512
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8627a46ee861751799e1175c7e030e1b28c6d935
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807375"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111885"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365-preview"></a>Configurare la conformità delle comunicazioni in Microsoft 365 (anteprima)
 
@@ -42,7 +42,7 @@ Seguire questa procedura per configurare e usare la conformità della comunicazi
 
 - **Passaggio 2 (obbligatorio)**: [rendere la conformità della comunicazione disponibile nell'organizzazione](#step-2-make-communication-compliance-available-in-your-organization-required)
 
-    Aggiungersi al ruolo **amministratore revisione di supervisione** per impostare i criteri. È inoltre necessario creare un gruppo con l' **amministratore revisione di supervisione**, la **gestione dei casi**e i ruoli di **Revisione** per persone o gruppi che avranno un'azione di verifica e correzione nei messaggi con corrispondenze di criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Aggiungersi al ruolo **amministratore revisione di supervisione** per impostare i criteri. È inoltre necessario creare un nuovo gruppo con l' **amministratore revisione di supervisione**, la **gestione dei casi**e i ruoli di **Revisione** per persone o gruppi che avranno un'azione di verifica e correzione nei messaggi con corrispondenze di criteri. Tutti gli utenti a cui è assegnato questo ruolo possono accedere alla pagina **conformità comunicazione** nel centro conformità di Microsoft 365. Se il messaggio di posta elettronica rivisualizzabile è ospitato in Exchange Online, ogni revisore deve disporre dell' [accesso remoto a PowerShell a Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Passaggio 3 (obbligatorio)**: [impostare un criterio di conformità della comunicazione](#step-3-create-a-communication-compliance-policy-required)
 
@@ -88,15 +88,17 @@ Per rendere la **conformità di comunicazione** disponibile come opzione di menu
 
 ### <a name="create-a-new-role-group"></a>Creare un nuovo gruppo di ruoli
 
-1. Accedere [https://compliance.microsoft.com](https://compliance.microsoft.com) con le credenziali per un account di amministratore nell'organizzazione di Office 365.
+1. Accedere [https://protection.office.com/permissions](https://protection.office.com/permissions) con le credenziali per un account di amministratore nell'organizzazione Microsoft 365.
 
-2. Nel centro conformità di Microsoft 365, andare a **autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
+2. Nel centro sicurezza e conformità di Microsoft Office 365 accedere a **autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
 
 3. Selezionare **Crea**.
 
 4. Nel campo **nome** assegnare un nome descrittivo al nuovo gruppo di ruoli.  Select **Next**. 
 
 5. Selezionare **Scegli ruoli** e quindi **Aggiungi**. Selezionare la casella di controllo per l' **amministratore revisione di supervisione**, la **gestione dei casi**e la **Revisione**, quindi selezionare **Aggiungi** e **Chiudi**.  Select **Next**. 
+
+    ![Gruppi di ruoli necessari per la conformità della comunicazione](media/communication-compliance-role-groups.png)
 
 6. Selezionare **Scegli membri** e quindi **Aggiungi**. Selezionare la casella di controllo per tutti gli utenti e i gruppi che si desidera creare criteri e gestire i messaggi con le corrispondenze di criteri, quindi fare clic su **Aggiungi** e **Chiudi**.  Select **Next**. 
 
