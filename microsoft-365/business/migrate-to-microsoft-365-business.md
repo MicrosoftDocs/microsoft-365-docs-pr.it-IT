@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Passaggi che aggiornano la propria azienda da Office 365 Business Premium a Microsoft 365 business.
-ms.openlocfilehash: 95c4504d7e6e33bdededee0cfca7add0cb5f7204
-ms.sourcegitcommit: 2c2248b03f7753d64490f2f7e56ec644a235b65a
+ms.openlocfilehash: 61da9148ccb87654aa2391ff90c4f086a4cbbe24
+ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38640562"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41120142"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Eseguire l'aggiornamento a Microsoft 365 business da Office 365 Business Premium
 
@@ -68,7 +68,7 @@ Microsoft impiega alcuni minuti per configurare i nuovi piani di servizio. Per v
 1. Una volta che il piano è pronto, potrebbe essere necessario completare alcuni passaggi di installazione aggiuntivi nell'interfaccia di amministrazione. Nel riquadro di spostamento, selezionare **Home** per completare i passaggi di installazione aggiuntivi.
 
 > [!NOTE]
-> Si riceverà un rimborso proporzionale per le licenze di Ofifce 365 che non è più necessario. Il conto corrente bancario o la carta di credito viene addebitata circa due giorni dopo la configurazione del nuovo piano.
+> Si riceverà un rimborso proporzionale per le licenze di Office 365 che non è più necessario. Il conto corrente bancario o la carta di credito viene addebitata circa due giorni dopo la configurazione del nuovo piano.
   
 ## <a name="protect-user-devices-and-files"></a>Protezione dei dispositivi e dei file utente
 
