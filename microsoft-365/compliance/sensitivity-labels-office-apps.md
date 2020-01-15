@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come gli utenti lavorano con le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
-ms.openlocfilehash: 32ad0abf61de5a64aac6914532f59bb5602e9d83
-ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
+ms.openlocfilehash: 3b8522dea71cd0ece5ec63f07a733e1eb5283a43
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40999590"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123627"
 ---
 # <a name="sensitivity-labels-in-office-apps"></a>Etichette di riservatezza nelle app di Office
 
@@ -52,7 +52,9 @@ Per utilizzare l'etichetta di riservatezza automatica o consigliata, gli utenti 
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Supporto per le funzionalità delle etichette di riservatezza nelle app
 
-Per ogni funzionalità, nelle tabelle seguenti sono elencate le versioni minime necessarie per l'app per supportare le etichette di riservatezza utilizzando l'etichettatura incorporata. Le nuove versioni vengono rese disponibili in tempi diversi per i diversi canali di aggiornamento. Per ulteriori informazioni, tra cui la configurazione del canale di aggiornamento in modo che sia possibile testare una nuova funzionalità di etichettatura interessata, vedere [Overview of Update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
+Per ogni funzionalità, nelle tabelle seguenti sono elencate le versioni minime necessarie per l'app per supportare le etichette di riservatezza utilizzando l'etichettatura incorporata. In alternativa, se la funzionalità etichetta è in anteprima pubblica o in revisione per una versione futura.
+
+Le nuove versioni delle app vengono rese disponibili in tempi diversi per i diversi canali di aggiornamento. Per ulteriori informazioni, tra cui la configurazione del canale di aggiornamento in modo che sia possibile testare una nuova funzionalità di etichettatura interessata, vedere [Overview of Update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Le nuove funzionalità che si trovano nell'anteprima privata non sono incluse nella tabella, ma è possibile partecipare a queste anteprime nominando l'organizzazione per il [programma Microsoft Information Protection private preview](https://aka.ms/mip-preview).
 
 Altre funzionalità sono disponibili quando si installa il client di etichettatura unificata di Azure Information Protection, che viene eseguito solo nei computer Windows. Per questi dettagli, vedere [confrontare i client di etichettatura per i computer Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
@@ -76,7 +78,7 @@ Altre funzionalità sono disponibili quando si installa il client di etichettatu
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Funzionalità delle etichette di riservatezza in Outlook
 
-|Funzionalità                                                                                                        |Desktop di Outlook su Windows |Desktop di Outlook su Mac  |Outlook su iOS |Outlook su Android |Outlook sul Web |
+|Funzionalità                                                                                                        |Desktop di Outlook su Windows |Desktop di Outlook su Mac  |Outlook su iOS |Outlook su Android |Outlook sul web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
 |[Applica, modifica o Rimuovi manualmente l'etichetta](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sì               |
 |[Applicare un'etichetta predefinita](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21 +                 | 4.71 +         | 4.0.39 +           | Sì               |

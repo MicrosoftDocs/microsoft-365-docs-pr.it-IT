@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di conservazione che conserva il contenuto in Microsoft 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
-ms.openlocfilehash: 55a6f52a92c23d8c7fc2464c846faf730617ef2f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a48d47c6b02ebe20ba5fb48470a2efc88aa3dbc7
+ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806069"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41123667"
 ---
 # <a name="overview-of-disposition-reviews"></a>Panoramica delle recensioni sulla disposizione
 
@@ -56,18 +56,22 @@ Una recensione di disposizione può includere il contenuto nelle cassette postal
   
 ![Pagina disposizioni nel centro sicurezza e conformità](media/Retention-Dispositions-v2-page.png)
 
+
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Impostazione della revisione della disposizione mediante la creazione di un'etichetta di conservazione
 
 Si tratta del flusso di lavoro di base per l'impostazione di una revisione di disposizione. Si noti che questo flusso Visualizza un'etichetta di conservazione che viene pubblicata e quindi applicata manualmente da un utente. in alternativa, un'etichetta di conservazione che attiva una revisione della disposizione può essere applicata automaticamente al contenuto.
   
 ![Grafico che mostra il flusso di come funziona la disposizione](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-Una recensione di disposizione è un'opzione quando si crea un'etichetta di conservazione in Office 365. Si noti che questa opzione non è disponibile in un criterio di conservazione, ma solo in un'etichetta di conservazione configurata per mantenere il contenuto.
+Una recensione di disposizione è un'opzione quando si crea un'etichetta di conservazione in Office 365. Questa opzione non è disponibile in un criterio di conservazione, ma solo in un'etichetta di conservazione configurata per mantenere il contenuto.
   
 Per ulteriori informazioni sulle etichette di conservazione, vedere [Overview of retention labels](labels.md).
   
 ![Impostazioni di conservazione per un'etichetta](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
-  
+ 
+> [!NOTE]
+> Quando si specifica l'opzione **notifica a queste persone quando sono disponibili elementi pronti per la revisione**, specificare un utente o un gruppo di sicurezza abilitato alla posta elettronica. I gruppi di Office 365 non sono supportati per questa opzione.
+
 ## <a name="disposing-content"></a>Eliminazione del contenuto
 
 Quando un revisore riceve una notifica tramite posta elettronica che il contenuto è pronto per la revisione, può **** accedere alla pagina di disposizione &amp; nel centro sicurezza e conformità. I revisori possono vedere quanti elementi per ogni etichetta di conservazione sono in attesa di disposizione, quindi selezionare un'etichetta di conservazione per visualizzare tutto il contenuto con quell'etichetta.
@@ -94,9 +98,15 @@ Si noti inoltre che tutte le azioni di disposizione vengono controllate. Per gar
   
 ## <a name="permissions-for-disposition"></a>Autorizzazioni per la disposizione
 
-Per accedere alla pagina **disposizione** , i revisori devono essere membri del ruolo **gestione disposizione** e del ruolo di **controllo di sola visualizzazione** . È consigliabile creare un nuovo gruppo di ruoli denominato reviewers Disposition, aggiungendo questi due ruoli a quel gruppo di ruoli e quindi aggiungendo membri al gruppo di ruoli. 
-  
-Per ulteriori informazioni, vedere [fornire agli utenti l'accesso al centro sicurezza &amp; e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+Per accedere alla pagina **disposizione** , i revisori devono essere membri del ruolo **gestione disposizione** e del ruolo di **controllo di sola visualizzazione** . È consigliabile creare un nuovo gruppo di ruoli denominato **reviewers Disposition**e aggiungere questi due ruoli a quel gruppo di ruoli. 
+
+Specifica del ruolo di **controllo di sola visualizzazione** :
+
+- Poiché il cmdlet sottostante utilizzato per eseguire la ricerca nel log di controllo è un cmdlet di Exchange Online, è necessario assegnare agli utenti questo ruolo utilizzando l'interfaccia di [amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), anziché utilizzando la pagina **autorizzazioni** nel centro sicurezza & conformità. Per istruzioni, vedere [gestire i gruppi di ruoli in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+
+- I gruppi di Office 365 non sono supportati per questo ruolo. Assegnare invece le cassette postali utente, gli utenti di posta elettronica o i gruppi di sicurezza abilitati alla posta elettronica.
+
+Per istruzioni su come concedere agli utenti il ruolo di **gestione della disposizione** e creare il nuovo ruolo **revisori disposizione** , vedere [fornire agli utenti l' &amp; accesso al centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Durata dell'eliminazione definitiva del contenuto eliminato
 
