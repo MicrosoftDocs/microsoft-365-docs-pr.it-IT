@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aggiornamenti automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
-ms.openlocfilehash: 6cf7b25c584b94b077b95b35be58f6cd5ef75ac5
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: 7bca0a185bccbec1ee857b17817debfd7f06feb0
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078085"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112700"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Aggiornamenti sul posto automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
 
@@ -40,7 +40,7 @@ Gli aggiornamenti sul posto a Windows 10 rappresentano un approccio affidabile p
 
 Per impostazione predefinita, il processo di aggiornamento esegue il backup dell'installazione precedente di Windows come parte dell'aggiornamento, in modo che, in caso di errore di aggiornamento o se dopo l'aggiornamento un dispositivo o un'applicazione non funziona correttamente, sia possibile eseguire il rollback a Windows 7. Per impostazione predefinita, i PC aggiornati hanno 10 giorni, per cui è possibile avviare manualmente un rollback a Windows 7, se necessario.
 
-Gli aggiornamenti sul posto possono essere automatizzati con strumenti di distribuzione del sistema operativo come [System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) o [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit). Questo articolo illustra gli approcci automatizzati e le ottimizzazioni insieme ai collegamenti alle risorse correlate per ottenere assistenza.
+Gli aggiornamenti sul posto possono essere automatizzati con strumenti di distribuzione del sistema operativo come [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) o [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit). Questo articolo illustra gli approcci automatizzati e le ottimizzazioni insieme ai collegamenti alle risorse correlate per ottenere assistenza.
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Aggiornamento di un numero ridotto di computer
 
@@ -48,7 +48,7 @@ Per un singolo computer o un numero ridotto di computer, l'approccio manuale all
 
 ## <a name="how-to-upgrade-many-computers"></a>Come eseguire l'aggiornamento di più computer
 
-Se si gestiscono decine o migliaia di computer, l'opzione migliore consiste nell'eseguire gli aggiornamenti sul posto ricorrendo all'automazione della sequenza di attività con System Center Configuration Manager o Microsoft Deployment Toolkit. Anche se il processo è molto affidabile nella maggior parte delle situazioni, a seconda del numero di PC che si sta aggiornando, è comunque importante ricorrere a test e controlli per garantire il successo su larga scala.
+Se si gestiscono decine o migliaia di computer, l'opzione migliore consiste nell'eseguire gli aggiornamenti sul posto ricorrendo all'automazione della sequenza di attività con Microsoft Endpoint Configuration Manager o Microsoft Deployment Toolkit. Anche se il processo è molto affidabile nella maggior parte delle situazioni, a seconda del numero di PC che si sta aggiornando, è comunque importante ricorrere a test e controlli per garantire il successo su larga scala.
 
 Ciò significa che è possibile ignorare la preparazione delle directory o le attività associate al recapito e al packaging delle app Azure Active Directory, Office e line-of-business e alla migrazione dei file degli utenti, dal momento che questi aspetti vengono conservati come parte dell'aggiornamento e la sicurezza deve essere ereditata. Queste aree possono essere migliorate tutte nel tempo.
 
@@ -78,13 +78,13 @@ Le cause più comuni del mancato completamento degli aggiornamenti o dell'imposs
 
   - Soluzioni di codice di ultimo livello, come antimalware, VPN o virtualizzazione
 
-I modelli [di sequenza di attività di aggiornamento](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) sono integrati in System Center Configuration Manager (Current Branch) e sono disponibili da diverse versioni. Nelle versioni recenti sono stati apportati miglioramenti tecnologici notevoli a System Center Configuration Manager, che rendono persino più efficiente il processo per determinare la preparazione alla compatibilità dei dispositivi e di Office, ridurre il traffico di rete e configurare nuove opzioni come il backup di OneDrive. Guarda questo [programma Microsoft Mechanics](https://youtu.be/CYRnAmCD7ls) per altre informazioni sugli aggiornamenti recenti alla distribuzione del sistema operativo di System Center Configuration Manager.
+I modelli di [sequenza di attività di aggiornamento](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) sono integrati in Microsoft Endpoint Configuration Manager (Current Branch) e sono disponibili da diverse versioni. Nelle versioni recenti sono stati apportati miglioramenti tecnologici notevoli a Configuration Manager, che rendono persino più efficiente il processo per determinare la preparazione alla compatibilità dei dispositivi e di Office, ridurre il traffico di rete e configurare nuove opzioni come il backup di OneDrive. Guardare questo [programma Microsoft Mechanics](https://youtu.be/CYRnAmCD7ls) per altre informazioni sugli aggiornamenti recenti alla distribuzione del sistema operativo di Configuration Manager.
 
-Se non si usa System Center Configuration Manager, è possibile usare Microsoft Deployment Toolkit per creare ed eseguire sequenze di attività di distribuzione degli aggiornamenti.
+Se non si usa Microsoft Endpoint Configuration Manager, è possibile usare Microsoft Deployment Toolkit per creare ed eseguire sequenze di attività di distribuzione degli aggiornamenti.
 
 ## <a name="pre-cache-task-sequence-upgrades"></a>Aggiornamenti della sequenza di attività pre-cache
 
-L'[opzione pre-cache](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) per la sequenza delle attività di distribuzione di Configuration Manager consente ai client di scaricare il contenuto del pacchetto di aggiornamento del sistema operativo appropriato prima che la sequenza di attività aggiorni il sistema operativo. In precedenza, l'avvio della sequenza di attività avviava il download del contenuto del pacchetto. Il contenuto pre-cache offre anche l'opzione per consentire al client di scaricare solo il pacchetto di aggiornamento del sistema operativo applicabile, e tutti gli altri contenuti a cui viene fatto riferimento nel momento in cui riceve la distribuzione.
+L'[opzione pre-cache](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content) per la sequenza delle attività di distribuzione di Configuration Manager consente ai client di scaricare il contenuto del pacchetto di aggiornamento del sistema operativo appropriato prima che la sequenza di attività aggiorni il sistema operativo. In precedenza, l'avvio della sequenza di attività avviava il download del contenuto del pacchetto. Il contenuto pre-cache offre anche l'opzione per consentire al client di scaricare solo il pacchetto di aggiornamento del sistema operativo applicabile, e tutti gli altri contenuti a cui viene fatto riferimento nel momento in cui riceve la distribuzione.
 
 Sequenze di attività pre-cache combinate ad analisi della compatibilità
 

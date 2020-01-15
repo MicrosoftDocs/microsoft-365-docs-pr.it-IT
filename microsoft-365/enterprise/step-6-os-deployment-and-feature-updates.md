@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulle opzioni per la distribuzione del sistema operativo e gli aggiornamenti delle funzionalità.
-ms.openlocfilehash: c789ac0d62fd0b8c915f21174cae2b81e49e0c97
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 7da7c9ade2be43e8c60726bafd69cc7939b7bddc
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031671"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112680"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Passaggio 6: distribuzione del sistema operativo e aggiornamenti delle funzionalità
 
@@ -49,13 +49,13 @@ La maggior parte delle organizzazioni utilizza il processo di acquisizione dell'
 
 Se si intraprende la strada dell'acquisizione dell'immagine, è meglio automatizzare il più possibile per garantire la miglior qualità dell'immagine e un processo ripetibile. Per la maggior parte delle distribuzioni, è inoltre consigliato ridurre la personalizzazione e le app pre-installate nell'immagine Windows prima dell'acquisizione. Questo si intende con l'approccio "immagine semplice" con il quale è possibile risparmiare larghezza di banda sulla rete eliminando il numero di app all'interno dell'immagine. Iniziando con un'immagine semplice, è possibile poi aggiungere app, lingue e configurazioni necessarie in modo dinamico in base alle esigenze degli utenti.
 
-Durante il processo di creazione e acquisizione, strumenti come System Center Configuration Manager (Current Branch)e Microsoft Deployment Toolkit usano Utilità preparazione sistema, o Sysprep, insieme al comando "Generalizza" per sigillare l'immagine prima di acquisire l'installazione di Windows 10 come immagine.
+Durante il processo di creazione e acquisizione, strumenti come Microsoft Endpoint Configuration Manager (Current Branch)e Microsoft Deployment Toolkit usano Utilità preparazione sistema, o Sysprep, insieme al comando "Generalizza" per sigillare l'immagine prima di acquisire l'installazione di Windows 10 come immagine.
 
-L'immagine acquisita avrà il formato dell'immagine Windows, o WIM, come il supporto di installazione Windows standard. Una volta pronto il file WIM personalizzato, è possibile usare un'altra sequenza di attività nell'ambito della distribuzione del sistema operativo in System Center Configuration Manager o Microsoft Deployment Toolkit per eseguire attività correlate alla distribuzione, per applicare l'immagine ed eseguire attività prima e dopo l'applicazione dell'immagine Windows.
+L'immagine acquisita avrà il formato dell'immagine Windows, o WIM, come il supporto di installazione Windows standard. Una volta pronto il file WIM personalizzato, è possibile usare un'altra sequenza di attività nell'ambito della distribuzione del sistema operativo in Configuration Manager o Microsoft Deployment Toolkit per eseguire attività correlate alla distribuzione, per applicare l'immagine ed eseguire attività prima e dopo l'applicazione dell'immagine Windows.
 
 [Creare un'immagine di riferimento di Windows 10](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[Creare una sequenza di attività per installare un sistema operativo](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Creare una sequenza di attività per installare un sistema operativo](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>Tipo di distribuzione
 
@@ -73,7 +73,7 @@ Tutte e tre gli scenari hanno qualcosa in comune: consentono di eseguire una seq
 
 ### <a name="in-place-upgrade-using-task-sequence-automation"></a>Aggiornamento sul posto con automazione della sequenza di attività
 
-Oltre a questi tipi di distribuzione, è disponibile un nuova opzione come sequenza di attività di System Center Configuration Manager (Current Branch) con Windows 10 e l'aggiornamento sul posto tramite l'automazione della sequenza di attività.
+Oltre a questi tipi di distribuzione, è disponibile una nuova opzione come sequenza di attività di Microsoft Endpoint Configuration Manager (Current Branch) con Windows 10 e l'aggiornamento sul posto tramite l'automazione della sequenza di attività.
 
 Gli aggiornamenti sul posto di una versione precedente di Windows non richiedono una sequenza di attività, ma è un approccio consigliato per le distribuzioni a livello di azienda. Un aggiornamento sul posto non consente di applicare un'immagine personalizzata con applicazioni, ma è possibile aggiornare il file predefinito install.wim tramite i servizi offline. Ad esempio, è possibile assicurarsi che gli aggiornamenti Windows più recenti vengano applicati prima di eseguire gli aggiornamenti.
 
@@ -87,7 +87,7 @@ Lo scenario dell'aggiornamento sul posto può essere usato per eseguire la migra
 
 [Eseguire un aggiornamento sul posto a Windows 10 tramite Configuration Manager](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[Creare una sequenza di attività per aggiornare un sistema operativo in Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Creare una sequenza di attività per aggiornare un sistema operativo in Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>Distribuzione a fasi
 
@@ -95,11 +95,11 @@ Durante la pianificazione della distribuzione, si definiscono i computer delle d
 
 ![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
-### <a name="recommended-tools-system-center-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Strumenti consigliati: System Center Configuration Manager (Current Branch) e Microsoft Deployment Toolkit
+### <a name="recommended-tools-microsoft-endpoint-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Strumenti consigliati: Microsoft Endpoint Configuration Manager (Current Branch) e Microsoft Deployment Toolkit
 
 Indipendentemente dal tipo di distribuzione scelto, è necessario assicurarsi che la distribuzione sia il più automatizzata possibile per prevedibilità e ripetibilità. Microsoft offre due soluzioni per automatizzare la distribuzione del sistema operativo attraverso sequenze di attività automatizzate:
 
-  - **[System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction)** (ConfigMgr) offre funzionalità integrate del sistema operativo per integrare le sue funzionalità di distribuzione software e gestione degli aggiornamenti software. ConfigMgr è ampiamente utilizzato da organizzazioni di tutte le dimensioni e supporta tutti e quattro i tipi di distribuzione Windows. Opzionalmente, è possibile integrare ConfigMgr con Microsoft Intune per aggiungere ulteriori funzionalità per la gestione della distribuzione e dei dispositivi.
+  - **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction)** (ConfigMgr) offre funzionalità integrate del sistema operativo per integrare le sue funzionalità di distribuzione software e gestione degli aggiornamenti software. ConfigMgr è ampiamente utilizzato da organizzazioni di tutte le dimensioni e supporta tutti e quattro i tipi di distribuzione Windows. Opzionalmente, è possibile integrare ConfigMgr con Microsoft Intune per aggiungere ulteriori funzionalità per la gestione della distribuzione e dei dispositivi.
 
   - Un'altra opzione di distribuzione comune è il software gratuito **[Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT) che viene generalmente usato da piccole e medie organizzazioni per la distribuzione del sistema operativo. Serve pochissima infrastruttura. MDT si integra con Windows Deployment Services (WDS) per l'avvio di rete. Supporta tutti e quattro i tipi di distribuzione e l'installazione di applicazioni, driver e impostazioni. Ovviamente, MDT può anche essere integrato con Configuration Manager.
 
@@ -117,7 +117,7 @@ Pertanto, quando un utente accede al PC durante la configurazione tramite le cre
 
 ## <a name="windows-update-for-business-for-feature-updates"></a>Windows Update per le aziende per gli aggiornamenti delle funzionalità
 
-Windows Update per le aziende è un servizio gratuito che consente ai professionisti IT di mantenere i dispositivi Windows 10 sempre aggiornati connettendo direttamente i dispositivi al servizio Windows Update. È possibile configurare Windows Update per le aziende tramite Criteri di gruppo o soluzioni MDM, come Microsoft Intune, e consente ai professionisti IT di creare [circuiti di distribuzione](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) per convalidare nuove build. È integrato in strumenti di gestione esistenti, come Windows Server Update Services (WSUS), System Center Configuration Manager (Current Branch) e Microsoft Intune. Inoltre, Windows Update per le aziende supporta la distribuzione peer-to-peer per ottimizzare l'efficienza della larghezza di banda e ridurre la congestione della rete.
+Windows Update per le aziende è un servizio gratuito che consente ai professionisti IT di mantenere i dispositivi Windows 10 sempre aggiornati connettendo direttamente i dispositivi al servizio Windows Update. È possibile configurare Windows Update per le aziende tramite Criteri di gruppo o soluzioni MDM, come Microsoft Intune, e consente ai professionisti IT di creare [circuiti di distribuzione](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates) per convalidare nuove build. È integrato in strumenti di gestione esistenti, come Windows Server Update Services (WSUS), Microsoft Endpoint Configuration Manager (Current Branch) e Microsoft Intune. Inoltre, Windows Update per le aziende supporta la distribuzione peer-to-peer per ottimizzare l'efficienza della larghezza di banda e ridurre la congestione della rete.
 
 Per informazioni più dettagliate su Windows Update per le aziende, vedere la documentazione seguente:
 

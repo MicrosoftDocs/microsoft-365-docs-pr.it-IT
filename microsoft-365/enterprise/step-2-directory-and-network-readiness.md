@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di directory e di rete nell'ambiente.
-ms.openlocfilehash: c009a60849390cc9b796a56f66e63d44e12cdc68
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: cae32d7bd7791cdfb0acce564b2a7839d5314a19
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031561"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112615"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Passaggio 2: conformità di directory e rete
 
@@ -79,7 +79,7 @@ Un modo per limitare l'impatto sulla rete del traffico relativo alla distribuzio
 
 [Informazioni sui BITS](https://docs.microsoft.com/windows/desktop/bits/about-bits)
 
-Se si usa System Center Configuration Manager (Current Branch), è possibile configurare i punti di distribuzione abilitati a BITS o attivare multicast con WDS.
+Se si usa Microsoft Endpoint Configuration Manager (Current Branch), è possibile configurare i punti di distribuzione abilitati a BITS o attivare multicast con WDS.
 
 Limitazione del traffico specifico indica che il normale traffico di rete è meno interessato dal download di aggiornamenti e applicazioni per il PC. Tuttavia, ricavare una determinata percentuale della larghezza di banda per queste attività consente di evitare l'impatto della distribuzione di Windows o Office sulla produttività e di assicurare la continuità di esecuzione dei processi in base alle esigenze; può peggiorare i tempi di inattività legati alla distribuzione con inaccessibilità al PC da parte degli utenti durante la distribuzione.
 
@@ -89,7 +89,7 @@ Fortunatamente, sono disponibili nuovi strumenti che facilitano la gestione dell
 
 ## <a name="scavenging-bandwidth"></a>Scavenging della larghezza di banda
 
-LEDBAT (Low Extra Delay Background Transport), supportato in Windows Server 2019 e System Center Configuration Manager (Current Branch), è progettato per ottimizzare il traffico di rete per client Windows.
+LEDBAT (Low Extra Delay Background Transport), supportato in Windows Server 2019 e Microsoft Endpoint Configuration Manager (Current Branch), è progettato per ottimizzare il traffico di rete per client Windows.
 
 [Le 10 principali funzionalità di rete in Windows Server 2019: \#9 - LEDBAT: Latency Optimized Background Transport](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
@@ -101,15 +101,15 @@ A differenza della limitazione tradizionale, LEDBAT può utilizzare tutta la lar
 
 Le opzioni peer-to-peer vengono sempre più utilizzate nelle migrazioni di Windows 10, per l'imaging del PC, gli aggiornamenti software e la personalizzazione dell'utente. Sono anche utili per facilitare gli aggiornamenti build-to-build dopo la distribuzione iniziale di Windows 10. In questa sezione verranno trattati diversi esempi per aiutare a spostare Windows 10 e il traffico correlato a Office lontano dal centro della rete, riducendo la necessità di approcci classici di limitazione e consentendo ai PC di trovare i file di aggiornamento di cui hanno bisogno sui peer nella loro rete locale piuttosto che scaricandoli da un punto di distribuzione o da Internet.
 
-**BranchCache**: consente di scaricare contenuti in ambienti distribuiti senza saturare la rete. È disponibile in due opzioni: Modalità cache ospitata, che consente di utilizzare i server locali per memorizzare nella cache il contenuto e la modalità cache distribuita (una modalità supportata in System Center Configuration Manager), che consente ai client di condividere i contenuti già scaricati.
+**BranchCache**: consente di scaricare contenuti in ambienti distribuiti senza saturare la rete. È disponibile in due opzioni: Modalità cache ospitata, che consente di utilizzare i server locali per memorizzare nella cache il contenuto e la modalità cache distribuita (una modalità supportata in Configuration Manager), che consente ai client di condividere i contenuti già scaricati.
 
-**Peer cache**: i client supportati da System Center Configuration Manager possono anche usare peer cache. Ciò consente ai PC disponibili in modo affidabile sulla rete di ospitare la sorgente per la distribuzione del contenuto. Non sarà necessario abilitare tutti i PC, basterà individuare dispositivi di destinazione con connessioni di rete affidabili come host (ad esempio desktop, mini-tower o tower PC). Peer cache può persino funzionare per le attività di distribuzione in esecuzione nelle fasi di Windows PE durante l'installazione.
+**Peer cache**: i client supportati da Configuration Manager possono anche usare peer cache. Ciò consente ai PC disponibili in modo affidabile sulla rete di ospitare la sorgente per la distribuzione del contenuto. Non sarà necessario abilitare tutti i PC, basterà individuare dispositivi di destinazione con connessioni di rete affidabili come host (ad esempio desktop, mini-tower o tower PC). Peer cache può persino funzionare per le attività di distribuzione in esecuzione nelle fasi di Windows PE durante l'installazione.
 
 Nota: BranchCache e peer cache sono complementari e possono collaborare nello stesso ambiente.
 
 [BranchCache versus Peer cache](https://blogs.technet.microsoft.com/swisspfe/2018/01/25/branch-cache-vs-peer-cache/)
 
-**Ottimizzazione recapito**: Ottimizzazione recapito è un'altra tecnologia di caching peer-to-peer che fornisce controlli basati sulla rete per le installazioni di Windows. Ottimizzazione recapito di Windows 10 viene usato per aggiornare app UWP integrate, anche per installare applicazioni da Microsoft Store e per aggiornamenti software tramite Express Updates. È disponibile dalle prime versioni di Windows 10, sebbene sia stato integrato solo di recente con System Center Configuration Manager (Current Branch). Le nuove opzioni di configurazione di Windows 10 versione 1803 consentono di impostare in modo indipendente i limiti di larghezza di banda per gli aggiornamenti in background e per i processi in primo piano come l'installazione di un'app dallo Store. Ottimizzazione recapito di Windows ora supporta anche Office 365 ProPlus durante gli aggiornamenti client, disponibile in tutti i canali di aggiornamento client di Office 365 supportati. Il supporto di Ottimizzazione recapito di Windows durante l'installazione iniziale del client di Office 365 sarà presto disponibile.  
+**Ottimizzazione recapito**: Ottimizzazione recapito è un'altra tecnologia di caching peer-to-peer che fornisce controlli basati sulla rete per le installazioni di Windows. Ottimizzazione recapito di Windows 10 viene usato per aggiornare app UWP integrate, anche per installare applicazioni da Microsoft Store e per aggiornamenti software tramite Express Updates. È disponibile dalle prime versioni di Windows 10, sebbene sia stato integrato solo di recente con Microsoft Endpoint Configuration Manager (Current Branch). Le nuove opzioni di configurazione di Windows 10 versione 1803 consentono di impostare in modo indipendente i limiti di larghezza di banda per gli aggiornamenti in background e per i processi in primo piano come l'installazione di un'app dallo Store. Ottimizzazione recapito di Windows ora supporta anche Office 365 ProPlus durante gli aggiornamenti client, disponibile in tutti i canali di aggiornamento client di Office 365 supportati. Il supporto di Ottimizzazione recapito di Windows durante l'installazione iniziale del client di Office 365 sarà presto disponibile.  
 
 ![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come distribuire Office e app line-of-business.
-ms.openlocfilehash: fdb16aa9d92e3fd2608ca3738dc5af80389f18ea
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: a4bc1a765edf6938ad37d91d8bf94950b6672bfe
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031531"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112590"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Passaggio 3: distribuzione di Office e app line-of-business
 
@@ -49,7 +49,7 @@ Esistono molti metodi e modelli per l'installazione di applicazioni in Windows, 
 
 Per le app line-of-business, probabilmente verranno usati pacchetti o file eseguibili basati su MSI e le app verranno installate nell'ambito di una sequenza di attività di distribuzione del sistema operativo. Windows 10 continuerà a funzionare con questi pacchetti.
 
-Gli strumenti di distribuzione software come System Center Configuration Manager e Microsoft Intune sono inoltre ottimizzati per fornire app con MSI. Dopo aver convalidato le app su Windows 10, è possibile utilizzare System Center Configuration Manager (current branch) per la distribuzione di app. Se si utilizza il portale dell'azienda in Microsoft Intune, è possibile estendere la scelta di app approvate dall'IT affinché l'organizzazione possa includere le applicazioni più recenti e gli utenti possano selezionare autonomamente cosa gli serve.
+Gli strumenti di distribuzione software come Microsoft Endpoint Configuration Manager e Microsoft Intune sono inoltre ottimizzati per fornire app con MSI. Dopo aver convalidato le app su Windows 10, è possibile utilizzare Microsoft Endpoint Configuration Manager (Current Branch) per la distribuzione di app. Se si utilizza il portale dell'azienda in Microsoft Intune, è possibile estendere la scelta di app approvate dall'IT affinché l'organizzazione possa includere le applicazioni più recenti e gli utenti possano selezionare autonomamente ciò che serve.
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-3.png)
 
@@ -61,7 +61,7 @@ Un altro metodo diffuso di distribuzione delle app è la creazione dell'immagine
 
 Se si vuole includere Office 365 ProPlus nell'immagine, tenere presente che usa un'attivazione basata sull'utente e non può essere pre-attivato dall'amministratore di sistema. Usare lo Strumento di distribuzione di Office per pre-installare Office nel dispositivo di cui si sta acquisendo l'immagine e ignorare l'accesso utente. Dopo la distribuzione dell'immagine, gli utenti finali possono accedere con le credenziali di Office 365 e attivare Office 365 ProPlus.
 
-[Creare una sequenza di attività per installare un sistema operativo](https://docs.microsoft.com/sccm/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Creare una sequenza di attività per installare un sistema operativo](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 [Distribuire Office 365 ProPlus come parte di un'immagine del sistema operativo](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
 
@@ -75,7 +75,7 @@ Microsoft consiglia di usare lo [Strumento di personalizzazione di Office](https
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
-Se si usa System Center Configuration Manager, è possibile usarlo anche per una distribuzione ampia di Office 365 ProPlus. System Center Configuration Manager (current branch) presenta supporto nativo per lo strumento di personalizzazione di Office aggiornato, la personalizzazione dei pacchetti per A portata di clic al momento dell'installazione e il supporto nativo della gestione degli aggiornamenti software dopo l'installazione.
+Se si usa Configuration Manager, è possibile usarlo anche per una distribuzione ampia di Office 365 ProPlus. Configuration Manager (Current Branch) presenta supporto nativo per lo strumento di personalizzazione di Office aggiornato, la personalizzazione dei pacchetti per A portata di clic al momento dell'installazione e il supporto nativo della gestione degli aggiornamenti software dopo l'installazione.
 
 ![](media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
@@ -83,7 +83,7 @@ Se si usa System Center Configuration Manager, è possibile usarlo anche per una
 
 [Rimuovere le versioni MSI di Office esistenti quando si effettua l'aggiornamento a Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Gestire Office 365 ProPlus con Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+[Gestire Office 365 ProPlus con Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Assegnare le app di Office 365 ai dispositivi Windows 10 con Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 
