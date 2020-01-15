@@ -412,6 +412,8 @@
               href: ./office-365-security/enable-the-report-message-add-in.md
             - name: Traccia messaggio nel Centro sicurezza e conformità
               href: ./office-365-security/message-trace-scc.md
+            - name: Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
+              href: ./office-365-security/view-email-security-reports.md
             - name: Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
