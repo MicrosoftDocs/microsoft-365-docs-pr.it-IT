@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 37e273a3e01177dec23b668ecb8a6301011ab88d
-ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
+ms.openlocfilehash: e6a12f361a824a9abf96b92e27ae99f0309c6d6b
+ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40966904"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41122445"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio e Reporting dei dispositivi nel centro sicurezza Microsoft 365
 
@@ -29,7 +29,7 @@ Ottenere avvisi aggiornati sull'attività di violazione e altre minacce sui disp
 
 ### <a name="monitor-high-impact-alerts"></a>Monitorare gli avvisi ad impatto elevato
 
-Ogni avviso del trifosfato di adenosina di Microsoft Defender ha un livello di gravità corrispondente alto, medio, basso o informativo che indica il suo impatto potenziale sulla rete se non è presente.  
+Ogni avviso del trifosfato di adenosina di Microsoft Defender ha un livello di gravità corrispondente (alto, medio, basso o informativo) che indica il suo impatto potenziale sulla rete se non è presente.  
 
 Utilizzare la scheda **gravità avviso dispositivo** per concentrarsi in modo specifico sugli avvisi più gravi e potrebbe richiedere una risposta immediata. Da questa scheda, è possibile visualizzare altre informazioni sul portale Microsoft Defender Security Center.
 
@@ -47,9 +47,9 @@ Da questa scheda, è possibile visualizzare altre informazioni sul portale Micro
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>Comprendere i tipi di minacce che attivano gli avvisi
 
-Microsoft Defender ATP Ordina ogni avviso in una categoria che rappresenta una determinata fase della catena di attacco o un tipo di componente di minaccia. Ad esempio, è possibile che le attività di minacce rilevate vengano categorizzate in movimenti laterali per indicare che l'attività ha coinvolto un tentativo di raggiungere altri dispositivi sulla rete ed è probabile che si verifichi dopo che gli aggressori hanno acquisito un punto di appoggio iniziale. Una volta rilevato, un componente di minacce potrebbe essere classificato come malware o più specificamente come ransomware, furto di credenziali o altri tipi di software dannoso o indesiderato.
+Microsoft Defender ATP Ordina ogni avviso in una categoria che rappresenta una determinata fase della catena di attacco o un tipo di componente di minaccia. Ad esempio, un'attività di minacce rilevata potrebbe essere categorizzata come "movimento laterale" per indicare che si è verificato un tentativo di raggiungere altri dispositivi sulla rete. L'attività è probabile che si è verificato anche dopo che gli aggressori hanno acquisito un appiglio iniziale. Una volta rilevato, un componente di minacce potrebbe essere classificato come malware, o più specificamente come ransomware, furto di credenziali o altri tipi di software dannoso o indesiderato.
 
-La scheda **categorie minacce dispositivo** Visualizza la distribuzione degli avvisi in queste categorie. È possibile utilizzare queste informazioni per identificare le attività relative alle minacce, ad esempio i tentativi di furto di credenziali, che possono avere un impatto più significativo rispetto ai tentativi di social engineering. È inoltre possibile utilizzare questa pagina per monitorare le minacce potenzialmente distruttive come ransomware.
+La scheda **categorie minacce dispositivo** Visualizza la distribuzione degli avvisi in queste categorie. È possibile utilizzare queste informazioni per identificare le attività di minacce, ad esempio i tentativi di furto delle credenziali, che possono avere un impatto maggiore rispetto ai tentativi di social engineering. È inoltre possibile utilizzare queste informazioni per eseguire il monitoraggio di minacce potenzialmente distruttive come ransomware.
 
 ![Scheda categorie di minacce per dispositivi](../images/device-threat-categories.png)
 
@@ -76,14 +76,14 @@ Nota: in alcuni casi, le informazioni di classificazione non sono disponibili pe
 
 Oltre a classificare se un avviso è vero o falso durante la risoluzione, il personale della sicurezza può fornire una determinazione, indicando il tipo di attività normale o dannosa individuata durante la convalida dell'avviso.
 
-La scheda di **determinazione dell'avviso del dispositivo** Visualizza la determinazione fornita per ogni avviso, in particolare:
+La scheda di **determinazione dell'avviso del dispositivo** Visualizza la determinazione fornita per ogni avviso.
 
-* **Apt** Advanced Persistent Threat, che indica che l'attività rilevata o il componente di minaccia è parte di una violazione sofisticata progettata per ottenere un punto di appoggio nella rete in questione  
-* File o codice dannoso per **malware**
-* Attività del personale di **sicurezza** normale eseguite dal personale della sicurezza
-* Attività di **testing di sicurezza** o componenti studiati per simulare le minacce effettive e prevedere l'attivazione di sensori di sicurezza e generare avvisi
-* Applicazioni **software indesiderate** e altri software che non sono considerati dannosi, ma violano in altro modo i criteri o gli standard di utilizzo accettabili
-* **Altre altre** determinazioni che non rientrano nei tipi forniti
+* **Apt**: Advanced Persistent Threat, che indica che l'attività rilevata o il componente di minaccia è parte di una sofisticata violazione progettata per ottenere un punto di appoggio nella rete in questione  
+* **Malware**: file o codice dannoso
+* **Personale di sicurezza**: attività normale eseguita dal personale della sicurezza
+* **Test di sicurezza**: attività o componenti studiati per simulare le minacce effettive e prevedere l'attivazione di sensori di sicurezza e generare avvisi
+* **Software indesiderato**: app e altri software che non sono considerati dannosi, ma violano in altro modo i criteri o gli standard di utilizzo accettabili
+* **Altri**: eventuali altre determinazioni che non rientrano nei tipi forniti
 
 Da questa scheda, è possibile visualizzare altre informazioni in Microsoft Defender Security Center.
 
@@ -116,7 +116,7 @@ La **conformità del dispositivo** indica il numero di dispositivi registrati in
 
 ### <a name="discover-devices-with-malware-detections"></a>Individuare i dispositivi con rilevamenti di malware
 
-I **rilevamenti di malware** per i dispositivi forniscono il numero di dispositivi registrati di Intune con malware che non sono stati completamente risolti a causa di un riavvio, di un'analisi completa o di azioni utente manuali oppure se l'azione di correzione non è stata completata correttamente.
+I **rilevamenti di malware** per i dispositivi forniscono il numero di dispositivi registrati di Intune con malware che non sono stati completamente risolti. Questo può essere dovuto a azioni in sospeso, a un riavvio, a un'analisi completa, azioni utente manuali o se l'azione di correzione non è stata completata correttamente.
 
 ![Scheda rilevamenti malware dispositivo](../images/device-malware-detections.png)
 
@@ -128,7 +128,7 @@ I **tipi di malware nei dispositivi** mostrano diversi tipi di malware che sono 
 
 ### <a name="understand-the-specific-malware-detected-on-your-devices"></a>Comprendere il malware specifico rilevato nei dispositivi
 
-**Malware nei dispositivi** fornisce un elenco di malware specifici rilevati nei dispositivi.
+Il **malware nei dispositivi** fornisce un elenco di malware specifici rilevati nei dispositivi.
 
 ![Scheda malware su dispositivi](../images/malware-on-devices.png)
 
@@ -140,7 +140,7 @@ I **dispositivi con rilevamenti di malware** mostrano quali dispositivi presenta
 
 ### <a name="understand-which-users-have-devices-with-the-most-malware"></a>Comprendere quali utenti dispongono di dispositivi con la maggior parte dei malware
 
-**Gli utenti con rilevamenti di malware** visualizzano gli utenti con dispositivi con la maggior parte dei rilevamenti di malware. nel centro sicurezza Microsoft 365, è possibile visualizzare il numero di dispositivi assegnati a ciascun utente e ulteriori informazioni su ogni dispositivo e sul tipo di malware.
+**Gli utenti che dispongono di rilevamenti di malware** mostrano agli utenti i dispositivi con più rilevamenti di malware. Nel centro sicurezza Microsoft 365, è possibile visualizzare il numero di dispositivi assegnati a ciascun utente e ulteriori informazioni su ogni dispositivo e sul tipo di malware.
 
 ![Utenti con scheda di rilevamento antimalware](../images/users-with-malware-detections.png)
 
@@ -154,9 +154,9 @@ La scheda **regole di riduzione della superficie di attacco** fornisce una panor
 
 Nella barra superiore della scheda viene visualizzato il numero totale di dispositivi presenti nelle modalità di distribuzione seguenti:
 
-* Dispositivi in **modalità di blocco** con almeno una regola configurata per bloccare l'attività rilevata
-* Dispositivi in **modalità di controllo** senza regole impostate per bloccare l'attività rilevata, ma dispone di almeno un set di regole per il controllo dell'attività rilevata  
-* **Disattiva** i dispositivi con tutte le regole ASR disattivate
+* **Modalità di blocco**: dispositivi con almeno una regola configurata per bloccare l'attività rilevata
+* **Modalità di controllo**: i dispositivi con nessuna regola impostata per bloccare l'attività rilevata, ma hanno almeno un set di regole per il controllo dell'attività rilevata  
+* **Disattivato**: i dispositivi con tutte le regole di ASR sono disattivati
 
 Nella parte inferiore della scheda sono riportate le impostazioni per regola tra i dispositivi. Ogni barra indica il numero di dispositivi che sono impostati per bloccare o controllare il rilevamento oppure la regola è stata completamente disattivata.
 
@@ -168,10 +168,10 @@ Per visualizzare informazioni dettagliate sui rilevamenti delle regole di ASR ne
 
 Il grafico nella parte superiore della pagina Visualizza rilevamenti nel tempo di rilevamenti di sovrapposizione che sono stati bloccati o controllati. La tabella in basso elenca i rilevamenti più recenti. Utilizzare le informazioni seguenti nella tabella per comprendere la natura dei rilevamenti:
 
-* **File rilevato** il file, in genere uno script o un documento, il cui contenuto ha attivato l'attività di attacco sospetta
-* Nome della **regola** che descrive le attività di attacco la regola è progettata per essere intercettata. Leggere le regole ASR esistenti
-* **App di origine** l'applicazione che ha caricato o eseguito contenuto che attiva l'attività di attacco sospetta. Potrebbe trattarsi di un'applicazione legittima, ad esempio il Web browser, un'applicazione di Office o uno strumento di sistema come PowerShell.
-* **Editore** il fornitore che ha rilasciato l'app di origine
+* **File rilevato**: il file, in genere uno script o un documento, il cui contenuto ha attivato l'attività di attacco sospetta
+* **Regola**: nome che descrive le attività di attacco la regola è progettata per essere intercettata. Leggere le regole ASR esistenti
+* **App di origine**: l'applicazione che ha caricato o eseguito contenuto che attiva l'attività di attacco sospetta. Potrebbe trattarsi di un'applicazione legittima, ad esempio il Web browser, un'applicazione di Office o uno strumento di sistema come PowerShell.
+* **Publisher**: il fornitore che ha rilasciato l'app di origine
 
 ### <a name="review-device-asr-rule-settings"></a>Esaminare le impostazioni della regola di ASR del dispositivo
 
@@ -212,6 +212,7 @@ MiscEvents
 ```
 
 #### <a name="check-files-for-exclusion"></a>Controllare i file per l'esclusione
+
 Prima di escludere un file dal riconoscimento vocale automatico, è consigliabile ispezionare il file per determinare se non è effettivamente dannoso.
 
 Per esaminare un file, utilizzare la [pagina informazioni sui file](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-files) in Microsoft Defender Security Center. La pagina fornisce informazioni sulla prevalenza così come il rapporto di rilevamento antivirus di VirusTotal. È inoltre possibile utilizzare la pagina per inviare il file per un'analisi approfondita.
