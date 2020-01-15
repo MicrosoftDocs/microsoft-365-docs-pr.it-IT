@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come eseguire la migrazione di file e impostazioni degli utenti.
-ms.openlocfilehash: 8b9bde4eb1ddf0951a2ab27795dadef9965f6a1c
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031491"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112570"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Passaggio 4: migrazione delle impostazioni e dei file utente
 
@@ -51,7 +51,7 @@ Se si opta per una migrazione manuale, potrebbe essere necessario valutare se si
 
 ## <a name="automated-migration-using-usmt"></a>Migrazione automatica tramite USMT 
 
-Per le distribuzioni su larga scala, è possibile automatizzare buona parte del processo utilizzando gli strumenti di automazione della distribuzione basati su sequenze di attività quali System Center Configuration Manager o Microsoft Deployment Toolkit (MDT). Entrambe le soluzioni adottano l'Utilità di migrazione stato utente (USMT) nell'ambito del processo di distribuzione end-to-end. USMT fa parte del [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+Per le distribuzioni su larga scala, è possibile automatizzare buona parte del processo utilizzando gli strumenti di automazione della distribuzione basati su sequenze di attività quali Microsoft Endpoint Configuration Manager o Microsoft Deployment Toolkit (MDT). Entrambe le soluzioni adottano l'Utilità di migrazione stato utente (USMT) nell'ambito del processo di distribuzione end-to-end. USMT fa parte di [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
 
 USMT acquisisce account utente, file utente, impostazioni del sistema operativo e delle applicazioni, quindi ne esegue la migrazione a una nuova installazione di Windows. Inoltre, offre all'amministratore IT la possibilità di controllare esattamente cosa viene migrato e, nel caso, escludere tipi di file non desiderati, ad esempio, file audio e video o file eseguibili.
 

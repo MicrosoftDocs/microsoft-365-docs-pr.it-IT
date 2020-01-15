@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contenuto nuovo e modificato nella Guida alla distribuzione di Microsoft 365.
-ms.openlocfilehash: 9f5b586defa460648c1d3a7b5972124497d0f53f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 680b42c255053338d401e53b75ab7471a064c44d
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801561"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111975"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Modifiche al contenuto sulla distribuzione di Microsoft 365 per aziende
 
@@ -65,9 +65,9 @@ ms.locfileid: "40801561"
 
   È anche possibile scaricare il poster in formato[PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) o [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx).
 
-- [Distribuzione di Windows 10 con il poster di Microsoft Endpoint Configuration Manager](windows10-deploy-inplaceupgrade.md)
+- [Distribuzione di Windows 10 con il poster di Configuration Manager](windows10-deploy-inplaceupgrade.md)
 
-  [![Distribuzione di Windows 10 con il poster di System Center Configuration Manager](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+  [![Distribuzione di Windows 10 con il poster di Configuration Manager](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
   È anche possibile scaricare il poster in formato[PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) o [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx).
 

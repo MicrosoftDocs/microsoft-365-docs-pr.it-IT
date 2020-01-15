@@ -14,17 +14,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Panoramica del centro di distribuzione desktop.
-ms.openlocfilehash: 0e901a162be61c7be2465a0054669ebc459e6f3f
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b7f4ef60b4f9c82055dce42291b1abca504a8248
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031091"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112550"
 ---
 # <a name="desktop-deployment-center"></a>Centro di distribuzione desktop
 
 <strong>Aggiornamento da Windows 7 a Windows 10</strong>
-<p>Il supporto esteso di Windows 7 termina il 14 gennaio 2020. L'aggiornamento sul posto da Windows 7 a Windows 10 rappresenta il metodo di distribuzione più rapido. È possibile <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">aggiornare un singolo PC</a> o <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">aggiornare migliaia di PC con System Center Configuration Manager</a>. Non è necessario concentrarsi sulla consegna dell'app, sulla migrazione dei file, sulla creazione dell'immagine personalizzata o sull'abilitazione di servizi basati sul cloud con aggiornamenti sul posto. È possibile usare gli strumenti già a disposizione per aggiornare PC esistenti e concentrarsi sui passaggi di distribuzione seguenti per gli aggiornamenti: </p>
+<p>Il supporto esteso di Windows 7 termina il 14 gennaio 2020. L'aggiornamento sul posto da Windows 7 a Windows 10 rappresenta il metodo di distribuzione più rapido. È possibile <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">aggiornare un singolo PC</a> o <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">aggiornare migliaia di PC con Microsoft Endpoint Configuration Manager</a>. Non è necessario concentrarsi sulla consegna dell'app, sulla migrazione dei file, sulla creazione dell'immagine personalizzata o sull'abilitazione di servizi basati sul cloud con aggiornamenti sul posto. È possibile usare gli strumenti già a disposizione per aggiornare PC esistenti e concentrarsi sui passaggi di distribuzione seguenti per gli aggiornamenti: </p>
 
 <p>
 </p>

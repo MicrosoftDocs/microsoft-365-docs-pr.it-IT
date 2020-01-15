@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di dispositivi e app nell'ambiente.
-ms.openlocfilehash: b24bd278804e81c53a28bf99971a087fe5b7c3c0
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: dad6b4092cbcedbc4674733af1459d28f9b1d50e
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031631"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112720"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Passaggio 1: preparazione di dispositivi e app
 
@@ -45,7 +45,7 @@ In questo articolo viene illustrata la prima fase, Conformità dei dispositivi e
 
 ## <a name="windows-10-compatibility-scan"></a>Analisi della compatibilità di Windows 10
 
-Prima di distribuire Windows 10, Microsoft consiglia di controllare l'idoneità dei dispositivi esistenti che eseguono Windows 7 o 8/8.1. Il supporto di installazione di Windows 10 supporta un'opzione della riga di comando per setup.exe, che consente di controllare solo la compatibilità senza eseguire l'aggiornamento. ScanOnly può essere eseguito come file batch con script o integrati in una sequenza di attività di System Center Configuration Manager. È possibile eseguire ScanOnly direttamente dalla rete, in modo che il supporto di installazione di Windows 10 non venga scaricato nel dispositivo locale. Al termine dell'operazione ScanOnly, i risultati vengono restituiti tramite codici di uscita nei file di log generati da Setup.exe.   
+Prima di distribuire Windows 10, Microsoft consiglia di controllare l'idoneità dei dispositivi esistenti che eseguono Windows 7 o 8/8.1. Il supporto di installazione di Windows 10 supporta un'opzione della riga di comando per setup.exe, che consente di controllare solo la compatibilità senza eseguire l'aggiornamento. ScanOnly può essere eseguito come file batch con script o integrati in una sequenza di attività di Microsoft Endpoint Configuration Manager. È possibile eseguire ScanOnly direttamente dalla rete, in modo che il supporto di installazione di Windows 10 non venga scaricato nel dispositivo locale. Al termine dell'operazione ScanOnly, i risultati vengono restituiti tramite codici di uscita nei file di log generati da Setup.exe.   
 
 Una riga di comando ScanOnly di esempio che completa l'analisi di compatibilità in modo invisibile all'utente avrà un aspetto simile al seguente:
 
@@ -57,7 +57,7 @@ Per altre informazioni su ScanOnly e altre opzioni della riga di comando di Wind
 
 Desktop Analytics offre numerosi vantaggi rispetto ai sistemi di gestione desktop tradizionali ed è lo strumento che noi consigliamo. È senza agente e guida l'utente nelle operazioni da eseguire sfruttando le informazioni sulla compatibilità di driver e applicazioni raccolte durante l'aggiornamento di centinaia di milioni di PC. Queste informazioni forniscono una valutazione dettagliata, identificando i problemi di compatibilità che potrebbero impedire l'aggiornamento, con collegamenti alle correzioni consigliate note di Microsoft.
 
-Per configurare Desktop Analytics, prima di tutto è necessario configurare una sottoscrizione di Azure e includervi un'area di lavoro di Azure Log Analytics. Una volta che il servizio Desktop Analytics è in esecuzione, è possibile registrare qualsiasi dispositivo Windows 7 SP1 o versioni successive connesso a Internet tramite le impostazioni di Criteri di gruppo. È semplicissimo. Non ci sono agenti da distribuire e il flusso di lavoro visivo di Desktop Analytics guida l'utente dalla distribuzione pilota alla distribuzione di produzione. Volendo, è possibile esportare i dati da Desktop Analytics a strumenti per la distribuzione del software come System Center Configuration Manager (Current Branch), per raggiungere direttamente i PC e creare raccolte non appena sono pronti per la distribuzione.
+Per configurare Desktop Analytics, prima di tutto è necessario configurare una sottoscrizione di Azure e includervi un'area di lavoro di Azure Log Analytics. Una volta che il servizio Desktop Analytics è in esecuzione, è possibile registrare qualsiasi dispositivo Windows 7 SP1 o versioni successive connesso a Internet tramite le impostazioni di Criteri di gruppo. È semplicissimo. Non ci sono agenti da distribuire e il flusso di lavoro visivo di Desktop Analytics guida l'utente dalla distribuzione pilota alla distribuzione di produzione. Volendo, è possibile esportare i dati da Desktop Analytics a strumenti per la distribuzione del software come Microsoft Endpoint Configuration Manager (Current Branch), per raggiungere direttamente i PC e creare raccolte non appena sono pronti per la distribuzione.
 
 Se al momento Desktop Analytics non è configurato per l'ambiente o se si desidera iscriversi per una prova, accedere alla pagina di Desktop Analytics (https://www.aka.ms/desktopanalytics)) e iniziare.
 
@@ -103,7 +103,7 @@ Man mano che vengono esaminati problemi, un numero sempre maggiore di PC diventa
 
 L'inventario software di Configuration Manager è un'alternativa all'uso di soluzioni di analisi basate sul cloud per valutare lo stato di preparazione di dispositivi e app. È possibile tenere traccia del numero di installazioni ed eseguire il drill-down in computer specifici per definire più facilmente le priorità per il test e la convalida della compatibilità, oltre che impostare pacchetti di applicazioni come compatibili con Windows 10 tramite le impostazioni del pacchetto. Anche se questa opzione non offre la possibilità di confrontare le informazioni di compatibilità note con i servizi di analisi di Microsoft, può rappresentare una soluzione efficace per un set ridotto di applicazioni con priorità per il testing manuale. 
 
-Per altre informazioni, vedere [Introduzione all'inventario software in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/inventory/introduction-to-software-inventory) e come configurare i requisiti della piattaforma nei pacchetti applicazioni in [Pacchetti e programmi di System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
+Per altre informazioni, vedere [Introduzione all'inventario software in Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) e come configurare i requisiti della piattaforma nei pacchetti applicazioni in [Pacchetti e programmi di Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 
 
 ## <a name="desktop-app-assure"></a>Desktop App Assure

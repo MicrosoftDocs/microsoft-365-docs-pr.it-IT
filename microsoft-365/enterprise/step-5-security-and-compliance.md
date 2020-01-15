@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Considerazioni importanti sulla sicurezza e conformità di Windows e Office.
-ms.openlocfilehash: 10fc9ca58d9b48f752bdfed860b805e4f5663d6a
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b4ef8b4d4e5e6277ea129b5a9454983459266462
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031691"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112560"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Passaggio 5: considerazioni sulla sicurezza e conformità
 
@@ -117,7 +117,7 @@ Inoltre, **[Allegati sicuri](https://docs.microsoft.com/office365/securitycompli
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) funge da servizio di gestione basato su cloud per scenari mobili, tra cui dispositivi IOS, Android e Windows e può ora essere configurato per la cogestione per integrare ed estendere i controlli di carichi di lavoro specifici gestiti da System Center Configuration Manager. Un vantaggio è che è possibile richiedere ai dispositivi che accedono alle risorse protette di registrarsi alla gestione dei dispositivi anche a quelli non gestiti, non uniti al dominio o non uniti ad Azure AD. È inoltre possibile sfruttare la configurazione granulare e l'applicazione dei criteri conformità a livello di sistema operativo e applicazione. I criteri e le impostazioni delle applicazioni possono essere configurati centralmente e applicati per Office 365 ProPlus e le app dello Store in Windows 10 con Microsoft Intune.
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) funge da servizio di gestione basato su cloud per scenari mobili, tra cui dispositivi IOS, Android e Windows e può ora essere configurato per la cogestione per integrare ed estendere i controlli di carichi di lavoro specifici gestiti da Configuration Manager. Un vantaggio è che è possibile richiedere ai dispositivi che accedono alle risorse protette di registrarsi alla gestione dei dispositivi anche a quelli non gestiti, non uniti al dominio o non uniti ad Azure AD. È inoltre possibile sfruttare la configurazione granulare e l'applicazione dei criteri conformità a livello di sistema operativo e applicazione. I criteri e le impostazioni delle applicazioni possono essere configurati centralmente e applicati per Office 365 ProPlus e le app dello Store in Windows 10 con Microsoft Intune.
 
 ## <a name="next-step"></a>Passaggio successivo
 

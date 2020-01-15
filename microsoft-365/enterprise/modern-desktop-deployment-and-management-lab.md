@@ -13,18 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 0083eb91b49561c858cacc94a148e97c7463b754
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801361"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112510"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
 Questi lab pratici scaricabili sono incentrati sulla distribuzione di Windows 10 e di Office 365 e includono anche considerazioni sulle attività di configurazione e gestione successive alla distribuzione. Questo training è vivamente consigliato per le organizzazioni che si stanno preparando alla fine del ciclo di vita di Windows 7, ma è utile anche se si usa Windows 10 e Office 365 Plus o Office 2019. Sono incluse le guide relative a Windows 10, Office 365 ProPlus, Enterprise Mobility + Security e prodotti e servizi correlati.
 
-Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione di desktop che eseguono Windows 10 Enterprise e Office 365 ProPlus. I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano System Center Configuration Manager, Desktop Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
+Questi lab sono utili per pianificare, testare e convalidare la distribuzione e la gestione di desktop che eseguono Windows 10 Enterprise e Office 365 ProPlus. I lab illustrano le procedure e gli strumenti descritti nel selettore di distribuzione desktop, che riguardano Microsoft Endpoint Configuration Manager, Desktop Analytics, lo strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
 
 Come parte del processo di [distribuzione del desktop](https://www.aka.ms/howtoshift) per Windows 10 e Office 365 ProPlus, la creazione di un ambiente lab sandbox o isolato è il punto di partenza consigliato quando si inizia a esplorare gli aggiornamenti dello strumento di distribuzione e a testare l'automazione correlata alla distribuzione.
 
@@ -38,7 +38,7 @@ Il lab fornisce un ambiente lab virtuale con provisioning automatico, che compre
 
   - Windows 10 Enterprise, versione 1909
   - Windows 7 Enterprise
-  - System Center Configuration Manager, versione 1902
+  - Microsoft Endpoint Configuration Manager, versione 1902
   - Windows Assessment and Deployment Kit per Windows 10, versione 1903
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V) 5.1
@@ -72,7 +72,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 ### <a name="office-and-lob-app-delivery"></a>**Distribuzione di app line-of-business e di Office**
 
-  - Distribuzione di Office 365 ProPlus tramite System Center Configuration Manager
+  - Distribuzione di Office 365 ProPlus con Microsoft Endpoint Configuration Manager
   - Distribuzione di Office 365 ProPlus tramite Microsoft Intune
   - Distribuzione e gestione di app tramite Microsoft Intune
   - Distribuzione di app e installazione self-service tramite Microsoft Store per le aziende
@@ -126,7 +126,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
   - [Serie di video sulla distribuzione desktop di Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Distribuzione del sistema operativo in System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/understand/introduction-to-operating-system-deployment)
+  - [Distribuzione del sistema operativo di Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Pianificare la distribuzione di Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 

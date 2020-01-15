@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulla Guida e sul supporto tecnico per la distribuzione di Windows 10 e Office 365 ProPlus.
-ms.openlocfilehash: a6064fb49f6bdd44275a9038eeb8b264638ea618
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b7eb30e8a9b5b46635793e9c79e2609467d87848
+ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031021"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41112540"
 ---
 # <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Informazioni utili per la distribuzione di Windows 10 e Office 365 ProPlus 
 
@@ -49,7 +49,7 @@ Ecco una mappa dei servizi disponibili in linea con il processo di [distribuzion
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Distribuzione di app line-of-business e di Office</strong></p>
 <ul>
-<li><p>Configurazione e distribuzione di <a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>, in cui gli esperti di Microsoft FastTrack forniscono assistenza durante il provisioning di licenze utente, la configurazione dell’installazione e le impostazioni di aggiornamento per i prodotti a portata di clic e alla creazione di pacchetti se l’organizzazione utilizza System Center Configuration Manager.</p></li>
+<li><p>Configurazione e distribuzione di <a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a>, in cui gli esperti di Microsoft FastTrack forniscono assistenza durante il provisioning di licenze utente, la configurazione dell'installazione e le impostazioni di aggiornamento per i prodotti a portata di clic e alla creazione di pacchetti se l'organizzazione utilizza Microsoft Endpoint Configuration Manager.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ Ecco una mappa dei servizi disponibili in linea con il processo di [distribuzion
 <td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="step 6" height="144" width="144" /></td>
 <td><p><strong>Distribuzione del sistema operativo e aggiornamenti delle funzionalità</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>, in cui gli esperti di Microsoft FastTrack forniscono assistenza con il provisioning delle licenze utente e la configurazione di Windows Autopilot per i nuovi dispositivi, i criteri MDM per Windows 10 e altri dispositivi mobili, tra cui la distribuzione di applicazioni, Wi-Fi e profili VPN, la gestione contemporanea con System Center Configuration Manager e altro ancora.</p></li>
+<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities#enable-phase">Microsoft Intune</a>, in cui gli esperti di Microsoft FastTrack forniscono assistenza con il provisioning delle licenze utente e la configurazione di Windows Autopilot per i nuovi dispositivi, i criteri MDM per Windows 10 e altri dispositivi mobili, tra cui la distribuzione di applicazioni, Wi-Fi e profili VPN, la gestione contemporanea con Microsoft Endpoint Configuration Manager e altro ancora.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
