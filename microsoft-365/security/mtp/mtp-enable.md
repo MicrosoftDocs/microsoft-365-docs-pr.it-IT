@@ -17,12 +17,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 781aca371315d1ffde4ca2718d8d371e865ccb29
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b1832e2080c3178837f43cbfd45366fc4d48322d
+ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970854"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41173822"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Attivare Microsoft Threat Protection
 
@@ -41,7 +41,7 @@ I clienti che dispongono di Microsoft 365 E5 o di una licenza equivalente posson
 ## <a name="start-using-the-service"></a>Iniziare a usare il servizio
 L'attivazione del servizio Microsoft Threat Protection aggrega i dati dai vari servizi integrati. I dati vengono elaborati e archiviati in modo centralizzato per identificare nuovi approfondimenti e consentire flussi di lavoro di risposte centralizzate.
 
-Prima dell'attivazione del servizio, nel Centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)) non vengono visualizzati gli **Eventi imprevisti** e le opzioni del **Centro operativo** nel menu.
+Prima di abilitare il servizio, Microsoft 365 Security Center ([Security.Microsoft.com](https://security.microsoft.com)) non Visualizza le opzioni relative a **operazioni** non consentite e al **Centro azioni** del menu.
 
 ![Immagine del menu del Centro sicurezza Microsoft 365 senza funzionalità di Microsoft Threat Protection](../images/mtp-off.png)
 *Centro sicurezza Microsoft 365 con Microsoft Threat Protection disattivato*
@@ -71,7 +71,7 @@ I dati verranno eliminati in modo definitivo e le funzionalità corrispondenti v
 
 ## <a name="get-assistance"></a>Ottenere assistenza
 
-Il personale Microsoft può fornire assistenza per eseguire il provisioning o deprovisioning del servizio e delle risorse correlate nel tenant. Per assistenza [contattare il supporto tecnico Premier](https://go.microsoft.com/fwlink/?LinkID=733758).
+Il personale Microsoft può fornire assistenza per eseguire il provisioning o deprovisioning del servizio e delle risorse correlate nel tenant. Per assistenza, selezionare **serve assistenza?** nel centro sicurezza Microsoft 365. Quando si descrivono le proprie preoccupazioni, menzione "Microsoft Threat Protection".
 
 ## <a name="related-topics"></a>Argomenti correlati
 
