@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceTvmSoftwareInventoryVulnerabilities nello schema per Ricerca avanzata
 description: Informazioni su un inventario si software nel dispositivo e sulle loro vulnerabilità nella tabella DeviceTvmSoftwareInventoryVulnerabilities dello schema per Ricerca avanzata.
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, ricerca, query, telemetria, schema di riferimento, esplora dati, tabella, colonna, tipo di dati, descrizione, gestione delle minacce e vulnerabilità, TVM, gestione dei dispositivi, software, inventario, vulnerabilità, ID CVE, sistema operativo, DeviceTvmSoftwareVulnerabilities
+keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, Threat & vulnerabilità di gestione, TVM, gestione dei dispositivi, software, inventario, vulnerabilità, ID CVE, OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6aca41e46af8ba94f87e7ee91059c3d11a4fbe9e
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d3b85bcbc2cb65cc434c7af0ba078bd835d8203f
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808631"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210498"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 

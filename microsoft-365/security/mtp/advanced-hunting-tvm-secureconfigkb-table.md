@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceTvmSecureConfigurationAssessmentKB nello schema per Ricerca avanzata
 description: Informazioni sulle diverse configurazioni sicure valutate da Gestione delle minacce e della vulnerabilità nella tabella DeviceTvmSecureConfigurationAssessmentKB dello schema per Ricerca avanzata.
-keywords: ricerca avanzata, ricerca delle minacce, ricerca minacce informatiche, ricerca, eseguire una query, telemetria, riferimento dello schema, esplora dati, tabella, colonna, tipo di dati, descrizione, gestione delle minacce e della vulnerabilità, TVM, gestione dei dispositivi, configurazione della sicurezza, framework MITRE ATT&CK, knowledge base, KB, DeviceTvmSecureConfigurationAssessmentKB
+keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, Threat & vulnerabilità di gestione, TVM, gestione dei dispositivi, configurazione della sicurezza, MITRE ATT&CK Framework, Knowledge base, KB, DeviceTvmSecureConfigurationAssessmentKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a3ae0a95af4a51d492c577e6a2ac1f2b96bba635
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2bcf3ab438dc8894c186ac7ee477af1821e783cc
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806935"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210181"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 

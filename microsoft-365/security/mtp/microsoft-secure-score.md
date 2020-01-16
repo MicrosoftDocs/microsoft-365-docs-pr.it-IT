@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 656b444da9b85028aa1d280a76ca038e2d3a3ac6
-ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
+ms.openlocfilehash: abd67d08d45a5e66b301e04a6afbd498fcd0344a
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41012189"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210151"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -50,7 +50,7 @@ La maggior parte sono segnati in modo binario, se si implementa l'azione di migl
 
 ### <a name="products-included-in-secure-score"></a>Prodotti inclusi nel punteggio sicuro
 
-Sono attualmente disponibili suggerimenti per Office 365 (tra cui SharePoint Online, Exchange Online, OneDrive for business, Microsoft Information Protection e altro ancora), Azure AD, Intune e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza, come Azure ATP e Microsoft Defender ATP. Gli elementi consigliati non riguardano tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate in base a una terza parte.
+Sono attualmente disponibili suggerimenti per Office 365 (tra cui SharePoint Online, Exchange Online, OneDrive for business, Microsoft Information Protection e altro ancora), Azure AD e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza, come Azure ATP e Microsoft Defender ATP. Gli elementi consigliati non riguardano tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate in base a una terza parte.
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 
@@ -136,16 +136,53 @@ Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in ba
 
 Per rendere Microsoft Secure Score un migliore rappresentante della posizione di sicurezza e migliorare l'usabilità, vengono apportate alcune modifiche nel prossimo futuro. Il Punteggio e il punteggio massimo possono variare. Tuttavia, ciò non implica una modifica della posizione di sicurezza.
 
+### <a name="removing-improvement-actions-from-intune"></a>Rimozione di azioni di miglioramento da Intune
+
+Dopo una valutazione delle azioni di miglioramento di Microsoft Secure Score forniti da Intune, è stato deciso che non forniscono una rappresentazione utile della posizione di sicurezza dei dispositivi nelle organizzazioni. Invece di concentrarsi sui criteri, stiamo lavorando per portare i controlli di sicurezza che valutano direttamente lo stato di configurazione dei dispositivi.
+
+Verranno rimosse le seguenti azioni di miglioramento di Intune:
+
+- Abilitare la gestione dei dispositivi mobili di Microsoft Intune
+- Creare un criterio di conformità di Microsoft Intune per Android
+- Creare un criterio di conformità di Microsoft Intune per Android per il lavoro
+- Creare un criterio di protezione delle app di Microsoft Intune per Android
+- Creare un criterio di protezione delle app di Microsoft Intune per iOS
+- Contrassegnare i dispositivi senza criteri di conformità di Microsoft Intune assegnati come non conformi
+- Creare un criterio di conformità di Microsoft Intune per iOS
+- Creare un criterio di conformità di Microsoft Intune per macOS
+- Creare un criterio di conformità di Microsoft Intune per Windows
+- Creare un profilo di configurazione di Microsoft Intune per Android
+- Creare un profilo di configurazione di Microsoft Intune per Android per il lavoro
+- Creare un profilo di configurazione di Microsoft Intune per macOS
+- Creare un profilo di configurazione di Microsoft Intune per iOS
+- Creare un profilo di configurazione di Microsoft Intune per Windows
+- Abilitare il rilevamento migliorato del jailbreak in Microsoft Intune
+- Richiedere la correzione di tutti i dispositivi, disporre di antivirus e firewall abilitati
+- Abilitare l'integrazione di Windows Defender ATP in Microsoft Intune
+- Creare un criterio di protezione delle informazioni di Windows per Microsoft Intune
+- Richiedere che tutti i dispositivi dispongano di configurazioni di sicurezza avanzate
+- Rivedere i dispositivi bloccati segnala settimanalmente
+
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Rimozione di azioni di miglioramento che non soddisfano le aspettative per misure affidabili
+
+Per assicurarsi che il Punteggio di Microsoft Secure sia significativo e che ogni azione di miglioramento sia misurabile e affidabile, è possibile rimuovere l'azione di miglioramento seguente.
+
+- Abilitare la registrazione dei dati di controllo
+- Individuare le applicazioni IT Shadow a rischio e non conformi
+- Esaminare le autorizzazioni & bloccare le applicazioni OAuth rischiose connesse all'ambiente
+
 ### <a name="mfa-improvement-action-updates"></a>Aggiornamenti dell'azione per il miglioramento dell'AMF
 
 Per riflettere la necessità per le aziende di garantire la massima sicurezza durante l'applicazione di criteri che funzionano con le loro attività, Microsoft Secure Score rimuove tre azioni di miglioramento incentrate sull'autenticazione a più fattori e l'aggiunta di due.
 
 I tre che verranno rimossi:
+
 - Registrare tutti gli utenti per l'autenticazione a più fattori
 - Richiedi l'AMF per tutti gli utenti
 - Richiedere l'autenticazione master per i ruoli con privilegi di Azure AD
 
 Nuove azioni di miglioramento:
+
 - Garantire che tutti gli utenti possano completare l'autenticazione a più fattori per l'accesso sicuro
 - Richiedere l'AMF per i ruoli amministrativi
 

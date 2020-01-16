@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Trovare e utilizzare i report per Office 365 Advanced Threat Protection nel centro &amp; sicurezza e conformità.
-ms.openlocfilehash: 1ddb5a549551e674fb257e4f78c81c5df1eb1a10
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 74ed1387af7792d8cb41d6f890deb89be07fc9fc
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112730"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210508"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per Office 365 Advanced Threat Protection
 
@@ -96,12 +96,6 @@ Nella tabella Details, è possibile visualizzare ulteriori informazioni su infor
 
 > [!NOTE]
 > Si tratta di un *report di tendenza di protezione*, in cui i dati rappresentano le tendenze di un DataSet più grande. La creazione di report non è disponibile in tempo reale. Per l'URL in tempo reale, fare clic su dati, continuare a utilizzare la traccia URL.
-
-## <a name="compromised-users-report"></a>Report utenti compromessi
-
-Questo report, disponibile per tutti gli utenti con Exchange Online Protection, Visualizza il numero di account utente contrassegnati come membri sospetti o limitati, dati particolarmente utili come account immettere uno degli Stati che indicano che l'account utente potrebbe essere problematico o addirittura compromessa. Con uso frequente, il report utente compromesso può individuare picchi e persino tendenze, in account contrassegnati in Stati sospetti o con restrizioni, in cui è possibile che si verifichi un problema con la sicurezza e il benessere del tenant.
-
-![Il report utenti compromessi così come viene visualizzato in Office 365.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## <a name="atp-file-types-report"></a>Report dei tipi di file di ATP
 

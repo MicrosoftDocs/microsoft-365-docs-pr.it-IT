@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceTvmSecureConfigurationAssessment nello schema di Ricerca avanzata
 description: Informazioni sugli eventi di valutazione della sicurezza della Gestione delle minacce e della vulnerabilità nella tabella DeviceTvmSecureConfigurationAssessment dello schema di Ricerca avanzata. Questi eventi forniscono informazioni sul computer, oltre a dettagli relativi alla configurazione della sicurezza, all’impatto e a informazioni sulla conformità.
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, ricerca, query, telemetria, schema di riferimento, kusto, tabella, colonna, tipo di dati, descrizione, gestione delle minacce e della vulnerabilità, TVM, gestione dei dispositivi, configurazione della sicurezza, DeviceTvmSecureConfigurationAssessment
+keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, Threat & vulnerabilità di gestione, TVM, gestione dei dispositivi, configurazione della sicurezza, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d03b278fbf029b08b476f20292315807a3f5e32a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3d58ba24aa3ad2226cfae3ee96a8f0ed3a1c9566
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808621"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210301"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 

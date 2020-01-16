@@ -1,7 +1,7 @@
 ---
 title: Il linguaggio delle query in Ricerca avanzata in Microsoft Threat Protection
 description: Creare una prima query di ricerca delle minacce, conoscere gli operatori più comuni e altri aspetti del linguaggio di query di Ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, ricerca, query, linguaggio, imparare, prima query, telemetria, rilevamenti personalizzati, schema, esplora dati, operatori, tipi di dati
+keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, language, Learn, First query, telemetria, eventi, telemetria, rilevamenti personalizzati, schema, kusto, operatori, tipi di dati
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b2b42c6a49a4422d73148b06e8379dcf1336e926
-ms.sourcegitcommit: d48b7852383262083a6a109530d84f0858cb3801
+ms.openlocfilehash: 36f2efb733e8403b30e0ecc406bb1ea2d6a6248e
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40999610"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210341"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 

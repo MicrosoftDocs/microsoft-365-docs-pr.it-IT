@@ -1,7 +1,7 @@
 ---
 title: Caccia alle minacce in Microsoft 365
 description: Utilizzo delle funzionalità di ricerca di minacce nel centro sicurezza Microsoft 365 per individuare in modo proattivo le violazioni e altre minacce
-keywords: sicurezza, malware, Microsoft 365, M365, Microsoft Threat Protection, MTP, Centro sicurezza, Hunt, Threat Hunting, cyberthreat Hunting, Microsoft Defender ATP, Office 365 ATP, Azure ATP, Advanced Hunting
+keywords: Microsoft 365, M365, Microsoft Threat Protection, MTP, Centro sicurezza, Hunt, Threat Hunting, cyberthreat Hunting, Microsoft Defender ATP, Office 365 ATP, Azure ATP, Advanced Hunting
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e0f4c97a1c2963fc714420457208b40af688d86b
-ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
+ms.openlocfilehash: c2bb0b088a40511eea36348d39790fd5e88fa40b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41173502"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210161"
 ---
 # <a name="hunt-for-threats-in-microsoft-365"></a>Caccia alle minacce in Microsoft 365
 

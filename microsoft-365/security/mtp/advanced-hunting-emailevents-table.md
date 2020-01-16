@@ -1,7 +1,7 @@
 ---
 title: Tabella EmailEvents nello schema per ricerca avanzata
 description: Informazioni sugli eventi associati ai messaggi di posta elettronica di Office 365 nella tabella EmailEvents dello schema per ricerca avanzata
-keywords: ricerca avanzata, ricerca minacce, ricerca minacce informatiche, ricerca, eseguire una query, telemetria, riferimento dello schema, esplora dati, tabella, colonna, tipo di dati, descrizione, EmailEvents, ID messaggio di rete, mittente, destinatario, ID allegato, nome allegato, verdetto malware, verdetto phishing, conteggio allegati, conteggio collegamenti, conteggio URL
+keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, EmailEvents, ID messaggio di rete, mittente, destinatario, ID allegato, nome allegato, verdetto di malware, verdetto di phishing, conteggio degli allegati, Conteggio collegamenti, conteggio URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3495414148edb5e3b6691e4545e0cf6587af7b4d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 43d30772fa756369971bde747825028b50e9540b
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808711"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210361"
 ---
 # <a name="emailevents"></a>EmailEvents
 

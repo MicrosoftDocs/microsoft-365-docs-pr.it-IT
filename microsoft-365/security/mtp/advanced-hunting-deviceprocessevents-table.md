@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceProcessEvents nello schema di caccia avanzato
 description: Informazioni sugli eventi di creazione o di generazione dei processi nell'DeviceProcessEventstable dello schema di caccia avanzato
-keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, processcreationevents, DeviceProcessEvents, ID processo, riga di comando, DeviceProcessEvents
+keywords: caccia avanzata, caccia alle minacce, Cyber-caccia alle minacce, Microsoft Threat Protection, Microsoft 365, MTP, M365, ricerca, query, telemetria, riferimento dello schema, kusto, tabella, colonna, tipo di dati, processcreationevents, DeviceProcessEvents, ID processo, comando riga, DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4e7899d06d9107ed5fdbaf67d507ed69a034329b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e65231b28e6baeff71ce8bc448b2955d062a46e9
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40809325"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210381"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 

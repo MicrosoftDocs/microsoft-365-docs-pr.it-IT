@@ -1,7 +1,7 @@
 ---
 title: Procedure consigliate nella Ricerca avanzata di Microsoft Threat Protection
 description: Come creare query di ricerca delle minacce veloci, efficienti e senza errori quando in Ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, ricerca, query, telemetria, rilevamenti personalizzati, schema, esplora dati, evitare timeout, linee di comando, id processo
+keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, telemetria, rilevamenti personalizzati, schema, kusto, evitare il timeout, linee di comando, ID processo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 97c5f5541e1c3293346a53d87b950121e85e6eae
-ms.sourcegitcommit: 72d0280c2481250cf9114d32317ad2be59ab6789
+ms.openlocfilehash: adb447916346ad83c95e64ef889d2986a106e776
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40966869"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209941"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Procedure consigliate per query in Ricerca avanzata
 

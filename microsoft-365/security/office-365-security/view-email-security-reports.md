@@ -1,9 +1,9 @@
 ---
-title: Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità
+title: Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità, gli utenti compromessi, la crittografia, lo stato di protezione dalle minacce, i rilevamenti di malware, il malware principale, il rilevamento di posta indesiderata, la posta elettronica inviata e ricevuta, i messaggi segnalati dall'utente, i report
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/29/2019
+ms.date: 01/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono &amp; disponibili nel centro sicurezza e conformità.
-ms.openlocfilehash: 70eceb8d7afa227027b71d475aa22b2151f2dea6
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: c44944c8f392b2df8cfe4b9e1741ba4b7ea13382
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112405"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41209951"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità
 
@@ -29,7 +29,8 @@ Nel [Centro sicurezza &amp; e conformità](https://protection.office.com) sono d
 ![Dashboard in cui viene visualizzato il livello di protezione avanzata dalle minacce](../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 I rapporti di sicurezza della posta elettronica includono quanto segue:
-- [Report di crittografia](#encryption-report) (nuovo!)
+- [Report utenti compromessi (**nuovo!**)](#compromised-users-report-new)
+- [Rapporto di crittografia](#encryption-report)
 - [Report dello stato di protezione dalle minacce](#threat-protection-status-report) 
 - [Rapporto rilevamenti malware](#malware-detections-report) 
 - [Rapporto malware principale](#top-malware-report)
@@ -38,10 +39,17 @@ I rapporti di sicurezza della posta elettronica includono quanto segue:
 - [Rapporto rilevamento posta indesiderata](#spam-detections-report)
 - [Report di posta elettronica inviati e ricevuti](#sent-and-received-email-report)
 - [Report dei messaggi segnalati dall'utente](#user-reported-messages-report)
-    
+
+
+## <a name="compromised-users-report-new"></a>Report utenti compromessi (**nuovo!**) 
+
+Questo report, disponibile per tutti gli utenti con Exchange Online Protection, Visualizza il numero di account utente contrassegnati come membri sospetti o limitati, dati particolarmente utili come account immettere uno degli Stati che indicano che l'account utente potrebbe essere problematico o addirittura compromessa. Con uso frequente, il report utente compromesso può individuare picchi e persino tendenze, in account contrassegnati in Stati sospetti o con restrizioni, in cui è possibile che si verifichi un problema con la sicurezza e il benessere del tenant.
+
+![Il report utenti compromessi così come viene visualizzato in Office 365.](../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
 ## <a name="encryption-report"></a>Rapporto di crittografia
 
-(**Nuovo!**) Il **rapporto di crittografia** Visualizza informazioni sui messaggi di posta elettronica crittografati, tramite i criteri dell'organizzazione o tramite i controlli dell'utente finale. Il team di sicurezza dell'organizzazione può utilizzare le informazioni contenute in questo report per identificare modelli e applicare o modificare in modo proattivo i criteri per i messaggi di posta elettronica sensibili.
+Il **rapporto di crittografia** Visualizza informazioni sui messaggi di posta elettronica crittografati, tramite i criteri dell'organizzazione o tramite i controlli dell'utente finale. Il team di sicurezza dell'organizzazione può utilizzare le informazioni contenute in questo report per identificare modelli e applicare o modificare in modo proattivo i criteri per i messaggi di posta elettronica sensibili.
 
 Per visualizzare il report, nel centro sicurezza & conformità accedere a report **crittografia** **Dashboard** \> **report** \> .
 

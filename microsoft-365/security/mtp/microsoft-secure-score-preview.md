@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0f54ee771f4358c5c99c3338366eb277013c15e3
-ms.sourcegitcommit: a2e9ab69f99f2069372ccfffd9ef2ffbd8568826
+ms.openlocfilehash: 284efd5224f3e48ab718c0de0c877f68fc0bdecc
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41012179"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210478"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (anteprima)
 
@@ -53,7 +53,7 @@ Ogni azione di miglioramento vale 10 punti o meno. La maggior parte sono segnati
 
 ### <a name="products-included-in-secure-score"></a>Prodotti inclusi nel punteggio sicuro
 
-Sono attualmente disponibili suggerimenti per Office 365 (tra cui SharePoint Online, Exchange Online, OneDrive for business, Microsoft Information Protection e altro ancora), Azure AD, Intune, Microsoft Defender ATP e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza. Gli elementi consigliati non riguardano tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate in base a una terza parte.
+Sono attualmente disponibili suggerimenti per Office 365 (tra cui SharePoint Online, Exchange Online, OneDrive for business, Microsoft Information Protection e altro ancora), Azure AD, Microsoft Defender ATP e cloud app Security. Sono disponibili suggerimenti per gli altri prodotti di sicurezza. Gli elementi consigliati non riguardano tutte le superfici di attacco associate a ciascun prodotto, ma sono una buona linea di base. È inoltre possibile contrassegnare le azioni di miglioramento riportate in base a una terza parte.
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 
