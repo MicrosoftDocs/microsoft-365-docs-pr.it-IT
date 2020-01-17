@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Office 365 Advanced eDiscovery v 1.0 vengono anche ritirati entro lo stesso periodo di tempo.
-ms.openlocfilehash: cb24c40cc2018fba6d1feb13ef0d6426abd2c49a
-ms.sourcegitcommit: a3178a0fab69d20bf3fc8d3fbc17dd3d16923622
+ms.openlocfilehash: 08f568a82096efb143ff5c9fd87011a3d3029e42
+ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "41107905"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41210061"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Pensionamento degli strumenti di eDiscovery legacy
 
@@ -45,7 +45,7 @@ Come risultato di questa nuova e migliorata funzionalità di eDiscovery nel cent
    - [GetSearchableMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
-   
+
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
 - [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), che è la prima versione di Advanced eDiscovery a cui si accede tramite un caso eDiscovery nel centro sicurezza & conformità di Office 365.
@@ -62,7 +62,7 @@ Secondo l'annuncio originale del 1 ° luglio 2017, il eDiscovery sul posto & la 
 Poiché tutte queste funzionalità (ad eccezione della copia dei risultati di ricerca in una cassetta postale di individuazione) sono ora disponibili negli strumenti ricerca contenuto, eDiscovery e Advanced eDiscovery nel [centro conformità di microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) (con funzionalità, affidabilità e supporto migliorati per una vasta gamma di servizi Microsoft 365), è consigliabile iniziare a usare questi strumenti appena possibile. Per facilitare la transizione a questi altri strumenti di eDiscovery, nella tabella seguente sono elencati gli strumenti che è possibile utilizzare invece di eDiscovery sul posto e blocco sul posto.
 
 ### <a name="scope-of-affected-organizations"></a>Ambito delle organizzazioni coinvolte
-    
+
 - Organizzazioni di Office 365 e Microsoft 365 Enterprise
 
 - Organizzazioni per l'istruzione di Office 365 e Microsoft 365
@@ -71,11 +71,10 @@ Poiché tutte queste funzionalità (ad eccezione della copia dei risultati di ri
 
 - Office 365 Germania
 
-
 ### <a name="timeline-for-retirement"></a>Sequenza temporale per la pensione
-    
+
 - 2020 aprile 1: non sarà possibile creare nuove ricerche e conservazioni, ma è comunque possibile eseguire, modificare ed eliminare le ricerche esistenti a proprio rischio. Il supporto tecnico Microsoft non eDiscovery più sul posto & conserva nell'interfaccia di amministrazione di Exchange.
-    
+
 - 2020 luglio 1: la eDiscovery sul posto & contiene la funzionalità nell'interfaccia di amministrazione di Exchange verrà messa in modalità di sola lettura. Questo significa che sarà possibile rimuovere solo le ricerche e le esenzioni esistenti.
 
 ### <a name="alternative-tools"></a>Strumenti alternativi
@@ -131,6 +130,11 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <p>
 <p>In alternativa, è possibile esportare i risultati della ricerca in file PST e quindi utilizzare il servizio Microsoft 365 Import per importare il PST in una cassetta postale di individuazione. Per istruzioni dettagliate, vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">usare il caricamento di rete per importare i file PST in Office 365</a>.
 </tr>
+<tr class="even">
+<td>Ripristinare gli elementi dalla cartella elementi ripristinabili</td>
+  <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
+  <td>È possibile ripristinare gli elementi eliminati in modo definitivo (noti anche come elementi <i>eliminati temporaneamente</i> ) nelle cassette postali, purché il periodo di conservazione degli elementi eliminati per un elemento non sia scaduto. Per ulteriori informazioni, vedere <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">cartella elementi ripristinabili in Exchange Online</a>.</td>
+</tr>
 </tbody>
 </table>
 
@@ -155,7 +159,7 @@ In base all'avviso originale annunciato il 1 ° luglio 2017 nell'interfaccia di 
 Poiché queste funzionalità sono ora disponibili nel [<span class="underline">centro conformità Microsoft 365</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) e in Office 365 Security & Compliance Center PowerShell con prestazioni e scalabilità migliorate, è consigliabile utilizzare questi cmdlet migliorati. Tra questi cmdlet sono inclusi [<span class="underline"> \*-ComplianceCase</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase), [<span class="underline"> \*-ComplianceSearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch), [<span class="underline"> \*-CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy), [<span class="underline"> \*-CaseHoldRule</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule)e [<span class="underline"> \*-ComplianceSearchAction</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction).
 
 ### <a name="scope-of-affected-organizations"></a>Ambito delle organizzazioni coinvolte
-    
+
 - Organizzazioni di Office 365 e Microsoft 365 Enterprise
 
 - Organizzazioni per l'istruzione di Office 365 e Microsoft 365
@@ -165,9 +169,9 @@ Poiché queste funzionalità sono ora disponibili nel [<span class="underline">c
 - Office 365 Germania
 
 ### <a name="timeline"></a>Sequenza temporale
-    
+
 - 2020 aprile 1: non è possibile utilizzare **New-MailboxSearch** per creare nuove ricerche eDiscovery sul posto e archiviazioni sul posto, ma è comunque possibile utilizzare i cmdlet per l'esecuzione, la modifica e l'eliminazione delle ricerche esistenti e le esenzioni a proprio rischio. Il supporto tecnico Microsoft non fornirà più assistenza per questi tipi di ricerche e esenzioni.
-    
+
 - 1 luglio 2020: come indicato in precedenza, il eDiscovery sul posto & conserva la funzionalità nell'interfaccia di amministrazione di Exchange verrà messa in modalità di sola lettura. Questo significa anche che non è possibile utilizzare i cmdlet **New-MailboxSearch**, **Start-MailboxSearch**o **Set-MailboxSearch** . È possibile ottenere e rimuovere solo le ricerche e le esenzioni esistenti.
 
 ### <a name="alternative-tools"></a>Strumenti alternativi
@@ -239,7 +243,7 @@ Il cmdlet **Search-Mailbox** in Exchange Online PowerShell viene ritirato come a
 - Office 365 Germania
 
 ### <a name="timeline"></a>Sequenza temporale
-    
+
 -  2020 aprile 1: il cmdlet **Search-Mailbox** non sarà più disponibile e il supporto tecnico Microsoft non fornirà più assistenza.
 
 ### <a name="alternative-tools"></a>Strumenti alternativi
@@ -314,11 +318,11 @@ A questo punto, si consiglia di iniziare a eseguire la transizione del flusso di
 - Office 365 Germania
 
 ### <a name="timeline"></a>Sequenza temporale
-    
+
 - 2020 aprile 1: non è possibile creare nuovi casi avanzati di eDiscovery v 1.0.
-    
-- 1 luglio 2020: il supporto tecnico Microsoft non fornisce supporto. Vedere [questo avviso](https://go.microsoft.com/fwlink/?linkid=2113221). Non sarà possibile aggiungere nuovi dati (preparare i risultati della ricerca per Advanced eDiscovery) a tutti i casi. È possibile continuare a utilizzare i dati nei casi esistenti a proprio rischio e pericolo.
+
+- 1 luglio 2020: non è possibile aggiungere nuovi dati (preparare i risultati della ricerca per Advanced eDiscovery) a tutti i casi. È possibile continuare a utilizzare i dati nei casi esistenti a proprio rischio e pericolo. Il supporto tecnico Microsoft non offrirà più assistenza. 
 
 ### <a name="alternative-tools"></a>Strumenti alternativi
-    
+
 La [soluzione avanzata di eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) nel centro conformità di Microsoft 365.
