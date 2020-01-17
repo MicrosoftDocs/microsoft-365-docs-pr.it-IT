@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: abd67d08d45a5e66b301e04a6afbd498fcd0344a
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: ccb529a738ebd326d1c5d5513c6e3236a9c58f8a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210151"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230194"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -170,6 +170,7 @@ Per assicurarsi che il Punteggio di Microsoft Secure sia significativo e che ogn
 - Abilitare la registrazione dei dati di controllo
 - Individuare le applicazioni IT Shadow a rischio e non conformi
 - Esaminare le autorizzazioni & bloccare le applicazioni OAuth rischiose connesse all'ambiente
+- Configurare il controllo delle versioni nelle raccolte documenti di SharePoint Online
 
 ### <a name="mfa-improvement-action-updates"></a>Aggiornamenti dell'azione per il miglioramento dell'AMF
 

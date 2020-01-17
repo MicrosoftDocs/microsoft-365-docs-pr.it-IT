@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: La funzionalità collegamenti sicuri fornisce il tempo di fare clic sulla verifica dei link ipertestuali nei documenti di Office e nei messaggi di posta elettronica. Leggere questo articolo per informazioni su come funzionano i collegamenti sicuri di ATP.
-ms.openlocfilehash: bf6c2f0460bc285d0093019812e295c1cfe5ce66
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 56b9ce71ed0f695e2f9ee7d833ecbc980a94edd8
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970762"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230184"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Funzionamento di collegamenti sicuri di Office 365 ATP
          
@@ -36,9 +36,7 @@ A livello elevato, ecco come funziona la protezione dei [collegamenti sicuri di 
 5. L'utente apre un messaggio di posta elettronica e fa clic su un URL nel messaggio di posta elettronica.
     
 6. La caratteristica collegamenti sicuri ATP verifica immediatamente l'URL prima di aprire il sito Web. L'URL viene identificato come bloccato, dannoso o sicuro.
-    
-   - Se l'URL è associato a un sito Web incluso in un [elenco di URL personalizzato "non riscrivere"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) per un criterio che si applica all'utente, il sito Web verrà aperto. 
-    
+        
    - Se l'URL è incluso nell' [elenco degli URL bloccati personalizzati](set-up-a-custom-blocked-urls-list-wtih-atp.md)dell'organizzazione, viene visualizzata una [pagina di avviso](atp-safe-links-warning-pages.md) . 
     
    - Se l'URL è associato a un sito Web che è stato determinato come dannoso, viene visualizzata una [pagina di avviso](atp-safe-links-warning-pages.md) . 

@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e67ff2b28a6dec741b2ad7af5179dca226fb86ad
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962573"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230214"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Gestire i ticket tramite ServiceNow
 
@@ -109,15 +109,19 @@ Impostare le configurazioni di tabella "registri applicazioni" su predefinita:
 
 Andare alla tabella registri applicazioni (menu > System OAuth > Application Registry) in ServiceNow e individuare l'entità OAuth creata dall'utente (nome assegnato).
 
-### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Come convalidare l'utente di integrazione creato con l'elenco di controllo di installazione per Microsoft 365 Security & Compliance Connector
-
-Andare alla tabella users (menu > User Administration > Users) in ServiceNow e trovare l'utente di integrazione creato da voi (nome che è stato assegnato).
+### <a name="logging-in-as-the-integration-user"></a>Accesso come utente di integrazione
 
 Prima di autorizzare la connessione tra Microsoft 365 Security Center e ServiceNow, assicurarsi di utilizzare l'account di accesso e la password dell'utente di integrazione creati nei passaggi di installazione. Non utilizzare le credenziali personali.
 
-### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>L'installazione è stata completata ma non è possibile visualizzare i ticket e non condividerli
+1. Andare alla pagina autorizzazione in ServiceNow.
+2. Se l'utente ha eseguito l'accesso con le proprie credenziali personali, selezionare il collegamento **che non si trova** nell'angolo in alto a destra.
+3. Accedere a ServiceNow come utente di integrazione creato in precedenza nell'elenco di controllo di installazione.  
+4. Selezionare **Consenti** nella pagina ServiceNow in cui viene chiesto se il connettore di sicurezza + conformità è in grado di connettersi all'account di ServiceNow.
+5. Procedere con la procedura di installazione.
 
-Se i passaggi di installazione e installazione sono stati completati, ma non vengono visualizzate le schede di ServiceNow nella Home page e non è possibile condividere ServiceNow da Microsoft Secure score, controllare lo stato della pagina di provisioning in https://security.microsoft.com/ticketProvisioning. Selezionare **Salva** e torna alla Home page. Le schede devono essere visualizzate.
+### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Come convalidare l'utente di integrazione creato con l'elenco di controllo di installazione per Microsoft 365 Security & Compliance Connector
+
+Andare alla tabella users (menu > User Administration > Users) in ServiceNow e trovare l'utente di integrazione creato da voi (nome che è stato assegnato).
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>L'azienda dispone di accesso Single Sign-on che impedisce la connessione a ServiceNow tramite il Centro sicurezza di Microsoft 365
 
@@ -135,3 +139,7 @@ Se l'azienda ha abilitato il servizio Single Sign-on e viene visualizzato un err
 
 1. Creare un utente con privilegi di amministratore della sicurezza in Azure Active Directory. L'utente deve avere lo stesso nome e l'indirizzo di posta elettronica dell'utente di integrazione creato dall'elenco di controllo dell'installazione. È possibile rimuovere il ruolo di amministratore della sicurezza dopo aver completato il login e la connessione.
 2. Accedere al centro sicurezza Microsoft 365 come utente e seguire la procedura di installazione.
+
+### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>L'installazione è stata completata ma non è possibile visualizzare i ticket e non condividerli
+
+Se i passaggi di installazione e installazione sono stati completati, ma non vengono visualizzate le schede di ServiceNow nella Home page e non è possibile condividere ServiceNow da Microsoft Secure score, controllare lo stato della pagina di provisioning in https://security.microsoft.com/ticketProvisioning. Selezionare **Salva** e torna alla Home page. Le schede devono essere visualizzate.

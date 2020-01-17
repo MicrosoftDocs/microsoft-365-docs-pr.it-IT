@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d51fc812ffb82d9af1f706e513498da7611a1a6b
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 4d5769088f3904bf62d2889f35f236c9410628db
+ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210468"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230204"
 ---
 # <a name="devicefilecertificateinfobeta"></a>DeviceFileCertificateInfoBeta
 
@@ -35,23 +35,24 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Data e ora di registrazione dell'evento
-| `DeviceId` | stringa | Identificatore univoco per il computer nel servizio
-| `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer
-| `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata
-| `IsSigned` | boolean | Indica se il file è firmato
-| `SignatureType` | stringa | Indica se le informazioni sulla firma sono state lette come contenuto incorporato nel file stesso o lette da un file di catalogo esterno.
-| `Signer` | stringa | Informazioni sul firmatario del file
-| `SignerHash` | stringa | Valore hash univoco che identifica il firmatario
-| `Issuer` | stringa | Informazioni sull'autorità di certificazione (CA) di emissione
-| `IssuerHash` | stringa | Valore hash univoco che identifica l'autorità di certificazione (CA) di emissione
-| `CrlDistributionPointUrls` | stringa |  URL della condivisione di rete che contiene i certificati e l'elenco di revoche di certificati (CRL)
-| `CertificateCreationTime` | datetime | Data e ora in cui è stato creato il certificato
-| `CertificateExpirationTime` | datetime | Data e ora in cui il certificato è impostato per scadere
-| `CertificateCountersignatureTime` | datetime | Data e ora in cui il certificato è stato controfirmato
-| `IsTrusted` | boolean | Indica se il file è attendibile in base ai risultati della funzione WinVerifyTrust, che consente di verificare la presenza di informazioni sul certificato radice sconosciute, firme non valide, certificati revocati e altri attributi discutibili.
-| `IsRootSignerMicrosoft` | boolean | Indica se il firmatario del certificato radice è Microsoft
-| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e timestamp.
+| `Timestamp` | datetime | Data e ora di registrazione dell'evento |
+| `DeviceId` | stringa | Identificatore univoco per il computer nel servizio |
+| `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
+| `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
+| `IsSigned` | boolean | Indica se il file è firmato |
+| `SignatureType` | stringa | Indica se le informazioni sulla firma sono state lette come incorporate | contenuto del file stesso o lettura da un file di catalogo esterno |
+| `Signer` | stringa | Informazioni sul firmatario del file |
+| `SignerHash` | stringa | Valore hash univoco che identifica il firmatario |
+| `Issuer` | stringa | Informazioni sull'autorità di certificazione (CA) di emissione |
+| `IssuerHash` | stringa | Valore hash univoco che identifica l'autorità di certificazione (CA) di emissione |
+| `CertificateSerialNumber` | stringa | Identificatore del certificato univoco per l'autorità di certificazione (CA) di emissione |
+| `CrlDistributionPointUrls` | stringa |  Array JSON che elenca gli URL delle condivisioni di rete che contengono certificati e elenchi di revoche di certificati (CRL) |
+| `CertificateCreationTime` | datetime | Data e ora in cui è stato creato il certificato |
+| `CertificateExpirationTime` | datetime | Data e ora in cui il certificato è impostato per scadere |
+| `CertificateCountersignatureTime` | datetime | Data e ora in cui il certificato è stato controfirmato |
+| `IsTrusted` | boolean | Indica se il file è attendibile in base ai risultati della funzione WinVerifyTrust, che consente di verificare la presenza di informazioni sul certificato radice sconosciute, firme non valide, certificati revocati e altri attributi discutibili. |
+| `IsRootSignerMicrosoft` | boolean | Indica se il firmatario del certificato radice è Microsoft |
+| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e timestamp. | 
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Ricerca proattiva delle minacce](advanced-hunting-overview.md)
