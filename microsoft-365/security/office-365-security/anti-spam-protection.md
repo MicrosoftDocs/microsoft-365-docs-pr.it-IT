@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di impedire la posta indesiderata in Exchange Online e Office 365. Ottenere troppi messaggi di posta indesiderata in Office 365? È possibile personalizzare i filtri posta indesiderata e le impostazioni dei criteri di protezione da posta indesiderata
-ms.openlocfilehash: 16f58efbf326f1450689a8e13624be520f7a4902
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 33a1415306dcfc635e6c5608f3834b79932d9420
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970902"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238533"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protezione dalla posta indesiderata in Office 365
 
@@ -73,7 +73,7 @@ Se si è preoccupati per la posta indesiderata, il phishing e lo spoofing in Off
 
 [Domande frequenti sulla protezione da posta indesiderata](anti-spam-protection-faq.md)
 
-[Evitare che la posta elettronica venga erroneamente contrassegnata come posta indesiderata tramite un elenco di indirizzi attendibili o altre tecniche](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[Evitare che la posta elettronica venga erroneamente contrassegnata come posta indesiderata tramite un elenco di indirizzi attendibili o altre tecniche](prevent-email-from-being-marked-as-spam.md)
 
 [Come configurare il filtro di posta indesiderata di Office 365 per bloccare i messaggi di posta indesiderata](reduce-spam-email.md)
 

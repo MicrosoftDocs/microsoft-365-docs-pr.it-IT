@@ -3,7 +3,7 @@ title: Come assicurarsi che un messaggio non venga contrassegnato come indesider
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 01/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,16 +14,16 @@ ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
 description: In qualità di amministratore di Exchange Online o Exchange Online Protection (EOP), è possibile fare in modo che i messaggi di posta elettronica inviati tramite il servizio non vengano classificati come posta indesiderata. Per ottenere questo risultato, vedere la versione aggiornata dei suggerimenti e delle procedure per evitare che la posta elettronica falsa positiva sia contrassegnata come posta indesiderata con un elenco indirizzi attendibili o altre tecniche.
-ms.openlocfilehash: ef405aaef888937e1d1f9495f4d23a8b23c5ce06
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: d47c4c4dfdc9570ef12ce060c8b08969c6d43cec
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970412"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238523"
 ---
 # <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>Come assicurarsi che un messaggio non venga contrassegnato come indesiderato
 
-In qualità di amministratore di Exchange Online o Exchange Online Protection (EOP), è possibile fare in modo che i messaggi di posta elettronica inviati tramite il servizio non vengano classificati come posta indesiderata. Per ottenere questo risultato, vedere la versione aggiornata dei suggerimenti e delle procedure per evitare che la [posta elettronica venga contrassegnata come posta indesiderata in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam).
+In qualità di amministratore di Exchange Online o Exchange Online Protection (EOP), è possibile fare in modo che i messaggi di posta elettronica inviati tramite il servizio non vengano classificati come posta indesiderata. Per ottenere questo risultato, vedere la versione aggiornata dei suggerimenti e delle procedure per evitare che la [posta elettronica venga contrassegnata come posta indesiderata in Office 365](prevent-email-from-being-marked-as-spam.md).
 
 ## <a name="see-also"></a>Vedere anche
 

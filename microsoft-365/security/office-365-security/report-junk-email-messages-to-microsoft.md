@@ -14,12 +14,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: "Il componente aggiuntivo per la segnalazione della posta indesiderata di Microsoft per Microsoft Office Outlook offre all'utente diversi modi per segnalare messaggi indesiderati:"
-ms.openlocfilehash: f77f9298058897b60345651a35289f6be88a47a8
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: df4eb2ceea3233d014efe545ca5d9c7bd39a3624
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970292"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238413"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Segnalazione di messaggi di posta elettronica indesiderata a Microsoft
 
@@ -31,7 +31,7 @@ Il componente aggiuntivo per la segnalazione della posta indesiderata di Microso
 
 - Da un messaggio di posta elettronica aperto
 
-Il componente aggiuntivo per la segnalazione della posta indesiderata consente di inviare report al servizio Microsoft Exchange Online Protection (EOP). Se la cassetta postale non è protetta dal servizio, la procedura di invio dei report relativi alla posta indesiderata non avrà effetti sui filtri della posta indesiderata. Gli amministratori possono ottenere ulteriori informazioni sulle impostazioni di posta indesiderata che si applicano a un'intera organizzazione per evitare che la [posta elettronica venga contrassegnata come posta indesiderata in office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) o su [come ridurre la posta indesiderata in Office 365](reduce-spam-email.md). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
+Il componente aggiuntivo per la segnalazione della posta indesiderata consente di inviare report al servizio Microsoft Exchange Online Protection (EOP). Se la cassetta postale non è protetta dal servizio, la procedura di invio dei report relativi alla posta indesiderata non avrà effetti sui filtri della posta indesiderata. Gli amministratori possono ottenere ulteriori informazioni sulle impostazioni di posta indesiderata che si applicano a un'intera organizzazione per evitare che la [posta elettronica venga contrassegnata come posta indesiderata in office 365](prevent-email-from-being-marked-as-spam.md) o su [come ridurre la posta indesiderata in Office 365](reduce-spam-email.md). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
 
 > [!TIP]
 > È inoltre possibile inviare messaggi di posta indesiderata direttamente a Microsoft utilizzando l'indirizzo di posta elettronica [Junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) e i messaggi falsi positivi (non di posta indesiderata) utilizzando l'indirizzo di posta elettronica di [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) . Per ulteriori informazioni, vedere [Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
@@ -73,6 +73,6 @@ Il messaggio selezionato sarà inviato a Microsoft per l'analisi e spostato nell
 
 [Supporto tecnico e risoluzione dei problemi](troubleshooting-and-support-information.md)
 
-[Come impedire che la posta elettronica venga contrassegnata come posta indesiderata in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[Come evitare che i messaggi effettivi vengano contrassegnati come indesiderati in Office 365](prevent-email-from-being-marked-as-spam.md)
 
 [Come ridurre la posta indesiderata in Office 365](reduce-spam-email.md)

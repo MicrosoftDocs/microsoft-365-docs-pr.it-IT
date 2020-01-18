@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Per assicurarsi che la posta elettronica inviata da persone di cui si ha fiducia non sia bloccata, è possibile utilizzare i criteri di filtro delle connessioni per creare un elenco di indirizzi consentiti, noto anche come elenco dei mittenti attendibili, di indirizzo IP attendibile. È inoltre possibile creare un elenco di mittenti bloccati.
-ms.openlocfilehash: d3151ab436c5d904897d518fa119d52a11db4850
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 70bd682fd9cb990f15314be3187e74f5fa4d562c
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971834"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238423"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurare i criteri di filtro delle connessioni
 
@@ -29,7 +29,7 @@ La maggior parte degli utenti ha amici e partner commerciali affidabili. Può es
 
 - Un criterio di filtro delle connessioni che crea un elenco di indirizzi bloccati può essere considerato come la cattura di meno o gli account non attendibili nel filtro.
 
- Per ulteriori informazioni sulle impostazioni di posta indesiderata che si applicano all'intera organizzazione, vedere [come impedire che la posta elettronica venga contrassegnata come posta indesiderata in office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) o [su come ridurre la posta indesiderata in Office 365](reduce-spam-email.md). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
+ Per ulteriori informazioni sulle impostazioni di posta indesiderata che si applicano all'intera organizzazione, vedere [come impedire che la posta elettronica venga contrassegnata come posta indesiderata in office 365](prevent-email-from-being-marked-as-spam.md) o [su come ridurre la posta indesiderata in Office 365](reduce-spam-email.md). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
 
 > [!TIP]
 > Potrebbe essere necessario sospendere e leggere le informazioni su come creare [elenchi di indirizzi consentiti (o mittenti attendibili)](create-safe-sender-lists-in-office-365.md) e [bloccare gli elenchi](create-block-sender-lists-in-office-365.md).
@@ -157,6 +157,6 @@ Questa è fondamentalmente la stessa procedura di creazione della regola dall' [
 
 [Configurare i criteri della posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
 
-[Come impedire che la posta elettronica venga contrassegnata come posta indesiderata in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[Come evitare che i messaggi effettivi vengano contrassegnati come indesiderati in Office 365](prevent-email-from-being-marked-as-spam.md)
 
 [Come ridurre la posta indesiderata in Office 365](reduce-spam-email.md)

@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: "Gli utenti possono inviare messaggi di posta indesiderata falsi negativi e falsi positivi a Microsoft per l'analisi. "
-ms.openlocfilehash: 316945ae026649b16ecfced62baef2ddc41db444
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: 6ca4c99d5e8803fdf7f41ff00cc2a5e65ab38049
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959644"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238433"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Inviare messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
 
@@ -68,7 +68,7 @@ Per inviare messaggi di posta indesiderata o tentativi di phishing a Microsoft:
 
 Se un messaggio è stato erroneamente identificato come posta indesiderata, è possibile inviare il messaggio "falso positivo" al team di analisi di posta indesiderata di Microsoft. Gli analisti valuterà e analizzerà il messaggio. A seconda dei risultati dell'analisi, i criteri di filtro del contenuto della posta indesiderata a livello di servizio potrebbero essere modificati per consentire l'inoltro del messaggio.
   
-Gli amministratori possono esaminare altre informazioni sulle impostazioni di posta indesiderata che si applicano a un'intera organizzazione. Vedere [come garantire che un messaggio non venga contrassegnato come posta indesiderata](../../compliance/prevent-email-from-being-marked-as-spam.md). Queste informazioni sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi positivi.
+Gli amministratori possono esaminare altre informazioni sulle impostazioni di posta indesiderata che si applicano a un'intera organizzazione. Vedere [come garantire che un messaggio non venga contrassegnato come posta indesiderata](prevent-email-from-being-marked-as-spam.md). Queste informazioni sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi positivi.
   
 È possibile inviare messaggi non di posta indesiderata nei modi seguenti:
   
@@ -122,7 +122,7 @@ La valutazione della posta indesiderata è un processo continuo applicabile a pr
 
 [Protezione antispam e antimalware](anti-spam-and-anti-malware-protection.md)
   
-[Come assicurarsi che un messaggio non venga contrassegnato come indesiderato](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[Come assicurarsi che un messaggio non venga contrassegnato come indesiderato](prevent-email-from-being-marked-as-spam.md)
   
 [Bloccare la posta indesiderata utilizzando il filtro di Office 365 al fine di evitare problemi di falsi negativi](reduce-spam-email.md)
   

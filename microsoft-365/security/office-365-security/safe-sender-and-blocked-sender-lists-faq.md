@@ -13,18 +13,18 @@ ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 ms.collection:
 - M365-security-compliance
 description: In qualità di amministratore di Exchange Online o Exchange Online Protection (EOP), è possibile fare in modo che i messaggi di posta elettronica inviati tramite il servizio non vengano classificati come posta indesiderata. Un modo per farlo consiste nel creare elenchi di mittenti attendibili e di mittenti bloccati per gli utenti dell'organizzazione.
-ms.openlocfilehash: 5530fa8c8ee5a83c4e8515a8f31f91e45b2ec97b
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 9c281460aeff64226343af5e5608ccf42fc83799
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971674"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238393"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Elenchi di mittenti attendibili e bloccati in Exchange Online
 
 In qualità di amministratore di Exchange Online o Exchange Online Protection (EOP), è possibile fare in modo che i messaggi di posta elettronica inviati tramite il servizio non vengano classificati come posta indesiderata. Un modo per farlo consiste nel creare elenchi di mittenti attendibili e di mittenti bloccati per gli utenti dell'organizzazione.
 
-*Vedere la versione aggiornata dei suggerimenti e delle procedure per la modalità di utilizzo di questi elenchi come amministratore in* [come impedire che la posta elettronica venga contrassegnata come posta indesiderata in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam).
+*Vedere la versione aggiornata dei suggerimenti e delle procedure per la modalità di utilizzo di questi elenchi come amministratore in* [come impedire che la posta elettronica venga contrassegnata come posta indesiderata in Office 365](prevent-email-from-being-marked-as-spam.md).
 
 Se non si è un amministratore e si desidera solo gestire la posta indesiderata in Outlook utilizzando un elenco di mittenti attendibili, vedere la procedura illustrata nella[Panoramica del filtro della posta indesiderata](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
