@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ccb529a738ebd326d1c5d5513c6e3236a9c58f8a
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: 65497522907a4bfc8e2e3d55ccd3a82cde9b8bb7
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230194"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233887"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -165,7 +165,7 @@ Verranno rimosse le seguenti azioni di miglioramento di Intune:
 
 ### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Rimozione di azioni di miglioramento che non soddisfano le aspettative per misure affidabili
 
-Per assicurarsi che il Punteggio di Microsoft Secure sia significativo e che ogni azione di miglioramento sia misurabile e affidabile, è possibile rimuovere l'azione di miglioramento seguente.
+Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni azione di miglioramento sia misurabile e affidabile, vengono eliminate le azioni di miglioramento riportate di seguito.
 
 - Abilitare la registrazione dei dati di controllo
 - Individuare le applicazioni IT Shadow a rischio e non conformi
@@ -182,7 +182,7 @@ I tre che verranno rimossi:
 - Richiedi l'AMF per tutti gli utenti
 - Richiedere l'autenticazione master per i ruoli con privilegi di Azure AD
 
-Nuove azioni di miglioramento:
+Sono state aggiunte nuove azioni di miglioramento:
 
 - Garantire che tutti gli utenti possano completare l'autenticazione a più fattori per l'accesso sicuro
 - Richiedere l'AMF per i ruoli amministrativi
@@ -201,7 +201,7 @@ Per standardizzare i punti tra più esperienze, ogni totale del punto di azione 
 
 ### <a name="preview-features"></a>Funzionalità di anteprima
 
-Nella versione di anteprima verranno incluse le funzionalità seguenti:
+Nella [versione di anteprima](microsoft-secure-score-preview.md)verranno incluse le funzionalità seguenti:
 
 * Tutte le nuove visualizzazioni metriche e tendenze per le discussioni su OICOL e Lead Level
 * Nuove modalità di monitoraggio e benchmark del Punteggio

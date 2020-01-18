@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare il modello di rilevamento dei privilegi avvocato-client per utilizzare il rilevamento basato sull'apprendimento automatico del contenuto con privilegi quando si esaminano i contenuti in un caso avanzato di eDiscovery.
-ms.openlocfilehash: bf1b2112c47019c59f955ace21a25b099f91128f
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: f4d5252a44183f5e2e38e4f4676c73d350befaf2
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970864"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233722"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configurare il rilevamento dei privilegi avvocato-client in Advanced eDiscovery
 
@@ -36,11 +36,11 @@ Quando è abilitato il rilevamento dei privilegi di avvocato-client, tutti i doc
 
 Il modello produce le tre proprietà seguenti per ogni documento:
 
-- **AttorneyClientPrivilegeScore** – la probabilità che il documento sia di natura legale; i valori per il punteggio sono compresi tra **0** e **1**.
+- **AttorneyClientPrivilegeScore:** La probabilità che il documento sia di natura legale; i valori per il punteggio sono compresi tra **0** e **1**.
 
-- **HasAttorney** : questa proprietà è impostata su **true** se uno dei partecipanti al documento è elencato nell'elenco di avvocati. in caso contrario, il valore è **false**. Il valore viene impostato su **false** anche se l'organizzazione non ha caricato un elenco di avvocati.
+- **HasAttorney:** Questa proprietà è impostata su **true** se uno dei partecipanti al documento è elencato nell'elenco procuratore; in caso contrario, il valore è **false**. Il valore viene impostato su **false** anche se l'organizzazione non ha caricato un elenco di avvocati.
 
-- **Privilegio** : questa proprietà è impostata su **true** se il valore di **AttorneyClientPrivilegeScore** è al di sopra della soglia *o* se il documento ha un partecipante al procuratore; in caso contrario, il valore è impostato su **false**.
+- **Privilegio:** Questa proprietà è impostata su **true** se il valore di **AttorneyClientPrivilegeScore** è al di sopra della soglia *o* se il documento ha un partecipante al procuratore; in caso contrario, il valore è impostato su **false**.
 
 Queste proprietà e i relativi valori corrispondenti vengono aggiunte ai metadati del file dei documenti in un set di revisione, come illustrato nella schermata seguente:
 
@@ -58,11 +58,11 @@ Una persona che è un amministratore di eDiscovery nell'organizzazione (un membr
 
 1. Nel centro sicurezza & conformità, accedere a **eDiscovery > Advanced eDiscovery**.
 
-2. Nella Home page di **Advanced eDiscovery** fare clic su **Configura caratteristiche sperimentali**nel riquadro **Impostazioni** .
+2. Nella Home page di **Advanced eDiscovery** , nel riquadro **Impostazioni** , fare clic su **Configura impostazioni di analisi globali**.
 
    ![Selezionare "Configura funzionalità sperimentali"](media/AeDExperimentalFeatures.png)
 
-3. Nella scheda **caratteristiche sperimentali** selezionare **Gestisci impostazione di privilegio avvocato-client**.
+3. Nella scheda **impostazioni di analisi** , selezionare **Gestisci impostazione privilegio avvocato-client**.
 
 4. Nella pagina del riquadro a comparsa dei **privilegi avvocato-client** , utilizzare l'interruttore per attivare la funzionalità e quindi selezionare **Salva**.
 

@@ -65,6 +65,8 @@
     - name: Etichette di riservatezza
       href: sensitivity-labels.md
       items:
+        - name: Creare e pubblicare etichette di riservatezza
+          href: create-sensitivity-labels.md
         - name: Limitare l'accesso al contenuto usando la crittografia nelle etichette di riservatezza
           href: encryption-sensitivity-labels.md
         - name: Applicare automaticamente un'etichetta di riservatezza al contenuto

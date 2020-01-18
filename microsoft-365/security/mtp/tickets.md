@@ -15,12 +15,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6cd8dd42bfd1947fa8bee7a69f1febad710c808a
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: 0d47ce82b5138827c4ae1c1ea29c902a8cd77cc0
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230214"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233877"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Gestire i ticket tramite ServiceNow
 
@@ -107,7 +107,7 @@ Impostare le configurazioni di tabella "registri applicazioni" su predefinita:
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Come convalidare l'entità OAuth creata per Microsoft 365 Security & Compliance Connector
 
-Andare alla tabella registri applicazioni (menu > System OAuth > Application Registry) in ServiceNow e individuare l'entità OAuth creata dall'utente (nome assegnato).
+Andare alla tabella registri applicazioni (**Menu > System OAuth > Application Registry**) in ServiceNow e individuare l'entità OAuth creata dall'utente, con il nome assegnato.
 
 ### <a name="logging-in-as-the-integration-user"></a>Accesso come utente di integrazione
 
@@ -121,13 +121,13 @@ Prima di autorizzare la connessione tra Microsoft 365 Security Center e ServiceN
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Come convalidare l'utente di integrazione creato con l'elenco di controllo di installazione per Microsoft 365 Security & Compliance Connector
 
-Andare alla tabella users (menu > User Administration > Users) in ServiceNow e trovare l'utente di integrazione creato da voi (nome che è stato assegnato).
+Andare alla tabella Users **(Menu > User Administration >** Users) in ServiceNow e trovare l'utente di integrazione creato da te, con il nome che l'hai assegnato.
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>L'azienda dispone di accesso Single Sign-on che impedisce la connessione a ServiceNow tramite il Centro sicurezza di Microsoft 365
 
 Se l'azienda ha abilitato il servizio Single Sign-on e viene visualizzato un errore o un account di accesso non riuscito, seguire una delle due soluzioni.
 
-#### <a name="logging-into-servicenow-as-the-integration-user"></a>Accesso a ServiceNow come utente di integrazione
+#### <a name="log-into-servicenow-as-the-integration-user"></a>Accedere a ServiceNow come utente di integrazione
 
 1. Tornare alla pagina autorizzazione in ServiceNow.
 2. Selezionare il collegamento **not you** nell'angolo in alto a destra.
@@ -142,4 +142,5 @@ Se l'azienda ha abilitato il servizio Single Sign-on e viene visualizzato un err
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>L'installazione è stata completata ma non è possibile visualizzare i ticket e non condividerli
 
-Se i passaggi di installazione e installazione sono stati completati, ma non vengono visualizzate le schede di ServiceNow nella Home page e non è possibile condividere ServiceNow da Microsoft Secure score, controllare lo stato della pagina di provisioning in https://security.microsoft.com/ticketProvisioning. Selezionare **Salva** e torna alla Home page. Le schede devono essere visualizzate.
+Se i passaggi di installazione e installazione sono stati completati, ma non vengono visualizzate le schede di ServiceNow nella Home page e non è possibile condividere ServiceNow da Microsoft Secure score, controllare lo stato della pagina di provisioning in https://security.microsoft.com/ticketProvisioning. Selezionare **autorizza** e tornare alla Home page. Le schede devono essere visualizzate.
+

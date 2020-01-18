@@ -1,7 +1,7 @@
 ---
 title: Richieste di Customer Lockbox di Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
@@ -15,17 +15,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sulle richieste dell'archivio protetto dei clienti che consentono di controllare il modo in cui un tecnico del supporto Microsoft può accedere ai dati durante l'esecuzione di un problema.
-ms.openlocfilehash: a19b8f7933cfae06c462d204148f53b441126f58
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: a9f7f6116d4667e294666afc71747a6fad1efb33
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38686493"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233767"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Archivio protetto dei clienti in Office 365
 
-> [!NOTE]
-> In questo articolo vengono fornite indicazioni per la distribuzione e la configurazione di una funzionalità attualmente disponibile solo per le organizzazioni che dispongono di un abbonamento a Microsoft 365 E5, Office 365 E5, protezione delle informazioni e conformità o Advanced Compliance Add-on.
+In questo articolo vengono fornite indicazioni per la distribuzione e la configurazione di una funzionalità attualmente disponibile solo per le organizzazioni che dispongono di un abbonamento a Microsoft 365 E5, Office 365 E5, protezione delle informazioni e conformità o Advanced Compliance Add-on. L'archivio protetto dei clienti supporta le richieste di accesso ai dati di Exchange Online, SharePoint Online e OneDrive for business. Per consigliare il supporto per altri servizi di Office 365, inviare una richiesta a [office 365 UserVoice](https://office365.uservoice.com/).
 
 L'archivio protetto dei clienti garantisce che Microsoft non sia in grado di accedere al contenuto per eseguire un'operazione del servizio senza l'approvazione esplicita. L'archivio protetto dei clienti introduce il flusso di lavoro di approvazione per le richieste di accesso al contenuto.
 
@@ -35,65 +34,55 @@ In alcuni casi, gli ingegneri Microsoft aiutano la risoluzione dei problemi rela
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/8fecf10b-1f03-4849-8b67-76d3d2a43f26?autoplay=false]
 
-> [!NOTE]
-> L'archivio protetto dei clienti supporta le richieste di accesso ai dati di Exchange Online, SharePoint Online e OneDrive for business. Per consigliare il supporto per altri servizi di Office 365, inviare una richiesta a [office 365 UserVoice](https://office365.uservoice.com/).
-
 ## <a name="customer-lockbox-workflow"></a>Flusso di lavoro archivio clienti
 
-Nei passaggi seguenti viene illustrato il flusso di lavoro tipico quando una richiesta di un archivio clienti viene avviata da un tecnico Microsoft:
+I passaggi seguenti delineano il flusso di lavoro tipico quando un tecnico Microsoft avvia una richiesta di archivio protetto dei clienti:
 
-1. Un utente di un'organizzazione ha un problema con la propria cassetta postale di Office 365.
+1. Un utente di un'organizzazione avverte un problema con la cassetta postale di Office 365.
 
 2. Dopo che l'utente ha risolto il problema, ma non è in grado di correggerlo, apre una richiesta di supporto con il supporto tecnico Microsoft.
 
-3. Un tecnico del supporto esamina la richiesta di servizio e determina la necessità di accedere al contenuto di Exchange Online del cliente per risolvere il problema.
+3. Un responsabile del supporto tecnico Microsoft esamina la richiesta di servizio e determina la necessità di accedere al tenant dell'organizzazione per risolvere il problema in Exchange Online.
 
-4. Il tecnico del supporto accede allo strumento di richiesta dell'archivio protetto del cliente e effettua una richiesta di accesso ai dati specificando il nome del tenant del cliente, il numero di richiesta di servizio e la durata stimata per cui è necessario l'accesso ai dati.
+4. L'ingegnere del supporto tecnico Microsoft accede allo strumento di richiesta di archivio protetto del cliente e effettua una richiesta di accesso ai dati che include il nome del tenant dell'organizzazione, il numero di richiesta di servizio e il tempo stimato per cui il tecnico deve accedere ai dati.
 
-5. Dopo che un responsabile del supporto tecnico Microsoft ha approvato la richiesta, il servizio di gestione dei clienti ha inviato all'organizzazione del cliente una notifica di posta elettronica relativa alla richiesta di accesso in sospeso da Microsoft.
+5. Dopo che un responsabile del supporto tecnico Microsoft ha approvato la richiesta, il servizio di gestione dei clienti ha inviato all'organizzazione una notifica di posta elettronica relativa alla richiesta di accesso in sospeso da Microsoft.
 
     ![Esempio di notifica di posta elettronica dell'archivio clienti](media/CustomerLockbox1.png)
 
-   > [!NOTE]
-   > Tutti gli utenti a cui è stato assegnato il ruolo di amministratore del [responsabile dell'approvazione dei clienti](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) nell'interfaccia di amministrazione di Microsoft 365 possono approvare le richieste di
+   Tutti gli utenti a cui è stato assegnato il ruolo di amministratore del [responsabile dell'approvazione dei clienti](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) nell'interfaccia di amministrazione di Microsoft 365 possono approvare le richieste di
 
-7. Il responsabile approvazione accede all'interfaccia di amministrazione di Microsoft 365 e approva la richiesta. Questo passaggio consente di attivare la creazione di un record di controllo tramite la ricerca nel registro di controllo di Office 365. Per ulteriori informazioni, vedere la sezione relativa alle [richieste di controllo dell'archivio clienti](#auditing-customer-lockbox-requests) .
+6. Il responsabile approvazione accede all'interfaccia di amministrazione di Microsoft 365 e approva la richiesta. Questo passaggio consente di attivare la creazione di un record di controllo tramite la ricerca nel registro di controllo di Office 365. Per ulteriori informazioni, vedere [richieste di controllo dell'archivio protetto dei clienti](#auditing-customer-lockbox-requests).
 
-   Se il cliente rifiuta la richiesta o la richiesta non è stata approvata entro 12 ore, la richiesta scade e non viene concesso alcun accesso a Microsoft Engineer.
+   Se il cliente rifiuta la richiesta o non approva la richiesta entro 12 ore, la richiesta scade e non viene concesso alcun accesso a Microsoft Engineer.
 
    > [!IMPORTANT]
    > Microsoft non include collegamenti nelle notifiche di posta elettronica dell'archivio clienti che richiedono l'accesso a Office 365.
 
-8. Dopo che il cliente approva la richiesta, il tecnico Microsoft riceve il messaggio di approvazione, accede a Exchange Online e risolve il problema del cliente. Gli ingegneri Microsoft hanno la durata richiesta per risolvere il problema dopo il quale l'accesso è stato revocato automaticamente.
+7. Dopo che il responsabile approvazione dell'organizzazione approva la richiesta, il tecnico Microsoft riceve il messaggio di approvazione, accede al tenant in Exchange Online e risolve il problema del cliente. Gli ingegneri Microsoft hanno la durata richiesta per risolvere il problema dopo il quale l'accesso è stato revocato automaticamente.
 
 > [!NOTE]
-> Tutte le azioni eseguite da un tecnico Microsoft vengono registrate nel registro di controllo di Office 365. È possibile cercare e rivedere questi record di controllo e possono essere ricercati e recensiti.
+> Tutte le azioni eseguite da un tecnico Microsoft vengono registrate nel registro di controllo di Office 365. È possibile eseguire la ricerca e la revisione dei record di controllo.
 
 ## <a name="turn-customer-lockbox-requests-on-or-off"></a>Attivazione o disattivazione delle richieste dell'archivio clienti
 
-Un amministratore di Office 365 può abilitare i controlli archivio clienti nell'interfaccia di amministrazione di Microsoft 365. Quando l'archivio protetto dei clienti è attivato, è necessario che Microsoft ottenga l'approvazione di un'organizzazione prima di accedere a qualsiasi contenuto.
+È possibile abilitare i controlli archivio clienti all'interno dell'interfaccia di amministrazione di Microsoft 365. Quando si attiva l'archivio protetto dei clienti, Microsoft deve ottenere l'approvazione dell'organizzazione prima di accedere a qualsiasi contenuto del tenant.
 
-> [!NOTE]
-> Per eseguire la procedura seguente, è necessario essere un amministratore globale nell'organizzazione di Microsoft 365 o Office 365 oppure essere assegnato al ruolo di amministratore del **responsabile dell'approvazione del cliente** .
+1. L'utilizzo di [https://admin.microsoft.com](https://admin.microsoft.com) un account aziendale o dell'Istituto di istruzione con l'amministratore globale o il ruolo **responsabile approvazione accesso client** , accedere e accedere.
 
-1. Accedere a [https://admin.microsoft.com](https://admin.microsoft.com) e accedere con l'account aziendale o dell'Istituto di istruzione.
-
-2. Fare clic su **impostazioni > privacy & sicurezza**.
+2. Scegliere **impostazioni > privacy & sicurezza**.
 
     ![Modificare le impostazioni del servizio di archivio clienti nell'interfaccia di amministrazione](media/CustomerLockbox2.png)
 
-3. Nel riquadro **archivio protetto del cliente** , fare clic su **modifica**e quindi spostare l'interruttore **su attivato o** **disattivato** per attivare o disattivare la funzionalità.
+3. Nel riquadro **archivio protetto del cliente** , scegliere **modifica**, quindi sposta l' **interruttore su attivato o** **disattivato** per attivare o disattivare la funzionalità.
 
     ![Require approval for Customer Lockbox](media/CustomerLockbox4.png)
 
 ## <a name="approve-or-deny-a-customer-lockbox-request"></a>Approvare o rifiutare una richiesta di archivio protetto dei clienti
 
-> [!NOTE]
-> Per eseguire la procedura seguente, è necessario essere un amministratore globale nell'organizzazione di Microsoft 365 o Office 365 oppure essere assegnato al ruolo di amministratore del **responsabile dell'approvazione del cliente** .
+1. L'utilizzo di [https://admin.microsoft.com](https://admin.microsoft.com) un account aziendale o dell'Istituto di istruzione con l'amministratore globale o il ruolo **responsabile approvazione accesso client** , accedere e accedere.
 
-1. Accedere a [https://admin.microsoft.com](https://admin.microsoft.com) e accedere con l'account aziendale o dell'Istituto di istruzione.
-
-2. Fare clic su **supporto > richieste di archivio clienti**.
+2. Scegliere **supporto > richieste di archivio clienti**.
 
     ![Fare clic su supporto, quindi su richieste archivio clienti](media/CustomerLockbox5.png)
 
@@ -101,7 +90,7 @@ Un amministratore di Office 365 può abilitare i controlli archivio clienti nell
 
     ![Elenco delle richieste dell'archivio protetto dei clienti](media/CustomerLockbox6.png)
 
-3. Selezionare la richiesta di un archivio protetto dei clienti e quindi fare clic su **approva** o **Nega**.
+3. Selezionare la richiesta di un archivio protetto dei clienti e quindi scegliere **approva** o **rifiuta**.
 
     ![Approvare o negare le richieste dell'archivio clienti](media/CustomerLockbox7.png)
 
@@ -109,28 +98,25 @@ Un amministratore di Office 365 può abilitare i controlli archivio clienti nell
 
     ![Approvare o negare le richieste dell'archivio clienti](media/CustomerLockbox8.png)
 
-## <a name="auditing-customer-lockbox-requests"></a>Richieste di controllo dell'archivio protetto dei clienti 
+## <a name="auditing-customer-lockbox-requests"></a>Richieste di controllo dell'archivio protetto dei clienti
 
-I record di controllo che corrispondono alle richieste dell'archivio protetto dei clienti vengono registrati nel registro di controllo di Office 365 ed è possibile accedervi utilizzando lo [strumento di ricerca del registro di controllo](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) nel centro sicurezza & conformità di Office 365. Le azioni relative a un cliente che accettano o negano una richiesta e le azioni eseguite da ingegneri Microsoft (quando le richieste di accesso sono approvate) vengono registrate nel registro di controllo di Office 365. È possibile eseguire la ricerca e la revisione dei record di controllo.
-
-> [!NOTE]
-> È necessario essere assegnati al ruolo di controllo di sola visualizzazione o ai registri di controllo in Exchange Online per eseguire una ricerca nel registro di controllo di Office 365. Per ulteriori informazioni, vedere [Search the audit log in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
+I record di controllo che corrispondono alle richieste dell'archivio protetto dei clienti vengono registrati nel log di controllo di Office 365. È possibile accedere a questi registri utilizzando lo [strumento di ricerca del registro di controllo](search-the-audit-log-in-security-and-compliance.md) nel centro sicurezza & conformità di Office 365. Le azioni relative a una richiesta di accettazione o negazione di una cassetta postale del cliente e le azioni eseguite da ingegneri Microsoft (quando le richieste di accesso sono approvate) sono registrate anche nel log di controllo di Office 365. È possibile eseguire la ricerca e la revisione dei record di controllo.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Eseguire una ricerca nel registro di controllo per attività correlate alle richieste dell'archivio protetto dei clienti
 
-Ecco come creare una query di ricerca del registro di controllo per restituire i record di controllo relativi all'archivio protetto dei clienti:
+Prima di poter utilizzare il registro di controllo per tenere presenti le richieste per l'archivio protetto dei clienti, è necessario eseguire alcuni passaggi per impostare la registrazione di controllo. Per ulteriori informazioni, vedere [Search the audit log in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Dopo aver completato l'installazione, attenersi alla procedura seguente per creare una query di ricerca del registro di controllo per restituire i record di controllo relativi all'archivio protetto dei clienti:
 
 1. Passare a [https://protection.office.com](https://protection.office.com).
   
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
 
-3. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su **Cerca &** > **Ricerca log di controllo**.
+3. Nel riquadro sinistro del Centro sicurezza & conformità scegliere **Search &** > **Search log di controllo di ricerca**.
 
     Viene visualizzata la pagina di **ricerca del registro di controllo** .
 
     ![Pagina di ricerca del registro di controllo](media/auditlogsearch1.png)
   
-4. Configurare i seguenti criteri di ricerca:
+4. Configurare i criteri di ricerca seguenti: 
 
     a. **Attività** -lasciare vuoto questo campo in modo che la ricerca restituisca i record di controllo per tutte le attività. Questa operazione è necessaria per restituire eventuali record di controllo relativi alle richieste dell'archivio protetto dei clienti e alle attività corrispondenti eseguite dagli ingegneri Microsoft.
 
@@ -140,7 +126,7 @@ Ecco come creare una query di ricerca del registro di controllo per restituire i
 
     d. **File, cartella o sito** : lasciare vuoto questo campo.
 
-5. Fare clic su **Cerca** per eseguire la ricerca utilizzando i criteri di ricerca. 
+5. Fare clic su **Cerca** per eseguire la ricerca usando i criteri di ricerca.
 
     I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in **risultati** nella pagina **Ricerca log di controllo** .
 
@@ -148,7 +134,7 @@ Ecco come creare una query di ricerca del registro di controllo per restituire i
 
    - Per visualizzare i record di controllo relativi a un responsabile approvazione nell'organizzazione che approva o nega una richiesta di archivio protetto dei clienti: nella casella sotto la colonna **attività** digitare **set-AccessToCustomerDataRequest**.
 
-   - Per visualizzare i record di controllo relativi a un tecnico Microsoft che esegue azioni in risposta a una richiesta di un archivio clienti approvato: nella casella sotto la colonna **utente** digitare **operatore Microsoft**. Si noti che l'azione eseguita dal tecnico viene visualizzata int la colonna **attività** .
+   - Per visualizzare i record di controllo relativi a un tecnico Microsoft che esegue azioni in risposta a una richiesta di un archivio clienti approvato: nella casella sotto la colonna **utente** digitare **operatore Microsoft**. Nella colonna **attività** viene visualizzata l'azione eseguita dal tecnico.
 
       ![Filtro su "operatore Microsoft" per visualizzare i record di controllo](media/CustomerLockbox10.png)
 
@@ -156,7 +142,7 @@ Ecco come creare una query di ricerca del registro di controllo per restituire i
 
 ### <a name="audit-record-for-a-customer-lockbox-access-request"></a>Record di controllo per una richiesta di accesso protetto dall'archivio clienti
 
-Quando una persona all'interno dell'organizzazione approva o nega una richiesta di accesso protetto dei clienti, nel log di controllo di Office 365 viene registrato un record di controllo. Questo record contiene le informazioni seguenti. 
+Quando una persona all'interno dell'organizzazione approva o nega una richiesta di accesso protetto dei clienti, nel log di controllo di Office 365 viene registrato un record di controllo. Questo record contiene le informazioni seguenti.
 
 | Proprietà del record di controllo| Descrizione|
 |:---------- |:----------|
@@ -175,7 +161,7 @@ Nella schermata seguente viene mostrato un esempio di un record del registro di 
 
 ### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>Record di controllo per un'azione eseguita da un tecnico Microsoft
 
-Come spiegato in precedenza, le azioni eseguite da un tecnico Microsoft dopo che è stata approvata una richiesta di accesso protetto dei clienti (e che possono causare la registrazione del contenuto del cliente) sono registrate nel registro di controllo. Questi record contengono le informazioni seguenti.
+Le azioni eseguite da un tecnico Microsoft dopo che la richiesta di una cassetta del cliente è stata approvata (e che potrebbe causare l'accesso al contenuto del cliente) sono registrate nel registro di controllo. Questi record contengono le informazioni seguenti.
 
 | Proprietà del record di controllo| Descrizione|
 |:---------- |:----------|
@@ -184,7 +170,6 @@ Come spiegato in precedenza, le azioni eseguite da un tecnico Microsoft dopo che
 | Utente       | Operatore Microsoft; Questo valore indica che questo record è correlato a una richiesta di archivio protetto dei clienti.                                  |
 | Attività   | Nome dell'attività eseguita dal tecnico Microsoft.|
 | Elemento       | \<vuota\>                                             |
-
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

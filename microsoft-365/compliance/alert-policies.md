@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni. È quindi possibile visualizzare e gestire gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso.
-ms.openlocfilehash: 451883f94df3a58781ae6de0d82322c29f95bbb9
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 8d76a93c569093f6a632984ec96db0d0aeb9c218
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823748"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233797"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel centro sicurezza e conformità
 
@@ -73,9 +73,9 @@ Un criterio di avviso è costituito dalle impostazioni e dalle condizioni seguen
 
 - **Categoria avviso** : per facilitare la verifica e la gestione degli avvisi generati da un criterio, è possibile assegnare una delle categorie seguenti a un criterio.
 
-  - Governance dei dati
-
   - Prevenzione della perdita di dati
+
+  - Governance delle informazioni
 
   - Flusso di posta
 
@@ -96,7 +96,7 @@ Un criterio di avviso è costituito dalle impostazioni e dalle condizioni seguen
 
 ## <a name="default-alert-policies"></a>Criteri di avviso predefiniti
 
-Office 365 fornisce criteri di avviso incorporati che consentono di identificare l'abuso delle autorizzazioni di amministratore di Exchange, l'attività antimalware e i rischi di governance dei dati. Nella pagina **criteri di avviso** i nomi di questi criteri incorporati sono in grassetto e il tipo di criterio è definito come **System**. Questi criteri sono attivati per impostazione predefinita. È possibile disattivare questi criteri (o viceversa), configurare un elenco di destinatari a cui inviare notifiche tramite posta elettronica e impostare un limite di notifica giornaliero. Le altre impostazioni per questi criteri non possono essere modificate.
+Office 365 fornisce criteri di avviso incorporati che consentono di identificare l'abuso delle autorizzazioni di amministratore di Exchange, l'attività antimalware, le potenziali minacce esterne e interne e i rischi di governance delle informazioni. Nella pagina **criteri di avviso** i nomi di questi criteri incorporati sono in grassetto e il tipo di criterio è definito come **System**. Questi criteri sono attivati per impostazione predefinita. È possibile disattivare questi criteri (o viceversa), configurare un elenco di destinatari a cui inviare notifiche tramite posta elettronica e impostare un limite di notifica giornaliero. Le altre impostazioni per questi criteri non possono essere modificate.
 
 Nella tabella seguente sono elencati e descritti i criteri di avviso predefiniti disponibili e la categoria a cui sono assegnati tutti i criteri. La categoria viene utilizzata per determinare gli avvisi che un utente può visualizzare nella pagina Visualizza avvisi. Per ulteriori informazioni, vedere la sezione [autorizzazioni RBAC necessarie per visualizzare gli avvisi](#rbac-permissions-required-to-view-alerts) .
 
@@ -120,9 +120,9 @@ La tabella indica anche il piano Office 365 Enterprise and Office 365 US Governm
 |**Phishing recapitato a causa di override del tenant o dell'utente**<sup>1</sup>|Genera un avviso quando Office 365 rileva che un amministratore o un override dell'utente ha consentito la recapito di un messaggio di phishing a una cassetta postale. Esempi di sostituzioni includono una regola di posta in arrivo o flusso di posta che consente messaggi provenienti da un mittente o da un dominio specifico oppure da un criterio di protezione da posta indesiderata che consente messaggi provenienti da mittenti o domini specifici Questo criterio è impostato **su un livello** di gravità elevato.|Gestione dei rischi|Sottoscrizione di un componente aggiuntivo per i componenti aggiuntivi di E5/G5 o Office 365 ATP P2|
 |**Modelli di invio di messaggi di posta elettronica sospetti**|Genera un avviso quando un utente dell'organizzazione ha inviato messaggi di posta elettronica sospetti ed è a rischio di essere limitato dall'invio di messaggi di posta elettronica. Si tratta di un avviso iniziale per il comportamento che potrebbe indicare che l'account è stato compromesso, ma non abbastanza grave da limitare l'utente. Questo criterio ha un'impostazione di gravità **media** . Anche se è raro, un avviso generato da questo criterio potrebbe essere un'anomalia. Tuttavia, è consigliabile [verificare se l'account utente è stato compromesso](../security/office-365-security/responding-to-a-compromised-email-account.md).|Gestione dei rischi|E1/F1/G1, E3/G3 o E5/G5  |
 |**Tenant con limitazioni all'invio di posta elettronica**|Genera un avviso quando la maggior parte del traffico di posta elettronica proveniente dall'organizzazione è stata rilevata come sospetta e Microsoft ha limitato l'organizzazione all'invio di posta elettronica. Esaminare gli account utente e di amministratore potenzialmente compromessi, i nuovi connettori o i relè aperti e quindi contattare il supporto tecnico Microsoft per sbloccare l'organizzazione. Questo criterio è impostato **su un livello** di gravità elevato. Per ulteriori informazioni su perché le organizzazioni sono bloccate, vedere [risolvere i problemi di recapito della posta elettronica per il codice di errore 5.7.7 XX in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2022138).|Gestione dei rischi|E1/F1/G1, E3/G3 o E5/G5|
-|**Attività di file utente esterne insolite**|Genera un avviso quando un numero insolitamente elevato di attività viene eseguito su file in SharePoint o OneDrive da parte di utenti esterni all'organizzazione. Sono incluse attività quali l'accesso ai file, il download di file e l'eliminazione di file. Questo criterio è impostato **su un livello** di gravità elevato.|Governance dei dati|Abbonamento al componente aggiuntivo per la conformità E5/G5, Office 365 ATP P2 o Advanced Compliance|
-|**Volume insolito di condivisione di file esterni**|Genera un avviso quando un numero insolitamente elevato di file in SharePoint o OneDrive viene condiviso con utenti esterni all'organizzazione. Questo criterio ha un'impostazione di gravità **media** .|Governance dei dati|Abbonamento al componente aggiuntivo per la conformità E5/G5, Office 365 ATP P2 o Advanced Compliance|
-|**Volume insolito di eliminazione dei file**|Genera un avviso quando un numero insolitamente elevato di file viene eliminato in SharePoint o OneDrive in un intervallo di tempo breve. Questo criterio ha un'impostazione di gravità **media** .|Governance dei dati|Abbonamento al componente aggiuntivo per la conformità E5/G5, Office 365 ATP P2 o Advanced Compliance|
+|**Attività di file utente esterne insolite**|Genera un avviso quando un numero insolitamente elevato di attività viene eseguito su file in SharePoint o OneDrive da parte di utenti esterni all'organizzazione. Sono incluse attività quali l'accesso ai file, il download di file e l'eliminazione di file. Questo criterio è impostato **su un livello** di gravità elevato.|Governance delle informazioni|Abbonamento al componente aggiuntivo per la conformità E5/G5, Office 365 ATP P2 o Advanced Compliance|
+|**Volume insolito di condivisione di file esterni**|Genera un avviso quando un numero insolitamente elevato di file in SharePoint o OneDrive viene condiviso con utenti esterni all'organizzazione. Questo criterio ha un'impostazione di gravità **media** .|Governance delle informazioni|Abbonamento al componente aggiuntivo per la conformità E5/G5, Office 365 ATP P2 o Advanced Compliance|
+|**Volume insolito di eliminazione dei file**|Genera un avviso quando un numero insolitamente elevato di file viene eliminato in SharePoint o OneDrive in un intervallo di tempo breve. Questo criterio ha un'impostazione di gravità **media** .|Governance delle informazioni|Abbonamento al componente aggiuntivo per la conformità E5/G5, Office 365 ATP P2 o Advanced Compliance|
 |**Aumento insolito del messaggio di posta elettronica riportato come phishing**|Genera un avviso quando si verifica un aumento significativo del numero di persone nell'organizzazione che utilizzano il componente aggiuntivo segnala messaggio in Outlook per segnalare i messaggi come messaggio di posta elettronica di phishing. Questo criterio è impostato **su un livello** di gravità elevato. Per ulteriori informazioni su questo componente aggiuntivo, vedere [use the report Message Add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Gestione dei rischi|Sottoscrizione di un componente aggiuntivo per i componenti aggiuntivi di E5/G5 o Office 365 ATP P2|
 |**Phishing rappresentazione utente recapitata in posta in arrivo/cartella**<sup>1,</sup><sup>2</sup>|Genera un avviso quando Office 365 rileva che un amministratore o un override dell'utente ha consentito il recapito di un messaggio di phishing della rappresentazione dell'utente alla posta in arrivo (o a un'altra cartella accessibile dall'utente) di una cassetta postale. Esempi di sostituzioni includono una regola di posta in arrivo o flusso di posta che consente messaggi provenienti da un mittente o da un dominio specifico oppure da un criterio di protezione da posta indesiderata che consente messaggi provenienti da mittenti o domini specifici Questo criterio ha un'impostazione di gravità **media** .|Gestione dei rischi|Sottoscrizione di un componente aggiuntivo per i componenti aggiuntivi di E5/G5 o Office 365 ATP P2|
 |**Utente con limitazioni all'invio di posta elettronica**|Genera un avviso quando un utente dell'organizzazione ha la limitazione di inviare la posta in uscita. Questo in genere risulta quando un account è compromesso e l'utente è elencato nella pagina **utenti con restrizioni** nel centro sicurezza & conformità. Per accedere a questa pagina, passare a **threat management > Review > utenti con restrizioni**). Questo criterio è impostato **su un livello** di gravità elevato. Per ulteriori informazioni sugli utenti con restrizioni, vedere [rimozione di un utente, dominio o indirizzo IP da un elenco di blocco dopo l'invio di posta indesiderata](https://docs.microsoft.com/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Gestione dei rischi|E1/F1/G1, E3/G3 o E5/G5|
@@ -159,7 +159,7 @@ Per visualizzare gli avvisi, passare [https://protection.office.com](https://pro
 
 Le autorizzazioni di controllo di accesso basato sui ruoli (RBAC) assegnate agli utenti nell'organizzazione determinano gli avvisi che un utente può visualizzare nella pagina **Visualizza avvisi** . Come è possibile eseguire questa operazione? I ruoli di gestione assegnati agli utenti (in base alla loro appartenenza ai gruppi di ruoli nel centro sicurezza & conformità) determinano le categorie di avvisi che un utente può visualizzare nella pagina **Visualizza avvisi** . Ecco alcuni esempi:
 
-- I membri del gruppo di ruoli Gestione record possono visualizzare solo gli avvisi generati dai criteri di avviso a cui viene assegnata la categoria di **governance dei dati** .
+- I membri del gruppo di ruoli Gestione record possono visualizzare solo gli avvisi generati dai criteri di avviso a cui viene assegnata la categoria di **governance delle informazioni** .
 
 - I membri del gruppo di ruoli amministratore conformità non possono visualizzare gli avvisi generati dai criteri di avviso a cui è assegnata la categoria **gestione minacce** .
 
@@ -171,7 +171,7 @@ Nella tabella seguente sono elencati i ruoli necessari per visualizzare gli avvi
 
 Per visualizzare la categoria a cui è assegnato un criterio di avviso predefinito, vedere la tabella nella sezione [criteri di avviso predefiniti](#default-alert-policies) .
 
-|&nbsp;|Governance dei dati|Prevenzione della perdita di dati|Flusso di posta|Autorizzazioni|Gestione dei rischi|Altri|
+|&nbsp;|Governance delle informazioni|Prevenzione della perdita di dati|Flusso di posta|Autorizzazioni|Gestione dei rischi|Altri|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registri di controllo|||||||
 |Gestione dei casi|||||||
