@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, tra cui crittografia o filigrane.
-ms.openlocfilehash: b69ae981ea8d988d399e325d2532a0a59e27ae20
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: f416bcb32e9d8c14fee17d2dcecddac2aec20485
+ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023350"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41238503"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
@@ -105,9 +105,9 @@ Tutte queste opzioni sono disponibili quando si crea un'etichetta di riservatezz
 
 Quando si creano le etichette di riservatezza nella propria interfaccia di amministrazione, queste vengono visualizzate in un elenco nella scheda **Riservatezza** nella pagina **Etichette**. In questo elenco, l'ordine delle etichette è importante perché ne riflette la priorità. È importante che l'etichetta con il grado di riservatezza più restrittivo, come Riservatezza elevata, sia visualizzata nella **parte inferiore** dell'elenco e che l'etichetta con il grado di riservatezza meno restrittivo, ad esempio Pubblico, sia visualizzata nella **parte superiore**.
 
-È possibile applicare un'unica etichetta di riservatezza a un documento o un messaggio di posta elettronica. Se si imposta un’opzione che richiede che gli utenti forniscano una giustificazione per modificare un'etichetta applicando una classificazione inferiore, l'ordine di questo elenco identifica le classificazioni inferiori. Tuttavia, questa opzione non si applica alle sottoetichette.
+È possibile applicare un'unica etichetta di riservatezza a un documento o un messaggio di posta elettronica. Se si imposta un'opzione per richiedere ali utenti di fornire una giustificazione per modificare un'etichetta applicando una classificazione inferiore, l'ordine di questo elenco identifica le classificazioni inferiori. Tuttavia, questa opzione non si applica alle sottoetichette.
 
-L’ordinamento delle sottoetichette viene però usato con l’[etichettatura automatica](apply-sensitivity-label-automatically.md). Quando si configurano le etichette in modo da applicarle automaticamente o come suggerimento, diverse etichette possono avere più corrispondenze. L’etichetta da applicare o consigliare è determinata usando l'ordinamento delle etichette: viene selezionata l'etichetta a riservatezza meno elevata e, se applicabile, anche la sottoetichetta a riservatezza meno elevata.
+L'ordinamento delle sottoetichette viene però usato con l'[etichettatura automatica](apply-sensitivity-label-automatically.md). Quando si configurano le etichette in modo da applicarle automaticamente o come suggerimento, diverse etichette possono avere più corrispondenze. Per determinare l'etichetta da applicare o consigliare si usa l'ordinamento delle etichette, ovvero viene selezionata l'etichetta a riservatezza meno elevata e, se applicabile, anche la sottoetichetta a riservatezza meno elevata.
 
 ![Possibilità di creare una sottoetichetta](media/Sensitivity-label-sublabel-options.png)
 
@@ -154,7 +154,7 @@ Con un criterio di etichetta, è possibile:
 
     ![Collegamento a ulteriori informazioni sul pulsante Riservatezza della barra multifunzione](media/Sensitivity-label-learn-more.png)
 
-Dopo aver creato un criterio di etichetta e aver assegnato le etichette di riservatezza a utenti e gruppi, le etichette saranno disponibili per quegli utenti nelle applicazioni di Office in un'ora o meno.
+Dopo aver creato un criterio etichetta che assegna etichette di riservatezza a utenti e gruppi, la visualizzazione delle etichette nelle app di Office degli utenti potrebbe richiedere fino a 24 ore.
 
 Non esiste un numero limite di etichette di riservatezza che è possibile creare e pubblicare, con un'eccezione: se l'etichetta applica la crittografia, è previsto un massimo di 500 etichette. Tuttavia, come procedura consigliata per ridurre al minimo i sovraccarichi per gli amministratori e le difficoltà per gli utenti, cercare di creare un numero limitato di etichette. Le distribuzioni nel mondo reale hanno evidenziato un'efficacia notevolmente ridotta nei casi in cui gli utenti hanno più di cinque etichette principali oppure più di cinque sottoetichette per ogni etichetta principale.
 
@@ -178,7 +178,7 @@ Mentre la priorità è importante per i criteri per le etichette di riservatezza
 
 ## <a name="how-to-get-started-with-sensitivity-labels"></a>Come iniziare a usare le etichette di riservatezza
 
-Iniziare con le etichette di riservatezza è una procedura veloce:
+Per iniziare a usare le etichette di riservatezza, seguire questa procedura:
 
 1. **Definire le etichette.** Per prima cosa, occorre stabilire la tassonomia per definire livelli di riservatezza diversi per il contenuto. Usare termini o nomi comuni che abbiano senso per gli utenti. Ad esempio, è possibile iniziare con etichette come Personale, Pubblico, Generale, Riservato ed Estremamente riservato. È possibile usare sottoetichette per raggruppare le etichette simili per categoria. Inoltre, quando si crea un'etichetta, è necessario fornire una descrizione comando, che viene visualizzata nelle app di Office quando un utente passa il mouse sull'opzione di un'etichetta nella barra multifunzione.
 
@@ -190,9 +190,11 @@ Ecco il flusso di base delle operazioni eseguite da amministratore, utente e app
 
 ![Diagramma che mostra il flusso di lavoro per le etichette di riservatezza](media/Sensitivity-label-flow.png)
 
+Per informazioni sulle procedure, vedere [Creare e configurare etichette di riservatezza e i relativi criteri](create-sensitivity-labels.md).
+
 ## <a name="where-sensitivity-labels-can-appear"></a>Posizioni in cui è possibile visualizzare le etichette di riservatezza
 
-Le etichette di riservatezza sono visualizzate nell’interfaccia utente delle app di Office e possono essere selezionate dal pulsante **Riservatezza** nella scheda Home della barra multifunzione. Per visualizzare la disponibilità corrente dell'etichettatura integrata per piattaforme e applicazioni specifiche, vedere [Supporto per le funzionalità delle etichette di riservatezza nelle app](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+Le etichette di riservatezza sono visualizzate nell'interfaccia utente delle app di Office e possono essere selezionate con il pulsante **Riservatezza** nella scheda Home della barra multifunzione. Per visualizzare la disponibilità corrente dell'etichettatura integrata per piattaforme e app specifiche, vedere [Supporto per le funzionalità delle etichette di riservatezza nelle app](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 Se si usa il client di etichettatura unificata di Azure Information Protection per i computer Windows, sono disponibili funzionalità aggiuntive per le etichette di riservatezza. Per altre informazioni, vedere [Confrontare i client di etichettatura per i computer Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
