@@ -14,12 +14,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Riepilogo: In questo articolo viene descritto come utilizzare DomainKeys Identified Mail (DKIM) insieme a Office 365 per essere certi che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato.'
-ms.openlocfilehash: 350a8aa793270522b3ca79b9f0fda09c49f21a62
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 7861e2c0009b34d558d64a87a44a10cc3c953b3c
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971644"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233777"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365
 
@@ -60,9 +60,6 @@ Contenuto dell'articolo:
 - [Configurare DKIM in modo che un servizio di terze parti possa inviare la posta elettronica o effettuarne lo spoofing per conto del dominio personalizzato dell'utente](use-dkim-to-validate-outbound-email.md#SetUp3rdPartyspoof)
 
 - [Passaggi successivi: Dopo aver configurato DKIM per Office 365](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
-
-> [!NOTE]
-> Microsoft 365 supporta l'uso di chiavi DKIM a 1024 o 2048 bit. Se si usano chiavi a 1024 bit e si vuole passare ai 2048 bit, in questo articolo è illustrata la procedura di modifica (rotazione) della configurazione di firma DKIM. Entro la fine del 2019, Microsoft supporterà le chiavi a 2048 bit per impostazione predefinita per tutti i clienti.
 
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing-in-office-365"></a>In che modo DKIM è più efficace di SPF per impedire lo spoofing dannoso in Office 365
 <a name="HowDKIMWorks"> </a>
