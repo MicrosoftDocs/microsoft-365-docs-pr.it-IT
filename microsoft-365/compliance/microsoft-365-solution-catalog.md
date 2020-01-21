@@ -9,12 +9,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Informazioni sul catalogo delle soluzioni Microsoft 365, incluse le informazioni in esso contenute, su come ottenerlo e sui passaggi successivi.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1d313720d2b9397b866898a55fb5ba2972234edb
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: b881e51f08e201f2870ea979e3f6c8181ab2ea02
+ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831639"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41247599"
 ---
 # <a name="overview-of-the-microsoft-365-solution-catalog-preview"></a>Panoramica del catalogo delle soluzioni di Microsoft 365 (anteprima)
 
@@ -51,13 +51,14 @@ Di seguito vengono visualizzate le schede per le soluzioni seguenti:
 
 ## <a name="insider-risk-management-section"></a>Sezione gestione dei rischi Insider
 
-La sezione **gestione dei rischi Insider** nella Home page Visualizza a colpo d'occhio il modo in cui l'organizzazione può identificare, analizzare e correggere i rischi interni prima che causino danni.
+La sezione **gestione dei rischi Insider** nella Home page Visualizza a colpo d'occhio il modo in cui l'organizzazione può identificare, analizzare e intervenire sui rischi interni prima che causino danni.
 
-![Sezione Microsoft 365 Solution Catalog Insider Risk Management](media/m365-solution-catalog-internal-risk-management.png)
+![Sezione Microsoft 365 Solution Catalog Insider Risk Management](media/m365-solution-catalog-insider-risk-management.png)
 
-Da qui, è possibile accedere a una scheda per la soluzione seguente:
+Di seguito vengono visualizzate le schede per le soluzioni seguenti:
 
-- [Conformità alla comunicazione](communication-compliance.md): consente di ridurre al minimo i rischi di comunicazione, contribuendo all'acquisizione automatica dei messaggi inadeguati, all'analisi delle possibili violazioni di criteri e all'esecuzione dei passaggi per la correzione.
+- [Conformità alla comunicazione](communication-compliance.md): consente di ridurre al minimo i rischi di comunicazione, contribuendo all'acquisizione automatica dei messaggi inadeguati, all'analisi delle possibili violazioni di criteri e alla riduzione dei danni.
+- [Gestione dei rischi Insider](insider-risk-management.md): individuare attività rischiose nell'organizzazione per identificare rapidamente, indagare e intraprendere azioni sui rischi e le minacce Insider.
 
 ## <a name="discovery--response-section"></a>Sezione Discovery & Response
 
@@ -95,6 +96,8 @@ Se si sta cercando una soluzione di conformità esistente e non è ancora dispon
 ## <a name="next-steps"></a>Passaggi successivi
 
 - **Esaminare il Punteggio di conformità di Microsoft**, un punteggio personalizzato basato sui rischi per comprendere lo stato di conformità dell'organizzazione agli standard e alle normative fondamentali. Vengono fornite le azioni consigliate che è possibile eseguire per rafforzare la posizione di conformità globale e fornisce funzionalità di flusso di lavoro che consentono di eseguire efficacemente tali azioni. Per ulteriori informazioni, vedere [Compliance Score (Preview)](compliance-score.md).
+
+- **Configurare i criteri di gestione dei rischi Insider** per ridurre al minimo i rischi interni e consentire all'utente di rilevare, indagare e intraprendere azioni per attività rischiose nell'organizzazione. Vedere [gestione dei rischi Insider](insider-risk-management.md).
 
 - **Microsoft Information Protection**, informazioni su come le soluzioni Microsoft 365 consentono di individuare, classificare e proteggere le informazioni riservate ovunque si trovino o viaggiano.
     - **Familiarizzare e configurare Microsoft cloud app Security**. Vedere [Guida introduttiva: Introduzione a Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).
