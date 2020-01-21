@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora attività estende la funzionalità di classificazione dei dati consentendo di visualizzare e filtrare le azioni intraprese dagli utenti sul contenuto etichettato.
-ms.openlocfilehash: 272de0400e89f9829b3ead5d4523db27789c0c44
-ms.sourcegitcommit: 9d0a025ea9e265d515a034de0102eabcf47d11f5
+ms.openlocfilehash: ab80de0e1be3a164da8414ef3791fb9717bcc190
+ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "39268966"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233697"
 ---
 # <a name="view-activity-on-your-labeled-content-preview"></a>Visualizzare le attività sul contenuto etichettato (anteprima)
 
@@ -38,6 +38,16 @@ Le schede Panoramica ed Esplora contenuto della classificazione dei dati consent
 
 
 È possibile visualizzare i dati sotto forma di elenco o grafico a barre.
+
+## <a name="prerequisites"></a>Prerequisiti
+
+A ogni account che accede e usa Esplora attività deve essere assegnata una licenza da uno di questi abbonamenti:
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Componente aggiuntivo Advanced Compliance (E5)
+- Componente aggiuntivo Advanced Threat Intelligence (E5)
+- Componente aggiuntivo Advanced Threat Protection (E5)
 
 ## <a name="activity-type"></a>Tipo di attività
 
