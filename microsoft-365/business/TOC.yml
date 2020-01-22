@@ -8,7 +8,7 @@
       href: sign-up.md
     - name: Prerequisiti per la protezione dei dati personali
       href: pre-requisites-for-data-protection.md
-    - name: Configurazione
+    - name: Installazione
       items:
         - name: Panoramica dell’installazione
           href: set-up-overview.md
@@ -38,7 +38,7 @@
       href: security-features.md
       items:
         - name: Configurazione di MFA
-          href: set-up-mfa.md
+          href: /Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
         - name: Protezione avanzata dalle minacce
           href: increase-threat-protection.md
         - name: Funzionalità di conformità della configurazione
