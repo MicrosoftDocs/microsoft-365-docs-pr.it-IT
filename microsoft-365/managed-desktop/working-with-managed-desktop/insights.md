@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2366c7b9e3c95ee88753ffb7677a7031c8ac9786
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962323"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260104"
 ---
 # <a name="work-with-insights"></a>Usare i dati analitici
 
@@ -40,4 +40,9 @@ Per ulteriori informazioni, [vedere Insights d'usage](usage-insights.md).
 ## <a name="reliability-insights"></a>Dati analitici sull'affidabilità
 Questa visualizzazione fornisce un riepilogo di integrità dei dispositivi gestiti. Per visualizzare i dati di attendibilità, selezionare la scheda **affidabilità** .
 
-Per ulteriori informazioni, vedere l'articolo relativo all' [affidabilità](reliability-insights.md)
+Per ulteriori informazioni, [vedere affidabilità Insights](reliability-insights.md).
+
+## <a name="battery-insights"></a>Intuizioni della batteria
+In questa visualizzazione vengono fornite informazioni sul consumo di energia delle app e sulla durata della batteria proiettata per i dispositivi nell'ambiente. Per visualizzare queste informazioni, selezionare la scheda **batteria** .
+
+Per ulteriori informazioni, [vedere Battery Insights](battery-insights.md).

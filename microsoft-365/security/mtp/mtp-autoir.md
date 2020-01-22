@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ea3201838e625969a239aee4339e0de605d95c55
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 9459b1b8ff431624045c5b57ade531288d41866e
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808611"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260184"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-threat-protection"></a>Indagine e reazione automatizzate (AIR) in Microsoft Threat Protection
 
@@ -38,24 +38,26 @@ Quando vengono attivati gli avvisi di sicurezza, spetta al team delle operazioni
 
 L'AIR consente al team delle operazioni di sicurezza di aumentare notevolmente la capacità dell'organizzazione di gestire avvisi e incidenti di sicurezza. Con l'AIR è possibile ridurre i costi di gestione delle attività di indagine e di correzione e ottenere il massimo dalla famiglia di prodotti relativi alla protezione dalle minacce. L'AIR aiuta il team delle operazioni di sicurezza a:
 
-1.  stabilire se una minaccia richiede un'azione;
-2.  eseguire (o consigliare) tutte le azioni correttive necessarie;
-3.  stabilire quali ulteriori indagini dovrebbero essere intraprese;
-4.  ripetere il processo per altri avvisi, se necessario.
+1. stabilire se una minaccia richiede un'azione;
+2. eseguire (o consigliare) tutte le azioni correttive necessarie;
+3. stabilire quali ulteriori indagini dovrebbero essere intraprese;
+4. ripetere il processo per altri avvisi, se necessario.
 
 ## <a name="the-automated-investigation-process"></a>Il processo di indagine automatizzata
 
 **Avviso** > **incidente** > **indagine automatizzata** > **verdetto** > **azione correttiva**
 
-A un livello elevato, un avviso attivato crea un incidente, il che può avviare un'indagine automatizzata. Tale indagine può comportare una o più azioni correttive. In Microsoft Threat Protection, ogni indagine automatizzata mette in correlazione i segnali attraverso Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) e Office 365 Advanced Threat Protection (Office 365 ATP), come riepilogato nella tabella seguente: 
+Un avviso attivato crea un evento Incident che può avviare un'indagine automatizzata. Tale indagine può comportare una o più azioni correttive. In Microsoft Threat Protection, ogni indagine automatizzata mette in correlazione i segnali attraverso Azure Advanced Threat Protection (Azure ATP), Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) e Office 365 Advanced Threat Protection (Office 365 ATP), come riepilogato nella tabella seguente: 
 
 |Entità |Servizi di protezione dalle minacce  |
 |---------|---------|
 |Dispositivi (detti anche endpoint)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |Contenuto della posta elettronica (file e messaggi nelle cassette postali)     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-
 Ogni indagine genera un verdetto (*Dannosa*, *Sospetta* o *Pulita*) per ogni prova analizzata. A seconda del tipo di minaccia e del conseguente verdetto, le azioni correttive si verificano automaticamente o previa approvazione da parte del team addetto alle operazioni di sicurezza della propria organizzazione. Le azioni in sospeso e quelle completate sono elencate nel [centro notifiche](mtp-action-center.md).
+
+> [!TIP]
+> Se si pensa che qualcosa è stato perso o rilevato erroneamente dalle funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection, fatecelo sapere! Vedere [How to report false positives/negatives in Automatic Investigation and Response (Air) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
 Durante l'esecuzione di un'indagine, tutti gli altri avvisi correlati che emergono vengono aggiunti all'indagine fino al suo completamento. Se un'entità incriminata viene visualizzata altrove, l'indagine automatizzata amplierà il suo ambito per includere tale entità e verrà eseguito un playbook della sicurezza generale. 
 

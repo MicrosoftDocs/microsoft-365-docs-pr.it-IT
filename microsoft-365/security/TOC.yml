@@ -1,7 +1,7 @@
 - name: Sicurezza di Microsoft 365
   href: index.yml
   items:
-    - name: Informazioni di base
+    - name: Introduzione
       items:
         - name: Sicurezza Microsoft 365 per decision maker aziendali
           href: Microsoft-365-security-for-bdm.md
@@ -73,6 +73,8 @@
                   href: mtp/mtp-autoir-results.md
                 - name: Approva o rifiuta le azioni in sospeso
                   href: mtp/mtp-autoir-actions.md
+                - name: Segnala falsi positivi/negativi
+                  href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Ricerca avanzata
               items:
                 - name: Ricerca in Microsoft 365

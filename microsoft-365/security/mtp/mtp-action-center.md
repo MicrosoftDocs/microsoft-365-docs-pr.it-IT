@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ca98e59ded0956455e3279caa9de2af4f4af86c9
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 91f2ae9a9fef96a3fdfedf86481aa5f5f33cb724
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808471"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260214"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Accedere al centro notifiche per visualizzare le azioni correttive
 
@@ -70,6 +70,10 @@ Nella tabella seguente sono elencate le azioni correttive attualmente supportate
     - Se l'indagine riguarda il contenuto della posta elettronica (ad esempio, se l'entità è una cassetta postale), i dettagli dell'indagine vengono aperti nel Centro sicurezza e conformità di Office 365 ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
 
     - Se l'indagine riguarda un dispositivo, i dettagli dell'indagine vengono aperti nel Centro sicurezza ([https://security.microsoft.com](https://security.microsoft.com)). 
+
+
+> [!TIP]
+> Se si pensa che qualcosa è stato perso o rilevato erroneamente dalle funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection, fatecelo sapere! Vedere [How to report false positives/negatives in Automatic Investigation and Response (Air) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
 ## <a name="required-permissions-for-action-center-tasks"></a>Autorizzazioni necessarie per le attività del centro notifiche
 

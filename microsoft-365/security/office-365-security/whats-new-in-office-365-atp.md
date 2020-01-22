@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a43576bc18d54e3a5c9b2f9ad918c1df3ee67615
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2ad99943869d3edc16316d90efb9bbfd70a6f18f
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807941"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260224"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novità di Office 365 ATP
 
@@ -30,10 +30,6 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
 
 > [!TIP]
 > Non si dispone ancora di Office 365 ATP? [Contattare Sales per avviare una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644).
-
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP - Piano 1 e Piano 2
-
-Office 365 ATP è disponibile in due piani: Office 365 ATP piano 1 e Office 365 ATP piano 2. [Altre informazioni](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
 
 ## <a name="december-2019"></a>Dicembre 2019
 
@@ -65,8 +61,14 @@ Office 365 ATP è disponibile in due piani: Office 365 ATP piano 1 e Office 365 
 
 - [Visualizzare i dati relativi agli URL di phishing e fare clic su Verdet](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP piano 1 o piano 2)
 
+## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP - Piano 1 e Piano 2
+
+Lo sapevate che Office 365 ATP è disponibile in due piani? C'è Office 365 ATP Plan 1 e Office 365 ATP piano 2. Ulteriori [informazioni su ciò che include ogni piano](office-365-atp.md#office-365-atp-plan-1-and-plan-2).
+
 ## <a name="see-also"></a>Vedere anche
 
 [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Descrizione del servizio ATP di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+
+[Indagine e reazione automatizzate in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

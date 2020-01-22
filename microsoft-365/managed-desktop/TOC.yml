@@ -98,6 +98,8 @@
               href: working-with-managed-desktop/usage-insights.md
             - name: Dati analitici sull'affidabilità
               href: working-with-managed-desktop/reliability-insights.md
+            - name: Intuizioni della batteria
+              href: working-with-managed-desktop/battery-insights.md
         - name: Supporto amministratori
           href: working-with-managed-desktop/admin-support.md
         - name: Supporto per gli utenti finali

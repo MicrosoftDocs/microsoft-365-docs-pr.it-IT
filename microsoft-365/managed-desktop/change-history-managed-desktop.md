@@ -8,16 +8,25 @@ author: jaimeo
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: b66fb73b635eb102bcd474cc884db6d0fa4cdfb6
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 8713b678432d71304649e05fba466659de0369ad
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634063"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260124"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia modifiche per la documentazione di Microsoft Managed Desktop
 
 In questo argomento vengono elencati gli argomenti nuovi e aggiornati nella [documentazione relativa a Microsoft Managed Desktop](index.yml). Gli argomenti "aggiornati" sono quelli che hanno avuto aggiunte o correzioni materiali: correzioni secondarie come la correzione di errori di battitura, stile o formattazione non sono presenti nell'elenco. È sempre possibile visualizzare la cronologia dei commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repo su GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="december-2019"></a>Dicembre 2019
+Argomento nuovo o modificato | Descrizione
+--- | ---
+[Supporto di amministrazione per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Argomento aggiornato
+[Dispositivi Microsoft Managed Desktop](service-description/device-list.md) | Argomento aggiornato
+[Dispositivi archiviati da Microsoft Managed Desktop](service-description/archived-device-list.md) | Argomento aggiornato
+
+
 
 ## <a name="november-2019"></a>Novembre 2019
 Argomento nuovo o modificato | Descrizione
