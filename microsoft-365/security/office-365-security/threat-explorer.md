@@ -14,12 +14,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui rilevamenti di Esplora risorse e in tempo reale &amp; nel centro sicurezza e conformità.
-ms.openlocfilehash: 64ebfef5c0d5540acf74d0d6f5a864461e83f82f
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: ef605fcc7a76cb2432357856b814453b149a5296
+ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967939"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41261880"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -187,7 +187,7 @@ Per visualizzare e utilizzare esplorazioni o rilevamenti in tempo reale, è nece
 - Per il centro &amp; sicurezza e conformità, è necessario che sia assegnato uno dei ruoli seguenti:
     - Gestione organizzazione
     - Amministratore della sicurezza (è possibile assegnarlo nell'interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ())
-    - Lettore di sicurezza
+    - Ruolo con autorizzazioni di lettura per la sicurezza
 
 - Per Exchange Online, è necessario che sia assegnato uno dei ruoli seguenti nell'interfaccia di amministrazione di Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) o con i cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
     - Gestione organizzazione
@@ -200,7 +200,7 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Autorizzazioni funzionalità in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>Alcune differenze tra l'esportatore di minacce e i rilevamenti in tempo reale
+## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Alcune differenze tra Esplora minacce e rilevamenti in tempo reale
 
  - Il rapporto sui **rilevamenti in tempo reale** è disponibile in Office 365 ATP Plan 1, mentre l' **esploratore di minacce** è disponibile in Office 365 ATP piano 2.
  - Il rapporto sui **rilevamenti in tempo reale** consente di visualizzare i rilevamenti in tempo reale. **** Anche questo consente di visualizzare ulteriori dettagli relativi a un determinato attacco.
