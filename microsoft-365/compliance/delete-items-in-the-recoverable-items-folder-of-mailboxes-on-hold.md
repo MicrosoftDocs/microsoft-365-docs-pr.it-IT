@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: 'Per gli amministratori: eliminare gli elementi nella cartella elementi ripristinabili di un utente per una cassetta postale di Exchange Online, anche se la cassetta postale è in attesa legale. Si tratta di un modo efficace per eliminare i dati che sono stati accidentalmente riversati in Office 365.'
-ms.openlocfilehash: 1954ac4db8b978b0b1c3cdc8cee080cc0f0e6c22
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+description: "Per gli amministratori: eliminare gli elementi in un \n\ncartella elementi ripristinabili di er per una cassetta postale di Exchange Online, anche se la cassetta postale è abilitata alla conservazione legale. Si tratta di un modo efficace per eliminare i dati che sono stati accidentalmente riversati in Office 365."
+ms.openlocfilehash: 6eeb3fecc531d4790330236f8b8857aa4344b371
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686581"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259674"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa-Guida per l'amministratore
 
@@ -43,19 +43,15 @@ La cartella elementi ripristinabili per una cassetta postale di Exchange Online 
 > [!CAUTION]
 > Le procedure descritte in questo articolo determinano l'eliminazione definitiva (eliminata) dei dati da una cassetta postale di Exchange Online. Questo significa che i messaggi eliminati dalla cartella elementi ripristinabili non possono essere recuperati e non saranno disponibili per la ricerca legale o per altri scopi di conformità. Se si desidera eliminare i messaggi da una cassetta postale che è stata bloccata come parte di un blocco per controversia legale, archiviazione sul posto, blocco di eDiscovery o criteri di conservazione di Office 365 creati nel centro sicurezza e conformità, consultare la gestione dei record o i reparti legali prima di rimuovere il blocco. È possibile che l'organizzazione disponga di un criterio che definisce se una cassetta postale in attesa o un evento di perdita dei dati ha la priorità. 
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
-- È necessario essere assegnati entrambi i ruoli di gestione seguenti in Exchange Online per cercare ed eliminare i messaggi dalla cartella elementi ripristinabili nel passaggio 5.
-    
-  - **Ricerca cassette** postali-questo ruolo consente di effettuare ricerche nelle cassette postali dell'organizzazione. Per impostazione predefinita, gli amministratori di Exchange non sono assegnati a questo ruolo. Per assegnare manualmente questo ruolo, aggiungersi come membro del gruppo di ruoli Gestione individuazione in Exchange Online. 
-    
-  - **Esportazione delle cassette postali** -questo ruolo consente di eliminare i messaggi dalla cassetta postale di un utente. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli. Per eliminare i messaggi dalle cassette postali degli utenti, è possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. 
+- Per creare ed eseguire una ricerca di contenuto, è necessario essere un membro del gruppo di ruoli di gestione di eDiscovery o disporre del ruolo di gestione della ricerca di conformità. Per eliminare i messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione o disporre del ruolo di gestione di ricerca ed eliminazione. Per informazioni sull'aggiunta di utenti a un gruppo di ruoli, vedere [assign eDiscovery Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
     
 - La procedura descritta in questo articolo non è supportata per le cassette postali inattive. Ciò è dovuto al fatto che non è possibile riapplicare un blocco (o un criterio di conservazione di Office 365) a una cassetta postale inattiva dopo averlo rimosso. Quando si rimuove un'esenzione da una cassetta postale inattiva, viene modificata in una normale cassetta postale eliminata temporaneamente e viene eliminata definitivamente dall'organizzazione dopo che è stata elaborata dall'Assistente cartelle gestite.
     
 - Non è possibile eseguire questa procedura per una cassetta postale che è stata assegnata a un criterio di conservazione di Office 365 che è stato bloccato con un blocco di conservazione. Ciò è dovuto al fatto che un blocco di conservazione impedisce di rimuovere o escludere la cassetta postale dal criterio di conservazione di Office 365 e di disabilitare l'Assistente cartelle gestite nella cassetta postale. Per ulteriori informazioni sul blocco dei criteri di conservazione, vedere [Locking a Retention Policy](retention-policies.md#locking-a-retention-policy).
     
-- Se non si dispone di una cassetta postale in attesa (o se non è stato abilitato il ripristino di un singolo elemento), è possibile eliminare gli elementi dalla cartella elementi ripristinabili. Per ulteriori informazioni su come eseguire questa operazione, vedere [cercare ed eliminare i messaggi ](https://go.microsoft.com/fwlink/?linkid=852453).
+- Se non si dispone di una cassetta postale in attesa (o se non è stato abilitato il ripristino di un singolo elemento), è possibile eliminare gli elementi dalla cartella elementi ripristinabili. Per ulteriori informazioni su come eseguire questa operazione, vedere [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione di Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Passaggio 1: raccogliere informazioni sulla cassetta postale
 
@@ -247,88 +243,35 @@ Dopo aver identificato il nome del caso di eDiscovery e il blocco, passare alla 
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Passaggio 4: rimuovere la sospensione di ritardo dalla cassetta postale
 
-Dopo la rimozione di qualsiasi tipo di blocco da una cassetta postale, il valore della proprietà della cassetta postale *DelayHoldApplied* è impostato su **true**. Questo problema si verifica quando l'Assistente cartelle gestite elabora la cassetta postale e rileva che è stata rimossa un'esenzione. Si tratta di un *blocco di ritardo* che indica che la rimozione effettiva del blocco viene posticipata di 30 giorni per evitare che i dati vengano eliminati definitivamente dalla cassetta postale. Lo scopo di un blocco di ritardo consiste nell'assegnare agli amministratori la possibilità di cercare o recuperare gli elementi della cassetta postale che verranno eliminati dopo la rimozione di un'esenzione.  Quando viene immessa una conservazione per la cassetta postale, la cassetta postale è ancora considerata attiva per una durata illimitata, come se la cassetta postale fosse in conservazione per controversia legale. Dopo 30 giorni, scade il ritardo e Office 365 tenterà automaticamente di rimuovere il blocco di ritardo (impostando la proprietà *DelayHoldApplied* su **false**) in modo che il blocco venga effettivamente rimosso. 
+Dopo la rimozione di qualsiasi tipo di blocco da una cassetta postale, il valore della proprietà della cassetta postale *DelayHoldApplied* o *DelayReleaseHoldApplied* è impostato su **true**. Questo problema si verifica quando l'Assistente cartelle gestite elabora la cassetta postale e rileva che è stata rimossa un'esenzione. Si tratta di un *blocco di ritardo* che indica che la rimozione effettiva del blocco viene posticipata di 30 giorni per evitare che i dati vengano eliminati definitivamente dalla cassetta postale. Lo scopo di un blocco di ritardo consiste nell'assegnare agli amministratori la possibilità di cercare o recuperare gli elementi della cassetta postale che verranno eliminati dopo la rimozione di un'esenzione.  Quando viene immessa una conservazione per la cassetta postale, la cassetta postale è ancora considerata attiva per una durata illimitata, come se la cassetta postale fosse in conservazione per controversia legale. Dopo 30 giorni, scade il ritardo e Office 365 tenterà automaticamente di rimuovere il blocco di ritardo (impostando la proprietà *DelayHoldApplied* o *DelayReleaseHoldApplied* su **false**) in modo che il blocco venga effettivamente rimosso. Per ulteriori informazioni su un blocco di ritardo, vedere la sezione "gestione delle cassette postali per il ritardo" in [come identificare il tipo di blocco posizionato su una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
-Prima di poter eliminare gli elementi nel passaggio 5, è necessario rimuovere il blocco di ritardo dalla cassetta postale. Per prima cosa, determinare se il blocco di ritardo viene applicato alla cassetta postale eseguendo il comando seguente in PowerShell di Exchange Online:
+Prima di poter eliminare gli elementi nel passaggio 5, è necessario rimuovere un blocco di ritardo dalla cassetta postale. Per prima cosa, determinare se il blocco di ritardo viene applicato alla cassetta postale eseguendo il comando seguente in PowerShell di Exchange Online:
 
 ```powershell
-Get-Mailbox <username> | FL DelayHoldApplied
+Get-Mailbox <username> | FL DelayHoldApplied,DelayReleaseHoldApplied
 ```
 
-Se il valore della proprietà *DelayHoldApplied* è impostato su **false**, nella cassetta postale non è stato applicato un blocco di ritardo. È possibile passare al passaggio 5 ed eliminare gli elementi nella cartella elementi ripristinabili.
+Se il valore della proprietà *DelayHoldApplied* o *DelayReleaseHoldApplied* è impostato su **false**, nella cassetta postale non è stato applicato un blocco di ritardo. È possibile passare al passaggio 5 ed eliminare gli elementi nella cartella elementi ripristinabili.
 
-Se il valore della proprietà *DelayHoldApplied* è impostato su **true**, eseguire il comando riportato di seguito per rimuovere il blocco di ritardo:
+Se il valore della proprietà *DelayHoldApplied* o *DelayReleaseHoldApplied* è impostato su **true**, eseguire uno dei comandi seguenti per rimuovere il blocco di ritardo:
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-Tenere presente che è necessario essere assegnati al ruolo di blocco legale in Exchange Online per utilizzare il parametro *RemoveDelayHoldApplied* .
+Oppure
+
+```powershell
+Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
+```
+
+Si noti che è necessario essere assegnati al ruolo di blocco legale in Exchange Online per utilizzare il parametro *RemoveDelayHoldApplied* o *RemoveDelayReleaseHoldApplied* .
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Passaggio 5: eliminare gli elementi nella cartella elementi ripristinabili
 
-A questo punto si è pronti per eliminare effettivamente gli elementi nella cartella elementi ripristinabili utilizzando il cmdlet [Search-Mailbox](https://go.microsoft.com/fwlink/?linkid=852595) in Exchange Online PowerShell. Quando si esegue il cmdlet **Search-Mailbox** , sono disponibili tre opzioni. 
-  
-- Copiare gli elementi in una cassetta postale di destinazione prima di eliminarli in modo da poter esaminare gli elementi, se necessario, prima di eliminarli.
-    
-- Copiare gli elementi in una cassetta postale di destinazione ed eliminarli nello stesso comando.
-    
-- Eliminare gli elementi senza copiarli in una cassetta postale di destinazione. 
-    
-Tenere presente che gli elementi nella cartella elementi ripristinabili nella cassetta postale di archiviazione principale dell'utente verranno eliminati anche quando si esegue il cmdlet **Search-Mailbox** . Per prevenire questa situazione, è possibile includere l'opzione  *DoNotIncludeArchive*  . Come indicato in precedenza, se l'archiviazione con espansione automatica è abilitata per la cassetta postale, il cmdlet * * Search-Mailbox * * non elimina gli elementi in una cassetta postale di archiviazione ausiliaria. Per ulteriori informazioni sull'espansione automatica dell'archivio, vedere [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md).
-  
-> [!NOTE]
-> Se si include una query di ricerca (usando il parametro  *SearchQuery*  ), il cmdlet **Search-Mailbox** restituirà un massimo di 10.000 elementi nei risultati della ricerca. Pertanto se si include una query di ricerca, potrebbe essere necessario eseguire il comando **Search-Mailbox** più volte per eliminare più di 10.000 elementi. 
-  
-Negli esempi seguenti viene illustrata la sintassi dei comandi per ognuna di queste opzioni. In questi esempi viene `-SearchQuery size>0` utilizzato il valore del parametro, che consente di eliminare tutti gli elementi da tutte le sottocartelle nella cartella elementi ripristinabili. Se è necessario eliminare solo gli elementi che soddisfano condizioni specifiche, è anche possibile utilizzare il parametro *SearchQuery* per specificare altre condizioni, ad esempio l'oggetto di un messaggio o un intervallo di date. Per ulteriori informazioni, vedere gli [altri esempi di utilizzo del parametro SearchQuery](#other-examples-of-using-the-searchquery-parameter) . 
-  
-### <a name="example-1"></a>Esempio 1
+A questo punto si è pronti per eliminare gli elementi nella cartella elementi ripristinabili utilizzando i cmdlet [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch) e [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction) nel centro sicurezza & Compliance. 
 
-In questo esempio vengono copiati tutti gli elementi della cartella elementi ripristinabili dell'utente in una cartella della cassetta postale di individuazione dell'organizzazione. In questo modo è possibile esaminare gli elementi prima di eliminarli definitivamente.
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
-```
-
-Nell'esempio precedente, non è necessario copiare gli elementi nella cassetta postale di ricerca di individuazione. È possibile copiare i messaggi in tutte le cassette postali di destinazione. Tuttavia, per impedire l'accesso ai dati delle cassette postali potenzialmente sensibili, è consigliabile copiare i messaggi in una cassetta postale che ha accesso limitato a personale autorizzato. Per impostazione predefinita, l'accesso alla cassetta postale di ricerca di individuazione predefinita è limitato ai membri del gruppo di ruoli Gestione individuazione in Exchange Online. 
-  
-### <a name="example-2"></a>Esempio 2
-
-In questo esempio vengono copiati tutti gli elementi della cartella elementi ripristinabili dell'utente in una cartella della cassetta postale di individuazione dell'organizzazione e quindi vengono eliminati gli elementi dalla cartella elementi ripristinabili dell'utente.
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>" -DeleteContent
-```
-
-### <a name="example-3"></a>Esempio 3
-
-In questo esempio vengono eliminati tutti gli elementi nella cartella elementi ripristinabili dell'utente, senza copiarli in una cassetta postale di destinazione. 
-
-```powershell
-Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
-```
-
-### <a name="other-examples-of-using-the-searchquery-parameter"></a>Altri esempi di utilizzo del parametro SearchQuery
-
-Di seguito sono riportati alcuni esempi di utilizzo del parametro *SearchQuery* per trovare messaggi specifici. Se si utilizza il parametro *SearchQuery* per cercare elementi specifici, è consigliabile copiare i risultati della ricerca in una cassetta postale di destinazione in modo che sia possibile esaminare i risultati della ricerca e quindi rivedere la query se necessario prima di eliminare i risultati di una ricerca. 
-  
-In questo esempio vengono restituiti i messaggi che contengono una frase specifica nel campo Subject.
-  
-```powershell
-SearchQuery 'subject:"MAIL_BOX VALIDATION/UPGRADE!!!"' 
-```
-
-In questo esempio vengono restituiti i messaggi che sono stati inviati entro l'intervallo di date specificato.
-  
-```powershell
-SearchQuery 'sent>=06/01/2016 AND sent<=09/01/2016'
-```
-
-In questo esempio vengono restituiti i messaggi che sono stati inviati alla persona specificata.
-
-```powershell
-SearchQuery 'to:garthf@alpinehouse.com'
-```
+Per eseguire questa operazione, vedere [cercare ed eliminare i messaggi di posta elettronica](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
 
 ### <a name="verify-that-items-were-deleted"></a>Verificare che gli elementi siano stati eliminati
 
@@ -425,7 +368,7 @@ Eseguire i passaggi seguenti (nella sequenza specificata) in PowerShell di Excha
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Di seguito viene riportata una tabella in cui viene descritto come identificare diversi tipi di esenzioni in base ai valori della proprietà *InPlaceHolds* quando si eseguono i cmdlet **Get-Mailbox** o **Get-OrganizationConfig** . Per informazioni più dettagliate, vedere [How to identificare il tipo di blocco posizionato su una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 

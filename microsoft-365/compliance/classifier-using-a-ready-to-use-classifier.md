@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 è dotato di un numero di classificatori pronti all'uso per l'apprendimento automatico che è possibile utilizzare per identificare ed etichettare il contenuto nell'organizzazione. In questo argomento vengono illustrate le modalità di preparazione per l'utilizzo dei classificatori pronti all'uso.
-ms.openlocfilehash: 6eaa3689dce1bfb37fdad6b1b22dcac3539bb31e
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: b94a49930cc2d460fb2db5ff4ff0f441f6c7b35a
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807415"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259432"
 ---
 # <a name="using-a-ready-to-use-classifier-preview"></a>Utilizzo di un classificatore pronto all'uso (anteprima)
 
@@ -45,7 +45,7 @@ Microsoft ha formato e testato un certo numero di classificatori che utilizzano 
 
 2. Creare una cartella di SharePoint Online dedicata. attendere almeno un'ora che la cartella venga aggiunta all'indice di ricerca. Prendere nota dell'URL della cartella.
 
-3. Accedere a Microsoft 365 Compliance Center with Compliance admin or Security admin Role Access e aprire **Microsoft 365 Compliance Center** o **Microsoft 365 Security Center** > **Records Management (Preview)** > **Label Policies** scheda.
+3. Accedere a Microsoft 365 Compliance Center with Compliance admin or Security admin Role Access e aprire **Microsoft 365 Compliance Center** > **Records Management (Preview)** > **Label Policies** Tab.
 
 4. Scegliere `Auto-apply a label`.
 

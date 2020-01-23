@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b14ef9970aa709ad5e23fdae467992497a1331e8
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
+ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260149"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41269387"
 ---
 # <a name="battery-insights"></a>Intuizioni della batteria
 Questa visualizzazione fornisce metriche per l'utilizzo di energia, batteria e app per i dispositivi Microsoft Managed Desktop. A tal fine, un'app viene considerata "in uso" se è in esecuzione e in stato di inattività.
@@ -43,8 +43,6 @@ Nell'area **Top Energy consumer** sono disponibili le app nel proprio ambiente c
 - Altro
 
 "Altro" potrebbe includere il consumo di energia da diverse fonti, come l'attività su disco, l'utilizzo della banda larga mobile e l'energia persa per la resistenza interna. 
-
-Le app visualizzate in * * Top Energy consumer "
 
 È possibile filtrare questa visualizzazione in modo da visualizzare solo le app in primo piano, le app in background o entrambe utilizzando il menu in alto a destra. Le app in primo piano sono quelle che hanno avuto l'interazione degli utenti negli ultimi 28 giorni, ad esempio la selezione di un elemento con un mouse.
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare Office 365 eDiscovery e gli strumenti di ricerca per gestire e rispondere a un evento di fuoriuscita dei dati nell'organizzazione.
-ms.openlocfilehash: 39419982bf343c7fcc1568a1550b3cdd41968296
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686583"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259422"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie di soluzioni di eDiscovery: scenario di fuoriuscita dei dati-ricerca ed eliminazione
 
@@ -54,7 +54,7 @@ Ecco come gestire un problema di fuoriuscita dei dati:
     
 - Per creare un caso, è necessario essere membri del gruppo di ruoli di eDiscovery Manager o essere membri di un gruppo di ruoli personalizzato assegnato al ruolo di gestione dei casi. Se non si è membri, chiedere a un amministratore di Office 365 di [aggiungersi al gruppo di ruoli eDiscovery Manager](assign-ediscovery-permissions.md).
     
-- Per eliminare i dati che sono stati versati nell'organizzazione, è necessario utilizzare il comando [Search-Mailbox-DeleteContent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps) in Exchange Online PowerShell. Inoltre, per utilizzare il parametro *deletecontent* , è necessario essere anche membri di un gruppo di ruoli in Exchange Online a cui è assegnato il ruolo di esportazione delle cassette postali. Vedere la sezione "aggiungere un ruolo a un gruppo di ruoli" in [Manage Role](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx)groups.
+- Per creare ed eseguire una ricerca di contenuto, è necessario essere un membro del gruppo di ruoli di gestione di eDiscovery o disporre del ruolo di gestione della ricerca di conformità. Per eliminare i messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione o disporre del ruolo di gestione di ricerca ed eliminazione. Per informazioni sull'aggiunta di utenti a un gruppo di ruoli, vedere [assign eDiscovery Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
     
 - Per eseguire una ricerca nelle attività di eDiscovery del registro di controllo di Office 365 nel passaggio 8, è necessario che il controllo sia attivato per l'organizzazione. È possibile cercare le attività eseguite negli ultimi 90 giorni. Per ulteriori informazioni su come abilitare e utilizzare il controllo, vedere la sezione [controllo del processo di analisi del versamento dei dati](#auditing-the-data-spillage-investigation-process) nel passaggio 8. 
     
@@ -84,7 +84,7 @@ Dopo aver creato una ricerca di contenuto, è necessario esaminare e convalidare
   
 Se si dispone di più di 1.000 cassette postali o più di 100 messaggi di posta elettronica per cassetta postale da esaminare, è possibile suddividere la ricerca iniziale in più ricerche utilizzando parole chiave aggiuntive o condizioni quali l'intervallo di date o il mittente/destinatario ed esaminare i risultati di ogni ricerca singolarmente. Assicurarsi di prendere nota di tutte le query di ricerca da utilizzare quando si eliminano i messaggi nel [passaggio 7](#step-7-permanently-delete-the-spilled-data).
 
-Se a un custode o a un utente finale viene assegnata una licenza di Office 36 E5, è possibile esaminare fino a 10.000 risultati della ricerca in una sola volta utilizzando Office 365 Advanced eDiscovery. Se sono presenti più di 10.000 messaggi di posta elettronica da rivedere, è possibile dividere la query di ricerca per intervallo di date ed esaminare ogni risultato singolarmente, in base alla quale i risultati della ricerca vengono ordinati per data. In Advanced eDiscovery, è possibile contrassegnare i risultati della ricerca utilizzando l' **etichetta come** caratteristica nel pannello anteprima e filtrare il risultato della ricerca in base al tag etichettato. Questa operazione è utile quando si collabora con un revisore secondario. Utilizzando strumenti di analisi aggiuntivi in Advanced eDiscovery, ad esempio il riconoscimento ottico dei caratteri, il threading della posta elettronica e la codifica predittiva, è possibile elaborare e rivedere rapidamente migliaia di messaggi e contrassegnarli per ulteriori riesami. Vedere [la pagina relativa alla configurazione rapida di Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
+Se a un custode o a un utente finale viene assegnata una licenza di Office 365 E5, è possibile esaminare fino a 10.000 risultati della ricerca in una sola volta utilizzando Office 365 Advanced eDiscovery. Se sono presenti più di 10.000 messaggi di posta elettronica da rivedere, è possibile dividere la query di ricerca per intervallo di date ed esaminare ogni risultato singolarmente, in base alla quale i risultati della ricerca vengono ordinati per data. In Advanced eDiscovery, è possibile contrassegnare i risultati della ricerca utilizzando l' **etichetta come** caratteristica nel pannello anteprima e filtrare il risultato della ricerca in base al tag etichettato. Questa operazione è utile quando si collabora con un revisore secondario. Utilizzando strumenti di analisi aggiuntivi in Advanced eDiscovery, ad esempio il riconoscimento ottico dei caratteri, il threading della posta elettronica e la codifica predittiva, è possibile elaborare e rivedere rapidamente migliaia di messaggi e contrassegnarli per ulteriori riesami. Vedere [la pagina relativa alla configurazione rapida di Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
 
 Quando si trova un messaggio di posta elettronica contenente dati versati, controllare i destinatari del messaggio per determinare se è stato condiviso esternamente. Per tracciare ulteriormente un messaggio, è possibile raccogliere le informazioni del mittente e l'intervallo di date in modo che sia possibile utilizzare i registri di traccia dei messaggi, come descritto nel [passaggio 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
@@ -136,7 +136,7 @@ Sono disponibili due modi per raccogliere un elenco di indirizzi di posta elettr
     
 2. Nella pagina riquadro a comparsa fare clic su **Visualizza risultati**.
     
-3. Nell'elenco a discesa **singoli risultati** fare clic su **statistiche di ricerca**.
+3. Nell'elenco a discesa **Singoli risultati** fare clic su **Statistiche ricerca**.
     
 4. Nell'elenco a discesa **tipo** fare clic su **posizioni principali**.
     
@@ -168,31 +168,9 @@ Assicurarsi di ripristinare le configurazioni precedenti della cassetta postale 
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>Passaggio 7: eliminare definitivamente i dati versati
 
-Utilizzando i percorsi delle cassette postali raccolte e preparate nel passaggio 6 e la query di ricerca creata e affinata nel passaggio 3 per trovare i messaggi di posta elettronica che contengono i dati rovesciati, è ora possibile eliminare definitivamente i dati versati. Come spiegato in precedenza, è necessario assegnare il ruolo di esportazione delle cassette postali di importazione in Exchange Online per eliminare i messaggi utilizzando la procedura seguente.
-  
-1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554).
-    
-2. Eseguire il comando riportato di seguito:
-    
-    ```powershell
-    Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
-    ```
+Utilizzando i percorsi delle cassette postali raccolte e preparate nel passaggio 6 e la query di ricerca creata e affinata nel passaggio 3 per trovare i messaggi di posta elettronica che contengono i dati rovesciati, è ora possibile eliminare definitivamente i dati versati.  Come spiegato in precedenza, per eliminare i messaggi, è necessario essere membri del gruppo di ruoli Gestione organizzazione o assegnare il ruolo di gestione di ricerca ed eliminazione. Per informazioni sull'aggiunta di utenti a un gruppo di ruoli, vedere [assign eDiscovery Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
-3. Rieseguire il comando precedente per ogni cassetta postale contenente i dati riversati, sostituendo il valore del parametro Identity. Per esempio:
-
-    ```powershell
-    Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-    ```powershell
-    Search-Mailbox -Identity janets@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-    ```
-
-   ```powershell
-   Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
-   ```
-
-Come indicato in precedenza, è anche possibile creare uno [script di PowerShell](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) ed eseguirlo su un elenco di cassette postali in modo che lo script elimini i dati versati in ogni cassetta postale.
+Per eliminare i messaggi versati, vedere i passaggi 2 & 3 per [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione di Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Passaggio 8: verificare, fornire una prova di eliminazione e controllo
 
@@ -214,12 +192,9 @@ Se le parole chiave della query di ricerca creata e utilizzata nel passaggio 3 c
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Controllo del processo di analisi della fuoriuscita dei dati
 
-È possibile eseguire una ricerca nel registro di controllo di Office 365 per le attività di eDiscovery eseguite durante l'indagine. È inoltre possibile eseguire una ricerca nel registro di controllo per restituire i record di controllo creati quando è stato eseguito il comando **Search-Mailbox-DeleteContent** per eliminare i dati versati. Per ulteriori informazioni, vedere:
+È possibile eseguire una ricerca nel registro di controllo di Office 365 per le attività di eDiscovery eseguite durante l'indagine. È inoltre possibile eseguire una ricerca nel registro di controllo per restituire i record di controllo per il comando **New-ComplianceSearchAction-Purge** eseguito nel passaggio 7 per eliminare i dati riversati. Per altre informazioni, vedere:
 
 - [Eseguire ricerche nel log di controllo](search-the-audit-log-in-security-and-compliance.md)
 
 - [Cercare le attività di eDiscovery nel log di controllo](search-for-ediscovery-activities-in-the-audit-log.md)
-
-- Vedere la sezione "attività controllate-log di controllo dell'amministratore di Exchange" in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities) per indicazioni su come cercare i record di controllo relativi ai cmdlet in esecuzione in Exchange Online.
   
-

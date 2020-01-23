@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 0e164afca97818d2082ddf4053df791317e29ac5
-ms.sourcegitcommit: 7705fdbcee4f8714ce044c9e120a431023f7a367
+ms.openlocfilehash: fea28683136ae72603b3e7a6954d7d6ecf0ffbe4
+ms.sourcegitcommit: 2eb4539291f5035b7bef746df89fbcc6faa17257
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41218586"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41263338"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)
 
-In precedenza, quando sono state applicate etichette di riservatezza che includono la crittografia per i file di Office archiviati in SharePoint e OneDrive, il servizio non è in grado di elaborare il contenuto di tali file. La CoAuthoring, la eDiscovery, la prevenzione della perdita di dati, la ricerca, l'approfondimento e altre funzionalità di collaborazione non hanno funzionato in queste circostanze. Questa anteprima consente di abilitare queste caratteristiche:
+Prima di questa anteprima, quando sono state applicate etichette di riservatezza che includono la crittografia per i file di Office archiviati in SharePoint e OneDrive, il servizio non è in grado di elaborare il contenuto di tali file. La CoAuthoring, la eDiscovery, la prevenzione della perdita di dati, la ricerca, l'approfondimento e altre funzionalità di collaborazione non hanno funzionato in queste circostanze. Questa anteprima consente di abilitare queste caratteristiche quando la crittografia è stata applicata con una chiave basata su cloud:
 
 - SharePoint riconosce le etichette di riservatezza applicate ai file di Word, Excel e PowerPoint in SharePoint e OneDrive. SharePoint applica anche le impostazioni che corrispondono a ciascuna etichetta.
 
@@ -39,9 +39,16 @@ In precedenza, quando sono state applicate etichette di riservatezza che includo
   - FileSensitivityLabelChanged
   - FileSensitivityLabelRemoved
 
+> [!NOTE]
+> Se la crittografia non è stata applicata con una chiave basata su cloud ma con una chiave locale, una topologia di gestione delle chiavi spesso definita "tenere la propria chiave" (HYOK), il comportamento di SharePoint non cambia con questa anteprima. 
+
 È inoltre possibile applicare etichette di riservatezza a Microsoft teams, gruppi di Office 365 e siti di SharePoint. Per ulteriori informazioni su questa anteprima separata, vedere [use Sensitivity labels with Microsoft teams, Office 365 groups, and SharePoint sites (Public Preview)](sensitivity-labels-teams-groups-sites.md).
 
 È sempre possibile scegliere di escludere l'anteprima in qualsiasi momento.
+
+Guardare il video seguente (senza audio) per visualizzare le nuove funzionalità in azione:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 ## <a name="requirements"></a>Requisiti
 
