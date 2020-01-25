@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 380e1b2fadc48c395fbd8c2b10c0d65a6ba01675
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: a5f68e235252208de664cc6dfdd62b6019d9abe6
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804259"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259984"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -52,7 +52,8 @@ Per informazioni sui vantaggi dei report SOC 1, 2 e 3 in Microsoft Cloud: [Scari
 - Dynamics 365 e Dynamics 365 U.S. Government [Elenco dettagliato](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
-- Servizio cloud Microsoft Flow come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Microsoft Managed Desktop
+- Servizio cloud Microsoft Flow, indipendente o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense [Elenco dettagliato](https://go.microsoft.com/fwlink/p/?LinkID=2077751); Yammer ha superato il controllo SOC 1 Tipo 1
 - Office 365 Germania
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
@@ -66,7 +67,8 @@ Per informazioni sui vantaggi dei report SOC 1, 2 e 3 in Microsoft Cloud: [Scari
 - Cloud App Security
 - Graph
 - Intune
-- Servizio cloud Microsoft Flow come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Microsoft Managed Desktop
+- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Power BI
 - Stream

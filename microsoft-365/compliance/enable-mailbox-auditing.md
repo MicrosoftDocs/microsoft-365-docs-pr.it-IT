@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Office 365 (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 50be60e3ca863c6625693c1b4debce1217571002
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 059039205e82ea63b1dc14a8be5e768e9cdba069
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083701"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515567"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
@@ -37,17 +37,17 @@ Di seguito sono illustrati alcuni vantaggi del controllo delle cassette postali 
 - Si dispone di un criterio di controllo delle cassette postali coerente all'interno dell'organizzazione (perché si controllano le stesse azioni per tutte le cassette postali).
 
 > [!NOTE]
->• La cosa importante da ricordare sul rilascio del controllo delle cassette postali per impostazione predefinita è: non è necessario eseguire alcuna operazione per la gestione del controllo delle cassette postali. Tuttavia, per ulteriori informazioni, personalizzare il controllo delle cassette postali dalle impostazioni predefinite o disattivarlo completamente, questo argomento può essere di aiuto. <br><br>• Anche quando il controllo delle cassette postali è attivato per impostazione predefinita, è possibile notare che gli eventi di controllo delle cassette postali per alcuni utenti non vengono trovati nelle ricerche del registro di controllo nel centro sicurezza & conformità o tramite l'API di gestione delle attività di Office 365. Per ulteriori informazioni, vedere la sezione [altre informazioni](#more-information) in questo argomento.
+>• La cosa importante da ricordare sul rilascio del controllo delle cassette postali per impostazione predefinita è: non è necessario eseguire alcuna operazione per la gestione del controllo delle cassette postali. Tuttavia, per ulteriori informazioni, personalizzare il controllo delle cassette postali dalle impostazioni predefinite o disattivarlo completamente, questo argomento può essere di aiuto. <br><br>• Solo gli eventi di controllo delle cassette postali per gli utenti E5 sono disponibili nelle ricerche del registro di controllo nel centro sicurezza & conformità o tramite l'API di attività di gestione di Office 365. Per ulteriori informazioni, vedere la sezione [altre informazioni](#more-information) in questo argomento.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Verificare che il controllo delle cassette postali per impostazione predefinita sia attivato
 
 Per verificare che il controllo delle cassette postali per impostazione predefinita sia attivato per l'organizzazione, eseguire il comando seguente in [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
 
-```
+```PowerShell
 Get-OrganizationConfig | Format-List AuditDisabled
 ```
 
-Il valore **false** indica che il controllo delle cassette postali è abilitato per impostazione predefinita per l'organizzazione. Questo valore dell'organizzazione per impostazione predefinita sostituisce l'impostazione di controllo delle cassette postali su specifiche cassette. Ad esempio, se il controllo delle cassette postali è disabilitato per una cassetta postale (la proprietà *AuditEnabled consente* è **impostata su false** sulla cassetta postale), le azioni della cassetta postale predefinite continueranno a essere controllate per la cassetta postale, perché il controllo delle cassette postali per impostazione predefinita è abilitato per il organizzazione.
+Il valore **false** indica che il controllo delle cassette postali è abilitato per impostazione predefinita per l'organizzazione. Questo valore dell'organizzazione per impostazione predefinita sostituisce l'impostazione di controllo delle cassette postali su specifiche cassette. Ad esempio, se il controllo della cassetta postale è disabilitato per una cassetta postale (la proprietà *AuditEnabled consente* è **impostata su false** sulla cassetta postale), le azioni della cassetta postale predefinite continueranno a essere controllate per la cassetta postale, perché il controllo delle cassette postali per impostazione predefinita è abilitato per l'organizzazione.
 
 Per mantenere la funzionalità di controllo delle cassette postali disabilitata per cassette postali specifiche, è possibile configurare il bypass di controllo della cassetta postale per il proprietario della cassetta postale e per gli altri utenti a cui è stato delegato l'accesso Per ulteriori informazioni, vedere la sezione [ignorare la registrazione di controllo delle cassette postali](#bypass-mailbox-audit-logging) in questo argomento.
 
@@ -105,7 +105,7 @@ Nella tabella seguente vengono descritte le azioni della cassetta postale dispon
 |**AddFolderPermissions**|**Nota**: Sebbene questo valore venga accettato come azione della cassetta postale, è già incluso nell'azione **UpdateFolderPermissions** e non è controllato separatamente. In altre parole, non utilizzare questo valore.||||
 |**ApplyRecord**|Un elemento è etichettato come record.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Copia**|Messaggio copiato in un'altra cartella.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|**Creazione**|Un elemento è stato creato nella cartella calendario, contatti, note o attività nella cassetta postale (ad esempio, viene creata una nuova convocazione di riunione). Si noti che la creazione, l'invio o la ricezione di un messaggio non viene controllato. Inoltre, la creazione di una cartella delle cassette postali non viene controllata.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Creare**|Un elemento è stato creato nella cartella calendario, contatti, note o attività nella cassetta postale (ad esempio, viene creata una nuova convocazione di riunione). Si noti che la creazione, l'invio o la ricezione di un messaggio non viene controllato. così come la creazione di una cartella della cassetta postale.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|Accesso effettuato a una cartella della cassetta postale. Tale azione viene registrata anche quando l'amministratore o un delegato apre la cassetta postale.<br/><br/> **Nota**: i record di controllo per le operazioni di associazione delle cartelle eseguite dai delegati vengono consolidati Viene generato un record di controllo per l'accesso a una singola cartella entro 24 ore.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Messaggio eliminato dalla cartella Elementi ripristinabili.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailboxLogin**|L'utente ha eseguito l'accesso alla propria cassetta postale. |||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -119,8 +119,8 @@ Nella tabella seguente vengono descritte le azioni della cassetta postale dispon
 |**SendOnBehalf**|Messaggio inviato utilizzando l'autorizzazione SendOnBehalf. Ciò significa che un altro utente ha inviato il messaggio per conto del proprietario della cassetta postale. Il messaggio indica al destinatario la persona per conto della quale è stato inviato il messaggio e l’utente che ha effettivamente inviato il messaggio.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**SoftDelete**|Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Gli elementi eliminati temporaneamente vengono spostati nella cartella Elementi ripristinabili.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Aggiorna**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateCalendarDelegation**|Una delega del calendario è stata assegnata a una cassetta postale. La delega del calendario fornisce a un altro utente nella stessa organizzazione le autorizzazioni per la gestione del calendario del proprietario della cassetta postale.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateFolderPermissions**|È stata modificata un'autorizzazione per la cartella. Autorizzazioni per le cartelle controllare quali utenti dell'organizzazione possono accedere alle cartelle in una cassetta postale e i messaggi che si trovano in tali cartelle.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateCalendarDelegation**|Una delega del calendario è stata assegnata a una cassetta postale. La delega del calendario assegna a un altro utente nella stessa organizzazione le autorizzazioni per la gestione del calendario del proprietario della cassetta postale.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateFolderPermissions**|Un'autorizzazione per una cartella è stata cambiata. Le autorizzazioni per le cartelle determinano quali utenti dell'organizzazione possono accedere alle cartelle di una cassetta postale e ai messaggi che contengono.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateInboxRules**|È stata aggiunta, rimossa o modificata una regola di posta in arrivo. Le regole di posta in arrivo vengono utilizzate per elaborare i messaggi nella posta in arrivo dell'utente in base alle condizioni specificate e intraprendere azioni quando vengono soddisfatte le condizioni di una regola, ad esempio lo spostamento di un messaggio in una cartella specificata o l'eliminazione di un messaggio.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
 > [!IMPORTANT]
@@ -136,11 +136,11 @@ Tenere presente che un amministratore con autorizzazione di accesso completo a u
 
 |**Azione della cassetta postale**|**Descrizione**|**Admin**|**Delegato**|**Proprietario**|
 |:---------|:---------|:---------:|:---------:|:---------:|
-|**Creazione**|Creazione di un elemento del calendario. Si noti che la creazione, l'invio o la ricezione di un messaggio non viene controllato.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**Creare**|Creazione di un elemento del calendario. Si noti che la creazione, l'invio o la ricezione di un messaggio non viene controllato.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**HardDelete**|Messaggio eliminato dalla cartella Elementi ripristinabili.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MoveToDeletedItems**|Messaggio eliminato e spostato nella cartella Posta eliminata.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**SendAs**|Messaggio inviato utilizzando l'autorizzazione SendAs.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SendOnBehalf**|Messaggio inviato utilizzando l'autorizzazione SendOnBehalf. |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SendAs**|Un messaggio è stato inviato con l'autorizzazione SendAs,|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SendOnBehalf**|Un messaggio è stato inviato con l'autorizzazione SendOnBehalf, |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**SoftDelete**|Messaggio eliminato in modo definitivo dalla cartella Posta eliminata. Gli elementi eliminati temporaneamente vengono spostati nella cartella Elementi ripristinabili.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Aggiorna**|Modifiche apportate a un messaggio o alle relative proprietà.|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
@@ -150,13 +150,13 @@ Per impostazione predefinita, il controllo delle cassette postali aggiunge una n
 
 Per visualizzare il valore delle cassette postali degli utenti o delle \<cassette\> postali condivise, sostituire MailboxIdentity con il nome, l'alias, l'indirizzo di posta elettronica o il nome dell'entità utente (nomeutente) della cassetta postale ed eseguire il comando seguente in PowerShell di Exchange Online:
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
 Per visualizzare il valore delle cassette postali di gruppo di \<Office\> 365, sostituire MailboxIdentity con il nome, l'alias o l'indirizzo di posta elettronica della cassetta postale condivisa ed eseguire il comando seguente in PowerShell di Exchange Online:
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
 ```
 
@@ -180,26 +180,26 @@ Per ulteriori informazioni, vedere la sezione [modificare o ripristinare le azio
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>Visualizzare le azioni delle cassette postali registrate nelle cassette postali
 
-Per visualizzare le azioni delle cassette postali attualmente in fase di registrazione nelle cassette postali degli \<utenti\> o nelle cassette postali condivise, sostituire MailboxIdentity con il nome, l'alias, l'indirizzo di posta elettronica o il nome dell'entità utente (nomeutente) della cassetta postale ed eseguire una o più delle operazioni seguenti: comandi in Exchange Online PowerShell.
+Per visualizzare le azioni delle cassette postali attualmente in fase di accesso alle cassette postali degli \<utenti\> o alle cassette postali condivise, sostituire MailboxIdentity con il nome, l'alias, l'indirizzo di posta elettronica o il nome dell'entità utente (nomeutente) della cassetta postale ed eseguire uno o più dei comandi seguenti in PowerShell di Exchange Online.
 
 > [!NOTE]
 > Anche se è possibile aggiungere `-GroupMailbox` l'opzione ai comandi **Get-Mailbox** riportati di seguito per le cassette postali di gruppo di Office 365, non credere ai valori visualizzati. Le azioni delle cassette postali predefinite e statiche di cui è stato eseguito il controllo per le cassette postali di gruppo di Office 365 sono descritte nella sezione azioni delle cassette postali [per office 365 di gruppo](#mailbox-actions-for-office-365-group-mailboxes) precedenti in questo argomento.
 
 #### <a name="owner-actions"></a>Azioni del proprietario
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditOwner
 ```
 
 #### <a name="delegate-actions"></a>Azioni delegate
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditDelegate
 ```
 
 #### <a name="admin-actions"></a>Azioni amministrative
 
-```
+```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditAdmin
 ```
 
@@ -214,29 +214,29 @@ Tuttavia, è possibile che l'organizzazione debba controllare un diverso insieme
 
 ### <a name="change-the-mailbox-actions-to-audit"></a>Modificare le azioni delle cassette postali da controllare
 
-È possibile utilizzare i parametri *AuditAdmin*, *AuditDelegate*o *AuditOwner* sul cmdlet **Set-Mailbox** per modificare le azioni delle cassette postali controllate per le cassette postali degli utenti e le cassette postali condivise (azioni controllate per il gruppo di Office 365 le cassette postali non possono essere personalizzate.
+È possibile utilizzare i parametri *AuditAdmin*, *AuditDelegate*o *AuditOwner* sul cmdlet **Set-Mailbox** per modificare le azioni della cassetta postale controllate per le cassette postali degli utenti e le cassette postali condivise (le azioni controllate per le cassette postali di gruppo di Office 365 non possono essere personalizzate).
 
 È possibile utilizzare due metodi diversi per specificare le azioni delle cassette postali:
 
-- *Sostituisci* (overwrite) le azioni delle cassette postali esistenti utilizzando `action1,action2,...actionN`la sintassi seguente:.
+- *Replace* (overwrite) the existing mailbox actions usando la `action1,action2,...actionN`sintassi seguente:.
 
 - *Aggiungere o rimuovere* azioni delle cassette postali senza influire su altri valori esistenti utilizzando `@{Add="action1","action2",..."actionN"}` la `@{Remove="action1","action2",..."actionN"}`sintassi seguente: oppure.
 
 In questo esempio vengono modificate le azioni delle cassette postali di amministrazione per la cassetta postale denominata "Gabriela Laureano" sovrascrivendo le azioni predefinite con SoftDelete e HardDelete.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Gabriela Laureano" -AuditAdmin HardDelete,SoftDelete
 ```
 
 In questo esempio viene aggiunta l'azione MailboxLogin Owner alla cassetta postale laura@contoso.onmicrosoft.com.
 
-```
+```PowerShell
 Set-Mailbox -Identity laura@contoso.onmicrosoft.com -AuditOwner @{Add="MailboxLogin"}
 ```
 
 In questo esempio viene rimossa l'azione delegata MoveToDeletedItems per la cassetta postale del team di discussione.
 
-```
+```PowerShell
 Set-Mailbox -Identity "Team Discussion" -AuditDelegate @{Remove="MoveToDeletedItems"}
 ```
 
@@ -250,7 +250,7 @@ Indipendentemente dal metodo utilizzato, la personalizzazione delle azioni delle
 
 Se sono state personalizzate le azioni delle cassette postali controllate in una cassetta postale utente o in una cassetta postale condivisa, è possibile ripristinare le azioni predefinite della cassetta postale per uno o per tutti i tipi di accesso utilizzando la sintassi seguente:
 
-```
+```PowerShell
 Set-Mailbox -Identity <MailboxIdentity> -DefaultAuditSet <Admin | Delegate | Owner>
 ```
 
@@ -260,13 +260,13 @@ Set-Mailbox -Identity <MailboxIdentity> -DefaultAuditSet <Admin | Delegate | Own
 
 In questo esempio vengono ripristinate le azioni predefinite della cassetta postale di controllo per tutti i tipi di accesso nella cassetta postale mark@contoso.onmicrosoft.com.
 
-```
+```PowerShell
 Set-Mailbox -Identity mark@contoso.onmicrosoft.com -DefaultAuditSet Admin,Delegate,Owner
 ```
 
 In questo esempio vengono ripristinate le azioni di cassette postali di controllo predefinite per il tipo di accesso all'amministratore nella cassetta postale chris@contoso.onmicrosoft.com, ma vengono lasciate le azioni di cassetta postale controllate personalizzate per i tipi di accesso delegato e proprietario.
 
-```
+```PowerShell
 Set-Mailbox -Identity chris@contoso.onmicrosoft.com -DefaultAuditSet Admin
 ```
 
@@ -282,7 +282,7 @@ Ripristino delle azioni delle cassette postali di controllo predefinite per un t
 
 Per impostazione predefinita, è possibile disattivare il controllo delle cassette postali per l'intera organizzazione eseguendo il comando seguente in PowerShell di Exchange Online:
 
-```
+```PowerShell
 Set-OrganizationConfig -AuditDisabled $true
 ```
 
@@ -302,7 +302,7 @@ La disattivazione del controllo delle cassette postali per impostazione predefin
 
 Per abilitare di nuovo il controllo della cassetta postale per l'organizzazione, eseguire il comando seguente in PowerShell di Exchange Online:
 
-```
+```PowerShell
 Set-OrganizationConfig -AuditDisabled $false
 ```
 
@@ -320,13 +320,13 @@ Tuttavia, è comunque possibile utilizzare il cmdlet **Set-MailboxAuditBypassAss
 
 Per ignorare la registrazione di controllo delle cassette postali per \<un\> utente specifico, sostituire MailboxIdentity con il nome, l'indirizzo di posta elettronica, l'alias o il nome dell'entità utente (nomeutente) dell'utente ed eseguire il comando seguente:
 
-```
+```PowerShell
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true
 ```
 
 Per verificare che il controllo sia bypassato per l'utente specificato, eseguire il comando riportato di seguito:
 
-```
+```PowerShell
 Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List AuditByPassEnabled
 ```
 
@@ -334,7 +334,7 @@ Il valore **true** indica che la registrazione di controllo delle cassette posta
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- Solo gli utenti con licenze E5 o cassette postali in cui la registrazione di controllo delle cassette postali è stata abilitata manualmente da un amministratore restituirà gli eventi del registro di controllo delle cassette postali nelle ricerche del registro di controllo nel centro sicurezza & conformità o tramite 365 l'API di gestione attività
+- Anche se la registrazione di controllo delle cassette postali per impostazione predefinita è abilitata per tutte le organizzazioni, solo gli utenti con licenze E5 restituiranno gli eventi del registro di controllo delle cassette postali nelle [ricerche del registro di controllo nel centro sicurezza & conformità](search-the-audit-log-in-security-and-compliance.md) o tramite l' [API di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
   Per recuperare le voci del registro di controllo delle cassette postali per gli utenti senza licenze E5, è possibile:
 
@@ -373,7 +373,7 @@ Il valore **true** indica che la registrazione di controllo delle cassette posta
 
     - È possibile eseguire il comando seguente in PowerShell di Exchange Online per visualizzare le dimensioni e il numero di elementi nella sottocartella revisioni nella cartella elementi ripristinabili:
 
-      ```
+      ```PowerShell
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder
       ```
 

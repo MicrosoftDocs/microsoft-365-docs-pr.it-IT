@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come effettuare l'accesso, configurare le autorizzazioni e comprendere il dashboard per il Punteggio di conformità di Microsoft, che semplifica e automatizza le valutazioni dei rischi.
-ms.openlocfilehash: 79e93a102107433ed2b493a56381bc60ca544157
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: d6ec9617ff97a254514370c863b02b2fb0415798
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41021912"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515657"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Configurazione del Punteggio di conformità Microsoft (anteprima)
 
@@ -63,6 +63,38 @@ Per impostare le autorizzazioni nel centro conformità di Microsoft 365:
 
 1. Accedere al [centro conformità di Microsoft 365](https://compliance.microsoft.com) e accedere con l'account di amministratore globale.
 2. Selezionare **autorizzazioni** nel riquadro di spostamento a sinistra. Da qui, è possibile visualizzare i ruoli e assegnare le autorizzazioni.
+
+## <a name="configure-automatic-secure-score-updates"></a>Configurare gli aggiornamenti automatici del Punteggio sicuro
+
+Per impostazione predefinita, tutti i nuovi tenant dispongono degli aggiornamenti automatici di [Secure Score](../security/mtp/microsoft-secure-score.md) attivati. Questo significa che tutte le azioni monitorate dal punteggio sicuro aggiorneranno automaticamente lo stato per la stessa azione nel punteggio di conformità.
+
+L'amministratore globale può gestire questa impostazione per disattivare gli aggiornamenti automatici per tutte le azioni o impostare gli aggiornamenti per le azioni singolarmente.
+
+Durante l'anteprima pubblica, è necessario accedere al Microsoft Service Trust Portal (in cui si trova la gestione della conformità) per gestire gli aggiornamenti dei punti di sicurezza.
+
+Per gestire gli aggiornamenti automatici del Punteggio sicuro, attenersi alla seguente procedura:
+
+1. Accedere al [Service Trust Portal](https://servicetrust.microsoft.com) con l'account di amministratore globale.
+
+2. Nella barra dei menu del servizio di attendibilità del Service Top, in **altro**, selezionare **amministratore** e quindi scegliere **Impostazioni**.
+
+3. Nella scheda **Punteggio sicuro** selezionare il pulsante corrispondente per **attivarla per tutte le azioni**, disattivarla **per tutte le azioni**o **impostare per azione.**
+
+Se si sceglie **imposta per azione,** eseguire i passaggi aggiuntivi per abilitare gli aggiornamenti dei punti di sicurezza per le singole azioni:
+
+4. Scegliere **Compliance Manager** dal menu in alto (Nota: non selezionare "Compliance Manager (Classic)").
+
+5. Selezionare **gestione tenant** nell'angolo in alto a destra dello schermo.
+
+6. Nel riquadro **azioni cliente** individuare l'azione desiderata con puntini di sospensione (**...**) nella colonna **azioni coinvolte** . Fare clic sui puntini di ellisse e selezionare **modifica.**
+
+7. Cambiare l'opzione attiva/disattiva **aggiornamento continuo Punteggio** **su attivato.**
+
+8. Selezionare **Salva.** Secure Score il monitoraggio continuo è ora attivato per tale azione.
+
+**Nota:** Solo l'amministratore globale può abilitare o disattivare gli aggiornamenti automatici per tutte le azioni. L'amministratore di Compliance Manager può abilitare gli aggiornamenti automatici per singole azioni, ma non per tutte le azioni a livello globale.
+
+Per ulteriori informazioni, vedere [Managing Secure Score Updates](compliance-manager-release-notes.md#secure-score).
 
 ## <a name="understand-the-compliance-score-dashboard"></a>Comprendere il dashboard del Punteggio di conformità
 

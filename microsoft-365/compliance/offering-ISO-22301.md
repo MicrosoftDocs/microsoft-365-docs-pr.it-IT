@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 1f4bfd1c219de2126bc6cb9443f3b899b99945c6
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 08f05939e6cd4ebdff81fb2fd2fda47bac05e882
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859696"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260034"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Standard di gestione della continuità aziendale ISO 22301:2012
 
@@ -39,7 +40,8 @@ Per informazioni sui vantaggi di ISO/IEC 22301 in Microsoft Cloud, [scaricare i 
 - Genomica
 - Graph
 - Intune
-- Servizio cloud Microsoft Flow come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Microsoft Managed Desktop
+- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - [Office 365 commerciale, per enti pubblici e per l'istruzione](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
@@ -76,6 +78,6 @@ Sì. Se l'azienda richiede la certificazione ISO 22301 per le implementazioni di
 - [Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=2092329)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/0/0/9/009B2F34-96F6-4D85-8BDC-238B91A2C6EE/ISO-22301-Compliance.pdf ).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/0/0/9/009B2F34-96F6-4D85-8BDC-238B91A2C6EE/ISO-22301-Compliance.pdf ).

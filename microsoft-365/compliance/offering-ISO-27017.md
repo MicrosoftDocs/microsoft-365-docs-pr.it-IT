@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: f58322fe915c811ba2613bef98116f910abc03d1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 758e7d0f3e82afa6cfd4b90501bd84080d8f6303
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859686"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260014"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>Codice di condotta in materia di controllo della sicurezza informatica ISO/IEC 27017:2015 
 
@@ -48,7 +49,8 @@ Per informazioni sui vantaggi di ISO/IEC 27017 in Microsoft Cloud: [scaricare IS
 - Genomica
 - Graph
 - Intune
-- Servizio cloud Microsoft Flow come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Microsoft Managed Desktop
+- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense e Office 365 Germany
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
@@ -60,7 +62,7 @@ I servizi cloud Microsoft vengono controllati una volta all'anno per verificare 
 
 - [Certificato ISO 27017 di Azure](https://go.microsoft.com/fwlink/p/?linkid=2078005)
 - [Report di valutazione ISO 27017 per Azure](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Dichiarazione di applicabilità di Azure ISO 27017](https://aka.ms/azureiso27017StatementofApplicability)
+- [Dichiarazione di applicabilità di Azure ISO 27017](https://aka.ms/AzureISO27017StatementofApplicability)
 - [Report di valutazione di controllo ISO 27001, 27018 e 27017 per Office 365](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
@@ -87,6 +89,6 @@ Il [portale di attendibilità dei servizi](https://aka.ms/stphelp) fornisce repo
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/7/7/9/7799D02B-A97A-48E0-A057-C19DD543BB24/ISO-IEC-27017_backgrounder.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/7/7/9/7799D02B-A97A-48E0-A057-C19DD543BB24/ISO-IEC-27017_backgrounder.pdf).

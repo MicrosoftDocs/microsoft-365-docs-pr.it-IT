@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 705b59a5ae499a580086304abe91a9318bb36fcb
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4ae0df3ddc8eec28cc6f29bddd0a46a09d33b0dc
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859706"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260044"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>Gestione dei servizi informatici ISO/IEC 20000-1:2011 
 
@@ -37,6 +38,7 @@ Una società di revisione indipendente di terze parti ha eseguito un esame rigor
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Intune
+- Microsoft Managed Desktop
 - Microsoft PowerApps
 - Microsoft Flow
 - Microsoft Graph
@@ -46,7 +48,7 @@ Una società di revisione indipendente di terze parti ha eseguito un esame rigor
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
-2017 ISO 20000-1 documentazione per Azure, Intune, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics e Microsoft Datacenters
+2017 ISO 20000-1 documentazione per Azure, Intune, Microsoft Managed Desktop, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Genomica di Microsoft e Data center Microsoft
 
 - [Report della valutazione](https://go.microsoft.com/fwlink/p/?linkid=2077810)
 - [Certificato](https://go.microsoft.com/fwlink/p/?linkid=2077815)
@@ -76,6 +78,6 @@ Sì. Se l'azienda desidera una certificazione per le implementazioni distribuite
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/4/E/5/4E58193E-F4D8-4A98-A39E-27F604BD8292/ISO-IEC-20000-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/4/E/5/4E58193E-F4D8-4A98-A39E-27F604BD8292/ISO-IEC-20000-Compliance.pdf).

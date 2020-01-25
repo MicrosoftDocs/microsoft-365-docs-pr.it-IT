@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore nativo per l'importazione e l'archiviazione di pagine business di Facebook su Microsoft 365. Dopo aver importato i dati in Microsoft 365, è possibile utilizzare le funzionalità di conformità, ad esempio il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire la governance dei dati di Facebook dell'organizzazione.
-ms.openlocfilehash: 1222a82e3a3b8415aa3fc98cd3c06376e491beb0
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: c13f055a9ca96d9b7cc1ec5791c476e6cda8e5f0
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269419"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515737"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Distribuire un connettore per archiviare i dati di pagine business di Facebook
 
@@ -60,15 +60,12 @@ In questo articolo è incluso il processo dettagliato per la distribuzione di un
 
    ![Copiare il valore del segreto e salvarlo](media/FBCimage9.png)
 
-10. Andare a **manifest** e copiare il identifierUris (denominato anche URI dell'applicazione AAD) come evidenziato nella schermata seguente. Copiare l'URI dell'applicazione AAD in un file di testo o in un altro percorso di archiviazione. Viene utilizzato nel passaggio 6.
-
-    ![Passare a manifest e copiare l'URI dell'applicazione AAD](media/FBCimage10.png)
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Passaggio 2: distribuire il servizio Web del connettore da GitHub all'account di Azure
 
-1. Accedere a [questo sito GitHub](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) e fare clic su **Distribuisci in Azure**.
+1. Accedere a [questo sito GitHub](https://github.com/microsoft/m365-sample-connector-csharp-aspnet) e fare clic su **Distribuisci in Azure**.
 
-    ![Fare clic su Distribuisci in Azure](media/FBCimage11.png)
+    ![Fare clic su Distribuisci in Azure](media/FBCGithubApp.png)
 
 2. Dopo aver fatto clic su **Distribuisci in Azure**, verrà reindirizzato a un portale di Azure con una pagina modello personalizzato. Compilare i dettagli delle **Impostazioni e delle** informazioni di **base** e quindi fare clic su **acquisto**.
 

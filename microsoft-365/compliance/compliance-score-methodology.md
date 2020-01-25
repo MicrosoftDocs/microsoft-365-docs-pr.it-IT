@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul modo in cui il Punteggio di conformità di Microsoft calcola un punteggio personalizzato sulla base delle azioni intraprese per risolvere i rischi e migliorare la conformità alla postura.
-ms.openlocfilehash: a94b1051af383041a89fa136ae490875ea48782d
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 9fbc2b2beca3a667b09c1a4ba790651a364d1bf0
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793660"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515577"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Calcolo del Punteggio di conformità Microsoft (anteprima)
 
@@ -43,11 +43,13 @@ Punteggio di conformità consente di ottenere un punteggio esterno alla casella 
 
 ## <a name="how-compliance-score-continuously-assesses-controls"></a>Come il Punteggio di conformità valuta continuamente i controlli
 
-Il Punteggio di conformità analizza automaticamente l'ambiente Microsoft 365 e rileva le impostazioni di sistema, aggiornando continuamente e automaticamente lo stato del controllo tecnico. Ad esempio, se si è attivata l'autenticazione a più fattori nel portale di Azure AD, il Punteggio di conformità rileva l'impostazione e lo riflette nei dettagli della soluzione di Access Control. Viceversa, se non si è attivato l'AMF, il Punteggio di conformità contrassegna come azione consigliata da eseguire.
+Il Punteggio di conformità analizza automaticamente l'ambiente Microsoft 365 e rileva le impostazioni di sistema, aggiornando continuamente e automaticamente lo stato del controllo tecnico. Il Punteggio di conformità utilizza il Punteggio sicuro come motore sottostante che esegue il monitoraggio. [Per ulteriori informazioni, vedere Punteggio sicuro e modalità di funzionamento](../security/mtp/microsoft-secure-score.md).
 
-Il Punteggio di conformità aggiorna lo stato del controllo ogni 24 ore. Dopo aver seguito una raccomandazione per implementare un controllo, verrà visualizzato lo stato del controllo aggiornato il giorno successivo.
+Lo stato del controllo viene aggiornato sul dashboard del Punteggio di conformità ogni 24 ore. Dopo aver seguito una raccomandazione per implementare un controllo, verrà visualizzato lo stato del controllo aggiornato il giorno successivo.
 
-Durante l'anteprima pubblica, la valutazione continua è disponibile per i controlli delle porzioni, ma non per tutti.
+Ad esempio, se si attiva l'autenticazione a più fattori nel portale di Azure AD, il Punteggio di conformità rileva l'impostazione e riflette quella nei dettagli della soluzione di Access Control. Viceversa, se non si è attivato l'AMF, il Punteggio di conformità contrassegna come azione consigliata da eseguire.
+
+Durante l'anteprima pubblica, la valutazione continua è disponibile per una parte dei controlli, ma non per tutti.
   
 ## <a name="control-types-and-points"></a>Tipi di controllo e punti
 
@@ -78,8 +80,8 @@ Ogni controllo ha un valore assegnato nel punteggio di conformità basato sul ri
 |:-----|:-----|
 | Obbligatorio preventivo | 27 |
 | Discrezionale preventiva | 9  |
-| Detective obbligatorio | 3  |
-| Discrezionale detective | 1  |
-| Obbligatorio correttivo | 3  |
-| Discrezionale correttiva | 1  |
+| Detective obbligatorio | 3 |
+| Discrezionale detective | 1 |
+| Obbligatorio correttivo | 3 |
+| Discrezionale correttiva | 1 |
   

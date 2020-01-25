@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 9eb781ccaab7f7af00cc3c34bc7f7d9fb312fa26
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: cc43eb0c0f6aa77d6e58464e263920c578553887
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859646"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259994"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 Quality Management Systems Standards
 
@@ -35,7 +36,8 @@ Una società di revisione indipendente di terze parti ha eseguito un esame rigor
 - Genomica
 - Graph
 - Intune
-- Servizio cloud Microsoft Flow come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Microsoft Managed Desktop
+- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 
@@ -71,6 +73,6 @@ Sì. La valutazione annuale ISO 9001:2015 include il infrastruttura fisica sotto
 - [Condizioni dei servizi online di Microsoft](https://aka.ms/Online-Services-Terms)
 - [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/E/6/3/E63F54DC-766E-477C-98D8-ADDB6A94F5C5/ISO-9001-Compliance.pdf ).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/E/6/3/E63F54DC-766E-477C-98D8-ADDB6A94F5C5/ISO-9001-Compliance.pdf ).

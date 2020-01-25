@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 322e74b846cc574b52708627d5f59dde3cfe9e80
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 221c773e04bd9b7a4e404d0ec6a5fd5695ca089c
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807385"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515757"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Esaminare e correggere gli avvisi di conformità delle comunicazioni (anteprima)
 
@@ -58,7 +58,7 @@ Per un elenco completo dei filtri e dettagli sul campo, vedere [Filters](communi
 
 5. Selezionare il controllo **filtri** per aprire la pagina dei dettagli sui **filtri** .
 
-6. Selezionare una o più caselle di controllo per abilitare i filtri per questi avvisi.
+6. Selezionare una o più caselle di controllo per abilitare i filtri per questi avvisi. È possibile scegliere tra numerosi filtri, tra cui *Data*, *mittente*, *oggetto/titolo*, *classificatori*e altro ancora.
 
 7. Se si desidera salvare il filtro selezionato come filtro predefinito, fare clic su **Salva con nome predefinito**. Se si desidera utilizzare questo filtro come filtro salvato, fare clic su **fine**.
 

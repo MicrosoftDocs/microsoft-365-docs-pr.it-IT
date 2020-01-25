@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: b5f6ae8d7047ab36867938b65bf546a5ffb7b0a6
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6a76a557ef391462db09d9b0b3d409ba2b4a042c
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860016"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260064"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>Attestazione Cloud Security Alliance (CSA) STAR
 
@@ -41,7 +42,8 @@ Microsoft Azure e Microsoft Intune hanno ricevuto l'attestazione CSA STAR. L'att
 - Cloud App Security
 - Graph
 - Intune
-- Servizio cloud Microsoft Flow come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Microsoft Managed Desktop
+- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365 
 - Power BI
 
@@ -77,6 +79,6 @@ La CCM corrisponde ai framework dei controlli, alle normative e agli standard di
 - [Framework di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/0/0/F/00F2766F-00E5-4235-8CE8-90FE657D768F/CSA-STAR-Attestation-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/0/0/F/00F2766F-00E5-4235-8CE8-90FE657D768F/CSA-STAR-Attestation-Compliance.pdf).

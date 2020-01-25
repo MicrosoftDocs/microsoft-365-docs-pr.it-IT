@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usare la funzionalità di ricerca e rimozione nel Centro sicurezza e conformità di Office 365 per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: 0c2b54b8e2d18a91075c577d65d7023e3b1d2c44
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "39218861"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41259974"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Cercare i messaggi di posta elettronica ed eliminarli dall'organizzazione di Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "39218861"
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- Per creare ed eseguire una ricerca di contenuto, è necessario essere membro del gruppo di ruoli **Gestione di eDiscovery** o disporre del ruolo di gestione della **Ricerca di conformità**. Per eliminare i messaggi, è necessario essere membro del gruppo di ruoli **Gestione dell’organizzazione** o disporre del ruolo di gestione **Search And Purge**. Per informazioni su come aggiungere gli utenti a un gruppo di ruoli, vedere [Dare accesso al Centro sicurezza e conformità agli utenti](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- Per creare ed eseguire una ricerca di contenuto, è necessario essere membro del gruppo di ruoli **Gestione di eDiscovery** o disporre del ruolo di gestione della **Ricerca di conformità**. Per eliminare i messaggi, è necessario essere membro del gruppo di ruoli **Gestione dell’organizzazione** o disporre del ruolo di gestione **Search And Purge**. Per informazioni su come aggiungere gli utenti a un gruppo di ruoli, vedere [Assegnare autorizzazioni di eDiscovery nel Centro sicurezza e conformità](assign-ediscovery-permissions.md).
     
 - Per eliminare i messaggi, è necessario usare PowerShell in Centro sicurezza e conformità. Per informazioni su come connettersi, vedere il [Passaggio 2](#step-2-connect-to-security--compliance-center-powershell).
     

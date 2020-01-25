@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come proteggere i PC Windows 10 dopo aver configurato Microsoft 365 business.
-ms.openlocfilehash: 47598ef0b5cba60a6d5e53973cc8b88584c62d05
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: 3c558132f1e370a19735a38f9caa09ddb8e1f9f4
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837320"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515587"
 ---
 # <a name="secure-windows-10-computers"></a>Proteggere i computer Windows 10
 
@@ -34,12 +34,12 @@ Guardare questo video per una panoramica su come impostare i criteri per protegg
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
 
-Se è stato trovato utile questo video, vedere la [serie completa di formazione per le piccole imprese e quelle nuove a Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="to-secure-your-windows-10-pcs"></a>Per proteggere i PC Windows 10
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com) utilizzando le credenziali di amministratore globale. 
-2. Sulla barra di spostamento sinistra, selezionare **installazione** e quindi, in **sing-in e sicurezza**, scegliere **Proteggi i computer Windows 10**. Scegliere **View** per iniziare.
+2. Sulla barra di spostamento sinistra, selezionare **installazione** e quindi, in **accesso e sicurezza**, scegliere **Proteggi i computer Windows 10**. Scegliere **View** per iniziare.
 3. Nella pagina **secure your Windows 10 Computers** leggere tutte le informazioni per capire cosa si sta attivando e quali sono le conseguenze dell'utente.
 
     Nella parte superiore della pagina, scegliere **inizia**.

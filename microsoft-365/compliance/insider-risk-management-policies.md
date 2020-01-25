@@ -10,12 +10,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bf3666d4ad44b4fcf17ec93a1e425ffa0f12f766
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 7e882b19b69380d2787c9b1784ad3dadce5c1ce9
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259804"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515687"
 ---
 # <a name="insider-risk-management-policies-preview"></a>Criteri di gestione dei rischi Insider (Preview)
 
@@ -36,19 +36,25 @@ Il **dashboard dei criteri** consente di visualizzare rapidamente i criteri dell
 
 ## <a name="policy-templates"></a>Modelli dei criteri
 
-I modelli di gestione dei rischi Insider sono condizioni di criteri predefinite che definiscono i tipi di indicatori di rischio monitorati da un criterio. Ogni criterio deve disporre di un modello assegnato nella procedura guidata per la creazione dei criteri prima di creare il criterio. Sono disponibili i modelli seguenti:
+I modelli di gestione dei rischi Insider sono condizioni di criteri predefinite che definiscono i tipi di indicatori di rischio monitorati da un criterio. Ogni criterio deve disporre di un modello assegnato nella procedura guidata per la creazione dei criteri prima di creare il criterio. Quando si crea un nuovo criterio di rischio Insider, è possibile scegliere uno dei modelli seguenti.
 
-- Disattivazione del **furto dei dati**degli impiegati: quando i dipendenti lasciano l'organizzazione, esistono indicatori di rischio specifici in genere associati al furto dei dati da parte dei dipendenti. Questo modello di criteri consente di assegnare una priorità a questi indicatori e di individuare gli avvisi e i punti di interesse per questa area di rischio Il furto dei dati per i dipendenti in partenza può includere il download di file da SharePoint Online, la copia di file su dispositivi portatili come unità USB, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali vicino alle dimissioni di lavoro e date di fine. Questo modello privilegia gli indicatori di rischio relativi a queste attività e la correlazione con lo stato occupazionale dei dipendenti.
+### <a name="departing-employee-data-theft"></a>Furto dei dati del dipendente in partenza
 
-    >[!IMPORTANT]
-    >Quando si utilizza questo modello, è necessario configurare un connettore Microsoft 365 HR per importare periodicamente le informazioni sulle dimissioni e la data di fine per i dipendenti dell'organizzazione. Per informazioni dettagliate su come configurare il connettore Microsoft 365 HR per l'organizzazione, vedere l'argomento [Import Data with the HR Connector](import-hr-data.md) .
+Quando i dipendenti lasciano la propria organizzazione, esistono indicatori di rischio specifici tipicamente associati al furto dei dati da parte dei dipendenti. Questo modello di criteri consente di assegnare una priorità a questi indicatori e di individuare gli avvisi e i punti di interesse per questa area di rischio Il furto dei dati per i dipendenti in partenza può includere il download di file da SharePoint Online, la copia di file su dispositivi portatili come unità USB, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali vicino alle dimissioni di lavoro e date di fine. Questo modello privilegia gli indicatori di rischio relativi a queste attività e la correlazione con lo stato occupazionale dei dipendenti.
 
-- **Perdite di dati**: la protezione dei dati e la prevenzione della perdita di dati è una sfida costante per la maggior parte delle organizzazioni, in particolare con la rapida espansione dei nuovi dati creati da dipendenti, dispositivi e servizi. I dipendenti sono autorizzati a creare, archiviare e condividere informazioni tra i servizi e i dispositivi che rendono la gestione delle perdite di dati sempre più complesse e difficili. Le perdite di dati possono includere la sovracondivisione accidentale di informazioni all'esterno dell'organizzazione o il furto di dati con intenti dolosi. Questo modello determina la priorità del rilevamento in tempo reale dei download di dati di SharePoint online sospetti, la condivisione di file e cartelle, la copia di file su dispositivi portatili, come unità USB, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali.
+>[!IMPORTANT]
+>Quando si utilizza questo modello, è necessario configurare un connettore Microsoft 365 HR per importare periodicamente le informazioni sulle dimissioni e la data di fine per i dipendenti dell'organizzazione. Per informazioni dettagliate su come configurare il connettore Microsoft 365 HR per l'organizzazione, vedere l'argomento [Import Data with the HR Connector](import-hr-data.md) .
 
-    >[!IMPORTANT]
-    >Quando si utilizza questo modello, è necessario configurare almeno un criterio di prevenzione della perdita di dati (DLP) per definire le informazioni riservate nell'organizzazione. Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'argomento [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) .
+### <a name="data-leaks"></a>Perdite di dati
 
-- **Lingua offensiva nel messaggio di posta elettronica**: il rilevamento e l'azione per impedire comportamenti offensivi e abusivi sono una componente fondamentale della prevenzione dei rischi. I classificatori di lingua offensiva incorporati in Microsoft 365 possono analizzare i messaggi di posta elettronica inviati dalle cassette postali di Exchange Online nell'organizzazione per diversi tipi di problemi di conformità. Questi classificatori utilizzano una combinazione di intelligenza artificiale e parole chiave per identificare la lingua nella posta elettronica che potrebbe violare i criteri di anti-molestia. Utilizzare questo modello per creare rapidamente un criterio che utilizza questi classificatori per rilevare automaticamente il contenuto del messaggio di posta elettronica che può essere considerato abusivo o offensivo. Insider Risk Management utilizza classificatori che analizzano i messaggi di posta elettronica inviati per i termini e i sentimenti di lingua inglese per il linguaggio offensivo.
+La protezione dei dati e la prevenzione della perdita di dati è una sfida costante per la maggior parte delle organizzazioni, in particolare con la rapida crescita dei nuovi dati creati da dipendenti, dispositivi e servizi. I dipendenti sono autorizzati a creare, archiviare e condividere informazioni tra i servizi e i dispositivi che rendono la gestione delle perdite di dati sempre più complesse e difficili. Le perdite di dati possono includere la sovracondivisione accidentale di informazioni all'esterno dell'organizzazione o il furto di dati con intenti dolosi. Questo modello determina la priorità del rilevamento in tempo reale dei download di dati di SharePoint online sospetti, la condivisione di file e cartelle, la copia di file su dispositivi portatili, come unità USB, la stampa di file e la copia dei dati in servizi di archiviazione e messaggistica cloud personali.
+
+>[!IMPORTANT]
+>Quando si utilizza questo modello, è necessario configurare almeno un criterio di prevenzione della perdita di dati (DLP) per definire le informazioni riservate nell'organizzazione. Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'argomento [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) .
+
+### <a name="offensive-language-in-email"></a>Lingua offensiva nel messaggio di posta elettronica
+
+Il rilevamento e l'esecuzione di operazioni per impedire comportamenti offensivi e abusivi sono una componente fondamentale della prevenzione dei rischi. I classificatori di lingua offensiva incorporati in Microsoft 365 possono analizzare i messaggi di posta elettronica inviati dalle cassette postali di Exchange Online nell'organizzazione per diversi tipi di problemi di conformità. Questi classificatori utilizzano una combinazione di intelligenza artificiale e parole chiave per identificare la lingua nella posta elettronica che potrebbe violare i criteri di anti-molestia. Utilizzare questo modello per creare rapidamente un criterio che utilizza questi classificatori per rilevare automaticamente il contenuto del messaggio di posta elettronica che può essere considerato abusivo o offensivo. Insider Risk Management utilizza classificatori che analizzano i messaggi di posta elettronica inviati per i termini e i sentimenti di lingua inglese per il linguaggio offensivo.
 
 ## <a name="monitoring-windows"></a>Monitoraggio di Windows
 

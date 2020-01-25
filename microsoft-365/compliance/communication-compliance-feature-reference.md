@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 886ede889e1843c7f7e94b89aeffb89d59a0120a
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 64514c8c46cbc2ef35746e052e1ffb87831933c2
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111850"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515787"
 ---
 # <a name="communication-compliance-feature-reference-preview"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni (anteprima)
 
@@ -84,6 +84,16 @@ Con i criteri di conformità della comunicazione, è possibile scegliere di anal
     - [Connettore dati personalizzato](archiving-third-party-data.md)
 
 Prima di poter assegnare il connettore a un criterio di conformità della comunicazione, è necessario configurare un connettore di terze parti per l'organizzazione Microsoft 365. La sezione origini di terze **parti** della procedura guidata per la conformità dei criteri di comunicazione Visualizza solo i connettori di terze parti attualmente configurati.
+
+## <a name="transitioning-from-supervision-in-office-365"></a>Transizione dalla vigilanza in Office 365
+
+Le organizzazioni che utilizzano i criteri di supervisione in Office 365 e la pianificazione della transizione ai criteri di conformità della comunicazione in Microsoft 365 devono comprendere questi importanti punti:
+
+- Entrambe le soluzioni possono essere utilizzate in modalità affiancata nell'organizzazione, ma i criteri utilizzati in ogni soluzione devono avere nomi di criteri univoci. I gruppi e i dizionari di parole chiave personalizzati possono essere condivisi tra le soluzioni durante un periodo di transizione.
+- I messaggi salvati in supervisione nelle corrispondenze di criteri di Office 365 non possono essere spostati o condivisi nella conformità della comunicazione in Microsoft 365.
+- La soluzione di supervisione in Office 365 sarà completamente sostituita dalla soluzione di conformità della comunicazione in Microsoft 365. È consigliabile creare nuovi criteri di conformità alla comunicazione con le stesse impostazioni dei criteri di supervisione esistenti per l'utilizzo dei nuovi miglioramenti di analisi e correzione. Quando si esegue la transizione alla conformità alla comunicazione in Microsoft 365, è consigliabile pianificare l'esportazione dei dati di Reporting dalla supervisione in Office 365 se sono presenti requisiti per i criteri di conservazione della conformità interni.
+
+Per informazioni sulla pensione per la vigilanza in Office 365, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per informazioni dettagliate.
 
 ## <a name="policy-settings"></a>Impostazioni dei criteri
 
@@ -219,6 +229,7 @@ I filtri di conformità di comunicazione consentono di filtrare e ordinare i mes
 | **Subject/title** | L'oggetto del messaggio o il titolo della chat. |
 | **Tag** | Tag assegnati a un messaggio, che può essere *discutibile*, *conforme*o *non conforme*. |
 | **Escalation a** | Il nome utente della persona inclusa come parte di un'azione di escalation dei messaggi. |
+| **Classificatori** | Nome dei classificatori incorporati e personalizzati che si applicano al messaggio. Alcuni esempi includono il *linguaggio offensivo*, la *molestia mirata*, la *profanità*, la *minaccia*e altro ancora.
 
 ## <a name="alert-policies"></a>Criteri di avviso
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai prodotti Microsoft.
-ms.openlocfilehash: 2bc7ccc4c6c236c0c730ac3fc651701d9a76bedf
-ms.sourcegitcommit: 40e83b22b74db8e37d65e0988d4c11de3aa541b2
+ms.openlocfilehash: db63f1b5cba2166ae8e4f922b84672677b52c4e9
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41022012"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515867"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Collaborare con Microsoft Compliance Manager (anteprima)
 
@@ -72,13 +72,25 @@ Per aggiungere o rimuovere utenti da ruoli Compliance Manager.
 
 ### <a name="controlling-automatic-secure-score-updates"></a>Controllo degli aggiornamenti automatici del Punteggio sicuro
 
-Gli aggiornamenti del Punteggio sicuro possono essere attivati automaticamente per tutte le azioni, possono essere disattivati per tutte le azioni oppure possono essere impostati per azione individuale.
+Gli aggiornamenti del Punteggio sicuro possono essere attivati automaticamente per tutte le azioni, disattivate per tutte le azioni o impostate per azione individuale attenendosi alla seguente procedura.
 
 1. Accedere al [Service Trust Portal](https://servicetrust.microsoft.com) con l'account di amministratore globale.
 
-2. Sulla barra dei menu del Service Trust Portal in alto, selezionare **amministratore** e quindi scegliere **Impostazioni**.
+2. Nella barra dei menu del servizio di attendibilità del Service Top, in **altro**, selezionare **amministratore** e quindi scegliere **Impostazioni**.
 
-4. Nella scheda **Punteggio sicuro** selezionare il pulsante appropriato per l'impostazione desiderata.
+3. Nella scheda **Punteggio sicuro** selezionare il pulsante corrispondente per **attivarla per tutte le azioni**, disattivarla **per tutte le azioni**o **impostare per azione.**
+
+Se si sceglie **imposta per azione,** eseguire i passaggi aggiuntivi per abilitare gli aggiornamenti dei punti di sicurezza per le singole azioni:
+
+4. Scegliere **Compliance Manager** dal menu in alto (Nota: non selezionare "Compliance Manager (Classic)").
+
+5. Selezionare **gestione tenant** nell'angolo in alto a destra dello schermo.
+
+6. Nel riquadro **azioni cliente** individuare l'azione desiderata con puntini di sospensione (**...**) nella colonna **azioni coinvolte** . Fare clic sui puntini di ellisse e selezionare **modifica.**
+
+7. Cambiare l'opzione attiva/disattiva **aggiornamento continuo Punteggio** **su attivato.**
+
+8. Selezionare **Salva.** Secure Score il monitoraggio continuo è ora attivato per tale azione.
 
 **Nota:** Solo l'amministratore globale può abilitare o disattivare gli aggiornamenti automatici per tutte le azioni. L'amministratore di Compliance Manager può abilitare gli aggiornamenti automatici per singole azioni, ma non per tutte le azioni a livello globale.
 

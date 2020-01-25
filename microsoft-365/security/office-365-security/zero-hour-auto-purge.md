@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-hour auto Purge (ZAP) è una funzionalità di protezione della posta elettronica che consente di rilevare i messaggi con posta indesiderata o malware che sono già stati recapitati alle cassette postali degli utenti e quindi di eseguire il rendering del contenuto dannoso innocuo. La modalità di utilizzo di ZAP dipende dal tipo di contenuto dannoso rilevato.
-ms.openlocfilehash: 87d0837b74606a57c7a4aaee3150f70449b09b81
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: b2e2fb8fb0786f921b7c5330e92df519b0877d30
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238383"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515897"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Zero-Hour Auto Purge: protezione contro la posta indesiderata e il malware
 
@@ -36,7 +36,7 @@ ZAP è disponibile con la protezione Exchange Online predefinita inclusa con qua
 
 Office 365 aggiorna le firme di malware e del motore di protezione da posta indesiderata in tempo reale su base giornaliera. Tuttavia, gli utenti possono comunque ottenere messaggi dannosi recapitati alle cassette postali per una serie di motivi, incluso se il contenuto è armato dopo essere stato recapitato agli utenti. ZAP risolve questo monitoraggio continuamente gli aggiornamenti alle firme di posta indesiderata e malware di Office 365. ZAP è in grado di trovare e rimuovere i messaggi precedentemente recapitati che sono già presenti nelle cassette postali degli utenti.
 
-L'azione ZAP è senza problemi per l'utente della cassetta postale; non vengono notificati se viene spostato un messaggio di posta elettronica. Il messaggio non deve superare i 2 giorni.
+L'azione ZAP è senza problemi per l'utente della cassetta postale; non vengono notificati se viene spostato un messaggio di posta elettronica. 
 
 Gli elenchi consentiti, [le regole del flusso di posta](use-transport-rules-to-configure-bulk-email-filtering.md) (note anche come regole di trasporto) e le regole degli utenti finali o i filtri aggiuntivi hanno la precedenza su Zap.
 
@@ -67,8 +67,8 @@ ZAP non sposterà alcun messaggio in quarantena che è in fase di analisi del re
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Come vedere se ZAP ha spostato il messaggio
 
-Per determinare se il messaggio è stato spostato da ZAP, è possibile utilizzare il [rapporto sullo stato di protezione di minacce](view-email-security-reports.md#threat-protection-status-report) o l' [esploratore di minacce (e i rilevamenti in tempo reale)](threat-explorer.md).
-
+Per determinare se il messaggio è stato spostato da ZAP, è possibile utilizzare il [rapporto sullo stato di protezione di minacce](view-email-security-reports.md#threat-protection-status-report) o l' [esploratore di minacce (e i rilevamenti in tempo reale)](threat-explorer.md). Si noti che, come azione di sistema, ZAP non è connesso nei registri di controllo delle cassette postali di Exchange. 
+ 
 ## <a name="disable-zap"></a>Disabilitare ZAP
 
 Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di Exchange Online Protection, vedere [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
@@ -114,6 +114,16 @@ Le regole create dagli amministratori (regole del flusso di posta) o blocca e Co
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>Cosa succede se un messaggio viene spostato in un'altra cartella (ad esempio, la regola di posta in arrivo)?
 
 ZAP continua a funzionare in questo caso, a meno che il messaggio non sia stato eliminato o sia indesiderato.
+
+### <a name="does-zap-change-the-email-header"></a>ZAP cambia l'intestazione del messaggio di posta elettronica?
+
+Un'azione ZAP non apporta modifiche all'intestazione di un messaggio di posta elettronica.
+
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>In che modo ZAP influenza le cassette postali in attesa?
+
+ZAP non rimuoverà i messaggi dalle cassette postali in attesa e quindi non prenderà una mossa per l'azione di quarantena sui messaggi. I messaggi verranno comunque spostati nella cartella di posta indesiderata se specificati dal criterio. 
+
+[Fare clic qui per ulteriori informazioni sugli appigli delle cassette postali.](https://docs.microsoft.com/exchange/policy-and-compliance/holds/holds?view=exchserver-2019)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

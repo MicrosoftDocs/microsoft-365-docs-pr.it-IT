@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 67cb8cd6a7320f0b2ff79566be4cf6c6fa3f67a6
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: efedbdd8230b5fac81b59ca51c0fe863ab4f0c2a
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "39233739"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260114"
 ---
 # <a name="compliance-offerings-isoiec-270012013-information-security-management-standards"></a>Offerte di conformità: Standard di gestione della sicurezza delle informazioni ISO/IEC 27001:2013
 
@@ -43,7 +44,8 @@ Per informazioni sui vantaggi di ISO/IEC 27001 in Microsoft Cloud, [scaricare il
 - Graph
 - Bot per i servizi sanitari
 - Intune
-- Servizio cloud Microsoft Flow come servizio autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- Microsoft Managed Desktop
+- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - [Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Germany
 - Mapping dei servizi OMS
@@ -60,7 +62,7 @@ Ciclo di controllo: i servizi cloud Microsoft vengono controllati almeno una vol
 
 ### <a name="azure"></a>Azure
 
-- [Azure, Cloud App Security, Flow, Genomica, Graph, Bot per i servizi sanitari, Intune, Mapping dei servizi OMS, PowerApps, Power BI, Stream e data center Microsoft - Certificato ISO 27001](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure, Cloud App Security, Flow, Genomica, Graph, Bot per i servizi sanitari, Intune, Microsoft Managed Desktop, Mapping dei servizi OMS, PowerApps, Power BI, Stream e data center Microsoft - Certificato ISO 27001](https://go.microsoft.com/fwlink/p/?linkid=2078342)
 
 ### <a name="office-365"></a>Office 365
 
@@ -88,7 +90,7 @@ Ciclo di controllo: i servizi cloud Microsoft vengono controllati almeno una vol
 
 ### <a name="azure"></a>Azure
 
-- [Azure, Cloud App Security, Flow, Genomica, Graph, Bot per i servizi sanitari, Intune, Mapping dei servizi OMS, PowerApps, Power BI, Stream e data center Microsoft - Report di valutazione di controllo ISO 27001 e 27018](https://go.microsoft.com/fwlink/p/?linkid=2078010)
+- [Azure, Cloud App Security, Flow, Genomica, Graph, Bot per i servizi sanitari, Intune, Microsoft Managed Desktop, Mapping dei servizi OMS, PowerApps, Power BI, Stream e data center Microsoft - Report di valutazione di controllo ISO 27001 e 27018](https://go.microsoft.com/fwlink/p/?linkid=2078010)
 - [Azure, Cloud App Security, Flow, Genomica, Graph, Bot per i servizi sanitari, Intune, Mapping dei servizi OMS, PowerApps, Power BI, Stream e data center Microsoft - Statement of Applicability (SOA) per ISO 27001 e 27018](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ### <a name="office-365"></a>Office 365
@@ -156,4 +158,4 @@ Sì. Se l'azienda richiede la certificazione ISO/IEC 27001 per le implementazion
 
 ## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf).

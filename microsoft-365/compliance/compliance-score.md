@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Il Punteggio di conformità di Microsoft aiuta le organizzazioni a semplificare e automatizzare le valutazioni dei rischi e suggerisce azioni consigliate per aiutare a gestire i rischi.
-ms.openlocfilehash: 27720412ee8d2b03869b96a1ff9fce68b2fe6eb4
-ms.sourcegitcommit: 5fc0f2cd1f2596fd10299333c826c501936dcd98
+ms.openlocfilehash: 8a523878cb003e1cc676ea65d69f402ddf056e84
+ms.sourcegitcommit: e872676ec98036a50d3a0cb5071109ea5f5a7ae5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41261860"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41515677"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Punteggio di conformità Microsoft (anteprima)
 
@@ -141,4 +141,4 @@ Informazioni su come [creare i gruppi in Compliance Manager](working-with-compli
 
 ## <a name="next-step-begin-setup"></a>Passaggio successivo: avviare l'installazione
 
-Accedere, configurare le autorizzazioni e informazioni sul dashboard del Punteggio di conformità all' [installazione del Punteggio di conformità](compliance-score-setup.md).
+Informazioni su come eseguire l'accesso, impostare le autorizzazioni e configurare gli aggiornamenti e le visualizzazioni del dashboard all' [installazione del Punteggio di conformità](compliance-score-setup.md).

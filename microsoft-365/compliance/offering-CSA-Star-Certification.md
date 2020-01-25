@@ -11,12 +11,13 @@ manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: c3318be31335c9c9250b056e5972bb1c50ffbcbd
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 56a1836d4224534a8959816578869f4a809ec996
+ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39860006"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "41260054"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>Certificazione Cloud Security Alliance (CSA) STAR
 
@@ -46,6 +47,7 @@ Per informazioni su come accelerare la distribuzione della certificazione CSA ST
 - Graph
 - Bot per i servizi sanitari
 - Intune
+- Microsoft Managed Desktop
 - Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Mapping dei servizi OMS
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
@@ -54,7 +56,7 @@ Per informazioni su come accelerare la distribuzione della certificazione CSA ST
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 
-- [Azure, Cloud App Security, Flow, Genomica, Graph, Bot per i servizi sanitari, Intune, Mapping dei servizi OMS, PowerApps, Power BI, Stream - Certificazione CSA STAR](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure, Cloud App Security, Flow, Genomica, Graph, Bot per i servizi sanitari, Intune, Microsoft Managed Desktop, Mapping dei servizi OMS, PowerApps, Power BI, Stream - Certificazione CSA STAR](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -89,6 +91,6 @@ Azure, Cloud App Security, Intune e Power BI hanno ottenuto la certificazione Go
 - [Quadro di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf).
