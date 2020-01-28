@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b6f24cb1afcefc9ddbe468530855603e7ee0f484
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 73c1d7be6da17ae29c6ea8423c879286714fe8f1
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804189"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558603"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -51,7 +51,7 @@ Come indicato nell'OST, Microsoft è conforme a tutte le leggi e normative appli
 
 Di seguito sono riportati alcuni passaggi da eseguire per prepararsi per l'CCPA:
 
-- Iniziare a sfruttare la valutazione per il GDPR in Compliance Manager nell'ambito del programma sulla privacy del CCPA.
+- Iniziare a sfruttare la valutazione di GDPR in [Score Compliance](compliance-score.md) come parte del programma di privacy di CCPA.
 - Stabilire un processo per rispondere in modo efficiente alle richieste di accesso del soggetto dei dati (DSARs) utilizzando lo strumento richieste degli interessati.
 - Impostare etichette e criteri per individuare, classificare ed etichettare e proteggere i dati sensibili con Microsoft Information Protection.
 - Usare le funzionalità di crittografia della posta elettronica per controllare ulteriormente le informazioni riservate.
@@ -97,4 +97,4 @@ Il CCPA richiede attività regolamentate che raccolgono, trasferiscono e vendono
 - [Guida introduttiva a CCPA](https://info.microsoft.com/ww-landing-Five-tips-to-help-you-prepare-for-the-California-Consumer-Privacy-Act.html)
 - [Richieste del soggetto dei dati e GDPR](gdpr-data-subject-requests.md)
 - [Domande frequenti sul California Consumer Privacy Act (CCPA)](ccpa-faq.md)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: eacbb5577c070ce463ad8e17ba6d0d19a1d8736c
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: 3d0bba3c75bda77cbffbbd515215a10d579755be
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40971360"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558563"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Eseguire la migrazione delle ricerche e delle esenzioni eDiscovery legacy al centro conformità di Microsoft 365
 
@@ -26,7 +26,7 @@ Per aiutare i clienti a sfruttare le funzionalità nuove e migliorate, in questo
 > [!NOTE]
 > Poiché esistono numerosi scenari diversi, in questo articolo vengono fornite indicazioni generali per le ricerche di transizione e vengono conservate in un caso di eDiscovery di base nel centro conformità di Microsoft 365. L'utilizzo dei casi di eDiscovery non è sempre necessario, ma aggiunge un ulteriore livello di sicurezza consentendo di assegnare le autorizzazioni per controllare chi ha accesso ai casi di eDiscovery nell'organizzazione.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per eseguire i comandi di PowerShell descritti in questo articolo, è necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & conformità di Office 365. È inoltre necessario essere membri del gruppo di ruoli Gestione individuazione nell'interfaccia di amministrazione di Exchange.
 
@@ -75,7 +75,7 @@ L'output di questi due comandi sarà analogo al seguente:
 ![Esempio di output di PowerShell dall'utilizzo di Get-MailboxSearch per una singola ricerca](media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> La durata del blocco sul posto in questo esempio è indefinita (*ItemHoldPeriod: Unlimited*). Questo è tipico degli scenari di eDiscovery e di indagine legale. Se la durata del blocco ha un valore diverso da quello indefinito, è probabile che il blocco venga utilizzato per mantenere il contenuto in uno scenario di conservazione. Invece di usare i cmdlet eDiscovery in Office 365 Security & Compliance Center PowerShell per gli scenari di conservazione, è consigliabile utilizzare [New-HoldCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancepolicy) e [New-HoldComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-holdcompliancerule) per mantenere il contenuto. Il risultato dell'utilizzo di questi cmdlet sarà analogo all'utilizzo di **New-CaseHoldPolicy** e **New-CaseHoldRule**, ma è possibile specificare un periodo di conservazione e un'azione di conservazione, ad esempio l'eliminazione del contenuto dopo la scadenza del periodo di conservazione. Inoltre, l'utilizzo dei cmdlet di conservazione non richiede l'associazione dell'esenzione di conservazione a un caso di eDiscovery.
+> La durata del blocco sul posto in questo esempio è indefinita (*ItemHoldPeriod: Unlimited*). Questo è tipico degli scenari di eDiscovery e di indagine legale. Se la durata del blocco ha un valore diverso da quello indefinito, è probabile che il blocco venga utilizzato per mantenere il contenuto in uno scenario di conservazione. Invece di usare i cmdlet eDiscovery in Office 365 Security & Compliance Center PowerShell per gli scenari di conservazione, è consigliabile utilizzare [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) e [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) per mantenere il contenuto. Il risultato dell'utilizzo di questi cmdlet sarà analogo all'utilizzo di **New-CaseHoldPolicy** e **New-CaseHoldRule**, ma è possibile specificare un periodo di conservazione e un'azione di conservazione, ad esempio l'eliminazione del contenuto dopo la scadenza del periodo di conservazione. Inoltre, l'utilizzo dei cmdlet di conservazione non richiede l'associazione dell'esenzione di conservazione a un caso di eDiscovery.
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>Passaggio 4: creare un caso nel centro conformità di Microsoft 365
 
@@ -143,7 +143,7 @@ La ricerca creata al passaggio 7 è elencata nella scheda **ricerche** del caso 
 
 Se si esegue la migrazione di una ricerca eDiscovery sul posto ma non la si associa a un caso di eDiscovery, questa verrà elencata nella pagina Ricerca contenuto del centro conformità di Microsoft 365.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Per ulteriori informazioni su eDiscovery sul posto & conserva nell'interfaccia di amministrazione di Exchange, vedere:
   

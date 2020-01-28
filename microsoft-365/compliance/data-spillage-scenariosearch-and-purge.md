@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare Office 365 eDiscovery e gli strumenti di ricerca per gestire e rispondere a un evento di fuoriuscita dei dati nell'organizzazione.
-ms.openlocfilehash: 2c34a632ce55003c9add88d2bced589dd1becf35
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 06c02a9d5f31f8b7d6845214c10a150b6cacf379
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259422"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558363"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie di soluzioni di eDiscovery: scenario di fuoriuscita dei dati-ricerca ed eliminazione
 
@@ -54,7 +54,7 @@ Ecco come gestire un problema di fuoriuscita dei dati:
     
 - Per creare un caso, è necessario essere membri del gruppo di ruoli di eDiscovery Manager o essere membri di un gruppo di ruoli personalizzato assegnato al ruolo di gestione dei casi. Se non si è membri, chiedere a un amministratore di Office 365 di [aggiungersi al gruppo di ruoli eDiscovery Manager](assign-ediscovery-permissions.md).
     
-- Per creare ed eseguire una ricerca di contenuto, è necessario essere un membro del gruppo di ruoli di gestione di eDiscovery o disporre del ruolo di gestione della ricerca di conformità. Per eliminare i messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione o disporre del ruolo di gestione di ricerca ed eliminazione. Per informazioni sull'aggiunta di utenti a un gruppo di ruoli, vedere [assign eDiscovery Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+- Per creare ed eseguire una ricerca di contenuto, è necessario essere un membro del gruppo di ruoli di gestione di eDiscovery o disporre del ruolo di gestione della ricerca di conformità. Per eliminare i messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione o disporre del ruolo di gestione di ricerca ed eliminazione. Per informazioni su come aggiungere gli utenti a un gruppo di ruoli, vedere [Assegnare autorizzazioni di eDiscovery nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
     
 - Per eseguire una ricerca nelle attività di eDiscovery del registro di controllo di Office 365 nel passaggio 8, è necessario che il controllo sia attivato per l'organizzazione. È possibile cercare le attività eseguite negli ultimi 90 giorni. Per ulteriori informazioni su come abilitare e utilizzare il controllo, vedere la sezione [controllo del processo di analisi del versamento dei dati](#auditing-the-data-spillage-investigation-process) nel passaggio 8. 
     
@@ -124,7 +124,7 @@ Per ulteriori informazioni sull'eventuale condivisione di messaggi di posta elet
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Passaggio 6: preparare le cassette postali
 
-Dopo aver esaminato e convalidato che i risultati della ricerca contengono solo i messaggi che devono essere eliminati, è necessario raccogliere un elenco degli indirizzi di posta elettronica delle cassette postali interessate da utilizzare nel passaggio 7 quando si esegue il comando **Search-Mailbox-DeleteContent** . Potrebbe anche essere necessario preparare le cassette postali prima di poter eliminare definitivamente i messaggi di posta elettronica a seconda che il ripristino di un singolo elemento sia abilitato nelle cassette postali che contengono i dati riversati o se una di queste cassette postali è in attesa.
+Dopo aver esaminato e convalidato che i risultati della ricerca contengono solo i messaggi che devono essere eliminati, è necessario raccogliere un elenco degli indirizzi di posta elettronica delle cassette postali interessate da utilizzare nel passaggio 7 quando si eliminano i dati rovesciati. Potrebbe anche essere necessario preparare le cassette postali prima di poter eliminare definitivamente i messaggi di posta elettronica a seconda che il ripristino di un singolo elemento sia abilitato nelle cassette postali che contengono i dati riversati o se una di queste cassette postali è in attesa.
   
 ### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>Ottenere un elenco di indirizzi delle cassette postali con dati rovesciati
 
@@ -168,9 +168,9 @@ Assicurarsi di ripristinare le configurazioni precedenti della cassetta postale 
 
 ## <a name="step-7-permanently-delete-the-spilled-data"></a>Passaggio 7: eliminare definitivamente i dati versati
 
-Utilizzando i percorsi delle cassette postali raccolte e preparate nel passaggio 6 e la query di ricerca creata e affinata nel passaggio 3 per trovare i messaggi di posta elettronica che contengono i dati rovesciati, è ora possibile eliminare definitivamente i dati versati.  Come spiegato in precedenza, per eliminare i messaggi, è necessario essere membri del gruppo di ruoli Gestione organizzazione o assegnare il ruolo di gestione di ricerca ed eliminazione. Per informazioni sull'aggiunta di utenti a un gruppo di ruoli, vedere [assign eDiscovery Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+Utilizzando i percorsi delle cassette postali raccolte e preparate nel passaggio 6 e la query di ricerca creata e affinata nel passaggio 3 per trovare i messaggi di posta elettronica che contengono i dati rovesciati, è ora possibile eliminare definitivamente i dati versati.  Come spiegato in precedenza, per eliminare i messaggi, è necessario essere membri del gruppo di ruoli Gestione organizzazione o assegnare il ruolo di gestione di ricerca ed eliminazione. Per informazioni su come aggiungere gli utenti a un gruppo di ruoli, vedere [Assegnare autorizzazioni di eDiscovery nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
-Per eliminare i messaggi versati, vedere i passaggi 2 & 3 per [cercare ed eliminare i messaggi di posta elettronica nell'organizzazione di Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
+Per eliminare i messaggi versati, vedere i passaggi 2 & 3 per [cercare ed eliminare i messaggi di posta elettronica](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Passaggio 8: verificare, fornire una prova di eliminazione e controllo
 

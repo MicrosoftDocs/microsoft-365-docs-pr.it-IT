@@ -9,26 +9,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: fa10c4168720565770ec0a3bc4bb06486155c3cc
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: cf0b69d691b3071ee35119f67e389e49ccbb13ad
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970332"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558613"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
 ## <a name="overview"></a>Panoramica
 
-La traccia dei messaggi nel centro sicurezza & conformità segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
+La traccia dei messaggi nel centro sicurezza & conformità di Office 365 segue i messaggi di posta elettronica durante il viaggio nell'organizzazione di Exchange Online. È possibile determinare se un messaggio è stato ricevuto, rifiutato, posticipato o recapitato dal servizio. Mostra inoltre quali azioni sono state eseguite sul messaggio prima del raggiungimento dello stato finale.
+
+La traccia dei messaggi nel centro sicurezza & conformità migliora la traccia del messaggio originale disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni contenute nella traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti sull'accaduto ai messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
 
 > [!NOTE]
-> Per eseguire la traccia dei messaggi, è necessario che l'amministratore sia membro del gruppo Gestione organizzazione, gestione conformità o supporto tecnico.
-
-La traccia dei messaggi nel centro sicurezza & conformità migliora quando la traccia dei messaggi è disponibile nell'interfaccia di amministrazione di Exchange (EAC). È possibile utilizzare le informazioni della traccia dei messaggi per rispondere in modo efficiente alle domande degli utenti su cosa è successo ai propri messaggi, risolvere i problemi relativi al flusso di posta e convalidare le modifiche dei criteri.
-
-> [!NOTE]
-> Nei risultati vengono visualizzati solo i primi 50000 messaggi. Il cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in PowerShell di Exchange Online o Exchange Online Protection PowerShell restituisce tutti i messaggi nei risultati.
+> • Per eseguire una traccia dei messaggi, è necessario essere un membro del gruppo di ruoli Gestione organizzazione, gestione conformità o supporto tecnico. Per ulteriori informazioni, vedere [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Il numero massimo di messaggi visualizzati nei risultati dipende dal tipo di rapporto selezionato (vedere la sezione scegliere il tipo di [report](#choose-report-type) per informazioni dettagliate). Il cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in PowerShell di Exchange Online o Exchange Online Protection PowerShell restituisce tutti i messaggi nei risultati.
 
 ## <a name="open-message-trace"></a>Aprire la traccia dei messaggi
 
@@ -63,7 +60,7 @@ I valori predefiniti sono **tutti i mittenti** e **tutti i destinatari**, ma è 
 - **A queste persone**: fare clic in questo campo per selezionare uno o più destinatari nell'organizzazione.
 
 > [!NOTE]
-> È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati, ad esempio `*@contoso.com`, ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente.<br/>È possibile incollare più mittenti o elenchi di destinatari separati da punti e virgola (`;`). spazi (`\s`), ritorni a`\r`capo () o righe successive`\n`().
+> È inoltre possibile digitare gli indirizzi di posta elettronica di mittenti e destinatari esterni. I caratteri jolly sono supportati, ad esempio `*@contoso.com`, ma non è possibile utilizzare più voci con caratteri jolly nello stesso campo contemporaneamente. <br/><br/> È possibile incollare più mittenti o elenchi di destinatari separati da punti e virgola (`;`). spazi (`\s`), ritorni a`\r`capo () o righe successive`\n`().
 
 ### <a name="time-range"></a>Intervallo di tempo
 
@@ -71,17 +68,17 @@ Il valore predefinito è **2 giorni**, ma è possibile specificare intervalli di
 
 - Per impostazione predefinita, è possibile selezionare l'intervallo di tempo in visualizzazione **Slider** utilizzando una linea temporale. È possibile selezionare solo le impostazioni giorno o ora visualizzate. Se si tenta di selezionare un valore tra i valori interattivi, la bolla iniziale/finale verrà agganciata all'impostazione visualizzata più vicina.
 
-   ![Intervallo di tempo del dispositivo di scorrimento in una nuova traccia dei messaggi nel centro sicurezza & conformità](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+  ![Intervallo di tempo del dispositivo di scorrimento in una nuova traccia dei messaggi nel centro sicurezza & conformità](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
-   Tuttavia, è anche possibile passare alla visualizzazione **personalizzata** in cui è possibile specificare i valori di data e ora di **inizio** e di **fine** (incluse le ore) ed è anche possibile selezionare il **fuso orario** per l'intervallo data/ora. Si noti che l'impostazione del **fuso orario** si applica sia agli input di query sia ai risultati delle query.
+  Tuttavia, è anche possibile passare alla visualizzazione **personalizzata** in cui è possibile specificare i valori di data e ora di **inizio** e di **fine** (incluse le ore) ed è anche possibile selezionare il **fuso orario** per l'intervallo data/ora. Si noti che l'impostazione del **fuso orario** si applica sia agli input di query sia ai risultati delle query.
 
-   ![Un intervallo di tempo personalizzato in una nuova traccia dei messaggi nel centro sicurezza & Compliance](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+  ![Un intervallo di tempo personalizzato in una nuova traccia dei messaggi nel centro sicurezza & Compliance](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
-   Per 10 o meno giorni, i risultati sono disponibili istantaneamente come report **riepilogativo** . Se si specifica un intervallo di tempo pari leggermente superiore a 10 giorni, i risultati verranno posticipati perché sono disponibili solo come file CSV scaricabile ( **Riepilogo avanzato** o rapporti **estesi** ).
+  Per 10 o meno giorni, i risultati sono disponibili istantaneamente come report **riepilogativo** . Se si specifica un intervallo di tempo pari leggermente superiore a 10 giorni, i risultati verranno posticipati perché sono disponibili solo come file CSV scaricabile ( **Riepilogo avanzato** o rapporti **estesi** ).
 
-   Per ulteriori informazioni sui diversi tipi di report, vedere la sezione [scegliere il tipo di report](#choose-report-type) in questo argomento.
+  Per ulteriori informazioni sui diversi tipi di report, vedere la sezione [scegliere il tipo di report](#choose-report-type) in questo argomento.
 
-   **Nota**: i report di riepilogo e Extended Enhanced vengono preparati utilizzando i dati di traccia dei messaggi archiviati e possono richiedere fino a diverse ore prima che il report sia disponibile per il download. A seconda del numero di altri amministratori che hanno inoltrato le richieste di rapporto nello stesso momento, è possibile che si verifichi un ritardo prima dell'inizio dell'elaborazione per la richiesta in coda.
+  **Nota**: i report di riepilogo e Extended Enhanced vengono preparati utilizzando i dati di traccia dei messaggi archiviati e possono richiedere fino a diverse ore prima che il report sia disponibile per il download. A seconda del numero di altri amministratori che hanno inoltrato le richieste di rapporto nello stesso momento, è possibile che si verifichi un ritardo prima dell'inizio dell'elaborazione per la richiesta in coda.
 
 - Il salvataggio di una query in visualizzazione **Slider** consente di salvare l'intervallo di tempo relativo (ad esempio, 3 giorni da oggi). Il salvataggio di una query nella visualizzazione **personalizzata** consente di salvare l'intervallo di data/ora assoluto (ad esempio, 2018-05-06 13:00 a 2018-05-08 18:00).
 
@@ -129,9 +126,9 @@ Quando si utilizza l' **ID messaggio** per filtrare i risultati, assicurarsi di 
 
 I tipi di report disponibili sono i seguenti:
 
-- **Riepilogo**: disponibile se l'intervallo di tempo è inferiore a 10 giorni e non richiede ulteriori opzioni di filtro. I risultati sono disponibili quasi immediatamente dopo aver fatto clic su **Cerca**.
+- **Riepilogo**: disponibile se l'intervallo di tempo è inferiore a 10 giorni e non richiede ulteriori opzioni di filtro. I risultati sono disponibili quasi immediatamente dopo aver fatto clic su **Cerca**. Il report restituisce fino a 20000 risultati.
 
-- **Riepilogo avanzato** o **esteso**: questi rapporti sono disponibili solo come file CSV scaricabili e richiedono una o più delle seguenti opzioni di filtro, indipendentemente dall'intervallo di tempo: **da queste persone**, **a queste persone**o all' **ID del messaggio**. È possibile utilizzare i caratteri jolly per i mittenti o i destinatari, \*ad esempio @contoso. com.
+- **Riepilogo avanzato** o **esteso**: questi rapporti sono disponibili solo come file CSV scaricabili e richiedono una o più delle seguenti opzioni di filtro, indipendentemente dall'intervallo di tempo: **da queste persone**, **a queste persone**o all' **ID del messaggio**. È possibile utilizzare i caratteri jolly per i mittenti o i destinatari, \*ad esempio @contoso. com. Il rapporto riepilogativo avanzato restituisce fino a 50000 risultati. Il report esteso restituisce fino a 1000 risultati.
 
 **Note**:
 

@@ -15,12 +15,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definire i criteri per gli allegati sicuri per proteggere l'organizzazione da file dannosi nella posta elettronica.
-ms.openlocfilehash: 0bafa8e21d3788871f9daf38aeeabd00abb97bec
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e38067230554b5d37f7dc4526e90ab4e63608900
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806719"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558623"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri per gli allegati sicuri ATP di Office 365
 
@@ -93,6 +93,7 @@ Quando si configurano i criteri per gli allegati sicuri di ATP, è possibile sce
 |**Sostituisce**|Rimuove gli allegati di malware rilevati  <br/> Notifica ai destinatari che gli allegati sono stati rimossi  <br/> Invia messaggi con malware rilevato per la [quarantena in Office 365 in](manage-quarantined-messages-and-files.md) cui un amministratore o un analista di sicurezza può rivedere e rilasciare (o eliminare) tali messaggi|Aumentare la visibilità ai destinatari che gli allegati sono stati rimossi a causa del malware rilevato|
 |**Recapito dinamico**|Recapita immediatamente i messaggi  <br/> Sostituisce gli allegati con un file segnaposto fino al completamento dell'analisi e quindi ricollega gli allegati se non è stato rilevato alcun malware  <br/> Include le funzionalità di anteprima degli allegati per la maggior parte dei file PDF e di Office durante l'analisi  <br/> Invia messaggi con malware rilevato per la quarantena, in cui un amministratore o un analista di sicurezza può rivedere e rilasciare (o eliminare) tali messaggi  <br/> [Informazioni sul recapito dinamico e sulla visualizzazione in anteprima con gli allegati sicuri di ATP](dynamic-delivery-and-previewing.md) <br/> |Evitare ritardi nei messaggi durante la protezione dei destinatari da file dannosi  <br/> Abilitazione dei destinatari all'anteprima degli allegati in modalità provvisoria durante la scansione|
 |**Attiva reindirizzamento**|Si applica quando si sceglie l'opzione Monitor, blocca o Sostituisci  <br/> Invia allegati a un indirizzo di posta elettronica specificato in cui gli amministratori di sicurezza o gli analisti possono esaminare|Abilitare gli amministratori e gli analisti della sicurezza per la ricerca degli allegati sospetti|
+|**Applicare la selezione precedente se la ricerca di malware per gli allegati non è stata eseguita o si verifica un errore**|Applica l'azione configurata per gli allegati di unasfe agli allegati che non possono essere analizzati (a causa di un timeout o di un errore)|
 
 ## <a name="next-steps"></a>Passaggi successivi
 

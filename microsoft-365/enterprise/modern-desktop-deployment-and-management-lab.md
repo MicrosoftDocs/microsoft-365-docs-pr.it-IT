@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 1d95edce079f515572c977913da2ee432514f983
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 435b8177fc97f9cd07ff78704605428e594e0dd8
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112510"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558583"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
@@ -56,7 +56,7 @@ Oppure
 
 ## <a name="step-by-step-labs"></a>**Lab dettagliati**
 
-Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuzione e gestione, tra cui:
+Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuzione e gestione. I lab sono stati aggiornati per le versioni più recenti di Intune e Configuration Manager (versione 1910).  
 
 ### <a name="device-and-app-readiness"></a>**Preparazione di app e dispositivi**
 
@@ -116,9 +116,12 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
   - Gestione aggiornamenti di Office 365 ProPlus in Configuration Manager
   - Gestione di dispositivi mobili applicata a Windows 10 tramite Microsoft Intune
 
+### <a name="new-windows-virtual-desktop"></a>**NOVITÀ: Desktop virtuale Windows**
+  - Desktop virtuale Windows: preparazione, distribuzione, ottimizzazione 
+
 ### <a name="download-the-windows-and-office-deployment-lab-kithttpswwwmicrosoftcomevalcenterevaluate-lab-kit"></a>[**Scaricare il Lab Kit di distribuzione di Windows e Office**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
-*Per scaricare questi contenuti, usare un'ampia larghezza di banda per un'esperienza di download ottimale e attendere 30-45 minuti per il provisioning automatico. L'ambiente di lab richiede minimo 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, si consiglia di avere 32 GB di memoria disponibili. Il lab scade il 15 febbraio 2020; prima di tale data, ne verrà pubblicata una nuova versione.*
+*Per scaricare questi contenuti, usare un'ampia larghezza di banda per un'esperienza di download ottimale e attendere 30-45 minuti per il provisioning automatico. L'ambiente di lab richiede almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, sono consigliati 32 GB di memoria disponibili. Il lab scade il 18 aprile 2020; prima di tale data, ne verrà pubblicata una nuova versione.*
 
 ## <a name="additional-guidance"></a>**Indicazioni aggiuntive**
 

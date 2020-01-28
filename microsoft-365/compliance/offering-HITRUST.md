@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9b0448a3ed5cf36a909ebb14e0aadf2b8ac96610
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e6085446677e592425d5453aa350541590de1b9d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804799"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558533"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Framework di sicurezza comune (QCS, Health Information Trust Alliance) (HITRUST)
 
@@ -58,9 +58,9 @@ Ottenere un vantaggio per sfruttare i vantaggi del cloud per le soluzioni di dat
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>Accelerare la conformità HIPAA/HITRUST quando si utilizza Office 365
 
-Utilizzare Office 365 per gestire le informazioni di integrità in modo sicuro e conforme con Compliance Manager, che consente di eseguire valutazioni dei rischi per le normative sanitarie come HIPAA e i Framework di controllo di sicurezza come NIST CSF e NIST 800-53. È possibile seguire le istruzioni dettagliate per sapere come implementare e gestire i controlli di protezione dei dati che consentono di soddisfare gli obblighi di conformità del sistema sanitario.
+Utilizzare Office 365 per gestire le informazioni sull'integrità in modo sicuro e conforme al Punteggio di conformità, che consente di eseguire valutazioni dei rischi per le normative sanitarie come HIPAA e i Framework di controllo di sicurezza come NIST CSF e NIST 800-53. È possibile seguire le istruzioni dettagliate per sapere come implementare e gestire i controlli di protezione dei dati che consentono di soddisfare gli obblighi di conformità del sistema sanitario.
 
-[Iniziare a utilizzare Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=862650)
+[Iniziare a utilizzare il Punteggio di conformità](compliance-score.md)
 
 ## <a name="collaborate-with-microsoft-in-the-hitrust-shared-responsibility-program"></a>Collaborare con Microsoft nel programma di responsabilità condivisa di HITRUST
 
@@ -95,7 +95,7 @@ Quando si archiviano i dati in un SaaS like Office 365, si tratta di una respons
 
 **Microsoft fornisce indicazioni per la propria organizzazione per implementare i controlli corretti quando si utilizza Office 365?**
 
-Sì, è possibile trovare le azioni dei clienti consigliate in Compliance Manager, Cross-Microsoft Cloud Solutions che consentono all'organizzazione di soddisfare gli obblighi di conformità complessi quando si utilizzano i servizi cloud. In particolare, per HITRUST CSF, si consiglia di eseguire valutazioni dei rischi utilizzando le valutazioni del NIST 800-53 e del NIST CSF in Compliance Manager. Nelle valutazioni vengono fornite istruzioni dettagliate e le soluzioni Microsoft che è possibile utilizzare per implementare i controlli di protezione dei dati. È possibile ottenere ulteriori informazioni su Compliance Manager in questo [white paper](https://resources.office.com/ww-landing-m365e-gdpr-compliance-manager-whitepaper.html?lcid=en-us).
+Sì, è possibile trovare le azioni dei clienti consigliate in Score Compliance, soluzioni cloud Cross-Microsoft che consentono all'organizzazione di soddisfare gli obblighi di conformità complessi quando si utilizzano i servizi cloud. In particolare, per HITRUST CSF, si consiglia di eseguire valutazioni dei rischi usando le valutazioni del NIST 800-53 e del QCS del NIST nel punteggio di conformità. Nelle valutazioni vengono fornite istruzioni dettagliate e le soluzioni Microsoft che è possibile utilizzare per implementare i controlli di protezione dei dati. È possibile ottenere ulteriori informazioni sul punteggio di conformità in [Microsoft Compliance Score](compliance-score.md).
 
 **Come si esegue l'impegno con Microsoft?**
 
@@ -107,8 +107,8 @@ Accedere allo strumento di® di HITRUST MyCSF e prepopolare la valutazione per l
 - [HITRUST CSF 8,1](https://hitrustalliance.net/csf-license-agreement/)
 - [Comprensione e sfruttamento del QCS](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [Per saperne di più sul programma di responsabilità condivisa di HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf).

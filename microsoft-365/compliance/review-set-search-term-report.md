@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 877c0017359ab9193c4cae81cbef4240909053a8
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: bb65745f92d1f77e6cc3224832c0a9871e567ca5
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084751"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558473"
 ---
 # <a name="generate-search-term-report-for-a-review-set"></a>Generare il rapporto termini di ricerca per un set di Revisione
 
@@ -46,7 +46,7 @@ Selezionare fino a tre pivot per il report e quindi fare clic su **genera**, che
 
 Pivot sono la modalità di organizzazione del rapporto. Si consideri l'esempio seguente.
 
-- La query salvata recupera 10 documenti: doc1 thru doc10.
+- La query salvata recupera 10 documenti: doc1 tramite doc10.
 
 - Doc1, Doc2, DOC3, DOC4, DOC5, DOC6 e DOC7 contengono il termine "eDiscovery".
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Office 365. Questi tipi di esenzioni includono il blocco per controversia legale, eDiscovery holds e i criteri di conservazione di Office 365. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello di organizzazione
-ms.openlocfilehash: 13e7bcec4d6ce7a04b069552b599e742c8777e8a
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: dcdb79aa1c1cae83602a42e6c99136a2f85226a1
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39634013"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558013"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -148,6 +148,9 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
 
 Se il GUID per il blocco sul posto inizia con il `cld` prefisso, assicurarsi di includere il prefisso quando si esegue il comando precedente.
+
+> [!IMPORTANT]
+> Continuando a investire in modi diversi per conservare il contenuto delle cassette postali, si annuncia la previdenza delle archiviazioni sul posto nell'interfaccia di amministrazione di Exchange (EAC). A partire dal 1 ° aprile 2020 non è possibile creare nuove archiviazioni sul posto in Exchange Online. Tuttavia, sarà comunque possibile gestire le archiviazioni sul posto in EAC o utilizzando il cmdlet **Set-MailboxSearch** in Exchange Online PowerShell. Tuttavia, a partire dal 1 ° luglio 2020, non sarà possibile gestire le archiviazioni sul posto. Verranno rimossi solo nell'interfaccia di amministrazione di Exchange o tramite il cmdlet **Remove-MailboxSearch** . Per ulteriori informazioni sul pensionamento delle archiviazioni sul posto, vedere [pensionamento degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md).
 
 ### <a name="office-365-retention-policies"></a>Criteri di conservazione di Office 365
 

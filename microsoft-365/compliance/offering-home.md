@@ -11,12 +11,12 @@ localization_priority: Normal
 audience: ITPro
 ms.prod: Microsoft-365-enterprise
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 93018d855565a441543e2f2d65109bf85526bc4f
-ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
+ms.openlocfilehash: 256827bdf545487a06530d246c678152b63c3d4c
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41022411"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558553"
 ---
 # <a name="microsoft-compliance-offerings"></a>Offerte per la conformità Microsoft
 
@@ -164,7 +164,7 @@ Microsoft offre una serie completa di offerte di conformità che consentono all'
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#DJCP">DJCP (Cina)</a></p>
                         <p><a href="offering-en-301-549-eu.md">EN 301 549 (UE)</a></p>
                         <p><a href="offering-ens-spain.md">ENS (Spagna)</a></p>
-                        <p><a href="https://aka.ms/ENISA">ENISA IAF (UE)</a></p>
+                        <p><a href="offering-enisa.md">ENISA IAF (UE)</a></p>
                         <p><a href="offering-eu-model-clauses.md">Clausole modello UE</a></p>
                         <p><a href="offering-eu-us-privacy-shield.md">Protezione della privacy EU-US</a></p>
                         <p><a href="https://www.trustcenter.cn/compliance/default.html#GB18030">GB 18030 (Cina)</a></p>
