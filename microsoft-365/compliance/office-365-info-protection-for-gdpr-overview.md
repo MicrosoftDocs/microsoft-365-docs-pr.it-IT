@@ -16,13 +16,13 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Panoramica di Office 365 Information Protection per RGPD. Informazioni su come individuare, classificare, protegger e monitorare i dati personali.
-ms.openlocfilehash: c1d73baef939ec69a69e63d26b7a204c353ca95a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: Panoramica di Office 365 Information Protection per GDPR. Informazioni su come individuare, classificare, proteggere e monitorare i dati personali.
+ms.openlocfilehash: d4e84e6a3fc1020f3eecda6eb72e3d02a9f66555
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084455"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558503"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Panoramica di Office 365 Information Protection per RGPD
 
@@ -44,15 +44,13 @@ Questa soluzione vuole aiutare le organizzazioni a individuare e proteggere i da
 
 Il primo passo per la conformità RGPD consiste nel valutare se tale regolamento è applicabile all'organizzazione e, in tal caso, in quale misura. L'analisi include la comprensione dei dati elaborati dall'organizzazione e dove questi si trovano.
 
-### <a name="step-1--use-compliance-manager-to-view-the-regulation-requirements-and-track-your-progress"></a>Fase 1 - Usare Gestore conformità per verificare i requisiti normativi e monitorare lo stato
+### <a name="step-1--use-compliance-score-to-view-the-regulation-requirements-and-track-your-progress"></a>Fase 1 - Usare il punteggio di conformità per verificare i requisiti normativi e tenere traccia dello stato di avanzamento
 
+Il punteggio di conformità offre strumenti per tenere traccia, implementare e gestire i controlli per consentire all'organizzazione di raggiungere la conformità con diversi standard, tra cui GDPR.
 
-Gestore conformità offre strumenti per tenere traccia, implementare e gestire i controlli per consentire all'organizzazione di raggiungere la conformità con diversi standard, tra cui l'RGPD.
+![Usare il punteggio di conformità e Compliance Manager per verificare i requisiti normativi e tenere traccia dello stato di avanzamento](Media/Overview-image1.png)
 
-![Usare Gestore conformità per verificare i requisiti normativi e monitorare lo stato
-](Media/Overview-image1.png)
-
-Per ulteriori informazioni, vedere [Utilizzo di Gestore conformità nel Service Trust Portal](https://servicetrust.microsoft.com/ComplianceManager). 
+Per ulteriori informazioni, vedere [punteggio di conformità](compliance-score.md).
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>Fase 2 - Usare Ricerca contenuto e le tipologie di informazioni sensibili per trovare i dati personali
  

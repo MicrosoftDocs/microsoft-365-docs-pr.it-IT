@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
-ms.openlocfilehash: 65b9d1dd3eb1a764867103710448255be96cd183
-ms.sourcegitcommit: c9332016f61b26f63c9145c9169ea5330e91a243
+ms.openlocfilehash: b2f66e3aa275c01baf2b8bde3bcca2c3072b5443
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41173512"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572702"
 ---
 # <a name="unverified-sender"></a>Mittente non verificato
 

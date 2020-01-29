@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 5bc131b98bbc0af5cdc9629e029c06f20a003d5f
-ms.sourcegitcommit: 3063e351e21614c236167e9cde40994d8b532bd6
+ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989601"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558593"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
-Per la maggior parte delle organizzazioni, il volume e la complessità dei dati aumentano giorno dopo giorno, per via di posta elettronica, documenti, messaggi istantanei e altro ancora. La gestione o il controllo efficace di queste informazioni è importante perché è necessario:
+Per la maggior parte delle organizzazioni, il volume e la complessità dei dati aumentano giorno dopo giorno, a causa di posta elettronica, documenti, messaggi istantanei e altro ancora. La gestione o il controllo efficace di queste informazioni è importante perché è necessario:
   
 - **Conformarsi in modo proattivo alle normative del settore e ai criteri interni** che richiedono di conservare il contenuto per un periodo di tempo minimo, ad esempio la norma Sarbanes-Oxley Act richiede che alcuni tipi di contenuto vengano conservati per sette anni. 
     
@@ -75,7 +75,7 @@ I criteri di conservazione vengono applicati a livello di raccolta siti. Quando 
   
 Se un utente tenta di modificare o eliminare i contenuti di un sito soggetto a criteri di conservazione, questi controllano innanzitutto se il contenuto è stato modificato dal momento della sua applicazione. Nel caso della prima modifica dall'applicazione dei criteri di conservazione, questi creano una copia dei contenuti nella raccolta di archiviazione, quindi permettono all'utente di modificare o eliminare i contenuti originali. I contenuti presenti nella raccolta siti possono essere copiati nella raccolta di archiviazione anche se tali contenuti non corrispondono al filtro della query utilizzato dai criteri di conservazione.
   
-Quindi, un processo timer pulisce la raccolta di archiviazione. Il processo timer viene eseguito periodicamente e confronta tutti i contenuti della raccolta di archiviazione con tutte le query utilizzate dai criteri di conservazione nel sito. A meno che i contenuti non corrispondano ad almeno una delle query, il processo timer elimina definitivamente i contenuti dalla raccolta di archiviazione.
+Un processo timer pulisce quindi la raccolta di archiviazione. Il processo timer viene eseguito periodicamente e confronta tutti i contenuti della raccolta di archiviazione con tutte le query usate dai criteri di conservazione nel sito. A meno che i contenuti non corrispondano ad almeno una delle query, il processo timer elimina definitivamente i contenuti dalla raccolta di archiviazione.
   
 Quanto descritto in precedenza vale per il contenuto esistente al momento dell'applicazione dei criteri di conservazione. Inoltre, tutto il nuovo contenuto creato o aggiunto alla raccolta siti dopo che è stato incluso nei criteri verrà conservato dopo l'eliminazione. Il nuovo contenuto non viene copiato nella raccolta di archiviazione alla prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il controllo delle versioni, come descritto nella sezione seguente.
   
@@ -100,7 +100,7 @@ Per impostazione predefinita, quando un utente elimina un messaggio in una carte
   
 Un processo verifica periodicamente gli elementi nella cartella Elementi ripristinabili. Se un elemento non corrisponde alle regole specificate in almeno un criterio di conservazione, viene eliminato definitivamente dalla cartella Elementi ripristinabili.
   
-Quando un utente tenta di modificare determinate proprietà di un elemento di cassette postali (ad esempio, l'oggetto, il corpo, gli allegati, i mittenti o i destinatari, la data di invio o di ricezione di un messaggio), una copia dell'elemento originale viene salvata nella cartella Elementi ripristinabili prima che la modifica diventi effettiva. Questo si verifica per ogni modifica successiva. Alla fine del periodo di conservazione, le copie nella cartella Elementi ripristinabili vengono eliminate definitivamente.
+Quando un utente prova a modificare determinate proprietà di un elemento di cassette postali (ad esempio, l'oggetto, il corpo, gli allegati, i mittenti o i destinatari, la data di invio o di ricezione di un messaggio), una copia dell'elemento originale viene salvata nella cartella Elementi ripristinabili prima che la modifica diventi effettiva. Questo si verifica per ogni modifica successiva. Alla fine del periodo di conservazione, le copie nella cartella Elementi ripristinabili vengono eliminate definitivamente.
   
 Se un utente lascia l'organizzazione e la sua cassetta postale è inclusa nei criteri di conservazione, la cassetta postale diventa inattiva quando viene eliminato l'account di Office 365 dell'utente. Il contenuto di una cassetta postale inattiva è comunque soggetto ai criteri di conservazione applicati alla cassetta postale prima della sua disattivazione ed è disponibile per una ricerca eDiscovery. Per ulteriori informazioni, vedere [Cassette postali inattive in Exchange Online](inactive-mailboxes-in-office-365.md).
   
@@ -116,7 +116,7 @@ Dopo che i criteri di conservazione vengono assegnati a una cassetta postale o a
 
 Il controllo delle versioni è una caratteristica di tutte le raccolte documenti di SharePoint Online e OneDrive for Business. Per impostazione predefinita, il controllo delle versioni conserva almeno 500 versioni principali, limite che è possibile aumentare. Per altre informazioni, vedere [Abilitare e configurare il controllo delle versioni per un elenco o una raccolta](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
-Un criterio di conservazione, ovvero un criterio che prevede la conservazione del contenuto anziché la sola eliminazione, mantiene tutte le versioni di un documento in una raccolta siti di SharePoint o in un account OneDrive. Ogni volta che si modifica un documento oggetto di un criterio di blocco o di conservazione, ne viene copiata una versione nella Raccolta blocchi per conservazione. Ogni volta che si elimina un documento oggetto di un criterio di blocco o di conservazione, vengono copiate tutte le versioni nella Raccolta blocchi per conservazione, se è attivato il controllo delle versioni. Ogni versione di un documento nella Raccolta blocchi per conservazione è un elemento separato con un periodo di conservazione specifico:
+Un criterio di conservazione, ovvero un criterio che prevede la conservazione del contenuto anziché la sola eliminazione, mantiene tutte le versioni di un documento in una raccolta siti di SharePoint o in un account OneDrive. Quando si modifica un documento oggetto di un criterio di blocco o di conservazione, viene copiata una versione dell'originale nella Raccolta blocchi per conservazione. Quando si elimina un documento oggetto di un criterio di blocco o di conservazione, vengono copiate tutte le versioni nella Raccolta blocchi per conservazione, se è attivato il controllo delle versioni. Ogni versione di un documento nella Raccolta blocchi per conservazione è un elemento separato con un periodo di conservazione specifico:
   
 - Se i criteri di conservazione si basano sulla data di creazione del contenuto, ciascuna versione ha la stessa data di scadenza del documento originale. Il documento originale e le sue versioni scadono tutti allo stesso tempo.
     
@@ -193,7 +193,7 @@ Una delle caratteristiche più efficaci dei criteri di conservazione riguarda la
     
 - Account di OneDrive
     
-- Gruppi di Office 365, si applica al contenuto della cassetta postale, dei siti e dei documenti del gruppo. Il supporto per i contenuti in Planner, Yammer, CRM Microsoft Teams, PowerBi, Stream, Exchange e i siti del team di SharePoint sarà disponibile a breve.
+- Gruppi di Office 365 (si applica al contenuto della cassetta postale del gruppo e del sito di SharePoint associato).
     
 - Cartelle pubbliche di Exchange
     
@@ -395,9 +395,9 @@ Se si usavano i precedenti criteri di conservazione, questi criteri ora vengono 
   
 ## <a name="permissions"></a>Autorizzazioni
 
-Ai membri del team di conformità che creeranno criteri di conservazione è necessario assegnare autorizzazioni per il [Centro sicurezza&amp; e conformità](https://protection.office.com/). Per impostazione predefinita, l'amministratore del tenant ha accesso a questa posizione e può fornire ai responsabili della conformità e ad altre persone l'accesso al [Centro sicurezza&amp; e conformità](https://protection.office.com/), senza concedere tutte le autorizzazioni di un amministratore del tenant. A questo scopo, è consigliabile accedere alla pagina **Autorizzazioni** del [Centro sicurezza&amp; e conformità](https://protection.office.com/), modificare il gruppo di ruoli **Amministratore conformità** e aggiungere membri a tale gruppo di ruoli. 
+Ai membri del team di conformità che creeranno criteri di conservazione è necessario assegnare autorizzazioni per il [Centro sicurezza&amp; e conformità](https://protection.office.com/). Per impostazione predefinita, l'amministratore del tenant ha accesso a questa posizione e può fornire ai responsabili della conformità e ad altre persone l'accesso al [Centro sicurezza &amp; conformità](https://protection.office.com/) senza concedere tutte le autorizzazioni di un amministratore del tenant. A questo scopo, è consigliabile accedere alla pagina **Autorizzazioni** del [Centro sicurezza &amp; conformità](https://protection.office.com/), modificare il gruppo di ruoli **Amministratore conformità** e aggiungere membri a tale gruppo di ruoli. 
   
-Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità di Office 365](/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
+Per altre informazioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
 
 Queste autorizzazioni sono necessarie solo per creare e applicare i criteri di conservazione. L'applicazione dei criteri non richiede l'accesso al contenuto.
   

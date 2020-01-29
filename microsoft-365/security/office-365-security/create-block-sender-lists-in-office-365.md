@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: Blocca le opzioni dell'elenco dei mittenti includono i mittenti bloccati di Outlook, gli elenchi di mittenti/domini di protezione dalla posta indesiderata, gli elenchi di indirizzi IP bloccati e le regole di trasporto di Exchange (ETRs) denominate anche regole
-ms.openlocfilehash: f4fab732a92df2a2500212c9825d2b3e710b0a07
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+description: Blocca le opzioni dell'elenco dei mittenti includono i mittenti bloccati di Outlook, gli elenchi di mittenti/domini di posta indesiderata, gli elenchi di indirizzi IP bloccati e le regole del flusso di posta di Exchange (regole di trasporto)
+ms.openlocfilehash: 09a90fce31bd1ed9aea8275e2f01cda3ba816b1b
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970892"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572332"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Creare elenchi di mittenti bloccati in Office 365
 
-A volte è necessario bloccare la posta elettronica indesiderata dai mittenti. Sono disponibili diversi metodi tra cui scegliere. Queste opzioni includono i mittenti bloccati di Outlook, gli elenchi di protezione dalla posta indesiderata/blocco dei domini, gli elenchi di indirizzi IP bloccati e le regole di trasporto di Exchange (ETRs, note anche come regole del flusso di posta).
+A volte è necessario bloccare la posta elettronica indesiderata dai mittenti. Sono disponibili diversi metodi tra cui scegliere. Queste opzioni includono i mittenti bloccati di Outlook, gli elenchi di protezione dalla posta indesiderata/blocco dei domini, gli elenchi di indirizzi IP bloccati e le regole del flusso di posta di Exchange (note anche come regole di trasporto).
 
 > [!NOTE]
 > Mentre gli elenchi di blocco dell'organizzazione possono essere utilizzati per risolvere i falsi negativi (posta indesiderata persa), tali candidati devono essere inviati anche a Microsoft per l'analisi. La gestione dei falsi negativi tramite gli elenchi bloccati aumenta significativamente il sovraccarico amministrativo. Se si utilizza un elenco di blocco per questo scopo, è necessario conservare anche l'articolo per [inviare messaggi di posta indesiderata, non di posta indesiderata e tentativi di phishing a Microsoft per l'analisi](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
@@ -33,7 +33,7 @@ Quando si crea un elenco di blocco, è importante scegliere il metodo appropriat
 
 - Mittenti bloccati di Outlook
 - Criteri di protezione dalla posta indesiderata: elenchi di blocchi di mittenti/domini
-- Regole di trasporto di Exchange (ETRs chiamato anche regole del flusso di posta)
+- Regole del flusso di posta di Exchange
 - Criteri di protezione da posta indesiderata: elenchi di indirizzi IP bloccati
 
 ## <a name="use-outlook-blocked-senders"></a>Utilizzo di mittenti bloccati di Outlook
@@ -47,19 +47,19 @@ La procedura per la configurazione di questo tipo di configurazione è diversa t
 
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>Utilizzare i criteri di protezione dalla posta indesiderata e gli elenchi di blocco dei domini
 
-Quando si verifica un impatto su più utenti, l'ambito è più ampio ed è necessario utilizzare un criterio di protezione dalla posta indesiderata a livello di mittente/dominio. La procedura dettagliata è disponibile in [configurare il documento dei criteri di filtro della posta indesiderata](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) . Qualsiasi messaggio bloccato tramite questo metodo seguirà l'azione di posta indesiderata configurata nel criterio.
+Quando si verifica un impatto su più utenti, l'ambito è più ampio ed è necessario utilizzare un criterio di protezione dalla posta indesiderata a livello di mittente/dominio. I passaggi dettagliati sono disponibili in [configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md). Qualsiasi messaggio bloccato tramite questo metodo seguirà l'azione di posta indesiderata configurata nel criterio.
 
 Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci; anche se, sarà possibile immettere 30 voci nel portale. Per aggiungere più di 30 voci, è necessario utilizzare PowerShell.
 
-## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Utilizzare le regole di trasporto di Exchange (ETRs) per bloccare mittenti specifici
+## <a name="use-exchange-mail-flow-rules-specific-senders"></a>Utilizzo di mittenti specifici delle regole del flusso di posta di Exchange
 
-Se è necessario bloccare i messaggi inviati a utenti specifici o all'intera organizzazione, è possibile utilizzare ETRs (denominate anche regole del flusso di posta). ETRs sono più flessibili perché possono attivare il dominio o l'indirizzo di posta elettronica del mittente, nonché le parole chiave e altre proprietà del messaggio. Questa flessibilità consentirà di creare blocchi parziali e completi. [Fare clic sulla procedura per creare un ETR, noto anche come regole del flusso di posta elettronica](https://docs.microsoft.com/office365/SecurityCompliance/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages).
+Se è necessario bloccare l'invio dei messaggi a utenti specifici o all'intera organizzazione, è possibile utilizzare le regole del flusso di posta. Le regole del flusso di posta sono più flessibili perché possono attivare il dominio o l'indirizzo di posta elettronica del mittente, nonché le parole chiave e altre proprietà del messaggio. Questa flessibilità consentirà di creare blocchi parziali e completi. Per ulteriori informazioni sulle regole del flusso di posta, vedere [Use Mail Flow Rules to set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
 > [!IMPORTANT]
 > È facile creare regole *troppo* aggressive, di conseguenza è importante che i criteri utilizzati siano i più specifici possibile. Assicurarsi inoltre di abilitare il controllo sulla regola creata e fare test per garantire che tutto funzioni come previsto.
 
 ## <a name="use-anti-spam-policy-ip-block-lists"></a>Utilizzare gli elenchi di indirizzi IP bloccati dei criteri di posta indesiderata
 
-Quando non è possibile usare una delle altre opzioni per bloccare un mittente, è possibile utilizzare *l'elenco* indirizzi IP bloccati dei criteri di protezione da posta indesiderata. [I passaggi dettagliati sono disponibili nell'articolo Configure the Connection Filter Policy](https://docs.microsoft.com/office365/securitycompliance/configure-the-connection-filter-policy). È importante tenere presente che l'elenco degli indirizzi IP bloccati è *minimo* e *non* è consigliabile utilizzare gli intervalli per l'indirizzo del pi.
+Quando non è possibile utilizzare una delle altre opzioni per bloccare un mittente, è possibile utilizzare l'elenco indirizzi IP bloccati dei criteri di *protezione da posta* indesiderata. Per ulteriori informazioni, vedere [Configurare i criteri di filtro delle connessioni](configure-the-connection-filter-policy.md). È importante mantenere il numero minimo di indirizzi IP bloccati, quindi *non* è consigliabile bloccare interi intervalli di indirizzi.
 
 È consigliabile *evitare di* aggiungere intervalli di indirizzi IP che appartengono a servizi consumer o infrastrutture condivise, nonché di esaminare l'elenco di indirizzi IP consentiti come parte di una manutenzione regolare. **Poiché consente l'apertura delle route per gli attacchi, è necessario gestire attentamente l'elenco e rimuovere periodicamente le voci consentite che non sono più necessarie.** Inoltre, se si vuole fare in modo che in un elenco di mittenti attendibili, leggere e comprendere i rischi e le precauzioni in *[creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md)*.

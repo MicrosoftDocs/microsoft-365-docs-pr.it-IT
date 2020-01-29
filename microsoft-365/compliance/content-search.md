@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Office 365 e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
-ms.openlocfilehash: d27bce246cabfafd343286fc40ea670bfe560b9e
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Office 365, gruppi di Yammer e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
+ms.openlocfilehash: ea4359c594a169abbc518d6fe0f5ebdb4441fc56
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967519"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558403"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 
@@ -35,8 +35,10 @@ ms.locfileid: "39967519"
 - Conversazioni Skype for Business
     
 - Microsoft Teams 
-    
+
 - Gruppi di Office 365
+
+- Gruppi di Yammer 
     
 Dopo aver eseguito una Ricerca contenuto, il numero di percorsi dei contenuti e il numero stimato dei risultati della ricerca vengono visualizzati nelle statistiche della ricerca. È anche possibile visualizzare rapidamente le statistiche, come i percorsi di contenuto che contengono la maggior parte degli elementi corrispondenti alla query di ricerca. Dopo l'esecuzione di una ricerca, è possibile visualizzare in anteprima i risultati o esportarli in un computer locale.
 
@@ -81,9 +83,9 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
     
        - **Percorsi**: scegliere i percorsi di contenuti in cui eseguire la ricerca.
     
-      - **Tutti i percorsi**: selezionare questa opzione per cercare in tutti i percorsi di contenuto dell'organizzazione. Ciò include i messaggi di posta elettronica in tutte le cassette postali di Exchange, incluse tutte le cassette postali inattive, le cassette postali per tutti i gruppi di Office 365 e le cassette postali di Microsoft Teams, tutte le conversazioni Skype for Business, tutti i siti di SharePoint e OneDrive for Business, inclusi i siti per tutti i Gruppi di Office 365 e Microsoft Teams, e gli elementi in tutte le cartelle pubbliche di Exchange.
+      - **Tutti i percorsi**: selezionare questa opzione per cercare in tutti i percorsi di contenuto dell'organizzazione. Ciò include i messaggi di posta elettronica in tutte le cassette postali di Exchange, incluse tutte le cassette postali inattive, le cassette postali per tutti i gruppi di Yammer, i gruppi di Office 365 e Microsoft Teams, tutte le conversazioni Skype for Business, tutti i siti di SharePoint e OneDrive for Business, inclusi i siti per tutti i gruppi di Yammer, i gruppi di Office 365 e Microsoft Teams, e gli elementi in tutte le cartelle pubbliche di Exchange.
     
-      - **Percorsi specifici**: usare questa opzione per eseguire ricerche in percorsi di contenuto specifici. È possibile eseguire una ricerca in tutti i percorsi di contenuto per un servizio Office 365 specifico, ad esempio in tutte le cassette postali di Exchange o in tutti i siti di SharePoint, oppure eseguire una ricerca in percorsi specifici inclusi nei servizi di Office 365 visualizzati. 
+      - **Percorsi specifici**: usare questa opzione per eseguire ricerche in percorsi di contenuto specifici. È possibile eseguire una ricerca in tutti i percorsi di contenuto per un servizio Office 365 specifico, ad esempio in tutte le cassette postali di Exchange o in tutti i siti di SharePoint, oppure eseguire una ricerca dei contenuti in percorsi specifici inclusi nei servizi di Office 365 visualizzati. 
     
         ![Interfaccia utente per scegliere i percorsi di contenuti in cui eseguire la ricerca](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
@@ -91,8 +93,7 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
     
        > [!NOTE]
        > Se si esegue una ricerca in tutti i percorsi di cassette postali o solo in cassette postali specifiche, i dati provenienti da altre applicazioni di Office 365 salvati nelle cassette postali degli utenti sono inclusi quando si esportano i risultati di una Ricerca contenuto. I dati non vengono inclusi nei risultati della ricerca stimati e non vengono visualizzati in anteprima. Vengono inclusi quando si esportano e si scaricano i risultati della ricerca. Per ulteriori informazioni, vedere [Contenuto archiviato nelle cassette postali di Exchange Online](what-is-stored-in-exo-mailbox.md).
-
-    
+   
 6. Dopo aver configurato la query di ricerca, fare clic su **Salva ed esegui**.
     
 7. Nella pagina **Salva ricerca** digitare il nome della ricerca e una descrizione facoltativa che consenta di identificare la ricerca. Il nome della ricerca deve essere univoco nell'organizzazione. 
@@ -176,6 +177,8 @@ Per ulteriori informazioni sulle ricerche di contenuto, vedere le sezioni seguen
 [Eseguire una ricerca negli account di OneDrive](#searching-onedrive-accounts)
   
 [Eseguire una ricerca nei Gruppi di Office 365 e Microsoft Teams](#searching-microsoft-teams-and-office-365-groups)
+
+[Eseguire una ricerca nei gruppi di Yammer](#searching-yammer-groups)
   
 [Eseguire una ricerca in una cassetta postale inattiva](#searching-inactive-mailboxes)
   
@@ -308,6 +311,25 @@ Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei 
 
 Le condizioni sono connesse logicamente alla query con parole chiave dall'operatore **AND**. Ciò significa che un elemento deve corrispondere sia alla query con parole chiave che alle condizioni di ricerca che devono essere restituite nei risultati della ricerca. Per altre informazioni, vedere la sezione Linee guida per l’uso di condizioni” in [Query con parole chiave e condizioni di ricerca per Ricerca contenuto](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
   
+### <a name="searching-yammer-groups"></a>Eseguire una ricerca nei gruppi di Yammer
+
+È possibile usare la proprietà di posta elettronica **ItemClass** o la condizione di ricerca **Tipo** per la ricerca specifica di elementi della conversazione nei gruppi di Yammer.
+
+  - Per usare la proprietà **ItemClass** come parte della query di ricerca con parole chiave, nella casella **Parole chiave** di una query di ricerca, digitare una o tutte le seguenti coppie property:value:
+
+     - ItemClass:IPM.Yammer.message
+     - ItemClass:IPM.Yammer.poll
+     - ItemClass:IPM.Yammer.praise
+     - ItemClass:IPM.Yammer.question
+  
+    È ad esempio possibile usare la query di ricerca seguente per ottenere messaggi e complimenti di Yammer:
+
+    ![Usare la proprietà ItemClass per cercare elementi di Yammer](media/YammerContentSearch1.png)
+  
+  - In alternativa, è possibile usare la condizione di posta elettronica **Tipo** e selezionare **Messaggi di Yammer** per ottenere elementi di Yammer. Ad esempio, la query di ricerca seguente restituirà tutti gli elementi della conversazione di Yammer che contengono la parola chiave "riservato". 
+
+    ![Usare la scheda condizione Tipo per cercare elementi della conversazione di Yammer](media/YammerContentSearch2.png)
+
 ### <a name="searching-inactive-mailboxes"></a>Eseguire una ricerca in una cassetta postale inattiva
 
 È possibile eseguire ricerche nelle cassette postali inattive in una ricerca contenuto. Per ottenere un elenco delle cassette postali inattive nell'organizzazione, eseguire il comando `Get-Mailbox -InactiveMailboxOnly` in PowerShell di Exchange Online. In alternativa, è possibile passare a **Governance delle informazioni**\>**Conservazione** nel Centro sicurezza e conformità e quindi fare clic su **Altro**![Puntini di sospensione della barra di spostamento](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\>**Cassette postali inattive**.
@@ -321,7 +343,7 @@ Ecco alcuni aspetti da tenere presenti quando si eseguono ricerche nelle cassett
 - Per creare una ricerca contenuto per eseguire ricerche in una cassetta postale inattiva, è possibile usare PowerShell nel Centro sicurezza e conformità. A tal fine, è necessario pre-accodare un punto ( . ) all'indirizzo di posta elettronica della cassetta postale inattiva. Ad esempio, il comando seguente crea una ricerca di contenuto che esegue la ricerca in una cassetta postale inattiva con l'indirizzo di posta elettronica pavelb@contoso.onmicrosoft.com:
 
    ``` 
-   New-ComplianceSearch -name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
+   New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
 - È consigliabile evitare di avere una cassetta postale attiva e una cassetta postale inattiva con lo stesso indirizzo SMTP. Se è necessario riutilizzare l'indirizzo SMTP assegnato a una cassetta postale inattiva, è consigliabile ripristinare la cassetta postale inattiva o ripristinarne il contenuto in una cassetta postale attiva, o nell'archivio della cassetta postale attiva, quindi eliminare la cassetta postale inattiva. Per ulteriori informazioni, vedere uno degli argomenti seguenti:

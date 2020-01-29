@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a1dbb5708cad32a0e37ddc25c97c70a765580f86
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 4472f665faa658349813d9aaeb50596f2a868b35
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962523"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572272"
 ---
 # <a name="register-new-devices-yourself"></a>Registrare manualmente i nuovi dispositivi
 
@@ -65,13 +65,12 @@ Microsoft Managed Desktop identifica ogni dispositivo in modo univoco facendo ri
 Per completare la registrazione, è necessario che i dati dei file CSV siano combinati in un unico file. Di seguito è indicato uno script di PowerShell di esempio per semplificare le operazioni seguenti:
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
-
 ### <a name="register-devices"></a>Registrare i dispositivi
 
 Il file CSV deve trovarsi in un formato specifico per la registrazione. Se i dati sono stati raccolti nei passaggi precedenti, il file deve essere già nel formato corretto. Se si ottiene il file da un fornitore, potrebbe essere necessario modificare il formato.
 
 >[!NOTE]
->Per comodità, è possibile scaricare un [modello](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx) per questo file CSV.
+>Per la vostra convenienza, è possibile scaricare un [file CSV di esempio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv).
 
 Il file deve includere le **intestazioni di colonna** identiche a quelle del campione (produttore, modello e così via), ma i propri dati per le altre righe. Se si utilizza il modello, aprirlo in uno strumento di modifica del testo, ad esempio Blocco note, e considerare di lasciare tutti i dati solo nella riga 1, immettendo solo i dati nelle righe 2 e seguenti. 
     

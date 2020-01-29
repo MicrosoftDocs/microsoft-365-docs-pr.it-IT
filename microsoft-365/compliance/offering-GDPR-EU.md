@@ -12,12 +12,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3380ee774388700fd8eca255a805b5595f1c9cda
-ms.sourcegitcommit: 82baed362528fed30e9e09c6a4a37c07be2f138d
+ms.openlocfilehash: b0563e7056510682a685cb0950324dafa1fd2dd2
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40959604"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558523"
 ---
 # <a name="general-data-protection-regulation-gdpr"></a>Regolamento generale sulla protezione dei dati (GDPR)
 
@@ -37,7 +37,7 @@ Scopri le procedure consigliate di trattamento della privacy e l'approccio adott
 
 ### <a name="abrona-prepares-for-gdpr-with-microsoft-365"></a>Abrona si prepara per il GDPR con Microsoft 365
 
-Scopri come l'organizzazione sanitaria olandese Abrona sta usando tecnologie Microsoft come Compliance Manager e Azure Information Protection per prepararsi per il GDPR.
+Scopri come l'organizzazione sanitaria olandese Abrona sta usando tecnologie Microsoft come il punteggio di conformità e Azure Information Protection per prepararsi per il GDPR.
 
 [Guarda il video](https://go.microsoft.com/fwlink/p/?linkid=2048705)
 
@@ -64,9 +64,9 @@ Scopri come il cliente Microsoft INAIL sta usando Azure Information Protection p
 
 [Altre informazioni](offering-iso-27701.md)
 
-### <a name="compliance-manager"></a>Compliance Manager
+### <a name="compliance-score"></a>Punteggio di conformità
 
-Usa [Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=2048390) per eseguire una valutazione costante dei rischi, ottieni informazioni utili e semplifica il processo verso la conformità.
+Usa il [punteggio di conformità](compliance-score.md) per eseguire una valutazione costante dei rischi, ottieni informazioni utili e semplifica il processo verso la conformità.
 
 ### <a name="microsoft-365-compliance-center"></a>Centro conformità Microsoft 365
 

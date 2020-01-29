@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: cfd39d25689785be2af80008b6d823beb5a7bc01
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d64d9b98fe3cf24a14b3f3126ff3f38b1d84087d
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749821"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41557983"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Riepilogo del Regolamento generale sulla protezione dei dati
 
@@ -99,8 +100,8 @@ In qualità di responsabile del trattamento dei dati, Microsoft assicura che i c
 
 ### <a name="accountability-readiness-checklists-for-the-gdpr"></a>Elenchi di controllo di preparazione della conformità al GDPR
 
-Questi [elenchi di controllo](gdpr-arc.md) offrono un modo pratico per accedere alle informazioni necessarie per l'applicazione del GDPR quando si usano i prodotti Microsoft. È possibile gestire gli elementi di questo elenco di controllo con [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) usando il codice e il nome dei controlli nel riquadro del GDPR che comprende i controlli gestiti dai clienti.
+Questi [elenchi di controllo](gdpr-arc.md) offrono un modo pratico per accedere alle informazioni necessarie per l'applicazione del GDPR quando si usano i prodotti Microsoft. È possibile gestire gli elementi di questo elenco di controllo con il [punteggio di conformità Microsoft](compliance-score.md) usando il codice e il nome dei controlli nel riquadro del GDPR che comprende i controlli gestiti dai clienti.
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Altre informazioni
 
 - [Centro protezione Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)

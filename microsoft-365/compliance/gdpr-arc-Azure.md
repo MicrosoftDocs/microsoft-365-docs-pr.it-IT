@@ -13,12 +13,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 608e75dee25f73a1234a911bd5b9e4871412e59e
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 34d36b6782d1f3dd8a5b12beb7be681e07518170
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676773"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558093"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>Elenco di controllo per l'applicazione del GDPR all'uso di Azure
 
@@ -29,9 +30,9 @@ Questo elenco di controllo offre un modo pratico per accedere alle informazioni 
 - [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) per i requisiti delle tecniche di sicurezza.
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) per i requisiti di gestione della privacy.
 
-È possibile gestire gli elementi di questo elenco di controllo con Compliance Manager [16] usando il codice e il nome dei controlli nel riquadro del GPDR che comprende i controlli gestiti dai clienti. Questa struttura viene usata anche per organizzare la presentazione dei controlli interni che Microsoft Azure implementa per supportare il GDPR e che è possibile scaricare dal [Centro protezione del servizio](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
+È possibile gestire gli elementi di questo elenco di controllo con il punteggio di conformità [16] usando il codice e il nome dei controlli nel riquadro del GPDR che comprende i controlli gestiti dai clienti. Questa struttura viene usata anche per organizzare la presentazione dei controlli interni che Microsoft Azure implementa per supportare il GDPR e che è possibile scaricare dal [Centro protezione del servizio](https://servicetrust.microsoft.com/ViewPage/TrustDocuments).
 
-Questa struttura viene inoltre usata per organizzare la presentazione dei [controlli interni che Microsoft Dynamics 365 implementa per supportare il GDPR](https://aka.ms/GDPRControls).
+Questa struttura viene inoltre usata per organizzare la presentazione dei [controlli interni che Microsoft Dynamics 365 implementa per supportare il GDPR](https://aka.ms/gdprcontrols).
 
 Per ulteriore documentazione relativa al GDPR, visitare [https://aka.ms/gdprgetstarted](https://aka.ms/gdprgetstarted).
 
@@ -143,7 +144,7 @@ Per ulteriore documentazione relativa al GDPR, visitare [https://aka.ms/gdprgets
 | 13 <a name="13"> </a> | [Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 14 <a name="14"> </a> | [Offerte di conformità del Centro protezione Microsoft](offering-home.md)  |
 | 15 <a name="15"> </a> | [Privacy e dati personali in Intune](https://review.docs.microsoft.com/intune/privacy-personal-data) |
-| 16 <a name="16"> </a> | [Set di controllo GDPR di Azure completo scaricabile](https://aka.ms/GDPRControls)o tramite [lo strumento Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) |
+| 16 <a name="16"> </a> | [Set di controllo GDPR di Azure completo scaricabile](https://aka.ms/GDPRControls) o tramite il [Punteggio di conformità](compliance-score.md) |
 | 17 <a name="17"> </a> | [Informazioni sul responsabile della protezione dei dati Microsoft](https://aka.ms/GDPRDPO) |
 
 ## <a name="learn-more"></a>Ulteriori informazioni

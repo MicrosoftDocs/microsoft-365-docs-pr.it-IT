@@ -12,12 +12,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 1bc2ac17d8548382dff721decba674952de977d6
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: db67326b7fa1f09576ae49de75e3f1de525ffd86
+ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749840"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558073"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Supportare il programma GDPR con elenchi di controllo di preparazione della conformità
 
@@ -36,7 +37,7 @@ Esiste una guida specifica per quattro famiglie di prodotti e servizi Microsoft:
 - [Azure](gdpr-arc-Azure.md)
 - [Servizi professionali e supporto tecnico Microsoft](gdpr-arc-prof-services.md)
 
-È possibile gestire gli elementi di questo elenco di controllo con [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) usando il codice e il nome dei controlli nel riquadro del GDPR che comprende i controlli gestiti dai clienti.
+È possibile gestire gli elementi di questo elenco di controllo con il [punteggio di conformità](compliance-score.md) usando il codice e il nome dei controlli nel riquadro del GDPR che comprende i controlli gestiti dai clienti.
 
 Gli elenchi di controllo includono le quattro categorie di base di considerazioni per un programma sulla privacy che supporta il GDPR elencate di seguito, insieme ai requisiti di esempio.
 

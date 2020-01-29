@@ -5,12 +5,12 @@ ms.prod: w10
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: ceda5765ca6450959c99222daf457cf7584401ba
-ms.sourcegitcommit: 4612c270867c148818eaa4008f45ca793f5d2a2f
+ms.openlocfilehash: eb7ff76ef51078e423201b41cf24780b822ba452
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38074728"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572242"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Procedura per i partner per la registrazione dei dispositivi
 
@@ -25,7 +25,7 @@ Prima di completare la registrazione per un cliente, è necessario innanzitutto 
 Per completare la registrazione per il cliente, creare innanzitutto un file CSV.
 
 >[!NOTE]
->Per comodità, è possibile scaricare un [modello](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.xlsx) per la *versione partner* del file CSV.
+>Per la vostra convenienza, è possibile scaricare un [file CSV di esempio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv) per la *versione del partner*.
 
 Il file deve includere le **intestazioni di colonna** identiche a quelle del campione (produttore, modello e così via), ma i propri dati per le altre righe. Se si utilizza il modello, aprirlo in uno strumento di modifica del testo, ad esempio Blocco note, e considerare di lasciare tutti i dati solo nella riga 1, immettendo solo i dati nelle righe 2 e seguenti. 
     

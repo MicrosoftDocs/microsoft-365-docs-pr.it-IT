@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: 57d419c291fdfed3a5d7237ae2021e9ef06723f5
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: f2eadfaf23c4485e6b50b6550f0a884690a79548
+ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031901"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41572983"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Individuare e studiare messaggi di posta elettronica dannosi che sono stati recapitati in Office 365
 
@@ -44,9 +44,9 @@ Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazion
 
 |Attività  |Gruppo di ruolo |Ruolo di anteprima necessario?  |
 |---------|---------|---------|
-|Utilizzo di Esplora minacce (e rilevamenti in tempo reale) per l'analisi delle minacce     |Amministratore globale di Office 365 <br> Amministratore della sicurezza <br> Lettore di sicurezza     | No   |
-|Utilizzare Esplora minacce (e rilevamenti in tempo reale) per visualizzare le intestazioni dei messaggi di posta elettronica così come l'anteprima e il download dei messaggi di posta elettronica in quarantena    |Amministratore globale di Office 365 <br> Amministratore della sicurezza <br>Lettore di sicurezza   |       No  |
-|Utilizzare Esplora minacce per visualizzare le intestazioni e scaricare i messaggi di posta elettronica recapitati alle cassette postali     |Amministratore globale di Office 365 <br>Amministratore della sicurezza <br> Lettore di sicurezza <br> Anteprima   |   Sì      |
+|Utilizzo di Esplora minacce (e rilevamenti in tempo reale) per l'analisi delle minacce     |Amministratore globale di Office 365 <br> Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza     | No   |
+|Utilizzare Esplora minacce (e rilevamenti in tempo reale) per visualizzare le intestazioni dei messaggi di posta elettronica così come l'anteprima e il download dei messaggi di posta elettronica in quarantena    |Amministratore globale di Office 365 <br> Amministratore della sicurezza <br>Ruolo con autorizzazioni di lettura per la sicurezza   |       No  |
+|Utilizzare Esplora minacce per visualizzare le intestazioni e scaricare i messaggi di posta elettronica recapitati alle cassette postali     |Amministratore globale di Office 365 <br>Amministratore della sicurezza <br> Ruolo con autorizzazioni di lettura per la sicurezza <br> Anteprima   |   Sì      |
 
 > [!NOTE]
 > L' *Anteprima* è un ruolo e non un gruppo di ruoli. il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365. Al ruolo di amministratore globale di Office 365 viene assegnato l'interfaccia di amministrazione[https://admin.microsoft.com](https://admin.microsoft.com)di Microsoft 365 () e i ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nel centro[https://protection.office.com](https://protection.office.com)protezione & conformità di Office 365. Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
