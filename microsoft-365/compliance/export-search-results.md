@@ -1,5 +1,7 @@
 ---
 title: Esportare i risultati di Ricerca contenuto
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -19,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & conformità a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
-ms.openlocfilehash: b3c978f57533623a6e58d22919430f4e02e78b77
-ms.sourcegitcommit: 062be618f0b18611001552273bb175020420e463
+ms.openlocfilehash: b1bd09777bd934cccf7f1247ed72201bcc4a081f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39676783"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41588196"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
@@ -34,7 +36,7 @@ Tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultat
   
 L'esportazione dei risultati di una ricerca di contenuto comporta la preparazione dei risultati e il relativo download a un computer locale.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per esportare i risultati della ricerca, è necessario assegnare il ruolo di gestione export nel centro sicurezza & Compliance. Questo ruolo è assegnato al gruppo di ruoli Gestore di eDiscovery incorporato. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     

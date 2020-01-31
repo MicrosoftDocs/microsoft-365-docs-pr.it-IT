@@ -1,5 +1,7 @@
 ---
 title: Limiti avanzati di eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui limiti in vigore per la soluzione avanzata di eDiscovery in Microsoft 365. Questo include i limiti di caso, i limiti di indicizzazione e i limiti di ricerca quando si utilizza lo strumento di ricerca per raccogliere i dati del caso.
-ms.openlocfilehash: 622d2669457a2a1e84909aadae9b653ca37684ce
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: b3e5dd1d80a60249ccc24d1af20f5e78f94f8421
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083719"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585715"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limiti di Advanced eDiscovery
 
@@ -58,11 +60,11 @@ I limiti descritti in questa sezione sono correlati all'utilizzo dello strumento
 |Numero massimo di ricerche che possono essere eseguite contemporaneamente.  <br/> |Nessun limite  <br/> | 
 |Numero massimo di ricerche che un singolo utente può avviare contemporaneamente.  <br/> |10   <br/> | 
 |Numero massimo di caratteri per una query di ricerca (inclusi operatori e condizioni).  <br/> |**Cassette postali**: 10.000<br/>**Siti**: 4.000 quando si effettua la ricerca in tutti i siti o 2.000 quando si effettua la ricerca fino a 20 siti <sup>2</sup> <br/> |
-|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso; ad esempio **1\* ** o **set\***. <br/> |3  <br/> |  
+|Numero minimo di caratteri alfanumerici per i caratteri jolly del prefisso; ad esempio **1\* ** o **set\***. <br/> |3   <br/> |  
 |Numero massimo di varianti restituite quando si utilizza il carattere jolly prefisso per cercare una frase esatta o quando si utilizza un carattere jolly prefisso e l'operatore booleano **near** o **ONEAR** .  <br/> |10.000 <sup>3</sup> <br/> |
 |Numero massimo di elementi per ogni cassetta postale utente che vengono visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti.   <br/> |100  <br/> |
-|Numero massimo di elementi di tutte le cassette postali visualizzate nella pagina di anteprima per le ricerche.  <br/> |1,000  <br/> |
-|Numero massimo di cassette postali che è possibile visualizzare in anteprima per i risultati della ricerca.  Se sono presenti più di 1000 cassette postali che contengono elementi che corrispondono alla query di ricerca, sono disponibili per l'anteprima solo le cassette postali di 1.000 con la maggior parte dei risultati.<br/> |1,000  <br/> |
+|Numero massimo di elementi di tutte le cassette postali visualizzate nella pagina di anteprima per le ricerche.  <br/> |1.000  <br/> |
+|Numero massimo di cassette postali che è possibile visualizzare in anteprima per i risultati della ricerca.  Se sono presenti più di 1000 cassette postali che contengono elementi che corrispondono alla query di ricerca, sono disponibili per l'anteprima solo le cassette postali di 1.000 con la maggior parte dei risultati.<br/> |1.000  <br/> |
 |Numero massimo di elementi di siti di SharePoint e OneDrive for business visualizzati nella pagina di anteprima per le ricerche. Vengono visualizzati gli elementi più recenti.  <br/> |200  <br/> |
 |Numero massimo di siti di SharePoint e OneDrive for business che è possibile visualizzare in anteprima per i risultati della ricerca. Se sono presenti più di 200 siti che contengono elementi che corrispondono alla query di ricerca, solo i primi 200 siti con la maggior parte dei risultati sono disponibili per l'anteprima.  <br/> |200  <br/> |
 |Numero massimo di elementi per ogni cassetta postale di cartelle pubbliche visualizzata nella pagina di anteprima per le ricerche.  <br/> |100  <br/> |

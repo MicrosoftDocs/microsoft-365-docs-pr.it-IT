@@ -1,5 +1,7 @@
 ---
 title: Caricare dati non Office 365 in un insieme da rivedere
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importare i dati non di Office 365 in un set di revisione in un caso di eDiscovery avanzato.
-ms.openlocfilehash: 508346c3fe3a8f67addfed4ced08693daa2d49e7
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d839457824420c32a7acd006ae4218008c11b25e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083835"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585685"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Caricare dati non Office 365 in un insieme da rivedere
 
@@ -28,7 +30,7 @@ Non tutti i documenti che devono essere analizzati in Advanced eDiscovery sono d
 >[!Note]
 >Advanced eDiscovery richiede un abbonamento a Microsoft 365 o Office 365 E5 per l'organizzazione o un abbonamento E3 con l'abbonamento al componente aggiuntivo per la conformità avanzato. Se non si dispone di tale piano e si desidera provare Advanced eDiscovery, è possibile iscriversi per una versione di valutazione di Office 365 Enterprise E5.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Se si utilizza la funzionalità carica non Office 365 descritta in questo articolo, è necessario disporre di quanto segue:
 
@@ -40,7 +42,7 @@ Se si utilizza la funzionalità carica non Office 365 descritta in questo artico
 
 - I dati non di Office 365 devono essere un tipo di file supportato da Advanced eDiscovery. Per ulteriori informazioni, vedere [tipi di file supportati in Advanced eDiscovery](supported-filetypes-ediscovery20.md).
 
-- Tutti i file caricati in un set di revisione devono trovarsi in cartelle, in cui ogni cartella è associata a un determinato custode. I nomi di queste cartelle devono utilizzare il formato di denominazione seguente: *alias @ NomeDominio*. L'alias @ NomeDominio deve essere l'alias e il dominio dell'utente di Office 365. È possibile raccogliere tutte le cartelle alias @ DomainName in una cartella radice. La cartella radice può contenere solo le cartelle alias @ domainname. I file allentati nella cartella radice non sono supportati.
+- Tutti i file caricati in un set di revisione devono trovarsi in cartelle, in cui ogni cartella è associata a un determinato custode. I nomi di queste cartelle devono utilizzare il formato di denominazione seguente: *alias@domainname*. Il alias@domainname deve essere l'alias e il dominio dell'utente di Office 365. È possibile raccogliere tutte le cartelle di alias@domainname in una cartella radice. La cartella radice può contenere solo le cartelle alias@domainname. I file allentati nella cartella radice non sono supportati.
 
    La struttura di cartelle per i dati non di Office 365 che si desidera caricare sarebbe simile all'esempio seguente:
 
@@ -79,7 +81,7 @@ Se si utilizza la funzionalità carica non Office 365 descritta in questo artico
 
    ![Importazione non Office 365: caricamento di file](media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   un. Nella casella **percorso della posizione dei file** verificare o digitare il percorso della cartella principale in cui sono stati archiviati i dati non di Office 365 che si desidera caricare. Ad esempio, per il percorso dei file di esempio visualizzati nella **sezione prima di iniziare**, è necessario digitare **%USERPROFILE\Downloads\nonO365**. Se si specifica la posizione corretta, il comando AzCopy visualizzato nella casella sotto il percorso viene aggiornato correttamente.
+   a. Nella casella **percorso della posizione dei file** verificare o digitare il percorso della cartella principale in cui sono stati archiviati i dati non di Office 365 che si desidera caricare. Ad esempio, per il percorso dei file di esempio visualizzati nella **sezione prima di iniziare**, è necessario digitare **%USERPROFILE\Downloads\nonO365**. Se si specifica la posizione corretta, il comando AzCopy visualizzato nella casella sotto il percorso viene aggiornato correttamente.
 
    b. Fare clic su **copia negli Appunti** per copiare il comando visualizzato nella casella.
 

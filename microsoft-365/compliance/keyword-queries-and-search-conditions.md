@@ -1,5 +1,7 @@
 ---
 title: Query delle parole chiave e condizioni di ricerca per ricerca contenuto
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Informazioni sulla posta elettronica e sulle proprietà dei file che è possibile cercare nelle cassette postali di Exchange Online e nei siti di SharePoint o OneDrive for business utilizzando lo strumento di ricerca contenuto nel centro sicurezza & Compliance.  '
-ms.openlocfilehash: 2d3b69090d8b19d474e2049c2082516459d18148
-ms.sourcegitcommit: ff030461137066b0f510a5978f4b5578908e3d2b
+ms.openlocfilehash: e8a0da1815b7ddda889217d027a3aabae4420c56
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41123657"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585915"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Query con parole chiave e condizioni di ricerca per Ricerca contenuto
 
@@ -52,7 +54,7 @@ Nella tabella seguente sono elencate le proprietà dei messaggi di posta elettro
 |:-----|:-----|:-----|:-----|
 |AttachmentNames|I nomi dei file allegati a un messaggio di posta elettronica.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:. pptx|Messaggi che contengono un file allegato denominato annualreport.ppt. Nel secondo esempio, utilizzando il carattere jolly si ottengono dei messaggi contenenti la parola "annual" nel nome file di un allegato. Nel terzo esempio vengono restituiti tutti gli allegati con estensione di file PPTX.|
 |Ccn|Il campo Ccn di un messaggio di posta elettronica. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|Tutti gli esempi restituiscono messaggi contenenti Pilar Pinilla nel campo Bcc (Ccn).|
-|Category| Le categorie da cercare. Le categorie possono essere definite dagli utenti tramite Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). I valori possibili sono i seguenti:  <br/><br/>  blu  <br/>  verde  <br/>  arancione  <br/>  viola  <br/>  rosso  <br/>  giallo|`category:"Red Category"`|I messaggi ai quali è stata assegnata la categoria di colore rosso nelle cassette postali di origine. |
+|Categoria| Le categorie da cercare. Le categorie possono essere definite dagli utenti tramite Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). I valori possibili sono i seguenti:  <br/><br/>  blu  <br/>  verde  <br/>  arancione  <br/>  viola  <br/>  rosso  <br/>  giallo|`category:"Red Category"`|I messaggi ai quali è stata assegnata la categoria di colore rosso nelle cassette postali di origine. |
 |CC|Campo CC di un messaggio di posta elettronica. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|In entrambi gli esempi, i messaggi con Pilar Pinilla specificati nel campo CC.|
 |FolderId|ID della cartella (GUID) di una cartella della cassetta postale specifica. Se si utilizza questa proprietà, assicurarsi di eseguire una ricerca nella cassetta postale in cui si trova la cartella specificata. Verrà eseguita la ricerca solo nella cartella specificata. Tutte le sottocartelle della cartella non verranno cercate. Per eseguire la ricerca nelle sottocartelle, è necessario utilizzare la proprietà FolderId per la sottocartella che si desidera ricercare.  <br/> Per ulteriori informazioni sulla ricerca della proprietà folderid e sull'utilizzo di uno script per ottenere gli ID della cartella per una cassetta postale specifica, vedere [use content search in Office 365 for Targeted Collections](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|Nel primo esempio vengono restituiti tutti gli elementi nella cartella della cassetta postale specificata. Nel secondo esempio vengono restituiti tutti gli elementi della cartella delle cassette postali specificata inviati o ricevuti da garthf@contoso.com.|
 |From|Il mittente di un messaggio di posta elettronica. <sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|I messaggi inviati dall'utente specificato o da un dominio specificato.|

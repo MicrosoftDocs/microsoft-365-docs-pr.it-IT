@@ -1,5 +1,7 @@
 ---
 title: Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR nel centro sicurezza & Compliance
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Il GDPR fornisce ai cittadini dell'Unione europea (denominati soggetti dei dati) diritti specifici per i loro dati personali; tali diritti includono l'ottenimento di copie, la richiesta di modifiche, la limitazione dell'elaborazione, l'eliminazione o la ricezione in formato elettronico. Una richiesta formale da parte di un soggetto dei dati di intraprendere un'azione sui loro dati personali è denominata richiesta del soggetto dei dati o DSR. È possibile utilizzare i casi DSR nel centro conformità di Office 365 e Microsoft 365 per gestire le indagini DSR dell'organizzazione.
-ms.openlocfilehash: 4b1e6eac17c95e3d0fe638711483802c829fdd56
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 6d7770be686e62dc6afde368bcb4e821f72c2fff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686553"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41582935"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR nel centro sicurezza & Compliance
 
@@ -53,7 +55,7 @@ Se si utilizza lo strumento di caso DSR, è possibile:
     
 - Esportare i dati in risposta a una richiesta di accesso o di esportazione DSR.
     
-- Eliminare i casi in cui il processo di analisi DSR è stato completato. In questo modo vengono rimosse tutte le ricerche e i processi di esportazione associati al caso.
+- Eliminare i casi in cui il processo di indagine DSR è completato. In questo modo vengono rimosse tutte le ricerche e i processi di esportazione associati al caso.
     
 Di seguito è indicato il processo di alto livello per l'utilizzo dello strumento di gestione dei casi DSR per gestire le indagini DSR:
   
