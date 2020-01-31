@@ -5,17 +5,19 @@ keywords: Microsoft 365, gestione dei rischi Insider, gestione dei rischi, confo
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5d32e28d53fccbb16d935bbd9348ad7c12bac365
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: aea8c4a8dff0581b9286880d646728eb9a8dd555
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259844"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41590667"
 ---
 # <a name="get-started-with-insider-risk-management-preview"></a>Informazioni introduttive sulla gestione dei rischi Insider (Preview)
 
@@ -24,7 +26,7 @@ Utilizzare i criteri di gestione dei rischi Insider per identificare le attivit�
 >[!IMPORTANT]
 >La soluzione Microsoft 365 Insider Risk Management fornisce un'opzione tenant level per consentire ai clienti di facilitare la governance interna a livello di utente. Gli amministratori a livello di tenant possono configurare le autorizzazioni per consentire l'accesso a questa soluzione per i membri dell'organizzazione e configurare i connettori di dati nel centro conformità di Microsoft 365 per importare i dati rilevanti a supporto dell'identificazione a livello di utente potenzialmente attività rischiosa. I clienti possono essere calcolati dall'amministratore e resi disponibili ad altri utenti dell'organizzazione, in base al comportamento, al carattere o alle prestazioni del singolo utente.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Prima di iniziare a utilizzare la gestione dei rischi Insider, è necessario confermare l'abbonamento a Microsoft 365. Gli utenti inclusi nei criteri di gestione dei rischi Insider devono disporre di una licenza di conformità Microsoft 365 E5 o essere inclusi in un abbonamento a Microsoft 365 E5.
 
