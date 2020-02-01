@@ -1,5 +1,7 @@
 ---
 title: Differenze tra i risultati di ricerca stimati ed effettivi di eDiscovery in Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprendere il motivo per cui i risultati di ricerca stimati ed effettivi possono variare nelle ricerche eseguite con gli strumenti di eDiscovery in Office 365. '
-ms.openlocfilehash: dfa6895f464e1a10f30bd642ef6b11e0869a7e5d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082943"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595251"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Differenze tra i risultati di ricerca stimati ed effettivi di eDiscovery in Office 365
 
@@ -59,7 +61,7 @@ Di seguito sono riportate alcune ragioni per queste differenze:
     
     Quando si utilizza lo strumento di ricerca contenuto nel centro sicurezza & Compliance, è possibile includere gli elementi non indicizzati nella stima della ricerca. Il numero di elementi non indicizzati restituiti dalla ricerca è elencato nel riquadro dei dettagli insieme agli altri risultati della ricerca stimati. Tutti gli elementi non indicizzati verrebbero inclusi anche nella dimensione totale dei risultati della ricerca stimati. Quando si esportano i risultati della ricerca, si ha la possibilità di includere o meno gli elementi non indicizzati. Il modo in cui vengono configurate queste opzioni potrebbe causare differenze tra i risultati di ricerca stimati e quelli effettivamente scaricati. 
     
-- **Esportazione dei risultati di una ricerca di contenuto che include tutti i percorsi di contenuto** : se la ricerca da cui si stanno esportando risultati è stata una ricerca di tutti i percorsi di contenuto nell'organizzazione, solo gli elementi non indicizzati provenienti da percorsi di contenuto che contengono gli elementi che soddisfano i criteri di ricerca verranno esportati. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Tuttavia, gli elementi non indicizzati provenienti da tutti i percorsi di contenuto (anche quelli che non contengono elementi che corrispondono alla query di ricerca) saranno inclusi nei risultati della ricerca stimati. 
+- **Esportazione dei risultati di una ricerca di contenuto che include tutti i percorsi di contenuto** : se la ricerca da cui si stanno esportando risultati è stata una ricerca di tutti i percorsi di contenuto dell'organizzazione, vengono esportati solo gli elementi non indicizzati provenienti da percorsi di contenuto che contengono elementi che corrispondono ai criteri di ricerca. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Tuttavia, gli elementi non indicizzati provenienti da tutti i percorsi di contenuto (anche quelli che non contengono elementi che corrispondono alla query di ricerca) saranno inclusi nei risultati della ricerca stimati. 
     
     In alternativa, se la ricerca che si sta esportando risulta da posizioni di contenuto specifiche incluse, gli elementi non indicizzati (che non sono esclusi dai criteri di ricerca) da tutti i percorsi di contenuto specificati nella ricerca verranno esportati. In questo caso, il numero stimato di elementi non indicizzati e il numero di elementi non indicizzati effettivamente esportati devono corrispondere.
     

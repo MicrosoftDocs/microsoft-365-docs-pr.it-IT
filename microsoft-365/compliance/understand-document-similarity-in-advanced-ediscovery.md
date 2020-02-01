@@ -1,5 +1,7 @@
 ---
 title: Comprendere la somiglianza del documento in Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Esaminare in che modo il valore di somiglianza del documento, il livello minimo di somiglianza per due file da considerare quasi duplicati, è compatibile con Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 29a9eef44f8eb46f53099f457c8cc86afe64dea3
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c11359681de4d1e078cde8ebf603396c9a71e3b7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802639"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597333"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Comprendere la somiglianza del documento in Office 365 Advanced eDiscovery
 

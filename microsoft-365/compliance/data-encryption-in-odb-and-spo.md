@@ -1,5 +1,7 @@
 ---
 title: Crittografia dei dati in OneDrive for Business e SharePoint Online
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Informazioni sugli elementi di base della crittografia per la sicurezza dati in OneDrive for Business e SharePoint Online.
-ms.openlocfilehash: a1ed9f511f77883428b23ff224956593763403e1
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e22412f43f8caf4ff12d3f6e4f56e08d9d77b4ae
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686504"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595443"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Crittografia dei dati in OneDrive for Business e SharePoint Online
 

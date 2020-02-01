@@ -1,5 +1,7 @@
 ---
 title: Note sulla versione per le indagini sui dati (Preview) in Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto il nuovo strumento di analisi dei dati (Preview) in Microsoft 365.
-ms.openlocfilehash: 200b1c6c08d0fdb1c4af5da59fa75836b4b1fab3
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 57605566a8847a3630e1c4656f98f71ebb414f86
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083001"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595413"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Note sulla versione per le indagini sui dati (Preview) in Microsoft 365
 
@@ -45,4 +47,4 @@ ms.locfileid: "37083001"
 
 - **Jobs** – verifica lo stato dei processi con esecuzione prolungata.
 
-- **Eliminare definitivamente gli elementi della cassetta postale** -in situazioni urgenti, potrebbe essere necessario eliminare in modo definitivo gli elementi fuori luogo. A tale scopo, è possibile eseguire il comando **New-ComplianceSearchAction-Purge-PurgeType HardDelete** nel centro sicurezza & Compliance Center PowerShell per rimuovere definitivamente gli elementi dalle cassette postali. Per ulteriori informazioni, vedere [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- **Eliminare definitivamente gli elementi della cassetta postale** -in situazioni urgenti, potrebbe essere necessario eliminare in modo definitivo gli elementi fuori luogo. A tale scopo, è possibile eseguire il comando **New-ComplianceSearchAction-Purge-PurgeType HardDelete** nel centro sicurezza & Compliance Center PowerShell per rimuovere definitivamente gli elementi dalle cassette postali. Per altre informazioni, vedere [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).

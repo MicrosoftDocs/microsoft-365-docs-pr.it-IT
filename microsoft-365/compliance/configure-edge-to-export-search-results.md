@@ -1,5 +1,7 @@
 ---
 title: Utilizzare lo strumento di esportazione di eDiscovery di Office 365 in Microsoft Edge
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: È necessario abilitare il supporto ClickOnce per l'utilizzo di Microsoft Edge per esportare i risultati della ricerca dalla ricerca contenuto e eDiscovery nel centro sicurezza e conformità.
-ms.openlocfilehash: f3e0442fe349aa3364594e07873b229f3205fb5e
-ms.sourcegitcommit: d656fd58e5491cfb7fee16b55dc7a58904ed128d
+ms.openlocfilehash: 896d39d81fa56b3a118b2bee450476e422ac3921
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39891127"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595733"
 ---
 # <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>Utilizzare lo strumento di esportazione di eDiscovery di Office 365 in Microsoft Edge
 

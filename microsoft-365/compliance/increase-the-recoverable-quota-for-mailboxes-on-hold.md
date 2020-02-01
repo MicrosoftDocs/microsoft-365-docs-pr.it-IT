@@ -1,5 +1,7 @@
 ---
 title: Aumentare la quota degli elementi ripristinabili per le cassette postali bloccate
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: "Abilitare la cassetta postale di archiviazione e attivare l'archiviazione automatica per aumentare le dimensioni della cartella elementi ripristinabili per una cassetta postale in Office 365. "
-ms.openlocfilehash: 266437d77ba4f3a82fa69db6a997fd58748fa834
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 4b93c8be01e9d84fb2c2bf93ed67b2ea1b18e812
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686563"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597933"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentare la quota degli elementi ripristinabili per le cassette postali bloccate
 
@@ -61,7 +63,7 @@ Nella parte restante di questo argomento vengono descritte le procedure dettagli
 
 Il primo passaggio consiste nel creare un tag di conservazione personalizzato (denominato tag dei criteri di conservazione o RPT) per la cartella elementi ripristinabili. Come spiegato in precedenza, questo RPT sposta gli elementi dalla cartella elementi ripristinabili nella cassetta postale principale dell'utente alla cartella elementi ripristinabili nella cassetta postale di archiviazione dell'utente. È necessario utilizzare PowerShell per creare un RPT per la cartella elementi ripristinabili. Non è possibile usare l'interfaccia di amministrazione di Exchange (EAC). 
   
-1. [Connettersi a Exchange Online usando una sessione remota di PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
+1. [Connettersi a Exchange Online tramite la sessione remota di PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
     
 2. Eseguire il seguente comando per creare un nuovo RPT per la cartella elementi ripristinabili: 
     
@@ -84,7 +86,7 @@ Il passaggio successivo consiste nel creare un nuovo criterio di conservazione e
   
 Prima di creare il nuovo criterio di conservazione, determinare i tag di conservazione aggiuntivi che si desidera aggiungere. Per un elenco dei tag di conservazione aggiunti al criterio di gestione record di messaggistica predefinito e per informazioni sulla creazione di nuovi tag di conservazione, vedere gli argomenti seguenti:
   
-- [Criteri di conservazione predefiniti in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
+- [Criteri di conservazione predefiniti di Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
 - [Cartelle predefinite che supportano i tag di Criteri di conservazione](https://go.microsoft.com/fwlink/p/?LinkId=746957)
     
@@ -221,7 +223,7 @@ $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlace
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Dopo aver abilitato la cassetta postale di archiviazione di un utente, è consigliabile comunicare all'utente che altri elementi della cassetta postale (non solo gli elementi nella cartella elementi ripristinabili) potrebbero essere spostati nella cassetta postale di archiviazione. Ciò è dovuto al fatto che il criterio di gestione record di messaggistica predefinito assegnato alle cassette postali di Exchange Online contiene un tag di conservazione (denominati 2 anni di spostamento in Archivio) che sposta gli elementi nella cassetta postale di archiviazione due anni dopo la data in cui l'elemento è stato recapitato alla cassetta postale o creato dal utente. Per ulteriori informazioni, vedere [criteri di conservazione predefiniti in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     

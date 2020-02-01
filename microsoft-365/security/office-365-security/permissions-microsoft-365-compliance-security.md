@@ -1,7 +1,9 @@
 ---
 title: Autorizzazioni nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365
-ms.author: laurawi
-author: laurawi
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzando il Centro sicurezza Microsoft 365 o il Centro conformità Microsoft 365, è possibile gestire le autorizzazioni in una posizione centralizzata per tutte le attività relative alla sicurezza o alla conformità.
-ms.openlocfilehash: 43f6388820c531c99b6c12f615a3ffb8e3b85427
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 53695bb412c760c769692dfe7fb40324f495d356
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971584"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598703"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Autorizzazioni nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365
 
@@ -57,19 +59,19 @@ Gli utenti con questo ruolo hanno le autorizzazioni necessarie per gestire le fu
 |**In questo servizio...**|**L'amministratore di conformità può...**|
 |:-----|:-----|
 |[**Centro conformità Microsoft 365**](https://compliance.microsoft.com/)|Proteggere e gestire i dati dell'organizzazione in tutti i servizi di Microsoft 365. <br/><br/> Gestire gli avvisi di conformità.|
-|[**Compliance Manager**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Monitorare, assegnare e verificare le attività di conformità alle normative dell'organizzazione.|
+|[**Punteggio conformità**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Monitorare, assegnare e verificare le attività di conformità alle normative dell'organizzazione.|
 |[**Centro sicurezza e conformità di Office 365**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Gestire la governance dei dati. <br/><br/> Eseguire analisi sui dati e di carattere legale. <br/><br/> Gestire le richieste degli interessati.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|Visualizzare tutti i dati di controllo di Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Disporre di autorizzazioni di sola lettura e gestire gli avvisi. <br/><br/> Creare e modificare i criteri di file e consentire azioni di governance sui file. <br/><br/> Visualizzare tutti i report predefiniti in Gestione dati.|
 
 ### <a name="compliance-data-administrator"></a>Amministratore dati di conformità
 
-Gli utenti con questo ruolo hanno le autorizzazioni necessarie per proteggere e monitorare i dati nel Centro conformità Microsoft 365, nell'interfaccia di amministrazione di Microsoft 365 e in Azure. Gli utenti possono anche gestire tutte le funzionalità all'interno dell'interfaccia di amministrazione di Exchange, in Compliance Manager, nell'interfaccia di amministrazione di Teams e Skype for Business e creare ticket di supporto per Azure e Microsoft 365.
+Gli utenti con questo ruolo hanno le autorizzazioni necessarie per proteggere e monitorare i dati nel Centro conformità Microsoft 365, nell'interfaccia di amministrazione di Microsoft 365 e in Azure. Gli utenti possono anche gestire tutte le funzionalità all'interno dell'interfaccia di amministrazione di Exchange, in Punteggio conformità, nell'interfaccia di amministrazione di Teams e Skype for Business e creare ticket di supporto per Azure e Microsoft 365.
 
 |**In questo servizio...**|**L'amministratore dati di conformità può...**|
 |:-----|:-----|
 |[**Centro conformità Microsoft 365**](https://compliance.microsoft.com/)|Proteggere e gestire i dati dell'organizzazione in tutti i servizi di Microsoft 365. <br/><br/> Gestire gli avvisi di conformità. <br/><br/> Gestire le etichette di riservatezza.|
-|[**Compliance Manager**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Monitorare, assegnare e verificare le attività di conformità alle normative dell'organizzazione.|
+|[**Punteggio conformità**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Monitorare, assegnare e verificare le attività di conformità alle normative dell'organizzazione.|
 |[**Centro sicurezza e conformità di Office 365**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|Gestire la governance dei dati. <br/><br/> Eseguire analisi sui dati e di carattere legale. <br/><br/> Gestire le richieste degli interessati. <br/><br/> Gestire le etichette di riservatezza.|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (presto disponibile)|Visualizzare tutti i dati di controllo di Intune.|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|Utilizzare le autorizzazioni di sola lettura per visualizzare le informazioni. <br/>Gestire gli avvisi. <br/><br/> Creare e modificare i criteri di file e consentire azioni di governance sui file. <br/><br/> Visualizzare tutti i report predefiniti in Gestione dati.|
@@ -152,7 +154,7 @@ Assegnando uno dei ruoli di amministratore di conformità o di sicurezza di Micr
 |Azure Active Directory (Azure AD) e Azure AD Identity Protection|[Ruoli di amministratore di Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure Advanced Threat Protection|[Gruppi di ruoli di Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Ruoli di amministratore di Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Compliance Manager|[Ruoli di Compliance Manager](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud#permissions-and-role-based-access-control)|
+|Punteggio di conformità|[Ruoli di Punteggio conformità](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-setup#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Controllo degli accessi in base al ruolo di Exchange](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
 |Intune|[Controllo degli accessi in base al ruolo di Intune](https://docs.microsoft.com/intune/role-based-access-control)|
 |Managed Desktop|[Ruoli di amministratore di Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

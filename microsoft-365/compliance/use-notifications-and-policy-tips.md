@@ -1,5 +1,7 @@
 ---
 title: Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: 2de9ef48d98e5d702e3f96d90f05b83b0ec4e55a
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: e3b83c72c8f18ad58fcedb6b8c4271bfebdf8c13
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686509"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597353"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
 
@@ -91,7 +93,7 @@ Per ogni regola in un criterio DLP, è possibile:
   
 - Inviare la notifica agli utenti selezionati. Questi utenti possono essere il proprietario del contenuto, l'autore dell'ultima modifica apportata al contenuto, il proprietario del sito in cui è archiviato il contenuto o un utente specifico.
     
-- Personalizzare il testo incluso nella notifica tramite HTML o token. Per ulteriori informazioni, vedere la sezione riportata di seguito.
+- Personalizzare il testo incluso nella notifica tramite HTML o token. Per altre informazioni, vedere la sezione seguente.
     
 > [!NOTE]
 >  Le notifiche tramite posta elettronica possono essere inviate solo ai singoli destinatari, non ai gruppi o alle liste di distribuzione. Solo i nuovi contenuti attivano una notifica di posta elettronica. La modifica del contenuto esistente attiverà suggerimenti per i criteri, ma non una notifica tramite posta elettronica. 
@@ -152,9 +154,9 @@ Di seguito sono riportati alcuni punti per comprendere l'utilizzo di un suggerim
   
 - La possibilità di eseguire l'override è per ogni regola e sostituisce tutte le azioni della regola (ad eccezione dell'invio di una notifica, che non può essere sottoposta a override).
     
-- È possibile che il contenuto corrisponda a diverse regole in un criterio DLP, ma viene visualizzato solo il suggerimento per i criteri della regola più restrittiva e con priorità più alta. Ad esempio, un suggerimento per i criteri di una regola che impedisce l'accesso al contenuto viene sovrapposto a un suggerimento per i criteri di una regola che invia semplicemente una notifica. Ciò impedisce che l'utente visualizzi una cascata di suggerimenti per i criteri.
+- È possibile che il contenuto corrisponda a diverse regole in un criterio DLP, ma viene visualizzato solo il suggerimento per i criteri della regola più restrittiva e con priorità più alta. Ad esempio, verrà visualizzato un suggerimento per i criteri di una regola che blocca l'accesso al contenuto rispetto a un suggerimento per i criteri di una regola che invia semplicemente una notifica. In questo modo, gli utenti evitano di dover leggere troppi suggerimenti per i criteri.
     
-- Se i suggerimenti per i criteri nella regola più restrittiva consentono all'utente di ignorare la regola, in questo modo vengono ignorate anche le altre regole per le quali è stata rilevata una corrispondenza del contenuto.
+- 	Se i suggerimenti per i criteri nella regola più restrittiva permettono agli utenti di eseguire l'override della regola, l'override di questa regola comporta anche l'override di qualsiasi altra regola corrispondente al contenuto. 
     
 ## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>Suggerimenti per i criteri nei siti OneDrive for Business e SharePoint Online
 
@@ -281,8 +283,8 @@ Per impostazione predefinita, i suggerimenti per i criteri mostrano un testo sim
     
 - [Creare un criterio di prevenzione della perdita dei dati da un modello](create-a-dlp-policy-from-a-template.md)
     
-- [Creare un criterio di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
+- [Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
     
-- [Elementi inclusi nei modelli di criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
+- [Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
-- [Cosa individuano le tipologie di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
+- [Elementi cercati dai tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)

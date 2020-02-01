@@ -3,14 +3,16 @@ title: Procedura per i partner per la registrazione dei dispositivi
 description: Il modo in cui i partner possono registrare i dispositivi in modo che possano essere gestiti da Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: eb7ff76ef51078e423201b41cf24780b822ba452
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: a9a2a0ccb1e0830d674f4b1b1ef5495fafb38ca3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572242"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596553"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Procedura per i partner per la registrazione dei dispositivi
 

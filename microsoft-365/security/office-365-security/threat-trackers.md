@@ -1,5 +1,7 @@
 ---
 title: Inseguimenti di minacce-nuovi e degni di nota
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Informazioni su informatori di minacce, inclusi i nuovi informatori degni di nota, per consentire all'organizzazione di rimanere al di sopra dei problemi relativi alla sicurezza.
-ms.openlocfilehash: 084d3c6de104c675a2af47984a2fcbffcf89447e
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f2a68cfbbae0ce91716f69514e30136ac223bbf8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084806"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598183"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Inseguimenti di minacce-nuovi e degni di nota
 
@@ -34,7 +36,7 @@ I Tracker di minacce sono widget e visualizzazioni informativi che forniscono se
   
 ![Esempio di monitoraggio di minacce che mostra le campagne antimalware](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
-La maggior parte delle pagine del Tracker include i numeri di tendenza che vengono aggiornati periodicamente, widget che consentono di comprendere quali sono i problemi più grandi o sono cresciuti di più e un collegamento rapido nella colonna **azioni** che consente di visualizzare le informazioni più dettagliate in Esplora risorse. informazioni. 
+La maggior parte delle pagine del depistaggio include i numeri di tendenza che vengono aggiornati periodicamente, widget che consentono di comprendere quali sono i problemi più grandi o sono cresciuti di più e un collegamento rapido nella colonna **azioni** che consente di visualizzare le informazioni più dettagliate. 
   
 ![Esempio di informazioni sulla campagna in Esplora risorse](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   

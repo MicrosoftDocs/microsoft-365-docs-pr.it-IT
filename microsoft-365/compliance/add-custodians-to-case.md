@@ -1,5 +1,7 @@
 ---
 title: Aggiungere i depositari a un caso avanzato di eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fc8002d900c38dee1b8487bbc0167b956f63b97f
-ms.sourcegitcommit: e292e9f0181d722a11398fbd012bb84589aef052
+ms.openlocfilehash: 3acd3b300c4472b32a261d28aeae6a9d94e17423
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257054"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594059"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Aggiungere i depositari a un caso avanzato di eDiscovery
 
@@ -29,7 +31,7 @@ Utilizzare il flusso di lavoro seguente per aggiungere e gestire i depositari ne
 
 ![Scheda Gestione depositaria](media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Per aggiungere depositari a un caso, è necessario essere membri del gruppo di ruoli eDiscovery Manager. In questo modo, vengono fornite le autorizzazioni necessarie per aggiungere i depositari a un caso e inserire un'esenzione nelle origini dati della custodia.
 

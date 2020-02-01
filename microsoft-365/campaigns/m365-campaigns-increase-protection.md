@@ -1,5 +1,7 @@
 ---
 title: Protezione avanzata dalle minacce
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Ottenere assistenza per aumentare il livello di protezione in Microsoft 365 business
-ms.openlocfilehash: ce37f6d31037c442d6cabd6adc07f5f0138add54
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 3cfb8d0a38fc797ec25fb0e4e33409e225646ef2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748307"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594851"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
@@ -81,13 +83,13 @@ Per creare una regola di trasporto della posta:
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**||
 |:-----|:-----|:-----|
-|Name  <br/> |Regola anti-ransomware: avvisa gli utenti  <br/>  |
+|Nome  <br/> |Regola anti-ransomware: avvisa gli utenti  <br/>  |
 |Applica questa regola se. . .  <br/> |Qualsiasi allegato. . . l'estensione del file corrisponde. . .  <br/> |
 |Specificare parole o frasi  <br/> |Aggiungere questi tipi di file:  <br/> dotm, docm, xlsm, sltm, xla, xlam, XLL, pptm, potm, ppam, ppsm, sldm  <br/>|
 |Eseguire le operazioni seguenti. . .  <br/> |Invia una notifica al destinatario tramite messaggio  <br/> |
 |Fornire il testo del messaggio  <br/> |Non aprire questi tipi di file da utenti che non si conoscono perché potrebbero contenere macro con codice dannoso.  <br/> |
    
-Per ulteriori informazioni, vedere:
+Per altre informazioni, vedere:
   
 - [Come gestire ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -115,7 +117,7 @@ Per creare una regola di trasporto della posta, guardare [questo breve video](ht
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**|
 |:-----|:-----|
-|Name  <br/> |Impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni  <br/> |
+|Nome  <br/> |Impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni  <br/> |
 |Applica questa regola se...  <br/> |Il mittente. . . è esterno/interno. . . All'interno dell'organizzazione  <br/> |
 |Aggiungi condizione  <br/> |Le proprietà del messaggio. . . includere il tipo di messaggio. . . Inoltro automatico  <br/> |
 |Eseguire le operazioni seguenti:  <br/> |Blocca il messaggio. . . rifiuta il messaggio e Includi una spiegazione.  <br/> |
@@ -145,7 +147,7 @@ Per creare un criterio di anti-phishing ATP, guardare [questo breve video di for
 
 |**Impostazione o opzione**<br/>|**Impostazione consigliata** <br/>|
 |:-----|:-----|
-|Name  <br/> |Domain e la maggior parte del personale prezioso della campagna  <br/> |
+|Nome  <br/> |Domain e la maggior parte del personale prezioso della campagna  <br/> |
 |Descrizione  <br/> |Garantire che la maggior parte del personale importante e del nostro dominio non siano rappresentati.  <br/> |
 |Aggiungere gli utenti a Protect  <br/> |Seleziona **+ Aggiungi una condizione, il destinatario è**. Digitare i nomi utente oppure immettere l'indirizzo di posta elettronica del candidato, del responsabile della campagna e di altri membri del personale importanti. È possibile aggiungere fino a 20 indirizzi interni ed esterni che si desidera proteggere dalla rappresentazione.  <br/> |
 |Aggiungere domini da proteggere  <br/> |Selezionare **+ Aggiungi una condizione, il dominio del destinatario è**. Se ne è stata definita una, immettere il dominio personalizzato associato all'abbonamento a Microsoft 365. È possibile immettere più di un dominio.  <br/> |
@@ -201,7 +203,7 @@ Per creare un criterio degli allegati sicuri di ATP, guardare [questo breve vide
 
 |**Impostazione o opzione**|**Impostazione consigliata** <br/>|
 |:-----|:-----|
-|Name  <br/> |Blocca i messaggi di posta elettronica correnti e futuri con malware rilevato.  <br/> |
+|Nome  <br/> |Blocca i messaggi di posta elettronica correnti e futuri con malware rilevato.  <br/> |
 |Descrizione  <br/> |Blocca i messaggi di posta elettronica e gli allegati correnti e futuri con malware rilevato.  <br/> |
 |Save Attachments Unknown Malware Response  <br/> |Selezionare **blocca-blocca i messaggi di posta elettronica e gli allegati correnti e futuri con malware rilevato**.  <br/> |
 |Reindirizza l'allegato sul rilevamento  <br/> |Attiva reindirizzamento (selezionare questa casella) immettere l'account di amministratore o la configurazione di una cassetta postale per la quarantena.          Applicare la selezione precedente se la ricerca di malware per gli allegati non è stata eseguita o si verifica un errore (selezionare questa casella).  <br/> |
@@ -245,7 +247,7 @@ Per creare un nuovo criterio mirato a tutti i destinatari nel dominio:
 
 |**Impostazione o opzione**|**Impostazione consigliata** <br/>|
 |:-----|:-----|
-|Name  <br/> |Criteri dei collegamenti sicuri per tutti i destinatari del dominio  <br/> |
+|Nome  <br/> |Criteri dei collegamenti sicuri per tutti i destinatari del dominio  <br/> |
 |Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi  <br/> |Selezionare **su URL verrà riscritto e controllato in base a un elenco di collegamenti dannosi noti quando l'utente fa clic sul collegamento**.  <br/> |
 |Utilizzare gli allegati sicuri per analizzare il contenuto scaricabile  <br/> |Selezionare questa casella.  <br/> |
 |Applicato a  <br/> |Il dominio del destinatario è. . . Selezionare il dominio.  <br/> |

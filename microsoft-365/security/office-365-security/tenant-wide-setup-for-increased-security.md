@@ -1,5 +1,7 @@
 ---
 title: Configurare il tenant di Office 365 per una maggiore sicurezza
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Office 365. Le esigenze di sicurezza possono richiedere più o meno sicurezza. Utilizzare questi suggerimenti come punto di partenza.
-ms.openlocfilehash: f5df416b71cd3b4885033786d83160644b6d7b1a
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 01cf10818c83171fbbf30b5ec7f08871f0b9b328
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971454"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598203"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurare il tenant di Office 365 per una maggiore sicurezza
 
@@ -126,6 +128,7 @@ Ulteriori informazioni:
 
 Questi articoli e guide forniscono ulteriori informazioni prescrittivi per la protezione dell'ambiente Office 365:
 
-- [Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazione agile](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance) (è possibile utilizzare queste raccomandazioni in qualsiasi ambiente, in particolare ambienti solo cloud)
+- [Guida alla sicurezza Microsoft per campagne politiche, organizzazioni no profit e altre organizzazione agile](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) (è possibile utilizzare queste raccomandazioni in qualsiasi ambiente, in particolare ambienti solo cloud)
+
 
 - [Criteri di sicurezza e configurazioni consigliate per identità e dispositivi](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations) (questi suggerimenti includono la guida per gli ambienti ADFS)

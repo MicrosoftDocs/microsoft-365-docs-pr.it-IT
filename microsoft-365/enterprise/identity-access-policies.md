@@ -5,6 +5,8 @@ author: BrendaCarter
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
@@ -13,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: b2e9670d700d8c09caf861f5a24b0570e0f74256
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: dad6c2f8d85c81b67da1aa3425c73e5991b3829b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "37746552"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596953"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -39,7 +41,7 @@ L'utilizzo dell'autenticazione a più fattori è consigliato prima di registrare
 Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine indicato in questa tabella. Tuttavia, i criteri dell'AMF per la protezione sensibile e altamente regolamentata possono essere implementati in qualsiasi momento.
 
 
-|Livello di protezione|Generali|Altre informazioni|
+|Livello di protezione|Generali|Ulteriori informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-modern-authentication)|I client che non utilizzano l'autenticazione moderna possono ignorare le regole di accesso condizionale, quindi è importante bloccarle|
@@ -231,7 +233,7 @@ Nelle tabelle seguenti vengono descritte le impostazioni consigliate:
 ||Richiedi credenziali aziendali per l'accesso|No||
 ||Controlla di nuovo i requisiti di accesso dopo (minuti)|30||
 ||Blocca acquisizione schermo e Assistente per Android|No|In iOS questa opzione non è disponibile|
-|Requisiti di sicurezza per l'accesso|Tentativi massimi del PIN|5|Reimposta PIN|
+|Requisiti di sicurezza per l'accesso|Tentativi massimi del PIN|5 |Reimposta PIN|
 ||Periodo di prova offline|720|Blocca accesso|
 ||Intervallo offline (giorni) prima della cancellazione dei dati dell'app|90|Cancellare i dati|
 ||Dispositivi jailbroken/rooted| |Cancellare i dati|
@@ -311,7 +313,7 @@ Tutti i criteri descritti in precedenza vengono considerati distribuiti se asseg
 ||Lunghezza minima password|6 ||
 ||Numero massimo di minuti di inattività prima che sia necessaria la password|15 |Questa impostazione è supportata per le versioni Android 4,0 e successive o per KNOX 4,0 o versione precedente. Per i dispositivi iOS, è supportato per iOS 8,0 e superiori|
 ||Scadenza password (giorni)|41||
-||Numero di password precedenti per impedire il riutilizzo|5||
+||Numero di password precedenti per impedire il riutilizzo|5 ||
 ||Richiedi password quando il dispositivo ritorna dallo stato di inattività (mobile e olografico)|Richiedono|Disponibile per Windows 10 e versioni successive|
 |Crittografia|Crittografia dell'archiviazione dei dati nel dispositivo|Richiedono||
 |Sicurezza del dispositivo|Firewall|Richiedono||

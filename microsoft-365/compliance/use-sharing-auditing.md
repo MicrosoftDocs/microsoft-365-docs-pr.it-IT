@@ -1,5 +1,7 @@
 ---
 title: Controllare la condivisione per identificare risorse condivise con utenti esterni
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,12 +20,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: "La condivisione è un'attività chiave in SharePoint Online e OneDrive for business. Gli amministratori possono ora utilizzare il controllo di condivisione nel log di controllo di Office 365 per identificare le risorse condivise con gli utenti esterni all'organizzazione. "
-ms.openlocfilehash: 8d473a3e3fb1c8e5e8753265c3982b27271ed39c
-ms.sourcegitcommit: e2ed110c4c3a8434f9fcc9d610069bc77bc39220
+ms.openlocfilehash: f979bd9a3b796fc3e9e84872df7e0b6071aefc03
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38686511"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597283"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Controllare la condivisione per identificare risorse condivise con utenti esterni
 
@@ -99,7 +101,7 @@ Il primo passaggio consiste nell'eseguire una ricerca nel registro di controllo 
     
 3. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su ricerca ****  > **log di controllo**di ricerca.
     
-    Viene visualizzata la pagina di **ricerca del registro di controllo** . 
+    Viene visualizzata la pagina **Ricerca log di controllo**. 
     
 4. In **attività**fare clic su **condivisione e accesso alle attività richieste** per cercare gli eventi relativi alla condivisione. 
     

@@ -1,5 +1,7 @@
 ---
 title: Eseguire una ricerca nel registro di controllo di Office 365 per la risoluzione dei problemi comuni
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: È possibile utilizzare lo strumento di ricerca del registro di controllo di Office 365 per risolvere i problemi comuni, ad esempio l'analisi di un account compromesso, la ricerca di chi ha configurato l'inoltro della posta elettronica per una cassetta postale o il motivo per cui un utente esterno ha eseguito correttamente l'accesso all'organizzazione.
-ms.openlocfilehash: a9901168ef4c8e2d2128fb143cbe134a04fb4e2c
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: b453cccb0486ab923de720edb5a6a877395b9b7d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39603790"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595973"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Eseguire una ricerca nel registro di controllo di Office 365 per esaminare i problemi di supporto comuni
 

@@ -1,5 +1,7 @@
 ---
 title: Gestire gli acquisti in modalità self-service (utenti)
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -12,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Gli utenti possono imparare a gestire i propri acquisti in modalità self-service.
-ms.openlocfilehash: 6cf62a3968738f3367c5ed6a681e7f225f1dae8b
-ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
+ms.openlocfilehash: 1535784350b719b606dca9417f9cdb192060adf1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41120223"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594657"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gestire gli acquisti in modalità self-service (utenti)
 

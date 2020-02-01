@@ -1,6 +1,8 @@
 ---
 title: Analizzare e rispondere automaticamente alle minacce in Office 365
 keywords: ARIA, autoIR, ATP, automatizzato, investigazione, risposta, correzione, minacce, avanzate, minacce, protezione
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Iniziare a utilizzare le funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 3f13b1de2747dcb6672f56989ff73cdf485e49b6
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967989"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598763"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Analizzare e rispondere automaticamente alle minacce in Office 365
 
@@ -30,7 +32,7 @@ A seconda dell'abbonamento, la [protezione avanzata dalle minacce di Office 365]
 - Per ottenere una panoramica di come funziona, vedere [Automatic Investigation and Response in Office 365](automated-investigation-response-office.md).
 
 > [!TIP]
-> Si dispone di Microsoft 365 E5 o Microsoft 365 E3 insieme all'identità & protezione dalle minacce? Valutare la possibilità di provare l' [analisi automatizzata e la risposta (Air) in Microsoft Threat Protection](../mtp/mtp-autoir.md).
+> Si possiedono Microsoft 365 E5 o Microsoft 365 E3 con identità e protezione dalle minacce? Valutare la possibilità di provare l' [analisi automatizzata e la risposta (Air) in Microsoft Threat Protection](../mtp/mtp-autoir.md).
 
 Con le funzionalità di analisi e risposta automatizzate, quando vengono attivati determinati avvisi, vengono avviati uno o più schemi di sicurezza e il processo di analisi automatizzato inizia. Durante e dopo un processo di analisi automatizzato, il team di sicurezza può eseguire le operazioni seguenti:
 
@@ -43,7 +45,7 @@ Con le funzionalità di analisi e risposta automatizzate, quando vengono attivat
 
 ## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
 
-1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere. Questo porta al centro sicurezza & Compliance.
+1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso. Questo porta al centro sicurezza & Compliance.
 
 2. Eseguire una delle operazioni seguenti:
 
@@ -65,7 +67,7 @@ Con le funzionalità di analisi e risposta automatizzate, quando vengono attivat
 
 In Office 365, le indagini automatizzate in genere determinano una o più azioni consigliate. Tuttavia, non vengono eseguite azioni finché non vengono approvate dal team di operazioni di sicurezza. Utilizzare la procedura seguente per esaminare e approvare le azioni.
 
-1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere. 
+1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso. 
 
 2. Andare a > **indagini**sulla **gestione delle minacce**.
 
@@ -81,7 +83,7 @@ In Office 365, le indagini automatizzate in genere determinano una o più azioni
 
 Alcuni tipi di avvisi attivano l'analisi automatizzata in Office 365. Per ulteriori informazioni, vedere [Alerts](automated-investigation-response-office.md#alerts). Utilizzare la procedura seguente per visualizzare i dettagli relativi a un avviso associato a un'indagine automatizzata.
 
-1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere. Questo porta al centro sicurezza & Compliance.
+1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso. Questo porta al centro sicurezza & Compliance.
 
 2. Andare a > **indagini**sulla **gestione delle minacce**.
 

@@ -1,5 +1,7 @@
 ---
 title: Gestire gli acquisti in modalità self-service (amministratori)
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -12,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a gestire gli acquisti in modalità self-service effettuati dagli utenti dell'organizzazione.
-ms.openlocfilehash: 4cd59bc10d6a6a856932c8bd94e67469217c1313
-ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
+ms.openlocfilehash: 5db942b42f398e8951da43add7013569af52c53f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41120222"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594110"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gestire gli acquisti in modalità self-service (amministratore)
 

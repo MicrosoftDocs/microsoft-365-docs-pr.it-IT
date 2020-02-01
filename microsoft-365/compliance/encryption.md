@@ -1,5 +1,7 @@
 ---
 title: Crittografia in Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Con Office 365, il contenuto viene crittografato a riposo e in transito con la crittografia, i protocolli e le tecnologie più forti disponibili. Ottenere una panoramica della crittografia in Office 365.
-ms.openlocfilehash: e63eb239f37f5f68da05f90998baf5bf6201fb71
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: b16c3c4e71a3898acff0d23848b2fba185836729
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686414"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593177"
 ---
 # <a name="encryption-in-office-365"></a>Crittografia in Office 365
 
@@ -59,7 +61,7 @@ Office 365 fornisce soluzioni gestite da Microsoft per la crittografia dei volum
   
 Per altre informazioni, vedere le risorse seguenti:
   
-- [Che cos'è Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
+- [Informazioni su Azure Rights Management](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 - [Attivare Rights Management nell'interfaccia di amministrazione](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
 
@@ -81,4 +83,4 @@ Per altre informazioni, vedere le risorse seguenti:
 
 [Pianificare le funzionalità di sicurezza e protezione delle informazioni di Office 365](plan-for-security-and-compliance.md)
 
-[Top 10 modi per proteggere i piani aziendali di Office 365 e Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[I 10 principali modi per proteggere i piani di Office 365 e Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)

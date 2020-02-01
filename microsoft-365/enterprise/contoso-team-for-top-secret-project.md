@@ -1,5 +1,7 @@
 ---
-title: Team per un progetto Top-Secret di Contoso Corporation
+title: Team per un progetto interno di Contoso Corporation
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: in che modo Contoso ha utilizzato un team per i dati altamente regolamentati per un progetto Top-Secret per sviluppare una nuova famiglia di prodotti e servizi.'
-ms.openlocfilehash: 23a967ea7ffdb3497d705a3ddda4d3c56e415b8e
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: 794fb5cfb6f3011724d37a6a3c42c39dacacc270
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699898"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597073"
 ---
-# <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Team per un progetto Top-Secret di Contoso Corporation
+# <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Team per un progetto interno di Contoso Corporation
 
 Dopo un Executive fuori sede, il CEO di Contoso ha ordinato lo sviluppo di una nuova famiglia di prodotti e servizi che potrebbe raddoppiare gli utili di Contoso nei prossimi cinque anni. Il progetto Top-Secret per sviluppare il piano aziendale, ingegneristico e di mercato è stato denominato **Project 2x** e il personale chiave in tutta la società sono stati reclutati. 
 

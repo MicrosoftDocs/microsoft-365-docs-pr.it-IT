@@ -1,5 +1,7 @@
 ---
 title: Revocare un messaggio di posta elettronica crittografato da Office 365 Advanced Message Encryption
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: In qualità di amministratore di Office 365, è possibile revocare alcuni messaggi di posta elettronica crittografati con la crittografia avanzata dei messaggi di Office 365.
-ms.openlocfilehash: d3d449c969b2fa5d21042779ebad11e3807d1d3e
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 9d694c200df161c0a52884ded14d29908376a9b7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112520"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597603"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Revocare un messaggio di posta elettronica crittografato da Office 365 Advanced Message Encryption
 
@@ -97,7 +99,7 @@ Per revocare la posta elettronica nel centro &amp; sicurezza e conformità, nel 
 
 È possibile revocare un messaggio di posta elettronica utilizzando Windows PowerShell utilizzando il cmdlet Set-OMEMessageRevocation.
 
-1. [Connettersi a Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. [Connettersi a PowerShell per Exchange Online](https://aka.ms/exopowershell).
 
 2. Eseguire il cmdlet Set-OMEMessageRevocation come indicato di seguito:
 

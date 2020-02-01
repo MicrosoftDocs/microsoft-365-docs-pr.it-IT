@@ -1,5 +1,7 @@
 ---
 title: Creare avvisi attività in Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Aggiungere e gestire gli avvisi di attività nel centro sicurezza e conformità in modo che Office 365 invierà notifiche di posta elettronica quando gli utenti eseguono attività specifiche in Office 365.
-ms.openlocfilehash: 0cfe3edfcfcad50d6d04a1ef009498c0e13c7842
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 31807199345f4cf2ed6a4226fc407cb10c856c23
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083106"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596183"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Creare avvisi attività in Office 365
 
@@ -31,7 +33,7 @@ ms.locfileid: "37083106"
 > [!NOTE]
 > Si consiglia di iniziare a utilizzare i criteri di avviso nel centro sicurezza e conformità invece di creare nuovi avvisi attività. I criteri di avviso offrono funzionalità aggiuntive, come la possibilità di creare un criterio di avviso che attiva un avviso quando un utente esegue un'attività specificata e visualizza avvisi nella pagina **Visualizza avvisi** nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [criteri di avviso](alert-policies.md).
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per gestire gli avvisi di attività, è necessario che il ruolo Configurazione organizzazione sia assegnato al centro sicurezza & conformità. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli amministratore conformità e gestione organizzazione. Per ulteriori informazioni sull'aggiunta di membri ai gruppi di ruoli, vedere [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
@@ -56,9 +58,9 @@ ms.locfileid: "37083106"
   
 4. Completare i seguenti campi per creare un avviso di attività:
     
-    un. **Nome** -digitare un nome per l'avviso. I nomi degli avvisi devono essere univoci all'interno dell'organizzazione.
+    a. **Nome** -digitare un nome per l'avviso. I nomi degli avvisi devono essere univoci all'interno dell'organizzazione.
     
-    b. **Descrizione/Controlli** (Facoltativo): consente di descrivere l'avviso, ad esempio le attività e gli utenti monitorati, e gli utenti a cui vengono inviate le notifiche tramite posta elettronica. Le descrizioni forniscono un modo semplice e rapido per descrivere lo scopo dell'avviso ad altri amministratori.
+    b. **Description** (facoltativo): consente di descrivere l'avviso, ad esempio le attività e gli utenti monitorati, e gli utenti a cui vengono inviate le notifiche tramite posta elettronica. Le descrizioni forniscono un modo semplice e rapido per descrivere lo scopo dell'avviso ad altri amministratori.
     
     c. **Tipo di avviso** : verificare che l'opzione **personalizzata** sia selezionata. 
 
@@ -68,7 +70,7 @@ ms.locfileid: "37083106"
     
      - **Utenti** : fare clic su questa casella e quindi selezionare uno o più utenti. Se gli utenti di questa casella eseguono le attività che sono state aggiunte alla casella **attività** , verrà inviato un avviso. Lasciare vuota la casella **utenti** per inviare un avviso quando un utente dell'organizzazione esegue le attività specificate dall'avviso. 
 
-    e. **Invia questo avviso a** -fare clic su **Invia questo avviso**, quindi fare clic nella casella **destinatari** e digitare un nome per aggiungere gli utenti che riceveranno una notifica di posta elettronica quando un utente (specificato nella casella **utenti** ) esegue un'attività, specificata nell' Casella **attività** . Si noti che per impostazione predefinita viene aggiunto all'elenco dei destinatari. È possibile rimuovere il nome dall'elenco.
+    e. **Invia questo avviso a** -fare clic su **Invia questo avviso**, quindi fare clic nella casella **destinatari** e digitare un nome per aggiungere un utente che riceverà una notifica tramite posta elettronica quando un cliente (specificato nella casella **utenti** ) esegue un'attività (specificata nella casella **attività** ). Si noti che per impostazione predefinita viene aggiunto all'elenco dei destinatari. È possibile rimuovere il nome dall'elenco.
     
 5. Fare clic su **Salva** per creare l'avviso. 
     
@@ -109,18 +111,18 @@ Per riattivare un avviso di attività, ripetere questi passaggi e fare clic sull
     
     |**Quando un utente esegue questa operazione...**|**Creare un avviso per questa attività**|**Gruppo attività**|
     |:-----|:-----|:-----|
-    |Visualizza un documento in un sito.  <br/> |File a cui si accede  <br/> |Attività di file e cartelle  <br/> |
+    |Visualizza un documento in un sito.  <br/> |File aperto  <br/> |Attività di file e cartelle  <br/> |
     |Modifica o modifiche di un documento.  <br/> |File modificato  <br/> |Attività di file e cartelle  <br/> |
-    |Condivide un documento con un utente esterno all'organizzazione.  <br/> |Condivisione di file, cartelle o siti  <br/> E  <br/> Invito alla condivisione creato  <br/> Per ulteriori informazioni, vedere [use sharing audit in the Office 365 audit log](use-sharing-auditing.md).  <br/> |Attività di condivisione e accesso alle richieste  <br/> |
+    |Condivide un documento con un utente esterno all'organizzazione.  <br/> |Condivisione di file, cartelle o siti  <br/> E  <br/> Invito alla condivisione creato  <br/> Per altre informazioni, vedere [Usare il controllo della condivisione nel log di controllo di Office 365](use-sharing-auditing.md).  <br/> |Attività di richiesta di accesso e condivisione  <br/> |
     |Carica o Scarica un documento.  <br/> |File caricato  <br/> E/o  <br/> File scaricato  <br/> |Attività di file e cartelle  <br/> |
-    |Modifica le autorizzazioni di accesso a un sito.  <br/> |Autorizzazioni del sito modificate  <br/> |Attività amministrative del sito  <br/> |
+    |Modifica le autorizzazioni di accesso a un sito.  <br/> |Autorizzazioni sito modificate  <br/> |Attività di amministrazione siti  <br/> |
 
     Nella tabella seguente sono elencate alcune attività comuni relative alla posta elettronica in Exchange Online.
 
     |**Quando un utente esegue questa operazione...**|**Creare un avviso per questa attività**|**Gruppo attività**|
     |:-----|:-----|:-----|
-    |Elimina definitivamente (Purges) un messaggio di posta elettronica dalla propria cassetta postale.  <br/> |Messaggi eliminati dalla cassetta postale  <br/> | Attività relative alle cassette postali di Exchange  <br/> |
-    |Invia un messaggio di posta elettronica da una cassetta postale condivisa.  <br/> |Messaggio inviato utilizzando le autorizzazioni Invia come  <br/> E  <br/> Messaggio inviato utilizzando le autorizzazioni Invia per conto di  <br/> | Attività relative alle cassette postali di Exchange  <br/> |
+    |Elimina definitivamente (Purges) un messaggio di posta elettronica dalla propria cassetta postale.  <br/> |Messaggi eliminati dalla cassetta postale  <br/> | Attività su cassette postali di Exchange  <br/> |
+    |Invia un messaggio di posta elettronica da una cassetta postale condivisa.  <br/> |Messaggio inviato con autorizzazioni Invia come  <br/> E  <br/> Messaggio inviato con autorizzazioni Invia per conto di  <br/> | Attività su cassette postali di Exchange  <br/> |
    
 - È inoltre possibile utilizzare i cmdlet **New-ActivityAlert** e **set-ActivityAlert** in PowerShell per la sicurezza & Compliance Center per creare e modificare gli avvisi di attività. Se si utilizzano questi cmdlet per creare o modificare gli avvisi di attività, tenere presente quanto segue: 
     

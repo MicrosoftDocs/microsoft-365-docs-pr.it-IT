@@ -1,5 +1,7 @@
 ---
 title: Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -12,18 +14,18 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui vari tipi di visualizzazioni disponibili in Esplora minacce e sui rilevamenti in tempo reale.
-ms.openlocfilehash: 7c3d78c5b5d4b1708fc57adba6951b4e352f0eaa
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 7f506b77673e416aaecdc707e0659006e6089142
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084810"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598253"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 
 ![Esplora minacce](../media/ThreatExplorerFirstOpened.png)
 
-[Esplora minacce](threat-explorer.md) (e il rapporto rilevamento in tempo reale) è uno strumento potente e quasi in tempo reale che consente ai team di operazioni di sicurezza di analizzare e rispondere alle minacce &amp; nel centro sicurezza e conformità. Explorer (e il rapporto rilevamenti in tempo reale) Visualizza le informazioni sui sospetti malware e phishing nei messaggi di posta elettronica e nei file di Office 365, oltre ad altre minacce e rischi per la sicurezza per l'organizzazione. 
+[Esplora minacce](threat-explorer.md) (e il rapporto rilevamenti in tempo reale) è uno strumento potente e quasi in tempo reale che consente ai team di operazioni di sicurezza di analizzare e rispondere &amp; alle minacce nel centro sicurezza e conformità. Explorer (e il rapporto rilevamenti in tempo reale) Visualizza le informazioni sui sospetti malware e phishing nei messaggi di posta elettronica e nei file di Office 365, oltre ad altre minacce e rischi per la sicurezza per l'organizzazione. 
 
 - Se si dispone di [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) piano 2, è necessario disporre di Esplora risorse.
 - Se si dispone di Office 365 ATP piano 1, è possibile rilevare i rilevamenti in tempo reale.

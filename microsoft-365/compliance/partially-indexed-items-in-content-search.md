@@ -1,5 +1,7 @@
 ---
 title: Partially indexed items in Content Search in Office 365 (Elementi parzialmente indicizzati in Ricerca contenuto in Office 365)
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -19,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Informazioni sugli elementi non indicizzati in Exchange e SharePoint che è possibile includere in una ricerca di contenuto tramite il Centro sicurezza & Compliance. '
-ms.openlocfilehash: 7a5baa37abbade64ac77ed288afbb5389ac2295f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: fc15a4af41495641882c25b23c1a38459b896696
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084158"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597783"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Partially indexed items in Content Search in Office 365 (Elementi parzialmente indicizzati in Ricerca contenuto in Office 365)
 
 Una ricerca di contenuto eseguita dal centro sicurezza & conformità in Office 365 include automaticamente gli elementi parzialmente indicizzati nei risultati della ricerca stimati quando si esegue una ricerca. Gli elementi parzialmente indicizzati sono gli elementi della cassetta postale di Exchange e i documenti sui siti di SharePoint e OneDrive for business che per qualche motivo non sono stati completamente indicizzati per la ricerca. In Exchange, un elemento parzialmente indicizzato in genere contiene un file, di un tipo di file che non può essere indicizzato, che è associato a un messaggio di posta elettronica. Di seguito sono riportati alcuni motivi per i quali gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi parzialmente indicizzati durante l'esecuzione di una ricerca: 
   
-- Il tipo di file non è riconosciuto o non è supportato per l'indicizzazione.
+- Il tipo di file non è riconosciuto o supportato per l'indicizzazione.
     
 -  I messaggi dispongono di un file allegato privo di un gestore valido, ad esempio file di immagine. Questa è la causa più comune degli elementi di posta elettronica parzialmente indicizzati. 
     
@@ -81,7 +83,7 @@ Tenere presente quanto segue sugli elementi parzialmente indicizzati:
     
 - Se la ricerca da cui si stanno esportando i risultati è stata una ricerca di percorsi di contenuto specifici o di tutti i percorsi di contenuto dell'organizzazione, verranno esportati solo gli elementi non indicizzati provenienti da percorsi di contenuto che contengono elementi che corrispondono ai criteri di ricerca. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Il motivo è che l'esportazione di elementi parzialmente indicizzati da un numero elevato di posizioni nell'organizzazione potrebbe aumentare la probabilità di errori di esportazione e aumentare il tempo necessario per esportare e scaricare i risultati della ricerca.
     
-    Per esportare gli elementi parzialmente indicizzati da tutti i percorsi di contenuto per una ricerca, configurare la ricerca in modo che restituisca tutti gli elementi (rimuovendo le parole chiave dalla query di ricerca) e quindi esportare solo gli elementi parzialmente indicizzati quando si esportano i risultati della ricerca (facendo clic su **solo gli elementi che dispongono di un formato non riconosciuto sono crittografati o non sono stati indicizzati per altri motivi** in **Opzioni di output**.
+    Per esportare gli elementi parzialmente indicizzati da tutti i percorsi di contenuto per una ricerca, configurare la ricerca in modo che restituisca tutti gli elementi (rimuovendo le parole chiave dalla query di ricerca) e quindi esportare solo gli elementi parzialmente indicizzati quando si esportano i risultati della ricerca (facendo clic su **solo gli elementi con un formato non riconosciuto, sono crittografati o non sono stati indicizzati per** ****
     
 - Se si sceglie di includere tutti gli elementi delle cassette postali nei risultati della ricerca o se una query di ricerca non specifica parole chiave o specifica un intervallo di date, è possibile che gli elementi parzialmente indicizzati non vengano copiati nel file PST che contiene gli elementi parzialmente indicizzati. Ciò è dovuto al fatto che tutti gli elementi, compresi gli elementi parzialmente indicizzati, verranno inclusi automaticamente nei risultati di ricerca normali.
     

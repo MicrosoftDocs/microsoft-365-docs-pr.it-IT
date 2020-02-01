@@ -1,5 +1,7 @@
 ---
 title: Cercare i dati in un'indagine
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcd7f3f38f53ef22fc50823f3d2e3564af333431
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 62d42c29182a81cfa133c5d8863add56aba29be3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082803"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597553"
 ---
 # <a name="search-for-data-in-an-investigation"></a>Cercare i dati in un'indagine
 
@@ -27,7 +29,7 @@ Nella scheda **ricerca** in un'analisi dei dati è possibile cercare i dati rise
 
 Dopo aver eseguito una ricerca, è possibile visualizzare le statistiche sugli elementi restituiti dalla ricerca, ad esempio i percorsi di contenuto con la maggior parte degli elementi corrispondenti alla query di ricerca. È inoltre possibile visualizzare in anteprima un sottoinsieme dei risultati. Dopo aver identificato il set di documenti per approfondire ulteriormente, è possibile aggiungere i risultati della ricerca a un set di prove per elaborarli e analizzarli ulteriormente.
 
-## <a name="create-a-search"></a>Create a search
+## <a name="create-a-search"></a>Creare una ricerca
 
 1. In un'indagine fare clic sulla scheda **ricerche** e quindi fare clic su **nuova ricerca**. 
 

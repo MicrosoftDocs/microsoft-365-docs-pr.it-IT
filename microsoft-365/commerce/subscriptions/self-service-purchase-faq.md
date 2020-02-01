@@ -1,5 +1,7 @@
 ---
 title: Domande frequenti sull'acquisto in modalità self-service
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -13,19 +15,19 @@ search.appverid:
 - MET150
 description: Trovare le risposte alle domande più frequenti sugli acquisti in modalità self-service.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 8671492680eba730bf123036a4bb347d055f686d
-ms.sourcegitcommit: 3c296126ba69a32af07e339f2f1eacdd8e5b878e
+ms.openlocfilehash: 9f456c992cda6fcfafd1a0d5faa68dba42a894d8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41120157"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594100"
 ---
 # <a name="self-service-purchase-faq"></a>Domande frequenti sull'acquisto in modalità self-service
 
 > [!NOTE]
 > Le informazioni contenute in questo articolo si applicano solo agli abbonamenti di Microsoft Power Platform (Power BI, Power Apps e Power automatizzate).
 
-Gli acquisti in modalità self-service sono ora disponibili per Power BI negli Stati Uniti.
+Gli acquisti in modalità self-service sono ora disponibili per Power Platform negli Stati Uniti.
 
 ## <a name="general"></a>Generale
 
@@ -43,7 +45,7 @@ Nel mondo di oggi, gli utenti finali e i reparti sono sempre più alla ricerca e
 
 ### <a name="which-power-platform-products-are-available-for-self-service-purchase"></a>Quali prodotti Power Platform sono disponibili per l'acquisto in modalità self-service?
 
-Microsoft ha avviato l'acquisto self-service per Power BI ai clienti negli Stati Uniti, con ulteriori mercati disponibili nei prossimi mesi. Le app Power e Power automatizza verranno aggiunte ai clienti negli Stati Uniti il 28 gennaio 2020. Questa funzionalità non sarà disponibile per i tenant negli Stati Uniti, che sono governativi, no profit o Education, in questo momento.
+Microsoft ha avviato l'acquisto in modalità self-service per Power Platform (Power BI, Power Apps e Power automatizzate) ai clienti negli Stati Uniti, con ulteriori mercati disponibili nei prossimi mesi. Questa funzionalità non sarà disponibile per i tenant negli Stati Uniti, che sono governativi, no profit o Education, in questo momento.
 
 ### <a name="will-self-service-purchase-be-enabled-for-services-beyond-the-power-platform-products"></a>L'acquisto self-service deve essere abilitato per i servizi oltre i prodotti Power Platform?
 

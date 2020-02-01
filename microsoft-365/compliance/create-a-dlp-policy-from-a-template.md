@@ -1,5 +1,7 @@
 ---
 title: Create a DLP policy from a template
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: 2f7618f80f02865816a1f937b36c9f09b794b77d
-ms.sourcegitcommit: 8ad30e6c5cd77a72e5c1ce463c9f693132cc0b15
+ms.openlocfilehash: b101714190879e4bdd1090b05f94f1f36e5d8729
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "38686342"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595663"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
 
@@ -82,7 +84,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
     Per includere solo i siti di SharePoint specifici o gli account di OneDrive for business, impostare lo **stato** su attivato e quindi fare clic sui collegamenti in **Includi** per scegliere i siti o gli account specifici. Quando si applica un criterio a un sito, le regole configurate in tale criterio vengono applicate automaticamente a tutti i siti secondari del sito. 
     
-    ![Opzioni per la posizione in cui è possibile applicare un criterio DLP](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+    ![Opzioni per le posizioni in cui è possibile applicare i criteri di prevenzione della perdita dei dati](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
     In questo esempio, per proteggere le informazioni riservate archiviate in tutti gli account di OneDrive for business, disattivare lo **stato** sia per la **posta elettronica di Exchange** che per i **siti di SharePoint**e lasciare lo **stato** su per gli **account di OneDrive**.
     
@@ -140,15 +142,15 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
      Prima di aver creato i criteri DLP, è necessario distribuirli gradualmente per valutarne l'impatto e l'efficacia, prima di applicarli completamente. Ad esempio, non si desidera che un nuovo criterio DLP involontariamente blocca l'accesso a migliaia di documenti necessari per ottenere il proprio lavoro. 
     
-    Se si stanno creando criteri DLP con un impatto potenziale elevato, è consigliabile seguire questa sequenza:
+    Se si creano criteri DLP con un forte impatto potenziale, si consiglia di attenersi alla sequenza riportata di seguito:
     
 17. Iniziare in modalità test senza suggerimenti per i criteri, quindi utilizzare i report DLP per valutare l'impatto. È possibile utilizzare i report DLP per visualizzare il numero, il percorso, il tipo e la gravità di corrispondenza del criterio. A seconda dei risultati, è possibile ottimizzare le regole in modo adeguato. In modalità test, i criteri DLP non avranno effetto sulla produttività degli utenti dell'organizzazione. 
     
 18. Passare alla modalità test con notifiche e suggerimenti per i criteri in modo da istruire gli utenti in merito ai criteri di conformità e prepararli all'applicazione delle regole. In questa fase, è inoltre possibile chiedere agli utenti di segnalare i falsi positivi per definire ulteriormente le regole.
     
-19. Attiva i criteri in modo che le regole vengano applicate e il contenuto sia protetto. Continuare a eseguire il monitoraggio dei report DLP e di eventuali eventi imprevisti oppure delle notifiche per essere certi di ottenere i risultati desiderati. 
+19. Attiva i criteri in modo che le regole vengano applicate e il contenuto sia protetto. Continuare a eseguire il monitoraggio dei report di prevenzione della perdita dei dati e dei rapporti operazioni non consentite oppure delle notifiche per essere certi di ottenere i risultati desiderati. 
     
-    ![Opzioni per l'utilizzo della modalità di test e dell'attivazione dei criteri](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Opzioni per l'utilizzo della modalità di test e attivazione dei criteri](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
 20. Esaminare le impostazioni per questo criterio \> scegliere **Crea**.
     
@@ -184,11 +186,11 @@ Inoltre, è possibile disattivare singolarmente ogni regola modificando il crite
 
 - [Panoramica relativa ai criteri di prevenzione della perdita di dati](data-loss-prevention-policies.md)
     
-- [Inviare notifiche e visualizzare i suggerimenti per i criteri DLP](use-notifications-and-policy-tips.md)
+- [Inviare notifiche e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati](use-notifications-and-policy-tips.md)
     
-- [Creare un criterio di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
+- [Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà](protect-documents-that-have-fci-or-other-properties.md)
     
-- [Elementi inclusi nei modelli di criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
+- [Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
 - [Inventario di tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
     

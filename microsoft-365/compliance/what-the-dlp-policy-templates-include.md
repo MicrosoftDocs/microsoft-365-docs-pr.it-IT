@@ -1,5 +1,7 @@
 ---
 title: Elementi inclusi nei modelli del criterio DLP
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,17 +17,17 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include modelli di criteri pronti all'uso che consentono di soddisfare i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette alla legge sugli Stati Uniti Health Insurance Act ( HIPAA), US Gramm-Leach-Bliley Act (GLBA) o U.S. Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, quali tipi di informazioni riservate devono essere cercati e quali sono le condizioni e le azioni predefinite.
-ms.openlocfilehash: aff9f5179d9bad3d8c1c97d17473a14995137c32
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include modelli di criteri pronti all'uso che consentono di soddisfare i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette agli Stati Uniti Health Insurance Act (HIPAA), US Gramm-Leach-Bliley Act (GLBA) o US Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, quali tipi di informazioni riservate devono essere cercati e quali sono le condizioni e le azioni predefinite.
+ms.openlocfilehash: 6b87f8c0746611e8ae8cee917e27545ffe5e4373
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084243"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597173"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati
 
-La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include modelli di criteri pronti all'uso che consentono di soddisfare i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette alla legge sugli Stati Uniti Health Insurance Act ( HIPAA), US Gramm-Leach-Bliley Act (GLBA) o U.S. Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, quali tipi di informazioni riservate devono essere cercati e quali sono le condizioni e le azioni predefinite. L'argomento non include tutti i dettagli sulla configurazione di ogni criterio; tuttavia, contiene informazioni sufficienti a stabilire quale tipo di modello è più adatto alla propria situazione. Tenere presente che è possibile personalizzare questi modelli di criteri per soddisfare requisiti specifici.
+La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include modelli di criteri pronti all'uso che consentono di soddisfare i requisiti di conformità comuni, ad esempio per proteggere le informazioni riservate soggette agli Stati Uniti Health Insurance Act (HIPAA), US Gramm-Leach-Bliley Act (GLBA) o US Patriot Act. In questo argomento vengono elencati tutti i modelli di criteri, quali tipi di informazioni riservate devono essere cercati e quali sono le condizioni e le azioni predefinite. L'argomento non include tutti i dettagli sulla configurazione di ogni criterio; tuttavia, contiene informazioni sufficienti a stabilire quale tipo di modello è più adatto alla propria situazione. Tenere presente che è possibile personalizzare questi modelli di criteri per soddisfare requisiti specifici.
   
 ## <a name="australia-financial-data"></a>Dati finanziari Australia
 

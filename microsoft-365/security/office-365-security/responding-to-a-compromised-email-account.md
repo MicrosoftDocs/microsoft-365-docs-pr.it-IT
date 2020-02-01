@@ -1,5 +1,7 @@
 ---
 title: Rispondere a un account di posta elettronica compromesso in Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Office 365
-ms.openlocfilehash: 76ce2cd9b942403f5d25b7f356740cce6c2acad7
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 3aa8be9b53f2aa8f3fc6bf64744b36de5d912645
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971509"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598603"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Rispondere a un account di posta elettronica compromesso in Office 365
 
@@ -28,7 +30,7 @@ ms.locfileid: "39971509"
 ## <a name="what-is-a-compromised-email-account-in-office-365"></a>Che cos'è un account di posta elettronica compromesso in Office 365?
 
 L’accesso alle cassette postali, dati e altri servizi di Office 365 viene controllato tramite l’uso di credenziali, ad esempio un nome utente e la password o PIN. Quando un utente diverso da quello previsto sottrae queste credenziali, queste sono considerate compromesse. Con queste l'utente malintenzionato può accedere come utente originale ed effettuare operazioni illegali.
-Usando le credenziali rubate, l'autore dell'attacco può accedere alla cassetta postale di Office 365 dell'utente, alle cartelle di SharePoint o ai file in OneDrive dell'utente. Un’operazione vista comunemente è l’invio da parte del pirata informatico di messaggi di posta elettronica a destinatari sia interni che esterni all'organizzazione dell'utente originale. Quando un utente malintenzionato invia dei dati tramite messaggi di posta elettronica a destinatari esterni, si chiama esfiltrazione di dati.
+Usando le credenziali rubate, l'autore dell'attacco può accedere alla cassetta postale di Office 365, alle cartelle di SharePoint o ai file in OneDrive dell'utente. Un’operazione vista comunemente è l’invio da parte del pirata informatico di messaggi di posta elettronica a destinatari sia interni che esterni all'organizzazione dell'utente originale. Quando un utente malintenzionato invia dei dati tramite messaggi di posta elettronica a destinatari esterni, si chiama esfiltrazione di dati.
 
 ## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Sintomi di un account di posta elettronica compromesso di Office 365
 
@@ -56,9 +58,11 @@ Gli utenti potrebbero notare e segnalare attività insolite nelle proprie casset
 
 Se un utente segnala qualsiasi dei sintomi precedenti, è necessario eseguire ulteriori analisi. Il Centro sicurezza e conformità di Microsoft 365 e il portale di Azure offfrono strumenti che consentono di analizzare le attività di un account utente che si sospetta potrebbe essere compromesso.
 
-- Log di controllo di Office 365 nel Centro sicurezza e conformità - Esaminare tutte le attività nell'account sospetto filtrando i risultati per l’intervallo di date che si estendono da immediatamente prima delle attività sospette alla data attuale. Non filtrare le attività durante la ricerca.
+- **Log di controllo unificati di Office 365 nel Centro sicurezza e conformità**: esaminare tutte le attività nell'account sospetto filtrando i risultati per l'intervallo di date che si estendono da immediatamente prima delle attività sospette alla data attuale. Non filtrare le attività durante la ricerca.
 
-- Usare i log di accesso di Azure AD e i report di altri rischi disponibili nel portale di Azure Active Directory. Esaminare i valori in queste colonne:
+- **Log di controllo dell'amministratore di Office 365 nell'interfaccia di amministrazione di Exchange**: in Exchange Online è possibile usare l'interfaccia di amministrazione di Exchange per cercare e visualizzare voci nel log di controllo dell'amministratore. Il log di controllo dell'amministratore registra operazioni specifiche, basate su cmdlet di PowerShell per Exchange Online, eseguite dagli amministratori e dagli utenti che dispongono di privilegi amministrativi. Le voci nel registro di controllo dell'amministratore forniscono informazioni sul cmdlet eseguito, sui parametri utilizzati, sull'utente che ha eseguito il cmdlet e sugli oggetti coinvolti.
+
+- **Log di accesso di Azure AD e altri report sui rischi disponibili nel portale di Azure AD**: esaminare i valori nelle colonne seguenti:
 
   - Esaminare l'indirizzo IP
 
@@ -92,7 +96,7 @@ Anche l’accesso all’account è stato riacquisito rapidamente, un utente mali
 - Se l'identità dell'utente locale è federata con Office 365, è necessario cambiare la password locale e quindi informare l'amministratore della violazione.
 
 > [!TIP]
-> È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi.  Ulteriori informazioni sono disponibili [qui](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi.  Altre informazioni su MFA sono disponibili [qui](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Passaggio 2: Rimuovere indirizzi di inoltro della posta elettronica
 

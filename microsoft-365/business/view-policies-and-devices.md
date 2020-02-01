@@ -1,5 +1,7 @@
 ---
 title: Visualizzare criteri e dispositivi
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -20,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Visualizzare i criteri e le azioni del dispositivo accedendo a Microsoft 365 business con le credenziali di amministratore globale.
-ms.openlocfilehash: 982c1f410802f9589d40073a11768b7dd68567c0
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 9664a72d85cf6eed9993937299d38a84b9a8f0d2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38718920"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595588"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Visualizzazione e gestione di criteri e dispositivi
 

@@ -1,5 +1,7 @@
 ---
 title: Scaricare processi di esportazione
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Installare e utilizzare Esplora archivi di Azure per scaricare i documenti esportati da un set di revisione in Advanced eDiscovery.
-ms.openlocfilehash: 412ec48865c6cb7e511e3f6068fe02d87a99f831
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: c92b92a91755ef641d7fd5f4ef0533065e1f8349
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686573"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595151"
 ---
 # <a name="download-export-jobs"></a>Scaricare processi di esportazione
 

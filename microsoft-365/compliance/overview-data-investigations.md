@@ -1,5 +1,7 @@
 ---
 title: Panoramica delle indagini sui dati (anteprima) in Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto il nuovo strumento di analisi dei dati (Preview) in Microsoft 365.
-ms.openlocfilehash: 1b578487a42e8663757468c848772afd93529753
-ms.sourcegitcommit: 0b5ef663f379c8bb0a223ebd3f09eec984d93812
+ms.openlocfilehash: cd60b16f6d0f968c0c87f3e44ee2f643c90ebb10
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "38686318"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597793"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Panoramica delle indagini sui dati (anteprima) in Microsoft 365
 
@@ -45,7 +47,7 @@ Utilizzare la scheda **ricerche** per creare ricerche per trovare la pagina di O
 
 Utilizzare la scheda **Evidence** per esaminare i dati raccolti dal servizio Live, che in questo caso è Office 365. I dati del set di evidenze sono uno snapshot dei risultati della ricerca raccolti. Quando si aggiungono i risultati della ricerca come prova, viene attivato un processo per estrarre file, metadati e testo. Al termine del processo, lo strumento di analisi dei dati crea un nuovo indice di tutti i dati e lo aggiunge a un set di prove. Per qualsiasi indagine sensibile al tempo, questo consente di contenere rapidamente l'ambiente eliminando i dati presenti nei percorsi di contenuto originale (nel servizio Live) durante l'analisi delle evidenze raccolte in un ambiente in quarantena. Dopo la raccolta di prove, è possibile eseguire altre query per limitare i dati in base a intervalli temporali, tipi di file, proprietari di dati e altri tipi di condizioni. Ad esempio, utilizzando le condizioni per l'autore, il mittente e il destinatario, è possibile identificare rapidamente coloro che sono stati coinvolti nella perdita di dati e se uno qualsiasi dei dati versati è stato condiviso con persone esterne all'organizzazione.
 
-È inoltre possibile eseguire l'analisi avanzata sulle prove raccolte. In questo modo è possibile fornire i temi generali e organizzare le prove tramite thread di posta elettronica, duplicati esatti e quasi duplicati per facilitare l'indagine. È possibile esaminare i documenti in visualizzazione testo estratto o nel formato di file nativo e contrassegnarli con i risultati dell'analisi. Per ulteriori informazioni, vedere:
+È inoltre possibile eseguire l'analisi avanzata sulle prove raccolte. In questo modo è possibile fornire i temi generali e organizzare le prove tramite thread di posta elettronica, duplicati esatti e quasi duplicati per facilitare l'indagine. È possibile esaminare i documenti in visualizzazione testo estratto o nel formato di file nativo e contrassegnarli con i risultati dell'analisi. Per altre informazioni, vedere:
 
   - [Esaminare i dati nelle prove](review-data-in-evidence.md)
 

@@ -1,5 +1,7 @@
 ---
 title: Tipi di informazioni sensibili per DLP
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Panoramica dei tipi di informazioni sensibili per DLP.
-ms.openlocfilehash: b73f0d51e57106cbcc6f0986261faabb26cc5b4a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: a1afaeb3359ae9705909ff6c23c1f951804aa4c8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083025"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595513"
 ---
 # <a name="custom-sensitive-information-types"></a>Tipi di informazioni sensibili personalizzati
 

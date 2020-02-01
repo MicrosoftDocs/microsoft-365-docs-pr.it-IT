@@ -9,13 +9,15 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: josephd
-ms.openlocfilehash: aafd629b4efcfa1307a25bf8e340236f183998b5
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 69ff4846e3daeef39310aa63961e0b3f5ccb9875
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370243"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596593"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Passaggio 1: preparare l'organizzazione per Windows 10 Enterprise
 
@@ -48,9 +50,9 @@ Utilizzare il valore appropriato nella tabella seguente quando si configurano i 
 | Level | Dati raccolti | Valore |
 |:--- |:--- |:--- |
 | Sicurezza | Solo dati di sicurezza. | 0 |
-| Di base | Dati di sicurezza e dati di sistema e qualità di base. | 1 |
-| Avanzato | Dati di sicurezza, dati di sistema di base e di qualità, nonché informazioni avanzate e dati di affidabilità avanzati. | 2 |
-| Full | Dati di sicurezza, dati di sistema e qualità di base, approfondimenti e dati di affidabilità avanzati e dati di diagnostica completi. | 3 |
+| Di base | Dati di sicurezza e dati di sistema e qualità di base. | 1  |
+| Avanzato | Dati di sicurezza, dati di sistema di base e di qualità, nonché informazioni avanzate e dati di affidabilità avanzati. | 2  |
+| Full | Dati di sicurezza, dati di sistema e qualità di base, approfondimenti e dati di affidabilità avanzati e dati di diagnostica completi. | 3  |
 
 È possibile abilitare i dati di diagnostica tramite uno dei seguenti metodi:
 

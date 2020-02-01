@@ -1,5 +1,7 @@
 ---
 title: Confermare la ricezione di una notifica di blocco
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Potrebbe essere necessario informare i depositari dell'obbligo di conservare le informazioni archiviate elettronicamente come parte di un'indagine legale. Advanced eDiscovery consente di gestire facilmente il processo di notifica di blocco.
-ms.openlocfilehash: 477396e9b249de0edbbe52c5310abe21a825a3e8
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: f1a2d4eb03f84df12611115670d52568d6b13d80
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962370"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594069"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confermare la ricezione di una notifica di blocco
 

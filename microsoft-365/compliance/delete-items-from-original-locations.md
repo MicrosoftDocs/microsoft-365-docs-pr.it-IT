@@ -1,5 +1,7 @@
 ---
 title: Eliminare elementi dalla posizione originale
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro sicurezza & conformità per eliminare gli elementi dai percorsi originali.
-ms.openlocfilehash: c121cda03a4f5143275074aa288ae1f0a5548bfc
-ms.sourcegitcommit: e4f2f06daa264b8b476813a2dfe80cffb59f968f
+ms.openlocfilehash: 2efb57fa2e35cffd3cca5e8f44b648018f0daf1b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38686526"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595321"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Eliminare gli elementi dal percorso originale (anteprima)
 
@@ -76,7 +78,7 @@ Al momento, quando si eliminano gli elementi dal percorso del contenuto original
 
 - **Cassette postali:** Quando un elemento della cassetta postale viene eliminato temporaneamente, viene spostato nella cartella elementi ripristinabili nella cassetta postale. Questo comportamento è simile a quello in cui un utente elimina un elemento dalla cartella Posta eliminata o Elimina definitivamente un elemento premendo MAIUSC + CANC. A questo punto, l'utente può recuperare l'elemento fino alla scadenza del periodo di conservazione degli elementi eliminati. In Office 365, il periodo di conservazione degli elementi eliminati è di 14 giorni per impostazione predefinita, ma un amministratore può aumentare il periodo di conservazione a 30 giorni. Dopo la scadenza del periodo di conservazione, l'elemento viene spostato in una cartella nascosta (denominata cartella *Purges* ). L'elemento viene rimosso definitivamente da Office 365 alla successiva elaborazione della cassetta postale. Le cassette postali vengono elaborate una volta ogni sette giorni.
 
-- **Siti di SharePoint e OneDrive:** Quando un file o un documento in un sito è stato eliminato temporaneamente, viene spostato nel cestino del sito (denominato anche cestino *principale* ). L'elemento rimane nel cestino per 93 giorni (il periodo di conservazione degli elementi eliminati per i siti di Office 365). Durante il periodo di 93 giorni, gli elementi eliminati possono ancora essere recuperati da un amministratore della raccolta siti in SharePoint o dall'utente o dall'amministratore in OneDrive. È inoltre possibile eliminare gli elementi dal Cestino secondario. Quando ciò accade, gli elementi vengono spostati nel cestino per la raccolta siti, che è denominata cestino *secondario* . Il periodo di conservazione è di 93 giorni sia per i cestini del primo stadio che per quelli del secondo stadio. Questo significa che la conservazione del Cestino secondario viene avviata quando l'elemento viene inizialmente eliminato. Questo significa che il tempo totale di conservazione massimo è di 93 giorni per entrambi i cestini. Se un elemento viene eliminato dal Cestino secondario (manualmente da un amministratore o automaticamente quando scade il periodo di conservazione), non è più accessibile da parte di un amministratore.
+- **Siti di SharePoint e OneDrive:** Quando un file o un documento in un sito è stato eliminato temporaneamente, viene spostato nel cestino del sito (denominato anche cestino *principale* ). L'elemento rimane nel Cestino per 93 giorni (il periodo di conservazione degli elementi eliminati nei siti in Office 365). Durante il periodo di 93 giorni, gli elementi eliminati possono ancora essere recuperati da un amministratore della raccolta siti in SharePoint o dall'utente o dall'amministratore in OneDrive. È inoltre possibile eliminare gli elementi dal Cestino secondario. Quando ciò accade, gli elementi vengono spostati nel cestino per la raccolta siti, che è denominata cestino *secondario* . Il periodo di conservazione è di 93 giorni sia per i cestini del primo stadio che per quelli del secondo stadio. Questo significa che la conservazione del Cestino secondario viene avviata quando l'elemento viene inizialmente eliminato. Questo significa che il tempo totale di conservazione massimo è di 93 giorni per entrambi i cestini. Se un elemento viene eliminato dal Cestino secondario (manualmente da un amministratore o automaticamente quando scade il periodo di conservazione), non è più accessibile da parte di un amministratore.
 
 ## <a name="what-happens-if-a-content-location-is-on-hold"></a>Cosa succede se un percorso di contenuto è in attesa
 

@@ -1,5 +1,7 @@
 ---
 title: Usare l'editor delle comunicazioni
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 78865efc5c10ebcff9742f922f675b637bb9b2b0
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 4b98f02a45809d034795792a1078f02bc7fc1d7d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084328"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597273"
 ---
 # <a name="use-the-communications-editor"></a>Usare l'editor delle comunicazioni
 

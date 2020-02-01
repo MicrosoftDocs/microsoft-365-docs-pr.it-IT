@@ -1,5 +1,7 @@
 ---
 title: Informativa sulla privacy per Office 365 Secure E-mail Portal
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: 'Ultimo aggiornamento: 2017 maggio'
-ms.openlocfilehash: 06414b4400ed980968fb95e2e9c4ec06beec8a42
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 23707d22e52935b372a90a42ec323d8f64262894
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084433"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597722"
 ---
 # <a name="privacy-statement-for-office-365-secure-email-portal"></a>Informativa sulla privacy per Office 365 Secure E-mail Portal
 

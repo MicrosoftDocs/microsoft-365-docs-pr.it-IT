@@ -1,5 +1,7 @@
 ---
 title: Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità, gli utenti compromessi, la crittografia, lo stato di protezione dalle minacce, i rilevamenti di malware, il malware principale, il rilevamento di posta indesiderata, la posta elettronica inviata e ricevuta, i messaggi segnalati dall'utente, i report
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono &amp; disponibili nel centro sicurezza e conformità.
-ms.openlocfilehash: c44944c8f392b2df8cfe4b9e1741ba4b7ea13382
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 59090e53389b4e95d8987989819e71be6fce61e2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41209951"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598113"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità
 
