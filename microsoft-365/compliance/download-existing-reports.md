@@ -1,5 +1,7 @@
 ---
 title: Scaricare i report esistenti nel centro &amp; sicurezza e conformità
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,36 +15,36 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Informazioni su come scaricare uno o più report esistenti nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 05290d58be7b9d1770040d883b6eef9269cf0419
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d5f381a5e59f7cb6348bdc96572dfa37c4919500
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082912"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595171"
 ---
-# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a><span data-ttu-id="6ce18-103">Scaricare i report esistenti nel centro &amp; sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="6ce18-103">Download existing reports in the Security &amp; Compliance Center</span></span>
+# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a><span data-ttu-id="7027e-103">Scaricare i report esistenti nel centro &amp; sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="7027e-103">Download existing reports in the Security &amp; Compliance Center</span></span>
 
-<span data-ttu-id="6ce18-104">Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)sono disponibili diversi [report e](../security/office-365-security/reports-and-insights-in-security-and-compliance.md) informazioni utili per consentire al team di sicurezza dell'organizzazione di attenuare e risolvere i rischi per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="6ce18-104">In the [Security &amp; Compliance Center](https://protection.office.com), several [reports and insights](../security/office-365-security/reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization.</span></span> <span data-ttu-id="6ce18-105">Se si è membri del team di sicurezza dell'organizzazione, è possibile scaricare uno o più report esistenti.</span><span class="sxs-lookup"><span data-stu-id="6ce18-105">If you're a member of your organization's security team, you can download one or more existing reports.</span></span> 
+<span data-ttu-id="7027e-104">Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)sono disponibili diversi [report e](../security/office-365-security/reports-and-insights-in-security-and-compliance.md) informazioni utili per consentire al team di sicurezza dell'organizzazione di attenuare e risolvere i rischi per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="7027e-104">In the [Security &amp; Compliance Center](https://protection.office.com), several [reports and insights](../security/office-365-security/reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization.</span></span> <span data-ttu-id="7027e-105">Se si è membri del team di sicurezza dell'organizzazione, è possibile scaricare uno o più report esistenti.</span><span class="sxs-lookup"><span data-stu-id="7027e-105">If you're a member of your organization's security team, you can download one or more existing reports.</span></span> 
   
-## <a name="download-existing-reports"></a><span data-ttu-id="6ce18-106">Scaricare i report esistenti</span><span class="sxs-lookup"><span data-stu-id="6ce18-106">Download existing reports</span></span>
+## <a name="download-existing-reports"></a><span data-ttu-id="7027e-106">Scaricare i report esistenti</span><span class="sxs-lookup"><span data-stu-id="7027e-106">Download existing reports</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="6ce18-107">Verificare di disporre delle [autorizzazioni necessarie assegnate al centro sicurezza &amp; e conformità di Office 365](../security/office-365-security/protect-against-threats.md).</span><span class="sxs-lookup"><span data-stu-id="6ce18-107">Make sure that you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](../security/office-365-security/protect-against-threats.md).</span></span> <span data-ttu-id="6ce18-108">In generale, gli amministratori globali di Office 365, gli amministratori della sicurezza e i lettori di sicurezza possono &amp; accedere ai report nel centro sicurezza e conformità.</span><span class="sxs-lookup"><span data-stu-id="6ce18-108">In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center.</span></span> 
+> <span data-ttu-id="7027e-107">Verificare di disporre delle [autorizzazioni necessarie assegnate al centro sicurezza &amp; e conformità di Office 365](../security/office-365-security/protect-against-threats.md).</span><span class="sxs-lookup"><span data-stu-id="7027e-107">Make sure that you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](../security/office-365-security/protect-against-threats.md).</span></span> <span data-ttu-id="7027e-108">In generale, gli amministratori globali di Office 365, gli amministratori della sicurezza e i lettori di sicurezza possono &amp; accedere ai report nel centro sicurezza e conformità.</span><span class="sxs-lookup"><span data-stu-id="7027e-108">In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center.</span></span> 
   
-1. <span data-ttu-id="6ce18-109">Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), **accedere a** \> report report per il **download**.</span><span class="sxs-lookup"><span data-stu-id="6ce18-109">In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Reports for download**.</span></span>
+1. <span data-ttu-id="7027e-109">Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), **accedere a** \> report report per il **download**.</span><span class="sxs-lookup"><span data-stu-id="7027e-109">In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Reports for download**.</span></span>
     
-2. <span data-ttu-id="6ce18-110">Selezionare uno o più elementi nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="6ce18-110">Select one or more items in the list.</span></span>
+2. <span data-ttu-id="7027e-110">Selezionare uno o più elementi nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="7027e-110">Select one or more items in the list.</span></span>
     
-3. <span data-ttu-id="6ce18-111">Fare clic su **download report**e quindi su **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="6ce18-111">Click **Download report**, and then click **Close**.</span></span>
+3. <span data-ttu-id="7027e-111">Fare clic su **download report**e quindi su **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="7027e-111">Click **Download report**, and then click **Close**.</span></span>
     
-## <a name="related-topics"></a><span data-ttu-id="6ce18-112">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="6ce18-112">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="7027e-112">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="7027e-112">Related topics</span></span>
 
-[<span data-ttu-id="6ce18-113">Report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365</span><span class="sxs-lookup"><span data-stu-id="6ce18-113">Reports and insights in the Office 365 Security &amp; Compliance Center</span></span>](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
+[<span data-ttu-id="7027e-113">Report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365</span><span class="sxs-lookup"><span data-stu-id="7027e-113">Reports and insights in the Office 365 Security &amp; Compliance Center</span></span>](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
   
-[<span data-ttu-id="6ce18-114">Creare una pianificazione per un report nel centro sicurezza &amp; e conformità</span><span class="sxs-lookup"><span data-stu-id="6ce18-114">Create a schedule for a report in the Security &amp; Compliance Center</span></span>](../security/office-365-security/create-a-schedule-for-a-report.md)
+[<span data-ttu-id="7027e-114">Creare una pianificazione per un report nel centro sicurezza &amp; e conformità</span><span class="sxs-lookup"><span data-stu-id="7027e-114">Create a schedule for a report in the Security &amp; Compliance Center</span></span>](../security/office-365-security/create-a-schedule-for-a-report.md)
   
-[<span data-ttu-id="6ce18-115">Gestire le pianificazioni per i report nel &amp; Centro sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="6ce18-115">Manage schedules for reports in the Security &amp; Compliance Center</span></span>](../security/office-365-security/manage-schedules-for-multiple-reports.md)
+[<span data-ttu-id="7027e-115">Gestire le pianificazioni per i report nel &amp; Centro sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="7027e-115">Manage schedules for reports in the Security &amp; Compliance Center</span></span>](../security/office-365-security/manage-schedules-for-multiple-reports.md)
   
-[<span data-ttu-id="6ce18-116">Scaricare un report personalizzato nel centro sicurezza &amp; e conformità</span><span class="sxs-lookup"><span data-stu-id="6ce18-116">Download a custom report in the Security &amp; Compliance Center</span></span>](../security/office-365-security/set-up-and-download-a-custom-report.md)
+[<span data-ttu-id="7027e-116">Scaricare un report personalizzato nel centro sicurezza &amp; e conformità</span><span class="sxs-lookup"><span data-stu-id="7027e-116">Download a custom report in the Security &amp; Compliance Center</span></span>](../security/office-365-security/set-up-and-download-a-custom-report.md)
   
 

@@ -1,5 +1,7 @@
 ---
 title: Chiudere o eliminare un caso
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,37 +16,37 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: " "
-ms.openlocfilehash: 5d8950f2e6164781111465aee8d89eaff92ee958
-ms.sourcegitcommit: e386037c9cc335c86896dc153344850735afbccd
+ms.openlocfilehash: 15b6327809b3557c4d0d90b6c10dc5568ba47f43
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39633835"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595873"
 ---
-# <a name="close-or-delete-a-case"></a><span data-ttu-id="ace9f-102">Chiudere o eliminare un caso</span><span class="sxs-lookup"><span data-stu-id="ace9f-102">Close or delete a case</span></span>
+# <a name="close-or-delete-a-case"></a><span data-ttu-id="0c549-102">Chiudere o eliminare un caso</span><span class="sxs-lookup"><span data-stu-id="0c549-102">Close or delete a case</span></span>
 
-<span data-ttu-id="ace9f-103">Quando viene completata la causa legale o l'indagine supportata da un caso di eDiscovery, è possibile chiudere il caso.</span><span class="sxs-lookup"><span data-stu-id="ace9f-103">When the legal case or investigation supported by an eDiscovery case is completed, you can close the case.</span></span> <span data-ttu-id="ace9f-104">Ecco cosa succede quando si chiude un caso:</span><span class="sxs-lookup"><span data-stu-id="ace9f-104">Here's what happens when you close a case:</span></span>
+<span data-ttu-id="0c549-103">Quando viene completata la causa legale o l'indagine supportata da un caso di eDiscovery, è possibile chiudere il caso.</span><span class="sxs-lookup"><span data-stu-id="0c549-103">When the legal case or investigation supported by an eDiscovery case is completed, you can close the case.</span></span> <span data-ttu-id="0c549-104">Ecco cosa succede quando si chiude un caso:</span><span class="sxs-lookup"><span data-stu-id="0c549-104">Here's what happens when you close a case:</span></span>
 
-- <span data-ttu-id="ace9f-105">Se il caso contiene eventuali posizioni di contenuto in attesa, tali esenzioni saranno disattivate.</span><span class="sxs-lookup"><span data-stu-id="ace9f-105">If the case contains any content locations on hold, those holds will be turned off.</span></span> <span data-ttu-id="ace9f-106">Potrebbe risultare che il contenuto venga eliminato o rimosso definitivamente, dall'utente o da un processo automatizzato, ad esempio un criterio di eliminazione.</span><span class="sxs-lookup"><span data-stu-id="ace9f-106">This might result in content being permanently deleted or purged, either by the user or by an automated process, such as a deletion policy.</span></span>
+- <span data-ttu-id="0c549-105">Se il caso contiene eventuali posizioni di contenuto in attesa, tali esenzioni saranno disattivate.</span><span class="sxs-lookup"><span data-stu-id="0c549-105">If the case contains any content locations on hold, those holds will be turned off.</span></span> <span data-ttu-id="0c549-106">Potrebbe risultare che il contenuto venga eliminato o rimosso definitivamente, dall'utente o da un processo automatizzato, ad esempio un criterio di eliminazione.</span><span class="sxs-lookup"><span data-stu-id="0c549-106">This might result in content being permanently deleted or purged, either by the user or by an automated process, such as a deletion policy.</span></span>
 
-- <span data-ttu-id="ace9f-107">La chiusura di un caso disattiva solo le esenzioni associate a quel caso.</span><span class="sxs-lookup"><span data-stu-id="ace9f-107">Closing a case only turns off the holds that are associated with that case.</span></span> <span data-ttu-id="ace9f-108">Se altre esenzioni sono posizionate in una posizione di contenuto, ad esempio un blocco per controversia legale.</span><span class="sxs-lookup"><span data-stu-id="ace9f-108">If other holds are place on a content location (such as a Litigation Hold.</span></span> <span data-ttu-id="ace9f-109">un criterio di conservazione o un'esenzione da un caso di eDiscovery diverso) tali esenzioni verranno comunque mantenute.</span><span class="sxs-lookup"><span data-stu-id="ace9f-109">a Preservation Policy, or a hold from a different eDiscovery case) those holds will still be maintained.</span></span>
+- <span data-ttu-id="0c549-107">La chiusura di un caso disattiva solo le esenzioni associate a quel caso.</span><span class="sxs-lookup"><span data-stu-id="0c549-107">Closing a case only turns off the holds that are associated with that case.</span></span> <span data-ttu-id="0c549-108">Se altre esenzioni sono posizionate in una posizione di contenuto, ad esempio un blocco per controversia legale.</span><span class="sxs-lookup"><span data-stu-id="0c549-108">If other holds are place on a content location (such as a Litigation Hold.</span></span> <span data-ttu-id="0c549-109">un criterio di conservazione o un'esenzione da un caso di eDiscovery diverso) tali esenzioni verranno comunque mantenute.</span><span class="sxs-lookup"><span data-stu-id="0c549-109">a Preservation Policy, or a hold from a different eDiscovery case) those holds will still be maintained.</span></span>
 
-- <span data-ttu-id="ace9f-110">Il caso è ancora elencato nella pagina eDiscovery nel centro sicurezza & Compliance.</span><span class="sxs-lookup"><span data-stu-id="ace9f-110">The case is still listed on the eDiscovery page in the Security & Compliance Center.</span></span> <span data-ttu-id="ace9f-111">Vengono mantenuti i dettagli, le esenzioni, le ricerche e i membri di un caso chiuso.</span><span class="sxs-lookup"><span data-stu-id="ace9f-111">The details, holds, searches, and members of a closed case are retained.</span></span>
+- <span data-ttu-id="0c549-110">Il caso è ancora elencato nella pagina eDiscovery nel centro sicurezza & Compliance.</span><span class="sxs-lookup"><span data-stu-id="0c549-110">The case is still listed on the eDiscovery page in the Security & Compliance Center.</span></span> <span data-ttu-id="0c549-111">Vengono mantenuti i dettagli, le esenzioni, le ricerche e i membri di un caso chiuso.</span><span class="sxs-lookup"><span data-stu-id="0c549-111">The details, holds, searches, and members of a closed case are retained.</span></span>
 
-- <span data-ttu-id="ace9f-112">È possibile modificare un caso dopo che è stato chiuso.</span><span class="sxs-lookup"><span data-stu-id="ace9f-112">You can edit a case after it's closed.</span></span> <span data-ttu-id="ace9f-113">Ad esempio, è possibile aggiungere o rimuovere membri, creare ricerche, esportare i risultati della ricerca e preparare i risultati della ricerca per l'analisi in Advanced eDiscovery.</span><span class="sxs-lookup"><span data-stu-id="ace9f-113">For example, you can add or removing members, create searches, export search results, and prepare search results for analysis in Advanced eDiscovery.</span></span> <span data-ttu-id="ace9f-114">La differenza principale tra casi attivi e chiusi consiste nel fatto che le esenzioni sono disattivate quando un caso viene chiuso.</span><span class="sxs-lookup"><span data-stu-id="ace9f-114">The primary difference between active and closed cases is that holds are turned off when a case is closed.</span></span>
+- <span data-ttu-id="0c549-112">È possibile modificare un caso dopo che è stato chiuso.</span><span class="sxs-lookup"><span data-stu-id="0c549-112">You can edit a case after it's closed.</span></span> <span data-ttu-id="0c549-113">Ad esempio, è possibile aggiungere o rimuovere membri, creare ricerche, esportare i risultati della ricerca e preparare i risultati della ricerca per l'analisi in Advanced eDiscovery.</span><span class="sxs-lookup"><span data-stu-id="0c549-113">For example, you can add or removing members, create searches, export search results, and prepare search results for analysis in Advanced eDiscovery.</span></span> <span data-ttu-id="0c549-114">La differenza principale tra casi attivi e chiusi consiste nel fatto che le esenzioni sono disattivate quando un caso viene chiuso.</span><span class="sxs-lookup"><span data-stu-id="0c549-114">The primary difference between active and closed cases is that holds are turned off when a case is closed.</span></span>
 
-<span data-ttu-id="ace9f-115">Per chiudere un caso:</span><span class="sxs-lookup"><span data-stu-id="ace9f-115">To close a case:</span></span>
+<span data-ttu-id="0c549-115">Per chiudere un caso:</span><span class="sxs-lookup"><span data-stu-id="0c549-115">To close a case:</span></span>
 
-1. <span data-ttu-id="ace9f-116">Nella pagina **Advanced eDiscovery** selezionare il caso che si desidera chiudere.</span><span class="sxs-lookup"><span data-stu-id="ace9f-116">On the **Advanced eDiscovery** page, select the case that you want to close.</span></span>
+1. <span data-ttu-id="0c549-116">Nella pagina **Advanced eDiscovery** selezionare il caso che si desidera chiudere.</span><span class="sxs-lookup"><span data-stu-id="0c549-116">On the **Advanced eDiscovery** page, select the case that you want to close.</span></span>
 
-2. <span data-ttu-id="ace9f-117">Nella scheda **Impostazioni** , in **informazioni sul caso**, fare clic su **Seleziona**.</span><span class="sxs-lookup"><span data-stu-id="ace9f-117">On the **Settings** tab, under **Case Information**, click **Select**.</span></span>
+2. <span data-ttu-id="0c549-117">Nella scheda **Impostazioni** , in **informazioni sul caso**, fare clic su **Seleziona**.</span><span class="sxs-lookup"><span data-stu-id="0c549-117">On the **Settings** tab, under **Case Information**, click **Select**.</span></span>
 
-3. <span data-ttu-id="ace9f-118">Fare clic su **Chiudi caso**.</span><span class="sxs-lookup"><span data-stu-id="ace9f-118">Click **Close case**.</span></span>
+3. <span data-ttu-id="0c549-118">Fare clic su **Chiudi caso**.</span><span class="sxs-lookup"><span data-stu-id="0c549-118">Click **Close case**.</span></span>
 
-<span data-ttu-id="ace9f-119">Per eliminare un caso:</span><span class="sxs-lookup"><span data-stu-id="ace9f-119">To delete a case:</span></span>
+<span data-ttu-id="0c549-119">Per eliminare un caso:</span><span class="sxs-lookup"><span data-stu-id="0c549-119">To delete a case:</span></span>
 
-1. <span data-ttu-id="ace9f-120">Nella pagina **Advanced eDiscovery** selezionare il caso che si desidera eliminare.</span><span class="sxs-lookup"><span data-stu-id="ace9f-120">On the **Advanced eDiscovery** page, select the case that you want to delete.</span></span>
+1. <span data-ttu-id="0c549-120">Nella pagina **Advanced eDiscovery** selezionare il caso che si desidera eliminare.</span><span class="sxs-lookup"><span data-stu-id="0c549-120">On the **Advanced eDiscovery** page, select the case that you want to delete.</span></span>
 
-2. <span data-ttu-id="ace9f-121">Nella scheda **Impostazioni** , in **informazioni sul caso**, fare clic su **Seleziona**.</span><span class="sxs-lookup"><span data-stu-id="ace9f-121">On the **Settings** tab, under **Case Information**, click **Select**.</span></span>
+2. <span data-ttu-id="0c549-121">Nella scheda **Impostazioni** , in **informazioni sul caso**, fare clic su **Seleziona**.</span><span class="sxs-lookup"><span data-stu-id="0c549-121">On the **Settings** tab, under **Case Information**, click **Select**.</span></span>
 
-3. <span data-ttu-id="ace9f-122">Fare clic su **Delete case**.</span><span class="sxs-lookup"><span data-stu-id="ace9f-122">Click **Delete case**.</span></span> 
+3. <span data-ttu-id="0c549-122">Fare clic su **Delete case**.</span><span class="sxs-lookup"><span data-stu-id="0c549-122">Click **Delete case**.</span></span> 
