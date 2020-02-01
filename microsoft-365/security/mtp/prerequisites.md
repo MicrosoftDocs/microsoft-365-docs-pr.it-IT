@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d45be77abd404f87484d0f8390f09f1b9bc3b8ce
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d3f24e8615f5b11b0853d7f1e36b49eb0cf2424f
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600008"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661922"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Prerequisiti di Microsoft Threat Protection
 
@@ -33,23 +33,25 @@ ms.locfileid: "41600008"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Informazioni sui requisiti di licenza, hardware e software e altre impostazioni di configurazione per eseguire e sfruttare Sicurezza Microsoft 365.
+Informazioni sui requisiti di licenza, hardware e software e altre impostazioni di configurazione per il provisioning e l'utilizzo di Microsoft Threat Protection.
 
 ## <a name="licensing-requirements"></a>Requisiti per la licenza
-Sicurezza Microsoft 365 richiede una delle licenze seguenti:
+Per utilizzare Microsoft Threat Protection, è necessaria una delle seguenti licenze o combinazioni di licenze:
 
-- Microsoft 365 E5 
+- Microsoft 365 E5
+- Microsoft 365 E5 Security
 - Office 365 E5, Enterprise Mobility + Security E5 e Windows E5
 
-Queste licenze possono essere acquisite dalla [pagina Microsoft 365 Enterprise](https://www.microsoft.com/en-us/microsoft-365/enterprise).
+[Visualizzare i piani del servizio Microsoft 365 Enterprise](https://www.microsoft.com/en-us/licensing/product-licensing/microsoft-365-enterprise)
 
 ### <a name="check-your-existing--licenses"></a>Controllare le licenze esistenti
-Andare nell'interfaccia di amministrazione di Microsoft 365 su [admin.microsoft.com](https://admin.microsoft.com/) per visualizzare le licenze esistenti. Nell'interfaccia di amministrazione, andare in **Fatturazione** > **Licenze**.
+Accedere a Microsoft 365 Admin Center ([admin.Microsoft.com](https://admin.microsoft.com/)) per visualizzare le licenze esistenti. Nell'interfaccia di amministrazione, andare in **Fatturazione** > **Licenze**.
 
-È necessario avere il ruolo di **amministratore fatturazione** o **lettore globale** [ in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) per poter visualizzare le informazioni sulla licenza. Se si verificano problemi di accesso, rivolgersi a un amministratore globale.  
+>[!NOTE]
+> Per poter visualizzare le informazioni sulla licenza, è necessario essere assegnati al ruolo di **amministratore di fatturazione** o **lettore globale** [in Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) . Se si verificano problemi di accesso, rivolgersi a un amministratore globale.
 
 ## <a name="browser-requirements"></a>Requisiti per il browser
-Per accedere al Centro sicurezza Microsoft 365, è possibile usare un browser. Internet Explorer e Microsoft Edge sono supportati. È supportato anche qualsiasi browser compatibile con HTML5.
+Accedere a Microsoft Threat Protection nel centro sicurezza Microsoft 365 utilizzando Microsoft Edge, Internet Explorer 11 o qualsiasi Web browser compatibile con HTML 5.
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica su Microsoft Threat Protection](microsoft-threat-protection.md)

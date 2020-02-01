@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Trovare le risposte alle domande più frequenti sugli acquisti in modalità self-service.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: 9f456c992cda6fcfafd1a0d5faa68dba42a894d8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f9f991dca27617717817564daa4a042e2eeb4bf0
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594100"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661909"
 ---
 # <a name="self-service-purchase-faq"></a>Domande frequenti sull'acquisto in modalità self-service
 
@@ -101,7 +101,7 @@ La persona che acquista la sottoscrizione tramite acquisto in modalità self-ser
 
 ### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>Quali funzionalità ha un amministratore per gli acquisti in modalità self-service?
 
-Gli amministratori possono visualizzare tutti gli acquisti in modalità self-service effettuati nell'organizzazione nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a>. Sono in grado di visualizzare il prodotto, il nome dell'acquirente, gli abbonamenti acquistati, la data di scadenza, la cronologia degli ordini, il prezzo di acquisto e gli utenti assegnati per ogni acquisto in modalità self-service. Se necessario per la propria organizzazione, gli amministratori saranno in grado di disattivare l'acquisto in modalità self-service per ogni singolo prodotto tramite PowerShell. Gli amministratori hanno gli stessi criteri di gestione dei dati e di accesso rispetto ai prodotti acquistati tramite l'acquisto in modalità self-service o in modo centralizzato.
+Gli amministratori possono visualizzare tutti gli acquisti in modalità self-service effettuati nell'organizzazione nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a>. Sono in grado di visualizzare il prodotto, il nome dell'acquirente, gli abbonamenti acquistati, la data di scadenza, la cronologia degli ordini, il prezzo di acquisto e gli utenti assegnati per ogni acquisto in modalità self-service. Nell'interfaccia di amministrazione di Power Platform, gli amministratori possono anche visualizzare la capacità di acquisto in modalità self-service. Se necessario per la propria organizzazione, gli amministratori saranno in grado di disattivare l'acquisto in modalità self-service per ogni singolo prodotto tramite PowerShell. Gli amministratori hanno gli stessi criteri di gestione dei dati e di accesso rispetto ai prodotti acquistati tramite l'acquisto in modalità self-service o in modo centralizzato.
 
 Gli amministratori possono anche controllare se gli utenti dell'organizzazione possono effettuare acquisti in modalità self-service. Per ulteriori informazioni, vedere [use AllowSelfServicePurchase for the MSCommerce PowerShell Module](allowselfservicepurchase-powershell.md).
 
