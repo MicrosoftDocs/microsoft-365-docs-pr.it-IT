@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ec30692d5721c316c205cf8b561e59cd6e65e0b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9224261cd0700796bdeccd35b68995c99300e591
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602313"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628092"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Portabilità e responsabilità dell'assicurazione malattia (HIPAA) & atti HITECH
 
@@ -51,7 +51,7 @@ I servizi cloud di Microsoft Enterprise sono coperti anche da valutazioni FedRAM
 
 Informazioni sui vantaggi di HIPAA e HITECH sul cloud Microsoft: [leggere la storia dei clienti di zwanger-Pesiri radiologia](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -70,7 +70,7 @@ Informazioni sui vantaggi di HIPAA e HITECH sul cloud Microsoft: [leggere la sto
 
 Ottenere un vantaggio per sfruttare i vantaggi del cloud per le soluzioni di dati di integrità con il modello di sicurezza e conformità di Azure, ovvero i dati di integrità HIPAA/HITRUST e AI. Questo modello fornisce strumenti e linee guida per iniziare a creare soluzioni HIPAA/HITRUST oggi.
 
-[Iniziare a usare la cianografia di Azure HIPAA/HITRUST](https://aka.ms/healthblueprint)
+[Iniziare a usare la cianografia di Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -112,6 +112,6 @@ Per assistere i clienti con questa attività, Microsoft ha pubblicato queste gui
 - [Guida all'implementazione di Azure HIPAA](https://aka.ms/azure-hipaa-guide)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
 Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).

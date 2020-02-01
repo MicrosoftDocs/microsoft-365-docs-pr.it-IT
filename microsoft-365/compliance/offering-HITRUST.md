@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: aa93ea90748f4beeb7a6d2ad6f537b098f19376c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 734621d9017c21822043ff8c1beb82044ec8c860
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602303"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628102"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Framework di sicurezza comune (QCS, Health Information Trust Alliance) (HITRUST)
 
@@ -39,7 +39,7 @@ Informazioni su come accelerare la distribuzione di HITRUST con il modello di si
 
 [Scaricare Microsoft Azure HITRUST customer responsibility Matrix (CRM) Blueprint v 9.0 d](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=3ccde498-4761-4be0-be8b-cd8d379a3a4f&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_Healthcare_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Intune
@@ -56,7 +56,7 @@ La certificazione HITRUST CSF di Azure e Office 365 è valida per due anni.
 
 Ottenere un vantaggio per sfruttare i vantaggi del cloud per le soluzioni di dati di integrità con il modello di sicurezza e conformità di Azure, ovvero i dati di integrità HIPAA/HITRUST e AI. Questo modello fornisce strumenti e linee guida per iniziare a creare soluzioni HIPAA/HITRUST oggi.
 
-[Iniziare a usare la cianografia di Azure HIPAA/HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100613)
+[Iniziare a usare la cianografia di Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>Accelerare la conformità HIPAA/HITRUST quando si utilizza Office 365
 
@@ -111,6 +111,6 @@ Accedere allo strumento di® di HITRUST MyCSF e prepopolare la valutazione per l
 - [Per saperne di più sul programma di responsabilità condivisa di HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
 Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf).

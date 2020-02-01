@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: L'organizzazione può collaborare con un partner Microsoft per configurare un connettore personalizzato per l'importazione di dati di terze parti da origini dati quali Salesforce Chatter, Yahoo Messenger o Yammer. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per poter utilizzare le funzionalità di conformità di Office 365, ad esempio i criteri di conservazione legale, ricerca contenuto e ritenzione per gestire la governance dei dati di terze parti dell'organizzazione.
-ms.openlocfilehash: d17c79ed4d6fa662a3416e9952ac732a8d4d9d9f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01188110b19dc4784920a5f18e673f92e064e034
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601223"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628608"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>Collaborare con un partner per archiviare i dati di terze parti in Office 365
 
@@ -533,7 +533,12 @@ Per abilitare un connettore di dati di terze parti per la connessione a Office 3
 
 Di seguito sono riportati i passaggi per accedere e accettare la richiesta di registrazione del connettore:
 
-1. Accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ed eseguire l'accesso con le credenziali di un amministratore globale di Office 365.<br/><br/>Verrà visualizzata la finestra di dialogo seguente. È possibile espandere le carriere per esaminare le autorizzazioni che verranno assegnate al connettore.<br/><br/>![Viene visualizzata la finestra di dialogo delle richieste di autorizzazione](media/O365-ThirdPartyDataConnector-OptIn1.png)
+1. Accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ed eseguire l'accesso con le credenziali di un amministratore globale di Office 365.
+
+   Verrà visualizzata la finestra di dialogo seguente. È possibile espandere le carriere per esaminare le autorizzazioni che verranno assegnate al connettore.
+
+   ![Viene visualizzata la finestra di dialogo delle richieste di autorizzazione](media/O365-ThirdPartyDataConnector-OptIn1.png)
+
 2. Fare clic su **Accetta**.
 
 Dopo aver accettato la richiesta, viene visualizzato il [portale di Azure](https://portal.azure.com) . Per visualizzare l'elenco delle applicazioni per l'organizzazione, fare clic su applicazioni di **Azure Active Directory** > **Enterprise**. Il connettore di dati di terze parti di Office 365 è elencato nel Blade **applicazioni Enterprise** .

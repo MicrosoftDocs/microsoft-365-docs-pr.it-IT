@@ -11,6 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
+ms.date: 01/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: d9175e78326832a2be874359babae5ae9c689420
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 44c90c6c9394b1f9fee34b8eb068bb7c232c4d78
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600083"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627972"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Come segnalare falsi positivi/negativi nelle funzionalità di analisi e risposta automatizzate
 
@@ -32,17 +33,52 @@ ms.locfileid: "41600083"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[Le funzionalità di ricerca e risposta automatizzate](mtp-autoir.md) in Microsoft Threat Protection non hanno o rilevato erroneamente qualcosa? È possibile segnalarlo a Microsoft o regolare gli avvisi (se necessario). Utilizzare la tabella seguente come guida: 
+[Le funzionalità di ricerca e risposta automatizzate](mtp-autoir.md) in Microsoft Threat Protection non hanno o rilevato erroneamente qualcosa? Per risolvere il problema, è possibile eseguire la procedura. È possibile:
+- [Segnala un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
+- [Modificare gli avvisi](#adjust-an-alert-to-prevent-false-positives-from-recurring) (se necessario); e 
+- [Annullare le azioni di correzione eseguite nei dispositivi](#undo-a-remediation-action-that-was-taken-on-a-device). 
 
+Utilizzare questo articolo come guida. 
 
-|Elemento  |Rilevato da  |Come segnalarlo  |
+## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Segnalare un falso positivo/negativo a Microsoft per l'analisi
+
+|Elemento mancante o rilevato erroneamente |Servizio  |Procedura  |
 |---------|---------|---------|
-|Messaggio di posta elettronica <br/>Allegato di posta elettronica <br/>URL in un messaggio di posta elettronica o in un file di Office      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Inviare messaggi di posta indesiderata sospetti, phishing, URL e file a Microsoft per l'analisi di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
+|-Messaggio di posta elettronica <br/>-Allegato di posta elettronica <br/>-URL in un messaggio di posta elettronica<br/>-URL in un file di Office      |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)        |[Inviare messaggi di posta indesiderata sospetti, phishing, URL e file a Microsoft per l'analisi di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)         |
 |File o app in un dispositivo    |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection)         |[Inviare un file a Microsoft per l'analisi antimalware](https://www.microsoft.com/wdsi/filesubmission)         |
-|Avviso attivato da un utilizzo legittimo <br/>Avviso inesatto    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> oppure <br/>[Rilevamento delle minacce avanzato di Azure](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Gestire gli avvisi nel cloud app Security Portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
+
+## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Modificare un avviso per evitare che i falsi positivi vengano ricorrenti
+
+|Scenario |Servizio |Procedura |
+|--------|--------|--------|
+|-Un avviso viene attivato da un utilizzo legittimo <br/>-Un avviso non è accurato    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> oppure <br/>[Rilevamento delle minacce avanzato di Azure](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[Gestire gli avvisi nel cloud app Security Portal](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
+|Un file, un indirizzo IP, un URL o un dominio viene considerato come malware su un dispositivo, anche se è sicuro|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) |[Creare un indicatore personalizzato con un'azione "Consenti"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 
-## <a name="next-steps"></a>Passaggi successivi
+## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Annullare un'azione di correzione eseguita su un dispositivo
+
+Se è stata eseguita un'azione di correzione su un dispositivo, ad esempio un dispositivo Windows 10, e l'elemento effettivamente pulito, il team delle operazioni di sicurezza può annullare l'azione di correzione nell' [Action Center](mtp-action-center.md).
+
+> [!IMPORTANT]
+> Verificare di disporre delle [autorizzazioni necessarie](mtp-action-center.md#required-permissions-for-action-center-tasks) prima di tentare di eseguire l'attività seguente.
+
+1. Andare su [https://security.microsoft.com](https://security.microsoft.com) ed eseguire l'accesso. 
+
+2. Nel riquadro di spostamento, scegliere **Centro notifiche**. 
+
+3. Nella scheda **cronologia** selezionare un'azione che si desidera annullare. Verrà aperto un riquadro a comparsa.<br/>
+    > [!TIP]
+    > Utilizzare i filtri per limitare l'elenco dei risultati. 
+
+4. Nel riquadro a comparsa per l'elemento selezionato, selezionare **Apri pagina di analisi**.
+
+5. Nella visualizzazione dettagli analisi selezionare la scheda **azioni** .
+
+6. Selezionare un elemento con stato **completato**e cercare un collegamento, ad esempio **approvato**, nella colonna **decisioni** . Verrà aperto un riquadro a comparsa con maggiori dettagli sull'azione.
+
+7. Per annullare l'azione, selezionare **Elimina correzione**.
+
+## <a name="related-articles"></a>Articoli correlati
 
 - [Approvare o rifiutare le azioni relative all'indagine e reazione automatizzate](mtp-autoir-actions.md)
 - [Altre informazioni sul centro notifiche](mtp-action-center.md)
