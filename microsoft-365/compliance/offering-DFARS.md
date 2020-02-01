@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f5627194ad21b73cae664c808d2bba9f4254d8b5
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1b850db09306f3cb4664433fb5659e8b65b421ba
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805249"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602553"
 ---
 # <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>Supplemento per la normativa federale sull'acquisizione della difesa (DFARS)
 
@@ -79,4 +81,4 @@ Inoltre, le offerte di Microsoft al di fuori del limite certificato FedRAMP che 
 - [Microsoft Cloud per enti pubblici](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Condizioni dei Servizi online](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Informazioni non classificate controllate (cui)](https://www.archives.gov/cui/registry/category-list)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

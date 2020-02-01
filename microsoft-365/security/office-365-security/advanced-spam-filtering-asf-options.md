@@ -1,5 +1,7 @@
 ---
 title: Opzioni avanzate per il filtraggio della posta indesiderata
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Le opzioni avanzate per il filtro della posta indesiderata offrono agli amministratori la possibilità di esaminare vari attributi di contenuto di un messaggio. La presenza di tali attributi in un messaggio ne aumenta il punteggio posta indesiderata, aumentando così la probabilità di essere identificato come posta indesiderata, o lo contrassegna come posta indesiderata. Le opzioni ASF sono mirate e specifiche proprietà dei messaggio, ad esempio tag HTML e reindirizzamento URL, che in genere si trovano nei messaggi di posta indesiderata.
-ms.openlocfilehash: bfb559ece8a69f0d641cdb2ad552d7e831eda416
-ms.sourcegitcommit: 3eae8fe39cea912d29e211a1c9fd035d6b606f91
+ms.openlocfilehash: 07f2b32dac6ba4a04fbccac5f015be399f62e254
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793700"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599963"
 ---
 # <a name="advanced-spam-filtering-options"></a>Opzioni avanzate per il filtraggio della posta indesiderata
 

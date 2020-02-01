@@ -1,5 +1,7 @@
 ---
 title: Limiti relativi alle indagini sui dati
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ff11d03adf8afb0ce76151ff67a238cce342f9df
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 2666b1f4add1a55453162d1555e9b7e1f01eada7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37082820"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600773"
 ---
 # <a name="data-investigations-preview-limits"></a>Limiti relativi alle indagini sui dati (Preview)
 

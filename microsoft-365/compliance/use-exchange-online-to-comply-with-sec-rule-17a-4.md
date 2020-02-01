@@ -1,5 +1,7 @@
 ---
 title: Usare Exchange Online e il Centro sicurezza e conformità per conformarsi alla regola SEC 17a-4
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates ha comprovato che se si esegue la configurazione di Exchange Online e del Centro sicurezza e conformità come consigliato vengono soddisfatti i requisiti di archiviazione pertinenti delle regole CFTC 1.31(c)-(d), FINRA 4511 e SEC 17a-4. È possibile scaricare la valutazione.
-ms.openlocfilehash: 33db33589df60b52c4598c52d593b9a6fe4c9c10
-ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
+ms.openlocfilehash: dc61521043d176781c2a6fbd9e1b283cc93eb270
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41122425"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628592"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usare Exchange Online e il Centro sicurezza e conformità per conformarsi alla regola SEC 17a-4
 
@@ -67,6 +69,8 @@ La protezione dell'archiviazione consente di soddisfare i requisiti normativi de
 
 Sono attualmente previste alcune limitazioni per Exchange Online:
 
-- Il controllo a livello di elemento non è disponibile nelle cassette postali del gruppo di Office 365.
 - Le comunicazioni in thread non sono disponibili per i messaggi di chat e canali di Teams.
 - Gli apprezzamenti per i messaggi di chat e canali di Teams non vengono conservati.
+
+> [!NOTE]
+> Il controllo a livello di elemento è ora disponibile per le cassette postali di gruppo di Office 365. Per altre informazioni, vedere [Gestire il controllo delle cassette postali](enable-mailbox-auditing.md).

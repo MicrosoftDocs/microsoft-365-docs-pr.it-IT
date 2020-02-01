@@ -1,5 +1,7 @@
 ---
 title: Pensionamento degli strumenti di eDiscovery legacy
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,18 +12,18 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Office 365 Advanced eDiscovery v 1.0 vengono anche ritirati entro lo stesso periodo di tempo.
-ms.openlocfilehash: 08f568a82096efb143ff5c9fd87011a3d3029e42
-ms.sourcegitcommit: 5b8e9935fe7bfcb96b8f8356119ce23152bd16a9
+ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "41210061"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600563"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Pensionamento degli strumenti di eDiscovery legacy
 
 Nel corso degli anni, Microsoft ha fornito gli strumenti di eDiscovery che consentono di cercare, visualizzare in anteprima ed esportare il contenuto della posta elettronica da Exchange Online. Tuttavia, questi strumenti non offrono più una soluzione efficace per la ricerca di contenuto non Exchange in altri servizi di Office 365, ad esempio i gruppi di SharePoint Online e di Office 365. Per risolvere questo, Microsoft offre altri strumenti di eDiscovery che consentono di cercare una vasta gamma di contenuti di Office 365. E abbiamo lavorato duramente per incorporare la più recente e potente funzionalità di eDiscovery nel [centro conformità di Microsoft 365](https://compliance.microsoft.com). In questo modo le organizzazioni devono rispondere a richieste di documenti legali, interne e di altro tipo per i contenuti di numerosi servizi di Office 365, tra cui Exchange Online.
 
-Come risultato di questa nuova e migliorata funzionalità di eDiscovery nel centro conformità di Microsoft 365, vengono ritirate le seguenti funzionalità e caratteristiche correlate a eDiscovery correlate alla ricerca di contenuto della posta elettronica:
+Come risultato di questa nuova e migliorata funzionalità di eDiscovery nel centro conformità di Microsoft 365, vengono ritirate le seguenti funzionalità e caratteristiche correlate a eDiscovery correlate alla ricerca di contenuto di posta elettronica in Exchange Online e Office 365:
 
 - [EDiscovery sul posto](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) e [archiviazioni sul posto](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) nell'interfaccia di amministrazione di Exchange.
 

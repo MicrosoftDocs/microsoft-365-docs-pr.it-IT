@@ -1,5 +1,7 @@
 ---
 title: Caratteristiche di EOP
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Nella tabella seguente viene fornito un elenco delle funzionalità disponibili nel servizio di filtro della posta elettronica ospitato in Exchange Online Protection (EOP).
-ms.openlocfilehash: 82bdd8e932c194573ad7482c5a561d092897d010
-ms.sourcegitcommit: ca4ce9e8c7e4b433608cd059857740ffd5a472c2
+ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "40840175"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599373"
 ---
 # <a name="eop-features"></a>Funzionalità di Exchange Online Protection
 

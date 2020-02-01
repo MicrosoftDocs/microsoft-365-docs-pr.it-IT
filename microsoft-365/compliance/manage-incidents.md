@@ -1,5 +1,7 @@
 ---
 title: Gestire i set di prove nelle indagini sui dati
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 01d0657744eb503d8d0819ee0b90997380f41722
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: e82f3c90dd931fc23635710c13e5727b1b3add79
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083799"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600543"
 ---
 # <a name="manage-evidence-sets-in-data-investigations-preview"></a>Gestire i set di prove in indagini sui dati (anteprima)  
 

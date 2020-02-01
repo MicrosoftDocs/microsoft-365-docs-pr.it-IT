@@ -1,5 +1,7 @@
 ---
 title: 'Workshop Chief Information Security Officer (OICOL), modulo 5: protezione delle informazioni'
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: 766993729b416b360d559a2d8cacf29a2a29c183
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 50e13b846d861a21c4b36ef25c579d592760edde
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517565"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599663"
 ---
 # <a name="ciso-workshop-module-5-information-protection"></a>Modulo di OICOL Workshop 5: protezione delle informazioni
 

@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ae28d96416f46a45c0d271b9c291040c2e9d8b31
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 1adf0bab35c921dd416028747b0309e5ad5f3055
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804129"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601963"
 ---
 # <a name="us-export-administration-regulations-ear"></a>Normative per l'esportazione degli Stati Uniti (EAR)
 
@@ -89,4 +91,4 @@ Gli Stati Uniti dispongono anche di regolamenti di controllo di esportazione dis
 - [Restrizioni all'esportazione per la crittografia](https://docs.microsoft.com/windows/uwp/security/export-restrictions-on-cryptography)
 - [Microsoft e FIPS 140-2](offering-fips-140-2.md)
 - [Microsoft e ITAR](offering-itar.md)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

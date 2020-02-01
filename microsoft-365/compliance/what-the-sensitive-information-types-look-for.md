@@ -1,5 +1,7 @@
 ---
 title: Tipi di informazioni riservate disponibili da cercare
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 9c3111069ff30784af5fe781200de5e770c79066
-ms.sourcegitcommit: 8aa9f204b056f01bfb4c357347dc1592d0c9b688
+ms.openlocfilehash: efd5d2f8003bd79620118a6a058576e5593699b1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38686637"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601213"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 
@@ -1218,7 +1220,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Persona giuridica 
 - Persone giuridiche 
 - Stato della registrazione 
-- Business 
+- Piccole e medie imprese 
 - Company
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 

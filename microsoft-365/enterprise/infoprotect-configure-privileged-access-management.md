@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 7: configurare la gestione degli accessi con privilegi per Office 365'
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Comprendere e configurare la gestione degli accessi con privilegi per Office 365.
-ms.openlocfilehash: e9c68e4fafb1e9537b403965b4360806938c6a6f
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: da047d21094854f15fdb39fc46fd046a1c4605ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370423"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600963"
 ---
 # <a name="step-7-configure-privileged-access-management-for-office-365"></a>Passaggio 7: configurare la gestione degli accessi con privilegi per Office 365
 
@@ -42,7 +44,7 @@ Per ulteriori informazioni, vedere l’argomento [Gestione degli accessi con pri
 
 |||
 |:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Per eseguire questa configurazione in un ambiente di laboratorio di testing, vedere la [Guida al Lab di test di gestione di accessi con privilegi](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
+|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Per eseguire questa procedura in un ambiente di testing, vedere la [Guida al lab di test gestione degli accessi privilegiati](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
 |||
 
 Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria.md#crit-infoprotect-step7) che corrispondono a questo passaggio.

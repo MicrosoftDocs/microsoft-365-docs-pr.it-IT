@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b49a898c3a517b6c9468478ad7b7eddeeee1755c
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d621017a125a43fc0fc9523e6ce8700b66077f2e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805239"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602533"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>Digital Production partnership (DPP) Regno Unito
 
@@ -44,7 +46,7 @@ Il contrassegno di trasmissione di Azure è valido per un anno e viene rinnovato
 - [Elenco di controllo dei requisiti di sicurezza per broadcaster di Azure NABA DPP](https://aka.ms/Azure-CTS-Broadcast-Checklist)
 - [DPP impegnato in società di sicurezza aggiudicate i marchi](https://aka.ms/Azure-Asset-Mgmt)
 
-## <a name="how-to-implement"></a>Come eseguire l'implementazione
+## <a name="how-to-implement"></a>Come implementare
 
 - [Asset Management Hardening Guide](https://aka.ms/Azure-Asset-Mgmt): procedure consigliate in Azure Proteggi il contenuto prerilascio da divulgazione, modifica o eliminazione non autorizzata.
 - [Servizi di Azure Media](https://docs.microsoft.com/azure/media-services/): creare soluzioni che raggiungano la codifica video ad alta definizione e lo streaming video di qualità broadcast.
@@ -53,8 +55,8 @@ Il contrassegno di trasmissione di Azure è valido per un anno e viene rinnovato
 
 - [DPP dedicato al programma di sicurezza broadcast Checklist Guida utente](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [Le emittenti NABA e DPP si uniscono per promuovere i requisiti di sicurezza cibernetica dei fornitori](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf).

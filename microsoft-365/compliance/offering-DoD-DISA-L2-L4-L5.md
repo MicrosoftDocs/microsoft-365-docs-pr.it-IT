@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad9659799494a3aaad4a3436b263ebcfd2b56d1c
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0cd96d9b7d769f75d5b7f26bb364cf517844e29d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112500"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602523"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorizzazione provvisoria del dipartimento della difesa degli Stati Uniti (DoD) ai livelli di impatto 2, 4 e 5
 
@@ -56,7 +58,7 @@ In base alle autorizzazioni di FedRAMP, il supporto di servizi cloud DISA ha con
 
 Impact Level 2 include informazioni non classificate non controllate, ovvero dati autorizzati per il rilascio pubblico. Vengono inoltre riportate altre informazioni non classificate che, pur non essendo considerate "mission critical", richiedono comunque un livello minimo di controllo di accesso. Questa autorizzazione consente ai clienti del governo federale statunitense di distribuire informazioni non sensibili e applicazioni e siti Web di difesa di base sui servizi cloud Microsoft in ambito.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft associati
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Servizi coperti per il livello di impatto 5 di DoD
 

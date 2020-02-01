@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a7967a4bd12f98f3654f2b5006568c868a7e134f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 070ec3977768d131e4e4d9c2f493e630a1a707c9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804019"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601893"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -51,7 +53,7 @@ Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca
 
 - [Attestazione del governo di Azure per la conformità con NIST SP 800 – 171](https://aka.ms/Azure-NIST-800-171)
 
-## <a name="how-to-implement"></a>Come eseguire l'implementazione
+## <a name="how-to-implement"></a>Come implementare
 
 - [Cianografia del NIST SP 800 – 171](https://aka.ms/NIST-800-171-Blueprint): ottenere supporto per l'implementazione di carichi di lavoro in Azure conformi al NIST SP 800 – 171.
 
@@ -71,6 +73,6 @@ Sì. I clienti Microsoft possono utilizzare i controlli controllati descritti ne
 - [Cloud Microsoft per enti pubblici](https://www.microsoft.com/enterprise/government)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ).

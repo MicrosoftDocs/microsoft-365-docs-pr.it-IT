@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a402b880778a1644d63dfcdbe73ecc96f61f5be
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 4e8e46ba396d3900da52886815a6ef01243d8f24
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805539"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602693"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Autorità per la regolamentazione prudenziale australiana (APRA)
 
@@ -75,11 +77,11 @@ Sì. La normativa sulla privacy generale (che si applica a tutti i settori, non 
 - [Microsoft Response to the APRA Information paper sul cloud](https://aka.ms/navigatecloudaustralia)
 - [Esplorazione del percorso verso il cloud: elenco di controllo di conformità per gli istituti finanziari in Australia](https://aka.ms/microsoftaprachecklistjun17)
 - [Microsoft Australia: cloud in servizi finanziari](https://www.microsoft.com/en-sg/apac/trustedcloud/australia-financial-service.aspx)
-- [Financial Services Compliance Program di Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Microsoft Financial Services Compliance Program](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Conformità dei servizi finanziari in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servizi finanziari e servizi cloud aziendali di Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/2/6/0/26056353-2F4C-4A6A-AE5D-019E35EB8E2C/APRA-Compliance.pdf).

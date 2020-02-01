@@ -9,13 +9,15 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 08/30/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
-ms.openlocfilehash: 27ed024c47ac671625563d8bf060017cb1757c4c
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 0078931be23039dac3a323f4747494803d1acd4d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112690"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602853"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Passaggio 2: distribuire Windows 10 Enterprise per i dispositivi esistenti come aggiornamento sul posto
 
@@ -29,7 +31,7 @@ Se sono presenti computer che eseguono Windows 7 o Windows 8,1, è consigliabile
 
 Eseguire la procedura seguente per configurare e distribuire un'immagine di Windows 10 Enterprise utilizzando Microsoft endpoint Configuration Manager come aggiornamento sul posto.
 
-## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>La distribuzione di Windows 10 con il poster di Configuration Manager
+## <a name="the-windows-10-deployment-with-configuration-manager-poster"></a>Distribuzione di Windows 10 con il poster di Configuration Manager
 
 Il poster di Configuration Manager è una pagina in modalità landscape (17x11). Fare clic sull'immagine seguente per visualizzare un file PDF nel browser. 
 

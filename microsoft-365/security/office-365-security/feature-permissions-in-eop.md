@@ -1,5 +1,7 @@
 ---
 title: Autorizzazioni di funzionalità in EOP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Le autorizzazioni necessarie per eseguire le attività di gestione di Microsoft Exchange Online Protection (EOP) variano a seconda della funzionalità che si sta gestendo.
-ms.openlocfilehash: dcf56a5295f7964b2271331deb2e7f8c1ba1635e
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: 2129df7faaa977d59f8af8082291520d33bc9cc7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871852"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599313"
 ---
 # <a name="feature-permissions-in-eop"></a>Autorizzazioni per le funzionalità in Exchange Online Protection
 
@@ -33,7 +35,7 @@ Per individuare le autorizzazioni necessarie per gestire le caratteristiche di E
 |Protezione da posta indesiderata|Gestione organizzazione <br/><br/> Gestione igiene|
 |Regole del flusso di posta|Gestione organizzazione <br/><br/> Gestione record|
 |Domini|Gestione organizzazione <br/><br/> Gestione organizzazione sola visualizzazione|
-|Protezione avanzata dalle minacce (ATP, Advanced Threat Protection)|Gestione organizzazione <br/><br/> Gestione igiene|
+|Advanced Threat Protection (ATP)|Gestione organizzazione <br/><br/> Gestione igiene|
 |Office 365 connettori|Gestione organizzazione|
 |Traccia dei messaggi|Gestione organizzazione <br/><br/> Gestione organizzazione sola visualizzazione|
 |Configurazione organizzazione|Gestione organizzazione|

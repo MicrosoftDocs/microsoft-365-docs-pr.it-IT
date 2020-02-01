@@ -1,5 +1,7 @@
 ---
 title: Intestazioni messaggi della protezione da posta indesiderata
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui campi e sui valori di intestazione aggiunti ai messaggi da Exchange Online Protection.
-ms.openlocfilehash: 7336d67d29976cf968b95b8f0d4157aef6682ba6
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: be6fdded548512f96a502fe04e50bde131f01986
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971984"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599883"
 ---
 # <a name="anti-spam-message-headers"></a>Intestazioni messaggi della protezione da posta indesiderata
 
@@ -52,8 +54,9 @@ Dopo aver effettuato l'accesso alle informazioni relative all'intestazione del m
 |SFV:SKN|Come per SFV:SKN, il messaggio ha ignorato il filtro per un altro motivo, ad esempio perché si tratta di posta elettronica tra organizzazioni all'interno di un tenant.|
 |SFV:SKQ|Il messaggio è stato rilasciato dalla quarantena ed è stato inviato al destinatario.|
 |SFV:NSPM|Il messaggio è stato contrassegnato come non indesiderato ed è stato inviato al destinatario.|
-|H: \[helostring\]|La stringa HELO or EHLO del server di posta elettronica di connessione.|
-|PTR: \[ReverseDNS\]|Il record PTR o record "Pointer" dell'indirizzo IP del mittente, noto anche come indirizzo DNS inverso.|
+|H:\[helostring\]|La stringa HELO or EHLO del server di posta elettronica di connessione.|
+|PTR:\[ReverseDNS\]|Il record PTR o record "Pointer" dell'indirizzo IP del mittente, noto anche come indirizzo DNS inverso.|
+|ARC|Le intestazioni del protocollo ARC sono le seguenti: <br/>• AAR: registra il contenuto dell'intestazione Authentication results da DMARC. <br/>• AMS: questa intestazione contiene le firme crittografiche del messaggio. <br/>• AS: contiene le firme crittografiche delle intestazioni dei messaggi. Questa intestazione contiene il tag di convalida della catena denominata "cv=" e include il risultato della convalida della catena, ad esempio **nessuna**, **superata** oppure **non riuscita**.|
 |CAT:|categoria dei criteri di protezione applicati al messaggio: <br/>MALW: malware <br/>PHSH: phishing <br/>HSPM: posta indesiderata con alta confidenza <br/>SPOOF: spoofing <br/>SPM: posta indesiderata <br/>BULK: posta inviata in blocco <br/>DIMP: imitazione del dominio <br/>UIMP: imitazione dell'utente <br/>GIMP: intelligence della cassetta postale<br/>Potenzialmente un messaggio in arrivo potrebbe essere contrassegnato in base a più forme di protezione e a più analisi di rilevamento. Ai criteri sono assegnate diverse priorità e verrà applicato il criterio con la priorità più alta. Vedere [Criteri applicabili ai messaggi di posta elettronica quando vengono usati più metodi di protezione e analisi di rilevamento](how-policies-and-protections-are-combined.md).|
 |SFTY|Il messaggio è stato identificato come phishing e sarà anche contrassegnato con uno dei valori seguenti: <br/>9.1: valore predefinito. Il messaggio contiene un URL di phishing, potrebbe contenere altri contenuti di phishing o potrebbe essere stato contrassegnato come phishing da un altro filtro della posta elettronica, ad esempio una versione locale di Exchange Server prima dell'inoltro del messaggio a Office 365. <br/>9.11: il messaggio non ha superato i controlli anti-spoofing, in cui il dominio di origine nell'intestazione Da: è uguale a, o è allineato con o fa parte della stessa organizzazione del dominio di destinazione. Questo indica che al messaggio verrà aggiunto un suggerimento per la sicurezza anti-spoofing intra-organizzazione. <br/>9.19: il messaggio non ha superato i controlli di imitazione del dominio, in cui il dominio di origine prova a imitare un dominio di proprietà del destinatario o un dominio personalizzato protetto dai criteri anti-phishing. Questo indica che al messaggio verrà aggiunto un suggerimento per la sicurezza dell'imitazione, se abilitato tramite i criteri anti-phishing. <br/>9.20: il messaggio non ha superato i controlli di imitazione utente, in cui l'utente di origine prova a imitare un utente all'interno dell'organizzazione dei destinatari oppure un utente personalizzato protetto dai criteri anti-phishing. Questo indica che al messaggio verrà aggiunto un suggerimento per la sicurezza dell'imitazione, se abilitato tramite i criteri anti-phishing. <br/>9.21: il messaggio non ha superato i controlli anti-spoofing e il dominio di origine nell'intestazione Da: non viene autenticato e proviene da un dominio esterno. Usato in combinazione con CompAuth (vedere Authentication-Results). <br/>9.22: uguale a 9.21, ad eccezione del fatto che l'utente ha un mittente attendibile che è stato sovrascritto. <br/>9.23: uguale a 9.22, ad eccezione del fatto che l'organizzazione ha un mittente o un dominio consentito che è stato sovrascritto. <br/>9.24: uguale a 9.23, ad eccezione del fatto che l'utente ha una regola del flusso di posta di Exchange che è stata sovrascritta.|
 |X-CustomSpam: \[ASFOption\]|Il messaggio corrisponde a un'opzione di filtro avanzato della posta indesiderata. Ad esempio, **X-CustomSpam: i collegamenti immagini a siti remoti** indicano che l'opzione ASF dei **collegamenti immagini a siti remoti** ha trovato una corrispondenza. Per scoprire quale testo X-header viene aggiunto per ogni opzione ASF specifica, vedere [Opzioni avanzate per il filtraggio della posta indesiderata](advanced-spam-filtering-asf-options.md).|

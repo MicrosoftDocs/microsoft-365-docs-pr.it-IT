@@ -1,5 +1,7 @@
 ---
 title: Office 365 Advanced Message Encryption
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: La crittografia avanzata dei messaggi in Office 365 consente alle organizzazioni di soddisfare i propri obblighi di conformità consentendo agli amministratori di fare ancora di più con i messaggi protetti.
-ms.openlocfilehash: 7594a6ed2226081e54af957268cf0ca3fe403767
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 580803d7b15608ebb0852896cdbd9a43ee5a2ff4
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38686429"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601803"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Office 365 Advanced Message Encryption
 

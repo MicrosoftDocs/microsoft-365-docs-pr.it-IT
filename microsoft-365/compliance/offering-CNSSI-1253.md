@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7e5d72b6a8992b8db91820c04b451979b474aeb9
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f65baf936e83e4f5128f207a82bce50100cd58b2
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805419"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602593"
 ---
 # <a name="committee-on-national-security-systems-instruction-no-1253-cnssi-1253"></a>Commissione per i sistemi di sicurezza nazionale istruzione no. 1253 (CNSSI 1253)
 
@@ -45,7 +47,7 @@ La conformità di Azure Government con i requisiti esigenti di CNSSI 1253 signif
 
 Azure Government CNSSI 1253 Attestation of Compliance to the CNSSI 1253 High-High-higher Baseline
 
-## <a name="how-to-implement"></a>Come eseguire l'implementazione
+## <a name="how-to-implement"></a>Come implementare
 
 - [Documentazione di Azure Government](https://docs.microsoft.com/azure/azure-government/): guide e procedure guidate consentono agli sviluppatori di distribuire e gestire i servizi utilizzando Azure Government.
 
@@ -68,6 +70,6 @@ Azure Government (FedRAMP Package ID F1603087869) è stato nuovamente testato qu
 - [Cloud Microsoft per enti pubblici](https://www.microsoft.com/enterprise/government)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/6/E/C/6EC27E89-826E-44CB-A107-2A37AC879206/CNSSI_1253-Compliance.pdf).

@@ -1,5 +1,7 @@
 ---
 title: Risolvere i problemi di recapito della posta elettronica per il codice di errore 5.7.7 XX in Exchange Online
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come risolvere i problemi di posta elettronica per il codice di errore 5.7.7 XX in Exchange Online (tenant bloccato dall'invio di messaggi di posta elettronica).
-ms.openlocfilehash: 4e82df78cfb83865142defb14cec0841ab29ba95
-ms.sourcegitcommit: 55cb11c2475f40d0f1c64cf45446bf383d7d5f86
+ms.openlocfilehash: e8e134793db946ddfc3ef09d0adc19b2a04df30b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41002976"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599283"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Risolvere i problemi di recapito della posta elettronica per il codice di errore 5.7.7 XX in Exchange Online
 

@@ -2,6 +2,8 @@
 title: Come vengono combinati i criteri e le protezioni quando la posta viene contrassegnata con un contrassegno rosso
 description: Vengono descritti i criteri e le protezioni che si applicano quando la posta elettronica rileva più protezioni e viene analizzata da più forme di rilevamento. Quali criteri si applicano e quali azioni eseguire, quando la posta elettronica è contrassegnata da malware, posta indesiderata, posta indesiderata elevata, phishing e bulk da EOP e/o ATP.
 keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -12,12 +14,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 4ca5333f4b07878f8c7d206b78cf884f4e4eec82
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c6b3fcc931aa396187eb81d0db495f77877f667b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807990"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599173"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Quali criteri si applicano quando più metodi di protezione e analisi di rilevamento vengono eseguiti nel messaggio di posta elettronica
 
@@ -27,18 +29,18 @@ In generale, un criterio applicato a un messaggio viene identificato nell'intest
 
 I criteri riportati di seguito si applicano a _tutte le organizzazioni_.
 
-|Priority |Criteri  |Categoria  |Dove gestito |
+|Priority |Criteri  |Category  |Dove gestito |
 |---------|---------|---------|---------|
-|1     | Malware      | MALW      | Criteri anti-malware   |
-|2     | Phishing     | PHSH     | Configurare i criteri di filtro della posta indesiderata     |
-|3     | Alta probabilità di posta indesiderata      | HSPM        | Configurare i criteri di filtro della posta indesiderata        |
-|4     | Spoofing        | SPOOFING        | Criteri di anti-phishing, spoofing Intelligence        |
-|5     | Posta indesiderata         | SPM         | Configurare i criteri di filtro della posta indesiderata         |
+|1      | Malware      | MALW      | Criteri anti-malware   |
+|2      | Phishing     | PHSH     | Configurare i criteri di filtro della posta indesiderata     |
+|3      | Alta probabilità di posta indesiderata      | HSPM        | Configurare i criteri di filtro della posta indesiderata        |
+|4      | Spoofing        | SPOOFING        | Criteri di anti-phishing, spoofing Intelligence        |
+|5      | Posta indesiderata         | SPM         | Configurare i criteri di filtro della posta indesiderata         |
 |6      | Invio in blocco         | BULK        | Configurare i criteri di filtro della posta indesiderata         |
 
 Inoltre, questi criteri si applicano alle _organizzazioni con ATP_.
 
-|Priority |Criteri  |Categoria  |Dove gestito |
+|Priority |Criteri  |Category  |Dove gestito |
 |---------|---------|---------|---------|
 |7      | Rappresentazione del dominio         | DIMP         | Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP         |
 |8      | Rappresentazione utente        | UIMP         | Impostare i criteri di anti-phishing e l’anti-phishing di Office 365 ATP          |
@@ -47,8 +49,8 @@ Ad esempio, se si dispone di due criteri con le rispettive priorità:
 
 |Criteri  |Priority  |Rappresentazione del dominio/utente  |Anti-spoofing  |
 |---------|---------|---------|---------|
-|A     | 1        | Attivato        |Disattivato         |
-|B     | 2        | Disattivato        | Attivato        |
+|A     | 1         | Attivato        |Disattivato         |
+|B     | 2         | Disattivato        | Attivato        |
 
 Se un messaggio viene identificato come _rappresentazione utente_ e _spoofing_ (vedere anti-spoofing nella tabella precedente) e lo stesso insieme di utenti a cui si applica il criterio a ha come ambito il criterio B, il messaggio viene contrassegnato e considerato come _spoof_. Tuttavia, non viene applicata alcuna azione perché, sebbene spoofing venga eseguito con una priorità più alta (4) rispetto alla rappresentazione utente (8), l'anti-spoofing è disattivato.
 

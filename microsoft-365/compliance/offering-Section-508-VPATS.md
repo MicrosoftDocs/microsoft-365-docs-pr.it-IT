@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6d7bcb6beccc9059d3a7f75fc52b307648f314c2
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d9d0c213fcca5b991b4912d5b9158e2d3836aff9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40804229"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602023"
 ---
 # <a name="us-section-508"></a>Sezione 508 degli Stati Uniti
 
@@ -25,7 +27,7 @@ ms.locfileid: "40804229"
 
 Il Congresso degli Stati Uniti ha modificato la legge sulla riabilitazione in 1998 e 2000 per richiedere alle agenzie federali di rendere i propri prodotti elettronici e informatici (IET), come software, hardware, contenuto elettronico e documentazione di supporto, accessibili a persone con disabilità. Sezione 508 della legge sulla riabilitazione della manodopera degli Stati Uniti del 1973 (29 US Code § 794d), come modificato, impone che le agenzie federali procurano, mantengano e utilizzino l'EIT in modo da garantire che i dipendenti federali con disabilità abbiano accesso e utilizzo comparabili, Data e EIT rispetto ad altri impiegati federali.
 
-Microsoft è un importante provider di servizi software e cloud per i governi federali e statali degli Stati Uniti.  Per aiutare i clienti governativi a prendere decisioni sugli appalti, Microsoft pubblica i rapporti di conformità per l'accessibilità che descrivono la misura in cui i prodotti e i servizi supportano i criteri della sezione 508.  Queste informazioni consentono ai clienti di Microsoft di determinare se un determinato prodotto o servizio soddisferà le proprie esigenze specifiche.
+Microsoft è un importante provider di servizi software e cloud per i governi federali e statali degli Stati Uniti.  Per aiutare i clienti governativi a prendere decisioni sugli appalti, Microsoft pubblica i rapporti di conformità per l'accessibilità che descrivono la misura in cui i prodotti e i servizi supportano i criteri della sezione 508.  Queste informazioni consentono ai clienti Microsoft di determinare se un determinato prodotto o un servizio soddisferà le loro esigenze specifiche.
 
 ## <a name="microsoft-and-us-section-508"></a>Sezione Microsoft e Stati Uniti 508
 
@@ -51,8 +53,8 @@ Sono disponibili [report di conformità](https://go.microsoft.com/fwlink/p/?link
 - [Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801): le risorse di Office 365 per persone con disabilità.
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): supporto dedicato per clienti aziendali con domande sull'accessibilità sui prodotti e servizi Microsoft o sulla conformità.
 - [Programma del tester attendibile del DHS](https://go.microsoft.com/fwlink/?linkid=2052171): ottenere informazioni sul programma del tester attendibile del Department of Homeland Security (DHS), in cui partecipa Microsoft.
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf).

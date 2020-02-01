@@ -1,5 +1,7 @@
 ---
 title: Proteggere l'accesso di utenti e dispositivi
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: pagina di destinazione per la protezione dell'accesso ai dati e ai servizi di O365
-ms.openlocfilehash: 9fc1691e7e36f994b5d0b8a6a9735fe8ccd8735a
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: eec1963f73b4b1e014f3605ae8fc5afee4ae039b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084425"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601703"
 ---
 # <a name="protect-user-and-device-access"></a>Proteggere l'accesso di utenti e dispositivi
 

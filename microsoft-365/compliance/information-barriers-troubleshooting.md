@@ -1,5 +1,7 @@
 ---
 title: Risoluzione dei problemi relativi alle barriere informative
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilizzare questo articolo come guida per la risoluzione dei problemi relativi alle barriere informative.
-ms.openlocfilehash: 07c3c6fc12ec1b288ae9499715ddadb21764f6ef
-ms.sourcegitcommit: af7950d9674f0eab3aee03f9afccff9ca2f4709a
+ms.openlocfilehash: b4c9bb46bc1e3c13cdc8b46a95733558714a44df
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40970804"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600593"
 ---
 # <a name="troubleshooting-information-barriers"></a>Risoluzione dei problemi relativi alle barriere informative
 
@@ -34,7 +36,7 @@ In questo caso, gli utenti segnalano problemi imprevisti che comunicano con altr
 - Un utente può trovare, ma non è in grado di selezionare, un altro utente in Microsoft teams.
 - Un utente può visualizzare un altro utente, ma non è in grado di inviare messaggi a un altro utente in Microsoft teams.
 
-### <a name="what-to-do"></a>Operazione
+### <a name="what-to-do"></a>Procedura
 
 Determinare se gli utenti sono coinvolti in un criterio barriera informativo. A seconda del modo in cui vengono configurati i criteri, gli ostacoli alle informazioni potrebbero funzionare come previsto. In alternativa, potrebbe essere necessario perfezionare i criteri dell'organizzazione.
 
@@ -79,7 +81,7 @@ Determinare se gli utenti sono coinvolti in un criterio barriera informativo. A 
 
 In questo caso, anche se le barriere informative sono definite, attive e applicate, le persone che dovrebbero essere impossibilitate a comunicare tra loro sono in grado di chattare e di chiamarsi a vicenda in Microsoft teams.
 
-### <a name="what-to-do"></a>Operazione
+### <a name="what-to-do"></a>Procedura
 
 Verificare che gli utenti in questione siano inclusi in un criterio barriera informativo. 
 
@@ -108,7 +110,7 @@ Verificare che gli utenti in questione siano inclusi in un criterio barriera inf
 
 In questo caso, i criteri per la barriera delle informazioni sono in vigore e uno o più utenti sono inaspettatamente bloccati dalla comunicazione con altri membri di Microsoft teams. Anziché rimuovere tutti i criteri di barriera delle informazioni, è possibile rimuovere uno o più singoli utenti dai criteri di barriera delle informazioni. 
 
-### <a name="what-to-do"></a>Operazione
+### <a name="what-to-do"></a>Procedura
 
 I criteri barriera di informazioni vengono assegnati a segmenti di utenti. I segmenti vengono definiti utilizzando determinati [attributi nei profili degli account utente](information-barriers-attributes.md). Se è necessario rimuovere un criterio da un singolo utente, prendere in considerazione la possibilità di modificare il profilo dell'utente in Azure Active Directory in modo che l'utente non sia più incluso in un segmento influenzato dalle barriere informative.
 
@@ -129,7 +131,7 @@ I criteri barriera di informazioni vengono assegnati a segmenti di utenti. I seg
 
 Dopo aver eseguito il cmdlet **Start-InformationBarrierPoliciesApplication** , il processo richiede molto tempo per il completamento.
 
-### <a name="what-to-do"></a>Operazione
+### <a name="what-to-do"></a>Procedura
 
 Tenere presente che, quando si esegue il cmdlet applicazione criteri, i criteri di barriera delle informazioni vengono applicati (o rimossi), utente per utente, per tutti gli account nell'organizzazione. Se si dispone di numerosi utenti, sarà necessario un po' di tempo per elaborarli. (Come linee guida generali, è necessario circa un'ora per elaborare gli account utente di 5.000).
 
@@ -154,7 +156,7 @@ Tenere presente che, quando si esegue il cmdlet applicazione criteri, i criteri 
 
 In questo caso, sono stati definiti segmenti, criteri di barriere informativi definiti e si è tentato di applicare tali criteri. Tuttavia, quando si esegue il `Get-InformationBarrierPoliciesApplicationStatus` cmdlet, è possibile vedere che l'applicazione del criterio ha avuto esito negativo.
 
-### <a name="what-to-do"></a>Operazione
+### <a name="what-to-do"></a>Procedura
 
 Assicurarsi che l'organizzazione non disponga di [Criteri rubrica di Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) sul posto. Tali criteri impediscono l'applicazione dei criteri di barriera delle informazioni.
 

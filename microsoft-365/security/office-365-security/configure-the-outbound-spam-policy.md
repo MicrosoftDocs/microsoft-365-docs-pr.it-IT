@@ -1,5 +1,7 @@
 ---
 title: Configurare i criteri della posta indesiderata in uscita
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Il filtro di protezione da posta indesiderata in uscita è sempre abilitato se si utilizza il servizio per l'invio di messaggi di posta elettronica in uscita, proteggendo così l'organizzazione utilizzando il servizio e i destinatari previsti.
-ms.openlocfilehash: 43939022dc365f5b28418d96ae1217e159312da1
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: c17772db2a2961cade180a5c1e0403ae8450007f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808441"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599563"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurare i criteri della posta indesiderata in uscita
 

@@ -3,14 +3,16 @@ title: Registrare manualmente i nuovi dispositivi
 description: Registrare i dispositivi da soli in modo che possano essere gestiti da Microsoft Managed Desktop
 ms.prod: w10
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 4472f665faa658349813d9aaeb50596f2a868b35
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: d0e29bd16f1b0afd119fc822d6e2391e7f9f3020
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41572272"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602823"
 ---
 # <a name="register-new-devices-yourself"></a>Registrare manualmente i nuovi dispositivi
 

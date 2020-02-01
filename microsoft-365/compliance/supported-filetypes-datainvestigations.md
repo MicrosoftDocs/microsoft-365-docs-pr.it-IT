@@ -1,5 +1,7 @@
 ---
 title: Tipi di file supportati in indagini sui dati (anteprima)
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 60e4baf2df94793b532fb4035a34ca3c7a5cd332
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 055104a5b7f60fe54b421e7236143aa9af08b57f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084105"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601433"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Tipi di file supportati in indagini sui dati (anteprima)
 
@@ -54,7 +56,7 @@ Le indagini sui dati (Preview) supportano numerosi tipi di file in diversi modi,
 | Application/x-Msaccess | Documento | Sì | Sì | Sì | No | . mdb |
 | Application/x-MSPublisher | Documento | Sì | Sì | Sì | No | . pub |
 | applicazione/x-rar-compresso | Archivio/contenitore | No | No | No | Sì | . rar |
-| applicazione/zip | Archivio/contenitore | No | No | No | Sì | . zip |
+| applicazione/zip | Archivio/contenitore | No | No | No | Sì | .zip |
 | immagine/BMP | Immagine | Sì | Sì | Sì | No | . bmp |
 | immagine/EMF | Immagine | Sì | Sì | Sì | No | EMF |
 | immagine/gif | Documento | Sì | Sì | Sì | No | . gif |
@@ -63,7 +65,7 @@ Le indagini sui dati (Preview) supportano numerosi tipi di file in diversi modi,
 | immagine/TIFF | Immagine | Sì | Sì | Sì | No | TIF |
 | image/vnd. dwg | Documento | Sì | Sì | Sì | No | . dwg;. DXF |
 | immagine/WMF | Documento | Sì | Sì | Sì | No | . wmf |
-| messaggio/RFC822 | Produttività/collaborazione | No | No | No | No | . eml |
+| messaggio/RFC822 | Produttività/collaborazione | No | No | No | No | .eml |
 | testo/CSV | Documento | Sì | Sì | Sì | No | . csv |
 | testo/HTML | Documento | Sì | Sì | Sì | No | . html;. shtml;. htm |
 | testo/normale | Documento | Sì | Sì | Sì | No | . txt;. CSS;. con;. pl;. csv;. dat |

@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: de28f982fe7615d0ca81af756af81b3c25fc9de1
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 962524f29b72d46500869f4f0059959a2b77ff3e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40807706"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601863"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission: regolamentazione dei sistemi Compliance and Integrity (SCI)
 
@@ -45,12 +47,12 @@ Questo documento fornisce un'accurata lista di controllo delle aree critiche di 
 
 - [Azure](https://aka.ms/AzureCompliance)
 
-## <a name="how-to-implement"></a>Come eseguire l'implementazione
+## <a name="how-to-implement"></a>Come implementare
 
 - [Guida all'implementazione di sci di regolamentazione](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers): esegue il mapping delle funzionalità di Azure rispetto alla normativa e dettaglia la responsabilità condivisa per la conformità.
 - [Progettazione di applicazioni di Azure affidabili](https://docs.microsoft.com/azure/architecture/resiliency/): breve panoramica del modo in cui creare l'affidabilità in ogni passaggio della progettazione delle applicazioni di Azure.
 - [Progettazione di applicazioni a disponibilità elevata](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): in che modo gli sviluppatori possono contribuire a garantire che le applicazioni di archiviazione di Azure siano estremamente disponibili.
-- [Guida alla conformità e alla valutazione dei rischi](https://aka.ms/RiskGovernanceGuide): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
+- [Valutazione dei rischi e guida alla conformità](https://aka.ms/RiskGovernanceGuide): per creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'autorità competente.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -71,8 +73,8 @@ Le organizzazioni finanziarie o le entità di fantascienza che sono soggette a q
 - [Conformità dei servizi finanziari in Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Servizi finanziari Microsoft](https://aka.ms/FinServ-Compliance)
 - [Regola di Microsoft e SEC 17a-4](offering-SEC-17a-4.md)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf).

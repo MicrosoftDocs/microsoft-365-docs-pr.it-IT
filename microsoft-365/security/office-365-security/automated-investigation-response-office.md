@@ -1,5 +1,7 @@
 ---
 title: Indagine automatizzata e risposta (AIR) in Office 365
+f1.keywords:
+- NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -12,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: fcb48da4b6f3777fa8c21ef514d5f591e342562e
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 975c6d8a00e3e1cd8c30b2d417c74cde39b8cd5a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41573043"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599803"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Indagine automatizzata e risposta (AIR) in Office 365
 
@@ -34,9 +36,9 @@ A livello elevato, il flusso di aria funziona in questo modo:
 
 |Fase  |Elementi coinvolti  |
 |---------|---------|
-|1     |Un [avviso](#alerts) viene attivato da un evento di Office e un sistema di [sicurezza PlayBook](#security-playbooks) avvia un'indagine automatizzata per gli avvisi selezionati. <br/><br/>In alternativa, un analista di sicurezza può [avviare un'indagine automatizzata manualmente](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer), da un messaggio di posta elettronica da [Esplora risorse](threat-explorer.md).        |
-|2     |Durante l'esecuzione di un'indagine automatizzata, vengono raccolti dati aggiuntivi relativi all'indirizzo di posta elettronica e alle entità correlate alla posta elettronica: file, URL e destinatari.  L'ambito dell'indagine può aumentare, poiché vengono attivati nuovi avvisi correlati.         |
-|3     |Durante e dopo un'analisi automatizzata, [i dettagli e i risultati](#investigation-graph) sono disponibili per la visualizzazione. I risultati includono [azioni consigliate](#recommended-actions) che è possibile intraprendere per rispondere e correggere eventuali minacce individuate. Inoltre, è disponibile un [Registro PlayBook](#playbook-log) che tiene traccia di tutte le attività investigative.<br/><br/>Se l'organizzazione utilizza una soluzione per la creazione di report personalizzati o una soluzione di terze parti, è possibile [utilizzare l'API di attività di gestione di Office 365](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) per visualizzare le informazioni relative a indagini e minacce automatizzate.         |
+|1      |Un [avviso](#alerts) viene attivato da un evento di Office e un sistema di [sicurezza PlayBook](#security-playbooks) avvia un'indagine automatizzata per gli avvisi selezionati. <br/><br/>In alternativa, un analista di sicurezza può [avviare un'indagine automatizzata manualmente](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer), da un messaggio di posta elettronica da [Esplora risorse](threat-explorer.md).        |
+|2      |Durante l'esecuzione di un'indagine automatizzata, vengono raccolti dati aggiuntivi relativi all'indirizzo di posta elettronica e alle entità correlate alla posta elettronica: file, URL e destinatari.  L'ambito dell'indagine può aumentare, poiché vengono attivati nuovi avvisi correlati.         |
+|3      |Durante e dopo un'analisi automatizzata, [i dettagli e i risultati](#investigation-graph) sono disponibili per la visualizzazione. I risultati includono [azioni consigliate](#recommended-actions) che è possibile intraprendere per rispondere e correggere eventuali minacce individuate. Inoltre, è disponibile un [Registro PlayBook](#playbook-log) che tiene traccia di tutte le attività investigative.<br/><br/>Se l'organizzazione utilizza una soluzione per la creazione di report personalizzati o una soluzione di terze parti, è possibile [utilizzare l'API di attività di gestione di Office 365](office-365-air.md#use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions) per visualizzare le informazioni relative a indagini e minacce automatizzate.         |
 |4      |Il team delle operazioni di sicurezza esamina i risultati e le raccomandazioni dell'analisi e approva le azioni di correzione. In Office 365, le azioni di correzione vengono eseguite solo dopo l'approvazione da parte del team di sicurezza dell'organizzazione.         |
 
 Nelle sezioni seguenti vengono fornite ulteriori informazioni su AIR, inclusi i dettagli sugli avvisi, gli schemi di sicurezza e i dettagli dell'indagine. Inoltre, in questo articolo sono inclusi due esempi del funzionamento di AIR Works. Per iniziare a usare AIR, vedere [indagare e rispondere automaticamente alle minacce in Office 365](office-365-air.md).

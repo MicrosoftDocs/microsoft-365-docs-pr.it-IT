@@ -1,5 +1,7 @@
 ---
 title: Configurare il filtro delle autorizzazioni per la ricerca di contenuto
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilizzare il filtro delle autorizzazioni per la ricerca del contenuto per consentire a un responsabile di eDiscovery di cercare solo un sottoinsieme di cassette postali e siti nell'organizzazione di Office 365.
-ms.openlocfilehash: 97f01a7d0c91359251b4af2a26fe9c48aab7122e
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 670dd2e5d0c88c520234cd7e71805cfa97ad9ec9
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686618"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601763"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configurare il filtro delle autorizzazioni per Ricerca contenuto
 
@@ -42,7 +44,7 @@ Il filtro delle autorizzazioni di ricerca è supportato dalla funzionalità di r
 
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-- Per eseguire i cmdlet del filtro di sicurezza per la conformità, è necessario essere membri del gruppo di ruoli Gestione organizzazione nel centro sicurezza & Compliance. Per ulteriori informazioni, vedere [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- Per eseguire i cmdlet del filtro di sicurezza per la conformità, è necessario essere membri del gruppo di ruoli Gestione organizzazione nel centro sicurezza & Compliance. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
     
 - È necessario connettere Windows PowerShell al centro sicurezza & conformità e all'organizzazione di Exchange Online per utilizzare i cmdlet per il filtro di sicurezza di conformità. Questa operazione è necessaria perché questi cmdlet richiedono l'accesso alle proprietà della cassetta postale, che è il motivo per cui è necessario connettersi a Exchange Online. Vedere la procedura descritta nella sezione successiva. 
     

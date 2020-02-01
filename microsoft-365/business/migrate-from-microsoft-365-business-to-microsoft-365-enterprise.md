@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Informazioni su come spostare la propria azienda da Microsoft 365 business a Microsoft 365 E3.
-ms.openlocfilehash: 2515c2d56727b9a8be643dea76e150eeaadce5c9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02adda0c2c59d2994b0c6197dd76c6cc893ad9f0
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593695"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627982"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Eseguire la migrazione da Microsoft 365 Business a Microsoft 365 E3
 
@@ -56,7 +56,6 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 business e 
 | Teams | ![Incluso in Microsoft 365 business](./media/check-mark.png)   | ![Incluso in Microsoft 365 E3](./media/check-mark.png) | 
 | OneDrive for Business | limite di archiviazione di 1 TB per utente   | Illimitata | 
 | Yammer, SharePoint Online, planner, Stream    | ![Incluso in Microsoft 365 business](./media/check-mark.png)   | ![Incluso in Microsoft 365 E3](./media/check-mark.png) | 
-| StaffHub  | ![Incluso in Microsoft 365 business](./media/check-mark.png)   | ![Incluso in Microsoft 365 E3](./media/check-mark.png) | 
 | Gestione clienti di Outlook, MileIQ  | ![Incluso in Microsoft 365 business](./media/check-mark.png)   | | 
 | **Protezione dalle minacce**     | | | 
 | Funzionalità di riduzione della superficie di attacco | [Vedere questo elenco](#threat-protection) | Gestione aziendale dell'isolamento basato sull'hardware per Microsoft Edge | 

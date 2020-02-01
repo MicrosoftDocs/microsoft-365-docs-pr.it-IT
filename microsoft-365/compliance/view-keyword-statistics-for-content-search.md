@@ -1,5 +1,7 @@
 ---
 title: Visualizzare le statistiche delle parole chiave per i risultati di Ricerca contenuto
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,20 +16,20 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Utilizzare la funzionalità di statistiche di ricerca per visualizzare e confrontare le statistiche per più ricerche di contenuto nel centro sicurezza & conformità. È inoltre possibile configurare l'elenco di parole chiave quando si crea o si modifica una query di ricerca per ottenere statistiche avanzate che mostrano il numero di elementi corrispondenti a ciascuna parola chiave o frase di parola chiave.
-ms.openlocfilehash: 558d8bd269d1c1d8bfcf3f15452a83de74f3e38d
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 80a2abc2392a21439219d5bd5d462a4671a926a8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084295"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601253"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Visualizzare le statistiche delle parole chiave per i risultati di Ricerca contenuto
 
-Dopo aver creato ed eseguito una ricerca di contenuto, è possibile visualizzare le statistiche sui risultati della ricerca stimati. Questo include un riepilogo dei risultati della ricerca (simile al riepilogo dei risultati di ricerca stimati visualizzati nel riquadro dettagli), le statistiche di query, ad esempio il numero di posizioni di contenuto con gli elementi che corrispondono alla query di ricerca e il nome dei percorsi di contenuto. che presentano la maggior parte degli elementi corrispondenti. È possibile visualizzare le statistiche per una o più ricerche di contenuto. In questo modo è possibile confrontare rapidamente i risultati per più ricerche e prendere decisioni sull'efficacia delle query di ricerca.
+Dopo aver creato ed eseguito una ricerca di contenuto, è possibile visualizzare le statistiche sui risultati della ricerca stimati. Questo include un riepilogo dei risultati della ricerca (simile al riepilogo dei risultati di ricerca stimati visualizzati nel riquadro dettagli), le statistiche di query, ad esempio il numero di posizioni di contenuto con gli elementi che corrispondono alla query di ricerca e il nome dei percorsi di contenuto. che presentano la maggior parte degli elementi corrispondenti. È possibile visualizzare statistiche per una o più ricerche di contenuto. In questo modo è possibile confrontare rapidamente i risultati per più ricerche e prendere decisioni sull'efficacia delle query di ricerca.
   
 È inoltre possibile configurare ricerche nuove ed esistenti per restituire statistiche per ogni parola chiave in una query di ricerca. In questo modo è possibile confrontare il numero di risultati per ogni parola chiave di una query e confrontare le statistiche delle parole chiave provenienti da più ricerche.
   
-È inoltre possibile scaricare le statistiche di ricerca e le statistiche delle parole chiave in un file CSV. In questo modo è possibile utilizzare le funzionalità di filtro e ordinamento in Excel per confrontare i risultati e preparare i report per i risultati della ricerca.
+È anche possibile scaricare le statistiche di ricerca e delle parole chiave in un file CSV. Questo consente di usare le funzionalità di filtro e ordinamento di Excel per confrontare i risultati e preparare report per i risultati della ricerca.
   
 ## <a name="get-statistics-for-content-searches"></a>Ottenere statistiche per le ricerche di contenuto
 
@@ -47,7 +49,7 @@ Per visualizzare le statistiche per le ricerche di contenuto:
     
     ![Riepilogo delle statistiche per le ricerche selezionate](media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
   
-    un.  Nome della ricerca di contenuto. Come indicato in precedenza, è possibile visualizzare e confrontare le statistiche per più ricerche.
+    a.  Nome della ricerca di contenuto. Come indicato in precedenza, è possibile visualizzare e confrontare le statistiche per più ricerche.
     
     b. Il tipo di percorso del contenuto in cui è stata eseguita la ricerca. In ogni riga vengono visualizzate le statistiche per le cassette postali, i siti e le cartelle pubbliche dalla ricerca specificata.
     
@@ -63,7 +65,7 @@ Per visualizzare le statistiche per le ricerche di contenuto:
     
     ![Statistiche delle query di ricerca per le ricerche selezionate](media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
   
-    un. Nome della ricerca di contenuto per la quale la riga contiene le statistiche di query.
+    a. Nome della ricerca di contenuto per la quale la riga contiene le statistiche di query.
     
     b. Il tipo di percorso di contenuto a cui sono applicabili le statistiche di query.
     
@@ -88,11 +90,11 @@ Per visualizzare le statistiche per le ricerche di contenuto:
     
     **Posizioni principali**
     
-    In questa pagina vengono visualizzate le statistiche relative al numero di elementi che corrispondono alla query di ricerca in ogni percorso di contenuto in cui è stata eseguita la ricerca. Vengono visualizzate le posizioni principali di 1.000. Se si visualizzano le statistiche per più ricerche, vengono visualizzate le posizioni principali di 1.000 per ogni ricerca. Si noti che una posizione di contenuto non è inclusa in questa pagina se non contiene gli elementi che corrispondono alla query di ricerca.
+    In questa pagina vengono visualizzate le statistiche relative al numero di elementi che corrispondono alla query di ricerca in ogni percorso di contenuto in cui è stata eseguita la ricerca. Vengono visualizzati i primi 1.000 percorsi. Se si visualizzano le statistiche per più ricerche, vengono visualizzate le posizioni principali di 1.000 per ogni ricerca. Si noti che una posizione di contenuto non è inclusa in questa pagina se non contiene gli elementi che corrispondono alla query di ricerca.
     
     ![Statistiche relative al numero di elementi trovati nei percorsi di contenuto in cui è stata eseguita la ricerca](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   
-    un. Nome del percorso del contenuto.
+    a. Nome del percorso del contenuto.
     
     b. Tipo di percorso di contenuto a cui si applicano le statistiche relative alla posizione.
     
@@ -113,7 +115,7 @@ Per creare un elenco di parole chiave e visualizzare le statistiche delle parole
     
     ![Fare clic sulla casella di controllo Mostra elenco parole chiave e digitare una parola chiave in ogni riga](media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
   
-    un. Fare clic sulla casella di controllo **Mostra elenco parole chiave** . 
+    a. Fare clic sulla casella di controllo **Mostra elenco parole chiave** . 
     
     b. Digitare una parola chiave o una fase di parola chiave in una riga della tabella keywords. Ad esempio, digitare **budget** nella prima riga e quindi digitare **sicurezza** nella seconda riga. 
     

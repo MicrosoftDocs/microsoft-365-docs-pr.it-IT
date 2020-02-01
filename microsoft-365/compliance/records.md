@@ -1,5 +1,7 @@
 ---
 title: Panoramica dei record
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Per implementare una strategia di gestione dei record nella tua organizzazione Microsoft o Office 365, usare etichette di conservazione che dichiarino un contenuto come record. Quindi pubblicare o applicare automaticamente l'etichetta record di conservazione.
-ms.openlocfilehash: eb8abbb44629261065a9e368814ddeb8296ac0c8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 36482ea4a6bb9fb932d72b76dff5f0647d467a9b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803833"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601683"
 ---
 # <a name="overview-of-records"></a>Panoramica dei record
 
@@ -78,6 +80,10 @@ Quando si crea un'etichetta di conservazione, si può scegliere di usarla per cl
 
 3. [Pubblicare](labels.md#how-retention-labels-work-with-retention-label-policies) o [Applicare automaticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) l'etichetta di conservazione ai siti di SharePoint e/o agli account di OneDrive.
 
+> [!NOTE]
+> Per dichiarare un elemento come record usando le [etichette di conservazione](labels.md) è necessaria una licenza di Office 365 Enterprise E5 o equivalente per ogni utente autorizzato a modificare il contenuto in questa posizione. Gli utenti che hanno accesso in sola lettura non hanno bisogno di una licenza.
+
+
 ### <a name="applying-a-retention-label-to-content"></a>Applicare un'etichetta di conservazione al contenuto
 
 Per Exchange, qualsiasi utente con accesso in scrittura alla cassetta postale può applicare un'etichetta di conservazione a un messaggio di posta elettronica. Per il contenuto di SharePoint e OneDrive, qualsiasi utente del gruppo Membri predefinito (con livello di autorizzazione Collaborazione) può applicare un'etichetta record al contenuto. Solo un amministratore della raccolta siti può rimuovere o modificare l’etichetta record dopo che è stata applicata. Come descritto in precedenza, un'etichetta di conservazione che classifica il contenuto come record può essere applicata automaticamente al contenuto.
@@ -105,7 +111,7 @@ Il controllo delle versioni del record è automaticamente disponibile per qualsi
 ![Proprietà Stato del record nel documento taggato come record](media/recordversioning8.png)
 
 > [!NOTE]
-> Il controllo delle versioni del record richiede una licenza di Office 365 Enterprise E5 per ogni utente che dispone delle autorizzazioni necessarie per modificare il contenuto dichiarato come record in un sito di SharePoint o un account di OneDrive. Gli utenti che hanno accesso di sola lettura non hanno bisogno di una licenza.
+> Il controllo delle versioni del record richiede una licenza di Office 365 Enterprise E5 per ogni utente che dispone delle autorizzazioni necessarie per modificare il contenuto dichiarato come record in un sito di SharePoint o un account di OneDrive. Gli utenti che hanno accesso in sola lettura non hanno bisogno di questa licenza.
 
 ### <a name="locking-and-unlocking-a-record"></a>Bloccare e sbloccare un record
 

@@ -1,5 +1,7 @@
 ---
 title: Configurazione delle notifiche di posta indesiderata dell'utente finale in Exchange Online
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: È possibile configurare le notifiche di posta indesiderata dell'utente finale per il criterio di filtro della posta indesiderata a livello di società predefinito o per i criteri di filtro antispam applicati ai domini.
-ms.openlocfilehash: 7292d75afb07864fc50d4df30fa5f84691087820
-ms.sourcegitcommit: 3f8957ddd04b8710bb5f314a0902fdee50c7c9b7
+ms.openlocfilehash: 3fc2d78e06d0b33793cab0fac3ba038720662f8a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41573013"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599623"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurazione delle notifiche di posta indesiderata dell'utente finale in Exchange Online
 

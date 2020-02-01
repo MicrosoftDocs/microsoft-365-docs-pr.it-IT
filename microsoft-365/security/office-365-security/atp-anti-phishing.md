@@ -1,5 +1,7 @@
 ---
 title: Funzionalità di anti-phishing ATP in Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
@@ -13,12 +15,12 @@ ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 ms.collection:
 - M365-security-compliance
 description: ATP anti-phishing è parte di Office 365 Advanced Threat Protection. ATP anti-phishing applica un insieme di modelli di apprendimento automatico con gli algoritmi di rilevamento della rappresentazione ai messaggi in arrivo per fornire protezione per i prodotti e gli attacchi di phishing. Tutti i messaggi sono soggetti a una vasta gamma di modelli di apprendimento automatico addestrati a rilevare i messaggi di phishing, insieme a un insieme di algoritmi avanzati utilizzati per la protezione da vari attacchi di rappresentazione di dominio e utente.
-ms.openlocfilehash: b2ce20d64952ecf489c2ccdbd5b4cafd16b8f64f
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: eca12a1f75057aee94762a8a5eef0cceffe327d3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083941"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599833"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Funzionalità di anti-phishing ATP in Office 365
 
@@ -59,7 +61,7 @@ Nella tabella seguente vengono descritti alcuni scenari di esempio. In ognuno di
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Protezione avanzata dalle minacce di Office 365](office-365-atp.md)
+[Office 365 Advanced Threat Protection](office-365-atp.md)
   
 [Protezione anti-phishing in Office 365](anti-phishing-protection.md)
   

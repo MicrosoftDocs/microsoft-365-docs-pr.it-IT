@@ -1,5 +1,7 @@
 ---
 title: Indicizzazione avanzata dei dati dei responsabili
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6259d839dd9a0ca196bae37afe374d1d8f21d53
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: 5ab54e84de7434a16bdf7eb7d04fad7b9af05440
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38686474"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600633"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indicizzazione avanzata dei dati dei responsabili
 
@@ -36,7 +38,7 @@ Per ulteriori informazioni sull'elaborazione del supporto in Office 365 e sugli 
 
 Una volta completato il processo di indicizzazione avanzato, è possibile ottenere informazioni sull'efficacia del rielaborazione.  Nella visualizzazione di indicizzazione del custode, nel grafico vengono elencati tutti gli elementi aggiunti all' *Indice ibrido*.  L'indice ibrido è la posizione in cui Advanced eDiscovery archivia il contenuto rielaborato.
 
-Il grafico include anche il numero di elementi che richiedono la correzione e un altro grafico degli errori per tipo di file. Per ulteriori informazioni, vedere:
+Il grafico include anche il numero di elementi che richiedono la correzione e un altro grafico degli errori per tipo di file. Per altre informazioni, vedere:
 
 - [Correzione degli errori durante l'elaborazione dei dati](error-remediation.md)
 - [Correzione degli errori dei singoli elementi](single-item-error-remediation.md)

@@ -1,5 +1,7 @@
 ---
 title: Business intelligence di flusso di posta elettronica in Office 365
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -11,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori di Office 365 (noto anche come Intelligence del flusso di posta).
-ms.openlocfilehash: ee02be439cd3bd9405aea7a94410af794808f259
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: ea4fb56f0e303d243af02edf01e5d85b957a6368
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971774"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599053"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Intelligence del flusso di posta in Office 365
 

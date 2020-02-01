@@ -1,5 +1,7 @@
 ---
 title: Informazioni dettagliate sullo stato del flusso di posta del dominio principale
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sulla panoramica dello stato del flusso di posta del dominio principale nel dashboard del flusso di posta nel centro sicurezza & conformità.
-ms.openlocfilehash: b193eea87a76ad45e91c98511627b24b04d48fb5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 1fb22ac1543c490dcbd316464803f5393003d503
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084365"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598883"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Informazioni dettagliate sullo stato del flusso di posta del dominio principale
 

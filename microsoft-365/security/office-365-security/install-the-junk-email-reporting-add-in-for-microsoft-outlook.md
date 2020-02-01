@@ -1,5 +1,7 @@
 ---
 title: Installazione del componente aggiuntivo di report di posta indesiderata per Microsoft Outlook
+f1.keywords:
+- NOCSH
 ms.author: MSFTTracyP
 author: tracyp
 manager: dansimp
@@ -12,12 +14,12 @@ ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: In questa articleSupported LanguagesInstall la segnalazione della posta indesiderata Add-inuninstall the junk email Reporting Add-inFor more information
-ms.openlocfilehash: 14c3914601ab8a6b3273b56a3915df9c909fc06c
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 0f7a5a3cbaddf9aef5e518db38ffb36c397cd1f0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970392"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599153"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installazione del componente aggiuntivo di report di posta indesiderata per Microsoft Outlook
 

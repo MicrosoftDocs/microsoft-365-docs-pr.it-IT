@@ -1,5 +1,7 @@
 ---
 title: Eseguire il modulo di processo e caricare i dati in Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Informazioni su come utilizzare il Centro sicurezza &amp; e conformità di Office 365 per accedere a Office 365 Advanced eDiscovery ed eseguire il modulo di processo per un caso.  '
-ms.openlocfilehash: ac0b36f17b891f28b4d34ba838551da2de778b17
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e99071246e6c63292bf3ca1fbca0a0fd25eab5a8
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802929"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601593"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Eseguire il modulo di processo e caricare i dati in Office 365 Advanced eDiscovery
 

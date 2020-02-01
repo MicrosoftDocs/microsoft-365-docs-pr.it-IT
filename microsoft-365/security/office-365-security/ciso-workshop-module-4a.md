@@ -1,5 +1,7 @@
 ---
 title: 'Chief Information Security Officer (OICOL) workshop, modulo 4a: strategia di protezione dalle minacce'
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: f136f8ccb12ac09048b0b6a9de22ebb37fcc40dd
-ms.sourcegitcommit: 99a79b0ed3126fa17970481fb768414279e839c0
+ms.openlocfilehash: 2c08570165f893950dc2588ab33b45be36a3816d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517575"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599693"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>Modulo di OICOL workshop 4a: strategia di protezione dalle minacce
 

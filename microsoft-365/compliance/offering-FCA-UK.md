@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 582f7175ae7eb851c1a58497369d069d7f295aa8
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: f96b4eccec92f78b22eb28caecf3910a5d4ace2d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805059"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602443"
 ---
 # <a name="united-kingdom-financial-conduct-authority-fca"></a>Autorità di condotta finanziaria del Regno Unito (FCA)
 
@@ -60,11 +62,11 @@ Sì. Tuttavia, sebbene le risposte di Microsoft a questo Framework siano conferm
 - [Elenco di controllo cloud Microsoft per gli istituti finanziari nel Regno Unito](https://aka.ms/Azure-UK-compliance)
 - [FG 16/5-linee guida per le aziende che esternalizzano al cloud e ad altri servizi IT di terze parti](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf)
 - [Abilitazione della conformità: l'approccio Microsoft alla guida al cloud finalizzata a FCA](https://go.microsoft.com/fwlink/p/?linkid=2101561)
-- [Financial Services Compliance Program di Microsoft](https://www.microsoft.com/download/details.aspx?id=55332)
+- [Microsoft Financial Services Compliance Program](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Conformità dei servizi finanziari in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Servizi finanziari e servizi cloud aziendali di Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf).

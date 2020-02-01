@@ -1,5 +1,7 @@
 ---
 title: Garanzia del servizio nel centro sicurezza & conformità
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Scaricare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e sapere come è possibile conformarsi alle normative ISO, HIPAA, FINRA e FedRAMP quando si utilizza Office 365.
-ms.openlocfilehash: e346b84d17c2ca95b6a51ff870b18d5ff408b87c
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084766"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601523"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garanzia del servizio nel centro sicurezza & conformità
 
@@ -47,9 +49,9 @@ Utilizzare la garanzia del servizio nel centro sicurezza & conformità per acced
  Per impostazione predefinita, i **membri della sottoscrizione di O365** possono accedere alla sezione Service Assurance nel centro protezione di Office365 se l'accesso basato sui ruoli di Assurance del servizio non è stato implementato nell'abbonamento. Service Assurance fornisce report e documenti che descrivono le procedure di sicurezza di Microsoft per i dati dei clienti archiviati in Office 365. Vengono inoltre forniti report di controllo di terze parti indipendenti su Office 365. 
   
 > [!NOTE]
-> Nota: se l'azienda ha implementato l'accesso basato sui ruoli di Assurance di servizio nell'abbonamento a Office 365 (che potrebbe essere se l'organizzazione ha fornito accesso ai report personalizzati) ed è necessario l'accesso alla garanzia del servizio, ma non è incluso nella parte sinistra riquadro del Centro sicurezza & conformità, chiedere all'amministratore di Office 365 di aggiungersi al gruppo di ruoli utente di Assurance di servizio nella pagina **autorizzazioni** . Per ulteriori informazioni, vedere onboard other Service Assurance Users or groups. 
+> Nota: se l'azienda ha implementato l'accesso basato sui ruoli di Assurance di servizio nell'abbonamento a Office 365 (che potrebbe essere se l'organizzazione ha fornito accesso ai report personalizzati) ed è necessario disporre dell'accesso al servizio Assurance ma non è incluso nel riquadro sinistro del Centro sicurezza & conformità, chiedere all'amministratore di Office 365 di aggiungere il gruppo di ruoli utente di Assurance di servizio nella pagina **autorizzazioni** . Per ulteriori informazioni, vedere onboard other Service Assurance Users or groups. 
   
- **Gli utenti con provisioning di accesso basato sui ruoli di Service Assurance** Se l'azienda ha implementato l'accesso basato sui ruoli di Assurance del servizio, è possibile garantire l'accesso a tutti gli addetti alla sicurezza e alla conformità, inclusi sicurezza delle informazioni, gestione dei rischi, conformità e team di controllo e personale all'interno dell' organizzazione. Per informazioni dettagliate, vedere [onboard other Service Assurance Users or groups](service-assurance.md#addother).
+ **Gli utenti con provisioning di accesso basato sui ruoli di Service Assurance** Se l'azienda ha implementato l'accesso basato sui ruoli di Assurance del servizio, è possibile garantire l'accesso a tutti gli addetti alla sicurezza e alla conformità, inclusi sicurezza delle informazioni, gestione dei rischi, conformità e team di controllo e personale all'interno dell'organizzazione. Per informazioni dettagliate, vedere [onboard other Service Assurance Users or groups](service-assurance.md#addother).
   
 È possibile accedere a Service Assurance tramite il Centro sicurezza & Compliance. Ecco come arrivarci.
   
@@ -120,7 +122,7 @@ Per accedere ai report predefiniti generalmente disponibili in tutti gli abbonam
     
     ![Servizio di sicurezza utente-Aggiungi](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
-3. Nella finestra di dialogo successiva cercare e scegliere singoli o gruppi che devono visualizzare i rapporti di conformità di garanzia del servizio e le risorse di attendibilità, quindi selezionare **Aggiungi** per ogni selezione effettuata e fare clic sulla **X** nell'angolo in alto a destra del riquadro quando Sei finito. 
+3. Nella finestra di dialogo successiva cercare e scegliere singoli o gruppi che devono visualizzare i report di conformità e le risorse di attendibilità del servizio, quindi selezionare **Aggiungi** per ogni selezione effettuata e fare clic sulla **X** nell'angolo in alto a destra del riquadro al termine. 
     
     ![Service Assurance utente-Scegli utente](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   

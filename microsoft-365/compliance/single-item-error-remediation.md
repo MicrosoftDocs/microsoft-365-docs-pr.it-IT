@@ -1,5 +1,7 @@
 ---
 title: Correzione degli errori dei singoli elementi
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: È possibile correggere un errore di elaborazione in un documento in un set di revisione in Advanced eDiscovery senza dover seguire il processo di correzione degli errori in blocco.
-ms.openlocfilehash: 922c0e4b0ab30bae6507fac7e97080a5951ea750
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+ms.openlocfilehash: c049ce4b5d3f8fc12a015a61ea927b744ae76eb3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38686479"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601493"
 ---
 # <a name="single-item-error-remediation"></a>Correzione degli errori dei singoli elementi
 

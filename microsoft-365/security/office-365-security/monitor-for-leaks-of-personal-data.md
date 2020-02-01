@@ -1,5 +1,7 @@
 ---
 title: Monitorare la perdita di dati personali
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -16,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali.
-ms.openlocfilehash: 995f0b273753d7b3a92b8c5acef6eb94d51458b3
-ms.sourcegitcommit: 2468bcb01625f97a322459814d81b9faad717859
+ms.openlocfilehash: fbdae1222a8969b5f7bdd928e7baadfda70bb937
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39872102"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598793"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorare la perdita di dati personali
 
@@ -31,35 +33,35 @@ Sono disponibili molti strumenti che è possibile utilizzare per monitorare l'us
 
 Nella figura:
 
--   Iniziare con i report sulla prevenzione della perdita dei dati di Office 365 per il monitoraggio dei dati personali in SharePoint Online, OneDrive for Business e della posta elettronica in transito. Tali report forniscono il massimo livello di informazioni dettagliate per il monitoraggio dei dati personali. Tuttavia, non includono tutti i servizi in Office 365.
+- Iniziare con i report sulla prevenzione della perdita dei dati di Office 365 per il monitoraggio dei dati personali in SharePoint Online, OneDrive for Business e della posta elettronica in transito. Tali report forniscono il massimo livello di informazioni dettagliate per il monitoraggio dei dati personali. Tuttavia, non includono tutti i servizi in Office 365.
 
--   Successivamente, utilizzare i criteri di avviso e i log di controllo per monitorare l'attività nei servizi di Office 365. Configurare lo strumento di monitoraggio in uso o cercare il log di controllo per analizzare un problema. Il log di controllo di Office 365 è supportato dai servizi di Office 365: Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, Attività amministrative, OneDrive for Business, SharePoint Online, posta in transito e cassette postali inattive. Le conversazioni di Skype sono incluse nelle cassette postali inattive.
+- Successivamente, utilizzare i criteri di avviso e i log di controllo per monitorare l'attività nei servizi di Office 365. Configurare lo strumento di monitoraggio in uso o cercare il log di controllo per analizzare un problema. Il log di controllo di Office 365 è supportato dai servizi di Office 365: Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, Attività amministrative, OneDrive for Business, SharePoint Online, posta in transito e cassette postali inattive. Le conversazioni di Skype sono incluse nelle cassette postali inattive.
 
--   Infine, utilizzare Microsoft Cloud App Security per monitorare i file con dati riservati in altri provider SaaS. Presto sarà possibile utilizzare i tipi di informazioni riservate di Office 365 e le etichette unificate in Azure Information Protection e Office con Cloud App Security. È possibile configurare i criteri applicabili a tutte le app SaaS o ad app specifiche (ad esempio, Box). Cloud App Security non rileva i file in Exchange Online, compresi quelli allegati ai messaggi di posta elettronica.
+- Infine, usare Microsoft Cloud App Security per monitorare i file con dati sensibili in altri provider SaaS. Presto sarà possibile usare i tipi di informazioni sensibili di Office 365 e le etichette unificate in Azure Information Protection e Office con Cloud App Security. È possibile configurare criteri applicabili a tutte le app SaaS o ad app specifiche (ad esempio, Box). Cloud App Security non rileva i file in Exchange Online, compresi quelli allegati ai messaggi di posta elettronica.
 
 ## <a name="office-365-data-loss-prevention-reports"></a>Report sulla prevenzione della perdita di dati di Office 365
 
-Dopo aver creato i criteri di prevenzione della perdita dei dati (DLP), è possibile verificare se funzionano come desiderato e restare conformi. Con i rapporti di prevenzione della perdita dei dati in Office 365, è possibile visualizzare rapidamente il numero di corrispondenze, sostituzioni e falsi positivi dei criteri DLP; visualizzarne l'andamento nel corso del tempo; filtrare il report in modi diversi e visualizzare ulteriori dettagli selezionando un punto nel grafico.
+Dopo aver creato i criteri di prevenzione della perdita dei dati (DLP), è consigliabile verificare che funzionino come previsto e aiutino a mantenere la conformità. Con i report di prevenzione della perdita dei dati in Office 365, è possibile visualizzare rapidamente il numero di corrispondenze, sostituzioni e falsi positivi dei criteri DLP, vederne l'andamento nel corso del tempo, filtrare il report in vari modi ed entrare nei dettagli selezionando un punto nel grafico.
 
 È possibile utilizzare i report DLP per:
 
--   Concentrare l'attenzione su intervalli di tempo specifici e comprendere i motivi di eventuali impennate e tendenze.
+- Concentrare l'attenzione su intervalli di tempo specifici e comprendere i motivi di eventuali impennate e tendenze.
 
--   Individuare le procedure aziendali che violano i criteri DLP dell'organizzazione.
+- Individuare i processi aziendali che violano i criteri DLP dell'organizzazione.
 
--   Comprendere l'eventuale impatto aziendale dei criteri DLP.
+- Comprendere l'eventuale impatto aziendale dei criteri DLP.
 
--   Visualizzare le giustificazioni inviate dagli utenti quando risolvono un suggerimento per i criteri ignorando il criterio o segnalando un falso positivo.
+- Visualizzare le giustificazioni inviate dagli utenti quando risolvono un suggerimento per i criteri ignorando il criterio o segnalando un falso positivo.
 
--   Verificare la conformità con uno specifico criterio DLP mostrando le eventuali corrispondenze per tale criterio.
+- Verificare la conformità con uno specifico criterio DLP mostrando le eventuali corrispondenze per tale criterio.
 
--   Visualizzare un elenco di file con dati riservati corrispondenti ai criteri DLP nel riquadro dei dettagli.
+- Visualizzare un elenco di file con dati riservati corrispondenti ai criteri DLP nel riquadro dei dettagli.
 
 Inoltre, è possibile utilizzare i report DLP per ottimizzare i criteri DLP, quando vengono eseguiti nella modalità test.
 
 I report DPL sono disponibili nel centro sicurezza e nel centro conformità. Passare a Report \> Visualizza report. Sotto Prevenzione della perdita dei dati scegliere Corrispondenze della regola e dei criteri di prevenzione della perdita dei dati o Falsi positivi e override dei criteri di prevenzione della perdita dei dati.
 
-Per ulteriori informazioni, vedere [Visualizzare i report di prevenzione della perdita di dati](https://support.office.com/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
+Per ulteriori informazioni, vedere [Visualizzare i report di prevenzione della perdita di dati](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
 
 ![Report che mostra le corrispondenze ai criteri DLP](../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -69,9 +71,9 @@ Il log di controllo di Office 365 contiene eventi di Exchange Online, SharePoint
 
 Il centro sicurezza e il centro conformità offrono due modi per il monitoraggio e la creazione di report in merito al log di controllo di Office 365:
 
--   Configurare criteri di avviso, visualizzare avvisi e monitorare le tendenze: utilizzare gli strumenti della dashboard e dei criteri di avviso nel centro sicurezza o nel centro conformità.
+- Configurare criteri di avviso, visualizzare avvisi e monitorare le tendenze: utilizzare gli strumenti della dashboard e dei criteri di avviso nel centro sicurezza o nel centro conformità.
 
--   Cercare direttamente il log di controllo: è possibile ricercare tutti gli eventi in un intervallo di date specificato o filtrare i risultati in base a criteri specifici, come l'utente che ha effettuato l'operazione, l'operazione o l'oggetto di destinazione.
+- Cercare direttamente il log di controllo: è possibile ricercare tutti gli eventi in un intervallo di date specificato o filtrare i risultati in base a criteri specifici, come l'utente che ha effettuato l'operazione, l'operazione o l'oggetto di destinazione.
 
 I team di conformità e sicurezza delle informazioni possono utilizzare questi strumenti per analizzare in modo proattivo le attività eseguite dagli utenti finali e dagli amministratori nei servizi di Office 365. Gli avvisi automatici possono essere configurati per inviare notifiche tramite posta elettronica quando si verificano certe attività su specifiche raccolte siti (ad esempio, quando si condividono contenuti da siti contenenti informazioni relative all'RGPD). Ciò consente ai team di rimanere in contatto con gli utenti per verificare che siano rispettati i criteri di sicurezza aziendali oppure di fornire risorse di formazione aggiuntive.
 
@@ -81,17 +83,17 @@ Sono disponibili soluzioni che consentono di sottoscrivere i log di controllo un
 
 Ulteriori informazioni sui criteri di avviso e sulla ricerca nel log di controllo:
 
-- [Criteri di avviso nei centri di sicurezza e di conformità di Microsoft 365](https://support.office.com/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+- [Criteri di avviso nei centri di sicurezza e di conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
 
-- [Eseguire ricerche nel il log di controllo per le attività di utente e amministratore in Office 365](https://support.office.com/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduzione)
+- [Eseguire ricerche nel il log di controllo per le attività di utente e amministratore in Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introduzione)
 
-- [Abilitare o disabilitare la ricerca nel log di controllo di Office 365](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+- [Abilitare o disabilitare la ricerca nel log di controllo di Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
-- [Eseguire ricerche nel log di controllo](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+- [Eseguire ricerche nel log di controllo](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (cmdlet)
 
-- [Proprietà dettagliate nel log di controllo di Office 365](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+- [Proprietà dettagliate nel log di controllo di Office 365](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -111,25 +113,25 @@ Il secondo criterio blocca i download di file a qualsiasi dispositivo non gestit
 
 Questi tipi di attributi saranno presto disponibili in Cloud App Security:
 
--   Tipi di informazioni riservate di Office 365
+- Tipi di informazioni riservate di Office 365
 
--   Etichette unificate in Office 365 e Azure Information Protection
+- Etichette unificate in Office 365 e Azure Information Protection
 
 ### <a name="cloud-app-security-dashboard"></a>Dashboard di Cloud App Security
 
-Se ancora non si utilizza Cloud App Security, iniziare a configurarlo. Per accedere a Cloud App Security: <https://portal.cloudappsecurity.com>.
+Se ancora non si usa Cloud App Security, iniziare a configurarlo. Per accedere a Cloud App Security: <https://portal.cloudappsecurity.com>.
 
-Nota: verificare che "Analizza automaticamente i file per le etichette di classificazione di Azure Information Protection" (nelle impostazioni generali) sia abilitato prima di iniziare a usare Cloud App Security o ad assegnare etichette. Dopo la configurazione, Cloud App Security non consente di analizzare i file esistenti di nuovo finché non vengono modificati.
+Nota: verificare che "Analizza automaticamente i file per le etichette di classificazione di Azure Information Protection" (nelle impostazioni generali) sia abilitato prima di iniziare a usare Cloud App Security o ad assegnare etichette. Dopo la configurazione, Cloud App Security non ripete l'analisi dei file esistenti finché non vengono modificati.
 
 ![Dashboard con informazioni sugli avvisi](../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Ulteriori informazioni:
 
--   [Distribuzione di Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [Distribuzione di Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [Ulteriori informazioni su Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [Ulteriori informazioni su Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
--   [Blocco dei download di informazioni sensibili tramite il proxy di Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [Blocco dei download di informazioni sensibili tramite il proxy di Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>File di esempio e criteri di attività per rilevare la condivisione di dati personali
 
@@ -198,9 +200,9 @@ L'avviso relativo a un file contenente un numero di carta di credito viene condi
 
 Criteri simili:
 
--   Individuare la condivisione di file contenenti informazioni personali - Indirizzo e-mail
+- Individuare la condivisione di file contenenti informazioni personali - Indirizzo e-mail
 
--   Individuare la condivisione di file contenenti informazioni personali - Numero di passaporto
+- Individuare la condivisione di file contenenti informazioni personali - Numero di passaporto
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>Rilevare cliente o dati sulle risorse umane in Box o OneDrive for Business
 
@@ -208,9 +210,9 @@ L'avviso relativo a un file etichettato come Dati della società o Dati sulle ri
 
 Note:
 
--   Il monitoraggio di Box richiede un connettore configurato con l'SDK API Connector.
+- Il monitoraggio di Box richiede un connettore configurato con l'SDK API Connector.
 
--   Questo criterio richiede funzionalità al momento in anteprima privata.
+- Questo criterio richiede funzionalità al momento in anteprima privata.
 
 <table>
 <thead>
@@ -267,6 +269,6 @@ Note:
 
 Criteri simili:
 
--   Rilevare download di grandi dimensioni di Dati della società o Dati sulle risorse umane: avviso relativo al rilevamento del download di un gran numero di file contenenti dati sulla società o sulle risorse umane da parte di un singolo utente in un breve periodo di tempo.
+- Rilevare download di grandi dimensioni di Dati della società o Dati sulle risorse umane: avviso relativo al rilevamento del download di un gran numero di file contenenti dati sulla società o sulle risorse umane da parte di un singolo utente in un breve periodo di tempo.
 
--   Individuare la condivisione di dati sulla società e sulle risorse umane: avviso relativo alla condivisione di file contenenti dati sulla società o sulle risorse umane.
+- Individuare la condivisione di dati sulla società e sulle risorse umane: avviso relativo alla condivisione di file contenenti dati sulla società o sulle risorse umane.

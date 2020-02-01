@@ -1,5 +1,7 @@
 ---
 title: Ricerca di contenuto in Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilizzare lo strumento eDiscovery ricerca contenuto nel centro sicurezza & conformità per trovare rapidamente la posta elettronica nelle cassette postali di Exchange, i documenti nei siti di SharePoint e le posizioni di OneDrive e le conversazioni di messaggistica istantanea in Skype for business.
-ms.openlocfilehash: 9978262223de059511a011358764069ef23d4340
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: d5acdf5bba50d002876491ee0488c1f28a2c51ad
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084400"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601543"
 ---
 # <a name="search-for-content-in-office-365"></a>Ricerca di contenuto in Office 365
 
@@ -77,7 +79,7 @@ La ricerca di contenuti è facile da usare, ma è anche uno strumento potente. D
 
 A volte è necessario eseguire attività di ricerca di contenuto più avanzate, complesse e ripetitive. In questi casi, è più semplice e veloce utilizzare i comandi di PowerShell nel centro sicurezza & Compliance. Per semplificare le operazioni, è stato creato un certo numero di script di PowerShell per il Centro sicurezza & conformità che consentono di completare le attività complesse correlate alla ricerca di contenuto.
   
-- [Cartelle di cassette postali e di sito specifiche per la ricerca](use-content-search-for-targeted-collections.md) (denominato *insieme mirato* ) quando si è certi che gli elementi sensibili a un caso siano presenti in tale cartella 
+- [Ricercare cassette postali e cartelle del sito specifiche](use-content-search-for-targeted-collections.md) (denominate *insieme mirato* ) quando si è certi che gli elementi sensibili a un caso si trovino in tale cartella 
     
 - [Eseguire una ricerca nella cassetta postale e nel percorso di OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) per un elenco di utenti 
     

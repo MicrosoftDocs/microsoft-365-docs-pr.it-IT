@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 476d1b63cfba4c3c9d31fd38c4ad526ca167f7d7
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 292e565064a91d2256dc62831dc1f0957a9b96eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40803989"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601873"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Servizi di sicurezza garantiti dalla polizia (PASF) Regno Unito
 
@@ -45,7 +47,7 @@ Queste certificazioni sono state configurate con le misure da intraprendere per 
 
 Il NPIRMT controlla un datacenter di Azure ogni anno, ciclando annualmente nei quattro datacenter Microsoft nel Regno Unito. La valutazione di NPIRMT che i datacenter Microsoft sono PASF è disponibile tramite l'Home Office per i clienti che stanno conducendo la propria valutazione dei rischi di Azure e di altri servizi cloud Microsoft.
 
-## <a name="how-to-implement"></a>Come eseguire l'implementazione
+## <a name="how-to-implement"></a>Come implementare
 
 - [Cianografia ufficiale di Azure UK](https://servicetrust.microsoft.com/ViewPage/UKBlueprints): aiuta i clienti britannici ad accelerare le distribuzioni di IaaS e PaaS di carichi di lavoro conformi in Azure.
 
@@ -63,6 +65,6 @@ Sì. L'applicazione della legge può utilizzare la valutazione di NPIRMT di Azur
 - [Condizioni di Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf).

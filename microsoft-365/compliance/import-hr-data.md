@@ -1,5 +1,7 @@
 ---
 title: Configurare un connettore per l'importazione dei dati HR
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,24 +12,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: ba673f6328751a7eee10d5ab4097aa334c09f339
-ms.sourcegitcommit: ce0651075aa7e3e1b189437f1990207dd10374b0
+ms.openlocfilehash: a907594120ebb2a6ed49c2dde3a83262f6cf1a62
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41247660"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600693"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurare un connettore per l'importazione dei dati HR
 
 È possibile configurare un connettore di dati nel centro conformità di Microsoft 365 per importare i dati delle risorse umane (HR), ad esempio la data in cui un dipendente ha inviato le proprie dimissioni e la data dell'ultimo giorno del dipendente. Questo tipo di dati HR può quindi essere utilizzato dalle soluzioni Microsoft per la protezione delle informazioni, ad esempio la nuova [soluzione di gestione dei rischi Insider](insider-risk-management.md), per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione. La configurazione di un connettore HR consiste nella creazione di un'app in Azure Active Directory utilizzata per l'autenticazione tramite connettore, la creazione di un file di mapping CSV che contenga i dati HR, la creazione di un connettore di dati nel centro conformità e l'esecuzione di uno script (su un base pianificata) che consente di ingerire i dati HR nel file CSV nel cloud Microsoft. Successivamente, il connettore dati viene utilizzato Microsoft Compliance Solutions (come Insider Risk Management) per accedere ai dati HR che sono stati importati nell'organizzazione Microsoft 365.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - L'organizzazione deve acconsentire a consentire al servizio di importazione di Office 365 di accedere ai dati nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta. È necessario completare questo passaggio prima di poter creare correttamente il connettore HR nel passaggio 3.
 
 - All'utente che crea il connettore HR nel passaggio 3 deve essere assegnato il ruolo di importazione/esportazione delle cassette postali in Exchange Online. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un nuovo gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
 
-- Sarà necessario determinare come recuperare o esportare i dati dal sistema HR dell'organizzazione (su base regolare) e aggiungere il file CSV descritto nel passaggio 2. Lo script eseguito nel passaggio 4 caricherà i dati HR nel file CSV nel cloud Microsoft.
+- Sarà necessario determinare come recuperare o esportare i dati dal sistema HR dell'organizzazione (su base regolare) e aggiungerli al file CSV descritto nel passaggio 2. Lo script eseguito nel passaggio 4 caricherà i dati HR nel file CSV nel cloud Microsoft.
 
 - Lo script di esempio eseguito nel passaggio 4 caricherà i dati HR nel cloud Microsoft in modo che possa essere utilizzato da altri strumenti di Microsoft, ad esempio la soluzione di gestione dei rischi Insider. Questo script di esempio non è supportato in alcun servizio o programma di supporto Microsoft standard. Lo script di esempio viene fornito come senza garanzie di alcun tipo. Inoltre Microsoft declina ogni responsabilità su garanzie implicite, senza alcuna limitazione, incluse le garanzie implicite di commerciabilità e/o adeguatezza per uno scopo specifico. L'intero rischio derivante dall'utilizzo o dalle prestazioni dello script di esempio e della documentazione resta all'interno dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
 
@@ -64,7 +66,7 @@ Nella tabella seguente vengono descritte tutte le colonne del file CSV:
 |**LastWorkingDate**|Specifica l'ultimo giorno di lavoro per il dipendente terminato. È necessario utilizzare il formato di data seguente `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`:, ovvero il [formato di data e ora ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Dopo aver creato il file CSV con i dati HR necessari, archiviarlo in un computer locale o in una posizione di rete che è possibile specificare quando si esegue lo script nel passaggio 4. È inoltre necessario implementare una strategia di aggiornamento in modo che il file CSV contenga sempre le informazioni più aggiornate in modo che qualunque sia l'esecuzione dello script, i dati di terminazione dei dipendenti più recenti verranno caricati nel cloud Microsoft.
+Dopo aver creato il file CSV con i dati HR necessari, archiviarlo nel computer locale in cui viene eseguito lo script nel passaggio 4. È inoltre consigliabile implementare una strategia di aggiornamento per verificare che il file CSV contenga sempre le informazioni più aggiornate, in modo che qualsiasi operazione esegua lo script, i dati di terminazione dei dipendenti più recenti vengano caricati nel cloud Microsoft.
 
 ## <a name="step-3-create-the-hr-connector"></a>Passaggio 3: creare il connettore HR
 
@@ -104,7 +106,7 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Passaggio 4: eseguire lo script di esempio per caricare i dati HR
 
-L'ultimo passaggio per la configurazione di un connettore HR è l'esecuzione di uno script di esempio che caricherà i dati HR nel file CSV (creato nel passaggio 2) nel cloud Microsoft. Dopo aver eseguito lo script, il connettore HR creato nel passaggio 3 può accedere e importare i dati nell'organizzazione Microsoft 365, in cui è possibile accedervi da altri strumenti di conformità, ad esempio la soluzione di gestione dei rischi Insider. Dopo aver eseguito lo script, prendere in considerazione la pianificazione di un'attività per l'esecuzione automatica su base giornaliera in modo che i dati di terminazione dei dipendenti più recenti vengano caricati nel cloud Microsoft. Vedere [pianificare lo script in modo che venga eseguito automaticamente](#optional-step-6-schedule-the-script-to-run-automatically).
+L'ultimo passaggio per la configurazione di un connettore HR è l'esecuzione di uno script di esempio che caricherà i dati HR nel file CSV (creato nel passaggio 2) nel cloud Microsoft. Nello specifico, lo script carica i dati nel connettore HR. Dopo aver eseguito lo script, il connettore HR creato nel passaggio 3 importa i dati HR nell'organizzazione Microsoft 365, in cui è possibile accedervi da altri strumenti di conformità, ad esempio la soluzione di gestione dei rischi Insider. Dopo aver eseguito lo script, prendere in considerazione la pianificazione di un'attività per l'esecuzione automatica su base giornaliera in modo che i dati di terminazione dei dipendenti più recenti vengano caricati nel cloud Microsoft. Vedere [pianificare lo script in modo che venga eseguito automaticamente](#optional-step-6-schedule-the-script-to-run-automatically).
 
 1. Passare a [questo sito GitHub](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) per accedere allo script di esempio.
 
@@ -132,7 +134,7 @@ L'ultimo passaggio per la configurazione di un connettore HR è l'esecuzione di 
    |`appId` |Questo è l'ID dell'applicazione AAD per l'app creata in Azure AD nel passaggio 1. Questo metodo viene utilizzato da Azure AD per l'autenticazione quando lo script tenta di accedere all'organizzazione Microsoft 365. | 
    |`appSecret`|Si tratta del segreto dell'applicazione AAD per l'app creata in Azure AD nel passaggio 1. Questo utilizzato anche per l'autenticazione.|
    |`jobId`|Questo è l'ID processo per il connettore HR creato nel passaggio 3. Viene utilizzato per associare i dati HR caricati nel cloud Microsoft con il connettore HR.|
-   |`csvFilePath`|Si tratta del percorso del file nel computer locale (quello utilizzato per eseguire lo script) per il file CSV creato nel passaggio 2. Se il file CSV si trova in un percorso di rete condiviso, è necessario specificare il percorso completo del file per tale percorso. Provare ad evitare gli spazi nel percorso del file; in caso contrario, utilizzare virgolette singole.|
+   |`csvFilePath`|Si tratta del percorso del file nel computer locale (quello utilizzato per eseguire lo script) per il file CSV creato nel passaggio 2. Provare ad evitare gli spazi nel percorso del file; in caso contrario, utilizzare virgolette singole.|
    |||
    
    Di seguito è riportato un esempio della sintassi per lo script del connettore HR utilizzando i valori effettivi per ogni parametro:

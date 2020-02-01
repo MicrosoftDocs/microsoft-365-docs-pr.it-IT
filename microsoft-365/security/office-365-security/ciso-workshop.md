@@ -1,5 +1,7 @@
 ---
 title: Laboratorio di Chief Information Security Officer (OICOL)
+f1.keywords:
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: 9a6fc72cd905a99b555417269aa9f7ec84faef1f
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 7377eb0bedf86e69618a82a05a7f048cc9b1cde7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012421"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599653"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>Formazione workshop Chief Information Security Officer (OICOL)
 
@@ -38,4 +40,4 @@ I video del workshop di OICOL e il contenuto del download di file PDF/PowerPoint
 
 - [Modulo 4B: strategia di protezione dalle minacce, parte II](ciso-workshop-module-4b.md): questo modulo esamina l'evoluzione e la traiettoria del SoC (Security Operations Center), alimentata dai trilioni di segnali nel grafico Microsoft Intelligent Security.
 
-- [Modulo 5: Information Protection](ciso-workshop-module-5.md): informazioni su come proteggere le informazioni riservate ovunque si trovino con la classificazione automatica, la crittografia persistente tra i dispositivi e il monitoraggio continuo dei dati tra dispositivi mobili, servizi cloud e altro asset aziendali.
+- [Modulo 5: Information Protection](ciso-workshop-module-5.md): informazioni su come proteggere le informazioni riservate ovunque si trovino con la classificazione automatica, la crittografia persistente tra i dispositivi e il monitoraggio continuo dei dati tra i dispositivi mobili, i servizi cloud e altre risorse aziendali.

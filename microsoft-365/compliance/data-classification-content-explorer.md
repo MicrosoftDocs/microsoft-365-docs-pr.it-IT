@@ -1,5 +1,7 @@
 ---
 title: Utilizzo di Esplora contenuto di classificazione dei dati (anteprima)
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora contenuto consente di visualizzare in modo nativo gli elementi con etichetta.
-ms.openlocfilehash: 8a795e0582599dc3160f896a6361b773caa6c4e4
-ms.sourcegitcommit: 6ae69c40bafa6aef633789c3df0fa20590bdcf40
+ms.openlocfilehash: 71ec7b4e27a6f125754e693ecb5239c66404a9ad
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40823798"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628081"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Utilizzo di Esplora contenuto di classificazione dei dati (anteprima)
 
@@ -47,13 +49,13 @@ Un'[etichetta di conservazione](labels.md) consente di definire per quanto tempo
 
 ### <a name="permissions"></a>Autorizzazioni
 
-Esistono due ruoli che consentono di accedere a Esplora contenuto:
+Sono due i ruoli che consentono di accedere a Esplora contenuto:
 
-- **Visualizzatore elenco di Esplora contenuto**: l'appartenenza a questo ruolo consente di visualizzare ogni elemento e la relativa posizione.
+- **Visualizzatore elenco di Esplora contenuto**: l'appartenenza a questo gruppo di ruoli consente di visualizzare ogni elemento e la relativa posizione.
 
-- **Visualizzatore contenuto di Esplora contenuto**: l'appartenenza a questo ruolo consente di visualizzare il contenuto di ogni elemento dell'elenco.
+- **Visualizzatore contenuto di Esplora contenuto**: l'appartenenza a questo gruppo di ruolo consente di visualizzare il contenuto di ogni elemento dell'elenco.
 
-L'account usato per accedere a Esplora contenuto deve essere in uno o entrambi i ruoli. Questi sono ruoli indipendenti e non cumulativi. Ad esempio, se si vuole concedere a un account la possibilità di visualizzare solo gli elementi e le relative posizioni, concedere i diritti di Visualizzatore elenco di Esplora contenuto. Se si vuole che lo stesso account sia in grado di visualizzare anche il contenuto degli elementi dell'elenco, concedere anche i diritti di Visualizzatore contenuto di Esplora contenuto.
+L'account usato per accedere a Esplora contenuto deve essere presente in uno o entrambi i gruppi di ruoli. Si tratta di gruppi di ruoli indipendenti e non cumulativi. Ad esempio, se si vuole concedere a un account la possibilità di visualizzare solo gli elementi e le relative posizioni, concedere i diritti di Visualizzatore elenco di Esplora contenuto. Se si vuole che lo stesso account sia in grado di visualizzare anche il contenuto degli elementi dell'elenco, concedere anche i diritti di Visualizzatore contenuto di Esplora contenuto.
 
 ### <a name="how-to-use-content-explorer"></a>Come usare Esplora contenuto
 

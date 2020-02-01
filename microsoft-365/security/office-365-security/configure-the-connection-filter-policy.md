@@ -1,5 +1,7 @@
 ---
 title: Configurazione dei criteri di filtro delle connessioni, elenco Consenti, elenco bloccati
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Per assicurarsi che la posta elettronica inviata da persone di cui si ha fiducia non sia bloccata, è possibile utilizzare i criteri di filtro delle connessioni per creare un elenco di indirizzi consentiti, noto anche come elenco dei mittenti attendibili, di indirizzo IP attendibile. È inoltre possibile creare un elenco di mittenti bloccati.
-ms.openlocfilehash: 70bd682fd9cb990f15314be3187e74f5fa4d562c
-ms.sourcegitcommit: a122fd1fce523171529c7f610bb7faf09d30a8bb
+ms.openlocfilehash: 06915527af68df6a858ca8ed97612ab40178be84
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41238423"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599593"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurare i criteri di filtro delle connessioni
 

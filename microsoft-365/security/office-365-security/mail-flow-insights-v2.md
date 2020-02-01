@@ -1,5 +1,7 @@
 ---
 title: Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Gli amministratori possono ottenere informazioni sul dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: a8bc8dbc2dcd25e3b26b35221cadf9534f9f668b
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0e87fde41c78f46aaac55602175a3716ba54fe7b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083399"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599043"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
 

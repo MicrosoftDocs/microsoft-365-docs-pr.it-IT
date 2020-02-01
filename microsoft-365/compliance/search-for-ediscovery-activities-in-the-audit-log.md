@@ -1,5 +1,7 @@
 ---
 title: Ricerca di attività di eDiscovery nel registro di controllo di Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,24 +14,24 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Informazioni su come eseguire la ricerca nel registro di controllo di Office 365 per gli eventi che vengono registrati quando gli amministratori di conformità eseguono le attività di ricerca contenuto e di eDiscovery nel centro sicurezza & Compliance.
-ms.openlocfilehash: 7be0cbd5a6cbdad0158228b808802200034265d5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: ef9c40debb8c28f0d017423d29016ca4f52b7a17
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084154"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601533"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Ricerca di attività di eDiscovery nel registro di controllo di Office 365
 
 Le attività relative alla ricerca di contenuto e al eDiscovery eseguite in centro sicurezza & conformità o eseguendo i cmdlet di Windows PowerShell corrispondenti vengono registrate nel registro di controllo di Office 365. Gli eventi vengono registrati quando gli amministratori o gli amministratori di conformità (o qualsiasi utente a cui vengono assegnate le autorizzazioni di eDiscovery) eseguono le seguenti attività di ricerca contenuto e correlate a eDiscovery nel centro sicurezza & Compliance:
   
-- Creazione e gestione dei casi di eDiscovery
+- Creazione e gestione di casi eDiscovery
     
 - Creazione, avvio e modifica di ricerche di contenuto
     
-- Esecuzione di azioni di ricerca del contenuto, ad esempio la visualizzazione in anteprima, l'esportazione e l'eliminazione dei risultati della ricerca
+- Esecuzione di operazioni di ricerca di contenuto, ad esempio visualizzazione in anteprima, esportazione ed eliminazione dei risultati della ricerca
     
-- Configurazione del filtro delle autorizzazioni per la ricerca di contenuto
+- Configurazione del filtro delle autorizzazioni per Ricerca contenuto
     
 - Gestione del ruolo di amministratore di eDiscovery
     
@@ -57,7 +59,7 @@ Al momento, è necessario eseguire alcune operazioni specifiche per visualizzare
     
 6. Nella casella **utenti** selezionare uno o più utenti per visualizzare i risultati della ricerca. Lasciare vuota questa casella per restituire le voci per tutti gli utenti. 
     
-7. Fare clic su **Cerca** per eseguire la ricerca utilizzando i criteri di ricerca. 
+7. Fare clic su **Cerca** per eseguire la ricerca usando i criteri di ricerca. 
     
 8. Dopo la visualizzazione dei risultati della ricerca, è possibile fare clic su **Filtra risultati** per filtrare o ordinare i record di attività risultanti. Purtroppo, non è possibile utilizzare il filtro per escludere in modo esplicito determinate attività. 
     
@@ -66,7 +68,7 @@ Al momento, è necessario eseguire alcune operazioni specifiche per visualizzare
     Viene visualizzata una pagina **Dettagli** che contiene le proprietà dettagliate del record di evento. Per visualizzare ulteriori dettagli, fare clic su **altre informazioni**. Per una descrizione di queste proprietà, vedere la sezione relativa alle [proprietà dettagliate per le attività di eDiscovery](#detailed-properties-for-ediscovery-activities) . 
 
   
-## <a name="ediscovery-activities"></a>attività di eDiscovery
+## <a name="ediscovery-activities"></a>Attività di eDiscovery
 
 Nella tabella seguente vengono descritte le attività relative alla ricerca del contenuto e eDiscovery registrate quando un amministratore o un utente esegue un'attività correlata a eDiscovery utilizzando il Centro sicurezza & conformità o eseguendo il cmdlet corrispondente in Remote PowerShell connesso al centro sicurezza & conformità dell'organizzazione. 
   
@@ -112,7 +114,7 @@ Nella tabella seguente vengono descritte le attività relative alla ricerca del 
   
 ## <a name="ediscovery-cmdlet-activities"></a>attività del cmdlet eDiscovery
 
-Nella tabella seguente sono elencati i record del registro di controllo del cmdlet che vengono registrati quando un amministratore o un utente esegue un'attività correlata a eDiscovery utilizzando il Centro sicurezza & Compliance oppure eseguendo il cmdlet corrispondente in Remote PowerShell connesso a Centro sicurezza & conformità dell'organizzazione. Si noti che le informazioni dettagliate nel record del registro di controllo sono diverse per le attività dei cmdlet elencate in questa tabella e le attività di eDiscovery descritte nella sezione precedente. 
+Nella tabella seguente sono elencati i record del registro di controllo del cmdlet che vengono registrati quando un amministratore o un utente esegue un'attività correlata a eDiscovery utilizzando il Centro sicurezza & Compliance oppure eseguendo il cmdlet corrispondente in Remote PowerShell connesso al centro sicurezza & conformità dell'organizzazione. Si noti che le informazioni dettagliate nel record del registro di controllo sono diverse per le attività dei cmdlet elencate in questa tabella e le attività di eDiscovery descritte nella sezione precedente. 
   
 Come indicato in precedenza, sono necessarie fino a 24 ore prima che le attività del cmdlet di eDiscovery vengano visualizzate nei risultati di ricerca del registro di controllo.
   
@@ -158,7 +160,7 @@ Nella tabella seguente vengono descritte le proprietà incluse quando si fa clic
 |:-----|:-----|
 |Caso  <br/> |L'identità (GUID) del caso di eDiscovery che è stato creato, modificato o eliminato.  <br/> |
 |ClientApplication  <br/> |le attività del cmdlet eDiscovery dispongono di un valore **EMC** per questa proprietà. Questo indica che l'attività è stata eseguita utilizzando il Centro sicurezza & Compliance GUI o l'esecuzione del cmdlet in PowerShell.  <br/> |
-|ClientIP  <br/> |L'indirizzo IP del dispositivo utilizzato quando è stata registrata l'attività. L'indirizzo IP viene visualizzato in un formato di indirizzo IPv4 o IPv6.  <br/> |
+|ClientIP  <br/> |L'indirizzo IP del dispositivo utilizzato quando è stata registrata l'attività. L'indirizzo IP viene visualizzato in formato IPv4 o IPv6.  <br/> |
 |ClientRequestId  <br/> | Per le attività di eDiscovery, questa proprietà è in genere vuota.  <br/> |
 |CmdletVersion  <br/> |Il numero di build per la versione del Centro sicurezza & compliance in esecuzione nell'organizzazione.  <br/> |
 |CreationTime  <br/> |Data e ora in formato UTC (Coordinated Universal Time) quando è stata completata l'attività eDiscovery.  <br/> |
@@ -166,7 +168,7 @@ Nella tabella seguente vengono descritte le proprietà incluse quando si fa clic
 |ExchangeLocations  <br/> |Le cassette postali di Exchange Online incluse in una ricerca di contenuto o in blocco in un caso di eDiscovery.  <br/> |
 |Esclusioni  <br/> |Cassette postali o siti che sono esclusi da una ricerca di contenuto o da un'esenzione in un caso di eDiscovery.  <br/> |
 |ExtendedProperties  <br/> |Altre proprietà di una ricerca di contenuto, un'azione di ricerca del contenuto o una conservazione in un caso di eDiscovery, ad esempio il GUID dell'oggetto e il cmdlet e i parametri del cmdlet corrispondenti che sono stati utilizzati al momento dell'esecuzione dell'attività.  <br/> |
-|ID  <br/> |ID della voce del report. L'ID identifica in modo univoco la voce del registro di controllo.  <br/> |
+|Id  <br/> |ID della voce del report. L'ID identifica in modo univoco la voce del registro di controllo.  <br/> |
 |NonPIIParameters  <br/> |Elenco dei parametri (senza valori) utilizzati con il cmdlet identificato nella proprietà Operation. I parametri elencati in questa proprietà sono uguali a quelli elencati nella proprietà Parameters.  <br/> |
 |ObjectId  <br/> |Il GUID o il nome dell'oggetto, ad esempio una ricerca di contenuto o un caso di eDiscovery, che è stato creato, modificato o eliminato dall'attività elencata nella proprietà Operation. Questo oggetto viene identificato anche nella colonna elemento dei risultati di ricerca del registro di controllo.  <br/> |
 |ObjectType  <br/> |Il tipo di oggetto eDiscovery che l'utente ha creato, eliminato o modificato. ad esempio, un'azione di ricerca del contenuto (anteprima, esportazione o eliminazione), un caso di eDiscovery o una ricerca di contenuto.  <br/> |

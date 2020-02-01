@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 6: configurare la crittografia della posta elettronica'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Comprendere e configurare la gestione degli accessi con privilegi per Office 365.
-ms.openlocfilehash: ef9da1d6aea20ef965b56006d91c4da3c0ad18ab
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 252a5f76197deb1034d200553308a281ef079957
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370433"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600923"
 ---
 # <a name="step-6-configure-email-encryption"></a>Passaggio 6: configurare la crittografia della posta elettronica
 
@@ -44,7 +46,7 @@ Con OME, l'organizzazione può inviare e ricevere messaggi di posta elettronica 
 
 Si configurano le regole di trasporto che definiscono le condizioni per la crittografia. Quando un utente invia un messaggio che corrisponde a una regola, la crittografia viene applicata automaticamente.
 
-Per visualizzare i messaggi crittografati, i destinatari possono ottenere un codice di accesso una tantum, accedere con un account Microsoft o accedere con un account aziendale o dell'Istituto di istruzione associato a Microsoft 365. I destinatari possono inoltre inviare risposte crittografate. Non è necessario che la propria sottoscrizione Microsoft 365 venga visualizzata per visualizzare i messaggi crittografati o inviare risposte crittografate.
+Per visualizzare i messaggi crittografati, i destinatari possono ottenere un codice di accesso una tantum, accedere con un account Microsoft o accedere con un account aziendale o dell'Istituto di istruzione associato a Microsoft 365. I destinatari possono anche inviare risposte crittografate. Non è necessario che la propria sottoscrizione Microsoft 365 venga visualizzata per visualizzare i messaggi crittografati o inviare risposte crittografate.
 
 Per ulteriori informazioni, vedere [Crittografia dei messaggi di Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/ome).
 
@@ -62,7 +64,7 @@ Per ulteriori informazioni, vedere [Information Rights Management in Exchange On
 
 ## <a name="smime"></a>S/MIME
 
-S/MIME è una soluzione di protezione basata sulla posta elettronica basata su certificato digitale che consente di crittografare e firmare digitalmente un messaggio. La crittografia dei messaggi consente di garantire che solo il destinatario previsto riesca ad aprire e leggere il messaggio. Una firma digitale consente al destinatario di convalidare l'identità del mittente e di determinare che solo il mittente potrebbe averlo inviato.
+S/MIME è una soluzione di protezione basata sulla posta elettronica basata su certificato digitale che consente di crittografare e firmare digitalmente un messaggio. La crittografia del messaggio fa sì che solo il destinatario desiderato possa aprire e leggere il messaggio. Una firma digitale consente al destinatario di convalidare l'identità del mittente e di determinare che solo il mittente potrebbe averlo inviato.
 
 ![Protezione S/MIME dei messaggi di posta elettronica](./media/infoprotect-email-encryption/smime-protection.png)
 

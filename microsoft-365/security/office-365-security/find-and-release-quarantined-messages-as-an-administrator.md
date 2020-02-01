@@ -1,5 +1,7 @@
 ---
 title: Individuazione e rilascio dei messaggi in quarantena come amministratore
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: In questo argomento viene descritto in che modo gli amministratori di Exchange Online e Exchange Online Protection (EOP) possono trovare, rilasciare e segnalare i messaggi che sono in quarantena nell'interfaccia di amministrazione di Exchange (EAC).
-ms.openlocfilehash: 7d7288b85660c5569c748a3cb24a1d3cd027b72d
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971754"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599393"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Trovare e rilasciare messaggi in quarantena come amministratore
 

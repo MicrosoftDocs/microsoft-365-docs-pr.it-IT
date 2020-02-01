@@ -1,5 +1,7 @@
 ---
 title: Eseguire analisi per velocizzare le indagini
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7462b415c2e5b0a66c08bb9b5abb647f366e9785
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 0631754fc7003f0c562b4551649b9622030ac45a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37084175"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601583"
 ---
 # <a name="run-analytics-to-investigate-faster"></a>Eseguire analisi per velocizzare le indagini
 

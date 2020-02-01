@@ -1,5 +1,7 @@
 ---
 title: Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -16,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Estendere Office 365 Advanced Threat Protection ai file in SharePoint Online, OneDrive for business e Microsoft teams per consentire una collaborazione più sicura per l'organizzazione.
-ms.openlocfilehash: e590d9917cbc32a6e1eaaf15b5716a9bf5e620f5
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a21654ed8045b9adb6c09a730ada3ae458cf1609
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971954"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599843"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
 

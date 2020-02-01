@@ -1,5 +1,7 @@
 ---
 title: Limiti per la ricerca di contenuto nel centro sicurezza & conformità
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Informazioni sui limiti effettivi per la funzionalità di ricerca contenuto nel centro sicurezza & conformità in Office 365, ad esempio il numero massimo di ricerche simultanee. '
-ms.openlocfilehash: 0574908468b5c2c94f1feb78c0845bc0a0e2afff
-ms.sourcegitcommit: cbf934ef448fc428f5ed53b07cda7a5f72c89221
+ms.openlocfilehash: a560e26b6a02e48ca50033acad554e3c7bb2ec6e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40911464"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600553"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Limiti per la ricerca di contenuto nel centro sicurezza & conformità
 
@@ -70,7 +72,7 @@ Nella tabella seguente vengono descritti i limiti di indicizzazione che possono 
 |Dimensione massima del corpo nell'indice  <br/> |67 milioni caratteri  <br/> |Il numero totale di caratteri presenti nel corpo di un messaggio di posta elettronica e di tutti gli allegati. Quando un messaggio di posta elettronica viene indicizzato, tutto il testo nel corpo del messaggio e in tutti gli allegati viene concatenato in una singola stringa. Le dimensioni massime della stringa indicizzata sono 67 milioni caratteri.  <br/> |
 |Numero massimo di token univoci nel corpo  <br/> |1 milione  <br/> |Come spiegato in precedenza, i token sono il risultato dell'estrazione del testo dal contenuto, la rimozione della punteggiatura e degli spazi e quindi la suddivisione in parole (denominate token) memorizzate nell'indice. Ad esempio, la frase `"cat, mouse, bird, dog, dog"` contiene 5 token. Ma solo 4 di questi sono token univoci. Vi è un limite di 1 milione token univoci per ogni messaggio di posta elettronica, che consente di evitare che l'indice venga troppo esteso con token casuali.  <br/> |
   
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Esistono ulteriori limiti relativi a diversi aspetti della ricerca del contenuto, ad esempio l'esportazione dei risultati di ricerca e l'indicizzazione del contenuto. Per una descrizione di questi limiti, vedere gli argomenti seguenti:
   

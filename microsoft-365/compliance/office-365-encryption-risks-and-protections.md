@@ -1,5 +1,7 @@
 ---
 title: Protezione e rischi di crittografia di Office 365
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Riepilogo: informazioni sulla resilienza dei dati in Microsoft Office 365.'
-ms.openlocfilehash: 113fd60f8b585e4f59245f00b0f238cb2020b57d
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: aeb6ba0a779bb0301919f781c5669e19263ee1bb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690552"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601813"
 ---
 # <a name="encryption-risks-and-protections"></a>Protezione e rischi della crittografa
 

@@ -5,18 +5,21 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 69d105e41050c7c9d1b9fbcf37e891e430a79ef1
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 4bc6663efe704205787e1c69d4e6dd06122419c3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859376"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601913"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Privacy Information Management System (PIMS)
 
@@ -63,6 +66,11 @@ Punti chiave di ISO/IEC 27001 e PIMS:
 ## <a name="what-should-your-organization-do-with-pims"></a>Come deve comportarsi un'organizzazione riguardo PIMS?
 
 Indipendentemente dalle dimensioni dell'organizzazione e che si tratti di un titolare o di un responsabile, è consigliabile conseguire la certificazione per la propria organizzazione o richiederla ai fornitori in base ai requisiti aziendali. Questo vale soprattutto per i responsabili, i responsabili secondari e i co-titolari che elaborano dati sensibili o elevati volumi di dati personali. In ogni caso, l'organizzazione deve valutare le proprie esigenze aziendali per determinare se le certificazioni per i propri prodotti e servizi sono idonee.
+
+## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
+
+- [Certificazione ISO/IEC 27701 per Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Report di valutazione ISO/IEC 27701 per Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
 
 ## <a name="resources"></a>Risorse
 

@@ -1,5 +1,7 @@
 ---
 title: Flusso di posta in ingresso e in uscita
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Gli amministratori possono ottenere informazioni sul widget del flusso di posta in uscita e in ingresso nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: ceb85b9e83596c6c300c35ba471b04282074c82f
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: f4781777d90f2156b35dd0bfeab42084ef99d1a1
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39970802"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41598843"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flusso di posta in ingresso e in uscita
 

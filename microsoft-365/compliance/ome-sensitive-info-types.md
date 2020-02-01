@@ -1,5 +1,7 @@
 ---
 title: Creare criteri del tipo di informazioni sensibili per l'organizzazione con Office 365 Message Encryption
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Riepilogo: criteri di crittografia dei messaggi di Office 365 per i tipi di informazioni riservate.'
-ms.openlocfilehash: 8632a0419b443d2810afd3554da572ab2197ae2a
-ms.sourcegitcommit: 6dfa646b9de30336dedfd0cac7320c57ad74ae11
+ms.openlocfilehash: a3767fb0f9fe5e565c49db4f9da94d75a3cee8a7
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38690546"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601793"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-office-365-message-encryption"></a>Creare criteri del tipo di informazioni sensibili per l'organizzazione con Office 365 Message Encryption
 
@@ -32,7 +34,7 @@ Accedere all'interfaccia di amministrazione di Exchange (EAC) e passare a **** >
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Per creare il criterio mediante le regole del flusso di posta in PowerShell
 
-Utilizzare un account aziendale o dell'Istituto di istruzione che disponga delle autorizzazioni di amministratore globale nell'organizzazione di Office 365, avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per istruzioni, vedere [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell). Utilizzare i cmdlet Set-IRMConfiguration e New-TransportRule per creare il criterio.
+Utilizzare un account aziendale o dell'Istituto di istruzione che disponga delle autorizzazioni di amministratore globale nell'organizzazione di Office 365, avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per istruzioni, vedere [Connettersi a PowerShell di Exchange Online](https://aka.ms/exopowershell). Utilizzare i cmdlet Set-IRMConfiguration e New-TransportRule per creare il criterio.
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>Esempio di regola del flusso di posta creato con PowerShell
 

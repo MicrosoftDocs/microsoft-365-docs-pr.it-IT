@@ -1,5 +1,7 @@
 ---
 title: Crittografia nel Microsoft Cloud
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: Panoramica della crittografia nel cloud Microsoft.
-ms.openlocfilehash: 1ca3d1711589ab2d65a27a8d1eeb6da265ce727b
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 11cce463cf953bd9f8ea0df61e3fe97b356608eb
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38690554"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601823"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Crittografia nel Microsoft Cloud
 
@@ -40,8 +42,8 @@ FIPS 140-2 è uno standard progettato appositamente per la convalida dei moduli 
 Microsoft certifica i moduli di crittografia sottostanti utilizzati nei servizi cloud con ogni nuova versione del sistema operativo Windows:
 
 - Governo degli Stati Uniti di Azure e Azure
-- Governo degli Stati Uniti Dynamics 365 e Dynamics 365
-- Office 365, Office 365 US Government e Office 365 US Government Defense
+- Dynamics 365 e Dynamics 365 U.S. Government
+- Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense
 
 La crittografia dei dati del cliente di Office 365 a riposo è fornita da più tecnologie sul fianco del servizio, tra cui BitLocker, DKM, crittografia del servizio di archiviazione di Azure e crittografia del servizio in Exchange Online, Skype for business, OneDrive for business e SharePoint Online. La crittografia dei servizi di Office 365 include un'opzione per l'utilizzo delle chiavi di crittografia gestite dal cliente archiviate in Azure Key Vault. Questa opzione di chiave gestita dal cliente, denominata [chiave del cliente di Office 365](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697), è disponibile per Exchange Online, SharePoint Online, Skype for business e OneDrive for business.
 
