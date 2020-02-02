@@ -1,5 +1,5 @@
 ---
-title: Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni (anteprima)
+title: Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 description: Riferimento alla funzionalità per la conformità delle comunicazioni in Microsoft 365. Informazioni dettagliate e specifiche per ogni componente di funzionalità.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b844003b2cf0da80588d9fe2622c3353a57d73b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ff765d309e3f01dbc1c2ef7fa75ed3287c8a5c0a
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595833"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661962"
 ---
-# <a name="communication-compliance-feature-reference-preview"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni (anteprima)
+# <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
 ## <a name="policies"></a>Generali
 
@@ -67,14 +67,14 @@ Con i criteri di conformità della comunicazione, è possibile scegliere di anal
 
 - **Microsoft teams**: è possibile analizzare le comunicazioni chat e gli allegati associati in entrambi i canali di Microsoft teams pubblici e privati e nelle chat individuali. Chat teams la corrispondenza delle condizioni dei criteri di conformità della comunicazione viene elaborata una volta ogni 24 ore e quindi è disponibile nei report di conformità della comunicazione. Utilizzare le seguenti configurazioni di gestione dei gruppi per controllare le chat utente e le comunicazioni dei canali nei team:
 
-    - **Per le comunicazioni di chat dei team:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di conformità della comunicazione. Questo è per le relazioni utente/chat uno-a-uno o uno-a-molti.
+    - **Per le comunicazioni di chat dei team:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di conformità della comunicazione. Questa impostazione è per le relazioni tra utenti/chat uno-a-uno o uno-a-molti.
     - **Per le comunicazioni di canale dei team:** Assegnare a tutti i gruppi di Microsoft Team Channel o Office 365 che si desidera analizzare che contengano un utente specifico per i criteri di conformità della comunicazione. Se si aggiunge lo stesso utente ad altri canali Microsoft teams o gruppi di Office 365, accertarsi di aggiungere questi nuovi canali e gruppi ai criteri di conformità della comunicazione.
 
 - **Posta elettronica di Exchange**: le cassette postali ospitate in Exchange Online come parte dell'abbonamento a Microsoft 365 o Office 365 sono tutte idonee per l'analisi dei messaggi. Messaggi di posta elettronica e allegati corrispondenti alle condizioni dei criteri di conformità della comunicazione sono immediatamente disponibili nei report di conformità comunicazione. I tipi di allegati supportati per la conformità alla comunicazione sono gli stessi dei [tipi di file supportati per le ispezioni del contenuto delle regole del flusso di posta di Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
 - **Skype for business online**: è possibile controllare le comunicazioni di chat e gli allegati associati in Skype for business online. Chat di Skype for business online che soddisfano le condizioni dei criteri di conformità della comunicazione vengono elaborate una volta ogni 24 ore e quindi sono disponibili nei rapporti di conformità della comunicazione. Le conversazioni di chat sorvegliate vengono provenienti da [precedenti conversazioni salvate in Skype for business online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilizzare la configurazione di gestione dei gruppi seguente per supervisionare le comunicazioni della chat utente in Skype for business online:
 
-    - **Per le comunicazioni di chat di Skype for business online**: assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di conformità della comunicazione. Questo è per le relazioni utente/chat uno-a-uno o uno-a-molti.
+    - **Per le comunicazioni di chat di Skype for business online**: assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di conformità della comunicazione. Questa impostazione è per le relazioni tra utenti/chat uno-a-uno o uno-a-molti.
 
 - **Origini**di terze parti: è possibile eseguire l'analisi delle comunicazioni da origini di terze parti per i dati importati nelle cassette postali nell'organizzazione Microsoft 365. I connettori supportano le risorse di terze parti seguenti:
 
@@ -85,13 +85,13 @@ Con i criteri di conformità della comunicazione, è possibile scegliere di anal
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [Connettore dati personalizzato](archiving-third-party-data.md)
 
-Prima di poter assegnare il connettore a un criterio di conformità della comunicazione, è necessario configurare un connettore di terze parti per l'organizzazione Microsoft 365. La sezione origini di terze **parti** della procedura guidata per la conformità dei criteri di comunicazione Visualizza solo i connettori di terze parti attualmente configurati.
+Prima di poter assegnare il connettore a un criterio di conformità della comunicazione, è necessario configurare un connettore di terze parti per l'organizzazione Microsoft 365. La sezione **origini di terze parti** della procedura guidata per la conformità dei criteri di comunicazione Visualizza solo i connettori di terze parti attualmente configurati.
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transizione dalla vigilanza in Office 365
 
 Le organizzazioni che utilizzano i criteri di supervisione in Office 365 e la pianificazione della transizione ai criteri di conformità della comunicazione in Microsoft 365 devono comprendere questi importanti punti:
 
-- Entrambe le soluzioni possono essere utilizzate in modalità affiancata nell'organizzazione, ma i criteri utilizzati in ogni soluzione devono avere nomi di criteri univoci. I gruppi e i dizionari di parole chiave personalizzati possono essere condivisi tra le soluzioni durante un periodo di transizione.
+- Entrambe le soluzioni possono essere utilizzate affiancate all'interno dell'organizzazione, ma i criteri utilizzati in ogni soluzione devono avere nomi di criteri univoci. I gruppi e i dizionari di parole chiave personalizzati possono essere condivisi tra le soluzioni durante un periodo di transizione.
 - I messaggi salvati in supervisione nelle corrispondenze di criteri di Office 365 non possono essere spostati o condivisi nella conformità della comunicazione in Microsoft 365.
 - La soluzione di supervisione in Office 365 sarà completamente sostituita dalla soluzione di conformità della comunicazione in Microsoft 365. È consigliabile creare nuovi criteri di conformità alla comunicazione con le stesse impostazioni dei criteri di supervisione esistenti per l'utilizzo dei nuovi miglioramenti di analisi e correzione. Quando si esegue la transizione alla conformità alla comunicazione in Microsoft 365, è consigliabile pianificare l'esportazione dei dati di Reporting dalla supervisione in Office 365 se sono presenti requisiti per i criteri di conservazione della conformità interni.
 
@@ -223,7 +223,7 @@ I filtri di conformità di comunicazione consentono di filtrare e ordinare i mes
 | **Classe file** | La classe del messaggio in base al tipo di messaggio, ovvero *messaggio* o *allegato*. |
 | **Ha allegato** | La presenza degli allegati nel messaggio. |
 | **Classe Item** | L'origine del messaggio in base al tipo di messaggio, alla posta elettronica, a Microsoft Team Chat, Bloonmberg e così via. |
-| **Domini destinatario** | Il dominio in cui è stato inviato il messaggio. Si tratta in genere del dominio di sottoscrizione Microsoft 365 per impostazione predefinita. |
+| **Domini destinatario** | Il dominio in cui è stato inviato il messaggio. Questo dominio è in genere il dominio di sottoscrizione Microsoft 365 per impostazione predefinita. |
 | **Destinatario** | L'utente a cui è stato inviato il messaggio. |
 | **Mittente** | La persona che ha inviato il messaggio. |
 | **Dominio del mittente** | Il dominio che ha inviato il messaggio. |
@@ -270,19 +270,19 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 
 ## <a name="audit"></a>Audit
 
-In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Può trattarsi di un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento in cui cambia il criterio di conformità della comunicazione. I criteri di conformità della comunicazione hanno percorsi di controllo incorporati per una preparazione completa per i controlli interni o esterni. Le cronologie di controllo dettagliate di ogni azione di creazione, modifica ed eliminazione vengono acquisite dai criteri di comunicazione per fornire la prova delle procedure di supervisione.
+In alcuni casi, è necessario fornire informazioni ai revisori dei conti normativi o di conformità per dimostrare la supervisione delle attività e delle comunicazioni degli impiegati. Tali informazioni possono essere un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento in cui si modifica un criterio di conformità della comunicazione. I criteri di conformità della comunicazione hanno percorsi di controllo incorporati per una preparazione completa per i controlli interni o esterni. Le cronologie di controllo dettagliate di ogni azione di creazione, modifica ed eliminazione vengono acquisite dai criteri di comunicazione per fornire la prova delle procedure di supervisione.
 
 >[!Important]
->È necessario che il controllo sia abilitato per l'organizzazione prima che vengano registrati gli eventi di conformità della comunicazione. Per abilitare il controllo, vedere [Enable Auditing for your Communication Compliance Policies](communication-compliance-configure.md#step-6-enable-auditing-for-your-communication-compliance-policies-optional).
+>È necessario che il controllo sia abilitato per l'organizzazione prima che vengano registrati gli eventi di conformità della comunicazione. Per abilitare il controllo, vedere [Enable Auditing for your Communication Compliance Policies](communication-compliance-configure.md#step-6-optional-enable-auditing-for-your-communication-compliance-policies).
 
-Per visualizzare le attività relative ai criteri di conformità della comunicazione, selezionare il controllo **Esporta attività di revisione** nella pagina principale per tutti i criteri. In questo modo viene generato un file di controllo nel formato CSV che contiene le informazioni seguenti:
+Per visualizzare le attività relative ai criteri di conformità della comunicazione, selezionare il controllo **Esporta attività di revisione** nella pagina principale per tutti i criteri. Questa azione genera un file di controllo nel formato. csv che contiene le informazioni seguenti:
 
 |**Campo**|**Dettagli**|
 |:-----|:-----|
-| **CreationDate** | Quando l'attività è stata eseguita in un criterio. |
+| **CreationDate** | Data in cui l'attività è stata eseguita in un criterio. |
 | **UserIds** | L'utente che ha eseguito l'attività in un criterio. |
 | **Operations** | Le operazioni eseguite sul criterio. |
-| **AuditData** | Si tratta del campo principale di origine dati per tutte le attività dei criteri. Tutte le attività vengono registrate e separate da delimitatori di virgole. |
+| **AuditData** | Questo campo è l'origine dati principale per tutte le attività dei criteri. Tutte le attività vengono registrate e separate da delimitatori di virgole. |
 
 È inoltre possibile visualizzare le attività di controllo nel log di controllo unificato o con il cmdlet di PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) .
 

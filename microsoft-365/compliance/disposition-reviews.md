@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di conservazione che conserva il contenuto in Microsoft 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
-ms.openlocfilehash: 8dafaf45df0d681880ef513c9feab6b833c99cb8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 267b2bc7a8bc65e3a816c2d3d88397589734b55d
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595231"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661932"
 ---
 # <a name="overview-of-disposition-reviews"></a>Panoramica delle recensioni sulla disposizione
 
@@ -128,7 +128,7 @@ Nella pagina **disposizione in sospeso** , è possibile visualizzare le disposiz
   
 - La **disposizione in sospeso** Visualizza gli elementi che hanno raggiunto la fine del periodo di conservazione e richiedono una revisione della disposizione. Dopo aver esaminato ogni elemento, decidere se si desidera applicare un'etichetta di conservazione diversa, estenderne il periodo di conservazione o eliminarla definitivamente. È possibile selezionare più elementi.
     
-- La scheda **elementi** eliminati indica che le disposizioni sono state approvate per l'eliminazione durante una revisione della disposizione e che sono state eliminate definitivamente o gli elementi contrassegnati come record che sono stati eliminati. Gli elementi in cui è stata applicata un'etichetta di conservazione diversa o il periodo di conservazione esteso nell'ambito di una revisione non verranno visualizzati in questa posizione.
+- La scheda **elementi** eliminati consente di visualizzare gli elementi eliminati definitivamente che sono già stati sottoposti a una revisione della disposizione. Vengono visualizzati qui perché il processo di eliminazione permanente può richiedere alcuni giorni, come indicato nella sezione precedente. Gli elementi in cui è stata applicata un'etichetta di conservazione diversa o il periodo di conservazione esteso nell'ambito di una revisione non verranno visualizzati in questa posizione.
 
 ![Schede disposizione](media/Retention-Disposition-tabs.png)
     

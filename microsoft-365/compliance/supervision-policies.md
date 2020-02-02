@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 2e060ab7c404ccf3538a8b250cbd03429c6e2a4d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a57fd1f1e079424f1494acc4b8944534c30359b2
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597393"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661873"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di supervisione in Office 365
 
@@ -48,9 +48,10 @@ Si desidera provare la nuova esperienza di conformità della comunicazione in Mi
 
 Le organizzazioni che utilizzano i criteri di supervisione in Office 365 e la pianificazione della transizione ai [criteri di conformità della comunicazione in Microsoft 365](communication-compliance.md) devono comprendere questi importanti punti:
 
-- Entrambe le soluzioni possono essere utilizzate in modalità affiancata nell'organizzazione, ma i criteri utilizzati in ogni soluzione devono avere nomi di criteri univoci. I gruppi e i dizionari di parole chiave personalizzati possono essere condivisi tra le soluzioni durante un periodo di transizione.
+- La soluzione di supervisione in Office 365 sarà completamente sostituita dalla soluzione di conformità della comunicazione in Microsoft 365. Per le organizzazioni che si conformano alla conformità alla comunicazione dai criteri di supervisione, si consiglia di creare nuovi criteri di conformità alla comunicazione con le stesse *condizioni* dei criteri di supervisione esistenti per consentire nuovi miglioramenti di analisi e correzione. Quando si esegue la transizione alla conformità alla comunicazione in Microsoft 365, è consigliabile pianificare l'esportazione dei dati di Reporting dalla supervisione in Office 365 se sono presenti requisiti per i criteri di conservazione della conformità interni.
+- Nel frattempo, le organizzazioni possono utilizzare entrambe le soluzioni affiancate fino alla migrazione completa, ma i criteri utilizzati in ogni soluzione devono avere *nomi di criteri univoci*. I gruppi e i dizionari di parole chiave personalizzati possono essere condivisi tra le soluzioni durante il periodo di transizione.
 - I messaggi salvati in supervisione nelle corrispondenze di criteri di Office 365 non possono essere spostati o condivisi nella conformità della comunicazione in Microsoft 365.
-- La soluzione di supervisione in Office 365 sarà completamente sostituita dalla soluzione di conformità della comunicazione in Microsoft 365. È consigliabile creare nuovi criteri di conformità alla comunicazione con le stesse impostazioni dei criteri di supervisione esistenti per l'utilizzo dei nuovi miglioramenti di analisi e correzione. Quando si esegue la transizione alla conformità alla comunicazione in Microsoft 365, è consigliabile pianificare l'esportazione dei dati di Reporting dalla supervisione in Office 365 se sono presenti requisiti per i criteri di conservazione della conformità interni.
+
 
 Per informazioni sulla pensione per la vigilanza in Office 365, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per informazioni dettagliate.
 

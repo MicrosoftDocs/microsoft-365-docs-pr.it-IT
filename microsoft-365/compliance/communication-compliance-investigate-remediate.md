@@ -1,5 +1,5 @@
 ---
-title: Esaminare e correggere gli avvisi di conformità delle comunicazioni (anteprima)
+title: Esaminare e correggere gli avvisi di conformità della comunicazione
 description: Esaminare e correggere gli avvisi di conformità della comunicazione in Microsoft 365.
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0bf47842945d904c30c8a034d2ed255a743332ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 31a38ac28d1b483d6b5cdce6fade82d252457641
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595823"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661952"
 ---
-# <a name="investigate-and-remediate-communication-compliance-alerts-preview"></a>Esaminare e correggere gli avvisi di conformità delle comunicazioni (anteprima)
+# <a name="investigate-and-remediate-communication-compliance-alerts"></a>Esaminare e correggere gli avvisi di conformità della comunicazione
 
 Dopo aver configurato i criteri di conformità della comunicazione, si inizierà a ricevere avvisi nel centro conformità di Microsoft 365 per i problemi dei messaggi che soddisfano le condizioni di criteri. Seguire le istruzioni del flusso di lavoro qui per esaminare e correggere i problemi di avviso.
 
@@ -70,7 +70,7 @@ Per un elenco completo dei filtri e dettagli sul campo, vedere [Filters](communi
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Utilizzo dell'analisi duplicata vicina ed esatta
 
-I criteri di conformità della comunicazione analizzano e pregruppo i duplicati del messaggio vicino ed esatto senza ulteriori passaggi di configurazione. In questo modo è possibile correggere rapidamente i messaggi simili uno per uno o come gruppo, riducendo il carico di indagine dei messaggi per i revisori. Quando vengono rilevati duplicati, **i duplicati e/** o i controlli **duplicati esatti** vengono visualizzati nella barra degli strumenti azione di correzione.
+I criteri di conformità della comunicazione analizzano e pregruppo i duplicati del messaggio vicino ed esatto senza ulteriori passaggi di configurazione. Questa visualizzazione consente di correggere rapidamente i messaggi simili uno per uno o come gruppo, riducendo il carico di indagine dei messaggi per i revisori. Quando vengono rilevati duplicati, **i duplicati e/** o i controlli **duplicati esatti** vengono visualizzati nella barra degli strumenti azione di correzione.
 
 #### <a name="to-remediate-duplicates"></a>Per correggere i duplicati
 
@@ -116,5 +116,6 @@ Indipendentemente dal punto in cui si inizia a esaminare gli avvisi o il filtro 
     - **Tag As**: contrassegnare il messaggio come *conforme*, *non conforme*o come *discutibile* in relazione ai criteri e agli standard per l'organizzazione. L'aggiunta di tag e commenti di tagging può aiutare a filtrare gli avvisi per i criteri per le escalation o come parte di altri processi di revisione interni. Dopo aver completato il tagging, è anche possibile scegliere di risolvere il messaggio per spostarlo fuori dalla coda di revisione in sospeso.
     - **Notify**: è possibile utilizzare il controllo **Notify** per assegnare un modello di avviso personalizzato all'avviso e per inviare un avviso all'utente. Scegliere il modello di avviso appropriato e quindi fare clic su **Invia** alla posta elettronica un promemoria per il dipendente che ha inviato il messaggio e per risolvere il problema.
     - **Escalation**: se si utilizza il controllo **escalation** , è possibile scegliere chi altro nell'organizzazione deve esaminare il messaggio. Scegliere da un elenco di revisori configurati per inviare una notifica tramite posta elettronica che richiede ulteriori riesami dell'avviso del messaggio. Il revisore selezionato può utilizzare un collegamento nella notifica di posta elettronica per passare direttamente agli elementi che sono stati escalati per la revisione.
+    - **Creare un caso**: utilizzando il controllo **Create a case** , è possibile creare un nuovo [caso di eDiscovery avanzato](overview-ediscovery-20.md) per singoli o più messaggi. Verranno forniti un nome e note per il nuovo caso e l'utente che ha inviato il messaggio che corrisponde al criterio viene automaticamente assegnato come custode del caso. Non sono necessarie ulteriori autorizzazioni per gestire il caso. La creazione di un caso non risolve o crea un nuovo tag per il messaggio.
 
 4. **Determinare se i dettagli dei messaggi devono essere archiviati all'esterno della conformità di comunicazione**: i dettagli del messaggio possono essere esportati o scaricati se è necessario archiviarli in una soluzione di archiviazione separata. Se si seleziona il controllo **download** , vengono aggiunti automaticamente i messaggi selezionati a un. File ZIP che può essere salvato nello spazio di archiviazione all'esterno di Microsoft 365.

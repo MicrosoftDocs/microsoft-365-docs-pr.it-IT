@@ -1,5 +1,5 @@
 ---
-title: Conformità alla comunicazione (anteprima)
+title: Conformità delle comunicazioni
 description: Informazioni sulla conformità della comunicazione in Microsoft 365
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8aa7beeea621ccbb0014059766fe217c1a25e2a2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3dabe35b753e38ab51801c6f2bd51cc5ee588e9a
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595813"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661942"
 ---
-# <a name="communication-compliance-in-microsoft-365-preview"></a>Conformità della comunicazione in Microsoft 365 (anteprima)
+# <a name="communication-compliance-in-microsoft-365"></a>Conformità della comunicazione in Microsoft 365
 
 La conformità alla comunicazione è parte integrante della nuova soluzione di rischio Insider impostata in Microsoft 365 che consente di ridurre al minimo i rischi di comunicazione aiutandoli a rilevare, acquisire e intraprendere azioni correttive per i messaggi inappropriati nell'organizzazione. I criteri predefiniti e personalizzati consentono di analizzare le comunicazioni interne ed esterne per le corrispondenze dei criteri in modo che possano essere esaminate da revisori designati. I revisori possono esaminare la posta elettronica digitalizzata, Microsoft teams o le comunicazioni di terze parti nell'organizzazione e intraprendere le azioni correttive appropriate per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione.
 
@@ -114,8 +114,8 @@ L'identificazione e la risoluzione dei problemi di conformità con la conformit�
 
 In questo passaggio del flusso di lavoro vengono identificati i requisiti di conformità e vengono configurati i criteri di conformità della comunicazione. I modelli di criteri rappresentano un ottimo modo per non solo configurare rapidamente un nuovo criterio di conformità, ma anche per modificare e aggiornare rapidamente i criteri in base alle modifiche apportate ai requisiti. Ad esempio, potrebbe essere necessario testare rapidamente un criterio per la lingua offensiva e l'antimolestia sulle comunicazioni per un piccolo gruppo di utenti prima di configurare un criterio per tutti gli utenti dell'organizzazione.
 
-> [!Important]
-> Per impostazione predefinita, gli amministratori globali non possono accedere alle funzionalità di conformità della comunicazione. Per abilitare le autorizzazioni per le funzionalità di conformità della comunicazione, vedere [make Communication Compliance available in Your Organization](communication-compliance-configure.md#step-2-make-communication-compliance-available-in-your-organization-required).
+>[!Important]
+>Per impostazione predefinita, gli amministratori globali non possono accedere alle funzionalità di conformità della comunicazione. Per abilitare le autorizzazioni per le funzionalità di conformità della comunicazione, vedere [make Communication Compliance available in Your Organization](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
 
 È possibile scegliere tra i seguenti modelli di criteri nel centro conformità di Microsoft 365:
 
@@ -143,6 +143,7 @@ Il passaggio successivo consiste nel correggere i problemi di conformità della 
 - **Notifica all'utente**: spesso gli utenti violano accidentalmente o inavvertitamente un criterio di conformità della comunicazione. È possibile utilizzare la funzionalità Notify per fornire un avviso all'utente e per risolvere il problema.
 - **Escalation a un altro revisore**: a volte, il revisore iniziale di un problema deve essere inserito da altri revisori per contribuire alla risoluzione dell'evento. È possibile inoltrare facilmente i problemi dei messaggi ai revisori in altre aree dell'organizzazione nell'ambito del processo di risoluzione.
 - **Contrassegna come falso positivo**: i messaggi rilevati erroneamente come corrispondenze di criteri di conformità passano occasionalmente al processo di revisione. È possibile contrassegnare questi tipi di avvisi come falsi positivi e risolvere automaticamente il problema.
+- **Creare un caso**: nelle situazioni più gravi potrebbe essere necessario condividere le informazioni di conformità della comunicazione con altri revisori nell'organizzazione. La conformità alla comunicazione è strettamente integrata con altre funzionalità di conformità di Microsoft 365 che consentono di risolvere i rischi end-to-end. L'escalation di un caso di indagine consente di trasferire i dati e la gestione del caso in Advanced eDiscovery in Microsoft 365. Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare contenuti rispondenti alle indagini interne ed esterne dell'organizzazione. Consente ai team legali di gestire l'intero flusso di lavoro di notifica della conservazione legale. Per ulteriori informazioni sui casi di eDiscovery avanzati, vedere [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Monitorare
 

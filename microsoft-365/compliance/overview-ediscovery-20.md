@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritta la nuova versione di Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: 0057b77b140d05093686029addc29e72e59cae11
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 30b69bbd80799b0f3e32b008ec1d4affc8be6605
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601773"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662012"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Panoramica della soluzione avanzata di eDiscovery in Microsoft 365
 
@@ -84,8 +84,11 @@ Utilizzare la scheda **ricerche** per creare ricerche per cercare le origini dat
 Utilizzare la scheda **revisione dei set** per esaminare e analizzare il contenuto raccolto dal sistema Live e aggiungerlo a un set di revisione. Un *set di revisione* è una raccolta statica di tali dati (in altre parole, una copia offline di dati) dei dati di custodia (e, se applicabile, i dati non detentivi) raccolti nella fase precedente del flusso di lavoro di eDiscovery. Quando si aggiungono i risultati di ricerca a un set di revisione, viene attivato un processo che estrae i file dai contenitori, estrae i metadati ed estrae il testo. Al termine del processo, il sistema crea un nuovo indice di tutti i dati raccolti dai depositari e lo aggiunge al set di revisione. Dopo aver aggiunto i dati al set di revisione, è possibile eseguire altre query per limitare i dati del caso, visualizzare i dati come testo o nel formato di file nativo e annotare, redigere e contrassegnare i documenti nel set di revisione. È inoltre possibile eseguire analisi avanzate, ad esempio la duplicazione dei documenti, il threading di posta elettronica e i temi. Dopo aver abbattuto i dati solo su ciò che è pertinente per il caso, è possibile scaricare i documenti direttamente o esportarli insieme ai metadati, alle annotazioni e ai tag dei file. Per altre informazioni, vedere:
 
 - [Visualizzare i documenti in un insieme da rivedere](view-documents-in-review-set.md)
+
 - [Eseguire query sui dati in un insieme da rivedere](review-set-search.md)
+
 - [Contrassegnare i documenti in un insieme da rivedere](tagging-documents.md)
+
 - [Analizzare i dati in un set di Revisione](analyzing-data-in-review-set.md)
 
 ## <a name="exporting-data-for-review-and-presentation"></a>Esportazione di dati per la revisione e la presentazione
@@ -99,3 +102,7 @@ Utilizzare la scheda **processi** per monitorare i processi a esecuzione prolung
 ## <a name="configuring-case-settings"></a>Configurazione delle impostazioni del caso
 
 Utilizzare la scheda **Impostazioni** per configurare le impostazioni a livello di maiuscole e minuscole. Questo include l'aggiunta di membri a un caso, la chiusura o l'eliminazione di un caso e la configurazione delle impostazioni di ricerca e analisi.
+
+## <a name="advanced-ediscovery-reports"></a>Report avanzati di eDiscovery
+
+È possibile utilizzare i report avanzati di eDiscovery nella Home page per aiutare l'organizzazione a monitorare l'attività e lo stato in tutti i casi di eDiscovery avanzato. La funzionalità Advanced eDiscovery Reports aggrega le informazioni sui casi, i depositari, le origini dati e le comunicazioni. È possibile filtrare i dati del report in base a vari criteri ed esportare le informazioni aggregate in un file CSV per un'ulteriore analisi.  Per ulteriori informazioni, vedere [Advanced eDiscovery Reports](advanced-ediscovery-reports.md).
