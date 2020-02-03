@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora contenuto consente di visualizzare in modo nativo gli elementi con etichetta.
-ms.openlocfilehash: 71ec7b4e27a6f125754e693ecb5239c66404a9ad
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: c2bf73a5e6b9076d9c5f42c40f0d1f2f33cd1ee8
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628081"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661906"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Utilizzo di Esplora contenuto di classificazione dei dati (anteprima)
 
@@ -51,11 +51,13 @@ Un'[etichetta di conservazione](labels.md) consente di definire per quanto tempo
 
 Sono due i ruoli che consentono di accedere a Esplora contenuto:
 
-- **Visualizzatore elenco di Esplora contenuto**: l'appartenenza a questo gruppo di ruoli consente di visualizzare ogni elemento e la relativa posizione.
+- **Visualizzatore elenco di Esplora contenuto**: l'appartenenza a questo gruppo di ruoli consente di visualizzare ogni elemento e la relativa posizione. Il ruolo `data classification list viewer` è stato preassegnato a questo gruppo di ruoli.
 
-- **Visualizzatore contenuto di Esplora contenuto**: l'appartenenza a questo gruppo di ruolo consente di visualizzare il contenuto di ogni elemento dell'elenco.
+- **Visualizzatore contenuto di Esplora contenuto**: l'appartenenza a questo gruppo di ruolo consente di visualizzare il contenuto di ogni elemento dell'elenco. Il ruolo `data classification content viewer` è stato preassegnato a questo gruppo di ruoli.
 
 L'account usato per accedere a Esplora contenuto deve essere presente in uno o entrambi i gruppi di ruoli. Si tratta di gruppi di ruoli indipendenti e non cumulativi. Ad esempio, se si vuole concedere a un account la possibilità di visualizzare solo gli elementi e le relative posizioni, concedere i diritti di Visualizzatore elenco di Esplora contenuto. Se si vuole che lo stesso account sia in grado di visualizzare anche il contenuto degli elementi dell'elenco, concedere anche i diritti di Visualizzatore contenuto di Esplora contenuto.
+
+È anche possibile assegnare uno o entrambi i ruoli a un gruppo di ruoli personalizzato per personalizzare l'accesso a Esplora contenuto.
 
 ### <a name="how-to-use-content-explorer"></a>Come usare Esplora contenuto
 

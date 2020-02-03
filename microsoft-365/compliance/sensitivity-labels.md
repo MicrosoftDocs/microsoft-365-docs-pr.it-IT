@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, tra cui crittografia o filigrane.
-ms.openlocfilehash: 1cf7b47fbb9161b8000f5cfcce0bb36b86d0aa50
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 723bedfc5208da140140ab475be69400d5308061
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597523"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661992"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
 
@@ -88,13 +88,13 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     
     Per altre informazioni sulle impostazioni di **Crittografia** quando si crea o si modifica un'etichetta di riservatezza, vedere [Limitare l'accesso al contenuto usando la crittografia nelle etichette di riservatezza](encryption-sensitivity-labels.md).
 
-- **Contrassegnare il contenuto** quando si usano app di Office con l'aggiunta di filigrane personalizzate, intestazioni o piè di pagina a messaggi di posta elettronica o documenti cui è stata applicata l'etichetta. Ad esempio:
+- **Contrassegnare il contenuto** quando si usano app di Office con l'aggiunta di filigrane personalizzate, intestazioni o piè di pagina a messaggi di posta elettronica o documenti cui è stata applicata l'etichetta. Le filigrane possono essere applicate solo ai documenti, non ai messaggi di posta elettronica. Intestazione e filigrana di esempio:
     
     ![Filigrana e intestazione applicate a un documento](media/Sensitivity-label-watermark-header.png)
     
-    Per informazioni sull'applicazione dei contrassegni al contenuto, vedere [Quando Office 365 applica il contrassegno e la crittografia al contenuto](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content).
+    Se è necessario verificare se sono stati applicati contrassegni al contenuto, vedere [Quando Office 365 applica il contrassegno e la crittografia al contenuto](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content).
     
-    Altre informazioni sulle impostazioni di **contrassegno del contenuto** quando si crea o si modifica un'etichetta di riservatezza: le filigrane possono essere applicate solo ai documenti, non ai messaggi di posta elettronica, e hanno un limite di 255 caratteri. Le intestazioni e i piè di pagina hanno un limite di 1024 caratteri, tranne che in Excel. Excel ha un limite totale di 255 caratteri per le intestazioni e i piè di pagina, ma questo limite include i caratteri non visibili, come i codici di formattazione. Se viene raggiunto questo limite, la stringa immessa non viene visualizzata in Excel.
+    Lunghezza stringa: le filigrane sono limitate a 255 caratteri. Le intestazioni e i piè di pagina hanno un limite di 1024 caratteri, tranne che in Excel. Excel ha un limite totale di 255 caratteri per le intestazioni e i piè di pagina, ma questo limite include i caratteri non visibili, come i codici di formattazione. Se viene raggiunto questo limite, la stringa immessa non viene visualizzata in Excel.
 
 - **Evitare la perdita di dati** attivando la protezione endpoint in Intune. Se i contenuti riservati vengono scaricati, è possibile impedire la perdita dei dati dai dispositivi Windows. Ad esempio, non è possibile copiare contenuti etichettati in Dropbox, Gmail o in un'unità USB. Per consentire l'uso di Windows Information Protection (WIP) nelle le etichette di riservatezza, è necessario creare prima un criterio di protezione delle app nel portale di Azure. 
     

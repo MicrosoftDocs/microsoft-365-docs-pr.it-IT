@@ -1,5 +1,7 @@
 ---
 title: Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 6b73e6bbcd9dfee6e3c04ee5c44283633ffdbac4
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265894"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662002"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -122,6 +124,7 @@ Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del regis
   |Microsoft Project|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Power BI|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Centro sicurezza e conformità|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint Online e OneDrive for Business|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -335,7 +338,7 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |(nessuno)|FileModifiedExtended|Elemento correlato all'attività "File modificato" (FileModified). Un evento FileModifiedExtended viene registrato quando la stessa persona modifica in modo continuativo un file per un periodo prolungato (fino a 3 ore). <br/><br/> Lo scopo della registrazione di eventi FileModifiedExtended è di ridurre il numero di eventi FileModified registrati quando si modifica un file in modo continuativo. Ciò consente di ridurre il numero di record FileModified per un'attività utente sostanzialmente identica e consente di concentrarsi sull'evento FileModified iniziale (e più importante).|
 |File spostato|FileMoved|Un utente sposta un documento dalla posizione corrente in un sito a una nuova posizione.|
 |(nessuno)|FilePreviewed|L'utente visualizza in anteprima i file in un sito di SharePoint Online o di OneDrive for Business. Questi eventi si verificano in genere in volumi elevati in base a una singola attività, ad esempio la visualizzazione di una raccolta immagini.|
-|Query di ricerca eseguita|SearchQueryPerformed|Un account utente o di sistema esegue una ricerca in SharePoint o in OneDrive for Business. Alcuni scenari comuni in cui un account del servizio esegue una query di ricerca includono l'applicazione di criteri di conservazione o di blocco di eDiscovery a siti e account di OneDrive e i casi in cui le etichette di conservazione o riservatezza vengono applicate automaticamente al contenuto del sito. In molti di questi casi, il nome dell'account di servizio registrato nel campo relativo all'utente del record di controllo è **app@sharepoint**. </br></br> **Suggerimento:** i campi ApplicationDisplayName e EventData nel record di controllo per l'attività Query di ricerca eseguita possono essere utili per identificare lo scenario o il servizio che ha generato questo evento.|
+|Query di ricerca eseguita|SearchQueryPerformed|Un account utente o di sistema esegue una ricerca in SharePoint o in OneDrive for Business. Alcuni scenari comuni in cui un account del servizio esegue una query di ricerca includono l'applicazione di criteri di conservazione o di blocco di eDiscovery a siti e account di OneDrive e i casi in cui le etichette di conservazione o riservatezza vengono applicate automaticamente al contenuto del sito. In molti di questi casi, il nome dell'account di servizio registrato nel campo relativo all'utente del record di controllo è **app\@sharepoint**. </br></br> **Suggerimento:** i campi ApplicationDisplayName e EventData nel record di controllo per l'attività Query di ricerca eseguita possono essere utili per identificare lo scenario o il servizio che ha generato questo evento.|
 |Tutte le versioni secondarie di un file vengono spostate nel Cestino|FileVersionsAllMinorsRecycled|L'utente elimina tutte le versioni secondarie dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel Cestino del sito.|
 |Tutte le versioni di un file vengono spostate nel Cestino|FileVersionsAllRecycled|L'utente elimina tutte le versioni dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel Cestino del sito.|
 |La versione di un file viene spostata nel Cestino|FileVersionRecycled|L'utente una versione dalla cronologia delle versioni di un file. La versione eliminata viene spostata nel Cestino del sito.|

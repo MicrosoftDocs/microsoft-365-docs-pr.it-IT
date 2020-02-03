@@ -5,6 +5,8 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a5f68e235252208de664cc6dfdd62b6019d9abe6
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 57d4093712efbee7bcb4f27280b0ba64a50dbe41
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259984"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41662022"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -47,15 +49,14 @@ Per informazioni sui vantaggi dei report SOC 1, 2 e 3 in Microsoft Cloud: [Scari
 
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>Servizi coperti da SOC 1 e SOC 2
 
-- Azure, Azure per enti pubblici e Azure Germania [Elenco dettagliato](https://aka.ms/AzureCompliance)
+- [Azure, Azure per enti pubblici e Azure Germania](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Dynamics 365 e Dynamics 365 U.S. Government [Elenco dettagliato](https://aka.ms/d365-compliance-list)
+- [Dynamics 365 e Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Graph
 - Intune
 - Microsoft Managed Desktop
-- Servizio cloud Microsoft Flow, indipendente o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
-- Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense [Elenco dettagliato](https://go.microsoft.com/fwlink/p/?LinkID=2077751); Yammer ha superato il controllo SOC 1 Tipo 1
-- Office 365 Germania
+- Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
+- [Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
 - Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
 - Stream
@@ -63,13 +64,14 @@ Per informazioni sui vantaggi dei report SOC 1, 2 e 3 in Microsoft Cloud: [Scari
 
 ### <a name="covered-services-for-soc-3"></a>Servizi coperti da SOC 3
 
-- Azure, Azure per enti pubblici e Azure Germania [Elenco dettagliato](https://aka.ms/AzureCompliance)
+- [Azure, Azure per enti pubblici e Azure Germania](https://aka.ms/AzureCompliance)
 - Cloud App Security
 - Graph
 - Intune
 - Microsoft Managed Desktop
 - Servizio cloud Microsoft Flow, autonomo o incluso in un piano o in una famiglia di prodotti Office 365 o Dynamics 365
 - Servizio cloud PowerApps, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365 o Dynamics 365
+- [Office 365, Office 365 U.S. Government e Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
 - Stream
 
@@ -93,11 +95,13 @@ I servizi cloud Microsoft vengono controllati almeno una volta l'anno rispetto a
 
 #### <a name="office-365"></a>Office 365
 
-- [Report di controllo Office 365 SOC 1 SSAE 16 Tipo II](https://aka.ms/office365soc1auditreport)
-- [Report di controllo Office 365 SOC 2 AT 101 Tipo II](https://aka.ms/Office365SOC2AuditReport)
+- [Report Office 365 Core - SSAE 18 SOC 1](https://aka.ms/o365SOC-1)
+- [Report Office 365 Core - SSAE 18 SOC 2](https://aka.ms/o365SOC-2)
+- [Report Office 365 Core - SSAE 18 SOC 3](https://aka.ms/o365SOC-3)
+- [Report Office 365 Microservices T1 - SSAE 18 SOC 2 Tipo I](https://aka.ms/o365-MS-SOC-2-type1)
 - [Report di controllo Office 365 Customer Lockbox SOC 1 SSAE 16](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
-- [Report di controllo Yammer SOC 2 AT 101 Tipo II](https://aka.ms/YammerSOC2AuditReport).
 - [Report di controllo Yammer SOC 2 AT 101 Tipo I](https://aka.ms/YammerSOC2Type1AuditReport).
+- [Report di Yammer SOC 2 Tipo II](https://aka.ms/yammerSOC-2)
 - [Visualizzare le lettere ponte e altri report di controllo](https://aka.ms/auditreports)
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
@@ -127,15 +131,10 @@ Il [SOC Toolkit for Service Organizations ](https://aka.ms/soc-toolkit) è una r
 
 ## <a name="resources"></a>Risorse
 
- - [Proteggere meglio i dati con i servizi cloud Microsoft](https://www.microsoft.com/trustcenter/guidance/protect-data)
- - [Report Service Organization Control (SOC)](https://aka.ms/mssocreports)
- - [Standard di controllo SSAE 16](https://www.ssae-16.com/)
- - [Standard ISAE 3402](https://isae3402.com/)
- - [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
- - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
- - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
- - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
-
-Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/F/E/1/FE10DD69-B5A9-4DA7-A86A-1F565D2B6472/SOC_backgrounder-2018.pdf).
+- [Proteggere meglio i dati con i servizi cloud Microsoft](https://www.microsoft.com/trustcenter/guidance/protect-data)
+- [Report Service Organization Control (SOC)](https://aka.ms/mssocreports)
+- [Panoramica SSAE 16](http://ssae16.com/SSAE16_overview.html)
+- [Panoramica ISAE 3402](http://isae3402.com/ISAE3402_overview.html)
+- [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
+- [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

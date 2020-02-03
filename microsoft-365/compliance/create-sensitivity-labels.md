@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Istruzioni per creare, configurare e pubblicare etichette di riservatezza per classificare e proteggere i documenti e i messaggi di posta elettronica dell'organizzazione.
-ms.openlocfilehash: 3ce1f729853d514a85852221eb997c456a379dcd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 73df1928a89218a419a9d774a7830ecad4aceb6d
+ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595533"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41661862"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Creare e configurare etichette di riservatezza e i relativi criteri
 
@@ -45,7 +45,7 @@ Queste autorizzazioni sono necessarie solo per creare e configurare le etichette
 1. Nell'interfaccia di amministrazione per l’applicazione di etichette passare alle etichette di riservatezza:
     
     - Centro conformità Microsoft 365: 
-        - **Soluzioni** > **Information Protection (anteprima)**
+        - **Soluzioni** > **Information Protection)**
         
         Se questa opzione non è immediatamente visibile, selezionare prima **Mostra tutto**. 
     
@@ -118,7 +118,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 1. Nell'interfaccia di amministrazione per l’applicazione di etichette passare alle etichette di riservatezza:
     
     - Centro conformità Microsoft 365: 
-        - **Soluzioni** > **Information Protection (anteprima)**
+        - **Soluzioni** > **Information Protection)**
         
         Se questa opzione non è immediatamente visibile, selezionare prima **Mostra tutto**. 
     
