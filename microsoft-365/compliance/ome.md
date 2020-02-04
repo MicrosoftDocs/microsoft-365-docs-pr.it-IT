@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 02/03/2020
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Con la crittografia dei messaggi di Office 365, l'organizzazione può inviare e ricevere messaggi di posta elettronica crittografati tra utenti all'interno e all'esterno dell'organizzazione. La crittografia dei messaggi di posta elettronica consente di verificare che solo i destinatari previsti possano visualizzare il contenuto del messaggio.
-ms.openlocfilehash: 9da6084348a4bdc89f620eb894c9ffa113d64292
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76d3688fbc30923e204b9cba338b61bc955b8f95
+ms.sourcegitcommit: d9ceaa6ec54c3760747f31accdb02f729450f324
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601783"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41680095"
 ---
 # <a name="office-365-message-encryption"></a>Crittografia dei messaggi di Office 365
 
@@ -30,12 +30,38 @@ Spesso si utilizza la posta elettronica per scambiare informazioni riservate, co
 
 Con la crittografia dei messaggi di Office 365, l'organizzazione può inviare e ricevere messaggi di posta elettronica crittografati tra utenti all'interno e all'esterno dell'organizzazione. La crittografia dei messaggi di Office 365 è compatibile con Outlook.com, Yahoo!, Gmail e altri servizi di posta elettronica. La crittografia dei messaggi di posta elettronica consente di verificare che solo i destinatari previsti possano visualizzare il contenuto del messaggio.
 
+## <a name="important-updates-to-ome-to-enhance-email-authenticity---action-required"></a>Aggiornamenti importanti di OME per migliorare l'autenticità del messaggio di posta elettronica-azione necessaria
+
+A partire da febbraio 2020, vengono implementati i miglioramenti apportati a OME che migliorano l'autenticità della posta elettronica dei messaggi OME modificando gli indirizzi del mittente utilizzati da OME. Senza questi miglioramenti, alcune organizzazioni rifiutano la posta generata dal sistema da OME, ad esempio la posta elettronica e le risposte del portale di tipo One-Time, perché l'indirizzo del mittente era del dominio messaging.onmicrosoft.com. Con questa modifica, i messaggi di posta elettronica generati dal sistema verranno inviati dai domini personalizzati dell'organizzazione anziché da onmicrosoft.com. Per implementare questo miglioramento, è necessario aggiornare le regole del flusso di posta.
+
+Per Exchange Online, è necessario aggiornare ogni regola del flusso di posta che cerca i vecchi indirizzi di posta elettronica, o qualsiasi indirizzo esterno all'organizzazione, per cercare i nuovi indirizzi OME. Dal momento che i nuovi messaggi di posta elettronica (One-Time pass code and Portal Reply) provengono dal dominio personalizzato, non si qualificano più come provenienti dall'esterno dell'organizzazione.
+
+Se si utilizzano soluzioni di terze parti che interagiscono con Exchange locale o Exchange Online, è necessario aggiornare tutte le vecchie regole OME per riflettere i nuovi indirizzi di posta elettronica di OME. Ad esempio, se i precedenti indirizzi di posta elettronica sono stati aggiunti in whitelist, sarà necessario aggiungere i nuovi messaggi di posta elettronica all'elenco dei messaggi di posta elettronica con whitelist.
+
+### <a name="changes-to-ome-email-addresses"></a>Modifiche agli indirizzi di posta elettronica OME
+
+Indirizzo del mittente di un solo passaggio del codice:
+
+- Indirizzo precedente:``onetimepasscode@messaging.onmicrosoft.com``
+
+- Nuovo indirizzo:``onetimepasscode@<yourdomain.com>``
+
+Le risposte di OME dal portale OME:
+
+- Indirizzo precedente:``omeportal@messaging.onmicrosoft.com``
+
+- Nuovo indirizzo:``omeportal@<yourdomain.com>``
+
+### <a name="errors-routing-mail-from-exchange-online-through-exchange-on-premises-to-external-recipients"></a>Errori di routing della posta da Exchange Online tramite Exchange locale a destinatari esterni
+
+Se la posta viene instradata da Exchange Online tramite Exchange locale ai destinatari esterni all'organizzazione, alcuni sistemi di terze parti stanno restituendo errori di DMARC e non accettano il messaggio di posta elettronica. Ad esempio, Gmail restituirà un errore DMARC se il messaggio viene instradato in questo modo. Per ovviare a questo problema, instradare la posta elettronica direttamente da Exchange Online a destinatari esterni, ignorando Exchange locale.
+
+## <a name="how-office-365-message-encryption-works"></a>Funzionamento della crittografia dei messaggi di Office 365
+
 Il resto di questo articolo si applica alle nuove funzionalità OME.
 
 > [!NOTE]
 > I delegati che dispongono di autorizzazioni di accesso completo per una cassetta postale possono leggere i messaggi crittografati inviati alla cassetta postale.
-
-## <a name="how-office-365-message-encryption-works"></a>Funzionamento della crittografia dei messaggi di Office 365
 
 La crittografia dei messaggi di Office 365 è un servizio online basato su Microsoft Azure Rights Management (Azure RMS) che fa parte di Azure Information Protection. Sono inclusi i criteri di crittografia, identità e autorizzazione che consentono di proteggere il messaggio di posta elettronica. È possibile crittografare i messaggi utilizzando i modelli Rights Management, l' [opzione non inoltrare](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)e l' [opzione solo crittografia](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
