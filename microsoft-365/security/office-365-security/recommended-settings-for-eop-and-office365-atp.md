@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: fd2b1fdbb0356cfc2cea080f15bf696d8073fc10
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8a64b92e8191000be2767f498fbaee179c3b9e69
+ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598643"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678924"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
@@ -97,7 +97,7 @@ Nei criteri di protezione da posta indesiderata sono presenti diversi altri para
 |Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Risposta di rilevamento malware|No|No|Se il malware viene rilevato in un allegato di posta elettronica, il messaggio verrà messo in quarantena e può essere rilasciato solo da un amministratore.|
-|"Filtro tipo di allegato comune" per il blocco dei tipi di file sospetti|Attivato|Attivato||
+|"Filtro tipi di allegati comuni" per il blocco dei tipi di file sospetti|Attivato|Attivato||
 |Malware zero-hour auto Purge|Attivato|Attivato||
 |Notifica ai mittenti interni del messaggio non recapitato|Disattivato|Disattivato||
 |Notifica ai mittenti esterni del messaggio non recapitato|Disattivato|Disattivato||

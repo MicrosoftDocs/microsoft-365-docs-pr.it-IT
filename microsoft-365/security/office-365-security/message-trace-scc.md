@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: 461193bf7278a07de9bec1e3879fecc8fb6d91ea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c9b22ef66fb1db762168812385420823788b4bfc
+ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598923"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678929"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -31,13 +31,9 @@ La traccia dei messaggi nel centro sicurezza & conformità migliora la traccia d
 
 ## <a name="open-message-trace"></a>Aprire la traccia dei messaggi
 
-1. [Accedere a Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con l'account aziendale o dell'istituto di istruzione.
+1. Aprire il Centro sicurezza & conformità di Office 365 <https://protection.office.com>all'indirizzo.
 
-2. Selezionare l'icona di avvio delle app ![Icona di avvio delle app di Office 365](../media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) nell'angolo in alto a sinistra e scegliere **Amministratore**.
-
-3. Nella barra di spostamento in basso a sinistra, espandere interfaccia di **Amministrazione** e selezionare **sicurezza & conformità**.
-
-4. Nella pagina **sicurezza & conformità** che viene visualizzata, espandere **flusso di posta**e selezionare **traccia messaggi**.
+2. Espande il **flusso di posta**e quindi seleziona **traccia messaggi**.
 
 ## <a name="message-trace-page"></a>Pagina di traccia dei messaggi
 
