@@ -18,16 +18,16 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: Se l'amministratore abilita le notifiche per gli utenti, riceverà un messaggio di notifica che elenca i messaggi inviati alla cassetta postale che sono stati identificati come posta indesiderata, in blocco o in messaggi di phishing. È possibile rilasciare o segnalare i messaggi dopo la notifica.
-ms.openlocfilehash: c9cd0849f826e66411695a3758f271ec70d24c9b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598023"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722037"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Usare le notifiche di posta indesiderata dell'utente per rilasciare e segnalare i messaggi in quarantena in Office 365
 
-Se l'amministratore abilita le notifiche di posta indesiderata per gli utenti, riceverà un messaggio di notifica che elenca i messaggi indirizzati alla cassetta postale che sono stati identificati come posta indesiderata e in quarantena
+Se l'amministratore abilita le notifiche di posta indesiderata per gli utenti, riceverà un messaggio di notifica che elenca i messaggi indirizzati alla cassetta postale che sono stati identificati come posta indesiderata, bulk o phishing e in quarantena.
 
 > [!TIP]
 > Se si è un amministratore e si desidera abilitare questa funzionalità, è possibile scegliere l'opzione quando si [modifica un criterio di protezione da posta indesiderata predefinito](configure-your-spam-filter-policies.md).
@@ -50,6 +50,6 @@ Di seguito sono riportate le azioni che è possibile eseguire con un messaggio i
 
 Tenere presente quanto segue:
 
-- I messaggi in quarantena perché hanno trovato una regola del flusso di posta non sono inclusi nei messaggi in quarantena dell'utente. Nell'elenco sono presenti solo i messaggi di posta indesiderata in quarantena.
+- I messaggi di phishing e i messaggi di posta indesiderata che vengono messi in quarantena perché hanno trovato una regola per il flusso del messaggio non sono inclusi nelle notifiche di spam degli utenti. 
 
 - È possibile rilasciare un messaggio e segnalarlo come falso positivo (non indesiderato) solo una volta.
