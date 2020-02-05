@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 6d3be89b52d71543687a02a1fd3fbae8bc1543f8
-ms.sourcegitcommit: 4460975970ae13e917d4d336e92dbd76ae26493b
+ms.openlocfilehash: 3d5765de70b21036800d87cedd175ea4fd53b7ba
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243937"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774232"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sicurezza in Microsoft Managed Desktop
 
@@ -19,25 +19,12 @@ ms.locfileid: "36243937"
 
 Microsoft Managed Desktop utilizza diverse tecnologie Microsoft per proteggere i dati e i dispositivi gestiti. In particolare: 
 
-- [Sicurezza dei dati](#data-security) : tipi di dati raccolti da Microsoft Managed Desktop e dove sono archiviati in modo sicuro
+
 - [Sicurezza](#device-security) dei dispositivi – sicurezza e protezione sui dispositivi Microsoft Managed Desktop
-- [Gestione delle identità e](#identity-and-access-management) degli accessi: gestione di un utilizzo sicuro dei dispositivi tramite Azure Active Directory Identity Services
+- [Gestione delle identità e degli accessi](#identity-and-access-management) : gestione di un utilizzo sicuro dei dispositivi tramite Azure Active Directory Identity Services
 - [Sicurezza di rete](#network-security) – informazioni VPN e soluzioni e impostazioni consigliate per Microsoft Managed Desktop
 - [Sicurezza delle informazioni](#information-security) : Servizi facoltativi disponibili per proteggere ulteriormente le informazioni riservate 
 
-## <a name="data-security"></a>Sicurezza dei dati
-
-I dati raccolti dai tenant dei clienti (che abilitano i servizi IT e le operazioni IT di Microsoft Managed Desktop) vengono archiviati nei database SQL di Azure nel tenant Microsoft ospitato negli Stati Uniti d'America.
-
-Per ulteriori informazioni, vedere [sicurezza di Microsoft Azure](https://docs.microsoft.com/azure/security/azure-database-security-overview).
-
-Di seguito sono elencati i tipi di dati trasmessi dal tenant:
-
-- Aggiornamento dei dispositivi, dati di utilizzo e affidabilità
-- Dati di distribuzione e affidabilità delle app
-- Dati sulla distribuzione dei criteri di aggiornamento e di sicurezza
-- Utenti assegnati ai dispositivi
-- Registri di sicurezza del tenant relativi agli account utilizzati da Microsoft Managed Desktop per gestire il servizio
 
 
 

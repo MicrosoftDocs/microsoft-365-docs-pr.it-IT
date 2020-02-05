@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: 4b4bfa996b1f68f9db8c206aaaec43878abf3f42
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
+ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595903"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722027"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
 
@@ -49,6 +49,10 @@ Questo metodo di classificazione è particolarmente adatto ai contenuti che non 
 
 > [!IMPORTANT]
 > I classificatori addestrabili funzionano solo con elementi che non sono crittografati e sono in lingua inglese.
+
+### <a name="licensing-requirements"></a>Requisiti per la licenza
+
+I classificatori addestrabili sono una funzionalità di conformità di Microsoft 365 E5 o E5. È necessario disporre di uno di questi abbonamenti per utilizzarli.
 
 ## <a name="types-of-classifiers"></a>Tipi di classificatori
 
