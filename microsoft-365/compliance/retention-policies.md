@@ -1,5 +1,7 @@
 ---
 title: Panoramica dei criteri di conservazione
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: de5fda485c1fbb1f41fd32ff0da40014d30a6a89
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558593"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774222"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -54,7 +56,9 @@ Creare e gestire i criteri di conservazione sulla:
 
 - Pagina **Criteri** pagina nel [Centro conformità Microsoft 365](https://compliance.microsoft.com/).
 - Pagina **Conservazione** in **Governance delle informazioni** nel [Centro sicurezza&amp; e conformità di Office 365](https://protection.office.com/).
-  
+
+**Se si vuole avere la possibilità di esaminare il contenuto prima che venga eliminato definitivamente,** provare a usare [etichette di conservazione](labels.md) anziché i criteri di conservazione. Quando si crea un'etichetta di conservazione, è possibile configurare una [revisione per l'eliminazione](disposition-reviews.md) per rivedere il contenuto al termine del periodo di conservazione.
+
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funzionamento dei criteri di conservazione con il contenuto presente
 
 Quando si include una posizione, ad esempio un sito o una cassetta postale, nei criteri di conservazione, il contenuto rimane nella posizione originale. Gli utenti possono continuare a lavorare normalmente con i propri documenti o messaggi di posta elettronica. Tuttavia, se modificano o eliminano il contenuto incluso nei criteri, viene conservata una copia del contenuto al momento dell'applicazione dei criteri.

@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 1: preparazione di dispositivi e app'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di dispositivi e app nell'ambiente.
-ms.openlocfilehash: dad6b4092cbcedbc4674733af1459d28f9b1d50e
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 6bf41d0930a3c957bb856d35815bf05087997208
+ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112720"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774212"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Passaggio 1: preparazione di dispositivi e app
 
@@ -106,9 +108,9 @@ L'inventario software di Configuration Manager è un'alternativa all'uso di solu
 Per altre informazioni, vedere [Introduzione all'inventario software in Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) e come configurare i requisiti della piattaforma nei pacchetti applicazioni in [Pacchetti e programmi di Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 
 
-## <a name="desktop-app-assure"></a>Desktop App Assure
+## <a name="app-assure"></a>App Assure
 
-Un altro strumento utile per valutare la compatibilità delle app di Windows 10 e Office 365 ProPlus è il programma [Desktop App Assure](https://aka.ms/desktopappassure), disponibile in FastTrack Center. Tramite Desktop App Assure, in caso di problemi validi di compatibilità delle applicazioni sarà possibile collaborare gratuitamente con un tecnico Microsoft per risolvere l'incompatibilità.
+Un altro strumento utile per valutare la compatibilità delle app di Windows 10 e Office 365 ProPlus è il programma [App Assure](https://aka.ms/appassure), disponibile in FastTrack Center. In caso di problemi validi di compatibilità delle applicazioni sarà possibile collaborare gratuitamente con un tecnico Microsoft tramite App Assure per risolvere l'incompatibilità.
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>Uso continuativo di strumenti per i dati di diagnostica
 
