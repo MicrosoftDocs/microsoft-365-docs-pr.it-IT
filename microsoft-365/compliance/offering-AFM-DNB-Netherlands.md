@@ -5,18 +5,21 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6957036ab341c5e3ec38707e079b9ded2fdd99c2
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: d4efa625c4026ce87d0895d03b4a9993bb4bca40
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859256"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602703"
 ---
 # <a name="dutch-authority-for-the-financial-markets-and-the-central-bank-of-the-netherlands"></a>Autorità Olandese per i Mercati Finanziari e la Banca centrale dei Paesi Bassi
 
@@ -47,7 +50,7 @@ Quando gli istituti finanziari nei Paesi Bassi esternalizzano le funzioni aziend
 La checklist di Microsoft consente agli istituti finanziari nei Paesi Bassi di eseguire valutazioni di due diligence dei servizi cloud Microsoft per le aziende e include:
 
 - Informazioni generali sul panorama normativo a scopo di contestualizzazione.
-- Un elenco di controllo che definisce i problemi da affrontare e associa i servizi Microsoft Azure, Microsoft Dynamics 365 e Microsoft 365 agli obblighi normativi. L'elenco di controllo può essere usato come strumento per misurare la conformità a un certo quadro normativo e fornire una struttura interna per documentare la conformità e aiutare i clienti a svolgere le proprie valutazioni dei rischi rispetto ai servizi cloud di Microsoft per le aziende.
+- Un elenco di controllo che definisce le problematiche da affrontare e associa i servizi Microsoft Azure, Microsoft Dynamics 365 e Microsoft 365 agli obblighi normativi. L'elenco di controllo può essere usato come strumento per misurare la conformità ad alcune normative e definire uno schema interno per documentare la conformità e aiutare i clienti a svolgere le loro valutazioni dei rischi rispetto ai servizi cloud Microsoft per le aziende.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
@@ -63,7 +66,7 @@ La checklist di Microsoft consente agli istituti finanziari nei Paesi Bassi di e
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**È richiesta l'approvazione da parte delle autorità competenti?**
+**È richiesta l'approvazione dell’autorità competente?**
 
 No. Tuttavia, la Circolare sul cloud computing afferma che il DNB prevede che gli istituti olandesi supervisionati inviino un'analisi dei rischi riguardanti i futuri accordi di esternalizzazione, prima di adottare soluzioni di cloud computing.
 
@@ -73,12 +76,12 @@ Sì. Le disposizioni e gli accordi da includere nei contratti cloud dipendono da
 
 ## <a name="resources"></a>Risorse
 
-- [Financial Services Compliance Program di Microsoft](https://aka.ms/FSCP-Print)
+- [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Servizi cloud e servizi finanziari di Microsoft per le aziende](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
-- [Financial Services Compliance Program di Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Azure Financial Services Compliance Program](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Strumento di valutazione del rischio cloud di Azure per i servizi finanziari](https://aka.ms/FFIEC-CSDT)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/A/E/5/AE505D51-DA54-4B2D-B1BD-C76D9102F36A/AFM-DNB-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/A/E/5/AE505D51-DA54-4B2D-B1BD-C76D9102F36A/AFM-DNB-Compliance.pdf).

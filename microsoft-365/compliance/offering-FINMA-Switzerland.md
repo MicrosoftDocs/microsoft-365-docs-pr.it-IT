@@ -5,18 +5,21 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: a2c2fa9fbd27e3519bc993c8e94be6d802cb91dc
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 99d4b1b07c86989bce0da08324014bda7a8a7d5d
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859846"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602413"
 ---
 # <a name="financial-market-supervisory-authority-finma-switzerland"></a>Autorità federale di vigilanza sui mercati finanziari (FINMA) - Svizzera
 
@@ -35,7 +38,7 @@ Quando gli istituti finanziari svizzeri esternalizzano le attività devono rispe
 L'elenco di controllo di Microsoft consente agli istituti finanziari in Svizzera di eseguire valutazioni di due diligence dei servizi cloud Microsoft per le aziende e include:
 
 - Informazioni generali sul panorama regolatorio del contesto.
-- Un elenco di controllo che definisce i problemi da affrontare e associa i servizi Microsoft Azure, Microsoft Dynamics 365 e Microsoft 365 agli obblighi normativi. L'elenco di controllo può essere usato come strumento per misurare la conformità a un certo quadro normativo e fornire una struttura interna per documentare la conformità e aiutare i clienti a svolgere le proprie valutazioni dei rischi rispetto ai servizi cloud di Microsoft per le aziende.
+- Un elenco di controllo che definisce le problematiche da affrontare e associa i servizi Microsoft Azure, Microsoft Dynamics 365 e Microsoft 365 agli obblighi normativi. L'elenco di controllo può essere usato come strumento per misurare la conformità ad alcune normative e definire uno schema interno per documentare la conformità e aiutare i clienti a svolgere le loro valutazioni dei rischi rispetto ai servizi cloud Microsoft per le aziende.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
@@ -47,11 +50,11 @@ L'elenco di controllo di Microsoft consente agli istituti finanziari in Svizzera
 
 - [Elenco di controllo conformità: Svizzera](https://aka.ms/FinServ-Guide-Switzerland): le società finanziarie possono ottenere assistenza per la valutazione dei rischi dei servizi cloud Microsoft per le aziende.
 - [Guida alla valutazione dei rischi e alla conformità](https://aka.ms/RiskGovernanceGuide): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
-- [Casi di utilizzo nel settore finanziario](https://docs.microsoft.com/azure/industry/financial/): panoramiche di casi, esercitazioni e altre risorse per creare soluzioni con Azure per i servizi finanziari.
+- [Casi di utilizzo del settore finanziario](https://docs.microsoft.com/azure/industry/financial/): i casi di utilizzo, le guide e le altre risorse aiutano a sviluppare le soluzioni Azure per i servizi finanziari.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**È richiesta l'approvazione da parte delle autorità competenti?**
+**È richiesta l'approvazione dell’autorità competente?**
 
 No. L'uso del cloud computing pubblico è consentito senza l'approvazione della FINMA, con l'obbligo di rispettare sempre i requisiti previsti dai regolamenti e dalle linee guida elencate sopra.
 
@@ -61,12 +64,12 @@ Sì. Nella parte 2 dell'elenco di controllo della conformità, vengono illustrat
 
 ## <a name="resources"></a>Risorse
 
-- [Financial Services Compliance Program di Microsoft](https://aka.ms/FSCP-Print)
+- [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Servizi cloud e servizi finanziari di Microsoft per le aziende](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
-- [Financial Services Compliance Program di Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Azure Financial Services Compliance Program](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Strumento di valutazione del rischio cloud di Azure per i servizi finanziari](https://aka.ms/FFIEC-CSDT)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/4/6/A/46AE2B08-49ED-478F-8E64-6BDE9B56C5F4/FINMA-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/4/6/A/46AE2B08-49ED-478F-8E64-6BDE9B56C5F4/FINMA-Compliance.pdf).

@@ -5,18 +5,21 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: e9f43842e50dd61095a99dd2944bd47dfaaab1e0
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 2841e961d919e9c1df98160a09a130d5191f27f3
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859556"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602123"
 ---
 # <a name="national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>Banca nazionale del Belgio e FSMA (Financial Services Markets Authority)
 
@@ -43,7 +46,7 @@ Quando le organizzazioni finanziarie in Belgio esternalizzano le funzioni aziend
 L'elenco di controllo di Microsoft consente alle società finanziarie in Belgio di svolgere valutazioni di due diligence dei servizi cloud di Microsoft per le aziende. Esso include:
 
 - Informazioni generali sul panorama normativo a scopo di contestualizzazione.
-- Un elenco di controllo che definisce i problemi da affrontare e associa i servizi Microsoft Azure, Microsoft Dynamics 365 e Microsoft 365 agli obblighi normativi. L'elenco di controllo può essere usato come strumento per misurare la conformità a un certo quadro normativo e fornire una struttura interna per documentare la conformità e aiutare i clienti a svolgere le proprie valutazioni dei rischi rispetto ai servizi cloud di Microsoft per le aziende.
+- Un elenco di controllo che definisce le problematiche da affrontare e associa i servizi Microsoft Azure, Microsoft Dynamics 365 e Microsoft 365 agli obblighi normativi. L'elenco di controllo può essere usato come strumento per misurare la conformità ad alcune normative e definire uno schema interno per documentare la conformità e aiutare i clienti a svolgere le loro valutazioni dei rischi rispetto ai servizi cloud Microsoft per le aziende.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
@@ -55,11 +58,11 @@ L'elenco di controllo di Microsoft consente alle società finanziarie in Belgio 
 
 - [Elenco di controllo di conformità: Belgio](https://aka.ms/FinServ-Guide-Belgium): gli istituti finanziari possono ottenere assistenza per la valutazione dei rischi dei servizi cloud Microsoft.
 - [Guida alla valutazione dei rischi e alla conformità](https://aka.ms/RiskGovernanceGuide): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
-- [Casi di utilizzo nel settore finanziario](https://docs.microsoft.com/azure/industry/financial/): panoramiche di casi, esercitazioni e altre risorse per creare soluzioni con Azure per i servizi finanziari.
+- [Casi di utilizzo del settore finanziario](https://docs.microsoft.com/azure/industry/financial/): i casi di utilizzo, le guide e le altre risorse aiutano a sviluppare le soluzioni Azure per i servizi finanziari.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**È richiesta l'approvazione da parte delle autorità competenti?**
+**È richiesta l'approvazione dell’autorità competente?**
 
 No. Tuttavia, gli istituti finanziari devono informare la Banca nazionale del Belgio e la FSMA in caso si verifichi un'interruzione del piano di esternalizzazione che potrebbe avere un impatto significativo sulle operazioni, la reputazione, la redditività o la possibilità dell'azienda di gestire i rischi e conformarsi alle leggi e alle normative applicabili.
 
@@ -69,12 +72,12 @@ Sì. Esistono punti specifici che gli istituti finanziari devono inserire nei pr
 
 ## <a name="resources"></a>Risorse
 
-- [Financial Services Compliance Program di Microsoft](https://aka.ms/FSCP-Print)
+- [Microsoft Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Servizi cloud e servizi finanziari di Microsoft per le aziende](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
-- [Financial Services Compliance Program di Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
+- [Azure Financial Services Compliance Program](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Strumento di valutazione del rischio cloud di Azure per i servizi finanziari](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/5/F/3/5F3E78C9-767C-4260-92D9-A244EF3BA607/NBB-FSMA-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/5/F/3/5F3E78C9-767C-4260-92D9-A244EF3BA607/NBB-FSMA-Compliance.pdf).

@@ -5,18 +5,21 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 306ac54b80ff7187b5377ad2b140df7b64028e69
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 63dcc6351b2ba0074bf71583577a34ddcc33ed94
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859666"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602213"
 ---
 # <a name="it-grundschutz-compliance-workbook"></a>Manuale di conformità IT-Grundschutz
 
@@ -67,6 +70,6 @@ Microsoft Cloud per la Germania si trova fisicamente in Germania e rispetta i re
 - [Requisiti dei Sistemi di gestione della sicurezza delle informazioni ISO/IEC 27001:2013](offering-iso-27001.md)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/B/3/5/B35DE78F-C346-4E31-ABC5-FF87BD1FF97F/ITGrundschutz-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/B/3/5/B35DE78F-C346-4E31-ABC5-FF87BD1FF97F/ITGrundschutz-Compliance.pdf).

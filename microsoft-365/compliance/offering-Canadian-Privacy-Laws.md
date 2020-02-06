@@ -5,18 +5,21 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 22703f7c9589a246464b16a3088036a858f59475
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 6a2957ed5782c9449a1715669a7e220940572a66
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859996"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602573"
 ---
 # <a name="canadian-privacy-laws"></a>Normativa sulla privacy in Canada
 
@@ -24,7 +27,7 @@ ms.locfileid: "39859996"
 
 La normativa sulla privacy in Canada è entrata in vigore per proteggere la riservatezza delle persone e offrire loro il diritto di accedere alle informazioni personali raccolte. L'ente [OPCC](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/) (Office of the Privacy Commissioner of Canada) ha il compito di supervisionare la conformità a tale normativa.
 
-La [legge sulla privacy](https://privacy.microsoft.com/it-IT/#heading-0-0-2-1) (Privacy Act) regola in che modo gli enti della pubblica amministrazione raccolgono, usano e divulgano informazioni personali, tra cui quelle dei dipendenti. La legge [PIPEDA ](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (Personal Information Protection and Electronic Documents Act) regola le stesse attività per imprese commerciali nonché per i dipendenti di aziende soggette a regolamentazione federale, come banche, compagnie aeree e di telecomunicazioni.
+La [legge sulla privacy](https://privacy.microsoft.com/en-US/#heading-0-0-2-1) (Privacy Act) regola in che modo gli enti della pubblica amministrazione raccolgono, usano e divulgano informazioni personali, tra cui quelle dei dipendenti. La legge [PIPEDA ](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) (Personal Information Protection and Electronic Documents Act) regola le stesse attività per imprese commerciali nonché per i dipendenti di aziende soggette a regolamentazione federale, come banche, compagnie aeree e di telecomunicazioni.
 
 La legge PIPEDA si basa su 10 [principi per la corretta gestione delle informazioni ](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/) a cui le aziende devono adeguarsi. Ad esempio, il principio di base del consenso, enunciato nella legge PIPEDA, impone alle organizzazioni di ottenere l'autorizzazione da parte della persona alla raccolta o all'utilizzo delle informazioni personali. Le persone hanno il diritto di accedere alle informazioni personali e di segnalare eventuali errori (sulla base del principio di "accesso personale"). Il principio di "identificazione delle finalità" impone che le informazioni personali possono essere usate solo per le finalità concordate.
 
@@ -77,6 +80,6 @@ La legge PIPEDA non richiede alle aziende canadesi di mantenere le informazioni 
 - [Considerazioni sulla privacy nel cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/1/9/3/19390188-F5C7-4819-80BB-30B84304E499/CanadianPrivacyLaws-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/1/9/3/19390188-F5C7-4819-80BB-30B84304E499/CanadianPrivacyLaws-Compliance.pdf).

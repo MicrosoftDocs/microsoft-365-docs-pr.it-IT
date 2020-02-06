@@ -5,18 +5,21 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 6e9aea06e6479a0aa4ec83d35d1fc8c7704e8b0f
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 1ed1703ac30a9c7c8392ad61ec0d126d1e17c17e
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859906"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602473"
 ---
 # <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>Accordo quadro sullo Scudo UE-USA e Svizzera-USA per la privacy (Privacy Shield)
 
@@ -79,7 +82,7 @@ L'accordo sullo Scudo per la privacy (Privacy Shield) non è un meccanismo di co
 
 **Secondo gli accordi sullo Scudo UE-USA e Svizzera-USA per la privacy, in che modo Microsoft gestisce i reclami?**
 
-Se si ha un reclamo relativo all'accordo sullo Scudo per la privacy, contattare Microsoft tramite la sezione [Come contattarci](https://privacy.microsoft.com/privacystatement#mainhowtocontactusmodule) dell'[Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement). Per eventuali reclami che non è possibile risolvere direttamente con Microsoft, l'azienda collabora con le autorità garanti dell'UE e si conformerà alle indicazioni fornite da tali autorità. Contattare Microsoft per essere reindirizzati ai contatti delle autorità garanti pertinenti. Come illustrato nei [principi dell'accordo sullo Scudo per la privacy](https://www.privacyshield.gov/article?id=Requirements-of-Participation), è possibile avvalersi di un'opzione di arbitrato vincolante per risolvere i reclami non risolti in altro modo.
+Se si ha un reclamo relativo all'accordo sullo Scudo per la privacy, contattare Microsoft tramite la sezione [Come contattarci](https://privacy.microsoft.com/PrivacyStatement#mainhowtocontactusmodule) dell'[Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement). Per eventuali reclami che non è possibile risolvere direttamente con Microsoft, l'azienda collabora con le autorità garanti dell'UE e si conformerà alle indicazioni fornite da tali autorità. Contattare Microsoft per essere reindirizzati ai contatti delle autorità garanti pertinenti. Come illustrato nei [principi dell'accordo sullo Scudo per la privacy](https://www.privacyshield.gov/article?id=Requirements-of-Participation), è possibile avvalersi di un'opzione di arbitrato vincolante per risolvere i reclami non risolti in altro modo.
 
 ## <a name="resources"></a>Risorse
 
@@ -90,6 +93,6 @@ Se si ha un reclamo relativo all'accordo sullo Scudo per la privacy, contattare 
 - [Considerazioni sulla privacy nel cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/3/F/4/3F4C5C35-6653-4E9B-8C4F-917B1064F537/PrivacyShield-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/3/F/4/3F4C5C35-6653-4E9B-8C4F-917B1064F537/PrivacyShield-Compliance.pdf).

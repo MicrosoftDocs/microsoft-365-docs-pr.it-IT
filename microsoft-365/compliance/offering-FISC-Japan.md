@@ -5,18 +5,21 @@ keywords: Microsoft 365, conformità, offerte
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
-ms.openlocfilehash: 206dbd57f5fc5c41c4238e13d9dca3072ef7d121
-ms.sourcegitcommit: eb0f255baff1f2856621cbc64a3f34a04be37be3
+titleSuffix: Microsoft Compliance
+ms.openlocfilehash: 546e4b29f26ffdee8c876032fe83254fb5643fff
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39859816"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41602383"
 ---
 # <a name="center-for-financial-industry-information-systems-fisc"></a>Center for Financial Industry Information Systems (FISC)
 
@@ -40,7 +43,7 @@ Microsoft ha incaricato periti esterni di verificare se Microsoft Azure, Dynamic
 
 Gli istituiti finanziari possono confidare su questa valutazione dell'adeguamento in queste tre aree per servizi di infrastruttura e piattaforma interni all'ambito di Azure, Dynamics 365, Office 365 e Microsoft Cloud App Security.
 
-[Ulteriori informazioni sulla valutazione da parte di periti esterni e collegamenti ai siti del perito (solo in giapponese)](https://www.microsoft.com/ja-jp/business/enterprise-security/twc/finance-fisc.aspx).
+[Ulteriori informazioni sulla valutazione da parte di periti esterni e collegamenti ai siti del perito (solo in giapponese)](https://cloudblogs.microsoft.com/industry-blog/ja-jp/financial-services/2018/05/11/fisc_v9/).
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
@@ -84,4 +87,4 @@ Sì. Tuttavia, sebbene le risposte di Microsoft a questo framework siano dichiar
 
 ## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
-È necessario il documento di informazioni di base sull'offerta? Scarica il [PDF](https://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC-Compliance.pdf).
+Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC-Compliance.pdf).
