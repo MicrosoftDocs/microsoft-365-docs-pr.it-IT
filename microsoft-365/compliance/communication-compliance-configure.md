@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9371429caedfe2081331fab1aebbe0e1ec761e81
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 82ee16e84bc20b88e577cfd3e8b8187059536469
+ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661972"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784693"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurare la conformità delle comunicazioni in Microsoft 365
 
@@ -67,7 +67,14 @@ Per rendere la **conformità di comunicazione** disponibile come opzione di menu
 
 Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
-## <a name="step-2-optional-set-up-groups-for-communication-compliance"></a>Passaggio 2 (facoltativo): configurare i gruppi per la conformità della comunicazione
+## <a name="step-2-required-enable-the-office-365-audit-log"></a>Passaggio 2 (obbligatorio): abilitare il log di controllo di Office 365
+
+La conformità alla comunicazione richiede i registri di controllo per visualizzare gli avvisi e tenere presenti le azioni di correzione eseguite dai revisori. I registri di controllo sono un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento di un criterio di conformità comunicazione modifiche.
+
+Per istruzioni dettagliate su come abilitare il controllo, vedere [attivazione o disattivazione della ricerca del registro di controllo di Office 365](turn-audit-log-search-on-or-off.md). Dopo aver attivato il controllo, viene visualizzato un messaggio che indica che il registro di controllo viene preparato e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. È sufficiente eseguire questa operazione una sola volta. Per ulteriori informazioni sull'utilizzo del log di controllo, vedere [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+
+
+## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Passaggio 3 (facoltativo): configurare i gruppi per la conformità della comunicazione
 
  Quando si crea un criterio di conformità della comunicazione, è possibile definire gli utenti che hanno esaminato le comunicazioni e che eseguono le revisioni. Nei criteri si utilizzeranno gli indirizzi di posta elettronica per identificare singoli o gruppi di persone. Per semplificare la configurazione, è possibile creare gruppi per gli utenti che hanno la propria comunicazione riesaminata e i gruppi per gli utenti che esaminano tali comunicazioni. Se si utilizzano i gruppi, potrebbero essere necessari diversi. Ad esempio, se si desidera monitorare le comunicazioni tra due gruppi distinti di persone o se si desidera specificare un gruppo che non verrà controllato.
 
@@ -86,7 +93,7 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 - [Gestire i gruppi di protezione abilitati alla posta elettronica](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Panoramica dei gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-3-required-create-a-communication-compliance-policy"></a>Passaggio 3 (obbligatorio): creare un criterio di conformità della comunicazione
+## <a name="step-4-required-create-a-communication-compliance-policy"></a>Passaggio 4 (obbligatorio): creare un criterio di conformità della comunicazione
   
 1. Accedere [https://compliance.microsoft.com](https://compliance.microsoft.com) con le credenziali per un account di amministratore nell'organizzazione Microsoft 365.
 
@@ -120,7 +127,7 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
 6. La pagina **criteri è stata creata** viene visualizzata con linee guida su quando verranno attivati i criteri e quali comunicazioni verranno acquisite.
 
-## <a name="step-4-optional-create-employee-notice-templates"></a>Passaggio 4 (facoltativo): creare modelli di avviso per i dipendenti
+## <a name="step-5-optional-create-employee-notice-templates"></a>Passaggio 5 (facoltativo): creare modelli di avviso per i dipendenti
 
 Se si desidera avere la possibilità di rispondere a un avviso di criteri inviando un avviso di sollecito al dipendente associato, è necessario creare almeno un modello di avviso nell'organizzazione. I campi del modello di avviso sono modificabili prima di essere inviati come parte del processo di correzione degli avvisi e la creazione di un modello di avviso personalizzato per ogni criterio di conformità della comunicazione è consigliata.
 
@@ -140,7 +147,7 @@ Se si desidera avere la possibilità di rispondere a un avviso di criteri invian
 
 5. Selezionare **Salva** per creare e salvare il modello di avviso.
 
-## <a name="step-5-optional-test-your-communication-compliance-policy"></a>Passaggio 5 (facoltativo): testare i criteri di conformità della comunicazione
+## <a name="step-6-optional-test-your-communication-compliance-policy"></a>Passaggio 6 (facoltativo): testare i criteri di conformità della comunicazione
 
 Dopo aver creato un criterio di conformità della comunicazione, è consigliabile testarlo per assicurarsi che le condizioni definite vengano applicate correttamente dal criterio. È inoltre possibile [testare i criteri di prevenzione della perdita di dati (DLP)](create-test-tune-dlp-policy.md) se i criteri di conformità della comunicazione includono tipi di informazioni riservate. Assicurarsi di fornire i criteri per l'attivazione in modo che le comunicazioni che si desidera testare vengano acquisite.
 
@@ -155,11 +162,3 @@ Eseguire la procedura seguente per testare i criteri di conformità della comuni
 3. Accedere a Microsoft 365 come un revisore designato nei criteri di conformità della comunicazione. Passare a > **avvisi** **conformità comunicazione**per visualizzare gli avvisi per i criteri.
 
 4. Correggere l'avviso utilizzando i controlli di correzione e verificare che l'avviso sia stato risolto correttamente.
-
-## <a name="step-6-optional-enable-auditing-for-your-communication-compliance-policies"></a>Passaggio 6 (facoltativo): abilitare il controllo per i criteri di conformità della comunicazione
-
-Dopo aver testato i criteri, è possibile abilitare il controllo in modo che le attività associate alla gestione della conformità della comunicazione vengano registrate. Questo controllo può essere un riepilogo di tutte le attività associate a un criterio organizzativo definito o in qualsiasi momento in cui si modifica un criterio di conformità della comunicazione.
-
-Quando il controllo è abilitato, i criteri di conformità della comunicazione hanno percorsi di controllo incorporati per una completa preparazione per i controlli interni o esterni. È possibile utilizzare il controllo **Esporta attività di revisione** nella pagina principale per qualsiasi criterio per generare un file di controllo o per visualizzare le attività di controllo nel log di controllo unificato se il controllo è abilitato.
-
-Per attivare il controllo, fare clic su **Avvia registrazione attività utente e amministratore** nella pagina di **ricerca del registro di controllo** nel centro sicurezza & conformità di Office 365. Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione. Dopo aver attivato il controllo, viene visualizzato un messaggio che indica che il registro di controllo viene preparato e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. È sufficiente eseguire questa operazione una sola volta. Per ulteriori informazioni sul log di controllo, vedere [Search the audit log](search-the-audit-log-in-security-and-compliance.md).

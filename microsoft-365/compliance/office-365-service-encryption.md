@@ -8,32 +8,52 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.date: 10/3/2019
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: informazioni sulla resilienza dei dati in Microsoft Office 365.'
-ms.openlocfilehash: e746db47003dc391ba8a0751a924ba21ac7b8136
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5b22584e677dd4815b991b4e95b5ad59feb2fbc2
+ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597833"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41799546"
 ---
 # <a name="office-365-service-encryption"></a>Servizio di crittografia di Office 365
 
 Oltre a utilizzare la crittografia a livello di volume, Exchange Online, Skype for business, SharePoint Online e OneDrive for business utilizzano anche la crittografia del servizio per crittografare i dati dei clienti. La crittografia del servizio consente di eseguire due opzioni di gestione principali:
-- Microsoft gestisce tutte le chiavi di crittografia. Questa opzione è attualmente disponibile in SharePoint Online, OneDrive for business e Skype for business. La Guida di orientamento per Exchange Online è attualmente disponibile.
+
+- Microsoft gestisce tutte le chiavi di crittografia. Questa opzione è attualmente disponibile in SharePoint Online, OneDrive for business e Skype for business.
+
 - Il cliente fornisce le chiavi radice utilizzate con la crittografia del servizio e il cliente gestisce queste chiavi utilizzando Azure Key Vault. Microsoft gestisce tutte le altre chiavi. Questa opzione è denominata Customer Key ed è attualmente disponibile per Exchange Online, SharePoint Online e OneDrive for business. (In precedenza denominato crittografia avanzata con BYOK. Vedere [miglioramento della trasparenza e del controllo per i clienti di Office 365](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) per l'annuncio originale.
 
-La crittografia dei servizi offre molteplici vantaggi. Ad esempio:
-- fornisce funzionalità di gestione e protezione dei diritti al di sopra della protezione dalla crittografia avanzata.
-- include un'opzione di chiave Customer che consente ai servizi multi-tenant di fornire la gestione delle chiavi per tenant.
-- consente di separare gli amministratori del sistema operativo Windows dall'accesso ai dati dei clienti archiviati o elaborati dal sistema operativo.
-- consente di migliorare la capacità di Office 365 di soddisfare le esigenze dei clienti con requisiti di conformità relativi alla crittografia.
+La crittografia dei servizi offre molteplici vantaggi. Ad esempio, Customer Key:
+
+- Fornisce funzionalità di gestione e protezione dei diritti al di sopra della protezione dalla crittografia avanzata.
+
+- Include un'opzione di chiave Customer che consente ai servizi multi-tenant di fornire la gestione delle chiavi per tenant.
+
+- Consente di separare gli amministratori del sistema operativo Windows dall'accesso ai dati dei clienti archiviati o elaborati dal sistema operativo.
+
+- Consente di migliorare la capacità di Office 365 di soddisfare le esigenze dei clienti con requisiti di conformità relativi alla crittografia.
 
 ## <a name="customer-key"></a>Customer Key
-Utilizzando la chiave del cliente, è possibile generare chiavi di crittografia personalizzate utilizzando un HSM locale o un Vault chiave di Azure. Indipendentemente dal modo in cui viene generata la chiave, i clienti utilizzano Azure Key Vault per controllare e gestire le chiavi di crittografia utilizzate da Office 365. Una volta che le chiavi vengono archiviate nel Vault Key di Azure, è possibile assegnarle ai carichi di lavoro come Exchange Online e SharePoint Online e come radice del keychain utilizzato per crittografare i dati e i file delle cassette postali.
-Uno degli altri vantaggi derivanti dall'utilizzo della chiave del cliente consiste nel controllare la capacità di Microsoft di elaborare i dati dei clienti. Questa funzionalità esiste in modo che un cliente che desidera rimuovere i dati da Office 365 (ad esempio quando un cliente termina il servizio con Microsoft o rimuove una parte dei dati archiviati nel cloud) sia in grado di eseguire tale operazione e utilizzare la chiave del cliente come controllo tecnico per garantire che nessuno , incluso Microsoft, può accedere ai dati o elaborarli. Questo è in aggiunta (e un complemento) alla funzionalità dell'archivio protetto dei clienti che può essere utilizzata per controllare l'accesso ai dati dei clienti da parte di personale Microsoft.
 
-Per informazioni su come configurare Customer Key per Office 365 per Exchange Online, Skype for business, SharePoint Online e OneDrive for business, vedere [controlling your data in office 365 using Customer Key](https://support.office.com/article/Controlling-your-data-in-Office-365-using-Customer-Key-f2cd475a-e592-46cf-80a3-1bfb0fa17697). Per ulteriori informazioni, vedere le [domande frequenti su Customer Key per Office 365](https://support.office.com/article/Customer-Key-for-Office-365-FAQ-41ae293a-bd5c-4083-acd8-e1a2b4329da6)e [gestire e controllare i dati per soddisfare i requisiti di conformità con la chiave del cliente](https://techcommunity.microsoft.com/t5/Microsoft-Ignite-Content-2017/Manage-and-control-your-data-to-help-meet-compliance-needs-with/td-p/117580).
+Se si utilizza il codice "Customer Key", è possibile generare le proprie chiavi di crittografia utilizzando un modulo di servizio hardware (HSM) locale o un Vault Key di Azure (AKV). Indipendentemente dal modo in cui viene generata la chiave, è possibile utilizzare AKV per controllare e gestire le chiavi di crittografia utilizzate da Office 365. Dopo aver memorizzato i tasti in AKV, è possibile utilizzarli come radice di uno dei portachiavi che crittografa i dati o i file delle cassette postali.
+
+Un altro vantaggio della chiave del cliente è il controllo che si ha sulla capacità di elaborazione dei dati da parte di Microsoft. Se si desidera rimuovere i dati da Office 365, ad esempio se si desidera terminare il servizio con Microsoft o rimuovere una parte dei dati archiviati nel cloud, è possibile farlo e utilizzare la chiave del cliente come controllo tecnico. In questo modo, nessuno, incluso Microsoft, può accedere ai dati o elaborarli. La chiave del cliente è inoltre e complementare all'archivio protetto dei clienti che si utilizza per controllare l'accesso ai dati da parte del personale Microsoft.
+
+Per informazioni su come configurare Customer Key per Office 365 per Exchange Online, Skype for business, SharePoint Online, inclusi i siti del team e OneDrive for business, vedere gli articoli seguenti:
+
+- [Crittografia del servizio con la chiave del cliente in Office 365](customer-key-overview.md)
+
+- [Configurare la chiave cliente per Office 365](customer-key-set-up.md)
+
+- [Gestire la chiave del cliente per Office 365](customer-key-manage.md)
+
+- [Eseguire il rollforward o la rotazione di una chiave del cliente o di una chiave di disponibilità](customer-key-availability-key-roll.md)
+
+- [Comprendere il codice di disponibilità](customer-key-availability-key-understand.md)
+ 
