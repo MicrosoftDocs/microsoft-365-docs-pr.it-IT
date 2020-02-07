@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni sulla chiave di disponibilità utilizzata per recuperare le chiavi dei clienti di Office 365 perse.
-ms.openlocfilehash: b363d3b90c6ea783bd051bea6c44a94689b87ac1
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: a4d0bdecfeddb83ffbe47f397f2bda646138b081
+ms.sourcegitcommit: b22d6dea2768679428d512ea2bbbdf8748f71712
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804811"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845365"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>Informazioni sulla chiave di disponibilità per la chiave del cliente di Office 365
 
@@ -54,7 +54,7 @@ Microsoft condivide la responsabilità della protezione dei dati con l'utente cr
 
 ### <a name="availability-key-secret-stores"></a>Archivi segreti chiave di disponibilità
 
-Microsoft protegge le chiavi di disponibilità negli archivi segreti interni controllati dall'accesso, simili all'archivio delle chiavi di Azure per i clienti. Implementiamo i controlli di accesso per impedire agli amministratori di Microsoft di accedere direttamente ai segreti contenuti all'interno. Le operazioni di archiviazione segrete, incluse la rotazione, l'eliminazione e il recupero delle chiavi, avvengono tramite comandi automatici che non coinvolgono mai l'accesso diretto al codice di disponibilità. L'accesso per regolare questi comandi è limitato a specifici ingegneri e richiede l'escalation dei privilegi tramite uno strumento interno, protetto. L'escalation dei privilegi richiede l'approvazione e la giustificazione del responsabile prima di essere concessa. L'archivio protetto garantisce che l'accesso sia associato al tempo associato alla revoca di accesso automatico al momento della scadenza o del logout del tecnico.
+Microsoft protegge le chiavi di disponibilità negli archivi segreti interni controllati da Access, come il Vault Key Azure con accesso ai clienti. Implementiamo i controlli di accesso per impedire agli amministratori di Microsoft di accedere direttamente ai segreti contenuti all'interno. Le operazioni di archiviazione segrete, incluse la rotazione, l'eliminazione e il recupero delle chiavi, avvengono tramite comandi automatici che non coinvolgono mai l'accesso diretto al codice di disponibilità. L'accesso per regolare questi comandi è limitato a specifici ingegneri e richiede l'escalation dei privilegi tramite uno strumento interno, protetto. L'escalation dei privilegi richiede l'approvazione e la giustificazione del responsabile prima di essere concessa. L'archivio protetto garantisce che l'accesso sia associato al tempo associato alla revoca di accesso automatico al momento della scadenza o del logout del tecnico.
 
 I tasti di disponibilità di **Exchange Online e Skype for business** sono archiviati in un archivio segreto di Active Directory. Exchange Online Active Directory è costituito da foreste di gestione che instradano foreste di traffico e capacità che contengono oggetti, identità e dati. Le foreste di capacità sono costituite da foreste account e foreste di risorse. Gli insiemi di strutture account dispongono di controller di dominio con più capacità sincronizzati tra loro. I tasti di disponibilità sono archiviati in modo sicuro all'interno dei controller di dominio Capacity. Questo percorso di archiviazione sicura è separato e isolato dall'archivio segreto di SharePoint Online, OneDrive for business e dei file teams.
 
@@ -62,9 +62,9 @@ Le chiavi di disponibilità dei **file di SharePoint Online, OneDrive for busine
 
 ### <a name="defense-in-depth"></a>Difesa in profondità
 
-Microsoft impiega una strategia di difesa approfondita per impedire agli utenti malintenzionati di influenzare la riservatezza, l'integrità o la disponibilità dei dati del cliente archiviati nel cloud Microsoft. Sono stati implementati controlli preventivi e detective specifici per proteggere la chiave di disponibilità nell'ambito della strategia di sicurezza generale.
+Microsoft impiega una strategia di difesa approfondita per impedire agli utenti malintenzionati di influenzare la riservatezza, l'integrità o la disponibilità dei dati del cliente archiviati nel cloud Microsoft. Sono stati implementati controlli preventivi e detective specifici per proteggere l'archivio segreto e la chiave di disponibilità nell'ambito della strategia di sicurezza generale.
 
-Office 365 è stato creato per impedire l'uso improprio del codice di disponibilità. Il livello dell'applicazione è l'unico metodo tramite il quale le chiavi, incluso il codice di disponibilità, possono essere utilizzate per crittografare e decrittografare i dati. Solo il codice di servizio di Office 365 è in grado di interpretare e attraversare la gerarchia delle chiavi per le attività di crittografia e decrittografia. Se un amministratore di Microsoft malintenzionato dovesse eludere i controlli per estrarre una chiave di disponibilità dall'archivio segreto, la chiave sarebbe inutilizzabile per accedere ai dati dei clienti. L'isolamento logico esiste tra le posizioni di archiviazione delle chiavi dei clienti, delle chiavi di disponibilità, di altre chiavi gerarchiche e dei dati del cliente, che riduce il rischio di esposizione dei dati nel caso in cui una o più posizioni vengano compromesse.
+Office 365 è stato creato per impedire l'uso improprio del codice di disponibilità. Il livello dell'applicazione è l'unico metodo tramite il quale le chiavi, incluso il codice di disponibilità, possono essere utilizzate per crittografare e decrittografare i dati. Solo il codice di servizio di Office 365 è in grado di interpretare e attraversare la gerarchia delle chiavi per le attività di crittografia e decrittografia. Se un amministratore di Microsoft malintenzionato dovesse eludere i controlli per estrarre una chiave di disponibilità dall'archivio segreto, la chiave sarebbe inutilizzabile per accedere ai dati dei clienti. L'isolamento logico esiste tra le posizioni di archiviazione delle chiavi dei clienti, delle chiavi di disponibilità, di altre chiavi gerarchiche e dei dati del cliente. Questo isolamento attenua il rischio di esposizione dei dati nel caso in cui una o più posizioni vengano compromesse. Ogni layer della gerarchia è stato costruito in funzionalità di rilevamento delle intrusioni 24x7 per proteggere i dati e i segreti.
 
 I controlli di accesso vengono implementati per impedire l'accesso non autorizzato ai sistemi interni, compresi gli archivi segreti chiave di disponibilità. Gli ingegneri Microsoft non dispongono dell'accesso diretto agli archivi segreti chiave di disponibilità. Per ulteriori informazioni sui controlli di accesso, consultare [controlli di accesso amministrativo in Office 365](https://docs.microsoft.com/Office365/securitycompliance/office-365-administrative-access-controls-overview).
 
@@ -80,9 +80,11 @@ Se si perde il controllo delle chiavi dei clienti, la chiave di disponibilità f
 
 ### <a name="recovery-procedure-for-exchange-online-and-skype-for-business"></a>Procedura di ripristino per Exchange Online e Skype for business
 
-Se si perde il controllo delle chiavi dei clienti, la chiave di disponibilità continuerà a fornire l'accesso ai dati durante il ripristino. Per crittografare i dati con nuove chiavi del cliente, creare nuove chiavi in Azure Key Vault, creare una nuova funzionalità di protezione esecuzione programmi, associare la nuova funzionalità DEP alle nuove chiavi del cliente, quindi istruire la funzionalità di crittografia per crittografare le cassette postali attualmente crittografate con la precedente DEP per la quale le chiavi sono state perse o compr omise. Quando viene eseguita, la chiave di disponibilità decifra le cassette postali che verranno quindi crittografate con il nuovo criterio.
+Se si perde il controllo delle chiavi dei clienti, la chiave di disponibilità fornisce la possibilità di recuperare i dati e di riportare le risorse di Office 365 ripercussioni online. Il codice di disponibilità continua a proteggere i dati durante il ripristino. A livello elevato, per il ripristino completo dalla perdita di chiave, è necessario creare un nuovo DEP e spostare le risorse interessate al nuovo criterio.
 
-Questo processo può richiedere fino a 72 ore, che è la durata standard quando si modifica una funzionalità di protezione esecuzione programmi.
+Per crittografare i dati con le nuove chiavi dei clienti, creare nuove chiavi in Azure Key Vault, creare una nuova funzionalità di protezione esecuzione programmi utilizzando le nuove chiavi del cliente, quindi assegnare il nuovo DEP alle cassette postali attualmente crittografate con la precedente DEP per la quale le chiavi sono state perse o compromesse.
+
+Questo processo di riesecuzione della crittografia può richiedere fino a 72 ore. Questa è la durata standard quando si modifica una funzionalità di protezione esecuzione programmi.
   
 ### <a name="recovery-procedure-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>Procedura di ripristino per i file di SharePoint Online, OneDrive for business e teams
 
@@ -92,7 +94,7 @@ Questa operazione è proporzionale al numero di siti nell'organizzazione. Dopo a
 
 ## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Come Exchange Online e Skype for business utilizzano il codice di disponibilità
 
-Quando si crea una funzionalità di protezione esecuzione programmi con il codice cliente, Office 365 genera una chiave del criterio di crittografia dei dati (chiave DEP) associata alla funzionalità di protezione esecuzione programmi. Il servizio crittografa il tasto DEP tre volte: una volta con ognuna delle chiavi del cliente e una volta con il tasto disponibilità. Solo le versioni crittografate del tasto DEP sono archiviate e una chiave DEP può essere decrittografata solo con le chiavi del cliente o con il tasto disponibilità. La chiave DEP viene quindi utilizzata per crittografare le chiavi delle cassette postali, che vengono quindi utilizzate per crittografare le singole cassette postali. 
+Quando si crea una funzionalità di protezione esecuzione programmi con il codice cliente, Office 365 genera una chiave del criterio di crittografia dei dati (chiave DEP) associata alla funzionalità di protezione esecuzione programmi. Il servizio crittografa il tasto DEP tre volte: una volta con ognuna delle chiavi del cliente e una volta con il tasto disponibilità. Solo le versioni crittografate del tasto DEP sono archiviate e una chiave DEP può essere decrittografata solo con le chiavi del cliente o con il tasto disponibilità. La chiave DEP viene quindi utilizzata per crittografare le chiavi delle cassette postali, che vengono quindi utilizzate per crittografare le singole cassette postali.
   
 Office 365 segue questo processo per decrittografare e fornire dati quando i clienti utilizzano il servizio:
   
