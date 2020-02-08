@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 519fb739290e5a7ea61c8e27a1ef59edb4cac75f
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662002"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862126"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -77,17 +77,17 @@ Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del regis
   > [!IMPORTANT]
   > Se si assegna a un utente il ruolo relativo ai log di controllo di sola lettura o ai log di controllo nella pagina **Autorizzazioni** del Centro sicurezza e conformità, l'utente non potrà eseguire ricerche nel log di controllo di Office 365. È necessario assegnare le autorizzazioni in Exchange Online. Ciò avviene perché il cmdlet sottostante usato per la ricerca nel log di controllo è un cmdlet di Exchange Online.
 
-- Quando un'attività di controllo viene eseguita da un utente o da un amministratore, viene generato un record di controllo che viene archiviato nel log di controllo di Office 365 per l'organizzazione. Il periodo di tempo per il quale viene conservato il record di controllo (ed disponibile per la ricerca nel log di controllo) varia in base all'abbonamento a Office 365 e, in particolare, al tipo di licenza assegnata a un utente specifico.
+- Quando un'attività di controllo viene eseguita da un utente o da un amministratore, viene generato un record di controllo che viene archiviato nel log di controllo di Office 365 per l'organizzazione. Il periodo di tempo per il quale viene conservato il record di controllo (ed disponibile per la ricerca nel log di controllo) varia in base all'abbonamento a Office 365 o Microsoft 365 e, in particolare, al tipo di licenza assegnata a un utente specifico.
 
-  - **Office 365 E3:** i record di controllo vengono conservati per 90 giorni. Ciò significa che è possibile cercare nel log di controllo le attività eseguite negli ultimi 90 giorni.
+  - **Office 365 e Microsoft 365 E3:** i record di controllo vengono conservati per 90 giorni. Ciò significa che è possibile cercare nel log di controllo le attività eseguite negli ultimi 90 giorni.
 
     > [!NOTE]
     > Anche se il controllo delle cassette postali è attivato per impostazione predefinita, si potrebbe notare che gli eventi di controllo delle cassette postali per alcuni utenti non sono inclusi nelle ricerche nei log di controllo nel Centro sicurezza e conformità o nell'API Office 365 Management Activity. Vedere la sezione [Altre informazioni sulla registrazione di controllo delle cassette postali](enable-mailbox-auditing.md#more-information).
 
-  - **Office 365 E5:** i record di controllo vengono conservati per 90 giorni. Il mantenimento dei record di controllo per un anno potrebbe essere disponibile per gli utenti E5 e gli utenti con una licenza E3 e una licenza per il componente aggiuntivo Office 365 Advanced Compliance.
+  - **Office 365 o Microsoft 365 E5 o utente con una licenza per componente aggiuntivo Conformità Microsoft 365 E5:** i record di controllo per l'attività di Azure Active Directory, Exchange e SharePoint vengono conservati per un anno per impostazione predefinita. Le organizzazioni possono anche creare criteri di conservazione del log di controllo per conservare i record di controllo per le attività in altri servizi per un massimo di un anno. Per altre informazioni, vedere [Gestire i criteri di conservazione dei log di controllo](audit-log-retention-policies.md).
 
     > [!NOTE]
-    > Il programma di anteprima privata per il periodo di conservazione di un anno per i record di controllo per le organizzazioni E5 (o per gli utenti delle organizzazioni E3 con licenza per i componenti aggiuntivi per la conformità avanzata) è chiuso alle nuove iscrizioni. Questo articolo verrà aggiornato quando il periodo di conservazione di un anno sarà disponibile in anteprima pubblica o rilasciato per la disponibilità generale.
+    > Se l'organizzazione ha partecipato al programma di anteprima privata per la conservazione dei record di controllo per un anno, la durata di conservazione per i record di controllo generati prima della data di implementazione della disponibilità generale non verrà reimpostata.
 
 - Se si desidera disattivare la ricerca nel log di controllo in Office 365 per la propria organizzazione, è possibile eseguire questo comando nell'istanza di PowerShell remota connessa all'organizzazione di Exchange Online:
 
@@ -851,10 +851,6 @@ Di seguito sono forniti alcuni suggerimenti per la ricerca delle attività di am
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**Dove è possibile trovare informazioni sulle caratteristiche offerte dal servizio di controllo in Office 365?**
-
-Per altre informazioni sulle caratteristiche di controllo e creazione di report disponibili in Office 365, vedere [Controllo e creazione di report in Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-auditing-and-reporting-overview).
-
 **Quali sono i diversi servizi di Office 365 attualmente controllati?**
 
 Sono controllati i servizi di Office 365 più usati come Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection e Power BI. Vedere l' [inizio di questo articolo](search-the-audit-log-in-security-and-compliance.md) per un elenco dei servizi che vengono controllati.
@@ -869,16 +865,13 @@ La maggior parte dei dati di controllo è disponibile nel giro di 30 minuti ma l
 
 **Per quanto tempo vengono conservati i record di controllo?**
 
-Come descritto in precedenza, il periodo di conservazione per i record di controllo varia in base all'abbonamento a Office 365 dell'organizzazione.
+Come descritto in precedenza, il periodo di conservazione per i record di controllo varia in base all'abbonamento a Office 365 o Microsoft 365 dell'organizzazione.
 
-- **Office 365 E3:** i record di controllo vengono conservati per 90 giorni.
+  - **Office 365 e Microsoft 365 E3:** i record di controllo vengono conservati per 90 giorni. Ciò significa che è possibile cercare nel log di controllo le attività eseguite negli ultimi 90 giorni.
 
-- **Office 365 E5:** anche i record di controllo vengono conservati per 90 giorni. Il mantenimento dei record di controllo per un anno potrebbe essere disponibile per gli utenti E5 e gli utenti con una licenza E3 e una licenza per il componente aggiuntivo Office 365 Advanced Compliance.
+  - **Office 365 o Microsoft 365 E5 o utente con una licenza per componente aggiuntivo Conformità Microsoft 365 E5:** i record di controllo per l'attività di Azure Active Directory, Exchange e SharePoint vengono conservati per un anno per impostazione predefinita. Le organizzazioni possono anche creare criteri di conservazione del log di controllo per conservare i record di controllo per le attività in altri servizi per un massimo di un anno. Per altre informazioni, vedere [Gestire i criteri di conservazione dei log di controllo](audit-log-retention-policies.md).
 
-  > [!NOTE]
-  > Come illustrato in precedenza, il programma di anteprima privata per il periodo di conservazione di un anno per i record di controllo per le organizzazioni E5 (o per gli utenti delle organizzazioni E3 con licenza per i componenti aggiuntivi per la conformità avanzata) è chiuso alle nuove iscrizioni. Questo articolo verrà aggiornato quando il periodo di conservazione di un anno sarà disponibile in anteprima pubblica o rilasciato per la disponibilità generale.
-
-Si noti inoltre che la durata del periodo di conservazione per i record di controllo si basa sulle licenze per utente. Ad esempio, se a un utente dell'organizzazione viene assegnata una licenza di Office 365 E3 o E5, i record di controllo per le attività eseguite dall'utente vengono conservati per 90 giorni.
+Si noti inoltre che la durata del periodo di conservazione per i record di controllo si basa sulle licenze per utente. Ad esempio, se a un utente dell'organizzazione viene assegnata una licenza di Office 365 E3, i record di controllo per le attività eseguite dall'utente vengono conservati per 90 giorni.
 
 **È possibile accedere ai dati di controllo a livello di programmazione?**
 
@@ -902,4 +895,6 @@ No. Attualmente sono presenti distribuzioni di pipeline di controllo nelle aree 
 
 **I dati di controllo sono crittografati?**
 
-I dati di controllo sono archiviati nelle cassette postali di Exchange (dati archiviati) nella stessa area geografica in cui è distribuita la pipeline di controllo. I dati non sono crittografati. Tuttavia, i dati in transito sono sempre crittografati.
+I dati di controllo sono archiviati nelle cassette postali di Exchange (dati archiviati) nella stessa area geografica in cui è distribuita la pipeline di controllo unificato. I dati delle cassette postali non vengono crittografati da Exchange. Tuttavia, la crittografia a livello di servizio crittografa tutti i dati delle cassette postali perché i server Exchange nei data Center Microsoft sono crittografati tramite BitLocker. Per altre informazioni, vedere [Crittografia di Office 365 per Skype for Business, OneDrive for Business, SharePoint Online ed Exchange Online](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md)
+
+I dati di posta elettronica in transito sono sempre crittografati.
