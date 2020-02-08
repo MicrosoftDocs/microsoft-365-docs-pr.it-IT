@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 070ec3977768d131e4e4d9c2f493e630a1a707c9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a08932d4f16a17b35fef11cdcd8243c96060a4b5
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601893"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851783"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -40,7 +40,7 @@ Le organizzazioni di valutazione di terze parti accreditate, Kratos secureinfo e
 
 I requisiti NIST SP 800 – 171 sono un sottoinsieme di NIST SP 800-53, lo standard utilizzato da FedRAMP. L'Appendice D del NIST SP 800 – 171 fornisce un mapping diretto dei relativi requisiti di sicurezza ai controlli di sicurezza rilevanti in NIST SP 800-53, per i quali i servizi cloud nell'ambito sono già stati valutati e autorizzati nell'ambito del programma FedRAMP.
 
-Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca, società di consulenza, appaltatori manifatturieri, deve soddisfare i severi requisiti del NIST SP 800 – 171. Questo attestato indica che i servizi cloud in ambito Microsoft possono ospitare i clienti che desiderano distribuire i carichi di lavoro cui con la certezza che Microsoft sia pienamente conforme. Ad esempio, tutti i contraenti DoD che elaborano, archiviano o trasmettono "informazioni di difesa coperte" utilizzando i servizi cloud Microsoft in ambito nei sistemi informativi, soddisfano le clausole del dipartimento della difesa degli Stati Uniti che richiedono la conformità con la sicurezza di DFARS. requisiti di NIST SP 800 – 171.
+Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca, società di consulenza, appaltatori manifatturieri, deve soddisfare i severi requisiti del NIST SP 800 – 171. Questo attestato indica che i servizi cloud in ambito Microsoft possono ospitare i clienti che desiderano distribuire i carichi di lavoro cui con la certezza che Microsoft sia pienamente conforme. Ad esempio, tutti i contraenti DoD che elaborano, archiviano o trasmettono ' informazioni sulla difesa trattate ' utilizzando i servizi cloud Microsoft in ambito nei sistemi informativi soddisfano le clausole del dipartimento della difesa degli Stati Uniti DFARS che richiedono la conformità con la sicurezza requisiti di NIST SP 800 – 171.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
@@ -53,7 +53,7 @@ Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca
 
 - [Attestazione del governo di Azure per la conformità con NIST SP 800 – 171](https://aka.ms/Azure-NIST-800-171)
 
-## <a name="how-to-implement"></a>Come implementare
+## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 - [Cianografia del NIST SP 800 – 171](https://aka.ms/NIST-800-171-Blueprint): ottenere supporto per l'implementazione di carichi di lavoro in Azure conformi al NIST SP 800 – 171.
 
@@ -63,6 +63,10 @@ Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca
 
 Sì. I clienti Microsoft possono utilizzare i controlli controllati descritti nei report di organizzazioni di valutazione di terze parti indipendenti (3PAO) sugli standard FedRAMP nell'ambito delle proprie attività di analisi e qualifica di FedRAMP e NIST. Questi rapporti confermano l'efficacia dei controlli che Microsoft ha implementato nei suoi servizi cloud nell'ambito. I clienti sono responsabili di garantire che i carichi di lavoro cui sono conformi alle linee guida NIST SP 800 – 171.
 
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilizzare il Punteggio di conformità di Microsoft per valutare i rischi
+
+[Microsoft Compliance Score](compliance-score.md) è una funzionalità di anteprima del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), utilizzare il [modello NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2117526) preconfigurato per aiutare l'organizzazione a soddisfare i requisiti per il regolamento.
+
 ## <a name="resources"></a>Risorse
 
 - [La certificazione Microsoft DoD soddisfa i requisiti NIST 800 – 171](offering-DoD-DISA-L2-L4-L5.md)
@@ -71,7 +75,7 @@ Sì. I clienti Microsoft possono utilizzare i controlli controllati descritti ne
 - [NIST 800-171 3,3 Audit and Accountability con Office 365 GCC High](https://info.summit7systems.com/blog/nist-3.3-audit-and-accountability-with-office-365)
 - [Microsoft e NIST Cybersecurity Framework](offering-nist-csf.md)
 - [Cloud Microsoft per enti pubblici](https://www.microsoft.com/enterprise/government)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 

@@ -1,5 +1,7 @@
 ---
 title: Progettare uno schema di classificazione per i dati personali
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -15,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Determinare se l'organizzazione implementerà etichette nell'ambito del piano RGPD.
-ms.openlocfilehash: 4470f766ad2f8fd2d914e0e45deac8604028ddb5
-ms.sourcegitcommit: 7f26840a4330b0fd29807ec091c6915d283b3dd2
+ms.openlocfilehash: fa10e3ccd320026f06db76feef8711f8483c2b70
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615646"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596043"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Progettare uno schema di classificazione per i dati personali
 

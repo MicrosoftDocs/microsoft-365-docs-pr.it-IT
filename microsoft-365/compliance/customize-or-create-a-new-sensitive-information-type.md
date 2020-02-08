@@ -1,5 +1,7 @@
 ---
 title: Personalizzare o creare un nuovo tipo di informazione riservata
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -18,12 +20,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Informazioni su come modificare o creare nuovi tipi di informazioni riservate di Office 365 per RGPD.
-ms.openlocfilehash: 81717e10de794f5ab5885470d0bcbcd795e43044
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 006a3e7be35000513053321ebb500cbd627e8779
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38708132"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595483"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizzare o creare un nuovo tipo di informazione riservata
 
@@ -141,9 +143,9 @@ Potrebbe essere necessario creare query aggiuntive per trovare dati personali so
 
 Utilizzare queste risorse per formulare e ottimizzare query tramite KQL:
 
--   [Riferimenti per la sintassi (DMC) di Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Riferimenti per la sintassi (DMC) di Keyword Query Language (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Eseguire una Ricerca contenuto](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+- [Eseguire una Ricerca contenuto](content-search.md)
 
 Ricerca contenuto fornisce un'altra risorsa che consente di sviluppare query KQL e tipi di informazioni riservate: le parole chiave. Perché utilizzare l'elenco delle parole chiave? È possibile ottenere le statistiche che mostrano quanti elementi corrispondo a ciascuna parola chiave. Questo può essere utile per trovare rapidamente le parole chiave più o meno efficaci. Per ulteriori informazioni sulle statistiche di ricerca, vedere [Visualizzare statistiche delle parole chiave per i risultati di Ricerca contenuto](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 

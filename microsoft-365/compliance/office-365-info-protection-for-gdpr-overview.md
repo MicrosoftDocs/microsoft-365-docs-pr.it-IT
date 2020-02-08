@@ -1,6 +1,8 @@
 ---
 title: >
   Panoramica di Office 365 Information Protection per RGPD
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -17,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Panoramica di Office 365 Information Protection per GDPR. Informazioni su come individuare, classificare, proteggere e monitorare i dati personali.
-ms.openlocfilehash: d4e84e6a3fc1020f3eecda6eb72e3d02a9f66555
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 079ff7b7dab099f289bbd0366bba00d5ecf55b80
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558503"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41597863"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Panoramica di Office 365 Information Protection per RGPD
 

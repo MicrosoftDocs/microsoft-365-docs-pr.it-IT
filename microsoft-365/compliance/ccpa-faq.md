@@ -5,18 +5,20 @@ keywords: Microsoft 365, conformità, CCPA, GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 9323cce022af6c624b76b56a27fe35ff55c3519f
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: f4f6d33d9c8898899486c1c6ab08af5113c4a42a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558423"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595953"
 ---
 # <a name="california-consumer-privacy-act-ccpa-frequently-asked-questions"></a>Domande frequenti sul California Consumer Privacy Act (CCPA)
 

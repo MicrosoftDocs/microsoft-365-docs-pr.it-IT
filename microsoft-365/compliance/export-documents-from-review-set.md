@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0448082ce6dcbcd9d1cee52557a78b2d7913a034
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b6f467f938ce14aacb9553b11d51dc63431ab409
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588356"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862076"
 ---
 # <a name="export-documents-from-a-review-set"></a>Esportare i documenti da un insieme da rivedere
 
@@ -45,7 +45,7 @@ Export consente agli utenti di personalizzare il contenuto incluso nel pacchetto
 
 ### <a name="metadata-file"></a>File di metadati
 
-Questo può essere considerato come il "Load file" che contiene i metadati associati ai file esportati. Per un elenco dei campi disponibili nel file di metadati, vedere \[link\]. Questo file può in genere essere ingerito da<sup>3 strumenti</sup> di terze parti a valle.
+Questo può essere considerato come il "Load file" che contiene i metadati associati ai file che vengono esportati. Per un elenco dei campi esportati disponibili nel file di metadati, vedere [Document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). Questo file può in genere essere ingerito da strumenti di terze parti.
 
 ### <a name="tag-data"></a>Dati tag
 
@@ -53,11 +53,11 @@ Questo contenuto verrebbe aggiunto come campi nel file di metadati. Contiene tut
 
 ### <a name="text-files"></a>File di testo
 
-È possibile generare file di testo per ogni file esportato da un set di revisione. Spesso questi file sono necessari per i partner del servizio come parte dell'ingestione dei dati<sup>in 3 strumenti</sup> di terze parti a valle.
+È possibile generare file di testo per ogni file esportato da un set di revisione. Spesso questi file sono necessari per i partner del servizio come parte dell'ingestione dei dati in strumenti di terze parti.
 
 ### <a name="redacted-files"></a>File redatti
 
-Se durante la revisione vengono generati file PDF ritirati, questi sono disponibili durante l'esportazione. Gli utenti possono decidere se esportare solo i file nativi o sostituire i nativi che dispongono di redazioni con il masterizzato nei file PDF.
+Se durante la revisione vengono generati file PDF redatti, tali file sono disponibili durante l'esportazione. È possibile decidere se esportare solo i file nativi o sostituire i file nativi che richiedono la redazione con i file PDF che contengono le redazioni effettive.
 
 ### <a name="export-location"></a>Percorso di esportazione
 

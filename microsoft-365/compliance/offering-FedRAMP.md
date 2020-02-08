@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2b7ad248299c12edfeed880ac731f2d23e9b1949
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 71be1e70a04881b937ee1f75d5fda6f03efdbd5f
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602363"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851863"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Programma per la gestione delle autorizzazioni e dei rischi federali (FedRAMP)
 
@@ -72,7 +72,7 @@ Dopo aver concesso un P-ATO, un CSP richiede ancora un'autorizzazione, ovvero un
 - Intune
 - [Office 365 e Office 365 U.S. Government](https://aka.ms/o365-compliance-framework)
 - Office 365 U.S. Government Defense
-- Servizio cloud Power BI, autonomo o incluso in un piano o in una famiglia di prodotti con marchio Office 365
+- Servizio cloud Power BI, autonomo o incluso in un piano o una famiglia di prodotti Office 365
 - Microsoft Defender ATP
 
 > [!NOTE]
@@ -99,7 +99,7 @@ FISMA è una legge federale che richiede alle agenzie federali degli Stati Uniti
 
 **A chi si applica FedRAMP?**
 
-"FedRAMP è obbligatorio per le distribuzioni cloud dell'Agenzia federale e i modelli di servizio a basso e moderato livello di impatto del rischio". Qualsiasi agenzia federale che vuole coinvolgere un CSP può essere tenuta a rispettare le specifiche di FedRAMP. Inoltre, le aziende che impiegano tecnologie cloud in prodotti o servizi utilizzati dal governo federale possono essere tenute a ottenere un ATO.
+' FedRAMP è obbligatorio per le distribuzioni di cloud dell'Agenzia federale e i modelli di servizio a basso e moderato livello di impatto del rischio. Qualsiasi agenzia federale che vuole coinvolgere un CSP può essere tenuta a rispettare le specifiche di FedRAMP. Inoltre, le aziende che impiegano tecnologie cloud in prodotti o servizi utilizzati dal governo federale possono essere tenute a ottenere un ATO.
 
 **Dove viene avviata la propria attività di conformità da parte dell'Agenzia?**
 
@@ -109,13 +109,17 @@ Per una panoramica dei passaggi che devono essere intraprese dalle agenzie feder
 
 Sì. È possibile utilizzare le certificazioni dei servizi cloud Microsoft come fondamento per qualsiasi programma o iniziativa che richiede un ATO da un ente governativo federale. Tuttavia, è necessario ottenere le autorizzazioni per i componenti esterni a questi servizi.
 
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilizzare il Punteggio di conformità di Microsoft per valutare i rischi
+
+[Microsoft Compliance Score](compliance-score.md) è una funzionalità di anteprima del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), utilizzare il modello di [FedRAMP](https://go.microsoft.com/fwlink/?linkid=2118102) preconfigurato per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
+
 ## <a name="resources"></a>Risorse
 
 - [Programma federale di gestione dei rischi e delle autorizzazioni](https://www.fedramp.gov/)
-- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Framework di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Framework di valutazione della sicurezza di FedRAMP](https://go.microsoft.com/fwlink/p/?linkid=2099507)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 

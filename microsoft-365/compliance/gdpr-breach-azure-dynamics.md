@@ -5,6 +5,8 @@ keywords: Azure, Microsoft 365, Dynamics 365, documentazione di Microsoft 365, G
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,12 +14,13 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 4fc96fa3dd3b131cd6d00cfd5720c56734ed2deb
-ms.sourcegitcommit: f0a4290793e296474ecd3c6eb0ca96eae7faa434
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 7cc809780d57bd3b2bb499dfb05c3f623d158cd6
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "39625411"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41594436"
 ---
 # <a name="azure-and-dynamics-365-breach-notification-under-the-gdpr"></a>Notifica di violazione nell'ambito del GDPR in Azure e Dynamics 365
 

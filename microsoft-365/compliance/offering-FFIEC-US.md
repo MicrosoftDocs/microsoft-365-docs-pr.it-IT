@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 74ce16a1cc98943ea808bbae08eccd54f8f21fad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c77793d7676e836e7b445bd9b638a835bb7051ff
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602423"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851823"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Consiglio dell'esame degli istituti finanziari federali (FFIEC)
 
@@ -58,6 +58,10 @@ Rapporti di attestazione di Azure e Office 365 SOC.
 **È possibile utilizzare la conformità di Microsoft con gli standard SOC per soddisfare gli obblighi di conformità di FFIEC per il mio Istituto?**
 
 Per aiutarti a rispettare tali obblighi, Microsoft fornisce le specifiche relative alla conformità con gli standard SOC come descritto in alto. Tuttavia, in definitiva, spetta a te decidere se i nostri servizi sono conformi alle leggi e ai regolamenti specifici applicabili all'Istituto. FFIEC consiglia inoltre che "gli utenti dei report di controllo o delle recensioni non debbano fare affidamento solo sulle informazioni contenute nel rapporto per verificare l'ambiente di controllo interno del TSP. È consigliabile utilizzare ulteriori procedure di verifica e monitoraggio, come descritto in modo più completo nell' [opuscolo relativo alla tecnologia di outsourcing](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) del manuale di esame di FFIEC it.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilizzare il Punteggio di conformità di Microsoft per valutare i rischi
+
+[Microsoft Compliance Score](compliance-score.md) è una funzionalità di anteprima del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), utilizzare il modello di [FFIEC Office 365](https://go.microsoft.com/fwlink/?linkid=2117912) preconfigurato e il [modello di FFIEC Intune](https://go.microsoft.com/fwlink/?linkid=2118101) per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
 
 ## <a name="resources"></a>Risorse
 

@@ -1,5 +1,7 @@
 ---
 title: Visualizzare l'utilizzo delle etichette con Analisi delle etichette
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dopo aver creato le etichette di conservazione e le etichette di riservatezza, è opportuno verificare l'utilizzo nel tenant. Con Analisi delle etichette, disponibile nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365, è possibile visualizzare rapidamente le etichette usate più di frequente e sapere dove vengono applicate.
-ms.openlocfilehash: 45cebbe67a773b76289920554d4e39fcbce789cc
-ms.sourcegitcommit: 547bfc5f1fec7545cbe71b1919454425556c9227
+ms.openlocfilehash: e67ab03f3fd551b5b23e5632a42248e7248c9c93
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38710070"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600583"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Visualizzare l'utilizzo delle etichette con Analisi delle etichette
 

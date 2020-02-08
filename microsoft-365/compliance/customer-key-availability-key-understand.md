@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni sulla chiave di disponibilità utilizzata per recuperare le chiavi dei clienti di Office 365 perse.
-ms.openlocfilehash: a4d0bdecfeddb83ffbe47f397f2bda646138b081
-ms.sourcegitcommit: b22d6dea2768679428d512ea2bbbdf8748f71712
+ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845365"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862086"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>Informazioni sulla chiave di disponibilità per la chiave del cliente di Office 365
 
@@ -94,7 +94,7 @@ Questa operazione è proporzionale al numero di siti nell'organizzazione. Dopo a
 
 ## <a name="how-exchange-online-and-skype-for-business-use-the-availability-key"></a>Come Exchange Online e Skype for business utilizzano il codice di disponibilità
 
-Quando si crea una funzionalità di protezione esecuzione programmi con il codice cliente, Office 365 genera una chiave del criterio di crittografia dei dati (chiave DEP) associata alla funzionalità di protezione esecuzione programmi. Il servizio crittografa il tasto DEP tre volte: una volta con ognuna delle chiavi del cliente e una volta con il tasto disponibilità. Solo le versioni crittografate del tasto DEP sono archiviate e una chiave DEP può essere decrittografata solo con le chiavi del cliente o con il tasto disponibilità. La chiave DEP viene quindi utilizzata per crittografare le chiavi delle cassette postali, che vengono quindi utilizzate per crittografare le singole cassette postali.
+Quando si crea una funzionalità di protezione esecuzione programmi con il codice cliente, Office 365 genera una chiave del criterio di crittografia dei dati (chiave DEP) associata alla funzionalità di protezione esecuzione programmi. Il servizio crittografa il tasto DEP tre volte: una volta con ognuna delle chiavi del cliente e una volta con il tasto disponibilità. Solo le versioni crittografate del tasto DEP sono archiviate e una chiave DEP può essere decrittografata solo con le chiavi del cliente o con il tasto disponibilità. La chiave DEP viene quindi utilizzata per crittografare le chiavi della cassetta postale, che crittografano le singole cassette postali.
   
 Office 365 segue questo processo per decrittografare e fornire dati quando i clienti utilizzano il servizio:
   
@@ -171,7 +171,7 @@ I sistemi automatizzati in Office 365 elaborano tutti i dati che scorre attraver
 
 ### <a name="exchange-online-and-skype-for-business-availability-key-logging"></a>Registrazione chiave della disponibilità di Exchange Online e Skype for business
 
-Exchange Online e Skype for business utilizzano automaticamente la chiave di disponibilità durante gli errori transitori. Quando si verifica questo fallback, Office 365 pubblica i log visibili al cliente accessibili dal centro sicurezza e conformità. Un record del registro di controllo per l'operazione di chiave di disponibilità viene generato ogni volta che questi servizi passano all'utilizzo del tasto disponibilità. Un nuovo tipo di record denominato "Customer Key Service Encryption" con tipo di attività "fallback alla chiave di disponibilità" consente agli amministratori di filtrare i risultati della ricerca del [Registro di controllo unificato](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) per visualizzare i record delle chiavi di disponibilità. Il record della chiave di disponibilità viene generato solo quando viene utilizzata la chiave del cliente per accedere ai dati e non per le chiavi gestite dal servizio Microsoft.
+Exchange Online e Skype for business utilizzano automaticamente la chiave di disponibilità durante gli errori transitori. Quando si verifica questo fallback, Office 365 pubblica i log visibili al cliente accessibili dal centro sicurezza e conformità. Ogni volta che questi servizi utilizzano il codice di disponibilità, viene generato un record del registro di controllo per l'operazione di chiave di disponibilità. Un nuovo tipo di record denominato "Customer Key Service Encryption" con tipo di attività "fallback alla chiave di disponibilità" consente agli amministratori di filtrare i risultati della ricerca del [Registro di controllo unificato](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) per visualizzare i record delle chiavi di disponibilità. Il record della chiave di disponibilità viene generato solo quando viene utilizzata la chiave del cliente per accedere ai dati e non per le chiavi gestite dal servizio Microsoft.
 
 I record di log includono attributi quali data, ora, attività, ID organizzazione e ID del criterio di crittografia dei dati. Il record è disponibile come parte dei log di controllo unificato di Office 365 ed è accessibile dalla scheda ricerca del registro di controllo del Centro sicurezza e conformità di Office 365.
 

@@ -1,5 +1,7 @@
 ---
 title: Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come creare e importare un tipo di informazioni riservate personalizzato per DLP nel Centro sicurezza e conformità.
-ms.openlocfilehash: d470d6c8184f87af1ad78aae2979c6b87ca81676
-ms.sourcegitcommit: 5de17ee0d88a8bec6c8b54bc576a9517ab6d0066
+ms.openlocfilehash: eba95bdb0bf442e143a3f7f3b701e8f46d641655
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41122455"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595683"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità
 

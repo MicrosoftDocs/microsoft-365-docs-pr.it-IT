@@ -1,5 +1,8 @@
 ---
 title: RGDP per Office Online Server e Server Office Web Apps
+description: Informazioni su come gestire i requisiti GDPR nell'ambiente Exchange Server locale.
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,13 +10,13 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: Informazioni su come gestire i requisiti GDPR nell'ambiente Exchange Server locale.
-ms.openlocfilehash: b1cf86beeeb195396e45e0bc262f1d1b81b21057
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 747959fcdf8840644e4b7de4de02eb250d062423
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "38749824"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596453"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>RGDP per Server Office Web Apps e Office Online Server
 

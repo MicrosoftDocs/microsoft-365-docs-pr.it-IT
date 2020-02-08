@@ -1,5 +1,7 @@
 ---
 title: Cercare i messaggi di posta elettronica ed eliminarli dall'organizzazione di Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usare la funzionalità di ricerca e rimozione nel Centro sicurezza e conformità di Office 365 per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: 53ec50ddd42e1d17580f4b1581ef8d8fe02f97bf
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259974"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41601553"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Cercare i messaggi di posta elettronica ed eliminarli dall'organizzazione di Office 365
 
@@ -43,7 +45,7 @@ ms.locfileid: "41259974"
     
 - Per eliminare i messaggi, è necessario usare PowerShell in Centro sicurezza e conformità. Per informazioni su come connettersi, vedere il [Passaggio 2](#step-2-connect-to-security--compliance-center-powershell).
     
-- È possibile rimuovere al massimo 10 elementi per ogni cassetta postale alla volta. Poiché la possibilità di cercare e di rimuovere i messaggi è uno strumento di intervento, questo limite garantisce che i messaggi vengano rimossi rapidamente dalle cassette postali. Lo scopo di questa funzionalità non è svuotare le cassette postali degli utenti. Per eliminare più di 10 elementi, è possibile usare il comando **Search-Mailbox -DeleteContent** in Exchange Online PowerShell. Vedere [Cercare ed eliminare i messaggi](search-for-and-delete-messagesadmin-help.md).
+- È possibile rimuovere al massimo 10 elementi per ogni cassetta postale alla volta. Poiché la possibilità di cercare e di rimuovere i messaggi è uno strumento di intervento, questo limite garantisce che i messaggi vengano rimossi rapidamente dalle cassette postali. Lo scopo di questa funzionalità non è svuotare le cassette postali degli utenti.
     
 - Il numero massimo di cassette postali supportato dalla ricerca di contenuto per eliminare gli elementi con un'operazione di ricerca e rimozione è 50.000. Se la ricerca di contenuto, creata nel [Passaggio 1](#step-1-create-a-content-search-to-find-the-message-to-delete), include più di 50.000 cassette postali di origine, l'azione di rimozione, creata nel Passaggio 3, non riuscirà. Vedere la sezione [Ulteriori informazioni](#more-information) per ottenere suggerimenti su come eseguire un'operazione di ricerca e rimozione su più di 50.000 cassette postali. 
     

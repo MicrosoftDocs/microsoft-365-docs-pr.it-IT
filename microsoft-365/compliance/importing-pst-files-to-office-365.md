@@ -1,5 +1,7 @@
 ---
 title: Panoramica dell'importazione di file PST dell'organizzazione in Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: "Per gli amministratori: informazioni sull'uso del servizio di importazione nel Centro sicurezza e conformità per importare dati di posta elettronica (file PST) nelle cassette postali degli utenti in Exchange Online. Questo argomento include le domande frequenti e spiega il funzionamento del processo di importazione PST."
-ms.openlocfilehash: 4e58be4e90429c2d39bbcf4c5ef362e659764d63
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+ms.openlocfilehash: eb916ef3f06cc8d58c962b5b05ea4524e9469e4b
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995286"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41600673"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>Panoramica dell'importazione di file PST dell'organizzazione in Office 365
 

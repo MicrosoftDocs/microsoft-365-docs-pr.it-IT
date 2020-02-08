@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3cbc0008841456e91dd2ffe6a9e5c78fba0ba43d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 87bb8faa13f34fbe299b6de82bdd9099eaaff5aa
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602673"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851853"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>Programma del valutatore registrato per la sicurezza delle informazioni del governo australiano (IRAP)
 
@@ -86,10 +86,14 @@ Iniziare con [cos'è IRAP?](https://www.cyber.gov.au/irap/what-irap) e seguirlo 
 - [Chi fornisce la formazione di IRAP?](https://acsc.gov.au/infosec/irap/training.htm)
 - [Informazioni sui requisiti di conformità e noncompliance](https://acsc.gov.au/infosec/irap/compliance.htm)
 
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilizzare il Punteggio di conformità di Microsoft per valutare i rischi
+
+[Microsoft Compliance Score](compliance-score.md) è una funzionalità di anteprima del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), utilizzare il modello di [IRAP](https://go.microsoft.com/fwlink/?linkid=2117913) preconfigurato per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
+
 ## <a name="resources"></a>Risorse
 
 - [Governo australiano ISM](https://acsc.gov.au/infosec/ism/index.htm)
 - [Pagina Australia del Microsoft Service Trust Portal (STP)](https://aka.ms/au-irap)
 - [Guide per la sicurezza e i gateway Australia](https://docs.microsoft.com/azure/azure-australia)
 - [Servizi cloud certificati ASD](https://acsc.gov.au/infosec/irap/certified_clouds.htm)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)

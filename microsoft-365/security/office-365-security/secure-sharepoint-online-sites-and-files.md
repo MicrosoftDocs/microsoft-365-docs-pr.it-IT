@@ -21,12 +21,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Riepilogo: suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.'
-ms.openlocfilehash: de0091c4a3bc0d1b531689c9b1410f4801179a31
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 29bd8ade5f32a2ba7e810d587d731d5036a372b6
+ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598483"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41830990"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteggere siti e file di SharePoint Online
 
@@ -160,7 +160,7 @@ Per la procedura di configurazione delle etichette di conservazione e dei criter
 
 Se necessario per lo scenario di sicurezza specifico, è possibile usare le etichette di riservatezza per applicare le protezioni che seguono i file ovunque vanno. Le etichette di riservatezza nel Centro conformità Microsoft 365 sono uguali alle etichette di Azure Information Protection. Per questa soluzione, si consiglia di usare un'etichetta di riservatezza o un'etichetta secondaria dell'etichetta di riservatezza Highly Confidential (Riservatezza elevata) per crittografare e concedere le autorizzazioni per i file che devono essere protetti con il massimo livello di sicurezza.
 
-Tenere presente che quando la crittografia dell'etichetta di riservatezza viene applicata ai file di Office 365, il servizio non può elaborare il contenuto di tali file. La creazione condivisa, eDiscovery, la ricerca, Delve e altre funzionalità di collaborazione non funzionano. I criteri di prevenzione della perdita dei dati funzionano solo con i metadati, incluse le etichette di conservazione, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.
+Se l'organizzazione non ha [abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files): tenere presente che se la crittografia delle etichette di riservatezza viene applicata ai file archiviati in Office 365, il servizio non può elaborare i contenuti di tali file. La creazione condivisa, eDiscovery, la ricerca, Delve e altre funzionalità di collaborazione non funzionano. I criteri di prevenzione della perdita dei dati funzionano solo con i metadati, incluse le etichette di conservazione, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.
 
 Per altre informazioni, vedere [Panoramica delle etichette di riservatezza](../../compliance/sensitivity-labels.md).
 

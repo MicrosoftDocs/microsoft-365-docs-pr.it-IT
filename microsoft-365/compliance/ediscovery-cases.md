@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilizzare il Centro sicurezza & conformità per creare e gestire i casi di eDiscovery nell'organizzazione. È possibile assegnare membri al caso, inserire posizioni di contenuto in attesa, eseguire ricerche di contenuto associate al caso e esportare i risultati della ricerca. È inoltre possibile preparare i dati dei casi per un'ulteriore analisi in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: f687f405b6b721ec3f3f1d94e11091c1023d1aea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6cc0cb0a709463be0e624162555dd221564b4dd3
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595141"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862106"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gestire i casi di eDiscovery nel Centro sicurezza e conformità
 
@@ -624,7 +624,5 @@ Se il caso in cui si sta tentando di eliminare contiene ancora le esenzioni, ver
     
     > [!NOTE]
     > La possibilità di conservare il contenuto wiki per un canale Microsoft Team o team (quando si posiziona il sito di SharePoint del team in attesa) è stata rilasciata il 22 giugno 2017. Se un sito del team è in attesa, il contenuto del wiki verrà mantenuto a partire da tale data. Tuttavia, se un sito del team è in attesa e il contenuto del wiki è stato eliminato entro il 22 giugno 2017, il contenuto del wiki non è stato mantenuto. 
-  
-  - Quando si posiziona un'esenzione in un team Microsoft, il blocco non si applica ai messaggi del canale privato. Vengono mantenuti solo i messaggi nei canali standard. Il supporto per la conservazione dei messaggi del canale privato è disponibile a breve.
 
 - **Come trovare l'URL per i siti di OneDrive for business?** Per raccogliere un elenco degli URL per i siti di OneDrive for business nell'organizzazione, in modo da poterli aggiungere a un'esenzione o a una ricerca associata a un caso di eDiscovery, vedere [creare un elenco di tutte le posizioni di OneDrive nell'organizzazione](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Lo script in questo articolo crea un file di testo che contiene un elenco di tutti i siti di OneDrive. Per eseguire questo script, è necessario installare e usare SharePoint Online Management Shell. Assicurarsi di aggiungere l'URL del dominio MySite dell'organizzazione a ogni sito OneDrive che si desidera includere nella ricerca. Si tratta del dominio che contiene tutti i siti di OneDrive, ad esempio, `https://contoso-my.sharepoint.com`. Di seguito viene riportato un esempio di sito OneDrive di un utente: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.

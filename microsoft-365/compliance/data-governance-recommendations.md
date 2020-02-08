@@ -1,7 +1,9 @@
 ---
 title: Come viene identificato il contenuto per i consigli sulla governance dei dati
+f1.keywords:
+- NOCSH
 ms.author: brendonb
-author: laurawi
+author: cabailey
 manager: laurawi
 ms.date: 1/15/2019
 audience: Admin
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Il Centro sicurezza e conformità di Office 365 fornisce consigli per la governance dei dati in base alla configurazione corrente dell'organizzazione e consente di impostare le opzioni necessarie con pochi clic. Alcuni di questi consigli rilevano specifici contenuti nell'organizzazione e propongono le azioni consigliate per gestirli. Ad esempio, un consiglio potrebbe rilevare elementi che includono contenuti di importanza strategica, come informazioni sul privilegio avvocato-cliente o su un accordo di riservatezza, e quindi consentire l'applicazione automatica di un'etichetta di conservazione a tali elementi per assicurare che vengano opportunamente classificati e conservati. Questo argomento fornisce un elenco dei consigli sulla governance dei dati che possono essere visualizzati e descrive il contenuto che viene rilevato per attivare ciascuno di essi.
-ms.openlocfilehash: e860a41b616be2265904775a63454aba1a6040c1
-ms.sourcegitcommit: 1c962bd0d51dc12419c4e6e393bb734c972b7e38
+ms.openlocfilehash: af3c08f568bb0b44e8454ee345a84308b53cf01f
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38708136"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595433"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>Come viene identificato il contenuto per i consigli sulla governance dei dati
 

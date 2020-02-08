@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 71cadaee5c9b4ddad83a02ed434afd6197fe8e00
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 4e5ee52f9158df64e80f057adcfbf49c45f6dc31
+ms.sourcegitcommit: d4941dd0b598fb315e2c87083246ec3b26bbc032
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628122"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41779031"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Office 365 nell'ambito del GDPR e del CCPA
 
@@ -1581,61 +1581,18 @@ La possibilità di limitare o rettificare i dati nei log generati dal sistema no
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>Accesso ed esportazione di log generati dal sistema
 
-Gli amministratori possono accedere ai log generati dal sistema associati all'uso da parte di un utente specifico dei servizi e delle applicazioni di Office 365. Per accedere ed esportare i log generati dal sistema:
+Il "diritto alla portabilità dei dati" consente a un interessato di richiedere una copia dei propri dati personali in un formato elettronico (ovvero un "formato che sia interoperabile, leggibile, di uso comune e strutturato") che possa essere trasmessa a un altro titolare del trattamento dei dati. Azure supporta questa caratteristica, consentendo all'organizzazione di esportare i dati in formato JSON nativo nel contenitore di Archiviazione di Azure specificato.
 
-1. Accedere a [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) ed effettuare l'accesso con le credenziali di amministratore globale di Office 365.
+>[!IMPORTANT]
+>È necessario essere un amministratore tenant per esportare i dati di un utente dal tenant.
 
-2. Nell'elenco a discesa **Privacy** nella parte superiore della pagina fare clic su **Richiesta DSR**.
+#### <a name="azure-active-directory"></a>Azure Active Directory
 
-3. Nella pagina **Richiesta DSR**, in **Log generati dal sistema**, fare clic su **Esportazione log di dati**.
+Per quanto riguarda i dati del cliente, Microsoft fornisce un portale ed esperienze nel prodotto per consentire all'amministratore tenant del cliente aziendale di gestire le richieste di esportazione per le informazioni personali relative a un utente finale.
 
-    Viene visualizzata **Esportazione log di dati**. Viene visualizzato un elenco di richieste di esportazione dati inviate dall'organizzazione.
+#### <a name="service-specific-interfaces"></a>Interfacce specifiche dei servizi
 
-4. Per creare una richiesta per un utente, fare clic su **Crea richiesta di esportazione dati**.
-
-Dopo aver creato una richiesta, questa verrà elencata nella pagina **Esportazione log di dati** in cui è possibile tenere traccia del relativo stato. Una volta completata la richiesta, è possibile fare clic su un collegamento per accedere ai log generati dal sistema, che verranno esportati nella posizione di archiviazione di Azure di dell'organizzazione entro 30 giorni dalla creazione della richiesta. I dati vengono salvati in un formato di file comune, leggibile dal computer, come JSON o XML. Se non si dispone di un account di Azure e di una posizione di archiviazione di Azure, è necessario creare un account di Azure e/o una posizione di archiviazione di Azure per l'organizzazione in modo che lo strumento di esportazione del log dei dati possa esportare i log generati dal sistema. Per ulteriori informazioni, vedere [Introduzione ad Archiviazione di Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction).
-
->[!NOTE]
->Quando si crea una richiesta di esportazione dei dati, i dati generati dal sistema per alcune applicazioni non verranno esportati tramite lo strumento Esportazione log di dati. Per esportare i dati per tali applicazioni, vedere [Additional steps to export system-generated log data](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data) (Ulteriore procedura di esportazione dei dati del log generato dal sistema).
-
-Di seguito viene fornito un riepilogo sull'accesso e sull'esportazione dei log generati dal sistema tramite lo strumento Esportazione log di dati:
-
-- **Quanto tempo impiega lo strumento di esportazione di log di dati di Microsoft per completare una richiesta?:** ciò può dipendere da diversi fattori. Generalmente l'operazione deve essere completata in uno o due giorni, ma può richiedere fino a 30 giorni.
-
-- **In quale formato sarà l'output?:** l'output è fornito in file leggibili strutturati come XML, CSV o JSON.
-
-- **Chi ha accesso allo strumento di esportazione di log di dati per inviare le richieste di accesso a log generati dal sistema?:** gli amministratori globali di Office 365 hanno accesso all'utilità di gestione dei log del GDPR.
-
-- **Quali dati vengono restituiti dallo strumento di esportazione di log di dati?:** lo strumento di esportazione di log di dati restituisce log generati dal sistema che vengono archiviati da Microsoft. I dati esportati includono vari servizi Microsoft, tra cui Office 365, Azure e Dynamics.
-
-- **Come vengono restituiti i dati all'utente?:** i dati vengono esportati nel percorso di archiviazione di Azure dell'organizzazione. Spetta agli amministratori dell'organizzazione stabilire come questi dati verranno mostrati/restituiti agli utenti.
-
-- **Che aspetto avranno i dati nei log generato dal sistema?:** esempio di un record di log generato dal sistema in formato JSON:
-
-   ```JSON
-   [{
-            "DateTime": "2017-04-28T12:09:29-07:00",
-             "AppName": "SharePoint",
-             "Action": "OpenFile",
-             "IP": "154.192.13.131",
-             "DevicePlatform": "Windows 1.0.1607"
-   }]
-   ```
-
->[!NOTE]
->Alcune funzionalità non consentono l'esportazione o l'eliminazione dei log generati dal sistema contenenti informazioni riservate per mantenere l'integrità di tali informazioni per motivi di sicurezza e controllo.
-
-I dati di utilizzo dei prodotti e dei servizi per alcuni dei servizi usati più di frequente, ad esempio Exchange Online, SharePoint Online, Skype for Business, Yammer e i Gruppi di Office 365, possono essere recuperati anche eseguendo una ricerca nel log di controllo di Office 365 nel Centro di sicurezza e conformità. Per altre informazioni, vedere [Usare lo strumento di ricerca nel log di controllo di Office 365](#use-the-office-365-audit-log-search-tool-in-dsr-investigations) nelle indagini DSR nell'appendice A. L'uso del log di controllo può essere di interesse perché è possibile assegnare autorizzazioni ad altri utenti dell'organizzazione, ad esempio al responsabile della conformità per eseguire ricerche nel log di controllo per accedere ai dati.
-
-#### <a name="national-clouds"></a>Cloud nazionali
-
-Un amministratore IT globale deve eseguire le operazioni seguenti per esportare i dati del log generato dal sistema nei cloud nazionali indicati di seguito:
-
-- Office 365 Germany: [accedere a Microsoft Service Trust Portal per la Germania](https://aka.ms/MicrosoftSTPGermany) e completare i passaggi descritti in precedenza.
-
-- Office 365 US Government: [accedere al portale di amministrazione di Office 365](https://portal.office365.us) e inviare una richiesta al Supporto tecnico Microsoft.
-
-- Office 365 gestito da 21Vianet (Cina): [accedere al portale di amministrazione di Office 365 gestito da 21Vianet](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) e quindi accedere a **Commercio** > **Abbonamento** > **Privacy** > **GDPR** e immettere le informazioni richieste.
+Microsoft consente di individuare i dati dei clienti direttamente tramite le API (Application Programming Interface) o le interfacce utente (UI) pre-esistenti per servizi specifici. Maggiori dettagli in merito sono disponibili nella documentazione di riferimento dei relativi servizi, in cui vengono descritte le operazioni CRUD (Create, Read, Update, Delete) applicabili.
 
 ### <a name="deleting-system-generated-logs"></a>Eliminazione di log generati dal sistema
 

@@ -1,5 +1,7 @@
 ---
 title: Panoramica delle etichette di conservazione
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le etichette di conservazione in Office 365 aiutano a identificare le azioni corrette da eseguire per ogni contenuto. Con le etichette di conservazione è possibile classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È possibile utilizzare le etichette di conservazione per implementare la gestione dei record in Office 365.
-ms.openlocfilehash: 9327e23a25143fa032ea9501a9d89ec6f47950bd
-ms.sourcegitcommit: 5b8a1b4c71f695c6638ae943264af11084d6dc64
+ms.openlocfilehash: 541c1727bfc1ca2132120aadff6330a1a9ac5c0a
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023370"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41585765"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 

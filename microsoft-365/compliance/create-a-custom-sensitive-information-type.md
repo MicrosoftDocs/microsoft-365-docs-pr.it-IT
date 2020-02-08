@@ -1,5 +1,7 @@
 ---
 title: Creare un tipo di informazioni sensibili personalizzato nel Centro sicurezza e conformità
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità.
-ms.openlocfilehash: 12a44fcc4fb5228f1e1d901502c1e6dd0e2582af
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 7f7c4c787bff6fa9d4c644b5640d05b9320686ed
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806609"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596213"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Creare un tipo di informazioni sensibili personalizzato nel Centro sicurezza e conformità

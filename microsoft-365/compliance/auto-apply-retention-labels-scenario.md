@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Questo scenario di soluzione mostra come gestire il ciclo di vita dei documenti relativi a un prodotto archiviati in SharePoint Online attraverso le etichette di conservazione di Office 365. Questa operazione viene eseguita usando i metadati del documento per classificarne il contenuto, nello specifico applicando automaticamente le etichette di conservazione di Office 365 e configurando la conservazione basata su eventi.
-ms.openlocfilehash: 7e0c688502922903cf2c17345713579bf04cc55a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca3dd4699a608d2e3313efa3c10fc61b72f9b36e
+ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596373"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628112"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gestire il ciclo di vita dei documenti di SharePoint con le etichette di conservazione
 
@@ -348,3 +348,9 @@ Nella schermata precedente, si può vedere anche che esiste un'altra proprietà 
 ## <a name="summary"></a>Riepilogo
 
 Questo articolo ha illustrato uno scenario di gestione dei documenti in cui è stata applicata automaticamente un'etichetta di conservazione basata su una colonna del sito in SharePoint. In seguito, si è fatto ricorso alla conservazione basata su eventi e a Microsoft Flow per attivare in modo automatico l'inizio del periodo di conservazione in base a un evento esterno.
+
+## <a name="credits"></a>Riconoscimenti
+
+Questo scenario è stato realizzato da: 
+
+Frederic Lapierre<br/>Principal Consultant presso Servizi Microsoft

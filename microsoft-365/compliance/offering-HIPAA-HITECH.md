@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9224261cd0700796bdeccd35b68995c99300e591
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: d6f6dc2cc8cb9a36816fa843fcea969d65c94dac
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628092"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851893"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Portabilità e responsabilità dell'assicurazione malattia (HIPAA) & atti HITECH
 
@@ -51,7 +51,7 @@ I servizi cloud di Microsoft Enterprise sono coperti anche da valutazioni FedRAM
 
 Informazioni sui vantaggi di HIPAA e HITECH sul cloud Microsoft: [leggere la storia dei clienti di zwanger-Pesiri radiologia](https://customers.microsoft.com/story/radiology-clinics-ease-compliance-drive-innovation-with-cloud-based-data-network)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Azure e Azure per enti pubblici](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -78,7 +78,7 @@ Ottenere un vantaggio per sfruttare i vantaggi del cloud per le soluzioni di dat
 
 Microsoft offre alle aziende qualificate o ai propri fornitori una BAA che copre i servizi Microsoft in ambito.
 
-Per i servizi cloud Microsoft: il [contratto di associazione di business HIPAA](https://aka.ms/BAA) è disponibile tramite le condizioni dei servizi online per impostazione predefinita per tutti i clienti che sono soggetti alle entità o ai soci aziendali in HIPAA. Vedere "Microsoft in-scope Cloud Services" in questa pagina Web per l'elenco dei servizi cloud coperti da questa BAA.
+Per i servizi cloud Microsoft: il [contratto di associazione di business HIPAA](https://aka.ms/BAA) è disponibile tramite le condizioni dei servizi online per impostazione predefinita per tutti i clienti che sono soggetti alle entità o ai soci aziendali in HIPAA. Vedere ' Microsoft in-scope Cloud Services ' in questa pagina Web per l'elenco dei servizi cloud coperti da questa BAA.
 
 Per i servizi di Microsoft Professional Services: la modifica dell'associazione di business HIPAA è disponibile per i servizi professionali di Microsoft in ambito su richiesta al rappresentante dei servizi Microsoft.
 
@@ -102,16 +102,20 @@ Per assistere i clienti con questa attività, Microsoft ha pubblicato queste gui
 - La [Guida pratica alla progettazione di soluzioni di integrità sicure tramite Microsoft Azure](https://aka.ms/azureindustrysecurity) consente di comprendere meglio le operazioni necessarie per adottare correttamente un servizio cloud in modo sicuro.
 - [L'indirizzamento dei requisiti di sicurezza e privacy HIPAA in Microsoft Cloud](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offre una breve panoramica sui requisiti di regolamentazione. Viene inoltre fornita un'analisi dettagliata del modo in cui sono stati creati i servizi cloud di Microsoft con le metodologie che corrispondono a tali requisiti e le linee guida su come creare soluzioni pronte per la conformità.
 
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilizzare il Punteggio di conformità di Microsoft per valutare i rischi
+
+[Microsoft Compliance Score](compliance-score.md) è una funzionalità di anteprima del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), utilizzare il [modello HIPAA Office 365](https://go.microsoft.com/fwlink/?linkid=2118005) preconfigurato e il [modello HIPAA Intune](https://go.microsoft.com/fwlink/?linkid=2118006) per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
+
 ## <a name="resources"></a>Risorse
 
 - [Regola omnibus HIPAA](https://aka.ms/HIPAA-omnibus) (la normativa finale-modifica delle regole HIPAA)
-- [Hub dei controlli comuni del framework di conformità Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
+- [Framework di conformità dell'hub dei controlli comuni di Microsoft](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Condizioni di Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Understanding HIPAA compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 maggio 2016)
 - [Guida all'implementazione di Azure HIPAA](https://aka.ms/azure-hipaa-guide)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
+## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
 Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).

@@ -1,5 +1,7 @@
 ---
 title: Panoramica sulla prevenzione della perdita dei dati
+f1.keywords:
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -16,15 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: I criteri di prevenzione della perdita dei dati del Centro sicurezza e conformità permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Office 365.
-ms.openlocfilehash: e2fab1df550382f44e09629e5b82a079d6f6555f
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 8d87367f86d3fd0f9ec5aab19ccd191a1cd20f17
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40806619"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595423"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
+<!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
 > Le funzionalità di prevenzione della perdita dei dati sono state aggiunte di recente ai messaggi di chat e canali di Microsoft Teams per gli utenti con licenza di Office 365 Advanced Compliance, che è disponibile come opzione indipendente e incluso in Office 365 E5 e Microsoft 365 E5 Compliance. Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le licenze dei servizi a livello di tenant di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 

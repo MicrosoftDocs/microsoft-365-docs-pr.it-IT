@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: a907594120ebb2a6ed49c2dde3a83262f6cf1a62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b70ea48a7784c6cfc9bff4131fdecab339d4d417
+ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600693"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862036"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurare un connettore per l'importazione dei dati HR
 
@@ -211,6 +211,6 @@ Per assicurarsi che i dati HR più recenti dell'organizzazione siano disponibili
 
    ![La nuova attività viene visualizzata nella raccolta di utilità di pianificazione](media/HRConnectorTaskSchedulerLibrary.png)
 
-   L'ultima volta e la volta successiva che lo script è stato pianificato per l'esecuzione viene visualizzato. È possibile fare doppio clic sull'attività per modificarla.
+   L'ultima volta che lo script è stato eseguito e la volta successiva che viene pianificata l'esecuzione viene visualizzata. È possibile fare doppio clic sull'attività per modificarla.
 
    È inoltre possibile verificare l'ultima volta che lo script è stato eseguito nella pagina a comparsa del connettore HR corrispondente nel centro conformità.

@@ -7,26 +7,29 @@ audience: itpro
 ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
-author: PoulChapman
-ms.author: olholder
-manager: pchapman
+author: robmazz
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+manager: laurawi
 ms.collection:
 - GDPR
 - M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: 96cb6820e24a378351c82264929c3aec99e6d4f6
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: 08c6bfbcfc571103939d0b824d5fda0fcb789bb6
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39624799"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596483"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per la famiglia Visual Studio nell'ambito del GDPR e del CCPA
 
 Il [Regolamento generale sulla protezione dei dati (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) dell'Unione europea garantisce alle persone (denominate nel regolamento _interessati_) il diritto di gestire i loro dati personali. I dati personali sono ampiamente descritti nel GDPR come dati che si riferiscono a una persona fisica identificata o identificabile. Il GDPR garantisce agli interessati diritti specifici sui propri dati personali; tali diritti includono la possibilità di ottenere delle copie dei dati personali, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico. Una richiesta formale di un interessato rivolta a un titolare (un impiegato o un tipo di agenzia o organizzazione che detiene il controllo dei dati personali) in merito a un'operazione da effettuare sui propri dati personali è denominata _Richiesta dell'interessato_.
 
-Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo di determinate divulgazioni, protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". In generale, la definizione di vendite include la condivisione di dati a titolo oneroso. Per altre informazioni sul CCPA, vedere il [California Consumer Privacy Act](offering-ccpa.md) e le [Domande frequenti sul California Consumer Privacy Act](ccpa-faq.md).
+Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo per determinate divulgazioni, di protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". In generale, la definizione di vendite include la condivisione di dati a titolo oneroso. Per altre informazioni sul CCPA, vedere il [California Consumer Privacy Act](offering-ccpa.md) e le [Domande frequenti sul California Consumer Privacy Act](ccpa-faq.md).
 
 Per informazioni generali sul GDPR, consultare la [sezione riguardante il GDPR del Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 

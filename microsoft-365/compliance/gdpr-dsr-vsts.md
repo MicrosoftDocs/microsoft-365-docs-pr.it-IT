@@ -6,26 +6,29 @@ audience: itpro
 ms.prod: devops
 ms.topic: article
 ms.date: 06/11/2018
-author: jitojo
-ms.author: jominana
-manager: douge
+author: robmazz
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+manager: laurawi
 ms.collection:
 - GDPR
 - M365-security-compliance
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af519ed13b8c647d359ea9c8d1faaff2c34209e
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: a803dfd8d917ff0c2753b5ee87d9d619bc2f6222
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "39268847"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41596473"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Azure DevOps Services nell'ambito del GDPR e del CCPA
 
 Il [Regolamento generale sulla protezione dei dati (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) dell'Unione europea garantisce alle persone, denominate come *interessati* nel regolamento, il diritto di gestire i dati personali raccolti da un *titolare del trattamento dei dati*. Il titolare del trattamento dei dati, o semplicemente *titolare*, è il datore di lavoro o un'altra organizzazione o agenzia. I dati personali sono descritti nel GDPR come dati che si riferiscono a una persona fisica identificata o identificabile. Il GDPR garantisce agli interessati diritti specifici sui propri dati personali. Tali diritti includono la possibilità di ottenere delle copie dei dati personali, richiedere di apportare delle modifiche ai dati, limitare il trattamento dei dati, eliminarli o riceverli in un formato elettronico affinché possano essere trasferiti a un altro titolare. Una richiesta formale di un interessati rivolta a un titolare in merito a un'operazione da effettuare sui propri dati personali è denominata *Richiesta DSR* (Data Subject Rights, Diritti dell'interessato) o DSR.
 
-Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo per determinate divulgazioni, di protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". In generale, le vendite sono definite per includere la condivisione dei dati per un motivo importante. Per altre informazioni sul CCPA, vedere il [California Consumer Privacy Act](offering-ccpa.md) e le [Domande frequenti sul California Consumer Privacy Act](ccpa-faq.md).
+Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo per determinate divulgazioni, di protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". In generale, la definizione di vendite include la condivisione di dati a titolo oneroso. Per altre informazioni sul CCPA, vedere il [California Consumer Privacy Act](offering-ccpa.md) e le [Domande frequenti sul California Consumer Privacy Act](ccpa-faq.md).
 
 Per informazioni generali sul GDPR, consultare la [sezione riguardante il GDPR del Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 

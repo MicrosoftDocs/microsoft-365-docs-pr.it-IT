@@ -1,5 +1,7 @@
 ---
 title: Ricerca contenuto in Office 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Office 365, gruppi di Yammer e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
-ms.openlocfilehash: ea4359c594a169abbc518d6fe0f5ebdb4441fc56
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 8de78da9328d7f8c0a76edab5703821bdb0e6099
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558403"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41595723"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 

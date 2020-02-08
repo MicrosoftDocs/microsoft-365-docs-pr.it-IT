@@ -1,5 +1,7 @@
 ---
 title: Abilitare le cassette postali di archiviazione nel Centro sicurezza e conformità
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Usare il Centro sicurezza e conformità in Office 365 per abilitare le cassette postali di archiviazione per supportare la conservazione dei messaggi, eDiscovery e i requisiti dei blocchi dell'organizzazione.
-ms.openlocfilehash: 4c115b53f5e47caa785b32c3a356a6a52af83b41
-ms.sourcegitcommit: 178ecb21cacdeaf440f3df2fe6e539e9127fcf15
+ms.openlocfilehash: dfbbb3fa238f7b04fab6742f3eb0c041f39c72d0
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "40850900"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41593259"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Abilitare le cassette postali di archiviazione nel Centro sicurezza e conformità
   

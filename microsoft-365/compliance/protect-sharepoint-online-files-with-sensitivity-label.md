@@ -1,5 +1,7 @@
 ---
 title: Proteggere i file di SharePoint Online con un'etichetta di riservatezza
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Riepilogo: Applicare la protezione delle informazioni di Azure per proteggere i file in un sito del team di SharePoint Online di livello estremamente riservato.'
-ms.openlocfilehash: 51950bd3c9790dedd2801e98234ff16470db6421
-ms.sourcegitcommit: 58a7bd70a4bcf52530baf5f82507fd5dc4455fd9
+ms.openlocfilehash: 296d5774b13699c25efda6d036e097344d4fefeb
+ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39668804"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41855365"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>Proteggere i file di SharePoint Online con un'etichetta di riservatezza
 
@@ -34,7 +36,7 @@ La procedura fa parte di una soluzione più ampia per configurare la protezione 
 L'uso delle etichette di riservatezza per i file in SharePoint Online non è consigliato per tutti i clienti, ma è disponibile come opzione per i clienti che hanno l'esigenza di questo livello di protezione per un sottoinsieme di file.
 
 Alcune note importanti su questa soluzione:
-- Quando si applica la crittografia ai file archiviati in Office 365, il servizio non è in grado di elaborare il contenuto di questi file. La creazione condivisa, eDiscovery, la ricerca, Delve e altre funzionalità di collaborazione non funzionano. I criteri di prevenzione della perdita dei dati (DLP) funzionano solo con i metadati, incluse le etichette di Office 365, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.
+- Se l'organizzazione non ha [abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files): se la crittografia viene applicata ai file archiviati in Office 365, il servizio non può elaborare i contenuti di tali file. La creazione condivisa, eDiscovery, la ricerca, Delve e altre funzionalità di collaborazione non funzionano. I criteri di prevenzione della perdita dei dati (DLP) funzionano solo con i metadati, incluse le etichette di Office 365, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.
 
 - Questa soluzione prevede che un utente selezioni un'etichetta che applica la protezione. Se è necessaria la crittografia automatica e la possibilità che SharePoint indicizzi e controlli i file, è consigliabile usare Information Rights Management (IRM) in SharePoint Online. Quando si configura una raccolta di SharePoint per IRM, i file vengono crittografati automaticamente quando vengono scaricati per la modifica.  SharePoint IRM ha alcune limitazioni che potrebbero influire sulla decisione. Per altre informazioni, vedere [Configurare Information Rights Management (IRM) nell'interfaccia di amministrazione di SharePoint](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
 
@@ -67,8 +69,6 @@ Esistono due modi per concedere agli utenti esterni l'accesso ai file protetti c
 
 ## <a name="see-also"></a>Vedere anche
 
-[Protezione di file e siti di SharePoint Online](../security/office-365-security/secure-sharepoint-online-sites-and-files.md)
-  
-[Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni agili](/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adozione del cloud e soluzioni ibride](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
