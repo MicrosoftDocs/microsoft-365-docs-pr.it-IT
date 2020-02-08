@@ -463,11 +463,9 @@
                   href: ./office-365-security/deploy-teams-sensitivity-labels.md
                 - name: Proteggere Teams per i file in un ambiente di sviluppo/test
                   href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
-            - name: Proteggere siti e file di SharePoint Online
-              href: ./office-365-security/secure-sharepoint-online-sites-and-files.md
-              items:
-                - name: Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test
-                  href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
+            - name: Proteggere i siti di SharePoint Online in un ambiente di sviluppo/test
+              href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
+              items: null
             - name: Integrazione server SIEM
               href: ./office-365-security/siem-server-integration.md
             - name: Exchange Online Protection
