@@ -74,7 +74,7 @@ L’impostazione e la configurazione della classificazione basata su EDM implica
 
 2. Strutturare i dati sensibili nel file .csv in modo che la prima riga includa i nomi dei campi usati per la classificazione basata su EDM. Nel file .csv potrebbero essere presenti nomi di campo, come "ssn", "birthdate", "firstname", "lastname" e così via. Ad esempio, il file .csv è denominato  *PatientRecords.csv* e le relative colonne sono  *PatientID*,  *MRN*,  *LastName*,  *FirstName*,  *SSN*  e così via.
 
-3. Definire lo schema per il database delle informazioni sensibili nel formato .xml (come riportato nell'esempio seguente). Assegnare un nome al file **edm.xml**dello schema e configurarlo in modo che per ogni colonna del database sia presente una linea che usi la sintassi: 
+3. Definire lo schema per il database delle informazioni sensibili nel formato .xml (come riportato nell'esempio seguente). Assegnare al file dello schema il nome  **edm.xml** e configurarlo in modo che per ogni colonna del database sia presente una riga che usi la sintassi: 
 
 `\<Field name="" searchable=""/\>`.
 
@@ -132,7 +132,7 @@ Ora che lo schema del database delle informazioni riservate è definito, il pass
 
 Se si vogliono apportare modifiche al file **edm.xml**, ad esempio modificare i campi usati per la classificazione basata su EDM, procedere come segue:
 
-1. Modificare il file **edm.xml** (il file descritto nella sezione  [Definisci lo schema](#define-the-schema-for-your-database-of-sensitive-information)  di questo articolo).
+1. Modificare il file **edm.xml** (il file descritto nella sezione  [Definire lo schema](#define-the-schema-for-your-database-of-sensitive-information)  di questo articolo).
 
 2. [Connettersi a PowerShell per Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
@@ -253,7 +253,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 A questo punto è stata configurata la classificazione basata su EDM. Il passaggio successivo consiste nell'indicizzare i dati sensibili e poi di caricarli.
 
-Usare la procedura precedente in cui lo schema di PatientRecords definisce cinque campi come ricercabili:  *PatientID*,  *MRN*,  *SSN*,  *Phone* e  *DOB*. Il pacchetto di regole di esempio include questi campi e fa riferimento al file schema di database (**edm.xml**), con un unico elemento  *ExactMatch*  per ogni campo ricercabile. Considerare l'elemento ExactMatch seguente:
+Usare la procedura precedente in cui lo schema di PatientRecords definisce cinque campi come ricercabili:  *PatientID*,  *MRN*,  *SSN*,  *Phone* e  *DOB*. Il pacchetto di regole di esempio include questi campi e fa riferimento al file di schema del database (**edm.xml**), con un unico elemento  *ExactMatch*  per ogni campo ricercabile. Considerare l'elemento ExactMatch seguente:
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >

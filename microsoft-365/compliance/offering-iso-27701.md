@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4bc6663efe704205787e1c69d4e6dd06122419c3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5cd89e0f31d650e85de20b40e3870de0ef8c7cc3
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601913"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851833"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 Privacy Information Management System (PIMS)
 
@@ -39,7 +39,7 @@ Richiedere ai fornitori la certificazione secondo lo standard PIMS consentirà d
 
 ## <a name="too-many-regulatory-requirements-to-juggle"></a>L'eccessivo numero di requisiti normativi da gestire
 
-ISO/IEC 27701 include un allegato contenente i controlli operativi dello standard mappati per i requisiti rilevanti nel GDPR per titolari e responsabili. Tale mapping rappresenta solo un esempio di come le normative sulla privacy possono essere rese operative con il framework ISO. Man mano che i mapping con altre normative diventano disponibili e vengono convalidati, i controlli operativi dello standard possono essere trasferiti direttamente dalla revisione normativa all'implementazione. Questo framework universale consente alle organizzazioni di attuare in modo affidabile i requisiti normativi pertinenti, senza dover ripetere precedenti operazioni. Un progetto open source in sospeso è stato avviato per consentire alla community della privacy di eseguire il mapping di altre normative e di convalidare i mapping esistenti. L'annuncio verrà rilasciato prossimamente.
+ISO/IEC 27701 include un allegato contenente i controlli operativi dello standard mappati per i requisiti rilevanti nel GDPR per titolari e responsabili. Tale mapping rappresenta solo un esempio di come le normative sulla privacy possono essere rese operative con il framework ISO. Man mano che i mapping con altre normative diventano disponibili e vengono convalidati, i controlli operativi dello standard possono essere trasferiti direttamente dalla revisione normativa all'implementazione. Questo framework universale consente alle organizzazioni di implementare in modo affidabile i requisiti normativi pertinenti senza dover partire da zero. Un progetto open source in sospeso è stato avviato per consentire alla community della privacy di eseguire il mapping di altre normative e di convalidare i mapping esistenti. L'annuncio verrà rilasciato prossimamente.
 
 ## <a name="too-costly-to-audit-regulation-by-regulation"></a>Il costo eccessivo per il controllo di ogni singola normativa
 
@@ -71,6 +71,10 @@ Indipendentemente dalle dimensioni dell'organizzazione e che si tratti di un tit
 
 - [Certificazione ISO/IEC 27701 per Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
 - [Report di valutazione ISO/IEC 27701 per Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
+
+[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [configurato Punteggio di conformità](compliance-score-setup.md), usare il [modello ISO 27701](https://go.microsoft.com/fwlink/?linkid=2117915) preconfigurato per aiutare l'organizzazione a rispettare i requisiti di questa normativa.
 
 ## <a name="resources"></a>Risorse
 

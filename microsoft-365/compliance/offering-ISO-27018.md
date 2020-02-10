@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 016d0f9fdd0795ea709f168a0fc8ba027f029e8f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6791754e0d34ca2ca564a805269bb9fdc216d0ad
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602233"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851873"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>Code of Practice per la protezione dei dati personali nel cloud ISO/IEC 27018
 
@@ -106,7 +106,7 @@ Questo Code of Practice si applica ai provider di servizi cloud che elaborano pe
 
 Nel contesto di ISO/IEC 27018:
 
-- I "titolari" controllano la raccolta, la conservazione, l'elaborazione o l'uso delle informazioni personali; includono le persone che controllano le informazioni per conto di un'altra società.
+- I "titolari" controllano la raccolta, la conservazione, l'elaborazione o l'uso delle informazioni personali; includono chi controlla le informazioni per conto di un'altra società.
 - I "responsabili del trattamento" elaborano le informazioni per conto dei titolari, non prendono decisioni su come usare le informazioni o sugli scopi dell'elaborazione. Microsoft, come fornitore di servizi cloud aziendali ai proprio clienti, è un responsabile del trattamento delle informazioni personali.
 
 **Dove posso consultare le informazioni sulla conformità di Microsoft agli standard ISO/IEC 27018?**
@@ -120,6 +120,10 @@ Nel contesto di ISO/IEC 27018:
 Sì. Se la conformità agli standard ISO/IEC 27018 è importante per l'azienda e per le implementazioni distribuite in qualsiasi servizio cloud aziendale Microsoft rientrante nell'ambito, è possibile usare l'attestazione di conformità di Microsoft con ISO/IEC 27018, con la certificazione Microsoft per ISO/IEC 27001, nella propria valutazione della conformità.
 
 Tuttavia, si ha la responsabilità di affidare l'incarico a un perito affinché valuti la propria implementazione in termini di conformità e per i controlli e i processi all'interno dell'organizzazione.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
+
+[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [configurato Punteggio di conformità](compliance-score-setup.md), usare il [modello ISO 27018](https://go.microsoft.com/fwlink/?linkid=2117523) preconfigurato per aiutare l'organizzazione a rispettare i requisiti di questa normativa.
 
 ## <a name="resources"></a>Risorse
 

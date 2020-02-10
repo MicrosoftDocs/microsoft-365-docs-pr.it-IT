@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d88ef57ea9340d95073db7f5ddd4423d5275c840
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef99b36737627a9ea457e7d4235b42241f34248b
+ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602253"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41851813"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>Standard di gestione della sicurezza delle informazioni ISO/IEC 27001:2013
 
@@ -141,6 +141,10 @@ L'adozione di ISO/IEC 27001 è un impegno strategico. Come punto di partenza, co
 **Posso usare la conformità ISO/IEC 27001 dei servizi Microsoft nel processo di certificazione della mia organizzazione?**
 
 Sì. Se l'azienda richiede la certificazione ISO/IEC 27001 per le implementazioni distribuite su servizi Microsoft, è possibile usare la certificazione applicabile nella propria valutazione della conformità. Tuttavia, si ha la responsabilità di affidare l'incarico a un perito che valuti l'implementazione aziendale e i controlli e processi all'interno dell'organizzazione in termini di conformità agli standard ISO/IEC 27001.
+
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
+
+[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [configurato Punteggio di conformità](compliance-score-setup.md), usare il [modello ISO 27001](https://go.microsoft.com/fwlink/?linkid=2117914) preconfigurato per aiutare l'organizzazione a rispettare i requisiti di questa normativa.
 
 ## <a name="resources"></a>Risorse
 

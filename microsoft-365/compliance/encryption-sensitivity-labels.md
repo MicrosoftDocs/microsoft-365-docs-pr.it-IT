@@ -1,5 +1,7 @@
 ---
 title: Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -13,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
-ms.openlocfilehash: 55a4096fb802608ac8c0e9777dc20b1026ba6b60
-ms.sourcegitcommit: 8ac1b6586678035050fc422e6fb503fa478be397
+ms.openlocfilehash: e27e130e96086dd37dd1cf5f49c30ebc764a8958
+ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962315"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41830950"
 ---
-# <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
+# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
 Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Ad esempio, con le impostazioni di crittografia di un'etichetta di riservatezza, è possibile proteggere i contenuti per determinare le condizioni seguenti:
 
@@ -35,29 +37,82 @@ Quando un documento o un messaggio di posta elettronica è crittografato, l'acce
 - Il contenuto rimane crittografato indipendentemente da dove risiede il file, all'interno o all'esterno dell'organizzazione, anche nel caso in cui il file venisse rinominato.
 - Il contenuto resta crittografato sia se il file è archiviato (ad esempio, in un account OneDrive) sia se è in transito (ad esempio, un messaggio di posta elettronica inviato).
 
-Infine, quando si crea un'etichetta di riservatezza, gli amministratori possono scegliere di:
+Infine, quando si configura la crittografia nelle etichette di riservatezza come amministratore, è possibile scegliere di:
 
 - **Assegnare le autorizzazioni adesso**, in modo da determinare esattamente quali utenti ottengono le autorizzazioni per il contenuto con tale etichetta.
 - **Consentire agli utenti di assegnare le autorizzazioni** quando applicano l'etichetta al contenuto. In questo modo è possibile consentire agli utenti dell'organizzazione una certa flessibilità, che potrebbe essere necessaria per collaborare e svolgere il proprio lavoro.
 
-Le impostazioni di crittografia sono disponibili quando si crea un'etichetta di riservatezza nel Centro conformità Microsoft 365, Centro sicurezza Microsoft 365 o Centro sicurezza e conformità di Office 365. Nel riquadro di spostamento sinistro scegliere **Classificazione** > **Etichetta di riservatezza** > **Crea un'etichetta**.
+Le impostazioni di crittografia sono disponibili quando si [crea un'etichetta di riservatezza](create-sensitivity-labels.md) nel Centro conformità Microsoft 365, nel Centro sicurezza Microsoft 365 o nel Centro sicurezza e conformità di Office 365.
 
 ## <a name="how-encryption-works"></a>Modalità di funzionamento della crittografia
 
-La crittografia utilizza Azure Rights Management (Azure RMS). Azure RMS usa i criteri di crittografia, identità e autorizzazione. Per ulteriori informazioni, vedere [Informazioni su Microsoft Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)
+La crittografia usa il servizio Azure Rights Management (Azure RMS) di Azure Information Protection. Questa soluzione di protezione usa criteri di crittografia, identità e autorizzazione. Per ulteriori informazioni, vedere [Informazioni su Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) nella documentazione di Azure Information Protection. 
 
-## <a name="how-to-turn-on-encryption-for-a-sensitivity-label"></a>Come attivare la crittografia per un'etichetta di riservatezza
+Se si usa questa soluzione di crittografia, la caratteristica **utente con privilegi avanzati** garantisce che le persone e i servizi autorizzati possano sempre leggere e controllare i dati crittografati per l'organizzazione. Se necessario, la crittografia può essere rimossa o modificata. Per altre informazioni, vedere [Configurazione di utenti con privilegi avanzati per Azure Information Protection e servizi di individuazione o di ripristino dei dati](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
-Per iniziare, impostare **Crittografia** su **Attiva** e quindi scegliere se:
+## <a name="configuring-a-label-for-encryption"></a>Configurazione di un'etichetta per la crittografia
 
-- **Assegnare le autorizzazioni adesso**, in modo da determinare esattamente quali utenti ottengono le autorizzazioni per il contenuto con tale etichetta. Per ulteriori informazioni, vedere la sezione successiva [Assegnare le autorizzazioni adesso](#assign-permissions-now).
-- **Consentire agli utenti di assegnare le autorizzazioni** quando applicano l'etichetta al contenuto. In questo modo è possibile consentire agli utenti dell'organizzazione una certa flessibilità, che potrebbe essere necessaria per collaborare e svolgere il proprio lavoro. Per altre informazioni, vedere la sezione [Consentire agli utenti di assegnare le autorizzazioni](#let-users-assign-permissions) in questa pagina.
+Quando si [crea o si modifica un'etichetta di riservatezza](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), nella pagina **Crittografia** della procedura guidata, è possibile selezionare una delle opzioni seguenti:
+
+- **Nessuna**: l'impostazione predefinita per una nuova etichetta. Non viene applicata una nuova crittografia.
+- **Applica**: attiva la crittografia, quindi l'utente specifica le impostazioni di crittografia.
+- **Rimuovi**: rimuove la crittografia se il documento o il messaggio di posta elettronica è crittografato.
+
+> [!NOTE]
+> L'opzione **Rimuovi** è supportata solo dal client di etichettatura unificata di Azure Information Protection. Se si usa l'etichettatura predefinita, un'etichetta con questa opzione è visibile nelle app di Office e, se selezionata, il comportamento di crittografia è uguale a **Nessuna**.
+
+Configurazione delle opzioni di crittografia:
+
+![Opzioni delle etichette di riservatezza per la crittografia](media/encrytion-options-sensitivity-label.png)
+
+
+### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Cosa accade alla crittografia esistente in seguito all'applicazione di un'etichetta
+
+Se viene applicata un'etichetta di riservatezza a contenuto non crittografato, il risultato delle opzioni di crittografia selezionabili sarà di chiara interpretazione. Se, ad esempio, la crittografia è impostata su **Nessuna**, il contenuto rimane decrittografato.
+
+Tuttavia, il contenuto potrebbe essere già crittografato. Ad esempio, un altro utente può aver applicato:
+
+- Le proprie autorizzazioni, che includono le autorizzazioni definite dall'utente quando l'etichetta lo richiede, le autorizzazioni personalizzate del client di Azure Information Protection e la protezione del documento **Accesso limitato** da un'app di Office.
+- Un modello di protezione Azure Rights Management che consente di crittografare il contenuto in modo indipendente dall'etichetta. Questa categoria include le regole del flusso di posta che applicano la crittografia tramite protezione con diritti.
+- Un'etichetta che applica la crittografia con le autorizzazioni assegnate dall'amministratore.
+
+La tabella seguente identifica cosa accade alla crittografia esistente quando si applica un'etichetta di riservatezza a tale contenuto:
+
+| |**Crittografia: Nessuna**|**Crittografia: Applica**|**Crittografia: Rimuovi**|
+|:-----|:-----|:-----|:-----|
+|**Autorizzazioni specificate da un utente**|La crittografia originale viene mantenuta|Viene applicata una nuova crittografia dell'etichetta|La crittografia originale viene rimossa|
+|**Modello di protezione**|La crittografia originale viene mantenuta|Viene applicata una nuova crittografia dell'etichetta|La crittografia originale viene rimossa|
+|**Etichetta con autorizzazioni definite dall'amministratore**|La crittografia originale viene rimossa|Viene applicata una nuova crittografia dell'etichetta|La crittografia originale viene rimossa|
+
+Si noti che nei casi in cui viene applicata la nuova crittografia dell'etichetta o la crittografia originale viene rimossa, ciò si verifica solo se l'utente che applica l'etichetta dispone di un ruolo o diritto di utilizzo che supporta questa azione:
+- Il [diritto di utilizzo](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Esportazione o Controllo completo.
+- Il ruolo di [emittente di Rights Management o proprietario di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) o [utente con privilegi avanzati](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+
+Se l'utente non dispone di uno di questi diritti o ruoli, l'etichetta non può essere applicata, quindi la crittografia originale viene mantenuta. L'utente visualizza il messaggio seguente: **Non si dispone dell'autorizzazione per apportare questa modifica all'etichetta di riservatezza. Contattare il proprietario del contenuto.**
+
+Ad esempio, l'utente che applica Non inoltrare a un messaggio di posta elettronica può riapplicare l'etichetta al thread per sostituire o rimuovere la crittografia, perché è proprietario di Rights Management per il messaggio di posta elettronica. Tuttavia, ad eccezione degli utenti con privilegi avanzati, i destinatari di questo messaggio di posta elettronica non possono riapplicarvi etichette, perché non dispongono dei diritti di utilizzo necessari.
+
+#### <a name="email-attachments-for-encrypted-email-messages"></a>Allegati di posta elettronica per messaggi di posta elettronica crittografati
+
+Quando un messaggio di posta elettronica viene crittografato con un metodo, tutti i documenti di Office non crittografati allegati al messaggio erediteranno automaticamente le stesse impostazioni di crittografia.
+
+I documenti già crittografati e aggiunti come allegati mantengono sempre la crittografia originale. 
+
+## <a name="how-to-configure-encryption-settings-for-a-sensitivity-label"></a>Come configurare le impostazioni di crittografia per un'etichetta di riservatezza
+
+Quando si seleziona **Applica** nella pagina **Crittografia** della procedura guidata per creare o modificare un'etichetta di riservatezza, è possibile scegliere di:
+
+- **Assegnare le autorizzazioni adesso**, in modo da determinare esattamente quali utenti ottengono le autorizzazioni per il contenuto con applicata l'etichetta. Per altre informazioni, vedere la sezione successiva [Assegnare le autorizzazioni adesso](#assign-permissions-now).
+- **Consentire agli utenti di assegnare le autorizzazioni** quando applicano l'etichetta al contenuto. Con tale opzione è possibile consentire agli utenti dell'organizzazione una certa flessibilità, che potrebbe essere necessaria per collaborare e svolgere il proprio lavoro. Per altre informazioni, vedere la sezione [Consentire agli utenti di assegnare le autorizzazioni](#let-users-assign-permissions) in questa pagina.
 
 Ad esempio, se si ha un'etichetta di riservatezza denominata **Riservatezza elevata** da applicare al contenuto più riservato, è consigliabile decidere ora chi ottiene quali autorizzazioni per il contenuto.
 
 In alternativa, se si ha un'etichetta di riservatezza denominata **Contratti commerciali** e il flusso di lavoro dell'organizzazione richiede che le persone collaborino a questo contenuto con persone diverse e specifiche per ogni caso, è consigliabile consentire agli utenti di decidere chi ottiene le autorizzazioni quando assegnano l'etichetta. Questa flessibilità consente di migliorare la produttività degli utenti e ridurre le richieste rivolte agli amministratori per l’aggiornamento o la creazione di nuove etichette di riservatezza per situazioni specifiche.
 
+Scegliere di assegnare le autorizzazioni adesso o consentire agli utenti di assegnare le autorizzazioni: 
+
 ![Opzione per aggiungere autorizzazioni definite dall'utente o dall'amministratore](media/sensitivity-label-user-or-admin-defined-permissions.png)
+
 
 ## <a name="assign-permissions-now"></a>Assegnare le autorizzazioni adesso
 
@@ -67,26 +122,29 @@ Usare le opzioni seguenti per controllare chi può accedere ai documenti e ai me
 
 2. **Consentire l'accesso offline** sempre, mai o per un determinato numero di giorni in seguito all'applicazione dell'etichetta. Se si limita l'accesso offline su mai o per un determinato numero di giorni, al termine di tale intervallo di tempo, ogni utente dovrà ripetere l'autenticazione e registrare il proprio accesso. Per ulteriori informazioni, vedere la sezione successiva riguardo la licenza d'uso di Rights Management.
 
+Impostazioni per il controllo di accesso del contenuto crittografato:
+
 ![Impostazioni per le autorizzazioni definite dall'amministratore](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licenza d'uso di Rights Management per l'accesso offline
 
-Quando un utente apre un documento o un messaggio di posta elettronica protetto da un'etichetta di riservatezza, gli viene concessa una licenza d'uso di Azure Rights Management per quel contenuto. Questa licenza d'uso è un certificato che contiene i diritti di utilizzo dell'utente per il documento o il messaggio di posta elettronica e la chiave di crittografia usata per crittografare il contenuto. La licenza d'uso contiene anche una data di scadenza (se è stata impostata) e il periodo di validità della licenza d'uso.
+Quando un utente apre un documento o un messaggio di posta elettronica protetto dalla crittografia del servizio Azure Rights Management, all'utente viene concessa una licenza d'uso di Azure Rights Management per quel contenuto. Questa licenza d'uso è un certificato che contiene i diritti di utilizzo dell'utente per il documento o il messaggio di posta elettronica e la chiave di crittografia usata per crittografare il contenuto. La licenza d'uso contiene anche una data di scadenza, se impostata, e la durata della validità.
 
 Se non è stata impostata alcuna data di scadenza, il periodo di validità predefinito del contratto di licenza con l'utente finale per un tenant è di 30 giorni. Per la durata della licenza d'uso, all'utente non viene richiesto di ripetere l'autenticazione o specificare una nuova autorizzazione per il contenuto. Questo processo consente all'utente di continuare ad aprire il documento o il messaggio di posta elettronica protetto senza una connessione Internet. Quando scade il periodo di validità della licenza d'uso, al successivo accesso al documento o al messaggio di posta elettronica protetto, l'utente deve ripetere l'autenticazione o specificare una nuova autorizzazione.
 
-Oltre al nuovo processo di autenticazione, vengono valutati nuovamente il gruppo a cui appartiene l'utente e i relativi criteri. Questo significa che, se dopo l'ultimo accesso, sono cambiati i criteri o il gruppo di appartenenza dell'utente, anche le autorizzazioni per accedere allo stesso documento o messaggio di posta elettronica potrebbero essere cambiate.
+Oltre al nuovo processo di autenticazione, vengono valutati nuovamente il gruppo a cui appartiene l'utente e le impostazioni di crittografia. Questo significa che, se dopo l'ultimo accesso, sono cambiate le impostazioni di crittografia o è cambiato il gruppo di appartenenza dell'utente, anche le autorizzazioni per accedere allo stesso documento o messaggio di posta elettronica potrebbero essere cambiate.
 
 Per ulteriori informazioni su come modificare l'impostazione predefinita di 30 giorni, vedere [Licenza d'uso di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>Assegnare autorizzazioni a utenti o gruppi specifici
 
-È possibile concedere autorizzazioni a utenti specifici in modo che solo essi possano interagire con il contenuto etichettato.
-
-È possibile farlo in due semplici passaggi:
+È possibile concedere autorizzazioni a utenti specifici in modo che solo essi possano interagire con il contenuto etichettato:
 
 1. Prima di tutto, aggiungere gli utenti o i gruppi a cui verranno assegnate le autorizzazioni per il contenuto etichettato.
+
 2. Quindi scegliere quali autorizzazioni assegnare agli utenti per il contenuto etichettato.
+
+Assegnazione delle autorizzazioni:
 
 ![Opzioni per assegnare autorizzazioni agli utenti](media/Sensitivity-Assign-permissions-settings.png)
 
@@ -95,12 +153,22 @@ Per ulteriori informazioni su come modificare l'impostazione predefinita di 30 g
 Quando si assegnano le autorizzazioni, è possibile scegliere:
 
 - Tutti gli utenti dell'organizzazione (tutti i membri del tenant). Questa impostazione include gli account Guest.
+- Tutti gli utenti autenticati. Accertarsi di comprendere i [requisiti e le limitazioni](#requirements-and-limitations-for-add-any-authenticated-users) di questa impostazione prima di selezionarla.
 - Qualsiasi utente, gruppo di sicurezza abilitato alla posta elettronica, gruppo di distribuzione, gruppo di Office 365 o gruppo di distribuzione dinamico specifico. 
-- Qualsiasi indirizzo di posta elettronica o dominio all'esterno dell'organizzazione, ad esempio gmail.com, outlook.com o hotmail.com.
+- Qualsiasi indirizzo di posta elettronica o dominio all'esterno dell'organizzazione, ad esempio gmail.com, outlook.com o hotmail.com. 
 
 Quando si scelgono tutti i membri del tenant o si sfoglia la directory, gli utenti o i gruppi devono avere un indirizzo di posta elettronica.
 
 È consigliabile utilizzare i gruppi anziché gli utenti, così da mantenere la configurazione più semplice.
+
+##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>Requisiti e limitazioni per **aggiungere tutti gli utenti autenticati**
+
+Questa opzione non limita gli utenti che possono accedere al contenuto crittografato dall'etichetta, anche se crittografa il contenuto e specifica le opzioni per limitare il modo in cui è possibile usarlo (autorizzazioni) e accedervi (scadenza e accesso offline). Tuttavia, l'applicazione che apre il contenuto crittografato deve essere in grado di supportare l'autenticazione in uso. Per questo motivo, i provider di servizi di social networking federati, come Google, e l'autenticazione tramite passcode monouso funzionano solo per la posta elettronica e solo quando si usa Exchange Online e le nuove funzionalità di Office 365 Message Encryption. È possibile usare gli account Microsoft con le app di Office 365 e il [visualizzatore Azure Information Protection](https://portal.azurerms.com/#/download).
+
+Alcuni scenari tipici per l'impostazione Tutti gli utenti autenticati:
+- Non interessa chi visualizza il contenuto, ma si desidera limitare il modo in cui questo viene usato. Ad esempio, non si vuole che il contenuto venga modificato, copiato o stampato.
+- Non è necessario limitare gli utenti che possono accedere al contenuto, ma si desidera confermare chi può aprirlo.
+- Esiste il requisito che il contenuto deve essere crittografato quando inattivo e in transito, ma non sono richiesti controlli di accesso.
 
 #### <a name="choose-permissions"></a>Scegliere le autorizzazioni
 
@@ -121,11 +189,11 @@ Per eseguire questa operazione, aggiungere utenti o gruppi, assegnargli le autor
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>L'emittente di Rights Management (l'utente che applica l'etichetta di riservatezza) dispone sempre dell'autorizzazione Controllo completo
 
-La crittografia per un'etichetta di riservatezza usa Azure RMS. Quando un utente applica un'etichetta di riservatezza per proteggere un documento o un messaggio di posta elettronica utilizzando Azure RMS, l'utente diventa l'emittente di Rights Management per quel contenuto.
+La crittografia per un'etichetta di riservatezza usa il servizio Azure Rights Management (Azure RMS) di Azure Information Protection. Quando un utente applica un'etichetta di riservatezza per proteggere un documento o un messaggio di posta elettronica utilizzando la crittografia, l'utente diventa l'emittente di Rights Management per quel contenuto.
 
 All'emittente di Rights Management sono sempre concesse le autorizzazioni di controllo completo per il documento o messaggio di posta elettronica. Inoltre:
 
-- Se le impostazioni di protezione includono una data di scadenza, l'emittente di Rights Management può comunque aprire e modificare il documento o il messaggio di posta elettronica in seguito a tale data.
+- Se le impostazioni di crittografia includono una data di scadenza, l'emittente di Rights Management può comunque aprire e modificare il documento o il messaggio di posta elettronica in seguito a tale data.
 - L'emittente di Rights Management può sempre accedere offline al documento o al messaggio di posta elettronica.
 - L'emittente di Rights Management può aprire un documento anche se è stato revocato.
 
@@ -135,19 +203,24 @@ Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietari
 
 È possibile usare queste opzioni per consentire agli utenti di assegnare autorizzazioni quando applicano manualmente un'etichetta di riservatezza al contenuto:
 
-- In Outlook, un utente può applicare restrizioni equivalenti all'opzione [Non inoltrare](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). Questa opzione è supportata in modo nativo in Outlook per Windows e non richiede di installare il client di etichettatura unificato di Azure Information Protection.
-- In Word, PowerPoint ed Excel, agli utenti viene chiesto di selezionare il livello di autorizzazione per utenti, gruppi o organizzazioni specifici. Poiché questa opzione non è supportata in modo nativo in Outlook per Windows, gli utenti devono installare il client di etichettatura unificato di Azure Information Protection.
+- In Outlook, un utente può selezionare restrizioni equivalenti all'opzione [Non inoltrare](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) per determinati destinatari.
 
-Queste opzioni determinano le app in cui verrà visualizzata l'etichetta di riservatezza:
+- In Word, PowerPoint ed Excel, agli utenti viene chiesto di selezionare le autorizzazioni personalizzate per utenti, gruppi o organizzazioni specifici. 
+    > [!NOTE]
+    > Questa opzione per Word, PowerPoint ed Excel è supportata dal client di etichettatura unificata di Azure Information Protection. Per le app che usano l'etichettatura predefinita, il supporto è attualmente in fase di distribuzione nell'[anteprima per Windows e Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). Se questa opzione è selezionata ma non è supportata per l'app di un utente, l'etichetta non viene visualizzata dall'utente.
 
-- Se nell'etichetta di riservatezza è abilitata solo l'opzione Outlook, l'etichetta sarà visualizzata solo dagli utenti di Outlook.
-- Se nell'etichetta di riservatezza è abilitata solo l'opzione Word, PowerPoint ed Excel, l'etichetta sarà visualizzata solo dagli utenti di queste app.
-- Se l'etichetta di riservatezza ha entrambe le opzioni abilitate, l'etichetta sarà visualizzata dagli utenti di tutte le app disponibili: Outlook, Word, PowerPoint ed Excel.
+Se le opzioni sono supportate, usare la tabella seguente per accertarsi se gli utenti visualizzano l'etichetta di riservatezza:
+
+|Impostazione |Etichetta visibile in Outlook|Etichetta visibile in Word, Excel, PowerPoint|
+|:-----|:-----|:-----|:-----|
+|**In Outlook, applicare restrizioni equivalenti all'opzione Non inoltrare**|Sì |No |
+|**In Word, PowerPoint ed Excel, chiedere agli utenti di specificare le autorizzazioni**|No |Sì|
+
+Se sono selezionate entrambe le impostazioni, l'etichetta sarà visibile sia in Outlook che in Word, Excel e PowerPoint.
 
 Un'etichetta di riservatezza che consente agli utenti di assegnare autorizzazioni può essere applicata al contenuto solo manualmente dagli utenti. Non può essere applicata automaticamente o usata come etichetta consigliata.
 
-> [!NOTE]
-> Consentire agli utenti di assegnare autorizzazioni richiede un abbonamento ad Azure Information Protection. Per usare questa funzionalità in Word, PowerPoint ed Excel, è necessario scaricare e installare il [client di etichettatura unificato di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Stiamo lavorando al supporto nativo di questa funzionalità nelle app di Office, in modo che il client di Azure Information Protection non sia necessario. Inoltre, questo client viene eseguito solo in Windows, quindi questa funzionalità non è ancora supportata in Mac, iOS, Android o in Office per il Web.
+Configurazione delle autorizzazioni assegnate dall'utente:
 
 ![Impostazioni di crittografia per le autorizzazioni definite dall'utente](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
@@ -159,13 +232,13 @@ In Outlook, quando un utente applica un'etichetta di riservatezza che consente d
 
 Se l'opzione Non inoltrare viene applicata a un messaggio di posta elettronica, il messaggio viene crittografato e i destinatari devono essere autenticati. Quindi i destinatari non potranno inoltrarlo, stamparlo o copiarlo. Ad esempio, nel client Outlook il pulsante Inoltra non è disponibile, le opzioni di menu Salva con nome e Stampa non sono disponibili e non è possibile aggiungere o modificare i destinatari nelle caselle A, Cc o Ccn.
 
-I documenti di Office non protetti allegati al messaggio di posta elettronica ereditano automaticamente le stesse restrizioni. I diritti di utilizzo applicati a questi documenti sono Modifica contenuto, Modifica, Salva, Visualizza, Apri, Leggi e Consenti macro. Se l'utente vuole avere diritti di utilizzo diversi per un allegato, o se l’allegato non è un documento di Office che supporta questa protezione ereditata, l'utente deve proteggere il file prima di allegarlo al messaggio di posta elettronica.
+I documenti di Office non crittografati allegati al messaggio di posta elettronica ereditano automaticamente le stesse restrizioni. I diritti di utilizzo applicati a questi documenti sono Modifica contenuto, Modifica, Salva, Visualizza, Apri, Leggi e Consenti macro. Se l'utente vuole avere diritti di utilizzo diversi per un allegato, o se l’allegato non è un documento di Office che supporta questa protezione ereditata, l'utente deve proteggere il file prima di allegarlo al messaggio di posta elettronica.
 
 ### <a name="word-powerpoint-and-excel-permissions"></a>Autorizzazioni per Word, PowerPoint ed Excel
 
-In Word, PowerPoint ed Excel, quando un utente applica un'etichetta di riservatezza che consente di assegnare autorizzazioni a un documento, viene chiesto di proteggere il contenuto, come illustrato di seguito.
+In Word, PowerPoint ed Excel, quando un utente applica un'etichetta di riservatezza che consente di assegnare autorizzazioni a un documento, viene chiesto di specificare le proprie scelte relative a utenti e autorizzazioni se è applicata la crittografia.
 
-L'utente può:
+Ad esempio, usando il client di etichettatura unificata di Azure Information Protection, gli utenti possono:
 
 - Selezionare un livello di autorizzazione, ad esempio Visualizzatore, che assegna l'autorizzazione Solo visualizzazione, o Coautore, che assegna le autorizzazioni di visualizzazione, modifica, copia e stampa.
 - Selezionare utenti, gruppi o organizzazioni. Questo può includere persone sia interne che esterne alle organizzazioni.
@@ -173,39 +246,46 @@ L'utente può:
 
 ![Opzioni per l’utente per la protezione con autorizzazioni personalizzate](media/sensitivity-aip-custom-permissions-dialog.png)
 
-## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Cosa accade alla crittografia esistente in seguito all'applicazione di un'etichetta
+Per l'etichettatura predefinita, gli utenti visualizzano la stessa finestra di dialogo se selezionano quanto segue:
 
-Prima che al contenuto venga applicata un'etichetta di riservatezza, è possibile che un utente abbia già crittografato il contenuto applicando altre impostazioni di protezione. Ad esempio, un utente può aver applicato:
+- Windows: scheda **File** > **Info** > **Proteggi documento** > **Limita l'accesso** > **Accesso limitato**
 
-- L'opzione **Non inoltrare**.
-- La protezione personalizzata usando il client di etichettatura unificata di Azure Information Protection.
-- Un modello di Azure Rights Management Service (RMS) che crittografa il contenuto ma non viene associato a un'etichetta.
+- MacOS: scheda **Revisione** > **Protezione** > **Autorizzazioni** > **Accesso limitato**
 
-Questa tabella descrive cosa accade alla crittografia esistente quando si applica un'etichetta di riservatezza a tale contenuto.
-<br/>
-<br/>
 
-| |**L'utente applica un'etichetta di riservatezza con la crittografia disattivata**|**L'utente applica un'etichetta di riservatezza con la crittografia attivata**|**L'utente applica un'etichetta con Rimuovi protezione**<sup>1</sup>|
-|:-----|:-----|:-----|:-----|
-|**Non inoltrare**|Posta elettronica - La protezione viene rimossa<br/>Documento - La protezione viene mantenuta|La protezione dell'etichetta viene applicata|L'etichetta **Non inoltrare** viene rimossa|
-|**Protezione personalizzata**<sup>1</sup>|La protezione viene mantenuta|La protezione dell'etichetta viene applicata|La protezione personalizzata viene rimossa|
-|**Modello di Azure RMS**|La protezione viene mantenuta|La protezione dell'etichetta viene applicata|La protezione personalizzata viene rimossa|
+## <a name="considerations-for-encrypted-content"></a>Considerazioni sul contenuto crittografato
 
-<sup>1</sup>Supportata solo nel client di etichettatura di Azure Information Protection.
+La crittografia dei documenti e dei messaggi di posta elettronica più sensibili aiuta a garantire che solo gli utenti autorizzati possano accedere a tali dati. Esistono tuttavia alcune considerazioni da tenere presente:
 
-## <a name="storing-encrypted-content-in-onedrive-and-sharepoint"></a>Archiviare contenuti crittografati in OneDrive e SharePoint
+- Se l'organizzazione non ha [abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)](sensitivity-labels-sharepoint-onedrive-files.md):
+    
+    - L'opzione di ricerca, eDiscovery e Delve non funzioneranno con i file crittografati. 
+    - I criteri di prevenzione della perdita dei dati funzionano per i metadati dei file crittografati, incluse le informazioni sulle etichette di conservazione, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.
+    - Gli utenti non possono aprire file crittografati con Office sul Web. Quando le etichette di riservatezza per i file di Office in SharePoint e in OneDrive sono abilitate, gli utenti possono usare Office sul Web per aprire file crittografati, con alcune [limitazioni](sensitivity-labels-sharepoint-onedrive-files.md#limitations) che includono la crittografia che è stata applicata con una chiave locale, nota come "hold your own key" o HYOK, e la crittografia applicata in modo indipendente da un'etichetta di riservatezza.
 
-Tenere presente che quando la crittografia viene applicata a file archiviati in OneDrive o SharePoint, il servizio non può elaborare il contenuto di tali file. Ciò significa che funzionalità come la creazione condivisa, eDiscovery, ricerca, Delve e altre funzionalità di collaborazione non funzionano. Inoltre, i criteri di prevenzione della perdita dei dati (DLP) possono funzionare solo con i metadati (comprese le etichette di Office 365), ma non con i contenuti di file crittografati (ad esempio i numeri di carta di credito all'interno dei file).
+- Affinché più utenti possano modificare un file crittografato contemporaneamente, devono usare Office per il Web. Se non è questo il caso e il file è già aperto:
+    
+    - Nelle app di Office (Windows, Mac, Android e iOS), gli utenti visualizzano il messaggio **File in uso** con il nome della persona che ha estratto il file. Possono quindi visualizzare una copia di sola lettura o salvare e modificare una copia del file e ricevere una notifica quando il file sarà disponibile.
+    - In Office per il Web, gli utenti visualizzano un messaggio di errore che indica che non è possibile modificare il documento con altri utenti. Potranno quindi selezionare **Apri in visualizzazione di lettura**.
 
-Ciò si applica solo ai contenuti archiviati in OneDrive e SharePoint. In Exchange Online le regole di flusso di posta (note anche come regole di trasporto) usano l'[account utente con privilegi avanzati](https://docs.microsoft.com/azure/information-protection/configure-super-users), in modo da poter analizzare il contenuto crittografato e applicare i criteri di prevenzione della perdita dei dati.
+- La funzionalità [Salvataggio automatico](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) nelle app di Office (Windows, Mac, Android e iOS) è disabilitata per i file crittografati. Gli utenti visualizzano un messaggio che indica che il file dispone di autorizzazioni limitate che è necessario rimuovere prima di poter attivare il salvataggio automatico.
+
+- L'apertura di file crittografati nelle app di Office (Windows, Mac, Android e iOS) potrebbe richiedere più tempo.
+
+- Le azioni seguenti per i file crittografati non sono supportate dalle app di Office (Windows, Mac, Android e iOS) e gli utenti visualizzano un messaggio di errore che indica che si è verificato un problema. Tuttavia, in alternativa è possibile usare la funzionalità di SharePoint:
+    
+    - Visualizzare, ripristinare e salvare copie delle versioni precedenti. In alternativa, gli utenti possono eseguire queste azioni usando Office sul Web per [attivare e configurare il controllo delle versioni per un elenco o una raccolta](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37). 
+    - Modificare il nome o il percorso dei file. In alternativa, gli utenti possono [rinominare un file, una cartella o un collegamento in una raccolta documenti](https://support.office.com/article/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.
+
+Per un'esperienza di collaborazione in file crittografati con etichetta di riservatezza ottimale, si consiglia di usare [etichette di riservatezza per file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) e Office per il Web. 
 
 ## <a name="important-prerequisites"></a>Prerequisiti importanti
 
-Prima di utilizzare la crittografia, potrebbe essere necessario eseguire queste attività.
+Prima di utilizzare la crittografia, potrebbe essere necessario eseguire alcune attività di configurazione.
 
-### <a name="activating-azure-rights-management"></a>Attivazione di Azure Rights Management
+### <a name="activate-protection-from-azure-information-protection"></a>Attivazione della protezione di Azure Information Protection
 
-Per utilizzare la crittografia nelle etichette di riservatezza, è necessario attivare il servizio di Azure Rights Management nel tenant. Nei tenant più recenti, il servizio è attivo per impostazione predefinita, ma potrebbe essere necessario attivarlo manualmente. Per ulteriori informazioni, vedere [Attivazione di Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service).
+Per la crittografia nelle etichette di riservatezza, il servizio di protezione (Azure Rights Management) di Azure Information Protection deve essere attivato per il tenant. Nei tenant più recenti, questa è l'impostazione predefinita, ma potrebbe essere necessario attivare il servizio manualmente. Per altre informazioni, vedere [Attivazione del servizio di protezione di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
 
 ### <a name="configure-exchange-for-azure-information-protection"></a>Configurare Exchange per Azure Information Protection
 
