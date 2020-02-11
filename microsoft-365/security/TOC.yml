@@ -172,14 +172,21 @@
             - name: Protezione dalla posta indesiderata e antimalware
               href: ./office-365-security/anti-spam-and-anti-malware-protection.md
               items:
+                - name: Protezione anti-malware
+                  href: ./office-365-security/anti-malware-protection.md
+                  items:
+                    - name: Domande frequenti sulla protezione antimalware
+                      href: ./office-365-security/anti-malware-protection-faq-eop.md
+                    - name: Configurazione dei criteri anti-malware
+                      href: ./office-365-security/configure-anti-malware-policies.md
+                    - name: Inviare malware e file non pericolosi a Microsoft per l'analisi
+                      href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                    - name: Rilevamento dei virus in SharePoint Online
+                      href: ./office-365-security/virus-detection-in-spo.md
                 - name: Opzioni avanzate per il filtraggio della posta indesiderata
                   href: ./office-365-security/advanced-spam-filtering-asf-options.md
                 - name: Pool di recapito ad alto rischio per i messaggi in uscita
                   href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-                - name: Domande frequenti sulla protezione antimalware
-                  href: ./office-365-security/anti-malware-protection-faq-eop.md
-                - name: Protezione anti-malware
-                  href: ./office-365-security/anti-malware-protection.md
                 - name: Domande frequenti sulla protezione da posta indesiderata
                   href: ./office-365-security/anti-spam-protection-faq.md
                 - name: Evitare caratteri non validi nelle regole di filtro della posta indesiderata e nel criterio del filtro della posta indesiderata
@@ -194,8 +201,6 @@
                   href: ./office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md
                 - name: Contrastare la posta indesiderata inviata a Office 365
                   href: ./office-365-security/fighting-junk-email.md
-                - name: Rilevamento dei virus in SharePoint Online
-                  href: ./office-365-security/virus-detection-in-spo.md
                 - name: Protezione dalla posta indesiderata in Office 365
                   href: ./office-365-security/anti-spam-protection.md
                 - name: Come vengono combinati i criteri e le protezioni
@@ -214,8 +219,6 @@
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
                 - name: Gestire gli elenchi di mittenti attendibili per messaggi inviati in blocco
                   href: ./office-365-security/manage-safe-sender-lists-for-bulk-mailers.md
-                - name: Configurare i criteri antimalware
-                  href: ./office-365-security/configure-anti-malware-policies.md
                 - name: Configurare i criteri di protezione dalla posta indesiderata
                   href: ./office-365-security/configure-the-anti-spam-policies.md
                 - name: Creare-blocco-elenchi-mittente-in-office-365
@@ -240,8 +243,6 @@
                   href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                 - name: Invii dell'amministratore in Office 365
                   href: ./office-365-security/admin-submission.md
-                - name: Inviare malware e file non pericolosi a Microsoft per l'analisi
-                  href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco mittenti bloccati di Office 365
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
                 - name: Intestazioni messaggi della protezione da posta indesiderata
