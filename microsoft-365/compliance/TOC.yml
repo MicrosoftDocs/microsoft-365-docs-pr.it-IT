@@ -79,7 +79,7 @@
       items:
         - name: Creare e pubblicare etichette di riservatezza
           href: create-sensitivity-labels.md
-        - name: Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia
+        - name: Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
           href: encryption-sensitivity-labels.md
         - name: Applicare automaticamente un'etichetta di riservatezza al contenuto
           href: apply-sensitivity-label-automatically.md
@@ -202,6 +202,8 @@
           href: data-classification-content-explorer.md
         - name: Visualizzazione delle attività con etichette (anteprima)
           href: data-classification-activity-explorer.md
+        - name: Note sulla versione di anteprima pubblica di classificazione dei dati (anteprima)
+          href: data-classification-pub-preview-relnotes.md
         - name: Introduzione ai classificatori sottoponibili a training (anteprima)
           href: classifier-getting-started-with.md
         - name: Utilizzo di un classificatore pronto all'uso (anteprima)
