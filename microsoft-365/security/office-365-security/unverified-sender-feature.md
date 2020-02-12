@@ -15,30 +15,30 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
-ms.openlocfilehash: 0dd8b54d2c8153b4200336d8c0e439f278f7ae77
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a6ae80adb9ddae2c675e75d747dda27f09a404fb
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598133"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957251"
 ---
 # <a name="unverified-sender"></a>Mittente non verificato
 
 > [!NOTE]
-> Questi aggiornamenti stanno per essere implementati e potrebbero non essere ancora disponibili per tutti gli utenti. Questa funzionalità è supportata per gli utenti di outlook.com Enterprise. Non è attualmente disponibile per i consumer outlook.com.
+> Questi aggiornamenti stanno per essere implementati e potrebbero non essere disponibili per tutti gli utenti. Questa funzionalità è supportata per gli utenti Desktop Enterprise Outlook.com e Enterprise Outlook Win32. Non è attualmente disponibile per gli utenti di Office 365 di consumer.
 
-Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
+Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Office 365 verifica che i mittenti siano quelli che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
 
 > [!IMPORTANT]
-> Quando un messaggio viene contrassegnato come truffa di phishing, Outlook.com e Outlook sul Web visualizzano un avviso nella parte superiore della pagina, ma qualsiasi collegamento nel messaggio può ancora essere aperto.
+> Quando un messaggio viene contrassegnato come truffa di phishing, in Outlook viene visualizzato un avviso nella parte superiore della pagina, ma è comunque possibile aprire qualsiasi collegamento del messaggio.
 
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>Come è possibile identificare un messaggio sospetto nella cartella posta in arrivo?
 
-Outlook.com e Outlook sul Web mostrano gli indicatori quando il mittente di un messaggio non può essere identificato o la loro identità è diversa da quella visualizzata nell'indirizzo da.
+Outlook Mostra gli indicatori quando il mittente di un messaggio non può essere identificato o la sua identità è diversa da quella visualizzata nell'indirizzo da.
 
 ## <a name="you-see-a--in-the-sender-image"></a>Viene visualizzato un'?' nell'immagine del mittente
 
-Quando Outlook.com e Outlook sul Web non sono in grado di verificare l'identità del mittente utilizzando le tecniche di autenticazione della posta elettronica, visualizzano una '?' nella foto del mittente.
+Quando Office 365 non è in grado di verificare l'identità del mittente utilizzando tecniche di autenticazione della posta elettronica, nell'immagine del mittente viene visualizzato il messaggio "?".
 
 ![Il messaggio non ha superato la verifica](../media/message-did-not-pass-verification.jpg)
 
@@ -58,25 +58,29 @@ Se si è un cliente di Office 365, è possibile gestire questa funzionalità tra
 
   - Aggiungere la coppia di domini tramite il cmdlet **set-PhishFilterPolicy** in PowerShell di Exchange Online. Per informazioni dettagliate, vedere [set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) e [set up Office 365 ATP anti-phishing and anti-phishing Policies](set-up-anti-phishing-policies.md).
 
-Inoltre, non viene applicato il trattamento del mittente non verificato se il messaggio è stato recapitato alla posta in arrivo tramite le regole del flusso di posta (note anche come regole di trasporto), elenco dei domini attendibili (criterio di protezione dalla posta indesiderata) o elenco di mittenti attendibili.
+Inoltre, non viene applicato il trattamento del mittente non verificato se il messaggio è stato recapitato alla posta in arrivo tramite le regole del flusso di posta (note anche come regole di trasporto) oppure l'elenco dei domini attendibili (criteri di protezione dalla posta indesiderata).
+
+## <a name="how-to-manage-the-via-tag"></a>Come gestire il tag ' via ' 
+
+Se si è un cliente di Office 365, è possibile gestire questa funzionalità tramite il Centro sicurezza & conformità di Office 365, allo stesso modo in cui si gestisce il trattamento dei mittenti non verificati. Se si aggiunge il mittente all'elenco di consentiti spoofing Intelligence spoof, il trattamento ' via ' non verrà applicato.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Quali criteri utilizza Outlook.com e Outlook sul Web per aggiungere le proprietà'?' è via '?
+### <a name="what-criteria-does-outlookcom-and-outlook-win32-desktop-use-to-add-the--and-the-via-properties"></a>Quali criteri utilizza Outlook.com e Outlook Win32 Desktop per aggiungere le proprietà'?' è via '?
 
 Per '?' nell'immagine del mittente: Outlook.com richiede che il messaggio passi l'autenticazione SPF o DKIM e riceva un passaggio DMARC oppure un passaggio di autenticazione composita dall'intelligence spoof di Office 365. Per informazioni dettagliate, vedere [set up SPF in office 365 per impedire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) e [utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md).
 
 Per il tag Via: se il dominio nell'indirizzo from è diverso dal dominio nella firma di DKIM o nella posta SMTP da, Outlook.com Visualizza il dominio in uno di questi due campi (preferendo la firma di DKIM).
 
-### <a name="how-do-i-remove-the-"></a>Come si rimuove il '?'
+### <a name="how-do-i-remove-the--without-utilizing-the-spoof-intelligence-spoof-allow-list"></a>Come è possibile rimuovere il '?' senza utilizzare l'elenco di consentiti spoof di spoofing Intelligence?
 
 Per il "?" nell'immagine del mittente: come mittente, è necessario autenticare il messaggio con SPF o DKIM.
 
 Per il tag Via: come mittente, è necessario assicurarsi che il dominio nella firma di DKIM o la posta SMTP sia uguale a, o sia un sottodominio di, il dominio nell'indirizzo da.
 
-### <a name="does-outlookcom-and-outlook-on-the-web-show-this-for-every-message-that-doesnt-pass-authentication"></a>Outlook.com e Outlook sul Web mostrano questo per ogni messaggio che non passa l'autenticazione?
+### <a name="do-outlookcom-and-outlook-win32-desktop-show-this-for-every-message-that-doesnt-pass-authentication"></a>Le Outlook.com e il desktop di Outlook Win32 lo mostrano per ogni messaggio che non passa l'autenticazione?
 
-Non necessariamente. Outlook.com e Outlook sul Web possono avere altre proprietà all'interno del messaggio per autenticare il mittente.
+Non necessariamente. Office 365 può avere altre proprietà all'interno del messaggio per autenticare il mittente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
