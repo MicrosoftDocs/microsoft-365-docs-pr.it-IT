@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 description: Trovare le risposte alle domande più frequenti sugli acquisti in modalità self-service.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: f9f991dca27617717817564daa4a042e2eeb4bf0
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 1a8cea3b11ecdc6e3ac6d382dc8ffe92c84e187a
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661909"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932276"
 ---
 # <a name="self-service-purchase-faq"></a>Domande frequenti sull'acquisto in modalità self-service
 
 > [!NOTE]
 > Le informazioni contenute in questo articolo si applicano solo agli abbonamenti di Microsoft Power Platform (Power BI, Power Apps e Power automatizzate).
 
-Gli acquisti in modalità self-service sono ora disponibili per Power Platform negli Stati Uniti.
+Gli acquisti in modalità self-service sono ora disponibili per Power Platform negli Stati Uniti, in Australia, in Canada e in Giappone.
 
 ## <a name="general"></a>Generale
 

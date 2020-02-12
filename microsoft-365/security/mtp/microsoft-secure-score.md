@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: aeae243b4e363f69729ccdbd2bc3fc465ec1449b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b37b8f0aaa225dec9e522964b59871047081be9d
+ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600173"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41932306"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -76,7 +76,7 @@ Con l'accesso in sola lettura, non è possibile modificare lo stato o le note pe
 * Amministratore del servizio
 * Ruolo con autorizzazioni di lettura per la sicurezza
 * Operatore della sicurezza
-* Lettore globale
+* Ruolo con autorizzazioni di lettura globali
 
 ### <a name="graph-api"></a>API del grafico
 
@@ -134,6 +134,16 @@ Quando si seleziona un'azione di miglioramento specifica, viene visualizzato un 
 
 Microsoft Secure Score è un riepilogo numerico della postura di sicurezza in base alle configurazioni di sistema, al comportamento degli utenti e ad altre misure relative alla sicurezza. non si tratta di una misura assoluta del modo in cui il sistema o i dati verranno violati. Piuttosto, rappresenta la misura in cui sono stati adottati controlli di sicurezza nell'ambiente Microsoft, che possono contribuire a compensare il rischio di essere violati. Nessun servizio online è completamente immune dalle violazioni della sicurezza e il Punteggio sicuro non deve essere interpretato come garanzia contro la violazione della sicurezza in alcun modo.
 
+## <a name="whats-new"></a>Novità
+
+Per rendere Microsoft Secure Score un migliore rappresentante della posizione di sicurezza, sono state apportate alcune modifiche.
+
+### <a name="removed-not-scored-improvement-actions"></a>Azioni di miglioramento "non segnate" rimosse
+
+Uno dei principi del Punteggio sicuro è che il punteggio dovrebbe essere standardizzato e facilmente correlabile. L'utilizzo di azioni di miglioramento non misurabili o utilizzabili ha provocato confusione. Un punteggio sicuro di Microsoft ha senso solo quando ogni suggerimento può avere un effetto chiaro sulla partitura. Le azioni di miglioramento non segnate non sono misurabili.  
+
+Per questi motivi, tutte le azioni di miglioramento non segnate sono state rimosse. Non è necessaria alcuna azione da parte vostra.
+
 ## <a name="whats-coming"></a>Cosa succede?
 
 Per rendere Microsoft Secure Score un migliore rappresentante della posizione di sicurezza e migliorare l'usabilità, vengono apportate alcune modifiche nel prossimo futuro. Il Punteggio e il punteggio massimo possono variare. Tuttavia, ciò non implica una modifica della posizione di sicurezza.
@@ -173,6 +183,11 @@ Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni a
 - Individuare le applicazioni IT Shadow a rischio e non conformi
 - Esaminare le autorizzazioni & bloccare le applicazioni OAuth rischiose connesse all'ambiente
 - Configurare il controllo delle versioni nelle raccolte documenti di SharePoint Online
+- Archiviare i documenti degli utenti in OneDrive for business
+- Non consentire la delega delle cassette postali
+- Consenti collegamenti di condivisione guest anonimi per siti e documenti
+- Impostare i criteri degli allegati sicuri di Office 365 ATP
+- Configurare i collegamenti sicuri di Office 365 per verificare gli URL
 
 ### <a name="mfa-improvement-action-updates"></a>Aggiornamenti dell'azione per il miglioramento dell'AMF
 
@@ -191,11 +206,11 @@ Sono state aggiunte nuove azioni di miglioramento:
 
  Queste nuove azioni di miglioramento richiedono la registrazione di utenti o amministratori per l'autenticazione a più fattori (AMF) all'interno della directory e la definizione del set di criteri appropriato che soddisfano le esigenze dell'organizzazione. L'obiettivo principale è la flessibilità garantendo che tutti gli utenti e gli amministratori siano in grado di eseguire l'autenticazione con più fattori o richieste di verifica dell'identità basata sui rischi. Che può assumere la forma di impostazione dei valori predefiniti di sicurezza che consentono a Microsoft di decidere quando contestare gli utenti per l'AMF o che dispongono di più criteri che applicano decisioni a livello di ambito.
 
-### <a name="removing-not-scored-and-review-improvement-actions"></a>Rimozione delle azioni di miglioramento "non segnate" e "revisione"
+### <a name="removing-review-improvement-actions"></a>Rimozione delle azioni di miglioramento "revisione"
 
-Uno dei principi del Punteggio sicuro è che il punteggio dovrebbe essere standardizzato e facilmente correlabile. L'utilizzo di azioni di miglioramento non misurabili o utilizzabili ha provocato confusione. Un punteggio sicuro di Microsoft ha senso solo quando ogni suggerimento può avere un effetto chiaro sulla partitura. Le azioni di miglioramento non consentite non sono misurabili e le azioni di miglioramento delle analisi non vengono misurate allo stesso livello di altre azioni di miglioramento.  
+Uno dei principi del Punteggio sicuro è che il punteggio dovrebbe essere standardizzato e facilmente correlabile. L'utilizzo di azioni di miglioramento non misurabili o utilizzabili ha provocato confusione. Un punteggio sicuro di Microsoft ha senso solo quando ogni suggerimento può avere un effetto chiaro sulla partitura. Esaminare le azioni di miglioramento non vengono misurate allo stesso livello di altre azioni di miglioramento.  
 
-Per questi motivi, tutte le azioni di miglioramento che non sono state segnate o che richiedono una cadenza di revisione verranno temporaneamente rimosse. Non è necessaria alcuna azione da parte vostra.
+Per questi motivi, tutte le azioni di miglioramento che richiedono una cadenza di revisione verranno temporaneamente rimosse. Non è necessaria alcuna azione da parte vostra.
 
 ### <a name="simplification-of-the-point-system"></a>Semplificazione del sistema di punti
 
