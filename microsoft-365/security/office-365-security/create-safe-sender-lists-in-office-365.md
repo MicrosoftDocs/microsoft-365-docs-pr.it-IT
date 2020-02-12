@@ -14,24 +14,24 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Se si vuole essere sicuri di ricevere la posta da un mittente specifico, poiché si considera attendibili i propri messaggi, è possibile modificare l'elenco Consenti in un criterio di filtro per la posta indesiderata.
-ms.openlocfilehash: 4ac97192327cd9ced853ce63537375931f3f0ec3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80bffdb1e673f4d22dc5d3ebc01732fcb587600f
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599533"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957261"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Creare elenchi di mittenti attendibili in Office 365
 
 Se si desidera garantire che gli utenti ricevano messaggi di posta elettronica da un mittente o mittenti particolari, poiché si considerano attendibili i messaggi, sono disponibili più metodi tra cui è possibile scegliere. Queste opzioni includono le regole del flusso di posta di Exchange (note anche come regole di trasporto), i mittenti attendibili di Outlook, gli elenchi di indirizzi IP consentiti, gli elenchi di mittenti/domini consentiti.
 
 > [!IMPORTANT]
-> Anche se è possibile utilizzare gli elenchi per l'organizzazione per risolvere i falsi positivi, è consigliabile considerare una soluzione temporanea e, se possibile, evitarla. La gestione dei falsi positivi mediante l'utilizzo degli elenchi Consenti non è consigliata perché può inavvertitamente aprire l'organizzazione fino allo spoofing, alla rappresentazione e ad altri attacchi. Se si intende utilizzare un elenco Consenti per questo scopo, è necessario essere vigili e mantenere l'articolo per l' [invio di posta indesiderata, non posta indesiderata e messaggi di phishing a Microsoft per l'analisi](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis), al pronto.
+> Anche se è possibile utilizzare gli elenchi per l'organizzazione per risolvere i falsi positivi, è consigliabile considerare una soluzione temporanea e, se possibile, evitarla. La gestione dei falsi positivi mediante l'utilizzo degli elenchi Consenti non è consigliata perché può inavvertitamente aprire l'organizzazione fino allo spoofing, alla rappresentazione e ad altri attacchi. Se si intende utilizzare un elenco Consenti per questo scopo, è necessario essere vigili e mantenere l'articolo per l' [invio di posta indesiderata, non posta indesiderata e messaggi di phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md), al pronto.
 
 Il metodo consigliato per configurare un elenco di mittenti attendibili consiste nell'utilizzare le regole del flusso di posta, in quanto rappresenta la maggiore flessibilità per garantire che vengano consentiti solo i messaggi giusti. Gli *elenchi* di indirizzi di posta elettronica e di criteri di protezione da *posta indesiderata* non sono sicuri come gli *elenchi basati su indirizzi IP* perché i domini possono essere falsificati facilmente. Tuttavia, i criteri di protezione da posta indesiderata basati su IP consentono anche di presentare rischi in quanto consentiranno ai domini inviati tramite tale IP di ignorare il filtro antispam. Fare attenzione e monitorare *tutte le* eccezioni fatte con attenzione.
 
 > [!IMPORTANT]
-> Di [seguito](create-block-sender-lists-in-office-365.md)vengono fornite informazioni su come creare un **elenco di mittenti bloccati** .
+> • [Sono disponibili](create-block-sender-lists-in-office-365.md)informazioni su come creare un **elenco di mittenti bloccati** . <br/><br/> • Per consentire a un dominio del mittente di inviare messaggi di posta elettronica non autenticati (bypass anti-spoofing) ma non di ignorare i controlli di protezione dalla posta indesiderata e antimalware, è possibile aggiungerlo all' [elenco dei mittenti attendibili di AllowedToSpoof](walkthrough-spoof-intelligence-insight.md).
 
 ## <a name="options-from-most-to-least-recommended"></a>Opzioni dalla maggior parte dei casi meno consigliati
 
@@ -46,7 +46,7 @@ Il metodo consigliato per configurare un elenco di mittenti attendibili consiste
 
 Per assicurarsi che nell'organizzazione siano consentiti solo i messaggi legittimi, la condizione deve essere una delle seguenti:
 
-- Utilizzare lo stato di autenticazione del mittente del dominio di invio. Per ottenere questo risultato, è necessario controllare l'intestazione Authentication-Results per assicurarsi che contenga "DMARC = Pass" o "DMARC = bestguesspass". Questo garantisce che il dominio di invio sia stato autenticato e che non sia contraffatto. Fare clic per ulteriori informazioni su [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)e l'autenticazione della posta elettronica di [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) .
+- Utilizzare lo stato di autenticazione del mittente del dominio di invio. Per ottenere questo risultato, è necessario controllare l'intestazione Authentication-Results per assicurarsi che contenga "DMARC = Pass" o "DMARC = bestguesspass". Questo garantisce che il dominio di invio sia stato autenticato e che non sia contraffatto. Fare clic per ulteriori informazioni su [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)e l'autenticazione della posta elettronica di [DMARC](use-dmarc-to-validate-email.md) .
 
 - In alternativa, se il dominio di invio non dispone dell'autenticazione, utilizzare il dominio di invio *e* un IP di invio (o un intervallo di indirizzi IP). Assicurarsi di essere il più *restrittivo possibile*, l'obiettivo è quello di eseguire questa operazione nel modo più sicuro possibile. *Non* è consigliabile utilizzare un intervallo IP maggiore di/24. Evitare di aggiungere intervalli di indirizzi IP che appartengono a servizi consumer o a infrastrutture condivise.
 
@@ -87,7 +87,7 @@ Quando non è possibile utilizzare le regole del flusso di posta per consentire 
 
 ## <a name="use-anti-spam-policy-senderdomain-allow-lists"></a>Utilizzo degli elenchi di criteri di protezione da posta indesiderata/dominio consentito
 
-L'opzione meno desiderabile consiste nell'autorizzare il mittente/dominio. Questa opzione dovrebbe essere evitata *se possibile* , poiché ignora completamente la protezione da posta indesiderata/spoofing/phishing e non valuta l'autenticazione del mittente. Questo metodo aumenta il rischio di ricezione di messaggi di posta elettronica da parte di attori non validi ed è consigliato solo temporaneamente e solo quando si esegue il test. La procedura dettagliata è disponibile in [configurare il documento dei criteri di filtro della posta indesiderata](https://docs.microsoft.com/office365/securitycompliance/configure-your-spam-filter-policies) .
+L'opzione meno desiderabile consiste nell'autorizzare il mittente/dominio. Questa opzione dovrebbe essere evitata *se possibile* , poiché ignora completamente la protezione da posta indesiderata/spoofing/phishing e non valuta l'autenticazione del mittente. Questo metodo aumenta il rischio di ricezione di messaggi di posta elettronica da parte di attori non validi ed è consigliato solo temporaneamente e solo quando si esegue il test. La procedura dettagliata è disponibile in [configurare l'argomento criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md) .
 
 Il limite massimo per questi elenchi è approssimativamente pari a 1000 voci; anche se, sarà possibile immettere 30 voci nel portale. Per aggiungere più di 30 voci, è necessario utilizzare PowerShell.
 

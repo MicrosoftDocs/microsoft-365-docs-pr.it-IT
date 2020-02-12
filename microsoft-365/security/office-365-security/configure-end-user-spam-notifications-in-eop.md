@@ -15,19 +15,19 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: È possibile configurare le notifiche di posta indesiderata degli utenti finali per il criterio di filtro del contenuto a livello dell'azienda o per i criteri di filtro del contenuto personalizzati applicati ai domini.
-ms.openlocfilehash: 2bbeaf48fc0d17b2df97f794956b65e090a06e1d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 95a8142b4f4687c66657cd01e1110470c8b08bc4
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599643"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957401"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurazione delle notifiche di posta indesiderata dell'utente finale in EOP
   
 > [!IMPORTANT]
 > Questo argomento è rivolto ai clienti delle versioni autonome di Exchange Online Protection (EOP) che devono proteggere le cassette postali locali. I clienti di Exchange Online che proteggono le cassette postali ospitate nel cloud dovrebbero invece leggere l'argomento seguente: [configurare le notifiche di posta indesiderata dell'utente finale in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
-È possibile configurare le notifiche di posta indesiderata dell'utente finale per i criteri di filtro della posta indesiderata a livello di società o per i criteri di filtro antispam personalizzati L'abilitazione dei messaggi di notifica di posta indesiderata dell'utente finale consente agli utenti di gestire i propri messaggi in quarantena. 
+È possibile configurare le notifiche di posta indesiderata dell'utente finale per i criteri di filtro della posta indesiderata a livello di società o per i criteri di filtro antispam personalizzati L'abilitazione dei messaggi di notifica di posta indesiderata dell'utente finale consente agli utenti di gestire i propri messaggi di posta indesiderata e phishing. 
   
 Le notifiche di posta indesiderata dell'utente finale contengono un elenco di tutti i messaggi di posta indesiderata messi in quarantena ricevuti dall'utente finale durante un periodo di tempo configurato. È possibile specificare un valore compreso tra 1 e 15 giorni. È inoltre possibile configurare la lingua in cui è scritto il messaggio di notifica.
   

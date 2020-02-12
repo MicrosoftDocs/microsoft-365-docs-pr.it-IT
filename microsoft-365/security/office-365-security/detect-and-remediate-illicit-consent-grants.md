@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
-ms.openlocfilehash: 72109b6522a750e4eb31f289352e4ee2abfa7d33
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599453"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957151"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Rilevare e rimediare a concessioni di consenso illecite in Office 365
 
@@ -39,11 +39,13 @@ In un attacco di concessione di consenso illecito, l'utente malintenzionato crea
 
 1. Aprire il **Centro sicurezza e conformità** nel tenant di Office 365.
 
-2. Passare al nodo **ricerca & indagine** e selezionare ricerca **log di controllo** .
+2. Passare a **ricerca** e selezionare **Ricerca log di controllo**.
 
-3. Creare una ricerca (tutte le attività e tutti gli utenti) e filtrare i risultati per il consenso all'applicazione e aggiungere OAuth2PermissionGrant.
+3. Search (tutte le attività e tutti gli utenti) e immettere la data di inizio e la data di fine, se necessario, e quindi fare clic su **Cerca**. 
 
-4. Esaminare le proprietà estese e verificare se IsAdminContent è impostato su true.
+4. Filtrare i risultati per il consenso all'applicazione e aggiungere OAuth2PermissionGrant.
+
+5. Fare clic sul risultato per visualizzare i dettagli dell'attività. Fare clic su **altre informazioni** per ottenere informazioni dettagliate sull'attività. Controllare se IsAdminContent è impostato su true.
 
 > [!NOTE]
 > • Possono essere necessari fino a 30 minuti o fino a 24 ore dopo che si è verificato un evento per la voce del registro di controllo corrispondente da visualizzare nei risultati della ricerca. <br/><br/> • Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Office 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).

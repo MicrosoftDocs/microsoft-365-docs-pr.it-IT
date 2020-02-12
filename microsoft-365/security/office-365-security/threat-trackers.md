@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Informazioni su informatori di minacce, inclusi i nuovi informatori degni di nota, per consentire all'organizzazione di rimanere al di sopra dei problemi relativi alla sicurezza.
-ms.openlocfilehash: f2a68cfbbae0ce91716f69514e30136ac223bbf8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 75ade05f5512657a443f3c14c2745cc2cd3d78db
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598183"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957361"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Inseguimenti di minacce-nuovi e degni di nota
 
@@ -55,7 +55,7 @@ Gli incaricati in genere verranno pubblicati solo per un paio di settimane quand
   
 ### <a name="trending-trackers"></a>Inseguimenti di tendenza
 
-I tracking dei trend (in precedenza chiamati campagne) evidenziano nuove minacce che non sono state visualizzate nella posta elettronica dell'organizzazione nella settimana passata.
+Gli inseguitori dei trend (in precedenza chiamati campagne) evidenziano le nuove minacce ricevute nella posta elettronica dell'organizzazione nella settimana passata.
   
 ![Esempio di widget per le campagne antimalware in trend](../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   

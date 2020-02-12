@@ -18,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: È possibile configurare una quarantena per i messaggi di posta elettronica in arrivo in Office 365 in cui i messaggi di posta elettronica in arrivo che sono stati filtrati come posta indesiderata, massa, phishing e malware possono essere conservati per la revisione successiva.
-ms.openlocfilehash: 253e1b9e03d395f67ff1290a527e035cbf8dfc3f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 280421457662dd30cdcc3c7985feaad7ba0d16f2
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598673"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957431"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>Messaggi di posta elettronica in quarantena in Office 365
 
@@ -34,7 +34,7 @@ Per impostazione predefinita, i messaggi filtrati per le regole di phishing, mal
 Sia gli utenti che gli amministratori possono utilizzare i messaggi in quarantena. Gli utenti possono utilizzare solo i propri messaggi filtrati in quarantena. Gli amministratori possono cercare e gestire i messaggi in quarantena per tutti gli utenti.
 
 > [!NOTE]
-> Messaggi phishing con sicurezza elevata e messaggi in quarantena dalle azioni delle regole del flusso di posta sono disponibili solo nella quarantena di amministratore. Gli utenti possono accedere ai propri messaggi di posta elettronica, phishing, indesiderati e in blocco. 
+> Messaggi di posta elettronica di phishing e messaggi in quarantena con le azioni della regola del flusso sono disponibili solo nella quarantena di amministratore. Gli utenti possono accedere ai propri messaggi di posta elettronica, phishing, indesiderati e in blocco. 
   
 Per ulteriori informazioni, vedere Utilizzo dei messaggi in quarantena:
   

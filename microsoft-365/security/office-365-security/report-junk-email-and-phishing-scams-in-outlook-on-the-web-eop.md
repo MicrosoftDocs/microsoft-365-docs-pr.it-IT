@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Gli utenti di Microsoft Outlook sul Web possono segnalare la posta indesiderata (posta indesiderata) e i tentativi di phishing utilizzando le opzioni di segnalazione della posta elettronica predefinite. È inoltre possibile consentire a Microsoft di sapere se un messaggio di posta elettronica è stato erroneamente identificato come posta indesiderata.
-ms.openlocfilehash: e433a91d1152e1e87aa9f45b0ccfe94e8b39f0f9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598593"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957421"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Segnalare posta indesiderata e tentativi di phishing in Outlook sul web
 
@@ -38,7 +38,7 @@ Per inviare un messaggio di posta indesiderata a Microsoft:
    > [!NOTE]
    > In alternativa, fare clic con il pulsante destro del mouse su un messaggio per visualizzare un menu e scegliere **Contrassegna come posta indesiderata**.
 
-   È possibile segnalare un messaggio di posta indesiderata dalla cartella **posta in arrivo**, **disordine**o **elementi eliminati** .
+   È possibile segnalare un messaggio di posta indesiderata dalla cartella **posta in arrivo** o dagli **elementi eliminati** .
 
 2. Si aprirà una finestra di dialogo che chiede all'utente se desidera inviare una copia del messaggio di posta indesiderata a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al team di analisi di posta indesiderata Microsoft. In alternativa, selezionare la casella di controllo **Non visualizzare più questo messaggio** se si desidera inviare automaticamente a Microsoft messaggi di posta indesiderata futuri senza che venga prima chiesto.
 
@@ -57,7 +57,7 @@ Per inviare un messaggio di truffa di phishing a Microsoft:
 
    In alternativa, fare clic con il pulsante destro del mouse su un messaggio per visualizzare un menu e scegliere **Contrassegna come phishing**.
 
-   È possibile segnalare un messaggio di truffa di phishing dalla cartella **posta in arrivo**, **disordine**o **elementi eliminati** .
+   È possibile segnalare un messaggio di truffa di phishing dalla cartella **posta in arrivo** o dagli **elementi eliminati** .
 
 2. Per alcune organizzazioni, viene visualizzata una finestra di dialogo in cui viene chiesto se si desidera inviare una copia del messaggio di posta elettronica di phishing a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al team di analisi di posta indesiderata Microsoft. Questa opzione per la creazione di report è attualmente disponibile per un numero limitato di organizzazioni. potrebbe non essere richiesto di segnalare una truffa di phishing a Microsoft.
 

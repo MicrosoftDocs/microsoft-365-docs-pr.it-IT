@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: In qualità di amministratore globale di Office 365, è possibile utilizzare Attack Simulator per eseguire scenari di attacco realistici nell'organizzazione. Questo può essere utile per identificare e individuare gli utenti vulnerabili prima che un attacco reale colpisca la propria azienda.
-ms.openlocfilehash: 0bdb4a0ffac139f45d842025238d3780f41d594c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6fb88e6b79c0949c7ddc26eabda2bb04ea1fa3bf
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599823"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957411"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulatore di attacchi in Office 365
 
@@ -31,7 +31,9 @@ ms.locfileid: "41599823"
 
 Sono attualmente disponibili tre tipi di simulazioni di attacco:
 
-- [Nome visualizzato Spear-attacco di phishing](#display-name-spear-phishing-attack)
+- [Spear Harvest Credential-attacco di phishing](#credential-harvest-spear-phishing-attack)
+
+- [Attacco Spear-phishing Attack](#attachment-spear-phishing-attack)
 
 - [Attacco spray per la password](#password-spray-attack)
 
@@ -49,13 +51,15 @@ Assicurarsi che l'utente e l'organizzazione soddisfino i seguenti requisiti per 
 
 - Si è un amministratore globale o un amministratore di sicurezza di Office 365
 
+- Le campagne di phishing raccolgono ed elaborano gli eventi per un periodo di 30 giorni, i dati della campagna cronologica saranno disponibili fino a 90 giorni dopo l'avvio della campagna.
+
 - L'autenticazione a più fattori e l' [accesso condizionale](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) sono attivati, almeno per l'account di amministratore globale di Office 365 e gli amministratori della sicurezza che utilizzeranno simulatore di attacco. (Idealmente, l'autenticazione a più fattori e l'accesso condizionale sono attivati per tutti gli utenti dell'organizzazione.)
 
 - L'organizzazione dispone [di Office 365 Advanced Threat Protection Plan 2](office-365-atp.md), con simulatore di attacco visibile &amp; nel centro sicurezza e conformità (andare a **Threat Management** \> **Attack Simulator**)
 
     ![Threat Management-simulatore d'attacco](../media/ThreatMgmt-AttackSimulator.png)
 
-## <a name="display-name-spear-phishing-attack"></a>Nome visualizzato Spear-attacco di phishing
+## <a name="credential-harvest-spear-phishing-attack"></a>Spear Harvest Credential-attacco di phishing
 
 Il phishing è un termine generico per una vasta serie di attacchi classificati come un attacco stile di social engineering. Questo attacco è concentrato sul phishing Spear, un attacco più mirato che si rivolge a un gruppo specifico di persone o di un'organizzazione. In genere, un attacco personalizzato con alcuni ricognizione eseguito e utilizzando un nome visualizzato che genererà la fiducia nel destinatario, ad esempio un messaggio di posta elettronica che sembra provenire da un dirigente all'interno dell'organizzazione.
 
@@ -103,11 +107,25 @@ Questo attacco è incentrato sull'eventualità di modificare il messaggio a cui 
 
 11. Fare clic su **Avanti,** quindi su **fine** per avviare l'attacco. Il messaggio di posta elettronica di phishing Spear viene recapitato alle cassette postali dei destinatari.
 
+## <a name="attachment-spear-phishing-attack"></a>Attacco Spear-phishing Attack
+
+Il phishing è un termine generico per una vasta serie di attacchi classificati come un attacco stile di social engineering. Questo attacco è concentrato sull'Attachment Spear phishing, un attacco più mirato che si rivolge a un gruppo specifico di persone o di un'organizzazione. In genere, un attacco personalizzato con alcuni ricognizione eseguito e utilizzando un nome visualizzato che genererà la fiducia nel destinatario, ad esempio un messaggio di posta elettronica che sembra provenire da un dirigente all'interno dell'organizzazione.
+
+Questo attacco si concentra sull'eventualità di modificare il messaggio a cui sembra abbia avuto origine cambiando il nome visualizzato e l'indirizzo di origine, ma stavolta anziché offrire un URL per provare a attirare l'utente finale in modo da fare clic su, offriamo un allegato che si sta tentando di ottenere t utente finale da aprire. 
+
+### <a name="to-simulate-a-attachment-spear-phishing-attack"></a>Per simulare un attacco Spear-phishing Attachment
+
+1. Seguire la procedura dall'alto, facendo clic sull' **attacco degli allegati** nella pagina di destinazione.
+
+2. Man mano che si procede attraverso la procedura guidata, vengono visualizzate due opzioni da configurare. Il **tipo di allegato**supporta due tipi di allegati, con **estensione docx** o **PDF**. **Nome allegato**, utilizzare questo campo per creare un nome di allegato significativo per la campagna.
+
 ## <a name="password-spray-attack"></a>Attacco spray per la password
 
 Un attacco di spruzzatura della password in un'organizzazione viene in genere utilizzato dopo che un attore cattivo ha acquisito un elenco di utenti validi dal tenant. L'attore cattivo conosce le password comuni utilizzate dalle persone. Si tratta di un attacco ampiamente utilizzato, poiché si tratta di un attacco a basso costo da eseguire e più difficile da rilevare rispetto alla forza bruta.
 
 Questo attacco consente di specificare una password comune rispetto a una base di utenti di grandi dimensioni.
+
+**Nota importante** l'esecuzione dell'attacco di spruzzatura della password sugli account utente finali che dispongono già dell'autenticazione a più fattori comporta un tentativo infruttuoso di tali account nella creazione di report. Ciò è dovuto al fatto che l'autenticazione a più fattori è uno dei principali mechanims per contribuire alla protezione contro gli attacchi spray tramite password, pertanto è previsto.
 
 ### <a name="to-simulate-a-password-spray-attack"></a>Per simulare un attacco spray per la password
 
@@ -125,6 +143,8 @@ Questo attacco consente di specificare una password comune rispetto a una base d
 
 Un attacco di password con forza bruta nei confronti di un'organizzazione viene in genere utilizzato dopo che un attore non valido ha acquisito un elenco di utenti chiave dal tenant. Questo attacco si concentra sul tentativo di un set di password su un singolo account utente.
 
+**Nota importante** l'esecuzione degli attacchi di password Brute per gli account utente finali che dispongono già dell'autenticazione a più fattori comporta un tentativo non riuscito per tali account nella creazione di report. Ciò è dovuto al fatto che l'autenticazione a più fattori è uno dei principali mechanims per contribuire alla protezione contro gli attacchi di password bruta, pertanto è previsto.
+
 ### <a name="to-simulate-a-brute-force-password-attack"></a>Per simulare un attacco di password con forza bruta
 
 1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)scegliere **Threat Management** \> **Attack Simulator**.
@@ -137,19 +157,7 @@ Un attacco di password con forza bruta nei confronti di un'organizzazione viene 
 
 5. Scegliere **fine** per avviare l'attacco.
 
-## <a name="new-features-in-attack-simulator"></a>Nuove funzionalità in Attack Simulator
 
-Nuove funzionalità sono state aggiunte di recente a Attack Simulator. Ad esempio:
-
-- Funzionalità di creazione di report avanzate. La possibilità di visualizzare dati quali il tempo più rapido (o più lento) per aprire un messaggio di posta elettronica di simulazione di attacco, il tempo più rapido (o più lento) per fare clic su un collegamento nel messaggio e altre visualizzazioni.
-
-- Editor modelli di posta elettronica. La possibilità di creare un modello di posta elettronica personalizzato e riutilizzabile che è possibile utilizzare per simulazioni di attacco future.
-
-- Importazione del destinatario CSV. La possibilità di utilizzare un file. csv per importare l'elenco dei destinatari di destinazione invece di usare lo strumento di selezione Rubrica.
-
-Altre nuove caratteristiche stanno per essere attaccate al simulatore d'attacco. Ad esempio:
-
-- Simulazione di phishing del payload degli allegati. La possibilità di utilizzare un allegato come payload per la simulazione di phishing al posto di un URL.
 
 Visitare la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per vedere cosa c'è in sviluppo, cosa è in uscita e cosa è già stato avviato.
 
