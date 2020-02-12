@@ -1,5 +1,5 @@
 ---
-title: Panoramica del centro conformità di Microsoft 365
+title: Centro conformità Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,16 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Informazioni sul centro conformità di Microsoft 365, inclusi i contenuti, su come ottenerlo e sui passaggi successivi.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a6fd689240b15fa915c609291259999ae8a31ce3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 62c70fc4e7ea8a491db23a4fc9695b2b11b283ac
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602783"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916931"
 ---
-# <a name="overview-of-the-microsoft-365-compliance-center"></a>Panoramica del centro conformità di Microsoft 365
-
-## <a name="overview"></a>Panoramica
+# <a name="microsoft-365-compliance-center"></a>Centro conformità Microsoft 365
 
 Se si è interessati alla postura di conformità dell'organizzazione, è necessario amare il [centro conformità di Microsoft 365](https://compliance.microsoft.com). Microsoft 365 Compliance Center consente di accedere facilmente ai dati e agli strumenti necessari per gestire le esigenze di conformità dell'organizzazione.
 
@@ -60,7 +58,7 @@ Da qui, è possibile:
 
 ## <a name="easy-navigation-to-more-compliance-features-and-capabilities"></a>Semplificazione della navigazione verso caratteristiche e funzionalità di conformità
 
-Oltre ai collegamenti nelle schede nella Home page, viene visualizzato un riquadro di spostamento a sinistra dello schermo che consente di accedere facilmente agli [avvisi](../security/office-365-security/alerts.md), ai [report](reports-in-security-and-compliance.md), ai [criteri](alert-policies.md), alle soluzioni di conformità e altro ancora.
+Oltre ai collegamenti nelle schede nella Home page, viene visualizzato un riquadro di spostamento a sinistra dello schermo che consente di accedere facilmente agli [avvisi](../security/office-365-security/alerts.md), ai [report](reports-in-security-and-compliance.md), ai [criteri](alert-policies.md), alle soluzioni di conformità e altro ancora. Per aggiungere o rimuovere le opzioni per un riquadro di spostamento personalizzato, utilizzare il controllo di **spostamento Personalizza** nel riquadro di spostamento. Vengono aperte le impostazioni di **personalizzazione del riquadro di spostamento** , in modo che sia possibile configurare gli elementi visualizzati nel riquadro di spostamento.
 
 |  |  |
 |---------|---------|

@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Gli Information Worker dell'organizzazione gestiscono molti tipi di informazioni riservate durante una giornata. La creazione impronta digitale documenti rende più semplice proteggere le informazioni identificando moduli standard utilizzati all'interno dell'organizzazione. In questo argomento vengono descritti i concetti che stanno alla base dell'impronta digitale del documento e come crearne uno tramite PowerShell.
-ms.openlocfilehash: 6aea349495aa31eba8c9b57abffb92131d00864c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4e64f2bf4db802cc5c94661fc2a57e1a0854b28a
+ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595201"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41892029"
 ---
 # <a name="document-fingerprinting"></a>Creazione impronta digitale documenti
 
@@ -25,25 +25,25 @@ Gli Information Worker dell'organizzazione gestiscono molti tipi di informazioni
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>Scenario di base per la creazione impronta digitale documenti
 
-L'impronta digitale del documento è una funzionalità di prevenzione della perdita di dati (DLP) che converte un modulo standard in un tipo di informazioni riservate, che è possibile utilizzare nelle regole dei criteri DLP. Ad esempio, è possibile creare l'impronta digitale di un documento basata su un modello di brevetto vuoto e creare quindi un criterio DLP che rileva e blocca tutti i modelli di brevetto in uscita contenenti dati sensibili. Facoltativamente, è possibile impostare suggerimenti per i [criteri](use-notifications-and-policy-tips.md) per segnalare ai mittenti che potrebbero inviare informazioni riservate e il mittente deve verificare che i destinatari siano qualificati per la ricezione dei brevetti. Questo processo funziona con tutti i moduli basati su testo utilizzati nell'organizzazione. Ulteriori esempi di moduli che è possibile caricare includono: 
+L'impronta digitale del documento è una funzionalità di prevenzione della perdita di dati (DLP) che converte un modulo standard in un tipo di informazioni riservate, che è possibile utilizzare nelle regole dei criteri DLP. Ad esempio, è possibile creare l'impronta digitale di un documento basata su un modello di brevetto vuoto e creare quindi un criterio DLP che rileva e blocca tutti i modelli di brevetto in uscita contenenti dati sensibili. Facoltativamente, è possibile impostare suggerimenti per i [criteri](use-notifications-and-policy-tips.md) per segnalare ai mittenti che potrebbero inviare informazioni riservate e il mittente deve verificare che i destinatari siano qualificati per la ricezione dei brevetti. Questo processo funziona con tutti i moduli basati su testo utilizzati nell'organizzazione. Ulteriori esempi di moduli che è possibile caricare includono:
   
 - Moduli governativi
-    
-- Moduli di conformità Health Insurance Portability and Accountability Act (HIPAA)
-    
+- Moduli di conformità Health Insurance Portability and Accountability Act (HIPAA)  
 - Moduli di informazioni dei dipendenti per i reparti delle risorse umane
-    
 - Moduli personalizzati creati specificamente per l'organizzazione
-    
+
 In teoria, l'organizzazione possiede già una pratica aziendale stabilita relativa all'utilizzo di alcuni moduli per la trasmissione di dati sensibili. Dopo aver caricato una maschera vuota per essere convertita in un'impronta digitale del documento e aver configurato un criterio corrispondente, il DLP rileva tutti i documenti nella posta in uscita che corrispondono a tale impronta digitale.
-  
+
 ## <a name="how-document-fingerprinting-works"></a>Funzionamento dell'impronta digitale del documento
 
 Sarà già chiaro che i documenti non hanno impronte digitali nel verso senso della parola, ma il nome consente di spiegare la funzionalità. Come le impronti digitali di una persona presentano criteri univoci, così i documenti presentano modelli di parole univoci. Quando si carica un file, DLP identifica il modello di parola univoco nel documento, crea un'impronta digitale del documento in base a tale modello e utilizza tale impronta digitale per rilevare i documenti in uscita che contengono lo stesso modello. Ecco perché il caricamento di un modulo o modello crea il tipo più efficace di impronta digitale del documento. Chiunque compila un modulo usa lo stesso set originale di parole e poi aggiunge proprie parole al documento. Fintanto che il documento in uscita non è protetto da password e contiene tutto il testo del modulo originale, DLP è in grado di determinare se il documento corrisponde all'impronta digitale del documento.
-  
+
+> [!IMPORTANT]
+> Per il momento, DLP è in grado di utilizzare il fingerprinting dei documenti come metodo di rilevamento solo in Exchange Online.
+
 Il seguente esempio mostra cosa accade si crea un'impronta digitale del documento in base al modello di brevetto. È comunque possibile usare qualsiasi modello per la creazione di un'impronta digitale del documento.
   
-**Esempio di un documento di brevetto corrispondente a un'impronta digitale del documento di un modello di brevetto**
+### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>Esempio di un documento di brevetto corrispondente a un'impronta digitale del documento di un modello di brevetto
 
 ![Document-Fingerprinting-diagram. png](media/Document-Fingerprinting-diagram.png)
   
@@ -60,11 +60,9 @@ L'impronta digitale del documento supporta gli stessi tipi di file supportati ne
 L'impronta digitale del documento non rileva informazioni riservate nei casi seguenti:
   
 - File protetti da password
-    
 - File che contengono solo immagini
-    
 - Documenti che non contengono tutto il testo del modulo originale usato per la creazione dell'impronta digitale del documento
-    
+
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Utilizzo di PowerShell per creare un pacchetto di regole di classificazione basato sull'impronta digitale dei documenti
 
 Si noti che è possibile creare un'impronta digitale del documento solo tramite PowerShell nel centro &amp; sicurezza e conformità. Per eseguire la connessione, vedere [PowerShell to Connect to Security & Compliance Center](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
