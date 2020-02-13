@@ -1,7 +1,7 @@
 - name: Sicurezza di Microsoft 365
   href: index.yml
   items:
-    - name: Introduzione
+    - name: Per iniziare
       items:
         - name: Sicurezza Microsoft 365 per decision maker aziendali
           href: Microsoft-365-security-for-bdm.md
@@ -378,6 +378,8 @@
               href: ./office-365-security/office-365-air.md
             - name: Identificare e analizzare i messaggi di posta elettronica dannosi recapitati
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: Documenti attendibili in Office 365 ATP
+              href: ./office-365-security/safe-docs.md
             - name: Esplora minacce (e rilevamenti in tempo reale)
               href: ./office-365-security/threat-explorer.md
               items:
