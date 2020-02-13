@@ -1,6 +1,6 @@
 - name: Conformità di Microsoft 365
   href: index.yml
-- name: Introduzione
+- name: Per iniziare
   items:
     - name: Novità del centro conformità
       href: whats-new.md

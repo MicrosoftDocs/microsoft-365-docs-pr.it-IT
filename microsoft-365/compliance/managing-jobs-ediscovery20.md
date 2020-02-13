@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f829c6735bc8326a775a9d259da8b64aaa8b02ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 78767318a8799ec88e15452f70bceaa5466a9cbf
+ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600463"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41960332"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Gestire i processi in Advanced eDiscovery
 
@@ -55,6 +55,6 @@ Nella tabella seguente vengono descritti i diversi Stati di stato per i processi
 | Invio non riuscito | L'invio dei processi ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. |
 | In corso | Il processo è in corso, è possibile monitorare lo stato del processo nella scheda **processi** . |
 | Corretta | Il processo è stato completato correttamente. La data e l'ora in cui il processo è stato completato viene visualizzato nella colonna **completato** nella scheda **processi** . |
-| Parzialmente completata | Il processo ha avuto esito positivo. |
+| Parzialmente completata | Il processo ha avuto esito positivo. Questo stato viene in genere restituito quando il processo non ha trovato dati parzialmente indicizzati (denominati anche *dati non indicizzati*) in alcune origini dati del custode.  |
 | Failed | Il processo ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. Se il processo ha esito negativo una seconda volta, è consigliabile contattare il supporto tecnico Microsoft e fornire le informazioni sul supporto del processo. |
 |||

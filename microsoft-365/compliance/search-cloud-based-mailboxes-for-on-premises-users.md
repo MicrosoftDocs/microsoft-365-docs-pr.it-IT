@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilizzare lo strumento di ricerca contenuto nel centro sicurezza & Compliance per cercare ed esportare i dati di chat di MicrosoftTeams (denominati chat di 1xN) per gli utenti locali in una distribuzione ibrida di Exchange.
-ms.openlocfilehash: d59af2e39d91bf107567016428102a5aba9cb724
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 042e34028023f1dd4f49804230fe99f2d042d0d6
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597573"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957141"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Ricerca di cassette postali basate sul cloud per gli utenti locali in Office 365
 
@@ -109,7 +109,7 @@ Dopo che la funzionalità è stata abilitata, è possibile utilizzare la ricerca
 
 È possibile utilizzare i cmdlet **New-ComplianceSearch** e **set-ComplianceSearch** in PowerShell per la sicurezza & Compliance Center per eseguire ricerche nella cassetta postale basata sul cloud per gli utenti locali. Come spiegato in precedenza, non è necessario inviare una richiesta di supporto per utilizzare PowerShell per cercare i dati di chat dei team per gli utenti locali. 
   
-1. [Connettersi a PowerShell per Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Eseguire il seguente comando di PowerShell per creare una ricerca di contenuto che esegua ricerche nelle cassette postali basate sul cloud degli utenti locali.
 
@@ -137,9 +137,8 @@ Per ulteriori informazioni sull'utilizzo di questi cmdlet, vedere:
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Attualmente, è possibile solo cercare, visualizzare in anteprima ed esportare il contenuto nelle cassette postali basate su cloud per gli utenti locali. L'inserimento di una cassetta postale basata sul cloud per un utente locale in un blocco associato a un caso di eDiscovery o di assegnazione a un criterio di conservazione di Office 365 non è supportato. 
+- Attualmente, è possibile cercare, visualizzare in anteprima ed esportare il contenuto nelle cassette postali basate sul cloud per gli utenti locali. È inoltre possibile inserire una cassetta postale basata sul cloud per un utente locale in un blocco associato a un caso di eDiscovery e applicare un criterio di conservazione per le chat dei team o i messaggi di canale alle cassette postali basate sul cloud per gli utenti locali. Tuttavia, non è possibile applicare un criterio di conservazione per altri percorsi di contenuto, ad esempio le cassette postali di Exchange e i siti di SharePoint, alle cassette postali basate sul cloud per gli utenti locali. 
 
-- La selezione percorso contenuto per eDiscovery contiene gli utenti locali e consente di selezionarli. Tuttavia, come spiegato in precedenza, il blocco non verrà applicato all'utente locale.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -157,7 +156,7 @@ No. Quando si esegue la migrazione della cassetta postale principale di un utent
   
  **È possibile applicare un blocco eDiscovery o I criteri di conservazione di Office 365 agli utenti locali?**
   
-No.
+Sì. È possibile applicare i criteri di conservazione o mantenimento di eDiscovery per le chat dei team e i messaggi di canale alle cassette postali basate sul cloud per gli utenti locali.
   
  **La ricerca di contenuto può trovare chat di Team precedenti per gli utenti locali prima del momento in cui l'organizzazione ha inviato la richiesta per abilitare questa funzionalità?**
   

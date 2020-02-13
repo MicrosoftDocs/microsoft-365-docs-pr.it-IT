@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: db05b598fb0dab3cac9420b33b0bd4e12b6b7e9a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 356330b4282fe9dc0aa211d48e452ad04a1bbe74
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602793"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957191"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Eseguire la migrazione delle ricerche e delle esenzioni eDiscovery legacy al centro conformità di Microsoft 365
 
@@ -28,7 +28,7 @@ Per aiutare i clienti a sfruttare le funzionalità nuove e migliorate, in questo
 > [!NOTE]
 > Poiché esistono numerosi scenari diversi, in questo articolo vengono fornite indicazioni generali per le ricerche di transizione e vengono conservate in un caso di eDiscovery di base nel centro conformità di Microsoft 365. L'utilizzo dei casi di eDiscovery non è sempre necessario, ma aggiunge un ulteriore livello di sicurezza consentendo di assegnare le autorizzazioni per controllare chi ha accesso ai casi di eDiscovery nell'organizzazione.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per eseguire i comandi di PowerShell descritti in questo articolo, è necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & conformità di Office 365. È inoltre necessario essere membri del gruppo di ruoli Gestione individuazione nell'interfaccia di amministrazione di Exchange.
 
@@ -41,7 +41,7 @@ Il primo passaggio consiste nel connettersi a PowerShell di Exchange Online e a 
 ```powershell
 $UserCredential = Get-Credential
 $sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session -AllowClobber -DisableNameChecking
+Import-PSSession $sccSession -DisableNameChecking
 $exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
 Import-PSSession $exoSession -AllowClobber -DisableNameChecking
 ```
@@ -87,23 +87,19 @@ Per creare un blocco eDiscovery, è necessario creare un caso di eDiscovery per 
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
 
-![Esempio di esecuzione del comando New-ComplianceCase](media/MigrateLegacyeDiscovery3.png)
-
 ## <a name="step-5-create-the-ediscovery-hold"></a>Passaggio 5: creare il blocco eDiscovery
 
 Dopo aver creato il caso, è possibile creare il blocco e associarlo al caso creato nel passaggio precedente. È importante tenere presente che è necessario creare un criterio di blocco del caso e una regola di blocco del caso. Se la regola di blocco del caso non viene creata dopo aver creato il criterio di blocco del caso, il blocco di eDiscovery non verrà creato e qualsiasi contenuto non verrà messo in attesa.
 
-Eseguire i seguenti comandi per ricreare il blocco di eDiscovery che si desidera migrare. In questi esempi vengono utilizzate le proprietà dall'archiviazione sul posto del passaggio 3 di cui si desidera eseguire la migrazione.
+Eseguire i seguenti comandi per ricreare il blocco di eDiscovery che si desidera migrare. In questi esempi vengono utilizzate le proprietà dall'archiviazione sul posto del passaggio 3 di cui si desidera eseguire la migrazione. Il primo comando crea un nuovo criterio di blocco del caso e salva le proprietà in una variabile. Il secondo comando crea la regola di blocco del caso corrispondente.
 
 ```powershell
 $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLocation $search.SourceMailboxes
 ```
 
 ```powershell
-$rule = New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
+New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
-
-![Esempio di utilizzo dei cmdlet NewCaseHoldPolicy e NewCaseHoldRule](media/MigrateLegacyeDiscovery4.png)
 
 ## <a name="step-6-verify-the-ediscovery-hold"></a>Passaggio 6: verificare l'esenzione di eDiscovery
 
@@ -145,7 +141,7 @@ La ricerca creata al passaggio 7 è elencata nella scheda **ricerche** del caso 
 
 Se si esegue la migrazione di una ricerca eDiscovery sul posto ma non la si associa a un caso di eDiscovery, questa verrà elencata nella pagina Ricerca contenuto del centro conformità di Microsoft 365.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Per ulteriori informazioni su eDiscovery sul posto & conserva nell'interfaccia di amministrazione di Exchange, vedere:
   
