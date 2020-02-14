@@ -15,17 +15,20 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare l'autenticazione dei messaggi, la creazione di report e la conformità di un dominio (DMARC) per convalidare i messaggi inviati dall'organizzazione di Office 365.
-ms.openlocfilehash: 88daf311c5c3bdad396044b78476a134f3c814cb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0702baec4dd2b585dcf45546befc19a6108004b9
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598093"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957351"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Utilizzare DMARC per convalidare la posta elettronica in Office 365
 
 Autenticazione dei messaggi, la creazione di report e la conformità di un dominio ([DMARC](https://dmarc.org)) funziona con Sender Policy Framework (SPF) e DKIM (DomainKeys Identified Mail) per l'autenticazione dei mittenti di posta e garantire che i sistemi di posta elettronica di destinazione considerino attendibili i messaggi inviati dal dominio dell'utente. L'implementazione di DMARC con SPF e DKIM fornisce un'ulteriore protezione dallo spoofing e dal phishing. DMARC consente ai sistemi di posta di ricezione di determinare cosa fare con i messaggi inviati dal dominio che non supera i controlli SPF o DKIM.
-  
+
+> [!TIP]
+> Vedere il catalogo [Microsoft Intelligent Security Association](https://www.microsoft.com/misapartnercatalog) per individuare i fornitori di terze parti che offrono la creazione di report DMARC per Office 365. 
+
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-office-365"></a>In che modo SPF e DMARC collaborano per proteggere la posta elettronica in Office 365?
 <a name="SPFandDMARC"> </a>
 
@@ -79,7 +82,7 @@ Il record TXT DMARC di Microsoft è simile al seguente:
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1" 
 ```
 
-Microsoft invia i suoi report DMARC a [Agari](https://agari.com), una terza parte. Agari raccoglie e analizza i report DMARC. Inoltre, Valimail offre [servizi di monitoraggio DMARC gratuiti per Office 365](https://go.valimail.com/microsoft.html).
+Microsoft invia i propri report DMARC a una terza parte:[Agari](https://agari.com). Agari raccoglie e analizza i report DMARC. Vedere il catalogo [Microsoft Intelligent Security Association](https://www.microsoft.com/misapartnercatalog) per individuare altri fornitori di terze parti che offrono la creazione di report DMARC per Office 365.
   
 ## <a name="implement-dmarc-for-inbound-mail"></a>Implementare DMARC per la posta in ingresso
 <a name="implementDMARCinbound"> </a>

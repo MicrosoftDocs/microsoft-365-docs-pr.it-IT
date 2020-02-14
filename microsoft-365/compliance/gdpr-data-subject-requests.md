@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, 
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,22 +14,19 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: f5ab5230cae7dcc31c487ecbc6a2bbdcbcaaa0dd
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+titleSuffix: Microsoft GDPR
+ms.openlocfilehash: d2f9ac660c30b815d4ac381f347e1c1aa354ce0d
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "39268536"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916911"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Richieste degli interessati nell'ambito del GDPR e del CCPA
 
-Il Regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole per le organizzazioni che offrono beni e servizi alle persone che risiedono nell'Unione europea (UE) o che raccolgono e analizzano i dati dei residenti nell'UE in qualunque luogo si trovi l'utente o la sua azienda. Altri dettagli sono disponibili [nell'argomento relativo al Riepilogo sul GDPR](gdpr.md).
+Il Regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole per le organizzazioni che offrono beni e servizi alle persone che risiedono nell'Unione europea (UE) o che raccolgono e analizzano i dati dei residenti nell'UE in qualunque luogo si trovi l'utente o la sua azienda. Altri dettagli sono disponibili [nell'argomento Riepilogo sul GDPR](gdpr.md).
 
-Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo di determinate divulgazioni, protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite".  <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1SI] 
-
-Questo documento illustra come completare le richieste dell'interessato (DSR) secondo il GDPR e il CCPA usando i prodotti e i servizi Microsoft.
+Analogamente, il California Consumer Privacy Act (CCPA) fornisce obblighi e diritti in materia di privacy per i consumatori della California, inclusi diritti simili ai diritti dell'interessato del GDPR, ad esempio il diritto di eliminare, ricevere e accedere alle informazioni personali (portabilità).  Nell'ambito dei diritti che i consumatori possono esercitare, il CCPA prevede inoltre l'obbligo per determinate divulgazioni, di protezioni contro la discriminazione e requisiti di consenso o rifiuto esplicito per alcuni trasferimenti di dati classificati come "vendite". Questo documento illustra come completare le richieste dell'interessato (DSR) secondo il GDPR e il CCPA usando i prodotti e i servizi Microsoft.
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -79,7 +78,7 @@ I log e i dati correlati generati da Microsoft potrebbero contenere dati conside
 
 ### <a name="yammer-and-kaizala"></a>Yammer e Kaizala
 
-L'eliminazione di un account utente non rimuove i log generati dal sistema per Yammer e Kaizala. Per rimuovere i dati da queste applicazioni, vedere uno degli argomenti seguenti:
+L'eliminazione di un account utente non rimuove i log generati dal sistema per Yammer e Kaizala. Per rimuovere i dati da queste applicazioni, vedere una delle seguenti risorse:
 
 - [Gestire le richieste dell'interessato per il GDPR in Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [Esportare o eliminare i dati dell'organizzazione di un utente in Kaizala](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
@@ -99,6 +98,12 @@ In alcune situazioni, gli utenti dell'organizzazione possono accedere ai prodott
 ### <a name="third-party-products"></a>Prodotti di terze parti
 
 Per i prodotti e i servizi di terze parti a cui è stato eseguito l'accesso tramite l'autenticazione con l'account Microsoft, tutte le richieste dell’interessato devono essere rivolte alla terza parte competente.
+
+## <a name="data-subject-request-admin-tools"></a>Strumenti di amministrazione delle richieste dell'interessato
+
+- **Centro sicurezza e conformità**: i dati generati dall'utente vengono esportati tramite il [Centro sicurezza e conformità](https://aka.ms/stpsecurityandcompliance) o tramite le funzionalità nell'applicazione.
+- **Interfaccia di amministrazione di Azure AD**: eliminare un interessato da Azure Active Directory e dai relativi servizi utilizzando [l'interfaccia di amministrazione di Azure AD](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/Allusers/menuId/).
+- **Esportazione log di dati Microsoft**: i log generati dal sistema possono essere esportati dagli amministratori tenant utilizzando la funzionalità di [esportazione log di dati Microsoft](https://aka.ms/MicrosoftGDPR).
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 

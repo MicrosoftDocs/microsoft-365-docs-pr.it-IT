@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È anche possibile usare le etichette di conservazione per implementare una soluzione di gestione dei record per Microsoft 365.
-ms.openlocfilehash: 341d3bf53ac11b2233749210b6a34aa7c4df0208
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: d10b47ccf85493f22d9ef5bdfa0e36e4e954c8a7
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855265"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957171"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -322,19 +322,15 @@ Ad esempio, se si ha un tag per il materiale di marketing e si sa che una specif
   
 Se si applica un'etichetta di conservazione predefinita agli elementi esistenti nella raccolta, nella cartella o nel set di documenti:
   
-- Tutti gli elementi nella raccolta, nella cartella o nel set di documenti ricevono automaticamente la stessa etichetta di conservazione, **tranne** gli elementi ai quali è stata applicata esplicitamente un'etichetta di conservazione. Gli elementi etichettati esplicitamente mantengono l'etichetta esistente. Per altre informazioni, vedere la sezione [Precedenza nei principi di conservazione](#the-principles-of-retention-or-what-takes-precedence) più avanti.
+- Tutti gli elementi nella raccolta, nella cartella o nel set di documenti ricevono automaticamente la stessa etichetta di conservazione, **tranne** gli elementi ai quali è stata applicata esplicitamente un'etichetta di conservazione, come i record. Gli elementi etichettati esplicitamente mantengono l'etichetta esistente. Per altre informazioni, vedere la sezione [Precedenza nei principi di conservazione](#the-principles-of-retention-or-what-takes-precedence) più avanti.
     
-- Se si modifica o si rimuove l'etichetta di conservazione predefinita per una raccolta, una cartella o un set di documenti, l'etichetta viene modificata o rimossa anche da tutti gli elementi nella raccolta, nella cartella o nel set di documenti **tranne** che dagli elementi con etichette di conservazione esplicite. 
+- Se si modifica o si rimuove l'etichetta di conservazione predefinita per una raccolta, una cartella o un set di documenti, l'etichetta viene modificata o rimossa anche da tutti gli elementi nella raccolta, nella cartella o nel set di documenti **tranne** che dagli elementi con etichette di conservazione esplicite, come i record.
     
 - Se si sposta un elemento con un'etichetta di conservazione predefinita da una raccolta, una cartella o un set di documenti a un'altra raccolta, cartella o set di documenti, l'elemento mantiene l'etichetta di conservazione predefinita esistente anche se la nuova posizione ne ha una diversa.
 
-- Se l'etichetta di conservazione predefinita per una raccolta, una cartella o un set di documenti dichiara il contenuto come record (si parla anche di *etichetta record*), sono applicabili le caratteristiche seguenti:
+**Record:** se si applica un'etichetta di record predefinita a una raccolta, a una cartella o a un set di documenti, viene applicata un'etichetta di record a tutti i singoli elementi presenti in quelle posizioni. Quando si sposta un nuovo elemento in un percorso con un'etichetta di record, tale elemento viene contrassegnato come record. Se però si cambia l'etichetta di conservazione predefinita in un'etichetta che non dichiara il contenuto come record, **non** viene rimossa l'etichetta di record dai singoli elementi, ma ognuno di essi mantiene la propria etichetta di record. Solo un amministratore della raccolta siti può rimuovere o modificare esplicitamente l'etichetta di conservazione degli elementi record.
 
-   - Se si modifica l'etichetta di conservazione predefinita in un'etichetta che non dichiara il contenuto come record, gli elementi mantengono l'etichetta record predefinita. La nuova etichetta di conservazione predefinita non viene applicata a tali elementi. Un amministratore della raccolta siti dovrà rimuovere o modificare esplicitamente l'etichetta di conservazione.
-
-   - Se si rimuove l'etichetta di conservazione predefinita che dichiara il contenuto come record, l'etichetta record non viene rimossa dagli elementi della raccolta, della cartella o del set di documenti. Un amministratore della raccolta di siti dovrà rimuovere esplicitamente l'etichetta di conservazione.
-
-   Per altre informazioni sulle etichette di conservazione che dichiarano il contenuto come record, vedere [Panoramica dei record](records.md).
+Per altre informazioni sulle etichette di conservazione che dichiarano il contenuto come record, vedere [Panoramica dei record](records.md).
     
 ## <a name="applying-a-retention-label-to-email-by-using-rules"></a>Applicazione di un'etichetta di conservazione alla posta elettronica mediante regole
 

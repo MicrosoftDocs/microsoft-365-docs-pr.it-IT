@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 111bafdb5d95792e8fda08007bccd7cd274b8832
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bb4056b90afc8805d4e56b9b73c0c7d118d6f08c
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594486"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916891"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>Supportare il programma GDPR con elenchi di controllo di preparazione della conformità
 
@@ -28,9 +28,7 @@ Il regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole 
 
 ## <a name="accountability-readiness-checklists"></a>Elenchi di controllo di preparazione della conformità
 
-Gli elenchi di controllo di preparazione della conformità vengono forniti per accedere in modo pratico alle informazioni necessarie per l'applicazione del GDPR quando si usano prodotti e servizi Microsoft. L'elenco di controllo elenca i potenziali obblighi che si possono avere nell'ambito del GDPR e indica le informazioni che è possibile usare per supportare la conformità delle organizzazioni. <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWs1RP] 
+Gli elenchi di controllo di preparazione della conformità vengono forniti per accedere in modo pratico alle informazioni necessarie per l'applicazione del GDPR quando si usano prodotti e servizi Microsoft. L'elenco di controllo elenca i potenziali obblighi che si possono avere nell'ambito del GDPR e indica le informazioni che è possibile usare per supportare la conformità delle organizzazioni.
 
 Esiste una guida specifica per quattro famiglie di prodotti e servizi Microsoft:
 
@@ -65,6 +63,17 @@ Gli elenchi di controllo includono le quattro categorie di base di considerazion
     - Informazioni sull'organizzazione e il contesto  
     - Pianificazione  
     - Criteri di sicurezza delle informazioni
+
+## <a name="customer-agreements"></a>Contratti dei clienti
+
+- **Condizioni dei servizi online**: gli impegni contrattuali di Microsoft in relazione al GDPR sono disponibili nelle [Condizioni dei servizi online](https://go.microsoft.com/fwlink/p/?linkid=2052208).
+- **Condizioni dei prodotti Microsoft**: Microsoft estende gli [impegni delle condizioni del GDPR](https://go.microsoft.com/fwlink/p/?linkid=2052213) a tutti i clienti con contratti multilicenza.
+- **Addendum per la protezione dei dati**: i servizi Microsoft[ estendono gli impegni ](https://go.microsoft.com/fwlink/p/?linkid=2052215)ai clienti di Microsoft Consulting Services e altri.
+
+## <a name="gdpr-compliance-controls"></a>Controlli per la conformità al GDPR
+
+- **Utilizzo del punteggio di conformità**: esaminare e incorporare i controlli che Microsoft utilizza per supportare gli obblighi nel GDPR tramite il [punteggio di conformità](compliance-score.md).
+- **Mapping di controllo del GDPR**: accedere a un [mapping completo](https://go.microsoft.com/fwlink/p/?linkid=2052220) dei controlli di Microsoft agli obblighi del GDPR.
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 

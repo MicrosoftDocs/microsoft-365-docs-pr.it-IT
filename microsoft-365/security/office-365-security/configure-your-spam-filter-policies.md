@@ -1,5 +1,7 @@
 ---
 title: Configurare i criteri di filtro della posta indesiderata
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -14,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Le impostazioni di base del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata.
-ms.openlocfilehash: 107b4cfa79a83ec5703edd3b47d00c59da81f4b6
-ms.sourcegitcommit: 8b619cc0587d180322d0799fdad813cdd929d9dc
+ms.openlocfilehash: a645d00bd650cba06ca3751aa4fc3f48f9959e5b
+ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "40929792"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41957201"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurare i criteri di filtro della posta indesiderata
 Le impostazioni del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata. Le impostazioni del filtro della posta indesiderata vengono applicate solo ai messaggi in arrivo e sono di due tipi:
@@ -138,7 +140,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>Regolazione dei criteri del filtro della posta indesiderata per impedire falsi positivi e falsi negativi
 
-Se si desidera intraprendere un approccio più aggressivo, è possibile attivare opzioni avanzate per il filtro della posta indesiderata. Per informazioni sulle impostazioni relative alla posta indesiderata per un'intera organizzazione, consultare [Come evitare che i messaggi effettivi vengano contrassegnati come indesiderati in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam) o [Bloccare la posta indesiderata con il filtro di posta indesiderata di Office 365 per prevenire il problema dei falsi negativi](reduce-spam-email.md). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
+Se si desidera intraprendere un approccio più aggressivo, è possibile attivare opzioni avanzate per il filtro della posta indesiderata. Per informazioni sulle impostazioni relative alla posta indesiderata per un'intera organizzazione, consultare [Come evitare che i messaggi effettivi vengano contrassegnati come indesiderati in Office 365](prevent-email-from-being-marked-as-spam.md) o [Bloccare la posta indesiderata con il filtro di posta indesiderata di Office 365 per prevenire il problema dei falsi negativi](reduce-spam-email.md). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
 
 ## <a name="allowblock-lists"></a>Elenchi di elementi consentiti/bloccati
 
@@ -160,6 +162,9 @@ Entrambi gli elenchi sono configurati in qualsiasi criterio di protezione da pos
    - Aggiungere i mittenti indesiderati all'elenco dei mittenti bloccati. Fare clic su **Modifica**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif), quindi nella finestra di dialogo di selezione, aggiungere gli indirizzi dei mittenti che si desidera bloccare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina degli **elenchi di indirizzi bloccati**.
 
    - Aggiungere i domini indesiderati all'elenco dei domini bloccati. Fare clic su **Modifica**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif) e, nella finestra di dialogo di selezione, aggiungere i domini che si desidera bloccare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina degli **elenchi di indirizzi bloccati**.
+   
+     > [!NOTE]
+     > Nei criteri filtro posta indesiderata è possibile bloccare interi domini o mittenti specifici, ma non è possibile usare i caratteri jolly (\*). 
 
 > [!TIP]
 > Ci potrebbero essere situazioni in cui l'organizzazione potrebbe non concordare con il verdetto fornito dal servizio. In questo caso, è consigliabile mantenere permanenti gli elenchi di elementi consentiti o bloccati. Tuttavia, se si vuole inserire un dominio nell'elenco di quelli consentiti per un periodo di tempo prolungato, è consigliabile indicare al mittente di verificare che il proprio dominio sia autenticato e impostato su DMARC, rifiutare se non lo è.
@@ -171,7 +176,7 @@ Entrambi gli elenchi sono configurati in qualsiasi criterio di protezione da pos
 
 [Quarantena](quarantine.md)
 
-[Come evitare che i messaggi effettivi vengano contrassegnati come indesiderati in Office 365](https://docs.microsoft.com/microsoft-365/compliance/prevent-email-from-being-marked-as-spam)
+[Come evitare che i messaggi effettivi vengano contrassegnati come indesiderati in Office 365](prevent-email-from-being-marked-as-spam.md)
 
 [Come ridurre la posta indesiderata in Office 365](reduce-spam-email.md)
 

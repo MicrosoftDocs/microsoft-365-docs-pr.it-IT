@@ -15,20 +15,16 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: cc633dc261594607a87e7aae7da03e0a427a2492
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0a62cf2ef40bbf9da219309cf75eed27ea8739e4
+ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594416"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41916901"
 ---
 # <a name="data-protection-impact-assessment-for-the-gdpr"></a>Valutazione dell'impatto sulla protezione dei dati per il GDPR
 
-Il regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole per le organizzazioni che offrono beni e servizi alle persone che risiedono nell'Unione europea (UE) o che raccolgono e analizzano i dati dei residenti nell'UE in qualunque luogo si trovi l'utente o la sua azienda. Altri dettagli sono disponibili [nell'argomento Riepilogo sul GDPR](gdpr.md). <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrOQE] 
-
-Questo documento illustra le informazioni relative alle valutazioni d’impatto sulla protezione dei dati (DPIA) con il GDPR quando si usano i prodotti e i servizi Microsoft.
+Il regolamento generale sulla protezione dei dati (GDPR) introduce nuove regole per le organizzazioni che offrono beni e servizi alle persone che risiedono nell'Unione europea (UE) o che raccolgono e analizzano i dati dei residenti nell'UE in qualunque luogo si trovi l'utente o la sua azienda. Altri dettagli sono disponibili [nell'argomento Riepilogo sul GDPR](gdpr.md). Questo documento illustra le informazioni relative alle valutazioni d’impatto sulla protezione dei dati (DPIA) con il GDPR quando si usano i prodotti e i servizi Microsoft.
 
 ## <a name="terminology"></a>Terminologia
 
@@ -47,26 +43,30 @@ Il GDPR richiede che i titolari preparino una valutazione dell'impatto sulla pro
 
 Le indicazioni DPIA si applicano a Office 365, Azure, Dynamics 365 e al supporto tecnico Microsoft e ai servizi professionali. Tali indicazioni includono le seguenti considerazioni:
 
-1. **Quando è necessaria una DPIA?**: quando si valuta se completare una DPIA devono essere considerati i fattori di rischio elencati di seguito. Altri fattori potenziali e altri dettagli si trovano nella Parte 1 di ogni linea guida.  
+**Quando è necessaria una DPIA?**
 
-    - Una valutazione sistematica e approfondita dei dati basata sull'elaborazione automatica.  
-    - Elaborazione su vasta scala di categorie speciali di dati (dati che rivelano informazioni che identificano in modo unico una persona fisica) o di dati personali relativi a condanne penali o crimini.
-    - Monitoraggio sistematico di un'area pubblicamente accessibile su vasta scala.
+Quando si valuta se completare una DPIA devono essere considerati i fattori di rischio elencati di seguito. Altri fattori potenziali e altri dettagli si trovano nella Parte 1 di ogni linea guida.  
 
-    Il GDPR chiarisce che: "Il trattamento di dati personali non dovrebbe essere considerato un trattamento su larga scala qualora riguardi dati personali di pazienti o clienti da parte di un singolo medico, operatore sanitario o avvocato. In tali casi non dovrebbe essere obbligatorio procedere a una valutazione d'impatto sulla protezione dei dati".
+- Una valutazione sistematica e approfondita dei dati basata sull'elaborazione automatica.  
+- Elaborazione su vasta scala di categorie speciali di dati (dati che rivelano informazioni che identificano in modo unico una persona fisica) o di dati personali relativi a condanne penali o crimini.
+- Monitoraggio sistematico di un'area pubblicamente accessibile su vasta scala.
 
-2. **Cosa è necessario per completare una DPIA?**: una DPIA deve fornire informazioni specifiche sulle elaborazioni previste, descritte nella Parte 2 delle indicazioni. Tali informazioni includono:
+Il GDPR chiarisce che: "il trattamento di dati personali non dovrebbe essere considerato un trattamento su larga scala qualora riguardi dati personali di pazienti o clienti da parte di un singolo medico, operatore sanitario o avvocato. In tali casi non dovrebbe essere obbligatorio procedere a una valutazione d'impatto sulla protezione dei dati".
 
-    - Una valutazione della necessità e proporzionalità dell’elaborazione dei dati in relazione agli scopi della DPIA.  
-    - Una valutazione dei rischi per i diritti e le libertà delle persone fisiche.
-    - Misure previste per risolvere i rischi, tra cui garanzie, misure di sicurezza e meccanismi per garantire la protezione dei dati personali e dimostrare la conformità con il GDPR.
-    - Finalità dell’elaborazione  
-    - Categorie di dati personali elaborate  
-    - Conservazione dei dati  
-    - Ubicazione e trasferimento dei dati personali  
-    - Condivisione dei dati con terze parti responsabili del trattamento  
-    - Condivisione dei dati con terze parti indipendenti  
-    - Diritti del soggetto interessato
+**Cosa è necessario per completare una DPIA?**
+
+Una DPIA deve fornire informazioni specifiche sulle elaborazioni previste, descritte nella Parte 2 delle indicazioni. Tali informazioni includono:
+
+- Una valutazione della necessità e proporzionalità dell’elaborazione dei dati in relazione agli scopi della DPIA.  
+- Una valutazione dei rischi per i diritti e le libertà delle persone fisiche.
+- Misure previste per risolvere i rischi, tra cui garanzie, misure di sicurezza e meccanismi per garantire la protezione dei dati personali e dimostrare la conformità con il GDPR.
+- Finalità dell’elaborazione  
+- Categorie di dati personali elaborate  
+- Conservazione dei dati  
+- Ubicazione e trasferimento dei dati personali  
+- Condivisione dei dati con terze parti responsabili del trattamento  
+- Condivisione dei dati con terze parti indipendenti  
+- Diritti del soggetto interessato
 
 ## <a name="additional-considerations"></a>Considerazione aggiuntive
 
