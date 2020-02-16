@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Informazioni su come aggiungere o modificare un problema, incluso l'assegnazione degli utenti, o eliminare un problema relativo a un caso di eDiscovery in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 78f0b53c1f66adb9c1c8534bbf4b1e1915f6ba0d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d0777f6829944a6f64c71bda805edd1b5d55de4b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595351"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075894"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Definire i problemi e assegnare gli utenti in Office 365 Advanced eDiscovery
 
@@ -33,11 +33,11 @@ In Advanced eDiscovery, è possibile definire uno o più problemi all'interno di
 
 1. Nella scheda \> configurazione pertinenza pertinenza selezionare **problemi**. ** \> **
     
-    ![Problemi relativi alla configurazione di pertinenza](media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
+    ![Problemi relativi alla configurazione di pertinenza](../media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
 2. Per aggiungere un problema, fare clic sull'icona * * + * *. Viene visualizzata la finestra di dialogo **Aggiungi problema** . 
     
-    ![Problema relativo all'aggiunta della configurazione di pertinenza](media/c8e94982-139a-472a-b85d-282f2d742046.png)
+    ![Problema relativo all'aggiunta della configurazione di pertinenza](../media/c8e94982-139a-472a-b85d-282f2d742046.png)
   
     Per modificare un problema, fare clic sull'icona **modifica** . 
     

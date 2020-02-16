@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Configurare le impostazioni avanzate di eDiscovery che si applicano a tutti i set di revisione in un caso. Sono incluse le impostazioni per l'analisi e l'OCR.
-ms.openlocfilehash: 93e638dc29ec935f86fc2e078d8206b1f20ab14d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595713"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078325"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurare le impostazioni di ricerca e analisi
 
@@ -45,7 +45,7 @@ Per configurare le impostazioni di ricerca e analisi per un caso:
 
    Viene visualizzata la pagina Impostazioni case. Queste impostazioni vengono applicate a tutti i set di revisione in un caso.
 
-   ![Configurare le impostazioni di analisi e ricerca per un caso avanzato di eDiscovery](media/AeDCaseSettings.png)
+   ![Configurare le impostazioni di analisi e ricerca per un caso avanzato di eDiscovery](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi duplicati e threading della posta elettronica
 
@@ -73,7 +73,7 @@ In questa sezione, è possibile impostare parametri per i temi. Per ulteriori in
 
 Se si seleziona la casella **di controllo crea automaticamente una richiesta di ricerca salvata dopo l'analisi** , la query Advanced eDiscovery autogenerates Review set viene chiamata per la **revisione.** 
 
-![La query per la revisione generata automaticamente](media/AeDForReviewQuery.png)
+![La query per la revisione generata automaticamente](../media/AeDForReviewQuery.png)
 
 Questa query sostanzialmente filtra gli elementi duplicati dal set di revisione. In questo modo è possibile esaminare gli elementi univoci nel set di revisione. La query viene creata solo quando si esegue analisi per un set di revisione nel caso. Per ulteriori informazioni, vedere [query sui dati di un](review-set-search.md)set di revisione.
 

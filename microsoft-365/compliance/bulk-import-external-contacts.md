@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Informazioni su come gli amministratori possono utilizzare PowerShell di Exchange Online e un file CSV per importare in blocco i contatti esterni nell'elenco indirizzi globale.
-ms.openlocfilehash: b6f7c430cef13985a679abf42a2f91d9605bf556
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c74e8932f7ed2feeca472848c88bdddbc740fe28
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596263"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078953"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importare in blocco i contatti esterni in Exchange Online
 
@@ -123,7 +123,7 @@ Dopo aver eseguito il comando nel passaggio 2, vengono creati i contatti esterni
     
 1. Nell'interfaccia di amministrazione di Exchange accedere a **Destinatari** \> **Contatti**.
     
-2. Fare clic su un contatto e **** ![quindi fare clic](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) su Modifica icona modifica per visualizzare le proprietà del contatto. 
+2. Fare clic su un contatto e **** ![quindi fare clic](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) su Modifica icona modifica per visualizzare le proprietà del contatto. 
     
 È tutto. Gli utenti possono visualizzare i contatti e le informazioni aggiuntive nella Rubrica Outlook e Outlook sul Web.
   

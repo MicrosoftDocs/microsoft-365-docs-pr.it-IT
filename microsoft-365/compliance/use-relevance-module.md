@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cf69f76fd461c718bccb560f91bf31c2e30aea39
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0b6c42f594ef10c868051d81b0a7ea4b7ff84e00
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601293"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080613"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Utilizzare il modulo pertinenza per analizzare i dati in evidenza
 
 In indagini sui dati (Preview), il modulo pertinenza include la formazione sulla pertinenza e la revisione dei file relativi a un'indagine. Il flusso di lavoro di pertinenza è illustrato e descritto nel modo seguente:
   
-![Flusso di lavoro di pertinenza](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![Flusso di lavoro di pertinenza](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Cicli di valutazione e tracciabilità**:
     
@@ -128,7 +128,7 @@ Anche se le indagini sui dati guidano il processo, con i passaggi successivi con
 > [!NOTE]
 > Alcune opzioni potrebbero rimanere disabilitate dopo lo sblocco, in quanto non sono supportate per l'utilizzo in quel momento del processo. 
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 [Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   

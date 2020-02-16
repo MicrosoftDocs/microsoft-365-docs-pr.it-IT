@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 736117f62877bd0b33ae1007f00d5a32680963fb
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: c3bd87f6a6b06cf6fc75705073df5a95a1025a31
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662238"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079955"
 ---
 # <a name="advanced-ediscovery-reports-preview"></a>Report avanzati di eDiscovery (anteprima)
 
@@ -35,7 +35,7 @@ I report avanzati di eDiscovery consentono di aggregare i dati dei casi nell'org
 
 - Quanti casi attivi e chiusi sono presenti nell'organizzazione?
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per accedere ai report avanzati di eDiscovery, è necessario essere membri del gruppo di ruoli amministratore di eDiscovery. Essere membri di questo gruppo di ruolo fornisce le autorizzazioni necessarie per visualizzare, filtrare ed esportare i dati nei rapporti. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
 
@@ -51,11 +51,11 @@ Per accedere ai report avanzati di eDiscovery:
   
    Nella Home page di **Advanced eDiscovery** , le schede case, custode, origine dati e report comunicazioni vengono visualizzate nella parte superiore della pagina. 
   
-   ![Rapporti avanzati di eDiscovery nella Home page](media/report-home.png)
+   ![Rapporti avanzati di eDiscovery nella Home page](../media/report-home.png)
 
 5. Per visualizzare un report, fare clic su una scheda report e quindi, se necessario, è possibile eseguire una delle operazioni seguenti:
 
-   ![È possibile filtrare o scaricare i dati dei report](media/AeDReportsFilterDownload.png)
+   ![È possibile filtrare o scaricare i dati dei report](../media/AeDReportsFilterDownload.png)
 
    a. Fare clic su **filtro** per limitare i dati del report. È possibile filtrare in base a proprietà diverse per ogni report.
   

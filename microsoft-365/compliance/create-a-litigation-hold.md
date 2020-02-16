@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: dbcddd57fcf2d1471b4a4aa4b715dcae22dbc40c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d465e2a28b47abc5020480a4a862cbbca1d5e678
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596193"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077729"
 ---
 # <a name="create-a-litigation-hold"></a>Creare un blocco per controversia legale
 
@@ -33,7 +33,7 @@ Ecco cosa succede quando si crea un blocco per controversia legale.
     
 - Gli elementi nelle cassette postali primarie e di archiviazione dell'utente vengono conservati
     
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per attivare il blocco per controversia legale in una cassetta postale di Exchange Online, deve essere assegnata una licenza di Exchange Online piano 2. Se a una cassetta postale viene assegnata una licenza di Exchange Online piano 1, è necessario assegnarle una licenza di archiviazione Exchange Online separata per inserirla in blocco.
     
@@ -86,7 +86,7 @@ Quando una cassetta postale viene inserita nella conservazione per controversia 
 
 La figura seguente mostra le sottocartelle presenti nelle cartelle Elementi ripristinabili e il processo del flusso di lavoro del blocco.
 
-![Ciclo di vita del blocco per controversia legale](media/LitigationHoldLifeCycle.png)
+![Ciclo di vita del blocco per controversia legale](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > Se un blocco associato a un caso di eDiscovery è posizionato in una cassetta postale, gli elementi eliminati vengono spostati dalla sottocartella Deletions alla sottocartella DiscoveryHolds e vengono mantenuti fino a quando la cassetta postale non viene rilasciata dal blocco eDiscovery.

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: "Esaminare i passaggi per aggiungere i file importati all'ultimo carico definito, o batch, di file prima di eseguire la formazione di pertinenza in Office 365 Advanced eDiscovery.  "
-ms.openlocfilehash: 6778666e1ef0e5900a2afcc2949bdc9579c21fd1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9179878d085840fcfb93dacc79ac3f776f1f041
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601463"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081098"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Impostare i carichi per aggiungere i file importati in Office 365 Advanced eDiscovery
 
@@ -42,7 +42,7 @@ Tutti i file importati devono essere aggiunti a un carico da elaborare in Advanc
   
 1. Nella scheda configurazione pertinenza pertinenza selezionare **carica**. ** \> **
     
-    ![Scheda dei caricamenti per la configurazione di pertinenza](media/278aac7f-655f-462f-852a-6baa5d818768.png)
+    ![Scheda dei caricamenti per la configurazione di pertinenza](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
 2. **Includi file**: selezionare un'opzione per i file da includere. Per impostazione predefinita, l'aggiunta di file al carico corrente si basa sulla popolazione "tutti i file".
     

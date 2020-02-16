@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Aggiungere e gestire gli avvisi di attività nel centro sicurezza e conformità in modo che Office 365 invierà notifiche di posta elettronica quando gli utenti eseguono attività specifiche in Office 365.
-ms.openlocfilehash: 31807199345f4cf2ed6a4226fc407cb10c856c23
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b83dec740b8b37d3c8a4132f114ee76178b2dd86
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596183"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077679"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Creare avvisi attività in Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "41596183"
 > [!NOTE]
 > Si consiglia di iniziare a utilizzare i criteri di avviso nel centro sicurezza e conformità invece di creare nuovi avvisi attività. I criteri di avviso offrono funzionalità aggiuntive, come la possibilità di creare un criterio di avviso che attiva un avviso quando un utente esegue un'attività specificata e visualizza avvisi nella pagina **Visualizza avvisi** nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [criteri di avviso](alert-policies.md).
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per gestire gli avvisi di attività, è necessario che il ruolo Configurazione organizzazione sia assegnato al centro sicurezza & conformità. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli amministratore conformità e gestione organizzazione. Per ulteriori informazioni sull'aggiunta di membri ai gruppi di ruoli, vedere [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
@@ -49,12 +49,12 @@ ms.locfileid: "41596183"
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nella pagina **avvisi attività** fare clic ![su Aggiungi icona](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuovo**.
+3. Nella pagina **avvisi attività** fare clic ![su Aggiungi icona](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuovo**.
 
    Viene visualizzata la pagina del riquadro a comparsa per creare un avviso di attività.
 
     
-    ![Creare un avviso di attività](media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
+    ![Creare un avviso di attività](../media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
   
 4. Completare i seguenti campi per creare un avviso di attività:
     
@@ -76,7 +76,7 @@ ms.locfileid: "41596183"
     
     Il nuovo avviso viene visualizzato nell'elenco nella pagina **avvisi attività** . 
     
-    ![Un elenco di avvisi viene visualizzato nella pagina avvisi attività](media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
+    ![Un elenco di avvisi viene visualizzato nella pagina avvisi attività](../media/02b774f2-1719-41de-bbc9-5e5b7576f335.png)
   
     Lo stato dell'avviso è impostato **su**attivato. Si noti che i destinatari che riceveranno una notifica tramite posta elettronica quando viene inviato un avviso sono anche elencati. 
   
@@ -96,11 +96,11 @@ ms.locfileid: "41596183"
     
 Per riattivare un avviso di attività, ripetere questi passaggi e fare clic sull'opzione **Attiva/Disattiva per modificare lo** stato **su**attivato.
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Di seguito è riportato un esempio di notifica di posta elettronica inviato agli utenti specificati nel campo inviato questo avviso a (ed elencati in **destinatari** nella pagina **avvisi attività** ) nel centro sicurezza & Compliance. 
     
-    ![Esempio di un messaggio di posta elettronica notifica inviato per un avviso di attività](media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
+    ![Esempio di un messaggio di posta elettronica notifica inviato per un avviso di attività](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
   
 - Di seguito sono riportate alcune attività comuni relative a documenti e messaggi di posta elettronica a cui è possibile creare avvisi di attività. Nelle tabelle vengono descritte l'attività, il nome dell'attività per cui creare un avviso e il nome del gruppo di attività in cui è elencata l'attività nell'elenco a discesa **attività** . Per visualizzare un elenco completo delle attività per cui è possibile creare avvisi attività, vedere la sezione "attività controllate" in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities).
     

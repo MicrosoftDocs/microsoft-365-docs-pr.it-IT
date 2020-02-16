@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Dopo aver reso inattiva una cassetta postale di Office 365, è possibile modificare la durata del blocco o il criterio di conservazione di Office 365 assegnato alla cassetta postale inattiva. La durata del blocco definisce per quanto tempo gli elementi nella cartella Elementi ripristinabili vengono conservati.
-ms.openlocfilehash: c50f7845377b6428a4cdce2bb7240a7ca973a8eb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bcfea972bd627da831e9927884669d2ed8ee5234
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595943"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078939"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Modificare la durata del blocco per una cassetta postale inattiva in Office 365
 
@@ -30,7 +30,7 @@ Una cassetta postale inattiva viene utilizzata per conservare la posta elettroni
 > [!IMPORTANT]
 > Continuando a investire in modi diversi per conservare il contenuto delle cassette postali, si annuncia la prepensionamento delle archiviazioni sul posto nell'interfaccia di amministrazione di Exchange. Questo significa che è necessario utilizzare le esenzioni per controversia legale e i criteri di conservazione di Office 365 per creare una cassetta postale inattiva. A partire dal 1 ° aprile 2020 non è possibile creare nuove archiviazioni sul posto in Exchange Online. Tuttavia, sarà comunque possibile modificare la durata del blocco di un blocco sul posto posto in una cassetta postale inattiva. Tuttavia, a partire dal 1 ° luglio 2020, non sarà possibile modificare la durata del blocco. È possibile eliminare una cassetta postale inattiva solo rimuovendo il blocco sul posto. Le cassette postali inattive esistenti che si trovano sul blocco sul posto continueranno a essere conservate finché il blocco non viene rimosso. Per ulteriori informazioni sul pensionamento delle archiviazioni sul posto, vedere [pensionamento degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md).
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - You have to use Exchange Online PowerShell to change the hold duration for a Litigation Hold on an inactive mailbox. You can't use the Exchange admin center (EAC). But you can use Exchange Online PowerShell or the EAC to change the hold duration for an In-Place Hold. È possibile utilizzare il Centro sicurezza e conformità o il Centro sicurezza & Compliance Center PowerShell per modificare la durata del blocco di un criterio di conservazione di Office 365.
     
@@ -139,7 +139,7 @@ Il risultato è che gli elementi nella cassetta postale inattiva vengono conserv
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. Selezionare il blocco sul posto che si desidera modificare, quindi selezionare **modifica** ![icona](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifica.
+3. Selezionare il blocco sul posto che si desidera modificare, quindi selezionare **modifica** ![icona](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifica.
     
 4. Nella pagina delle proprietà **di conservazione &amp; eDiscovery sul posto** , selezionare **blocco sul posto**. 
     
@@ -149,7 +149,7 @@ Il risultato è che gli elementi nella cassetta postale inattiva vengono conserv
     
     2. Selezionare **specifica il numero di giorni in cui mantenere gli elementi relativi alla data di ricezione** in modo da contenere gli elementi per un periodo specifico. Specificare il numero dei giorni per i quali bloccare gli elementi. 
     
-    ![Schermata della modifica della durata per un blocco sul posto](media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
+    ![Schermata della modifica della durata per un blocco sul posto](../media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
 6. Selezionare **Salva**.
     

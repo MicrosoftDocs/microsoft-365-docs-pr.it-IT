@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: I criteri di gestione delle informazioni consentono all'organizzazione di controllare il periodo di conservazione del contenuto, di verificare le persone che hanno a che fare con il contenuto e di aggiungere codici a barre o etichette ai documenti. Un criterio può contribuire a garantire la conformità ai regolamenti legali e governativi o ai processi aziendali interni. In qualità di amministratore, è possibile configurare un criterio per controllare la modalità di gestione dei documenti e la durata della conservazione dei documenti.
-ms.openlocfilehash: b61c18390dde2e5d2da92189acced42ea5ece64c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: eabbd2d6292de621b4c8e14d6d491f27b8fb24f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595613"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077515"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Creare e applicare criteri di gestione delle informazioni
 
@@ -46,13 +46,13 @@ Per ulteriori informazioni, vedere [Introduzione ai criteri di gestione delle in
 
 Per garantire che un criterio di informazioni venga applicato a tutti i documenti di un determinato tipo all'interno di una raccolta siti, prendere in considerazione la possibilità di creare il criterio a livello di raccolta siti e successivamente applicarlo ai tipi di contenuto. Questi vengono definiti criteri di raccolta siti. 
   
-1. Nella Home Page \> della raccolta siti fare clic sul **pulsante impostazioni di**![SharePoint 2016 sulla barra del titolo.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
+1. Nella Home Page \> della raccolta siti fare clic sul **pulsante impostazioni di**![SharePoint 2016 sulla barra del titolo.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     
 2. Nella pagina Impostazioni sito, in \> **modelli di criteri tipo di contenuto** **Amministrazione raccolta siti** . 
   
-![Collegamento Modelli di criteri tipo di contenuto nella pagina Impostazioni sito](media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+![Collegamento Modelli di criteri tipo di contenuto nella pagina Impostazioni sito](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
 3. Nella pagina \> criteri **creare**. 
     
@@ -69,13 +69,13 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
   
  È inoltre possibile aggiungere un criterio di gestione delle informazioni a un tipo di contenuto specifico per gli elenchi. Questo ha l'effetto di applicare il criterio solo agli elementi dell'elenco che utilizzano il tipo di contenuto. 
   
-1. Nella Home Page \> della raccolta siti fare clic sul **pulsante impostazioni di**![SharePoint 2016 sulla barra del titolo.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
+1. Nella Home Page \> della raccolta siti fare clic sul **pulsante impostazioni di**![SharePoint 2016 sulla barra del titolo.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Impostazioni sito**.
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     
 2. Nella pagina Impostazioni sito, in **tipi di contenuto del sito**per le **raccolte** \> Web Designer.
   
-![Collegamento Tipi di contenuto del sito nella pagina Impostazioni sito](media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+![Collegamento Tipi di contenuto del sito nella pagina Impostazioni sito](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
 3. Nella pagina Impostazioni tipo di contenuto del sito selezionare il tipo di contenuto a cui si desidera aggiungere un criterio.
     
@@ -85,7 +85,7 @@ L'aggiunta di un criterio di gestione delle informazioni a un tipo di contenuto 
     
 6. Nelle sezioni successive selezionare le caratteristiche dei criteri individuali che si desidera aggiungere ai criteri di gestione delle informazioni. 
   
-![Tipi di criteri del contenuto](media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
+![Tipi di criteri del contenuto](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
   
 7. Per specificare un periodo di conservazione per i documenti e gli elementi soggetti a questo criterio, scegliere **Enable retention**, quindi specificare il periodo di conservazione e le azioni che si desidera eseguire quando gli elementi scadono.
     
@@ -161,7 +161,7 @@ Se si desidera definire un criterio di gestione delle informazioni diverso da qu
     
 3. In **autorizzazioni e gestione** \> **delle impostazioni dei criteri di gestione delle informazioni**.
   
-![Collegamento ai criteri gestione informazioni nella pagina di impostazioni per una raccolta documenti](media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Collegamento ai criteri gestione informazioni nella pagina di impostazioni per una raccolta documenti](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
 4. Nella pagina impostazioni dei criteri di gestione delle informazioni verificare che l'origine di conservazione per l'elenco o la raccolta sia impostata su raccolta e cartelle. 
   
@@ -208,7 +208,7 @@ Se i criteri di gestione delle informazioni sono già stati creati per il sito c
     
 3. In **autorizzazioni e gestione** \> **delle impostazioni dei criteri di gestione delle informazioni**.
   
-![Collegamento ai criteri gestione informazioni nella pagina di impostazioni per una raccolta documenti](media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Collegamento ai criteri gestione informazioni nella pagina di impostazioni per una raccolta documenti](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
 4. Verificare che l'origine dei criteri sia impostata su **tipi di contenuto**e in **criteri tipo di contenuto** Selezionare il tipo di contenuto a cui si desidera applicare il criterio. 
     
@@ -237,13 +237,13 @@ Condividere tipi di contenuto tra raccolte siti tramite un'applicazione di servi
 ### <a name="export-a-policy"></a>Esportare un criterio
 <a name="__toc260646790"> </a>
 
-1. Nella Home page della raccolta siti scegliere **Impostazioni**![impostazioni di piccole dimensioni che hanno posto le impostazioni del sito. ](media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **sito.** \>
+1. Nella Home page della raccolta siti scegliere **Impostazioni**![impostazioni di piccole dimensioni che hanno posto le impostazioni del sito. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **sito.** \>
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     
 2. Nella pagina Impostazioni sito, in \> **modelli di criteri tipo di contenuto** **Amministrazione raccolta siti** . 
   
-![Collegamento Modelli di criteri tipo di contenuto nella pagina Impostazioni sito](media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+![Collegamento Modelli di criteri tipo di contenuto nella pagina Impostazioni sito](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
 3. Selezionare il criterio che si desidera esportare \> scorrere fino all' \> **esportazione**in basso.
     
@@ -256,7 +256,7 @@ Condividere tipi di contenuto tra raccolte siti tramite un'applicazione di servi
 
 L'importazione di un criterio di gestione delle informazioni consente di applicarla a più tipi di contenuto a livello di sito o di elenco all'interno di una determinata raccolta siti. I vantaggi derivanti dall'esecuzione di questa operazione sono duplici: non è necessario ridefinire e applicare il criterio su ogni tipo di contenuto ed è possibile gestire più facilmente le modifiche ai criteri apportando modifiche ai criteri in una sola posizione.
   
-1. Nella Home page della raccolta siti in cui si desidera applicare il criterio, scegliere **Impostazioni**![piccole impostazioni ingranaggio che ha avuto luogo delle impostazioni del sito. ](media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **sito.** \>
+1. Nella Home page della raccolta siti in cui si desidera applicare il criterio, scegliere **Impostazioni**![piccole impostazioni ingranaggio che ha avuto luogo delle impostazioni del sito. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **sito.** \>
     
     In un sito collegato a un gruppo di SharePoint fare clic su **Impostazioni**, quindi su **contenuto del sito**e quindi su **Impostazioni sito**. 
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Esaminare i passaggi per configurare le opzioni per il processo di analisi in Office 365 Advanced eDiscovery, inclusi i quasi duplicati, i thread di posta elettronica e i temi.  '
-ms.openlocfilehash: e9acb30d991bd2ee0acba5a9ddde619272788ceb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c32a63ee538522a5314a74be6248f253f70f279e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597463"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081158"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Impostare le opzioni di analisi in Office 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ In Advanced eDiscovery, impostare le opzioni Analyze prima di eseguire ANALYZE.
 
 Aprire **prepara \> analisi** \> di **installazione**. Viene visualizzata la finestra seguente.
   
-![Impostare opzioni di analisi](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
+![Impostare opzioni di analisi](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
  **Quasi duplicati e thread di posta elettronica** Selezionare questa casella di controllo se si desidera eseguire l'analisi. Questa opzione è selezionata per impostazione predefinita. 
   
@@ -51,11 +51,11 @@ Aprire **prepara \> analisi** \> di **installazione**. Viene visualizzata la fin
     
     Ad esempio, se la parola suggerita è "computer" e si specifica "2" come "numero massimo di temi", Advanced eDiscovery proverà a generare due temi correlati alla parola "computer". I due temi potrebbero essere, ad esempio, "software per computer" e "hardware del computer". 
     
-    ![Aggiungi tema suggerito](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
+    ![Aggiungi tema suggerito](../media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
 1. Per visualizzare, aggiungere o modificare i temi suggeriti, fare clic su **modifica**.
     
-2. Nel riquadro **temi consigliati** fare clic sull'icona **Aggiungi** ![icona](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) per aggiungere un tema. Nel riquadro **Aggiungi tema suggerito** aggiungere le parole separate da virgole. 
+2. Nel riquadro **temi consigliati** fare clic sull'icona **Aggiungi** ![icona](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) per aggiungere un tema. Nel riquadro **Aggiungi tema suggerito** aggiungere le parole separate da virgole. 
     
 3. In **numero di temi**selezionare un valore per determinare il numero di temi avanzati che eDiscovery tenterà di generare per queste parole (l'impostazione predefinita è 1 tema).
     

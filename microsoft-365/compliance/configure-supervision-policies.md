@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: d0bd5411e99471ff326906f65747ec7a6f841545
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 230d363c8150899fdc5fd5f46aa1cb2576382267
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596203"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078293"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurare i criteri di supervisione in Office 365
 
 >[!IMPORTANT]
->Questo argomento si applica alla configurazione di criteri di supervisione in una sottoscrizione di Office 365. Se si desidera configurare la conformità delle comunicazioni per una sottoscrizione di Microsoft 365, vedere [Configure Communications compliance in microsoft 365 (Preview)](communication-compliance-configure.md).
+>Questo argomento si applica alla configurazione di criteri di supervisione in una sottoscrizione di Office 365. Se si desidera configurare la conformità delle comunicazioni per una sottoscrizione di Microsoft 365, vedere [Configure Communications compliance in microsoft 365](communication-compliance-configure.md).
 
 Utilizzare i criteri di supervisione per acquisire le comunicazioni dei dipendenti per l'esame da revisori interni o esterni. Per ulteriori informazioni su come i criteri di supervisione consentono di monitorare le comunicazioni nell'organizzazione, vedere [criteri di supervisione in Office 365](supervision-policies.md).
 

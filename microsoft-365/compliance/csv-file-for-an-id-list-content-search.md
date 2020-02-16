@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Utilizzare il file results. csv o unindexed Items. csv da una ricerca di contenuto esistente per creare una ricerca nell'elenco di ID che restituisca messaggi di posta elettronica specifici. Le ricerche degli elenchi di ID vengono in genere utilizzate per restituire gli elementi della cassetta postale parzialmente indicizzati.
-ms.openlocfilehash: 19128e182183b43edbc5957ac2aca5420b58cfe2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c69cd096e1ec2fa69082edef70cd41dfd229b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595523"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077021"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Preparare un file CSV per una ricerca di contenuto nell'elenco di ID in Office 365
 
@@ -65,7 +65,7 @@ Si noti che è possibile utilizzare un file CSV da una ricerca in cui sono inclu
 
     Di seguito è riportato un esempio di un file CSV che è pronto per essere inviato per la ricerca di contenuto di un elenco di ID.
 
-    ![Esempio di un file CSV per una ricerca di contenuto mirata](media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
+    ![Esempio di un file CSV per una ricerca di contenuto mirata](../media/8371b8cb-1638-496e-9be1-fe1565757d67.png)
 
 6. Salvare il file CSV o utilizzare **Salva** con nome per salvare il file con un file diverso. In entrambi i casi, assicurarsi di salvare il file con il formato CSV.
 
@@ -78,9 +78,9 @@ Il passaggio successivo consiste nel creare una nuova ricerca del contenuto dell
 
 1. Nel centro sicurezza & conformità, andare a ricerca **** \> **contenuto**ricerca.
 
-2. Nella pagina **ricerca** fare clic sulla freccia accanto a Aggiungi ![](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuova ricerca**icona, quindi fare clic su **Cerca in base all'elenco di ID**.
+2. Nella pagina **ricerca** fare clic sulla freccia accanto a Aggiungi ![](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **nuova ricerca**icona, quindi fare clic su **Cerca in base all'elenco di ID**.
 
-    ![Fare clic su Cerca in base all'elenco di ID dall'elenco a discesa nuovo ricerca](media/e65f9942-09b2-4127-865e-e64029a590df.png)
+    ![Fare clic su Cerca in base all'elenco di ID dall'elenco a discesa nuovo ricerca](../media/e65f9942-09b2-4127-865e-e64029a590df.png)
 
 3. Nel riquadro a comparsa **ricerca in base all'elenco di ID** , denominare la ricerca e, facoltativamente, descriverla, quindi fare clic su **Sfoglia** e selezionare il file CSV preparato nel passaggio precedente.
 
@@ -90,7 +90,7 @@ Il passaggio successivo consiste nel creare una nuova ricerca del contenuto dell
 
     Di seguito è riportato un esempio dei risultati di ricerca stimati e della query generata per una ricerca nell'elenco di ID.
 
-    ![Query di ricerca per una ricerca di contenuto mirata nel riquadro dei dettagli](media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
+    ![Query di ricerca per una ricerca di contenuto mirata nel riquadro dei dettagli](../media/dbd9e570-c04b-4056-a8a7-37e9916ec683.png)
 
     Si noti che il numero di elementi stimati visualizzati nelle statistiche per la ricerca ID deve corrispondere al numero di elementi selezionati nel file CSV.
 

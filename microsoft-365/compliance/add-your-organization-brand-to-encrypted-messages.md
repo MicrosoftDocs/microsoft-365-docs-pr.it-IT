@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: In qualità di amministratore globale di Office 365, è possibile applicare il marchio dell'organizzazione ai messaggi di posta elettronica crittografati dell'organizzazione e ai contenuti del portale di crittografia.
-ms.openlocfilehash: b4712edd86099b1c382ef02ca54520b68a54614e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 23b6cd205c4ae3a0ca08aab2209e0152a3f78b63
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594027"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079979"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Aggiungere il logo della propria organizzazione ai messaggi crittografati
 
@@ -71,7 +71,7 @@ Utilizzare Windows PowerShell per modificare un modello di branding alla volta. 
 
 2. Modificare il modello utilizzando il cmdlet Set-OMEConfiguration come descritto in [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) oppure utilizzare la seguente tabella grafica e per indicazioni.
 
-![Parti di posta elettronica personalizzabili](media/ome-template-breakout.png)
+![Parti di posta elettronica personalizzabili](../media/ome-template-breakout.png)
 
 |**Per personalizzare questa funzionalità dell'esperienza di crittografia**|**Utilizzare questi comandi**|
 |:-----|:-----|
@@ -162,7 +162,7 @@ Per informazioni su come creare una regola del flusso di posta di Exchange che a
 
 3. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su interfaccia di **Amministrazione** \> di **Exchange**.
 
-4. Nell'interfaccia di amministrazione di Exchange, andare a **regole** del **flusso** \> di posta e selezionare **nuova** ![nuova icona](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **creare una nuova regola**. Per ulteriori informazioni sull'utilizzo di EAC, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Nell'interfaccia di amministrazione di Exchange, andare a **regole** del **flusso** \> di posta e selezionare **nuova** ![nuova icona](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **creare una nuova regola**. Per ulteriori informazioni sull'utilizzo di EAC, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. In **nome**Digitare un nome per la regola, ad esempio branding per il reparto vendite.
 

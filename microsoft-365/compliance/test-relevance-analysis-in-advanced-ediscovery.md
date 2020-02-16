@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: "Informazioni su come utilizzare la scheda test dopo il calcolo batch in Office 365 Advanced eDiscovery per testare, confrontare e convalidare la qualità complessiva dell'elaborazione.  "
-ms.openlocfilehash: 0931e0ea6aabfb9fbeca04973f17395d4f245f41
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e07d02a0eff1e07cacbce5debd27d4057fe40db2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597373"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080935"
 ---
 # <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Verifica dell'analisi della pertinenza in Office 365 Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Questo test fornisce statistiche e un confronto tra il set di revisione e il tes
     
 2. Nella scheda **test** fare clic su **nuovo test**. Viene visualizzata la finestra di dialogo **Crea test** , come illustrato nell'esempio seguente. 
     
-    ![Risultati del test sull'inattività di pertinenza](media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
+    ![Risultati del test sull'inattività di pertinenza](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
 3. In **nome test**e **Descrizione**digitare il nome e la descrizione.
     
@@ -66,7 +66,7 @@ Questo test fornisce statistiche e un confronto tra il set di revisione e il tes
     
 11. Nella scheda test è possibile fare clic su **Visualizza risultati** per visualizzare i risultati dei test. Un esempio è illustrato nella figura seguente. 
     
-    ![Risultati del test sull'inattività](media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
+    ![Risultati del test sull'inattività](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
 Nella figura precedente la sezione **parametri di esempio** della tabella contiene informazioni dettagliate sul numero di file nell'esempio contrassegnati dall'esperto e sul numero di file rilevanti presenti in tale esempio. 
   

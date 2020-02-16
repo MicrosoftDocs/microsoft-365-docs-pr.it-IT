@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare Office 365 eDiscovery e gli strumenti di ricerca per gestire e rispondere a un evento di fuoriuscita dei dati nell'organizzazione.
-ms.openlocfilehash: 3efeb183ca0629ea642eb21f14e31401d8618eea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c143095ecd26d2a9c8f2271b9d28f75b1c71502c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595403"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076321"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie di soluzioni di eDiscovery: scenario di fuoriuscita dei dati-ricerca ed eliminazione
 
@@ -37,7 +37,7 @@ In questo documento viene fornito un elenco di istruzioni su come rimuovere defi
 
 Ecco come gestire un problema di fuoriuscita dei dati:
 
-![Il flusso di lavoro in 8 passaggi per la gestione degli incidenti di fuoriuscita dei dati](media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![Il flusso di lavoro in 8 passaggi per la gestione degli incidenti di fuoriuscita dei dati](../media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
 [Optional Passaggio 1: gestire gli utenti autorizzati a accedere al caso e impostare i limiti di conformità](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
 [Passaggio 2: creare un caso di eDiscovery](#step-2-create-an-ediscovery-case)<br/>
@@ -100,7 +100,7 @@ Afer sono stati verificati i risultati della ricerca, è possibile che si deside
  
       Viene visualizzata la pagina del rapporto di esportazione.
 
-    ![Selezionare la ricerca e quindi fare clic su altro > rapporto di esportazione nella pagina a comparsa](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![Selezionare la ricerca e quindi fare clic su altro > rapporto di esportazione nella pagina a comparsa](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
 3. Selezionare **tutti gli elementi, inclusi quelli con formato non riconosciuto, crittografati oppure non indicizzati per altri motivi** e quindi fare clic su **genera report**.
 
@@ -108,7 +108,7 @@ Afer sono stati verificati i risultati della ricerca, è possibile che si deside
 
 5. Fare clic sul processo di esportazione e quindi fare clic su **Scarica** report nella pagina a comparsa.
  
-    ![Nella pagina Esporta, fare clic sull'esportazione e quindi su "download report"](media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![Nella pagina Esporta, fare clic sull'esportazione e quindi su "download report"](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
 Il rapporto **riepilogativo di esportazione** contiene il numero di posizioni trovate con i risultati e le dimensioni dei risultati della ricerca. È possibile utilizzare questo parametro per confrontare il report generato dopo l'eliminazione e fornire la prova dell'eliminazione. Il rapporto sui **risultati** contiene un riepilogo più dettagliato dei risultati di ricerca, inclusi l'oggetto, il mittente, i destinatari, se la posta elettronica è stata letta, le date e le dimensioni di ogni messaggio. Se uno dei dettagli in questo report contiene i dati di versamento effettivi, assicurarsi di eliminare definitivamente il file results. csv al termine dell'indagine.
 
@@ -142,7 +142,7 @@ Sono disponibili due modi per raccogliere un elenco di indirizzi di posta elettr
     
 4. Nell'elenco a discesa **tipo** fare clic su **posizioni principali**.
     
-    ![Ottenere un elenco delle cassette postali che contengono i risultati della ricerca nella pagina posizioni principali nelle statistiche di ricerca](media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![Ottenere un elenco delle cassette postali che contengono i risultati della ricerca nella pagina posizioni principali nelle statistiche di ricerca](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     Viene visualizzato un elenco delle cassette postali che contengono i risultati della ricerca. Viene visualizzato anche il numero di elementi di ogni cassetta postale che corrispondono alla query di ricerca.
     
@@ -190,7 +190,7 @@ Se le parole chiave della query di ricerca creata e utilizzata nel passaggio 3 c
     
 2. Nella pagina a comparsa fare clic su **Elimina**.
 
-    ![Selezionare la ricerca e quindi fare clic su Elimina nella pagina riquadro a comparsa](media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![Selezionare la ricerca e quindi fare clic su Elimina nella pagina riquadro a comparsa](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Controllo del processo di analisi della fuoriuscita dei dati
 

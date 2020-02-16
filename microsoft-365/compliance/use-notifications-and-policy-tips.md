@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: e3b83c72c8f18ad58fcedb6b8c4271bfebdf8c13
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 676581a5cfdf7308cf6c5cd71083dedae34836fb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597353"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084029"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
 
 È possibile utilizzare un criterio di prevenzione della perdita di dati (DLP) per identificare, controllare e proteggere le informazioni riservate in Office 365. Si desidera che gli utenti dell'organizzazione che lavorano con queste informazioni riservate vengano conformi ai criteri DLP, ma non si desidera bloccarli inutilmente dall'ottenere il proprio lavoro. In questo scenario possono risultare utili le notifiche tramite posta elettronica e i suggerimenti per i criteri.
   
-![Barra dei messaggi che mostra il suggerimento per i criteri in Excel 2016](media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
+![Barra dei messaggi che mostra il suggerimento per i criteri in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
 Un suggerimento per i criteri è una notifica o un avviso visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP, ad esempio il contenuto come una cartella di lavoro di Excel in un sito di OneDrive for business che contiene informazioni personali e che è condiviso con un utente esterno.
   
@@ -44,7 +44,7 @@ Nel centro sicurezza &amp; e conformità di Office 365, quando si crea un criter
     
   - Per la posta elettronica in Outlook sul Web e Outlook 2013 e versioni successive, il suggerimento del criterio viene visualizzato nella parte superiore di un messaggio sopra i destinatari mentre il messaggio è in fase di composizione.
     
-  - Per i documenti in un account OneDrive for business o in un sito di SharePoint Online, il suggerimento per i criteri è indicato da un'icona di avviso che viene visualizzata sull'elemento. Per visualizzare altre informazioni, è possibile selezionare un elemento e quindi fare **** ![clic su icona](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) del riquadro informazioni informazioni nell'angolo in alto a destra della pagina per aprire il riquadro dei dettagli. 
+  - Per i documenti in un account OneDrive for business o in un sito di SharePoint Online, il suggerimento per i criteri è indicato da un'icona di avviso che viene visualizzata sull'elemento. Per visualizzare altre informazioni, è possibile selezionare un elemento e quindi fare **** ![clic su icona](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) del riquadro informazioni informazioni nell'angolo in alto a destra della pagina per aprire il riquadro dei dettagli. 
     
   - Per i documenti di Excel, PowerPoint e Word archiviati in un sito di OneDrive for business o in un sito di SharePoint Online incluso nei criteri DLP, il suggerimento per i criteri viene visualizzato sulla barra dei messaggi e sulla visualizzazione **** backstage \> ( **informazioni**sul menu file).
     
@@ -58,7 +58,7 @@ Quando si crea un criterio DLP, entrambe le notifiche di posta elettronica e i s
     
 3. Nel &amp; centro \> sicurezza e conformità left navigation \> **policy** \> di prevenzione \> della **perdita dei dati** **+ creare un criterio**.
     
-    ![Pulsante Crea un criterio](media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+    ![Pulsante Crea un criterio](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
 4. Scegliere il modello di criteri DLP che protegge i tipi di informazioni riservate necessarie \> **successivamente**.
     
@@ -82,7 +82,7 @@ Quando si crea un criterio DLP, entrambe le notifiche di posta elettronica e i s
     
 9. Nell'editor delle regole, in **notifiche utente**, impostare lo stato su.
     
-    ![Sezione notifiche utente di editor delle regole](media/47705927-c60b-4054-a072-ab914f33d15d.png)
+    ![Sezione notifiche utente di editor delle regole](../media/47705927-c60b-4054-a072-ab914f33d15d.png)
 
 > [!NOTE]
 > I criteri DLP si applicano a tutti i documenti che soddisfano i criteri, se tali documenti sono nuovi o esistenti. Tuttavia, una notifica tramite posta elettronica viene generata solo quando il nuovo contenuto corrisponde a un criterio DLP esistente. Il contenuto esistente è protetto, ma non genera una notifica utente tramite posta elettronica.
@@ -98,13 +98,13 @@ Per ogni regola in un criterio DLP, è possibile:
 > [!NOTE]
 >  Le notifiche tramite posta elettronica possono essere inviate solo ai singoli destinatari, non ai gruppi o alle liste di distribuzione. Solo i nuovi contenuti attivano una notifica di posta elettronica. La modifica del contenuto esistente attiverà suggerimenti per i criteri, ma non una notifica tramite posta elettronica. 
   
-![Opzioni di notifica tramite posta elettronica](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
+![Opzioni di notifica tramite posta elettronica](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
 ### <a name="default-email-notification"></a>Notifica di posta elettronica predefinita
 
 Le notifiche dispongono di una riga dell'oggetto che inizia con l'azione intrapresa, ad esempio "notifica", "messaggio bloccato" per la posta elettronica o "accesso bloccato" per i documenti. Se la notifica è relativa a un documento, il corpo del messaggio di notifica include un collegamento che consente di visualizzare il sito in cui è archiviato il documento e di aprire il suggerimento per i criteri per il documento, in cui è possibile risolvere eventuali problemi (vedere la sezione relativa ai suggerimenti per i criteri). Se la notifica è relativa a un messaggio, la notifica include come allegato il messaggio che corrisponde a un criterio DLP.
   
-![Messaggio di notifica](media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
+![Messaggio di notifica](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
 Per impostazione predefinita, le notifiche consentono di visualizzare testo simile a quanto segue per un elemento in un sito. Il testo di notifica è configurato separatamente per ogni regola affinché venga visualizzato in modo diverso a seconda della regola che viene soddisfatta.
 
@@ -126,7 +126,7 @@ Per impostazione predefinita, le notifiche consentono di visualizzare testo simi
 |%% ContentURL%%  <br/> |URL del documento nel sito di SharePoint Online o OneDrive for business.  <br/> |
 |%%MatchedConditions%%  <br/> |Le condizioni corrispondenti al contenuto. Utilizzare questo token per informare gli utenti dei possibili problemi relativi al contenuto.  <br/> |
    
-![Messaggio di notifica in cui vengono visualizzati i token](media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
+![Messaggio di notifica in cui vengono visualizzati i token](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
   
 ## <a name="options-for-configuring-policy-tips"></a>Opzioni di configurazione dei suggerimenti per i criteri
 
@@ -140,7 +140,7 @@ Per ogni regola in un criterio DLP, è possibile configurare suggerimenti per i 
     
   - Consentire all'utente di segnalare un falso positivo e di ignorare il criterio DLP. Anche questa informazione viene registrata per il report affinché sia possibile utilizzare falsi positivi per ottimizzare le regole.
     
-![Opzioni del suggerimento per i criteri](media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
+![Opzioni del suggerimento per i criteri](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
   
 Ad esempio, si può avere un criterio DLP applicato ai siti di OneDrive for business che individuano informazioni di identificazione personale (PII) e questo criterio ha tre regole:
   
@@ -166,15 +166,15 @@ Quando un documento in un sito di OneDrive for business o in un sito di SharePoi
     
 2. Se la regola blocca l'accesso al documento, viene visualizzata l'icona di blocco.
     
-![Icone del suggerimento per i criteri nei documenti in un account di OneDrive](media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
+![Icone del suggerimento per i criteri nei documenti in un account di OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-Per eseguire un'azione su un documento, è possibile selezionare l' \> icona **** ![](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) seleziona informazioni riquadro delle informazioni nell'angolo in alto a destra della pagina per aprire il suggerimento per \> i **criteri di visualizzazione**del riquadro dei dettagli.
+Per eseguire un'azione su un documento, è possibile selezionare l' \> icona **** ![](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) seleziona informazioni riquadro delle informazioni nell'angolo in alto a destra della pagina per aprire il suggerimento per \> i **criteri di visualizzazione**del riquadro dei dettagli.
   
 Il suggerimento per i criteri elenca i problemi con il contenuto e, se i suggerimenti per i criteri sono configurati con queste opzioni, è possibile selezionare **Risolvi** e quindi **ignorare** il suggerimento per i criteri oppure **segnalare** un falso positivo. 
   
-![Riquadro delle informazioni che mostra il suggerimento per i criteri](media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
+![Riquadro delle informazioni che mostra il suggerimento per i criteri](../media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
   
-![Suggerimento per i criteri con l'opzione per eseguire l'override](media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
+![Suggerimento per i criteri con l'opzione per eseguire l'override](../media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
   
 I criteri DLP sono sincronizzati con i siti e il contenuto viene valutato periodicamente e in modo asincrono, quindi potrebbe esserci un breve ritardo tra il momento in cui viene creato il criterio DLP e il momento in cui si iniziano a visualizzare i suggerimenti per i criteri. Potrebbe verificarsi un ritardo simile da quando si risolve o si ignora un suggerimento per i criteri a quando scompare l'icona sul documento nel sito.
   
@@ -196,17 +196,17 @@ Per impostazione predefinita, i suggerimenti per i criteri consentono di visuali
 
 Quando si compone un nuovo messaggio di posta elettronica in Outlook sul Web e Outlook 2013 e versioni successive, viene visualizzato un suggerimento per i criteri se si aggiunge contenuto che corrisponde a una regola in un criterio DLP e che la regola utilizza suggerimenti per i criteri. Il suggerimento del criterio viene visualizzato nella parte superiore del messaggio, al di sopra dei destinatari, mentre il messaggio viene composto.
   
-![Suggerimento per i criteri nella parte superiore di un messaggio composto](media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
+![Suggerimento per i criteri nella parte superiore di un messaggio composto](../media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
   
 I suggerimenti per i criteri funzionano se le informazioni riservate vengono visualizzate nel corpo del messaggio, nella riga dell'oggetto o anche in un allegato del messaggio, come illustrato di seguito.
   
-![Suggerimento per i criteri che indica che un allegato è in conflitto con un criterio DLP](media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
+![Suggerimento per i criteri che indica che un allegato è in conflitto con un criterio DLP](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
   
 Se i suggerimenti per i criteri sono configurati in modo da consentire la sostituzione, è possibile scegliere **Mostra dettagli** \> **sostituzione** \> immettere una \> giustificazione aziendale o segnalare un **falso positivo.**
   
-![Suggerimento per i criteri nel messaggio espanso per visualizzare l'opzione Sostituisci](media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
+![Suggerimento per i criteri nel messaggio espanso per visualizzare l'opzione Sostituisci](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
   
-![Finestra di dialogo suggerimento per i criteri in cui è possibile ignorare il suggerimento per i criteri](media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
+![Finestra di dialogo suggerimento per i criteri in cui è possibile ignorare il suggerimento per i criteri](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
   
 Si noti che quando si aggiungono informazioni riservate a un messaggio di posta elettronica, potrebbe verificarsi una latenza tra quando vengono aggiunte le informazioni riservate e quando viene visualizzato il suggerimento per i criteri.
 
@@ -251,15 +251,15 @@ A seconda della modalità di configurazione dei suggerimenti per i criteri nel c
   
 I suggerimenti per i criteri vengono visualizzati nella barra dei messaggi.
   
-![Barra dei messaggi che mostra il suggerimento per i criteri in Excel 2016](media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
+![Barra dei messaggi che mostra il suggerimento per i criteri in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
 I suggerimenti per i criteri sono visibili anche nella visualizzazione Backstage (nella scheda **File**). 
   
-![Backstage che mostra il suggerimento per i criteri in Excel 2016](media/44c561f6-8f3f-4878-b1b0-b7543f8a4120.png)
+![Backstage che mostra il suggerimento per i criteri in Excel 2016](../media/44c561f6-8f3f-4878-b1b0-b7543f8a4120.png)
   
 Se i suggerimenti per i criteri nel criterio DLP sono configurati con queste opzioni, è possibile selezionare **Risolvi** per **ignorare** un suggerimento per i criteri oppure **segnalare** un falso positivo. 
   
-![Opzioni sul suggerimento per i criteri in Backstage in Excel 2016](media/5b3857ba-907e-456e-ae43-888b594c049c.png)
+![Opzioni sul suggerimento per i criteri in Backstage in Excel 2016](../media/5b3857ba-907e-456e-ae43-888b594c049c.png)
   
 In ognuno di questi programmi desktop di Office, gli utenti possono scegliere di disattivare i suggerimenti per i criteri. Se disattivati, i suggerimenti per i criteri che sono delle semplici notifiche non vengono visualizzati nella barra dei messaggi o nella visualizzazione Backstage (nella scheda **File**). Tuttavia, i suggerimenti per i criteri di blocco o sostituzione continuano a essere visualizzati e a ricevere notifiche di posta elettronica. Inoltre, la disattivazione dei suggerimenti per i criteri non esclude il documento da eventuali criteri DLP che vi sono stati applicati. 
   
@@ -287,4 +287,4 @@ Per impostazione predefinita, i suggerimenti per i criteri mostrano un testo sim
     
 - [Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
-- [Elementi cercati dai tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
+- [Tipi di informazioni riservate disponibili da cercare](what-the-sensitive-information-types-look-for.md)

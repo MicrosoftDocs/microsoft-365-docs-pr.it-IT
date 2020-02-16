@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Il Punteggio di conformità di Microsoft aiuta le organizzazioni a semplificare e automatizzare le valutazioni dei rischi e suggerisce azioni consigliate per aiutare a gestire i rischi.
-ms.openlocfilehash: c1f912deacd9e7a9b30cbc4665a259177aeebf65
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595743"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078523"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Punteggio di conformità Microsoft (anteprima)
 
@@ -39,7 +39,7 @@ Se attualmente si utilizza [Compliance Manager](compliance-manager-overview.md),
 
 La pagina principale del Punteggio di conformità è il dashboard personalizzato. Mostra il tuo punteggio corrente, ti aiuta a vedere cosa ha bisogno di attenzioni e ti guida alle azioni per migliorare il tuo punteggio. Il dashboard del Punteggio di conformità avrà l'aspetto seguente:
 
-![Punteggio di conformità-dashboard](media/compliance-score-dashboard.png "Dashboard del Punteggio di conformità")
+![Punteggio di conformità-dashboard](../media/compliance-score-dashboard.png "Dashboard del Punteggio di conformità")
 
 ### <a name="simplified-compliance-management"></a>Gestione della conformità semplificata
 
@@ -75,7 +75,7 @@ Per ulteriori informazioni [, vedere Calcolo del Punteggio di conformità e moni
 
 Il Punteggio di conformità utilizza diversi componenti per facilitare la gestione delle attività di conformità. Quando si utilizza il Punteggio di conformità per assegnare, testare e monitorare le attività di conformità, è utile avere una conoscenza di base di questi componenti chiave. In questo diagramma vengono illustrate le relazioni tra di essi:
 
-![Relazioni in Compliance Manager versione 3](media/compliance-manager-relationships.png "Componenti del Punteggio di conformità")
+![Relazioni in Compliance Manager versione 3](../media/compliance-manager-relationships.png "Componenti del Punteggio di conformità")
 
 ### <a name="controls"></a>Controlli
 

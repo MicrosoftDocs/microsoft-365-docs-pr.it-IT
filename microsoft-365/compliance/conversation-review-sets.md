@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 78997bfb6a3a77a03d95560d5f0c38eaae2dda4c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595673"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078133"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Esaminare le conversazioni in Advanced eDiscovery 
 
@@ -47,7 +47,7 @@ Di seguito sono riportate alcune definizioni che consentono di iniziare a utiliz
 
 - **Conversazione:** Rappresenta un raggruppamento di uno o più messaggi. Tra diverse applicazioni, le conversazioni possono essere rappresentate in modi diversi. In alcune applicazioni è presente un'azione esplicita che risulta dalla risposta a un messaggio esistente. Le conversazioni sono formate in modo esplicito a causa di questa azione dell'utente. Ad esempio, ecco uno screenshot di una conversazione di canale in Microsoft teams.
 
-   ![Conversazione canale Microsoft Teams](media/threadedchat.png)
+   ![Conversazione canale Microsoft Teams](../media/threadedchat.png)
 
    In altre app (ad esempio i messaggi di chat di 1xN in teams), non esiste una catena di risposta formale e i messaggi vengono visualizzati come un "fiume di messaggi Flat" all'interno di un singolo thread. Nelle app di questo tipo, le conversazioni vengono desunte da un gruppo di messaggi che si verificano entro un determinato periodo di tempo. Questo "soft-grouping" dei messaggi (invece di una catena di risposta) rappresenta la conversazione "avanti e indietro" su un argomento specifico di interesse. 
 
@@ -71,7 +71,7 @@ Dopo aver esaminato e completato la query di ricerca, è possibile aggiungere i 
 
 Quando si aggiungono dati dalle conversazioni a un set di revisione, è possibile utilizzare le opzioni di recupero delle conversazioni per espandere la ricerca e includere i messaggi contestuali. Dopo aver impostato le opzioni di recupero delle conversazioni, è possibile che si verifichino le seguenti operazioni:
 
-  ![Recupero delle conversazioni](media/messagesandconversations.png)
+  ![Recupero delle conversazioni](../media/messagesandconversations.png)
   
 1. Utilizzando una query di parole chiave e intervallo di date, la ricerca ha restituito un hit sul *messaggio 3*. Questo messaggio è stato parte di una conversazione più grande, illustrata da *CRC1*. 
   
@@ -99,13 +99,13 @@ Dopo che il contenuto è stato elaborato e aggiunto al set di revisione, è poss
 
 In un set di revisione standard, i messaggi vengono elaborati e visualizzati come singoli elementi, analogamente a come vengono archiviati in una cartella delle cassette postali. In questo flusso di lavoro, ogni messaggio viene elaborato come elemento separato. Di conseguenza, le opzioni di riepilogo e esportazione filettate non sono disponibili in un set di analisi standard. 
 
-  ![Set di revisione standard](media/standardrs.PNG)
+  ![Set di revisione standard](../media/standardrs.PNG)
 
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Revisione delle conversazioni in un set di recensioni di conversazione
 
 In un set di revisione della conversazione, i singoli messaggi vengono configurati insieme e presentati come conversazioni. In questo modo è possibile esaminare ed esportare conversazioni contestuali. 
 
-  ![Set di revisione della conversazione](media/ConversationRSOptions.PNG)
+  ![Set di revisione della conversazione](../media/ConversationRSOptions.PNG)
 
 Nelle sezioni seguenti viene descritta la revisione e l'esportazione delle conversazioni in un set di recensioni di conversazione.
 
@@ -134,7 +134,7 @@ In un set di recensioni di conversazione è possibile utilizzare le opzioni segu
 
 In un set di recensioni di conversazione è possibile impostare le opzioni seguenti per esportare le conversazioni:
 
-![Esportazione](media/export.png)
+![Esportazione](../media/export.png)
 
 a. Opzioni dei metadati
 
@@ -157,7 +157,7 @@ c. Altre opzioni
 
    - **Sostituire il contenuto esportato con file PDF redatti:** Se durante il processo di revisione vengono generati file di conversazione redatti, questi file sono disponibili durante l'esportazione. È possibile decidere se esportare solo i file nativi (non selezionando questa opzione) o sostituire i file nativi con le versioni redatte dei file nativi (selezionando questa opzione), che vengono esportati come file PDF.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Per ulteriori informazioni su come esaminare i dati dei casi in Advanced eDiscovery, vedere gli articoli seguenti:
 

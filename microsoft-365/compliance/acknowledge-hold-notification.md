@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Potrebbe essere necessario informare i depositari dell'obbligo di conservare le informazioni archiviate elettronicamente come parte di un'indagine legale. Advanced eDiscovery consente di gestire facilmente il processo di notifica di blocco.
-ms.openlocfilehash: f1a2d4eb03f84df12611115670d52568d6b13d80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594069"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080278"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confermare la ricezione di una notifica di blocco
 
@@ -52,4 +52,4 @@ In base alla configurazione della notifica di conservazione legale, i depositari
 
 Oltre alle notifiche tramite posta elettronica, ogni custode avrà accesso a un portale di conformità univoco. Tramite il portale, ogni custode può visualizzare, accedere e riconoscere le notifiche di blocco attive.
 
-![Portale di conformità per un custode](media/CustodianPortal.jpg)
+![Portale di conformità per un custode](../media/CustodianPortal.jpg)

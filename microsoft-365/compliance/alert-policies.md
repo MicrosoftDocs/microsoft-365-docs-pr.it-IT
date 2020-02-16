@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni. È quindi possibile visualizzare e gestire gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso.
-ms.openlocfilehash: 025bf927b194a7faa6357dbabc12a424fe3f3124
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a5ac38f30d42ceff67f982c6c9ac9b03507d34cb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596103"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080029"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel centro sicurezza e conformità
 
@@ -37,7 +37,7 @@ I criteri di avviso consentono di creare ed espandere la funzionalità degli avv
 
 Di seguito viene illustrata una breve panoramica del funzionamento dei criteri di avviso e degli avvisi attivati quando l'attività dell'utente o dell'amministratore corrisponde alle condizioni di un criterio di avviso.
 
-![Panoramica della modalità di funzionamento dei criteri di avviso](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
+![Panoramica della modalità di funzionamento dei criteri di avviso](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
 
 1. Un amministratore dell'organizzazione crea, configura e attiva un criterio di avviso utilizzando la pagina **criteri di avviso** nel centro sicurezza e conformità. È inoltre possibile creare criteri di avviso utilizzando il cmdlet **New-ProtectionAlert** in PowerShell per il centro sicurezza & Compliance. Per creare criteri di avviso, è necessario assegnare il ruolo Gestisci avvisi o il ruolo Configurazione organizzazione nel centro sicurezza e conformità.
 
@@ -53,7 +53,7 @@ Un criterio di avviso è costituito da un insieme di regole e condizioni che def
 
 Per visualizzare e creare criteri di avviso, passare [https://protection.office.com](https://protection.office.com) a e selezionare **avvisi** \> per i **criteri di avviso**.
 
-![Nel centro sicurezza e conformità, selezionare avvisi, quindi selezionare i criteri di avviso per visualizzare e creare criteri di avviso.](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
+![Nel centro sicurezza e conformità, selezionare avvisi, quindi selezionare i criteri di avviso per visualizzare e creare criteri di avviso.](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
 Un criterio di avviso è costituito dalle impostazioni e dalle condizioni seguenti.
 
@@ -66,7 +66,7 @@ Un criterio di avviso è costituito dalle impostazioni e dalle condizioni seguen
 
 - **Quando si attiva l'avviso** , è possibile configurare un'impostazione che definisce la frequenza con cui è possibile eseguire un'attività prima che venga attivato un avviso. In questo modo è possibile impostare un criterio per generare un avviso ogni volta che un'attività corrisponde alle condizioni dei criteri, quando si supera una determinata soglia o quando si verifica l'insorgenza dell'attività in cui l'avviso è inusuale per l'organizzazione.
 
-    ![Configurare la modalità di attivazione degli avvisi, in base al momento in cui si verifica l'attività, a una soglia o a un'attività inusuale per l'organizzazione](media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
+    ![Configurare la modalità di attivazione degli avvisi, in base al momento in cui si verifica l'attività, a una soglia o a un'attività inusuale per l'organizzazione](../media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
 
     Se si seleziona l'impostazione in base alle attività inusuali, Office 365 stabilisce un valore di base che definisce la frequenza normale per l'attività selezionata. Per definire questa linea di base, sono necessari fino a sette giorni, durante i quali gli avvisi non verranno generati. Dopo che la linea di base è stata stabilita, viene attivato un avviso quando la frequenza dell'attività registrata dal criterio di avviso è notevolmente superiore al valore di base. Per le attività relative al controllo, ad esempio attività per file e cartelle, è possibile stabilire una linea di base basata su un singolo utente o su tutti gli utenti dell'organizzazione. per le attività correlate al malware, è possibile stabilire una linea di base basata su una singola famiglia di malware, un singolo destinatario o tutti i messaggi nell'organizzazione.
 
@@ -141,7 +141,7 @@ Quando un'attività eseguita dagli utenti nell'organizzazione corrisponde alle i
 
 Per visualizzare gli avvisi, passare [https://protection.office.com](https://protection.office.com) a e quindi selezionare **avvisi** \> **Visualizza**avvisi.
 
-![In sicurezza e conformità, selezionare avvisi, quindi selezionare Visualizza avvisi per visualizzare gli avvisi](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
+![In sicurezza e conformità, selezionare avvisi, quindi selezionare Visualizza avvisi per visualizzare gli avvisi](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
 
 È possibile utilizzare i seguenti filtri per visualizzare un sottoinsieme di tutti gli avvisi nella pagina **Visualizza avvisi** .
 
@@ -177,33 +177,33 @@ Per visualizzare la categoria a cui è assegnato un criterio di avviso predefini
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registri di controllo|||||||
 |Gestione dei casi|||||||
-|Amministratore di conformità|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Amministratore di conformità|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Ricerca di conformità|||||||
 |Gestione dei dispositivi|||||||
 |Gestione della disposizione|||||||
-|Gestione della conformità DLP||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|Gestione della conformità DLP||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
 |Esportazione|||||||
 |Hold|||||||
-|Gestione avvisi||||||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Configurazione dell'organizzazione||||||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Gestione avvisi||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Configurazione dell'organizzazione||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Anteprima|||||||
-|Gestione dei record|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Gestione della conservazione|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Gestione dei record|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Gestione della conservazione|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |Revisione|||||||
 |Decrittografia RMS|||||||
-|Gestione dei ruoli||||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|Gestione dei ruoli||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |Ricerca ed eliminazione|||||||
-|Amministratore della sicurezza||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Ruolo con autorizzazioni di lettura per la sicurezza||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Amministratore della sicurezza||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Ruolo con autorizzazioni di lettura per la sicurezza||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
 |Visualizzazione garanzia del servizio|||||||
 |Amministratore revisione di supervisione|||||||
 |Registri di controllo di sola visualizzazione|||||||
 |Gestione dei dispositivi di sola visualizzazione|||||||
-|Gestione della conformità DLP solo visualizzazione||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|Visualizzazione-solo Gestione avvisi||||||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Destinatari solo visualizzazione|||  ![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
-|Gestione dei record di sola visualizzazione|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Gestione della conservazione in sola visualizzazione|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Gestione della conformità DLP solo visualizzazione||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|Visualizzazione-solo Gestione avvisi||||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Destinatari solo visualizzazione|||  ![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
+|Gestione dei record di sola visualizzazione|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|Gestione della conservazione in sola visualizzazione|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
 **Suggerimento:** Per visualizzare i ruoli assegnati a ognuno dei gruppi di ruoli predefiniti, eseguire i comandi seguenti in PowerShell per il Centro sicurezza & Compliance:
@@ -250,11 +250,11 @@ Le organizzazioni che dispongono di Microsoft cloud app Security come parte di u
 
 Per visualizzare solo gli avvisi di sicurezza delle app Cloud nel centro sicurezza e conformità, utilizzare il filtro di **origine** e selezionare **cloud app Security**.
 
-![Utilizzare il filtro di origine per visualizzare solo gli avvisi di sicurezza delle app Cloud](media/FilterCASAlerts.png)
+![Utilizzare il filtro di origine per visualizzare solo gli avvisi di sicurezza delle app Cloud](../media/FilterCASAlerts.png)
 
 Analogamente a un avviso attivato da un criterio di avviso nel centro sicurezza e conformità, è possibile selezionare un avviso di protezione delle app cloud per visualizzare una pagina a comparsa con informazioni dettagliate sull'avviso. L'avviso include un collegamento per visualizzare i dettagli e gestire l'avviso nel cloud app Security Portal e un collegamento ai criteri di protezione delle app cloud corrispondenti che hanno attivato l'avviso. Vedere [monitorare gli avvisi in cloud app Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts).
 
-![I dettagli degli avvisi contengono collegamenti al portale di cloud app Security](media/CASAlertDetail.png)
+![I dettagli degli avvisi contengono collegamenti al portale di cloud app Security](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
 > Se si modifica lo stato di un avviso di protezione delle app Cloud nel centro sicurezza e conformità, non verrà aggiornato lo stato della risoluzione per lo stesso avviso nel portale di protezione delle app cloud. Ad esempio, se si contrassegna lo stato dell'avviso come **risolto** nel centro sicurezza e conformità, lo stato dell'avviso nel portale di sicurezza delle app Cloud è invariato. Per risolvere o ignorare un avviso di protezione delle app Cloud, gestire l'avviso nel portale di sicurezza cloud app.

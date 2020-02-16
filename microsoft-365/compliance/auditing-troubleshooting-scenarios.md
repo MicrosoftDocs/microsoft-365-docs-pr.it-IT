@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: È possibile utilizzare lo strumento di ricerca del registro di controllo di Office 365 per risolvere i problemi comuni, ad esempio l'analisi di un account compromesso, la ricerca di chi ha configurato l'inoltro della posta elettronica per una cassetta postale o il motivo per cui un utente esterno ha eseguito correttamente l'accesso all'organizzazione.
-ms.openlocfilehash: b453cccb0486ab923de720edb5a6a877395b9b7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595973"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079165"
 ---
 # <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Eseguire una ricerca nel registro di controllo di Office 365 per esaminare i problemi di supporto comuni
 
@@ -49,7 +49,7 @@ In questa sezione vengono descritte le nozioni di base per la creazione e l'esec
     
     Viene visualizzata la pagina **Ricerca log di controllo**. 
     
-    ![Configurare i criteri e quindi selezionare Cerca per eseguire la ricerca](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configurare i criteri e quindi selezionare Cerca per eseguire la ricerca](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
 4. È possibile configurare i criteri di ricerca seguenti. Ogni scenario di risoluzione dei problemi in questo articolo consiglia specifiche linee guida per la configurazione di questi campi.
     
@@ -106,11 +106,11 @@ Data di **inizio** e **Data di fine:** Selezionare un intervallo di date applica
 
 Dopo aver eseguito la ricerca, selezionare **Filtra i risultati** nella pagina dei risultati di ricerca. Nella casella in intestazione colonna **attività** digitare **Set-Mailbox** in modo che vengano visualizzati solo i record di controllo correlati al cmdlet **Set-Mailbox** .
 
-![Filtraggio dei risultati di una ricerca nel registro di controllo](media/emailforwarding1.png)
+![Filtraggio dei risultati di una ricerca nel registro di controllo](../media/emailforwarding1.png)
 
 A questo punto, è necessario esaminare i dettagli di ogni record di controllo per determinare se l'attività è correlata all'inoltro della posta elettronica. Selezionare il record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi selezionare **altre informazioni**. Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni che indicano che l'inoltro della posta elettronica è stato impostato sulla cassetta postale.
 
-![Informazioni dettagliate dal record di controllo](media/emailforwarding2.png)
+![Informazioni dettagliate dal record di controllo](../media/emailforwarding2.png)
 
 a. Nel campo **ObjectID** viene visualizzato l'alias della cassetta postale in cui è stato impostato l'inoltro della posta elettronica. Questa cassetta postale viene visualizzata anche nella colonna **elemento** nella pagina dei risultati di ricerca.
 
@@ -152,11 +152,11 @@ Dopo aver eseguito la ricerca, è possibile filtrare i risultati della ricerca p
 
 **Esempio di campo AffectedItems per l'elemento eliminato temporaneamente**
 
-![Record di controllo per elementi eliminati temporaneamente](media/softdeleteditem.png)
+![Record di controllo per elementi eliminati temporaneamente](../media/softdeleteditem.png)
 
 **Esempio di campo AffectedItems per gli elementi eliminati in modo rigido**
 
-![Record di controllo per l'elemento di posta elettronica eliminato definitivamente](media/harddeleteditem.png)
+![Record di controllo per l'elemento di posta elettronica eliminato definitivamente](../media/harddeleteditem.png)
 
 ### <a name="recover-deleted-email-items"></a>Recuperare gli elementi di posta elettronica eliminati
 
@@ -186,7 +186,7 @@ Data di **inizio** e **Data di fine:** Selezionare un intervallo di date applica
 
 Dopo aver eseguito la ricerca, i record di controllo per questa attività vengono visualizzati nei risultati della ricerca. Selezionare un record di controllo per visualizzare la pagina dei **Dettagli** del riquadro a comparsa e quindi selezionare **altre informazioni**. Le informazioni sulle impostazioni delle regole di posta in arrivo vengono visualizzate nel campo **parametri** . Nella schermata e nelle descrizioni seguenti vengono evidenziate le informazioni sulle regole di posta in arrivo.
 
-![Record di controllo per la nuova regola di posta in arrivo](media/NewInboxRuleRecord.png)
+![Record di controllo per la nuova regola di posta in arrivo](../media/NewInboxRuleRecord.png)
 
 a. Nel campo **ObjectID** viene visualizzato il nome completo della regola di posta in arrivo. Questo nome include l'alias della cassetta postale dell'utente (ad esempio, Sarad) e il nome della regola di posta in arrivo (ad esempio, "move messages from admin").
 
@@ -207,7 +207,7 @@ Tale comportamento è preimpostato. Azure Active Directory (Azure AD), il serviz
 
 Di seguito è riportato un esempio e le descrizioni delle proprietà rilevanti in un record di controllo per un utente che ha **eseguito l'accesso** a un evento che è il risultato dell'autenticazione pass-through. Selezionare il record di controllo per visualizzare la pagina dei **Dettagli** dell'icona a comparsa e quindi selezionare **altre informazioni**.
 
-![Esempio di record di controllo per l'autenticazione pass-thru completata](media/PassThroughAuth1.png)
+![Esempio di record di controllo per l'autenticazione pass-thru completata](../media/PassThroughAuth1.png)
 
    a. Questo campo indica che l'utente che ha tentato di accedere a una risorsa nell'organizzazione non è stato trovato nell'Azure AD dell'organizzazione.
 
@@ -232,7 +232,7 @@ Di seguito sono riportati due esempi di scenari che comportano l'accesso di un *
 
 - Eseguire una ricerca nel registro di controllo per le attività eseguite dall'utente esterno identificato nell'utente che ha eseguito l' **accesso** al record di controllo. Digitare l'UPN per l'utente esterno nella casella **utenti** e utilizzare un intervallo di date se pertinente allo scenario. Ad esempio, è possibile creare una ricerca utilizzando i seguenti criteri di ricerca:
 
-   ![Ricerca di tutte le attività eseguite dall'utente esterno](media/PassThroughAuth2.png)
+   ![Ricerca di tutte le attività eseguite dall'utente esterno](../media/PassThroughAuth2.png)
 
     Oltre all'utente che ha **effettuato l'accesso** , è possibile che vengano restituiti altri record di controllo, ad esempio per indicare a un utente dell'organizzazione risorse condivise con l'utente esterno e se l'utente esterno ha eseguito l'accesso, la modifica o il download di un documento condiviso con essi.
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: In Advanced eDiscovery, il modulo di ricerca e tagging consente di cercare, visualizzare in anteprima e organizzare i documenti nel caso. Attualmente, questo modulo è in versione beta.
-ms.openlocfilehash: d79b702471b7a7234a7f0d147eb4f50bfc56a4c7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a3597cf0abad7095de7a7c6857052f269d202598
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601713"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081399"
 ---
 # <a name="search-and-tagging"></a>Ricerca e tagging
 
@@ -69,7 +69,7 @@ Nella tabella seguente sono elencate le proprietà che è possibile cercare util
 
 In alternativa, è possibile utilizzare una scheda di condizione nello strumento di ricerca di eDiscovery avanzato per aggiungere una condizione (per le proprietà selezionate) a una query di ricerca. Nella schermata seguente vengono riportate le condizioni che è possibile aggiungere a una query. La colonna **gruppo** indica se la proprietà si applica ai messaggi di posta elettronica, ai documenti del sito o a entrambi (indicati dal valore *comune*). In questa colonna vengono inoltre identificate le proprietà disponibili per la ricerca che possono essere eseguite dopo l'esecuzione del modulo pertinenza.
 
-![Condizioni di ricerca nello strumento di ricerca avanzato di eDiscovery](media/AeDSearchConditions.png)
+![Condizioni di ricerca nello strumento di ricerca avanzato di eDiscovery](../media/AeDSearchConditions.png)
 
 Per ulteriori informazioni sulle proprietà disponibili per la ricerca, vedere [keyword query and Search Conditions](keyword-queries-and-search-conditions.md).
   

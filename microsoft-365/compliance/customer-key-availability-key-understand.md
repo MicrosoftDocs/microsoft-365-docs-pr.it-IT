@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni sulla chiave di disponibilità utilizzata per recuperare le chiavi dei clienti di Office 365 perse.
-ms.openlocfilehash: 72fbfd139b273d38a0cb017d7bbca3d87c16efb2
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 86f602a59f436a6ce42df583c88c0403eb17e5ae
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862086"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076953"
 ---
 # <a name="learn-about-the-availability-key-for-office-365-customer-key"></a>Informazioni sulla chiave di disponibilità per la chiave del cliente di Office 365
 
@@ -175,11 +175,11 @@ Exchange Online e Skype for business utilizzano automaticamente la chiave di dis
 
 I record di log includono attributi quali data, ora, attività, ID organizzazione e ID del criterio di crittografia dei dati. Il record è disponibile come parte dei log di controllo unificato di Office 365 ed è accessibile dalla scheda ricerca del registro di controllo del Centro sicurezza e conformità di Office 365.
 
-![Ricerca del registro di controllo per gli eventi chiave di disponibilità](media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
+![Ricerca del registro di controllo per gli eventi chiave di disponibilità](../media/customerkeyauditlogsearchavailabilitykeyloggingimage.png)
 
 I record chiave di disponibilità di Exchange Online e Skype for business utilizzano lo [schema comune](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) attività di gestione di Office 365 con parametri personalizzati aggiunti: ID criterio, ID versione della chiave dell'ambito e ID richiesta.
 
-![Parametri personalizzati della chiave di disponibilità](media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
+![Parametri personalizzati della chiave di disponibilità](../media/customerkeyauditlogsearchavailabilitykeyloggingcustomparam.png)
 
 ### <a name="sharepoint-online-onedrive-for-business-and-teams-files-availability-key-logging"></a>Registrazione delle chiavi di disponibilità dei file di SharePoint Online, OneDrive for business e teams
 
@@ -195,11 +195,11 @@ Office 365 utilizza la chiave di disponibilità per eseguire il wrapping del liv
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Crittografia cifratura utilizzata per crittografare le chiavi per Exchange Online e Skype for business
 
-![Crittografia cifratura per la chiave del cliente di Exchange Online](media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Crittografia cifratura per la chiave del cliente di Exchange Online](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 ### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-and-onedrive-for-business"></a>Crittografia crittografica utilizzata per crittografare le chiavi di SharePoint Online e OneDrive for business
 
-![Crittografia cifratura per la chiave del cliente di SharePoint Online](media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Crittografia cifratura per la chiave del cliente di SharePoint Online](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>Articoli correlati
 

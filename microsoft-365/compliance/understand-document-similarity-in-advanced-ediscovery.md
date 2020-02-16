@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Esaminare in che modo il valore di somiglianza del documento, il livello minimo di somiglianza per due file da considerare quasi duplicati, è compatibile con Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: c11359681de4d1e078cde8ebf603396c9a71e3b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b5c777579e876e54032ce5872291a2791e2c3b09
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597333"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080773"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Comprendere la somiglianza del documento in Office 365 Advanced eDiscovery
 
@@ -44,11 +44,11 @@ Tuttavia, il documento F1 può essere simile a quello F3 al livello di soli 70%,
   
 I livelli di somiglianza sono illustrati nel modo seguente:
   
-![Somiglianza documento](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
+![Somiglianza documento](../media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
 Si supponga che un altro documento, x1, sia stato inserito. La somiglianza tra x1 e E3 è 87%. Analogamente, la somiglianza tra x1 e F1 è 92%. Di conseguenza, EquiSet-1, EquiSet-2 e X1 vengono ora combinati in un solo set ND.
   
-![Somiglianza documento](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
+![Somiglianza documento](../media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   
 > [!NOTE]
 > Se i due documenti vengono assegnati a un set ND, rimarranno insieme nello stesso set ND, anche se sono stati aggiunti altri documenti al set o se i set sono Stati Uniti. 

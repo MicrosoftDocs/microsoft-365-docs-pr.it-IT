@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3dabe35b753e38ab51801c6f2bd51cc5ee588e9a
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: d5eb8b2f9aff59363c60d7bd75aa3f76fdf1283a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661942"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078695"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformità della comunicazione in Microsoft 365
 
@@ -61,7 +61,7 @@ La conformità alla comunicazione in Microsoft 365 si basa sulle caratteristiche
 - Flussi di lavoro di correzione flessibili
 - Approfondimenti di azione
 
-![Home page conformità di comunicazione](media/communication-compliance-home.png)
+![Home page conformità di comunicazione](../media/communication-compliance-home.png)
 
 ### <a name="intelligent-customizable-templates"></a>Modelli personalizzabili intelligenti
 
@@ -108,7 +108,7 @@ La conformità alla comunicazione consente di risolvere i punti di dolore comuni
 
 L'identificazione e la risoluzione dei problemi di conformità con la conformità della comunicazione in Microsoft 365 utilizza il flusso di lavoro seguente:
 
-![Flusso di lavoro conformità comunicazione](media/communication-compliance-workflow.png)
+![Flusso di lavoro conformità comunicazione](../media/communication-compliance-workflow.png)
 
 ### <a name="configure"></a>Configurare
 
@@ -153,4 +153,4 @@ Tenere tenere conto e gestire i problemi di conformità identificati dai criteri
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 
-Per configurare la conformità di comunicazione per l'organizzazione Microsoft 365, vedere [Configure Communication Compliance for microsoft 365 (Preview)](communication-compliance-configure.md).
+Per configurare la conformità di comunicazione per l'organizzazione Microsoft 365, vedere [Configure Communication Compliance for microsoft 365](communication-compliance-configure.md).

@@ -16,12 +16,12 @@ ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
 description: In questo argomento viene illustrato come configurare IRM per utilizzare un server AD RMS.
-ms.openlocfilehash: 9af8de571285843a994c943ef33baa2f5966b328
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d9d1dee8ca0992f1e2f9cb344baba4f245d3ca37
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596253"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078499"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurare IRM per l'uso di un server AD RMS locale
   
@@ -167,4 +167,4 @@ Per verificare di aver importato il dominio di pubblicazione trusted e abilitato
   
 - Utilizzare il cmdlet **Test-IRMConfiguration** per verificare la funzionalità IRM. Per informazioni dettagliate, vedere "Esempio 1" in [Test-IRMConfiguration](https://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
 
-- Comporre un nuovo messaggio in Outlook sul Web e proteggerlo tramite IRM selezionando opzione **Imposta autorizzazioni** dal menu esteso ( ![icona](media/ITPro-EAC-MoreOptionsIcon.gif)altre opzioni).
+- Comporre un nuovo messaggio in Outlook sul Web e proteggerlo tramite IRM selezionando opzione **Imposta autorizzazioni** dal menu esteso ( ![icona](../media/ITPro-EAC-MoreOptionsIcon.gif)altre opzioni).

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Informazioni sul modulo pertinenza in Office 365 Advanced eDiscovery, tra cui un flusso di lavoro e le linee guida e i passaggi per la formazione e la revisione dei file.  '
-ms.openlocfilehash: 5151c94d2b0bd1824abb499f6cb27bbfbc7618b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0b160a5b251f4be7d23ef24a79164b824fe65b7f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601303"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080713"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Utilizzare il modulo pertinenza in Office 365 Advanced eDiscovery
 
@@ -30,7 +30,7 @@ ms.locfileid: "41601303"
   
 In Advanced eDiscovery, il modulo pertinenza include la formazione sulla pertinenza e la revisione dei file correlati a un caso. Il flusso di lavoro di pertinenza è illustrato e descritto nel modo seguente:
   
-![Flusso di lavoro di pertinenza](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![Flusso di lavoro di pertinenza](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Cicli di valutazione e tracciabilità**:
     

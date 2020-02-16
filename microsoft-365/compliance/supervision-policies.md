@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: a57fd1f1e079424f1494acc4b8944534c30359b2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: dafc745d985c93e4665db469442b0b6dc2eda070
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661873"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081073"
 ---
 # <a name="supervision-policies-in-office-365"></a>Criteri di supervisione in Office 365
 
@@ -42,7 +42,7 @@ Per una breve panoramica dei criteri di supervisione, vedere il [video sui crite
 
 Per ulteriori informazioni sui miglioramenti e la disponibilità delle funzionalità di supervisione imminenti, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
-Si desidera provare la nuova esperienza di conformità della comunicazione in Microsoft 365? Consultare le funzionalità nuove e migliorate disponibili in [Compliance Communication in Microsoft 365 (Preview)](communication-compliance.md).
+Si desidera provare la nuova esperienza di conformità della comunicazione in Microsoft 365? Consultare le funzionalità nuove e migliorate disponibili in [Compliance Communication in Microsoft 365](communication-compliance.md).
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transizione dalla vigilanza in Office 365
 
@@ -123,7 +123,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 - In **uscita**: è possibile scegliere in **uscita** se si desidera esaminare le comunicazioni inviate **dalle** persone che si è scelto di controllare **per** gli utenti non inclusi nel criterio.
 - **Internal**: è possibile scegliere **Internal** per esaminare le comunicazioni inviate **tra** le persone identificate nel criterio.
 
-#### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
+#### <a name="sensitive-information-types"></a>Tipi di informazioni riservate
 
 È possibile includere i tipi di informazioni riservate nell'ambito del criterio di supervisione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Come parte del servizio di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md)di Office 365, la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli amministratori possono configurare un connettore nativo per l'importazione e l'archiviazione di pagine business di Facebook su Microsoft 365. Dopo aver importato i dati in Microsoft 365, è possibile utilizzare le funzionalità di conformità, ad esempio il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire la governance dei dati di Facebook dell'organizzazione.
-ms.openlocfilehash: 22810b377abf3ed30c53bab2cd27b970a5dcd62f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 48747dade98701303c4ca6a8c00192ec7faff34a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595301"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076093"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Distribuire un connettore per archiviare i dati di pagine business di Facebook
 
@@ -28,46 +28,46 @@ In questo articolo è incluso il processo dettagliato per la distribuzione di un
 
 1. Accedere a <https://portal.azure.com> e accedere con le credenziali di un account di amministratore globale di Office 365.
 
-    ![Creare un'app in AAD](media/FBCimage1.png)
+    ![Creare un'app in AAD](../media/FBCimage1.png)
 
 2. Nel riquadro di spostamento a sinistra, fare clic su **Azure Active Directory**.
 
-    ![Fare clic su Azure Active Directory](media/FBCimage2.png)
+    ![Fare clic su Azure Active Directory](../media/FBCimage2.png)
 
 3. Nel riquadro di spostamento a sinistra, fare clic su **registrazioni app (anteprima)** e quindi fare clic su **nuova registrazione**.
 
-    ![Fare clic su * * registrazioni app (anteprima) * * e quindi fare clic su * * nuova registrazione * *](media/FBCimage3.png)
+    ![Fare clic su * * registrazioni app (anteprima) * * e quindi fare clic su * * nuova registrazione * *](../media/FBCimage3.png)
 
 4. Registrare l'applicazione. In URI di reindirizzamento, selezionare Web nell'elenco a discesa tipo di applicazione e <https://portal.azure.com> quindi digitare nella casella per l'URI.
 
-   ![Registrare l'applicazione](media/FBCimage4.png)
+   ![Registrare l'applicazione](../media/FBCimage4.png)
 
 5. Copiare l'ID dell' **applicazione (client)** e la **Directory (tenant)** e salvarli in un file di testo o in un'altra posizione sicura. È possibile utilizzare questi ID nei passaggi successivi.
 
-   ![Copiare l'ID applicazione e l'ID directory e salvarli](media/FBCimage5.png)
+   ![Copiare l'ID applicazione e l'ID directory e salvarli](../media/FBCimage5.png)
 
 6. Accedere a **certificati & segreti per la nuova app.**
 
-   ![Accedere a certificati & segreti per la nuova applicazione](media/FBCimage6.png)
+   ![Accedere a certificati & segreti per la nuova applicazione](../media/FBCimage6.png)
 
 7. Fare clic su **nuovo client segreto**
 
-   ![Fare clic su nuovo client segreto](media/FBCimage7.png)
+   ![Fare clic su nuovo client segreto](../media/FBCimage7.png)
 
 8. Creare un nuovo segreto. Nella casella Descrizione digitare il segreto e quindi scegliere un periodo di scadenza. 
 
-    ![Digita il segreto e quindi scegli un periodo di scadenza](media/FBCimage8.png)
+    ![Digita il segreto e quindi scegli un periodo di scadenza](../media/FBCimage8.png)
 
 9. Copiare il valore del segreto e salvarlo in un file di testo o in un altro percorso di archiviazione. Si tratta del segreto dell'applicazione AAD utilizzato nei passaggi successivi.
 
-   ![Copiare il valore del segreto e salvarlo](media/FBCimage9.png)
+   ![Copiare il valore del segreto e salvarlo](../media/FBCimage9.png)
 
 
 ## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Passaggio 2: distribuire il servizio Web del connettore da GitHub all'account di Azure
 
 1. Accedere a [questo sito GitHub](https://github.com/microsoft/m365-sample-connector-csharp-aspnet) e fare clic su **Distribuisci in Azure**.
 
-    ![Fare clic su Distribuisci in Azure](media/FBCGithubApp.png)
+    ![Fare clic su Distribuisci in Azure](../media/FBCGithubApp.png)
 
 2. Dopo aver fatto clic su **Distribuisci in Azure**, verrà reindirizzato a un portale di Azure con una pagina modello personalizzato. Compilare i dettagli delle **Impostazioni e delle** informazioni di **base** e quindi fare clic su **acquisto**.
 
@@ -83,93 +83,93 @@ In questo articolo è incluso il processo dettagliato per la distribuzione di un
     
    - **APISecretKey:** È possibile digitare qualsiasi valore come segreto. Viene utilizzato per accedere all'applicazione Web del connettore nel passaggio 5.
    
-     ![Fare clic su Crea un account di archiviazione di risorse e tipi](media/FBCimage12.png)
+     ![Fare clic su Crea un account di archiviazione di risorse e tipi](../media/FBCimage12.png)
 
 3. Dopo che la distribuzione ha avuto esito positivo, la pagina avrà un aspetto simile alla schermata seguente:
 
-     ![Fare clic su archiviazione e quindi su account di archiviazione](media/FBCimage13.png)
+     ![Fare clic su archiviazione e quindi su account di archiviazione](../media/FBCimage13.png)
 
 ## <a name="step-3-register-the-facebook-app"></a>Passaggio 3: registrare l'app Facebook
 
 1. Accedere a <https://developers.facebook.com>, eseguire l'accesso usando le credenziali per l'account per le pagine business di Facebook dell'organizzazione e quindi fare clic su **Aggiungi nuova app**.
 
-   ![Aggiungere una nuova app per la pagina business di Facebook](media/FBCimage25.png)
+   ![Aggiungere una nuova app per la pagina business di Facebook](../media/FBCimage25.png)
 
 2. Creare un nuovo ID app.
 
-   ![Creare un nuovo ID app](media/FBCimage26.png)
+   ![Creare un nuovo ID app](../media/FBCimage26.png)
 
 3. Nel riquadro di spostamento a sinistra, fare clic su **Aggiungi prodotti** e quindi fare clic su **Configura** nella sezione **login Facebook** .
 
-   ![Fare clic su Aggiungi prodotti](media/FBCimage27.png)
+   ![Fare clic su Aggiungi prodotti](../media/FBCimage27.png)
 
 4. Nella pagina integrazione account di accesso di Facebook fare clic su **Web**.
 
-   ![Fare clic su Web nella pagina integrazione login Facebook](media/FBCimage28.png)
+   ![Fare clic su Web nella pagina integrazione login Facebook](../media/FBCimage28.png)
 
 5. Aggiungere l'URL del servizio app di Azure; ad esempio `https://fbconnector.azurewebsites.net`.
 
-   ![Aggiungere l'URL del servizio app di Azure](media/FBCimage29.png)
+   ![Aggiungere l'URL del servizio app di Azure](../media/FBCimage29.png)
 
 6. Completare la sezione Guida introduttiva della configurazione dell'account di accesso di Facebook.
 
-   ![Completare la sezione Guida introduttiva](media/FBCimage30.png)
+   ![Completare la sezione Guida introduttiva](../media/FBCimage30.png)
 
 7. Nel riquadro di spostamento a sinistra in **login Facebook**, fare clic su **Impostazioni**e aggiungere l'URI di reindirizzamento OAuth nella casella **Valid URI di reindirizzamento OAuth** . Utilizzare il formato ** \<connectorserviceuri>/views/facebookoauth**, in cui il valore di connectorserviceuri è l'URL del servizio app di Azure per l'organizzazione. ad esempio, `https://fbconnector.azurewebsites.net`.
 
-   ![Aggiungere l'URI di reindirizzamento OAuth alla casella degli URI di reindirizzamento OAuth validi](media/FBCimage31.png)
+   ![Aggiungere l'URI di reindirizzamento OAuth alla casella degli URI di reindirizzamento OAuth validi](../media/FBCimage31.png)
 
 8. Nel riquadro di spostamento a sinistra, fare clic su **Aggiungi prodotti** e quindi fare clic su **webhook.** Nel menu a discesa della **pagina** , fare clic su **pagina**. 
 
-   ![Fare clic su Aggiungi prodotti e quindi su * * webhooks](media/FBCimage32.png)
+   ![Fare clic su Aggiungi prodotti e quindi su * * webhooks](../media/FBCimage32.png)
 
 9. Aggiungere l'URL di callback di Webhook e aggiungere un token di verifica. Il formato dell'URL di callback, utilizzare il formato ** <connectorserviceuri>/API/FbPageWebhook**, in cui il valore di connectorserviceuri è l'URL del servizio app di Azure per l'organizzazione. ad esempio `https://fbconnector.azurewebsites.net`. 
 
     Il token di verifica dovrebbe essere simile a una password complessa. Copiare il token di verifica in un file di testo o in un altro percorso di archiviazione.
 
-        ![Add the verify token](media/FBCimage33.png)
+        ![Add the verify token](../media/FBCimage33.png)
 
 10. Testare e sottoscrivere l'endpoint per il feed.
 
-    ![Testare e sottoscrivere l'endpoint](media/FBCimage34.png)
+    ![Testare e sottoscrivere l'endpoint](../media/FBCimage34.png)
 
 11. Aggiungere un URL di privacy, un'icona dell'app e un utilizzo aziendale. Inoltre, copiare l'ID app e l'applicazione segreta in un file di testo o in un altro percorso di archiviazione.
 
-    ![Aggiungere un URL di privacy, un'icona App e un utilizzo aziendale](media/FBCimage35.png)
+    ![Aggiungere un URL di privacy, un'icona App e un utilizzo aziendale](../media/FBCimage35.png)
 
 12. Rendere pubblico l'applicazione.
 
-    ![Rendere pubblico l'app](media/FBCimage36.png)
+    ![Rendere pubblico l'app](../media/FBCimage36.png)
 
 13. Aggiungere un utente al ruolo di amministratore o tester.
 
-    ![Aggiungere un utente al ruolo di amministratore o tester](media/FBCimage37.png)
+    ![Aggiungere un utente al ruolo di amministratore o tester](../media/FBCimage37.png)
 
 14. Aggiungere l'autorizzazione di **accesso al contenuto pubblico della pagina** .
 
-    ![dd la pagina autorizzazione di accesso al contenuto pubblico](media/FBCimage38.png)
+    ![dd la pagina autorizzazione di accesso al contenuto pubblico](../media/FBCimage38.png)
 
 15. Aggiungere l'autorizzazione Manage Pages.
 
-    ![Aggiungere l'autorizzazione Gestisci pagine](media/FBCimage39.png)
+    ![Aggiungere l'autorizzazione Gestisci pagine](../media/FBCimage39.png)
 
 16. Ottenere l'applicazione recensita da Facebook.
 
-    ![Ottenere l'applicazione recensita da Facebook](media/FBCimage40.png)
+    ![Ottenere l'applicazione recensita da Facebook](../media/FBCimage40.png)
 
 ## <a name="step-4-configure-the-connector-web-app"></a>Passaggio 4: configurare l'applicazione Web del connettore
 
 1. Passare a https://\<AzureAppResourceName>. azurewebsites.NET (dove AzureAppResourceName è il nome della risorsa di Azure App denominata nel passaggio 4), ad esempio, se il nome è **fbconnector**, andare a `https://fbconnector.azurewebsites.net`. La Home page dell'app avrà lo stesso aspetto della schermata seguente:
 
-   ![Accedere all'applicazione Web del connettore](media/FBCimage41.png)
+   ![Accedere all'applicazione Web del connettore](../media/FBCimage41.png)
 
 2. Fare clic su **Configura** per visualizzare una pagina di accesso.
  
-   ![Fare clic su Configura per visualizzare una pagina di accesso](media/FBCimage42.png)
+   ![Fare clic su Configura per visualizzare una pagina di accesso](../media/FBCimage42.png)
 
 3. Nella casella ID tenant digitare o incollare l'ID tenant (ottenuto nel passaggio 2). Nella casella password digitare o incollare il APISecretKey (ottenuto nel passaggio 2), quindi fare clic su **imposta impostazioni di configurazione** per visualizzare la pagina dettagli di configurazione.
 
-    ![Accedere con l'ID e la password del tenant e passare alla pagina dei dettagli di configurazione](media/FBCimage43.png)
+    ![Accedere con l'ID e la password del tenant e passare alla pagina dei dettagli di configurazione](../media/FBCimage43.png)
 
 4. Immettere le impostazioni di configurazione seguenti 
 
@@ -197,7 +197,7 @@ In questo articolo è incluso il processo dettagliato per la distribuzione di un
 
 5.  Nella pagina **Aggiungi credenziali per l'app del connettore** , immettere le informazioni seguenti e quindi fare clic su **convalida connessione**.
 
-    ![Immettere le credenziali delle app del connettore](media/TCimage38.png)
+    ![Immettere le credenziali delle app del connettore](../media/TCimage38.png)
 
     - Nella casella **nome** Digitare un nome per il connettore, ad esempio pagina di **notizie di Facebook**.
     
@@ -213,11 +213,11 @@ In questo articolo è incluso il processo dettagliato per la distribuzione di un
 
 8. Nella pagina **Configura applicazione del connettore Facebook** , fare clic su **account di accesso con Facebook** e accedere usando le credenziali per l'account per le pagine business di Facebook dell'organizzazione. Assicurarsi che l'account di Facebook a cui è stato effettuato l'accesso sia assegnato il ruolo di amministratore per le pagine business di Facebook dell'organizzazione.
 
-   ![Accedere con Facebook](media/FBCimage50.png)
+   ![Accedere con Facebook](../media/FBCimage50.png)
 
 9. Viene visualizzato un elenco delle pagine business gestite dall'account di Facebook in cui è stato effettuato l'accesso. Selezionare la pagina da archiviare e quindi fare clic su **Avanti**.
 
-    ![Selezionare la pagina aziendale dell'organizzazione che si desidera archiviare](media/FBCimage52.png)
+    ![Selezionare la pagina aziendale dell'organizzazione che si desidera archiviare](../media/FBCimage52.png)
 
 10. Fare clic su **continua** per uscire dal programma di installazione dell'app del servizio connettore.
 

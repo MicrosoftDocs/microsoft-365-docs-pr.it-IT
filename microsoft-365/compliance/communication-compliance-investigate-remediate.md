@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 31a38ac28d1b483d6b5cdce6fade82d252457641
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: fc1a9cb77cc642ead4af120383b807808e695c22
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661952"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078734"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Esaminare e correggere gli avvisi di conformità della comunicazione
 
@@ -66,7 +66,7 @@ Per un elenco completo dei filtri e dettagli sul campo, vedere [Filters](communi
 
 8. Se si desidera salvare i filtri selezionati come query di filtro, fare clic su **Salva il controllo query** dopo aver configurato almeno un valore di filtro. Immettere un nome per la query del filtro e selezionare **Salva**. Questo filtro è disponibile per essere utilizzato solo per questo criterio ed è elencato nella sezione **query di filtro salvate** della pagina dei dettagli sui **filtri** .
 
-    ![Controlli Dettagli filtro conformità di comunicazione](media/communication-compliance-filter-detail-controls.png)
+    ![Controlli Dettagli filtro conformità di comunicazione](../media/communication-compliance-filter-detail-controls.png)
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Utilizzo dell'analisi duplicata vicina ed esatta
 
@@ -90,7 +90,7 @@ I criteri di conformità della comunicazione analizzano e pregruppo i duplicati 
 
 8. Selezionare **Chiudi** dopo aver completato le operazioni di correzione dei messaggi.
 
-    ![Controlli di conformità dei duplicati esatti della comunicazione](media/communication-compliance-duplicates-controls.png)
+    ![Controlli di conformità dei duplicati esatti della comunicazione](../media/communication-compliance-duplicates-controls.png)
 
 ## <a name="remediate-alerts"></a>Correggere gli avvisi
 
@@ -98,7 +98,7 @@ Indipendentemente dal punto in cui si inizia a esaminare gli avvisi o il filtro 
 
 1. **Esaminare le nozioni di base sui messaggi**: a volte risulta evidente dall'origine o dall'oggetto che un messaggio può essere immediatamente rimediato. Potrebbe essere che il messaggio sia falso o erroneamente corrispondente a un criterio e che sia necessario risolverlo come falsi positivi. Selezionare il controllo **false positive** per risolvere immediatamente l'avviso e rimuoverlo dalla coda degli avvisi in sospeso. Dalle informazioni di origine o mittente, potrebbe essere già possibile sapere in che modo il messaggio deve essere instradato o gestito in queste circostanze. Considerare l'utilizzo del **tag come** o l' **escalation** dei controlli per assegnare un tag ai messaggi applicabili o per inviare messaggi a un revisore designato.
 
-    ![Controlli di correzione della conformità di comunicazione](media/communication-compliance-remediation-controls.png)
+    ![Controlli di correzione della conformità di comunicazione](../media/communication-compliance-remediation-controls.png)
 
 2. **Esaminare i dettagli del messaggio**: dopo aver esaminato le nozioni di base del messaggio, è necessario aprire un messaggio per esaminare i dettagli e determinare ulteriori azioni di correzione. Selezionare un messaggio per visualizzare le informazioni complete sull'intestazione e sul corpo del messaggio. Sono disponibili diverse visualizzazioni per facilitare la scelta del corso di azione appropriato:
 
@@ -107,7 +107,7 @@ Indipendentemente dal punto in cui si inizia a esaminare gli avvisi o il filtro 
     - **Visualizzazione annotazioni**: questa visualizzazione consente ai revisori di aggiungere annotazioni direttamente sul messaggio salvato nella visualizzazione del messaggio.
     - **Cronologia utenti**: visualizzazione cronologia utenti Visualizza tutti gli altri avvisi generati da tutti i criteri di conformità della comunicazione per l'utente che invia il messaggio.
 
-    ![Controlli di visualizzazione messaggi di conformità di comunicazione](media/communication-compliance-message-views.png)
+    ![Controlli di visualizzazione messaggi di conformità di comunicazione](../media/communication-compliance-message-views.png)
 
 3. **Decidere in merito a un'azione di correzione**: dopo aver esaminato i dettagli del messaggio per l'avviso, è possibile scegliere diverse azioni correttive:
 

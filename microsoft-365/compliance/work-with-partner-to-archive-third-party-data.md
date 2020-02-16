@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: L'organizzazione può collaborare con un partner Microsoft per configurare un connettore personalizzato per l'importazione di dati di terze parti da origini dati quali Salesforce Chatter, Yahoo Messenger o Yammer. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Office 365 per poter utilizzare le funzionalità di conformità di Office 365, ad esempio i criteri di conservazione legale, ricerca contenuto e ritenzione per gestire la governance dei dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 01188110b19dc4784920a5f18e673f92e064e034
-ms.sourcegitcommit: a6686a68b068adec29b72f998ac9bc95992981df
+ms.openlocfilehash: 6104381b842b9a4d76de7278c0b7280ec2f11222
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628608"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085017"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>Collaborare con un partner per archiviare i dati di terze parti in Office 365
 
@@ -39,7 +39,7 @@ Di seguito è riportata una panoramica del processo e i passaggi necessari per c
 
 Nella figura e nella descrizione seguenti viene illustrato il funzionamento del processo di importazione di dati di terze parti quando si lavora con un partner.
   
-![Funzionamento del processo di importazione dei dati di terze parti](media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
+![Funzionamento del processo di importazione dei dati di terze parti](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
   
 1. Il cliente lavora con il proprio partner preferito per configurare un connettore che estrae gli elementi dall'origine dati di terze parti e quindi importa tali elementi in Office 365.
     
@@ -537,7 +537,7 @@ Di seguito sono riportati i passaggi per accedere e accettare la richiesta di re
 
    Verrà visualizzata la finestra di dialogo seguente. È possibile espandere le carriere per esaminare le autorizzazioni che verranno assegnate al connettore.
 
-   ![Viene visualizzata la finestra di dialogo delle richieste di autorizzazione](media/O365-ThirdPartyDataConnector-OptIn1.png)
+   ![Viene visualizzata la finestra di dialogo delle richieste di autorizzazione](../media/O365-ThirdPartyDataConnector-OptIn1.png)
 
 2. Fare clic su **Accetta**.
 
@@ -552,7 +552,7 @@ Dopo che l'organizzazione ha acconsentito alla richiesta di autorizzazione per l
 
 Per revocare il consenso per un connettore di dati di terze parti, è possibile eliminare l'applicazione (eliminando l'entità di servizio corrispondente) da Azure Active Directory utilizzando il Blade **applicazioni Enterprise** nel portale di Azure o utilizzando il [Remove-msolserviceprincipal viene](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal) in Office 365 PowerShell. È inoltre possibile utilizzare il cmdlet [Remove-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal) in Azure Active Directory PowerShell.
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Come illustrato in precedenza, gli elementi provenienti da origini dati di terze parti vengono importati nelle cassette postali di Exchange come messaggi di posta elettronica. Il connettore partner importa l'elemento utilizzando uno schema richiesto dall'API di Office 365. Nella tabella seguente vengono descritte le proprietà del messaggio di un elemento di un'origine dati di terze parti dopo che è stato importato in una cassetta postale di Exchange come messaggio di posta elettronica. Nella tabella viene indicato anche se la proprietà del messaggio è obbligatoria. È necessario popolare le proprietà obbligatorie. Se un elemento è mancante di una proprietà obbligatoria, non verrà importato in Office 365. Il processo di importazione restituisce un messaggio di errore che spiega il motivo per cui un elemento non è stato importato e la proprietà mancante.
     

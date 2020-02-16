@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Alle organizzazioni viene spesso richiesto di conservare i documenti per un determinato periodo di tempo a causa di norme legate alla conformità, legali o di altro tipo. Tuttavia, conservare i documenti per un periodo superiore a quello richiesto può esporre l'organizzazione a un rischio legale.
-ms.openlocfilehash: 9ada3f2756b627965c9f215c1111ff2fe72da1e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0144b12c05fcd4c8f973ee7e6b6df373f5b609a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596233"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077926"
 ---
 # <a name="create-a-document-deletion-policy"></a>Creare un criterio di eliminazione dei documenti
 
@@ -32,19 +32,19 @@ Con un criterio di eliminazione dei documenti, è possibile ridurre in modo proa
   
 Dopo aver creato un criterio di eliminazione dei documenti, puoi assegnarlo a un modello di raccolta siti, in modo che il criterio sia disponibile per tutte le raccolte di siti create da tale modello. Puoi anche assegnare il criterio a una raccolta di siti specifica, sostituendo tutti i criteri che potrebbero essere stati assegnati al modello di tale raccolta di siti.
   
-![Home page del Centro criteri per l'eliminazione dei documenti](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![Home page del Centro criteri per l'eliminazione dei documenti](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="policy-templates"></a>Modelli dei criteri
 
 È possibile creare dei criteri per l'eliminazione dei documenti da zero o utilizzare uno dei criteri di esempio. Il centro criteri di conformità include dei criteri di esempio che è possibile utilizzare così come sono. In alternativa, è possibile usarli come punto di partenza per poi rinominarli o modificarli.
   
-![Criteri di eliminazione del documento di esempio](media/IP-Sample-deletion-policies.png)
+![Criteri di eliminazione del documento di esempio](../media/IP-Sample-deletion-policies.png)
   
 ## <a name="examples-of-how-to-use-document-deletion-policies"></a>Esempi di come utilizzare i criteri di eliminazione dei documenti
 
 Una raccolta di siti o un modello di raccolta di siti può contenere uno o più criteri assegnati e ognuno di questi criteri può avere una o più regole. Tuttavia, può essere presente un solo criterio attivo per sito e può essere presente una sola regola di eliminazione attiva in qualsiasi momento per le raccolte all'interno del sito.
   
-![Diagramma con relazione tra criteri](media/IP-Two-policies-four-rules.png)
+![Diagramma con relazione tra criteri](../media/IP-Two-policies-four-rules.png)
   
 Inoltre, puoi selezionare un criterio come obbligatorio o predefinito e puoi selezionare una regola di eliminazione come regola predefinita: 
   
@@ -68,7 +68,7 @@ Potresti voler applicare un criterio di eliminazione dei documenti in un'ampia g
     
 In questo esempio, la regola di eliminazione predefinita verrà applicata a tutti le librerie in tutte le raccolte di siti create dal modello, e i proprietari del sito non potranno rifiutare esplicitamente il criterio. Questo è il modo più semplice per applicare su vasta scala e rigidamente un criterio di eliminazione dei documenti.
   
-![Diagramma con un solo criterio obbligatorio](media/IP-Example-1-doc-deletion-policies.png)
+![Diagramma con un solo criterio obbligatorio](../media/IP-Example-1-doc-deletion-policies.png)
   
 ### <a name="example-2-apply-a-single-policy-with-several-rules-to-a-site-collection-template"></a>Esempio 2: applicare un solo criterio con diverse regole a un modello di raccolta siti
 
@@ -84,7 +84,7 @@ Allo stesso tempo, puoi comunque creare e gestire centralmente i criteri. Puoi a
     
 I proprietari del sito possono selezionare una delle regole di eliminazione alternative, rifiutare il criterio o non fare nulla ed essere soggetti al criterio e alla regola predefiniti.
   
-![Diagramma con un criterio con molte regole](media/IP-Example-2-doc-deletion-policies.png)
+![Diagramma con un criterio con molte regole](../media/IP-Example-2-doc-deletion-policies.png)
   
 ### <a name="example-3-apply-several-policies-with-one-or-more-rules-to-a-site-collection"></a>Esempio 3: applicare diversi criteri con una o più regole a una raccolta siti
 
@@ -104,7 +104,7 @@ Per impostare questo scenario, puoi:
     
 Inoltre, i criteri e le regole vengono creati in base a una raccolta di siti specifica, dove i proprietari del sito possono interrompere l'ereditarietà selezionando il criterio e la regola più adatti al proprio sito.
   
-![Diagramma con molti criteri e regole](media/IP-Example-3-doc-deletion-policies.png)
+![Diagramma con molti criteri e regole](../media/IP-Example-3-doc-deletion-policies.png)
   
 ## <a name="create-a-document-deletion-policy"></a>Creare un criterio di eliminazione dei documenti
 
@@ -114,7 +114,7 @@ Inoltre, i criteri e le regole vengono creati in base a una raccolta di siti spe
     
 2. Scegliere i **criteri di eliminazione**.
     
-    ![Opzione Elimina criteri](media/IP-Deletion-Policies-option.png)
+    ![Opzione Elimina criteri](../media/IP-Deletion-Policies-option.png)
   
 3. Scegli **nuovo elemento**.
     
@@ -132,7 +132,7 @@ Inoltre, i criteri e le regole vengono creati in base a una raccolta di siti spe
     
   - Scegli se la regola è una regola predefinita. La prima regola creata viene automaticamente impostata come la regola predefinita. Una regola predefinita viene automaticamente applicata a tutte le librerie nei siti che usano il criterio.
     
-![Pagina Nuova regola di eliminazione](media/IP-New-deletion-rule.png)
+![Pagina Nuova regola di eliminazione](../media/IP-New-deletion-rule.png)
   
 7. Fare clic su **Salva**.
     
@@ -143,7 +143,7 @@ Inoltre, i criteri e le regole vengono creati in base a una raccolta di siti spe
     > [!NOTE]
     > Se si elimina una regola e il criterio non contiene una regola predefinita, non verrà applicata alcuna regola per tale criterio, in altre parole, non verranno eliminati documenti. 
   
-![Messaggio di conferma dell'eliminazione di una regola da un criterio](media/IP-Remove-rule-from-policy-message.png)
+![Messaggio di conferma dell'eliminazione di una regola da un criterio](../media/IP-Remove-rule-from-policy-message.png)
   
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection-template"></a>Assegnare il criterio di eliminazione dei documenti a un modello di raccolta di siti
 
@@ -155,7 +155,7 @@ Assegnando un criterio a un modello di raccolta di siti, puoi rendere disponibil
     
 2. Scegli **Assegnazioni dei criteri per i modelli**.
     
-    ![Opzione Assegnazioni criteri per modelli](media/IP-Policy-Assignments-for-Templates-option.png)
+    ![Opzione Assegnazioni criteri per modelli](../media/IP-Policy-Assignments-for-Templates-option.png)
   
 3. Scegli **nuovo elemento**.
     
@@ -168,7 +168,7 @@ Assegnando un criterio a un modello di raccolta di siti, puoi rendere disponibil
     > [!NOTE]
     > Quando assegni un criterio a un modello di raccolta di siti, tale criterio sarà disponibile sia per le raccolte di siti esistenti create dal modello, sia per quelle che verranno create in futuro. 
   
-![Pagina di scelta di un modello con opzione OneDrive](media/IP-Choose-a-template.png)
+![Pagina di scelta di un modello con opzione OneDrive](../media/IP-Choose-a-template.png)
   
 5. Fare clic su **Salva**.
     
@@ -177,7 +177,7 @@ Assegnando un criterio a un modello di raccolta di siti, puoi rendere disponibil
   
 6. Scegli **Gestisci criteri assegnati**, seleziona i criteri che vuoi assegnati, quindi scegli se un criterio deve essere contrassegnato come predefinito. Quando configuri un criterio predefinito, tutti i siti in cui è assegnato il criterio hanno automaticamente il criterio attivo senza che il proprietario del sito debba fare nulla.
     
-    ![Pagina di aggiunta e gestione criteri](media/IP-Add-and-manage-policies-page.png)
+    ![Pagina di aggiunta e gestione criteri](../media/IP-Add-and-manage-policies-page.png)
   
 7. Fare clic su **Salva**.
     
@@ -197,7 +197,7 @@ Assegnando un criterio a una raccolta di siti specifica, rendi disponibile il cr
     
 2. Scegli **Assegnazioni dei criteri per le raccolte di siti**.
     
-    ![Opzione Assegnazioni criteri per raccolte di siti](media/IP-Policy-Assignments-for-Site-Collections-option.png)
+    ![Opzione Assegnazioni criteri per raccolte di siti](../media/IP-Policy-Assignments-for-Site-Collections-option.png)
   
 3. Scegli **nuovo elemento**.
     
@@ -206,11 +206,11 @@ Assegnando un criterio a una raccolta di siti specifica, rendi disponibile il cr
     > [!NOTE]
     > A ogni raccolta di siti può essere assegnato solo un set di criteri. Se viene visualizzato un messaggio di errore che indica che la raccolta siti è già stata assegnata ai criteri, scegliere **Annulla** \> **assegna a raccolta siti** e selezionare una raccolta siti per visualizzare e gestire il set di criteri già assegnati. 
   
-![Pagina di scelta raccolta di siti](media/IP-Choose-a-site-collection-page.png)
+![Pagina di scelta raccolta di siti](../media/IP-Choose-a-site-collection-page.png)
   
 5. Scegli **Gestisci criteri assegnati**, seleziona i criteri che vuoi assegnati, quindi scegli se un criterio deve essere contrassegnato come predefinito. Quando configuri un criterio predefinito, tutti i siti in cui è assegnato il criterio hanno automaticamente il criterio attivo senza che il proprietario del sito debba fare nulla.
     
-    ![Pagina di aggiunta e gestione criteri](media/IP-Add-and-manage-policies-page.png)
+    ![Pagina di aggiunta e gestione criteri](../media/IP-Add-and-manage-policies-page.png)
   
 6. Fare clic su **Salva**.
     
@@ -230,7 +230,7 @@ Quando elimini un'assegnazione, i criteri assegnati non verranno più applicati 
     
 3. Selezionare l'elemento di assegnazione e fare clic su **Elimina elemento**.
     
-    ![Comando Elimina elemento per assegnazione criterio](media/IP-Delete-policy-assignment.png)
+    ![Comando Elimina elemento per assegnazione criterio](../media/IP-Delete-policy-assignment.png)
   
 ## <a name="delete-a-policy"></a>Eliminare un criterio
 
@@ -240,17 +240,17 @@ Non è possibile eliminare un criterio in uso. Prima di poter eliminare un crite
     
 2. Scegliere * * criteri di eliminazione * *.
     
-    ![Opzione Elimina criteri](media/IP-Deletion-Policies-option.png)
+    ![Opzione Elimina criteri](../media/IP-Deletion-Policies-option.png)
   
 3. Seleziona il criterio.
     
 4. Nella scheda \> **** \> elementi della barra multifunzione **rimuovere i criteri**.
     
-    ![Pulsante Rimuovi criterio sulla barra multifunzione](media/IP-Remove-Policy-button-on-Ribbon.png)
+    ![Pulsante Rimuovi criterio sulla barra multifunzione](../media/IP-Remove-Policy-button-on-Ribbon.png)
   
 5. Se il criterio è in uso, verrà chiesto se si desidera rimuovere il criterio da tutte le raccolte siti in cui viene utilizzato. Se si è sicuri, scegliere **OK**.
     
-    ![Messaggio di conferma eliminazione criterio](media/IP-Delete-policy-confirmation.png)
+    ![Messaggio di conferma eliminazione criterio](../media/IP-Delete-policy-confirmation.png)
   
 ## <a name="see-also"></a>Vedere anche
 

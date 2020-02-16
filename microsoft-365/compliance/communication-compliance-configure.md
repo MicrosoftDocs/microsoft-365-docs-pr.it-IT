@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 82ee16e84bc20b88e577cfd3e8b8187059536469
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 1c53eded5e50d480cdce2ccbcb61f732bc899041
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784693"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078779"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurare la conformità delle comunicazioni in Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "41784693"
 
 Utilizzare i criteri di conformità della comunicazione per acquisire le comunicazioni dei dipendenti per l'esame da revisori interni o esterni. Per ulteriori informazioni su come i criteri di conformità della comunicazione consentono di monitorare le comunicazioni nell'organizzazione, vedere [Communication Compliance Policies in Microsoft 365](communication-compliance.md).
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario confermare la sottoscrizione Microsoft 365. Gli utenti inclusi nei criteri di conformità della comunicazione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato o essere inclusi in un abbonamento a Microsoft 365 E5.
 
@@ -59,7 +59,7 @@ Per rendere la **conformità di comunicazione** disponibile come opzione di menu
 
 5. Selezionare **Scegli ruoli** e quindi **Aggiungi**. Selezionare la casella di controllo per l' **amministratore revisione di supervisione**, la **gestione dei casi**e la **Revisione**, quindi selezionare **Aggiungi** e **Chiudi**.  Select **Next**. 
 
-    ![Gruppi di ruoli necessari per la conformità della comunicazione](media/communication-compliance-role-groups.png)
+    ![Gruppi di ruoli necessari per la conformità della comunicazione](../media/communication-compliance-role-groups.png)
 
 6. Selezionare **Scegli membri** e quindi **Aggiungi**. Selezionare la casella di controllo per tutti gli utenti e i gruppi che si desidera creare criteri e gestire i messaggi con le corrispondenze di criteri, quindi fare clic su **Aggiungi** e **Chiudi**.  Select **Next**. 
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Informazioni su come eseguire la modalità di analisi Express di Office 365 Advanced eDiscovery
-ms.openlocfilehash: 41de4b0c4e4e57501fb2a0774c556e2556c3d496
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 49e8f04b893f0a15563cf091c728352a97c4141f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597313"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080739"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Utilizzare l'analisi rapida in Office 365 Advanced eDiscovery
 
@@ -36,7 +36,7 @@ ms.locfileid: "41597313"
 
 1. Nella scheda **Express Analysis** (1) selezionare un contenitore per abilitare i pulsanti * * Express Analysis * * (2) e **Advanced Settings** . 
     
-    ![Schermata della pagina di analisi rapida](media/60009974-5d1f-4971-8ebe-e5ec74e7fd2a.jpg)
+    ![Schermata della pagina di analisi rapida](../media/60009974-5d1f-4971-8ebe-e5ec74e7fd2a.jpg)
   
 2. In **Analyze Parameters**:
     
@@ -62,7 +62,7 @@ ms.locfileid: "41597313"
     
     Nella pagina **stato attività** è possibile espandere le schede **Process**, **Analyze** and **Export** per visualizzare i dettagli relativi all'esecuzione espressa. 
     
-    ![Schermata della pagina di stato attività di analisi avanzata di eDiscovery Express](media/bf30ab02-9828-4a6d-a485-0babc2c49ae5.jpg)
+    ![Schermata della pagina di stato attività di analisi avanzata di eDiscovery Express](../media/bf30ab02-9828-4a6d-a485-0babc2c49ae5.jpg)
   
 5. Scegliere la pagina **Riepilogo analisi Express** per elencare informazioni dettagliate sull'esecuzione. 
     
@@ -86,7 +86,7 @@ Facoltativamente, è possibile impostare **Impostazioni avanzate** per modificar
     
     Ad esempio, se la parola suggerita è "computer" e si specifica "2" come "numero massimo di temi", Advanced eDiscovery proverà a generare due temi correlati alla parola "computer". I due temi potrebbero essere, ad esempio, "software per computer" e "hardware del computer".
     
-    ![Aggiungi tema suggerito](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
+    ![Aggiungi tema suggerito](../media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
   - **Modalità** Nell'elenco a discesa selezionare un'opzione **temi** : 
     
@@ -104,18 +104,18 @@ Facoltativamente, è possibile impostare **Impostazioni avanzate** per modificar
     
   - Per esportare i risultati per i nuovi file aggiunti a un caso esistente, continuare con il batch corrente. Per creare una sessione nel batch, selezionare lo stesso numero di batch e fare clic su **Crea sessione di esportazione** è possibile utilizzare questa opzione per esportare gli stessi parametri del batch precedente, in modo incrementale. 
     
-  - Per esportare in un nuovo batch, fare **** ![clic su Aggiungi](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icona e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
+  - Per esportare in un nuovo batch, fare **** ![clic su Aggiungi](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icona e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
     
-  - Per modificare un nome o una descrizione in batch, selezionare il nome in **batch di esportazione**, fare](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic su **modifica** ![icona modifica e quindi modificare i campi.
+  - Per modificare un nome o una descrizione in batch, selezionare il nome in **batch di esportazione**, fare](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic su **modifica** ![icona modifica e quindi modificare i campi.
     
     > [!NOTE]
     > Dopo aver eseguito le sessioni per un batch di esportazione, non è possibile eliminarle. Inoltre, solo alcuni parametri possono essere modificati dopo l'esecuzione della prima sessione. 
   
-  - Per creare un batch di esportazione duplicato, scegliere **Duplica esportazione batch** ![creare un'icona](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) del batch di esportazione duplicata e immettere un nome e una descrizione per il batch duplicato nel pannello. 
+  - Per creare un batch di esportazione duplicato, scegliere **Duplica esportazione batch** ![creare un'icona](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) del batch di esportazione duplicata e immettere un nome e una descrizione per il batch duplicato nel pannello. 
     
-  - Per eliminare un batch di esportazione, scegliere **Delete** ![Delete an export batch](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)Icon.
+  - Per eliminare un batch di esportazione, scegliere **Delete** ![Delete an export batch](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)Icon.
     
-  - Per visualizzare la cronologia di un batch, fare clic su cronologia **batch** ![Visualizza](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)cronologia.
+  - Per visualizzare la cronologia di un batch, fare clic su cronologia **batch** ![Visualizza](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)cronologia.
     
 2. In define p **opulation:** selezionare **Includi solo i file sopra il Punteggio di rilevanza** e/o il **batch di esportazione** se si desidera ottimizzare le impostazioni per il batch di esportazione. Se si seleziona **Includi solo i file sopra il Punteggio di rilevanza**, il **problema** è abilitato e se il Punteggio di pertinenza del file è superiore al Punteggio di taglio del problema selezionato, il file viene esportato. Il file verrà esportato a meno che non sia stato escluso dal filtro **per la revisione** . Se si seleziona **affina esportazione batch**, i pulsanti di opzione **deduplica** e **Filtra in base a' per la revisione '** sono abilitati. Se si sceglie **deduplicazione**, i file duplicati verranno filtrati in base al criterio definito: [livello case (impostazione predefinita): da ogni set di file duplicati nell'intero caso, tutti tranne un file verranno deselezionati. Livello di custode: da ogni serie di file duplicati dello stesso custode, tutti tranne un file verranno deduplicati. Un record di tutti i file duplicati è disponibile nell'output di esportazione. Se si sceglie **Filtra per campo ' per la revisione '** , selezionare **modifica in metadati** per immettere le impostazioni del campo **' per la revisione '**. Selezionare **Includi file di input**per includere i file di origine nel contenuto del pacchetto. È possibile cancellare questa opzione per velocizzare il processo di esportazione. Si noti che i file nativi verranno esportati in tutti i casi.
     

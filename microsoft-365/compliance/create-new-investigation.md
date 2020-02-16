@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ef84380e17757f96bdf66307595c92d85a335930
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 007a7517cb0ea3c810d667cbfa88c0da1755b0d8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596163"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077469"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>Creare una nuova indagine in indagini sui dati (anteprima)
 
@@ -49,4 +49,4 @@ ms.locfileid: "41596163"
 
     Viene visualizzata la scheda **Home** per l'indagine. Ad esempio, di seguito è riportato un nuovo studio denominato *Critical: Tax Document e Finance Data dispersione*.
 
-    ![La scheda Home per una nuova indagine in indagini sui dati](media/NewDataInvestigations.png)
+    ![La scheda Home per una nuova indagine in indagini sui dati](../media/NewDataInvestigations.png)

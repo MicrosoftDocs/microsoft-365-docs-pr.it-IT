@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore nativo per importare i dati da una pagina società di LinkedIn a Microsoft 365. In questo modo è possibile archiviare i dati provenienti da origini dati di terze parti in Microsoft 365 per poter utilizzare le funzionalità di conformità, ad esempio i criteri di conservazione legale, ricerca contenuto e mantenimento, per gestire la conformità dei dati di terze parti dell'organizzazione.
-ms.openlocfilehash: c8e39577a6eaba3ad865b1617683c2baa9260759
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b42584efb0c99b97c14059ed7d860013f085262c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596023"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079635"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurare un connettore per archiviare i dati di LinkedIn
 
@@ -45,13 +45,13 @@ Dopo che i dati della pagina della società LinkedIn sono archiviati in una cass
 
    Viene visualizzata la pagina di accesso di LinkedIn.
 
-   ![Pagina di accesso di LinkedIn](media/LinkedInSigninPage.png)
+   ![Pagina di accesso di LinkedIn](../media/LinkedInSigninPage.png)
 
 5. Nella pagina di accesso a LinkedIn, immettere l'indirizzo di posta elettronica (o il numero di telefono) e la password per l'account LinkedIn associato alla pagina società che si desidera archiviare e quindi fare clic su **Accedi**.
 
    Viene visualizzata una pagina della procedura guidata con un elenco di tutte le pagine società di LinkedIn associate all'account a cui è stato effettuato l'accesso. È possibile configurare un connettore solo per una pagina dell'azienda. Se nell'organizzazione sono presenti più pagine dell'azienda LinkedIn, è necessario creare un connettore per ognuno di essi.
 
-   ![Viene visualizzata una pagina con un elenco delle pagine dell'azienda LinkedIn](media/LinkedInSelectCompanyPage.png)
+   ![Viene visualizzata una pagina con un elenco delle pagine dell'azienda LinkedIn](../media/LinkedInSelectCompanyPage.png)
 
 6. Selezionare la pagina società da cui si desidera archiviare gli elementi, quindi fare clic su **Avanti**.
 
@@ -67,6 +67,6 @@ Dopo aver creato il connettore, è possibile tornare alla pagina **connettori da
 
 Per visualizzare ulteriori dettagli, selezionare il connettore nell'elenco nella pagina **connettori dati** per la visualizzazione della pagina a comparsa. In **stato**, l'intervallo di date visualizzato indica il filtro di età che è stato selezionato quando è stato creato il connettore. 
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Gli elementi di LinkedIn vengono importati nella sottocartella LinkedIn nella posta in arrivo della cassetta postale di archiviazione in Microsoft 365. Vengono visualizzati come messaggi di posta elettronica.

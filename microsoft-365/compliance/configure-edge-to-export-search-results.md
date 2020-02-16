@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: È necessario abilitare il supporto ClickOnce per l'utilizzo di Microsoft Edge per esportare i risultati della ricerca dalla ricerca contenuto e eDiscovery nel centro sicurezza e conformità.
-ms.openlocfilehash: 896d39d81fa56b3a118b2bee450476e422ac3921
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db70b4cdbc57f519db3b6b962eb8aa43585ba335
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595733"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078577"
 ---
 # <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>Utilizzare lo strumento di esportazione di eDiscovery di Office 365 in Microsoft Edge
 
@@ -30,29 +30,29 @@ A seguito delle recenti modifiche apportate a Microsoft Edge, il supporto ClickO
 
 2. Se il valore esistente è impostato su **predefinito** o **disabilitato** nell'elenco a discesa, impostarlo su **abilitato**.
     
-   ![](media/ClickOnceimage1.png)
+   ![](../media/ClickOnceimage1.png)
 
 3. Scorrere verso il basso fino alla parte inferiore della finestra del browser e fare clic su **Riavvia** per riavviare Edge.
 
-   ![](media/ClickOnceimage2.png)
+   ![](../media/ClickOnceimage2.png)
 
 **Nota:** Le organizzazioni possono utilizzare criteri di gruppo per disabilitare il supporto ClickOnce. Per verificare se è presente un criterio di organizzazione per il supporto di ClickOnce, passare a **Edge://Policy**. Nella schermata seguente viene mostrato che ClickOnce è abilitata all'interno dell'intera organizzazione. Se il valore di questo criterio è impostato su **false**, sarà necessario contattare un amministratore dell'organizzazione.
 
-![](media/ClickOnceimage3.png)
+![](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-office-365-ediscovery-export-tool"></a>Installare ed eseguire lo strumento di esportazione di eDiscovery di Office 365
 
 1. Fare clic su **Scarica risultati** nella pagina a comparsa di un'esportazione in ricerca contenuto o in un caso di eDiscovery.
 
-   ![Fare clic su Scarica risultati nella pagina a comparsa per scaricare i risultati della ricerca](media/ClickOnceExport1.png)
+   ![Fare clic su Scarica risultati nella pagina a comparsa per scaricare i risultati della ricerca](../media/ClickOnceExport1.png)
 
 2. Verrà visualizzata la richiesta di conferma per l'avvio dello strumento, fare clic su **Apri**.
 
-   ![Fare clic su Apri per avviare lo strumento di esportazione di eDiscovery](media/ClickOnceimage4.png)
+   ![Fare clic su Apri per avviare lo strumento di esportazione di eDiscovery](../media/ClickOnceimage4.png)
 
    Se lo strumento di esportazione di Microsoft Office 365 eDiscovery non è installato, verrà visualizzato un avviso di sicurezza, 
 
-   ![Fare clic su Installa per installare lo strumento di esportazione di eDiscovery](media/ClickOnceimage5.png)
+   ![Fare clic su Installa per installare lo strumento di esportazione di eDiscovery](../media/ClickOnceimage5.png)
 
 3. Fare clic su **Installa**. Dopo l'installazione, lo strumento di esportazione verrà avviato automaticamente.
 

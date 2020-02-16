@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come effettuare l'accesso, configurare le autorizzazioni e comprendere il dashboard per il Punteggio di conformità di Microsoft, che semplifica e automatizza le valutazioni dei rischi.
-ms.openlocfilehash: a97fa1c0598fcab1660d71581fed2be8dafe8911
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8233fb3174d822e4f71115cab2a1a174c1749810
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595753"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078613"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Configurazione del Punteggio di conformità Microsoft (anteprima)
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 L'amministratore globale di Microsoft 365 per l'organizzazione sarà probabilmente il primo utente ad accedere al Punteggio di conformità. Si consiglia di accedere all'amministratore globale e di impostare le autorizzazioni utente come indicato di seguito quando si visita il Punteggio di conformità per la prima volta.
 
@@ -102,7 +102,7 @@ Per ulteriori informazioni, vedere [Managing Secure Score Updates](compliance-ma
 
 Il dashboard del Punteggio di conformità è stato creato per fornire una visualizzazione a colpo d'occhio della posizione di conformità corrente.
 
-![Punteggio di conformità-dashboard](media/compliance-score-dashboard.png "Dashboard del Punteggio di conformità")
+![Punteggio di conformità-dashboard](../media/compliance-score-dashboard.png "Dashboard del Punteggio di conformità")
 
 ### <a name="overall-compliance-score"></a>Punteggio di conformità globale
 

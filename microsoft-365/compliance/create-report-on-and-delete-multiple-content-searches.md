@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Informazioni su come automatizzare le attività di ricerca contenuto come la creazione di ricerche e l'esecuzione di report tramite gli script di PowerShell nel centro sicurezza & compliance in Office 365.
-ms.openlocfilehash: 6c92d9dab093b802acc518aebb96ddf83cf54ea5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 915ea910eebba8f6f39ceb41d9475769a6403729
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595573"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077206"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Creare, analizzare ed eliminare più ricerche di contenuto
 
  Creare rapidamente e segnalare le ricerche di individuazione è spesso un passaggio importante in eDiscovery e nelle indagini quando si cerca di conoscere i dati sottostanti e la ricchezza e la qualità delle ricerche. Per eseguire questa operazione, la sicurezza & Compliance Center PowerShell offre un set di cmdlet per automatizzare le attività di ricerca del contenuto in termini di tempo. Questi script consentono di creare una serie di ricerche in modo semplice e rapido e quindi di eseguire i report dei risultati di ricerca stimati che consentono di determinare la quantità di dati in questione. È inoltre possibile utilizzare gli script per creare diverse versioni delle ricerche per confrontare i risultati prodotti da ognuno di essi. Questi script consentono di identificare e abbattere i dati in modo rapido ed efficiente. 
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per eseguire gli script descritti in questo argomento, è necessario essere membri del gruppo di ruoli eDiscovery Manager nel centro sicurezza & Compliance. 
     
@@ -191,7 +191,7 @@ Per eseguire lo script:
     
     Nello script viene visualizzato lo stato di avanzamento della creazione e dell'esecuzione delle ricerche. Al termine dell'esecuzione dello script, viene restituito il prompt. 
     
-    ![Output di esempio dall’esecuzione dello script per creare ricerche di conformità multiple](media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+    ![Output di esempio dall’esecuzione dello script per creare ricerche di conformità multiple](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
   
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Passaggio 4: eseguire lo script per segnalare le stime di ricerca
 
@@ -266,7 +266,7 @@ Dopo aver creato le ricerche, il passaggio successivo consiste nell'eseguire uno
     
     Nello script viene visualizzato lo stato di avanzamento della creazione e dell'esecuzione delle ricerche. Al termine dello script, viene visualizzato il report. 
     
-    ![Eseguire il report di ricerca per visualizzare le stime per il gruppo di ricerca](media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+    ![Eseguire il report di ricerca per visualizzare le stime per il gruppo di ricerca](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
   
 > [!NOTE]
 > Se la stessa cassetta postale o sito è specificato come percorso di contenuto in più di una ricerca in un gruppo di ricerca, la stima complessiva dei risultati nel rapporto (sia per il numero di elementi che per la dimensione totale) potrebbe includere i risultati per gli stessi elementi. Ciò è dovuto al fatto che lo stesso messaggio di posta elettronica o documento verrà conteggiato più di una volta se corrisponde alla query per ricerche diverse nel gruppo di ricerca. 
@@ -301,4 +301,4 @@ Poiché potrebbe essere la creazione di un sacco di ricerche, questo ultimo scri
     
     Nello script viene visualizzato il nome di ogni ricerca che viene eliminata.
     
-    ![Eseguire lo script per eliminare le ricerche nel gruppo di ricerca](media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+    ![Eseguire lo script per eliminare le ricerche nel gruppo di ricerca](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

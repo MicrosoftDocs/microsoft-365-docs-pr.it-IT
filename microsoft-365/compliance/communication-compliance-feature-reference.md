@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 02534cf9dcd342f0872e755aec622f8028b235f8
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 5861348bb7c447c878f7f203acfd39fdf4c0a5f8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784673"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078763"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -111,7 +111,7 @@ Per impostazione predefinita, la **direzione è** la condizione viene visualizza
 - In **uscita**: è possibile scegliere in **uscita** se si desidera esaminare le comunicazioni inviate **dalle** persone scelte per la supervisione.
 - **Internal**: è possibile scegliere **Internal** per esaminare le comunicazioni inviate **tra** le persone identificate nel criterio.
 
-### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
+### <a name="sensitive-information-types"></a>Tipi di informazioni riservate
 
 È possibile includere i tipi di informazioni riservate nell'ambito del criterio di conformità della comunicazione. I tipi di informazioni riservate sono tipi di dati predefiniti o personalizzati che consentono di identificare e proteggere i numeri di carta di credito, i numeri di conto corrente bancario, i numeri di passaporto e altro ancora. Nell'ambito del servizio di [prevenzione della perdita di dati (DLP)](data-loss-prevention-policies.md)di Office 365, la configurazione delle informazioni riservate può utilizzare modelli, prossimità dei caratteri, livelli di sicurezza e persino tipi di dati personalizzati per identificare e contrassegnare il contenuto che potrebbe essere sensibile. I tipi di informazioni riservate predefinite sono:
 
@@ -300,4 +300,4 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations Super
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 
-Per configurare la conformità di comunicazione per l'organizzazione Microsoft 365, vedere [Configure Communication Compliance for your microsoft 365 Organization (Preview)](communication-compliance-configure.md).
+Per configurare la conformità di comunicazione per l'organizzazione Microsoft 365, vedere [Configure Communication Compliance for your microsoft 365 Organization](communication-compliance-configure.md).

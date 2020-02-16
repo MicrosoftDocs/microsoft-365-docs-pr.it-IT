@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilizzare il pulsante Riprova per risolvere le ricerche di contenuto che presentano errori di posizione del contenuto.
-ms.openlocfilehash: ce88749a887fea57e977e210de1eda40268cb832
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6eb08c006f206e3ad7850d67e541f6fc3f496441
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601623"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081579"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Riprovare una ricerca contenuto per risolvere un errore del percorso del contenuto
 
@@ -46,7 +46,7 @@ Quando si esegue la ricerca di un numero elevato di cassette postali, la ricerca
 
 Il riavvio della ricerca spesso comporterà errori simili su server diversi. Invece di riavviare la ricerca, fare clic sul pulsante **Riprova** visualizzato nella parte superiore della pagina dei risultati di ricerca.
 
-![Fare clic sul pulsante Riprova per risolvere gli errori relativi alla posizione del contenuto](media/retrycontentsearch3.png)
+![Fare clic sul pulsante Riprova per risolvere gli errori relativi alla posizione del contenuto](../media/retrycontentsearch3.png)
 
 In questo modo, la ricerca verrà ritentata solo per le cassette postali che hanno avuto esito negativo. Quando si ritenta la ricerca, vengono mantenuti gli altri risultati restituiti correttamente.
 

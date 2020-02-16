@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: c0ac644f3435d81159156e175c01e1916b0aeaf3
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 75cf79e162c2e371821b4329fc1be949f0b3a81c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722027"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078818"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
 
@@ -74,7 +74,7 @@ Microsoft 365 include sei classificatori pronti all'uso:
 
 Questi vengono visualizzati nella visualizzazione classificazione dei**classificati** di **Microsoft 365 Compliance Center** > **Data Classification (Preview)** > con `Ready to use`lo stato di.
 
-![classificatori-pronto per l'uso-classificatori](media/classifiers-ready-to-use-classifiers.png)
+![classificatori-pronto per l'uso-classificatori](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
 > Si noti che la lingua offensiva, la molestia, la profanità e i classificatori di minacce funzionano solo con il testo ricercabile non sono esaustivi o completi.  Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare questi classificatori a sua discrezione. Anche se i classificatori possono assistere la propria organizzazione nel monitoraggio di un'offensiva e di altre lingue utilizzate, i classificatori non affrontano le conseguenze di tale lingua e non sono destinati a fornire il solo mezzo di monitoraggio o di risposta dell'organizzazione all'utilizzo di tale lingua. La propria organizzazione e non Microsoft o le sue affiliate resta responsabile di tutte le decisioni relative al monitoraggio, all'applicazione, al blocco, alla rimozione e alla conservazione di qualsiasi contenuto identificato da un classificatore preformato.
@@ -83,7 +83,7 @@ Questi vengono visualizzati nella visualizzazione classificazione dei**classific
 
 I classificatori pronti all'uso non devono essere addestrati, ma è necessario verificare che vengano identificati i tipi di contenuto a cui sono necessari prima di utilizzarli nelle soluzioni di conformità. Il testing di un classificatore preconfigurato segue questo flusso.
 
-![Processing Flow testing di un classificatore preconfigurato](media/classifier-pre-trained-classifier-flow.png)
+![Processing Flow testing di un classificatore preconfigurato](../media/classifier-pre-trained-classifier-flow.png)
 
 ### <a name="understanding-trainable-classifiers"></a>Informazioni sui classificatori addestrabili
 
@@ -96,7 +96,7 @@ Quando i classificatori pronti all'uso non soddisfano le proprie esigenze, è po
 
 La creazione e la pubblicazione di un classificatore addestrabile per l'utilizzo in soluzioni di conformità, ad esempio i criteri di conservazione e la supervisione della comunicazione, seguono questo flusso. Per ulteriori informazioni sulla creazione di un classificatore addestrabile, vedere [creazione di un classificatore addestrabile](classifier-creating-a-trainable-classifier.md).
 
-![classificatore addestrabile del flusso di processo](media/classifier-trainable-classifier-flow.png)
+![classificatore addestrabile del flusso di processo](../media/classifier-trainable-classifier-flow.png)
 
 ## <a name="see-also"></a>Vedere anche
 

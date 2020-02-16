@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 665ffe5fea6fa6996b405198524ef7dfb51e162f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c59b36e3594d653f188742890ea849e2595a648
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601743"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081374"
 ---
 # <a name="search-statistics"></a>Statistiche della ricerca
 
 Un modo efficace per convalidare i risultati della ricerca quando si verifica un problema di dati consiste nel visualizzare le statistiche sui risultati della ricerca per assicurarsi che siano allineate alle aspettative. Quando una ricerca è terminata, le seguenti statistiche di alto livello vengono visualizzate in **stato** nella pagina riquadro a comparsa dettagli ricerca:
 
-![Pagina di ricerca statisics nella pagina riquadro a comparsa dettagli ricerca](media/SearchDetailsFlyout.png)
+![Pagina di ricerca statisics nella pagina riquadro a comparsa dettagli ricerca](../media/SearchDetailsFlyout.png)
 
 - Il numero e le dimensioni stimati degli elementi corrispondenti ai criteri di ricerca.
 
@@ -37,7 +37,7 @@ Un modo efficace per convalidare i risultati della ricerca quando si verifica un
 
 Per visualizzare statistiche più dettagliate, fare clic su **statistiche** nella pagina del riquadro a comparsa dettagli ricerca. Nella pagina **statistiche di ricerca** è possibile visualizzare il riepilogo della ricerca, la posizione principale che conteneva gli elementi corrispondenti ai risultati della ricerca e le statistiche dettagliate sulla query di ricerca.
 
-![Elenco a discesa Statistiche di ricerca](media/SearchStatisticsDropDownList.png)
+![Elenco a discesa Statistiche di ricerca](../media/SearchStatisticsDropDownList.png)
 
 ## <a name="summary"></a>Riepilogo
 

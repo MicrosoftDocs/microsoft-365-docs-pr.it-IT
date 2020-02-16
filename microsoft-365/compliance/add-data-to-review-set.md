@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aggiungere i risultati di una ricerca associata a un caso di eDiscovery avanzato. Gli elementi vengono copiati dal percorso originale e copiati in una posizione di archiviazione di Azure fornita da Microsoft. Gli elementi vengono anche reindicizzati e Advanced eDiscovery eseguirà il riconoscimento ottico dei caratteri (OCR) sui file di immagine e caricherà il testo dell'immagine per la revisione e l'analisi.
-ms.openlocfilehash: 748de7f3cb3fec5a37cb205e0d480701b4cded2e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5e4eaa5e83bbca3a80abe0026f3880ce8d3c85c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594637"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080154"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Aggiungere i risultati della ricerca a un insieme da rivedere
 
@@ -37,11 +37,11 @@ Quando si aggiungono i risultati di una ricerca a un set di revisione (i set di 
 
 Per aggiungere dati a un set di revisione, fare clic su una ricerca nella scheda **ricerche** e quindi fare clic su **Aggiungi risultati al set di revisione** nella pagina a comparsa.
 
-![Aggiunta di dati a un set di Revisione](media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
+![Aggiunta di dati a un set di Revisione](../media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
 
 È possibile aggiungere a un set di revisione esistente o creare un nuovo set di revisione.  Se si aggiunge un nuovo set di revisione, specificare il nome e quindi fare clic su **Aggiungi**.
 
-![Selezionare un set di Revisione](media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
+![Selezionare un set di Revisione](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
 L'aggiunta di dati a un set di revisione è un processo a esecuzione prolungata. Questo processo include la raccolta di elementi dalle origini dati originali in Office 365 (ad esempio, da cassette postali e siti), la loro copia nel percorso di archiviazione di Azure (questo processo di copia è denominato anche *ingestione*) e quindi reindicizzare gli elementi. È possibile monitorare lo stato di avanzamento nella scheda **processi** o nella scheda **ricerche** monitorando lo stato nella colonna **set di dati aggiunti a revisione** . Dopo aver completato l'elaborazione del set di revisione, fare clic sulla scheda **Revisione set** nel caso, quindi fare clic sul set di riesame per avviare il processo di filtro, revisione, tagging ed esportazione dei dati nel set di revisione.
 

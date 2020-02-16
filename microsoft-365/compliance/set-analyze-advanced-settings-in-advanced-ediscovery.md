@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'Informazioni su come configurare le impostazioni avanzate, tra cui quasi duplicati, thread di posta elettronica e temi, per il processo di analisi in Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 2c2a104b834d8da9d0d10f93980b4f2cbb6294c8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f2f882f5c5b2bbaf3144d3979455387a4471280c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601513"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081269"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Impostare Analyze Advanced Settings in Office 365 Advanced eDiscovery
 
@@ -32,7 +32,7 @@ Advanced eDiscovery fornisce parametri avanzati predefiniti per l'analisi delle 
   
 1. Nella scheda **prepara \> l' \> installazione di ANALYZE** fare clic su **Impostazioni avanzate** (nella parte inferiore della pagina). Viene visualizzato il riquadro seguente. 
     
-    ![Impostazioni avanzate per l'analisi](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
+    ![Impostazioni avanzate per l'analisi](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
 2. Nei **parametri quasi duplicati e thread di posta elettronica**, selezionare i valori per i seguenti elementi in base alle esigenze:
     

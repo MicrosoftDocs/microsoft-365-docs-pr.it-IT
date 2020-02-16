@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilizzare parole chiave e condizioni per limitare l'ambito della ricerca durante la ricerca di dati con Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: 7a6d175016053cd963b03cae91ff43f9c4b3336c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c704b338600c715193829e442e1bd6ba7c780455
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596293"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079043"
 ---
 # <a name="build-search-queries"></a>Creare query di ricerca
 
 Quando si crea una query di ricerca, è possibile utilizzare parole chiave per individuare contenuti e condizioni specifici per limitare l'ambito della ricerca per restituire gli elementi più rilevanti per la propria indagine legale.
 
-![Utilizzare parole chiave e condizioni per limitare i risultati di una ricerca](media/SearchQueryBox.png)
+![Utilizzare parole chiave e condizioni per limitare i risultati di una ricerca](../media/SearchQueryBox.png)
 
 ## <a name="keyword-searches"></a>Ricerche di parole chiave
 
@@ -35,7 +35,7 @@ Digitare una query di parole chiave nella casella **Keywords** della query di ri
     
 In alternativa, è possibile selezionare la casella di controllo **Mostra elenco parole chiave** e digitare una parola chiave o una frase di parole chiave in ogni riga. Se si esegue questa operazione, le parole chiave in ogni riga sono connesse da un operatore logico, rappresentato come *c:s* nella sintassi della query di ricerca, che è simile alla funzionalità all'operatore **or** nella query di ricerca creata. Questo significa che gli elementi che contengono qualsiasi parola chiave in qualsiasi riga sono inclusi nei risultati della ricerca.
 
-![Utilizzare l'elenco di parole chiave per ottenere statistiche su ogni parola chiave nella query](media/KeywordListSearch.png)
+![Utilizzare l'elenco di parole chiave per ottenere statistiche su ogni parola chiave nella query](../media/KeywordListSearch.png)
 
 Perché usare l'elenco di parole chiave? È possibile ottenere statistiche che mostrano quanti elementi corrispondono a ciascuna parola chiave nell'elenco delle parole chiave. In questo modo è possibile identificare rapidamente le parole chiave più (e meno) effettive. È inoltre possibile utilizzare una frase parola chiave (racchiusa tra parentesi) in una riga dell'elenco parole chiave. Per ulteriori informazioni sulle statistiche di ricerca, vedere [Search Statistics](search-statistics.md).
 

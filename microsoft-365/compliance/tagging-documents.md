@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: be4c86a5df7e0964744f6b5d7551382916e7ed2d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cd622430df4a636a9529a4d10ddc90057548a810
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597413"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080978"
 ---
 # <a name="tag-documents-in-a-review-set"></a>Contrassegnare i documenti in un insieme da rivedere
 
@@ -47,11 +47,11 @@ Advanced eDiscovery offre due tipi di Tag:
 
 Oltre ai tipi di tag, è possibile utilizzare la struttura dei tag nell'organizzazione nel pannello Tag per rendere più intuitivi i documenti di tagging. I tag vengono raggruppati in base alle sezioni. Review set Search supporta la funzionalità di ricerca in base al tag e alla sezione Tag. Questo significa che è possibile creare una ricerca set di revisione per recuperare i documenti contrassegnati con un tag qualsiasi in una sezione.
 
-![Sezioni dei tag nel pannello Tag](media/Tagtypes.png)
+![Sezioni dei tag nel pannello Tag](../media/Tagtypes.png)
 
 I tag possono essere ulteriormente organizzati annidando questi all'interno di una sezione. Ad esempio, se si intende identificare e contrassegnare il contenuto con privilegi, è possibile utilizzare la nidificazione per specificare che un utente può contrassegnare un documento come "privilegiato" e selezionare il tipo di privilegio selezionando il tag nidificato appropriato.
 
-![Tag annidati all'interno di una sezione Tag](media/Nestingtags.png)
+![Tag annidati all'interno di una sezione Tag](../media/Nestingtags.png)
 
 ## <a name="applying-tags"></a>Applicazione di tag
 
@@ -61,7 +61,7 @@ Esistono diversi modi per applicare un tag al contenuto.
 
 Quando si visualizza un documento in un set di revisione, è possibile visualizzare i tag che possono essere utilizzati da una recensione facendo clic su **Pannello di codifica**.
 
-![Fare clic su pannello Tag per visualizzare il pannello Tag](media/Singledoctag.png)
+![Fare clic su pannello Tag per visualizzare il pannello Tag](../media/Singledoctag.png)
 
 Ciò consentirà di applicare i tag al documento visualizzato nel visualizzatore.
 
@@ -69,7 +69,7 @@ Ciò consentirà di applicare i tag al documento visualizzato nel visualizzatore
 
 Il tagging di massa può essere ottenuto selezionando più file nella griglia dei risultati e quindi utilizzando i tag del **riquadro di codifica** in modo analogo al tagging dei singoli documenti. Non è possibile eseguire un tagging in blocco selezionando due volte i tag; il primo clic applicherà il tag e la seconda selezione assicurerà che il tag sia deselezionato per tutti i file selezionati.
 
-![Schermata di una descrizione del telefono cellulare generata automaticamente](media/Bulktag.png)
+![Schermata di una descrizione del telefono cellulare generata automaticamente](../media/Bulktag.png)
 
 > [!NOTE]
 > Quando si esegue il tagging in blocco, nel riquadro di tagging viene visualizzato il numero di file contrassegnati per ogni tag nel pannello.
@@ -88,4 +88,4 @@ Ad esempio, ecco come visualizzare il pannello di **codifica** quando si utilizz
 
 3. Per contrassegnare tutti i documenti, selezionare tutti i documenti nel riquadro **famiglia** documenti, fare clic su **documenti di codice**e quindi scegliere i tag da applicare all'intera famiglia di documenti.
 
-![Schermata di una descrizione di social media post generata automaticamente](media/Relatedtag.png)
+![Schermata di una descrizione di social media post generata automaticamente](../media/Relatedtag.png)
