@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 4ae3b75ce13b783bc8a373202a0ae42bb14d7cfc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f06b2b895899973d071df384b53a090b766fd77f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598363"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082231"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -71,7 +71,7 @@ Quando si dispone di [Office 365 Advanced Threat Protection](office-365-atp.md),
     
 2. Nella barra di spostamento a sinistra, in **gestione minacce**, scegliere **collegamenti sicuri**per i ** \> criteri** .
     
-3. Nei **criteri che si applicano all'intera sezione organizzazione** selezionare **predefinita**e quindi fare clic su **modifica** (il pulsante modifica è simile a una matita).<br/>![Fare clic su modifica per modificare il criterio predefinito per la protezione dei collegamenti sicuri](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+3. Nei **criteri che si applicano all'intera sezione organizzazione** selezionare **predefinita**e quindi fare clic su **modifica** (il pulsante modifica è simile a una matita).<br/>![Fare clic su modifica per modificare il criterio predefinito per la protezione dei collegamenti sicuri](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
 4. Nella sezione **blocca gli URL seguenti** specificare uno o più URL che si desidera impedire agli utenti dell'organizzazione di visitare. Per ulteriori informazioni, vedere [configurare un elenco di URL bloccati personalizzato utilizzando collegamenti sicuri di ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
     
@@ -89,7 +89,7 @@ Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefini
     
 3. Scegliere **collegamenti attendibili**.
     
-4. Nella sezione **criteri che si applicano a destinatari specifici** scegliere **nuovo** (il nuovo pulsante è simile a un segno di addizione ( **+**)).<br/>![Scegliere nuovo per aggiungere un criterio per i collegamenti sicuri per i destinatari di posta elettronica specifici](../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. Nella sezione **criteri che si applicano a destinatari specifici** scegliere **nuovo** (il nuovo pulsante è simile a un segno di addizione ( **+**)).<br/>![Scegliere nuovo per aggiungere un criterio per i collegamenti sicuri per i destinatari di posta elettronica specifici](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 5. Specificare il nome, la descrizione e le impostazioni per il criterio.<br/>**Esempio:** Per impostare un criterio denominato "nessun clic diretto tramite" che non consenta agli utenti di un determinato gruppo dell'organizzazione di fare clic su un sito Web specifico senza protezione di collegamenti sicuri ATP, è possibile specificare le impostazioni consigliate seguenti: 
     
@@ -135,7 +135,7 @@ Le opzioni dei criteri predefinite si applicano a tutti gli utenti dell'organizz
 
 |Questa opzione  |Produce questo risultato  |
 |---------|---------|
-|**Disattivato** <br/> |Non analizza gli URL nei messaggi di posta elettronica.  <br/> Consente di definire una regola di eccezione, ad esempio una regola che non analizza gli URL nei messaggi di posta elettronica per uno specifico gruppo di destinatari.  <br/> |
+|**Off** <br/> |Non analizza gli URL nei messaggi di posta elettronica.  <br/> Consente di definire una regola di eccezione, ad esempio una regola che non analizza gli URL nei messaggi di posta elettronica per uno specifico gruppo di destinatari.  <br/> |
 |**Attivato** <br/> |Riscrive gli URL in modo che gli utenti vengano instradati tramite la protezione dei collegamenti sicuri ATP quando gli utenti fanno clic su URL nei messaggi di posta elettronica e attivano i collegamenti sicuri ATP all'interno di Outlook (C2R)  <br/> Verifica un URL quando si fa clic su un elenco di URL bloccati o dannosi e attiva una detonazione dell'URL in background in modo asincrono se l'URL non ha una reputazione valida.  <br/> |
 |**Applicazione dell'analisi degli URL in tempo reale per collegamenti e collegamenti sospetti che puntano a file** <br/> |Quando questa opzione è selezionata, vengono analizzati gli URL e i collegamenti sospetti che puntano al contenuto scaricabile.  <br/> |
 |**Attendere il completamento dell'analisi degli URL prima di recapitare il messaggio** <br/> |Quando si seleziona questa opzione, i messaggi che contengono gli URL da analizzare verranno mantenuti fino a quando gli URL avranno terminato l'analisi e verranno confermati come sicuri prima che i messaggi vengano recapitati.  <br/> |

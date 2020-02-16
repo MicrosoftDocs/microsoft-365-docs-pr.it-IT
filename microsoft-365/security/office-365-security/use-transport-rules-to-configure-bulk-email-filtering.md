@@ -15,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono scoprire come utilizzare le regole del flusso di posta in Exchange Online Protection per il filtro della posta elettronica in blocco.
-ms.openlocfilehash: 5188ce077ce15ab7ad5d03e4aa2c172db6a80c37
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 81b0f4cc58d712c3a1c1e09dab02d1c6f56cb69d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598043"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081820"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Utilizzare le regole del flusso di posta per configurare il filtro della posta elettronica in blocco in Exchange Online Protection
 
@@ -36,11 +36,11 @@ Se si desiderano ulteriori opzioni per filtrare i messaggi in blocco, è possibi
 
 1. Nell'interfaccia di amministrazione di Exchange accedere a **Flusso di posta** \> **Regole**.
 
-2. Fare **** ![clic su Aggiungi](../media/ITPro-EAC-AddIcon.gif) icona e quindi selezionare **Crea una nuova regola**.
+2. Fare **** ![clic su Aggiungi](../../media/ITPro-EAC-AddIcon.gif) icona e quindi selezionare **Crea una nuova regola**.
 
 3. Specificare un nome per la regola.
 
-4. Fare clic su **altre opzioni** ![icona](../media/ITPro-EAC-MoreOptionsIcon.png)altre opzioni. In **applica la regola se**, selezionare **l'** \> oggetto o il corpo o l'oggetto corpo **corrisponde a questi modelli di testo**.
+4. Fare clic su **altre opzioni** ![icona](../../media/ITPro-EAC-MoreOptionsIcon.png)altre opzioni. In **applica la regola se**, selezionare **l'** \> oggetto o il corpo o l'oggetto corpo **corrisponde a questi modelli di testo**.
 
 5. Nella finestra di dialogo **specifica parole o frasi** , aggiungere le seguenti espressioni regolari che si trovano di solito nei messaggi di posta elettronica in blocco, una per volta, e fare clic su **OK** al termine:
 
@@ -88,7 +88,7 @@ Se si desiderano ulteriori opzioni per filtrare i messaggi in blocco, è possibi
 
 1. Nell'interfaccia di amministrazione di Exchange, andare a **Flusso di posta** \> **Regole**.
 
-2. Fare **** ![clic su Aggiungi](../media/ITPro-EAC-AddIcon.gif) icona e quindi selezionare **Crea una nuova regola**.
+2. Fare **** ![clic su Aggiungi](../../media/ITPro-EAC-AddIcon.gif) icona e quindi selezionare **Crea una nuova regola**.
 
 3. Specificare un nome per la regola.
 

@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Informazioni su informatori di minacce, inclusi i nuovi informatori degni di nota, per consentire all'organizzazione di rimanere al di sopra dei problemi relativi alla sicurezza.
-ms.openlocfilehash: 75ade05f5512657a443f3c14c2745cc2cd3d78db
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 50566abfa7bec55fb42465132361971113453a06
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957361"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084477"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Inseguimenti di minacce-nuovi e degni di nota
 
@@ -34,11 +34,11 @@ Le funzionalità di [ricerca e risposta](office-365-ti.md) alle minacce di Offic
 
 I Tracker di minacce sono widget e visualizzazioni informativi che forniscono servizi di intelligence su diversi problemi di Cybersecurity che possono influire sulla società. Ad esempio, è possibile visualizzare le informazioni sull'andamento delle campagne antimalware utilizzando il monitoraggio delle minacce.
   
-![Esempio di monitoraggio di minacce che mostra le campagne antimalware](../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
+![Esempio di monitoraggio di minacce che mostra le campagne antimalware](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
   
 La maggior parte delle pagine del depistaggio include i numeri di tendenza che vengono aggiornati periodicamente, widget che consentono di comprendere quali sono i problemi più grandi o sono cresciuti di più e un collegamento rapido nella colonna **azioni** che consente di visualizzare le informazioni più dettagliate. 
   
-![Esempio di informazioni sulla campagna in Esplora risorse](../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
+![Esempio di informazioni sulla campagna in Esplora risorse](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
 I dispositivi di rilevamento sono solo alcune delle numerose funzionalità che si ottengono con [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Gli inseguitori di minacce includono [inseguitori di Noteworth](#noteworthy-trackers), inseguitori di [tendenza](#trending-trackers), [query registrate](#tracked-queries)e [query salvate](#saved-queries).
   
@@ -57,7 +57,7 @@ Gli incaricati in genere verranno pubblicati solo per un paio di settimane quand
 
 Gli inseguitori dei trend (in precedenza chiamati campagne) evidenziano le nuove minacce ricevute nella posta elettronica dell'organizzazione nella settimana passata.
   
-![Esempio di widget per le campagne antimalware in trend](../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![Esempio di widget per le campagne antimalware in trend](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
   
 Gli informatori di tendenza offrono un'idea delle nuove minacce che è necessario esaminare per garantire che l'ambiente aziendale più esteso sia preparato contro gli attacchi.
   
@@ -65,13 +65,13 @@ Gli informatori di tendenza offrono un'idea delle nuove minacce che è necessari
 
 Le query rilevate sfruttano le query salvate per valutare periodicamente l'attività di Office 365 nell'organizzazione. In questo modo si ottiene l'andamento degli eventi, con ulteriori risultati nei prossimi mesi. Le query rilevate vengono eseguite automaticamente, fornendo informazioni aggiornate senza dover ricordarsi di rieseguire le query.
   
-![Esempio di query registrate con una selezionata](../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
+![Esempio di query registrate con una selezionata](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
 ### <a name="saved-queries"></a>Query salvate
 
 Le query salvate vengono trovate anche nella sezione trackers. È possibile utilizzare le query salvate per archiviare le ricerche di Esplora risorse comuni che si desidera tornare a più rapidamente e più volte, senza dover ricreare ogni volta la ricerca.
   
-![Esempio di query salvate con una selezionata](../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
+![Esempio di query salvate con una selezionata](../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png)
   
 È sempre possibile salvare una query di rilevamento notevole o una qualsiasi delle query di Esplora risorse utilizzando il pulsante **Salva query** nella parte superiore della pagina Esplora. Qualsiasi elemento salvato verrà visualizzato nell'elenco delle **query salvate** nella pagina di monitoraggio. 
   
@@ -81,13 +81,13 @@ Sia che si stia esaminando la posta elettronica, il contenuto o le attività di 
   
 Tenere presente che è sempre possibile fornire commenti e suggerimenti su questo o su altre funzionalità di sicurezza di Office 365 facendo clic sul pulsante **commenti e suggerimenti** nell'angolo in basso a destra della [Panoramica &amp; del Centro sicurezza e conformità di Office 365](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Office 365 Security &amp; Compliance Center](../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Inseguimenti e protezione avanzata dalle minacce di Office 365
 
 Con la nostra minaccia degna di nota inaugurale, vengono evidenziate le minacce di malware avanzate rilevate dagli [allegati sicuri di Office 365 ATP](atp-safe-attachments.md). Se si è un cliente di Office 365 Enterprise E5 e non si utilizza [office 365 Advanced Threat Protection](office-365-atp.md) (ATP), è necessario che sia incluso nell'abbonamento. ATP fornisce valore anche se si dispone di altri strumenti di sicurezza che filtrano il flusso di posta elettronica con i servizi di Office 365. Tuttavia, le funzionalità di protezione da posta indesiderata e di [office 365 ATP Safe](atp-safe-links.md) funzionano meglio quando la soluzione di sicurezza della posta elettronica principale è tramite Office 365. 
   
-![ATP nel centro sicurezza &amp; e conformità](../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![ATP nel centro sicurezza &amp; e conformità](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
 In questo mondo a rischio di minacce, l'esecuzione di solo scansioni antimalware tradizionali significa che non si è sufficientemente protetti dagli attacchi. Gli aggressori più sofisticati di oggi utilizzano gli strumenti comunemente disponibili per creare attacchi nuovi, offuscati o ritardati che non verranno riconosciuti dai motori antimalware tradizionali basati sulla firma. La funzionalità degli allegati sicuri ATP accetta gli allegati di posta elettronica e li detona in un ambiente virtuale per determinare se sono sicuri o dannosi. Questo processo di detonazione apre ogni file in un ambiente computer virtuale, quindi Guarda cosa succede dopo l'apertura del file. Che si tratti di un file PDF e compresso o di un documento di Office, il codice dannoso può essere nascosto in un file, attivando solo una volta che la vittima l'ha aperta nel computer. Facendo detonare e analizzando il file nel flusso di posta elettronica, le funzionalità ATP di Office 365 trovano tali minacce in base ai comportamenti, alla reputazione dei file e a una serie di regole euristiche.
   

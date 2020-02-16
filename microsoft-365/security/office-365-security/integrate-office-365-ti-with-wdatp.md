@@ -17,12 +17,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Integrazione di Office 365 Advanced Threat Protection con Microsoft Defender Advanced Threat Protection per visualizzare informazioni più dettagliate sulla gestione delle minacce.
-ms.openlocfilehash: fc2db4c1a3e5b32206ee91cae9f5adbeae4875d4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8096a950e66ed94d6e056f40b737d89d48cb811e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599133"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088761"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>Integrazione di Office 365 Advanced Threat Protection con Microsoft Defender Advanced Threat Protection
 
@@ -30,7 +30,7 @@ Se si è parte del team di sicurezza dell'organizzazione, è possibile integrare
   
 Nell'immagine seguente viene mostrata la scheda **dispositivi** che verrà visualizzata quando è abilitata l'integrazione ATP di Microsoft Defender:
   
-![Quando Microsoft Defender ATP è abilitato, è possibile visualizzare un elenco di computer con avvisi.](../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![Quando Microsoft Defender ATP è abilitato, è possibile visualizzare un elenco di computer con avvisi.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
 In questo esempio, è possibile vedere che i destinatari del messaggio di posta elettronica dispongono di quattro dispositivi e uno ha un avviso. Se si fa clic sul collegamento di un dispositivo, la pagina verrà aperta nel centro protezione Microsoft Defender.
   
@@ -48,11 +48,11 @@ L'integrazione di Office 365 ATP con Microsoft Defender ATP è configurata utili
   
 1. In qualità di amministratore globale di Office 365 o amministratore della sicurezza, [https://protection.office.com](https://protection.office.com) accedere a e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365.
     
-2. Scegliere \> **Esplora** **gestione minacce** .<br>![Explorer nel menu Gestione minacce](../media/ThreatMgmt-Explorer-nav.png)<br>
+2. Scegliere \> **Esplora** **gestione minacce** .<br>![Explorer nel menu Gestione minacce](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
 3. Nell'angolo in alto a destra dello schermo, scegliere **impostazioni di WDATP**.
     
-4. Nella finestra di dialogo connessione ATP di Windows Defender, abilitare la connessione a Windows ATP.<br>![Connessione ATP Microsoft Defender](../media/Explorer-WDATPConnection-dialog.png)<br>
+4. Nella finestra di dialogo connessione ATP di Windows Defender, abilitare la connessione a Windows ATP.<br>![Connessione ATP Microsoft Defender](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
 5. Abilitare la connessione nel centro protezione Microsoft Defender.
 

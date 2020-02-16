@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sull'Insight del dominio del mittente Fix nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: 1b154f4aecd5ada711b9177380d936cd888df425
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598823"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082570"
 ---
 # <a name="fix-sender-domain-insight"></a>Risolvere le informazioni dettagliate del dominio del mittente
 
@@ -36,15 +36,15 @@ I messaggi che non soddisfano i criteri non verranno attribuiti all'organizzazio
 
 La **correzione del dominio del mittente** consente di visualizzare la posta elettronica dall'ambiente locale che non soddisfa i criteri, consente di identificare le macchine e gli account utente potenzialmente compromessi nell'ambiente di posta elettronica locale e consente di eseguire azioni di correzione.
 
-![L'Insight del dominio del mittente Fix nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../media/sender-domain-insight-selected.png)
+![L'Insight del dominio del mittente Fix nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/sender-domain-insight-selected.png)
 
 Quando si fa clic su **Visualizza dettagli**, si viene indirizzati a un altro widget con maggiori dettagli, come illustrato nel diagramma seguente:
 
-![Il widget dettagli nell'Insight del dominio del mittente FIX](../media/sender-domain-view-details.png)
+![Il widget dettagli nell'Insight del dominio del mittente FIX](../../media/sender-domain-view-details.png)
 
 Verrà visualizzato il connettore in ingresso utilizzato per recapitare i messaggi a Office 365. È inoltre possibile fare clic su **Visualizza ID messaggio di esempio** per visualizzare i dettagli relativi ai messaggi inviati dall'ambiente di posta elettronica locale. Poiché questi messaggi sono stati rifiutati da Office 365, non è possibile utilizzare la traccia dei messaggi, ma gli ID del messaggio di esempio possono essere rintracciati nell'ambiente di posta elettronica locale.
 
-![Visualizzare gli ID dei messaggi di esempio nell'Insight del dominio del mittente FIX](../media/sender-domain-view-sample-message-ids.png)
+![Visualizzare gli ID dei messaggi di esempio nell'Insight del dominio del mittente FIX](../../media/sender-domain-view-sample-message-ids.png)
 
 ## <a name="see-also"></a>Vedere anche
 

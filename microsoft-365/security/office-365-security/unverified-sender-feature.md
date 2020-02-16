@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Per impedire ai messaggi di phishing di raggiungere la propria cassetta postale, Outlook.com e Outlook sul Web verificano che il mittente sia quello che dicono di essere e contrassegnare i messaggi sospetti come posta indesiderata.
-ms.openlocfilehash: a6ae80adb9ddae2c675e75d747dda27f09a404fb
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 513a45594dd41db56abe143ea6edca7074539d2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957251"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082006"
 ---
 # <a name="unverified-sender"></a>Mittente non verificato
 
@@ -40,7 +40,7 @@ Outlook Mostra gli indicatori quando il mittente di un messaggio non può essere
 
 Quando Office 365 non è in grado di verificare l'identità del mittente utilizzando tecniche di autenticazione della posta elettronica, nell'immagine del mittente viene visualizzato il messaggio "?".
 
-![Il messaggio non ha superato la verifica](../media/message-did-not-pass-verification.jpg)
+![Il messaggio non ha superato la verifica](../../media/message-did-not-pass-verification.jpg)
 
 Non tutti i messaggi che non sono in grado di eseguire l'autenticazione sono dannosi. Tuttavia, è necessario prestare particolare attenzione all'interazione con i messaggi che non eseguono l'autenticazione se non si riconosce il mittente. In alternativa, se si riconosce un mittente che in genere non ha un'?' nell'immagine del mittente, ma si inizia improvvisamente a vederlo, potrebbe essere un segno che il mittente viene falsificato.
 
@@ -50,7 +50,7 @@ Se si è un cliente di Office 365, è possibile gestire questa funzionalità tra
 
 - Nel centro sicurezza & conformità, gli amministratori globali o di sicurezza possono attivarla o disattivarla, tramite la protezione anti-spoofing in base ai criteri phishing. Inoltre, è possibile utilizzare il cmdlet **set-AntiPhishPolicy** in PowerShell di Exchange Online. Per informazioni dettagliate, vedere [protezione anti-phishing in Office 365](anti-phishing-protection.md) e [set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
 
-    ![Modifica dei mittenti non autenticati nell'interfaccia grafica.](../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+    ![Modifica dei mittenti non autenticati nell'interfaccia grafica.](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
 - Se un amministratore ha identificato un falso positivo e un mittente non deve ricevere il trattamento del mittente non verificato, è possibile eseguire una delle operazioni seguenti per aggiungere il mittente all'elenco Consenti spoofing di informazioni spoof:
 

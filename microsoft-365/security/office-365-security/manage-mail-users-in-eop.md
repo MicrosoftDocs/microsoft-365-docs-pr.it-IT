@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La definizione degli utenti di posta è una parte importante della gestione del servizio Exchange Online Protection (EOP).
-ms.openlocfilehash: 53d47452979c42273fd485fa89642eea881bb21a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bdbc3cd54901d53b4a7d01bcf513a9b9a0df1c01
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598983"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088585"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gestire utenti di posta in Exchange Online Protection
 
@@ -32,7 +32,7 @@ La definizione degli utenti di posta è una parte importante della gestione del 
 > [!NOTE]
 > È possibile aggiungere utenti nell'interfaccia di amministrazione di Microsoft 365, ma questi utenti non possono essere utilizzati come destinatari della posta.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per aprire l'interfaccia di amministrazione di Exchange, vedere interfaccia [di amministrazione di Exchange in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
 
@@ -108,7 +108,7 @@ In questa sezione vengono fornite informazioni sull'aggiunta e la gestione degli
 
 ### <a name="use-the-eac-to-edit-or-remove-a-mail-user"></a>Utilizzo dell'interfaccia di amministrazione di Exchange per modificare o rimuovere un utente di posta elettronica
 
-- Nell'interfaccia di amministrazione di Exchange accedere a **Destinatari** \> **Contatti**. Nell'elenco degli utenti, fare clic sull'utente che si desidera visualizzare o modificare, quindi selezionare **modifica** ![icona](../media/ITPro-EAC-EditIcon.gif) modifica per aggiornare le impostazioni utente in base alle esigenze. È possibile modificare il nome utente, l'alias o le informazioni di contatto e registrare le informazioni dettagliate sul ruolo dell'utente nell'organizzazione. È inoltre possibile selezionare un utente e quindi scegliere **Rimuovi** ![icona](../media/ITPro-EAC-RemoveIcon.gif) Rimuovi per eliminarlo.
+- Nell'interfaccia di amministrazione di Exchange accedere a **Destinatari** \> **Contatti**. Nell'elenco degli utenti, fare clic sull'utente che si desidera visualizzare o modificare, quindi selezionare **modifica** ![icona](../../media/ITPro-EAC-EditIcon.gif) modifica per aggiornare le impostazioni utente in base alle esigenze. È possibile modificare il nome utente, l'alias o le informazioni di contatto e registrare le informazioni dettagliate sul ruolo dell'utente nell'organizzazione. È inoltre possibile selezionare un utente e quindi scegliere **Rimuovi** ![icona](../../media/ITPro-EAC-RemoveIcon.gif) Rimuovi per eliminarlo.
 
 ## <a name="use-exchange-online-protection-powershell-to-manage-mail-users"></a>Utilizzare PowerShell di Exchange Online Protection per gestire gli utenti di posta elettronica
 

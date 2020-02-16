@@ -14,12 +14,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Se si vuole essere sicuri di ricevere la posta da un mittente specifico, poiché si considera attendibili i propri messaggi, è possibile modificare l'elenco Consenti in un criterio di filtro per la posta indesiderata.
-ms.openlocfilehash: 80bffdb1e673f4d22dc5d3ebc01732fcb587600f
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 727c0eec837627bdf7da05411f619f7705425fe7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957261"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083436"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Creare elenchi di mittenti attendibili in Office 365
 
@@ -63,12 +63,12 @@ L'azione sulla regola deve seguire questo modello:
 
 2. Aggiungere un X-header per indicare la regola. Nell'esempio riportato di seguito, è possibile aggiungere un'intestazione `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`semplice. Se nella regola sono presenti più domini, è possibile modificare il testo dell'intestazione in base alle proprie esigenze. **Quando un messaggio ignora il filtro a causa di una regola del flusso di posta, timbra SFV: SKN nell'intestazione X-Forefront-antispam-report** (se è presente**in un elenco indirizzi IP consentiti, anche IPV: Cal**). In questo modo verrà consentita la risoluzione dei problemi.
 
-![GUI per ignorare il filtro posta indesiderata.](../media/1-AllowList-SkipFilteringFromContoso.png)
+![GUI per ignorare il filtro posta indesiderata.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 > [!CAUTION]
 > Non configurare le regole del flusso di posta con solo *il dominio del mittente* come condizione per ignorare il filtro posta indesiderata. Questo metodo aumenta significativamente il rischio che gli spammer possano falsificare il dominio di invio (o rappresentare l'indirizzo di posta elettronica completo) ignorare tutti i filtri per la posta indesiderata, i controlli di autenticazione del mittente e il messaggio arriverà nella posta in arrivo di una persona.
 
-![Come impostare il livello SCL su meno-uno.](../media/2-AllowList-SetsSCLMinus1.png)
+![Come impostare il livello SCL su meno-uno.](../../media/2-AllowList-SetsSCLMinus1.png)
 
 Non aggiungere domini che possiedi o domini più diffusi (ad esempio `microsoft.com`,) per la regola del flusso di posta come condizione. Questo è considerato un rischio elevato, in quanto consente agli attori cattivi di inviare messaggi di posta elettronica che altrimenti verrebbero filtrati.
 

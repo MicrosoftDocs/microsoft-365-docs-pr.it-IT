@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: L'Interfaccia di amministrazione di Exchange (EAC) è la console di gestione basata sul Web per Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 3a00b6b259c94e1446b6d6dc49b0f5daa9178cbd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f38d36249387fce2ba3b4cac9e187c1cbcadd707
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599403"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083279"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Interfaccia di amministrazione di Exchange in Exchange Online Protection
 
@@ -41,7 +41,7 @@ You can also access the EAC sign in page directly via the following URL: `https:
 
 In questa sezione vengono illustrati gli elementi dell'interfaccia utente disponibili in EAC.
 
-![EOP-AdminCenter](../media/EOP-AdminCenter.png)
+![EOP-AdminCenter](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>Riquadro delle funzionalità
 
@@ -67,14 +67,14 @@ La selezione della maggior parte delle schede consente di visualizzare una barra
 
 |**Icona**|**Nome**|**Azione**|
 |:-----|:-----|:-----|
-|![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif)|Aggiungi, Nuovo|Utilizzare questa icona per creare un nuovo oggetto. Ad alcune icone è associata una freccia in giù sulla quale si può fare clic per mostrare ulteriori oggetti da creare.|
-|![Icona Modifica](../media/ITPro-EAC-EditIcon.gif)|Modifica|Utilizzare questa icona per modificare un oggetto.|
-|![Icona Elimina](../media/ITPro-EAC-DeleteIcon.gif)|Elimina|Utilizzare questa icona per eliminare un oggetto. Ad alcune icone Elimina è associata una freccia in giù su cui si può fare clic per mostrare altre opzioni.|
-|![icona Cerca](../media/ITPro-EAC-.gif)|Cerca|Utilizzare questa icona per aprire una casella di ricerca in cui digitare la frase di ricerca per l'oggetto che si desidera trovare.|
-|![Icona Aggiorna](../media/ITPro-EAC-RefreshIcon.gif)|Aggiorna|Utilizzare questa icona per aggiornare la visualizzazione elenco.|
-|![Icona Ulteriori opzioni](../media/ITPro-EAC-MoreOptionsIcon.gif)|Altre opzioni|Utilizzare questa icona per visualizzare le altre azioni da eseguire per gli oggetti della scheda. Ad esempio in **Destinatari \> Utenti**, facendo clic sull'icona, viene visualizzata l'opzione per eseguire una **Ricerca avanzata**.  |
-|![Icona Freccia in su](../media/ITPro-EAC-UpArrowIcon.gif)![Icona Freccia in giù](../media/ITPro-EAC-DownArrowIcon.gif)|Freccia su e freccia giù|Utilizzare queste icone per spostare la priorità di un oggetto verso l'alto o verso il basso.|
-|![Icona Rimuovi](../media/ITPro-EAC-RemoveIcon.gif)|Rimuovi|Questa icona consente di rimuovere gli oggetti da un elenco.|
+|![Icona Aggiungi](../../media/ITPro-EAC-AddIcon.gif)|Aggiungi, Nuovo|Utilizzare questa icona per creare un nuovo oggetto. Ad alcune icone è associata una freccia in giù sulla quale si può fare clic per mostrare ulteriori oggetti da creare.|
+|![Icona Modifica](../../media/ITPro-EAC-EditIcon.gif)|Modifica|Utilizzare questa icona per modificare un oggetto.|
+|![Icona Elimina](../../media/ITPro-EAC-DeleteIcon.gif)|Elimina|Utilizzare questa icona per eliminare un oggetto. Ad alcune icone Elimina è associata una freccia in giù su cui si può fare clic per mostrare altre opzioni.|
+|![icona Cerca](../../media/ITPro-EAC-.gif)|Cerca|Utilizzare questa icona per aprire una casella di ricerca in cui digitare la frase di ricerca per l'oggetto che si desidera trovare.|
+|![Icona Aggiorna](../../media/ITPro-EAC-RefreshIcon.gif)|Aggiorna|Utilizzare questa icona per aggiornare la visualizzazione elenco.|
+|![Icona Ulteriori opzioni](../../media/ITPro-EAC-MoreOptionsIcon.gif)|Altre opzioni|Utilizzare questa icona per visualizzare le altre azioni da eseguire per gli oggetti della scheda. Ad esempio in **Destinatari \> Utenti**, facendo clic sull'icona, viene visualizzata l'opzione per eseguire una **Ricerca avanzata**.  |
+|![Icona Freccia in su](../../media/ITPro-EAC-UpArrowIcon.gif)![Icona Freccia in giù](../../media/ITPro-EAC-DownArrowIcon.gif)|Freccia su e freccia giù|Utilizzare queste icone per spostare la priorità di un oggetto verso l'alto o verso il basso.|
+|![Icona Rimuovi](../../media/ITPro-EAC-RemoveIcon.gif)|Rimuovi|Questa icona consente di rimuovere gli oggetti da un elenco.|
 
 ### <a name="list-view"></a>Visualizzazione elenco
 
@@ -86,9 +86,9 @@ Quando si seleziona un oggetto dalla visualizzazione elenco, nel riquadro dei de
 
 ### <a name="me-tile-and-help"></a>Riquadro Io e Guida
 
-Il riquadro **Io** consente di disconnettersi da EAC e accedere come altro utente. Dal menu a discesa **Guida**![Icona Guida](../media/ITPro-EAC-HelpIcon.gif), è possibile eseguire le seguenti operazioni:
+Il riquadro **Io** consente di disconnettersi da EAC e accedere come altro utente. Dal menu a discesa **Guida**![Icona Guida](../../media/ITPro-EAC-HelpIcon.gif), è possibile eseguire le seguenti operazioni:
 
-1. **Guida**: fare ![clic su](../media/ITPro-EAC-HelpIcon.gif) icona Guida per visualizzare il contenuto della Guida in linea.
+1. **Guida**: fare ![clic su](../../media/ITPro-EAC-HelpIcon.gif) icona Guida per visualizzare il contenuto della Guida in linea.
 
 2. **Disattiva la guida del fumetto**: la Guida di bubbling Visualizza la supporto contestuale per i campi quando si crea o si modifica un oggetto. È possibile disabilitare la finestra della Guida o riattivarla se era stata disabilitata.
 

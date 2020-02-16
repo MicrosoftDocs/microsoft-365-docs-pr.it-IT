@@ -16,12 +16,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Per assicurarsi che la posta elettronica inviata da persone di cui si ha fiducia non sia bloccata, è possibile utilizzare i criteri di filtro delle connessioni per creare un elenco di indirizzi consentiti, noto anche come elenco dei mittenti attendibili, di indirizzo IP attendibile. È inoltre possibile creare un elenco di mittenti bloccati.
-ms.openlocfilehash: 06915527af68df6a858ca8ed97612ab40178be84
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db0d7acc6189f29b247c1dc4004311d2843d139b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599593"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086285"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurare i criteri di filtro delle connessioni
 
@@ -60,7 +60,7 @@ Creare un elenco indirizzi IP consentiti o un elenco indirizzi IP bloccati modif
 
 2. Fare clic sulla voce di menu **Filtro connessioni**, quindi creare gli elenchi desiderati: un elenco indirizzi IP consentiti, un elenco indirizzi IP bloccati o entrambi.
 
-   Per creare questi elenchi, fare clic su ![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif). Nella finestra di dialogo successiva, specificare l'indirizzo IP o l'intervallo di indirizzi IP, quindi fare clic su **ok**. Ripetere il processo per aggiungere indirizzi aggiuntivi. È anche possibile modificare o rimuovere gli indirizzi IP dopo averli aggiunti.
+   Per creare questi elenchi, fare clic su ![Icona Aggiungi](../../media/ITPro-EAC-AddIcon.gif). Nella finestra di dialogo successiva, specificare l'indirizzo IP o l'intervallo di indirizzi IP, quindi fare clic su **ok**. Ripetere il processo per aggiungere indirizzi aggiuntivi. È anche possibile modificare o rimuovere gli indirizzi IP dopo averli aggiunti.
 
    Specificare gli indirizzi IP IPV4 nel formato nnn. nnn. nnn. nnn dove nnn è un numero compreso tra 0 e 255. È possibile, inoltre, specificare gli intervalli CIDR (Classless Inter-Domain Routing) nel formato nnn.nnn.nnn.nnn/rr, dove rr è un numero da 24 a 32. Per specificare gli intervalli all'esterno dell'intervallo da 24 a 32, vedere la sezione successiva, [considerazioni aggiuntive quando si configurano gli elenchi di indirizzi IP consentiti](#additional-considerations-when-configuring-ip-allow-lists).
 
@@ -83,13 +83,13 @@ Per creare la regola del flusso di posta, eseguire la procedura seguente.
 
 1. Nell'interfaccia di amministrazione di Exchange, accedere a **Flusso di posta** \> **Regole**.
 
-2. Fare clic su ![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif) e selezionare **Creare una nuova regola**.
+2. Fare clic su ![Icona Aggiungi](../../media/ITPro-EAC-AddIcon.gif) e selezionare **Creare una nuova regola**.
 
 3. Assegnare un nome alla regola, quindi fare clic su **Altre opzioni**.
 
 4. In **Applica la regola se**, selezionare **Il mittente**, quindi scegliere **L'indirizzo IP è in tutti gli intervalli o corrisponde esattamente**.
 
-5. In **specificare gli indirizzi IP**, specificare l'intervallo di indirizzi IP, fare clic su](../media/ITPro-EAC-AddIcon.gif) **Aggiungi** ![icona, quindi fare clic su **OK**.
+5. In **specificare gli indirizzi IP**, specificare l'intervallo di indirizzi IP, fare clic su](../../media/ITPro-EAC-AddIcon.gif) **Aggiungi** ![icona, quindi fare clic su **OK**.
 
 6. Nella casella **Effettuare le seguenti operazioni**, impostare l'azione scegliendo **Modificare le proprietà dei messaggi**, quindi **imposta il livello di probabilità di posta indesiderata (SCL)**. Nella casella **specifica SCL**, selezionare **Ignora il filtro di protezione da posta indesiderata**, quindi fare clic su **ok**.
 
@@ -109,19 +109,19 @@ A tale scopo, eseguire la procedura seguente:
 
 1. Nell'interfaccia di amministrazione di Exchange, accedere a **Flusso di posta** \> **Regole**.
 
-2. Fare clic su ![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif) e selezionare **Creare una nuova regola**.
+2. Fare clic su ![Icona Aggiungi](../../media/ITPro-EAC-AddIcon.gif) e selezionare **Creare una nuova regola**.
 
 3. Assegnare un nome alla regola, quindi fare clic su **Altre opzioni**.
 
 4. In **Applica la regola se**, selezionare **Il mittente**, quindi scegliere **L'indirizzo IP è in tutti gli intervalli o corrisponde esattamente**.
 
-5. Nella casella **specificare gli indirizzi** IP specificare l'indirizzo IP o l'intervallo di indirizzi IP immesso nell'elenco IP consentiti, fare clic](../media/ITPro-EAC-AddIcon.gif)su **Aggiungi** ![icona e quindi fare clic su **OK**.
+5. Nella casella **specificare gli indirizzi** IP specificare l'indirizzo IP o l'intervallo di indirizzi IP immesso nell'elenco IP consentiti, fare clic](../../media/ITPro-EAC-AddIcon.gif)su **Aggiungi** ![icona e quindi fare clic su **OK**.
 
 6. In **effettuare le seguenti operazioni**, impostare l'azione scegliendo **modificare le proprietà del messaggio** e quindi **impostare il livello di probabilità di posta indesiderata (SCL)**. Nella casella **specifica SCL** , selezionare **0**, quindi fare clic su **OK**.
 
 7. Fare clic su **Aggiungi eccezione**e in **tranne se**, selezionare **il mittente** e scegliere **dominio**.
 
-8. Nella casella **specificare** il dominio, immettere il dominio per il quale si desidera ignorare il filtro di posta indesiderata, ad esempio **contosob.com**. Fare **** ![clic su Aggiungi](../media/ITPro-EAC-AddIcon.gif) icona per spostarlo nell'elenco delle frasi. Ripetere la procedura per aggiungere ulteriori domini come eccezioni e fare clic su **ok** una volta terminato.
+8. Nella casella **specificare** il dominio, immettere il dominio per il quale si desidera ignorare il filtro di posta indesiderata, ad esempio **contosob.com**. Fare **** ![clic su Aggiungi](../../media/ITPro-EAC-AddIcon.gif) icona per spostarlo nell'elenco delle frasi. Ripetere la procedura per aggiungere ulteriori domini come eccezioni e fare clic su **ok** una volta terminato.
 
 9. Se lo si desidera, è possibile effettuare le selezioni per controllare la regola, testare la regola, attivare la regola per un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarlo. [Procedure per le regole del flusso di posta in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) sono disponibili ulteriori informazioni su queste selezioni.
 
@@ -149,7 +149,7 @@ Questa è fondamentalmente la stessa procedura di creazione della regola dall' [
 
 ||
 |:-----|
-|![Piccola icona per LinkedIn Learning](../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nuovo utente di Office 365?** Sono disponibili esercitazioni video gratuite per **Office 365 admins and IT pros** grazie a LinkedIn Learning.|
+|![Piccola icona per LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nuovo utente di Office 365?** Sono disponibili esercitazioni video gratuite per **Office 365 admins and IT pros** grazie a LinkedIn Learning.|
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 

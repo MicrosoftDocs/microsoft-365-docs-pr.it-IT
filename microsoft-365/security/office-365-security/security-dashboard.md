@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilizzare il nuovo dashboard di sicurezza per esaminare lo stato di protezione dalle minacce di Office 365 e visualizzare e agire sugli avvisi di sicurezza.
-ms.openlocfilehash: 04c146a90cacccee831edd8a825bff0139963e16
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 85c616c717a85f9a6a47e63a48621a8703b487aa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598463"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088197"
 ---
 # <a name="security-dashboard"></a>Dashboard di sicurezza
 
@@ -44,7 +44,7 @@ Per visualizzare il dashboard di sicurezza, nel [centro &amp; sicurezza e confor
 
 Il widget di riepilogo per la gestione delle minacce fornisce una breve panoramica sul modo in cui l'organizzazione è stata protetta dalle minacce negli ultimi sette (7) giorni.
 
-![Dashboard di sicurezza-widget Riepilogo di gestione delle minacce](../media/SecDash-ThreatMgmtSummary.png)
+![Dashboard di sicurezza-widget Riepilogo di gestione delle minacce](../../media/SecDash-ThreatMgmtSummary.png)
 
 Le informazioni visualizzate nel Riepilogo di gestione delle minacce dipendono dal tipo di sottoscrizione incluso. Nella tabella seguente vengono descritte le informazioni incluse in Office 365 E3 e Office 365 E5.
 
@@ -59,7 +59,7 @@ Per visualizzare o accedere al widget di riepilogo di gestione delle minacce, è
 
 Il widget dello stato di protezione delle minacce Mostra l'efficacia della protezione dalle minacce con una visualizzazione dettagliata di phishing e malware. 
 
-![Widget sullo stato della protezione dalle minacce](../media/tpswidget.png)
+![Widget sullo stato della protezione dalle minacce](../../media/tpswidget.png)
 
 I dettagli dipendono dal fatto che la sottoscrizione di Office 365 includa [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) con o senza [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
@@ -75,7 +75,7 @@ Per visualizzare o accedere al widget dello stato di protezione dalle minacce, �
  
 Il widget globale settimanale per i rilevamenti di minacce indica quante minacce sono state rilevate nei messaggi di posta elettronica negli ultimi sette (7) giorni.
 
-![Widget globale settimanale per i rilevamenti di minacce](../media/globalweeklythreatdetections.png)
+![Widget globale settimanale per i rilevamenti di minacce](../../media/globalweeklythreatdetections.png)
 
 Le metriche vengono calcolate come descritto nella tabella seguente:
 
@@ -90,13 +90,13 @@ Le metriche vengono calcolate come descritto nella tabella seguente:
 
 I widget malware mostrano informazioni sui trend di malware e sui tipi di famiglia di malware negli ultimi sette (7) giorni.
 
-![Tendenze di malware e tipi di famiglia](../media/malwarewidgetatpe5.png)
+![Tendenze di malware e tipi di famiglia](../../media/malwarewidgetatpe5.png)
  
 ## <a name="insights"></a>Approfondimenti
 
 Insights non solo i problemi principali che è necessario esaminare, ma anche suggerimenti e azioni da prendere in considerazione. 
 
-![Intuizioni intelligenti](../media/smartinsights.png)
+![Intuizioni intelligenti](../../media/smartinsights.png)
 
 Ad esempio, si potrebbe vedere che i messaggi di posta elettronica di phishing vengono recapitati perché alcuni utenti hanno disabilitato le opzioni di posta indesiderata. Per ulteriori informazioni sul funzionamento delle intuizioni, vedere [Reports and Insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md).
   
@@ -104,14 +104,14 @@ Ad esempio, si potrebbe vedere che i messaggi di posta elettronica di phishing v
 
 Se l'abbonamento dell'organizzazione include [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), il dashboard di sicurezza ha una sezione che include l'analisi avanzata delle minacce e gli strumenti di risposta. Il team di sicurezza dell'organizzazione può utilizzare le informazioni contenute in questa sezione per comprendere le campagne emergenti, esaminare le minacce e gestire gli incidenti. 
   
-![Threat Intelligence aiuta a comprendere gli attacchi indirizzati alla propria organizzazione](../media/threatintelwidget.png)
+![Threat Intelligence aiuta a comprendere gli attacchi indirizzati alla propria organizzazione](../../media/threatintelwidget.png)
   
   
 ## <a name="trends"></a>Tendenze
 
 Nella parte inferiore del dashboard di sicurezza è presente una sezione **Trends** , in cui vengono riepilogate le tendenze del flusso di posta elettronica per l'organizzazione. I rapporti forniscono informazioni sui messaggi di posta elettronica categorizzati come posta indesiderata, malware, tentativi di phishing e una buona posta elettronica. Fare clic su un riquadro per visualizzare informazioni più dettagliate nel report. 
   
-![La sezione Trends riepiloga le tendenze del flusso di posta elettronica per l'organizzazione](../media/trends.png)
+![La sezione Trends riepiloga le tendenze del flusso di posta elettronica per l'organizzazione](../../media/trends.png)
   
 Inoltre, se la sottoscrizione di Office 365 dell'organizzazione include [office 365 Advanced Threat Protection Plan 2](office-365-ti.md), è disponibile un rapporto di **avvisi di gestione delle minacce recente** in questa sezione che consente al team di sicurezza di visualizzare e intervenire su avvisi di sicurezza ad alta priorità. 
 

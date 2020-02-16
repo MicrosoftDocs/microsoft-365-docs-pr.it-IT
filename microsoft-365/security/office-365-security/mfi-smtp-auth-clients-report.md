@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sul rapporto client auth SMTP nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: 7dee70de4000b23302348d964010801c8e097744
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e80ee36fd7e94cc4dc2791f71ae594f0182b4269
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598833"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082626"
 ---
 # <a name="smtp-auth-clients-report"></a>Report sui client di autenticazione SMTP
 
@@ -24,31 +24,31 @@ Il rapporto **client auth SMTP** evidenzia l'utilizzo del protocollo di invio cl
 
 Il widget visualizzato nel dashboard del flusso di posta indica il numero di utenti o di account di servizio che hanno utilizzato il protocollo di autenticazione SMTP negli ultimi 7 giorni.
 
-![Il rapporto client auth SMTP nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../media/smtp-auth-clients-report-selected.png)
+![Il rapporto client auth SMTP nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/smtp-auth-clients-report-selected.png)
 
 Se si fa clic sul widget, verrà aperto un riquadro a comparsa che fornisce una visualizzazione aggregata dell'utilizzo e dei volumi TLS per l'ultima settimana.
 
-![Il riquadro a comparsa nel rapporto client auth SMTP](../media/smtp-auth-clients-flyout.png)
+![Il riquadro a comparsa nel rapporto client auth SMTP](../../media/smtp-auth-clients-flyout.png)
 
 Quando si fa clic sul collegamento del **rapporto client auth SMTP** , vengono visualizzati due pivot di dati principali e due visualizzazioni di dati. I pivot di dati sono il **volume di invio** e l' **utilizzo di TLS**. Le visualizzazioni dati sono il grafico e la tabella details.
 
 La visualizzazione **volume di invio** Mostra il numero di messaggi che sono stati inviati utilizzando l'autenticazione SMTP per l'intervallo di tempo specificato. È possibile modificare l'intervallo facendo clic su **filtri**. Il grafico è organizzato dal dominio del mittente. È possibile visualizzare i dati separati per ogni dominio selezionando il dominio nell'elenco a discesa **Mostra dati per** .
 
-![Invio di volume nel rapporto client auth SMTP](../media/smtp-auth-clients-report-sending-volume.png)
+![Invio di volume nel rapporto client auth SMTP](../../media/smtp-auth-clients-report-sending-volume.png)
 
 È possibile visualizzare informazioni dettagliate sui mittenti e sui relativi conteggi dei messaggi facendo clic su **Visualizza tabella dettagli**. Per tornare al grafico, fare clic su **Visualizza report**.
 
-![Tabella dei dettagli per l'invio del volume nel rapporto client auth SMTP](../media/smtp-auth-clients-report-details-sending-volume.png)
+![Tabella dei dettagli per l'invio del volume nel rapporto client auth SMTP](../../media/smtp-auth-clients-report-details-sending-volume.png)
 
 Il pivot **utilizzo TLS** è importante a causa dell'imminente deprecazione di TLS 1.0 e TLS 1.1 in Office 365. Molti dispositivi e applicazioni legacy non saranno in grado di inviare messaggi di posta elettronica se sono in grado di utilizzare solo TLS 1.0 con l'autenticazione SMTP. In questo pivot è possibile identificare ed eseguire azioni su utenti e account di sistema che continuano a utilizzare versioni precedenti di TLS.
 
-![Utilizzo di TLS nel rapporto client auth SMTP](../media/smtp-auth-clients-report-tls-usage.png)
+![Utilizzo di TLS nel rapporto client auth SMTP](../../media/smtp-auth-clients-report-tls-usage.png)
 
 È possibile visualizzare informazioni dettagliate sui mittenti, sulle versioni di TLS che utilizzano con l'autenticazione SMTP e sui conteggi dei messaggi facendo clic su **Visualizza tabella dettagli**. Per tornare al grafico, fare clic su **Visualizza report**.
 
 È inoltre possibile scaricare una versione più dettagliata del rapporto facendo clic su Richiedi report.
 
-![Tabella dei dettagli per l'utilizzo di TLS nel rapporto client auth SMTP](../media/smtp-auth-clients-report-details-tls-usage.png)
+![Tabella dei dettagli per l'utilizzo di TLS nel rapporto client auth SMTP](../../media/smtp-auth-clients-report-details-tls-usage.png)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -11,26 +11,26 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Gli amministratori possono ottenere informazioni sul rapporto di mancato recapito nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: dbae97d572a6330e40308fa2016437c9329f93cc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2ea15237900abd3d73634a9aa744b59ef7bce5ee
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598863"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082683"
 ---
 # <a name="non-delivery-report"></a>Rapporto di mancato recapito
 
 Il **rapporto di mancato recapito** indica i codici di errore più rilevati nei rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo) per gli utenti dell'organizzazione. Questo rapporto è destinato a visualizzare i dettagli dei rapporti di mancato recapito, quindi è possibile risolvere i problemi.
 
-![Il rapporto di mancato recapito nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../media/non-delivery-report-selected.png)
+![Il rapporto di mancato recapito nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/non-delivery-report-selected.png)
 
 È possibile visualizzare informazioni su tutti i codici di mancato recapito o su un codice specifico facendo clic su **Mostra dati per**. È inoltre possibile fare clic su **Visualizza dettagli** per visualizzare una visualizzazione più dettagliata, come illustrato nel diagramma seguente:
 
-![Visualizzare la tabella dei dettagli nel rapporto di mancato recapito](../media/non-delivery-report-view-details-table.png)
+![Visualizzare la tabella dei dettagli nel rapporto di mancato recapito](../../media/non-delivery-report-view-details-table.png)
 
 Quando si seleziona una riga nella tabella per visualizzare i dettagli del rapporto di mancato recapito specifico, è possibile utilizzare le informazioni dettagliate per risolvere i problemi e intraprendere le azioni necessarie.
 
-![Selezionare una riga nella tabella Details del rapporto di mancato recapito](../media/non-delivery-report-details-table-select-row.png)
+![Selezionare una riga nella tabella Details del rapporto di mancato recapito](../../media/non-delivery-report-details-table-select-row.png)
 
 ## <a name="see-also"></a>Vedere anche
 

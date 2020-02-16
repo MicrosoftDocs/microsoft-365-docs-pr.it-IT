@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 975c6d8a00e3e1cd8c30b2d417c74cde39b8cd5a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ca4cf6033b843b92a2edceaae27f43d6eed8e7d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599803"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086835"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Indagine automatizzata e risposta (AIR) in Office 365
 
@@ -66,7 +66,7 @@ Per visualizzare gli avvisi, nel centro sicurezza & conformità scegliere **avvi
 
 Se l'organizzazione gestisce gli avvisi di sicurezza tramite un sistema di gestione degli avvisi, un sistema di gestione dei servizi o un sistema di gestione eventi e informazioni di sicurezza, è possibile inviare avvisi di Office 365 a tale sistema tramite notifica tramite posta elettronica o tramite l' [API di gestione di office 365 Management](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Le notifiche di avviso per l'analisi tramite posta elettronica o API includono collegamenti per accedere agli avvisi nel centro sicurezza & conformità, consentendo all'amministratore della sicurezza assegnato di passare rapidamente all'indagine.
 
-![Avvisi relativi al collegamento alle indagini](../media/air-alerts-page-details.png) 
+![Avvisi relativi al collegamento alle indagini](../../media/air-alerts-page-details.png) 
 
 ## <a name="security-playbooks"></a>Schemi di sicurezza
 
@@ -103,7 +103,7 @@ Ogni passaggio di alto livello include una serie di passaggi che vengono eseguit
 
 Nella pagina indagini automatizzate vengono visualizzate le indagini dell'organizzazione e gli stati correnti.
 
-![Pagina di ricerca principale per AIR](../media/air-maininvestigationpage.png) 
+![Pagina di ricerca principale per AIR](../../media/air-maininvestigationpage.png) 
   
 È possibile:
 - Passare direttamente a un'indagine (selezionare un **ID di ricerca**).
@@ -132,7 +132,7 @@ Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azion
 
 Quando si apre una specifica indagine, viene visualizzata la pagina del grafico delle indagini. In questa pagina vengono illustrate tutte le diverse entità: messaggi di posta elettronica, utenti (e loro attività) e dispositivi che sono stati analizzati automaticamente come parte dell'avviso che è stato attivato.
 
-![Pagina del grafico dell'indagine aerea](../media/air-investigationgraphpage.png)
+![Pagina del grafico dell'indagine aerea](../../media/air-investigationgraphpage.png)
 
 È possibile:
 - Ottenere una panoramica visiva dell'indagine corrente.
@@ -144,7 +144,7 @@ Quando si apre una specifica indagine, viene visualizzata la pagina del grafico 
 
 Nella scheda **avvisi** per un'indagine, è possibile visualizzare gli avvisi rilevanti per l'indagine. I dettagli includono l'avviso che ha attivato l'indagine e altri avvisi correlati, ad esempio l'accesso rischioso, le violazioni dei criteri DLP e così via, che sono correlate all'inchiesta. Da questa pagina, un analista di sicurezza può anche visualizzare ulteriori dettagli sui singoli avvisi.
 
-![Pagina avvisi aria](../media/air-investigationalertspage.png)
+![Pagina avvisi aria](../../media/air-investigationalertspage.png)
 
 È possibile:
 - Ottenere una panoramica visiva dell'avviso di attivazione corrente e degli eventuali avvisi associati.
@@ -177,14 +177,14 @@ I conteggi dei messaggi di posta elettronica vengono calcolati al momento dell'i
 
 Si consideri, ad esempio, lo scenario seguente. Il primo gruppo di tre messaggi di posta elettronica è stato ritenuto phishing. Un altro gruppo di messaggi simili con lo stesso IP e l'oggetto è stato trovato e considerato dannoso, in quanto alcuni di essi sono stati identificati come phishing durante il rilevamento iniziale. 
 
-![Pagina di ricerca della posta elettronica AEREa](../media/air-investigationemailpage.png)
+![Pagina di ricerca della posta elettronica AEREa](../../media/air-investigationemailpage.png)
 
 È possibile:
 - Ottenere una panoramica visiva dei risultati del clustering corrente e delle minacce trovate.
 - Fare clic su un'entità cluster o su un elenco di minacce per aprire una pagina di volo che Visualizza i dettagli degli avvisi completi.
 - Esaminare ulteriormente il cluster di posta elettronica facendo clic sul collegamento ' Apri in Esplora risorse ' nella parte superiore della scheda ' dettagli cluster di posta elettronica '
 
-![Messaggi di posta elettronica di analisi AEREa con dettagli a comparsa](../media/air-investigationemailpageflyoutdetails.png)
+![Messaggi di posta elettronica di analisi AEREa con dettagli a comparsa](../../media/air-investigationemailpageflyoutdetails.png)
 
 > [!NOTE]
 > Nel contesto della posta elettronica, è possibile che venga visualizzata una superficie di minaccia per l'anomalia del volume come parte dell'indagine. Un'anomalia del volume indica un picco nei messaggi di posta elettronica simili nei pressi del tempo dell'evento di indagine rispetto ai tempi precedenti. Questo picco del traffico di posta elettronica con caratteristiche simili (ad esempio, dominio del mittente e del soggetto, somiglianza del corpo e IP del mittente) è tipico dell'inizio delle campagne di posta elettronica o degli attacchi. Tuttavia, la massa, la posta indesiderata e le campagne di posta elettronica legittime condividono queste caratteristiche. Le anomalie dei volumi rappresentano una potenziale minaccia e, di conseguenza, potrebbero essere meno gravi rispetto alle minacce di malware o phishing identificate con motori anti-virus, detonazione o reputazione dannosa.
@@ -195,7 +195,7 @@ Nella scheda **utenti** è possibile visualizzare tutti gli utenti identificati 
 
 Ad esempio, nell'immagine seguente, l'aria ha identificato indicatori di compromesso e anomalie basate su una nuova regola di posta in arrivo che è stata creata. Ulteriori dettagli (prova) dell'indagine sono disponibili tramite visualizzazioni dettagliate all'interno di questa scheda. gli indicatori di compromesso e anomalie possono includere anche rilevamenti di anomalie dalla [sicurezza delle app cloud di Microsoft](https://docs.microsoft.com/cloud-app-security).
 
-![Pagina utenti di analisi AEREa](../media/air-investigationuserspage.png)
+![Pagina utenti di analisi AEREa](../../media/air-investigationuserspage.png)
 
 È possibile:
 - Ottenere una panoramica visiva dei risultati e dei rischi individuati dall'utente.
@@ -205,7 +205,7 @@ Ad esempio, nell'immagine seguente, l'aria ha identificato indicatori di comprom
 
 Nella scheda **computer** , è possibile visualizzare tutti i computer identificati come parte dell'indagine. 
 
-![Pagina macchina dell'analisi aerea](../media/air-investigationmachinepage.png)
+![Pagina macchina dell'analisi aerea](../../media/air-investigationmachinepage.png)
 
 Come parte di alcuni PlayBook, AIR correla le minacce alla posta elettronica ai dispositivi (ad esempio, malware con zapping). Ad esempio, un'analisi passa un hash di file dannosi a [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 ) per esaminare. Questo consente l'analisi automatizzata delle macchine rilevanti per gli utenti, per garantire che le minacce vengano affrontate sia nel cloud che negli endpoint. 
@@ -220,19 +220,19 @@ Nella scheda **entità** , è possibile visualizzare le entità identificate e a
 
 In questa sezione, è possibile visualizzare le entità indagate e i dettagli dei tipi di entità, ad esempio i messaggi di posta elettronica, i cluster, gli indirizzi IP, gli utenti e altro ancora. È inoltre possibile vedere quante entità sono state analizzate e le minacce che sono state associate a ognuna di esse. 
 
-![Pagina delle entità di indagine AEREa](../media/air-investigationentitiespage.png)
+![Pagina delle entità di indagine AEREa](../../media/air-investigationentitiespage.png)
 
 È possibile:
 - Ottenere una panoramica visiva delle entità investigative e delle minacce trovate.
 - Selezionare un'entità per aprire una pagina di fly-out che Visualizza i dettagli dell'entità correlata.
 
-![Dettagli sulle entità di indagine AEREa](../media/air-investigationsentitiespagedetails.png)
+![Dettagli sulle entità di indagine AEREa](../../media/air-investigationsentitiespagedetails.png)
 
 ### <a name="playbook-log"></a>Registro PlayBook
 
 Nella scheda **log** , è possibile visualizzare tutti i passaggi del PlayBook che si sono verificati durante l'indagine. Il log acquisisce un inventario completo di tutti gli analizzatori e le azioni completate dalle funzionalità di analisi automatica di Office 365 come parte di AIR. Viene fornita una chiara visualizzazione di tutti i passaggi, tra cui l'azione stessa, una descrizione e la durata dell'effettivo dall'inizio alla fine. 
 
-![Pagina del registro delle indagini AEREe](../media/air-investigationlogpage.png)
+![Pagina del registro delle indagini AEREe](../../media/air-investigationlogpage.png)
 
 È possibile:
 - Ottenere una panoramica visiva dei passaggi di PlayBook eseguiti.
@@ -266,7 +266,7 @@ Nella scheda **azioni** , è possibile visualizzare tutte le azioni di PlayBook 
 
 Azioni acquisire i passaggi consigliati da Microsoft al termine di un'indagine. È possibile eseguire le azioni di correzione selezionando una o più azioni. Se si fa clic su **approva** è possibile iniziare la correzione. (Sono necessarie autorizzazioni appropriate: il ruolo ' Search and Purge ' è necessario per eseguire azioni da Explorer e AIR). Ad esempio, un lettore di sicurezza è in grado di visualizzare le azioni, ma non di approvarle. Nota: non è necessario approvare ogni azione. Se non si è d'accordo con l'azione consigliata o l'organizzazione non sceglie alcuni tipi di azioni, è possibile scegliere di **rifiutare** le azioni o semplicemente ignorarle e non intraprendere alcuna azione. L'approvazione e/o il rifiuto di tutte le azioni consente di chiudere completamente l'indagine (lo stato viene ripristinato), lasciando inalterate alcune azioni allo stato dell'inchiesta che cambia in uno stato parzialmente rimediato.
 
-![Pagina azione indagini AEREe](../media/air-investigationactionspage.png)
+![Pagina azione indagini AEREe](../../media/air-investigationactionspage.png)
 
 È possibile:
 - Ottenere una panoramica visiva delle azioni consigliate in PlayBook.
@@ -319,11 +319,11 @@ Oltre alle indagini automatiche attivate da un avviso, il team delle operazioni 
 
 Si supponga, ad esempio, di visualizzare i dati in Esplora informazioni sui messaggi segnalati dall'utente. È possibile selezionare un elemento nell'elenco dei risultati e quindi fare clic su **indaga** dal menu azione (supponendo che si disponga delle autorizzazioni di correzione appropriate).
 
-![Messaggi segnalati dall'utente in Esplora con il pulsante indaga](../media/Explorer-UserReported-Investigate.png)
+![Messaggi segnalati dall'utente in Esplora con il pulsante indaga](../../media/Explorer-UserReported-Investigate.png)
 
 Come un altro esempio, si supponga di visualizzare i dati relativi ai messaggi di posta elettronica rilevati come contenenti malware e che sono stati rilevati diversi messaggi di posta elettronica come contenenti malware. È possibile selezionare la scheda **posta elettronica** , selezionare uno o più messaggi di posta elettronica e quindi scegliere **indaga**dal menu **azioni** . 
 
-![Avvio di un'indagine per malware in Esplora risorse](../media/Explorer-Malware-Email-ActionsInvestigate.png)
+![Avvio di un'indagine per malware in Esplora risorse](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che vengono attivate da una visualizzazione in Esplora risorse includono un'analisi radice, procedure per identificare e correlare le minacce e le azioni consigliate per attenuare tali minacce.
 

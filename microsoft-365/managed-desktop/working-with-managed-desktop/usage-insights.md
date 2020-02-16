@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6e114f60d95edb68797e096f56b93836a14425a8
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 43e1ec21719dd4dcab2d2e285197476d54734a13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962353"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085650"
 ---
 # <a name="usage-insights"></a>Dati analitici sull'utilizzo
 Questa visualizzazione fornisce le metriche di utilizzo per i dispositivi Microsoft Managed Desktop. A tal fine, un'app viene considerata "in uso" se è in esecuzione e in stato di inattività.
 
 Per visualizzare i dati di utilizzo, selezionare la scheda **utilizzo** .
 
-![Riquadro di utilizzo. Grafico di utilizzo del dispositivo (percentuale di utilizzo rispetto al tempo) in alto a sinistra. Tabella di utilizzo dell'applicazione in alto a destra. Tabella del dispositivo che elenca il nome del dispositivo, il modello, il numero di serie, il nome visualizzato, il nome utente, lo stato corrente (attivo, basso o inattivo), l'utilizzo totale del dispositivo in ore e il numero di giorni attivi.](images/insights_usage.png)
+![Riquadro di utilizzo. Grafico di utilizzo del dispositivo (percentuale di utilizzo rispetto al tempo) in alto a sinistra. Tabella di utilizzo dell'applicazione in alto a destra. Tabella del dispositivo che elenca il nome del dispositivo, il modello, il numero di serie, il nome visualizzato, il nome utente, lo stato corrente (attivo, basso o inattivo), l'utilizzo totale del dispositivo in ore e il numero di giorni attivi.](../../media/insights_usage.png)
 
 ## <a name="device-usage"></a>Utilizzo del dispositivo
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come inviare messaggi di posta elettronica sospetti, sospette mail di phishing, spam e altre potenzialmente nocive, URL e file dal tenant di Office 365 a Microsoft per l'analisi.
-ms.openlocfilehash: a12981ee302ea72e112826104996fb775e4ac3fb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b123aef485628728df9db27875117b47295975ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599983"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083633"
 ---
 # <a name="how-to-submit-suspected-spam-phish-urls-and-files-to-microsoft-for-office-365-scanning"></a>Come inviare messaggi di posta indesiderata, phishing, URL e file sospetti a Microsoft per l'analisi di Office 365
 
@@ -35,7 +35,7 @@ Per inviare contenuto a Microsoft fare clic sul pulsante **nuovo invio** nella p
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Inviare un messaggio di posta elettronica discutibile a Microsoft
 
-![Esempio di invio tramite posta elettronica](../media/submission-flyout-email.PNG)
+![Esempio di invio tramite posta elettronica](../../media/submission-flyout-email.PNG)
 
 1. Per inviare un messaggio di posta elettronica, selezionare **posta elettronica** e specificare l' **ID della rete** di posta elettronica o caricare il file di posta elettronica.
 
@@ -51,7 +51,7 @@ Per inviare contenuto a Microsoft fare clic sul pulsante **nuovo invio** nella p
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Inviare un URL sospetto a Microsoft
 
-![Esempio di invio tramite posta elettronica](../media/submission-url-flyout.png)
+![Esempio di invio tramite posta elettronica](../../media/submission-url-flyout.png)
 
 1. Per inviare un **URL selezionare URL dal riquadro a comparsa** . Digitare l'URL completo, incluso il protocollo (**https://**).
 
@@ -61,7 +61,7 @@ Per inviare contenuto a Microsoft fare clic sul pulsante **nuovo invio** nella p
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Inviare un file sospetto a Microsoft
 
-![Esempio di invio tramite posta elettronica](../media/submission-file-flyout.PNG)
+![Esempio di invio tramite posta elettronica](../../media/submission-file-flyout.PNG)
 
 1. Per inviare un file seleziona **file** dal riquadro a comparsa e caricare il file che si desidera analizzare.
 

@@ -16,12 +16,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: In questo argomento viene descritto in che modo gli amministratori di Exchange Online e Exchange Online Protection (EOP) possono trovare, rilasciare e segnalare i messaggi che sono in quarantena nell'interfaccia di amministrazione di Exchange (EAC).
-ms.openlocfilehash: d7ea57f1dc78b21dae713ca1b9861abafacfc53a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c46ff11b8d08c46c3000232c836af8148c58511
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599393"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083095"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Trovare e rilasciare messaggi in quarantena come amministratore
 
@@ -137,7 +137,7 @@ Se si desidera rilasciare messaggi ai destinatari, le opzioni disponibili sono:
 
 2. Selezionare un messaggio, fare clic sull'icona **Rilascia messaggio** come visualizzato nella seguente schermata.
 
-   ![Viene visualizzata la pagina della quarantena con l'icona del rilascio del messaggio evidenziata e con le opzioni di rilascio](../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
+   ![Viene visualizzata la pagina della quarantena con l'icona del rilascio del messaggio evidenziata e con le opzioni di rilascio](../../media/36ee081f-3e30-40c9-8ce3-240cee1970cc.png)
 
    Fare clic su **Rilascia il messaggio selezionato e consenti il mittente** dall'elenco a discesa.
 
@@ -157,7 +157,7 @@ Se si desidera rilasciare messaggi ai destinatari, le opzioni disponibili sono:
 
 4. Fare clic su **rilascia**.
 
-Se si fa **** ![clic su Aggiorna](../media/ITPro-EAC-RefreshIcon.gif) l'icona Aggiorna per aggiornare i dati e quindi fare doppio clic sul messaggio, è necessario vedere che è stato rilasciato ai destinatari desiderati.
+Se si fa **** ![clic su Aggiorna](../../media/ITPro-EAC-RefreshIcon.gif) l'icona Aggiorna per aggiornare i dati e quindi fare doppio clic sul messaggio, è necessario vedere che è stato rilasciato ai destinatari desiderati.
 
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>Rilasciare uno o più messaggi in quarantena a tutti i destinatari
 
@@ -184,7 +184,7 @@ Se si fa **** ![clic su Aggiorna](../media/ITPro-EAC-RefreshIcon.gif) l'icona Ag
 > [!TIP]
 > Come assicurarsi che un messaggio non venga contrassegnato come indesiderato in [Come per contribuire a garantire che un messaggio non è contrassegnato come posta indesiderata](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md).
 
-Se si seleziona l'icona **Aggiorna**![Icona Aggiorna](../media/ITPro-EAC-RefreshIcon.gif) per aggiornare i dati e in seguito si fa doppio clic sul messaggio, è possibile verificare che sia stato rilasciato ai destinatari desiderati.
+Se si seleziona l'icona **Aggiorna**![Icona Aggiorna](../../media/ITPro-EAC-RefreshIcon.gif) per aggiornare i dati e in seguito si fa doppio clic sul messaggio, è possibile verificare che sia stato rilasciato ai destinatari desiderati.
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 

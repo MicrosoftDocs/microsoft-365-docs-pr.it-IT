@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui rilevamenti di Esplora risorse e in tempo reale &amp; nel centro sicurezza e conformità.
-ms.openlocfilehash: 21fc170fc820fa0187c03ac07ddc8b8c771f54ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ddcaf4dc457ead7a203e00d71d0d18c23ee6557
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598243"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082134"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -29,11 +29,11 @@ Se l'organizzazione dispone di [office 365 Advanced Threat Protection](office-36
 
 |Con ATP piano 2, è possibile vedere:  |Con ATP piano 1, è possibile visualizzare le informazioni seguenti:  |
 |---------|---------|
-|![Esplora minacce](../media/threatmgmt-explorer.png)      |![Rilevamenti in tempo reale](../media/threatmgmt-realtimedetections.png)         |
+|![Esplora minacce](../../media/threatmgmt-explorer.png)      |![Rilevamenti in tempo reale](../../media/threatmgmt-realtimedetections.png)         |
 
 Con Esplora risorse (o rilevamenti in tempo reale), si dispone di un report potente che consente al team di operazioni di sicurezza di analizzare e rispondere alle minacce in modo efficace ed efficiente. Il report è simile all'immagine seguente: 
 
-![Passare a gestione \> minacce](../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Passare a gestione \> minacce](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Con questo rapporto, è possibile:
 - [Vedere malware rilevato dalle funzionalità di sicurezza di Office 365](#see-malware-detected-in-email-by-technology)
@@ -105,7 +105,7 @@ Quando si fa clic su un URL nell'elenco, verrà visualizzato un nuovo pulsante E
 > [!TIP]
 > ID messaggio di rete mappare il clic di nuovo su mail specifiche quando si esegue una ricerca tramite Explorer o gli strumenti di terze parti associati tramite ID messaggio di rete. La ricerca nell'ID messaggio di rete fornirà agli amministratori la posta elettronica specifica associata a un risultato di clic. In caso di esportazione, l'identificazione correlata dell'ID messaggio di rete rende l'analisi più rapida e potente.
 
-![tp_ExportClickResultAndNetworkID. png](../../images/tp_ExportClickResultAndNetworkID.png)
+![tp_ExportClickResultAndNetworkID. png](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Vedere malware rilevato in posta elettronica dalla tecnologia
 
@@ -113,11 +113,11 @@ Si supponga di voler vedere il malware rilevato nella posta elettronica, tramite
 
 1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**** In questo esempio viene utilizzato Esplora.
 
-2. Scegliere**malware** **tramite posta elettronica** > dal menu **Visualizza** .<br/>![Menu Visualizza per Esplora risorse](../media/ExplorerViewEmailMalwareMenu.png)<br/>
+2. Scegliere**malware** **tramite posta elettronica** > dal menu **Visualizza** .<br/>![Menu Visualizza per Esplora risorse](../../media/ExplorerViewEmailMalwareMenu.png)<br/>
 
-3. Fare clic su **mittente**e quindi scegliere**tecnologia di rilevamento**di **base** > .<br/>Le tecnologie di rilevamento sono ora disponibili come filtri per il report.<br/>![Tecnologie di rilevamento di malware](../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
+3. Fare clic su **mittente**e quindi scegliere**tecnologia di rilevamento**di **base** > .<br/>Le tecnologie di rilevamento sono ora disponibili come filtri per il report.<br/>![Tecnologie di rilevamento di malware](../../media/ExplorerEmailMalwareDetectionTech.png)<br/> 
 
-4. Selezionare un'opzione e quindi fare clic sul pulsante **Aggiorna** per applicare il filtro.<br/>![Tecnologia di rilevamento selezionata](../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
+4. Selezionare un'opzione e quindi fare clic sul pulsante **Aggiorna** per applicare il filtro.<br/>![Tecnologia di rilevamento selezionata](../../media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
 
 Il rapporto viene aggiornato per visualizzare i risultati rilevati dal malware nella posta elettronica, utilizzando l'opzione di tecnologia selezionata. Da qui, è possibile eseguire un'ulteriore analisi.
 
@@ -129,11 +129,11 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
 
 1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**** In questo esempio viene utilizzato Esplora.
 
-2. Nel menu **Visualizza** scegliere **posta elettronica** > **phishing**.<br/>![Menu Visualizza per Esplora risorse](../media/ExplorerViewEmailPhishMenu.png)<br/>
+2. Nel menu **Visualizza** scegliere **posta elettronica** > **phishing**.<br/>![Menu Visualizza per Esplora risorse](../../media/ExplorerViewEmailPhishMenu.png)<br/>
 
 3. Fare clic su **sender**e quindi scegliere **urls** > **.**
 
-4. Selezionare una o più opzioni, ad esempio **bloccate** e **bloccate**, e quindi fare clic sul pulsante **Aggiorna** che si trova nella stessa riga delle opzioni per applicare il filtro. (Non aggiornare la finestra del browser.)<br/>![URL e fare clic su verdetti](../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+4. Selezionare una o più opzioni, ad esempio **bloccate** e **bloccate**, e quindi fare clic sul pulsante **Aggiorna** che si trova nella stessa riga delle opzioni per applicare il filtro. (Non aggiornare la finestra del browser.)<br/>![URL e fare clic su verdetti](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
     Il rapporto viene aggiornato per visualizzare due diverse tabelle URL nella scheda URL del rapporto:
 
@@ -143,7 +143,7 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
    
    Le due tabelle degli URL visualizzano gli URL principali nei messaggi di posta elettronica di phishing tramite l'azione e la posizione di recapito e visualizzano gli URL che sono stati bloccati (o visitati nonostante un avviso), in modo da poter capire quali potenziali collegamenti non validi sono stati ricevuti dagli utenti e interagito con gli utenti. Da qui, è possibile eseguire un'ulteriore analisi. Ad esempio, al di sotto del grafico, è possibile visualizzare gli URL principali nei messaggi di posta elettronica bloccati nell'ambiente dell'organizzazione.
    
-   ![URL di Esplora risorse bloccati](../media/ExplorerPhishClickVerdictURLs.png)
+   ![URL di Esplora risorse bloccati](../../media/ExplorerPhishClickVerdictURLs.png)
    
    Selezionare un URL per visualizzare informazioni più dettagliate. **Nota**: nella finestra di dialogo a comparsa URL, il filtro dei messaggi di posta elettronica viene rimosso per visualizzare la visualizzazione completa dell'esposizione dell'URL nell'ambiente in uso. In questo modo è possibile filtrare i messaggi di posta elettronica in Esplora per quelli che si sono preoccupati, individuare URL specifici che sono potenziali minacce e quindi espandere la propria comprensione dell'esposizione all'URL nell'ambiente (tramite la finestra di dialogo Dettagli URL) senza dover aggiungere filtri URL a visualizzazione di Esplora risorse.
 
@@ -153,11 +153,11 @@ Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti
 
 1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**** In questo esempio viene utilizzato Esplora.
 
-2. Scegliere **invii di posta elettronica** > **** dal menu **Visualizza** .<br/>![Menu Visualizza per Esplora risorse](../media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. Scegliere **invii di posta elettronica** > **** dal menu **Visualizza** .<br/>![Menu Visualizza per Esplora risorse](../../media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Fare clic su **mittente**e quindi scegliere**tipo di report**di **base** > .
 
-4. Selezionare un'opzione, ad esempio **phishing**, e quindi fare clic sul pulsante **Aggiorna** . <br/>![Phishing segnalati dall'utente](../media/EmailUserReportedReportType.png)<br/> 
+4. Selezionare un'opzione, ad esempio **phishing**, e quindi fare clic sul pulsante **Aggiorna** . <br/>![Phishing segnalati dall'utente](../../media/EmailUserReportedReportType.png)<br/> 
 
 Il rapporto viene aggiornato per visualizzare i dati relativi ai messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come tentativo di phishing. È possibile utilizzare queste informazioni per eseguire un'ulteriore analisi e, se necessario, regolare i [criteri di anti-phishing ATP](set-up-anti-phishing-policies.md).
 

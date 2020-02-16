@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: faa0e904ef2a07ccd209ef91630ce6fc8205e347
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: bc6c0199c6ee019cbb032c288612d36a254ee7e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801197"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085711"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Supporto di amministrazione per Microsoft Managed Desktop
 
@@ -57,7 +57,7 @@ Dettagli aggiuntivi:
 
 Una volta che il ticket è nello stato **attenuato** o **risolto** , è possibile condividere i propri commenti e suggerimenti sulla propria esperienza con quel particolare problema. A tale scopo, andare alla pagina **richieste di supporto** nel portale di amministrazione. Selezionare il ticket specifico. Nel Fly-in visualizzato a destra, selezionare la scheda **feedback** e fornire le informazioni richieste. Fare attenzione a non includere informazioni personali nel modulo di commenti e suggerimenti. Per ulteriori informazioni sulla privacy, vedere l'informativa [sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
 
-![Modulo commenti e suggerimenti](images/feedback_form.png)
+![Modulo commenti e suggerimenti](../../media/feedback_form.png)
 
 ## <a name="provide-administrator-rights-to-specific-users"></a>Fornire i diritti di amministratore per utenti specifici
 

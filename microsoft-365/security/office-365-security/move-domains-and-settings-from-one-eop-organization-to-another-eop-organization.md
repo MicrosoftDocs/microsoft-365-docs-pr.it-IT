@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra.
-ms.openlocfilehash: cfd83b8558ed4cec3a48b536437e0a0dbe75aeaa
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c7d5c7ddc8391c70a555279c530cc2bf19e66ca2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598773"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088330"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra organizzazione di Exchange Online Protection
 
@@ -28,7 +28,7 @@ Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'
 
 Nell'esempio seguente, Contoso, Ltd. è stato unito a Contoso Suite. Nella figura seguente viene illustrato il processo di trasferimento di domini, utenti e gruppi di posta e impostazioni dall'organizzazione EOP di origine (contoso.onmicrosoft.com) all'organizzazione EOP di destinazione (contososuites.onmicrosoft.com):
 
-![Spostare le impostazioni e i domini di Exchange Online Protection (EOP)](../media/EOP-Move-domains-and-settings.jpg)
+![Spostare le impostazioni e i domini di Exchange Online Protection (EOP)](../../media/EOP-Move-domains-and-settings.jpg)
 
 Durante il trasferimento di domini da un'organizzazione a un'altra, la difficoltà consiste nel fatto che un dominio verificato non può esistere in due organizzazioni nello stesso momento. I passaggi seguenti consentono di comprendere meglio questo concetto.
 

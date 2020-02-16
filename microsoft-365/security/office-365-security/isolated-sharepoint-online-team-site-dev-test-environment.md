@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "Riepilogo: configurare un sito del team di SharePoint Online isolato dal resto dell'organizzazione nell'ambiente di sviluppo/test di Office 365."
-ms.openlocfilehash: 49443a5dd6b2c93e6bd7817c09747d49b163cabd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fc56a151d00eba3a6c0131ae1692febe69e76122
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599123"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083005"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sito del team SharePoint Online isolato nell'ambiente di sviluppo/test
 
@@ -142,7 +142,7 @@ Nella figura 1 vengono visualizzati i gruppi di accesso e la relativa appartenen
 
 **Figura 1**
 
-![I gruppi di Office 365 e la loro appartenenza a un sito di gruppo di SharePoint Online isolato](../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![I gruppi di Office 365 e la loro appartenenza a un sito di gruppo di SharePoint Online isolato](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>Fase 3: creare un nuovo sito del team di SharePoint Online ProjectX e isolarlo
 
@@ -208,7 +208,7 @@ Nella figura 2 sono riportati i gruppi di SharePoint e la relativa appartenenza.
 
 **Figura 2**
 
-![I gruppi di SharePoint Online e la loro appartenenza a un sito di gruppo di SharePoint Online isolato](../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
+![I gruppi di SharePoint Online e la loro appartenenza a un sito di gruppo di SharePoint Online isolato](../../media/595abff4-64f9-49de-a37a-c70c6856936b.png)
 
 Ora dimostreremo l'accesso utilizzando l'account utente lead designer:
 

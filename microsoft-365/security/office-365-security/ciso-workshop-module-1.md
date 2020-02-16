@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: e90c26575db04afffd5e5c2722b75a1c7235523d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a527816ca701e2f2e9ab2e8d2b9b20cad1230a5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599923"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086565"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>OICOL workshop Module 1: briefing di Microsoft Cybersecurity
 
 Questo modulo illustra le panoramiche sull'igiene della sicurezza critica, sull'architettura di riferimento di Microsoft Cybersecurity, sulla resilienza Cybersecurity, sull'Internet delle cose (sacco) e sulla tecnologia operativa.
 
-- Download PDF Summary: [modulo 1: briefing di Microsoft Cybersecurity](../media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- Download PDF Summary: [modulo 1: briefing di Microsoft Cybersecurity](../../media/ciso-workshop-1-cybersecurity-briefing.pdf)
 - Download Riepilogo di PowerPoint: [modulo 1: briefing di Microsoft Cybersecurity](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-1-cybersecurity-briefing.pptx)
 
 ## <a name="part-1-course-introduction-and-overview-913"></a>Parte 1: introduzione e panoramica del corso (9:13)

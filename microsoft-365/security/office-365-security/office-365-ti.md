@@ -17,12 +17,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Scoprire in che modo le funzionalità di intelligence in Office 365 Advanced Threat Protection consentono di ricercare le minacce per la propria organizzazione, di rispondere a malware, phishing e altri attacchi che Office 365 ha rilevato per conto dell'utente e di cercare una minaccia indicatori.
-ms.openlocfilehash: 2f95054d35edee7db419bc665b520b2b48dda447
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4bd23dcafeed2faf04979b2c757d5517073a210d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598753"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082494"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Analisi delle minacce e risposta alle minacce in Office 365
 
@@ -47,7 +47,7 @@ Superficie delle funzionalità di ricerca e risposta alle minacce &amp; nel cent
 
 Utilizzare il dashboard di minacce (indicato anche come [dashboard di sicurezza](security-dashboard.md)) per vedere rapidamente quali minacce sono state affrontate e come modo visivo per segnalare ai responsabili delle decisioni aziendali come i servizi di Office 365 proteggano la propria azienda.
   
-![Dashboard di minacce](../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
+![Dashboard di minacce](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 &amp; Per visualizzare e utilizzare questo dashboard, nel centro sicurezza e conformità di Office 365 accedere a **Threat Management** \> **Dashboard**.
   
@@ -55,7 +55,7 @@ Utilizzare il dashboard di minacce (indicato anche come [dashboard di sicurezza]
 
 Utilizzare [Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md) per analizzare le minacce, vedere il volume degli attacchi nel tempo e analizzare i dati dalle famiglie di minacce, dall'infrastruttura di attacco e altro ancora. L'esploratore di minacce (noto anche come esploratore) è il punto di partenza per il flusso di lavoro dell'analisi di qualsiasi analista di sicurezza.
   
-![Esplora minacce](../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+![Esplora minacce](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
 &amp; Per visualizzare e utilizzare questo report, nel centro sicurezza e conformità di Office 365 accedere a **gestione** \> minacce. ****
   
@@ -63,11 +63,11 @@ Utilizzare [Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md) 
 
 Utilizzare l'elenco degli eventi non consentiti (anche questo è denominato indagini) per visualizzare un elenco degli incidenti di sicurezza in volo. Gli eventi non consentiti vengono utilizzati per tenere conto di minacce quali messaggi di posta elettronica sospetti e per eseguire ulteriori indagini e correggere i problemi.
   
-![Elenco degli incidenti di minacce correnti in Office 365](../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+![Elenco degli incidenti di minacce correnti in Office 365](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
 Per visualizzare l'elenco degli eventi imprevisti correnti per l'organizzazione, nel centro &amp; conformità sicurezza accedere a operazioni di \> **Verifica** \> degli **incidenti**di **gestione delle minacce** .
   
-![Nel centro sicurezza &amp; e conformità scegliere Threat Management \> Review](../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+![Nel centro sicurezza &amp; e conformità scegliere Threat Management \> Review](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
 ### <a name="attack-simulator"></a>Simulatore di attacchi
 
@@ -81,7 +81,7 @@ Utilizzare le funzionalità di analisi e risposta automatizzate per risparmiare 
 
 Nell'ambito dell'offerta di Office 365 Advanced Threat Protection piano 2, gli analisti di sicurezza possono esaminare i dettagli relativi a una minaccia nota. Ciò è utile per determinare se sono disponibili ulteriori misure preventive/passaggi che possono essere adottati per garantire la sicurezza degli utenti.
   
-![Tendenze della sicurezza che mostrano informazioni sulle minacce recenti](../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
+![Tendenze della sicurezza che mostrano informazioni sulle minacce recenti](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
   
 ## <a name="how-do-we-get-these-capabilities"></a>Come si ottengono queste funzionalità?
 

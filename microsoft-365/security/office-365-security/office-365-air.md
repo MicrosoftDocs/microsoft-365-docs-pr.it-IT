@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Iniziare a utilizzare le funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 9c17d7219e5dd15404b171fbd6707d00fd788f19
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d45141ce671a4615cb4fd550e36bc7215cd38d51
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598763"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088315"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Analizzare e rispondere automaticamente alle minacce in Office 365
 
@@ -55,11 +55,11 @@ Con le funzionalità di analisi e risposta automatizzate, quando vengono attivat
 
     Entrambi i metodi consentono di eseguire l'elenco delle indagini.
 
-    ![Pagina di ricerca principale per AIR](../media/air-maininvestigationpage.png) 
+    ![Pagina di ricerca principale per AIR](../../media/air-maininvestigationpage.png) 
 
 3. Nell'elenco delle indagini selezionare un elemento nella colonna **ID** . Verrà visualizzata la pagina Dettagli analisi, a partire dal grafico di analisi in visualizzazione.
 
-    ![Pagina del grafico dell'indagine aerea](../media/air-investigationgraphpage.png)
+    ![Pagina del grafico dell'indagine aerea](../../media/air-investigationgraphpage.png)
 
 4. Utilizzare le varie schede per ulteriori informazioni sull'indagine.
 

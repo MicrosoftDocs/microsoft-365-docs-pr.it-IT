@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Estendere Office 365 Advanced Threat Protection ai file in SharePoint Online, OneDrive for business e Microsoft teams per consentire una collaborazione più sicura per l'organizzazione.
-ms.openlocfilehash: a21654ed8045b9adb6c09a730ada3ae458cf1609
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3105a9443ddab483bc5ac4037e5260b354d64de9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599843"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086633"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP per SharePoint, OneDrive e Microsoft Teams
 
@@ -35,15 +35,15 @@ Gli utenti condividono periodicamente file e collaborano con SharePoint, OneDriv
 
 Quando un file in SharePoint Online, OneDrive for business e Microsoft teams è stato identificato come dannoso, ATP si integra direttamente con gli archivi di file per bloccare il file. Nell'immagine seguente viene mostrato un esempio di un file dannoso rilevato in una raccolta.
 
-![File in OneDrive for business con uno rilevato come dannoso](../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+![File in OneDrive for business con uno rilevato come dannoso](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 Anche se il file bloccato è ancora elencato nella raccolta documenti e nelle applicazioni Web, per dispositivi mobili o desktop, il file bloccato non può essere aperto, copiato, spostato o condiviso. Tuttavia, gli utenti possono eliminare un file bloccato. Di seguito è riportato un esempio di come si presenta sul dispositivo mobile di un utente:
 
-![Eliminazione di un file bloccato da OneDrive for business dall'app per dispositivi mobili di OneDrive](../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
+![Eliminazione di un file bloccato da OneDrive for business dall'app per dispositivi mobili di OneDrive](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
 A seconda del modo in cui Office 365 è configurato, la gente potrebbe o meno avere la possibilità di scaricare un file bloccato. Di seguito è riportato l'aspetto del download di un file bloccato nel dispositivo mobile di un utente:
 
-![Download di un file bloccato in OneDrive for business](../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
+![Download di un file bloccato in OneDrive for business](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
 Per altre informazioni, vedere [Office 365 ATP per SharePoint, OneDrive e Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 

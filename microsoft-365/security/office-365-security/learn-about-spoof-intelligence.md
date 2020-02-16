@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Utilizzare l'intelligence spoof nel centro &amp; sicurezza e conformità nella pagina impostazioni di protezione da posta indesiderata per esaminare tutti i mittenti che eseguono lo spoofing dei domini che fanno parte dell'organizzazione o lo spoofing di domini esterni. L'intelligence di spoofing è disponibile come parte di Office 365 Enterprise E5 o separatamente come parte di Advanced Threat Protection e Exchange Online Protection.
-ms.openlocfilehash: 82b3759290e4cf0024aaf74a066354f46ea3a303
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e3ef4399ab79e894e8013169eee6d1949c2489c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599093"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082966"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Altre informazioni su spoof intelligence
 
@@ -79,7 +79,7 @@ Il criterio di intelligence contraffatto configurato viene sempre applicato da O
 
 3. Nel centro sicurezza &amp; e conformità, espandere la protezione da **posta indesiderata** **dei** \> **criteri** \> di gestione delle minacce.
 
-    ![Schermata che mostra l'accesso alla pagina di protezione da posta indesiderata](../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+    ![Schermata che mostra l'accesso alla pagina di protezione da posta indesiderata](../../media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
 
 4. Nella pagina impostazioni di protezione da **posta indesiderata** nel riquadro destro scorrere verso il basso ed espandere **criteri di intelligence spoof**.
 
@@ -89,7 +89,7 @@ Il criterio di intelligence contraffatto configurato viene sempre applicato da O
 
     Se I mittenti sono già stati rivisti e si desidera modificare alcune delle scelte precedenti, è possibile scegliere **Visualizza i mittenti già recensiti** . In entrambi i casi, viene visualizzato il riquadro seguente.
 
-    ![Schermata che mostra l'accesso alla scheda mittenti falsificati](../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+    ![Schermata che mostra l'accesso alla scheda mittenti falsificati](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
     Ogni utente contraffatto viene visualizzato in una riga distinta in modo che sia possibile decidere se consentire o bloccare il mittente dallo spoofing individuale di ogni utente.
 
@@ -97,7 +97,7 @@ Il criterio di intelligence contraffatto configurato viene sempre applicato da O
 
     Per impostare i criteri per i domini non proprietari, selezionare la scheda **domini esterni** . modificare qualsiasi mittente in **Sì** nella colonna **consentito di spoofing** per consentire al mittente di inviare messaggi di posta elettronica non autenticati nell'organizzazione. In alternativa, se si ritiene che Office 365 abbia commesso un errore nel consentire al mittente di inviare messaggi di posta elettronica falsificati, modificare la colonna **consentita per la falsificazione** in **No**.
 
-    ![Schermata che mostra se un mittente è autorizzato a eseguire la falsificazione](../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+    ![Schermata che mostra se un mittente è autorizzato a eseguire la falsificazione](../../media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
 
 6. Scegliere **Salva** per salvare le modifiche apportate.
 
@@ -128,7 +128,7 @@ Anche se il criterio di antispoofing viene visualizzato sotto il criterio anti-p
 
 6. Successivamente, configurare le azioni da eseguire quando un messaggio viene rilevato come spoofing tra domini. Il comportamento predefinito consiste nel spostare il messaggio nella cartella posta indesiderata del destinatario. L'altra opzione consiste nell'inviare il messaggio alla quarantena. Per ulteriori informazioni sulla gestione dei messaggi inviati alla quarantena, vedere [messaggi di posta elettronica in quarantena in Office 365](quarantine-email-messages.md).
 
-    ![Schermata che mostra le opzioni di modifica dei criteri di anti-spoofing](../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
+    ![Schermata che mostra le opzioni di modifica dei criteri di anti-spoofing](../../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
 
 7. Fare la scelta desiderata e quindi scegliere **Salva**.
 

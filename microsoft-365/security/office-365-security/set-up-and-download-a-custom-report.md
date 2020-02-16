@@ -16,12 +16,12 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare e scaricare un report con un intervallo di date personalizzato e filtri nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 0de4b9bf2ac8d16c0e0ecc38fa69a3c9bf5e2774
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 170360a796d94501b6c13a6ffd4b062401296462
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598383"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087997"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurare e scaricare un report personalizzato nel centro sicurezza &amp; e conformità
 
@@ -34,11 +34,11 @@ Nel [Centro sicurezza &amp; e conformità](https://protection.office.com)sono di
   
 1. Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), accedere a **** \> **Dashboard**dei report.
     
-2. Scegliere un report. (In questo esempio, verrà utilizzato il rapporto disposizione messaggio).<br/>![Scegliere il rapporto richieste per il download di un report](../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
+2. Scegliere un report. (In questo esempio, verrà utilizzato il rapporto disposizione messaggio).<br/>![Scegliere il rapporto richieste per il download di un report](../../media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
 3. Nell'angolo in alto a sinistra del report, scegliere **rapporto richieste**.
     
-4. Nella finestra di dialogo **rapporto richieste** specificare un nome, una data di inizio e una data di fine per il report. Fare quindi clic su **Avanti**.<br/>![Nel centro sicurezza &amp; e conformità, scegliere \> report rapporti per il download](../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
+4. Nella finestra di dialogo **rapporto richieste** specificare un nome, una data di inizio e una data di fine per il report. Fare quindi clic su **Avanti**.<br/>![Nel centro sicurezza &amp; e conformità, scegliere \> report rapporti per il download](../../media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
   
 5. Specificare tutti i filtri che si desidera utilizzare per il report. (Ad esempio, è possibile specificare un indirizzo IP del client per il rapporto di disposizione dei messaggi). Fare quindi clic su **Avanti**.
     
