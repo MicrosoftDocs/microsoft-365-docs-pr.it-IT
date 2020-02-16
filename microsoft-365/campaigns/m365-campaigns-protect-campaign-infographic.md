@@ -1,5 +1,7 @@
 ---
 title: 'Infografica: Proteggi la tua campagna'
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,16 +23,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Operazioni che è possibile eseguire per proteggere la campagna dagli attacchi digitali.
-ms.openlocfilehash: ed41ecdbf1fb6284f79cda0468bc50dbba086e63
-ms.sourcegitcommit: 0c9c28a87201c7470716216d99175356fb3d1a47
+ms.openlocfilehash: 214637afe53280e51dbc4bde9e8766e7091b2fd6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39909282"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080548"
 ---
-# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a><span data-ttu-id="33ce1-103">Infografica: Proteggi te stesso e la tua campagna dalle minacce digitali</span><span class="sxs-lookup"><span data-stu-id="33ce1-103">Infographic: Help protect yourself and your campaign from digital threats</span></span> 
-<span data-ttu-id="33ce1-104">I collegamenti seguenti per PowerPoint e PDF possono essere scaricati e stampati in formato tabloid (noto anche come Ledger, 11 x 17 o a3).</span><span class="sxs-lookup"><span data-stu-id="33ce1-104">The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
+# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a><span data-ttu-id="a0c17-103">Infografica: Proteggi te stesso e la tua campagna dalle minacce digitali</span><span class="sxs-lookup"><span data-stu-id="a0c17-103">Infographic: Help protect yourself and your campaign from digital threats</span></span> 
+<span data-ttu-id="a0c17-104">I collegamenti seguenti per PowerPoint e PDF possono essere scaricati e stampati in formato tabloid (noto anche come Ledger, 11 x 17 o a3).</span><span class="sxs-lookup"><span data-stu-id="a0c17-104">The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
 
-<span data-ttu-id="33ce1-105">[![Immagine per garantire la protezione del grafico informazioni sulla campagna](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span><span class="sxs-lookup"><span data-stu-id="33ce1-105">[![Image for secure your help protect your campaign info graphic](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span></span>
+<span data-ttu-id="a0c17-105">[![Immagine per garantire la protezione del grafico informazioni sulla campagna](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span><span class="sxs-lookup"><span data-stu-id="a0c17-105">[![Image for secure your help protect your campaign info graphic](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)</span></span>
 
-<span data-ttu-id="33ce1-106">[](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx) (PDF)</span><span class="sxs-lookup"><span data-stu-id="33ce1-106">[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)</span></span>
+<span data-ttu-id="a0c17-106">[](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx) (PDF)</span><span class="sxs-lookup"><span data-stu-id="a0c17-106">[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)</span></span>
