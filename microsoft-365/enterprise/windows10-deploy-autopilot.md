@@ -12,18 +12,18 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: e5e3e4fb48a0eb2af1978cbd5a687c67c72bea0c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ba5804d3065dcb01d85d457df7555a642d6f2839
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596643"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085595"
 ---
 # <a name="step-3-deploy-windows-10-enterprise-for-new-devices-with-windows-autopilot"></a>Passaggio 3: distribuzione di Windows 10 Enterprise per nuovi dispositivi con Windows Autopilot
 
 *Questo articolo si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Fase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Se si dispone di nuovi PC con Windows 10, è possibile usare Windows Autopilot per personalizzare l'esperienza di utilizzo della casella di controllo (OOBE) per l'organizzazione e distribuire un nuovo sistema con le app e le impostazioni già configurate. Non ci sono immagini da distribuire, nessun driver da iniettare e nessuna infrastruttura da gestire. Gli utenti possono passare attraverso il processo di distribuzione in modo indipendente, senza che sia necessario consultare l'amministratore IT.
 
@@ -33,7 +33,7 @@ Se si dispone di nuovi PC con Windows 10, è possibile usare Windows Autopilot p
 
 Il poster di Windows Autopilot è costituito da due pagine in modalità verticale (11x17). Fare clic sull'immagine seguente per visualizzare un file PDF nel browser. 
 
-[![Distribuzione di Windows 10 con il poster di Autopilot](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
+[![Distribuzione di Windows 10 con il poster di Autopilot](../media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
 
 È anche possibile scaricare il poster in formato[PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) o [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx).
 
@@ -114,4 +114,4 @@ Come checkpoint provvisorio, vedere i [criteri di completamento](windows10-exit-
 
 |||
 |:-------|:-----|
-|![Passaggio 4](./media/stepnumbers/Step4.png)| [Monitorare l'integrità e la conformità del dispositivo](windows10-enable-windows-analytics.md) |
+|![Passaggio 4](../media/stepnumbers/Step4.png)| [Monitorare l'integrità e la conformità del dispositivo](windows10-enable-windows-analytics.md) |

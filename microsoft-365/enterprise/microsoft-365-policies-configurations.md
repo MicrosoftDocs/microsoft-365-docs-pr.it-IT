@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4b76ba16b74eeea26799bb383cd00e497c86d770
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 8d7adda0ded3a118676a67d0446a5744233468f3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855385"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066854"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
@@ -59,25 +59,25 @@ Ogni settore ha anche il proprio set di normative specializzate. Invece di forni
 - **Protezione sensibile**: alcuni clienti dispongono di un sottoinsieme di dati che devono essere protetti a livelli superiori oppure possono richiedere che tutti i dati siano protetti a un livello superiore. È possibile applicare una protezione maggiore per tutti i set di dati o solo per alcuni di essi nell'ambiente Office 365. È consigliabile proteggere le identità e i dispositivi che accedono ai dati sensibili con livelli di sicurezza analoghi.  
 - **Altamente regolamentato**: alcune organizzazioni possono avere una piccola quantità di dati che sono altamente classificati, consititutes segreti commerciali o sono dati regolamentati. Microsoft offre funzionalità che consentono alle organizzazioni di soddisfare questi requisiti, inclusa la protezione aggiuntiva per identità e dispositivi.
 
-![Cono di sicurezza: tutti i clienti > alcuni clienti > clienti specifici. Applicazione estensiva a un'applicazione specifica](../images/M365-idquality-threetiers.png)
+![Cono di sicurezza: tutti i clienti > alcuni clienti > clienti specifici. Applicazione estensiva a un'applicazione specifica](../media/M365-idquality-threetiers.png)
 
 In questa guida viene illustrato come implementare la protezione per identità e dispositivi per ognuno di questi livelli di protezione. Utilizzare queste linee guida come punto di partenza per l'organizzazione e regolare i criteri per soddisfare i requisiti specifici dell'organizzazione.
 
 È importante usare livelli coerenti di protezione tra i dispositivi, le identità e i dati. Ad esempio, se si implementano queste linee guida, assicurarsi di proteggere i dati a livelli comparabili. Questi modelli di architettura mostrano quali funzionalità sono confrontabili.
 
 **Protezione di dispositivi e identità per Office 365**<br/>
-![Anteprima del poster "identità e protezione del dispositivo per Office 365"](../images/O365_Identity_device_protection_thumb.png)<br/>
+![Anteprima del poster "identità e protezione del dispositivo per Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Altre lingue](https://www.microsoft.com/download/details.aspx?id=55032)
 
 **Soluzioni per la protezione dei file in Office 365**<br/>
-![Anteprima del poster "soluzioni di protezione dei file in Office 365"](../images/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
+![Anteprima del poster "soluzioni di protezione dei file in Office 365"](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
 
 ## <a name="security-and-productivity-trade-offs"></a>Compromesso tra sicurezza e produttività
 
 L'implementazione di qualsiasi strategia di sicurezza richiede compromessi tra la sicurezza e la produttività. È utile valutare il modo in cui ogni decisione influisce sul saldo di sicurezza, funzionalità e facilità d'uso.
 
-![Sicurezza Triad bilanciamento, funzionalità e facilità di utilizzo.](media/policies-configurations/security-triad.png)
+![Sicurezza Triad bilanciamento, funzionalità e facilità di utilizzo.](../media/policies-configurations/security-triad.png)
 
 Le raccomandazioni fornite si basano sui seguenti principi:
 

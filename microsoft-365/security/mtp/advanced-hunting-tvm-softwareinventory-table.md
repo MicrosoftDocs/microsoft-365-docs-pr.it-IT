@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 92c06eb01abd13df22ae33e72d9663084b05f7ef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ed9cce1c85dc924762be4408c670f13f318ca02
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600293"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087915"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 
@@ -42,7 +42,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata vedere [le i
 | `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione sul computer. Ciò indica specifici sistemi operativi, incluse variazioni all'interno della stessa famiglia di prodotti, come Windows 10 e Windows 7. |
 | `OSVersion` | stringa | Versione del sistema operativo in esecuzione sul computer |
 | `OSArchitecture` | stringa | Architettura del sistema operativo in esecuzione sul computer |
-| `SoftwareVendor` | stringa | Livello di gravità assegnato alla vulnerabilità della sicurezza in base al Punteggio CVSS e ai fattori dinamici influenzati dalle possibili minacce |
+| `SoftwareVendor` | stringa | Nome del fornitore del software |
 | `SoftwareName` | stringa | Nome del prodotto software |
 | `SoftwareVersion` | stringa | Numero della versione del prodotto software |
 | `CveId` | stringa | Identificatore univoco assegnato alla vulnerabilità della sicurezza nell'ambito del sistema Vulnerabilità ed esposizioni comuni (CVE) |

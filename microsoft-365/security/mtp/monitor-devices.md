@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: cecc84c1df3ccba3eea75d29aa5f293909d5d51f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: af7ed71f2257578e4d4fb063b27cb81ed9802b1a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600163"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087829"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio e Reporting dei dispositivi nel centro sicurezza Microsoft 365
 
@@ -35,7 +35,7 @@ Ogni avviso del trifosfato di adenosina di Microsoft Defender ha un livello di g
 
 Utilizzare la scheda **gravità avviso dispositivo** per concentrarsi in modo specifico sugli avvisi più gravi e potrebbe richiedere una risposta immediata. Da questa scheda, è possibile visualizzare altre informazioni sul portale Microsoft Defender Security Center.
 
-![Scheda di gravità avvisi dispositivo](../images/device-alerts-severity.png)
+![Scheda di gravità avvisi dispositivo](../../media/device-alerts-severity.png)
 
 ### <a name="understand-sources-of-alerts"></a>Informazioni sulle origini degli avvisi
 
@@ -43,7 +43,7 @@ Microsoft Defender ATP utilizza i dati provenienti da una vasta gamma di sensori
 
 La scheda fonti di **rilevamento avvisi dispositivo** Visualizza la distribuzione degli avvisi per origine. Questa scheda può essere utile per monitorare le attività relative a determinate origini, in particolare le origini personalizzate. È inoltre possibile utilizzare questa pagina per concentrarsi sugli avvisi provenienti da sensori che non sono configurati per bloccare automaticamente le attività o i componenti dannosi.
 
-![Scheda fonti di rilevamento avvisi dispositivo](../images/device-alert-detection-sources.png)
+![Scheda fonti di rilevamento avvisi dispositivo](../../media/device-alert-detection-sources.png)
 
 Da questa scheda, è possibile visualizzare altre informazioni sul portale Microsoft Defender Security Center.
 
@@ -53,13 +53,13 @@ Microsoft Defender ATP Ordina ogni avviso in una categoria che rappresenta una d
 
 La scheda **categorie minacce dispositivo** Visualizza la distribuzione degli avvisi in queste categorie. È possibile utilizzare queste informazioni per identificare le attività di minacce, ad esempio i tentativi di furto delle credenziali, che possono avere un impatto maggiore rispetto ai tentativi di social engineering. È inoltre possibile utilizzare queste informazioni per eseguire il monitoraggio di minacce potenzialmente distruttive come ransomware.
 
-![Scheda categorie di minacce per dispositivi](../images/device-threat-categories.png)
+![Scheda categorie di minacce per dispositivi](../../media/device-threat-categories.png)
 
 ### <a name="monitor-active-alerts"></a>Monitorare gli avvisi attivi
 
 La scheda **stato avviso dispositivo** indica il numero di avvisi che non sono stati risolti e che potrebbero richiedere attenzione. Da questa scheda, è possibile visualizzare altre informazioni sul portale Microsoft Defender Security Center.
 
-![Scheda stato avviso dispositivo](../images/device-alert-status.png)
+![Scheda stato avviso dispositivo](../../media/device-alert-status.png)
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>Monitorare la classificazione degli avvisi risolti
 
@@ -72,7 +72,7 @@ La scheda di **classificazione avviso dispositivo** indica se gli avvisi risolti
 
 Nota: in alcuni casi, le informazioni di classificazione non sono disponibili per determinati avvisi.
 
-![Scheda di classificazione degli avvisi dei dispositivi](../images/device-alert-classification.png)
+![Scheda di classificazione degli avvisi dei dispositivi](../../media/device-alert-classification.png)
 
 ### <a name="monitor-determination-of-resolved-alerts"></a>Monitorare la determinazione degli avvisi risolti
 
@@ -89,13 +89,13 @@ La scheda di **determinazione dell'avviso del dispositivo** Visualizza la determ
 
 Da questa scheda, è possibile visualizzare altre informazioni in Microsoft Defender Security Center.
 
-![Scheda di determinazione dell'avviso del dispositivo](../images/device-alert-determination.png)
+![Scheda di determinazione dell'avviso del dispositivo](../../media/device-alert-determination.png)
 
 ### <a name="understand-which-devices-are-at-risk"></a>Comprendere quali dispositivi sono a rischio
 
 La **protezione del dispositivo** Visualizza il livello di rischio per i dispositivi. Il livello di rischio si basa su fattori quali il tipo e la gravità degli avvisi nel dispositivo.
 
-![Scheda di protezione del dispositivo](../images/device-protection.png)
+![Scheda di protezione del dispositivo](../../media/device-protection.png)
 
 ## <a name="monitor-and-report-status-of-intune-managed-devices"></a>Monitorare e segnalare lo stato dei dispositivi gestiti da Intune
 
@@ -114,43 +114,43 @@ I dati dei dispositivi registrati di Intune includono:
 
 La **conformità del dispositivo** indica il numero di dispositivi registrati in Intune conformi ai criteri di configurazione.
 
-![Scheda conformità dispositivo](../images/device-compliance.png)
+![Scheda conformità dispositivo](../../media/device-compliance.png)
 
 ### <a name="discover-devices-with-malware-detections"></a>Individuare i dispositivi con rilevamenti di malware
 
 I **rilevamenti di malware** per i dispositivi forniscono il numero di dispositivi registrati di Intune con malware che non sono stati completamente risolti. Questo può essere dovuto a azioni in sospeso, a un riavvio, a un'analisi completa, azioni utente manuali o se l'azione di correzione non è stata completata correttamente.
 
-![Scheda rilevamenti malware dispositivo](../images/device-malware-detections.png)
+![Scheda rilevamenti malware dispositivo](../../media/device-malware-detections.png)
 
 ### <a name="understand-the-types-of-malware-detected"></a>Informazioni sui tipi di malware rilevati
 
 I **tipi di malware nei dispositivi** mostrano diversi tipi di malware che sono stati rilevati nei dispositivi registrati in Intune. È possibile esaminare ogni tipo nel centro sicurezza Microsoft 365.
 
-![Tipi di malware sulla scheda dispositivi](../images/types-of-malware-on-devices.png)
+![Tipi di malware sulla scheda dispositivi](../../media/types-of-malware-on-devices.png)
 
 ### <a name="understand-the-specific-malware-detected-on-your-devices"></a>Comprendere il malware specifico rilevato nei dispositivi
 
 Il **malware nei dispositivi** fornisce un elenco di malware specifici rilevati nei dispositivi.
 
-![Scheda malware su dispositivi](../images/malware-on-devices.png)
+![Scheda malware su dispositivi](../../media/malware-on-devices.png)
 
 ### <a name="understand-which-devices-have-the-most-malware"></a>Informazioni sui dispositivi con la maggior parte dei malware
 
 I **dispositivi con rilevamenti di malware** mostrano quali dispositivi presentano la maggior parte dei rilevamenti di malware. nel centro sicurezza Microsoft 365, è possibile verificare se il malware è attivo, chi usa il dispositivo e lo stato di gestione in Intune.
 
-![Scheda dispositivi con rilevamento malware](../images/devices-with-malware-detections.png)
+![Scheda dispositivi con rilevamento malware](../../media/devices-with-malware-detections.png)
 
 ### <a name="understand-which-users-have-devices-with-the-most-malware"></a>Comprendere quali utenti dispongono di dispositivi con la maggior parte dei malware
 
 **Gli utenti che dispongono di rilevamenti di malware** mostrano agli utenti i dispositivi con più rilevamenti di malware. Nel centro sicurezza Microsoft 365, è possibile visualizzare il numero di dispositivi assegnati a ciascun utente e ulteriori informazioni su ogni dispositivo e sul tipo di malware.
 
-![Utenti con scheda di rilevamento antimalware](../images/users-with-malware-detections.png)
+![Utenti con scheda di rilevamento antimalware](../../media/users-with-malware-detections.png)
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>Monitorare e gestire la distribuzione e i rilevamenti delle regole ASR
 
 [Le regole di riduzione dell'attacco superficiale (ASR, Attack Surface Reduction)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) consentono di prevenire azioni e app che in genere vengono utilizzate da malware in grado di sfruttare i dispositivi. Queste regole controllano il modo in cui è possibile eseguire i file eseguibili. Ad esempio, è possibile impedire a JavaScript o VBScript di avviare un file eseguibile scaricato, bloccare le chiamate API Win32 dalle macro di Office o bloccare i processi che vengono eseguiti da unità USB.
 
-![Scheda riduzioni superficie attacco](../images/attack-surface-reduction-rules.png)
+![Scheda riduzioni superficie attacco](../../media/attack-surface-reduction-rules.png)
 
 La scheda **regole di riduzione della superficie di attacco** fornisce una panoramica della distribuzione delle regole tra i dispositivi.
 
@@ -166,7 +166,7 @@ Nella parte inferiore della scheda sono riportate le impostazioni per regola tra
 
 Per visualizzare informazioni dettagliate sui rilevamenti delle regole di ASR nella rete, selezionare **Visualizza rilevamenti** nella scheda **regole di riduzione della superficie di attacco** . Verrà aperta la scheda **rilevamenti** nella pagina rapporto dettagliato.
 
-![Scheda rilevamenti](../images/detections-tab.png)
+![Scheda rilevamenti](../../media/detections-tab.png)
 
 Il grafico nella parte superiore della pagina Visualizza rilevamenti nel tempo di rilevamenti di sovrapposizione che sono stati bloccati o controllati. La tabella in basso elenca i rilevamenti più recenti. Utilizzare le informazioni seguenti nella tabella per comprendere la natura dei rilevamenti:
 
@@ -179,7 +179,7 @@ Il grafico nella parte superiore della pagina Visualizza rilevamenti nel tempo d
 
 Nella pagina rapporto **regole di riduzione della superficie di attacco** passare alla scheda **configurazione** per esaminare le impostazioni delle regole per i singoli dispositivi. Selezionare un dispositivo per ottenere informazioni dettagliate sul fatto che ogni regola sia in modalità di blocco, modalità di controllo o disattivata completamente.
 
-![Scheda configurazione](../images/configuration-tab.png)
+![Scheda configurazione](../../media/configuration-tab.png)
 
 Microsoft Intune offre funzionalità di gestione per le regole di ASR. Se si desidera aggiornare le impostazioni, selezionare **Get Started** in **Configure Devices** nella scheda per aprire Gestione dispositivi su Intune.
 
@@ -192,7 +192,7 @@ Le esclusioni sono gestite su Microsoft Intune, ma Microsoft 365 Security Center
 >[!NOTE]  
 >Lo strumento analizza i rilevamenti per tutte le regole di riduzione della superficie di attacco, ma [solo alcune regole supportano le esclusioni](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr).
 
-![Scheda Aggiungi esclusioni](../images/add-exclusions-tab.png)
+![Scheda Aggiungi esclusioni](../../media/add-exclusions-tab.png)
 
 Nella tabella sono elencati tutti i nomi di file rilevati dalle regole di riduzione della superficie di attacco. È possibile selezionare i file per esaminare l'impatto dell'esclusione:
 

@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f0cd296157e1d4856c27d1dc547de045510e788b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d11b2682b9699e61a4c9ecfa47eb73de87de5e4f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600763"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084206"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Suggerimenti sui criteri per la protezione di siti e file di SharePoint
 
@@ -35,7 +35,7 @@ Oltre all'implementazione di queste linee guida, assicurarsi di configurare i si
 
 Nel diagramma seguente viene illustrato il set di criteri consigliati per la protezione dei file in SharePoint Online e OneDrive for business. Indica quali criteri devono essere aggiornati o creati di nuovo per aggiungere protezione per SharePoint Online e OneDrive for business.
 
-![Riepilogo dei criteri per SharePoint Online e OneDrive](../images/identity-access-ruleset-sharepoint.png)
+![Riepilogo dei criteri per SharePoint Online e OneDrive](../media/identity-access-ruleset-sharepoint.png)
 
 Se è stato incluso SharePoint Online quando sono stati creati i criteri comuni, è necessario creare solo i nuovi criteri. Quando si configurano le regole di accesso condizionale, SharePoint Online include OneDrive for business.
 
@@ -43,7 +43,7 @@ I nuovi criteri implementano la protezione del dispositivo per soddisfare sensib
 
 Nella tabella seguente sono elencati i criteri che è necessario rivedere e aggiornare o creare nuovi per SharePoint Online. I criteri comuni collegano le istruzioni di configurazione associate nell'articolo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
-|Livello di protezione|Generali|Ulteriori informazioni|
+|Livello di protezione|Generali|Altre informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere SharePoint Online nell'assegnazione delle app Cloud|
 |        |[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere SharePoint Online nell'assegnazione delle app Cloud|
@@ -77,7 +77,7 @@ Vedere "bloccare o limitare l'accesso a specifiche raccolte siti di SharePoint o
 
 Nella figura seguente viene illustrato un esempio di come i criteri di accesso ai dispositivi di SharePoint proteggono l'accesso ai siti.
 
-![Come i criteri di accesso ai dispositivi di SharePoint proteggono siti](../images/SharePoint-rules-scenario.png)
+![Come i criteri di accesso ai dispositivi di SharePoint proteggono siti](../media/SharePoint-rules-scenario.png)
 
 Nella figura:
 

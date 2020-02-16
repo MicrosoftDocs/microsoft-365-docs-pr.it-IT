@@ -15,16 +15,16 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: 6ada378d63e9a04bd820808ea8a1d93cd7690ffb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f3c4e36ea650dc0e354697c6fb766f5e32c0e3d2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596843"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066764"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Fase 5: gestione dei dispositivi mobili per Microsoft 365 Enterprise
 
-![Fase 5: gestione dei dispositivi mobili](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
+![Fase 5: gestione dei dispositivi mobili](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
 
 *Questa funzionalità si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
@@ -84,7 +84,7 @@ La registrazione è un passaggio fondamentale quando si utilizza Intune. I [disp
 
 |||
 |:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida del laboratorio di testing: registrazione di dispositivi iOS e Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
+|![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida del laboratorio di testing: registrazione di dispositivi iOS e Android](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
 |||
 
 
@@ -102,7 +102,7 @@ L'articolo [Add Apps](https://docs.microsoft.com/intune/apps/apps-add) elenca i 
 
 |||
 |:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida del laboratorio di testing: criteri di conformità del dispositivo](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida del laboratorio di testing: criteri di conformità del dispositivo](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 ## <a name="step-6-turn-on-compliance-and-conditional-access"></a>Passaggio 6: abilitare la conformità e l'accesso condizionale
@@ -159,7 +159,7 @@ Informazioni su come gli esperti IT di Microsoft [gestiscono i dispositivi con E
 
 Vedere come Contoso Corporation, un'azienda multinazionale fittizia ma rappresentativa, ha [distribuito l'infrastruttura di gestione dei dispositivi mobili](contoso-mdm.md) con i servizi cloud di Microsoft 365.
 
-![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Passaggio successivo
 

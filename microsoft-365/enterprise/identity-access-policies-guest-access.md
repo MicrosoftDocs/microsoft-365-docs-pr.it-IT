@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: ca9b752f55ebe3fecec4f312bc89b45d99cf0d7d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8276dcf85f6c5fd61e01e67deee4fea35c1a15c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601053"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067455"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Criteri per consentire l'accesso all'ospite e all'esterno B2B
 In questo articolo viene descritto come modificare i criteri di identità e accesso ai dispositivi comuni consigliati per consentire l'accesso agli account B2B (Guest e utenti esterni). Queste linee guida si basano sui [criteri comuni di identità e accesso ai dispositivi](identity-access-policies.md).
@@ -33,11 +33,11 @@ Fornire un percorso per gli utenti B2B per l'autenticazione con il tenant di Azu
 
 Nella figura seguente vengono illustrati i criteri comuni di accesso a identità e dispositivi e viene indicato (con un'icona a matita) quali criteri aggiungere o aggiornare per proteggere gli ospiti e l'accesso esterno. 
 
-![Riepilogo degli aggiornamenti dei criteri per la protezione dell'accesso Guest](../images/identity-access-ruleset-guest.png)
+![Riepilogo degli aggiornamenti dei criteri per la protezione dell'accesso Guest](../media/identity-access-ruleset-guest.png)
 
 Nella tabella seguente sono elencati i criteri che è necessario aggiornare o creare nuovi. I criteri comuni collegano le istruzioni di configurazione associate nell'articolo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
-|Livello di protezione|Generali|Ulteriori informazioni|
+|Livello di protezione|Generali|Altre informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedi sempre un master per utenti esterni e Guest](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Creare la nuova regola e applicarla solo agli utenti esterni e ai clienti. In rischio di accesso, lasciare deselezionate tutte le opzioni per applicare sempre l'AMF.|
 |        |[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modificare questa regola per escludere gli utenti esterni e Guest.|
@@ -45,9 +45,9 @@ Nella tabella seguente sono elencati i criteri che è necessario aggiornare o cr
 
 Per includere o escludere gli ospiti e gli utenti esterni nelle regole di accesso condizionale, fare clic sulla scheda Includi o Escludi e controllare **tutti gli utenti ed esterni**.
 
-![acquisizione dello schermo dei controlli per l'esclusione degli ospiti](../images/identity-access-exclude-guests-ui.png)
+![acquisizione dello schermo dei controlli per l'esclusione degli ospiti](../media/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 ### <a name="guests-vs-external-users"></a>Clienti e utenti esterni
 In Azure AD, gli utenti guest e External sono gli stessi. Il tipo di utente per entrambi è Guest. Gli utenti Guest sono utenti B2B.

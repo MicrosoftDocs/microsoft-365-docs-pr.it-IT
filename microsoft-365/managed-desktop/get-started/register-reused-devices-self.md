@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e41d2ac66dea6640978435390bf3a8868c7cec7c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b9e1f0691d7bec1d8a17bb7f68a0e0941b3f6bd9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596533"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085955"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrare manualmente i dispositivi già presenti
 
@@ -210,7 +210,7 @@ Il file deve includere le **intestazioni di colonna** identiche a quelle del cam
 
 Dal portale Microsoft Managed Desktop [Azure](https://aka.ms/mmdportal)selezionare **dispositivi** nel riquadro di spostamento a sinistra. Selezionare **+ registra dispositivi**; verrà aperto il volo:
 
-[![Fly-in dopo aver selezionato i dispositivi di registrazione, elencare i dispositivi con colonne per gli utenti assegnati, il numero di serie, lo stato, la data dell'ultima visualizzazione e l'età](images/register-devices-flyin-sterile.png)](images/register-devices-flyin-sterile.png)
+[![Fly-in dopo aver selezionato i dispositivi di registrazione, elencare i dispositivi con colonne per gli utenti assegnati, il numero di serie, lo stato, la data dell'ultima visualizzazione e l'età](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
 
 [//]: # (Purtroppo questo non è vero. È possibile rimuovere questa nota, lasciandola adesso fino a quando non avremo la possibilità di chattare.)

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e04f5f48edee663bd6b386d063b67af196e7a782
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2a84cc9c275db1579dfab5050672faf2463698e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600143"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084971"
 ---
 # <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio dell'identità e creazione di report nel centro sicurezza Microsoft 365
 
@@ -29,7 +29,7 @@ ms.locfileid: "41600143"
 * Il numero di utenti segnalati a rischio dai criteri di accesso condizionale
 * Il numero di amministratori globali nell'organizzazione
 
-![Pagina identità categoria di report](../images/identities.png)
+![Pagina identità categoria di report](../../media/identities.png)
 
 Per gli utenti con specifici rilevamenti, è possibile esplorare l'avviso specifico ed esaminare il Centro sicurezza di Microsoft Defender. I rilevamenti includono anomalie quali gli utenti che effettuano l'accesso da posizioni sconosciute.
 

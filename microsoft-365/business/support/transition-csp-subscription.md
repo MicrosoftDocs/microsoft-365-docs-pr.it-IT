@@ -11,12 +11,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, abbonamento CSP transizione
 ms.date: 11/01/2017
-ms.openlocfilehash: 4aadfa24bec8728c7e011ac6da48a8e30516e145
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d8e04a0136f86d3c4bb51208081fd1dcbecf59d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595046"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42057262"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transizione di un abbonamento Microsoft 365 Business CSP
 
@@ -29,33 +29,33 @@ Se hai un abbonamento Microsoft 365 Business Preview CSP, segui questa guida per
 
     Visualizzerai un elenco degli abbonamenti della società.
 
-    ![Abbonamenti dei clienti nel Centro per i partner](images/pc_customer_subscriptions_1.png)
+    ![Abbonamenti dei clienti nel Centro per i partner](../../media/pc_customer_subscriptions_1.png)
     
 3. Nella pagina **abbonamenti** della società selezionare **Aggiungi sottoscrizione**.
 4. Nella pagina **nuova sottoscrizione** , selezionare **Small Business** , quindi selezionare **Microsoft 365 business** dall'elenco.
 5. Aggiungi il numero di licenze, quindi seleziona **Successivo: Revisione** per esaminare l'abbonamento, poi seleziona **Inoltra**.
 
-    ![Esaminare la nuova sottoscrizione a Microsoft 365 Business](images/pc_customer_reviewnewsubscription.png)
+    ![Esaminare la nuova sottoscrizione a Microsoft 365 Business](../../media/pc_customer_reviewnewsubscription.png)
 
     **Sottoscrizioni basate su licenza** mostrerà **Microsoft 365 Business Preview** e **Microsoft 365 Business**. Verrà sospesa la sottoscrizione di anteprima successiva.
 
 6. Seleziona **Microsoft 365 Business Preview**.
 7. Nella pagina **Microsoft 365 business Preview** selezionare **sospesa** per sospendere la sottoscrizione di anteprima.
 
-    ![Sospendere la nuova sottoscrizione a Microsoft 365 Business](images/pc_customer_m365bpreview_suspend.png)
+    ![Sospendere la nuova sottoscrizione a Microsoft 365 Business](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Seleziona **Invia** per confermare.
 
     Nella pagina **abbonamenti** confermare che lo stato di **anteprima di Microsoft 365 business** sia **sospeso**.
 
-    ![Conferma che lo stato della sottoscrizione dell'anteprima sia sospeso](images/pc_customer_m365bpreview_suspend_confirm.png)
+    ![Conferma che lo stato della sottoscrizione dell'anteprima sia sospeso](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. Facoltativamente, puoi convalidare il contratto di licenza. A tale scopo, attieniti alla seguente procedura:
     1. Seleziona **Utenti e licenze** dalla pagina **Sottoscrizioni** dell'azienda.
     2. Nella pagina **utenti e licenze** selezionare un utente.
     3. Nella pagina dell'utente, selezionare la sezione **assegna licenze** e verificare che sia in grado di visualizzare **Microsoft 365 business**.
 
-        ![Conferma che la licenza di Microsoft 365 Business è assegnata all'utente](images/pc_customer_userslicenses_m365b_validate.png)
+        ![Conferma che la licenza di Microsoft 365 Business è assegnata all'utente](../../media/pc_customer_userslicenses_m365b_validate.png)
 
 ## <a name="impact-to-customers-and-users-during-and-after-transition"></a>Conseguenze per clienti e utenti durante e dopo la transizione
 

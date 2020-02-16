@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6e5dd8d1d80d08ed808bc607fcc7aba8a390a9ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6f6468117f73d6cf7079ce50e8ea951422bfc073
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600313"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087433"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Usare le query condivise nella ricerca avanzata
 
@@ -33,7 +33,7 @@ ms.locfileid: "41600313"
 
 [Le query Ricerca avanzata](advanced-hunting-overview.md) possono essere condivise tra con gli utenti della stessa organizzazione. È anche possibile trovare query condivise pubblicamente su GitHub. Queste query consentono di intraprendere rapidamente specifici scenari di ricerca delle minacce senza dover scrivere le query da zero.
 
-![Immagine di query condivise](../images/advanced-hunting-shared-queries.png)
+![Immagine di query condivise](../../media/advanced-hunting-shared-queries.png)
 
 ## <a name="save-modify-and-share-a-query"></a>Salvare, modificare e condividere una query
 È possibile salvare una query nuova o esistente in modo che sia solo accessibile all'utente o condivisa con altri utenti della propria organizzazione. 
@@ -44,7 +44,7 @@ ms.locfileid: "41600313"
     
 3. Immettere un nome per la query. 
 
-   ![Immagine del salvataggio di una query](../images/advanced-hunting-save-query.png)
+   ![Immagine del salvataggio di una query](../../media/advanced-hunting-save-query.png)
 
 4. Selezionare la cartella in cui si vuole salvare la query.
     - **Query condivise**: query condivise con tutti gli utenti dell'organizzazione
@@ -55,7 +55,7 @@ ms.locfileid: "41600313"
 ## <a name="delete-or-rename-a-query"></a>Eliminare o rinominare una query
 1. Fare clic con il pulsante destro del mouse su una query che si vuole rinominare o eliminare.
 
-    ![Immagine dell'eliminazione di una query](../images/advanced_hunting_delete_rename.png)
+    ![Immagine dell'eliminazione di una query](../../media/advanced_hunting_delete_rename.png)
 
 2. Selezionare **Elimina** per confermare l'eliminazione. In alternativa, selezionare **Rinomina** e immettere un nuovo nome per la query.
 

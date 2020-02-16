@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: af061b50e92d2b7f00be3fab217a60855f0669c4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b12bf7b4bbda79a8699e01f31c97d0cfde330b5c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600233"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087373"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>Analisi degli incidenti in Microsoft Threat Protection
 
@@ -42,7 +42,7 @@ Analizzare gli avvisi che riguardano la rete, comprenderne il significato e racc
 
 1. Selezionare un incidente dalla relativa coda. <BR> Così facendo si apre un pannello laterale che fornisce un'anteprima delle informazioni importanti come stato, gravità, categorie ed entità interessate.
 
-    ![Immagine del riquadro laterale dell'incidente](../images/incident-side-panel.png)
+    ![Immagine del riquadro laterale dell'incidente](../../media/incident-side-panel.png)
 
 2. Selezionare **Apri pagina dell'incidente**. <BR> L'azione apre la pagina dell'incidente in cui è possibile trovare maggiori informazioni relative all'incidente come dettagli, commenti, azioni e schede (panoramica, avvisi, dispositivi, utenti, indagini, prove).
 
@@ -52,7 +52,7 @@ Analizzare gli avvisi che riguardano la rete, comprenderne il significato e racc
 La pagina di panoramica offre un quadro generale sugli elementi principali relativi all'incidente a cui prestare attenzione.
 
 
-![Immagine della pagina di panoramica degli incidenti](../images/incidents-overview.png)
+![Immagine della pagina di panoramica degli incidenti](../../media/incidents-overview.png)
 
 
 Le categorie di attacco consentono di visualizzare in termini numerici il livello di avanzamento dell'attacco rispetto alla kill chain. Come per altri prodotti di sicurezza Microsoft, Microsoft Threat Protection è conforme al framework [MITRE ATT&CK&trade;](https://attack.mitre.org/). 
@@ -69,7 +69,7 @@ Questa panoramica può essere utile nella valutazione iniziale dell'incidente fo
 ## <a name="alerts"></a>Avvisi 
 È possibile visualizzare tutti gli avvisi relativi all'incidente e altre informazioni correlate come gravità, entità che sono state coinvolte nell'avviso, origine degli avvisi (Azure ATP, Microsoft Defender ATP, Office 365 ATP) e il motivo per cui sono stati collegati. 
 
-![Immagine della pagina degli avvisi dell'incidente](../images/incident-alerts.png)
+![Immagine della pagina degli avvisi dell'incidente](../../media/incident-alerts.png)
 
 Per impostazione predefinita, gli avvisi sono ordinati cronologicamente, per consentire di visualizzare prima come si è svolto l'attacco nel tempo. Facendo clic su ciascun avviso, si accederà alla relativa pagina di avviso in cui è possibile condurre un'indagine approfondita di tale avviso. 
 
@@ -78,7 +78,7 @@ Nella scheda dei dispositivi sono elencati tutti i dispositivi in cui vengono vi
 
 Facendo clic sul nome del computer in cui si è verificato l'attacco, si accede alla relativa pagina in cui è possibile visualizzare gli avvisi che sono stati attivati e gli eventi correlati forniti per facilitare l'indagine. 
 
-![Immagine della scheda dei computer di un incidente](../images/incident-machines.png)
+![Immagine della scheda dei computer di un incidente](../../media/incident-machines.png)
 
 Selezionando la scheda della sequenza temporale è possibile scorrere la sequenza temporale del computer e visualizzare tutti gli eventi e i comportamenti osservati sul computer in ordine cronologico, intervallati dagli avvisi generati. 
 
@@ -89,18 +89,18 @@ Visualizzare gli utenti che sono stati identificati come parte di un determinato
 Facendo clic sul nome utente si accede alla pagina di Cloud App Security dell'utente dove è possibile condurre ulteriori indagini.
 
 
-![Immagine della scheda degli utenti di un incidente](../images/incident-users.png)
+![Immagine della scheda degli utenti di un incidente](../../media/incident-users.png)
 
 ## <a name="mailboxes"></a>Cassette postali
 Analizzare tutte le cassette postali che sono state identificate come parte di un relativo incidente, oppure relative a esso. Per svolgere ulteriori indagini, selezionando l'avviso relativo alla posta elettronica si aprirà Office 365 Advanced Threat Protection in cui è possibile intraprendere azioni correttive.
 
 
-![Immagine della scheda delle cassette postali di un incidente](../images/incident-mailboxes.png)
+![Immagine della scheda delle cassette postali di un incidente](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>Indagini
 Selezionare **Indagini** per visualizzare tutte le indagini automatizzate attivate dagli avvisi in questo incidente. Le indagini eseguiranno azioni correttive o attenderanno l'approvazione delle azioni da parte dell'analista, a seconda di come sono state configurate le indagini automatizzate per l'esecuzione in Microsoft Defender ATP e Office 365 Advanced Threat Protection.
 
-![Immagine della scheda delle indagini di un incidente](../images/incident-investigations.png)
+![Immagine della scheda delle indagini di un incidente](../../media/incident-investigations.png)
 
 
 Selezionare un'indagine per accedere alla pagina dei dettagli dell'indagine per ottenere informazioni complete sull'indagine e sullo stato della correzione. Se sono presenti azioni in attesa di approvazione come parte dell'indagine, verranno visualizzate nella scheda Azioni in sospeso. È necessario quindi agire come parte della correzione dell'incidente.
@@ -109,7 +109,7 @@ Selezionare un'indagine per accedere alla pagina dei dettagli dell'indagine per 
 ## <a name="evidence"></a>Prove
 Microsoft Threat Protection esamina automaticamente tutti gli eventi supportati dagli incidenti e le entità sospette negli avvisi, fornendo risposte automatiche e informazioni su importanti file, processi, servizi, messaggi di posta elettronica e altro ancora. Ciò consente di rilevare e bloccare rapidamente le potenziali minacce nell'incidente. 
 
-![Immagine della scheda delle prove di un incidente](../images/incident-evidence.png)
+![Immagine della scheda delle prove di un incidente](../../media/incident-evidence.png)
 
 Ognuna delle entità analizzate sarà contrassegnata con un verdetto (Dannosa, Sospetta, Pulita) e uno stato di correzione. Ciò consente di comprendere lo stato di correzione dell'intero incidente e quali sono i prossimi passi che possono essere presi per porre ulteriore rimedio.
 

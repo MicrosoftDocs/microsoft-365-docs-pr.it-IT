@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 031fc4164307d9fa8c78f02c775b230f7eff5383
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c165ec5869f8f53c28fb28414a04d73033a5772
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600183"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087612"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -48,13 +48,13 @@ Microsoft Threat Protection ' s Unique cross-product layer aumenta i singoli com
 - Automatizzare la risposta al compromesso mediante l'attivazione della correzione automatica per le risorse interessate tramite la correzione automatica
 - Consentire ai team di sicurezza di eseguire la ricerca di minacce dettagliate ed effettive tra endpoint e dati di Office
 
-![Immagine della pagina Panoramica sugli incidenti](../images/overview-incident.png) <br>
+![Immagine della pagina Panoramica sugli incidenti](../../media/overview-incident.png) <br>
 Evento incrociato tra i prodotti (panoramica)
 
-![Immagine della coda di avvisi](../images/incident-list.png)<br>
+![Immagine della coda di avvisi](../../media/incident-list.png)<br>
 Tutti gli avvisi correlati tra i prodotti della suite correlati tra loro in un singolo incidente (visualizzazione avvisi)
 
-![Immagine della coda degli incidenti](../images/advanced-hunting.png)<br>
+![Immagine della coda degli incidenti](../../media/advanced-hunting.png)<br>
 Caccia basata su query in cima alla posta elettronica e ai dati non elaborati dell'endpoint
 
 
@@ -75,7 +75,7 @@ Caratteristiche di Microsoft Threat Protection Cross-Product include:
 <br>
 
 
-## <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Per iniziare
 I clienti che dispongono di Microsoft 365 E5 o di una licenza equivalente possono usare Microsoft Threat Protection. Per iniziare, abilitare il servizio nel centro sicurezza Microsoft 365 all' [Security.Microsoft.com](https://security.microsoft.com). Per ulteriori informazioni, vedere:
 - [Requisiti relativi alle licenze](prerequisites.md#licensing-requirements)
 - [Attivare Microsoft Threat Protection](mtp-enable.md)

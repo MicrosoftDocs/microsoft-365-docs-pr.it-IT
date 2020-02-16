@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f0f436e2b4e9a26f10ec134718796624c9496e81
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f7b3f2fcaac71eefa2579a0c3fd66666fe00f605
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600153"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087681"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Monitoraggio e creazione di report delle app nel centro sicurezza Microsoft 365
 
@@ -29,7 +29,7 @@ Questi rapporti offrono maggiori informazioni su come vengono utilizzate le app 
 
 La **protezione della posta** elettronica Visualizza gli account di posta elettronica a rischio. È possibile fare clic su un account per esaminare ulteriormente il Centro sicurezza di Microsoft Defender.
 
-![Scheda di protezione della posta elettronica](../images/email-protection.png)
+![Scheda di protezione della posta elettronica](../../media/email-protection.png)
 
 ## <a name="monitor-app-permissions-granted-by-users"></a>Monitorare le autorizzazioni delle app concesse dagli utenti
 
@@ -37,25 +37,25 @@ La **protezione della posta** elettronica Visualizza gli account di posta elettr
 
 I fattori di rischio partono da informazioni generali, ad esempio l'editore app, per le misure di sicurezza e i controlli, ad esempio se l'app supporta la crittografia a riposo o fornisce un registro di controllo delle attività degli utenti.
 
-![Cloud app Security OAuth Apps Card](../images/cloud-app-security-oauth-apps.png)
+![Cloud app Security OAuth Apps Card](../../media/cloud-app-security-oauth-apps.png)
 
 ## <a name="monitor-cloud-app-user-accounts"></a>Monitorare gli account utente delle app Cloud
 
 Gli **account delle app cloud per gli elenchi di revisione** possono richiedere attenzione.
 
-![Account app cloud per la scheda di Revisione](../images/cloud-app-accounts-for-review.png)
+![Account app cloud per la scheda di Revisione](../../media/cloud-app-accounts-for-review.png)
 
 ## <a name="understand-which-cloud-apps-are-used"></a>Informazioni sulle app Cloud utilizzate
 
 Le **app del cloud scoperte (categorie)** mostrano quali tipi di app vengono utilizzate nell'organizzazione e si collegano al dashboard di individuazione cloud in cloud app Security. Per ulteriori informazioni, vedere [Guida introduttiva: lavorare con le app scoperte](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
 
-![Scheda categorie di applicazioni cloud scoperte](../images/discovered-cloud-apps-categories.png)
+![Scheda categorie di applicazioni cloud scoperte](../../media/discovered-cloud-apps-categories.png)
 
 ## <a name="monitor-where-users-access-cloud-apps"></a>Monitorare la posizione in cui gli utenti accedono alle app Cloud
 
 Le **posizioni delle attività delle app Cloud** mostrano dove gli utenti accedono alle app cloud.
 
-![Scheda percorsi attività app Cloud](../images/cloud-app-activity-locations.png)
+![Scheda percorsi attività app Cloud](../../media/cloud-app-activity-locations.png)
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>Monitorare l'integrità dei carichi di lavoro dell'infrastruttura
 
@@ -65,4 +65,4 @@ Azure Security Center fornisce la gestione della sicurezza unificata e la protez
 
 Per ulteriori informazioni, vedere [documentazione relativa al centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/).
 
-![Scheda di integrità dell'infrastruttura](../images/infrastructure-health.png)
+![Scheda di integrità dell'infrastruttura](../../media/infrastructure-health.png)

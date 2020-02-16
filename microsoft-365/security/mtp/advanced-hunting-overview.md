@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7e96ca06a7b77a6bdc0cf4af55d519aebda833cd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f268c87da68c2badbfa885f0d9357a6a53d0a039
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600383"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087496"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Cercare in modo proattivo minacce con la ricerca avanzata di Microsoft Threat Protection
 
@@ -61,14 +61,14 @@ Fare clic con il pulsante destro del mouse su un valore nel set di risultati per
 - Escludere il valore selezionato dalla query (`!=`)
 - Per aggiungere il valore alla query, è possibile usare gli operatori più avanzati, come `contains`, `starts with` e `ends with` 
 
-![Immagine del set di risultati della ricerca avanzata Microsoft Defender ATP](../images/advanced-hunting-results-filter.png)
+![Immagine del set di risultati della ricerca avanzata Microsoft Defender ATP](../../media/advanced-hunting-results-filter.png)
 
 ## <a name="filter-the-query-results"></a>Filtrare i risultati della query
 I filtri visualizzati a destra forniscono un riepilogo del set di risultati. Ogni colonna ha una propria sezione in cui sono elencati i valori distinti individuati per quella colonna e il numero di istanze.
 
 Perfezionare la query selezionando i pulsanti "+" o "-" sui valori che si desidera includere o escludere e quindi selezionare **Esegui query**.
 
-![Immagine del filtro di ricerca avanzata](../images/advanced-hunting-filter.png)
+![Immagine del filtro di ricerca avanzata](../../media/advanced-hunting-filter.png)
 
 Dopo avere applicato il filtro per modificare la query e aver eseguito la query, i risultati vengono aggiornati di conseguenza.
 
