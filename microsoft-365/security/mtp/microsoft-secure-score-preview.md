@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3fe8a390e92e56a98d16a4cbc647a74b38c248ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1039232750e52b3c03cbe7c8190498382c795708
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600193"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087575"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure Score (anteprima)
 
@@ -79,7 +79,7 @@ Con l'accesso in sola lettura, non è possibile modificare lo stato o le note pe
 * Amministratore del servizio
 * Ruolo con autorizzazioni di lettura per la sicurezza
 * Operatore della sicurezza
-* Lettore globale
+* Ruolo con autorizzazioni di lettura globali
 
 ### <a name="graph-api"></a>API del grafico
 
@@ -100,7 +100,7 @@ Per facilitare le informazioni necessarie più rapidamente, le azioni di miglior
 
 Nella pagina Panoramica di Microsoft Secure score, è possibile vedere come vengono divisi i punti tra questi gruppi e quali sono i punti disponibili. La pagina di panoramica è anche il luogo in cui ottenere una visualizzazione completa del punteggio totale, l'andamento storico del Punteggio sicuro con i confronti di benchmark e le azioni di miglioramento prioritarie che possono essere intraprese per migliorare il punteggio.
 
-![Pagina iniziale](../media/secure-score/secure-score-homepage.png)
+![Pagina iniziale](../../media/secure-score/secure-score-homepage.png)
 di Secure Score*Figura 1: pagina Panoramica del Punteggio di Microsoft Secure*
 
 ## <a name="take-action-to-improve-your-score"></a>Eseguire un'azione per migliorare il Punteggio
@@ -115,7 +115,7 @@ La classificazione si basa sul numero di punti rimanenti rimasti per raggiungere
 
 Quando si seleziona un'azione di miglioramento specifica, viene visualizzato un riquadro a comparsa a pagina intera.  
 
-![Esempio](../media/secure-score/secure-score-improvement-action.png)
+![Esempio](../../media/secure-score/secure-score-improvement-action.png)
 di riquadro a comparsa Azione miglioramento*Figura 2: esempio del riquadro a comparsa Azione miglioramento*
 
 Per completare l'azione, sono disponibili alcune opzioni:

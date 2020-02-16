@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: e8c2b10f3e1dd88703b15c326dedb164a686cfca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: aea95dae0165eb23331b2fa24d5fc752df3f4345
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596733"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084311"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Criteri consigliati per la protezione della posta elettronica
 
@@ -34,11 +34,11 @@ Questi suggerimenti richiedono agli utenti di utilizzare i client di posta elett
 
 Nel diagramma seguente vengono illustrati i criteri comuni di identità e accesso ai dispositivi e viene indicato quali criteri devono essere aggiornati per proteggere la posta elettronica. Si noti l'aggiunta di una nuova regola per Exchange Online per bloccare i client ActiveSync. Questo impone l'utilizzo di Outlook Mobile.
 
-![Riepilogo degli aggiornamenti dei criteri per la protezione della posta elettronica](../images/identity-access-ruleset-mail.png)
+![Riepilogo degli aggiornamenti dei criteri per la protezione della posta elettronica](../media/identity-access-ruleset-mail.png)
 
 Se è stato incluso Exchange Online e Outlook nell'ambito dei criteri quando vengono configurati, è necessario creare solo il nuovo criterio per bloccare i client ActiveSync. Esaminare i criteri elencati nella tabella seguente e apportare le aggiunte consigliate o confermare che sono già inclusi. Ogni regola collega le istruzioni di configurazione associate nell'articolo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
-|Livello di protezione|Generali|Ulteriori informazioni|
+|Livello di protezione|Generali|Altre informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere Exchange Online nell'assegnazione delle app Cloud|
 |        |[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere Exchange Online nell'assegnazione delle app Cloud|

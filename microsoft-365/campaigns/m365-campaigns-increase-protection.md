@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Ottenere assistenza per aumentare il livello di protezione in Microsoft 365 business
-ms.openlocfilehash: 3cfb8d0a38fc797ec25fb0e4e33409e225646ef2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2dfccc7041c5fa32fb56d2ef2b113e9a3c883392
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594851"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080665"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
@@ -83,7 +83,7 @@ Per creare una regola di trasporto della posta:
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**||
 |:-----|:-----|:-----|
-|Nome  <br/> |Regola anti-ransomware: avvisa gli utenti  <br/>  |
+|Name  <br/> |Regola anti-ransomware: avvisa gli utenti  <br/>  |
 |Applica questa regola se. . .  <br/> |Qualsiasi allegato. . . l'estensione del file corrisponde. . .  <br/> |
 |Specificare parole o frasi  <br/> |Aggiungere questi tipi di file:  <br/> dotm, docm, xlsm, sltm, xla, xlam, XLL, pptm, potm, ppam, ppsm, sldm  <br/>|
 |Eseguire le operazioni seguenti. . .  <br/> |Invia una notifica al destinatario tramite messaggio  <br/> |
@@ -117,7 +117,7 @@ Per creare una regola di trasporto della posta, guardare [questo breve video](ht
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**|
 |:-----|:-----|
-|Nome  <br/> |Impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni  <br/> |
+|Name  <br/> |Impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni  <br/> |
 |Applica questa regola se...  <br/> |Il mittente. . . è esterno/interno. . . All'interno dell'organizzazione  <br/> |
 |Aggiungi condizione  <br/> |Le proprietà del messaggio. . . includere il tipo di messaggio. . . Inoltro automatico  <br/> |
 |Eseguire le operazioni seguenti:  <br/> |Blocca il messaggio. . . rifiuta il messaggio e Includi una spiegazione.  <br/> |
@@ -147,7 +147,7 @@ Per creare un criterio di anti-phishing ATP, guardare [questo breve video di for
 
 |**Impostazione o opzione**<br/>|**Impostazione consigliata** <br/>|
 |:-----|:-----|
-|Nome  <br/> |Domain e la maggior parte del personale prezioso della campagna  <br/> |
+|Name  <br/> |Domain e la maggior parte del personale prezioso della campagna  <br/> |
 |Descrizione  <br/> |Garantire che la maggior parte del personale importante e del nostro dominio non siano rappresentati.  <br/> |
 |Aggiungere gli utenti a Protect  <br/> |Seleziona **+ Aggiungi una condizione, il destinatario è**. Digitare i nomi utente oppure immettere l'indirizzo di posta elettronica del candidato, del responsabile della campagna e di altri membri del personale importanti. È possibile aggiungere fino a 20 indirizzi interni ed esterni che si desidera proteggere dalla rappresentazione.  <br/> |
 |Aggiungere domini da proteggere  <br/> |Selezionare **+ Aggiungi una condizione, il dominio del destinatario è**. Se ne è stata definita una, immettere il dominio personalizzato associato all'abbonamento a Microsoft 365. È possibile immettere più di un dominio.  <br/> |
@@ -160,24 +160,24 @@ Per ulteriori informazioni, vedere [configurare i criteri di anti-phishing ATP d
   
 ## <a name="protect-against-malicious-attachments-files-and-links-with-advanced-threat-protection-atp"></a>Protezione da allegati, file e collegamenti dannosi con Advanced Threat Protection (ATP)
 
-![Banner che puntano https://aka.ms/aboutM365previewa.](../business/media/m365admincenterchanging.png)
+![Banner che puntano https://aka.ms/aboutM365previewa.](../media/m365admincenterchanging.png)
 
 Prima di tutto, assicurarsi <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> che nell'interfaccia di amministrazione si sia attivata la nuova anteprima dell'interfaccia di amministrazione. Attiva l'interruttore accanto al testo **del nuovo**interfaccia di amministrazione.
 
-   ![Nuova anteprima dell'interfaccia di amministrazione.](media/previewon.png)
+   ![Nuova anteprima dell'interfaccia di amministrazione.](../media/previewon.png)
 
 Se la pagina di **installazione** non è ancora visualizzata con le schede del tenant, vedere come eseguire questa procedura nel centro sicurezza &amp; e conformità di Office 365. Vedere [configurare gli allegati sicuri di ATP nel centro sicurezza & Compliance](#set-up-atp-safe-attachments-in-the-security--compliance-center) e [configurare i collegamenti sicuri di ATP nel centro sicurezza & conformità](#set-up-atp-safe-links-in-the-security--compliance-center).
 
 1.  Nella barra di spostamento a sinistra, scegliere **Setup**.
 2. Nella pagina **configurazione** scegliere **Visualizza** nella scheda **aumenta protezione da minacce avanzate** .</br></br>
-    ![Scegliere View per aumentare la protezione dalle minacce avanzate.](media/startatp.png) 
+    ![Scegliere View per aumentare la protezione dalle minacce avanzate.](../media/startatp.png) 
 
 3. Nella pagina **aumenta protezione dalle minacce avanzate** scegliere **inizia**.
 4. Nel riquadro che si apre, selezionare le caselle di controllo accanto a **collegamenti e allegati di posta elettronica**, **analizzare i file in SharePoint, OneDrive e teams**e **analizzare i collegamenti in Office Desktop e Office Online Apps** in **analisi elementi per contenuti dannosi**.
 
       - In **collegamenti e allegati di posta elettronica**, digitare tutti gli utenti o gli utenti specifici di cui si desidera analizzare la posta elettronica.
 
-    ![Selezionare tutte le caselle di controllo in aumenta protezione dalle minacce avanzate.](media/setatp.png)
+    ![Selezionare tutte le caselle di controllo in aumenta protezione dalle minacce avanzate.](../media/setatp.png)
 5. Scegliere **create Policy** per abilitare gli allegati sicuri di ATP e i collegamenti sicuri ATP.
 
 ### <a name="set-up-atp-safe-attachments-in-the-security--compliance-center"></a>Configurare gli allegati sicuri di ATP nel centro sicurezza & Compliance
@@ -203,7 +203,7 @@ Per creare un criterio degli allegati sicuri di ATP, guardare [questo breve vide
 
 |**Impostazione o opzione**|**Impostazione consigliata** <br/>|
 |:-----|:-----|
-|Nome  <br/> |Blocca i messaggi di posta elettronica correnti e futuri con malware rilevato.  <br/> |
+|Name  <br/> |Blocca i messaggi di posta elettronica correnti e futuri con malware rilevato.  <br/> |
 |Descrizione  <br/> |Blocca i messaggi di posta elettronica e gli allegati correnti e futuri con malware rilevato.  <br/> |
 |Save Attachments Unknown Malware Response  <br/> |Selezionare **blocca-blocca i messaggi di posta elettronica e gli allegati correnti e futuri con malware rilevato**.  <br/> |
 |Reindirizza l'allegato sul rilevamento  <br/> |Attiva reindirizzamento (selezionare questa casella) immettere l'account di amministratore o la configurazione di una cassetta postale per la quarantena.          Applicare la selezione precedente se la ricerca di malware per gli allegati non è stata eseguita o si verifica un errore (selezionare questa casella).  <br/> |
@@ -247,7 +247,7 @@ Per creare un nuovo criterio mirato a tutti i destinatari nel dominio:
 
 |**Impostazione o opzione**|**Impostazione consigliata** <br/>|
 |:-----|:-----|
-|Nome  <br/> |Criteri dei collegamenti sicuri per tutti i destinatari del dominio  <br/> |
+|Name  <br/> |Criteri dei collegamenti sicuri per tutti i destinatari del dominio  <br/> |
 |Selezionare l'azione per gli URL potenzialmente dannosi sconosciuti nei messaggi  <br/> |Selezionare **su URL verrà riscritto e controllato in base a un elenco di collegamenti dannosi noti quando l'utente fa clic sul collegamento**.  <br/> |
 |Utilizzare gli allegati sicuri per analizzare il contenuto scaricabile  <br/> |Selezionare questa casella.  <br/> |
 |Applicato a  <br/> |Il dominio del destinatario è. . . Selezionare il dominio.  <br/> |
@@ -263,7 +263,7 @@ Dopo aver attivato la ricerca nel registro di controllo nel centro &amp; sicurez
 1. Per abilitare la ricerca nel registro di controllo, accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> e scegliere **Compliance** in **admin Centers** nella barra di navigazione sinistra. 
 2. Nella pagina **Microsoft 365 Compliance** scegliere **altre risorse**e quindi **Apri** nella scheda **centro &amp; sicurezza di Office 365** .
 
-    ![Scegliere Open in Office 365 Security & Compliance Cars.](media/gotosecandcomp.png)
+    ![Scegliere Open in Office 365 Security & Compliance Cars.](../media/gotosecandcomp.png)
 3. Nella pagina sicurezza e conformità scegliere **Search** e quindi **controllo Log Search**.
 1. Nella parte superiore della pagina di **ricerca del registro di controllo** scegliere **Attiva controllo**.
 
@@ -276,14 +276,14 @@ Dopo che la funzionalità è stata attivata, è possibile cercare file, cartelle
 2. Nell'interfaccia di amministrazione di SharePoint, andare alla **condivisione**dei **criteri** \> .
 3. Nella pagina **condivisione** , in **collegamenti a file e cartelle**, selezionare **persone specifiche**e in **Impostazioni avanzate per i collegamenti "chiunque"**, selezionare **questi collegamenti devono scadere entro questo**numero di giorni e digitare 14 (o un altro numero di giorni in cui si desidera limitare la durata del collegamento).
 
-    ![Scegliere persone specifiche e impostare la scadenza del collegamento su 14 giorni.](media/anyonelinks.png)
+    ![Scegliere persone specifiche e impostare la scadenza del collegamento su 14 giorni.](../media/anyonelinks.png)
 
 ## <a name="activity-alerts"></a>Avvisi attività
 
 È possibile utilizzare gli avvisi attività per monitorare le attività degli utenti e degli amministratori e rilevare eventuali incidenti antimalware e di prevenzione della perdita di dati nell'organizzazione. La sottoscrizione include un insieme di criteri predefiniti, ma è anche possibile creare quelli personalizzati. Per ulteriori informazioni, vedere [criteri di avviso](https://docs.microsoft.com/office365/securitycompliance/alert-policies). Ad esempio, se si archivia un file importante in SharePoint che non si desidera che nessuno condivida esternamente, è possibile creare una notifica che avvisi se qualcuno lo condivide.
 
 Nella figura seguente vengono illustrati i criteri predefiniti inclusi in Microsoft 365 business. <br/><br/>
-    ![Criteri di avviso predefiniti inclusi in Microsoft 365 business.](media/alertpolicies.png)
+    ![Criteri di avviso predefiniti inclusi in Microsoft 365 business.](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>Disabilitare o gestire la condivisione del calendario
 
@@ -296,10 +296,10 @@ Nella figura seguente vengono illustrati i criteri predefiniti inclusi in Micros
 3. Scegliere **Salva modifiche** nella parte inferiore della pagina.
 
     Nella figura seguente viene illustrata la condivisione del calendario non consentita. </br></br>
-    ![Schermata di visualizzazione della condivisione del calendario esterno come non consentita.](media/nocalendarsharing.png)
+    ![Schermata di visualizzazione della condivisione del calendario esterno come non consentita.](../media/nocalendarsharing.png)
 
     Nella figura seguente vengono illustrate le impostazioni quando la condivisione del calendario è consentita con un collegamento di posta elettronica con solo le informazioni sulla disponibilità.
 
-   ![Screenshot del calendario condivisione delle informazioni sulla disponibilità con tutti gli utenti.](media/sharefreebusy.png)
+   ![Screenshot del calendario condivisione delle informazioni sulla disponibilità con tutti gli utenti.](../media/sharefreebusy.png)
 
 Se gli utenti sono autorizzati a condividere i propri calendari, vedere le [istruzioni](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) per la condivisione da Outlook sul Web.

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come inviare messaggi di posta elettronica crittografati tramite Outlook.
-ms.openlocfilehash: 1a450a9891d47a136798432fdb919349fb82e097
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 559998326caedaf3352741ad9083940f79b1a614
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594737"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080459"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Crittografare o contrassegnare il messaggio di posta elettronica sensibile
 
@@ -43,7 +43,7 @@ Prima di inviare messaggi di posta elettronica con informazioni riservate o sens
 - **Crittografia:** È possibile crittografare il messaggio di posta elettronica per proteggere la privacy delle informazioni contenute nel messaggio di posta elettronica. Quando si crittografa un messaggio di posta elettronica, viene convertito dal testo normale leggibile al testo cifrato criptato. Solo il destinatario che ha la chiave privata corrispondente alla chiave pubblica utilizzata per crittografare il messaggio può decifrare il messaggio per la lettura. Qualsiasi destinatario senza la chiave privata corrispondente, tuttavia, Visualizza testo indecifrabile. L'amministratore può definire regole per la crittografia automatica dei messaggi che soddisfano determinati criteri. Ad esempio, l'amministratore può creare una regola che consente di crittografare tutti i messaggi inviati all'esterno dell'organizzazione o tutti i messaggi che citano parole o frasi specifiche. Tutte le regole di crittografia verranno applicate automaticamente.
 - **Etichette di riservatezza:** La campagna può anche configurare le etichette di riservatezza che è possibile applicare ai file e ai messaggi di posta elettronica per mantenerli conformi ai criteri di protezione delle informazioni della campagna. Quando si imposta un'etichetta, l'etichetta viene mantenuta con l'indirizzo di posta elettronica, anche quando viene inviata, ad esempio, come intestazione del messaggio.
 
-![Diagramma di un messaggio di posta elettronica con callout per le etichette e la crittografia](media/m365-campaign-email-encrypt.png)
+![Diagramma di un messaggio di posta elettronica con callout per le etichette e la crittografia](../media/m365-campaign-email-encrypt.png)
 
 
 ## <a name="set-it-up"></a>Configurazione

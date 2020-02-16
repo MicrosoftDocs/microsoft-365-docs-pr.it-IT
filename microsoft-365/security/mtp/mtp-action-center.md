@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a0b86240e09838ff290bb9c3b4b53f5cce3e2995
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600123"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083785"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Accedere al centro notifiche per visualizzare le azioni correttive
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600123"
 
 ## <a name="a-single-pane-of-glass-experience"></a>Un'esperienza a "riquadro unico"
 
-![Centro notifiche](../images/air-actioncenter.png)
+![Centro notifiche](../../media/air-actioncenter.png)
 
 Utilizzare il centro notifiche per visualizzare i risultati delle indagini attuali e passate sui dispositivi e le cassette postali dell'organizzazione. A seconda del tipo di minaccia e del [conseguente verdetto](mtp-autoir-results.md#remediation-actions-following-automated-investigation), le azioni di correzione e si verificano automaticamente o previa approvazione da parte del team addetto alle operazioni di sicurezza della propria organizzazione. Tutte le azioni correttive, siano esse in attesa di approvazione o già approvate, vengono consolidate nel centro notifiche. 
 
@@ -65,9 +65,9 @@ Nella tabella seguente sono elencate le azioni correttive attualmente supportate
 
     - Nella scheda **Cronologia** sono elencate le indagini precedenti e le azioni correttive intraprese automaticamente. È possibile visualizzare i dati relativi all'ultimo giorno, mese, all'ultima settimana o agli ultimi sei mesi.
 
-4. Per visualizzare solo le colonne desiderate, selezionare **Personalizza colonne**.<br/>![Centro notifiche in Microsoft Threat Protection](../images/mtp-action-center.png)
+4. Per visualizzare solo le colonne desiderate, selezionare **Personalizza colonne**.<br/>![Centro notifiche in Microsoft Threat Protection](../../media/mtp-action-center.png)
 
-5. Selezionare un elemento nell'elenco per visualizzare maggiori dettagli relativi a un'indagine. Si aprirà la visualizzazione dei dettagli dell'indagine.<br/>![Dettagli indagine](../images/mtp-air-investdetails.png)
+5. Selezionare un elemento nell'elenco per visualizzare maggiori dettagli relativi a un'indagine. Si aprirà la visualizzazione dei dettagli dell'indagine.<br/>![Dettagli indagine](../../media/mtp-air-investdetails.png)
 
     - Se l'indagine riguarda il contenuto della posta elettronica (ad esempio, se l'entità è una cassetta postale), i dettagli dell'indagine vengono aperti nel Centro sicurezza e conformità di Office 365 ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
 

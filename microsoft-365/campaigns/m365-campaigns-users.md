@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come Microsoft 365 per le campagne influisce sugli utenti.
-ms.openlocfilehash: 7c510de861758da3da2c86a6804a58de6d4e8030
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594757"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080508"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>In che modo Microsoft 365 per le campagne influisce sugli utenti
 
 Microsoft 365 per le campagne rende più difficile per gli hacker accedere all'ambiente. Il compromesso è che gli utenti devono essere a conoscenza di come lavorare all'interno di questo ambiente più sicuro. È necessario un po' di pazienza, ma è opportuno mantenere la protezione dell'organizzazione.
 
-![Illustrazione che riassume i punti chiave di seguito per iPhone, dispositivi Android, Mac, Windows 10, condivisione e personale chiave](media/M365-democracy-Users_700px.png)
+![Illustrazione che riassume i punti chiave di seguito per iPhone, dispositivi Android, Mac, Windows 10, condivisione e personale chiave](../media/M365-democracy-Users_700px.png)
 
 ## <a name="use-secure-email-practices"></a>Utilizzo di procedure di posta elettronica sicure
 Tutti gli utenti devono essere a conoscenza e utilizzare queste procedure di posta elettronica per garantire la protezione della posta elettronica:

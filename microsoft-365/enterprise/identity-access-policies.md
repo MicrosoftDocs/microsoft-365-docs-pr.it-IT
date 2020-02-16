@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: dad6c2f8d85c81b67da1aa3425c73e5991b3829b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 272e8a76cdb3a1555f561bd56e63422f14394904
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596953"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067417"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -31,7 +31,7 @@ In questa guida viene descritto come distribuire i criteri consigliati in un amb
 
 Nel diagramma seguente viene illustrato il set di criteri consigliato. Indica il livello di protezione a cui si applica ogni criterio e se i criteri si applicano ai PC o ai telefoni e ai tablet oppure a entrambe le categorie di dispositivi. Indica anche dove sono configurati questi criteri.
 
-![Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../images/Identity_device_access_policies_byplan.png)
+![Criteri comuni per la configurazione dell'identità e dell'accesso ai dispositivi](../media/Identity_device_access_policies_byplan.png)
 
 
 Nella parte restante di questo articolo viene descritto come configurare questi criteri. 
@@ -41,7 +41,7 @@ L'utilizzo dell'autenticazione a più fattori è consigliato prima di registrare
 Per ottenere il tempo necessario per eseguire queste attività, è consigliabile implementare i criteri di base nell'ordine indicato in questa tabella. Tuttavia, i criteri dell'AMF per la protezione sensibile e altamente regolamentata possono essere implementati in qualsiasi momento.
 
 
-|Livello di protezione|Generali|Ulteriori informazioni|
+|Livello di protezione|Generali|Altre informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Bloccare i client che non supportano l'autenticazione moderna](#block-clients-that-dont-support-modern-authentication)|I client che non utilizzano l'autenticazione moderna possono ignorare le regole di accesso condizionale, quindi è importante bloccarle|
@@ -62,13 +62,13 @@ Una procedura consigliata consiste nel creare un gruppo di Azure AD per l'esclus
 
 Nel diagramma seguente viene fornito un esempio di assegnazione degli utenti ed esclusioni.
 
-![Esempio di assegnazione e esclusioni degli utenti per le regole dell'AMF](../images/identity-access-policies-assignment.png)
+![Esempio di assegnazione e esclusioni degli utenti per le regole dell'AMF](../media/identity-access-policies-assignment.png)
 
 Nella figura "il team del progetto Top Secret X" viene assegnato un criterio di accesso condizionale che richiede *sempre*l'autenticazione master. Essere giudiziosi quando si applicano livelli di protezione superiori agli utenti. I membri del team di progetto saranno tenuti a fornire due forme di autenticazione ogni volta che accedono, anche se non visualizzano contenuto fortemente regolamentato.  
 
 Tutti i gruppi di Azure AD creati come parte di questi suggerimenti devono essere creati come gruppi di Office 365. Questa impostazione è particolarmente importante per la distribuzione di Azure Information Protection (AIP) quando si proteggono i documenti in SharePoint Online.
 
-![Acquisizione dello schermo per la creazione di gruppi di Office 365](../images/identity-device-AAD-groups.png)
+![Acquisizione dello schermo per la creazione di gruppi di Office 365](../media/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Richiedere l'autenticazione a più fattori basata sul rischio di accesso
@@ -84,7 +84,7 @@ Per creare nuovi criteri di accesso condizionale:
 
 4. Scegliere **Nuovo criterio**.
 
-![Criterio di accesso condizionale di base](./media/secure-email/CA-EXO-policy-1.png)
+![Criterio di accesso condizionale di base](../media/secure-email/CA-EXO-policy-1.png)
 
  Nelle tabelle seguenti vengono descritte le impostazioni dei criteri di accesso condizionale da implementare per questo criterio.
 

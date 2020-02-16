@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ec659a939064d34d3e0cc078a90cd343e495ae58
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6a0caa80d89ad40c3a2e2b0caa55c8dc2027a06d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957371"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087270"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -97,7 +97,7 @@ Per facilitare le informazioni necessarie più rapidamente, le azioni di miglior
 
 Nella pagina Panoramica di Microsoft Secure score, è possibile vedere come vengono divisi i punti tra questi gruppi e quali sono i punti disponibili. La pagina di panoramica è anche il luogo in cui ottenere una visualizzazione completa del punteggio totale, l'andamento storico del Punteggio sicuro con i confronti di benchmark e le azioni di miglioramento prioritarie che possono essere intraprese per migliorare il punteggio.
 
-![Pagina iniziale](../media/secure-score/homepage-original.png)
+![Pagina iniziale](../../media/secure-score/homepage-original.png)
 di Secure Score*Figura 1: pagina Panoramica del Punteggio di Microsoft Secure*
 
 ## <a name="take-action-to-improve-your-score"></a>Eseguire un'azione per migliorare il Punteggio
@@ -122,7 +122,7 @@ Quando si seleziona un'azione di miglioramento specifica, viene visualizzato un 
 
 4. Selezionare **Verifica** perché l'azione di miglioramento richiede la revisione periodica di una parte dell'ambiente per ottenere e mantenere i punti. Ad esempio, le regole di inoltro delle cassette postali devono essere riviste settimanalmente per assicurarsi che i dati non vengano exfiltrated dalla rete. Non è necessario apportare alcuna modifica, ma sarà necessario eseguire un'azione. Se si esaminano regolarmente le regole, verranno ricevuti i punti. In caso contrario, il punteggio viene ridotto.
 
-![Esempio di azione di miglioramento sicuro del Punteggio](../media/secure-score/secure-score1x450.png) ![Esempio di azione di miglioramento Secure Score Review](../media/secure-score/secure-score2x450.png)
+![Esempio di azione di miglioramento sicuro del Punteggio](../../media/secure-score/secure-score1x450.png) ![Esempio di azione di miglioramento Secure Score Review](../../media/secure-score/secure-score2x450.png)
 
 *Figure 2 & 3: azione di miglioramento comparsa*
 
@@ -140,7 +140,7 @@ Per rendere Microsoft Secure Score un migliore rappresentante della posizione di
 
 ### <a name="removed-not-scored-improvement-actions"></a>Azioni di miglioramento "non segnate" rimosse
 
-Uno dei principi del Punteggio sicuro è che il punteggio dovrebbe essere standardizzato e facilmente correlabile. L'utilizzo di azioni di miglioramento non misurabili o utilizzabili ha provocato confusione. Un punteggio sicuro di Microsoft ha senso solo quando ogni suggerimento può avere un effetto chiaro sulla partitura. Le azioni di miglioramento non segnate non sono misurabili.  
+Uno dei principi del Punteggio sicuro è che il punteggio dovrebbe essere standardizzato e facilmente correlabile. L'utilizzo di azioni di miglioramento non misurabili o utilizzabili ha provocato confusione. Microsoft Secure Score ha senso solo quando ogni suggerimento può avere un effetto chiaro sulla partitura. Le azioni di miglioramento non segnate non sono misurabili.  
 
 Per questi motivi, tutte le azioni di miglioramento non segnate sono state rimosse. Non è necessaria alcuna azione da parte vostra.
 
@@ -210,11 +210,7 @@ Sono state aggiunte nuove azioni di miglioramento:
 
 Uno dei principi del Punteggio sicuro è che il punteggio dovrebbe essere standardizzato e facilmente correlabile. L'utilizzo di azioni di miglioramento non misurabili o utilizzabili ha provocato confusione. Un punteggio sicuro di Microsoft ha senso solo quando ogni suggerimento può avere un effetto chiaro sulla partitura. Esaminare le azioni di miglioramento non vengono misurate allo stesso livello di altre azioni di miglioramento.  
 
-Per questi motivi, tutte le azioni di miglioramento che richiedono una cadenza di revisione verranno temporaneamente rimosse. Non è necessaria alcuna azione da parte vostra.
-
-### <a name="simplification-of-the-point-system"></a>Semplificazione del sistema di punti
-
-Per standardizzare i punti tra più esperienze, ogni totale del punto di azione di miglioramento Punteggio sicuro verrà aggiornato per un valore di 10 punti o meno. È necessario essere più coerenti nell'ampio respiro dei controlli di sicurezza che sono presenti oggi e quelli che verranno aggiunti in futuro. Anche se si tratta di una modifica significativa e si vedrà un calo dei totali dei punti, non verranno apportate modifiche alla postura di sicurezza.  
+Per questi motivi, tutte le azioni di miglioramento che richiedono una cadenza di revisione verranno temporaneamente rimosse. Non è necessaria alcuna azione da parte vostra. 
 
 ### <a name="preview-features"></a>Funzionalità di anteprima
 
@@ -225,6 +221,7 @@ Nella [versione di anteprima](microsoft-secure-score-preview.md)verranno incluse
 * Migliorare la tracciabilità e il monitoraggio delle regressioni dei punteggi
 * Filtrare, contrassegnare, ricercare e raggruppare le azioni di miglioramento
 * Gestire gli obiettivi futuri utilizzando le proiezioni dei punteggi e le azioni pianificate
+* Semplificazione del sistema di punti
 * E altro ancora!
 
 ## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi

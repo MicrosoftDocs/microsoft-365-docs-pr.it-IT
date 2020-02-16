@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 208cbb49afc2f4520fa44a4ef283194bcaff22be
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08aa1f0c252d931ab1abf078b1c0cfcf7d9b43a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600093"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083757"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Visualizzare i dettagli e i risultati di un'indagine automatizzata
 
@@ -34,7 +34,7 @@ ms.locfileid: "41600093"
 
 Quando si verifica un'indagine automatizzata in Microsoft Threat Protection, i dettagli di tale indagine sono disponibili durante e dopo il processo di indagine automatizzata. Se di dispone delle [autorizzazioni necessarie](mtp-action-center.md#required-permissions-for-action-center-tasks), è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. La vista dei dettagli dell'indagine consente di avere uno stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
 
-![Dettagli indagine](../images/mtp-air-investdetails.png)
+![Dettagli indagine](../../media/mtp-air-investdetails.png)
 
 ## <a name="open-the-investigation-details-view"></a>Aprire la visualizzazione dei dettagli dell'indagine
 
@@ -60,7 +60,7 @@ Utilizzare una pagina dei dettagli di un incidente per visualizzare informazioni
 
 2. Nel riquadro di spostamento, scegliere **Incidenti**. 
 
-3. Selezionare un elemento nell'elenco per aprire la visualizzazione dei dettagli dell'evento.<br/>![Dettagli incidente](../images/mtp-incidentdetails-tabs.png)
+3. Selezionare un elemento nell'elenco per aprire la visualizzazione dei dettagli dell'evento.<br/>![Dettagli incidente](../../media/mtp-incidentdetails-tabs.png)
 
 4. Nella scheda **Indagini**, selezionare un'indagine nell'elenco.
 
@@ -68,7 +68,7 @@ Utilizzare una pagina dei dettagli di un incidente per visualizzare informazioni
 
 Utilizzare la vista dei dettagli dell'indagine per visualizzare le attività passate, attuali e in sospeso relative a un'indagine. La visualizzazione dei dettagli dell'indagine è simile all'immagine seguente:
 
-![Dettagli indagine](../images/mtp-air-investdetails.png)
+![Dettagli indagine](../../media/mtp-air-investdetails.png)
 
 Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informazioni nelle schede **Grafico dell'indagine**, **Avvisi**, **Dispositivi**, **Identità**, **Risultati principali**, **Entità**, **Log**, e **Azioni in sospeso**, descritte nella tabella seguente.
 

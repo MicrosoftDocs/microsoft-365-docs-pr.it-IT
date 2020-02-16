@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: a85680e323c7a8fba6f2d74d5cc00c58c2013d23
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 8f966060ebc9a30166647b397b93f2b45356df74
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662052"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083727"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Attivare Microsoft Threat Protection
 
@@ -45,7 +45,7 @@ Microsoft Threat Protection aggrega i dati provenienti dai vari servizi integrat
 
 Prima di abilitare il servizio, Microsoft 365 Security Center ([Security.Microsoft.com](https://security.microsoft.com)) non Visualizza gli **eventi** non consentiti e le opzioni del **Centro azioni** nel riquadro di spostamento.
 
-![Immagine del riquadro di spostamento Microsoft 365 Centro sicurezza senza Microsoft Threat Protection](../images/mtp-off.png)
+![Immagine del riquadro di spostamento Microsoft 365 Centro sicurezza senza Microsoft Threat Protection](../../media/mtp-off.png)
 caratteristiche*Microsoft 365 Security Center con Microsoft Threat Protection disattivata*
 
 Per abilitare Microsoft Threat Protection, selezionare **Impostazioni** nel riquadro di spostamento. Nella **[pagina Impostazioni](https://security.microsoft.com/settings)**, accedere a **Microsoft Threat Protection** > **opt-in/opt-out**.
@@ -65,7 +65,7 @@ Dopo aver eseguito il provisioning il servizio aggiunge:
 - Un centro operativo per la gestione delle [analisi e risposte automatiche](mtp-autoir.md)
 - Funzionalità di [ricerca avanzata](advanced-hunting-overview.md) alla pagina **Ricerca** esistente
 
-![Immagine del riquadro di spostamento Microsoft 365 Centro sicurezza con Microsoft Threat Protection](../images/mtp-on.png)
+![Immagine del riquadro di spostamento Microsoft 365 Centro sicurezza con Microsoft Threat Protection](../../media/mtp-on.png)
 caratteristiche*Microsoft 365 Security Center con gestione degli incidenti e altre funzionalità di Microsoft Threat Protection*
 
 ### <a name="getting-azure-atp-data"></a>Ottenere i dati di Azure ATP

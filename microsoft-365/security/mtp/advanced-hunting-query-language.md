@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 586b887c9c5c1e4c19623c89dd08ed62ba0d4bb2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: acc515d046b1ebd2ff7c5dd9c52b363fe99f0b9e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600343"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087466"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
@@ -53,7 +53,7 @@ DeviceProcessEvents
 
 Questo è come apparirà in Ricerca avanzata.
 
-![Immagine della query in Ricerca avanzata di Microsoft Defender Advanced Threat Protection](../images/advanced-hunting-query-example.png)
+![Immagine della query in Ricerca avanzata di Microsoft Defender Advanced Threat Protection](../../media/advanced-hunting-query-example.png)
 
 La query inizia con un breve commento che descrive il contenuto. In un secondo momento si può decidere di salvare la query e condividerla con altri utenti dell'organizzazione.
 
@@ -130,7 +130,7 @@ I dati nelle tabelle di Ricerca avanzata sono generalmente classificati nei segu
 
 La sezione **Introduzione** presenta alcune semplici query che impiegano operatori di uso comune. Provare a eseguire queste query e apportare piccole modifiche.
 
-![Immagine della finestra di Ricerca avanzata](../images/advanced-hunting-get-started.png)
+![Immagine della finestra di Ricerca avanzata](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >Oltre agli esempi di query di base, è anche possibile accedere [query condivise](advanced-hunting-shared-queries.md) per specifici scenari di ricerca delle minacce. Esplorare le query condivise sul lato sinistro della pagina o sul repository di query GitHub.

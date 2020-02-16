@@ -1,5 +1,7 @@
 ---
 title: Proteggersi da tentativi di phishing e altri attacchi
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv
@@ -21,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Proteggersi da tentativi di phishing e altri attacchi con Microsoft 365 per le campagne.
-ms.openlocfilehash: 04779d1c69b57811cf493a9f48185eed2435c82e
-ms.sourcegitcommit: b535fe233234fd25146cfe15478e20d954f71e03
+ms.openlocfilehash: 2b0acd42b1c272bba7078bf6bc09944540ca9e42
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748257"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080603"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Proteggersi da tentativi di phishing e altri attacchi
 
@@ -65,7 +67,7 @@ Aiutare i clienti a considerare attendibili le comunicazioni con l'aggiunta di u
 
 Scaricare l'infografica con suggerimenti per l'utente e i membri del team della campagna:
 
-[![La guida per proteggere la grafica delle informazioni sulla campagna](media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[![La guida per proteggere la grafica delle informazioni sulla campagna](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx) (PDF)
 

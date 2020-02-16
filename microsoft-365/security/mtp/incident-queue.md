@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5ad616deb8717772a68b01147ed858f8e7f6ed7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 90f7aaf7eb4425dadeb27699654656c86d2b6263
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600253"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42087301"
 ---
 # <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Assegnare priorità agli eventi imprevisti in Microsoft Threat Protection
 
@@ -39,7 +39,7 @@ Microsoft Threat Protection applica analisi di correlazione e aggrega tutti gli 
 La **coda degli eventi imprevisti** mostra una raccolta di eventi imprevisti contrassegnati da diversi dispositivi, utenti e cassette postali. Ti aiuta a ordinare gli eventi imprevisti in base alla loro priorità e a definire una risposta di cybersecurity mirata.
 
 
-![Immagine della coda eventi imprevisti](../images/incidents-queue.png) 
+![Immagine della coda eventi imprevisti](../../media/incidents-queue.png) 
 
 Per impostazione predefinita, la coda disponibile nel Centro sicurezza Microsoft 365 mostra gli eventi imprevisti verificatisi negli ultimi 30 giorni, con l'evento più recente visualizzato in testa all'elenco, consentendoti quindi di visualizzare prima gli eventi più recenti.
 
