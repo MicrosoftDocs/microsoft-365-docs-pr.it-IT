@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Consente agli utenti di installare le app di Office.
-ms.openlocfilehash: 86a32f5f7a9fbd78a56fc934c4668970f8cdc719
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7497be6b0796fdd28156d8c9a6018b05e3dcfe75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593917"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065716"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aiutare gli utenti a installare Office nei dispositivi Windows 10
 
-[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 È possibile installare Office in modo semplice e rapido su PC Windows 10 dall'interfaccia di amministrazione di Microsoft 365 business.
   
@@ -44,7 +44,7 @@ Guardare un breve video sull'installazione delle app di Office.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="manage-office-deployments"></a>Gestire le distribuzioni di Office
 
@@ -59,7 +59,7 @@ Se il video è stato utile, consultare la [serie di formazione completa a Micros
 4. Nel pannello **degli utenti di posta elettronica un collegamento per scaricare Office** , selezionare gli utenti che si desidera inviare tramite posta elettronica e quindi **inviare tramite e-mail gli utenti selezionati**.
 
     
-      :::image type="content" source="media/sendemailtousers.png" alt-text="Selezionare gli utenti per inviare messaggi di posta elettronica con il collegamento di download di Office.":::
+      :::image type="content" source="../media/sendemailtousers.png" alt-text="Selezionare gli utenti per inviare messaggi di posta elettronica con il collegamento di download di Office.":::
 
 ## <a name="see-also"></a>Vedere anche
 

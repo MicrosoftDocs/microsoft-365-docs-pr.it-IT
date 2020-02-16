@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 per Enterprise.
-ms.openlocfilehash: b66289ab66770d75743ff5cee88eb2a47efe11b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596853"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066893"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per Enterprise
 
@@ -59,7 +59,7 @@ Per ulteriori informazioni, vedere [caratteristiche e funzionalità per ogni pia
 
 ## <a name="get-the-big-picture"></a>Ottenere l'immagine grande
 
-Il [poster di Microsoft 365 per Enterprise](media/m365-poster/Microsoft365Enterprise.pdf) è una posizione centrale da visualizzare:
+Il [poster di Microsoft 365 per Enterprise](../media/m365-poster/Microsoft365Enterprise.pdf) è una posizione centrale da visualizzare:
 
 - I vantaggi di Microsoft 365 per l'organizzazione e il modo in cui le app e i servizi vengono mappati ai pilastri dei valori
 - Microsoft 365 per i piani aziendali e quali componenti contengono 
@@ -67,16 +67,16 @@ Il [poster di Microsoft 365 per Enterprise](media/m365-poster/Microsoft365Enterp
 - La [raccolta di produttività di Microsoft 365](https://www.microsoft.com/microsoft-365/success/) e gli scenari rappresentativi per alcuni reparti dell'organizzazione comuni
 - La roadmap di adozione che evidenzia la [Guida alla distribuzione](deploy-microsoft-365-enterprise.md) di Microsoft 365 per l'organizzazione
 
-[![Immagine per il poster di Microsoft 365 per aziende](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+[![Immagine per il poster di Microsoft 365 per aziende](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 Per scaricare una copia del poster, fare clic [qui](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
 ## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
 
-Per ottenere un'immagine migliore di come spostare l'intera organizzazione ai prodotti e ai servizi in Microsoft 365 for Enterprise, scaricare il [poster di transizione](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Per ottenere un'immagine migliore di come spostare l'intera organizzazione ai prodotti e ai servizi in Microsoft 365 for Enterprise, scaricare il [poster di transizione](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Immagine per il poster della transizione a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Immagine per il poster della transizione a Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Questo poster a due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e ottenere le indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 per le aziende. Include i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
 
@@ -94,9 +94,9 @@ I prodotti seguenti raggiungono la fine del supporto il **13 ottobre 2020**:
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
 - [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
 
-Per un riepilogo visivo delle opzioni di aggiornamento, migrazione e passaggio al cloud per questi prodotti, vedere il [poster relativo alla fine del supporto](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
+Per un riepilogo visivo delle opzioni di aggiornamento, migrazione e passaggio al cloud per questi prodotti, vedere il [poster relativo alla fine del supporto](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
-[![Immagine del poster per la fine del supporto per client e server di Office 2010 e Windows 7](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+[![Immagine del poster per la fine del supporto per client e server di Office 2010 e Windows 7](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
 Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi che è possibile eseguire per impedire che i prodotti client e server di Windows 7 e Office 2010 raggiungano la fine del supporto, con percorsi e supporto preferiti in Microsoft 365 per Enterprise evidenziati.
 
@@ -142,7 +142,7 @@ Per ulteriori informazioni sulla distribuzione, vedere How:
 
 |||
 |:-------|:-----|
-![Formazione sui fondamentali di Microsoft 365](./media/m365-poster/m365-fundamentals.svg)| Prepararsi e lavorare per una certificazione Microsoft 365. <BR> Iniziare con le [nozioni fondamentali su Microsoft 365](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+![Formazione sui fondamentali di Microsoft 365](../media/m365-poster/m365-fundamentals.svg)| Prepararsi e lavorare per una certificazione Microsoft 365. <BR> Iniziare con le [nozioni fondamentali su Microsoft 365](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 |||
 
 

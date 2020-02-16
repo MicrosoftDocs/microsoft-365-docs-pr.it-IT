@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su come configurare Microsoft 365 business.
-ms.openlocfilehash: a353e39b824bae702fa015b0c7d3dd7e6416454c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5491486c2bf8da1ee38fcd986d5ecd682d57c82e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593722"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065613"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Introduzione a Microsoft 365 Business
 
@@ -57,13 +57,13 @@ Microsoft 365 business è destinato a un massimo di 300 licenze. Per ulteriori i
   
 Nel diagramma seguente viene illustrato il modo in cui gli amministratori hanno configurato Microsoft 365 business. Illustra anche la procedura per preparare i PC Windows per Microsoft 365 Business. È inoltre possibile aggiungere nuovi dispositivi nell'interfaccia di amministrazione di Microsoft 365 business con [Windows Autopilot](add-autopilot-devices-and-profile.md). È possibile utilizzare Autopilot per impostare e preconfigurare nuovi dispositivi in modo che siano pronti per l'utilizzo produttivo non appena un utente accede con le proprie credenziali di Microsoft 365 business.
   
-![A diagram that shows the setup and management flow for admins, and also for a user](media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
+![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
 Guardare questo video per una panoramica della configurazione di Microsoft 365 business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
   
 ### <a name="1-set-up-microsoft-365-business-admin"></a>1: configurare Microsoft 365 business (amministratore)

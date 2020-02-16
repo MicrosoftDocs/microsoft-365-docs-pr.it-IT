@@ -6,19 +6,19 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 81b7a7c3db69d1c20f9a9cd8c6ea4a37b481ce59
-ms.sourcegitcommit: 9b390881fe661deb0568b4b86a5a9094f3c795f0
+ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269387"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085731"
 ---
 # <a name="battery-insights"></a>Intuizioni della batteria
 Questa visualizzazione fornisce metriche per l'utilizzo di energia, batteria e app per i dispositivi Microsoft Managed Desktop. A tal fine, un'app viene considerata "in uso" se è in esecuzione e in stato di inattività.
 
 Per visualizzare i dati di utilizzo, selezionare la scheda **batteria** .
 
-![Riquadro della batteria: durata stimata della batteria per modello di dispositivo in alto a sinistra, consumer energetici superiori (per app) in alto a destra, tabella Insights nella parte inferiore. Collegamento alla documentazione in alto a destra.](images/insights_battery.png)
+![Riquadro della batteria: durata stimata della batteria per modello di dispositivo in alto a sinistra, consumer energetici superiori (per app) in alto a destra, tabella Insights nella parte inferiore. Collegamento alla documentazione in alto a destra.](../../media/insights_battery.png)
 
 ## <a name="predicted-battery-life"></a>Durata prevista della batteria
 

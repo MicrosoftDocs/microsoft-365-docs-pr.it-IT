@@ -16,12 +16,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: "Sintesi: In questo articolo viene descritto come Office 365 utilizza il record TXT Sender Policy Framework (SPF) in DNS per verificare che i sistemi di posta elettronica di destinazione ritengano attendibili i messaggi inviati dal dominio personalizzato. Si applica alla posta in uscita inviata da Office 365. I messaggi inviati da Office 365 a un destinatario all'interno di Office 365 passano sempre SPF."
-ms.openlocfilehash: f02219b19af592f9ad27ea963cb07a260c09327f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e2863c0b8a66fa511c4ce842dc8026e880594292
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599193"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086001"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Utilizzo di Sender Policy Framework (SPF) in Office 365 per impedire lo spoofing
 
@@ -78,7 +78,7 @@ Negli esempi seguenti viene illustrato il funzionamento di SPF in diverse situaz
 
 SPF è ideale quando il percorso dal mittente al destinatario è diretto, ad esempio:
 
-![Diagramma che mostra in che modo SPF autentica la posta elettronica inviata direttamente da un server all'altro.](../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
+![Diagramma che mostra in che modo SPF autentica la posta elettronica inviata direttamente da un server all'altro.](../../media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
 
 Quando woodgrovebank.com riceve il messaggio, se l'indirizzo IP #1 è nel record TXT SPF per contoso.com, il messaggio passa il controllo SPF e viene autenticato.
 
@@ -87,7 +87,7 @@ Quando woodgrovebank.com riceve il messaggio, se l'indirizzo IP #1 è nel record
 
 Si supponga che un truffatore trovi un modo per effettuare lo spoofing di contoso.com:
 
-![Diagramma che mostra in che modo SPF autentica la posta elettronica inviata da un server falsificato.](../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
+![Diagramma che mostra in che modo SPF autentica la posta elettronica inviata da un server falsificato.](../../media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
 
 Poiché l'indirizzo IP #12 non è nel record TXT SPF di contoso.com, il messaggio non supera il controllo SPF e il destinatario può scegliere di contrassegnarlo come posta indesiderata.
 
@@ -96,7 +96,7 @@ Poiché l'indirizzo IP #12 non è nel record TXT SPF di contoso.com, il messaggi
 
 Uno svantaggio di SPF consiste nel fatto che non funziona quando un messaggio di posta elettronica è stato inoltrato. Ad esempio, si supponga che l'utente in woodgrovebank.com abbia configurato una regola di inoltro per inviare tutta la posta elettronica a un account di outlook.com:
 
-![Diagramma che mostra come SPF non sia in grado di autenticare la posta elettronica che viene inoltrata.](../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
+![Diagramma che mostra come SPF non sia in grado di autenticare la posta elettronica che viene inoltrata.](../../media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
 
 Il messaggio all'inizio supera il controllo SPF in woodgrovebank.com, ma poi non passa quello in outlook.com perché l'IP #25 non è nel record TXT SPF di contoso.com. Outlook.com potrebbe quindi contrassegnare il messaggio come posta indesiderata. Per risolvere il problema, utilizzare SPF insieme ad altri metodi di autenticazione di posta elettronica quali DKIM e DMARC.
 

@@ -24,18 +24,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Condividere file e video all'interno della propria campagna con Microsoft teams e SharePoint.
-ms.openlocfilehash: bd6fae6c728cee50efcb5094edd6c75f6bdf3b11
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b67b6f834fd9333814f1807567776644dd2826e7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594727"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080418"
 ---
 # <a name="share-files-and-videos"></a>Condividere file e video
 
 Quando è necessario controllare chi può visualizzare e chi può modificare i file, è necessario archiviare i file in una posizione sicura, in cui è possibile verificare che le autorizzazioni vengano applicate in modo appropriato. È possibile utilizzare Microsoft teams per archiviare i file e quindi condividere i file all'interno o all'esterno della propria campagna tramite Microsoft teams o inviando collegamenti di SharePoint. L'invio di un collegamento piuttosto che di un allegato di posta elettronica significa che è possibile sapere chi è la visualizzazione e la modifica dei file e non possono essere visualizzati o modificati senza la propria autorizzazione. 
 
-![Diagramma di una finestra di Microsoft teams, visualizzazione delle schede dei file e collegamento Get nel menu](media/m365-democracy-teams-sharefiles.png)
+![Diagramma di una finestra di Microsoft teams, visualizzazione delle schede dei file e collegamento Get nel menu](../media/m365-democracy-teams-sharefiles.png)
 
 Con i file in Microsoft teams e SharePoint, è anche possibile lavorare sui file insieme ed esaminare le modifiche apportate. Utilizzare Microsoft teams per condividere i file all'interno di una campagna politica. Se è necessario condividere l'esterno con utenti esterni alla campagna, è possibile aggiungerli come ospiti a un team o inviargli un collegamento di SharePoint sicuro.
 
@@ -68,4 +68,4 @@ Per creare e condividere video, attenersi alla seguente procedura.
 
 Scaricare un'infografica in [formato PDF](https://go.microsoft.com/fwlink/?linkid=2079435) o [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) per ottenere una breve panoramica dei modi per condividere i file.
 
-[![Illustrazione della condivisione di file con utenti diversi](media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[![Illustrazione della condivisione di file con utenti diversi](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

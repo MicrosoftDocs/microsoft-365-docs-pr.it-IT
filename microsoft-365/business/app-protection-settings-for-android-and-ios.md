@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Informazioni su come creare, modificare o eliminare un criterio di gestione delle app e proteggere i file di lavoro su dispositivi Android o iOS.
-ms.openlocfilehash: c0c8883fb120db90d81e57fbb80206d6ce4eccbf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f4366230805c50fe82183431e3bd2bdfa9fddd68
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593314"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068649"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Configurare le impostazioni di protezione delle app per i dispositivi Android o iOS
 
-![Banner che puntano https://aka.ms/aboutM365previewa.](media/m365admincenterchanging.png)
+![Banner che puntano https://aka.ms/aboutM365previewa.](../media/m365admincenterchanging.png)
 
 ## <a name="create-an-app-management-policy"></a>Creare un criterio di gestione delle app
 
@@ -49,7 +49,7 @@ ms.locfileid: "41593314"
     
     È sempre possibile usare il collegamento **Ripristina impostazioni predefinite** per ripristinare l'impostazione predefinita. 
     
-    ![Screenshot of Create a policy with Application management for Android selected](media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
+    ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
 6. Successivamente decidere **chi otterrà queste impostazioni?** Se non si desidera utilizzare il gruppo di sicurezza **tutti gli utenti** predefinito, scegliere **Cambia**, scegliere i gruppi di sicurezza in cui \> vengono **selezionate**le impostazioni.
     

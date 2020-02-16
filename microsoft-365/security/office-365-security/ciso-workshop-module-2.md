@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: ebe1797e0a6a4b7f8bafa28b57feedbd96324093
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1b31445e431bb0a709d1f48c3db1a39fe5d464c1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599713"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086555"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>OICOL workshop Module 2: gestione della sicurezza 
 
 Informazioni su come aumentare la visibilità e il controllo del proprio patrimonio aziendale ibrido con linee guida integrate, applicazione e monitoraggio automatizzati dei criteri.
 
-- Download PDF Summary: [modulo 2: gestione della sicurezza](../media/ciso-workshop-2-security-management.pdf)
+- Download PDF Summary: [modulo 2: gestione della sicurezza](../../media/ciso-workshop-2-security-management.pdf)
 - Scaricare PowerPoint Summary: [modulo 2: gestione della sicurezza](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-2-security-management.pptx)
 
 ## <a name="introduction-security-management-125"></a>Introduzione: gestione della sicurezza (1:25)

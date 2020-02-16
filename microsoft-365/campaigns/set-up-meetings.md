@@ -1,5 +1,7 @@
 ---
 title: Configurare le riunioni online
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: twerner
 manager: scotv
@@ -22,18 +24,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare riunioni online con Microsoft teams.
-ms.openlocfilehash: 7ecdec3f7dc329f1ff70bf8d72a7ca5bc946636f
-ms.sourcegitcommit: 7713e777731025c165e9e936198609503ade5665
+ms.openlocfilehash: 83ff561b4159ffe6785db8bb03314aa80668023a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38753585"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080439"
 ---
 # <a name="set-up-meetings"></a>Configurare le riunioni
 
 Le riunioni in Microsoft teams includono audio, video e condivisione. E siccome sono online, avrai sempre uno spazio riunioni e non avrai mai bisogno di una sala o un proiettore per la tua campagna.Le riunioni di Microsoft teams sono un ottimo modo per collaborare con il personale e i volontari sia all'interno che all'esterno dell'organizzazione. Non è necessario essere membri dell'organizzazione o addirittura avere un account per partecipare a una riunione. Per la campagna politica, è possibile pianificare ed eseguire riunioni online utilizzando Microsoft teams. È possibile includere personale, volontari e ospiti all'esterno dell'organizzazione. Durante una riunione, è possibile condividere lo schermo, condividere file, assegnare attività e altro ancora.
 
-[![Illustrazione di due utenti in una riunione](media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![Illustrazione di due utenti in una riunione](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 Scaricare un'infografica in [formato PDF](https://go.microsoft.com/fwlink/?linkid=2078712) o [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) per ottenere una breve panoramica su come partecipare o ospitare una riunione online con Microsoft teams.
 

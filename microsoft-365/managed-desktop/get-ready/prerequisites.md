@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6595b6496c8fb2e71542b6aae9f35e4f40c08aa4
-ms.sourcegitcommit: 91ff1d4339f0f043c2b43997d87d84677c79e279
+ms.openlocfilehash: b729712a188c105fdf8a38e208124c2ef4c27a33
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36981717"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085875"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Prerequisiti per Microsoft Managed Desktop
 
@@ -48,7 +48,7 @@ Microsoft Managed Desktop richiede determinate opzioni di licenza per funzionare
 |Azure Active Directory Premium P1     |-Microsoft 365 E5<br>-Componente aggiuntivo per la sicurezza di Microsoft 365 E3 + Microsoft 365 *E5*<br>-Enterprise Mobility + Security E5<br>-Enterprise Mobility + Security E3<br>-Azure Active Directory Premium P1|  Fornisce l'accesso ai servizi cloud Microsoft; consente di registrare i dispositivi in Autopilot      |
 |Microsoft Intune | -Microsoft 365 E5<br>-Componente aggiuntivo per la sicurezza di Microsoft 365 E3 + Microsoft 365 *E5*<br>-Enterprise Mobility + Security E5<br>-Enterprise Mobility + Security E3<br>-Microsoft Intune  |  Necessario per registrare i dispositivi, distribuire gli aggiornamenti e gestire i dispositivi       |
 |Windows 10 Enterprise  |-Microsoft 365 E5<br>-Componente aggiuntivo per la sicurezza di Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 Enterprise E3<br>-Windows 10 Enterprise E5 | Fornisce le caratteristiche dell'organizzazione di Windows 10       |
-|Protezione avanzata dalle minacce di Microsoft Defender | -Microsoft 365 E5<br>-Componente aggiuntivo per la sicurezza di Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 Enterprise E5<br>-Protezione avanzata dalle minacce di Microsoft Defender   |  Fornisce il rilevamento, il monitoraggio, l'avviso e la risposta alle minacce  |
+|Microsoft Defender Advanced Threat Protection | -Microsoft 365 E5<br>-Componente aggiuntivo per la sicurezza di Microsoft 365 E3 + Microsoft 365 *E5*<br>-Windows 10 Enterprise E5<br>-Protezione avanzata dalle minacce di Microsoft Defender   |  Fornisce il rilevamento, il monitoraggio, l'avviso e la risposta alle minacce  |
 |Office 365 ProPlus  |-Microsoft 365 E5<br>-Microsoft 365 E3<br>-Office 365 E5<br>-Office 365 E3| Attiva gli strumenti di Office e di produttività e collaborazione    |
 
 > [!TIP]

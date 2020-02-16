@@ -17,12 +17,12 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come passare da un report dettagliato a un'intuizione con azioni consigliate nel centro &amp; sicurezza e conformità.
-ms.openlocfilehash: 9385f7bc8bc8c2277df5e3f774015081b39f37a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fc18af7d4ca813adb6fbfc01d44138b4a9266c6e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599263"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086210"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Procedura: da un report dettagliato alle informazioni dettagliate
 
@@ -34,13 +34,13 @@ Questa è una delle numerose procedure dettagliate per il centro &amp; sicurezza
 
 Let ' s walk through the flow from a dettagliato report to a Insight and actions. (Si tratta di un breve esempio di protezione da [posta indesiderata e antimalware](anti-spam-and-anti-malware-protection.md) ). 
   
-1. Iniziamo con i report del [Centro sicurezza &amp; e conformità](https://protection.office.com) . (Andare al **** \> **Dashboard**di report). <br/>![Nel centro sicurezza &amp; e conformità, andare al dashboard \> dei report](../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Iniziamo con i report del [Centro sicurezza &amp; e conformità](https://protection.office.com) . (Andare al **** \> **Dashboard**di report). <br/>![Nel centro sicurezza &amp; e conformità, andare al dashboard \> dei report](../../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. È possibile scegliere un report per ottenere una visualizzazione più dettagliata. Scegliere un report, ad esempio il rapporto **sullo stato di protezione dalle minacce** .<br/>![Rapporto sullo stato di protezione dalle minacce che mostra informazioni dettagliate](../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+2. È possibile scegliere un report per ottenere una visualizzazione più dettagliata. Scegliere un report, ad esempio il rapporto **sullo stato di protezione dalle minacce** .<br/>![Rapporto sullo stato di protezione dalle minacce che mostra informazioni dettagliate](../../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
 3. Viene visualizzato un indicatore Insights nel grafico e al di sotto del rapporto. Se si posiziona il puntatore del mouse sul marcatore Insights, vengono forniti alcuni dettagli aggiuntivi. Passare il puntatore del mouse sul marcatore Insights per visualizzare ulteriori dettagli.
     
-4. Se si fa clic sul marcatore Insights nel grafico o nel widget Insights about malware al di sotto del grafico, verrà aperto un riquadro dei dettagli. (Al di sotto del grafico, selezionare il widget Insights).<br/>![Dettagli per informazioni dettagliate su malware](../media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>Nel riquadro dei dettagli vengono fornite informazioni e consigli da prendere in considerazione, tra cui la revisione di criteri, l'esecuzione di ulteriori esplorazioni e lo stato di modifica. Per[ulteriori informazioni sulla protezione da posta indesiderata e anti-malware in Office 365](anti-spam-and-anti-malware-protection.md).
+4. Se si fa clic sul marcatore Insights nel grafico o nel widget Insights about malware al di sotto del grafico, verrà aperto un riquadro dei dettagli. (Al di sotto del grafico, selezionare il widget Insights).<br/>![Dettagli per informazioni dettagliate su malware](../../media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>Nel riquadro dei dettagli vengono fornite informazioni e consigli da prendere in considerazione, tra cui la revisione di criteri, l'esecuzione di ulteriori esplorazioni e lo stato di modifica. Per[ulteriori informazioni sulla protezione da posta indesiderata e anti-malware in Office 365](anti-spam-and-anti-malware-protection.md).
     
 In questo modo, è possibile passare da un report dettagliato a un'intuizione e alle azioni consigliate. 
   

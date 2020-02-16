@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: in che modo Contoso ha utilizzato un team per i dati altamente regolamentati per un progetto Top-Secret per sviluppare una nuova famiglia di prodotti e servizi.'
-ms.openlocfilehash: 794fb5cfb6f3011724d37a6a3c42c39dacacc270
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597073"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068028"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Team per un progetto interno di Contoso Corporation
 
@@ -68,7 +68,7 @@ Gli amministratori di Contoso hanno creato una nuova etichetta di riservatezza d
 
 Ecco la configurazione risultante del team di Project 2X.
 
-![La configurazione risultante del team di Project 2X](./media/contoso-team-for-highly-confidential-assets/final-config.png)
+![La configurazione risultante del team di Project 2X](../media/contoso-team-for-highly-confidential-assets/final-config.png)
  
 I file nella sezione Documents del progetto sottostante 2X sito di SharePoint sono stati protetti da:
 
@@ -79,7 +79,7 @@ I file nella sezione Documents del progetto sottostante 2X sito di SharePoint so
 
 Di seguito è riportato un esempio di un file archiviato nel sito di progetto 2X sottostante con l'etichetta di conservazione fortemente regolamentata e l'etichetta di riservatezza del progetto 2X assegnata.
 
-![Un esempio di un file archiviato nel sito di progetto 2X sottostante](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
+![Un esempio di un file archiviato nel sito di progetto 2X sottostante](../media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)
  
 ## <a name="step-4-trained-project-2x-team-members"></a>Passaggio 4: formazione dei membri del team di Project 2X
 

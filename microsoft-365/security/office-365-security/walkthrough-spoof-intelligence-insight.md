@@ -17,12 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: Vedere come funziona il nuovo spoofing Intelligence Insight.
-ms.openlocfilehash: 38bf75a2ebeabd41aace42c6116d37ecbe28a2de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 940203bc86339e4cc749565be355d717be9e914d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598013"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084357"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Procedura dettagliata: spoofing Intelligence Insight
 
@@ -50,7 +50,7 @@ Questa è una delle numerose procedure dettagliate per il centro &amp; sicurezza
 
 L'Insight sul dashboard Visualizza informazioni di questo tipo.
   
-![Schermata di Insight Intelligence spoofing](../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+![Schermata di Insight Intelligence spoofing](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
   
 Questa intuizione ha due modalità:
   
@@ -82,7 +82,7 @@ Viene visualizzata la pagina di **Insight Intelligence spoof** che mostra un ele
     
 2. Selezionare un elemento nella tabella per aprire un riquadro dei dettagli che contiene informazioni complete sulla coppia di domini, incluso il motivo per cui è stato rilevato ciò che è necessario fare, un riepilogo di dominio, i dati WhoIs relativi al mittente e i messaggi di posta elettronica simili che sono stati visualizzati nel tenant dallo stesso mittente. Da qui, è anche possibile scegliere di aggiungere o rimuovere la coppia di dominio dall'elenco dei mittenti attendibili di **AllowedToSpoof** . 
   
-![Schermata di un dominio nel riquadro dei dettagli dell'analisi di intelligence di spoofing](../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+![Schermata di un dominio nel riquadro dei dettagli dell'analisi di intelligence di spoofing](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
   
 ## <a name="add-or-remove-a-domain-from-the-allowedtospoof-safe-sender-list"></a>Aggiungere o rimuovere un dominio dall'elenco dei mittenti attendibili di AllowedToSpoof
 

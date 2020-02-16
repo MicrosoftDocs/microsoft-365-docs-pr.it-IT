@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Gli utenti di Microsoft Outlook sul Web possono segnalare la posta indesiderata (posta indesiderata) e i tentativi di phishing utilizzando le opzioni di segnalazione della posta elettronica predefinite. È inoltre possibile consentire a Microsoft di sapere se un messaggio di posta elettronica è stato erroneamente identificato come posta indesiderata.
-ms.openlocfilehash: 98b53aa17cb84defa9d20aa4610390db9f5447c5
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 58973e59644b2e20853cfe053a18586efa5211bf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957421"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082403"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Segnalare posta indesiderata e tentativi di phishing in Outlook sul web
 
@@ -33,7 +33,7 @@ Per inviare un messaggio di posta indesiderata a Microsoft:
 
 1. Fare clic sul messaggio indesiderato e quindi fare clic su **posta indesiderata** sulla barra degli strumenti. Questo sposta il messaggio nella cartella posta indesiderata e aggiunge il mittente all'elenco dei mittenti bloccati.
 
-   ![Indicare che un messaggio di posta elettronica è posta indesiderata da Outlook sul Web](../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
+   ![Indicare che un messaggio di posta elettronica è posta indesiderata da Outlook sul Web](../../media/a10ae792-aab6-4374-a041-6c3f732eb2e3.png)
 
    > [!NOTE]
    > In alternativa, fare clic con il pulsante destro del mouse su un messaggio per visualizzare un menu e scegliere **Contrassegna come posta indesiderata**.
@@ -42,7 +42,7 @@ Per inviare un messaggio di posta indesiderata a Microsoft:
 
 2. Si aprirà una finestra di dialogo che chiede all'utente se desidera inviare una copia del messaggio di posta indesiderata a Microsoft per l'analisi. Fare clic su **report** per inviare il messaggio al team di analisi di posta indesiderata Microsoft. In alternativa, selezionare la casella di controllo **Non visualizzare più questo messaggio** se si desidera inviare automaticamente a Microsoft messaggi di posta indesiderata futuri senza che venga prima chiesto.
 
-   ![Report della posta indesiderata per Microsoft da Outlook sul Web](../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
+   ![Report della posta indesiderata per Microsoft da Outlook sul Web](../../media/e8d3a9f9-6eb6-4309-ba6d-643dffdb6a33.png)
 
    > [!TIP]
    > Anche se si seleziona la casella di controllo **non visualizzare più questo messaggio** , è possibile modificare le preferenze per la segnalazione della posta indesiderata tramite l'accesso alle impostazioni di visualizzazione in Outlook sul Web. È possibile accedere a queste impostazioni tramite il menu ingranaggio accanto al nome di accesso.
@@ -53,7 +53,7 @@ Per inviare un messaggio di truffa di phishing a Microsoft:
 
 1. Fare clic sul messaggio di truffa di phishing, fare clic sulla freccia in giù accanto a **posta indesiderata**, quindi fare clic su **phishing** sulla barra degli strumenti. Office 365 non blocca il mittente perché i mittenti dei messaggi di truffa di phishing in genere impersonano i mittenti legittimi. Se si preferisce, aggiungere il mittente all'elenco dei mittenti bloccati attenendosi alle istruzioni riportate nell'argomento [filtro posta indesiderata e posta indesiderata in Outlook sul Web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d).
 
-   ![Indicare che un messaggio di posta elettronica è un tentativo di phishing in Outlook sul Web](../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
+   ![Indicare che un messaggio di posta elettronica è un tentativo di phishing in Outlook sul Web](../../media/959bb577-341c-41ee-a159-e46600b2cf8a.png)
 
    In alternativa, fare clic con il pulsante destro del mouse su un messaggio per visualizzare un menu e scegliere **Contrassegna come phishing**.
 

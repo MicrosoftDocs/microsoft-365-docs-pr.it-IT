@@ -1,5 +1,7 @@
 ---
 title: Verificare le impostazioni di protezione delle app nei PC Windows 10
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Informazioni su come convalidare le impostazioni di protezione delle app di Microsoft 365 nei dispositivi Windows 10.
-ms.openlocfilehash: b8793ab7f77bbc7f608f237e2455f6fd12c3bb26
-ms.sourcegitcommit: 6a413a65b8c2e10cea08f0a15635b28a1362a582
+ms.openlocfilehash: 1762382aec00a80e006cf38b66c28d02c0c25989
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38721801"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056672"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Verificare le impostazioni di protezione nei PC Windows 10
 
@@ -37,23 +39,23 @@ Dopo aver [configurato i criteri per i dispositivi](protection-settings-for-wind
   
 1. Passare a **Impostazioni** \> **aggiornare &amp; ** le opzioni di sicurezza \> di **Windows Update** \> **Restart** e verificare che tutte le impostazioni siano disabilitate. 
     
-    ![Tutte le opzioni di riavvio sono disattivate.](media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![Tutte le opzioni di riavvio sono disattivate.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
 2. Andare a **Impostazioni** \> **aggiornare &amp; ** le opzioni di sicurezza \> di **Windows Update** \> **Advanced** e verificare che tutte le impostazioni siano disabilitate. 
     
-    ![Le opzioni di Windows Advanced Updates sono tutte disabilitate.](media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Le opzioni di Windows Advanced Updates sono tutte disabilitate.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
     Confermare che è possibile visualizzare il messaggio (in rosso) che alcune impostazioni sono nascoste o gestite dall'organizzazione e tutte le opzioni sono disattivate.
     
-    ![Choose how updates are delivered page indicates settings are hidden or managed by your organization.](media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
+    ![Choose how updates are delivered page indicates settings are hidden or managed by your organization.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
 4. To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**. 
     
 5. Verificare che tutte le opzioni siano disattivate. 
     
-    ![Le impostazioni relative a virus e protezione dalle minacce sono disattivate.](media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
+    ![Le impostazioni relative a virus e protezione dalle minacce sono disattivate.](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
 ## <a name="related-topics"></a>Argomenti correlati
 

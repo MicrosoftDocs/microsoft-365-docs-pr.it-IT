@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Riepilogo: informazioni sul modo in cui Contoso ha implementato un sito di SharePoint per dati altamente regolamentati per semplificare la collaborazione tra i team di ricerca.'
-ms.openlocfilehash: c0b9e36f90e64e1d1c7f7ea2c4b1b4b65e60b95c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a1ffb336e85eb6eb850b53ed14adf947b56642cc
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601133"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068274"
 ---
 # <a name="sharepoint-site-for-highly-confidential-digital-assets-of-the-contoso-corporation"></a>Sito di SharePoint per le risorse digitali estremamente riservate di Contoso Corporation
 
@@ -67,7 +67,7 @@ Gli amministratori di Contoso hanno creato una nuova sottoetichetta di sensitivi
 
 Ecco la configurazione risultante del sito del team di **ricerca** per le risorse estremamente riservate.
 
-![La configurazione risultante del sito del team di ricerca per le risorse estremamente riservate](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
+![La configurazione risultante del sito del team di ricerca per le risorse estremamente riservate](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config.png)
 
 I file nelle cartelle del sito di **ricerca** sono protetti da:
 
@@ -77,7 +77,7 @@ I file nelle cartelle del sito di **ricerca** sono protetti da:
 
 Di seguito è riportato un esempio di un file archiviato nel sito di **ricerca** con la sottoetichetta di riservatezza dei **team di ricerca** assegnati.
 
-![La configurazione risultante del sito del team di ricerca per le risorse estremamente riservate](./media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
+![La configurazione risultante del sito del team di ricerca per le risorse estremamente riservate](../media/contoso-sharepoint-online-site-for-highly-confidential-assets/final-config-example-file.png)
 
 
 ## <a name="step-4-migrated-the-on-premises-sharepoint-research-data"></a>Passaggio 4: migrazione dei dati di ricerca di SharePoint locali

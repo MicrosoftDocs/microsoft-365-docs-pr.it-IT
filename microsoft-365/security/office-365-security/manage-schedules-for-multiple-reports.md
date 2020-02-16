@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Informazioni su come visualizzare, modificare e gestire le pianificazioni per i report nel centro &amp; sicurezza e conformità.
-ms.openlocfilehash: 38fd211a20c86fffc564c8b4fbe86e963da7fe05
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5ae6a37a04604ca814348ac42d80a57e3e171b6b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598933"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082871"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Gestire le pianificazioni per più report nel centro &amp; sicurezza e conformità
 
@@ -30,7 +30,7 @@ Nel centro sicurezza &amp; e conformità sono disponibili diversi [report e](rep
 > [!IMPORTANT]
 > Verificare di disporre delle [autorizzazioni necessarie assegnate al centro sicurezza &amp; e conformità di Office 365](permissions-in-the-security-and-compliance-center.md). In generale, gli amministratori globali di Office 365, gli amministratori della sicurezza e i lettori di sicurezza possono &amp; accedere ai report nel centro sicurezza e conformità. 
   
-![Nel centro sicurezza &amp; e conformità, scegliere rapporti \> Gestione pianificazioni](../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
+![Nel centro sicurezza &amp; e conformità, scegliere rapporti \> Gestione pianificazioni](../../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
 1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso. Questo porta al centro sicurezza & Compliance.
 

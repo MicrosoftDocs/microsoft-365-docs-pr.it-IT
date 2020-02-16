@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Procedura dettagliata per la registrazione di Microsoft 365 per le campagne. Proteggi la tua campagna dalle minacce di Cybersecurity alla posta elettronica, ai dati e alla comunicazione.
-ms.openlocfilehash: fefba1ddbf5feead873e0367502bbe2bcc530efb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e142adcc9b1858355414c28b7e94116a6505f1b9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594767"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080529"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Iscriversi a Microsoft 365 per le campagne 
 
@@ -79,7 +79,7 @@ Se si dispone già di una sottoscrizione esistente a Office 365 for business, ad
 1. Nel tuo invito a Microsoft 365 per le campagne di posta elettronica, seleziona **Iscriviti alla >dell'organizzazione **. Questo porta all'iscrizione a Microsoft 365.
 2. Nella pagina di **benvenuto, è possibile conoscere** la pagina, fare clic o toccare si **desidera aggiungere questo a un abbonamento esistente? Accedi**.
     
-    ![Scegliere Accedi nell'angolo in alto a destra.](media/addtoexisting.png)
+    ![Scegliere Accedi nell'angolo in alto a destra.](../media/addtoexisting.png)
 3. Nella pagina di accesso, immettere l'alias di amministratore per la sottoscrizione esistente, ad esempio *Alice@VoteContoso<span></span>. org*, scegliere **Avanti**, immettere la password e quindi fare clic su **Accedi**.
 4. In **questo aspetto,** immettere il numero di utenti di cui si dispone e scegliere **Avanti**. Non è necessario immettere un codice promozionale qui perché è già incluso nell'URL dell'invito.
 5. Nella pagina **come si desidera pagare?** , immettere il metodo di pagamento e scegliere **Ordina ordine**.

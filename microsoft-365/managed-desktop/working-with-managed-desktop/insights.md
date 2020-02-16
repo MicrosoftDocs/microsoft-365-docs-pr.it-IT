@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d1ee28bad2728fb3e6c12694625b2c29a65425a2
-ms.sourcegitcommit: 3dca80f268006658a0b721aa4f6df1224c7964dc
+ms.openlocfilehash: fedd3a98ef176855c4831bbd055522c073c22d7b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41260104"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085691"
 ---
 # <a name="work-with-insights"></a>Usare i dati analitici
 
@@ -26,7 +26,7 @@ Con questi dashboard è possibile trovare le risposte a domande di questo tipo:
 
 Per accedere a queste visualizzazioni dall'interfaccia di amministrazione di Microsoft 365, selezionare **Visualizza dettagli** nell'area **report** :
 
-![Interfaccia di amministrazione con area report nell'angolo in alto a destra, inclusa la scheda report del dispositivo e il collegamento "Visualizza dettagli".](images/insights_overview.png)
+![Interfaccia di amministrazione con area report nell'angolo in alto a destra, inclusa la scheda report del dispositivo e il collegamento "Visualizza dettagli".](../../media/insights_overview.png)
 
 
 

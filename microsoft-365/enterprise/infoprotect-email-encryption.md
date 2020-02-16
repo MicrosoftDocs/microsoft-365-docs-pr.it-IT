@@ -16,18 +16,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: Comprendere e configurare la gestione degli accessi con privilegi per Office 365.
-ms.openlocfilehash: 252a5f76197deb1034d200553308a281ef079957
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d678c109f42901be2413c2b33e362d6796be96b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600923"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067188"
 ---
 # <a name="step-6-configure-email-encryption"></a>Passaggio 6: configurare la crittografia della posta elettronica
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![Fase 6: protezione delle informazioni](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: protezione delle informazioni](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Sono disponibili tre tipi di crittografia della posta elettronica in Microsoft 365.
 
@@ -42,7 +42,7 @@ Sono disponibili tre tipi di crittografia della posta elettronica in Microsoft 3
 
 Con OME, l'organizzazione può inviare e ricevere messaggi di posta elettronica crittografati tra persone all'interno e all'esterno dell'organizzazione. OME è compatibile con Outlook.com, Yahoo!, Gmail e altri servizi di posta elettronica. La crittografia dei messaggi di posta elettronica aiuta a garantire che solo i destinatari previsti possano visualizzare il messaggio.
 
-![Crittografia OME dei messaggi di posta elettronica](./media/infoprotect-email-encryption/ome-encryption.png)
+![Crittografia OME dei messaggi di posta elettronica](../media/infoprotect-email-encryption/ome-encryption.png)
 
 Si configurano le regole di trasporto che definiscono le condizioni per la crittografia. Quando un utente invia un messaggio che corrisponde a una regola, la crittografia viene applicata automaticamente.
 
@@ -56,7 +56,7 @@ IRM in Microsoft 365 consente di proteggere le informazioni con la crittografia 
 
 I criteri IRM sono configurati all'interno di Microsoft 365 e possono essere applicati ai documenti in SharePoint Online e nei messaggi di posta elettronica. Un messaggio di posta elettronica protetto da IRM include le impostazioni dei criteri applicate e viaggia con esso. 
 
-![Protezione IRM dei messaggi di posta elettronica](./media/infoprotect-email-encryption/irm-protection.png)
+![Protezione IRM dei messaggi di posta elettronica](../media/infoprotect-email-encryption/irm-protection.png)
 
 Quando il destinatario apre la posta elettronica con il criterio incluso, le impostazioni dei criteri vengono utilizzate per decrittografare il messaggio e determinare cosa può fare il destinatario. 
 
@@ -66,7 +66,7 @@ Per ulteriori informazioni, vedere [Information Rights Management in Exchange On
 
 S/MIME è una soluzione di protezione basata sulla posta elettronica basata su certificato digitale che consente di crittografare e firmare digitalmente un messaggio. La crittografia del messaggio fa sì che solo il destinatario desiderato possa aprire e leggere il messaggio. Una firma digitale consente al destinatario di convalidare l'identità del mittente e di determinare che solo il mittente potrebbe averlo inviato.
 
-![Protezione S/MIME dei messaggi di posta elettronica](./media/infoprotect-email-encryption/smime-protection.png)
+![Protezione S/MIME dei messaggi di posta elettronica](../media/infoprotect-email-encryption/smime-protection.png)
 
 S/MIME può essere utilizzato per la posta elettronica ad altre cassette postali nell'abbonamento a Microsoft 365 o a utenti esterni.
 Sia la crittografia dei messaggi che le firme digitali sono rese possibili mediante l'utilizzo di certificati digitali che contengono le chiavi pubbliche e private per la crittografia o la decrittografia dei messaggi e la creazione e la verifica delle firme digitali.
@@ -81,4 +81,4 @@ Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria
 
 |||
 |:-------|:-----|
-|![Passaggio 7](./media/stepnumbers/Step7.png)|[Configurare la gestione degli accessi con privilegi per Office 365](infoprotect-configure-privileged-access-management.md)|
+|![Passaggio 7](../media/stepnumbers/Step7.png)|[Configurare la gestione degli accessi con privilegi per Office 365](infoprotect-configure-privileged-access-management.md)|

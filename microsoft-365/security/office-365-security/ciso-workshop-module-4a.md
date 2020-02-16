@@ -12,18 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Ulteriori informazioni sui principi di sicurezza e sui suggerimenti per modernizzare la sicurezza nell'organizzazione.
-ms.openlocfilehash: 2c08570165f893950dc2588ab33b45be36a3816d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 322ced9ae3a565e07de372d7775c176ba647301b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599693"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086545"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>Modulo di OICOL workshop 4a: strategia di protezione dalle minacce
 
 Esplorare le principali informazioni relative alla protezione dalle minacce, all'evoluzione della sicurezza, alle strategie e alle mappe stradali di sicurezza.
 
-- Download PDF Riepilogo: [modulo 4a: strategia di protezione dalle minacce](../media/ciso-workshop-4a-threat-protection.pdf)
+- Download PDF Riepilogo: [modulo 4a: strategia di protezione dalle minacce](../../media/ciso-workshop-4a-threat-protection.pdf)
 - Scaricare PowerPoint Summary: [Module 4a: strategia di protezione dalle minacce](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4a-threat-protection.pptx)
 
 ## <a name="introduction-threat-protection-strategy-437"></a>Introduzione: strategia di protezione dalle minacce (4:37)

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Gli amministratori possono ottenere informazioni sul dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: 0e87fde41c78f46aaac55602175a3716ba54fe7b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 36183f6b5f664a8d5a971f9e141b0607fa66a0bb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599043"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082931"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
 
@@ -72,4 +72,4 @@ Per informazioni sull'assegnazione di ruoli Centro sicurezza & conformità agli 
 
 2. Espande il **flusso di posta** e quindi seleziona **Dashboard**.
 
-   ![Dashboard del flusso di posta elettronica nel centro sicurezza & conformità di Office 365](../media/mail-flow-dashboard-v2.png)
+   ![Dashboard del flusso di posta elettronica nel centro sicurezza & conformità di Office 365](../../media/mail-flow-dashboard-v2.png)

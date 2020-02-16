@@ -17,12 +17,12 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare un elenco di URL bloccati per l'organizzazione utilizzando Office 365 Advanced Threat Protection. Gli URL bloccati verranno applicati ai messaggi di posta elettronica e ai documenti di Office in base ai criteri dei collegamenti sicuri di ATP.
-ms.openlocfilehash: bb5eb8572aee11be1c4264863b572f014b281985
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5205fbd5ccc873513eed4e367119084516e92bf2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598403"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088091"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurare un elenco di URL bloccati personalizzato utilizzando i collegamenti sicuri ATP di Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "41598403"
 
 Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), l'organizzazione può disporre di un elenco personalizzato di indirizzi Web (URL) bloccati. Quando viene bloccato un URL, gli utenti che fanno clic sui collegamenti all'URL bloccato vengono indirizzati a una [pagina di avviso](atp-safe-links-warning-pages.md) simile all'immagine seguente: 
   
-![Questo sito è bloccato](../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![Questo sito è bloccato](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
 L'elenco degli URL bloccati è definito dal team di sicurezza di Office 365 dell'organizzazione e questo elenco si applica a tutti gli utenti dell'organizzazione che sono soggetti ai criteri dei collegamenti sicuri di Office 365 ATP. 
   
@@ -58,7 +58,7 @@ Per modificare (o definire) i criteri ATP, è necessario essere assegnati a uno 
     
 2. Nella barra di spostamento a sinistra, in **gestione minacce**, scegliere **collegamenti sicuri**per i **criteri** \> .
     
-3. Nei **criteri che si applicano all'intera sezione organizzazione** selezionare **predefinita**e quindi fare clic su **modifica** (il pulsante modifica è simile a una matita).<br/>![Fare clic su modifica per modificare il criterio predefinito per la protezione dei collegamenti sicuri](../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>In questo modo è possibile visualizzare l'elenco degli URL bloccati. All'inizio, potrebbe non essere presente alcun URL.<br/>![Elenco degli URL bloccati nel criterio collegamenti sicuri predefinito](../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. Nei **criteri che si applicano all'intera sezione organizzazione** selezionare **predefinita**e quindi fare clic su **modifica** (il pulsante modifica è simile a una matita).<br/>![Fare clic su modifica per modificare il criterio predefinito per la protezione dei collegamenti sicuri](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>In questo modo è possibile visualizzare l'elenco degli URL bloccati. All'inizio, potrebbe non essere presente alcun URL.<br/>![Elenco degli URL bloccati nel criterio collegamenti sicuri predefinito](../../media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
 4. Selezionare la casella **immettere un URL valido** , digitare un URL e quindi scegliere il segno di addizione**+**(). 
 

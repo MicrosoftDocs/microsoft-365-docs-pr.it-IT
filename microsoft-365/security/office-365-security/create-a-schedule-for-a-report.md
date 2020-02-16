@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare una pianificazione per un report nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 743bb0cd71fb4a5c6ce9b875c797ad3ca54d0485
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a7a4d0b6bef3f800a53e4f980ccd689e011a9ea
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599553"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083467"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Creare una pianificazione per un report nel centro sicurezza &amp; e conformità
 
@@ -55,7 +55,7 @@ Nel centro sicurezza &amp; e conformità sono disponibili diversi [report e](rep
     
 3. Nell'angolo in alto a sinistra del report scegliere **+ Crea pianificazione**. 
     
-    ![Creare una pianificazione](../media/atpfiletypes-createschedule.png)
+    ![Creare una pianificazione](../../media/atpfiletypes-createschedule.png)
 
     (Nota: non tutti i report dispongono del pulsante **+ Crea pianificazione** ).
   
@@ -63,7 +63,7 @@ Nel centro sicurezza &amp; e conformità sono disponibili diversi [report e](rep
     
 4. Mantenere le impostazioni predefinite e scegliere **Crea pianificazione**, oppure scegliere **Personalizza pianificazione**.
     
-    ![È possibile utilizzare le impostazioni predefinite o personalizzare la pianificazione di un report](../media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![È possibile utilizzare le impostazioni predefinite o personalizzare la pianificazione di un report](../../media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
     Se si sceglie di personalizzare la pianificazione del report, è possibile specificare la frequenza del report, l'indirizzo di posta elettronica del mittente e l'indirizzo di posta elettronica del destinatario. 
     

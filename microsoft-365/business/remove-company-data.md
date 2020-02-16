@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: 'Informazioni su come utilizzare Microsoft 365 business per rimuovere i dati aziendali dai dispositivi utente o dai PC Windows. '
-ms.openlocfilehash: ff0ad9d7f22f9bb1b21ee15fe383c6994896a9a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 338ce030cb37a6cbd4a1f63c33dc6866bef93c24
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593497"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064906"
 ---
 # <a name="remove-company-data-from-devices"></a>Rimuovere i dati aziendali dai dispositivi
 
-[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 ## <a name="remove-company-data"></a>Rimuovere i dati aziendali
 
@@ -45,7 +45,7 @@ ms.locfileid: "41593497"
     
 4. Nel riquadro successivo selezionare il dispositivo o i dispositivi dall'elenco **dispositivi** . Nel riquadro dispositivo che si apre, è possibile scegliere di reimpostare le impostazioni di fabbrica del dispositivo o di rimuovere i dati della società, a seconda del tipo di dispositivo. 
     
-    ![Nel riquadro Rimuovi dati società selezionare il dispositivo da cui si desidera rimuovere i dati.](media/resetorremove.png)
+    ![Nel riquadro Rimuovi dati società selezionare il dispositivo da cui si desidera rimuovere i dati.](../media/resetorremove.png)
   
 5. Nel riquadro di conferma scegliere **conferma** \> **Chiudi**.
     

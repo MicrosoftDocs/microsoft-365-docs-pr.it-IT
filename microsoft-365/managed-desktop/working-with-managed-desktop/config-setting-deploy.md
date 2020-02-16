@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 244070c7fd2d5c98f87990bcb4ef6de96ca5a90c
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: e6946c138cb6fde15e35374b447038d5c302187e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962243"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085761"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Distribuire e monitorare le impostazioni configurabili-Microsoft Managed Desktop
 
@@ -40,12 +40,15 @@ In queste istruzioni viene visualizzata l'immagine di sfondo del desktop. Dopo a
 3. In area di lavoro **stato distribuzione** selezionare l'impostazione che si desidera distribuire e quindi selezionare la distribuzione a fasi da distribuire.
 4. Fare clic su **Distribuisci** per distribuire la modifica a uno dei gruppi di distribuzione.
 
-![Area di lavoro stato distribuzione. Riquadro siti attendibili sulla destra. Nella sezione gruppi di distribuzione sono disponibili tre colonne: gruppi di distribuzione, dispositivi e stato. Nella colonna stato "deploy" è evidenziato.](images/1deployedit.png)
+> [!NOTE] 
+> L'icona di avviso arancione indica che è disponibile un gruppo precedente per la distribuzione, come consigliato per l'implementazione in ordine. 
+
+![Area di lavoro stato distribuzione. Riquadro siti attendibili sulla destra. Nella sezione gruppi di distribuzione sono disponibili tre colonne: gruppi di distribuzione, dispositivi e stato. Nella colonna stato "deploy" è evidenziato.](../../media/1deployedit.png)
 È consigliabile eseguire la distribuzione ai gruppi di distribuzione nell'ordine seguente: test, First, Fast e then Broad. 
 
 Quando le modifiche vengono completate in ogni gruppo, lo stato diventa **completo**.
 
-![Area di lavoro dello stato di distribuzione con colonne per Data aggiornata, versione, test, First, Fast e Broad. La riga del proxy viene espansa, mostrando un'impostazione datata contrassegnata come "completata" in ognuno dei quattro gruppi di distribuzione.](images/2completeedit.png)
+![Area di lavoro dello stato di distribuzione con colonne per Data aggiornata, versione, test, First, Fast e Broad. La riga del proxy viene espansa, mostrando un'impostazione datata contrassegnata come "completata" in ognuno dei quattro gruppi di distribuzione.](../../media/2completeedit.png)
 
 ## <a name="revert-deployment"></a>Ripristinare la distribuzione
 
@@ -59,7 +62,7 @@ Vengono illustrati i passaggi da eseguire per ripristinare una modifica utilizza
 3. Nell'area di lavoro **stato distribuzione** selezionare l'impostazione che si desidera ripristinare e quindi selezionare la distribuzione a fasi da ripristinare.
 4. In **necessità di ripristinare questa modifica**, selezionare **Ripristina distribuzione**.
 
-![Area di lavoro stato distribuzione. Le pagine iniziali del browser sono selezionate, aprendo un riquadro a destra con i dati relativi alla modifica inviata e al relativo stato. In basso è la sezione "necessità di ripristinare questa modifica", in cui è possibile selezionare "Ripristina distribuzione".](images/3revert.png) 
+![Area di lavoro stato distribuzione. Le pagine iniziali del browser sono selezionate, aprendo un riquadro a destra con i dati relativi alla modifica inviata e al relativo stato. In basso è la sezione "necessità di ripristinare questa modifica", in cui è possibile selezionare "Ripristina distribuzione".](../../media/3revert.png) 
 
 ## <a name="additional-resources"></a>Altre risorse
 - [Panoramica delle impostazioni configurabili](config-setting-overview.md)

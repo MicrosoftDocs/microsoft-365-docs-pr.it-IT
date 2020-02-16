@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Office 365. Le esigenze di sicurezza possono richiedere più o meno sicurezza. Utilizzare questi suggerimenti come punto di partenza.
-ms.openlocfilehash: 3bf11ae0520ac6f715e3f84669c6d6f615deaf14
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: 38c07739ebfd6e10fe08dbc5496e4ae7634ed510
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932296"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082045"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurare il tenant di Office 365 per una maggiore sicurezza
 
@@ -59,7 +59,7 @@ Visitare questi rapporti e dashboard per ulteriori informazioni sull'integrità 
 |[Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md)|Questo è anche nella sezione **gestione minacce** del Centro sicurezza. Se si sta indagando o si verifica un attacco contro il tenant di Office 365, utilizzare Esplora risorse (o rilevamenti in tempo reale) per analizzare le minacce. Explorer (e il rapporto rilevamenti in tempo reale) mostrano il volume degli attacchi nel tempo ed è possibile analizzare questi dati in base alle famiglie di minacce, all'infrastruttura di attacco e altro ancora. È inoltre possibile contrassegnare eventuali messaggi di posta elettronica sospetti per l'elenco eventi non consentiti.|
 |Report: Dashboard|Nella sezione **report** del Centro sicurezza, visualizzare i rapporti di controllo per le organizzazioni di SharePoint Online e di Exchange Online. È inoltre possibile accedere ai report di accesso dell'utente di Azure Active Directory (Azure AD), ai report sulle attività degli utenti e al log di controllo di Azure AD dalla pagina **Visualizza report** .|
 
-![Dashboard Centro protezione](../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Dashboard Centro protezione](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>Configurare altre impostazioni a livello di tenant di Exchange Online
 
@@ -122,7 +122,7 @@ Ulteriori informazioni:
 
 - [Che cos'è la sicurezza delle app Cloud?](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
-![Dashboard di Cloud App Security](../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+![Dashboard di Cloud App Security](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
 ## <a name="additional-resources"></a>Altre risorse
 

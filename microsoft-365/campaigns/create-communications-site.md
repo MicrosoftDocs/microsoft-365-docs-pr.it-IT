@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Creare un sito per le comunicazioni per la campagna.
-ms.openlocfilehash: f0d79bcaa49d5e62dff5618eeaf94347d5dd6313
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c6590ae8e8fbe0dd1cc024c53f3a2a109aa918c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594921"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42056377"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>Creare un sito per le comunicazioni per la propria campagna
 
@@ -44,12 +44,12 @@ Includere gli elementi seguenti nel sito di comunicazione:
 4. Aggiungere eventi della campagna a una **Web part eventi** in modo che tutti possano vedere cosa succede.
 5. Aggiungere foto che gli utenti possono utilizzare o condividere con una **Web part raccolta immagini**.
 
-![Diagramma di una pagina di comunicazioni di SharePoint con spazio per gli elementi comuni che una campagna avrebbe bisogno](media/m365-democracy-comms-site.png)
+![Diagramma di una pagina di comunicazioni di SharePoint con spazio per gli elementi comuni che una campagna avrebbe bisogno](../media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>Infografica: creare un sito di comunicazione infografica 
 I collegamenti seguenti per PowerPoint e PDF possono essere scaricati e stampati in formato tabloid (noto anche come Ledger, 11 x 17 o a3).
 
-[![Immagine per i siti di comunicazione infografica](media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+[![Immagine per i siti di comunicazione infografica](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsCreateCommunicationSite.pptx) (PDF)
 

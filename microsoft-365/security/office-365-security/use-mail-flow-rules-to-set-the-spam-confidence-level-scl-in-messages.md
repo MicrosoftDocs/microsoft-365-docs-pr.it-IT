@@ -16,12 +16,12 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a impostare il SCL dei messaggi in Exchange Online Protection.
-ms.openlocfilehash: 4befc3c371118416b6d07f151eb2c346f8520608
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 10440d5ac8cd57388f4550f21ca72ce7aa1a2745
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081980"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usare le regole del flusso di posta per impostare il livello di confidenza di posta indesiderata nei messaggi
 
@@ -39,14 +39,14 @@ ms.locfileid: "41598056"
 
 1. Nell'interfaccia di amministrazione di Exchange (EAC), scegliere **regole**del **flusso** \> di posta.
 
-2. Fare ****![clic su nuova](../media/ITPro-EAC-AddIcon.gif)icona Aggiungi e quindi selezionare **Crea una nuova regola**.
+2. Fare ****![clic su nuova](../../media/ITPro-EAC-AddIcon.gif)icona Aggiungi e quindi selezionare **Crea una nuova regola**.
 
 3. Specificare un nome per la regola.
 
 4. Scegliere **altre opzioni**e quindi in **applica questa regola se**, specificare una condizione che attiverà l'azione che verrà impostata per questa regola (ovvero impostare il valore SCL).
 
    Ad esempio, è possibile impostare **il mittente** \> **come interno/esterno**e quindi nella finestra di dialogo **Seleziona percorso mittente** selezionare **all'interno dell'organizzazione**e quindi scegliere **OK**.<br/>
-   ![Seleziona la località del mittente](../media/EOP-ETR-SetSCL-1.jpg)
+   ![Seleziona la località del mittente](../../media/EOP-ETR-SetSCL-1.jpg)
 
 5. In **Fai quanto segue**, selezionare **Modifica le proprietà del messaggio** \> **Imposta il livello di probabilità di posta indesiderata**.
 

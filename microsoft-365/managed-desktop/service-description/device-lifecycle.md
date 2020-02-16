@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 431b28635f856ebd50e1de4129c00149e1e7c78d
-ms.sourcegitcommit: b65c80051e53d9be223f4769f4d42a39f5a07735
+ms.openlocfilehash: 2d6dffad4b4d96e065dd5163ea702c91c27520fb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962343"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085839"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Ciclo di vita del prodotto Microsoft Managed Desktop
 
@@ -33,7 +33,7 @@ In questo argomento vengono illustrati in dettaglio il ciclo di vita dei disposi
 
 La sequenza intera è illustrata in questa figura:
 
-![Timeline del ciclo di vita: a partire dalla disponibilità generale del prodotto, la "disponibilità primaria" è durata due anni. Durante questo periodo la finestra di certificazione termina e ad un certo punto il dispositivo è onboarded. Al termine della disponibilità primaria, il prodotto viene archiviato e il "periodo di tolleranza" di tre anni inizia. A partire da quando il dispositivo è onboarded, ha un periodo di tre anni di utilizzo fino a quando non viene rimosso dalla gestione. Al termine del periodo di tolleranza, il prodotto viene rimosso dal catalogo.](images/non-dark1-edits.PNG)
+![Timeline del ciclo di vita: a partire dalla disponibilità generale del prodotto, la "disponibilità primaria" è durata due anni. Durante questo periodo la finestra di certificazione termina e ad un certo punto il dispositivo è onboarded. Al termine della disponibilità primaria, il prodotto viene archiviato e il "periodo di tolleranza" di tre anni inizia. A partire da quando il dispositivo è onboarded, ha un periodo di tre anni di utilizzo fino a quando non viene rimosso dalla gestione. Al termine del periodo di tolleranza, il prodotto viene rimosso dal catalogo.](../../media/non-dark1-edits.PNG)
 
 I prodotti rimangono nel catalogo per un massimo di 24 mesi, ma i <em>dispositivi</em> restano in gestione per 3 anni in base alle date di registrazione individuali. In effetti, ogni prodotto ha tre date importanti, ma ogni dispositivo ne ha uno solo. Per i prodotti, tutte e tre le date vengono calcolate in base alla <em>Data di approvazione</em>e pertanto si pubblicano queste date al momento dell'approvazione, in modo da poter sempre guardare avanti e pianificare adeguatamente l'intero ciclo di vita del prodotto.
 
@@ -58,7 +58,7 @@ In questa tabella vengono illustrate le date di esempio per i *dispositivi*teori
 
 Il ciclo di vita del prodotto inizia quando un produttore rilascia pubblicamente il prodotto:
 
-![sequenza temporale del ciclo di vita che mostra il periodo di valutazione](images/non-dark3-edits.PNG)
+![sequenza temporale del ciclo di vita che mostra il periodo di valutazione](../../media/non-dark3-edits.PNG)
 
 Durante questa fase, il team di ingegneri di Microsoft Managed Desktop esegue la valutazione e la certificazione di un prodotto. Il team valuta elementi quali l'affidabilità e le prestazioni di Windows, la conformità con una linea di base hardware, il sentimento di mercato e l'inventario e la preparazione dei canali, tra le altre cose. Questo processo in genere richiede circa 6 settimane.
   
@@ -71,7 +71,7 @@ Al termine di questa fase, Microsoft Managed Desktop aggiunge il prodotto all' [
 
 Questo periodo è il fulcro della disponibilità del prodotto:
 
-![sequenza temporale di ciclo di vita che Mostra disponibilità primario](images/non-dark4-edits.PNG)
+![sequenza temporale di ciclo di vita che Mostra disponibilità primario](../../media/non-dark4-edits.PNG)
 
 Qualsiasi dispositivo registrato durante questo periodo riceve tutti i tre anni di supporto di Microsoft Managed Desktop (come mostrato dalla sequenza temporale blu). Questo periodo dura fino a quando una data di fine non è impostata su 24 mesi dalla data di disponibilità generale.
 
@@ -84,7 +84,7 @@ Il periodo di tolleranza del prodotto è un periodo di tre anni che segue la dis
 Se si è acquistato di recente un numero di dispositivi approvati prima di effettuare l'iscrizione con Microsoft Managed Desktop, è comunque possibile registrarli, ma non si riceverà un massimo di tre anni di gestione. Al contrario, non conformi alla data di pensionamento, indipendentemente dal momento in cui sono stati registrati. Dietro le quinte, Microsoft Managed Desktop tratterà questi dispositivi come se fossero registrati nell'ultimo giorno di disponibilità principale. In questa figura, è possibile vedere questo scenario osservando che sia il dispositivo blu che quello verde terminano nello stesso giorno, nonostante la differenza di un anno di registrazione:
 
 
-![sequenza temporale del ciclo di vita con periodo di tolleranza](images/non-dark2-edits.PNG)
+![sequenza temporale del ciclo di vita con periodo di tolleranza](../../media/non-dark2-edits.PNG)
 
 L'esempio di laptop Fabrikam dalla tabella precedente illustra questa situazione: 
 

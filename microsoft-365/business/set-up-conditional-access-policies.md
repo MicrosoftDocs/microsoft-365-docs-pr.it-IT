@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come configurare i criteri di accesso condizionale per le campagne Microsoft 365.
-ms.openlocfilehash: 335fbd7e771b1595e1846529daed76e5ddd3a8f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1ef90bd77da43ded624d85cef9c7a33beec74345
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593386"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064612"
 ---
 # <a name="set-up-conditional-access-policies"></a>Impostare i criteri di accesso condizionale
 
@@ -52,7 +52,7 @@ Per ulteriori informazioni su questi criteri, vedere [What are Baseline Policies
 1. Accedere a [portale di Azure](https://portal.azure.com)e quindi passare a **accesso condizionale**di **Azure Active Directory** \> .
     
     I criteri di base sono elencati nella pagina. <br/> <br/>
-    ![Pagina in cui sono elencati i criteri di base per l'accesso condizionale.](media/baslinepolicies.png)
+    ![Pagina in cui sono elencati i criteri di base per l'accesso condizionale.](../media/baslinepolicies.png)
 1. Per ogni criterio, vedere le istruzioni specifiche seguenti:
 
   - [Richiedi l'autenticazione a più fattori per gli amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)

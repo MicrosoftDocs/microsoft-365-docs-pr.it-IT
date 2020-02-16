@@ -16,12 +16,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Sintesi: viene fornita la procedura dettagliata per la progettazione dei siti del team di SharePoint Online isolati.'
-ms.openlocfilehash: 345a5fa5dcdcf2a3e61fdd6f1f346d46afe3fd5f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f03df1f99650f458dd9df2c9e561decf491c3011
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599473"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083218"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Progettare un sito del team di SharePoint Online isolato
 
@@ -53,7 +53,7 @@ Il set di autorizzazioni specifiche che determina le operazioni disponibili per 
   
 Di seguito sono disponibili i gruppi di SharePoint e i livelli di autorizzazione predefiniti.
   
-![I gruppi di SharePoint e i livelli di autorizzazione predefiniti per un sito di SharePoint Online.](../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![I gruppi di SharePoint e i livelli di autorizzazione predefiniti per un sito di SharePoint Online.](../../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Fase 2: assegnare autorizzazioni agli utenti con i gruppi di accesso
 
@@ -93,7 +93,7 @@ Per i siti del team di SharePoint Online isolati, la struttura del gruppo consig
   
 Di seguito sono disponibili i gruppi di SharePoint predefiniti configurati per l'utilizzo dei gruppi di accesso basati su Azure AD.
   
-![Utilizzo di gruppi di accesso come membri dei gruppi di siti di SharePoint Online predefiniti.](../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![Utilizzo di gruppi di accesso come membri dei gruppi di siti di SharePoint Online predefiniti.](../../media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 Quando si progettano i tre gruppi di accesso, tenere presente quanto segue:
   
@@ -103,7 +103,7 @@ Quando si progettano i tre gruppi di accesso, tenere presente quanto segue:
     
 Di seguito è riportato un esempio di gruppi di SharePoint e gruppi di accesso per un sito isolato denominato ProjectX.
   
-![Un esempio di utilizzo dei gruppi di accesso per un sito di SharePoint Online denominato ProjectX.](../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![Un esempio di utilizzo dei gruppi di accesso per un sito di SharePoint Online denominato ProjectX.](../../media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>Fase 3: utilizzare i gruppi di Azure AD nidificati
 
@@ -126,7 +126,7 @@ Per utilizzare i gruppi di Azure AD nidificati:
   
 Di seguito è riportato un esempio di gruppi di Azure AD nidificati per il gruppo di accesso ai membri di ProjectX.
   
-![Un esempio di utilizzo dei gruppi di accesso annidati per il gruppo di accesso dei membri per il sito di ProjectX.](../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![Un esempio di utilizzo dei gruppi di accesso annidati per il gruppo di accesso dei membri per il sito di ProjectX.](../../media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 Poiché tutti gli account utente dei lead team di ricerca, ingegneria e progetto sono destinati a essere membri del sito, è più facile aggiungere i propri gruppi di Azure ad al gruppo di accesso dei membri di ProjectX.
   

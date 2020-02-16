@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: È possibile utilizzare Exchange Online Protection (EOP) per creare gruppi abilitati alla posta elettronica per un'organizzazione di Exchange. È inoltre possibile utilizzare EOP per definire o aggiornare le proprietà del gruppo che specificano l'appartenenza, gli indirizzi di posta elettronica e altri aspetti dei gruppi.
-ms.openlocfilehash: ae4e0a8c39c97720cb51c0f5d7b69547258b11b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ad07066906f78703c568850afbfa5dfa8d8cc3c1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598993"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082895"
 ---
 # <a name="manage-groups-in-eop"></a>Gestire gruppi in Exchange Online Protection
 
@@ -55,7 +55,7 @@ ms.locfileid: "41598993"
 
 1. Nell'EAC, accedere a **Destinatari** \> **Gruppi**.
 
-2. Fare **** ![clic su nuova](../media/ITPro-EAC-AddIcon.gif)icona Aggiungi, quindi fare clic su **gruppo di distribuzione** o **gruppo di sicurezza**in base alle proprie esigenze.
+2. Fare **** ![clic su nuova](../../media/ITPro-EAC-AddIcon.gif)icona Aggiungi, quindi fare clic su **gruppo di distribuzione** o **gruppo di sicurezza**in base alle proprie esigenze.
 
 3. Nella pagina **nuovo** gruppo di distribuzione o **nuovo gruppo di sicurezza** , configurare le seguenti impostazioni:
 
@@ -65,12 +65,12 @@ ms.locfileid: "41598993"
 
    - **Descrizione**: digitare una descrizione del gruppo in modo che gli utenti conoscano lo scopo del gruppo.
 
-   - **Proprietari**: per impostazione predefinita, la persona che crea il gruppo è il proprietario. È possibile aggiungere un proprietario scegliendo **Aggiungi** ![icona](../media/ITPro-EAC-AddIcon.gif). Ogni gruppo deve presentare almeno un proprietario.
+   - **Proprietari**: per impostazione predefinita, la persona che crea il gruppo è il proprietario. È possibile aggiungere un proprietario scegliendo **Aggiungi** ![icona](../../media/ITPro-EAC-AddIcon.gif). Ogni gruppo deve presentare almeno un proprietario.
 
      > [!NOTE]
      > I proprietari non sono tenuti a essere membri del gruppo.
 
-   - **Membri**: utilizzare questa sezione per aggiungere membri del gruppo e per specificare se è necessaria l'approvazione per gli utenti di partecipare o lasciare il gruppo. Per aggiungere membri al gruppo, fare clic su **Aggiungi** ![icona](../media/ITPro-EAC-AddIcon.gif).
+   - **Membri**: utilizzare questa sezione per aggiungere membri del gruppo e per specificare se è necessaria l'approvazione per gli utenti di partecipare o lasciare il gruppo. Per aggiungere membri al gruppo, fare clic su **Aggiungi** ![icona](../../media/ITPro-EAC-AddIcon.gif).
 
 4. Scegliere **OK** per tornare alla pagina originale.
 
@@ -82,9 +82,9 @@ ms.locfileid: "41598993"
 
 2. Eseguire una delle operazioni seguenti:
 
-   - Per modificare un gruppo: nell'elenco dei gruppi fare clic sul gruppo che si desidera visualizzare o modificare, quindi fare clic su **modifica** ![icona](../media/ITPro-EAC-EditIcon.gif)modifica. È possibile aggiornare le impostazioni generali, aggiungere o rimuovere proprietari del gruppo e aggiungere o rimuovere i membri del gruppo in base alle esigenze.
+   - Per modificare un gruppo: nell'elenco dei gruppi fare clic sul gruppo che si desidera visualizzare o modificare, quindi fare clic su **modifica** ![icona](../../media/ITPro-EAC-EditIcon.gif)modifica. È possibile aggiornare le impostazioni generali, aggiungere o rimuovere proprietari del gruppo e aggiungere o rimuovere i membri del gruppo in base alle esigenze.
 
-   - Per rimuovere un gruppo: selezionare il gruppo e fare **** ![clic su Rimuovi](../media/ITPro-EAC-RemoveIcon.gif)icona Rimuovi.
+   - Per rimuovere un gruppo: selezionare il gruppo e fare **** ![clic su Rimuovi](../../media/ITPro-EAC-RemoveIcon.gif)icona Rimuovi.
 
 3. Dopo avere apportato tutte le modifiche, fare clic su **Salva**.
 

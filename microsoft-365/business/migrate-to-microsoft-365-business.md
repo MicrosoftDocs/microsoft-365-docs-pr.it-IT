@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Passaggi che aggiornano la propria azienda da Office 365 Business Premium a Microsoft 365 business.
-ms.openlocfilehash: 0732f76e5bd8540e5954bd7ea7b88061326901b5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e17ac2658c7276ba4a77de371847343866815c42
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593680"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42065282"
 ---
 # <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Eseguire l'aggiornamento a Microsoft 365 business da Office 365 Business Premium
 
@@ -51,11 +51,11 @@ Acquistare le licenze attenendosi alla procedura seguente nella [nuova](https://
 1. Accedere all'interfaccia di amministrazione all' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>indirizzo.
 2. Passare al riquadro di spostamento e selezionare prodotti di **fatturazione** \> **& Servizi**. Individuare la sottoscrizione di Office 365 e selezionarla per visualizzare i dettagli. 
 
-    ![Nello screenshot viene mostrato come individuare e selezionare l'abbonamento nell'interfaccia di amministrazione.](media/FindYourSubscription.png)
+    ![Nello screenshot viene mostrato come individuare e selezionare l'abbonamento nell'interfaccia di amministrazione.](../media/FindYourSubscription.png)
 
 3. Nella pagina successiva, selezionare **Aggiorna**. 
 
-      ![Nello screenshot viene mostrato dove selezionare l'aggiornamento nell'interfaccia di amministrazione.](media/SelectUpgrade.png)
+      ![Nello screenshot viene mostrato dove selezionare l'aggiornamento nell'interfaccia di amministrazione.](../media/SelectUpgrade.png)
 
   > [!NOTE]
   > Se viene visualizzato un messaggio che indica che **l'aggiornamento dell'abbonamento non è supportato con la gestione delle licenze basate su gruppo in Azure Active Directory**, è possibile ignorare questa operazione a meno che non si disponga di un'organizzazione di grandi dimensioni. Le organizzazioni che hanno selezionato questa opzione sapranno di usare le licenze basate su gruppo.

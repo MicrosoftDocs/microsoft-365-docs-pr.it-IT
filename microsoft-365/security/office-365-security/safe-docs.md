@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui documenti attendibili in Office 365 ATP.
-ms.openlocfilehash: db73fc152a5a580a28bf6d8424ebc2a139cf3303
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: c76ae2c776c31cf798c21d7330bce488ad1e7cc6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960352"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082370"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Documenti attendibili in Office 365 Advanced Threat Protection
 
@@ -46,7 +46,7 @@ Documenti attendibili è una funzionalità di Office 365 Advanced Threat Protect
 
 4. Al termine, scegliere **Salva**.
 
-![Pagina allegati sicuri ATP](../media/safe-docs.png)
+![Pagina allegati sicuri ATP](../../media/safe-docs.png)
 
 ### <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-safe-documents"></a>Utilizzare PowerShell di Exchange Online o Exchange Online Protection PowerShell per configurare documenti sicuri
 

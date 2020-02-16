@@ -22,16 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: 'Informazioni su come usare Microsoft 365 business to Factory reimpostare i dispositivi Windows 10. '
-ms.openlocfilehash: b5039693640a17e531296d019117a9f40bf98a7f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4350b208341a51447153b415d2cb225697a11e1b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593477"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42064833"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Ripristinare le impostazioni del produttore per i dispositivi Windows 10
 
-[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 Il ripristino delle impostazioni predefinite ripristina le impostazioni originali di un dispositivo, ossia quelle disponibili al momento dell'acquisto. Tutte le app e i dati aggiunti nel dispositivo dopo l'acquisto vengono rimossi. È possibile usare Microsoft 365 Business per eseguire un ripristino delle impostazioni predefinite dei dispositivi Windows 10 gestiti.
   

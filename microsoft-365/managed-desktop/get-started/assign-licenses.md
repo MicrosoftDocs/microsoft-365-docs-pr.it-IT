@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a2be9f588c2fa6d1106d0f4efa523adb304d68ca
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.openlocfilehash: 8b12ec5f3b7d33f171790224a22ab55b33382187
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012476"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085865"
 ---
 # <a name="assign-licenses"></a>Assegnare licenze
 
@@ -24,11 +24,11 @@ In caso di problemi con l'assegnazione delle licenze, contattare il [supporto](.
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Passaggi per iniziare a utilizzare Microsoft Managed Desktop
 
-1. [Aggiungere e verificare i contatti di amministratore nel portale di amministrazione](add-admin-contacts.md)
-2. [Regolare l'accesso condizionale](conditional-access.md)
+1. [Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione](add-admin-contacts.md)
+2. [Modificare l'accesso condizionale](conditional-access.md)
 3. Assegnare le licenze (questo argomento)
-4. [Distribuire il portale aziendale di Intune](company-portal.md)
-5. [Abilitazione del roaming dello stato dell'organizzazione](enterprise-state-roaming.md)
+4. [Distribuire il Portale aziendale Intune](company-portal.md)
+5. [Abilitare Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Configurare i dispositivi](set-up-devices.md)
 7. [Preparare gli utenti a usare i dispositivi](get-started-devices.md)
 8. [Distribuire le app](deploy-apps.md)
