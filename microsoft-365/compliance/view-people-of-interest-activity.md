@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: eac58e10e97b639a296717210f7a9576abef5e35
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 59616247f284b76a4e180f315067f694ff861007
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597243"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068813"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>Visualizzare l'attività di controllo di persone di interesse
 
 Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, Indagini sui dati (Preview) è ora integrato con lo strumento di ricerca del registro di controllo esistente nel centro sicurezza & conformità. Usando questa esperienza incorporata, è possibile utilizzare lo strumento di gestione dei dati (Preview) People of interest Management Tool per facilitare le indagini, accedendo facilmente e ricercando le attività per gli utenti di interesse all'interno dell'indagine.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 È necessario avere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo in Exchange Online per poter eseguire ricerche nel log di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina Autorizzazioni nell'Interfaccia di amministrazione di Exchange. Per concedere a un utente la possibilità di eseguire ricerche nel log di controllo (anteprima) dei dati con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere i registri di controllo o i log di controllo di sola visualizzazione e quindi aggiungere l'utente come membro del nuovo ruolo gr OUP. Per altre informazioni, vedere Gestire i gruppi di ruoli in Exchange Online.
 

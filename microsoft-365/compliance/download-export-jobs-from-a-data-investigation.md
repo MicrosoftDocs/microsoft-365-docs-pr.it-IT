@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Installare e utilizzare Esplora archivi di Azure per scaricare i documenti esportati da Evidence in un'indagine di dati.
-ms.openlocfilehash: a0e93d392e12ba548c8360a618abf909c89f2036
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1f528101140a97df0161638be14e503a05b18f2c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595161"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074933"
 ---
 # <a name="download-export-jobs"></a>Scaricare processi di esportazione
 
@@ -43,7 +43,7 @@ Il passaggio successivo consiste nell'ottenere l'URL della firma di accesso cond
 
 3. Nella pagina riquadro a comparsa, in **percorsi**, copiare l'URL SAS visualizzato. Se necessario, è possibile salvarlo in un file in modo che sia possibile accedervi nel passaggio 3.
  
-   ![Copiare l'URL SAS visualizzato in percorsi](media/eDiscoExportJob.png)
+   ![Copiare l'URL SAS visualizzato in percorsi](../media/eDiscoExportJob.png)
 
 ## <a name="step-3-connect-to-the-azure-storage-location"></a>Passaggio 3: connettersi al percorso di archiviazione di Azure
 
@@ -53,15 +53,15 @@ Il passaggio finale consiste nell'utilizzare l'esploratore di archiviazione di A
 
 2. Fare clic sull'icona **Aggiungi account** . In alternativa, è possibile fare clic con il pulsante destro del mouse su **account di archiviazione**.
 
-   ![Fare clic sull'icona Aggiungi account](media/AzureStorageConnect.png)
+   ![Fare clic sull'icona Aggiungi account](../media/AzureStorageConnect.png)
 
 3.  Nella pagina **connessione ad Azure Storage** fare clic su **utilizza un URI di firma di accesso condiviso** e quindi fare clic su **Avanti**.
 
-    ![Fare clic su Usa un URI per la firma di accesso condiviso e quindi fare clic su Avanti.](media/AzureStorageConnect2.png)
+    ![Fare clic su Usa un URI per la firma di accesso condiviso e quindi fare clic su Avanti.](../media/AzureStorageConnect2.png)
 
 4.  Nella pagina **Allega con URI SAS** fare clic nella casella URI e quindi incollare l'URL SAS ottenuto nel passaggio 2. 
 
-    ![Incollare l'URL SAS nella casella URI](media/AzureStorageConnect3.png)
+    ![Incollare l'URL SAS nella casella URI](../media/AzureStorageConnect3.png)
 
     Si noti che una parte dell'URL SAS viene visualizzata nella casella **nome visualizzato** . Verrà utilizzato come nome visualizzato del contenitore creato negli **account di archiviazione** dopo la connessione al percorso di archiviazione. Questo nome è costituito dall'ID dell'analisi dei dati e da un identificatore univoco. È possibile mantenere il nome visualizzato predefinito o modificarlo. Se viene modificato, il nome visualizzato deve essere univoco.
 
@@ -69,13 +69,13 @@ Il passaggio finale consiste nell'utilizzare l'esploratore di archiviazione di A
 
     Viene visualizzata la pagina **Riepilogo connessione** .
    
-    ![Fare clic su Connetti nella pagina Riepilogo connessione per connettersi al percorso di archiviazione di Azure](media/AzureStorageConnect4.png)
+    ![Fare clic su Connetti nella pagina Riepilogo connessione per connettersi al percorso di archiviazione di Azure](../media/AzureStorageConnect4.png)
 
 6. Nella pagina **Riepilogo connessione** esaminare le informazioni sulla connessione e quindi fare clic su **Connetti**. 
 
     Viene aperto il nodo **contenitori BLOB** (in **account** > di archiviazione **(contenitori associati)** \> . 
 
-    ![Esportare processi nel nodo contenitori BLOB](media/AzureStorageConnect5.png)
+    ![Esportare processi nel nodo contenitori BLOB](../media/AzureStorageConnect5.png)
 
     Contiene un contenitore denominato con il nome visualizzato del passaggio 4. Questo contenitore contiene una cartella per ogni processo di esportazione creato. Queste cartelle sono denominate con un ID che corrisponde all'ID del processo di esportazione. È possibile trovare questi ID di esportazione (e il nome dell'esportazione) in **informazioni di supporto** nella pagina a comparsa per ogni processo di **preparazione dei dati per l'esportazione** elencato nella scheda **processi** .
 
@@ -83,7 +83,7 @@ Il passaggio finale consiste nell'utilizzare l'esploratore di archiviazione di A
 
    Viene visualizzato un elenco di cartelle e di report di esportazione.
    
-    ![La cartella Export contiene i file esportati e i report di esportazione](media/AzureStorageConnect6.png)
+    ![La cartella Export contiene i file esportati e i report di esportazione](../media/AzureStorageConnect6.png)
 
    La cartella dei processi di esportazione contiene gli elementi seguenti. Gli elementi effettivi nella cartella Export sono determinati dalle opzioni di esportazione configurate al momento della creazione del processo di esportazione. Per ulteriori informazioni, vedere [esportare documenti da un set di revisione](export-documents-from-review-set.md).
 
@@ -107,7 +107,7 @@ Il passaggio finale consiste nell'utilizzare l'esploratore di archiviazione di A
 
     Esplora archivi di Azure consente di avviare il processo di esportazione. Lo stato del download degli elementi esportati viene visualizzato nel riquadro **attività** . Quando il download è stato completato, viene visualizzato un messaggio.
 
-    ![Quando il download è stato completato, viene visualizzato un messaggio](media/AzureStorageConnect8.png)
+    ![Quando il download è stato completato, viene visualizzato un messaggio](../media/AzureStorageConnect8.png)
 
 > [!NOTE]
 > Invece di scaricare l'intero processo di esportazione, è possibile selezionare elementi specifici da scaricare. Invece di scaricare gli elementi, è possibile fare doppio clic su un elemento per visualizzarlo.

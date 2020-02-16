@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: b70ea48a7784c6cfc9bff4131fdecab339d4d417
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 4b01571d5a56d53861481dac6cb399e227ca0db6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862036"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073026"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurare un connettore per l'importazione dei dati HR
 
 È possibile configurare un connettore di dati nel centro conformità di Microsoft 365 per importare i dati delle risorse umane (HR), ad esempio la data in cui un dipendente ha inviato le proprie dimissioni e la data dell'ultimo giorno del dipendente. Questo tipo di dati HR può quindi essere utilizzato dalle soluzioni Microsoft per la protezione delle informazioni, ad esempio la nuova [soluzione di gestione dei rischi Insider](insider-risk-management.md), per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione. La configurazione di un connettore HR consiste nella creazione di un'app in Azure Active Directory utilizzata per l'autenticazione tramite connettore, la creazione di un file di mapping CSV che contenga i dati HR, la creazione di un connettore di dati nel centro conformità e l'esecuzione di uno script (su un base pianificata) che consente di ingerire i dati HR nel file CSV nel cloud Microsoft. Successivamente, il connettore dati viene utilizzato Microsoft Compliance Solutions (come Insider Risk Management) per accedere ai dati HR che sono stati importati nell'organizzazione Microsoft 365.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - L'organizzazione deve acconsentire a consentire al servizio di importazione di Office 365 di accedere ai dati nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta. È necessario completare questo passaggio prima di poter creare correttamente il connettore HR nel passaggio 3.
 
@@ -86,7 +86,7 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
 5. Nella pagina **mapping dei file** Digitare i tre nomi delle intestazioni di colonna (denominati anche *parametri* dal file CSV creato nel passaggio 2 in ognuna delle caselle appropriate. I nomi non sono distinzione tra maiuscole e minuscole. Come spiegato in precedenza, i nomi digitati in queste caselle devono corrispondere ai nomi dei parametri nel file CSV. Ad esempio, nella schermata seguente vengono mostrati i nomi dei parametri dell'esempio in un file CSV di esempio illustrato nel passaggio 2.
 
-   ![I nomi delle intestazioni di colonna corrispondono a quelli nel file CSV](media/HRConnectorWizard3.png)
+   ![I nomi delle intestazioni di colonna corrispondono a quelli nel file CSV](../media/HRConnectorWizard3.png)
 
 6. Nella pagina **Revisione** rivedere le impostazioni e quindi fare clic su **fine** per creare il connettore.
 
@@ -98,7 +98,7 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
 8. Fare clic sul connettore HR appena creato per visualizzare la pagina del riquadro a comparsa, che contiene le proprietà e altre informazioni sul connettore. 
 
-   ![Pagina a comparsa per il nuovo connettore HR](media/HRConnectorWizard7.png)
+   ![Pagina a comparsa per il nuovo connettore HR](../media/HRConnectorWizard7.png)
 
    Se non è stato ancora fatto, è possibile copiare i valori per l'ID dell' **app di Azure** e il **processo di connettore**. Sarà necessario eseguire lo script nel passaggio successivo. È inoltre possibile scaricare lo script dalla pagina del riquadro a comparsa o scaricarlo utilizzando il collegamento nel passaggio successivo.
 
@@ -153,11 +153,11 @@ Dopo aver creato il connettore HR ed eseguito lo script per caricare i dati HR, 
 
 2. Fare clic sulla scheda **connettori** e quindi selezionare il connettore HR per visualizzare la pagina del riquadro a comparsa, che contiene le proprietà e le informazioni sul connettore.
 
-   ![Pagina del riquadro a comparsa del connettore HR con proprietà e stato](media/HRConnectorFlyout1.png)
+   ![Pagina del riquadro a comparsa del connettore HR con proprietà e stato](../media/HRConnectorFlyout1.png)
 
 3. In **stato di avanzamento**fare clic sul collegamento **accedi al registro** per aprire o salvare il registro di stato del connettore. Questo log contiene informazioni su ogni volta che lo script viene eseguito e carica i dati dal file CSV al cloud Microsoft. 
 
-   ![Il file di registro del connettore HR Visualizza le righe di numero da file CSV caricati](media/HRConnectorLogFile.png)
+   ![Il file di registro del connettore HR Visualizza le righe di numero da file CSV caricati](../media/HRConnectorLogFile.png)
 
    Il campo **RecordsSaved** indica il numero di righe nel file CSV che è stato caricato. Ad esempio, se il file CSV contiene 4 righe, il valore dei campi **RecordsSaved** è 4, se lo script ha correttamente caricato tutte le righe del file CSV.
 
@@ -193,7 +193,7 @@ Per assicurarsi che i dati HR più recenti dell'organizzazione siano disponibili
 
 7. Selezionare la scheda **azioni** , fare clic su **nuovo**e quindi eseguire le operazioni seguenti:
 
-   ![Impostazioni azione per creare una nuova attività pianificata per lo script del connettore HR](media/HRConnectorScheduleTask1.png)
+   ![Impostazioni azione per creare una nuova attività pianificata per lo script del connettore HR](../media/HRConnectorScheduleTask1.png)
 
    a. Nell'elenco a discesa **azione** , verificare che sia selezionata l'opzione **avvia un programma** .
 
@@ -209,7 +209,7 @@ Per assicurarsi che i dati HR più recenti dell'organizzazione siano disponibili
 
    La nuova attività viene visualizzata nella libreria dell'utilità di pianificazione.
 
-   ![La nuova attività viene visualizzata nella raccolta di utilità di pianificazione](media/HRConnectorTaskSchedulerLibrary.png)
+   ![La nuova attività viene visualizzata nella raccolta di utilità di pianificazione](../media/HRConnectorTaskSchedulerLibrary.png)
 
    L'ultima volta che lo script è stato eseguito e la volta successiva che viene pianificata l'esecuzione viene visualizzata. È possibile fare doppio clic sull'attività per modificarla.
 

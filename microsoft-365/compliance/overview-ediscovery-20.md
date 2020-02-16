@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritta la nuova versione di Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: 30b69bbd80799b0f3e32b008ec1d4affc8be6605
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: b3583037953d8dcb36ea6b3f7a2ba521e47fd9c4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662012"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071055"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Panoramica della soluzione avanzata di eDiscovery in Microsoft 365
 
@@ -31,7 +31,7 @@ La soluzione avanzata di eDiscovery in Microsoft 365 si basa sulle funzionalità
 
 Il flusso di lavoro incorporato di Advanced eDiscovery è allineato al processo eDiscovery descritto dal modello di riferimento di Electronic Discovery (EDRM). 
 
-![EDRM (Electronic Discovery Reference Model)](media/EDRMv1.png)
+![EDRM (Electronic Discovery Reference Model)](../media/EDRMv1.png)
 
 (Fonte di immagini per gentile concessione di edrm.net. L'immagine di origine è stata resa disponibile nella licenza Creative Commons Attribution 3,0 Unported.
 
@@ -57,7 +57,7 @@ Nelle sezioni seguenti vengono descritti i singoli passaggi del flusso di lavoro
 
 Per ulteriori informazioni sul flusso di lavoro end-to-end in Advanced eDiscovery, vedere this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133). 
 
-![Le schede in Advanced eDiscovery seguono il flusso di lavoro di EDRM](media/aedisco-homepage-1.png)
+![Le schede in Advanced eDiscovery seguono il flusso di lavoro di EDRM](../media/aedisco-homepage-1.png)
 
 ## <a name="managing-custodians"></a>Gestione dei depositari
 

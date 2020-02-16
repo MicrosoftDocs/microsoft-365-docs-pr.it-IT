@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: In qualità di amministratore di Office 365, è possibile revocare alcuni messaggi di posta elettronica crittografati con la crittografia avanzata dei messaggi di Office 365.
-ms.openlocfilehash: 9d694c200df161c0a52884ded14d29908376a9b7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6cbe0704d6e84282d71c37c72a45712c30f3ac61
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597603"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070038"
 ---
 # <a name="revoke-email-encrypted-by-office-365-advanced-message-encryption"></a>Revocare un messaggio di posta elettronica crittografato da Office 365 Advanced Message Encryption
 
@@ -41,7 +41,7 @@ Se un destinatario riceve un'esperienza basata sul collegamento o un'esperienza 
 
 Dopo che un messaggio di posta elettronica è stato revocato, il destinatario riceve un errore quando accede alla posta elettronica crittografata tramite il portale di crittografia dei messaggi di Office 365: "il messaggio è stato revocato dal mittente".
 
-![Schermata che visualizza un messaggio di posta elettronica crittografato revocato.](media/revoked-encrypted-email.png)
+![Schermata che visualizza un messaggio di posta elettronica crittografato revocato.](../media/revoked-encrypted-email.png)
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>Come revocare un messaggio di posta elettronica crittografato
 

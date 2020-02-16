@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Utilizzare la funzionalità di statistiche di ricerca per visualizzare e confrontare le statistiche per più ricerche di contenuto nel centro sicurezza & conformità. È inoltre possibile configurare l'elenco di parole chiave quando si crea o si modifica una query di ricerca per ottenere statistiche avanzate che mostrano il numero di elementi corrispondenti a ciascuna parola chiave o frase di parola chiave.
-ms.openlocfilehash: 80a2abc2392a21439219d5bd5d462a4671a926a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07a13ab2f183cfa9349f827cf410e417c0944869
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601253"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068959"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Visualizzare le statistiche delle parole chiave per i risultati di Ricerca contenuto
 
@@ -37,9 +37,9 @@ Per visualizzare le statistiche per le ricerche di contenuto:
   
 1. Nel centro sicurezza & conformità, andare a ricerca **** \> **contenuto**ricerca.
     
-2. Nell'elenco delle ricerche, selezionare una o più ricerche, quindi fare clic su **Search Statistics**![Search Statistics Button](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png).
+2. Nell'elenco delle ricerche, selezionare una o più ricerche, quindi fare clic su **Search Statistics**![Search Statistics Button](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png).
     
-    ![Selezionare più ricerche e quindi fare clic su statistiche di ricerca](media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
+    ![Selezionare più ricerche e quindi fare clic su statistiche di ricerca](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
 3. Nella pagina **statistiche di ricerca** fare clic su uno dei collegamenti seguenti per visualizzare le statistiche sulle ricerche selezionate. 
     
@@ -47,7 +47,7 @@ Per visualizzare le statistiche per le ricerche di contenuto:
     
     In questa pagina vengono visualizzate statistiche simili a quelle visualizzate nel riquadro dei dettagli nella pagina **Ricerca contenuto** . Vengono visualizzate le statistiche per tutte le ricerche selezionate. Tenere presente che è anche possibile rieseguire le ricerche selezionate da questa pagina per aggiornare le statistiche. 
     
-    ![Riepilogo delle statistiche per le ricerche selezionate](media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
+    ![Riepilogo delle statistiche per le ricerche selezionate](../media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
   
     a.  Nome della ricerca di contenuto. Come indicato in precedenza, è possibile visualizzare e confrontare le statistiche per più ricerche.
     
@@ -63,7 +63,7 @@ Per visualizzare le statistiche per le ricerche di contenuto:
     
     In questa pagina vengono visualizzate le statistiche relative alla query di ricerca.
     
-    ![Statistiche delle query di ricerca per le ricerche selezionate](media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
+    ![Statistiche delle query di ricerca per le ricerche selezionate](../media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
   
     a. Nome della ricerca di contenuto per la quale la riga contiene le statistiche di query.
     
@@ -92,7 +92,7 @@ Per visualizzare le statistiche per le ricerche di contenuto:
     
     In questa pagina vengono visualizzate le statistiche relative al numero di elementi che corrispondono alla query di ricerca in ogni percorso di contenuto in cui è stata eseguita la ricerca. Vengono visualizzati i primi 1.000 percorsi. Se si visualizzano le statistiche per più ricerche, vengono visualizzate le posizioni principali di 1.000 per ogni ricerca. Si noti che una posizione di contenuto non è inclusa in questa pagina se non contiene gli elementi che corrispondono alla query di ricerca.
     
-    ![Statistiche relative al numero di elementi trovati nei percorsi di contenuto in cui è stata eseguita la ricerca](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
+    ![Statistiche relative al numero di elementi trovati nei percorsi di contenuto in cui è stata eseguita la ricerca](../media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   
     a. Nome del percorso del contenuto.
     
@@ -109,11 +109,11 @@ Per creare un elenco di parole chiave e visualizzare le statistiche delle parole
   
 1. Nel centro sicurezza & conformità, andare a ricerca **** \> **contenuto**ricerca.
     
-2. Nell'elenco delle ricerche di contenuto, fare clic e una ricerca, quindi fare **** ![clic su modifica](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icona modifica.
+2. Nell'elenco delle ricerche di contenuto, fare clic e una ricerca, quindi fare **** ![clic su modifica](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icona modifica.
     
 3. Fare clic su **query** e quindi eseguire le operazioni seguenti: 
     
-    ![Fare clic sulla casella di controllo Mostra elenco parole chiave e digitare una parola chiave in ogni riga](media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
+    ![Fare clic sulla casella di controllo Mostra elenco parole chiave e digitare una parola chiave in ogni riga](../media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
   
     a. Fare clic sulla casella di controllo **Mostra elenco parole chiave** . 
     
@@ -121,11 +121,11 @@ Per creare un elenco di parole chiave e visualizzare le statistiche delle parole
     
 4. Dopo aver aggiunto le parole chiave che si desidera cercare e ottenere le statistiche, fare clic su **Cerca** per eseguire la ricerca riveduta. 
     
-5. Al termine della ricerca, selezionarlo nell'elenco delle ricerche, quindi fare clic su **Search Statistics** ![Search Statistics](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Button. È inoltre possibile visualizzare e confrontare le statistiche delle parole chiave per più ricerche.
+5. Al termine della ricerca, selezionarlo nell'elenco delle ricerche, quindi fare clic su **Search Statistics** ![Search Statistics](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Button. È inoltre possibile visualizzare e confrontare le statistiche delle parole chiave per più ricerche.
     
 6. Nella pagina **statistiche di ricerca** fare clic su **query** per visualizzare le statistiche delle parole chiave per le ricerche selezionate. 
     
-    ![Vengono visualizzate le statistiche per ogni parola chiave per le ricerche selezionate](media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
+    ![Vengono visualizzate le statistiche per ogni parola chiave per le ricerche selezionate](../media/e7910fa9-af93-4df9-92d0-e1e3e089e14f.png)
   
     Come illustrato nella schermata precedente, vengono visualizzate le statistiche per ogni parola chiave. sono inclusi i seguenti: 
     

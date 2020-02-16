@@ -1,5 +1,7 @@
 ---
 title: Prevenzione della perdita di dati e Microsoft Teams
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft teams. Leggere questo articolo per ulteriori informazioni su come funziona.
-ms.openlocfilehash: 55a13d44ab3cff777ee8ed4610d746c3649bf558
-ms.sourcegitcommit: 3401f90721e6f7c65152a31c5be1bb91bfe641c0
+ms.openlocfilehash: 30436659b8b1bd336823e8dc6be06c8fbc8e08e3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41022361"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075307"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita di dati e Microsoft Teams
 
@@ -42,17 +44,17 @@ Recentemente, le funzionalità di [prevenzione della perdita di dati](data-loss-
 
 Analogamente a come funziona DLP in [Exchange, Outlook, Outlook sul Web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web), [SharePoint Online, siti di OneDrive for business](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)e [client desktop di Office, i](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)suggerimenti per i criteri vengono visualizzati quando un'azione è in conflitto con un criterio DLP. Di seguito è riportato un esempio di suggerimento per i criteri:
 
-![Notifica del messaggio bloccato nei team](media/dlp-teams-blockedmessage-notification.png)
+![Notifica del messaggio bloccato nei team](../media/dlp-teams-blockedmessage-notification.png)
 
 In questo caso, il mittente ha tentato di condividere un numero di previdenza sociale in un canale Microsoft teams. **Che cosa è possibile fare?** collegamento consente di aprire una finestra di dialogo in cui sono disponibili opzioni per il mittente per risolvere il problema. Si noti che in questo caso, il mittente può scegliere di ignorare il criterio oppure inviare una notifica a un amministratore per verificarlo e risolverlo.
 
-![Opzioni per la risoluzione del messaggio bloccato](media/dlp-teams-blockedmessage-possibleactions.png)
+![Opzioni per la risoluzione del messaggio bloccato](../media/dlp-teams-blockedmessage-possibleactions.png)
 
 Nell'organizzazione è possibile scegliere di consentire agli utenti di eseguire l'override di un criterio DLP. Quando si configurano i criteri DLP, è possibile utilizzare i suggerimenti per i criteri predefiniti oppure [personalizzare i suggerimenti](#to-customize-policy-tips) per i criteri per l'organizzazione. 
 
 Tornando all'esempio, in cui un mittente ha condiviso un numero di previdenza sociale in un canale teams, ecco cosa ha visto il destinatario:
 
-![Messaggio bloccato](media/dlp-teams-blockedmessage-notification-to-user.png)
+![Messaggio bloccato](../media/dlp-teams-blockedmessage-notification-to-user.png)
 
 La **che cos'è?** collegamento consente di aprire un [articolo](data-loss-prevention-policies.md) sui criteri DLP, che consente di spiegare perché il messaggio è stato bloccato.
 
@@ -66,9 +68,9 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 3. Selezionare un criterio e fare clic su **modifica**accanto a **impostazioni criterio**.
 
-4. Creare una nuova regola o modificare una regola esistente per il criterio.<br/>![Modifica di una regola per un criterio](media/dlp-teams-editrule.png)<br/>
+4. Creare una nuova regola o modificare una regola esistente per il criterio.<br/>![Modifica di una regola per un criterio](../media/dlp-teams-editrule.png)<br/>
 
-5. Nella scheda **notifiche utente** selezionare **Personalizza il testo del messaggio di posta elettronica** e/o **Personalizza le opzioni di testo del suggerimento per i criteri** .<br/>![Personalizzare le notifiche degli utenti e i suggerimenti per i criteri](media/dlp-teams-editrule-usernotifications.png)<br/>  
+5. Nella scheda **notifiche utente** selezionare **Personalizza il testo del messaggio di posta elettronica** e/o **Personalizza le opzioni di testo del suggerimento per i criteri** .<br/>![Personalizzare le notifiche degli utenti e i suggerimenti per i criteri](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
 6. Specificare il testo che si desidera utilizzare per le notifiche di posta elettronica e/o suggerimenti per i criteri e quindi scegliere **Salva**. 
 
@@ -84,9 +86,9 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 2. Scegliere **i** > **criteri**di prevenzione della perdita di dati. 
 
-3. Selezionare un criterio e esaminare i valori in **percorsi**. Se si visualizzano **i messaggi chat e canali del team**, è tutto pronto. In caso contrario, fare clic su **modifica**.<br/>![Posizioni per i criteri esistenti](media/dlp-teams-editexistingpolicy.png)<br/>
+3. Selezionare un criterio e esaminare i valori in **percorsi**. Se si visualizzano **i messaggi chat e canali del team**, è tutto pronto. In caso contrario, fare clic su **modifica**.<br/>![Posizioni per i criteri esistenti](../media/dlp-teams-editexistingpolicy.png)<br/>
 
-4. Nella colonna **stato** , attiva il criterio per i **messaggi di chat e di canale dei team**.<br/>![DLP per le chat e i canali di Teams](media/dlp-teams-addteamschatschannels.png)<br/>
+4. Nella colonna **stato** , attiva il criterio per i **messaggi di chat e di canale dei team**.<br/>![DLP per le chat e i canali di Teams](../media/dlp-teams-addteamschatschannels.png)<br/>
 
 5. Mantenere le impostazioni predefinite di tutti gli account oppure specificare gli account da includere o escludere.
 
@@ -102,11 +104,11 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 2. Scegliere **** > **** criteri > di prevenzione della perdita**di dati + creare un criterio**. 
 
-3. Scegliere un [modello](data-loss-prevention-policies.md#dlp-policy-templates)e quindi fare clic su **Avanti**.<br/>In questo esempio, è stato scelto il modello di dati di identificazione personale degli Stati Uniti.<br/>![Modello di privacy per i criteri DLP](media/dlp-teams-createnewpolicy-template.png)<br/>
+3. Scegliere un [modello](data-loss-prevention-policies.md#dlp-policy-templates)e quindi fare clic su **Avanti**.<br/>In questo esempio, è stato scelto il modello di dati di identificazione personale degli Stati Uniti.<br/>![Modello di privacy per i criteri DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
 4. Nella scheda **denominare i criteri** specificare un nome e una descrizione per il criterio e quindi fare clic su **Avanti**. 
 
-5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti i percorsi oppure selezionare **Consenti percorsi specifici**e quindi scegliere **Avanti**.<br/>Se sono stati scelti percorsi specifici, selezionarli per il criterio DLP e quindi scegliere **Avanti**.<br/>![Posizioni dei criteri DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
+5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti i percorsi oppure selezionare **Consenti percorsi specifici**e quindi scegliere **Avanti**.<br/>Se sono stati scelti percorsi specifici, selezionarli per il criterio DLP e quindi scegliere **Avanti**.<br/>![Posizioni dei criteri DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Se si desidera verificare che i documenti che contengono informazioni riservate non siano condivisi in modo improprio, verificare che i **siti di SharePoint** e gli **account di OneDrive** siano attivati insieme ai **messaggi di chat e dei canali di Team**.
     > I canali di Microsoft teams dipendono fortemente dalla funzionalità di Exchange Online. Verificare che l'indirizzo di **posta elettronica di Exchange** sia abilitato anche per i criteri da applicare per il contenuto dei canali.  
@@ -114,9 +116,9 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 6. Nella scheda **impostazioni dei criteri** , in **Personalizza il tipo di contenuto che si desidera proteggere**, mantenere le impostazioni predefinite semplici oppure scegliere **Usa impostazioni avanzate**e quindi scegliere **Avanti**. Se si scelgono le impostazioni avanzate, è possibile creare o modificare regole per i criteri. Per ottenere assistenza, vedere [Simple Settings vs Advanced Settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).
 
-7.  Nella scheda **impostazioni dei criteri** , in **che cosa si desidera eseguire se vengono rilevate informazioni riservate?**, esaminare le impostazioni. (Ecco dove è possibile scegliere se mantenere i suggerimenti per i [criteri e le notifiche di posta elettronica](use-notifications-and-policy-tips.md)predefiniti oppure personalizzarli).<br/>![Impostazioni dei criteri DLP con suggerimenti e notifiche](media/dlp-teams-policysettings-tipsemails.png)<br/>Dopo aver completato la revisione o la modifica delle impostazioni, scegliere **Avanti**.
+7.  Nella scheda **impostazioni dei criteri** , in **che cosa si desidera eseguire se vengono rilevate informazioni riservate?**, esaminare le impostazioni. (Ecco dove è possibile scegliere se mantenere i suggerimenti per i [criteri e le notifiche di posta elettronica](use-notifications-and-policy-tips.md)predefiniti oppure personalizzarli).<br/>![Impostazioni dei criteri DLP con suggerimenti e notifiche](../media/dlp-teams-policysettings-tipsemails.png)<br/>Dopo aver completato la revisione o la modifica delle impostazioni, scegliere **Avanti**.
 
-8. Nella scheda **impostazioni dei criteri** , in **fare in modo che si desideri disattivare il criterio o eseguire prima un test?**, scegliere se abilitare il criterio, [testarlo prima](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)oppure tenerlo disattivato per ora, quindi scegliere **Avanti**.<br/>![Specificare se si desidera che il criterio venga attivato](media/dlp-teams-policysettings-turnonnow.png)<br/>
+8. Nella scheda **impostazioni dei criteri** , in **fare in modo che si desideri disattivare il criterio o eseguire prima un test?**, scegliere se abilitare il criterio, [testarlo prima](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)oppure tenerlo disattivato per ora, quindi scegliere **Avanti**.<br/>![Specificare se si desidera che il criterio venga attivato](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
 9. Nella scheda **Verifica le impostazioni** , esaminare le impostazioni per il nuovo criterio. Scegliere **modifica** per apportare modifiche. Al termine, scegliere **Crea**. 
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: 'Informazioni su come visualizzare i risultati del processo di analisi in Office 365 Advanced eDiscovery, incluse le definizioni delle opzioni di attività visualizzate.  '
-ms.openlocfilehash: 9e06770135afd62a39115c9365a698df4493bd72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bac173beebe2fdf3d07122bfca04cbaaee6410e6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597253"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069185"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Visualizzare i risultati dell'analisi in Office 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ In Advanced eDiscovery, Progress and results for the Analyze Process può essere
 
 In **prepara \> analisi \> stato \> attività risultati**, lo stato viene visualizzato durante e dopo l'analisi dell'esecuzione del processo. 
   
-![Analizzare lo stato delle attività](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
+![Analizzare lo stato delle attività](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
 Le attività visualizzate possono variare a seconda delle opzioni selezionate. 
   
@@ -73,7 +73,7 @@ I **risultati dei messaggi di** posta elettronica visualizzano il numero di copi
     
 I risultati degli **allegati** visualizzano il numero di allegati, in base al tipo di elementi unici e duplicati. 
   
-![Risultati quasi duplicati e thread di posta elettronica](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
+![Risultati quasi duplicati e thread di posta elettronica](../media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
 ## <a name="see-also"></a>Vedere anche
 

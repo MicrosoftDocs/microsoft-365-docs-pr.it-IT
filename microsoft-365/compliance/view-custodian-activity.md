@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 46dffe5c388f247604bc67dc24916206452745da
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3371587513b16703fa1ead1170f599c406cb6fd2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597263"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069081"
 ---
 # <a name="view-custodian-audit-activity"></a>Visualizzazione dell'attività di controllo del custode
 
 Se è necessario verificare se un utente ha visualizzato un documento specifico o ha eliminato un elemento dalla cassetta postale, Advanced eDiscovery è ora integrato con lo strumento di ricerca del registro di controllo esistente nel centro sicurezza & Compliance. Usando questa esperienza incorporata, è possibile utilizzare lo strumento di gestione dei depositari di Advanced eDiscovery per facilitare le indagini, accedendo facilmente e ricercando l'attività dei depositari all'interno del caso.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 È necessario avere il ruolo relativo ai log di controllo di sola lettura o ai log di controllo in Exchange Online per poter eseguire ricerche nel log di controllo di Office 365. Per impostazione predefinita, questi ruoli sono assegnati ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina Autorizzazioni nell'Interfaccia di amministrazione di Exchange. Per concedere a un utente la possibilità di eseguire ricerche nel log di controllo avanzato di eDiscovery con il livello minimo di privilegi, è possibile creare un gruppo di ruoli personalizzato in Exchange Online, aggiungere i registri di controllo o i registri di controllo di sola visualizzazione e quindi aggiungere l'utente come membro del nuovo gruppo di ruoli. Per altre informazioni, vedere Gestire i gruppi di ruoli in Exchange Online.
 
@@ -44,19 +44,19 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 
     Viene visualizzata la pagina di ricerca attività del custode. Tenere presente che il custode selezionato nel passaggio precedente viene visualizzato nella casella di menu a discesa **custode** . È possibile selezionare diversi depositari nell'elenco a discesa, ma è possibile cercare solo le attività per un custode alla volta.
 
-    ![Pagina di ricerca attività del custode](media/AeDCustodianActivities1.png)
+    ![Pagina di ricerca attività del custode](../media/AeDCustodianActivities1.png)
    
 4. Configurare i criteri di ricerca seguenti: 
       
    a. **Attività** -fare clic sull'elenco a discesa per visualizzare le attività che è possibile cercare. Dopo aver eseguito la ricerca, vengono visualizzati solo i record di controllo per le attività selezionate. Se si seleziona **Mostra risultati per tutte le attività** , verranno visualizzati i risultati di tutte le attività eseguite dal custode che corrispondono agli altri criteri di ricerca.
 
-      ![Elenco delle attività](media/CustodianActivityAudit.PNG)
+      ![Elenco delle attività](../media/CustodianActivityAudit.PNG)
       
       b. Data di **inizio e data di fine** : selezionare un intervallo di data e ora per visualizzare gli eventi che si sono verificati entro quel periodo. Gli ultimi sette giorni sono selezionati per impostazione predefinita. La data e l'ora sono specificate in formato UTC (Coordinated Universal Time). L'intervallo di date massimo che è possibile specificare è di un anno.
       
       c. **Depositari** -fare clic in questa casella e quindi selezionare un custode specifico per visualizzare i risultati della ricerca. I record di controllo per l'attività selezionata eseguita dagli utenti selezionati in questa casella vengono visualizzati nell'elenco dei risultati.
       
-   5. Fare clic su   ![Pulsante Cerca](media/SearchButton.PNG)  per eseguire la ricerca utilizzando i criteri di ricerca. I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in risultati nella pagina di ricerca attività del custode. 
+   5. Fare clic su   ![Pulsante Cerca](../media/SearchButton.PNG)  per eseguire la ricerca utilizzando i criteri di ricerca. I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in risultati nella pagina di ricerca attività del custode. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Passaggio 2: visualizzazione dei risultati di ricerca del registro di controllo
 

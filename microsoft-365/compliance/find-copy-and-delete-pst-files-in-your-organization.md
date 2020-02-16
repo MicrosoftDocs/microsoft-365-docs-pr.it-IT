@@ -13,12 +13,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Utilizzare lo strumento di raccolta PST di Microsoft per cercare la rete dell'organizzazione per ottenere un inventario dei file PST sparsi nell'organizzazione. Dopo aver trovato i file PST, è possibile utilizzare lo strumento di raccolta PST per copiarli in una posizione centrale in modo da poterli importare in Office 365.
-ms.openlocfilehash: 59c4222966bba4e72e73135aa57fb45e0362f765
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 736e317318f860936450b7412bc465fc7c9d59e1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594557"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073925"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Utilizzare lo strumento di raccolta PST per trovare, copiare ed eliminare i file PST nell'organizzazione
 
@@ -33,7 +33,7 @@ Un'altra operazione che è possibile eseguire con lo strumento di raccolta PST �
 
 Ecco una breve panoramica del processo di utilizzo dello strumento di raccolta PST per trovare, controllare, raccogliere ed eliminare i file PST nell'organizzazione.
   
-![Panoramica del processo dello strumento di raccolta PST](media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
+![Panoramica del processo dello strumento di raccolta PST](../media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
   
 1. **[Passaggio 1: trovare i file PST sulla rete](#step-1-find-pst-files-on-your-network)** : quando si esegue lo strumento per trovare i file PST, è necessario specificare un percorso, ad esempio un'unità organizzativa che contiene oggetti di Active Directory per i computer client e server. È inoltre possibile cercare specifiche macchine o condivisioni file di rete. Quando si esegue lo strumento, un agente di raccolta "Lightweight" viene installato nei computer di destinazione. Questo agente Cerca nel computer di destinazione i file PST e quindi invia informazioni allo strumento di raccolta PST su qualsiasi file PST trovato. Lo strumento consente di creare file di registro che contengono informazioni sui file PST trovati nei percorsi specificati. Questi file vengono utilizzati quando si esegue lo strumento nei passaggi successivi. 
     
@@ -45,7 +45,7 @@ Ecco una breve panoramica del processo di utilizzo dello strumento di raccolta P
     
 5. **[Passaggio 5: eliminare i file PST trovati nella rete](#step-5-delete-the-pst-files-found-on-your-network)** -dopo che i file PST trovati e raccolti sono stati importati nelle cassette postali di Exchange online in Office 365, è possibile utilizzare lo strumento di raccolta PST per eliminare i file PST dai percorsi originali in cui sono stati trovati nel passaggio 1. 
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Eseguire la procedura seguente per scaricare lo strumento di raccolta PST nel computer locale. 
     
@@ -240,7 +240,7 @@ Dopo che i file PST trovati e raccolti sono stati importati nelle cassette posta
     
     |Parametro * * * *|****Descrizione****|Esempi * * * *|
     |:-----|:-----|:-----|
-    | `DataSource` <br/> |Specifica il tipo di dati da cercare. Attualmente, è possibile utilizzare lo strumento di raccolta PST per cercare i file PST. ![spaziatore](media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
+    | `DataSource` <br/> |Specifica il tipo di dati da cercare. Attualmente, è possibile utilizzare lo strumento di raccolta PST per cercare i file PST. ![spaziatore](../media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
     | `Mode` <br/> |Specifica il tipo di operazione che verrà eseguito dallo strumento. Utilizzare il valore `Delete` per eliminare i file PST che sono stati trovati quando è stato eseguito lo strumento nella modalità di ricerca.  <br/> | `-Mode Delete` <br/> |
     | `JobName` <br/> |Specifica il nome di un processo di raccolta PST esistente. È necessario utilizzare lo stesso nome del processo utilizzato per l'esecuzione dello strumento nella modalità di ricerca e nella modalità raccolta del passaggio 1 e del passaggio 3. Il nome del processo viene inoltre aggiunto al nome del file di registro creato quando si esegue lo strumento in modalità di eliminazione.  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |Specifica la cartella che contiene il file di configurazione XML che è stato creato quando è stato eseguito lo strumento nella modalità raccolta. Utilizzare lo stesso valore utilizzato per questo parametro nel passaggio 3.  <br/> | `-ConfigurationLocation "c:\users\admin\ desktop\PSTCollection\Configuration"` <br/> |

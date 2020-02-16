@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilizzare i limiti di conformità per creare confini logici all'interno di un'organizzazione di Office 365 che controllano i percorsi di contenuto utente che un Manager di eDiscovery può cercare. I limiti di conformità utilizzano il filtro delle autorizzazioni di ricerca (denominato anche filtri di sicurezza di conformità) per controllare le cassette postali, i siti di SharePoint e gli account OneDrive che possono essere ricercati da utenti specifici.
-ms.openlocfilehash: bd167246bc43cba20a444594a2309ac888c734fc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9ca390dfc96307e6323e897e762813719f2b3ac0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597473"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069741"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Impostare i limiti di conformità per le indagini eDiscovery in Office 365
 
@@ -31,7 +31,7 @@ I limiti di conformità creano confini logici all'interno di un'organizzazione d
   
 Nell'esempio riportato di seguito viene illustrato il funzionamento dei limiti di conformità.
   
-![I limiti di conformità consistono nei filtri delle autorizzazioni di ricerca che controllano l'accesso alle agenzie e ai gruppi di ruoli amministrativi che controllano l'accesso a eDiscovery](media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![I limiti di conformità consistono nei filtri delle autorizzazioni di ricerca che controllano l'accesso alle agenzie e ai gruppi di ruoli amministrativi che controllano l'accesso a eDiscovery](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
 In questo esempio, contoso LTD è un'organizzazione di Office 365 costituita da due consociate, Fourth Coffee e Coho Winery. L'azienda richiede che i gestori e gli investigatori di eDiscovery possano cercare solo le cassette postali di Exchange, gli account di OneDrive e i siti di SharePoint nell'agenzia. Inoltre, i responsabili e gli investigatori di eDiscovery possono vedere solo i casi di eDiscovery nell'agenzia e possono accedere solo ai casi in cui sono membri. Ecco come i limiti di conformità soddisfano questi requisiti.
   
@@ -162,9 +162,9 @@ Per creare un caso e assegnare membri:
     
 2. Nell'elenco dei casi di eDiscovery, fare clic sul nome del caso creato.
     
-3. Nella pagina **Gestisci** il riquadro a comparsa di questo caso, in **Manage role groups**fare clic su ![Aggiungi icona](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Aggiungi**.
+3. Nella pagina **Gestisci** il riquadro a comparsa di questo caso, in **Manage role groups**fare clic su ![Aggiungi icona](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Aggiungi**.
     
-    ![Aggiungere un gruppo di ruoli come membro di un caso di eDiscovery](media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
+    ![Aggiungere un gruppo di ruoli come membro di un caso di eDiscovery](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. Nell'elenco dei gruppi di ruoli, selezionare uno dei gruppi di ruoli creati nel passaggio 3, quindi fare clic su **Aggiungi**.
     

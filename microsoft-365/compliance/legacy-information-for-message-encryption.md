@@ -16,12 +16,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Se non è stata ancora spostata l'organizzazione di Office 365 nelle nuove funzionalità OME, ma è già stata distribuita OME, le informazioni contenute in questo articolo si applicano all'organizzazione. Microsoft consiglia di effettuare un piano per passare alle nuove funzionalità OME non appena è ragionevole per la propria organizzazione. Per istruzioni, vedere Configurare le nuove funzionalità di crittografia dei messaggi di Office 365 basate su Azure Information Protection. Per ulteriori informazioni sul funzionamento delle nuove funzionalità, vedere crittografia dei messaggi di Office 365. Il resto di questo articolo si riferisce al comportamento OME prima del rilascio delle nuove funzionalità OME.
-ms.openlocfilehash: cb5315c99b586f250ecd2e5ee51ee6f4534e8bff
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 29bebb89bf8fcfed25e5348789d80d244a044b6f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585725"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072235"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informazioni legacy per Office 365 Message Encryption
 
@@ -53,7 +53,7 @@ Quando un utente invia un messaggio di posta elettronica in Exchange Online che 
   
 Nel seguente diagramma viene riepilogata la procedura di crittografia e decrittografia di un messaggio di posta elettronica.
   
-![Diagramma del percorso di un messaggio di posta elettronica crittografato](media/O365-Office365MessageEncryption-Concept.png)
+![Diagramma del percorso di un messaggio di posta elettronica crittografato](../media/O365-Office365MessageEncryption-Concept.png)
   
 Per ulteriori informazioni, vedere [informazioni sul servizio per la crittografia dei messaggi di Office 365 legacy prima del rilascio delle nuove funzionalità ome](legacy-information-for-message-encryption.md#LegacyServiceInfo).
   
@@ -87,7 +87,7 @@ In qualità di amministratore di Exchange Online e Exchange Online Protection, �
   
 Nel seguente esempio viene illustrato un logo personalizzato per ContosoPharma nell'allegato di posta elettronica:
   
-![Esempio di visualizzazione della pagina del messaggio crittografato](media/TA-OME-3attachment2.jpg)
+![Esempio di visualizzazione della pagina del messaggio crittografato](../media/TA-OME-3attachment2.jpg)
   
  **Per personalizzare i messaggi di posta elettronica di crittografia e il portale di crittografia con il marchio dell'organizzazione**
   

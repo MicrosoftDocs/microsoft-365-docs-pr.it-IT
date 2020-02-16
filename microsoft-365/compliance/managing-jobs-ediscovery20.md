@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 78767318a8799ec88e15452f70bceaa5466a9cbf
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+description: Le procedure avanzate di eDiscovery consentono di monitorare lo stato dei processi di lunga durata relativi all'esecuzione di varie attività avanzate di eDiscovery.
+ms.openlocfilehash: eca2eff32b54f783c6c983a8a20237db2faf2240
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960332"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071573"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Gestire i processi in Advanced eDiscovery
 
@@ -40,7 +40,7 @@ Di seguito è indicato un elenco dei processi (che in genere sono di lunga durat
 |Preparazione dei dati per l'esportazione | Un utente esporta i documenti da un set di revisione. Al termine del processo di esportazione, è possibile scaricare i dati esportati in un computer locale. Per ulteriori informazioni, vedere [Export case data](exporting-data-ediscover20.md). | 
 |Preparazione per la risoluzione degli errori |Quando un utente seleziona un file e crea una nuova correzione degli errori nella visualizzazione errori nella scheda **elaborazione** di un caso, il primo passaggio del processo consiste nel caricare il file che ha l'errore di elaborazione in una posizione di archiviazione di Azure nel cloud Microsoft. Questo processo tiene traccia dello stato di avanzamento della procedura di caricamento. Per ulteriori informazioni sul flusso di lavoro per la correzione degli errori, vedere correzione degli [errori durante l'elaborazione dei dati](error-remediation.md). | 
 |Preparazione dell'anteprima di ricerca | Dopo che un utente ha creato ed eseguito una nuova ricerca (o ha rieseguito una ricerca esistente), lo strumento di ricerca prepara un sottoinsieme di elementi di esempio (che corrispondono alla query di ricerca) che è possibile visualizzare in anteprima. La visualizzazione in anteprima dei risultati della ricerca consente di determinare l'efficacia della ricerca.  Per ulteriori informazioni, vedere [Collect Data for a case](collecting-data-for-ediscovery.md#view-search-results-and-statistics). | 
-|Reindicizzazione dei dati del custode | Quando si aggiunge un custode a un caso, tutti gli elementi parzialmente indicizzati nelle origini dati selezionate del custode vengono reindicizzati da un processo denominato *Advanced indicizzazione*. Questo processo viene attivato anche quando si fa clic su **Aggiorna indice** nella visualizzazione indice nella scheda **elaborazione** di un caso. Per ulteriori informazioni, vedere [Advanced indicizzazione dei dati del custode](indexing-custodian-data.md).
+|Reindicizzazione dei dati del custode | Quando si aggiunge un custode a un caso, tutti gli elementi parzialmente indicizzati nelle origini dati selezionate del custode vengono reindicizzati da un processo denominato *Advanced indicizzazione*. Questo processo viene attivato anche quando si fa clic su **Aggiorna indice** nella scheda **elaborazione** di un caso e quando si aggiorna l'indice per uno specifico custode nella pagina del riquadro a comparsa delle proprietà del custode. Per ulteriori informazioni, vedere [Advanced indicizzazione dei dati del custode](indexing-custodian-data.md).
 |Esecuzione di analisi | Un utente analizza i dati in un set di revisione eseguendo strumenti di analisi avanzata di eDiscovery, ad esempio vicino al rilevamento duplicato, all'analisi del threading di posta elettronica e all'analisi dei temi. Per ulteriori informazioni, vedere [analyze data in a Review set](analyzing-data-in-review-set.md). | 
 |Contrassegnare i documenti | Questo processo viene attivato quando un utente fa clic su **Avvia processo di tagging** nel **Pannello di tagging** quando si esaminano i documenti in un set di revisione. Un utente può avviare questo processo dopo aver eseguito il tag dei documenti in un set di revisione e quindi selezionarli in blocco nel pannello Visualizza documento. Per ulteriori informazioni, vedere [tag Documents in a Review set](tagging-documents.md). | 
 |||

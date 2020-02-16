@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'Informazioni su come trovare i risultati di un modulo di processo eseguito in Office 365 Advanced eDiscovery, incluso lo stato delle attività e il riepilogo dei processi.  '
-ms.openlocfilehash: 2c492b9c8dfa2b6851620c434f1a5b4bbddc2e4e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 95e5e8f5ddc24bf0b8bf38800289abd233c655ad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597223"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068841"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Visualizza i risultati del modulo di processo in Office 365 Advanced eDiscovery
 
@@ -34,7 +34,7 @@ Dopo l'avvio del **processo** di **preparazione** \> , è possibile visualizzare
 
 Nei **risultati**del **processo** \> di **preparazione** \> la pagina mostra lo stato corrente (se il processo è in esecuzione) oppure lo stato dell'ultimo processo di elaborazione, come illustrato nell'esempio seguente.
   
-![Stato delle attività del modulo processo](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
+![Stato delle attività del modulo processo](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
 Le attività visualizzate possono variare a seconda delle opzioni di elaborazione selezionate. 
   
@@ -82,7 +82,7 @@ I riquadri presentano una visualizzazione grafica delle statistiche dei file imp
     
     Se la marcatura dei file **precontrassegnati** ha avuto esito negativo, viene anche rilevato. 
     
-![Riepilogo modulo processo](media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
+![Riepilogo modulo processo](../media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
   
 ## <a name="process-summary-accumulated-and-last-charts"></a>Riepilogo del processo accumulato e ultimo grafico
 
@@ -106,7 +106,7 @@ La barra destra, elaborata, include:
 
 Nei risultati \> \> del \> processo di preparazione, vengono visualizzati i dettagli relativi agli errori dell'ultima sessione o all'azione eseguita.
   
-![Errori modulo processo](media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
+![Errori modulo processo](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
 ## <a name="see-also"></a>Vedere anche
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fdde59b04c7f52f163028aa7ba4759e226fccb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602453"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071283"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR Titolo 21 parte 11
 
@@ -45,14 +45,15 @@ I clienti possono richiedere l'accesso ai rapporti di conformità, in base ai te
 
 Informazioni su come accelerare la distribuzione della FDA CFR Title 21: [scaricare la guida alla qualificazione di Azure FDA 21](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 Anche se non vi è alcuna certificazione per la conformità con il titolo QRC 21 parte 11, i seguenti servizi cloud di Microsoft Enterprise sono stati sottoposti a controlli di terze parti indipendenti, che possono aiutare i clienti a rispettare le proprie attività. Questi servizi includono:
 
 - Azure: Servizi cloud, archiviazione, gestione traffico, macchine virtuali e rete virtuale
+- DevOps di Azure
 - Intune
 - [Dynamics 365 e Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- [Office 365 e Office 365 U.S. Government](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Office 365 e Office 365 U.S. Government
 
 ## <a name="audits-reports-and-certificates"></a>Controlli, report e certificati
 

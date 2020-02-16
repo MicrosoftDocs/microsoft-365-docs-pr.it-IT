@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 962524f29b72d46500869f4f0059959a2b77ff3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601863"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071223"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission: regolamentazione dei sistemi Compliance and Integrity (SCI)
 
@@ -43,16 +43,16 @@ Per aiutare i clienti dei servizi finanziari degli Stati Uniti a essere conformi
 
 Questo documento fornisce un'accurata lista di controllo delle aree critiche di regolamentazione di fantascienza. Questo elenco di controllo consente alle organizzazioni finanziarie di comprendere in che modo è possibile adottare Azure per garantire ai propri regolatori, clienti e dirigenti la conformità con i requisiti normativi applicabili.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 
-## <a name="how-to-implement"></a>Come implementare
+## <a name="how-to-implement"></a>Come eseguire l'implementazione
 
 - [Guida all'implementazione di sci di regolamentazione](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers): esegue il mapping delle funzionalità di Azure rispetto alla normativa e dettaglia la responsabilità condivisa per la conformità.
 - [Progettazione di applicazioni di Azure affidabili](https://docs.microsoft.com/azure/architecture/resiliency/): breve panoramica del modo in cui creare l'affidabilità in ogni passaggio della progettazione delle applicazioni di Azure.
 - [Progettazione di applicazioni a disponibilità elevata](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): in che modo gli sviluppatori possono contribuire a garantire che le applicazioni di archiviazione di Azure siano estremamente disponibili.
-- [Valutazione dei rischi e guida alla conformità](https://aka.ms/RiskGovernanceGuide): per creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'autorità competente.
+- [Guida alla valutazione dei rischi e alla conformità](https://aka.ms/RiskGovernanceGuide): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

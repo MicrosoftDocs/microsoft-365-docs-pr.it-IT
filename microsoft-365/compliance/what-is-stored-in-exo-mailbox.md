@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: I dati prodotti dalle app basate su cloud in Office 365 sono archiviati in una cassetta postale di Exchange Online di un utente nel cloud Microsoft.
-ms.openlocfilehash: f9db94eebf855a2d8dcfee8897ca6171eabbc400
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5e263acaca21e8cdf9c338f0aaa56846a8a929ef
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597193"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068733"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Contenuto archiviato nelle cassette postali di Exchange Online
 

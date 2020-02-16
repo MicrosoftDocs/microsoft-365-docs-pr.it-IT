@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Come eseguire la procedura per importare il contenuto che non viene archiviato in O365 in un BLOB di Azure in modo che possa essere analizzato con AeD
-ms.openlocfilehash: 8417382bc37b5bb3515e893ff2043019525b3f72
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7a06bff3abe70e58ab08edcc456bc167229b05f2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597973"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072983"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importare contenuto non Office 365 per l'analisi di eDiscovery avanzata
 
@@ -32,7 +32,7 @@ Non tutti i documenti che potrebbe essere necessario analizzare con Office 365 A
 > [!NOTE]
 > È possibile acquistare un abbonamento a un componente aggiuntivo per l'archiviazione dei dati di Office 365 Advanced eDiscovery per il contenuto non Office 365. Questo è disponibile solo per il contenuto che deve essere analizzato con Advanced eDiscovery. Seguire i passaggi descritti in [buy or Edit and add-on per office 365 for business](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) e acquistare il componente aggiuntivo di archiviazione di Office 365 Advanced eDiscovery. 
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Se si utilizza la funzionalità carica non Office 365 come descritto in questa procedura, è necessario disporre di:
   

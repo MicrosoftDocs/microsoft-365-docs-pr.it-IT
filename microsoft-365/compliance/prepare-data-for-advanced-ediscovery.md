@@ -16,19 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: "Informazioni su come utilizzare Microsoft 365 Security &amp; Compliance Center per preparare i dati di Office 365 per l'analisi con Office 365 Advanced eDiscovery. "
-ms.openlocfilehash: 6407b6f2a2bbe9bc69842057232ec01569ef64c8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 028cdb48e5ece2509d175a363c19beb6c2fafa19
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597763"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071033"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Preparare i dati per Office 365 Advanced eDiscovery
 
 In questo argomento viene descritto come caricare i risultati di una ricerca di contenuto in un caso in Advanced eDiscovery. 
   
 > [!IMPORTANT]
-> Continuando ad investire nelle versioni più recenti di Advanced eDiscovery, si annuncia la pensione di Office 365 Advanced eDiscovery (noto anche come *Advanced eDiscovery v 1.0*). Se si sta ancora usando Advanced eDiscovery v 1.0, passare a [Advanced eDiscovery v 2.0](overview-ediscovery-20.md) (nota anche come *soluzione avanzata di eDiscovery in Microsoft 365*) appena possibile. Advanced eDiscovery 2,0 contiene funzionalità simili rilevate in Advanced eDiscovery v 1.0, ma offre anche molte nuove funzionalità come la gestione dei depositari, la gestione delle comunicazioni e i set di revisione. Per ulteriori informazioni sul pensionamento di Advanced eDiscovery v 1.0, vedere [pensionamento degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
+> Microsoft continua a investire in nuove versioni di Advanced eDiscovery e annuncia il ritiro di Office 365 Advanced eDiscovery, noto anche come *Advanced eDiscovery v1.0*. Se si usa ancora Advanced eDiscovery v 1.0, passare al più presto ad [Advanced eDiscovery v2.0](overview-ediscovery-20.md), noto anche come *soluzione Advanced eDiscovery in Microsoft 365*. Advanced eDiscovery 2.0 contiene funzionalità simili a quelle disponibili in Advanced eDiscovery v1.0, ma offre anche numerose nuove caratteristiche, come gestione dei responsabili, gestione delle comunicazioni e insiemi da rivedere. Per altre informazioni sul ritiro di Advanced eDiscovery v 1.0, vedere [Ritiro degli strumenti di eDiscovery legacy](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>Passaggio 1: preparare i dati di Office 365 per Advanced eDiscovery
 
@@ -53,11 +53,11 @@ Dopo aver preparato i risultati della ricerca nel centro &amp; sicurezza e confo
     
 5. Nella **Home** page del caso, fare clic su **Advanced eDiscovery**. 
     
-    ![Fare clic su passa a Advanced eDiscovery per aprire il caso in Advanced eDiscovery](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![Fare clic su passa a Advanced eDiscovery per aprire il caso in Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
     Viene visualizzata la barra **di avanzamento per la connessione a Advanced eDiscovery** . Quando si è connessi a Advanced eDiscovery, viene visualizzato un elenco di contenitori nella pagina di installazione del caso. 
     
-    ![Il caso viene visualizzato in Advanced eDiscovery](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![Il caso viene visualizzato in Advanced eDiscovery](../media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
      Questi contenitori rappresentano i risultati della ricerca preparati per l'analisi in Advanced eDiscovery nel passaggio 1. Si noti che il nome del contenitore ha lo stesso nome della ricerca di contenuto nel caso nel centro sicurezza &amp; e conformità. I contenitori presenti nell'elenco sono quelli che sono stati preparati. Se un utente diverso ha preparato i risultati della ricerca per Advanced eDiscovery, i contenitori corrispondenti non verranno inclusi nell'elenco. 
     

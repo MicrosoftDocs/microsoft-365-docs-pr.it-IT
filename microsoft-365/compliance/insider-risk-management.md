@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0da96fe4148ffc30ac8e2f7854157675786cd321
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582875"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072749"
 ---
 # <a name="insider-risk-management-in-microsoft-365-preview"></a>Gestione dei rischi insider in Microsoft 365 (anteprima)
 
@@ -56,7 +56,7 @@ La gestione dei rischi Insider aiuta a identificare, indagare ed intervenire per
 
 L'identificazione e la risoluzione delle attività a rischio interno e i problemi di conformità con la gestione dei rischi insider in Microsoft 365 utilizzano il flusso di lavoro seguente:
 
-![Workflow di gestione dei rischi Insider](media/insider-risk-workflow.png)
+![Workflow di gestione dei rischi Insider](../media/insider-risk-workflow.png)
 
 ### <a name="policies"></a>Generali
 
@@ -70,7 +70,7 @@ I criteri di gestione dei rischi Insider vengono creati utilizzando modelli pred
 
 Per ulteriori informazioni, vedere [criteri di gestione dei rischi Insider](insider-risk-management-policies.md).
 
-![Dashboard dei criteri di gestione del rischio Insider](media/insider-risk-policy-dashboard.png)
+![Dashboard dei criteri di gestione del rischio Insider](../media/insider-risk-policy-dashboard.png)
 
 ### <a name="alerts"></a>Avvisi
 
@@ -84,7 +84,7 @@ Gli avvisi vengono generati automaticamente da indicatori di rischio che soddisf
 
 Per ulteriori informazioni, vedere [avvisi sulla gestione dei rischi Insider](insider-risk-management-alerts.md).
 
-![Dashboard di avviso gestione dei rischi Insider](media/insider-risk-alerts-dashboard.png)
+![Dashboard di avviso gestione dei rischi Insider](../media/insider-risk-alerts-dashboard.png)
 
 ### <a name="triage"></a>Triage
 
@@ -92,7 +92,7 @@ Le nuove attività che richiedono l'analisi generano automaticamente gli avvisi 
 
 Gli avvisi vengono risolti aprendo un nuovo caso, assegnando l'avviso a un caso esistente o ignorando l'avviso. Utilizzando i filtri di avviso, è facile identificare rapidamente gli avvisi in base allo stato, alla gravità o al tempo rilevato. Nell'ambito del processo di valutazione, i revisori possono visualizzare i dettagli degli avvisi per la corrispondenza dei criteri, visualizzare le attività degli utenti associati alla corrispondenza, vedere la gravità dell'avviso e verificare le informazioni sui profili utente.
 
-![Valutazione della gestione dei rischi Insider](media/insider-risk-triage.png)
+![Valutazione della gestione dei rischi Insider](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>Analizzare
 
@@ -106,7 +106,7 @@ Se si seleziona un caso nel dashboard del caso, verrà aperta la causa per l'ana
 
 Per ulteriori informazioni, vedere [casi di gestione dei rischi Insider](insider-risk-management-cases.md).
 
-![Indagini sulla gestione dei rischi Insider](media/insider-risk-investigate.png)
+![Indagini sulla gestione dei rischi Insider](../media/insider-risk-investigate.png)
 
 ### <a name="action"></a>Azione
 

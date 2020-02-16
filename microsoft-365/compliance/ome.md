@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Con la crittografia dei messaggi di Office 365, l'organizzazione può inviare e ricevere messaggi di posta elettronica crittografati tra utenti all'interno e all'esterno dell'organizzazione. La crittografia dei messaggi di posta elettronica consente di verificare che solo i destinatari previsti possano visualizzare il contenuto del messaggio.
-ms.openlocfilehash: a80086e64c7e7033141fcc84e0cd9145d64a22f6
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: ae0d8e831b872c898140612225de39a89f31ae6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862026"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071093"
 ---
 # <a name="office-365-message-encryption"></a>Crittografia dei messaggi di Office 365
 

@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6776571f4abafaf8e050fa6c31311df452d90e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Gestire i depositari in un caso di eDiscovery avanzato.
+ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582915"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071611"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestire i depositari in un caso avanzato di eDiscovery
 
 La scheda depositari in Advanced eDiscovery contiene un elenco di tutti i depositari che sono stati aggiunti al caso. Dopo aver aggiunto i depositari a un caso, i dettagli relativi a ogni custode vengono raccolti automaticamente da Azure Active Directory e sono visualizzabili in Advanced eDiscovery.
 
-![Gestire i depositari](media/CustodianDetails.PNG)
+![Gestire i depositari](../media/CustodianDetails.PNG)
 
 ## <a name="view-custodian-details"></a>Visualizzare i dettagli del custode
 
@@ -37,7 +37,7 @@ Per visualizzare i dettagli relativi a un custode, fare clic sul custode dall'el
 
   - **Nome** visualizzato-nome visualizzato nella rubrica del custode. Questo è in genere la combinazione del nome, dell'iniziale e del cognome del custode.
   
-   - **Mail/SMTP** : l'indirizzo SMTP primario per il custode, ad esempio brianj@contoso.onmicrosoft.com. Si noti che anche il nome dell'entità utente (UPN) del custode è elencato.
+   - **Mail/SMTP** : l'indirizzo SMTP primario per il custode, ad esempio brianj@contoso.onmicrosoft.com. Viene elencato anche il nome dell'entità utente (UPN) del custode.
 
   - **Title** -titolo del processo del custode.
 
@@ -82,7 +82,7 @@ Per aggiornare le origini dati associate a un custode:
   
 3. Selezionare un custode dall'elenco e fare clic su **modifica** nella pagina a comparsa.
 
-    ![Modificare origini dati](media/EditCustodianDataSource.PNG)
+    ![Modificare origini dati](../media/EditCustodianDataSource.PNG)
   
 4. Fare clic su scegliere la scheda **origini dati** per modificare le impostazioni per la cassetta postale di Exchange e l'account OneDrive della banca depositaria, fare clic su **Scegli origini dati**.
   
@@ -92,11 +92,11 @@ Per aggiornare le origini dati associate a un custode:
   
 6. Fare clic su **Place detentive** holds per abilitare o disabilitare il blocco per il custode.
 
-## <a name="resolve-custodian-processing-errors"></a>Risolvere gli errori di elaborazione del custode
+## <a name="re-index-custodian-data"></a>Reindicizzare i dati del custode
 
 Nella maggior parte dei flussi di lavoro di eDiscovery per le indagini giudiziarie, viene cercato un sottoinsieme di dati di un custode dopo che il custode è stato aggiunto a un caso legale. A causa dei file di dimensioni molto grandi o di un possibile danneggiamento dei dati, alcuni elementi nelle origini dati associate a un custode possono essere parzialmente indicizzati. Utilizzando la funzionalità di [indicizzazione avanzata](indexing-custodian-data.md) in Advanced eDiscovery, è possibile correggere automaticamente gli elementi indicizzati in modo automatico riindicizzando questi elementi su richiesta.
 
-Quando un custode viene aggiunto a un caso, i dati che si trovano nelle origini dati associate al custode vengono reindicizzati automaticamente (tramite il processo di indicizzazione avanzato). Questo significa che è possibile lasciare i dati sul posto invece di scaricarli e rimediarli e quindi cercarli in modalità non in linea. Tuttavia, durante il ciclo di vita di un caso legale, è possibile associare nuove origini dati a un custode. In questo caso, è necessario reindicizzare i dati del custode rieseguendo il processo di indicizzazione avanzato per correggere gli elementi parzialmente indicizzati e aggiornare l'indice per i dati del custode.
+Quando un custode viene aggiunto a un caso, i dati che si trovano nelle origini dati associate al custode vengono reindicizzati automaticamente (tramite il processo di indicizzazione avanzato). Questo significa che è possibile lasciare i dati sul posto invece di scaricarli e rimediarli e quindi cercarli in modalità non in linea. Tuttavia, durante il ciclo di vita di un caso legale, è possibile associare nuove origini dati a un custode. In questo caso, è possibile reindicizzare i dati del custode rieseguendo il processo di indicizzazione avanzato per correggere gli elementi parzialmente indicizzati e aggiornare l'indice per i dati del custode.
 
 Per attivare il processo di reindicizzazione per risolvere gli elementi parzialmente indicizzati:
 
@@ -136,7 +136,7 @@ Per rilasciare un custode:
 
 5. Fare clic su **Sì** per confermare che si desidera rilasciare il custode. 
 
-    Si noti che lo stato di questo utente nella scheda **depositari** è impostato su **rilasciato** e lo **stato di blocco** sulla pagina a comparsa viene modificato in **false**. 
+    Lo stato di questo utente nella scheda **depositari** è impostato su **rilasciato** e lo stato di **blocco** nella pagina del riquadro a comparsa viene modificato in **false**. 
 
 > [!NOTE]
 > Un custode potrebbe essere coinvolto contemporaneamente in numerosi casi legali. Quando un custode viene rilasciato da un caso, le esenzioni e le notifiche su altre questioni non verranno influenzate.
@@ -145,4 +145,4 @@ Per rilasciare un custode:
 
 È possibile utilizzare l'editor di massa per modificare più depositari contemporaneamente. A tale scopo, è sufficiente selezionare due o più depositari nella scheda **depositari** per visualizzare l'editor di massa e quindi fare clic su una delle attività.
 
-![Pagina a comparsa per modificare le impostazioni di più depositari](media/AeDBulkEditCustodians.png)
+![Pagina a comparsa per modificare le impostazioni di più depositari](../media/AeDBulkEditCustodians.png)

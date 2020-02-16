@@ -20,12 +20,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: "La condivisione è un'attività chiave in SharePoint Online e OneDrive for business. Gli amministratori possono ora utilizzare il controllo di condivisione nel log di controllo di Office 365 per identificare le risorse condivise con gli utenti esterni all'organizzazione. "
-ms.openlocfilehash: f979bd9a3b796fc3e9e84872df7e0b6071aefc03
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597283"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069239"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Controllare la condivisione per identificare risorse condivise con utenti esterni
 
@@ -99,13 +99,13 @@ Il primo passaggio consiste nell'eseguire una ricerca nel registro di controllo 
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nel riquadro sinistro del Centro sicurezza & conformità fare clic su ricerca ****  > **log di controllo**di ricerca.
+3. Nel riquadro sinistro del Centro sicurezza e conformità fare clic su **Cerca**  > **Ricerca log di controllo**.
     
     Viene visualizzata la pagina **Ricerca log di controllo**. 
     
 4. In **attività**fare clic su **condivisione e accesso alle attività richieste** per cercare gli eventi relativi alla condivisione. 
     
-    ![In attività selezionare condivisione e accesso alle attività richieste](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![In attività selezionare condivisione e accesso alle attività richieste](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  Selezionare un intervallo di data e ora per individuare gli eventi di condivisione che si sono verificati entro quel periodo. 
     

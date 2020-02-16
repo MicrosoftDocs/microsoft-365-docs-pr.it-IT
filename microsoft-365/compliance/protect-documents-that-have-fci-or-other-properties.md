@@ -17,18 +17,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Molte organizzazioni dispongono già di un processo per identificare e classificare le informazioni riservate mediante le proprietà di classificazione nell'Infrastruttura di classificazione file (FCI) di Windows Server, le proprietà dei documenti in SharePoint o le proprietà dei documenti applicate da un sistema di terze parti. Se è il caso della propria organizzazione, è possibile creare un criterio DLP in Office 365 che riconosce le proprietà che sono state applicate ai documenti da FCI di Windows Server o da un altro sistema, in modo che il criterio DLP possa essere applicato a documenti di Office con FCI specifica o altri valori di proprietà.
-ms.openlocfilehash: 1ae70571817de1df3a48b38a44da1ed1e3695750
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bfcbc30af3a3dac304dc57551e6246ec9e6554c0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597703"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070623"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà
 
 In Office 365, è possibile utilizzare un criterio di prevenzione della perdita di dati (DLP) per identificare, controllare e proteggere le informazioni riservate. Molte organizzazioni dispongono già di un processo per identificare e classificare le informazioni riservate mediante le proprietà di classificazione nell'Infrastruttura di classificazione file (FCI) di Windows Server, le proprietà dei documenti in SharePoint o le proprietà dei documenti applicate da un sistema di terze parti. Se è il caso della propria organizzazione, è possibile creare un criterio DLP in Office 365 che riconosce le proprietà che sono state applicate ai documenti da FCI di Windows Server o da un altro sistema, in modo che il criterio DLP possa essere applicato a documenti di Office con FCI specifica o altri valori di proprietà.
   
-![Diagramma con Office 365 e il sistema di classificazione esterno](media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
+![Diagramma con Office 365 e il sistema di classificazione esterno](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
   
 Ad esempio, l'organizzazione potrebbe utilizzare FCI di Windows Server per identificare i documenti con le informazioni di identificazione personale (PII), come i numeri di previdenza sociale, e quindi classificare il documento impostando la proprietà **Informazioni di identificazione personale** su **Elevata**, **Moderata**, **Bassa**, **Pubblica** o **Non PII** in base al tipo e al numero di occorrenze di informazioni personali rilevate nel documento. In Office 365, è possibile creare un criterio DLP che identifica i documenti con tale proprietà impostata su valori specifici, come **Elevata** e **Media**, ed esegue un'azione, ad esempio un blocco dell'accesso ai file. Lo stesso criterio può disporre di un'altra regola che consente di eseguire un'azione diversa se la proprietà è impostata su **Bassa**, come l'invio di una notifica tramite posta elettronica. In questo modo, DLP in Office 365 si integra con Windows Server FCI e può contribuire alla protezione dei documenti di Office caricati o condivisi in Office 365 da file server basati su Windows Server.
   
@@ -58,11 +58,11 @@ Prima di tutto, è necessario caricare un documento con la proprietà cui si des
     
 3. Nella barra di spostamento a sinistra, scegliere **ricerca** \> nella pagina \> **Amministrazione ricerca** **gestire lo schema di ricerca**.
     
-    ![pagina di amministrazione della ricerca nell'interfaccia di amministrazione di SharePoint](media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
+    ![pagina di amministrazione della ricerca nell'interfaccia di amministrazione di SharePoint](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
   
 4. Nella \> pagina **proprietà gestite** **nuova proprietà gestita**.
     
-    ![Pagina Proprietà gestite con il pulsante Nuova proprietà gestita evidenziato](media/b161c764-414c-4037-83ed-503a49fb4410.png)
+    ![Pagina Proprietà gestite con il pulsante Nuova proprietà gestita evidenziato](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
 5. Immettere un nome e una descrizione per la proprietà. Questo nome è ciò che apparirà nei criteri DLP.
     
@@ -74,7 +74,7 @@ Prima di tutto, è necessario caricare un documento con la proprietà cui si des
     
 9. Nella finestra di dialogo Selezione proprietà sottoposta a **ricerca per indicizzazione** \> trovare e selezionare la proprietà \> **sottoposto**a ricerca per indicizzazione corrispondente alla proprietà di Windows Server FCI o ad altre proprietà che verranno utilizzate nel criterio DLP OK.
     
-    ![finestra di dialogo per la selezione di proprietà sottoposte a ricerca per indicizzazione](media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
+    ![finestra di dialogo per la selezione di proprietà sottoposte a ricerca per indicizzazione](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
   
 10. Nella parte inferiore della pagina \> **OK**.
     
@@ -96,7 +96,7 @@ Tenere presente che le **proprietà del documento Condition contengono uno quals
   
 Per ulteriori informazioni su questi cmdlet, vedere cmdlet per il [centro &amp; sicurezza e conformità di Office 365](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
   
-1. [Connettersi al Centro sicurezza e conformità Office 365 utilizzando sessione remota di PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409).
+1. [Connettersi al Centro sicurezza e conformità di Office 365 utilizzando la sessione remota di PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409).
     
 2. Creare il criterio utilizzando `New-DlpCompliancePolicy`.
 
@@ -120,7 +120,7 @@ Al termine, i criteri devono disporre di due nuove regole che entrambe utilizzan
   
 Una regola blocca l'accesso al contenuto dove la proprietà **Informazioni personali** è uguale a **Elevata** o **Moderata**. Una seconda regola invia una notifica sul contenuto dove la proprietà **Informazioni personali** è uguale a **Bassa**.
   
-![Nuova finestra di dialogo dei criteri DLP con due regole appena create](media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
+![Nuova finestra di dialogo dei criteri DLP con due regole appena create](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
   
 ## <a name="after-you-create-the-dlp-policy"></a>Dopo aver creato il criterio DLP
 

@@ -1,5 +1,7 @@
 ---
 title: Investigating partially indexed items in Office 365 eDiscovery (Analisi di elementi parzialmente indicizzati in eDiscovery di Office 365)
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,12 +14,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Gli elementi parzialmente indicizzati (denominati anche elementi non indicizzati) sono elementi e documenti delle cassette postali di Exchange nei siti di SharePoint e OneDrive che per qualche motivo non sono stati completamente indicizzati per la ricerca di contenuto. In questo articolo, è possibile sapere perché gli elementi non possono essere indicizzati per la ricerca e vengono restituiti come elementi parzialmente indicizzati, identificare gli errori di ricerca per gli elementi parzialmente indicizzati e utilizzare uno script di PowerShell per determinare l'esposizione dell'organizzazione a un messaggio di posta elettronica parzialmente indicizzato. elementi.
-ms.openlocfilehash: 4e1430fe80c01b1cc9e67777c6955790ea1c6540
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: b67b7d5cfedd37315a9f8bc9027e03b820598846
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38686559"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072351"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigating partially indexed items in Office 365 eDiscovery (Analisi di elementi parzialmente indicizzati in eDiscovery di Office 365)
 
@@ -49,7 +51,7 @@ Dopo aver eseguito una ricerca contenuto nel centro sicurezza & conformità, il 
 
 Per comprendere l'esposizione dell'organizzazione a elementi parzialmente indicizzati, è possibile eseguire una ricerca per tutto il contenuto in tutte le cassette postali (utilizzando una query parola chiave vuota). Nell'esempio seguente, sono presenti 56.208 (4.830 MB) elementi completamente indicizzati e 470 (316 MB) di elementi parzialmente indicizzati.
   
-![Esempio di statistiche di ricerca che mostrano elementi parzialmente indicizzati](media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![Esempio di statistiche di ricerca che mostrano elementi parzialmente indicizzati](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
   
 Per determinare la percentuale di elementi parzialmente indicizzati, è possibile utilizzare i calcoli riportati di seguito.
   
@@ -74,7 +76,7 @@ Nell'esempio precedente, il 6,54% delle dimensioni totali degli elementi delle c
 
 Nei casi in cui è necessario esaminare parzialmente gli elementi per convalidare che non contengono informazioni rilevanti, è possibile [esportare un rapporto di ricerca contenuto](export-a-content-search-report.md) che contiene informazioni sugli elementi parzialmente indicizzati. Quando si esporta un rapporto di ricerca contenuto, assicurarsi di scegliere una delle opzioni di esportazione che includa gli elementi parzialmente indicizzati. 
   
-![Scegliere la seconda o la terza opzione per esportare gli elementi parzialmente indicizzati](media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![Scegliere la seconda o la terza opzione per esportare gli elementi parzialmente indicizzati](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
 Quando si esportano i risultati della ricerca del contenuto o un rapporto di ricerca contenuto utilizzando una di queste opzioni, l'esportazione include un report denominato unindexed Items. csv. Questo rapporto include la maggior parte delle stesse informazioni del file ResultsLog. csv. Tuttavia, il file unindexed Items. csv include anche due campi correlati agli elementi parzialmente indicizzati: **tag di errore** e proprietà di **errore**. Questi campi contengono informazioni sull'errore di indicizzazione per ogni elemento parzialmente indicizzato. L'utilizzo delle informazioni contenute in questi due campi consente di determinare se l'errore di indicizzazione per un determinato impatto dell'indagine. In caso affermativo, è possibile eseguire una ricerca di contenuto mirato e recuperare ed esportare messaggi di posta elettronica specifici e documenti di SharePoint o OneDrive in modo da poterli esaminare per determinare se sono rilevanti per la propria indagine. Per istruzioni dettagliate, vedere [preparare un file CSV per una ricerca di contenuto mirata in Office 365](csv-file-for-an-id-list-content-search.md).
   
@@ -164,7 +166,7 @@ Nei passaggi seguenti viene illustrato come eseguire uno script di PowerShell ch
   
 ```
 
-2. [Connettersi a PowerShell per Centro sicurezza & Compliance](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Connettersi a PowerShell in Centro sicurezza e conformità](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
 3. In PowerShell Centro sicurezza & conformità, passare alla cartella in cui è stato salvato lo script nel passaggio 1, quindi eseguire lo script. Per esempio:
 
@@ -174,7 +176,7 @@ Nei passaggi seguenti viene illustrato come eseguire uno script di PowerShell ch
 
 Di seguito è riportato un esempio per l'output restituito dallo script.
   
-![Esempio di output da script che genera un report sull'esposizione dell'organizzazione a elementi di posta elettronica parzialmente indicizzati](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Esempio di output da script che genera un report sull'esposizione dell'organizzazione a elementi di posta elettronica parzialmente indicizzati](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
 Tenere presente quanto segue:
   

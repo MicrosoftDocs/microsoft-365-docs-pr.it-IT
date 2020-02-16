@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: aac2dc742af4491be8c7f30ed6e78c549a924f3e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 524378ecb7ec7cd8285e7d1ccda5667aa6081f30
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592817"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074435"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Correzione degli errori durante l'elaborazione dei dati per un'indagine
 
@@ -40,15 +40,15 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
 3. Fare clic su **+ nuova correzione degli errori**.
 
-    ![Correzione degli errori](media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![Correzione degli errori](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
     La sessione di correzione dei problemi inizia con una fase di preparazione in cui i file con errori vengono copiati in una posizione sicura di Azure in modo da poterli scaricare.
 
-    ![Preparazione della correzione degli errori](media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Preparazione della correzione degli errori](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
 4. Dopo aver completato la preparazione, fare clic su **Avanti: scaricare i file** per continuare con il download.
 
-    ![Scaricare file](media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Scaricare file](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
 5. Per scaricare i file, specificare il **percorso di destinazione per il download**. Si tratta di un percorso del computer locale in cui deve essere scaricato il file.  Il percorso predefinito,%USERPROFILE%\Downloads\errors, punta alla cartella Downloads dell'utente connesso. Questo può essere modificato in base alle esigenze.
 
@@ -62,7 +62,7 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
     I file verranno scaricati.
 
-    ![Preparazione della correzione degli errori](media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Preparazione della correzione degli errori](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > In caso di problemi con questo comando, vedere [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -74,13 +74,13 @@ Utilizzare il flusso di lavoro seguente per correggere i file con errori nei cas
 
 8. A questo punto, tornare a indagini sui dati (anteprima) e fare clic su **Avanti: carica file**.  In questo modo si passerà al passaggio successivo, in cui è ora possibile caricare i file.
 
-    ![Caricare file](media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Caricare file](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Specificare il percorso dei file corretti nella casella di testo **percorso alla posizione dei file** e quindi fare clic su **copia negli Appunti**.
 
 10. Incollare il comando in un prompt dei comandi di Windows e premere **invio** per caricare i file.
 
-    ![ff2ff691-629F-4065-9b37-5333f937daf6. png](media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629F-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Infine, tornare a indagini sui dati (anteprima) e fare clic su **Avanti: elabora file**.
 

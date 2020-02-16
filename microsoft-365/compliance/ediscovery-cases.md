@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilizzare il Centro sicurezza & conformità per creare e gestire i casi di eDiscovery nell'organizzazione. È possibile assegnare membri al caso, inserire posizioni di contenuto in attesa, eseguire ricerche di contenuto associate al caso e esportare i risultati della ricerca. È inoltre possibile preparare i dati dei casi per un'ulteriore analisi in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 6cc0cb0a709463be0e624162555dd221564b4dd3
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 7ae834e7f93c381cf6d386131e3a5c671e2bc529
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862106"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075077"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gestire i casi di eDiscovery nel Centro sicurezza e conformità
 
@@ -91,11 +91,11 @@ Per ulteriori informazioni sulle autorizzazioni di eDiscovery, vedere [assign eD
     
 3. Nel centro sicurezza & conformità fare clic su **autorizzazioni**e quindi eseguire una delle operazioni seguenti in base alle autorizzazioni di eDiscovery che si desidera assegnare.
     
-    - Per assegnare le autorizzazioni per il revisore, selezionare il gruppo di ruoli **reviewer** e quindi fare clic su **modifica**accanto a **membri**. Fare clic su **Scegli membri**, fare clic ![su **modifica**, fare clic su Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **,** selezionare l'utente che si desidera aggiungere al gruppo di ruoli reviewer e quindi fare clic su **Aggiungi**.
+    - Per assegnare le autorizzazioni per il revisore, selezionare il gruppo di ruoli **reviewer** e quindi fare clic su **modifica**accanto a **membri**. Fare clic su **Scegli membri**, fare clic ![su **modifica**, fare clic su Aggiungi icona](../media/ITPro-EAC-AddIcon.gif) **,** selezionare l'utente che si desidera aggiungere al gruppo di ruoli reviewer e quindi fare clic su **Aggiungi**.
     
-    - Per assegnare le autorizzazioni di eDiscovery Manager, selezionare il gruppo di ruoli **gestione eDiscovery** , quindi fare clic su **modifica**accanto a **eDiscovery Manager**. Fare clic su **Scegli eDiscovery Manager**, fare clic ![su **modifica**, fare clic su Aggiungi icona](media/ITPro-EAC-AddIcon.gif) * * Aggiungi * *, selezionare l'utente che si desidera aggiungere come Manager di eDiscovery e quindi fare clic su **Aggiungi**.
+    - Per assegnare le autorizzazioni di eDiscovery Manager, selezionare il gruppo di ruoli **gestione eDiscovery** , quindi fare clic su **modifica**accanto a **eDiscovery Manager**. Fare clic su **Scegli eDiscovery Manager**, fare clic ![su **modifica**, fare clic su Aggiungi icona](../media/ITPro-EAC-AddIcon.gif) * * Aggiungi * *, selezionare l'utente che si desidera aggiungere come Manager di eDiscovery e quindi fare clic su **Aggiungi**.
     
-    - Per assegnare le autorizzazioni di amministratore di eDiscovery, selezionare il gruppo di ruoli **gestione di eDiscovery** e quindi fare clic su **modifica**accanto a **amministratore di eDiscovery**. Fare clic su **Scegli amministratore di eDiscovery**, fare ![clic su](media/ITPro-EAC-AddIcon.gif) **modifica**, fare clic su Aggiungi icona, selezionare l'utente che si **desidera aggiungere come**amministratore di eDiscovery e quindi fare clic su **Aggiungi**.
+    - Per assegnare le autorizzazioni di amministratore di eDiscovery, selezionare il gruppo di ruoli **gestione di eDiscovery** e quindi fare clic su **modifica**accanto a **amministratore di eDiscovery**. Fare clic su **Scegli amministratore di eDiscovery**, fare ![clic su](../media/ITPro-EAC-AddIcon.gif) **modifica**, fare clic su Aggiungi icona, selezionare l'utente che si **desidera aggiungere come**amministratore di eDiscovery e quindi fare clic su **Aggiungi**.
     
 4. Dopo aver aggiunto tutti gli utenti, fare clic su **fine**, fare clic su **Salva** per salvare le modifiche apportate al gruppo di ruoli e quindi fare clic su **Chiudi**.
 
@@ -107,11 +107,11 @@ Il passaggio successivo consiste nel creare un caso di eDiscovery. È necessario
     
 2. Accedere a Office 365 usando l'account aziendale o dell'istituto di istruzione.
     
-3. Nel centro sicurezza & conformità, fare clic su **eDiscovery** \> **eDiscovery**, quindi fare ![clic su](media/ITPro-EAC-AddIcon.gif) Aggiungi icona **creare un caso**.
+3. Nel centro sicurezza & conformità, fare clic su **eDiscovery** \> **eDiscovery**, quindi fare ![clic su](../media/ITPro-EAC-AddIcon.gif) Aggiungi icona **creare un caso**.
     
 4. Nella pagina **nuovo caso** , assegnare un nome al caso, digitare una descrizione facoltativa, quindi fare clic su **Salva**. Il nome del caso deve essere univoco nell'organizzazione.
     
-    ![Creare un caso](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
+    ![Creare un caso](../media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
   
     Il nuovo caso viene visualizzato nell'elenco dei casi nella pagina **eDiscovery** . È possibile posizionare il puntatore del mouse su un nome di case per visualizzare le informazioni relative al caso, incluso lo stato del caso (**attivo** o **chiuso**), la descrizione del caso (creato nel passaggio precedente) e quando il caso è stato modificato per ultimo e chi lo ha modificato.
     
@@ -128,11 +128,11 @@ Dopo aver creato un caso, il passaggio successivo consiste nell'aggiungere membr
     
     Viene visualizzata la pagina Gestisci il riquadro a comparsa di **questo caso** . 
     
-    ![Gestione di una pagina del riquadro a comparsa del caso](media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
+    ![Gestione di una pagina del riquadro a comparsa del caso](../media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
-3. In **Gestisci membri**fare ![clic su](media/ITPro-EAC-AddIcon.gif) **Aggiungi icona Aggiungi** per aggiungere membri al caso. 
+3. In **Gestisci membri**fare ![clic su](../media/ITPro-EAC-AddIcon.gif) **Aggiungi icona Aggiungi** per aggiungere membri al caso. 
     
-    È inoltre possibile scegliere di aggiungere un gruppo di ruoli al caso. In **Gestisci gruppi**di ruoli ![fare clic](media/ITPro-EAC-AddIcon.gif) su **Aggiungi icona Aggiungi**.
+    È inoltre possibile scegliere di aggiungere un gruppo di ruoli al caso. In **Gestisci gruppi**di ruoli ![fare clic](../media/ITPro-EAC-AddIcon.gif) su **Aggiungi icona Aggiungi**.
     
     > [!NOTE]
     > I gruppi di ruoli controllano chi può assegnare membri a un caso di eDiscovery. Questo significa che è possibile assegnare solo i gruppi di ruoli a cui si è membri di un caso.
@@ -172,13 +172,13 @@ Per creare un'esenzione per un caso di eDiscovery:
     
 3. Nella **Home** page del caso, fare clic sulla scheda **blocco** . 
     
-    ![Fare clic sulla scheda blocco](media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
+    ![Fare clic sulla scheda blocco](../media/3fef2db4-36de-4517-a34d-82f47b82d9bf.png)
   
-4. Nella pagina **blocco** fare clic ![su Aggiungi icona](media/ITPro-EAC-AddIcon.gif) **Crea**.
+4. Nella pagina **blocco** fare clic ![su Aggiungi icona](../media/ITPro-EAC-AddIcon.gif) **Crea**.
     
 5. Nella pagina **denominare il blocco** , assegnare un nome al blocco. Il nome del blocco deve essere univoco nell'organizzazione. 
     
-    ![Assegnare un nome univoco alla propria esenzione](media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
+    ![Assegnare un nome univoco alla propria esenzione](../media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
   
 6. Optional Nella casella **Descrizione** aggiungere una descrizione dell'esenzione. 
     
@@ -186,7 +186,7 @@ Per creare un'esenzione per un caso di eDiscovery:
     
 8. Scegliere i percorsi di contenuto che si desidera inserire in attesa. È possibile inserire le cassette postali, i siti e le cartelle pubbliche in attesa.
     
-    ![Scegliere i percorsi dei contenuti da mettere in attesa](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
+    ![Scegliere i percorsi dei contenuti da mettere in attesa](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
    a. **Posta elettronica di Exchange** -fare clic su **Scegli utenti, gruppi o team** e quindi fare di nuovo clic su **Scegli utenti, gruppi o team** . per specificare le cassette postali da inserire in attesa. Utilizzare la casella di ricerca per trovare le cassette postali degli utenti e i gruppi di distribuzione (per inserire un'esenzione nelle cassette postali dei membri del gruppo) per effettuare il blocco. È inoltre possibile inserire un blocco sulla cassetta postale associata per un team di Microsoft, un gruppo di Yammer o un gruppo di Office 365. Selezionare la casella di controllo utente, gruppo, team, fare clic su **Scegli**e quindi su **fine**.
     
@@ -200,18 +200,18 @@ Per creare un'esenzione per un caso di eDiscovery:
     > [!NOTE]
     > Nel caso raro che il nome dell'entità utente (UPN, User Principal Name) di una persona venga modificato, l'URL per il relativo account OneDrive verrà modificato anche per incorporare il nuovo UPN. In questo caso, è necessario modificare il blocco aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente. 
   
-   c. **Cartelle pubbliche di Exchange.** Spostare il controllo](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) Toggle Toggle ![switch nella posizione **All** per inserire in attesa tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Non è possibile scegliere cartelle pubbliche specifiche da mantenere in attesa. Lasciare l'opzione toggle impostata su **None** se non si desidera inserire un blocco nelle cartelle pubbliche.
+   c. **Cartelle pubbliche di Exchange.** Spostare il controllo](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) Toggle Toggle ![switch nella posizione **All** per inserire in attesa tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Non è possibile scegliere cartelle pubbliche specifiche da mantenere in attesa. Lasciare l'opzione toggle impostata su **None** se non si desidera inserire un blocco nelle cartelle pubbliche.
     
 9. Dopo aver aggiunto i percorsi di contenuto all'esenzione, fare clic su **Avanti**.
     
 10. Per creare un blocco basato su query con condizioni, completare quanto segue. In caso contrario, fare clic su **Avanti** .
     
-    ![Creare un blocco basato su query con condizioni](media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
+    ![Creare un blocco basato su query con condizioni](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
     
        a. Nella casella sotto **parole chiave**Digitare una query di ricerca nella casella in modo che solo il contenuto che soddisfa i criteri di ricerca venga messo in attesa. È possibile specificare le parole chiave, le proprietà del messaggio o le proprietà del documento, ad esempio i nomi di file. È inoltre possibile utilizzare query più complesse che utilizzano un operatore booleano, ad esempio **e**, **o**o **meno**. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà messo in attesa.
     
-    b. Fare ![clic su](media/ITPro-EAC-AddIcon.gif) **Aggiungi icona per aggiungere una** o più condizioni per limitare la query di ricerca per il blocco. Ogni condizione aggiunge una clausola alla query di ricerca di KQL che viene creata e eseguita quando si crea il blocco. Ad esempio, è possibile specificare un intervallo di date in modo che i documenti di posta elettronica o di sito creati entro la data di intervallo siano stati inseriti in attesa. Una condizione è collegata logicamente alla query con parola chiave (specificata nella relativa casella) dall'operatore **AND**. Questo significa che gli elementi devono soddisfare sia la query di parole chiave che la condizione da inserire in attesa.
+    b. Fare ![clic su](../media/ITPro-EAC-AddIcon.gif) **Aggiungi icona per aggiungere una** o più condizioni per limitare la query di ricerca per il blocco. Ogni condizione aggiunge una clausola alla query di ricerca di KQL che viene creata e eseguita quando si crea il blocco. Ad esempio, è possibile specificare un intervallo di date in modo che i documenti di posta elettronica o di sito creati entro la data di intervallo siano stati inseriti in attesa. Una condizione è collegata logicamente alla query con parola chiave (specificata nella relativa casella) dall'operatore **AND**. Questo significa che gli elementi devono soddisfare sia la query di parole chiave che la condizione da inserire in attesa.
 
     Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere [keyword queries and Search Conditions for content search](keyword-queries-and-search-conditions.md).
     
@@ -223,7 +223,7 @@ Per creare un'esenzione per un caso di eDiscovery:
 
 Dopo un po' di tempo, le informazioni relative al nuovo blocco vengono visualizzate nel riquadro dei dettagli nella pagina **esenzioni** per il blocco selezionato. Queste informazioni includono il numero di cassette postali e i siti in attesa e le statistiche sul contenuto che è stato messo in attesa, ad esempio il numero totale e le dimensioni degli elementi che sono stati messi in attesa e l'ultima volta che sono state calcolate le statistiche di blocco. Queste statistiche di blocco consentono di identificare la quantità di contenuto correlata al caso di eDiscovery. 
   
-![Statistiche di blocco](media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
+![Statistiche di blocco](../media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
   
 Tenere presenti le considerazioni seguenti sulle statistiche di archiviazione:
   
@@ -231,7 +231,7 @@ Tenere presenti le considerazioni seguenti sulle statistiche di archiviazione:
     
 - Il numero di elementi in attesa include anche gli elementi non indicizzati trovati nei percorsi di contenuto. Se si crea un blocco basato su query, tutti gli elementi non indicizzati nei percorsi di contenuto vengono inseriti in attesa. Sono inclusi gli elementi non indicizzati che non corrispondono ai criteri di ricerca di un blocco basato su query e di elementi non indicizzati che potrebbero non essere compresi in una condizione dell'intervallo di date. Questo è diverso da quello che succede quando si esegue una ricerca di contenuto, in cui gli elementi non indicizzati che non corrispondono alla query di ricerca o sono esclusi da una condizione dell'intervallo di date non sono inclusi nei risultati della ricerca. Per ulteriori informazioni sugli elementi non indicizzati, vedere [gli elementi parzialmente indicizzati in ricerca contenuto in Office 365](partially-indexed-items-in-content-search.md).
     
-- È possibile ottenere le statistiche di blocco più recenti facendo clic su **Aggiorna statistiche** per rieseguire una stima di ricerca che calcola il numero corrente di elementi in attesa. Se necessario **, fare clic su**![Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) icona di aggiornamento sulla barra degli strumenti per aggiornare le statistiche di blocco nel riquadro dei dettagli. 
+- È possibile ottenere le statistiche di blocco più recenti facendo clic su **Aggiorna statistiche** per rieseguire una stima di ricerca che calcola il numero corrente di elementi in attesa. Se necessario **, fare clic su**![Aggiorna](../media/O365-MDM-Policy-RefreshIcon.gif) icona di aggiornamento sulla barra degli strumenti per aggiornare le statistiche di blocco nel riquadro dei dettagli. 
     
 - È normale che il numero di elementi in attesa aumenti nel tempo, in quanto gli utenti la cui cassetta postale o sito è in attesa vengono in genere inviati o ricevuti da un nuovo messaggio di posta elettronica e dalla creazione di nuovi documenti di SharePoint e OneDrive for business.
     
@@ -248,19 +248,19 @@ Dopo aver creato un caso di eDiscovery, e archiviato i depositari correlati al c
     
 3. Nella **Home** page del caso, fare clic sulla scheda **Cerca** . 
     
-    ![Scheda ricerca](media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
+    ![Scheda ricerca](../media/2e15fe32-1a2e-4588-ad0b-5d96f77cece9.png)
   
-4. Nella pagina **ricerca** fare clic ![su Aggiungi nuova](media/ITPro-EAC-AddIcon.gif) icona di **ricerca**. 
+4. Nella pagina **ricerca** fare clic ![su Aggiungi nuova](../media/ITPro-EAC-AddIcon.gif) icona di **ricerca**. 
     
 5. Nella pagina **Nuova ricerca**, è possibile aggiungere parole chiave e condizioni per creare la query di ricerca. 
     
-    ![Nuova ricerca](media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
+    ![Nuova ricerca](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
 6. È possibile specificare le parole chiave, le proprietà dei messaggi, ad esempio le date inviate e ricevute, o le proprietà del documento, ad esempio i nomi di file o la data dell'Ultima modifica di un documento. È possibile utilizzare query più complesse che utilizzano un operatore booleano, ad esempio **and**, **or**, **not**, **near**o **ONEAR**. È inoltre possibile cercare informazioni sensibili (ad esempio numeri di codice fiscale) nei documenti o cercare documenti condivisi esternamente. Se si lascia vuota la casella parola chiave, tutto il contenuto che si trova nei percorsi di contenuto specificato verrà incluso nei risultati della ricerca. 
     
 7. È possibile fare clic sulla casella di controllo **Mostra elenco parole chiave** e digitare una parola chiave in ogni riga. Se si esegue questa operazione, le parole chiave in ogni riga sono connesse dall'operatore **or** nella query di ricerca creata. 
     
-    ![Elenco di parole chiave](media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
+    ![Elenco di parole chiave](../media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
   
     Perché usare l'elenco di parole chiave? È possibile ottenere statistiche che mostrano il numero di elementi che corrispondono a ogni parola chiave. Questo è utile per identificare rapidamente le parole chiave più e meno efficaci. È possibile usare anche una frase chiave, racchiusa tra parentesi, in una riga. Per altre informazioni sulle statistiche di ricerca, vedere [Visualizzare statistiche delle parole chiave per i risultati di Ricerca contenuto](view-keyword-statistics-for-content-search.md).
     
@@ -272,7 +272,7 @@ Dopo aver creato un caso di eDiscovery, e archiviato i depositari correlati al c
     
 9. In **percorsi: posizioni in attesa**, scegliere i percorsi di contenuto che si desidera ricercare. È possibile cercare le cassette postali, i siti e le cartelle pubbliche nella stessa ricerca.
     
-    ![Posizioni, posizioni in attesa](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
+    ![Posizioni, posizioni in attesa](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
     - **Tutte le posizioni** : selezionare questa opzione per eseguire la ricerca in tutti i percorsi di contenuto dell'organizzazione. Quando si seleziona questa opzione, è possibile scegliere di effettuare una ricerca in tutte le cassette postali di Exchange (incluse le cassette postali per tutti i team Microsoft, i gruppi di Yammer e i gruppi di Office 365), tutti i siti di SharePoint e OneDrive for business (inclusi i siti per tutti gli utenti di Microsoft Teams, gruppi di Yammer e gruppi di Office 365) e tutte le cartelle pubbliche.
     
@@ -280,7 +280,7 @@ Dopo aver creato un caso di eDiscovery, e archiviato i depositari correlati al c
     
     - **Posizioni specifiche.** Selezionare questa opzione per selezionare le cassette postali e i siti in cui si desidera eseguire la ricerca. Quando si seleziona questa opzione e si fa clic su **modifica**, viene visualizzato un elenco di posizioni. È possibile scegliere di cercare tutti gli utenti, i gruppi, i team o i percorsi del sito.
     
-      ![Selezionare posizioni specifiche](media/97469b15-7be1-4aee-be27-f8343636152c.png)
+      ![Selezionare posizioni specifiche](../media/97469b15-7be1-4aee-be27-f8343636152c.png)
   
       È inoltre possibile scegliere di effettuare una ricerca in tutte le cartelle pubbliche dell'organizzazione, ma se si seleziona questa opzione e si esegue una ricerca in qualsiasi posizione di contenuto in attesa, qualsiasi query proveniente da un blocco di caso basato su query non verrà applicata alla query di ricerca. In altre parole, viene cercato tutto il contenuto di una posizione, non solo il contenuto che viene conservato da un blocco di caso basato su query.
     
@@ -304,7 +304,7 @@ Dopo aver creato un caso di eDiscovery, e archiviato i depositari correlati al c
     
     La ricerca ha inizio. Dopo un po' di tempo, una stima dei risultati della ricerca viene visualizzata nel riquadro dei dettagli. La stima include la dimensione totale e il numero di elementi che corrispondono ai criteri di ricerca. La stima della ricerca include anche il numero di elementi non indicizzati nei percorsi di contenuto di cui è stata eseguita la ricerca. Il numero di elementi non indicizzati (che non corrispondono ai criteri di ricerca) verrà incluso nelle statistiche della ricerca visualizzate nel riquadro dei dettagli. Se un elemento non indicizzato corrisponde alla query di ricerca (perché altre proprietà del messaggio o del documento soddisfano i criteri di ricerca), non verrà incluso nel numero stimato di elementi non indicizzati. Se un elemento non indicizzato è escluso dai criteri di ricerca, non verrà incluso nella stima degli elementi non indicizzati.
     
-  Una volta completata la ricerca, è possibile visualizzare in anteprima i risultati della ricerca. Se necessario **, fare clic su**![Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) l'icona Aggiorna per aggiornare le informazioni nel riquadro dei dettagli. 
+  Una volta completata la ricerca, è possibile visualizzare in anteprima i risultati della ricerca. Se necessario **, fare clic su**![Aggiorna](../media/O365-MDM-Policy-RefreshIcon.gif) l'icona Aggiorna per aggiornare le informazioni nel riquadro dei dettagli. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Passaggio 6: esportare i risultati di una ricerca di contenuto associata a un caso
 
@@ -320,11 +320,11 @@ Dopo aver eseguito correttamente una ricerca, è possibile esportare i risultati
     
 3. Nella **Home** page del caso, fare clic su **Cerca**.
     
-4. Nell'elenco delle ricerche del caso, fare clic sulla ricerca di cui si desidera esportare i risultati della ricerca, fare ![clic su Esporta](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
+4. Nell'elenco delle ricerche del caso, fare clic sulla ricerca di cui si desidera esportare i risultati della ricerca, fare ![clic su Esporta](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
     
     Viene visualizzata la pagina dei **risultati di esportazione** . 
     
-    ![Pagina Export results](media/ab0bb46d-310b-4374-8644-717146df6676.png)
+    ![Pagina Export results](../media/ab0bb46d-310b-4374-8644-717146df6676.png)
   
     Il flusso di lavoro per l’esportazione dei risultati di una ricerca di contenuto associata a un caso è lo stesso di quando si esportano i risultati della ricerca per una ricerca sulla pagina **Ricerca contenuto**. Per istruzioni dettagliate, vedere [Export content search results](export-search-results.md).
     
@@ -333,9 +333,9 @@ Dopo aver eseguito correttamente una ricerca, è possibile esportare i risultati
   
 5. Fare clic sulla scheda **Esporta** per visualizzare l'elenco dei processi di esportazione esistenti per questo caso. 
     
-    ![Scheda Esporta](media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
+    ![Scheda Esporta](../media/1b84c45e-4ec9-4ecd-9e07-eaf8fc4cc307.png)
   
-    Potrebbe essere **necessario fare clic su**![aggiorna l'](media/O365-MDM-Policy-RefreshIcon.gif) icona Aggiorna per aggiornare l'elenco dei processi di esportazione in modo che venga visualizzato il processo di esportazione creato. I processi di esportazione hanno lo stesso nome della ricerca di contenuto corrispondente con **_Export** accodati alla fine del nome della ricerca. 
+    Potrebbe essere **necessario fare clic su**![aggiorna l'](../media/O365-MDM-Policy-RefreshIcon.gif) icona Aggiorna per aggiornare l'elenco dei processi di esportazione in modo che venga visualizzato il processo di esportazione creato. I processi di esportazione hanno lo stesso nome della ricerca di contenuto corrispondente con **_Export** accodati alla fine del nome della ricerca. 
     
 6. Fare clic sul processo di esportazione appena creato per visualizzare le informazioni sullo stato nel riquadro dei dettagli. Queste informazioni includono la percentuale di elementi che sono stati trasferiti in un'area di archiviazione di Azure nel cloud Microsoft.
     
@@ -361,10 +361,10 @@ Come alternativa all'esportazione dei risultati di una singola ricerca di conten
   
 5. Dopo aver selezionato le ricerche, viene visualizzata la pagina **azioni in blocco** . 
     
-    ![Nella pagina azioni in blocco fare clic su Esporta risultati](media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
+    ![Nella pagina azioni in blocco fare clic su Esporta risultati](../media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
   
     
-6. Fare ![clic su Esporta i](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) risultati dell' **esportazione**dell'icona risultati della ricerca.
+6. Fare ![clic su Esporta i](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) risultati dell' **esportazione**dell'icona risultati della ricerca.
 
 7. Nella pagina **Export results** , assegnare un nome univoco all'esportazione, selezionare opzioni di output e scegliere in che modo verrà esportato il contenuto. Fare clic su **Esporta**.
     
@@ -375,9 +375,9 @@ Come alternativa all'esportazione dei risultati di una singola ricerca di conten
   
 8. Dopo aver avviato l'esportazione, fare clic sulla scheda **Esporta** per visualizzare l'elenco dei processi di esportazione per questo caso. 
     
-    ![Scheda Esporta, più ricerche](media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
+    ![Scheda Esporta, più ricerche](../media/b9505e1b-559f-4a8c-96b3-a3f734753926.png)
   
-    Potrebbe essere **necessario fare clic su** ![aggiorna l'](media/O365-MDM-Policy-RefreshIcon.gif) icona Aggiorna per aggiornare l'elenco dei processi di esportazione per visualizzare il processo di esportazione creato. Le ricerche incluse nel processo di esportazione sono elencate nella colonna **ricerche** . 
+    Potrebbe essere **necessario fare clic su** ![aggiorna l'](../media/O365-MDM-Policy-RefreshIcon.gif) icona Aggiorna per aggiornare l'elenco dei processi di esportazione per visualizzare il processo di esportazione creato. Le ricerche incluse nel processo di esportazione sono elencate nella colonna **ricerche** . 
     
 8. Fare clic sul processo di esportazione appena creato per visualizzare le informazioni sullo stato nel riquadro dei dettagli. Queste informazioni includono la percentuale di elementi che sono stati trasferiti in un'area di archiviazione di Azure nel cloud Microsoft.
     
@@ -416,9 +416,9 @@ Quando si preparano i risultati della ricerca per Advanced eDiscovery, la funzio
     
 3. Nella **Home** page del caso, fare clic su **ricerca**, quindi selezionare la ricerca.
     
-4. Nel riquadro dei dettagli, fare ![clic su Esporta](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati della ricerca, quindi fare clic su **prepara per Advanced eDiscovery**.
+4. Nel riquadro dei dettagli, fare ![clic su Esporta](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati della ricerca, quindi fare clic su **prepara per Advanced eDiscovery**.
     
-    ![Preparare i risultati per Advanced eDiscovery](media/b6548ff0-a6e9-42b1-9ae4-5c15146f5690.png)
+    ![Preparare i risultati per Advanced eDiscovery](../media/b6548ff0-a6e9-42b1-9ae4-5c15146f5690.png)
   
 5. Nella pagina **preparazione per la eDiscovery avanzata** scegliere di preparare una delle operazioni seguenti: 
     
@@ -448,11 +448,11 @@ Per accedere a un caso in Advanced eDiscovery:
     
 3. Nella **Home** page del caso, fare clic su **passa a Advanced eDiscovery**.
     
-    ![Selezionare Cambia in Advanced eDiscovery](media/d7e31558-e79c-4782-b841-2b735568a576.png)
+    ![Selezionare Cambia in Advanced eDiscovery](../media/d7e31558-e79c-4782-b841-2b735568a576.png)
   
     Viene visualizzata la barra **di avanzamento per la connessione a Advanced eDiscovery** . Quando si è connessi a Advanced eDiscovery, nella pagina viene visualizzato un elenco di contenitori. 
     
-    ![Barra di avanzamento avanzata di eDiscorvery](media/4a84273d-765b-44b8-9006-c20e810ea393.png)
+    ![Barra di avanzamento avanzata di eDiscorvery](../media/4a84273d-765b-44b8-9006-c20e810ea393.png)
   
     Questi contenitori rappresentano i risultati della ricerca preparati per l'analisi in Advanced eDiscovery nel passaggio 7. Il nome del contenitore ha lo stesso nome della ricerca di contenuto nel caso nel centro sicurezza & conformità. I contenitori presenti nell'elenco sono quelli che sono stati preparati. Se un utente diverso ha preparato i risultati della ricerca per Advanced eDiscovery, i contenitori corrispondenti non verranno inclusi nell'elenco.
     
@@ -483,7 +483,7 @@ Per chiudere un caso:
     
     Viene visualizzata la pagina Gestisci il riquadro a comparsa di **questo caso** . 
     
-3. In **Manage case status**fare ![clic su Rimuovi il](media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) **caso di chiusura**del pulsante di visualizzazione.
+3. In **Manage case status**fare ![clic su Rimuovi il](../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) **caso di chiusura**del pulsante di visualizzazione.
     
     Viene visualizzato un messaggio di avviso in cui viene indicato che le esenzioni associate al caso saranno disattivate.
     
@@ -493,7 +493,7 @@ Per chiudere un caso:
     
 5. Chiudere la pagina **Gestisci questo caso** . 
     
-6. Nella pagina **eDiscovery** fare ![](media/O365-MDM-Policy-RefreshIcon.gif) **clic su Aggiorna icona Aggiorna** per aggiornare lo stato del caso chiuso. Il completamento del processo di chiusura potrebbe richiedere fino a 60 minuti. 
+6. Nella pagina **eDiscovery** fare ![](../media/O365-MDM-Policy-RefreshIcon.gif) **clic su Aggiorna icona Aggiorna** per aggiornare lo stato del caso chiuso. Il completamento del processo di chiusura potrebbe richiedere fino a 60 minuti. 
     
     Al termine del processo, lo stato della distinzione tra maiuscole e minuscole viene modificato in **chiuso** nella pagina **eDiscovery** . Fare di nuovo clic sul nome del caso per visualizzare la pagina Gestisci il riquadro a comparsa di **questo caso** , che contiene informazioni su quando il caso è stato chiuso e chi l'ha chiusa. 
      
@@ -517,7 +517,7 @@ Quando si riapre un caso, tutte le esenzioni sul posto quando il caso è stato c
     
 5. Chiudere la pagina **Gestisci questo caso** . 
     
-6. Nella pagina **eDiscovery** fare ![](media/O365-MDM-Policy-RefreshIcon.gif) **clic su Aggiorna icona Aggiorna** per aggiornare lo stato del caso riaperto. Per il completamento del processo di riapertura, potrebbero essere necessari fino a 60 minuti. 
+6. Nella pagina **eDiscovery** fare ![](../media/O365-MDM-Policy-RefreshIcon.gif) **clic su Aggiorna icona Aggiorna** per aggiornare lo stato del caso riaperto. Per il completamento del processo di riapertura, potrebbero essere necessari fino a 60 minuti. 
     
     Al termine del processo, lo stato del caso viene modificato in **attivo** nella pagina **eDiscovery** . 
   
@@ -545,7 +545,7 @@ Per eliminare un caso:
 
 Se il caso in cui si sta tentando di eliminare contiene ancora le esenzioni, verrà visualizzato un messaggio di errore. Sarà necessario eliminare tutte le esenzioni associate al caso e quindi riprovare per eliminare il caso.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - **Esistono limiti per i casi di eDiscovery o per i detiene associati a un caso di eDiscovery?** Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esenzioni del caso.
     
@@ -553,7 +553,7 @@ Se il caso in cui si sta tentando di eliminare contiene ancora le esenzioni, ver
   |:-----|:-----|
   |Numero massimo di casi per un'organizzazione  <br/> |Nessun limite  <br/> |
   |Numero massimo di case conservate per un'organizzazione  <br/> |10.000  <br/> |
-  |Numero massimo di cassette postali in un singolo blocco maiuscole/minuscole  <br/> |1.000  <br/> |
+  |Numero massimo di cassette postali in un singolo blocco maiuscole/minuscole  <br/> |1,000  <br/> |
   |Numero massimo di siti di SharePoint e OneDrive for business in un unico blocco del caso  <br/> |100  <br/> |
    
 - **Che dire dei casi creati nella pagina di gestione dei casi in Advanced eDiscovery?** È possibile accedere a un elenco dei casi di eDiscovery avanzati precedenti facendo clic sul collegamento nella parte inferiore della pagina **eDiscovery** nel centro sicurezza & conformità. Tuttavia, per eseguire qualsiasi operazione in un caso meno recente, è necessario contattare il supporto di Office 365 e richiedere che il caso venga spostato in un nuovo caso di eDiscovery nel centro sicurezza & Compliance. 

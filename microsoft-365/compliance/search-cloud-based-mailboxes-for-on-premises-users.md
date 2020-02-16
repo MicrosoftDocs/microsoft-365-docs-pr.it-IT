@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilizzare lo strumento di ricerca contenuto nel centro sicurezza & Compliance per cercare ed esportare i dati di chat di MicrosoftTeams (denominati chat di 1xN) per gli utenti locali in una distribuzione ibrida di Exchange.
-ms.openlocfilehash: 042e34028023f1dd4f49804230fe99f2d042d0d6
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 40439c338e00e7ae94ff82ec4be1af78a250acd6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957141"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070015"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Ricerca di cassette postali basate sul cloud per gli utenti locali in Office 365
 
@@ -47,7 +47,7 @@ Se un utente abilitato a Microsoft teams dispone di una cassetta postale locale 
   
 Nell'immagine seguente viene illustrato il flusso di lavoro del modo in cui i dati della chat dei team per gli utenti locali sono disponibili per la ricerca, l'anteprima e l'esportazione.
   
-![Archiviazione basata sul cloud per gli utenti locali in Microsoft Teams](media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Archiviazione basata sul cloud per gli utenti locali in Microsoft Teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
   
 Oltre a questa nuova funzionalità, è comunque possibile utilizzare la ricerca contenuto per cercare, visualizzare in anteprima ed esportare il contenuto dei team nel sito di SharePoint basato sul cloud e nella cassetta postale di Exchange associata a ciascun dato di chat teams di Microsoft e 1xN teams nella cassetta postale di Exchange Online per utenti basati sul cloud.
 
@@ -71,7 +71,7 @@ Dopo la distribuzione di questa funzionalità nell'organizzazione di Office 365,
   
 - La casella di controllo **Aggiungi contenuto app di Office per gli utenti locali** viene aggiunta sotto le **posizioni** nella ricerca contenuto. 
     
-    ![La casella di controllo "Aggiungi contenuto app di Office per gli utenti locali" viene aggiunta all'interfaccia utente per la ricerca di contenuto](media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![La casella di controllo "Aggiungi contenuto app di Office per gli utenti locali" viene aggiunta all'interfaccia utente per la ricerca di contenuto](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
 - Gli utenti locali vengono visualizzati nella selezione percorsi di contenuto che si utilizza per selezionare le cassette postali degli utenti da cercare. 
 
@@ -81,7 +81,7 @@ Dopo che la funzionalità è stata abilitata, è possibile utilizzare la ricerca
   
 1. Nel centro sicurezza & conformità, accedere a ricerca **** \> **contenuto** ricerca
     
-2. Nella pagina **ricerca** fare clic ![su Aggiungi nuova](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) icona di **ricerca**.
+2. Nella pagina **ricerca** fare clic ![su Aggiungi nuova](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) icona di **ricerca**.
     
     Come illustrato in precedenza, la casella **di controllo Aggiungi contenuto app di Office per gli utenti locali** viene visualizzata in **percorsi**. È selezionata per impostazione predefinita.
     

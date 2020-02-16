@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di conservazione che conserva il contenuto in Microsoft 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
-ms.openlocfilehash: d308dcc58bbacf118374bbabdebf27c35ad2d73a
-ms.sourcegitcommit: 30ffa701a26879182ac16baba67ea2dfaf680fba
+ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836716"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075402"
 ---
 # <a name="overview-of-disposition-reviews"></a>Panoramica delle recensioni sulla disposizione
 
@@ -56,20 +56,20 @@ Quando si crea un'etichetta di conservazione in Microsoft 365 Compliance Center,
   
 Una recensione di disposizione può includere il contenuto nelle cassette postali di Exchange, siti di SharePoint, account di OneDrive e gruppi di Office 365. Il contenuto in attesa di una revisione della disposizione in tali posizioni viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto.
   
-![Pagina disposizioni nel centro sicurezza e conformità](media/Retention-Dispositions-v2-page.png)
+![Pagina disposizioni nel centro sicurezza e conformità](../media/Retention-Dispositions-v2-page.png)
 
 
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Impostazione della revisione della disposizione mediante la creazione di un'etichetta di conservazione
 
 Si tratta del flusso di lavoro di base per l'impostazione di una revisione di disposizione. Si noti che questo flusso Visualizza un'etichetta di conservazione che viene pubblicata e quindi applicata manualmente da un utente. in alternativa, un'etichetta di conservazione che attiva una revisione della disposizione può essere applicata automaticamente al contenuto.
   
-![Grafico che mostra il flusso di come funziona la disposizione](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Grafico che mostra il flusso di come funziona la disposizione](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
 Una recensione di disposizione è un'opzione quando si crea un'etichetta di conservazione in Office 365. Questa opzione non è disponibile in un criterio di conservazione, ma solo in un'etichetta di conservazione configurata per mantenere il contenuto.
   
 Per ulteriori informazioni sulle etichette di conservazione, vedere [Overview of retention labels](labels.md).
   
-![Impostazioni di conservazione per un'etichetta](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+![Impostazioni di conservazione per un'etichetta](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
 > Quando si specifica l'opzione **notifica a queste persone quando sono disponibili elementi pronti per la revisione**, specificare un utente. I gruppi di Office 365 non sono supportati per questa opzione.
@@ -80,7 +80,7 @@ Quando un revisore riceve una notifica tramite posta elettronica che il contenut
 
 Dopo aver selezionato un'etichetta di conservazione, la pagina successiva Visualizza tutte le disposizioni in sospeso per tale etichetta.
 
-![Opzioni di disposizione](media/Retention-Disposition-options-v2.png)
+![Opzioni di disposizione](../media/Retention-Disposition-options-v2.png)
 
 Il revisore può quindi: 
   
@@ -128,18 +128,18 @@ Nella pagina **disposizione in sospeso** , è possibile visualizzare le disposiz
     
 - La scheda **elementi** eliminati consente di visualizzare gli elementi eliminati definitivamente che sono già stati sottoposti a una revisione della disposizione. Vengono visualizzati qui perché il processo di eliminazione permanente può richiedere alcuni giorni, come indicato nella sezione precedente. Gli elementi in cui è stata applicata un'etichetta di conservazione diversa o il periodo di conservazione esteso nell'ambito di una revisione non verranno visualizzati in questa posizione.
 
-![Schede disposizione](media/Retention-Disposition-tabs.png)
+![Schede disposizione](../media/Retention-Disposition-tabs.png)
     
 ### <a name="filter-the-disposition-views"></a>Filtrare le visualizzazioni di disposizione
 
 È possibile filtrare queste visualizzazioni in base all'etichetta di conservazione o all'intervallo di tempo. Per le disposizioni in sospeso, l'intervallo di tempo si basa sulla data di scadenza. Per gli elementi eliminati, l'intervallo di tempo è basato sulla data di eliminazione.
   
-![Opzioni del filtro di disposizione](media/Retention-filter-options.png)
+![Opzioni del filtro di disposizione](../media/Retention-filter-options.png)
 
 ### <a name="export-the-disposition-items"></a>Esportare gli elementi di disposizione
 
 È inoltre possibile esportare gli elementi in una visualizzazione come un file. csv che è possibile aprire in Excel.
   
-![Dati di disposizione esportati in Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![Dati di disposizione esportati in Excel](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 

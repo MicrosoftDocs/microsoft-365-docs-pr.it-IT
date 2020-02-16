@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'Informazioni su come visualizzare e interpretare lo stato e i risultati della formazione sulla pertinenza per i problemi di caso in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 5fa9fe49f1a644f2a64321c1ec106b11c487c885
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 224a817e662462d0c51650e7bd364e717dbfbd62
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601403"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069503"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Monitorare l'analisi della pertinenza in Office 365 Advanced eDiscovery
 
@@ -44,7 +44,7 @@ In Advanced eDiscovery, la scheda della pista di pertinenza Visualizza la validi
     
     In questo esempio viene mostrata una valutazione completata correttamente per un problema, indicata dall'indicatore di stato dei colori completato e dal segno di spunta. Il tagging è in corso, ma il caso è ancora considerato instabile (stato di stabilità mostrato anche in un suggerimento per gli strumenti). La raccomandazione per il passaggio successivo è "formazione". 
     
-    ![Fase 1 del corso di formazione sulla traccia di pertinenza](media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
+    ![Fase 1 del corso di formazione sulla traccia di pertinenza](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
     La visualizzazione espansa Visualizza ulteriori informazioni e opzioni. Il margine di errore corrente visualizzato è il margine di errore del richiamo nello stato corrente di valutazione, in base ai file di valutazione esistenti (già contrassegnati).
     
@@ -55,7 +55,7 @@ In Advanced eDiscovery, la scheda della pista di pertinenza Visualizza la validi
     
     In **pista** **pertinenza** \> , l'indicatore di avanzamento della formazione e il suggerimento per gli strumenti indicano il numero stimato di esempi aggiuntivi necessari per raggiungere la stabilità. Questa stima fornisce una guida di riferimento per l'addestramento supplementare necessario.
     
-    ![Corso di formazione sulla traccia di pertinenza](media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
+    ![Corso di formazione sulla traccia di pertinenza](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
 2. Dopo aver completato il tagging e, se è necessario continuare l'allenamento, fare clic su **formazione**. Un altro set di file di esempio viene generato dal set di file caricati per una formazione aggiuntiva. Viene quindi restituito alla scheda Tag per contrassegnare e formare più file.
     
@@ -100,13 +100,13 @@ Se sono presenti incoerenze nel tagging dei file, può influire sull'analisi. Il
 
 Nella scheda ** \> rilevamento pertinenza** espandere la riga di un problema e, accanto a **risultati dettagliati**, fare clic su **Visualizza**. Vengono visualizzati i riquadri dei risultati dettagliati, come illustrato di seguito.
   
-![Risultati dettagliati della formazione sulla pertinenza](media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
+![Risultati dettagliati della formazione sulla pertinenza](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### <a name="tagging-summary"></a>Riepilogo di tagging
 
  Nell'esempio riportato di seguito, il **Riepilogo di tagging** Visualizza i totali per ogni processo di valutazione, formazione e recupero dei file di tagging. 
   
-![Riepilogo tagging della traccia di pertinenza](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
+![Riepilogo tagging della traccia di pertinenza](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
 ### <a name="keywords"></a>Parole chiave
 
@@ -120,7 +120,7 @@ L'elenco avanzato di parole chiave di eDiscovery può essere utilizzato per comp
 
 Nel riquadro **avanzamento formazione** è incluso un grafico dello stato di avanzamento della formazione e un indicatore di qualità, come illustrato nell'esempio seguente. 
   
-![Stato di avanzamento del corso di formazione sulla traccia di pertinenza](media/8a5089f5-a162-4246-ae09-bc1921859860.png)
+![Stato di avanzamento del corso di formazione sulla traccia di pertinenza](../media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
  **Indicatore qualità formazione**: Visualizza la classificazione della coerenza di tagging come indicato di seguito:
   
@@ -156,7 +156,7 @@ Nel riquadro dei **risultati del calcolo batch** è incluso il numero di file ch
 
 Nel riquadro **statistiche formazione** vengono visualizzate statistiche e grafici basati sui risultati di una formazione di pertinenza avanzata di eDiscovery. 
   
-![Statistiche del corso di formazione sulla traccia di pertinenza](media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
+![Statistiche del corso di formazione sulla traccia di pertinenza](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
 Questa visualizzazione Mostra gli elementi seguenti:
   

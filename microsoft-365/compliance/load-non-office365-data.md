@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3be5e4054e34cabb61505d48524feb2dbbfd0e44
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4db0b40d485c4c1107bdcb0d49616cadb15b1915
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600573"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072169"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>Caricare i dati non di Office 365 in Evidence
 
@@ -30,7 +30,7 @@ Non tutti i documenti che potrebbe essere necessario analizzare in un'indagine d
 >[!Note]
 >Per l'analisi dei dati è necessario un Office 365 E3 con il componente aggiuntivo per la conformità avanzato o un abbonamento E5 per l'organizzazione. Se non si dispone di tale piano e si desidera provare Advanced eDiscovery, è possibile iscriversi per una versione di valutazione di Office 365 Enterprise E5.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Se si utilizza la funzionalità carica non Office 365 come descritto in questa procedura, è necessario disporre di:
 
@@ -52,11 +52,11 @@ Se si utilizza la funzionalità carica non Office 365 come descritto in questa p
 
 2. Fare clic sul pulsante **Carica file** per avviare l'importazione guidata dati non di Office 365.
 
-![Caricare file](media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+![Caricare file](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
 3. Il primo passaggio della procedura guidata consente di preparare semplicemente un BLOB di Azure sicuro per i file da caricare.  Al termine della preparazione, fare clic sul pulsante **Avanti: carica file** .
 
-![Prepararsi per l'importazione di dati non di Office 365](media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+![Prepararsi per l'importazione di dati non di Office 365](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 4. Nel passaggio **file di caricamento** specificare il **percorso dei file**, in cui si trovano i dati non di Office 365 pianificati per l'importazione.  L'impostazione del percorso corretto garantisce che il comando AzCopy sia stato aggiornato correttamente.
 
@@ -65,11 +65,11 @@ Se si utilizza la funzionalità carica non Office 365 come descritto in questa p
 
 5. Copiare il comando predefinito facendo clic sul collegamento **copia in Appunti** . Avviare un prompt dei comandi di Windows, incollare il comando e premere INVIO.  I file verranno caricati nell'archiviazione BLOB di Azure sicura per il passaggio successivo.
 
-![Caricare i file per l'importazione di dati non di Office 365](media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+![Caricare i file per l'importazione di dati non di Office 365](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-![Utilizzo di AzCopy per importare dati non di Office 365](media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+![Utilizzo di AzCopy per importare dati non di Office 365](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
 6. Infine, tornare alla conformità & di sicurezza e fare clic sul pulsante **Avanti: elabora file** .  Questo avvia l'elaborazione, l'estrazione del testo e l'indicizzazione dei file caricati.  È possibile tenere conto dello stato di avanzamento dell'elaborazione qui o nella scheda **processi** .  Una volta completati, i nuovi file sono disponibili nel set di evidenze.  Al termine dell'elaborazione, è possibile chiudere la procedura guidata.
 
-![File di processo di importazione non Office 365](media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+![File di processo di importazione non Office 365](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 

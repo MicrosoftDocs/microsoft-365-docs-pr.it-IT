@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Dopo aver esportato e scaricato i risultati di una ricerca nel registro di controllo di Office 365 in un file CSV, è possibile utilizzare la caratteristica di trasformazione JSON nell'editor di query di alimentazione in Excel per dividere ogni proprietà nell'oggetto JSON nella colonna AuditData nella propria colonna. In questo modo è possibile individuare rapidamente i dati di controllo specifici che si stanno cercando.
-ms.openlocfilehash: de116db76597c6eb7966541c3cc0f34f91c06c70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 00e89d0834461e73ee0bd8a238e3ff7480de118e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594607"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074102"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Esportare, configurare e visualizzare i record del log di controllo
 
@@ -36,7 +36,7 @@ Il primo passaggio consiste nell'eseguire una ricerca nel log di controllo e qui
     
 2. Fare clic su **Esporta risultati** e selezionare **Scarica tutti i risultati**. 
     
-   ![Fare clic su Scarica tutti i risultati](media/ExportAuditSearchResults.png)
+   ![Fare clic su Scarica tutti i risultati](../media/ExportAuditSearchResults.png)
 
    Questa opzione consente di esportare tutti i record di controllo dalla ricerca del registro di controllo eseguita nel passaggio 1 e di scaricare i dati non elaborati dal registro di controllo in un file CSV. 
 
@@ -44,7 +44,7 @@ Il primo passaggio consiste nell'eseguire una ricerca nel log di controllo e qui
 
 3. Fare clic su **salva > Salva con nome** e salvare il file CSV nel computer locale. Per scaricare molti risultati della ricerca, è necessario un po' di tempo. Si tratta in genere del caso in cui si esegue la ricerca di tutte le attività o di un intervallo di date esteso. Quando il file CSV ha terminato il download, viene visualizzato un messaggio nella parte inferiore della finestra.
  
-   ![Messaggio visualizzato quando è stato completato il download del file CSV](media/ExportAuditSearchResultsFinish.png)
+   ![Messaggio visualizzato quando è stato completato il download del file CSV](../media/ExportAuditSearchResultsFinish.png)
 
 > [!NOTE]
   > È possibile scaricare al massimo 50.000 voci in un file CSV da una singola ricerca nel log di controllo. Se vengono scaricate 50.000 voci nel file CSV, è probabile che ci siano più di 50.000 eventi che soddisfano i criteri di ricerca. Per esportare più di questo limite, provare a utilizzare un intervallo di date per ridurre il numero di record del registro di controllo. Potrebbe essere necessario eseguire più ricerche con intervalli di date più piccoli per esportare più di 50.000 voci.
@@ -57,29 +57,29 @@ Il passaggio successivo consiste nell'utilizzare la caratteristica di trasformaz
     
 2.  Nella scheda **dati** fare clic su **testo/CSV**nel gruppo della barra multifunzione **Get & Transform Data** .
 
-    ![Nella scheda dati fare clic su da testo/CSV](media/JSONTransformOpenCSVFile.png)
+    ![Nella scheda dati fare clic su da testo/CSV](../media/JSONTransformOpenCSVFile.png)
 
 3. Aprire il file CSV scaricato nel passaggio 1.
     
 4. Nella finestra visualizzata fare clic su **trasforma dati**.
 
-   ![Fare clic su trasforma dati](media/JSONOpenPowerQuery.png)
+   ![Fare clic su trasforma dati](../media/JSONOpenPowerQuery.png)
 
 Il file CSV viene aperto nell' **editor di query**. Sono disponibili quattro colonne: **CreationDate**, **userids**, **Operations**e **AuditData**. La colonna **AuditData** è un oggetto JSON che contiene più proprietà. Il passaggio successivo consiste nel creare una colonna per ogni proprietà nell'oggetto JSON.
     
 5. Fare clic con il pulsante destro del mouse sul titolo nella colonna **AuditData** , scegliere **Transform**e quindi fare clic su **JSON**. 
  
-   ![Fare clic con il pulsante destro del mouse sulla colonna AuditData, scegliere Transform e quindi JSON](media/JSONTransform.png)
+   ![Fare clic con il pulsante destro del mouse sulla colonna AuditData, scegliere Transform e quindi JSON](../media/JSONTransform.png)
 
 6. Nell'angolo in alto a destra della colonna **AuditData** fare clic sull'icona Espandi.
     
-   ![Nella colonna AuditData, fare clic sull'icona Espandi](media/JSONTransformExpandIcon.png)
+   ![Nella colonna AuditData, fare clic sull'icona Espandi](../media/JSONTransformExpandIcon.png)
 
    Viene visualizzato un elenco parziale delle proprietà degli oggetti JSON nella colonna **AuditData** .
 
 7. Fare clic su **carica altro** per visualizzare tutte le proprietà degli oggetti JSON nella colonna **AuditData** .
 
-   ![Fare clic su carica altro per visualizzare tutte le proprietà nell'oggetto JSON](media/JSONTransformLoadJSONProperties.png)
+   ![Fare clic su carica altro per visualizzare tutte le proprietà nell'oggetto JSON](../media/JSONTransformLoadJSONProperties.png)
 
    È possibile deselezionare la casella di controllo accanto a qualsiasi proprietà che non si desidera includere. L'eliminazione delle colonne che non sono utili per l'analisi è un ottimo metodo per ridurre la quantità di dati visualizzati nel registro di controllo. 
 

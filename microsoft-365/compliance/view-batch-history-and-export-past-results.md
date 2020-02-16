@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: "Scopri come visualizzare informazioni dettagliate per le sessioni batch di esportazione selezionate e come annullare l'ultima sessione di esportazione in Office 365 Advanced eDiscovery.  "
-ms.openlocfilehash: 0309c84bb28f4034f3a0ec8726a21ca2a4b4f22f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a13faf7a0c81eb22498239b5ac9f26cce52387f6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601263"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069123"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Office 365 Advanced eDiscovery
 
@@ -38,19 +38,19 @@ La finestra di dialogo Esporta cronologia fornisce informazioni dettagliate sull
     
 2. A destra del nome del batch di esportazione, selezionare l'icona **cronologia batch** : 
     
-    ![Icona di esportazione dello storico batch](media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
+    ![Icona di esportazione dello storico batch](../media/a14f6ef9-0c3c-4851-b65d-9380f2d8a38a.gif)
   
     Viene visualizzata la finestra di dialogo cronologia batch.
     
-    ![Esporta storico batch](media/04c5b75c-348c-491d-b4fe-716659333890.png)
+    ![Esporta storico batch](../media/04c5b75c-348c-491d-b4fe-716659333890.png)
   
 3. Se è necessario eseguire il rollback di una sessione precedente, fare clic su **Annulla ultima sessione**. Il rollback può essere eseguito più volte, che annulla l'ultima sessione.
     
-4. Se si desidera scaricare i dati in qualsiasi momento da una sessione di esportazione batch eseguita in precedenza, fare clic ![sull'](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) **icona Download cronologia** di esportazione batch per il download accanto al batch di esportazione desiderato da esportare. 
+4. Se si desidera scaricare i dati in qualsiasi momento da una sessione di esportazione batch eseguita in precedenza, fare clic ![sull'](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) **icona Download cronologia** di esportazione batch per il download accanto al batch di esportazione desiderato da esportare. 
     
 5. Quando viene visualizzata la finestra di dialogo **firma di accesso condiviso** , fare clic su **copia negli Appunti** per copiare i dati della sessione di esportazione nel computer locale e quindi fare clic su **Chiudi**. Viene visualizzata la finestra &amp; di dialogo **strumento di esportazione di eDiscovery** di Office 365 Security Compliance Center. 
     
-    ![Finestra di dialogo Esporta eDiscovery](media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
+    ![Finestra di dialogo Esporta eDiscovery](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
 6. Nella finestra di dialogo **dello strumento di esportazione di eDiscovery** : 
     

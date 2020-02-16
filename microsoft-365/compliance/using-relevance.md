@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ebf5490467ec041cb22c126ac75c90ae58deb942
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2ddc9a6ae868682a3a241e9896d3aa63ac46f985
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601273"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069159"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>Utilizzare il modulo pertinenza per analizzare i dati in Advanced eDiscovery
 
@@ -33,7 +33,7 @@ In Advanced eDiscovery, il modulo pertinenza include la formazione sulla pertine
 
 Il flusso di lavoro di pertinenza è illustrato e descritto nel modo seguente:
   
-![Flusso di lavoro di pertinenza](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![Flusso di lavoro di pertinenza](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Cicli di valutazione e tracciabilità**:
     
@@ -134,7 +134,7 @@ Anche se Advanced eDiscovery guida l'utente attraverso il processo, con i passag
 > [!NOTE]
 > Alcune opzioni potrebbero rimanere disabilitate dopo lo sblocco, in quanto non sono supportate per l'utilizzo in quel momento del processo. 
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 [Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   

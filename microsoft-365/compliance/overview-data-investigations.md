@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto il nuovo strumento di analisi dei dati (Preview) in Microsoft 365.
-ms.openlocfilehash: cd60b16f6d0f968c0c87f3e44ee2f643c90ebb10
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1dc0a98208d553a4ea94703b98f982dd8e19167f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597793"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071079"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Panoramica delle indagini sui dati (anteprima) in Microsoft 365
 
@@ -37,7 +37,7 @@ Per accedere e condurre un'indagine sui dati, è necessario essere membri del gr
 
 Nelle sezioni seguenti viene descritto ogni passaggio del flusso di lavoro incorporato in indagini sui dati (Preview). Nella schermata seguente viene illustrata la scheda **Home** di un'indagine denominata *High Risk: Finance Documents dispersione*. 
 
-![Flusso di lavoro nello strumento indagini dati](media/DataInvestigationsWorkflow.png)
+![Flusso di lavoro nello strumento indagini dati](../media/DataInvestigationsWorkflow.png)
 
 ## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>Ricerca di dati sensibili, dannosi o fuori luogo
 

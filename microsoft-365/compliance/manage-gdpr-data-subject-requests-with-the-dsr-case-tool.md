@@ -18,12 +18,12 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Il GDPR fornisce ai cittadini dell'Unione europea (denominati soggetti dei dati) diritti specifici per i loro dati personali; tali diritti includono l'ottenimento di copie, la richiesta di modifiche, la limitazione dell'elaborazione, l'eliminazione o la ricezione in formato elettronico. Una richiesta formale da parte di un soggetto dei dati di intraprendere un'azione sui loro dati personali è denominata richiesta del soggetto dei dati o DSR. È possibile utilizzare i casi DSR nel centro conformità di Office 365 e Microsoft 365 per gestire le indagini DSR dell'organizzazione.
-ms.openlocfilehash: 6d7770be686e62dc6afde368bcb4e821f72c2fff
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35ea4230680f567a702f8f2368f80986c473039f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582935"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072091"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gestire le richieste del soggetto dei dati di GDPR con lo strumento dei casi DSR nel centro sicurezza & Compliance
 
@@ -89,7 +89,7 @@ Il passaggio successivo consiste nel creare un caso DSR. Quando si crea un caso,
   
 1. [https://protection.office.com](https://protection.office.com) Accedere a Office 365 utilizzando l'account aziendale o dell'Istituto di istruzione. 
     
-2. Nel centro sicurezza & conformità fare clic su richieste degli \> **interessati**per la **privacy dei dati** e ![quindi fare](media/ITPro-EAC-AddIcon.gif) clic su Aggiungi **nuovo caso DSR**.
+2. Nel centro sicurezza & conformità fare clic su richieste degli \> **interessati**per la **privacy dei dati** e ![quindi fare](../media/ITPro-EAC-AddIcon.gif) clic su Aggiungi **nuovo caso DSR**.
     
 3. Nella pagina **nuovo** riquadro a comparsa del modello DSR, assegnare un nome al caso, digitare una descrizione facoltativa e quindi fare clic su **Avanti**. Il nome del caso deve essere univoco nell'organizzazione.
     
@@ -102,7 +102,7 @@ Il passaggio successivo consiste nel creare un caso DSR. Quando si crea un caso,
     
     Viene visualizzata una pagina che conferma che è stato creato il nuovo caso DSR.
     
-    ![Avviare la ricerca o chiudere la nuova pagina del caso DSR](media/b5e62c2c-cafe-4a8d-a38c-789ed9f9ccbd.png)
+    ![Avviare la ricerca o chiudere la nuova pagina del caso DSR](../media/b5e62c2c-cafe-4a8d-a38c-789ed9f9ccbd.png)
   
     A questo punto, è possibile eseguire una delle due operazioni seguenti:
     
@@ -195,11 +195,11 @@ Il computer utilizzato per esportare i dati deve soddisfare i seguenti requisiti
     
 2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca incorporata creata quando è stato creato il caso DSR. Oppure fare clic su un'altra ricerca per esportare i dati dalla ricerca. 
     
-3. Nella pagina riquadro a comparsa di ricerca ![fare clic su Esporta](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
+3. Nella pagina riquadro a comparsa di ricerca ![fare clic su Esporta](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
     
 4. Nella pagina **Export results** selezionare le opzioni consigliate seguenti per le richieste di esportazione DSR. 
     
-    ![Configurare le impostazioni di esportazione](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
+    ![Configurare le impostazioni di esportazione](../media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
     a. In **Opzioni di output**selezionare la prima opzione (**tutti gli elementi, ad eccezione di quelli che dispongono di un formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi**) per esportare solo gli elementi indicizzati. Il motivo per cui non si desidera esportare gli elementi parzialmente indicizzati dalla ricerca integrata è dato che verranno esportati anche gli elementi parzialmente indicizzati provenienti da altri utenti. Per esportare solo gli elementi parzialmente indicizzati per il soggetto dei dati, si consiglia di creare una ricerca distinta. Per ulteriori informazioni, vedere [esportare gli elementi parzialmente indicizzati](#exporting-partially-indexed-items) nella sezione "ulteriori informazioni sull'utilizzo dello strumento del caso DSR".
     
@@ -219,7 +219,7 @@ Il computer utilizzato per esportare i dati deve soddisfare i seguenti requisiti
     
 8. In **Chiave di esportazione**, fare clic su **Copia negli Appunti**. Per scaricare i risultati della ricerca, è possibile utilizzare questa chiave nel passaggio 11.
     
-9. Fare ![clic su Esporta risultati](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) della ricerca dell'icona **download** nella parte superiore della pagina Esporta riquadro a comparsa. 
+9. Fare ![clic su Esporta risultati](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) della ricerca dell'icona **download** nella parte superiore della pagina Esporta riquadro a comparsa. 
     
 10. Nella finestra popup nella parte inferiore della pagina, fare clic su **Apri** per aprire lo strumento di **esportazione di eDiscovery di Microsoft Office 365**. Lo **strumento di esportazione di eDiscovery** verrà installato la prima volta che si scaricano i risultati della ricerca. 
     
@@ -260,11 +260,11 @@ Per modificare i percorsi di contenuto per la ricerca:
     
 2. Nella query di ricerca, in **percorsi**, fare clic su **modifica** accanto all'opzione **percorsi specifici** . 
     
-    ![Fare clic su modifica per modificare le posizioni di contenuto della query di ricerca incorporata](media/d66f7ba7-b71f-4ff5-a030-460ff02e3123.png)
+    ![Fare clic su modifica per modificare le posizioni di contenuto della query di ricerca incorporata](../media/d66f7ba7-b71f-4ff5-a030-460ff02e3123.png)
   
     Viene visualizzata la pagina **modifica** riquadro a comparsa. Di seguito sono riportate le descrizioni dei percorsi di contenuto nella ricerca incorporata e alcune informazioni sulla modifica delle posizioni ricercate. 
     
-    ![Pagina Modifica riquadro a comparsa posizioni](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
+    ![Pagina Modifica riquadro a comparsa posizioni](../media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
   
     a. La sezione attiva/disattiva in **Seleziona tutto** in cassetta postale nella parte superiore della pagina a comparsa è selezionata, che indica che tutte le cassette postali vengono cercate. Per limitare l'ambito della ricerca, fare clic sull'interruttore per deselezionarlo e quindi fare clic su **Scegli utenti, gruppi o team** e scegliere cassette postali specifiche per la ricerca.
     
@@ -304,13 +304,13 @@ Quando si esportano i dati dal servizio di roaming di Office, i dati vengono sal
   
 1. Nel centro sicurezza & conformità fare clic su \> **richieste degli interessati**per la **privacy dei dati** e quindi fare clic su **Apri** accanto al caso DSR per l'oggetto dati per il quale si desidera esportare i dati di utilizzo. 
     
-2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic ![su Aggiungi](media/ITPro-EAC-AddIcon.gif) **Ricerca guidata**icona.
+2. Fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic ![su Aggiungi](../media/ITPro-EAC-AddIcon.gif) **Ricerca guidata**icona.
     
 3. Fare clic su **Annulla** nella pagina **nome della ricerca** . 
     
 4. In **query di ricerca**, nella condizione di **tipo** Selezionare la casella di controllo accanto a **servizio di roaming di Office**. 
     
-    ![Selezionare la casella di controllo del servizio di roaming di Office per esportare i dati di utilizzo](media/O365_DSRCase_SDSDataExport1.png)
+    ![Selezionare la casella di controllo del servizio di roaming di Office per esportare i dati di utilizzo](../media/O365_DSRCase_SDSDataExport1.png)
   
     La condizione del **tipo** , ovvero le classi dei messaggi di posta elettronica, dovrebbe essere l'unico elemento nella query di ricerca. È possibile eliminare la casella **parole chiave** o lasciarla vuota. 
     
@@ -326,13 +326,13 @@ Quando si esportano i dati dal servizio di roaming di Office, i dati vengono sal
     
  **Per esportare i dati del servizio di roaming di Office:**
   
-1. Quando la ricerca creata nel passaggio precedente è stata completata, fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca. Potrebbe essere necessario fare clic ![su](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) Aggiorna **aggiornamento** per visualizzare la ricerca. 
+1. Quando la ricerca creata nel passaggio precedente è stata completata, fare clic sulla scheda **ricerca** nella parte superiore della pagina e quindi fare clic sulla casella di controllo accanto alla ricerca. Potrebbe essere necessario fare clic ![su](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) Aggiorna **aggiornamento** per visualizzare la ricerca. 
     
-2. Nella pagina riquadro a comparsa di ricerca ![fare clic su Esporta](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
+2. Nella pagina riquadro a comparsa di ricerca ![fare clic su Esporta](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **altre**icone dei risultati di ricerca e quindi selezionare **Esporta risultati** dall'elenco a discesa. 
     
 3. Nella pagina **Export results** selezionare le opzioni consigliate per esportare i dati di utilizzo. 
     
-    ![Opzioni di esportazione per l'esportazione dei dati di utilizzo del servizio di roaming di Office](media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
+    ![Opzioni di esportazione per l'esportazione dei dati di utilizzo del servizio di roaming di Office](../media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
   
     a. In **Opzioni di output**selezionare la prima opzione (**tutti gli elementi, ad eccezione di quelli che dispongono di un formato non riconosciuto, sono crittografati o non sono stati indicizzati per altri motivi**) per esportare solo gli elementi indicizzati.
     
@@ -350,7 +350,7 @@ Quando si esportano i dati dal servizio di roaming di Office, i dati vengono sal
     
 7. In **Chiave di esportazione**, fare clic su **Copia negli Appunti**. Per scaricare i risultati della ricerca, è possibile utilizzare questa chiave nel passaggio 10.
     
-8. Fare ![clic su Esporta risultati](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) della ricerca dell'icona **download** nella parte superiore della pagina Esporta riquadro a comparsa. 
+8. Fare ![clic su Esporta risultati](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) della ricerca dell'icona **download** nella parte superiore della pagina Esporta riquadro a comparsa. 
     
 9. Nella finestra popup nella parte inferiore della pagina, fare clic su **Apri** per aprire lo strumento di **esportazione di eDiscovery di Microsoft Office 365**. Lo **strumento di esportazione di eDiscovery** verrà installato la prima volta che si scaricano i risultati della ricerca. 
     

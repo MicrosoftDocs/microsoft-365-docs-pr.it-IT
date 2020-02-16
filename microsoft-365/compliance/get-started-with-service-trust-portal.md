@@ -14,12 +14,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Per i report di conformità alle normative di Office 365, Azure e Dynamics 365 online, per visualizzare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e come è possibile essere conformi alle norme ISO, HIPAA, NIST, FINRA, GDPR e FedRAMP quando si utilizzano questi servizi online.
-ms.openlocfilehash: d8347a20543664a1de86001709f068bf39b1cb5d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 865b16dfc5e1878a9bc51f8d84ef8c0128f39298
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596343"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073155"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introduzione a Microsoft Service Trust Portal
 
@@ -56,7 +56,7 @@ Quando si esegue l'iscrizione a una versione di valutazione gratuita o a un abbo
 
 Le funzionalità e il contenuto del portale di attendibilità del servizio sono accessibili dal menu principale.
   
-![Menu Service Trust Portal](media/STPMenus1.png)
+![Menu Service Trust Portal](../media/STPMenus1.png)
 
 Nelle sezioni seguenti viene descritto ogni elemento del menu principale.
   
@@ -72,7 +72,7 @@ Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso 
 
 - [Microsoft Compliance Manager (anteprima)](compliance-manager-overview.md)
 
-### <a name="trust-documents"></a>Attendibilità documenti
+### <a name="trust-documents"></a>Documento sull’attendibilità
 
 Offre una vasta gamma di informazioni sulla progettazione e l'implementazione della sicurezza con l'obiettivo di rendere più facile soddisfare gli obiettivi di conformità normativa mediante la comprensione del modo in cui i servizi cloud di Microsoft consentono di proteggere i dati. Per esaminare il contenuto, selezionare una delle opzioni seguenti nel menu a discesa **documenti attendibili** .
 
@@ -126,13 +126,13 @@ Andare a **più > amministratore** per accedere alle funzioni amministrative che
 
 Fare clic sulla lente di ingrandimento nell'angolo in alto a destra della pagina Service Trust Portal per espandere la casella, immettere i termini di ricerca e premere **invio**. Viene visualizzata **la pagina di ricerca,** con il termine di ricerca visualizzato nella casella di ricerca e i risultati di ricerca riportati di seguito.
   
-![Service Trust Portal - Ricerca in documenti con filtro applicato](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Service Trust Portal - Ricerca in documenti con filtro applicato](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 Per impostazione predefinita, la ricerca ° restituisce i risultati dei documenti. È possibile filtrare i risultati utilizzando gli elenchi a discesa per affinare l'elenco dei documenti visualizzati. È possibile utilizzare più filtri per limitare l'elenco dei documenti. I filtri includono i servizi cloud specifici, le categorie di conformità o le procedure di sicurezza, le aree geografiche e le industrie. Fare clic sul collegamento nome documento per scaricare il documento.
   
 Per elencare i controlli dalle valutazioni in Compliance Manager correlate ai termini di ricerca, fare clic su **Compliance Manager**. I risultati della ricerca mostrano la data in cui è stata creata la valutazione, il nome del gruppo di valutazione, il servizio cloud Microsoft applicabile e se il controllo è Microsoft o gestito dal cliente. Fare clic sul nome del controllo per visualizzare il controllo nella valutazione in Compliance Manager.
   
-![Service Trust Portal - Ricerca nei controlli di Compliance Manager](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Service Trust Portal - Ricerca nei controlli di Compliance Manager](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
 > I report e i documenti del portale di attendibilità del servizio sono disponibili per il download da almeno 12 mesi dopo la pubblicazione o fino a quando non diventa disponibile una nuova versione del documento.
@@ -161,7 +161,7 @@ Per accedere a questi Starter Pack, accedere a **Service Trust Portal > Industri
 
 Il Service Trust Portal consente di visualizzare il contenuto della pagina in diverse lingue. Per modificare la lingua della pagina, è sufficiente fare clic sull'icona Globe nell'angolo in basso a sinistra della pagina e selezionare la lingua desiderata. 
   
-![Service Trust Portal - Opzioni di contenuti localizzati](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Service Trust Portal - Opzioni di contenuti localizzati](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>Feedback
 
@@ -169,4 +169,4 @@ Il Service Trust Portal consente di visualizzare il contenuto della pagina in di
   
 Il feedback degli utenti è importante per noi. Fare clic sul pulsante feedback nella parte inferiore della pagina per inviarci commenti su cosa hai fatto o non ti piace, oppure suggerimenti per migliorare i prodotti o le caratteristiche del prodotto.
   
-![Che tipo di feedback hai](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![Che tipo di feedback hai](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

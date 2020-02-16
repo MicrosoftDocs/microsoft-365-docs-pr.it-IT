@@ -1,5 +1,7 @@
 ---
 title: Gestire un problema di fuoriuscita dei dati in Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro sicurezza & conformità per gestire un problema di fuoriuscita dei dati.
-ms.openlocfilehash: 53193d3bd915562037a6409766e9be9d42d272c5
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083823"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072029"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gestire un problema di fuoriuscita dei dati in Microsoft 365
 
@@ -106,7 +108,7 @@ Dopo aver eseguito la ricerca, è possibile visualizzare in anteprima esempi di 
 
 Nell'analisi passare alla scheda **Evidence** e fare clic sul set di prove creato nel passaggio precedente. Dopo che il processo di elaborazione è stato completato e i risultati della ricerca vengono aggiunti all'evidenza, è possibile esaminare i singoli documenti nel formato nativo, nel formato di testo o in un formato quasi nativo. È possibile creare query aggiuntive per limitare l'elenco dei documenti e contrassegnare i documenti per indicare i risultati dell'indagine. Per ulteriori informazioni, vedere [Review data in evidence](review-data-in-evidence.md)
 
-Per raggruppare i documenti e ottenere assistenza per la revisione, fare clic su **Gestisci evidenza**. Nel riquadro **analisi** fare clic su **analizza**. In questo modo vengono eseguite analisi avanzate, come il rilevamento duplicati, il threading di posta elettronica e il tema. Per ulteriori informazioni, vedere:
+Per raggruppare i documenti e ottenere assistenza per la revisione, fare clic su **Gestisci evidenza**. Nel riquadro **analisi** fare clic su **analizza**. In questo modo vengono eseguite analisi avanzate, come il rilevamento duplicati, il threading di posta elettronica e il tema. Per altre informazioni, vedere:
 
 - [Eseguire analisi per velocizzare le indagini](run-analytics-to-investigate-faster.md)
 - [Rilevamento dei documenti simili](near-duplicates.md)
@@ -125,7 +127,7 @@ Per eliminare gli elementi dai percorsi originali:
  
 2. Fare clic su **azione** e quindi su **Elimina elementi da percorsi originali**.
 
-   ![Fare clic su azione e quindi su Elimina elementi da percorsi originali](media/DataInvestigationsDeleteItems1.png)
+   ![Fare clic su azione e quindi su Elimina elementi da percorsi originali](../media/DataInvestigationsDeleteItems1.png)
 
 3. Nella pagina riquadro a comparsa verificare il numero di elementi e i documenti figlio correlati che verranno eliminati e quindi fare clic su **Elimina**.
 

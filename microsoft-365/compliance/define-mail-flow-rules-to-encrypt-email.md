@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a creare regole del flusso di posta (regole di trasporto) per crittografare e decrittografare i messaggi utilizzando la crittografia dei messaggi di Office 365.
-ms.openlocfilehash: a2f37bff8fa3fd45999a44341cfdb077b4f43e62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 80bdd479ec09f0ecefd2758e2b8012a1a7351d6c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595341"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075873"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica in Office 365
 
@@ -48,7 +48,7 @@ Per informazioni sui componenti che compongono le regole del flusso di posta e s
 
 3. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su interfaccia di **Amministrazione** \> di **Exchange**.
 
-4. Nell'interfaccia di amministrazione di Exchange, andare a **regole** del **flusso** \> di posta e selezionare **nuova** ![nuova icona](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **creare una nuova regola**. Per ulteriori informazioni sull'utilizzo di EAC, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Nell'interfaccia di amministrazione di Exchange, andare a **regole** del **flusso** \> di posta e selezionare **nuova** ![nuova icona](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **creare una nuova regola**. Per ulteriori informazioni sull'utilizzo di EAC, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. In **nome**Digitare un nome per la regola, ad esempio crittografare la posta per DrToniRamos@hotmail.com.
 
@@ -82,7 +82,7 @@ Per informazioni sui componenti che compongono le regole del flusso di posta e s
 
 4. Nell'interfaccia di amministrazione di Exchange, andare a **Flusso di posta** \> **Regole**.
 
-5. Nell'elenco delle regole del flusso di posta, selezionare la regola che si desidera modificare per utilizzare le nuove funzionalità ome e quindi scegliere **modifica** ![icona](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifica.
+5. Nell'elenco delle regole del flusso di posta, selezionare la regola che si desidera modificare per utilizzare le nuove funzionalità ome e quindi scegliere **modifica** ![icona](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifica.
 
 6. Per abilitare la crittografia utilizzando le nuove funzionalità OME, scegliere **modifica la sicurezza dei messaggi** e quindi **fare**clic su **applica crittografia messaggi di Office 365 e protezione dei diritti**. Selezionare un modello RMS nell'elenco, scegliere **Salva** e quindi fare clic su **OK**.
 
@@ -106,7 +106,7 @@ Se non è stata ancora spostata l'organizzazione di Office 365 nelle nuove funzi
 
 3. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su interfaccia di **Amministrazione** \> di **Exchange**.
 
-4. Nell'interfaccia di amministrazione di Exchange, andare a **regole** del **flusso** \> di posta e selezionare **nuova** ![nuova icona](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **creare una nuova regola**. Per ulteriori informazioni sull'utilizzo di EAC, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Nell'interfaccia di amministrazione di Exchange, andare a **regole** del **flusso** \> di posta e selezionare **nuova** ![nuova icona](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **creare una nuova regola**. Per ulteriori informazioni sull'utilizzo di EAC, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. In **nome**Digitare un nome per la regola, ad esempio crittografare la posta per DrToniRamos@hotmail.com.
 
@@ -132,7 +132,7 @@ Se non è stata ancora spostata l'organizzazione di Office 365 nelle nuove funzi
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Utilizzare PowerShell di Exchange Online per creare una regola del flusso di posta per la crittografia dei messaggi di posta elettronica senza le nuove funzionalità OME
 
-1. Connettersi a PowerShell per Exchange Online. Per ulteriori informazioni, vedere [Connessione a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Connettersi a PowerShell di Exchange Online. Per ulteriori informazioni, vedere [Connessione a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Creare una regola utilizzando il cmdlet **New-TransportRule** e impostare il parametro _ApplyOME_ su `$true`.
 
@@ -164,7 +164,7 @@ Quando gli utenti di posta elettronica inviano messaggi crittografati, i relativ
 
 3. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su interfaccia di **Amministrazione** \> di **Exchange**.
 
-4. Nell'interfaccia di amministrazione di Exchange, andare a **regole** del **flusso** \> di posta e selezionare **nuova** ![nuova icona](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **creare una nuova regola**. Per ulteriori informazioni sull'utilizzo di EAC, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. Nell'interfaccia di amministrazione di Exchange, andare a **regole** del **flusso** \> di posta e selezionare **nuova** ![nuova icona](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **creare una nuova regola**. Per ulteriori informazioni sull'utilizzo di EAC, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
 5. In **nome**Digitare un nome per la regola, ad esempio Rimuovi la crittografia dalla posta in arrivo.
 
@@ -176,7 +176,7 @@ Quando gli utenti di posta elettronica inviano messaggi crittografati, i relativ
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Utilizzo di PowerShell di Exchange Online per creare una regola per rimuovere la crittografia dalle risposte di posta elettronica crittografate senza le nuove funzionalità OME
 
-1. Connettersi a PowerShell per Exchange Online. Per ulteriori informazioni, vedere [Connessione a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Connettersi a PowerShell di Exchange Online. Per ulteriori informazioni, vedere [Connessione a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Creare una regola utilizzando il cmdlet **New-TransportRule** e impostare il parametro _RemoveOME_ su `$true`.
 

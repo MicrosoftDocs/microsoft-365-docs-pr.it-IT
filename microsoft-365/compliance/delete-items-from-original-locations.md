@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro sicurezza & conformità per eliminare gli elementi dai percorsi originali.
-ms.openlocfilehash: 2efb57fa2e35cffd3cca5e8f44b648018f0daf1b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0232a822af0427fcfa669fa1e86558ca54996202
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595321"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075850"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Eliminare gli elementi dal percorso originale (anteprima)
 
@@ -31,7 +31,7 @@ La caratteristica per eliminare gli elementi dal percorso originale è in antepr
 
 Se si utilizzano indagini sui dati, è possibile eliminare gli elementi dai percorsi originali. Questo significa che è possibile eliminare gli elementi da cassette postali di Exchange, siti di SharePoint e account di OneDrive nell'organizzazione. Poiché gli elementi sono stati raccolti come prova, sono presenti copie degli elementi conservati nel set di prove per ulteriori indagini o come riferimento.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per eliminare gli elementi, è necessario assegnare il ruolo di **ricerca ed eliminazione** nel centro sicurezza & Compliance. Questo ruolo viene assegnato per impostazione predefinita al gruppo di ruoli investigatore dati incorporato.
 
@@ -52,22 +52,22 @@ Per eliminare gli elementi dal percorso originale, eseguire la procedura seguent
  
 2. Fare clic su **azione** e quindi su **Elimina elementi da percorsi originali**.
 
-   ![Fare clic su azione e quindi su Elimina elementi da percorsi originali](media/DataInvestigationsDeleteItems1.png)
+   ![Fare clic su azione e quindi su Elimina elementi da percorsi originali](../media/DataInvestigationsDeleteItems1.png)
 
 3. Nella pagina riquadro a comparsa verificare il numero di elementi e i documenti figlio correlati che verranno eliminati e quindi fare clic su **Elimina**.
 
-   ![La pagina del riquadro a comparsa Visualizza il numero di elementi e tutti i documenti allegati selezionati per l'eliminazione](media/DataInvestigationsDeleteItems2.png)
+   ![La pagina del riquadro a comparsa Visualizza il numero di elementi e tutti i documenti allegati selezionati per l'eliminazione](../media/DataInvestigationsDeleteItems2.png)
 
    > [!NOTE]
    > Nella schermata precedente, il numero di elementi indica il numero di elementi selezionati per l'eliminazione. Il numero di documenti indica il numero totale di elementi, inclusi i file associati a un elemento padre. Ad esempio, se si seleziona un messaggio di posta elettronica e il messaggio contiene un documento di Word allegato, il numero di elementi e documenti visualizzati in **documenti selezionati sarebbe solo** **1 elementi (2 documenti)**.
 
 È possibile monitorare lo stato del processo **Elimina elementi dal percorso originale** nella scheda **processi** . fare clic sul processo per visualizzare la pagina del riquadro a comparsa.
 
-![Pagina riquadro a comparsa per eliminare gli elementi dal processo percorsi originali](media/DataInvestigationsDeleteItems3.png)
+![Pagina riquadro a comparsa per eliminare gli elementi dal processo percorsi originali](../media/DataInvestigationsDeleteItems3.png)
 
 Quando gli elementi del processo vengono eliminati, lo stato del processo è impostato su **esito positivo**. Viene visualizzata anche la data e l'ora del processo completato.
 
-![Processo elementi eliminati completati](media/DataInvestigationsDeleteItems4.png)
+![Processo elementi eliminati completati](../media/DataInvestigationsDeleteItems4.png)
 
 > [!NOTE]
 > È possibile che venga visualizzato uno stato **parzialmente corretto** per il processo **Elimina elementi dal percorso originale** . Sono presenti diverse situazioni che determinano lo stato del processo. Per ulteriori informazioni, vedere la sezione [eliminazioni parzialmente riuscite](#partially-successful-deletions) in questo articolo.

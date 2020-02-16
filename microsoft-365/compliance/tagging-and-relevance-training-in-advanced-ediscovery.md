@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Informazioni sui passaggi da contrassegnare e quindi utilizzare un campione di formazione di 40 file durante la fase di formazione per pertinenza di Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: fa690857fabb6a732d329dc8a75896d9e1aa195d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0565fa29f79a5269631539939c749a9ad93a029c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601423"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069571"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Formazione di tagging e pertinenza in Office 365 Advanced eDiscovery
 
@@ -36,7 +36,7 @@ Dopo aver completato la valutazione in Advanced eDiscovery e immettendo la fase 
 
 1. Nella scheda ** \> Tag pertinenza** , il riquadro di tagging viene visualizzato per impostazione predefinita nel riquadro sinistro e vengono visualizzati i file di esempio, uno alla volta per il tagging. 
     
-    ![Pannello Tag di pertinenza](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![Pannello Tag di pertinenza](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
     Nella scheda **tag** viene visualizzato il nome visualizzato del file. Potrebbe trattarsi del percorso, dell'oggetto di posta elettronica, del titolo o del nome definito dall'utente. L'ID, il percorso del file o il percorso del testo può essere copiato facendo clic con il pulsante destro del mouse sul percorso del file. 
     
@@ -58,7 +58,7 @@ Dopo aver completato la valutazione in Advanced eDiscovery e immettendo la fase 
     
     Facoltativamente, nella scheda **tag** fare clic su **impostazioni Tag** per impostare le opzioni seguenti: 
     
-    ![Impostazioni Tag di pertinenza](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
+    ![Impostazioni Tag di pertinenza](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
   - **Tag di massa**: utilizzare questa opzione per assegnare più problemi a un file selezionando **tutto** per impostare il tag per il file selezionato per tutti i problemi (sostituzioni dei problemi già contrassegnati) oppure selezionando **il resto** per applicare il tag ai restanti problemi senza tag. L'opzione selezionata rimane attiva per tutti i casi di questo utente fino a quando non è stata modificata da tale utente (l'impostazione è per utente per tutti i casi dell'utente). 
     
@@ -80,7 +80,7 @@ L'elenco file di esempio consente di visualizzare un elenco dei file in un campi
   
 1. Nella scheda ** \> Tag pertinenza** Selezionare i file di esempio nell'elenco a discesa riquadro sinistro. I file di esempio sono elencati nel riquadro sinistro. 
     
-    ![Elenco di file campione per Tag di pertinenza](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
+    ![Elenco di file campione per Tag di pertinenza](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
 2. Selezionare un campione o un numero di file specifico immettendo o selezionando il relativo numero nelle caselle di **esempio** o di **file** . 
     

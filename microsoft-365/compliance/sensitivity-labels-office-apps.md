@@ -1,5 +1,5 @@
 ---
-title: Etichette di riservatezza nelle app di Office
+title: Utilizzare le etichette di riservatezza nelle app di Office
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,23 +14,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Informazioni su come gli utenti lavorano con le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
-ms.openlocfilehash: bbdc2ed7407104298e36e214dc3e532cc305c94d
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+description: Informazioni su come gli utenti utilizzano le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
+ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855345"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069863"
 ---
-# <a name="sensitivity-labels-in-office-apps"></a>Etichette di riservatezza nelle app di Office
+# <a name="use-sensitivity-labels-in-office-apps"></a>Utilizzare le etichette di riservatezza nelle app di Office
 
-In questo articolo viene descritto:
+Dopo aver pubblicato le etichette di riservatezza dal centro conformità di Microsoft 365 o da un centro di etichette equivalente, queste vengono visualizzate nelle app di Office per consentire agli utenti di classificare e proteggere i dati creati o modificati.
 
-- Requisiti per l'ambiente prima di applicare etichette di riservatezza a messaggi di posta elettronica, file e allegati.
-- Quali funzionalità dell'etichetta di riservatezza sono supportate da ogni app di Office.
-- Cosa succede quando si combinano le etichette di riservatezza con altre tecnologie di sicurezza e conformità di Microsoft che funzionano con le app di Office.
-- In che modo gli utenti dell'organizzazione possono utilizzare le etichette di riservatezza quando lavorano con le app di Office per Windows e le app di Office per il Web.
-- Ulteriori risorse per aiutare gli utenti dell'organizzazione a iniziare a utilizzare le etichette di riservatezza.
+Utilizzare le informazioni contenute in questo articolo per semplificare la gestione dell'utilizzo delle etichette di riservatezza nelle app di Office. Ad esempio, le versioni minime delle app necessarie per supportare l'etichettatura incorporata, le interazioni con il client per l'etichettatura unificata di Azure Information Protection e la compatibilità con altre applicazioni e servizi.
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Requisiti di sottoscrizione e licenze per le etichette di riservatezza
 
@@ -70,7 +66,7 @@ Altre funzionalità sono disponibili quando si installa il client di etichettatu
 |[Fornire la guida per il collegamento a una pagina della Guida personalizzata](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Contrassegnare il contenuto](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Assegnare le autorizzazioni adesso](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Anteprima: implementazione di [Office Insider](https://office.com/insider)            | Anteprima: implementazione di [Office Insider](https://office.com/insider)        | In Revisione   | In Revisione         | In Revisione                                                        |
+|[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Anteprima: in [Office Insider](https://office.com/insider)            | Anteprima: in [Office Insider](https://office.com/insider)        | In Revisione   | In Revisione         | In Revisione                                                        |
 |[Visualizzazione dell'utilizzo delle etichette con label Analytics](label-analytics.md) e invio dei dati per gli amministratori                      | In Revisione            | In Revisione        | In Revisione   | In Revisione         | In Revisione                                                        |
 |[Richiedere agli utenti di applicare un'etichetta ai propri messaggi di posta elettronica e documenti](sensitivity-labels.md#what-label-policies-can-do)   | In Revisione            | In Revisione        | In Revisione   | In Revisione         | In Revisione                                                        |
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | Anteprima: in [Office Insider](https://office.com/insider)                                  | In Revisione | In Revisione | In Revisione | [Anteprima](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -93,7 +89,7 @@ Altre funzionalità sono disponibili quando si installa il client di etichettatu
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | Anteprima: implementazione di [Office Insider](https://office.com/insider)                       | In Revisione                    | In Revisione           | In Revisione               | Sì |
 |
 
-## <a name="about-the-office-built-in-labeling-client"></a>Informazioni sul client di etichettatura incorporato di Office
+## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Client di etichettatura incorporato di Office e client di Azure Information Protection
 
 Il client di etichettatura incorporato di Office Scarica le etichette di sensibilità e le impostazioni dei criteri delle etichette di riservatezza dai seguenti centri di amministrazione:
 
@@ -127,21 +123,24 @@ Se è necessario convertire i modelli di protezione esistenti in etichette, util
 
 Gli utenti possono applicare una sola etichetta alla volta per ogni documento o messaggio di posta elettronica.
 
-Quando si etichetta un messaggio di posta elettronica con allegati, gli allegati non ereditano l'etichetta. Se gli allegati dispongono di un'etichetta che conservano l'etichetta applicata separatamente. Se gli allegati non dispongono di un'etichetta, gli allegati rimarranno privi di un'etichetta. Tuttavia, se l'etichetta del messaggio di posta elettronica applica la protezione, la protezione viene applicata agli allegati di Office.
+Quando si etichetta un messaggio di posta elettronica con allegati, gli allegati non ereditano l'etichetta:
+
+- Se gli allegati dispongono di un'etichetta, l'etichetta viene mantenuta separatamente.
+- Se gli allegati non dispongono di un'etichetta, gli allegati rimarranno privi di un'etichetta. Tuttavia, se l'etichetta del messaggio di posta elettronica applica la protezione, la protezione viene applicata agli allegati di Office.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilità delle etichette di riservatezza
 
-**Con le app illuminate da RMS**. Se si apre un documento o un messaggio di posta elettronica etichettato _e crittografato_ in un' [applicazione illuminata da RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) che non supporta le etichette di riservatezza, l'app continua a applicare la crittografia e la gestione dei diritti.
+**Con le app illuminate da RMS**: se si apre un documento o un messaggio di posta elettronica con etichetta o crittografato in un' [applicazione illuminata da RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) che non supporta le etichette di riservatezza, l'app applica ancora la crittografia e la gestione dei diritti.
 
-**Con il client di Azure Information Protection**. È possibile visualizzare e modificare le etichette di riservatezza applicate ai documenti e ai messaggi di posta elettronica con il client di etichettatura incorporato di Office con il client Azure Information Protection e l'altro modo.
+**Con il client Azure Information Protection**: è possibile visualizzare e modificare le etichette di riservatezza applicate ai documenti e ai messaggi di posta elettronica con il client di etichettatura incorporato di Office utilizzando il client Azure Information Protection e il contrario.
 
-**Con altre versioni di Office**. Qualsiasi utente autorizzato può aprire documenti e messaggi di posta elettronica identificati in altre versioni di Office. Tuttavia, è possibile visualizzare o modificare l'etichetta solo nelle versioni di Office supportate o nel client di Azure Information Protection. Le versioni delle app di Office supportate sono elencate nelle tabelle di questo articolo.
+**Con altre versioni di Office**: qualsiasi utente autorizzato può aprire documenti e messaggi di posta elettronica identificati in altre versioni di Office. Tuttavia, è possibile visualizzare o modificare l'etichetta solo nelle versioni di Office supportate oppure utilizzando il client Azure Information Protection. Le versioni delle app di Office supportate sono elencate nella [sezione precedente](#support-for-sensitivity-label-capabilities-in-apps).
 
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>Supporto per i file di SharePoint e OneDrive protetti da etichette di riservatezza
 
-Per utilizzare il client di etichettatura incorporato di Office in Office sul Web, il documento deve trovarsi in un'istanza di OneDrive for business o SharePoint Online che ha optato per l' [Abilitazione delle etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+Per utilizzare il client di etichettatura incorporato di Office con Office sul Web per i documenti in OneDrive for business o SharePoint Online, assicurarsi di aver optato per l'anteprima per abilitare le [etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="when-office-365-applies-content-marking-and-encryption-to-content"></a>Quando Office 365 applica la marcatura del contenuto e la crittografia al contenuto
+## <a name="when-office-365-applies-content-marking-and-encryption"></a>Quando Office 365 applica la marcatura e la crittografia del contenuto
 
 Office 365 applica la marcatura del contenuto e la crittografia con un'etichetta di riservatezza diversa, a seconda dell'applicazione utilizzata.
 
@@ -152,7 +151,7 @@ Office 365 applica la marcatura del contenuto e la crittografia con un'etichetta
 | Outlook sul web, iOS e Android | Dopo che Exchange Online ha inviato il messaggio di posta elettronica | Dopo che Exchange Online ha inviato il messaggio di posta elettronica |
 |
 
-## <a name="more-resources"></a>Altre risorse
+## <a name="end-user-documentation"></a>Documentazione per gli utenti finali
 
 - [Applicare etichette di riservatezza ai documenti e ai messaggi di posta elettronica in Office](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 

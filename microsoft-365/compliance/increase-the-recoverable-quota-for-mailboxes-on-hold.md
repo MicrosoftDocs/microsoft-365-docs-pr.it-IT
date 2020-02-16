@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: "Abilitare la cassetta postale di archiviazione e attivare l'archiviazione automatica per aumentare le dimensioni della cartella elementi ripristinabili per una cassetta postale in Office 365. "
-ms.openlocfilehash: 4b93c8be01e9d84fb2c2bf93ed67b2ea1b18e812
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37d0e783f3b3a5157fe4a7a9b7d512b09c05d32c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597933"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072925"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentare la quota degli elementi ripristinabili per le cassette postali bloccate
 
@@ -96,15 +96,15 @@ Prima di creare il nuovo criterio di conservazione, determinare i tag di conserv
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>Creazione di un criterio di conservazione tramite l'interfaccia di amministrazione di Exchange
   
-1. Nell'interfaccia di amministrazione di Exchange, accedere a **criteri di conservazione**per la **gestione** \> della conformità](media/ITPro-EAC-AddIcon.gif)e quindi fare clic su **Aggiungi** ![icona Aggiungi.
+1. Nell'interfaccia di amministrazione di Exchange, accedere a **criteri di conservazione**per la **gestione** \> della conformità](../media/ITPro-EAC-AddIcon.gif)e quindi fare clic su **Aggiungi** ![icona Aggiungi.
     
 2. Nella pagina **nuovo criterio di conservazione** , in **nome**, digitare un nome che descriva lo scopo del criterio di conservazione. ad esempio, i **criteri di gestione record di messaggistica per le cassette postali**. 
     
-3. In **tag di conservazione**fare **** ![clic su Aggiungi](media/ITPro-EAC-AddIcon.gif)icona Aggiungi.
+3. In **tag di conservazione**fare **** ![clic su Aggiungi](../media/ITPro-EAC-AddIcon.gif)icona Aggiungi.
     
 4. Nell'elenco dei tag di conservazione, selezionare il RPT elementi ripristinabili creato nel passaggio 1, quindi fare clic su **Aggiungi**.
     
-    ![Selezionare il tag di conservazione Elementi recuperabili personalizzato](media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
+    ![Selezionare il tag di conservazione Elementi recuperabili personalizzato](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
 5. Selezionare i tag di conservazione aggiuntivi da aggiungere al criterio di conservazione. Ad esempio, potrebbe essere necessario aggiungere gli stessi tag inclusi nel criterio di gestione record di messaggistica predefinito.
     
@@ -114,7 +114,7 @@ Prima di creare il nuovo criterio di conservazione, determinare i tag di conserv
     
     Si noti che i tag di conservazione associati al criterio di conservazione vengono visualizzati nel riquadro dei dettagli.
     
-    ![I tag di conversazione collegati al criterio di conservazione vengono visualizzati nel riquadro dei dettagli](media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
+    ![I tag di conversazione collegati al criterio di conservazione vengono visualizzati nel riquadro dei dettagli](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
   
 ### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>Utilizzare PowerShell di Exchange Online per creare un criterio di conservazione
   
@@ -139,7 +139,7 @@ L'ultimo passaggio consiste nell'applicare i nuovi criteri di conservazione crea
   
 1. Andare a **Destinatari** \> **Cassette postali**.
     
-2. Nella visualizzazione elenco, selezionare la cassetta postale a cui si desidera applicare il criterio di conservazione, quindi fare **** ![clic su modifica](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icona modifica.
+2. Nella visualizzazione elenco, selezionare la cassetta postale a cui si desidera applicare il criterio di conservazione, quindi fare **** ![clic su modifica](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icona modifica.
     
 3. Nella pagina **cassetta postale utente** , fare clic su **funzionalità cassette postali**.
     
@@ -223,7 +223,7 @@ $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlace
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Dopo aver abilitato la cassetta postale di archiviazione di un utente, è consigliabile comunicare all'utente che altri elementi della cassetta postale (non solo gli elementi nella cartella elementi ripristinabili) potrebbero essere spostati nella cassetta postale di archiviazione. Ciò è dovuto al fatto che il criterio di gestione record di messaggistica predefinito assegnato alle cassette postali di Exchange Online contiene un tag di conservazione (denominati 2 anni di spostamento in Archivio) che sposta gli elementi nella cassetta postale di archiviazione due anni dopo la data in cui l'elemento è stato recapitato alla cassetta postale o creato dal utente. Per ulteriori informazioni, vedere [criteri di conservazione predefiniti in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     

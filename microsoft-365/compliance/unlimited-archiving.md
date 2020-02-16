@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Informazioni sull'espansione automatica dell'archiviazione in Office 365, che fornisce un archivio di archiviazione illimitato per le cassette postali di Exchange Online.
-ms.openlocfilehash: e7d004c7ef92fbcb331191432a70114f36dabc07
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 42318bf2ff102e6197800b2d6cba8b5c9132bcf9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601368"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069451"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Panoramica dell'archiviazione illimitata in Office 365
 
@@ -41,7 +41,7 @@ Come spiegato in precedenza, viene creato ulteriore spazio di archiviazione dell
 
 Ecco una breve panoramica del processo.
 
-![Panoramica del processo di archiviazione in espansione automatica](media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
+![Panoramica del processo di archiviazione in espansione automatica](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
 1. L'archiviazione è abilitata per una cassetta postale utente o una cassetta postale condivisa. Viene creata una cassetta postale di archiviazione con 100 GB di spazio di memorizzazione e la quota di avviso per la cassetta postale di archiviazione è impostata su 90 GB.
 
@@ -67,11 +67,11 @@ Nelle schermate seguenti viene visualizzato un elenco di cartelle prima e dopo c
 
  **Prima dell'aggiunta dell'archiviazione aggiuntiva**
 
-![Elenco delle cartelle della cassetta postale di archiviazione prima del provisioning dell'archivio con espansione automatica](media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
+![Elenco delle cartelle della cassetta postale di archiviazione prima del provisioning dell'archivio con espansione automatica](../media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
 
  **Dopo l'aggiunta dell'archiviazione aggiuntiva**
 
-![Elenco delle cartelle della cassetta postale di archiviazione dopo il provisioning dell'archivio con espansione automatica](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
+![Elenco delle cartelle della cassetta postale di archiviazione dopo il provisioning dell'archivio con espansione automatica](../media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
 
 > [!NOTE]
 > Come descritto in precedenza, Office 365 Sposta gli elementi in sottocartelle (e li denomina utilizzando la convenzione di denominazione descritta in precedenza) per facilitare la distribuzione del contenuto in un archivio ausiliario. Tuttavia, lo spostamento degli elementi nelle sottocartelle potrebbe non essere sempre il caso. A volte un'intera cartella può essere spostata in un archivio ausiliario. In questo caso, la cartella manterrà il nome originale.  Non sarà evidente nell'elenco delle cartelle in Outlook che la cartella è stata spostata in un archivio ausiliario.
@@ -82,7 +82,7 @@ Per accedere ai messaggi archiviati in un archivio con espansione automatica, è
 
 - Outlook 2016 o Outlook 2019 per Windows
 
-- Outlook sul Web
+- Outlook sul web
 
 - Outlook 2016 o Outlook 2019 per Mac
 
@@ -110,6 +110,6 @@ In questa sezione viene illustrata la funzionalità tra l'archiviazione in espan
 
 - **Servizio di importazione:** È possibile utilizzare il servizio di importazione di Office 365 per importare i file PST nell'archivio automatico espanso di un utente. È possibile importare fino a 100 GB di dati da file PST nella cassetta postale di archiviazione dell'utente.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Per ulteriori informazioni tecniche sull'archiviazione in espansione automatica, vedere [Office 365: auto-Expanding Archives FAQ](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/).

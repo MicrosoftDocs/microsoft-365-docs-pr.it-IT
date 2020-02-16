@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Informazioni sul catalogo delle soluzioni Microsoft 365, incluse le informazioni in esso contenute, su come ottenerlo e sui passaggi successivi.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e147ac6ac17a9fdd395aa0b1a00bd8f630cd10c1
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: 31ebd472a5ed33ab6046b9831e02c095d52721a2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41891979"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071352"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogo della soluzione Microsoft 365
 
@@ -30,17 +30,17 @@ Leggere questo articolo per acquisire familiarità con il nuovo catalogo della s
 
 Il catalogo della soluzione è organizzato in sezioni che contengono schede informazioni per ogni soluzione di conformità disponibile nell'abbonamento a Microsoft 365. Ogni sezione contiene schede per le soluzioni raggruppate per area di conformità.
 
-![Home page del catalogo delle soluzioni Microsoft 365](media/m365-solution-catalog-home.png)
+![Home page del catalogo delle soluzioni Microsoft 365](../media/m365-solution-catalog-home.png)
 
 Quando si seleziona **Visualizza** per una scheda della soluzione, vengono visualizzate informazioni dettagliate sulla soluzione di conformità e su come iniziare. Queste informazioni includono una panoramica, i requisiti di configurazione preliminare, le risorse di apprendimento, i controlli che consentono di aggiungere la scheda al riquadro di spostamento e un'opzione per condividere la soluzione come un messaggio di collegamento, di posta elettronica o di Microsoft teams.
 
-![Microsoft 365 Communication Compliance Solution](media/m365-solution-catalog-communication-compliance.png)
+![Microsoft 365 Communication Compliance Solution](../media/m365-solution-catalog-communication-compliance.png)
 
 ## <a name="information-protection--governance-section"></a>Sezione di governance & di protezione delle informazioni
 
 La sezione **Information protection & governance** illustra in breve come è possibile utilizzare le soluzioni di conformità di Microsoft 365 per proteggere e gestire i dati dell'organizzazione.
 
-![Sezione protezione e governance delle informazioni del catalogo delle soluzioni Microsoft 365](media/m365-solution-catalog-information-protection-governance.png)
+![Sezione protezione e governance delle informazioni del catalogo delle soluzioni Microsoft 365](../media/m365-solution-catalog-information-protection-governance.png)
 
 Di seguito vengono visualizzate le schede per le soluzioni seguenti:
 
@@ -53,7 +53,7 @@ Di seguito vengono visualizzate le schede per le soluzioni seguenti:
 
 La sezione **gestione dei rischi Insider** nella Home page Visualizza a colpo d'occhio il modo in cui l'organizzazione può identificare, analizzare e intervenire sui rischi interni prima che causino danni.
 
-![Sezione Microsoft 365 Solution Catalog Insider Risk Management](media/m365-solution-catalog-insider-risk-management.png)
+![Sezione Microsoft 365 Solution Catalog Insider Risk Management](../media/m365-solution-catalog-insider-risk-management.png)
 
 Di seguito vengono visualizzate le schede per le soluzioni seguenti:
 
@@ -64,7 +64,7 @@ Di seguito vengono visualizzate le schede per le soluzioni seguenti:
 
 La sezione **Discovery & Response** nella Home page Visualizza a colpo d'occhio il modo in cui l'organizzazione può trovare, analizzare e rispondere rapidamente ai problemi di conformità con i dati rilevanti.
 
-![Sezione Individuazione e risposta del catalogo delle soluzioni Microsoft 365](media/m365-solution-catalog-discovery-response.png)
+![Sezione Individuazione e risposta del catalogo delle soluzioni Microsoft 365](../media/m365-solution-catalog-discovery-response.png)
 
 Di seguito vengono visualizzate le schede per le soluzioni seguenti:
 

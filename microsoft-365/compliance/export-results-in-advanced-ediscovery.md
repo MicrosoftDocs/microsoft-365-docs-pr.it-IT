@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: "Informazioni su come definire le opzioni per l'esportazione dei risultati da Office 365 Advanced eDiscovery, inclusa la procedura per specificare i parametri per un batch di esportazione. "
-ms.openlocfilehash: ae25c0aac64a437f902ec5533453a05b8bdb5be6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9194bc9dc44587fb03798c2107c408d2afb2ae70
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588316"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074311"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Esportare i risultati in Office 365 Advanced eDiscovery
 
@@ -68,18 +68,18 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
     
     - Per esportare i risultati per i nuovi file aggiunti a un caso esistente, continuare con il batch corrente. Per creare una sessione nel batch, selezionare lo stesso numero di batch e fare clic su **Crea sessione di esportazione** è possibile utilizzare questa opzione per esportare gli stessi parametri del batch precedente, in modo incrementale. 
     
-    - Per esportare in un nuovo batch, fare **** ![clic su Aggiungi](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icona e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
+    - Per esportare in un nuovo batch, fare **** ![clic su Aggiungi](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icona e immettere un nuovo nome in **batch Name** (o accettare il valore predefinito) e una descrizione in **batch Description**. Fare clic su **OK**.
     
-    - Per modificare un nome o una descrizione in batch, selezionare il nome in **batch di esportazione**, fare](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic su **modifica** ![icona modifica e quindi modificare i campi.
+    - Per modificare un nome o una descrizione in batch, selezionare il nome in **batch di esportazione**, fare](../media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic su **modifica** ![icona modifica e quindi modificare i campi.
     
       > [!NOTE]
       > Dopo aver eseguito le sessioni per un batch di esportazione, non è possibile eliminarle. Inoltre, solo alcuni parametri possono essere modificati dopo l'esecuzione della prima sessione. 
   
-    - Per creare un batch di esportazione duplicato, scegliere **Duplica esportazione batch** ![creare un'icona](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) del batch di esportazione duplicata e immettere un nome e una descrizione per il batch duplicato nel pannello. 
+    - Per creare un batch di esportazione duplicato, scegliere **Duplica esportazione batch** ![creare un'icona](../media/3f6d5f59-e842-4946-a493-473528af0119.jpg) del batch di esportazione duplicata e immettere un nome e una descrizione per il batch duplicato nel pannello. 
     
-    - Per eliminare un batch di esportazione, scegliere **Delete** ![Delete an export batch](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)Icon.
+    - Per eliminare un batch di esportazione, scegliere **Delete** ![Delete an export batch](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)Icon.
     
-    - Per visualizzare la cronologia di un batch, fare clic su cronologia **batch** ![Visualizza](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)cronologia.
+    - Per visualizzare la cronologia di un batch, fare clic su cronologia **batch** ![Visualizza](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)cronologia.
     
 2. In **popolamento**selezionare **Includi solo i file sopra il Punteggio di rilevanza** e/o il **batch di esportazione** se si desidera ottimizzare le impostazioni per il batch di esportazione. 
     
@@ -111,7 +111,7 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
   
 6. Fare clic su **modifica** per impostare le impostazioni del campo ' per la revisione '. 
     
-    ![Configurare le impostazioni dei campi di revisione per un batch di esportazione](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
+    ![Configurare le impostazioni dei campi di revisione per un batch di esportazione](../media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
   
    - In **Impostazioni campo per la revisione**, in selezionare l'elenco a discesa dello **scenario** , selezionare lo scenario e l'ambito della revisione. Le impostazioni vengono visualizzate in base alla selezione.
     
@@ -159,13 +159,13 @@ Lo strumento di esportazione di eDiscovery viene utilizzato per esportare i risu
     
 9. Nella finestra **Download file** fare clic su **copia negli Appunti** per copiare la chiave di esportazione. 
     
-    ![Scaricare file](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
+    ![Scaricare file](../media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
   
 10. Fare clic su **Chiudi**. 
     
     Lo strumento di esportazione di eDiscovery è stato avviato.
     
-    ![Strumento di esportazione di eDiscovery](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
+    ![Strumento di esportazione di eDiscovery](../media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
 11. Nello **strumento di esportazione di eDiscovery**:
     

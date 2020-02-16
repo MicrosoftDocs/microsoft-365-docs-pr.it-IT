@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Alla tua organizzazione potrebbe essere richiesto di conservare i documenti per un periodo di tempo a causa di requisiti di conformità, legali o di altro tipo. Tuttavia, se l'organizzazione conserva i documenti più del necessario, si crea un rischio legale non necessario. Con un criterio di eliminazione dei documenti, è possibile ridurre in modo proattivo i rischi eliminando i documenti in un sito dopo un determinato periodo di tempo, ad esempio, è possibile eliminare i documenti nei siti di OneDrive for business degli utenti cinque anni dopo la creazione dei documenti.
-ms.openlocfilehash: ac2bdfcd262a673af1078b2ed0a274fcd0b9d3b9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60bf7808daad3eaead99ef64ea24be0bcfd9be0e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595211"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075213"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Panoramica dei criteri di eliminazione dei documenti
 
@@ -40,7 +40,7 @@ I criteri di eliminazione dei documenti sono potenti ma flessibili, ad esempio, 
     
 È possibile creare e gestire i criteri di eliminazione dei documenti tramite il centro criteri di eliminazione del documento. In alternativa, è possibile creare il centro criteri manualmente [creando la raccolta siti](https://go.microsoft.com/fwlink/p/?LinkID=404342) e scegliendo **centro criteri di conformità** nella scheda **organizzazione** . Ogni tenant può disporre di un solo centro criteri di eliminazione dei documenti. 
   
-![Home page del Centro criteri per l'eliminazione dei documenti](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![Home page del Centro criteri per l'eliminazione dei documenti](../media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="when-to-use-document-deletion-policies"></a>Quando utilizzare i criteri di eliminazione dei documenti
 
@@ -56,7 +56,7 @@ Ogni tipo di criterio è adatto per un tipo specifico di dati o di siti. Ad esem
   
 I criteri di eliminazione dei documenti non sostituiscono i criteri di gestione dei record o di gestione delle informazioni, che funzionano meglio con i tipi di contenuto strutturati. Invece, devi usare criteri di eliminazione dei documenti quando devi gestire ampiamente l'eliminazione automatica di dati non strutturati come i siti di OneDrive for Business e del team.
   
-![Diagramma con opzione di conservazione per contenuto siti](media/IP-Retention-policies-for-site-content.png)
+![Diagramma con opzione di conservazione per contenuto siti](../media/IP-Retention-policies-for-site-content.png)
   
 Se applichi un criterio di eliminazione dei documenti a un sito che usa già criteri di tipi di contenuto o criteri per la gestione delle informazioni per un elenco o una libreria, tali criteri vengono ignorati e viene applicato il criterio di eliminazione dei documenti. Ciò significa che devi fare in modo che un sito usi solo i criteri destinati a contenuti strutturati o non strutturati, non entrambi. Per ulteriori informazioni sul modo in cui i criteri di eliminazione di documenti sovrascrivono altri criteri, vedi [Apply or remove a document deletion policy for a site](apply-or-remove-a-document-deletion-policy-for-a-site.md).
   
@@ -74,13 +74,13 @@ Un criterio di eliminazione dei documenti contiene una o più regole che specifi
     
 Se un criterio contiene più di una regola, i proprietari del sito possono selezionare la regola più adatta al proprio contenuto.
   
-![Pagina Nuova regola di eliminazione](media/IP-New-deletion-rule.png)
+![Pagina Nuova regola di eliminazione](../media/IP-New-deletion-rule.png)
   
 ## <a name="policies-and-assignments"></a>Criteri e assegnazioni
 
 Dopo aver creato un criterio di eliminazione dei documenti, è possibile assegnarlo a un modello di raccolta siti, ad esempio, è possibile assegnare un criterio al modello di OneDrive for business in modo che includa il sito di OneDrive di ogni utente. Quando si assegna un criterio a un modello di raccolta siti, questo si applica a tutte le raccolte siti già create da tale modello, oltre alle raccolte siti create da tale modello in futuro.
   
-![Pagina di scelta di un modello con opzione OneDrive](media/IP-Choose-a-template.png)
+![Pagina di scelta di un modello con opzione OneDrive](../media/IP-Choose-a-template.png)
   
 Puoi anche assegnare il criterio a una raccolta di siti specifica, sostituendo tutti i criteri che potrebbero essere stati assegnati al modello di tale raccolta di siti. Ad esempio, potresti assegnare criteri al modello Siti del team, ma poi sostituirli applicando un diverso set di criteri a una raccolta di siti specifica creata da tale modello.
   
@@ -106,7 +106,7 @@ La relazione di base è la seguente:
   
 Una raccolta di siti o un modello di raccolta di siti può contenere uno o più criteri assegnati e ognuno di questi criteri può avere una o più regole. Tuttavia, può essere presente un solo criterio attivo per sito e può essere presente una sola regola di eliminazione attiva in qualsiasi momento per le raccolte all'interno del sito.
   
-![Diagramma con relazione tra criteri](media/IP-Two-policies-four-rules.png)
+![Diagramma con relazione tra criteri](../media/IP-Two-policies-four-rules.png)
   
 ## <a name="document-deletion-policies-are-inherited"></a>I criteri di eliminazione dei documenti vengono ereditati
 

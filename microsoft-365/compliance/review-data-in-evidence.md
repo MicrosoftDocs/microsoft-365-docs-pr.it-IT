@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 18d67983d4e5e934e606944c1502dd76331812a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dffbc68714470e65557c58ded710ae53d64a3868
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597633"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070083"
 ---
 # <a name="review-the-data-in-evidence"></a>Esaminare i dati nelle prove
 
@@ -48,14 +48,14 @@ In questa visualizzazione vengono visualizzate varie proprietà dei metadati ass
 
 Di seguito è riportato un esempio dei metadati di file per un documento. Per ulteriori informazioni sui campi dei metadati, vedere [documento dei campi di metadati nelle indagini sui dati (Preview)](document-metadata-fields.md).
 
-![Pannello metadati file](media/Reviewimage2.png)
+![Pannello metadati file](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Visualizzazione nativa
 
 Il Visualizzatore nativo Visualizza la visualizzazione più accurata di un documento nel formato nativo. La visualizzazione nativa è supportata per centinaia di tipi di file ed è destinata a visualizzare i documenti in una delle più vere esperienze native possibili. Per i file di Microsoft Office, il Visualizzatore nativo utilizza la versione Web delle app di Office. In questo modo è possibile visualizzare il contenuto, ad esempio i commenti in documenti di Office, formule e righe/colonne nascoste in Excel, e la visualizzazione note in PowerPoint.
 
 ![Visualizzazione nativa
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Visualizzazione testo
 
@@ -70,12 +70,12 @@ Il Visualizzatore di testo consente di visualizzare il testo estratto di un file
 **Esempio di contatore di riga e di evidenziazione dei risultati della ricerca in testo e barra di scorrimento**
 
 ![Visualizzazione testo
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 **Esempio di visualizzazione diff**
 
 ![Visualizzazione diff
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Visualizzazione annotazioni
 
@@ -101,7 +101,7 @@ La visualizzazione annotazioni fornisce anche la funzionalità di spostamento se
 
 **Esempio di visualizzazione annotazioni**
 
-![Visualizzazione annotazioni](media/Reviewimage1.png)
+![Visualizzazione annotazioni](../media/Reviewimage1.png)
 
 > [!NOTE]
 > Le annotazioni vengono applicate a una copia del documento che è stato aggiunto al set di evidenze. I documenti originali del servizio Live non vengono annotati.

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: cde55f9dd3a1a9aacc48ba816cd0ef00472dad56
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 5636e2e6186107bee3a0116d203910bc7b766990
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661742"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069028"
 ---
 # <a name="view-documents-in-a-review-set"></a>Visualizzare i documenti in un insieme da rivedere
 
@@ -36,14 +36,14 @@ Advanced eDiscovery Visualizza il contenuto tramite diversi visualizzatori ognun
 Questo pannello può essere attivato/disattivato per visualizzare i vari metadati associati al documento. Anche se la griglia dei risultati di ricerca può essere personalizzata per la visualizzazione di metadati specifici, è possibile che lo scorrimento orizzontale possa essere difficoltoso durante la revisione dei dati. Il pannello metadati file consente a un utente di alternare una visualizzazione all'interno del visualizzatore.
 
 ![Pannello metadati file
-](media/Reviewimage2.png)
+](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Visualizzazione nativa
 
 Il Visualizzatore nativo Visualizza la visualizzazione più ricca di un documento. Supporta centinaia di tipi di file e ha lo scopo di visualizzare l'esperienza più vera e nativa possibile. Per i file di Microsoft Office, il visualizzatore utilizza la versione Web delle app di Office per visualizzare il contenuto, ad esempio commenti, formule di Excel, righe/colonne nascoste e note di PowerPoint.
 
 ![Visualizzazione nativa
-](media/Reviewimage3.png)
+](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Visualizzazione testo
 
@@ -56,10 +56,10 @@ Il Visualizzatore di testo consente di visualizzare il testo estratto di un file
   - La visualizzazione diff fornisce una visualizzazione di confronto che evidenzia le differenze testuali quando si visualizza vicino a documenti duplicati
 
 ![Visualizzazione testo
-](media/Reviewimage4.png)
+](../media/Reviewimage4.png)
 
 ![Visualizzazione diff
-](media/Reviewimage5.png)
+](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Visualizzazione annotazioni
 
@@ -86,7 +86,7 @@ La visualizzazione annotazioni fornisce caratteristiche che consentono agli uten
   - Search: l'utente può eseguire una ricerca in un documento e passare ai vari successi all'interno del documento
     
     ![Visualizzazione annotazioni
-    ](media/Reviewimage1.png)
+    ](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>Visualizzazione Dashboard 
 La visualizzazione dashboard consente di visualizzare e riepilogare i dati nella griglia dei risultati di ricerca. In questa visualizzazione, è possibile creare widget personalizzati per rendere intuitiva e semplice l'analisi e la creazione di report nel set di recensioni. Dopo aver creato i widget, è possibile interagire con essi per ottenere i conteggi degli elementi o creare una ricerca. 
