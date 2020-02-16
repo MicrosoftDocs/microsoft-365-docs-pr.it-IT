@@ -12,27 +12,27 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 964756a1fadba89f644a0d04c1d35d2945b78c6c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9a53759eafbedc6b48d2a6266b4b52777112941d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602873"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085565"
 ---
-# <a name="step-4-monitor-device-health-and-compliance"></a><span data-ttu-id="f02e8-104">Passaggio 4: monitorare l'integrità e la conformità del dispositivo</span><span class="sxs-lookup"><span data-stu-id="f02e8-104">Step 4: Monitor device health and compliance</span></span>
+# <a name="step-4-monitor-device-health-and-compliance"></a><span data-ttu-id="e3090-104">Passaggio 4: monitorare l'integrità e la conformità del dispositivo</span><span class="sxs-lookup"><span data-stu-id="e3090-104">Step 4: Monitor device health and compliance</span></span>
 
-![Fase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Fase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
-<span data-ttu-id="f02e8-106">Windows Analytics utilizza i dati di diagnostica per fornire informazioni dettagliate utili per ottenere approfondimenti sull'efficienza operativa e l'integrità dei dispositivi Windows 10 nell'ambiente in uso.</span><span class="sxs-lookup"><span data-stu-id="f02e8-106">Windows Analytics uses diagnostic data to provide rich, actionable information to help you gain deep insights into the operational efficiency and health of Windows 10 devices in your environment.</span></span>
+<span data-ttu-id="e3090-106">Windows Analytics utilizza i dati di diagnostica per fornire informazioni dettagliate utili per ottenere approfondimenti sull'efficienza operativa e l'integrità dei dispositivi Windows 10 nell'ambiente in uso.</span><span class="sxs-lookup"><span data-stu-id="e3090-106">Windows Analytics uses diagnostic data to provide rich, actionable information to help you gain deep insights into the operational efficiency and health of Windows 10 devices in your environment.</span></span>
 
-<span data-ttu-id="f02e8-107">La funzionalità di integrità del dispositivo di Windows Analytics fornisce informazioni proattive utili per individuare e correggere i problemi che interessano gli utenti finali.</span><span class="sxs-lookup"><span data-stu-id="f02e8-107">The Device Health capability of Windows Analytics provides proactive insights to help detect and remediate issues affecting end users.</span></span> <span data-ttu-id="f02e8-108">Questo nuovo servizio utilizza i dati di diagnostica per fornire informazioni di questo tipo senza requisiti di infrastruttura aggiuntivi.</span><span class="sxs-lookup"><span data-stu-id="f02e8-108">This new service uses diagnostic data to provide such insights without additional infrastructure requirements.</span></span> <span data-ttu-id="f02e8-109">La correzione proattiva dei problemi degli utenti finali consente di ridurre i costi di supporto e migliorare l'efficienza.</span><span class="sxs-lookup"><span data-stu-id="f02e8-109">Proactively remediating end-user issues enables you to reduce support costs and improve efficiency.</span></span> <span data-ttu-id="f02e8-110">Per ulteriori informazioni, vedere le funzionalità e il valore di questo nuovo servizio.</span><span class="sxs-lookup"><span data-stu-id="f02e8-110">Look for additional features to be released soon, which will enhance the capabilities and value of this new service.</span></span>
+<span data-ttu-id="e3090-107">La funzionalità di integrità del dispositivo di Windows Analytics fornisce informazioni proattive utili per individuare e correggere i problemi che interessano gli utenti finali.</span><span class="sxs-lookup"><span data-stu-id="e3090-107">The Device Health capability of Windows Analytics provides proactive insights to help detect and remediate issues affecting end users.</span></span> <span data-ttu-id="e3090-108">Questo nuovo servizio utilizza i dati di diagnostica per fornire informazioni di questo tipo senza requisiti di infrastruttura aggiuntivi.</span><span class="sxs-lookup"><span data-stu-id="e3090-108">This new service uses diagnostic data to provide such insights without additional infrastructure requirements.</span></span> <span data-ttu-id="e3090-109">La correzione proattiva dei problemi degli utenti finali consente di ridurre i costi di supporto e migliorare l'efficienza.</span><span class="sxs-lookup"><span data-stu-id="e3090-109">Proactively remediating end-user issues enables you to reduce support costs and improve efficiency.</span></span> <span data-ttu-id="e3090-110">Per ulteriori informazioni, vedere le funzionalità e il valore di questo nuovo servizio.</span><span class="sxs-lookup"><span data-stu-id="e3090-110">Look for additional features to be released soon, which will enhance the capabilities and value of this new service.</span></span>
 
-<span data-ttu-id="f02e8-111">Vedere [monitorare l'integrità dei dispositivi con integrità del dispositivo](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) per ulteriori informazioni, per iniziare e utilizzare l'integrità del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f02e8-111">See [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) to learn more, get started, and use Device Health.</span></span>
+<span data-ttu-id="e3090-111">Vedere [monitorare l'integrità dei dispositivi con integrità del dispositivo](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) per ulteriori informazioni, per iniziare e utilizzare l'integrità del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="e3090-111">See [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) to learn more, get started, and use Device Health.</span></span>
 
-<span data-ttu-id="f02e8-112">Come checkpoint provvisorio, vedere i [criteri di completamento](windows10-exit-criteria.md#crit-windows10-step4) relativi a questo passaggio.</span><span class="sxs-lookup"><span data-stu-id="f02e8-112">As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteria.md#crit-windows10-step4) corresponding to this step.</span></span>
+<span data-ttu-id="e3090-112">Come checkpoint provvisorio, vedere i [criteri di completamento](windows10-exit-criteria.md#crit-windows10-step4) relativi a questo passaggio.</span><span class="sxs-lookup"><span data-stu-id="e3090-112">As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteria.md#crit-windows10-step4) corresponding to this step.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="f02e8-113">Passaggio successivo</span><span class="sxs-lookup"><span data-stu-id="f02e8-113">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="e3090-113">Passaggio successivo</span><span class="sxs-lookup"><span data-stu-id="e3090-113">Next step</span></span>
 
 |||
 |:-------|:-----|
-|![Passaggio 5](./media/stepnumbers/Step5.png)| [<span data-ttu-id="f02e8-115">Distribuire le funzionalità di sicurezza di Windows 10 Enterprise</span><span class="sxs-lookup"><span data-stu-id="f02e8-115">Deploy Windows 10 Enterprise security features</span></span>](windows10-enable-security-features.md) |
+|![Passaggio 5](../media/stepnumbers/Step5.png)| [<span data-ttu-id="e3090-115">Distribuire le funzionalità di sicurezza di Windows 10 Enterprise</span><span class="sxs-lookup"><span data-stu-id="e3090-115">Deploy Windows 10 Enterprise security features</span></span>](windows10-enable-security-features.md) |
