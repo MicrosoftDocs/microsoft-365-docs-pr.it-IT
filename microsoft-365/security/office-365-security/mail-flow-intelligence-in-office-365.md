@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Gli amministratori possono ottenere informazioni sui codici di errore associati al recapito dei messaggi utilizzando i connettori di Office 365 (noto anche come Intelligence del flusso di posta).
-ms.openlocfilehash: ea4fb56f0e303d243af02edf01e5d85b957a6368
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 849493cefecb3344eaf7b6db73be3930138c236c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599053"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088655"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Intelligence del flusso di posta in Office 365
 
@@ -72,9 +72,9 @@ In genere, questo errore indica che Office 365 ha riscontrato un errore di conne
 
     2. Selezionare il connettore con il **** valore da **Office 365** e il valore **per** il **server di posta elettronica dell'organizzazione** ed eseguire una delle operazioni seguenti:
 
-       - Eliminare il connettore facendo clic su **Elimina** ![icona Rimuovi](../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Eliminare il connettore facendo clic su **Elimina** ![icona Rimuovi](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Disabilitare il connettore facendo clic su **modifica** ![icona](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) modifica e deselezionando **attiva**.
+       - Disabilitare il connettore facendo clic su **modifica** ![icona](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) modifica e deselezionando **attiva**.
 
   - Modificare il dominio accettato in Office 365 associato all'ambiente di posta elettronica locale dall' **inoltro interno** a **autorevole**. Per istruzioni, vedere [Manage Accepted Domains in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 

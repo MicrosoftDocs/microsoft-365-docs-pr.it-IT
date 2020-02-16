@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Gli amministratori possono ottenere informazioni sul widget del flusso di posta in uscita e in ingresso nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
-ms.openlocfilehash: f4781777d90f2156b35dd0bfeab42084ef99d1a1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c86db8e33ff3ee1dc4d9d126239465b3c84bde5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598843"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088437"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flusso di posta in ingresso e in uscita
 
 Il widget **flusso di posta in uscita e in ingresso** combina le informazioni del **rapporto del connettore** e del precedente rapporto di **Panoramica TLS** in un'unica posizione.
 
-![Il rapporto flusso di posta in uscita e in ingresso nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità](../media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+![Il rapporto flusso di posta in uscita e in ingresso nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità](../../media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
 
 Le informazioni contenute nel widget sono correlate ai connettori e alla protezione dei messaggi TLS in Office 365. Per ulteriori informazioni, vedere gli argomenti riportati di seguito:
 
@@ -35,7 +35,7 @@ Le informazioni contenute nel widget sono correlate ai connettori e alla protezi
 
 Il widget **flusso di posta in uscita e in ingresso** Visualizza la crittografia TLS utilizzata per la connessione quando i messaggi vengono recapitati da e verso l'organizzazione di Office 365. Le connessioni stabilite con altri servizi di posta elettronica vengono crittografate tramite TLS quando TLS viene offerto da entrambi i lati. Il widget offre un'istantanea dell'ultima settimana di flusso di posta. Quando si fa clic su **Visualizza dettagli**, il riquadro a comparsa del **messaggio protetto in transito (tramite TLS)** Mostra la protezione TLS per i messaggi in entrata e in uscita dall'organizzazione.
 
-![Riquadro a comparsa dei messaggi protetti in transito (tramite TLS) nel centro sicurezza & Compliance](../media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
+![Riquadro a comparsa dei messaggi protetti in transito (tramite TLS) nel centro sicurezza & Compliance](../../media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
 
 Attualmente, TLS 1,2 è la versione più sicura di TLS offerta da Office 365. Spesso, è necessario conoscere la crittografia TLS utilizzata per i controlli di conformità. Probabilmente non si ha una relazione diretta con la maggior parte dei server di posta elettronica di origine e di destinazione (non è proprietaria e non è presente né Microsoft), pertanto non sono disponibili molte opzioni per migliorare la crittografia TLS utilizzata da tali server.
 

@@ -16,12 +16,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come le funzionalità di analisi e risposta alle minacce di Office 365 consentono all'organizzazione di rilevare intrusioni e minacce e di attenuare e recuperare rapidamente le minacce.
-ms.openlocfilehash: 2f709c555974444b8f2a09d87705043d65240090
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6734903198fa29cdd7ac4295feb6313479ecab50
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599103"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088675"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantenere la propria organizzazione sicura con le funzionalità di analisi e risposta alle minacce di Office 365
 
@@ -35,7 +35,7 @@ Le funzionalità di [ricerca e risposta alle minacce di office 365](office-365-t
 
 Explorer consente inoltre agli amministratori di esplorare le relazioni tra utenti e posta elettronica. Sai di una mail particolare che è stata pessima? Cercarlo per vedere cosa gli utenti hanno ricevuto la posta, quindi seguire la serie di eventi e vedere cosa hanno fatto gli utenti a sua volta.
 
-![Schermata di Threat Explorer in Office 365, codice a colori per la famiglia di malware](../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
+![Schermata di Threat Explorer in Office 365, codice a colori per la famiglia di malware](../../media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
 
 ## <a name="quickly-mitigate-and-recover-from-threats"></a>Attenuazione e ripristino rapidamente dalle minacce
 
@@ -43,7 +43,7 @@ Dopo che gli amministratori della sicurezza hanno individuato un evento sospetto
 
  **Update:** È stata aggiunta la possibilità di eliminare i messaggi di posta elettronica (soft o hard Delete) direttamente dal Framework Incident. In precedenza gli amministratori potevano solo spostare i messaggi nella cartella posta indesiderata di un utente, in cui gli utenti potevano recuperare l'elemento. Con le funzionalità di eliminazione appena rilasciate, è ora possibile verificare che un messaggio dannoso o indesiderato sia stato rimosso definitivamente.
 
-![Schermata del messaggio di posta elettronica della lista di correzione degli incidenti](../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
+![Schermata del messaggio di posta elettronica della lista di correzione degli incidenti](../../media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
 
 ## <a name="leverage-the-threat-telemetry-of-microsoft"></a>Sfruttare la telemetria di minaccia di Microsoft
 

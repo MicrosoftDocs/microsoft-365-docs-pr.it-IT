@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: c9b22ef66fb1db762168812385420823788b4bfc
-ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
+ms.openlocfilehash: ce0919a1190da06279081089810221e55a8f59b7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41678929"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088624"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -66,11 +66,11 @@ Il valore predefinito è **2 giorni**, ma è possibile specificare intervalli di
 
 - Per impostazione predefinita, è possibile selezionare l'intervallo di tempo in visualizzazione **Slider** utilizzando una linea temporale. È possibile selezionare solo le impostazioni giorno o ora visualizzate. Se si tenta di selezionare un valore tra i valori interattivi, la bolla iniziale/finale verrà agganciata all'impostazione visualizzata più vicina.
 
-  ![Intervallo di tempo del dispositivo di scorrimento in una nuova traccia dei messaggi nel centro sicurezza & conformità](../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+  ![Intervallo di tempo del dispositivo di scorrimento in una nuova traccia dei messaggi nel centro sicurezza & conformità](../../media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
   Tuttavia, è anche possibile passare alla visualizzazione **personalizzata** in cui è possibile specificare i valori di data e ora di **inizio** e di **fine** (incluse le ore) ed è anche possibile selezionare il **fuso orario** per l'intervallo data/ora. Si noti che l'impostazione del **fuso orario** si applica sia agli input di query sia ai risultati delle query.
 
-  ![Un intervallo di tempo personalizzato in una nuova traccia dei messaggi nel centro sicurezza & Compliance](../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+  ![Un intervallo di tempo personalizzato in una nuova traccia dei messaggi nel centro sicurezza & Compliance](../../media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
   Per 10 o meno giorni, i risultati sono disponibili istantaneamente come report **riepilogativo** . Se si specifica un intervallo di tempo pari leggermente superiore a 10 giorni, i risultati verranno posticipati perché sono disponibili solo come file CSV scaricabile ( **Riepilogo avanzato** o rapporti **estesi** ).
 
@@ -146,7 +146,7 @@ I diversi tipi di report restituiscono livelli di informazioni diversi. Le infor
 
 Dopo aver eseguito la traccia dei messaggi, i risultati verranno elencati, ordinati in base alla data/ora decrescente (la più recente è la prima).
 
-![Risultati del rapporto riepilogativo per la traccia dei messaggi nel centro sicurezza & Compliance](../media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
+![Risultati del rapporto riepilogativo per la traccia dei messaggi nel centro sicurezza & Compliance](../../media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
 
 Il rapporto riepilogativo contiene le informazioni seguenti:
 
@@ -172,7 +172,7 @@ Per impostazione predefinita, i primi risultati di 250 sono caricati e prontamen
 
 I record dei messaggi correlati sono record che condividono lo stesso ID messaggio. Tenere presente che anche un singolo messaggio inviato tra due persone può generare più record. Il numero di record aumenta quando il messaggio viene influenzato dall'espansione del gruppo di distribuzione, dall'inoltro, dalle regole del flusso di posta (note anche come regole di trasporto) e così via.
 
-Dopo aver selezionato la casella di controllo di una riga, è possibile trovare i record correlati per il messaggio facendo clic sul pulsante **trova correlato** visualizzato oppure selezionando **altre opzioni** ![ulteriori](../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **record correlati per il messaggio**.
+Dopo aver selezionato la casella di controllo di una riga, è possibile trovare i record correlati per il messaggio facendo clic sul pulsante **trova correlato** visualizzato oppure selezionando **altre opzioni** ![ulteriori](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **record correlati per il messaggio**.
 
 Per ulteriori informazioni sull'ID del messaggio, vedere la sezione relativa all'ID del messaggio descritta in precedenza in questo argomento.
 
@@ -182,9 +182,9 @@ Nell'output del rapporto riepilogativo, è possibile visualizzare i dettagli rel
 
 - Selezionare la riga (fare clic in un punto qualsiasi della riga tranne la casella di controllo).
 
-- Selezionare la casella di controllo della riga e fare clic su](../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **altre opzioni** ![per **visualizzare i dettagli dei messaggi**.
+- Selezionare la casella di controllo della riga e fare clic su](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **altre opzioni** ![per **visualizzare i dettagli dei messaggi**.
 
-   ![Dettagli dopo aver fatto doppio clic su una riga del rapporto riepilogativo risultati traccia messaggio nel centro sicurezza & conformità](../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
+   ![Dettagli dopo aver fatto doppio clic su una riga del rapporto riepilogativo risultati traccia messaggio nel centro sicurezza & conformità](../../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
 I dettagli della traccia dei messaggi contengono le informazioni aggiuntive seguenti che non sono presenti nel rapporto riepilogativo:
 

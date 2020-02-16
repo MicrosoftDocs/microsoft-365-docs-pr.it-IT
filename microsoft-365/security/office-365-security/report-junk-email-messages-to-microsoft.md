@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: "Il componente aggiuntivo per la segnalazione della posta indesiderata di Microsoft per Microsoft Office Outlook offre all'utente diversi modi per segnalare messaggi indesiderati:"
-ms.openlocfilehash: a2a427f13c329c4c72f718bb19ecc0dce06f8f91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f8d07a2499fa3c8690393aa444e018b83c632b1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598573"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088253"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Segnalazione di messaggi di posta elettronica indesiderata a Microsoft
 
@@ -47,10 +47,10 @@ Il componente aggiuntivo per la segnalazione della posta indesiderata consente d
 1. Fare clic con il pulsante destro del mouse sul messaggio o sui messaggi da segnalare come indesiderati.
 
 2. Selezionare **Indesiderato** e fare clic sul pulsante **Segnala messaggi indesiderati**.
-    ![Segnalazione dei messaggi di posta indesiderata dalla cartella Posta in arrivo](../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
+    ![Segnalazione dei messaggi di posta indesiderata dalla cartella Posta in arrivo](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
 
 3. Viene aperta la finestra di dialogo **Componente aggiuntivo per la segnalazione della posta indesiderata Microsoft**. Per confermare la scelta di segnalare come indesiderati i messaggi selezionati, fare clic su **Sì**.
-    ![Conferma della segnalazione come posta indesiderata](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![Conferma della segnalazione come posta indesiderata](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > Se non si desidera ricevere questo messaggio di conferma quando si inviano messaggi indesiderati, selezionare **Non visualizzare più questo messaggio**.
@@ -59,10 +59,10 @@ I messaggi selezionati saranno inviati a Microsoft per l'analisi e spostati nell
 
 ### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>Per segnalare un messaggio di posta indesiderata dall'interno di un messaggio aperto
 
-1. Da un messaggio aperto, fare clic sul pulsante **Segnala messaggi indesiderati** sulla barra multifunzione del messaggio. Ad esempio **, fare clic** \> **su** ![report di posta indesiderata report di posta indesiderata da un messaggio](../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
+1. Da un messaggio aperto, fare clic sul pulsante **Segnala messaggi indesiderati** sulla barra multifunzione del messaggio. Ad esempio **, fare clic** \> **su** ![report di posta indesiderata report di posta indesiderata da un messaggio](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
 
 2. Viene aperta la finestra di dialogo **Componente aggiuntivo per la segnalazione della posta indesiderata Microsoft**. Per confermare la scelta di segnalare come indesiderato il messaggio selezionato, fare clic su **Sì**.
-    ![Conferma della segnalazione come posta indesiderata](../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+    ![Conferma della segnalazione come posta indesiderata](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
 
     > [!NOTE]
     > Se non si desidera ricevere questo messaggio di conferma quando si inviano messaggi indesiderati, selezionare **Non visualizzare più questo messaggio**.

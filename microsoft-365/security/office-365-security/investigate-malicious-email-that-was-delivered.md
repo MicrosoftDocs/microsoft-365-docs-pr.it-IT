@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: 2f61860178de78302d6fb94309ff01127ac5ce33
-ms.sourcegitcommit: 0f09f54f43924d1fcd2fdcfcbf04c53519b92a7b
+ms.openlocfilehash: 5fe9e06a582d72b46c4f90f13aee283050a06253
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784731"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088717"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Esaminare e correggere i messaggi di posta elettronica dannosi recapitati in Office 365
 
@@ -61,13 +61,13 @@ Threat Explorer è un potente report che può servire a molteplici scopi, ad ese
 
 2. Nella barra di avvio veloce di spostamento a sinistra, scegliere **gestione** \> **** minacce.
 
-    ![Explorer con campi azione di recapito e posizione di recapito.](../media/ThreatExFields.PNG)
+    ![Explorer con campi azione di recapito e posizione di recapito.](../../media/ThreatExFields.PNG)
 
     <!-- You may notice the new **Special actions** column. This feature is aimed at telling admins the outcome of processing an email. The **Special actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.-->
 
 3. **Visualizzazioni in Esplora minacce**: scegliere **tutti i messaggi di posta elettronica**dal menu **Visualizza** .
 
-    ![Menu Visualizza Esplora minacce e posta elettronica-malware, phishing, invii e tutte le opzioni di posta elettronica, anche contenuto-malware.](../media/tp-InvestigateMalEmail-viewmenu.png)
+    ![Menu Visualizza Esplora minacce e posta elettronica-malware, phishing, invii e tutte le opzioni di posta elettronica, anche contenuto-malware.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
     La visualizzazione *malware* è attualmente l'impostazione predefinita e acquisisce i messaggi di posta elettronica in cui viene rilevata una minaccia di malware. La visualizzazione *phishing* funziona nello stesso modo, per phishing.
 
@@ -86,11 +86,11 @@ Threat Explorer è un potente report che può servire a molteplici scopi, ad ese
 
    Il filtro avanzato è una grande aggiunta alle funzionalità di ricerca. **Non** è stato introdotto un filtro booleano nel dominio del *destinatario*, del *mittente* e del *mittente* per consentire agli amministratori di eseguire indagini escludendo i valori. Questa opzione viene visualizzata sotto il parametro Selection *contiene None of*. **Non** consente agli amministratori di escludere le cassette postali di avviso, le cassette postali di risposta predefinite dalle proprie indagini ed è utile per i casi in cui gli amministratori cercano un oggetto specifico (Subject = "attention") in cui il destinatario può essere impostato su *None di defaultMail@contoso.com*. Si tratta di una ricerca di valore esatta.
 
-   ![I destinatari-' contiene nessuno ' del filtro avanzato.](../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   ![I destinatari-' contiene nessuno ' del filtro avanzato.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
    Il *filtraggio per ore* consentirà di eseguire il drill-down rapido del team di sicurezza dell'organizzazione. La durata di tempo consentita più breve è di 30 minuti. Se è possibile restringere l'azione sospetta tramite la tempistica (ad esempio, è successo 3 ore fa), questo limiterà il contesto e consentirà di individuare il problema.
 
-  ![L'opzione filtro per ore per limitare la quantità di team di sicurezza dei dati deve essere elaborata e la cui durata più breve è di 30 minuti.](../media/tp-InvestigateMalEmail-FilterbyHours.png)
+  ![L'opzione filtro per ore per limitare la quantità di team di sicurezza dei dati deve essere elaborata e la cui durata più breve è di 30 minuti.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
 6. **Campi in Esplora minacce**: Esplora minacce espone molte più informazioni di posta elettronica correlate alla sicurezza, ad esempio l' *azione di recapito*, la *posizione di recapito*, l' *azione speciale*, la *direzionalità*, le *sostituzioni*e la *minaccia URL*. Consente inoltre al team di sicurezza dell'organizzazione di analizzare con maggiore certezza. 
 
@@ -189,31 +189,31 @@ Threat Explorer è un potente report che può servire a molteplici scopi, ad ese
 
 4. In the **View** menu, choose **All email**.
 
-    ![Use the View menu to choose between Email and Content reports](../media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+    ![Use the View menu to choose between Email and Content reports](../../media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
     Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.
 
-    ![Threat Explorer showing data for all email](../media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
+    ![Threat Explorer showing data for all email](../../media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
     
     (Depending on the actions that were taken on email messages for your organization, you might see other labels, such as **Blocked** or **Replaced**.)
     
 5. In the report, choose **Delivered** to view only email messages that ended up in users' inboxes.
 
-    ![Clicking "Delivered to junk" removes that data from view](../media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+    ![Clicking "Delivered to junk" removes that data from view](../../media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
 6. Below the chart, review the **Email** list below the chart.
 
-    ![Below the chart, view a list of email messages that were detected](../media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+    ![Below the chart, view a list of email messages that were detected](../../media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
 7. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.
 
-    ![You can view additional information about an item](../media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+    ![You can view additional information about an item](../../media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
 8. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
     
 9. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This deletes the selected messages from the recipients' mailboxes.
 
-    ![When you select one or more email messages, you can choose from several available actions](../media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+    ![When you select one or more email messages, you can choose from several available actions](../../media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
 
 ## Dealing with suspicious email messages
 
@@ -243,7 +243,7 @@ To access your message header and email download options, follow these steps:
 
     This opens the flyout, where both header preview and email download links are positioned.
 
-    ![Threat Explorer flyout with download and preview links on the page.](../media/ThreatExplorerDownloadandPreview.PNG)
+    ![Threat Explorer flyout with download and preview links on the page.](../../media/ThreatExplorerDownloadandPreview.PNG)
 
 > [!IMPORTANT]
 > This capability doesn't show up for email messages that were never found in a user's mailbox, which can happen if an email was dropped or its delivery failed. In cases where email messages were deleted from users' mailboxes, admins see a "Mail not found" error message.
