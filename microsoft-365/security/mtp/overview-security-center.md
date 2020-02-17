@@ -54,7 +54,7 @@ Il Centro sicurezza Microsoft 365 include:
 * **Criteri** : configurare i criteri per gestire i dispositivi, proteggerli dalle minacce e ricevere avvisi su varie attività nell'organizzazione organizzativa.
 * **Permissions** -gestire gli utenti dell'organizzazione che dispongono dell'accesso a Microsoft 365 Security Center per visualizzare il contenuto ed eseguire le attività. È inoltre possibile assegnare le autorizzazioni di Microsoft 365 nel portale di Azure AD.
 
-## <a name="learn-more"></a>Ulteriori informazioni 
+## <a name="learn-more"></a>Altre informazioni 
 
 Esaminare questi argomenti sul monitoraggio, la revisione e la risposta alle esigenze di sicurezza:
 - Connettere i punti su avvisi tramite [eventi](incident-queue.md) non consentiti
