@@ -1,5 +1,5 @@
 ---
-title: Panoramica delle etichette di riservatezza
+title: Informazioni sulle etichette di riservatezza
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, tra cui crittografia o filigrane.
-ms.openlocfilehash: 723bedfc5208da140140ab475be69400d5308061
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: fa04fdc2713cbba090ec56972cd87e6cbdc4387b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661992"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081460"
 ---
-# <a name="overview-of-sensitivity-labels"></a>Panoramica delle etichette di riservatezza
+# <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
 Per svolgere il proprio lavoro, i membri dell'organizzazione collaborano con altri utenti, sia interni che esterni all'organizzazione stessa. Questo significa che i contenuti non sono più protetti da un firewall, ma possono spostarsi tra dispositivi, applicazioni e servizi. E quando si spostano, è preferibile che lo facciano in modo sicuro e protetto, nel rispetto dei criteri aziendali e di conformità dell'organizzazione.
 
@@ -32,7 +32,7 @@ Con le etichette di riservatezza è possibile classificare e proteggere il conte
 
 Esempio che mostra le etichette di riservatezza disponibili in Excel dalla scheda **Home** sulla barra multifunzione. In questo esempio l'etichetta applicata viene visualizzata sulla barra di stato:
 
-![Etichetta di riservatezza nella barra multifunzione e nella barra di stato di Excel](media/Sensitivity-label-in-Excel.png)
+![Etichetta di riservatezza nella barra multifunzione e nella barra di stato di Excel](../media/Sensitivity-label-in-Excel.png)
 
 Le etichette di riservatezza sono supportate solo per i tenant del cloud globale (pubblico). Per il momento, non sono supportate per i tenant in altri cloud, ad esempio i [cloud nazionali](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
 
@@ -45,7 +45,7 @@ Per applicare le etichette di riservatezza, gli utenti devono accedere a Office 
   
 - **Applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.** Ad esempio, gli utenti possono applicare un'etichetta Riservato a un documento o a un messaggio di posta elettronica, e quell'etichetta può crittografare il contenuto e applicare una filigrana Riservato.
 
-- **Proteggere il contenuto nelle app di Office su piattaforme e dispositivi diversi.** Per un elenco delle app supportate, vedere [Etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md).
+- **Proteggere il contenuto nelle app di Office su piattaforme e dispositivi diversi.** Per un elenco delle app supportate, vedere [Usare le etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md).
 
 - **Evitare che informazioni riservate escano dall'organizzazione nei dispositivi che eseguono Windows** usando la soluzione Endpoint Protection in Microsoft Intune. Dopo l'applicazione di un'etichetta di riservatezza a contenuto che risiede in un dispositivo Windows, Endpoint Protection può impedire che il contenuto venga copiato in un'app di terze parti, ad esempio Twitter o Gmail, o che venga copiato in uno spazio di archiviazione rimovibile, ad esempio un'unità USB.
 
@@ -72,7 +72,7 @@ Nelle applicazioni di Office, un'etichetta di riservatezza viene visualizzata da
 A ogni elemento di contenuto può essere applicata una sola etichetta di riservatezza. È possibile applicare a un elemento una singola etichetta di riservatezza e una singola [etichetta di conservazione](labels.md).
 
 > [!div class="mx-imgBorder"]
-> ![Etichetta di riservatezza applicata a un messaggio di posta elettronica](media/Sensitivity-label-on-email.png)
+> ![Etichetta di riservatezza applicata a un messaggio di posta elettronica](../media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>Operazioni eseguibili dalle etichette di riservatezza
 
@@ -90,9 +90,9 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
 
 - **Contrassegnare il contenuto** quando si usano app di Office con l'aggiunta di filigrane personalizzate, intestazioni o piè di pagina a messaggi di posta elettronica o documenti cui è stata applicata l'etichetta. Le filigrane possono essere applicate solo ai documenti, non ai messaggi di posta elettronica. Intestazione e filigrana di esempio:
     
-    ![Filigrana e intestazione applicate a un documento](media/Sensitivity-label-watermark-header.png)
+    ![Filigrana e intestazione applicate a un documento](../media/Sensitivity-label-watermark-header.png)
     
-    Se è necessario verificare se sono stati applicati contrassegni al contenuto, vedere [Quando Office 365 applica il contrassegno e la crittografia al contenuto](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption-to-content).
+    Se è necessario verificare se sono stati applicati contrassegni al contenuto, vedere [Quando Office 365 applica il contrassegno e la crittografia al contenuto](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
     
     Lunghezza stringa: le filigrane sono limitate a 255 caratteri. Le intestazioni e i piè di pagina hanno un limite di 1024 caratteri, tranne che in Excel. Excel ha un limite totale di 255 caratteri per le intestazioni e i piè di pagina, ma questo limite include i caratteri non visibili, come i codici di formattazione. Se viene raggiunto questo limite, la stringa immessa non viene visualizzata in Excel.
 
@@ -102,7 +102,7 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
 
 - **Applicare automaticamente l'etichetta a contenuto che contiene informazioni sensibili.** È possibile selezionare i tipi di informazioni sensibili che si vogliono etichettare e scegliere se applicare l'etichetta automaticamente oppure chiedere agli utenti di applicare l'etichetta consigliata. Se si consiglia un'etichetta, il messaggio di richiesta visualizza qualsiasi testo selezionato. Ad esempio:
     
-    ![Messaggio in cui si richiede di assegnare un'etichetta obbligatoria](media/Sensitivity-label-Prompt-for-required-label.png)
+    ![Messaggio in cui si richiede di assegnare un'etichetta obbligatoria](../media/Sensitivity-label-Prompt-for-required-label.png)
     
     Per altre informazioni sull'**applicazione automatica di etichette per le app di Office**, vedere [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md).
 
@@ -114,7 +114,7 @@ Quando si creano le etichette di riservatezza nella propria interfaccia di ammin
 
 L'ordinamento delle sottoetichette viene però usato con l'[etichettatura automatica](apply-sensitivity-label-automatically.md). Quando si configurano le etichette in modo da applicarle automaticamente o come suggerimento, diverse etichette possono avere più corrispondenze. Per determinare l'etichetta da applicare o consigliare si usa l'ordinamento delle etichette, ovvero viene selezionata l'etichetta a riservatezza meno elevata e, se applicabile, anche la sottoetichetta a riservatezza meno elevata.
 
-![Possibilità di creare una sottoetichetta](media/Sensitivity-label-sublabel-options.png)
+![Possibilità di creare una sottoetichetta](../media/Sensitivity-label-sublabel-options.png)
 
 ### <a name="sublabels-grouping-labels"></a>Sottoetichette (raggruppamento etichette)
 
@@ -126,7 +126,7 @@ Non scegliere un'etichetta padre come etichetta predefinita e non configurare un
 
 Esempio di come vengono visualizzate le sottoetichette per gli utenti:
 
-![Sottoetichette raggruppate nella barra multifunzione](media/Sensitivity-label-grouped-labels2.png)
+![Sottoetichette raggruppate nella barra multifunzione](../media/Sensitivity-label-grouped-labels2.png)
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>Modificare o eliminare un'etichetta di riservatezza
 
@@ -146,18 +146,18 @@ Con un criterio di etichetta, è possibile:
 
 - **Richiedere una motivazione per la modifica di un'etichetta.** Se il contenuto è contrassegnato come Riservato e un utente prova a rimuovere l'etichetta o sostituirla con una classificazione inferiore, ad esempio un'etichetta denominata Pubblico, è possibile richiedere che l'utente fornisca una motivazione per eseguire questa operazione. Attualmente, la motivazione non viene inviata all'[analisi delle etichette](label-analytics.md) per la revisione da parte dell'amministratore. Tuttavia, il [client di etichettatura unificata di Azure Information Protection ](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) invia le informazioni all'[analisi di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
-    ![Messaggio in cui si richiede agli utenti di immettere una motivazione](media/Sensitivity-label-justification-required.png)
+    ![Messaggio in cui si richiede agli utenti di immettere una motivazione](../media/Sensitivity-label-justification-required.png)
 
 - **Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti.** Con questa opzione, nota anche come etichettatura obbligatoria, è possibile richiedere l'applicazione di un'etichetta prima che gli utenti possano salvare documenti e inviare messaggi di posta elettronica. Usare questa opzione per ampliare la portata dell'etichettatura. L'etichetta può essere assegnata manualmente dall'utente, automaticamente in seguito a una condizione configurata oppure assegnata per impostazione predefinita (l'opzione per l'etichetta predefinita descritta in precedenza). Ecco il messaggio di richiesta mostrato in Outlook quando un utente deve assegnare un'etichetta:
 
-    ![Prompt in Outlook per richiedere all'utente di applicare l'etichetta obbligatoria](media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
+    ![Prompt in Outlook per richiedere all'utente di applicare l'etichetta obbligatoria](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
     > L'etichettatura obbligatoria richiede un abbonamento ad Azure Information Protection. Per usare questa funzionalità è necessario installare il [client di etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). Questo client viene eseguito solo in Windows, quindi questa funzionalità non è ancora supportata in Mac, iOS e Android.
 
 - **Fornire un collegamento a una pagina della Guida personalizzata.** Se gli utenti non conoscono il significato delle etichette di riservatezza o non sanno come usarle, è possibile fornire un URL che consente di accedere a maggiori informazioni, visualizzato nella parte inferiore del menu **Etichetta di riservatezza** nelle app di Office:
 
-    ![Collegamento a ulteriori informazioni sul pulsante Riservatezza della barra multifunzione](media/Sensitivity-label-learn-more.png)
+    ![Collegamento a ulteriori informazioni sul pulsante Riservatezza della barra multifunzione](../media/Sensitivity-label-learn-more.png)
 
 Dopo aver creato un criterio etichetta che assegna etichette di riservatezza a utenti e gruppi, la visualizzazione delle etichette nelle app di Office degli utenti potrebbe richiedere fino a 24 ore.
 
@@ -177,7 +177,7 @@ Un criterio di etichetta è costituito da:
 
 Se l'etichetta o l'impostazione dei criteri di etichetta prevista per un utente o un gruppo non viene visualizzata e sono trascorse 24 ore, controllare l'ordine dei criteri per le etichette di riservatezza. Per riordinare i criteri di etichetta, selezionare un criterio di etichetta di riservatezza > scegliere i puntini di sospensione a destra > **Spostare su** o **Sposta giù**.
 
-![Opzione Sposta nella pagina dei criteri di etichetta di riservatezza](media/sensitivity-label-policy-priority.png)
+![Opzione Sposta nella pagina dei criteri di etichetta di riservatezza](../media/sensitivity-label-policy-priority.png)
 
 Se si usano etichette di conservazione oltre alle etichette di riservatezza, è importante tenere presente che la priorità è importante per i criteri per le etichette di riservatezza, ma non per i [criteri per le etichette di conservazione](labels.md#the-principles-of-retention-or-what-takes-precedence).
 
@@ -195,13 +195,23 @@ I metadati applicati da entrambi i set di etichette sono compatibili, quindi non
 
 Se si usano le etichette di riservatezza nelle app di Office 365 ProPlus in computer Windows, è possibile scegliere di usare un client di Azure Information Protection o di usare l'etichettatura integrata in Office.
 
-Per impostazione predefinita, l'etichettatura integrata è disattivata nelle app quando è installato il client di Azure Information Protection. Per altre informazioni, incluse indicazioni su come modificare questo comportamento predefinito, vedere [Informazioni sul client di etichettatura incorporato di Office](sensitivity-labels-office-apps.md#about-the-office-built-in-labeling-client).
+Per impostazione predefinita, l'etichettatura integrata è disattivata nelle app quando è installato il client di Azure Information Protection. Per altre informazioni, incluse indicazioni su come modificare questo comportamento predefinito, vedere [Client di etichettatura incorporato di Office e client Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
+
+Anche quando si usa l'etichettatura integrata nelle app di Office, è possibile usare il client di etichettatura unificato di Azure Information Protection con le etichette di riservatezza per quanto segue:
+
+- Uno strumento di analisi per individuare le informazioni sensibili archiviate in locale e quindi, se necessario, etichettare quel contenuto
+
+- Opzioni disponibili nel menu di scelta rapida in Esplora file per consentire agli utenti di applicare etichette a tutti i tipi di file
+
+- Un visualizzatore per visualizzare i file crittografati per i documenti di testo, immagine o PDF
+
+- Un modulo di PowerShell per individuare le informazioni sensibili nei file in locale e applicare o rimuovere etichette e crittografia da tali file.
 
 Se non si ha familiarità con Azure Information Protection o se si è un cliente di Azure Information Protection che ha appena eseguito la migrazione delle etichette, vedere [Scegliere il client di etichettatura da usare per i computer Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) dalla documentazione di Azure Information Protection.
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>Etichette di riservatezza e Microsoft Cloud App Security
 
-Con Cloud App Security (CAS) è possibile rilevare, classificare, etichettare e proteggere il contenuto in servizi e app di terze parti, ad esempio SalesForce, Box o DropBox. 
+Con Cloud App Security (CAS) è possibile individuare, classificare, etichettare e proteggere il contenuto in servizi e app di terze parti, ad esempio SalesForce, Box o DropBox. 
 
 Cloud App Security è compatibile sia con le etichette di riservatezza che con le etichette di Azure Information Protection:
 
@@ -213,24 +223,11 @@ Per le istruzioni su come usare Cloud App Security con queste etichette, vedere 
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Etichette di riservatezza e Microsoft Information Protection SDK
 
-Poiché un'etichetta di riservatezza viene mantenuta come testo non crittografato nei metadati di un documento, applicazioni e servizi di terze parti possono scegliere di supportare l’identificazione e la protezione di contenuti che contengono tale etichetta. Il supporto in altre applicazioni e servizi è in continua espansione.
-
-Con l'[SDK di Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk), le app e i servizi di terze parti possono leggere e applicare etichette di riservatezza e misure di protezione ai documenti in più piattaforme. Per altre informazioni, vedere l'[annuncio nel blog della Tech Community](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
+Dato che un'etichetta di riservatezza è archiviata in testo non crittografato nei metadati di un documento, le app e i servizi di terze parti possono leggere e scrivere in questi dati di etichettatura per integrare la distribuzione dell'etichettatura. Inoltre, gli sviluppatori di software possono usare [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) per supportare pienamente le funzionalità di etichettatura e crittografia su più piattaforme. Per altre informazioni, vedere l'[annuncio della disponibilità generale sul blog della Tech Community](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
 
 Sono anche disponibili informazioni sulle [soluzioni dei partner integrate con Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 
-## <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
+## <a name="deployment-guidance"></a>Guida alla distribuzione
 
-1. **Creare le etichette.** Creare e assegnare un nome alle etichette di riservatezza in base alla tassonomia di classificazione dell'organizzazione per i diversi livelli di riservatezza del contenuto. Usare termini o nomi comuni che abbiano senso per gli utenti. Se non si ha già una tassonomia stabilita, è consigliabile iniziare con nomi di etichetta come Personale, Pubblico, Generale, Riservato ed Estremamente riservato. Sarà poi possibile usare sottoetichette per raggruppare le etichette simili per categoria. Quando si crea un'etichetta, usare il testo della descrizione comando per aiutare gli utenti a selezionare l'etichetta appropriata.
+Vedere [Iniziare a usare le etichette di riservatezza](get-started-with-sensitivity-labels.md).
 
-2. **Definire le caratteristiche di ogni etichetta.** Configurare le impostazioni di protezione che si vogliono associare a ciascuna etichetta. Ad esempio, a un contenuto con un basso grado di riservatezza (come un'etichetta "Generale") si potrebbe applicare solo un'intestazione o un piè di pagina, mentre a un contenuto con un maggiore grado di riservatezza (come un'etichetta "Riservato") si potrebbero applicare una filigrana, la crittografia e la protezione dell'endpoint.
-
-3. **Pubblicare le etichette.** Dopo aver configurato le etichette di riservatezza, pubblicarle usando un criterio di etichetta. Decidere quali utenti e gruppi devono avere le etichette e quali impostazioni dei criteri usare. Una singola etichetta è riutilizzabile, vale a dire che è possibile definirla una sola volta e quindi includerla in diversi criteri di etichetta assegnati a più utenti. Ad esempio, è possibile provare a usare le etichette di riservatezza assegnando un criterio di etichetta a pochi utenti. Successivamente, una volta pronti a distribuire le etichette nell'organizzazione, si potrà creare un nuovo criterio per le etichette e, stavolta, specificare tutti gli utenti.
-
-Ecco il flusso di base delle operazioni eseguite da amministratore, utente e app e servizi di Office per consentire il funzionamento delle etichette di riservatezza:
-
-![Diagramma che mostra il flusso di lavoro per le etichette di riservatezza](media/Sensitivity-label-flow.png)
-
-Ora si è pronti per [Creare e configurare etichette di riservatezza e i relativi criteri](create-sensitivity-labels.md). 
-
-Per altre informazioni sull'uso delle etichette di riservatezza per le app di Office, vedere [Etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md).

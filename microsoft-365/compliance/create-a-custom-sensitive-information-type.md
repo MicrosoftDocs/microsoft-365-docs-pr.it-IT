@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità.
-ms.openlocfilehash: 7f7c4c787bff6fa9d4c644b5640d05b9320686ed
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 726f21416a3e83a9c3024d810c4335ea263b3c20
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596213"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078052"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Creare un tipo di informazioni sensibili personalizzato nel Centro sicurezza e conformità
@@ -69,7 +69,7 @@ Ecco uno scenario: si desidera un tipo di informazioni sensibili personalizzato 
 
 1. Nel Centro sicurezza e conformità, accedere a **Classificazioni** \> **Tipi di informazioni sensibili** e fare clic su **Crea**.
 
-    ![Posizione dei tipi di informazioni riservate e pulsante Crea](media/scc-cust-sens-info-type-new.png)
+    ![Posizione dei tipi di informazioni riservate e pulsante Crea](../media/scc-cust-sens-info-type-new.png)
 
 2. Nella pagina **Scegliere un nome e una descrizione** che viene visualizzata, immettere i valori seguenti:
 
@@ -77,7 +77,7 @@ Ecco uno scenario: si desidera un tipo di informazioni sensibili personalizzato 
 
   - **Descrizione**: Rilevare i numeri ID dipendente di Contoso di 9 cifre.
 
-    ![Pagina con nome e descrizione](media/scc-cust-sens-info-type-new-name-desc.png)
+    ![Pagina con nome e descrizione](../media/scc-cust-sens-info-type-new-name-desc.png)
 
     Al termine dell'operazione, fare clic su **Avanti**.
 
@@ -101,17 +101,17 @@ Ecco uno scenario: si desidera un tipo di informazioni sensibili personalizzato 
 
     - Lasciare il valore 300 della **Prossimità dei caratteri** predefinito.
 
-    ![Pagina Requisiti per la corrispondenza](media/scc-cust-sens-info-type-new-reqs.png)
+    ![Pagina Requisiti per la corrispondenza](../media/scc-cust-sens-info-type-new-reqs.png)
 
     Al termine dell'operazione, fare clic su **Avanti**.
 
 4. Nella pagina **Verifica e completamento** che viene visualizzata, controllare le impostazioni e fare clic su **Fine**.
 
-    ![Pagina Verifica e completamento](media/scc-cust-sens-info-type-new-review.png)
+    ![Pagina Verifica e completamento](../media/scc-cust-sens-info-type-new-review.png)
 
 5. La pagina successiva invita a testare il nuovo tipo di informazioni sensibili personalizzato facendo clic su **Sì**. Per ulteriori informazioni, vedere **Testare i tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità**. Per testare la regola in un secondo momento, fare clic su [No](#test-custom-sensitive-information-types-in-the-security--compliance-center).
 
-    ![Pagina Suggerimenti per il test](media/scc-cust-sens-info-type-new-test.png)
+    ![Pagina Suggerimenti per il test](../media/scc-cust-sens-info-type-new-test.png)
 
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
@@ -131,7 +131,7 @@ Per verificare che sia stato creato correttamente un nuovo tipo di informazioni 
 
 Nel Centro sicurezza e conformità, accedere a **Classificazioni** \> **Tipi di informazioni sensibili**, selezionare il tipo di informazioni sensibili personalizzato da modificare e quindi fare clic su **Modifica**.
 
-  ![Posizione dei tipi di informazioni riservate e pulsante Modifica](media/scc-cust-sens-info-type-edit.png)
+  ![Posizione dei tipi di informazioni riservate e pulsante Modifica](../media/scc-cust-sens-info-type-edit.png)
 
 Le stesse opzioni sono disponibili qui come quando è stato creato il tipo di informazioni sensibili personalizzato nel Centro sicurezza e conformità. Per ulteriori informazioni, vedere [Creare tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità](#create-custom-sensitive-information-types-in-the-security--compliance-center).
 
@@ -155,7 +155,7 @@ Per verificare che sia stato modificato correttamente un tipo di informazioni se
 
 2. Nel menu a comparsa che viene visualizzato, fare clic su **Elimina** (o **Eliminare i tipi di informazioni sensibili** se ne sono stati selezionati più di uno).
 
-    ![Posizione dei tipi di informazioni riservate e pulsante Elimina](media/scc-cust-sens-info-type-delete.png)
+    ![Posizione dei tipi di informazioni riservate e pulsante Elimina](../media/scc-cust-sens-info-type-delete.png)
 
 3. Nel messaggio di avviso che viene visualizzato, fare clic su **Sì**.
 
@@ -169,14 +169,14 @@ Per accertarsi di aver rimosso correttamente un tipo di informazioni sensibili p
 
 2. Selezionare uno o più tipi di informazioni sensibili personalizzati da testare. Nel menu a comparsa che viene visualizzato, fare clic su **Tipo di test** (o **Test dei tipi di informazioni sensibili** se ne sono stati selezionati più di uno).
 
-    ![Posizione dei tipi di informazioni riservate e pulsante Tipo di test](media/scc-cust-sens-info-type-test.png)
+    ![Posizione dei tipi di informazioni riservate e pulsante Tipo di test](../media/scc-cust-sens-info-type-test.png)
 
 3. Nella pagina **Carica file da testare** che viene visualizzata, caricare un documento per il test trascinando e rilasciando un file o facendo clic su **Sfoglia** e selezionando un file.
 
-    ![Pagina Carica file da testare](media/scc-cust-sens-info-type-test-upload.png)
+    ![Pagina Carica file da testare](../media/scc-cust-sens-info-type-test-upload.png)
 
 4. Fare clic sul pulsante **Test** per testare il documento per individuare le corrispondenze al criterio nel file.
 
 5. Nella pagina **Risultati corrispondenza** fare clic su **Fine**.
 
-    ![Risultati corrispondenza](media/scc-cust-sens-info-type-test-results.png)
+    ![Risultati corrispondenza](../media/scc-cust-sens-info-type-test-results.png)

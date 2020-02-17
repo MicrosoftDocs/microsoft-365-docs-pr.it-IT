@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Sintesi: creare e configurare siti del team di SharePoint Online per diversi livelli di protezione delle informazioni.'
-ms.openlocfilehash: 1f67dd1956059162902aefdb194e5e514d063778
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: 1827c4a19cfd31a236dfbd58e454c610cae14477
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855255"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075526"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Distribuire siti di SharePoint Online per tre livelli di protezione
 
@@ -41,7 +41,7 @@ Per creare un sito del team di SharePoint Online di base con accesso pubblico e 
 
 Questa è la configurazione risultante.
   
-![Protezione di livello di base per un sito del team di SharePoint Online pubblico.](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![Protezione di livello di base per un sito del team di SharePoint Online pubblico.](../media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>Privato
 
@@ -49,7 +49,7 @@ Per creare un sito del team di SharePoint Online di base con accesso privato e a
   
 Questa è la configurazione risultante.
   
-![Protezione di livello di base per un sito del team di SharePoint Online privato.](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![Protezione di livello di base per un sito del team di SharePoint Online privato.](../media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>Siti del team di SharePoint Online sensibili
 
@@ -70,7 +70,7 @@ I risultati di queste impostazioni delle autorizzazioni sono i seguenti:
 
 Di seguito è riportata la configurazione risultante.
   
-![Protezione di livello riservato per un sito del team di SharePoint Online isolato.](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![Protezione di livello riservato per un sito del team di SharePoint Online isolato.](../media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 I membri del sito, attraverso l'appartenenza a uno dei gruppi di accesso, possono ora collaborare in modo sicuro alle risorse del sito.
   
@@ -94,7 +94,7 @@ I risultati di queste impostazioni delle autorizzazioni sono i seguenti:
 
 Di seguito è riportata la configurazione risultante.
   
-![Protezione di livello estremamente riservato per un team di SharePoint Online isolato.](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![Protezione di livello estremamente riservato per un team di SharePoint Online isolato.](../media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 I membri del sito, attraverso l'appartenenza a uno dei gruppi di accesso, possono ora collaborare in modo sicuro alle risorse del sito.
   

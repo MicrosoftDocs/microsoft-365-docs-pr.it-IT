@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come creare e importare un tipo di informazioni riservate personalizzato per DLP nel Centro sicurezza e conformità.
-ms.openlocfilehash: eba95bdb0bf442e143a3f7f3b701e8f46d641655
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 05f43149485bb368f1082180031913293be6d8e7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595683"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078224"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità
 
@@ -135,7 +135,7 @@ Una regola definisce una o più entità (tipi di informazioni riservate), mentre
 
 Si tratta dello scenario più semplice. Si desidera utilizzare il criterio DLP per identificare il contenuto che include l'ID dipendente dell'organizzazione, formattato come un numero di nove cifre. Pertanto, il modello fa riferimento a un'espressione regolare contenuta nella regola che identifica i numeri di nove cifre. Qualsiasi contenuto includa un numero di nove cifre soddisfa il modello.
   
-![Diagramma dell'entità con un solo modello](media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
+![Diagramma dell'entità con un solo modello](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
 Tuttavia, sebbene semplici, questo modello può rilevare molti falsi positivi confrontando il contenuto che include un numero di nove cifre che non è necessariamente un ID dipendente.
   
@@ -145,7 +145,7 @@ Per questo motivo, è più comune per definire un'entità con più modelli, ladd
   
 Ad esempio, per aumentare le probabilità di identificazione di contenuto che include un ID dipendente, è possibile definire anche la data di assunzione e definire un altro modello che identifica sia la data di assunzione che una parola chiave (ad esempio "ID dipendente"), oltre al numero di nove cifre.
   
-![Diagramma dell'entità con più modelli](media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
+![Diagramma dell'entità con più modelli](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
   
 Tenere presente alcuni aspetti importanti di questa struttura:
   
@@ -162,7 +162,7 @@ Un'entità è un tipo di informazione riservata, ad esempio un numero di carta d
   
 Quindi, generare un GUID per l'entità. Esistono diversi modi per generare i GUID, ma è possibile farlo facilmente in PowerShell digitando [guid]::NewGuid(). In un secondo momento, verrà inoltre aggiunto il GUID dell'entità alla sezione delle stringhe localizzate.
   
-![Markup XML che mostra gli elementi Rules ed Entity](media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
+![Markup XML che mostra gli elementi Rules ed Entity](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
 ## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>Quali criteri si desidera associare? [Elemento pattern, elemento IdMatch, elemento Regex]
 
@@ -170,11 +170,11 @@ Il criterio contiene l'elenco degli elementi cercati dal tipo di informazioni ri
   
 Tutti i criteri seguenti hanno in comune il fatto che fanno tutti riferimento alla stessa espressione regolare, che consente di cercare un numero di nove cifre (\d{9}) racchiuso da spazi bianchi (\s) … (\s). Questa espressione regolare è oggetto di riferimento da parte dell'IdMatch ed è il requisito comune per tutti i criteri che cercano l'entità ID dipendente. IdMatch è l'identificatore che il criterio sta tentando di associare, ad esempio l'ID dipendente, il numero di carta di credito o il tesserino della previdenza sociale. Un elemento Pattern deve avere esattamente un elemento IdMatch.
   
-![Markup XML che mostra più elementi Criteri che fanno riferimento a un singolo elemento Regex](media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
+![Markup XML che mostra più elementi Criteri che fanno riferimento a un singolo elemento Regex](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
 Quando viene soddisfatto, un criterio restituisce un numero e un livello di probabilità che è possibile utilizzare nelle condizioni nel criterio DLP. Quando si aggiunge una condizione per il rilevamento di un tipo di informazione riservata a un criterio DLP, è possibile modificare il numero e il livello di probabilità, come illustrato qui. Il livello di probabilità (altrimenti detto precisione di corrispondenza) è illustrato più avanti in questo argomento.
   
-![Numero di istanze e opzioni di precisione di corrispondenza](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Numero di istanze e opzioni di precisione di corrispondenza](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 Quando si crea l'espressione regolare, tenere presente che esistono problemi da tenere presenti. Ad esempio, se si scrive e si carica un Regex che identifica una quantità eccessiva di contenuto, le prestazioni possono risentirne. Per ulteriori informazioni su questi problemi potenziali, vedere la sezione successiva [Possibili problemi di convalida da tenere presenti](#potential-validation-issues-to-be-aware-of).
   
@@ -186,7 +186,7 @@ Un criterio può contenere più elementi Match; tali elementi possono essere inc
   
 È possibile usare l'attributo facoltativo minCount per specificare il numero di istanze di una corrispondenza che è necessario trovare per ognuno degli elementi Match. Ad esempio, è possibile specificare che un criterio è soddisfatto solo quando vengono trovate almeno due parole chiave di un elenco di parole chiave.
   
-![Markup XML che mostra l'elemento Match con l'attributo minOccurs](media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
+![Markup XML che mostra l'elemento Match con l'attributo minOccurs](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Parole chiave [elementi Keyword, Group e Term, attributi matchStyle e caseSensitive]
 
@@ -200,7 +200,7 @@ Le parola chiave sono incluse come elenco di elementi Term in un elemento Group.
     
 Infine, è possibile utilizzare l'attributo caseSensitive di un elemento Term per specificare che il contenuto deve corrispondere esattamente alla parola chiave, incluse le lettere minuscole e maiuscole.
   
-![Markup XML che mostra gli elementi Match che fanno riferimento alle parole chiave](media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
+![Markup XML che mostra gli elementi Match che fanno riferimento alle parole chiave](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
   
 ### <a name="regular-expressions-regex-element"></a>Espressioni regolari [elemento Regex]
 
@@ -214,7 +214,7 @@ Ad esempio, un badge ID dipendente riporta la data di assunzione, in modo che l'
   
 Per ulteriori informazioni, vedere [Elementi ricercati tramite le funzioni DLP](what-the-dlp-functions-look-for.md).
   
-![Markup XML che mostra l'elemento Match che fa riferimento alla funzione integrata](media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
+![Markup XML che mostra l'elemento Match che fa riferimento alla funzione integrata](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
   
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>Diverse combinazioni di prove [elemento Any, attributi minMatches e maxMatches]
 
@@ -276,15 +276,15 @@ In questo esempio viene definito un criterio per la revisione dello stipendio, c
 
 Il tipo di informazioni riservate cerca un criterio che rappresenta un ID dipendente e come parte di tale criterio cerca anche una prova come una parola chiave, ad esempio, ID". È ovvio che la probabilità che il criterio sia un ID dipendente effettivo è superiore se la prova è ravvicinata. È possibile determinare quale debba essere la vicinanza dell'altra prova all'entità nel criterio utilizzando l'attributo patternsProximity dell'elemento Entity.
   
-![Markup XML che mostra i criteri dell'attributo patternsProximity](media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
+![Markup XML che mostra i criteri dell'attributo patternsProximity](../media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
   
 Per ciascun criterio nell'entità, il valore dell'attributo patternsProximity definisce la distanza (in caratteri Unicode) dalla posizione IdMatch per tutte le altre corrispondenze specificate per il criterio. La finestra di prossimità viene ancorata mediante la posizione IdMatch e si estende a sinistra e a destra di IdMatch.
   
-![Diagramma della finestra di prossimità](media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
+![Diagramma della finestra di prossimità](../media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
   
 L'esempio seguente mostra l'effetto della finestra di prossimità sulla corrispondenza dei criteri dove l'elemento IdMatch per l'entità personalizzata dell'ID dipendente richiede almeno una corrispondenza corroborativa della parola chiave o della data. Solo ID1 corrisponde perché per ID2 e ID3 non viene trovata alcuna prova o solo una prova parziale all'interno della finestra di prossimità.
   
-![Diagramma della prova corroborativa e della finestra di prossimità](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![Diagramma della prova corroborativa e della finestra di prossimità](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
   
 Si noti che per la posta elettronica, il corpo del messaggio e ciascun allegato vengono trattati come elementi separati. Questo significa che la finestra di prossimità non si estende oltre la fine di ciascuno di essi. Per ogni elemento (allegato o corpo), sia idMatch che la prova devono risiedere nell'elemento.
   
@@ -294,7 +294,7 @@ Maggiore è la prova richiesta da un criterio, maggiore è la probabilità che u
   
 L'elemento Pattern dispone di un attributo confidenceLevel richiesto. È possibile pensare al valore di confidenceLevel (valore integer compreso tra 1 e 100) come a un ID univoco per cisascun criterio in un entità - i criteri di identità devono avere diversi livelli di probabilità che vengono assegnati. Il valore preciso dell'integer non importa: è sufficiente scegliere i numeri che hanno un significato per il team della conformità. Dopo aver caricato il proprio tipo di informazioni sensibili e aver creato un criterio DLP, è possibile fare riferimento a questi livelli di probabilità nelle condizioni delle regole create.
   
-![Markup XML che mostra gli elementi Pattern con i diversi valori per l'attributo confidenceLevel](media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
+![Markup XML che mostra gli elementi Pattern con i diversi valori per l'attributo confidenceLevel](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
 Oltre a confidenceLevel per ogni criterio, l'elemento Entity ha un attributo recommendedConfidence. L'attributo della probabilità consigliata può essere considerato come il livello di probabilità predefinito per la regola. Quando si crea una regola in un criterio DLP, se non si specifica un livello di probabilità per la regola da usare, tale regola verrà associata in base al livello di probabilità consigliato per l'entità.
   
@@ -302,11 +302,11 @@ Oltre a confidenceLevel per ogni criterio, l'elemento Entity ha un attributo rec
 
 Se il team di conformità usa Centro sicurezza e conformità di Office 365 per creare criteri in diverse impostazioni locali e in diverse lingue, è possibile fornire versioni localizzate del nome e descrizione del tipo di informazioni riservate personalizzato. Quando il team di conformità Usa Office 365 in una lingua supportata, nell'interfaccia utente verrà visualizzato il nome localizzato.
   
-![Numero di istanze e opzioni di precisione di corrispondenza](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Numero di istanze e opzioni di precisione di corrispondenza](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 L'elemento Rules deve contenere un elemento LocalizedStrings, che contiene un elemento Resource che fa riferimento al GUID dell'entità personalizzata. A sua volta, ciascun elemento Resource contiene uno o più elementi Name e Description che usano l'attributo langcode per fornire una stringa localizzata per una lingua specifica.
   
-![Markup XML che mostra i contenuti di un elemento LocalizedStrings](media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
+![Markup XML che mostra i contenuti di un elemento LocalizedStrings](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
 Le stringhe localizzate vengono utilizzate solo per il modo in cui le informazioni riservate personalizzate vengono visualizzate nell'interfaccia utente del Centro di conformità e sicurezza. Non è possibile utilizzare le stringhe localizzate per fornire versioni localizzate diverse di un elenco di parole chiave o di un'espressione regolare.
   
@@ -342,7 +342,7 @@ Anche l'elemento Version è importante. Quando si carica il pacchetto di regole 
 
 Una volta completato, l'elemento RulePack dovrebbe avere l'aspetto seguente.
   
-![Markup XML che mostra l'elemento RulePack](media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+![Markup XML che mostra l'elemento RulePack](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
   
 ## <a name="changes-for-exchange-online"></a>Modifiche per Exchange Online
 

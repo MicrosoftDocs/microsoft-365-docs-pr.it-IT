@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: I report sulla governance dei dati nel Centro sicurezza e conformità di Office 365 consentono di visualizzare rapidamente se le etichette vengono applicate al contenuto nel modo previsto.
-ms.openlocfilehash: b07daf73cf1fca50f4d9831dfe6d96a59df928d0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597213"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068795"
 ---
 # <a name="view-the-data-governance-reports"></a>Visualizzare i report sulla governance dei dati
 
@@ -38,10 +38,10 @@ Tutti questi report mostrano il contenuto etichettato di Exchange, SharePoint e 
   
 È possibile trovare questi report in Centro sicurezza e conformità \> **Governance delle informazioni** \> **Dashboard**.
   
-![Grafico che mostra le tendenze delle etichette negli ultimi 90 giorni](media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
+![Grafico che mostra le tendenze delle etichette negli ultimi 90 giorni](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
 È possibile filtrare i report sulla governance dei dati per data (fino a 90 giorni) e posizione (Exchange, SharePoint e OneDrive for Business). I dati più recenti possono richiedere fino a 24 ore prima di essere visualizzati nei report.
   
-![Filtri nei report sulla governance dei dati](media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
+![Filtri nei report sulla governance dei dati](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   
 

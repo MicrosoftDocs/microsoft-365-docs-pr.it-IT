@@ -1,5 +1,7 @@
 ---
 title: Proteggere i file nei team con etichette di riservatezza
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Sintesi: applicare etichette di riservatezza per proteggere i file in un team estremamente riservato.'
-ms.openlocfilehash: f52b864087d22e14bb3e9bfe1eb38d088f6f981a
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: b263aeae335b83cadb45b16d70a2a45d56f1cbd3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925810"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083370"
 ---
 # <a name="protect-files-in-teams-with-sensitivity-labels"></a>Proteggere i file nei team con etichette di riservatezza
 
@@ -48,7 +50,7 @@ Una volta creata, pubblicare la nuova etichetta o sottoetichetta per gli utenti,
 
 Ecco la configurazione del team estremamente riservato che utilizza etichette di riservatezza per le autorizzazioni e la crittografia dei file.
 
-![Protezione di base per un team pubblico.](../media/highly-confidential-team-dlp-sensitivity-labels.png)
+![Protezione di base per un team pubblico.](../../media/highly-confidential-team-dlp-sensitivity-labels.png)
 
 
 ## <a name="see-also"></a>Vedere anche

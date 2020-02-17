@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Il dashboard di classificazione dei dati offre visibilità sulla quantità di dati riservati che sono stati individuati e classificati nell'organizzazione.
-ms.openlocfilehash: 06fe15af513a737ac7669a3115891b7b731d7458
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 76c1199fa3842428900db197f15728c116f778b9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595453"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076397"
 ---
 # <a name="data-classification-overview-preview"></a>Panoramica della classificazione dei dati (anteprima)
 
@@ -41,11 +41,11 @@ Microsoft 365 fornisce diverse definizioni delle tipologie di informazioni riser
 
 La scheda tipologie di informazioni riservate mostra le principali tipologie di informazioni riservate individuate ed etichettate all'interno dell'organizzazione.
 
-![tipologie principali di informazioni riservate](media/data-classification-sens-info-types-card.png)
+![tipologie principali di informazioni riservate](../media/data-classification-sens-info-types-card.png)
 
 Per determinare il numero di elementi in una determinata categoria di classificazione, passare il puntatore del mouse sulla barra della categoria.
 
-![principali tipologie di informazioni riservate visualizzate al passaggio del mouse](media/data-classification-sens-info-types-hover.png)
+![principali tipologie di informazioni riservate visualizzate al passaggio del mouse](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
 > Se la scheda mostra il messaggio "Nessun dato trovato per le informazioni riservate". Questo significa che non sono presenti elementi nell'organizzazione classificati come tipologia di informazioni riservate o sottoposti a ricerca per indicizzazione. Per iniziare a usare le etichette, vedere:
@@ -60,13 +60,13 @@ Quando si applica un'etichetta di riservatezza a un elemento tramite Microsoft 3
 - il tag che indica il valore dell'elemento per l'organizzazione viene incorporato nel documento e lo seguirà ovunque
 - la presenza del tag permette varie misure protettive, ad esempio la filigrana obbligatoria o la crittografia. Con la protezione dell'endpoint abilitata, è anche possibile impedire a un elemento di eludere il controllo dell'organizzazione.
 
-Per ulteriori informazioni sulle etichette di riservatezza, vedere: [Panoramica delle etichette di riservatezza](sensitivity-labels.md)
+Per ulteriori informazioni sulle etichette di riservatezza, vedere [Informazioni sulle etichette di riservatezza](sensitivity-labels.md)
 
 Le etichetta di riservatezza devono essere abilitate per i file che si trovano in SharePoint e OneDrive affinché i dati corrispondenti vengano visualizzati nella pagina di classificazione dei dati. Per altre informazioni, vedere [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)](sensitivity-labels-sharepoint-onedrive-files.md).
 
 La scheda etichetta di riservatezza mostra il numero di elementi (e-mail o documenti) in base al livello di riservatezza.
 
-![schermata della scomposizione dei contenuti in base al segnaposto di classificazione delle etichette di riservatezza](media/data-classification-top-sensitivity-labels-applied.png)
+![schermata della scomposizione dei contenuti in base al segnaposto di classificazione delle etichette di riservatezza](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
 > Se non sono state create o pubblicate etichette di riservatezza o non è stata applicata alcuna etichetta di riservatezza ai contenuti, la scheda visualizzerà il messaggio "Non sono state rilevate etichette di riservatezza". Per iniziare a usare le etichette, vedere:
@@ -78,7 +78,7 @@ Le etichette di conservazione vengono usate per gestire l'eliminazione dei conte
 
 Le scheda delle principali etichette di conservazione applicate mostra il numero di elementi con una determinata etichetta di conservazione.
 
-![schermata segnaposto delle principali etichette di conservazione](media/data-classification-top-retention-labels-applied.png)
+![schermata segnaposto delle principali etichette di conservazione](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
 > Se la scheda mostra il messaggio "Non sono state rilevate etichette di conservazione" significa che non sono state create o pubblicate etichette di conservazione o non è stata applicata alcuna etichetta di conservazione ai contenuti. Per iniziare a usare le etichette di conservazione, vedere:

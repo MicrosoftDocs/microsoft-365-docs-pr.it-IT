@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Per implementare una strategia di gestione dei record nella tua organizzazione Microsoft o Office 365, usare etichette di conservazione che dichiarino un contenuto come record. Quindi pubblicare o applicare automaticamente l'etichetta record di conservazione.
-ms.openlocfilehash: 36482ea4a6bb9fb932d72b76dff5f0647d467a9b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 87bed90f4c9bf27eb960a2018b6a641ff3e06993
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601683"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081684"
 ---
 # <a name="overview-of-records"></a>Panoramica dei record
 
@@ -62,7 +62,7 @@ Tenere presente quanto segue in relazione ai record:
 
     Se un utente prova a eliminare un record in SharePoint, viene visualizzato un messaggio di errore che indica che l'elemento non è stato eliminato e che rimane nella raccolta.
 
-    ![Messaggio che segnala che un elemento non è stato eliminato da SharePoint](media/d0020726-1593-4a96-b07c-89b275e75c49.png)
+    ![Messaggio che segnala che un elemento non è stato eliminato da SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
     Se un utente prova a eliminare un record in OneDrive, l'elemento viene spostato nella raccolta di archiviazione, come descritto in [Funzionamento dei criteri di conservazione con il contenuto presente](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites).
 
@@ -76,7 +76,7 @@ Quando si crea un'etichetta di conservazione, si può scegliere di usarla per cl
 
 2. Nella pagina **Impostazioni etichetta** della procedura guidata scegliere l'opzione di impostazione dell'etichetta di conservazione per dichiarare il contenuto come record.<br/>
 
-   ![Fare clic sulla casella di controllo Utilizza l'etichetta per classificare il contenuto come Record](media/recordversioning6.png)
+   ![Fare clic sulla casella di controllo Utilizza l'etichetta per classificare il contenuto come Record](../media/recordversioning6.png)
 
 3. [Pubblicare](labels.md#how-retention-labels-work-with-retention-label-policies) o [Applicare automaticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) l'etichetta di conservazione ai siti di SharePoint e/o agli account di OneDrive.
 
@@ -91,7 +91,7 @@ Per Exchange, qualsiasi utente con accesso in scrittura alla cassetta postale pu
 Ecco l'aspetto di una etichetta record applicata a un documento in un sito di SharePoint o un account di OneDrive.
 <br/><br/>
 
-![Riquadro dei dettagli per un documento taggato come record](media/recordversioning7.png)
+![Riquadro dei dettagli per un documento taggato come record](../media/recordversioning7.png)
 
 ## <a name="record-versioning"></a>Controllo delle versioni del record
 
@@ -108,7 +108,7 @@ Per usare il controllo delle versioni dei record, prima di tutto occorre usare i
 Il controllo delle versioni del record è automaticamente disponibile per qualsiasi documento con un'etichetta di conservazione che dichiara l'elemento come record. Quando un utente visualizza le proprietà del documento tramite il riquadro dei dettagli, cambia lo **Stato del record** da **Bloccato** a **Sbloccato**. Questo singolo clic crea un record nella cartella Record della raccolta di archiviazione, dove rimane fino alla fine del periodo di conservazione. Quando il documento è sbloccato, qualsiasi utente con autorizzazioni può modificare il file. Tuttavia, gli utenti non possono eliminare il file, perché è considerato come un record dichiarato. Dopo aver apportato le modifiche necessarie, l'utente può quindi impostare lo **Stato del record** da **Sbloccato** a **Bloccato**, in modo che il documento venga di nuovo dichiarato come record e non possa essere modificato.
 <br/><br/>
 
-![Proprietà Stato del record nel documento taggato come record](media/recordversioning8.png)
+![Proprietà Stato del record nel documento taggato come record](../media/recordversioning8.png)
 
 > [!NOTE]
 > Il controllo delle versioni del record richiede una licenza di Office 365 Enterprise E5 per ogni utente che dispone delle autorizzazioni necessarie per modificare il contenuto dichiarato come record in un sito di SharePoint o un account di OneDrive. Gli utenti che hanno accesso in sola lettura non hanno bisogno di questa licenza.
@@ -118,7 +118,7 @@ Il controllo delle versioni del record è automaticamente disponibile per qualsi
 Una volta assegnata un'etichetta di conservazione a un documento, qualsiasi utente del gruppo Membri predefinito (con livello di autorizzazione Collaborazione) può sbloccare un record o bloccare un record sbloccato.
 <br/><br/>
 
-![Lo stato del record mostra se il documento record è sbloccato](media/recordversioning9.png)
+![Lo stato del record mostra se il documento record è sbloccato](../media/recordversioning9.png)
 
 Quando un utente sblocca un record, si verificano le operazioni seguenti:
 
@@ -139,7 +139,7 @@ Quando un utente blocca un record, il documento originale torna a non essere mod
 Ogni volta che un utente sblocca un record, la versione più recente viene copiata nella cartella Record della raccolta di archiviazione, che contiene il valore di **Record** nel campo **Commenti** della cronologia delle versioni.
 <br/><br/>
 
-![Record mostrato nella raccolta di archiviazione](media/recordversioning10.png)
+![Record mostrato nella raccolta di archiviazione](../media/recordversioning10.png)
 
 Per visualizzare la cronologia delle versioni, selezionare un documento nella raccolta documenti e quindi fare clic su **Cronologia delle versioni** nel menu dell’elemento.
 
@@ -148,11 +148,11 @@ Per visualizzare la cronologia delle versioni, selezionare un documento nella ra
 I record vengono archiviati nella cartella Record della raccolta di archiviazione nel sito principale della raccolta siti. Nel riquadro di spostamento sinistro del sito principale scegliere **Contenuto del sito** \> **Raccolta di archiviazione**.
 <br/><br/>
 
-![Raccolta di archiviazione](media/recordversioning11.png)
+![Raccolta di archiviazione](../media/recordversioning11.png)
 
 <br/><br/>
 
-![Cartella Record nella raccolta di archiviazione](media/recordversioning12.png)
+![Cartella Record nella raccolta di archiviazione](../media/recordversioning12.png)
 
 La raccolta di archiviazione è visibile solo agli amministratori della raccolta siti. Inoltre, la raccolta di archiviazione non esiste per impostazione predefinita. Viene creata solo quando il contenuto soggetto a un'etichetta o a un criterio di conservazione viene eliminato per la prima volta nella raccolta siti.
 
@@ -161,6 +161,6 @@ La raccolta di archiviazione è visibile solo agli amministratori della raccolta
 Le azioni per bloccare e sbloccare i record vengono registrate nel log di controllo di Office 365. È possibile cercare le attività specifiche **Stato del record modificato in Bloccato** e **Stato del record modificato in Sbloccato**, che si trovano nella sezione **Attività su file e pagine** nell'elenco a discesa **Attività** nella pagina **Ricerca log di controllo** nel centro sicurezza e conformità.
 <br/><br/>
 
-![Cercare nel log di controllo gli eventi di controllo delle versioni del record](media/recordversioning13.png)
+![Cercare nel log di controllo gli eventi di controllo delle versioni del record](../media/recordversioning13.png)
 
 Per altre informazioni su come cercare questi eventi, vedere la sezione "Attività su file e pagine" in [Ricerche nel log di controllo Centro sicurezza e conformità](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).

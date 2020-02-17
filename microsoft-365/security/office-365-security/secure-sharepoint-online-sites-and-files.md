@@ -21,12 +21,13 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Riepilogo: suggerimenti di configurazione per proteggere i file in SharePoint Online e Office 365.'
-ms.openlocfilehash: 29bd8ade5f32a2ba7e810d587d731d5036a372b6
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 542cf1c899b0eee21b458cd8e9dd5fb8363cf1e9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830990"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082297"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteggere siti e file di SharePoint Online
 
@@ -50,7 +51,7 @@ Per altre informazioni su questi livelli e sulle funzionalità consigliate per o
 
 I consigli per i siti del team di SharePoint Online si basano su una vasta gamma di funzionalità di Microsoft 365. La figura seguente mostra le configurazioni consigliate per quattro siti del team di SharePoint Online.
 
-![Configurazione consigliata per i siti di SharePoint](../media/SharePoint-site-configurations.png)
+![Configurazione consigliata per i siti di SharePoint](../../media/SharePoint-site-configurations.png)
 
 Come illustrato nell'esempio:
 
@@ -140,7 +141,7 @@ L'uso delle etichette di conservazione è consigliato per ambienti con dati sens
 
 - Gli utenti dell'organizzazione possono applicare manualmente un'etichetta al contenuto in Outlook sul web, Outlook 2010 e versioni successive, OneDrive for Business, SharePoint Online e gruppi di Office 365. Gli utenti, spesso, conoscono al meglio il tipo di contenuto cui stanno lavorando, pertanto possono classificarlo e applicarvi i criteri DLP appropriati.
 
-![Configurazione consigliata per i siti di SharePoint](../media/7fed0126-ab4a-4480-922c-681970642339.png)
+![Configurazione consigliata per i siti di SharePoint](../../media/7fed0126-ab4a-4480-922c-681970642339.png)
 
 Come indica l'illustrazione, questa soluzione include la creazione delle etichette di conservazione seguenti:
 

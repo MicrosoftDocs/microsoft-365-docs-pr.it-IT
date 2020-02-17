@@ -1,5 +1,7 @@
 ---
 title: Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Riepilogo: creare sottoscrizioni di valutazione di Office 365 ed Enterprise Mobility + Security (EMS) con utenti e gruppi per un ambiente di sviluppo/test di una campagna politica.'
-ms.openlocfilehash: a5bce86ef7bce79d58628b78d95e02484051c389
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971844"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083485"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
 
@@ -185,11 +187,11 @@ Seguire questi passaggi per verificare che l'appartenenza ai gruppi dinamici e l
 
 Registrare questi valori per utilizzarli con le sottoscrizioni di valutazione di Office 365 ed EMS per questo ambiente di sviluppo/test:
 
-- Nome dell'organizzazione della sottoscrizione di valutazione: ![Sottolineato](../media/Common-Images/TableLine.png)
+- Nome dell'organizzazione della sottoscrizione di valutazione: ![Sottolineato](../../media/Common-Images/TableLine.png)
 
   Ad esempio, per il nome di dominio della sottoscrizione di valutazione di contoso.onmicrosoft.com, il nome dell'azienda è "contoso".
 
-- Amministratore globale di Office 365: ![Sottolineato](../media/Common-Images/TableLine.png).onmicrosoft.com
+- Amministratore globale di Office 365: ![Sottolineato](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Registrare la password per l'account e la password iniziale comune per gli altri account utente in un luogo sicuro.
 

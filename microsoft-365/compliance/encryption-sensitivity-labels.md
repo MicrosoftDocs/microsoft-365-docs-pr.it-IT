@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
-ms.openlocfilehash: e27e130e96086dd37dd1cf5f49c30ebc764a8958
-ms.sourcegitcommit: 21be88a1b38b6554ffa1bc5b743c129fe8547704
+ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41830950"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074636"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -63,7 +63,7 @@ Quando si [crea o si modifica un'etichetta di riservatezza](create-sensitivity-l
 
 Configurazione delle opzioni di crittografia:
 
-![Opzioni delle etichette di riservatezza per la crittografia](media/encrytion-options-sensitivity-label.png)
+![Opzioni delle etichette di riservatezza per la crittografia](../media/encrytion-options-sensitivity-label.png)
 
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Cosa accade alla crittografia esistente in seguito all'applicazione di un'etichetta
@@ -111,7 +111,7 @@ In alternativa, se si ha un'etichetta di riservatezza denominata **Contratti com
 
 Scegliere di assegnare le autorizzazioni adesso o consentire agli utenti di assegnare le autorizzazioni: 
 
-![Opzione per aggiungere autorizzazioni definite dall'utente o dall'amministratore](media/sensitivity-label-user-or-admin-defined-permissions.png)
+![Opzione per aggiungere autorizzazioni definite dall'utente o dall'amministratore](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 
 ## <a name="assign-permissions-now"></a>Assegnare le autorizzazioni adesso
@@ -124,7 +124,7 @@ Usare le opzioni seguenti per controllare chi può accedere ai documenti e ai me
 
 Impostazioni per il controllo di accesso del contenuto crittografato:
 
-![Impostazioni per le autorizzazioni definite dall'amministratore](media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![Impostazioni per le autorizzazioni definite dall'amministratore](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licenza d'uso di Rights Management per l'accesso offline
 
@@ -146,7 +146,7 @@ Per ulteriori informazioni su come modificare l'impostazione predefinita di 30 g
 
 Assegnazione delle autorizzazioni:
 
-![Opzioni per assegnare autorizzazioni agli utenti](media/Sensitivity-Assign-permissions-settings.png)
+![Opzioni per assegnare autorizzazioni agli utenti](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### <a name="add-users-or-groups"></a>Aggiungere utenti o gruppi
 
@@ -179,13 +179,13 @@ Quando si sceglie quali autorizzazioni assegnare agli utenti o ai gruppi, è pos
 
 Per ulteriori informazioni sulle singole specifiche autorizzazioni, vedere [Diritti di utilizzo e relative descrizioni](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Opzioni per scegliere autorizzazioni preimpostate o personalizzate](media/Sensitivity-Choose-permissions-settings.png)
+![Opzioni per scegliere autorizzazioni preimpostate o personalizzate](../media/Sensitivity-Choose-permissions-settings.png)
 
 Si noti che la stessa etichetta può concedere autorizzazioni diverse a vari utenti. Ad esempio, una singola etichetta può assegnare alcuni utenti come Revisore e un altro utente come Coautore, come mostrato nello screenshot seguente.
 
 Per eseguire questa operazione, aggiungere utenti o gruppi, assegnargli le autorizzazioni e salvare le impostazioni. Quindi ripetere questi passaggi, aggiungendo utenti e assegnando loro le autorizzazioni, salvando le impostazioni ogni volta. È possibile ripetere questa configurazione con la frequenza desiderata, in modo da poter definire autorizzazioni diverse per utenti diversi.
 
-![Utenti diversi con autorizzazioni diverse](media/Sensitivity-Multiple-users-permissions.png)
+![Utenti diversi con autorizzazioni diverse](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>L'emittente di Rights Management (l'utente che applica l'etichetta di riservatezza) dispone sempre dell'autorizzazione Controllo completo
 
@@ -207,7 +207,9 @@ Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietari
 
 - In Word, PowerPoint ed Excel, agli utenti viene chiesto di selezionare le autorizzazioni personalizzate per utenti, gruppi o organizzazioni specifici. 
     > [!NOTE]
-    > Questa opzione per Word, PowerPoint ed Excel è supportata dal client di etichettatura unificata di Azure Information Protection. Per le app che usano l'etichettatura predefinita, il supporto è attualmente in fase di distribuzione nell'[anteprima per Windows e Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). Se questa opzione è selezionata ma non è supportata per l'app di un utente, l'etichetta non viene visualizzata dall'utente.
+    > Questa opzione per Word, PowerPoint ed Excel è supportata dal client di etichettatura unificata di Azure Information Protection. Per le app che usano l'etichettatura predefinita, il supporto è attualmente in [anteprima per Windows e Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). 
+    > 
+    > Se questa opzione è selezionata ma non è supportata per l'app di un utente, l'etichetta non viene visualizzata oppure (attualmente in distribuzione in anteprima per iOS e Android) viene visualizzata per coerenza, ma non può essere applicata e viene visualizzato un messaggio di spiegazione per gli utenti.
 
 Se le opzioni sono supportate, usare la tabella seguente per accertarsi se gli utenti visualizzano l'etichetta di riservatezza:
 
@@ -222,13 +224,13 @@ Un'etichetta di riservatezza che consente agli utenti di assegnare autorizzazion
 
 Configurazione delle autorizzazioni assegnate dall'utente:
 
-![Impostazioni di crittografia per le autorizzazioni definite dall'utente](media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![Impostazioni di crittografia per le autorizzazioni definite dall'utente](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### <a name="outlook-restrictions"></a>Restrizioni di Outlook
 
 In Outlook, quando un utente applica un'etichetta di riservatezza che consente di assegnare autorizzazioni a un messaggio, le restrizioni sono le stesse dell'opzione Non inoltrare. Gli utenti vedranno il nome e la descrizione dell'etichetta nella parte superiore del messaggio, il che indica che il contenuto è protetto. Diversamente da Word, PowerPoint ed Excel (vedere la [sezione successiva](#word-powerpoint-and-excel-permissions)), agli utenti non viene chiesto di selezionare autorizzazioni specifiche.
 
-![Etichetta di riservatezza applicata a un messaggio in Outlook](media/sensitivity-label-outlook-protection-applied.png)
+![Etichetta di riservatezza applicata a un messaggio in Outlook](../media/sensitivity-label-outlook-protection-applied.png)
 
 Se l'opzione Non inoltrare viene applicata a un messaggio di posta elettronica, il messaggio viene crittografato e i destinatari devono essere autenticati. Quindi i destinatari non potranno inoltrarlo, stamparlo o copiarlo. Ad esempio, nel client Outlook il pulsante Inoltra non è disponibile, le opzioni di menu Salva con nome e Stampa non sono disponibili e non è possibile aggiungere o modificare i destinatari nelle caselle A, Cc o Ccn.
 
@@ -244,7 +246,7 @@ Ad esempio, usando il client di etichettatura unificata di Azure Information Pro
 - Selezionare utenti, gruppi o organizzazioni. Questo può includere persone sia interne che esterne alle organizzazioni.
 - Impostare una data di scadenza, dopodiché gli utenti selezionati non potranno accedere al contenuto. Per altre informazioni, vedere la sezione precedente [Licenza d’uso di Rights Management per l'accesso offline](#rights-management-use-license-for-offline-access).
 
-![Opzioni per l’utente per la protezione con autorizzazioni personalizzate](media/sensitivity-aip-custom-permissions-dialog.png)
+![Opzioni per l’utente per la protezione con autorizzazioni personalizzate](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 Per l'etichettatura predefinita, gli utenti visualizzano la stessa finestra di dialogo se selezionano quanto segue:
 

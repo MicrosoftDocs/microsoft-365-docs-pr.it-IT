@@ -18,18 +18,18 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali.
-ms.openlocfilehash: fbdae1222a8969b5f7bdd928e7baadfda70bb937
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 617f0fde0e4b15a014658ba0fc3cf2def4b88d81
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598793"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088397"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorare la perdita di dati personali
 
 Sono disponibili molti strumenti che è possibile utilizzare per monitorare l'uso e il trasporto dei dati personali. In questo argomento ne vengono descritti tre.
 
-![Strumenti per monitorare l'uso e il trasporto dei dati personali](../media/Monitor-for-leaks-of-personal-data-image1.png)
+![Strumenti per monitorare l'uso e il trasporto dei dati personali](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 Nella figura:
 
@@ -63,7 +63,7 @@ I report DPL sono disponibili nel centro sicurezza e nel centro conformità. Pas
 
 Per ulteriori informazioni, vedere [Visualizzare i report di prevenzione della perdita di dati](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
 
-![Report che mostra le corrispondenze ai criteri DLP](../media/Monitor-for-leaks-of-personal-data-image2.png)
+![Report che mostra le corrispondenze ai criteri DLP](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## <a name="office-365-audit-log-and-alert-policies"></a>Log di controllo di Office 365 e criteri di avviso
 
@@ -105,7 +105,7 @@ Per conoscere meglio l'ambiente cloud in uso, la funzionalità di analisi di Clo
 
 Ad esempio, nella seguente figura sono illustrati due criteri di Cloud App Security che possono risultare utili con RGPD.
 
-![Criteri di Cloud App Security di esempio](../media/Monitor-for-leaks-of-personal-data-image3.png)
+![Criteri di Cloud App Security di esempio](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 Il primo criterio avvisa quando i file con un attributo PII predefinito o un'espressione personalizzata selezionati vengono condivisi all'esterno dell'organizzazione dalle app SaaS scelte.
 
@@ -123,7 +123,7 @@ Se ancora non si usa Cloud App Security, iniziare a configurarlo. Per accedere a
 
 Nota: verificare che "Analizza automaticamente i file per le etichette di classificazione di Azure Information Protection" (nelle impostazioni generali) sia abilitato prima di iniziare a usare Cloud App Security o ad assegnare etichette. Dopo la configurazione, Cloud App Security non ripete l'analisi dei file esistenti finché non vengono modificati.
 
-![Dashboard con informazioni sugli avvisi](../media/Monitor-for-leaks-of-personal-data-image4.png)
+![Dashboard con informazioni sugli avvisi](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Ulteriori informazioni:
 
