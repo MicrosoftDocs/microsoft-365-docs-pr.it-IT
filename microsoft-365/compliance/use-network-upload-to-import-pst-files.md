@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Per gli amministratori: informazioni su come usare il caricamento in rete per importare più file PST in blocco nelle cassette postali degli utenti in Office 365.'
-ms.openlocfilehash: 2db98c36091e6cc5be2eb5fa451b76a66f8ac49f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4420c2a684b020053bab88a14f46a73a795bd37d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601343"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069345"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-office-365"></a>Usare il caricamento in rete per importare file PST dell'organizzazione in Office 365
 
@@ -100,7 +100,7 @@ Il primo passaggio consiste nello scaricare e installare AzCopy, lo strumento ch
     > [!NOTE]
     > È necessario avere le autorizzazioni appropriate per accedere alla pagina di importazione**** nel Centro sicurezza e conformità. Per altre informazioni, vedere la sezione **Prima di iniziare**. 
     
-3. Nella pagina **Importa file PST**, fare clic su ![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif) **Nuovo processo di importazione**.
+3. Nella pagina **Importa file PST**, fare clic su ![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif) **Nuovo processo di importazione**.
     
     Viene avviata la procedura guidata per il processo di importazione.
     
@@ -108,11 +108,11 @@ Il primo passaggio consiste nello scaricare e installare AzCopy, lo strumento ch
     
 5. Nella pagina **Caricare o spedire i dati?**, fare clic su **Caricamento dei dati**, quindi su **Avanti**.
     
-    ![Fare clic su Caricamento dei dati per creare un processo di importazione per il caricamento in rete](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
+    ![Fare clic su Caricamento dei dati per creare un processo di importazione per il caricamento in rete](../media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
 6. Nella pagina **Importa dati** eseguire le due procedure seguenti: 
     
-    ![Copiare l'URL della firma di accesso condiviso e scaricare lo strumento AzCopy nella pagina Importa dati](media/74411014-ec4b-4e25-9065-404c934cce17.png)
+    ![Copiare l'URL della firma di accesso condiviso e scaricare lo strumento AzCopy nella pagina Importa dati](../media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
     a. Nel passaggio 2 fare clic su **Mostra l'URL della firma di accesso condiviso per il caricamento in rete**. Dopo aver visualizzato l'URL della firma di accesso condiviso, fare clic su **Copia negli Appunti** e incollarlo e salvarlo in un file in modo da potervi accedere in un secondo momento.
     
@@ -181,7 +181,7 @@ Per installare Azure Storage Explorer e connettersi all'area di Archiviazione di
     
 2. Avviare Microsoft Azure Storage Explorer, fare clic con il pulsante destro del mouse su **Account di archiviazione** nel riquadro sinistro e quindi scegliere **Connetti ad Archiviazione di Azure**.
     
-    ![Fare clic con il pulsante destro del mouse su Account di archiviazione e quindi scegliere Connetti ad Archiviazione di Azure](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+    ![Fare clic con il pulsante destro del mouse su Account di archiviazione e quindi scegliere Connetti ad Archiviazione di Azure](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
 3. Fare clic sul comando** **per usare un URI della firma di accesso condiviso o una stringa di connessione e quindi fare clic su **Avanti**.
     
@@ -191,11 +191,11 @@ Per installare Azure Storage Explorer e connettersi all'area di Archiviazione di
     
     Il contenitore **ingestiondata** viene aperto. Contiene i file PST caricati nel passaggio 2. Il contenitore **ingestiondata** si trova in **Account di archiviazione** \> **(SAS-Attached Services)** \> **Contenitori BLOB**. 
     
-    ![Azure Storage Explorer mostra un elenco dei file PST caricati](media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
+    ![Azure Storage Explorer mostra un elenco dei file PST caricati](../media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
   
 6. Dopo aver finito di usare Microsoft Azure Storage Explorer, fare clic con il pulsante destro del mouse su **ingestiondata** e quindi scegliere **Scollega** per scollegarsi dall'area di Archiviazione di Azure. In caso contrario, verrà visualizzato un messaggio di errore al successivo tentativo di collegamento. 
     
-    ![Fare clic con il pulsante destro del mouse su ingestiondata e scegliere e scegliere Scollega per disconnettersi dall'area di Archiviazione di Azure](media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
+    ![Fare clic con il pulsante destro del mouse su ingestiondata e scegliere e scegliere Scollega per disconnettersi dall'area di Archiviazione di Azure](../media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
   
 ## <a name="step-4-create-the-pst-import-mapping-file"></a>Passaggio 4: Creare il file di mapping per l'importazione PST
 
@@ -247,7 +247,7 @@ Il passaggio successivo consiste nel creare il processo di importazione PST nel 
     
 2. Nel riquadro sinistro del Centro sicurezza e conformità, fare clic su **Governance delle informazioni > Importa > Importa file PST**.
     
-3. Nella pagina **Importa file PST**, fare clic su ![Icona Aggiungi](media/ITPro-EAC-AddIcon.gif) **Nuovo processo di importazione**.
+3. Nella pagina **Importa file PST**, fare clic su ![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif) **Nuovo processo di importazione**.
     
     **Nota:** è necessario avere le autorizzazioni appropriate per accedere alla pagina di importazione** **nel Centro sicurezza e conformità e creare un processo di importazione. Per altre informazioni, vedere la sezione **Prima di iniziare**. 
     
@@ -255,19 +255,19 @@ Il passaggio successivo consiste nel creare il processo di importazione PST nel 
     
 5. Nella pagina **Caricare o spedire i dati?**, fare clic su **Caricamento dei dati**, quindi su **Avanti**.
     
-    ![Fare clic su Caricamento dei dati per creare un processo di importazione per il caricamento in rete](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
+    ![Fare clic su Caricamento dei dati per creare un processo di importazione per il caricamento in rete](../media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
 6. Nella pagina **Importa dati** del passaggio 4, selezionare le caselle di controllo **Ho completato il caricamento dei file** e **Ho accesso al file di mapping** e quindi fare clic su **Avanti**.
     
-    ![Selezionare le due caselle di controllo del passaggio 4](media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
+    ![Selezionare le due caselle di controllo del passaggio 4](../media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
   
 7. Nella pagina **Seleziona file di mapping**, fare clic su **Seleziona file di mapping** per inviare il file di mapping dell'importazione PST creato nel passaggio 4. 
     
-    ![Fare clic su Seleziona file di mapping per inviare il file CSV creato per il processo di importazione](media/d30b1d73-80bb-491e-a642-a21673d06889.png)
+    ![Fare clic su Seleziona file di mapping per inviare il file CSV creato per il processo di importazione](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
 8. Quando il nome del file CSV viene visualizzato nell'elenco, in **Nome file di mapping** fare clic su **Convalida** per verificare che non ci siano errori nel file CSV. 
     
-    ![Fare clic su Convalida per verificare la presenza di errori nel file CSV](media/4680999d-5538-4059-b878-2736a5445037.png)
+    ![Fare clic su Convalida per verificare la presenza di errori nel file CSV](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
     Per creare un processo di importazione PST, il file CSV deve essere convalidato correttamente. Il nome del file diventa verde dopo la convalida. In caso contrario, fare clic sul collegamento **Visualizza log**. Viene aperto un report di errore di convalida, con un messaggio di errore per ogni riga del file per cui la convalida non è riuscita.
     
@@ -277,7 +277,7 @@ Il passaggio successivo consiste nel creare il processo di importazione PST nel 
     
     Viene visualizzata una pagina di stato a comparsa con lo stato **Analisi in corso ** e il nuovo processo di importazione viene visualizzato nell'elenco nella pagina **Importa file PST**. 
     
-11. Fare clic su **Aggiorna** ![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) per aggiornare le informazioni visualizzate nella colonna **Stato**. Quando l'analisi è completa e i dati sono pronti per l'importazione, lo stato diventa **Analisi completata**.
+11. Fare clic su **Aggiorna** ![icona Aggiorna](../media/O365-MDM-Policy-RefreshIcon.gif) per aggiornare le informazioni visualizzate nella colonna **Stato**. Quando l'analisi è completa e i dati sono pronti per l'importazione, lo stato diventa **Analisi completata**.
     
     È possibile fare clic sul processo di importazione per visualizzare la pagina di stato a comparsa, che contiene informazioni più dettagliate sul processo di importazione, ad esempio lo stato di ogni file PST presente nel file di mapping.
  
@@ -287,7 +287,7 @@ Dopo avere creato il processo di importazione nel passaggio 5, Office 365 analiz
   
 1. Nella pagina **Importa file PST** nel Centro sicurezza e conformità, fare clic su **Pronti a importare in Office 365** per il processo di importazione creato nel passaggio 5. 
     
-    ![Fare clic su Pronti a importare in Office 365 accanto al processo di importazione creato](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
+    ![Fare clic su Pronti a importare in Office 365 accanto al processo di importazione creato](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
     Viene visualizzata una pagina a comparsa con informazioni sui file PST e sul processo di importazione.
     
@@ -295,7 +295,7 @@ Dopo avere creato il processo di importazione nel passaggio 5, Office 365 analiz
     
     Viene visualizzata la pagina **Filtrare i dati**. Contiene informazioni dettagliate sui dati risultanti dall'analisi eseguita sui file PST da Office 365, incluse le informazioni sulla validità dei dati. A questo punto è possibile filtrare i dati che verranno importati oppure importare tutti i dati. 
     
-    ![È possibile tagliare i dati nei file PST o importarli tutti](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
+    ![È possibile tagliare i dati nei file PST o importarli tutti](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
 3. Eseguire una delle operazioni seguenti:
     
@@ -309,7 +309,7 @@ Dopo avere creato il processo di importazione nel passaggio 5, Office 365 analiz
     
 4. Se si sceglie di importare tutti i dati, fare clic su **Importa dati** per avviare il processo di importazione. 
     
-    Lo stato del processo di importazione verrà visualizzato nella pagina **Importa file PST**. Fare clic su ![icona Aggiorna](media/O365-MDM-Policy-RefreshIcon.gif) **Aggiorna** per aggiornare le informazioni visualizzate nella colonna **Stato**. Fare clic sul processo di importazione per visualizzare la pagina di stato a comparsa, che mostra le informazioni sullo stato per ogni file PST importato. 
+    Lo stato del processo di importazione verrà visualizzato nella pagina **Importa file PST**. Fare clic su ![icona Aggiorna](../media/O365-MDM-Policy-RefreshIcon.gif) **Aggiorna** per aggiornare le informazioni visualizzate nella colonna **Stato**. Fare clic sul processo di importazione per visualizzare la pagina di stato a comparsa, che mostra le informazioni sullo stato per ogni file PST importato. 
 
 ## <a name="how-the-import-process-works"></a>Come funziona il processo di importazione:
   
@@ -317,7 +317,7 @@ Dopo avere creato il processo di importazione nel passaggio 5, Office 365 analiz
   
 Di seguito viene riportata un'illustrazione e una descrizione del processo di caricamento in rete per importare file PST nelle cassette postali di Office 365.
   
-![Flusso del processo di caricamento in rete per importare file PST in Office 365](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
+![Flusso del processo di caricamento in rete per importare file PST in Office 365](../media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
 1. **Scaricare la chiave e lo strumento di importazione PST in un percorso privato di Archiviazione di Azure:** il primo passaggio consiste nello scaricare la chiave di accesso e lo strumento da riga di comando AzCopy usati per caricare i file PST in un percorso di Archiviazione di Azure nel cloud Microsoft. Per ottenerli, usare la pagina di **importazione** nel Centro sicurezza e conformità. La chiave (denominata chiave della firma di accesso condiviso) fornisce all'utente le autorizzazioni necessarie per caricare i file PST in un percorso di Archiviazione di Azure privato e sicuro. Questa chiave di accesso è univoca per l'organizzazione e consente di impedire l'accesso non autorizzato ai file PST dopo il caricamento nel cloud Microsoft. L'importazione di file PST in Office 365 non richiede all'organizzazione di avere un altra sottoscrizione di Azure. 
     

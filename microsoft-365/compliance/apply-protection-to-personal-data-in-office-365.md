@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come usare i criteri di prevenzione della perdita dei dati (DLP) per proteggere i dati personali in Office 365.
-ms.openlocfilehash: b529a6d58537c4effca3cf198dcf807a0680129d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596063"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079756"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Applicare protezione ai dati personali in Office 365
 
@@ -46,7 +46,7 @@ Con DLP, è possibile:
 
 Per ulteriori informazioni, vedere [Panoramica dei criteri di prevenzione della perdita dei dati](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
-![Opzioni per la creazione del criterio DLP](Media/Apply-protection-to-personal-data-in-Office-365-image1.png)
+![Opzioni per la creazione del criterio DLP](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
 L'illustrazione seguente mostra le opzioni per la creazione di un criterio DLP:
 
@@ -172,7 +172,7 @@ I tipi, le etichette e i criteri di protezione della perdita di dati per le info
 
 La seguente illustrazione mostra l'ulteriore livello di protezione che è possibile applicare per proteggere l'accesso ai dati personali.
 
-![Ulteriore livello di protezione per proteggere l'accesso ai dati personali](Media/Apply-protection-to-personal-data-in-Office-365-image2.png)
+![Ulteriore livello di protezione per proteggere l'accesso ai dati personali](../media/Apply-protection-to-personal-data-in-Office-365-image2.png)
 
 Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni dell'illustrazione.
 
@@ -222,7 +222,7 @@ Customer Lockbox — Customer Lockbox consente di controllare il modo in cui un 
 
 Usare le autorizzazioni in SharePoint per fornire o limitare l'accesso degli utenti al sito o ai suoi contenuti. Aggiungere i singoli utenti o gruppi di Azure Active Directory ai gruppi di SharePoint predefiniti. In alternativa, creare un gruppo personalizzato per un controllo più dettagliato.
 
-![Livelli di autorizzazione dal controllo completo alla sola visualizzazione](Media/Apply-protection-to-personal-data-in-Office-365-image3.png)
+![Livelli di autorizzazione dal controllo completo alla sola visualizzazione](../media/Apply-protection-to-personal-data-in-Office-365-image3.png)
 
 L'illustrazione traccia i livelli di autorizzazione da Controllo completo a Solo visualizzazione. Nella seguente tabella sono incluse le stesse informazioni.
 
@@ -368,7 +368,7 @@ Per ambienti con identità ibride con AD FS, vedere [Configurazioni e criteri di
 
 La seguente illustrazione descrive il modo in cui si relazionano i servizi cloud (SaaS, PaaS), i tipi di account (account del dominio tenant vs account B2B) e le funzionalità di accesso al servizio. È importante notare quali funzionalità possono essere usate con gli account B2B.
 
-![Servizi cloud, tipi di account e funzionalità di accesso](Media/Apply-protection-to-personal-data-in-Office-365-image4.png)
+![Servizi cloud, tipi di account e funzionalità di accesso](../media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
 Ai fini dell'accessibilità, il resto di questa sezione descrive l'illustrazione seguente.
 

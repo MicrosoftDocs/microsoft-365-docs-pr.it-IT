@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con Esplora attività con etichette nel Centro sicurezza e conformità di Office 365, è possibile cercare e visualizzare rapidamente le attività con etichette per tutto il contenuto di SharePoint e OneDrive for Business degli ultimi 30 giorni. Si tratta di dati in tempo reale che offrono un quadro chiaro di ciò che accade nel tenant.
-ms.openlocfilehash: eebe1938195740565f064bbac20608255aa5ef73
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f1bb6f7a79759a9b2d36b5af334ced89e5b2b28a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597233"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068887"
 ---
 # <a name="view-label-activity-for-documents"></a>Visualizzare le attività delle etichette per i documenti
 
@@ -44,7 +44,7 @@ Explorer attività etichette è disponibile nel &amp;Centro sicurezza e conformi
   
 Esplora attività con etichette richiede un abbonamento a Office 365 Enterprise E5.
   
-![Esplora attività con etichette](media/671ca0cd-1457-40b4-9917-b663360afd95.png)
+![Esplora attività con etichette](../media/671ca0cd-1457-40b4-9917-b663360afd95.png)
   
 ## <a name="view-label-activities-for-files-or-folders"></a>Visualizzare le attività con etichette per file o cartelle
 
@@ -52,7 +52,7 @@ Nella parte superiore di Esplora attività con etichette è possibile scegliere 
   
 È consigliabile visualizzare le attività con etichette per le cartelle perché, se si etichetta una cartella, anche a tutti i file contenuti sarà applicata l'etichetta, ad eccezione di quelli a cui è già applicata esplicitamente un'etichetta. Di conseguenza, etichettare le cartelle potrebbe interessare un numero significativo di file. Per ulteriori informazioni, vedere [Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, una cartella o un set di documenti di SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
   
-![Menu a discesa che mostra le attività con etichette per file e cartelle](media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
+![Menu a discesa che mostra le attività con etichette per file e cartelle](../media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   
 ### <a name="label-activities"></a>Attività con etichette
 
@@ -62,12 +62,12 @@ Nella parte superiore di Esplora attività con etichette è possibile scegliere 
 
  **Modifiche di etichette** include le azioni potenzialmente pericolose di **rimozione** o **modifica** di un'etichetta. È possibile usare questa visualizzazione per vedere rapidamente queste azioni rischiose e l'utente che le ha eseguite. Nell'elenco delle attività sotto il grafico è possibile selezionare un file e fare clic su un collegamento al file nel riquadro dei dettagli a destra. 
   
-![Riquadro dei dettagli per attività con etichette](media/eb580fd4-b5be-4fda-9ba5-c1256777310d.png)
+![Riquadro dei dettagli per attività con etichette](../media/eb580fd4-b5be-4fda-9ba5-c1256777310d.png)
   
 ## <a name="filter-label-activity"></a>Filtrare le attività con etichette
 
 È possibile filtrare rapidamente i dati per visualizzare tutte le attività con etichette per un'etichetta, un file o un utente specifico. È anche possibile filtrare le attività con etichette in base alla posizione (SharePoint o OneDrive for Business) e in base a come è stata applicata l'etichetta, se manualmente o automaticamente.
   
-![Filtri per le attività con etichette](media/9de92985-120f-48b4-96a7-ef7ec8a71ff0.png)
+![Filtri per le attività con etichette](../media/9de92985-120f-48b4-96a7-ef7ec8a71ff0.png)
   
 

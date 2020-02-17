@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informazioni su come utilizzare le etichette di Office per il piano di protezione RGPD.
-ms.openlocfilehash: 7561daccb400fd5364e8c1ed948924f7975af5a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 179b71e9fa41b5e3e602dfe78848e9d1afc4699e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596093"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079801"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Applicare le etichette ai dati personali in Office 365
 
@@ -41,7 +41,7 @@ Al momento, l'uso di Azure Information Protection per applicare la crittografia 
 
 Le etichette di conservazione possono essere applicate ai messaggi di posta elettronica in Exchange Online e queste etichette funzionano con la prevenzione della perdita dei dati di Office 365. 
 
-![Le etichette di Office 365 e di Azure Information Protection](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Le etichette di Office 365 e di Azure Information Protection](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 Nella figura:
@@ -55,7 +55,7 @@ Nella figura:
 
 La figura seguente mostra come usare le etichette di conservazione e i tipi di informazioni sensibili in criteri di etichetta, criteri di prevenzione della perdita dei dati e i criteri di Cloud App Security.
 
-![Etichette di Office e tipi di informazioni riservate](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
+![Etichette di Office e tipi di informazioni riservate](../media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
 Ai fini dell'accessibilità, la seguente tabella fornisce le stesse informazioni dell'illustrazione.
 
@@ -210,7 +210,7 @@ Creare le etichette e i criteri nel centro sicurezza o nel centro conformità.
 La figura seguente mostra come creare un'etichetta Dati cliente da applicare automaticamente.
 
 
-![Creare e applicare un'etichetta per i dati del cliente](Media/Apply-labels-to-personal-data-in-Office-365-image3.png)
+![Creare e applicare un'etichetta per i dati del cliente](../media/Apply-labels-to-personal-data-in-Office-365-image3.png)
 
 Nella figura:
 

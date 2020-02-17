@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Note sulla versione di anteprima pubblica della classificazione dei dati.
-ms.openlocfilehash: fecf643d12cf544c16570c173b15bb1e0dc043f0
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: 1beae92089833327cedf6090690530d9e5457a37
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887339"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076363"
 ---
 # <a name="data-classification-public-preview-release-notes-preview"></a>Note sulla versione di anteprima pubblica della classificazione dei dati (anteprima)
 
@@ -40,7 +40,7 @@ Quando si esegue l'analisi delle cassette postali di Exchange, viene visualizzat
 
 ## <a name="seeing-guids-instead-of-label-names"></a>Visualizzare GUID anziché nomi etichette
 
-I clienti dell'anteprima privata hanno visto che istanze di eliminazione di etichette con cui erano stati contrassegnati contenuti hanno causato la restituzione di GUID a 32 bit in Esplora contenuto e Esplora attività anziché la visualizzazione del nome dell'etichetta. 
+I clienti dell'anteprima privata hanno notato istanze in cui le etichette migrate o l'eliminazione di etichette con cui erano già stati contrassegnati i contenuti hanno causato la restituzione di GUID a 32 bit in Esplora contenuto e Esplora attività anziché la visualizzazione del nome dell'etichetta. 
 
 ## <a name="rendering-of-encrypted-documents"></a>Rendering di documenti crittografati
 

@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Sintesi: suggerimenti di configurazione per proteggere i file in Microsoft Teams.'
-ms.openlocfilehash: d06b3b196b11804c8c06d3b63469b2c0a9aa2fcd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598473"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42088130"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>Proteggere i file in Microsoft Teams
 
@@ -49,7 +49,7 @@ Per altre informazioni su questi livelli e sulle funzionalità consigliate per o
 
 I consigli per i team protetti si basano su una vasta gamma di funzionalità di Microsoft 365. La figura seguente mostra le configurazioni consigliate.
 
-![Configurazione consigliata per i team](../media/secure-team-configurations.png)
+![Configurazione consigliata per i team](../../media/secure-team-configurations.png)
 
 Come illustrato nell'esempio:
 

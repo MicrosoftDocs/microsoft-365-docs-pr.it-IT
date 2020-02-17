@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Compliance Manager del Microsoft Service Trust Portal fornisce strumenti per monitorare, implementare e gestire i controlli che aiutano l'organizzazione a garantire la conformità con gli standard di sicurezza e di protezione dei dati (ad esempio GDPR, ISO 27001 e 27018, nonché HIPAA) quando si utilizzano servizi cloud Microsoft, come Office 365 e Microsoft Azure. Compliance Manager aiuta l'incaricato alla protezione dei dati e alla strategia della privacy dell'organizzazione a gestire la conformità e il processo di valutazione del rischio.
-ms.openlocfilehash: 52f6cbfb6e1c711b8b6bebec36bea965a9dc6e62
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 363b95294a9d06b425edcbb5c587f2f89878926b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602903"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071833"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance Manager (classico)
 
@@ -68,7 +68,7 @@ Una valutazione è costituita da diversi componenti:
     
     Di seguito viene riportato un esempio di tre controlli gestiti da Microsoft nella famiglia **Protezione** da una valutazione di Office 365 e del GDPR. 
 
-    ![Informazioni dettagliate sui controlli gestiti da Microsoft nel Compliance Manager](media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
+    ![Informazioni dettagliate sui controlli gestiti da Microsoft nel Compliance Manager](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
   
   a. Specifica le informazioni seguenti dalla certificazione o dalle normative associate al controllo gestito da Microsoft.
 
@@ -100,17 +100,17 @@ La tabella seguente descrive ogni autorizzazione per Compliance Manager e le ope
   
 ||**Compliance Manager - Lettore**|**Compliance Manager - Collaboratore**|**Compliance Manager - Valutatore**|**Compliance Manager - Amministratore**|**Amministratore del portale**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|**Lettura dati**: gli utenti possono leggere i dati, ma non modificarli.  <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|
-|**Modifica dati**: gli utenti possono modificare tutti i campi, tranne i campi Risultato del test e Data del test.  <br/> ||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Modifica risultati del test**: gli utenti possono modificare i campi Risultato del test e Data del test.  <br/> ||<br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Gestione valutazioni**: gli utenti possono creare, archiviare ed eliminare le valutazioni.  <br/> |||<br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Gestione utenti**: gli utenti possono aggiungere altri utenti dell'organizzazione per i ruoli di lettore, collaboratore, valutatore e amministratore. Solo gli utenti con ruolo di amministratore globale dell'organizzazione possono aggiungere o rimuovere utenti dal ruolo di amministratore del portale.  <br/> ||||<br/> |![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Lettura dati**: gli utenti possono leggere i dati, ma non modificarli.  <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|
+|**Modifica dati**: gli utenti possono modificare tutti i campi, tranne i campi Risultato del test e Data del test.  <br/> ||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Modifica risultati del test**: gli utenti possono modificare i campi Risultato del test e Data del test.  <br/> ||<br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Gestione valutazioni**: gli utenti possono creare, archiviare ed eliminare le valutazioni.  <br/> |||<br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Gestione utenti**: gli utenti possono aggiungere altri utenti dell'organizzazione per i ruoli di lettore, collaboratore, valutatore e amministratore. Solo gli utenti con ruolo di amministratore globale dell'organizzazione possono aggiungere o rimuovere utenti dal ruolo di amministratore del portale.  <br/> ||||<br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 ## <a name="understanding-the-compliance-score"></a>Comprendere il punteggio di conformità
 
 Nella dashboard, Compliance Manager visualizza un punteggio totale per la valutazione di Office 365 nell'angolo in alto a destra del riquadro. Si tratta del punteggio di conformità totale per la valutazione ed equivale alla somma dei punti ricevuti per la valutazione di ogni controllo contrassegnato come implementato e testato nella valutazione. Quando si aggiunge una valutazione, si vedrà che il Punteggio di conformità è già in fase di completamento, perché i punti per i controlli gestiti da Microsoft che sono stati implementati da Microsoft e testati da terzi indipendenti sono già stati applicati.
   
-![Dashboard di Compliance Manager: punteggio di conformità totale](media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
+![Dashboard di Compliance Manager: punteggio di conformità totale](../media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
   
 I punti rimanenti derivano dalla valutazione del controllo del cliente e dall'implementazione e dalla verifica dei controlli gestiti dal cliente, ciascuno con un valore specifico che contribuisce al punteggio complessivo di conformità. 
   
@@ -118,11 +118,11 @@ Ogni valutazione mostra un punteggio di conformità basato sul rischio che agevo
   
 Ad esempio, il controllo di valutazione per User Access Management mostrato in basso è classificato con un fattore di rischio molto alto, quindi il punteggio assegnato è 10.
   
-![Compliance Manager: livello di gravità alto del controllo di valutazione con punteggio 10](media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
+![Compliance Manager: livello di gravità alto del controllo di valutazione con punteggio 10](../media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
   
  Per fare un confronto, il controllo di valutazione per User Access Management mostrato in basso è classificato con un fattore di rischio inferiore, quindi il punteggio assegnato è 3. 
   
-![Compliance Manager: livello di gravità basso del controllo di valutazione con punteggio 3](media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
+![Compliance Manager: livello di gravità basso del controllo di valutazione con punteggio 3](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
   
 Compliance Manager assegna un livello di gravità predefinito ad ogni controllo. La classificazione del rischio viene calcolata in base ai criteri seguenti:
   
@@ -140,17 +140,17 @@ E soprattutto, il punteggio di conformità consente di stabilire priorità in me
   
 Nell'immagine seguente, ad esempio, si può notare che Office 365 - valutazione GDPR è valutato al 46% con 51 valutazioni di controllo su 111 completate, per un punteggio di conformità totale di 289 su 600 possibili.
   
-![Compliance Manager - Riepilogo delle valutazioni](media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
+![Compliance Manager - Riepilogo delle valutazioni](../media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
   
 Nella valutazione, il controllo GDPR 7.5.5 è correlato a 5 altri controlli (7.4.1, 7.4.3, 7.4.4, 7.4.8,.7.4.9), ognuno con un punteggio di 6 o 8 per la classificazione di gravità del rischio da moderata a molto elevata. Usando il filtro delle valutazioni sono stati selezionati e resi visibili tutti questi controlli nella visualizzazione di valutazione e, come si può vedere di seguito, nessuno di essi è stato valutato. 
   
-![Compliance Manager - Vista di valutazione - Controlli filtro, nessuno valutato](media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Poiché questi 6 controlli sono correlati, il completamento di ognuno di essi comporterà una sincronizzazione dei risultati di questi test attraverso i relativi controlli all'interno di questa valutazione (proprio come per qualsiasi controllo correlato in una valutazione che si trova nello stesso gruppo di valutazione). Al completamento dell'implementazione e della verifica del controllo GDPR 7.5.5, l'area dei dettagli di controllo si aggiorna per mostrare che tutti e 6 i controlli sono stati valutati, con un corrispondente aumento del numero di controlli valutati a 57 e 51% e un cambiamento nel punteggio di conformità totale superiore a 40. 
+![Compliance Manager - Vista di valutazione - Controlli filtro, nessuno valutato](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Poiché questi 6 controlli sono correlati, il completamento di ognuno di essi comporterà una sincronizzazione dei risultati di questi test attraverso i relativi controlli all'interno di questa valutazione (proprio come per qualsiasi controllo correlato in una valutazione che si trova nello stesso gruppo di valutazione). Al completamento dell'implementazione e della verifica del controllo GDPR 7.5.5, l'area dei dettagli di controllo si aggiorna per mostrare che tutti e 6 i controlli sono stati valutati, con un corrispondente aumento del numero di controlli valutati a 57 e 51% e un cambiamento nel punteggio di conformità totale superiore a 40. 
   
-![Vista di valutazione di Compliance Manager: i risultati del controllo sono sincronizzati](media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
+![Vista di valutazione di Compliance Manager: i risultati del controllo sono sincronizzati](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
   
 Questa finestra di dialogo di aggiornamento di conferma verrà visualizzata se si sta per modificare lo stato di implementazione di un controllo correlato con impatto sugli altri controlli correlati.
   
-![Valutazione di Compliance Manager: finestra di dialogo di conferma dell'aggiornamento dei controlli relativi alla verifica](media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
+![Valutazione di Compliance Manager: finestra di dialogo di conferma dell'aggiornamento dei controlli relativi alla verifica](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
   
 > [!NOTE]
 > Attualmente, solo le valutazioni per i servizi cloud di Office 365 includono un punteggio di conformità. Le valutazioni per Azure e Dynamics mostrano uno stato di valutazione. 
@@ -166,7 +166,7 @@ Le valutazioni in Compliance Manager si basano sul modello di responsabilità co
   
 Come illustrato nella valutazione GDPR di Office 365 seguente, Microsoft e i clienti sono responsabili dell'esecuzione di una serie di azioni ideate per soddisfare i requisiti dello standard o della normativa in fase di valutazione. Per razionalizzare e comprendere le esigenze. Le azioni in un'ampia gamma di standard e normative, Compliance Manager considera tutte le normative e gli standard come se fossero framework di controllo. Quindi, le azioni eseguite da Microsoft e dai clienti per ogni valutazione includono l'implementazione e la convalida di vari controlli.
   
-![Compliance Manager: valutazione GDPR](media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
+![Compliance Manager: valutazione GDPR](../media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
   
 Di seguito viene indicato il flusso di lavoro di base per un'azione tipica:
   
@@ -202,7 +202,7 @@ Compliance Manager utilizza una metodologia di valutazione basata sul rischio co
     
 - I driver esterni per il controllo
     
-![Compliance Manager - Metodologia del punteggio di conformità](media/e48764c4-828e-44b0-8636-fb3c352f2bac.png)
+![Compliance Manager - Metodologia del punteggio di conformità](../media/e48764c4-828e-44b0-8636-fb3c352f2bac.png)
   
  ### <a name="essence-of-the-control"></a>Essenza del controllo
   
@@ -322,23 +322,23 @@ Come indicato in precedenza, un vantaggio importante dell'uso dei gruppi è che,
   
 Per un esempio, si prendano questi due controlli delle valutazioni correlati, ognuno associato alla crittografia dei dati su reti pubbliche, controllo 6.10.1.2 in Office 365, valutazione GDPR e controllo SC-13 in Office 365, valutazione NIST 800-53. Sono controlli correlati di valutazione, in due valutazioni diverse, entrambe nel gruppo predefinito. Inizialmente, nessuna valutazione ha completato le valutazioni di controllo dei clienti, come visualizzato nella dashboard di Gestore conformità che mostra le due valutazioni.
   
-![Dashboard di Compliance Manager - valutazioni raggruppate - situazione precedente](media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
+![Dashboard di Compliance Manager - valutazioni raggruppate - situazione precedente](../media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
   
 Selezionando la valutazione **Office 365 - GDPR** e utilizzando i controlli di filtro per visualizzare il controllo GDPR 6.10.1.2, si noterà che il controllo NIST 800-53 SC-13 è elencato come controllo correlato.
   
-![Valutazione di Compliance Manager: controlli condivisi](media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
+![Valutazione di Compliance Manager: controlli condivisi](../media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
   
  In questa sezione viene indicato il completamento dell'implementazione e di verifica del controllo GDPR 6.10.1.2. 
   
-![Controllo GDPR 6.10.1.2 di Compliance Manager - superato](media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
+![Controllo GDPR 6.10.1.2 di Compliance Manager - superato](../media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
   
 Passando al controllo correlato nella valutazione raggruppata, vediamo che NIST 800-53 SC-13 è stato contrassegnato come completato con la stessa data e ora, senza ulteriori implementazioni o test.
   
-![Valutazione di Compliance Manager - NIST 800-53 SC (13) completato](media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
+![Valutazione di Compliance Manager - NIST 800-53 SC (13) completato](../media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
   
 Tornando al dashboard, si noti che ogni valutazione ha una valutazione del controllo completata e che il punteggio di conformità totale per ogni valutazione è aumentato di 8 (il valore del punteggio di conformità del controllo condiviso).
   
-![Dashboard di Compliance Manager - sincronizzazione di avanzamento della valutazione raggruppata](media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
+![Dashboard di Compliance Manager - sincronizzazione di avanzamento della valutazione raggruppata](../media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
 
 ## <a name="administrative-functions"></a>Funzioni amministrative
 
@@ -351,7 +351,7 @@ Funzioni amministrative specifiche sono disponibili solo per l'account dell'ammi
 
 Per ogni ruolo Compliance Manager sono previste autorizzazioni leggermente diverse. È possibile visualizzare le autorizzazioni assegnate a ciascun ruolo, vedere quali utenti sono in quali ruoli e aggiungere o rimuovere utenti da tale ruolo dal Service Trust Portal selezionando la voce di menu **Amministratore** e scegliendo **Impostazioni**. 
   
-![Menu di amministrazione del STP: impostazioni selezionate](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![Menu di amministrazione del STP: impostazioni selezionate](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
 Per aggiungere o rimuovere utenti da ruoli Compliance Manager.
   
@@ -367,11 +367,11 @@ Per aggiungere o rimuovere utenti da ruoli Compliance Manager.
     
 6. Per aggiungere utenti al ruolo, fare clic su **Aggiungi**. Nella finestra di dialogo **Aggiungi utenti**, fare clic sul campo utente. È possibile scorrere l'elenco degli utenti disponibili o iniziare a digitare il nome utente per filtrare l'elenco in base al termine di ricerca. Fare clic sull'utente per aggiungere l'account all'elenco **Aggiungi utenti** cui assegnare il ruolo. Per aggiungere più utenti contemporaneamente, iniziare a digitare un nome utente per filtrare l'elenco, quindi fare clic sull'utente da aggiungere all'elenco. Fare clic su **Salva** per assegnare il ruolo selezionato agli utenti. 
     
-    ![Compliance Manager - Assegnare ruoli - Aggiungere utenti](media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
+    ![Compliance Manager - Assegnare ruoli - Aggiungere utenti](../media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
   
 7. Per rimuovere utenti da questo ruolo, selezionare gli utenti e fare clic su **Elimina**. 
     
-    ![Compliance Manager - Assegnare ruoli - Rimuovere utenti](media/17004def-604f-471d-a54d-f678fcc01c1e.png)
+    ![Compliance Manager - Assegnare ruoli - Rimuovere utenti](../media/17004def-604f-471d-a54d-f678fcc01c1e.png)
  
 ## <a name="user-privacy-settings"></a>Impostazioni di privacy dell'utente
 
@@ -385,7 +385,7 @@ Alcune normative richiedono che un'organizzazione debba essere in grado di elimi
 
 - [Eliminare la cronologia dei dati dell'utente](#delete-user-data-history)
     
-![Amministratore di Compliance Manager - Funzioni delle impostazioni di privacy dell'utente](media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
+![Amministratore di Compliance Manager - Funzioni delle impostazioni di privacy dell'utente](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
   
 ### <a name="search-for-a-user"></a>Cercare un utente
 
@@ -463,13 +463,13 @@ Imposta gli elementi delle attività di controllo su "non assegnati" per tutte l
 
 Compliance Manager fornisce gli strumenti per assegnare, monitorare e registrare le attività correlate alla valutazione e consente all'organizzazione di superare le barriere riscontrate dai team e di raggiungere gli obiettivi di conformità.
   
-![Dashboard di Compliance Manager - Menu principale - Menu di amministrazione aggiornato](media/134d7577-cd70-4124-bcfd-d3feb248952b.png)
+![Dashboard di Compliance Manager - Menu principale - Menu di amministrazione aggiornato](../media/134d7577-cd70-4124-bcfd-d3feb248952b.png)
 
 ## <a name="accessing-compliance-manager"></a>Accesso a Compliance Manager
 
 Chiunque abbia un account Microsoft o un account organizzativo di Azure Active Directory può accedere a Compliance Manger dal Service Trust Portal.
   
-![Compliance Manager - Accesso a Compliance Manager dal menu del STP](media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
+![Compliance Manager - Accesso a Compliance Manager dal menu del STP](../media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
   
 1. Passare a [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
     
@@ -481,15 +481,15 @@ Chiunque abbia un account Microsoft o un account organizzativo di Azure Active D
 
     Per iniziare, sono stati aggiunti le valutazioni seguenti per impostazione predefinita:
     
-    ![Valutazioni predefinite in Compliance Manager](media/8c59b45a-706a-4362-a7ba-2cb782931bf7.png)
+    ![Valutazioni predefinite in Compliance Manager](../media/8c59b45a-706a-4362-a7ba-2cb782931bf7.png)
     
-5. Fare clic sull'![icona della Guida in Compliance Manager](media/c1b3092f-6ac7-43ab-b1c4-63a54598450c.png) **Guida** per visualizzare una breve presentazione di Compliance Manager. 
+5. Fare clic sull'![icona della Guida in Compliance Manager](../media/c1b3092f-6ac7-43ab-b1c4-63a54598450c.png) **Guida** per visualizzare una breve presentazione di Compliance Manager. 
   
 ## <a name="viewing-action-items"></a>Visualizzazione delle attività
 
 Gestore conformità fornisce una visualizzazione semplice di tutte le attività di valutazione dei controlli assegnate e consente di intervenire in modo facile e tempestivo. È possibile visualizzare tutte le attività o selezionare quelle che corrispondono a una determinata certificazione facendo clic sulla scheda associata alla valutazione desiderata. Ad esempio, nell'immagine seguente, la scheda GDPR è selezionata e mostra i controlli correlati alla valutazione GDPR.
   
-![Compliance Manager - Le attività elencano più schede GDPR selezionate](media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
+![Compliance Manager - Le attività elencano più schede GDPR selezionate](../media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
   
 Per visualizzare le attività:
   
@@ -503,7 +503,7 @@ Per visualizzare le attività:
 
 Per aggiungere una valutazione a Compliance Manager:
   
-1. Nel dashboard di Compliance Manager, fare clic sull'![icona Aggiungi](media/ITPro-EAC-AddIcon.gif) **Aggiungi valutazione**. 
+1. Nel dashboard di Compliance Manager, fare clic sull'![icona Aggiungi](../media/ITPro-EAC-AddIcon.gif) **Aggiungi valutazione**. 
     
 2. Nella finestra **Aggiungere valutazione**, è possibile creare un nuovo gruppo per aggiungere la valutazione oppure aggiungerla a un gruppo esistente (il gruppo predefinito è denominato "Gruppo iniziale"). A seconda dell'opzione scelta, digitare il nome di un nuovo gruppo o selezionare un gruppo esistente dall'elenco a discesa. Per ulteriori informazioni, vedere [Raggruppamento delle valutazioni](#grouping-assessments).
     
@@ -523,7 +523,7 @@ Per aggiungere una valutazione a Compliance Manager:
     
 6. Scegliere il menu **Azioni** per visualizzare le attività assegnate, rinominare il gruppo di valutazione, esportare il report di valutazione o archiviare la valutazione. 
     
-    ![Compliance Manager - Sezione di valutazione](media/abf35c11-9757-45c1-aa14-91178f67a18c.png)
+    ![Compliance Manager - Sezione di valutazione](../media/abf35c11-9757-45c1-aa14-91178f67a18c.png)
 
 ## <a name="copying-information-from-existing-assessments"></a>Copiare le informazioni da valutazioni esistenti
 
@@ -543,7 +543,7 @@ Analogamente vengono sincronizzate le informazioni dai controlli gestiti dal cli
 
 1. Individuare la sezione di valutazione corrispondente alla valutazione da visualizzare, quindi fare clic sul nome della valutazione per aprirla e visualizzare i controlli gestiti da Microsoft e dai clienti associati alla valutazione, insieme a un elenco dei servizi cloud che rientrano nell'ambito della valutazione.  Di seguito viene riportato un esempio di valutazione per Office 365 e GDPR.
     
-    ![Vista di valutazione di Compliance Manager: a schermo intero con callout](media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
+    ![Vista di valutazione di Compliance Manager: a schermo intero con callout](../media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
   
 1. Questa sezione mostra le informazioni di riepilogo della valutazione, incluso il nome del gruppo di valutazione, del prodotto, della valutazione e il numero di controlli di valutazione
     
@@ -563,19 +563,19 @@ L'autore di una valutazione è inizialmente l'unico utente della valutazione. Pe
   
 Di seguito viene riportato un elenco delle attività che è possibile eseguire utilizzando le funzionalità del flusso di lavoro di Compliance Manager.
   
-![Flusso di lavoro della valutazione di Compliance Manager con callout](media/9e5ae34d-b55e-4452-a021-e0e5b10218f5.png)
+![Flusso di lavoro della valutazione di Compliance Manager con callout](../media/9e5ae34d-b55e-4452-a021-e0e5b10218f5.png)
   
 1. **Utilizzare le opzioni filtro per trovare controlli di valutazione specifici** - Compliance Manager offre **opzioni filtro**, che forniscono all'utente criteri di selezione altamente dettagliati per la visualizzazione dei controlli di valutazione e lo aiutano a individuare con precisione aree specifiche di conformità. 
     
-    Fare clic sull'icona a forma di imbuto sul lato destro della pagina per visualizzare o nascondere i controlli **Opzioni filtro**. Questi controlli consentono di specificare i criteri di filtro. Solo i controlli delle valutazioni che soddisfano i criteri specificati verranno visualizzati. ![Controlli di filtro delle valutazioni di Compliance Manager](media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
+    Fare clic sull'icona a forma di imbuto sul lato destro della pagina per visualizzare o nascondere i controlli **Opzioni filtro**. Questi controlli consentono di specificare i criteri di filtro. Solo i controlli delle valutazioni che soddisfano i criteri specificati verranno visualizzati. ![Controlli di filtro delle valutazioni di Compliance Manager](../media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
   
     - **Articoli**: filtra in base al nome dell'articolo e restituisce i controlli delle valutazioni associati all'articolo specificato. Ad esempio, se si digita "Articolo (5)", viene restituito un elenco di articoli il cui nome include la stringa digitata, ad esempio Articolo (5)(1)(a), Articolo (5)(1)(b), Articolo (5)(1)(c) e così via. Se si seleziona articolo (5) (1) (c) verranno restituiti i controlli associati all'articolo (5) (1) (c). Si tratta di un campo a selezione multipla che usa un operatore OR con più valori. Ad esempio, se si seleziona Articolo (5)(1)(a) e si aggiunge Articolo (5)(1)(c), il filtro restituisce i controlli associati all'Articolo (5)(1)(a) oppure all'Articolo (5)(1)(c). 
     
-      ![Vista di valutazione di Compliance Manager -Filtro sul nome dell'articolo](media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
+      ![Vista di valutazione di Compliance Manager -Filtro sul nome dell'articolo](../media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
   
     - **Controlli**: restituisce l'elenco dei controlli i cui nomi si adattano al filtro, ad esempio, digitando 7.3 restituisce un elenco di selezione di elementi come 7.3.1, 7.3.4, 7.3.5, ecc. Questo campo di selezione multipla utilizza un operatore OR con più valori: ad esempio, se si seleziona 7.3.1 e si aggiunge 7.3.4, il filtro restituisce i controlli associati a 7.3.1 o a 7.3.4 
     
-      ![Vista di valutazione di Compliance Manager - Selezione multipla di controlli filtro](media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
+      ![Vista di valutazione di Compliance Manager - Selezione multipla di controlli filtro](../media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
   
     - **Utenti assegnati**: restituisce l'elenco dei controlli assegnati all'utente selezionato. 
     
@@ -585,7 +585,7 @@ Di seguito viene riportato un elenco delle attività che è possibile eseguire u
     
     Quando si applicano le condizioni del filtro, la vista dei controlli applicabili cambierà per corrispondere alle condizioni del filtro. Espandere le sezioni della famiglia di controllo per mostrare i dettagli del controllo di seguito. 
     
-    ![Vista di valutazione di Compliance Manager -Filtro i risultati degli articoli](media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
+    ![Vista di valutazione di Compliance Manager -Filtro i risultati degli articoli](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
   
 2. Se dopo aver selezionato i filtri desiderati non vengono visualizzati risultati, significa che non ci sono controlli che corrispondono alle condizioni di filtro specificate. Ad esempio, se si seleziona un particolare **Utente assegnato** e si sceglie un nome per il **controllo** che non corrisponde al controllo assegnato a quell'utente, non verrà mostrata nessuna valutazione nella pagina sottostante. 
     
@@ -670,17 +670,17 @@ Durante la visualizzazione di una valutazione archiviata, nessuno dei controlli 
 
 ## <a name="using-search"></a>Uso della ricerca
 
-![Service Trust Portal - Campo di inserimento della ricerca](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![Service Trust Portal - Campo di inserimento della ricerca](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
 Fare clic sulla lente di ingrandimento nell'angolo in alto a destra della pagina per espandere il campo di inserimento della ricerca, inserire i termini di ricerca e premere Invio. Apparirà il controllo di ricerca, con il termine di ricerca nel campo di inserimento del riquadro di ricerca, quindi i risultati della ricerca appariranno sotto.
   
 Per impostazione predefinita, la ricerca restituirà i documenti risultanti e tramite l'opzione di filtro degli elenchi a discesa sarà possibile restringere l'elenco dei documenti visualizzati, aggiungere o rimuovere i risultati visualizzati. Per restringere i documenti restituiti in base a servizi cloud specifici, categorie di conformità o procedure di sicurezza, zone del mondo o settori, utilizzare più attributi del filtro contemporaneamente. Fare clic sul collegamento al nome del documento per scaricare il documento.
   
-![Service Trust Portal - Ricerca in documenti con filtro applicato](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Service Trust Portal - Ricerca in documenti con filtro applicato](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
 Fare clic sul collegamento di Compliance Manager per visualizzare i risultati della ricerca per i controlli di valutazione di Compliance Manager. I risultati della ricerca nell'elenco visualizzata la data di creazione della valutazione, il nome della valutazione del raggruppamento, il servizio cloud applicabile, e se i controlli sono gestiti da Microsoft o dai clienti.
   
-![Service Trust Portal - Ricerca nei controlli di Compliance Manager](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Service Trust Portal - Ricerca nei controlli di Compliance Manager](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
 > Report e documenti di Service Trust Portal possono essere scaricati per almeno 12 mesi dalla pubblicazione o finché non diventa disponibile una nuova versione del documento. 
@@ -689,7 +689,7 @@ Fare clic sul collegamento di Compliance Manager per visualizzare i risultati de
 
 Service Trust Portal consente di visualizzare il contenuto della pagina in diverse lingue. Per cambiare la lingua della pagina, basta fare clic sull'icona del globo nell'angolo inferiore sinistro della pagina e selezionare la lingua scelta. 
   
-![Service Trust Portal - Opzioni di contenuti localizzati](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Service Trust Portal - Opzioni di contenuti localizzati](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 
 ## <a name="change-log-for-customer-managed-controls"></a>Log delle modifiche per i controlli gestiti dai clienti

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 1585be963b63e2e7f4c3efad972b7b262b4db3cc
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774222"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070202"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -87,7 +87,7 @@ Si osservi che, se si prova a eliminare una raccolta, un elenco, una cartella o 
   
 Dopo che i criteri di conservazione vengono assegnati a un account di OneDrive o a un sito di SharePoint, il contenuto può seguire uno dei due percorsi seguenti:
 
-![Diagramma del ciclo di vita dei contenuti in SharePoint e OneDrive](media/Retention_Diagram_of_retention_flow_in_sites.png)
+![Diagramma del ciclo di vita dei contenuti in SharePoint e OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 1. **Se il contenuto viene modificato o eliminato** durante il periodo di conservazione, una copia del contenuto originale al momento dell'assegnazione dei criteri di conservazione viene creata nella raccolta di archiviazione. In questa raccolta a intervalli regolari viene eseguito un processo timer che identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono spostati nel Cestino di secondo livello, dove verranno eliminati definitivamente dopo 93 giorni. Il Cestino di secondo livello non è visibile agli utenti finali come il Cestino di primo livello, tuttavia gli amministratori della raccolta siti possono visualizzare e ripristinare il contenuto da tale posizione.
 
@@ -110,7 +110,7 @@ Se un utente lascia l'organizzazione e la sua cassetta postale è inclusa nei cr
   
 Dopo che i criteri di conservazione vengono assegnati a una cassetta postale o a una cartella pubblica, il contenuto può seguire uno dei due percorsi seguenti:
 
-![Diagramma del flusso di conservazione nelle cartelle di posta elettronica e pubblica](media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
+![Diagramma del flusso di conservazione nelle cartelle di posta elettronica e pubblica](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **Se l'elemento viene modificato o eliminato** definitivamente dall'utente (con MAIUSC+CANC o eliminandolo da Posta eliminata) durante il periodo di conservazione, viene spostato (o copiato, in caso di modifica) nella cartella Elementi ripristinabili. In questa raccolta a intervalli regolari viene eseguito un processo che identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni.
     
@@ -139,7 +139,7 @@ Analogamente, se si desidera conservare il contenuto di una cassetta postale per
   
 È possibile scegliere se eliminare definitivamente il contenuto alla fine del periodo di conservazione. I criteri di conservazione possono anche eliminare il contenuto obsoleto senza conservarlo. Vedere la sezione successiva.
   
-![Pagina delle impostazioni di conservazione](media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![Pagina delle impostazioni di conservazione](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
   
 ## <a name="deleting-content-thats-older-than-a-specific-age"></a>Eliminazione di contenuto antecedente a una data specifica
 
@@ -147,19 +147,19 @@ I criteri di conservazione possono conservare e quindi eliminare il contenuto su
   
 Se i criteri di conservazione eliminano il contenuto, è importante tenere presente che il periodo di tempo specificato per i criteri di conservazione viene calcolato dal momento in cui il contenuto è stato creato o modificato, non dal momento dell'assegnazione dei criteri.
   
-![Impostazioni di eliminazione](media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
+![Impostazioni di eliminazione](../media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
   
 Ad esempio, si supponga di creare criteri di conservazione che eliminano il contenuto dopo tre anni e quindi di assegnarli a tutti gli account di OneDrive, che includono grandi quantità di contenuti creati quattro o cinque anni fa. In questo caso, molti contenuti verranno eliminati subito dopo la prima assegnazione dei criteri di conservazione. Per questo motivo, **i criteri di conservazione che eliminano il contenuto possono avere un impatto notevole**. 
   
 Prima di assegnare criteri di conservazione a una raccolta siti per la prima volta, è quindi consigliabile considerare il tempo trascorso dalla creazione del contenuto esistente e l'impatto dei criteri sul contenuto. È anche opportuno comunicare l'introduzione dei nuovi criteri agli utenti prima di assegnarli, in modo che possano valutarne l'impatto. Questo avviso viene visualizzato quando si esaminano le impostazioni per i criteri di conservazione prima di crearli.
   
-![Avviso riguardante l'eliminazione del contenuto](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
+![Avviso riguardante l'eliminazione del contenuto](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
 ## <a name="advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions"></a>Impostazioni avanzate che applicano i criteri solo a contenuti che soddisfano determinate condizioni
 
 I criteri di conservazione possono essere applicati a tutto il contenuto nelle posizioni incluse oppure solo al contenuto che contiene parole chiave specifiche o [tipi specifici di informazioni riservate](what-the-sensitive-information-types-look-for.md).
   
-![Opzioni avanzate di conservazione](media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
+![Opzioni avanzate di conservazione](../media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
   
 ### <a name="retain-content-that-contains-specific-keywords"></a>Conservare il contenuto che include parole chiave specifiche
 
@@ -169,13 +169,13 @@ Il supporto delle proprietà disponibili per le ricerche (ad esempio, **subject:
   
 I criteri di conservazione basati su query usano l'indice di ricerca per identificare il contenuto.
   
-![Editor di query](media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
+![Editor di query](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
   
 ### <a name="retain-content-that-contains-sensitive-information"></a>Conservare il contenuto che include informazioni riservate
 
 È possibile applicare i criteri di conservazione anche solo al contenuto che contiene [tipi specifici di informazioni riservate](what-the-sensitive-information-types-look-for.md). Ad esempio, è possibile scegliere di applicare requisiti di conservazione univoci solo al contenuto che contiene informazioni personali come codici identificativi dei singoli contribuenti, codici di previdenza sociale o numeri di passaporto.
   
-![Pagina riguardante i tipi di informazioni riservate](media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
+![Pagina riguardante i tipi di informazioni riservate](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
 Note:
   
@@ -201,7 +201,7 @@ Una delle caratteristiche più efficaci dei criteri di conservazione riguarda la
     
 - Cartelle pubbliche di Exchange
     
-![Opzione Tutte le posizioni](media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![Opzione Tutte le posizioni](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
   
 Altre caratteristiche importanti di un criterio di conservazione a livello di organizzazione includono:
   
@@ -215,7 +215,7 @@ Quando si scelgono le posizioni, è possibile includere o escludere facilmente u
   
 Come per i criteri a livello di organizzazione, un criterio applicabile a una qualsiasi combinazione di posizioni complete può includere un numero illimitato di cassette postali o siti. Ad esempio, se un criterio include tutta la posta elettronica di Exchange e tutti i siti di SharePoint, verranno inclusi tutti i siti e tutte le cassette postali, indipendentemente dal numero. Inoltre, per Exchange, le nuove cassette postali create dopo l'applicazione del criterio ereditano automaticamente il criterio.
  
-![Pagina Seleziona posizioni](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
+![Pagina Seleziona posizioni](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Criteri con specifiche inclusioni o esclusioni
 
@@ -235,7 +235,7 @@ A differenza della posta elettronica di Exchange, non è possibile attivare lo s
   
 Se si scelgono utenti di Skype for Business, è possibile includere rapidamente tutti gli utenti selezionando la casella **Nome** nell'intestazione di colonna. È necessario considerare, però, che ciascun utente viene conteggiato come specifica inclusione nei criteri. Di conseguenza, se si includono più di 1.000 utenti, si applicano i limiti indicati nella sezione precedente. La selezione di tutti gli utenti di Skype da questa posizione non coincide con la procedura che prevede l'inclusione predefinita di tutti gli utenti di Skype con i criteri a livello di organizzazione. 
   
-![Pagina di scelta utenti Skype](media/f1742493-741a-4142-a564-d7d41ab0236a.png)
+![Pagina di scelta utenti Skype](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
 Si noti che**Cronologia conversazioni**, una cartella di Outlook, è una funzionalità che non ha nulla a che fare con l'archiviazione di Skype. **Cronologia conversazioni** può essere disattivata dall'utente finale, mentre l'archiviazione per Skype avviene memorizzando una copia delle conversazioni di Skype in una cartella nascosta che è inaccessibile all'utente, ma disponibile per eDiscovery.
 
@@ -250,7 +250,7 @@ I messaggi di chat e i canali di Teams non sono interessati dai criteri di conse
   
 Dopo che i criteri di conservazione vengono assegnati a un team, i messaggi di chat e i canali possono seguire uno dei due percorsi seguenti:
 
-![Diagramma del flusso di conservazione per messaggi di chat e canali di Teams](media/TeamsRetentionLifecycle.png)
+![Diagramma del flusso di conservazione per messaggi di chat e canali di Teams](../media/TeamsRetentionLifecycle.png)
 
 1. **Se un messaggio di chat o canale viene modificato o eliminato** dall'utente durante il periodo di conservazione, viene spostato e archiviato, o copiato nel caso di modifica, nella cartella SubstrateHolds (una cartella nascosta nella cassetta postale di ogni utente o gruppo) fino alla scadenza del periodo di conservazione. I messaggi vengono eliminati definitivamente il giorno della scadenza del periodo di conservazione.
 
@@ -278,7 +278,7 @@ In un team i file condivisi in chat vengono archiviati nell'account di OneDrive 
   
 I criteri di conservazione che si applicano a Teams possono usare la [protezione dell'archiviazione](#locking-a-retention-policy).
   
-![Posizioni Teams per chat e messaggi del canale](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
+![Posizioni Teams per chat e messaggi del canale](../media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
 > [!NOTE]
 > Se si creano criteri di conservazione per i percorsi di Skype o Teams nell'organizzazione, uno di questi criteri viene visualizzato come criterio cartella predefinito quando un utente visualizza le proprietà di una cartella della cassetta postale nel client desktop di Outlook. Si tratta di un problema di visualizzazione non corretta in Outlook e di un [problema noto](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Quello che dovrebbe essere visualizzato come criterio cartella predefinito è il criterio di conservazione della cassetta postale applicato alla cartella. Il criterio di conservazione di Skype o Teams non viene applicato alla cassetta postale dell'utente.  
@@ -309,23 +309,23 @@ Prima di tutto, [connettersi a PowerShell in Centro sicurezza e conformità di O
 
 In secondo luogo, per visualizzare un elenco dei criteri di conservazione e trovare il nome dei criteri che si intende bloccare, eseguire `Get-RetentionCompliancePolicy`.
 
-![Elenco dei criteri di conservazione in PowerShell](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+![Elenco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 Infine, per applicare la protezione dell'archiviazione sui criteri di conservazione, eseguire `Set-RetentionCompliancePolicy` con il parametro `RestrictiveRetention` impostato su true. Ad esempio:
 
 `Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
 
-![Parametro RestrictiveRetention in PowerShell](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+![Parametro RestrictiveRetention in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
 Dopo aver eseguito questo cmdlet, viene visualizzata una richiesta di conferma. Scegliere **Sì a tutti**.
 
-![Richiesta di conferma del blocco dei criteri di conservazione in PowerShell](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+![Richiesta di conferma del blocco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 La protezione dell'archiviazione è ora inserita nei criteri di conservazione. Se si esegue `Get-RetentionCompliancePolicy`, il parametro `RestrictiveRetention` viene impostato su true. Ad esempio:
 
 `Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
 
-![Criteri bloccati con tutti i parametri visualizzati in PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
+![Criteri bloccati con tutti i parametri visualizzati in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## <a name="releasing-a-retention-policy"></a>Rilascio dei criteri di conservazione
 
@@ -337,7 +337,7 @@ Il periodo di tolleranza di 30 giorni in SharePoint e in OneDrive corrisponde al
 
 È possibile, o addirittura probabile, che al contenuto siano applicati più criteri di conservazione con azioni (conservare, eliminare o entrambi) e periodi di conservazione diversi. Quali sono i criteri che hanno la precedenza? Al livello più alto, un contenuto che viene conservato in base a un particolare criterio non può essere eliminato definitivamente da un altro criterio.
   
-![Diagramma dei principi di conservazione](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagramma dei principi di conservazione](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 Per comprendere in che modo i diversi criteri di conservazione vengono applicati al contenuto, tenere presente questi principi di conservazione:
   

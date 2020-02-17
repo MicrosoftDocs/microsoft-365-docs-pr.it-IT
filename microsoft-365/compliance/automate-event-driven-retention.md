@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Questo argomento illustra come configurare i flussi di processo aziendale in modo da automatizzare la conservazione attraverso gli eventi usando l'API REST di Microsoft 365.
-ms.openlocfilehash: 46276e1a40df8c5491d569337a683666984be23a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 692671ca5e7d956cb168ac0de2e409e7023cfd04
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596323"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079088"
 ---
 # <a name="automate-event-based-retention"></a>Automatizzare la conservazione basata su eventi
 
@@ -121,13 +121,13 @@ Oltre a tutto questo, occorre calcolare il periodo di conservazione per ciascun 
 
 Il diagramma di seguito illustra come possano essere presenti più etichette associate a un singolo evento. In questo caso, tutti i file con l’etichetta Assicurazione contro gli infortuni sul lavoro e tutti i file con l’etichetta Benefit dipendenti sono associati a un singolo evento, ossia il licenziamento del dipendente dall'organizzazione. Ognuno dei vari file ha intervalli di conservazione diversi. Quindi, quando un dipendente lascia l'organizzazione, i file raggruppati sotto ogni etichetta hanno un periodo di conservazione diverso. L'attivazione di tutti questi intervalli di conservazione, diversi per ogni tipo di file o etichetta e per ogni dipendente, è un'operazione molto complessa. Ancora di più lo è eseguire questa operazione per più dipendenti.
 
-![Diagramma del tipo di evento, evento ed etichette](media/automate-event-driven-retention-event-diagram-employee-leaving.png)
+![Diagramma del tipo di evento, evento ed etichette](../media/automate-event-driven-retention-event-diagram-employee-leaving.png)
 
 Di conseguenza, un processo automatizzato per attivare i diversi intervalli di conservazione per più dipendenti consente di risparmiare tempo, è privo di errori ed estremamente efficiente.
 
 **Configurazione della conservazione basata su eventi automatizzata per questo scenario:**
 
-![Diagramma di ruoli e azioni per lo scenario in cui il dipendente lascia l'organizzazione](media/automate-event-driven-retention-employee-termination-diagram.png)
+![Diagramma di ruoli e azioni per lo scenario in cui il dipendente lascia l'organizzazione](../media/automate-event-driven-retention-employee-termination-diagram.png)
 
   - L'amministratore crea le cartelle del dipendente nel set di documenti, ad esempio Angela Barbariol, Luca Udinesi.
 
@@ -151,9 +151,9 @@ Di conseguenza, un processo automatizzato per attivare i diversi intervalli di c
 
 Passaggio 1: Creare un flusso per creare un evento usando le API REST di Microsoft 365
 
-![Usare Flow per creare un evento](media/automate-event-driven-retention-flow-1.png)
+![Usare Flow per creare un evento](../media/automate-event-driven-retention-flow-1.png)
 
-![Usare Flow per chiamare l'API REST](media/automate-event-driven-retention-flow-2.png)
+![Usare Flow per chiamare l'API REST](../media/automate-event-driven-retention-flow-2.png)
 
 ##### <a name="create-an-event"></a>Creare un evento
 
@@ -423,7 +423,7 @@ Un sistema di Customer Relationship Management (CRM) può interagire con Microso
 
 **Configurazione della conservazione basata su eventi automatizzata per questo scenario:**
 
-![Diagramma di ruoli e attività per scenari di scadenza contratto](media/automate-event-driven-retention-contract-expiration.png)
+![Diagramma di ruoli e attività per scenari di scadenza contratto](../media/automate-event-driven-retention-contract-expiration.png)
 
   - L'amministratore crea una raccolta di SharePoint con varie cartelle per ogni tipo di contratto.
 
@@ -451,7 +451,7 @@ Un sistema ERP (Enterprise Resource Planning) può utilizzare Microsoft 365 e Mi
 
 **Configurazione della conservazione basata su eventi automatizzata per questo scenario:**
 
-![Diagramma di ruoli e attività per uno scenario di ciclo di vita del prodotto](media/automate-event-driven-retention-product-lifecycle-expiration.png)
+![Diagramma di ruoli e attività per uno scenario di ciclo di vita del prodotto](../media/automate-event-driven-retention-product-lifecycle-expiration.png)
 
   - L'amministratore crea delle cartelle di prodotto nel set di documenti, ad esempio Prodotto 1, Prodotto 2, ecc.
 

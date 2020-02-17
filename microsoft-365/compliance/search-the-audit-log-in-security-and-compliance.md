@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 81bcf62d810e9649bcb0a464e765b71490a4752d
-ms.sourcegitcommit: 570ad1c7c334476ecec00dc355dfe52e8c2bb87b
+ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862126"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069941"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -113,25 +113,25 @@ Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del regis
 
   |**Servizio Office 365**|**30 minuti**|**24 ore**|
   |:-----|:-----:|:-----:|
-  |Advanced Threat Protection e Threat Intelligence|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Azure Active Directory (eventi di accesso utente)||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Interfaccia di amministrazione di Azure Active Directory (eventi di amministrazione)||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Prevenzione della perdita di dati|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |eDiscovery|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Exchange Online|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Project|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Stream|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Teams|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power Apps|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power BI|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Centro sicurezza e conformità|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |SharePoint Online e OneDrive for Business|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-  |Workplace Analytics|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Yammer||![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Forms|![Segno di spunta](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Advanced Threat Protection e Threat Intelligence|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Azure Active Directory (eventi di accesso utente)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Interfaccia di amministrazione di Azure Active Directory (eventi di amministrazione)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Prevenzione della perdita di dati|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |eDiscovery|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Exchange Online|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Project|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Stream|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Teams|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power BI|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Centro sicurezza e conformità|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |SharePoint Online e OneDrive for Business|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Sway||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+  |Workplace Analytics|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Yammer||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Forms|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   ||||
 
 - Azure Active Directory (Azure AD) è il servizio directory per Office 365. Il log di controllo unificato contiene le attività di utenti, gruppi, applicazioni, domini e directory eseguite nell'interfaccia di amministrazione di Microsoft 365 o nel portale di gestione di Azure. Per un elenco completo degli eventi di Azure AD, vedere [Eventi del report di controllo di Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
@@ -163,7 +163,7 @@ Ecco il processo per la ricerca nel log di controllo in Office 365.
 
     Viene visualizzata la pagina **Ricerca log di controllo**.
 
-    ![Configurare i criteri, quindi fare clic su Cerca per eseguire un report](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configurare i criteri, quindi fare clic su Cerca per eseguire un report](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
 
     > [!NOTE]
     > È necessario attivare la registrazione di controllo per poter eseguire una ricerca nel log di controllo. Se è visualizzato il collegamento **Avviare la registrazione delle attività di utenti e amministratori**, fare clic su di esso per attivare il controllo. Se questo collegamento non è visualizzato, il controllo è già stato attivato per l'organizzazione.
@@ -195,13 +195,13 @@ Ecco il processo per la ricerca nel log di controllo in Office 365.
 
    I risultati della ricerca vengono caricati e, dopo alcuni istanti, vengono visualizzati in **Risultati**. Al termine della ricerca, viene visualizzato il numero di risultati trovati. Nel riquadro **Risultati** verranno visualizzati al massimo 5.000 eventi in incrementi di 150 eventi. Se sono presenti più di 5.000 eventi che soddisfano i criteri di ricerca, verranno visualizzati i 5.000 eventi più recenti.
 
-   ![Il numero di risultati viene visualizzato al termine della ricerca](media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+   ![Il numero di risultati viene visualizzato al termine della ricerca](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
 #### <a name="tips-for-searching-the-audit-log"></a>Suggerimenti per la ricerca nel log di controllo
 
 - È possibile selezionare attività specifiche da cercare facendo clic sul relativo nome. In alternativa, è possibile cercare tutte le attività in un gruppo (ad esempio **Attività su file e cartelle**) facendo clic sul nome del gruppo. Se è selezionata un'attività, è possibile fare clic su di essa per annullare la selezione. È anche possibile usare la casella di ricerca per visualizzare le attività contenenti la parola chiave digitata.
 
-  ![Fare clic sul nome del gruppo di attività per selezionare tutte le attività](media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+  ![Fare clic sul nome del gruppo di attività per selezionare tutte le attività](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
 
 - È necessario selezionare **Visualizza i risultati per tutte le attività** nell'elenco **Attività** per visualizzare gli eventi del log di controllo dell'amministratore di Exchange. Gli eventi di questo log di controllo mostrano un nome di cmdlet (ad esempio, **Set-Mailbox**) nella colonna **Attività** dei risultati. Per altre informazioni, fare clic sulla scheda **Attività controllate** in questo argomento, quindi fare clic su **Attività di amministrazione di Exchange**.
 
@@ -239,7 +239,7 @@ I risultati includono le informazioni seguenti relative a ogni evento restituito
 
 È possibile visualizzare altri dettagli di un evento facendo clic sul record dell'evento nell'elenco dei risultati della ricerca. Verrà visualizzata una pagina **Dettagli** contenente le proprietà dettagliate del record dell'evento. Le proprietà visualizzate dipendono dal servizio di Office 365 in cui si verifica l'evento. Per visualizzare questi dettagli, fare clic su **Altre informazioni**. Per le descrizioni, vedere [Proprietà dettagliate nel log di controllo di Office 365](detailed-properties-in-the-office-365-audit-log.md).
 
-![Fare clic su Altre informazioni per visualizzare le proprietà dettagliate del record dell'evento del log di controllo](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![Fare clic su Altre informazioni per visualizzare le proprietà dettagliate del record dell'evento del log di controllo](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
 ### <a name="step-3-filter-the-search-results"></a>Passaggio 3: Filtrare i risultati della ricerca
 
@@ -255,7 +255,7 @@ Per filtrare i risultati:
 
 3. Fare clic su una delle caselle sotto un'intestazione di colonna e digitare una parola o una fase, a seconda della colonna in base a cui si sta filtrando. I risultati verranno riorganizzati dinamicamente per visualizzare gli eventi corrispondenti al filtro.
 
-   ![Digitare una parola nel filtro per visualizzare gli eventi corrispondenti al filtro](media/542dc323-a997-402c-934b-cc5e218e50bc.png)
+   ![Digitare una parola nel filtro per visualizzare gli eventi corrispondenti al filtro](../media/542dc323-a997-402c-934b-cc5e218e50bc.png)
 
 4. Per cancellare un filtro, fare clic su **X** nella casella del filtro oppure fare clic su **Nascondi filtro**.
 
@@ -330,7 +330,7 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |File eliminato dal Cestino|FileDeletedFirstStageRecycleBin|L'utente elimina un file dal Cestino di un sito.|
 |File eliminato dal Cestino di secondo livello|FileDeletedSecondStageRecycleBin|L'utente elimina un file dal Cestino di secondo livello di un sito.|
 |Etichetta dei criteri di conformità dei record eliminata|ComplianceRecordDelete|Un documento classificato come record è stato eliminato. Un documento viene considerato record se al documento è applicata un'etichetta di conservazione che classifica il contenuto come record.|
-|È stata rilevata una mancata corrispondenza della riservatezza del documento|DocumentSensitivityMismatchDetected|Un utente carica un documento classificato con un'etichetta di riservatezza che presenta una priorità più alta dell'etichetta di riservatezza applicata al sito in cui viene caricato il documento. <br/><br/> Questo evento non viene attivato se l'etichetta di riservatezza applicata a un sito presenta una priorità più alta di quella applicata a un documento caricato nel sito. Per altre informazioni sulla priorità dell'etichetta di riservatezza, vedere la sezione "Priorità dell'etichetta" in [Panoramica delle etichette di riservatezza](sensitivity-labels.md#label-priority-order-matters).|
+|È stata rilevata una mancata corrispondenza della riservatezza del documento|DocumentSensitivityMismatchDetected|Un utente carica un documento classificato con un'etichetta di riservatezza che presenta una priorità più alta dell'etichetta di riservatezza applicata al sito in cui viene caricato il documento. <br/><br/> Questo evento non viene attivato se l'etichetta di riservatezza applicata a un sito presenta una priorità più alta di quella applicata a un documento caricato nel sito. Per altre informazioni sulla priorità delle etichette di riservatezza, vedere la sezione dedicata alla priorità delle etichette in [Informazioni sulle etichette di riservatezza](sensitivity-labels.md#label-priority-order-matters).|
 |Malware rilevato nel file|FileMalwareDetected|Il motore antivirus di SharePoint rileva malware in un file.|
 |Estrazione file rimossa|FileCheckOutDiscarded|Un utente elimina (o annulla) l'estrazione di un file. Ciò significa che le modifiche apportate al file dopo l'estrazione vengono eliminate e non salvate nella versione del documento nella raccolta documenti.|
 |File scaricato|FileDownloaded|Un utente scarica un documento da un sito.|
@@ -744,7 +744,7 @@ La tabella seguente elenca le attività degli utenti e degli amministratori di M
 
 Se l'organizzazione usa l'[applicazione Pazienti](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) in Microsoft Teams, è possibile cercare nel log di controllo le attività correlate all'utilizzo dell'app. Se l'ambiente è configurato per supportare l'app Pazienti, nell'elenco di selezione **Attività** è disponibile un altro gruppo di attività correlato.
 
-![Attività di Microsoft Teams per il settore sanitario nell'elenco di selezione Attività](media/TeamsHealthcareAuditActivities.png)
+![Attività di Microsoft Teams per il settore sanitario nell'elenco di selezione Attività](../media/TeamsHealthcareAuditActivities.png)
 
 Per una descrizione delle attività dell'app Pazienti, vedere [Log di controllo per l'app Pazienti](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
@@ -835,7 +835,7 @@ Di seguito sono forniti alcuni suggerimenti per la ricerca delle attività di am
 
 - Per visualizzare gli eventi del log di controllo dell'amministratore di Exchange, filtrare i risultati della ricerca e digitare **-** (trattino) nella casella del filtro **Attività**. In questo modo, vengono visualizzati i nomi dei cmdlet, che sono indicati nella colonna **Attività** per gli eventi di amministrazione di Exchange. È anche possibile disporre i nomi dei cmdlet in ordine alfabetico.
 
-  ![Digitare un trattino nella casella Attività per filtrare gli eventi di amministrazione di Exchange](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+  ![Digitare un trattino nella casella Attività per filtrare gli eventi di amministrazione di Exchange](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
 
 - Per ottenere informazioni sul cmdlet eseguito, sui parametri e sui valori dei parametri usati e sugli oggetti interessati, è possibile esportare i risultati della ricerca e selezionare l'opzione **Scarica tutti i risultati**. Per ulteriori informazioni, vedere [Esportare, configurare e visualizzare i record del log di controllo](export-view-audit-log-records.md).
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: ff4a236a56fc2e8259204e7a0202d67176d44964
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b2b78c6b028dc34040019f5087f1f8773eed768d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596053"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079698"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -39,7 +39,7 @@ Per informazioni sui requisiti di licenza, vedere [Requisiti di abbonamento e li
 
 Le impostazioni per l’applicazione automatica di etichette sono disponibili quando si crea un'etichetta di riservatezza nel Centro conformità Microsoft 365, Centro sicurezza Microsoft 365 o Centro sicurezza e conformità di Office 365 in **Classificazione** > **Etichette di riservatezza**.
 
-![Opzioni di assegnazione automatica delle etichette di riservatezza](media/Sensitivity-labels-Auto-labeling-options.png)
+![Opzioni di assegnazione automatica delle etichette di riservatezza](../media/Sensitivity-labels-Auto-labeling-options.png)
 
 ## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Applicare automaticamente un'etichetta di riservatezza in base alle condizioni
 
@@ -47,7 +47,7 @@ Una delle funzionalità più efficaci delle etichette di riservatezza è la poss
 
 Si può scegliere di applicare automaticamente le etichette di riservatezza al contenuto se include tipi specifici di informazioni riservate. Quando si configura l'applicazione automatica di un'etichetta di riservatezza, viene visualizzato lo stesso elenco di tipi di informazioni riservate relativo alla creazione di un criterio di prevenzione della perdita di dati. È quindi possibile, ad esempio, applicare automaticamente un'etichetta Estremamente riservato a qualsiasi contenuto che includa informazioni personali dei clienti (PII), ad esempio numeri di carta di credito o numeri di previdenza sociale.
 
-![Opzioni per il numero di istanze e l'accuratezza della corrispondenza](media/Sensitivity-labels-instance-count-match-accuracy.png)
+![Opzioni per il numero di istanze e l'accuratezza della corrispondenza](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
 Dopo aver scelto i tipi di informazioni riservate, è possibile definire la condizione modificando il numero di istanze o l'accuratezza della corrispondenza. Per altre informazioni su queste opzioni, vedere [Ottimizzazione delle regole affinché siano più facili o difficili da soddisfare](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
@@ -55,7 +55,7 @@ Inoltre, è possibile scegliere se una condizione deve rilevare tutti i tipi di 
 
 Quando viene applicata automaticamente un'etichetta di riservatezza, l'utente riceve una notifica nella propria applicazione di Office, quindi potrà scegliere **OK** per chiudere la notifica.
 
-![Notifica di applicazione automatica di un'etichetta a un documento](media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
+![Notifica di applicazione automatica di un'etichetta a un documento](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
 ## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Consigliare all'utente di applicare un'etichetta di riservatezza
 
@@ -63,11 +63,11 @@ Se si preferisce, è possibile consigliare agli utenti di applicare l'etichetta.
 
 Le etichette consigliate sono supportate in Word, PowerPoint ed Excel e richiedono l'installazione del client di etichettatura unificata di Azure Information Protection.
 
-![Opzione per consigliare un'etichetta di riservatezza agli utenti](media/Sensitivity-labels-Recommended-label-option.png)
+![Opzione per consigliare un'etichetta di riservatezza agli utenti](../media/Sensitivity-labels-Recommended-label-option.png)
 
 Ecco un esempio di un avviso quando si configura una condizione per applicare un'etichetta come azione consigliata, con un suggerimento per i criteri personalizzati. È possibile scegliere quale testo visualizzare nel suggerimento per i criteri.
 
-![Richiesta di applicazione di un'etichetta consigliata](media/Sensitivity-label-Prompt-for-required-label.png)
+![Richiesta di applicazione di un'etichetta consigliata](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>Come vengono applicate le etichette automatiche o consigliate
 

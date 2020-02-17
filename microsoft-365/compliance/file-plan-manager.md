@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri di etichette di conservazione ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
-ms.openlocfilehash: d102d264fd3aeed20eb952caa6df8c73fe5c51b8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bad2e592359cb3e1f63e3fa020914ad49a65a471
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594577"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074202"
 ---
 # <a name="overview-of-file-plan-manager"></a>Panoramica della gestione del piano file
 
@@ -29,7 +29,7 @@ La funzionalità Gestione del piano di archiviazione fornisce funzionalità avan
 
 Per accedere a Gestione del piano di archiviazione nel Centro sicurezza e conformità, passare a **Gestione record** > **Piano di archiviazione**.
 
-![Pagina del piano file](media/file-plan-page.png)
+![Pagina del piano file](../media/file-plan-page.png)
 
 ## <a name="accessing-file-plan-manager"></a>Accesso alla gestione del piano file
 
@@ -89,7 +89,7 @@ Nella scheda **Etichette** del piano di archiviazione sono disponibili le funzio
     - Eliminazione automatica
     - Revisione obbligatoria (ovvero revisione della disposizione)
 
-![Impostazioni delle etichette nel piano file](media/file-plan-label-columns.png)
+![Impostazioni delle etichette nel piano file](../media/file-plan-label-columns.png)
 
 ### <a name="retention-label-file-plan-descriptors-columns"></a>Colonne dei descrittori del piano di archiviazione delle etichette di conservazione
 
@@ -99,11 +99,11 @@ Per iniziare, Gestione del piano di archiviazione fornisce alcuni valori predefi
 
 Ecco una visualizzazione del passaggio dei descrittori del piano file quando si crea o modifica un'etichetta di conservazione.
 
-![Descrittori del piano di archiviazione](media/file-plan-descriptors.png)
+![Descrittori del piano di archiviazione](../media/file-plan-descriptors.png)
 
 Ecco una visualizzazione delle colonne dei descrittori del piano di archiviazione nella scheda **Etichette** di Gestione del piano di archiviazione.
 
-![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
+![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>Esportare tutte le etichette di conservazione esistenti per analizzare e/o eseguire le revisioni offline
 
@@ -111,11 +111,11 @@ Dalla gestione del piano file, è possibile esportare i dettagli di tutte le eti
 
 Per esportare tutte le etichette di conservazione, nella pagina **Piano di archiviazione** selezionare **Azioni piano file** \> **Esporta etichette**.
 
-![Opzione per esportare il piano file](media/file-plan-export-labels-option.png)
+![Opzione per esportare il piano file](../media/file-plan-export-labels-option.png)
 
 Verrà aperto un file CSV che contiene tutte le etichette di conservazione esistenti.
 
-![File CSV con tutte le etichette di conservazione](media/file-plan-csv-file.png)
+![File CSV con tutte le etichette di conservazione](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Importare le etichette di conservazione nel piano di archiviazione
 
@@ -125,13 +125,13 @@ Per importare nuove etichette di conservazione e modificare le etichette di cons
 
 1. Nella pagina **Piano di archiviazione** passare a **Azioni piano file** > **Importa etichette**.
 
-   ![Opzione per importare il piano file](media/file-plan-import-labels-option.png)
+   ![Opzione per importare il piano file](../media/file-plan-import-labels-option.png)
 
-   ![Opzione per scaricare un modello di piano file vuoto](media/file-plan-blank-template-option.png)
+   ![Opzione per scaricare un modello di piano file vuoto](../media/file-plan-blank-template-option.png)
 
 2. Scaricare un modello vuoto per importare le nuove etichette di conservazione. In alternativa, è possibile iniziare con il file CSV esportato durante l'esportazione delle etichette di conservazione esistenti nell'organizzazione.
 
-   ![Modello di piano di archiviazione vuoto aperto in Excel](media/file-plan-blank-template.png)
+   ![Modello di piano di archiviazione vuoto aperto in Excel](../media/file-plan-blank-template.png)
 
 3. Compilare il modello. Di seguito sono descritte le proprietà e i valori validi per ogni proprietà nel modello del piano di archiviazione.<br/>
 
@@ -159,16 +159,16 @@ Per importare nuove etichette di conservazione e modificare le etichette di cons
 
    Ecco un esempio di modello che contiene informazioni sulle etichette di conservazione.
 
-   ![Modello del piano di archiviazione compilato con le informazioni](media/file-plan-filled-out-template.png)
+   ![Modello del piano di archiviazione compilato con le informazioni](../media/file-plan-filled-out-template.png)
 
 4. Al passaggio 3 della pagina della procedura guidata di importazione del piano di archiviazione fare clic su **Cerca file** per caricare il modello compilato. 
 
    Gestione del piano di archiviazione convaliderà le voci e visualizzerà le statistiche di importazione.
 
-   ![Statistiche di importazione del piano di archiviazione](media/file-plan-import-statistics.png)
+   ![Statistiche di importazione del piano di archiviazione](../media/file-plan-import-statistics.png)
 
    Se è presente un errore di convalida, la funzionalità di importazione del piano di archiviazione continuerà a convalidare ogni voce nel file di importazione e visualizzerà tutti gli errori che fanno riferimento a numeri di riga nel file di importazione, quindi copierà i risultati degli errori visualizzati in modo che sia possibile facilmente tornare al file di importazione e correggere gli errori.
 
 5. Al termine dell'importazione, tornare a Gestione del piano di archiviazione per associare le nuove etichette di conservazione ai criteri nuovi o esistenti delle etichette di conservazione.
 
-   ![Opzione per pubblicare le etichette](media/file-plan-publish-labels-option.png)
+   ![Opzione per pubblicare le etichette](../media/file-plan-publish-labels-option.png)
