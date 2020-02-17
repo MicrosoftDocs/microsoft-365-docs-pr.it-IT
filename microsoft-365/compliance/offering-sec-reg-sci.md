@@ -52,7 +52,7 @@ Questo documento fornisce un'accurata lista di controllo delle aree critiche di 
 - [Guida all'implementazione di sci di regolamentazione](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers): esegue il mapping delle funzionalità di Azure rispetto alla normativa e dettaglia la responsabilità condivisa per la conformità.
 - [Progettazione di applicazioni di Azure affidabili](https://docs.microsoft.com/azure/architecture/resiliency/): breve panoramica del modo in cui creare l'affidabilità in ogni passaggio della progettazione delle applicazioni di Azure.
 - [Progettazione di applicazioni a disponibilità elevata](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): in che modo gli sviluppatori possono contribuire a garantire che le applicazioni di archiviazione di Azure siano estremamente disponibili.
-- [Guida alla valutazione dei rischi e alla conformità](https://aka.ms/RiskGovernanceGuide): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
+- [Linee guida per la valutazione dei rischi e per la conformità](https://aka.ms/RiskGovernanceGuide): creare un modello di governance per la valutazione dei rischi dei servizi cloud Microsoft e la notifica all'organismo di regolamentazione.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -69,11 +69,11 @@ Le organizzazioni finanziarie o le entità di fantascienza che sono soggette a q
 - [SEC risposte alle domande più frequenti relative alla normativa SCI](https://www.sec.gov/divisions/marketreg/regulation-sci-faq.shtml)
 - [Continuità aziendale e ripristino di emergenza (BCDR): aree con accoppiamento Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [Mappa di conformità dei principi di regolamentazione del cloud computing e di Microsoft Online Services](https://aka.ms/FinServ-Guide-US)
-- [Cloud Financial Services Compliance Program di Microsoft](https://aka.ms/FSCP-Print)
+- [Microsoft Cloud Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Conformità dei servizi finanziari in Azure](https://aka.ms/FinServ-Compliance-Azure)
 - [Servizi finanziari Microsoft](https://aka.ms/FinServ-Compliance)
 - [Regola di Microsoft e SEC 17a-4](offering-SEC-17a-4.md)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 

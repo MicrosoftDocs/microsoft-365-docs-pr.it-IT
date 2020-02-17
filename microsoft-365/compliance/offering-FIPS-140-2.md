@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 700c5c9892d5cd04f3f56bf1f3d498cf5d2467af
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1a1e8b19ff214d29dc8a309cce4f79de92cf8155
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602393"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071293"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>Pubblicazione FIPS (Federal Information Processing Standard) 140-2
 
@@ -35,7 +35,7 @@ Microsoft mantiene un impegno attivo per soddisfare i requisiti di 140-2, dopo a
 
 Per informazioni tecniche sui moduli di crittografia di Microsoft Windows, sui criteri di sicurezza per ogni modulo e sul catalogo dei dettagli del certificato di CMVP, vedere il [contenuto di Windows e Windows Server FIPS 140-2](https://aka.ms/AA6ehud).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 Mentre l'attuale guida all'implementazione di CMVP FIPS 140-2 preclude una convalida FIPS 140-2 per un servizio cloud stesso; i provider di servizi cloud possono scegliere di ottenere e gestire moduli di crittografia FIPS 140 convalidati per gli elementi di elaborazione che compongono il servizio cloud. Tra gli altri servizi Microsoft online che includono componenti, che sono stati convalidati da FIPS 140-2, sono inclusi i seguenti:
 
@@ -86,7 +86,7 @@ Si tratta di due standard di sicurezza distinti con finalità diverse, ma comple
 - [Requisiti di sicurezza di FIPS Pub 140-2 per i moduli di crittografia](https://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf)
 - [Programma di convalida del modulo di crittografia NIST](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows, Windows Server e FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
-- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro di protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 
