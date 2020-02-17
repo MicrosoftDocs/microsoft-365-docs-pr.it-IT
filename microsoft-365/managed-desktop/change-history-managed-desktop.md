@@ -10,16 +10,24 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9a5d163d14dda6aed50a39a27ae9a03ffbed526c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5c021654c99faf3104766dc05fe466ce9537d656
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596583"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091359"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia modifiche per la documentazione di Microsoft Managed Desktop
 
 In questo argomento vengono elencati gli argomenti nuovi e aggiornati nella [documentazione relativa a Microsoft Managed Desktop](index.yml). Gli argomenti "aggiornati" sono quelli che hanno avuto aggiunte o correzioni materiali: correzioni secondarie come la correzione di errori di battitura, stile o formattazione non sono presenti nell'elenco. È sempre possibile visualizzare la cronologia dei commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repo su GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="january-2020"></a>Gennaio 2020
+Argomento nuovo o modificato | Descrizione
+--- | ---
+[Preparare gli utenti a usare i dispositivi](get-started/get-started-devices.md)| Argomento aggiornato
+[Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione](get-started/add-admin-contacts.md) | Argomento aggiornato
+[Configurazione del dispositivo](service-description/device-policies.md) | Argomento aggiornato
+
 
 ## <a name="december-2019"></a>Dicembre 2019
 Argomento nuovo o modificato | Descrizione

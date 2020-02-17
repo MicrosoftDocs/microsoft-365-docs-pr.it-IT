@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d87531d7a664ca359f7cbe6c05f26f574c44f833
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590677"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072853"
 ---
 # <a name="insider-risk-management-cases-preview"></a>Casi di gestione dei rischi Insider (Preview)
 
@@ -41,7 +41,7 @@ La coda case elenca tutti i casi attivi e chiusi per l'organizzazione, oltre all
 - **Ultimo aggiornamento**: il tempo trascorso dal momento in cui è stata aggiunta una nota del caso o una modifica nello stato del caso.
 - **Ultimo aggiornamento**: il nome dell'analista di gestione dei rischi insider o del ricercatore che ha aggiornato l'ultima volta il caso.
 
-![Dashboard dei casi di gestione del rischio Insider](media/insider-risk-cases-dashboard.png)
+![Dashboard dei casi di gestione del rischio Insider](../media/insider-risk-cases-dashboard.png)
 
 Utilizzare il controllo di **ricerca** per cercare i nomi dei casi per testo specifico e utilizzare il filtro case per ordinare i casi in base ai seguenti attributi:
 
@@ -67,7 +67,7 @@ Il riquadro dei **Dettagli del case** è disponibile in tutte le schede di gesti
 - **Avvisi confermati**: elenco degli avvisi per l'utente confermati per il caso.
 - **Contenuto a rischio**: elenco di contenuti, ordinati in base a origini di contenuto e tipi. Ad esempio, nel caso di contenuto di avviso in SharePoint Online, è possibile che vengano visualizzati i nomi delle cartelle o dei file elencati associati all'attività di rischio per gli avvisi nel caso.
 
-![Dettagli sul caso di gestione dei rischi Insider](media/insider-risk-case-details.png)
+![Dettagli sul caso di gestione dei rischi Insider](../media/insider-risk-case-details.png)
 
 ### <a name="alerts"></a>Avvisi
 
@@ -89,7 +89,7 @@ Utilizzare il controllo di ricerca per cercare i nomi degli avvisi per il testo 
 
 La scheda **attività utente** è uno degli strumenti più potenti per l'analisi dei rischi interni e l'indagine per i casi nella soluzione di gestione dei rischi Insider. Questa scheda è strutturata per consentire la revisione rapida di un caso, tra cui una cronologia cronologica di tutti gli avvisi, tutti i dettagli sugli avvisi, il Punteggio di rischio corrente per l'utente nel caso e i controlli per intraprendere azioni efficaci per contenere i rischi nel caso.
 
-![Attività utente Gestione rischi Insider](media/insider-risk-user-activities.png)
+![Attività utente Gestione rischi Insider](../media/insider-risk-user-activities.png)
 
 1. **Filtri temporali data e finestra**: per impostazione predefinita, gli ultimi sei mesi di avvisi confermati nel caso vengono visualizzati nel grafico attività utente. È possibile filtrare facilmente la visualizzazione del grafico con i controlli Slider a entrambe le estremità della finestra del grafico oppure definendo date di inizio e fine specifiche nel controllo filtro grafico.
 2. **Attività e dettagli dell'avviso di rischio**: le attività a rischio sono visualizzate visivamente come bolle colorate nel grafico attività utente. Le bolle vengono create per diverse categorie di rischi e le dimensioni delle bolle sono proporzionali al numero di attività di rischio per la categoria. Selezionare una bolla per visualizzare i dettagli di ogni attività di rischio. I dettagli includono:
@@ -107,7 +107,7 @@ La scheda **Content Explorer** consente agli analisti e ai ricercatori dei risch
 
 Content Explorer è uno strumento potente con funzionalità di ricerca e filtro di base e avanzate. Per ulteriori informazioni sull'utilizzo di Content Explorer, vedere [Insider Risk Management Content Explorer](insider-risk-management-content-explorer.md).
 
-![Gestione dei contenuti del caso Insider Risk Management Explorer](media/insider-risk-content-explorer.png)
+![Gestione dei contenuti del caso Insider Risk Management Explorer](../media/insider-risk-content-explorer.png)
 
 ### <a name="case-notes"></a>Note del caso
 

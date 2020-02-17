@@ -1,5 +1,7 @@
 ---
 title: Configurare i dispositivi Windows per utenti di Microsoft 365 Business
+f1.keywords:
+- CSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 'Informazioni su come configurare i dispositivi Windows che eseguono Windows 10 Pro per gli utenti aziendali di Microsoft 365. '
-ms.openlocfilehash: 1e160d624ce5150a1fb74899949aca824589d908
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 427e1c25b5c6ad52ab280502133a0e2808bb48b1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831344"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42090704"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurare i dispositivi Windows per utenti di Microsoft 365 Business
 
@@ -45,7 +47,7 @@ Guardare un breve video sulla connessione di Windows a Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
-Se è stato trovato utile questo video, vedere la [serie completa di formazione per le piccole imprese e quelle nuove a Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Unire i dispositivi Windows 10 a Azure AD dell'organizzazione.
 
@@ -57,7 +59,7 @@ Per un nuovo dispositivo che esegue Windows 10 Pro Creators Update oppure appena
   
 1. Seguire la procedura di installazione di Windows 10 finché non viene visualizzata la pagina **Che configurazione vuoi eseguire?**. 
     
-    ![On the How would you like to set up page, choose Set up for an organization](media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
+    ![On the How would you like to set up page, choose Set up for an organization](../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
 2. In questa pagina scegliere **Configurazione per un'organizzazione** e quindi immettere il nome utente e la password per Microsoft 365 Business. 
     
@@ -71,31 +73,31 @@ Per un nuovo dispositivo che esegue Windows 10 Pro Creators Update oppure appena
   
 1. Nel PC Windows dell'utente, che esegue Windows 10 Pro, versione 1703 (Creators Update) (vedere i [prerequisiti](pre-requisites-for-data-protection.md)), fare clic sul logo Windows e quindi sull'icona Impostazioni.
   
-   ![In the Start menu, click Windows Settings icon](media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
+   ![In the Start menu, click Windows Settings icon](../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
 2. In **Impostazioni** passare ad **Account**.
   
-   ![In Windows Settings, go to Accounts](media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
+   ![In Windows Settings, go to Accounts](../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
   
 3. Nella pagina **Le tue info** fare clic su **Accedi all'azienda o all'istituto di istruzione** \> **Connetti**.
   
-   ![Choose Connect under Access work or school](media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
+   ![Choose Connect under Access work or school](../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
   
 4. Nella finestra di dialogo **Imposta un account aziendale o dell'istituto di istruzione**, in **Azioni alternative**, scegliere **Aggiungi il dispositivo ad Azure Active Directory**.
   
-   ![Click Join this device to Azure Active Directory](media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
+   ![Click Join this device to Azure Active Directory](../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
 5. Nella pagina **Esegui l'accesso** immettere l'account aziendale o dell'istituto di iscrizione \> **Avanti**.
   
    Nella pagina **Immettere la password** immettere la password \> **Accedi**.
   
-   ![Enter your work or school email on the Let's get you signed in page](media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
+   ![Enter your work or school email on the Let's get you signed in page](../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
 6. Nella pagina controlla che **sia la tua organizzazione** , verifica che le informazioni siano corrette e fai clic su **Unisci**.
   
    Nella pagina **È tutto pronto** fare clic su **Fatto**.
   
-   ![On the Make sure this is your organization screen, click Join](media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
+   ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
 Se sono stati caricati file in OneDrive for Business, sincronizzarli nuovamente. Se è stato utilizzato uno strumento di terze parti per eseguire la migrazione di profili e file, sincronizzarli anche con il nuovo profilo.
   
@@ -107,7 +109,7 @@ Nella pagina Stato sincronizzazione fare clic su Sincronizza per ottenere i crit
   
 Per iniziare a usare l'account Microsoft 365 business, passare al pulsante **Start** di Windows, fare clic con il tasto destro del mouse sull'immagine corrente dell'account e quindi **cambiare account**. Accedere usando l'indirizzo di posta elettronica e la password della propria organizzazione.
   
-![Click Info button to view synchronization status](media/818f7043-adbf-402a-844a-59d50034911d.png)
+![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## <a name="verify-the-device-is-upgraded-to-windows-10-business"></a>Verificare che sia stato eseguito l'aggiornamento a Windows 10 Business nel dispositivo
 
@@ -117,7 +119,7 @@ Verificare che i dispositivi Windows 10 uniti a Azure AD siano stati aggiornati 
     
 2. Verificare che in **Edizione** sia indicato **Windows 10 Business**.
     
-    ![Verify that Windows edition is Windows 10 Business.](media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
+    ![Verify that Windows edition is Windows 10 Business.](../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -125,4 +127,4 @@ Per configurare i dispositivi mobili, vedere [Configurare i dispositivi mobili p
   
 ## <a name="see-also"></a>Vedere anche
 
-[Video di formazione aziendale Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
