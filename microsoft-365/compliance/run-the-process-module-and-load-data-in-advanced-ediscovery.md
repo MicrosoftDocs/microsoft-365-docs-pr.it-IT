@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Informazioni su come utilizzare il Centro sicurezza &amp; e conformità di Office 365 per accedere a Office 365 Advanced eDiscovery ed eseguire il modulo di processo per un caso.  '
-ms.openlocfilehash: e99071246e6c63292bf3ca1fbca0a0fd25eab5a8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 13b665c377022997ef4e60bc883993a86d8b9f75
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601593"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081525"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Eseguire il modulo di processo e caricare i dati in Office 365 Advanced eDiscovery
 
@@ -49,7 +49,7 @@ Eseguire la procedura seguente per eseguire il processo.
     
 4. In **preparare** \> l' **installazione**del **processo** \> selezionare un contenitore dall'elenco dei contenitori disponibili.
     
-    ![Fare clic su processo per aggiungere i risultati della ricerca al caso](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
+    ![Fare clic su processo per aggiungere i risultati della ricerca al caso](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
 5. Fare clic su **Impostazioni avanzate...** se si desidera aggiungere il contenitore come file di seeding o come file con tag preselezionati. 
     
@@ -57,7 +57,7 @@ Eseguire la procedura seguente per eseguire il processo.
     
     Utilizzare i file con tag preselezionati per automatizzare la formazione sulla pertinenza. È necessario contrassegnare almeno 1.500 file e mantenere la proporzione dei file rilevanti per i non rilevanti come nell'insieme aggiunto a pertinenza. Questi file devono essere contrassegnati manualmente e devono essere sicuri della qualità del tagging.
     
-    ![Schermata della pagina Impostazioni avanzate per l'elaborazione dei file batch](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
+    ![Schermata della pagina Impostazioni avanzate per l'elaborazione dei file batch](../media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
   
   - Nella sezione **Seed** : 
     

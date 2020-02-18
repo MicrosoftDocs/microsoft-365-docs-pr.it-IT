@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Esportare i risultati della ricerca da una ricerca contenuto nel centro sicurezza & conformità a un computer locale. I risultati della posta elettronica vengono esportati come file PST. I contenuti dei siti di SharePoint e OneDrive for business vengono esportati come documenti di Office nativi. '
-ms.openlocfilehash: b1bd09777bd934cccf7f1247ed72201bcc4a081f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41588196"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074035"
 ---
 # <a name="export-content-search-results"></a>Esportare i risultati di Ricerca contenuto
 
@@ -36,7 +36,7 @@ Tutti i messaggi di posta elettronica crittografati con RMS inclusi nei risultat
   
 L'esportazione dei risultati di una ricerca di contenuto comporta la preparazione dei risultati e il relativo download a un computer locale.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per esportare i risultati della ricerca, è necessario assegnare il ruolo di gestione export nel centro sicurezza & Compliance. Questo ruolo è assegnato al gruppo di ruoli Gestore di eDiscovery incorporato. Non viene assegnato per impostazione predefinita al gruppo di ruoli Gestione organizzazione. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
@@ -175,7 +175,7 @@ Come spiegato in precedenza, è possibile aumentare la velocità di download con
     
 
   
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Di seguito sono riportate altre informazioni sull'esportazione dei risultati della ricerca.
   
@@ -267,11 +267,11 @@ Di seguito sono riportate altre informazioni sull'esportazione dei risultati del
     
     Per esportare gli elementi parzialmente indicizzati da tutti i percorsi di contenuto per una ricerca, configurare la ricerca in modo che restituisca tutti gli elementi (rimuovendo le parole chiave dalla query di ricerca) e quindi esportare solo gli elementi parzialmente indicizzati quando si esportano i risultati della ricerca.
     
-    ![Utilizzare la terza opzione di esportazione per esportare solo gli elementi non indicizzati](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![Utilizzare la terza opzione di esportazione per esportare solo gli elementi non indicizzati](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
 - Quando si esportano i risultati della ricerca da siti di SharePoint o OneDrive for business, la possibilità di esportare gli elementi non indicizzati dipende anche dall'opzione di esportazione selezionata e se un sito in cui è stata eseguita la ricerca contiene un elemento indicizzato che corrisponde ai criteri di ricerca. Ad esempio, se si esegue una ricerca in siti specifici di SharePoint o OneDrive for business e non vengono trovati risultati della ricerca, non verranno esportati elementi non indicizzati da tali siti se si sceglie la seconda opzione di esportazione per esportare gli elementi indicizzati e non indicizzati. Se un elemento indicizzato di un sito corrisponde ai criteri di ricerca, tutti gli elementi non indicizzati provenienti da tale sito verranno esportati quando si esportano sia gli elementi indicizzati che quelli non indicizzati. Nella figura seguente vengono illustrate le opzioni di esportazione in base al fatto che un sito contenga un elemento indicizzato che corrisponda ai criteri di ricerca.
     
-    ![Scegliere l'opzione di esportazione in base al fatto che un sito contenga un elemento indicizzato che corrisponda ai criteri di ricerca.](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
+    ![Scegliere l'opzione di esportazione in base al fatto che un sito contenga un elemento indicizzato che corrisponda ai criteri di ricerca.](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
     a. Vengono esportati solo gli elementi indicizzati che soddisfano i criteri di ricerca. Non vengono esportati elementi parzialmente indicizzati.

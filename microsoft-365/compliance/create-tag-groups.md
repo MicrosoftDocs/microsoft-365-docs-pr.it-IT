@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2cf0bafa45e96960b8d957d1b8905124223173ce
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9dc6f92ffdc5a676bd6f8895fe884b5493724963
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595543"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077083"
 ---
 # <a name="create-tag-groups"></a>Creare gruppi di tag
 
@@ -31,17 +31,17 @@ Per creare un gruppo di Tag:
 
 1.  In un set di Revisione fare clic su **Gestisci Revisione set**.
 
-    ![Fare clic su Manage Review set](media/ED-managews.png)
+    ![Fare clic su Manage Review set](../media/ED-managews.png)
 
 2.  Nel riquadro **tag** fare clic su **Gestisci Tag**.
 
-    ![Fare clic su Gestisci tag nel riquadro Tag](media/ED-managetags.png)
+    ![Fare clic su Gestisci tag nel riquadro Tag](../media/ED-managetags.png)
 
 Una volta all'interno della gestione dei tag, è possibile creare i tag per soddisfare i requisiti del caso. È possibile iniziare con la creazione di un gruppo di tag.
 
 1.  Fare clic su **Aggiungi sezione**.
 
-    ![Aggiunta di un gruppo di tag](media/ED-addtagsection.png)
+    ![Aggiunta di un gruppo di tag](../media/ED-addtagsection.png)
 
     La schermata di anteprima verrà aggiornata quando si salva in modo che sia possibile visualizzare in anteprima il riquadro dei tag senza dover chiudere la schermata di gestione dei tag e tornare al working set.
 
@@ -49,7 +49,7 @@ Una volta all'interno della gestione dei tag, è possibile creare i tag per sodd
 
 3. Per creare un tag all'interno di tale gruppo, fare clic sui puntini di ellissi del nuovo gruppo di tag per creare i tag nella nuova sezione.
     
-    ![Creazione di tag in un gruppo di tag](media/ED-createtag.png)
+    ![Creazione di tag in un gruppo di tag](../media/ED-createtag.png)
 
    - I **tag di opzione** costringeranno gli utenti a selezionare un tag da un gruppo di tag.
    
@@ -59,5 +59,5 @@ Una volta all'interno della gestione dei tag, è possibile creare i tag per sodd
 
 Per annidare i tag, fare clic sui puntini di ellissi accanto a un tag e quindi selezionare un nuovo tag da aggiungere.
 
-![Nidificazione di tag](media/ED-tagnesting.png)
+![Nidificazione di tag](../media/ED-tagnesting.png)
 

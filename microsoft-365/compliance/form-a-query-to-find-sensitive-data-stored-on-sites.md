@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con la prevenzione della perdita di dati (DLP) in SharePoint Online, è possibile individuare i documenti che contengono dati riservati in tutto il tenant. Dopo aver individuato i documenti, è possibile collaborare con i proprietario al fine di proteggere i dati. In questo argomento viene illustrato come creare una query per cercare dati riservati.
-ms.openlocfilehash: e3750ee69a197de5e7e5c0ac9346124568b8d5f5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7c0b17ef8f1e6a10d095f4533867a108b937a56a
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594547"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073899"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Creare una query per trovare i dati sensibili archiviati nei siti
 
@@ -35,7 +35,7 @@ Gli utenti memorizzano spesso dati riservati, ad esempio il numero della carta d
 
 Una query DLP di base è formata da tre parti: SensitiveType, intervallo conteggio e intervallo di confidenza. Come illustrato nella figura seguente, **SensitiveType: "\<\>tipo"** è obbligatorio e entrambi**|\<\> ** gli intervalli di conteggio e di**|\<confidenza\> ** sono facoltativi. 
   
-![Query di esempio divisa in necessaria e facoltativa](media/DLP-query-example-text.png)
+![Query di esempio divisa in necessaria e facoltativa](../media/DLP-query-example-text.png)
   
 ### <a name="sensitive-type---required"></a>SensitiveType - obbligatorio
 

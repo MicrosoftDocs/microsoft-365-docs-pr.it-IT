@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4005b1e379b138f4eb22bb5c11e1f278185dc65e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 97c1acdb515e278c40ca25d47e2d9fd24c23d51f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597613"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42070063"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Eseguire query sui dati in un insieme da rivedere
 
@@ -31,7 +31,7 @@ Nella maggior parte dei casi, sarà utile essere in grado di approfondire i dati
 
 Per creare ed eseguire una query sui documenti in un set di revisione, fare clic su **nuova query** nel set di revisione. Dopo aver denominato la query e aver definito le condizioni, fare clic su **Salva** per salvare ed eseguire la query. Per eseguire una query salvata in precedenza, fare clic su una query salvata.
 
-![Esaminare le query di set](media/AeDReviewSetQueries.png)
+![Esaminare le query di set](../media/AeDReviewSetQueries.png)
 
 ## <a name="building-a-review-set-query"></a>Creazione di una query del set di Revisione
 
@@ -59,7 +59,7 @@ Oltre alle schede delle condizioni, è possibile utilizzare un linguaggio di que
 
 Oltre alle query che è possibile salvare, è possibile utilizzare i filtri set di revisione per applicare rapidamente condizioni aggiuntive a una query del set di revisione. In questo modo è possibile affinare ulteriormente i risultati visualizzati da una query del set di revisione.
 
-![Esaminare i filtri impostati](media/AeDReviewSetFilters.png)
+![Esaminare i filtri impostati](../media/AeDReviewSetFilters.png)
 
 I filtri differiscono dalle query in due modi significativi:
 

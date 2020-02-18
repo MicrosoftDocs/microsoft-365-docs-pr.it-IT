@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzare classificatori addestrabili quando uno dei classificatori di caselle pronti per l'uso non soddisfa le proprie esigenze. Un classificatore Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto fornendo esempi da esaminare. In questo argomento viene illustrato come creare un classificatore personalizzato.
-ms.openlocfilehash: f11da4c36c9d6ed1667d5bed4a7d3e59c2cb21a9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bbf2fac4e912e6619f3fe1c9a328aa61782cb640
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595913"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078872"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Creazione di un classificatore addestrabile (anteprima)
 
@@ -29,7 +29,7 @@ Per ulteriori informazioni sui diversi tipi di classificatori, vedere [Guida int
 
 Questa sequenza temporale riflette una distribuzione di esempio.
 
-![addestrare-classificatore-sequenza temporale](media/trainable-classifier-deployment-timeline_border.png)
+![addestrare-classificatore-sequenza temporale](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > L'opzione opt-in è necessaria per la prima volta per i classificatori addestrabili. Per completare una valutazione di base del contenuto delle organizzazioni, sono necessari dodici giorni per Microsoft 365. Contattare l'amministratore globale per iniziare a utilizzare il processo di opt-in.
@@ -80,7 +80,7 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 10. È ora possibile visualizzare la pagina dei dettagli scegliendo il classificatore.
 
 
-![classificatore addestrabile pronto per il testing](media/classifier-trainable-ready-to-test-detail.png)
+![classificatore addestrabile pronto per il testing](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Raccogliere almeno 200 elementi di contenuto di test. Microsoft consiglia 10.000 per ottenere risultati ottimali. Queste devono essere una combinazione di elementi che sono forti positivi, negativi forti e alcuni che sono un po' meno evidenti nella loro natura. Per i tipi di file supportati, vedere le estensioni di file sottoposte [a ricerca per indicizzazione e i tipi di file analizzati in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) .
 
@@ -100,13 +100,13 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 
 16. Quando si esegue l'elaborazione dei file di test da `Ready to review`parte del classificatore addestrabile, lo stato nella pagina dei dettagli cambia. Se è necessario aumentare le dimensioni del campione di test, `Add items to test` scegliere e consentire al classificatore addestrabile di elaborare gli elementi aggiuntivi.
 
-![pronto per la revisione dello screenshot](media/classifier-trainable-ready-to-review-detail.png)
+![pronto per la revisione dello screenshot](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Scegliere `Tested items to review` la scheda per esaminare gli elementi.
 
 18. Microsoft 365 presenterà 30 elementi alla volta. Verificarli e nella casella `We predict this item is "Relevant". Do you agree?` scegliere uno `Yes` o `No` più o `Not sure, skip to next item`. L'accuratezza del modello viene aggiornata automaticamente dopo ogni 30 elementi.
 
-![casella di controllo elementi](media/classifier-trainable-review-detail.png)
+![casella di controllo elementi](../media/classifier-trainable-review-detail.png)
 
 19. Esaminare *almeno 200 elementi* .
 
@@ -114,7 +114,7 @@ Dopo che il classificatore addestratore ha elaborato campioni positivi sufficien
 
 20. Continuare a esaminare fino a quando l'accuratezza raggiunge almeno il 70 `Publish the classifier` % e `Ready to use`lo stato è.
 
-![accuratezza e pronto per la pubblicazione](media/classifier-trainable-review-ready-to-publish.png)
+![accuratezza e pronto per la pubblicazione](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. Pubblicare il classificatore.
 

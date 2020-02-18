@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprendere il motivo per cui i risultati di ricerca stimati ed effettivi possono variare nelle ricerche eseguite con gli strumenti di eDiscovery in Office 365. '
-ms.openlocfilehash: 10c948dbfc7f147011e3ab917828b5b281602fa8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4b14e3aca51737b0a7c15b5219fda38c57ecad9d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595251"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075466"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Differenze tra i risultati di ricerca stimati ed effettivi di eDiscovery in Office 365
 
@@ -35,21 +35,21 @@ Questo argomento si applica alle ricerche che è possibile eseguire utilizzando 
    
 Quando si esegue una ricerca eDiscovery, lo strumento che si sta utilizzando restituirà una stima del numero di elementi (e delle relative dimensioni totali) che soddisfano i criteri di ricerca. Ad esempio, quando si esegue una ricerca nel centro sicurezza & conformità, i risultati della ricerca stimati vengono visualizzati nel riquadro dei dettagli per la ricerca selezionata.
   
-![Stima dei risultati visualizzati nel riquadro dei dettagli della ricerca selezionata](media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
+![Stima dei risultati visualizzati nel riquadro dei dettagli della ricerca selezionata](../media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
   
 Si tratta della stessa stima delle dimensioni totali e del numero di elementi visualizzati nello strumento di esportazione di eDiscovery quando si esportano i risultati in un computer locale e nel rapporto di riepilogo di esportazione scaricato con i risultati della ricerca.
   
 **Risultati stimati nello strumento di esportazione di eDiscovery**
 
-![Risultati stimati nello strumento di esportazione di eDiscovery](media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
+![Risultati stimati nello strumento di esportazione di eDiscovery](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
   
 **Risultati stimati nell'esportazione del rapporto riepilogativo**
 
-![I risultati della ricerca stimati sono inclusi nel report Riepilogo esportazione](media/44b579da-86c2-4f33-81b5-84d604003eda.png)
+![I risultati della ricerca stimati sono inclusi nel report Riepilogo esportazione](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
   
 Tuttavia, come si noterà nella schermata precedente del rapporto riepilogativo di esportazione, le dimensioni e il numero dei risultati di ricerca effettivamente scaricati sono diversi rispetto alla dimensione e al numero di risultati di ricerca stimati. 
   
-![Differenza tra i risultati della ricerca stimati e scaricati](media/84aef318-230f-430d-9d9e-02f21342d364.png)
+![Differenza tra i risultati della ricerca stimati e scaricati](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
   
 Di seguito sono riportate alcune ragioni per queste differenze:
   

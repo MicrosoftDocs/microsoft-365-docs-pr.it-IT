@@ -75,8 +75,11 @@
   href: protect-information.md
   items:
     - name: Etichette di riservatezza
-      href: sensitivity-labels.md
       items:
+        - name: Informazioni sulle etichette di riservatezza
+          href: sensitivity-labels.md
+        - name: Iniziare a usare le etichette di riservatezza
+          href: get-started-with-sensitivity-labels.md
         - name: Creare e pubblicare etichette di riservatezza
           href: create-sensitivity-labels.md
         - name: Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
@@ -89,7 +92,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Etichette di riservatezza nelle app di Office
+        - name: Utilizzare le etichette di riservatezza nelle app di Office
           href: sensitivity-labels-office-apps.md
     - name: Prevenzione della perdita di dati (DLP)
       href: data-loss-prevention-policies.md

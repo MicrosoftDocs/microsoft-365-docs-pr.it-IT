@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utilizzare la ricerca contenuto nel centro sicurezza & conformità per eseguire le raccolte mirate. Un insieme mirato indica che gli elementi che rispondono a un caso o a elementi privilegiati si trovano in una cassetta postale o in una cartella del sito specifica. Utilizzare lo script in questo articolo per ottenere l'ID o il percorso della cartella specifica della cassetta postale o delle cartelle del sito che si desidera ricercare.
-ms.openlocfilehash: 66929911cdb1692ea1ee2a8920dad349d50ec156
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b8afe9e65aa65c697d9c5cefbeaf89638c1782d4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597303"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080809"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utilizzare la ricerca contenuto in Office 365 per le raccolte mirate
 
@@ -30,7 +30,7 @@ La funzionalità di ricerca contenuto nel centro sicurezza &amp; e conformità d
 > [!NOTE]
 > Per restituire il contenuto presente in una cartella di un sito di SharePoint o OneDrive for business, lo script in questo argomento utilizza la proprietà gestita DocumentLink anziché la proprietà Path. La proprietà DocumentLink è più robusta della proprietà Path perché restituirà tutto il contenuto di una cartella, mentre la proprietà Path non restituirà alcuni file multimediali.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per eseguire lo script nel passaggio 1, è necessario essere membri del gruppo di &amp; ruoli eDiscovery Manager nel centro sicurezza e conformità. Per altre informazioni, vedere [Assegnare autorizzazioni di eDiscovery](assign-ediscovery-permissions.md).
     
@@ -201,7 +201,7 @@ Se si ricevono gli ID della cartella delle cassette postali, lo script si connet
   
 Di seguito è riportato un esempio dell'output restituito dallo script per le cartelle delle cassette postali.
   
-![Esempio dell'elenco di cartelle di cassette postali e ID cartella restituiti dallo script](media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![Esempio dell'elenco di cartelle di cassette postali e ID cartella restituiti dallo script](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
   
 Nell'esempio del passaggio 2 viene illustrata la query utilizzata per eseguire la ricerca nella sottocartella Ripuliture nella cartella elementi ripristinabili dell'utente.
   
@@ -211,7 +211,7 @@ Se si riceve il percorso della proprietà **documentlink** da siti di SharePoint
   
 Di seguito è riportato un esempio dell'output restituito dallo script per le cartelle del sito.
   
-![Esempio dell'elenco di nomi di documentlink per le cartelle del sito restituite dallo script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Esempio dell'elenco di nomi di documentlink per le cartelle del sito restituite dallo script](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Passaggio 2: utilizzare un ID cartella o documentlink per eseguire una raccolta di destinazione
 
@@ -221,7 +221,7 @@ Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o document
     
 2. Accedere a Office 365 utilizzando l'account e le credenziali utilizzati per eseguire lo script nel passaggio 1.
     
-3. Nel riquadro sinistro del Centro sicurezza & **conformità fare clic** \> su ricerca **contenuto**ricerca, quindi fare clic su **nuova** ![icona](media/O365-MDM-CreatePolicy-AddIcon.gif)Aggiungi.
+3. Nel riquadro sinistro del Centro sicurezza & **conformità fare clic** \> su ricerca **contenuto**ricerca, quindi fare clic su **nuova** ![icona](../media/O365-MDM-CreatePolicy-AddIcon.gif)Aggiungi.
     
 4. Nella pagina **Nuova ricerca**, digitare un nome relativo alla ricerca contenuto. Questo nome deve essere univoco nell'organizzazione. 
     
@@ -239,7 +239,7 @@ Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o document
     
     Ad esempio, la query nello screenshot seguente cercherà tutti gli elementi nella sottocartella Purges nella cartella elementi ripristinabili dell'utente (il valore della `folderid` proprietà per la sottocartella Purges viene visualizzato nello screenshot del passaggio 1):
     
-    ![Incollare il FolderId o documentlink nella casella parola chiave della query di ricerca](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![Incollare il FolderId o documentlink nella casella parola chiave della query di ricerca](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Fare clic su **Cerca** per avviare la ricerca di raccolta di destinazione. 
   
@@ -271,7 +271,7 @@ Di seguito sono riportati alcuni esempi di `folderid` utilizzo `documentlink` de
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Quando si utilizza lo script in questo articolo, è necessario tenere presente quanto segue per eseguire le raccolte mirate.
   

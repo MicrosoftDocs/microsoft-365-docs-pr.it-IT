@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Informazioni sulla posta elettronica e sulle proprietà dei file che è possibile cercare nelle cassette postali di Exchange Online e nei siti di SharePoint o OneDrive for business utilizzando lo strumento di ricerca contenuto nel centro sicurezza & Compliance.  '
-ms.openlocfilehash: e8a0da1815b7ddda889217d027a3aabae4420c56
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: aad4ff401ee66db2f88bf5476cfaab8fce4ad821
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585915"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072405"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Query con parole chiave e condizioni di ricerca per Ricerca contenuto
 
@@ -271,9 +271,9 @@ Tenere presente quanto segue quando si utilizzano le condizioni di ricerca.
     
 - Come descritto in precedenza, alcune proprietà delle condizioni consentono di digitare più valori. I valori sono collegati logicamente dall'operatore **OR**. Ne consegue che la stessa logica dispone di più istanze della stessa condizione, ognuna con un singolo valore. Nelle illustrazioni seguenti viene mostrato un esempio di una singola condizione con più valori e un esempio di più condizioni (per la stessa proprietà) con un singolo valore. Entrambi gli esempi determinano la stessa query:`(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
     
-    ![Una condizione con più valori](media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+    ![Una condizione con più valori](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
   
-    ![Più condizioni di ricerca per la stessa proprietà](media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
+    ![Più condizioni di ricerca per la stessa proprietà](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
   
 > [!TIP]
 > Se una condizione accetta più valori, è consigliabile utilizzare una singola condizione e specificare più valori (separati da virgole o punti e virgola). Ciò garantisce che la logica di query che viene applicata corrisponda a quella desiderata. 
@@ -288,7 +288,7 @@ In questo esempio vengono restituiti i documenti sui siti di SharePoint e OneDri
   
  **GUI**
   
-![Primo esempio relativo alle condizioni di ricerca](media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![Primo esempio relativo alle condizioni di ricerca](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
   
  **Sintassi della query di ricerca**
   
@@ -304,7 +304,7 @@ In questo esempio vengono restituiti i documenti o gli elementi della posta elet
   
  **GUI**
   
-![Secondo esempio relativo alle condizioni di ricerca](media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![Secondo esempio relativo alle condizioni di ricerca](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
   
  **Sintassi della query di ricerca**
   
@@ -320,7 +320,7 @@ In questo esempio vengono restituiti i messaggi di posta elettronica o le riunio
   
  **GUI**
   
-![Terzo esempio relativo alle condizioni di ricerca](media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![Terzo esempio relativo alle condizioni di ricerca](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
   
  **Sintassi della query di ricerca**
   
@@ -379,7 +379,7 @@ Come spiegato in precedenza, è possibile utilizzare `SharedWithUsersOWSUser` la
   
 I documenti devono essere condivisi in modo esplicito con un utente specifico da restituire nei risultati della ricerca `SharedWithUsersOWSUser` quando si utilizza la proprietà. Ad esempio, quando una persona condivide un documento nel proprio account OneDrive, ha la possibilità di condividerlo con chiunque (all'interno o all'esterno dell'organizzazione), condividerlo solo con persone all'interno dell'organizzazione oppure condividerlo con una persona specifica. Di seguito è riportata una schermata **della finestra di condivisione in** OneDrive, in cui vengono visualizzate le tre opzioni di condivisione. 
   
-![Solo i file condivisi con persone specifiche verranno restituiti da una query di ricerca che utilizza la proprietà SharedWithUsersOWSUser](media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
+![Solo i file condivisi con persone specifiche verranno restituiti da una query di ricerca che utilizza la proprietà SharedWithUsersOWSUser](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
   
 Solo i documenti condivisi tramite la terza opzione (condivisi con **persone specifiche**) verranno restituiti da una query di ricerca che utilizza la `SharedWithUsersOWSUser` proprietà. 
 
