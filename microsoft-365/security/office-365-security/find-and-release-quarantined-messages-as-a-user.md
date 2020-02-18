@@ -1,5 +1,7 @@
 ---
 title: Trovare e rilasciare i messaggi messi in quarantena come utente di Office 365
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -15,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: "Gli utenti di Office 365 possono gestire i propri messaggi di posta indesiderata messi in quarantena in due modi: rispondendo alle notifiche di posta indesiderata inviate direttamente a loro (se l'amministratore ha configurato questa funzionalità) oppure usando la funzionalità Quarantena posta indesiderata del &amp;Centro sicurezza e conformità."
-ms.openlocfilehash: bcc9b7ed52af0e9920506aa667e51daad7f82c80
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 277af18d2061e8bd13386ab96e37d982d68e0b52
+ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40808001"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41599293"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Trovare e rilasciare i messaggi messi in quarantena come utente di Office 365
 
