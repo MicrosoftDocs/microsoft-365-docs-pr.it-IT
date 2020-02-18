@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Scaricare gli audit di terze parti, scoprire in che modo Microsoft mantiene i dati dei clienti sicuri e sapere come è possibile conformarsi alle normative ISO, HIPAA, FINRA e FedRAMP quando si utilizza Office 365.
-ms.openlocfilehash: f883f625e872076146e75c01bde26d40f7e1a4d3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 823722fe49349a11e828ca56978240e662c8435c
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601523"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081318"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garanzia del servizio nel centro sicurezza & conformità
 
@@ -71,7 +71,7 @@ Quando si accede per la prima volta all'assicurazione del servizio, il primo pas
   
 1. Dopo aver eseguito l'accesso a Service Assurance, selezionare **Impostazioni** e visualizzare la pagina Impostazioni area e settore come illustrato nella schermata seguente. 
     
-    ![Visualizza la pagina delle impostazioni del Centro protezione.](media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
+    ![Visualizza la pagina delle impostazioni del Centro protezione.](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
 2. Nella pagina **Impostazioni** selezionare la freccia in giù accanto a **area geografica** e controllare le aree appropriate per l'organizzazione. 
     
@@ -86,15 +86,15 @@ Per esaminare e scaricare il contenuto, selezionare un'opzione nel riquadro di s
   
 - **Rapporti di conformità** per visualizzare i controlli e le valutazioni indipendenti di Office 365 e di altri servizi cloud Microsoft, come illustrato nella schermata seguente. 
     
-    ![Visualizza la pagina garanzia del servizio: rapporti di conformità dei servizi.](media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
+    ![Visualizza la pagina garanzia del servizio: rapporti di conformità dei servizi.](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
 - **Attendibilità dei documenti** per visualizzare le informazioni su come Microsoft gestisce Office 365 come illustrato nella schermata seguente. 
     
-    ![Visualizza la pagina garanzia del servizio: attendibilità dei documenti forniti da Microsoft](media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![Visualizza la pagina garanzia del servizio: attendibilità dei documenti forniti da Microsoft](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - **Controlli controllati** per visualizzare le informazioni su come i controlli di Office 365 soddisfano i requisiti di sicurezza, conformità e privacy, come illustrato nella schermata seguente. 
     
-    ![Visualizza la schermata controlli di controllo dell'affidabilità del servizio.](media/4baf252b-603d-45e0-af12-32616154df65.png)
+    ![Visualizza la schermata controlli di controllo dell'affidabilità del servizio.](../media/4baf252b-603d-45e0-af12-32616154df65.png)
   
 Selezionare il report che si desidera scaricare e quindi fare clic su **Salva** per scaricarlo nel computer. Per i controlli controllati, selezionare il report desiderato e quindi fare clic su **download**. Nella tabella seguente vengono illustrati i report che è possibile trovare su ogni pagina di garanzia del servizio. 
   
@@ -116,15 +116,15 @@ Per accedere ai report predefiniti generalmente disponibili in tutti gli abbonam
   
 1. Nel centro sicurezza & conformità selezionare **autorizzazioni** nel riquadro sinistro, come illustrato nella schermata seguente. 
     
-    ![Menu &amp; autorizzazioni di conformità di sicurezza](media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
+    ![Menu &amp; autorizzazioni di conformità di sicurezza](../media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
   
 2. Nel riquadro a destra, selezionare **Service Assurance utente**, quindi selezionare **modifica gruppo di ruoli**e, nella sezione **membri** , selezionare **modifica** per aggiungere membri al ruolo utente di Assurance del servizio, come illustrato nella schermata seguente. 
     
-    ![Servizio di sicurezza utente-Aggiungi](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
+    ![Servizio di sicurezza utente-Aggiungi](../media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
 3. Nella finestra di dialogo successiva cercare e scegliere singoli o gruppi che devono visualizzare i report di conformità e le risorse di attendibilità del servizio, quindi selezionare **Aggiungi** per ogni selezione effettuata e fare clic sulla **X** nell'angolo in alto a destra del riquadro al termine. 
     
-    ![Service Assurance utente-Scegli utente](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
+    ![Service Assurance utente-Scegli utente](../media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   
 4. Ogni utente o gruppo aggiunto al ruolo utente di Service Assurance può ora trovare la garanzia del servizio e scaricare i report e altri documenti nel centro sicurezza & Compliance.
     

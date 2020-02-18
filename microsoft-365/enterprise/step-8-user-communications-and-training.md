@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 8: comunicazioni e formazione utente'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come preparare gli utenti finali al passaggio a Windows 10 e Office 365 ProPlus tramite comunicazioni e formazione.
-ms.openlocfilehash: 46a9a21fe60d2cf16f0e24483c5e6ab261714b23
-ms.sourcegitcommit: 70e920f76526f47fc849df615de4569e0ac2f4be
+ms.openlocfilehash: 02fa62cc7f9276670812a887e927ce8a1c6fb549
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033661"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085125"
 ---
 # <a name="step-8-user-communications-and-training"></a>Passaggio 8: comunicazioni e formazione utente
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-11.png" alt="Step 8" height="144" width="144" /></td>
 <td><p><strong>Passaggio 8: comunicazioni e formazione utente</strong></p>
 <p>Verificare che gli utenti siano informati sulle nuove esperienze e sulle nuove modalità di lavoro quando si passa a Windows 10 e Office 365 ProPlus. Ottenere informazioni su come sfruttare l’assistenza per l’adozione da parte degli utenti con Microsoft FastTrack, sui materiali di formazione e sui modelli di comunicazione, oltre che sui nuovi modi per monitorare l'utilizzo e l’accettazione da parte degli utenti.</p></td>
-<td><a href="https://aka.ms/ddev8" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev8" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-21.png" alt="Step 8" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -47,7 +49,7 @@ A partire da Office, se si sta distribuendo Office 365 ProPlus per la prima volt
 
 Sono disponibili modelli dettagliati di comunicazione e formazione per queste e altre app locali o basate su browser, come Teams e Planner.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-3.png)
 
 Microsoft fornisce inoltre indicazioni sulle nuove funzionalità in-app che permettono di allegare file collegati a OneDrive in Outlook o di utilizzare nuove transizioni di diapositive Morphing e funzionalità di Designer in PowerPoint.
 
@@ -77,7 +79,7 @@ La distribuzione a fasi utilizzando gli anelli di distribuzione consiste nell'in
 
 Gli anelli di distribuzione sono creati al meglio se effettuati in collaborazione con le unità aziendali e i loro dirigenti. Si consiglia di individuare le date e le ore critiche da evitare per la distribuzione o l'esecuzione di modifiche. Senza un'attenta pianificazione e l'approvazione delle parti interessate, sarà difficile convincere gli utenti ad adottare con serenità gli eventuali cambiamenti in arrivo.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-4.png)
 
 ### <a name="phase-1-the-it-team-and-early-adopter-insiders"></a>Fase 1: team IT e personale al passo con la tecnologia 
 
@@ -117,7 +119,7 @@ Questi componenti e servizi insieme possono essere messi a punto durante la fase
 
 Man mano che il progetto pilota si espande, sarà necessario documentare e pubblicare domande frequenti e contenuti cui poter accedere autonomamente per ridurre in modo proattivo i ticket di assistenza e le attività dell'helpdesk.
 
-![](media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
+![](../media/step-8-user-communications-and-training-media/step-8-user-communications-and-training-media-5.png)
 
 ### <a name="phase-3-and-beyond-broad-production-deployment"></a>Fase 3 e successive: distribuzione generale della produzione 
 

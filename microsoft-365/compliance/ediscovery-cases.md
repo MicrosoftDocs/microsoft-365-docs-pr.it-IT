@@ -53,7 +53,7 @@ Utilizzare il flusso di lavoro seguente per configurare e utilizzare i casi di e
 
 [Optional Passaggio 10: riaprire un caso chiuso](#optional-step-10-re-open-a-closed-case)
 
-[Ulteriori informazioni](#more-information)
+[Altre informazioni](#more-information)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 

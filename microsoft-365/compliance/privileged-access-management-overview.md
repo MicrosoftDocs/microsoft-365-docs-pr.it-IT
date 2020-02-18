@@ -99,6 +99,6 @@ L' [archivio protetto dei clienti](https://docs.microsoft.com/office365/admin/ma
 
 Avviare [la configurazione dell'organizzazione per la gestione degli accessi con privilegi](privileged-access-management-configuration.md).
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Altre informazioni
 
 [Guida interattiva: monitorare e controllare le attività dell'amministratore con la gestione degli accessi con privilegi](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

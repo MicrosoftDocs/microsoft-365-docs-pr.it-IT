@@ -15,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di dispositivi e app nell'ambiente.
-ms.openlocfilehash: 6bf41d0930a3c957bb856d35815bf05087997208
-ms.sourcegitcommit: ca2209d9176f99048d0a7adc20261029ca23dcbd
+ms.openlocfilehash: abeb6bbfcc5a8de869263f5a4aa922a6642a92f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774212"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085485"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Passaggio 1: preparazione di dispositivi e app
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Step 1" height="130" width="130" /></td>
 <td><p><strong>Passaggio 1: preparazione di dispositivi e app</strong></p>
 <p>Iniziare il progetto di distribuzione desktop con un inventario dei dispositivi e delle app, con l'assegnazione delle priorità, con l'esecuzione di test sui dispositivi e sulle app cui è stata assegnata la priorità, quindi con la correzione di quanto necessario per prepararsi alla distribuzione.</p></td>
-<td><a href="https://aka.ms/ddev1" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev1" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-14.png" alt="Step 1" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -71,15 +71,15 @@ Il processo di preparazione di dispositivi e app è costituito da quattro passag
 
 Desktop Analytics si avvale di un processo senza agente per effettuare un inventario dei computer e delle applicazioni tra i vari desktop in uso. Inoltre, fornisce report sui siti Internet più visitati, sulle app e sui percorsi Intranet, per semplificare la successiva fase di test della compatibilità.
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-3.png)
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-4.png)
 
 ### <a name="2-prioritize"></a>2\. Assegnazione della priorità
 
 Una volta eseguito l'inventario, Desktop Analytics consente di identificare e classificare in ordine di priorità l'hardware e le app più comuni usati nell'organizzazione, oltre a indicare su cosa concentrarsi per sbloccare il maggior numero possibile di PC per la distribuzione.
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-5.png)
 
 Fornisce inoltre indicazioni utili per valutare se siano necessari aggiornamenti per risolvere i problemi durante il passaggio successivo: il test.
 
@@ -91,13 +91,13 @@ Si noterà che la maggior parte delle applicazioni, dei driver e dei componenti 
 
 Inoltre, per facilitare il passaggio a Office 365 ProPlus, è consigliabile usare [Readiness Toolkit for Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) per testare la compatibilità dei componenti aggiuntivi e delle macro Microsoft Visual Basic for Applications (VBA).
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
 ### <a name="4-remediation"></a>4\. Correzione
 
 La fase finale della preparazione di dispositivi e app è quella di correzione. Sarà necessario raccogliere i pacchetti driver e software necessari che verranno usati per sostituire o aggiornare le versioni precedenti nell'ambito del processo di distribuzione.
 
-![](media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-7.png)
+![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-7.png)
 
 Man mano che vengono esaminati problemi, un numero sempre maggiore di PC diventa "pronto per la distribuzione". Ciò significa che sia i driver che le app sui PC vengono considerati compatibili con la versione di Windows 10 che si intende utilizzare per la distribuzione.
 

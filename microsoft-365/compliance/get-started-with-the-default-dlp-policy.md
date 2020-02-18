@@ -17,12 +17,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: Prima di creare anche il primo criterio di prevenzione della perdita di dati (DLP), DLP contribuisce a proteggere le informazioni riservate con un criterio predefinito. Questo criterio predefinito e il relativo suggerimento (illustrato di seguito) consentono di mantenere la sicurezza del contenuto riservato notificando quando la posta elettronica o i documenti contenenti un numero di carta di credito sono stati condivisi con un utente esterno all'organizzazione.
-ms.openlocfilehash: 3ac2fef32c7ba20d906ec96e2510971c94ef2652
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 687cfb50568310aa29f06da6bfbbc644d3edc853
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596543"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42073120"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introduzione ai criteri di prevenzione della perdita dei dati predefiniti
 
@@ -30,7 +30,7 @@ Prima di creare anche il primo criterio di prevenzione della perdita di dati (DL
   
 È possibile utilizzare questo widget per visualizzare rapidamente la condivisione e la quantità di informazioni riservate, quindi affinare il criterio DLP predefinito in un solo clic o due. È inoltre possibile modificare il criterio DLP predefinito in qualsiasi momento perché è completamente personalizzabile. Si noti che, se la raccomandazione non viene visualizzata all'inizio, provare a fare clic su **+ altro** nella parte inferiore della sezione **consigliata per l'utente** . 
   
-![Widget denominato ulteriore protezione del contenuto condiviso](media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
+![Widget denominato ulteriore protezione del contenuto condiviso](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
 ## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Visualizzazione del report e affinamento del criterio DLP predefinito
 
@@ -58,7 +58,7 @@ Per ulteriori informazioni sui rapporti sugli incidenti o la limitazione dell'ac
   
 Se si desidera modificare queste opzioni in un secondo momento, è possibile modificare il criterio DLP predefinito in qualsiasi ora, vedere la sezione successiva.
   
-![Impostazioni per widget denominato ulteriore protezione del contenuto condiviso](media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Impostazioni per widget denominato ulteriore protezione del contenuto condiviso](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>Modificare il criterio DLP predefinito
 
@@ -66,7 +66,7 @@ Questo criterio è denominato **criteri DLP predefinito di Office 365** e viene 
   
 Questo criterio è completamente personalizzabile, lo stesso di qualsiasi criterio DLP creato da zero. È anche possibile disattivare o eliminare il criterio, in modo che gli utenti non ricevano più suggerimenti per i criteri o notifiche tramite posta elettronica.
   
-![Criterio DLP denominato criteri DLP predefiniti di Office 365](media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![Criterio DLP denominato criteri DLP predefiniti di Office 365](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Quando il widget fa e non viene visualizzato
 

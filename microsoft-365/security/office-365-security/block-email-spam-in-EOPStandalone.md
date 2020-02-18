@@ -1,5 +1,7 @@
 ---
 title: Bloccare la posta indesiderata nella versione autonoma di Exchange Online Protection
+f1.keywords:
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
@@ -16,12 +18,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento destinato agli amministratori della versione autonoma di Exchange Online Protection che contiene informazioni per evitare falsi negativi della posta indesiderata
-ms.openlocfilehash: 1c82bd65906f79898677136e02fd619bbe4c5214
-ms.sourcegitcommit: 5710ce729c55d95b8b452d99ffb7ea92b5cb254a
+ms.openlocfilehash: 6261c183d39b84435110616491f5bd0b2f3f891b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39971904"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086587"
 ---
 # <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizzare il filtro della posta indesiderata di Office 365 con queste impostazioni
 
@@ -41,7 +43,7 @@ Un amministratore può utilizzare diverse impostazioni del filtro protezione da 
 
 La posta indesiderata è per lo più composta da posta inviata in blocco, come newsletter o promozioni? È possibile personalizzare il filtro protezione da posta indesiderata in Office 365 se si [usano regole di flusso di posta per configurare il filtro della posta elettronica inviata in blocco](use-transport-rules-to-configure-bulk-email-filtering.md) o si attiva l'impostazione **Invio di posta in blocco** in [Opzioni ASF](advanced-spam-filtering-asf-options.md) del filtro protezione da posta indesiderata. Nell'interfaccia di amministrazione di Exchange fare clic su **Protezione** \> **Filtro contenuto** per iniziare e quindi fare doppio clic sul criterio del filtro da modificare. Fare clic su **Azioni posta indesiderata e inviata in blocco** per modificare le impostazioni, come mostrato qui.
 
-![Impostazione del filtro di posta inviata in blocco in Exchange Online](../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
+![Impostazione del filtro di posta inviata in blocco in Exchange Online](../../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
 
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Bloccare la posta indesiderata tramite gli elenchi elementi bloccati del filtro protezione da posta indesiderata
 
@@ -51,7 +53,7 @@ La posta indesiderata è per lo più composta da posta inviata in blocco, come n
 
 Può risultare utile per le iniziative di protezione dalla posta indesiderata di Office 365 volte a evitare falsi negativi e posta indesiderata, dire agli utenti di aggiungere l'indirizzo del mittente della posta indesiderata all'elenco dei mittenti bloccati in [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) o [Outlook sul web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d). Per iniziare in Outlook sul web, fare clic su **Impostazioni** \> **Opzioni** \> **Blocca o consenti** e quindi aggiungere l'indirizzo all'elenco **Mittenti bloccati**, come illustrato di seguito.
 
-![Blocco di un mittente in Outlook sul web](../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
+![Blocco di un mittente in Outlook sul web](../../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
 > [!NOTE]
 > Per informazioni più dettagliate sugli elenchi di mittenti attendibili, vedere [Elenchi di mittenti attendibili e mittenti bloccati in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
@@ -87,4 +89,4 @@ Il servizio Exchange Online Protection è progettato per applicare i mittenti at
 
 [Protezione dalla posta indesiderata in Office 365](anti-spam-protection.md)
 
-[Evitare che la posta elettronica venga erroneamente contrassegnata come posta indesiderata tramite un elenco di indirizzi attendibili o altre tecniche](../../compliance/prevent-email-from-being-marked-as-spam.md)
+[Evitare che la posta elettronica venga erroneamente contrassegnata come posta indesiderata tramite un elenco di indirizzi attendibili o altre tecniche](prevent-email-from-being-marked-as-spam.md)

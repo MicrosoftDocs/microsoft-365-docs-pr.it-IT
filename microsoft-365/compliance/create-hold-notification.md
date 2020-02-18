@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e6eedae80b7a04cc77c086153da9d884e8eed167
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3b047e9c3a56a6c03368c79c2c5a4622b396b6b0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595623"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077558"
 ---
 # <a name="create-a-legal-hold-notice"></a>Creare un avviso per la conservazione legale
 
 Utilizzando le comunicazioni del custode di eDiscovery avanzate, le organizzazioni possono gestire il flusso di lavoro attorno alla comunicazione con i depositari. Tramite lo strumento di comunicazione, i team legali possono inviare, raccogliere e tenere presenti sistematicamente le notifiche per la conservazione legale. Il processo di creazione flessibile consente inoltre ai team di personalizzare il flusso di lavoro di notifica di archiviazione e il contenuto nelle notifiche inviate ai depositari. 
 
-![Pagina comunicazioni](media/CommunicationPage.PNG)
+![Pagina comunicazioni](../media/CommunicationPage.PNG)
 
 In questo articolo vengono illustrati i passaggi del flusso di lavoro di notifica di blocco.
 
@@ -35,7 +35,7 @@ In questo articolo vengono illustrati i passaggi del flusso di lavoro di notific
 
 Il primo passaggio consiste nel specificare i dettagli adeguati per le notifiche di archiviazione legale o altre comunicazioni del custode. 
 
-![Pagina di comunicazione del nome](media/NameCommunication.PNG)
+![Pagina di comunicazione del nome](../media/NameCommunication.PNG)
 
 1. Nel centro sicurezza & conformità, accedere a **eDiscovery > Advanced eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione.
    
@@ -53,7 +53,7 @@ Il primo passaggio consiste nel specificare i dettagli adeguati per le notifiche
 
 Successivamente, è possibile creare e aggiungere il contenuto dell'avviso di blocco. Nella pagina **Definisci contenuto portale** della creazione guidata **comunicazione** , specificare il contenuto della notifica di blocco. Questo contenuto verrà accodato automaticamente agli avvisi di emissione, riemissione, sollecito e escalation. Inoltre, questo contenuto verrà visualizzato nel portale di conformità del custode. 
 
-![Pagina contenuto portale](media/PortalContent.PNG)
+![Pagina contenuto portale](../media/PortalContent.PNG)
 
 Per creare il contenuto del portale:
 
@@ -127,7 +127,7 @@ Per creare una notifica di rilascio:
 
 Facoltativamente, è possibile semplificare il flusso di lavoro per la creazione e la pianificazione delle notifiche di promemoria automatica e di escalation.
 
-![Pagina promemoria/escalation](media/ReminderEscalations.PNG)
+![Pagina promemoria/escalation](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>Promemoria
 
@@ -173,7 +173,7 @@ Per pianificare le escalation:
 
 Dopo aver finalizzato il contenuto per le notifiche, selezionare i depositari che si desidera inviare le notifiche. 
 
-![Pagina Selezione depositari](media/SelectCustodians.PNG)
+![Pagina Selezione depositari](../media/SelectCustodians.PNG)
 
 Per aggiungere i depositari:
 

@@ -1,5 +1,7 @@
 ---
 title: Passaggio 5 - Considerazioni sulla sicurezza e conformità
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Considerazioni importanti sulla sicurezza e conformità di Windows e Office.
-ms.openlocfilehash: b4ef8b4d4e5e6277ea129b5a9454983459266462
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 1d38347ca1bdf152a891cfd147ec3fabf552ff3d
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112560"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085266"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Passaggio 5: considerazioni sulla sicurezza e conformità
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
 <td><p><strong>Passaggio 5: considerazioni sulla sicurezza e conformità</strong></p>
 <p>Windows 10 e Office 365 ProPlus forniscono nuovi modi per proteggere dati, dispositivi e utenti e per rilevare rapidamente e rispondere alle minacce. Ottenere inoltre informazioni su come gestire i problemi comuni relativi alla crittografia del disco, alle app antimalware e ai criteri quando si passa a Windows 10.</p></td>
-<td><a href="https://aka.ms/ddev5" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -63,7 +65,7 @@ Di conseguenza, queste applicazioni per natura possono essere fragili alle modif
 
 Le impostazioni Criteri di gruppo di Active Directory utilizzate per le versioni precedenti di Windows e Office potrebbero non tradursi direttamente in Windows 10 e Office 365 ProPlus ed esistono diverse considerazioni con le funzionalità di sicurezza e conformità più recenti. È una buona idea utilizzare il toolkit Microsoft Security Compliance per ottenere una linea di base dei criteri di sicurezza per le versioni correnti di Windows e Office. Inoltre, vale la pena analizzare i criteri di gestione dei dispositivi mobili di Microsoft Intune.
 
-![](media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
+![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
 ## 
 

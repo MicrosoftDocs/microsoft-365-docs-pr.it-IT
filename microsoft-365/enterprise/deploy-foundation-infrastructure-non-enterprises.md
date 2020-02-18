@@ -1,6 +1,8 @@
 ---
 title: Infrastruttura di base di Microsoft 365 per le aziende per organizzazioni non aziendali
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/08/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Esame delle fasi semplificate dell'infrastruttura di base per Microsoft 365 per le aziende per organizzazioni non aziendali.
-ms.openlocfilehash: ce673222c08823c99c7e9851fced46a90a72b892
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 2620b210c40d5c838cf1a4be4fcd67bf3de03d29
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802031"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068152"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-for-non-enterprises"></a>Infrastruttura di base di Microsoft 365 per le aziende per organizzazioni non aziendali
 
@@ -55,7 +57,7 @@ Se si usano server proxy, firewall o dispositivi di controllo dei pacchetti, ved
 
 Ecco una grafica riepilogativa in cui è evidenziato l'elemento della fase 1. La dicitura **Organizzazione** può corrispondere a più uffici, ognuno dei quali dispone di una connessione Internet locale con un ISP che usa un server DNS locale a livello di area geografica. Grazie all'ISP, gli utenti di ogni ufficio possono raggiungere il percorso di rete Microsoft 365 più vicino e le risorse dell'abbonamento a Microsoft 365.
 
-![L'organizzazione dopo la fase di networking](./media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
+![L'organizzazione dopo la fase di networking](../media/deploy-foundation-infrastructure-non-enterprises/networking-config.png)
 
 ## <a name="phase-2-identity"></a>Fase 2: identità
 
@@ -150,30 +152,30 @@ Se si dispone di Microsoft 365 E5, è possibile usare Azure AD Identity Protecti
 
 Ecco una grafica riepilogativa della fase Identità per l'identità ibrida in cui sono evidenziati gli elementi esistenti e quelli nuovi.
 
-![L'organizzazione dopo la fase Identità per l'identità ibrida](./media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
+![L'organizzazione dopo la fase Identità per l'identità ibrida](../media/deploy-foundation-infrastructure-non-enterprises/identity-config.png)
  
 Gli elementi nuovi ed evidenziati della fase identità ibrida includono:
  
 |||
 |:------:|:-----|
-| ![Un dominio di AD DS locale con account utente e gruppi](./media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | Un dominio di AD DS locale con account utente e gruppi. |
-| ![Un server basato su Windows che esegue Azure AD Connect](./media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | Un server basato su Windows che esegue Azure AD Connect. |
-| ![Il set sincronizzato di account utente e gruppi di AD DS in Azure AD](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | Il set sincronizzato di account utente e gruppi di AD DS in Azure AD. |
-| ![Impostazioni di Azure AD per l'autenticazione, per proteggere gli account globali e semplificare la gestione dei gruppi e delle licenze](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Impostazioni di Azure AD per l'autenticazione, per proteggere gli account globali e semplificare la gestione dei gruppi e delle licenze. |
-| ![Criteri di Accesso condizionale di Azure AD](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Criteri di Accesso condizionale di Azure AD. |
+| ![Un dominio di AD DS locale con account utente e gruppi](../media/deploy-foundation-infrastructure-non-enterprises/identity-adds.png) | Un dominio di AD DS locale con account utente e gruppi. |
+| ![Un server basato su Windows che esegue Azure AD Connect](../media/deploy-foundation-infrastructure-non-enterprises/identity-aadconnect.png) | Un server basato su Windows che esegue Azure AD Connect. |
+| ![Il set sincronizzato di account utente e gruppi di AD DS in Azure AD](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts.png) | Il set sincronizzato di account utente e gruppi di AD DS in Azure AD. |
+| ![Impostazioni di Azure AD per l'autenticazione, per proteggere gli account globali e semplificare la gestione dei gruppi e delle licenze](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Impostazioni di Azure AD per l'autenticazione, per proteggere gli account globali e semplificare la gestione dei gruppi e delle licenze. |
+| ![Criteri di Accesso condizionale di Azure AD](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Criteri di Accesso condizionale di Azure AD. |
 |||
 
 Ecco una grafica riepilogativa della fase Identità per l'identità solo cloud, in cui sono evidenziati i nuovi elementi.
 
-![L'organizzazione dopo la fase Identità per l'identità solo cloud](./media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
+![L'organizzazione dopo la fase Identità per l'identità solo cloud](../media/deploy-foundation-infrastructure-non-enterprises/identity-config-cloud-only.png)
  
 Gli elementi nuovi ed evidenziati dell'identità solo cloud includono:
  
 |||
 |:------:|:-----|
-| ![Account utente e gruppi in Azure AD](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts-cloud-only.png) | Account utente e gruppi in Azure AD. |
-| ![Impostazioni di Azure AD per l'autenticazione, per proteggere gli account globali e semplificare la gestione dei gruppi e delle licenze](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Impostazioni di Azure AD per l'autenticazione, per proteggere gli account globali e semplificare la gestione dei gruppi e delle licenze. |
-| ![Criteri di Accesso condizionale di Azure AD](./media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Criteri di Accesso condizionale di Azure AD. |
+| ![Account utente e gruppi in Azure AD](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-accounts-cloud-only.png) | Account utente e gruppi in Azure AD. |
+| ![Impostazioni di Azure AD per l'autenticazione, per proteggere gli account globali e semplificare la gestione dei gruppi e delle licenze](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-settings.png) | Impostazioni di Azure AD per l'autenticazione, per proteggere gli account globali e semplificare la gestione dei gruppi e delle licenze. |
+| ![Criteri di Accesso condizionale di Azure AD](../media/deploy-foundation-infrastructure-non-enterprises/identity-aad-caps.png) | Criteri di Accesso condizionale di Azure AD. |
 |||
 
 ## <a name="phase-3-windows-10-enterprise"></a>Fase 3: Windows 10 Enterprise
@@ -201,14 +203,14 @@ Dopo essere stato installato e aggiunto ogni dispositivo Windows 10 Enterprise i
 
 Ecco una grafica riepilogativa della fase Windows 10 Enterprise in cui sono evidenziati i nuovi elementi.
 
-![L'organizzazione dopo la fase Windows 10 Enterprise](./media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
+![L'organizzazione dopo la fase Windows 10 Enterprise](../media/deploy-foundation-infrastructure-non-enterprises/win10-config.png)
  
 Gli elementi nuovi ed evidenziati della fase Windows 10 Enterprise includono:
 
 |||
 |:------:|:-----|
-| ![Windows 10 Enterprise installato nei dispositivi Windows](./media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 10 Enterprise installato nei dispositivi di Windows, con un portatile locale come esempio. |
-| ![Volume Licensing Service Center](./media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | Il Volume Licensing Service Center, che fornisce le immagini per le nuove installazioni di Windows 10 Enterprise, e il servizio Windows Update per le aziende, che fornisce gli aggiornamenti più recenti. |
+| ![Windows 10 Enterprise installato nei dispositivi Windows](../media/deploy-foundation-infrastructure-non-enterprises/win10-device.png) | Windows 10 Enterprise installato nei dispositivi di Windows, con un portatile locale come esempio. |
+| ![Volume Licensing Service Center](../media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | Il Volume Licensing Service Center, che fornisce le immagini per le nuove installazioni di Windows 10 Enterprise, e il servizio Windows Update per le aziende, che fornisce gli aggiornamenti più recenti. |
 |||
 
 ## <a name="phase-4-office-365-proplus"></a>Fase 4: Office 365 ProPlus
@@ -225,14 +227,14 @@ Gli aggiornamenti delle funzionalità di Office 365 ProPlus vengono scaricati og
 
 Ecco una grafica riepilogativa della fase Office 365 ProPlus in cui sono evidenziati i nuovi elementi.
 
-![L'organizzazione dopo la fase Office 365 ProPlus](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![L'organizzazione dopo la fase Office 365 ProPlus](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
 Gli elementi nuovi ed evidenziati della fase Office 365 ProPlus includono:
  
 |||
 |:------:|:-----|
-| ![Office 365 ProPlus installato nei dipositivi](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus installato nei dispositivi, con un portatile locale come esempio. |
-| ![Rete per la distribuzione di contenuti di Office (CDN) di Office per Office 365 ProPlus](./media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Rete per la distribuzione di contenuti di Office (CDN) di Office per Office 365 ProPlus, a cui i dispositivi accedono per scaricare gli aggiornamenti di Office 365 ProPlus. |
+| ![Office 365 ProPlus installato nei dipositivi](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus installato nei dispositivi, con un portatile locale come esempio. |
+| ![Rete per la distribuzione di contenuti di Office (CDN) di Office per Office 365 ProPlus](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | Rete per la distribuzione di contenuti di Office (CDN) di Office per Office 365 ProPlus, a cui i dispositivi accedono per scaricare gli aggiornamenti di Office 365 ProPlus. |
 |||
 
 ## <a name="phase-5-mobile-device-management"></a>Fase 5: gestione dei dispositivi mobili
@@ -264,14 +266,14 @@ Per le istruzioni, vedere [Criteri comuni di identità e accesso dei dispositivi
 
 Ecco una grafica riepilogativa della fase Gestione dei dispositivi mobili in cui sono evidenziati i nuovi elementi.
 
-![L'organizzazione dopo la fase Gestione dee dispositivi mobili](./media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
+![L'organizzazione dopo la fase Gestione dee dispositivi mobili](../media/deploy-foundation-infrastructure-non-enterprises/mdm-config.png)
  
 Gli elementi nuovi ed evidenziati della fase Gestione dei dispositivi mobili includono:
 
 |||
 |:------:|:-----|
-| ![Dispositivi registrati in Intune](./media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | Dispositivi registrati in Intune, con un portatile locale che esegue Windows 10 Enterprise come esempio. |
-| ![Criteri di Intune per la conformità dei dispositivi e la protezione delle app](./media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | Criteri di Intune per la conformità dei dispositivi e la protezione delle app. |
+| ![Dispositivi registrati in Intune](../media/deploy-foundation-infrastructure-non-enterprises/mdm-device.png) | Dispositivi registrati in Intune, con un portatile locale che esegue Windows 10 Enterprise come esempio. |
+| ![Criteri di Intune per la conformità dei dispositivi e la protezione delle app](../media/deploy-foundation-infrastructure-non-enterprises/mdm-policies.png) | Criteri di Intune per la conformità dei dispositivi e la protezione delle app. |
 |||
 
 ## <a name="phase-6-information-protection"></a>Fase 6: protezione delle informazioni
@@ -330,13 +332,13 @@ Per le etichette di riservatezza configurate con le autorizzazioni basate su gru
 
 Ecco una grafica riepilogativa della fase Protezione delle informazioni in cui sono evidenziati i nuovi elementi.
 
-![L'organizzazione dopo la fase Protezione delle informazioni](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
+![L'organizzazione dopo la fase Protezione delle informazioni](../media/deploy-foundation-infrastructure-non-enterprises/info-protect-config.png)
  
 Gli elementi nuovi ed evidenziati della fase Protezione delle informazioni includono:
  
 |||
 |:------:|:-----|
-| ![Etichette di riservatezza per i tre livelli di sicurezza](./media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | Etichette di riservatezza per i tre livelli di sicurezza che gli utenti possono applicare ai documenti e ai messaggi di posta elettronica. |
+| ![Etichette di riservatezza per i tre livelli di sicurezza](../media/deploy-foundation-infrastructure-non-enterprises/info-protect-labels.png) | Etichette di riservatezza per i tre livelli di sicurezza che gli utenti possono applicare ai documenti e ai messaggi di posta elettronica. |
 |||
 
 La grafica non include le etichette di conservazione e i tipi di informazioni personalizzati.
@@ -412,11 +414,11 @@ Dopo la creazione e la configurazione dell'infrastruttura di Microsoft 365 per l
 
 Ecco una grafica riepilogativa dell'infrastruttura se l'organizzazione usa l'identità ibrida, che include il dominio di AD DS, un server Azure AD Connect, nonché utenti e gruppi AD DS sincronizzati.
 
-![Riepilogo dell'infrastruttura se l'organizzazione usa l'identità ibrida](./media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
+![Riepilogo dell'infrastruttura se l'organizzazione usa l'identità ibrida](../media/deploy-foundation-infrastructure-non-enterprises/final-hybrid-config.png)
  
 Ecco una grafica riepilogativa dell'infrastruttura se l'organizzazione usa l'identità solo cloud.
  
-![Riepilogo dell'infrastruttura se l'organizzazione usa l'identità solo cloud](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
+![Riepilogo dell'infrastruttura se l'organizzazione usa l'identità solo cloud](../media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)
 
 ### <a name="employee-results"></a>Risultati per i dipendenti
 

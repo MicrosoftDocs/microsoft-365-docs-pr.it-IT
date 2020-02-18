@@ -1,6 +1,8 @@
 ---
 title: Panoramica di Contoso Corporation
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulla società Contoso Corporation e sulla struttura a livelli dei suoi uffici nel mondo.
-ms.openlocfilehash: f1c758b92915845a0786c24aec611cb221c70186
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 856363881c749b06a530dc7cc4f0eb82dc155054
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673152"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068298"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Panoramica di Contoso Corporation
 
-![Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 Contoso Corporation è un’organizzazione multinazionale con sede a Parigi, in Francia. È un’azienda conglomerata di produzione, vendita e supporto con oltre 100.000 prodotti.
 
@@ -30,7 +32,7 @@ Contoso Corporation è un’organizzazione multinazionale con sede a Parigi, in 
 
 Nella figura 1 viene mostrata la sede di Parigi e gli uffici secondari e gli hub regionali nei vari continenti.
 
-![Uffici di Contoso in tutto il mondo](./media/contoso-overview/contoso-overview-fig1.png)
+![Uffici di Contoso in tutto il mondo](../media/contoso-overview/contoso-overview-fig1.png)
 
 **Figura 1: Uffici di Contoso in tutto il mondo**
  

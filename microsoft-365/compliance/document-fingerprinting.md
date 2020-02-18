@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Gli Information Worker dell'organizzazione gestiscono molti tipi di informazioni riservate durante una giornata. La creazione impronta digitale documenti rende più semplice proteggere le informazioni identificando moduli standard utilizzati all'interno dell'organizzazione. In questo argomento vengono descritti i concetti che stanno alla base dell'impronta digitale del documento e come crearne uno tramite PowerShell.
-ms.openlocfilehash: 4e64f2bf4db802cc5c94661fc2a57e1a0854b28a
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: 61fe5082b4808f153cc4092b429c0c5e6a54b110
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892029"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074949"
 ---
 # <a name="document-fingerprinting"></a>Creazione impronta digitale documenti
 
@@ -45,7 +45,7 @@ Il seguente esempio mostra cosa accade si crea un'impronta digitale del document
   
 ### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>Esempio di un documento di brevetto corrispondente a un'impronta digitale del documento di un modello di brevetto
 
-![Document-Fingerprinting-diagram. png](media/Document-Fingerprinting-diagram.png)
+![Document-Fingerprinting-diagram. png](../media/Document-Fingerprinting-diagram.png)
   
 Il modello di brevetto contiene i campi vuoti "titolo brevetto", "inventori" e "Descrizione" e descrizioni per ognuno di questi campi, ovvero il modello di parola. Quando si carica il modello di brevetto originale, si trova in uno dei tipi di file supportati e in testo normale. DLP converte questo modello di parola in un'impronta digitale del documento, che è un piccolo file XML Unicode contenente un valore hash univoco che rappresenta il testo originale e l'impronta digitale viene salvata come classificazione dei dati in Active Directory. (Come misura di sicurezza, il documento originale non è archiviato nel servizio, solo il valore hash è archiviato e il documento originale non può essere ricostruito dal valore hash). L'impronta digitale del brevetto diventa quindi un tipo di informazioni riservate che è possibile associare a un criterio DLP. Dopo aver associato l'impronta digitale a un criterio DLP, DLP rileva eventuali messaggi di posta elettronica in uscita contenenti documenti che corrispondono all'impronta digitale del brevetto e li gestisce in base ai criteri dell'organizzazione. 
 

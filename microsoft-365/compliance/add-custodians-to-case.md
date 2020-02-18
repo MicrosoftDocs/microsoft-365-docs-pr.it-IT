@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3acd3b300c4472b32a261d28aeae6a9d94e17423
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594059"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080233"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Aggiungere i depositari a un caso avanzato di eDiscovery
 
@@ -29,9 +29,9 @@ Utilizzare lo strumento di gestione del custode incorporato in Advanced eDiscove
 
 Utilizzare il flusso di lavoro seguente per aggiungere e gestire i depositari nei casi avanzati di eDiscovery. 
 
-![Scheda Gestione depositaria](media/CustodianMgtPage.png)
+![Scheda Gestione depositaria](../media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Per aggiungere depositari a un caso, è necessario essere membri del gruppo di ruoli eDiscovery Manager. In questo modo, vengono fornite le autorizzazioni necessarie per aggiungere i depositari a un caso e inserire un'esenzione nelle origini dati della custodia.
 
@@ -46,7 +46,7 @@ Il primo passaggio consiste nell'identificare e aggiungere i depositari al caso.
 
 3. Individuare i depositari da aggiungere al caso. Digitare la prima parte del nome di una persona per visualizzare gli utenti di Azure Active Directory dell'organizzazione. Quando si trova la persona corretta, fare clic sul relativo nome per aggiungerli all'elenco.
 
-   ![Identificare i potenziali depositari](media/AddCustodianStep1.png)
+   ![Identificare i potenziali depositari](../media/AddCustodianStep1.png)
  
 4. Dopo aver aggiunto tutti i depositari rilevanti, fare clic su **Avanti** per selezionare le origini dati primarie dei depositari.
   
@@ -58,7 +58,7 @@ Per identificare le origini dati del custode:
 
 1. Per selezionare la cassetta postale di Exchange per tutti i depositari, selezionare la casella di controllo **Exchange** nella parte superiore della colonna. È quindi possibile deselezionare la casella di controllo per qualsiasi custode specifico per rimuovere una cassetta postale come posizione di custodia. In alternativa, è possibile lasciare la casella di controllo **Exchange** nella parte superiore della colonna deselezionata e quindi selezionare la casella di controllo per i singoli depositari. 
  
-   ![Selezionare origini dati di custodia](media/AddCustodianStep2.png)
+   ![Selezionare origini dati di custodia](../media/AddCustodianStep2.png)
  
 2. Ripetere la stessa operazione per gli account OneDrive dei depositari. 
 
@@ -74,7 +74,7 @@ Per eseguire il mapping di cassette postali, siti o team a un determinato custod
 
 1. Nella pagina **Seleziona origini dati aggiuntive** fare clic su **Aggiungi** nella riga per il custode specifico. 
   
-   ![Mapping di origini dati aggiuntive](media/AddCustodianStep3.PNG)
+   ![Mapping di origini dati aggiuntive](../media/AddCustodianStep3.PNG)
 
 2. Nella pagina a comparsa è possibile specificare un'origine dati da uno dei seguenti servizi di Office 365:
   
@@ -87,7 +87,7 @@ Per eseguire il mapping di cassette postali, siti o team a un determinato custod
      
      - **Teams** -fare clic su **Scegli team** e quindi fare di nuovo clic su **Scegli squadre** per visualizzare un elenco di Microsoft teams di cui è attualmente membro il custode. Selezionare i team che si desidera aggiungere al custode. Una volta selezionata, il sistema identificherà automaticamente & selezionare il sito di SharePoint associato e la cassetta postale del gruppo associata a quel team Microsoft. Fare clic su **Scegli**e quindi su **fine**.
 
-       ![Mapping delle origini dati](media/AddCustodianStep4.PNG)
+       ![Mapping delle origini dati](../media/AddCustodianStep4.PNG)
         
       > [!NOTE]
       > Per associare un altro team a un custode, è necessario aggiungere separatamente la cassetta postale e il sito associati al team utilizzando i percorsi di **posta elettronica di Exchange** e **siti di SharePoint** .
@@ -102,7 +102,7 @@ Per inserire i depositari e le origini dati in attesa:
 
 1. Selezionare la casella di controllo **blocca** nella parte superiore della colonna per inserire tutti i custodi in attesa nella pagina Archivia i **depositari selezionati** . È quindi possibile deselezionare la casella di controllo per qualsiasi custode specifico da rimuovere dall'esenzione. In alternativa, è possibile lasciare la casella di controllo **blocca** nella parte superiore della colonna deselezionata e quindi selezionare la casella di controllo per i singoli depositari. 
  
-   ![Esenzioni di posizione](media/AddCustodianStep5.PNG)
+   ![Esenzioni di posizione](../media/AddCustodianStep5.PNG)
 
 2. Verificare le selezioni di blocco del custode e quindi fare clic su **completa**.
 

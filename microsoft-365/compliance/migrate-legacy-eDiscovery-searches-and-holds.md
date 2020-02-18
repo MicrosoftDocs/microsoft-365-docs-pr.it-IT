@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 356330b4282fe9dc0aa211d48e452ad04a1bbe74
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: f53d9cbf719b0e16749c9ea1dcae2533f8c48e50
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957191"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091385"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Eseguire la migrazione delle ricerche e delle esenzioni eDiscovery legacy al centro conformità di Microsoft 365
 
@@ -58,7 +58,7 @@ Get-MailboxSearch
 
 L'output del cmdlet sarà analogo al seguente:
 
-![Esempio di PowerShell Get-MailboxSearch](media/MigrateLegacyeDiscovery1.png)
+![Esempio di PowerShell Get-MailboxSearch](../media/MigrateLegacyeDiscovery1.png)
 
 ## <a name="step-3-get-information-about-the-in-place-ediscovery-searches-and-in-place-holds-you-want-to-migrate"></a>Passaggio 3: ottenere informazioni sulle ricerche eDiscovery sul posto e sulle archiviazioni sul posto in cui si desidera eseguire la migrazione
 
@@ -74,7 +74,7 @@ $search | FL
 
 L'output di questi due comandi sarà analogo al seguente:
 
-![Esempio di output di PowerShell dall'utilizzo di Get-MailboxSearch per una singola ricerca](media/MigrateLegacyeDiscovery2.png)
+![Esempio di output di PowerShell dall'utilizzo di Get-MailboxSearch per una singola ricerca](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
 > La durata del blocco sul posto in questo esempio è indefinita (*ItemHoldPeriod: Unlimited*). Questo è tipico degli scenari di eDiscovery e di indagine legale. Se la durata del blocco ha un valore diverso da quello indefinito, è probabile che il blocco venga utilizzato per mantenere il contenuto in uno scenario di conservazione. Invece di usare i cmdlet eDiscovery in Office 365 Security & Compliance Center PowerShell per gli scenari di conservazione, è consigliabile utilizzare [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) e [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) per mantenere il contenuto. Il risultato dell'utilizzo di questi cmdlet sarà analogo all'utilizzo di **New-CaseHoldPolicy** e **New-CaseHoldRule**, ma è possibile specificare un periodo di conservazione e un'azione di conservazione, ad esempio l'eliminazione del contenuto dopo la scadenza del periodo di conservazione. Inoltre, l'utilizzo dei cmdlet di conservazione non richiede l'associazione dell'esenzione di conservazione a un caso di eDiscovery.
@@ -86,6 +86,7 @@ Per creare un blocco eDiscovery, è necessario creare un caso di eDiscovery per 
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
+![Esempio di esecuzione del comando New-ComplianceCase](../media/MigrateLegacyeDiscovery3.png)
 
 ## <a name="step-5-create-the-ediscovery-hold"></a>Passaggio 5: creare il blocco eDiscovery
 
@@ -101,6 +102,8 @@ $policy = New-CaseHoldPolicy -Name $search.Name -Case $case.Identity -ExchangeLo
 New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 ```
 
+![Esempio di utilizzo dei cmdlet NewCaseHoldPolicy e NewCaseHoldRule](../media/MigrateLegacyeDiscovery4.png)
+
 ## <a name="step-6-verify-the-ediscovery-hold"></a>Passaggio 6: verificare l'esenzione di eDiscovery
 
 Per assicurarsi che non vi siano problemi nella creazione del blocco, è consigliabile verificare che lo stato di distribuzione di archiviazione sia stato eseguito correttamente. Distribuzione significa che il blocco è stato applicato a tutti i percorsi di contenuto specificati nel parametro *ExchangeLocation* nel passaggio precedente. A tale scopo, è possibile eseguire il cmdlet **Get-CaseHoldPolicy** . Poiché le proprietà salvate nella variabile *$policy* creata nel passaggio precedente non vengono aggiornate automaticamente nella variabile, è necessario eseguire nuovamente il cmdlet per verificare che la distribuzione abbia esito positivo. La distribuzione dei criteri di blocco del caso può richiedere da 5 a 24 ore.
@@ -113,7 +116,7 @@ Get-CaseHoldPolicy -Identity $policy.Identity | Select name, DistributionStatus
 
 Il valore di **Success** per la proprietà *Proprietà distributionstatus* indica che il blocco è stato inserito correttamente nei percorsi di contenuto. Se la distribuzione non è ancora stata completata, verrà visualizzato un valore di **Pending** .
 
-![Esempio di Get-CaseHoldPolicy di PowerShell](media/MigrateLegacyeDiscovery5.png)
+![Esempio di Get-CaseHoldPolicy di PowerShell](../media/MigrateLegacyeDiscovery5.png)
 
 ## <a name="step-7-create-the-search"></a>Passaggio 7: creare la ricerca
 
@@ -123,21 +126,21 @@ L'ultimo passaggio consiste nel ricreare la ricerca identificata nel passaggio 3
 New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxes -ContentMatchQuery $search.SearchQuery -Case $case.name
 ```
 
-![Esempio di PowerShell New-ComplianceSearch](media/MigrateLegacyeDiscovery6.png)
+![Esempio di PowerShell New-ComplianceSearch](../media/MigrateLegacyeDiscovery6.png)
 
 ## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>Passaggio 8: verificare il caso, il blocco e la ricerca nel centro conformità di Microsoft 365
 
 Per assicurarsi che tutto sia configurato correttamente, passare al centro [https://compliance.microsoft.com](https://compliance.microsoft.com)conformità di Microsoft 365 e fare clic su **eDiscovery > Core**.
 
-![Microsoft 365 Compliance Center eDiscovery](media/MigrateLegacyeDiscovery7.png)
+![Microsoft 365 Compliance Center eDiscovery](../media/MigrateLegacyeDiscovery7.png)
 
 Il caso creato nel passaggio 3 è elencato nella pagina principale di **eDiscovery** . Aprire il caso e quindi tenere presente che il blocco creato nel passaggio 4 è elencato nella scheda **esenzioni** . È possibile fare clic sul blocco per visualizzare i dettagli, incluso il numero di cassette postali a cui è applicato il blocco e lo stato della distribuzione.
 
-![eDiscovery contiene nel centro conformità di Microsoft 365](media/MigrateLegacyeDiscovery8.png)
+![eDiscovery contiene nel centro conformità di Microsoft 365](../media/MigrateLegacyeDiscovery8.png)
 
 La ricerca creata al passaggio 7 è elencata nella scheda **ricerche** del caso eDiscovery.
 
-![ricerca di casi di eDiscovery nel centro conformità di Microsoft 365](media/MigrateLegacyeDiscovery9.png)
+![ricerca di casi di eDiscovery nel centro conformità di Microsoft 365](../media/MigrateLegacyeDiscovery9.png)
 
 Se si esegue la migrazione di una ricerca eDiscovery sul posto ma non la si associa a un caso di eDiscovery, questa verrà elencata nella pagina Ricerca contenuto del centro conformità di Microsoft 365.
 

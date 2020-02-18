@@ -17,12 +17,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: b101714190879e4bdd1090b05f94f1f36e5d8729
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c8c979e5d091204f8071c51a0662808652f59355
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595663"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42077801"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Creazione di un criterio DLP da un modello
 
@@ -62,7 +62,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
 3. Nel &amp; centro \> sicurezza e conformità left navigation \> **policy** \> di prevenzione \> della **perdita dei dati** **+ creare un criterio**.
     
-    ![Pulsante Crea un criterio](media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+    ![Pulsante Crea un criterio](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
 4. Scegliere il modello di criteri DLP che protegge i tipi di informazioni riservate necessarie \> **successivamente**.
     
@@ -70,7 +70,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
     Quando si seleziona un modello, è possibile leggere la descrizione sul lato destro per sapere quali tipi di informazioni riservate protegge il modello.
     
-    ![Pagina per la scelta di un modello di criteri DLP](media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
+    ![Pagina per la scelta di un modello di criteri DLP](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
   
 5. Denominare \> il criterio **successivo**.
     
@@ -84,7 +84,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
     Per includere solo i siti di SharePoint specifici o gli account di OneDrive for business, impostare lo **stato** su attivato e quindi fare clic sui collegamenti in **Includi** per scegliere i siti o gli account specifici. Quando si applica un criterio a un sito, le regole configurate in tale criterio vengono applicate automaticamente a tutti i siti secondari del sito. 
     
-    ![Opzioni per le posizioni in cui è possibile applicare i criteri di prevenzione della perdita dei dati](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+    ![Opzioni per le posizioni in cui è possibile applicare i criteri di prevenzione della perdita dei dati](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
     In questo esempio, per proteggere le informazioni riservate archiviate in tutti gli account di OneDrive for business, disattivare lo **stato** sia per la **posta elettronica di Exchange** che per i **siti di SharePoint**e lasciare lo **stato** su per gli **account di OneDrive**.
     
@@ -92,7 +92,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
 8. Un modello di criteri DLP contiene regole predefinite con condizioni e azioni che rilevano e agiscono su tipi specifici di informazioni riservate. È possibile modificare, eliminare o disabilitare una o più delle regole esistenti oppure aggiungerne di nuove. Al termine, fare clic su **Avanti**.
     
-    ![Regole espanse nel modello di criteri di PII Stati Uniti](media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
+    ![Regole espanse nel modello di criteri di PII Stati Uniti](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
   
     In questo esempio, il modello di dati delle informazioni personali degli Stati Uniti include due regole predefinite:
     
@@ -104,23 +104,23 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
     In questo modo si espande la regola denominata **low volume of content detected US pii** \> **delete rule**.
     
-    ![Pulsante Elimina regola](media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
+    ![Pulsante Elimina regola](../media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
   
 9. Ora, in questo esempio, è necessario aggiungere due tipi di informazioni riservate (numeri di conto corrente bancario statunitense e numeri di licenza degli Stati Uniti), consentire agli utenti di ignorare una regola e modificare il conteggio in qualsiasi occorrenza. È possibile eseguire tutte queste modifiche modificando una regola, quindi selezionare un \> **volume elevato di contenuto rilevato dalla regola di modifica delle informazioni personali degli Stati Uniti** . ****
     
-    ![Pulsante Modifica regola](media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
+    ![Pulsante Modifica regola](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
   
 10. Per aggiungere un tipo di informazioni riservate, **** nella sezione \> condizioni **aggiungere o modificare i tipi**. Quindi, in **Aggiungi o modifica tipi** \> scegliere **Aggiungi** \> selezionare **il numero di conto corrente bancario statunitense** e **il numero** \> della patente di guida statunitense **Aggiungi** \> **completato**.
     
-    ![Opzione per aggiungere o modificare i tipi](media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
+    ![Opzione per aggiungere o modificare i tipi](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
   
-    ![Riquadro dei tipi di aggiunta o modifica](media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
+    ![Riquadro dei tipi di aggiunta o modifica](../media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
   
 11. Per modificare il conteggio, ovvero il numero di istanze di informazioni riservate necessarie per attivare la regola, in **conteggio** \> istanze scegliere il valore **minimo** per ogni \> tipo immettere 1. Il numero minimo non può essere vuoto. Il numero massimo può essere vuoto. valore **massimo** vuoto convertito in **any**.
     
     Al termine, il conteggio minimo per tutti i tipi di informazioni riservate deve essere **1** e il numero massimo dovrebbe essere **qualsiasi**. In altre parole, qualsiasi occorrenza di questo tipo di informazioni riservate soddisferà questa condizione.
     
-    ![Conteggi di istanze per i tipi di informazioni riservate](media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
+    ![Conteggi di istanze per i tipi di informazioni riservate](../media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
   
 12. Per la personalizzazione finale, non si desidera che i criteri DLP impediscono agli utenti di eseguire il proprio lavoro quando hanno una giustificazione aziendale valida o si verificano un falso positivo, quindi si desidera che la notifica dell'utente includa opzioni per ignorare l'azione di blocco.
     
@@ -128,7 +128,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
     Nella sezione **override dell'utente** , è possibile vedere che le sostituzioni per una giustificazione aziendale sono attivate, ma le sostituzioni per segnalare falsi positivi non lo sono. Scegliere **Sostituisci automaticamente la regola se lo segnalano come falso positivo**.
     
-    ![Sezione delle notifiche degli utenti e delle sostituzioni degli utenti](media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
+    ![Sezione delle notifiche degli utenti e delle sostituzioni degli utenti](../media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
   
 13. Nella parte superiore dell'editor delle regole cambiare il nome di questa regola dall' **alto volume predefinito di contenuto delle informazioni personali rilevate dagli Stati Uniti** a **qualsiasi contenuto rilevato con i dati personali degli Stati Uniti** , in quanto è ora attivato da qualsiasi occorrenza dei relativi tipi di informazione sensibili. 
     
@@ -150,7 +150,7 @@ In questo esempio, verrà creato un criterio DLP che identifica i dati delle inf
     
 19. Attiva i criteri in modo che le regole vengano applicate e il contenuto sia protetto. Continuare a eseguire il monitoraggio dei report di prevenzione della perdita dei dati e dei rapporti operazioni non consentite oppure delle notifiche per essere certi di ottenere i risultati desiderati. 
     
-    ![Opzioni per l'utilizzo della modalità di test e attivazione dei criteri](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Opzioni per l'utilizzo della modalità di test e attivazione dei criteri](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
 20. Esaminare le impostazioni per questo criterio \> scegliere **Crea**.
     
@@ -169,7 +169,7 @@ Di seguito sono riportati i diversi stati e il loro significato.
 |**Test, senza notifiche** <br/> |Il criterio è in modalità test. Le azioni in una regola non sono applicate, ma vengono raccolte le corrispondenze del criterio ed è possibile visualizzarle tramite i report DLP. Le notifiche relative alle corrispondenze del criterio non vengono inviate ai destinatari specificati.  <br/> |
 |**Attivato** <br/> |Il criterio è attivo e applicato. Il criterio è stato distribuito correttamente a tutte le origini del contenuto.  <br/> |
 |**Disattivazione in corso...** <br/> |Il criterio viene rimosso dalle origini del contenuto che include. Il criterio potrebbe essere ancora attivo e applicato in alcune origini. La disattivazione di un criterio potrebbe richiedere fino a 45 minuti.  <br/> |
-|**Disattivato** <br/> |Il criterio non è attivo e non applicato. Le impostazioni del criterio (origini, parole chiave, durata e così via) vengono salvate.  <br/> |
+|**Off** <br/> |Il criterio non è attivo e non applicato. Le impostazioni del criterio (origini, parole chiave, durata e così via) vengono salvate.  <br/> |
 |**Eliminazione di...** <br/> |Il criterio è in corso di eliminazione. Il criterio non è attivo e non applicato. Per i criteri delet richiede di solito un'ora <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Disattivare un criterio DLP
@@ -178,7 +178,7 @@ Di seguito sono riportati i diversi stati e il loro significato.
   
 Per modificare o disabilitare un criterio DLP, nella pagina \> **criterio** selezionare il criterio di modifica dei criteri. **** \>
   
-![Pulsante Modifica criterio](media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
+![Pulsante Modifica criterio](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
   
 Inoltre, è possibile disattivare singolarmente ogni regola modificando il criterio e quindi disattivando lo **stato** di tale regola, come descritto in alto. 
   

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: ''
 description: Esaminare, risolvere i problemi e risolvere i problemi comuni in Office 365 eDiscovery.
 siblings_only: true
-ms.openlocfilehash: c8eb4a330ab565900a685959ab1291990a6119bb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3ff22ae11a21aef3909e58e03c8fefcf21db6435
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595131"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42074814"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Esaminare, risolvere i problemi e risolvere i problemi comuni relativi a eDiscovery
 
@@ -48,7 +48,7 @@ Controllare gli utenti duplicati o la lista di distribuzione con lo stesso ID ut
    L'output per ' useralias@contoso.com ' sarebbe simile al seguente:
 
    > 
-   > |Nome  |RecipientType  |
+   > |Name  |RecipientType  |
    > |---------|---------|
    > |Alias, utente     |MailUser         |
    > |Alias, utente     |Utente         |
@@ -60,7 +60,7 @@ Controllare gli utenti duplicati o la lista di distribuzione con lo stesso ID ut
 Un eDiscovery o una ricerca di contenuto può generare l'errore seguente:
 >Questa ricerca è stata completata con gli errori (#).  Si desidera riprovare la ricerca nelle posizioni non riuscite?
 
-![Posizione specifica della ricerca non riuscita screenshot di errore]( media/edisc-tshoot-specific-location-search-fails.png)
+![Posizione specifica della ricerca non riuscita screenshot di errore](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>Soluzione
 
@@ -136,7 +136,7 @@ Quando si esportano i risultati della ricerca da eDiscovery o ricerca contenuto 
 
 Quando si esegue una ricerca eDiscovery, se la ricerca ha esito negativo con un errore simile a "Internal Server Error (500) si è verificato", potrebbe essere necessario eseguire nuovamente la ricerca solo su percorsi specifici per le cassette postali.
 
-![Errore del server interno 500 screenshot](media/edisc-tshoot-error-500.png)
+![Errore del server interno 500 screenshot](../media/edisc-tshoot-error-500.png)
 
 ### <a name="resolution"></a>Soluzione
 

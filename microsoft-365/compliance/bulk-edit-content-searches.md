@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Utilizzare l'editor ricerche in blocco nel centro sicurezza e conformità di Office 365 o Microsoft 365 per modificare rapidamente i percorsi di query e di contenuto per una o più ricerche di contenuto.
-ms.openlocfilehash: 40d3a6c04a57f368a4f53ae0bbc543b049b26d52
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5d1fd8a877ffb6c2012567583e46e561fb09836f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596273"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078987"
 ---
 # <a name="bulk-edit-content-searches"></a>Modifica in blocco delle ricerche di contenuto
 
@@ -30,13 +30,13 @@ Per ulteriori informazioni sull'utilizzo dello strumento Statistiche di ricerca,
 
 1. Andare a [https://protection.office.com](https://protection.office.com), quindi selezionare ricerca **** \> **contenuto**ricerca.
     
-2. Nell'elenco delle ricerche, selezionare una o più ricerche, quindi selezionare il pulsante **** ![](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)editor ricerca bulk editor ricerche in blocco.
+2. Nell'elenco delle ricerche, selezionare una o più ricerche, quindi selezionare il pulsante **** ![](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)editor ricerca bulk editor ricerche in blocco.
     
-    ![Selezionare una o più ricerche, quindi selezionare Editor ricerche in blocco](media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
+    ![Selezionare una o più ricerche, quindi selezionare Editor ricerche in blocco](../media/600c9716-89a2-4451-b111-fa7cfaad2006.png)
   
     Nella pagina **query** dell'editor ricerche in blocco vengono visualizzate le informazioni seguenti. 
     
-    ![Nella pagina Editor ricerche in blocco vengono visualizzate le query per le ricerche selezionate](media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
+    ![Nella pagina Editor ricerche in blocco vengono visualizzate le query per le ricerche selezionate](../media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
   
     a. Nella colonna **ricerca** viene visualizzato il nome della ricerca di contenuto. Come indicato in precedenza, è possibile modificare la query per più ricerche. 
     
@@ -71,7 +71,7 @@ Di seguito sono riportate alcune indicazioni per la modifica delle query tramite
     
     Nella pagina **percorsi** dell'editor ricerche in blocco vengono visualizzate le informazioni seguenti. 
     
-    ![Selezionare Abilita editor percorso di massa e quindi selezionare percorsi per aggiungere o rimuovere percorsi di contenuto](media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
+    ![Selezionare Abilita editor percorso di massa e quindi selezionare percorsi per aggiungere o rimuovere percorsi di contenuto](../media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
   
     a. **Cassette postali da cercare** In questa sezione viene visualizzata una colonna per ogni ricerca di contenuto selezionata e una riga per ogni cassetta postale inclusa nella ricerca. Un segno di spunta indica che la cassetta postale è inclusa nella ricerca. È possibile aggiungere cassette postali a una ricerca digitando l'indirizzo di posta elettronica della cassetta postale in una riga vuota e quindi selezionando la casella di controllo per la ricerca di contenuto a cui si desidera aggiungerla. In alternativa, è possibile rimuovere una cassetta postale da una ricerca deselezionando la casella di controllo.
     

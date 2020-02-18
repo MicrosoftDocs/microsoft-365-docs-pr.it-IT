@@ -1,6 +1,8 @@
 ---
 title: Distribuire Microsoft 365 per le aziende
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/19/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le risorse a disposizione per la distribuzione nell'organizzazione di Microsoft 365 per le aziende.
-ms.openlocfilehash: 4181a5efeb7ba63812703ae5eb81667240314e9a
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e4660ff6e7fc9646b2e28181afff4df2811acdd1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801921"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067959"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Distribuire Microsoft 365 per le aziende
 
@@ -65,7 +67,7 @@ Per distribuire autonomamente Microsoft 365 per le aziende, è possibile:
 
 Ecco la relazione tra l'infrastruttura di base e i carichi di lavoro e gli scenari.
 
-![Relazione tra l'infrastruttura di base e i carichi di lavoro e gli scenari](./media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![Relazione tra l'infrastruttura di base e i carichi di lavoro e gli scenari](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
 I carichi di lavoro e gli scenari operano al di sopra dell'infrastruttura di base. Tuttavia non occorre disporre di tutte le fasi dell'infrastruttura di base completate per iniziare a usare i carichi di lavoro per la produttività e la collaborazione.
 
@@ -83,13 +85,13 @@ Con le TLG è possibile imparare autonomamente, dimostrare, personalizzare o cre
 
 Per ulteriori informazioni, vedere [Guide al lab di test di Microsoft 365 per le aziende](m365-enterprise-test-lab-guides.md).
 
-![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 ## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
 
-Per avere un quadro più completo su come spostare l'intera organizzazione ai prodotti e servizi di Microsoft 365 per le aziende, vedere il poster [Transizione dell'organizzazione a Microsoft 365](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Per avere un quadro più completo su come spostare l'intera organizzazione ai prodotti e servizi di Microsoft 365 per le aziende, vedere il poster [Transizione dell'organizzazione a Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Poster della transizione dell'organizzazione a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Poster della transizione dell'organizzazione a Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Questo poster a due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e ottenere le indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 per le aziende. Include i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
 

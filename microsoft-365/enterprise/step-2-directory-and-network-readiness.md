@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 2: conformità di directory e rete'
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,25 +15,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come valutare la conformità di directory e di rete nell'ambiente.
-ms.openlocfilehash: cae32d7bd7791cdfb0acce564b2a7839d5314a19
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 985212cc240d91ac04f9def1b7a53c42889d826f
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112615"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085417"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Passaggio 2: conformità di directory e rete
 
 Assicurarsi che la directory e la rete siano configurate e conformi per supportare il passaggio a Windows 10 e Office 365 ProPlus. Gli utenti dovranno disporre dei servizi di Azure Active Directory sul posto e la rete dovrà avere la capacità di gestire il traffico normale e lo spostamento di quantità di dati potenzialmente grandi durante l'aggiornano del PC e il ripristino di file, impostazioni e applicazioni.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
 <td><p><strong>Passaggio 2: conformità di directory e rete</strong></p>
 <p>I servizi connessi tramite cloud in Office 365 ProPlus e le nuove opzioni di distribuzione come Windows Autopilot richiedono Azure Active Directory. Anche la rete e la connettività sono aree importanti da pianificare quando si trasferiscono immagini, app, driver e file correlati nei PC. Ottenere informazioni su come i nuovi strumenti e opzioni di distribuzione riducono e ottimizzano il traffico di rete.</p></td>
-<td><a href="https://aka.ms/ddev2" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -85,7 +87,7 @@ Limitazione del traffico specifico indica che il normale traffico di rete è men
 
 Fortunatamente, sono disponibili nuovi strumenti che facilitano la gestione dell'impatto sulla rete di una distribuzione desktop su vasta scala, tra cui LEDBAT per ottimizzare l'utilizzo della larghezza di banda disponibile e opzioni peer-to-peer (P2P) per spostare la distribuzione del traffico dal centro della rete e fuori dal perimetro
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-3.png)
 
 ## <a name="scavenging-bandwidth"></a>Scavenging della larghezza di banda
 
@@ -95,7 +97,7 @@ LEDBAT (Low Extra Delay Background Transport), supportato in Windows Server 2019
 
 A differenza della limitazione tradizionale, LEDBAT può utilizzare tutta la larghezza di banda di rete disponibile come attività in background, offrendo istantaneamente larghezza di banda quando il traffico lo richiede. A differenza di BITS non c'è ritardo; tutto è automatizzato, non è richiesta alcuna sintonizzazione manuale o programmazione e tutto è configurato dal lato server. Ciò offre guadagni potenzialmente massicci in termini di prestazioni.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
 ## <a name="peer-to-peer-options"></a>Opzioni peer-to-peer
 
@@ -111,7 +113,7 @@ Nota: BranchCache e peer cache sono complementari e possono collaborare nello st
 
 **Ottimizzazione recapito**: Ottimizzazione recapito è un'altra tecnologia di caching peer-to-peer che fornisce controlli basati sulla rete per le installazioni di Windows. Ottimizzazione recapito di Windows 10 viene usato per aggiornare app UWP integrate, anche per installare applicazioni da Microsoft Store e per aggiornamenti software tramite Express Updates. È disponibile dalle prime versioni di Windows 10, sebbene sia stato integrato solo di recente con Microsoft Endpoint Configuration Manager (Current Branch). Le nuove opzioni di configurazione di Windows 10 versione 1803 consentono di impostare in modo indipendente i limiti di larghezza di banda per gli aggiornamenti in background e per i processi in primo piano come l'installazione di un'app dallo Store. Ottimizzazione recapito di Windows ora supporta anche Office 365 ProPlus durante gli aggiornamenti client, disponibile in tutti i canali di aggiornamento client di Office 365 supportati. Il supporto di Ottimizzazione recapito di Windows durante l'installazione iniziale del client di Office 365 sarà presto disponibile.  
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-5.png)
 
 **Altre considerazioni su Office 365 ProPlus**
 
@@ -123,11 +125,11 @@ Oltre a sfruttare Ottimizzazione recapito, ecco tre elementi che consentiranno d
 
 **File di dati di Outlook**: Outlook viene spesso configurato per memorizzare nella cache l'intera cassetta postale degli utenti per l'uso offline. In qualsiasi distribuzione di Windows, ad eccezione di un aggiornamento sul posto, che richiede che i file di dati di Outlook degli utenti vengano ricostruiti automaticamente dopo l'aggiornamento, si tratta di un processo automatizzato, ma con i limiti delle cassette postali di Outlook generalmente impostati su un massimo di 100 GB, l'ulteriore caching dell'intera cassetta postale in locale per tutti gli utenti significa trasferire molti dati. Per ridurre il carico di rete, si consiglia di prendere in considerazione l'utilizzo di Criteri di gruppo per ridurre l'impostazione "Posta da mantenere offline". In Outlook in Office 365 ProPlus o Outlook 2016 il valore predefinito è impostato su 12 mesi. Al fine di ridurre l'impatto sulla rete, provare a impostare la cache offline per una durata compresa tra 1 e 6 mesi. Modificare questa impostazione non influisce sulle dimensioni della cassetta postale online e l'intera cassetta postale può ancora essere ricercata tramite Outlook quando è online.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-6.png)
 
 **File di OneDrive su richiesta e spostamento di cartelle note**: OneDrive è un ottimo modo per sincronizzare e proteggere i file utente da PC e altri dispositivi nel cloud. Con lo spostamento di cartelle note, è possibile applicare la sincronizzazione dei file dalle cartelle Desktop, Documenti e Immagini dell'utente a OneDrive, rendendo tali file disponibili quando si accede a un nuovo dispositivo o a un PC di cui ne sia stata ricreata l'immagine. Tuttavia, è necessario ricordare che, a causa delle dimensioni e del numero di file conservati nei percorsi Desktop, Documenti e Immagini, si consiglia di pianificare l'implementazione dei criteri che consentono e applicano OneDrive nei PC. Un'opzione consiste nell'usare i controlli di rete dei criteri di gruppo per limitare la larghezza di banda usata dal servizio di sincronizzazione OneDrive.
 
-![](media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-7.png)
+![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-7.png)
 
 [Configurazione dello spostamento di cartelle note](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/Migrate-Your-Files-to-OneDrive-Easily-with-Known-Folder-Move/ba-p/207076)
 

@@ -1,6 +1,8 @@
 ---
 title: Responsabilità nella continuità aziendale dei partner di cloud e clienti
 author: chrfox
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 manager: laurawi
 ms.date: ''
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulle attività di Microsoft nel corso di un incidente di servizio in modo da poter preparare meglio i piani di continuità aziendale.
-ms.openlocfilehash: 02ab818a6b26fc6b9902747f6c0211545d4b4704
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831867"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067673"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Responsabilità del partner di cloud e dei clienti nella gestione della continuità aziendale
 
@@ -53,7 +55,7 @@ Microsoft gestisce più canali per le comunicazioni sullo stato dei servizi util
  
 Offrire l’accesso ai servizi online di Microsoft 365 rappresenta una partnership tra l'organizzazione e Microsoft. Nel grafico seguente viene riepilogato l'equilibrio di responsabilità per Microsoft e il cliente durante un incidente di servizio e durante normali operazioni.
 
-![equilibrio del cliente e responsabilità di Microsoft](media/ebcm/responsibilities.png)
+![equilibrio del cliente e responsabilità di Microsoft](../media/ebcm/responsibilities.png)
 
 ## <a name="your-environment---service-continuity"></a>Ambiente - continuità del servizio
 Pensando al piano di continuità, tenere presente gli eventi che possono avere un impatto sull'organizzazione e la capacità complessiva di comunicare. A un livello elevato, ci sono tre fattori che possono influire sull’azienda.
@@ -69,6 +71,6 @@ Microsoft pubblica i [principi di connettività di rete](https://docs.microsoft.
 Molte soluzioni per la collaborazione dipendono dai sistemi, come la rete WAN (Wide Area Network) aziendale. Se questi sistemi non fossero disponibili, quali sarebbero le ripercussioni per l’organizzazione?
 Questo elemento grafico rappresenta i problemi che possono avere un impatto su più aree. La tabella seguente include esempi da tenere in considerazione
 
-![diagramma di Venn](media/ebcm/venn-diagram.png)
+![diagramma di Venn](../media/ebcm/venn-diagram.png)
 
 I piani di continuità devono considerare ognuna di queste aree. Ad esempio: se si desidera che gli utenti si trovino nella rete aziendale e al contempo ci fosse una tormenta di neve, in che modo questi utenti avrebbero accesso alle risorse chiave? Se la neve impedisse di raggiungere l’ufficio e gli ingegneri del servizio avessero bisogno di connettersi alla rete aziendale, esiste un criterio che impone di avere dei laptop aziendali a casa?

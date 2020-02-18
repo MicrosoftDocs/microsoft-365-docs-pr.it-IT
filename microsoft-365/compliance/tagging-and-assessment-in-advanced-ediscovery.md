@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Esaminare i passaggi necessari per eseguire la formazione di valutazione, compresi i file di tagging, e la revisione dei risultati della valutazione in Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: b2eecb76416728f7319396f5c97054d0219b66e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 93780d42cd42ced692a81f5cfd739bcd8713c2c2
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597423"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081043"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Tagging e valutazione in Office 365 Advanced eDiscovery
 
@@ -36,7 +36,7 @@ In questa sezione viene descritta la procedura per il modulo di valutazione dell
     
     Ad esempio, in questa procedura viene creato un set di valutazione di esempio di 500 file e viene visualizzata la scheda **tag** , che contiene il pannello di tagging, il contenuto del file visualizzato e altre opzioni di tagging. 
     
-    ![Scheda Tag pertinenza per la valutazione](media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
+    ![Scheda Tag pertinenza per la valutazione](../media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
   
 2. Esaminare ogni file nell'esempio, determinare la pertinenza del file per ogni problema di caso e contrassegnare il file utilizzando i pulsanti pertinenza (R), non rilevanti (NR) e Ignora nel riquadro del **Pannello di tagging** . 
     
@@ -47,14 +47,14 @@ In questa sezione viene descritta la procedura per il modulo di valutazione dell
     
     La valutazione del margine e della ricchezza degli errori correnti viene calcolata e visualizzata nella scheda **pertinenza** , con dettagli espansi per ogni problema, come illustrato di seguito. Ulteriori informazioni su questa finestra di dialogo sono descritte nella sezione successiva "revisione dei risultati delle valutazioni". 
     
-    ![Traccia di pertinenza: valutazione](media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
+    ![Traccia di pertinenza: valutazione](../media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
     > Per impostazione predefinita, si consiglia di procedere con il passaggio successivo predefinito quando l'indicatore di stato di valutazione del problema è stato completato, indicando che il campione di valutazione è stato esaminato e che sono stati contrassegnati i file rilevanti sufficienti. > altrimenti, se si desidera visualizzare i risultati della scheda **pista** e controllare il margine di errore e il passaggio successivo, fare clic su **modifica** adiacente al **passaggio successivo**, selezionare **continua valutazione**e quindi fare clic su **OK**. 
   
 1. Fare clic su **modifica** a destra della casella di controllo **valutazione** per visualizzare e specificare i parametri di valutazione per ogni problema. Viene visualizzata una finestra di dialogo a **livello di valutazione** per ogni problema, come illustrato nell'esempio seguente: 
     
-    ![Problema relativo al livello di valutazione per il caso](media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
+    ![Problema relativo al livello di valutazione per il caso](../media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
   
     I parametri seguenti per il problema vengono calcolati e visualizzati nella finestra di dialogo **livello di valutazione** : 
     
@@ -72,7 +72,7 @@ In questa sezione viene descritta la procedura per il modulo di valutazione dell
     
 3. Fare clic su **Avanzate** nella finestra di dialogo **livello di valutazione** per visualizzare i parametri e i dettagli aggiuntivi seguenti: 
     
-    ![Visualizzazione avanzata dei problemi relativi al livello di valutazione per il caso](media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
+    ![Visualizzazione avanzata dei problemi relativi al livello di valutazione per il caso](../media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
   
     **Ricchezza stimata**: ricchezza stimata in base ai risultati di valutazione correnti
     
@@ -92,7 +92,7 @@ In questa sezione viene descritta la procedura per il modulo di valutazione dell
     
     Quando sono presenti più problemi, dopo che tutti i problemi sono stati esaminati o modificati, viene visualizzato un **livello di valutazione:** viene visualizzata la finestra di riepilogo, come illustrato nell'esempio seguente. 
     
-    ![Riepilogo del livello di valutazione](media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
+    ![Riepilogo del livello di valutazione](../media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
   
     Dopo aver completato il processo di valutazione, passare alla fase successiva per la formazione sulla pertinenza.
     

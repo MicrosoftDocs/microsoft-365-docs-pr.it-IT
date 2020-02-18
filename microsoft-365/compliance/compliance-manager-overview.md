@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 43d7e3a12c72573b46d6c8d2aff36eed97fd08ac
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595793"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078669"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager (anteprima)
 
@@ -45,7 +45,7 @@ Compliance Manager utilizza diversi componenti che consentono di eseguire le att
 
 Nel diagramma vengono illustrate le relazioni tra i componenti principali di Compliance Manager:
 
-![Relazioni in Compliance Manager versione 3](media/compliance-manager-relationships.png)
+![Relazioni in Compliance Manager versione 3](../media/compliance-manager-relationships.png)
 
 ## <a name="groups"></a>Gruppi
 
@@ -77,7 +77,7 @@ I [controlli](working-with-compliance-manager.md#controls-and-actions) sono cont
 - **ID articolo**: questo campo è solo per le valutazioni di GDPR e specifica il numero dell'articolo GDPR corrispondente.
 - **Descrizione**: testo del controllo dalla certificazione o dalla regolamentazione corrispondente. A causa di limitazioni del copyright, un collegamento alle informazioni rilevanti è elencato per gli standard ISO.
 
-![Controlli in Compliance Manager versione 3](media/compliance-manager-controls.png)
+![Controlli in Compliance Manager versione 3](../media/compliance-manager-controls.png)
 
 Sono disponibili tre tipi di controlli in Compliance Manager, **controlli gestiti da Microsoft**, controlli **gestiti dal cliente**e **controlli di gestione condivisi**
 

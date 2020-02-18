@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Creare un criterio di archiviazione ed eliminazione in Office 365 che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente.
-ms.openlocfilehash: 23732306abccbbdff654577ff120df8b79b78e6d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 53da9c027895421edaa99ebc18d17eafc0dbc679
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597483"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081219"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurare criteri di archiviazione ed eliminazione per le cassette postali in un'organizzazione di Office 365
 
@@ -46,7 +46,7 @@ La procedura descritta in questo articolo consentirà di impostare un criterio d
     
 È possibile seguire alcuni o tutti i passaggi descritti in questo articolo per configurare un criterio di eliminazione e archiviazione per le cassette postali nella propria organizzazione. È consigliabile testare questo processo su poche cassette postali prima di implementarlo in tutte le cassette postali dell'organizzazione.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per eseguire la procedura descritta in questo argomento, è necessario essere un amministratore globale dell'organizzazione di Office 365. 
     
@@ -81,11 +81,11 @@ Il primo passaggio consiste nell'abilitare la cassetta postale di archiviazione 
     
 6. Fare clic su **Sì** per chiudere il messaggio di avviso e avviare il processo per abilitare la cassetta postale di archiviazione per ogni cassetta postale selezionata. 
     
-7. Al termine del processo **, fare clic** ![su Aggiorna](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) aggiornamento per aggiornare l'elenco nella pagina **Archivio** . 
+7. Al termine del processo **, fare clic** ![su Aggiorna](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) aggiornamento per aggiornare l'elenco nella pagina **Archivio** . 
     
     La cassetta postale di archiviazione è abilitata per tutti gli utenti dell'organizzazione.
     
-    ![L'elenco delle cassette postali con la cassetta postale di archiviazione abilitata](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
+    ![L'elenco delle cassette postali con la cassetta postale di archiviazione abilitata](../media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
 8. Lasciare aperto il Centro sicurezza & conformità. Verrà utilizzato nel passaggio successivo.
     
@@ -105,7 +105,7 @@ Per creare nuovi tag di conservazione, è possibile utilizzare l'interfaccia di 
     
 2. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365, fare clic su interfacce di **Amministrazione**, quindi su **Exchange**.
     
-    ![Screenshot Visualizza l'interfaccia di amministrazione di Microsoft 365 con l'opzione interfaccia di amministrazione espansa ed Exchange selezionata.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Screenshot Visualizza l'interfaccia di amministrazione di Microsoft 365 con l'opzione interfaccia di amministrazione espansa ed Exchange selezionata.](../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. Nell'interfaccia di amministrazione di Exchange, andare a **tag di conservazione** per la **gestione** \> della conformità
     
@@ -115,11 +115,11 @@ Per creare nuovi tag di conservazione, è possibile utilizzare l'interfaccia di 
   
 In primo luogo, verrà creato un tag dei criteri predefiniti di archiviazione personalizzato che sposterà gli elementi nella cassetta postale di archiviazione dopo 3 anni. 
   
-1. Nella pagina **tag di conservazione** , fare clic su **nuova**![icona](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)nuovo tag, quindi selezionare **applicato automaticamente all'intera cassetta postale (impostazione predefinita)**. 
+1. Nella pagina **tag di conservazione** , fare clic su **nuova**![icona](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)nuovo tag, quindi selezionare **applicato automaticamente all'intera cassetta postale (impostazione predefinita)**. 
     
 2. Nel **nuovo tag applicato automaticamente alla pagina intera cassetta postale (impostazione predefinita)** , completare i seguenti campi: 
     
-    ![Impostazioni per creare un nuovo tag del criterio di archiviazione predefinito](media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+    ![Impostazioni per creare un nuovo tag del criterio di archiviazione predefinito](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
   
 1. **Nome** Digitare un nome per il nuovo tag di conservazione. 
     
@@ -137,11 +137,11 @@ In primo luogo, verrà creato un tag dei criteri predefiniti di archiviazione pe
   
 Successivamente, verrà creato un altro tag personalizzato, ma questo sarà un criterio di eliminazione che elimina definitivamente gli elementi dopo 7 anni.
   
-1. Nella pagina **tag di conservazione** , fare clic su **nuova**![icona](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)nuovo tag, quindi selezionare **applicato automaticamente all'intera cassetta postale (impostazione predefinita)**. 
+1. Nella pagina **tag di conservazione** , fare clic su **nuova**![icona](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)nuovo tag, quindi selezionare **applicato automaticamente all'intera cassetta postale (impostazione predefinita)**. 
     
 2. Nel **nuovo tag applicato automaticamente alla pagina intera cassetta postale (impostazione predefinita)** , completare i seguenti campi: 
     
-    ![Impostazioni per creare un nuovo tag dei criteri predefiniti per l'eliminazione](media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+    ![Impostazioni per creare un nuovo tag dei criteri predefiniti per l'eliminazione](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
   
 1. **Nome** Digitare un nome per il nuovo tag di conservazione. 
     
@@ -159,11 +159,11 @@ Successivamente, verrà creato un altro tag personalizzato, ma questo sarà un c
   
 L'ultimo tag di conservazione creato è un tag del criterio di conservazione (RPT) personalizzato per la cartella Posta eliminata. Questo tag eliminerà gli elementi nella cartella Posta eliminata dopo 5 anni e fornirà un periodo di ripristino quando gli utenti possono utilizzare lo strumento Recupera elementi eliminati per recuperare un elemento.
   
-1. Nella pagina **tag di conservazione** , fare clic su **nuova** ![icona](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)nuovo tag, quindi selezionare **applicato automaticamente a una cartella predefinita**. 
+1. Nella pagina **tag di conservazione** , fare clic su **nuova** ![icona](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)nuovo tag, quindi selezionare **applicato automaticamente a una cartella predefinita**. 
     
 2. Nel **nuovo tag applicato automaticamente a una pagina predefinita della cartella** , completare i seguenti campi: 
     
-    ![Impostazioni per la creazione di un nuovo tag dei criteri di conservazione per la cartella Posta eliminata](media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![Impostazioni per la creazione di un nuovo tag dei criteri di conservazione per la cartella Posta eliminata](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
 1. **Nome** Digitare un nome per il nuovo tag di conservazione. 
     
@@ -185,17 +185,17 @@ Dopo aver creato i tag di conservazione personalizzati, il passaggio successivo 
   
 1. Nell'interfaccia di amministrazione di Exchange, andare a **criteri di conservazione**di **Compliance Management** \> .
     
-2. Nella pagina **criteri di conservazione** fare clic su **nuova** ![icona](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)nuova.
+2. Nella pagina **criteri di conservazione** fare clic su **nuova** ![icona](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)nuova.
     
 3. Nella casella **nome** Digitare un nome per il nuovo criterio di conservazione. ad esempio, i **criteri di eliminazione e archiviazione delle case alpine**. 
     
-4. In **tag di conservazione**fare **** ![clic su Aggiungi](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)nuova icona.
+4. In **tag di conservazione**fare **** ![clic su Aggiungi](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)nuova icona.
     
     Viene visualizzato un elenco dei tag di conservazione nell'organizzazione. Tenere presente che sono visualizzati i tag personalizzati creati nel passaggio 2.
     
 5. Aggiungere i 9 tag di conservazione evidenziati nello screenshot seguente (questi tag sono descritti in maggiore dettaglio nella sezione [altre informazioni](#more-information) ). Per aggiungere un tag di conservazione, selezionarlo e fare clic su **Aggiungi**. 
     
-    ![Aggiungere tag di conservazione ai nuovi criteri di conservazione](media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
+    ![Aggiungere tag di conservazione ai nuovi criteri di conservazione](../media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
   
     > [!TIP]
     > È possibile selezionare più tag di conservazione tenendo premuto il tasto **CTRL** e facendo clic su ogni tag. 
@@ -206,7 +206,7 @@ Dopo aver creato i tag di conservazione personalizzati, il passaggio successivo 
     
     Il nuovo criterio di conservazione viene visualizzato nell'elenco. Selezionarla per visualizzare i tag di conservazione a esso collegati nel riquadro dei dettagli.
     
-    ![I nuovi criteri di conservazione e l'elenco dei tag di conservazione collegati](media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
+    ![I nuovi criteri di conservazione e l'elenco dei tag di conservazione collegati](../media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
   
 ## <a name="step-4-assign-the-new-retention-policy-to-user-mailboxes"></a>Passaggio 4: assegnare il nuovo criterio di conservazione alle cassette postali degli utenti
 
@@ -228,7 +228,7 @@ Quando viene creata una nuova cassetta postale, per impostazione predefinita vie
     
 7. Per verificare che i nuovi criteri di conservazione siano stati assegnati alle cassette postali, è possibile eseguire le operazioni seguenti: selezionare una cassetta postale nella pagina cassette postali, quindi fare clic su modifica. 
     
-1. Selezionare una cassetta postale nella pagina **cassette postali** , quindi fare clic](media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png)su **modifica** ![modifica. 
+1. Selezionare una cassetta postale nella pagina **cassette postali** , quindi fare clic](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png)su **modifica** ![modifica. 
     
 2. Nella pagina delle proprietà della cassetta postale per l'utente selezionato, fare clic su **funzionalità cassette postali**.
     
@@ -305,7 +305,7 @@ Nel passaggio 4, è necessario assegnare il nuovo criterio di conservazione alle
 
 4. È possibile rieseguire il comando riportato nel passaggio 2 per verificare che il criterio di conservazione assegnato al piano della cassetta postale predefinito sia stato modificato.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Come viene calcolato il periodo di validità della conservazione? L'età di conservazione degli elementi della cassetta postale viene calcolata a partire dalla data di recapito o dalla data di creazione per gli elementi, ad esempio i messaggi Draft che non sono stati inviati ma che sono stati creati dall'utente. Quando Assistente cartelle gestite elabora gli elementi in una cassetta postale, applica una data di inizio e una data di scadenza a tutti gli elementi con tag di conservazione utilizzando l'azione di conservazione Elimina e consenti ripristino o Elimina definitivamente. Gli elementi con un tag di archiviazione vengono contrassegnati con una data di spostamento. 
     

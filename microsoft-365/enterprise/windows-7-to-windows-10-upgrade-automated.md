@@ -1,5 +1,7 @@
 ---
 title: Aggiornamenti automatici da Windows 7 a Windows 10
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aggiornamenti automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
-ms.openlocfilehash: 7bca0a185bccbec1ee857b17817debfd7f06feb0
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112700"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085625"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Aggiornamenti sul posto automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
 
 A partire dal 14 gennaio 2020, gli aggiornamenti della sicurezza o il supporto per PC che eseguono Windows 7 non sarà più disponibile. A pochi mesi al passaggio da Windows 7 a Windows 10 e con diverse opzioni di distribuzione disponibili, la domanda più comune nella community IT è "Qual è il modo più rapido per passare da Windows 7 a Windows 10?" La risposta breve è quella di eseguire gli aggiornamenti sul posto per i PC esistenti, in modo da poter ridurre l'attenzione su vari aspetti del processo di distribuzione desktop.
 
-<center><img src="media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
+<center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
 Con gli aggiornamenti sul posto, l'ambito di diversi processi di distribuzione desktop viene ridotto in modo significativo, in particolare:
 
@@ -68,7 +70,7 @@ L'opzione di distribuzione dell'aggiornamento è illustrata in [Distribuzione de
 
   - Eseguire qualsiasi altra configurazione per ottenere uno stato business ready
 
-![](media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-2.png)
+![](../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-2.png)
 
 Le cause più comuni del mancato completamento degli aggiornamenti o dell'impossibilità di eseguirli includono i problemi indicati di seguito:
 

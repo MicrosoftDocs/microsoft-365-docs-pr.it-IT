@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul modo in cui il Punteggio di conformità di Microsoft calcola un punteggio personalizzato sulla base delle azioni intraprese per risolvere i rischi e migliorare la conformità alla postura.
-ms.openlocfilehash: 1ee9410e3b40a8180d768945a643d3e52c29046b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ca8615f8c15264104faa71d155d2656cd788bd53
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596243"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078633"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Calcolo del Punteggio di conformità Microsoft (anteprima)
 

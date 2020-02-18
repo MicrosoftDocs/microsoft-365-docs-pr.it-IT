@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare il modello di rilevamento dei privilegi avvocato-client per utilizzare il rilevamento basato sull'apprendimento automatico del contenuto con privilegi quando si esaminano i contenuti in un caso avanzato di eDiscovery.
-ms.openlocfilehash: b60fe72cf476b9a6cbbd5cae3ed1a1e541d6b313
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fb635e429af2ae4d796e9c847a34d949d8dd6d9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595963"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079268"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configurare il rilevamento dei privilegi avvocato-client in Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Il modello produce le tre proprietà seguenti per ogni documento:
 
 Queste proprietà e i relativi valori corrispondenti vengono aggiunte ai metadati del file dei documenti in un set di revisione, come illustrato nella schermata seguente:
 
-![Proprietà del privilegio avvocato-client mostrate nei metadati dei file](media/AeDAttorneyClientPrivilegeMetadata.png)
+![Proprietà del privilegio avvocato-client mostrate nei metadati dei file](../media/AeDAttorneyClientPrivilegeMetadata.png)
 
 Queste tre proprietà sono anche ricercabili all'interno di un set di revisione. Per ulteriori informazioni, vedere [eseguire una query sui dati in un set di revisione](review-set-search.md).
 
@@ -62,7 +62,7 @@ Una persona che è un amministratore di eDiscovery nell'organizzazione (un membr
 
 2. Nella Home page di **Advanced eDiscovery** , nel riquadro **Impostazioni** , fare clic su **Configura impostazioni di analisi globali**.
 
-   ![Selezionare "Configura funzionalità sperimentali"](media/AeDExperimentalFeatures.png)
+   ![Selezionare "Configura funzionalità sperimentali"](../media/AeDExperimentalFeatures.png)
 
 3. Nella scheda **impostazioni di analisi** , selezionare **Gestisci impostazione privilegio avvocato-client**.
 
@@ -80,7 +80,7 @@ Per caricare un elenco di avvocati per l'utilizzo da parte del modello di rileva
 
    Viene visualizzata la pagina **Privilege avvocato-client** e l'interruttore di **rilevamento dei privilegi del procuratore-client** è attivato.
 
-   ![Pagina del riquadro a comparsa dei privilegi avvocato-cliente](media/AeDUploadAttorneyList.png)
+   ![Pagina del riquadro a comparsa dei privilegi avvocato-cliente](../media/AeDUploadAttorneyList.png)
 
 3. Selezionare **Sfoglia** e quindi individuare e selezionare il file. csv creato nel passaggio 1.
 
@@ -98,13 +98,13 @@ Uno dei modi principali per visualizzare i risultati del rilevamento dei privile
  
 2. In **tag**selezionare l'elenco a discesa accanto a **Aggiungi gruppo** e quindi fare clic su **Aggiungi gruppo smart tag**.
 
-   ![Seleziona "Aggiungi gruppo smart tag"](media/AeDCreateSmartTag.png)
+   ![Seleziona "Aggiungi gruppo smart tag"](../media/AeDCreateSmartTag.png)
 
 3. Nella pagina **scegliere un modello per la smart tag** scegliere **Seleziona** accanto a **privilegio avvocato-client**.
 
    Viene visualizzato un gruppo di tag denominato **procuratore-Client Privilege** . Contiene due tag figlio denominati **positivi** e **negativi**, che corrispondono ai possibili risultati prodotti dal modello.
 
-   ![Gruppo smart tag del privilegio avvocato-cliente](media/AeDAttorneyClientSmartTagGroup.png)
+   ![Gruppo smart tag del privilegio avvocato-cliente](../media/AeDAttorneyClientSmartTagGroup.png)
 
 3. Rinominare il gruppo e i tag dei tag in base alle proprie esigenze per la revisione. Ad esempio, è possibile rinominare **positivamente** con **privilegi** e **negativi** a **non privilegiati**.
 
@@ -126,8 +126,8 @@ Se il modello determina che un documento non contiene contenuto di natura legale
 
 Ad esempio, nelle schermate seguenti vengono visualizzati due documenti. Il primo contiene contenuto di natura legale e ha un partecipante trovato nell'elenco degli avvocati. La seconda non contiene né e pertanto non Visualizza etichette.
 
-![Documento con etichette legali e di contenuto legale](media/AeDTaggingPanelLegalContentAttorney.png)
+![Documento con etichette legali e di contenuto legale](../media/AeDTaggingPanelLegalContentAttorney.png)
 
-![Documento senza etichette](media/AeDTaggingPanelNegative.png)
+![Documento senza etichette](../media/AeDTaggingPanelNegative.png)
 
 Dopo aver esaminato un documento per verificare se contiene contenuto con privilegi, è possibile contrassegnare il documento con il tag appropriato.

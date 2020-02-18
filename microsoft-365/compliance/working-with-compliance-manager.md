@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai prodotti Microsoft.
-ms.openlocfilehash: 645d2bca907d81e32d8262051fd159dd52ba3039
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a0cdabdc37779ee2f7624242eeb177f3d35b87da
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597203"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083884"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Collaborare con Microsoft Compliance Manager (anteprima)
 
@@ -50,7 +50,7 @@ Dopo che l'amministratore ha assegnato i ruoli di Compliance Manager ad altri ut
 
 Ogni ruolo di Compliance Manager ha autorizzazioni leggermente diverse. È possibile visualizzare le autorizzazioni assegnate a ogni ruolo, vedere gli utenti in cui si trovano i ruoli e aggiungere o rimuovere utenti da tale ruolo tramite il Service Trust Portal. Selezionare la voce di menu di **Amministrazione** e scegliere **Settings** to view.
   
-![Menu di amministrazione STP: impostazioni selezionate](media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![Menu di amministrazione STP: impostazioni selezionate](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
 Per aggiungere o rimuovere utenti da ruoli Compliance Manager.
   
@@ -66,11 +66,11 @@ Per aggiungere o rimuovere utenti da ruoli Compliance Manager.
 
 6. Per aggiungere utenti a questo ruolo, fare clic su **Aggiungi**. Nella finestra di dialogo **Aggiungi utenti** selezionare il campo utente. È possibile scorrere l'elenco degli utenti disponibili o iniziare a digitare il nome utente per filtrare l'elenco in base al termine di ricerca. Selezionare l'utente per aggiungere quell'account all'elenco **Aggiungi utenti** provisioning con tale ruolo. Se si desidera aggiungere più utenti contemporaneamente, iniziare a digitare un nome utente per filtrare l'elenco e quindi selezionare l'utente da aggiungere all'elenco. Selezionare **Salva** per eseguire il provisioning del ruolo selezionato per gli utenti. 
 
-    ![Compliance Manager-aggiungere utenti](media/compliance-manager-add-users.png)
+    ![Compliance Manager-aggiungere utenti](../media/compliance-manager-add-users.png)
   
 7. Per rimuovere gli utenti da questo ruolo, selezionarli e selezionare **Elimina**.
 
-    ![Compliance Manager-eliminare gli utenti](media/compliance-manager-delete-users.png)
+    ![Compliance Manager-eliminare gli utenti](../media/compliance-manager-delete-users.png)
 
 ### <a name="controlling-automatic-secure-score-updates"></a>Controllo degli aggiornamenti automatici del Punteggio sicuro
 
@@ -178,7 +178,7 @@ Non è possibile modificare il nome di un proprietario, bensì modificare la des
 
 L'area azioni clienti Visualizza tutte le azioni dei clienti per tutti i modelli e le valutazioni in Compliance Manager (Preview).
 
-![Compliance Manager-aggiungere utenti](media/compliance-manager-customer-actions.png "Azioni dei clienti di Compliance Manager")
+![Compliance Manager-aggiungere utenti](../media/compliance-manager-customer-actions.png "Azioni dei clienti di Compliance Manager")
 
 A colpo d'occhio, è possibile visualizzare il titolo, il proprietario, la categoria, l'applicazione e il Punteggio di un'azione e determinare se è integrata con il Punteggio sicuro. È possibile espandere un'azione e selezionare **Leggi altro** per leggere la descrizione dell'azione e accedere a qualsiasi collegamento nella descrizione. È inoltre possibile utilizzare questa interfaccia per abilitare e disabilitare l'integrazione del Punteggio sicuro in base all'azione e per aggiungere azioni personalizzate. Le azioni che dispongono di funzionalità di integrazione con punteggio sicuro dispongono di puntini di sospensione (...) accanto a essi (si noti che le azioni personalizzate dispongono anche di puntini di sospensione accanto a essi).
 
@@ -266,15 +266,15 @@ Quando si crea una valutazione, si ha la possibilità di copiare le informazioni
 
 Di seguito è riportato un esempio di valutazione per Office 365 e ISO 27001. Nella prima visualizzazione viene illustrata la nuova visualizzazione elementi azione in Compliance Manager (Preview).
 
-![Visualizzazione elementi azione di Compliance Manager](media/compliance-manager-action-items.png)
+![Visualizzazione elementi azione di Compliance Manager](../media/compliance-manager-action-items.png)
 
 Le azioni sono elencate in ordine alfabetico e a ogni azione viene assegnato un punteggio e un proprietario. Selezionare il collegamento **Leggi altro** per leggere i dettagli di ogni azione. 
 
-![Visualizzazione elementi azione di Compliance Manager](media/compliance-manager-actions-read-more.png)
+![Visualizzazione elementi azione di Compliance Manager](../media/compliance-manager-actions-read-more.png)
 
 Selezionare il collegamento **Revisione** per gestire, assegnare, implementare e testare l'azione. Di seguito è riportato un esempio di azione.
 
-![Visualizzazione azione di Compliance Manager](media/compliance-manager-action.png)
+![Visualizzazione azione di Compliance Manager](../media/compliance-manager-action.png)
 
 Nelle versioni precedenti di Compliance Manager, il flusso di lavoro per l'implementazione dei requisiti è stato eseguito a livello di controllo. Un responsabile della conformità assegnerà un controllo a un utente per implementare il controllo. Sono stati due gli svantaggi seguenti:
 
@@ -295,7 +295,7 @@ In Compliance Manager (Preview), il processo del flusso di lavoro è stato spost
 
 Compliance Manager (Preview) include anche il pivot basato sul controllo trovato nelle versioni precedenti. Selezionare il dashboard **informazioni controlli** per visualizzarlo. È possibile visualizzare le informazioni per i controlli a livello di valutazione e di modello. Di seguito è riportato un esempio del dashboard delle informazioni sui controlli per le valutazioni.
 
-![Controllo delle informazioni sui controlli Compliance Manager](media/compliance-manager-controls-info.png)
+![Controllo delle informazioni sui controlli Compliance Manager](../media/compliance-manager-controls-info.png)
 
 Per le valutazioni, viene visualizzato il dashboard informazioni controlli:
 
@@ -311,7 +311,7 @@ Per le valutazioni, viene visualizzato il dashboard informazioni controlli:
     - Nelle **azioni** vengono visualizzate le azioni dei clienti che è possibile eseguire per soddisfare alcuni o tutti i requisiti del controllo. Molti controlli dispongono di più azioni associate e tutte le azioni associate a un controllo vengono visualizzate qui. Le azioni qui hanno la stessa interfaccia utente di quelle elencate nel dashboard Actions.
     - **Microsoft Actions** Visualizza l'elenco dei controlli del Framework interno Microsoft che si applicano al controllo di certificazione selezionato. Per ogni controllo interno, selezionare **implementato** per visualizzare i dettagli relativi all'implementazione e ai test di Microsoft, insieme al risultato del test e alla data di test, come illustrato di seguito.
 
-![Visualizzazione azione Microsoft Compliance Manager](media/compliance-manager-microsoft-action.png)
+![Visualizzazione azione Microsoft Compliance Manager](../media/compliance-manager-microsoft-action.png)
 
 ### <a name="export-an-assessment"></a>Esportare una valutazione
 
@@ -329,7 +329,7 @@ Il report di valutazione viene scaricato come file di Excel nella sessione del b
 
 Al termine di un modello o di una valutazione e non è più necessario ai fini della conformità, è possibile nasconderlo dalla visualizzazione. Quando un modello o una valutazione è nascosta, viene rimossa dalla visualizzazione predefinita ed è necessario selezionare **Includi** casella di controllo nascosta per visualizzarla.
 
-![Visualizzazione modello nascosto Compliance Manager](media/compliance-manager-hidden-template.png "Modello nascosto di Compliance Manager")
+![Visualizzazione modello nascosto Compliance Manager](../media/compliance-manager-hidden-template.png "Modello nascosto di Compliance Manager")
 
 > [!IMPORTANT]
 > Le valutazioni nascoste non conservano i collegamenti ai documenti di prova caricati. È consigliabile esportare la valutazione prima di nasconderla per mantenere i collegamenti ai documenti di prova nel report.
@@ -367,7 +367,7 @@ I controlli e le azioni sono i principali pivot di dati utilizzati in Compliance
 
 I controlli possono essere visualizzati dal dashboard info Controls. I controlli rappresentano i requisiti di una norma, una certificazione, una regolamentazione o un Framework. Per eseguire il mapping di tali requisiti su più standard, normative e così via, per associarli a azioni, tutto viene considerato come un Framework di controllo. Ad esempio, come un Framework di controllo, i regolamenti, come HIPAA, sono stati suddivisi per sezione e i controlli HIPAA in Compliance Manager utilizzano lo stesso schema di numerazione di quelle sezioni, come illustrato di seguito:
 
-![Dettagli sui controlli di Compliance Manager Microsoft](media/compliance-manager-control-details.png)
+![Dettagli sui controlli di Compliance Manager Microsoft](../media/compliance-manager-control-details.png)
 
 Sono disponibili tre tipi di controlli:
 
@@ -403,7 +403,7 @@ Questa funzione consente a un'organizzazione di rimuovere eventuali dipendenze a
 
 Un modello è l'oggetto di base in Compliance Manager (Preview) associato a un prodotto e a una certificazione (ad esempio, standard, Regulation, Control Framework e così via). I modelli possono essere visualizzati e aggiunti dal dashboard dei modelli.
 
-![Dashboard di Microsoft template di Compliance Manager](media/compliance-manager-template-dashboard.png)
+![Dashboard di Microsoft template di Compliance Manager](../media/compliance-manager-template-dashboard.png)
  
 Il dashboard Visualizza ogni modello, insieme alla certificazione e al prodotto associati al modello, le date in cui è stato creato il modello e l'ultima modifica, il numero di controlli Customer e Managed Microsoft, il Punteggio di conformità massimo per la Modello e lo stato del modello (ad esempio, approvato, in attesa di approvazione, importato).
 
@@ -594,7 +594,7 @@ Compliance Manager (Preview) supporta anche l'esportazione di modelli in formato
 2. Selezionare il gruppo e la valutazione nei menu a discesa per la valutazione che si desidera esportare.
 3. Selezionare Esporta. L'esportazione di valutazione viene scaricata come file di Excel.
 
-![Rapporto Excel di valutazione di Compliance Manager](media/compliance-manager-assessment-report.png)
+![Rapporto Excel di valutazione di Compliance Manager](../media/compliance-manager-assessment-report.png)
 
 ## <a name="permissions"></a>Autorizzazioni
 

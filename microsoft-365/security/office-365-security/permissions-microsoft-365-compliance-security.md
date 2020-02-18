@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzando il Centro sicurezza Microsoft 365 o il Centro conformità Microsoft 365, è possibile gestire le autorizzazioni in una posizione centralizzata per tutte le attività relative alla sicurezza o alla conformità.
-ms.openlocfilehash: 53695bb412c760c769692dfe7fb40324f495d356
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6553020c215b3ffad0707a699414a6939ef368ca
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598703"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082441"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Autorizzazioni nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365
 
@@ -29,7 +29,7 @@ L'organizzazione deve gestire gli scenari di sicurezza e conformità che riguard
 
 In seguito all'assegnazione dei ruoli di amministratore da parte dell'amministratore globale, gli amministratori avranno accesso a funzionalità e dati che riguardano tutti i servizi di Microsoft 365, come il Centro sicurezza Microsoft 365, il Centro conformità Microsoft 365, Azure, Office 365 ed Enterprise Mobility + Security.
 
-![Pagina delle autorizzazioni nel Centro sicurezza Microsoft 365](../media/m365-security-permissions-page.png)
+![Pagina delle autorizzazioni nel Centro sicurezza Microsoft 365](../../media/m365-security-permissions-page.png)
 
 ## <a name="what-the-microsoft-365-roles-are"></a>Quali sono i ruoli di Microsoft 365
 
@@ -130,13 +130,13 @@ Quando un ruolo viene selezionato nel Centro conformità Microsoft 365 e nel Cen
 
 Per altre informazioni, vedere [Visualizzare e assegnare i ruoli di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
-![Collegamento per gestire le autorizzazioni in Azure Active Directory](../media/permissions-manage-in-azure-ad-link.png)
+![Collegamento per gestire le autorizzazioni in Azure Active Directory](../../media/permissions-manage-in-azure-ad-link.png)
 
 ## <a name="managing-roles-in-a-service-instead-of-azure-active-directory"></a>Gestione dei ruoli in un servizio anziché in Azure Active Directory
 
 I ruoli visualizzati nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365 sono visualizzati anche nei servizi per cui si hanno le autorizzazioni necessarie. Ad esempio, è possibile visualizzare questi ruoli nel Centro sicurezza e conformità di Office 365.
 
-![Ruoli nel Centro sicurezza e conformità di Office 365](../media/m365-roles-in-o365-scc.png)
+![Ruoli nel Centro sicurezza e conformità di Office 365](../../media/m365-roles-in-o365-scc.png)
 
 ### <a name="breaking-inheritance"></a>Interruzione dell'ereditarietà
 

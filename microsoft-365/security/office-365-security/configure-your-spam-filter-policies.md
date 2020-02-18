@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Le impostazioni di base del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata.
-ms.openlocfilehash: a645d00bd650cba06ca3751aa4fc3f48f9959e5b
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 6cf4d84b72e774f734f198b09285bba2c68bc4df
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957201"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42086275"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurare i criteri di filtro della posta indesiderata
 Le impostazioni del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata. Le impostazioni del filtro della posta indesiderata vengono applicate solo ai messaggi in arrivo e sono di due tipi:
@@ -109,10 +109,10 @@ Per abilitare più impostazioni personalizzate o per aggiungere criteri personal
 
 6. Fare clic su **Salva**. Nel riquadro destro viene visualizzato un riepilogo delle impostazioni dei criteri.
 
-Non è possibile disabilitare o eliminare i criteri predefiniti e i criteri personalizzati hanno sempre la precedenza sui criteri predefiniti. Per i criteri personalizzati, è possibile selezionare o deselezionare le caselle di controllo nella colonna **ABILITATO** per abilitarli o disabilitarli. Per impostazione predefinita, tutti i criteri sono abilitati. Per eliminare un criterio personalizzato, selezionare il criterio e fare clic sull'icona **Elimina** ![Icona Elimina](../media/ITPro-EAC-DeleteIcon.gif), quindi confermare che si vuole eliminare il criterio.
+Non è possibile disabilitare o eliminare i criteri predefiniti e i criteri personalizzati hanno sempre la precedenza sui criteri predefiniti. Per i criteri personalizzati, è possibile selezionare o deselezionare le caselle di controllo nella colonna **ABILITATO** per abilitarli o disabilitarli. Per impostazione predefinita, tutti i criteri sono abilitati. Per eliminare un criterio personalizzato, selezionare il criterio e fare clic sull'icona **Elimina** ![Icona Elimina](../../media/ITPro-EAC-DeleteIcon.gif), quindi confermare che si vuole eliminare il criterio.
 
 > [!TIP]
-> È possibile cambiare la priorità (ordine di esecuzione) dei criteri personalizzati facendo clic su ![Icona Freccia in su](../media/ITPro-EAC-UpArrowIcon.gif) freccia su e ![Icona Freccia in giù](../media/ITPro-EAC-DownArrowIcon.gif) freccia giù. Il criterio con **PRIORITÀ** pari a **0** verrà eseguito per primo, seguito da quello con priorità **1**, poi **2** e così via.
+> È possibile cambiare la priorità (ordine di esecuzione) dei criteri personalizzati facendo clic su ![Icona Freccia in su](../../media/ITPro-EAC-UpArrowIcon.gif) freccia su e ![Icona Freccia in giù](../../media/ITPro-EAC-DownArrowIcon.gif) freccia giù. Il criterio con **PRIORITÀ** pari a **0** verrà eseguito per primo, seguito da quello con priorità **1**, poi **2** e così via.
 
 ## <a name="use-powershell-to-configure-spam-filter-policies"></a>Utilizzo di PowerShell per la configurazione dei criteri di filtro di protezione dalla posta indesiderata
 
@@ -150,18 +150,18 @@ Entrambi gli elenchi sono configurati in qualsiasi criterio di protezione da pos
 
 1. Nella sezione **Elenchi di elementi consentiti**, è possibile specificare voci, come mittenti o domini, che verranno sempre recapitati alla posta in arrivo. La posta elettronica proveniente da tali voci non viene elaborata dal filtro di protezione da posta indesiderata.
 
-   - Aggiungere i mittenti attendibili a Elenco mittenti consentiti. Fare clic su **Modifica**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif), quindi nella finestra di dialogo di selezione, aggiungere gli indirizzi dei mittenti che si desidera autorizzare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina **Elenchi di elementi consentiti**.
+   - Aggiungere i mittenti attendibili a Elenco mittenti consentiti. Fare clic su **Modifica**![Icona Aggiungi](../../media/ITPro-EAC-AddIcon.gif), quindi nella finestra di dialogo di selezione, aggiungere gli indirizzi dei mittenti che si desidera autorizzare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina **Elenchi di elementi consentiti**.
 
-   - Aggiungere i domini attendibili a Elenco di domini consentiti. Fare clic su **Modifica**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif), quindi nella finestra di dialogo di selezione, aggiungere i domini che si desidera autorizzare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina **Elenchi di elementi consentiti**.
+   - Aggiungere i domini attendibili a Elenco di domini consentiti. Fare clic su **Modifica**![Icona Aggiungi](../../media/ITPro-EAC-AddIcon.gif), quindi nella finestra di dialogo di selezione, aggiungere i domini che si desidera autorizzare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina **Elenchi di elementi consentiti**.
 
    > [!CAUTION]
    > Non è mai consigliabile elencare i domini accettati (ossia quelli proprietari) o i domini comuni come Microsoft.com, office.com e così via, in un elenco di elementi consentiti. Ciò consente agli spoofer di inviare messaggi di posta elettronica senza restrizioni nell'organizzazione.
 
 2. Nella pagina **Elenchi contatti bloccati**, è possibile specificare voci, come mittenti o domini, che verranno sempre contrassegnati come Posta indesiderata. Il servizio applica l'azione di probabilità di posta indesiderata configurata alla posta elettronica che corrisponde a tali voci.
 
-   - Aggiungere i mittenti indesiderati all'elenco dei mittenti bloccati. Fare clic su **Modifica**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif), quindi nella finestra di dialogo di selezione, aggiungere gli indirizzi dei mittenti che si desidera bloccare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina degli **elenchi di indirizzi bloccati**.
+   - Aggiungere i mittenti indesiderati all'elenco dei mittenti bloccati. Fare clic su **Modifica**![Icona Aggiungi](../../media/ITPro-EAC-AddIcon.gif), quindi nella finestra di dialogo di selezione, aggiungere gli indirizzi dei mittenti che si desidera bloccare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina degli **elenchi di indirizzi bloccati**.
 
-   - Aggiungere i domini indesiderati all'elenco dei domini bloccati. Fare clic su **Modifica**![Icona Aggiungi](../media/ITPro-EAC-AddIcon.gif) e, nella finestra di dialogo di selezione, aggiungere i domini che si desidera bloccare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina degli **elenchi di indirizzi bloccati**.
+   - Aggiungere i domini indesiderati all'elenco dei domini bloccati. Fare clic su **Modifica**![Icona Aggiungi](../../media/ITPro-EAC-AddIcon.gif) e, nella finestra di dialogo di selezione, aggiungere i domini che si desidera bloccare. È possibile separare più voci con un punto e virgola o una nuova riga. Fare clic su **Salva** per tornare alla pagina degli **elenchi di indirizzi bloccati**.
    
      > [!NOTE]
      > Nei criteri filtro posta indesiderata è possibile bloccare interi domini o mittenti specifici, ma non è possibile usare i caratteri jolly (\*). 

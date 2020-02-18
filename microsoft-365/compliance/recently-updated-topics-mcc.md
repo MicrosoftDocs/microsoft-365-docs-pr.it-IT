@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Analogamente alle funzionalità del centro conformità di Microsoft 365, il contenuto della guida è sempre in evoluzione. Stiamo creando continuamente nuovi articoli, aggiornando quelli esistenti ed eseguendo modifiche in base ai commenti e suggerimenti. Scopri cosa c'è di nuovo e aggiornato in questo mese.
-ms.openlocfilehash: 40ad0249b834eb187fecc34df3e2785e84201eee
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b285b51ca20e2822be9d8193d33e634418adbeb3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601653"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42081624"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aggiornamenti recenti a Microsoft 365 content Compliance
 
@@ -117,13 +117,13 @@ Sono state aggiunte nuove linee guida agli articoli seguenti relativi a Californ
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
-[Applicazione automatica di un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md) (aggiornato)<br>Informazioni rimosse sul supporto imminente per l'etichettatura consigliata in Outlook. Sono state rimosse le informazioni di licenza duplicate. Ora punta a informazioni autorevoli nelle [etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md).
+[Applicazione automatica di un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md) (aggiornato)<br>Informazioni rimosse sul supporto imminente per l'etichettatura consigliata in Outlook. Sono state rimosse le informazioni di licenza duplicate. Ora punta a informazioni autorevoli in [use Sensitivity labels nelle app di Office](sensitivity-labels-office-apps.md).
 
 [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (Public Preview)](sensitivity-labels-sharepoint-onedrive-files.md) (New)<br>Linee guida su come preparare SharePoint e OneDrive per l'applicazione di etichette di riservatezza al contenuto archiviato in tali posizioni.
 
 [Panoramica delle etichette di riservatezza](sensitivity-labels.md) (aggiornate)<br>Sono stati aggiunti ulteriori dettagli sul supporto per le app di Office sul Web, Microsoft teams, gruppi di Office 365, siti di SharePoint e file di Office in SharePoint e OneDrive.
 
-[Etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md) (aggiornate)<br>Diversi aggiornamenti, tra cui informazioni dettagliate sulle app, i requisiti di sottoscrizione e di licenza e l'interazione tra i modelli definiti dall'amministratore (come quelli presenti nelle etichette di crittografia e di riservatezza dei messaggi di Office 365).
+[Utilizzare le etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md) (aggiornate)<br>Diversi aggiornamenti, tra cui informazioni dettagliate sulle app, i requisiti di sottoscrizione e di licenza e l'interazione tra i modelli definiti dall'amministratore (come quelli presenti nelle etichette di crittografia e di riservatezza dei messaggi di Office 365).
 
 [Utilizzare le etichette di riservatezza con Microsoft teams, i gruppi di Office 365 e i siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md) (nuovo)<br>Informazioni dettagliate sulla configurazione e l'applicazione di etichette di riservatezza in Microsoft teams, gruppi di Office 365 e siti di SharePoint.
 

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: È possibile eseguire la duplicazione dei risultati di ricerca di eDiscovery esportati in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio in cassette postali diverse.
-ms.openlocfilehash: bfd810d358a85c0cdfacab50fb512a8d2a9c8828
-ms.sourcegitcommit: 3e93676223948a1d2209ff2b7ce7a91b18817260
+ms.openlocfilehash: f3a0291c2c611814e35528e87f5a3897c4e8ba59
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41892039"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076274"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>De-duplicazione nei risultati della ricerca di eDiscovery
 
@@ -45,11 +45,11 @@ Nella grafica seguente viene illustrato il modo in cui i messaggi duplicati veng
   
  ### <a name="resultscsv-report-viewed-in-excel"></a>Report results. csv (visualizzato in Excel)
   
-![Visualizzazione delle informazioni sugli elementi duplicati nel report results. csv](media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Visualizzazione delle informazioni sugli elementi duplicati nel report results. csv](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
  ### <a name="manifestxml-report-viewed-in-excel"></a>Report manifest. XML (visualizzato in Excel)
   
-![Visualizzazione delle informazioni sugli elementi duplicati nel report manifest. XML](media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Visualizzazione delle informazioni sugli elementi duplicati nel report manifest. XML](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 Inoltre, le altre proprietà dei messaggi duplicati sono incluse nei report di esportazione. Questo include la cassetta postale in cui si trova il messaggio duplicato, se il messaggio è stato inviato a un gruppo di distribuzione e se il messaggio è stato CC ' d o Ccn ' s a un altro utente.
   

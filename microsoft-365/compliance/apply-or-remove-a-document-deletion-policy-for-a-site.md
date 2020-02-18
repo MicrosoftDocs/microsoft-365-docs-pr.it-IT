@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Le organizzazioni spesso sono soggette a regolamentazioni di conformità, normative legali o di altro tipo, che richiedono di mantenere i documenti per un certo periodo di tempo. Tuttavia, mantenere i documenti più a lungo del necessario può esporre l'organizzazione a rischi legali. Per questo motivo, la tua organizzazione potrebbe aver creato un criterio di eliminazione del documento per il tuo sito; per esempio, potrebbe essere necessario eliminare i documenti dell'attività generale cinque anni dopo la loro creazione.
-ms.openlocfilehash: 67bbe3339b492e5199799a21e5b3b249a3a98c08
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f04b693a68da36b37524fe5c1fd2e00fab6c2bc6
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596073"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42079848"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Applicare o rimuovere un criterio di eliminazione del documento per un sito
 
@@ -64,7 +64,7 @@ La tua organizzazione può assegnare criteri diversi a raccolte siti diverse. A 
     
 Questo elenco è solo in modalità visualizzazione e consente al proprietario della raccolta siti di vedere tutti i criteri e le regole disponibili. Per informazioni sull'applicazione di un criterio, consulta la sezione successiva.
   
-![Visualizzare i criteri di eliminazione dei documenti assegnati a una raccolta siti](media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
+![Visualizzare i criteri di eliminazione dei documenti assegnati a una raccolta siti](../media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
   
 ## <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Applicare o rimuovere un criterio di eliminazione del documento per un sito
 
@@ -83,13 +83,13 @@ Questo elenco è solo in modalità visualizzazione e consente al proprietario de
     
     Solo un criterio e una regola alla volta possono essere attivi in un sito. L'organizzazione può fornire più criteri e regole tra cui scegliere oppure metterne a disposizione solo uno.
     
-    ![Selezionare l'opzione criterio](media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
+    ![Selezionare l'opzione criterio](../media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
   
   - **Per rifiutare l'esclusione di un criterio** Scegliere **opt-out: do note Delete** \> **Save**.
     
     Come proprietario di un sito, è possibile escludere un criterio di eliminazione dei documenti se si determina che il criterio non è applicabile al contenuto del sito. Tuttavia, non è possibile escludere un criterio contrassegnato come **obbligatorio**.
     
-    ![Opzione opt-out](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
+    ![Opzione opt-out](../media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
 ## <a name="document-deletion-policies-override-other-policies"></a>I criteri di eliminazione del documento ignorano altri criteri
 
@@ -113,7 +113,7 @@ Se il tuo sito stava utilizzando criteri tipo di contenuto e ne ricevi il messag
     
 2. In \> **modelli di criteri tipo di contenuto** **Amministrazione sito** .
     
-    ![Avviso sul sito in cui vengono utilizzati i criteri di eliminazione dei documenti](media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
+    ![Avviso sul sito in cui vengono utilizzati i criteri di eliminazione dei documenti](../media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
   
 ### <a name="determine-if-information-management-policies-are-being-ignored"></a>Determinare se i criteri di gestione delle informazioni vengono ignorati
 
@@ -121,7 +121,7 @@ Se il tuo sito stava utilizzando criteri di gestione delle informazioni e ne ric
   
 - Per un elenco o una raccolta, nelle impostazioni \> della \> **raccolta** \> **schede della raccolta della** barra multifunzione in **autorizzazioni e gestione** \> delle informazioni di gestione **delle impostazioni dei criteri**.
     
-    ![Avviso sul sito in cui vengono utilizzati i criteri di eliminazione dei documenti](media/3f043057-a741-4cd8-a165-6d139b986064.png)
+    ![Avviso sul sito in cui vengono utilizzati i criteri di eliminazione dei documenti](../media/3f043057-a741-4cd8-a165-6d139b986064.png)
   
 ## <a name="see-also"></a>Vedere anche
 

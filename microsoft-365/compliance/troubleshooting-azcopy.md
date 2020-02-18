@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7a012ec742d99a5b2ba35800c90e8614b503b93c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3153fc92cfae6e2feba122cc895e787c9b573ef7
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597323"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42080899"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Risoluzione dei problemi relativi a AzCopy in Advanced eDiscovery
 
 Quando si caricano dati o documenti non di Office 365 per la correzione degli errori in Advanced eDiscovery, l'interfaccia utente fornisce un comando AzCopy di Azure che contiene parametri con il percorso in cui vengono archiviati i file che si desidera caricare e lo spazio di archiviazione di Azure percorso in cui verranno caricati i file. Per caricare i documenti, è possibile copiare questo comando e quindi eseguirlo in un prompt dei comandi nel computer locale.  Nello screenshot seguente è riportato un esempio di un comando AzCopy:
 
-![Caricare i file non di Office 365](media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![Caricare i file non di Office 365](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 In genere, il comando fornito funziona quando lo si esegue. Tuttavia, è possibile che i casi in cui il comando visualizzato non venga eseguito correttamente. Ecco alcuni possibili motivi.
 

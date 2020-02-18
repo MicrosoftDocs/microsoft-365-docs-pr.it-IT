@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 3: Configurare un livello di sicurezza maggiore per Microsoft 365'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare un livello di sicurezza maggiore per Microsoft 365.
-ms.openlocfilehash: 15a4121315a81e1169e7cf1fa1c7ed079201b67b
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: eabf0d60f3cfb61b7fffcc688a080ba99f83293e
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801681"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067243"
 ---
 # <a name="step-3-configure-increased-security-for-microsoft-365"></a>Passaggio 3: Configurare un livello di sicurezza maggiore per Microsoft 365
 
 *Questo passaggio è obbligatorio e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![Fase 6: protezione delle informazioni](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: protezione delle informazioni](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Per assicurarsi che l'abbonamento a Microsoft 365 e i relativi dati siano protetti da minacce, configurare quanto segue:
 
@@ -47,7 +49,7 @@ Office 365 ATP è disponibile solo con Microsoft 365 E5.
 
 |||
 |:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida al lab di test: Configurare un livello di sicurezza maggiore per Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida al lab di test: Configurare un livello di sicurezza maggiore per Microsoft 365](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria.md#crit-infoprotect-step3) che corrispondono a questo passaggio.
@@ -57,6 +59,6 @@ Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria
 
 |||
 |:-------|:-----|
-|![Passaggio 4](./media/stepnumbers/Step4.png)|[Configurare Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
+|![Passaggio 4](../media/stepnumbers/Step4.png)|[Configurare Windows Information Protection](infoprotect-deploy-windows-information-protection.md)|
 
 

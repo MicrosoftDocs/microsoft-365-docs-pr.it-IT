@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contenuto nuovo e modificato nella Guida alla distribuzione di Microsoft 365.
-ms.openlocfilehash: 73ce204352af92e1380b57b9a58e04323fb7a987
-ms.sourcegitcommit: a53ec6ab7bf59983780ea7187cd5d56b8b1f4b33
+ms.openlocfilehash: fbb60155ff0ddb2d38614cf6df8aaf1e706d7743
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41855461"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066983"
 ---
 # <a name="changes-to-microsoft-365-for-enterprise-deployment-content"></a>Modifiche al contenuto sulla distribuzione di Microsoft 365 per aziende
 
@@ -42,7 +42,7 @@ ms.locfileid: "41855461"
 
 - [Team per un progetto interno di Contoso Corporation](contoso-team-for-top-secret-project.md)
 
-  [![Team per un progetto interno di Contoso Corporation](./media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)](contoso-team-for-top-secret-project.md)
+  [![Team per un progetto interno di Contoso Corporation](../media/contoso-team-for-highly-confidential-assets/final-config-example-file.png)](contoso-team-for-top-secret-project.md)
 
 ## <a name="october-2019"></a>Ottobre 2019
 
@@ -50,37 +50,37 @@ ms.locfileid: "41855461"
 
 - [Poster Team per dati altamente regolamentati](secure-teams-highly-regulated-data-scenario.md#poster)
 
-  [![Poster Team per dati altamente regolamentati](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+  [![Poster Team per dati altamente regolamentati](../media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
   È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 - [Poster Siti di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md#poster)
 
-  [![Poster Siti di SharePoint per dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+  [![Poster Siti di SharePoint per dati altamente regolamentati](../media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
   È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 - [Distribuzione di Windows 10 con il poster di Autopilot](windows10-deploy-autopilot.md) 
 
-  [![Distribuzione di Windows 10 con il poster di Autopilot](./media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
+  [![Distribuzione di Windows 10 con il poster di Autopilot](../media/windows10-deploy-autopilot/windows10-autopilot-flowchart.png)](https://docs.microsoft.com/windows/deployment/media/Windows10AutopilotFlowchart.pdf)
 
   È anche possibile scaricare il poster in formato[PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) o [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx).
 
 - [Distribuzione di Windows 10 con il poster di Configuration Manager](windows10-deploy-inplaceupgrade.md)
 
-  [![Distribuzione di Windows 10 con il poster di Configuration Manager](./media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
+  [![Distribuzione di Windows 10 con il poster di Configuration Manager](../media/windows10-deploy-inplaceupgrade/windows10-deployment-config-manager.png)](https://docs.microsoft.com/windows/deployment/media/Windows10DeploymentConfigManager.pdf)
 
   È anche possibile scaricare il poster in formato[PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) o [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx).
 
 - [Scenario Teams per dati altamente regolamentati](secure-teams-highly-regulated-data-scenario.md)
 
-  [![Lo scenario Teams per dati altamente regolamentati](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
+  [![Lo scenario Teams per dati altamente regolamentati](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)](secure-teams-highly-regulated-data-scenario.md)
 
   Annunci: [Blog della community tecnica di Microsoft 365](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Protect-your-highly-regulated-files-in-Teams-with-Microsoft-365/ba-p/962985)  |  [LinkedIn](https://www.linkedin.com/pulse/how-can-i-lock-down-team-sensitive-top-secret-joe-davies/?published=t)
 
 - [Poster Supportare i lavoratori remoti](empower-people-to-work-remotely.md#poster)
 
-  [![Poster Supportare i lavoratori remoti](./media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
+  [![Poster Supportare i lavoratori remoti](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) 
 
   È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
@@ -91,11 +91,11 @@ ms.locfileid: "41855461"
 - Aggiornamento dei carichi di lavoro di [Microsoft Teams](teams-workload.md), [Exchange Online](exchangeonline-workload.md) e [SharePoint Online](sharepoint-online-onedrive-workload.md).
 - Aggiornamento dello scenario [Siti di SharePoint per dati altamente regolamentati](teams-sharepoint-online-sites-highly-regulated-data.md)
  
-  [![Scenario Siti di SharePoint per dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)
+  [![Scenario Siti di SharePoint per dati altamente regolamentati](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)](teams-sharepoint-online-sites-highly-regulated-data.md)
 
 - [Poster di Microsoft 365 per aziende](microsoft-365-overview.md#get-the-big-picture) per nuovi scenari 
 
-  [![Immagine per il poster di Microsoft 365 per aziende](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+  [![Immagine per il poster di Microsoft 365 per aziende](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## <a name="september-2019"></a>Settembre 2019
 
@@ -103,7 +103,7 @@ ms.locfileid: "41855461"
 
 - [Scenario relativo ai lavoratori remoti](empower-people-to-work-remotely.md)
 
-  [![Configurazione dei lavoratori remoti per un'organizzazione con identità ibrida](./media/empower-people-to-work-remotely/remote-workers-hybrid.png)](empower-people-to-work-remotely.md) 
+  [![Configurazione dei lavoratori remoti per un'organizzazione con identità ibrida](../media/empower-people-to-work-remotely/remote-workers-hybrid.png)](empower-people-to-work-remotely.md) 
  
   Annunci: [Blog della community tecnica di Microsoft 365](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Empower-your-remote-workers-with-Microsoft-365-Enterprise/ba-p/935196#M236)  |  [LinkedIn](https://www.linkedin.com/pulse/how-do-i-configure-microsoft-365-enterprise-empower-my-joe-davies/)
 
@@ -120,18 +120,18 @@ ms.locfileid: "41855461"
 
 - [Poster della transizione dell'organizzazione a Microsoft 365 per aziende](migration-microsoft-365-enterprise-workload.md#transition-your-entire-organization)
 
-   [![Immagine per il poster della transizione a Microsoft 365](./media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+   [![Immagine per il poster della transizione a Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
  
 - [Poster dell'infrastruttura di gestione delle identità per Microsoft 365 per aziende](identity-infrastructure.md)
 
-  [![Poster dell'infrastruttura di gestione delle identità](./media/identity-infrastructure/m365e-identity-arch-poster.png)](media/identity-infrastructure/M365E-ID-Infra.pdf)
+  [![Poster dell'infrastruttura di gestione delle identità](../media/identity-infrastructure/m365e-identity-arch-poster.png)](../media/identity-infrastructure/M365E-ID-Infra.pdf)
 
   Annunci: [Blog della community tecnica di Microsoft 365](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Get-the-new-Identity-infrastructure-for-Microsoft-365-Enterprise/ba-p/874941)  |  [LinkedIn](https://www.linkedin.com/pulse/how-can-i-quickly-ramp-up-key-concepts-features-identity-joe-davies/?published=t)
 
 
 - [Poster della fine del supporto di Windows 7 e Office 10](migration-microsoft-365-enterprise-workload.md#summary-of-options-for-office-2010-clients-and-servers-and-windows-7)
   
-  [![Immagine per il poster della fine del supporto dei client e server di Office 2010 e Windows 7](./media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
+  [![Immagine per il poster della fine del supporto dei client e server di Office 2010 e Windows 7](../media/migration-microsoft-365-enterprise-workload/office2010-windows7-end-of-support.png)](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf)
 
   Annunci: [Blog della community tecnica di Microsoft 365](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Move-from-Office-2010-clients-and-servers-and-Windows-7-to/ba-p/846994)  |  [LinkedIn](https://www.linkedin.com/pulse/how-can-microsoft-365-enterprise-help-me-end-support-products-davies/)
 
@@ -140,7 +140,7 @@ ms.locfileid: "41855461"
 
 - [Poster di Microsoft 365 per aziende](microsoft-365-overview.md#get-the-big-picture) per nuovi scenari di produttività
 
-   [![Immagine per il poster di Microsoft 365 per aziende](./media/m365-poster/m365e-poster.png)](media/m365-poster/Microsoft365Enterprise.pdf)
+   [![Immagine per il poster di Microsoft 365 per aziende](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
 ## <a name="july-2019"></a>Luglio 2019
 
@@ -154,14 +154,14 @@ ms.locfileid: "41855461"
 
 - [Poster dell'infrastruttura di base](deploy-foundation-infrastructure.md#at-a-glance)
 
-  [![Immagine per il poster dell'infrastruttura di base di Microsoft 365 per aziende](./media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
+  [![Immagine per il poster dell'infrastruttura di base di Microsoft 365 per aziende](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
   Annunci: [LinkedIn](https://www.linkedin.com/pulse/how-can-i-get-big-picture-microsoft-365-enterprise-joe-davies/)
 
  
 - [Articolo su Microsoft 365 per aziende per organizzazioni non aziendali](deploy-foundation-infrastructure-non-enterprises.md)
 
-  [![Riepilogo dell'infrastruttura se l'organizzazione usa l'identità solo cloud](./media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)](deploy-foundation-infrastructure-non-enterprises.md)
+  [![Riepilogo dell'infrastruttura se l'organizzazione usa l'identità solo cloud](../media/deploy-foundation-infrastructure-non-enterprises/final-cloud-only-config.png)](deploy-foundation-infrastructure-non-enterprises.md)
 
   Annunci: [Blog della community tecnica di Microsoft 365](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/Deploy-Microsoft-365-Enterprise-infrastructure-even-if-you-re/ba-p/900012)  |  [LinkedIn](https://www.linkedin.com/pulse/how-do-i-deploy-microsoft-365-enterprise-without-joe-davies/)
 

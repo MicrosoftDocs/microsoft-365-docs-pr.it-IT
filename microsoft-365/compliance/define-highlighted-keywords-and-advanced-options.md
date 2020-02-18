@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: "Informazioni su come aggiungere parole chiave definite dall'utente alla pertinenza per identificare i file rilevanti durante il tagging in Office 365 Advanced eDiscovery e per specificare i parametri di costo.  "
-ms.openlocfilehash: 4b74730498b3cb08cd646d57845446ae91daeee9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f24c2d736a1d3c36ed23d16e1bb5d2dadb42cec9
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595363"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42075930"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definire le parole chiave evidenziate e le opzioni avanzate in Office 365 Advanced eDiscovery
 
@@ -48,11 +48,11 @@ Come illustrato di seguito, è possibile aggiungere gli elenchi di parole chiave
     
 6. In **Descrizione**Digitare l'elenco delle parole chiave (facoltativo).
     
-    ![Aggiungere nuove parole chiave](media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
+    ![Aggiungere nuove parole chiave](../media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
   
 7. Fare clic su **OK** al termine. L'elenco creato viene aggiunto alla tabella di elenco delle parole chiave e può essere modificato o eliminato. 
     
-    ![Elenco di parole chiave per la configurazione di pertinenza](media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
+    ![Elenco di parole chiave per la configurazione di pertinenza](../media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
 Le parole chiave definite dall'utente verranno visualizzate nel \> tag colori specificati in pertinenza. 
   
@@ -68,7 +68,7 @@ Queste impostazioni influiscono sulla traccia e decidono i grafici in rilevanza.
     
 2. Nell'elenco **numero di file recensiti per ora** selezionare l'importo o accettare il valore predefinito. 
     
-    ![Parametri relativi al costo della configurazione di pertinenza](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
+    ![Parametri relativi al costo della configurazione di pertinenza](../media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
 3. Fare clic su **Salva**. Le impostazioni selezionate vengono salvate.
     

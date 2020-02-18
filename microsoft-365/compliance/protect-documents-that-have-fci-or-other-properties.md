@@ -96,7 +96,7 @@ Tenere presente che le **proprietà del documento Condition contengono uno quals
   
 Per ulteriori informazioni su questi cmdlet, vedere cmdlet per il [centro &amp; sicurezza e conformità di Office 365](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
   
-1. [Connettersi al Centro sicurezza e conformità di Office 365 utilizzando la sessione remota di PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409).
+1. [Connettersi al Centro sicurezza e conformità Office 365 utilizzando sessione remota di PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409).
     
 2. Creare il criterio utilizzando `New-DlpCompliancePolicy`.
 

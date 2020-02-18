@@ -1,5 +1,7 @@
 ---
 title: "Passaggio 2: configurare la classificazione dell'ambiente"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare i diversi modi per classificare i dati all'interno dell'organizzazione.
-ms.openlocfilehash: e1f0a6b9bdc4b6844037e7e873ed321942e8258e
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: e8c40ca4c419edc2d59a060dfd4fe8918cf4e784
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370413"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067253"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>Passaggio 2: configurare la classificazione dell'ambiente
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![Fase 6: protezione delle informazioni](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: protezione delle informazioni](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 In questo passaggio, si lavora con i team di conformità e legali per definire uno schema di classificazione dei dati dell'organizzazione.
 
@@ -100,7 +102,7 @@ Per uno schema di classificazione di esempio contenente dati personali in base a
 
 |||
 |:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida del laboratorio di testing: classificazione dei dati](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
+|![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida del laboratorio di testing: classificazione dei dati](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria.md#crit-infoprotect-step2) che corrispondono a questo passaggio.
@@ -109,5 +111,5 @@ Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria
 
 |||
 |:-------|:-----|
-|![Passaggio 3](./media/stepnumbers/Step3.png)|[Configurare un livello di sicurezza maggiore per Office 365](infoprotect-configure-increased-security-office-365.md)|
+|![Passaggio 3](../media/stepnumbers/Step3.png)|[Configurare un livello di sicurezza maggiore per Office 365](infoprotect-configure-increased-security-office-365.md)|
 

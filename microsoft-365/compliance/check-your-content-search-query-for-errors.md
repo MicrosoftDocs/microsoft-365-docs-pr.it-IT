@@ -13,18 +13,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Prima di eseguire la ricerca, controllare la query di parole chiave per la ricerca di contenuto per errori e refusi, ad esempio caratteri non supportati e operatori booleani minuscoli. Se viene visualizzato un errore, verrà suggerita una query riveduta.
-ms.openlocfilehash: ff7574629a87062e0a0da36541844179dfe25001
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 65b8ea1d9c1d474b2068afc0df5b6e261f56fa69
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595923"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078914"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Verificare la presenza di errori nella query di Ricerca contenuto
 
 Quando si crea o si modifica una ricerca di contenuto, è possibile che Office 365 verifichi la query per i caratteri non supportati e gli operatori booleani minuscoli. Come? Basta fare clic su **Controlla query per errori di battitura** nella pagina query di una ricerca contenuto. 
   
-![Fare clic su "controlla query per errori di battitura" per controllare la query di ricerca per i caratteri non supportati](media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
+![Fare clic su "controlla query per errori di battitura" per controllare la query di ricerca per i caratteri non supportati](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   
 Di seguito è indicato un elenco dei caratteri non supportati che vengono verificati. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o restituiscono risultati indesiderati.
   
@@ -40,7 +40,7 @@ Di seguito è indicato un elenco dei caratteri non supportati che vengono verifi
 
 Se nella query sono presenti caratteri non supportati, viene visualizzato un messaggio di avviso che indica che sono stati trovati caratteri non supportati e che viene suggerita un'alternativa. È quindi necessario mantenere la query originale o sostituirla con la query riveduta consigliata. Di seguito è riportato un esempio del messaggio di avviso visualizzato dopo aver fatto clic su **Controlla query per errori** di recapito per la query di ricerca nella schermata precedente. Si noti che la query originale contiene le virgolette intelligenti e gli operatori booleani minuscoli. 
   
-![Viene visualizzato un messaggio di avviso con una revisione consigliata per la query](media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
+![Viene visualizzato un messaggio di avviso con una revisione consigliata per la query](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Come impedire i caratteri non supportati nelle query di ricerca
 

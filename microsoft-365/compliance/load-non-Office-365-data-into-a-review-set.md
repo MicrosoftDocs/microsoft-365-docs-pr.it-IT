@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importare i dati non di Office 365 in un set di revisione in un caso di eDiscovery avanzato.
-ms.openlocfilehash: d839457824420c32a7acd006ae4218008c11b25e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ae5effafd8a208d3c03ce40e03c9da2b0ea6b8d1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41585685"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072209"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Caricare dati non Office 365 in un insieme da rivedere
 
@@ -30,7 +30,7 @@ Non tutti i documenti che devono essere analizzati in Advanced eDiscovery sono d
 >[!Note]
 >Advanced eDiscovery richiede un abbonamento a Microsoft 365 o Office 365 E5 per l'organizzazione o un abbonamento E3 con l'abbonamento al componente aggiuntivo per la conformità avanzato. Se non si dispone di tale piano e si desidera provare Advanced eDiscovery, è possibile iscriversi per una versione di valutazione di Office 365 Enterprise E5.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Se si utilizza la funzionalità carica non Office 365 descritta in questo articolo, è necessario disporre di quanto segue:
 
@@ -52,7 +52,7 @@ Se si utilizza la funzionalità carica non Office 365 descritta in questo artico
 
    Dove abraham.mcmahon@contoso.com, jewell.gordon@contoso.com e staci.gonzalez@contoso.com sono gli indirizzi SMTP dei depositari nel caso.
 
-   ![Struttura di cartelle di caricamento dei dati non Office 365](media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+   ![Struttura di cartelle di caricamento dei dati non Office 365](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
 - Un account assegnato al gruppo di ruoli eDiscovery Manager (e aggiunto come amministratore di eDiscovery).
 
@@ -69,17 +69,17 @@ Se si utilizza la funzionalità carica non Office 365 descritta in questo artico
 
 4. Fare clic su **Carica file** per avviare l'importazione guidata dati non di Office 365.
 
-   ![Caricare file](media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+   ![Caricare file](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
    Il primo passaggio della procedura guidata consente di preparare una posizione di archiviazione di Azure protetta fornita da Microsoft per il caricamento dei file.  Al termine della preparazione, il pulsante **Avanti: carica file** diventa attivo.
 
-   ![Importazione non Office 365: preparazione](media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![Importazione non Office 365: preparazione](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 5. Fare clic su **Avanti: carica file**.
 
 6. Nella pagina **Carica file** eseguire le operazioni seguenti:
 
-   ![Importazione non Office 365: caricamento di file](media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   ![Importazione non Office 365: caricamento di file](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
    a. Nella casella **percorso della posizione dei file** verificare o digitare il percorso della cartella principale in cui sono stati archiviati i dati non di Office 365 che si desidera caricare. Ad esempio, per il percorso dei file di esempio visualizzati nella **sezione prima di iniziare**, è necessario digitare **%USERPROFILE\Downloads\nonO365**. Se si specifica la posizione corretta, il comando AzCopy visualizzato nella casella sotto il percorso viene aggiornato correttamente.
 
@@ -87,7 +87,7 @@ Se si utilizza la funzionalità carica non Office 365 descritta in questo artico
 
 7. Avviare un prompt dei comandi di Windows, incollare il comando copiato nel passaggio precedente e quindi premere **invio** per avviare il comando AzCopy.  Dopo aver avviato il comando, i file non di Office 365 verranno caricati nel percorso di archiviazione di Azure preparato nel passaggio 4.
 
-   ![Importazione non Office 365: AzCopy](media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   ![Importazione non Office 365: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
    > Come indicato in precedenza, è necessario utilizzare AzCopy v 8.1 per utilizzare correttamente il comando fornito nella pagina **Carica file** . Se il comando AzCopy fornito ha esito negativo, vedere [risolvere i problemi relativi a AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -96,6 +96,6 @@ Se si utilizza la funzionalità carica non Office 365 descritta in questo artico
 
 9. Controllare lo stato di avanzamento dell'elaborazione dei file non di Office 365 nella pagina dei **file di processo** o nella scheda **processi** visualizzando un processo denominato **aggiunta di dati non di Office 365 a un set di revisione**.  Al termine del processo, i nuovi file saranno disponibili nel set di revisione.
 
-   ![Importazione non Office 365: elaborare i file](media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+   ![Importazione non Office 365: elaborare i file](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 
 10. Al termine dell'elaborazione, è possibile chiudere la procedura guidata.

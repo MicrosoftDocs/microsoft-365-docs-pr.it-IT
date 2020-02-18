@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare la chiave del cliente per Office 365 per Exchange Online, Skype for business, SharePoint Online, OneDrive for business e i file teams.
-ms.openlocfilehash: a57fb5ee7eea1746a50ec0fb1e2c3e84495b4f2c
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: a360c2c7a6876669ce5d2ae6b52a730a3c7f45a5
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804815"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42091289"
 ---
 # <a name="set-up-customer-key-for-office-365"></a>Configurare la chiave cliente per Office 365
 
@@ -124,7 +124,7 @@ Per inviare un'offerta per attivare il codice "Customer Key", eseguire la proced
 
 La perdita temporanea o permanente delle chiavi di crittografia radice può essere molto dirompente o addirittura catastrofica per l'utilizzo del servizio e può causare una perdita di dati. Per questo motivo, le risorse utilizzate con la chiave del cliente richiedono una protezione sicura. Tutte le risorse di Azure utilizzate con la chiave del cliente offrono meccanismi di protezione oltre la configurazione predefinita. Le sottoscrizioni di Azure possono essere contrassegnate o registrate in un modo che impedirà l'annullamento immediato e irrevocabile. Si tratta della registrazione di un periodo di conservazione obbligatorio. I passaggi necessari per registrare le sottoscrizioni di Azure per un periodo di conservazione obbligatorio richiedono la collaborazione con il team di Office 365. Questo processo può richiedere da uno a cinque giorni lavorativi. In precedenza, questo è stato talvolta definito come "non annullare".
   
-Prima di contattare il team di Office 365, è necessario eseguire i passaggi seguenti per ogni sottoscrizione di Azure utilizzata con il codice "Customer Key". Assicurarsi di avere installato il modulo di Azure PowerShell AZ prima di procedere (https://docs.microsoft.com/powershell/azure/new-azureps-module-az.
+Prima di contattare il team di Office 365, è necessario eseguire i passaggi seguenti per ogni sottoscrizione di Azure utilizzata con il codice "Customer Key". Prima di iniziare, assicurarsi di avere installato il modulo di [Azure PowerShell AZ](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) .
   
 1. Accedere con PowerShell di Azure. Per istruzioni, vedere [accedere con Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
@@ -132,7 +132,7 @@ Prima di contattare il team di Office 365, è necessario eseguire i passaggi seg
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
+   Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.KeyVault
    ```
 
 3. Contattare Microsoft per eseguire il processo di completamento. Per il team di SharePoint e OneDrive for business, contattare [Spock@microsoft.com](mailto:spock@microsoft.com). Per Exchange Online e Skype for business, contattare [exock@microsoft.com](mailto:exock@microsoft.com). Includere quanto segue nel messaggio di posta elettronica:
@@ -144,18 +144,18 @@ Prima di contattare il team di Office 365, è necessario eseguire i passaggi seg
 
    Il contratto di servizio per il completamento di questo processo è di cinque giorni lavorativi una volta che Microsoft è stato informato (e verificato) di aver registrato gli abbonamenti per l'utilizzo di un periodo di conservazione obbligatorio.
 
-4. Dopo aver ricevuto la notifica da Microsoft che la registrazione è stata completata, verificare lo stato della registrazione eseguendo il cmdlet Get-AzProviderFeature come indicato di seguito. Eseguire questa azione per ogni sottoscrizione.
+4. Dopo aver ricevuto la notifica da Microsoft che la registrazione è stata completata, verificare lo stato della registrazione eseguendo il comando Get-AzProviderFeature come indicato di seguito. Se verificato, il comando Get-AzProviderFeature restituirà il valore **registrato** per la proprietà **state di registrazione** . Eseguire questa azione per ogni sottoscrizione.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
    Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
    ```
 
-5. Dopo aver verificato che la proprietà **state registrazione** del cmdlet Get-AzProviderFeature restituisca il valore **registrato**, eseguire il comando riportato di seguito per completare il processo. Eseguire questa azione per ogni sottoscrizione.
+5. Per completare il processo, eseguire il comando Register-AzResourceProvider. Eseguire questa azione per ogni sottoscrizione.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
-   Register-AzResourceProvider -ProviderNamespace "Microsoft.KeyVault"
+   Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
    ```
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>Creare un Vault Key Azure Premium in ogni sottoscrizione

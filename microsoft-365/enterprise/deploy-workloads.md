@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Caricare gli utenti dell’organizzazione nei carichi di lavoro produttivi di Microsoft 365 per le aziende.
-ms.openlocfilehash: ff0e4b06972ed53933eb7780759bfcd53e286353
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 692deeee652a4d27b8cc46a8e02890cccb8bb311
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801901"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067848"
 ---
 # <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Carichi di lavoro e scenari di Microsoft 365 per le aziende
 
@@ -47,7 +47,7 @@ Questi scenari rappresentano una guida per configurare un team di Microsoft Team
 
 Ecco i carichi di lavoro e gli scenari della guida di distribuzione generale di Microsoft 365 per le aziende:
 
-![Carichi di lavoro e scenari della guida di distribuzione generale di Microsoft 365 per le aziende](./media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![Carichi di lavoro e scenari della guida di distribuzione generale di Microsoft 365 per le aziende](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 Vedere la [raccolta di produttività Microsoft 365](https://aka.ms/productivitylibrary)(https://aka.ms/productivitylibrary) per altri scenari. 
 

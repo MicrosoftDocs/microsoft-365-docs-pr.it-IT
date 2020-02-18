@@ -1,5 +1,7 @@
 ---
 title: Guida introduttiva - Distribuzione desktop
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Introduzione al processo di distribuzione desktop.
-ms.openlocfilehash: a9ad328f6a2548a24a981ee3b49665c3091277c9
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 62d18f23df55783c8b1f0c01f9f803a1d4bca0f0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112530"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067493"
 ---
 # <a name="getting-started---desktop-deployment"></a>Guida introduttiva - Distribuzione desktop
 
-![](media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
+![](../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-1.png" alt="Getting Started" height="130" width="130" /></td>
 <td><p><strong>Guida introduttiva: indicazioni su utenti, processi e tecnologia</strong></p>
 <p>Informazioni sui vantaggi offerti da Windows 10 e Office 365 ProPlus e sulle principali modifiche, considerazioni rispetto alle distribuzioni precedenti e procedure consigliate per una transizione a Windows 10 e Office 365 ProPlus priva di problemi.</p></td>
-<td><a href="https://aka.ms/ddev0" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
+<td><a href="https://aka.ms/ddev0" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-13.png" alt="Getting Started" height="120" width="213" /></a></td>
 </thead>
 </table>
 
@@ -111,7 +113,7 @@ Analogamente a quanto accadeva negli aggiornamenti precedenti, l'Utilità di mig
 
 **[Passaggio 7: Office e Windows as a Service](https://aka.ms/mdd7)**. Si tratta di un importante cambiamento nelle modalità di manutenzione dei desktop degli utenti. Con il passaggio a Windows 10 e Office 365 ProPlus è possibile passare alla gestione di Windows e Office as a Service, ovvero come servizio. Anziché implementare radicali cambiamenti tecnologici a intervalli di alcuni anni, si introdurranno continuamente nuove funzionalità, esperienze e sistemi di protezione. Gli aggiornamenti semestrali forniscono nuove funzionalità ogni anno in autunno e in primavera, mentre gli aggiornamenti qualitativi mensili conterranno correzioni di bug, per la sicurezza e per l'affidabilità. Anche se si può scegliere di distribuire il client di Office 2019, è decisamente consigliabile passare a Office 365 ProPlus, che segue un piano di servizio simile a Windows, quindi anche gli utenti ricevono regolarmente aggiornamenti per le app di Office.
 
-![](media/getting-started-media/getting-started-media-2.png)
+![](../media/getting-started-media/getting-started-media-2.png)
 
 [Panoramica di Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview)
 [Panoramica di Office as a Service](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)

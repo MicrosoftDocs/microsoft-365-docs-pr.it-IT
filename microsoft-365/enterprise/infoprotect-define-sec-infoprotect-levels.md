@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 1: definire i livelli di sicurezza e di protezione delle informazioni'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare i livelli di sicurezza e protezione delle informazioni per l'organizzazione.
-ms.openlocfilehash: 7f1f8a2099da8d99b1b7267e245a80d2143bb0ca
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: d3ba5f490b7aa80c9149a0451059914c78b8f2f1
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370393"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067213"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>Passaggio 1: definire i livelli di sicurezza e di protezione delle informazioni
 
 *Questo passaggio è obbligatorio e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![Fase 6: protezione delle informazioni](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: protezione delle informazioni](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 In questo passaggio verranno definiti i livelli di sicurezza e protezione dell'organizzazione. Ad esempio, il reparto vendite potrebbe richiedere solo un livello basso. Tuttavia, il reparto di ricerca e la preziosa proprietà intellettuale potrebbero richiedere un livello alto di sicurezza che consenta di crittografare i file e limiti l'accesso ai soli membri del personale di ricerca.
 
@@ -42,4 +44,4 @@ Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria
 
 |||
 |:-------|:-----|
-|![Passaggio 2](./media/stepnumbers/Step2.png)|[Configurare la classificazione dell'ambiente](infoprotect-configure-classification.md)|
+|![Passaggio 2](../media/stepnumbers/Step2.png)|[Configurare la classificazione dell'ambiente](infoprotect-configure-classification.md)|

@@ -1,5 +1,7 @@
 ---
 title: Proteggere Teams per i file in un ambiente di sviluppo/test
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Sintesi: creare team sensibili ed estremamente riservati in Microsoft Teams per i file in un ambiente di sviluppo/test.'
-ms.openlocfilehash: 26fed13973a87acdd62957dcfc2e0f69323234ef
-ms.sourcegitcommit: fb3815ee186b2b3ec790ee32a9d7b1628d623b0b
+ms.openlocfilehash: 7af36e5a3af94297124c6f03cdead514ac941e5b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39202297"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42082263"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>Proteggere Teams per i file in un ambiente di sviluppo/test
 
 Questo articolo fornisce istruzioni dettagliate per creare un ambiente di sviluppo/test che include i team sensibili ed estremamente riservati per la soluzione [Proteggere i file in Microsoft Teams](secure-files-in-teams.md).
   
-![Team sensibili ed estremamente riservati in Microsoft Teams per i file.](../media/sensitive-highly-confidential-teams-dev-test.png)
+![Team sensibili ed estremamente riservati in Microsoft Teams per i file.](../../media/sensitive-highly-confidential-teams-dev-test.png)
   
 Usare questo ambiente di sviluppo/test per sperimentare e perfezionare le impostazioni secondo le proprie necessità specifiche prima di distribuire questi tipi di team in produzione.
   
@@ -86,7 +88,7 @@ Successivamente, [Connettersi con il modulo di Azure Active Directory PowerShell
   
 Inserire il nome dell'organizzazione, la posizione e una password comune; eseguire quindi questi comandi dal prompt dei comandi di PowerShell o Integrated Script Environment (ISE) per creare account utente e aggiungerli ai rispettivi gruppi:
   
-```
+```powershell
 $orgName="<organization name, such as contoso for the contoso.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
 $commonPassword="<common password for all the new accounts>"
@@ -167,7 +169,7 @@ In questa fase, vengono creati e configurati i team sensibili ed estremamente ri
 
 Per creare un team sensibile per consentire ai membri del gruppo che si occupa del marketing di collaborare sulle campagne di marketing in corso:
 
-1. [Creare un nuovo team privato](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) denominato **Campagne di marketing**.
+1. [Creare un nuovo team privato](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) denominato **Campagne di marketing**.
 2. Aprire il team **Campagne di marketing**.
 3.  Nella barra degli strumenti per il team fare clic su **File**.
 4.  Fare clic sui puntini di sospensione, quindi selezionare **Apri in SharePoint**.
@@ -226,13 +228,13 @@ Configurare quindi un criterio di prevenzione della perdita dei dati che informa
 
 Ecco la configurazione ottenuta per il team Campagne di marketing.
 
-![Configurazione per il team Campagne di marketing.](../media/sensitive-team-config-dev-test.png)
+![Configurazione per il team Campagne di marketing.](../../media/sensitive-team-config-dev-test.png)
   
 ### <a name="company-strategy-team-site"></a>Sito del team di strategia aziendale
 
 Per creare un team estremamente riservato per consentire ai membri del team dirigenziale di collaborare sulla strategia aziendale:
 
-1. [Creare un nuovo team privato](https://support.office.com//article/create-a-team-from-scratch-174adf5f-846b-4780-b765-de1a0a737e2b) denominato **Strategia aziendale**.
+1. [Creare un nuovo team privato](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) denominato **Strategia aziendale**.
 2. Aprire il team **Strategia aziendale**.
 3.  Nella barra degli strumenti per il team fare clic su **File**.
 4.  Fare clic sui puntini di sospensione, quindi selezionare **Apri in SharePoint**.
@@ -300,7 +302,7 @@ Una volta creata, pubblicare la nuova etichetta. Se si accede come membro del gr
 
 Ecco la configurazione ottenuta per il team Strategia aziendale.
 
-![Configurazione per il team Strategia aziendale.](../media/highlyconfidential-team-config-dev-test.png) 
+![Configurazione per il team Strategia aziendale.](../../media/highlyconfidential-team-config-dev-test.png) 
 
 I file nella sezione dei documenti del sito di SharePoint Strategia aziendale sottostante sono assegnati all'etichetta di riservatezza Estremamente riservato e sono soggetti al criterio di prevenzione della perdita dei dati configurato. Inoltre, ai file può essere assegnata l'etichetta di riservatezza Strategia aziendale.    
   
