@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: I criteri di prevenzione della perdita dei dati del Centro sicurezza e conformità permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Office 365.
-ms.openlocfilehash: 8d87367f86d3fd0f9ec5aab19ccd191a1cd20f17
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 722afcb7bdebb6004d9a7ab365ac6038fe1d31a4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595423"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42076602"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -57,7 +57,7 @@ Con i criteri di prevenzione della perdita dei dati è possibile:
     
 È possibile creare e gestire i criteri di prevenzione della perdita dei dati nella pagina Prevenzione della perdita di dati nel Centro conformità e sicurezza di Office 365.
   
-![Pagina Prevenzione della perdita di dati nel Centro sicurezza e conformità di Office 365](media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Pagina Prevenzione della perdita di dati nel Centro sicurezza e conformità di Office 365](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
 ## <a name="what-a-dlp-policy-contains"></a>Contenuto di un criterio DLP
 
@@ -75,13 +75,13 @@ In un criterio DLP sono disponibili alcuni elementi di base:
   
 È possibile che si disponga di un criterio DLP che consente di rilevare la presenza di informazioni soggette ai moduli di conformità Health Insurance Portability and Accountability Act (HIPAA). Questo criterio di prevenzione della perdita dei dati consente di proteggere i dati HIPAA (il cosa) in tutti i siti di SharePoint Online e in tutti quelli di OneDrive for Business (il dove) rilevando i documenti che contengono informazioni riservate condivise con utenti esterni all'organizzazione (le condizioni), bloccando quindi l'accesso a tali documenti e inviando una notifica (le azioni). Questi requisiti vengono archiviati come singole regole e raggruppati come criteri di prevenzione della perdita dei dati per semplificare la gestione e la creazione di report.
   
-![Diagramma che mostra criterio di prevenzione della perita dei dati contenente posizioni e regole](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+![Diagramma che mostra criterio di prevenzione della perita dei dati contenente posizioni e regole](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
 ### <a name="locations"></a>Posizioni
 
 I criteri di prevenzione della perdita dei dati consentono di trovare e proteggere le informazioni riservate in tutto Office 365, indipendentemente dal fatto che si trovino in un sito di Exchange Online, SharePoint Online, OneDrive for Business o Microsoft Teams. È possibile scegliere di proteggere il contenuto in un messaggio di posta elettronica di Exchange, nei messaggi delle chat e dei canali di Microsoft Teams e in tutte le raccolte di SharePoint o OneDrive o di selezionare percorsi specifici per i criteri.
   
-![Opzioni per le posizioni in cui è possibile applicare i criteri di prevenzione della perdita dei dati](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+![Opzioni per le posizioni in cui è possibile applicare i criteri di prevenzione della perdita dei dati](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
  Se si sceglie di includere gruppi di distribuzione specifici in Exchange, i criteri DLP verranno applicati solo ai membri di quel gruppo. Analogamente, escludendo un gruppo di distribuzione si escluderanno tutti i membri di quel gruppo di distribuzione dalla valutazione dei criteri. È possibile scegliere di applicare un criterio ai membri delle liste di distribuzione, dei gruppi di distribuzione dinamici e dei gruppi di sicurezza. Una politica DLP non può contenere più di 50 inclusioni ed esclusioni.
 
@@ -95,7 +95,7 @@ Una regola contiene anche opzioni per informare gli utenti (con suggerimenti per
   
 Ecco i componenti di una regola, spiegati di seguito.
   
-![Sezioni dell'editor regole di prevenzione della perdita dei dati](media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
+![Sezioni dell'editor regole di prevenzione della perdita dei dati](../media/1859d504-b9c2-45ed-961b-a0092251acc2.png)
   
 #### <a name="conditions"></a>Condizioni
 
@@ -103,7 +103,7 @@ Le condizioni sono importanti perché determinano i tipi di informazioni desider
   
 Le condizioni si focalizzano sul **contenuto**, come i tipi di informazioni riservate desiderati, e sul **contesto**, come l'utente con cui viene condiviso il documento. È possibile usare le condizioni per assegnare azioni diverse a livelli di rischio diversi. Ad esempio, i contenuti riservati condivisi all'interno dell'organizzazione potrebbero essere caratterizzati da un livello di rischio inferiore rispetto ai contenuti riservati condivisi con utenti esterni all'organizzazione. 
   
-![Elenco che mostra le condizioni disponibili per i criteri di prevenzione della perdita dei dati](media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
+![Elenco che mostra le condizioni disponibili per i criteri di prevenzione della perdita dei dati](../media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
 Le condizioni disponibili a questo punto consentono di determinare se:
   
@@ -120,7 +120,7 @@ Le condizioni disponibili a questo punto consentono di determinare se:
 
 I criteri di prevenzione della perdita dei dati aiutano a proteggere le informazioni riservate definite come **tipo di informazioni riservate**. Office 365 include le definizioni pronte per l'uso di molti tipi comuni di informazioni riservate in diverse aree geografiche, ad esempio numeri di carta di credito, di conto corrente bancario, di carta di identità e di passaporto. 
   
-![Elenco dei tipi di informazioni riservate disponibili](media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
+![Elenco dei tipi di informazioni riservate disponibili](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
 Quando un criterio di prevenzione della perdita dei dati cerca un tipo di informazione riservata (ad esempio un numero di carta di credito), non effettua soltanto la ricerca di un codice a 16 cifre. Ogni tipo di informazioni riservate viene definito e rilevato utilizzando una combinazione dei seguenti elementi:
   
@@ -138,23 +138,23 @@ In questo modo, il rilevamento di prevenzione della perdita dei dati raggiunge u
 
 Quando un contenuto corrisponde a una condizione di una regola, è possibile applicare le azioni per proteggere automaticamente il contenuto.
   
-![Elenco delle azioni disponibili dei criteri di prevenzione della perdita dei dati](media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
+![Elenco delle azioni disponibili dei criteri di prevenzione della perdita dei dati](../media/8aef17fc-1e99-4ac7-adfc-0f2c9c1a0697.png)
   
 Con le azioni ora disponibili è possibile:
   
 - **Limitare l'accesso al contenuto** Per i contenuti dei siti, ciò significa che le autorizzazioni per il documento sono limitate per tutti tranne che per l'amministratore della raccolta siti principale, il proprietario del documento e la persona che lo ha modificato per ultima. Queste persone possono rimuovere le informazioni riservate dal documento o eseguire altri azioni correttive. Quando il documento è conforme, vengono automaticamente ripristinate le autorizzazioni originali. Se l'accesso è bloccato, il documento viene visualizzato con una speciale icona di suggerimento per i criteri nella raccolta del sito. 
     
-    ![Suggerimento per i criteri che segnala che l’accesso al documento è bloccato](media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+    ![Suggerimento per i criteri che segnala che l’accesso al documento è bloccato](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
     Per il contenuto dei messaggi di posta elettronica, questa azione blocca l'invio del messaggio. In base alla configurazione della regola di prevenzione della perdita dei dati, il mittente vedrà un rapporto di mancato recapito oppure, se la regola usa una notifica, un suggerimento per i criteri e/o una notifica tramite posta elettronica.
     
-    ![Avviso che i destinatari non autorizzati devono essere rimossi dal messaggio](media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+    ![Avviso che i destinatari non autorizzati devono essere rimossi dal messaggio](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### <a name="user-notifications-and-user-overrides"></a>Notifiche utente e criteri ignorati dall’utente
 
 Grazie alle notifiche e ai criteri ignorati è possibile informare gli utenti sui criteri di prevenzione della perdita dei dati e aiutarli a rimanere conformi senza compromettere la loro produttività. Se ad esempio un utente prova a condividere un documento contenente informazioni riservate, è possibile inviargli una notifica tramite posta elettronica e mostrargli un suggerimento per i criteri nel contesto della raccolta documenti, che gli consente di ignorare i criteri se giustificato da motivi aziendali.
   
-![Sezione Notifiche utente e Criteri ignorati dagli utenti dell'editor regole di prevenzione della perdita dei dati](media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
+![Sezione Notifiche utente e Criteri ignorati dagli utenti dell'editor regole di prevenzione della perdita dei dati](../media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
   
 Il messaggio di posta elettronica può informare l'utente che ha inviato, condiviso o modificato per ultimo il contenuto e, per il contenuto dei siti, l'amministratore della raccolta siti principale e il proprietario del documento. Inoltre, è possibile aggiungere o rimuovere a piacimento persone a cui inviare la notifica tramite posta elettronica.
   
@@ -170,7 +170,7 @@ Nella notifica di posta elettronica e nel suggerimento per i criteri viene spieg
   
 Ecco l'aspetto di un suggerimento per i criteri in un account di OneDrive for Business.
   
-![Suggerimento per i criteri per un documento in un account di OneDrive](media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
+![Suggerimento per i criteri per un documento in un account di OneDrive](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
  Per ulteriori informazioni sulle notifiche all'utente e i suggerimenti per i criteri nei criteri DLP, vedere [Utilizzare notifiche e suggerimenti per i criteri](use-notifications-and-policy-tips.md).
 
@@ -178,7 +178,7 @@ Ecco l'aspetto di un suggerimento per i criteri in un account di OneDrive for Bu
 
 Quando viene trovata una corrispondenza con una regola, è possibile inviare il report dell'evento al responsabile della conformità (o a chiunque si voglia) con i relativi dettagli. Il report include informazioni sull'elemento con cui è stata trovata una corrispondenza, sull'effettivo contenuto che ha soddisfatto la regola, oltre al nome dell'ultima persona che ha modificato il contenuto. Per i messaggi di posta elettronica, il report include anche il messaggio originale che corrisponde ai criteri di prevenzione della perdita dei dati, sotto forma di allegato.
   
-![Pagina per la configurazione di rapporti operazioni non consentite](media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+![Pagina per la configurazione di rapporti operazioni non consentite](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
   
 ## <a name="grouping-and-logical-operators"></a>Raggruppamento e operatori logici
 
@@ -202,13 +202,13 @@ Ad esempio, per identificare il contenuto soggetto all'Health Insurance Act (HIP
 
 All'interno di un gruppo è possibile scegliere se è necessario che sia soddisfatta una o tutte le condizioni del gruppo perché il contenuto corrisponda alla regola.
   
-![Gruppi con gli operatori all'interno dei gruppi](media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
+![Gruppi con gli operatori all'interno dei gruppi](../media/6a12f1e8-112d-48ee-9a73-82b3dd0542e7.png)
   
 ### <a name="adding-a-group"></a>Aggiunta di un gruppo
 
 È possibile aggiungere rapidamente un gruppo con proprie condizioni e un operatore all'interno.
   
-![Pulsante Aggiungi gruppo](media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
+![Pulsante Aggiungi gruppo](../media/5f72f292-d1f3-4f11-a911-a9f71e10abf6.png)
   
 ### <a name="choosing-the-operator-between-groups"></a>Scelta dell'operatore tra i gruppi
 
@@ -222,17 +222,17 @@ Ad esempio, il criterio predefinito **Stati Uniti - HIPAA** ha una regola che us
     
 - dal gruppo **Terminologia medica** (almeno una parola chiave ICD-9-CM **O** ICD-10-CM) 
     
-![Gruppi con l'operatore tra i gruppi](media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
+![Gruppi con l'operatore tra i gruppi](../media/354aa77f-569c-4847-9dfe-605ee2bb28d1.png)
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>Priorità in base alla quale vengono elaborate le regole
 
 Quando si creano regole in un criterio, a ogni regola viene assegnata una priorità nell'ordine di creazione, ovvero la regola creata per prima avrà la priorità più alta, la regola creata per seconda avrà la seconda priorità e così via. 
   
-![Regole in ordine di priorità](media/dlp-rules-in-priority-order.png)
+![Regole in ordine di priorità](../media/dlp-rules-in-priority-order.png)
   
 Dopo aver configurato più criteri di prevenzione della perdita dei dati, è possibile cambiare la priorità di uno o più criteri. Per farlo, selezionare un criterio, scegliere **Modifica criterio**e usare l'elenco **priorità** per specificare la priorità.
 
-![Impostare la priorità per un criterio](media/dlp-set-policy-priority.png)
+![Impostare la priorità per un criterio](../media/dlp-set-policy-priority.png)
 
 Quando il contenuto viene valutato a fronte delle regole, queste vengono elaborate in ordine di priorità. Se il contenuto corrisponde a più regole, le regole vengono elaborate in ordine di priorità e viene applicata l'azione più restrittiva. Ad esempio, se il contenuto corrisponde a tutte le regole seguenti, viene applicata la regola 3 perché è quella più restrittiva con la priorità più alta:
   
@@ -280,7 +280,7 @@ Per usare il numero di istanze per ottimizzare le regole, le indicazioni sono se
     
 In genere le azioni meno restrittive, come l'invio di notifiche all'utente, vengono usate in una regola con un numero di istanze inferiore, ad esempio 1-9. Le azioni più restrittive, come la limitazione dell'accesso al contenuto, senza consentire agli utenti di ignorare i criteri, vengono invece usate in una regola con un numero di istanze maggiore, ad esempio 10-qualsiasi.
   
-![Numero di istanze nell'editor di regole](media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
+![Numero di istanze nell'editor di regole](../media/e7ea3c12-72c5-4bb3-9590-c924c665e84d.png)
   
 ### <a name="match-accuracy"></a>Accuratezza della corrispondenza
 
@@ -312,7 +312,7 @@ Questi livelli di probabilità (o accuratezza della corrispondenza) possono esse
     
 Quindi, se per le carte di credito si vogliono creare due regole che si escludono a vicenda, una per l'accuratezza della corrispondenza del 65% e una per l'accuratezza della corrispondenza dell'85%, gli intervalli di accuratezza della corrispondenza risultano come segue. La prima regola rileva solo le corrispondenze dello schema del 65%. La seconda regola rileva le corrispondenze con **almeno una** corrispondenza dell'85% e **potrebbe avere** altre corrispondenze con livello di probabilità inferiore. 
   
-![Due regole con intervalli diversi per l'accuratezza della corrispondenza](media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
+![Due regole con intervalli diversi per l'accuratezza della corrispondenza](../media/21bdfe36-7a91-4347-8098-11809a92f9a4.png)
   
 Per questi motivi, le indicazioni per la creazione di regole con diverse accuratezze di corrispondenza sono:
   
@@ -335,7 +335,7 @@ Per ulteriori informazioni sulle etichette, vedere [Panoramica delle etichette d
   
 Dopo aver creato un'etichetta, è possibile usarla come condizione nei criteri di prevenzione della perdita dei dati. 
 
-![Etichette come condizione](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+![Etichette come condizione](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
 Ad esempio, questa operazione può essere utile perché:
   
@@ -364,13 +364,13 @@ Al contenuto che include informazioni riservate possono essere applicate diverse
     
 - I criteri di prevenzione della perdita dei dati possono applicare azioni di **protezione** al contenuto. Inoltre, prima di applicare queste azioni, i criteri di prevenzione della perdita dei dati possono richiedere che siano soddisfatte altre condizioni oltre alla presenza di una specifica etichetta nel contenuto. 
     
-![Diagramma delle funzionalità che possono applicarsi alle informazioni riservate](media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
+![Diagramma delle funzionalità che possono applicarsi alle informazioni riservate](../media/dd410f97-a3a3-455c-a1e9-7ed8ae6893d6.png)
   
 I criteri di prevenzione della perdita dei dati hanno capacità di rilevamento più complete rispetto a un'etichetta o ai criteri di conservazione applicati alle informazioni riservate. I criteri di prevenzione della perdita dei dati possono applicare azioni di protezione al contenuto con informazioni riservate. Se le informazioni riservate vengono rimosse, queste azioni di protezione vengono annullate alla successiva analisi del contenuto. Se invece viene applicato un criterio di conservazione o un'etichetta a un contenuto con informazioni riservate, si tratta di un'azione unica che non può essere annullata, anche se le informazioni riservate vengono rimosse.
   
 Usando questa etichetta come condizione nei criteri di prevenzione della perdita dei dati è possibile applicare azioni di conservazione e di protezione al contenuto con l'etichetta specificata. Un contenuto con un'etichetta viene gestito esattamente come un contenuto con informazioni riservate: un'etichetta e un tipo di informazioni riservate rappresentano proprietà usate per classificare il contenuto, quindi è possibile applicare azioni al contenuto specificato.
   
-![Diagramma dei criteri di prevenzione della perdita dei dati che usano un'etichetta come condizione](media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
+![Diagramma dei criteri di prevenzione della perdita dei dati che usano un'etichetta come condizione](../media/4538fd8f-fb74-4743-bc22-a5de33adfebb.png)
   
 ## <a name="simple-settings-vs-advanced-settings"></a>Impostazioni semplici e avanzate
 
@@ -388,7 +388,7 @@ Lo scenario di gran lunga più comune consiste nel creare criteri di prevenzione
   
 Per raggiungere facilmente questo scopo, quando si creano criteri di prevenzione della perdita dei dati è possibile scegliere **Usa le impostazioni semplici**. Queste impostazioni offrono tutto il necessario per implementare i criteri di prevenzione della perdita dei dati più comuni senza dover accedere all'editor di regole.
   
-![Opzioni dei criteri di prevenzione della perdita dei dati per le impostazioni semplici e avanzate](media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
+![Opzioni dei criteri di prevenzione della perdita dei dati per le impostazioni semplici e avanzate](../media/33c93824-ead5-43b6-9c3e-fd1630c92a7d.png)
   
 ### <a name="advanced-settings"></a>Impostazioni avanzate
 
@@ -398,7 +398,7 @@ Le impostazioni avanzate presentano l'editor di regole, che offre il controllo c
   
 Per passare rapidamente a una sezione, fare clic su un elemento nella barra di spostamento superiore dell'editor di regole per passare alla sezione seguente.
   
-![Barra di spostamento superiore dell'editor di regole di prevenzione della perdita dei dati](media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
+![Barra di spostamento superiore dell'editor di regole di prevenzione della perdita dei dati](../media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
   
 ## <a name="dlp-policy-templates"></a>Modelli dei criteri di prevenzione della perdita dei dati
 
@@ -406,7 +406,7 @@ Il primo passaggio per la creazione dei criteri di prevenzione della perdita dei
   
 Un modello di criterio di prevenzione della perdita dei dati preconfigurato consente di rilevare tipi specifici di informazioni riservate, ad esempio i dati HIPAA, PCI-DSS, quelli della norma Gramm-Leach-Biley Act o specifiche informazioni personali locali. Per semplificare la ricerca e la protezione dei tipi comuni di informazioni riservate, i modelli di criteri inclusi in Office 365 includono già i tipi più comuni necessari per iniziare.
   
-![Elenco dei modelli di criteri di prevenzione della perdita dei dati con lo stato attivo sul modello degli Stati Uniti Patriot Act](media/791b2403-430b-4987-8643-cc20abbd8148.png)
+![Elenco dei modelli di criteri di prevenzione della perdita dei dati con lo stato attivo sul modello degli Stati Uniti Patriot Act](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
 L'organizzazione può anche avere requisiti specifici personalizzati, nel qual caso è possibile creare criteri di prevenzione della perdita dei dati da zero scegliendo l'opzione **Criteri personalizzati**. I criteri personalizzati sono vuoti e non contengono regole predefinite. 
   
@@ -422,15 +422,15 @@ Se si creano criteri DLP con un forte impatto potenziale, si consiglia di attene
     
 3. **Avviare l'applicazione dei criteri** in modo che le azioni nelle regole siano applicate e i contenuti protetti. Continuare a eseguire il monitoraggio dei report di prevenzione della perdita dei dati e dei rapporti operazioni non consentite oppure delle notifiche per essere certi di ottenere i risultati desiderati. 
     
-![Opzioni per l'utilizzo della modalità di test e attivazione dei criteri](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+![Opzioni per l'utilizzo della modalità di test e attivazione dei criteri](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
 È possibile disattivare un criterio di prevenzione della perdita dei dati in qualsiasi momento, disabilitando anche tutte le regole al suo interno. Tuttavia, ogni regola può essere disattivata anche singolarmente, regolandone lo stato nell'editor di regole.
   
-![Opzioni per disattivare una regola in un criterio](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+![Opzioni per disattivare una regola in un criterio](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
 È anche possibile modificare la priorità di più regole in un criterio. Per farlo, aprire un criterio per modificarlo. In una riga per una regola, scegliere i puntini di sospensione (**...**), quindi scegliere un'opzione, ad esempio **Sposta giù** o **Porta su ultimo**.
 
-![Impostare la priorità delle regole](media/dlp-set-rule-priority.png)
+![Impostare la priorità delle regole](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>Report di prevenzione della perdita dei dati
 
@@ -446,7 +446,7 @@ Con i report dei criteri di prevenzione della perdita dei dati, si ottengono inf
     
 Inoltre, è possibile utilizzare i report DLP per ottimizzare i criteri DLP, quando vengono eseguiti.
   
-![Dashboard Report nel Centro sicurezza e conformità](media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
+![Dashboard Report nel Centro sicurezza e conformità](../media/6d741252-a0ce-4429-95ba-6c857ecc9a7e.png)
   
 ## <a name="how-dlp-policies-work"></a>Funzionamento dei criteri DLP
 
@@ -480,7 +480,7 @@ Per questo motivo, i criteri di prevenzione della perdita dei dati controllano f
  
 Mentre vengono aggiunti o modificati documenti nei siti, il motore di ricerca esamina il contenuto in modo che possa essere cercato in seguito. Nel frattempo, il contenuto viene anche analizzato per rilevare informazioni riservate e verificare se vengono condivise. Tutte le informazioni riservate trovate vengono archiviate in sicurezza nell'indice di ricerca, a cui può accedere solo il team di conformità, e non utenti ordinari. Ogni criterio di prevenzione della perdita dei dati attivato viene eseguito in background (in modo asincrono), controllando frequentemente la ricerca di eventuali contenuti che corrispondono a un criterio e applicando le azioni per proteggerli da divulgazioni involontarie.
   
-![Diagramma che illustra come i criteri di prevenzione della perdita dei dati valutano il contenuto in modo asincrono](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
+![Diagramma che illustra come i criteri di prevenzione della perdita dei dati valutano il contenuto in modo asincrono](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 <!-- conflict with a DLP policy is bad wording --> Infine, i documenti possono essere in conflitto con un criterio DLP ma possono anche diventare conformi a tale criterio. Ad esempio, se una persona aggiunge numeri di carta di credito a un documento, è possibile che un criterio DLP blocchi l'accesso a tale documento automaticamente. Tuttavia, se in un secondo momento l'utente elimina le informazioni riservate, l'azione (in questo caso, di blocco) viene automaticamente annullata durante la successiva valutazione del documento rispetto al criterio.
   

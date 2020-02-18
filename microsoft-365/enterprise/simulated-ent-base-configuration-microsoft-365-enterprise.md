@@ -1,5 +1,7 @@
 ---
 title: Configurazione di base dell'organizzazione simulata per Microsoft 365
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilizzare questa guida al lab di test per creare un ambiente di testing dell'organizzazione simulata per Microsoft 365 Enterprise.
-ms.openlocfilehash: d279ea4eaea1e167b18f48db3c7484885ed48fea
-ms.sourcegitcommit: c5ca71d6feb0f033b50ccd4de816fd59b0925007
+ms.openlocfilehash: 66d62677843843476baffac3f295e41eda71be69
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39831699"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084125"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>La configurazione di base per l'organizzazione simulata
 
@@ -31,14 +33,14 @@ In questo articolo vengono fornite istruzioni dettagliate per creare un ambiente
 - Un abbonamento di valutazione o a pagamento a Microsoft 365 E5.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita da tre macchine virtuali in una rete virtuale Azure (DC1 APP1 e CLIENT1).
  
-![La configurazione di base per l'organizzazione simulata](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![La configurazione di base per l'organizzazione simulata](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 È possibile utilizzare l'ambiente risultante per testare le funzionalità di [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise), con altre [guide al lab di test](m365-enterprise-test-lab-guides.md) o quelle disponibili.
 
-![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Fare clic [qui](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
+> Fare clic [qui](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli relativi alla guida al lab test di Microsoft 365 Enterprise.
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>Fase 1: creare una rete intranet simulata
 
@@ -63,7 +65,7 @@ Dopo aver letto con le istruzioni, fare clic su **Distribuisci in Azure** nella 
 
 Ecco la configurazione una volta completato il modello.
 
-![La rete intranet simulata nei servizi infrastruttura di Azure.](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![La rete intranet simulata nei servizi infrastruttura di Azure.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 ### <a name="method-2-build-your-simulated-intranet-with-azure-powershell"></a>Metodo 2: creare la rete intranet simulata con Azure PowerShell
 
@@ -230,7 +232,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 Questa è la configurazione corrente.
   
-![Passaggio 1 della configurazione di base per l'organizzazione simulata](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
+![Passaggio 1 della configurazione di base per l'organizzazione simulata](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
 #### <a name="step-2-configure-app1"></a>Passaggio 2: configurare APP1
 
@@ -285,7 +287,7 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 
 Questa è la configurazione corrente.
   
-![Passaggio 2 della configurazione di base per l'organizzazione simulata](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Passaggio 2 della configurazione di base per l'organizzazione simulata](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 #### <a name="step-3-configure-client1"></a>Passaggio 3: configurare CLIENT1.
 
@@ -349,7 +351,7 @@ Successivamente, verificare che sia possibile accedere alle risorse Web e di con
     
 Questa è la configurazione corrente.
   
-![Passaggio 3 della configurazione di base per l'organizzazione simulata](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![Passaggio 3 della configurazione di base per l'organizzazione simulata](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
 
 ## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>Fase 2: creare gli abbonamenti a Microsoft 365 E5
@@ -393,7 +395,7 @@ A questo punto, l'ambiente di test dispone di:
     
 Questa è la configurazione finale.
   
-![Fase 2 della configurazione di base per l'organizzazione simulata](media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Fase 2 della configurazione di base per l'organizzazione simulata](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
 A questo punto è possibile sperimentare le funzionalità aggiuntive di [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   

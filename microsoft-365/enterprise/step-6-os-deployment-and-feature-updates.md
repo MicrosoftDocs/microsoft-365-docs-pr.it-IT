@@ -1,5 +1,7 @@
 ---
 title: Passaggio 6 - Distribuzione del sistema operativo e aggiornamenti delle funzionalità
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sulle opzioni per la distribuzione del sistema operativo e gli aggiornamenti delle funzionalità.
-ms.openlocfilehash: 7da7c9ade2be43e8c60726bafd69cc7939b7bddc
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112680"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085225"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Passaggio 6: distribuzione del sistema operativo e aggiornamenti delle funzionalità
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Step 6" height="144" width="144" /></td>
 <td><p><strong>Passaggio 6: distribuzione del sistema operativo e aggiornamenti delle funzionalità</strong></p>
 <p>La distribuzione basata sulla sequenza di attività è usata per automatizzare su vasta scala, la distribuzione in fasi per installazioni bare metal, aggiornamento del PC e sostituzione del PC. Le sequenze di attività di aggiornamento consentono inoltre di restare al passo con gli aggiornamenti semestrali principali. E Windows Autopilot è una novità che modernizza il processo di acquisizione di un nuovo PC.</p></td>
-<td><a href="https://aka.ms/ddev6" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev6" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-19.png" alt="Step 6" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -81,7 +83,7 @@ L'aggiornamento sul posto utilizza la configurazione delle finestre. Il motore d
 
 [Convalida pre-aggiornamento di Windows 10 con setup.exe](https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/)
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-3.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-3.png)
 
 Lo scenario dell'aggiornamento sul posto può essere usato per eseguire la migrazione a Windows 10 da versioni legacy di Windows e per l'upgrade da versioni precedenti di Windows 10. Quando Installazione di Windows completa l'upgrade, la sequenza attività può continuare a essere eseguita e ad aggiornare applicazioni come Office, a sostituire driver e ad applicare impostazioni di personalizzazione. Allo stesso modo, è possibile utilizzare la sequenza di attività di upgrade per eseguire attività e controlli pre-installazione prima di completare l'upgrade.
 
@@ -93,7 +95,7 @@ Lo scenario dell'aggiornamento sul posto può essere usato per eseguire la migra
 
 Durante la pianificazione della distribuzione, si definiscono i computer delle distribuzioni bare metal, refresh, replace e i percorsi di upgrade. L'approccio consigliato in questo caso è quello di utilizzare la distribuzione a fasi nelle raccolte di macchine simili. In questo modo, è possibile convalidare compatibilità, recapito e automazione, accettazione da parte dell'utente, consumo della larghezza di banda e altri fattori prima di aumentare l'entità della distribuzione.
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-4.png)
 
 ### <a name="recommended-tools-microsoft-endpoint-configuration-manager-current-branch-and-the-microsoft-deployment-toolkit"></a>Strumenti consigliati: Microsoft Endpoint Configuration Manager (Current Branch) e Microsoft Deployment Toolkit
 
@@ -103,7 +105,7 @@ Indipendentemente dal tipo di distribuzione scelto, è necessario assicurarsi ch
 
   - Un'altra opzione di distribuzione comune è il software gratuito **[Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit)** (MDT) che viene generalmente usato da piccole e medie organizzazioni per la distribuzione del sistema operativo. Serve pochissima infrastruttura. MDT si integra con Windows Deployment Services (WDS) per l'avvio di rete. Supporta tutti e quattro i tipi di distribuzione e l'installazione di applicazioni, driver e impostazioni. Ovviamente, MDT può anche essere integrato con Configuration Manager.
 
-![](media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
+![](../media/step-6-os-deployment-and-feature-updates-media/step-6-os-deployment-and-feature-updates-media-5.png)
 
 ### <a name="windows-autopilot"></a>Windows Autopilot
 

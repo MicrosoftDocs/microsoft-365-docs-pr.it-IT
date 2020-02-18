@@ -1,6 +1,8 @@
 ---
 title: Infrastruttura IT ed esigenze di business di Contoso
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere la struttura di base dell'infrastruttura IT locale di Contoso e in che modo Microsoft 365 Enterprise ha soddisfatto le sue esigenze di business.
-ms.openlocfilehash: d98f401ae4a39e3e04b5840e8f76c1e3e1b1a24d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 3cee0f3e6cd20b0d93038595cdab9270c8eb30aa
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40802071"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42068388"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastruttura IT ed esigenze di business di Contoso
 
@@ -30,7 +32,7 @@ Contoso utilizza un’infrastruttura IT locale principalmente centralizzata, con
 
 La Figura 1 mostra l'ufficio di una sede con centri dati delle applicazioni, una rete perimetrale e Internet.
 
-![Infrastruttura IT esistente di Contoso](./media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Infrastruttura IT esistente di Contoso](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 **Figura 1: Infrastruttura IT esistente di Contoso**
  

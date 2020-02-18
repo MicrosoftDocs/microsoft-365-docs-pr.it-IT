@@ -1,5 +1,7 @@
 ---
 title: Passaggio 4 - Migrazione delle impostazioni e dei file utente
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,25 +15,25 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come eseguire la migrazione di file e impostazioni degli utenti.
-ms.openlocfilehash: e1def35a631f8a90ee699c6ed7129216015e5182
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112570"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085290"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Passaggio 4: migrazione delle impostazioni e dei file utente
 
 Spostare i file e le impostazioni degli utenti ai PC nuovi o aggiornati è un processo critico; non è possibile sbagliare. È possibile eseguire manualmente la migrazione di ogni PC o scegliere uno dei tanti modi per automatizzare il processo. Qualsiasi sia il metodo di migrazione scelto, devono essere messe in conto tre considerazioni principali: il trasferimento dei file degli utenti, le impostazioni e la gestione di Windows 10 Start e dei layout della barra delle applicazioni.
 
-![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
+![](../media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
 <td><p><strong>Passaggio 4: impostazioni e file utente</strong></p>
 <p>Durante l'aggiornamento o la sostituzione dei PC, è possibile risparmiare tempo automatizzando il backup e il ripristino dello stato utente. Le nuove opzioni per la sincronizzazione dei file sul cloud consentono di applicare la sincronizzazione per utente delle cartelle desktop, documenti e immagini in OneDrive per l'accesso semplificato ai file da nuove installazioni di Windows.</p></td>
-<td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev4" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </thead>
 </table>
 

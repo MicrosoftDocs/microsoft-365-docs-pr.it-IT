@@ -1,6 +1,8 @@
 ---
 title: Siti di SharePoint per dati altamente regolamentati
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/31/2019
@@ -11,14 +13,15 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: ''
 description: Creare un sito del team di SharePoint sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: f8ccda85256e1f590f80a9302897e2950c59d154
-ms.sourcegitcommit: 0ceb79a633f7004e82b80e69b6f7a7329ccec7ff
+ms.openlocfilehash: c74a2bc59a6ef9d16ecd0dfbed06d577bd98649b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "38699746"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085061"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Siti di SharePoint per dati altamente regolamentati
 
@@ -59,7 +62,7 @@ La tabella seguente associa i requisiti di questo scenario a una funzionalità d
 
 Ecco una configurazione di esempio per un sito di SharePoint sicuro.
 
-![I siti di SharePoint per lo scenario dei dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![I siti di SharePoint per lo scenario dei dati altamente regolamentati](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 Questo scenario richiede di aver già implementato:
 
@@ -68,9 +71,9 @@ Questo scenario richiede di aver già implementato:
 
 Le fasi seguenti illustrano come progettare, configurare e facilitare l'adozione dei siti di SharePoint per dati altamente regolamentati.
 
-<a name="poster"></a> Per un riepilogo di una pagina per questo scenario, vedere il [poster Siti di SharePoint per dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf).
+<a name="poster"></a> Per un riepilogo di una pagina per questo scenario, vedere il [poster Siti di SharePoint per dati altamente regolamentati](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf).
 
-[![Poster Siti di SharePoint per dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](./media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
+[![Poster Siti di SharePoint per dati altamente regolamentati](../media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
 È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
@@ -170,11 +173,11 @@ Usare le istruzioni disponibili [qui](https://docs.microsoft.com/microsoft-365/c
 
 Ecco la configurazione risultante che usa una sottoetichetta dell'etichetta per dati altamente regolamentati.
 
-![Siti di SharePoint per lo scenario dei dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
+![Siti di SharePoint per lo scenario dei dati altamente regolamentati](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration.png)
 
 Ecco un esempio di un utente che ha applicato la sottoetichetta a un file archiviato nel sito.
 
-![I siti di SharePoint per lo scenario dei dati altamente regolamentati](./media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
+![I siti di SharePoint per lo scenario dei dati altamente regolamentati](../media/teams-sharepoint-online-sites-highly-regulated-data/end-to-end-configuration-example-file.png)
 
 
 ## <a name="phase-3-drive-user-adoption"></a>Fase 3: Incoraggiare l'adozione da parte degli utenti

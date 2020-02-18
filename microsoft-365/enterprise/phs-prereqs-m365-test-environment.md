@@ -1,9 +1,11 @@
 ---
 title: Identità e prerequisiti di accesso dei dispositivi per la sincronizzazione dell’hash delle password in ambiente di testing di Microsoft 365
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un ambiente Microsoft 365 per testare l'identità e l’accesso del dispositivo con i prerequisiti per l'autenticazione di sincronizzazione hash delle password.
-ms.openlocfilehash: d5feddd7ddddd0ad8891873a654627a0e7ba4fa3
-ms.sourcegitcommit: 9ee873c6a2f738a0c99921e036894b646742e706
+ms.openlocfilehash: 125d8c6e1e954a05edd630c8f4d55848fa3314b3
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38673352"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42066034"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Identità e prerequisiti di accesso dei dispositivi per la sincronizzazione dell’hash delle password in ambiente di testing di Microsoft 365
 
@@ -44,7 +46,7 @@ Le fasi principali della configurazione dell'ambiente di testing sono otto:
 Seguire le istruzioni contenute in [Sincronizzazione hash delle password](password-hash-sync-m365-ent-test-environment.md).
 Di seguito è riportata la configurazione risultante.
 
-![L'organizzazione simulata con ambiente di testing per la sincronizzazione hash delle password](media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![L'organizzazione simulata con ambiente di testing per la sincronizzazione hash delle password](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
  
 ## <a name="phase-2-configure-azure-ad-seamless-single-sign-on"></a>Fase 2: configurare l’accesso Single Sign-on facile di Azure AD
 
@@ -86,7 +88,7 @@ Testare l'autenticazione a più fattori solo per l'account Utente 2.
 
 ## <a name="phase-7-enable-azure-ad-identity-protection"></a>Fase 7: abilitare Azure AD Identity Protection
 
-Seguire le istruzioni contenute nella [Fase 2 della guida al lab di test per Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-enable-and-use-azure-ad-identity-protection). 
+Seguire le istruzioni contenute nella [Fase 2 della guida al lab di test per Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
 ## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Fase 8: abilitare l'autenticazione moderna per Exchange Online e Skype for Business Online
 

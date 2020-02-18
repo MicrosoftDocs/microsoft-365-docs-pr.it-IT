@@ -1,5 +1,7 @@
 ---
 title: Proteggere i file nei team con etichette di conservazione e prevenzione della perdita dei dati
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Sintesi: applicare etichette di conservazione e criteri di prevenzione della perdita dei dati ai file nei team con vari livelli di protezione delle informazioni.'
-ms.openlocfilehash: 89320a074d5d52062268a7585081849ac42d2025
-ms.sourcegitcommit: 33242c260439de0d8db41247e9414913f24adc22
+ms.openlocfilehash: 94d8a02d0ea88fa8a05cd6a2c95a2db866d72fad
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925814"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42083403"
 ---
 # <a name="protect-files-in-teams-with-retention-labels-and-dlp"></a>Proteggere i file nei team con etichette di conservazione e prevenzione della perdita dei dati
 
@@ -114,7 +116,7 @@ Seguire questa procedura per applicare le etichette di conservazione alle cartel
     
 Di seguito è riportata la configurazione risultante.
   
-![Etichette di conservazione per i quattro tipi di siti di SharePoint sottostanti.](../media/retention-labels.png)
+![Etichette di conservazione per i quattro tipi di siti di SharePoint sottostanti.](../../media/retention-labels.png)
   
 ## <a name="dlp-policies-for-your-underlying-sharepoint-sites"></a>Criteri di prevenzione della perdita dei dati per i siti di SharePoint sottostanti
 
@@ -165,7 +167,7 @@ Seguire questa procedura per configurare un criterio della prevenzione della per
     
 Di seguito è riportata la configurazione risultante per i team sensibili.
   
-![Criteri di prevenzione della perdita dei dati per il team sensibile con l'etichetta di conservazione Sensibile](../media/retention-labels-sensitive-dlp.png)
+![Criteri di prevenzione della perdita dei dati per il team sensibile con l'etichetta di conservazione Sensibile](../../media/retention-labels-sensitive-dlp.png)
   
 Successivamente, seguire questa procedura per configurare un criterio della prevenzione della perdita dei dati che impedisce agli utenti la condivisione di un documento in un sito di SharePoint sottostante all'esterno dell'organizzazione.
   
@@ -211,7 +213,7 @@ Successivamente, seguire questa procedura per configurare un criterio della prev
     
 Di seguito è riportata la configurazione risultante per i team estremamente riservati.
   
-![Criteri di prevenzione della perdita dei dati per un team estremamente riservato con l'etichetta di conservazione Estremamente riservato](../media/retention-labels-highly-confidential-dlp.png)
+![Criteri di prevenzione della perdita dei dati per un team estremamente riservato con l'etichetta di conservazione Estremamente riservato](../../media/retention-labels-highly-confidential-dlp.png)
   
 ## <a name="next-step"></a>Passaggio successivo
 

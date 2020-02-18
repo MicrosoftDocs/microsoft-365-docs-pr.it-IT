@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 1: creare e proteggere gli account di amministratore globale'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Gli account di amministratore globale devono avere un trattamento speciale per proteggerli dal compromesso delle credenziali.
-ms.openlocfilehash: 1a0274967798e6c2ba6048e5a2cfd70e73cb0671
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801831"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067343"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Passaggio 1: creare e proteggere gli account di amministratore globale
 
-![Fase 2 - Identità](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Fase 2 - Identità](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-global-admin"></a>
 ## <a name="protect-global-administrator-accounts"></a>Proteggere gli account amministratore globale
@@ -57,7 +59,7 @@ I risultati di questa sezione sono:
 
 |||
 |:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Per eseguire questa procedura in un ambiente di testing, vedere la Guida al lab di test [Proteggere gli account amministratore globale](protect-global-administrator-accounts-microsoft-365-test-environment.md). |
+|![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Per eseguire questa procedura in un ambiente di testing, vedere la Guida al lab di test [Proteggere gli account amministratore globale](protect-global-administrator-accounts-microsoft-365-test-environment.md). |
 |||
 
 Come checkpoint provvisorio, è possibile vedere i [criteri uscita](identity-exit-criteria.md#crit-identity-global-admin) per questa sezione.
@@ -101,7 +103,7 @@ Per ulteriori informazioni, vedere l’argomento [Gestione degli accessi con pri
 
 |||
 |:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Per eseguire questa procedura in un ambiente di testing, vedere la [Guida al lab di test gestione degli accessi privilegiati](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
+|![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Per eseguire questa procedura in un ambiente di testing, vedere la [Guida al lab di test gestione degli accessi privilegiati](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
 |||
 
 Come checkpoint provvisorio, vedere i [criteri uscita](identity-exit-criteria.md#crit-identity-pam) che corrispondono a questo passaggio.
@@ -110,5 +112,5 @@ Come checkpoint provvisorio, vedere i [criteri uscita](identity-exit-criteria.md
 
 |||
 |:-------|:-----|
-|![Passaggio 2](./media/stepnumbers/Step2.png)| [Proteggere le password](identity-secure-your-passwords.md) |
+|![Passaggio 2](../media/stepnumbers/Step2.png)| [Proteggere le password](identity-secure-your-passwords.md) |
 

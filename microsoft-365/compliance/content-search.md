@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usare lo strumento Ricerca contenuto nel centro conformità di Office 365 o Microsoft 365 per cercare contenuto in cassette postali, siti di SharePoint Online, account di OneDrive, Microsoft Teams, gruppi di Office 365, gruppi di Yammer e conversazioni di Skype for Business. È possibile usare query di ricerca con parole chiave e condizioni di ricerca per limitare i risultati della ricerca. È quindi possibile visualizzare in anteprima ed esportare i risultati della ricerca. La Ricerca contenuto è anche uno strumento efficace per cercare contenuto correlato a una richiesta dell’interessato GDPR.
-ms.openlocfilehash: 8de78da9328d7f8c0a76edab5703821bdb0e6099
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d9fdf5359538209d0793211632979fae1b332d13
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595723"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42078419"
 ---
 # <a name="content-search-in-office-365"></a>Ricerca contenuto in Office 365
 
@@ -52,9 +52,9 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
     
 2. Fare clic su **Ricerca**\>**Ricerca contenuto**.
     
-3. Nella pagina **Ricerca** fare clic sulla freccia accanto a ![Icona Aggiungi](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nuova ricerca**. 
+3. Nella pagina **Ricerca** fare clic sulla freccia accanto a ![Icona Aggiungi](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nuova ricerca**. 
     
-    ![Elenco a discesa Nuova ricerca](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
+    ![Elenco a discesa Nuova ricerca](../media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
     È possibile scegliere una delle seguenti opzioni:
     
@@ -70,7 +70,7 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
     
 5. In **Query di ricerca** specificare gli elementi seguenti:
     
-    ![Specificare parole chiave, condizioni e posizioni in cui eseguire la ricerca](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
+    ![Specificare parole chiave, condizioni e posizioni in cui eseguire la ricerca](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
    - **Parole chiave da cercare**: digitare una query di ricerca nella casella **Parole chiave**. È possibile specificare parole chiave, proprietà dei messaggi come le date di invio o ricezione o proprietà dei documenti come il nome file o la data dell'ultima modifica apportata. È anche possibile usare query più complesse che usano un operatore booleano, ad esempio **AND**, **OR**, **NOT** o **NEAR**. È inoltre possibile cercare informazioni sensibili (ad esempio numeri di codice fiscale) nei documenti o cercare documenti condivisi esternamente. Se si lascia vuota la casella delle parole chiave, nei risultati della ricerca verrà incluso tutto il contenuto disponibile nelle posizioni specificate.
     
@@ -89,7 +89,7 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
     
       - **Percorsi specifici**: usare questa opzione per eseguire ricerche in percorsi di contenuto specifici. È possibile eseguire una ricerca in tutti i percorsi di contenuto per un servizio Office 365 specifico, ad esempio in tutte le cassette postali di Exchange o in tutti i siti di SharePoint, oppure eseguire una ricerca dei contenuti in percorsi specifici inclusi nei servizi di Office 365 visualizzati. 
     
-        ![Interfaccia utente per scegliere i percorsi di contenuti in cui eseguire la ricerca](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![Interfaccia utente per scegliere i percorsi di contenuti in cui eseguire la ricerca](../media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
          È inoltre possibile aggiungere gruppi di distribuzione all'elenco di cassette postali di Exchange in cui eseguire la ricerca. Per i gruppi di distribuzione, la ricerca viene eseguita nelle cassette postali dei membri del gruppo. Non sono supportati i gruppi di distribuzione dinamici.
     
@@ -106,13 +106,13 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
     
 Per accedere nuovamente alla ricerca contenuto o accedere ad altre ricerche contenuto elencate nella pagina **Ricerca contenuto**, selezionare la ricerca e quindi fare clic su **Apri**. 
   
-Per cancellare i risultati o creare un'altra ricerca, fare clic su ![Icona Aggiungi](media/O365-MDM-CreatePolicy-AddIcon.gif) **Nuova ricerca**. 
+Per cancellare i risultati o creare un'altra ricerca, fare clic su ![Icona Aggiungi](../media/O365-MDM-CreatePolicy-AddIcon.gif) **Nuova ricerca**. 
   
 ## <a name="preview-search-results"></a>Visualizza in anteprima i risultati della ricerca
 
 Sono disponibili due impostazioni di configurazione per l'anteprima dei risultati della ricerca. Dopo aver eseguito una nuova ricerca o aperto una ricerca esistente, fare clic su **Singoli risultati** per visualizzare le impostazioni di anteprima seguenti: 
   
-![Impostazioni di visualizzazione dell'anteprima risultati della ricerca](media/83519477-1c85-4442-8886-481f186fd758.png)
+![Impostazioni di visualizzazione dell'anteprima risultati della ricerca](../media/83519477-1c85-4442-8886-481f186fd758.png)
   
 1. **Visualizzare l'anteprima risultati automaticamente**: questa opzione visualizza i risultati della ricerca dopo l'esecuzione di una ricerca.
     
@@ -157,7 +157,7 @@ Per esportare i risultati della ricerca:
   
 1. Nella pagina **Ricerca contenuto**, fare clic sulla ricerca per la quale si desidera esportare i risultati. 
     
-2. Nella pagina a comparsa fare clic su ![Icona Esporta risultati ricerca](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png)**Altro** e quindi fare clic su **Esporta risultati**. Si può anche esportare un report dei risultati della ricerca.
+2. Nella pagina a comparsa fare clic su ![Icona Esporta risultati ricerca](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png)**Altro** e quindi fare clic su **Esporta risultati**. Si può anche esportare un report dei risultati della ricerca.
     
 3. Completare le sezioni nella pagina a comparsa **Esporta risultati**. Assicurarsi di usare la barra di scorrimento per visualizzare tutte le opzioni di esportazione. 
     
@@ -217,21 +217,21 @@ Tenere presente quanto segue quando si usa l'elenco di parole chiave per creare 
     
     **Non valido**
     
-    ![Modo non valido per formattare un elenco di parole chiave (incollando l'elenco nella casella delle parole chiave)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![Modo non valido per formattare un elenco di parole chiave (incollando l'elenco nella casella delle parole chiave)](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
     **Valido**
     
-    ![Modo valido per formattare un elenco di parole chiave (selezionando la casella di controllo e quindi incollando l'elenco)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![Modo valido per formattare un elenco di parole chiave (selezionando la casella di controllo e quindi incollando l'elenco)](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
 - È anche possibile preparare un elenco di parole o frasi chiave in un file di Excel o in un file di testo normale, quindi copiare e incollare l'elenco nell'elenco di parole chiave. A questo scopo, è necessario selezionare la casella di controllo **Mostra elenco di parole chiave**. Quindi, fare clic sulla prima riga dell'elenco di parole chiave e incollare l'elenco. Ogni riga del file di testo o di Excel verrà incollata in righe separate nell'elenco di parole chiave. 
     
 - Dopo aver creato una query con l'elenco di parole chiave, è consigliabile verificare la sintassi della query di ricerca per verificare che la query di ricerca sia quella prevista. Nella query di ricerca visualizzata in **Query** nel riquadro dei dettagli, le parole chiave sono separate dal testo **(c:s)**. Questo indica che le parole chiave sono connesse da un operatore logico con funzionalità simili all'operatore **OR**. Analogamente, se la query di ricerca include condizioni, le parole chiave e le condizioni sono separate dal testo **(c:c)**. Questo indica che le parole chiave sono connesse alle condizioni da un operatore logico con funzionalità simili all'operatore **AND**. Ecco un esempio della query di ricerca, visualizzata nel riquadro dei dettagli, restituita quando si usa l'elenco di parole chiave e una condizione. 
     
-    ![Esempio della query creata quando si usa l'elenco di parole chiave e una condizione](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![Esempio della query creata quando si usa l'elenco di parole chiave e una condizione](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
 - Durante l'esecuzione di una ricerca di contenuto, Office 365 controlla automaticamente la query di ricerca per individuare caratteri non supportati e operatori booleani che potrebbero non essere scritti in maiuscolo. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o la restituzione di risultati indesiderati. Per altre informazioni sui caratteri non supportati controllati, vedere [Verificare la presenza di errori nella query Ricerca contenuto](check-your-content-search-query-for-errors.md).
     
-- Se si dispone di una query di ricerca che contiene parole chiave per i caratteri non italiani (come i caratteri cinesi), è possibile fare clic su **Lingua - paese/area geografica della query**![Icona Lingua - paese/area geografica della query Ricerca contenuto](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) e selezionare un valore di codice per la lingua - paese per la ricerca. La lingua/area geografica predefinita è neutrale. Come è possibile stabilire se è necessario cambiare l'impostazione della lingua per una ricerca contenuto? Se si è certi che i percorsi di contenuto contengano i caratteri non italiani che si stanno cercando, ma la ricerca non restituisce risultati, l'impostazione della lingua potrebbe essere la causa. 
+- Se si dispone di una query di ricerca che contiene parole chiave per i caratteri non italiani (come i caratteri cinesi), è possibile fare clic su **Lingua - paese/area geografica della query**![Icona Lingua - paese/area geografica della query Ricerca contenuto](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) e selezionare un valore di codice per la lingua - paese per la ricerca. La lingua/area geografica predefinita è neutrale. Come è possibile stabilire se è necessario cambiare l'impostazione della lingua per una ricerca contenuto? Se si è certi che i percorsi di contenuto contengano i caratteri non italiani che si stanno cercando, ma la ricerca non restituisce risultati, l'impostazione della lingua potrebbe essere la causa. 
   
 ### <a name="searching-onedrive-accounts"></a>Eseguire una ricerca negli account di OneDrive
 
@@ -299,17 +299,17 @@ Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei 
 
   Nei risultati della ricerca, i riepiloghi delle riunioni vengono identificati come **Riunione** nel **campo Tipo** e i riepiloghi delle chiamate vengono identificati come **Chiamata**. Inoltre, le conversazioni che fanno parte di un canale di Teams e le chat di 1xN vengono identificate come **Messaggistica istantanea** nel campo **Tipo**.
   
-  ![Le riunioni di Teams, le chiamate e le chat di 1xN sono identificate nel campo Tipo](media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Le riunioni di Teams, le chiamate e le chat di 1xN sono identificate nel campo Tipo](../media/O365-ContentSearch-Teams-MessageKind.png)
 
 - È possibile usare la proprietà di posta elettronica **Tipologia** o la condizione di ricerca **Tipo di messaggio** per la ricerca specifica di contenuto in Teams. 
   
   - Per usare la proprietà **Tipologia** come parte della query di ricerca con parole chiave, nella casella **Parole chiave** di una query di ricerca, digitare `kind:microsoftteams`.
 
-    ![Usare kind:microsoftteams nella casella delle parole chiave](media/O365-ContentSearch-Teams-Keywords.png)
+    ![Usare kind:microsoftteams nella casella delle parole chiave](../media/O365-ContentSearch-Teams-Keywords.png)
   
   - Per usare una condizione di ricerca, aggiungere la condizione **Tipo di messaggio** e usare il valore `microsoftteams`. 
 
-    ![Utilizzare la condizione Tipo di messaggio con il valore microsoftteams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
+    ![Utilizzare la condizione Tipo di messaggio con il valore microsoftteams.](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
 Le condizioni sono connesse logicamente alla query con parole chiave dall'operatore **AND**. Ciò significa che un elemento deve corrispondere sia alla query con parole chiave che alle condizioni di ricerca che devono essere restituite nei risultati della ricerca. Per altre informazioni, vedere la sezione Linee guida per l’uso di condizioni” in [Query con parole chiave e condizioni di ricerca per Ricerca contenuto](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
   
@@ -326,15 +326,15 @@ Le condizioni sono connesse logicamente alla query con parole chiave dall'operat
   
     È ad esempio possibile usare la query di ricerca seguente per ottenere messaggi e complimenti di Yammer:
 
-    ![Usare la proprietà ItemClass per cercare elementi di Yammer](media/YammerContentSearch1.png)
+    ![Usare la proprietà ItemClass per cercare elementi di Yammer](../media/YammerContentSearch1.png)
   
   - In alternativa, è possibile usare la condizione di posta elettronica **Tipo** e selezionare **Messaggi di Yammer** per ottenere elementi di Yammer. Ad esempio, la query di ricerca seguente restituirà tutti gli elementi della conversazione di Yammer che contengono la parola chiave "riservato". 
 
-    ![Usare la scheda condizione Tipo per cercare elementi della conversazione di Yammer](media/YammerContentSearch2.png)
+    ![Usare la scheda condizione Tipo per cercare elementi della conversazione di Yammer](../media/YammerContentSearch2.png)
 
 ### <a name="searching-inactive-mailboxes"></a>Eseguire una ricerca in una cassetta postale inattiva
 
-È possibile eseguire ricerche nelle cassette postali inattive in una ricerca contenuto. Per ottenere un elenco delle cassette postali inattive nell'organizzazione, eseguire il comando `Get-Mailbox -InactiveMailboxOnly` in PowerShell di Exchange Online. In alternativa, è possibile passare a **Governance delle informazioni**\>**Conservazione** nel Centro sicurezza e conformità e quindi fare clic su **Altro**![Puntini di sospensione della barra di spostamento](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\>**Cassette postali inattive**.
+È possibile eseguire ricerche nelle cassette postali inattive in una ricerca contenuto. Per ottenere un elenco delle cassette postali inattive nell'organizzazione, eseguire il comando `Get-Mailbox -InactiveMailboxOnly` in PowerShell di Exchange Online. In alternativa, è possibile passare a **Governance delle informazioni**\>**Conservazione** nel Centro sicurezza e conformità e quindi fare clic su **Altro**![Puntini di sospensione della barra di spostamento](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\>**Cassette postali inattive**.
   
 Ecco alcuni aspetti da tenere presenti quando si eseguono ricerche nelle cassette postali inattive.
 

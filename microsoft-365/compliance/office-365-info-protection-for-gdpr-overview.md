@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Panoramica di Office 365 Information Protection per GDPR. Informazioni su come individuare, classificare, proteggere e monitorare i dati personali.
-ms.openlocfilehash: 079ff7b7dab099f289bbd0366bba00d5ecf55b80
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597863"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42071170"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Panoramica di Office 365 Information Protection per RGPD
 
@@ -50,7 +50,7 @@ Il primo passo per la conformità RGPD consiste nel valutare se tale regolamento
 
 Il punteggio di conformità offre strumenti per tenere traccia, implementare e gestire i controlli per consentire all'organizzazione di raggiungere la conformità con diversi standard, tra cui GDPR.
 
-![Usare il punteggio di conformità e Compliance Manager per verificare i requisiti normativi e tenere traccia dello stato di avanzamento](Media/Overview-image1.png)
+![Usare il punteggio di conformità e Compliance Manager per verificare i requisiti normativi e tenere traccia dello stato di avanzamento](../media/Overview-image1.png)
 
 Per ulteriori informazioni, vedere [punteggio di conformità](compliance-score.md).
 
@@ -65,7 +65,7 @@ Individuare i dati personali nel proprio ambiente soggetti all'RGPD. Usare Ricer
 - Ottimizzare i tipi di dati riservati e altre query per trovare tutti i dati personali nel proprio ambiente.
 
 ![ Usare Ricerca contenuto e le tipologie di informazioni sensibili per trovare i dati personali
-](Media/Overview-image2.png)
+](../media/Overview-image2.png)
 
 Le tipologie di informazioni sensibili permettono di riconoscere in modo automatico informazioni specifiche come i numeri di previdenza sociale e di carta di credito. Questo articolo include una serie di tipologie da usare come punto di partenza. Molte altre tipologie di informazioni sensibili saranno presto disponibili per i dati personali nei paesi dell'Unione Europea.
 
@@ -76,7 +76,7 @@ Per ulteriori informazioni, vedere [Cercare e trovare i dati personali](search-f
 
 Alcune funzionalità utilizzate per la protezione delle informazioni in Office 365 possono anche essere usate per proteggere i dati riservati nelle altre applicazioni SaaS.
 
-![Classificare, proteggere e monitorare i dati personali](Media/Overview-image3.png)
+![Classificare, proteggere e monitorare i dati personali](../media/Overview-image3.png)
 
 L'illustrazione seguente viene descritta ulteriormente nella sezione (dalla fase 3 alla fase 5).
 

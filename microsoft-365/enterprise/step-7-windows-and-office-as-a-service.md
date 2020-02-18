@@ -1,5 +1,7 @@
 ---
 title: Passaggio 7 - Manutenzione di Windows e Office
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -13,23 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come prepararsi per la manutenzione di Windows e Office nel proprio ambiente.
-ms.openlocfilehash: 28c66bbd723aaf4f3823e582e7b9b98daea69c27
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: d47abca74f7fea4c49f9aa28a93cd4afe40a0981
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112255"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42085175"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Passaggio 7: manutenzione di Windows e Office
 
-![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-1.png)
+![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
 <td><p><strong>Passaggio 7: manutenzione di Windows e Office</strong></p>
 <p>Windows 10 e Office 365 ProPlus aggiungono continuamente nuove funzionalità per continuare a offrire esperienze utente e protezione con le ultime novità. Ottenere informazioni su come restare al passo con gli aggiornamenti mensili e semestrali, su come funziona il nuovo modello di manutenzione e sugli strumenti e opzioni disponibili.</p></td>
-<td><a href="https://aka.ms/ddev7" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
 
@@ -119,7 +121,7 @@ Usando una tecnologia chiamata "Express Updates" in Windows e Binary Delta Compr
 
 Windows Update per le aziende e Windows Server Update Services hanno supportato gli Express Updates per un lungo periodo, tuttavia ora è stato esteso il supporto a Microsoft Endpoint Configuration Manager (Current Branch) in modo che possa utilizzare anche gli Express Updates.
 
-![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
+![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-3.png)
 
 #### <a name="binary-delta-compression"></a>Binary Delta Compression
 
@@ -135,7 +137,7 @@ Come descritto nella sezione relativa alla preparazione di dispositivi e applica
 
 Per quanto riguarda gli strumenti, è possibile utilizzare le impostazioni dei criteri con Windows Update per le aziende, la gestione degli aggiornamenti software tramite Microsoft Endpoint Configuration Manager (Current Branch), Windows Server Update Services (WSUS) o i criteri di aggiornamento impostati da Microsoft Intune. Se si è preoccupati per la larghezza di banda della rete, vedere il Passaggio 2: conformità di directory e rete per informazioni sulle opzioni per ridurre il traffico di rete tramite Ottimizzazione recapito e altre tecnologie di memorizzazione nella cache peer-to-peer.
 
-![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
+![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
 [Canale semestrale per Windows](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
@@ -147,7 +149,7 @@ L'installazione degli aggiornamenti di funzionalità più grandi tramite routine
 
 Una sequenza di attività consente di creare controlli personalizzati o attività PRIMA dell'installazione dell'aggiornamento delle funzionalità e consente di eseguire attività personalizzate DOPO che l'installazione dell'aggiornamento è stata completata. Le attività di post-aggiornamento potrebbero includere servizi di sospensione temporanea se necessario durante l'aggiornamento, installazione sostituzione di driver, aggiornamenti di applicazioni o barra delle applicazioni e impostazioni Start personalizzate di Windows 10.
 
-![](media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-5.png)
+![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-5.png)
 
 Se l'utente usa già le sequenze di attività per migrare i computer Windows 7 su Windows 10 e conosce bene questi strumenti, ne avrà il massimo controllo. Anche se è possibile utilizzare una singola sequenza di attività per l'intero aggiornamento, è abbastanza comune che le organizzazioni utilizzino due sequenze di attività. Una sequenza di attività per accertarsi che i PC siano pronti per l'aggiornamento, che precede in modo silenzioso tutti i file di installazione richiesti sui computer di destinazione e uno per eseguire l'aggiornamento effettivo. Questo approccio garantisce un impatto minimo sulla produttività dell'utente.
 

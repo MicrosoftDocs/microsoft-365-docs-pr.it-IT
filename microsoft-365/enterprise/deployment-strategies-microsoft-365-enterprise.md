@@ -1,6 +1,8 @@
 ---
 title: Strategie di distribuzione dell'infrastruttura di base di Microsoft 365 per le aziende
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 09/24/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su alcune modalità di distribuzione delle fasi dell'infrastruttura di base di Microsoft 365 per le aziende.
-ms.openlocfilehash: 354ce1a30b91f602049143dc0e93fe01629e6b04
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801891"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067808"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Strategie di distribuzione dell'infrastruttura di base di Microsoft 365 per le aziende
 
@@ -51,7 +53,7 @@ Il set di utenti nell'implementazione pilota non è uguale a quello dell'impleme
 
 Per illustrare queste definizioni, in questo articolo si usano le immagini seguenti: 
 
-![Immagini che illustrano le definizioni dell'implementazione pilota e utente](./media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
+![Immagini che illustrano le definizioni dell'implementazione pilota e utente](../media/deployment-strategies-microsoft-365-enterprise/definitions.png) 
 
 L'ombreggiatura nell'immagine relativa all'implementazione utente indica la percentuale di implementazione (da 0% a 100%) nell'organizzazione usando un approccio strutturato o metodico, ad esempio per gruppi, reparti o aree geografiche.
 
@@ -76,7 +78,7 @@ Con una distribuzione seriale si implementa completamente una fase, ovvero si co
 
 Questo diagramma di Gantt mostra una distribuzione in serie semplificata delle fasi 2-6 dell'infrastruttura di base per Microsoft 365 per le aziende.
 
-![Distribuzione seriale delle fasi 2-6 dell'infrastruttura di base](./media/deployment-strategies-microsoft-365-enterprise/serial.png) 
+![Distribuzione seriale delle fasi 2-6 dell'infrastruttura di base](../media/deployment-strategies-microsoft-365-enterprise/serial.png) 
  
 Per semplificare la discussione e l'esempio, si presuppone che ogni fase e ogni segmento di distribuzione all'interno di ogni fase richieda lo stesso tempo.
 
@@ -110,7 +112,7 @@ Lo svantaggio di questa strategia di distribuzione è che la distribuzione compl
 
 Per questa strategia di distribuzione si avvia l'implementazione pilota della fase successiva durante l'ultima parte dell'implementazione utente della fase corrente. Ecco la distribuzione delle fasi 2-6 quando l'implementazione pilota viene avviata quando l'implementazione utente della fase precedente sta per terminare.
 
-![Distribuzione in parallelo delle fasi 2-6 con implementazione utente senza sovrapposizione](./media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
+![Distribuzione in parallelo delle fasi 2-6 con implementazione utente senza sovrapposizione](../media/deployment-strategies-microsoft-365-enterprise/parallel1.png) 
  
 Il risultato finale è che l'implementazione utente per la fase corrente viene completata in tutta l'organizzazione prima dell'avvio di quella successiva. Gli utenti che non sono inclusi nelle implementazioni pilota non devono gestire le implementazioni di più fasi contemporaneamente, ma le implementazioni pilota vengano eseguite in parallelo con quelle utente.
 
@@ -145,7 +147,7 @@ Per questa strategia di distribuzione si avviano:
 
 Ecco un confronto semplificato tra le diverse strategie di distribuzione.
 
-![Distribuzione in parallelo delle fasi 2-6 con implementazione utente con sovrapposizione](./media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
+![Distribuzione in parallelo delle fasi 2-6 con implementazione utente con sovrapposizione](../media/deployment-strategies-microsoft-365-enterprise/parallel2.png) 
 
 Il risultato finale è il seguente:
 
@@ -178,7 +180,7 @@ Il vantaggio di questa strategia di distribuzione dell’infrastruttura di base 
 
 Per le organizzazioni di dimensioni inferiori che possono comprimere le fasi 2-6 in un unico segmento di distribuzione, la distribuzione risultante è simile alla seguente:
  
-![Infrastruttura predisposta in precedenza e implementazione della configurazione end-to-end](./media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
+![Infrastruttura predisposta in precedenza e implementazione della configurazione end-to-end](../media/deployment-strategies-microsoft-365-enterprise/up-front.png) 
 
 Il reparto IT configura l'infrastruttura per le fasi 2-6, quindi esegue l'implementazione per gli utenti pilota per verificare la funzionalità end-to-end. Ad esempio, gli utenti pilota ottengono contemporaneamente tutte le funzionalità seguenti:
 

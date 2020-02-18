@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 5: Usare i gruppi per la gestione'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: È possibile usare i gruppi per automatizzare la gestione di alcune attività amministrative.
-ms.openlocfilehash: 49cdb0c3d394cb423d0565d7093f1b32b6661158
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 215bb84cbb0cedc2f1320372ba8239cd51d07c98
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801711"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067273"
 ---
 # <a name="step-5-use-groups-for-management"></a>Passaggio 5: Usare i gruppi per la gestione
 
-![Fase 2 - Identità](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Fase 2 - Identità](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-self-service-groups"></a>
 ## <a name="allow-users-to-create-and-manage-their-own-groups"></a>Consentire agli utenti di creare e gestire i propri gruppi
@@ -66,7 +68,7 @@ I risultati di questa sezione sono:
 
 |||
 |:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida al lab di test: automatizzare le licenze e l'appartenenza ai gruppi](automate-licenses-group-membership-microsoft-365-test-environment.md) |
+|![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida al lab di test: automatizzare le licenze e l'appartenenza ai gruppi](automate-licenses-group-membership-microsoft-365-test-environment.md) |
 |||
 
 Come checkpoint provvisorio, è possibile vedere i [criteri di uscita](identity-exit-criteria.md#crit-identity-dyn-groups) per questa sezione.
@@ -97,11 +99,11 @@ I risultati di questa sezione sono:
 
 |||
 |:-------|:-----|
-|![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida al lab di test: automatizzare le licenze e l'appartenenza ai gruppi](automate-licenses-group-membership-microsoft-365-test-environment.md) |
+|![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Guida al lab di test: automatizzare le licenze e l'appartenenza ai gruppi](automate-licenses-group-membership-microsoft-365-test-environment.md) |
 |||
 
 Come checkpoint provvisorio, è possibile vedere i [criteri uscita](identity-exit-criteria.md#crit-identity-group-license) per questa sezione.
 
 |||
 |:-------|:-----|
-|![Passaggio 6](./media/stepnumbers/Step6.png)| [Configurare la governance delle identità](identity-configure-identity-governance.md) |
+|![Passaggio 6](../media/stepnumbers/Step6.png)| [Configurare la governance delle identità](identity-configure-identity-governance.md) |

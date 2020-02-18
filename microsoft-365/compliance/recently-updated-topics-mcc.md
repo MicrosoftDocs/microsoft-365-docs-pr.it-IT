@@ -18,12 +18,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Analogamente alle funzionalità del centro conformità di Microsoft 365, il contenuto della guida è sempre in evoluzione. Stiamo creando continuamente nuovi articoli, aggiornando quelli esistenti ed eseguendo modifiche in base ai commenti e suggerimenti. Scopri cosa c'è di nuovo e aggiornato in questo mese.
-ms.openlocfilehash: b285b51ca20e2822be9d8193d33e634418adbeb3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 36edcbc7106710ff62bc1a176fb76a17fd7076a6
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081624"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101246"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Aggiornamenti recenti a Microsoft 365 content Compliance
 
@@ -31,6 +31,160 @@ Analogamente alle funzionalità del centro conformità di Microsoft 365, il cont
 
 > [!TIP]
 > Per rimanere al di sopra degli aggiornamenti delle funzionalità più recenti nel centro conformità Microsoft 365, vedere [What ' s New in the microsoft 365 Compliance Center](whats-new.md).
+
+## <a name="january-2020"></a>Gennaio 2020
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+[Report avanzati di eDiscovery (anteprima)](advanced-ediscovery-reports.md) (nuovo)<br>Informazioni dettagliate sui report aggregati a livello di organizzazione su casi, depositari, origini dati e comunicazioni.
+
+[Dashboard avanzato di eDiscovery per i set di riesami (anteprima)](advanced-ediscovery-dashboard.md) (nuovo)<br>Informazioni dettagliate sulla nuova funzionalità di analisi per l'identificazione delle tendenze o delle statistiche chiave in un set di revisione.
+
+### <a name="auditing"></a>Controllo
+
+[Gestire il controllo delle cassette postali](enable-mailbox-auditing.md#more-information) (aggiornato)<br>È stato chiarito che solo gli eventi di controllo delle cassette postali per gli utenti di E5 sono disponibili nelle ricerche del registro di controllo nel centro sicurezza & conformità di Office 365 o utilizzando l'API di gestione delle attività di Office 365. Sono inoltre disponibili informazioni dettagliate sull'utilizzo dei cmdlet di Exchange Online per recuperare i registri di controllo della cassetta postale per gli utenti senza licenze E5.
+
+[Eseguire una ricerca nel log di controllo nel centro sicurezza & Compliance](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities) (aggiornato)<br>Aggiunta della descrizione per l'attività "esecuzione di query di ricerca" nella tabella attività file e cartelle di SharePoint.
+
+### <a name="compliance-offerings"></a>Offerte per la conformità
+
+[Framework di sicurezza delle informazioni ENISA](offering-enisa.md) (nuovo)<br>Nuova offerta che delinea la conformità ENISA di Microsoft.
+
+Articoli aggiornati per chiarire il supporto per Microsoft Managed Desktop:<br>
+[Attestazione Cloud Security Alliance (CSA) STAR](offering-CSA-STAR-Attestation.md)<br>
+[Certificazione Cloud Security Alliance (CSA) STAR](offering-CSA-Star-Certification.md)<br>
+[Gestione dei servizi informatici ISO/IEC 20000-1:2011 ](offering-ISO-20000-1-2011.md)<br>
+[Standard di gestione della continuità aziendale ISO 22301:2012](offering-ISO-22301.md)<br>
+[Standard di gestione della sicurezza delle informazioni ISO/IEC 27001:2013](offering-ISO-27001.md)<br>
+[Codice di condotta in materia di controllo della sicurezza informatica ISO/IEC 27017:2015 ](offering-ISO-27017.md)<br>
+[Code of Practice per la protezione dei dati personali nel cloud ISO/IEC 27018](offering-ISO-27018.md)<br>
+[ISO/IEC 27701 Privacy Information Management System (PIMS)](offering-iso-27701.md)<br>
+[ISO 9001:2015 Quality Management Systems Standards](offering-ISO-9001.md)<br>
+[Service Organization Controls (SOC)](offering-SOC.md)
+
+### <a name="compliance-score-and-compliance-manager"></a>Punteggio di conformità e Compliance Manager
+
+[Punteggio di conformità Microsoft (anteprima)](compliance-score.md) (aggiornato)<br>Vari aggiornamenti, tra cui informazioni sui modelli preconfigurati per Brazil LGPD, SOC 1 e SOC 2; Descrizione migliorata dei gruppi; nuovo collegamento nella parte superiore dell'articolo per visualizzare rapidamente le novità del Punteggio di conformità.
+
+[Calcolo del Punteggio di conformità Microsoft (anteprima)](compliance-score-methodology.md#how-compliance-score-continuously-assesses-controls) (aggiornato)<br>Chiarimento del fatto che Secure Score alimenta la funzionalità di monitoraggio continuo del Punteggio di conformità.
+
+[Note sulla versione di Microsoft Compliance Score (Preview)](compliance-score-release-notes.md) (aggiornato)<br>Riprogettato per visualizzare le nuove informazioni all'inizio dell'articolo (in particolare nuovi modelli per le valutazioni).
+
+[Configurazione del Punteggio di conformità Microsoft (anteprima)](compliance-score-setup.md) (aggiornata)<br>È stata aggiunta una nuova sezione su come configurare gli aggiornamenti automatici dei punteggi sicuri e le linee guida migliorate per filtrare la visualizzazione del dashboard per gruppi.
+
+[Collaborare con Microsoft Compliance Manager (anteprima)](working-with-compliance-manager.md) (aggiornato)<br>Informazioni consigliate per la creazione e l'utilizzo di gruppi e nuove istruzioni per l'abilitazione degli aggiornamenti del Punteggio sicuro a livello di azione.
+
+### <a name="content-search-and-core-ediscovery"></a>Ricerca di contenuto e eDiscovery di base
+
+[Pensionamento degli strumenti legacy di eDiscovery](legacy-ediscovery-retirement.md) (nuovo)<br>Informazioni dettagliate sul pensionamento dei eDiscovery sul posto, delle stive sul posto e del cmdlet Search-Mailbox in Exchange Online e il pensionamento di Office 365 Advanced eDiscovery v 1.0.
+
+[Migrare le ricerche e le esenzioni di eDiscovery legacy al centro conformità di Microsoft 365](migrate-legacy-eDiscovery-searches-and-holds.md) (nuovo)<br>Linee guida su come eseguire la migrazione delle ricerche e delle esenzioni eDiscovery sul posto dall'interfaccia di amministrazione di Exchange al centro conformità di Microsoft 365.
+
+[Utilizzare lo strumento di esportazione di eDiscovery di Office 365 in Microsoft Edge](configure-edge-to-export-search-results.md) (nuovo)<br>Informazioni dettagliate sulla configurazione della nuova versione di Edge per esportare i risultati della ricerca.
+
+[Query di parole chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md#special-characters) (aggiornata)<br>Aggiunta della sezione relativa ai caratteri speciali in una query di ricerca.
+
+[Gestire i casi di eDiscovery](ediscovery-cases.md#optional-step-11-delete-a-case) (aggiornato)<br>È stato aggiunto un nuovo passaggio facoltativo relativo all'eliminazione dei casi e al punto chiave che *tutti* gli appigli associati al caso devono essere *eliminati* prima che il caso possa essere eliminato.
+
+[Cercare ed eliminare i messaggi di posta elettronica](search-for-and-delete-messages-in-your-organization.md#step-3-delete-the-message) (aggiornato)<br>Dato il pensionamento imminente del cmdlet Search-Mailbox, è stato sostituito **Search-Mailbox-DeleteContent** con **New-ComplianceSearchAction-Purge** nel passaggio per l'eliminazione di un elemento. Prossimamente-aggiunta di uno script di esempio che esegue il loop del comando Purge in soluzione alternativa al limite di eliminazione di 10 elementi del cmdlet New-ComplianceSearchAction.
+
+### <a name="data-connectors"></a>Connettori dati
+
+[Configurare un connettore per l'importazione di dati HR](import-hr-data.md) (nuovi)<br>Informazioni dettagliate sull'impostazione di un connettore di dati HR (Human Resources) per importare i dati HR. Supporta la nuova soluzione di gestione dei rischi Insider.
+
+[Archiviazione dei dati di terze parti](archiving-third-party-data.md) (aggiornato)<br>I connettori di dati per Facebook, Instant Bloomberg, LinkedIn e Twitter sono stati ufficialmente rilasciati alla disponibilità generale.
+
+### <a name="insider-risk-management-preview"></a>Gestione dei rischi Insider (Preview)
+
+Nuovi articoli per supportare la versione di anteprima della soluzione di gestione dei rischi Insider.<br>
+[Gestione dei rischi insider in Microsoft 365 (anteprima)](insider-risk-management.md)<br>
+[Informazioni introduttive sulla gestione dei rischi Insider (Preview)](insider-risk-management-configure.md)<br>
+[Criteri di gestione dei rischi Insider (Preview)](insider-risk-management-policies.md)<br>
+[Avvisi relativi alla gestione dei rischi Insider (anteprima)](insider-risk-management-alerts.md)<br>
+[Casi di gestione dei rischi Insider (Preview)](insider-risk-management-cases.md)<br>
+[Esploratore del contenuto di gestione dei rischi Insider (anteprima)](insider-risk-management-content-explorer.md)<br>
+[Utenti di gestione dei rischi Insider (anteprima)](insider-risk-management-users.md)<br>
+[Modelli di avviso per la gestione dei rischi Insider (anteprima)](insider-risk-management-notices.md)<br>
+
+### <a name="mrm-in-exchange-online"></a>Gestione record di messaggistica in Exchange Online
+
+[Inserire una cassetta postale in attesa di conservazione](https://docs.microsoft.com/en-us/Exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold#difference-between-elcprocessingdisabled-and-retentionholdenabled) (aggiornata)<br>Aggiunta di una nuova sezione che confronta le proprietà delle cassette postali di ElcProcessingDisabled e RetentionHoldEnabled e su come influiscono sull'elaborazione dell'Assistente cartelle gestite.
+
+### <a name="records-management"></a>Gestione dei record
+
+[Panoramica delle recensioni sulla disposizione](disposition-reviews.md#permissions-for-disposition) (aggiornate)<br>Risolto un problema di supporto di lunga data chiarendo che il ruolo di log di controllo di sola visualizzazione deve essere assegnato nell'interfaccia di amministrazione di Exchange.
+
+### <a name="sensitivity-labels"></a>Etichette di riservatezza
+
+[Creare e configurare le etichette di riservatezza e i relativi criteri](create-sensitivity-labels.md) (nuovo)<br>Passaggi e flusso consigliato per creare/configurare/pubblicare etichette di riservatezza. Sono inoltre disponibili informazioni dettagliate sulle impostazioni aggiuntive che richiedono PowerShell, tra cui un esempio per la configurazione di un'etichetta per lingue diverse.
+
+Informazioni [sulle etichette di riservatezza](sensitivity-labels.md) (aggiornate)<br>Precedentemente ' Overview of Sensitivity labels ', questo articolo è stato revisionato per offrire una migliore esperienza di lettura, screenshot aggiornati, chiarimenti per le sottoetichette e le marcature visive e reimpostare le aspettative per attendere fino a 24 ore anziché "entro un'ora".
+
+[Utilizzare le etichette di riservatezza con Microsoft teams, i gruppi di Office 365 e i siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md#change-site-and-group-settings-for-a-label) (aggiornato)<br>Per i commenti e suggerimenti dei clienti, sono state aggiunte istruzioni dettagliate su PowerShell per modificare le impostazioni del sito e del gruppo di un'etichetta.
+
+[Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (Public Preview)](sensitivity-labels-sharepoint-onedrive-files.md) (aggiornato)<br>Vari aggiornamenti, tra cui un video incorporato, chiarimenti per le limitazioni e informazioni su come il comportamento di SharePoint non cambia se si usa "Tieni la propria chiave" (HYOK).
+
+[Utilizzare le etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) (aggiornate)<br>Sono state aggiunte informazioni su come modificare il canale di aggiornamento di Office e iscriversi a anteprime private se si desidera testare nuove funzionalità.
+
+[Problemi noti relativi alle etichette di riservatezza in Office](https://support.office.com/en-us/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc) (aggiornato)<br>Sono stati aggiunti nuovi problemi, tra cui le etichette di sensibilità che non applicano la crittografia possono essere rimosse con l'ispezione dei documenti e i problemi relativi alle indicazioni visive, se sostituiscono quelle impostate dal client di Azure Information Protection (Classic).
+
+## <a name="december-2019"></a>Dicembre 2019
+
+### <a name="communication-compliance-and-supervision-policies"></a>Conformità alla comunicazione e criteri di supervisione
+
+Criteri di riferimento e di supervisione [delle caratteristiche di conformità di comunicazione](communication-compliance-feature-reference.md) [in Office 365](supervision-policies.md) (aggiornato)<br>È stato chiarito che i valori di ricerca per il messaggio e gli allegati devono essere separati da virgole anziché da linee nelle procedure guidate dei criteri.
+
+### <a name="compliance-offerings"></a>Offerte per la conformità
+
+[Securities and Exchange Commission: Regulation Systems Compliance and Integrity (sci)](offering-sec-reg-sci.md) (nuovo)<br>Articolo sulla nuova offerta che delinea la conformità FANTASCIENTIFICA di Microsoft per Azure.
+
+[Controlli organizzazione del servizio (SOC)](offering-SOC.md#frequently-asked-questions) (aggiornato)<br>Risposte alle domande frequenti per il processo di certificazione per chiarire le informazioni sui controlli e le certificazioni di Microsoft.
+
+### <a name="compliance-score-and-compliance-manager"></a>Punteggio di conformità e Compliance Manager
+
+[Microsoft Compliance Score (Preview)](compliance-score.md#templates) e [Microsoft Compliance Manager](compliance-manager-overview.md#templates) (aggiornato)<br>Sono stati aggiunti collegamenti di riferimento per due modelli appena rilasciati in Score compliance e Compliance Manager: ISO 27701:2019 e IRAP/Australian Government ISM (Preview).
+
+### <a name="content-search-and-core-ediscovery-cases"></a>Ricerca di contenuto e casi di eDiscovery di base
+
+[Ricerca di contenuto in Office 365](content-search.md#searching-yammer-groups) e [gestire i casi di eDiscovery](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case) (aggiornato)<br>È ora possibile utilizzare la ricerca contenuto e la ricerca di eDiscovery per trovare contenuto nei gruppi di Yammer.
+
+### <a name="pst-import-service"></a>Servizio di importazione PST
+
+[Utilizzare il caricamento di rete per importare i file PST dell'organizzazione in Office 365](use-network-upload-to-import-pst-files.md#before-you-begin) (aggiornato)<br>Aggiunta della raccomandazione che i file PST caricati nel percorso di archiviazione di Azure non siano superiori a 20 GB per impedire la limitazione delle prestazioni.
+
+### <a name="sensitivity-labels"></a>Etichette di riservatezza
+
+Informazioni [sulle etichette di riservatezza](sensitivity-labels.md#what-label-policies-can-do) (aggiornate)<br>Per i commenti e suggerimenti del cliente, è stato chiarito che il testo di giustificazione fornito dagli utenti attualmente non passa a Label Analytics per la revisione dell'amministratore, ma se è installato il client di etichettatura unificata di Azure Information Protection, passa a Azure Information Protection Analytics.
+
+[Utilizzare le etichette di riservatezza con Microsoft teams, i gruppi di Office 365 e i siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md) (aggiornato)<br>Diversi aggiornamenti, tra cui la correzione del requisito del modulo di Azure AD PowerShell e come installarlo/aggiornarlo (per feedback dei clienti), nuovi comandi per sincronizzare le etichette, nuove istruzioni e avvisi per la gestione delle etichette, la risoluzione dei problemi aggiuntivi e la modalità di disattivazione dell'anteprima.
+
+[Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (Public Preview)](sensitivity-labels-sharepoint-onedrive-files.md) (aggiornato)<br>Per i commenti e suggerimenti dei clienti, dettagli chiarificati per l'installazione e l'aggiornamento di SharePoint Online Management Shell.
+
+[Utilizzare le etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md) (aggiornate)<br>Chiarificazioni per la disabilitazione del client di etichettatura unificata di Azure Information Protection e su come convertire i modelli di protezione in etichette di riservatezza.
+
+## <a name="november-2019"></a>Novembre 2019
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+[Correzione degli errori di un singolo elemento](single-item-error-remediation.md) (nuovo)<br>Vengono descritte le nuove funzionalità che consentono ai responsabili di eDiscovery di visualizzare i metadati dei file che hanno un errore di elaborazione e di correggere l'errore direttamente nel set di revisione.
+
+### <a name="compliance-score"></a>Punteggio di conformità
+
+[Microsoft Compliance Score (Preview) domande frequenti](compliance-score-faq.md) (nuovo)<br>Domande e risposte sul punteggio di conformità, inclusi l'accesso e l'installazione, la relazione con Compliance Manager e il Punteggio sicuro e l'utilizzo con prodotti non Microsoft.
+
+[Collaborare con Microsoft Compliance Manager (Preview)](working-with-compliance-manager.md) e le [Note sulla versione per Compliance Manager (Preview)](compliance-manager-release-notes.md#secure-score) (aggiornato)<br>Sono stati aggiunti chiarimenti nei seguenti articoli sulla modalità con cui l'integrazione completa con il Punteggio sicuro richiede circa una settimana quando le organizzazioni prima distribuiscono Microsoft 365 o Office 365.
+
+### <a name="content-search"></a>Ricerca contenuto
+
+[Utilizzare lo strumento di esportazione di eDiscovery di Office 365 in Microsoft Edge](configure-edge-to-export-search-results.md) (nuovo)<br>Istruzioni su come abilitare il supporto ClickOnce in Edge (che non è più abilitato per impostazione predefinita), in modo da poter esportare i risultati della ricerca utilizzando il browser Edge.
+
+### <a name="holds"></a>Blocchi
+
+[Come identificare il tipo di blocco posizionato su una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold) (aggiornato)<br>Sono stati aggiunti dettagli sulla proprietà della cassetta postale ' DelayReleaseHoldApplied ' impostata su true quando viene rimossa un'esenzione da una cassetta postale.
+
+### <a name="supervision-in-office-365"></a>Supervisione in Office 365
+
+[Configurare i criteri di supervisione in Office 365](configure-supervision-policies.md#step-2-make-supervision-available-in-your-organization-required) (aggiornato)<br>Istruzioni del passaggio 2 aggiornate per la nuova esperienza utente e le autorizzazioni di ruolo chiarificate.
 
 ## <a name="october-2019"></a>Ottobre 2019
 

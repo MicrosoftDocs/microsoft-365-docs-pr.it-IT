@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È anche possibile usare le etichette di conservazione per implementare una soluzione di gestione dei record per Microsoft 365.
-ms.openlocfilehash: d10b47ccf85493f22d9ef5bdfa0e36e4e954c8a7
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: 27f680bf2acf844618f133b074faf6f5ec3f7e90
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957171"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42072557"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -69,11 +69,11 @@ Le etichette di conservazione vengono create nel Centro conformità Microsoft 36
 
 Rendere disponibili le etichette di conservazione agli utenti dell'organizzazione in modo che possano classificare il contenuto è un processo in due passaggi. Il primo consiste nel creare le etichette di conservazione, il secondo nel pubblicarle nelle posizioni scelte. Quando si pubblicano etichette di conservazione, vengono incluse in criteri di etichetta di conservazione.
   
-![Diagramma di ruoli e attività per le etichette](media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
+![Diagramma di ruoli e attività per le etichette](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
   
 Le etichette di conservazione sono blocchi predefiniti indipendenti e riutilizzabili che vengono inclusi in uno o più criteri di etichetta di conservazione. Lo scopo principale di un criterio di etichetta di conservazione è raggruppare un set di tali etichette e specificare le posizioni in cui si vuole che vengano visualizzate.
   
-![Diagramma di etichette, criteri per le etichette e posizioni](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
+![Diagramma di etichette, criteri per le etichette e posizioni](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
 1. Quando si pubblicano etichette di conservazione, vengono incluse in criteri di etichetta di conservazione. Tenere presente che i nomi delle etichette di conservazione sono immutabili e non possono essere modificati una volta creati.
 
@@ -112,13 +112,13 @@ Quando si pubblicano o si applicano automaticamente le etichette di conservazion
 
 Se si pubblicano etichette di conservazione in SharePoint o OneDrive, può essere necessario un giorno perché le etichette di conservazione siano visibili agli utenti finali. Se si pubblicano etichette di conservazione in Exchange, possono essere necessari 7 giorni perché le etichette di conservazione siano visibili agli utenti finali, inoltre la cassetta postale deve contenere almeno 10 MB di dati.
   
-![Diagramma del momento in cui le etichette manuali hanno effetto](media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
+![Diagramma del momento in cui le etichette manuali hanno effetto](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 ### <a name="auto-apply-retention-labels"></a>Applicare automaticamente etichette di conservazione
 
 In caso di applicazione automatica di etichette di conservazione ai contenuti che soddisfano condizioni specifiche, possono essere necessari 7 giorni prima che le etichette di conservazione vengano applicate a tutto il contenuto esistente che soddisfa le condizioni.
   
-![Diagramma di disponibilità delle etichette applicate automaticamente](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![Diagramma di disponibilità delle etichette applicate automaticamente](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Come verificare lo stato delle etichette di conservazione pubblicate in Exchange
 
@@ -168,7 +168,7 @@ Inoltre, un'etichetta di conservazione ha due opzioni di conservazione che sono 
     
 - Iniziare il periodo di conservazione dal momento in cui il contenuto è stato etichettato invece che in base all'età o alla data dell'ultima modifica. Questa opzione si applica solo al contenuto di siti di SharePoint e account di OneDrive. Per la posta elettronica di Exchange il periodo di conservazione è sempre basato sulla data di invio o ricezione del messaggio, indipendentemente dall'opzione scelta.
     
-![Impostazioni di conservazione con opzioni specifiche per le etichette](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
+![Impostazioni di conservazione con opzioni specifiche per le etichette](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
 ## <a name="where-published-retention-labels-can-appear-to-end-users"></a>Posizioni in cui è possibile visualizzare le etichette di conservazione pubblicate agli utenti finali
 
@@ -190,11 +190,11 @@ Le sezioni seguenti mostrano il modo in cui le etichette vengono visualizzate ag
 
 Per assegnare un'etichetta a un elemento in Outlook sul web, fare clic con il pulsante destro del mouse sull'elemento\> **Assegna criteri** \> scegliere l'etichetta di conservazione. 
   
-![Menu Assegna criteri in Outlook sul web](media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
+![Menu Assegna criteri in Outlook sul web](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
   
 Una volta applicata, l'etichetta di conservazione può essere visualizzata insieme all'azione che esegue nella parte superiore dell'elemento. Se un messaggio di posta elettronica viene classificato ed è associato a un periodo di conservazione, con una rapida occhiata se ne conoscerà la data di scadenza.
   
-![Etichetta assegnata al messaggio di posta elettronica in Outlook sul web](media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
+![Etichetta assegnata al messaggio di posta elettronica in Outlook sul web](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
   
 È anche possibile applicare etichette di conservazione a cartelle. In questo caso:
   
@@ -210,7 +210,7 @@ Una volta applicata, l'etichetta di conservazione può essere visualizzata insie
 
 Per assegnare un'etichetta a un elemento nel client desktop di Outlook, selezionare l'elemento. Nella scheda **Home** della barra multifunzione fare clic su **Assegna criterio** e quindi scegliere l'etichetta di conservazione. 
   
-![Pulsante Assegna criterio](media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
+![Pulsante Assegna criterio](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
 È anche possibile fare clic con il pulsante destro del mouse su un elemento, scegliere **Assegna criterio** dal menu di scelta rapida e quindi scegliere l'etichetta di conservazione. 
 
@@ -220,19 +220,19 @@ Dopo l'applicazione dell'etichetta di conservazione, è possibile visualizzarla 
   
 ### <a name="onedrive-and-sharepoint"></a>OneDrive e SharePoint
 
-Per assegnare un'etichetta a un documento (inclusi i file di OneNote) in OneDrive o SharePoint, selezionare l'elemento \> nell'angolo in alto a destra, scegliere **Apri il riquadro dei dettagli**![Icona del riquadro informazioni](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Applica etichetta di conservazione** \>scegliere l'etichetta di conservazione. 
+Per assegnare un'etichetta a un documento (inclusi i file di OneNote) in OneDrive o SharePoint, selezionare l'elemento \> nell'angolo in alto a destra, scegliere **Apri il riquadro dei dettagli**![Icona del riquadro informazioni](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Applica etichetta di conservazione** \>scegliere l'etichetta di conservazione. 
   
 È possibile applicare un'etichetta di conservazione anche a un set di cartelle o di documenti e si può impostare un'etichetta di conservazione predefinita per una raccolta documenti. Per altre informazioni, vedere la sezione seguente.
   
-![Applicazione di un elenco di etichette per un elemento in SharePoint](media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
+![Applicazione di un elenco di etichette per un elemento in SharePoint](../media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
   
 Dopo l'applicazione di un'etichetta di conservazione a un elemento, è possibile visualizzarla nel riquadro dei dettagli quando l'elemento viene selezionato.
   
-![Etichetta applicata visibile nel riquadro dei dettagli](media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
+![Etichetta applicata visibile nel riquadro dei dettagli](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
 È anche possibile creare una visualizzazione della raccolta che contenga la colonna **Etichette** o la colonna **L'elemento è un record**, in modo da poter vedere a colpo d'occhio le etichette di conservazione assegnate a tutti gli elementi e quali elementi sono record. Tuttavia, non è possibile filtrare la visualizzazione per la colonna **L'elemento è un record**. 
   
-![Colonna della raccolta per le etichette visibile nella visualizzazione personalizzata](media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
+![Colonna della raccolta per le etichette visibile nella visualizzazione personalizzata](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
 ### <a name="office-365-groups"></a>Gruppi di Office 365
 
@@ -246,7 +246,7 @@ Inoltre, non è possibile usare il percorso di Exchange per includere o escluder
 
 Una delle funzionalità più efficaci delle etichette di conservazione è la possibilità di applicarle automaticamente al contenuto che soddisfa determinate condizioni. In questo caso, gli utenti dell'organizzazione non dovranno applicare le etichette di conservazione. Office 365 lo farà automaticamente.
   
-![Diagramma di ruoli e attività per le etichette applicate automaticamente](media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+![Diagramma di ruoli e attività per le etichette applicate automaticamente](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
 Le etichette di conservazione applicate automaticamente sono potenti perché:
   
@@ -262,7 +262,7 @@ Le etichette di conservazione applicate automaticamente sono potenti perché:
     
 - Parole chiave specifiche che corrispondono a una query creata.
     
-![Pagina riguardante la scelta delle condizioni per l'etichetta applicata automaticamente](media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+![Pagina riguardante la scelta delle condizioni per l'etichetta applicata automaticamente](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
 
 Per l'applicazione automatica delle etichette di conservazione è necessario un abbonamento a Office 365 Enterprise E5 e possono essere necessari fino a sette giorni per l'applicazione automatica delle etichette di conservazione a tutto il contenuto che soddisfa le condizioni, come illustrato in precedenza.
@@ -274,7 +274,7 @@ Per l'applicazione automatica delle etichette di conservazione è necessario un 
 
 Quando si creano etichette di conservazione ad applicazione automatica per le informazioni riservate, viene visualizzato lo stesso elenco di modelli di criteri mostrato quando si creano criteri di prevenzione della perdita dei dati (DLP). Ogni modello di criteri è preconfigurato in modo da cercare specifici tipi di informazioni riservate. Ad esempio, il modello illustrato di seguito cerca codici identificativi del singolo contribuente (ITIN), codici di previdenza sociale (SSN) e numeri di passaporto statunitensi. Per altre informazioni sui criteri DLP, vedere [Panoramica dei criteri di prevenzione della perdita dei dati](data-loss-prevention-policies.md).
   
-![Modelli di criteri con le tipologie di informazioni sensibili](media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+![Modelli di criteri con le tipologie di informazioni sensibili](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
   
 Dopo aver selezionato un modello di criteri, è possibile aggiungere o rimuovere qualunque tipo di informazioni riservate e modificare il numero di istanze e l'accuratezza della corrispondenza. Nell'esempio mostrato di seguito, verrà applicata automaticamente un'etichetta di conservazione solo quando:
   
@@ -284,7 +284,7 @@ Dopo aver selezionato un modello di criteri, è possibile aggiungere o rimuovere
     
 Per altre informazioni su queste opzioni, vedere [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match) (Ottimizzazione delle regole per rendere più facile o difficile la corrispondenza).
     
-![Opzioni per l'identificazione dei tipi di informazioni riservate](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
+![Opzioni per l'identificazione dei tipi di informazioni riservate](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
 ### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Applicare automaticamente etichette al contenuto con parole chiave o con proprietà disponibili per le ricerche
 
@@ -308,7 +308,7 @@ Esempi di query:
     - contenttype:contract
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
-![Editor di query](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+![Editor di query](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, una cartella o un set di documenti di SharePoint
 
@@ -318,7 +318,7 @@ Per una raccolta documenti, questa operazione si esegue nella pagina **Impostazi
   
 Ad esempio, se si ha un tag per il materiale di marketing e si sa che una specifica raccolta documenti contiene solo quel tipo di contenuto, è possibile impostare il tag Materiali marketing come predefinito per tutti i documenti nella raccolta.
   
-![Opzione Applica etichetta nella pagina Impostazioni della raccolta](media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
+![Opzione Applica etichetta nella pagina Impostazioni della raccolta](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
   
 Se si applica un'etichetta di conservazione predefinita agli elementi esistenti nella raccolta, nella cartella o nel set di documenti:
   
@@ -340,7 +340,7 @@ Ad esempio, si può creare una regola che applica un'etichetta di conservazione 
   
 Per creare una regola, fare clic su un elemento\> **Regole** \> **Crea regola** \> **Opzioni avanzate** \> **Creazione guidata regole** \> **Applica i criteri di conservazione.**.
   
-![Creazione guidata regole con opzione per applicare i criteri di conservazione](media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
+![Creazione guidata regole con opzione per applicare i criteri di conservazione](../media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
   
 ## <a name="classifying-content-without-applying-any-actions"></a>Classificazione del contenuto senza applicazione di azioni
 
@@ -348,7 +348,7 @@ Quando si crea un'etichetta di conservazione, è possibile farlo senza attivare 
   
 Ad esempio, si può creare un'etichetta di conservazione denominata "Rivedere in un secondo momento" senza azioni e quindi applicarla automaticamente a contenuto con tipi di informazioni riservate o a contenuto in cui vengono eseguite query.
   
-![Pagina Impostazioni etichetta con conservazione disattivata](media/17ce863b-a823-426e-aaad-83718465f762.png)
+![Pagina Impostazioni etichetta con conservazione disattivata](../media/17ce863b-a823-426e-aaad-83718465f762.png)
   
 ## <a name="using-retention-labels-for-records-management"></a>Uso di etichette di conservazione per la gestione dei record
     
@@ -370,7 +370,7 @@ Dopo aver pubblicato o applicato automaticamente le etichette di conservazione, 
     
 - **Report di Governance dei dati**. Con questi report, è possibile visualizzare rapidamente le tendenze delle etichette di conservazione e le attività per tutto il contenuto di Exchange, SharePoint e OneDrive for Business degli ultimi 90 giorni. Per altre informazioni, vedere [Visualizzare i report di Governance dei dati](view-the-data-governance-reports.md).
     
-![Esplora attività con etichette](media/671ca0cd-1457-40b4-9917-b663360afd95.png)
+![Esplora attività con etichette](../media/671ca0cd-1457-40b4-9917-b663360afd95.png)
   
 ## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>Uso di Ricerca contenuto per trovare tutto il contenuto a cui è applicata una specifica etichetta di conservazione
 
@@ -378,13 +378,13 @@ Dopo l'assegnazione automatica o manuale di etichette di conservazione al conten
   
 Quando si crea una ricerca di contenuto, scegliere la condizione **Tag di conformità**, quindi immettere il nome completo dell'etichetta o parte di esso e usare un carattere jolly. Per altre informazioni, vedere [Query con parola chiave e condizioni di ricerca per la ricerca di contenuto](keyword-queries-and-search-conditions.md).
   
-![Condizione tag di conformità](media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![Condizione tag di conformità](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Precedenza nei principi di conservazione
 
 È possibile, o addirittura probabile, che al contenuto siano applicati più criteri di conservazione con azioni (conservare, eliminare o entrambi) e periodi di conservazione diversi. Quali sono i criteri che hanno la precedenza? Al livello più alto, un contenuto che viene conservato in base a un particolare criterio non può essere eliminato definitivamente da un altro criterio.
   
-![Diagramma dei principi di conservazione](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![Diagramma dei principi di conservazione](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 Per comprendere in che modo le diverse etichette con azioni di conservazione vengono applicate al contenuto, tenere presente questi principi di conservazione:
   

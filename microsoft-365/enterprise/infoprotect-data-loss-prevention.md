@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 5: Configurare i criteri di prevenzione della perdita dei dati di Office 365'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e distribuire i criteri di prevenzione della perdita dei dati di Office 365 in Microsoft 365.
-ms.openlocfilehash: 43ebfb39202e407fe6dc7bb4c8e0fe8f906f7a6d
-ms.sourcegitcommit: 8bcd76e5c8749a5670fbc3356957a089454c03d1
+ms.openlocfilehash: 896670e9ae83324a1220d64f49a8ea48aee85169
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37370163"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067223"
 ---
 # <a name="step-5-configure-office-365-data-loss-prevention"></a>Passaggio 5: Configurare i criteri di prevenzione della perdita dei dati di Office 365
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![Fase 6: protezione delle informazioni](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: protezione delle informazioni](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 I criteri di prevenzione della perdita dei dati (DLP) del Centro sicurezza e conformità di Office 365 permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Microsoft 365. Con i criteri di prevenzione della perdita dei dati, è possibile:
 
@@ -58,6 +60,6 @@ Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria
 
 |||
 |:-------|:-----|
-|![Passaggio 6](./media/stepnumbers/Step6.png)|[Configurare la crittografia della posta elettronica](infoprotect-email-encryption.md)|
+|![Passaggio 6](../media/stepnumbers/Step6.png)|[Configurare la crittografia della posta elettronica](infoprotect-email-encryption.md)|
 
 

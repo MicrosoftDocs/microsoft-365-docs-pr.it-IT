@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come gli utenti utilizzano le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
-ms.openlocfilehash: a0bb5d8eea5c929f91b8e303b6c14eb52e0b980a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069863"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101236"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utilizzare le etichette di riservatezza nelle app di Office
 
-Dopo aver pubblicato le etichette di riservatezza dal centro conformità di Microsoft 365 o da un centro di etichette equivalente, queste vengono visualizzate nelle app di Office per consentire agli utenti di classificare e proteggere i dati creati o modificati.
+Dopo aver [pubblicato](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) le etichette di riservatezza dal centro conformità di Microsoft 365 o da un centro di etichette equivalente, queste vengono visualizzate nelle app di Office per consentire agli utenti di classificare e proteggere i dati creati o modificati.
 
-Utilizzare le informazioni contenute in questo articolo per semplificare la gestione dell'utilizzo delle etichette di riservatezza nelle app di Office. Ad esempio, le versioni minime delle app necessarie per supportare l'etichettatura incorporata, le interazioni con il client per l'etichettatura unificata di Azure Information Protection e la compatibilità con altre applicazioni e servizi.
+Utilizzare le informazioni contenute in questo articolo per semplificare la gestione delle etichette di riservatezza nelle app di Office. Ad esempio, identificare le versioni minime delle app che è necessario per supportare l'etichettatura incorporata e comprendere le interazioni con il client di etichettatura unificata di Azure Information Protection e la compatibilità con altre applicazioni e servizi.
 
 ## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Requisiti di sottoscrizione e licenze per le etichette di riservatezza
 

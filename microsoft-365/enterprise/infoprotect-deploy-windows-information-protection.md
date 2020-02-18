@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 4: Configurare Windows Information Protection'
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni e distribuzione di Windows Information Protection in Microsoft 365.
-ms.openlocfilehash: 23c3298545a288b459fd3bb858bb7c1d1714ee75
-ms.sourcegitcommit: 1d376287f6c1bf5174873e89ed4bf7bb15bc13f6
+ms.openlocfilehash: 655ff33c3fd1bba822937618d801db76b7881977
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38627382"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42067163"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>Passaggio 4: Configurare Windows Information Protection
 
 *Questo passaggio è facoltativo e si applica alle versioni E3 ed E5 di Microsoft 365 Enterprise*
 
-![Fase 6: protezione delle informazioni](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Fase 6: protezione delle informazioni](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 Con più dispositivi personali usati per lavoro, aumenta il rischio per le applicazioni e i dispositivi di una perdita di dati aziendali privati. Ad esempio, un dipendente invia inavvertitamente l'immagine di un piano di marketing per un prodotto futuro attualmente in un sito di social networking o salva un file contenente informazioni strettamente riservate nel proprio sistema pubblico di archiviazione cloud. 
 
@@ -49,6 +51,6 @@ Come checkpoint provvisorio, vedere i [criteri uscita](infoprotect-exit-criteria
 
 |||
 |:-------|:-----|
-|![Passaggio 5](./media/stepnumbers/Step5.png)|[Configurare i criteri di prevenzione della perdita dei dati di Office 365](infoprotect-data-loss-prevention.md)|
+|![Passaggio 5](../media/stepnumbers/Step5.png)|[Configurare i criteri di prevenzione della perdita dei dati di Office 365](infoprotect-data-loss-prevention.md)|
 
 

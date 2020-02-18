@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile applicare etichette a Microsoft Teams, gruppi di Office 365 e siti di SharePoint.
-ms.openlocfilehash: 7fd19d9d8f84bd6463d61aec68dbd86c4fc627c0
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 297ccd3e17f6c5a747e18a46747e6f2c23311df0
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601563"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42069808"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)
 
@@ -54,9 +54,9 @@ Queste immagini mostrano:
 
 Ad esempio:
 
-![Etichetta di riservatezza durante la creazione di un sito del team da SharePoint](media/sensitivity-label-new-team-site.png)
+![Etichetta di riservatezza durante la creazione di un sito del team da SharePoint](../media/sensitivity-label-new-team-site.png)
 
-![Etichetta di riservatezza visualizzata nell'app Word per desktop](media/sensitivity-label-word.png)
+![Etichetta di riservatezza visualizzata nell'app Word per desktop](../media/sensitivity-label-word.png)
 
 ## <a name="enable-this-preview"></a>Abilitare questa anteprima
 
@@ -124,7 +124,7 @@ Dopo aver abilitato l'anteprima, usare la procedura seguente per creare o modifi
     - Accesso guest: è possibile controllare se si possono aggiungere utenti guest a un gruppo. [Informazioni sulla gestione dell'accesso guest nei gruppi di Office 365](/office365/admin/create-groups/manage-guest-access-in-groups)
     - Dispositivi non gestiti: questa opzione consente di bloccare o limitare l'accesso al contenuto di SharePoint da dispositivi non aggiunti ad AD ibrido o non conformi in Intune. Se si seleziona Dispositivi non gestiti, è necessario passare ad Azure AD per completare la configurazione del criterio. Per informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices).
     
-    ![Scheda Impostazioni sito e gruppo](media/edit-sensitivity-label-site-group.png)
+    ![Scheda Impostazioni sito e gruppo](../media/edit-sensitivity-label-site-group.png)
 
 > [!IMPORTANT]
 > Quando si applica un'etichetta a un team, a un gruppo o a un sito, vengono applicate solo le impostazioni a livello di sito e gruppo. Le altre impostazioni, come la crittografia e il contrassegno dei contenuti, non vengono applicate a tutto il contenuto all'interno del team, del gruppo o del sito.
@@ -184,11 +184,11 @@ Gli utenti possono selezionare le etichette di riservatezza quando creano nuovi 
 
 [Altre informazioni sulle etichette di riservatezza per Teams](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
-![Impostazioni di privacy durante la creazione di un nuovo team](media/privacy-setting-new-team.png)
+![Impostazioni di privacy durante la creazione di un nuovo team](../media/privacy-setting-new-team.png)
 
 Dopo la creazione del team, l'etichetta di riservatezza compare nell'angolo in alto a destra di tutti i canali.
 
-![L'etichetta di riservatezza compare nel team](media/privacy-setting-teams.png)
+![L'etichetta di riservatezza compare nel team](../media/privacy-setting-teams.png)
 
 Il servizio applica automaticamente la stessa etichetta di riservatezza al gruppo di Office 365 e al sito del team di SharePoint connesso.
 
@@ -196,7 +196,7 @@ Il servizio applica automaticamente la stessa etichetta di riservatezza al grupp
 
 In Outlook sul Web, la nuova casella **Riservatezza** contiene le etichette pubblicate. Se gli utenti vogliono altre informazioni, possono fare clic sull'icona della Guida per leggere i dettagli sulle etichette disponibili e sui criteri associati.
 
-![Creazione di un gruppo e selezione di un'opzione in Riservatezza](media/sensitivity-label-new-group.png)
+![Creazione di un gruppo e selezione di un'opzione in Riservatezza](../media/sensitivity-label-new-group.png)
 
 ## <a name="apply-a-sensitivity-label-to-a-new-site"></a>Applicare un'etichetta di riservatezza a un nuovo sito
 
@@ -206,17 +206,17 @@ Gli amministratori e gli utenti finali possono selezionare le etichette di riser
 
 Quando gli utenti creano siti di comunicazione e siti del team moderni, per impostazione predefinita è già selezionata un'etichetta di riservatezza. Per saperne di più sulle etichette, gli utenti possono selezionare l'icona della Guida.
 
-![Creazione di un sito e selezione di un'opzione in Riservatezza](media/sensitivity-label-new-communication-site.png)
+![Creazione di un sito e selezione di un'opzione in Riservatezza](../media/sensitivity-label-new-communication-site.png)
 
 Quando gli utenti visitano il sito, possono vedere il nome dell'etichetta e i criteri applicati.
 
-![Sito a cui è applicata un'etichetta di riservatezza](media/sensitivity-label-site.png)
+![Sito a cui è applicata un'etichetta di riservatezza](../media/sensitivity-label-site.png)
 
 ## <a name="manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Gestire le etichette di riservatezza nell'interfaccia di amministrazione di SharePoint
 
 Per visualizzare e modificare le etichette, usare la pagina Siti attivi nella nuova interfaccia di amministrazione di SharePoint.
 
-![Colonna Riservatezza nella pagina Siti attivi](media/manage-site-sensitivity-labels.png)
+![Colonna Riservatezza nella pagina Siti attivi](../media/manage-site-sensitivity-labels.png)
 
 [Altre informazioni sulla gestione dei siti nella nuova interfaccia di amministrazione di SharePoint](/sharepoint/manage-sites-in-new-admin-center).
 

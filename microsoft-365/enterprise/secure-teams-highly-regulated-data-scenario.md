@@ -1,6 +1,8 @@
 ---
 title: Team per dati altamente regolamentati
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 12/13/2019
@@ -13,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un team sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: b35c4e8332b73b44042430651cbba9daa2c59c04
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: e2499c6e9061704846f4649ade43f74bd5632e8b
+ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801421"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42084264"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Team per dati altamente regolamentati
 
@@ -42,15 +44,15 @@ Gli elementi della configurazione di un team per dati altamente regolamentati so
 
 Ecco la configurazione risultante con un'etichetta di riservatezza.
 
-![Configurazione dello scenario del team sicuro](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![Configurazione dello scenario del team sicuro](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 Per una rapida panoramica, guardare questo breve video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
-<a name="poster"></a> Per un riepilogo di una pagina per questo scenario, vedere il [poster Team per dati altamente regolamentati](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
+<a name="poster"></a> Per un riepilogo di una pagina per questo scenario, vedere il [poster Team per dati altamente regolamentati](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf).
 
-[![Poster Team per dati altamente regolamentati](././media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](./media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
+[![Poster Team per dati altamente regolamentati](../media/secure-teams-highly-regulated-data-scenario/teams-highly-regulated-data-poster.png)](../media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf)
 
 È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/TeamsHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/secure-teams-highly-regulated-data-scenario/Teams-Highly-Regulated-Data-Poster.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
@@ -84,7 +86,7 @@ Quando si crea un team privato, le autorizzazioni predefinite sono le seguenti:
 
 Ecco le autorizzazioni predefinite per il sito del team.
 
-![Autorizzazioni predefinite di un sito del team](./media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
+![Autorizzazioni predefinite di un sito del team](../media/secure-teams-highly-regulated-data-scenario/secure-team-default-site-permissions.png)
  
 >[!Note]
 >Se si visualizza il \<gruppo di SharePoint nome team > Proprietari per il livello di autorizzazione Modifica, non compare \<nome team > Proprietari.
@@ -99,7 +101,7 @@ La manutenzione delle autorizzazioni è uguale alla manutenzione di membri del t
 
 Ecco la configurazione risultante finora.
 
-![Passaggio 2 della configurazione dello scenario del team sicuro](./media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
+![Passaggio 2 della configurazione dello scenario del team sicuro](../media/secure-teams-highly-regulated-data-scenario/secure-team-step2.png)
  
 ### <a name="step-3-configure-the-underlying-sharepoint-site-for-additional-security"></a>Passaggio 3: Configurare il sito di SharePoint sottostante per aumentare la sicurezza
 
@@ -114,7 +116,7 @@ Con queste impostazioni, la possibilità per i membri del gruppo del team di con
 
 Ecco la configurazione risultante finora.
 
-![Passaggio 3 della configurazione dello scenario del team sicuro](./media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
+![Passaggio 3 della configurazione dello scenario del team sicuro](../media/secure-teams-highly-regulated-data-scenario/secure-team-step3.png)
 
  
 ### <a name="step-4-create-a-retention-label-and-dlp-policy"></a>Passaggio 4: Creare un'etichetta di conservazione e i criteri DLP
@@ -127,7 +129,7 @@ Seguire [queste istruzioni](https://docs.microsoft.com/microsoft-365/security/of
 
 Ecco la configurazione risultante finora.
 
-![Passaggio 4 della configurazione dello scenario del team sicuro](./media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
+![Passaggio 4 della configurazione dello scenario del team sicuro](../media/secure-teams-highly-regulated-data-scenario/secure-team-step4.png)
  
 ### <a name="step-5-create-a-sensitivity-label-or-a-sublabel-of-the-highly-regulated-sensitivity-label"></a>Passaggio 5: Creare un'etichetta di riservatezza o una sottoetichetta dell'etichetta di riservatezza per dati altamente regolamentati
 
@@ -148,11 +150,11 @@ Usare un'etichetta di riservatezza quando è necessario un numero limitato di et
 
 Ecco la configurazione risultante con la nuova etichetta.
 
-![Passaggio 5 della configurazione dello scenario del team sicuro](./media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
+![Passaggio 5 della configurazione dello scenario del team sicuro](../media/secure-teams-highly-regulated-data-scenario/secure-team-final.png)
 
 Ecco la relazione tra l'etichetta di riservatezza e il gruppo del team.
 
-![Relazione tra il gruppo del team e le autorizzazioni dell'etichetta](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
+![Relazione tra il gruppo del team e le autorizzazioni dell'etichetta](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-permissions.png)
 
 
 >[!Note]
@@ -178,7 +180,7 @@ Se alcuni membri del personale devono esclusivamente visualizzare il contenuto d
 
 Ecco le autorizzazioni risultanti nell'etichetta.
 
-![Esempio di autorizzazioni personalizzate per la visualizzazione dei file con etichetta](./media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
+![Esempio di autorizzazioni personalizzate per la visualizzazione dei file con etichetta](../media/secure-teams-highly-regulated-data-scenario/secure-team-custom-view-permissions.png)
  
 I visitatori del sito potranno accedere direttamente al sito del team e visualizzare il contenuto dei file ai quali è applicata la sottoetichetta. Tuttavia, dato che non sono membri del gruppo del team, non saranno in grado di accedere al team o alle relative risorse.
 
@@ -191,7 +193,7 @@ Dopo aver predisposto il team è opportuno incoraggiare i membri dei team ad ado
 
 I membri del gruppo del team possono accedere al team e a tutte le relative risorse, tra cui chat, riunioni e altre app. Quando usano file dalla sezione **File** di un canale, i membri del gruppo del team devono assegnare l'etichetta o la sottoetichetta di riservatezza ai file creati per il team sicuro. Ecco un esempio.
 
-![Esempio di etichetta applicata a un file in un team sicuro](./media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
+![Esempio di etichetta applicata a un file in un team sicuro](../media/secure-teams-highly-regulated-data-scenario/secure-team-label-applied.png)
  
 Quando l'etichetta viene applicata al file, viene protetto. I membri del gruppo del team possono aprirlo in Teams e collaborare in tempo reale. È crittografato e include le autorizzazioni di creazione condivisa impostate sui membri del gruppo del team. Se il file esce dal sito e viene inviato a un utente malintenzionato, quest'ultimo dovrà specificare le credenziali di un account utente membro del gruppo del team per aprire il file e visualizzarne il contenuto. 
 
@@ -222,7 +224,7 @@ Ripetere la formazione degli utenti se necessario.
 
 Per creare il proprio ambiente di test per testare i team per i file sensibili e altamente riservati, vedere [queste istruzioni](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment). 
 
-![Guide al lab di test per il cloud Microsoft](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
+![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)
 
 ## <a name="how-the-contoso-corporation-used-a-secure-team-for-a-top-secret-project"></a>Utilizzo di un team sicuro per un progetto interno di Contoso Corporation
 
