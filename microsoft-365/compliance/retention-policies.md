@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: 3dbc3e221849cd9b5cde1d1f97e50ccf043c336d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070202"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093441"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -201,8 +201,9 @@ Una delle caratteristiche più efficaci dei criteri di conservazione riguarda la
     
 - Cartelle pubbliche di Exchange
     
+
 ![Opzione Tutte le posizioni](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
-  
+
 Altre caratteristiche importanti di un criterio di conservazione a livello di organizzazione includono:
   
 - Non sono previsti limiti al numero di cassette postali o di siti inclusi nel criterio.
