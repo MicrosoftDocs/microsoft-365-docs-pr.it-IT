@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: I criteri di conservazione dei log di controllo fanno parte delle nuove funzionalità di Audit avanzato di Microsoft 365. Un criterio di conservazione dei log di controllo consente di specificare quanto a lungo conservare i log di controllo nell'organizzazione.
-ms.openlocfilehash: 5e2a1e328888a6aadf5c3057bbe7882ac0f72fbe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d19e18fa2c701996306f5b2e567ea01708d96144
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079213"
+ms.locfileid: "42091321"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gestire i criteri di conservazione dei log di controllo
 
@@ -61,9 +61,9 @@ Audit avanzato in Microsoft 365 include un criterio di conservazione dei log di 
 
     ![Pagina Ricerca log di controllo](../media/AuditLogRetentionPolicy1.png)
 
-3. Fare clic su **Nuovo criterio di conservazione** e quindi completare i campi seguenti nella pagina a comparsa:
+3. Fare clic su **Nuovo criterio di conservazione dei log di controllo** e poi completare i campi seguenti nel riquadro a comparsa:
 
-    ![Pagina a comparsa del criterio di conservazione log di controllo](../media/AuditLogRetentionPolicy2.png)
+    ![Riquadro a comparsa del criterio di conservazione dei log di controllo](../media/AuditLogRetentionPolicy2.png)
 
    a. **Nome:** il nome del criterio di conservazione dei log di controllo. Il nome deve essere univoco nell'organizzazione.
    

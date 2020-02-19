@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 43cc0317bfce749affc41efe987fe905e1edae5d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
+ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069941"
+ms.locfileid: "42091369"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -109,7 +109,7 @@ Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del regis
 
 - Per scaricare i dati a livello di programmazione dal log di controllo di Office 365, è consigliabile usare l'API Office 365 Management Activity, invece di uno script di PowerShell. L'API Office 365 Management Activity è un servizio Web REST che è possibile utilizzare per sviluppare operazioni e soluzioni per la sicurezza e il monitoraggio della conformità per l'organizzazione. Per altre informazioni, vedere [Riferimento API Office 365 Management Activity](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- La visualizzazione della voce del log di controllo nei risultati della ricerca può richiedere fino a 30 minuti o a 24 ore dal momento in cui si verifica l'evento. La tabella seguente mostra il tempo necessario per i diversi servizi in Office 365.
+- La restituzione del record del log di controllo nei risultati della ricerca dei log di controllo può richiedere fino a 30 minuti o a 24 ore dal momento in cui si verifica l'evento. La tabella seguente mostra il tempo necessario per i diversi servizi in Office 365.
 
   |**Servizio Office 365**|**30 minuti**|**24 ore**|
   |:-----|:-----:|:-----:|
@@ -117,14 +117,14 @@ Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del regis
   |Azure Active Directory (eventi di accesso utente)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Interfaccia di amministrazione di Azure Active Directory (eventi di amministrazione)||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Prevenzione della perdita di dati|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Dynamics 365 CRM|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Dynamics 365 CRM||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |eDiscovery|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Exchange Online|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Microsoft Power Automate|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Microsoft Power Automate||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Microsoft Project|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Stream|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Teams|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Power Apps|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Power Apps||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Centro sicurezza e conformità|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |SharePoint Online e OneDrive for Business|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
