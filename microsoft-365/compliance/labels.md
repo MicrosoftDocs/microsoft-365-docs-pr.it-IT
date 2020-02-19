@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È anche possibile usare le etichette di conservazione per implementare una soluzione di gestione dei record per Microsoft 365.
-ms.openlocfilehash: 27f680bf2acf844618f133b074faf6f5ec3f7e90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 162b9fed66fa3135829f422ccd04a396ddf7e632
+ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072557"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42093455"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -44,9 +44,11 @@ Con le etichette di conservazione è possibile:
     
 - **Applicare automaticamente etichette di conservazione al contenuto** se soddisfa specifiche condizioni, ad esempio se include: 
     
-  - Tipi specifici di informazioni riservate.
+    - Tipi specifici di informazioni riservate.
     
-  - Parole chiave specifiche che corrispondono a una query creata.
+    - Parole chiave specifiche che corrispondono a una query creata.
+    
+    - Criteri di corrispondenza per un classificatore sottoponibile a training.
     
   La possibilità di applicare automaticamente etichette di conservazione al contenuto è importante perché:
     
@@ -57,13 +59,13 @@ Con le etichette di conservazione è possibile:
    - Gli utenti non hanno più bisogno di conoscere i criteri di governance dai dati e possono concentrarsi sul loro lavoro.
 
   > [!NOTE]
-  > La possibilità di applicare automaticamente etichette richiede una licenza di Office 365 Enterprise E5 per ogni utente con autorizzazioni per modificare il contenuto a cui è stata assegnata automaticamente un'etichetta in un sito o la cui cassetta postale è selezionata per l'applicazione automatica delle etichette. Per gli utenti che hanno accesso in sola lettura al contenuto o rispondono a messaggi di posta elettronica con etichette non è necessaria una licenza.
+  > La possibilità di applicare automaticamente etichette richiede minimo una licenza di Office 365 Enterprise E5 per ogni utente con autorizzazioni a modificare il contenuto a cui è stata assegnata automaticamente un’etichetta in un sito o la cui cassetta postale viene selezionata per l’applicazione automatica delle etichette. Per gli utenti che hanno accesso in sola lettura al contenuto o rispondono a messaggi di posta elettronica con etichette non è necessaria una licenza.
       
 - **Implementare la gestione dei record in Office 365**, compresi posta elettronica e documenti. È possibile usare un'etichetta di conservazione per classificare il contenuto come record. In questo caso, non è possibile cambiare o rimuovere l'etichetta e il contenuto non può essere modificato o eliminato. 
 
 - **Applicare un'etichetta di conservazione predefinita a una raccolta documenti, cartella o set di documenti** in SharePoint, così che i documenti in quella posizione ereditino l’etichetta di conservazione predefinita.  
     
-Le etichette di conservazione vengono create nel Centro conformità Microsoft 365, nel Centro sicurezza Microsoft 365 o nel Centro sicurezza e conformità di Office 365. Nel riquadro di spostamento sinistro scegliere **Classificazione** > **Etichetta di conservazione** > **Crea un'etichetta**.
+Le etichette di conservazione vengono create nel Centro conformità Microsoft 365, nel Centro sicurezza Microsoft 365 o nel Centro sicurezza e conformità di Office 365.
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>Funzionamento delle etichette di conservazione con i criteri di etichetta di conservazione
 
@@ -258,14 +260,17 @@ Le etichette di conservazione applicate automaticamente sono potenti perché:
     
 È possibile scegliere di applicare automaticamente etichette di conservazione al contenuto quando questo contiene:
   
-- Tipi specifici di informazioni riservate.
+- [Tipi specifici di informazioni riservate.](#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
     
-- Parole chiave specifiche che corrispondono a una query creata.
+- [Parole chiave specifiche che corrispondono a una query creata.](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+- [Una corrispondenza per classificatori sottoponibili a training](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
-![Pagina riguardante la scelta delle condizioni per l'etichetta applicata automaticamente](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
+![Pagina per scegliere la condizione dell’etichetta applicata automaticamente](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
+L'applicazione automatica delle etichette di conservazione configurate per le prime due opzioni richiede un abbonamento a Office 365 Enterprise E5. Se viene utilizzata l'opzione per classificatori sottoponibili a training, sono necessari [ulteriori requisiti di licenza](classifier-getting-started-with.md#licensing-requirements).
 
-Per l'applicazione automatica delle etichette di conservazione è necessario un abbonamento a Office 365 Enterprise E5 e possono essere necessari fino a sette giorni per l'applicazione automatica delle etichette di conservazione a tutto il contenuto che soddisfa le condizioni, come illustrato in precedenza.
+Possono essere necessari fino a sette giorni per applicare le etichette di conservazione ad applicazione automatica a tutto il contenuto che soddisfa le condizioni configurate.
   
 > [!TIP]
 > Vedere [Gestire il ciclo di vita dei documenti di SharePoint con etichette di conservazione](auto-apply-retention-labels-scenario.md) per uno scenario dettagliato sull'uso delle proprietà gestite in SharePont per applicare automaticamente etichette di conservazione e implementare la conservazione basata su eventi.
@@ -309,6 +314,17 @@ Esempi di query:
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
 ![Editor di query](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+
+
+### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>Etichette applicate automaticamente al contenuto con classificatori sottoponibili a training
+
+Se si sceglie l'opzione del classificatore sottoponibile a training, è possibile selezionare un classificatore predefinito oppure personalizzato. I classificatori predefiniti includono il **linguaggio offensivo**, i **curriculum**, il **codice sorgente**, le **molestie**, i **contenuti volgari** e le **minacce**.
+
+Per applicare automaticamente un'etichetta utilizzando questa opzione, i siti e le cassette postali di SharePoint Online devono avere almeno 10 MB di dati.
+
+Per altre informazioni sui classificatori sottoponibili a training, vedere [Introduzione ai classificatori sottoponibili a training (anteprima)](classifier-getting-started-with.md).
+
+Per avere un esempio di configurazione, vedere [come preparare e utilizzare un classificatore pronto all’uso](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-ready-to-use-classifier).
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Applicazione di un'etichetta di conservazione predefinita a tutto il contenuto in una raccolta, una cartella o un set di documenti di SharePoint
 
