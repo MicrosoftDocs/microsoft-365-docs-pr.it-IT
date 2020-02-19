@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
-ms.openlocfilehash: 17cea4f80ac1dee75c10c2beef63be06141c89d5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 102d1da2ec5f49e26a634611f4f640a083d167ff
+ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074636"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "42101266"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -44,15 +44,15 @@ Infine, quando si configura la crittografia nelle etichette di riservatezza come
 
 Le impostazioni di crittografia sono disponibili quando si [crea un'etichetta di riservatezza](create-sensitivity-labels.md) nel Centro conformità Microsoft 365, nel Centro sicurezza Microsoft 365 o nel Centro sicurezza e conformità di Office 365.
 
-## <a name="how-encryption-works"></a>Modalità di funzionamento della crittografia
+## <a name="understand-how-the-encryption-works"></a>Come funziona la crittografia
 
 La crittografia usa il servizio Azure Rights Management (Azure RMS) di Azure Information Protection. Questa soluzione di protezione usa criteri di crittografia, identità e autorizzazione. Per ulteriori informazioni, vedere [Informazioni su Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) nella documentazione di Azure Information Protection. 
 
 Se si usa questa soluzione di crittografia, la caratteristica **utente con privilegi avanzati** garantisce che le persone e i servizi autorizzati possano sempre leggere e controllare i dati crittografati per l'organizzazione. Se necessario, la crittografia può essere rimossa o modificata. Per altre informazioni, vedere [Configurazione di utenti con privilegi avanzati per Azure Information Protection e servizi di individuazione o di ripristino dei dati](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
-## <a name="configuring-a-label-for-encryption"></a>Configurazione di un'etichetta per la crittografia
+## <a name="how-to-configure-a-label-for-encryption"></a>Come configurare un'etichetta per la crittografia
 
-Quando si [crea o si modifica un'etichetta di riservatezza](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), nella pagina **Crittografia** della procedura guidata, è possibile selezionare una delle opzioni seguenti:
+[Creare o modificare un'etichetta di riservatezza](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) e, nella pagina **Crittografia** della procedura guidata, selezionare una delle opzioni seguenti:
 
 - **Nessuna**: l'impostazione predefinita per una nuova etichetta. Non viene applicata una nuova crittografia.
 - **Applica**: attiva la crittografia, quindi l'utente specifica le impostazioni di crittografia.
@@ -98,7 +98,7 @@ Quando un messaggio di posta elettronica viene crittografato con un metodo, tutt
 
 I documenti già crittografati e aggiunti come allegati mantengono sempre la crittografia originale. 
 
-## <a name="how-to-configure-encryption-settings-for-a-sensitivity-label"></a>Come configurare le impostazioni di crittografia per un'etichetta di riservatezza
+## <a name="configure-encryption-settings"></a>Configurare le impostazioni di crittografia
 
 Quando si seleziona **Applica** nella pagina **Crittografia** della procedura guidata per creare o modificare un'etichetta di riservatezza, è possibile scegliere di:
 
