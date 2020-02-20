@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Trovare le risposte alle domande più frequenti sugli acquisti in modalità self-service.
 ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: b5289f4c9b7ea8c723dab8bf4bf97b83fef5b34c
-ms.sourcegitcommit: 290d95f9ba118336cb136f34313de265b97e869e
+ms.openlocfilehash: b94a09757cf6e7126a6b7cc73ac5cc0930d1ea2e
+ms.sourcegitcommit: 08f9af6cd98e2de4bb634b90f5630e6a66676497
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155625"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42157378"
 ---
 # <a name="self-service-purchase-faq"></a>Domande frequenti sull'acquisto in modalità self-service
 
@@ -151,4 +151,4 @@ I partner che dispongono di privilegi amministrativi delegati possono vedere gli
 
 ### <a name="in-which-countries-can-i-make-a-self-service-purchase"></a>In quali paesi è possibile effettuare un acquisto in modalità self-service?
 
-Gli acquisti in modalità self-service sono disponibili nei seguenti paesi: Australia, Canada, Giappone e Stati Uniti.
+Gli acquisti in modalità self-service sono disponibili nei seguenti paesi: Australia, Canada, Francia, Germania, Giappone, Regno Unito e Stati Uniti.
