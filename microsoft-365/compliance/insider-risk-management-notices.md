@@ -1,5 +1,5 @@
 ---
-title: Modelli di avviso per la gestione dei rischi Insider (anteprima)
+title: Modelli di avviso per la gestione dei rischi Insider
 description: Informazioni sui modelli di avviso per la gestione dei rischi insider in Microsoft 365
 keywords: Microsoft 365, gestione dei rischi Insider, gestione dei rischi, conformità
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9e114f0292b4513176cff70afa25f69532e35d86
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 92844691cba4adf39c7b4eee30de97ccff9d0890
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072808"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179087"
 ---
-# <a name="insider-risk-management-notice-templates-preview"></a>Modelli di avviso per la gestione dei rischi Insider (anteprima)
+# <a name="insider-risk-management-notice-templates"></a>Modelli di avviso per la gestione dei rischi Insider
 
 I modelli di avviso per la gestione dei rischi Insider consentono di inviare messaggi di posta elettronica ai dipendenti quando le attività generano un criterio di corrispondenza e avviso. Nella maggior parte dei casi, le azioni dipendenti che generano avvisi sono il risultato di errori o attività involontarie senza intenti indesiderati. Gli avvisi fungono da promemoria semplici per i dipendenti per essere più cauti o per fornire collegamenti o informazioni per l'aggiornamento o le risorse dei criteri aziendali. Gli avvisi possono essere una parte importante del programma di formazione per la conformità interno e possono contribuire alla creazione di una traccia di controllo documentata per i dipendenti con attività di rischio ricorrenti.
 

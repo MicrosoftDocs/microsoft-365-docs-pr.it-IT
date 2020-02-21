@@ -1,5 +1,5 @@
 ---
-title: Esploratore del contenuto di gestione dei rischi Insider (anteprima)
+title: Esploratore contenuto gestione dei rischi Insider
 description: Informazioni su Insider Risk Management Content Explorer in Microsoft 365
 keywords: Microsoft 365, gestione dei rischi Insider, gestione dei rischi, conformità
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a8c1c77bdfa3236ce8f2222fd21a7fba0535f149
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 68a472e4e6b7556fc1b738a49b3c82dcf4804842
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41590647"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179077"
 ---
-# <a name="insider-risk-management-content-explorer-preview"></a>Esploratore del contenuto di gestione dei rischi Insider (anteprima)
+# <a name="insider-risk-management-content-explorer"></a>Esploratore contenuto gestione dei rischi Insider
 
 L'esploratore del contenuto di gestione dei rischi insider consente agli analisti e ai ricercatori dei rischi di esaminare il contesto e i dettagli delle comunicazioni acquisite negli avvisi. Per tutti gli avvisi, le copie dei dati e i file dei messaggi vengono archiviati come snapshot nel tempo degli elementi, mantenendo i file e i messaggi originali nelle origini di archiviazione. La copia di dati e messaggi è trasparente per il dipendente associato all'avviso e per il proprietario del contenuto. Le impostazioni di autorizzazione e i diritti di accesso per i dati vengono mantenuti per il contenuto copiato e i messaggi e gli analisti dei rischi e gli investigatori devono disporre di tali autorizzazioni e diritti, se necessario, per aprire e visualizzare i file. A ciascun file e al messaggio viene assegnato automaticamente un ID file univoco nel caso di gestione dei rischi Insider per la gestione.
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175709"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219177"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Accedere al centro notifiche per visualizzare le azioni correttive
 
@@ -42,9 +42,6 @@ Il centro notifiche include un "riquadro unico" per le attività, ad esempio:
 - revisione delle azioni di correzione completate.
 
 Il team delle operazioni di sicurezza può lavorare in modo più efficace ed efficiente, poiché il centro notifiche offre una visione completa del funzionamento di Microsoft Threat Protection.
-
-## <a name="remediation-actions"></a>Azioni correttive
-
 
 ## <a name="go-to-the-action-center"></a>Accedere al centro notifiche
 

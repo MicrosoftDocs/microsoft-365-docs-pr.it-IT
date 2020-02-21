@@ -15,13 +15,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: "Domande frequenti per gli amministratori sull'utilizzo del servizio di importazione di Office 365 per importare i file PST di Organizaiton in cassette postali di Office 365. "
-ms.openlocfilehash: dcbc496273a08ea133cc11bacbb62f55eee58917
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: "Domande frequenti per gli amministratori sull'utilizzo del servizio di importazione di Office 365 per importare i file PST dell'organizzazione nelle cassette postali di Office 365. "
+ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594587"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170486"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>Domande frequenti sull'importazione di file PST in Office 365
 
@@ -50,7 +50,10 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
   
  **Dov'è disponibile il caricamento tramite rete?**
   
-Il caricamento di rete è attualmente disponibile negli Stati Uniti, Canada, Brasile, Regno Unito, Francia, Europa, India, Asia orientale, sud-est asiatico, Giappone, Repubblica di Corea e Australia. Network upload will be available in more regions soon.
+Il caricamento di rete è attualmente disponibile in queste aree: Stati Uniti, Canada, Brasile, Regno Unito, Francia, Europa, India, Asia orientale, sud-est asiatico, Giappone, Repubblica di Corea e Australia. Network upload will be available in more regions soon.
+
+> [!NOTE]
+> In questo momento, il caricamento di rete dei file PST non è disponibile in Germania e Svizzera. Queste domande frequenti verranno aggiornate quando il caricamento di rete è disponibile in questi paesi.
   
  **Quanto costa importare file PST con il caricamento tramite rete?**
   
@@ -122,6 +125,9 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
  **Dov'è disponibile la spedizione unità?**
   
 La spedizione unità è attualmente disponibile negli Stati Uniti, nonché in Canada, Brasile, Regno Unito, Europa, India, Asia orientale, Asia sud-orientale, Giappone, Repubblica di Corea e Australia. Questa funzionalità sarà presto disponibile in altre aree geografiche.
+
+> [!NOTE]
+> In questo momento, l'unità di trasporto per importare i file PST non è disponibile in Germania e Svizzera. Queste domande frequenti verranno aggiornate quando la spedizione delle unità è disponibile in questi paesi.
   
  **Quali contratti di licenza commerciali supportano la spedizione unità?**
   
@@ -148,7 +154,7 @@ Dipende da vari fattori, tra cui la vicinanza al data center Microsoft e il tipo
   
  **Dopo la consegna dell'unità disco rigido al datacenter Microsoft, quanto tempo è necessario per caricare i file PST in Azure?**
   
-Dopo che il disco rigido viene consegnato al datacenter Microsoft, saranno necessari tra i 7 e i 10 giorni lavorativi per caricare i file PST nell'area di archiviazione di Microsoft Azure dell'organizzazione. I file PST verranno caricati in un contenitore BLOB di Azure denominato **ingestiondata**. 
+Dopo aver ricevuto il disco rigido in Microsoft Data Center, saranno necessari tra 7 e 10 giorni lavorativi per caricare i file PST nell'area di archiviazione di Azure per l'organizzazione. I file PST verranno caricati in un contenitore BLOB di Azure denominato **ingestiondata**. 
   
  **Quanto tempo è necessario per importare un file PST in una cassetta postale?**
   
@@ -158,7 +164,7 @@ Se si importano file PST diversi in cassette postali di destinazione diverse, il
   
  **Dopo il caricamento dei file PST in Azure da parte di Microsoft, per quanto tempo vengono conservati in Azure prima dell'eliminazione?**
   
-Tutti i file PST nel percorso di archiviazione di Azure per l'organizzazione (nel contenitore BLOB denominato **ingestiondata** ) vengono eliminati 30 giorni dopo la creazione del processo di importazione più recente nella pagina **importazione file PST** nel centro sicurezza & conformità. 
+Tutti i file PST nel percorso di archiviazione di Azure per l'organizzazione (nel contenitore BLOB denominato **ingestiondata**) vengono eliminati 30 giorni dopo la creazione del processo di importazione più recente nella pagina **importazione file PST** nel centro sicurezza & conformità. 
   
 Significa anche che, dopo essere stati eliminati dall'area di archiviazione di Azure, i file PST non vengono più visualizzati nell'elenco dei file per un processo di importazione completato nel Centro sicurezza e conformità. Anche se un processo di importazione potrebbe essere ancora presente nella pagina **Importa file PST** del Centro sicurezza e conformità, l'elenco dei file PST potrebbe essere vuoto quando si visualizzano i dettagli dei processi di importazione precedenti. 
   

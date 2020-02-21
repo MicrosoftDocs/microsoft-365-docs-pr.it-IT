@@ -1,5 +1,5 @@
 ---
-title: Casi di gestione dei rischi Insider (Preview)
+title: Casi di gestione dei rischi Insider
 description: Informazioni sui casi di gestione dei rischi insider in Microsoft 365
 keywords: Microsoft 365, gestione dei rischi Insider, gestione dei rischi, conformità
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 02f665f966b929ac8a83acfcdf5be6a5818a64d3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072853"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179177"
 ---
-# <a name="insider-risk-management-cases-preview"></a>Casi di gestione dei rischi Insider (Preview)
+# <a name="insider-risk-management-cases"></a>Casi di gestione dei rischi Insider
 
 I casi sono il fulcro della gestione dei rischi Insider e consentono di approfondire e intervenire su questioni generate da indicatori di rischio definiti nei criteri. I casi vengono creati manualmente da avvisi nelle situazioni in cui è necessaria un'ulteriore azione per risolvere un problema relativo alla conformità per un dipendente. Ogni caso ha l'ambito di un singolo dipendente e più avvisi per il dipendente possono essere aggiunti a un caso esistente o a un nuovo caso. Dopo aver esaminato i dettagli di un caso, è possibile eseguire un'azione inviando al dipendente un avviso, risolvendo il caso come benigno o escalation a un'indagine di dati o dipendenti.
 
@@ -96,7 +96,7 @@ La scheda **attività utente** è uno degli strumenti più potenti per l'analisi
     - **Data** dell'attività di rischio.
     - La **Categoria attività di rischio**. Ad esempio, *i messaggi di posta elettronica con allegati inviati al di fuori dell'organizzazione* o dei *file scaricati da SharePoint Online*.
     - **Punteggio di rischio** per l'avviso. Questo punteggio è il punteggio numerico per il livello di gravità dei rischi di avviso.
-    - Numero di **file** o di **messaggi di posta elettronica** associati all'avviso. Sono inoltre disponibili collegamenti a ogni file o indirizzo di posta elettronica associato all'attività di rischio.
+    - Numero di eventi associati all'avviso. Sono inoltre disponibili collegamenti a ogni file o indirizzo di posta elettronica associato all'attività di rischio.
 3. **Legenda attività rischio**: nella parte inferiore del grafico attività utente, una legenda con codice a colori consente di determinare rapidamente la categoria dei rischi per ogni avviso.
 4. **Cronologia attività di rischio**: sono elencate le cronologie complete di tutti gli avvisi di rischio associati al caso, inclusi tutti i dettagli disponibili nel corrispondente bolla di avviso.
 5. **Azioni del caso**: le opzioni per la risoluzione del caso si trovano nella barra degli strumenti azione caso. È possibile risolvere un caso, inviare un messaggio di posta elettronica al dipendente o inoltrare il caso per un'indagine su dati o dipendenti.

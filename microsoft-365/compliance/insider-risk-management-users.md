@@ -1,5 +1,5 @@
 ---
-title: Utenti di gestione dei rischi Insider (anteprima)
+title: Utenti di gestione dei rischi Insider
 description: Informazioni sugli utenti di gestione dei rischi insider in Microsoft 365
 keywords: Microsoft 365, gestione dei rischi Insider, gestione dei rischi, conformità
 localization_priority: Normal
@@ -12,19 +12,19 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a9ff7e38a99a5fe5bd8da5301bec5e19bc015cf3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072789"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179107"
 ---
-# <a name="insider-risk-management-users-preview"></a>Utenti di gestione dei rischi Insider (anteprima)
+# <a name="insider-risk-management-users"></a>Utenti di gestione dei rischi Insider
 
 Gli utenti di gestione dei rischi Insider sono impiegati nell'organizzazione che sono inclusi in uno o più criteri di gestione dei rischi Insider. Utilizzare il **Dashboard utenti** per esaminare rapidamente le informazioni sui rischi per i dipendenti e per aggiungere un dipendente a un criterio di gestione dei rischi Insider esistente. Ogni utente incluso in un criterio di gestione dei rischi Insider contiene le seguenti informazioni visualizzate nel **dashboard degli utenti**:
 
-- **Users: il**nome utente di un utente.
-- **Livello di rischio**: 
+- **Utenti**: il nome utente di un utente.
+- **Livello di rischio**: il livello di rischio calcolato corrente dell'utente. Questo punteggio viene calcolato ogni 24 ore e utilizza i punteggi dei rischi di avviso provenienti da tutti gli avvisi attivi associati all'utente.
 - **Avvisi attivi**: il numero di avvisi attivi per tutti i criteri.
 - **Violazioni confermate**: il numero di casi risolti come *violazioni dei criteri confermate* per l'utente.
 - **Caso**: il caso attivo corrente per l'utente.
@@ -54,5 +54,5 @@ Completare la procedura seguente per aggiungere un utente a un criterio di risch
 2. Selezionare **Aggiungi un utente a un criterio** sulla barra degli strumenti.
 3. Nella finestra di dialogo **Aggiungi nuovo utente** , iniziare a digitare un nome utente nel campo **utente** . Selezionare l'utente che si desidera aggiungere a un criterio.
 4. Selezionare la freccia a discesa del campo **criterio** per visualizzare i criteri di gestione dei rischi Insider configurati. Selezionare il criterio a cui aggiungere l'utente.
-5. Utilizzare il controllo del dispositivo di scorrimento della **finestra di monitoraggio** per definire il...... L'intervallo per la finestra di monitoraggio è compreso tra 5 e 30 giorni.
+5. Utilizzare il controllo del dispositivo di scorrimento della **finestra di attivazione** per definire la durata del criterio attivo per l'utente e viene attivato quando l'utente esegue la prima attività corrispondente al criterio. L'intervallo per la finestra di monitoraggio è compreso tra 5 e 30 giorni.
 6. Selezionare **Aggiungi** e quindi **conferma** per aggiungere l'utente al criterio.

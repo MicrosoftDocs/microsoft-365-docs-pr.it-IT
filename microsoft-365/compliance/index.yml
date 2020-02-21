@@ -13,24 +13,22 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: e3c8b712931c4225bff0a989b9846957f9a6be79
-  ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+  ms.openlocfilehash: 4e118d0aac0164370f7d7c2d403f15276268f8bf
+  ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 02/06/2020
-  ms.locfileid: "41800066"
+  ms.lasthandoff: 02/21/2020
+  ms.locfileid: "42179227"
 landingContent:
 - title: Gestire la protezione delle informazioni
   linkLists:
   - linkListType: overview
     links:
-    - text: Proteggere le informazioni
-      url: protect-information.md
     - text: Etichette di riservatezza
       url: sensitivity-labels.md
     - text: Prevenzione della perdita di dati (DLP)
       url: data-loss-prevention-policies.md
-    - text: Tipi di informazioni sensibili
+    - text: Tipi di informazioni riservate
       url: custom-sensitive-info-types.md
     - text: Crittografia della posta elettronica
       url: email-encryption.md
@@ -38,32 +36,36 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Gestire i record in Microsoft 365
+    - text: Etichette di conservazione
+      url: labels.md
+    - text: Criteri di conservazione
+      url: retention-policies.md
+    - text: Gestione dei record
       url: records-management.md
     - text: Gestione del piano di archiviazione
       url: file-plan-manager.md
-    - text: Etichette di conservazione
-      url: labels.md
     - text: Criteri di conservazione basati su eventi
       url: event-driven-retention.md
-    - text: Cassette postali inattive
-      url: inactive-mailboxes-in-office-365.md
-    - text: Visualizzare i report sulla governance dei dati
+    - text: Importazione PST
+      url: importing-pst-files-to-office-365.md
+    - text: Connettori di dati di terze parti
+      url: archiving-third-party-data.md
+    - text: Rapporti sulla governance dei dati
       url: view-the-data-governance-reports.md
-- title: Gestire rischi interni
+- title: Gestione dei rischi Insider
   linkLists:
   - linkListType: overview
     links:
-    - text: Proteggere l'accesso di utenti e dispositivi
-      url: protect-access-to-data-and-services.md
-    - text: Gestione accessi con privilegi
-      url: privileged-access-management-overview.md
-    - text: Archivio protetto del cliente
-      url: customer-lockbox-requests.md
+    - text: Gestione dei rischi Insider
+      url: insider-risk-management.md
     - text: Conformità delle comunicazioni
       url: communication-compliance.md
     - text: Barriere informative
       url: information-barriers.md
+    - text: Gestione accessi con privilegi
+      url: privileged-access-management-overview.md
+    - text: Archivio protetto del cliente
+      url: customer-lockbox-requests.md
     - text: Customer Key
       url: customer-key-overview.md
 - title: Individuare e rispondere
@@ -72,11 +74,13 @@ landingContent:
     links:
     - text: Advanced eDiscovery
       url: overview-ediscovery-20.md
-    - text: Gestire un'analisi dei dati
-      url: overview-data-investigations.md
-    - text: Cercare contenuto
+    - text: EDiscovery di base
+      url: ediscovery-cases.md
+    - text: Ricerca contenuto
       url: search-for-content.md
-    - text: Eseguire ricerche nel log di controllo
+    - text: Indagini sui dati (anteprima)
+      url: overview-data-investigations.md
+    - text: Controllo
       url: search-the-audit-log-in-security-and-compliance.md
 - title: Introduzione alla conformità alle normative
   linkLists:

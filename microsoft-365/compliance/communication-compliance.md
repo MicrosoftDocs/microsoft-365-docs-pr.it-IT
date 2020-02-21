@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d5eb8b2f9aff59363c60d7bd75aa3f76fdf1283a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078695"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179237"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformità della comunicazione in Microsoft 365
 
@@ -36,6 +36,8 @@ I criteri di conformità della comunicazione in Microsoft 365 consentono di supe
 - Applicazione di regolamentazione e rischio di ammende
 
 In alcune organizzazioni può verificarsi una separazione dei compiti tra il supporto IT e il gruppo di gestione della conformità. Microsoft 365 supporta la separazione tra la configurazione della conformità della comunicazione e la configurazione dei criteri per l'analisi delle comunicazioni. Ad esempio, il gruppo IT di un'organizzazione potrebbe essere responsabile dell'impostazione delle autorizzazioni e dei gruppi di ruoli per supportare i criteri di conformità della comunicazione configurati e gestiti dal team di conformità dell'organizzazione.
+
+Per una breve panoramica della conformità della comunicazione, vedere il [rilevamento delle molestie sul posto di lavoro e rispondere con la conformità della comunicazione in microsoft 365](https://youtu.be/z33ji7a7Zho) video sul [canale Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
 ## <a name="scenarios-for-communication-compliance"></a>Scenari per la conformità della comunicazione
 

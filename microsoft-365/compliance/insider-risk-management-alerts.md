@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d1946bb3667fbdde6e7d2c3fbc70f8f546890e27
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072883"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179217"
 ---
-# <a name="insider-risk-management-alerts-preview"></a>Avvisi relativi alla gestione dei rischi Insider (anteprima)
+# <a name="insider-risk-management-alerts"></a>Avvisi relativi alla gestione dei rischi Insider
 
 Gli avvisi di gestione dei rischi Insider vengono generati automaticamente dagli indicatori di rischio definiti nei criteri di gestione dei rischi. Gli avvisi forniscono agli analisti e ai ricercatori una panoramica generale dello stato del rischio corrente e consentono all'organizzazione di valutare e intraprendere azioni per i rischi individuati.
 
@@ -29,7 +29,7 @@ Il dashboard di **avviso** dei rischi insider consente di visualizzare e interve
 
 - **Avvisi per la revisione**: sono elencati il numero totale di avvisi che richiedono la revisione e la valutazione, inclusa una scomposizione in base alla gravità degli avvisi.
 - **Aprire avvisi negli ultimi 30 giorni**: il numero totale di avvisi creati da criteri corrisponde negli ultimi 30 giorni, ordinati in base ai livelli di gravità degli avvisi alti, medi e bassi.
-- **Tempo medio per gli avvisi risolti**: un riepilogo delle statistiche utili sugli avvisi:
+- **Tempo medio per la risoluzione degli avvisi**: un riepilogo delle statistiche utili sugli avvisi:
     - Tempo medio per risolvere gli avvisi di gravità elevata, elencati in ore, giorni o mesi.
     - Tempo medio per la risoluzione degli avvisi di gravità media, elencati in ore, giorni o mesi.
     - Tempo medio per risolvere gli avvisi di gravità bassa, elencati in ore, giorni o mesi.

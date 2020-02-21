@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5a3401b80469fa6d22d973204703a6b012ebb11b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cc0c698b5c27b41548b646d03d9f94a2f8671eea
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072749"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179187"
 ---
-# <a name="insider-risk-management-in-microsoft-365-preview"></a>Gestione dei rischi insider in Microsoft 365 (anteprima)
+# <a name="insider-risk-management-in-microsoft-365"></a>Gestione dei rischi insider in Microsoft 365
 
-La gestione dei rischi Insider è una soluzione a rischio interno in Microsoft 365 che consente di ridurre al minimo i rischi interni, consentendo di rilevare, indagare ed eseguire azioni sulle attività a rischio nell'organizzazione. I criteri personalizzati consentono di rilevare e intervenire sulle attività di rischio dannose e involontarie nell'organizzazione, inclusi i casi di escalation ad altre soluzioni di analisi di Microsoft 365, se necessario. Gli analisti di rischio nell'organizzazione possono rapidamente prendere le azioni appropriate per assicurarsi che gli utenti siano conformi agli standard di conformità dell'organizzazione.
+La gestione dei rischi Insider è una soluzione in Microsoft 365 che consente di ridurre al minimo i rischi interni, consentendo di rilevare, indagare ed eseguire azioni sulle attività a rischio nell'organizzazione. I criteri personalizzati consentono di rilevare e intervenire sulle attività di rischio dannose e involontarie nell'organizzazione, inclusi i casi di escalation a Microsoft Advanced eDiscovery, se necessario. Gli analisti di rischio nell'organizzazione possono rapidamente prendere le azioni appropriate per assicurarsi che gli utenti siano conformi agli standard di conformità dell'organizzazione.
 
 Guardare il video seguente per informazioni su come la gestione dei rischi Insider può aiutare l'organizzazione a prevenire, rilevare e contenere i rischi durante la definizione di priorità per i valori dell'organizzazione, la cultura e l'esperienza dipendente:
 <br>
@@ -66,7 +66,7 @@ I criteri di gestione dei rischi Insider vengono creati utilizzando modelli pred
 
 - Furto dei dati del dipendente in partenza
 - Perdite di dati
-- Lingua offensiva nella comunicazione
+- Lingua offensiva nel messaggio di posta elettronica
 
 Per ulteriori informazioni, vedere [criteri di gestione dei rischi Insider](insider-risk-management-policies.md).
 

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft teams. Leggere questo articolo per ulteriori informazioni su come funziona.
-ms.openlocfilehash: 30436659b8b1bd336823e8dc6be06c8fbc8e08e3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2c530279dde03f357386f11b9e9af5d68be5ee7f
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075307"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170556"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita di dati e Microsoft Teams
 
@@ -31,7 +31,12 @@ Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le lice
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Panoramica di DLP per Microsoft Teams
 
-Recentemente, le funzionalità di [prevenzione della perdita di dati](data-loss-prevention-policies.md) (DLP) sono state estese per includere chat e messaggi di canale su Microsoft teams. Se l'organizzazione ha DLP, è ora possibile definire criteri che impediscono agli utenti di condividere le informazioni riservate in un canale di Microsoft teams o in una sessione di chat. Di seguito sono riportati alcuni esempi del funzionamento di questa protezione:
+Recentemente, le funzionalità di [prevenzione della perdita di dati](data-loss-prevention-policies.md) (DLP) sono state estese per includere chat e messaggi di canale su Microsoft teams.
+
+> [!NOTE]
+> DLP non è supportato, in questo momento, per i messaggi di canale privato.
+
+Se l'organizzazione ha DLP, è ora possibile definire criteri che impediscono agli utenti di condividere le informazioni riservate in un canale di Microsoft teams o in una sessione di chat. Di seguito sono riportati alcuni esempi del funzionamento di questa protezione:
 
 - **Esempio 1: protezione delle informazioni riservate nei messaggi**. Si supponga che un utente tenti di condividere le informazioni riservate in una chat o un canale di team con gli ospiti (utenti esterni). Se è stato definito un criterio DLP per evitare questo, vengono eliminati i messaggi con informazioni riservate inviate a utenti esterni. Questo accade automaticamente, e in pochi secondi, in base al modo in cui viene configurato il criterio DLP.
 
@@ -50,7 +55,7 @@ In questo caso, il mittente ha tentato di condividere un numero di previdenza so
 
 ![Opzioni per la risoluzione del messaggio bloccato](../media/dlp-teams-blockedmessage-possibleactions.png)
 
-Nell'organizzazione è possibile scegliere di consentire agli utenti di eseguire l'override di un criterio DLP. Quando si configurano i criteri DLP, è possibile utilizzare i suggerimenti per i criteri predefiniti oppure [personalizzare i suggerimenti](#to-customize-policy-tips) per i criteri per l'organizzazione. 
+Nell'organizzazione è possibile scegliere di consentire agli utenti di eseguire l'override di un criterio DLP. Quando si configurano i criteri DLP, è possibile utilizzare i suggerimenti per i criteri predefiniti oppure [personalizzare i suggerimenti](#to-customize-policy-tips) per i criteri per l'organizzazione.
 
 Tornando all'esempio, in cui un mittente ha condiviso un numero di previdenza sociale in un canale teams, ecco cosa ha visto il destinatario:
 
@@ -64,7 +69,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 1. Accedere al centro[https://protection.office.com](https://protection.office.com)sicurezza & conformità di Office 365 e accedere.
 
-2. Scegliere **i** > **criteri**di prevenzione della perdita di dati. 
+2. Scegliere **i** > **criteri**di prevenzione della perdita di dati.
 
 3. Selezionare un criterio e fare clic su **modifica**accanto a **impostazioni criterio**.
 
@@ -72,7 +77,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 5. Nella scheda **notifiche utente** selezionare **Personalizza il testo del messaggio di posta elettronica** e/o **Personalizza le opzioni di testo del suggerimento per i criteri** .<br/>![Personalizzare le notifiche degli utenti e i suggerimenti per i criteri](../media/dlp-teams-editrule-usernotifications.png)<br/>  
 
-6. Specificare il testo che si desidera utilizzare per le notifiche di posta elettronica e/o suggerimenti per i criteri e quindi scegliere **Salva**. 
+6. Specificare il testo che si desidera utilizzare per le notifiche di posta elettronica e/o suggerimenti per i criteri e quindi scegliere **Salva**.
 
 7. Nella scheda **impostazioni dei criteri** scegliere **Salva**.
 
@@ -84,7 +89,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 1. Accedere al centro[https://protection.office.com](https://protection.office.com)sicurezza & conformità di Office 365 e accedere.
 
-2. Scegliere **i** > **criteri**di prevenzione della perdita di dati. 
+2. Scegliere **i** > **criteri**di prevenzione della perdita di dati.
 
 3. Selezionare un criterio e esaminare i valori in **percorsi**. Se si visualizzano **i messaggi chat e canali del team**, è tutto pronto. In caso contrario, fare clic su **modifica**.<br/>![Posizioni per i criteri esistenti](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -102,11 +107,11 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 1. Accedere al centro[https://protection.office.com](https://protection.office.com)sicurezza & conformità di Office 365 e accedere.
 
-2. Scegliere **** > **** criteri > di prevenzione della perdita**di dati + creare un criterio**. 
+2. Scegliere **** > **** criteri > di prevenzione della perdita**di dati + creare un criterio**.
 
 3. Scegliere un [modello](data-loss-prevention-policies.md#dlp-policy-templates)e quindi fare clic su **Avanti**.<br/>In questo esempio, è stato scelto il modello di dati di identificazione personale degli Stati Uniti.<br/>![Modello di privacy per i criteri DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
 
-4. Nella scheda **denominare i criteri** specificare un nome e una descrizione per il criterio e quindi fare clic su **Avanti**. 
+4. Nella scheda **denominare i criteri** specificare un nome e una descrizione per il criterio e quindi fare clic su **Avanti**.
 
 5. Nella scheda **Scegli percorsi** mantenere l'impostazione predefinita di tutti i percorsi oppure selezionare **Consenti percorsi specifici**e quindi scegliere **Avanti**.<br/>Se sono stati scelti percorsi specifici, selezionarli per il criterio DLP e quindi scegliere **Avanti**.<br/>![Posizioni dei criteri DLP](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
@@ -120,7 +125,7 @@ Per eseguire questa attività, è necessario essere assegnati a un ruolo che dis
 
 8. Nella scheda **impostazioni dei criteri** , in **fare in modo che si desideri disattivare il criterio o eseguire prima un test?**, scegliere se abilitare il criterio, [testarlo prima](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)oppure tenerlo disattivato per ora, quindi scegliere **Avanti**.<br/>![Specificare se si desidera che il criterio venga attivato](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
-9. Nella scheda **Verifica le impostazioni** , esaminare le impostazioni per il nuovo criterio. Scegliere **modifica** per apportare modifiche. Al termine, scegliere **Crea**. 
+9. Nella scheda **Verifica le impostazioni** , esaminare le impostazioni per il nuovo criterio. Scegliere **modifica** per apportare modifiche. Al termine, scegliere **Crea**.
 
 Consentire a circa un'ora che il nuovo criterio funzioni correttamente attraverso il Data Center e sincronizzare gli account utente.
 
