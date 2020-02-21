@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 056685cbd49e6fb247a92357b3483b479d705c90
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085731"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170596"
 ---
 # <a name="battery-insights"></a>Intuizioni della batteria
 Questa visualizzazione fornisce metriche per l'utilizzo di energia, batteria e app per i dispositivi Microsoft Managed Desktop. A tal fine, un'app viene considerata "in uso" se è in esecuzione e in stato di inattività.
@@ -33,7 +33,7 @@ La tabella fornisce la durata prevista della batteria (in ore), la durata media 
 
 ## <a name="top-energy-consumers"></a>Top Energy consumer
 
-Nell'area **Top Energy consumer** sono disponibili le app nel proprio ambiente che consumano il maggior numero di energia in milliwatt-hours (MWh). Le app mostrate sono per dispositivo specifico, che si seleziona nella sezione **durata prevista della batteria** a sinistra. Ad esempio, per visualizzare i consumi per app per i dispositivi di Microsoft Surface Book 2, selezionare tale riga nell'area Durata batteria. Se non si seleziona un modello, i dati di consumo delle app sono visualizzati per tutte le app che sono disponibili per i dati collettivi.
+Nell'area **Top Energy consumer** sono disponibili le app nel proprio ambiente che consumano il maggior numero di energia in milliwatt-hours (MWh). Le app mostrate sono per dispositivo specifico, che si seleziona nella sezione **durata prevista della batteria** a sinistra. Ad esempio, per visualizzare il consumo per ogni app per i dispositivi di Microsoft Surface Book 2, selezionare tale riga nell'area Durata batteria. Se non si seleziona un modello, i dati di consumo delle app sono visualizzati per tutte le app che sono disponibili per i dati collettivi.
 
  Per ogni app, i segmenti colorati mostrano la distribuzione dell'utilizzo di energia dell'app tra queste categorie:
 

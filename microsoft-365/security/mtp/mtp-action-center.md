@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5f31c9cb5272248ae8250f73d054ca599b83edc2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c838db1b3792bda719102f18a7c473192a7f9481
+ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083785"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42175709"
 ---
 # <a name="go-to-the-action-center-to-view-remediation-actions"></a>Accedere al centro notifiche per visualizzare le azioni correttive
 
 **Si applica a:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 ## <a name="a-single-pane-of-glass-experience"></a>Un'esperienza a "riquadro unico"
 
@@ -47,11 +45,6 @@ Il team delle operazioni di sicurezza può lavorare in modo più efficace ed eff
 
 ## <a name="remediation-actions"></a>Azioni correttive
 
-Nella tabella seguente sono elencate le azioni correttive attualmente supportate nel centro notifiche: 
-
-|Azioni correttive degli endpoint  |Azioni correttive della posta elettronica  |
-|---------|---------|
-|Quarantena del file<br/>Rimozione della chiave del Registro di sistema<br/>Termine del processo <br/>Interruzione del servizio <br/>Rimozione della chiave del Registro di sistema <br/>Disabilitazione del driver <br/>Rimozione di attività pianificate      |Eliminazione temporanea di messaggi di posta elettronica o cluster<br/>Blocco di URL (al momento del clic)<br/>Disattivazione dell'inoltro della posta elettronica esterna          |
 
 ## <a name="go-to-the-action-center"></a>Accedere al centro notifiche
 

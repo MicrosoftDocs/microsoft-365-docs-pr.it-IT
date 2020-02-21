@@ -67,9 +67,11 @@
               items:
                 - name: Panoramica dell'aria
                   href: mtp/mtp-autoir.md
-                - name: Accedere al centro notifiche
+                - name: Visualizzare le azioni di correzione
+                  href: mtp/mtp-remediation-actions.md
+                - name: Visitare il centro azioni
                   href: mtp/mtp-action-center.md
-                - name: Visualizzare i risultati dell'aria
+                - name: Visualizzare i risultati dell'analisi
                   href: mtp/mtp-autoir-results.md
                 - name: Approva o rifiuta le azioni in sospeso
                   href: mtp/mtp-autoir-actions.md
@@ -364,6 +366,20 @@
               href: ./office-365-security/campaigns.md
             - name: Informazioni sugli attacchi più recenti con Threat Analytics
               href: ./mtp/latest-attack-campaigns.md
+            - name: Analisi e risposta alle minacce automatizzate
+              items:
+                - name: Panoramica di AIR
+                  href: ./office-365-security/office-365-air.md
+                - name: Visualizzare i dettagli e i risultati di un'indagine
+                  href: ./office-365-security/air-view-investigation-results.md
+                - name: Visualizzare e approvare le azioni di correzione
+                  href: ./office-365-security/air-remediation-actions.md
+                - name: Integrazione dell'aria con una soluzione di report personalizzata o di terze parti
+                  href: ./office-365-security/air-custom-reporting.md
+            - name: Individuare e risolvere rapidamente gli account utente compromessi
+              href: ./office-365-security/address-compromised-users-quickly.md
+            - name: Esaminare e correggere il messaggio di posta elettronica dannoso
+              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Visualizzare e leggere i report ATP
               href: ./office-365-security/view-reports-for-atp.md
             - name: Significato delle pagine di avviso dei collegamenti sicuri di ATP
@@ -372,12 +388,6 @@
               href: ./office-365-security/threat-trackers.md
             - name: Usare il simulatore di attacchi in Office 365
               href: ./office-365-security/attack-simulator.md
-            - name: Proteggere gli utenti con l'analisi e la risposta alle minacce
-              href: ./office-365-security/keep-users-safe-with-office-365-ti.md
-            - name: Analizzare e rispondere automaticamente alle minacce in Office 365
-              href: ./office-365-security/office-365-air.md
-            - name: Identificare e analizzare i messaggi di posta elettronica dannosi recapitati
-              href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Documenti attendibili in Office 365 ATP
               href: ./office-365-security/safe-docs.md
             - name: Esplora minacce (e rilevamenti in tempo reale)
@@ -393,6 +403,8 @@
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: Come funziona ATP
               items:
+                - name: Come funziona l'analisi automatizzata e la risposta
+                  href: ./office-365-security/automated-investigation-response-office.md
                 - name: Funzionamento di Collegamenti sicuri ATP
                   href: ./office-365-security/how-atp-safe-links-works.md
                 - name: Funzionamento di Allegati sicuri di ATP
@@ -403,8 +415,6 @@
                   href: ./office-365-security/atp-for-spo-odb-and-teams.md
                 - name: Funzionamento di analisi e risposta alle minacce
                   href: ./office-365-security/office-365-ti.md
-                - name: Funzionamento di Analisi e risposta alle minacce automatizzate
-                  href: ./office-365-security/automated-investigation-response-office.md
         - name: Gestione degli incidenti di sicurezza
           items:
             - name: Intervento in caso di incidente di sicurezza di Office 365
