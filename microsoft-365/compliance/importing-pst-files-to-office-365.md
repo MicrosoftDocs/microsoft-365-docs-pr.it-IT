@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: "Per gli amministratori: informazioni sull'uso del servizio di importazione nel Centro sicurezza e conformità per importare dati di posta elettronica (file PST) nelle cassette postali degli utenti in Exchange Online. Questo argomento include le domande frequenti e spiega il funzionamento del processo di importazione PST."
-ms.openlocfilehash: 82e1ccc41d2df5986b54054d8fb98350608c642e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 94681af376d7c9ae32bdd2cbbb2a28da464712c1
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072961"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170546"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files-to-office-365"></a>Panoramica dell'importazione di file PST dell'organizzazione in Office 365
 
@@ -145,7 +145,10 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
   
  **Dov'è disponibile il caricamento tramite rete?**
   
-Il caricamento tramite rete è attualmente disponibile negli Stati Uniti, nonché in Canada, Brasile, Regno Unito, Europa, India, Asia orientale, Asia sud-orientale, Giappone, Repubblica di Corea e Australia. Questa caratteristica sarà presto disponibile in altre aree geografiche.
+Il caricamento tramite rete è attualmente disponibile nelle seguenti aree geografiche: Stati Uniti, Canada, Brasile, Regno Unito, Europa, India, Asia orientale, Asia sud-orientale, Giappone, Repubblica di Corea e Australia. Questa caratteristica sarà presto disponibile anche in altre aree geografiche.
+
+> [!NOTE]
+> Al momento, il caricamento tramite rete dei file PST non è disponibile in Germania e Svizzera. Le domande frequenti verranno aggiornate quando il caricamento tramite rete sarà disponibile in questi paesi.
   
  **Quanto costa importare file PST con il caricamento tramite rete?**
   
@@ -215,6 +218,9 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
  **Dov'è disponibile la spedizione unità?**
   
 La spedizione unità è attualmente disponibile negli Stati Uniti, nonché in Canada, Brasile, Regno Unito, Europa, India, Asia orientale, Asia sud-orientale, Giappone, Repubblica di Corea e Australia. Questa funzionalità sarà presto disponibile in altre aree geografiche.
+
+> [!NOTE]
+> Al momento, la spedizione unità per importare file PST non è disponibile in Germania e Svizzera. Le domande frequenti verranno aggiornate quando la spedizione unità sarà disponibile in questi paesi.
   
  **Quali contratti di licenza commerciali supportano la spedizione unità?**
   

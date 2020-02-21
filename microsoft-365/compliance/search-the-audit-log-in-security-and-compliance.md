@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: e4e09360e4f07935867b03b3436a5581bb671774
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
+ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091369"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219187"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -63,7 +63,9 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 
 - Attività utente e amministratore in Microsoft Forms
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+- Attività utente e amministratore per le etichette di riservatezza per siti che usano SharePoint Online o Microsoft Teams
+
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Accertarsi di leggere i seguenti elementi prima di iniziare la ricerca del registro di controllo di Office 365.
 
@@ -309,7 +311,7 @@ Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
 |[Attività di Advanced eDiscovery](#advanced-ediscovery-activities)|[Attività di Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Attività di Microsoft Teams](#microsoft-teams-activities)|[Attività di Microsoft Teams per il settore sanitario](#microsoft-teams-healthcare-activities)|[Attività di Yammer](#yammer-activities)|
 |[Attività di Microsoft Power Automate](#microsoft-power-automate-activities)|[Attività di Microsoft Power Apps](#microsoft-power-apps-activities)|[Attività di Microsoft Stream](#microsoft-stream-activities)|
-|[Attività di Microsoft Forms](#microsoft-forms-activities)|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)|||
+|[Attività di Microsoft Forms](#microsoft-forms-activities)|[Attività sulle etichette di riservatezza](#sensitivity-label-activities)|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)||
 ||||
 
 ### <a name="file-and-page-activities"></a>Attività su file e pagine
@@ -330,7 +332,7 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |File eliminato dal Cestino|FileDeletedFirstStageRecycleBin|L'utente elimina un file dal Cestino di un sito.|
 |File eliminato dal Cestino di secondo livello|FileDeletedSecondStageRecycleBin|L'utente elimina un file dal Cestino di secondo livello di un sito.|
 |Etichetta dei criteri di conformità dei record eliminata|ComplianceRecordDelete|Un documento classificato come record è stato eliminato. Un documento viene considerato record se al documento è applicata un'etichetta di conservazione che classifica il contenuto come record.|
-|È stata rilevata una mancata corrispondenza della riservatezza del documento|DocumentSensitivityMismatchDetected|Un utente carica un documento classificato con un'etichetta di riservatezza che presenta una priorità più alta dell'etichetta di riservatezza applicata al sito in cui viene caricato il documento. <br/><br/> Questo evento non viene attivato se l'etichetta di riservatezza applicata a un sito presenta una priorità più alta di quella applicata a un documento caricato nel sito. Per altre informazioni sulla priorità delle etichette di riservatezza, vedere la sezione dedicata alla priorità delle etichette in [Informazioni sulle etichette di riservatezza](sensitivity-labels.md#label-priority-order-matters).|
+|È stata rilevata una mancata corrispondenza della riservatezza del documento|DocumentSensitivityMismatchDetected|Un utente carica un documento in un sito protetto con un'etichetta di riservatezza e il documento ha un'etichetta di riservatezza inferiore rispetto al sito. <br/><br/> Questo evento non viene attivato se l'etichetta di riservatezza applicata a un sito presenta una priorità più alta di quella applicata a un documento caricato nel sito. Per altre informazioni sulla priorità dell'etichetta di riservatezza, vedere [Priorità dell'etichetta (l’ordine è importante)](sensitivity-labels.md#label-priority-order-matters).|
 |Malware rilevato nel file|FileMalwareDetected|Il motore antivirus di SharePoint rileva malware in un file.|
 |Estrazione file rimossa|FileCheckOutDiscarded|Un utente elimina (o annulla) l'estrazione di un file. Ciò significa che le modifiche apportate al file dopo l'estrazione vengono eliminate e non salvate nella versione del documento nella raccolta documenti.|
 |File scaricato|FileDownloaded|Un utente scarica un documento da un sito.|
@@ -350,6 +352,7 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |Visualizzazione segnalata dal client|ClientViewSignaled|Il client di un utente (ad esempio un sito Web o un'app per dispositivi mobili), ha segnalato che la pagina indicata è stata visualizzata dall'utente. Questa attività viene spesso registrata dopo un evento PagePrefetched per una pagina. <br/><br/>**NOTA**: poiché gli eventi ClientViewSignaled sono segnalati dal client, anziché dal server, è possibile che l'evento non sia registrato dal server e che quindi non compaia nel log di controllo. È anche possibile che le informazioni nel record di controllo non siano attendibili. Tuttavia, dato che l'identità dell'utente viene convalidata mediante il token usato per creare il segnale, l'identità dell'utente riportata nel record di controllo corrispondente è accurata. |
 |(nessuno)|PagePrefetched|Il client di un utente (ad esempio un sito Web o un'app per dispositivi mobili) ha richiesto la pagina indicata per migliorare le prestazioni in caso di esplorazione da parte dell'utente. Questo evento viene registrato per indicare che il contenuto della pagina è stato servito al client dell'utente. Questo evento non indica definitivamente che l'utente è passato alla pagina. <br/><br/> Quando il contenuto della pagina viene visualizzato dal client (come richiesto dall'utente), è necessario generare un evento ClientViewSignaled. Non tutti i client supportano l'indicazione di caricamento in background, pertanto alcune attività predefinite potrebbero essere registrate come eventi PageViewed.|
 ||||
+
 
 ### <a name="folder-activities"></a>Attività su cartelle
 
@@ -822,6 +825,18 @@ Dove indicato di seguito nelle descrizioni, alcune operazioni contengono paramet
 |Risposta inviata|SubmitResponse|Un utente invia una risposta a un modulo. <br><br>La proprietà IsInternalForm:booleano indica se il partecipante si trova nella stessa organizzazione del proprietario del modulo.|
 ||||
 
+### <a name="sensitivity-label-activities"></a>Attività sulle etichette di riservatezza 
+
+La tabella seguente elenca gli eventi risultanti dalle attività di etichettatura per i siti di SharePoint Online e di Teams.
+
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:-----|:-----|:-----|
+|Etichetta di riservatezza applicata al sito|SensitivityLabelApplied|È stata applicata un'etichetta di riservatezza a un sito di SharePoint o di Teams.|
+|Etichetta di riservatezza rimossa dal sito|SensitivityLabelRemoved|È stata rimossa un'etichetta di riservatezza da un sito di SharePoint o di Teams.|
+|Etichetta di riservatezza applicata al file|FileSensitivityLabelApplied|È stata applicata un'etichetta di riservatezza a un documento con Office sul Web.|
+|Etichetta di riservatezza applicata a un file modificata|FileSensitivityLabelChanged|È stata applicata un'etichetta di riservatezza diversa a un documento con Office sul Web.|
+|Etichetta di riservatezza rimossa dal file|FileSensitivityLabelRemoved|È stata rimossa un'etichetta di riservatezza da un documento con Office sul Web.|
+
 ### <a name="exchange-admin-audit-log"></a>Log di controllo dell'amministratore di Exchange
 
 La registrazione di controllo dell'amministratore di Exchange, abilitata per impostazione predefinita in Office 365, registra un evento nel log di controllo di Office 365 quando un amministratore (o un utente a cui sono state assegnate autorizzazioni amministrative) apporta una modifica nell'organizzazione di Exchange Online. Le modifiche apportate mediante l'interfaccia di amministrazione di Exchange o eseguendo un cmdlet in PowerShell per Exchange Online vengono registrate nel log di controllo di amministrazione di Exchange. I cmdlet che iniziano con **Get-**, **Search-** o **Test-** non vengono registrati nel log di controllo di Office 365. Per informazioni dettagliate sulla registrazione di controllo dell'amministratore in Exchange, vedere [Registrazione di controllo dell'amministratore](https://go.microsoft.com/fwlink/p/?LinkID=619225).
@@ -848,6 +863,7 @@ Di seguito sono forniti alcuni suggerimenti per la ricerca delle attività di am
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
    Tenere presente che le stesse attività dell'amministratore di Exchange sono registrate sia nel log di controllo di amministrazione di Exchange che nel log di controllo di Office 365.
+
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

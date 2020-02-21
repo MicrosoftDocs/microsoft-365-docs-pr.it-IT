@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È anche possibile usare le etichette di conservazione per implementare una soluzione di gestione dei record per Microsoft 365.
-ms.openlocfilehash: 162b9fed66fa3135829f422ccd04a396ddf7e632
-ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
+ms.openlocfilehash: 0675601a888d19e6faaeb75169691909b071b92d
+ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42093455"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42179207"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -342,7 +342,7 @@ Se si applica un'etichetta di conservazione predefinita agli elementi esistenti 
     
 - Se si modifica o si rimuove l'etichetta di conservazione predefinita per una raccolta, una cartella o un set di documenti, l'etichetta viene modificata o rimossa anche da tutti gli elementi nella raccolta, nella cartella o nel set di documenti **tranne** che dagli elementi con etichette di conservazione esplicite, come i record.
     
-- Se si sposta un elemento con un'etichetta di conservazione predefinita da una raccolta, una cartella o un set di documenti a un'altra raccolta, cartella o set di documenti, l'elemento mantiene l'etichetta di conservazione predefinita esistente anche se la nuova posizione ne ha una diversa.
+- Se si sposta un elemento con un'etichetta di conservazione predefinita da una raccolta di siti, una raccolta, una cartella o un set di documenti a un'altra raccolta di siti, raccolta, cartella o set di documenti con un’etichetta diversa, l'elemento mantiene l'etichetta di conservazione predefinita esistente anche se la nuova posizione ne ha una diversa. Se l'elemento non ha un'etichetta prima dello spostamento, verrà applicata l'etichetta di conservazione predefinita della nuova posizione.
 
 **Record:** se si applica un'etichetta di record predefinita a una raccolta, a una cartella o a un set di documenti, viene applicata un'etichetta di record a tutti i singoli elementi presenti in quelle posizioni. Quando si sposta un nuovo elemento in un percorso con un'etichetta di record, tale elemento viene contrassegnato come record. Se però si cambia l'etichetta di conservazione predefinita in un'etichetta che non dichiara il contenuto come record, **non** viene rimossa l'etichetta di record dai singoli elementi, ma ognuno di essi mantiene la propria etichetta di record. Solo un amministratore della raccolta siti può rimuovere o modificare esplicitamente l'etichetta di conservazione degli elementi record.
 

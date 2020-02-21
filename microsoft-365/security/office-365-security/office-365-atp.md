@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection include allegati e collegamenti sicuri, strumenti avanzati anti-phishing, strumenti di report e funzionalità Threat Intelligence.
-ms.openlocfilehash: 7210cc2cfbb060ee6afe9042a5c8934ff6f53576
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9d7b2561c40e1322b7f15e72c48755268c119f24
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598743"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106839"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -101,7 +101,7 @@ Office 365 ATP - Piano 2 include i migliori [strumenti per l'analisi e la rispos
 
 - **[Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md)** (anche noto come Explorer) è un report in tempo reale che consente di identificare e analizzare le minacce recenti. È possibile configurare Explorer per visualizzare dati per periodi personalizzati.
 
-- Il **[simulatore di attacchi](attack-simulator.md)** consente di eseguire scenari di attacco realistici nell'organizzazione al fine di identificarne le vulnerabilità. Sono disponibili le simulazioni dei tipi di attacco correnti, tra cui [un attacco spear-phishing con nome visualizzato](attack-simulator.md#display-name-spear-phishing-attack), un [attacco password spraying](attack-simulator.md#password-spray-attack), un [attacco di forza bruta alle password](attack-simulator.md#brute-force-password-attack) e altro ancora.
+- Il **[simulatore di attacchi](attack-simulator.md)** consente di eseguire scenari di attacco realistici nell'organizzazione al fine di identificarne le vulnerabilità. Sono disponibili le simulazioni dei tipi di attacco correnti, tra cui [un attacco spear-phishing con furto delle credenziali](attack-simulator.md#credential-harvest-spear-phishing-attack), un [attacco password spraying](attack-simulator.md#password-spray-attack), un [attacco di forza bruta alle password](attack-simulator.md#brute-force-password-attack) e altro ancora.
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>Risparmiare tempo con Automated Investigation and Response
 

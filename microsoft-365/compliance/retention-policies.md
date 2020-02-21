@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: dd9cc9624cc58f481e8d8d491493efc22b095d5b
-ms.sourcegitcommit: b78a7a578dce1868b40675b7f7e6b0e16131704c
+ms.openlocfilehash: aa0c4667ab85945cd849f94fbfb1fda693e108bd
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42093441"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106886"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -189,7 +189,7 @@ Note:
   
 ### <a name="org-wide-policy"></a>Criteri a livello di organizzazione
 
-Una delle caratteristiche più efficaci dei criteri di conservazione riguarda la possibilità di applicare automaticamente i criteri alle posizioni in Office 365, tra cui:
+Una delle caratteristiche più efficaci dei criteri di conservazione riguarda la possibilità di applicare i criteri alle posizioni in Office 365, tra cui:
   
 - Posta elettronica di Exchange
     
@@ -202,7 +202,7 @@ Una delle caratteristiche più efficaci dei criteri di conservazione riguarda la
 - Cartelle pubbliche di Exchange
     
 
-![Opzione Tutte le posizioni](../media/c343bd8e-42ac-4f17-a338-36f3c9598a86.png)
+![Opzione Tutte le posizioni](../media/retention-policies-all-locations.png)
 
 Altre caratteristiche importanti di un criterio di conservazione a livello di organizzazione includono:
   
@@ -215,9 +215,7 @@ Altre caratteristiche importanti di un criterio di conservazione a livello di or
 Quando si scelgono le posizioni, è possibile includere o escludere facilmente un'intera posizione, ad esempio la posta elettronica di Exchange o gli account di OneDrive. A questo scopo, attivare o disattivare lo **Stato** di tale posizione. 
   
 Come per i criteri a livello di organizzazione, un criterio applicabile a una qualsiasi combinazione di posizioni complete può includere un numero illimitato di cassette postali o siti. Ad esempio, se un criterio include tutta la posta elettronica di Exchange e tutti i siti di SharePoint, verranno inclusi tutti i siti e tutte le cassette postali, indipendentemente dal numero. Inoltre, per Exchange, le nuove cassette postali create dopo l'applicazione del criterio ereditano automaticamente il criterio.
- 
-![Pagina Seleziona posizioni](../media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
-  
+
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Criteri con specifiche inclusioni o esclusioni
 
 È anche possibile applicare i criteri di conservazione a specifici utenti, gruppi di Office 365 o siti. A questo scopo, attivare lo **Stato** di tale posizione e quindi usare i collegamenti per includere o escludere determinati utenti, gruppi di Office 365 o siti. 
@@ -232,9 +230,11 @@ Anche se questi limiti esistono, è importante sapere che possono essere superat
   
 ### <a name="skype-locations"></a>Posizioni Skype
 
-A differenza della posta elettronica di Exchange, non è possibile attivare lo stato della posizione Skype per includere tutti gli utenti, ma è possibile attivare la posizione e quindi scegliere manualmente gli utenti di cui si desidera conservare le conversazioni.
+A differenza della posta elettronica di Exchange, non è possibile attivare lo stato della posizione Skype per includere tutti gli utenti ma quando si attiva la posizione, sarà possibile scegliere manualmente gli utenti di cui si desidera conservare le conversazioni:
+
+![Scegliere il percorso Skype per i criteri di conservazione](../media/skype-location-retention-policies.png)
   
-Se si scelgono utenti di Skype for Business, è possibile includere rapidamente tutti gli utenti selezionando la casella **Nome** nell'intestazione di colonna. È necessario considerare, però, che ciascun utente viene conteggiato come specifica inclusione nei criteri. Di conseguenza, se si includono più di 1.000 utenti, si applicano i limiti indicati nella sezione precedente. La selezione di tutti gli utenti di Skype da questa posizione non coincide con la procedura che prevede l'inclusione predefinita di tutti gli utenti di Skype con i criteri a livello di organizzazione. 
+Quando si seleziona **Scegli utenti **, è possibile includere rapidamente tutti gli utenti selezionando la casella **Nome ** nell'intestazione di colonna. È necessario considerare, però, che ciascun utente viene conteggiato come specifica inclusione nei criteri. Di conseguenza, se si includono più di 1.000 utenti, si applicano i limiti indicati nella sezione precedente. La selezione di tutti gli utenti di Skype da questa posizione non coincide con la procedura che prevede l'inclusione predefinita di tutti gli utenti di Skype con i criteri a livello di organizzazione. 
   
 ![Pagina di scelta utenti Skype](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   

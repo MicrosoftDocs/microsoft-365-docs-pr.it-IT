@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato senza ostacolare la produttività e la capacità di collaborare degli utenti. È possibile usare le etichette di riservatezza per applicare al contenuto etichettato le impostazioni di protezione, tra cui crittografia o filigrane.
-ms.openlocfilehash: fa04fdc2713cbba090ec56972cd87e6cbdc4387b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Usare le etichette di riservatezza del framework Microsoft Information Protection per classificare e proteggere i dati dell'organizzazione, garantendo al contempo che la produttività degli utenti e la loro capacità di collaborare non vengano ostacolate. Queste etichette possono applicare impostazioni di protezione che includono contrassegni visivi di crittografia come piè di pagina e filigrane.
+ms.openlocfilehash: 92bfb768cf044b6a4837e5dab6936c2d77424a25
+ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081460"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106829"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
 Per svolgere il proprio lavoro, i membri dell'organizzazione collaborano con altri utenti, sia interni che esterni all'organizzazione stessa. Questo significa che i contenuti non sono più protetti da un firewall, ma possono spostarsi tra dispositivi, applicazioni e servizi. E quando si spostano, è preferibile che lo facciano in modo sicuro e protetto, nel rispetto dei criteri aziendali e di conformità dell'organizzazione.
 
-Con le etichette di riservatezza è possibile classificare e proteggere il contenuto riservato dell'organizzazione senza ostacolare la produttività e la capacità di collaborare degli utenti.
+Le etichette di riservatezza del framework Microsoft Information Protection consentono di classificare e proteggere i dati dell'organizzazione, garantendo al contempo che la produttività degli utenti e la loro capacità di collaborare non vengano ostacolate.
 
 Esempio che mostra le etichette di riservatezza disponibili in Excel dalla scheda **Home** sulla barra multifunzione. In questo esempio l'etichetta applicata viene visualizzata sulla barra di stato:
 
@@ -100,7 +100,11 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     
     Per altre informazioni sulle impostazioni di **prevenzione della perdita dei dati degli endpoint** quando si crea o si modifica un'etichetta di riservatezza, inclusi i prerequisiti importanti, vedere [Come Windows Information Protection protegge i file con etichetta di riservatezza](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
-- **Applicare automaticamente l'etichetta a contenuto che contiene informazioni sensibili.** È possibile selezionare i tipi di informazioni sensibili che si vogliono etichettare e scegliere se applicare l'etichetta automaticamente oppure chiedere agli utenti di applicare l'etichetta consigliata. Se si consiglia un'etichetta, il messaggio di richiesta visualizza qualsiasi testo selezionato. Ad esempio:
+- **Proteggere il contenuto in contenitori come siti e gruppi** quando si sceglie l'anteprima per [usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md).
+    
+    Le opzioni di configurazione per **Impostazioni sito e gruppo** non vengono visualizzate finché non si sceglie l'anteprima. Tenere presente che questa configurazione di etichetta non comporta l'etichettatura automatica dei documenti, ma le impostazioni di etichetta proteggono il contenuto controllando l'accesso al contenitore in cui sono archiviati i documenti. Queste impostazioni includono il livello di privacy, indipendentemente dal fatto che il proprietario di un gruppo di Office 365 possa aggiungere utenti Guest al gruppo, e il livello di accesso concesso a un dispositivo non gestito.
+
+- **Applicare l'etichetta automaticamente nelle app di Office o consigliare un'etichetta.** È possibile scegliere i tipi di informazioni riservate che si desidera etichettare e l'etichetta può essere applicata automaticamente oppure richiedere agli utenti di applicare l'etichetta consigliata. Se si consiglia un'etichetta, viene visualizzato il messaggio che si sceglie. Ad esempio:
     
     ![Messaggio in cui si richiede di assegnare un'etichetta obbligatoria](../media/Sensitivity-label-Prompt-for-required-label.png)
     
