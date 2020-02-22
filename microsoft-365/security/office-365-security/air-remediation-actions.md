@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Informazioni sulle azioni di correzione nelle funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 1a39ffb5bf57e0f4ffa38a210c299480d3081345
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: e75ef1523247cbddcf6cb28d69a889db1de8e42f
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175937"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228532"
 ---
 # <a name="remediation-actions-following-an-automated-investigation-in-office-365"></a>Azioni di correzione dopo un'analisi automatizzata in Office 365
 
@@ -42,14 +42,13 @@ ms.locfileid: "42175937"
 Durante la visualizzazione dei [Dettagli di un'indagine](air-view-investigation-results.md), è possibile approvare o rifiutare tutte le azioni di correzione in sospeso. Si consiglia di eseguire questa operazione non appena possibile in modo che le indagini automatizzate siano state completate.
 
 > [!IMPORTANT]
-> Le autorizzazioni appropriate devono essere approvate o rifiutate. Vedere le [autorizzazioni necessarie per utilizzare le funzionalità aeree](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities).
+> Le autorizzazioni appropriate devono essere approvate o rifiutate. Vedere le [autorizzazioni necessarie per utilizzare le funzionalità aeree](office-365-air.md#required-permissions-to-use-air-capabilities).
 
 1. Selezionare la scheda **azioni** .
 
 2. Selezionare un elemento nell'elenco. (Vengono attivati i pulsanti approva e rifiuta).
 
 3. Esaminare le informazioni disponibili per gli elementi selezionati e quindi approvare o rifiutare le azioni. 
-
  - **Approvazione** consente di iniziare la correzione.
  - **Rifiuto** non esegue altre azioni
 

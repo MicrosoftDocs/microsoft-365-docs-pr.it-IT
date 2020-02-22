@@ -16,20 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzando il Centro sicurezza Microsoft 365 o il Centro conformità Microsoft 365, è possibile gestire le autorizzazioni in una posizione centralizzata per tutte le attività relative alla sicurezza o alla conformità.
-ms.openlocfilehash: 6553020c215b3ffad0707a699414a6939ef368ca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 78068a4c6f32dbc53b8fb649c0f27905e0e634ad
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082441"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42230109"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Autorizzazioni nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365
 
 L'organizzazione deve gestire gli scenari di sicurezza e conformità che riguardano tutti i servizi di Microsoft 365. Inoltre, è necessaria flessibilità per fornire le corrette autorizzazioni di amministratore alle persone giuste nel gruppo IT dell'organizzazione. Utilizzando il Centro sicurezza Microsoft 365 o il Centro conformità Microsoft 365, è possibile gestire le autorizzazioni in una posizione centralizzata per tutte le attività relative alla sicurezza o alla conformità.
 
 In seguito all'assegnazione dei ruoli di amministratore da parte dell'amministratore globale, gli amministratori avranno accesso a funzionalità e dati che riguardano tutti i servizi di Microsoft 365, come il Centro sicurezza Microsoft 365, il Centro conformità Microsoft 365, Azure, Office 365 ed Enterprise Mobility + Security.
-
-![Pagina delle autorizzazioni nel Centro sicurezza Microsoft 365](../../media/m365-security-permissions-page.png)
 
 ## <a name="what-the-microsoft-365-roles-are"></a>Quali sono i ruoli di Microsoft 365
 

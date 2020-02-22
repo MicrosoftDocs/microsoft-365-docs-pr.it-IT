@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 8f781687047f39d4d038e293e50c9caad83d051a
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 436d70934e32f8609d35532188ac71cbd590c345
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179247"
+ms.locfileid: "42228582"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Indagine automatizzata e risposta (AIR) in Office 365
 
@@ -132,28 +132,6 @@ Come un altro esempio, si supponga di visualizzare i dati relativi ai messaggi d
 ![Avvio di un'indagine per malware in Esplora risorse](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che vengono attivate da una visualizzazione in Esplora risorse includono un'analisi radice, procedure per identificare e correlare le minacce e le azioni consigliate per attenuare tali minacce.
-
-## <a name="how-to-get-air"></a>Come ottenere aria
-
-Office 365 AIR è incluso negli abbonamenti seguenti:
-
-- Microsoft 365 E5
-- Office 365 E5
-- Microsoft Threat Protection
-- Office 365 Advanced Threat Protection (Piano 2)
-
-Se non si dispone di una o più di queste sottoscrizioni, [avviare una versione di valutazione gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
-
-Per ulteriori informazioni sulla disponibilità delle funzionalità, visitare la [disponibilità delle funzionalità tra i piani di Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
-
-## <a name="required-permissions-to-use-air-capabilities"></a>Autorizzazioni necessarie per l'utilizzo delle funzionalità AEREe
-
-Le autorizzazioni vengono concesse tramite alcuni ruoli, ad esempio quelli descritti nella tabella seguente: 
-
-|Attività |Ruoli necessari |
-|--|--|
-|Per impostare le caratteristiche dell'aria |Uno dei ruoli seguenti: <br/>- **Amministratore globale**<br/>- **Amministratore della sicurezza** <br/>Questi ruoli possono essere assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
-|Per approvare o rifiutare le azioni consigliate|Uno dei ruoli seguenti, assegnato in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center):<br/>- **Amministratore globale** <br/>- **Amministratore della sicurezza**<br/>- **Lettore di sicurezza** <br/>--- e ---<br/>- **Search and Purge** (questo ruolo è assegnato solo nel [Centro sicurezza & conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Search and Purge a quel nuovo gruppo di ruoli.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

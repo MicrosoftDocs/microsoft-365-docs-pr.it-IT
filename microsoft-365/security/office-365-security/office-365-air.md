@@ -1,5 +1,5 @@
 ---
-title: Analizzare e rispondere automaticamente alle minacce in Office 365
+title: Analisi e risposta automatizzata di Office 365
 keywords: ARIA, autoIR, ATP, automatizzato, investigazione, risposta, correzione, minacce, avanzate, minacce, protezione
 f1.keywords:
 - NOCSH
@@ -15,109 +15,58 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Iniziare a utilizzare le funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: d45141ce671a4615cb4fd550e36bc7215cd38d51
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7bfa07880a302f77769ee15e9108db21dac2519c
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088315"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42228569"
 ---
-# <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Analizzare e rispondere automaticamente alle minacce in Office 365
+# <a name="office-365-automated-investigation-and-response"></a>Analisi e risposta automatizzata di Office 365
 
-## <a name="overview"></a>Panoramica
+[Protezione avanzata dalle minacce di Office 365](office-365-atp.md) Il piano 2 include potenti funzionalità di analisi e risposta automatizzate che consentono di salvare il tempo e lo sforzo del team per le operazioni di sicurezza. Quando vengono attivati determinati avvisi, vengono avviati uno o più schemi di sicurezza e il processo di analisi automatizzato inizia. In questo modo il team delle operazioni di sicurezza è abilitato a concentrarsi sulle attività con priorità alta senza perdere di vista gli avvisi attivati. 
 
-A seconda dell'abbonamento, la [protezione avanzata dalle minacce di Office 365](office-365-atp.md) può includere funzionalità di analisi e risposta automatizzate in grado di salvare il tempo e lo sforzo del team per le operazioni di sicurezza per gestire gli avvisi e le minacce.
+A livello elevato, il flusso di aria funziona in questo modo:
 
-- Per iniziare a usare le funzionalità di analisi e risposta automatizzate in Office 365, utilizzare questo articolo. 
-- Per ottenere una panoramica di come funziona, vedere [Automatic Investigation and Response in Office 365](automated-investigation-response-office.md).
-
-> [!TIP]
-> Si possiedono Microsoft 365 E5 o Microsoft 365 E3 con identità e protezione dalle minacce? Valutare la possibilità di provare l' [analisi automatizzata e la risposta (Air) in Microsoft Threat Protection](../mtp/mtp-autoir.md).
-
-Con le funzionalità di analisi e risposta automatizzate, quando vengono attivati determinati avvisi, vengono avviati uno o più schemi di sicurezza e il processo di analisi automatizzato inizia. Durante e dopo un processo di analisi automatizzato, il team di sicurezza può eseguire le operazioni seguenti:
-
-- [Visualizzare i dettagli di un'indagine](#view-details-of-an-investigation)
-- [Esaminare e approvare le azioni in seguito a un'indagine](#review-and-approve-actions) 
-- [Visualizzare i dettagli relativi a un avviso relativo a un'indagine](#view-details-about-an-alert-related-to-an-investigation)
-
-> [!IMPORTANT]
-> Per eseguire le attività descritte in questo articolo, è necessario disporre delle autorizzazioni appropriate. Vedere le [autorizzazioni necessarie per utilizzare le funzionalità aeree](automated-investigation-response-office.md#required-permissions-to-use-air-capabilities).
-
-## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
-
-1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso. Questo porta al centro sicurezza & Compliance.
-
-2. Eseguire una delle operazioni seguenti:
-
-    - Andare al > **Dashboard**di **gestione delle minacce**. Questo porta al dashboard di [sicurezza](security-dashboard.md). I widget aria vengono visualizzati nella parte superiore del [dashboard di sicurezza](security-dashboard.md). Selezionare un widget, ad esempio **Riepilogo indagini**.
-
-    - Andare a > **indagini**sulla **gestione delle minacce**. 
-
-    Entrambi i metodi consentono di eseguire l'elenco delle indagini.
-
-    ![Pagina di ricerca principale per AIR](../../media/air-maininvestigationpage.png) 
-
-3. Nell'elenco delle indagini selezionare un elemento nella colonna **ID** . Verrà visualizzata la pagina Dettagli analisi, a partire dal grafico di analisi in visualizzazione.
-
-    ![Pagina del grafico dell'indagine aerea](../../media/air-investigationgraphpage.png)
-
-4. Utilizzare le varie schede per ulteriori informazioni sull'indagine.
-
-## <a name="review-and-approve-actions"></a>Esaminare e approvare le azioni
-
-In Office 365, le indagini automatizzate in genere determinano una o più azioni consigliate. Tuttavia, non vengono eseguite azioni finché non vengono approvate dal team di operazioni di sicurezza. Utilizzare la procedura seguente per esaminare e approvare le azioni.
-
-1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso. 
-
-2. Andare a > **indagini**sulla **gestione delle minacce**.
-
-3. Nell'elenco delle indagini selezionare un elemento nella colonna **ID** . 
-
-3. Nella visualizzazione dettagli analisi selezionare la scheda **azioni** . Tutte le azioni che sono in attesa di approvazione sono elencate qui.
-
-4. Selezionare un elemento nell'elenco.
-
-5. Selezionare **approva** per eseguire l'azione consigliata (o **rifiuta** per chiudere l'inchiesta senza intervenire).
-
-## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Visualizzare i dettagli relativi a un avviso relativo a un'indagine
-
-Alcuni tipi di avvisi attivano l'analisi automatizzata in Office 365. Per ulteriori informazioni, vedere [Alerts](automated-investigation-response-office.md#alerts). Utilizzare la procedura seguente per visualizzare i dettagli relativi a un avviso associato a un'indagine automatizzata.
-
-1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso. Questo porta al centro sicurezza & Compliance.
-
-2. Andare a > **indagini**sulla **gestione delle minacce**.
-
-3. Nell'elenco delle indagini selezionare un elemento nella colonna **ID** . 
-
-4. Per informazioni dettagliate sull'apertura di un'indagine, selezionare la scheda **avvisi** . Tutti gli avvisi che hanno attivato l'indagine sono elencati qui.
-
-5. Selezionare un elemento nell'elenco. Verrà aperto un riquadro a comparsa con informazioni dettagliate sull'avviso e collegamenti a ulteriori operazioni.
-
-6. Esaminare le informazioni nel riquadro a comparsa e, a seconda dell'avviso specifico, eseguire un'azione, ad esempio **risolvere**, **sopprimere**o **informare gli utenti**. 
-
-    - La **risoluzione** equivale alla chiusura di un avviso
-    
-    - Non **consente a** un criterio di attivare avvisi per un determinato periodo di tempo
-    
-    - **Notify gli utenti** avviano un messaggio di posta elettronica con gli indirizzi di posta elettronica degli utenti già immessi e consentono al team di operazioni di sicurezza di digitare un testo per gli utenti. (Analogo all'invio di un messaggio ai destinatari tramite [Esplora minacce](threat-explorer.md)).  
-
-## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Utilizzare l'API di attività di gestione di Office 365 per soluzioni di Reporting personalizzate o di terze parti
-
-Se l'organizzazione utilizza una soluzione di report personalizzata o di terze parti, è possibile visualizzare le informazioni sulle indagini automatizzate in tale soluzione utilizzando l'API di attività di gestione di Office 365.
-
-Per impostare questa impostazione, utilizzare le risorse seguenti:
-
-|Risorsa  |Descrizione  |
+|Passaggio  |Effetto  |
 |---------|---------|
-|[Panoramica delle API di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)     |L'API di attività di gestione di Office 365 fornisce informazioni su varie azioni e eventi relativi a utenti, amministratori, sistemi e criteri dei log attività di Office 365 e Azure Active Directory.         |
-|[Iniziare a utilizzare le API di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)     |L'API di gestione di Office 365 utilizza Azure AD per fornire servizi di autenticazione per l'applicazione per accedere ai dati di Office 365. Seguire la procedura descritta in questo articolo per configurare l'operazione.          |
-|[Guida di riferimento all'API dell'attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)     |È possibile utilizzare l'API di attività di gestione di Office 365 per recuperare le informazioni sulle azioni e sugli eventi degli utenti, dell'amministratore, del sistema e dei criteri dai registri delle attività di Office 365 e Azure AD. Leggere questo articolo per ulteriori informazioni su come funziona.        |
-|[Schema API di attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)     |Ottenere una panoramica dello [schema comune](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) e dello [schema di analisi e risposta di Office 365 ATP and Threat](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) per informazioni su tipi specifici di dati disponibili tramite l'API di attività di gestione di Office 365.         |
+|1     |Un avviso viene attivato da un evento di Office e un sistema di [sicurezza PlayBook](automated-investigation-response-office.md#security-playbooks) avvia un'indagine automatizzata per gli avvisi selezionati. <br/><br/>In alternativa, un analista di sicurezza può [attivare un'indagine automatizzata durante l'](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) utilizzo di [Esplora minacce](threat-explorer.md).        |
+|2     |Durante l'esecuzione di un'indagine automatizzata, vengono raccolti dati aggiuntivi relativi all'indirizzo di posta elettronica e alle entità correlate alla posta elettronica: file, URL e destinatari.  L'ambito dell'indagine può aumentare, poiché vengono attivati nuovi avvisi correlati.         |
+|3     |Durante e dopo un'analisi automatizzata, [i dettagli e i risultati](air-view-investigation-results.md) sono disponibili per la visualizzazione. I risultati includono [azioni consigliate](air-remediation-actions.md) che è possibile intraprendere per rispondere e correggere eventuali minacce individuate. Inoltre, è disponibile un [Registro PlayBook](air-view-investigation-results.md#playbook-log) che tiene traccia di tutte le attività investigative.<br/><br/>Se l'organizzazione utilizza una soluzione per la creazione di report personalizzati o una soluzione di terze parti, è possibile [utilizzare l'API di attività di gestione di Office 365](air-custom-reporting.md) per visualizzare le informazioni relative a indagini e minacce automatizzate.         |
+|4     |Il team delle operazioni di sicurezza esamina i [risultati e le raccomandazioni dell'analisi](air-view-investigation-results.md)e [approva le azioni di correzione](air-remediation-actions.md#approve-or-reject-pending-actions). In Office 365, non viene eseguita alcuna azione automaticamente. Le azioni di correzione vengono eseguite solo dopo l'approvazione da parte del team di sicurezza dell'organizzazione.         |
 
-## <a name="next-steps"></a>Passaggi successivi
+Durante e dopo un processo di analisi automatizzato, il team di sicurezza può eseguire le operazioni seguenti:
 
-- [Informazioni su come ottenere l'aria e vedere le autorizzazioni necessarie](automated-investigation-response-office.md#how-to-get-air)
-- [Ulteriori informazioni sugli avvisi](../../compliance/alert-policies.md)
-- [Trovare e studiare manualmente messaggi di posta elettronica dannosi che sono stati recapitati in Office 365](investigate-malicious-email-that-was-delivered.md)
-- [Informazioni su AIR in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Visitare la Guida di orientamento di Microsoft 365 per vedere cosa succederà tra breve e in uscita](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Visualizzare i dettagli relativi a un avviso relativo a un'indagine](air-view-investigation-results.md#view-details-about-an-alert-related-to-an-investigation)
+- [Visualizzare i dettagli dei risultati di un'indagine](air-view-investigation-results.md#view-details-of-an-investigation)
+- [Esaminare e approvare le azioni in seguito a un'indagine](air-remediation-actions.md#approve-or-reject-pending-actions)
+
+Per ulteriori informazioni, vedere [funzionamento dell'aria](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office).
+
+## <a name="how-to-get-air"></a>Come ottenere aria
+
+Office 365 AIR è incluso negli abbonamenti seguenti:
+
+- Microsoft 365 E5
+- Office 365 E5
+- Microsoft Threat Protection
+- Office 365 Advanced Threat Protection (Piano 2)
+
+Se non si dispone di una o più di queste sottoscrizioni, [avviare una versione di valutazione gratuita](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US).
+
+Per ulteriori informazioni sulla disponibilità delle funzionalità, visitare la [disponibilità delle funzionalità tra i piani di Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+
+## <a name="required-permissions-to-use-air-capabilities"></a>Autorizzazioni necessarie per l'utilizzo delle funzionalità AEREe
+
+Le autorizzazioni vengono concesse tramite alcuni ruoli, ad esempio quelli descritti nella tabella seguente: 
+
+|Attività |Ruoli necessari |
+|--|--|
+|Per impostare le caratteristiche dell'aria |Uno dei ruoli seguenti: <br/>- **Amministratore globale**<br/>- **Amministratore della sicurezza** <br/>Questi ruoli possono essere assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
+|Per approvare o rifiutare le azioni consigliate|Uno dei ruoli seguenti, assegnato in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel [Centro sicurezza & conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center):<br/>- **Amministratore globale** <br/>- **Amministratore della sicurezza**<br/>- **Lettore di sicurezza** <br/>--- e ---<br/>- **Search and Purge** (questo ruolo è assegnato solo nel [Centro sicurezza & conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Search and Purge a quel nuovo gruppo di ruoli.
+
+## <a name="related-articles"></a>Articoli correlati
+
+- [Indagine e reazione automatizzate in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+
+- [Analisi e correzione automatizzate in Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)

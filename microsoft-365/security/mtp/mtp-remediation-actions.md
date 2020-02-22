@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 73bb90a0537df8e6f23e4e0e50a748aebda3a487
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 65ace4bda091b3e000d25a984b706f26fe9c8696
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175935"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225484"
 ---
 # <a name="remediation-actions-in-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Azioni di correzione nelle funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection
 
@@ -36,7 +36,7 @@ Nella tabella seguente sono riepilogate le azioni di correzione attualmente supp
 
 |Azioni correttive degli endpoint  |Azioni correttive della posta elettronica  |
 |---------|---------|
-|Quarantena del file<br/>Rimozione della chiave del Registro di sistema<br/>Termine del processo <br/>Interruzione del servizio <br/>Rimozione della chiave del Registro di sistema <br/>Disabilitazione del driver <br/>Rimozione di attività pianificate      |Eliminazione temporanea di messaggi di posta elettronica o cluster<br/>Blocco di URL (al momento del clic)<br/>Disattivazione dell'inoltro della posta elettronica esterna          |
+|Quarantena del file<br/>Rimozione della chiave del Registro di sistema<br/>Termine del processo <br/>Interruzione del servizio <br/>Disabilitazione del driver <br/>Rimozione di attività pianificate      |Eliminazione temporanea di messaggi di posta elettronica o cluster<br/>Blocco di URL (al momento del clic)<br/>Disattivazione dell'inoltro della posta elettronica esterna          |
 
 Le azioni di correzione, sia che siano in attesa di approvazione o che sono già complete, possono essere visualizzate nel [Centro azioni](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 

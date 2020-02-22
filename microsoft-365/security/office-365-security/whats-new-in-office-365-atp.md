@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/28/2020
-ms.openlocfilehash: acb6dbf69033b97f2899738a5ca17182ac9942c6
-ms.sourcegitcommit: ee18bdd08e85b1262b91c180ccf61df59c19dab2
+ms.date: 02/21/2020
+ms.openlocfilehash: 09cf8e74cb52d75d454fec371ee965978851b5e5
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106849"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42230069"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Novità di Office 365 ATP
 
@@ -45,6 +45,8 @@ In questo articolo vengono elencate le nuove funzionalità nell'ultima versione 
     - Filtri temporali granulari (giorno, ora, mezz'ora) 
 
 - Il widget **eventi** non consentiti è ora il widget **Centro azioni** . (Per visualizzare i widget di sicurezza, nel centro sicurezza & conformità di Office 365 accedere a **Threat Management** > **Review**).
+
+- [Documenti attendibili in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(anteprima)**
 
 ## <a name="december-2019"></a>Dicembre 2019
 
