@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c77793d7676e836e7b445bd9b638a835bb7051ff
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 6dcdfd7ec2230de3eec7ccc0db08f7f4a637263d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851823"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222070"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>Consiglio dell'esame degli istituti finanziari federali (FFIEC)
 
@@ -42,7 +42,7 @@ Per aiutare i clienti degli istituti finanziari a soddisfare i requisiti di conf
 
 Per ulteriori informazioni su come soddisfare i requisiti di FFIEC, i servizi cloud Microsoft forniscono i [report di attestazione SOC](offering-SOC.md) prodotti da una ditta CPA indipendente. Ad esempio, l'attestazione SOC 1 di tipo 2 si basa sulla norma AICPA SSAE 18 (vedere AT-C section 105) che ha sostituito SAS 70 ed è adatta per la creazione di report su alcuni controlli per la creazione di rapporti finanziari. I report SOC includono il parere del revisore sull'efficacia dei controlli Microsoft per la realizzazione degli obiettivi di controllo correlati durante il periodo di monitoraggio specificato. Gli istituti finanziari possono utilizzare questo controllo formale quando perseguono obblighi di conformità specifici di FFIEC per le risorse distribuite su Azure, Power BI e Office 365.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
@@ -59,9 +59,9 @@ Rapporti di attestazione di Azure e Office 365 SOC.
 
 Per aiutarti a rispettare tali obblighi, Microsoft fornisce le specifiche relative alla conformità con gli standard SOC come descritto in alto. Tuttavia, in definitiva, spetta a te decidere se i nostri servizi sono conformi alle leggi e ai regolamenti specifici applicabili all'Istituto. FFIEC consiglia inoltre che "gli utenti dei report di controllo o delle recensioni non debbano fare affidamento solo sulle informazioni contenute nel rapporto per verificare l'ambiente di controllo interno del TSP. È consigliabile utilizzare ulteriori procedure di verifica e monitoraggio, come descritto in modo più completo nell' [opuscolo relativo alla tecnologia di outsourcing](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) del manuale di esame di FFIEC it.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilizzare il Punteggio di conformità di Microsoft per valutare i rischi
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
 
-[Microsoft Compliance Score](compliance-score.md) è una funzionalità di anteprima del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), utilizzare il modello di [FFIEC Office 365](https://go.microsoft.com/fwlink/?linkid=2117912) preconfigurato e il [modello di FFIEC Intune](https://go.microsoft.com/fwlink/?linkid=2118101) per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
+[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo [aver impostato il Punteggio di conformità](compliance-score-setup.md), selezionare il modello preconfigurato [FFIEC Office 365](https://go.microsoft.com/fwlink/?linkid=2117912) e il [modello FFIEC Intune](https://go.microsoft.com/fwlink/?linkid=2118101) dal menu a discesa **modello** per consentire all'organizzazione di soddisfare i requisiti per il presente regolamento.
 
 ## <a name="resources"></a>Risorse
 

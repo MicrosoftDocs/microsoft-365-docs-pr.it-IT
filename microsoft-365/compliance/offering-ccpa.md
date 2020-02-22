@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4c761a62e901be065a588f1e4141b731831c4752
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: de9fcad3b1d54247114974ce4432068c136fdb2a
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851843"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222028"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>California Consumer Privacy Act (CCPA)
 
@@ -39,7 +39,7 @@ Per i clienti commerciali che operano in California, Microsoft fungerà da' prov
 
 Come indicato nell'OST, Microsoft è conforme a tutte le leggi e normative applicabili alla sua fornitura dei servizi online, che includerà il CCPA.  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Operazioni di sviluppo di Azure
@@ -93,9 +93,9 @@ Il CCPA richiede attività regolamentate che raccolgono, trasferiscono e vendono
 - Il CCPA introduce obblighi di consenso dei genitori coerenti con la legge Children's Online Privacy Protection Act (COPPA) per bambini di età inferiore ai 13 anni.
 - Per i bambini tra i 13 e i 16 anni, CCPA impone un nuovo obbligo di ottenere il consenso opt-in dal bambino.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilizzare il Punteggio di conformità di Microsoft per valutare i rischi
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
 
-[Microsoft Compliance Score](compliance-score.md) è una funzionalità di anteprima del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), utilizzare il modello di [CCPA](https://go.microsoft.com/fwlink/?linkid=2118004) preconfigurato per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
+[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), selezionare il modello di [CCPA](https://go.microsoft.com/fwlink/?linkid=2118004) preconfigurato dal menu a discesa **modello** per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
 
 ## <a name="resources"></a>Risorse
 
@@ -103,4 +103,4 @@ Il CCPA richiede attività regolamentate che raccolgono, trasferiscono e vendono
 - [Guida introduttiva a CCPA](https://info.microsoft.com/ww-landing-Five-tips-to-help-you-prepare-for-the-California-Consumer-Privacy-Act.html)
 - [Richieste del soggetto dei dati e GDPR](gdpr-data-subject-requests.md)
 - [Domande frequenti sul California Consumer Privacy Act (CCPA)](ccpa-faq.md)
-- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

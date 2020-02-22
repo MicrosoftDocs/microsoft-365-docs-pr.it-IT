@@ -1,5 +1,5 @@
 ---
-title: Utilizzare le etichette di riservatezza nelle app di Office
+title: Usare le etichette di riservatezza nelle app di Office
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come gli utenti utilizzano le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
-ms.openlocfilehash: 596580a413778e54a3aaeb04bae8f5f164a96c14
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: 5ca3d7b68f931b7596bc61a587d5e4199aa5f70f
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101236"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225514"
 ---
-# <a name="use-sensitivity-labels-in-office-apps"></a>Utilizzare le etichette di riservatezza nelle app di Office
+# <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
 Dopo aver [pubblicato](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) le etichette di riservatezza dal centro conformità di Microsoft 365 o da un centro di etichette equivalente, queste vengono visualizzate nelle app di Office per consentire agli utenti di classificare e proteggere i dati creati o modificati.
 
@@ -123,10 +123,15 @@ Se è necessario convertire i modelli di protezione esistenti in etichette, util
 
 Gli utenti possono applicare una sola etichetta alla volta per ogni documento o messaggio di posta elettronica.
 
-Quando si etichetta un messaggio di posta elettronica con allegati, gli allegati non ereditano l'etichetta:
+Quando si etichetta un messaggio di posta elettronica con allegati, gli allegati non ereditano l'etichetta con una sola eccezione:
 
-- Se gli allegati dispongono di un'etichetta, l'etichetta viene mantenuta separatamente.
-- Se gli allegati non dispongono di un'etichetta, gli allegati rimarranno privi di un'etichetta. Tuttavia, se l'etichetta del messaggio di posta elettronica applica la protezione, la protezione viene applicata agli allegati di Office.
+- L'allegato è un documento di Office con un'etichetta che non applica la crittografia e l'etichetta applicata al messaggio di posta elettronica applica la crittografia. In questo caso, il documento di Office inviato all'indirizzo di posta elettronica eredita l'etichetta della posta elettronica con le relative impostazioni di crittografia.
+
+Altrimenti 
+
+- Se gli allegati dispongono di un'etichetta, conservano l'etichetta originariamente applicata.
+- Se gli allegati sono crittografati senza etichetta, la crittografia rimane ma non sono etichettati.
+- Se gli allegati non dispongono di un'etichetta, rimangono privi di etichetta.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilità delle etichette di riservatezza
 

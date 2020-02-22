@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a08932d4f16a17b35fef11cdcd8243c96060a4b5
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: e90d5e47c6aa5ac6c2813f150e8136b93214fa3d
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851783"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42221998"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -42,7 +42,7 @@ I requisiti NIST SP 800 – 171 sono un sottoinsieme di NIST SP 800-53, lo stand
 
 Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca, società di consulenza, appaltatori manifatturieri, deve soddisfare i severi requisiti del NIST SP 800 – 171. Questo attestato indica che i servizi cloud in ambito Microsoft possono ospitare i clienti che desiderano distribuire i carichi di lavoro cui con la certezza che Microsoft sia pienamente conforme. Ad esempio, tutti i contraenti DoD che elaborano, archiviano o trasmettono ' informazioni sulla difesa trattate ' utilizzando i servizi cloud Microsoft in ambito nei sistemi informativi soddisfano le clausole del dipartimento della difesa degli Stati Uniti DFARS che richiedono la conformità con la sicurezza requisiti di NIST SP 800 – 171.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - [Governo degli Stati Uniti Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -63,9 +63,9 @@ Qualsiasi entità che elabora o archivia gli Stati Uniti: istituzioni di ricerca
 
 Sì. I clienti Microsoft possono utilizzare i controlli controllati descritti nei report di organizzazioni di valutazione di terze parti indipendenti (3PAO) sugli standard FedRAMP nell'ambito delle proprie attività di analisi e qualifica di FedRAMP e NIST. Questi rapporti confermano l'efficacia dei controlli che Microsoft ha implementato nei suoi servizi cloud nell'ambito. I clienti sono responsabili di garantire che i carichi di lavoro cui sono conformi alle linee guida NIST SP 800 – 171.
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilizzare il Punteggio di conformità di Microsoft per valutare i rischi
+## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
 
-[Microsoft Compliance Score](compliance-score.md) è una funzionalità di anteprima del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), utilizzare il [modello NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2117526) preconfigurato per aiutare l'organizzazione a soddisfare i requisiti per il regolamento.
+[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), selezionare il [modello NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2117526) preconfigurato dal menu a discesa **modello** per consentire all'organizzazione di soddisfare i requisiti per la presente regola.
 
 ## <a name="resources"></a>Risorse
 
@@ -75,7 +75,7 @@ Sì. I clienti Microsoft possono utilizzare i controlli controllati descritti ne
 - [NIST 800-171 3,3 Audit and Accountability con Office 365 GCC High](https://info.summit7systems.com/blog/nist-3.3-audit-and-accountability-with-office-365)
 - [Microsoft e NIST Cybersecurity Framework](offering-nist-csf.md)
 - [Cloud Microsoft per enti pubblici](https://www.microsoft.com/enterprise/government)
-- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 08c6bfbcfc571103939d0b824d5fda0fcb789bb6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 159e7a69f0714b93913c36d745641485d7c80798
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596483"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225509"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per la famiglia Visual Studio nell'ambito del GDPR e del CCPA
 
@@ -47,7 +47,7 @@ Le Condizioni di licenza software Microsoft relative ai prodotti, l'[Informativa
 
 In quanto responsabile del trattamento dei dati in conformità al GDPR, Microsoft raccoglie i dati necessari dagli utenti per fornire le esperienze e migliorare Visual Studio e Visual Studio per le estensioni Mac e Microsoft e per Visual Studio Code. Esistono due categorie di dati: i dati dei clienti e i log generati dal sistema. I dati dei clienti includono dati transazionali e interazionali dell'utente necessari a questi prodotti per poter garantire il servizio. Ad esempio, per poter offrire agli utenti esperienze personalizzate come le impostazioni di roaming, Microsoft deve raccogliere le informazioni relative all'account utente e i dati sulle impostazioni. I log generati dal sistema sono composti da dati di utilizzo o di diagnostica usati per identificare e risolvere i problemi e migliorare prodotti e servizi; inoltre, tali log potrebbero contenere informazioni identificabili relative agli utenti finali, come per esempio il nome utente. I log generati dal sistema vengono conservati per un periodo massimo di 18 mesi. Ad esempio, questi log vengono aggregati per giorno di utilizzo del prodotto e includono la data di utilizzo, il nome del prodotto usato (ad esempio "Visual Studio 2017"), l'azione svolta (ad esempio "vs/core/packagecostsummary/solutionload") e il numero di volte in cui è stata eseguita tale azione, come mostrato in questo esempio:
 
-```
+```Log
 {Time":"2/23/2018 12:00:00 AM","AppName":"Visual Studio 2017","Action":"vs/core/packagecostsummary/solutionload","Target":"1 times",
 "DevicePlatform":"Windows 10 Enterprise","IP":null,"InputMethod":null,
 "SearchTerm":null,"SearchResult":null}
