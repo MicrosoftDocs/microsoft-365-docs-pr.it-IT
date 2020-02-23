@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 417496d5c72c03207f61b4652970b103663e615b
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: fe91f43d088242336d7e77e5422093979d34193b
+ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219187"
+ms.locfileid: "42228592"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -725,7 +725,7 @@ La tabella seguente elenca le attività degli utenti e degli amministratori di M
 |Aggiunta di un bot al team|BotAddedToTeam|Un utente aggiunge un bot al team.|
 |Aggiunta di un canale|ChannelAdded|Un utente aggiunge un canale al team.|
 |Aggiunta di un connettore|ConnectorAdded|Un utente aggiunge un connettore a un canale.|
-|Membri aggiunti al team|MemberAdded|Il proprietario di un team aggiunge membri a un team.|
+|Aggiunta di membri|MemberAdded|Il proprietario di un team aggiunge membri a un team o a una chat di gruppo.|
 |Aggiunta di una scheda|TabAdded|Un utente aggiunge una scheda a un canale.|
 |Impostazione del canale cambiata|ChannelSettingChanged|L'operazione ChannelSettingChanged viene registrata quando vengono eseguite le attività seguenti dal membro di un team. Per ognuna di queste attività viene visualizzata una descrizione dell'impostazione modificata (tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo. <br/><br/>• Cambia il nome di un canale del team (**nome del canale**). <br/><br/>• Cambia la descrizione di un canale del team (**descrizione del canale**).|
 |Impostazione dell'organizzazione cambiata|TeamsTenantSettingChanged|L'operazione TeamsTenantSettingChanged viene registrata quando le attività seguenti vengono eseguite da un amministratore globale (mediante l'interfaccia di amministrazione di Microsoft 365). Tenere presente che queste attività hanno effetto sulle impostazioni di Microsoft Teams dell'intera organizzazione. Per altre informazioni, vedere [Impostazioni dell'amministratore per Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2). <br/> Per ognuna di queste attività viene visualizzata una descrizione dell'impostazione modificata (tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo. <br/><br/>• Abilita o disabilita Microsoft Teams per l'organizzazione (**Microsoft Teams**). <br/><br/>• Abilita o disabilita l'interoperabilità tra Microsoft Teams e Skype for Business per l'organizzazione (**interoperabilità di Skype for Business**). <br/><br/>• Abilita o disabilita la visualizzazione organigramma nei client di Microsoft Teams (visualizzazione organigramma **). <br/><br/>• Abilita o disabilita la capacità dei membri del team di pianificare riunioni private (** Pianificazione di riunioni private **). <br/><br/>• Abilita o disabilita la capacità dei membri del team di pianificare riunioni di canale (Pianificazione di riunioni di canale**). <br/><br/>• Abilita o disabilita le chiamate video nelle riunioni di Teams (video per le riunioni Skype **). <br/><br/>• Abilita o disabilita la condivisione dello schermo nelle riunioni di Microsoft Teams per l'organizzazione (** condivisione dello schermo per le riunioni Skype **). <br/><br/>• Abilita o disabilita l'aggiunta di immagini animate (denominate Giphy) alle conversazioni di Teams (immagini animate**). <br/><br/>• Modifica l'impostazione di classificazione del contenuto per l'organizzazione (**classificazione del contenuto**). La classificazione del contenuto limita il tipo di immagini animate che possono essere visualizzate nelle conversazioni. <br/><br/>• Abilita o disabilita la capacità dei membri del team di aggiungere immagini personalizzabili (denominate meme personalizzati) da Internet alle conversazioni del team (immagini personalizzabili da Internet **). <br/><br/>• Abilita o disabilita la capacità dei membri del team di aggiungere immagini modificabili (denominate adesivi) alle conversazioni del team (** immagini modificabili **).<br/><br/>• Abilita o disabilita la capacità dei membri del team di usare i bot nelle chat e nei canali di Microsoft Teams (bot a livello di organizzazione **). <br/><br/>• Abilita bot specifici per Microsoft Teams. Non include T-Bot, vale a dire il bot di supporto di Teams che è disponibile quando i bot sono abilitati per l'organizzazione (**bot singoli**). <br/><br/>• Abilita o disabilita la capacità dei membri del team di aggiungere estensioni o schede (**estensioni o schede**). <br/><br/>• Abilita o disabilita il caricamento laterale dei Bot proprietari per Microsoft Teams (**caricamento laterale di bot**). <br/><br/>• Abilita o disabilita la capacità degli utenti di inviare messaggi di posta elettronica a un canale di Microsoft Teams (**canale di posta elettronica**).|
@@ -736,7 +736,7 @@ La tabella seguente elenca le attività degli utenti e degli amministratori di M
 |Team eliminato|TeamDeleted|Un proprietario del team elimina un team.|
 |Rimozione del bot dal team|BotRemovedFromTeam|Un utente rimuove un bot dal team.|
 |Rimozione di un connettore|ConnectorRemoved|Un utente rimuove un connettore da un canale.|
-|Membri rimossi dal team|MemberRemoved|Il proprietario di un team rimuove i membri da un team.|
+|Rimozione dei membri|MemberRemoved|Il proprietario di un team rimuove i membri da un team o da una chat di gruppo.|
 |Rimozione di una scheda|TabRemoved|Un utente rimuove una scheda da un canale.|
 |Connettore aggiornato|ConnectorUpdated|Un utente ha modificato un connettore in un canale.|
 |Scheda aggiornata|TabUpdated|Un utente ha modificato una scheda in un canale.|
@@ -836,6 +836,7 @@ La tabella seguente elenca gli eventi risultanti dalle attività di etichettatur
 |Etichetta di riservatezza applicata al file|FileSensitivityLabelApplied|È stata applicata un'etichetta di riservatezza a un documento con Office sul Web.|
 |Etichetta di riservatezza applicata a un file modificata|FileSensitivityLabelChanged|È stata applicata un'etichetta di riservatezza diversa a un documento con Office sul Web.|
 |Etichetta di riservatezza rimossa dal file|FileSensitivityLabelRemoved|È stata rimossa un'etichetta di riservatezza da un documento con Office sul Web.|
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Log di controllo dell'amministratore di Exchange
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fee4e0472a6d9b08bdab4c5340097d4222aac1d9
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+ms.openlocfilehash: 1eeed6c1dfef1765089a5998200c93be595a719a
+ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722017"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225524"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Dynamics 365 nell'ambito del GDPR e del CCPA
 
@@ -82,10 +82,9 @@ Per usare i dati personali presenti nelle applicazioni di lavoro in Dynamics 365
 
 Microsoft offre funzionalità che possono essere utili per rispondere alle richieste degli interessati e per accedere ai dati del cliente. Tuttavia, spetta dell'utente assicurare che i dati personali siano collocati e classificati in modo appropriato.
 
-***Dynamics 365 for Customer Engagement*** offre diversi metodi per cercare dati personali nei record, ad esempio: ricerca avanzata, ricerca per pertinenza e ricerca per record. Tutte queste funzioni consentono di identificare (trovare) i dati personali.
+***Dynamics 365 for Customer Engagement*** offre diversi metodi per cercare dati personali nei record, ad esempio: ricerca avanzata e ricerca per record. Tutte queste funzioni consentono di identificare (trovare) i dati personali.
 
 - [Ricerca avanzata](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search)
-- [Ricerca per pertinenza](https://docs.microsoft.com/dynamics365/customer-engagement/basics/relevance-search-results), che può essere salvata per riferimento futuro tramite Ricerca per pertinenza dashboard, che può essere salvata per riferimento futuro tramite dashboard
 - [Ricerca per record](https://docs.microsoft.com/dynamics365/customer-engagement/basics/search-records) tra più tipi di record
 
 In Dynamics 365 for Marketing, sono disponibili le seguenti funzionalità aggiuntive:
