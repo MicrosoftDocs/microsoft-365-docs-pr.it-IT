@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Audit avanzato in Microsoft 365 fornisce nuove funzionalità di audit per aiutare l'organizzazione nelle indagini forensi e di conformità.
-ms.openlocfilehash: e06e7f6330a36c8f98042fcce472b7baf6ef16ff
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.openlocfilehash: 79c7e24349d3b6603e82946fda4a3c1f0c0ae6ff
+ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960242"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170516"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avanzato in Microsoft 365
 
 La [funzionalità di audit unificato](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 consente alle organizzazioni di avere visibilità su molti tipi di attività controllate in molti servizi diversi in Microsoft 365. Con il rilascio di Audit avanzato in Microsoft 365 sono state aggiunte nuove funzionalità di audit per aiutare l'organizzazione nelle indagini forensi e di conformità.
 
 > [!NOTE]
-> Audit avanzato è disponibile per le organizzazioni con un abbonamento a Office 365 o Microsoft 365 Enterprise E5. Inoltre, è possibile assegnare agli utenti un abbonamento al componente aggiuntivo Microsoft 365 E5 Compliance nei casi in cui è necessaria una licenze per utente per le funzionalità Audit avanzato, come per la conservazione a lungo termine dei log di controllo e gli eventi di audit di alto valore.
+> Audit avanzato è disponibile per le organizzazioni con un abbonamento a Office 365 o Microsoft 365 Enterprise E5. Inoltre, è possibile assegnare agli utenti un abbonamento al componente aggiuntivo Microsoft 365 E5 Compliance nei casi in cui è necessaria una licenze per utente per le funzionalità Audit avanzato, come per la conservazione a lungo termine dei log di controllo e l'accesso agli eventi cruciali per le indagini.
 
 Questo articolo offre una panoramica delle funzionalità di Audit avanzato.
 
@@ -49,9 +49,9 @@ Tutti i record di controllo generati in altri servizi non coperti dai criteri di
 
 È anche possibile specificare per quanto tempo conservare i record di controllo che soddisfano i criteri e un livello di priorità, affinché determinati criteri abbiano priorità su altri. Si noti inoltre che i criteri di conservazione dei log di controllo personalizzati hanno la precedenza sui criteri di conservazione predefiniti in caso sia necessario conservare i record di controllo di Exchange, SharePoint o Azure Active Directory per meno di un anno per alcuni o tutti gli utenti dell'organizzazione. Per altre informazioni, vedere [Gestire i criteri di conservazione dei log di controllo](audit-log-retention-policies.md).
 
-## <a name="high-value-audit-events"></a>Eventi di controllo di alta qualità
+## <a name="access-to-crucial-events-for-investigations"></a>Accesso agli eventi cruciali per le indagini
 
-Gli eventi di controllo a livello di sicurezza e conformità di alta qualità sono quelli che consentono di indagare su possibili violazioni o eseguire altre indagini di tipo forense. Il primo evento di questo tipo che rilasciamo è l'evento di audit di cassette postali *MailItemsAccessed*. Questo evento viene generato quando viene eseguito l'accesso ai dati di posta elettronica da protocolli di posta elettronica e da client. L'evento MailItemsAccessed può aiutare gli investigatori a identificare violazioni dei dati e a determinare l'ambito dei messaggi che potrebbero essere stati compromessi. Se un utente malintenzionato ha ottenuto l'accesso ai messaggi di posta elettronica, viene generato l'evento MailItemsAccessed anche in assenza di segnale esplicito che indichi l'avvenuta lettura; in altri termini, nel record di controllo viene registrato il tipo di accesso, ad esempio tramite associazione o sincronizzazione.
+Gli eventi di controllo cruciali a livello di sicurezza e conformità sono quelli che consentono di indagare su possibili violazioni o eseguire altre indagini di tipo forense. Il primo evento di questo tipo che rilasciamo è l'evento di audit di cassette postali *MailItemsAccessed*. Questo evento viene generato quando viene eseguito l'accesso ai dati di posta elettronica da protocolli di posta elettronica e da client. L'evento MailItemsAccessed può aiutare gli investigatori a identificare violazioni dei dati e a determinare l'ambito dei messaggi che potrebbero essere stati compromessi. Se un utente malintenzionato ha ottenuto l'accesso ai messaggi di posta elettronica, viene generato l'evento MailItemsAccessed anche in assenza di segnale esplicito che indichi l'avvenuta lettura; in altri termini, nel record di controllo viene registrato il tipo di accesso, ad esempio tramite associazione o sincronizzazione.
 
 La nuova azione MailItemsAccessed per le cassette postali sostituisce MessageBind nella registrazione di controllo delle cassette postali in Exchange Online e offre i miglioramenti seguenti:
 
