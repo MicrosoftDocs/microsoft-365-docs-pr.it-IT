@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5f11cb99d4bf235ba41e05d1bf79217f827fe8c2
-ms.sourcegitcommit: 82e6b56d7265f8389b0af8baf51acb3013d88754
+ms.openlocfilehash: 80ee396d5a9862dd335118d8d4e8018214035f20
+ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41851883"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42222048"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -131,7 +131,7 @@ Il [SOC Toolkit for Service Organizations ](https://aka.ms/soc-toolkit) è una r
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
 
-[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [configurato Punteggio di conformità](compliance-score-setup.md), usare il [modello SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) preconfigurato e il [modello SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) per aiutare l'organizzazione a rispettare i requisiti di questa normativa.
+[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [configurato Punteggio di conformità](compliance-score-setup.md), selezionare il [modello SOC 1](https://go.microsoft.com/fwlink/?linkid=2117918) preconfigurato e il [modello SOC 2](https://go.microsoft.com/fwlink/?linkid=2117919) nel menu a discesa **Modello** per aiutare l'organizzazione a rispettare i requisiti di questa normativa.
 
 ## <a name="resources"></a>Risorse
 
