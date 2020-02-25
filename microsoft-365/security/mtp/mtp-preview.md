@@ -19,31 +19,31 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET15
-ms.openlocfilehash: 3a21bf3166191a0a3ef2caf2f78fe0734711961f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 54f2d60a9af7d1d63272aa3d73ecbf85940ca7a2
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083595"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235185"
 ---
-# <a name="microsoft-365-security-preview-features"></a><span data-ttu-id="a4586-104">Funzionalità di anteprima di Sicurezza Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="a4586-104">Microsoft 365 Security preview features</span></span>
+# <a name="microsoft-365-security-preview-features"></a><span data-ttu-id="4245b-104">Funzionalità di anteprima di Sicurezza Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="4245b-104">Microsoft 365 Security preview features</span></span>
 
-<span data-ttu-id="a4586-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="a4586-105">**Applies to:**</span></span>
-- <span data-ttu-id="a4586-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="a4586-106">Microsoft Threat Protection</span></span>
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
-<span data-ttu-id="a4586-107">Sicurezza Microsoft 365 viene continuamente aggiornato per includere nuove funzionalità e miglioramenti.</span><span class="sxs-lookup"><span data-stu-id="a4586-107">Microsoft 365 Security is constantly being updated to include new feature enhancements and capabilities.</span></span>
-
-<span data-ttu-id="a4586-108">Informazioni sulle nuove funzionalità nella versione di anteprima di Sicurezza Microsoft 365 e su come essere tra i primi a provare le funzionalità che verranno implementate prossimamente attivando l'esperienza di anteprima.</span><span class="sxs-lookup"><span data-stu-id="a4586-108">Learn about new features in the Microsoft 365 Security preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
-
-<span data-ttu-id="a4586-109">Per altre informazioni sulle nuove funzionalità disponibili a livello generale, vedere [Novità di Microsoft Threat Protection](mtp-whats-new.md).</span><span class="sxs-lookup"><span data-stu-id="a4586-109">For more information on new capabilities that are generally available, see [What's new in Microsoft Threat Protection](mtp-whats-new.md).</span></span>
+<span data-ttu-id="4245b-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="4245b-105">**Applies to:**</span></span>
+- <span data-ttu-id="4245b-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="4245b-106">Microsoft Threat Protection</span></span>
 
 
-## <a name="preview-features"></a><span data-ttu-id="a4586-110">Funzionalità di anteprima</span><span class="sxs-lookup"><span data-stu-id="a4586-110">Preview features</span></span>
-<span data-ttu-id="a4586-111">Nella versione di anteprima sono incluse le funzionalità seguenti:</span><span class="sxs-lookup"><span data-stu-id="a4586-111">The following features are included in the preview release:</span></span>
 
-## <a name="august-2019"></a><span data-ttu-id="a4586-112">Agosto 2019</span><span class="sxs-lookup"><span data-stu-id="a4586-112">August 2019</span></span>
-- <span data-ttu-id="a4586-113">Incidenti</span><span class="sxs-lookup"><span data-stu-id="a4586-113">Incidents</span></span>
-- <span data-ttu-id="a4586-114">Indagine e correzione automatizzate</span><span class="sxs-lookup"><span data-stu-id="a4586-114">Automated investigation and remediation</span></span>
-- <span data-ttu-id="a4586-115">Ricerca avanzata</span><span class="sxs-lookup"><span data-stu-id="a4586-115">Advanced hunting</span></span> 
+<span data-ttu-id="4245b-107">Sicurezza Microsoft 365 viene continuamente aggiornato per includere nuove funzionalità e miglioramenti.</span><span class="sxs-lookup"><span data-stu-id="4245b-107">Microsoft 365 Security is constantly being updated to include new feature enhancements and capabilities.</span></span>
+
+<span data-ttu-id="4245b-108">Informazioni sulle nuove funzionalità nella versione di anteprima di Sicurezza Microsoft 365 e su come essere tra i primi a provare le funzionalità che verranno implementate prossimamente attivando l'esperienza di anteprima.</span><span class="sxs-lookup"><span data-stu-id="4245b-108">Learn about new features in the Microsoft 365 Security preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
+
+<span data-ttu-id="4245b-109">Per altre informazioni sulle nuove funzionalità disponibili a livello generale, vedere [Novità di Microsoft Threat Protection](mtp-whats-new.md).</span><span class="sxs-lookup"><span data-stu-id="4245b-109">For more information on new capabilities that are generally available, see [What's new in Microsoft Threat Protection](mtp-whats-new.md).</span></span>
+
+
+## <a name="preview-features"></a><span data-ttu-id="4245b-110">Funzionalità di anteprima</span><span class="sxs-lookup"><span data-stu-id="4245b-110">Preview features</span></span>
+<span data-ttu-id="4245b-111">Nella versione di anteprima sono incluse le funzionalità seguenti:</span><span class="sxs-lookup"><span data-stu-id="4245b-111">The following features are included in the preview release:</span></span>
+
+## <a name="august-2019"></a><span data-ttu-id="4245b-112">Agosto 2019</span><span class="sxs-lookup"><span data-stu-id="4245b-112">August 2019</span></span>
+- <span data-ttu-id="4245b-113">Incidenti</span><span class="sxs-lookup"><span data-stu-id="4245b-113">Incidents</span></span>
+- <span data-ttu-id="4245b-114">Indagine e correzione automatizzate</span><span class="sxs-lookup"><span data-stu-id="4245b-114">Automated investigation and remediation</span></span>
+- <span data-ttu-id="4245b-115">Ricerca avanzata</span><span class="sxs-lookup"><span data-stu-id="4245b-115">Advanced hunting</span></span> 
