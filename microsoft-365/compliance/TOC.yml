@@ -209,7 +209,7 @@
           href: data-classification-pub-preview-relnotes.md
         - name: Introduzione ai classificatori sottoponibili a training (anteprima)
           href: classifier-getting-started-with.md
-        - name: Utilizzo di un classificatore pronto all'uso (anteprima)
+        - name: Utilizzo di un classificatore incorporato (anteprima)
           href: classifier-using-a-ready-to-use-classifier.md
         - name: Creazione e training di un classificatore (anteprima)
           href: classifier-creating-a-trainable-classifier.md

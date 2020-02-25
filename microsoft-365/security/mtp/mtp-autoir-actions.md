@@ -1,5 +1,5 @@
 ---
-title: Approvare o rifiutare azioni in sospeso in seguito all’indagine automatizzata
+title: Approvare o rifiutare le azioni in sospeso dopo un'analisi automatizzata
 description: Utilizzare il centro notifiche per gestire le azioni relative all’analisi e alla risposta automatizzate
 keywords: azione, centro, autoair, automatizzato, indagine, risposta, correzione
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 5118f7fddaee0fa768675597dee862eb75e4ed96
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225494"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261983"
 ---
-# <a name="approve-or-reject-pending-actions-from-automated-investigations"></a>Approvare o rifiutare azioni in sospeso dalle indagini automatizzate
+# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>Approvare o rifiutare le azioni in sospeso dopo un'analisi automatizzata
 
 **Si applica a:**
 - Microsoft Threat Protection
@@ -35,9 +35,7 @@ Quando viene eseguita un’indagine automatizzata, può dare come risultato una 
 > [!TIP]
 > Se si pensa che qualcosa è stato perso o rilevato erroneamente dalle funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection, fatecelo sapere! Vedere [How to report false positives/negatives in Automatic Investigation and Response (Air) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
-Le azioni in sospeso possono essere riviste e approvate usando uno dei metodi seguenti:
-- [Utilizzare il centro notifiche](#review-a-pending-action-in-the-action-center)
-- [Utilizzare visualizzazione dettagli indagine](#review-a-pending-action-in-the-investigation-details-view)
+Le azioni in sospeso possono essere esaminate e approvate tramite il [Centro azioni](#review-a-pending-action-in-the-action-center) o la [visualizzazione dettagli analisi](#review-a-pending-action-in-the-investigation-details-view).
 
 > [!NOTE]
 > È necessario avere [autorizzazioni appropriate](mtp-action-center.md#required-permissions-for-action-center-tasks) per approvare o rifiutare azioni correttive.
@@ -65,5 +63,7 @@ Le azioni in sospeso possono essere riviste e approvate usando uno dei metodi se
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Altre informazioni sul centro notifiche](mtp-action-center.md)
+
 - [Altre informazioni sugli incidenti](incidents-overview.md)
+
 - [Altre informazioni sulla ricerca](advanced-hunting-overview.md)

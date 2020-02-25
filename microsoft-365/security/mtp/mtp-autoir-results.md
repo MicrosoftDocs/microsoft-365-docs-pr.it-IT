@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i dettagli e i risultati di un'indagine automatizzata
+title: Dettagli e risultati di un'indagine automatizzata
 description: Durante e dopo un'indagine automatizzata, è possibile visualizzare i risultati principali
 keywords: automatizzata, indagine, risultati, analizzare, dettagli, correzione, autoair
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 062dd86de49eb3dfe47566aa8d7269780cf9995c
-ms.sourcegitcommit: 2f117a6fd27a097ca25afa933dd088b69d483974
+ms.openlocfilehash: 6b3bc068e5da99e02a64463891e32d137c448d64
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42175719"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42261063"
 ---
-# <a name="view-the-details-and-results-of-an-automated-investigation"></a>Visualizzare i dettagli e i risultati di un'indagine automatizzata
+# <a name="details-and-results-of-an-automated-investigation"></a>Dettagli e risultati di un'indagine automatizzata
 
 **Si applica a:**
 - Microsoft Threat Protection
@@ -80,24 +80,9 @@ Nella visualizzazione dei dettagli dell'indagine, è possibile vedere le informa
 |Log    |Fornisce una visualizzazione dettagliata di tutti i passaggi seguiti durante l'indagine, insieme allo stato.|
 |Azioni in sospeso    |Elenca gli elementi che richiedono l'approvazione per continuare.|
 
-## <a name="remediation-actions-following-automated-investigation"></a>Azioni correttive in seguito all'indagine automatizzata
-
-Una volta completata un'indagine automatizzata, viene emesso un verdetto per ogni prova inclusa e vengono identificate le azioni correttive. In alcuni casi, le azioni correttive vengono eseguite automaticamente; in altri casi, invece, è necessario approvarle. Nella tabella seguente sono elencati i possibili verdetti e i risultati:
-
-|Verdetto    |Area   |Risultati|
-|------|------|------|
-|Dannosa  |Dispositivi (endpoint)    |Le azioni correttive vengono eseguite automaticamente|
-|Dannosa  |Contenuto della posta elettronica (URL o allegati) | Le azioni correttive consigliate sono in attesa di approvazione|
-|Sospetta |Dispositivi o contenuto della posta elettronica |Le azioni correttive consigliate sono in attesa di approvazione|
-|Pulita  |Dispositivi o contenuto della posta elettronica   |Non sono necessarie azioni correttive|
-
-[Rivedere un'azione in sospeso nel centro notifiche](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
-
-> [!TIP]
-> Se si pensa che qualcosa è stato perso o rilevato erroneamente dalle funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection, fatecelo sapere! Vedere [How to report false positives/negatives in Automatic Investigation and Response (Air) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
-
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Panoramica delle autorizzazioni del centro notifiche](mtp-action-center.md#required-permissions-for-action-center-tasks)
+
 - [Approvare o rifiutare le azioni relative all'indagine e reazione automatizzate](mtp-autoir-actions.md)
 
