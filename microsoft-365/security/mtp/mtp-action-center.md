@@ -18,23 +18,23 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 05356cb9ef17d8c8355896e76185ff9498882069
-ms.sourcegitcommit: ff2f521afdd60a16b2db8ff77b537f345c0e0f7e
+ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219177"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262023"
 ---
-# <a name="go-to-the-action-center-to-view-remediation-actions"></a>Accedere al centro notifiche per visualizzare le azioni correttive
+# <a name="the-action-center"></a>Centro azioni
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-## <a name="a-single-pane-of-glass-experience"></a>Un'esperienza a "riquadro unico"
+Utilizzare il centro notifiche per visualizzare i risultati delle indagini attuali e passate sui dispositivi e le cassette postali dell'organizzazione. A seconda del tipo di minaccia e del verdetto risultante, le [azioni di correzione](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) si verificano automaticamente o dopo l'approvazione da parte del team di operazioni di sicurezza dell'organizzazione. Tutte le azioni correttive, siano esse in attesa di approvazione o già approvate, vengono consolidate nel centro notifiche. 
 
 ![Centro notifiche](../../media/air-actioncenter.png)
 
-Utilizzare il centro notifiche per visualizzare i risultati delle indagini attuali e passate sui dispositivi e le cassette postali dell'organizzazione. A seconda del tipo di minaccia e del [conseguente verdetto](mtp-autoir-results.md#remediation-actions-following-automated-investigation), le azioni di correzione e si verificano automaticamente o previa approvazione da parte del team addetto alle operazioni di sicurezza della propria organizzazione. Tutte le azioni correttive, siano esse in attesa di approvazione o già approvate, vengono consolidate nel centro notifiche. 
+## <a name="a-single-pane-of-glass-experience"></a>Un'esperienza a "riquadro unico"
 
 Il centro notifiche include un "riquadro unico" per le attività, ad esempio:
 - approvazione delle azioni di correzione in sospeso;
@@ -63,7 +63,6 @@ Il team delle operazioni di sicurezza può lavorare in modo più efficace ed eff
 
     - Se l'indagine riguarda un dispositivo, i dettagli dell'indagine vengono aperti nel Centro sicurezza ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-
 > [!TIP]
 > Se si pensa che qualcosa è stato perso o rilevato erroneamente dalle funzionalità di analisi e risposta automatizzate in Microsoft Threat Protection, fatecelo sapere! Vedere [How to report false positives/negatives in Automatic Investigation and Response (Air) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).
 
@@ -82,6 +81,8 @@ Per approvare o rifiutare le azioni in sospeso nel centro notifiche, è necessar
 ## <a name="next-steps"></a>Passaggi successivi 
 
 - [Ulteriori informazioni sugli incidenti in Microsoft Threat Protection](incidents-overview.md)
+
 - [Visualizzare i risultati di un'indagine automatizzata](mtp-autoir-results.md)
+
 - [Informazioni sulla ricerca in Microsoft Threat Protection](advanced-hunting-overview.md)
 

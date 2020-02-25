@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 34401bde5af594899f88b93f8ca76695ce3c7132
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f99420b978f77f8b4a4660394d4a6f335c5aad66
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602763"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235045"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Gli eventi o `DeviceEvents` la tabella del dispositivo miscellaneo nello schema di [caccia avanzato](advanced-hunting-overview.md) contengono informazioni sui vari tipi di evento, tra cui gli eventi attivati dai controlli di sicurezza, ad esempio Windows Defender Antivirus e exploit Protection. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 

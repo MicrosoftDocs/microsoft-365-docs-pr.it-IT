@@ -1,5 +1,5 @@
 ---
-title: Analisi e risposta automatizzata di Office 365
+title: Indagine automatizzata e risposta (AIR) in Office 365
 keywords: ARIA, autoIR, ATP, automatizzato, investigazione, risposta, correzione, minacce, avanzate, minacce, protezione
 f1.keywords:
 - NOCSH
@@ -15,16 +15,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Iniziare a utilizzare le funzionalità di analisi e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 7bfa07880a302f77769ee15e9108db21dac2519c
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 3a362f7d15a9cc8e1f5784ec03c8c04d3d77886d
+ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228569"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42262013"
 ---
-# <a name="office-365-automated-investigation-and-response"></a>Analisi e risposta automatizzata di Office 365
+# <a name="automated-investigation-and-response-air-in-office-365"></a>Indagine automatizzata e risposta (AIR) in Office 365
 
 [Protezione avanzata dalle minacce di Office 365](office-365-atp.md) Il piano 2 include potenti funzionalità di analisi e risposta automatizzate che consentono di salvare il tempo e lo sforzo del team per le operazioni di sicurezza. Quando vengono attivati determinati avvisi, vengono avviati uno o più schemi di sicurezza e il processo di analisi automatizzato inizia. In questo modo il team delle operazioni di sicurezza è abilitato a concentrarsi sulle attività con priorità alta senza perdere di vista gli avvisi attivati. 
+
+## <a name="the-overall-flow-of-air"></a>Flusso globale dell'aria
 
 A livello elevato, il flusso di aria funziona in questo modo:
 

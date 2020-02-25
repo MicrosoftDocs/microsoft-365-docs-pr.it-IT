@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: fedd3a98ef176855c4831bbd055522c073c22d7b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085691"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250426"
 ---
 # <a name="work-with-insights"></a>Usare i dati analitici
 
@@ -23,6 +23,10 @@ Con questi dashboard è possibile trovare le risposte a domande di questo tipo:
 - Quali app sono più utilizzate e durante quali periodi?
 - Quali applicazioni causano problemi di crash o di sospensione di un lotto?
 - In che modo Microsoft Managed Desktop Operations attenua o risolve tali problemi?
+- Quali app stanno consumando la maggior parte dell'energia?
+- Che cos'è la durata della batteria prevista per i dispositivi?
+- Qual è lo stato corrente degli aggiornamenti della sicurezza sui dispositivi?
+- Quanto tempo è necessario per il 95% dei dispositivi per ottenere corrente con l'aggiornamento della sicurezza più recente?
 
 Per accedere a queste visualizzazioni dall'interfaccia di amministrazione di Microsoft 365, selezionare **Visualizza dettagli** nell'area **report** :
 
@@ -46,3 +50,9 @@ Per ulteriori informazioni, [vedere affidabilità Insights](reliability-insights
 In questa visualizzazione vengono fornite informazioni sul consumo di energia delle app e sulla durata della batteria proiettata per i dispositivi nell'ambiente. Per visualizzare queste informazioni, selezionare la scheda **batteria** .
 
 Per ulteriori informazioni, [vedere Battery Insights](battery-insights.md).
+
+## <a name="windows-security-update-insights"></a>Insights per l'aggiornamento della sicurezza di Windows
+
+In questa visualizzazione vengono fornite informazioni sullo stato degli aggiornamenti della sicurezza per i dispositivi Microsoft Managed Desktop. Per visualizzare queste informazioni, selezionare la scheda **udates di protezione di Windows** .
+
+Per ulteriori informazioni, [vedere Insights for Security Update](security-update-insights.md).

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore addestrabile di Microsoft 365 è uno strumento che è possibile addestrare per riconoscere vari tipi di contenuto, fornendo campioni positivi e negativi da esaminare. Una volta che il classificatore è stato addestrato, conferma che i risultati sono accurati. È quindi possibile utilizzarla per eseguire una ricerca nel contenuto dell'organizzazione e classificarla in modo da applicare etichette di conservazione o di sensibilità o includerla nella prevenzione della perdita di dati (DLP) o nei criteri di conservazione.
-ms.openlocfilehash: 75cf79e162c2e371821b4329fc1be949f0b3a81c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7ebd991fe70401b91c14673bcff8aabbdabbda6a
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078818"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266878"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Introduzione ai classificatori sottoponibili a training (anteprima)
 
@@ -44,6 +44,8 @@ Questa categoria di meccanismi di classificazione include la ricerca di contenut
 
 Questo metodo di classificazione è particolarmente adatto ai contenuti che non sono facilmente identificabili tramite i metodi di corrispondenza dei modelli manuale o automatico. Questo metodo di classificazione è più relativo all'addestramento di un classificatore per identificare un elemento in base a ciò che l'elemento è, non per elementi che si trovano nell'elemento (pattern matching). Un classificatore apprende come identificare un tipo di contenuto esaminando centinaia di esempi del contenuto che si desidera classificare. Si inizia con l'alimentazione di esempi che sono definitivamente nella categoria. Dopo averli elaborati, è possibile testarli conferendogli una combinazione di esempi di corrispondenza e non corrispondenti. Il classificatore effettua quindi stime per determinare se un determinato elemento rientra nella categoria che si sta creando. Sono quindi convalidati i risultati, vengono ordinati gli aspetti positivi, negativi, falsi positivi e falsi negativi per aumentare l'accuratezza delle stime. Quando si pubblica il classificatore addestrato, l'ordinamento viene ordinato tramite gli elementi in posizioni come SharePoint Online, Exchange e OneDrive e classifica il contenuto.
 
+<!-- add link in the below note to sensitivity label topic when carolb provides -->
+
 > [!IMPORTANT]
 > Entrambi i tipi di classificatori sono disponibili come condizione per [l'applicazione automatica dei criteri delle etichette di conservazione in base a una condizione e alla](labels.md#applying-a-retention-label-automatically-based-on-conditions) [conformità della comunicazione](communication-compliance.md).
 
@@ -56,14 +58,14 @@ I classificatori addestrabili sono una funzionalità di conformità di Microsoft
 
 ## <a name="types-of-classifiers"></a>Tipi di classificatori
 
-Sono disponibili per l'utilizzo di classificatori e classificatori addestrabili. Ottenere un classificatore addestrabile a uno stato di pubblicazione richiede un investimento di tempo per addestrarlo. Per iniziare a utilizzare i classificatori, Microsoft 365 viene fornito con alcuni classificatori pronti all'uso.
+Esistono classificatori incorporati e classificatori addestrabili. Ottenere un classificatore addestrabile a uno stato di pubblicazione richiede un investimento di tempo per addestrarlo. Per iniziare a utilizzare i classificatori, Microsoft 365 viene fornito con alcuni classificatori incorporati.
 
 > [!NOTE]
-> Prima di utilizzare un classificatore pronto per l'utilizzo nel flusso di lavoro di classificazione e etichettatura, è consigliabile verificarlo in base a un campione del contenuto delle organizzazioni che si adatta alla categoria per verificare che le stime di classificazione soddisfino le proprie aspettative.
+> Prima di utilizzare un classificatore incorporato nel flusso di lavoro di classificazione e etichettatura, è consigliabile verificarlo in base a un campione del contenuto delle organizzazioni che si adatta alla categoria per verificare che le stime di classificazione soddisfino le proprie aspettative.
 
-### <a name="understanding-ready-to-use-classifiers"></a>Informazioni sui classificatori pronti all'uso
+### <a name="understanding-built-in-classifiers"></a>Informazioni sui classificatori incorporati
 
-Microsoft 365 include sei classificatori pronti all'uso:
+Microsoft 365 viene fornito con sei classificatori incorporati:
 
 - **Lingua offensiva**: consente di rilevare gli elementi di testo che contengono parolacce, legature, scherni e espressioni mascherate (ovvero espressioni che hanno lo stesso significato di un termine più offensivo).
 - **Resumes**: rileva gli elementi che sono account testuali di qualifiche personali, didattiche, professionali del richiedente, esperienze lavorative e altre informazioni di identificazione personale.
@@ -79,15 +81,15 @@ Questi vengono visualizzati nella visualizzazione classificazione dei**classific
 > [!IMPORTANT]
 > Si noti che la lingua offensiva, la molestia, la profanità e i classificatori di minacce funzionano solo con il testo ricercabile non sono esaustivi o completi.  Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare questi classificatori a sua discrezione. Anche se i classificatori possono assistere la propria organizzazione nel monitoraggio di un'offensiva e di altre lingue utilizzate, i classificatori non affrontano le conseguenze di tale lingua e non sono destinati a fornire il solo mezzo di monitoraggio o di risposta dell'organizzazione all'utilizzo di tale lingua. La propria organizzazione e non Microsoft o le sue affiliate resta responsabile di tutte le decisioni relative al monitoraggio, all'applicazione, al blocco, alla rimozione e alla conservazione di qualsiasi contenuto identificato da un classificatore preformato.
 
-#### <a name="process-flow-for-using-ready-to-use-classifiers"></a>Flusso di processo per l'utilizzo dei classificatori pronti all'uso
+#### <a name="process-flow-for-using-built-in-classifiers"></a>Flusso di processo per l'utilizzo dei classificatori incorporati
 
-I classificatori pronti all'uso non devono essere addestrati, ma è necessario verificare che vengano identificati i tipi di contenuto a cui sono necessari prima di utilizzarli nelle soluzioni di conformità. Il testing di un classificatore preconfigurato segue questo flusso.
+I classificatori incorporati non devono essere addestrati, ma è necessario verificare che vengano identificati i tipi di contenuto a cui sono necessari prima di utilizzarli nelle soluzioni di conformità. Il testing di un classificatore preconfigurato segue questo flusso.
 
 ![Processing Flow testing di un classificatore preconfigurato](../media/classifier-pre-trained-classifier-flow.png)
 
 ### <a name="understanding-trainable-classifiers"></a>Informazioni sui classificatori addestrabili
 
-Quando i classificatori pronti all'uso non soddisfano le proprie esigenze, è possibile creare e formare i propri classificatori. È molto più necessario collaborare con la creazione dei propri utenti, ma sarà molto meglio adattare le proprie esigenze alle organizzazioni. Per ulteriori informazioni su come utilizzare un classificatore preconfigurato, vedere [utilizzo di un classificatore pronto per l'uso](classifier-using-a-ready-to-use-classifier.md)
+Quando i classificatori incorporati non soddisfano le proprie esigenze, è possibile creare e formare i propri classificatori. È molto più necessario collaborare con la creazione dei propri utenti, ma sarà molto meglio adattare le proprie esigenze alle organizzazioni. Per ulteriori informazioni su come utilizzare un classificatore preconfigurato, vedere Utilizzo di [un classificatore incorporato](classifier-using-a-ready-to-use-classifier.md)
 
 > [!IMPORTANT]
 > Solo l'utente che crea un classificatore addestrabile può formare e rivedere le stime eseguite dal classificatore.

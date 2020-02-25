@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di un classificatore pronto all'uso (anteprima)
+title: Utilizzo di un classificatore incorporato (anteprima)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,15 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 è dotato di un numero di classificatori pronti all'uso per l'apprendimento automatico che è possibile utilizzare per identificare ed etichettare il contenuto nell'organizzazione. In questo argomento vengono illustrate le modalità di preparazione per l'utilizzo dei classificatori pronti all'uso.
-ms.openlocfilehash: 8f3df8e7851bf453add162df4088e11dc7745cee
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Microsoft 365 viene fornito con un certo numero di classificatori incorporati che è possibile utilizzare per identificare ed etichettare il contenuto nell'organizzazione. In questo argomento viene illustrato come prepararsi per l'utilizzo di questi classificatori.
+ms.openlocfilehash: 2157e06da251b1f02b6a4623c573d350d838aff0
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078793"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266732"
 ---
-# <a name="using-a-ready-to-use-classifier-preview"></a>Utilizzo di un classificatore pronto all'uso (anteprima)
+# <a name="using-a-built-in-classifier-preview"></a>Utilizzo di un classificatore incorporato (anteprima)
 
 Microsoft ha formato e testato un certo numero di classificatori che utilizzano set di dati di esempio molto grandi, che possono essere utili per identificare determinate categorie di contenuto. Vedere [Guida introduttiva ai classificatori addestrabili (Preview)](classifier-getting-started-with.md). Questi classificatori vengono visualizzati nel `Ready to use` gruppo per impostazione predefinita.
 
@@ -33,14 +33,14 @@ Microsoft ha formato e testato un certo numero di classificatori che utilizzano 
 - **Threat**: rileva una categoria specifica di elementi di testo offensivi relativi alle minacce per commettere violenze o arrecare danni fisici a una persona o a una proprietà,
 
 > [!NOTE]
-> Prima di utilizzare i classificatori pronti per l'utilizzo nel flusso di lavoro di classificazione e etichettatura, è consigliabile testarlo su un campione del contenuto dell'organizzazione che si adatta alla categoria per verificare che le stime di classificazione soddisfino le proprie aspettative.
+> Prima di utilizzare i classificatori incorporati nel flusso di lavoro di classificazione e etichettatura, è consigliabile verificarli in base a un campione del contenuto dell'organizzazione che si adatta alla categoria per verificare che le stime di classificazione soddisfino le proprie aspettative.
 
 > [!IMPORTANT]
 > Si noti che la lingua offensiva, la molestia, la profanità e i classificatori di minacce funzionano solo con il testo ricercabile non sono esaustivi o completi. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare questi classificatori a sua discrezione. Anche se i classificatori possono assistere la propria organizzazione nel monitoraggio di un'offensiva e di altre lingue utilizzate, i classificatori non affrontano le conseguenze di tale lingua e non sono destinati a fornire il solo mezzo di monitoraggio o di risposta dell'organizzazione all'utilizzo di tale lingua. La propria organizzazione e non Microsoft o le sue affiliate resta responsabile di tutte le decisioni relative al monitoraggio, all'applicazione, al blocco, alla rimozione e alla conservazione di qualsiasi contenuto identificato da un classificatore preformato.
 
-## <a name="how-to-prepare-for-and-use-a-ready-to-use-classifier"></a>Come prepararsi e usare un classificatore pronto per l'uso
+## <a name="how-to-prepare-for-and-use-a-built-in-classifier"></a>Come prepararsi e utilizzare un classificatore incorporato
 
-1. Raccogliere gli elementi di contenuto di prova monouso che si ritiene appartenenti alla categoria del classificatore pronto per l'uso (corrispondenze positive) e quelli che non devono essere inclusi (corrispondenze negative) nella categoria che si sta testando.
+1. Raccogliere gli elementi di contenuto di prova monouso che si ritiene appartengano alla categoria del classificatore incorporato (corrispondenze positive) e quelli che non devono essere inclusi (corrispondenze negative) nella categoria che si sta testando.
 
 > [!IMPORTANT]
 > Gli elementi di esempio non devono essere crittografati e devono essere in inglese.
@@ -65,7 +65,7 @@ Microsoft ha formato e testato un certo numero di classificatori che utilizzano 
 
 10. Scegliere il classificatore dall'elenco, in questo caso`Source Code`
 
-11. Denominare il criterio, ad esempio "codice sorgente pronto per l'uso del test di classificazione".
+11. Denominare il criterio, ad esempio "test di classificazione incorporato del codice sorgente".
 
 12. Scegliere `Let me choose specific locations`.
 

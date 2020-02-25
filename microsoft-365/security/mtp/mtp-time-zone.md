@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d6fd2c5cb6e22ae3aab2853a035fb41bee69f670
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fd8a09ceb32b8ddacea06b4569a2d2a851daaeb2
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086965"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235205"
 ---
 # <a name="set-the-time-zone-for-microsoft-threat-protection"></a>Impostare il fuso orario per Microsoft Threat Protection
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Microsoft Threat Protection può visualizzare le informazioni di data e ora usando il fuso orario locale o il fuso orario UTC. Il fuso orario selezionato verrà applicato a tutte le informazioni di data e ora visualizzate nelle funzionalità seguenti nel Centro sicurezza Microsoft 365:
 - Incidenti

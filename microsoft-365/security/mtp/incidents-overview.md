@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 95934d9884328d4311abbd0f29b96e46e0c06894
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 29eeb5f0699321441543057040b434c4dad61925
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087635"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42235115"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Panoramica degli eventi imprevisti in Microsoft Threat Protection
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Alla base di tutti gli eventi ci sono gli avvisi. Gli avvisi vengono creati quando un'attività o un evento dannoso viene visualizzato nella rete. I singoli avvisi forniscono indicazioni importanti su quello che accade in relazione ai singoli eventi o entità. Tuttavia, gli attacchi usano in genere diversi vettori di attacco per eseguire una violazione. Rimettere insieme le singole indicazioni può essere un'attività complessa che richiede molto tempo. 
 
