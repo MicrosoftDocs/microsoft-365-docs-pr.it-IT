@@ -17,35 +17,35 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2a3a635b7fd189d380b4323fcf2dc09447e12efe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7f5912306700efa0db704fe8d0c0db006105fda6
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087945"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234765"
 ---
-# <a name="emailurlinfo"></a><span data-ttu-id="7bdc5-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="7bdc5-104">EmailUrlInfo</span></span>
+# <a name="emailurlinfo"></a><span data-ttu-id="f1406-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="f1406-104">EmailUrlInfo</span></span>
 
-<span data-ttu-id="7bdc5-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="7bdc5-105">**Applies to:**</span></span>
-- <span data-ttu-id="7bdc5-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="7bdc5-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="f1406-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="f1406-105">**Applies to:**</span></span>
+- <span data-ttu-id="f1406-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="f1406-106">Microsoft Threat Protection</span></span>
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-<span data-ttu-id="7bdc5-107">La tabella `EmailUrlInfo` nello schema per [Ricerca avanzata](advanced-hunting-overview.md) contiene informazioni riguardanti gli URL nei messaggi di posta elettronica e gli allegati elaborati da Office 365 ATP.</span><span class="sxs-lookup"><span data-stu-id="7bdc5-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP.</span></span> <span data-ttu-id="7bdc5-108">Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.</span><span class="sxs-lookup"><span data-stu-id="7bdc5-108">Use this reference to construct queries that return information from this table.</span></span>
 
-<span data-ttu-id="7bdc5-109">Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).</span><span class="sxs-lookup"><span data-stu-id="7bdc5-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="f1406-107">La tabella `EmailUrlInfo` nello schema per [Ricerca avanzata](advanced-hunting-overview.md) contiene informazioni riguardanti gli URL nei messaggi di posta elettronica e gli allegati elaborati da Office 365 ATP.</span><span class="sxs-lookup"><span data-stu-id="f1406-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP.</span></span> <span data-ttu-id="f1406-108">Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.</span><span class="sxs-lookup"><span data-stu-id="f1406-108">Use this reference to construct queries that return information from this table.</span></span>
 
-| <span data-ttu-id="7bdc5-110">Nome colonna</span><span class="sxs-lookup"><span data-stu-id="7bdc5-110">Column name</span></span> | <span data-ttu-id="7bdc5-111">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="7bdc5-111">Data type</span></span> | <span data-ttu-id="7bdc5-112">Descrizione</span><span class="sxs-lookup"><span data-stu-id="7bdc5-112">Description</span></span> |
+<span data-ttu-id="f1406-109">Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).</span><span class="sxs-lookup"><span data-stu-id="f1406-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+
+| <span data-ttu-id="f1406-110">Nome colonna</span><span class="sxs-lookup"><span data-stu-id="f1406-110">Column name</span></span> | <span data-ttu-id="f1406-111">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="f1406-111">Data type</span></span> | <span data-ttu-id="f1406-112">Descrizione</span><span class="sxs-lookup"><span data-stu-id="f1406-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="7bdc5-113">datetime</span><span class="sxs-lookup"><span data-stu-id="7bdc5-113">datetime</span></span> | <span data-ttu-id="7bdc5-114">Data e ora di registrazione dell'evento</span><span class="sxs-lookup"><span data-stu-id="7bdc5-114">Date and time when the event was recorded</span></span> |
-| `UrlId` | <span data-ttu-id="7bdc5-115">stringa</span><span class="sxs-lookup"><span data-stu-id="7bdc5-115">string</span></span> | <span data-ttu-id="7bdc5-116">Identificatore univoco per l'URL nell'oggetto, nel corpo o nell'allegato del messaggio di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="7bdc5-116">Unique identifier for the URL in the email subject, body, or attachment</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="7bdc5-117">stringa</span><span class="sxs-lookup"><span data-stu-id="7bdc5-117">string</span></span> | <span data-ttu-id="7bdc5-118">Identificatore univoco per la posta elettronica, generato da Office 365</span><span class="sxs-lookup"><span data-stu-id="7bdc5-118">Unique identifier for the email, generated by Office 365</span></span> |
-| `Url` | <span data-ttu-id="7bdc5-119">stringa</span><span class="sxs-lookup"><span data-stu-id="7bdc5-119">string</span></span> | <span data-ttu-id="7bdc5-120">URL completo nell'oggetto, nel corpo o nell'allegato del messaggio di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="7bdc5-120">Full URL in the email subject, body, or attachment</span></span> |
+| `Timestamp` | <span data-ttu-id="f1406-113">datetime</span><span class="sxs-lookup"><span data-stu-id="f1406-113">datetime</span></span> | <span data-ttu-id="f1406-114">Data e ora di registrazione dell'evento</span><span class="sxs-lookup"><span data-stu-id="f1406-114">Date and time when the event was recorded</span></span> |
+| `UrlId` | <span data-ttu-id="f1406-115">stringa</span><span class="sxs-lookup"><span data-stu-id="f1406-115">string</span></span> | <span data-ttu-id="f1406-116">Identificatore univoco per l'URL nell'oggetto, nel corpo o nell'allegato del messaggio di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="f1406-116">Unique identifier for the URL in the email subject, body, or attachment</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="f1406-117">stringa</span><span class="sxs-lookup"><span data-stu-id="f1406-117">string</span></span> | <span data-ttu-id="f1406-118">Identificatore univoco per la posta elettronica, generato da Office 365</span><span class="sxs-lookup"><span data-stu-id="f1406-118">Unique identifier for the email, generated by Office 365</span></span> |
+| `Url` | <span data-ttu-id="f1406-119">stringa</span><span class="sxs-lookup"><span data-stu-id="f1406-119">string</span></span> | <span data-ttu-id="f1406-120">URL completo nell'oggetto, nel corpo o nell'allegato del messaggio di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="f1406-120">Full URL in the email subject, body, or attachment</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="7bdc5-121">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="7bdc5-121">Related topics</span></span>
-- [<span data-ttu-id="7bdc5-122">Ricerca proattiva delle minacce</span><span class="sxs-lookup"><span data-stu-id="7bdc5-122">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="7bdc5-123">Capire il linguaggio delle query</span><span class="sxs-lookup"><span data-stu-id="7bdc5-123">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="7bdc5-124">Utilizzare le query condivise</span><span class="sxs-lookup"><span data-stu-id="7bdc5-124">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="7bdc5-125">Ricerca delle minacce attraverso dispositivi e posta elettronica</span><span class="sxs-lookup"><span data-stu-id="7bdc5-125">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="7bdc5-126">Comprendere lo schema</span><span class="sxs-lookup"><span data-stu-id="7bdc5-126">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="7bdc5-127">Applicare le procedure consigliate per le query</span><span class="sxs-lookup"><span data-stu-id="7bdc5-127">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="f1406-121">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="f1406-121">Related topics</span></span>
+- [<span data-ttu-id="f1406-122">Ricerca proattiva delle minacce</span><span class="sxs-lookup"><span data-stu-id="f1406-122">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="f1406-123">Capire il linguaggio delle query</span><span class="sxs-lookup"><span data-stu-id="f1406-123">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="f1406-124">Utilizzare le query condivise</span><span class="sxs-lookup"><span data-stu-id="f1406-124">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="f1406-125">Ricerca delle minacce attraverso dispositivi e posta elettronica</span><span class="sxs-lookup"><span data-stu-id="f1406-125">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="f1406-126">Comprendere lo schema</span><span class="sxs-lookup"><span data-stu-id="f1406-126">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="f1406-127">Applicare le procedure consigliate per le query</span><span class="sxs-lookup"><span data-stu-id="f1406-127">Apply query best practices</span></span>](advanced-hunting-best-practices.md)

@@ -100,6 +100,8 @@
               href: working-with-managed-desktop/reliability-insights.md
             - name: Intuizioni della batteria
               href: working-with-managed-desktop/battery-insights.md
+            - name: Insights per l'aggiornamento della sicurezza di Windows
+              href: working-with-managed-desktop/security-update-insights.md
         - name: Supporto amministratori
           href: working-with-managed-desktop/admin-support.md
         - name: Supporto per gli utenti finali
