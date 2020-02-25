@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: b9e1f0691d7bec1d8a17bb7f68a0e0941b3f6bd9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a971d8dc413e7794aa48c0b39cc0f42e511739ed
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085955"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250446"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrare manualmente i dispositivi già presenti
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ecd8a362b0e77df846f486b0a424425f012ee68b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 27f664f9657e88db1dab86f765be36458b4090d9
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602353"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42236886"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Governo del Regno Unito-cloud (G-Cloud)
 
@@ -41,7 +41,7 @@ Per ulteriori informazioni sui vantaggi del Regno Unito G-Cloud V6 sul cloud Mic
 
 Informazioni su come accelerare la distribuzione di G-Cloud V6 per il Regno Unito con il modello di sicurezza e conformità di Azure: [scaricare il modello di Azure Blueprint UK g-cloud Principle Guida all'implementazione](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft in ambito
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -64,17 +64,17 @@ Per verificare che i servizi cloud di Microsoft mantengano la conformità con i 
 
 ### <a name="dynamics-365"></a>Dynamics 365
 
-- [Ambiente di rischio cloud di Dynamics 365 UK G](https://aka.ms/Dynamics365UKGCloudRiskEnvironment)
+- [Ambiente di rischio cloud di Dynamics 365 UK G](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ### <a name="intune"></a>Intune
 
-- [Ambiente di rischio per il cloud di Intune UK G](https://aka.ms/IntuneUKGCloudRiskEnvironment)
+- [Ambiente di rischio per il cloud di Intune UK G](https://go.microsoft.com/fwlink/?linkid=2099702)
 - [Rischio residuo del cloud di Intune UK G](https://aka.ms/IntuneUKGCloudResidualRisk)
 - [Riepilogo della valutazione della sicurezza del cloud di Azure UK G](https://aka.ms/IntuneUKGCloudSecurityAssessmentSummary)
 
 ### <a name="office-365"></a>Office 365
 
-- [Ambiente di rischio cloud di Office 365 UK G](https://aka.ms/Office365UKGCloudRiskEnvironment)
+- [Ambiente di rischio cloud di Office 365 UK G](https://go.microsoft.com/fwlink/?linkid=2099702)
 
 ## <a name="accelerate-your-deployment-of-uk-g-cloud-solutions-on-azure"></a>Accelerare la distribuzione delle soluzioni G-Cloud UK in Azure
 
@@ -116,6 +116,6 @@ Il [Service Trust Portal](https://support.office.com/article/Get-started-with-th
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformità in Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
+## <a name="download-the-offering-backgrounder"></a>Scaricare il documento di informazioni di base sull'offerta
 
 Ti serve il documento di informazioni di base sulla soluzione? Scarica il [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf).

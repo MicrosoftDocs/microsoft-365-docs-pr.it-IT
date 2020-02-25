@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: bc6c0199c6ee019cbb032c288612d36a254ee7e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c3137c25de9f8fe941f62e5c53b1006c5009e222
+ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085711"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42266092"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Supporto di amministrazione per Microsoft Managed Desktop
 
@@ -59,12 +59,7 @@ Una volta che il ticket è nello stato **attenuato** o **risolto** , è possibil
 
 ![Modulo commenti e suggerimenti](../../media/feedback_form.png)
 
-## <a name="provide-administrator-rights-to-specific-users"></a>Fornire i diritti di amministratore per utenti specifici
 
-Durante l'utilizzo del personale di supporto, potrebbe essere necessario fornire i diritti di amministratore locale a un utente di un dispositivo per facilitare la risoluzione dei problemi. A tale scopo, è necessario disporre già dei diritti di amministratore globale o del dispositivo in Microsoft Intune per il proprio account. Eseguire una delle operazioni seguenti, a seconda della situazione:
-
-- Se gli utenti vengono sincronizzati dall'account di Active Directory locale, eseguire **net localgroup Administrators/Add "Contoso\username"** da un prompt dei comandi con privilegi elevati.
-- Se gli utenti vengono creati in Azure Active Directory, eseguire **net localgroup Administrators/Add "AzureAD\UserUpn"** da un prompt dei comandi con privilegi elevati.
 
 ## <a name="additional-resources"></a>Altre risorse
 - [Supporto per gli utenti finali per Microsoft Managed Desktop](end-user-support.md). 

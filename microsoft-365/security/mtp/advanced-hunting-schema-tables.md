@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d817c3b4f6e915985878d1586776ac472025f704
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bb3eae9fff658ee1cbb7f80fa3ff15f2335a9a3a
+ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087925"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42234685"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendere schema di ricerca avanzato
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 
 Lo schema per [Ricerca avanzata](advanced-hunting-overview.md) è costituito da più tabelle che forniscono informazioni sull'evento o informazioni su computer ed entità. Per creare efficacemente query che coprano più tabelle, è necessario capire le tabelle e le colonne nello schema per Ricerca avanzata.
 

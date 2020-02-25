@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 63e07ffd58a7add7f7f72aad20b6389cd22d2ca7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
+ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602753"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42250476"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop
 
@@ -23,7 +23,7 @@ ms.locfileid: "41602753"
 
 <!--Update management -->
 
-Microsoft Managed Desktop connette tutti i dispositivi a una moderna infrastruttura basata su cloud. Mantenere aggiornate le applicazioni di Windows, Office, driver, firmware e Microsoft Store for business è un bilanciamento della velocità e della stabilità. I gruppi di distribuzione verranno utilizzati per garantire che gli aggiornamenti del sistema operativo e i criteri vengano implementati in modo sicuro. 
+Microsoft Managed Desktop connette tutti i dispositivi a una moderna infrastruttura basata su cloud. Mantenere aggiornate le applicazioni di Windows, Office, driver, firmware e Microsoft Store for business è un bilanciamento della velocità e della stabilità. I gruppi di distribuzione verranno utilizzati per garantire che gli aggiornamenti del sistema operativo e i criteri vengano implementati in modo sicuro. Per ulteriori informazioni, vedere la pagina relativa al [processo di modifica e rilascio del video Microsoft Managed Desktop](https://www.microsoft.com/videoplayer/embed/RE4mWqP).
 
 Gli aggiornamenti rilasciati da Microsoft sono cumulativi e vengono categorizzati come aggiornamenti di qualità o funzionalità.
 Per ulteriori informazioni, vedere [Windows Update for business: tipi di aggiornamento](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
