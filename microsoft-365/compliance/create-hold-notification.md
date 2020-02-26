@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 3b047e9c3a56a6c03368c79c2c5a4622b396b6b0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Utilizzare la scheda comunicazioni in un caso avanzato di eDiscovery per gestire il flusso di lavoro di notifica della banca depositaria.
+ms.openlocfilehash: b4d3c4c3ed132914ebe46b03eb65d24e073ee687
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077558"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280234"
 ---
 # <a name="create-a-legal-hold-notice"></a>Creare un avviso per la conservazione legale
 
@@ -33,18 +33,18 @@ In questo articolo vengono illustrati i passaggi del flusso di lavoro di notific
 
 ## <a name="step-1-specify-communication-details"></a>Passaggio 1: specificare i dettagli della comunicazione
 
-Il primo passaggio consiste nel specificare i dettagli adeguati per le notifiche di archiviazione legale o altre comunicazioni del custode. 
+Il primo passaggio consiste nel specificare i dettagli adeguati per le notifiche di archiviazione legale o altre comunicazioni del custode.
 
 ![Pagina di comunicazione del nome](../media/NameCommunication.PNG)
 
 1. Nel centro sicurezza & conformità, accedere a **eDiscovery > Advanced eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione.
-   
-2. Fare clic sulla scheda **comunicazioni** , quindi fare clic su **nuova comunicazione**.
-   
+
+2. Selezionare un caso, fare clic sulla scheda **comunicazioni** , quindi fare clic su **nuova comunicazione**.
+
 3. Nella pagina **nome comunicazione** specificare i seguenti dettagli di comunicazione (necessari).
 
     - **Nome**: questo è il nome della comunicazione.
-    
+
     - **Responsabile del rilascio**: nell'elenco a discesa viene visualizzato un elenco di membri del caso. Ogni avviso inviato ai depositari verrà inviato per conto del responsabile del rilascio specificato.
 
 4. Fare clic su **Avanti**.
@@ -79,33 +79,33 @@ Dopo aver creato la comunicazione, la **notifica di rilascio** viene avviata dal
 Per creare una notifica di rilascio:
 
 1. Nel riquadro **rilascio** , fare clic su **modifica**.
-   
+
 2. Se necessario, aggiungere ulteriori membri del caso o personale ai campi **CC** e **Ccn** . Per aggiungere più utenti a tali campi, separare gli indirizzi di posta elettronica con un punto e virgola.
-   
+
 3. Specificare l' **oggetto** per l'avviso (obbligatorio).
-   
-4. Specificare il contenuto o altre istruzioni che si desidera fornire al custode (obbligatorio). Si noti che il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine dell'avviso di pubblicazione. 
-   
-5. Fare clic su **Salva**. 
 
-### <a name="re-issuance-notification"></a>Notifica di riemissione 
+4. Specificare il contenuto o altre istruzioni che si desidera fornire al custode (obbligatorio). Il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine dell'avviso di pubblicazione. 
 
-Quando il caso progredisce, potrebbe essere necessario che i depositari possano conservare dati aggiuntivi o meno rispetto a quelli precedentemente istruiti. Dopo aver aggiornato il contenuto dell'avviso di conservazione, la notifica di riemissione segnala ai depositari le modifiche apportate ai propri obblighi.
-
-Per creare una notifica di riemissione: 
-
-1. Nel riquadro **ristampa** fare clic su **modifica**.
-   
-2. Se necessario, aggiungere ulteriori membri del caso o personale ai campi **CC** e **Ccn** . Per aggiungere più utenti a tali campi, separare gli indirizzi di posta elettronica con un punto e virgola.
-   
-3. Specificare l' **oggetto** per l'avviso (obbligatorio).
-   
-4. Specificare il contenuto o altre istruzioni che si desidera fornire al custode (obbligatorio). Si noti che il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine dell'avviso di riemissione.
-   
 5. Fare clic su **Salva**.
 
->[!Note]
->Se viene modificata una notifica di blocco, la notifica di riemissione verrà inviata automaticamente a tutti i depositari assegnati alla notifica. Dopo che la notifica viene inviata, ai depositari verrà chiesto di riconfermare il proprio avviso di esenzione. Se sono stati configurati eventuali flussi di lavoro di promemoria o escalation, anche questi verranno riavviati. 
+### <a name="re-issuance-notification"></a>Notifica di riemissione
+
+Quando il caso progredisce, potrebbe essere necessario che i depositari possano conservare dati aggiuntivi o meno rispetto a quelli precedentemente istruiti. Dopo aver aggiornato il contenuto del portale, viene inviata la notifica di riemissione e vengono avvisati i depositari delle modifiche apportate ai propri obblighi di conservazione.
+
+Per creare una notifica di riemissione:
+
+1. Nel riquadro **ristampa** fare clic su **modifica**.
+
+2. Se necessario, aggiungere ulteriori membri del caso o personale ai campi **CC** e **Ccn** . Per aggiungere più utenti a tali campi, separare gli indirizzi di posta elettronica con un punto e virgola.
+
+3. Specificare l' **oggetto** per l'avviso (obbligatorio).
+
+4. Specificare il contenuto o altre istruzioni che si desidera fornire al custode (obbligatorio). Il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine dell'avviso di riemissione.
+
+5. Fare clic su **Salva**.
+
+> [!NOTE]
+> Se il contenuto del portale viene modificato (nella pagina **definire il contenuto del portale** nella procedura guidata di modifica della **comunicazione** ), la notifica di riemissione verrà inviata automaticamente a tutti i depositari assegnati alla notifica. Dopo che la notifica viene inviata, ai depositari verrà chiesto di riconfermare il proprio avviso di esenzione. Se sono stati configurati eventuali flussi di lavoro di promemoria o escalation, anche questi verranno riavviati. Per ulteriori informazioni su ciò che gli altri eventi di gestione dei casi attivano le comunicazioni, vedere [eventi che attivano le notifiche](#events-that-trigger-notifications).
 
 ### <a name="release-notification"></a>Notifica di rilascio
 
@@ -114,14 +114,14 @@ Dopo aver risolto un problema o se un custode non è più soggetto alla conserva
 Per creare una notifica di rilascio: 
 
 1. Nella sezione **rilascia** fare clic su **modifica**.
-   
+
 2. Se necessario, aggiungere ulteriori membri del caso o personale ai campi **CC** e **Ccn** . Per aggiungere più utenti a tali campi, separare gli indirizzi di posta elettronica con un punto e virgola.
-   
+
 3. Specificare l' **oggetto** per l'avviso (obbligatorio).
-   
+
 4. Specificare il contenuto o altre istruzioni che si desidera fornire al custode (obbligatorio).
-   
-5. Fare clic su **Salva** e passare al passaggio successivo. 
+
+5. Fare clic su **Salva** e passare al passaggio successivo.
 
 ## <a name="optional-step-4-set-the-optional-notifications"></a>Optional Passaggio 4: impostare le notifiche facoltative
 
@@ -131,47 +131,47 @@ Facoltativamente, è possibile semplificare il flusso di lavoro per la creazione
 
 ### <a name="reminders"></a>Promemoria
 
-Dopo aver inviato una notifica di blocco, è possibile eseguire il follow-up con i depositari non rispondenti definendo un flusso di lavoro di sollecito. 
+Dopo aver inviato una notifica di blocco, è possibile eseguire il follow-up con i depositari non rispondenti definendo un flusso di lavoro di sollecito.
 
 Per pianificare i promemoria:
 
 1. Nel riquadro **promemoria** fare clic su **modifica**.
-   
+
 2. Abilitare il flusso di lavoro di **sollecito** attivando l'interruttore di **stato** (obbligatorio).
-   
-3. Specificare l' **intervallo di sollecito (in giorni)** (obbligatorio). Questo è il numero di giorni di attesa prima dell'invio delle notifiche del primo e del promemoria di follow-up. Se ad esempio si imposta l'intervallo di sollecito su 7 giorni, il primo sollecito verrebbe inviato 7 giorni dopo l'invio iniziale della notifica di blocco. Tutti i promemoria successivi vengono inviati anche ogni 7 giorni.
-   
-4. Specificare il **numero di promemoria** (obbligatorio). Questo campo consente di specificare il numero di promemoria da inviare ai depositari non reattivi. Ad esempio, se si imposta il numero di promemoria su 3, un custode riceverà un massimo di tre promemoria. Dopo che un custode riconosce la notifica di blocco, i promemoria non verranno più inviati a quell'utente.
-   
+
+3. Specificare l' **intervallo di sollecito (in giorni)** (obbligatorio). Questo è il numero di giorni di attesa prima dell'invio delle notifiche del primo e del promemoria di follow-up. Se ad esempio si imposta l'intervallo di sollecito su sette giorni, il primo sollecito verrebbe inviato sette giorni dopo l'invio iniziale della notifica di blocco. Tutti i promemoria successivi vengono inviati anche ogni sette giorni.
+
+4. Specificare il **numero di promemoria** (obbligatorio). Questo campo consente di specificare il numero di promemoria da inviare ai depositari non rispondenti. Ad esempio, se si imposta il numero di promemoria su 3, un custode riceverà un massimo di tre promemoria. Dopo che un custode riconosce la notifica di blocco, i promemoria non verranno più inviati a quell'utente.
+
 5. Specificare l' **oggetto** per l'avviso (obbligatorio). 
-   
-6. Specificare il contenuto o altre istruzioni che si desidera fornire al custode (obbligatorio). Si noti che il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine della notifica di sollecito.
-   
+
+6. Specificare il contenuto o altre istruzioni che si desidera fornire al custode (obbligatorio). Il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine della notifica di sollecito.
+
 7. Fare clic su **Salva** e passare al passaggio successivo.
 
-### <a name="escalations"></a>Escalation 
+### <a name="escalations"></a>Escalation
 
 In alcuni casi, potrebbero essere necessari ulteriori modi per eseguire il follow-up con i depositari non rispondenti. Se un custode non riconosce una notifica di blocco dopo aver ricevuto il numero specificato di promemoria, il team legale può specificare un flusso di lavoro per inviare automaticamente un avviso di escalation al custode e al relativo responsabile.
 
 Per pianificare le escalation:
 
 1. Nel riquadro **escalation** fare clic su **modifica**.
-   
-2. Abilitare il flusso di lavoro per l' **escalation** attivando l'interruttore di **stato** .
-   
-3. Specificare l' **intervallo di escalation (in giorni)** (obbligatorio). 
-   
-4. Specificare il **numero di escalation** (obbligatorio). Questo campo consente di specificare il numero di escalation da inviare ai depositari non reattivi. Ad esempio, se si imposta il numero di escalation su 3, un avviso di escalation verrebbe inviato al custode e al relativo Manager al massimo 3 volte. Dopo che un custode riconosce la notifica di blocco, le escalation non verranno più inviate. 
-   
-5. Specificare l' **oggetto** per l'avviso (obbligatorio). 
-   
-6. Specificare il contenuto o altre istruzioni che si desidera fornire al custode (obbligatorio). Si noti che il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine dell'avviso di escalation.
-   
-7. Fare clic su **Salva** e passare al passaggio successivo.
-   
-## <a name="step-5-assign-custodians"></a>Passaggio 5: assegnare i depositari 
 
-Dopo aver finalizzato il contenuto per le notifiche, selezionare i depositari che si desidera inviare le notifiche. 
+2. Abilitare il flusso di lavoro per l' **escalation** attivando l'interruttore di **stato** .
+
+3. Specificare l' **intervallo di escalation (in giorni)** (obbligatorio).
+
+4. Specificare il **numero di escalation** (obbligatorio). Questo campo consente di specificare il numero di escalation da inviare ai depositari non rispondenti. Ad esempio, se si imposta il numero di escalation su 3, un avviso di escalation verrebbe inviato al custode e al relativo Manager al massimo tre volte. Dopo che un custode riconosce la notifica di blocco, le escalation non verranno più inviate.
+
+5. Specificare l' **oggetto** per l'avviso (obbligatorio). 
+
+6. Specificare il contenuto o altre istruzioni che si desidera fornire al custode (obbligatorio). Il contenuto del portale definito nel passaggio 2 viene aggiunto alla fine dell'avviso di escalation.
+
+7. Fare clic su **Salva** e passare al passaggio successivo.
+
+## <a name="step-5-assign-custodians-to-receive-notifications"></a>Passaggio 5: assegnare i depositari per la ricezione delle notifiche
+
+Dopo aver finalizzato il contenuto per le notifiche, selezionare i depositari ai quali si desidera inviare notifiche. 
 
 ![Pagina Selezione depositari](../media/SelectCustodians.PNG)
 
@@ -180,12 +180,25 @@ Per aggiungere i depositari:
 1. Assegnare i depositari alla comunicazione facendo clic sulla casella di controllo accanto al nome.
 
     Dopo la creazione della comunicazione, il flusso di lavoro di notifica verrà applicato automaticamente ai depositari selezionati.
-   
+
 2. Fare clic su **Avanti** per esaminare le impostazioni di comunicazione e i dettagli.
- 
+
 >[!NOTE]
 >È possibile aggiungere solo i depositari che sono stati aggiunti al caso e non sono stati inviati un'altra notifica all'interno del caso.
 
 ## <a name="step-6-review-settings"></a>Passaggio 6: rivedere le impostazioni
 
 Dopo aver esaminato le impostazioni e fare clic su **Invia** per completare la comunicazione, il sistema avvierà automaticamente il flusso di lavoro di comunicazione inviando la notifica di rilascio.
+
+## <a name="events-that-trigger-notifications"></a>Eventi che attivano le notifiche
+
+Nella tabella seguente vengono descritti gli eventi del processo di gestione dei casi che si attivano quando i diversi tipi di notifiche vengono inviati ai depositari.
+
+|Tipo di comunicazione|Trigger |
+|:---------|:---------|
+|Notifiche di emissione|La creazione iniziale della notifica. È inoltre possibile rinviare manualmente una notifica di blocco. |
+|Notifiche di riemissione|Aggiornamento del contenuto del portale nella pagina **definire il contenuto del portale** nella procedura guidata **modifica comunicazione** .|
+|Notifiche di rilascio|Il custode viene rilasciato dal caso.|
+|Promemoria|L'intervallo e il numero di promemoria configurati per il promemoria.|
+|Escalation|L'intervallo e il numero di promemoria configurati per l'escalation.|
+|||

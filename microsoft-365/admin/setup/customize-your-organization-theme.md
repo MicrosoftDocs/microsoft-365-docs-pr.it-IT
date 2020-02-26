@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: "Informazioni su come modificare il tema predefinito di Office 365 e personalizzarlo in modo che corrisponda al logo o al colore dell'azienda. "
-ms.openlocfilehash: b59efa21195c0c7bed12c98b9d360d84451b3d35
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 729f029f58a19ed819b194deff526fc9b44757c5
+ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243947"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280184"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>Personalizzare il tema di Office 365 per l'organizzazione
 
@@ -43,7 +43,7 @@ Informazioni su come personalizzare il tema nell'interfaccia di amministrazione 
   - **Utilizzare un'immagine personalizzata del logo**: scegliere se utilizzare un'immagine da un URL o caricare un'immagine. Se si utilizza un URL, assicurarsi che l'URL utilizzi HTTPS e che sia 200 x 30 pixel di qualsiasi formato di qualsiasi dimensione. È possibile caricare un logo inferiore a 10 KB che è 200 x 30 pixel in formato JPG, PNG, GIF o SVG.
 
     > [!NOTE]
-    > Affinché il logo venga visualizzato nell'app per dispositivi mobili di SharePoint, utilizzare solo immagini SVG. Le immagini caricate in qualsiasi altro formato non vengono visualizzate nell'app. 
+    > Affinché il logo venga visualizzato nell'app per dispositivi mobili di SharePoint, utilizzare solo immagini SVG. Le immagini caricate in qualsiasi altro formato non vengono visualizzate nell'app. I loghi non possono essere cliccabili nell'app per dispositivi mobili di SharePoint.
     
   - **Fare clic su logo**: è possibile utilizzare il logo nella barra di spostamento come collegamento a qualsiasi risorsa dell'azienda. È possibile immettere l'URL per il logo qui, iniziando con http://o https://. Passaggio facoltativo.
     
