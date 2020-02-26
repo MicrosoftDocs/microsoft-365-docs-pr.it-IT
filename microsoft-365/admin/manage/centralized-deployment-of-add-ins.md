@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti di Office 365 soddisfano i requisiti, in modo che sia possibile utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
-ms.openlocfilehash: 4351658f2637b86c9b3233f55916d8e0ac0f8cfb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b5cd04100b025705d29f86a07ec5f6aece259a8a
+ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252890"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42278762"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
@@ -82,9 +82,9 @@ Se non si desidera utilizzare il rapporto attivazioni, è possibile chiedere a u
 Per assistenza con Office 365 ProPlus, vedere [Suggerimenti per la risoluzione dei problemi per Office 365 ProPlus](https://go.microsoft.com/fwlink/p/?linkid=846339).
 
 
-### <a name="exchange-requirements"></a>Requisiti di Exchange
+### <a name="exchange-online-requirements"></a>Requisiti di Exchange Online
 
-Microsoft Exchange archivia i manifesti del componente aggiuntivo all'interno del tenant dell'organizzazione. L'amministratore che distribuisce i componenti aggiuntivi e gli utenti che li ricevono devono avere una versione di Exchange Server che supporta l'autenticazione OAuth. Per impostazione predefinita, le distribuzioni multi-tenant o vNext dedicato di Exchange supportano OAuth. Le distribuzioni legacy dedicate e locali ibride di Exchange possono essere configurate per supportare OAuth. Tuttavia, non è la configurazione predefinita.
+Microsoft Exchange archivia i manifesti del componente aggiuntivo all'interno del tenant dell'organizzazione. Gli amministratori che distribuiscono i componenti aggiuntivi e gli utenti che ricevono i componenti aggiuntivi devono trovarsi in una versione di Exchange Online che supporta l'autenticazione OAuth. Per impostazione predefinita, Exchange multi-tenant e le distribuzioni di VNext dedicate supportano OAuth. 
   
 Contattare l'amministratore di Exchange dell'organizzazione per sapere quale configurazione è in uso. La connettività OAuth per ogni utente può essere verificata usando il cmdlet di PowerShell [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
 
