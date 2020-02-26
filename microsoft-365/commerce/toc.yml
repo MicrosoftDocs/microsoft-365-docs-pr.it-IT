@@ -1,44 +1,44 @@
-- name: Gestire gli acquisti commerciali e la fatturazione
+- name: Gestire acquisti commerciali e fatturazione
   href: index.md
   expanded: true
   items:
-    - name: Gestire gli abbonamenti
+    - name: Gestire abbonamenti
       items:
-        - name: Gestire le app di terze parti
+        - name: Gestire app di terze parti
           href: manage-saas-apps.md
-        - name: Aggiornare gli abbonamenti
+        - name: Aggiornare abbonamenti
           href: /microsoft-365/commerce/subscriptions/upgrade-to-different-plan
-        - name: Gestire gli acquisti in modalità self-service (utenti)
+        - name: Gestire acquisti in modalità self-service (utenti)
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-users
-        - name: Gestire gli acquisti in modalità self-service (amministratore)
+        - name: Gestire acquisti in modalità self-service (amministratore)
           href: /microsoft-365/commerce/subscriptions/manage-self-service-purchases-admins
-    - name: Gestione delle licenze
+    - name: Gestire licenze
       items:
         - name: Acquistare licenze
           href: /microsoft-365/commerce/licenses/buy-licenses
         - name: Assegnare licenze
           href: /microsoft-365/admin/manage/assign-licenses-to-users
-        - name: Annullamento dell'assegnazione delle licenze
+        - name: Annullare l'assegnazione delle licenze
           href: /microsoft-365/admin/manage/remove-licenses-from-users
         - name: Rimuovere licenze dall'abbonamento
           href: /microsoft-365/commerce/licenses/remove-licenses-from-subscription
-    - name: Bollette e pagamenti
+    - name: Fatture e pagamenti
       items:
-        - name: Comprendere la fattura
+        - name: Informazioni sulla fattura
           href: /microsoft-365/commerce/billing-and-payments/understand-your-invoice
-        - name: Gestione del metodo di pagamento
+        - name: Gestire metodi di pagamento
           href: /microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account
-        - name: Gestire i profili di fatturazione
+        - name: Gestire profili di fatturazione
           href: /microsoft-365/commerce/billing-and-payments/manage-billing-profiles
-        - name: Direttiva sui servizi di pagamento 2 e autenticazione avanzata dei clienti
+        - name: Payment Services Directive 2 e Strong Customer Authentication
           href: /microsoft-365/commerce/billing-and-payments/psd2
     - name: Account di fatturazione
       items:
-        - name: Gestire gli account di fatturazione
+        - name: Gestire account di fatturazione
           href: /microsoft-365/commerce/billing-accounts/manage-billing-accounts
         - name: Associare un tenant a un account di fatturazione
           href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business?context=/microsoft-365/commerce/context/context-commerce
-    - name: Gestire le relazioni con i partner
+    - name: Gestire relazioni con i partner
       href: manage-partners.md
-    - name: Chiudere l'account
+    - name: Chiudere il proprio account
       href: close-your-account.md

@@ -24,7 +24,7 @@
               href: service-description/archived-device-list.md
         - name: Servizi del dispositivo
           href: service-description/device-services.md
-        - name: Configurazione del dispositivo
+        - name: Configurazione delle periferiche
           href: service-description/device-policies.md
         - name: Sicurezza
           href: service-description/security.md
@@ -65,13 +65,13 @@
           href: get-started/add-admin-contacts.md
         - name: Modificare l'accesso condizionale
           href: get-started/conditional-access.md
-        - name: Assegnare licenze
+        - name: Assegnazione delle licenze
           href: get-started/assign-licenses.md
         - name: Distribuire il Portale aziendale Intune
           href: get-started/company-portal.md
         - name: Abilitare Enterprise State Roaming
           href: get-started/enterprise-state-roaming.md
-        - name: Configurare i dispositivi
+        - name: Configurare dispositivi
           href: get-started/set-up-devices.md
           items:
             - name: Registrare manualmente i nuovi dispositivi
@@ -98,15 +98,15 @@
               href: working-with-managed-desktop/usage-insights.md
             - name: Dati analitici sull'affidabilità
               href: working-with-managed-desktop/reliability-insights.md
-            - name: Intuizioni della batteria
+            - name: Dati analitici sulle batterie
               href: working-with-managed-desktop/battery-insights.md
-            - name: Insights per l'aggiornamento della sicurezza di Windows
+            - name: Dati analitici sugli aggiornamenti della sicurezza di Windows
               href: working-with-managed-desktop/security-update-insights.md
         - name: Supporto amministratori
           href: working-with-managed-desktop/admin-support.md
         - name: Supporto per gli utenti finali
           href: working-with-managed-desktop/end-user-support.md
-        - name: Gestire le app
+        - name: Gestire app
           href: working-with-managed-desktop/manage-apps.md
         - name: Impostazioni configurabili
           href: working-with-managed-desktop/config-setting-overview.md

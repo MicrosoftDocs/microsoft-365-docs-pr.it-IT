@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
-ms.openlocfilehash: 102d1da2ec5f49e26a634611f4f640a083d167ff
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.openlocfilehash: ef4b5c9768687864427a0805039a35958c476142
+ms.sourcegitcommit: 1f04eb8a32aed8571ac37bcfef61e0d0ef181eda
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101266"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42278772"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -85,7 +85,7 @@ La tabella seguente identifica cosa accade alla crittografia esistente quando si
 |**Etichetta con autorizzazioni definite dall'amministratore**|La crittografia originale viene rimossa|Viene applicata una nuova crittografia dell'etichetta|La crittografia originale viene rimossa|
 
 Si noti che nei casi in cui viene applicata la nuova crittografia dell'etichetta o la crittografia originale viene rimossa, ciò si verifica solo se l'utente che applica l'etichetta dispone di un ruolo o diritto di utilizzo che supporta questa azione:
-- Il [diritto di utilizzo](https://docs.microsoft.com/azure/information-protection/configure-usage-rights.md#usage-rights-and-descriptions) Esportazione o Controllo completo.
+- Il [diritto di utilizzo](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Esportazione o Controllo completo.
 - Il ruolo di [emittente di Rights Management o proprietario di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) o [utente con privilegi avanzati](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 Se l'utente non dispone di uno di questi diritti o ruoli, l'etichetta non può essere applicata, quindi la crittografia originale viene mantenuta. L'utente visualizza il messaggio seguente: **Non si dispone dell'autorizzazione per apportare questa modifica all'etichetta di riservatezza. Contattare il proprietario del contenuto.**

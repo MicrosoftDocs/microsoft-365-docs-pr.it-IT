@@ -6,17 +6,17 @@
       href: get-microsoft-365-campaigns.md
     - name: In che modo Microsoft 365 protegge i dati
       href: m365-campaigns-users.md
-- name: Eseguire l'iscrizione e l'accesso
+- name: Eseguire la configurazione e l'accesso
   items:
     - name: Panoramica
       href: microsoft-365-campaigns-setup-overview.md
-    - name: Iscrizione
+    - name: Effettuare la registrazione
       href: m365-campaigns-sign-up.md
     - name: Configurazione
       href: ../business/set-up.md?toc=/microsoft-365/campaigns/toc.json
-    - name: Accedi
+    - name: Accesso
       href: m365-campaigns-sign-in.md
-    - name: Personalizzare la pagina di accesso
+    - name: Personalizzare una pagina di accesso
       href: m365-customize-sign-in.md
     - name: Aggiungere utenti
       href: ../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json
@@ -58,7 +58,7 @@
       href: create-communications-site.md
 - name: Reimpostare o rimuovere i dati della campagna dai dispositivi
   items:
-    - name: Rimuovere i dati della campagna o dall’azienda
+    - name: Rimuovere i dati della campagna o dall'azienda
       href: ../business/remove-company-data.md?toc=/microsoft-365/campaigns/toc.json
     - name: Ripristinare i dispositivi alle impostazioni di fabbrica
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json

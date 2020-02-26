@@ -6,13 +6,13 @@
       href: microsoft-365-business-overview.md
     - name: Ottenere Microsoft 365 Business
       href: sign-up.md
-    - name: Prerequisiti per la protezione dei dati personali
+    - name: Prerequisiti per la protezione dei dati
       href: pre-requisites-for-data-protection.md
-    - name: Installazione
+    - name: Configurazione
       items:
-        - name: Panoramica dell’installazione
+        - name: Panoramica dell'installazione
           href: set-up-overview.md
-        - name: Configurare Microsoft 365 Business
+        - name: Impostare Microsoft 365 Business
           href: set-up.md
         - name: Proteggere i computer Windows 10
           href: secure-win-10-pcs.md
@@ -37,7 +37,7 @@
     - name: Proteggere l'azienda
       href: security-features.md
       items:
-        - name: Configurazione di MFA
+        - name: Configurare MFA
           href: /Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
         - name: Protezione avanzata dalle minacce
           href: increase-threat-protection.md
@@ -83,9 +83,9 @@
       items:
         - name: Fattura
           href: /Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
-        - name: Paga
+        - name: Pagamento
           href: /Office365/Admin/subscriptions-and-billing/pay-for-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
-        - name: Annulla
+        - name: Annullare
           href: /Office365/Admin/subscriptions-and-billing/cancel-your-subscription?toc=/microsoft-365/business/toc.json&bc=/microsoft-365/business/breadcrumb/toc.json
     - name: Autopilot
       items:
