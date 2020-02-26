@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 380c424acbcb609944ebfc3ea775ca31ac02bfe8
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 0dc9173c03d93ebe79544f8d417842b407025054
+ms.sourcegitcommit: 109b44aa71bb8453d0a602663df0fcf7ed7dfdbe
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266742"
+ms.locfileid: "42277223"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -795,6 +795,9 @@ La tabella seguente elenca le attività degli utenti e degli amministratori di M
 
 Dove indicato di seguito nelle descrizioni, alcune operazioni contengono parametri di attività aggiuntivi.
 
+> [!NOTE]
+> Se un'attività di Forms viene eseguita da un coautore o da un partecipante anonimo, viene registrata in modo leggermente diverso. Per altre informazioni, vedere la sezione [Attività di Forms eseguite da coautori e partecipanti anonimi](#forms-activities-performed-by-co-authors-and-anonymous-responders).
+
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
 |Commento creato|CreateComment|Il proprietario del modulo aggiunge un commento o il punteggio a un test.|
@@ -826,7 +829,23 @@ Dove indicato di seguito nelle descrizioni, alcune operazioni contengono paramet
 |Risposta inviata|SubmitResponse|Un utente invia una risposta a un modulo. <br><br>La proprietà IsInternalForm:booleano indica se il partecipante si trova nella stessa organizzazione del proprietario del modulo.|
 ||||
 
-### <a name="sensitivity-label-activities"></a>Attività sulle etichette di riservatezza 
+#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>Attività di Forms eseguite da coautori e partecipanti anonimi
+
+Forms supporta la collaborazione quando i moduli vengono progettati e durante l'analisi delle risposte. Un collaboratore di moduli è noto come *coautore*. I coautori possono eseguire tutte le operazioni che possono essere svolte da un proprietario del modulo, tranne l'eliminazione o lo spostamento di un modulo. Forms consente anche di creare un modulo a cui è possibile rispondere in modo anonimo. Questo significa che non è necessario che il partecipante sia connesso all'organizzazione per rispondere a un modulo. 
+
+La tabella seguente descrive le attività di controllo e le informazioni del record di controllo relative alle attività eseguite dai coautori e dai partecipanti anonimi.
+
+|**Tipo di attività**|**Utente interno o esterno**|**ID utente registrato**|**Organizzazione a cui si è connessi**|**Tipo di utente Forms**|
+|:-----|:-----|:-----|:-----|:-----|
+|Attività di creazione condivisa|Interno|UPN|Organizzazione del proprietario del modulo|Coautore|
+|Attività di creazione condivisa|Esterno|UPN<br>|Organizzazione del coautore<br>|Coautore|
+|Attività di creazione condivisa|Esterno|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>La seconda parte dell'ID è un hash, che varia in base ai diversi utenti|Organizzazione del proprietario del modulo<br>|Coautore|
+|Attività di risposta|Esterno|UPN<br>|Organizzazione del partecipante<br>|Partecipante|
+|Attività di risposta|Esterno|`urn:forms:external#a0b1c2d3@forms.office.com`<br>La seconda parte dell'ID utente è un hash, che varia in base ai diversi utenti|Organizzazione del proprietario del modulo|Partecipante|
+|Attività di risposta|Anonimo|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>La seconda parte dell'ID utente è un hash, che varia in base ai diversi utenti|Organizzazione del proprietario del modulo|Partecipante|
+||||
+
+### <a name="sensitivity-label-activities"></a>Attività sulle etichette di riservatezza
 
 La tabella seguente elenca gli eventi risultanti dalle attività di etichettatura per i siti di SharePoint Online e di Teams.
 
