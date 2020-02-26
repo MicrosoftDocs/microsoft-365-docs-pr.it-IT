@@ -1,86 +1,86 @@
-- name: Microsoft 365 per la documentazione e le risorse dell'organizzazione
+- name: Documentazione e risorse di Microsoft 365 per le aziende
   href: index.yml
-- name: Panoramica di Microsoft 365 per Enterprise
+- name: Panoramica di Microsoft 365 per le aziende
   href: microsoft-365-overview.md
-- name: Distribuire Microsoft 365 per Enterprise
+- name: Distribuire Microsoft 365 per le aziende
   href: deploy-microsoft-365-enterprise.md
   items:
     - name: Distribuire l'infrastruttura di base
       href: deploy-foundation-infrastructure.md
       items:
-        - name: Fase 1-rete
+        - name: Fase 1 - Funzionalità di rete
           href: networking-infrastructure.md
           items:
-            - name: 'Passaggio 1: preparare la rete per Microsoft 365'
+            - name: Passaggio 1 - Preparare la rete per Microsoft 365
               href: networking-provide-bandwidth-cloud-services.md
-            - name: 'Passaggio 2: configurare le connessioni Internet locali per ogni ufficio'
+            - name: Passaggio 2 - Configurare le connessioni Internet locali per ogni sede
               href: networking-dns-resolution-same-location.md
-            - name: 'Passaggio 3: evitare i tornanti di rete'
+            - name: Passaggio 3 - Evitare fenomeni di "hairpinning" di rete
               href: networking-avoid-network-hairpins.md
-            - name: 'Passaggio 4: configurare il bypass di traffico'
+            - name: Passaggio 4 - Configurare il bypass di traffico
               href: networking-configure-proxies-firewalls.md
-            - name: Passaggio 5-ottimizzare le prestazioni del servizio client e Office 365
+            - name: Passaggio 5 - Ottimizzare client e prestazioni del servizio di Office 365
               href: networking-optimize-tcp-performance.md
             - name: Criteri uscita di rete
               href: networking-exit-criteria.md
-        - name: Fase 2-identità
+        - name: Fase 2 - Identità
           href: identity-infrastructure.md
           items:
-            - name: 'Passaggio 1: creare e proteggere gli account di amministratore globale'
+            - name: Passaggio 1 - Creare e proteggere gli account di amministratore globale
               href: identity-create-protect-global-admins.md
-            - name: 'Passaggio 2: proteggere le password'
+            - name: Passaggio 2 - Proteggere le password
               href: identity-secure-your-passwords.md
-            - name: 'Passaggio 3: garantire la sicurezza e la gestione degli accessi degli utenti'
+            - name: Passaggio 3 - Proteggere e gestire gli accessi degli utenti
               href: identity-secure-user-sign-ins.md
-            - name: Passaggio 4-aggiungere gli account utente
+            - name: Passaggio 4 - Aggiungere gli account utente
               href: identity-add-user-accounts.md
-            - name: Passaggio 5-utilizzare i gruppi per la gestione
+            - name: Passaggio 5 - Usare i gruppi per la gestione
               href: identity-use-group-management.md
-            - name: 'Passaggio 6: configurare la governance delle identità'
+            - name: Passaggio 6 - Configurare Identity Governance
               href: identity-configure-identity-governance.md
             - name: Esaminare i criteri uscita
               href: identity-exit-criteria.md
-        - name: Fase 3-Windows 10 Enterprise
+        - name: Fase 3 - Windows 10 Enterprise
           href: windows10-infrastructure.md
           items:
-            - name: 'Passaggio 1: preparare l''organizzazione'
+            - name: Passaggio 1 - Preparare l'organizzazione
               href: windows10-prepare-your-org.md
-            - name: 'Passaggio 2: eseguire la distribuzione come aggiornamento sul posto'
+            - name: Passaggio 2 - Distribuzione come aggiornamento sul posto
               href: windows10-deploy-inplaceupgrade.md
-            - name: 'Passaggio 3: distribuzione per nuovi dispositivi'
+            - name: Passaggio 3 - Distribuzione per i nuovi dispositivi
               href: windows10-deploy-autopilot.md
-            - name: 'Passaggio 4: monitorare l''integrità e la conformità del dispositivo'
+            - name: Passaggio 4 - Monitorare l'integrità e la conformità del dispositivo
               href: windows10-enable-windows-analytics.md
-            - name: Passaggio 5-distribuire le funzionalità di sicurezza
+            - name: Passaggio 5 - Distribuire funzionalità di sicurezza
               href: windows10-enable-security-features.md
-            - name: 'Criteri uscita di Windows 10 Enterprise '
+            - name: Criteri uscita di Windows 10 Enterprise
               href: windows10-exit-criteria.md
-        - name: Fase 4-Office 365 ProPlus
+        - name: Fase 4 - Office 365 ProPlus
           href: office365proplus-infrastructure.md
           items:
             - name: Criteri uscita di Office 365 ProPlus
               href: office365proplus-exit-criteria.md
-        - name: Fase 5-gestione dei dispositivi mobili
+        - name: Fase 5 - Gestione dei dispositivi mobili
           href: mobility-infrastructure.md
           items:
             - name: Criteri uscita di gestione di dispositivi mobili
               href: mobility-infrastructure-exit-criteria.md
-        - name: 'Fase 6: protezione delle informazioni'
+        - name: Fase 6 - Protezione delle informazioni
           href: infoprotect-infrastructure.md
           items:
-            - name: 'Passaggio 1: definire i livelli di sicurezza e protezione delle informazioni'
+            - name: Passaggio 1 - Definire i livelli di sicurezza e di protezione delle informazioni
               href: infoprotect-define-sec-infoprotect-levels.md
-            - name: 'Passaggio 2: configurare la classificazione per l''ambiente'
+            - name: Passaggio 2 - Configurare la classificazione dell'ambiente
               href: infoprotect-configure-classification.md
-            - name: 'Passaggio 3: configurare un livello di sicurezza maggiore per Microsoft 365'
+            - name: Passaggio 3 - Configurare un livello di sicurezza maggiore per Microsoft 365
               href: infoprotect-configure-increased-security-office-365.md
-            - name: 'Passaggio 4: configurare Windows Information Protection'
+            - name: Passaggio 4 - Configurare Windows Information Protection
               href: infoprotect-deploy-windows-information-protection.md
-            - name: Passaggio 5-configurare la prevenzione della perdita dei dati di Office 365
+            - name: Passaggio 5 - Configurare i criteri di prevenzione della perdita dei dati di Office 365
               href: infoprotect-data-loss-prevention.md
-            - name: 'Passaggio 6: configurare la crittografia della posta elettronica'
+            - name: Passaggio 6 - Configurare la crittografia della posta elettronica
               href: infoprotect-email-encryption.md
-            - name: 'Passaggio 7: configurare la gestione degli accessi con privilegi per Office 365'
+            - name: Passaggio 7 - Configurare la gestione degli accessi con privilegi per Office 365
               href: infoprotect-configure-privileged-access-management.md
             - name: Criteri uscita della protezione delle informazioni
               href: infoprotect-exit-criteria.md
@@ -112,13 +112,13 @@
       items:
         - name: Configurazione di base
           items:
-            - name: Semplificato
+            - name: Semplificata
               href: lightweight-base-configuration-microsoft-365-enterprise.md
             - name: Organizzazione simulata
               href: simulated-ent-base-configuration-microsoft-365-enterprise.md
         - name: Identità
           items:
-            - name: Sincronizzazione degli hash delle password
+            - name: Sincronizzazione dell'hash delle password
               href: password-hash-sync-m365-ent-test-environment.md
             - name: Autenticazione pass-through
               href: pass-through-auth-m365-ent-test-environment.md
@@ -143,7 +143,7 @@
               items:
                 - name: Solo cloud
                   href: cloud-only-prereqs-m365-test-environment.md
-                - name: Sincronizzazione degli hash delle password
+                - name: Sincronizzazione dell'hash delle password
                   href: phs-prereqs-m365-test-environment.md
                 - name: Autenticazione pass-through
                   href: pta-prereqs-m365-test-environment.md
@@ -186,16 +186,16 @@
           href: contoso-team-for-top-secret-project.md
         - name: Sito di SharePoint per dati altamente regolamentati
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Modifiche apportate a Microsoft 365 per la distribuzione del contenuto aziendale
+    - name: Modifiche al contenuto sulla distribuzione di Microsoft 365 per aziende
       href: microsoft-365-deploment-guide-changes.md
 - name: Centro di distribuzione desktop
   href: desktop-deployment-center-home.md
   items:
-    - name: 'Guida introduttiva: indicazioni su utenti, processi e tecnologie'
+    - name: 'Guida introduttiva: indicazioni su utenti, processi e tecnologia'
       href: getting-started.md
-    - name: 'Passaggio 1: preparazione di dispositivi e app'
+    - name: Passaggio 1 - Preparazione di dispositivi e app
       href: step-1-device-and-app-readiness.md
-    - name: 'Passaggio 2: conformità di directory e rete'
+    - name: Passaggio 2 - Conformità di directory e rete
       href: step-2-directory-and-network-readiness.md
     - name: Passaggio 3 - Distribuzione di Office e app line-of-business
       href: step-3-office-and-lob-app-delivery.md
@@ -207,7 +207,7 @@
       href: step-6-os-deployment-and-feature-updates.md
     - name: Passaggio 7 - Manutenzione di Windows e Office
       href: step-7-windows-and-office-as-a-service.md
-    - name: 'Passaggio 8: comunicazioni e formazione utente'
+    - name: Passaggio 8 - Comunicazioni e formazione utente
       href: step-8-user-communications-and-training.md
     - name: Aggiornamento manuale da Windows 7 a Windows 10
       href: windows-7-to-windows-10-upgrade-manual.md
@@ -221,7 +221,7 @@
   href: ../compliance/index.yml
 - name: Sicurezza di Microsoft 365
   href: ../security/index.yml
-- name: Gestione della continuità aziendale (EBCM) con i servizi cloud
+- name: Gestione della continuità aziendale della società con i servizi cloud
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
     - name: Responsabilità EBCM del cliente e del partner cloud

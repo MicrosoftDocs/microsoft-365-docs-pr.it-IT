@@ -1,9 +1,9 @@
-- name: Sicurezza di Microsoft 365
+- name: Centro sicurezza Microsoft 365
   href: index.yml
   items:
     - name: Per iniziare
       items:
-        - name: Sicurezza Microsoft 365 per decision maker aziendali
+        - name: Centro sicurezza Microsoft 365 per BDM
           href: Microsoft-365-security-for-bdm.md
         - name: Workshop di formazione per Chief Information Security Officer (CISO)
           href: ./office-365-security/ciso-workshop.md
@@ -47,19 +47,19 @@
               href: mtp/overview-security-center.md
             - name: Prerequisiti
               href: mtp/prerequisites.md
-            - name: Sicurezza e privacy dei dati
+            - name: Sicurezza dei dati e privacy
               href: mtp/data-privacy.md
-            - name: Risoluzione dei problemi
+            - name: Risolvere i problemi
               href: ./mtp/troubleshoot.md
-        - name: Procedure guidate
+        - name: Procedure
           items:
             - name: Attivare Microsoft Threat Protection
               href: mtp/mtp-enable.md
-            - name: Incidenti
+            - name: Eventi imprevisti
               items:
                 - name: Panoramica
                   href: mtp/incidents-overview.md
-                - name: Assegnare priorità agli incidenti
+                - name: Assegnare priorità agli eventi imprevisti
                   href: mtp/incident-queue.md
                 - name: Indagare sugli eventi imprevisti
                   href: mtp/investigate-incidents.md
@@ -67,17 +67,17 @@
                   href: mtp/manage-incidents.md
             - name: Analisi e risposta alle minacce automatizzate
               items:
-                - name: Panoramica dell'aria
+                - name: Panoramica AIR
                   href: mtp/mtp-autoir.md
                 - name: Azioni correttive
                   href: mtp/mtp-remediation-actions.md
-                - name: Centro azioni
+                - name: Centro operativo
                   href: mtp/mtp-action-center.md
-                - name: Visualizzare i dettagli e i risultati dell'analisi automatizzata
+                - name: Visualizzare dettagli e risultati di indagini automatizzate
                   href: mtp/mtp-autoir-results.md
-                - name: Approva o rifiuta le azioni in sospeso
+                - name: Approvare o rifiutare azioni in sospeso
                   href: mtp/mtp-autoir-actions.md
-                - name: Segnala falsi positivi/negativi
+                - name: Segnalare falsi positivi/negativi
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Ricerca avanzata
               items:
@@ -85,11 +85,11 @@
                   href: mtp/hunting.md
                 - name: Panoramica della ricerca avanzata
                   href: mtp/advanced-hunting-overview.md
-                - name: Capire il linguaggio delle query
+                - name: Conoscere il linguaggio delle query
                   href: mtp/advanced-hunting-query-language.md
                 - name: Utilizzare le query condivise
                   href: mtp/advanced-hunting-shared-queries.md
-                - name: Caccia su dispositivi e messaggi di posta elettronica
+                - name: Cercare su dispositivi e messaggi di posta elettronica
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Comprendere lo schema
                   href: mtp/advanced-hunting-schema-tables.md
@@ -136,7 +136,7 @@
                   href: mtp/microsoft-secure-score.md
                 - name: Secure Score (anteprima)
                   href: mtp/microsoft-secure-score-preview.md
-                - name: Cosa succede
+                - name: Novità in arrivo
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Report
               items:
@@ -150,9 +150,9 @@
                   href: mtp/monitor-devices.md
                 - name: Monitoraggio e creazione di report relativi alle app
                   href: mtp/monitor-apps.md
-            - name: Impostazioni & delle autorizzazioni
+            - name: Autorizzazioni e impostazioni
               items:
-                - name: Gestione dell'accesso
+                - name: Gestire accessi
                   href: mtp/mtp-permissions.md
                 - name: Impostare il fuso orario
                   href: mtp/mtp-time-zone.md
@@ -160,7 +160,7 @@
               href: ./mtp/tickets.md
     - name: Sicurezza di Office 365
       items:
-        - name: Attività iniziali
+        - name: Per iniziare
           items:
             - name: Roadmap per la sicurezza di Office 365
               href: ./office-365-security/security-roadmap.md
@@ -187,7 +187,7 @@
                       href: ./office-365-security/configure-anti-malware-policies.md
                     - name: Inviare malware e file non pericolosi a Microsoft per l'analisi
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-                    - name: Eseguire il ripristino da un attacco ransomware
+                    - name: Ripristinare da un attacco ransomware
                       href: ./office-365-security/recover-from-ransomware.md
                     - name: Rilevamento dei virus in SharePoint Online
                       href: ./office-365-security/virus-detection-in-spo.md
@@ -282,19 +282,19 @@
                   href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: Bloccare la posta indesiderata nella versione autonoma di Exchange Online Protection
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
-                - name: Configurazione delle notifiche di posta indesiderata dell'utente finale in EOP
+                - name: Configurare le notifiche di posta indesiderata dell'utente finale in EOP
                   href: ./office-365-security/configure-end-user-spam-notifications-in-eop.md
-                - name: Configurazione delle notifiche di posta indesiderata dell'utente finale in Exchange Online
+                - name: Configurare le notifiche di posta indesiderata dell'utente finale in Exchange Online
                   href: ./office-365-security/configure-end-user-spam-notifications-in-exchange-online.md
                 - name: Segnalare posta indesiderata e tentativi di phishing in Outlook sul web
                   href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                 - name: Proteggere le cassette postali locali con Exchange Online Protection
                   href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-                - name: Installazione del componente aggiuntivo di report di posta indesiderata per Microsoft Outlook
+                - name: Installare il componente aggiuntivo di report di posta indesiderata per Microsoft Outlook
                   href: ./office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md
                 - name: Disattivare la creazione di report per la posta indesiderata in Outlook sul web
                   href: ./office-365-security/turn-off-junk-email-reporting-in-outlook-on-the-web.md
-                - name: Differenza tra posta elettronica indesiderata e posta elettronica in blocco
+                - name: Differenza tra posta elettronica indesiderata e posta elettronica inviata in blocco
                   href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
             - name: Messaggi di posta elettronica in quarantena in Office 365
               href: ./office-365-security/quarantine-email-messages.md
@@ -346,7 +346,7 @@
         - name: Protezione avanzata dalle minacce
           href: ./office-365-security/office-365-atp.md
           items:
-            - name: Vedere le novità
+            - name: Novità
               items:
                 - name: Novità di Office 365 ATP
                   href: office-365-security/whats-new-in-office-365-atp.md
@@ -366,23 +366,23 @@
                   items:
                     - name: 'Attivare ATP per SharePoint, OneDrive e Microsoft Teams'
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: Visualizzazioni della campagna
+            - name: Visualizzazioni campagna
               href: ./office-365-security/campaigns.md
-            - name: Informazioni sugli attacchi più recenti con Threat Analytics
+            - name: Informazioni sugli attacchi più recenti con l'analisi delle minacce
               href: ./mtp/latest-attack-campaigns.md
             - name: Analisi e risposta alle minacce automatizzate
               items:
-                - name: Panoramica dell'aria
+                - name: Panoramica AIR
                   href: ./office-365-security/office-365-air.md
-                - name: Visualizzare i dettagli e i risultati dell'analisi automatizzata
+                - name: Visualizzare dettagli e risultati di indagini automatizzate
                   href: ./office-365-security/air-view-investigation-results.md
-                - name: Approva o rifiuta le azioni in sospeso
+                - name: Approvare o rifiutare azioni in sospeso
                   href: ./office-365-security/air-remediation-actions.md
-                - name: Integrazione dell'aria con una soluzione personalizzata o una soluzione di terze parti
+                - name: Integrare AIR con una soluzione personalizzata o una soluzione di terze parti
                   href: ./office-365-security/air-custom-reporting.md
-            - name: Individuare e risolvere rapidamente gli account utente compromessi
+            - name: Individuare e trattare rapidamente gli account utente compromessi
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Esaminare e correggere il messaggio di posta elettronica dannoso
+            - name: Indagare e correggere i messaggi di posta elettronica dannosi
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Visualizzare e leggere i report ATP
               href: ./office-365-security/view-reports-for-atp.md
@@ -392,7 +392,7 @@
               href: ./office-365-security/threat-trackers.md
             - name: Usare il simulatore di attacchi in Office 365
               href: ./office-365-security/attack-simulator.md
-            - name: Documenti attendibili in Office 365 ATP
+            - name: Sicurezza documenti di Office 365 ATP
               href: ./office-365-security/safe-docs.md
             - name: Esplora minacce (e rilevamenti in tempo reale)
               href: ./office-365-security/threat-explorer.md
@@ -407,7 +407,7 @@
                   href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: Come funziona ATP
               items:
-                - name: Come funziona l'analisi automatizzata e la risposta
+                - name: Funzionamento di Analisi e risposta alle minacce automatizzate
                   href: ./office-365-security/automated-investigation-response-office.md
                 - name: Funzionamento di Collegamenti sicuri ATP
                   href: ./office-365-security/how-atp-safe-links-works.md
@@ -469,7 +469,7 @@
               items:
                 - name: Configurare gruppi e utenti per un ambiente di sviluppo/test per la campagna politica
                   href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-                - name: Creare siti del team in un ambiente di sviluppo/test per la campagna politica
+                - name: Creare siti del team in un ambiente di sviluppo/testinging per la campagna politica
                   href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
             - name: Proteggere i file in Microsoft Teams
               href: ./office-365-security/secure-files-in-teams.md
@@ -584,7 +584,7 @@
                   href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
                 - name: Sincronizzare i certificati dell'utente con Office 365 per S/MIME
                   href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
-                - name: Configurare la raccolta di certificati virtuali per convalidare S/MIME
+                - name: Configurazione della raccolta di certificati virtuali per convalidare S/MIME
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
         - name: Office 365 Enterprise
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'
