@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de674da4230697e953c88d812b0edac8cb7904e5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0acbb82001d8856639f5b67daa99323f333e26ad
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250476"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284377"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop
 
@@ -32,7 +32,7 @@ Per ulteriori informazioni, vedere [Windows Update for business: tipi di aggiorn
 
 Microsoft Managed Desktop utilizza quattro gruppi di Azure ad per la gestione degli aggiornamenti:
 
-- **Test**: utilizzato per convalidare le modifiche ai criteri di Microsoft Managed Desktop, gli aggiornamenti del sistema operativo, gli aggiornamenti delle funzionalità e altre modifiche apportate al tenant. Non è necessario che gli utenti finali vengano inseriti nel gruppo di test. Il gruppo di test è esente da tutti i contratti di servizio stabiliti e dal supporto degli utenti finali. Questo gruppo è disponibile per l'utilizzo per convalidare la compatibilità delle applicazioni con nuovi criteri o si blocca il sistema operativo.  
+- **Test**: utilizzato per convalidare le modifiche ai criteri di Microsoft Managed Desktop, gli aggiornamenti del sistema operativo, gli aggiornamenti delle funzionalità e altre modifiche apportate al tenant. Non è necessario che gli utenti finali vengano inseriti nel gruppo di test. Il gruppo di test è esente da tutti i contratti di servizio stabiliti e dal supporto degli utenti finali. Questo gruppo è disponibile per l'utilizzo per convalidare la compatibilità delle applicazioni con nuove modifiche al criterio o al sistema operativo.  
 - **Primo**: contiene gli utenti e i dispositivi software precoci che potrebbero essere soggetti agli aggiornamenti precedenti alla versione precedente. I dispositivi di questo gruppo possono riscontrare interruzioni se esistono scenari che non sono stati analizzati durante il testing nell'anello di test.
 - **Fast**: priorità della velocità rispetto alla stabilità. Utile per rilevare i problemi di qualità prima che vengano offerti al gruppo generale. Questo gruppo funge da livello successivo di convalida, ma in genere è più stabile rispetto al test e ai primi gruppi. 
 - **Broad**: ultimo gruppo in cui sono disponibili aggiornamenti di funzionalità e qualità. Questo gruppo contiene la maggior parte degli utenti nel tenant e quindi favorisce la stabilità sulla velocità della distribuzione. Il testing delle app dovrebbe essere effettuato qui perché l'ambiente è più stabile. 

@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 653b986de8d580a25a1032b77f34db8924d3ea0d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 788021d9bcd531cbd9210299cb90f1cce49db1c7
+ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085785"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42284367"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati da Microsoft Managed Desktop
 
@@ -35,9 +35,12 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 
 | Modello  | Specifiche minime  | Requisiti aggiuntivi   | Data di pensionamento |
 |---------|---------|---------|---------|
+| Dell Latitude 5490| 256 GB/Intel i5/8 GB di RAM | Telecamera IR obbligatoria | **Gen 9, 2023** |
+| Dell Latitude 7390 7390 2-in-1/7490 | 256 GB/Intel i5/8 GB di RAM   | Telecamera IR obbligatoria | **Gen 9, 2023** |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR o sensore di impronte digitali necessario  | **Feb 15, 2023** |
 |HP Elite X2 1013 G3| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS03AV, videocamera IR necessaria |**14 maggio 2023** |
 |HP EliteBook X360 1030 G3| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria |**14 maggio 2023** |
+|HP EliteBook X360 1040 G5| 256 GB/Intel i5/8 GB di RAM | SKU con 5VS01AV, videocamera IR necessaria | **23 ottobre 2023** |
 |Surface Book 2| 256 GB/Intel i5/8 GB di RAM | Nessuno | **16 novembre 2022** |
 |Laptop Surface| 256 GB/Intel i5/8 GB di RAM | Nessuno | **20 maggio 2022** |
 |Surface Pro| 256 GB/Intel i5/8 GB di RAM | Nessuno | **15 giugno 2022** |
@@ -47,7 +50,7 @@ Inoltre, il dispositivo deve:
 
 - Avere un'immagine approvata da Microsoft Managed Desktop. Quando si ordinano i dispositivi, accertarsi di specificare che vengono utilizzati con Microsoft Managed Desktop.
 - Non è stata completata l'esperienza di Windows per la prima esecuzione.
-- Essere registrato con Microsoft Managed destkop utilizzando la funzionalità di [registrazione dei dispositivi](https://aka.ms/mmddrhelp)
+- Essere registrato con Microsoft Managed Desktop utilizzando la funzionalità di [registrazione dei dispositivi](https://aka.ms/mmddrhelp)
 
 #### <a name="additional-help"></a>Ulteriori informazioni
 
