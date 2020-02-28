@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto il nuovo strumento di analisi dei dati (Preview) in Microsoft 365.
-ms.openlocfilehash: 1dc0a98208d553a4ea94703b98f982dd8e19167f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071079"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328078"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Panoramica delle indagini sui dati (anteprima) in Microsoft 365
 
@@ -31,7 +31,7 @@ In questo articolo viene descritto come utilizzare le funzionalità del nuovo st
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Per accedere e condurre un'indagine sui dati, è necessario essere membri del gruppo di ruolo ricercatore di dati. Per ulteriori informazioni, vedere [assegnare le autorizzazioni per le indagini sui dati](permissions.md).
+Per accedere e condurre un'indagine sui dati, è necessario essere membri del gruppo di ruolo ricercatore di dati. Per ulteriori informazioni, vedere [assegnare le autorizzazioni per le indagini sui dati](data-investigations-permissions.md).
 
 ## <a name="data-investigations-preview-workflow"></a>Analisi dei dati (anteprima) flusso di lavoro 
 

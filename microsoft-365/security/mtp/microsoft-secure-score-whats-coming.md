@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 55c7cb34c5484eaf8f6693be0ce439e33a82550f
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 4d445d4c917a46b12592308f599570725ace8e9d
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266974"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322565"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Che cosa viene in Microsoft Secure Score?
 
@@ -59,7 +59,7 @@ Verranno rimosse le seguenti azioni di miglioramento di Intune:
 - Richiedere che tutti i dispositivi dispongano di configurazioni di sicurezza avanzate
 - Rivedere i dispositivi bloccati segnala settimanalmente
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Rimozione di azioni di miglioramento che non soddisfano le aspettative per misure affidabili
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Rimozione di azioni di miglioramento che non soddisfano le aspettative per misure affidabili 
 
 Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni azione di miglioramento sia misurabile e affidabile, vengono eliminate le azioni di miglioramento riportate di seguito.
 
@@ -93,7 +93,7 @@ Per questi motivi, tutte le azioni di miglioramento che richiedono una cadenza d
 
 ## <a name="march-16th-2020"></a>16 marzo 2020
 
-### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Rimozione di azioni di miglioramento che non soddisfano le aspettative per misure affidabili
+### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Rimozione di azioni di miglioramento che non soddisfano le aspettative per misure affidabili o che non forniscono una rappresentazione utile della posizione di sicurezza
 
 Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni azione di miglioramento sia misurabile e affidabile, vengono eliminate le azioni di miglioramento riportate di seguito.
 
@@ -102,6 +102,7 @@ Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni a
 - Configurare i collegamenti sicuri di Office 365 per verificare gli URL
 - Non consentire la delega delle cassette postali
 - Consenti collegamenti di condivisione guest anonimi per siti e documenti
+- Abilitare la console di protezione delle app Cloud
 
 ### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Supporto delle impostazioni predefinite per la sicurezza per le azioni di miglioramento di Azure AD
 

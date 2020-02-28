@@ -1,6 +1,6 @@
 - name: Conformità di Microsoft 365
   href: index.yml
-- name: Attività iniziali
+- name: Operazioni preliminari
   items:
     - name: Novità del centro conformità
       href: whats-new.md
@@ -65,7 +65,7 @@
       items:
         - name: Informazioni sulla gestione degli accessi con privilegi
           href: privileged-access-management-overview.md
-        - name: Configurare Privileged Access Management
+        - name: Introduzione alla gestione degli accessi con privilegi
           href: privileged-access-management-configuration.md
     - name: Proteggere l'accesso di utenti e dispositivi
       href: protect-access-to-data-and-services.md
@@ -621,14 +621,15 @@
         - name: Mantenere Ccn e i destinatari del gruppo di distribuzione espanso
           href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Gestire le indagini sui dati
-  href: overview-data-investigations.md
   items:
+    - name: Panoramica delle indagini sui dati
+      href: overview-data-investigations.md
     - name: Gestire un'incidente relativo a una fuga di dati
       href: manage-data-spillage-incidents.md
+    - name: Assegnare autorizzazioni per le indagini sui dati
+      href: data-investigations-permissions.md
     - name: Creare una nuova indagine
       href: create-new-investigation.md
-    - name: Assegnare autorizzazioni per le indagini sui dati
-      href: permissions.md
     - name: Cercare i dati in un'indagine
       href: search-for-data.md
       items:
@@ -1158,5 +1159,5 @@
   href: 'https://docs.microsoft.com/Office365/Enterprise'
 - name: Office 365 Business
   href: 'https://docs.microsoft.com/office365/admin/admin-home'
-- name: Sicurezza di Microsoft 365
+- name: Centro sicurezza Microsoft 365
   href: 'https://docs.microsoft.com/microsoft-365/security/'

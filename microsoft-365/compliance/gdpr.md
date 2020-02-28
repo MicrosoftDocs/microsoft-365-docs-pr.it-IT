@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f7c2a19a58dd616e2516ea70492f4f65ab211441
-ms.sourcegitcommit: 2498cd4af90c31771167a1be9f8f12a96dc6500f
+ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
+ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41916881"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42322555"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Riepilogo del Regolamento generale sulla protezione dei dati
 
@@ -56,15 +56,11 @@ Le attività seguenti sono previste per soddisfare gli standard del GDPR. Per i 
 
 Come già accennato, il piano d'azione consigliato per il GDPR e gli elenchi di controllo di preparazione della conformità forniscono una guida all'implementazione o alla valutazione della conformità al GDPR quando si usano i prodotti e i servizi Microsoft.
 
-## <a name="the-gdpr-in-action"></a>Applicazione del GDPR
-
-Questa sezione fornisce descrizioni e considerazioni relative al completamento delle attività relative al GDPR menzionate sopra. Il completamento di tali attività potrebbe variare in base alla configurazione di Microsoft.
-
-### <a name="data-subject-request-dsr"></a>Richiesta dell'interessato (DSR)
+## <a name="data-subject-request-dsr"></a>Richiesta dell'interessato (DSR)
 
 Il GDPR concede agli utenti (o interessati) determinati diritti per il trattamento dei loro dati personali, tra cui il diritto di correggere i dati non esatti, di cancellare i dati o limitarne il trattamento, di ricevere i dati e soddisfare una richiesta di trasmissione dei dati a un altro titolare del trattamento. Il titolare ha la responsabilità di rispondere tempestivamente in conformità al GDPR. Per i dettagli tecnici, fare riferimento a [Richieste degli interessati](gdpr-data-subject-requests.md).  
 
-#### <a name="dsr-faqs"></a>Domande frequenti sulle richieste degli interessati
+### <a name="dsr-faqs"></a>Domande frequenti sulle richieste degli interessati
 
 **Quali azioni saranno necessarie per completare una richiesta dell'interessato?**
 
@@ -105,11 +101,11 @@ Qui è disponibile una serie di articoli correlati al GDPR. Sono prodotti da Mic
 
 Online Services offre una serie di funzionalità che consentono al titolare del trattamento di rispondere a una richiesta dell'interessato. I servizi online aziendali Microsoft e i controlli amministrativi consentono di intervenire sui dati personali in risposta alle richieste di esercizio dei diritti dei titolari, consentendo di individuare, accedere, rettificare, limitare, eliminare ed esportare i dati personali inclusi nei dati gestiti dal titolare del trattamento archiviati nel cloud Microsoft. Inoltre, in caso di necessità, Online Services fornisce i dati in un formato leggibile da dispositivo automatico.
 
-### <a name="data-protection-impact-assessment"></a>Valutazione d'impatto sulla protezione dei dati
+## <a name="data-protection-impact-assessment"></a>Valutazione d'impatto sulla protezione dei dati
 
 Il GDPR richiede che i titolari del trattamento preparino una [valutazione d'impatto sulla protezione dei dati ](gdpr-data-protection-impact-assessments.md) (DPIA) per le operazioni di trattamento che "potenzialmente presentano un rischio elevato per i diritti e le libertà delle persone fisiche". Non c'è nulla di insito ai prodotti e servizi Microsoft che richieda la creazione di una DPIA. Al contrario, dipende dai dettagli della configurazione di Microsoft. Per un elenco di dettagli da tenere in considerazione per Office, vedere [Contenuto di una DPIA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365#part-2--contents-of-a-dpia).
 
-#### <a name="dpia-faqs"></a>Domande frequenti sulla valutazione d'impatto sulla protezione dei dati
+### <a name="dpia-faqs"></a>Domande frequenti sulla valutazione d'impatto sulla protezione dei dati
 
 **Quando dovrebbe essere eseguita una DPIA?**
 
@@ -142,11 +138,11 @@ Tali controlli della privacy tendono ad essere granulari: un determinato servizi
 
 In qualità di responsabile del trattamento dei dati, Microsoft ha il dovere di assistere i titolari del trattamento nel garantire il rispetto dei requisiti relativi alle valutazioni d'impatto sulla protezione dei dati indicati nel GDPR. A questo scopo, le sezioni pertinenti delle valutazioni d'impatto sulla protezione dei dati svolte da Microsoft verranno fornite in questa sezione negli aggiornamenti futuri, per consentire ai titolari del trattamento che usano i servizi Microsoft di sfruttare queste informazioni per creare le proprie valutazioni d'impatto.
 
-### <a name="breach-notification"></a>Notifica di violazione
+## <a name="breach-notification"></a>Notifica di violazione
 
 Il GPDR impone ai titolari e ai responsabili del trattamento dei dati l'obbligo di notifica in caso di violazione dei dati personali. In qualità di responsabile del trattamento dei dati, Microsoft assicura che i clienti riescano a soddisfare i requisiti di notifica della violazione del GDPR. I titolari del trattamento dei dati sono responsabili della valutazione dei rischi per la privacy di tali dati e della scelta se una violazione richiede la notifica relativa alla Legge sulla protezione dei dati del cliente. Microsoft fornisce le informazioni necessarie per eseguire tale valutazione. Per ulteriori informazioni su come Microsoft rileva e gestisce un caso di violazione dei dati personali, vedere [Notifica di violazione dei dati secondo il GDPR](gdpr-breach-notification.md).
 
-#### <a name="breach-notification-faqs"></a>Domande frequenti sulla notifica di violazione
+### <a name="breach-notification-faqs"></a>Domande frequenti sulla notifica di violazione
 
 **Cosa costituisce una violazione dei dati personali secondo il GDPR?**
 
@@ -178,7 +174,7 @@ Per supportare il cliente nell'ambito di una violazione dei dati personali, Micr
 
 Microsoft ha predisposto politiche e procedure specifiche per informare immediatamente gli interessati. Per soddisfare i requisiti di notifica all'autorità incaricata della protezione dei dati, forniamo una descrizione del processo usato per determinare se si è verificata una violazione dei dati personali, una descrizione della natura della violazione e una descrizione delle misure adottate per mitigare le conseguenze della violazione.
 
-### <a name="accountability-readiness-checklists-for-the-gdpr"></a>Elenchi di controllo di preparazione della conformità al GDPR
+## <a name="accountability-readiness-checklists-for-the-gdpr"></a>Elenchi di controllo di preparazione della conformità al GDPR
 
 Questi [elenchi di controllo](gdpr-arc.md) offrono un modo pratico per accedere alle informazioni necessarie per l'applicazione del GDPR quando si usano i prodotti Microsoft. È possibile gestire gli elementi di questo elenco di controllo con il [punteggio di conformità Microsoft](compliance-score.md) usando il codice e il nome dei controlli nel riquadro del GDPR che comprende i controlli gestiti dai clienti.
 

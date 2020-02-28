@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1ca08e84bf27a64ba7515b6f4c0307c94621601c
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 01c580cd671a84ef68c18b114e133f046a3e5b3b
+ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280104"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328068"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Requisiti per le app di Microsoft Managed Desktop
 
@@ -59,5 +59,5 @@ Sicurezza:
 
 Microsoft Managed Desktop supporta solo i driver di dispositivo disponibili tramite Windows Update o la posta in arrivo installata con il dispositivo gestito Microsoft. 
 
-Se un'applicazione richiede un driver specifico per l'esecuzione, è considerata un'applicazione limitata e richiede la distribuzione in Microsoft Managed Desktop. 
+Se un'applicazione richiede un driver specifico per l'esecuzione, è considerata un'applicazione limitata e richiede un'eccezione prima di essere distribuita in Microsoft Managed Desktop. 
 
