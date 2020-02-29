@@ -1,5 +1,5 @@
-- name: Gestire acquisti commerciali e fatturazione
-  href: index.md
+- name: Gestire gli abbonamenti aziendali
+  href: index.yml
   expanded: true
   items:
     - name: Prova o acquista
@@ -20,12 +20,12 @@
       items:
         - name: Aggiornare abbonamenti
           href: subscriptions/upgrade-to-different-plan.md
-        - name: Annullare l'abbonamento
-          href: subscriptions/cancel-your-subscription.md
-        - name: Riattivare l'abbonamento
-          href: subscriptions/reactivate-your-subscription.md
         - name: Rinnovare l'abbonamento
           href: subscriptions/renew-your-subscription.md
+        - name: Riattivare l'abbonamento
+          href: subscriptions/reactivate-your-subscription.md
+        - name: Annullare l'abbonamento
+          href: subscriptions/cancel-your-subscription.md
         - name: Cosa succede se scade l'abbonamento?
           href: subscriptions/what-if-my-subscription-expires.md
         - name: Gestire app di terze parti
@@ -38,12 +38,12 @@
       items:
         - name: Acquistare licenze
           href: licenses/buy-licenses.md
-        - name: Assegnare licenze
-          href: ../admin/manage/assign-licenses-to-users.md
-        - name: Annullare l'assegnazione delle licenze
-          href: ../admin/manage/remove-licenses-from-users.md
         - name: Rimuovere licenze dall'abbonamento
           href: licenses/remove-licenses-from-subscription.md
+        - name: Assegnare licenze agli utenti
+          href: ../admin/manage/assign-licenses-to-users.md
+        - name: Annullare l'assegnazione delle licenze agli utenti
+          href: ../admin/manage/remove-licenses-from-users.md
         - name: Informazioni su abbonamenti e licenze
           href: licenses/subscriptions-and-licenses.md
     - name: Fatture e pagamenti
@@ -76,3 +76,5 @@
       href: manage-partners.md
     - name: Chiudere il proprio account
       href: close-your-account.md
+    - name: Contattare il supporto
+      href: ../admin/contact-support-for-business-products.md
