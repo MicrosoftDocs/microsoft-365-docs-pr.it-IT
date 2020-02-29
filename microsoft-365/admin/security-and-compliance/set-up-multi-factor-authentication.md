@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Informazioni su come usare le impostazioni predefinite per la sicurezza per configurare l'autenticazione a più fattori per gli utenti di Office 365.
 monikerRange: o365-worldwide
-ms.openlocfilehash: bc906299e42929dd4dd09b94502a6d463a5971b4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: cb2205e5f5b7df4f6e7d8f7263a91fb2f0f4d3e2
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257195"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341254"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
   
@@ -88,11 +88,11 @@ Tutte le applicazioni client di Office 2016 supportano MFA con ADAL (Active Dire
 
 2. Nella sezione **utenti attivi** fare clic su autenticazione a più **fattori**.
 
-3. Nella pagina **autenticazione** a più fattori selezionare **utente** se si sta abilitando questa operazione per un utente oppure è possibile peform un **aggiornamento in blocco**.
+3. Nella pagina **autenticazione** a più fattori selezionare **utente** se si sta abilitando questa operazione per un utente o selezionare l' **aggiornamento in blocco** per abilitare più utenti.
 
 4. Fare clic su **Abilita** in **passaggi rapidi**.
 
-5. Nella finestra popup, CLickc **attiva l'autenticazione**a più fattori.
+5. Nella finestra popup, fare clic su **Abilita autenticazione**a più fattori.
 
 Dopo aver configurato l'autenticazione a più fattori per l’organizzazione, agli utenti verrà richiesto di impostare la verifica in due passaggi sui loro dispositivi. Per altre informazioni, vedere [Configurare la verifica in due passaggi per Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
     

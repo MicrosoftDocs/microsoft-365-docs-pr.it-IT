@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Gli amministratori possono utilizzare la traccia dei messaggi nel centro sicurezza & Compliance per scoprire cosa è successo ai messaggi.
-ms.openlocfilehash: ce0919a1190da06279081089810221e55a8f59b7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 463e4ee5b99b1aaf34c91fc9b8976547a6c2edbd
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088624"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341271"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
@@ -342,8 +342,8 @@ Un valore **custom_data** che inizia con `S:SFA` è dall'agente filtro posta ind
 |`DI=SQ`|Il messaggio è stato messo in quarantena.|
 |`DI=SD`|Il messaggio è stato eliminato.|
 |`DI=SJ`|Il messaggio è stato inviato alla cartella posta indesiderata del destinatario.|
-|`DI=SN`|Il messaggio è instradato attraverso un pool di recapito ad alto rischio. Per ulteriori informazioni, vedere [pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md).|
-|`DI=SO`|Il messaggio è stato instradato tramite un pool di recapito ad alto rischio.|
+|`DI=SN`|Il messaggio è stato instradato tramite un pool di recapito ad alto rischio.|
+|`DI=SO`|Il messaggio è instradato attraverso un pool di recapito ad alto rischio. Per ulteriori informazioni, vedere [pool di recapito ad alto rischio per i messaggi in uscita](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|Indica una corrispondenza tra le regole relative alla posta indesiderata.|
 |`IPV=CAL`|Il messaggio è stato consentito tramite il filtro da posta indesiderata poiché l'indirizzo IP è stato specificato in un elenco di indirizzi IP bloccati nel filtro di connessione.|
 |`H=<EHLOstring>`|La stringa HELO o EHLO del server di posta elettronica di connessione.|

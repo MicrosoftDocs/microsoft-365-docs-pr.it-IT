@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 7be52ae276fa00b8bad6f03b27c88ebba0f02880
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eb341e3f27ade163c6d646f759efed7504dad342
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086605"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333693"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Panoramica del Centro sicurezza di Microsoft 365
 
@@ -54,7 +54,7 @@ Il Centro sicurezza Microsoft 365 include:
 * **Criteri** : configurare i criteri per gestire i dispositivi, proteggerli dalle minacce e ricevere avvisi su varie attività nell'organizzazione organizzativa.
 * **Permissions** -gestire gli utenti dell'organizzazione che dispongono dell'accesso a Microsoft 365 Security Center per visualizzare il contenuto ed eseguire le attività. È inoltre possibile assegnare le autorizzazioni di Microsoft 365 nel portale di Azure AD.
 
-## <a name="learn-more"></a>Altre informazioni 
+## <a name="learn-more"></a>Ulteriori informazioni 
 
 Esaminare questi argomenti sul monitoraggio, la revisione e la risposta alle esigenze di sicurezza:
 - Connettere i punti su avvisi tramite [eventi](incident-queue.md) non consentiti
@@ -63,3 +63,6 @@ Esaminare questi argomenti sul monitoraggio, la revisione e la risposta alle esi
 - [Segnalare](monitoring-and-reporting.md) lo stato di identità, dati, dispositivi, app e infrastruttura
 - [Caccia proattivamente per minacce](advanced-hunting-overview.md) per tentativi di intrusione e attività di violazione che interessano la posta elettronica, i dati, i dispositivi e gli account
 - [Comprendere le campagne e le tecniche di attacco più recenti](latest-attack-campaigns.md) con Threat Analytics
+
+## <a name="related-topics"></a>Argomenti correlati
+- [Portali di sicurezza Microsoft 365](portals.md)

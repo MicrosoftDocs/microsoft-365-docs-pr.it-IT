@@ -1,19 +1,19 @@
 ---
-title: Insights per l'aggiornamento della sicurezza di Windows
+title: Dati analitici sugli aggiornamenti della sicurezza di Windows
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 600491fbdd70315385587eb8cb443a1696c3bee6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ef2d5c897709e7f7d2484d032b7471031be77d74
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257835"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341264"
 ---
-# <a name="windows-security-update-insights"></a>Insights per l'aggiornamento della sicurezza di Windows
+# <a name="windows-security-update-insights"></a>Dati analitici sugli aggiornamenti della sicurezza di Windows
 In questa visualizzazione viene fornita una panoramica dello stato degli aggiornamenti della sicurezza per i dispositivi Microsoft Managed Desktop. 
 
 Per visualizzare i dati di utilizzo, selezionare la scheda aggiornamenti per la <strong>sicurezza di Windows</strong> .
@@ -28,7 +28,7 @@ La categorizzazione dell'attività del dispositivo nel contesto di Windows Updat
 
 - <strong>Attivo:</strong> Dispositivi che soddisfano i criteri di utilizzo minimi (sei ore, due continue) per la versione più recente dell'aggiornamento della sicurezza e che hanno eseguito l'archiviazione con Microsoft Intune almeno ogni cinque giorni
 - <strong>Sincronizzati:</strong> Dispositivi che sono stati archiviati con Intune negli ultimi 28 giorni
-- <strong>Out of Sync</strong> – dispositivi che <i>non</i> sono stati archiviati con Intune negli ultimi 28 giorni
+- Non <strong>sincronizzato:</strong> Dispositivi che <i>non</i> sono stati archiviati con Intune negli ultimi 28 giorni
 
 
 

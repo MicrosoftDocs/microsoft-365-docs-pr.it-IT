@@ -1,5 +1,5 @@
 ---
-title: Configurazione delle notifiche di posta indesiderata dell'utente finale in Exchange Online
+title: Configurare le notifiche di posta indesiderata dell'utente finale in Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,14 +15,14 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: È possibile configurare le notifiche di posta indesiderata dell'utente finale per il criterio di filtro della posta indesiderata a livello di società predefinito o per i criteri di filtro antispam applicati ai domini.
-ms.openlocfilehash: cc3054715fdc5cbe72bc6655462b61eb8a9db5d3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c8690a64e222bca2bbdc6be62d1077a9d361ae85
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086465"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341292"
 ---
-# <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurazione delle notifiche di posta indesiderata dell'utente finale in Exchange Online
+# <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurare le notifiche di posta indesiderata dell'utente finale in Exchange Online
 
 > [!IMPORTANT]
 > Questo argomento è destinato ai clienti di Exchange Online che proteggono le loro cassette postali ospitate su cloud. I clienti autonomi di Exchange Online Protection (EOP) che proteggono le cassette postali locali dovrebbero invece leggere l'argomento seguente: [configurare le notifiche di posta indesiderata dell'utente finale in EOP](configure-end-user-spam-notifications-in-eop.md). 
@@ -95,4 +95,6 @@ Per informazioni sui tasti di scelta rapida che possono essere applicati alle pr
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
 [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md)
+
+[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)
   
