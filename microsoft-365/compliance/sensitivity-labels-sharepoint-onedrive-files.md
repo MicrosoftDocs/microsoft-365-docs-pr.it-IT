@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 5d9b5a493b44ef4453906f1601481a6aa89c3884
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 89925858ac749ac6f50b7a049a372cf2f7912698
+ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288534"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341236"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)
 
@@ -74,11 +74,13 @@ Per questa anteprima, utilizzare la versione di OneDrive Sync App 19.002.0121.00
     
     1. Assicurarsi di aver eseguito la migrazione delle etichette di Azure Information Protection in etichette di riservatezza e di pubblicarle dal centro conformità di Microsoft 365 o dall'interfaccia di amministrazione dell'etichettatura equivalente.
     
-    2. Scaricare i file e caricarli in SharePoint.
+    2. Scaricare i file e quindi caricarli in SharePoint.
 
 - SharePoint non è in grado di elaborare i file crittografati quando l'etichetta che applica la crittografia ha una delle seguenti configurazioni per la crittografia:
-    - **Consenti agli utenti di assegnare autorizzazioni quando applicano l'etichetta** e **in Word, PowerPoint ed Excel, richiedere agli utenti di specificare le autorizzazioni**
+    - **Consenti agli utenti di assegnare le autorizzazioni quando applicano l'etichetta** e la casella di controllo per **in Word, PowerPoint ed Excel,** è selezionata l'opzione utenti per specificare le autorizzazioni. Questa impostazione viene a volte definita "autorizzazioni definite dall'utente".
     - **L'accesso degli utenti al contenuto scade** è impostato su un valore diverso da **Never**.
+    
+    Per le etichette con una di queste configurazioni di crittografia, le etichette non vengono visualizzate per gli utenti di Office sul Web. Inoltre, non è possibile utilizzare le nuove funzionalità di questa anteprima con i documenti contrassegnati che dispongono già di queste impostazioni di crittografia. Ad esempio, questi documenti non verranno restituiti nei risultati della ricerca, anche se sono stati aggiornati.
 
 - Per un documento crittografato che consenta di modificare le autorizzazioni per un utente, la copia non può essere bloccata nelle versioni Web delle app di Office.
 
@@ -100,7 +102,7 @@ Per questa anteprima, utilizzare la versione di OneDrive Sync App 19.002.0121.00
 
 Prima di abilitare l'anteprima, verificare che sia in esecuzione SharePoint Online Management Shell versione 16.0.19418.12000 o versioni successive. Se si ha già la versione più recente, è possibile procedere e abilitare l'anteprima.
 
-1. Se è stata installata una versione precedente di SharePoint Online Management Shell dalla raccolta di PowerShell, è possibile aggiornare il modulo eseguendo il cmdlet seguente.
+1. Se è stata installata una versione precedente di SharePoint Online Management Shell da PowerShell Gallery, è possibile aggiornare il modulo eseguendo il cmdlet seguente.
 
     ```PowerShell
     Update-Module -Name Microsoft.Online.SharePoint.PowerShell

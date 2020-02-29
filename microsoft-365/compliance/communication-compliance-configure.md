@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1c53eded5e50d480cdce2ccbcb61f732bc899041
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4f456b44ed0d7b3fb83a20d9c66ab49ff8af4946
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078779"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333666"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurare la conformità delle comunicazioni in Microsoft 365
 
@@ -45,7 +45,7 @@ Completare la procedura seguente per configurare e usare la conformità della co
 >[!Important]
 >Per impostazione predefinita, gli amministratori globali non possono accedere alle funzionalità di conformità della comunicazione. I ruoli assegnati a questo passaggio sono necessari prima che vengano accessibili tutte le funzionalità di conformità della comunicazione.
 
-Per rendere la **conformità di comunicazione** disponibile come opzione di menu in Microsoft 365 Compliance Center, è necessario essere assegnati al ruolo di **amministratore revisione di supervisione** . È necessario creare un nuovo gruppo di ruoli per i revisori con l' **amministratore revisione di supervisione**, la **gestione dei casi**e i ruoli di **Revisione** per esaminare e correggere i messaggi con le corrispondenze di criteri.
+Per rendere la **conformità di comunicazione** disponibile come opzione di menu in Microsoft 365 Compliance Center, è necessario essere assegnati al ruolo di **amministratore revisione di supervisione** . È necessario creare un nuovo gruppo di ruoli per i revisori con l' **amministratore revisione di supervisione**, la **gestione dei casi**, l' **amministratore della conformità**e i ruoli di **Revisione** per esaminare e correggere i messaggi con le corrispondenze di criteri.
 
 ### <a name="create-a-new-role-group"></a>Creare un nuovo gruppo di ruoli
 
@@ -57,9 +57,9 @@ Per rendere la **conformità di comunicazione** disponibile come opzione di menu
 
 4. Nel campo **nome** assegnare un nome descrittivo al nuovo gruppo di ruoli.  Select **Next**. 
 
-5. Selezionare **Scegli ruoli** e quindi **Aggiungi**. Selezionare la casella di controllo per l' **amministratore revisione di supervisione**, la **gestione dei casi**e la **Revisione**, quindi selezionare **Aggiungi** e **Chiudi**.  Select **Next**. 
+5. Selezionare **Scegli ruoli** e quindi **Aggiungi**. Selezionare la casella di controllo per l' **amministratore della revisione di supervisione**, la **gestione dei casi**, l' **amministratore della conformità**e la **Revisione**, quindi selezionare **Aggiungi** e **Chiudi**.  Select **Next**. 
 
-    ![Gruppi di ruoli necessari per la conformità della comunicazione](../media/communication-compliance-role-groups.png)
+    ![Gruppi di ruoli necessari per la conformità della comunicazione](../media/communication-compliance-role-groups-1.png)
 
 6. Selezionare **Scegli membri** e quindi **Aggiungi**. Selezionare la casella di controllo per tutti gli utenti e i gruppi che si desidera creare criteri e gestire i messaggi con le corrispondenze di criteri, quindi fare clic su **Aggiungi** e **Chiudi**.  Select **Next**. 
 
