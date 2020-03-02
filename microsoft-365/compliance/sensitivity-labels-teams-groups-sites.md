@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile applicare etichette a Microsoft Teams, gruppi di Office 365 e siti di SharePoint.
-ms.openlocfilehash: 611876b7e403c8d877c602d21967675adef2d061
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 477b168435d36170a1506adff021ee4cb5ab5162
+ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288579"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42333713"
 ---
 # <a name="use-sensitivity-labels-with-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)
 
 Quando si creano etichette di riservatezza nel [Centro conformità Microsoft 365](https://protection.office.com/), ora è possibile applicarle ai seguenti contenitori: Microsoft Teams, gruppi di Office 365 e siti di SharePoint. Per tali contenitori, è possibile usare le impostazioni di etichetta per controllare le seguenti opzioni:
 
-- Privacy dei siti dei team collegati ai gruppi di Office 365 (pubblici o privati)
+- Privacy (pubblico o privato) dei siti dei team collegati ai gruppi di Office 365
 - Accesso di utenti esterni
 - Accesso da dispositivi non gestiti 
 
@@ -87,7 +87,7 @@ In questa nuova pagina **Impostazioni sito e gruppo**, configurare le impostazio
 > 
 > Analogamente, se si crea un'etichetta e non si attivano queste impostazioni di sito e gruppo, l'etichetta sarà ancora disponibile quando gli utenti creano team, gruppi e siti, ma verrà applicato solo il nome dell'etichetta.
 
-Se l'etichetta non è già pubblicata, ora è possibile farlo [aggiungendola a un criterio di etichetta](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
+Se l'etichetta di riservatezza non è già pubblicata, ora è possibile farlo [aggiungendola a un criterio di etichetta di riservatezza](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). Gli utenti a cui è stato assegnato un criterio di etichetta di riservatezza che include tale etichetta potranno selezionarla per siti e gruppi.
 
 ## <a name="sensitivity-label-management"></a>Gestione delle etichetta di riservatezza
 
