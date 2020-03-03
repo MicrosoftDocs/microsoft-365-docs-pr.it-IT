@@ -1,6 +1,6 @@
 - name: Conformità di Microsoft 365
   href: index.yml
-- name: Operazioni preliminari
+- name: Per iniziare
   items:
     - name: Novità del centro conformità
       href: whats-new.md
@@ -218,8 +218,9 @@
     - name: Gestire la governance delle informazioni
       href: manage-information-governance.md
     - name: Importare dati
-      href: importing-pst-files-to-office-365.md
       items:
+        - name: Panoramica dell'importazione di file PST
+          href: importing-pst-files-to-office-365.md
         - name: Usare il caricamento di rete per importare i file PST
           href: use-network-upload-to-import-pst-files.md
         - name: Usare la spedizione unità per importare i file PST
@@ -231,8 +232,9 @@
         - name: Domande frequenti sull'importazione di file PST
           href: faqimporting-pst-files-to-office-365.md
     - name: Archiviazione dei dati di terze parti
-      href: archiving-third-party-data.md
       items:
+        - name: Panoramica dell'archiviazione dei dati di terze parti
+          href: archiving-third-party-data.md
         - name: Configurare un connettore per archiviare i dati di Facebook
           href: archive-facebook-data-with-sample-connector.md
         - name: Configurare un connettore per archiviare i dati di Twitter
@@ -276,8 +278,9 @@
     - name: Eliminare i dati
       href: disposition-reviews.md
     - name: Gestire le cassette postali inattive
-      href: inactive-mailboxes-in-office-365.md
       items:
+        - name: Panoramica delle cassette postali inattive
+          href: inactive-mailboxes-in-office-365.md
         - name: Creare e gestire le cassette postali inattive
           href: create-and-manage-inactive-mailboxes.md
         - name: Modificare la durata del blocco per una cassetta postale inattiva
@@ -320,7 +323,7 @@
               href: view-label-activity-for-documents.md
             - name: Visualizzare i report sulla governance dei dati
               href: view-the-data-governance-reports.md
-        - name: Eventi
+        - name: Events
           items:
             - name: Criteri di conservazione basati su eventi
               href: event-driven-retention.md
@@ -718,10 +721,13 @@
     - name: Controllo delle cassette postali
       href: enable-mailbox-auditing.md
     - name: Controllo avanzato
-      href: advanced-audit.md
       items:
+        - name: Panoramica del controllo avanzato
+          href: advanced-audit.md
         - name: Gestire i criteri di conservazione dei log di controllo
           href: audit-log-retention-policies.md
+        - name: Utilizzare il controllo avanzato per esaminare gli account compromessi
+          href: mailitemsaccessed-forensics-investigations.md
     - name: Criteri di avviso
       href: alert-policies.md
 - name: Gestire i rischi di conformità
@@ -808,7 +814,7 @@
               href: gdpr-arc-dynamics365.md
             - name: Supporto tecnico Microsoft & servizi professionali
               href: gdpr-arc-prof-services.md
-            - name: "Office\_365"
+            - name: Office 365
               href: gdpr-arc-office365.md
         - name: Protezione delle informazioni
           href: gdpr-information-protection.md
@@ -826,7 +832,7 @@
               href: gdpr-dsr-intune.md
             - name: Supporto tecnico Microsoft & servizi professionali
               href: gdpr-dsr-prof-services.md
-            - name: "Office\_365"
+            - name: Office 365
               href: gdpr-dsr-office365.md
             - name: Famiglia di prodotti Visual Studio
               href: gdpr-dsr-visual-studio-family.md
@@ -838,7 +844,7 @@
               href: gdpr-breach-azure-dynamics.md
             - name: Supporto tecnico Microsoft & servizi professionali
               href: gdpr-breach-microsoft-support-professional-services.md
-            - name: "Office\_365"
+            - name: Office 365
               href: gdpr-breach-office365.md
         - name: Valutazioni d'impatto sulla protezione dei dati
           items:
@@ -850,7 +856,7 @@
               href: gdpr-dpia-dynamics.md
             - name: Supporto tecnico Microsoft & servizi professionali
               href: gdpr-dpia-prof-services.md
-            - name: "Office\_365"
+            - name: Office 365
               href: gdpr-dpia-office365.md
         - name: Responsabile della protezione dei dati di Microsoft
           href: gdpr-data-protection-officer.md
@@ -1001,7 +1007,7 @@
               href: offering-gxp.md
             - name: TISAX (Germania)
               href: offering-tisax-germany.md
-        - name: Media
+        - name: Elementi multimediali
           items:
             - name: CDSA
               href: offering-cdsa.md
