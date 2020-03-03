@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7c3be3d13e40c3a758edeb224aa2b8383908dd1f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ef8a7695e3e54acda069f73eea88fd54b292ba8a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594527"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353937"
 ---
 # <a name="azure-accountability-readiness-checklist-for-the-gdpr"></a>Elenco di controllo per l'applicazione del GDPR all'uso di Azure
 
@@ -145,7 +145,7 @@ Per ulteriore documentazione relativa al GDPR, visitare [https://aka.ms/gdprgets
 | 12 <a name="12"> </a> | [Report di controllo SOC 2 di tipo 2 [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (All-Up) ISO/IEC 27001:2013 ISMS Statement of Applicability](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 14 <a name="14"> </a> | [Offerte di conformità del Centro protezione Microsoft](offering-home.md)  |
-| 15 <a name="15"> </a> | [Privacy e dati personali in Intune](https://review.docs.microsoft.com/intune/privacy-personal-data) |
+| 15 <a name="15"> </a> | [Privacy e dati personali in Intune](https://docs.microsoft.com/intune/privacy-personal-data) |
 | 16 <a name="16"> </a> | [Set di controllo GDPR di Azure completo scaricabile](https://aka.ms/GDPRControls) o tramite il [Punteggio di conformità](compliance-score.md) |
 | 17 <a name="17"> </a> | [Informazioni sul responsabile della protezione dei dati Microsoft](https://aka.ms/GDPRDPO) |
 

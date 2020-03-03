@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Creare una cassetta postale condivisa consente di affidare a più utenti all'interno dell'azienda la responsabilità di leggere e rispondere ai messaggi di posta elettronica inviati a un unico indirizzo.
-ms.openlocfilehash: 270894da77d9ddf2b35187d8409cd2fd878b0e6d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2ceec37928eafab0c4f02382dd24aa3fa91aa9cd
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253045"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362301"
 ---
 # <a name="create-a-shared-mailbox"></a>Creare una cassetta postale condivisa 
 
@@ -64,17 +64,17 @@ Prima di creare una cassetta postale condivisa, leggere [Informazioni sulle cass
     
 3. Nella pagina **Cassette postali condivise** selezionare **+ Aggiungi cassetta postale**. Immettere un nome per la cassetta postale condivisa. La procedura guidata sceglie l'indirizzo di posta elettronica, ma è possibile cambiarlo.
     
-    ![Assegnare un nome alla cassetta postale condivisa.](../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
+    ![Assegnare un nome alla cassetta postale condivisa.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
 4. Selezionare **Aggiungi**. Potrebbero trascorrere alcuni minuti prima che si possa iniziare ad aggiungere membri.
 
 5. In **Passaggi successivi** scegliere **Aggiungere membri a questa cassetta postale**. I membri sono le persone che potranno visualizzare la posta in entrata in questa cassetta postale condivisa e le risposte in uscita.
 
-   ![Selezionare Aggiungi membri](../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![Selezionare Aggiungi membri](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. Selezionare il pulsante **+ Aggiungi membri**. Inserire un segno di spunta accanto alle persone a cui si vuole consentire di usare la cassetta postale condivisa, quindi selezionare **Salva**.
 
-   ![Assegnare membri alla cassetta postale condivisa](../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![Assegnare membri alla cassetta postale condivisa](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Selezionare **Chiudi**.
 
@@ -95,7 +95,7 @@ Ma cosa succede se un amministratore reimposta semplicemente la password dell'ac
 
 2. Nell'elenco di account utente individuare l'account della cassetta postale condivisa (ad esempio, impostare il filtro su **Utenti senza licenza**).
 
-3. Selezionare l'utente per aprire il riquadro proprietà e quindi selezionare l'icona **Bloccare l’utente** ![Schermata dell'icona Bloccare l'utente](../media/block-user-icon.png).
+3. Selezionare l'utente per aprire il riquadro proprietà e quindi selezionare l'icona **Bloccare l’utente** ![Schermata dell'icona Bloccare l'utente](../../media/block-user-icon.png).
 
    **Nota**: se l'account è già bloccato, verrà visualizzato **Accesso bloccato** nella parte superiore e sull'icona sarà scritto **Sbloccare l’utente**.
 

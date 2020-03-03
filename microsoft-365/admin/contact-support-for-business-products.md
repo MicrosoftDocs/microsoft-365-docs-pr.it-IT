@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: Ottenere supporto tecnico e per la fatturazione tramite i numeri di telefono indicati per la propria area geografica o località, inviando una richiesta di assistenza online o visitando Microsoft Store.
 feedback_system: None
-ms.openlocfilehash: 72644e1e55f3432fd9027a5964022f4d989a05da
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7fdd2f1232fe20d55ef54f72333d35ff6de8d41e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241480"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352947"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Contattare il supporto tecnico per i prodotti per le aziende - Guida dell’amministratore
 
@@ -230,7 +230,7 @@ Per visualizzare la disponibilità delle funzionalità tra i piani di Office 365
 
 Eseguire la scansione del codice QR per seguici su WeChat e ottenere gli aggiornamenti più recenti per Office 365 gestito da 21Vianet.
 
-![Codice QR per aggiornamenti per Office 365 gestito da 21Vianet](media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![Codice QR per aggiornamenti per Office 365 gestito da 21Vianet](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 

@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Informazioni su come configurare l'abbonamento a Office 365 Business Premium, Office 365 Business Essentials, Office 365 Business o Office 365 Education.
-ms.openlocfilehash: 28847b1b2773a0f725a5ac1a99dfc2a807f66b82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 303e736bb3296eba5ddb7ca7e9da8f86ebdc0217
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243920"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360447"
 ---
 # <a name="set-up-office-365-for-business"></a>Configurare Office 365 per le aziende
 
@@ -168,7 +168,7 @@ Se si usa Office 365 gestito da 21Vianet, eseguire l'accesso all'indirizzo [http
 
 1. Selezionare **Posta**.
 
-2. Nella barra di spostamento di Outlook selezionare **Impostazioni**![Impostazioni: aggiornare il profilo, installare il software e connetterlo al cloud](../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png)\> **Opzioni**.
+2. Nella barra di spostamento di Outlook selezionare **Impostazioni**![Impostazioni: aggiornare il profilo, installare il software e connetterlo al cloud](../../media/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png)\> **Opzioni**.
 
 3. Nel riquadro sinistro selezionare **Posta** e quindi in **Account** selezionare **Account connessi**.
 

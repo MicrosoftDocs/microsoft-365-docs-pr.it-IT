@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cfd0c127b7cea626d6e2ed571f8ed1913370c1db
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 04b14f913a9b513ee5235223315daa2611395854
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602713"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42363032"
 ---
 # <a name="financial-authority-amf-and-prudential-authority-acpr-france"></a>Organismi di vigilanza AMF (Autorité des Marchés Financiers) e ACPR (Autorité de Contrôle Prudentiel et de Résolution) in Francia
 
 ## <a name="about-the-amf-and-acpr"></a>Informazioni sugli organismi di vigilanza AMF e ACPR
 
-Gli [organismi ](https://www.amf-france.org/en_US/?langSwitch=true) ([AMF (Autorité des Marchés Financiers)](https://amf-france.org/)) e [](https://acpr.banque-france.fr/en/page-sommaire/about-acpr) ([ACPR (Autorité de Contrôle Prudentiel et de Résolution)](https://acpr.banque-france.fr/)) sono i principali garanti delle attività finanziarie in Francia. In qualità di garante del mercato azionario, l'AMF è responsabile della supervisione dei mercati finanziari e delle società di investimento. L'ACPR, un organismo di controllo indipendente che fa capo alla banca centrale, la [Banque de France](https://www.banque-france.fr/), supervisiona il settore bancario ed assicurativo.  
+Gli [organismi ](https://www.amf-france.org/en) ([AMF (Autorité des Marchés Financiers)](https://www.amf-france.org/)) e [](https://acpr.banque-france.fr/en/page-sommaire/about-acpr) ([ACPR (Autorité de Contrôle Prudentiel et de Résolution)](https://acpr.banque-france.fr/)) sono i principali garanti delle attività finanziarie in Francia. In qualità di garante del mercato azionario, l'AMF è responsabile della supervisione dei mercati finanziari e delle società di investimento. L'ACPR, un organismo di controllo indipendente che fa capo alla banca centrale, la [Banque de France](https://www.banque-france.fr/), supervisiona il settore bancario ed assicurativo.  
   
 L'AMF e l'ACPR operano unitamente all’Autorità bancaria europea (ABE), "un'autorità indipendente dell'Unione europea (UE), che opera per assicurare un livello di regolamentazione e di vigilanza efficace e uniforme nel settore bancario europeo". A tal fine, l'ABE ha definito un approccio globale relativo all'uso del cloud computing da parte degli istituti finanziari dell'UE, le [Raccomandazioni in materia di esternalizzazione a fornitori di servizi cloud](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf ).  
   

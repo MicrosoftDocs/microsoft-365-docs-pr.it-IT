@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Creare una cassetta postale sala o attrezzatura in modo che tutti gli utenti dell'organizzazione potranno prenotarla per riunioni o eventi usando Outlook. "
-ms.openlocfilehash: b9f1ce531cb8ce94238b3dd35f2bfdc214d7693f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1690eba40b71972c18f28e02baf0a39d6557651a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252757"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361861"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Cassette postali della sala e attrezzatura
 
@@ -40,21 +40,21 @@ Per usare le cassette postali sala o attrezzatura, aprire Outlook dal computer o
   
 1. Aprire **Outlook** nel computer. 
     
-2. Nella scheda **Home** scegliere **Nuovi elementi** \> **Riunione**.<br/>![Per pianificare una riunione, nel gruppo Nuovo della scheda Home scegliere Nuovi elementi, quindi Riunione.](../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>In alternativa, selezionare semplicemente **Nuova riunione** nel Calendario.
+2. Nella scheda **Home** scegliere **Nuovi elementi** \> **Riunione**.<br/>![Per pianificare una riunione, nel gruppo Nuovo della scheda Home scegliere Nuovi elementi, quindi Riunione.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>In alternativa, selezionare semplicemente **Nuova riunione** nel Calendario.
     
-3. Nel campo A digitare il nome della sala riunioni o dell'attrezzatura da prenotare, oltre a quelli dei partecipanti che si vogliono invitare.<br/>In alternativa, selezionare **A** e quindi fare doppio clic sulla sala riunioni o l'attrezzatura nell'elenco. Infine scegliere **OK**.<br/>![Prenotare una cassetta postale della sala in Outlook](../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
+3. Nel campo A digitare il nome della sala riunioni o dell'attrezzatura da prenotare, oltre a quelli dei partecipanti che si vogliono invitare.<br/>In alternativa, selezionare **A** e quindi fare doppio clic sulla sala riunioni o l'attrezzatura nell'elenco. Infine scegliere **OK**.<br/>![Prenotare una cassetta postale della sala in Outlook](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
 4. Nella riga **Oggetto** digitare lo scopo della prenotazione o della riunione. 
     
 5. Modificare il valore **Luogo** o lasciarlo invariato. 
     
-6. Modificare **Ora inizio** e **Ora fine**. In alternativa, selezionare **Evento giornata intera**. Per rendere la riunione o la prenotazione ricorrente, selezionare **Ricorrenza** nella parte superiore.<br/>![Prenotare orari per le riunioni](../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
+6. Modificare **Ora inizio** e **Ora fine**. In alternativa, selezionare **Evento giornata intera**. Per rendere la riunione o la prenotazione ricorrente, selezionare **Ricorrenza** nella parte superiore.<br/>![Prenotare orari per le riunioni](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
 7. Digitare un messaggio di descrizione dello scopo e allegare gli eventuali file necessari.
     
 8. Per consentire ad altri di partecipare alla riunione online o tramite telefono, selezionare **Riunione Skype**.
     
-9. Per assicurarsi che la sala, l'attrezzatura e le persone invitate siano disponibili, selezionare **Regole Pianificazione** nella parte superiore. Quindi, selezionare un orario disponibile nel calendario.<br/> ![Verificare la disponibilità di sale e attrezzatura](../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>SUGGERIMENTO: nel calendario di pianificazione, blu indica che la sala o l'attrezzatura è prenotata o occupata. Selezionare l'area bianca (libera) nel calendario. 
+9. Per assicurarsi che la sala, l'attrezzatura e le persone invitate siano disponibili, selezionare **Regole Pianificazione** nella parte superiore. Quindi, selezionare un orario disponibile nel calendario.<br/> ![Verificare la disponibilità di sale e attrezzatura](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>SUGGERIMENTO: nel calendario di pianificazione, blu indica che la sala o l'attrezzatura è prenotata o occupata. Selezionare l'area bianca (libera) nel calendario. 
   
 10. Al termine, selezionare **Invia**.
     
@@ -66,7 +66,7 @@ Per configurare una cassetta postale sala o attrezzatura, passare all'interfacci
   
 2. Seleziona **Aggiungi**.
     
-3. Compilare i campi della sala o attrezzatura:<br/>![Aggiungere una cassetta postale della sala in Office 365](../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Compilare i campi della sala o attrezzatura:<br/>![Aggiungere una cassetta postale della sala in Office 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **Sala** o **Attrezzatura**: tipo di cassetta postale che si vuole creare.
     

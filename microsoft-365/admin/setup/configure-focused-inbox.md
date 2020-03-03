@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: "Informazioni su come configurare Posta in arrivo evidenziata per tutti gli utenti o per utenti specifici dell'organizzazione. "
-ms.openlocfilehash: 6762bf4e81254e962171ddc80027273542288f34
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 29f412b82121b8955c2ddabb5d152bbe6b2255e0
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257075"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360877"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurare Posta in arrivo evidenziata per tutti gli utenti nell'organizzazione
 
@@ -52,7 +52,7 @@ Get-OrganizationConfig
 
 4. Cercare **FocusedInboxOn** per visualizzare l'impostazione corrente: 
     
-    ![Risposta di PowerShell sullo stato della Posta in arrivo evidenziata.](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![Risposta di PowerShell sullo stato della Posta in arrivo evidenziata.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Eseguire il cmdlet seguente per disattivare la Posta in arrivo evidenziata.
     
@@ -74,11 +74,11 @@ Get-OrganizationConfig
 
 Per accedere alla visualizzazione Evidenziata, gli utenti devono chiudere e riavviare Outlook. Dopo il riavvio di Outlook, nell'interfaccia utente di Outlook vedranno una descrizione comando che consentirà loro di usare la nuova Posta in arrivo evidenziata.
   
-![Come appare la funzionalità Posta in arrivo evidenziata quando un utente apre Outlook sul Web per la prima volta.](../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
+![Come appare la funzionalità Posta in arrivo evidenziata quando un utente apre Outlook sul Web per la prima volta.](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
 Se si passa da Messaggi secondari a Posta in arrivo evidenziata, è possibile scegliere se abilitare ("Prova") o ignorare la funzionalità. Se l'utente ha più client (supportati), può abilitare o disabilitare la Posta in arrivo evidenziata sui singoli client. Il suggerimento è simile a quanto segue:
   
-![Come appare la funzionalità Posta in arrivo evidenziata quando viene distribuita agli utenti e Outlook viene riaperto.](../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
+![Come appare la funzionalità Posta in arrivo evidenziata quando viene distribuita agli utenti e Outlook viene riaperto.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
 Quando un utente decide di iniziare a usare la Posta in arrivo evidenziata, la funzionalità Messaggi secondari viene disabilitata automaticamente. La cartella Messaggi secondari viene convertita in una cartella standard, che può essere rinominata o eliminata.
   
@@ -98,7 +98,7 @@ Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nel
 
 4. Cercare FocusedInboxOn per visualizzare l'impostazione corrente:
     
-    ![Risposta di PowerShell sullo stato della Posta in arrivo evidenziata.](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![Risposta di PowerShell sullo stato della Posta in arrivo evidenziata.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Eseguire il cmdlet seguente per disattivare la Posta in arrivo evidenziata:
     
@@ -116,13 +116,13 @@ Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nel
 
 1. Accedere all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">interfaccia di amministrazione di Exchange</a>.
     
-2. Passare a **Flusso di posta** \> **Regole**. Selezionare l'![icona Aggiungi dell'interfaccia di amministrazione di Exchange](../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) e quindi selezionare **Crea nuova regola...**. 
+2. Passare a **Flusso di posta** \> **Regole**. Selezionare l'![icona Aggiungi dell'interfaccia di amministrazione di Exchange](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) e quindi selezionare **Crea nuova regola...**. 
     
 3. Dopo aver creato la nuova regola, selezionare **Salva** per avviarla. 
     
     L'immagine seguente mostra un esempio in cui tutti i messaggi inviati da "Reparto Retribuzioni" devono essere recapitati in Posta in arrivo evidenziata.
     
-    ![focusedinbox payroll](../media/focusedinbox-transport-rule.PNG)
+    ![focusedinbox payroll](../../media/focusedinbox-transport-rule.PNG)
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Usare PowerShell per creare una regola di trasporto che indirizzi i messaggi di posta elettronica alla visualizzazione Evidenziata per tutti gli utenti
 

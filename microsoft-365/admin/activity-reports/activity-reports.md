@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Ottenere un report periodico sul modo in cui gli utenti dell'organizzazione usano i servizi di Office 365. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: 6962d8ed9632ae2e819f1ea1d0e0950d82ef7ad7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241183"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353967"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Report sulle attività nell'interfaccia di amministrazione di Microsoft 365
 
@@ -58,7 +58,7 @@ Guardare questo video per una panoramica sull'uso dei report:
 ::: moniker-end
 
    
-2. Scegliere **Seleziona un report** nella parte superiore del dashboard per selezionare un report nell'elenco dei report disponibili. In alternativa, selezionare un widget immediato sulle attività per un servizio, ad esempio posta elettronica, OneDrive e così via, per visualizzare altre informazioni. <br/>![Dashboard utilizzo di Office 365](../media/usage-report-dashboard.png)
+2. Scegliere **Seleziona un report** nella parte superiore del dashboard per selezionare un report nell'elenco dei report disponibili. In alternativa, selezionare un widget immediato sulle attività per un servizio, ad esempio posta elettronica, OneDrive e così via, per visualizzare altre informazioni. <br/>![Dashboard utilizzo di Office 365](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Chi può vedere i report
 
@@ -164,7 +164,7 @@ Se si vogliono nascondere le informazioni a livello di utente quando si generano
   
 L'elenco di utenti avrà questo aspetto:
   
-![Report di Office 365 - elenco utenti anonimi](../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Report di Office 365 - elenco utenti anonimi](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 Perché le modifiche abbiano effetto sui report nella dashboard dei report occorrerà qualche minuto. Questa impostazione si applica anche all'API dei report.
   
