@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4d0900d780f03a16d92a84c190078f892187e376
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 011a5f2b9227d5bd7a9b80901f689638db396bab
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256485"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358577"
 ---
-# <a name="contact-support-for-guernsey"></a><span data-ttu-id="b1075-103">Contattare il supporto per Guernsey</span><span class="sxs-lookup"><span data-stu-id="b1075-103">Contact support for Guernsey</span></span>
+# <a name="contact-support-for-guernsey"></a><span data-ttu-id="e0604-103">Contattare il supporto per Guernsey</span><span class="sxs-lookup"><span data-stu-id="e0604-103">Contact support for Guernsey</span></span>
 
-<span data-ttu-id="b1075-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="b1075-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="e0604-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="e0604-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b1075-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="b1075-105">Phone number</span></span>
-<span data-ttu-id="b1075-106">+ 1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="b1075-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="e0604-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="e0604-105">Phone number</span></span>
+<span data-ttu-id="e0604-106">+ 1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="e0604-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b1075-107">Ore</span><span class="sxs-lookup"><span data-stu-id="b1075-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b1075-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="b1075-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="e0604-107">Ore</span><span class="sxs-lookup"><span data-stu-id="e0604-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="e0604-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="e0604-108">Billing Support:</span></span>
 
-<span data-ttu-id="b1075-109">Inglese: lun-ven 10.00-18.00</span><span class="sxs-lookup"><span data-stu-id="b1075-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="e0604-109">Inglese: lun-ven 10.00-18.00</span><span class="sxs-lookup"><span data-stu-id="e0604-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b1075-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="b1075-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="e0604-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="e0604-110">Technical Support:</span></span>
 
-<span data-ttu-id="b1075-111">Italiano: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="b1075-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="e0604-111">Italiano: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="e0604-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="b1075-112">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="b1075-112">International call charges apply</span></span>
+<span data-ttu-id="e0604-112">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="e0604-112">International call charges apply</span></span>
