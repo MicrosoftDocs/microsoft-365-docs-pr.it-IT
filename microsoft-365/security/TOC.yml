@@ -55,6 +55,8 @@
               href: ./mtp/troubleshoot.md
         - name: Procedure
           items:
+            - name: Distribuire i servizi supportati
+              href: mtp/deploy-supported-services.md
             - name: Attivare Microsoft Threat Protection
               href: mtp/mtp-enable.md
             - name: Eventi imprevisti
