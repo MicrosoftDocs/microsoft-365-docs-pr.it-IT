@@ -143,7 +143,7 @@
 ### [Gestire la creazione di gruppi](create-groups/manage-creation-of-groups.md)
 ### [Scegliere il dominio per creare i gruppi](create-groups/choose-domain-to-create-groups.md)
 ### [Criterio di denominazione dei gruppi](create-groups/groups-naming-policy.md)
-### [Consentire ai membri di inviare un messaggio da o per conto di un gruppo](create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md).
+### [Consentire ai membri di inviare un messaggio da o per conto di un gruppo](create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 ### [Aggiungere o rimuovere membri dai gruppi](create-groups/add-or-remove-members-from-groups.md)
 ### [Criteri di scadenza dei gruppi di Office 365](create-groups/office-365-groups-expiration-policy.md)
 ### [Ripristinare un gruppo eliminato](create-groups/restore-deleted-group.md)
