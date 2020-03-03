@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Informazioni su come eliminare un account utente. Decidere cosa fare con l'indirizzo di posta elettronica dell'utente, il contenuto di OneDrive e se mantenere la licenza del prodotto o smettere di pagarla.
-ms.openlocfilehash: f54d0d4a39ff116b4bee6aceb10233344835a455
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2c87f04675ec92e964acb6fc9aef7171b6d7d510
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241639"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353137"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Eliminare un utente dall'organizzazione
   

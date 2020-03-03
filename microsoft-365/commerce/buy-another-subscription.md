@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: "Informazioni su come acquistare un altro abbonamento a Office 365 for business per l'organizzazione quando si dispone già di un abbonamento. "
 ms.custom: okr_SMB
-ms.openlocfilehash: 5f134d69c83e3c3fbb62dbb794e40e22d544ad1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242396"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354647"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>Acquistare un altro abbonamento a Office 365 per le aziende
 
@@ -66,11 +66,11 @@ Dopo l'acquisto di un nuovo abbonamento, è necessario assegnare agli utenti che
 
     Verranno visualizzati gli abbonamenti disponibili per l'organizzazione. Gli abbonamenti già acquistati sono identificati in questo modo.
 
-    ![Banner che indica che la sottoscrizione è già stata acquistata per l'organizzazione.](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![Banner che indica che la sottoscrizione è già stata acquistata per l'organizzazione.](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. Passare il mouse o toccare l'abbonamento che si vuole acquistare e quindi scegliere **Acquista ora**.
 
-    ![Acquista ora il collegamento nella pagina acquisto servizi dell'interfaccia di amministrazione di Microsoft 365.](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Acquista ora il collegamento nella pagina acquisto servizi dell'interfaccia di amministrazione di Microsoft 365.](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. Immettere il numero di licenze utente necessarie, scegliere se pagare ogni mese o per tutto l'anno e quindi fare clic **su Aggiungi al carrello**.
 
@@ -92,11 +92,11 @@ Dopo l'acquisto di un nuovo abbonamento, è necessario assegnare agli utenti che
 
     Verranno visualizzati gli abbonamenti disponibili per l'organizzazione. Gli abbonamenti già acquistati sono identificati in questo modo.
 
-    ![Banner che indica che la sottoscrizione è già stata acquistata per l'organizzazione.](../admin/media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
+    ![Banner che indica che la sottoscrizione è già stata acquistata per l'organizzazione.](../media/9e18d31a-24a5-4c64-a71c-fafd4a4feb28.png)
   
 3. Passare il mouse o toccare l'abbonamento che si vuole acquistare e quindi scegliere **Acquista ora**.
 
-    ![Acquista ora il collegamento nella pagina acquisto servizi dell'interfaccia di amministrazione di Microsoft 365.](../admin/media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
+    ![Acquista ora il collegamento nella pagina acquisto servizi dell'interfaccia di amministrazione di Microsoft 365.](../media/f344c0a8-c58f-461d-b8e9-cddbb18f8ee8.png)
   
 4. Immettere il numero di licenze utente necessarie, scegliere se pagare ogni mese o per tutto l'anno e quindi fare clic **su Aggiungi al carrello**.
 

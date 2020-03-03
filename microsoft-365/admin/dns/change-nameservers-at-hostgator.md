@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
 description: Informazioni su come configurare Office 365 per gestire i record DNS del dominio personalizzato in Hostgator.
-ms.openlocfilehash: f0d3b495285685c3f666560816f99b07a1a5f6d5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 95131e258482fdb0ff9aa7f00b3339e1c6f9509d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242743"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351847"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-hostgator"></a>Modificare i server dei nomi per configurare Office 365 con Hostgator
 
@@ -43,27 +43,27 @@ Seguire questa procedura per associare il dominio e gli account di hosting.
   
 1. Per iniziare, passare alla pagina del portale per i clienti di Hostgator usando [questo collegamento](https://portal.hostgator.com/domain/manage). Verrà richiesto di eseguire l'accesso.
     
-    ![Connessione dell'elenco attività a Outlook](../media/6749ac23-4832-4daf-8f3b-bc3b9b1b979c.png)
+    ![Connessione dell'elenco attività a Outlook](../../media/6749ac23-4832-4daf-8f3b-bc3b9b1b979c.png)
   
 2. Selezionare la scheda **domini** .
     
-    ![Barra multifunzione di Office 2010](../media/56d12bfd-3549-4033-90dc-077c76ca798c.png)
+    ![Barra multifunzione di Office 2010](../../media/56d12bfd-3549-4033-90dc-077c76ca798c.png)
   
 3. Nella pagina **Gestisci domini** , nell'area **domini personali** , selezionare il dominio che si desidera aggiornare.
     
-    ![Hostgator-BP-Redelegate-1-2](../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
+    ![Hostgator-BP-Redelegate-1-2](../../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
   
 4. Nell'area **Name Servers** della pagina **Domains Overview** selezionare **Change**.
     
-    ![Immagine del pulsante Imposta colore trasparente](../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
+    ![Immagine del pulsante Imposta colore trasparente](../../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
   
 5. Nella pagina **Name Servers** per il dominio, nell'elenco a discesa **selezionare l'account di hosting** , scegliere l' **account di hosting** associato al dominio.
     
-    ![Dashboard di Power BI](../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
+    ![Dashboard di Power BI](../../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
   
 6. Selezionare **Save Name Servers**.
     
-    ![Hostgator-BP-Redelegate-1-9](../media/b52a825a-6d54-49ba-87c8-52f770fdfa0c.png)
+    ![Hostgator-BP-Redelegate-1-9](../../media/b52a825a-6d54-49ba-87c8-52f770fdfa0c.png)
   
 ## <a name="add-a-txt-record-for-verification"></a>Aggiungere un record TXT a scopo di verifica
 
@@ -99,16 +99,16 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     
 5. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
     
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
@@ -127,33 +127,33 @@ Per completare la configurazione del dominio con Office 365, modificare i record
   
 1. Per iniziare, passare alla pagina del portale per i clienti di Hostgator usando [questo collegamento](https://portal.hostgator.com/domain/manage). Verrà richiesto di eseguire l'accesso.
     
-    ![Connessione dell'elenco attività a Outlook](../media/6749ac23-4832-4daf-8f3b-bc3b9b1b979c.png)
+    ![Connessione dell'elenco attività a Outlook](../../media/6749ac23-4832-4daf-8f3b-bc3b9b1b979c.png)
   
 2. Selezionare la scheda **domini** . 
     
-    ![Barra multifunzione di Office 2010](../media/56d12bfd-3549-4033-90dc-077c76ca798c.png)
+    ![Barra multifunzione di Office 2010](../../media/56d12bfd-3549-4033-90dc-077c76ca798c.png)
   
 3. Nella pagina **Gestisci domini** , nell'area **domini personali** , selezionare il dominio che si desidera aggiornare. 
     
-    ![Hostgator-BP-Redelegate-1-2](../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
+    ![Hostgator-BP-Redelegate-1-2](../../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
   
 4. Nell'area **Name Servers** della pagina **Domain Overview** selezionare **Change**.
     
-    ![Immagine del pulsante Imposta colore trasparente](../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
+    ![Immagine del pulsante Imposta colore trasparente](../../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
   
 5. Nella pagina **Name Servers** per il dominio, nell'elenco a discesa **selezionare l'account di hosting** , scegliere l' **account di hosting** associato al dominio. 
     
-    ![Dashboard di Power BI](../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
+    ![Dashboard di Power BI](../../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
   
 6. Selezionare **imposta manualmente i server My Name**.
     
-    ![Hostgator-BP-Redelegate-1-5](../media/5b73ae32-f26e-48aa-b5ad-6da20f1c491a.png)
+    ![Hostgator-BP-Redelegate-1-5](../../media/5b73ae32-f26e-48aa-b5ad-6da20f1c491a.png)
   
 7.   **Attenzione**: attenersi alla seguente procedura solo se sono presenti server dei nomi diversi dai quattro nameserver corretti. (Ovvero, eliminare solo eventuali server dei nomi correnti che *non* sono denominati **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**o **NS4.BDM.microsoftonline.com**).
   
         Sempre nella pagina **Name Servers** del dominio, eliminare ognuno dei server dei nomi presenti nell'elenco selezionandolo e premendo **CANC**. 
     
-   ![O365_proceduraguidata_Aggiungidominio_1_7a](../media/fa9820e7-28bb-4792-b16c-51e54d83feb1.png)
+   ![O365_proceduraguidata_Aggiungidominio_1_7a](../../media/fa9820e7-28bb-4792-b16c-51e54d83feb1.png)
   
 8. Sempre nell'elenco dei server dei nomi, digitare oppure copiare e incollare i primi due valori della tabella seguente.
     
@@ -164,7 +164,7 @@ Per completare la configurazione del dominio con Office 365, modificare i record
 |**Name Server 3:** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name Server 4:** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Hostgator-BP-redelegate-1-7-1](../media/a8c10aa7-30b0-4bc8-9596-20256d396274.png)
+   ![Hostgator-BP-redelegate-1-7-1](../../media/a8c10aa7-30b0-4bc8-9596-20256d396274.png)
   
 9. Aggiungere gli altri valori dei server dei nomi.
     
@@ -172,11 +172,11 @@ Per completare la configurazione del dominio con Office 365, modificare i record
     
     Ripetere questa procedura fino a creare tutti e quattro i record dei server dei nomi.
     
-    ![Hostgator-BP-Redelegate-1-7-2](../media/92159a39-e498-4220-9b0d-ae2e718c7fb9.png)
+    ![Hostgator-BP-Redelegate-1-7-2](../../media/92159a39-e498-4220-9b0d-ae2e718c7fb9.png)
   
 10. Selezionare **Save Name Servers**.
     
-    ![Hostgator-BP-Redelegate-1-8](../media/bd6b0dfa-5d39-4805-970d-7ab153cff117.png)
+    ![Hostgator-BP-Redelegate-1-8](../../media/bd6b0dfa-5d39-4805-970d-7ab153cff117.png)
   
 > [!NOTE]
 > L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Al termine, la posta elettronica e altri servizi di Office 365 verranno tutti impostati per funzionare con il dominio.

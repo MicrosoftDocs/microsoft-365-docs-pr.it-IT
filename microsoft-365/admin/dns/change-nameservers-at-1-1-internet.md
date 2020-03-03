@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Informazioni su come è possibile configurare Office 365 gestito da 21Vianet per gestire i record DNS, quando 1&1 Internet è il provider di hosting DNS.
-ms.openlocfilehash: 907e4fe097634d28ad44e4d44ba8c6ff2da9164d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3678d5372b9edd8e9333ad78862694b450abe53a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242932"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352567"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>Modificare i server dei nomi per configurare Office 365 con 1&1 IONOS
 
@@ -71,15 +71,15 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:42)](
     
 9. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
     
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
@@ -124,11 +124,11 @@ Modificare i record NS per consentire a Office 365 di configurare il dominio Seg
 |:-----|:-----|
 |**Name server 1** <br/> |ns1.bdm.microsoftonline.com  <br/> |
    
-   ![Immissione di un valore nella casella Name Server 1](../media/34509935-461f-427f-9796-c3cf840bd9be.png)
+   ![Immissione di un valore nella casella Name Server 1](../../media/34509935-461f-427f-9796-c3cf840bd9be.png)
   
 2. Nell'elenco a discesa **Additional name servers** scegliere **My secondary name servers**.
     
-    ![Choosing My secondary name servers in the list](../media/7eb14856-86da-45c2-910c-c72312250a18.png)
+    ![Choosing My secondary name servers in the list](../../media/7eb14856-86da-45c2-910c-c72312250a18.png)
   
 3. Nelle caselle **Name server 2, 3 e 4** digitare o copiare e incollare il valore dalla tabella seguente. 
     
@@ -138,15 +138,15 @@ Modificare i record NS per consentire a Office 365 di configurare il dominio Seg
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
 4. Selezionare **Salva**.
     
-    ![Selezione di Save nella pagina Impostazioni server dei nomi](../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
+    ![Selezione di Save nella pagina Impostazioni server dei nomi](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
 5. Nella finestra di dialogo **Modifica impostazioni DNS** selezionare **Sì**.
     
-    ![Selezionare Salva nella finestra di dialogo Modifica impostazioni DNS.](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![Selezionare Salva nella finestra di dialogo Modifica impostazioni DNS.](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Al termine, la posta elettronica e altri servizi di Office 365 verranno tutti impostati per funzionare con il dominio. 
@@ -158,7 +158,7 @@ Modificare i record NS per consentire a Office 365 di configurare il dominio Seg
   
 1. Se sono già elencati altri server dei nomi nelle caselle **Name server**, eliminarli uno alla volta selezionandoli e premendo **CANC**. 
     
-    ![Deleting name servers](../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
+    ![Deleting name servers](../../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
   
 2. Nelle caselle **Name server 1, 2, 3 e 4** digitare o copiare e incollare i valori dalla tabella seguente. 
     
@@ -169,15 +169,15 @@ Modificare i record NS per consentire a Office 365 di configurare il dominio Seg
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Immissione di valori del server dei nomi](../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
+   ![Immissione di valori del server dei nomi](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
 3. Selezionare **Salva**.
     
-    ![Selezione di Save nella pagina Impostazioni server dei nomi](../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
+    ![Selezione di Save nella pagina Impostazioni server dei nomi](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
 4. Nella finestra di dialogo **Modifica impostazioni DNS** selezionare **Sì**.
     
-    ![Selezionare Salva nella finestra di dialogo Modifica impostazioni DNS.](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![Selezionare Salva nella finestra di dialogo Modifica impostazioni DNS.](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
 > L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Al termine, la posta elettronica e altri servizi di Office 365 verranno tutti impostati per funzionare con il dominio. 

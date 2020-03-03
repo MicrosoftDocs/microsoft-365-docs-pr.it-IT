@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: "Informazioni su come rinnovare l'abbonamento a Office 365 for business utilizzando un codice \"Product Key\" e accendere o spegnere la fatturazione ricorrente. "
-ms.openlocfilehash: f9b80fa6cc28edbea955575016824532239ec2f9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257475"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354577"
 ---
 # <a name="renew-office-365-for-business"></a>Rinnovare Office 365 per le aziende
 
@@ -80,7 +80,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
  
 3. Per attivare la **fatturazione ricorrente**, impostare l'interruttore **su**attivato.
 
-    ![Primo piano di una scheda di sottoscrizione con fatturazione ricorrente attivata.](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Primo piano di una scheda di sottoscrizione con fatturazione ricorrente attivata.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     È possibile disattivare la **fatturazione ricorrente** cambiando l' **interruttore su disattivata**.
 
@@ -103,7 +103,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
  
 3. Per attivare la **fatturazione ricorrente**, impostare l'interruttore **su**attivato.
 
-    ![Primo piano di una scheda di sottoscrizione con fatturazione ricorrente attivata.](../../admin/media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Primo piano di una scheda di sottoscrizione con fatturazione ricorrente attivata.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
     È possibile disattivare la **fatturazione ricorrente** cambiando l' **interruttore su disattivata**.
 

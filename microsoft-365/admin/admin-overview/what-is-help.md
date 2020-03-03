@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Informazioni su tutti i modi in cui è possibile ottenere assistenza tramite l'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 4aa2d46121aa1a817381592a02bbb9b875207427
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2d75add5b34a760358523de6e6f10553c1984abe
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241504"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352977"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -43,7 +43,7 @@ Se sei un amministratore, [admin.Microsoft.com](https://admin.microsoft.com) è 
                     <a href="what-is-help.md#integrated-help">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -62,7 +62,7 @@ Se sei un amministratore, [admin.Microsoft.com](https://admin.microsoft.com) è 
                     <a href="what-is-help.md#modern-self-help-powered-by-ai">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -81,7 +81,7 @@ Se sei un amministratore, [admin.Microsoft.com](https://admin.microsoft.com) è 
                     <a href="what-is-help.md#guides-and-articles">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
+                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -98,7 +98,7 @@ Se sei un amministratore, [admin.Microsoft.com](https://admin.microsoft.com) è 
 ## <a name="integrated-help"></a>Guida integrata
 La guida è integrata in tutto l'interfaccia di amministrazione, quindi è proprio lì quando ne hai bisogno. Nella parte superiore di molte pagine, è possibile trovare il testo della Guida in linea che fornisce una panoramica delle informazioni sull'attività a portata di mano, oltre a collegamenti ad articoli che consentono di trovare rapidamente documentazione ufficiale per un apprendimento più approfondito.
 
-![Pagina gruppi che mostra la Guida in linea e i collegamenti agli articoli](../media/integrated-help.png)
+![Pagina gruppi che mostra la Guida in linea e i collegamenti agli articoli](../../media/integrated-help.png)
 
 ## <a name="modern-self-help-powered-by-ai"></a>Moderni self-help Powered by AI
 
@@ -106,7 +106,7 @@ Selezionando il pulsante "serve aiuto" nell'interfaccia di amministrazione di Mi
 
 In alternativa, se non si conosce bene come fare qualcosa nella propria situazione specifica, utilizzare l'Assistente di supporto. Questa esperienza è attualmente disponibile solo in inglese. È sufficiente utilizzare l'interruttore nella parte superiore del riquadro "serve aiuto" per attivarlo. L'assistente del supporto tecnico fornisce un'interfaccia di conversazione per ottenere assistenza. Immettere la query e il chatbot chiederà chiarimenti per ottenere la risposta corretta per la propria situazione specifica. È possibile considerarlo come helper virtuale per individuare soluzioni e completare le attività.
 
-![Auto-assistenza moderna](../media/help-options.png)
+![Auto-assistenza moderna](../../media/help-options.png)
 
 Naturalmente, a volte le domande sono le migliori risposte degli esseri umani. Se la risposta alla nostra moderna auto-assistenza non è disponibile, è sempre possibile contattare gli agenti di supporto.
 

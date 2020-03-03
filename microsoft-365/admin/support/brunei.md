@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 95c7f1c89b789bf8a3347cce50bc07882eb66f4a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 82d2a1439222f9c733a83fa68526135e63354796
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256755"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359727"
 ---
 # <a name="contact-support-for-brunei"></a>Contattare il supporto per Brunei
 

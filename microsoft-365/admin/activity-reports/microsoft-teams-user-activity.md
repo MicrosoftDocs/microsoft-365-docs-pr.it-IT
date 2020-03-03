@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Informazioni su come ottenere il report attività degli utenti di Microsoft teams e acquisire maggiori informazioni sull'attività dei team nell'organizzazione.
-ms.openlocfilehash: 47e12c1cb1b475807ef40e68e09d57db6f01e291
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 53c3da2d563363c7c463abc62f7cdf4b478ccecc
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241837"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353727"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-attività utente di Microsoft Teams
 
@@ -41,7 +41,7 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
   
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpretare il report Attività degli utenti di Microsoft Teams
 
-Per avere un quadro d'insieme delle attività degli utenti di Microsoft Teams, è possibile osservare i grafici **Attività** e **Utenti**.<br/>![Microsoft 365 Reports-attività utente di Microsoft teams.](../media/40359f81-25f7-416d-bb1e-37289133ef6b.png)
+Per avere un quadro d'insieme delle attività degli utenti di Microsoft Teams, è possibile osservare i grafici **Attività** e **Utenti**.<br/>![Microsoft 365 Reports-attività utente di Microsoft teams.](../../media/40359f81-25f7-416d-bb1e-37289133ef6b.png)
   
 |||
 |:-----|:-----|
@@ -50,9 +50,9 @@ Per avere un quadro d'insieme delle attività degli utenti di Microsoft Teams, �
 |3.  <br/> |La visualizzazione **Attività** mostra il numero di attività di Microsoft Teams per tipo di attività. I tipi di attività sono numero di messaggi in chat dei team, messaggi in chat privati, chiamate o riunioni.  <br/> |
 |4.  <br/> |La visualizzazione **Utenti** mostra il numero di utenti per tipo di attività. I tipi di attività sono numero di messaggi in chat dei team, messaggi in chat privati, chiamate o riunioni.  <br/> |
 |5.  <br/> | Nel grafico **Attività** l'asse Y rappresenta il numero di occorrenze dell'attività specificata.  <br/>  Nel grafico **File** l'asse Y rappresenta il numero di utenti che partecipano a chat in team, chat private, chiamate o riunioni.  <br/>  L'asse X nei grafici rappresenta l'intervallo di date selezionato per il report specifico.  <br/> |
-|6.  <br/> |È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. Ad esempio, nel grafico **attività** selezionare messaggi di **canale**, **messaggi di chat**, **chiamate**o **riunioni** per visualizzare solo le informazioni relative a ognuna di esse. La modifica di questa selezione non modifica le informazioni nella tabella della griglia.  <br/> ![Filtrare i grafici delle attività di Microsoft Teams](../media/c819c4ea-6e9a-4411-a0dd-9f800d64ce38.png)|
+|6.  <br/> |È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. Ad esempio, nel grafico **attività** selezionare messaggi di **canale**, **messaggi di chat**, **chiamate**o **riunioni** per visualizzare solo le informazioni relative a ognuna di esse. La modifica di questa selezione non modifica le informazioni nella tabella della griglia.  <br/> ![Filtrare i grafici delle attività di Microsoft Teams](../../media/c819c4ea-6e9a-4411-a0dd-9f800d64ce38.png)|
 |7.  <br/> | L'elenco dei gruppi visualizzati dipende dal set di tutti i gruppi che erano presenti (che non sono stati eliminati) nell'intervallo di tempo più ampio (180 giorni). Il numero di attività varia in base alla data selezionata.  <br/> Nota: è possibile che non vengano visualizzati tutti gli elementi nell'elenco in basso nelle colonne finché non vengono aggiunti.<br/>**Nome utente** è l'indirizzo di posta elettronica dell'utente. È possibile visualizzare l'indirizzo di posta elettronica effettivo o rendere questo campo anonimo.  <br/> **Data ultima attività (UTC)** è la data più recente in cui l'utente ha partecipato a un'attività di Microsoft Teams.  <br/> **Messaggi del canale** è il numero di messaggi univoci che l'utente ha pubblicato in una chat del team nel periodo di tempo specificato.  <br/> **Messaggi in chat** è il numero di messaggi univoci che l'utente ha pubblicato in una chat privata nel periodo di tempo specificato.  <br/> **Chiamate** è il numero di chiamate a cui l'utente ha partecipato nel periodo di tempo specificato.  <br/> **Riunioni** è il numero di riunioni online a cui l'utente ha partecipato nel periodo di tempo specificato.  <br/> **Altra attività** è il numero di altre attività del team a cui l'utente ha partecipato.  <br/> **Eliminato** indica se il team è stato eliminato. Se il team viene eliminato, ma c'è stata attività nel periodo di generazione dei report, viene visualizzato nella griglia con questa voce impostata su true.  <br/> **Data eliminazione** indica la data di eliminazione del team.  <br/> **Prodotto assegnato** indica l'elenco dei prodotti assegnati all'utente.  <br/>  Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **come nascondere i dettagli a livello di utente** nei [rapporti attività nell'interfaccia di amministrazione di Microsoft 365](activity-reports.md).  <br/> |
-|8.  <br/> |Selezionare **colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Teams user activity report - choose columns](../media/eb5fbcee-e371-4d36-a0c6-fa54732311ec.png)|
+|8.  <br/> |Selezionare **colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Teams user activity report - choose columns](../../media/eb5fbcee-e371-4d36-a0c6-fa54732311ec.png)|
 |9.  <br/> |È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  <br/> |
 |||
    

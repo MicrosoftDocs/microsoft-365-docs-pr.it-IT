@@ -28,12 +28,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Informazioni su come aggiungere e ridurre l'archiviazione dei file nell'abbonamento a Office 365. Con un'ulteriore archiviazione dei file, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
-ms.openlocfilehash: 9bf87715cb5acbcc5c6dd34ccd023d5aa5ce6c2c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 64e98ff830b592b12e25620e4c2e89e09a161a3e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242548"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354847"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Aggiungere spazio di archiviazione per l'abbonamento
 
@@ -118,14 +118,14 @@ Se non è stato ancora acquistato un ulteriore spazio di archiviazione per l'abb
 
 2. Nella pagina **abbonamenti** scegliere la sottoscrizione a cui si desidera aggiungere spazio di archiviazione, quindi selezionare **componenti**aggiuntivi.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Se i **componenti aggiuntivi**non sono visibili e l'abbonamento è stato acquistato tramite un partner, selezionare **Volume Licensing Service Center (VLSC)**.
   
 3. Selezionare **acquista componenti**aggiuntivi.
 
-    ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Nella pagina **acquisto servizi** , passare il mouse o toccare **Office 365 extra file storage**, quindi scegliere **Acquista ora**.
   
@@ -143,14 +143,14 @@ Se non è stato ancora acquistato un ulteriore spazio di archiviazione per l'abb
 
 2. Nella pagina **abbonamenti** scegliere la sottoscrizione a cui si desidera aggiungere spazio di archiviazione, quindi selezionare **componenti**aggiuntivi.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Se i **componenti aggiuntivi**non sono visibili e l'abbonamento è stato acquistato tramite un partner, selezionare **Volume Licensing Service Center (VLSC)**.
   
 3. Selezionare **acquista componenti**aggiuntivi.
 
-    ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Nella pagina **acquisto servizi** , passare il mouse o toccare **Office 365 extra file storage**, quindi scegliere **Acquista ora**.
   
@@ -189,14 +189,14 @@ Se si è già acquistato un file di archiviazione supplementare tramite il compo
 
 2. Nella pagina **abbonamenti** selezionare **componenti**aggiuntivi.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Se i **componenti aggiuntivi**non sono visibili e l'abbonamento è stato acquistato tramite un partner, selezionare **Volume Licensing Service Center (VLSC)**.
   
 3. In **Office 365 extra file storage**selezionare **Change Quantity**.
 
-    ![Collegamento Cambio di quantità.](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    ![Collegamento Cambio di quantità.](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. Nel riquadro a destra, immettere il numero totale di Gigabyte necessari, quindi selezionare **Invia**.
 
@@ -212,14 +212,14 @@ Se si è già acquistato un file di archiviazione supplementare tramite il compo
 
 2. Nella pagina **abbonamenti** selezionare **componenti**aggiuntivi.
 
-    ![Add-ons button used to purchase add-ons.](../admin/media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
+    ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
     > [!NOTE]
     > Se i **componenti aggiuntivi**non sono visibili e l'abbonamento è stato acquistato tramite un partner, selezionare **Volume Licensing Service Center (VLSC)**.
   
 3. In **Office 365 extra file storage**selezionare **Change Quantity**.
 
-    ![Collegamento Cambio di quantità.](../admin/media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
+    ![Collegamento Cambio di quantità.](../media/96473f2b-6ff6-45ec-b1a3-d7b204ac1f6e.png)
   
 4. Nel riquadro a destra, immettere il numero totale di Gigabyte necessari, quindi selezionare **Invia**.
 

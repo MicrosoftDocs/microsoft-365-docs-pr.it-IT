@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Informazioni su come visualizzare i report utilizzando le schede di spostamento e i filtri.
-ms.openlocfilehash: abd3cdf478f5a17d11af99428ec71bddd7eb339a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3abbd2362cb6216d5dd561c7792fa41588daac66
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253160"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355107"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Esplorare e utilizzare i report nell'analisi di utilizzo di Microsoft 365
 
@@ -34,35 +34,35 @@ Ecco alcuni suggerimenti per iniziare a usare i report:
 
 - Utilizzare le schede di spostamento a sinistra o su una metrica correlata nella pagina **Riepilogo Executive** per spostarsi su ogni report di primo livello.
 
-    ![Visualizza le schede di spostamento a sinistra](../media/navigate-usage-analytics1.png)
+    ![Visualizza le schede di spostamento a sinistra](../../media/navigate-usage-analytics1.png)
 
 - Utilizzare le schede di spostamento nella parte superiore di ogni report di primo livello per passare a report diversi all'interno di tale livello.
 
-    ![Visualizza le schede di spostamento nella parte superiore di ogni report](../media/navigate-usage-analytics2.png)
+    ![Visualizza le schede di spostamento nella parte superiore di ogni report](../../media/navigate-usage-analytics2.png)
 
 - Molti report contengono un filtro dei dati in cui è possibile filtrare il prodotto, l'attributo AAD o l'attività che si desidera visualizzare. Possono essere a selezione singola o a selezione multipla.
 
-    ![Visualizza un filtro dei dati](../media/navigate-usage-analytics3.png)
+    ![Visualizza un filtro dei dati](../../media/navigate-usage-analytics3.png)
 
-    ![Visualizza un filtro dei dati](../media/navigate-usage-analytics4.png)
+    ![Visualizza un filtro dei dati](../../media/navigate-usage-analytics4.png)
 
 
 - Passare il mouse sui punti dati per visualizzare un callout che contiene informazioni dettagliate.
 
-    ![Visualizza l'esempio del passaggio del mouse](../media/navigate-usage-analytics6.png)
+    ![Visualizza l'esempio del passaggio del mouse](../../media/navigate-usage-analytics6.png)
 
 L'utente che ha creato un'istanza dell'app modello avrà la possibilità di personalizzare il report in base alle proprie esigenze. Per personalizzare l'app modello:
 
 - Selezionare **Modifica report** nella parte superiore del report.
 
-    ![Visualizza il rapporto di modifica](../media/navigate-usage-analytics7.png)
+    ![Visualizza il rapporto di modifica](../../media/navigate-usage-analytics7.png)
 
 
 - Creare oggetti visivi personalizzati usando i [set di dati](usage-analytics-data-model.md) sottostanti.
 
 - Usare PowerBI Desktop per importare specifiche origini dati.
 
-Per condividere i report, è sufficiente selezionare il pulsante Condividi. ![Power BI Share icon](../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) nella parte superiore della pagina.
+Per condividere i report, è sufficiente selezionare il pulsante Condividi. ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) nella parte superiore della pagina.
 
 Per informazioni su come personalizzare i report, vedere [Customizing the Reports in Microsoft 365 Usage Analytics](customize-reports.md).
 

@@ -26,12 +26,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Informazioni su ciò che è necessario conoscere prima di passare attraverso il processo di iscrizione per Office 365. '
-ms.openlocfilehash: 40d7084be08187a366733b6de39e1f534a73032e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bd827a4cc57386127083111b0df556786d01f2cc
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241516"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352957"
 ---
 # <a name="how-to-sign-up-for-office-365---admin-help"></a>Come iscriversi a Office 365 - Guida dell'amministratore
 

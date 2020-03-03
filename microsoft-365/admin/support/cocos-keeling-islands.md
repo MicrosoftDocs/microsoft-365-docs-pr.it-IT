@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: dd3105a102a1312222ad6068741f3e0747dde162
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f66ca54b73803239ec2fd19f2940beed604cbf68
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256675"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359457"
 ---
 # <a name="contact-support-for-cocos-keeling-islands"></a>Contattare il supporto per le Isole Cocos (Keeling)
 

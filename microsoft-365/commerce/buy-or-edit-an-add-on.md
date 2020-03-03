@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Informazioni su come acquistare un componente aggiuntivo per aggiungere ulteriori funzionalità all'abbonamento a Office 365 for business. È inoltre possibile aggiornare e rimuovere un componente aggiuntivo.
 ms.custom: okr_SMB
-ms.openlocfilehash: 717290306eb981018739604d9491da9ab3372d70
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 78113fcfdfce03ae09318e062847cedd1938760a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242367"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354807"
 ---
 # <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>Acquistare o modificare un componente aggiuntivo per Office 365 per le aziende
 
@@ -69,7 +69,7 @@ Per diversi piani di Office 365 per le aziende sono disponibili componenti aggiu
 
 3. Nell'angolo in basso a sinistra dei dettagli della sottoscrizione, selezionare **componenti** \> aggiuntivi per **acquistare i componenti**aggiuntivi.
 
-    ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione di Microsoft 365.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione di Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Nella pagina **acquisto servizi** passare il mouse o toccare l'abbonamento del componente aggiuntivo che si desidera acquistare, quindi selezionare **Acquista subito**.
 
@@ -91,7 +91,7 @@ Per diversi piani di Office 365 per le aziende sono disponibili componenti aggiu
 
 3. Nell'angolo in basso a sinistra dei dettagli della sottoscrizione, selezionare **componenti** \> aggiuntivi per **acquistare i componenti**aggiuntivi.
 
-    ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione di Microsoft 365.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Acquistare un collegamento per i componenti aggiuntivi nella pagina abbonamenti dell'interfaccia di amministrazione di Microsoft 365.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. Nella pagina **acquisto servizi** passare il mouse o toccare l'abbonamento del componente aggiuntivo che si desidera acquistare, quindi selezionare **Acquista subito**.
 
@@ -143,14 +143,14 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 4. Selezionare il collegamento **Cambia quantità** per il componente aggiuntivo che si desidera aggiornare. 
 
-    ![Collegamento Componenti aggiuntivi e collegamento Cambio di quantità.](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    ![Collegamento Componenti aggiuntivi e collegamento Cambio di quantità.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Immettere il numero di licenze utente necessarie nella casella e quindi fare clic su **Invia**.
 
     > [!TIP]
     > È anche possibile usare le frecce in su e in giù per cambiare la quantità delle licenze utente oppure immettere semplicemente il numero nella casella.
   
-    ![Casella del totale delle licenze e pulsante Invia nella finestra di dialogo Aggiungere o rimuovere licenze.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Casella del totale delle licenze e pulsante Invia nella finestra di dialogo Aggiungere o rimuovere licenze.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -166,14 +166,14 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 4. Selezionare il collegamento **Cambia quantità** per il componente aggiuntivo che si desidera aggiornare. 
 
-    ![Collegamento Componenti aggiuntivi e collegamento Cambio di quantità.](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    ![Collegamento Componenti aggiuntivi e collegamento Cambio di quantità.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Immettere il numero di licenze utente necessarie nella casella e quindi fare clic su **Invia**.
 
     > [!TIP]
     > È anche possibile usare le frecce in su e in giù per cambiare la quantità delle licenze utente oppure immettere semplicemente il numero nella casella.
   
-    ![Casella del totale delle licenze e pulsante Invia nella finestra di dialogo Aggiungere o rimuovere licenze.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Casella del totale delle licenze e pulsante Invia nella finestra di dialogo Aggiungere o rimuovere licenze.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 
 ::: moniker-end
@@ -201,7 +201,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
     > [!TIP]
     > È inoltre possibile utilizzare la freccia verso l'alto e verso il basso per modificare la quantità di licenze o semplicemente immettere il numero desiderato nella casella.
   
-    ![Casella del totale delle licenze e pulsante Invia nella finestra di dialogo Aggiungere o rimuovere licenze.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Casella del totale delle licenze e pulsante Invia nella finestra di dialogo Aggiungere o rimuovere licenze.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -216,7 +216,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
     > [!TIP]
     > È inoltre possibile utilizzare la freccia verso l'alto e verso il basso per modificare la quantità di licenze o semplicemente immettere il numero desiderato nella casella.
   
-    ![Casella del totale delle licenze e pulsante Invia nella finestra di dialogo Aggiungere o rimuovere licenze.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Casella del totale delle licenze e pulsante Invia nella finestra di dialogo Aggiungere o rimuovere licenze.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 

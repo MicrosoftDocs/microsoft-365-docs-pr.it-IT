@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi di Bluehost per Office 365.
-ms.openlocfilehash: 9a5cad6778cb66958539a324befee43ddb2dd8b9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0e64ed8787dca9822e71a63c57de7a7a3e2b3fe4
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243455"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42350957"
 ---
 # <a name="create-dns-records-at-bluehost-for-office-365"></a>Creare record DNS su Bluehost per Office 365
 
@@ -48,7 +48,7 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
   
-1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). Verrà richiesto di eseguire l'accesso.
     
 2. Nell'area **domain** della pagina **Domains** trovare la riga relativa al dominio da modificare e quindi selezionare la casella di controllo corrispondente. 
     
@@ -69,16 +69,16 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     
 6. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
     
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
@@ -88,7 +88,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Aggiungere un record MX in modo che la posta elettronica per il dominio venga recapitata in Office 365
 <a name="BKMK_add_MX"> </a>
 
-1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). Verrà richiesto di eseguire l'accesso.
     
 2. Nell'area **domain** della pagina **Domains** trovare la riga relativa al dominio da modificare e quindi selezionare la casella di controllo corrispondente. 
     
@@ -102,30 +102,30 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     |**Host Record**|**TTL**|**Type**|**Points To**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |MX  <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/>**Nota:** Ottenere la \<propria *chiave* \> di dominio dall'account di Office 365. [Come trovarla](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |
+    |@  <br/> |14400  <br/> |MX  <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/>**Nota:** ottenere il valore \<*domain-key*\> dall'account di Office 365. [Come trovarla](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |
    
-   ![Scegliere tipo dall'elenco a discesa](../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
+   ![Scegliere tipo dall'elenco a discesa](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
 5. Selezionare **Aggiungi record**.
     
-    ![Selezionare Aggiungi record](../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
+    ![Selezionare Aggiungi record](../../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
   
 6. Rimuovere eventuali altri record MX presenti nella sezione **MX (Mail Exchanger)**. 
     
     Per uno degli altri record MX, selezionare **Elimina.**
     
-    ![Selezionare Elimina per ogni record MX aggiuntivo](../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
+    ![Selezionare Elimina per ogni record MX aggiuntivo](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
   
 7. Nella finestra di dialogo di conferma fare clic su **OK**.
     
-    ![Seleziona OK](../media/a50df7a3-2906-4cc0-87d4-1231ab234230.png)
+    ![Seleziona OK](../../media/a50df7a3-2906-4cc0-87d4-1231ab234230.png)
   
 8. Usare la stessa procedura per eliminare eventuali altri record MX già presenti nell'elenco.
     
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Aggiungere i sei record CNAME necessari per Office 365
 <a name="BKMK_add_CNAME"> </a>
 
-1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). Verrà richiesto di eseguire l'accesso.
     
 2. Nell'area **domain** della pagina **Domains** trovare la riga relativa al dominio da modificare e quindi selezionare la casella di controllo corrispondente. 
     
@@ -138,11 +138,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     > [!IMPORTANT]
     > È necessario eliminare il record **autodiscover** esistente  *prima*  di aggiungere il record **autodiscover** richiesto da Office 365. Bluehost non consente di mantenere due record **autodiscover** contemporaneamente. 
   
-    ![Seleziona Elimina](../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
+    ![Seleziona Elimina](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
 5. Selezionare **OK**.
     
-    ![Seleziona OK](../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
+    ![Seleziona OK](../../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
   
 6. Creare il primo dei sei record CNAME.
     
@@ -158,11 +158,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |enterpriseregistration  <br/> |14400  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |14400  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![Creare il primo record CNAME](../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
+    ![Creare il primo record CNAME](../../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
   
 7. Selezionare **Aggiungi record**.
     
-    ![Selezionare Aggiungi record](../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
+    ![Selezionare Aggiungi record](../../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
   
 8. Aggiungere gli altri cinque record CNAME.
     
@@ -174,9 +174,9 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 necessari al record corrente in modo che sia presente un *singolo* record SPF che includa entrambi i set di valori. Servono esempi? Vedere queste [informazioni dettagliate e record SPF di esempio](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 richiesti al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori. Servono esempi? Vedere queste [informazioni dettagliate e record SPF di esempio](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.md). 
   
-1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). Verrà richiesto di eseguire l'accesso.
     
 2. Nell'area **domain** della pagina **Domains** trovare la riga relativa al dominio da modificare e quindi selezionare la casella di controllo corrispondente. 
     
@@ -188,20 +188,20 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     (Choose the **Type** value from the drop-down list.) 
         
-    |**Host Record**|**TTL**|**Type**|**TXT Value**|
+    |**Host Record**|**TTL**|**Tipo**|**TXT Value**|
     |:-----|:-----|:-----|:-----|
     |@  <br/> |14400  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
    
-    ![Copiare il valore TXT](../media/b2dabd7a-ee3d-4209-aa1e-0233eb8cf3b9.png)
+    ![Copiare il valore TXT](../../media/b2dabd7a-ee3d-4209-aa1e-0233eb8cf3b9.png)
   
 5. Selezionare **Aggiungi record**.
     
-    ![Selezionare Aggiungi record](../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
+    ![Selezionare Aggiungi record](../../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Aggiungere i due record SRV necessari per Office 365
 <a name="BKMK_add_SRV"> </a>
 
-1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). Verrà richiesto di eseguire l'accesso.
     
 2. Nell'area **domain** della pagina **Domains** trovare la riga relativa al dominio da modificare e quindi selezionare la casella di controllo corrispondente. 
     
@@ -215,16 +215,16 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Servizio**|**Protocol**|**Host**|**TTL**|**Tipo**|**Priority**|**Peso**|**Port**|**Points To**|
+    |**Servizio**|**Protocol**|**Host**|**TTL**|**Type**|**Priorità**|**Peso**|**Porta**|**Points To**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
-    ![Copiare il valore per il nuovo record.](../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
+    ![Copiare il valore per il nuovo record.](../../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
   
 5. Selezionare **Aggiungi record**.
     
-    ![Selezionare Aggiungi record](../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
+    ![Selezionare Aggiungi record](../../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
   
 6. Aggiungere l'altro record SRV.
     

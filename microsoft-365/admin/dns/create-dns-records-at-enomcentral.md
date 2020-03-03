@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in eNomCentral per Office 365.
-ms.openlocfilehash: c4cd12667ebf945aa2f354ccfa0bad1688dc9863
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: dec76e0dde2775851ff464e3b8765f82dfb57625
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241123"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42350467"
 ---
 # <a name="create-dns-records-at-enomcentral-for-office-365"></a>Creare record DNS su eNomCentral per Office 365
 
@@ -52,17 +52,17 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:46)](
   
 1. Per iniziare, passare alla propria pagina dei domini su eNom Central usando [questo collegamento](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Verrà richiesto di eseguire l'accesso.
     
-    ![eNom-BP-Configure-1-1](../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
   
 2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
     
-    ![eNom-BP-Configure-1-2](../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
   
 3. Nell'elenco a discesa **Manage Domain** scegliere **Host Records**.
     
-    ![eNom-BP-Verify-1-1](../media/6e4184a1-9525-47a6-8a8a-9600126c0db4.png)
+    ![eNom-BP-Verify-1-1](../../media/6e4184a1-9525-47a6-8a8a-9600126c0db4.png)
   
-4. In the boxes for the new record, type or copy and paste the values from the following table.
+4. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
     (Choose the **Record Type** value from the drop-down list.) 
     
@@ -71,26 +71,26 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:46)](
     |**Host Name** <br/> |**Record Type** <br/> |**Indirizzo** <br/> |
     |@  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
        
-   ![eNom-BP-Verify-1-2](../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
+   ![eNom-BP-Verify-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
   
 5. Selezionare **Salva**.
     
-    ![eNom-BP-Verify-1-3](../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
+    ![eNom-BP-Verify-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
   
 6. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
     
   
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
     
     
   
@@ -99,7 +99,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
   
 > [!NOTE]
->  In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o altro dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Aggiungere un record MX in modo che la posta elettronica per il dominio venga recapitata in Office 365
 <a name="BKMK_add_MX"> </a>
@@ -108,19 +108,19 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:40)](
   
 1. Per iniziare, passare alla propria pagina dei domini su eNom Central usando [questo collegamento](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Verrà richiesto di eseguire l'accesso.
     
-    ![eNom-BP-Configure-1-1](../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
   
 2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
     
-    ![eNom-BP-Configure-1-2](../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
   
 3. Nell'elenco a discesa **Manage Domain** scegliere **Email Settings**.
     
-    ![eNom-BP-Configure-1-3](../media/4b438629-afdf-4a47-ab11-56644cdb6158.png)
+    ![eNom-BP-Configure-1-3](../../media/4b438629-afdf-4a47-ab11-56644cdb6158.png)
   
 4. Nell'elenco a discesa **Service Selection** scegliere **User (MX)**.
     
-    ![eNom-BP-Configure-1-4](../media/7680ab48-b8d1-4573-b20f-4745a5d7c079.png)
+    ![eNom-BP-Configure-1-4](../../media/7680ab48-b8d1-4573-b20f-4745a5d7c079.png)
   
 5. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -128,19 +128,19 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:40)](
     |:-----|:-----|:-----|
     |@  <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dall'account di Office 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |
        
-   ![eNom-BP-Configure-2-1](../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
+   ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
   
 6. Selezionare **Salva**.
     
-    ![eNom-BP-Configure-2-2](../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
+    ![eNom-BP-Configure-2-2](../../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
   
 7. Se sono presenti altri record MX esistenti, selezionare le caselle di controllo corrispondenti per selezionarli.
     
-    ![eNom-BP-Configure-2-3](../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
+    ![eNom-BP-Configure-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
   
 8. Selezionare **Delete Checked**.
     
-    ![eNom-BP-Configure-2-4](../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
+    ![eNom-BP-Configure-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Aggiungere i record CNAME necessari per Office 365
 <a name="BKMK_add_CNAME"> </a>
@@ -149,19 +149,19 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:24)](
   
 1. Per iniziare, passare alla propria pagina dei domini su eNom Central usando [questo collegamento](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Verrà richiesto di eseguire l'accesso.
     
-    ![eNom-BP-Configure-1-1](../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
   
 2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
     
-    ![eNom-BP-Configure-1-2](../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
   
 3. Nell'elenco a discesa **Manage Domain** scegliere **Host Records**.
     
-    ![eNom-BP-Configure-1-5](../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
+    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
   
 4. Selezionare **nuova riga**.
     
-    ![eNom-BP-configure-3-1](../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
+    ![eNom-BP-configure-3-1](../../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
   
 5. Nelle caselle dei nuovi sei record digitare oppure copiare e incollare i valori seguenti.
     
@@ -169,37 +169,37 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:24)](
         
     |**Host Name**|**Record Type**|**Address**|
     |:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME (Alias)  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |sip  <br/> |CNAME (Alias)  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |lyncdiscover  <br/> |CNAME (Alias)  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |autodiscover  <br/> |CNAME (alias)  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |sip  <br/> |CNAME (alias)  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |lyncdiscover  <br/> |CNAME (alias)  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
     |enterpriseregistration  <br/> |CNAME (alias)  <br/> |enterpriseregistration.windows.net.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
     |enterpriseenrollment  <br/> |CNAME (alias)  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
    
-    ![eNom-BP-configure-3-2](../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
+    ![eNom-BP-configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
   
 6. Selezionare **Salva**.
     
-    ![eNom-BP-configure-3-3](../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
+    ![eNom-BP-configure-3-3](../../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 necessari al record corrente in modo che sia presente un *singolo* record SPF che includa entrambi i set di valori.
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 richiesti al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori.
   
 Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:12)](https://support.office.com/article/Video-Create-DNS-records-at-eNomCentral-for-Office-365-3766a9e8-77dd-4a42-908d-89b076143e7d?ui=en-US&amp;rs=en-US&amp;ad=US).
   
 1. Per iniziare, passare alla propria pagina dei domini su eNom Central usando [questo collegamento](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Verrà richiesto di eseguire l'accesso.
     
-    ![eNom-BP-Configure-1-1](../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
   
 2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
     
-    ![eNom-BP-Configure-1-2](../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
   
 3. Nell'elenco a discesa **Manage Domain** scegliere **Host Records**.
     
-    ![eNom-BP-Configure-1-5](../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
+    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
   
 4. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
@@ -209,11 +209,11 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:12)](
     |:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
    
-   ![eNom-BP-Configure-4-1](../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
+   ![eNom-BP-Configure-4-1](../../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
   
 5. Selezionare **Salva**.
     
-    ![eNom-BP-Configure-4-2](../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
+    ![eNom-BP-Configure-4-2](../../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Aggiungere i due record SRV necessari per Office 365
 <a name="BKMK_add_SRV"> </a>
@@ -222,34 +222,34 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:50)](
   
 1. Per iniziare, passare alla propria pagina dei domini su eNom Central usando [questo collegamento](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered). Verrà richiesto di eseguire l'accesso.
     
-    ![eNom-BP-Configure-1-1](../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
+    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
   
 2. In **My Domains**selezionare il nome del dominio che si desidera modificare.
     
-    ![eNom-BP-Configure-1-2](../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
+    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
   
 3. Nell'elenco a discesa **Manage Domain** scegliere **Host Records**.
     
-    ![eNom-BP-Configure-1-5](../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
+    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
   
 4. A destra della **nuova riga**, selezionare **Aggiungi record SRV o SPF**.
     
-    ![eNom-BP-Configure-5-1](../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
+    ![eNom-BP-Configure-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
   
 5. Nelle caselle dei nuovi due record digitare oppure copiare e incollare i valori della tabella seguente.
     
-    |**Service**|**Protocollo**|**Priorità**|**Peso**|**Port**|**Target          (Hostname)**|
+    |**Service**|**Protocollo**|**Priorità**|**Peso**|**Porta**|**Target          (Hostname)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |_tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
    
-    ![eNom-BP-Configure-5-2](../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
+    ![eNom-BP-Configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
   
 6. Seleziona **Salva**
     
-    ![eNom-BP-Configure-5-3](../media/d03b6f75-49f2-471d-978d-d32c47cd6aa7.png)
+    ![eNom-BP-Configure-5-3](../../media/d03b6f75-49f2-471d-978d-d32c47cd6aa7.png)
   
 > [!NOTE]
->  In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o altro dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 

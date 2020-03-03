@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: Informazioni su come configurare Office 365 per gestire i record DNS del dominio personalizzato su Google Domains.
-ms.openlocfilehash: 771d38b9a3d08bef75c3ad1958f981539edb6c04
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f6faaa4a7b6540086752e88da2051a73450f4455
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242764"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351967"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-google-domains"></a>Modificare i server dei nomi per configurare Office 365 con Google Domains
 
@@ -60,20 +60,20 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
 |**Nome** <br/> |**Tipo** <br/> |**TTL** <br/> |**Data** <br/> |
 |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
-4. Seleziona **Aggiungi**.
+4. Selezionare **Aggiungi**.
     
 5. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
     
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
@@ -100,7 +100,7 @@ Per completare la configurazione del dominio con Office 365, modificare i record
     
 3. Nella pagina **Domains**, nella sezione **Name servers**, selezionare **Use custom name servers**.
     
-    ![Google-Domains-BP-Redelegate-1-1](../media/e264bc05-5a56-4962-bcaf-e2d999f62278.png)
+    ![Google-Domains-BP-Redelegate-1-1](../../media/e264bc05-5a56-4962-bcaf-e2d999f62278.png)
   
 4. A seconda che siano o meno già presenti server dei nomi nella pagina visualizzata, continuare con una delle due procedure seguenti:
     
@@ -121,11 +121,11 @@ Per completare la configurazione del dominio con Office 365, modificare i record
 |**Terzo server dei nomi** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Quarto server dei nomi** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-domini-BP-redelegate-1-2](../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
+   ![Google-domini-BP-redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
   
 2. Selezionare il controllo **+ (Aggiungi)** per creare una riga vuota. 
     
-    ![Google-Domains-BP-Redelegate-1-3](../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
+    ![Google-Domains-BP-Redelegate-1-3](../../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
   
 3. Aggiungere gli altri tre record dei server dei nomi.
     
@@ -135,7 +135,7 @@ Per completare la configurazione del dominio con Office 365, modificare i record
     
 4. Selezionare **Salva**.
     
-    ![Google-Domains-BP-Redelegate-1-5](../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
+    ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
 > L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Al termine, la posta elettronica e altri servizi di Office 365 verranno tutti impostati per funzionare con il dominio. 
@@ -147,11 +147,11 @@ Per completare la configurazione del dominio con Office 365, modificare i record
     > [!CAUTION]
     > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Ovvero, eliminare solo eventuali server dei nomi correnti che *non* sono denominati **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**o **NS4.BDM.microsoftonline.com**). 
   
-    ![Google-Domains-BP-Redelegate-1-6-1](../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
+    ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
 2. Eliminare ciascun valore selezionandolo e premendo **CANC**. 
     
-    ![Google-Domains-BP-Redelegate-1-6-2](../media/524e64ad-56e6-4254-8a64-e4a4c3230f89.png)
+    ![Google-Domains-BP-Redelegate-1-6-2](../../media/524e64ad-56e6-4254-8a64-e4a4c3230f89.png)
   
 3. Sempre nella sezione **Name servers**, nelle righe **NAME SERVER** digitare oppure copiare e incollare il valore dalla tabella seguente. 
     
@@ -162,11 +162,11 @@ Per completare la configurazione del dominio con Office 365, modificare i record
 |**Terzo server dei nomi** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Quarto server dei nomi** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-domini-BP-redelegate-1-7](../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
+   ![Google-domini-BP-redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
   
 4. Selezionare il controllo **+ (Aggiungi)** per creare una riga vuota. 
     
-    ![Google-Domains-BP-Redelegate-1-8](../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
+    ![Google-Domains-BP-Redelegate-1-8](../../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
   
 5. Aggiungere gli altri due record dei server dei nomi.
     
@@ -176,7 +176,7 @@ Per completare la configurazione del dominio con Office 365, modificare i record
     
 6. Selezionare **Salva**.
     
-    ![Google-Domains-BP-Redelegate-1-5](../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
+    ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
 > L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Al termine, la posta elettronica e altri servizi di Office 365 verranno tutti impostati per funzionare con il dominio. 

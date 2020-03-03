@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Usare l'interfaccia di amministrazione per configurare l'organizzazione nel cloud e gestire utenti e abbonamenti. Per iniziare, accedere all'account con autorizzazioni di amministratore.
-ms.openlocfilehash: 17082c887fa9818bdefa809d57d43cf7c16e153c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2e84e1d0631403a1f5a40f80886bdae46ada166b
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241561"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353087"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informazioni sull'interfaccia di amministrazione di Microsoft 365
 

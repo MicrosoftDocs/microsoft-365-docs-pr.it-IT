@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di scadenza dei gruppi di Office 365.
-ms.openlocfilehash: 5a7a9f9a67e8436a8d4120551e306a68a015bcb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c4c2f7b98247cc81b3fadc561f92084f9bd39c96
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241327"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352587"
 ---
 # <a name="office-365-group-expiration-policy"></a>Criteri di scadenza dei gruppi di Office 365
 
@@ -66,7 +66,7 @@ Se il gruppo non dispone di un proprietario, i messaggi di posta elettronica di 
 
 È possibile impostare il criterio per tutti i gruppi, solo per i gruppi selezionati o disattivarlo completamente selezionando **nessuno**. Si noti che attualmente non è possibile disporre di criteri diversi per i diversi gruppi.
 
-![Schermata delle impostazioni di scadenza dei gruppi in Azure Active Directory](../media/azure-groups-expiration-settings.png)
+![Schermata delle impostazioni di scadenza dei gruppi in Azure Active Directory](../../media/azure-groups-expiration-settings.png)
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>Come funziona la scadenza con il criterio di conservazione
 

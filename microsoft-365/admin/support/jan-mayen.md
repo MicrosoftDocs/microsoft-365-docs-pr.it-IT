@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 202bdbde46dcbf653595a61c19bc58a81aeea854
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: e95c2ed9f88181d38aa0d84dd700186de5953ae8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256315"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358237"
 ---
 # <a name="contact-support-for-jan-mayen"></a>Contattare il supporto tecnico per Jan Mayen
 

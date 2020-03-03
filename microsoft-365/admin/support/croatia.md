@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 12702189a051e5a719b546fd01eb8eb178dadb50
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: abba7c9c07ae9f9b5d3720cdee77773e8d542a50
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256645"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42359277"
 ---
 # <a name="contact-support-for-croatia"></a>Contattare il supporto per la Croazia
 

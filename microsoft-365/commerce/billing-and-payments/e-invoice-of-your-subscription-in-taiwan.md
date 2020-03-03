@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: Informazioni sull'e-fattura di Office 365 for business per Taiwan.
-ms.openlocfilehash: 3253e620236810a51b62fe958f76589309dfbe1f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5b06d8634fef81027cff14170da4e50072a1b48e
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242444"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354667"
 ---
 # <a name="understand-your-e-invoice-for-office-365-for-business-taiwan"></a>Comprendere la fatturazione elettronica per Office 365 for business (Taiwan)
 
@@ -33,7 +33,7 @@ e-fattura è una fattura elettronica emessa dal venditore dopo l'acquisto del co
   
 Una copia di esempio della fattura elettronica è inclusa in questa sezione:
   
-![La e-fattura taiwanese.](../../admin/media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
+![La e-fattura taiwanese.](../../media/01a275ad-54a9-4b76-ac03-4b288508b161.png)
   
 ## <a name="what-is-my-tax-rate"></a>Qual è la mia aliquota fiscale?
 

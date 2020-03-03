@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Seguire questo elenco di controllo per rimuovere un dipendente da Office 365 e proteggere i dati. '
-ms.openlocfilehash: a59ad66f6c188695e6794bd259668b97669f2217
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f29f24e0f9cf583e768000cff2d6081eb9df6d87
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241594"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353117"
 ---
 # <a name="remove-a-former-employee-from-office-365"></a>Rimuovere un ex dipendente da Office 365
   
@@ -211,7 +211,7 @@ Se l'ex dipendente aveva un telefono aziendale, è possibile usare Office 365 pe
     
 4. Selezionare l'utente e in **dispositivi mobili**selezionare **Visualizza dettagli**. 
     
-5. Nella pagina **Dettagli dispositivo mobile** , in **dispositivi mobili**, selezionare il dispositivo mobile, selezionare **wipe data**![Wipe Device](../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), quindi selezionare **blocca**. 
+5. Nella pagina **Dettagli dispositivo mobile** , in **dispositivi mobili**, selezionare il dispositivo mobile, selezionare **wipe data**![Wipe Device](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), quindi selezionare **blocca**. 
     
 6. Selezionare **Salva**. 
     

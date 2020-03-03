@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Informazioni su come riattivare l'abbonamento a Office 365 alla scadenza o se Microsoft la disattiva o se viene annullata al centro.
-ms.openlocfilehash: 7b902e210e39f41f6753958c5b6453c85a242f6c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 4bd5a0b9c8013117b07c69ad222447bdfd56af3a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241888"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354607"
 ---
 # <a name="reactivate-your-subscription"></a>Riattivare l'abbonamento
 
@@ -67,7 +67,7 @@ Se l'abbonamento scade oppure è stato disabilitato da Microsoft o se è stato a
 
 2. Individuare la sottoscrizione che si desidera riattivare, quindi selezionare **riattiva**.
 
-    ![Primo piano di una scheda di sottoscrizione che indica la funzionalità disabilitata e ridotta con un pulsante riattiva.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![Primo piano di una scheda di sottoscrizione che indica la funzionalità disabilitata e ridotta con un pulsante riattiva.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     Se non si visualizza **riattivazione** come azione disponibile, [contattare il supporto](../../admin/contact-support-for-business-products.md) per riattivare l'abbonamento.
 
@@ -88,7 +88,7 @@ Se l'abbonamento scade oppure è stato disabilitato da Microsoft o se è stato a
 
 2. Individuare la sottoscrizione che si desidera riattivare, quindi selezionare **riattiva**.
 
-    ![Primo piano di una scheda di sottoscrizione che indica la funzionalità disabilitata e ridotta con un pulsante riattiva.](../../admin/media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![Primo piano di una scheda di sottoscrizione che indica la funzionalità disabilitata e ridotta con un pulsante riattiva.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
     Se non si visualizza **riattivazione** come azione disponibile, [contattare il supporto](../../admin/contact-support-for-business-products.md) per riattivare l'abbonamento.
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c99013604bcef127bf451bfcf60ba7297d388deb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b1b9708f4e3335e8ecf474fa877624691a587a6b
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244520"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42357497"
 ---
 # <a name="contact-support-for-morocco"></a>Contattare il supporto per il Marocco
 

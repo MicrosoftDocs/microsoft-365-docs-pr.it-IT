@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Informazioni su come verificare gli abbonamenti che l'organizzazione deve passare alla pagina abbonamenti.
 ms.custom: okr_SMB
-ms.openlocfilehash: e8871e5d10d86f7e0f45dc34dd824bae6fb2c007
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a63b0b17333ad12846ba8bac2c83b2d8dfc67a8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241492"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352827"
 ---
 # <a name="what-subscription-do-i-have"></a>Qual è l’abbonamento corrente?
 
@@ -52,13 +52,13 @@ Se si è un amministratore, è possibile verificare quali abbonamenti ha l'organ
 
 2. Se si ha solo un abbonamento, la pagina **Abbonamenti** ne indicherà il nome, insieme alle relative informazioni e lo stato. Lo screenshot seguente mostra un abbonamento a Office 365 Business.
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. Se si hanno più abbonamenti, accanto alle informazioni dettagliate sull'abbonamento verrà visualizzata una colonna con l'elenco degli abbonamenti acquistati e degli eventuali abbonamenti di valutazione. Per impostazione predefinita, l'abbonamento all'inizio dell'elenco è selezionato automaticamente e sono visualizzate le informazioni dettagliate sull'abbonamento.
 
     Se si dispone di più sottoscrizioni, scegliere quella per la quale si desidera visualizzare informazioni dettagliate. La visualizzazione verrà aggiornata con le informazioni su quell'abbonamento.
 
-    ![La pagina abbonamenti dell'interfaccia di amministrazione che mostra un elenco di più abbonamenti raggruppati in base al relativo stato.](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![La pagina abbonamenti dell'interfaccia di amministrazione che mostra un elenco di più abbonamenti raggruppati in base al relativo stato.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > Se sono presenti abbonamenti scaduti o disabilitati, saranno elencati in base allo stato corrente.
@@ -71,13 +71,13 @@ Se si è un amministratore, è possibile verificare quali abbonamenti ha l'organ
 
 2. Se si ha solo un abbonamento, la pagina **Abbonamenti** ne indicherà il nome, insieme alle relative informazioni e lo stato. Lo screenshot seguente mostra un abbonamento a Office 365 Business.
 
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
+    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
 3. Se si hanno più abbonamenti, accanto alle informazioni dettagliate sull'abbonamento verrà visualizzata una colonna con l'elenco degli abbonamenti acquistati e degli eventuali abbonamenti di valutazione. Per impostazione predefinita, l'abbonamento all'inizio dell'elenco è selezionato automaticamente e sono visualizzate le informazioni dettagliate sull'abbonamento.
 
     Se si dispone di più sottoscrizioni, scegliere quella per la quale si desidera visualizzare informazioni dettagliate. La visualizzazione verrà aggiornata con le informazioni su quell'abbonamento.
 
-    ![La pagina abbonamenti dell'interfaccia di amministrazione che mostra un elenco di più abbonamenti raggruppati in base al relativo stato.](../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![La pagina abbonamenti dell'interfaccia di amministrazione che mostra un elenco di più abbonamenti raggruppati in base al relativo stato.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > Se sono presenti abbonamenti scaduti o disabilitati, saranno elencati in base allo stato corrente.

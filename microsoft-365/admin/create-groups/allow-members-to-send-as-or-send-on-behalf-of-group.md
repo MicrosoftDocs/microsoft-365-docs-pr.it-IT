@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Informazioni su come consentire ai membri di inviare messaggi di posta elettronica come gruppo di Office 365 o di inviare messaggi di posta elettronica per conto di un gruppo di Office 365.
-ms.openlocfilehash: c0dca3a3bbed6617874d9dfbca06a4ec5d6b4ebc
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0179dbd2e3093ce80929f6c5f9e689aece845a40
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241423"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352757"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Consenti ai membri di inviare messaggi o Invia per conto di un gruppo
 
@@ -47,17 +47,17 @@ In questa sezione viene descritto come consentire agli utenti di inviare messagg
   
 1. Nell'interfaccia <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">di amministrazione di Exchange</a>, accedere a **gruppi**di **destinatari** \> .
     
-2. Selezionare **modifica**![icona](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) gruppo modifica sul gruppo che si desidera consentire agli utenti di inviare.   
+2. Selezionare **modifica**![icona](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) gruppo modifica sul gruppo che si desidera consentire agli utenti di inviare.   
     
 3. Selezionare **delega gruppo**.
     
 4. Nella sezione **Invia come** selezionare il **+** segno per aggiungere gli utenti che si desidera inviare come gruppo. 
     
-    ![Selezionare il segno più per aggiungere gli utenti che si desidera inviare come gruppo di Office 365](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Selezionare il segno più per aggiungere gli utenti che si desidera inviare come gruppo di Office 365](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Digitare per cercare o selezionare un utente dall'elenco. Fare clic su **OK** e su **Salva**.
     
-    ![Digitare per cercare o selezionare un utente dall'elenco](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Digitare per cercare o selezionare un utente dall'elenco](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
 ## <a name="allow-members-to-send-email-on-behalf-of-a-group"></a>Consenti ai membri di inviare messaggi di posta elettronica per conto di un gruppo
 
@@ -65,17 +65,17 @@ In questa sezione viene descritto come consentire agli utenti di inviare messagg
   
 1. Nell'interfaccia <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">di amministrazione di Exchange</a>, accedere a **gruppi**di **destinatari** \> .
     
-2. Selezionare **modifica** ![icona](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) di modifica gruppo sul gruppo che si desidera consentire agli utenti di inviare. 
+2. Selezionare **modifica** ![icona](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) di modifica gruppo sul gruppo che si desidera consentire agli utenti di inviare. 
     
 3. Selezionare **delega gruppo**.
     
 4. Nella sezione Invia per conto di selezionare il **+** segno per aggiungere gli utenti che si desidera inviare come gruppo. 
     
-    ![Selezionare il segno più per aggiungere gli utenti che si desidera inviare come gruppo di Office 365](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Selezionare il segno più per aggiungere gli utenti che si desidera inviare come gruppo di Office 365](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Digitare per cercare o selezionare un utente dall'elenco. Fare clic su **OK** e su **Salva**.
     
-    ![Digitare per cercare o selezionare un utente dall'elenco](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Digitare per cercare o selezionare un utente dall'elenco](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## <a name="related-articles"></a>Articoli correlati
 

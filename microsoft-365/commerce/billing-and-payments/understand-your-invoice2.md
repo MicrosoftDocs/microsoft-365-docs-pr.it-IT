@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Informazioni su come interpretare gli addebiti, la fatturazione e i dati di pagamento sulla fattura di Office 365 per le aziende e su come modificare il numero dell'ordine di acquisto.
-ms.openlocfilehash: 2cb95b49136c186158d3b8ba3fe868d2c863e0de
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242423"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354687"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>Informazioni sulla fattura di Office 365 per le aziende
 
@@ -37,11 +37,11 @@ Ogni mese si riceverà un messaggio di posta elettronica che informa che la nuov
   
 La fattura è composta da due pagine. La pagina 1 contiene il riepilogo e informazioni generali su fattura, ordine, importo dovuto e modalità di pagamento, oltre a indicazioni su come contattare il supporto.
   
-![Page 1 of a sample invoice.](../../admin/media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
+![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
 La pagina 2 contiene dettagli sull'attività di fatturazione per ogni abbonamento.
   
-![Page 2 of a sample invoice.](../../admin/media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
+![Page 2 of a sample invoice.](../../media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
   
 Per una descrizione dei campi e dei termini inclusi nella fattura, vedere il [Glossario dei campi della fattura](#invoice-field-glossary) più avanti in questo articolo.
   

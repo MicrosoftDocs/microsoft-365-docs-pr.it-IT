@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7712b6af-329c-43a0-af7b-c4e4c1befb0e
 description: 'Informazioni su come è possibile configurare Office 365 per gestire i record DNS in Bluehost. '
-ms.openlocfilehash: 27d73071a08477b0adc372d8a88db2c805fecacf
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 081abe977b498ea0cc0a0e2da9b54b00687df530
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241132"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352377"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-bluehost"></a>Modificare i server dei nomi per configurare Office 365 con Bluehost
 
@@ -40,7 +40,7 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
   
-1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). Verrà richiesto di eseguire l'accesso.
     
 2. Nell'area **domain** della pagina **Domains** trovare la riga relativa al dominio da modificare e quindi selezionare la casella di controllo corrispondente. 
     
@@ -62,16 +62,16 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     
 6. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
     
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
@@ -88,15 +88,15 @@ Per completare la configurazione del dominio con Office 365, modificare i record
 > [!IMPORTANT]
 >  Nella procedura seguente viene illustrato come eliminare tutti gli altri server dei nomi indesiderati dall'elenco e come aggiungere i server dei nomi corretti se non sono già elencati. > dopo aver completato la procedura descritta in questa sezione, gli unici server dei nomi da elencare sono i seguenti quattro: > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
   
-1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Bluehost usando [questo collegamento](https://my.bluehost.com/cgi/dm). Verrà richiesto di eseguire l'accesso.
     
 2. Nell'area **Domain_name** della pagina **Domains** selezionare la casella di controllo per il dominio, quindi selezionare Server dei **nomi**.
     
-    ![Bluehost-BP-Redelegate-1-1](../media/8f384386-197c-4272-9675-82037922dac4.png)
+    ![Bluehost-BP-Redelegate-1-1](../../media/8f384386-197c-4272-9675-82037922dac4.png)
   
 3. Nell'area **Domain_name** selezionare **Usa server dei nomi personalizzati**.
     
-    ![Miglioramenti relativi al percorso animazione](../media/9fb47d21-c4ce-4eee-af90-c9569870a329.png)
+    ![Miglioramenti relativi al percorso animazione](../../media/9fb47d21-c4ce-4eee-af90-c9569870a329.png)
   
 4. A seconda che siano o meno già presenti server dei nomi nella pagina visualizzata, continuare con una delle due procedure seguenti:
     
@@ -113,11 +113,11 @@ Per completare la configurazione del dominio con Office 365, modificare i record
 |**Prima riga vuota** <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |**Seconda riga vuota** <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
-   ![Bluehost-BP-redelegate-1-3-1](../media/07b13d6d-a34e-45b5-afd5-48ebd4c1344f.png)
+   ![Bluehost-BP-redelegate-1-3-1](../../media/07b13d6d-a34e-45b5-afd5-48ebd4c1344f.png)
   
 2. Selezionare **Aggiungi riga**.
     
-    ![Bluehost-BP-Redelegate-1-3-2](../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
+    ![Bluehost-BP-Redelegate-1-3-2](../../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
   
 3. Sempre nella sezione **Use Custom Nameservers** digitare oppure copiare e incollare i valori della prima riga della tabella seguente nella nuova riga vuota. 
     
@@ -126,13 +126,13 @@ Per completare la configurazione del dominio con Office 365, modificare i record
 |**Terza riga vuota** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Quarta riga vuota** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Bluehost-BP-Redelegate-1-3-3](../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
+    ![Bluehost-BP-Redelegate-1-3-3](../../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
   
 4. Per aggiungere il quarto record del server dei nomi, selezionare di nuovo **Aggiungi riga** e creare un record usando i valori dell'ultima riga della tabella precedente. 
     
 5. Selezionare **Salva impostazioni server dei nomi**.
     
-    ![Teta](../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
+    ![Teta](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   
 > [!NOTE]
 > L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Al termine, la posta elettronica e altri servizi di Office 365 verranno tutti impostati per funzionare con il dominio. 
@@ -144,7 +144,7 @@ Per completare la configurazione del dominio con Office 365, modificare i record
   
 1. Se sono già presenti server dei nomi, eliminarli selezionando ogni server e premendo **CANC**. 
     
-    ![Bluehost-BP-Redelegate-1-5](../media/d1051c43-f8ff-46d7-af26-3975d3f0f621.png)
+    ![Bluehost-BP-Redelegate-1-5](../../media/d1051c43-f8ff-46d7-af26-3975d3f0f621.png)
   
 2. Sempre nella sezione **Use Custom Nameservers**, digitare oppure copiare e incollare i valori della tabella seguente. 
     
@@ -153,11 +153,11 @@ Per completare la configurazione del dominio con Office 365, modificare i record
 |**Prima riga vuota** <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |**Seconda riga vuota** <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
-   ![Bluehost-BP-redelegate-1-3](../media/1523debf-5eb0-4765-8e05-bcd56e375c20.png)
+   ![Bluehost-BP-redelegate-1-3](../../media/1523debf-5eb0-4765-8e05-bcd56e375c20.png)
   
 3. Selezionare **Aggiungi riga**.
     
-    ![Bluehost-BP-Redelegate-1-3-2](../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
+    ![Bluehost-BP-Redelegate-1-3-2](../../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
   
 4. Sempre nella sezione **Use Custom Nameservers** digitare oppure copiare e incollare i valori della prima riga della tabella seguente nella nuova riga vuota. 
     
@@ -166,13 +166,13 @@ Per completare la configurazione del dominio con Office 365, modificare i record
 |**Terza riga vuota** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Quarta riga vuota** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Bluehost-BP-redelegate-1-3-3](../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
+   ![Bluehost-BP-redelegate-1-3-3](../../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
   
 5. Per aggiungere il quarto record del server dei nomi, selezionare di nuovo **Aggiungi riga** e creare un record usando i valori dell'ultima riga della tabella precedente. 
     
 6. Selezionare **Salva impostazioni server dei nomi**.
     
-    ![Teta](../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
+    ![Teta](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   
 > [!NOTE]
 > L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Al termine, la posta elettronica e altri servizi di Office 365 verranno tutti impostati per funzionare con il dominio. 

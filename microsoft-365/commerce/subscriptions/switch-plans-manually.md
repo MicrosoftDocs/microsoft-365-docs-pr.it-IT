@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Passare manualmente gli abbonamenti di Office 365 per le aziende acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
-ms.openlocfilehash: 5fe50cbc0a11c4fe9976be07bfb0ab752bae5bba
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257456"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354709"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Cambiare piano di Office 365 per le aziende manualmente
 
@@ -74,7 +74,7 @@ Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si 
 
    **Nuovo abbonamento a Office 365 per le aziende con le licenze disponibili**
 
-    ![The subscription page showing the number of licenses for the new subscription.](../../admin/media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
+    ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
 3. **Verificare di avere licenze sufficienti per ogni utente**
 
@@ -115,7 +115,7 @@ Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel
     > [!TIP]
     > Per limitare i servizi disponibili per l'utente, impostare sulla posizione **Disattivato** l'interruttore relativo ai servizi da rimuovere per l'utente. Ad esempio, se si vuole che l'utente abbia accesso a tutti i servizi disponibili tranne Skype for Business online, è possibile impostare l'interruttore relativo al servizio Skype for Business online sulla posizione **Disattivato**.
   
-    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 5. Impostare l'interruttore sulla posizione **disattivata** per le licenze di cui l'utente non ha più bisogno.
 
@@ -141,7 +141,7 @@ Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel
     > - Per limitare i servizi disponibili per l'utente, impostare sulla posizione **Disattivato** l'interruttore relativo ai servizi da rimuovere per l'utente. Ad esempio, se si vuole che l'utente abbia accesso a tutti i servizi disponibili tranne Skype for Business online, è possibile impostare l'interruttore relativo al servizio Skype for Business online sulla posizione **Disattivato**.
     > - Le eventuali licenze precedentemente assegnate agli utenti selezionati verranno rimosse.
   
-    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
+    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. Nella parte inferiore del riquadro **Sostituisci prodotti esistenti** selezionare **Sostituisci** \> **Chiudi**.
 

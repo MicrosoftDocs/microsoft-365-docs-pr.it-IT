@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi su Amazon Web Services (AWS) per Office 365.
-ms.openlocfilehash: 307ef7fd81093360c8546dadc28ea7974995518f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: baba7bb7275303604d241166f4dc1d2af77b3f17
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243084"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351477"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-office-365"></a>Creare record DNS in Amazon Web Services (AWS) per Office 365
 
@@ -72,16 +72,16 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     
 7. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
     
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
@@ -105,13 +105,13 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     |**Nome**|**Tipo**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> |MX - Mail exchange  <br/> |No  <br/> |300  <br/> |0  *\<chiave-dominio\>*  .mail.protection.outlook.com.  <br/> 0 è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere la \<propria *chiave* \> di dominio dall'account di Office 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Semplice  <br/> |
+    |Lasciare vuoto questo campo.  <br/> |MX - Mail exchange  <br/> |No  <br/> |300  <br/> |0  *\<chiave-dominio\>*  .mail.protection.outlook.com.  <br/> 0 è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** ottenere il valore \<*domain-key*\> dall'account di Office 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Semplice  <br/> |
        
-    ![AWS-BP-Configure-2-1](../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
+    ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
 6. Selezionare **Crea**.
     
-    ![AWS-BP-Configurazione-2-2](../media/1c050c72-c04f-48d5-a8e9-44cd83ddd33e.png)
+    ![AWS-BP-Configurazione-2-2](../../media/1c050c72-c04f-48d5-a8e9-44cd83ddd33e.png)
   
 7. Se ci sono altri record MX, rimuoverli.
     
@@ -120,15 +120,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
     Per prima cosa, seleziona il set di record MX.
     
-    ![AWS-BP-Configurazione-2-3](../media/9d9388cb-e2d0-43b7-928c-e1d07e519c6f.png)
+    ![AWS-BP-Configurazione-2-3](../../media/9d9388cb-e2d0-43b7-928c-e1d07e519c6f.png)
   
     Poi, nell'area **Edit Record Set**, eliminare ogni record MX obsoleto selezionando la voce nella casella **Value** e quindi premendo **CANC**. 
     
-    ![AWS-BP-Configurazione-2-4](../media/c3b0c1bc-21ab-44cc-84b7-f504725c5540.png)
+    ![AWS-BP-Configurazione-2-4](../../media/c3b0c1bc-21ab-44cc-84b7-f504725c5540.png)
   
 8. Selezionare **Salva set di record**.
     
-    ![AWS-BP-Configurazione-2-5](../media/86f0998d-f5d4-4750-a93d-ac13b318c40b.png)
+    ![AWS-BP-Configurazione-2-5](../../media/86f0998d-f5d4-4750-a93d-ac13b318c40b.png)
   
 ## <a name="add-the-five-cname-records-that-are-required-for-office-365"></a>Aggiungere i cinque record CNAME necessari per Office 365
 <a name="BKMK_add_CNAME"> </a>
@@ -155,11 +155,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |enterpriseregistration  <br/> |CNAME - Canonical Name  <br/> |No  <br/> |300  <br/> |enterpriseregistration.windows.net.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Semplice  <br/> |
     |enterpriseenrollment  <br/> |CNAME - Canonical Name  <br/> |No  <br/> |300  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |Semplice  <br/> |
    
-    ![AWS-BP-configure-3-1](../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
+    ![AWS-BP-configure-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
   
 6. Selezionare **Crea**.
     
-    ![AWS-BP-Configurazione-3-2](../media/33964846-5282-44a4-b241-62ce02b96735.png)
+    ![AWS-BP-Configurazione-3-2](../../media/33964846-5282-44a4-b241-62ce02b96735.png)
   
 7. Aggiungere gli altri quattro record CNAME.
     
@@ -171,7 +171,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 necessari al record corrente in modo che sia presente un *singolo* record SPF che includa entrambi i set di valori. Servono esempi? Vedere queste [informazioni dettagliate e record SPF di esempio](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 richiesti al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori. Servono esempi? Vedere queste [informazioni dettagliate e record SPF di esempio](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.md). 
   
 1. Per iniziare, passare alla propria pagina dei domini su AWS usando [questo collegamento](https://console.aws.amazon.com/route53/home). Verrà richiesto di eseguire l'accesso.
     
@@ -181,7 +181,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 4. Selezionare il set di record **txt** . 
     
-    ![AWS-BP-Configurazione-4-1](../media/0310fa66-c016-4987-80df-930f1c8f3c39.png)
+    ![AWS-BP-Configurazione-4-1](../../media/0310fa66-c016-4987-80df-930f1c8f3c39.png)
   
 5. Nell'area **Edit Record Set**, alla fine della voce corrente nella casella **Value** per il record esistente, premere INVIO per creare una nuova riga. Quindi, in questa nuova riga, sotto il valore esistente, digitare o incollare il valore della tabella seguente. Per un esempio, vedere la figura sotto la tabella. 
     
@@ -189,11 +189,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|
     |v=spf1 include:spf.protection.outlook.com -all  <br/> Le virgolette richieste dalle istruzioni visualizzate vengono specificate automaticamente. Non è necessario digitarle manualmente.  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
    
-    ![AWS-BP-Configure-4-2](../media/beb3c086-eaf8-4245-9860-18512a3ff72e.png)
+    ![AWS-BP-Configure-4-2](../../media/beb3c086-eaf8-4245-9860-18512a3ff72e.png)
   
 6. Selezionare **Salva set di record**.
     
-    ![AWS-BP-Configurazione-4-3](../media/94b9306c-bdc9-4f84-ad6f-6d12edbfde90.png)
+    ![AWS-BP-Configurazione-4-3](../../media/94b9306c-bdc9-4f84-ad6f-6d12edbfde90.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Aggiungere i due record SRV necessari per Office 365
 <a name="BKMK_add_SRV"> </a>
@@ -217,11 +217,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |_sip. _tls|SRV - Service locator|No|300|100 1 443 sipdir.online.lync.com. **Questo valore deve terminare con un punto (.).**><br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |Semplice|
     |_sipfederationtls. _tcp|SRV - Service locator|No|300|100 1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)**<br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |Semplice|
    
-    ![AWS-BP-Configure-5-1](../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
+    ![AWS-BP-Configure-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
   
 6. Selezionare **Crea**.
     
-    ![AWS-BP-Configurazione-5-2](../media/1bf5dc58-a46b-47a5-bd69-7c2147dd4e50.png)
+    ![AWS-BP-Configurazione-5-2](../../media/1bf5dc58-a46b-47a5-bd69-7c2147dd4e50.png)
   
 7. Per aggiungere l'altro record SRV:
     

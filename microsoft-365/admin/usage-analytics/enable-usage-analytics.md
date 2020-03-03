@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Informazioni su come avviare la raccolta dei dati per il tenant utilizzando l'app modello di analisi di utilizzo di Microsoft 365 in Power BI.
-ms.openlocfilehash: 651a820916f65a1695b7300772b1d2ce8aee92bb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 249fadce15ca2e4c979d6e1930ff0d14ccd9bc08
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243512"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355007"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Abilitare l'analisi dell'utilizzo di Microsoft 365
 
@@ -70,7 +70,7 @@ Per avviare l'app modello, è necessario essere un **amministratore globale**, u
   
 3. Nella scheda **app** Digitare Microsoft 365 nella casella di \> ricerca e quindi selezionare **Analisi utilizzo Microsoft 365** **ottenerlo subito**.
 
-    [![Seleziona Ottieni subito](../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    [![Seleziona Ottieni subito](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
 4.  Dopo l'installazione dell'app. Fare clic sul riquadro per aprirlo.
 
@@ -80,7 +80,7 @@ Per avviare l'app modello, è necessario essere un **amministratore globale**, u
     
 7. Nella schermata successiva, selezionare **OAuth2** come accesso al **Metodo** \> **di**autenticazione. Se si sceglie qualsiasi altro metodo di autenticazione, la connessione all'app modello avrà esito negativo.
     
-    ![Choose oAuth2 as authentication method](../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
+    ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
   
 8. Dopo aver creato un'istanza dell'app modello, il Dashboard Microsoft 365 Usage Analytics sarà disponibile in Power BI sul Web. Il caricamento iniziale del dashboard richiederà da 2 a 30 minuti.
   

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Informazioni su come passare a un nuovo abbonamento a Office 365 for business.
-ms.openlocfilehash: 22b1d187c18743a467e9e13abbb5d2635b62da40
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f341222945d4af6d35c00ee26c3a2645fabf98f8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257706"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354467"
 ---
 # <a name="switch-to-a-different-office-365-for-business-plan"></a>Passare a un piano di Office 365 per le aziende diverso
 
@@ -95,4 +95,4 @@ Se si desidera passare a un piano con meno servizi, è possibile [commutare manu
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Chiamare il supporto tecnico per assistenza con il cambio di piano
 
-![Supporto](../../admin/media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) per le [chiamate](../../admin/contact-support-for-business-products.md) telefoniche
+![Supporto](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) per le [chiamate](../../admin/contact-support-for-business-products.md) telefoniche

@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Informazioni su come gestire i metodi di pagamento nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 56ffbcc638ecfe304ff71273ec2ce00abd05ddca
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 894b1cbf9033521c6978f54d0483fe61c3d6114d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341229"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354937"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Aggiungere, aggiornare o rimuovere i metodi di pagamento
 
@@ -172,11 +172,11 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 
 2. Scegliere l'abbonamento che si vuole pagare con la nuova carta di credito o il conto corrente bancario, quindi selezionare **Aggiorna dettagli pagamento**.
 
-    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Selezionare la freccia a discesa in **Aggiungi o selezionare un metodo di pagamento**, quindi selezionare **nuova carta di credito** o **nuovo conto corrente bancario**.
 
-    ![Il menu a discesa che visualizza la nuova carta di credito e le nuove opzioni del conto corrente bancario.](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![Il menu a discesa che visualizza la nuova carta di credito e le nuove opzioni del conto corrente bancario.](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. Immettere le informazioni per la nuova carta di credito o il conto corrente bancario, quindi selezionare **Invia**.
 
@@ -203,11 +203,11 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 
 2. Scegliere l'abbonamento che si vuole pagare con la nuova carta di credito o il conto corrente bancario, quindi selezionare **Aggiorna dettagli pagamento**.
 
-    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Selezionare la freccia a discesa in **Aggiungi o selezionare un metodo di pagamento**, quindi selezionare **nuova carta di credito** o **nuovo conto corrente bancario**.
 
-    ![Il menu a discesa che visualizza la nuova carta di credito e le nuove opzioni del conto corrente bancario.](../../admin/media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
+    ![Il menu a discesa che visualizza la nuova carta di credito e le nuove opzioni del conto corrente bancario.](../../media/2de0566c-e527-4ae7-ad6a-8b461c1e5322.png)
   
 4. Immettere le informazioni per la nuova carta di credito o il conto corrente bancario, quindi selezionare **Invia**.
 
@@ -230,17 +230,17 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
     > [!NOTE]
     > Se l'abbonamento è stato acquistato da un altro amministratore, non sarà possibile aggiornare le informazioni sulla carta di credito o sul conto corrente bancario. Se la carta di credito sta per scadere e l'altro amministratore non è in grado di aggiornarlo, è possibile evitare interruzioni del servizio se si aggiunge una carta di credito o un nuovo account bancario diverso per l'abbonamento.
   
-    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Selezionare la freccia a discesa in **Aggiungi o selezionare un metodo di pagamento**. Selezionare la carta di credito o il conto corrente bancario che si desidera aggiornare, quindi selezionare **Modifica dettagli**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Aggiornare le informazioni sulla carta di credito o sul conto corrente bancario (nome sulla carta di credito o sul conto corrente bancario, indirizzo di fatturazione. il numero di telefono o la data di scadenza) in base alle esigenze, quindi selezionare **Invia**.
 
 5. Verrà visualizzato un messaggio di conferma. In caso contrario, vedere [Risoluzione dei problemi relativi alle carte di credito e ai conti correnti bancari](#troubleshooting-credit-cards-and-bank-accounts).
 
-    ![Messaggio di conferma: "il metodo di pagamento è stato aggiornato correttamente".](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![Messaggio di conferma: "il metodo di pagamento è stato aggiornato correttamente".](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -258,17 +258,17 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
     > [!NOTE]
     > Se l'abbonamento è stato acquistato da un altro amministratore, non sarà possibile aggiornare le informazioni sulla carta di credito o sul conto corrente bancario. Se la carta di credito sta per scadere e l'altro amministratore non è in grado di aggiornarlo, è possibile evitare interruzioni del servizio se si aggiunge una carta di credito o un nuovo account bancario diverso per l'abbonamento.
   
-    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Selezionare la freccia a discesa in **Aggiungi o selezionare un metodo di pagamento**. Selezionare la carta di credito o il conto corrente bancario che si desidera aggiornare, quindi selezionare **Modifica dettagli**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Aggiornare le informazioni sulla carta di credito o sul conto corrente bancario (nome sulla carta di credito o sul conto corrente bancario, indirizzo di fatturazione. il numero di telefono o la data di scadenza) in base alle esigenze, quindi selezionare **Invia**.
 
 5. Verrà visualizzato un messaggio di conferma. In caso contrario, vedere [Risoluzione dei problemi relativi alle carte di credito e ai conti correnti bancari](#troubleshooting-credit-cards-and-bank-accounts).
 
-    ![Messaggio di conferma: "il metodo di pagamento è stato aggiornato correttamente".](../../admin/media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
+    ![Messaggio di conferma: "il metodo di pagamento è stato aggiornato correttamente".](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
 ::: moniker-end
 
@@ -279,20 +279,20 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 
 2. Scegliere qualsiasi sottoscrizione, quindi selezionare **Aggiorna dettagli pagamento**.
 
-    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Selezionare la freccia a discesa in **Aggiungi o selezionare un metodo di pagamento**.
 
 4. Selezionare la carta di credito o il conto corrente bancario, quindi fare clic su **Rimuovi**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 5. Selezionare di nuovo **Rimuovi** per eliminare la carta di credito o il conto corrente bancario.
 
-    ![I pulsanti Rimuovi e Annulla.](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    ![I pulsanti Rimuovi e Annulla.](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
-    > Non sarà possibile rimuovere una carta di credito o un conto corrente bancario se attualmente è utilizzato per pagare un abbonamento. Se si cerca, viene visualizzato un messaggio simile al seguente ![: il messaggio di errore che viene visualizzato se si tenta di rimuovere un metodo di pagamento attualmente utilizzato per pagare un abbonamento attivo.](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > Non sarà possibile rimuovere una carta di credito o un conto corrente bancario se attualmente è utilizzato per pagare un abbonamento. Se si cerca, viene visualizzato un messaggio simile al seguente ![: il messaggio di errore che viene visualizzato se si tenta di rimuovere un metodo di pagamento attualmente utilizzato per pagare un abbonamento attivo.](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > Per rimuovere la carta di credito o il conto corrente bancario, selezionare **indietro** e seguire i passaggi descritti in questo articolo per modificare la carta di credito o il conto corrente bancario che si utilizza per pagare la sottoscrizione. Quindi provare di nuovo a rimuovere la carta o il conto.
 
 ::: moniker-end
@@ -304,20 +304,20 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 
 2. Scegliere qualsiasi sottoscrizione, quindi selezionare **Aggiorna dettagli pagamento**.
 
-    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Selezionare la freccia a discesa in **Aggiungi o selezionare un metodo di pagamento**.
 
 4. Selezionare la carta di credito o il conto corrente bancario, quindi fare clic su **Rimuovi**.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
 
 5. Selezionare di nuovo **Rimuovi** per eliminare la carta di credito o il conto corrente bancario.
 
-    ![I pulsanti Rimuovi e Annulla.](../../admin/media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
+    ![I pulsanti Rimuovi e Annulla.](../../media/22135f0d-c758-4564-a3b2-9c9050f7601b.png)
   
     > [!NOTE]
-    > Non sarà possibile rimuovere una carta di credito o un conto corrente bancario se attualmente è utilizzato per pagare un abbonamento. Se si cerca, viene visualizzato un messaggio simile al seguente ![: il messaggio di errore che viene visualizzato se si tenta di rimuovere un metodo di pagamento attualmente utilizzato per pagare un abbonamento attivo.](../../admin/media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
+    > Non sarà possibile rimuovere una carta di credito o un conto corrente bancario se attualmente è utilizzato per pagare un abbonamento. Se si cerca, viene visualizzato un messaggio simile al seguente ![: il messaggio di errore che viene visualizzato se si tenta di rimuovere un metodo di pagamento attualmente utilizzato per pagare un abbonamento attivo.](../../media/29319a8b-af0b-4487-853b-6f47d6fe4a28.png) <br/>
     > Per rimuovere la carta di credito o il conto corrente bancario, selezionare **indietro** e seguire i passaggi descritti in questo articolo per modificare la carta di credito o il conto corrente bancario che si utilizza per pagare la sottoscrizione. Quindi provare di nuovo a rimuovere la carta o il conto.
 
 ::: moniker-end
@@ -329,11 +329,11 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 
 2. Scegliere l'abbonamento che si desidera pagare con la nuova carta di credito o il conto corrente bancario, quindi selezionare **Aggiorna dettagli pagamento**.
 
-    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Selezionare la freccia a discesa in **Aggiungi o selezionare un metodo di pagamento** e selezionare la carta di credito o il conto corrente bancario che si desidera utilizzare.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Selezionare **Invia**. Se la carta di credito o il conto corrente bancario che si desidera utilizzare non è ancora elencato, scegliere **nuova carta di credito** o **nuovo conto corrente bancario** per aggiungerlo.
 
@@ -346,11 +346,11 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 
 2. Scegliere l'abbonamento che si desidera pagare con la nuova carta di credito o il conto corrente bancario, quindi selezionare **Aggiorna dettagli pagamento**.
 
-    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../admin/media/03839d72-773c-4030-88d0-484d1efe49c5.png)
+    ![La sezione Payment Method della pagina di sottoscrizione che Visualizza il collegamento Aggiorna dettagli pagamento.](../../media/03839d72-773c-4030-88d0-484d1efe49c5.png)
   
 3. Selezionare la freccia a discesa in **Aggiungi o selezionare un metodo di pagamento** e selezionare la carta di credito o il conto corrente bancario che si desidera utilizzare.
 
-    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../admin/media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
+    ![The Update payment details pane when a subscription is paid for by credit card or bank account.](../../media/fa9b3a8f-9a80-4887-88e6-d19e6afd1b3d.png)
   
 4. Selezionare **Invia**. Se la carta di credito o il conto corrente bancario che si desidera utilizzare non è ancora elencato, scegliere **nuova carta di credito** o **nuovo conto corrente bancario** per aggiungerlo.
 

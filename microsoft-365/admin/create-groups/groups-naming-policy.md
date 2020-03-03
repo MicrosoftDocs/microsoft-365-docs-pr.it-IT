@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Informazioni su come creare un criterio di denominazione per i gruppi di Office 365.
-ms.openlocfilehash: 50ea076e22680a444cb9acf04466a7e7d052bb7a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 11e2907462d325e4ad421914ae5a0deb5013e695
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241393"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352717"
 ---
 # <a name="office-365-groups-naming-policy"></a>Criteri di denominazione dei gruppi di Office 365
 
@@ -125,17 +125,17 @@ Per impostare i criteri di denominazione:
 5. Scegliere tra l' **attributo** e la **stringa** per ogni riga e quindi specificare l'attributo o la stringa.
 6. Dopo aver aggiunto i prefissi e i suffissi necessari, fare clic su **Salva**.
 
-![Schermata delle impostazioni dei criteri di denominazione del gruppo in Azure Active Directory](../media/groups-naming-policy-azure.png)
+![Schermata delle impostazioni dei criteri di denominazione del gruppo in Azure Active Directory](../../media/groups-naming-policy-azure.png)
 
 ## <a name="naming-policy-experiences-across-office-365-apps"></a>Esperienza dei criteri di denominazione nelle app di Office 365
 
 Le app di Office 365 sono state aggiornate in modo da mostrare un'anteprima del nome di gruppo in base ai criteri di denominazione (con prefissi e suffissi) quando un utente digita il nome e l'alias di gruppo. Quando l'utente immette parole bloccate visualizza un messaggio di errore e può rimuoverle.
 
-## <a name="outlook-on-the-web"></a>Outlook sul web
+## <a name="outlook-on-the-web"></a>Outlook sul Web
 
 Outlook sul Web (in precedenza noto come Outlook Web App o OWA) Visualizza il nome decorato dei criteri di denominazione quando l'utente digita un nome di gruppo o un alias di gruppo. Quando un utente immette una parola bloccata personalizzata, nell'interfaccia utente viene visualizzato un messaggio di errore insieme alla parola, in modo che l'utente possa rimuoverla. Di seguito sono illustrati gli snapshot di Outlook sul Web.
 
-![Visualizzazione affiancata dei criteri di denominazione del gruppo nei gruppi di Office 365](../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
+![Visualizzazione affiancata dei criteri di denominazione del gruppo nei gruppi di Office 365](../../media/1a21657a-c542-4d9e-ac7d-887ac542a9d9.png)
 
 ## <a name="outlook-desktop"></a>Outlook desktop
 
@@ -145,19 +145,19 @@ I gruppi creati in Outlook desktop sono conformi ai criteri di denominazione. L'
 
 Microsoft teams Visualizza il nome decorato dei criteri di denominazione quando l'utente digita il nome di un team. Quando un utente immette una parola bloccata personalizzata, viene visualizzato un messaggio di errore insieme alla parola bloccata in modo che l'utente possa rimuoverla.
 
-![Esempio di criteri di denominazione dei gruppi in Microsoft teams bloccato](../media/7c904546-5853-4642-949a-a55dbb004eca.png)
+![Esempio di criteri di denominazione dei gruppi in Microsoft teams bloccato](../../media/7c904546-5853-4642-949a-a55dbb004eca.png)
 
 ## <a name="sharepoint"></a>SharePoint
 
 SharePoint Visualizza il nome dei criteri di denominazione quando l'utente digita un nome di sito o un indirizzo di posta elettronica di gruppo. Quando un utente immette una parola bloccata personalizzata, viene visualizzato un messaggio di errore insieme alla parola, in modo che l'utente possa rimuoverla.
 
-![Criteri di denominazione dei gruppi-nome bloccato del sito di SharePoint](../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
+![Criteri di denominazione dei gruppi-nome bloccato del sito di SharePoint](../../media/cf0d6158-fd32-4a93-ac24-2e037102c42c.png)
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
 Microsoft Stream mostra il nome decorato dei criteri di denominazione quando l'utente digita il nome o l'alias di posta elettronica di un gruppo. Quando un utente immette una parola bloccata personalizzata, viene visualizzato un messaggio di errore con la parola, in modo che l'utente possa rimuoverla.
 
-![Esempio di criteri di denominazione dei gruppi bloccati per Microsoft Stream](../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
+![Esempio di criteri di denominazione dei gruppi bloccati per Microsoft Stream](../../media/9748f52a-3814-41a6-9ac1-4e8cd4c91011.png)
 
 ## <a name="outlook-ios-and-android-app"></a>App Outlook per iOS e Android
 
@@ -167,13 +167,13 @@ I gruppi creati nelle app Outlook sono conformi ai criteri di denominazione. Out
 
 Planner è conforme ai criteri di denominazione. Planner Visualizza l'anteprima dei criteri di denominazione quando si immette il nome del piano. Quando un utente immette una parola bloccata personalizzata, viene visualizzato un messaggio di errore per la creazione del piano, in modo che l'utente possa rimuovere la parola bloccata.
 
-![Criteri di denominazione dei gruppi-esempio di creazione di un nuovo piano bloccato](../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
+![Criteri di denominazione dei gruppi-esempio di creazione di un nuovo piano bloccato](../../media/ea692b44-3a56-4e6d-bcb8-8444fe5bbc4f.png)
 
 ## <a name="dynamics-365-for-customer-engagement"></a>Dynamics 365 per l'impegno dei clienti
 
 Dynamics 365 per l'impegno dei clienti è conforme ai criteri di denominazione. Dynamics 365 Visualizza il nome decorato dei criteri di denominazione quando l'utente digita un nome di gruppo o un alias di posta elettronica di gruppo. Quando l'utente immette una parola bloccata personalizzata, viene visualizzato un messaggio di errore con la parola bloccata in modo che l'utente possa rimuoverla.
 
-![Dynamics 365](../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
+![Dynamics 365](../../media/8190331c-6779-42bd-a6b3-f7007428c8ae.png)
 
 ## <a name="school-data-sync-sds"></a>School Data Sync (SDS)
 

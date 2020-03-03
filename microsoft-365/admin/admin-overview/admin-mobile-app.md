@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Ottenere l'app di amministrazione di Microsoft 365 e imparare a gestire l'organizzazione online dal telefono o dal tablet.
-ms.openlocfilehash: 6f81da66ff8d60f1adc249c1e21542b0174050d6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241555"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353037"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Informazioni sull'app Microsoft 365 admin per dispositivi mobili
 
 Si è un amministratore di solito in viaggio? Quindi, vedere l' [app Microsoft 365 admin](https://go.microsoft.com/fwlink/?LinkID=627216). È possibile utilizzare l'app per gestire l'organizzazione online dal telefono o dal tablet. È possibile ottenere l'app dall'Apple Store e da Google Play. <br> 
 
-![Acquisizione dello schermo della Home page dell'app di amministrazione per dispositivi mobili, visualizzazione di ricerca, messaggi, integrità e collegamenti rapidi.](../media/admin-mobile-app-darkbg.png)
+![Acquisizione dello schermo della Home page dell'app di amministrazione per dispositivi mobili, visualizzazione di ricerca, messaggi, integrità e collegamenti rapidi.](../../media/admin-mobile-app-darkbg.png)
 
 L'app di amministrazione è un'app ricca di funzionalità con oltre 80 funzionalità che consentono di gestire l'organizzazione quando non è possibile accedere a un computer. Ecco un elenco di solo alcune delle attività che è possibile eseguire dall'app:
 

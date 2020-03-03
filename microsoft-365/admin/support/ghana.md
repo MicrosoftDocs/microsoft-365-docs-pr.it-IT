@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0e74893a725133ba6f5efc00681019f81547f6b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6bbb432b468031c43f4e516fec1e61d54bbc24fb
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243671"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358737"
 ---
 # <a name="contact-support-for-ghana"></a>Contattare il supporto per il Ghana
 

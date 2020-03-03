@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Informazioni su come ottenere il rapporto di utilizzo delle app di posta elettronica da sapere sulle app di posta elettronica che si connettono a Exchange Online e gli utenti della versione di Outlook.
-ms.openlocfilehash: 3fc0d0ce29e38bc2b7f30b6bf15909f9a736de30
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: bb75b28e41de37d4f21acedd4705db71f6c2c303
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241303"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353787"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle app di posta elettronica
 
@@ -43,7 +43,7 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 
 È possibile visualizzare l'attività delle app di posta elettronica esaminando i grafici **utenti** e **client** . 
   
-![Client di posta elettronica utilizzati](../media/2a775e46-750f-4fa6-8197-de4b24614bd7.png)
+![Client di posta elettronica utilizzati](../../media/2a775e46-750f-4fa6-8197-de4b24614bd7.png)
   
 |||
 |:-----|:-----|
@@ -53,9 +53,9 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 |4.  <br/> |La visualizzazione **App** mostra il numero di utenti univoci per ogni app nel periodo di tempo selezionato.  <br/> |
 |5.  <br/> |La visualizzazione **versioni** Mostra il numero di utenti univoci per ogni versione di Outlook in Windows.  <br/> |
 |6.  <br/> | Nel grafico **Utenti** l'asse Y rappresenta il numero totale di utenti univoci che si sono connessi a un'app in qualsiasi giorno del periodo di riferimento.  <br/>  Nel grafico **Utenti** l'asse X rappresenta il numero totale di utenti univoci che hanno usato l'app in tale periodo di riferimento.  <br/>  Nel grafico **App** l'asse Y rappresenta il numero totale di utenti univoci che hanno usato un'app specifica durante il periodo di riferimento.  <br/>  Nel grafico **App** l'asse X è l'elenco di app nella propria organizzazione.  <br/>  Nel grafico **Versioni** l'asse Y è il numero totale di utenti univoci che usano una versione specifica di Outlook per il desktop. Se il report non riesce a risolvere il numero di versione di Outlook, la quantità verrà indicata come Indeterminata.  <br/>  Nel grafico **Versioni** l'asse X è l'elenco di app nella propria organizzazione.  <br/> |
-|7.  <br/> |È possibile filtrare la serie visualizzata nel grafico in base all'elemento di selectingan nella legenda. Ad esempio, nel grafico **degli utenti** , selezionare **Mac mail** o elenco di **Outlook** ![dei client di posta elettronica. Selezionare il client di posta elettronica per ottenere ulteriori dati di report su quel client.](../media/19b9da1b-7b69-4a04-8527-38349f859e84.png) per visualizzare solo le informazioni relative a ogni categoria. La modifica di questa selezione non cambia le informazioni nella tabella della griglia. Mac Mail, Outlook per Mac, Outlook Mobile, Outlook desktop e Outlook sul Web sono alcuni esempi di app di posta elettronica che potrebbero essere presenti nell'organizzazione.  <br/> |
+|7.  <br/> |È possibile filtrare la serie visualizzata nel grafico in base all'elemento di selectingan nella legenda. Ad esempio, nel grafico **degli utenti** , selezionare **Mac mail** o elenco di **Outlook** ![dei client di posta elettronica. Selezionare il client di posta elettronica per ottenere ulteriori dati di report su quel client.](../../media/19b9da1b-7b69-4a04-8527-38349f859e84.png) per visualizzare solo le informazioni relative a ogni categoria. La modifica di questa selezione non cambia le informazioni nella tabella della griglia. Mac Mail, Outlook per Mac, Outlook Mobile, Outlook desktop e Outlook sul Web sono alcuni esempi di app di posta elettronica che potrebbero essere presenti nell'organizzazione.  <br/> |
 |8.  <br/> | Non tutti gli elementi saranno visibili nelle colonne dell'elenco finché non verranno aggiunti.<br/> **Username** è il nome del proprietario dell'app di posta elettronica.  <br/> **Data ultima attività** è la data più recente in cui l'utente ha letto o inviato un messaggio di posta elettronica.  <br/> **Mac mail**, **Outlook per Mac** e **Outlook**, **Outlook Mobile** e **Outlook sul Web** sono alcuni esempi di app di posta elettronica che potrebbero essere presenti nell'organizzazione.  <br/>  Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **come nascondere i dettagli a livello di utente** nei [rapporti attività nell'interfaccia di amministrazione di Microsoft 365](activity-reports.md).  <br/> |
-|9.  <br/> |Selezionare **Gestisci colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Report di utilizzo delle app di posta elettronica-scegliere colonne](../media/c17b2a5c-db41-474a-8334-0e5a621b2f16.png)|
+|9.  <br/> |Selezionare **Gestisci colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Report di utilizzo delle app di posta elettronica-scegliere colonne](../../media/c17b2a5c-db41-474a-8334-0e5a621b2f16.png)|
 |10.  <br/> |È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  <br/> |
 |||
    

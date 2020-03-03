@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Lync e altri servizi in Google domains per Office 365.
-ms.openlocfilehash: c59a3d63797f20b0d3a42647eb68d7699ed63450
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5b72753dfdf44fa15cd0dffaa4baf61e843cf532
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244817"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42349697"
 ---
 # <a name="create-dns-records-at-google-domains-for-office-365"></a>Creare record DNS su Google Domains per Office 365
 
@@ -64,23 +64,23 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**Nome** <br/> |**Tipo** <br/> |**TTL** <br/> |**Data** <br/> |
+    |**Nome** <br/> |**Tipo** <br/> |**TTL** <br/> |**Dati** <br/> |
     |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
-4. Seleziona **Aggiungi**.
+4. Selezionare **Aggiungi**.
     
 5. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
     
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
@@ -105,11 +105,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     (You may have to scroll down.)
     
-    ![Selezionare Elimina nella sezione sintetico Records](../media/bd276b5d-5667-4bb1-a233-2dc5194e7ace.png)
+    ![Selezionare Elimina nella sezione sintetico Records](../../media/bd276b5d-5667-4bb1-a233-2dc5194e7ace.png)
   
 6. Selezionare **Elimina**.
     
-    ![Seleziona Elimina](../media/4413a45a-5b82-4ec6-82c6-0091f5be9696.png)
+    ![Seleziona Elimina](../../media/4413a45a-5b82-4ec6-82c6-0091f5be9696.png)
   
 7. In the **Custom resource records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -117,31 +117,31 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Nome**|**Tipo**|**TTL**|**Data**|
+    |**Nome**|**Tipo**|**TTL**|**Dati**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<chiave-dominio\>*  .mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **0** è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Nota:** Ottenere la \<propria *chiave* \> di dominio dall'account di Office 365.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |
+    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<chiave-dominio\>*  .mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **0** è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Nota:** ottenere il valore \<*domain-key*\> dall'account di Office 365.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |
    
-    ![Digitare o incollare i valori nella sezione Custom Resource Records](../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
+    ![Digitare o incollare i valori nella sezione Custom Resource Records](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
-5. Seleziona **Aggiungi**.
+5. Selezionare **Aggiungi**.
     
-    ![Selezionare Aggiungi](../media/32f8f23c-0b80-48da-b08e-4e04052971af.png)
+    ![Selezionare Aggiungi](../../media/32f8f23c-0b80-48da-b08e-4e04052971af.png)
   
 6. Se sono presenti altri record MX personalizzati, rimuoverli.
     
 1. Selezionare **modifica** nella riga MX record. 
     
-    ![Selezionare modifica nella riga MX record](../media/acc53ae9-3b8a-421d-8d11-d4a4108b2353.png)
+    ![Selezionare modifica nella riga MX record](../../media/acc53ae9-3b8a-421d-8d11-d4a4108b2353.png)
   
 2. Per ognuno degli altri record MX personalizzati, selezionare la voce nella casella **dati** e quindi premere **Canc** sulla tastiera per eliminare il record. 
     
     Continuare fino a eliminare la voce **Data** per tutti gli altri record MX. 
     
-    ![Delete entries in the Data box](../media/28192089-7b38-4d2e-9d52-9b83422c27d5.png)
+    ![Delete entries in the Data box](../../media/28192089-7b38-4d2e-9d52-9b83422c27d5.png)
   
 7. Quando è stata eliminata la voce di **dati** per ognuno degli altri record MX, selezionare **Salva** per salvare le modifiche. 
     
-    ![Seleziona Salva](../media/bf496d01-ccbe-4800-95f4-7b2283f2e5f6.png)
+    ![Seleziona Salva](../../media/bf496d01-ccbe-4800-95f4-7b2283f2e5f6.png)
   
 ## <a name="add-the-five-cname-records-that-are-required-for-office-365"></a>Aggiungere i cinque record CNAME necessari per Office 365
 
@@ -157,7 +157,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Nome**|**Tipo**|**TTL**|**Data**|
+    |**Nome**|**Tipo**|**TTL**|**Dati**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |1H  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |
     |sip  <br/> |CNAME  <br/> |1H  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
@@ -165,11 +165,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |enterpriseregistration  <br/> |CNAME  <br/> |1H  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |1H  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |
    
-    ![Digitare o incollare i valori nella sezione Custom Resource Records](../media/cff9832a-6d57-421f-a183-55320974ed87.png)
+    ![Digitare o incollare i valori nella sezione Custom Resource Records](../../media/cff9832a-6d57-421f-a183-55320974ed87.png)
   
-4. Seleziona **Aggiungi**.
+4. Selezionare **Aggiungi**.
     
-    ![Selezionare Aggiungi](../media/4a78080a-e0b2-4582-9696-3fe4fea41e91.png)
+    ![Selezionare Aggiungi](../../media/4a78080a-e0b2-4582-9696-3fe4fea41e91.png)
   
 5. Aggiungere gli altri quattro record CNAME.
     
@@ -180,7 +180,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Instead, add the required Office 365 values to the current record so that you have a single SPF record that includes both sets of values. Servono esempi? Vedere queste [informazioni dettagliate e record SPF di esempio](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). Per convalidare il record SPF, è possibile usare uno di questi [strumenti di convalida SPF](../setup/domains-faq.md). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Instead, add the required Office 365 values to the current record so that you have a single SPF record that includes both sets of values. Servono esempi? Vedere queste [informazioni dettagliate e record SPF di esempio](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 1. Per iniziare, passare alla propria pagina dei domini su Google Domains usando [questo collegamento](https://domains.google.com/registrar). Verrà richiesto di eseguire l'accesso. A questo scopo:
     
@@ -195,11 +195,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     > [!IMPORTANT]
     > Google Domains archivia i record TXT come un set che potrebbe contenere più record. Quando si ha almeno un altro record TXT, ad esempio il record TXT usato per verificare il dominio, è necessario aggiungere nuovi record TXT a tale set di record. Quando si tenta immettere altri record TXT come voci separate, viene generato il messaggio di errore **Duplicate record**. 
   
-    ![Selezionare modifica nella riga TXT record](../media/eae14850-8d0c-4f29-8587-df8b36129d5f.png)
+    ![Selezionare modifica nella riga TXT record](../../media/eae14850-8d0c-4f29-8587-df8b36129d5f.png)
   
 5. Selezionare il controllo **(+)** . 
     
-    ![Selezionare il controllo più](../media/628604cc-d2b2-42a5-bb5b-13c327b85d9f.png)
+    ![Selezionare il controllo più](../../media/628604cc-d2b2-42a5-bb5b-13c327b85d9f.png)
   
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
@@ -210,13 +210,13 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |v=spf1 include:spf.protection.outlook.com -all  <br/> 
 
     > [!NOTE]
-    > We recommend copying and pasting this entry, so that all of the spacing stays correct.           
+    > È consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           
    
-   ![Digitare o incollare i valori nella sezione Custom Resource Records](../media/4645cc4f-9fcc-4626-9674-072ed6fa34c2.png)
+   ![Digitare o incollare i valori nella sezione Custom Resource Records](../../media/4645cc4f-9fcc-4626-9674-072ed6fa34c2.png)
   
 7. Selezionare **Salva**.
     
-    ![Seleziona Salva](../media/20c4c926-f062-4048-9265-bf752be54e0c.png)
+    ![Seleziona Salva](../../media/20c4c926-f062-4048-9265-bf752be54e0c.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Aggiungere i due record SRV necessari per Office 365
 <a name="BKMK_add_SRV"> </a>
@@ -237,18 +237,18 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Nome**|**Tipo**|**TTL**|**Dati**|
+    |**Nome**|**Tipo**|**TTL**|**Data**|
     |:-----|:-----|:-----|:-----|
     |_sip. _tls|SRV|1H|100 1 443 sipdir.online.lync.com. **Questo valore deve terminare con un punto (.).** **Nota:** È consigliabile copiare e incollare questa voce, in modo che tutti gli spazi siano corretti.           |
     |_sipfederationtls. _tcp|SRV|1H|100 1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)**
 
-    We recommend copying and pasting this entry, so that all of the spacing stays correct.       
+    È consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.       
    
-    ![Digitare o incollare i valori nella sezione Custom Resource Records](../media/429d06a9-c0af-4961-b7d2-7a8dea6db37e.png)
+    ![Digitare o incollare i valori nella sezione Custom Resource Records](../../media/429d06a9-c0af-4961-b7d2-7a8dea6db37e.png)
   
-6. Seleziona **Aggiungi**.
+6. Selezionare **Aggiungi**.
     
-    ![Selezionare Aggiungi](../media/89df6efd-e641-4441-baa2-d9a890424569.png)
+    ![Selezionare Aggiungi](../../media/89df6efd-e641-4441-baa2-d9a890424569.png)
   
 7. Aggiungere l'altro record SRV.
     

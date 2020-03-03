@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Interfaccia di amministrazione di Microsoft 365-informazioni sulle caratteristiche che sono state aggiunte in questo mese.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: ec8b03c9d43fb44ec80f245aeac9f05463033955
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: cf5f24f21385832b151cf6ddd2337f18f5431a5d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243515"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355337"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità dell'interfaccia di amministrazione di Microsoft 365
 
@@ -54,7 +54,7 @@ Quando è stata eseguita la modalità oscura per la prima volta, è disponibile 
 
 Gli amministratori desiderano controllare in che modo Microsoft comunica "cosa c'è di nuovo" ai propri utenti nelle app di Office e ora il controllo è disponibile. Andare a **Settings** \> **Office What ' s New Management Preview**. Selezionare una funzionalità per visualizzarne i dettagli, quindi è possibile selezionare il pulsante **Nascondi da utenti** se non si desidera che gli utenti visualizzino un messaggio specifico "Novità". Ad esempio, l'organizzazione potrebbe essere in attesa di consentire agli utenti di conoscere una funzionalità fino a quando non viene addestrato a tutti i presenti nell'org.
 
-![Acquisizione dello schermo di Office What ' s New Preview con il riquadro dei dettagli di una funzionalità aperta.](media/whatsnew-officemgmt-preview.png)
+![Acquisizione dello schermo di Office What ' s New Preview con il riquadro dei dettagli di una funzionalità aperta.](../media/whatsnew-officemgmt-preview.png)
 
 Questa funzionalità è stata rilasciata per la prima volta in anteprima nel novembre, ma ci sono stati alcuni aggiornamenti delle funzionalità che è necessario conoscere: [Office What ' s New Management Preview Updates Now Available](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)
 
@@ -87,7 +87,7 @@ Combiniamo le notizie di novembre e dicembre perché dopo l'accensione sono stat
 
 Si sta iniziando a implementare la possibilità di modificare il metodo di pagamento dalla carta di credito a una fattura. Andare a prodotti per la **fatturazione** \> **& Servizi**, selezionare un abbonamento, quindi selezionare il collegamento **modifica** accanto al pagamento con carta di credito.
 
-![Acquisizione schermo: sezione fatturazione della scheda di sottoscrizione con una carta di credito come metodo di pagamento.](media/MAC-BillingEditCreditCard.png)
+![Acquisizione schermo: sezione fatturazione della scheda di sottoscrizione con una carta di credito come metodo di pagamento.](../media/MAC-BillingEditCreditCard.png)
 
 Vuoi saperne di più? [Passare dalla carta di credito o dal conto corrente bancario alla fattura](../commerce/billing-and-payments/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
 
@@ -106,7 +106,7 @@ Vuoi saperne di più? [Passare dalla carta di credito o dal conto corrente banca
 ### <a name="new-settings-page"></a>Pagina nuove impostazioni
 
 Le pagine dei componenti aggiuntivi per il **profilo dell'organizzazione**, la **sicurezza & la privacy**e i **Servizi &** sono state tutte combinate in una pagina con 3 schede verticali. E la parte migliore, da una singola posizione, è ora possibile cercare tutte le impostazioni.
-![Schermata di acquisizione: pagina impostazioni con il campo "Cerca tutte le impostazioni" evidenziato nella parte superiore della pagina.](media/MAC-SettingsMultiPivotSearch.png)
+![Schermata di acquisizione: pagina impostazioni con il campo "Cerca tutte le impostazioni" evidenziato nella parte superiore della pagina.](../media/MAC-SettingsMultiPivotSearch.png)
 
 ### <a name="training--docs"></a>Formazione & documenti
 
@@ -141,7 +141,7 @@ Sono state apportate numerose modifiche ai ruoli nell'interfaccia di amministraz
 
 - **Confronto dei ruoli** : selezionare fino a 3 ruoli per confrontare le autorizzazioni per ognuna di esse. Ciò consentirà di trovare il ruolo meno permissivo da assegnare agli utenti. Andare a **ruoli**, utilizzare la casella di controllo selezione multipla nella prima colonna per scegliere fino a 3 ruoli, quindi selezionare **Confronta ruoli**.
 
-    ![Confronto tra l'amministratore di Exchange, l'amministratore del supporto tecnico e i ruoli di amministratore utente.](media/RBAC-CompareRoles.png)
+    ![Confronto tra l'amministratore di Exchange, l'amministratore del supporto tecnico e i ruoli di amministratore utente.](../media/RBAC-CompareRoles.png)
 
 - **Preferiti** : è possibile aggiungere una stella ai ruoli preferiti o più utilizzati, in modo da poterli trovare facilmente ordinando la colonna o creando un filtro.
 - **Gestione degli utenti** > **** attivi-questo è stato aggiornato per allineare le modifiche nei ruoli. Come con l'elenco dei ruoli, l'elenco predefinito di ruoli è stato definito come più utile, ma è possibile visualizzare tutti i ruoli espandendo **Mostra tutto in base alla categoria**.
@@ -181,7 +181,7 @@ I commenti e le risposte sono stati evidenti e sono stati riportati la possibili
 - File: salvare i propri file di OneDrive e concedere l'accesso a un altro utente.
 - Autorizzazioni: rimuovere le autorizzazioni se altre dispongono dell'accesso a questa cassetta postale.
 - Alias: rimuovere gli alias di posta elettronica in modo che siano disponibili per l'utilizzo di un altro utente subito.
-![Acquisizione schermo: eliminare la creazione guidata utente con alias di posta elettronica, autorizzazioni, OneDrive e opzioni di posta elettronica visualizzate](media/WhatsNew-DeleteUserWiz.png)
+![Acquisizione schermo: eliminare la creazione guidata utente con alias di posta elettronica, autorizzazioni, OneDrive e opzioni di posta elettronica visualizzate](../media/WhatsNew-DeleteUserWiz.png)
 
 ### <a name="initial-setup"></a>Configurazione iniziale
 
@@ -217,7 +217,7 @@ Se si ha un impatto su un problema che non viene visualizzato nel dashboard di i
 
 Il centro messaggi è stato aggiornato al nuovo progetto e ha un aspetto sorprendente. 
 
-![Acquisizione schermo: centro messaggi aggiornato con la scheda ' tutti i messaggi attivi ' selezionata e il menu filtro aperto.](media/MAC-MessageCenterUpdated.png)
+![Acquisizione schermo: centro messaggi aggiornato con la scheda ' tutti i messaggi attivi ' selezionata e il menu filtro aperto.](../media/MAC-MessageCenterUpdated.png)
 
 - È ora possibile visualizzare **i messaggi in base allo stato**. È sufficiente selezionare una delle schede: **tutti i messaggi attivi**, la **priorità alta**, **i messaggi non letti**e **i messaggi ignorati**.
 - È inoltre possibile filtrare in base alla **privacy dei dati**delle categorie, **pianificare la modifica**, **prevenire o risolvere i problemi**e mantenere le categorie di messaggi **informate** .
@@ -268,7 +268,7 @@ La visualizzazione dell'interfaccia di amministrazione in modalità oscura è in
 ### <a name="roles-management"></a>Gestione dei ruoli
 
 Alla fine di giugno sono stati avviati nuovi modi per gestire i ruoli di amministratore. Quando è disponibile per l'utente,**** passare a **** > ruoli ruoli. Fino ad allora, dai un'occhiata-è impressionante!
-<br> ![Acquisizione schermo: elenco dei ruoli di amministratore con il riquadro dettagli ruolo di amministratore evidenziato.](media/MAC-AdminRoles-Featured.png) <br>
+<br> ![Acquisizione schermo: elenco dei ruoli di amministratore con il riquadro dettagli ruolo di amministratore evidenziato.](../media/MAC-AdminRoles-Featured.png) <br>
 
 Questa nuova esperienza rende più facile vedere chi ha le autorizzazioni di amministratore e assegnare ruoli che conferiscono il livello di accesso appropriato agli amministratori. Inoltre, sono stati aggiunti altri ruoli da Azure AD, in modo da non perdere tempo per passare a più centri di amministrazione.
 Cos'altro è possibile eseguire qui?
@@ -305,7 +305,7 @@ Le attività sono ottimali per l'interfaccia di amministrazione. Sono state legg
 ### <a name="featured-feature---add-users"></a>Feature in primo piano-aggiungere utenti
 
 Per aprile, è presente la procedura guidata **Aggiungi utente** che illustra i passaggi... Aspetta... Aggiunta di utenti. Si tratta di una procedura dettagliata per aggiungere le informazioni di base dell'utente come la posta elettronica e il nome visualizzato, l'assegnazione di una licenza e un ruolo, l'aggiunta di informazioni di contatto e la revisione dell'account dell'utente prima di eseguire il commit. **Perché è stata apportata questa modifica?** Sono stati apportati commenti e suggerimenti che non sono stati graditi dall'infinità dello scorrimento per aggiungere utenti nell'esperienza precedente.
-<br> ![Acquisizione dello schermo della procedura guidata per l'aggiunta di utenti.](media/MAC-AddUserWizard.png) <br>
+<br> ![Acquisizione dello schermo della procedura guidata per l'aggiunta di utenti.](../media/MAC-AddUserWizard.png) <br>
 
 È possibile effettuare il check-out in due modi: <br>
 
@@ -334,7 +334,7 @@ Sono state apportate alcune altre modifiche alla **gestione degli utenti**, ecco
 ## <a name="march-2019---weve-officially-released-the-admin-center"></a>2019 marzo-abbiamo rilasciato ufficialmente l'interfaccia di amministrazione!
 
 Ebbene, se si sono perse le notizie entusiasmanti, è stata ufficialmente rilasciata la nuova e migliorata interfaccia di amministrazione di Microsoft 365. Di seguito è indicato il post di Blog in cui è stato annunciato: [il nuovo interfaccia di amministrazione di Microsoft 365 disponibile oggi](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/The-new-Microsoft-365-admin-center-available-today/ba-p/377870). Per marzo, faremo affidamento sul post di Blog per controllare le funzionalità rilasciate-Plus, è anche possibile leggere il post per le caratteristiche che vengono rilasciate nel prossimo futuro, cosa che non è consentito eseguire nel contenuto di base.
-<br> ![Acquisizione dello schermo della Home page dell'interfaccia di amministrazione di Microsoft 365.](media/M365AC-HomePage.png) <br>
+<br> ![Acquisizione dello schermo della Home page dell'interfaccia di amministrazione di Microsoft 365.](../media/M365AC-HomePage.png) <br>
 Si dispone di una modifica all'area **fatturazione & abbonamenti** che si desidera menzionare. Insomma, tutti voi non credevamo che avessimo smesso di migliorare, vero? Perché non lo siamo. Questo mese, infatti, è stata aggiunta la possibilità di gestire le relazioni con i **partner per gli** > **account di fatturazione**. Da qui è possibile esaminare le relazioni con i partner tra consulenti, CSP e rivenditori indiretti. È inoltre possibile accettare nuove richieste di relazione partner, incluse le autorizzazioni di amministratore Delegate.
 
 Come sempre, il feedback è importante per noi, quindi continua a venire! In qualsiasi pagina dell'interfaccia di amministrazione, è possibile fornire commenti e suggerimenti selezionando **Invia commenti e suggerimenti** in basso a destra, accanto a **bisogno di assistenza?**
@@ -375,27 +375,27 @@ Check it out: **gli utenti > utenti attivi > modificare** o **aggiungere licenze
 
 ## <a name="november-2018"></a>Novembre 2018
 
-- La casella di ricerca è tornata! E lo spostammo leggermente. È ancora nella parte superiore della Home page, ma è ora sul lato destro della pagina accanto al pulsante **Aggiungi scheda** . <br> ![Acquisizione dello schermo che spiega che la casella di ricerca si trova nel lato superiore destro della Home page.](media/M365PreviewSearchBox.png)
+- La casella di ricerca è tornata! E lo spostammo leggermente. È ancora nella parte superiore della Home page, ma è ora sul lato destro della pagina accanto al pulsante **Aggiungi scheda** . <br> ![Acquisizione dello schermo che spiega che la casella di ricerca si trova nel lato superiore destro della Home page.](../media/M365PreviewSearchBox.png)
 
 - Sono state aggiunte schede per il dashboard. Basta andare all'interfaccia di amministrazione e selezionare **Aggiungi scheda** per visualizzare le nuove schede:
   - **Report di office 365 Active users** -monitorare l'utilizzo dei servizi di Office 365 acquistati.
   - **Office 365 software** -installare o distribuire Office 365 ProPlus software e vedere il numero di utenti con licenza attivati.
   - **Azure Active Directory** : consente di accedere rapidamente alle attività comuni di Azure ad, come la reimpostazione delle password self-service, la personalizzazione dell'accesso e l'aggiunta di app.
-- L'attività di **esportazione rapida degli utenti** è stata aggiunta alla barra dei comandi nella pagina utenti attivi. ![Acquisizione dello schermo che Mostra gli utenti di esportazione sulla barra dei comandi accanto a Aggiorna.](media/M365PreviewExportUsersQT.png)
-- Per i servizi di acquisto sono disponibili ulteriori miglioramenti per novembre. E sono tutti buoni! Per arrivarci, vai a fatturazione > acquisto di servizi. <br>![Acquisizione schermata che mostra i servizi di acquisto pagina con 3 nuovi miglioramenti.](media/M365PreviewBillingPurchasServices.png)
+- L'attività di **esportazione rapida degli utenti** è stata aggiunta alla barra dei comandi nella pagina utenti attivi. ![Acquisizione dello schermo che Mostra gli utenti di esportazione sulla barra dei comandi accanto a Aggiorna.](../media/M365PreviewExportUsersQT.png)
+- Per i servizi di acquisto sono disponibili ulteriori miglioramenti per novembre. E sono tutti buoni! Per arrivarci, vai a fatturazione > acquisto di servizi. <br>![Acquisizione schermata che mostra i servizi di acquisto pagina con 3 nuovi miglioramenti.](../media/M365PreviewBillingPurchasServices.png)
   > 1.  Nella parte superiore della pagina, è possibile pivot tra i piani di business e dell'istruzione. Questo ti aiuterà a trovare quello che stai cercando.
   > 2.  È stata aggiunta una casella di ricerca in modo da non dover scorrere all'infinito per trovare ciò che si sta cercando.
   > 3.  Infine, sono stati ordinati logicamente i piani che è possibile acquistare in sezioni che è possibile espandere e comprimere. Non è necessario acquistare le **app e i servizi di Office**? Comprimere la sezione e concentrarsi sui piani di Microsoft 365.
 
 ## <a name="october-2018"></a>Ottobre 2018
 
-- C'è un nuovo modo di acquistare abbonamenti nell'interfaccia di amministrazione di Microsoft 365. Accedere a **servizi di acquisto** per visualizzare l'esperienza di acquisto completamente riprogettata che rende più semplice la ricerca, il confronto di piani e altre nuove funzionalità che facilitano l'acquisto di un abbonamento. <br/>![Confronto dei piani di servizi di acquisto nell'anteprima dell'interfaccia di amministrazione di Microsoft 365](media/0ad5acf1-8ffc-44bf-aac2-c21269910e65.png)
+- C'è un nuovo modo di acquistare abbonamenti nell'interfaccia di amministrazione di Microsoft 365. Accedere a **servizi di acquisto** per visualizzare l'esperienza di acquisto completamente riprogettata che rende più semplice la ricerca, il confronto di piani e altre nuove funzionalità che facilitano l'acquisto di un abbonamento. <br/>![Confronto dei piani di servizi di acquisto nell'anteprima dell'interfaccia di amministrazione di Microsoft 365](../media/0ad5acf1-8ffc-44bf-aac2-c21269910e65.png)
 
-- La pagina **Servizi e componenti** aggiuntivi è stata aggiornata per il nuovo aspetto, ma tutto il resto è esattamente lo stesso. Naturalmente, è consigliabile estrarre la barra dei comandi per visualizzare le nuove operazioni che è possibile eseguire, ad esempio il filtro e la modifica dell'elenco in visualizzazione compatta. Nel riquadro di spostamento, accedere ai **** \> **componenti aggiuntivi &amp; Servizi** impostazioni per estrarla. <br/>![Pagina impostazioni e componenti aggiuntivi nell'anteprima dell'interfaccia di amministrazione di Microsoft 365](media/af9a3ed3-bfe6-438b-b4b5-2ca4164f8e3f.png)
+- La pagina **Servizi e componenti** aggiuntivi è stata aggiornata per il nuovo aspetto, ma tutto il resto è esattamente lo stesso. Naturalmente, è consigliabile estrarre la barra dei comandi per visualizzare le nuove operazioni che è possibile eseguire, ad esempio il filtro e la modifica dell'elenco in visualizzazione compatta. Nel riquadro di spostamento, accedere ai **** \> **componenti aggiuntivi &amp; Servizi** impostazioni per estrarla. <br/>![Pagina impostazioni e componenti aggiuntivi nell'anteprima dell'interfaccia di amministrazione di Microsoft 365](../media/af9a3ed3-bfe6-438b-b4b5-2ca4164f8e3f.png)
 
 ## <a name="september-2018"></a>Settembre 2018
 
-- **Miglioramenti della casa** La Home page è stata completamente rieseguita e non è possibile attendere che tu lo provi e Vedi cosa pensi. Questa è la Home page personale e non influenzerà le Home page di altri amministratori dell'organizzazione. <br/>![Acquisizione schermo: Home page di Microsoft 365 Admin Center Preview.](media/d1a497f1-30e6-4c1a-9bb2-d4d7895906da.png)
+- **Miglioramenti della casa** La Home page è stata completamente rieseguita e non è possibile attendere che tu lo provi e Vedi cosa pensi. Questa è la Home page personale e non influenzerà le Home page di altri amministratori dell'organizzazione. <br/>![Acquisizione schermo: Home page di Microsoft 365 Admin Center Preview.](../media/d1a497f1-30e6-4c1a-9bb2-d4d7895906da.png)
 
   - È possibile aggiungere, rimuovere e spostare le schede Home page attorno alla Home page. Selezionare **+ Aggiungi carta** nell'angolo in alto a destra per vedere quali schede sono disponibili nella raccolta schede e quindi trascinarle in un punto qualsiasi della Home page. Non ti piace dove è atterrato? Trascinalo nel punto desiderato. Non è neanche necessario salvare altro.
 
@@ -403,22 +403,22 @@ Check it out: **gli utenti > utenti attivi > modificare** o **aggiungere licenze
 
   - La maggior parte delle schede sono informative e utilizzabili, il che significa che sarà possibile fornire informazioni just-in-time che consentono di eseguire le attività quotidiane in modo più rapido ed elegante.
 
-  - Il riquadro di spostamento è stato riorganizzato ed è possibile personalizzarlo per le attività rapide. È sufficiente selezionare **modifica** dalla parte inferiore del riquadro di spostamento per avviare la personalizzazione. <br/>![Riquadro di spostamento dell'anteprima dell'interfaccia di amministrazione di Microsoft 365](media/7d5568cc-9ce8-40b2-aa87-e777fcd455e3.png)
+  - Il riquadro di spostamento è stato riorganizzato ed è possibile personalizzarlo per le attività rapide. È sufficiente selezionare **modifica** dalla parte inferiore del riquadro di spostamento per avviare la personalizzazione. <br/>![Riquadro di spostamento dell'anteprima dell'interfaccia di amministrazione di Microsoft 365](../media/7d5568cc-9ce8-40b2-aa87-e777fcd455e3.png)
 
 - **Fatturazione** È probabile che si notino alcune delle modifiche più importanti all'interfaccia di amministrazione di Microsoft 365 nella sezione fatturazione. È possibile gestire gli abbonamenti e le app acquistati da Microsoft o da un altro fornitore, incluse nuove esperienze per la gestione dell'inventario, la cronologia degli ordini, i metodi di pagamento e la fatturazione.
 
-  - La gestione della sottoscrizione è stata riprogettata per offrire una nuova esperienza di gestione dell'inventario per più tipi di prodotto, tra cui app, software e componenti aggiuntivi. Ora è denominato **servizi prodotti &amp; ** per riflettere meglio il supporto per i nuovi tipi di prodotto da aggiungere. È ora possibile scegliere di disporre di una scheda o di una visualizzazione tabella dei prodotti e servizi ed è possibile cercare e filtrare per trovare rapidamente ciò che si sta cercando. <br/>![Prodotti e servizi nell'anteprima dell'interfaccia di amministrazione di Microsoft 365](media/f1bba7dc-2034-4a53-b4ad-b7fbef3fb442.png)
+  - La gestione della sottoscrizione è stata riprogettata per offrire una nuova esperienza di gestione dell'inventario per più tipi di prodotto, tra cui app, software e componenti aggiuntivi. Ora è denominato **servizi prodotti &amp; ** per riflettere meglio il supporto per i nuovi tipi di prodotto da aggiungere. È ora possibile scegliere di disporre di una scheda o di una visualizzazione tabella dei prodotti e servizi ed è possibile cercare e filtrare per trovare rapidamente ciò che si sta cercando. <br/>![Prodotti e servizi nell'anteprima dell'interfaccia di amministrazione di Microsoft 365](../media/f1bba7dc-2034-4a53-b4ad-b7fbef3fb442.png)
 
-  - Ora è più facile che mai assegnare una licenza di prodotto agli utenti. Selezionare il prodotto acquistato, quindi è possibile assegnare il prodotto. È anche possibile vedere a quali utenti è già stato assegnato un prodotto specifico. <br/>![Dettagli del prodotto da fatturazione nell'anteprima dell'interfaccia di amministrazione di Microsoft 365](media/82422685-e1b7-4f3f-aea8-1819df9d9311.png)
+  - Ora è più facile che mai assegnare una licenza di prodotto agli utenti. Selezionare il prodotto acquistato, quindi è possibile assegnare il prodotto. È anche possibile vedere a quali utenti è già stato assegnato un prodotto specifico. <br/>![Dettagli del prodotto da fatturazione nell'anteprima dell'interfaccia di amministrazione di Microsoft 365](../media/82422685-e1b7-4f3f-aea8-1819df9d9311.png)
 
   - I **piani degli switch** sono ora denominati * * upgrade * * e infine gli aggiornamenti della sottoscrizione avvengono dietro le quinte, quindi non è necessario guardare l'aggiornamento completo. Infine, non esiste più una limitazione di licenza per gli aggiornamenti.
 
 - **Gestione degli utenti** Sono state apportate numerose modifiche alla gestione degli utenti per velocizzare il lavoro. È stata aggiornata la pagina * * utenti attivi * * e il riquadro dei dettagli dell'utente. Di seguito sono riportate alcune delle modifiche più impressionanti:
 
-  - La pagina **utenti attivi** contiene una nuova struttura e un nuovo layout. Non ti piace la modalità di visualizzazione dell'elenco? Selezionare **Cambia visualizzazione** (accanto a **filtro**) ed è possibile modificare l'elenco dall'elenco **normale** all' **elenco compatto**. Elenco compatto è particolarmente utile se sono presenti molti utenti nell'organizzazione. <br/>![Pagina utenti attivi in anteprima](media/4dd9f1c9-ef23-4194-9ff8-5206ba2930f8.png)
+  - La pagina **utenti attivi** contiene una nuova struttura e un nuovo layout. Non ti piace la modalità di visualizzazione dell'elenco? Selezionare **Cambia visualizzazione** (accanto a **filtro**) ed è possibile modificare l'elenco dall'elenco **normale** all' **elenco compatto**. Elenco compatto è particolarmente utile se sono presenti molti utenti nell'organizzazione. <br/>![Pagina utenti attivi in anteprima](../media/4dd9f1c9-ef23-4194-9ff8-5206ba2930f8.png)
 
-  - La barra dei comandi (dove vive la **ricerca** ) è dinamica e l'elenco delle azioni cambierà a seconda del numero di utenti selezionati: non sono presenti utenti, un utente o più utenti. Vedrai anche quanti utenti sono stati selezionati accanto a **Cerca**. <br/>![Microsoft 365 Preview Active users bar Command.](media/9576bd19-31a5-4e59-a8dd-0663a833def0.png)
+  - La barra dei comandi (dove vive la **ricerca** ) è dinamica e l'elenco delle azioni cambierà a seconda del numero di utenti selezionati: non sono presenti utenti, un utente o più utenti. Vedrai anche quanti utenti sono stati selezionati accanto a **Cerca**. <br/>![Microsoft 365 Preview Active users bar Command.](../media/9576bd19-31a5-4e59-a8dd-0663a833def0.png)
 
   - È possibile eseguire attività rapide come la reimpostazione delle password per singoli o più utenti direttamente dalla visualizzazione elenco.
 
-  - I dettagli e le impostazioni dell'utente sono ora organizzati dalle seguenti schede: **account**, **dispositivi**, **licenze**, **app**, **posta**e **OneDrive**. In precedenza, molte di queste impostazioni erano situate su più schermate. <br/>![Riquadro dei dettagli degli utenti nell'anteprima dell'interfaccia di amministrazione.](media/60c6b9d3-d62f-4b8d-97db-41ff247b1bf0.png)<br/>
+  - I dettagli e le impostazioni dell'utente sono ora organizzati dalle seguenti schede: **account**, **dispositivi**, **licenze**, **app**, **posta**e **OneDrive**. In precedenza, molte di queste impostazioni erano situate su più schermate. <br/>![Riquadro dei dettagli degli utenti nell'anteprima dell'interfaccia di amministrazione.](../media/60c6b9d3-d62f-4b8d-97db-41ff247b1bf0.png)<br/>

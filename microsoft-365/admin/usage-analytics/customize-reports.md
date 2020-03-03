@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Informazioni su come personalizzare i report nel desktop del browser e Power BI.
-ms.openlocfilehash: 5fc3b399638b2f1e9b1b2726fbf58e22eda33e01
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6e4bb6cf977607ca6e3b3f57240ac89dbd530e4f
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244217"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42355157"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalizzare i report nell'analisi dell'utilizzo di Microsoft 365
 
@@ -42,19 +42,19 @@ In questo esempio viene illustrato come modificare la scheda **attivazione** all
   
 1. All'interno del rapporto di **attivazione/gestione delle licenze** , fare clic sulla scheda **attivazione** .
     
-2. Immettere la modalità di modifica facendo clic sul pulsante **modifica** nella parte superiore tramite ![il pulsante altro pagina nel pulsante Power](../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) bi. 
+2. Immettere la modalità di modifica facendo clic sul pulsante **modifica** nella parte superiore tramite ![il pulsante altro pagina nel pulsante Power](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) bi. 
     
-    ![Click Edit report on the top right navigation](../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
+    ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
 3. In alto a destra, fare clic su **Duplica questa pagina**.
     
-    ![Choose Duplicate this page](../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
+    ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
 4. In basso a destra, fare clic su uno dei grafici a barre che mostra il numero di utenti che si attivano in base al sistema operativo, ad esempio Android, iOS, Mac e così via.
     
 5. Nell'area **visualizzazioni** a destra, per rimuovere **Mac count** dall'elemento visivo, fare clic sulla **X** accanto ad essa.
 
-    ![Rimuovi conteggio Mac](../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
+    ![Rimuovi conteggio Mac](../../media/ce3d8358-df57-4f64-bd25-ac5be7fc8713.png)    
     
 ### <a name="create-a-new-visual"></a>Creare un nuovo oggetto visivo
 
@@ -62,13 +62,13 @@ L'esempio seguente illustra come creare un nuovo oggetto visivo per tenere tracc
   
 1. Accedere al report **sull'utilizzo del prodotto** usando il NAV sinistro e fare clic sulla scheda **Yammer** .
     
-2. Passare alla modalità di modifica facendo clic ![sul pulsante altro pagina in Power bi](../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) e **modifica**. 
+2. Passare alla modalità di modifica facendo clic ![sul pulsante altro pagina in Power bi](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) e **modifica**. 
     
-3. Nella parte inferiore della pagina, fare clic su ![Pulsante Aggiungi pagina in Power BI](../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) per creare una nuova pagina.
+3. Nella parte inferiore della pagina, fare clic su ![Pulsante Aggiungi pagina in Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) per creare una nuova pagina.
   
 4. Nell'area **visualizzazioni** a destra fare clic sul **grafico a barre in pila** (riga superiore, primo da sinistra).
 
-    ![Seleziona grafico a barre](../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
+    ![Seleziona grafico a barre](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
 5. Fare clic sull'angolo inferiore destro della visualizzazione e trascinarla per ingrandirla.
 
@@ -76,7 +76,7 @@ L'esempio seguente illustra come creare un nuovo oggetto visivo per tenere tracc
 
 7. Trascinare **MonthName** nell'area campi, direttamente sotto l'intestazione **Asse** nell'area **Visualizzazioni**.
  
-    ![Nome del mese di trascinamento](../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![Nome del mese di trascinamento](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
     
 8. Nell'area **Campi** a destra espandere la tabella **TenantProductUsage**.
 
@@ -86,9 +86,9 @@ L'esempio seguente illustra come creare un nuovo oggetto visivo per tenere tracc
 
 11. Nell'area **Tipo di filtro** che viene visualizzata, selezionare la casella di controllo **Yammer**.
 
-    ![Selezionare la casella di controllo Yammer](../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![Selezionare la casella di controllo Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Appena sotto l'elenco delle visualizzazioni, fare clic sull' **icona formato formato icona** ![in Power bi Visualizaions](../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png).
+12. Appena sotto l'elenco delle visualizzazioni, fare clic sull' **icona formato formato icona** ![in Power bi Visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png).
 
 13. Espandere Titolo e cambiare il valore **Testo titolo** in **Nuovi utenti di Yammer per mese**.
     
@@ -112,7 +112,7 @@ Per la maggior parte dei clienti è sufficiente modificare i report e gli oggett
     
     **Nota:** Le API dei report sono in anteprima e sono soggette a modifiche fino a quando non entrano in produzione. 
   
-    ![OData feed URL for Power BI desktop](../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
+    ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
 3. Immettere le credenziali di amministratore di Microsoft 365 (organizzazione o scuola) per l'autenticazione a Microsoft 365 quando richiesto.
     
@@ -124,7 +124,7 @@ Per la maggior parte dei clienti è sufficiente modificare i report e gli oggett
     
     I dati verranno in Power BI Desktop. Salvare questo file per iniziare a creare i report necessari.
     
-    ![Valori ODATA disponibili nell'API dei report](../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
+    ![Valori ODATA disponibili nell'API dei report](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>Utilizzare il modello di analisi dei dati di utilizzo di Microsoft 365
 
@@ -136,7 +136,7 @@ Per la maggior parte dei clienti è sufficiente modificare i report e gli oggett
     
 2. Immettere il valore dell'ID tenant nella finestra di dialogo.
     
-    ![Enter your tenant ID to open the pbit file](../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
+    ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
 3. Quando richiesto, immettere le credenziali di amministratore per eseguire l'autenticazione a Microsoft 365.
     

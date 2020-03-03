@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Informazioni su come annullare la versione di valutazione o di sottoscrizione a pagamento di Office 365 for business o Microsoft 365.
-ms.openlocfilehash: d3590f224757265af3107566023413d276443c46
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241897"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354597"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -64,7 +64,7 @@ Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento,
 
 3. Scegliere **Annulla sottoscrizione**dal menu **altre azioni** .
 
-    ![Chiudere il menu altre azioni.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Chiudere il menu altre azioni.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Esaminare le date importanti, fornire commenti e suggerimenti sul perché si sta annullando, quindi selezionare **Annulla sottoscrizione**.
 
@@ -80,7 +80,7 @@ Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento,
 
 3. Scegliere **Annulla sottoscrizione**dal menu **altre azioni** .
 
-    ![Chiudere il menu altre azioni.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Chiudere il menu altre azioni.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
 4. Esaminare le date importanti, fornire commenti e suggerimenti sul perché si sta annullando, quindi selezionare **Annulla sottoscrizione**.
 

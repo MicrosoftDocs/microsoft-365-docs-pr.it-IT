@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ce30fa7aab7e5a6ebe4428cbef88711473d34fd4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 31d9306ecc6a32ddc59edec09413f2f7625c1a1a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256566"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42358957"
 ---
 # <a name="contact-support-for-faroe-islands"></a>Contattare il supporto per le Isole Faroe
 

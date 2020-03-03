@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Ottenere il report attività di Yammer e sapere di più sul numero di utenti che utilizzano Yammer per inviare, come, o leggere un messaggio.
-ms.openlocfilehash: 0b6e7feb1d80ddc56c9ea172fa3c7e91ea0903b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: e4e51707aa487486e2d41d5d8bd4e84294c36ef2
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241750"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353517"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Report di Office 365 nell'interfaccia di amministrazione-report attività di Yammer
 
@@ -44,7 +44,7 @@ Come amministratore Microsoft 365, nel dashboard **report** sono riportati i dat
 
 Per avere una visuale delle attività degli utenti in Yammer, è possibile osservare i grafici Attività e Utenti.
   
-![Report attività di Yammer](../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
+![Report attività di Yammer](../../media/92e8b2c6-166a-4154-9824-3fb6bbedf0db.JPG)
   
 Il report attività contiene le informazioni seguenti.
   
@@ -54,13 +54,13 @@ Il report attività contiene le informazioni seguenti.
     
 - Il grafico **Attività** consente di interpretare la tendenza delle attività in Yammer all'interno dell'organizzazione, suddividendo i messaggi pubblicati, letti o a cui è stato aggiunto Mi piace. 
     
-    ![Visualizzazione attività nel report attività di Yammer](../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
+    ![Visualizzazione attività nel report attività di Yammer](../../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
   
   - Nel grafico **Attività** l'asse Y indica il numero delle attività di pubblicazione, lettura e aggiunta di Mi piace ai messaggi. 
     
 - Il grafico **Utenti** consente di interpretare la tendenza degli utenti che generano le attività in Yammer, esaminando gli utenti che pubblicano, leggono a aggiungono Mi piace ai messaggi in Yammer. 
     
-    ![Visualizzazione degli utenti nel report attività di Yammer](../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
+    ![Visualizzazione degli utenti nel report attività di Yammer](../../media/b1098162-7b79-430f-bfe4-9d3957d56885.JPG)
   
   - Nel grafico **Utenti** l'asse Y indica l'utente che pubblica, legge o aggiunge Mi piace ai messaggi in Yammer. 
     
@@ -68,7 +68,7 @@ Il report attività contiene le informazioni seguenti.
     
 - È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. Ad esempio, nel grafico **attività** selezionare **postato**, **letto**o **apprezzato** per visualizzare solo le informazioni relative a ognuna di esse. 
     
-    ![Opzioni registrate, lette e apprezzate](../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
+    ![Opzioni registrate, lette e apprezzate](../../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
   
     La modifica di questa selezione non cambia le informazioni nella tabella della griglia.
     
@@ -76,7 +76,7 @@ Il report attività contiene le informazioni seguenti.
     
     È possibile usare il menu per filtrare e ordinare i dati.
     
-    ![Opzioni di menu per i report di Yammer](../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
+    ![Opzioni di menu per i report di Yammer](../../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
   
     È anche possibile aggiungere e rimuovere le colonne. Le colonne disponibili sono:
     

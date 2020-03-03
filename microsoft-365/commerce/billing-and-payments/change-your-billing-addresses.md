@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Informazioni su come aggiornare gli indirizzi di fatturazione per Office 365 for business. È inoltre possibile aggiornare l'indirizzo di posta elettronica utilizzato per ricevere le notifiche di fatturazione.
 ms.custom: okr_SMB
-ms.openlocfilehash: c3d15417eed227d7e9ea94abf7fe4aa7a2eff98a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8cf7a8a8ac3414e8c40a1642b33e36f9b5cdf1a9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242463"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42354757"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>Cambiare gli indirizzi di fatturazione per Office 365 per le aziende
 
@@ -95,7 +95,7 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 2. Selezionare l'abbonamento che si desidera modificare, quindi selezionare **Modifica dettagli pagamento**.
 
-    ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../../admin/media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
+    ![The Payment method section of a Subscription card for a subscription that pays by credit card.](../../media/6c9d9cae-6086-4687-a979-bb971f35f1b4.png)
   
 3. *Clienti della carta di credito e del conto corrente bancario:*  Nella pagina **Modifica dettagli pagamento** selezionare la carta di credito o il conto corrente bancario che si desidera aggiornare, selezionare **Modifica dettagli**, aggiornare l'indirizzo di fatturazione e quindi fare clic su **Invia**.
   
@@ -115,7 +115,7 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 2. Selezionare l'abbonamento che si desidera modificare, quindi selezionare **Modifica dettagli pagamento**.
 
-    ![The Payment method section of a Subscription card for a subscription that pays by invoice.](../../admin/media/51ab38aa-6e15-4e51-9f27-261c38c98fed.png)
+    ![The Payment method section of a Subscription card for a subscription that pays by invoice.](../../media/51ab38aa-6e15-4e51-9f27-261c38c98fed.png)
   
 3. Nella pagina **Modifica dettagli pagamento** aggiornare l'indirizzo di fatturazione e quindi fare clic su **Invia**.
 
@@ -141,7 +141,7 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 2. Selezionare l'abbonamento che si desidera modificare, fare clic su **altre azioni**e quindi su **modifica indirizzo di utilizzo del servizio**.
 
-    ![Chiudere il menu altre azioni.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Chiudere il menu altre azioni.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
 3. Nel riquadro **modifica il tuo** indirizzo di utilizzo del servizio, aggiornare l'indirizzo, quindi selezionare **Invia**.
 
@@ -153,7 +153,7 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere [View your Bill or get 
 
 2. Selezionare l'abbonamento che si desidera modificare, fare clic su **altre azioni**e quindi su **modifica indirizzo di utilizzo del servizio**.
 
-    ![Chiudere il menu altre azioni.](../../admin/media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Chiudere il menu altre azioni.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
 3. Nel riquadro **modifica il tuo** indirizzo di utilizzo del servizio, aggiornare l'indirizzo, quindi selezionare **Invia**.
 

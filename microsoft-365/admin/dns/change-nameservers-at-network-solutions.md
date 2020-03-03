@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'Informazioni su come configurare il dominio personalizzato di Office 365 con soluzioni di rete se si desidera che Office 365 gestisca i record DNS. '
-ms.openlocfilehash: c9465da507e6b4dea35f9ead50b5bc7c14a1b38f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5eae7561baa6e0efb4436e6758d3fd972a2700cc
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242612"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42351757"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-network-solutions"></a>Modificare i server dei nomi per configurare Office 365 con Network Solutions
 
@@ -48,25 +48,25 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:47)](
     > [!IMPORTANT]
     > Prima di selezionare il pulsante di **accesso** , selezionare First **Manage My Domain Names** nell'elenco **a discesa log in to:** .
   
-    ![Scegliere Manage My Domain Names e accedere a Network Solutions](../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
+    ![Scegliere Manage My Domain Names e accedere a Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
 2. Selezionare la casella di controllo accanto al nome del dominio da modificare.
     
-    ![Selezionare la casella di controllo per il dominio](../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
+    ![Selezionare la casella di controllo per il dominio](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
 3. Selezionare **modifica DNS**.
     
-    ![Selezionare modifica DNS](../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Selezionare modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Selezionare **Gestisci record DNS avanzati**.
     
     (You may have to scroll down.)
     
-    ![Selezionare Gestisci record DNS avanzati](../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Selezionare Gestisci record DNS avanzati](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
 5. Scorrere verso il basso fino alla sezione **Text (TXT Records)** e quindi scegliere **Edit TXT Records**.
     
-    ![Selezionare Modifica record TXT](../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+    ![Selezionare Modifica record TXT](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
@@ -75,30 +75,30 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:47)](
 |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota**: questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)
    
     
-   ![Digitare o incollare i valori nelle caselle per il nuovo record](../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
+   ![Digitare o incollare i valori nelle caselle per il nuovo record](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
 7. Selezionare **continua**.
     
-    ![Seleziona continua](../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
+    ![Seleziona continua](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
 8. Selezionare **Salva modifiche**.
     
-    ![Selezionare Salva modifiche](../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
+    ![Selezionare Salva modifiche](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
 9. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
     
   
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
     
     
   
@@ -107,7 +107,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
   
 > [!NOTE]
->  In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o altro dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modificare i record dei server dei nomi del dominio
 
@@ -126,19 +126,19 @@ Modificare i record NS per consentire a Office 365 di configurare il dominio Seg
     > [!IMPORTANT]
     > Prima di selezionare il pulsante di **accesso** , selezionare First **Manage My Domain Names** nell'elenco **a discesa log in to:** . 
   
-    ![Scegliere Manage My Domain Names e accedere a Network Solutions](../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
+    ![Scegliere Manage My Domain Names e accedere a Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
 2. Selezionare la casella di controllo accanto al nome del dominio da modificare.
     
-    ![Selezionare la casella di controllo per il dominio](../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
+    ![Selezionare la casella di controllo per il dominio](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
 3. Selezionare **modifica DNS**.
     
-    ![Selezionare modifica DNS](../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Selezionare modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Selezionare **Sposta DNS**.
     
-    ![NetworkSolutionsBP-redelegate-1-1](../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
+    ![NetworkSolutionsBP-redelegate-1-1](../../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
   
 5. A seconda che siano o meno già presenti server dei nomi nella pagina visualizzata, continuare con una delle due procedure seguenti:
     
@@ -150,7 +150,7 @@ Modificare i record NS per consentire a Office 365 di configurare il dominio Seg
 
 1. Nella sezione **specificare Domain Name Servers** della pagina **Domains** selezionare **Add more name servers**.
     
-    ![NetworkSolutionsBP-redelegate-1-2-1](../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 2. Nella pagina **Domain Names** digitare o copiare e incollare i valori del server dei nomi dalla tabella seguente. 
     
@@ -162,15 +162,15 @@ Modificare i record NS per consentire a Office 365 di configurare il dominio Seg
 |**Name Server 2** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-redelegate-1-2-2](../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-redelegate-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
 3. Selezionare **Sposta DNS**.
     
-    ![NetworkSolutionsBP-redelegate-1-2-3](../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-redelegate-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
 4. Selezionare **Salva modifiche**.
     
-    ![NetworkSolutionsBP-redelegate-1-2-4](../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-redelegate-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
 > L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Al termine, la posta elettronica e altri servizi di Office 365 verranno tutti impostati per funzionare con il dominio. 
@@ -182,11 +182,11 @@ Modificare i record NS per consentire a Office 365 di configurare il dominio Seg
   
 1. Se sono già presenti server dei nomi, eliminarli selezionando ogni server e premendo **CANC**.
     
-    ![NetworkSolutions-BP-redelegate-1-5](../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
+    ![NetworkSolutions-BP-redelegate-1-5](../../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
   
 2. Selezionare **Add more name servers**.
     
-    ![NetworkSolutionsBP-redelegate-1-2-1](../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
+    ![NetworkSolutionsBP-redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
 3. Nella pagina **Domain Names** digitare o copiare e incollare i valori del server dei nomi dalla tabella seguente.
  
@@ -199,15 +199,15 @@ Modificare i record NS per consentire a Office 365 di configurare il dominio Seg
 |**Name Server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
     
-![NetworkSolutionsBP-redelegate-1-2-2](../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
+![NetworkSolutionsBP-redelegate-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
 4. Selezionare **Sposta DNS**.
     
-    ![NetworkSolutionsBP-redelegate-1-2-3](../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
+    ![NetworkSolutionsBP-redelegate-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
 5. Selezionare **Salva modifiche.**
     
-    ![NetworkSolutionsBP-redelegate-1-2-4](../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
+    ![NetworkSolutionsBP-redelegate-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
 > L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Al termine, la posta elettronica e altri servizi di Office 365 verranno tutti impostati per funzionare con il dominio.

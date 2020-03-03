@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Ottenere un rapporto sui gruppi di Microsoft 365 per conoscere i gruppi e le relative attività.
-ms.openlocfilehash: efeb04753632447509580ca44b769d6524c0a30c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b76bd83dfbd215a6645bd73b2f9b2fb4be0c493b
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241822"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42353667"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-gruppi Microsoft 365
 
@@ -43,7 +43,7 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 
 È possibile ottenere una visualizzazione nell'attività dei gruppi esaminando i grafici **gruppi**, **attività**, **file**e **archiviazione** . 
   
-![Report di Microsoft 365-attività sui gruppi](../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
+![Report di Microsoft 365-attività sui gruppi](../../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
   
 |||
 |:-----|:-----|
@@ -54,9 +54,9 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 |5.  <br/> |La visualizzazione **file** Mostra il numero di file totali e attivi in tutti i siti del gruppo associati a un gruppo.  <br/> |
 |6.  <br/> |La visualizzazione **Archiviazione** mostra lo spazio di archiviazione totale usato in tutte le cassette postali e in tutti i siti del gruppo.  <br/> |
 |7.  <br/> | Nel grafico **Gruppi** l'asse Y rappresenta il numero di gruppi (che può essere visualizzato come confronto tra totali e attivi).  <br/>  Nel grafico **attività** , l'asse Y indica il numero di volte in cui è stata eseguita un'attività in gruppi.  <br/>  Nel grafico **File** l'asse Y rappresenta il numero di file totali o attivi.  <br/>  Nel grafico **Archiviazione** l'asse Y rappresenta lo spazio di archiviazione totale usato dalla cassetta postale o dal sito del gruppo.  <br/>  L'asse X in tutti e tre i grafici rappresenta l'intervallo di date selezionato per il report specifico.  <br/> |
-|8.  <br/> |È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. Ad esempio, nel grafico **gruppi** **selezionare il numero totale** o **** ![attivo totale e attivo di gruppi](../media/8eebd496-5955-4419-8d53-5f3ba1ad1c88.png) per visualizzare solo le informazioni relative a ognuna di esse. La modifica di questa selezione non modifica le informazioni nella tabella della griglia.  <br/> |
+|8.  <br/> |È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. Ad esempio, nel grafico **gruppi** **selezionare il numero totale** o **** ![attivo totale e attivo di gruppi](../../media/8eebd496-5955-4419-8d53-5f3ba1ad1c88.png) per visualizzare solo le informazioni relative a ognuna di esse. La modifica di questa selezione non modifica le informazioni nella tabella della griglia.  <br/> |
 |9.  <br/> | L'elenco dei gruppi da mostrare dipende dal set di tutti i gruppi che erano presenti (che non sono stati eliminati) nel periodo di tempo di riferimento più ampio (180 giorni). Il numero di attività (le conversazioni di posta elettronica, i post di Yammer e le attività sui siti di SharePoint) varia in base alla selezione di date.  <br/> Nota: è possibile che non vengano visualizzati tutti gli elementi nell'elenco in basso nelle colonne finché non vengono aggiunti.<br/>**Nome gruppo** è il nome del gruppo.  <br/> **Eliminati** è il numero di gruppi eliminati. Se il gruppo viene eliminato, ma c'è stata attività nel periodo della relazione, verrà visualizzato nella griglia con questo flag impostato su true.  <br/> **Proprietario del gruppo** è il nome del proprietario del gruppo.  <br/> **Data ultima attività** è la data più recente in cui un messaggio è stato ricevuto dal gruppo. Si tratta dell'ultima data in cui si è verificata un'attività in una conversazione di posta elettronica, in Yammer o nel sito.  <br/> **Tipo** è il tipo di gruppo. Può essere privato o pubblico.  <br/> **Membri** è il numero di membri del gruppo.  <br/> **Membri esterni** è il numero di utenti esterni del gruppo.  <br/> **Exchange** <br/> **Messaggi ricevuti** è il numero di messaggi ricevuti dal gruppo.  <br/> **Totale elementi cassetta postale** è il numero di elementi presenti nella cassetta postale del gruppo.  <br/> **Spazio di archiviazione della cassetta postale usato** è lo spazio di archiviazione usato dalla cassetta postale del gruppo.  <br/> **File di SharePoint** <br/> **Totale file** è il numero di file archiviati nei siti del gruppo di SharePoint.  <br/> **File attivi** è il numero di file nel sito di gruppo di SharePoint che sono stati visualizzati, modificati, sincronizzati, condivisi internamente o esternamente durante il periodo di riferimento.  <br/> **Spazio di archiviazione del sito usato (MB)** è la quantità di spazio di archiviazione, in MB, usata durante il periodo di riferimento.  <br/> **Messaggi di Yammer** <br/> **Pubblicati** è il numero dei messaggi pubblicati nel gruppo di Yammer nel periodo di riferimento.  <br/> **Letti** è il numero delle conversazioni lette nel gruppo di Yammer nel periodo di riferimento.  <br/> **Apprezzati** è il numero dei messaggi con Mi piace nel gruppo di Yammer nel periodo di riferimento.  <br/>  Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **come nascondere i dettagli a livello di utente** nei [rapporti attività nell'interfaccia di amministrazione di Microsoft 365](activity-reports.md).  <br/> |
-|10  <br/> |Seleziona o tocca **altre azioni** pulsante ![mobile OWA altre azioni](../media/80044eef-2368-4c7e-8d31-7155b029e0cf.png) accanto a un'intestazione di colonna per aggiungere o rimuovere colonne dal report.  <br/> ![Report gruppi-scegliere colonne](../media/d7fb95d6-2a2e-4144-b80d-581223e48043.png)|
+|10  <br/> |Seleziona o tocca **altre azioni** pulsante ![mobile OWA altre azioni](../../media/80044eef-2368-4c7e-8d31-7155b029e0cf.png) accanto a un'intestazione di colonna per aggiungere o rimuovere colonne dal report.  <br/> ![Report gruppi-scegliere colonne](../../media/d7fb95d6-2a2e-4144-b80d-581223e48043.png)|
 |11  <br/> |È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il collegamento **Esporta** . Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  <br/> |
 |||
    

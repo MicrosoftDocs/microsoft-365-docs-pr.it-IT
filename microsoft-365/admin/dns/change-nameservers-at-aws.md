@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ddbe33c-81ea-4c02-8db9-e71d3810c0ec
 description: 'Informazioni su come è possibile configurare Office 365 per gestire i record DNS su Amazon Web Services (AWS). '
-ms.openlocfilehash: 08deba83738ba0e530e719cd6fd57bee423df5e0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9500522478c22277c57772ef64b4d0a4b87e8c44
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242871"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42352487"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-amazon-web-services-aws"></a>Modificare i server dei nomi per configurare Office 365 con Amazon Web Services (AWS)
 
@@ -65,16 +65,16 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     
 7. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
     
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
     
@@ -99,18 +99,18 @@ Per completare la configurazione del dominio con Office 365, modificare i record
     
 4. Selezionare il set di record **Nameserver**. 
     
-    ![Select the recordset](../media/24e618e4-0a16-43a2-9886-f4f5dac79374.png)
+    ![Select the recordset](../../media/24e618e4-0a16-43a2-9886-f4f5dac79374.png)
   
 5. Nel set di record **NS - Name server** della casella **Valore** eliminare tutti i server dei nomi selezionandoli e premendo **CANC**. 
     
     > [!CAUTION]
     > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Ovvero, eliminare solo eventuali server dei nomi correnti che *non* sono denominati **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**o **NS4.BDM.microsoftonline.com**). 
   
-    ![Select and delete all of the nameservers in the Value box](../media/ecf1e897-fa7d-4abc-b00b-bf55b8ed2139.png)
+    ![Select and delete all of the nameservers in the Value box](../../media/ecf1e897-fa7d-4abc-b00b-bf55b8ed2139.png)
   
 6. Nell'area **TTL (secondi):** selezionare **1h** (1 ora). 
     
-    ![Selezionare 1H per un'ora](../media/c70070e1-4bde-41a7-b271-9d22c475edf6.png)
+    ![Selezionare 1H per un'ora](../../media/c70070e1-4bde-41a7-b271-9d22c475edf6.png)
   
 7. Sempre nel set di record **NS - Name server** della casella **Valore** digitare oppure copiare e incollare il valore **Prima riga** dalla tabella seguente, quindi premere **INVIO** e digitare oppure copiare e incollare il valore **Seconda riga**. 
     
@@ -124,11 +124,11 @@ Per completare la configurazione del dominio con Office 365, modificare i record
 |**Terza riga** <br/> |ns3.bdm.microsoftonline.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
 |**Quarta riga** <br/> |ns4.bdm.microsoftonline.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
    
-   ![Digitare o incollare il valore della prima riga nella casella valore.](../media/b63f41e0-51ef-4ab2-a4b8-ee7380e5ab35.png)
+   ![Digitare o incollare il valore della prima riga nella casella valore.](../../media/b63f41e0-51ef-4ab2-a4b8-ee7380e5ab35.png)
   
 8. Selezionare **Salva set di record**.
     
-    ![Selezionare Salva set di record](../media/ab3c0558-bb7c-41e4-871e-ea82f1553476.png)
+    ![Selezionare Salva set di record](../../media/ab3c0558-bb7c-41e4-871e-ea82f1553476.png)
   
 > [!NOTE]
 > L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Al termine, la posta elettronica e altri servizi di Office 365 verranno tutti impostati per funzionare con il dominio. 
