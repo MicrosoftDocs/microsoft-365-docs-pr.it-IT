@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: Informazioni su come gestire i propri record DNS o su come gestire i record DNS da parte di Office 365.
 ms.custom: okr_smb
-ms.openlocfilehash: 2313aa6c629c76a852e38b4da9093576a3b75d6e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: dbd9dda6f84803732777ac75163f031b50419732
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252914"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362141"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>Configurare il dominio (istruzioni specifiche per l’host)
 

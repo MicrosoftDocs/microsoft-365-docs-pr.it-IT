@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come accedere alla posta elettronica dal dispositivo mobile.
-ms.openlocfilehash: b50b6986fe44cb19119831774b4357c6efd543d9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 880044ddd13226c819167fb200f9f61550559944
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253105"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362391"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Opzioni per l'accesso alla posta elettronica dal dispositivo mobile
 
@@ -35,7 +35,7 @@ Le app Outlook per Android e Outlook per dispositivi mobili iOS sono progettate 
   
 L'organizzazione richiede l'utilizzo delle app per dispositivi mobili Outlook per Android o Outlook per iOS per accedere alla posta elettronica, al calendario e ai contatti della società. I dati inizieranno a essere sincronizzati dopo il download e l'installazione di Outlook per Android o Outlook per iOS.
   
-![Posta elettronica di esempio per l'utilizzo di Outlook per sincronizzare la posta elettronica](../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
+![Posta elettronica di esempio per l'utilizzo di Outlook per sincronizzare la posta elettronica](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
   
 Per altre funzionalità di Outlook, vedere [ottimizzare l'app per dispositivi mobili di Outlook per il telefono iOS o Android](https://support.office.com/article/de075b19-b73c-4d8a-841b-459982c7e890.aspx) . Accedere a [Outlook per iOS e al centro assistenza Android](https://support.office.com/article/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6.aspx) se si esegue un problema. 
   

@@ -18,12 +18,12 @@ search.appverid:
 - FRP150
 ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Informazioni sul nuovo interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 1506dc63c2ba1e7e8926985b3c5e1cd7d6a11b52
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 3cd2fcff839213d843d6474ba826d06c5f2bf504
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257416"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361601"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>Informazioni sul nuovo interfaccia di amministrazione di Microsoft 365
 
@@ -50,9 +50,9 @@ Ci piacerebbe poter partecipare alla nuova interfaccia di amministrazione di Mic
     
 ### <a name="switch-to-the-new-admin-center-and-back-again"></a>Passare alla nuova interfaccia di amministrazione e viceversa
 
-- Quando la nuova interfaccia di amministrazione di Microsoft 365 è disponibile, è possibile optare selezionando il **nuovo** Toggle dell'interfaccia di amministrazione che si trova nella parte superiore della Home page. Se si effettua l'accesso all'interfaccia di amministrazione, si ricorderà la selezione e si eseguirà l'accesso alla nuova interfaccia di amministrazione. <br/><br/>![Nuovo interruttore dell'interfaccia di amministrazione dal centro di amministrazione precedente](media/admin-center-toggle-off.png) 
+- Quando la nuova interfaccia di amministrazione di Microsoft 365 è disponibile, è possibile optare selezionando il **nuovo** Toggle dell'interfaccia di amministrazione che si trova nella parte superiore della Home page. Se si effettua l'accesso all'interfaccia di amministrazione, si ricorderà la selezione e si eseguirà l'accesso alla nuova interfaccia di amministrazione. <br/><br/>![Nuovo interruttore dell'interfaccia di amministrazione dal centro di amministrazione precedente](../media/admin-center-toggle-off.png) 
   
-- Tornare all'interfaccia di amministrazione precedente dalla Home page ruotando l'interruttore su **disattivata**. <br/><br/>![Attiva l'attivazione del nuovo interfaccia di amministrazione](media/admin-center-toggle-on.png)
+- Tornare all'interfaccia di amministrazione precedente dalla Home page ruotando l'interruttore su **disattivata**. <br/><br/>![Attiva l'attivazione del nuovo interfaccia di amministrazione](../media/admin-center-toggle-on.png)
 
 Quando si è nel nuovo interfaccia di amministrazione, è possibile fornire commenti e suggerimenti su Microsoft sulla propria esperienza selezionando **Invia commenti e suggerimenti** direttamente accanto al pulsante **serve assistenza?** nella parte inferiore di ogni pagina. Dicci cosa ti piace e cosa potremmo fare di meglio. Inoltre, è possibile ottenere sondaggi pop-up di tanto in tanto chiedendo informazioni sulle impressioni complessive o su un'esperienza specifica appena rilasciata. È inoltre possibile fornire commenti e suggerimenti alla fine di questo articolo selezionando **queste informazioni sono state utili?**
   

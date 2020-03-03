@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: L'Interfaccia di amministrazione di Exchange (EAC) è la console di gestione basata sul Web per Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: f38d36249387fce2ba3b4cac9e187c1cbcadd707
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3b5fb014e56a9928d58abffd5e4c96e1eef463ad
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083279"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372494"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Interfaccia di amministrazione di Exchange in Exchange Online Protection
 
@@ -33,7 +33,7 @@ Per informazioni sulla versione di Exchange online in questo argomento, vedere V
 
 ## <a name="accessing-the-eac"></a>Accesso a EAC
 
-Nella maggior parte dei casi, i clienti di EOP accederanno a EAC tramite l'interfaccia di amministrazione di Microsoft 365. È possibile trovare un collegamento a EOP nel menu a discesa nel riquadro **Amministratore**, accanto al riquadro **Io**. Fare clic sul riquadro **Amministratore** e selezionare **Exchange Online Protection** dal menu a discesa per l'esecuzione in EAC.
+Nella maggior parte dei casi, i clienti di EOP accederanno a EAC tramite l'interfaccia di amministrazione di Microsoft 365. È possibile trovare un collegamento a EOP nel menu a discesa nel riquadro **Amministratore**, accanto al riquadro **Io**. Fare clic sul riquadro amministratore e selezionare **Exchange Online Protection** dal menu a discesa da prendere nell'interfaccia di **Amministrazione** EAC.
 
 You can also access the EAC sign in page directly via the following URL: `https://admin.protection.outlook.com/ecp/<companydomain>`. For example, `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`. After specifying your user credentials you will be taken directly into the EAC.
 

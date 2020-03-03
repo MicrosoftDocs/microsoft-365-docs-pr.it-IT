@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Per ulteriori informazioni, è possibile proteggere le piccole aziende dalle minacce alla sicurezza.
-ms.openlocfilehash: 5407a64967f1a43d068fe560586d0cb40e053779
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a3923731e93962d1976d0cd163db4f97a07aaed2
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244013"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360777"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>Grafico delle informazioni di sicurezza per le piccole imprese
 
@@ -28,6 +28,6 @@ ms.locfileid: "42244013"
 
 I collegamenti per PowerPoint e PDF riportati di seguito possono essere scaricati e stampati in formato tabloid (noto anche come Ledger, 11 x 17 o a3).
 
-![Immagine per rendere sicura la grafica delle piccole imprese](media/smbthreatprotectioninfographic-thumbnail.png)
+![Immagine per rendere sicura la grafica delle piccole imprese](../media/smbthreatprotectioninfographic-thumbnail.png)
 
 [](downloads/smbthreatprotection-infographic.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/admin/downloads/smbthreatprotection-infographic.pptx) (PDF)

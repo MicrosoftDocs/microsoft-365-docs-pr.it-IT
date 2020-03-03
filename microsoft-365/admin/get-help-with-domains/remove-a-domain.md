@@ -21,16 +21,16 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Informazioni su come rimuovere un vecchio dominio da Office 365 e spostare gli utenti e i gruppi in un altro dominio.
-ms.openlocfilehash: 9c960b5f18f3892c57f7dc9907e580a02fce39d4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: c012d7a8484026d04bbe216ff28715e9df0de15c
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252913"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362211"
 ---
 # <a name="remove-a-domain-from-office-365"></a>Rimuovere un dominio da Office 365
 
-Collaboratori: [![Peter Baumgartner](../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
+Collaboratori: [![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
  **Se non si trovano le informazioni desiderate, vedere le [domande frequenti sui domini](../setup/domains-faq.md)**. 
   
@@ -154,7 +154,7 @@ Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonament
 
 3. Utilizzare l'elenco a discesa per scegliere un altro dominio.
 
-4. Fare clic su **Salva**e quindi su **Chiudi**. Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.
+4. Selezionare **Salva**, quindi **Chiudi**. Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.
 
 ::: moniker-end
 
@@ -166,7 +166,7 @@ Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonament
 
 3. Utilizzare l'elenco a discesa per scegliere un altro dominio.
 
-4. Fare clic su **Salva**e quindi su **Chiudi**. Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.
+4. Selezionare **Salva**, quindi **Chiudi**. Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.
 
 ::: moniker-end
 
@@ -178,7 +178,7 @@ Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonament
 
 3. Utilizzare l'elenco a discesa per scegliere un altro dominio.
 
-4. Fare clic su **Salva**e quindi su **Chiudi**. Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.
+4. Selezionare **Salva**, quindi **Chiudi**. Ripetere l'operazione per tutti i gruppi o le liste di distribuzione associate al dominio che si vuole rimuovere.
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonament
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
 ::: moniker-end
 

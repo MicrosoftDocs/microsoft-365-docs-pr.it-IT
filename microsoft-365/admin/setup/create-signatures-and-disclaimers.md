@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Informazioni su come aggiungere la firma di posta elettronica, la dichiarazione di non responsabilità legale o la divulgazione a tutti i messaggi di posta elettronica che entrano o lasciano l'organizzazione.
-ms.openlocfilehash: 3d95e92c4994a99ab3426133580d70453a2f83eb
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257035"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360667"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Creare firme e dichiarazioni di non responsabilità a livello di organizzazione
 
@@ -46,23 +46,23 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
     
 ::: moniker range="o365-worldwide"
 
-Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.
+Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.
 
 ::: moniker-end
 
-1. Seleziona l'icona di ![avvio delle app in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)e quindi seleziona **amministratore**.
+1. Seleziona l'icona di ![avvio delle app in Office 365](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)e quindi seleziona **amministratore**.
    
     Se non si trova l'app che si sta cercando, nell'icona di avvio delle app selezionare **Tutte le app** per visualizzare un elenco in ordine alfabetico delle app di Office 365 disponibili. Da qui è possibile cercare un'app specifica. 
     

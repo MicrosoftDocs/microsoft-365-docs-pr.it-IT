@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Informazioni su come gestire i messaggi del centro messaggi per facilitare la gestione delle modifiche.
-ms.openlocfilehash: f2c7c5324fe77d1d3dc13a235d7a2f391b09a603
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5b1772eb86acb937d532990830f9220f197c1c00
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252812"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361931"
 ---
 # <a name="manage-messages-in-message-center"></a>Gestire i messaggi nel Centro messaggi
 
@@ -51,7 +51,7 @@ Utilizzare il menu a discesa **filtro** per selezionare una visualizzazione filt
 
 È possibile selezionare qualsiasi intestazione di colonna per ordinare i messaggi in ordine crescente o decrescente. Ad esempio, in questa immagine i messaggi sono ordinati in base alla data **Intervento entro**.
 
-![Visualizzazione del centro messaggi ordinata in base alla data di Act by](../media/message-center-filter-act-by.png)
+![Visualizzazione del centro messaggi ordinata in base alla data di Act by](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ Utilizzare il menu a discesa **visualizzazioni** per selezionare una visualizzaz
  
 È possibile selezionare qualsiasi intestazione di colonna per ordinare i messaggi in ordine crescente o decrescente. Ad esempio, in questa figura i messaggi sono ordinati in base alla data **di Act by** .
 
-![Visualizzazione del centro messaggi ordinata in base alla data di Act by](../media/message-center-old-admin-center1.png)
+![Visualizzazione del centro messaggi ordinata in base alla data di Act by](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ Utilizzare il menu a discesa **visualizzazioni** per selezionare una visualizzaz
  
 È possibile selezionare qualsiasi intestazione di colonna per ordinare i messaggi in ordine crescente o decrescente. Ad esempio, in questa figura i messaggi sono ordinati in base alla data **di Act by** .
 
-![Visualizzazione del centro messaggi ordinata in base alla data di Act by](../media/message-center-old-admin-center1.png)
+![Visualizzazione del centro messaggi ordinata in base alla data di Act by](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 

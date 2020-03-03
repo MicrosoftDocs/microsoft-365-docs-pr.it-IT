@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Vedere altre informazioni su come inviare posta elettronica come lista di distribuzione in Office 365.
-ms.openlocfilehash: f165279cf6cfbedda4f122f453c2321c16f412d3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 076405b54f2a1521e0d9a1fc54c734b172eb82e8
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252740"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361741"
 ---
 # <a name="send-email-as-a-distribution-list-in-office-365"></a>Inviare messaggi di posta elettronica come lista di distribuzione in Office 365
 
@@ -43,10 +43,10 @@ Prima di eseguire questa procedura, verificare di essere stati aggiunti a una li
     
 3. Selezionare **Rispondi**. 
     
-4. Nella parte inferiore del messaggio, selezionare **altro** \> **Mostra da**.<br/> ![Seleziona altro e quindi fai clic su Mostra da](../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. Nella parte inferiore del messaggio, selezionare **altro** \> **Mostra da**.<br/> ![Seleziona altro e quindi fai clic su Mostra da](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Fare clic con il pulsante destro del mouse sull'indirizzo `Ina@weewalter.me` mittente, ad esempio, e scegliere **Rimuovi**.<br/> ![Rimuovere l'alias da](../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Fare clic con il pulsante destro del mouse sull'indirizzo `Ina@weewalter.me` mittente, ad esempio, e scegliere **Rimuovi**.<br/> ![Rimuovere l'alias da](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. Digitare quindi l'indirizzo della lista di distribuzione, ad esempio support@contoso.com, e inviare il messaggio. La volta successiva che rispondi dalla lista di distribuzione, il suo indirizzo verrà visualizzato come opzione nell'elenco **da** .<br/>![Viene visualizzato l'alias della cassetta postale condivisa](../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. Digitare quindi l'indirizzo della lista di distribuzione, ad esempio support@contoso.com, e inviare il messaggio. La volta successiva che rispondi dalla lista di distribuzione, il suo indirizzo verrà visualizzato come opzione nell'elenco **da** .<br/>![Viene visualizzato l'alias della cassetta postale condivisa](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   
 

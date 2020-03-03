@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Informazioni su come aggiungere un partner Advisor di sottoscrizione come partner di record al momento dell'acquisto di Office 365, cambiare il partner o eliminare un partner da un abbonamento.
-ms.openlocfilehash: 22b4108db8ecff1af14706ceede746bec8743d54
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2afe5adebe1c0a47cae896d19219b97b70e453a4
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244139"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361581"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Aggiungere, modificare o rimuovere un partner con il ruolo di consulente dell'abbonamento
 
@@ -120,7 +120,7 @@ Seguire i passaggi della pagina providers per la ricerca o per ottenere la corri
   
 3. Nella pagina sottoscrizione, selezionare la scheda **partner** e quindi digitare l'ID di rete del partner che si sta aggiungendo è possibile ottenere l'ID del partner Microsoft del partner chiedendo al partner.
     
-4. Seleziona **Aggiungi**.
+4. Selezionare **Aggiungi**.
 
 ::: moniker-end
 

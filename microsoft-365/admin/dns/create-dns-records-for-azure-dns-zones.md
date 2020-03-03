@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi nelle zone DNS di Azure per Office 365.
-ms.openlocfilehash: 3758b525bd98c724165f2671023ba416c338786d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 30e54da8ffd51165b1cc0d2eb82d9d02eefdaf4d
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241093"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362741"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Creare record DNS per le aree DNS di Azure
 
@@ -50,7 +50,7 @@ Ecco i principali record da aggiungere.
 Dopo aver aggiunto questi record in Azure, il dominio sarà configurato per l'uso con i servizi di Office 365.
   
 > [!NOTE]
-> In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o altro dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+> In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modificare i record dei server dei nomi del dominio
 <a name="BKMK_NS"> </a>
@@ -73,7 +73,7 @@ Per modificare i server dei nomi del dominio presso il registrar, seguire questa
 **Primo server dei nomi:** Utilizzare il valore Name Server assegnato da Azure.  
 **Secondo server dei nomi:** Utilizzare il valore Name Server assegnato da Azure.  
 
-![Azure-BP-redelegate-1-1](../media/3e4805ea-608a-4df9-8f68-1fbf70d13d08.png)
+![Azure-BP-redelegate-1-1](../../media/3e4805ea-608a-4df9-8f68-1fbf70d13d08.png)
   
 > [!TIP]
 > You should use at least two name server records. Se sono presenti altri server dei nomi elencati nel sito Web del registrar, è consigliabile eliminarli. 
@@ -91,17 +91,17 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
   
-1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). Verrà richiesto di eseguire l'accesso.
     
-    ![Azure-BP-Configure-1-1](../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
+    ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
 2. Se si utilizza la **barra di ricerca** nella pagina del **Dashboard** , digitare le **aree DNS**. Nella visualizzazione dei risultati, selezionare **aree DNS** nella parte **Servizi** . Dopo aver reindirizzato, selezionare il dominio che si desidera aggiornare.
     
-    ![Azure-BP-Configure-1-2](../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
+    ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
 3. Nella pagina **Impostazioni** del dominio, nell'area **DNS zone** , selezionare **+ set di record**.
     
-    ![Azure-BP-Configure-1-3](../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
+    ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. Nelle caselle del nuovo set di record nell'area **Add record set** selezionare i valori della tabella seguente. 
     
@@ -111,23 +111,23 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     |:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |1  <br/> |Ore  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Azure-BP-Verify-1-1](../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
+    ![Azure-BP-Verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
 5. Selezionare **OK**.
   
 6. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
     
   
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
     
     
   
@@ -136,22 +136,22 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
   
 > [!NOTE]
->  In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o altro dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Aggiungere un record MX in modo che la posta elettronica per il dominio venga recapitata in Office 365
 <a name="BKMK_add_MX"> </a>
 
-1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). Verrà richiesto di eseguire l'accesso.
     
-    ![Azure-BP-Configure-1-1](../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
+    ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
 2. Nell'area **tutte le risorse** della pagina **Dashboard** selezionare il dominio che si desidera aggiornare. 
     
-    ![Azure-BP-Configure-1-2](../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
+    ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
 3. Nella pagina **Impostazioni** del dominio, nell'area **DNS zone** , selezionare **+ set di record**.
     
-    ![Azure-BP-Configure-1-3](../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
+    ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. Nelle caselle del nuovo set di record nell'area **Add record set** selezionare i valori della tabella seguente. 
     
@@ -161,44 +161,44 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |MX  <br/> |1  <br/> |Ore  <br/> |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere la propria * \<chiave\> di dominio* dall'account di Office 365.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  
    
-    ![Azure-BP-Configure-2-1](../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
+    ![Azure-BP-Configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
 5. Selezionare **OK**.
     
-    ![Azure-BP-Configure-2-2](../media/2f24225f-69ac-41dc-91c5-93d327360f74.png)
+    ![Azure-BP-Configure-2-2](../../media/2f24225f-69ac-41dc-91c5-93d327360f74.png)
   
 6. Se sono elencati altri record MX nella sezione **MX Records** , è necessario eliminarli. 
     
     In primo luogo, nell'area **DNS zone** selezionare il **set di record MX**.
     
-    ![Azure-BP-Configure-2-3](../media/9890da61-6fcd-4c61-888e-ccbb84f80cd0.png)
+    ![Azure-BP-Configure-2-3](../../media/9890da61-6fcd-4c61-888e-ccbb84f80cd0.png)
   
     Successivamente, selezionare il record MX che si desidera eliminare.
     
-    ![Azure-BP-Configure-2-4](../media/afe54f12-66d2-4ff3-80e9-427448e4c32c.png)
+    ![Azure-BP-Configure-2-4](../../media/afe54f12-66d2-4ff3-80e9-427448e4c32c.png)
   
 7. Selezionare il **menu di scelta rapida (...)** e quindi fare clic su **Rimuovi**.
     
-    ![Azure-BP-Configure-2-5](../media/25219e25-bc14-4bc7-84ed-ee65eb28a8ed.png)
+    ![Azure-BP-Configure-2-5](../../media/25219e25-bc14-4bc7-84ed-ee65eb28a8ed.png)
   
 8. Selezionare **Salva**.
     
-    ![Azure-BP-Configure-2-6](../media/c6133096-5e43-4637-9c01-b63ee4b03517.png)
+    ![Azure-BP-Configure-2-6](../../media/c6133096-5e43-4637-9c01-b63ee4b03517.png)
   
 ## <a name="add-the-four-cname-records-that-are-required-for-office-365"></a>Aggiungere i quattro record CNAME necessari per Office 365
 <a name="BKMK_add_CNAME"> </a>
 
-1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). Verrà richiesto di eseguire l'accesso.
     
-    ![Azure-BP-Configure-1-1](../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
+    ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
 2. Nell'area **tutte le risorse** della pagina **Dashboard** selezionare il dominio che si desidera aggiornare. 
     
-    ![Azure-BP-Configure-1-2](../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
+    ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
 3. Nella pagina **Impostazioni** del dominio, nell'area **DNS zone** , selezionare **+ set di record**.
     
-    ![Azure-BP-Configure-1-3](../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
+    ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. Aggiungere il primo dei quattro record CNAME.
     
@@ -213,11 +213,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |lyncdiscover  <br/> |CNAME  <br/> |1  <br/> |Ore  <br/> |webdir.online.lync.com  <br/> |
     
    
-    ![Azure-BP-configure-3-1](../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
+    ![Azure-BP-configure-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
   
 5. Selezionare **OK**.
     
-    ![Azure-BP-configure-3-2](../media/b89b51da-1c07-43cf-9fab-75d2e5eb3544.png)
+    ![Azure-BP-configure-3-2](../../media/b89b51da-1c07-43cf-9fab-75d2e5eb3544.png)
   
 6. Aggiungere gli altri tre record CNAME.
     
@@ -239,19 +239,19 @@ When Office 365 finds the correct TXT record, your domain is verified.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 necessari al record corrente in modo che sia presente un *singolo* record SPF che includa entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 richiesti al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori. 
   
-1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). Verrà richiesto di eseguire l'accesso.
     
-    ![Azure-BP-Configure-1-1](../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
+    ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
 2. Nell'area **tutte le risorse** della pagina **Dashboard** selezionare il dominio che si desidera aggiornare. 
     
-    ![Azure-BP-Configure-1-2](../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
+    ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
 3. Nell'area **DNS zone** selezionare il set di **record TXT**.
     
-    ![Azure-BP-Configure-4-1](../media/03095196-5010-4072-8503-79b812084dbf.png)
+    ![Azure-BP-Configure-4-1](../../media/03095196-5010-4072-8503-79b812084dbf.png)
   
 4. Nelle caselle del nuovo record nell'area **proprietà del set di record** selezionare i valori della tabella seguente. 
     
@@ -261,26 +261,26 @@ When Office 365 finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |1  <br/> |Ore  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           
 
-    ![Azure-BP-Configure-4-2](../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
+    ![Azure-BP-Configure-4-2](../../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
   
 5. Selezionare **Salva**.
     
-    ![Azure-BP-Configure-4-3](../media/d7421c7f-ea63-4e11-8595-a482b8c165e0.png)
+    ![Azure-BP-Configure-4-3](../../media/d7421c7f-ea63-4e11-8595-a482b8c165e0.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Aggiungere i due record SRV necessari per Office 365
 <a name="BKMK_add_SRV"> </a>
 
-1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Azure usando [questo collegamento](https://portal.azure.com ). Verrà richiesto di eseguire l'accesso.
     
-    ![Azure-BP-Configure-1-1](../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
+    ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
 2. Nell'area **tutte le risorse** della pagina **Dashboard** selezionare il dominio che si desidera aggiornare. 
     
-    ![Azure-BP-Configure-1-2](../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
+    ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
 3. Nella pagina **Impostazioni** del dominio, nell'area **DNS zone** , selezionare **+ set di record**.
     
-    ![Azure-BP-Configure-1-3](../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
+    ![Azure-BP-Configure-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. Aggiungere il primo dei due record SRV.
     
@@ -288,21 +288,21 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     Scegliere i valori di **tipo** e **unità TTL** negli elenchi a discesa. 
     
-    |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Priorità**|**Peso**|**Port**|**Target**|
+    |**Nome**|**Tipo**|**TTL**|**Unità TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip. _tls  <br/> |SRV  <br/> |1  <br/> |Ore  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls. _tcp  <br/> |SRV  <br/> |1  <br/> |Ore  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
 
-    ![Azure-BP-Configure-5-1](../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
+    ![Azure-BP-Configure-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   
 5. Selezionare **OK**.
     
-    ![Azure-BP-Configure-5-2](../media/a35b6c8a-d001-4b3c-8a67-96b4890e564c.png)
+    ![Azure-BP-Configure-5-2](../../media/a35b6c8a-d001-4b3c-8a67-96b4890e564c.png)
   
 6. Aggiungere l'altro record SRV.
     
     Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della seconda riga della tabella.
     
 > [!NOTE]
-> In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+> In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   

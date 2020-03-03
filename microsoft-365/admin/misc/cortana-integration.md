@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: "Informazioni su come utilizzare Cortana, quando è integrato con Office 365. È possibile disattivare Cortana nell'interfaccia di amministrazione per limitare l'accesso ai dati dell'organizzazione. "
-ms.openlocfilehash: 21de80d127498dd40db932923a8d650b87b8a24c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8f20c9b96ee57dcdf5da99dc08ffeb72465bc515
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257425"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361437"
 ---
 # <a name="cortana-in-office-365"></a>Cortana in Office 365
 

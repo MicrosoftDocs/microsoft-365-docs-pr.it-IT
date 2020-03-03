@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Panoramica del Punteggio di produttività Microsoft.
-ms.openlocfilehash: 863d644a2dc3b7f756c61b8a9c3063a8545c1fb0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 03a8e68248458f5dfa1d7192a5c2771b46723129
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257225"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361317"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Punteggio di produttività Microsoft (anteprima)
 
@@ -84,7 +84,7 @@ Per avere l'autorizzazione per l'accesso al Punteggio di produttività Microsoft
 
 la Home page del Punteggio di produttività fornisce il punteggio e la cronologia correnti su una base percentuale, informazioni principali per le aree all'interno di ogni categoria di Punteggio completate da benchmark. 
 
-![Home page Punteggio di produttività](../media/pslanding.png)
+![Home page Punteggio di produttività](../../media/pslanding.png)
 
 1.**Il Punteggio di produttività** è elencato su una base percentuale così come nel <numerator> / <denominator> formato, in modo da poter vedere anche i punti assoluti (numeratore) e i punti massimi possibili  
 1. Questo pivot consente di selezionare la categoria di Punteggio su cui si desidera concentrarsi. Nell'anteprima, è possibile visualizzare solo i **dipendenti**, ma la selezione verrà presto espansa per includere l' **esperienza di tecnologia**. 
@@ -113,7 +113,7 @@ Inoltre, tutte le informazioni dettagliate contengono gli elementi seguenti:
 
 ### <a name="area-detail-page--collaborating-on-content"></a>Pagina Dettagli area – collaborazione per il contenuto 
 
-![Collaborationg nella pagina contenuto.](../media/pscollab.png)
+![Collaborationg nella pagina contenuto.](../../media/pscollab.png)
 
 La collaborazione nella pagina contenuto contiene l'intuizione principale della Home page del Punteggio di produttività. Sono disponibili i componenti seguenti:
 
@@ -134,7 +134,7 @@ I tipi di file considerati per la collaborazione sono Word/Excel/PowerPoint/OneN
 
 ### <a name="area-detail-page--working-anywhere"></a>Pagina Dettagli area – utilizzo in qualsiasi posizione 
 
-![Pagina Work Anywhere.](../media/psflexibility.png)
+![Pagina Work Anywhere.](../../media/psflexibility.png)
 
 La pagina Working Anywhere quantifica gli utenti (come percentuale e valore assoluto) che hanno utilizzato almeno un'app per la produttività in due o più piattaforme, ovvero desktop, mobili e Web. Gli utenti ottengono un punteggio maggiore per l'utilizzo di più app e piattaforme. Le app considerate sono Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. La base dell'Insight sono gli utenti abilitati per Office 365 ProPlus, Exchange, Yammer, Skype o teams.
 
@@ -147,7 +147,7 @@ La pagina Working Anywhere quantifica gli utenti (come percentuale e valore asso
 
 Per promuovere l'azione, ogni Insight di supporto viene fornito con azioni in linea che consentono di trasformare l'esperienza dei dipendenti, alcune delle quali possono essere modifiche alla configurazione o campagne di sensibilizzazione. Se si fa clic su queste chiamate all'azione, nelle opzioni del riquadro azioni consigliate è possibile prendere in considerazione. Attualmente, le azioni in **collaborazione sul contenuto** sono abilitate.
 
-![Collaborare alla pagina documenti di Office.](../media/psactions1.png)
+![Collaborare alla pagina documenti di Office.](../../media/psactions1.png)
 
 1. Le **azioni di visualizzazione** passano a un riquadro che elenca tutte le azioni relative alla collaborazione sul contenuto.
 1. **Incoraggiare gli utenti a collaborare** passa a un elenco di video didattici sulla collaborazione con argomenti quali la creazione condivisa e la @mentions. 
@@ -156,7 +156,7 @@ Per promuovere l'azione, ogni Insight di supporto viene fornito con azioni in li
 
 Selezionando uno qualsiasi dei pulsanti azione, verrà aperto il riquadro **azioni consigliate** a destra con un riepilogo di ogni azione e un collegamento alle pagine della documentazione.
 
-![Riquadro azioni consigliate.](../media/psacttions2.png)
+![Riquadro azioni consigliate.](../../media/psacttions2.png)
 
 
 ## <a name="we-want-to-hear-from-you"></a>Si vuole sapere da voi 

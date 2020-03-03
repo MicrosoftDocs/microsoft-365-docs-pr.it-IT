@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire i componenti aggiuntivi per gli utenti e i gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: acb6febf03e40b37b167113666b3577e0b9fb61e
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b2fe57bd2b3b51ac5097723613c608580da06bea
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252824"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361951"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Gestire la distribuzione dei componenti aggiuntivi di Office 365 nell'interfaccia di amministrazione di Microsoft 365
 
@@ -250,7 +250,7 @@ In seguito alla distribuzione del componente aggiuntivo gli utenti finali posson
   
 Se il componente aggiuntivo supporta i comandi dell'interfaccia, questi vengono visualizzati sulla barra multifunzione di Office. Nell'esempio seguente il comando **Cerca citazione** viene visualizzato per il componente aggiuntivo **Citazioni**. 
 
-![Barra multifunzione di Office con citazioni di ricerca](../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![Barra multifunzione di Office con citazioni di ricerca](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
 Se il componente aggiuntivo distribuito non supporta i comandi del componente aggiuntivo o se si desidera visualizzare tutti i componenti aggiuntivi distribuiti, è possibile visualizzarli tramite i **componenti**aggiuntivi. 
   
@@ -260,11 +260,11 @@ Se il componente aggiuntivo distribuito non supporta i comandi del componente ag
     
 2. Selezionare la scheda **Gestito dall'amministratore** nella finestra Componenti aggiuntivi per Office. 
     
-3. Fare doppio clic sul componente aggiuntivo distribuito in precedenza, in questo esempio **Citazioni**. <br/>![Scheda gestita dall'amministratore della pagina dei componenti aggiuntivi di Office](../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+3. Fare doppio clic sul componente aggiuntivo distribuito in precedenza, in questo esempio **Citazioni**. <br/>![Scheda gestita dall'amministratore della pagina dei componenti aggiuntivi di Office](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>In Outlook
 
-1. Nella barra multifunzione **Home** selezionare **Ricevi componenti**aggiuntivi.<br/>![Pulsante Store in Outlook](../media/getaddinsicon.png)
+1. Nella barra multifunzione **Home** selezionare **Ricevi componenti**aggiuntivi.<br/>![Pulsante Store in Outlook](../../media/getaddinsicon.png)
   
 2. Selezionare **gestito dall'amministratore** nel NAV sinistro.
 

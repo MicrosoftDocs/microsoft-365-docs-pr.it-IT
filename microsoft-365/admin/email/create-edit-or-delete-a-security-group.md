@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Informazioni su come creare, modificare o eliminare un gruppo di sicurezza.
-ms.openlocfilehash: 26b431a65035f2546bb44af2ecf31bfd327e53b6
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f51c21261a83e1a0034a67f9f1580dd297a3d583
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253033"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42362281"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di Microsoft 365
 
@@ -135,7 +135,7 @@ Sono inoltre disponibili [Gruppi in Exchange Online e SharePoint Online](#groups
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Gruppi in Exchange Online e SharePoint Online
 
-Se si desidera creare gruppi di utenti in modo che sia possibile inviare messaggi di posta elettronica a tutti contemporaneamente, è possibile farlo nell'interfaccia di amministrazione di Exchange accedendo ai **gruppi**di **destinatari** \> di **Exchange** \> per l' **amministratore** \> . Fare quindi clic ****![su nuovo](../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)Aggiungi e selezionare il tipo di gruppo che si desidera creare: 
+Se si desidera creare gruppi di utenti in modo che sia possibile inviare messaggi di posta elettronica a tutti contemporaneamente, è possibile farlo nell'interfaccia di amministrazione di Exchange accedendo ai **gruppi**di **destinatari** \> di **Exchange** \> per l' **amministratore** \> . Fare quindi clic ****![su nuovo](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)Aggiungi e selezionare il tipo di gruppo che si desidera creare: 
   
 - **Gruppo di distribuzione**: viene usato per distribuire messaggi a un gruppo di utenti. È anche denominato gruppo di *distribuzione abilitato alla posta elettronica*o, in Office 365, una *lista di distribuzione*. Per ulteriori informazioni, vedere [Gestione dei gruppi di distribuzione](https://technet.microsoft.com/library/bb124513.aspx).
     

@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Informazioni su come utilizzare OneDrive e un sito del team per l'archiviazione e la condivisione dei file.
-ms.openlocfilehash: ec55e54fb15113589d7c9b68add511d2cfa9bc97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: be3c845710fdf5531b1a3d91b9579c55cdc4d203
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256955"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360497"
 ---
 # <a name="set-up-office-365-file-storage-and-sharing"></a>Configurare l'archiviazione e la condivisione di file in Office 365
 
@@ -52,7 +52,7 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 Sia OneDrive che i siti del team offrono accesso da qualsiasi luogo all'utente e ai dipendenti.
   
-![Diagramma che illustra in che modo i prodotti di Office 365 possono utilizzare i siti di OneDrive o del team](../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![Diagramma che illustra in che modo i prodotti di Office 365 possono utilizzare i siti di OneDrive o del team](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 Di seguito sono riportati alcuni suggerimenti su cosa archiviare in ogni percorso quando si utilizzano OneDrive e i siti del team:
   
@@ -81,7 +81,7 @@ Di seguito viene illustrato come ogni persona del team può configurare OneDrive
 
 3. In OneDrive, i membri del team possono archiviare i propri file correlati alle attività aziendali. È possibile condividere singoli file o un'intera cartella. Selezionare un file o una cartella, fare clic con il pulsante destro del mouse e scegliere **Condividi**.
 
-    ![Condivisione di una cartella](../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
+    ![Condivisione di una cartella](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
 4. Nella pagina **Invia collegamento** , lasciare la selezione predefinita **tutti gli utenti con il collegamento possono visualizzarli e modificarli**.
 
@@ -89,15 +89,15 @@ Di seguito viene illustrato come ogni persona del team può configurare OneDrive
 
     Se si desidera che la propria copia del messaggio di posta elettronica venga inviata, aggiungere l'indirizzo di posta elettronica all'elenco.
 
-    ![Condivisione di una finestra di dialogo di collegamento che mostra la digitazione e la selezione di un nome.](../media/877e6587-db9d-4903-a87b-11e570eee926.png)
+    ![Condivisione di una finestra di dialogo di collegamento che mostra la digitazione e la selezione di un nome.](../../media/877e6587-db9d-4903-a87b-11e570eee926.png)
   
 5. Quando hai finito di immettere gli utenti con cui vuoi condividerlo, seleziona **Invia**. Il messaggio viene inviato immediatamente alle persone invitate.
 
-    ![Condivisione di un collegamento, visualizzazione di un elenco di nomi](../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
+    ![Condivisione di un collegamento, visualizzazione di un elenco di nomi](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
 6. Di seguito è riportato l'aspetto del messaggio di posta elettronica. 
 
-    ![Messaggio di posta elettronica con collegamento per condividere la cartella OneDrive](../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
+    ![Messaggio di posta elettronica con collegamento per condividere la cartella OneDrive](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
   
 ### <a name="upload-files-to-a-team-site-for-online-collaboration"></a>Caricare file in un sito del team per la collaborazione online
 
@@ -138,15 +138,15 @@ Ecco come sincronizzare i file archiviati nel sito del team con il desktop:
   
 4. Se si riceve un prompt di **OneDrive set up** , accedere con l'account aziendale o dell'Istituto di istruzione.
 
-    ![Schermata di installazione di OneDrive](../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
+    ![Schermata di installazione di OneDrive](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
 5. Se non è stato ancora sincronizzato il OneDrive, è possibile che **venga visualizzato il seguente schermo della cartella OneDrive** . Controllare il percorso sotto **la cartella OneDrive**. Scegliere **Cambia percorso** se si desidera utilizzare un percorso diverso, quindi fare clic su **Avanti**.
 
-    ![Modificare la cartella locale in questa schermata](../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
+    ![Modificare la cartella locale in questa schermata](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
 6. I file nei siti del team verranno visualizzati nel riquadro sinistro di Esplora file sotto il nome dell'organizzazione. I file in OneDrive verranno visualizzati in "OneDrive- \<nome dell'organizzazione\>"
 
-    ![Vedere cosa è stato sincronizzato nella cartella locale](../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
+    ![Vedere cosa è stato sincronizzato nella cartella locale](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
 7. Verificare la sincronizzazione aprendo un file nella cartella del team nel computer in uso. Apportare una modifica e scegliere **Salva**.
 

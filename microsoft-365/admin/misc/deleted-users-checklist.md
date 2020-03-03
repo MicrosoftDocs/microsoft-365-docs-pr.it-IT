@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
 description: Seguire questo elenco di controllo durante l'eliminazione di un account di Office 365 di un utente.
-ms.openlocfilehash: bb88a71176e229f09f11fbafab9f7c1c880e0178
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 039cf832d1af8f93ed46a13f4a549aad3f11ef63
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244103"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361427"
 ---
 # <a name="quick-help-deleted-users-checklist"></a>Guida rapida: Elenco di controllo utenti eliminati
 

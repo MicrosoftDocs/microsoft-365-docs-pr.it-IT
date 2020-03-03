@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Informazioni su come configurare un account di posta elettronica in Outlook per Windows e Mac e sull'installazione delle app di Office e l'accesso ai messaggi online.
-ms.openlocfilehash: 87a1bd45f763b4a802b083eb4936d67c50a92df3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257276"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361237"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurare Outlook per leggere la posta elettronica
 
@@ -64,7 +64,7 @@ Leggere l'[articolo completo](https://support.office.com/article/6e27792a-9267-4
 
 Dopo aver eseguito l'accesso a Office 365, selezionare **Outlook**.
   
-![La Home page di Office 365 con l'app Outlook evidenziata](../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![La Home page di Office 365 con l'app Outlook evidenziata](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
 Se non si trova l'app che si sta cercando, nell'icona di avvio delle app selezionare **Tutte le app** per visualizzare un elenco in ordine alfabetico delle app di Office 365 disponibili. Da qui è possibile cercare un'app specifica. 
   

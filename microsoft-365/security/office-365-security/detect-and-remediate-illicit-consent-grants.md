@@ -2,9 +2,9 @@
 title: Rilevare e rimediare a concessioni di consenso illecite in Office 365
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
-ms.openlocfilehash: 0ff16d01c3fe0f150e5a39cec574bc80aead9661
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: e11518b0b16b7ee922f18b0ef771d36f608e41b7
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957151"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42363052"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Rilevare e rimediare a concessioni di consenso illecite in Office 365
 
@@ -79,7 +79,7 @@ Se si dispone di una o più istanze di IOCs elencate in alto, è necessario eseg
 
 5. Selezionare **applicazioni**.
 
-In questo modo vengono mostrate le app che sono state assegnate all'utente e quali sono le autorizzazioni di applcations.
+In questo modo vengono mostrate le app che sono state assegnate all'utente e quali autorizzazioni hanno le applicazioni.
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Procedure per consentire agli utenti di enumerare l'accesso alle applicazioni
 
@@ -102,7 +102,7 @@ Il modo più semplice per verificare l'attacco di concessione di consenso illeci
 
 1. Accedere al computer in cui verrà eseguito lo script con i diritti di amministratore locale.
 
-2. Scaricare o copiare lo script [Get-AzureADPSPermissions. ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) da GitHub in una cartella da cui verrà eseguito il scruipt. Questa sarà la stessa cartella in cui verrà scritto il file di output "Permissions. csv".
+2. Scaricare o copiare lo script [Get-AzureADPSPermissions. ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) da GitHub in una cartella dalla quale verrà eseguito lo script. Questa sarà la stessa cartella in cui verrà scritto il file di output "Permissions. csv".
 
 3. Aprire un'istanza di PowerShell come amministratore e aprirla alla cartella in cui è stato salvato lo script.
 

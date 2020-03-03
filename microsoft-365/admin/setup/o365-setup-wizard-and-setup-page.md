@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Informazioni sulla differenza tra l'installazione guidata di Office 365 e la pagina di installazione.
-ms.openlocfilehash: 3aecfc14071bda7948c24a2e161461558f8efd8d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0873e37b849785feb7c70271b97b148f3cea8bd9
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42256986"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360457"
 ---
 # <a name="difference-between-the-office-365-setup-wizard-and-the-setup-page"></a>Differenza tra l'installazione guidata di Office 365 e la pagina di installazione
 
@@ -39,7 +39,7 @@ L'installazione guidata fornisce una procedura guidata per l'impostazione della 
 
 Per configurare l'account, accedere all'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339), selezionare **Setup** nel riquadro di spostamento sinistro e quindi selezionare **installazione guidata** nella pagina **configurazione** .
 
-![Avviare la configurazione guidata di Office 365 business](../media/o365b-guided-setup.png)
+![Avviare la configurazione guidata di Office 365 business](../../media/o365b-guided-setup.png)
 
 La procedura guidata di installazione illustra i passaggi seguenti:
 
@@ -57,7 +57,7 @@ Per accedere alla pagina di **installazione** nell'interfaccia di [Amministrazio
 
 Verrà visualizzato l'elenco completo delle attività di installazione disposte in categorie logiche, incluse quelle completate nell'installazione guidata.
 
-![Pagina di installazione di Office 365 per le aziende](../media/o365b-setup-page.png)
+![Pagina di installazione di Office 365 per le aziende](../../media/o365b-setup-page.png)
 
 Scegliere **View** per qualsiasi attività per ottenere informazioni a colpo d'occhio, quali la descrizione dell'attività, l'impatto dell'utente, i prerequisiti, l'implementazione e le statistiche relative alla sicurezza e all'adozione che consentono di comprendere le conseguenze e l'impatto prima di procedere.
 
@@ -67,4 +67,4 @@ Per accedere agli articoli completi sulle caratteristiche che si stanno configur
 
 Quando si è pronti a completare un'attività, selezionare **inizia** a scorrere il processo di configurazione. Dopo aver completato un'attività, il pulsante **Avvia** viene modificato in un pulsante **Gestisci** , che consente di gestire l'attività in base alle esigenze.
 
-![Visualizzazione delle attività in cui vengono visualizzate le informazioni a colpo d'occhio](../media/o365b-at-a-glance.png)
+![Visualizzazione delle attività in cui vengono visualizzate le informazioni a colpo d'occhio](../../media/o365b-at-a-glance.png)

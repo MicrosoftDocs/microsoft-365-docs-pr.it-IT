@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eef600b2fc325454ad7a4d36019a4e762409c8b9
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 74e84fc00e5fe633f0d70315cea9ad1329e2f639
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179217"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372014"
 ---
 # <a name="insider-risk-management-alerts"></a>Avvisi relativi alla gestione dei rischi Insider
 
@@ -35,6 +35,9 @@ Il dashboard di **avviso** dei rischi insider consente di visualizzare e interve
     - Tempo medio per risolvere gli avvisi di gravità bassa, elencati in ore, giorni o mesi.
 
 ![Dashboard di avviso gestione dei rischi Insider](../media/insider-risk-alerts-dashboard.png)
+
+>[!NOTE]
+>Insider Risk Management utilizza la limitazione degli avvisi incorporata per proteggere e ottimizzare l'analisi dei rischi e l'esperienza di revisione. Questa limitazione protegge i problemi che possono comportare un sovraccarico di avvisi sui criteri, ad esempio i connettori dati non configurati correttamente o i criteri DLP. Di conseguenza, potrebbe verificarsi un ritardo nella visualizzazione di nuovi avvisi per un utente.
 
 ## <a name="alert-status-and-severity"></a>Stato avviso e gravità
 

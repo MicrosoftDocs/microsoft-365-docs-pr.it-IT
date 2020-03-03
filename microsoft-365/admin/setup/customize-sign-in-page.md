@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Personalizzare la pagina di accesso di Office 365 utilizzando Azure Active Directory. È possibile aggiungere una figura, un logo e un testo alla pagina di accesso.
-ms.openlocfilehash: 7db1271cd3d009bdbf1a26166f95a99d44087421
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 97d1d1c7dcb5a31395c98295a250913bb8ab69f5
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243956"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42360647"
 ---
 # <a name="add-your-company-branding-to-office-365-sign-in-page"></a>Personalizzare la pagina di accesso a Office 365 con il marchio aziendale
 
@@ -36,7 +36,7 @@ Se è stato sottoscritto un abbonamento a pagamento a Office 365, Microsoft Dyna
   
 La figura seguente illustra le parti della pagina di accesso che possono essere modificate in Azure.
   
-![Aree della pagina di accesso di Office 365 che è possibile personalizzare.](../media/screenshotbranding.png)
+![Aree della pagina di accesso di Office 365 che è possibile personalizzare.](../../media/screenshotbranding.png)
   
 1. L'illustrazione di grandi dimensioni e/o il colore di sfondo
     

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: "Informazioni su come diventare l'amministratore e ottenere la sottoscrizione di Office 365 per l'organizzazione. "
-ms.openlocfilehash: 6fd85f79b32d0a51a5069cfbb55ca58e7cdb1b36
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d646b2e0ead1a4d911b4c9335660e2998ab5292a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257405"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361551"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>Diventare l'amministratore e acquistare Office 365 per l'organizzazione
 
@@ -55,16 +55,16 @@ L'amministratore può anche aggiungere nuovi utenti o applicare criteri nel modo
   
 ## <a name="overview-of-the-steps"></a>Panoramica della procedura
 
-![High-level view of the phases involved with becoming an admin and buying Office 365.](../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
+![High-level view of the phases involved with becoming an admin and buying Office 365.](../../media/1ee46aff-dccb-4bfd-abb3-811a616009af.png)
   
 Una procedura guidata permette di eseguire i diversi passaggi del processo, ma ecco un riepilogo di ogni passaggio.
   
 |||
 |:-----|:-----|
-|![Number one in a pink circle](../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**Iscrizione** Prima di diventare l'amministratore, è necessario aver già eseguito l'iscrizione a Riunioni Skype con il proprio indirizzo di posta elettronica aziendale.  <br/> |
-|![Number two in a pink circle.](../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**Esecuzione della procedura guidata** Dopo aver completato l'iscrizione, eseguire la procedura guidata in uno di questi modi:  <br/>  Eseguire la procedura guidata **divenire l'amministratore** che viene visualizzata dopo aver selezionato **admin** nell'icona di avvio delle app.  <br/>  OPPURE  <br/>  Scegliere di eseguire l' **aggiornamento a office 365** nelle riunioni di Skype e quindi selezionare la sottoscrizione di Office 365 a cui si desidera eseguire l'aggiornamento.  <br/> |
-|![Number three in a pink circle.](../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**Verifica della proprietà del dominio** Quindi, è necessario dimostrare in Office 365 di essere proprietari del nome di dominio, ad esempio contoso.com, associato agli indirizzi di posta elettronica dell'organizzazione e di gestirlo. Solo il proprietario del nome di dominio ha l'autorità per eseguire questa operazione.  <br/> |
-|![Number 4 in a pink circle.](../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**Acquisto delle licenze** Nell'ultimo passaggio della procedura guidata è necessario acquistare le licenze di Office 365 per ogni utente dell'organizzazione che ha completato l'iscrizione a Riunioni Skype con il proprio indirizzo di posta elettronica aziendale.  <br/> Ad esempio, se due utenti si sono iscritti a Riunioni Skype con il proprio indirizzo di posta elettronica aziendale, sarà necessario acquistare due licenze, una per ciascuno.  <br/> > [!NOTE]> Non è possibile gestire Office 365 fino a quando non si acquistano le licenze.           |
+|![Number one in a pink circle](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**Iscrizione** Prima di diventare l'amministratore, è necessario aver già eseguito l'iscrizione a Riunioni Skype con il proprio indirizzo di posta elettronica aziendale.  <br/> |
+|![Number two in a pink circle.](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**Esecuzione della procedura guidata** Dopo aver completato l'iscrizione, eseguire la procedura guidata in uno di questi modi:  <br/>  Eseguire la procedura guidata **divenire l'amministratore** che viene visualizzata dopo aver selezionato **admin** nell'icona di avvio delle app.  <br/>  OPPURE  <br/>  Scegliere di eseguire l' **aggiornamento a office 365** nelle riunioni di Skype e quindi selezionare la sottoscrizione di Office 365 a cui si desidera eseguire l'aggiornamento.  <br/> |
+|![Number three in a pink circle.](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**Verifica della proprietà del dominio** Quindi, è necessario dimostrare in Office 365 di essere proprietari del nome di dominio, ad esempio contoso.com, associato agli indirizzi di posta elettronica dell'organizzazione e di gestirlo. Solo il proprietario del nome di dominio ha l'autorità per eseguire questa operazione.  <br/> |
+|![Number 4 in a pink circle.](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**Acquisto delle licenze** Nell'ultimo passaggio della procedura guidata è necessario acquistare le licenze di Office 365 per ogni utente dell'organizzazione che ha completato l'iscrizione a Riunioni Skype con il proprio indirizzo di posta elettronica aziendale.  <br/> Ad esempio, se due utenti si sono iscritti a Riunioni Skype con il proprio indirizzo di posta elettronica aziendale, sarà necessario acquistare due licenze, una per ciascuno.  <br/> > [!NOTE]> Non è possibile gestire Office 365 fino a quando non si acquistano le licenze.           |
 
 ## <a name="your-office-365-subscription"></a>Abbonamento a Office 365
 

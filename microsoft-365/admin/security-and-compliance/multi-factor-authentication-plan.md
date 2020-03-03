@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni sull'autenticazione a più fattori in Office 365 e sui passaggi da seguire per configurarlo.
-ms.openlocfilehash: c3d5e83b951e4fd4a05cb18408ecb3d26e397cf9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2e2cbc9d6d966a9858fafb62f08d26893c9f4353
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257206"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361177"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365
 
@@ -77,7 +77,7 @@ La figura seguente mostra in che modo le app aggiornate per i dispositivi di Off
     
 Questa operazione è descritta in dettaglio nella figura seguente:
   
-![Modern authentication for Office 2013 device apps.](../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
+![Modern authentication for Office 2013 device apps.](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
   
 ## <a name="software-requirements"></a>Requisiti software
 
@@ -91,7 +91,7 @@ Per determinare se l'installazione di Office è basata su A portata di clic o su
     
 3. Per le installazioni A portata di clic di Outlook 2013, viene visualizzato il pulsante **Opzioni di aggiornamento**. Per le installazioni basate su MSI, non viene visualizzato il pulsante **Opzioni di aggiornamento**. 
     
-    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
   
 ### <a name="click-to-run-based-installations"></a>Installazioni basate su A portata di clic
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 322cd0aa8b72ea2c81792b36614e87d97db87d7c
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: f499cacd0ec63f9a192e2773b3604473d2153545
+ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179107"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370495"
 ---
 # <a name="insider-risk-management-users"></a>Utenti di gestione dei rischi Insider
 
@@ -30,6 +30,9 @@ Gli utenti di gestione dei rischi Insider sono impiegati nell'organizzazione che
 - **Caso**: il caso attivo corrente per l'utente.
 
 ![Dashboard degli utenti di gestione dei rischi Insider](../media/insider-risk-users-dashboard.png)
+
+>[!NOTE]
+>Il numero di utenti visualizzati nel dashboard utente può essere limitato in alcuni casi, a seconda del volume degli avvisi attivi e dei criteri di corrispondenza. Gli utenti con avvisi attivi vengono visualizzati quando vengono generati gli avvisi e possono verificarsi casi rari in cui viene raggiunto il numero massimo di utenti visualizzati. In questo caso, gli utenti con avvisi attivi che non vengono visualizzati verranno aggiunti al dashboard utente, in quanto gli avvisi utente esistenti sono stati valutati.
 
 ## <a name="view-user-details"></a>Visualizzare i dettagli dell'utente
 
