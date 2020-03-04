@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8bcfd7229a6e27b2e68523754c2b29c1bb9c3cdc
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: b19c48161d5d0f43c2beb207dd0ee2db8bfb1470
+ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266102"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42372024"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -145,6 +145,65 @@ Per informazioni sulle modifiche pianificate, vedere [What ' s Coming in Microso
 Uno dei principi del Punteggio sicuro è che il punteggio dovrebbe essere standardizzato e facilmente correlabile. L'utilizzo di azioni di miglioramento non misurabili o utilizzabili ha provocato confusione. Microsoft Secure Score ha senso solo quando ogni suggerimento può avere un effetto chiaro sulla partitura. Le azioni di miglioramento non segnate non sono misurabili.  
 
 Per questi motivi, tutte le azioni di miglioramento non segnate sono state rimosse. Non è necessaria alcuna azione da parte vostra.
+
+### <a name="removed-device-improvement-actions"></a>Azioni di miglioramento del dispositivo rimosse
+
+Dopo aver valutato la categoria del dispositivo Microsoft Secure score per le azioni di miglioramento, è stato stabilito che tali azioni valutano attualmente lo stato del criterio e non lo stato di configurazione dei dispositivi. Poiché la configurazione è direttamente legata alla postura di sicurezza, le azioni del dispositivo esistenti sono state determinate per non rappresentare completamente la postura organizzativa.  Verranno eliminate le azioni correnti nella categoria dispositivo durante la lavorazione per fornire una serie di raccomandazioni che utilizzano direttamente i dati di diagnostica per rappresentare in modo più completo la posizione di sicurezza dei dispositivi.
+
+Sono state rimosse le operazioni di miglioramento seguenti:
+
+- Abilitare la gestione dei dispositivi mobili di Microsoft Intune
+- Creare un criterio di conformità di Microsoft Intune per Android
+- Creare un criterio di conformità di Microsoft Intune per Android per il lavoro
+- Creare un criterio di protezione delle app di Microsoft Intune per Android
+- Creare un criterio di protezione delle app di Microsoft Intune per iOS
+- Contrassegnare i dispositivi senza criteri di conformità di Microsoft Intune assegnati come non conformi
+- Creare un criterio di conformità di Microsoft Intune per iOS
+- Creare un criterio di conformità di Microsoft Intune per macOS
+- Creare un criterio di conformità di Microsoft Intune per Windows
+- Creare un profilo di configurazione di Microsoft Intune per Android
+- Creare un profilo di configurazione di Microsoft Intune per Android per il lavoro
+- Creare un profilo di configurazione di Microsoft Intune per macOS
+- Creare un profilo di configurazione di Microsoft Intune per iOS
+- Creare un profilo di configurazione di Microsoft Intune per Windows
+- Abilitare il rilevamento migliorato del jailbreak in Microsoft Intune
+- Richiedere la correzione di tutti i dispositivi, disporre di antivirus e firewall abilitati
+- Abilitare l'integrazione di Windows Defender ATP in Microsoft Intune
+- Creare un criterio di protezione delle informazioni di Windows per Microsoft Intune
+- Richiedere che tutti i dispositivi dispongano di configurazioni di sicurezza avanzate
+- Rivedere i dispositivi bloccati segnala settimanalmente
+
+### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Azioni di miglioramento rimosse che non soddisfano le aspettative per misure affidabili
+
+Per assicurarsi che il Punteggio di Microsoft Secure sia significativo e che ogni azione di miglioramento sia misurabile e affidabile, sono state rimosse le seguenti azioni di miglioramento:
+
+- Abilitare la registrazione dei dati di controllo
+- Individuare le applicazioni IT Shadow a rischio e non conformi
+- Esaminare le autorizzazioni & bloccare le applicazioni OAuth rischiose connesse all'ambiente
+- Configurare il controllo delle versioni nelle raccolte documenti di SharePoint Online
+
+### <a name="mfa-improvement-action-updates"></a>Aggiornamenti dell'azione per il miglioramento dell'AMF
+
+Per riflettere la necessità per le aziende di garantire la massima sicurezza durante l'applicazione di criteri che funzionano con le loro attività, Microsoft Secure Score ha rimosso tre azioni di miglioramento incentrate sull'autenticazione a più fattori e ha aggiunto due.
+
+Azioni di miglioramento rimosse:
+
+- Registrare tutti gli utenti per l'autenticazione a più fattori
+- Richiedi l'AMF per tutti gli utenti
+- Richiedere l'autenticazione master per i ruoli con privilegi di Azure AD
+
+Operazioni di miglioramento aggiunte:
+
+- Garantire che tutti gli utenti possano completare l'autenticazione a più fattori per l'accesso sicuro
+- Richiedere l'AMF per i ruoli amministrativi
+
+ Queste nuove azioni di miglioramento richiedono la registrazione di utenti o amministratori per l'autenticazione a più fattori (AMF) all'interno della directory e la definizione del set di criteri appropriato che soddisfano le esigenze dell'organizzazione. L'obiettivo principale è la flessibilità garantendo che tutti gli utenti e gli amministratori siano in grado di eseguire l'autenticazione con più fattori o richieste di verifica dell'identità basata sui rischi. Che può assumere la forma di avere più criteri che applicano decisioni con ambito o impostazione dei valori predefiniti per la sicurezza (a partire dal 16 marzo) che consentono a Microsoft di decidere quando sfidare gli utenti per l'AMF.
+
+### <a name="removed-review-improvement-actions"></a>Azioni di miglioramento "revisione" rimosse
+
+Uno dei principi del Punteggio sicuro è che il punteggio dovrebbe essere standardizzato e facilmente correlabile. L'utilizzo di azioni di miglioramento non misurabili o utilizzabili ha provocato confusione. Un punteggio sicuro di Microsoft ha senso solo quando ogni suggerimento può avere un effetto chiaro sulla partitura. Esaminare le azioni di miglioramento non vengono misurate allo stesso livello di altre azioni di miglioramento.  
+
+Per questi motivi, tutte le azioni di miglioramento che richiedono una cadenza di revisione sono state temporaneamente rimosse. Non è necessaria alcuna azione da parte vostra.
 
 ### <a name="preview-features"></a>Funzionalità di anteprima
 

@@ -1,5 +1,5 @@
 ---
-title: Comprendere la fattura
+title: Informazioni sulla fattura
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Informazioni su come leggere e comprendere la fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: bf6f26b2f3bbeb3ac22273eca98b223383b88924
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0ccf8484ba5f8badd29e1a8a54e1b570dd1e0548
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594697"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409711"
 ---
-# <a name="understand-your-invoice"></a>Comprendere la fattura
+# <a name="understand-your-invoice"></a>Informazioni sulla fattura
 
 La fattura fornisce un riepilogo degli addebiti e delle istruzioni per il pagamento. È possibile [visualizzare la fattura online](#view-your-online-invoice) nell'interfaccia di amministrazione di Microsoft 365. È anche possibile scaricarlo nel formato di documento portatile (. pdf) per inviare tramite posta elettronica.
 
-Se si dispone di un abbonamento a Office 365, vedere [visualizzare la fattura per office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
+Se si dispone di un abbonamento a Office 365, vedere [visualizzare la fattura per office 365 for business](view-your-bill-or-invoice.md).
 
 ## <a name="understand-the-invoice-header"></a>Informazioni sull'intestazione della fattura
 
@@ -102,7 +102,7 @@ Le fatture sono disponibili online. Un collegamento alla fattura online è dispo
 
 ### <a name="to-view-your-online-invoice"></a>Per visualizzare la fattura online
 
-1. Nell'interfaccia di amministrazione, **andare alla** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">fatture & pagamenti</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatture** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
 
 2. Per scaricare la versione. pdf della fattura, scegliere **Scarica fattura PDF** nella riga per la fattura che si desidera visualizzare.
 
@@ -112,4 +112,4 @@ Le fatture sono disponibili online. Un collegamento alla fattura online è dispo
 
 Se hai domande o hai bisogno di aiuto con i crediti di Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">Crea una richiesta di supporto con supporto di Azure</a>.
 
-In caso di domande o di assistenza per la fattura nell'interfaccia di amministrazione di Microsoft 365, [contattare il supporto tecnico per i prodotti business](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+In caso di domande o di assistenza per la fattura nell'interfaccia di amministrazione di Microsoft 365, [contattare il supporto tecnico per i prodotti business](../../admin/contact-support-for-business-products.md).

@@ -16,16 +16,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora contenuto consente di visualizzare in modo nativo gli elementi con etichetta.
-ms.openlocfilehash: 2d9be42c00940bf9d37d1fdeb9b15b071aa412ac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 205ec6b4f2049e18ee95f25505d8a58d7eb7ac77
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076429"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409691"
 ---
 # <a name="using-data-classification-content-explorer-preview"></a>Utilizzo di Esplora contenuto di classificazione dei dati (anteprima)
 
 Esplora contenuto di classificazione dei dati consente di visualizzare in modo nativo gli elementi che sono stati riepilogati nella pagina di panoramica.
+
+## <a name="prerequisites"></a>Prerequisiti
+
+A ogni account che accede e usa Esplora attività deve essere assegnata una licenza da uno di questi abbonamenti:
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Componente aggiuntivo Advanced Compliance (E5)
+- Componente aggiuntivo Advanced Threat Intelligence (E5)
 
 ## <a name="content-explorer"></a>Esplora contenuto
 
@@ -58,6 +67,8 @@ Sono due i ruoli che consentono di accedere a Esplora contenuto:
 L'account usato per accedere a Esplora contenuto deve essere presente in uno o entrambi i gruppi di ruoli. Si tratta di gruppi di ruoli indipendenti e non cumulativi. Ad esempio, se si vuole concedere a un account la possibilità di visualizzare solo gli elementi e le relative posizioni, concedere i diritti di Visualizzatore elenco di Esplora contenuto. Se si vuole che lo stesso account sia in grado di visualizzare anche il contenuto degli elementi dell'elenco, concedere anche i diritti di Visualizzatore contenuto di Esplora contenuto.
 
 È anche possibile assegnare uno o entrambi i ruoli a un gruppo di ruoli personalizzato per personalizzare l'accesso a Esplora contenuto.
+
+Un amministratore globale, un amministratore di conformità o un amministratore dei dati può assegnare l'appartenenza ai gruppi di ruolo Visualizzatore elenco di Esplora contenuto e Visualizzatore contenuto di Esplora contenuto necessaria.
 
 ### <a name="how-to-use-content-explorer"></a>Come usare Esplora contenuto
 

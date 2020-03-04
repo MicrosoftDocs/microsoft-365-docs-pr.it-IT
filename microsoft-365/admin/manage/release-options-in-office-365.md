@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Informazioni su come configurare l'opzione di rilascio per gli aggiornamenti di nuovi prodotti e funzionalità nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 2d4940003c791e50926eff46aaf6a299e60fb9aa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
+ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252799"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42361801"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>Configurare le opzioni di Standard o Targeted Release in Office 365
 
@@ -39,7 +39,7 @@ Con Office 365 si possono ricevere i nuovi aggiornamenti e le nuove funzionalit�
 
 Tutte le nuove versioni sono state verificate e convalidate dal team di funzionalità, quindi da tutto il team di Office 365, seguito da tutti i membri di Microsoft. Dopo il test e la convalida interni, il passaggio successivo è il rilascio **Targeted Release** (precedentemente noto come First Release) per i clienti che hanno acconsentito esplicitamente. A ogni anello di rilascio, Microsoft raccoglie feedback dagli utenti e convalida ulteriormente la qualità monitorando le metriche di utilizzo principali. Questa serie di convalide progressive viene applicata per garantire che la versione risulti quanto più stabile possibile in tutto il mondo. I rilasci sono illustrati nella figura seguente. 
   
-![Rilasci gli anelli di convalida per Office 365](../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Rilasci gli anelli di convalida per Office 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
 Per gli aggiornamenti significativi, i clienti di Office vengono inizialmente informati dalla [Roadmap di Microsoft 365](https://products.office.com/business/office-365-roadmap). Man mano che un aggiornamento si avvicina all'implementazione, viene comunicato tramite il [centro messaggi di Office 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprendere i motivi per cui a volte è necessario che i piani di commutazione vengano eseguiti manualmente o chiamando il supporto.
-ms.openlocfilehash: d7c076a5ce003f7d5ce5317f4330857e632e53ad
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a78ce8614dcc7382543bfda5bdfdfb025b6e5077
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243148"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409621"
 ---
 # <a name="why-cant-i-switch-office-365-for-business-plans"></a>Perché non è possibile cambiare un piano di Office 365 per le aziende?
 
@@ -41,12 +41,12 @@ Se il pulsante **Cambia** piano non è visualizzato, non è possibile commutarlo
   
 ::: moniker range="o365-worldwide"
 
- **Serve altro?** [Acquistare un altro abbonamento](../buy-another-subscription.md) | [Annulla gli](cancel-your-subscription.md) | [abbonamenti a sottoscrizione e](../subscriptions-and-billing.md) | il supporto per le[chiamate](../../admin/contact-support-for-business-products.md) di fatturazione
+ **Serve altro?** [Acquistare un altro abbonamento](../buy-another-subscription.md) | [Annulla gli](cancel-your-subscription.md) | [abbonamenti a sottoscrizione e](../index.yml) | il supporto per le[chiamate](../../admin/contact-support-for-business-products.md) di fatturazione
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Serve altro?** [Acquistare un altro abbonamento](../buy-another-subscription.md) | [Annulla gli](cancel-your-subscription.md) | [abbonamenti a sottoscrizione e](../subscriptions-and-billing.md) | il supporto per le[chiamate](../../admin/contact-support-for-business-products.md) di fatturazione
+ **Serve altro?** [Acquistare un altro abbonamento](../buy-another-subscription.md) | [Annulla gli](cancel-your-subscription.md) | [abbonamenti a sottoscrizione e](../index.yml) | il supporto per le[chiamate](../../admin/contact-support-for-business-products.md) di fatturazione
 
 ::: moniker-end
 

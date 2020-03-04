@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 517ff6ae711d61b783e837aebeeb991dfaa53daa
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 368ccef9e5213a7494140d2c305ddafe1e0c3f79
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084335"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409511"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 
@@ -1220,7 +1220,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Persona giuridica 
 - Persone giuridiche 
 - Stato della registrazione 
-- Piccole e medie imprese 
+- Business 
 - Company
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
@@ -1968,7 +1968,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 
 ### <a name="format"></a>Formato
 
-16 cifre che possono essere formattate o non formattate (dddddddddddddddd) e devono superare il test di Luhn.
+da 14 a 16 cifre che possono essere formattate o non formattate (dddddddddddddddd) e che devono superare il test di Luhn.
 
 ### <a name="pattern"></a>Modello
 
@@ -6173,4 +6173,3 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 55%,
 - SS # 
 - SSID 
    
-

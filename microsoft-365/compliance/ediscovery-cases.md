@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilizzare il Centro sicurezza & conformità per creare e gestire i casi di eDiscovery nell'organizzazione. È possibile assegnare membri al caso, inserire posizioni di contenuto in attesa, eseguire ricerche di contenuto associate al caso e esportare i risultati della ricerca. È inoltre possibile preparare i dati dei casi per un'ulteriore analisi in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 7ae834e7f93c381cf6d386131e3a5c671e2bc529
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 22547a69b78e8ca8497dd2e2a6ae5d77f913a08f
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075077"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409741"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gestire i casi di eDiscovery nel Centro sicurezza e conformità
 
@@ -53,7 +53,7 @@ Utilizzare il flusso di lavoro seguente per configurare e utilizzare i casi di e
 
 [Optional Passaggio 10: riaprire un caso chiuso](#optional-step-10-re-open-a-closed-case)
 
-[Altre informazioni](#more-information)
+[Ulteriori informazioni](#more-information)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 
@@ -77,9 +77,6 @@ Il primo passaggio consiste nell'assegnare le autorizzazioni appropriate relativ
     - Accedere ai dati del caso in Advanced eDiscovery per tutti i casi nell'organizzazione.
     
     Vedere la sezione [More information](#more-information) per conoscere i motivi per cui si potrebbe voler diventare un amministratore di eDiscovery nell'organizzazione. 
-    
-> [!IMPORTANT]
-> Se una persona non è un membro di uno di questi gruppi di ruoli correlati a eDiscovery o non è un membro di un gruppo di ruoli a cui è assegnato il ruolo Reviewer, non è possibile aggiungerli come membri di un caso di eDiscovery. 
 
 Per ulteriori informazioni sulle autorizzazioni di eDiscovery, vedere [assign eDiscovery Permissions](assign-ediscovery-permissions.md).
   
@@ -117,28 +114,27 @@ Il passaggio successivo consiste nel creare un caso di eDiscovery. È necessario
     
     > [!TIP]
     > Dopo aver creato un nuovo caso, è possibile rinominarlo in qualsiasi momento. Basta fare clic sul nome del caso nella pagina **eDiscovery** . Nella pagina **Gestisci** il riquadro a comparsa di questo caso, modificare il nome visualizzato nella casella in **nome**e quindi salvare la modifica. 
-  
 ## <a name="step-3-add-members-to-a-case"></a>Passaggio 3: aggiungere membri a un caso
 
-Dopo aver creato un caso, il passaggio successivo consiste nell'aggiungere membri al caso. Come spiegato in precedenza, solo gli utenti membri dei gruppi di ruoli revisore o Manager di eDiscovery possono essere aggiunti come membri del caso. Il responsabile di eDiscovery che ha creato il caso viene aggiunto automaticamente come membro.
+Dopo aver creato un caso, il passaggio successivo consiste nell'aggiungere membri al caso. Il responsabile di eDiscovery che ha creato il caso viene aggiunto automaticamente come membro. Come spiegato in precedenza, i membri devono assegnare le autorizzazioni appropriate di eDiscovery, in modo che possano accedere al caso dopo averli aggiunti.
   
 1. Nel centro sicurezza & conformità, fare clic su **eDiscovery** \> **eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione. 
-    
+
 2. Fare clic sul nome del caso in cui si desidera aggiungere i membri.
-    
+
     Viene visualizzata la pagina Gestisci il riquadro a comparsa di **questo caso** . 
-    
+
     ![Gestione di una pagina del riquadro a comparsa del caso](../media/11f35ceb-6c98-4580-a3bc-ad688e9c7af9.png)
   
 3. In **Gestisci membri**fare ![clic su](../media/ITPro-EAC-AddIcon.gif) **Aggiungi icona Aggiungi** per aggiungere membri al caso. 
-    
+
     È inoltre possibile scegliere di aggiungere un gruppo di ruoli al caso. In **Gestisci gruppi**di ruoli ![fare clic](../media/ITPro-EAC-AddIcon.gif) su **Aggiungi icona Aggiungi**.
-    
+
     > [!NOTE]
     > I gruppi di ruoli controllano chi può assegnare membri a un caso di eDiscovery. Questo significa che è possibile assegnare solo i gruppi di ruoli a cui si è membri di un caso.
-    
+
 4. Nell'elenco di utenti o gruppi di ruoli che possono essere aggiunti come membri del caso, fare clic sulla casella di controllo accanto ai nomi degli utenti o dei gruppi di ruoli che si desidera aggiungere.
-    
+
     > [!TIP]
     > Se si dispone di un elenco elevato di utenti che possono essere aggiunti come membri, utilizzare la casella di **ricerca** per cercare una persona specifica nell'elenco. 
   
@@ -154,7 +150,7 @@ Dopo aver creato un caso, il passaggio successivo consiste nell'aggiungere membr
 
 > [!NOTE]
 > Dopo aver attivato il blocco del contenuto, sono necessarie fino a 24 ore per rendere effettive le esenzioni. 
->   
+
 Quando si crea un'esenzione, sono disponibili le opzioni seguenti per l'ambito del contenuto conservato nei percorsi di contenuto specificati:
   
 - È possibile creare un'esenzione infinita in cui tutto il contenuto viene messo in attesa. In alternativa, è possibile creare un blocco basato su query che contenga solo il contenuto che corrisponde a una query di ricerca.
@@ -545,7 +541,7 @@ Per eliminare un caso:
 
 Se il caso in cui si sta tentando di eliminare contiene ancora le esenzioni, verrà visualizzato un messaggio di errore. Sarà necessario eliminare tutte le esenzioni associate al caso e quindi riprovare per eliminare il caso.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - **Esistono limiti per i casi di eDiscovery o per i detiene associati a un caso di eDiscovery?** Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esenzioni del caso.
     

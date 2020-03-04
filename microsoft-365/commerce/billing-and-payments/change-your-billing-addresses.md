@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Informazioni su come aggiornare gli indirizzi di fatturazione per Office 365 for business. È inoltre possibile aggiornare l'indirizzo di posta elettronica utilizzato per ricevere le notifiche di fatturazione.
 ms.custom: okr_SMB
-ms.openlocfilehash: 8cf7a8a8ac3414e8c40a1642b33e36f9b5cdf1a9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aa696be3fd541fb98bc29c65c1285e2b2e967726
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354757"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409641"
 ---
 # <a name="change-your-billing-addresses-for-office-365-for-business"></a>Cambiare gli indirizzi di fatturazione per Office 365 per le aziende
 
@@ -195,5 +195,4 @@ Per impostazione predefinita, le notifiche sulla fatturazione vengono inviate al
 
 [Pagare per yoursubscription](pay-for-your-subscription.md)
 
-[Abbonamenti e fatturazione-Guida per gli amministratori](../subscriptions-and-billing.md)
-
+[Abbonamenti e fatturazione-Guida per gli amministratori](../index.yml)

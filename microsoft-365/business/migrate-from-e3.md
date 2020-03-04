@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come spostare la propria azienda in Microsoft 365 business da Office 365 E3.
-ms.openlocfilehash: 54320ed60825a28147542094b19761889a70ae9f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b86a163792aa71f0bca115ab918e0800acc0427d
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065580"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409681"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Migrazione da Office 365 E3 a Microsoft 365 business 
 
@@ -38,27 +38,27 @@ La migrazione è semplice: prima di tutto si cambia la licenza e tutti i dati e 
 
 In questa tabella vengono illustrate le differenze tra Microsoft 365 business e Office 365 E3.
 
-| Funzionalità   | Supporto in Microsoft 365 business | Supporto in Office 365 E3 | 
+| Funzionalità    | Supporto in Microsoft 365 business    | Supporto in Office 365 E3 | 
 |:-------|:-----|:-----|
-| **Locale**       | | | 
-| App di Office<sup>1</sup>   | Office 365 Business   | Office 365 ProPlus | 
-| **App per la produttività del cloud**       | | | 
-| Exchange Online e Outlook   | 50 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata   | 100 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata | 
-| Teams | ![Incluso in Microsoft 365 business](../media/check-mark.png)  | ![Incluso con Office 365 E3](../media/check-mark.png) | 
-| OneDrive for Business | limite di archiviazione di 1 TB per utente   | Illimitata | 
-| Yammer, SharePoint Online, planner, Stream    | ![Incluso in Microsoft 365 business](../media/check-mark.png)  | ![Incluso con Office 365 E3](../media/check-mark.png) | 
-| StaffHub  | ![Incluso in Microsoft 365 business](../media/check-mark.png)  | ![Incluso con Office 365 E3](../media/check-mark.png) | 
-| Gestione clienti di Outlook, MileIQ  | ![Incluso in Microsoft 365 business](../media/check-mark.png)  | | 
-| **Protezione dalle minacce**     | | | 
-| Piano 1 di Office 365 Advanced Threat Protection (ATP) | ![Incluso in Microsoft 365 business](../media/check-mark.png) | Non incluso, ma può essere aggiunto | 
-| **Gestione delle identità**       | | | 
-| Reimpostazione della password in modalità self-service per gli account di Azure Active Directory (Azure AD), l'autenticazione a più fattori di Azure (AMF), l'accesso condizionale, il writeback delle password per le identità locali|    ![Incluso in Microsoft 365 business](../media/check-mark.png)    |  | 
-| **Gestione di dispositivi e app**     | | |
-| Microsoft Intune, Windows Autopilot|  ![Incluso in Microsoft 365 business](../media/check-mark.png)    |  |
-| Attivazione di computer condivisi|   ![Incluso in Microsoft 365 business](../media/check-mark.png)    | ![Incluso con Office 365 E3](../media/check-mark.png)| 
+| **Locale**        | | | 
+| App di Office<sup>1</sup>    | Office 365 Business    | Office 365 ProPlus | 
+| **App per la produttività del cloud**        | | | 
+| Exchange Online e Outlook    | 50 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata    | 100 GB di spazio di archiviazione per cassetta postale e archiviazione Exchange Online illimitata | 
+| Teams    | ![Incluso in Microsoft 365 business](../media/check-mark.png)    | ![Incluso con Office 365 E3](../media/check-mark.png) | 
+| OneDrive for Business    | limite di archiviazione di 1 TB per utente    | Illimitata | 
+| Yammer, SharePoint Online, planner, Stream    | ![Incluso in Microsoft 365 business](../media/check-mark.png)    | ![Incluso con Office 365 E3](../media/check-mark.png) | 
+| StaffHub    | ![Incluso in Microsoft 365 business](../media/check-mark.png)    | ![Incluso con Office 365 E3](../media/check-mark.png) | 
+| Gestione clienti di Outlook, MileIQ    | ![Incluso in Microsoft 365 business](../media/check-mark.png)    | | 
+| **Protezione dalle minacce**        | | | 
+| Piano 1 di Office 365 Advanced Threat Protection (ATP) | ![Incluso in Microsoft 365 business](../media/check-mark.png)    | Non incluso, ma può essere aggiunto | 
+| **Gestione delle identità**        | | | 
+| Reimpostazione della password in modalità self-service per gli account di Azure Active Directory (Azure AD), l'autenticazione a più fattori di Azure (AMF), l'accesso condizionale, il writeback delle password per le identità locali|     ![Incluso in Microsoft 365 business](../media/check-mark.png)    |  | 
+| **Gestione di dispositivi e app**        | | |
+| Microsoft Intune, Windows Autopilot|     ![Incluso in Microsoft 365 business](../media/check-mark.png)    |  |
+| Attivazione di computer condivisi|     ![Incluso in Microsoft 365 business](../media/check-mark.png)    | ![Incluso con Office 365 E3](../media/check-mark.png)| 
 | Diritti di aggiornamento a Windows 10 Pro dalle licenze Win 7/8.1 Pro|     ![Incluso in Microsoft 365 business](../media/check-mark.png)    || 
 | **Protezione delle informazioni**        | | |
-|Prevenzione della perdita dei dati di Office 365|   ![Incluso in Microsoft 365 business](../media/check-mark.png)|![Incluso con Office 365 E3](../media/check-mark.png)|
+|Prevenzione della perdita dei dati di Office 365|    ![Incluso in Microsoft 365 business](../media/check-mark.png)|![Incluso con Office 365 E3](../media/check-mark.png)|
 |Azure Information Protection piano 1, applicazione di BitLocker|![Incluso in Microsoft 365 business](../media/check-mark.png)||
 |Piano di protezione delle informazioni di Azure 1, etichette di riservatezza|![Incluso in Microsoft 365 business](../media/check-mark.png)||
 |**Licenza di accesso client (CAL Rights)**|||
@@ -68,7 +68,7 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 business e 
 
 ## <a name="migration"></a>Migrazione
 
-Per eseguire la migrazione della sottoscrizione, vedere [passare a un piano diverso manualmente](https://docs.microsoft.com/office365/admin/misc/switch-plans-manually) per istruzioni se si desidera spostare solo poche persone a Microsoft 365 business. È inoltre possibile [aggiornare automaticamente tutti gli utenti](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/upgrade-to-different-plan)o collaborare con il partner per spostare la sottoscrizione E3 e le licenze a un abbonamento a Microsoft 365 business.
+Per eseguire la migrazione della sottoscrizione, vedere [modificare manualmente i piani](../commerce/subscriptions/change-plans-manually.md) per le istruzioni se si desidera spostare solo poche persone a Microsoft 365 business. È inoltre possibile [aggiornare automaticamente tutti gli utenti](../commerce/subscriptions/upgrade-to-different-plan.md)o collaborare con un partner per spostare la sottoscrizione E3 e le licenze a un abbonamento a Microsoft 365 business.
 Nelle sezioni seguenti vengono descritte le modifiche che è necessario apportare, se presenti, e le operazioni che è possibile eseguire dopo la migrazione.
 
 ### <a name="office-365-e3-subscription-configuration-and-data"></a>Configurazione e dati dell'abbonamento a Office 365 E3

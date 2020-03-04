@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Informazioni su come rimuovere le licenze dagli account utente.
-ms.openlocfilehash: bd14b7c62672d08e608b476e9c5982ac4b5ce070
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 031a29f9e005c5acc2fdf2aa5f24268268d180ab
+ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252763"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42400933"
 ---
 # <a name="unassign-licenses-from-users"></a>Annullare l'assegnazione delle licenze agli utenti
 
@@ -148,9 +148,11 @@ Quando si utilizza la pagina **licenze** per annullare l'assegnazione delle lice
 
 - Si può anche [eliminare un account utente](../add-users/delete-a-user.md) a cui è stata assegnata una licenza per renderla disponibile per un altro utente. Quando si elimina un account utente, la licenza corrispondente può essere immediatamente assegnata a un altro utente.
 
-- Quando una licenza viene rimossa da un utente, i dati associati a quell'account vengono conservati per 30 giorni. Dopo il periodo di tolleranza di 30 giorni, i dati vengono eliminati e non possono essere ripristinati. I file salvati in OneDrive o SharePoint Online non vengono eliminati. Per ulteriori informazioni, vedere [OneDrive retention and Deletion](https://docs.microsoft.com/onedrive/retention-and-deletion)
+- Quando una licenza viene rimossa da un utente, i dati associati a quell'account vengono conservati per 30 giorni. Dopo il periodo di tolleranza di 30 giorni, i dati vengono eliminati e non possono essere ripristinati.
 
-   Inoltre, la cassetta postale dell'utente non è più disponibile per la ricerca tramite uno strumento di eDiscovery, ad esempio la ricerca di contenuto o la eDiscovery avanzata quando la licenza è stata rimossa. Per ulteriori informazioni, vedere la sezione relativa alla ricerca di cassette postali disconnesse o deautorizzate in [Ricerca contenuto in Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Si noti che i file salvati in OneDrive for business non vengono eliminati, a meno che l'utente non venga eliminato dall'interfaccia di amministrazione di Microsoft 365 o venga rimosso tramite la sincronizzazione di Active Directory. Per ulteriori informazioni, vedere [OneDrive retention and Deletion](https://docs.microsoft.com/onedrive/retention-and-deletion).
+
+- Inoltre, la cassetta postale dell'utente non è più disponibile per la ricerca tramite uno strumento di eDiscovery, ad esempio la ricerca di contenuto o la eDiscovery avanzata quando la licenza è stata rimossa. Per ulteriori informazioni, vedere la sezione relativa alla ricerca di cassette postali disconnesse o deautorizzate in [Ricerca contenuto in Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
 - Se si dispone di un abbonamento Enterprise, ad esempio Office 365 Enterprise E3, Exchange Online consente di mantenere i dati della cassetta postale di un account utente eliminato utilizzando le [cassette postali inattive](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365). Per ulteriori informazioni, vedere [creare e gestire le cassette postali inattive in Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
 

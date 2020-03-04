@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a gestire gli acquisti in modalità self-service effettuati dagli utenti dell'organizzazione.
-ms.openlocfilehash: f3ccd1f8ab5f2f9fc78e2920182155ef7f6f16e3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ab0e98963e1274925fcf678307907a93eafc9663
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080333"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409631"
 ---
-# <a name="manage-self-service-purchases-admin"></a>Gestire gli acquisti in modalità self-service (amministratore)
+# <a name="manage-self-service-purchases-admin"></a>Gestire acquisti in modalità self-service (amministratore)
 
 Come amministratore, è possibile visualizzare gli acquisti in modalità self-service effettuati dagli utenti dell'organizzazione. È possibile visualizzare il prodotto, il nome dell'acquirente, gli abbonamenti acquistati, la data di scadenza, il prezzo di acquisto e gli utenti assegnati per ogni acquisto in modalità self-service. Se necessario per l'organizzazione, è possibile disattivare l'acquisto in modalità self-service per ogni singolo prodotto tramite PowerShell. Si dispone degli stessi criteri di gestione dei dati e di accesso rispetto ai prodotti acquistati tramite l'acquisto in modalità self-service o in modo centralizzato.
 
@@ -76,7 +76,7 @@ Per ulteriori informazioni, vedere [use AllowSelfServicePurchase for the MSComme
 
 5. Seguire la procedura illustrata [per l'](#view-who-has-licenses-for-a-self-service-purchase-subscription) esportazione di un elenco di utenti a cui fare riferimento nel passaggio 6.
 
-6. Assegnare le licenze a tutti gli utenti che dispongono di una licenza nell'altra sottoscrizione. Per i passaggi completi, vedere [assegnare licenze agli utenti](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+6. Assegnare le licenze a tutti gli utenti che dispongono di una licenza nell'altra sottoscrizione. Per i passaggi completi, vedere [assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md).
 
 7. Contattare la persona che ha acquistato l'abbonamento all'acquisto in modalità self-service e chiedergli di annullarla.
 
@@ -84,4 +84,4 @@ Per ulteriori informazioni, vedere [use AllowSelfServicePurchase for the MSComme
 
 Per domande comuni sugli acquisti in modalità self-service, vedere domande [frequenti sugli acquisti in modalità self-service](self-service-purchase-faq.md).
 
-Se hai domande o hai bisogno di assistenza per gli acquisti in modalità self-service, [Contatta il supporto](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Se hai domande o hai bisogno di assistenza per gli acquisti in modalità self-service, [Contatta il supporto](../../admin/contact-support-for-business-products.md).

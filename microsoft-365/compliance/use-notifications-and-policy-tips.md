@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: 676581a5cfdf7308cf6c5cd71083dedae34836fb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: adf9d41fd528b2146ae3b3ee6f61390d61deaabe
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084029"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409581"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
 
@@ -50,7 +50,7 @@ Nel centro sicurezza &amp; e conformità di Office 365, quando si crea un criter
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Aggiungere notifiche utente a un criterio DLP
 
-Quando si crea un criterio DLP, entrambe le notifiche di posta elettronica e i suggerimenti per i criteri fanno parte della sezione **notifiche utente** . 
+Quando si crea un criterio DLP, è possibile abilitare le **notifiche degli utenti**. Se abilitato, Microsoft 365 invia notifiche tramite posta elettronica e suggerimenti per i criteri. È possibile personalizzare i messaggi di posta elettronica di notifica a cui vengono inviati, il testo del messaggio e il testo del suggerimento per i criteri.
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     

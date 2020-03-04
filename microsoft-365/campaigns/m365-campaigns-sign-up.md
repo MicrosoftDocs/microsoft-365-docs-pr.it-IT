@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Procedura dettagliata per la registrazione di Microsoft 365 per le campagne. Proteggi la tua campagna dalle minacce di Cybersecurity alla posta elettronica, ai dati e alla comunicazione.
-ms.openlocfilehash: e142adcc9b1858355414c28b7e94116a6505f1b9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 604e0be01c3824ed63361bb7fc9e694787ae83ef
+ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080529"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42409661"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Iscriversi a Microsoft 365 per le campagne 
 
@@ -84,13 +84,10 @@ Se si dispone già di una sottoscrizione esistente a Office 365 for business, ad
 4. In **questo aspetto,** immettere il numero di utenti di cui si dispone e scegliere **Avanti**. Non è necessario immettere un codice promozionale qui perché è già incluso nell'URL dell'invito.
 5. Nella pagina **come si desidera pagare?** , immettere il metodo di pagamento e scegliere **Ordina ordine**.
 
-Dopo aver completato questi passaggi, si è pronti per [assegnare le nuove licenze](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) al personale della campagna. 
+Dopo aver completato questi passaggi, si è pronti per [assegnare le nuove licenze](../admin/manage/assign-licenses-to-users.md) al personale della campagna.
 
 
 ## <a name="whats-next"></a>Operazioni successive
 - [Configurare microsoft 365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) per completare l'installazione di Microsoft 365 per le campagne. 
 - [Aggiungere gli utenti](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) al piano. Includere il candidato della campagna, tutto il personale della campagna Senior e tutti coloro che avranno accesso alle informazioni riservate sulla campagna o sulle parti.
 - [Protezione da urti per la tua campagna](m365-campaigns-security-overview.md)
-
-
-
