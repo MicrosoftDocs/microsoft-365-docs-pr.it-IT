@@ -1,5 +1,5 @@
 ---
-title: Acquistare licenze per l'abbonamento a Office 365 per le aziende
+title: Gestire le licenze di sottoscrizione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,28 +24,34 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: Informazioni su come aggiungere altre licenze all'abbonamento a Office 365 for business.
-ms.openlocfilehash: 9967ec9fc0e5f76d8b54f4875ac5944903b24da1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Informazioni su come aggiungere e rimuovere licenze per l'abbonamento a Office 365 for business.
+ms.openlocfilehash: 2f9c6b58a478b18fa1844c33689a8a4974a5917a
+ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242335"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42410043"
 ---
-# <a name="buy-licenses-for-your-office-365-for-business-subscription"></a>Acquistare licenze per l'abbonamento a Office 365 per le aziende
+# <a name="manage-subscription-licenses"></a>Gestire le licenze di sottoscrizione
+
+È possibile aggiungere o rimuovere licenze dagli abbonamenti utilizzando questi passaggi.
+
+Non è possibile rimuovere una licenza da un abbonamento se è assegnata a un utente. Se si desidera rimuovere una licenza che è attualmente assegnata a un utente, è necessario [rimuovere le licenze dagli utenti](../../admin/manage/remove-licenses-from-users.md) prima di poter rimuovere la licenza dall'abbonamento.
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
+## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Cosa è necessario sapere sull'acquisto di licenze per l'abbonamento aziendale
+
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 
-2. Nella pagina **prodotti & Servizi** individuare la sottoscrizione a cui si desidera aggiungere licenze, quindi selezionare **Aggiungi/Rimuovi licenze**.
+2. Nella pagina **prodotti & Servizi** individuare la sottoscrizione a cui si desidera aggiungere o rimuovere licenze, quindi selezionare **Aggiungi/Rimuovi licenze**.
 
     [Cosa fare se il collegamento Aggiungi/rimuovi licenze non è presente?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. Nella casella **Totale licenze** immettere il numero totale di licenze necessarie per l'abbonamento e quindi selezionare **Invia modifica**. Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 105.
+3. Nella casella **Totale licenze** immettere il numero totale di licenze necessarie per l'abbonamento e quindi selezionare **Invia modifica**. Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 105. Se si desidera rimuoverne 5, immettere 95.
 
 Dopo aver acquistato nuove licenze, assicurarsi di [assegnare le licenze agli utenti](../../admin/manage/assign-licenses-to-users.md).
 
@@ -55,11 +61,11 @@ Dopo aver acquistato nuove licenze, assicurarsi di [assegnare le licenze agli ut
 
 1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
 
-2. Nella pagina **abbonamenti** selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare **Aggiungi/Rimuovi licenze**.
+2. Nella pagina **abbonamenti** selezionare l'abbonamento a cui si desidera aggiungere o rimuovere le licenze, quindi selezionare **Aggiungi/Rimuovi licenze**.
 
     [Cosa fare se il collegamento Aggiungi/rimuovi licenze non è presente?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. Nella casella **Totale licenze** immettere il numero totale di licenze necessarie per l'abbonamento e quindi fare clic su **Invia** \> **Chiudi**. Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 105.
+3. Nella casella **Totale licenze** immettere il numero totale di licenze necessarie per l'abbonamento e quindi fare clic su **Invia** \> **Chiudi**. Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 105. Se si desidera rimuoverne 5, immettere 95.
 
 Dopo aver acquistato nuove licenze, assicurarsi di [assegnare le licenze agli utenti](../../admin/manage/assign-licenses-to-users.md).
 
@@ -69,11 +75,11 @@ Dopo aver acquistato nuove licenze, assicurarsi di [assegnare le licenze agli ut
 
 1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
 
-2. Nella pagina **abbonamenti** selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare **Aggiungi/Rimuovi licenze**.
+2. Nella pagina **abbonamenti** selezionare l'abbonamento a cui si desidera aggiungere o rimuovere le licenze, quindi selezionare **Aggiungi/Rimuovi licenze**.
 
     [Cosa fare se il collegamento Aggiungi/rimuovi licenze non è presente?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. Nella casella **Totale licenze** immettere il numero totale di licenze necessarie per l'abbonamento e quindi fare clic su **Invia** \> **Chiudi**. Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 105.
+3. Nella casella **Totale licenze** immettere il numero totale di licenze necessarie per l'abbonamento e quindi fare clic su **Invia** \> **Chiudi**. Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 105. Se si desidera rimuoverne 5, immettere 95.
 
 Dopo aver acquistato nuove licenze, assicurarsi di [assegnare le licenze agli utenti](../../admin/manage/assign-licenses-to-users.md).
 
@@ -85,13 +91,13 @@ In questa tabella vengono illustrati i motivi per cui il collegamento **Aggiungi
 
 |Motivo  |Descrizione  |Soluzione  |
 |---------|---------|---------|
-|La verifica del credito è in sospeso. |Se è in sospeso una verifica del credito, verrà visualizzato il messaggio "Verifica del credito in sospes"o e non sarà possibile acquistare licenze finché non viene completata.  | Tornare in seguito per verificare se la verifica del credito è stata completata. In genere sono necessari fino a due giorni lavorativi.<br>Una volta completata la verifica del credito, il collegamento **Aggiungi/rimuovi licenze** dovrebbe comparire nella sezione **Utenti**. In caso affermativo, andare a [acquistare le licenze per l'abbonamento a Office 365 for business](#buy-licenses-for-your-office-365-for-business-subscription). |
+|La verifica del credito è in sospeso. |Se è in sospeso una verifica del credito, verrà visualizzato il messaggio "Verifica del credito in sospes"o e non sarà possibile acquistare licenze finché non viene completata.  | Tornare in seguito per verificare se la verifica del credito è stata completata. In genere sono necessari fino a due giorni lavorativi.<br>Una volta completata la verifica del credito, il collegamento **Aggiungi/rimuovi licenze** dovrebbe comparire nella sezione **Utenti**. In caso affermativo, andare a [gestire le licenze di sottoscrizione](#manage-subscription-licenses). |
 |La sottoscrizione è stata attivata utilizzando un codice "Product Key".| Se l'abbonamento è stato acquistato e attivato usando un codice Product Key di 25 caratteri, verrà visualizzato il messaggio "Prepagato".  |Vedere [aggiungere licenze a un abbonamento pagato per l'utilizzo di un codice Product Key](add-licenses-using-product-key.md). |
 |L'abbonamento è stato acquistato tramite un partner. | Se l'abbonamento è stato acquistato tramite un partner, verrà visualizzato il collegamento Volume Licensing Service Center (VLSC). | Vedere [aggiungere licenze a un abbonamento acquistato tramite il centro servizi per contratti multilicenza](add-licenses-bought-through-vlsc.md). |
 |L'abbonamento è stato acquistato tramite un rivenditore.|| Se l'abbonamento è stato acquistato tramite un partner Cloud Solution Provider (CSP), per acquistare altre licenze è necessario rivolgersi al partner CSP.        |
 |Si dispone di un abbonamento di valutazione. |Una versione di valutazione di Office 365 è identificata dal testo "Versione di valutazione". | È necessario prima acquistare la sottoscrizione di valutazione, quindi è possibile aggiungere altre licenze. Vedere [acquistare un abbonamento a Office 365 for business dalla versione di valutazione gratuita](../buy-a-subscription-from-your-free-trial.md).|
 
-## <a name="what-you-need-to-know-about-buying-licenses-for-your-office-365-for-business-subscription"></a>Informazioni utili sull'acquisto di licenze per l'abbonamento a Office 365 per le aziende
+## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Cosa è necessario sapere sull'acquisto di licenze per l'abbonamento aziendale
 
 ### <a name="buying-licenses"></a>Acquisto di licenze
 
@@ -117,10 +123,10 @@ In questa tabella vengono illustrati i motivi per cui il collegamento **Aggiungi
 
 [Informazioni su abbonamenti e licenze](subscriptions-and-licenses.md)
 
-[Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md)
+[Acquistare le licenze per l'abbonamento](buy-licenses.md)
 
 [Acquistare un altro abbonamento](../buy-another-subscription.md)
 
-[Acquistare o modificare un componente aggiuntivo](../buy-or-edit-an-add-on.md)
+[Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md)
 
 [Gestire le licenze utente di Yammer](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365)

@@ -85,8 +85,6 @@
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: Ricerca avanzata
               items:
-                - name: Ricerca in Microsoft 365
-                  href: mtp/hunting.md
                 - name: Panoramica della ricerca avanzata
                   href: mtp/advanced-hunting-overview.md
                 - name: Conoscere il linguaggio delle query
