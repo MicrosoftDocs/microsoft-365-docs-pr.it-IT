@@ -11,16 +11,17 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.custom:
 - SMB_SuccessCenter
+- MARVEL_SEO_MAR
 search.appverid:
 - MET150
 - MOE150
-description: Per ulteriori informazioni, è possibile proteggere le piccole aziende dalle minacce alla sicurezza.
-ms.openlocfilehash: a3923731e93962d1976d0cd163db4f97a07aaed2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Informazioni sulle minacce alla sicurezza la tua azienda è in grado di proteggere i dati, gli account e i dispositivi in modo semplice e intuitivo.
+ms.openlocfilehash: 0997f6bab379ccc5ff68d5bf890419772fd4aaaf
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360777"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417282"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>Grafico delle informazioni di sicurezza per le piccole imprese
 

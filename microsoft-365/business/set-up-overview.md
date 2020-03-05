@@ -1,5 +1,5 @@
 ---
-title: Panoramica dell’installazione
+title: Panoramica dell'installazione
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,25 +20,26 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Panoramica dei passaggi di installazione per Microsoft 365 business.
-ms.openlocfilehash: 07cbd4fd187f78474783db848ac9b69068d2b44a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Per ulteriori informazioni, vedere la procedura di installazione di Microsoft 365 business, dalla sottoscrizione all'aggiunta di un dominio e degli utenti, alla configurazione dei criteri di sicurezza e altro ancora.
+ms.openlocfilehash: 75ef784a886de754e7550d9e86af1242209346dd
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595066"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417227"
 ---
-# <a name="overview-of-setup"></a>Panoramica dell’installazione
+# <a name="overview-of-setup"></a>Panoramica dell'installazione
 
 Guardare un breve video sulla configurazione aziendale di Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 La maggior parte dei passaggi di installazione può essere effettuata nell'installazione guidata, ma anche le altre opzioni sono elencate.
 

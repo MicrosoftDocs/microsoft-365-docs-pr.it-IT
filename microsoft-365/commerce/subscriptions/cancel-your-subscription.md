@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Informazioni su come annullare la versione di valutazione o di sottoscrizione a pagamento di Office 365 for business o Microsoft 365.
-ms.openlocfilehash: 58c545257895de8da4256cea4826029916b66961
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
+ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354597"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42415651"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -88,6 +88,19 @@ Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento,
 
 ::: moniker-end
 
+## <a name="what-happens-when-you-cancel-a-subscription"></a>Cosa succede quando si annulla un abbonamento
+
+Se si annulla un abbonamento prima della fine del termine, l'abbonamento viene spostato direttamente in uno stato disabilitato. Per la maggior parte degli abbonamenti, nella maggior parte dei paesi e delle aree geografiche lo stato disabilitato dura 90 giorni. Gli amministratori possono comunque accedere e eseguire il backup dei dati per la propria organizzazione mentre la sottoscrizione è nello stato disabilitato, ma è consigliabile che gli amministratori possano [eseguire il backup dei dati](back-up-data-before-switching-plans.md) prima di annullare un abbonamento, soprattutto se si tratta dell'unico abbonamento. Tutti i dati lasciati indietro possono essere eliminati dopo 90 giorni e verranno eliminati entro 180 giorni dall'annullamento.
+
+### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Conseguenze per amministratori e utenti dell'annullamento di una sottoscrizione
+  
+- **Accesso amministratore** Gli amministratori possono ancora accedere all'interfaccia di amministrazione e acquistare altri abbonamenti in base alle esigenze. In qualità di amministratore globale o di fatturazione, è necessario 90 giorni per [riattivare l'abbonamento](reactivate-your-subscription.md) con tutti i dati intatti. 
+    
+- **Accesso utente** Gli utenti non saranno in grado di utilizzare servizi come OneDrive for business o di accedere ai dati dei clienti come la posta elettronica o i documenti nei siti del team. Le applicazioni di Office, come Word e Excel, entreranno alla fine in una modalità di sola lettura con funzionalità ridotte e visualizzeranno [notifiche di prodotto senza licenza](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
+    
+ **Importante:** Se si vogliono eliminare i dati dell'abbonamento prima del termine del periodo standard di disabilitazione, è possibile richiedere il deprovisioning rapido. Con il deprovisioning rapido, i dati dell'abbonamento vengono eliminati entro 3 giorni dall'annullamento. Per utilizzare il deprovisioning rapido, [chiamare il supporto](../../admin/contact-support-for-business-products.md).
+  
+Per ulteriori informazioni, vedere [cosa succede ai dati e l'accesso al termine dell'abbonamento?](what-if-my-subscription-expires.md)
 
 ## <a name="other-steps-you-might-have-to-take"></a>Altri passaggi che potrebbe essere necessario eseguire
 
@@ -132,5 +145,3 @@ Se l'abbonamento è stato annullato e gli utenti non sono stati spostati in un a
 [Rinnovare l'abbonamento](renew-your-subscription.md)
 
 [Riattivare l'abbonamento](reactivate-your-subscription.md)
-
-[Passare a un altro piano o abbonamento di Office 365](switch-to-a-different-plan.md)

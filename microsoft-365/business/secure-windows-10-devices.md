@@ -19,18 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: "Informazioni sull'impostazione predefinita e altre impostazioni per proteggere i dispositivi Windows 10. "
-ms.openlocfilehash: 9560bb4e299dba8f92d435a64670261b0e7e0290
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Informazioni su come configurare le impostazioni del criterio di dispositivo predefinito che qualsiasi dispositivo Windows 10 riceverà al momento dell'accesso al proprio account aziendale o dell'Istituto di istruzione.
+ms.openlocfilehash: 6c9dcd308db2fa41bad5f907b3c5a35577ac61f1
+ms.sourcegitcommit: d6c871bf3f94d9299d22695f5dbaf25dc1bd6ff9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593446"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417247"
 ---
 # <a name="secure-windows-10-devices"></a>Proteggere i dispositivi Windows 10
 

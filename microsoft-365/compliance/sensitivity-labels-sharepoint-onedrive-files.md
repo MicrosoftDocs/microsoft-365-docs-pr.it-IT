@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 89925858ac749ac6f50b7a049a372cf2f7912698
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 0f7c2c59327874d279872d4fd9bb7d0b9d6eb863
+ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341236"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42410033"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)
 
@@ -87,8 +87,6 @@ Per questa anteprima, utilizzare la versione di OneDrive Sync App 19.002.0121.00
 - Il sito di verifica dei documenti di Azure Information Protection non è supportato.
 
 - Le app desktop di Office e le app per dispositivi mobili non supportano la CoAuthoring. Queste app continuano invece a aprire file in modalità di modifica esclusiva.
-
-- Se un'etichetta include la crittografia, Microsoft cloud app Security non è in grado di leggere le informazioni sull'etichetta per i file in SharePoint.
 
 - Se un documento etichettato viene caricato in SharePoint e l'etichetta ha applicato la crittografia utilizzando un account di un nome dell'entità servizio, il documento non può essere aperto in Office sul Web. Gli scenari di esempio includono la sicurezza delle app cloud di Microsoft e un file inviato ai team tramite posta elettronica.
 
