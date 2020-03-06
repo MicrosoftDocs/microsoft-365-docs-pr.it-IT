@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: "Requisito per tutte le soluzioni di Microsoft Information Protection: creare, configurare e pubblicare etichette di riservatezza per classificare e proteggere i documenti e i messaggi di posta elettronica dell'organizzazione."
 ms.openlocfilehash: d2300a54583c0b2d12de86e3dbb5f3116daf6460
-ms.sourcegitcommit: 7dc36305721a92e19a6e397f906e19dcafa0073b
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "42101226"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543148"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Creare e configurare etichette di riservatezza e i relativi criteri
 
