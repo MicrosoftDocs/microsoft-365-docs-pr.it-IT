@@ -20,18 +20,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: Informazioni su come reimpostare o cancellare un dispositivo gestito tramite criteri di protezione.
-ms.openlocfilehash: b022d9076b60b0d29771b2ba8f7afc0435bda096
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Informazioni su come rimuovere i dati aziendali dai dispositivi gestiti tramite criteri di protezione e come ripristinare le impostazioni di fabbrica dei dispositivi Windows 10.
+ms.openlocfilehash: f5c9bba6004632964ca01ba2f65e88dafb0ed719
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593842"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550338"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business"></a>Gestire i dispositivi protetti con Microsoft 365 Business
 

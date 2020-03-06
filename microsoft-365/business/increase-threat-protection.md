@@ -1,5 +1,7 @@
 ---
 title: Aumentare la protezione dalle minacce per Microsoft 365 business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -14,16 +16,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
-description: Configurare Office 365 Advanced Threat Protection e proteggere i dati sensibili.
-ms.openlocfilehash: 87a5c79636a2eefe394b4a30e72971eb851e3ecb
-ms.sourcegitcommit: 38934a2115d5cdeb44c7484d57be07686c6f7720
+description: Configurare Office 365 Advanced Threat Protection e proteggere i dati sensibili da tentativi di phishing, malware e altre minacce.
+ms.openlocfilehash: 9d7bae60091c87fa0246a697f2a49e1cbc6e2f06
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704076"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550358"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 
@@ -84,7 +87,7 @@ Per creare una regola di trasporto della posta:
 |Eseguire le operazioni seguenti. . .  <br/> |Invia una notifica al destinatario tramite messaggio  <br/> |
 |Fornire il testo del messaggio  <br/> |Non aprire questi tipi di file da utenti che non si conoscono perché potrebbero contenere macro con codice dannoso.  <br/> |
    
-Per ulteriori informazioni, vedere:
+Per altre informazioni, vedere:
   
 - [Come gestire ransomware](https://go.microsoft.com/fwlink/?linkid=2016501)
     

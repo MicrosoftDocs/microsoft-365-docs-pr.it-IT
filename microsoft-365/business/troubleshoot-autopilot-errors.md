@@ -20,18 +20,19 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: Informazioni su come risolvere i problemi relativi agli errori dei file del dispositivo Autopilot.
-ms.openlocfilehash: 8390f695a3e11386ae2617da4061bed1d8214375
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Informazioni su come risolvere gli errori che potrebbero verificarsi durante l'utilizzo di file del dispositivo Autopilot in Microsoft 365 business.
+ms.openlocfilehash: 7569f18097a1f5959b3dd491958c78886e1e05d6
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594209"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547472"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Risolvere i problemi relativi ai dispositivi AutoPilot
 

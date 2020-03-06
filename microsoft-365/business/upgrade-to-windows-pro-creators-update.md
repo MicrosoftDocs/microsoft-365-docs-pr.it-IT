@@ -1,5 +1,7 @@
 ---
 title: Eseguire l'aggiornamento di dispositivi Windows a Windows 10 Pro
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -17,17 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: "Informazioni su come eseguire l'aggiornamento di dispositivi Windows a Windows 10 Pro. "
-ms.openlocfilehash: 3457b35c5f9e313e176664ca088e64ce5dd4f881
-ms.sourcegitcommit: 1db269c0349a252eaf3f315ee72ff679fff829f1
+description: Scoprire i modi in cui è possibile aggiornare i dispositivi Windows a Windows 10 Pro per utilizzare le funzionalità di sicurezza e di rete aziendale più avanzate.
+ms.openlocfilehash: 541169571fb9f58c7f75f610546ec250ffd40afb
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41265859"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549938"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Eseguire l'aggiornamento di dispositivi Windows a Windows 10 Pro
 
@@ -35,7 +38,7 @@ Guardare un breve video sull'aggiornamento dei dispositivi Windows a Windows 10 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="upgrade-to-windows-10-pro"></a>Eseguire l'aggiornamento a Windows 10 Pro
   
@@ -56,6 +59,6 @@ Per completare la configurazione dei dispositivi Windows 10, vedere [configurare
   
 Per completare la configurazione dei dispositivi Android e iOS, vedere [set up mobile devices for Microsoft 365 business users](set-up-mobile-devices.md) . 
   
-## <a name="see-also"></a>Vedere anche
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Per ulteriori informazioni sulla configurazione e l'utilizzo di Microsoft 365 business
 
 [Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

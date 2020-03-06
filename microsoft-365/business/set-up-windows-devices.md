@@ -19,21 +19,22 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: 'Informazioni su come configurare i dispositivi Windows che eseguono Windows 10 Pro per gli utenti aziendali di Microsoft 365. '
-ms.openlocfilehash: 427e1c25b5c6ad52ab280502133a0e2808bb48b1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni su come configurare i dispositivi Windows che eseguono Windows 10 Pro per gli utenti di Microsoft 365 business, abilitando i controlli di sicurezza e di gestione centralizzati.
+ms.openlocfilehash: 62d909b1e5658131f9381d1a800a70fad6e16cab
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42090704"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550018"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurare i dispositivi Windows per utenti di Microsoft 365 Business
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-users"></a>Prerequisiti per configurare i dispositivi Windows per gli utenti aziendali di Microsoft 365
 
 Prima di poter configurare i dispositivi Windows per gli utenti di Microsoft 365 Business, assicurarsi che tutti i dispositivi Windows eseguano Windows 10 Pro, versione 1703 (Creators Update). Windows 10 Pro rappresenta un prerequisito per la distribuzione di Windows 10 Business, ovvero un insieme di servizi cloud e funzionalità di gestione dei dispositivi che integrano Windows 10 Pro e consentono la gestione centralizzata e i controlli di sicurezza di Microsoft 365 Business.
   
@@ -47,7 +48,7 @@ Guardare un breve video sulla connessione di Windows a Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Unire i dispositivi Windows 10 a Azure AD dell'organizzazione.
 
@@ -125,6 +126,6 @@ Verificare che i dispositivi Windows 10 uniti a Azure AD siano stati aggiornati 
 
 Per configurare i dispositivi mobili, vedere [Configurare i dispositivi mobili per utenti di Microsoft 365 Business](set-up-mobile-devices.md). Per impostare i criteri di protezione del dispositivo o dell'app, vedere [Gestire Microsoft 365 Business](manage.md).
   
-## <a name="see-also"></a>Vedere anche
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Per ulteriori informazioni sulla configurazione e l'utilizzo di Microsoft 365 business
 
 [Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

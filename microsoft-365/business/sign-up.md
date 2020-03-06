@@ -20,16 +20,17 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
-description: Informazioni su come acquistare e iscriversi a Microsoft 365 business.
-ms.openlocfilehash: 63bff3d34df017d1c7cc437ef050d53623e76aa9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Informazioni su ciò che Microsoft 365 business include e ottenere istruzioni dettagliate per l'iscrizione a Microsoft 365 business.
+ms.openlocfilehash: 003bf332a9183a5e062a294297a30c9b7d19fdb9
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594249"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547832"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Iscriversi a Microsoft 365 business
 
@@ -52,7 +53,7 @@ Guardare questo video per una breve panoramica del processo di iscrizione.<br><b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-Se il video è stato utile, consultare la [serie di formazione completa a Microsoft 365 per le piccole e nuove imprese](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Per iscriversi e acquistare Microsoft 365 per la propria azienda, eseguire la procedura seguente:
 

@@ -21,17 +21,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Informazioni su come configurare Microsoft 365 business.
-ms.openlocfilehash: 5491486c2bf8da1ee38fcd986d5ecd682d57c82e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni su Microsoft 365 business, su come configurarlo e su come preparare i dispositivi e i PC degli utenti per assicurarsi che siano protetti da Microsoft 365 business.
+ms.openlocfilehash: f6fd73762c0b57777c19d32886f758875e2e7e6a
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065613"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547732"
 ---
 # <a name="get-started-with-microsoft-365-business"></a>Introduzione a Microsoft 365 Business
 
@@ -51,7 +52,7 @@ Microsoft 365 business è destinato a un massimo di 300 licenze. Per ulteriori i
     
 - Se non si dispone di un partner e si desidera ottenere Microsoft 365 business, è possibile [acquistarlo qui](https://www.microsoft.com/microsoft-365/business).
     
-## <a name="set-up-microsoft-365-business"></a>Configurare Microsoft 365 Business
+## <a name="set-up-microsoft-365-business"></a>Impostare Microsoft 365 Business
 
  **Panoramica di Microsoft 365 business suite set up**
   
@@ -63,7 +64,7 @@ Guardare questo video per una panoramica della configurazione di Microsoft 365 b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
   
 ### <a name="1-set-up-microsoft-365-business-admin"></a>1: configurare Microsoft 365 business (amministratore)

@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: 'Informazioni su come usare Microsoft 365 business to Factory reimpostare i dispositivi Windows 10. '
-ms.openlocfilehash: 4350b208341a51447153b415d2cb225697a11e1b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni su come usare Microsoft 365 business to Factory Reset Windows 10 dispositivi gestiti, ripristinando le impostazioni originali all'acquisto.
+ms.openlocfilehash: bbdd5c4a4ba2d7deb11c4171db68bdb052546a17
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064833"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547792"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Ripristinare le impostazioni del produttore per i dispositivi Windows 10
 

@@ -17,17 +17,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: Informazioni su come spostare i file in OneDrive.
-ms.openlocfilehash: 85ff7ad2ecab3646eeb196a380f85983b1403f7a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni su come è possibile spostare i file di lavoro personali e i file aziendali riservati in OneDrive for business in pochi semplici passaggi.
+ms.openlocfilehash: 837ec8bb01ed78e7a13ee802afaf845c80544f5d
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065222"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550268"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Spostare file in OneDrive for Business
 
@@ -35,7 +36,7 @@ Guardare un breve video su come spostare i file in OneDrive for business.<br><br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Spostare file in OneDrive for Business
@@ -50,6 +51,6 @@ Se un utente ha un computer che contiene molti file personali, occorre prima spo
     
 Per trasferire il profilo utente e i file importanti si può anche usare uno strumento di terze parti, come ForensiT. Occorre anche caricare i file risultanti in OneDrive for Business.
   
-## <a name="see-also"></a>Vedere anche
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Per ulteriori informazioni sulla configurazione e l'utilizzo di Microsoft 365 business
 
 [Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

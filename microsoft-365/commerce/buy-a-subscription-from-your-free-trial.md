@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Acquistare un abbonamento a Office 365 for business. È possibile acquistare lo stesso tipo di sottoscrizione provato o un altro piano.
-ms.openlocfilehash: fcd38783082f9b86c4e1b99b1eec06d948e8e4b4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: faac769a89824964315c84da507adcf18d8cfeac
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242399"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549803"
 ---
 # <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>Acquistare un abbonamento a Office 365 per le aziende dalla versione di valutazione gratuita
 
@@ -41,14 +41,14 @@ Dopo aver provato Office 365, si è pronti per l'acquisto. Sono disponibili due 
 - [Acquistare lo stesso piano della versione di valutazione](#buy-the-same-plan-as-your-trial)
 - [Acquistare un piano diverso rispetto alla versione di valutazione](#buy-a-different-plan-than-your-trial)
 
+> [!NOTE]
+> Al termine del periodo di prova gratuito, la sottoscrizione di valutazione verrà convertita automaticamente in un abbonamento a pagamento. La sottoscrizione a pagamento avrà valore predefinito per il piano a cui è stato effettuato l'iscrizione. È comunque possibile acquistare un piano diverso attenendosi alla procedura descritta nell'articolo [buy a different plan rispetto alla versione di valutazione](#buy-a-different-plan-than-your-trial) seguente.
+
 ## <a name="buy-the-same-plan-as-your-trial"></a>Acquistare lo stesso piano della versione di valutazione
 
 È facile e, se si acquista lo stesso tipo di abbonamento della versione di valutazione, non c'è il rischio di perdere dati, account e configurazione.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 
@@ -94,7 +94,7 @@ Dopo aver provato Office 365, si è pronti per l'acquisto. Sono disponibili due 
 
 ## <a name="buy-a-different-plan-than-your-trial"></a>Acquistare un piano diverso rispetto alla versione di valutazione
 
-Se si acquista un tipo di abbonamento diverso da quello della versione di valutazione, per poter mantenere i dati, gli account e la configurazione è necessario riassegnare le licenze utente da un piano all'altro, entro il termine del periodo di tolleranza di 90 giorni dopo la scadenza del periodo di valutazione.
+Se si acquista un altro tipo di sottoscrizione rispetto alla versione di valutazione, sarà necessario riassegnare le licenze utente dal piano di prova al nuovo piano (prima che il periodo di prova di 90 giorni termina dopo la scadenza del piano di valutazione) per conservare i dati, gli account e la configurazione.
 
 ::: moniker range="o365-worldwide"
 

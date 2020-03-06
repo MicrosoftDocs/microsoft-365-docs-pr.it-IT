@@ -20,17 +20,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: Consente agli utenti di installare le app di Office.
-ms.openlocfilehash: 7497be6b0796fdd28156d8c9a6018b05e3dcfe75
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Consente agli utenti di installare le app di Office nei dispositivi Windows 10 e di installare facilmente Office nei PC Windows 10 dall'interfaccia di amministrazione di Microsoft 365 business.
+ms.openlocfilehash: 5df9a1a8236942a34031daf06e38acbe923339e4
+ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065716"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550373"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aiutare gli utenti a installare Office nei dispositivi Windows 10
 
@@ -44,7 +45,7 @@ Guardare un breve video sull'installazione delle app di Office.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="manage-office-deployments"></a>Gestire le distribuzioni di Office
 
@@ -61,6 +62,6 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
     
       :::image type="content" source="../media/sendemailtousers.png" alt-text="Selezionare gli utenti per inviare messaggi di posta elettronica con il collegamento di download di Office.":::
 
-## <a name="see-also"></a>Vedere anche
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Per ulteriori informazioni sulla configurazione e l'utilizzo di Microsoft 365 business
 
 [Video per la formazione di Microsoft 365 Business](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

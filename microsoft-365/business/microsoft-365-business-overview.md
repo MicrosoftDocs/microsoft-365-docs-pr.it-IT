@@ -22,29 +22,30 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- MARVEL_SEO_MAR
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Per ulteriori informazioni, vedere Microsoft 365 business.
-ms.openlocfilehash: bfda6801bee526084ad11ead819fcd04787d17ce
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Informazioni su Microsoft 365 business, un servizio di sottoscrizione che include Office 365 e la protezione avanzata per la propria azienda contro le minacce informatiche.
+ms.openlocfilehash: 508262daa9367ebd3b973a7a519fbb953d719fb1
+ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065653"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42547852"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Panoramica di Microsoft 365 business
 
 ## <a name="what-is-microsoft-365-business"></a>Che cos'è Microsoft 365 business
 
-Microsoft 365 business è un servizio di sottoscrizione che include gli strumenti di produttività di Office 365 e funzionalità avanzate che consentono di proteggere la propria azienda da Cyberthreats, proteggere i dati e gestire i dispositivi.
+Microsoft 365 business è un servizio di sottoscrizione che include gli strumenti di produttività di Office 365 e funzionalità avanzate che consentono di proteggere la propria azienda dalle minacce informatiche, proteggere i dati e gestire i dispositivi.
 
 Guardare questo video per una breve panoramica di Microsoft 365 business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
 
 Microsoft 365 business è destinato a un massimo di 300 licenze. Per ulteriori informazioni, vedere documentazione relativa a [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) .
 
