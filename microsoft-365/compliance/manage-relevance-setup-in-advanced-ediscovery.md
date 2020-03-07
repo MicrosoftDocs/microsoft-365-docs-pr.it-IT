@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Alcuni consigli per configurare il training della rilevanza in Office 365 Advanced eDiscovery per classificare i file in base alla rilevanza e generare risultati analitici.
-ms.openlocfilehash: 1a88d554d06b575f3efb0d01534008b6c35032e1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 49c7614eb1fec4e61fb374fb637093fd6e860619
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600503"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557886"
 ---
-# <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Gestire la configurazione della rilevanza in Office 365 Advanced eDiscovery
+# <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestire la configurazione della pertinenza in Advanced eDiscovery (classico)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -73,7 +73,7 @@ Dopo aver impostato i parametri, il revisore/lo specialista può avviare il trai
   
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Definire i problemi e assegnare gli utenti](define-issues-and-assign-users.md)
   

@@ -5,6 +5,8 @@ keywords: Microsoft 365, Microsoft 365 Education, Documentazione Microsoft 365, 
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 0c0e5b64742b56d950702d67c26b61e1784ac37e
-ms.sourcegitcommit: 03a83ff76c8162b850c4c552759c49f2a4750574
+ms.openlocfilehash: 6bafb00e879831a21fa80a8005e53fff0e5d95f4
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41558053"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558177"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Piano d'azione GDPR di Microsoft 365: massime priorità per i primi 30 giorni, 90 giorni e oltre
 
@@ -43,7 +45,7 @@ Queste attività sono veloci e potenti, con basso impatto sugli utenti.
 |**Area**|**Attività**|
 |:-----|:-----|
 | **Comprendere i requisiti del GDPR e avvalersi della consulenza di un partner Microsoft esperto in GDPR.** |• Usare lo [strumento Microsoft per la valutazione della conformità al GDPR](https://discover.microsoft.com/gdpr-readiness-assessment), che consente di valutare in modo privato la propria idoneità e ottenere consigli per i passaggi successivi.<br>• Valutare e gestire i rischi di conformità usando il [punteggio di conformità Microsoft](compliance-score.md) disponibile in [Microsoft Service Trust Portal](https://support.office.com/article/get-started-with-the-microsoft-service-trust-portal-f30e2353-0bd6-41ed-8347-eea1fb8d2662) (STP) per eseguire una valutazione del GDPR dell'organizzazione.<br>• Collaborare con il [partner di consulenza del GDPR di Microsoft](https://blogs.partner.microsoft.com/mpn/gdpr-leaders-needed-help-customers-navigate-gdpr-journey/) per stabilire le linee guida interne per rispondere alle richieste del soggetto interessato (DSR) e le esclusioni dalle DSR.<br>• Collaborare con il partner Microsoft esperto in GDPR per eseguire un'analisi degli aspetti non conformi al GDPR nella propria organizzazione e sviluppare una roadmap da seguire per l'adeguamento.<br>• Scoprire come usare la [dashboard del GDPR e la funzionalità di richiesta del soggetto interessato](https://support.office.com/article/manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c) nel Centro conformità Microsoft 365. |
-| **Iniziare a individuare i tipi di dati personali in archiviazione e dove si trovano per rispettare le richieste del soggetto interessato.** |• Usare [Ricerca contenuto](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) e [Casi di eDiscovery](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c) per eseguire facilmente ricerche in cassette postali, cartelle pubbliche, Gruppi di Office 365, Microsoft Teams, siti di SharePoint Online, siti di One Drive for Business e conversazioni Skype for Business. Scoprire come usare i [tipi di informazioni sensibili](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data) per trovare dati personali dei cittadini dell'Unione Europea.<br>• Quando si lavora con grandi quantità di contenuti, è possibile identificare i documenti che riguardano un particolare argomento (ad esempio, un'indagine di conformità) in modo rapido e con maggiore precisione rispetto alle ricerche per parole chiave tradizionali con [Office 365 Advanced eDiscovery](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4), con tecnologie di apprendimento automatico.<br>• Visualizzare l'anteprima dei risultati della ricerca, ottenere statistiche delle parole chiave per una o più ricerche, modificare in blocco le ricerche dei contenuti e [esportare i risultati](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278) usando i centri sicurezza e conformità di Office 365.|
+| **Iniziare a individuare i tipi di dati personali in archiviazione e dove si trovano per rispettare le richieste del soggetto interessato.** |• Usare [Ricerca contenuto](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) e [Casi di eDiscovery](https://support.office.com/article/eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-8dd335ab-29d0-41c3-8dd8-9f7c7481e60c) per eseguire facilmente ricerche in cassette postali, cartelle pubbliche, Gruppi di Office 365, Microsoft Teams, siti di SharePoint Online, siti di One Drive for Business e conversazioni Skype for Business. Scoprire come usare i [tipi di informazioni sensibili](https://docs.microsoft.com/office365/enterprise/search-for-and-find-personal-data) per trovare dati personali dei cittadini dell'Unione Europea.<br>• Quando si lavora con grandi quantità di contenuti, è possibile identificare i documenti che riguardano un particolare argomento (ad esempio, un'indagine di conformità) in modo rapido e con maggiore precisione rispetto alle ricerche per parole chiave tradizionali con [Advanced eDiscovery (classico)](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4), con tecnologie di apprendimento automatico.<br>• Visualizzare l'anteprima dei risultati della ricerca, ottenere statistiche delle parole chiave per una o più ricerche, modificare in blocco le ricerche dei contenuti e [esportare i risultati](https://support.office.com/article/export-content-search-results-from-the-office-365-security-compliance-center-ed48d448-3714-4c42-85f5-10f75f6a4278) usando i centri sicurezza e conformità di Office 365.|
 
 ## <a name="90-days--enhanced-protections"></a>90 giorni: protezione avanzata
 
@@ -68,4 +70,4 @@ Proteggere i dati personali inattivi e in transito, rilevare e rispondere alle v
 - [Guida al Regolamento generale sulla protezione dei dati (GDPR)](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/) di Information Commissioner's Office
 - [Domande frequenti sul Regolamento generale sulla protezione dei dati (GDPR) per piccole organizzazioni](https://ico.org.uk/for-organisations/business/guide-to-the-general-data-protection-regulation-gdpr-faqs/) di Information Commisioner's Office
 - [Microsoft.com/GDPR](https://www.microsoft.com/trustcenter/Privacy/GDPR)
-- [Centro protezione Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Centro protezione Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
