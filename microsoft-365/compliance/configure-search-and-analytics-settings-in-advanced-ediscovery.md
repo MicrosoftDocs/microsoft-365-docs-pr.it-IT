@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Configurare le impostazioni avanzate di eDiscovery che si applicano a tutti i set di revisione in un caso. Sono incluse le impostazioni per l'analisi e l'OCR.
 ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550472"
+ms.locfileid: "42552071"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurare le impostazioni di ricerca e analisi
 

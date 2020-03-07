@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: In questo articolo viene descritto come utilizzare lo strumento nuovo data Investigation (Preview) nel centro sicurezza & conformità per gestire un problema di fuoriuscita dei dati.
 ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072029"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543367"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gestire un problema di fuoriuscita dei dati in Microsoft 365
 
@@ -56,7 +56,7 @@ Di seguito è indicato il flusso di lavoro per l'utilizzo delle indagini sui dat
 5.  Chiudere o eliminare l'indagine.
 
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per creare un'analisi dei dati, ricercare il contenuto ed eliminare i dati versati, è necessario essere membri del gruppo di ruolo ricercatore di dati nel centro sicurezza & Compliance.
 
