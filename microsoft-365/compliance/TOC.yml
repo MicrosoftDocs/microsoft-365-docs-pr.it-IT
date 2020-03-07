@@ -123,7 +123,7 @@
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: Funzionamento della prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange
               href: how-dlp-works-between-admin-centers.md
-    - name: Tipi di informazioni riservate
+    - name: Tipi di informazioni sensibili
       items:
         - name: Elementi cercati dai tipi di informazioni sensibili
           href: what-the-sensitive-information-types-look-for.md
@@ -335,76 +335,105 @@
           items:
             - name: Video sulla gestione dei record
               href: 'https://go.microsoft.com/fwlink/?linkid=867039'
-- name: Cercare contenuto
-  href: search-for-content.md
+- name: Gestione di eDiscovery
   items:
-    - name: Usare Ricerca contenuto
-      href: content-search.md
+    - name: Ricerca contenuto
       items:
-        - name: Query con parole chiave e condizioni di ricerca per Ricerca contenuto
-          href: keyword-queries-and-search-conditions.md
-        - name: Visualizzare le statistiche delle parole chiave per i risultati di Ricerca contenuto
-          href: view-keyword-statistics-for-content-search.md
-        - name: Esportare i risultati di Ricerca contenuto
-          href: export-search-results.md
-        - name: Esportare un report di Ricerca contenuto
-          href: export-a-content-search-report.md
-        - name: Cercare ed eliminare messaggi di posta elettronica
-          href: search-for-and-delete-messages-in-your-organization.md
-        - name: Eseguire ricerche nelle cassette postali basate sul cloud di utenti locali in Office 365
-          href: search-cloud-based-mailboxes-for-on-premises-users.md
-        - name: Modificare in blocco più ricerche contenuto
-          href: bulk-edit-content-searches.md
-        - name: Preparare un file CSV per un elenco ID di Ricerca contenuto
-          href: csv-file-for-an-id-list-content-search.md
-        - name: Usare Ricerca contenuto per cercare i dati di terze parti
-          href: use-content-search-to-search-third-party-data-that-was-imported.md
-        - name: Verificare la presenza di errori nella query di Ricerca contenuto
-          href: check-your-content-search-query-for-errors.md
-        - name: Ripetere una Ricerca contenuto non riuscita
-          href: retry-failed-content-search.md
-        - name: Conservare i destinatari in Ccn per Ricerca contenuto
-          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
-    - name: Informazioni su Ricerca contenuto
+        - name: Panoramica della ricerca contenuto
+          href: search-for-content.md
+        - name: Utilizzare la ricerca contenuto
+          href: content-search.md
+          items:
+            - name: Query di parole chiave e condizioni di ricerca
+              href: keyword-queries-and-search-conditions.md
+            - name: Visualizzare le statistiche sulle parole chiave per i risultati della ricerca
+              href: view-keyword-statistics-for-content-search.md
+            - name: Esportare i risultati della ricerca
+              href: export-search-results.md
+            - name: Esportare un report di ricerca
+              href: export-a-content-search-report.md
+            - name: Cercare ed eliminare messaggi di posta elettronica
+              href: search-for-and-delete-messages-in-your-organization.md
+            - name: Eseguire una ricerca nelle cassette postali basate sul cloud degli utenti locali
+              href: search-cloud-based-mailboxes-for-on-premises-users.md
+            - name: Modifica in blocco di più ricerche di contenuto
+              href: bulk-edit-content-searches.md
+            - name: Preparare un file CSV per una ricerca nell'elenco di ID
+              href: csv-file-for-an-id-list-content-search.md
+            - name: Ricerca di dati di terze parti
+              href: use-content-search-to-search-third-party-data-that-was-imported.md
+            - name: Controllare la query di ricerca per individuare eventuali errori
+              href: check-your-content-search-query-for-errors.md
+            - name: Risolvere i problemi comuni di eDiscovery
+              href: ediscovery-troubleshooting-common-issues.md
+            - name: Riprovare una ricerca non riuscita
+              href: retry-failed-content-search.md
+            - name: Preservare i destinatari Ccn per la ricerca
+              href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+        - name: Configurare la ricerca contenuto
+          items:
+            - name: Configurare il filtro delle autorizzazioni per la ricerca di contenuto
+              href: permissions-filtering-for-content-search.md
+            - name: Aumentare la velocità di download quando si esportano i risultati della ricerca
+              href: increase-download-speeds-when-exporting-ediscovery-results.md
+            - name: Modificare le dimensioni dei file PST quando si esportano i risultati della ricerca
+              href: change-the-size-of-pst-files-when-exporting-results.md
+            - name: Disabilitare i report quando si esportano i risultati della ricerca
+              href: disable-reports-when-you-export-content-search-results.md
+        - name: Informazioni sulla ricerca contenuto
+          items:
+            - name: Limiti di Ricerca contenuto
+              href: limits-for-content-search.md
+            - name: Elementi parzialmente indicizzati
+              href: partially-indexed-items-in-content-search.md
+            - name: Analizzare gli elementi parzialmente indicizzati
+              href: investigating-partially-indexed-items-in-ediscovery.md
+            - name: Deduplicazione nei risultati della ricerca
+              href: de-duplication-in-ediscovery-search-results.md
+            - name: Differenze tra i risultati di ricerca stimati ed effettivi
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
+        - name: Eseguire gli script di PowerShell per la ricerca di contenuto
+          items:
+            - name: Utilizzare la ricerca di contenuto per le raccolte mirate
+              href: use-content-search-for-targeted-collections.md
+            - name: Eseguire una ricerca nella cassetta postale e nell'account OneDrive per un elenco di utenti
+              href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
+            - name: 'Creare, segnalare ed eliminare più ricerche'
+              href: create-report-on-and-delete-multiple-content-searches.md
+            - name: Clonare una ricerca
+              href: clone-a-content-search.md
+    - name: EDiscovery di base
       items:
-        - name: Limiti per Ricerca contenuto
-          href: limits-for-content-search.md
-        - name: Elementi parzialmente indicizzati in Ricerca contenuto
-          href: partially-indexed-items-in-content-search.md
-        - name: Analizzare gli elementi parzialmente indicizzati
-          href: investigating-partially-indexed-items-in-ediscovery.md
-        - name: De-duplicazione nei risultati della ricerca di eDiscovery
-          href: de-duplication-in-ediscovery-search-results.md
-        - name: Differenze tra i risultati di Ricerca contenuto stimati ed effettivi
-          href: differences-between-estimated-and-actual-ediscovery-search-results.md
-    - name: Configurare Ricerca contenuto
+        - name: Gestire casi di eDiscovery
+          href: ediscovery-cases.md
+        - name: Informazioni di riferimento su eDiscovery di base
+          items:
+            - name: Assegnare autorizzazioni di eDiscovery
+              href: assign-ediscovery-permissions.md
+            - name: Query di parole chiave e condizioni di ricerca
+              href: keyword-queries-and-search-conditions.md
+            - name: Configurare il filtro delle autorizzazioni di ricerca
+              href: permissions-filtering-for-content-search.md
+            - name: Configurare i limiti di conformità
+              href: set-up-compliance-boundaries.md
+            - name: Utilizzo di uno script per aggiungere gli utenti a un'esenzione di eDiscovery
+              href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
+            - name: Creare un report in eDiscovery holds
+              href: create-a-report-on-holds-in-ediscovery-cases.md
+            - name: Cercare ed eliminare i dati versati
+              href: data-spillage-scenariosearch-and-purge.md
+            - name: Preservare i destinatari Ccn per la ricerca
+              href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: Risolvere i problemi comuni di eDiscovery
+              href: ediscovery-troubleshooting-common-issues.md
+            - name: Riprovare una ricerca non riuscita
+              href: retry-failed-content-search.md
+    - name: Advanced eDiscovery
       items:
-        - name: Configurare il filtro delle autorizzazioni per Ricerca contenuto
-          href: permissions-filtering-for-content-search.md
-        - name: Aumentare la velocità di download quando si esportano i risultati di Ricerca contenuto
-          href: increase-download-speeds-when-exporting-ediscovery-results.md
-        - name: Modificare le dimensioni dei file PST quando si esportano i risultati di Ricerca contenuto
-          href: change-the-size-of-pst-files-when-exporting-results.md
-        - name: Disabilitare i rapporti quando si esportano i risultati di Ricerca contenuto
-          href: disable-reports-when-you-export-content-search-results.md
-    - name: Usare gli script di Ricerca contenuto di PowerShell
-      items:
-        - name: Usare Ricerca contenuto per le raccolte di destinazione
-          href: use-content-search-for-targeted-collections.md
-        - name: Usare Ricerca contenuto per cercare un elenco di utenti nella cassetta postale e nel sito di OneDrive for Business
-          href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
-        - name: 'Creare, analizzare ed eliminare più ricerche di contenuto'
-          href: create-report-on-and-delete-multiple-content-searches.md
-        - name: Clonare una ricerca contenuto
-          href: clone-a-content-search.md
-- name: Gestire indagini legali
-  href: manage-legal-investigations.md
-  items:
-    - name: Soluzione Advanced eDiscovery in Microsoft 365
-      href: overview-ediscovery-20.md
-      items:
-        - name: Creare un nuovo caso
-          href: create-new-ediscovery-case.md
+        - name: Panoramica di Advanced eDiscovery
+          href: overview-ediscovery-20.md
+        - name: Introduzione a Advanced eDiscovery
+          href: get-started-with-advanced-ediscovery.md
         - name: Usare i responsabili
           href: managing-custodians.md
           items:
@@ -443,6 +472,8 @@
               href: create-search-to-collect-data.md
             - name: Creare query di ricerca
               href: building-search-queries.md
+            - name: Query di parole chiave e condizioni di ricerca
+              href: keyword-queries-and-search-conditions.md
             - name: Statistiche della ricerca
               href: search-statistics.md
             - name: Aggiungere i risultati della ricerca a un insieme da rivedere
@@ -496,9 +527,7 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: Informazioni di riferimento su Advanced eDiscovery
           items:
-            - name: Note sulla versione
-              href: release-notes-ediscovery20.md
-            - name: Limiti di Advanced eDiscovery
+            - name: Limiti avanzati di eDiscovery
               href: limits-ediscovery20.md
             - name: Tipi di file supportati
               href: supported-filetypes-ediscovery20.md
@@ -508,121 +537,101 @@
               href: attorney-privilege-detection.md
             - name: Set di Rivedi conversazione
               href: conversation-review-sets.md
+            - name: Assegnare autorizzazioni di eDiscovery
+              href: assign-ediscovery-permissions.md
+            - name: Query di parole chiave e condizioni di ricerca
+              href: keyword-queries-and-search-conditions.md
+            - name: Configurare il filtro delle autorizzazioni di ricerca
+              href: permissions-filtering-for-content-search.md
+            - name: Configurare i limiti di conformità
+              href: set-up-compliance-boundaries.md
             - name: Report avanzati di eDiscovery (anteprima)
               href: advanced-ediscovery-reports.md
             - name: Risoluzione dei problemi di AzCopy
               href: troubleshooting-azcopy.md
-    - name: Gestire casi di eDiscovery
-      href: ediscovery-cases.md
+    - name: Advanced eDiscovery (classica)
       items:
-        - name: Office 365 Advanced eDiscovery
+        - name: Panoramica di Advanced eDiscovery (Classic)
           href: office-365-advanced-ediscovery.md
+        - name: Introduzione a Advanced eDiscovery (Classic)
+          href: quick-setup-for-advanced-ediscovery.md
+        - name: Configurazione dei casi
+          href: set-up-users-and-cases-in-advanced-ediscovery.md
           items:
-            - name: Introduzione ad Advanced eDiscovery
-              href: quick-setup-for-advanced-ediscovery.md
-            - name: Configurazione dei casi
-              href: set-up-users-and-cases-in-advanced-ediscovery.md
-              items:
-                - name: Definizione dei problemi per un caso
-                  href: define-issues-and-assign-users.md
-            - name: Raccolta dei dati del caso
-              items:
-                - name: Preparare i risultati della ricerca per Advanced eDiscovery
-                  href: prepare-search-results-for-advanced-ediscovery.md
-                - name: Caricare i dati in Advanced eDiscovery
-                  href: prepare-data-for-advanced-ediscovery.md
-                - name: Importare contenuto non Office 365 in un caso
-                  href: import-non-office-365-data-into-advanced-ediscovery.md
-            - name: Elaborazione dei dati del caso
-              href: run-the-process-module-in-advanced-ediscovery.md
-              items:
-                - name: Eseguire il modulo di processo e caricare i dati
-                  href: run-the-process-module-and-load-data-in-advanced-ediscovery.md
-                - name: Visualizzare i risultati del modulo di processo
-                  href: view-process-module-results-in-advanced-ediscovery.md
-            - name: Esame dei dati del caso
-              items:
-                - name: Cercare e aggiungere tag ai dati del caso
-                  href: search-and-tagging.md
-                - name: Prendere decisioni sull'insieme da rivedere
-                  href: decision-based-on-the-results-in-advanced-ediscovery.md
-            - name: Analisi dei dati del caso
-              href: analyze-case-data-with-advanced-ediscovery.md
-              items:
-                - name: Eseguire Analisi rapida
-                  href: use-express-analysis-in-advanced-ediscovery.md
-                - name: Panoramica della similarità dei documenti (documenti simili)
-                  href: understand-document-similarity-in-advanced-ediscovery.md
-                - name: Visualizzare i risultati dell'analisi
-                  href: view-analyze-results-in-advanced-ediscovery.md
-            - name: Uso del modulo Rilevanza
-              href: use-relevance-in-advanced-ediscovery.md
-              items:
-                - name: Panoramica della valutazione di rilevanza
-                  href: assessment-in-relevance-in-advanced-ediscovery.md
-                - name: Eseguire la valutazione di rilevanza e aggiungere tag
-                  href: tagging-and-assessment-in-advanced-ediscovery.md
-                - name: Configurare il training per la rilevanza
-                  href: manage-relevance-setup-in-advanced-ediscovery.md
-                - name: Eseguire il training per la rilevanza e aggiungere tag
-                  href: tagging-and-relevance-training-in-advanced-ediscovery.md
-                - name: Tenere traccia del processo di training per la rilevanza
-                  href: track-relevance-analysis-in-advanced-ediscovery.md
-                - name: Testare i risultati dell'analisi di rilevanza
-                  href: test-relevance-analysis-in-advanced-ediscovery.md
-                - name: Caricare dati aggiuntivi per il training per la rilevanza
-                  href: set-up-loads-to-add-imported-files.md
-            - name: Esportazione dei dati del caso
-              href: export-case-data-in-advanced-ediscovery.md
-              items:
-                - name: Esportare dati
-                  href: export-results-in-advanced-ediscovery.md
-                - name: Esportare i campi del report
-                  href: export-report-fields-in-advanced-ediscovery.md
-                - name: Visualizzare la cronologia dei batch ed esportare i risultati precedenti
-                  href: view-batch-history-and-export-past-results.md
-            - name: Configurazione di Advanced eDiscovery
-              items:
-                - name: Configurare le impostazioni di caso e organizzazione
-                  href: define-case-and-tenant-settings-in-advanced-ediscovery.md
-                - name: Configurare le impostazioni di analisi
-                  href: set-analyze-options-in-advanced-ediscovery.md
-                - name: Configurare le impostazioni di Ignora testo
-                  href: set-ignore-text-in-advanced-ediscovery.md
-                - name: Configurare le parole chiave evidenziate e altre impostazioni di Rilevanza
-                  href: define-highlighted-keywords-and-advanced-options.md
-            - name: Informazioni di riferimento su Advanced eDiscovery
-              items:
-                - name: Usare le utilità di Advanced eDiscovery
-                  href: use-advanced-ediscovery-utilities.md
-                - name: Eseguire i report
-                  href: run-reports-in-advanced-ediscovery.md
-        - name: Usare uno script per aggiungere gli utenti a un blocco in un caso di eDiscovery
-          href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-        - name: Creare un report sui casi di blocco in eDiscovery
-          href: create-a-report-on-holds-in-ediscovery-cases.md
-    - name: Assegnare autorizzazioni di eDiscovery
-      href: assign-ediscovery-permissions.md
-    - name: Impostare i limiti di conformità per le indagini eDiscovery in Office 365
-      href: set-up-compliance-boundaries.md
-    - name: 'Soluzione eDiscovery: scenario di compromissione di dati riservati, ricerca ed eliminazione definitiva'
-      href: data-spillage-scenariosearch-and-purge.md
-    - name: Risolvere i problemi comuni di eDiscovery
-      href: ediscovery-troubleshooting-common-issues.md
-    - name: Gestire i blocchi
-      items:
-        - name: Creare un blocco di eDiscovery
-          href: 'ediscovery-cases.md#step-4-place-content-locations-on-hold'
-        - name: Creare un blocco per controversia legale
-          href: create-a-litigation-hold.md
-        - name: Eliminare gli elementi nella cartella Elementi recuperabili delle cassette postali basate su cloud con blocchi
-          href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
-        - name: Aumentare la quota degli elementi ripristinabili per le cassette postali bloccate
-          href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
-        - name: Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
-          href: identify-a-hold-on-an-exchange-online-mailbox.md
-        - name: Mantenere Ccn e i destinatari del gruppo di distribuzione espanso
-          href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: Definizione dei problemi per un caso
+              href: define-issues-and-assign-users.md
+        - name: Raccolta dei dati del caso
+          items:
+            - name: Preparare i risultati della ricerca
+              href: prepare-search-results-for-advanced-ediscovery.md
+            - name: Caricare i dati in un caso
+              href: prepare-data-for-advanced-ediscovery.md
+            - name: Importare contenuto non Office 365 in un caso
+              href: import-non-office-365-data-into-advanced-ediscovery.md
+        - name: Elaborazione dei dati del caso
+          href: run-the-process-module-in-advanced-ediscovery.md
+          items:
+            - name: Eseguire il modulo di processo e caricare i dati
+              href: run-the-process-module-and-load-data-in-advanced-ediscovery.md
+            - name: Visualizzare i risultati del modulo di processo
+              href: view-process-module-results-in-advanced-ediscovery.md
+        - name: Esame dei dati del caso
+          items:
+            - name: Cercare e aggiungere tag ai dati del caso
+              href: search-and-tagging.md
+            - name: Prendere decisioni sull'insieme da rivedere
+              href: decision-based-on-the-results-in-advanced-ediscovery.md
+        - name: Analisi dei dati del caso
+          href: analyze-case-data-with-advanced-ediscovery.md
+          items:
+            - name: Eseguire Analisi rapida
+              href: use-express-analysis-in-advanced-ediscovery.md
+            - name: Panoramica della similarità dei documenti (documenti simili)
+              href: understand-document-similarity-in-advanced-ediscovery.md
+            - name: Visualizzare i risultati dell'analisi
+              href: view-analyze-results-in-advanced-ediscovery.md
+        - name: Uso del modulo Rilevanza
+          href: use-relevance-in-advanced-ediscovery.md
+          items:
+            - name: Panoramica della valutazione di rilevanza
+              href: assessment-in-relevance-in-advanced-ediscovery.md
+            - name: Eseguire la valutazione di rilevanza e aggiungere tag
+              href: tagging-and-assessment-in-advanced-ediscovery.md
+            - name: Configurare il training per la rilevanza
+              href: manage-relevance-setup-in-advanced-ediscovery.md
+            - name: Eseguire il training per la rilevanza e aggiungere tag
+              href: tagging-and-relevance-training-in-advanced-ediscovery.md
+            - name: Tenere traccia del processo di training per la rilevanza
+              href: track-relevance-analysis-in-advanced-ediscovery.md
+            - name: Testare i risultati dell'analisi di rilevanza
+              href: test-relevance-analysis-in-advanced-ediscovery.md
+            - name: Caricare dati aggiuntivi per il training per la rilevanza
+              href: set-up-loads-to-add-imported-files.md
+        - name: Esportazione dei dati del caso
+          href: export-case-data-in-advanced-ediscovery.md
+          items:
+            - name: Esportare dati
+              href: export-results-in-advanced-ediscovery.md
+            - name: Esportare i campi del report
+              href: export-report-fields-in-advanced-ediscovery.md
+            - name: Visualizzare la cronologia dei batch ed esportare i risultati precedenti
+              href: view-batch-history-and-export-past-results.md
+        - name: Configurazione di Advanced eDiscovery (Classic)
+          items:
+            - name: Configurare le impostazioni di caso e organizzazione
+              href: define-case-and-tenant-settings-in-advanced-ediscovery.md
+            - name: Configurare le impostazioni di analisi
+              href: set-analyze-options-in-advanced-ediscovery.md
+            - name: Configurare le impostazioni di Ignora testo
+              href: set-ignore-text-in-advanced-ediscovery.md
+            - name: Configurare le parole chiave evidenziate e altre impostazioni di Rilevanza
+              href: define-highlighted-keywords-and-advanced-options.md
+        - name: Informazioni di riferimento su Advanced eDiscovery (Classic)
+          items:
+            - name: Utilizzare le utilità avanzate di eDiscovery (classica)
+              href: use-advanced-ediscovery-utilities.md
+            - name: Eseguire i report
+              href: run-reports-in-advanced-ediscovery.md
 - name: Gestire le indagini sui dati
   items:
     - name: Panoramica delle indagini sui dati
@@ -700,6 +709,18 @@
           href: document-metadata-fields.md
         - name: Gestire processi
           href: manage-jobs.md
+- name: Gestire i blocchi
+  items:
+    - name: Come identificare il tipo di blocco posizionato su una cassetta postale
+      href: identify-a-hold-on-an-exchange-online-mailbox.md
+    - name: Creare un blocco per controversia legale
+      href: create-a-litigation-hold.md
+    - name: Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali in attesa
+      href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
+    - name: Aumentare la quota degli elementi ripristinabili per le cassette postali bloccate
+      href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Mantenere Ccn e i destinatari del gruppo di distribuzione espanso
+      href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Gestire i criteri di controllo e avviso
   items:
     - name: Controllo unificato
@@ -726,7 +747,7 @@
           href: advanced-audit.md
         - name: Gestire i criteri di conservazione dei log di controllo
           href: audit-log-retention-policies.md
-        - name: Utilizzare il controllo avanzato per esaminare gli account compromessi
+        - name: Usare Audit avanzato per le indagini sugli account compromessi
           href: mailitemsaccessed-forensics-investigations.md
     - name: Criteri di avviso
       href: alert-policies.md
