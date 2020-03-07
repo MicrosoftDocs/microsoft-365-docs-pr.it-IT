@@ -18,14 +18,16 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilizzare i limiti di conformità per creare confini logici all'interno di un'organizzazione di Office 365 che controllano i percorsi di contenuto utente che un Manager di eDiscovery può cercare. I limiti di conformità utilizzano il filtro delle autorizzazioni di ricerca (denominato anche filtri di sicurezza di conformità) per controllare le cassette postali, i siti di SharePoint e gli account OneDrive che possono essere ricercati da utenti specifici.
-ms.openlocfilehash: 9ca390dfc96307e6323e897e762813719f2b3ac0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 247c2649029d3029bb14ca9873a553f2ef8c356c
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069741"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557743"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Impostare i limiti di conformità per le indagini eDiscovery in Office 365
+
+Le indicazioni contenute in questo articolo possono essere applicate quando si utilizza eDiscovery core o Advanced eDiscovery per gestire le indagini.
 
 I limiti di conformità creano confini logici all'interno di un'organizzazione di Office 365 che controllano i percorsi dei contenuti degli utenti, ad esempio le cassette postali, i siti di SharePoint e gli account di OneDrive, che i responsabili di eDiscovery Inoltre, i limiti di conformità controllano chi può accedere ai casi di eDiscovery utilizzati per gestire le indagini legali, umane o di altro tipo all'interno dell'organizzazione. La necessità di limiti di conformità è spesso necessaria per le multinazionali che devono rispettare confini geografici e regolamenti e per i governi, che spesso sono divisi in diverse agenzie. In Office 365, i limiti di conformità consentono di soddisfare questi requisiti quando eseguono ricerche di contenuto e gestiscono indagini con i casi di eDiscovery.
   
@@ -157,29 +159,29 @@ Il passaggio finale consiste nel creare un caso di eDiscovery nel centro sicurez
 - Quando un membro del gruppo di ruoli assegnato a un caso esegue una ricerca associata al caso, sarà in grado di eseguire la ricerca solo nei percorsi di contenuto all'interno della propria agenzia (definiti dal filtro delle autorizzazioni di ricerca creato nel passaggio 4).
 
 Per creare un caso e assegnare membri:
-    
-1. Passare alla pagina **eDiscovery** nel centro sicurezza & compliance e creare un caso. 
-    
+
+1. Passare alla pagina **eDiscovery** o **Advanced eDiscovery** nel centro sicurezza & compliance e creare un caso. 
+
 2. Nell'elenco dei casi di eDiscovery, fare clic sul nome del caso creato.
-    
+
 3. Nella pagina **Gestisci** il riquadro a comparsa di questo caso, in **Manage role groups**fare clic su ![Aggiungi icona](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Aggiungi**.
-    
+
     ![Aggiungere un gruppo di ruoli come membro di un caso di eDiscovery](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. Nell'elenco dei gruppi di ruoli, selezionare uno dei gruppi di ruoli creati nel passaggio 3, quindi fare clic su **Aggiungi**.
-    
+
 5. Fare clic su **Salva** nel riquadro a comparsa **Gestisci questo caso** per salvare la modifica. 
 
 ## <a name="compliance-boundary-limitations"></a>Limitazioni relative ai limiti di conformità
 
 Quando si gestiscono i casi di eDiscovery e le indagini sull'utilizzo dei limiti di conformità, tenere presente le limitazioni seguenti.
   
-- Durante la creazione e l'esecuzione di una ricerca di contenuto, è possibile selezionare i percorsi di contenuto esterni all'organizzazione. Tuttavia, a causa del filtro delle autorizzazioni di ricerca, il contenuto proveniente da tali posizioni non è incluso nei risultati della ricerca.
-    
+- Durante la creazione e l'esecuzione di una ricerca, è possibile selezionare i percorsi di contenuto esterni all'organizzazione. Tuttavia, a causa del filtro delle autorizzazioni di ricerca, il contenuto proveniente da tali posizioni non è incluso nei risultati della ricerca.
+
 - I limiti di conformità non si applicano alle esenzioni nei casi di eDiscovery. Questo significa che un Manager di eDiscovery in un'agenzia può mettere in attesa un utente in un'altra agenzia. Tuttavia, il limite di conformità verrà applicato se eDiscovery Manager cerca i percorsi di contenuto dell'utente che è stato messo in attesa. Questo significa che il responsabile di eDiscovery non è in grado di eseguire ricerche nei percorsi di contenuto dell'utente, anche se è stato in grado di bloccare l'utente.
-    
+
     Inoltre, le statistiche di esenzione si applicano solo ai percorsi di contenuto nell'agenzia.
-    
+
 - I filtri delle autorizzazioni di ricerca non vengono applicati alle cartelle pubbliche di Exchange.
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Ricerca ed esportazione di contenuto in ambienti multi-Geo

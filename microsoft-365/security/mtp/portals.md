@@ -1,7 +1,7 @@
 ---
 title: Portali di sicurezza e interfaccia di amministrazione di Microsoft
 description: Trovare l'interfaccia di amministrazione Microsoft o il portale appropriato per la gestione di vari servizi relativi alla sicurezza di Microsoft 365
-keywords: sicurezza, portali, Microsoft 365, M365, Centro sicurezza, interfaccia di amministrazione, URL, collegamento, MTP, Azure ATP, Office 365 ATP, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, OATP, AATP
+keywords: sicurezza, portali, Microsoft 365, M365, Centro sicurezza, interfaccia di amministrazione, URL, collegamento, MTP, Microsoft Defender ATP, Microsoft Defender Security Center, Azure ATP, Office 365 ATP, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, OATP, AATP, cloud app Security, Azure AD, Security & Compliance Center
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -14,15 +14,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 24bfd07b4b7baf9082ef99691fb1048e1f0b655e
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: 98bfa8da792bfc5b75d1a2532492c2de6071f1b1
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42336915"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558237"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portali di sicurezza e interfaccia di amministrazione di Microsoft
-Anche se [Microsoft 365 Security Center](overview-security-center.md) è la nuova Home page per il monitoraggio e la gestione della sicurezza in tutte le identità, i dati, i dispositivi, le app, è necessario accedere a vari portali per determinate attività specializzate.
+Anche se [Microsoft 365 Security Center](overview-security-center.md) è la nuova Home page per il monitoraggio e la gestione della sicurezza in tutte le identità, i dati, i dispositivi e le app, è necessario accedere a vari portali per determinate attività specializzate.
 
 > [!TIP] 
 > Per accedere a vari portali rilevanti da Microsoft 365 Security Center, selezionare **altre risorse** nel riquadro di spostamento.

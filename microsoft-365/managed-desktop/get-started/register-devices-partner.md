@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a9a2a0ccb1e0830d674f4b1b1ef5495fafb38ca3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: dc446281e8a791b59a9ac97592ff6a53dcde310c
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596553"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557564"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Procedura per i partner per la registrazione dei dispositivi
 
@@ -27,7 +27,7 @@ Prima di completare la registrazione per un cliente, è necessario innanzitutto 
 Per completare la registrazione per il cliente, creare innanzitutto un file CSV.
 
 >[!NOTE]
->Per la vostra convenienza, è possibile scaricare un [file CSV di esempio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv) per la *versione del partner*.
+>Per la vostra convenienza, è possibile scaricare un [file CSV di esempio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv) per la *versione del partner*.
 
 Il file deve includere le **intestazioni di colonna** identiche a quelle del campione (produttore, modello e così via), ma i propri dati per le altre righe. Se si utilizza il modello, aprirlo in uno strumento di modifica del testo, ad esempio Blocco note, e considerare di lasciare tutti i dati solo nella riga 1, immettendo solo i dati nelle righe 2 e seguenti. 
     

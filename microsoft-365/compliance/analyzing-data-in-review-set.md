@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fbc2ad99433e2bf296e2891b6f3e85e22b6af6df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0f9cb386ce57d6581ade5caa05e029511100d9b3
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079933"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556784"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizzare i dati in un set di revisione in Advanced eDiscovery
 
@@ -57,12 +57,18 @@ Per visualizzare un report di analisi per un set di Revisione:
 
 3. Fare clic su **Visualizza report**.
 
-Il report ha quattro componenti dall'analisi:
+Il report contiene sette componenti dall'analisi:
 
-- **Breakdown** : il numero di messaggi di posta elettronica, allegati e documenti sciolti è stato trovato nel set di revisione.
+- **Popolazione target:** Il numero di messaggi di posta elettronica, allegati e documenti sciolti trovati nel set di revisione.
 
-- **Documenti (esclusi gli allegati)** -quanti documenti sfusi sono stati pivot, unici in prossimità di duplicati di un pivot o duplicati esatti di un altro documento.
+- **Documenti (esclusi gli allegati):** Il numero di documenti sciolti che sono pivot, unici in prossimità di duplicati di un pivot o un duplicato esatto di un altro documento.
 
-- **Messaggi di posta elettronica-il** numero di email sono stati inclusivi, copie inclusive, svantaggi inclusi o nessuno di questi.
+- **Messaggi di posta elettronica:** Il numero di messaggi di posta elettronica inclusi, copie inclusive, svantaggi inclusi o nessuno di questi.
 
-- **Allegati** -quanti allegati di posta elettronica sono stati univoci o duplicati di un altro allegato di posta elettronica nel set di revisione.
+- **Allegati:** Il numero di allegati di posta elettronica che sono univoci o duplicati di un altro allegato di posta elettronica nel set di revisione.
+
+- **Numero di file per tipo:** Il numero di file identificati dall'estensione di file.
+
+- **Documenti in base all'origine:** Riepilogo del contenuto in base all'origine dati originale.
+
+- **Documenti aggregati in base al processo:** Riepilogo del contenuto dei processi dei set di revisione. 

@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Ottenere una panoramica della fase di valutazione e del relativo ruolo per determinare la ricchezza dei problemi durante la formazione di pertinenza in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 87da6fa480d272819894d439ba69081b0d8928d2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 46aef7300a6021e603edb8708ae01d8147b02722
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595983"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556794"
 ---
-# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Comprendere la valutazione in rilevanza in Office 365 Advanced eDiscovery
+# <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Comprendere la valutazione in rilevanza in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -55,7 +55,7 @@ Ogni problema ha la propria ricchezza, il margine di errore corrente e, di conse
   
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Tagging e valutazione](tagging-and-assessment-in-advanced-ediscovery.md)
   

@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Informazioni sul modulo pertinenza in Office 365 Advanced eDiscovery, tra cui un flusso di lavoro e le linee guida e i passaggi per la formazione e la revisione dei file.  '
-ms.openlocfilehash: 0b160a5b251f4be7d23ef24a79164b824fe65b7f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5cb20d140e9369d6eccccb6936740030e6b5ca41
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080713"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557634"
 ---
-# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Utilizzare il modulo pertinenza in Office 365 Advanced eDiscovery
+# <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Utilizzare il modulo pertinenza in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -133,7 +133,7 @@ Anche se Advanced eDiscovery guida l'utente attraverso il processo, con i passag
   
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   

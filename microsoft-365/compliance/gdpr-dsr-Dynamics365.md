@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 1eeed6c1dfef1765089a5998200c93be595a719a
-ms.sourcegitcommit: 48b69caf6550e68cb14472ea8cfc76b53e7ae9c6
+ms.openlocfilehash: 38c50703fbc58e85a646720b5bbe8b400477b9d4
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225524"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558006"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Richieste degli interessati per Dynamics 365 nell'ambito del GDPR e del CCPA
 
@@ -251,4 +251,4 @@ Se si elimina definitivamente un account utente, i dati dell'utente verranno rim
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 
-- [Centro protezione Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Centro protezione Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

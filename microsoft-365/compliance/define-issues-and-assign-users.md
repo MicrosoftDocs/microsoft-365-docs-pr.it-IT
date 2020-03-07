@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Informazioni su come aggiungere o modificare un problema, incluso l'assegnazione degli utenti, o eliminare un problema relativo a un caso di eDiscovery in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: d0777f6829944a6f64c71bda805edd1b5d55de4b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5c7c15b765a0c129e8a58533951b6569b8766b45
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075894"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556974"
 ---
-# <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Definire i problemi e assegnare gli utenti in Office 365 Advanced eDiscovery
+# <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>Definire i problemi e assegnare gli utenti in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -76,7 +76,7 @@ In Advanced eDiscovery, è possibile definire uno o più problemi all'interno di
     
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Configurare carichi per aggiungere file importati](set-up-loads-to-add-imported-files.md)
   

@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: "Scopri come visualizzare informazioni dettagliate per le sessioni batch di esportazione selezionate e come annullare l'ultima sessione di esportazione in Office 365 Advanced eDiscovery.  "
-ms.openlocfilehash: a13faf7a0c81eb22498239b5ac9f26cce52387f6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: de7366e1eb43c276899ecf35339c0443fad4879d
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069123"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557614"
 ---
-# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Office 365 Advanced eDiscovery
+# <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Visualizzare la cronologia dei batch ed esportare i risultati precedenti in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -62,7 +62,7 @@ La finestra di dialogo Esporta cronologia fornisce informazioni dettagliate sull
     
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Esportazione dei risultati](export-results-in-advanced-ediscovery.md)
 

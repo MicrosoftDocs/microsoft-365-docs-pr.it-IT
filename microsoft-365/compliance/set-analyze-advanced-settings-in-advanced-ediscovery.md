@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'Informazioni su come configurare le impostazioni avanzate, tra cui quasi duplicati, thread di posta elettronica e temi, per il processo di analisi in Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: f2f882f5c5b2bbaf3144d3979455387a4471280c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: effb573165abea0d4f9939fbf7c367cbdf333f57
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081269"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557796"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Impostare Analyze Advanced Settings in Office 365 Advanced eDiscovery
 
@@ -48,7 +48,7 @@ Advanced eDiscovery fornisce parametri avanzati predefiniti per l'analisi delle 
     
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Informazioni sulla somiglianza del documento](understand-document-similarity-in-advanced-ediscovery.md)
   

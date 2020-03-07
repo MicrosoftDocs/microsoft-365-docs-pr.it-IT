@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: 'Informazioni su come definire la regola per ignorare il testo specifico quando si utilizzano i moduli Analyze and process in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 440393061fef9b5a3c946322307fcafd034be81c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0253ce619901e5fec34da234e005f2c3b6ece090
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081133"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557776"
 ---
-# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Impostare l'opzione Ignora testo per ANALYZE in Office 365 Advanced eDiscovery
+# <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Opzione set Ignora testo per ANALYZE in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -126,7 +126,7 @@ Le espressioni regolari sono supportate per l'utilizzo quando si definisce Ignor
   
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Informazioni sulla somiglianza del documento](understand-document-similarity-in-advanced-ediscovery.md)
   

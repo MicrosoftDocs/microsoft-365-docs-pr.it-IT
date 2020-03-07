@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Office 365 Advanced eDiscovery v 1.0 vengono anche ritirati entro lo stesso periodo di tempo.
 ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600563"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42543221"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Pensionamento degli strumenti di eDiscovery legacy
 
@@ -71,7 +71,7 @@ Poiché tutte queste funzionalità (ad eccezione della copia dei risultati di ri
 
 - Organizzazioni governative di Office 365 e Microsoft 365; Questo include GCC, GCC High e DoD
 
-- Office 365 Germania
+- Office 365 Germany
 
 ### <a name="timeline-for-retirement"></a>Sequenza temporale per la pensione
 
@@ -168,7 +168,7 @@ Poiché queste funzionalità sono ora disponibili nel [<span class="underline">c
 
 - Organizzazioni governative di Office 365 e Microsoft 365; Questo include GCC, GCC High e DoD
 
-- Office 365 Germania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Sequenza temporale
 
@@ -242,7 +242,7 @@ Il cmdlet **Search-Mailbox** in Exchange Online PowerShell viene ritirato come a
 
 - Organizzazioni governative di Office 365 e Microsoft 365; Questo include GCC, GCC High e DoD
 
-- Office 365 Germania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Sequenza temporale
 
@@ -297,7 +297,7 @@ Queste tre API di servizi Web Exchange sono utilizzate dalla caratteristica eDis
 
 - Organizzazioni governative di Office 365 e Microsoft 365; Questo include GCC, GCC High e DoD
 
-- Office 365 Germania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Sequenza temporale
 
@@ -317,7 +317,7 @@ A questo punto, si consiglia di iniziare a eseguire la transizione del flusso di
 
 - Organizzazioni per l'istruzione di Office 365 e Microsoft 365
 
-- Office 365 Germania
+- Office 365 Germany
 
 ### <a name="timeline"></a>Sequenza temporale
 

@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Esaminare i passaggi necessari per eseguire la formazione di valutazione, compresi i file di tagging, e la revisione dei risultati della valutazione in Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 93780d42cd42ced692a81f5cfd739bcd8713c2c2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 04f88a5efbd48c222c8c7033d94ae41634a06d99
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081043"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557726"
 ---
-# <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Tagging e valutazione in Office 365 Advanced eDiscovery
+# <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Tagging e valutazione in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -125,7 +125,7 @@ In assenza di stabilizzazione basata statisticamente, vi saranno risultati con u
   
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   

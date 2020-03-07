@@ -1,5 +1,7 @@
 ---
 title: Esportare i dati del caso in Office 365 Advanced eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: "Informazioni sulle linee guida per l'esportazione dei dati del caso di eDiscovery e dei risultati per la revisione tramite il processo di esportazione in Office 365 Advanced eDiscovery.  "
-ms.openlocfilehash: 22713d38bf93f32a59646d6b0105f6c0cece69bd
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: ced09e872ab1cf7f3f5a798a916357cb8016b797
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805809"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558217"
 ---
-# <a name="export-case-data-in-office-365-advanced-ediscovery"></a>Esportare i dati del caso in Office 365 Advanced eDiscovery
+# <a name="export-case-data-in-advanced-ediscovery-classic"></a>Esportare i dati del caso in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -37,7 +39,7 @@ Il processo di esportazione in Advanced eDiscovery consente l'esportazione di co
     
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Esportazione dei risultati](export-results-in-advanced-ediscovery.md)
   

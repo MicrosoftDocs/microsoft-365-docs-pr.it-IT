@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ea13a44a6d4da54b83ee1ddccb2bd8c46f82c943
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35ce6cfc42bc6cedcccdd1a2d066e1a67ccd5928
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596363"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557936"
 ---
 # <a name="additional-steps-to-export-system-generated-log-data"></a>Ulteriore procedura di esportazione dei dati del log generato dal sistema
 
@@ -35,6 +35,6 @@ ms.locfileid: "41596363"
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 
-[Centro protezione Microsoft](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+[Centro protezione Microsoft](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 
 

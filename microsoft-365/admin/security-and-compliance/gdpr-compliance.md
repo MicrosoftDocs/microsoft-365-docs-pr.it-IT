@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Informazioni su come Microsoft 365 business può essere di aiuto per il processo di regolamento generale sulla protezione dei dati (GDPR).
-ms.openlocfilehash: 1d3b3485625996c0840a630c1b903c866bd01dbe
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1a2df3fb52536cd2caca247332bc1c54fbdbe668
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257215"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556964"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR semplificato: una guida per le piccole imprese
 
@@ -157,7 +157,8 @@ Per prepararsi per l'GDPR, ecco alcuni suggerimenti per i passaggi successivi da
   
 ## <a name="additional-resources"></a>Altre risorse
 
-[Panoramica del Centro protezione Microsoft di GDPR](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+[Panoramica del Centro protezione Microsoft di GDPR](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+)
   
 Blog ufficiale Microsoft: [impegno di Microsoft per GDPR](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)
   

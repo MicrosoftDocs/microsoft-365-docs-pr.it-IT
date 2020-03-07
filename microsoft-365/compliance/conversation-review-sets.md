@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 01f2e6f9ceccd1903f62e8661f2cfc8f4cc2b47e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ca8389bf6a7622d4db98bdf7422aea85942e8978
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078133"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556774"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Esaminare le conversazioni in Advanced eDiscovery 
 
@@ -79,8 +79,6 @@ Quando si aggiungono dati dalle conversazioni a un set di revisione, è possibil
   
 3. Dopo aver aggiunto gli elementi al set di revisione, è possibile esaminare tutti i singoli messaggi da *CRC1*. 
 
-
-
 Per abilitare il recupero delle conversazioni:
   
 1. Nella scheda **ricerche** del caso Advanced eDiscovery, selezionare una ricerca, quindi fare clic su **Aggiungi al set di revisione** nella pagina a comparsa.
@@ -91,7 +89,7 @@ Per abilitare il recupero delle conversazioni:
   
 4. Dopo aver completato il processo **di installazione del set di revisione** nella scheda **processi** , è possibile iniziare a rivedere le conversazioni.
 
-## <a name="step-4-review-conversations-in-the-review-set"></a>Passaggio 4: esaminare le conversazioni nel set di Revisione
+## <a name="step-4-review-and-export-conversations-in-a-review-set"></a>Passaggio 4: esaminare ed esportare le conversazioni in un set di Revisione
 
 Dopo che il contenuto è stato elaborato e aggiunto al set di revisione, è possibile iniziare a visualizzare i dati nel set di revisione. Le funzionalità di revisione sono diverse a seconda che il contenuto sia stato aggiunto a un set di revisione standard o a un set di recensioni di conversazione. 
 
@@ -129,12 +127,11 @@ In un set di recensioni di conversazione è possibile utilizzare le opzioni segu
 
 - **Rieseguire la conversione della conversazione:** Quando i messaggi vengono aggiunti a un set di revisione della conversazione, viene eseguito automaticamente un processo di conversione per creare il riepilogo filettato e le visualizzazioni annotazioni. Se il processo di ricostruzione della conversazione ha esito negativo, è possibile rieseguire questo processo facendo clic su **azione > creare file PDF di conversazione** nel set di revisione.
 
-
 #### <a name="exporting-conversations"></a>Esportazione di conversazioni
 
 In un set di recensioni di conversazione è possibile impostare le opzioni seguenti per esportare le conversazioni:
 
-![Esportazione](../media/export.png)
+![Esporta](../media/export.png)
 
 a. Opzioni dei metadati
 
@@ -157,11 +154,11 @@ c. Altre opzioni
 
    - **Sostituire il contenuto esportato con file PDF redatti:** Se durante il processo di revisione vengono generati file di conversazione redatti, questi file sono disponibili durante l'esportazione. È possibile decidere se esportare solo i file nativi (non selezionando questa opzione) o sostituire i file nativi con le versioni redatte dei file nativi (selezionando questa opzione), che vengono esportati come file PDF.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Per ulteriori informazioni su come esaminare i dati dei casi in Advanced eDiscovery, vedere gli articoli seguenti:
 
-- [Visualizzare i dati dei casi](view-documents-in-review-set.md) 
+- [Visualizzare i dati dei casi](view-documents-in-review-set.md)
 
 - [Analizzare i dati del caso](analyzing-data-in-review-set.md)
 

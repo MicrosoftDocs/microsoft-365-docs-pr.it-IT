@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Informazioni su come utilizzare il Centro sicurezza &amp; e conformità di Office 365 per accedere a Office 365 Advanced eDiscovery ed eseguire il modulo di processo per un caso.  '
-ms.openlocfilehash: 13b665c377022997ef4e60bc883993a86d8b9f75
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 60da3fd66ce33443e991ece2dc756c7d1ab0d14a
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081525"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557826"
 ---
-# <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Eseguire il modulo di processo e caricare i dati in Office 365 Advanced eDiscovery
+# <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Eseguire il modulo di processo e caricare i dati in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -83,7 +83,7 @@ Se si aggiunge il caso, è possibile procedere di nuovo.
   
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Visualizzazione dei risultati del modulo di elaborazione](view-process-module-results-in-advanced-ediscovery.md)
 

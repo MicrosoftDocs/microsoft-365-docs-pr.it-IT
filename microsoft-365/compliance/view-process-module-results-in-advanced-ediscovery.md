@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'Informazioni su come trovare i risultati di un modulo di processo eseguito in Office 365 Advanced eDiscovery, incluso lo stato delle attività e il riepilogo dei processi.  '
-ms.openlocfilehash: 95e5e8f5ddc24bf0b8bf38800289abd233c655ad
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 76619d5899171e8ec105c359cefdb4b8689a8d8a
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068841"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557604"
 ---
-# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Visualizza i risultati del modulo di processo in Office 365 Advanced eDiscovery
+# <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>Visualizza i risultati del modulo di processo in Advanced eDiscovery (Classic)
 
 Dopo l'avvio del **processo** di **preparazione** \> , è possibile visualizzare lo stato e i risultati. 
   
@@ -110,7 +110,7 @@ Nei risultati \> \> del \> processo di preparazione, vengono visualizzati i dett
   
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Esecuzione del modulo di elaborazione e caricamento dei dati](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

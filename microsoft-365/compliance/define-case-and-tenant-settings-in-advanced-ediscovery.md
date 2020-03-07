@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: 'Informazioni sulle impostazioni delle etichette, del modulo incrociato e del tenant che è possibile definire a livello di caso in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 2d482c7409c546042488ba4f0c7cc74571152e86
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3f206feaa48f13db48552fb7d1be1445609edeae
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595373"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556944"
 ---
-# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Definire le impostazioni del case e del tenant in Office 365 Advanced eDiscovery
+# <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>Definire le impostazioni del case e del tenant in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -90,7 +90,7 @@ La visualizzazione può essere aggiornata facendo clic sull'icona **Aggiorna** s
   
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Utilizzo di utilità](use-advanced-ediscovery-utilities.md)
 

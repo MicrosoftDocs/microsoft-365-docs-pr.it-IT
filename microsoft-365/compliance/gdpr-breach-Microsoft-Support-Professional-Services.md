@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: f86e1109b7d2d10e13a7be35336ae485bedd96b6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c6f32258f4997db4cb806141414cffc808e63517
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073863"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558106"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Servizi professionali e supporto tecnico di Microsoft e notifica di violazione secondo l'RGPD
 
@@ -100,4 +100,4 @@ Quando si avvisano i clienti dell’avvenuta violazione di dati personali, Micro
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 
-Altre informazioni su Microsoft Professional Services (<https://aka.ms/pstrust>). 
+Altre informazioni su Microsoft Professional Services (<https://aka.ms/pstrust>).

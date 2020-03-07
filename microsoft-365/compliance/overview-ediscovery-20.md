@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: In questo articolo viene descritta la nuova versione di Advanced eDiscovery in Microsoft 365.
 ms.openlocfilehash: a9c7811d9ad0660105f7063e674a54c01707ea58
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400948"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557920"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Panoramica della soluzione avanzata di eDiscovery in Microsoft 365
 

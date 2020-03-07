@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'Informazioni su come visualizzare e interpretare lo stato e i risultati della formazione sulla pertinenza per i problemi di caso in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 224a817e662462d0c51650e7bd364e717dbfbd62
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9c15bd285848d1906243137bfba451b19900b28e
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069503"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557676"
 ---
-# <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Monitorare l'analisi della pertinenza in Office 365 Advanced eDiscovery
+# <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>Monitorare l'analisi della pertinenza in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -172,7 +172,7 @@ Questa visualizzazione Mostra gli elementi seguenti:
     
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Informazioni sulla valutazione in rilevanza](assessment-in-relevance-in-advanced-ediscovery.md)
   

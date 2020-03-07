@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ea6cc92fe84cc39502e3db97361ff9d294fdfca2
-ms.sourcegitcommit: 39bd4be7e8846770f060b5dd7d895fc8040b18f5
+ms.openlocfilehash: adb6423d5c014b5f02fc272f9653abebc14cf543
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41112660"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557574"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>App in Microsoft Managed Desktop
 
@@ -23,7 +23,7 @@ ms.locfileid: "41112660"
 
 Microsoft include alcune app principali insieme alla licenza Microsoft 365 E3 o E5 necessaria per partecipare a Microsoft Managed Desktop. Tuttavia, anche se vengono fornite queste app, sono ancora presenti determinate responsabilità e azioni da completare.
 
-È inoltre possibile distribuire altre app non Microsoft agli utenti finali per il servizio self-service tramite il portale aziendale o un'installazione in background necessaria, tutti utilizzando la pipeline di distribuzione di Microsoft Intune. In caso di esperienza, è possibile eseguire la migrazione delle applicazioni necessarie. Se non si desidera che i Microsoft Consulting Services (MCS) o i fornitori non Microsoft siano lieti di aiutarvi con un progetto di migrazione e di packaging. Per ulteriori informazioni sull'utilizzo di MCS, vedere [Working with Microsoft Consulting Services](apps-MCS.md).
+È inoltre possibile distribuire altre app non Microsoft agli utenti finali per il servizio self-service tramite il portale aziendale o un'installazione in background necessaria, tutti utilizzando la pipeline di distribuzione di Microsoft Intune. In caso di esperienza, è possibile eseguire la migrazione delle applicazioni necessarie. in alternativa, i Microsoft Consulting Services (MCS) o i fornitori non Microsoft saranno lieti di aiutarvi con un progetto di migrazione e di creazione di pacchetti. Per ulteriori informazioni sull'utilizzo di MCS, vedere [Working with Microsoft Consulting Services](apps-MCS.md).
 
 
 ## <a name="apps-provided-by-microsoft"></a>App fornite da Microsoft

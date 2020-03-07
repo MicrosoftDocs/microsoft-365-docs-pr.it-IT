@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Vengono descritti tutti i campi inclusi nei report di esportazione per Advanced eDiscovery.
-ms.openlocfilehash: facd93422bbe41a9dc8c5f252cf08eab7fb308f2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8c932dac9218e2020bfcd57d21483728325e488f
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594617"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558207"
 ---
-# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Esportare i campi di report in Office 365 Advanced eDiscovery
+# <a name="export-report-fields-in-advanced-ediscovery-classic"></a>Esportare i campi di report in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -137,7 +137,7 @@ Nella tabella seguente sono elencati i campi per ogni modello di esportazione.
    
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classica)](office-365-advanced-ediscovery.md)
   
 [Esportazione di dati di case con Advanced eDiscovery](export-case-data-in-advanced-ediscovery.md)
   

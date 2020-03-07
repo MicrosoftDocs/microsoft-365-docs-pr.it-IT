@@ -17,12 +17,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Aggiungiamo continuamente nuove funzionalità al centro conformità di Microsoft 365, risolvendo i problemi che vengono apportati e modificando in base ai commenti e suggerimenti. Scoprire cosa è stato fino a questo mese.
-ms.openlocfilehash: 042e95d19ef44eef8dfdfef24a996606c9d0e00c
-ms.sourcegitcommit: b567e946b57697186267cdfe303dfe3463cfd6ba
+ms.openlocfilehash: 1f92267e9f0e7ed720983ebe58e524485a130506
+ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42552040"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42557597"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novità nel centro conformità di Microsoft 365
 
@@ -36,7 +36,7 @@ Per informazioni sulle funzionalità di Microsoft 365 che sono state avviate, so
 
 ### <a name="insider-risk-management-is-officially-released"></a>Gestione dei rischi Insider rilasciata ufficialmente
 
-Rullo di tamburi, per favore... La gestione dei rischi Insider è ora disponibile per le organizzazioni con gli abbonamenti seguenti:
+Rullo di tamburi, per favore...<br>La gestione dei rischi Insider è ora disponibile per le organizzazioni con gli abbonamenti seguenti:
 
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (a pagamento o a prova)
 - Sottoscrizione Microsoft 365 Enterprise E3 con il [componente aggiuntivo Microsoft E5 Compliance](https://go.microsoft.com/fwlink/?linkid=2120432)
@@ -47,7 +47,7 @@ Come sempre, si prega di lasciare commenti e suggerimenti quando si utilizza la 
 
 ### <a name="records-management"></a>Gestione dei record
 
-Questa nuova soluzione introduce tutte le funzionalità di gestione dei record in un unico ombrello. Tra i punti salienti sono inclusi l'introduzione del controllo delle versioni dei record per SharePoint e OneDrive e la prova dello smaltimento dei record.
+Questa nuova soluzione apporta tutte le funzionalità di gestione dei record in un unico ombrello. Tra i punti salienti sono inclusi l'introduzione del controllo delle versioni dei record per SharePoint e OneDrive e la prova dello smaltimento dei record.
 
 ![Pagina Gestione record in Microsoft 365 Compliance Center](../media/mcc-records-management-page.png)
 
@@ -55,7 +55,7 @@ Questa nuova soluzione introduce tutte le funzionalità di gestione dei record i
 
 ### <a name="solution-spotlight-data-connectors-for-facebook-and-twitter"></a>Spotlight della soluzione: connettori di dati per Facebook e Twitter
 
-Connettori di dati [rilasciati il mese scorso](#just-launched) e stiamo cercando il vostro aiuto per testare i seguenti connettori per convalidare il funzionamento come previsto.
+Connettori di dati [rilasciati il mese scorso](#just-launched) e stiamo cercando il vostro aiuto per testare i connettori seguenti.
 
 - [Pagine business di Facebook](archive-facebook-data-with-sample-connector.md). Importa e archivia i dati dalle pagine di business di Facebook a Microsoft 365. Vantaggi per le soluzioni di conformità, ad esempio la gestione dei record e eDiscovery.
 - [Twitter](archive-twitter-data-with-sample-connector.md). Importa e archivia i dati da Twitter a Microsoft 365. Vantaggi per le soluzioni di conformità, ad esempio la gestione dei record e eDiscovery.
