@@ -20,17 +20,17 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 description: Informazioni su ciò che Microsoft 365 business include e ottenere istruzioni dettagliate per l'iscrizione a Microsoft 365 business.
-ms.openlocfilehash: 003bf332a9183a5e062a294297a30c9b7d19fdb9
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: 85e9ff3585e1e4bbadc6c34699f75d77486f58ea
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547832"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42560762"
 ---
 # <a name="sign-up-for-microsoft-365-business"></a>Iscriversi a Microsoft 365 business
 
@@ -61,7 +61,7 @@ Per iscriversi e acquistare Microsoft 365 per la propria azienda, eseguire la pr
 2. Nella pagina successiva, scoprire il costo mensile, quindi scorrere verso il basso la pagina per ottenere ulteriori informazioni su ciò che è incluso in Microsoft 365 business. In Microsoft 365 business, selezionare **Acquista ora**.
 3. Nella pagina di **ringraziamento per aver scelto Microsoft 365 business** , immettere le informazioni per iniziare.
 4. Nel **passaggio 1**, immettere un indirizzo di posta elettronica già utilizzato. Questo può essere l'indirizzo di posta elettronica di lavoro corrente o qualsiasi indirizzo che si desidera venga utilizzato da Microsoft per comunicare con l'utente durante l'installazione. È anche l'indirizzo in cui verranno inviate informazioni sulla bolletta e sui rinnovi. Quindi seleziona, **Configura account**.
-5. Nel **passaggio 2**, immettere il proprio nome, il numero di telefono aziendale, il nome della società e la posizione. Il paese o l'area geografica determina i servizi esatti ricevuti da Microsoft e non può essere modificato dopo aver completato questo passaggio.  Select **Next**. 
+5. Nel **passaggio 2**, immettere il proprio nome, il numero di telefono aziendale, il nome della società e la posizione. Il paese o l'area geografica determina i servizi esatti ricevuti da Microsoft e non può essere modificato dopo aver completato questo passaggio. Selezionare **Avanti**.
     > [!NOTE]
     > Viene visualizzato il nome della società nell'interfaccia di amministrazione; si tratta di gestire gli utenti di Microsoft 365, le licenze e così via. È inclusa anche in tutti gli URL di siti interni (SharePoint).
 6. Nel **passaggio 3**:

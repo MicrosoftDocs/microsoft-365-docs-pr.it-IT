@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Dopo aver configurato Office 365 Message Encryption (OME), è possibile personalizzare la configurazione della distribuzione in diversi modi. Ad esempio, è possibile configurare la possibilità di abilitare i codici Pass una tantum, visualizzare il pulsante Proteggi in Outlook sul Web e altro ancora. Le attività descritte in questo articolo illustrano come fare.
-ms.openlocfilehash: fa328abc36ffa0d22bb2c96114b3bbb3dfa12ed3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 102d57681e049bf803b377fea97cc0fdb11affb2
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600513"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42562042"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gestire Office 365 Message Encryption
 
@@ -173,27 +173,15 @@ Per ulteriori informazioni sul modo in cui Office 365 implementa la crittografia
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
-## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail--office-365-advanced-message-encryption-only"></a>Assicurarsi che tutti i destinatari esterni utilizzino il portale OME per leggere la posta crittografata, solo la crittografia dei messaggi avanzata di Office 365
+## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>Verificare che tutti i destinatari esterni utilizzino il portale OME per leggere la posta crittografata
 
-Se si dispone della crittografia dei messaggi avanzata di Office 365, è possibile utilizzare modelli di personalizzazione personalizzati per imporre ai destinatari la ricezione di un messaggio di posta elettronica wrapper per la lettura di messaggi crittografati nel portale OME anziché l'utilizzo di Outlook o Outlook sul Web. Potrebbe essere necessario eseguire questa operazione se si desidera utilizzare un maggiore controllo su come i destinatari utilizzano la posta ricevuta. Ad esempio, se i destinatari esterni visualizzano la posta elettronica nel portale Web, è possibile impostare una data di scadenza per il messaggio di posta elettronica ed è possibile revocare il messaggio di posta elettronica. Queste funzionalità sono supportate solo tramite il portale OME. Per creare le regole del flusso di posta, è possibile utilizzare l'opzione Crittografa e l'opzione non inoltrare.
+È possibile utilizzare modelli di personalizzazione personalizzati per imporre ai destinatari la ricezione di un messaggio di posta elettronica wrapper per la lettura di messaggi crittografati nel portale OME anziché l'utilizzo di Outlook o Outlook sul Web. Potrebbe essere necessario eseguire questa operazione se si desidera utilizzare un maggiore controllo su come i destinatari utilizzano la posta ricevuta. Ad esempio, se i destinatari esterni visualizzano la posta elettronica nel portale Web, è possibile impostare una data di scadenza per il messaggio di posta elettronica ed è possibile revocare il messaggio di posta elettronica. Queste funzionalità sono supportate solo tramite il portale OME. Per creare le regole del flusso di posta, è possibile utilizzare l'opzione Crittografa e l'opzione non inoltrare.
 
-### <a name="create-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email-to-be-revocable-and-expire-in-7-days"></a>Creare un modello personalizzato per imporre a tutti i destinatari esterni di utilizzare il portale OME e per la posta elettronica crittografata come revocabile e scadere in 7 giorni
+### <a name="use-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email"></a>Utilizzare un modello personalizzato per imporre a tutti i destinatari esterni di utilizzare il portale OME e per la posta elettronica crittografata
 
 1. Utilizzare un account aziendale o dell'Istituto di istruzione che disponga delle autorizzazioni di amministratore globale nell'organizzazione di Office 365 e avviare una sessione di Windows PowerShell e connettersi a Exchange Online. Per istruzioni, vedere [Connettersi a PowerShell di Exchange Online](https://aka.ms/exopowershell).
 
-2. Eseguire il cmdlet New-OMEConfiguration:
-
-   ```powershell
-   New-OMEConfiguration -Identity "<template name>" -ExternalMailExpiryInDays 7
-   ```
-
-   dove `template name` è il nome che si desidera utilizzare per il modello di branding personalizzato per la crittografia dei messaggi di Office 365. For example,
-
-   ```powershell
-   New-OMEConfiguration -Identity "<One week expiration>" -ExternalMailExpiryInDays 7
-   ```
-
-3. Eseguire il cmdlet New-TransportRule:
+2. Eseguire il cmdlet New-TransportRule:
 
    ```powershell
    New-TransportRule -name "<mail flow rule name>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "<option name>" -ApplyRightsProtectionCustomizationTemplate "<template name>"
@@ -205,18 +193,18 @@ Se si dispone della crittografia dei messaggi avanzata di Office 365, è possibi
 
    - `option name`è `Encrypt` o `Do Not Forward`.
 
-   - `template name`è il nome assegnato al modello personalizzato per la personalizzazione, ad esempio `One week expiration`.
+   - `template name`è il nome assegnato al modello personalizzato per la personalizzazione, ad esempio `OME Configuration`.
 
-   Per crittografare tutti i messaggi di posta elettronica esterni con il modello "scadenza una settimana" e applicare l'opzione solo crittografia:
+   Per crittografare tutti i messaggi di posta elettronica esterni con il modello "una settimana di vendita" e applicare l'opzione solo crittografia:
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<One week expiration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Encrypt" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
    ```
 
-   Per crittografare tutti i messaggi di posta elettronica esterni con il modello "scadenza una settimana" e applicare l'opzione non inoltrare:
+   Per crittografare tutti i messaggi di posta elettronica esterni con il modello "configurazione OME" e applicare l'opzione non inoltrare:
 
    ```powershell
-   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<One week expiration>"
+   New-TransportRule -name "<All outgoing mail>" -FromScope "InOrganization" -ApplyRightsProtectionTemplate "Do Not Forward" -ApplyRightsProtectionCustomizationTemplate "<OME Configuration>"
    ```
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>Personalizzare l'aspetto dei messaggi di posta elettronica e del portale OME

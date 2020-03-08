@@ -18,18 +18,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come configurare i criteri di accesso condizionale per le campagne Microsoft 365 per aggiungere una maggiore sicurezza aggiuntiva.
-ms.openlocfilehash: be3ca0da3d27e3ec49f1227e4482cfd7fcaae8cb
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: eda65e335df2a7c2c443d7095f7b35b5c1cf27e4
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550078"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561221"
 ---
 # <a name="set-up-conditional-access-policies"></a>Impostare i criteri di accesso condizionale
 

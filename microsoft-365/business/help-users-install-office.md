@@ -20,18 +20,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
-- MARVEL_SEO_MAR
+- seo-marvel-mar
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Consente agli utenti di installare le app di Office nei dispositivi Windows 10 e di installare facilmente Office nei PC Windows 10 dall'interfaccia di amministrazione di Microsoft 365 business.
-ms.openlocfilehash: 5df9a1a8236942a34031daf06e38acbe923339e4
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: a33121f5c5b3532ea376a2bf7a6d7f51d4291a47
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42550373"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42561626"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aiutare gli utenti a installare Office nei dispositivi Windows 10
 
