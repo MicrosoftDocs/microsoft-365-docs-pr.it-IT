@@ -130,6 +130,7 @@
 ## Office 365 gestito da 21Vianet
 ### [Informazioni su Office 365 gestito da 21Vianet](services-in-china/services-in-china.md)
 ### [Acquistare o provare abbonamenti](services-in-china/buy-or-try-subscriptions.md)
+### [Scaricare l'app di Office per Android per Office 365 gestito da 21Vianet](services-in-china/download-office-app-for-Android.md)
 ### [Scaricare l'app di Office per iOS per Office 365 gestito da 21Vianet](services-in-china/download-office-app-for-iOS.md)
 ### [Visualizzare la fattura oppure ottenere un Fapiao](services-in-china/view-your-bill-or-get-a-fapiao.md)
 ### [Richiedere un Fapiao](services-in-china/apply-for-a-fapiao.md)
