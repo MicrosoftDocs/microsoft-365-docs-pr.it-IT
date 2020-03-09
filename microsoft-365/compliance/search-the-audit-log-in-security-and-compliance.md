@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 2c69cc6f7e5b332819061e3bf92b9ab02a1dc8db
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
+ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42551831"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42562073"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -340,7 +340,7 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |(nessuno)|FileModifiedExtended|Elemento correlato all'attività "File modificato" (FileModified). Un evento FileModifiedExtended viene registrato quando la stessa persona modifica in modo continuativo un file per un periodo prolungato (fino a 3 ore). <br/><br/> Lo scopo della registrazione di eventi FileModifiedExtended è di ridurre il numero di eventi FileModified registrati quando si modifica un file in modo continuativo. Ciò consente di ridurre il numero di record FileModified per un'attività utente sostanzialmente identica e consente di concentrarsi sull'evento FileModified iniziale (e più importante).|
 |File spostato|FileMoved|Un utente sposta un documento dalla posizione corrente in un sito a una nuova posizione.|
 |(nessuno)|FilePreviewed|L'utente visualizza in anteprima i file in un sito di SharePoint Online o di OneDrive for Business. Questi eventi si verificano in genere in volumi elevati in base a una singola attività, ad esempio la visualizzazione di una raccolta immagini.|
-|Query di ricerca eseguita|SearchQueryPerformed|Un account utente o di sistema esegue una ricerca in SharePoint o in OneDrive for Business. Alcuni scenari comuni in cui un account del servizio esegue una query di ricerca includono l'applicazione di criteri di conservazione o di blocco di eDiscovery a siti e account di OneDrive e i casi in cui le etichette di conservazione o riservatezza vengono applicate automaticamente al contenuto del sito. In molti di questi casi, il nome dell'account di servizio registrato nel campo relativo all'utente del record di controllo è **app\@sharepoint**. </br></br> **Suggerimento:** i campi ApplicationDisplayName e EventData nel record di controllo per l'attività Query di ricerca eseguita possono essere utili per identificare lo scenario o il servizio che ha generato questo evento.|
+|Query di ricerca eseguita|SearchQueryPerformed|Un account utente o di sistema esegue una ricerca in SharePoint o in OneDrive for Business. Alcuni scenari comuni in cui un account del servizio esegue una query di ricerca includono l'applicazione di criteri di conservazione o blocchi di eDiscovery a siti e account di OneDrive e l'applicazione automatica di etichette di conservazione o riservatezza al contenuto del sito.|
 |Tutte le versioni secondarie di un file vengono spostate nel Cestino|FileVersionsAllMinorsRecycled|L'utente elimina tutte le versioni secondarie dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel Cestino del sito.|
 |Tutte le versioni di un file vengono spostate nel Cestino|FileVersionsAllRecycled|L'utente elimina tutte le versioni dalla cronologia delle versioni di un file. Le versioni eliminate vengono spostate nel Cestino del sito.|
 |La versione di un file viene spostata nel Cestino|FileVersionRecycled|L'utente una versione dalla cronologia delle versioni di un file. La versione eliminata viene spostata nel Cestino del sito.|
@@ -353,10 +353,25 @@ La tabella seguente descrive le attività su file e pagine in SharePoint Online 
 |(nessuno)|PagePrefetched|Il client di un utente (ad esempio un sito Web o un'app per dispositivi mobili) ha richiesto la pagina indicata per migliorare le prestazioni in caso di esplorazione da parte dell'utente. Questo evento viene registrato per indicare che il contenuto della pagina è stato servito al client dell'utente. Questo evento non indica definitivamente che l'utente è passato alla pagina. <br/><br/> Quando il contenuto della pagina viene visualizzato dal client (come richiesto dall'utente), è necessario generare un evento ClientViewSignaled. Non tutti i client supportano l'indicazione di caricamento in background, pertanto alcune attività predefinite potrebbero essere registrate come eventi PageViewed.|
 ||||
 
+#### <a name="the-appsharepoint-user-in-audit-records"></a>Utente app\@sharepoint nei record di controllo
+
+Nei record di controllo relativi ad alcune attività di file (e altre attività correlate a SharePoint) l'utente che ha eseguito l'attività, identificato nei campi User e UserId, è app@sharepoint. Questo indica che l'utente che ha eseguito l'attività è in realtà un'applicazione. In questo caso, in SharePoint all'applicazione sono state concesse le autorizzazioni per eseguire le azioni a livello di organizzazione, ad esempio cercare un sito di SharePoint o un account di OneDrive, per conto di un utente, un amministratore o un servizio. Questo processo di assegnazione delle autorizzazioni a un'applicazione viene definito accesso di tipo *solo app di SharePoint*. Questo indica che l'autenticazione presentata a SharePoint per eseguire un'azione è stata eseguita da un'applicazione, anziché da un utente. Questo è il motivo per cui in determinati record di controllo è presente l'utente app@sharepoint. Per altre informazioni, vedere [Concedere l'accesso di tipo solo app di SharePoint](https://docs.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs).
+
+Ad esempio, app@sharepoint spesso viene identificato come utente per gli eventi "La query di ricerca è stata eseguita" e "File aperto". Il motivo è che un'applicazione con accesso di tipo solo app di SharePoint nell'organizzazione esegue query di ricerca e accede ai file durante l'applicazione di criteri di conservazione a siti e account di OneDrive.
+
+Ecco alcuni altri scenari in cui è possibile identificare app@sharepoint in un record di controllo come utente che ha eseguito un'attività:
+
+- Gruppi di Office 365. Quando un utente o un amministratore crea un nuovo gruppo, vengono generati record di controllo per la creazione di una raccolta siti, l'aggiornamento di elenchi e l'aggiunta di membri a un gruppo di SharePoint. Queste attività vengono eseguite da un'applicazione per conto dell'utente che ha creato il gruppo.
+
+- Microsoft Teams. Analogamente a Gruppi di Office 365, vengono generati record di controllo per la creazione di una raccolta siti, l'aggiornamento di elenchi e l'aggiunta di membri a un gruppo di SharePoint quando si crea un team.
+
+- Funzionalità di conformità. Quando un amministratore implementa funzionalità di conformità, come i criteri di conservazione, i blocchi di eDiscovery e l'applicazione automatica delle etichette di sensitività.
+
+In questi e altri scenari si noterà anche che sono stati creati più record di controllo con utente app@sharepoint in un intervallo di tempo molto breve, spesso a pochi secondi di distanza l'uno dall'altro. Questo indica anche che probabilmente sono stati attivati dalla stessa attività avviata dall'utente. Anche i campi ApplicationDisplayName e EventData nel record di controllo possono essere utili per identificare lo scenario o l'applicazione che ha generato l'evento.
 
 ### <a name="folder-activities"></a>Attività su cartelle
 
-La tabella seguente descrive le attività di cartella in SharePoint Online e OneDrive for Business.
+La tabella seguente descrive le attività di cartella in SharePoint Online e OneDrive for Business. Come descritto in precedenza, nei record di controllo per alcune attività di SharePoint è indicato che è stato l'utente app@sharepoint a eseguire l'attività per conto dell'utente o dell'amministratore che ha avviato l'azione. Per altre informazioni, vedere [Utente app\@sharepoint nei record di controllo](#the-appsharepoint-user-in-audit-records).
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -373,7 +388,7 @@ La tabella seguente descrive le attività di cartella in SharePoint Online e One
 
 ### <a name="sharepoint-list-activities"></a>Attività dell'elenco di SharePoint
 
-La tabella seguente descrive le attività correlate al momento in cui gli utenti interagiscono con gli elenchi e gli elementi elenco in SharePoint Online.
+La tabella seguente descrive le attività correlate al momento in cui gli utenti interagiscono con gli elenchi e gli elementi elenco in SharePoint Online. Come descritto in precedenza, nei record di controllo per alcune attività di SharePoint è indicato che è stato l'utente app@sharepoint a eseguire l'attività per conto dell'utente o dell'amministratore che ha avviato l'azione. Per altre informazioni, vedere [Utente app\@sharepoint nei record di controllo](#the-appsharepoint-user-in-audit-records).
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -451,7 +466,7 @@ La tabella seguente descrive le attività di sincronizzazione file in SharePoint
 
 ### <a name="site-permissions-activities"></a>Attività relative alle autorizzazioni del sito
 
-La tabella seguente elenca gli eventi correlati all'assegnazione di autorizzazioni in SharePoint e all'uso dei gruppi per concedere (e revocare) l'accesso ai siti.
+La tabella seguente elenca gli eventi correlati all'assegnazione di autorizzazioni in SharePoint e all'uso dei gruppi per concedere (e revocare) l'accesso ai siti. Come descritto in precedenza, nei record di controllo per alcune attività di SharePoint è indicato che è stato l'utente app@sharepoint a eseguire l'attività per conto dell'utente o dell'amministratore che ha avviato l'azione. Per altre informazioni, vedere [Utente app\@sharepoint nei record di controllo](#the-appsharepoint-user-in-audit-records).
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -475,7 +490,7 @@ La tabella seguente elenca gli eventi correlati all'assegnazione di autorizzazio
 
 ### <a name="site-administration-activities"></a>Attività di amministrazione siti
 
-Nella tabella seguente sono elencati gli eventi derivanti da attività di amministrazione in SharePoint Online.
+Nella tabella seguente sono elencati gli eventi derivanti da attività di amministrazione in SharePoint Online. Come descritto in precedenza, nei record di controllo per alcune attività di SharePoint è indicato che è stato l'utente app@sharepoint a eseguire l'attività per conto dell'utente o dell'amministratore che ha avviato l'azione. Per altre informazioni, vedere [Utente app\@sharepoint nei record di controllo](#the-appsharepoint-user-in-audit-records).
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
