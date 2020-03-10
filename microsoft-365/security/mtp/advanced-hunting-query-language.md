@@ -1,7 +1,7 @@
 ---
 title: Il linguaggio delle query in Ricerca avanzata in Microsoft Threat Protection
 description: Creare una prima query di ricerca delle minacce, conoscere gli operatori più comuni e altri aspetti del linguaggio di query di Ricerca avanzata
-keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, language, Learn, First query, telemetria, eventi, telemetria, rilevamenti personalizzati, schema, kusto, operatori, tipi di dati
+keywords: caccia avanzata, caccia alle minacce, Cyber Threat Hunting, Microsoft Threat Protection, Microsoft 365, MTP, M365, Search, query, language, Learn, First query, telemetria, eventi, telemetria, rilevamenti personalizzati, schema, kusto, operatori, tipi di dati, PowerShell Download, esempio di query
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,83 +17,96 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: eda9b893057afd54a644f0091bf4e1b421bd5439
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 7f2cf7f62060774343354467d27b76456f6581fc
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234695"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "42567031"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
 **Si applica a:**
 - Microsoft Threat Protection
 
-
-
 Ricerca avanzata si basa sul [linguaggio delle query in Esplora dati](https://docs.microsoft.com/azure/kusto/query/). È possibile usare la sintassi e gli operatori di Esplora dati per creare query che individuano informazioni nello [schema](advanced-hunting-schema-tables.md) specificamente strutturate per Ricerca avanzata. Per comprendere meglio questi concetti, eseguire la prima query.
 
 ## <a name="try-your-first-query"></a>Provare la prima query
 
-nel Centro sicurezza Microsoft 365 andare su **Ricerca** per eseguire la prima query. Usare l'esempio seguente:
+In Microsoft 365 Security Center, andare a **caccia** per eseguire la prima query. Usare l'esempio seguente:
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents 
+// Finds PowerShell execution events that could involve a download
+union DeviceProcessEvents, DeviceNetworkEvents
 | where Timestamp > ago(7d)
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE") 
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+ "DownloadFile",
+ "DownloadData",
+ "DownloadString",
+"WebRequest",
+"Shellcode",
+"http",
+"https")
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
 Questo è come apparirà in Ricerca avanzata.
 
-![Immagine della query in Ricerca avanzata di Microsoft Defender Advanced Threat Protection](../../media/advanced-hunting-query-example.png)
+![Immagine della query di ricerca avanzata di Microsoft Threat Protection](../../media/advanced-hunting-query-example.png)
 
-La query inizia con un breve commento che descrive il contenuto. In un secondo momento si può decidere di salvare la query e condividerla con altri utenti dell'organizzazione.
+All'inizio della query è stato aggiunto un breve commento per descrivere il relativo contenuto. Ciò aiuta se in seguito si decide di salvare la query e condividerla con altri utenti dell'organizzazione. 
 
 ```kusto
-// Finds PowerShell execution events that could involve a download.
-DeviceProcessEvents
+// Finds PowerShell execution events that could involve a download
 ```
 
-La query viene in genere avviata con un nome di tabella seguito da una serie di elementi avviati da una pipe (`|`). In questo esempio, iniziamo aggiungendo il nome della tabella `DeviceProcessEvents` e gli elementi reindirizzati, se necessario.
+La query viene in genere avviata con un nome di tabella seguito da una serie di elementi avviati da una pipe (`|`). In questo esempio viene avviata la creazione di un'Unione di due tabelle `DeviceProcessEvents` e `DeviceNetworkEvents`, quindi, vengono aggiunti gli elementi reindirizzati in base alle esigenze.
 
-Il primo elemento reindirizzato è l'ambito del filtro del periodo entro i sette giorni precedenti. Il mantenimento dell'intervallo di tempo il più possibile ravvicinato assicura che le query vengano eseguite bene, che restituiscano risultati gestibili e che non scadano.
+```kusto
+union DeviceProcessEvents, DeviceNetworkEvents
+```
+Il primo elemento con pipe è un filtro temporale che ha come ambito i sette giorni precedenti. Il mantenimento dell'intervallo di tempo il più possibile ravvicinato assicura che le query vengano eseguite bene, che restituiscano risultati gestibili e che non scadano.
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
-L'intervallo di tempo è seguito immediatamente da una ricerca di file che rappresenta l'applicazione di PowerShell.
+L'intervallo di tempo è subito seguito da una ricerca dei nomi dei file di processo che rappresentano l'applicazione PowerShell.
 
-```kusto
-| where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
+```
+// Pivoting on PowerShell processes
+| where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
-In seguito, la query cerca le righe di comando usate in genere con PowerShell per scaricare i file.
+Successivamente, la query Cerca stringhe nelle righe di comando che vengono in genere utilizzate per scaricare i file tramite PowerShell.
 
 ```kusto
-| where ProcessCommandLine has "Net.WebClient"
-        or ProcessCommandLine has "DownloadFile"
-        or ProcessCommandLine has "Invoke-WebRequest"
-        or ProcessCommandLine has "Invoke-Shellcode"
-        or ProcessCommandLine contains "http:"
+// Suspicious commands
+| where ProcessCommandLine has_any("WebClient",
+ "DownloadFile",
+ "DownloadData",
+ "DownloadString",
+"WebRequest",
+"Shellcode",
+"http",
+"https")
 ```
-
-Ora che la query identifica chiaramente i dati da individuare, è possibile aggiungere elementi che definiscono come appaiono i risultati. `project` restituisce colonne specifiche e `top` limita il numero di risultati, rendendo i risultati ben formattati, ragionevolmente grandi e facili da elaborare.
+Ora che la query identifica chiaramente i dati da individuare, è possibile aggiungere elementi che definiscono come appaiono i risultati. `project`restituisce colonne specifiche e `top` limita il numero di risultati, contribuendo a garantire che i risultati siano ben formattati e ragionevolmente grandi e facili da elaborare.
 
 ```kusto
-| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
+FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Fare clic su **Esegui query** per visualizzare i risultati. È possibile espandere la visualizzazione dello schermo in modo da concentrarsi sulla query di ricerca e sui risultati.
+Fare clic su **Esegui query** per visualizzare i risultati. Selezionare l'icona Espandi nell'angolo superiore destro dell'editor di query per concentrarsi sulla query di caccia e sui risultati.
+
+![Immagine del controllo Espandi nell'editor di query di ricerca avanzata](../../media/advanced-hunting-expand.png)
 
 ## <a name="learn-common-query-operators-for-advanced-hunting"></a>Informazioni sugli operatori di query più comuni per la Ricerca avanzata
 
@@ -142,6 +155,6 @@ Per altre informazioni sul linguaggio delle query di Esplora dati e sugli operat
 ## <a name="related-topics"></a>Argomenti correlati
 - [Ricerca proattiva delle minacce](advanced-hunting-overview.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
-- [Ricerca delle minacce attraverso dispositivi e email](advanced-hunting-query-emails-devices.md)
-- [Comprensione dello schema](advanced-hunting-schema-tables.md)
-- [Applicazione delle procedure consigliate per le query](advanced-hunting-best-practices.md)
+- [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)
+- [Comprendere lo schema](advanced-hunting-schema-tables.md)
+- [Applicare le procedure consigliate per le query](advanced-hunting-best-practices.md)

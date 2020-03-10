@@ -15,16 +15,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 165225f225380caf0131205ec19f5320dab1d278
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: d95879816193eb00881835b63f2aae3e232ddfb7
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409963"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42569070"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Novità di Microsoft Threat Protection
 
 Le caratteristiche seguenti sono generalmente disponibili (GA) nella versione più recente di Microsoft Threat Protection.
+
+Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e incollando l'URL seguente nel lettore di feed:`https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us`
 
 ## <a name="february-2020"></a>Febbraio 2020
 - [Eventi imprevisti](incidents-overview.md) <br> Sapere esattamente dove è stato avviato un attacco e altri dettagli che consentono di visualizzare l'entità dell'attacco.
