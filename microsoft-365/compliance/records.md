@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Per implementare una strategia di gestione dei record nella tua organizzazione Microsoft o Office 365, usare etichette di conservazione che dichiarino un contenuto come record. Quindi pubblicare o applicare automaticamente l'etichetta record di conservazione.
-ms.openlocfilehash: 87bed90f4c9bf27eb960a2018b6a641ff3e06993
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081684"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42586728"
 ---
 # <a name="overview-of-records"></a>Panoramica dei record
 
@@ -70,7 +70,7 @@ Tenere presente quanto segue in relazione ai record:
 
 ## <a name="using-retention-labels-to-declare-records"></a>Usare le etichette di conservazione per dichiarare i record
 
-Quando si crea un'etichetta di conservazione, si può scegliere di usarla per classificare il contenuto come record. Per dichiarare il contenuto come record, è necessario eseguire le operazioni seguenti:
+Quando si crea un'etichetta di conservazione, si può scegliere di usarla per classificare il contenuto come record. Per dichiarare il contenuto come record, eseguire le operazioni seguenti:
 
 1. Creare un’etichetta di conservazione. Nel Centro conformità Microsoft 365 passare a **Gestione record** \> **Piano di archiviazione**. Nella pagina **Piano di archiviazione** fare clic su **Crea un'etichetta**.
 
@@ -115,7 +115,7 @@ Il controllo delle versioni del record è automaticamente disponibile per qualsi
 
 ### <a name="locking-and-unlocking-a-record"></a>Bloccare e sbloccare un record
 
-Una volta assegnata un'etichetta di conservazione a un documento, qualsiasi utente del gruppo Membri predefinito (con livello di autorizzazione Collaborazione) può sbloccare un record o bloccare un record sbloccato.
+Una volta assegnata un'etichetta record di conservazione a un documento, qualsiasi utente con il livello di autorizzazione Collaborazione o inferiore può sbloccare un record o bloccare un record sbloccato.
 <br/><br/>
 
 ![Lo stato del record mostra se il documento record è sbloccato](../media/recordversioning9.png)
