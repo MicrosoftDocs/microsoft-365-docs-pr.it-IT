@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: ''
+ms.date: 3/05/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: eea03384b77dbcea29196c9f8142f748af0bf5be
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 3e9dd5c02b3502eab2d3abfe5d65b5baebe18cda
+ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557587"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "42569167"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -50,7 +50,7 @@ Procedura di base per la distribuzione e l'applicazione di etichette di riservat
 
 I membri del team di conformità che creano un'etichetta di riservatezza necessitano delle autorizzazioni per il Centro conformità Microsoft 365, il Centro sicurezza Microsoft 365 o il Centro sicurezza e conformità di Office 365. 
 
-Per impostazione predefinita, gli amministratori globali del tenant hanno accesso a queste interfacce di amministrazione e possono fornire ai responsabili della conformità e ad altri utenti l'accesso, senza concedere tutte le autorizzazioni di un amministratore tenant. Per l'accesso di amministratore delegato limitato, passare alla pagina **Autorizzazioni** di una delle interfacce di amministrazione e quindi aggiungere membri al gruppo di ruoli di **Amministratore dati di conformità**, **Amministratore di conformità** o **Amministratore della sicurezza**.
+Per impostazione predefinita, gli amministratori globali del tenant hanno accesso a queste interfacce di amministrazione e possono fornire ai responsabili della conformità e ad altri utenti l'accesso, senza concedere tutte le autorizzazioni di un amministratore tenant. Per l'accesso di amministratore con delega, passare alla pagina **Autorizzazioni** di una delle interfacce di amministrazione e quindi aggiungere membri al gruppo di ruoli di **Amministratore dati di conformità**, **Amministratore di conformità** o **Amministratore della sicurezza**.
 
 In alternativa all'utilizzo dei ruoli, è possibile creare un nuovo gruppo di ruoli e aggiungere l’**amministratore dell'etichetta di riservatezza** o la **configurazione dell’organizzazione** al gruppo. Per le istruzioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
@@ -68,7 +68,7 @@ Usare la documentazione seguente a supporto della distribuzione delle etichette 
 |Gestire le etichette di riservatezza per le app di Office in modo che il contenuto venga etichettato non appena creato |[Usare le etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md)|
 |Applicare automaticamente etichette di riservatezza o consigliare etichette agli utenti al momento della creazione del contenuto | [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)|
 |Usare le etichette di riservatezza per proteggere il contenuto in Teams e SharePoint |[Utilizzare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md)|
-|Individuare, etichettare e proteggere i file archiviati negli archivi dati locali |[Distribuzione dello strumento di analisi di Azure Information Protection per classificare e proteggere automaticamente i file](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
+|Individuare, etichettare e proteggere i file archiviati negli archivi dati locali |[Distribuzione dello strumento di analisi Azure Information Protection per classificare e proteggere automaticamente i file](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Individuare, etichettare e proteggere i file archiviati negli archivi dati nel cloud|[Individuare, classificare, etichettare e proteggere i dati regolamentati e sensibili archiviati nel cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Visualizzare il modo in cui le etichette di riservatezza vengono usate per creare report sullo stato di distribuzione e ottimizzare la configurazione delle etichette|[Visualizzare l'utilizzo delle etichette con Analisi delle etichette](label-analytics.md)|
 
