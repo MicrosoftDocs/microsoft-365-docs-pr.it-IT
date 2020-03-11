@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: Informazioni su come conservare il contenuto delle cassette postali per gli ex dipendenti trasformando la cassetta postale in una cassetta postale inattiva. A tale scopo, inserire la cassetta postale sul blocco per controversia legale o applicare un criterio di conservazione di Office 365 alla cassetta postale e quindi rimuovere l'account di Office 365 corrispondente.
-ms.openlocfilehash: b5c6730a30ac0efba8f00abc01c0b2c26bf9e562
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 958572fc922f3bef140773369124b1c45147ad16
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072903"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583043"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Panoramica delle cassette postali inattive in Office 365
 
@@ -70,13 +70,21 @@ Se si utilizza un criterio di conservazione per creare una cassetta postale inat
 Se una conservazione associata a un caso di eDiscovery nel centro sicurezza & conformità è posizionata su una cassetta postale e quindi viene eliminata la cassetta postale o l'account Office 365 dell'utente, la cassetta postale diventa una cassetta postale inattiva. However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. Inoltre, non è possibile creare un blocco di eDiscovery basato sul tempo. Questo significa che il contenuto di una cassetta postale inattiva viene conservato per sempre o fino a quando il blocco non viene rimosso e la cassetta postale inattiva viene eliminata. Therefore, we recommend using a Litigation Hold or an Office 365 retention policy for inactive mailboxes.
   
 Per ulteriori informazioni sui casi di eDiscovery e sulle esenzioni, vedere [eDiscovery Cases](ediscovery-cases.md).
-  
+
 ## <a name="inactive-mailboxes-and-office-365-labels"></a>Le cassette postali inattive e le etichette di Office 365
 
 Le etichette in Office 365 consentono di classificare i dati della posta elettronica nell'organizzazione per governance e di applicare le regole di conservazione in base a tale classificazione. Un'etichetta può essere applicata a un elemento di posta elettronica manualmente dagli utenti o automaticamente dagli amministratori e a un elemento di posta elettronica può essere assegnata una sola etichetta. Se a un singolo elemento di posta elettronica della cassetta postale di un utente è assegnata un'etichetta (ed è configurata per conservare o conservare e quindi eliminare l'elemento) e la cassetta postale o l'account di Office 365 dell'utente viene eliminato, la cassetta postale diventa una cassetta postale inattiva. Come per i blocchi dei casi di eDiscovery, non è consigliabile utilizzare le etichette per rendere inattiva una cassetta postale. Pertanto, è consigliabile usare il blocco per controversia legale o un criterio di conservazione di Office 365. Nel caso di etichette, è possibile che non si renda conto che è stata applicata un'etichetta a un elemento di posta elettronica e quindi si rende involontariamente una cassetta postale inattiva quando si elimina l'account dell'utente. 
   
 Per ulteriori informazioni, vedere [Panoramica delle etichette in Office 365](labels.md).
   
+## <a name="inactive-mailboxes-and-auto-expanding-archives"></a>Cassette postali inattive e archivi in espansione automatica
+
+Non è possibile ripristinare o ripristinare una cassetta postale inattiva configurata con un archivio in espansione automatica. Nei casi in cui è necessario ripristinare i dati da una cassetta postale inattiva con un archivio in espansione automatica, si consiglia di utilizzare lo strumento di ricerca contenuto per esportare i dati dalla cassetta postale e quindi importarli in un'altra cassetta postale. Per istruzioni dettagliate su come eseguire la ricerca in una cassetta postale inattiva ed esportare i risultati della ricerca, vedere:
+
+- [Ricerca contenuto in Office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search)
+
+- [Esportare i risultati della ricerca contenuto](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)
+
 ## <a name="inactive-mailboxes-and-exchange-mrm-retention-policies"></a>Le cassette postali inattive e i criteri di conservazione di Exchange MRM
 
 Se un criterio di conservazione di Exchange (la funzionalità di gestione dei record di messaggistica, o di messaggistica istantanea in Exchange Online) è stato applicato alla cassetta postale quando è stato reso inattivo, tutti i criteri di eliminazione (ovvero i tag di conservazione configurati con un'azione di conservazione **Delete** ) continueranno a essere elaborati nella cassetta postale inattiva. Questo significa che gli elementi che sono contrassegnati con un criterio di eliminazione verranno spostati nella cartella Elementi ripristinabili quando scade il periodo di conservazione. Questi elementi vengono eliminati dalla cassetta postale inattiva quando scade la durata di attesa. Se la durata di attesa non è specificata per la cassetta postale inattiva, gli elementi della cartella Recupera elementi verranno conservati all'infinito. 

@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: 8a64b92e8191000be2767f498fbaee179c3b9e69
-ms.sourcegitcommit: 30ff011e5e8ba51c7ccc7e5fa9cd25aeca472acd
+ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
+ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41678924"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42587281"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
@@ -62,8 +62,8 @@ Le funzionalità di protezione da posta indesiderata, anti-malware e anti-phishi
 |MarkAsSpamBulkMail|Attivato|Attivato|Questa impostazione è disponibile solo in PowerShell|
 
 Nei criteri di protezione da posta indesiderata sono presenti diversi altri parametri denominati Advanced Spam Filter (ASF) in fase di divenire obsoleto. Altre informazioni sulle sequenze temporali per l'ammortamento di queste caratteristiche verranno comunicate al di fuori di questo argomento.
- 
- Si consiglia di disattivare **queste impostazioni per i livelli** standard e rigorosi:
+
+Si consiglia di disattivare **queste impostazioni per i livelli** standard e rigorosi:
 
 |Nome della funzionalità di sicurezza|Commenti|
 |---------|---------|
@@ -145,10 +145,9 @@ I clienti di EOP ottengono un anti-phishing di base come descritto in precedenza
 |Abilitare la protezione anti-spoofing|Attivato|Attivato||
 |Abilitazione del mittente non autenticato (tagging)|Attivato|Attivato||
 |Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio|Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari|Mettere in quarantena il messaggio||
-|EnableAuthenticationSafetyTip|True|True|Questa impostazione è disponibile solo in PowerShell|
-|EnableAuthenticationSoftPassSafetyTip|False|True|Questa impostazione è disponibile solo in PowerShell|
 |EnableSuspiciousSafetyTip|False|True|Questa impostazione è disponibile solo in PowerShell|
 |TreatSoftPassAsAuthenticated|True|False|Questa impostazione è disponibile solo in PowerShell|
+
 
 |Nome della funzionalità di sicurezza delle impostazioni avanzate|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|

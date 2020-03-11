@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Informazioni su come gli utenti utilizzano le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
-ms.openlocfilehash: 759c944bc72c39d1fd118dcb1b3515b5ede79687
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+description: Informazioni su come gli utenti lavorano con le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
+ms.openlocfilehash: 41d4231b163d85b55ed0cd68ffb551f67d30827a
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42548189"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583153"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
 
@@ -118,6 +118,34 @@ Per informazioni sulle caratteristiche supportate dai client di Azure Informatio
 I modelli di [protezione](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)definiti dall'amministratore, ad esempio quelli definibili per la crittografia dei messaggi di Office 365, non sono visibili nelle app di Office quando si utilizza l'etichettatura incorporata. Questa esperienza semplificata indica che non è necessario selezionare un modello di protezione, perché le stesse impostazioni sono incluse con le etichette di riservatezza che hanno la crittografia abilitata.
 
 Se è necessario convertire i modelli di protezione esistenti in etichette, utilizzare il portale di Azure e le istruzioni seguenti: [per convertire i modelli in etichette](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels).
+
+## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>Opzioni di Information Rights Management (IRM) e etichette di riservatezza
+
+Le etichette di riservatezza configurate per applicare la crittografia consentono di rimuovere la complessità degli utenti per specificare le proprie impostazioni di crittografia. In molte app di Office, queste singole impostazioni di crittografia possono essere configurate manualmente dagli utenti utilizzando le opzioni di Information Rights Management (IRM). Ad esempio, per le app di Windows:
+
+- Per un documento: **file** > **info** > **Proteggi documento** > **limitare l'accesso**
+- per un messaggio di posta elettronica: dalla scheda **opzioni** > **crittografare** 
+  
+Quando gli utenti inizialmente etichettano un documento o un messaggio di posta elettronica, possono sempre ignorare le impostazioni di configurazione dell'etichetta con le rispettive impostazioni di crittografia. Ad esempio:
+
+- Un utente applica l'etichetta **riservata \ All Employees** a un documento e questa etichetta è configurata per applicare le impostazioni di crittografia per tutti gli utenti dell'organizzazione. Questo utente configura quindi manualmente le impostazioni di IRM per limitare l'accesso a un utente esterno all'organizzazione. Il risultato finale è un documento contrassegnato come **riservato \ tutti i dipendenti** e crittografati, ma gli utenti dell'organizzazione non possono aprirlo come previsto.
+
+- Un utente applica l'etichetta **riservata \ Recipients only** a un messaggio di posta elettronica e questo messaggio di posta elettronica è configurato per applicare l'impostazione di crittografia non **inoltrare**. Questo utente configura quindi manualmente le impostazioni di IRM in modo che il messaggio di posta elettronica non sia limitato. Il risultato finale è che il messaggio di posta elettronica può essere inoltrato dai destinatari, nonostante l'etichetta **riservata \ solo Recipients** .
+
+- Un utente applica l'etichetta **generale** a un documento e questa etichetta non è configurata per l'applicazione della crittografia. Questo utente configura quindi manualmente le impostazioni di IRM per limitare l'accesso al documento. Il risultato finale è un documento che è etichettato come **generale** , ma che applica anche la crittografia in modo che alcuni utenti non possano aprirlo come previsto.
+
+Se il documento o la posta elettronica è già contrassegnata, un utente può eseguire una o più delle seguenti azioni se il contenuto non è già crittografato oppure ha l'esportazione o il controllo completo dell' [utilizzo](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) . 
+
+Per un'esperienza di etichetta più coerente con relazioni significative, fornire etichette appropriate e linee guida per gli utenti di applicare etichette esclusive. Ad esempio:
+
+- Per i casi di eccezione in cui gli utenti devono assegnare autorizzazioni proprie, fornire etichette che [consentono agli utenti di assegnare le proprie autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions). 
+
+- Invece di rimuovere manualmente la crittografia dopo la selezione di un'etichetta che applica la crittografia, specificare una sottoetichetta alternativa quando gli utenti necessitano di un'etichetta con la stessa classificazione, ma non la crittografia. Ad esempio:
+    - **Riservata \ tutti i dipendenti**
+    - **Riservata \ chiunque (nessuna crittografia)**
+
+> [!NOTE]
+> Se gli utenti rimuovono manualmente la crittografia da un documento etichettato archiviato in SharePoint o OneDrive e sono state [abilitate le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), la crittografia dell'etichetta verrà ripristinata automaticamente al successivo accesso o download del documento. 
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>Applicare etichette di riservatezza a file, messaggi di posta elettronica e allegati
 

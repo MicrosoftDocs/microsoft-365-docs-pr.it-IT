@@ -17,22 +17,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 0f7c2c59327874d279872d4fd9bb7d0b9d6eb863
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: ba65624d0c7a67eb4a5be55a7f3e08c217039e83
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410033"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583143"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)
 
 Prima di questa anteprima, quando sono state applicate etichette di riservatezza che includono la crittografia per i file di Office archiviati in SharePoint e OneDrive, il servizio non è in grado di elaborare il contenuto di tali file. La CoAuthoring, la eDiscovery, la prevenzione della perdita di dati, la ricerca, l'approfondimento e altre funzionalità di collaborazione non hanno funzionato in queste circostanze. Questa anteprima consente di abilitare queste funzionalità per i file nuovi e modificati che dispongono di un'etichetta di riservatezza applicata che include la crittografia con una chiave basata su cloud:
 
-- SharePoint riconosce le etichette di riservatezza applicate ai file di Word, Excel e PowerPoint in SharePoint e OneDrive: mentre il file è archiviato in SharePoint, la crittografia da Azure Information Protection viene rimossa in modo che il contenuto del file possa essere elaborato e le impostazioni di crittografia dell'etichetta vengono quindi riapplicate quando il file viene scaricato. Per informazioni su come proteggere i documenti prima che vengano scaricati, vedere [crittografia dei dati in OneDrive for business e SharePoint Online](data-encryption-in-odb-and-spo.md).
- 
-- Affinché SharePoint decrittografia il file su caricamento, l'utente che carica il file contrassegnato e crittografato deve disporre dei diritti di utilizzo per visualizzare almeno il file. SharePoint non decrittografa i file che l'utente non è in grado di aprire all'esterno di SharePoint.
+- SharePoint riconosce le etichette di riservatezza applicate ai file di Word, Excel e PowerPoint in SharePoint e OneDrive: mentre il file è archiviato in SharePoint, la crittografia da Azure Information Protection viene rimossa in modo che il contenuto del file possa essere elaborato. Per informazioni su come proteggere i documenti mentre sono archiviati in SharePoint, vedere [crittografia dei dati in OneDrive for business e SharePoint Online](data-encryption-in-odb-and-spo.md).
 
-- Quando si scarica o si accede al file da SharePoint o OneDrive, l'etichetta di riservatezza e tutte le impostazioni di crittografia vengono riapplicate con il file e tali impostazioni restano applicate laddove il file viene salvato.
+- Quando si scarica o si accede a questo file da SharePoint o OneDrive, l'etichetta di riservatezza e tutte le impostazioni di crittografia dell'etichetta vengono riapplicate con il file e tali impostazioni vengono applicate ovunque venga salvato il file. A causa di questo comportamento, accertarsi di fornire istruzioni all'utente per l'utilizzo esclusivo delle etichette per la protezione dei documenti. Per ulteriori informazioni, vedere [Opzioni di Information Rights Management (RIM) e etichette di riservatezza](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
+
+- Affinché SharePoint elimini la crittografia dal file al momento del caricamento, l'utente che carica il file contrassegnato e crittografato deve disporre dei diritti di utilizzo per visualizzare almeno il file. SharePoint non rimuove la crittografia dai file se l'utente non è in grado di aprirli all'esterno di SharePoint.
 
 - Utilizzare Office sul Web (Word, Excel, PowerPoint) per aprire e modificare i file di Office che dispongono di etichette di riservatezza che applicano la crittografia. Le autorizzazioni assegnate alla crittografia vengono applicate. Con Word sul Web, è possibile utilizzare l'etichettatura automatica anche quando si modificano questi documenti.
 
@@ -89,6 +89,8 @@ Per questa anteprima, utilizzare la versione di OneDrive Sync App 19.002.0121.00
 - Le app desktop di Office e le app per dispositivi mobili non supportano la CoAuthoring. Queste app continuano invece a aprire file in modalità di modifica esclusiva.
 
 - Se un documento etichettato viene caricato in SharePoint e l'etichetta ha applicato la crittografia utilizzando un account di un nome dell'entità servizio, il documento non può essere aperto in Office sul Web. Gli scenari di esempio includono la sicurezza delle app cloud di Microsoft e un file inviato ai team tramite posta elettronica.
+
+- Gli utenti possono sperimentare il salvataggio dei problemi dopo l'esecuzione offline o in modalità Sleep quando invece di usare Office per il Web, utilizzano le app desktop e per dispositivi mobili per Word, Excel o PowerPoint. Per questi utenti, quando riprendono la sessione dell'app di Office e tentano di salvare le modifiche, visualizzano un messaggio di errore di caricamento con un'opzione per salvare una copia anziché salvare il file originale. 
 
 - I documenti che sono stati crittografati nei modi seguenti non possono essere aperti in Office sul Web:
     - Crittografia che utilizza una chiave locale ("mantenere la propria chiave" o HYOK)

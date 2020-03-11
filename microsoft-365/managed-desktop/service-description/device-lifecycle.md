@@ -5,16 +5,16 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 2d6dffad4b4d96e065dd5163ea702c91c27520fb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b65724a1eee35149d473fb69ff646b5ef5751b2c
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085839"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583173"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Ciclo di vita del prodotto Microsoft Managed Desktop
 
-Vantaggi per gli utenti finali di Microsoft Managed Desktop garantire che utilizzino sempre dispositivi che offrono le migliori funzionalità di prestazioni, affidabilità, progettazione e sicurezza (come il supporto di funzionalità come Windows Hello). Per ottenere questo risultato, Microsoft Managed Desktop gestisce un breve catalogo di [dispositivi approvati](device-list.md)continuamente aggiornati. 
+Microsoft Managed Desktop beneficia degli utenti finali assicurando che utilizzino sempre dispositivi che offrono le migliori funzionalità di prestazioni, affidabilità, progettazione e sicurezza (come il supporto di funzionalità come Windows Hello). Per ottenere questo risultato, Microsoft Managed Desktop gestisce un breve catalogo di [dispositivi approvati](device-list.md)continuamente aggiornati. 
  
 In questo argomento vengono illustrati in dettaglio il ciclo di vita dei dispositivi che vengono aggiunti e rimossi dal catalogo approvato. 
 
@@ -31,7 +31,7 @@ In questo argomento vengono illustrati in dettaglio il ciclo di vita dei disposi
 - [Pensionamento del prodotto](#product-retirement)
 
 
-La sequenza intera è illustrata in questa figura:
+Nella figura seguente viene illustrata l'intera sequenza:
 
 ![Timeline del ciclo di vita: a partire dalla disponibilità generale del prodotto, la "disponibilità primaria" è durata due anni. Durante questo periodo la finestra di certificazione termina e ad un certo punto il dispositivo è onboarded. Al termine della disponibilità primaria, il prodotto viene archiviato e il "periodo di tolleranza" di tre anni inizia. A partire da quando il dispositivo è onboarded, ha un periodo di tre anni di utilizzo fino a quando non viene rimosso dalla gestione. Al termine del periodo di tolleranza, il prodotto viene rimosso dal catalogo.](../../media/non-dark1-edits.PNG)
 
@@ -40,7 +40,7 @@ I prodotti rimangono nel catalogo per un massimo di 24 mesi, ma i <em>dispositiv
 In questa tabella vengono riportate le date di esempio per un prodotto teorico:
 
 
-|Prodotto  |Data approvazione  |Fine della disponibilità principale  |Fine di eligiblity  |
+|Prodotto  |Data approvazione  |Fine della disponibilità principale  |Fine dell'idoneità  |
 |---------|---------|---------|---------|
 |Computer portatile Fabrikam    | 1/1/2017 | 6/1/2019 | 6/1/2022 |
 |Computer portatile adatum   | 1/1/2018 | 6/1/2020 | 6/1/2023  |
@@ -64,14 +64,14 @@ Durante questa fase, il team di ingegneri di Microsoft Managed Desktop esegue la
   
 Microsoft Managed Desktop valuterà solo i dispositivi per la certificazione entro i primi 6 mesi di disponibilità. In questo modo, è consigliabile concentrare sempre i propri sforzi sull'hardware di ultima generazione.
  
-Al termine di questa fase, Microsoft Managed Desktop aggiunge il prodotto all' [elenco approvato](device-list.md), rilasciando in modo efficace il prodotto per le registrazione dei clienti. Indipendentemente dalla data in cui un dispositivo è certificato, la **Data di approvazione** è di nuovo aggiornata alla data di disponibilità generale dei prodotti. 
+Al termine di questa fase, Microsoft Managed Desktop aggiunge il prodotto all' [elenco approvato](device-list.md), rilasciando in modo efficace il prodotto per le registrazione dei clienti. Indipendentemente dalla data in cui un dispositivo è certificato, la **Data di approvazione** è tornata datata alla data di disponibilità generale del prodotto. 
 
 
 ## <a name="product-primary-availability-period"></a>Periodo di disponibilità principale del prodotto
 
 Questo periodo è il fulcro della disponibilità del prodotto:
 
-![sequenza temporale di ciclo di vita che Mostra disponibilità primario](../../media/non-dark4-edits.PNG)
+![sequenza temporale del ciclo di vita che mostra la disponibilità principale](../../media/non-dark4-edits.PNG)
 
 Qualsiasi dispositivo registrato durante questo periodo riceve tutti i tre anni di supporto di Microsoft Managed Desktop (come mostrato dalla sequenza temporale blu). Questo periodo dura fino a quando una data di fine non è impostata su 24 mesi dalla data di disponibilità generale.
 
@@ -88,7 +88,7 @@ Se si è acquistato di recente un numero di dispositivi approvati prima di effet
 
 L'esempio di laptop Fabrikam dalla tabella precedente illustra questa situazione: 
 
-|Prodotto  |Data approvazione  |Fine della disponibilità principale  |Fine di eligiblity  |
+|Prodotto  |Data approvazione  |Fine della disponibilità principale  |Fine dell'idoneità  |
 |---------|---------|---------|---------|
 |Computer portatile Fabrikam    | 6/1/2017 | 6/1/2019 | 6/1/2022 |
 
@@ -105,21 +105,10 @@ Il pensionamento dei prodotti è la fase finale del ciclo di vita. In questa fas
 
 Un dispositivo non è in conformità quando è trascorso il relativo Window consentita per la gestione di Microsoft Managed Desktop. Questo problema si verifica quando il dispositivo ha raggiunto i tre anni di gestione o quando il tipo di prodotto viene rimosso dal catalogo del dispositivo, a seconda di quale si verifica per primo. È consigliabile utilizzare sempre i cicli di acquisizione in modo che i nuovi dispositivi vengano distribuiti prima che i dispositivi correnti siano fuori conformità.
 
-Il team di Microsoft Managed Desktop sa che i cicli di approvvigionamento sono lunghi e pianificati in merito ai budget a esecuzione prolungata. Per essere sempre a conoscenza dello stato della popolazione del dispositivo, è disponibile un [sito Web](https://aka.ms/mmdportal) in cui sono elencati tutti i dispositivi in gestione, la data di pensionamento futura e uno stato che ne indica la conformità. Questo significa che le informazioni più recenti riguardano l'età del dispositivo e che è possibile sfruttare il report in qualsiasi ciclo di pianificazione degli appalti. 
+Il team di Microsoft Managed Desktop sa che i cicli di approvvigionamento sono lunghi e pianificati in merito ai budget a esecuzione prolungata. Per assicurarsi di essere sempre a conoscenza dello stato della popolazione del dispositivo, viene fornito un [sito Web](https://aka.ms/mmdportal) che elenca tutti i dispositivi in gestione, la sua età e uno stato che ne indica la conformità. Questo significa che le informazioni più aggiornate sull'età del dispositivo sono sempre disponibili e che è possibile utilizzare il report in qualsiasi ciclo di pianificazione degli appalti. 
 
 
-Inoltre, verranno effettuate le seguenti azioni automatiche per garantire che i nuovi dispositivi vengano distribuiti in tempo:
 
-
-|Sequenza temporale  |Azione  |
-|---------|---------|
-|T-90     | Il dispositivo verrà segnalato come **scaduto a breve**, con un indicatore giallo nel sito Web inventario dispositivi.  |
-|T-60     | Il dispositivo verrà contrassegnata come **scaduta** con un indicatore rosso nel sito Web inventario dispositivi.       |
-|T-30     | Verrà visualizzato un messaggio al portale di amministrazione per dire che i dispositivi sono imminenti in uscita dalla conformità.       |
-|0     |  Modificheremo il portale di amministrazione per dire che i dispositivi sono ora scaduti gli amministratori di reindirizzamento per atterrare prima nell'elenco dei dispositivi.       |
-|T + 30     |  La funzionalità di amministrazione del portale verrà ridotta fino a quando non vengono distribuiti nuovi dispositivi.       |
-|T + 60     |  La funzionalità di amministrazione del portale verrà ridotta fino a quando non vengono distribuiti nuovi dispositivi.       |
-|T + 90     |  Il dispositivo viene rimosso dalla gestione. A questo punto, il dispositivo è solo la propria responsabilità e non è più considerato sicuro né aggiornato. Anche il dispositivo sarà in uno stato sconosciuto poiché ogni provider di servizi di configurazione controlla le proprie impostazioni.|
 
 
 
