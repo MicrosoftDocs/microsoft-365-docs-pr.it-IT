@@ -15,16 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni sul diverso impatto dei servizi cloud inclusi nell'offerta IT sulla pianificazione e l'implementazione della continuità aziendale.
-ms.openlocfilehash: ced840852aeef9949d005e431125ad2d659cba33
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2236304647275f5e2b7ddde3af1804ba749254b0
+ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597003"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42588719"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Gestione della continuità aziendale della società con i servizi cloud
 
-Nel quadro della trasformazione digitale dell'organizzazione è necessario rivedere e aggiornare i piani di ripristino di emergenza e di continuità aziendale per tenere conto dei processi aziendali che dipendono dai servizi cloud di Microsoft 365. I servizi cloud di Microsoft 365, come Exchange Online, SharePoint Online e OneDrive for Business, sono progettati e gestiti in modo da offrire un'elevata resilienza. Nonostante tali caratteristiche di resilienza non è possibile evitare eventi imprevisti relativi ai servizi. In tali circostanze è opportuno che l'organizzazione sia preparata e predisponga una strategia di continuità aziendale ben definita.
+Nel quadro della trasformazione digitale dell'organizzazione è necessario rivedere e aggiornare i piani di ripristino di emergenza e di continuità aziendale per tenere conto dei processi aziendali che dipendono dai servizi cloud di Microsoft 365. I servizi cloud di Microsoft 365, come Exchange Online, SharePoint Online e OneDrive for Business, sono progettati e gestiti in modo da offrire un'elevata resilienza.
+
+> [!NOTE]
+> Per altre informazioni sul piano dell'EBCM di Microsoft, consultare il [whitepaper Enterprise Business Continuity Management Program (Programma di gestione della continuità aziendale)](https://go.microsoft.com/fwlink/?linkid=2121521). È necessario l'accesso.
+
+Nonostante tali caratteristiche di resilienza non è possibile evitare eventi imprevisti relativi ai servizi. In tali circostanze è opportuno che l'organizzazione sia preparata e predisponga una strategia di continuità aziendale ben definita.
 
 Se i piani non sono stati ancora aggiornati, questa serie di argomenti consente di pianificare la strategia in modo che gli errori dei servizi si verifichino in uno stato noto. In questi argomenti sono illustrati i principali aspetti da considerare per migliorare la conformità per la continuità.
 

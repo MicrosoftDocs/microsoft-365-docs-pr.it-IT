@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 3/05/2020
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 3e9dd5c02b3502eab2d3abfe5d65b5baebe18cda
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 6707a61ae2fd9f7dddb7aa63927a53f1795b5127
+ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "42569167"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583123"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -36,7 +36,7 @@ Quando si è pronti per iniziare a proteggere i dati dell'organizzazione usando 
 
 1. **Creare le etichette.** Creare e assegnare un nome alle etichette di riservatezza in base alla tassonomia di classificazione dell'organizzazione per i diversi livelli di riservatezza del contenuto. Usare termini o nomi comuni che abbiano senso per gli utenti. Se non si ha già una tassonomia stabilita, è consigliabile iniziare con nomi di etichetta come Personale, Pubblico, Generale, Riservato ed Estremamente riservato. Sarà poi possibile usare sottoetichette per raggruppare le etichette simili per categoria. Quando si crea un'etichetta, usare il testo della descrizione comando per aiutare gli utenti a selezionare l'etichetta appropriata.
     
-    Per indicazioni più approfondite su come definire una tassonomia di classificazione, scaricare il white paper "Data Classification & Sensitivity Label Taxonomy" (Tassonomia di etichette di riservatezza e classificazione dei dati) da [Service Trust Portal](https://aka.ms/DataClassificationWhitepaper).
+    Per indicazioni più approfondite su come definire una tassonomia di classificazione, scaricare il white paper "Data Classification & Sensitivity Label Taxonomy" (Tassonomia di etichette di riservatezza e classificazione dei dati) dal [Service Trust Portal](https://aka.ms/DataClassificationWhitepaper).
 
 2. **Definire le caratteristiche di ogni etichetta.** Configurare le impostazioni di protezione che si vogliono associare a ciascuna etichetta. Ad esempio, a un contenuto con un basso grado di riservatezza (come un'etichetta "Generale") si potrebbe applicare solo un'intestazione o un piè di pagina, mentre a un contenuto con un maggiore grado di riservatezza (come un'etichetta "Riservato") si potrebbero applicare una filigrana, la crittografia e la protezione dell'endpoint.
 
@@ -55,6 +55,9 @@ Per impostazione predefinita, gli amministratori globali del tenant hanno access
 In alternativa all'utilizzo dei ruoli, è possibile creare un nuovo gruppo di ruoli e aggiungere l’**amministratore dell'etichetta di riservatezza** o la **configurazione dell’organizzazione** al gruppo. Per le istruzioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 Queste autorizzazioni sono necessarie solo per creare e configurare le etichette di riservatezza e i relativi criteri di etichetta. Non sono invece necessarie per applicare le etichette nelle app o nei servizi.
+
+> [!NOTE]
+> Il **Lettore di etichette di sensitività** è un nuovo ruolo attualmente in corso di distribuzione nei tenant e supportato inizialmente per i cmdlet di etichettatura di PowerShell e successivamente per i centri di etichettatura per amministratori.
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Scenari comuni per le etichette di riservatezza
 
