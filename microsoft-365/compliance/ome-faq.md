@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Domande su come funzionano le nuove funzionalità di protezione dei messaggi di Office 365? Controllare la risposta qui.
-ms.openlocfilehash: 032aa1dacc89aea63cf15080efb80de61e9a6f22
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8d0b65ad60365154f8a35c5afe0b71b5a50d29a8
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597813"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605311"
 ---
 # <a name="office-365-message-encryption-faq"></a>Domande frequenti su Office 365 Message Encryption
 
@@ -115,7 +115,8 @@ Sì! È possibile abilitare la crittografia per gli allegati PDF per le organizz
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-La crittografia in formato PDF consente di proteggere i documenti PDF sensibili tramite una comunicazione sicura o una collaborazione sicura. I messaggi ereditano la protezione OME del criterio di prevenzione della perdita di dati (DLP) o della regola del flusso di posta in Exchange Online. Se un utente di Outlook o Outlook sul Web collega un allegato PDF non protetto a un messaggio protetto, il messaggio eredita la protezione del messaggio. Gli utenti possono aprire solo gli allegati crittografati nelle applicazioni che supportano i file PDF protetti, ad esempio il portale OME e il Visualizzatore di informazioni di Azure Information Protection.
+La crittografia in formato PDF consente di proteggere i documenti PDF sensibili tramite una comunicazione sicura o una collaborazione sicura. Per tutti i client Outlook, i messaggi e gli allegati PDF non protetti ereditano la protezione OME del criterio di prevenzione della perdita di dati (DLP) o della regola del flusso di posta in Exchange Online. Inoltre, se un utente di Outlook sul Web allega un documento PDF non protetto e applica la protezione al messaggio, il messaggio eredita la protezione del messaggio. Gli utenti possono aprire solo gli allegati crittografati nelle applicazioni che supportano i file PDF protetti, ad esempio il portale OME e il Visualizzatore di informazioni di Azure Information Protection.
+
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Gli allegati di OneDrive for business sono supportati?
 
@@ -161,7 +162,7 @@ Non in questo momento.
 
 Sì! I messaggi crittografati sono supportati per una cassetta postale condivisa.
 
-- Gli utenti possono aprire mail protette in una mMailbox condivisa in cui la cassetta postale condivisa ha ricevuto un messaggio di posta elettronica protetto come parte di un gruppo di distribuzione.
+- Gli utenti possono aprire mail protette in una cassetta postale condivisa in cui la cassetta postale condivisa ha ricevuto un messaggio di posta elettronica protetto come parte di un gruppo di distribuzione.
 
 - Gli utenti possono visualizzare gli allegati che ereditano la protezione dai messaggi di posta elettronica quando utilizzano Outlook per Windows, Outlook per Mac e Outlook sul Web.
 

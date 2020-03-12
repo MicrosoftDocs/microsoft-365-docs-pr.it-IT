@@ -21,20 +21,20 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: "Informazioni su come condividere siti e file con utenti esterni all'organizzazione. "
-ms.openlocfilehash: cb6faf14806f950f4b9a355e9f0fcdb660ec1d82
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 83b111153389bf75a92bcc32af9563bf7432bf8a
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252722"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603993"
 ---
 # <a name="share-sites-and-files-externally"></a>Condividere siti e file con l'esterno
 
 Per collaborare con persone esterne all'organizzazione, è possibile condividere interi siti o file specifici esternamente. Se si vuole passare direttamente alla configurazione della condivisione, scegliere lo scenario che si desidera attivare:
 
 - [Collaborare con gli utenti guest a un documento](https://docs.microsoft.com/Office365/Enterprise/collaborate-on-documents)
-- [Collaborare con gli utenti guest a un sito](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-a-site)
-- [Collaborare con gli utenti guest in un team](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-a-team)
+- [Collaborare con gli utenti guest a un sito](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
+- [Collaborare con gli utenti guest in un team](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
   
 ## <a name="deciding-how-to-share-your-content"></a>Scegliere il metodo di condivisione del contenuto
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'Il modo più facile e più diffuso per iniziare a utilizzare i criteri DLP consiste nel servirsi dei modelli inclusi in Office 365. '
-ms.openlocfilehash: 818a0db46d0c2a763c1c90b585a6d7a0fd403b94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 85aa5dad9c65cd222d012bf24ea0234ca7534838
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077317"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604183"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
@@ -38,7 +38,7 @@ A volte i clienti respingono DLP perché non si considerano di avere il tipo di 
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Come vengono rilevate informazioni riservate da DLP
 
-Le informazioni riservate vengono identificate mediante un criterio di espressione regolare (RegEx), in combinazione con altri indicatori, ad esempio la prossimità di determinate parole chiave agli schemi corrispondenti. Un esempio è costituito da numeri di carta di credito. Un numero di carta di credito VISA ha 16 cifre. Tuttavia, tali cifre possono essere scritte in modi diversi, ad esempio 1111-1111-1111-1111, 1111 1111 1111 1111 o 1111111111111111.
+Le informazioni riservate vengono identificate mediante un criterio di espressione regolare (RegEx), in combinazione con altri indicatori come la prossimità di determinate parole chiave agli schemi di corrispondenza. Un esempio è costituito da numeri di carta di credito. Un numero di carta di credito VISA ha 16 cifre. Tuttavia, tali cifre possono essere scritte in modi diversi, ad esempio 1111-1111-1111-1111, 1111 1111 1111 1111 o 1111111111111111.
 
 Qualsiasi stringa di 16 cifre non è necessariamente un numero di carta di credito, può essere un numero di biglietto da un sistema di supporto tecnico o un numero di serie di un componente hardware. Per indicare la differenza tra un numero di carta di credito e una stringa di 16 cifre innocua, viene eseguito un calcolo (checksum) per confermare che i numeri corrispondono a un modello noto dei vari marchi di carte di credito.
 

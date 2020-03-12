@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Office 365 Advanced eDiscovery v 1.0 vengono anche ritirati entro lo stesso periodo di tempo.
-ms.openlocfilehash: 0ce85a1c73de38f0032f3e667add77a424d5486e
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.openlocfilehash: 92b6648b603286871956db64631d334df2384112
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543221"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42605324"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Pensionamento degli strumenti di eDiscovery legacy
 
@@ -170,7 +170,7 @@ Poiché queste funzionalità sono ora disponibili nel [<span class="underline">c
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Sequenza temporale
+### <a name="timeline"></a>Tempistica
 
 - 2020 aprile 1: non è possibile utilizzare **New-MailboxSearch** per creare nuove ricerche eDiscovery sul posto e archiviazioni sul posto, ma è comunque possibile utilizzare i cmdlet per l'esecuzione, la modifica e l'eliminazione delle ricerche esistenti e le esenzioni a proprio rischio. Il supporto tecnico Microsoft non fornirà più assistenza per questi tipi di ricerche e esenzioni.
 
@@ -244,7 +244,7 @@ Il cmdlet **Search-Mailbox** in Exchange Online PowerShell viene ritirato come a
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Sequenza temporale
+### <a name="timeline"></a>Tempistica
 
 -  2020 aprile 1: il cmdlet **Search-Mailbox** non sarà più disponibile e il supporto tecnico Microsoft non fornirà più assistenza.
 
@@ -278,6 +278,13 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 </td>
 </tr>
 <tr class="odd">
+<td>Eliminare messaggi di posta elettronica in blocco da una cassetta postale</td>
+<td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Configurare i criteri di archiviazione ed eliminazione per le cassette postali</span></a></p>
+<p></p></td>
+<td><p>Gli amministratori possono creare un criterio di eliminazione e archiviazione che sposta automaticamente gli elementi nella cassetta postale di archiviazione di un utente ed Elimina automaticamente gli elementi dalla cassetta postale.</p>
+</td>
+</tr>
+<tr class="even">
 <td>Copiare i risultati della ricerca in una cassetta postale di individuazione</td>
 <td> </td>
 <td>Non è disponibile una sostituzione diretta per questa funzionalità poiché non fornisce l'accesso a tutti i servizi di Microsoft 365. Vedere le domande frequenti nella sezione <strong>cmdlet *-MailboxSearch</strong> per soluzioni alternative. </td>
@@ -299,7 +306,7 @@ Queste tre API di servizi Web Exchange sono utilizzate dalla caratteristica eDis
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Sequenza temporale
+### <a name="timeline"></a>Tempistica
 
 - 2020 aprile 1: le operazioni GetSearchableMailboxes, SetHoldOnMailboxes e GetHoldOnMailboxes non saranno più disponibili e il supporto tecnico Microsoft non fornirà più assistenza.
 
@@ -319,7 +326,7 @@ A questo punto, si consiglia di iniziare a eseguire la transizione del flusso di
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Sequenza temporale
+### <a name="timeline"></a>Tempistica
 
 - 2020 aprile 1: non è possibile creare nuovi casi avanzati di eDiscovery v 1.0.
 

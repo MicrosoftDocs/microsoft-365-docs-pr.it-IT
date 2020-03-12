@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: ba65624d0c7a67eb4a5be55a7f3e08c217039e83
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 1ef4a91206c676be0404e5e4e8c7fdf02cedf089
+ms.sourcegitcommit: 794f2f416a258157cb44d962b5be6a348ee20fea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583143"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42594018"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)
 
@@ -30,7 +30,7 @@ Prima di questa anteprima, quando sono state applicate etichette di riservatezza
 
 - SharePoint riconosce le etichette di riservatezza applicate ai file di Word, Excel e PowerPoint in SharePoint e OneDrive: mentre il file è archiviato in SharePoint, la crittografia da Azure Information Protection viene rimossa in modo che il contenuto del file possa essere elaborato. Per informazioni su come proteggere i documenti mentre sono archiviati in SharePoint, vedere [crittografia dei dati in OneDrive for business e SharePoint Online](data-encryption-in-odb-and-spo.md).
 
-- Quando si scarica o si accede a questo file da SharePoint o OneDrive, l'etichetta di riservatezza e tutte le impostazioni di crittografia dell'etichetta vengono riapplicate con il file e tali impostazioni vengono applicate ovunque venga salvato il file. A causa di questo comportamento, accertarsi di fornire istruzioni all'utente per l'utilizzo esclusivo delle etichette per la protezione dei documenti. Per ulteriori informazioni, vedere [Opzioni di Information Rights Management (RIM) e etichette di riservatezza](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
+- Quando si scarica o si accede a questo file da SharePoint o OneDrive, l'etichetta di riservatezza e tutte le impostazioni di crittografia dell'etichetta vengono riapplicate con il file e tali impostazioni vengono applicate ovunque venga salvato il file. A causa di questo comportamento, accertarsi di fornire istruzioni all'utente per l'utilizzo esclusivo delle etichette per la protezione dei documenti. Per ulteriori informazioni, vedere [Opzioni di Information Rights Management (IRM) e etichette di riservatezza](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
 
 - Affinché SharePoint elimini la crittografia dal file al momento del caricamento, l'utente che carica il file contrassegnato e crittografato deve disporre dei diritti di utilizzo per visualizzare almeno il file. SharePoint non rimuove la crittografia dai file se l'utente non è in grado di aprirli all'esterno di SharePoint.
 

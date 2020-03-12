@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
 description: 'Riepilogo: Descrizione della crittografia per Skype, OneDrive, SharePoint e Exchange Online.'
-ms.openlocfilehash: cffaab87049f466794706ad6537e663e43d5de91
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4a8dbc2fbe204b09b30eee4ed7ce2136d0ec69f9
+ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601843"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604163"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Crittografia di Office 365 per Skype for business, OneDrive for business, SharePoint Online ed Exchange Online
 
@@ -76,7 +76,7 @@ Gli elementi di elenco sono parti più piccole dei dati del cliente creati ad-ho
 
 In OneDrive for Business e SharePoint Online, esistono due scenari in cui i dati entrano ed escono dai data center.
 
-- **Comunicazione client con il server** -comunicazione con OneDrive for business su Internet utilizza connessioni SSL/TLS. Tutte le connessioni SSL vengono stabilite mediante chiavi a 2048 bit.
+- **Comunicazione client con il server** -comunicazione a SharePoint Online e OneDrive for business su Internet utilizza connessioni TLS.
 - **Spostamento dei dati tra i datacenter** : il motivo principale per spostare i dati tra i datacenter è la replica geografica per abilitare il ripristino di emergenza. Ad esempio, i registri transazioni di SQL Server e le differenze dell'archiviazione BLOB viaggiano lungo questa pipe. Mentre questi dati vengono già trasmessi utilizzando una rete privata, sono ulteriormente protetti mediante la migliore crittografia.
 
 ## <a name="exchange-online"></a>Exchange Online
