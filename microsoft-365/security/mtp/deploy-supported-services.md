@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2b0e033bb80fd73d5b5194bd59ab9c9f14a644b3
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 1c06562cc0ff8cdc43efb3a8f62924c435883408
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569046"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610563"
 ---
 # <a name="deploy-supported-services"></a>Distribuire i servizi supportati
 
@@ -71,7 +71,7 @@ La distribuzione di ogni servizio in genere richiede il provisioning del tenant 
 
 | Servizio | Istruzioni per il provisioning | Configurazione iniziale |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | [Convalidare il provisioning delle licenze e il set up completo per Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/licensing) | *Vedere Provisioning instructions* |
+| Microsoft Defender ATP | [Guida alla distribuzione di ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *Vedere Provisioning instructions* |
 | Office 365 ATP | *None, provisioning con Office 365* | [Configurare i criteri ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [Guida introduttiva: creare l'istanza di Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *Vedere Provisioning instructions* |
 | Microsoft Cloud App Security | *Nessuna* | [Guida introduttiva: Introduzione a Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |

@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Sintesi: istruzioni dettagliate per distribuire un nuovo sito del team di SharePoint Online isolato.'
-ms.openlocfilehash: 39cf33ce3314e2eb0cd313ff0382f50d7cb8487a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 07867b4646926468f808f8f34086cf9267d7ab7b
+ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088800"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42612616"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Distribuire un sito del team di SharePoint Online isolato
 
@@ -72,13 +72,13 @@ I visualizzatori del sito potrebbero includere la direzione esecutiva, i consule
     
 4. Nel **nuovo gruppo** Blade:
     
-  - Selezionare **Sicurezza** in **Tipo di gruppo**.
-    
-  - Digitare il nome del gruppo in **nome**.
-    
-  - Digitare una descrizione del gruppo nella **Descrizione del gruppo**.
-    
-  - Selezionare **Assegnato** in **Tipo di appartenenza**.
+    - Selezionare **Sicurezza** in **Tipo di gruppo**.
+
+    - Digitare il nome del gruppo in **nome**.
+
+    - Digitare una descrizione del gruppo nella **Descrizione del gruppo**.
+
+    - Selezionare **Assegnato** in **Tipo di appartenenza**.
     
 5. Fare clic su **Crea** e quindi chiudere il pannello **Gruppo**.
     
@@ -155,59 +155,63 @@ Di seguito è configurata la configurazione risultante con i tre gruppi di acces
   
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Fase 2: creare e configurare il sito del team isolato
 
-In questa fase, viene creato il sito di SharePoint Online isolato e vengono configurate le autorizzazioni per i livelli di autorizzazione di SharePoint Online predefiniti affinché vengano utilizzati i nuovi gruppi di accesso basati su Azure AD.
+In questa fase, viene creato il sito di SharePoint Online isolato e vengono configurate le autorizzazioni per i livelli di autorizzazione di SharePoint Online predefiniti affinché vengano utilizzati i nuovi gruppi di accesso basati su Azure AD. Per impostazione predefinita, i nuovi siti del team includono un gruppo di Office 365 e altre risorse correlate, ma in questo caso verrà creato un sito del team senza un gruppo di Office 365. In questo modo è possibile gestire le autorizzazioni completamente tramite SharePoint.
   
 Creare innanzitutto il sito del team di SharePoint Online seguendo questa procedura.
   
-1. Accedere all'interfaccia di amministrazione con un account che verrà usato anche per amministrare il sito del team di SharePoint Online (un amministratore di SharePoint Online). Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 con un account che verrà utilizzato anche per amministrare il sito del team di SharePoint Online (un amministratore di SharePoint Online). Per informazioni, vedere [Dove accedere a Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+
+2. Nell'interfaccia di amministrazione di Microsoft 365, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
+
+3. Nell'interfaccia di amministrazione di SharePoint espandere **siti** e fare clic su **siti attivi**.
+
+4. Fare clic su **Crea**e quindi scegliere **altre opzioni**.
+
+5. Nell'elenco **scegliere un modello** scegliere sito del **Team**.
+   
+6. In **nome sito**Digitare un nome per il sito del team. 
     
-2. Nell'elenco dei riquadri fare clic su **SharePoint**.
-    
-3. Nella nuova **scheda SharePoint** del browser fare clic su **+ Crea sito**.
-    
-4. Nella pagina **Crea sito** fare clic su **Sito del team**.
-    
-5. In **nome sito**Digitare un nome per il sito del team. 
-    
-6. Nella **Descrizione del sito del team** Digitare una descrizione facoltativa dello scopo del sito.
-    
-7. In **Impostazioni privacy** selezionare **Private - only members can access this site** (Privato: solo i membri possono accedere a questo sito) e quindi fare clic su **Avanti**.
-    
-8. Nel riquadro **Who do you want to add?** (Chi si desidera aggiungere?) fare clic su **Fine**.
+7. In **amministratore principale**, digitare l'account con cui si è connessi.
+ 
+8. Fare clic su **Fine**.
     
 Successivamente, dal nuovo sito del team di SharePoint Online configurare le autorizzazioni.
   
 1. Nella barra degli strumenti fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
+
+2. In **condivisione siti**fare clic su **cambia come possono essere condivisi i membri**.
+
+3. Scegliere gli **unici proprietari di siti possono condividere file, cartelle e il sito**.
+
+4. Impostare **Consenti le richieste di accesso** su **disattivato**.
+
+5. Fare clic su **Salva**.
     
-2. Nel riquadro **Autorizzazioni sito** fare clic su **Advanced permissions settings** (Impostazioni autorizzazioni avanzate).
+6. Nel riquadro **autorizzazioni** , fare clic su **Impostazioni avanzate autorizzazioni**.
     
-3. Nella nuova scheda **Autorizzazioni** del browser fare clic su **Impostazioni richieste di accesso**.
+7. Nella scheda **autorizzazioni** del browser fare clic ** \<su nome sito> membri** nell'elenco.
     
-4. Nella finestra di dialogo **Impostazioni richieste di accesso** deselezionare **Consenti ai membri di condividere il sito e singoli file e cartelle** e **Consenti richieste di accesso** (le tre caselle di controllo devono essere deselezionate), quindi fare clic su **OK**.
+8. In **Utenti e gruppi** fare clic su **Nuovo**.
     
-5. Nella scheda **autorizzazioni** del browser fare clic ** \<su nome sito> membri** nell'elenco.
+9. Nella finestra di dialogo **Condividi**, digitare il nome del gruppo di Azure AD dei membri del sito di accesso, selezionarlo e fare clic su **Condividi**.
     
-6. In **Utenti e gruppi** fare clic su **Nuovo**.
+10. Fare clic sul pulsante Indietro del browser.
     
-7. Nella finestra di dialogo **Condividi**, digitare il nome del gruppo di Azure AD dei membri del sito di accesso, selezionarlo e fare clic su **Condividi**.
+11. Fare clic su ** \<nome sito> proprietari** nell'elenco.
     
-8. Fare clic sul pulsante Indietro del browser.
+12. In **Utenti e gruppi** fare clic su **Nuovo**.
     
-9. Fare clic su ** \<nome sito> proprietari** nell'elenco.
+13. Nella finestra di dialogo **Condividi**, digitare il nome del gruppo di accesso degli amministratori del sito, selezionarlo e fare clic su **Condividi**.
     
-10. In **Utenti e gruppi** fare clic su **Nuovo**.
+14. Fare clic sul pulsante Indietro del browser.
     
-11. Nella finestra di dialogo **Condividi**, digitare il nome del gruppo di accesso degli amministratori del sito, selezionarlo e fare clic su **Condividi**.
+15. Fare clic su ** \<nome sito> visitatori** nell'elenco.
     
-12. Fare clic sul pulsante Indietro del browser.
+16. In **Utenti e gruppi** fare clic su **Nuovo**.
     
-13. Fare clic su ** \<nome sito> visitatori** nell'elenco.
+17. Nella finestra di dialogo **Condividi**, digitare il nome del gruppo di Azure AD dei visualizzatori del sito di accesso, selezionarlo e fare clic su **Condividi**.
     
-14. In **Utenti e gruppi** fare clic su **Nuovo**.
-    
-15. Nella finestra di dialogo **Condividi**, digitare il nome del gruppo di Azure AD dei visualizzatori del sito di accesso, selezionarlo e fare clic su **Condividi**.
-    
-16. Chiudere la scheda **Autorizzazioni** del browser.
+18. Chiudere la scheda **Autorizzazioni** del browser.
     
 I risultati di queste impostazioni delle autorizzazioni sono i seguenti:
   

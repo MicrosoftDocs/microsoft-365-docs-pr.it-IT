@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Informazioni su come utilizzare IRM di SharePoint Online tramite Microsoft Azure Active Directory Rights Management Services (RMS) per proteggere gli elenchi e le raccolte documenti di SharePoint.
-ms.openlocfilehash: f5aae2ba78997a8277989dcc3b5e68e00f0bfcb4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3705c08b64ffbf719dbce91396c86976db14fea0
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069609"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610623"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -68,7 +68,10 @@ SharePoint Online supporta la crittografia dei seguenti tipi di file:
 - Formati di Office Open XML per le seguenti applicazioni di Microsoft Office: Word, Excel e PowerPoint
     
 - Formato XML Paper Specification (XPS)
-    
+ 
+> [!NOTE]
+> La protezione IRM non può essere applicata ai documenti protetti (come i file PDF con firma digitale), in quanto SharePoint deve aprire il documento al caricamento. 
+
 ## <a name="next-steps"></a>Passaggi successivi
 <a name="__toc220831191"> </a>
 
@@ -77,4 +80,3 @@ Dopo aver abilitato IRM per SharePoint Online, è possibile iniziare a applicare
 Il nuovo client di sincronizzazione di OneDrive per Windows supporta la sincronizzazione delle raccolte documenti di SharePoint e delle posizioni OneDrive protette da IRM (purché l'impostazione IRM per la raccolta non sia impostata sulla scadenza dei diritti di accesso ai documenti). Per ulteriori informazioni o per iniziare a distribuire il nuovo client di sincronizzazione, vedere [distribuire il nuovo client di sincronizzazione di OneDrive per Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668).
   
 [Inizio pagina](#introduction)  
-

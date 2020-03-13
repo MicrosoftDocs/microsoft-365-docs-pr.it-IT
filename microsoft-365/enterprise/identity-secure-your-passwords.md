@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: È necessario rendere le password complesse e gestibili all'interno dell'organizzazione.
 ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067283"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42544055"
 ---
 # <a name="step-2-secure-your-passwords"></a>Passaggio 2: proteggere le password
 

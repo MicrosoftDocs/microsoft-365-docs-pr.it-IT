@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Informazioni su come aggiungere gli ospiti a un gruppo di Office 365, visualizzare gli utenti guest e utilizzare PowerShell per controllare l'accesso guest.
-ms.openlocfilehash: e4d71919fa5ebfb97a6bab8013fc6bc54ac071a4
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 3314746e4d12c318eaae8fbfa34c2ed0b4d31aed
+ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604003"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42610614"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>Gestire l'accesso guest nei gruppi di Office 365
 
@@ -43,8 +43,8 @@ Una volta approvato, l'utente ospite viene aggiunto alla directory e al gruppo.
 
 L'accesso guest nei gruppi è spesso utilizzato come parte di uno scenario più ampio che include SharePoint o teams. Tali servizi dispongono di impostazioni di condivisione Guest. Per istruzioni complete su come configurare la condivisione Guest tra gruppi, SharePoint e team, vedere:
 
-- [Collaborare con gli utenti guest a un sito](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-site)
-- [Collaborare con gli utenti guest in un team](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-team)
+- [Collaborare con gli utenti guest a un sito](../../solutions/collaborate-in-site.md)
+- [Collaborare con gli utenti guest in un team](../../solutions/collaborate-as-team.md)
 
 ## <a name="manage-groups-guest-access"></a>Gestione degli accessi ai gruppi
 
