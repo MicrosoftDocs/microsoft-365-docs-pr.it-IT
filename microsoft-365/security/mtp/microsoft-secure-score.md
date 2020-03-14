@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b19c48161d5d0f43c2beb207dd0ee2db8bfb1470
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372024"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633994"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -89,11 +89,11 @@ Per accedere all'API del grafico, è necessario disporre di uno degli ambiti seg
 
 Per facilitare le informazioni necessarie più rapidamente, le azioni di miglioramento di Microsoft sono organizzate in gruppi:
 
-* Identity (gli account di Azure AD & i ruoli, con Azure ATP presto disponibile)
+* Identity (account di Azure AD & ruoli)
 * Data (protezione delle informazioni di Microsoft)
-* Dispositivo (dispositivi ATP Microsoft Defender, disponibile a breve)
+* Dispositivo (nessuna azione di miglioramento per il momento)
 * App (applicazioni di posta elettronica e cloud, tra cui Office 365 e Microsoft cloud app Security)
-* Infrastructure (risorse di Azure)
+* Infrastructure (nessuna azione di miglioramento per il momento)
 
 Nella pagina Panoramica di Microsoft Secure score, è possibile vedere come vengono divisi i punti tra questi gruppi e quali sono i punti disponibili. La pagina di panoramica è anche il luogo in cui ottenere una visualizzazione completa del punteggio totale, l'andamento storico del Punteggio sicuro con i confronti di benchmark e le azioni di miglioramento prioritarie che possono essere intraprese per migliorare il punteggio.
 

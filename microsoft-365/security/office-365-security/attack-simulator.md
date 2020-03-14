@@ -16,12 +16,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Utilizzare il simulatore di attacco per eseguire attacchi di phishing e password simulati nell'organizzazione di Office 365 E5 o ATP Plan 2, che consente di identificare gli utenti vulnerabili prima che un attacco reale colpisca la propria azienda.
-ms.openlocfilehash: 5e924ebe43a6d7fd1af460b304e862207baffb61
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612636"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637339"
 ---
 # <a name="attack-simulator-in-office-365-atp"></a>Simulatore di attacco in Office 365 ATP
 
@@ -186,7 +186,7 @@ Se si intende utilizzare uno dei modelli incorporati o creare il messaggio di po
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Tutti gli URL sono intenzionalmente http, non HTTPS.</li><li>Un servizio di reputazione URL potrebbe identificare uno o più di questi URL come non sicuri. Controllare la disponibilità dell'URL nei Web browser supportati prima di utilizzare l'URL in una campagna di phishing.</li><li>È necessario selezionare un URL. Per le campagne di **phishing (Attachment)** , è possibile rimuovere il collegamento dal corpo del messaggio nel passaggio successivo (in caso contrario, il messaggio conterrà sia un collegamento **che** un allegato).</li></ul>
+     > <ul><li>Tutti gli URL sono intenzionalmente http, non HTTPS.</li><li>Un servizio di reputazione URL potrebbe identificare uno o più di questi URL come non sicuri. Controllare la disponibilità dell'URL nei Web browser supportati prima di utilizzare l'URL in una campagna di phishing.</li><li>È necessario selezionare un URL. Per le campagne di <b>phishing (Attachment)</b> , è possibile rimuovere il collegamento dal corpo del messaggio nel passaggio successivo (in caso contrario, il messaggio conterrà sia un collegamento <b>che</b> un allegato).</li></ul>
 
    - **Tipo di allegato**: questa impostazione è disponibile solo nelle campagne di **phishing (allegato) di Spear** . Fare clic sull'elenco a discesa e selezionare **. DOCX** o **. File PDF** dall'elenco.
 
@@ -220,7 +220,7 @@ Un *attacco* per la password cerca di indovinare le password per gli account ute
 
 In Attack Simulator, sono disponibili due diversi tipi di campagne di attacco per la password per testare la complessità delle password degli utenti:
 
-- **Password forza bruta (attacco dizionario)**: una *forza bruta** o un attacco *dizionario* utilizza un file di dizionario di grandi dimensioni di password su un account utente con la speranza che uno di essi funzioni (molte password su un account). Gli errori di blocco delle password non corretti consentono di scoraggiare gli attacchi di password Brute.
+- **Password forza bruta (attacco dizionario)**: una *forza bruta* o un attacco del *dizionario* utilizza un file di dizionario di parole chiave di grandi dimensioni in un account utente con la speranza che uno di essi funzioni (molte password su un account). Gli errori di blocco delle password non corretti consentono di scoraggiare gli attacchi di password Brute.
 
   Per l'attacco del dizionario, è possibile specificare una o più password da provare (immessa manualmente o in un file caricato) ed è possibile specificare uno o più utenti.
 

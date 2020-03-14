@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fc1a9cb77cc642ead4af120383b807808e695c22
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fb185239ee670c9fa4bd4add5bd36140db2f7706
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078734"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632857"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Esaminare e correggere gli avvisi di conformità della comunicazione
 
@@ -39,8 +39,8 @@ Il primo passaggio per esaminare i problemi rilevati dai criteri consiste nell'e
     - Elementi risolti elencati in base al nome del criterio.
     - Escalation elencate in base al nome del criterio.
     - Utenti con la maggior parte delle corrispondenze di criteri, elencate tra la maggior parte e il minor numero di corrispondenze.
-- **Scheda avvisi**: passare a **** > **avvisi** di conformità della comunicazione per visualizzare gli avvisi raggruppati in base al criterio di conformità della comunicazione corrispondente. Questa visualizzazione consente di visualizzare rapidamente quali criteri di conformità della comunicazione stanno generando la maggior parte degli avvisi ordinati per gravità.  Per avviare le azioni di correzione, espandere un criterio per selezionare un avviso specifico e avviare la pagina dei dettagli dell'avviso.
-- **Scheda criteri**: passare ai **** > **criteri** di conformità della comunicazione per visualizzare i criteri di conformità della comunicazione configurati per l'organizzazione Microsoft 365. Ogni criterio elencato include il numero di avvisi che devono essere esaminati. Se si seleziona un criterio, vengono visualizzati tutti gli avvisi in sospeso per le corrispondenze al criterio, selezionare un avviso specifico per avviare la pagina dei dettagli del criterio e avviare le azioni di correzione.
+- **Scheda avvisi**: passare a **Communication compliance** > **avvisi** di conformità della comunicazione per visualizzare gli avvisi raggruppati in base al criterio di conformità della comunicazione corrispondente. Questa visualizzazione consente di visualizzare rapidamente quali criteri di conformità della comunicazione stanno generando la maggior parte degli avvisi ordinati per gravità.  Per avviare le azioni di correzione, espandere un criterio per selezionare un avviso specifico e avviare la pagina dei dettagli dell'avviso.
+- **Scheda criteri**: passare ai **Communication compliance** > **criteri** di conformità della comunicazione per visualizzare i criteri di conformità della comunicazione configurati per l'organizzazione Microsoft 365. Ogni criterio elencato include il numero di avvisi che devono essere esaminati. Se si seleziona un criterio, vengono visualizzati tutti gli avvisi in sospeso per le corrispondenze al criterio, selezionare un avviso specifico per avviare la pagina dei dettagli del criterio e avviare le azioni di correzione.
 
 ### <a name="using-filters"></a>Utilizzo di filtri
 
@@ -115,7 +115,7 @@ Indipendentemente dal punto in cui si inizia a esaminare gli avvisi o il filtro 
     - **False positive**: è sempre possibile risolvere un messaggio come falso positivo in qualsiasi momento durante il flusso di lavoro per la revisione dei messaggi. Il messaggio non può essere riaperto e tutti i messaggi falsi positivi sono visualizzati nella scheda **risolti** .
     - **Tag As**: contrassegnare il messaggio come *conforme*, *non conforme*o come *discutibile* in relazione ai criteri e agli standard per l'organizzazione. L'aggiunta di tag e commenti di tagging può aiutare a filtrare gli avvisi per i criteri per le escalation o come parte di altri processi di revisione interni. Dopo aver completato il tagging, è anche possibile scegliere di risolvere il messaggio per spostarlo fuori dalla coda di revisione in sospeso.
     - **Notify**: è possibile utilizzare il controllo **Notify** per assegnare un modello di avviso personalizzato all'avviso e per inviare un avviso all'utente. Scegliere il modello di avviso appropriato e quindi fare clic su **Invia** alla posta elettronica un promemoria per il dipendente che ha inviato il messaggio e per risolvere il problema.
-    - **Escalation**: se si utilizza il controllo **escalation** , è possibile scegliere chi altro nell'organizzazione deve esaminare il messaggio. Scegliere da un elenco di revisori configurati per inviare una notifica tramite posta elettronica che richiede ulteriori riesami dell'avviso del messaggio. Il revisore selezionato può utilizzare un collegamento nella notifica di posta elettronica per passare direttamente agli elementi che sono stati escalati per la revisione.
+    - **Escalation**: se si utilizza il controllo **escalation** , è possibile scegliere chi altro nell'organizzazione deve esaminare il messaggio. Scegliere da un elenco di revisori configurati nel criterio di conformità della comunicazione per inviare una notifica tramite posta elettronica che richiede ulteriori riesami dell'avviso del messaggio. Il revisore selezionato può utilizzare un collegamento nella notifica di posta elettronica per passare direttamente agli elementi che sono stati escalati per la revisione.
     - **Creare un caso**: utilizzando il controllo **Create a case** , è possibile creare un nuovo [caso di eDiscovery avanzato](overview-ediscovery-20.md) per singoli o più messaggi. Verranno forniti un nome e note per il nuovo caso e l'utente che ha inviato il messaggio che corrisponde al criterio viene automaticamente assegnato come custode del caso. Non sono necessarie ulteriori autorizzazioni per gestire il caso. La creazione di un caso non risolve o crea un nuovo tag per il messaggio.
 
 4. **Determinare se i dettagli dei messaggi devono essere archiviati all'esterno della conformità di comunicazione**: i dettagli del messaggio possono essere esportati o scaricati se è necessario archiviarli in una soluzione di archiviazione separata. Se si seleziona il controllo **download** , vengono aggiunti automaticamente i messaggi selezionati a un. File ZIP che può essere salvato nello spazio di archiviazione all'esterno di Microsoft 365.

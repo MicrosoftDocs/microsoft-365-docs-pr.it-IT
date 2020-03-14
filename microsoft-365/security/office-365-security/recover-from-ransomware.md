@@ -1,5 +1,5 @@
 ---
-title: Eseguire il ripristino da un attacco ransomware
+title: Ripristinare da un attacco ransomware
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori di Office 365 possono ottenere informazioni su come eseguire il ripristino da un attacco ransomware.
-ms.openlocfilehash: 04cfd2f2417b0c2e084a88f9ee156521339b18c4
-ms.sourcegitcommit: e47694dedf7e213167d3d979a44c07c668bba543
+ms.openlocfilehash: aa606ea3bf3f549645fe26a4aa95066568132243
+ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41932373"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42640018"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Eseguire il ripristino da un attacco ransomware in Office 365
 
@@ -74,11 +74,7 @@ Dopo aver completato il passaggio precedente per rimuovere il payload ransomware
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Passaggio 5: recuperare i file in OneDrive for business
 
-OneDrive for business consente di recuperare tutti i file archiviati in esso. Sono disponibili due opzioni:
-
-- Utilizzare il [sito Web OneDrive](https://support.office.com/article/159cad6d-d76e-4981-88ef-de6e96c93893).
-
-- Se un numero elevato di file è stato influenzato, è possibile creare una richiesta di supporto per il ripristino di una raccolta siti. Questa richiesta è in grado di ripristinare i file da un massimo di 14 giorni nel passato.
+Il ripristino dei file in OneDrive for business consente di ripristinare l'intera OneDrive a un punto precedente nel tempo negli ultimi 30 giorni. Per ulteriori informazioni, vedere [Restore Your OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## <a name="step-6-recover-deleted-email"></a>Passaggio 6: recuperare il messaggio di posta elettronica eliminato
 

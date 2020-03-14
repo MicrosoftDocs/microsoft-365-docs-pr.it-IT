@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definire i criteri per gli allegati sicuri per proteggere l'organizzazione da file dannosi nella posta elettronica.
-ms.openlocfilehash: ad90ffb4e3503021923470238626d6025e9820fb
-ms.sourcegitcommit: 4986032867b8664a215178b5e095cbda021f3450
+ms.openlocfilehash: c5001823979c19ec68cd15a10bf7c2d7e54cae1d
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41957181"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637319"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Impostare i criteri per gli allegati sicuri ATP di Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "41957181"
 
 Gli utenti inviano, ricevono e condividono regolarmente gli allegati, ad esempio documenti, presentazioni, fogli di calcolo e altro ancora. Non è sempre facile stabilire se un allegato è sicuro o dannoso solo guardando un messaggio di posta elettronica. E l'ultima cosa che si desidera è un allegato dannoso da superare, scatenando il caos per la propria organizzazione. Fortunatamente, [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) può essere di aiuto. È possibile configurare i criteri per gli [allegati sicuri di ATP](atp-safe-attachments.md) per garantire che l'organizzazione sia protetta dagli attacchi degli allegati di posta elettronica non sicuri.
 
-## <a name="what-to-do"></a>Procedura
+## <a name="what-to-do"></a>Operazione
 
 1. Esaminare i prerequisiti
 
@@ -45,11 +45,13 @@ Gli utenti inviano, ricevono e condividono regolarmente gli allegati, ad esempio
 
 - Verificare di disporre delle autorizzazioni necessarie. Per definire (o modificare) i criteri ATP, è necessario essere assegnati a un ruolo di gestione dell'organizzazione di Exchange Online (per impostazione predefinita, l'amministratore globale di Office 365 è assegnato a questo ruolo) oppure entrambi i ruoli di Exchange Online igiene e amministratore della sicurezza. Per ulteriori informazioni, vedere la tabella seguente:
 
-  |Ruolo|Dove/come assegnato|
-  |---------|---------|
+  |||
+  |---|---|
+  |**Ruolo**|**Dove/come assegnato**|
   |Amministratore globale di Office 365 |Per impostazione predefinita, la persona che si iscrive all'acquisto di Office 365 è un amministratore globale. Per ulteriori informazioni, vedere [informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .|
   |Amministratore della sicurezza |Interfaccia di amministrazione di Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)directory ()|
   |Gestione dell'organizzazione di Exchange Online, gestione dell'igiene di Exchange Online |Interfaccia di amministrazione di[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>oppure <br>  Cmdlet di PowerShell (vedere [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |
 
   Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -87,15 +89,17 @@ Valutare la possibilità di configurare più criteri per gli allegati sicuri ATP
 
 Quando si configurano i criteri per gli allegati sicuri di ATP, è possibile scegliere tra molte opzioni, tra cui monitor, blocca, Sostituisci, il recapito dinamico e così via. Nel caso in cui si stia chiedendo cosa fanno queste opzioni, nella tabella seguente vengono riepilogati tutti gli effetti.
 
+||||
+|---|---|---|
 |**Opzione**|**Effetto**|**Utilizzare se si desidera eseguire le operazioni seguenti:**|
-|:-----|:-----|:-----|
-|**Off**|Non esegue l'analisi degli allegati per il malware  <br/> Non ritarda il recapito del messaggio|Disattivare l'analisi per mittenti interni, scanner, fax o smart host che invieranno solo allegati noti e validi  <br/> Impedire ritardi non necessari per il routing della posta interna  <br/> **Questa opzione non è consigliata per la maggior parte degli utenti. Consente di abilitare l'analisi degli allegati sicuri di ATP per un piccolo gruppo di mittenti interni.**|
+|**Off**|Non esegue l'analisi degli allegati per il malware  <br/> Non ritarda il recapito del messaggio|Disattivare l'analisi per scanner, fax o smart host che invieranno solo allegati noti e validi  <br/> Impedire inutili ritardi nella distribuzione della posta interna.  <br/> **Non è consigliabile utilizzare questa opzione per la maggior parte degli utenti. È consigliabile utilizzare questa opzione solo per disattivare l'analisi degli allegati sicuri di ATP per un piccolo gruppo di mittenti attendibili.**|
 |**Monitor**|Recapita messaggi con allegati e quindi tiene traccia di cosa accade con malware rilevato|Vedere dove il malware rilevato entra nell'organizzazione|
 |**Blocco**|Impedisce la proseguimento dei messaggi con allegati malware rilevati  <br/> Invia messaggi con malware rilevato per la [quarantena in Office 365 in](manage-quarantined-messages-and-files.md) cui un amministratore o un analista di sicurezza può rivedere e rilasciare (o eliminare) tali messaggi  <br/> Blocca automaticamente i messaggi e gli allegati futuri|Salvaguardare l'organizzazione da attacchi ripetuti con gli stessi allegati di malware|
 |**Sostituisce**|Rimuove gli allegati di malware rilevati  <br/> Notifica ai destinatari che gli allegati sono stati rimossi  <br/> Invia messaggi con malware rilevato per la [quarantena in Office 365 in](manage-quarantined-messages-and-files.md) cui un amministratore o un analista di sicurezza può rivedere e rilasciare (o eliminare) tali messaggi|Aumentare la visibilità ai destinatari che gli allegati sono stati rimossi a causa del malware rilevato|
 |**Recapito dinamico**|Recapita immediatamente i messaggi  <br/> Sostituisce gli allegati con un file segnaposto fino al completamento dell'analisi e quindi ricollega gli allegati se non è stato rilevato alcun malware  <br/> Include le funzionalità di anteprima degli allegati per la maggior parte dei file PDF e di Office durante l'analisi  <br/> Invia messaggi con malware rilevato per la quarantena, in cui un amministratore o un analista di sicurezza può rivedere e rilasciare (o eliminare) tali messaggi  <br/> [Informazioni sul recapito dinamico e sulla visualizzazione in anteprima con gli allegati sicuri di ATP](dynamic-delivery-and-previewing.md) <br/> |Evitare ritardi nei messaggi durante la protezione dei destinatari da file dannosi  <br/> Abilitazione dei destinatari all'anteprima degli allegati in modalità provvisoria durante la scansione|
 |**Attiva reindirizzamento**|Si applica quando si sceglie l'opzione Monitor, blocca o Sostituisci  <br/> Invia allegati a un indirizzo di posta elettronica specificato in cui gli amministratori di sicurezza o gli analisti possono esaminare|Abilitare gli amministratori e gli analisti della sicurezza per la ricerca degli allegati sospetti|
 |**Applicare la selezione precedente se la ricerca di malware per gli allegati non è stata eseguita o si verifica un errore**|Applica l'azione configurata per gli allegati di unasfe agli allegati che non possono essere analizzati (a causa di un timeout o di un errore)|
+|
 
 ## <a name="next-steps"></a>Passaggi successivi
 

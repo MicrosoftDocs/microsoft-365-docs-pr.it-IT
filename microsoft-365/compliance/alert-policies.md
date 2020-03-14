@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Creare criteri di avviso nel centro sicurezza e conformità di Office 365 e Microsoft 365 per monitorare le potenziali minacce, la perdita di dati e i problemi relativi alle autorizzazioni. È quindi possibile visualizzare e gestire gli avvisi generati quando gli utenti eseguono attività che soddisfano le condizioni di un criterio di avviso.
 ms.openlocfilehash: a5ac38f30d42ceff67f982c6c9ac9b03507d34cb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080029"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634514"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Criteri di avviso nel centro sicurezza e conformità
 
@@ -49,7 +49,7 @@ Di seguito viene illustrata una breve panoramica del funzionamento dei criteri d
 
 ## <a name="alert-policy-settings"></a>Impostazioni di criteri di avviso
 
-Un criterio di avviso è costituito da un insieme di regole e condizioni che definiscono l'attività dell'utente o dell'amministratore che genera un avviso, un elenco di utenti che attivano l'avviso se eseguono l'attività e una soglia che definisce il numero di volte in cui l'attività deve essere eseguita prima di un avviso.  viene attivato. È inoltre possibile suddividere in categorie il criterio e assegnargli un livello di gravità. Queste due impostazioni consentono di gestire i criteri di avviso (e gli avvisi attivati quando vengono soddisfatte le condizioni dei criteri) perché è possibile filtrare queste impostazioni quando si gestiscono i criteri e si visualizzano gli avvisi nel centro sicurezza e conformità. Ad esempio, è possibile visualizzare gli avvisi che soddisfano le condizioni della stessa categoria o visualizzare gli avvisi con lo stesso livello di gravità.
+Un criterio di avviso è costituito da un insieme di regole e condizioni che definiscono l'attività dell'utente o dell'amministratore che genera un avviso, un elenco di utenti che attivano l'avviso se eseguono l'attività e una soglia che definisce il numero di volte in cui l'attività deve essere eseguita prima di un avviso. viene attivato. È inoltre possibile suddividere in categorie il criterio e assegnargli un livello di gravità. Queste due impostazioni consentono di gestire i criteri di avviso (e gli avvisi attivati quando vengono soddisfatte le condizioni dei criteri) perché è possibile filtrare queste impostazioni quando si gestiscono i criteri e si visualizzano gli avvisi nel centro sicurezza e conformità. Ad esempio, è possibile visualizzare gli avvisi che soddisfano le condizioni della stessa categoria o visualizzare gli avvisi con lo stesso livello di gravità.
 
 Per visualizzare e creare criteri di avviso, passare [https://protection.office.com](https://protection.office.com) a e selezionare **avvisi** \> per i **criteri di avviso**.
 
@@ -189,7 +189,7 @@ Per visualizzare la categoria a cui è assegnato un criterio di avviso predefini
 |Anteprima|||||||
 |Gestione dei record|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |Gestione della conservazione|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|Revisione|||||||
+|Review|||||||
 |Decrittografia RMS|||||||
 |Gestione dei ruoli||||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |Ricerca ed eliminazione|||||||

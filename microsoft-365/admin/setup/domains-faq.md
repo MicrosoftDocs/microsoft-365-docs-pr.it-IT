@@ -23,11 +23,11 @@ ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Per ulteriori informazioni sui domini in Office 365, trovare le risposte alle domande più frequenti.
 ms.custom: okr_smb
 ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257016"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633184"
 ---
 # <a name="domains-faq"></a>Domande frequenti sui domini
 
@@ -107,7 +107,7 @@ Si noti che una query *Whois* mostrerà un registrar del dominio di Office 365 a
   
 Eseguire la procedura seguente per ottenere un codice da Office 365 e quindi passare al sito Web dell'altro registrar per configurare il trasferimento del dominio.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
     Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> . 
     
@@ -137,7 +137,7 @@ Eseguire la procedura seguente per ottenere un codice da Office 365 e quindi pas
     
 3. Seguire un collegamento per passare all'installazione guidata dei domini:
     
-4. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+4. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
     Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> . 
     
@@ -154,7 +154,7 @@ Eseguire la procedura seguente per ottenere un codice da Office 365 e quindi pas
 
 ### <a name="change-dns-management-to-office-365"></a>Spostare la gestione del DNS su Office 365
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
     Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> . 
     
@@ -222,7 +222,7 @@ Provider che supportano tutti i record DNS necessari:
 
 Per scegliere un dominio predefinito, è necessario che sia stato aggiunto almeno un dominio personalizzato a Office 365.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
     Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> . 
     
@@ -350,7 +350,7 @@ Vuoi saperne di più su come diventare l'amministratore per la tua scuola? Infor
     
     1. Accedere a Office 365 con l'account di lavoro o della scuola.
         
-    2. Andare a **** \> **Domains**Settings. 
+    2. Andare a **Settings** \> **Domains**Settings. 
     
 2. Verificare di essere proprietari del dominio che si desidera utilizzare
     

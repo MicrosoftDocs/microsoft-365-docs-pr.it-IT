@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: "Informazioni su come modificare il tema predefinito di Office 365 e personalizzarlo in modo che corrisponda al logo o al colore dell'azienda. "
-ms.openlocfilehash: 9d83abb919cfb9f6ea3c804d9c5d934614f35285
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: fc50519190abe1b827bd3a5f93a6a82f8c22f0b6
+ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360637"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42640028"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>Personalizzare il tema di Office 365 per l'organizzazione
 
@@ -40,31 +40,35 @@ Informazioni su come personalizzare il tema nell'interfaccia di amministrazione 
 
 3. Nel riquadro **temi doganali** modificare gli elementi del tema desiderati per l'organizzazione:
     
-  - **Utilizzare un'immagine personalizzata del logo**: scegliere se utilizzare un'immagine da un URL o caricare un'immagine. Se si utilizza un URL, assicurarsi che l'URL utilizzi HTTPS e che sia 200 x 30 pixel di qualsiasi formato di qualsiasi dimensione. È possibile caricare un logo inferiore a 10 KB che è 200 x 30 pixel in formato JPG, PNG, GIF o SVG.
+    - **Utilizzare un'immagine personalizzata del logo**: scegliere se utilizzare un'immagine da un URL o caricare un'immagine. Se si utilizza un URL, assicurarsi che l'URL utilizzi HTTPS e che sia 200 x 30 pixel di qualsiasi formato di qualsiasi dimensione. È possibile caricare un logo inferiore a 10 KB che è 200 x 30 pixel in formato JPG, PNG, GIF o SVG.
 
-    > [!NOTE]
-    > Affinché il logo venga visualizzato nell'app per dispositivi mobili di SharePoint, utilizzare solo immagini SVG. Le immagini caricate in qualsiasi altro formato non vengono visualizzate nell'app. I loghi non possono essere cliccabili nell'app per dispositivi mobili di SharePoint.
-    
-  - **Fare clic su logo**: è possibile utilizzare il logo nella barra di spostamento come collegamento a qualsiasi risorsa dell'azienda. È possibile immettere l'URL per il logo qui, iniziando con http://o https://. Passaggio facoltativo.
-    
-  - **Selezionare immagine di sfondo**: selezionare l'immagine e caricare il proprio jpg, PNG o gif con una risoluzione di 1366 x 50 pixel, non superiore a 15 KB. L'immagine di sfondo viene visualizzata nella barra di spostamento superiore di ogni pagina.
-    
-    > [!NOTE]
-    > Le immagini che contengono testo potrebbero non essere visualizzate come previsto. Gli elementi incorporati che vengono visualizzati a sinistra e a destra della barra di spostamento possono variare in base ai servizi e il testo può essere nascosto da questi elementi. A causa della natura dinamica della barra di spostamento, al momento non è possibile fornire indicazioni per la spaziatura interna immagine per ottenere un’esperienza coerente. 
-    
-  - **Colore barra di spostamento**: selezionare un colore da usare per lo sfondo della barra di spostamento. Viene visualizzato nella parte superiore di ogni pagina.
-    
-  - **Testo e icone**: Selezionare un colore da usare per il testo e le icone sulla barra di spostamento superiore.
-    
-  - **Colore accento**: selezionare un colore da usare per il pulsante della barra di spostamento e gli accenti di pagina come pulsanti e testo su determinate applicazioni.
+      > [!NOTE]
+      > Affinché il logo venga visualizzato nell'app per dispositivi mobili di SharePoint, utilizzare solo immagini SVG. Le immagini caricate in qualsiasi altro formato non vengono visualizzate nell'app. I loghi non possono essere cliccabili nell'app per dispositivi mobili di SharePoint.
 
-   - **Impedire agli utenti di eseguire l'override di Theme**: capovolgere questo interruttore per impedire agli utenti di scegliere il proprio tema dalla selezione del tema. Questo non impedisce agli utenti di essere in grado di impostare un tema a contrasto elevato.
-      
-  - **Visualizza il nome utente**: scegliere se mostrare il nome completo di un utente al punto di ingresso per l'account Manager nell'angolo in alto a destra della pagina quando l'utente ha eseguito l'accesso. Per impostazione predefinita, gli utenti visualizzeranno la foto o le iniziali se una foto non è stata caricata.
+    - **Fare clic su logo**: è possibile utilizzare il logo nella barra di spostamento come collegamento a qualsiasi risorsa dell'azienda. È possibile immettere l'URL per il logo qui, iniziando con http://o https://. Passaggio facoltativo.
+
+    - **Selezionare immagine di sfondo**: selezionare l'immagine e caricare il proprio jpg, PNG o gif con una risoluzione di 1366 x 50 pixel, non superiore a 15 KB. L'immagine di sfondo viene visualizzata nella barra di spostamento superiore di ogni pagina.
+
+      > [!NOTE]
+      > Le immagini che contengono testo potrebbero non essere visualizzate come previsto. Gli elementi incorporati che vengono visualizzati a sinistra e a destra della barra di spostamento possono variare in base ai servizi e il testo può essere nascosto da questi elementi. A causa della natura dinamica della barra di spostamento, al momento non è possibile fornire indicazioni per la spaziatura interna immagine per ottenere un’esperienza coerente. 
+
+    - **Colore barra di spostamento**: selezionare un colore da usare per lo sfondo della barra di spostamento. Viene visualizzato nella parte superiore di ogni pagina.
+
+    - **Testo e icone**: Selezionare un colore da usare per il testo e le icone sulla barra di spostamento superiore.
+
+    - **Colore accento**: selezionare un colore da usare per il pulsante della barra di spostamento e gli accenti di pagina come pulsanti e testo su determinate applicazioni.
+
+     - **Impedire agli utenti di eseguire l'override di Theme**: capovolgere questo interruttore per impedire agli utenti di scegliere il proprio tema dalla selezione del tema. Questo non impedisce agli utenti di essere in grado di impostare un tema a contrasto elevato.
+
+    - **Visualizza il nome utente**: scegliere se mostrare il nome completo di un utente al punto di ingresso per l'account Manager nell'angolo in alto a destra della pagina quando l'utente ha eseguito l'accesso. Per impostazione predefinita, gli utenti visualizzeranno la foto o le iniziali se una foto non è stata caricata.
     
 4. Selezionare **Salva modifiche**.
     
-Il nuovo tema verrà visualizzato immediatamente nell'interfaccia di amministrazione e dopo un breve periodo di tempo, verrà visualizzato in tutta la pagina di Office 365, incluse le pagine di Outlook e di SharePoint. È possibile rimuovere l'icona o i colori personalizzati in qualsiasi momento. Basta tornare alla pagina del tema e selezionare **Rimuovi tema personalizzato**.
+Vedrai subito il nuovo tema nell'interfaccia di amministrazione e dopo un breve periodo di tempo, lo vedrai in tutto Office 365, incluse le pagine in Outlook, SharePoint e le app per dispositivi mobili di SharePoint per iOS e Android. Nell'immagine seguente vengono evidenziati gli elementi del tema che è possibile personalizzare per le app per dispositivi mobili di SharePoint.
+
+![Tema predefinito di Office 365 e Theme Office 365 personalizzato per le app per dispositivi mobili di SharePoint]()
+
+È possibile rimuovere l'icona o i colori personalizzati in qualsiasi momento. Basta tornare alla pagina del tema e selezionare **Rimuovi tema personalizzato**.
   
 ## <a name="best-practices"></a>Procedure consigliate
 

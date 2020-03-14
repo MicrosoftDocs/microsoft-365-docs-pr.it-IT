@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: "Domande frequenti per gli amministratori sull'utilizzo del servizio di importazione di Office 365 per importare i file PST dell'organizzazione nelle cassette postali di Office 365. "
 ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170486"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634434"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>Domande frequenti sull'importazione di file PST in Office 365
 
@@ -53,7 +53,7 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
 Il caricamento di rete è attualmente disponibile in queste aree: Stati Uniti, Canada, Brasile, Regno Unito, Francia, Europa, India, Asia orientale, sud-est asiatico, Giappone, Repubblica di Corea e Australia. Network upload will be available in more regions soon.
 
 > [!NOTE]
-> In questo momento, il caricamento di rete dei file PST non è disponibile in Germania e Svizzera. Queste domande frequenti verranno aggiornate quando il caricamento di rete è disponibile in questi paesi.
+> Al momento, il caricamento tramite rete dei file PST non è disponibile in Germania e Svizzera. Le domande frequenti verranno aggiornate quando il caricamento tramite rete sarà disponibile in questi paesi.
   
  **Quanto costa importare file PST con il caricamento tramite rete?**
   
@@ -127,7 +127,7 @@ Inoltre, per creare processi di importazione nel Centro sicurezza e conformità,
 La spedizione unità è attualmente disponibile negli Stati Uniti, nonché in Canada, Brasile, Regno Unito, Europa, India, Asia orientale, Asia sud-orientale, Giappone, Repubblica di Corea e Australia. Questa funzionalità sarà presto disponibile in altre aree geografiche.
 
 > [!NOTE]
-> In questo momento, l'unità di trasporto per importare i file PST non è disponibile in Germania e Svizzera. Queste domande frequenti verranno aggiornate quando la spedizione delle unità è disponibile in questi paesi.
+> Al momento, la spedizione unità per importare file PST non è disponibile in Germania e Svizzera. Le domande frequenti verranno aggiornate quando la spedizione unità sarà disponibile in questi paesi.
   
  **Quali contratti di licenza commerciali supportano la spedizione unità?**
   

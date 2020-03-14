@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Informazioni su come passare a un nuovo abbonamento a Office 365 for business.
 ms.openlocfilehash: f341222945d4af6d35c00ee26c3a2645fabf98f8
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354467"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633404"
 ---
 # <a name="switch-to-a-different-office-365-for-business-plan"></a>Passare a un piano di Office 365 per le aziende diverso
 
@@ -51,7 +51,7 @@ Il modo più semplice per cambiare piano consiste nell'utilizzare il pulsante **
 
 Quando si sceglie il pulsante **Cambia piano**, viene avviato il processo di acquisto di un nuovo piano che si sostituisce a quello corrente, a tutti gli utenti vengono automaticamente assegnate licenze nel nuovo piano e il vecchio piano viene annullato. 
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abbonamenti</a> di fatturazione.
 
     Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 

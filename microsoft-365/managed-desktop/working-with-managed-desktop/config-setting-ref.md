@@ -8,11 +8,11 @@ ms.localizationpriority: normal
 ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012261"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42632984"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Riferimento alle impostazioni configurabili-Microsoft Managed Desktop
 
@@ -142,6 +142,6 @@ Questi requisiti devono essere soddisfatti per le eccezioni del server proxy e d
 6. Ripetere i passaggi 1-5 per ogni sito attendibile che si desidera aggiungere. 
 7. Selezionare **fase di distribuzione** per salvare le modifiche e distribuirle nel gruppo di test.
 
-## <a name="additional-resources"></a>Altre risorse
+## <a name="additional-resources"></a>Risorse aggiuntive
 - [Panoramica delle impostazioni configurabili](config-setting-overview.md) 
 - [Distribuire impostazioni configurabili](config-setting-deploy.md)

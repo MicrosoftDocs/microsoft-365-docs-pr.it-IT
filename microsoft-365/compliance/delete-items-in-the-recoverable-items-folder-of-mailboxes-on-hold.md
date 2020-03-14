@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: "Per gli amministratori: eliminare gli elementi in un \n\ncartella elementi ripristinabili di er per una cassetta postale di Exchange Online, anche se la cassetta postale è abilitata alla conservazione legale. Si tratta di un modo efficace per eliminare i dati che sono stati accidentalmente riversati in Office 365."
 ms.openlocfilehash: 5c8614c0faf8ea0f807b09cb24ccd3409dd7facb
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409651"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635064"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali basate sul cloud in attesa-Guida per l'amministratore
 
@@ -348,7 +348,7 @@ Eseguire i passaggi seguenti (nella sequenza specificata) in PowerShell di Excha
     
     **Criteri di conservazione di Office 365 a livello di organizzazione**
     
-    Se è stato rimosso un criterio di conservazione a livello di organizzazione o a livello di Exchange, escluderlo dal criterio, utilizzare il Centro sicurezza & conformità per rimuovere la cassetta postale dall'elenco degli utenti esclusi. Passare alla pagina **** \> **conservazione** delle informazioni di gestione nel centro sicurezza & conformità, modificare il criterio di conservazione a livello dell'organizzazione e rimuovere la cassetta postale dall'elenco dei destinatari esclusi. In questo modo verrà riapplicato il criterio di conservazione alla cassetta postale dell'utente. 
+    Se è stato rimosso un criterio di conservazione a livello di organizzazione o a livello di Exchange, escluderlo dal criterio, utilizzare il Centro sicurezza & conformità per rimuovere la cassetta postale dall'elenco degli utenti esclusi. Passare alla pagina **Information governance** \> **conservazione** delle informazioni di gestione nel centro sicurezza & conformità, modificare il criterio di conservazione a livello dell'organizzazione e rimuovere la cassetta postale dall'elenco dei destinatari esclusi. In questo modo verrà riapplicato il criterio di conservazione alla cassetta postale dell'utente. 
     
     **blocco del caso di eDiscovery**
     
@@ -370,7 +370,7 @@ Eseguire i passaggi seguenti (nella sequenza specificata) in PowerShell di Excha
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Di seguito viene riportata una tabella in cui viene descritto come identificare diversi tipi di esenzioni in base ai valori della proprietà *InPlaceHolds* quando si eseguono i cmdlet **Get-Mailbox** o **Get-OrganizationConfig** . Per informazioni più dettagliate, vedere [How to identificare il tipo di blocco posizionato su una cassetta postale di Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 

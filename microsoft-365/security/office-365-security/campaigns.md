@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Informazioni su Visualizzazione campagne in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 350f4f9007bf6f09836080af65802a9757532dcc
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 40eab14dff8d0c51a35bfbc7a04365a5a025e207
+ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083545"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637329"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Visualizzazione campagne in Office 365 ATP
 
@@ -54,15 +54,15 @@ Una campagna potrebbe essere di breve durata, o potrebbe interferire tra diversi
 
 ## <a name="campaign-views-the-office-365-security--compliance-center"></a>Visualizzazione campagne del Centro sicurezza e conformità di Office 365
 
-Le visualizzazioni campagna sono disponibili nel [Centro sicurezza & conformità](https://protection.office.com) nelle **** \> **campagne**di gestione delle minacce.
+Le visualizzazioni campagna sono disponibili nel [Centro sicurezza & conformità](https://protection.office.com) nelle **Threat management** \> **campagne**di gestione delle minacce.
 
 ![Panoramica della campagna nel Centro sicurezza e conformità](../../media/campaigns-overview.png)
 
 È inoltre possibile accedere alla visualizzazione campagne da:
 
-- **Campagne** di **** \> **** visualizzazione \> di **gestione delle minacce** \>
+- **Campagne** di **Explorer** \> **View** visualizzazione \> di **gestione delle minacce** \>
 
-- **Gestione delle** \> minacce **Esplora** \> **** **** \> **** tutte le campagne di posta elettronica \>
+- **Gestione delle** \> minacce **Esplora** \> **View** **All email** \> **Campaign** tutte le campagne di posta elettronica \>
 
 > [!TIP]
 > Se i dati della campagna non sono visibili, provare a modificare l'intervallo di date.
@@ -125,24 +125,24 @@ Il diagramma include le seguenti informazioni:
 
 - **Domini mittenti**
 
-- **Filtra risultati**: i valori qui riportati riguardano i risultati del filtro anti-phishing e della posta indesiderata disponibili come descritto in [Intestazioni dei messaggi di posta indesiderata](anti-spam-message-headers.md). I valori disponibili sono descritti nella tabella seguente:
+- **Verdetti del filtro**: i valori qui sono correlati ai verdetti del filtro di phishing e di posta indesiderata disponibili come descritto nelle intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md). I valori disponibili sono descritti nella tabella seguente:
 
   |Valore|Verdetto del filtro posta indesiderata|Descrizione|
   |:-----|:-----|:-----|
-  | **Consentiti**|`SFV:SKN` <br/><br/> `SFV:SKI`|Il messaggio è stato contrassegnato come non indesiderato e/o filtro saltato prima di essere valutato dal filtro di posta indesiderata, ad esempio tramite una regola del flusso di posta, nota anche come regola di trasporto.<br/><br/>Il messaggio ha ignorato il filtro per la posta indesiderata per altri motivi (ad esempio, il mittente e il destinatario sono presenti nella stessa organizzazione).|
-  |**Bloccati**|`SFV:SKS`|Il messaggio è stato contrassegnato come posta indesiderata prima di essere valutato dal filtro di posta indesiderata, ad esempio da una regola del flusso di posta.|
+  | **Consentiti**|`SFV:SKN` <br/><br/> `SFV:SKI`|Il messaggio è stato contrassegnato come non indesiderato e/o il filtro saltato prima di essere valutato tramite il filtro posta indesiderata, ad esempio tramite una regola del flusso di posta, nota anche come regola di trasporto.<br/><br/>Il messaggio ha ignorato il filtro per la posta indesiderata per altri motivi (ad esempio, il mittente e il destinatario sono presenti nella stessa organizzazione).|
+  |**Bloccati**|`SFV:SKS`|Il messaggio è stato contrassegnato come posta indesiderata prima di essere valutato tramite il filtro posta indesiderata, ad esempio tramite una regola del flusso di posta.|
   |**Rilevato**|`SFV:SPM`|Il messaggio è stato contrassegnato come posta indesiderata dal filtro posta indesiderata.|
   |**Non rilevato**|`SFV:NSPM`|Il messaggio è stato contrassegnato come non indesiderato dal filtro posta indesiderata.|
   |**Rilasciato**|`SFV:SKQ`|Il messaggio ha ignorato il filtro della posta indesiderata perché è stato rilasciato dalla quarantena.|
-  |**Consenti tenant**<sup>\*</sup>|`SFV:SKA`|Il messaggio ha ignorato il filtro della posta indesiderata a causa della configurazione dei criteri di filtro posta indesiderata (ad esempio, il mittente o il dominio è nell'elenco dei **Mittenti consentiti** )|
-  |**Blocco tenant**<sup>\*\*</sup>|`SFV:SKA`|Il messaggio è stato bloccato dal filtro posta indesiderata a causa della configurazione dei criteri di filtro della posta indesiderata (ad esempio, il mittente o il dominio è nell'elenco dei **Mittenti bloccati** ).|
+  |**Consenti tenant**<sup>\*</sup>|`SFV:SKA`|Il messaggio ha ignorato il filtro della posta indesiderata a causa delle impostazioni dei criteri di protezione dalla posta indesiderata (ad esempio, il mittente è nell'elenco dei mittenti consentito o nel dominio consentito).|
+  |**Blocco tenant**<sup>\*\*</sup>|`SFV:SKA`|Il messaggio è stato bloccato dal filtro posta indesiderata a causa delle impostazioni dei criteri di protezione da posta indesiderata (ad esempio, il mittente è nell'elenco dei mittenti consentiti o nel dominio consentito).|
   |**Consenti utente**<sup>\*</sup>|`SFV:SFE`|Il messaggio ha ignorato il filtro della posta indesiderata perché il mittente si trovava nell'elenco Mittenti attendibili di un utente in Outlook.|
   |**Blocco utenti**<sup>\*\*</sup>|`SFV:BLK`|Il messaggio è stato bloccato dal filtro posta indesiderata perché il mittente si trovava nell'elenco Mittenti bloccati di un utente in Outlook.|
-  |**ZAP**|n/d|[Zero-hour auto Purge (ZAP)](zero-hour-auto-purge.md) ha eseguito un'azione sul messaggio recapitato in base alla configurazione dei criteri di filtro posta indesiderata (spostata nella cartella posta indesiderata o in quarantena).|
+  |**ZAP**|n/d|[Zero-hour auto Purge (ZAP)](zero-hour-auto-purge.md) ha eseguito un'azione sul messaggio recapitato in base alle impostazioni dei criteri di protezione da posta indesiderata (spostati nella cartella posta indesiderata o in quarantena).|
 
-  <sup>\*</sup>Esaminare le impostazioni di configurazione dei criteri di filtro della posta indesiderata, in quanto il servizio potrebbe essere stato bloccato.
+  <sup>\*</sup>Esaminare i criteri di protezione da posta indesiderata, poiché il servizio potrebbe essere stato bloccato.
 
-  <sup>\*\*</sup>Esaminare le impostazioni di configurazione dei criteri di filtro della posta indesiderata, poiché tali messaggi devono essere messi in quarantena
+  <sup>\*\*</sup>Esaminare i criteri di protezione da posta indesiderata, poiché tali messaggi devono essere messi in quarantena, non recapitati.
 
 - **Posizioni di recapito**: è consigliabile esaminare i messaggi che sono stati effettivamente recapitati ai destinatari (nella cartella posta in arrivo o posta indesiderata), anche se gli utenti non hanno fatto clic sull'URL del payload nel messaggio. È inoltre possibile rimuovere i messaggi in quarantena dalla quarantena. For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 

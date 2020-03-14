@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Informazioni su Identity Governance per il tenant di Azure AD e su come configurarlo.
 ms.openlocfilehash: 5b7b1c91735611046133a0247ae028ed090106fd
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543995"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633584"
 ---
 # <a name="step-6-configure-identity-governance"></a>Passaggio 6: Configurare Identity Governance
 

@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Procedura dettagliata per la registrazione di Microsoft 365 per le campagne. Proteggi la tua campagna dalle minacce di Cybersecurity alla posta elettronica, ai dati e alla comunicazione.
 ms.openlocfilehash: 604e0be01c3824ed63361bb7fc9e694787ae83ef
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409661"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633734"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Iscriversi a Microsoft 365 per le campagne 
 
@@ -47,7 +47,7 @@ Ecco come completare l'iscrizione a Microsoft 365 per le campagne.
 1. Nel tuo invito a Microsoft 365 per le campagne di posta elettronica, seleziona **Iscriviti alla >dell'organizzazione **. Questo porta all'iscrizione a Microsoft 365.
     > [!NOTE]
     > Se si dispone già di un abbonamento a Office 365 per le aziende e si desidera aggiungere l'offerta di Microsoft 365 per le campagne, passare a [Aggiungi microsoft 365 per le campagne a un abbonamento esistente](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
-1. **Nella pagina Microsoft 365 business**immettere i dettagli dell'azienda. Per l' **indirizzo di posta elettronica aziendale**, utilizzare un indirizzo di posta elettronica corrente. Questo indirizzo è necessario solo per rimanere in contatto con l'utente durante il processo di installazione.  Select **Next**. 
+1. **Nella pagina Microsoft 365 business**immettere i dettagli dell'azienda. Per l' **indirizzo di posta elettronica aziendale**, utilizzare un indirizzo di posta elettronica corrente. Questo indirizzo è necessario solo per rimanere in contatto con l'utente durante il processo di installazione. Selezionare **Avanti**.
 1. **Nella pagina Crea ID utente**:
     1. In **nome utente**, immettere il nome o l'alias desiderato per l'indirizzo di posta elettronica. Ad esempio, si potrebbe desiderare di essere conosciuto come solo Alice o Rob. In una campagna più grande, AliceC o AliceChavez potrebbe essere più sensato.
     2. Nella **tua azienda**, immetti il nome della campagna per la quale lavori. Ad esempio, ContosoCampaign. Se si è già proprietari di un dominio, utilizzare questo nome. 
@@ -60,7 +60,7 @@ Ecco come completare l'iscrizione a Microsoft 365 per le campagne.
     1. Preparare il telefono e selezionare **Text me** (oppure **chiamami** se si preferisce). Quindi immetti il tuo numero di telefono. 
     2. Quando si seleziona **Text me**, è possibile inviare un codice di verifica. Oppure ti chiameremo con un codice se selezioni **chiamami**.
     3. Immettere il codice del messaggio di testo (o chiamata) e selezionare **Avanti**. Aspettatevi una breve attesa. 
-5. **Dove si utilizzerà questa pagina**: immettere il numero di telefono e la posizione principale della campagna.  Select **Next**. 
+5. **Dove si utilizzerà questa pagina**: immettere il numero di telefono e la posizione principale della campagna. Selezionare **Avanti**.
 6. **Come funziona questa pagina di aspetto**:
     1. Verificare che il costo per utente sia $5,00. 
     2. Se si desidera solo impostare se stessi per ora, selezionare **Avanti**. 

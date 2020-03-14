@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Un elenco di tipi di file supportati in Microsoft 365 Advanced eDiscovery. Questo include un elenco dei tipi di file di immagine supportati dalla funzionalità OCR in Advanced eDiscovery.
 ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
-ms.sourcegitcommit: 6c8edbc54b193e964cf93aec48c51cb79231f1d9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42543715"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634634"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipi di file supportati in Advanced eDiscovery
 

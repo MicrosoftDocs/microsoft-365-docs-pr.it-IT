@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Quando si crea un'etichetta di conservazione che conserva il contenuto in Microsoft 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
 ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075402"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42634974"
 ---
 # <a name="overview-of-disposition-reviews"></a>Panoramica delle recensioni sulla disposizione
 
@@ -76,7 +76,7 @@ Per ulteriori informazioni sulle etichette di conservazione, vedere [Overview of
 
 ## <a name="disposing-content"></a>Eliminazione del contenuto
 
-Quando un revisore riceve una notifica tramite posta elettronica che il contenuto è pronto per la revisione, può **** accedere alla pagina di disposizione &amp; nel centro sicurezza e conformità. I revisori possono vedere quanti elementi per ogni etichetta di conservazione sono in attesa di disposizione, quindi selezionare un'etichetta di conservazione per visualizzare tutto il contenuto con quell'etichetta.
+Quando un revisore riceve una notifica tramite posta elettronica che il contenuto è pronto per la revisione, può **Disposition** accedere alla pagina di disposizione &amp; nel centro sicurezza e conformità. I revisori possono vedere quanti elementi per ogni etichetta di conservazione sono in attesa di disposizione, quindi selezionare un'etichetta di conservazione per visualizzare tutto il contenuto con quell'etichetta.
 
 Dopo aver selezionato un'etichetta di conservazione, la pagina successiva Visualizza tutte le disposizioni in sospeso per tale etichetta.
 

@@ -17,11 +17,11 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.openlocfilehash: 8d7adda0ded3a118676a67d0446a5744233468f3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066854"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633264"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
@@ -132,7 +132,7 @@ Windows 10 e Office 365 ProPlus è l'ambiente client consigliato per i computer.
 
 Nella tabella seguente vengono riepilogati i suggerimenti per l'utilizzo di queste funzionalità tra i tre livelli di protezione.
 
-|Meccanismo di protezione|Protezione di base|Dati sensibili|Riservatezza elevata|
+|Meccanismo di protezione|Protezione di base|Dati sensibili|Protezione per ambienti altamente regolamentati|
 |:-------------------|:-------|:--------|:---------------|
 |**Applicare l'autenticazione a più fattori**|A partire da rischio di accesso medio|A partire da rischio di accesso basso|Per tutte le nuove sessioni|
 |**Applicare la modifica della password**|Per gli utenti con rischio elevato|Per gli utenti con rischio elevato|Per gli utenti con rischio elevato|

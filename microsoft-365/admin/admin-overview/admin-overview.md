@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: "Informazioni sull'interfaccia di amministrazione di Microsoft 365: come accedere, chi è l'amministratore e guardare un'introduzione video su di esso."
 ms.openlocfilehash: 5f2727b582fcae2b4e001be1ec355747c96e9084
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241546"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633464"
 ---
 # <a name="office-365-admin-overview"></a>Panoramica dell'interfaccia di amministrazione di Office 365 
 

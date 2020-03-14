@@ -1,5 +1,5 @@
 ---
-title: Panoramica di Microsoft 365 per Enterprise
+title: Panoramica di Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,13 +14,13 @@ ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 per Enterprise.
 ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066893"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633304"
 ---
-# <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per Enterprise
+# <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
 Microsoft 365 for Enterprise è una soluzione completa e intelligente che consente a tutti di essere creativi e di lavorare insieme in modo sicuro. 
 
@@ -76,7 +76,7 @@ Per scaricare una copia del poster, fare clic [qui](https://github.com/Microsoft
 
 Per ottenere un'immagine migliore di come spostare l'intera organizzazione ai prodotti e ai servizi in Microsoft 365 for Enterprise, scaricare il [poster di transizione](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
-[![Immagine per il poster della transizione a Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
+[![Immagine per il poster di transizione a Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
 Questo poster a due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e ottenere le indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 per le aziende. Include i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
 

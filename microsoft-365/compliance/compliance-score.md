@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Il Punteggio di conformità di Microsoft aiuta le organizzazioni a semplificare e automatizzare le valutazioni dei rischi e suggerisce azioni consigliate per aiutare a gestire i rischi.
 ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078523"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42635114"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Punteggio di conformità Microsoft (anteprima)
 
@@ -118,8 +118,8 @@ I modelli preconfigurati per il Punteggio di conformità sono:
 4. [GDPR Unione europea](https://go.microsoft.com/fwlink/?linkid=2108870)
 5. [Opuscolo sulla sicurezza delle istituzioni finanziarie federali (FFIEC)](https://go.microsoft.com/fwlink/?linkid=2109077)
 6. [FedRAMP moderato](https://go.microsoft.com/fwlink/?linkid=2108869)
-7. [](https://go.microsoft.com/fwlink/?linkid=2109078) / [Hitech](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
-8. [](https://go.microsoft.com/fwlink/?linkid=2113709) / ISM (anteprima) del[governo australiano](https://go.microsoft.com/fwlink/?linkid=2113024) di IRAP
+7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [Hitech](https://go.microsoft.com/fwlink/?linkid=2109079) HIPAA
+8. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / ISM (anteprima) del[governo australiano](https://go.microsoft.com/fwlink/?linkid=2113024) di IRAP
 9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
 10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
 11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)

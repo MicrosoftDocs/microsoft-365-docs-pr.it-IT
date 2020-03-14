@@ -16,11 +16,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Durante e dopo un'indagine automatizzata in Office 365, è possibile visualizzare i risultati e i risultati principali.
 ms.openlocfilehash: 638559efe5f7028a647b466c030a339c677601ce
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179257"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42633844"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Informazioni dettagliate e risultati di un'indagine automatizzata in Office 365
 
@@ -96,7 +96,7 @@ Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azion
 |Corretti | L'inchiesta è stata completata ed è stata completamente rimediata (tutte le azioni sono state approvate) |
 |Parzialmente rimediato | L'inchiesta è terminata e sono state approvate alcune delle azioni consigliate |
 |Terminato dall'utente | Un amministratore ha terminato l'indagine |
-|Failed | Si è verificato un errore durante l'indagine che impediva di raggiungere una conclusione sulle minacce |
+|Esito negativo | Si è verificato un errore durante l'indagine che impediva di raggiungere una conclusione sulle minacce |
 |Accodamento tramite limitazione | L'indagine è in attesa di analisi a causa di limitazioni di elaborazione del sistema (per proteggere le prestazioni del servizio) |
 |Terminata mediante limitazione | L'inchiesta non è stata completata in tempi sufficienti a causa di limitazioni del volume e dell'elaborazione del sistema di analisi. È possibile riattivare l'indagine selezionando il messaggio di posta elettronica in Esplora risorse e selezionando l'azione indaga. |
 
