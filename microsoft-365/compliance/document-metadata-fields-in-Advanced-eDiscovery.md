@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo vengono definiti i campi dei metadati per i documenti in un set di revisione in un caso in Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: ae268c1368933c729177d6083294e7e7a8735958
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
+ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074923"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "42651840"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi dei metadati del documento in Advanced eDiscovery
 
 Nella tabella seguente sono elencati i campi dei metadati per i documenti in un set di revisione in un caso in Advanced eDiscovery. La tabella contiene le informazioni seguenti:
 
-- **Name campo e nome** campo di **visualizzazione:** nome del campo dei metadati e nome del campo visualizzato quando si visualizzano i metadati dei file di un documento selezionato in un set di revisione. Si noti che alcuni campi dei metadati non sono inclusi quando si visualizzano i metadati dei file di un documento. Questi campi sono evidenziati con un asterisco (*).
+- **Name campo e nome** campo di **visualizzazione:** nome del campo dei metadati e nome del campo visualizzato quando si visualizzano i metadati dei file di un documento selezionato in un set di revisione. Quando si visualizzano i metadati dei file di un documento, non vengono inclusi alcuni campi di metadati. Questi campi sono evidenziati con un asterisco (*).
 
 - **Nome del campo ricercabile:** Nome della proprietà di cui è possibile eseguire la ricerca durante l'esecuzione di una [query del set di revisione](review-set-search.md). Una cella vuota indica che non è possibile cercare il campo in una query del set di revisione.
 
--  **Nome del campo esportato:** Nome del campo dei metadati incluso quando vengono esportati i documenti.  Una cella vuota indica che il campo non è incluso nei metadati esportati.
+- **Nome del campo esportato:** Nome del campo dei metadati incluso quando vengono esportati i documenti.  Una cella vuota indica che il campo non è incluso nei metadati esportati.
 
 - **Descrizione:** Descrizione del campo dei metadati.
 
@@ -77,7 +77,7 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Sicurezza della posta elettronica|EmailSecurity|Email_security|Impostazione di sicurezza del messaggio: **0** -None; **1** -firmato; **2** -crittografato; **3** -crittografati e firmati.|
 |Sensibilità della posta elettronica|EmailSensitivity|email_sensitivity|Impostazione della sensibilità del messaggio: **0** -None; **1** personale; **2** -privato; **3** -CompanyConfidential.|
 |Set di messaggi di posta elettronica|Messaggi di posta elettronica|Email_set|ID gruppo per tutti i messaggi nello stesso set di posta elettronica.|
-|EmailThread*||Email_thread|Posizione del messaggio all'interno del set di messaggi di posta elettronica; è costituito dagli ID dei nodi dalla radice al messaggio corrente. , separato dal punto.|
+|EmailThread*||Email_thread|Posizione del messaggio all'interno del set di messaggi di posta elettronica; è costituito da ID di nodi dalla radice al messaggio corrente e separati da punti (.).|
 |Tipo di contenuto Estratto||Extracted_content_type|Tipo di contenuto estratto, sotto forma di tipo MIME; ad esempio, **image/jpeg**|
 |ExtractedTextLength*||Extracted_text_length|Numero di caratteri nel testo estratto.|
 |Pertinenza della famiglia Punteggio caso problema 1 *||Family_relevance_score_case_issue_1|Pertinenza della famiglia Punteggio caso problema 1 dalla pertinenza.|
@@ -93,7 +93,7 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Ha allegato|HasAttachment|Email_has_attachment|Indica se il messaggio contiene allegati o meno.|
 |Ha un avvocato|HasAttorney||Ha valore **true** se almeno uno dei partecipanti è presente nell'elenco degli avvocati. in caso contrario, il valore è **false**.|
 |HasText||Has_text|Indica se il testo dell'elemento è o meno; i valori possibili sono **true** e **false**.|
-|ID non modificabile|ImmutableId|Immutable_ID|ID non modificabile memorizzato in Office 365.|
+|ID non modificabile||Immutable_ID|Questo ID viene utilizzato per identificare in modo univoco un documento all'interno di un set di revisione. Questo campo non può essere utilizzato in una ricerca set di revisione e l'ID non può essere utilizzato per accedere a un documento nel relativo percorso nativo.|
 |Tipo inclusivo|InclusiveType|Inclusive_type|Tipo incluso calcolato per analisi: **0** -non incluso; **1** -Inclusive; **2** -incluso meno; copia **3** -inclusive.|
 |In Rispondi a ID||In_reply_to_ID|In Rispondi a ID del messaggio.|
 |È rappresentativo|Rappresentante|Is_representative|Un documento in ogni set di duplicati esatti è contrassegnato come rappresentante.|
@@ -111,8 +111,8 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Interno nativo|NativeExtension|Native_extension|Interno nativo dell'elemento.|
 |Nome file nativo|NativeFileName|Native_file_name|Nome file nativo dell'elemento.|
 |NativeMD5||Native_MD5|Hash MD5 del flusso di file.|
-|Ordinamento ND/ET: esclusione degli allegati|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenazione del set di posta elettronica e del set ND per l'ordinamento efficiente al momento della revisione; **D** viene aggiunto come prefisso ai set **ND ed e** viene aggiunto ai set di posta elettronica.|
-|Ordinamento ND/ET: inclusi gli allegati|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenazione del set di posta elettronica e del set ND per l'ordinamento efficiente al momento della revisione; **D** viene aggiunto come prefisso ai set **ND ed e** viene aggiunto ai set di posta elettronica. Ogni messaggio di posta elettronica all'interno di un set di posta elettronica è seguito dagli allegati corretti.|
+|Ordinamento ND/ET: esclusione degli allegati|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenazione del set di thread di posta elettronica e del set di quasi duplicati (ND). Questo campo viene utilizzato per l'ordinamento efficiente al momento della revisione. Un **D** è preceduto da set ND e un **e** è preceduto ai set di et.|
+|Ordinamento ND/ET: inclusi gli allegati|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenazione di un set di thread di posta elettronica e di set quasi duplicati (ND). Questo campo viene utilizzato per l'ordinamento efficiente al momento della revisione. Un **D** è preceduto da set ND e un **e** è preceduto ai set di et. Ogni elemento di posta elettronica in un set di ET è seguito dagli allegati corretti.|
 |Rilevanza normalizzata caso problema 1||Normalized_relevance_score_case_issue_1|Rilevanza normalizzata caso problema 1 dalla pertinenza.|
 |Autori di O365||O365_authors|Autore da SharePoint.|
 |O365 creato da||O365_created_by|Creato da da SharePoint.|
@@ -149,7 +149,7 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 |Oggetto|Oggetto|Email_subject|Oggetto del messaggio.|
 |Subject/title|SubjectTitle||Campo calcolato che include l'oggetto o il titolo dell'elemento.|
 |Tag per caso problema 1||Tagged_by_Case_issue_1|Utente che ha contrassegnato questo documento per il caso problema 1 in rilevanza.|
-|Tag|Tag|Tag|Tag applicati in un set di revisione.|
+|Categorie|Categorie|Categorie|Tag applicati in un set di revisione.|
 |Elenco temi|Tema|Themes_list|Elenco temi come calcolato per l'analisi.|
 |Titolo|Titolo|Doc_title|Titolo dei metadati del documento.|
 |A|A|Email_to|To Field per i tipi di messaggio. Format è **DisplayName\<SmtpAddress>**|
