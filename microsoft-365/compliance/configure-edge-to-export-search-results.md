@@ -11,36 +11,35 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
-description: È necessario abilitare il supporto ClickOnce per l'utilizzo di Microsoft Edge per esportare i risultati della ricerca dalla ricerca contenuto e eDiscovery nel centro sicurezza e conformità.
-ms.openlocfilehash: db70b4cdbc57f519db3b6b962eb8aa43585ba335
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: È necessario abilitare il supporto ClickOnce per utilizzare la versione più recente di Microsoft Edge per scaricare i risultati della ricerca dalla ricerca di contenuto e eDiscovery nel centro sicurezza e conformità.
+ms.openlocfilehash: 80924b124521b24ffabf1e0273802265cd715500
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078577"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710345"
 ---
 # <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>Utilizzare lo strumento di esportazione di eDiscovery di Office 365 in Microsoft Edge
 
-A seguito delle recenti modifiche apportate a Microsoft Edge, il supporto ClickOnce non è più abilitato per impostazione predefinita. Per continuare a utilizzare lo strumento di esportazione di Microsoft Office 365 eDiscovery per scaricare i risultati della ricerca di contenuto o eDiscovery, è necessario utilizzare [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) o abilitare il supporto di ClickOnce in Microsoft Edge.
+A seguito delle recenti modifiche apportate alla versione più recente di Microsoft Edge, il supporto ClickOnce non è più abilitato per impostazione predefinita. Per continuare a utilizzare lo strumento di esportazione di Microsoft Office 365 eDiscovery per scaricare i risultati della ricerca contenuto o eDiscovery, è necessario utilizzare [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) o abilitare il supporto ClickOnce nella versione più recente di Microsoft Edge.
 
-## <a name="how-to-enable-clickonce-support-in-microsoft-edge"></a>Come abilitare il supporto ClickOnce in Microsoft Edge
+## <a name="enable-clickonce-support-in-microsoft-edge"></a>Abilitare il supporto ClickOnce in Microsoft Edge
 
-1. In Microsoft Edge, passare a **edge://flags/#edge-fare clic-una volta**.
+1. In Microsoft Edge, passare a **edge://flags/#edge-fare clic su-una volta**.
 
 2. Se il valore esistente è impostato su **predefinito** o **disabilitato** nell'elenco a discesa, impostarlo su **abilitato**.
-    
+
    ![](../media/ClickOnceimage1.png)
 
 3. Scorrere verso il basso fino alla parte inferiore della finestra del browser e fare clic su **Riavvia** per riavviare Edge.
 
    ![](../media/ClickOnceimage2.png)
 
-**Nota:** Le organizzazioni possono utilizzare criteri di gruppo per disabilitare il supporto ClickOnce. Per verificare se è presente un criterio di organizzazione per il supporto di ClickOnce, passare a **Edge://Policy**. Nella schermata seguente viene mostrato che ClickOnce è abilitata all'interno dell'intera organizzazione. Se il valore di questo criterio è impostato su **false**, sarà necessario contattare un amministratore dell'organizzazione.
+**Nota:** Le organizzazioni possono utilizzare criteri di gruppo per disabilitare il supporto ClickOnce. Per verificare se è presente un criterio di organizzazione per il supporto di ClickOnce, accedere a **Edge://Policy**. Nella schermata seguente viene mostrato che ClickOnce è abilitata all'interno dell'intera organizzazione. Se il valore di questo criterio è impostato su **false**, sarà necessario contattare un amministratore dell'organizzazione.
 
 ![](../media/ClickOnceimage3.png)
 
-## <a name="install-and-run-the-office-365-ediscovery-export-tool"></a>Installare ed eseguire lo strumento di esportazione di eDiscovery di Office 365
+## <a name="install-and-run-the-ediscovery-export-tool"></a>Installare ed eseguire lo strumento di esportazione di eDiscovery
 
 1. Fare clic su **Scarica risultati** nella pagina a comparsa di un'esportazione in ricerca contenuto o in un caso di eDiscovery.
 

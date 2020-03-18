@@ -1,5 +1,5 @@
 ---
-title: Panoramica delle barriere informative
+title: Informazioni sulle barriere informative
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,14 +13,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilizzare le barriere informative per garantire la conformità della comunicazione tramite Microsoft teams all'interno dell'organizzazione.
-ms.openlocfilehash: 95d3268830fe506000416e2281a49325fb95efec
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
+ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600663"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42692653"
 ---
-# <a name="information-barriers"></a>Barriere informative
+# <a name="learn-about-information-barriers"></a>Informazioni sulle barriere informative
 
 ## <a name="overview"></a>Panoramica
 
@@ -36,7 +36,7 @@ Gli ostacoli alle informazioni stanno per essere implementati ora, a partire da 
 Per tutti questi scenari di esempio e altro ancora, è possibile definire i criteri di barriera delle informazioni per impedire o consentire le comunicazioni in Microsoft teams. Tali criteri possono impedire agli utenti di effettuare chiamate o chattare con coloro che non devono o consentire agli utenti di comunicare solo con gruppi specifici in Microsoft teams. Con i criteri di protezione delle informazioni in vigore, quando gli utenti interessati da tali criteri tentano di comunicare con altri membri di Microsoft teams, vengono eseguiti i controlli per impedire (o consentire) la comunicazione (come definito dai criteri di barriera delle informazioni). Per ulteriori informazioni sull'esperienza utente con barriere informative, vedere [barriere informative in Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
 > [!IMPORTANT]
-> Attualmente, le barriere informative non si applicano alle comunicazioni di posta elettronica o alla condivisione di file tramite SharePoint Online o OneDrive. Inoltre, le barriere informative sono indipendenti dai [limiti di conformità](tagging-and-assessment-in-advanced-ediscovery.md).<p>Prima di definire e applicare i criteri di barriera delle informazioni, assicurarsi che l'organizzazione non disponga di [Criteri rubrica di Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) in vigore. (Le barriere informative si basano sui criteri della rubrica). 
+> Attualmente, le barriere informative non si applicano alle comunicazioni di posta elettronica o alla condivisione di file tramite SharePoint Online o OneDrive. Inoltre, le barriere informative sono indipendenti dai [limiti di conformità](set-up-compliance-boundaries.md).<p>Prima di definire e applicare i criteri di barriera delle informazioni, assicurarsi che l'organizzazione non disponga di [Criteri rubrica di Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) in vigore. (Le barriere informative si basano sui criteri della rubrica). 
 
 ## <a name="what-happens-with-information-barriers"></a>Cosa accade con barriere informative
 

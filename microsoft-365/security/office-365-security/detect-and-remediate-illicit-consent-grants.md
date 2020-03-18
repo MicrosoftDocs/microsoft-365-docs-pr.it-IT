@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
-ms.openlocfilehash: e11518b0b16b7ee922f18b0ef771d36f608e41b7
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363052"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710525"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Rilevare e rimediare a concessioni di consenso illecite in Office 365
 
@@ -29,7 +29,12 @@ ms.locfileid: "42363052"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Che cos'è l'attacco di concessione di autorizzazioni illecite in Office 365?
 
-In un attacco di concessione di consenso illecito, l'utente malintenzionato crea un'applicazione registrata in Azure che richiede l'accesso ai dati, ad esempio le informazioni di contatto, la posta elettronica o i documenti. L'utente malintenzionato, quindi, inganna l'utilizzatore finale per concedere a tale applicazione il consenso per accedere ai propri dati tramite un attacco di phishing o iniettando codice illecito in un sito Web attendibile. Dopo che l'applicazione illecita ha ottenuto il consenso, ha accesso ai dati a livello di account senza la necessità di un account organizzativo. I normali passaggi di correzione, come la reimpostazione delle password per gli account violati o la richiesta di autenticazione a più fattori (AMF) per gli account, non sono efficaci rispetto a questo tipo di attacco, poiché si tratta di applicazioni di terze parti e sono esterne all'organizzazione. Questi attacchi sfruttano un modello di interazione che presuppone che l'entità che chiama le informazioni sia l'automazione e non un essere umano.
+In un attacco di concessione di consenso illecito, l'utente malintenzionato crea un'applicazione registrata in Azure che richiede l'accesso ai dati, ad esempio le informazioni di contatto, la posta elettronica o i documenti. L'utente malintenzionato, quindi, inganna l'utilizzatore finale per concedere a tale applicazione il consenso per accedere ai propri dati tramite un attacco di phishing o iniettando codice illecito in un sito Web attendibile. Dopo che l'applicazione illecita ha ottenuto il consenso, ha accesso ai dati a livello di account senza la necessità di un account organizzativo. I normali passaggi di correzione, come la reimpostazione delle password per gli account violati o la richiesta di autenticazione a più fattori (AMF) per gli account, non sono efficaci rispetto a questo tipo di attacco, poiché si tratta di applicazioni di terze parti e sono esterne all'organizzazione. 
+
+Questi attacchi sfruttano un modello di interazione che presuppone che l'entità che chiama le informazioni sia l'automazione e non un essere umano.
+
+> [!IMPORTANT]
+> Si sospetta che si verifichino problemi con il consenso illecito-sovvenzioni da un'app, in questo momento? Microsoft cloud app Security (MCAS) dispone di strumenti per rilevare, analizzare e correggere le app OAuth. In questo articolo di MCAS è presente un'esercitazione che illustra come procedere per l' [analisi delle app a rischio di OAuth](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth). È inoltre possibile impostare i [criteri di applicazione OAuth](https://docs.microsoft.com/cloud-app-security/app-permission-policy) per esaminare le autorizzazioni richieste dall'app, che gli utenti autorizzano tali app e approvare o vietare ampiamente queste richieste di autorizzazione.
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Che cosa comporta un attacco di consenso illecito per l'assenso in Office 365?
 
@@ -48,7 +53,7 @@ In un attacco di concessione di consenso illecito, l'utente malintenzionato crea
 5. Fare clic sul risultato per visualizzare i dettagli dell'attività. Fare clic su **altre informazioni** per ottenere informazioni dettagliate sull'attività. Controllare se IsAdminContent è impostato su true.
 
 > [!NOTE]
-> • Possono essere necessari fino a 30 minuti o fino a 24 ore dopo che si è verificato un evento per la voce del registro di controllo corrispondente da visualizzare nei risultati della ricerca. <br/><br/> • Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Office 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> * La voce del registro di controllo corrispondente viene visualizzata nei risultati della ricerca dopo un evento di 30 minuti fino a 24 ore. <br/><br/> Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Office 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 Se questo valore è impostato su true, indica che un utente con accesso amministratore globale può aver concesso l'accesso esteso ai dati. Se questa operazione non è prevista, eseguire le operazioni necessarie per [confermare un attacco](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Come confermare un attacco
@@ -98,7 +103,7 @@ Il modo più semplice per verificare l'attacco di concessione di consenso illeci
 - Amministratore locale nel computer da cui verranno eseguiti gli script.
 
 > [!IMPORTANT]
-> È consigliabile richiedere l'autenticazione a più fattori per l'account amministrativo. Questo script supporta l'autenticazione Mae.
+> È ***consigliabile*** richiedere l'autenticazione a più fattori per l'account amministrativo. Questo script supporta l'autenticazione Mae.
 
 1. Accedere al computer in cui verrà eseguito lo script con i diritti di amministratore locale.
 

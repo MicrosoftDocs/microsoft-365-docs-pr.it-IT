@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore di dati per importare i dati dei dipendenti dal sistema HR (Human Resources) dell'organizzazione a Microsoft 365. In questo modo è possibile utilizzare i dati HR nei criteri di gestione dei rischi Insider utili per rilevare l'attività da parte di utenti specifici che possono rappresentare un rischio interno per la propria organizzazione.
-ms.openlocfilehash: 4b01571d5a56d53861481dac6cb399e227ca0db6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 53c1a44ad1e27d2d1002680faee56ae88e3e0921
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073026"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710545"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurare un connettore per l'importazione dei dati HR
 
 È possibile configurare un connettore di dati nel centro conformità di Microsoft 365 per importare i dati delle risorse umane (HR), ad esempio la data in cui un dipendente ha inviato le proprie dimissioni e la data dell'ultimo giorno del dipendente. Questo tipo di dati HR può quindi essere utilizzato dalle soluzioni Microsoft per la protezione delle informazioni, ad esempio la nuova [soluzione di gestione dei rischi Insider](insider-risk-management.md), per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione. La configurazione di un connettore HR consiste nella creazione di un'app in Azure Active Directory utilizzata per l'autenticazione tramite connettore, la creazione di un file di mapping CSV che contenga i dati HR, la creazione di un connettore di dati nel centro conformità e l'esecuzione di uno script (su un base pianificata) che consente di ingerire i dati HR nel file CSV nel cloud Microsoft. Successivamente, il connettore dati viene utilizzato Microsoft Compliance Solutions (come Insider Risk Management) per accedere ai dati HR che sono stati importati nell'organizzazione Microsoft 365.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 - L'organizzazione deve acconsentire a consentire al servizio di importazione di Office 365 di accedere ai dati nell'organizzazione. Per acconsentire a questa richiesta, accedere a [Questa pagina](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), accedere con le credenziali di un amministratore globale di Microsoft 365 e quindi accettare la richiesta. È necessario completare questo passaggio prima di poter creare correttamente il connettore HR nel passaggio 3.
 
@@ -35,7 +35,7 @@ ms.locfileid: "42073026"
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Passaggio 1: creare un'app in Azure Active Directory
 
-Il primo passaggio consiste nel creare e registrare una nuova app in Azure Active Directory (AAD). L'app corrisponderà al connettore HR creato nel passaggio 3.  La creazione di questa app consentirà a AAD di autenticare il connettore HR quando viene eseguito e tenta di accedere all'organizzazione. Questa app verrà utilizzata anche per autenticare lo script eseguito nel passaggio 4 per caricare i dati HR nel cloud Microsoft. Durante la creazione di questa app AAD, assicurarsi di salvare le informazioni seguenti. Questi valori verranno utilizzati nei passaggi successivi è questo processo.
+Il primo passaggio consiste nel creare e registrare una nuova app in Azure Active Directory (AAD). L'app corrisponderà al connettore HR creato nel passaggio 3. La creazione di questa app consentirà a AAD di autenticare il connettore HR quando viene eseguito e tenta di accedere all'organizzazione. Questa app verrà utilizzata anche per autenticare lo script eseguito nel passaggio 4 per caricare i dati HR nel cloud Microsoft. Durante la creazione di questa app AAD, assicurarsi di salvare le informazioni seguenti. Questi valori verranno utilizzati nei passaggi successivi.
 
 - ID applicazione AAD (denominato anche ID *app* o ID *client*)
 
@@ -43,7 +43,7 @@ Il primo passaggio consiste nel creare e registrare una nuova app in Azure Activ
 
 - ID tenant (denominato anche *ID directory*)
 
-Per istruzioni dettagliate per la creazione di un'app in AAD, vedere Creazione di [un'applicazione AAD](https://docs.microsoft.com/azure/kusto/management/access-control/how-to-provision-aad-app)
+Per istruzioni dettagliate per la creazione di un'app in AAD, vedere registrazione di [un'applicazione con la piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>Passaggio 2: preparare un file CSV con i dati HR
 
@@ -92,7 +92,7 @@ Il passaggio successivo consiste nel creare un connettore HR nel centro conformi
 
    Viene visualizzata una pagina di stato che conferma che il connettore è stato creato. Questa pagina contiene anche l'ID del processo. Questo ID processo è necessario per eseguire lo script nel passaggio successivo. È possibile copiarlo da questa pagina o dalla pagina del riquadro a comparsa del connettore.
 
-7. Fare clic su **Fine**.
+7. Fare clic su **Fatto**.
    
    Il nuovo connettore viene visualizzato nell'elenco della scheda **connettori** . 
 
@@ -159,7 +159,7 @@ Dopo aver creato il connettore HR ed eseguito lo script per caricare i dati HR, 
 
    ![Il file di registro del connettore HR Visualizza le righe di numero da file CSV caricati](../media/HRConnectorLogFile.png)
 
-   Il campo **RecordsSaved** indica il numero di righe nel file CSV che è stato caricato. Ad esempio, se il file CSV contiene 4 righe, il valore dei campi **RecordsSaved** è 4, se lo script ha correttamente caricato tutte le righe del file CSV.
+   Il campo **RecordsSaved** indica il numero di righe nel file CSV che è stato caricato. Ad esempio, se il file CSV contiene quattro righe, il valore dei campi **RecordsSaved** è 4, se lo script ha correttamente caricato tutte le righe del file CSV.
 
 Se non è stato eseguito lo script nel passaggio 4, viene visualizzato un collegamento per scaricare lo script nell' **Ultima importazione**. È possibile scaricare lo script e quindi seguire i passaggi descritti nel passaggio 4 per eseguirlo.
 

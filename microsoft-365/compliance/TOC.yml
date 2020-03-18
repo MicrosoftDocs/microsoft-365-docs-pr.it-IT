@@ -123,7 +123,7 @@
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: Funzionamento della prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange
               href: how-dlp-works-between-admin-centers.md
-    - name: Tipi di informazioni sensibili
+    - name: Tipi di informazioni riservate
       items:
         - name: Elementi cercati dai tipi di informazioni sensibili
           href: what-the-sensitive-information-types-look-for.md
@@ -352,6 +352,8 @@
               href: export-search-results.md
             - name: Esportare un report di ricerca
               href: export-a-content-search-report.md
+            - name: Utilizzare Microsoft Edge per scaricare i risultati della ricerca
+              href: configure-edge-to-export-search-results.md
             - name: Cercare ed eliminare messaggi di posta elettronica
               href: search-for-and-delete-messages-in-your-organization.md
             - name: Eseguire una ricerca nelle cassette postali basate sul cloud degli utenti locali
@@ -428,6 +430,8 @@
               href: ediscovery-troubleshooting-common-issues.md
             - name: Riprovare una ricerca non riuscita
               href: retry-failed-content-search.md
+            - name: Utilizzare Microsoft Edge per scaricare i risultati della ricerca
+              href: configure-edge-to-export-search-results.md
     - name: Advanced eDiscovery
       items:
         - name: Panoramica di Advanced eDiscovery
@@ -549,7 +553,7 @@
               href: advanced-ediscovery-reports.md
             - name: Risoluzione dei problemi di AzCopy
               href: troubleshooting-azcopy.md
-    - name: Advanced eDiscovery (classica)
+    - name: Advanced eDiscovery (classico)
       items:
         - name: Panoramica di Advanced eDiscovery (Classic)
           href: office-365-advanced-ediscovery.md
