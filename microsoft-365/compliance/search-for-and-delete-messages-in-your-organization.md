@@ -17,27 +17,27 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usare la funzionalità di ricerca e rimozione nel Centro sicurezza e conformità di Office 365 per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: 27340bf832feee0dc7b5222f187816b0dfa1bb59
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 9e3825fbbe3c058e6f8fff48511e4e450b3e54e9
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634164"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710515"
 ---
-# <a name="search-for-and-delete-email-messages-in-your-office-365-organization"></a>Cercare i messaggi di posta elettronica ed eliminarli dall'organizzazione di Office 365
+# <a name="search-for-and-delete-email-messages"></a>Cercare ed eliminare messaggi di posta elettronica
 
 **Questo articolo è rivolto agli amministratori. Per cercare gli elementi nella propria cassetta postale per eliminarli, vedere [Trovare un messaggio o un elemento con Ricerca immediata](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
 È possibile utilizzare la funzionalità Ricerca contenuto in Office 365 per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali nell'organizzazione. Ciò è utile per trovare e rimuovere messaggi potenzialmente dannosi o ad alto rischio, ad esempio:
   
 - Messaggi contenenti virus o allegati pericolosi
-    
+
 - Messaggi di phishing
-    
+
 - Messaggi contenenti dati sensibili
-    
+
 > [!CAUTION]
-> Con l’operazione di ricerca e rimozione, chiunque abbia le autorizzazioni necessarie può eliminare i messaggi di posta elettronica dalle cassette postali nell'organizzazione. 
+> Con l’operazione di ricerca e rimozione, chiunque abbia le autorizzazioni necessarie può eliminare i messaggi di posta elettronica dalle cassette postali nell'organizzazione.
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
