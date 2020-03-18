@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Informazioni sulle opzioni di pagamento disponibili per il pagamento dell'abbonamento a Office 365 for business.
+description: Informazioni sulle opzioni di pagamento disponibili per l'abbonamento a Office 365 for Business.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 ms.openlocfilehash: 1b5516cdc87d792425c89a486ae9cb0bc2bc0ee4
 ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/13/2020
 ms.locfileid: "42633714"
 ---
 # <a name="pay-for-your-office-365-for-business-subscription"></a>Pagare l'abbonamento a Office 365 per le aziende
 
-Quando si configura l'abbonamento, è possibile scegliere di pagare tramite carta di credito o pagamenti con account bancario o pagare tramite fattura tramite assegno o bonifico elettronico (EFT, Electronic Funds Transfer). La modalità di pagamento continuerà a essere usata per i periodi di fatturazione successivi, a meno che non si decida di [cambiare modalità di pagamento](change-payment-method.md).
+Quando si configura l'abbonamento, è possibile pagare con addebito sulla carta di credito o sul conto bancario o tramite fattura usando un assegno o un bonifico bancario. La modalità di pagamento continuerà a essere usata per i periodi di fatturazione successivi, a meno che non si decida di [cambiare modalità di pagamento](change-payment-method.md).
 
 > [!NOTE]
 > Il pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
@@ -44,7 +44,7 @@ Quando si sceglie il pagamento tramite carta di credito o conto corrente bancari
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>Cosa succede se la carta di credito viene rifiutata e si supera così la scadenza del pagamento?
 
-Se si paga con carta di credito e questa viene rifiutata, si riceverà un messaggio di posta elettronica che informa che non è stato possibile elaborare il pagamento. Le cause possono essere diverse, inclusa la carta di credito scaduta. La transazione verrà rielaborata con cadenza di pochi giorni. Se nessun tentativo riesce, si continueranno a ricevere avvisi in merito tramite posta elettronica. È possibile utilizzare la funzionalità **Risolvi saldo** in qualsiasi momento per modificare le informazioni sulla carta di credito e reinviare immediatamente il pagamento.
+Se si paga con carta di credito e questa viene rifiutata, si riceverà un messaggio di posta elettronica che informa che non è stato possibile elaborare il pagamento. Le cause possono essere diverse, inclusa la carta di credito scaduta. La transazione verrà rielaborata con cadenza di pochi giorni. Se nessun tentativo riesce, si continueranno a ricevere avvisi in merito tramite posta elettronica. È possibile aggiornare le informazioni sulla carta di credito in qualsiasi momento e inviare immediatamente il pagamento usando la funzionalità **Liquidazione del saldo**.
 
 > [!NOTE]
 > Se si cambia carta di credito per pagare il saldo insoluto per l'abbonamento, sulla nuova carta verranno addebitati anche tutti i futuri pagamenti automatici per quello stesso abbonamento.
@@ -53,33 +53,33 @@ Se si paga con carta di credito e questa viene rifiutata, si riceverà un messag
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 
-2. Trovare la sottoscrizione con il saldo in sospeso. Nella sezione **fatturazione** , accanto a **sottoscrizione ha un pagamento a scadenza**, selezionare **liquida saldo**.
+2. Trovare l'abbonamento con il saldo insoluto. Nella sezione **Fatturazione**, accanto a **L'abbonamento ha un pagamento scaduto** selezionare **Liquidazione del saldo**.
 
-3. Se si è il proprietario della carta di credito, è possibile modificare la data di scadenza della scheda, scegliere una carta diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
+3. Se si è il proprietario della carta di credito, è possibile cambiare la data di scadenza della carta, scegliere una carta diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
 
     > [!NOTE]
-    > Quando si utilizza la funzionalità di **bilanciamento del saldo** , viene addebitato l'intero saldo inevaso per l'account, il quale potrebbe essere superiore all'importo dovuto visualizzato altrove.
+    > Scegliendo **Liquidazione del saldo** viene addebitato l'intero saldo insoluto sull'account, che potrebbe essere superiore all'importo dovuto visualizzato altrove.
 
-4. Se non si è il proprietario della carta di credito, è possibile scegliere una carta di credito diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
+4. Se non si è il titolare della carta di credito, è possibile scegliere una carta diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
 
-5. Dopo aver aggiornato le informazioni sulla carta di credito o aver modificato la carta di credito utilizzata per pagare l'abbonamento, selezionare **Salva**.
+5. Dopo aver aggiornato le informazioni della carta di credito o cambiato la carta su cui addebitare l'abbonamento, scegliere **Salva**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
-2. Selezionare l'abbonamento che si desidera modificare. Nella sezione **My Bill** selezionare **paga ora**.
+2. Selezionare l'abbonamento che si vuole cambiare. Nella sezione **La mia fattura** scegliere **Paga adesso**.
 
-3. Se si è il proprietario della carta di credito, è possibile modificare la data di scadenza della scheda, scegliere una carta diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
+3. Se si è il proprietario della carta di credito, è possibile cambiare la data di scadenza della carta, scegliere una carta diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
 
     > [!NOTE]
     > Scegliendo **Paga adesso**, viene addebitato l'intero saldo insoluto sull'account, che potrebbe essere superiore all'importo dovuto visualizzato altrove.
 
-4. Se non si è il proprietario della carta di credito, è possibile scegliere una carta di credito diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
+4. Se non si è il titolare della carta di credito, è possibile scegliere una carta diversa o [aggiungere una nuova carta](add-update-or-remove-credit-card-or-bank-account.md).
 
-5. Dopo aver aggiornato le informazioni sulla carta di credito o aver modificato la carta di credito utilizzata per pagare l'abbonamento, selezionare **Invia**. Verrà visualizzato il messaggio di conferma seguente: "La modalità di pagamento è stata aggiornata e tutti gli addebiti arretrati sono stati liquidati. Grazie".
+5. Dopo aver aggiornato le informazioni della carta di credito o cambiato la carta su cui addebitare l'abbonamento, scegliere **Invia**. Verrà visualizzato il messaggio di conferma seguente: "La modalità di pagamento è stata aggiornata e tutti gli addebiti arretrati sono stati liquidati. Grazie".
 
 ::: moniker-end
 
@@ -88,19 +88,19 @@ Se si paga con carta di credito e questa viene rifiutata, si riceverà un messag
 Se il costo dell'abbonamento è superiore a un determinato importo, che varia in base alla posizione del servizio, è possibile scegliere il pagamento tramite fattura, con assegno o bonifico bancario. Per il pagamento di fatture di importo più elevato potrebbe essere richiesta una verifica del credito. Se è necessaria una verifica del credito, questa informazione verrà comunicata al momento dell'acquisto dell'abbonamento. Se inoltre si accetta di essere contattati, si riceverà un messaggio di posta elettronica con altre informazioni sulla richiesta di approvazione del credito. Le verifiche del credito vengono in genere completate in due giorni lavorativi.
 
 > [!NOTE]
-> I clienti che vivono in Brasile possono pagare un abbonamento con un boleto bancario. Se è stata selezionata questa opzione, la billetta per il pagamento viene inviata al messaggio di posta elettronica fornito durante l'acquisto della sottoscrizione entro 10 giorni lavorativi dalla data dell'ordine. La data di scadenza è di 30 giorni dopo la data dell'ordine. Se non si riceve il boleto tramite posta elettronica, controllare la cartella posta indesiderata o contattare il supporto. <br><br>Se si preferisce, è possibile effettuare il pagamento tramite trasferimento elettronico tra account. L'Agenzia e il numero di conto sono nella parte inferiore della fattura. È necessario immettere il numero di fattura nel campo identificazione trasferimento.
+> I clienti che vivono in Brasile possono pagare un abbonamento tramite Boleto Bancario. Se è stata selezionata questa opzione, il bollettino per il pagamento viene inviato all'indirizzo di posta elettronica specificato durante l'acquisto dell'abbonamento entro 10 giorni lavorativi dalla data dell'ordine. La data di scadenza è 30 giorni dopo la data dell'ordine. Se non si riceve il Boleto tramite posta elettronica, controllare la cartella della posta indesiderata o contattare il supporto. <br><br>Se si preferisce, è possibile scegliere il pagamento tramite bonifico bancario. L'agenzia e il numero di conto corrente sono indicati nella parte inferiore della fattura. È necessario immettere il numero di fattura nel campo di identificazione del bonifico.
 
 Se si paga l'abbonamento tramite fattura, si riceverà un messaggio di posta elettronica che indica che l'estratto conto è pronto per essere visualizzato. Questo messaggio di posta elettronica non contiene una copia dell'estratto conto. Tuttavia, è anche possibile scegliere di [Ricevere una copia dell'estratto conto tramite posta elettronica](#receive-a-copy-of-your-billing-statement-in-email). L'estratto conto include i dettagli sulle opzioni di pagamento. Se si immette un numero di ordine d'acquisto quando si acquista un abbonamento, il numero viene visualizzato nell'estratto conto. Per informazioni su come accedere agli estratti conto, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
 
 > [!NOTE]
-> Per impostazione predefinita, le notifiche per le fatture dell'organizzazione vengono inviate all'indirizzo di posta elettronica di Office 365 e all'indirizzo alternativo di ogni amministratore globale e di fatturazione dell'organizzazione. Per modificare l'indirizzo di posta elettronica alternativo, vedere [cambiare gli indirizzi di fatturazione](change-your-billing-addresses.md).
+> Per impostazione predefinita, le notifiche per le fatture dell'organizzazione vengono inviate all'indirizzo di posta elettronica di Office 365 e all'indirizzo alternativo di ogni amministratore globale e di fatturazione dell'organizzazione. Per cambiare l'indirizzo di posta elettronica alternativo, vedere [Cambiare gli indirizzi di fatturazione](change-your-billing-addresses.md).
 
 ### <a name="can-i-pay-my-bill-online"></a>È possibile pagare la fattura online?
 
 Se l'abbonamento è configurato per il pagamento tramite fattura, i pagamenti diretti online non possono essere accettati. È tuttavia possibile [cambiare la modalità di pagamento scegliendo la carta di credito o il conto corrente bancario](change-payment-method.md), nel qual caso l'importo verrà addebitato automaticamente sulla carta o sul conto al termine di ogni periodo di validità del servizio. Per Azure, vedere [Come modificare la carta di credito usata per pagare una sottoscrizione di Azure](https://go.microsoft.com/fwlink/p/?LinkId=718057).
 
 > [!NOTE]
-> Se si passa al pagamento automatico tramite carta di credito, assicurarsi di estinguere prima tutti i saldi in sospeso. Consultare l'estratto conto per le opzioni di pagamento e le istruzioni. Per ulteriori informazioni, vedere [understand your fattura](understand-your-invoice2.md).
+> Se si passa al pagamento automatico tramite carta di credito, assicurarsi di estinguere prima tutti i saldi in sospeso. Consultare l'estratto conto per le opzioni di pagamento e le istruzioni. Per altre informazioni, vedere [Informazioni sulla fattura](understand-your-invoice2.md).
 
 ### <a name="where-do-i-send-my-check-or-eft-payment"></a>Dove è possibile inviare il pagamento tramite assegno o bonifico?
 
@@ -109,10 +109,10 @@ Se l'abbonamento è configurato per il pagamento tramite fattura, i pagamenti di
 
 In caso di dubbi sull'importo dovuto, [controllare la fattura e la cronologia della fatturazione online](view-your-bill-or-invoice.md). Per Azure, vedere [Come scaricare la fattura e i dati di utilizzo giornalieri di Azure](https://go.microsoft.com/fwlink/p/?LinkId=718058).
 
- **Scegliere il paese o l'area geografica "Bill-to" dal menu a discesa.**
+ **Selezionare il paese/area geografica di destinazione della fattura nel menu a discesa sotto.**
 
 > [!div class="op_single_selector"]
-> - **Scegliere il proprio paese o area geografica**
+> - **Selezionare il paese o l'area geografica**
 > - [Afghanistan](../pay/afghanistan.md)
 > - [Albania](../pay/albania.md)
 > - [Algeria](../pay/algeria.md)
@@ -271,24 +271,24 @@ In caso di dubbi sull'importo dovuto, [controllare la fattura e la cronologia de
 
 - Verrà inviato un messaggio all'indirizzo di posta elettronica principale e alternativo di tutti gli utenti indicati come destinatari della notifica.
 
-- Verranno ricevuti due messaggi di posta elettronica distinti: uno che consente di sapere che la bolletta è pronta, con le istruzioni per accedere all'interfaccia di amministrazione per visualizzarlo e un secondo messaggio di posta elettronica che contiene l'estratto conto come allegato.
+- Si ricevono due messaggi di posta elettronica separati: uno che segnala che la fattura è pronta, con le istruzioni per accedere all'interfaccia di amministrazione la visualizzazione, e un secondo messaggio che contiene l'estratto conto in allegato.
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>Per ricevere l'estratto conto tramite posta elettronica
 
-1. Nell'interfaccia di amministrazione, andare alla \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notifiche</a> **fatturazione fatturazione** .
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifiche sulla fatturazione</a>.
 
-    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">notifiche di fatturazione</a> .
+    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notifiche sulla fatturazione</a>.
 
-2. In **ricezione Estratto conto come allegato di posta elettronica?**, impostare l'interruttore **su**attivato.
+2. In **Vuoi ricevere l'estratto conto come allegato di posta elettronica?** impostare l'interruttore su **Attivato**.
 
     È possibile interrompere la ricezione di messaggi di posta elettronica con l'estratto conto in qualsiasi momento impostando l'opzione su **Disattivato**.
 
 ## <a name="need-to-switch-payment-methods"></a>È necessario cambiare modalità di pagamento?
 
-Se il motivo per cui è stato inizialmente scelto il pagamento tramite fattura, carta di credito o conto corrente bancario non sussiste più, ad esempio se l'abbonamento viene cambiato per cui l'importo è inferiore e non si è quindi più idonei ai pagamenti tramite fattura, è possibile cambiare la modalità di pagamento. Per ulteriori informazioni, vedere [Change Your Payment Method](change-payment-method.md).
+Se il motivo per cui è stato inizialmente scelto il pagamento tramite fattura, carta di credito o conto corrente bancario non sussiste più, ad esempio se l'abbonamento viene cambiato per cui l'importo è inferiore e non si è quindi più idonei ai pagamenti tramite fattura, è possibile cambiare il metodo di pagamento. Per altre informazioni, vedere [Cambiare la modalità di pagamento](change-payment-method.md).
 
 ## <a name="related-articles"></a>Articoli correlati
 
 [Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario](add-update-or-remove-credit-card-or-bank-account.md)
 
-[Comprendere la fattura](understand-your-invoice2.md)
+[Informazioni sulla fattura](understand-your-invoice2.md)
