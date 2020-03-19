@@ -372,16 +372,16 @@
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: Visualizzazioni campagna
               href: ./office-365-security/campaigns.md
-            - name: Informazioni sugli attacchi più recenti con l'analisi delle minacce
-              href: ./mtp/latest-attack-campaigns.md
             - name: Analisi e risposta alle minacce automatizzate
               items:
                 - name: Panoramica AIR
                   href: ./office-365-security/office-365-air.md
-                - name: Visualizzare dettagli e risultati di indagini automatizzate
-                  href: ./office-365-security/air-view-investigation-results.md
-                - name: Approvare o rifiutare azioni in sospeso
+                - name: Azioni correttive
                   href: ./office-365-security/air-remediation-actions.md
+                - name: Visualizzare dettagli e risultati di un'indagine automatizzata
+                  href: ./office-365-security/air-view-investigation-results.md
+                - name: Rivedere e approvare (o rifiutare) azioni in sospeso
+                  href: ./office-365-security/air-review-approve-pending-completed-actions.md
                 - name: Integrare AIR con una soluzione personalizzata o una soluzione di terze parti
                   href: ./office-365-security/air-custom-reporting.md
             - name: Individuare e trattare rapidamente gli account utente compromessi
@@ -390,6 +390,8 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Visualizzare e leggere i report ATP
               href: ./office-365-security/view-reports-for-atp.md
+            - name: Informazioni sugli attacchi più recenti con l'analisi delle minacce
+              href: ./mtp/latest-attack-campaigns.md
             - name: Significato delle pagine di avviso dei collegamenti sicuri di ATP
               href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: Usare gli indicatori delle minacce
