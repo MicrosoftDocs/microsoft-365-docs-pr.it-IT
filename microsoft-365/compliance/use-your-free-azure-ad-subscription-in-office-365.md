@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Informazioni su come accedere ad Azure Active Directory, incluso nell'abbonamento a Office 365 a pagamento dell'organizzazione.
-ms.openlocfilehash: 40ed5808f6e921a3649af408ee078dba64167bb3
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: fb1e2586c0b21c72084d7120b8735fccccd1a004
+ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610593"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42710495"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Utilizzare la sottoscrizione di Azure Active Directory gratuita in Office 365
 
@@ -29,7 +29,7 @@ Se l'organizzazione ha una sottoscrizione a pagamento a Office 365, Microsoft Dy
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Usare una sessione di esplorazione privata invece di una normale per accedere al portale di Azure (nel passaggio 1 seguente), per impedire che le credenziali con cui si è attualmente connessi vengano passate ad Azure. Per aprire una sessione di esplorazione privata:
+Usare una sessione di esplorazione privata, invece di una normale, per accedere al portale di Azure (nel passaggio 1 seguente) in modo da impedire che le credenziali con cui si è attualmente connessi vengano passate ad Azure. Per aprire una sessione di esplorazione privata:
 
 - In Microsoft Edge (versione legacy), Internet Explorer o Mozilla FireFox premere `CTRL+SHIFT+P`.
 
