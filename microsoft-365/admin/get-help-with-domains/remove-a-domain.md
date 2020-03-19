@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Informazioni su come rimuovere un vecchio dominio da Office 365 e spostare gli utenti e i gruppi in un altro dominio.
-ms.openlocfilehash: c012d7a8484026d04bbe216ff28715e9df0de15c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: efbd49daa28b5d15989e1531929cb2d9355aeb8f
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362211"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857428"
 ---
 # <a name="remove-a-domain-from-office-365"></a>Rimuovere un dominio da Office 365
 
@@ -100,7 +100,7 @@ Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonament
 
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>.
 
-2. Passare a **** \> utenti **attivi**e selezionare l'account dall'elenco.
+2. Passare a **Users** \> utenti **attivi**e selezionare l'account dall'elenco.
 
 3. Nella scheda **account** selezionare **Gestisci nome utente**e quindi scegliere un dominio diverso.
   
@@ -114,7 +114,7 @@ Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonament
 
 ::: moniker range="o365-germany"
 
-1. Vai a **** \> utenti **attivi**e seleziona il tuo nome nell'elenco.
+1. Vai a **Users** \> utenti **attivi**e seleziona il tuo nome nell'elenco.
 
 2. Nella sezione **nome utente/indirizzo di posta elettronica** selezionare **modifica**e quindi scegliere un dominio diverso.
 
@@ -130,7 +130,7 @@ Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonament
 
 ::: moniker range="o365-21vianet"
 
-1. Vai a **** \> utenti **attivi**e seleziona il tuo nome nell'elenco.
+1. Vai a **Users** \> utenti **attivi**e seleziona il tuo nome nell'elenco.
 
 2. Nella sezione **nome utente/indirizzo di posta elettronica** selezionare **modifica**e quindi scegliere un dominio diverso.
 
@@ -148,7 +148,7 @@ Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonament
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> \> pagina **gruppi.**
+1. Nell'interfaccia di amministrazione, andare alla <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> \> pagina **gruppi.**
   
 2. Selezionare il nome del gruppo, quindi nella scheda **generale** sotto **indirizzo di posta elettronica, primario**, selezionare **modifica**.
 
@@ -160,7 +160,7 @@ Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonament
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>, andare alla **** > pagina **gruppi.**
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>, andare alla **Groups** > pagina **gruppi.**
 
 2. Selezionare il nome del gruppo e quindi fare clic su **modifica** accanto a **nome**.
 
@@ -172,7 +172,7 @@ Se si rimuove il dominio perché lo si vuole aggiungere a un piano di abbonament
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>, andare alla **** > pagina **gruppi.**
+1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>, andare alla **Groups** > pagina **gruppi.**
 
 2. Selezionare il nome del gruppo e quindi fare clic su **modifica** accanto a **nome**.
 
@@ -229,7 +229,7 @@ Il problema persiste? Potrebbe essere necessario rimuovere manualmente il domini
 
 [Domande frequenti sui domini](../setup/domains-faq.md)
 
-[Ottenere assistenza per i domini di Office 365](get-help-with-domains.md)
+[Ottenere assistenza per i domini di Office 365](get-help-with-domains.yml)
 
 [Passare a un piano di Office 365 per le aziende diverso](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a8f4cd9d3b970d6216e05fa6ff78699558c82600
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: a42646c423c08298a619e8bd559cd819ba3c47db
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633984"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857464"
 ---
 # <a name="the-action-center"></a>Centro operativo
 
@@ -47,9 +47,9 @@ Il team delle operazioni di sicurezza può lavorare in modo più efficace ed eff
 
 1. Andare su [https://security.microsoft.com](https://security.microsoft.com) ed eseguire l’accesso. 
 
-2. Nel riquadro di spostamento scegliere fare clic su **Centro notifiche**. 
+2. Nel riquadro di spostamento, scegliere **Centro notifiche**. 
 
-3. Nel centro notifiche, saranno visualizzate due schede: **In sospeso** e **Cronologia**.
+3. Nel centro azioni vengono visualizzate due schede: in **sospeso** e **cronologia**.
 
     - Nella scheda **In sospeso** sono elencate le indagini che richiedono la revisione e l'approvazione da parte di qualcuno nel team delle operazioni di sicurezza per continuare. Assicurarsi di rivedere e agire sugli elementi in sospeso visualizzati nella scheda.
 
@@ -72,11 +72,11 @@ Per approvare o rifiutare le azioni in sospeso nel centro notifiche, è necessar
 
 |Azione correttiva |Ruoli e autorizzazioni necessari |
 |--|----|
-|Correzione di Microsoft Defender ATP (dispositivi) |Ruolo di **amministratore della protezione** assegnato in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o nell'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- o ---<br/>Ruolo di **azioni correttive attive** assegnato in Microsoft Defender ATP <br/> <br/> Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Creare e gestire ruoli per il controllo dell'accesso basato sui ruoli (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Correzione di Office 365 ATP (contenuti e messaggi di posta elettronica di Office)  |Ruolo di **amministratore della protezione** assegnato in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o nell'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- e --- <br/>Ruolo di **ricerca ed eliminazione** assegnato nel Centro sicurezza e conformità di Office 365 ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANTE**: se il ruolo di amministratore della protezione è assegnato solo nel Centro sicurezza e conformità di Office 365, non sarà possibile accedere al centro notifiche o alle funzionalità di Microsoft Threat Protection. È necessario avere il ruolo di amministratore della protezione assegnato in Azure Active Directory o nell'interfaccia di amministrazione di Microsoft 365. <br/><br/>Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorizzazioni nel Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Correzione di Microsoft Defender ATP (dispositivi) |Ruolo di amministratore della protezione assegnato in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o nell'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- o ---<br/>Ruolo di azioni correttive attive assegnato in Microsoft Defender ATP <br/> <br/> Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Creare e gestire ruoli per il controllo dell'accesso basato sui ruoli (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
+|Correzione di Office 365 ATP (contenuti e messaggi di posta elettronica di Office)  |Ruolo di amministratore della protezione assegnato in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o nell'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- e --- <br/>Ruolo di ricerca ed eliminazione assegnato nel Centro sicurezza e conformità di Office 365 ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANTE**: se il ruolo di amministratore della protezione è assegnato solo nel Centro sicurezza e conformità di Office 365, non sarà possibile accedere al centro notifiche o alle funzionalità di Microsoft Threat Protection. È necessario avere il ruolo di amministratore della protezione assegnato in Azure Active Directory o nell'interfaccia di amministrazione di Microsoft 365. <br/><br/>Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorizzazioni nel Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!NOTE]
-> Gli utenti che hanno il ruolo di **amministratore globale** assegnato in Azure Active Directory possono approvare o rifiutare qualsiasi azione in sospeso nel centro notifiche. Tuttavia, come procedura consigliata, l'organizzazione dovrebbe limitare il numero di persone a cui è assegnato il ruolo di amministratore globale. È consigliabile usare i ruoli di **amministratore della protezione**, **azioni correttive attive** e **ricerca ed eliminazione** elencati in precedenza per le autorizzazioni del centro notifiche.
+> Gli utenti che hanno il ruolo di amministratore globale assegnato in Azure Active Directory possono approvare o rifiutare qualsiasi azione in sospeso nel centro notifiche. Tuttavia, come procedura consigliata, l'organizzazione dovrebbe limitare il numero di persone a cui è assegnato il ruolo di amministratore globale. È consigliabile usare i ruoli di amministratore della protezione, azioni correttive attive e ricerca ed eliminazione elencati in precedenza per le autorizzazioni del centro notifiche.
 
 ## <a name="next-steps"></a>Passaggi successivi 
 
