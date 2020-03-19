@@ -1,5 +1,5 @@
 - name: Home page di amministrazione
-  href: admin-home.md
+  href: admin-home.yml
   items:
     - name: Panoramica
       items:
@@ -8,7 +8,7 @@
         - name: Iscriversi a Office 365
           href: admin-overview/sign-up-for-office-365.md
         - name: Video di formazione
-          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)'
+          href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816'
         - name: Informazioni sull’interfaccia di amministrazione
           href: admin-overview/about-the-admin-center.md
         - name: Qual è l’abbonamento corrente?
@@ -17,7 +17,7 @@
           href: admin-overview/learn-about-office-365-germany.md
         - name: App di amministrazione per dispositivi mobili
           href: admin-overview/admin-mobile-app.md
-    - name: Configurazione
+    - name: Installazione
       items:
         - name: Pianificare la configurazione
           href: setup/plan-your-setup.md
@@ -79,14 +79,14 @@
           href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
         - name: Informazioni sui ruoli di amministratore
           href: add-users/about-admin-roles.md
-        - name: Assegnare i ruoli di amministratore
+        - name: Assegnare ruoli di amministratore
           href: add-users/assign-admin-roles.md
         - name: Informazioni sul ruolo di amministratore di Exchange Online
           href: add-users/about-exchange-online-admin-role.md
     - name: Posta elettronica
       items:
         - name: Posta elettronica in Office 365
-          href: email/email.md
+          href: email/email.yml
         - name: Impostazioni di posta elettronica dell'utente di Office 365
           href: email/office-365-user-email-settings.md
         - name: Aggiungere un altro alias di posta elettronica per un utente
@@ -154,7 +154,7 @@
     - name: Gestione
       items:
         - name: Gestire Office 365
-          href: manage/manage.md
+          href: manage/manage.yml
         - name: Modificare le preferenze di contatto
           href: manage/change-contact-preferences.md
         - name: 'Modificare indirizzo, contatto e altro ancora'
@@ -186,9 +186,9 @@
         - name: Annullamento dell'assegnazione delle licenze da parte degli utenti
           href: manage/remove-licenses-from-users.md
         - name: Risolvere i conflitti di licenza
-          href: manage/resolve-license-conflicts.md)
+          href: manage/resolve-license-conflicts.md
         - name: Gestire i messaggi nel Centro messaggi
-          href: manage/manage-messages.md)
+          href: manage/manage-messages.md
     - name: Sottoscrizioni e fatturazione
       items:
         - name: Gestire gli abbonamenti
@@ -202,7 +202,7 @@
     - name: Domini
       items:
         - name: Domini in Office 365
-          href: get-help-with-domains/get-help-with-domains.md
+          href: get-help-with-domains/get-help-with-domains.yml
         - name: Cos'è un dominio?
           href: get-help-with-domains/what-is-a-domain.md
         - name: Acquistare un nome di dominio

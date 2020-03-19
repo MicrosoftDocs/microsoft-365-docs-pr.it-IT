@@ -16,12 +16,12 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: Informazioni sulla quarantena ospitata per Exchange Online e Exchange Online Protection.
-ms.openlocfilehash: bcbd0db1c05834882c464fa28012b82a13929d7f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ea803a4681a12647f57cf17839d26fb391222364
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598653"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42856882"
 ---
 # <a name="quarantine"></a>Quarantena
 
@@ -29,7 +29,7 @@ Negli argomenti di seguito vengono fornire informazioni sulla quarantena in host
 
 - [Domande frequenti sulla quarantena](quarantine-faq.md) : fornisce domande e risposte generali sulla quarantena sia per gli amministratori che per gli utenti finali
 
-- [Trovare e rilasciare i messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md): descrive in che modo gli amministratori possono trovare e rilasciare qualsiasi messaggio che risiede nella quarantena nell'interfaccia di amministrazione di Exchange (EAC) e, facoltativamente, segnalarlo come un messaggio falso positivo (non indesiderato) a Microsoft.
+- [Gestire i messaggi e i file in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md): descrive in che modo gli amministratori possono trovare e rilasciare qualsiasi messaggio che risiede nella quarantena nell'interfaccia di amministrazione di Exchange (EAC) e, facoltativamente, segnalarlo come un messaggio falso positivo (non indesiderato) a Microsoft.
 
 - [Trovare e rilasciare i messaggi in quarantena come utente in Office 365](find-and-release-quarantined-messages-as-a-user.md): descrive in che modo gli utenti finali possono individuare e rilasciare i propri messaggi di posta indesiderata in quarantena nell'interfaccia utente per la quarantena della posta indesiderata e segnalarli come non indesiderati a Microsoft.
 

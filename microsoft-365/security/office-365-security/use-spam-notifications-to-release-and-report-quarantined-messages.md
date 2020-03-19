@@ -1,11 +1,11 @@
 ---
-title: Usare le notifiche di posta indesiderata dell'utente per rilasciare e segnalare i messaggi in quarantena in Office 365
+title: Notifiche di posta indesiderata dell'utente finale in Office 36
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 03/14/2019
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,39 +17,33 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: Se l'amministratore abilita le notifiche per gli utenti, riceverà un messaggio di notifica che elenca i messaggi inviati alla cassetta postale che sono stati identificati come posta indesiderata, in blocco o in messaggi di phishing. È possibile rilasciare o segnalare i messaggi dopo la notifica.
-ms.openlocfilehash: 51fcdefc08987b153d045994927f56df3b670fd0
-ms.sourcegitcommit: 836bd8135cc49d6db37e78a7cfeb7d2cc4159e4e
+description: Quando un amministratore abilita le notifiche di posta indesiderata dell'utente finale nei criteri di protezione da posta indesiderata, i destinatari del messaggio riceveranno notifiche periodiche sui messaggi in quarantena
+ms.openlocfilehash: 67dbf311c37ae61c007b78110522033d79c0b161
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722037"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857146"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Usare le notifiche di posta indesiderata dell'utente per rilasciare e segnalare i messaggi in quarantena in Office 365
+# <a name="end-user-spam-notifications-in-office-365"></a>Notifiche di posta indesiderata dell'utente finale in Office 365
 
-Se l'amministratore abilita le notifiche di posta indesiderata per gli utenti, riceverà un messaggio di notifica che elenca i messaggi indirizzati alla cassetta postale che sono stati identificati come posta indesiderata, bulk o phishing e in quarantena.
+La quarantena contiene messaggi potenzialmente pericolosi o indesiderati in Office 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online. Per ulteriori informazioni, vedere [Quarantine in Office 365](quarantine-email-messages.md).
 
-> [!TIP]
-> Se si è un amministratore e si desidera abilitare questa funzionalità, è possibile scegliere l'opzione quando si [modifica un criterio di protezione da posta indesiderata predefinito](configure-your-spam-filter-policies.md).
+Per impostazione predefinita, le notifiche di posta indesiderata dell'utente finale sono disattivate nei criteri di protezione dalla posta Quando un amministratore [Abilita le notifiche di posta indesiderata dell'utente finale](configure-your-spam-filter-policies.md), i destinatari dei messaggi riceveranno notifiche periodiche sui loro messaggi che sono stati messi in quarantena come posta indesiderata o in blocco, o (da aprile 2020).
 
-Il messaggio ricevuto include il numero di messaggi di posta indesiderata in quarantena e la data e l'ora (in formato UTC (Universal Coordinated Time) dell'ultimo messaggio nell'elenco. L'elenco include quanto segue per ogni messaggio:
+> [!NOTE]
+> Nell'ottobre 2019, è stata rimossa la possibilità di rilasciare i messaggi in quarantena direttamente dalle notifiche di posta indesiderata dell'utente finale. Al contrario, gli utenti possono ora accedere al centro sicurezza & conformità di Office 365 per rilasciare i messaggi in quarantena (direttamente o facendo clic su **Verifica** nella notifica). Per ulteriori informazioni, vedere [trovare e rilasciare i messaggi in quarantena come utente in Office 365](find-and-release-quarantined-messages-as-a-user.md). <br/><br/> I messaggi che sono stati messi in quarantena come phishing ad alta sicurezza, malware o regole del flusso di posta (note anche come regole di trasporto) sono disponibili solo per gli amministratori. Per ulteriori informazioni, vedere [trovare e rilasciare i messaggi in quarantena come amministratore in Office 365](find-and-release-quarantined-messages-as-an-administrator.md).
 
-- **Mittente** Il nome e l'indirizzo di posta elettronica del messaggio in quarantena.
+Una notifica di posta indesiderata dell'utente finale contiene le informazioni seguenti per ogni messaggio in quarantena:
 
-- **Oggetto** Oggetto del messaggio in quarantena.
+- **Sender**: il nome e l'indirizzo di posta elettronica del messaggio in quarantena.
 
-- **Data** Data e ora (in formato UTC) del messaggio in quarantena.
+- **Oggetto**: testo della riga dell'oggetto del messaggio in quarantena.
 
-Di seguito sono riportate le azioni che è possibile eseguire con un messaggio in quarantena:
+- **Date**: la data e l'ora (in formato UTC) in cui il messaggio è stato messo in quarantena.
 
-- **Blocca mittente** se si desidera che in Office 365 venga aggiunto il mittente all'elenco dei mittenti bloccati.
+- **Blocca mittente**: fare clic su questo collegamento per aggiungere il mittente all'elenco dei mittenti bloccati.
 
-- **Rilascia** se il messaggio non è posta indesiderata e si desidera che Office 365 invii il messaggio alla cassetta postale.
+- **Recensione**: fare clic su questo collegamento per passare alla quarantena nel centro sicurezza & conformità, in cui è possibile rilasciare, eliminare o segnalare i messaggi in quarantena.
 
-- **Revisione** per passare al portale di quarantena all'interno del Centro sicurezza e conformità se si desidera eseguire altre operazioni, ad esempio l'anteprima o il rilascio.
-
-Tenere presente quanto segue:
-
-- I messaggi di phishing e i messaggi di posta indesiderata che vengono messi in quarantena perché hanno trovato una regola per il flusso del messaggio non sono inclusi nelle notifiche di spam degli utenti. 
-
-- È possibile rilasciare un messaggio e segnalarlo come falso positivo (non indesiderato) solo una volta.
+![Esempio di notifica di posta indesiderata dell'utente finale](../../media/end-user-spam-notification.png)

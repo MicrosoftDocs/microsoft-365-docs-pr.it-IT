@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: 341d950f81d0d74deab901f0e5af24a559c0f342
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633824"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826404"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Indagine automatizzata e risposta (AIR) in Office 365
 
@@ -30,7 +30,7 @@ In questo articolo viene fornita una panoramica di AIR. Quando si è pronti per 
 
 ## <a name="at-a-high-level"></a>Ad alto livello
 
-Quando gli avvisi vengono attivati, i PlayBook di sicurezza entrano in vigore. A seconda della situazione, è possibile avviare un [processo di analisi automatizzato](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) . Durante e dopo un'indagine automatizzata, è consigliabile utilizzare le [operazioni di correzione](air-remediation-actions.md) . Nessuna azione viene eseguita automaticamente in Office 365 Advanced Threat Protection. Le revisioni del team di sicurezza Operations, quindi [approva o rifiuta ogni azione di correzione](air-remediation-actions.md#approve-or-reject-pending-actions)e, al termine, vengono completate le indagini. Tutte queste attività sono registrate e visualizzabili nel centro sicurezza & conformità di Office 365 (vedere [visualizzare i dettagli di un'indagine](air-view-investigation-results.md#view-details-of-an-investigation)).
+Quando gli avvisi vengono attivati, i PlayBook di sicurezza entrano in vigore. A seconda della situazione, è possibile avviare un [processo di analisi automatizzato](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) . Durante e dopo un'indagine automatizzata, è consigliabile utilizzare le [operazioni di correzione](air-remediation-actions.md) . Nessuna azione viene eseguita automaticamente in Office 365 Advanced Threat Protection. Le revisioni del team di sicurezza Operations, quindi [approva o rifiuta ogni azione di correzione](air-review-approve-pending-completed-actions.md)e, al termine, vengono completate le indagini. Tutte queste attività sono registrate e visualizzabili nel centro sicurezza & conformità di Office 365 (vedere [visualizzare i dettagli di un'indagine](air-view-investigation-results.md#view-details-of-an-investigation)).
 
 Nelle sezioni seguenti vengono fornite ulteriori informazioni sugli avvisi, gli schemi di sicurezza e gli esempi di aria in azione.
 

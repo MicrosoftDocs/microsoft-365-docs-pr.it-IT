@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Informazioni su come verificare la posta elettronica e la proprietà del dominio in modo da assumere un tenant non gestito in Office 365
-ms.openlocfilehash: e3c89e122264808e2a8631c07269ea263c87fdaa
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0f7932b9ba727db62f81ac15b99a5f5ca276f09f
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244118"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857404"
 ---
 # <a name="perform-an-internal-admin-takeover-in-office-365"></a>Eseguire l'acquisizione di un amministratore interno in Office 365
 
@@ -71,7 +71,7 @@ YouTube: [3 steps to do an IT Admin Takeover for Power BI and Office 365](https:
 
 [Acquisizione dell'amministratore in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Ottenere assistenza per i domini di Office 365](../get-help-with-domains/get-help-with-domains.md)
+[Ottenere assistenza per i domini di Office 365](../get-help-with-domains/get-help-with-domains.yml)
 
 [Utilizzo dell'iscrizione in modalità self-service nell'organizzazione](self-service-sign-up.md)
   

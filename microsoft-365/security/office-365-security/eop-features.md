@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Nella tabella seguente viene fornito un elenco delle funzionalità disponibili nel servizio di filtro della posta elettronica ospitato in Exchange Online Protection (EOP).
-ms.openlocfilehash: 9422330cb4999e4391f92e39807e2d2367366972
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 505487e079ea198c6575fd76e2e59a60ead19940
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599373"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857346"
 ---
 # <a name="eop-features"></a>Funzionalità di Exchange Online Protection
 
@@ -48,9 +48,9 @@ Nella tabella seguente viene fornito un elenco delle funzionalità disponibili n
 |Invii di posta indesiderata e non di posta indesiderata tramite Outlook sul Web report di posta indesiderata|È possibile inviare messaggi di posta indesiderata e non spam a Microsoft tramite Outlook sul Web report di posta indesiderata. Per ulteriori informazioni, vedere [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).  <br/><br/> Questa funzionalità è attualmente disponibile per i clienti di Outlook sul Web le cui cassette postali di Exchange Server 2013 SP1 o versioni successive vengono filtrate da EOP. I clienti di Exchange Online Outlook sul Web avranno anche questa funzionalità nel prossimo futuro.|
 |Notifiche di quarantena della posta indesiderata dell'utente finale|Gli utenti finali possono rilasciare i propri messaggi nella quarantena della posta indesiderata ed eventualmente segnalarli come di posta non indesiderata tramite i messaggi di notifica di posta indesiderata utente finale. Questi messaggi di posta elettronica di notifica devono essere configurati e abilitati da un amministratore, come descritto in [Configure end-user spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md) o [Configure end-user spam Notifications in EOP](configure-end-user-spam-notifications-in-eop.md).|
 |Frequenza notifiche quarantena posta indesiderata utente finale|Questa frequenza è pari a 3 giorni per impostazione predefinita ed è configurabile per un periodo compreso tra 1 e 15 giorni.|
-|Possibilità per gli amministratori di configurare la lingua delle notifiche di quarantena di posta indesiderata dell'utente finale|È disponibile per gli utenti finali e gli amministratori. Per ulteriori informazioni, vedere [trovare e rilasciare i messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md) oppure [trovare e rilasciare i messaggi in quarantena come utente](find-and-release-quarantined-messages-as-a-user.md).|
-|Accesso ai messaggi in quarantena e gestione di questi tramite una pagina Web|È disponibile per gli utenti finali e gli amministratori. Per ulteriori informazioni, vedere [trovare e rilasciare i messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md) oppure [trovare e rilasciare i messaggi in quarantena come utente](find-and-release-quarantined-messages-as-a-user.md).|
-|Possibilità di eseguire una ricerca nella quarantena|La possibilità di eseguire una ricerca nella quarantena per messaggi di posta indesiderata specifici è disponibile sia per gli amministratori, sia per gli utenti finali. Per ulteriori informazioni, vedere [trovare e rilasciare i messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md) oppure [trovare e rilasciare i messaggi in quarantena come utente](find-and-release-quarantined-messages-as-a-user.md).|
+|Possibilità per gli amministratori di configurare la lingua delle notifiche di quarantena di posta indesiderata dell'utente finale|È disponibile per gli utenti finali e gli amministratori. Per ulteriori informazioni, vedere [gestire i messaggi e i file in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md) o [individuare e rilasciare i messaggi in quarantena come utente](find-and-release-quarantined-messages-as-a-user.md).|
+|Accesso ai messaggi in quarantena e gestione di questi tramite una pagina Web|È disponibile per gli utenti finali e gli amministratori. Per ulteriori informazioni, vedere [gestire i messaggi e i file in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md) o [individuare e rilasciare i messaggi in quarantena come utente](find-and-release-quarantined-messages-as-a-user.md).|
+|Possibilità di eseguire una ricerca nella quarantena|La possibilità di eseguire una ricerca nella quarantena per messaggi di posta indesiderata specifici è disponibile sia per gli amministratori, sia per gli utenti finali. Per ulteriori informazioni, vedere [gestire i messaggi e i file in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md) o [individuare e rilasciare i messaggi in quarantena come utente](find-and-release-quarantined-messages-as-a-user.md).|
 |Visualizzare le intestazioni dei messaggi di posta indesiderata in quarantena dall'interfaccia di amministrazione di Exchange|Dopo aver visualizzato l'intestazione del messaggio in quarantena, è anche possibile copiare il testo dell'intestazione del messaggio e incollarlo in [Analizzatore intestazione messaggio](https://testconnectivity.microsoft.com/?tabid=mha), che fornisce informazioni sul messaggio.|
 |**Protezione anti-malware**||
 |Protezione anti-malware a più moduli|La protezione anti-malware a più moduli consente di proteggere automaticamente i clienti in qualsiasi momento.|

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: "Scoprire quante tasse verranno addebitate per l'abbonamento a Office 365 for business in diverse aree geografiche. "
 ms.custom: okr_SMB
-ms.openlocfilehash: 88997eb69cbbee1b7ec4520773c167609434e0a4
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710559"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826314"
 ---
 # <a name="tax-information"></a>Informazioni fiscali
 
@@ -90,7 +90,7 @@ Tali paesi possono fornire il proprio numero di partita IVA o equivalente locale
 
 ## <a name="what-tax-will-i-be-charged"></a>Quali imposte vengono addebitate?
 
-Fare clic sui collegamenti seguenti per vedere quale imposta viene applicata nelle varie aree geografiche. È anche possibile [richiedere l'esenzione fiscale](apply-for-tax-exempt-status.md) presentando la documentazione appropriata al servizio di supporto.
+Fare clic sui collegamenti seguenti per vedere quale imposta viene applicata nelle varie aree geografiche. È anche possibile [richiedere l'esenzione fiscale](tax-information.md#apply-for-tax-exempt-status) presentando la documentazione appropriata al servizio di supporto.
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Medio Oriente e Africa (EMEA)
 

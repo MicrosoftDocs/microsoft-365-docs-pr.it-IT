@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 240e153c43c7dc52d67d35eeca36def2f76b08e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 904c1a019c55cabce6856a7caaca73d08d6db3f7
+ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086935"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42836881"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Gestire i ticket tramite ServiceNow
 
@@ -141,6 +141,10 @@ Se l'azienda ha abilitato il servizio Single Sign-on e viene visualizzato un err
 
 1. Creare un utente con privilegi di amministratore della sicurezza in Azure Active Directory. L'utente deve avere lo stesso nome e l'indirizzo di posta elettronica dell'utente di integrazione creato dall'elenco di controllo dell'installazione. È possibile rimuovere il ruolo di amministratore della sicurezza dopo aver completato il login e la connessione.
 2. Accedere al centro sicurezza Microsoft 365 come utente e seguire la procedura di installazione.
+
+### <a name="ip-filtering"></a>Filtro IP
+
+Se è stato abilitato il filtro IP, potrebbe essere necessario consentire esplicitamente gli indirizzi IP. Per informazioni su come consentire gli intervalli di indirizzi IP in ServiceNow, vedere [controllo di accesso all'indirizzo IP](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/login/task/t_AccessControl.html) . Vedere gli [intervalli e i tag di servizio di Azure IP-cloud pubblico](https://www.microsoft.com/en-us/download/details.aspx?id=56519) per un elenco di indirizzi IP da consentire.
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>L'installazione è stata completata ma non è possibile visualizzare i ticket e non condividerli
 

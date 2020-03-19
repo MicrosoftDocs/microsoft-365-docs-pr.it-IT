@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: "Informazioni su come modificare il tema predefinito di Office 365 e personalizzarlo in modo che corrisponda al logo o al colore dell'azienda. "
-ms.openlocfilehash: fc50519190abe1b827bd3a5f93a6a82f8c22f0b6
-ms.sourcegitcommit: 72983702a42552a29228d387bb279e8ff2ab59b4
+ms.openlocfilehash: c553e5254246bd81d435b4ebc2be2e975dd80a9d
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42640028"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826328"
 ---
 # <a name="customize-the-office-365-theme-for-your-organization"></a>Personalizzare il tema di Office 365 per l'organizzazione
 
@@ -64,9 +64,9 @@ Informazioni su come personalizzare il tema nell'interfaccia di amministrazione 
     
 4. Selezionare **Salva modifiche**.
     
-Vedrai subito il nuovo tema nell'interfaccia di amministrazione e dopo un breve periodo di tempo, lo vedrai in tutto Office 365, incluse le pagine in Outlook, SharePoint e le app per dispositivi mobili di SharePoint per iOS e Android. Nell'immagine seguente vengono evidenziati gli elementi del tema che è possibile personalizzare per le app per dispositivi mobili di SharePoint.
+Vedrai subito il nuovo tema nell'interfaccia di amministrazione e, dopo un breve ritardo, lo vedrai in tutto Office 365, incluse le pagine in Outlook, SharePoint, l' [app per dispositivi mobili di SharePoint per iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)e l' [app per dispositivi mobili di SharePoint per Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Per un esempio del percorso in cui un tema personalizzato cambia dall'interfaccia di amministrazione, vedere l'immagine seguente.
 
-![Tema predefinito di Office 365 e Theme Office 365 personalizzato per le app per dispositivi mobili di SharePoint]()
+![M365-admin-tenant-Theme-Conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 
 È possibile rimuovere l'icona o i colori personalizzati in qualsiasi momento. Basta tornare alla pagina del tema e selezionare **Rimuovi tema personalizzato**.
   

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2b653575e9e79ffe3448f622ca5be2cef37999dd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c482e46cf51cbf11960c02663221df0c136b067c
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633954"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857180"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Prerequisiti di Microsoft Threat Protection
 
@@ -34,12 +34,20 @@ ms.locfileid: "42633954"
 Informazioni sui requisiti di licenza, hardware e software e altre impostazioni di configurazione per il provisioning e l'utilizzo di Microsoft Threat Protection.
 
 ## <a name="licensing-requirements"></a>Requisiti per la licenza
-Per utilizzare Microsoft Threat Protection, è necessaria *una* delle seguenti licenze o combinazioni di licenze:
+Per utilizzare Microsoft Threat Protection, è necessaria una singola licenza o una combinazione di licenze.
 
-- Microsoft 365 E5
-- Microsoft 365 E5 Security
-- Office 365 E5 e "Enterprise Mobility + Security E5 (EMS E5)" e Windows E5
-- Microsoft 365 A5
+### <a name="single-license"></a>Licenza singola
+È possibile utilizzare *una* delle licenze seguenti:
+
+- Microsoft 365 E5 o a5
+- Sicurezza di Microsoft 365 E5 o sicurezza a5
+
+### <a name="combination-of-licenses"></a>Combinazione di licenze
+È inoltre possibile utilizzare una combinazione di licenze per gli abbonamenti E5 o a5 a Office 365, *Enterprise Mobility + Security (EMS)* e Windows. La combinazione di licenze deve includere *tutte* le licenze seguenti:
+
+- Office 365 E5 o a5
+- *Enterprise Mobility + Security (EMS)* E5 o a5
+- Windows E5 o a5
 
 Per ulteriori informazioni, [vedere i piani del servizio Microsoft 365 Enterprise](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 

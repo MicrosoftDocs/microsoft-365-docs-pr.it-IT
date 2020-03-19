@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Informazioni su come creare contatti nell'interfaccia di amministrazione e gestire l'elenco indirizzi globale.
-ms.openlocfilehash: e1bb5c71a15c8e278b087339e469dcba50003795
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 44bd7319a369da84b8855c5d640b2797a173689e
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244115"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857392"
 ---
 # <a name="quick-help-contacts"></a>Guida rapida: Contatti
 
@@ -33,7 +33,7 @@ Se sono necessari contatti condivisi che possono essere configurati da tutti gli
   
 ## <a name="how-do-i-add-contacts-in-the-admin-center"></a>Come si aggiungono contatti nell'interfaccia di amministrazione?
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">contatti</a> utenti.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">contatti</a> utenti.
 
 2. Nella pagina **contatti** selezionare **Aggiungi un contatto**.
   
@@ -61,4 +61,4 @@ Usare Windows PowerShell e un file CSV (con valori delimitati da virgole) per im
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>Cosa si può fare se non è stata trovata risposta alle proprie domande?
 
-Visitare il resto della [Guida per amministratori](../admin-home.md) o immettere il proprio feedback di seguito.
+Visitare il resto della [Guida per amministratori](../admin-home.yml) o immettere il proprio feedback di seguito.
