@@ -47,12 +47,14 @@
           href: get-ready/prerequisites.md
         - name: Preparare la rete
           href: get-ready/network.md
-        - name: Preparare l'accesso alle risorse locali per Microsoft Managed Desktop
+        - name: Preparare l'accesso alle risorse locali
           href: get-ready/authentication.md
-        - name: Preparare unità mappate per Microsoft Managed Desktop
+        - name: Preparare le unità mappate
           href: get-ready/mapped-drives.md
-        - name: Preparare certificati e profili di rete per Microsoft Managed Desktop
+        - name: Preparare i certificati e i profili di rete
           href: get-ready/certs-wifi-lan.md
+        - name: Preparare le risorse di stampa
+          href: get-ready/printing.md
         - name: Preparare le app
           href: get-ready/apps.md
           items:
