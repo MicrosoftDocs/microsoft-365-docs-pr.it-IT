@@ -1,0 +1,104 @@
+### YamlMime:Landing
+title: Office 365 Domains Documation
+summary: Usare queste risorse per iniziare a usare il proprio dominio per posta elettronica, siti Web e account in Office 365.
+metadata:
+  title: Office 365 Domains Documation
+  description: Usare queste risorse per iniziare a usare il proprio dominio per posta elettronica, siti Web e account in Office 365.
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_TOC
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 03/06/2020
+  ms.openlocfilehash: 572cc546b73612880169c151783f297cc72077cc
+  ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 03/19/2020
+  ms.locfileid: "42857583"
+landingContent:
+- title: Informazioni sui domini
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Che cos'è un dominio
+      url: what-is-a-domain.md
+    - text: Informazioni di base sul DNS
+      url: dns-basics.md
+    - text: Informazioni sul dominio onmicrosoft.com iniziale
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain
+    - text: Come funziona la gestione del DNS in Office 365
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq
+    - text: Leggere la descrizione del servizio Office 365 per i domini
+      url: https://go.microsoft.com/fwlink/p/?LinkId=402693
+  - linkListType: how-to-guide
+    links:
+    - text: Effetti dell'aggiunta di un dominio o della modifica dei record DNS sulla posta elettronica corrente
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+- title: Per iniziare
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Verificare il dominio (dimostrare di esserne i proprietari)
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+    - text: Raccogliere le informazioni necessarie per creare record DNS
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records
+    - text: Trovare il registrar del dominio
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar
+    - text: Acquistare un nome di dominio
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name
+    - text: Configurare un progetto pilota con il dominio personalizzato con poche persone dell'organizzazione
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-to-set-up-an-office-365-pilot
+    - text: Aggiungere rapidamente un dominio GoDaddy in Office 365
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/domain-connect
+    - text: Aggiungere i record DNS necessari per i servizi di Office 365
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider
+    - text: Come preparare un dominio non instradabile, ad esempio un dominio .local, per la sincronizzazione della directory
+      url: https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization
+    - text: Domande frequenti sui domini
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq
+- title: Creare record DNS per Office 365
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Creare record DNS in GoDaddy
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-godaddy
+    - text: Creare record DNS in 1&1 IONOS
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet
+    - text: Creare record DNS in Network Solutions
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-network-solutions
+    - text: Creare record DNS per Office 365 quando si gestiscono i record DNS
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider
+- title: Cambiare i server dei nomi in Office 365
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Modificare i server dei nomi per configurare Office 365 con 1&1 IONOS
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/change-nameservers-at-1-1-internet
+    - text: Modificare i server dei nomi per configurare Office 365 con Network Solutions
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/change-nameservers-at-network-solutions
+    - text: Aggiungere rapidamente un dominio GoDaddy in Office 365
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/domain-connect
+    - text: Modificare i server dei nomi in Office 365 in modo che i record siano configurati per l'utente
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions
+- title: Apportare modifiche
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Individuare e risolvere i problemi dopo aver cambiato il nome del dominio o i record DNS
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-and-fix-issues
+    - text: Aggiungere o modificare record DNS personalizzati in Office 365
+      url: https://docs.microsoft.com/microsoft-365/admin/dns/add-or-edit-custom-dns-records
+    - text: Aggiungere sottodomini personalizzati o più domini in Office 365
+      url: hhttps://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#can-i-add-custom-subdomains-or-multiple-domains-to-office-365
+    - text: Cambiare il modo in cui Office 365 gestisce il DNS per il dominio
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-do-i-change-how-my-dns-records-are-managed-in-office-365
+    - text: Rimuovere un dominio
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/remove-a-domain
+    - text: Integrazione di Office 365 con ambienti locali
+      url: https://docs.microsoft.com/office365/enterprise/office-365-integration
+    - text: Contattare il supporto tecnico per i prodotti per le aziende
+      url: https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products
