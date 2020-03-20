@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
-ms.openlocfilehash: a8418a85c6d936fbe49deb2f11caacf67a2ce407
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3f59a6038da8600923f5fcc0d18f1de5ab5dc06c
+ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634914"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42826237"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
 
@@ -59,7 +59,7 @@ Se si usa questa soluzione di crittografia, la caratteristica **utente con privi
 - **Rimuovi**: rimuove la crittografia se il documento o il messaggio di posta elettronica è crittografato.
 
 > [!NOTE]
-> L'opzione **Rimuovi** è supportata solo dal client di etichettatura unificata di Azure Information Protection. Se si usa l'etichettatura predefinita, un'etichetta con questa opzione è visibile nelle app di Office e, se selezionata, il comportamento di crittografia è uguale a **Nessuna**.
+> L'opzione **Rimuovi** è supportata solo dal client di etichettatura unificata di Azure Information Protection. Se si usa l'etichettatura predefinita, un'etichetta con questa opzione è visibile nelle app e nei servizi di Office e, se selezionata, il comportamento di crittografia è uguale a **Nessuna**.
 
 Configurazione delle opzioni di crittografia:
 
