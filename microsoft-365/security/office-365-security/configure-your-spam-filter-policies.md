@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Le impostazioni di base del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata.
-ms.openlocfilehash: 6cf4d84b72e774f734f198b09285bba2c68bc4df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa597887a75ff71d768d4df0b1ac4f17fe9ef13
+ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086275"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42857358"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurare i criteri di filtro della posta indesiderata
 Le impostazioni del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata. Le impostazioni del filtro della posta indesiderata vengono applicate solo ai messaggi in arrivo e sono di due tipi:
@@ -83,7 +83,7 @@ Per abilitare più impostazioni personalizzate o per aggiungere criteri personal
    - **Messaggio in quarantena:** il messaggio non viene inviato ai destinatari, ma viene messo in quarantena. Si tratta dell'azione predefinita per il phishing. Selezionando questa opzione nella casella di controllo **Conserva la posta indesiderata per (giorni)**, si specifica per quanti giorni i messaggi indesiderati vengono messi in quarantena (il messaggio viene eliminato automaticamente al termine del tempo trascorso. Il valore predefinito massimo è 30 giorni. Il valore minimo è 1 giorno).
 
      > [!TIP]
-     > Per informazioni su come gli amministratori gestiscono i messaggi di posta elettronica presenti nella quarantena, vedere [Quarantena](quarantine.md) e [Individuazione e rilascio dei messaggi in quarantena come amministratore](find-and-release-quarantined-messages-as-an-administrator.md). <br/><br/> Per informazioni su come configurare i messaggi di notifica per la posta indesiderata per gli utenti, vedere [Configurare le notifiche di posta indesiderata dell'utente finale in EOP](configure-end-user-spam-notifications-in-eop.md) o [Configurare le notifiche di posta indesiderata dell'utente finale in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md).
+     > Per informazioni su come gli amministratori gestiscono i messaggi di posta elettronica presenti nella quarantena, vedere [Quarantena](quarantine.md) e [Gestire i messaggi e i file in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md) <br/><br/> Per informazioni su come configurare i messaggi di notifica per la posta indesiderata per gli utenti, vedere [Configurare le notifiche di posta indesiderata dell'utente finale in EOP](configure-end-user-spam-notifications-in-eop.md) o [Configurare le notifiche di posta indesiderata dell'utente finale in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md).
 
    - Configurare **Seleziona la soglia** per determinare il modo in cui si vuole gestire la posta elettronica in blocco come posta indesiderata, in base al Livello di reclamo in blocco del messaggio. È possibile scegliere un'impostazione di soglia tra 1 e 9, dove 1 indica la maggior parte della posta elettronica come posta indesiderata e 9 consente di recapitare la maggior parte della posta elettronica in blocco. Il servizio quindi esegue l'azione configurata, ad esempio, l'invio del messaggio alla cartella Posta indesiderata del destinatario. Vedere [Valori del Livello di reclamo in blocco](bulk-complaint-level-values.md) e [Differenza tra posta elettronica indesiderata e posta elettronica in blocco](what-s-the-difference-between-junk-email-and-bulk-email.md) per ulteriori dettagli.
 
