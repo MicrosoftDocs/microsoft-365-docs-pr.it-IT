@@ -17,12 +17,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Introduce suggerimenti di sicurezza per i messaggi di posta elettronica filtrati dal filtro di posta indesiderata EOP e Office 365.
-ms.openlocfilehash: 1fddb38be711a9d43e85adea34fe14eb9e7a85ef
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bd493fba7a41f9452f915ff456c9483f48e299f5
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082339"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895192"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Suggerimenti per la sicurezza nei messaggi di posta elettronica in Office 365
 
@@ -58,11 +58,6 @@ Il suggerimento per la sicurezza, ovvero un messaggio con codice a colori, avvis
 
 ## <a name="working-with-safety-tips"></a>Utilizzo dei suggerimenti per la sicurezza
 
-I suggerimenti per la sicurezza sono sempre abilitati per Outlook sul Web, anche se non tutti i messaggi ne ricevono uno. Gli amministratori di Office 365 possono disattivare i suggerimenti di sicurezza per altri client di posta elettronica, ad esempio Outlook. Per ulteriori informazioni, vedere [abilitare o disabilitare i suggerimenti per la sicurezza in Office 365](enable-or-disable-safety-tips.md).
+I suggerimenti per la sicurezza sono sempre abilitati per Outlook sul Web, anche se non tutti i messaggi ne ricevono uno. Gli amministratori di Office 365 possono disattivare i suggerimenti di sicurezza per altri client di posta elettronica, ad esempio Outlook. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
 Se non si è d'accordo con il modo in cui Office 365 e EOP hanno categorizzato un messaggio (ovvero non è posta indesiderata o non è lecito), è possibile inviare i messaggi per l'analisi per migliorare l'esperienza. Per ulteriori informazioni, vedere [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). È anche possibile fare clic sul collegamento commenti e suggerimenti sulla sicurezza per inviare commenti direttamente a Microsoft per aiutarci a migliorare.
-
-## <a name="see-also"></a>Vedere anche
-
-[Abilitare o disabilitare i suggerimenti per la sicurezza in Office 365](enable-or-disable-safety-tips.md)
-

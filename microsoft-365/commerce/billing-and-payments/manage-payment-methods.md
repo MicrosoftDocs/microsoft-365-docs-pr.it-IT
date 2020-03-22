@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Informazioni su come gestire i metodi di pagamento nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 61c6d0b4fb21762eaeee96d8923eda7702fc70bb
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341598"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894842"
 ---
 # <a name="manage-payment-methods"></a>Gestire metodi di pagamento
 
@@ -35,6 +35,15 @@ Quando si acquistano prodotti o servizi aziendali da Microsoft, è possibile uti
 > La possibilità di pagare con un conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
 >
 > È necessario utilizzare un metodo di pagamento emesso dallo stesso paese del tenant.
+
+## <a name="add-a-payment-method"></a>Aggiungere un metodo di pagamento
+
+L'aggiunta di un metodo di pagamento non associa gli abbonamenti. Per assegnare una singola sottoscrizione al metodo di pagamento, vedere [modificare un metodo di pagamento per una singola sottoscrizione](#change-a-payment-method-for-a-single-subscription). Per sostituire tutte le sottoscrizioni che utilizzano un altro metodo di pagamento con quello nuovo, vedere [Replace a Payment Method](#replace-a-payment-method).
+
+1. Nell'interfaccia di amministrazione, accedere alla pagina dei<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">metodi di pagamento</a> per la **fatturazione** > **& pagamenti** > .
+2. Selezionare **Aggiungere una modalità di pagamento**.
+3. Nella pagina **Modalità di pagamento** scegliere una modalità di pagamento dal menu a discesa.
+4. Immettere le informazioni per la nuova scheda o il conto corrente bancario, quindi selezionare **Aggiungi**.
 
 ## <a name="update-payment-method-details"></a>Aggiornare i dettagli del metodo di pagamento
 
@@ -96,7 +105,7 @@ Se un metodo di pagamento è collegato a qualsiasi sottoscrizione o profilo di f
     > Se si dispone di abbonamenti associati a un profilo di fatturazione, è possibile utilizzare solo una carta di credito per pagarli. Se si dispone di account bancari elencati nella pagina **metodi di pagamento** , non sono disponibili per la scelta nell'elenco a discesa.
 5. Per aggiungere un nuovo metodo di pagamento, selezionare **Aggiungi metodo di pagamento**.
 6. Scegliere il tipo di metodo di pagamento che si desidera aggiungere, immettere le informazioni dell'account e quindi fare clic su **Salva**.
-7. Il nuovo metodo di pagamento è già selezionato nell'elenco a discesa.  Select **Next**. 
+7. Il nuovo metodo di pagamento è già selezionato nell'elenco a discesa. Selezionare **Avanti**.
 8. Selezionare **Elimina**.
 
 ## <a name="troubleshoot-payment-methods"></a>Risoluzione dei problemi relativi ai metodi di pagamento

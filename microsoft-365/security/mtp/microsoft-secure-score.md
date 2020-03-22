@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ea91fc29a0fa768113ff3ca8d8129a0ee56ab5f5
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5fe9be7e85288e720b2ba3e5854cf34ec2263ee7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633994"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895430"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -140,13 +140,41 @@ Per rendere Microsoft Secure Score un migliore rappresentante della posizione di
 
 Per informazioni sulle modifiche pianificate, vedere [What ' s Coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-### <a name="removed-not-scored-improvement-actions"></a>Azioni di miglioramento "non segnate" rimosse
+### <a name="march-2020"></a>Marzo 2020
+
+#### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Supporto delle impostazioni predefinite per la sicurezza per le azioni di miglioramento di Azure AD
+
+Microsoft Secure Score aggiornerà le azioni di miglioramento per supportare le impostazioni predefinite per la [sicurezza di Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), che facilitano la protezione dell'organizzazione con quelle preconfigurate per gli attacchi più comuni.
+
+Influenzerà le operazioni di miglioramento seguenti:
+
+- Garantire che tutti gli utenti possano completare l'autenticazione a più fattori per l'accesso sicuro
+- Richiedere l'AMF per i ruoli amministrativi
+- Abilitazione del criterio per bloccare l'autenticazione legacy
+
+#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Azioni di miglioramento rimosse che non soddisfano le aspettative per misure affidabili o che non forniscono una rappresentazione utile della posizione di sicurezza
+
+Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni azione di miglioramento sia misurabile e affidabile, vengono eliminate le azioni di miglioramento riportate di seguito.
+
+- Archiviare i documenti degli utenti in OneDrive for business
+- Impostare i criteri degli allegati sicuri di Office 365 ATP
+- Configurare i collegamenti sicuri di Office 365 per verificare gli URL
+- Non consentire la delega delle cassette postali
+- Consenti collegamenti di condivisione guest anonimi per siti e documenti
+- Abilitare la console di protezione delle app Cloud
+- Configurare la data di scadenza per i collegamenti di condivisione esterna
+- Abilitare la registrazione dei dati di controllo
+- Individuare le applicazioni IT Shadow a rischio e non conformi
+- Esaminare le autorizzazioni & bloccare le applicazioni OAuth rischiose connesse all'ambiente
+- Configurare il controllo delle versioni nelle raccolte documenti di SharePoint Online
+
+#### <a name="removed-not-scored-improvement-actions"></a>Azioni di miglioramento "non segnate" rimosse
 
 Uno dei principi del Punteggio sicuro è che il punteggio dovrebbe essere standardizzato e facilmente correlabile. L'utilizzo di azioni di miglioramento non misurabili o utilizzabili ha provocato confusione. Microsoft Secure Score ha senso solo quando ogni suggerimento può avere un effetto chiaro sulla partitura. Le azioni di miglioramento non segnate non sono misurabili.  
 
 Per questi motivi, tutte le azioni di miglioramento non segnate sono state rimosse. Non è necessaria alcuna azione da parte vostra.
 
-### <a name="removed-device-improvement-actions"></a>Azioni di miglioramento del dispositivo rimosse
+#### <a name="removed-device-improvement-actions"></a>Azioni di miglioramento del dispositivo rimosse
 
 Dopo aver valutato la categoria del dispositivo Microsoft Secure score per le azioni di miglioramento, è stato stabilito che tali azioni valutano attualmente lo stato del criterio e non lo stato di configurazione dei dispositivi. Poiché la configurazione è direttamente legata alla postura di sicurezza, le azioni del dispositivo esistenti sono state determinate per non rappresentare completamente la postura organizzativa.  Verranno eliminate le azioni correnti nella categoria dispositivo durante la lavorazione per fornire una serie di raccomandazioni che utilizzano direttamente i dati di diagnostica per rappresentare in modo più completo la posizione di sicurezza dei dispositivi.
 
@@ -173,16 +201,7 @@ Sono state rimosse le operazioni di miglioramento seguenti:
 - Richiedere che tutti i dispositivi dispongano di configurazioni di sicurezza avanzate
 - Rivedere i dispositivi bloccati segnala settimanalmente
 
-### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement"></a>Azioni di miglioramento rimosse che non soddisfano le aspettative per misure affidabili
-
-Per assicurarsi che il Punteggio di Microsoft Secure sia significativo e che ogni azione di miglioramento sia misurabile e affidabile, sono state rimosse le seguenti azioni di miglioramento:
-
-- Abilitare la registrazione dei dati di controllo
-- Individuare le applicazioni IT Shadow a rischio e non conformi
-- Esaminare le autorizzazioni & bloccare le applicazioni OAuth rischiose connesse all'ambiente
-- Configurare il controllo delle versioni nelle raccolte documenti di SharePoint Online
-
-### <a name="mfa-improvement-action-updates"></a>Aggiornamenti dell'azione per il miglioramento dell'AMF
+#### <a name="mfa-improvement-action-updates"></a>Aggiornamenti dell'azione per il miglioramento dell'AMF
 
 Per riflettere la necessità per le aziende di garantire la massima sicurezza durante l'applicazione di criteri che funzionano con le loro attività, Microsoft Secure Score ha rimosso tre azioni di miglioramento incentrate sull'autenticazione a più fattori e ha aggiunto due.
 
@@ -199,7 +218,7 @@ Operazioni di miglioramento aggiunte:
 
  Queste nuove azioni di miglioramento richiedono la registrazione di utenti o amministratori per l'autenticazione a più fattori (AMF) all'interno della directory e la definizione del set di criteri appropriato che soddisfano le esigenze dell'organizzazione. L'obiettivo principale è la flessibilità garantendo che tutti gli utenti e gli amministratori siano in grado di eseguire l'autenticazione con più fattori o richieste di verifica dell'identità basata sui rischi. Che può assumere la forma di avere più criteri che applicano decisioni con ambito o impostazione dei valori predefiniti per la sicurezza (a partire dal 16 marzo) che consentono a Microsoft di decidere quando sfidare gli utenti per l'AMF.
 
-### <a name="removed-review-improvement-actions"></a>Azioni di miglioramento "revisione" rimosse
+#### <a name="removed-review-improvement-actions"></a>Azioni di miglioramento "revisione" rimosse
 
 Uno dei principi del Punteggio sicuro è che il punteggio dovrebbe essere standardizzato e facilmente correlabile. L'utilizzo di azioni di miglioramento non misurabili o utilizzabili ha provocato confusione. Un punteggio sicuro di Microsoft ha senso solo quando ogni suggerimento può avere un effetto chiaro sulla partitura. Esaminare le azioni di miglioramento non vengono misurate allo stesso livello di altre azioni di miglioramento.  
 

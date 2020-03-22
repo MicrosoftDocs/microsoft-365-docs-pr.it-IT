@@ -16,12 +16,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Viene visualizzato un messaggio di errore quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica si trova in Office 365? Se si ritiene di non dover ricevere tale messaggio di errore, è possibile utilizzare il portale di esclusione per rimuoversi dall'elenco dei mittenti bloccati di Office 365.
-ms.openlocfilehash: 3e131addb391ecbf90d74ad4fdfa65b802c5e1ac
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: cd85a06bfd4122dcacd798a48f5a1755e2969b4a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081961"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895084"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco mittenti bloccati di Office 365
 
@@ -58,4 +58,4 @@ _IP address_ è l'indirizzo IP del computer in cui è in esecuzione il server di
     > [!NOTE]
     > Potrebbe richiedere fino a 24 ore o i risultati possono variare notevolmente prima che vengano rimosse le restrizioni.
 
-Informazioni su [come impedire che i messaggi di posta elettronica reali vengano contrassegnati come posta indesiderata in office 365](prevent-email-from-being-marked-as-spam.md ) e che [controllino la posta indesiderata in uscita in Office 365](outbound-spam-controls.md) per impedire la blacklist di IP.
+Vedere [creare elenchi di mittenti attendibili in office 365](create-safe-sender-lists-in-office-365.md) e [protezione da posta indesiderata in uscita in Office 365](outbound-spam-controls.md) per impedire che IP venga inserito nella lista nera.

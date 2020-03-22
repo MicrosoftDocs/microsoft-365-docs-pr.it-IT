@@ -1,7 +1,6 @@
 ---
 title: Gestire chi può creare gruppi di Office 365
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
 author: MikePlumleyMSFT
@@ -22,19 +21,19 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Informazioni su come controllare gli utenti che possono creare gruppi di Office 365.
-ms.openlocfilehash: a6016f6406b211aae216702910a696be50e1b82c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 0da8aded4b7a55975a9327cc4f29ff8679b3ccf2
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352637"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894552"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Gestire chi può creare gruppi di Office 365
 
   
 Gli utenti possono creare gruppi di Office 365 con molta facilità, quindi gli amministratori non vengono inondati di richieste di crearli per conto di altre persone. Tuttavia, a seconda dei requisiti aziendali, può essere opportuno controllare chi è autorizzato a creare gruppi.
   
-Questo articolo spiega come impedire la creazione di gruppi **in tutti i servizi di Office 365 che usano i gruppi**: 
+In questo articolo viene illustrato come disabilitare la possibilità di creare gruppi in tutti i servizi di Office 365 che utilizzano i gruppi, tra cui:
   
 - Outlook
     
@@ -92,9 +91,9 @@ Gli utenti seguenti non hanno la necessità di assegnare loro le licenze Azure a
 Gli amministratori nei ruoli sopra elencati non devono necessariamente essere membri di questo gruppo: mantengono la possibilità di creare gruppi.
 
 > [!IMPORTANT]
-> Assicurarsi di utilizzare un **gruppo di sicurezza** per limitare gli utenti autorizzati a creare gruppi. Se si prova a usare un gruppo di Office 365, i membri non saranno in grado di creare un gruppo da SharePoint, che verificherà infatti che il gruppo sia un gruppo di sicurezza. 
+> Assicurarsi di utilizzare un **gruppo di sicurezza** per limitare gli utenti autorizzati a creare gruppi. Se si tenta di utilizzare un gruppo di Office 365, i membri non saranno in grado di creare un gruppo da SharePoint perché verifica la ricerca di un gruppo di sicurezza. 
     
-1. Nell'interfaccia di amministrazione, andare alla <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> \> pagina **gruppi.**
+1. Nell'interfaccia di amministrazione, andare alla <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> \> pagina **gruppi.**
 
 2. Fare clic su **Aggiungi gruppo**.
 
@@ -103,59 +102,18 @@ Gli amministratori nei ruoli sopra elencati non devono necessariamente essere me
 4. Completare la configurazione del gruppo di sicurezza, aggiungendo persone o altri gruppi di sicurezza che si desidera siano in grado di creare gruppi nell'organizzazione.
     
 Per istruzioni dettagliate, vedere [creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di Microsoft 365](../email/create-edit-or-delete-a-security-group.md).
-  
-## <a name="step-2-install-the-preview-version-of-the-azure-active-directory-powershell-for-graph"></a>Passaggio 2: installare la versione di anteprima di Azure Active Directory PowerShell per Graph
+ 
+## <a name="step-2-run-powershell-commands"></a>Passaggio 2: Eseguire i comandi di PowerShell
 
-Queste procedure richiedono la versione di anteprima di Azure Active Directory PowerShell per Graph. La versione GA non funzionerà.
+Per modificare l'impostazione di accesso Guest a livello di gruppo, è necessario utilizzare la versione di anteprima di [Azure Active Directory PowerShell per Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (Module Name **AzureADPreview**):
+
+- Se non è ancora stata installata una versione del modulo PowerShell di Azure AD, vedere [installare il modulo Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) e seguire le istruzioni per installare la versione di anteprima pubblica.
+
+- Se è installata la versione 2.0 disponibile a livello generale del modulo PowerShell di Azure AD (AzureAD), è necessario disinstallarlo eseguendo `Uninstall-Module AzureAD` nella sessione di PowerShell e quindi installare la versione di anteprima eseguendo `Install-Module AzureADPreview`.
+
+- Se è già stata installata la versione Preview, eseguire `Install-Module AzureADPreview` per verificare che sia la versione più recente di questo modulo.
 
 
-> [!IMPORTANT]
-> Non è possibile installare contemporaneamente entrambe le versioni di anteprima e di GA nello stesso computer. È possibile installare il modulo in Windows 10, Windows Server 2016.
-
-  
-È consigliabile avere  *sempre*  la versione più aggiornata: disinstallare la versione precedente di AzureADPreview o AzureAD e ottenere quella più recente. 
-  
-1. Nella barra di ricerca digitare Windows PowerShell.
-    
-2. Fare clic con il pulsante destro del mouse su **Windows PowerShell** e quindi scegliere **Esegui come amministratore**.
-    
-    ![Aprire PowerShell con "Esegui come amministratore".](../../media/52517af8-c7b0-4c8f-b2f3-0f82f9d5ace1.png)
-    
-3. Impostare il criterio su RemoteSigned utilizzando [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy).
-    
-    ```
-    Set-ExecutionPolicy RemoteSigned
-    ```
-  
-4. Controllare il modulo installato:
-    
-    ```
-    Get-InstalledModule -Name "AzureAD*"
-    ```
-
-5. Per disinstallare una versione precedente di AzureADPreview o AzureAD, eseguire questo comando:
-  
-    ```
-    Uninstall-Module AzureADPreview
-    ```
-
-    oppure
-  
-    ```
-    Uninstall-Module AzureAD
-    ```
-
-6. To install the latest version of AzureADPreview, run this command:
-  
-    ```
-    Install-Module AzureADPreview
-    ```
-
-    At the message about an untrusted repository, type **Y**. It will take a minute or so for the new module to install. 
-
-Lasciare aperta la finestra di PowerShell per il passaggio 3, in basso.
-  
-## <a name="step-3-run-powershell-commands"></a>Passaggio 3: eseguire i comandi di PowerShell
 
 Copiare lo script riportato di seguito in un editor di testo, ad esempio Blocco note, o [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 

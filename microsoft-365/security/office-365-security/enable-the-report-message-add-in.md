@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come abilitare il componente aggiuntivo per i messaggi di report per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
-ms.openlocfilehash: 94dbe7d9dcd5cf3dc8bd5874550880d813f879f5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 32b4ab318237ca220b63c87bd4a664cfb69d0b45
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086376"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893755"
 ---
 # <a name="enable-the-report-message-add-in"></a>Abilitare il componente aggiuntivo Segnala messaggio
 
@@ -32,20 +32,20 @@ ms.locfileid: "42086376"
 
 Il componente aggiuntivo segnala messaggio per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consente agli utenti di segnalare facilmente messaggi di posta indesiderata, siano essi sicuri o dannosi, a Microsoft e ai suoi affiliati per l'analisi. Microsoft utilizza questi invii per migliorare l'efficacia delle tecnologie di protezione della posta elettronica. Inoltre, se l'organizzazione utilizza [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) o [Plan 2](office-365-ti.md), il componente aggiuntivo segnala messaggio fornisce al team di sicurezza dell'organizzazione informazioni utili che è possibile utilizzare per esaminare e aggiornare i criteri di sicurezza.
 
-Si supponga, ad esempio, che le persone riferiscono un gran quantità di messaggi come phishing. Queste informazioni si riferiscono al [dashboard di sicurezza](security-dashboard.md) e ad altri report. Il team di sicurezza dell'organizzazione può utilizzare queste informazioni per indicare che potrebbe essere necessario aggiornare i criteri di protezione anti-phishing. In alternativa, se la gente segnala un gran quantità di messaggi che sono stati contrassegnati come posta indesiderata come non indesiderata utilizzando il componente aggiuntivo segnala messaggio, il team di sicurezza dell'organizzazione potrebbe dover adeguare i criteri di protezione da [posta indesiderata](configure-the-anti-spam-policies.md).
+Si supponga, ad esempio, che le persone riferiscono un gran quantità di messaggi come phishing. Queste informazioni si riferiscono al [dashboard di sicurezza](security-dashboard.md) e ad altri report. Il team di sicurezza dell'organizzazione può utilizzare queste informazioni per indicare che potrebbe essere necessario aggiornare i criteri di protezione anti-phishing. In alternativa, se la gente segnala un gran quantità di messaggi che sono stati contrassegnati come posta indesiderata come non indesiderata utilizzando il componente aggiuntivo segnala messaggio, il team di sicurezza dell'organizzazione potrebbe dover adeguare i criteri di protezione da [posta indesiderata](configure-your-spam-filter-policies.md).
 
 Il componente aggiuntivo segnala messaggio è compatibile con la maggior parte delle sottoscrizioni di Office 365 e i prodotti seguenti:
 
- - Outlook sul web
- - Outlook 2013 SP1
- - Outlook 2016
- - Outlook 2016 per Mac
- - Outlook incluso con Office 365 ProPlus
+- Outlook sul web
+- Outlook 2013 SP1
+- Outlook 2016
+- Outlook 2016 per Mac
+- Outlook incluso con Office 365 ProPlus
 
 Il componente aggiuntivo per i messaggi di report non è attualmente disponibile per:
 
- - Cassette postali in organizzazioni di Exchange locali
- - Abbonamenti a GCC, GCC HIGH o DoD
+- Cassette postali in organizzazioni di Exchange locali
+- Abbonamenti a GCC, GCC HIGH o DoD
 
 Il Web browser esistente dovrebbe essere sufficiente per il componente aggiuntivo del messaggio di report in modo che funzioni; Tuttavia, se si nota che il componente aggiuntivo non è disponibile o non funziona come previsto, provare con un altro browser.
 

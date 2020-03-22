@@ -10,14 +10,23 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come configurare Microsoft 365 per la collaborazione con utenti esterni all'organizzazione.
-ms.openlocfilehash: eb6bbdc4dd0520f240edbdebde6851ec917cd0d9
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604603"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894954"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborare con utenti esterni all'organizzazione
+
+Le funzionalità di condivisione esterna di Microsoft 365 offrono agli utenti dell'organizzazione la possibilità di collaborare con partner, fornitori, clienti e altri utenti che non dispongono di un account nella directory. È possibile condividere interi team o siti con persone esterne all'organizzazione o solo singoli file.
+
+Collaborare con persone esterne all'organizzazione è costituito da due componenti principali:
+
+- **Abilita condivisione** : configurare i controlli di condivisione in Azure Active Directory, teams, gruppi di Office 365 e SharePoint per consentire il livello di condivisione desiderato per l'organizzazione.
+- **Abilitare la sicurezza aggiuntiva** -mentre le funzionalità di condivisione di base possono essere configurate in modo da richiedere agli utenti esterni all'organizzazione di eseguire l'autenticazione, Microsoft 365 fornisce numerose funzionalità aggiuntive di sicurezza e conformità che consentono di proteggere i dati e di gestire i criteri di governance durante la condivisione esterna.
+
+## <a name="enable-sharing"></a>Abilita condivisione
 
 Per impostazione predefinita, in Microsoft 365, la condivisione con utenti esterni all'organizzazione è abilitata per SharePoint e OneDrive, ma è disabilitata per i team. Molti scenari di condivisione esterna di SharePoint e OneDrive funzionano senza ulteriori configurazioni. Per confermare le impostazioni di uno scenario che si sta utilizzando o abilitarne una nuova, scegliere tra le opzioni seguenti:
 
@@ -27,7 +36,7 @@ Per impostazione predefinita, in Microsoft 365, la condivisione con utenti ester
 
 Per una panoramica completa delle impostazioni di condivisione Guest disponibili in Microsoft 365, vedere [riferimento alle impostazioni di condivisione Guest di microsoft 365](microsoft-365-guest-settings.md).
 
-## <a name="secure-your-environment"></a>Protezione dell'ambiente
+## <a name="enable-additional-security"></a>Abilitare la sicurezza aggiuntiva
 
 Dopo aver abilitato lo scenario che si desidera utilizzare per la condivisione con utenti esterni all'organizzazione, prendere in considerazione ulteriori misure di salvaguardia per proteggere il contenuto da una condivisione accidentale o intenzionale.
 

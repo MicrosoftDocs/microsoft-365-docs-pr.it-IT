@@ -1,12 +1,10 @@
 ---
 title: Gestire l'accesso guest nei gruppi di Office 365
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 12/18/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Informazioni su come aggiungere gli ospiti a un gruppo di Office 365, visualizzare gli utenti guest e utilizzare PowerShell per controllare l'accesso guest.
-ms.openlocfilehash: 3314746e4d12c318eaae8fbfa34c2ed0b4d31aed
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: e76718ccb20843b252c939be48653c61c7c1f0a9
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610614"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894504"
 ---
 # <a name="manage-guest-access-in-office-365-groups"></a>Gestire l'accesso guest nei gruppi di Office 365
 
@@ -50,11 +48,9 @@ L'accesso guest nei gruppi è spesso utilizzato come parte di uno scenario più 
 
 Se si desidera abilitare o disabilitare l'accesso guest nei gruppi, è possibile farlo nell'interfaccia di amministrazione di Microsoft 365.
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">& componenti</a> aggiuntivi.
-
-2. Selezionare **gruppi di Office 365**.
+1. Nell'interfaccia di amministrazione, passare alle impostazioni delle **Impostazioni** \> **e selezionare** i gruppi di **Office 365**.
   
-3. Nella pagina **gruppi di Office 365** , scegliere se si desidera consentire agli utenti esterni all'organizzazione di accedere alle risorse del gruppo o lasciare che i proprietari del gruppo aggiungano persone esterne all'organizzazione ai gruppi.
+2. Nella pagina **gruppi di Office 365** , scegliere se si desidera consentire agli utenti esterni all'organizzazione di accedere alle risorse del gruppo o lasciare che i proprietari del gruppo aggiungano persone esterne all'organizzazione ai gruppi.
 
 ## <a name="add-guests-to-an-office-365-group-from-the-admin-center"></a>Aggiungere gli utenti a un gruppo di Office 365 dall'interfaccia di amministrazione
 
@@ -62,7 +58,7 @@ Se l'ospite è già presente nella directory, è possibile aggiungerli ai gruppi
   
 1. Nell'interfaccia di amministrazione, andare alla**Groups**  > pagina **gruppi.**
   
-2. Selezionare il gruppo a cui si desidera aggiungere l'ospite e selezionare **Visualizza tutti e Gestisci membri** nella scheda **membri** . 
+2. Fare clic sul gruppo a cui si desidera aggiungere l'ospite e selezionare **Visualizza tutti e Gestisci membri** nella scheda **membri** . 
   
 4. Selezionare **Aggiungi membri**e scegliere il nome del Guest che si desidera aggiungere.
     
@@ -76,7 +72,7 @@ Se si desidera modificare le informazioni di un ospite, è possibile [aggiungere
 
 Se si desidera consentire l'accesso guest alla maggior parte dei gruppi, ma si desidera impedire l'accesso guest, è possibile bloccare l'accesso guest per i singoli gruppi tramite Microsoft PowerShell.
 
-Per modificare l'impostazione di accesso Guest a livello di gruppo, è necessario utilizzare la versione di anteprima di [Azure Active Directory PowerShell per Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (Module Name **AzureADPreview**):
+È necessario utilizzare la versione di anteprima di [Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (Module Name **AzureADPreview**) per modificare l'impostazione di accesso Guest a livello di gruppo:
 
 - Se non è ancora stata installata una versione del modulo PowerShell di Azure AD, vedere [installare il modulo Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) e seguire le istruzioni per installare la versione di anteprima pubblica.
 

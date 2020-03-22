@@ -1,8 +1,7 @@
 ---
 title: Criteri di scadenza dei gruppi di Office 365
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -19,18 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di scadenza dei gruppi di Office 365.
-ms.openlocfilehash: c4c2f7b98247cc81b3fadc561f92084f9bd39c96
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 40b0b56507c46f2a658126627d5f8794848bde27
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352587"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894516"
 ---
-# <a name="office-365-group-expiration-policy"></a>Criteri di scadenza dei gruppi di Office 365
+# <a name="office-365-group-expiration-policy"></a>Criteri di scadenza del gruppo di Office 365
 
 Con l'aumento dell'utilizzo dei gruppi di Office 365, gli amministratori e gli utenti hanno bisogno di un modo per pulire i gruppi inutilizzati. I criteri di scadenza consentono di rimuovere i gruppi inattivi dal sistema e rendere gli elementi più puliti.
 
-Quando un gruppo scade, vengono eliminati anche tutti i servizi associati (la cassetta postale, il pianificatore, il sito di SharePoint e così via).
+Quando un gruppo scade, vengono eliminati anche tutti i servizi associati (la cassetta postale, il pianificatore, il sito di SharePoint, il team e così via).
 
 Quando un gruppo scade è "Soft-deleted", il che significa che può essere ancora recuperato fino a 30 giorni.
 
@@ -44,7 +43,7 @@ I gruppi che sono attivamente in uso vengono rinnovati automaticamente. Una dell
 > [!IMPORTANT]
 > Quando si modifica il criterio di scadenza, il servizio ricalcola la data di scadenza per ogni gruppo. Inizia sempre a contare dalla data in cui è stato creato il gruppo e quindi applica il nuovo criterio di scadenza.
 
-È importante sapere che la scadenza è disattivata per impostazione predefinita. Gli amministratori dovranno abilitarla per il tenant se desiderano utilizzarla.
+È importante sapere che la scadenza è disattivata per impostazione predefinita. Gli amministratori dovranno abilitarla per l'organizzazione se desiderano utilizzarla.
 
 > [!NOTE]
 > La configurazione e l'utilizzo dei criteri di scadenza per i gruppi di Office 365 richiede di possedere ma non necessariamente di assegnare le licenze di Azure AD Premium per i membri di tutti i gruppi a cui viene applicato il criterio di scadenza. Per ulteriori informazioni, vedere [Guida introduttiva a Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
@@ -54,7 +53,7 @@ I gruppi che sono attivamente in uso vengono rinnovati automaticamente. Una dell
 |Ruolo|Cosa possono fare|
 |---------|---------|
 |Amministratore globale di Office 365 (in Azure, amministratore della società), amministratore utente|Creare, leggere, aggiornare o eliminare le impostazioni dei criteri di scadenza per i gruppi di Office 365.|
-|Utente|Rinnovare o [ripristinare](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Office 365 che possiede|
+|User|Rinnovare o [ripristinare](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Office 365 che possiede|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Informazioni su come impostare i criteri di scadenza
 

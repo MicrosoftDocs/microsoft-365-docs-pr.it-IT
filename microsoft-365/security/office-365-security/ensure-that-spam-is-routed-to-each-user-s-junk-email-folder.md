@@ -1,11 +1,11 @@
 ---
-title: Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti
+title: Configurare EOP per la posta indesiderata in ambienti ibridi
 f1.keywords:
 - NOCSH
-ms.author: tracyp
+ms.author: chrisda
 author: MSFTTracyP
-manager: dansimp
-ms.date: 7/16/2016
+manager: chrisda
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,54 +15,134 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono imparare a instradare la posta indesiderata alle cartelle di posta indesiderata degli utenti in Exchange Online Protection.
-ms.openlocfilehash: 6d1fd625669e8b638a408b2db1993f45fa653ffb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Gli amministratori possono ottenere informazioni su come configurare l'ambiente di Exchange locale per instradare la posta indesiderata alle cartelle di posta indesiderata degli utenti locali, se si utilizza Exchange Online Protection (EOP) autonomo in ambienti ibridi.
+ms.openlocfilehash: 8a3887d1cc7390e75b7708d2167372e976923e01
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599363"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893719"
 ---
-# <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti
+# <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurare EOP autonomo per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi
 
 > [!IMPORTANT]
-> Questo argomento si applica solo ai clienti di Exchange Online Protection (EOP) che ospitano le cassette postali in locale in una distribuzione ibrida. I clienti di Exchange Online le cui cassette postali sono completamente ospitate in Office 365 non devono eseguire questi comandi.
+> Questo argomento è solo per i clienti di EOP autonomi in ambienti ibridi. Questo argomento non si applica ai clienti di Office 365 con cassette postali di Exchange Online.
 
-L'azione di protezione da posta indesiderata predefinita per i clienti EOP consiste nello spostamento dei messaggi di posta indesiderata nella cartella Posta indesiderata dei destinatari. Affinché questa azione funzioni con le cassette postali locali, è necessario configurare le regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server perimetrali o hub locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Queste regole del flusso di posta consentono di impostare il livello di probabilità di protezione da posta indesiderata utilizzato dalla proprietà SclJunkThreshold del cmdlet Set-OrganizationConfig per spostare lo spam nella cartella posta indesiderata di ogni cassetta postale.
+Se si è un cliente autonomo di Exchange Online Protection (EOP) in un ambiente ibrido, è necessario configurare l'organizzazione di Exchange locale per riconoscere e tradurre i verdetti del filtro della posta indesiderata di EOP, in modo che la regola di posta indesiderata nella cassetta postale locale è possibile spostare i messaggi nella cartella posta indesiderata.
 
-### <a name="to-add-mail-flow-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>Per aggiungere regole del flusso di posta per garantire che la posta indesiderata venga spostata nella cartella posta indesiderata utilizzando Windows PowerShell
+In particolare, è necessario creare regole del flusso di posta (note anche come regole di trasporto) nell'organizzazione di Exchange locale con condizioni che consentono di trovare i messaggi con uno dei seguenti valori e intestazioni di protezione da posta indesiderata di EOP e le azioni che impostano il livello di probabilità di posta indesiderata ( SCL) di tali messaggi su 6:
 
-1. Accedere a Exchange Management Shell per il server Exchange locale. Per sapere come aprire Exchange Management Shell nell'organizzazione Exchange locale, vedere **Open the Shell**.
+- `X-Forefront-Antispam-Report: SFV:SPM`(messaggio contrassegnato come posta indesiderata dal filtro posta indesiderata)
 
-2. Per instradare i messaggi di posta indesiderata filtrata in base al contenuto alla cartella Posta indesiderata, utilizzare il seguente comando:
+- `X-Forefront-Antispam-Report: SFV:SKS`messaggio contrassegnato come posta indesiderata dalle regole del flusso di posta in EOP prima del filtro posta indesiderata
 
-   ```Powershell
-   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
-   ```
+- `X-Forefront-Antispam-Report: SFV:SKB`(messaggio contrassegnato come posta indesiderata dal filtro posta indesiderata a causa dell'indirizzo di posta elettronica o del dominio di posta elettronica del mittente nell'elenco dei mittenti bloccati o nell'elenco dei domini bloccati in EOP)
 
-   Dove _NameForRule_ è il nome della nuova regola, ad esempio JunkContentFilteredMail.
+Per ulteriori informazioni su questi valori di intestazione, vedere intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md).
 
-3. Per instradare i messaggi di posta indesiderata in base al contenuto alla cartella Posta indesiderata, utilizzare il seguente comando:
-
-   ```Powershell
-   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKS" -SetSCL 6
-   ```
-
-   Dove _NameForRule_ è il nome della nuova regola, ad esempio JunkMailBeforeReachingContentFilter.
-
-4. Eseguire il seguente comando per verificare che i messaggi provenienti da mittenti contenuti in un elenco di blocco nel criterio di filtro della posta indesiderata, ad esempio l'elenco dei **Mittenti bloccati** , vengano instradati alla cartella posta indesiderata:
-
-   ```Powershell
-   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
-   ```
-
-   Dove _NameForRule_ è il nome della nuova regola, ad esempio JunkMailInSenderBlockList.
-
-Se non si desidera utilizzare l'azione **Sposta messaggio all'interno della cartella posta indesiderata** , è possibile scegliere un'altra azione nei criteri di filtro del contenuto nell'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md). Per ulteriori informazioni su questi campi nell'intestazione del messaggio, vedere intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md).
+In questo argomento viene descritto come creare queste regole del flusso di posta dell'interfaccia di amministrazione di Exchange (EAC) e in Exchange Management Shell (Exchange PowerShell) nell'organizzazione di Exchange locale.
 
 > [!TIP]
-> Se non si desidera utilizzare l'azione **Sposta messaggio all'interno della cartella posta indesiderata** , è possibile scegliere un'altra azione nei criteri di filtro del contenuto nell'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md). Per ulteriori informazioni su questi campi nell'intestazione del messaggio, vedere intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md).
+> Invece di inviare i messaggi alla cartella posta indesiderata dell'utente locale, è possibile configurare i criteri di protezione dalla posta indesiderata in EOP per la quarantena dei messaggi di posta indesiderata in EOP. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)
+- Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni nell'ambiente di Exchange locale. In particolare, è necessario che venga assegnato il ruolo **regole di trasporto** , assegnato ai ruoli Gestione **organizzazione**, **Gestione conformità**e **record** per impostazione predefinita. Per ulteriori informazioni, vedere [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group).
+
+- Se e quando un messaggio viene recapitato nella cartella posta indesiderata in un'organizzazione di Exchange locale, è controllato da una combinazione delle seguenti impostazioni:
+
+  - Il valore del parametro _SCLJunkThreshold_ nel cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) in Exchange Management Shell. Il valore predefinito è 4, il che significa che un SCL di 5 o superiore deve recapitare il messaggio alla cartella posta indesiderata dell'utente.
+
+  - Il valore del parametro _SCLJunkThreshold_ nel cmdlet [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) in Exchange Management Shell. Il valore predefinito è vuoto ($null), che indica che viene utilizzata l'impostazione dell'organizzazione.
+
+  Per ulteriori informazioni, vedere [soglie del livello di probabilità di posta indesiderata (SCL) di Exchange](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl).
+
+  - Se la regola di posta indesiderata è abilitata per la cassetta postale (il valore del parametro _Enabled_ è $true sul cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) in Exchange Management Shell). È la regola di posta indesiderata che in realtà sposta il messaggio nella cartella posta indesiderata dopo il recapito. Per impostazione predefinita, la regola di posta indesiderata è abilitata sulle cassette postali. Per ulteriori informazioni, vedere [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
+  
+- Per aprire EAC su un server Exchange, vedere interfaccia [di amministrazione di Exchange in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Per aprire Exchange Management Shell, vedere [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+
+- Per ulteriori informazioni sulle regole del flusso di posta in Exchange locale, vedere i seguenti argomenti:
+
+  - [Regole del flusso di posta in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules)
+
+  - [Condizioni ed eccezioni della regola del flusso di posta (predicati) in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
+
+  - [Azioni delle regole del flusso di posta in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/actions)
+
+## <a name="use-the-eac-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>Utilizzare EAC per creare regole del flusso di posta che configurano il SCL dei messaggi di posta indesiderata di EOP
+
+1. Nell'interfaccia di amministrazione di Exchange, andare a **Flusso di posta** \> **Regole**.
+
+2. Fare **Add** ![clic su Aggiungi](../../media/ITPro-EAC-AddIcon.png) icona e selezionare **Crea una nuova regola** nell'elenco a discesa che viene visualizzato.
+
+3. Nella pagina **Nuova regola** che si apre, configurare le seguenti impostazioni:
+
+   - **Nome**: immettere un nome univoco descrittivo per la regola. Ad esempio:
+
+     - EOP SFV: SPM a SCL 6
+
+     - EOP SFV: SKS to SCL 6
+
+     - EOP SFV: SKB to SCL 6
+
+   - Fare clic su **altre opzioni**.
+
+   - **Applica questa regola se**: selezionare **un'intestazione** \> **del messaggio include una di queste parole**.
+
+     Nell' **intestazione Enter Text è inclusa l'indicazione Enter Words** , che viene visualizzata, eseguire le operazioni seguenti:
+
+     - Fare clic su **Immetti testo**. Nella finestra di dialogo **Specifica nome intestazione** che viene visualizzata, immettere **X-Forefront-antispam-report** e quindi fare clic su **OK**.
+
+     - Fare clic su **Immetti parole**. Nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori delle intestazioni di posta indesiderata di EOP (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**),](../../media/ITPro-EAC-AddIcon.png)fare clic su **Aggiungi** ![icona e quindi fare clic su **OK**.
+
+   - **Eseguire le operazioni seguenti**: selezionare **modifica le proprietà** \> del messaggio **impostare il livello di probabilità di posta indesiderata (SCL)**.
+
+     Nella finestra di dialogo **specifica SCL** visualizzata, selezionare **6** (il valore predefinito è **5**).
+
+   Al termine, fare clic su **Salva**
+
+Ripetere questi passaggi per i valori del verdetto di posta indesiderata EOP rimanenti (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**).
+
+## <a name="use-the-exchange-management-shell-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>Utilizzare Exchange Management Shell per creare regole del flusso di posta che configurano il livello SCL dei messaggi di posta indesiderata di EOP
+
+Per creare le tre regole del flusso di posta, utilizzare la sintassi seguente:
+
+```Powershell
+New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "<EOPSpamFilteringVerdict>" -SetSCL 6
+```
+
+Ad esempio:
+
+```Powershell
+New-TransportRule -Name "EOP SFV:SPM to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
+```
+
+```Powershell
+New-TransportRule -Name "EOP SFV:SKS to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKS" -SetSCL 6
+```
+
+```Powershell
+New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
+```
+
+Per informazioni dettagliate su sintassi e parametri, vedere [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+
+## <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
+
+Per verificare la corretta configurazione di EOP autonomo per recapitare la posta indesiderata alla cartella posta indesiderata in ambiente ibrido, eseguire una delle operazioni seguenti:
+
+- Nell'interfaccia di amministrazione di Exchange, andare a **regole**del **flusso** \> di posta, selezionare la regola, quindi](../../media/ITPro-EAC-EditIcon.png) fare clic su **modifica** ![icona modifica per verificare le impostazioni.
+
+- In Exchange Management Shell, sostituire \<RuleName\> con il nome della regola del flusso di posta e RUL il comando seguente per verificare le impostazioni:
+
+  ```powershell
+  Get-TransportRule -Identity "<RuleName>" | Format-List
+  ```
+
+- In un sistema di posta elettronica esterno **che non esegue l'analisi dei messaggi in uscita per la posta indesiderata**, inviare un test generico per il messaggio di posta elettronica indesiderata (GTUBE) a un destinatario coinvolto e verificare che sia recapitato nella cartella posta indesiderata. Un messaggio di GTUBE è simile al file di testo EICAR (European Institute for computer Antivirus Research) per testare le impostazioni di malware.
+
+  Per inviare un messaggio di GTUBE, includere il testo seguente nel corpo di un messaggio di posta elettronica su una singola riga, senza spazi o interruzioni di riga:
+
+  ```text
+  XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
+  ```

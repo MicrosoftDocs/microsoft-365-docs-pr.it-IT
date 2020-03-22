@@ -16,12 +16,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: "Gli utenti possono inviare messaggi di posta indesiderata falsi negativi e falsi positivi a Microsoft per l'analisi. "
-ms.openlocfilehash: 7b53f74be78bc1203189815c6a7adf3337decd21
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 27e0698d1ad7d05adfa69e18e9b5b21edb74b1eb
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42856870"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893647"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Inviare messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
 
@@ -36,7 +36,7 @@ Gli amministratori possono inviare messaggi di posta elettronica, URL e allegati
 
 Se si riceve un messaggio che passa attraverso i filtri per la posta indesiderata e che deve essere classificato come posta indesiderata o phishing, è possibile inviare il messaggio "falso negativo" ai team di analisi di posta indesiderata e Microsoft Phishing Analysis, a seconda dei casi. Gli analisti rivedranno il messaggio e lo aggiungeranno ai filtri a livello di servizio, se soddisfano i criteri di classificazione.
 
-Per ulteriori impostazioni di posta indesiderata applicabili all'intera organizzazione, vedere [Bloccare la posta indesiderata utilizzando il filtro di Office 365 al fine di evitare problemi di falsi negativi](reduce-spam-email.md). In questo articolo sono contenuti suggerimenti che consentono di evitare falsi negativi.
+Per ulteriori impostazioni di posta indesiderata che si applicano all'intera organizzazione, vedere [protezione da posta indesiderata in Office 365](anti-spam-protection.md). In questo articolo sono contenuti suggerimenti che consentono di evitare falsi negativi.
 
 È possibile inviare messaggi di posta indesiderata nei modi seguenti:
 
@@ -59,16 +59,16 @@ Per inviare messaggi di posta indesiderata o tentativi di phishing a Microsoft:
 3. Copiare e incollare il messaggio di posta indesiderata o di phishing nel nuovo messaggio come allegato.
 
    > [!NOTE]
-   > • È possibile allegare più messaggi nel nuovo messaggio. Assicurarsi che tutti i messaggi siano dello stesso tipo: messaggi di truffa di phishing o messaggi di posta indesiderata. <br/><br/>• Lasciare vuoto il corpo del nuovo messaggio. <br/><br/>• Utilizzare i formati. msg (formato Outlook predefinito) o. eml (predefinito di Outlook sul Web Format) per i messaggi allegati.
+   > * È possibile allegare più messaggi nel nuovo messaggio. Assicurarsi che tutti i messaggi siano dello stesso tipo: messaggi di truffa di phishing o messaggi di posta indesiderata. <br/><br/>* Lasciare vuoto il corpo del nuovo messaggio. <br/><br/>* Utilizzare i formati. msg (default Outlook Format) o. eml (impostazione predefinita di Outlook sul Web Format) per i messaggi allegati.
 
 4. Fare clic su **Invia**.
 
 ## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>Inviare messaggi contrassegnati come posta indesiderata ma che dovrebbero essere autorizzati 
 
 Se un messaggio è stato erroneamente identificato come posta indesiderata, è possibile inviare il messaggio "falso positivo" al team di analisi di posta indesiderata di Microsoft. Gli analisti valuterà e analizzerà il messaggio. A seconda dei risultati dell'analisi, i criteri di filtro del contenuto della posta indesiderata a livello di servizio potrebbero essere modificati per consentire l'inoltro del messaggio.
-  
-Gli amministratori possono esaminare altre informazioni sulle impostazioni di posta indesiderata che si applicano a un'intera organizzazione. Vedere [come garantire che un messaggio non venga contrassegnato come posta indesiderata](prevent-email-from-being-marked-as-spam.md). Queste informazioni sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi positivi.
-  
+
+Gli amministratori possono esaminare altre informazioni sulle impostazioni di posta indesiderata che si applicano a un'intera organizzazione. Vedere [creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md). Queste informazioni sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi positivi.
+
 È possibile inviare messaggi non di posta indesiderata nei modi seguenti:
 
 - Se si utilizza l'azione **Sposta messaggio all'interno della cartella posta indesiderata** quando si configurano i filtri del contenuto (questa è l'azione predefinita), gli utenti possono rilasciare messaggi falsi positivi nella cartella posta indesiderata di Outlook o Outlook sul Web (in precedenza noto come Outlook Web App).
@@ -114,14 +114,3 @@ Dopo aver esaminato queste informazioni, il team di posta indesiderata potrebbe 
 [Video del team di posta indesiderata di Microsoft Exchange](https://youtu.be/-TpX_-GMC7o?hd=1)
 
 La valutazione della posta indesiderata è un processo continuo applicabile a prescindere dal set di caratteri o della lingua di origine. Dal momento che un messaggio di posta indesiderata può essere vago o non contenere testo nell'oggetto o nel corpo, il team della posta indesiderata si basa su altre caratteristiche del messaggio per eseguire il filtraggio. Ciò significa che dopo che il team ha contrassegnato un determinato messaggio come posta indesiderata e ha apportato le necessarie modifiche alla base di regole, il messaggio viene bloccato finché le relative caratteristiche non hanno subito modifiche sufficienti ad evitare i filtri. Nuove regole per la posta indesiderata vengono sviluppate continuamente. I tempi necessari per lo sviluppo di nuove regole o l'analisi dei messaggi inviati possono variare a seconda della quantità e della qualità degli invii. Poiché le nuove regole della posta indesiderata vengono impostate globalmente per tutti gli utenti, non tutti i singoli invii di posta indesiderata determineranno la creazione di una nuova regola.
-
-## <a name="for-more-information"></a>Ulteriori informazioni
-
-[Protezione antispam e antimalware](anti-spam-and-anti-malware-protection.md)
-  
-[Come assicurarsi che un messaggio non venga contrassegnato come indesiderato](prevent-email-from-being-marked-as-spam.md)
-  
-[Bloccare la posta indesiderata utilizzando il filtro di Office 365 al fine di evitare problemi di falsi negativi](reduce-spam-email.md)
-  
-
-[Bloccare la posta indesiderata utilizzando il filtro di Office 365 al fine di evitare problemi di falsi negativi](reduce-spam-email.md)

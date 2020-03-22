@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La registrazione di controllo delle cassette postali è attivata per impostazione predefinita in Office 365 (denominato anche controllo delle cassette postali predefinito o controllo delle cassette postali per impostazione predefinita). Ciò significa che alcune azioni eseguite da proprietari, delegati e amministratori delle cassette postali vengono automaticamente registrate in un registro di controllo delle cassette postali, in cui è possibile cercare le attività eseguite sulla cassetta postale.
-ms.openlocfilehash: 6a1c435ca3be16ef2f4926cce56afe180c576f15
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2b69d63e63e049566c9827f08d2ead592b918684
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634964"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894921"
 ---
 # <a name="manage-mailbox-auditing"></a>Gestire il controllo delle cassette postali
 
@@ -107,7 +107,7 @@ Nella tabella seguente vengono descritte le azioni della cassetta postale dispon
 |**AddFolderPermissions**|**Nota**: Sebbene questo valore venga accettato come azione della cassetta postale, è già incluso nell'azione **UpdateFolderPermissions** e non è controllato separatamente. In altre parole, non utilizzare questo valore.||||
 |**ApplyRecord**|Un elemento è etichettato come record.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Copia**|Messaggio copiato in un'altra cartella.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|**Creare**|Un elemento è stato creato nella cartella calendario, contatti, note o attività nella cassetta postale (ad esempio, viene creata una nuova convocazione di riunione). Si noti che la creazione, l'invio o la ricezione di un messaggio non viene controllato. così come la creazione di una cartella della cassetta postale.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Creare**|Un elemento è stato creato nella cartella calendario, contatti, note o attività nella cassetta postale (ad esempio, viene creata una nuova convocazione di riunione). La creazione, l'invio o la ricezione di un messaggio non viene controllata, così come la creazione di una cartella della cassetta postale.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Predefinita**||![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|Accesso effettuato a una cartella della cassetta postale. Tale azione viene registrata anche quando l'amministratore o un delegato apre la cassetta postale.<br/><br/> **Nota**: i record di controllo per le operazioni di associazione delle cartelle eseguite dai delegati vengono consolidati Viene generato un record di controllo per l'accesso a una singola cartella entro 24 ore.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Messaggio eliminato dalla cartella Elementi ripristinabili.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -141,7 +141,7 @@ Tenere presente che un amministratore con autorizzazione di accesso completo a u
 
 |**Azione della cassetta postale**|**Descrizione**|**Admin**|**Delegato**|**Proprietario**|
 |:---------|:---------|:---------:|:---------:|:---------:|
-|**Creare**|Creazione di un elemento del calendario. Si noti che la creazione, l'invio o la ricezione di un messaggio non viene controllato.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**Creare**|Creazione di un elemento del calendario. La creazione, l'invio o la ricezione di un messaggio non viene controllata,|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**HardDelete**|Messaggio eliminato dalla cartella Elementi ripristinabili.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MoveToDeletedItems**|Messaggio eliminato e spostato nella cartella Posta eliminata.|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**SendAs**|Un messaggio è stato inviato con l'autorizzazione SendAs,|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
@@ -167,7 +167,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 Il valore `Admin, Delegate, Owner` indica:
 
-- Le azioni predefinite delle cassette postali per tutti e tre i tipi di accesso vengono controllate. Si noti che questo è l'unico valore visualizzato nelle cassette postali di gruppo di Office 365.
+- Le azioni predefinite delle cassette postali per tutti e tre i tipi di accesso vengono controllate. Questo è l'unico valore visualizzato nelle cassette postali di gruppo di Office 365.
 
 - Un amministratore *non ha* modificato le azioni delle cassette postali controllate per qualsiasi tipo di accesso in una cassetta postale utente o in una cassetta postale condivisa. Nota Questo è lo stato predefinito dopo che il controllo delle cassette postali per impostazione predefinita viene inizialmente attivato all'interno dell'organizzazione.
 
@@ -337,14 +337,17 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 Il valore **true** indica che la registrazione di controllo delle cassette postali viene ignorata per l'utente.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Anche se la registrazione di controllo delle cassette postali è attivata per impostazione predefinita per tutte le organizzazioni, solo gli utenti con licenze E5 restituiranno gli eventi del registro di controllo delle cassette postali nelle [ricerche del registro di controllo nel centro sicurezza & conformità](search-the-audit-log-in-security-and-compliance.md) o tramite l' [API di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference) **per impostazione predefinita**
 
   Per recuperare le voci del registro di controllo delle cassette postali per gli utenti senza licenze E5, è possibile:
 
-  - Utilizzare le ricerche del registro di controllo nel centro sicurezza & conformità o tramite l'API di attività di gestione di Office 365 **dopo** che è stato abilitato manualmente il controllo delle cassette postali su ogni singola cassetta postale.
-
+  - Abilitare manualmente il controllo delle cassette postali su singole cassette di posta `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`(eseguire il comando). Dopo aver eseguito questa operazione, è possibile utilizzare le ricerche del registro di controllo nel centro sicurezza & Compliance o tramite l'API di attività di gestione di Office 365.
+  
+    > [!NOTE]
+    > Se il controllo delle cassette postali è già abilitato per la cassetta postale, ma le ricerche non restituiscono alcun risultato, modificare _AuditEnabled_ il valore del `$false` parametro AuditEnabled consente e quindi `$true`tornare a.
+  
   - Utilizzare i cmdlet seguenti in PowerShell di Exchange Online:
 
     - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) per eseguire una ricerca nel registro di controllo della cassetta postale per utenti specifici.
@@ -361,7 +364,7 @@ Il valore **true** indica che la registrazione di controllo delle cassette posta
 
   Se si aumenta il limite di validità, è necessario utilizzare il cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) in Exchange Online PowerShell per eseguire una ricerca nel registro di controllo della cassetta postale dell'utente per i record precedenti a 90 giorni.
 
-- Se la proprietà *AuditLogAgeLimit* di una cassetta postale è stata modificata prima del controllo delle cassette postali attivata per impostazione predefinita per l'organizzazione, il periodo di validità del registro di controllo esistente della cassetta postale non è stato modificato. In altre parole, il controllo delle cassette postali per impostazione predefinita non ha effetto sul limite di validità corrente per i record di controllo delle cassette postali.
+- Se la proprietà *AuditLogAgeLimit* di una cassetta postale è stata modificata prima del controllo delle cassette postali attivata per impostazione predefinita per l'organizzazione, il periodo di validità del registro di controllo esistente della cassetta postale non è stato modificato. In altre parole, il controllo delle cassette postali per impostazione predefinita non influisce sul limite di validità corrente dei record di controllo delle cassette postali.
 
 - Per modificare il valore di *AuditLogAgeLimit* in una cassetta postale di un gruppo di Office 365, `-GroupMailbox` è necessario includere l'opzione nel comando **Set-Mailbox** .
 
@@ -387,3 +390,5 @@ Il valore **true** indica che la registrazione di controllo delle cassette posta
     - Non è possibile accedere direttamente a un record del registro di controllo nella cartella elementi ripristinabili. al contrario, si utilizza il cmdlet **Search-MailboxAuditLog** o si effettua una ricerca nel registro di controllo di Office 365 per individuare e visualizzare i record di controllo delle cassette postali.
 
 - Se una cassetta postale viene conservata o assegnata a un criterio di conservazione nel centro conformità, i record del registro di controllo continuano a essere conservati per la durata definita dalla proprietà *AuditLogAgeLimit* della cassetta postale (90 giorni per impostazione predefinita). Per conservare i record del registro di controllo più a lungo per le cassette postali in blocco, è necessario aumentare il valore *AuditLogAgeLimit* della cassetta postale.
+
+- In un ambiente multi-geografico, il controllo delle cassette postali Cross-Geo non è supportato. Ad esempio, se a un utente vengono assegnate le autorizzazioni per accedere a una cassetta postale condivisa in una posizione geografica diversa, le azioni delle cassette postali eseguite da tale utente non vengono registrate nel registro di controllo della cassetta postale condivisa.

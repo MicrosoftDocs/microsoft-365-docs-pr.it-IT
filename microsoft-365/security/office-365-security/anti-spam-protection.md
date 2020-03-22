@@ -1,11 +1,11 @@
 ---
-title: Protezione dalla posta indesiderata in Office 365
+title: Protezione dalla posta indesiderata
 f1.keywords:
 - NOCSH
-ms.author: krowley
-author: kccross
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,79 +16,99 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di impedire la posta indesiderata in Exchange Online e Office 365. Ottenere troppi messaggi di posta indesiderata in Office 365? È possibile personalizzare i filtri posta indesiderata e le impostazioni dei criteri di protezione da posta indesiderata
-ms.openlocfilehash: b7ffb29d09a357cc0a2e407d1a66f29273fc950f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di impedire la posta indesiderata in Exchange Online e Office 365. Ottenere troppi messaggi di posta indesiderata in Office 365? È possibile personalizzare i filtri posta indesiderata e le impostazioni di protezione da posta indesiderata
+ms.openlocfilehash: 5558bfa29427df4df12a83bc8b30adaf6001b9c3
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633834"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894071"
 ---
-# <a name="office-365-email-anti-spam-protection"></a>Protezione dalla posta indesiderata in Office 365
-
-Si è preoccupati per la posta indesiderata in Office 365? Sono stati creati più filtri per la posta indesiderata nel servizio Office 365 o Exchange Online Protection (EOP), in modo che la posta elettronica sia protetta dal momento in cui viene visualizzato il primo messaggio. Per impedire la posta indesiderata in Office 365, è possibile modificare un'impostazione di protezione per gestire un problema specifico nell'organizzazione, ad esempio, si supponga di ricevere una quantità elevata di posta indesiderata da un mittente specifico, come ad es., oppure di ottimizzare le impostazioni in modo che siano adattato per soddisfare al meglio le esigenze della propria organizzazione. A tale scopo, è possibile modificare le impostazioni di protezione dalla posta indesiderata &amp; nel centro sicurezza e conformità di Office 365.
-
-Questo articolo è destinato agli amministratori di Office 365. Se non si è un amministratore, ma si è un utente di Office 365 e si desidera informazioni su come gestire la posta indesiderata ricevuta, questo non è l'articolo che si sta cercando. Se invece si usa Outlook per PC o Outlook per Mac, iniziare con [la panoramica del filtro della posta indesiderata](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Se si usa Outlook sul Web, iniziare con informazioni [sulla posta indesiderata e sul phishing](https://support.office.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
-
-## <a name="these-options-help-you-prevent-spam-in-office-365"></a>Queste opzioni consentono di impedire la posta indesiderata in Office 365
-
- **Filtro connessioni**: quando si utilizza il filtro connessioni, Office 365 verifica la reputazione del mittente prima di consentire l'esecuzione di un messaggio. È possibile creare un elenco Consenti o un elenco di mittenti attendibili per essere certi di ricevere tutti i messaggi inviati da un indirizzo IP specifico o da un intervallo di indirizzi IP. È inoltre possibile creare un elenco di indirizzi IP da cui bloccare i messaggi, denominati elenco bloccati. Per ulteriori informazioni, vedere [Configurare i criteri di filtro delle connessioni](configure-the-connection-filter-policy.md). Se si è preoccupati per la posta indesiderata in Office 365, utilizzare il filtro connessioni per impedire la posta indesiderata.
-
-Per i clienti che dispongono di Office 365 Enterprise E5 o che hanno acquistato licenze di Advanced Threat Protection (ATP), il filtro delle connessioni viene utilizzato da spoofing Intelligence per creare gli elenchi Consenti e blocca dei mittenti che eseguono lo spoofing del dominio. Per ulteriori informazioni, vedere [Learn more about spoofing Intelligence](learn-about-spoof-intelligence.md).
-
- **Filtro posta indesiderata**: Office 365 verifica la coerenza delle caratteristiche del messaggio con la posta indesiderata utilizzando il filtro posta È possibile modificare le azioni da intraprendere per i messaggi identificati come posta indesiderata e scegliere se filtrare i messaggi scritti in determinate lingue o inviati da paesi o aree geografiche specifiche. È inoltre possibile abilitare le opzioni avanzate per il filtro della posta indesiderata se si desidera perseguire un approccio aggressivo al filtro posta indesiderata. Inoltre, è possibile configurare le notifiche di posta indesiderata dell'utente finale per informare gli utenti quando i messaggi destinati ad essi sono stati inviati alla quarantena. (L'invio di messaggi alla quarantena è una delle azioni configurabili). Da queste notifiche, gli utenti finali possono rilasciare falsi positivi e segnalarli a Microsoft per l'analisi. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md). Per impedire la posta indesiderata in Office 365, utilizzare il filtro posta indesiderata, se si è preoccupati per la posta indesiderata in Office 365, utilizzare il filtro connessioni per impedire la posta indesiderata.
+# <a name="anti-spam-protection-in-office-365"></a>Protezione dalla posta indesiderata in Office 365
 
 > [!NOTE]
-> Per i clienti autonomi di EOP: per impostazione predefinita, i filtri per la posta indesiderata di EOP inviano messaggi di posta indesiderata alla cartella posta indesiderata Tuttavia, per assicurarsi che il **messaggio di spostamento all'azione della cartella posta indesiderata** funzionerà con le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per ulteriori informazioni, vedere [Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+> Questo argomento è destinato agli amministratori di Office 365. Per gli argomenti degli utenti finali, vedere [Panoramica del filtro posta indesiderata](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) e informazioni [sulla posta indesiderata e sul phishing](https://support.office.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
-## <a name="extra-information-if-you-receive-too-much-spam-in-office-365"></a>Informazioni aggiuntive se si riceve troppa posta indesiderata in Office 365
+Se si è un cliente di Office 365 con cassette postali in Exchange Online o un cliente di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, i messaggi di posta elettronica vengono protetti automaticamente dalla posta indesiderata (posta indesiderata) da EOP.
 
-Nel video seguente viene fornita una panoramica della configurazione del filtro posta indesiderata in EOP.
+La Guida di orientamento alla sicurezza della posta elettronica di Microsoft comporta un approccio cross-product senza eguali. La tecnologia di protezione da posta indesiderata e anti-phishing di EOP viene applicata nelle piattaforme di posta elettronica per offrire agli utenti gli strumenti e le innovazioni più recenti di protezione dalla posta indesiderata e anti-phishing nella rete L'obiettivo di EOP è offrire un servizio di posta elettronica completo e utilizzabile che aiuti a rilevare e proteggere gli utenti dalla posta indesiderata, dalle minacce alla posta elettronica fraudolente (phishing) e da malware.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
+L'utilizzo della posta elettronica è cresciuto, quindi ha un abuso di posta elettronica. La posta indesiderata non monitorata può intasare le cassette postali e le reti, influire sulla soddisfazione degli utenti e ostacolare l'efficacia delle comunicazioni di posta elettronica. Ecco perché Microsoft continua a investire nelle tecnologie di protezione dalla posta indesiderata. In poche parole, viene avviato contenendo e filtrando la posta indesiderata.
 
-Per ulteriori informazioni, vedi l'argomento [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
+## <a name="anti-spam-technologies-in-eop"></a>Tecnologie di protezione da posta indesiderata in EOP
 
-## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>Controllare i messaggi in uscita per impedire la posta indesiderata in Office 365
+Per contribuire alla riduzione della posta indesiderata, EOP include la protezione della posta indesiderata che utilizza tecnologie di filtro della posta indesiderata per identificare e separare la posta indesiderata Il filtro per la posta indesiderata di EOP viene fornito dalle minacce note e dalla posta indesiderata e dall'utente dalla piattaforma consumer, Outlook.com. Il feedback in corso da parte degli utenti di EOP nel programma di classificazione della posta indesiderata contribuisce a garantire che le tecnologie EOP siano continuamente addestrate e migliorate.
 
- **Filtro in uscita**: Office 365 verifica inoltre che gli utenti non inviino messaggi di posta indesiderata. Ad esempio, il computer di un utente potrebbe essere infetto da malware che lo induce a inviare messaggi di posta indesiderata, per cui è possibile creare protezione contro il *filtro in uscita*. Non è possibile disattivare il filtro in uscita, ma puoi configurare le impostazioni descritte in [Configure the outbound Spam Policy](configure-the-outbound-spam-policy.md). Se si è interessati troppo alla posta indesiderata in Office 365, utilizzare il filtro in uscita per impedire la posta indesiderata in Exchange Online.
+Le impostazioni di protezione da posta indesiderata in EOP sono costituite dalle seguenti tecnologie:
 
-## <a name="beyond-the-basics-more-ways-to-prevent-spam-in-office-365"></a>Oltre le nozioni di base: altri modi per impedire la posta indesiderata in Office 365
+- **Filtro connessioni**: identifica i server di origine della posta elettronica buoni e cattivi all'inizio della connessione di posta elettronica in ingresso tramite l'elenco indirizzi IP consentiti, l'elenco indirizzi IP bloccati e l' *elenco di indirizzi* attendibili (un elenco dinamico ma non modificabile dei mittenti affidabili gestiti da Microsoft). Queste impostazioni vengono configurate nel criterio di filtro delle connessioni. Per ulteriori informazioni, vedere [Configure Connection Filtering in Office 365](configure-the-connection-filter-policy.md).
 
- **Regole del flusso di posta**: se si vuole andare oltre il filtro per la posta indesiderata incorporato e creare regole personalizzate basate sui criteri aziendali, _[le regole del flusso di posta](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)_ (note anche come regole di _trasporto_) sono un altro filtro che consente di impedire la posta indesiderata in Office 365. Ad esempio, è possibile utilizzare le regole del flusso di posta per impostare il valore del livello di probabilità di posta indesiderata per i messaggi che soddisfano condizioni specifiche, come descritto in [Use Mail Flow Rules to impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+  > [!NOTE]
+  > Spoof Intelligence utilizza il filtro connessioni per creare gli elenchi Consenti e blocca dei mittenti che eseguono lo spoofing del dominio di posta elettronica. Per ulteriori informazioni, vedere [Learn more about spoofing Intelligence in Office 365](learn-about-spoof-intelligence.md).
 
- **Autenticazione della posta elettronica**: le tecniche che utilizzano il DNS (Domain Name System) per aggiungere informazioni verificabili ai messaggi di posta elettronica sul mittente di un messaggio di posta elettronica sono denominate autenticazione della posta elettronica. Gli amministratori di Office 365 più avanzati possono avvalersi dei metodi di autenticazione della posta elettronica seguenti:
+- **Filtro posta indesiderata (filtro contenuto)**: EOP utilizza la posta indesiderata del filtro di posta indesiderata **, la**posta **indesiderata** **, e-mail di** **phishing** e posta elettronica di **phishing con elevata sicurezza** per classificare i messaggi. È possibile configurare le azioni da intraprendere in base a queste sentenze ed è possibile configurare le opzioni di notifica degli utenti finali per i messaggi che sono stati messi in quarantena anziché recapitati. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
-- **Sender Policy Framework (SPF)**: SPF consente di convalidare l'origine dei messaggi di posta elettronica verificando l'indirizzo IP del mittente in base al presunto proprietario del dominio di invio. Per una rapida introduzione a SPF e per le istruzioni di configurazione, vedere [Configurare SPF in Office 365 per prevenire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Per informazioni più dettagliate su come Office 365 utilizza SPF oppure per risolvere i problemi o per eseguire distribuzioni non standard (ad esempio, le distribuzioni ibride), iniziare da [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
+  > [!NOTE]
+  > Per impostazione predefinita, il filtro posta indesiderata è configurato per inviare messaggi contrassegnati come posta indesiderata alla cartella posta indesiderata del destinatario. Tuttavia, negli ambienti ibridi in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare due regole del flusso di posta (note anche come regole di trasporto) nell'organizzazione di Exchange locale per riconoscere le intestazioni di posta indesiderata di EOP che vengono aggiunte ai messaggi. Per informazioni dettagliate, vedere [Configure standalone EOP per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
-- **DomainKeys identificata (DKIM)**: DKIM consente di allegare una firma digitale ai messaggi di posta elettronica nell'intestazione del messaggio di posta elettronica inviata. I sistemi di posta elettronica che ricevono messaggi di posta elettronica dal dominio utilizzano questa firma digitale per determinare se la posta elettronica in arrivo ricevuta è legittima. Per informazioni su DKIM e Office 365, vedere [use DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in office 365](use-dkim-to-validate-outbound-email.md).
+- **Filtro posta indesiderata in uscita**: EOP verifica inoltre che gli utenti non inviino posta indesiderata, sia nel contenuto del messaggio in uscita o superando i limiti dei messaggi in uscita. Per ulteriori informazioni, vedere [configurare il filtro per la posta indesiderata in uscita in Office 365](configure-the-outbound-spam-policy.md).
 
-- **Autenticazione dei messaggi basata sul dominio, creazione di rapporti e conformità (DMARC)**: DMARC aiuta a ricevere sistemi di posta elettronica determinare cosa fare con i messaggi che non hanno esito positivo o DKIM controlli e fornisce un altro livello di attendibilità per i partner di posta elettronica. Per informazioni sulla configurazione di DMARC, vedere [use DMARC per convalidare la posta elettronica in Office 365](use-dmarc-to-validate-email.md).
+- **Intelligence spoof**: per ulteriori informazioni, vedere [Learn more about spoofing intelligence in Office 365](learn-about-spoof-intelligence.md).
 
-Se si è preoccupati per la posta indesiderata, il phishing e lo spoofing in Office 365, utilizzare SPF, DKIM e DMARC insieme per evitare la posta indesiderata e la falsificazione di spoofing.
+## <a name="manage-errors-in-spam-filtering"></a>Gestire gli errori nel filtraggio della posta indesiderata
 
- **Impostazioni gestite dall'utente finale**: se si cercano informazioni su come gli utenti finali possono gestire le proprie impostazioni di posta indesiderata, vedere [Panoramica del filtro della posta indesiderata](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) (per gli utenti di Microsoft Outlook) oppure [acquisire messaggi di posta indesiderata e phishing](https://support.microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31) (per gli utenti di Outlook sul Web). Se si utilizza EOP per proteggere le cassette postali locali, accertarsi di utilizzare la sincronizzazione della directory per verificare che tali impostazioni siano sincronizzate con il servizio. Per ulteriori informazioni su come configurare la sincronizzazione delle directory, vedere "Utilizzare la sincronizzazione delle directory per gestire gli utenti di posta elettronica" in [Gestione utenti di posta in EOP](manage-mail-users-in-eop.md).
+È possibile che i messaggi validi possano essere identificati come posta indesiderata (noti anche come falsi positivi) oppure che la posta indesiderata può essere recapitata nella cartella in arrivo. È possibile utilizzare i suggerimenti descritti nelle sezioni seguenti per scoprire cosa è successo e impedire che accada in futuro.
 
-## <a name="for-more-information"></a>Ulteriori informazioni
+Di seguito sono riportate alcune procedure consigliate che si applicano a uno scenario:
 
-[Blog: perché la posta indesiderata e il phishing passano da Office 365?](https://blogs.msdn.microsoft.com/tzink/2014/09/12/why-does-spam-and-phishing-get-through-office-365-and-what-can-be-done-about-it/)
+- Invia sempre messaggi non classificati a Microsoft. Gli amministratori possono utilizzare l' [esploratore invii](admin-submission.md)o gli utenti possono segnalare i messaggi tramite il [componente aggiuntivo utilizza il messaggio di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
-[Domande frequenti sulla protezione da posta indesiderata](anti-spam-protection-faq.md)
+- **Esaminare le intestazioni dei messaggi di protezione da posta indesiderata**: questi valori indicano il motivo per cui un messaggio è stato contrassegnato come posta indesiderata o perché ha ignorato il filtro posta indesiderata. Per ulteriori informazioni, vedere [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md).
 
-[Evitare che la posta elettronica venga erroneamente contrassegnata come posta indesiderata tramite un elenco di indirizzi attendibili o altre tecniche](prevent-email-from-being-marked-as-spam.md)
+- Impostare il **record MX su office 365**: affinché EOP fornisca la protezione ottimale, è consigliabile che la posta elettronica sia stata recapitata a Office 365 per la prima volta. Per istruzioni, vedere [creare record DNS in qualsiasi provider di hosting DNS per Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
-[Come configurare il filtro di posta indesiderata di Office 365 per bloccare i messaggi di posta indesiderata](reduce-spam-email.md)
+  Se il record MX punta a un'altra posizione (ad esempio, una soluzione di protezione da posta indesiderata o un dispositivo di terze parti), è difficile per EOP fornire un filtro di posta indesiderata accurato. In questo scenario, è necessario configurare il filtro avanzato per i connettori (noti anche come _Ignora elenco_). Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-[Differenza tra posta elettronica indesiderata e posta elettronica inviata in blocco](what-s-the-difference-between-junk-email-and-bulk-email.md)
+- **Utilizzo dell'autenticazione della posta elettronica**: se si è proprietari di un dominio di posta elettronica, è possibile utilizzare DNS per garantire che i messaggi provenienti da mittenti del dominio siano legittimi. Per evitare la posta indesiderata e la falsificazione dello spoofing in EOP, utilizzare tutti i metodi di autenticazione della posta elettronica seguenti:
 
-[Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md)
+  - **SPF**: Sender Policy Framework verifica l'indirizzo IP di origine del messaggio in base al proprietario del dominio di invio. Per una rapida introduzione a SPF e per le istruzioni di configurazione, vedere [Configurare SPF in Office 365 per prevenire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Per informazioni più dettagliate su come Office 365 utilizza SPF oppure per risolvere i problemi o per eseguire distribuzioni non standard (ad esempio, le distribuzioni ibride), iniziare da [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
 
-[Posta indesiderata costituita da falsi rapporti di mancato recapito ed EOP](backscatter-messages-and-eop.md)
+  - **DKIM**: DomainKeys identificata la posta elettronica aggiunge una firma digitale all'intestazione del messaggio dei messaggi inviati dal dominio. Per ulteriori informazioni, vedere [utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md).
 
-## <a name="more-resources"></a>Altre risorse
+  - **DMARC**: l'autenticazione dei messaggi basata sul dominio, la creazione di report e la conformità consentono ai sistemi di posta elettronica di destinazione di determinare cosa fare con i messaggi che non hanno esito positivo o DKIM controlli e fornisce un altro livello di attendibilità per i partner di posta elettronica. Per ulteriori informazioni, vedere [utilizzare DMARC per convalidare la posta elettronica in Office 365](use-dmarc-to-validate-email.md).
 
-[Ottenere assistenza dai forum della community di Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+- **Verificare le impostazioni di posta elettronica in blocco**: la soglia di livello conforme (BCL) configurata nei criteri di protezione da posta indesiderata determina se la posta elettronica in blocco (nota anche come _posta grigia_) è contrassegnata come indesiderata. L'impostazione di solo PowerShell _MarkAsSpamBulkMail_ che è attiva per impostazione predefinita contribuisce anche ai risultati. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
-[Amministratori: Accedere e creare una richiesta di servizio](https://portal.office.com/AdminPortal/Home?ref=support)
+### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Impedire il recapito della posta indesiderata nella posta in arrivo
 
-[Supporto di AContact for Business Products-guida per gli amministratori](https://docs.microsoft.com/Office365/Admin/contact-support-for-business-products)
+- **Verificare le impostazioni dell'organizzazione**: guardare fuori per le impostazioni che consentono ai messaggi di ignorare il filtro posta indesiderata (ad esempio, se si aggiunge un dominio all'elenco dei domini consentiti nei criteri di protezione da posta indesiderata). Per le impostazioni consigliate, vedere [impostazioni consigliate per EOP e office 365 ATP Security](recommended-settings-for-eop-and-office365-atp.md) e [creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md).
+
+- **Verificare che la regola di posta indesiderata sia abilitata nella cassetta postale dell'utente**: è abilitata per impostazione predefinita, ma se si tratta di messaggi non contrassegnati come posta indesiderata non possono essere spostati nella cartella posta indesiderata. Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+
+- **Utilizzare gli elenchi di mittenti bloccati disponibili**: per informazioni, vedere [creare elenchi di mittenti bloccati in Office 365](create-block-sender-lists-in-office-365.md).
+
+- **Annullamento della sottoscrizione alla posta elettronica in blocco** Se il messaggio è stato sottoscritto da un utente (newsletter, annunci di prodotti e così via) e contiene un collegamento di annullamento della sottoscrizione da un'origine attendibile, è consigliabile chiedergli di annullare la sottoscrizione.
+
+- **EOP autonomo: creare regole del flusso di posta in Exchange locale per i verdetti del filtro della posta indesiderata di EOP**: in ambienti EOP indipendenti in cui EOP protegge le cassette postali di Exchange locali, è necessario configurare le regole del flusso di posta (note anche come regole di trasporto) in Exchange locale per tradurre il verdetto del filtro della posta indesiderata in modo che la regola Per informazioni dettagliate, vedere [Configure standalone EOP per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+
+### <a name="prevent-good-email-from-being-identified-as-spam"></a>Impedire che la posta elettronica venga identificata come posta indesiderata
+
+Di seguito sono riportati alcuni passaggi che è possibile eseguire per impedire falsi positivi:
+
+- **Verificare le impostazioni del filtro posta indesiderata di Outlook dell'utente**:
+
+  - **Verificare che il filtro posta indesiderata di Outlook sia disabilitato**: quando il filtro posta indesiderata di Outlook è impostato sul valore predefinito **nessun filtro automatico**, Outlook non cerca di classificare i massaggi come posta indesiderata.  Quando è impostato su **basso** o **alto**, il filtro posta indesiderata di Outlook utilizza la propria tecnologia di filtro SmartScreen per identificare e spostare la posta indesiderata nella cartella posta indesiderata, in modo da poter ottenere falsi positivi. Si noti che Microsoft ha interrotto la produzione di aggiornamenti delle definizioni di posta indesiderata per i filtri di SmartScreen in Exchange e Outlook nel novembre 2016. Le definizioni di posta indesiderata di SmartScreen esistenti sono state lasciate sul posto, ma la loro efficacia potrebbe peggiorare nel tempo.
+
+  - **Verificare che l'impostazione ' solo elenchi attendibili di Outlook ' sia disabilitata**: quando questa impostazione è abilitata, solo i messaggi provenienti da mittenti nell'elenco Mittenti attendibili dell'utente o nell'elenco destinatari attendibili vengono recapitati nella posta in arrivo. la posta elettronica proveniente da tutti gli utenti viene automaticamente spostata nella cartella posta indesiderata.
+
+  Per ulteriori informazioni su queste impostazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+
+- **Utilizzare gli elenchi di mittenti attendibili disponibili**: per informazioni, vedere [creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md).
+
+- **Verificare che gli utenti siano entro i limiti di invio e ricezione** , come descritto in [ricezione e invio dei limiti](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) nella descrizione del servizio Exchange Online.
+
+- **EOP autonomo: utilizzare la sincronizzazione della directory**: se si utilizza EOP autonomo per proteggere l'organizzazione di Exchange locale, è necessario sincronizzare le impostazioni utente con il servizio utilizzando la sincronizzazione della directory. In questo modo, si ha la certezza che gli elenchi dei Mittenti attendibili vengano rispettati da Exchange Online Protection. Per ulteriori informazioni, vedere [Utilizzare la sincronizzazione della directory per gestire gli utenti di posta](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users).
+
+## <a name="anti-spam-legislation"></a>Normativa sulla protezione da posta indesiderata
+
+Microsoft, riteniamo che lo sviluppo di nuove tecnologie e autoregolamentazione richieda il supporto di politiche governative effettive e di quadri giuridici. La proliferazione di posta indesiderata a livello mondiale ha spinto numerose organizzazioni legislative a regolare la posta elettronica commerciale. In molti paesi sono ora presenti leggi che combattono per la posta indesiderata. Gli Stati Uniti dispongono di leggi federali e statali che disciplinano lo spam e questo approccio complementare contribuisce a limitare la posta indesiderata, consentendo al commercio elettronico legittimo di prosperare. L'Act CAN-SPAM espande gli strumenti disponibili per limitare i messaggi di posta elettronica fraudolenti e ingannevoli.

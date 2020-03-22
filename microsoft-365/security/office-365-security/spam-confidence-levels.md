@@ -1,11 +1,11 @@
 ---
-title: Livelli di sicurezza della protezione contro la posta indesiderata
+title: Livello di probabilità di posta indesiderata
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/02/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,30 +15,35 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
-description: Quando un messaggio di posta elettronica viene individuato dal filtro di protezione da posta indesiderata, viene assegnato un punteggio di posta indesiderata. Questo punteggio viene associato a un livello di probabilità di posta indesiderata (SCL, Spam Confidence Level) e contrasseganto nell'X-header. Il servizio agisce sui messaggi a seconda della valutazione SCL sul livello di probabilità di posta indesiderata. Nella tabella seguente viene mostrato come le diverse valutazioni SCL vengono interpretate dai filtri e come vengono intraprese le azioni sui messaggi in ingresso per ogni valutazione.
-ms.openlocfilehash: 65b6f51199e6d8f6ce17a05b28c5bad15d9d1760
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Gli amministratori possono ottenere informazioni su come il livello di probabilità di posta indesiderata (SCL) determina quanto probabile o improbabile sia la posta indesiderata e le azioni predefinite che il filtro posta indesiderata assume sui messaggi in base all'SCL.
+ms.openlocfilehash: b8f194f9aecc31896fb816433e71d1b26de708f7
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084761"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893695"
 ---
-# <a name="spam-confidence-levels"></a>Livelli di probabilità di posta indesiderata
+# <a name="spam-confidence-level-scl-in-office-365"></a>Livello di probabilità di posta indesiderata (SCL) in Office 365
 
-Quando un messaggio di posta elettronica viene individuato dal filtro di protezione da posta indesiderata, viene assegnato un punteggio di posta indesiderata. Questo punteggio viene associato a un livello di probabilità di posta indesiderata (SCL, Spam Confidence Level) e contrasseganto nell'X-header. Il servizio agisce sui messaggi a seconda della valutazione SCL sul livello di probabilità di posta indesiderata. Nella tabella seguente viene mostrato come le diverse valutazioni SCL vengono interpretate dai filtri e come vengono intraprese le azioni sui messaggi in ingresso per ogni valutazione.
-  
-|**Valutazione SCL**|**Interpretazione del livello di sicurezza della protezione contro la posta indesiderata**|**Azione predefinita**|
-|:-----|:-----|:-----|
-|-1|Non posta indesiderata proveniente da un mittente sicuro, un destinatario sicuro o un indirizzo IP elencato sicuro (partner attendibile).|Recapito del messaggio nella Posta in arrivo del destinatario.|
-|0, 1|Non posta indesiderata perché il messaggio è stato analizzato e determinato come pulito.|Recapito del messaggio nella Posta in arrivo del destinatario.|
-|5, 6|Posta indesiderata|Recapito del messaggio nella cartella Posta indesiderata del destinatario|
-|7, 8, 9|Alta probabilità di posta indesiderata|Recapito del messaggio nella cartella Posta indesiderata del destinatario|
-   
-> [!TIP]
-> Il servizio non utilizza le valutazioni SCL 2, 3, 4, 7 e 8. Una valutazione SCL di 5 o 6 viene considerata presumibilmente di posta indesiderata, il quale è sicuramente meno rispetto ad una valutazione di 9, che è considerata sicuramente di posta indesiderata. È possibile configurare azioni differenti per la posta indesiderata e per probabilità alta di posta indesiderata tramite i criteri di filtro del contenuto nell'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md). È inoltre possibile impostare la classificazione SCL per i messaggi che soddisfano condizioni specifiche utilizzando regole del flusso di posta (note anche come regole di trasporto), come descritto in [Use Mail Flow Rules to impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md). Se si utilizza una regola del flusso di posta per impostare SCL di 7, 8 o 9, il messaggio verrà considerato come posta indesiderata con elevata attendibilità. 
-  
+Quando Office 365 (Exchange Online o standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online) riceve un messaggio di posta elettronica in ingresso, il messaggio passa attraverso il filtro della posta indesiderata e viene assegnato un punteggio di posta indesiderata. Tale punteggio viene mappato a un singolo livello di probabilità di posta indesiderata (SCL) aggiunto al messaggio in un X-header. Un livello SCL superiore indica che un messaggio è più probabile che sia posta indesiderata. Il servizio esegue un'azione sul messaggio in base al livello SCL.
+
+La modalità SCL e le azioni predefinite eseguite nei messaggi sono descritte nella tabella seguente. Per ulteriori informazioni sulle azioni che è possibile eseguire sui messaggi in base al verdetto del filtro della posta indesiderata, vedere [Configure anti-spam Policies in Office 365](configure-your-spam-filter-policies.md).
+
+||||
+|:---:|---|---|
+|**Livello di probabilità di posta indesiderata**|**Definizione**|**Azione predefinita**|
+|-1|Il messaggio ha ignorato il filtro della posta indesiderata. Ad esempio, il messaggio è proveniente da un mittente sicuro, è stato inviato a un destinatario sicuro oppure è da un server di origine posta elettronica nell'elenco indirizzi IP consentiti. Per ulteriori informazioni, vedere [creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md).|Recapito del messaggio nella Posta in arrivo del destinatario.|
+|0, 1|Filtro posta indesiderata determinato il messaggio non era posta indesiderata.|Recapito del messaggio nella Posta in arrivo del destinatario.|
+|5, 6|Filtro posta indesiderata contrassegnata come **posta indesiderata**|Recapito del messaggio nella cartella Posta indesiderata del destinatario|
+|9 |Filtro posta indesiderata contrassegnata come **posta indesiderata con elevata sicurezza**|Recapito del messaggio nella cartella Posta indesiderata del destinatario|
+|
+
+Si noterà che SCL 2, 3, 4, 7 e 8 non vengono utilizzati dal filtro per la posta indesiderata.
+
+È possibile utilizzare le regole del flusso di posta (note anche come regole di trasporto) per contrassegnare il livello SCL nei messaggi. Se si utilizza una regola del flusso di posta per impostare SCL, i valori 5 o 6 attivano l'azione del filtro posta indesiderata per la **posta indesiderata**e i valori 7, 8 o 9 attivano l'azione del filtro posta indesiderata per la posta indesiderata **elevata**. Per ulteriori informazioni, vedere [Use Mail Flow Rules to impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+
+Analogamente a SCL, il livello di reclamo in blocco (BCL) identifica la posta elettronica di massa non valida (nota anche come _posta grigia_). Una BCL superiore indica che è più probabile che un messaggio di posta in blocco generi reclami (ed è pertanto più probabile che sia posta indesiderata). È possibile configurare la soglia BCL nei criteri di protezione da posta indesiderata. Per ulteriori informazioni, vedere [configurare i criteri di protezione dalla posta indesiderata in office 365](configure-your-spam-filter-policies.md), il [livello di reclamo in blocco (BCL) in Office 365)](bulk-complaint-level-values.md)e [Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+
 ||
 |:-----|
 |![Piccola icona per LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nuovo utente di Office 365?**         Sono disponibili esercitazioni video gratuite per **Office 365 admins and IT pros** grazie a LinkedIn Learning.|
-   
-

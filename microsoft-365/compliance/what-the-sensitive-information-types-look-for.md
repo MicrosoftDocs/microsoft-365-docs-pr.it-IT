@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: 368ccef9e5213a7494140d2c305ddafe1e0c3f79
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: bd74551b7e8b2d659724a1222e115a479db76ec8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409511"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894303"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 
@@ -5884,6 +5884,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - Non vengono trovate parole chiave da Keyword_us_drivers_license.
 
 ```xml
+<Entity id="dfeb356f-61cd-459e-bf0f-7c6d28b458c6 patternsProximity="300">
     <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_new_york_drivers_license_number" />
         <Match idRef="Keyword_new_york_drivers_license_name" />
@@ -5897,6 +5898,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
           <Match idRef="Keyword_us_drivers_license" />
         </Any>
     </Pattern>
+</Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave

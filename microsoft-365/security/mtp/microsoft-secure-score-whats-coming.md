@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: efb75f26d66258880c9defa94869f27e18685052
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 61f066b2fff2798e78e6379bbca46e48e93ff017
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372004"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895442"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Che cosa viene in Microsoft Secure Score?
 
@@ -30,26 +30,31 @@ Per rendere Microsoft Secure Score un migliore rappresentante della posizione di
 
 Per informazioni sulle modifiche recenti, vedere [What ' s New in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
-## <a name="march-16th-2020"></a>16 marzo 2020
+## <a name="april-21st-2020"></a>21 aprile 2020
 
 ### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Rimozione di azioni di miglioramento che non soddisfano le aspettative per misure affidabili o che non forniscono una rappresentazione utile della posizione di sicurezza
 
 Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni azione di miglioramento sia misurabile e affidabile, vengono eliminate le azioni di miglioramento riportate di seguito.
 
-- Archiviare i documenti degli utenti in OneDrive for business
-- Impostare i criteri degli allegati sicuri di Office 365 ATP
-- Configurare i collegamenti sicuri di Office 365 per verificare gli URL
-- Non consentire la delega delle cassette postali
-- Consenti collegamenti di condivisione guest anonimi per siti e documenti
-- Abilitare la console di protezione delle app Cloud
-- Configurare la data di scadenza per i collegamenti di condivisione esterna
+- Eliminare/bloccare gli account non utilizzati negli ultimi 30 giorni
+- Designare meno di 5 amministratori globali
+- Applicare la protezione IRM ai documenti
+- Applicare i criteri di prevenzione della perdita di dati
 
-### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Supporto delle impostazioni predefinite per la sicurezza per le azioni di miglioramento di Azure AD
+### <a name="adding-additional-control-support-in-the-preview-version"></a>Aggiunta di un ulteriore supporto di controllo nella versione di anteprima
+- Non consentire agli utenti di concedere il consenso alle applicazioni non gestite (attualmente disponibili nella versione rilasciata)
 
-Microsoft Secure Score aggiornerà le azioni di miglioramento per supportare le impostazioni predefinite per la [sicurezza di Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), che facilitano la protezione dell'organizzazione con quelle preconfigurate per gli attacchi più comuni.
+#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>Supporto per altre azioni di miglioramento della sicurezza delle app di Microsoft Cloud
+- Disabilitare il servizio spooler di stampa nei controller di dominio
+- Modificare le deleghe Kerberos non sicure per impedire la rappresentazione
+- Proteggere e gestire le password di amministratore locale con i giri Microsoft
+- Ridurre il rischio del percorso laterale per le entità sensibili
+- Rimuovere gli account dormienti dai gruppi sensibili
+- Rimuovere gli attributi di cronologia SID non sicuri dalle entità
+- Risolvere gli attributi degli account non sicuri
+- Interrompere l'esposizione delle credenziali del testo
+- Interrompere la comunicazione con i protocolli legacy
+- Interrompere l'utilizzo di crittografia debole
 
-Influenzerà le operazioni di miglioramento seguenti:
-
-- Garantire che tutti gli utenti possano completare l'autenticazione a più fattori per l'accesso sicuro
-- Richiedere l'AMF per i ruoli amministrativi
-- Abilitazione del criterio per bloccare l'autenticazione legacy
+#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Supporto per i suggerimenti per la sicurezza di Microsoft Defender ATP Threat & vulnerabilità (TVM)
+- Tutti i suggerimenti per la sicurezza rilasciati forniti da TVM saranno ora disponibili anche in Microsoft Secure Score

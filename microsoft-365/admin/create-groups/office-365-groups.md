@@ -1,9 +1,8 @@
 ---
 title: Panoramica dei gruppi di Office 365 per gli amministratori
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
-ms.author: v-teflor
+f1.keywords: NOCSH
+ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
@@ -19,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui gruppi di Office 365.
-ms.openlocfilehash: e7a65c41d4ecdbc91e163d9a84241ae549a2f9ec
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2257af16106e47b490beebd6d48e566bb3c07ca6
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241315"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894492"
 ---
 # <a name="overview-of-office-365-groups-for-administrators"></a>Panoramica dei gruppi di Office 365 per gli amministratori
 
@@ -39,17 +38,17 @@ I gruppi di Office 365 sono il servizio di appartenenza di base che guida tutto 
 - Un team (se il gruppo è stato creato da Teams)
 - Roadmap (se si dispone di un progetto per il Web)
 
-Con un gruppo di Office 365, non è necessario assegnare manualmente le autorizzazioni a ognuna di queste risorse, perché l'aggiunta di membri al gruppo dà automaticamente loro le autorizzazioni necessarie per gli strumenti forniti dal gruppo.
+Con un gruppo di Office 365, non è necessario assegnare manualmente le autorizzazioni a ognuna di queste risorse, perché l'aggiunta di persone al gruppo dà automaticamente loro le autorizzazioni necessarie per gli strumenti forniti dal gruppo.
 
-Qualsiasi utente di Office 365 può creare un gruppo, a meno che non si [limiti la creazione del gruppo a un insieme specifico di utenti](manage-creation-of-groups.md). Tenere presente che se si limita la creazione dei gruppi, gli utenti che non sono in grado di creare un gruppo non potranno creare siti, pianificatori o team di SharePoint. Questi servizi devono essere in grado di creare un gruppo utilizzando il contesto utente. Gli utenti possono comunque partecipare alle attività di gruppo, ad esempio la creazione di attività in pianificatore o la risposta alle conversazioni in Outlook, purché siano membri del gruppo.
+Qualsiasi utente di Office 365 può creare un gruppo, a meno che non si [limiti la creazione del gruppo a un insieme specifico di utenti](manage-creation-of-groups.md). Tenere presente che se si limita la creazione dei gruppi, gli utenti che non sono in grado di creare un gruppo non potranno creare siti, pianificatori o team di SharePoint. Questi servizi richiedono agli utenti di crearli per poter creare un gruppo. Gli utenti possono comunque partecipare alle attività di gruppo, ad esempio la creazione di attività in Planner o l'utilizzo di teams chat, purché siano membri del gruppo.
 
 I gruppi dispongono dei ruoli seguenti:
 
 - **Proprietari** -i proprietari del gruppo possono aggiungere o rimuovere membri e disporre di autorizzazioni univoche come la possibilità di eliminare le conversazioni dalla posta in arrivo condivisa o modificare diverse impostazioni relative al gruppo. I proprietari del gruppo possono rinominare il gruppo, aggiornare la descrizione o l'immagine e altro ancora.
-- **Membri** -i membri possono accedere a tutto il gruppo, ma non possono modificare le impostazioni del gruppo.
-- **Gli ospiti** del gruppo sono membri provenienti dall'esterno dell'organizzazione. Per impostazione predefinita, i membri del gruppo possono invitare gli ospiti ad unirsi al gruppo, anche se è possibile [controllare tale impostazione](manage-guest-access-in-groups.md).
+- **Membri** -i membri possono accedere a tutto il gruppo, ma non possono modificare le impostazioni del gruppo. Per impostazione predefinita, i membri del gruppo possono invitare gli ospiti ad unirsi al gruppo, anche se è possibile [controllare tale impostazione](manage-guest-access-in-groups.md).
+- **Gli ospiti** del gruppo sono membri provenienti dall'esterno dell'organizzazione.
 
-Solo gli amministratori globali e gli amministratori di gestione utenti possono creare e gestire i gruppi nell'interfaccia di amministrazione. Non sono consentiti amministratori delegati, ad esempio consulenti con deleghe di amministratore per conto di altri.
+Solo gli amministratori globali, gli amministratori degli utenti e i gruppi possono creare e gestire i gruppi nell'interfaccia di amministrazione di Microsoft 365. Non sono consentiti amministratori delegati, ad esempio consulenti con deleghe di amministratore per conto di altri.
 
 In qualità di amministratore, è possibile:
 
@@ -79,7 +78,7 @@ I limiti seguenti si applicano ai gruppi di Office 365:
 |Archivio file|1 terabyte + 10 GB per utente sottoscritto + qualsiasi altro spazio di archiviazione acquistato. È possibile acquistare una quantità illimitata di spazio di archiviazione aggiuntivo.|
 |Dimensione della cassetta postale del gruppo|50 GB|
 
-Il numero massimo predefinito di Gruppi di Office 365 che può avere un'organizzazione di Office 365 è attualmente 500.000, ma può essere aumentato su richiesta. Per ulteriori informazioni sui limiti relativi ai gruppi di Office 365, vedere [gruppi di office 365-Guida](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx) per gli amministratori
+Il numero massimo predefinito di gruppi di Office 365 che un'organizzazione di Office 365 può avere è 500.000, ma può essere aumentato di una richiesta. Per ulteriori informazioni sui limiti relativi ai gruppi di Office 365, vedere [gruppi di office 365-Guida](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx)per gli amministratori.
 
 La gestione dei gruppi di Office 365 è più efficace quando si dispone di informazioni sull'utilizzo dei gruppi. Nell'interfaccia di amministrazione di Microsoft 365 è disponibile uno strumento per la creazione di report che consente di visualizzare elementi quali l'utilizzo dell'archiviazione, il numero di gruppi attivi e la modalità di utilizzo dei gruppi da parte degli utenti. Per ulteriori informazioni, vedere [i report di Office 365 nell'](../activity-reports/office-365-groups.md) interfaccia di amministrazione.
 
@@ -88,11 +87,11 @@ La gestione dei gruppi di Office 365 è più efficace quando si dispone di infor
 Qualsiasi sottoscrizione di Office 365 con Exchange Online e SharePoint Online sosterrà i gruppi. Che include i piani Business Essentials e Business Premium e i piani Enterprise E1, E3 ed E5. Il gruppo assume la licenza della persona che crea il gruppo (noto anche come "Organizzatore" del gruppo). Se l'organizzatore dispone della licenza appropriata per tutte le funzionalità che si desidera che il gruppo abbia, la licenza verrà trasmessa al gruppo.
 
 > [!NOTE]
-> Per ulteriori informazioni sulle famiglie di servizi e sui piani di Office 365, consultare le [Opzioni di pianificazione di office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> Per ulteriori informazioni sulle famiglie di servizi e sui piani di Office 365, vedere [office 365 Plan Options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
 Se si dispone di un piano di Exchange, è comunque possibile ottenere la posta in arrivo condivisa e le caratteristiche del calendario condiviso di gruppi in Outlook, ma non si otterrà la raccolta documenti, planner o una qualsiasi delle altre funzionalità.
 
-I gruppi di Office 365 funzionano con Azure Active Directory (AAD). Le funzionalità dei gruppi che si ottengono dipendono dalla sottoscrizione di Azure Active Directory e dalle licenze assegnate all'organizzatore del gruppo.
+I gruppi di Office 365 sono compatibili con Azure Active Directory (AAD). Le funzionalità dei gruppi che si ottengono dipendono dalla sottoscrizione di Azure Active Directory e dalle licenze assegnate all'organizzatore del gruppo.
 
 > [!IMPORTANT]
 > Per tutte le funzionalità dei gruppi, se si dispone di un abbonamento a Azure AD Premium, gli utenti possono iscriversi al gruppo indipendentemente dal fatto che dispongano di una licenza AAD P1 assegnata. La gestione delle licenze non viene applicata.

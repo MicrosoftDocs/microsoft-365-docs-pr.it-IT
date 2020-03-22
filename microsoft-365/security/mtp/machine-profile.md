@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 7ab3f63008c65fca1a99128cc6f11f83bc86b2b4
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1dfb567c8e6b8573397d503ae27c0aceb447c916
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857701"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895464"
 ---
 # <a name="machine-profile-page"></a>Pagina del profilo del computer
 
@@ -29,9 +29,7 @@ Il portale di sicurezza di Microsoft 365 fornisce pagine del profilo del compute
 
 ## <a name="navigating-the-machine-profile-page"></a>Esplorazione della pagina del profilo del computer
 
-È possibile accedere alla pagina del profilo del computer selezionando direttamente un nome di dispositivo nell'elenco macchine o scegliendo **Apri pagina computer** nel riquadro a comparsa dei computer.
-
-Una volta aperta la pagina, si noterà che è suddivisa in tre sezioni.
+La pagina del profilo del computer è suddivisa in tre sezioni.
 
 ![Immagine della pagina del profilo del computer con (1) area della scheda (2) barra laterale e (3) azioni evidenziate in rosso](../../media/mtp-machine-profile/mtp-machine-profile-all.png)
 

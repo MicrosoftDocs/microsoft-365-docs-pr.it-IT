@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: b7c98fe4b362a5be72be9e103a2602cd4954e028
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b68c10eccfdacd7782f402b5712a808ff278254d
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632944"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895228"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "42632944"
 Anche se si autorizza gli amministratori della sicurezza a personalizzare le impostazioni di sicurezza, esistono due livelli di sicurezza in EOP e Office 365 ATP che è consigliabile: **standard** e **strict**. L'ambiente e i bisogni di ogni cliente sono diversi, ma riteniamo che questi livelli di configurazioni del filtro della posta consentano di evitare che la posta indesiderata raggiunga la posta in arrivo dei dipendenti nella maggior parte delle situazioni.
 
 > [!IMPORTANT]
-> La configurazione della posta indesiderata deve essere abilitata sulla cassetta postale per consentire il corretto funzionamento del filtro. Questo è abilitato per impostazione predefinita, ma dovrebbe essere controllato se il filtro non sembra funzionare. Per ulteriori informazioni, vedere [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) . 
+> La regola di posta indesiderata deve essere abilitata su una cassetta postale per consentire il corretto funzionamento del filtro. È abilitata per impostazione predefinita, ma è consigliabile verificarla se il filtro non sembra funzionare. Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 In questo argomento vengono descritte le impostazioni consigliate da Microsoft per proteggere gli utenti di Office 365.
 
@@ -43,68 +43,84 @@ Le funzionalità di protezione da posta indesiderata, anti-malware e anti-phishi
 
 ### <a name="eop-anti-spam-policy-settings"></a>Impostazioni dei criteri di protezione da posta indesiderata di EOP
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
-|---------|---------|---------|---------|
-|Azione di rilevamento della posta indesiderata|Sposta messaggio nella cartella Posta indesiderata|Metti in quarantena messaggio||
-|Azione di rilevamento di posta indesiderata con elevata sicurezza|Metti in quarantena messaggio|Metti in quarantena messaggio||
-|Azione di rilevamento della posta elettronica di phishing|Metti in quarantena messaggio|Metti in quarantena messaggio||
-|Azione di rilevamento della posta elettronica phishing con elevata sicurezza|Metti in quarantena messaggio|Metti in quarantena messaggio||
-|Azione di rilevamento della posta elettronica in blocco|Sposta messaggio nella cartella Posta indesiderata|Metti in quarantena messaggio||
-|Impostare la soglia di posta elettronica in blocco su|6 |4 |Il valore predefinito è attualmente 7, ma è consigliabile modificarlo su 6. Per ulteriori informazioni, vedere [valori dei livelli di reclamo in blocco](bulk-complaint-level-values.md).|
-|Periodo di conservazione della quarantena|30 giorni|30 giorni||
-|Suggerimenti per la sicurezza|Attivato|Attivato||
-|Mittenti consentiti|Nessuna|Nessuna||
-|Domini di mittenti consentiti|Nessuna|Nessuna|Non è necessario aggiungere domini proprietari (noti anche come _domini accettati_) all'elenco dei mittenti consentiti. In effetti, è considerato un rischio elevato poiché crea opportunità per gli attori cattivi di inviare messaggi di posta elettronica che altrimenti verrebbero filtrati. Utilizzare l' [Intelligence spoof](learn-about-spoof-intelligence.md) nel centro sicurezza & Compliance nella pagina impostazioni di protezione da **posta indesiderata** per esaminare tutti i mittenti che eseguono lo spoofing dei domini che fanno parte dell'organizzazione o lo spoofing di domini esterni.|
-|Mittenti bloccati|Nessuna|Nessuna||
-|Domini mittenti bloccati|Nessuna|Nessuna||
-|Frequenza della notifica di posta indesiderata dell'utente finale|Abilitato|Abilitato|3 giorni|
-|Spurgo automatico di zero ore|Attivato|Attivato|Sia per la posta indesiderata che per phishing ZAP|
-|MarkAsSpamBulkMail|Attivato|Attivato|Questa impostazione è disponibile solo in PowerShell|
+Per creare e configurare criteri di protezione dalla posta indesiderata, vedere [configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
-Nei criteri di protezione da posta indesiderata sono presenti diversi altri parametri denominati Advanced Spam Filter (ASF) in fase di divenire obsoleto. Altre informazioni sulle sequenze temporali per l'ammortamento di queste caratteristiche verranno comunicate al di fuori di questo argomento.
+|||||
+|---|---|---|---|
+|**Nome della funzionalità di sicurezza**|**Standard**|**Rigorosa**|**Commento**|
+|Azione di rilevamento della **posta indesiderata** <br/><br/> _SpamAction_|**Sposta messaggio nella cartella Posta indesiderata** <br/><br/> `MoveToJmf`|**Metti in quarantena messaggio** <br/><br/> `Quarantine`||
+|Azione di rilevamento di **posta indesiderata con elevata sicurezza** <br/><br/> _HighConfidenceSpamAction_|**Metti in quarantena messaggio** <br/><br/> `Quarantine`|**Metti in quarantena messaggio** <br/><br/> `Quarantine`||
+|Azione di rilevamento della **posta elettronica di phishing** <br/><br/> _PhishSpamAction_|**Metti in quarantena messaggio** <br/><br/> `Quarantine`|**Metti in quarantena messaggio** <br/><br/> `Quarantine`||
+|Azione di rilevamento della **posta elettronica di phishing con elevata sicurezza** <br/><br/> _HighConfidencePhishAction_|**Metti in quarantena messaggio** <br/><br/> `Quarantine`|**Metti in quarantena messaggio** <br/><br/> `Quarantine`||
+|Azione di rilevamento della **posta elettronica in blocco** <br/><br/> _BulkSpamAction_|**Sposta messaggio nella cartella Posta indesiderata** <br/><br/> `MoveToJmf`|**Metti in quarantena messaggio** <br/><br/> `Quarantine`||
+|Soglia di posta elettronica in blocco <br/><br/> _BulkThreshold_|6 |4 |Il valore predefinito è attualmente 7, ma è consigliabile modificarlo su 6. Per informazioni dettagliate, vedere [bulk lamentel Level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|Periodo di conservazione della quarantena <br/><br/> _QuarantineRetentionPeriod_|30 giorni|30 giorni||
+|**Suggerimenti per la sicurezza** <br/><br/> _InlineSafetyTipsEnabled_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
+|Mittenti consentiti <br/><br/> _AllowedSenders_|Nessuna|Nessuna||
+|Domini mittenti consentiti <br/><br/> _AllowedSenderDomains_|Nessuna|Nessuna|Non è necessario aggiungere domini proprietari (noti anche come _domini accettati_) all'elenco dei mittenti consentiti. In effetti, è considerato un rischio elevato poiché crea opportunità per gli attori cattivi di inviare messaggi di posta elettronica che altrimenti verrebbero filtrati. Utilizzare l' [Intelligence spoof](learn-about-spoof-intelligence.md) nel centro sicurezza & Compliance nella pagina impostazioni di protezione da **posta indesiderata** per esaminare tutti i mittenti che eseguono lo spoofing dei domini che fanno parte dell'organizzazione o lo spoofing di domini esterni.|
+|Mittenti bloccati <br/><br/> _BlockedSenders_|Nessuna|Nessuna||
+|Domini mittenti bloccati <br/><br/> _BlockedSenderDomains_|Nessuna|Nessuna||
+|**Abilita le notifiche di spam all'utente finale** <br/><br/> _EnableEndUserSpamNotifications_|Abilitato <br/><br/> `$true`|Abilitato <br/><br/> `$true`||
+|**Invia notifiche di spam agli utenti finali ogni (giorni)** <br/><br/> _EndUserSpamNotificationFrequency_|3 giorni|3 giorni||
+|**Spam ZAP** <br/><br/> _SpamZapEnabled_|Abilitato <br/><br/> `$true`|Abilitato <br/><br/> `$true`||
+|**Phishing ZAP** <br/><br/> _PhishZapEnabled_|Abilitato <br/><br/> `$true`|Abilitato <br/><br/> `$true`||
+|_MarkAsSpamBulkMail_|Attivato|Attivato|Questa impostazione è disponibile solo in PowerShell.|
+|
 
-Si consiglia di disattivare **queste impostazioni per i livelli** standard e rigorosi:
+In criteri di protezione da posta indesiderata sono disponibili diverse altre impostazioni avanzate per il filtro di posta indesiderata. Altre informazioni sulle sequenze temporali per l'ammortamento di queste caratteristiche verranno comunicate al di fuori di questo argomento.
 
-|Nome della funzionalità di sicurezza|Commenti|
-|---------|---------|
-|IncreaseScoreWithImageLinks||
-|IncreaseScoreWithNumericIps||
-|IncreaseScoreWithRedirectToOtherPort||
-|IncreaseScoreWithBizOrInfoUrls||
-|MarkAsSpamEmptyMessages||
-|MarkAsSpamJavaScriptInHtml||
-|MarkAsSpamFramesInHtml||
-|MarkAsSpamObjectTagsInHtml||
-|MarkAsSpamEmbedTagsInHtml||
-|MarkAsSpamFormTagsInHtml||
-|MarkAsSpamWebBugsInHtml||
-|MarkAsSpamSensitiveWordList||
-|MarkAsSpamFromAddressAuthFail||
-|MarkAsSpamNdrBackscatter||
-|MarkAsSpamSpfRecordHardFail||
+Si **consiglia di disattivare queste impostazioni ASF** sia per i livelli **standard** che per quelli **rigorosi** . Per ulteriori informazioni sulle impostazioni ASF, vedere [Advanced Spam Filter (ASF) Settings in Office 365](advanced-spam-filtering-asf-options.md).
 
-#### <a name="eop-outbound-spam-filter-policy-settings"></a>Impostazioni del filtro per la posta indesiderata in uscita EOP
+|||
+|----|---|
+|**Nome della funzionalità di sicurezza**|**Comments**|
+|**Collegamenti di immagini a siti remoti** (_IncreaseScoreWithImageLinks_)||
+|**Indirizzo IP numerico in URL** (_IncreaseScoreWithNumericIps_)||
+|**Reindirizzamento UL ad altre porte** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**URL di siti Web. biz o. info** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**Messaggi vuoti** (_MarkAsSpamEmptyMessages_)||
+|**JavaScript o VBScript in HTML** (_MarkAsSpamJavaScriptInHtml_)||
+|**Tag frame o iframe in formato HTML** (_MarkAsSpamFramesInHtml_)||
+|**Tag Object in HTML** (_MarkAsSpamObjectTagsInHtml_)||
+|**Tag embed in HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**Tag del modulo in formato HTML** (_MarkAsSpamFormTagsInHtml_)||
+|**Bug Web in HTML** (_MarkAsSpamWebBugsInHtml_)||
+|**Applicazione di un elenco di parole riservate** (_MarkAsSpamSensitiveWordList_)||
+|**Record SPF: errore** irreversibile (_MarkAsSpamSpfRecordHardFail_)||
+|**Filtro ID mittente condizionale: errore** irreversibile (_MarkAsSpamFromAddressAuthFail_)||
+|Backscatter del rapporto di **mancato recapito** (_MarkAsSpamNdrBackscatter_)||
+|
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
-|---------|---------|---------|---------|
-|Limiti per i destinatari dei criteri di posta indesiderata in uscita-limite orario esterno|500|400||
-|Limiti per i destinatari dei criteri di posta indesiderata in uscita-limite orario interno|1000|800||
-|Limiti dei destinatari dei criteri di posta indesiderata in uscita-limite giornaliero|1000|800||
-|Azione quando un utente supera i limiti|Impedire all'utente di inviare messaggi di posta elettronica|Impedire all'utente di inviare messaggi di posta elettronica||
+#### <a name="eop-outbound-spam-policy-settings"></a>Impostazioni di criteri di posta indesiderata in uscita di EOP
+
+Per creare e configurare i criteri di posta indesiderata in uscita, vedere [Configure Outbound Spam Filtering in Office 365](configure-the-outbound-spam-policy.md).
+
+||||
+|---|---|---|---|
+|**Nome della funzionalità di sicurezza**|**Standard**|**Rigorosa**|**Commento**|
+|**Numero massimo di destinatari per utente: limite orario esterno** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
+|**Numero massimo di destinatari per utente: limite orario interno** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
+|**Numero massimo di destinatari per utente: limite giornaliero** <br/><br/> _RecipientLimitPerDay_|1000|800||
+|**Azione quando un utente supera i limiti** <br/><br/> _ActionWhenThresholdReached_|**Impedire all'utente di inviare messaggi di posta elettronica** <br/><br/> `BlockUser`|**Impedire all'utente di inviare messaggi di posta elettronica** <br/><br/> `BlockUser`||
+|
 
 ### <a name="eop-anti-malware-policy-settings"></a>Impostazioni dei criteri anti-malware di EOP
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
-|---------|---------|---------|---------|
-|Risposta di rilevamento malware|No|No|Se il malware viene rilevato in un allegato di posta elettronica, il messaggio verrà messo in quarantena e può essere rilasciato solo da un amministratore.|
-|"Filtro tipi di allegati comuni" per il blocco dei tipi di file sospetti|Attivato|Attivato||
-|Malware zero-hour auto Purge|Attivato|Attivato||
-|Notifica ai mittenti interni del messaggio non recapitato|Disattivato|Disattivato||
-|Notifica ai mittenti esterni del messaggio non recapitato|Disattivato|Disattivato||
+Per creare e configurare criteri anti-malware, vedere [Configure anti-malware Policies in Office 365](configure-anti-malware-policies.md).
+
+|||||
+|---|---|---|---|
+|**Nome della funzionalità di sicurezza**|**Standard**|**Rigorosa**|**Commento**|
+|**Si desidera inviare una notifica ai destinatari se i messaggi vengono messi in quarantena?** <br/><br/> _Azione_|No <br/><br/> _DeleteMessage_|No <br/><br/> _DeleteMessage_|Se il malware viene rilevato in un allegato di posta elettronica, il messaggio viene messo in quarantena e può essere rilasciato solo da un amministratore.|
+|**Filtro di tipi di allegati comuni** <br/><br/> _EnableFileFilter_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Questa impostazione mette in quarantena i messaggi che contengono allegati eseguibili in base al tipo di file, indipendentemente dal contenuto degli allegati.|
+|**Malware zero-hour auto Purge** <br/><br/> _ZapEnabled_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
+|**Notifica ai mittenti interni** del messaggio non recapitato <br/><br/> _EnableInternalSenderNotifications_|Disattivato <br/><br/> `$false`|Disattivato <br/><br/> `$false`||
+|**Notifica ai mittenti esterni** del messaggio non recapitato <br/><br/> _EnableExternalSenderNotifications_|Disattivato <br/><br/> `$false`|Disattivato <br/><br/> `$false`||
+|
 
 ### <a name="eop-anti-phishing-policy-settings"></a>Impostazioni dei criteri di anti-phishing di EOP
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Abilitare la protezione anti-spoofing|Attivato|Attivato||
 |Abilitazione del mittente non autenticato (tagging)|Attivato|Attivato||
@@ -125,7 +141,7 @@ Se è stata aggiunta una sottoscrizione di Office 365 ATP all'EOP, impostare le 
 
 I clienti di EOP ottengono un anti-phishing di base come descritto in precedenza, ma Office 365 ATP include altre funzionalità e controlli che consentono di prevenire, rilevare e correggere gli attacchi.
 
-|Nome della funzionalità di sicurezza della rappresentazione|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza della rappresentazione|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |(Modifica criteri di rappresentazione) Aggiungere gli utenti a Protect|Attivato|Attivato|Dipende dall'organizzazione, ma è consigliabile aggiungere gli utenti nei ruoli chiave. Internamente, potrebbe trattarsi del CEO, del CFO e di altri leader senior. Esternamente, questi potrebbero includere i membri del Consiglio o il Consiglio di amministrazione.|
 |(Modifica criteri di rappresentazione) Includi automaticamente i domini che possiedo|Attivato|Attivato||
@@ -140,7 +156,7 @@ I clienti di EOP ottengono un anti-phishing di base come descritto in precedenza
 |Se il messaggio di posta elettronica viene inviato da un utente rappresentato protetto dalla funzionalità di intelligence delle cassette postali|Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari|Mettere in quarantena il messaggio||
 |(Modifica criteri di rappresentazione) Aggiungere mittenti e domini attendibili|Nessuna|Nessuna|Dipende dall'organizzazione, ma è consigliabile aggiungere utenti o domini che vengono contrassegnati erroneamente come phishing a causa solo della rappresentazione e non di altri filtri.|
 
-|Nome della funzionalità di sicurezza spoof|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza spoof|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Abilitare la protezione anti-spoofing|Attivato|Attivato||
 |Abilitazione del mittente non autenticato (tagging)|Attivato|Attivato||
@@ -149,13 +165,13 @@ I clienti di EOP ottengono un anti-phishing di base come descritto in precedenza
 |TreatSoftPassAsAuthenticated|True|False|Questa impostazione è disponibile solo in PowerShell|
 
 
-|Nome della funzionalità di sicurezza delle impostazioni avanzate|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza delle impostazioni avanzate|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Soglie di phishing avanzate|2-aggressivo|3-maggiore aggressività||
 
 ### <a name="safe-links-settings"></a>Impostazioni collegamenti attendibili
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Usare i collegamenti sicuri di ATP nelle app di Office 365, Office per iOS e Android|Abilitato|Abilitato|Questo rientra nei criteri dei collegamenti sicuri ATP che si applicano all'intera organizzazione|
 Non monitorare quando gli utenti fanno clic su collegamenti sicuri|Disattivato|Disattivato|Questo è per entrambi i criteri che si applicano all'intera organizzazione e tutti i criteri che si applicano a destinatari specifici|
@@ -167,7 +183,7 @@ Non monitorare quando gli utenti fanno clic su collegamenti sicuri|Disattivato|D
 
 ### <a name="safe-attachments"></a>Allegati sicuri
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Aggiungere commenti|
+|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
 |---------|---------|---------|---------|
 |Attivare ATP per SharePoint, OneDrive e Microsoft Teams|Abilitato|Abilitato||
 |Risposta malware per gli allegati sicuri ATP|Blocco|Blocco||

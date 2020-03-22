@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: 288f70ccfcd7852102dc5261e225e9e84182b365
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 840087be38c6e50244437fea63de655d8cd9363e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826215"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894300"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive (anteprima pubblica)
 
@@ -124,12 +124,15 @@ Prima di abilitare l'anteprima, verificare che sia in esecuzione SharePoint Onli
 Per abilitare l'anteprima, utilizzare il cmdlet Set-SPOTenant:
 
 1. Utilizzo di un account aziendale o dell'Istituto di istruzione con privilegi di amministratore globale o di amministrazione di SharePoint in Office 365, connettersi a SharePoint. Per informazioni in merito, vedere [Guida introduttiva a SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+    
+    Nota: se si dispone di Office 365 multi-Geo, utilizzare il parametro-URL con [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)e specificare l'URL del sito dell'interfaccia di amministrazione di SharePoint Online per una delle geoposizioni geografiche.
 
 2. Eseguire il comando riportato di seguito:
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
+3. Per Office 365 multi-geo: ripetere i passaggi 1 e 2 per ogni posizione geografica rimanente.
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Pianificare l'implementazione dopo la creazione o la modifica di un'etichetta di riservatezza
 

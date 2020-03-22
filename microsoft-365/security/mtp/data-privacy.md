@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b715cd2dcbc41e2aa5a4ae829677dfe250394346
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 04e60128512d5e9b65a06e158efa95228a53619a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235135"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894265"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Sicurezza e privacy dei dati con Microsoft Threat Protection
 
@@ -33,12 +33,9 @@ ms.locfileid: "42235135"
 
 
 
-Se si utilizza l'anteprima di Microsoft Threat Protection, si acconsente alle seguenti condizioni:
+Tramite Microsoft Threat Protection è possibile acconsentire ai seguenti termini:
 
-I dati interessati dei clienti (come definiti nelle Condizioni del servizio online, OST), verranno trasferiti da altri servizi Microsoft a Microsoft Threat Protection e da Microsoft Threat Protection di nuovo ai servizi Microsoft pertinenti. Per tutta la durata dell'anteprima, l'uso dei dati dei clienti in Microsoft Threat Protection seguirà i criteri di gestione dei dati e gli impegni di Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP). L'utente riconosce che tali impegni potrebbero essere diversi dai servizi da cui vengono trasferiti i dati dei clienti. Inoltre, i dati dei clienti archiviati in Microsoft Threat Protection verranno archiviati nell'area geografica selezionata per lo spazio di archiviazione dei dati dei clienti ATP di Microsoft Defender, che può essere diversa da quella selezionata per altri servizi. Microsoft non trasferirà i dati dei clienti all'esterno di tale area geografica, ad eccezione di quanto indicato nella sezione "Posizione dei dati" nel [Centro protezione Microsoft](https://www.microsoft.com/trust-center).
-
-Inoltre, anche se si determina quale degli utenti possono accedere a Microsoft Threat Protection, Microsoft Threat Protection attualmente non consente il controllo degli accessi in base al ruolo ("RBAC"). Si riconosce inoltre che nella misura in cui Microsoft Threat Protection riceve i dati da un servizio Microsoft che supporta RBAC, i livelli di accesso in tale servizio non verranno applicati in Microsoft Threat Protection.
-
+Attivando Microsoft Threat Protection (MTP), è possibile acconsentire ai seguenti termini. I dati dei clienti applicabili definiti nelle condizioni dei servizi online (OST) verranno trasferiti da altri servizi Microsoft in MTP. L'utilizzo dei dati del cliente in MTP seguirà gli standard e gli impegni relativi alla gestione dei dati per Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP). L'utente riconosce che tali impegni potrebbero essere diversi dai servizi da cui vengono trasferiti i dati dei clienti. Inoltre, i dati dei clienti archiviati in MTP verranno archiviati a riposo nel Geo selezionato per l'archiviazione dei dati del cliente di MDATP, che potrebbero differire dal Geo selezionato in relazione ad altri servizi. Microsoft non trasferirà i dati dei clienti all'esterno di tale Geo, ad eccezione di quelli indicati nella sezione percorso dati del [Centro protezione Microsoft](https://www.microsoft.com/trust-center) .
 
 Per altre informazioni sull'archiviazione dei dati e le informazioni sulla privacy dei prodotti specifici, vedere:
 - [Archiviazione e privacy dei dati di Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

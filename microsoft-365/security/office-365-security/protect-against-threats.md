@@ -17,12 +17,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Utilizzare questo articolo come guida per configurare ora le funzionalità di protezione dalle minacce.
-ms.openlocfilehash: 96d5c85a5511ec67991283fbc164bb07d2ab34e9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: da920083b521e905633473efbabc5930ad7a6770
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598683"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895312"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protezione dalle minacce in Office 365
 
@@ -189,7 +189,7 @@ La [protezione da posta indesiderata](anti-spam-protection.md) è disponibile in
 
 4. Fare clic su **Salva**.
 
-Per ulteriori informazioni sulle opzioni relative ai criteri di protezione da posta indesiderata, vedere [Configure the antispam](configure-the-anti-spam-policies.md)Policy.
+Per ulteriori informazioni sulle opzioni relative ai criteri di protezione da posta indesiderata, vedere [Configure anti-spam Policies in Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="part-5---additional-settings-to-configure"></a>Parte 5-impostazioni aggiuntive da configurare
 
@@ -213,7 +213,7 @@ La registrazione di controllo è disponibile in abbonamenti che includono [Excha
 
 Dopo aver configurato le funzionalità di protezione dalle minacce, verificare la modalità di funzionamento di tali caratteristiche, rivedere e rivedere i criteri in base alle esigenze e guardare le nuove funzionalità e gli aggiornamenti dei servizi.
 
-|Procedura|Risorse per approfondire|
+|Operazione|Risorse per approfondire|
 |---------|---------|
 |Vedere come funzionano le funzionalità di protezione dalle minacce per l'organizzazione visualizzando i report|[Dashboard di sicurezza](security-dashboard.md)<br/>[Rapporti di sicurezza della posta elettronica](view-email-security-reports.md)<br/>[Report per Office 365 ATP](view-reports-for-atp.md)<br/>[Esplora minacce](threat-explorer.md)|
 |Rivedere e rivedere periodicamente i criteri di protezione dalle minacce in base alle esigenze|[Secure Score](../mtp/microsoft-secure-score.md)<br/>[Smart report e informazioni dettagliate](reports-and-insights-in-security-and-compliance.md)<br/>[Funzionalità di analisi e risposta alle minacce di Office 365](keep-users-safe-with-office-365-ti.md)|

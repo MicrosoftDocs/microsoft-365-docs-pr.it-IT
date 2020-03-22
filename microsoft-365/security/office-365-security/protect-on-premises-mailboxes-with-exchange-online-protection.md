@@ -19,12 +19,12 @@ ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
 description: Anche se si prevede di ospitare alcune o tutte le cassette postali locali, è comunque possibile proteggere le cassette postali con Exchange Online Protection (EOP). Per configurare i connettori, l'account deve essere un amministratore globale di Office 365 o un amministratore aziendale di Exchange (gruppo dei ruoli di gestione dell'organizzazione). Per informazioni su come le autorizzazioni di Office 365 riguardano le autorizzazioni di Exchange, vedere Assegnazione di ruoli di amministratore in Office 365 gestito da 21Vianet. Se tutte le cassette postali di Exchange sono in locale, attenersi alla procedura seguente per configurare il servizio EOP.
-ms.openlocfilehash: 714b5267bf89370885697701fc2b857d71224aa8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8ff2e28100a748e34b8f079292d937cc9b3857e8
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598806"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42895288"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Proteggere le cassette postali locali con Exchange Online Protection
 
@@ -61,9 +61,9 @@ Dopo aver configurato i connettori, attendere 72 ore per consentire la propagazi
 > [!TIP]
 > Configurare le impostazioni sul server SMTP con una tempo di timeout di connessione pari a 60 secondi. Questa impostazione è accettabile nella maggior parte delle situazioni perché consente un certo ritardo, ad esempio in caso di messaggi inviati con allegati di grandi dimensioni.
 
-## <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Passaggio 5: Utilizzare Shell per garantire che la posta indesiderata sia instradata nella cartella posta indesiderata di ogni utente
+## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Passaggio 5: verificare che la posta indesiderata venga instradata alla cartella posta indesiderata di ogni utente
 
-Per assicurarsi che la posta indesiderata venga instradata correttamente nella cartella posta indesiderata di ciascun utente, è necessario eseguire un paio di passaggi per la configurazione. I passaggi vengono forniti in [modo che la posta indesiderata venga instradata alla cartella posta indesiderata di ogni utente](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Se non si intende spostare i messaggi nella cartella posta indesiderata di ciascun utente, è possibile optare per un'altra azione modificando i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).
+Per assicurarsi che la posta indesiderata venga instradata correttamente nella cartella posta indesiderata di ciascun utente, è necessario eseguire un paio di passaggi per la configurazione. I passaggi vengono forniti in [Configure standalone EOP per recapitare la posta indesiderata alla cartella posta indesiderata in ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Se non si intende spostare i messaggi nella cartella posta indesiderata di ciascun utente, è possibile optare per un'altra azione modificando i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Passaggio 6: utilizzare l'interfaccia di amministrazione di Microsoft 365 per puntare il record MX a EOP
 

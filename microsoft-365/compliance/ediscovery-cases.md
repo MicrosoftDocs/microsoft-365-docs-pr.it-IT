@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilizzare il Centro sicurezza & conformità per creare e gestire i casi di eDiscovery nell'organizzazione. È possibile assegnare membri al caso, inserire posizioni di contenuto in attesa, eseguire ricerche di contenuto associate al caso e esportare i risultati della ricerca. È inoltre possibile preparare i dati dei casi per un'ulteriore analisi in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 92894e430faaf9d5c1a758f81c5abfeb5236e643
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 471dd99d6e21afbb4db1a05cd5609cda9e97346c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634954"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894965"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gestire i casi di eDiscovery nel Centro sicurezza e conformità
 
@@ -53,7 +53,7 @@ Utilizzare il flusso di lavoro seguente per configurare e utilizzare i casi di e
 
 [Optional Passaggio 10: riaprire un caso chiuso](#optional-step-10-re-open-a-closed-case)
 
-[Ulteriori informazioni](#more-information)
+[Altre informazioni](#more-information)
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Passaggio 1: Assegnare autorizzazioni di eDiscovery a potenziali membri del caso
 
@@ -541,7 +541,7 @@ Per eliminare un caso:
 
 Se il caso in cui si sta tentando di eliminare contiene ancora le esenzioni, verrà visualizzato un messaggio di errore. Sarà necessario eliminare tutte le esenzioni associate al caso e quindi riprovare per eliminare il caso.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - **Esistono limiti per i casi di eDiscovery o per i detiene associati a un caso di eDiscovery?** Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e le esenzioni del caso.
     
@@ -549,9 +549,16 @@ Se il caso in cui si sta tentando di eliminare contiene ancora le esenzioni, ver
   |:-----|:-----|
   |Numero massimo di casi per un'organizzazione  <br/> |Nessun limite  <br/> |
   |Numero massimo di case conservate per un'organizzazione  <br/> |10.000  <br/> |
-  |Numero massimo di cassette postali in un singolo blocco maiuscole/minuscole  <br/> |1,000  <br/> |
+  |Numero massimo di cassette postali in un singolo blocco maiuscole/minuscole  <br/> |1.000  <br/> |
   |Numero massimo di siti di SharePoint e OneDrive for business in un unico blocco del caso  <br/> |100  <br/> |
-   
+  |Numero massimo di casi visualizzati nella Home page di eDiscovery e il numero massimo di elementi visualizzati nelle schede esenzioni, ricerche ed esportazione all'interno di un caso. <sup>1</sup> |1.000|
+  |||
+
+   > [!NOTE]
+   > <sup>1</sup> per visualizzare un elenco di più di 1.000 casi, esenzioni, ricerche o esportazioni, è possibile utilizzare il cmdlet di PowerShell per la sicurezza & conformità corrispondente di Office 365:<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+
+
+
 - **Che dire dei casi creati nella pagina di gestione dei casi in Advanced eDiscovery?** È possibile accedere a un elenco dei casi di eDiscovery avanzati precedenti facendo clic sul collegamento nella parte inferiore della pagina **eDiscovery** nel centro sicurezza & conformità. Tuttavia, per eseguire qualsiasi operazione in un caso meno recente, è necessario contattare il supporto di Office 365 e richiedere che il caso venga spostato in un nuovo caso di eDiscovery nel centro sicurezza & Compliance. 
     
 - **Perché creare un amministratore di eDiscovery?** Come indicato in precedenza, un amministratore di eDiscovery è membro del gruppo di ruoli Gestore di eDiscovery e può visualizzare e accedere a tutti i casi di eDiscovery nell'organizzazione. La possibilità di accedere a tutti i casi di eDiscovery ha due importanti scopi:

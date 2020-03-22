@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'Di seguito vengono riportate le risposte alle domande più frequenti sul servizio di filtro della posta elettronica ospitato su cloud di Microsoft Exchange Online Protection (EOP). Per ulteriori argomenti sulle domande frequenti (FAQ), accedere ai collegamenti seguenti:'
-ms.openlocfilehash: 03fb070b2a40ad1e363138124eb0225e64fd5702
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 842f022edbba9d1a790a26987982c3bd508e9d5e
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599383"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893683"
 ---
 # <a name="eop-general-faq"></a>Domande frequenti su Exchange Online Protection
 
@@ -28,8 +28,6 @@ Di seguito vengono riportate le risposte alle domande più frequenti sul servizi
 - [Domande frequenti sull'amministrazione con delega](delegated-administration-faq.md)
 
 - [Domande frequenti sulla protezione da posta indesiderata](anti-spam-protection-faq.md)
-
-- [Elenchi di mittenti attendibili e bloccati in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)
 
 - [Domande frequenti sulla quarantena](quarantine-faq.md)
 

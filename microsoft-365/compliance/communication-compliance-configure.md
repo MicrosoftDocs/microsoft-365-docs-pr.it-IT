@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 027189a10e34687833e6a266d5fe4382a1e14e3a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5f105912c5163b69368683cd4c6eaebf96250e3c
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632897"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894831"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurare la conformità delle comunicazioni in Microsoft 365
 
@@ -83,7 +83,7 @@ Utilizzare il seguente grafico per facilitare la configurazione dei gruppi nell'
 | **Membro del criterio** | **Gruppi supportati** | **Gruppi non supportati** |
 |:-----|:-----|:-----|
 |Utenti controllati <br> Utenti non controllati | Gruppi di distribuzione <br> Gruppi di Office 365 | Gruppi di distribuzione dinamici |
-| Revisori | Gruppi di sicurezza abilitati alla posta elettronica  | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici |
+| Revisori | Nessuno | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici <br> Gruppi di sicurezza abilitati alla posta elettronica |
   
 Quando si seleziona un gruppo di Office 365 per gli utenti controllati, il criterio monitora il contenuto della cassetta postale di Office 365 condivisa e dei canali Microsoft teams associati al gruppo. Quando si seleziona una lista di distribuzione, il criterio monitora le singole cassette postali degli utenti.
 
