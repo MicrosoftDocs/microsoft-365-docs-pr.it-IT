@@ -1,11 +1,11 @@
 ---
-title: Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti
+title: Configurare EOP per la posta indesiderata in ambienti ibridi
 f1.keywords:
 - NOCSH
-ms.author: tracyp
+ms.author: chrisda
 author: MSFTTracyP
-manager: dansimp
-ms.date: 7/16/2016
+manager: chrisda
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,54 +15,134 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono imparare a instradare la posta indesiderata alle cartelle di posta indesiderata degli utenti in Exchange Online Protection.
-ms.openlocfilehash: 6d1fd625669e8b638a408b2db1993f45fa653ffb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Gli amministratori possono ottenere informazioni su come configurare l'ambiente di Exchange locale per instradare la posta indesiderata alle cartelle di posta indesiderata degli utenti locali, se si utilizza Exchange Online Protection (EOP) autonomo in ambienti ibridi.
+ms.openlocfilehash: 8a3887d1cc7390e75b7708d2167372e976923e01
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599363"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42893719"
 ---
-# <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a><span data-ttu-id="c30a8-103">Verifica del reindirizzamento della posta indesiderata nella cartella Posta indesiderata degli utenti</span><span class="sxs-lookup"><span data-stu-id="c30a8-103">Ensure that spam is routed to each user's Junk Email folder</span></span>
+# <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a><span data-ttu-id="fad87-103">Configurare EOP autonomo per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi</span><span class="sxs-lookup"><span data-stu-id="fad87-103">Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="c30a8-104">Questo argomento si applica solo ai clienti di Exchange Online Protection (EOP) che ospitano le cassette postali in locale in una distribuzione ibrida.</span><span class="sxs-lookup"><span data-stu-id="c30a8-104">This topic only applies to Exchange Online Protection (EOP) customers who host mailboxes on-premises in a hybrid deployment.</span></span> <span data-ttu-id="c30a8-105">I clienti di Exchange Online le cui cassette postali sono completamente ospitate in Office 365 non devono eseguire questi comandi.</span><span class="sxs-lookup"><span data-stu-id="c30a8-105">Exchange Online customers whose mailboxes are fully-hosted in Office 365 do not need to run these commands.</span></span>
+> <span data-ttu-id="fad87-104">Questo argomento è solo per i clienti di EOP autonomi in ambienti ibridi.</span><span class="sxs-lookup"><span data-stu-id="fad87-104">This topic is only for standalone EOP customers in hybrid environments.</span></span> <span data-ttu-id="fad87-105">Questo argomento non si applica ai clienti di Office 365 con cassette postali di Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="fad87-105">This topic does not apply to Office 365 customers with Exchange Online mailboxes.</span></span>
 
-<span data-ttu-id="c30a8-106">L'azione di protezione da posta indesiderata predefinita per i clienti EOP consiste nello spostamento dei messaggi di posta indesiderata nella cartella Posta indesiderata dei destinatari.</span><span class="sxs-lookup"><span data-stu-id="c30a8-106">The default anti-spam action for EOP customers is to move spam messages to the recipients' Junk Email folder.</span></span> <span data-ttu-id="c30a8-107">Affinché questa azione funzioni con le cassette postali locali, è necessario configurare le regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server perimetrali o hub locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP.</span><span class="sxs-lookup"><span data-stu-id="c30a8-107">In order for this action to work with on-premises mailboxes, you must configure Exchange mail flow rules (also known as transport rules) on your on-premises Edge or Hub servers to detect spam headers added by EOP.</span></span> <span data-ttu-id="c30a8-108">Queste regole del flusso di posta consentono di impostare il livello di probabilità di protezione da posta indesiderata utilizzato dalla proprietà SclJunkThreshold del cmdlet Set-OrganizationConfig per spostare lo spam nella cartella posta indesiderata di ogni cassetta postale.</span><span class="sxs-lookup"><span data-stu-id="c30a8-108">These mail flow rules set the spam confidence level (SCL) used by the SclJunkThreshold property of the Set-OrganizationConfig cmdlet to move spam into the Junk Email folder of each mailbox.</span></span>
+<span data-ttu-id="fad87-106">Se si è un cliente autonomo di Exchange Online Protection (EOP) in un ambiente ibrido, è necessario configurare l'organizzazione di Exchange locale per riconoscere e tradurre i verdetti del filtro della posta indesiderata di EOP, in modo che la regola di posta indesiderata nella cassetta postale locale è possibile spostare i messaggi nella cartella posta indesiderata.</span><span class="sxs-lookup"><span data-stu-id="fad87-106">If you're a standalone Exchange Online Protection (EOP) customer in a hybrid environment, you need to configure your on-premises Exchange organization to recognize and translate the spam filtering verdicts of EOP, so the junk email rule in the on-premises mailbox can move messages to the Junk Email folder.</span></span>
 
-### <a name="to-add-mail-flow-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a><span data-ttu-id="c30a8-109">Per aggiungere regole del flusso di posta per garantire che la posta indesiderata venga spostata nella cartella posta indesiderata utilizzando Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="c30a8-109">To add mail flow rules to ensure spam is moved to the Junk Email folder by using Windows PowerShell</span></span>
+<span data-ttu-id="fad87-107">In particolare, è necessario creare regole del flusso di posta (note anche come regole di trasporto) nell'organizzazione di Exchange locale con condizioni che consentono di trovare i messaggi con uno dei seguenti valori e intestazioni di protezione da posta indesiderata di EOP e le azioni che impostano il livello di probabilità di posta indesiderata ( SCL) di tali messaggi su 6:</span><span class="sxs-lookup"><span data-stu-id="fad87-107">Specifically, you need to create mail flow rules (also known as transport rules) in your on-premises Exchange organization with conditions that find messages with any of the following EOP anti-spam headers and values, and actions that set the spam confidence level (SCL) of those messages to 6:</span></span>
 
-1. <span data-ttu-id="c30a8-110">Accedere a Exchange Management Shell per il server Exchange locale.</span><span class="sxs-lookup"><span data-stu-id="c30a8-110">Access the Exchange Management Shell for your on-premises Exchange server.</span></span> <span data-ttu-id="c30a8-111">Per sapere come aprire Exchange Management Shell nell'organizzazione Exchange locale, vedere **Open the Shell**.</span><span class="sxs-lookup"><span data-stu-id="c30a8-111">To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Shell**.</span></span>
+- <span data-ttu-id="fad87-108">`X-Forefront-Antispam-Report: SFV:SPM`(messaggio contrassegnato come posta indesiderata dal filtro posta indesiderata)</span><span class="sxs-lookup"><span data-stu-id="fad87-108">`X-Forefront-Antispam-Report: SFV:SPM` (message marked as spam by spam filtering)</span></span>
 
-2. <span data-ttu-id="c30a8-112">Per instradare i messaggi di posta indesiderata filtrata in base al contenuto alla cartella Posta indesiderata, utilizzare il seguente comando:</span><span class="sxs-lookup"><span data-stu-id="c30a8-112">Run the following command to route content-filtered spam messages to the Junk Email folder:</span></span>
+- <span data-ttu-id="fad87-109">`X-Forefront-Antispam-Report: SFV:SKS`messaggio contrassegnato come posta indesiderata dalle regole del flusso di posta in EOP prima del filtro posta indesiderata</span><span class="sxs-lookup"><span data-stu-id="fad87-109">`X-Forefront-Antispam-Report: SFV:SKS` (message marked as spam by mail flow rules in EOP before spam filtering)</span></span>
 
-   ```Powershell
-   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
-   ```
+- <span data-ttu-id="fad87-110">`X-Forefront-Antispam-Report: SFV:SKB`(messaggio contrassegnato come posta indesiderata dal filtro posta indesiderata a causa dell'indirizzo di posta elettronica o del dominio di posta elettronica del mittente nell'elenco dei mittenti bloccati o nell'elenco dei domini bloccati in EOP)</span><span class="sxs-lookup"><span data-stu-id="fad87-110">`X-Forefront-Antispam-Report: SFV:SKB` (message marked as spam by spam filtering due to the sender's email address or email domain being in the blocked sender list or the blocked domain list in EOP)</span></span>
 
-   <span data-ttu-id="c30a8-113">Dove _NameForRule_ è il nome della nuova regola, ad esempio JunkContentFilteredMail.</span><span class="sxs-lookup"><span data-stu-id="c30a8-113">Where _NameForRule_ is the name for the new rule, for example, JunkContentFilteredMail.</span></span>
+<span data-ttu-id="fad87-111">Per ulteriori informazioni su questi valori di intestazione, vedere intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md).</span><span class="sxs-lookup"><span data-stu-id="fad87-111">For more information about these header values, see [Anti-spam message headers](anti-spam-message-headers.md).</span></span>
 
-3. <span data-ttu-id="c30a8-114">Per instradare i messaggi di posta indesiderata in base al contenuto alla cartella Posta indesiderata, utilizzare il seguente comando:</span><span class="sxs-lookup"><span data-stu-id="c30a8-114">Run the following command to route messages marked as spam prior to reaching the content filter to the Junk Email folder:</span></span>
-
-   ```Powershell
-   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKS" -SetSCL 6
-   ```
-
-   <span data-ttu-id="c30a8-115">Dove _NameForRule_ è il nome della nuova regola, ad esempio JunkMailBeforeReachingContentFilter.</span><span class="sxs-lookup"><span data-stu-id="c30a8-115">Where _NameForRule_ is the name for the new rule, for example, JunkMailBeforeReachingContentFilter.</span></span>
-
-4. <span data-ttu-id="c30a8-116">Eseguire il seguente comando per verificare che i messaggi provenienti da mittenti contenuti in un elenco di blocco nel criterio di filtro della posta indesiderata, ad esempio l'elenco dei **Mittenti bloccati** , vengano instradati alla cartella posta indesiderata:</span><span class="sxs-lookup"><span data-stu-id="c30a8-116">Run the following command to ensure that messages from senders in a block list in the spam filter policy, such as the **Sender block** list, are routed to the Junk Email folder:</span></span>
-
-   ```Powershell
-   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
-   ```
-
-   <span data-ttu-id="c30a8-117">Dove _NameForRule_ è il nome della nuova regola, ad esempio JunkMailInSenderBlockList.</span><span class="sxs-lookup"><span data-stu-id="c30a8-117">Where _NameForRule_ is the name for the new rule, for example, JunkMailInSenderBlockList.</span></span>
-
-<span data-ttu-id="c30a8-118">Se non si desidera utilizzare l'azione **Sposta messaggio all'interno della cartella posta indesiderata** , è possibile scegliere un'altra azione nei criteri di filtro del contenuto nell'interfaccia di amministrazione di Exchange.</span><span class="sxs-lookup"><span data-stu-id="c30a8-118">If you do not want to use the **Move message to Junk Email folder** action, you can choose another action in your content filter policies in the Exchange admin center.</span></span> <span data-ttu-id="c30a8-119">Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="c30a8-119">For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).</span></span> <span data-ttu-id="c30a8-120">Per ulteriori informazioni su questi campi nell'intestazione del messaggio, vedere intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md).</span><span class="sxs-lookup"><span data-stu-id="c30a8-120">For more information about these fields in the message header, see [Anti-spam message headers](anti-spam-message-headers.md).</span></span>
+<span data-ttu-id="fad87-112">In questo argomento viene descritto come creare queste regole del flusso di posta dell'interfaccia di amministrazione di Exchange (EAC) e in Exchange Management Shell (Exchange PowerShell) nell'organizzazione di Exchange locale.</span><span class="sxs-lookup"><span data-stu-id="fad87-112">This topic describes how to create these mail flow rules the Exchange admin center (EAC) and in the Exchange Management Shell (Exchange PowerShell) in the on-premises Exchange organization.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="c30a8-121">Se non si desidera utilizzare l'azione **Sposta messaggio all'interno della cartella posta indesiderata** , è possibile scegliere un'altra azione nei criteri di filtro del contenuto nell'interfaccia di amministrazione di Exchange.</span><span class="sxs-lookup"><span data-stu-id="c30a8-121">If you don't want to use the **Move message to Junk Email folder** action, you can choose another action in your content filter policies in the Exchange admin center.</span></span> <span data-ttu-id="c30a8-122">Per ulteriori informazioni, vedere [Configurare i criteri di filtro della posta indesiderata](configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="c30a8-122">For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).</span></span> <span data-ttu-id="c30a8-123">Per ulteriori informazioni su questi campi nell'intestazione del messaggio, vedere intestazioni dei messaggi di protezione da [posta indesiderata](anti-spam-message-headers.md).</span><span class="sxs-lookup"><span data-stu-id="c30a8-123">For more information about these fields in the message header, see [Anti-spam message headers](anti-spam-message-headers.md).</span></span>
+> <span data-ttu-id="fad87-113">Invece di inviare i messaggi alla cartella posta indesiderata dell'utente locale, è possibile configurare i criteri di protezione dalla posta indesiderata in EOP per la quarantena dei messaggi di posta indesiderata in EOP.</span><span class="sxs-lookup"><span data-stu-id="fad87-113">Instead of delivering the messages to the on-premises user's Junk Email folder, you can configure anti-spam policies in EOP to quarantine spam messages in EOP.</span></span> <span data-ttu-id="fad87-114">Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="fad87-114">For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="c30a8-124">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="c30a8-124">See also</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="fad87-115">Che cosa è necessario sapere prima di iniziare</span><span class="sxs-lookup"><span data-stu-id="fad87-115">What do you need to know before you begin?</span></span>
 
-[<span data-ttu-id="c30a8-125">New-TransportRule</span><span class="sxs-lookup"><span data-stu-id="c30a8-125">New-TransportRule</span></span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)
+- <span data-ttu-id="fad87-116">Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni nell'ambiente di Exchange locale.</span><span class="sxs-lookup"><span data-stu-id="fad87-116">You need to be assigned permissions in the on-premises Exchange environment before you can do these procedures.</span></span> <span data-ttu-id="fad87-117">In particolare, è necessario che venga assegnato il ruolo **regole di trasporto** , assegnato ai ruoli Gestione **organizzazione**, **Gestione conformità**e **record** per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="fad87-117">Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default.</span></span> <span data-ttu-id="fad87-118">Per ulteriori informazioni, vedere [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group).</span><span class="sxs-lookup"><span data-stu-id="fad87-118">For more information, see [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group).</span></span>
+
+- <span data-ttu-id="fad87-119">Se e quando un messaggio viene recapitato nella cartella posta indesiderata in un'organizzazione di Exchange locale, è controllato da una combinazione delle seguenti impostazioni:</span><span class="sxs-lookup"><span data-stu-id="fad87-119">If and when a message is delivered to the Junk Email folder in an on-premises Exchange organization is controlled by a combination of the following settings:</span></span>
+
+  - <span data-ttu-id="fad87-120">Il valore del parametro _SCLJunkThreshold_ nel cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) in Exchange Management Shell.</span><span class="sxs-lookup"><span data-stu-id="fad87-120">The _SCLJunkThreshold_ parameter value on the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) cmdlet in the Exchange Management Shell.</span></span> <span data-ttu-id="fad87-121">Il valore predefinito è 4, il che significa che un SCL di 5 o superiore deve recapitare il messaggio alla cartella posta indesiderata dell'utente.</span><span class="sxs-lookup"><span data-stu-id="fad87-121">The default value is 4, which means an SCL of 5 or higher should deliver the message to the user's Junk email folder.</span></span>
+
+  - <span data-ttu-id="fad87-122">Il valore del parametro _SCLJunkThreshold_ nel cmdlet [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) in Exchange Management Shell.</span><span class="sxs-lookup"><span data-stu-id="fad87-122">The _SCLJunkThreshold_ parameter value on the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet in the Exchange Management Shell.</span></span> <span data-ttu-id="fad87-123">Il valore predefinito è vuoto ($null), che indica che viene utilizzata l'impostazione dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="fad87-123">The default value is blank ($null), which means the organization setting is used.</span></span>
+
+  <span data-ttu-id="fad87-124">Per ulteriori informazioni, vedere [soglie del livello di probabilità di posta indesiderata (SCL) di Exchange](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl).</span><span class="sxs-lookup"><span data-stu-id="fad87-124">For details, see [Exchange spam confidence level (SCL) thresholds](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl).</span></span>
+
+  - <span data-ttu-id="fad87-125">Se la regola di posta indesiderata è abilitata per la cassetta postale (il valore del parametro _Enabled_ è $true sul cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) in Exchange Management Shell).</span><span class="sxs-lookup"><span data-stu-id="fad87-125">Whether the junk email rule is enabled on the mailbox (the _Enabled_ parameter value is $true on the [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) cmdlet in the Exchange Management Shell).</span></span> <span data-ttu-id="fad87-126">È la regola di posta indesiderata che in realtà sposta il messaggio nella cartella posta indesiderata dopo il recapito.</span><span class="sxs-lookup"><span data-stu-id="fad87-126">It's the junk email rule that actually moves the message to the Junk Email folder after delivery.</span></span> <span data-ttu-id="fad87-127">Per impostazione predefinita, la regola di posta indesiderata è abilitata sulle cassette postali.</span><span class="sxs-lookup"><span data-stu-id="fad87-127">By default, the junk email rule is enabled on mailboxes.</span></span> <span data-ttu-id="fad87-128">Per ulteriori informazioni, vedere [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).</span><span class="sxs-lookup"><span data-stu-id="fad87-128">For more information, see [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).</span></span>
+  
+- <span data-ttu-id="fad87-129">Per aprire EAC su un server Exchange, vedere interfaccia [di amministrazione di Exchange in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center).</span><span class="sxs-lookup"><span data-stu-id="fad87-129">To open the EAC on an Exchange Server, see [Exchange admin center in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center).</span></span> <span data-ttu-id="fad87-130">Per aprire Exchange Management Shell, vedere [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).</span><span class="sxs-lookup"><span data-stu-id="fad87-130">To open the Exchange Management Shell, see [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).</span></span>
+
+- <span data-ttu-id="fad87-131">Per ulteriori informazioni sulle regole del flusso di posta in Exchange locale, vedere i seguenti argomenti:</span><span class="sxs-lookup"><span data-stu-id="fad87-131">For more information about mail flow rules in on-premises Exchange, see the following topics:</span></span>
+
+  - [<span data-ttu-id="fad87-132">Regole del flusso di posta in Exchange Server</span><span class="sxs-lookup"><span data-stu-id="fad87-132">Mail flow rules in Exchange Server</span></span>](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules)
+
+  - [<span data-ttu-id="fad87-133">Condizioni ed eccezioni della regola del flusso di posta (predicati) in Exchange Server</span><span class="sxs-lookup"><span data-stu-id="fad87-133">Mail flow rule conditions and exceptions (predicates) in Exchange Server</span></span>](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
+
+  - [<span data-ttu-id="fad87-134">Azioni delle regole del flusso di posta in Exchange Server</span><span class="sxs-lookup"><span data-stu-id="fad87-134">Mail flow rule actions in Exchange Server</span></span>](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/actions)
+
+## <a name="use-the-eac-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a><span data-ttu-id="fad87-135">Utilizzare EAC per creare regole del flusso di posta che configurano il SCL dei messaggi di posta indesiderata di EOP</span><span class="sxs-lookup"><span data-stu-id="fad87-135">Use the EAC to create mail flow rules that set the SCL of EOP spam messages</span></span>
+
+1. <span data-ttu-id="fad87-136">Nell'interfaccia di amministrazione di Exchange, andare a **Flusso di posta** \> **Regole**.</span><span class="sxs-lookup"><span data-stu-id="fad87-136">In the EAC, go to **Mail flow** \> **Rules**.</span></span>
+
+2. <span data-ttu-id="fad87-137">Fare **Add** ![clic su Aggiungi](../../media/ITPro-EAC-AddIcon.png) icona e selezionare **Crea una nuova regola** nell'elenco a discesa che viene visualizzato.</span><span class="sxs-lookup"><span data-stu-id="fad87-137">Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and select **Create a new rule** in the drop-down that appears.</span></span>
+
+3. <span data-ttu-id="fad87-138">Nella pagina **Nuova regola** che si apre, configurare le seguenti impostazioni:</span><span class="sxs-lookup"><span data-stu-id="fad87-138">In the **New rule** page that opens, configure the following settings:</span></span>
+
+   - <span data-ttu-id="fad87-139">**Nome**: immettere un nome univoco descrittivo per la regola.</span><span class="sxs-lookup"><span data-stu-id="fad87-139">**Name**: Enter a unique, descriptive name for the rule.</span></span> <span data-ttu-id="fad87-140">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="fad87-140">For example:</span></span>
+
+     - <span data-ttu-id="fad87-141">EOP SFV: SPM a SCL 6</span><span class="sxs-lookup"><span data-stu-id="fad87-141">EOP SFV:SPM to SCL 6</span></span>
+
+     - <span data-ttu-id="fad87-142">EOP SFV: SKS to SCL 6</span><span class="sxs-lookup"><span data-stu-id="fad87-142">EOP SFV:SKS to SCL 6</span></span>
+
+     - <span data-ttu-id="fad87-143">EOP SFV: SKB to SCL 6</span><span class="sxs-lookup"><span data-stu-id="fad87-143">EOP SFV:SKB to SCL 6</span></span>
+
+   - <span data-ttu-id="fad87-144">Fare clic su **altre opzioni**.</span><span class="sxs-lookup"><span data-stu-id="fad87-144">Click **More Options**.</span></span>
+
+   - <span data-ttu-id="fad87-145">**Applica questa regola se**: selezionare **un'intestazione** \> **del messaggio include una di queste parole**.</span><span class="sxs-lookup"><span data-stu-id="fad87-145">**Apply this rule if**: Select **A message header** \> **includes any of these words**.</span></span>
+
+     <span data-ttu-id="fad87-146">Nell' **intestazione Enter Text è inclusa l'indicazione Enter Words** , che viene visualizzata, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="fad87-146">In the **Enter text header includes Enter words** sentence that appears, do the following steps:</span></span>
+
+     - <span data-ttu-id="fad87-147">Fare clic su **Immetti testo**.</span><span class="sxs-lookup"><span data-stu-id="fad87-147">Click **Enter text**.</span></span> <span data-ttu-id="fad87-148">Nella finestra di dialogo **Specifica nome intestazione** che viene visualizzata, immettere **X-Forefront-antispam-report** e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="fad87-148">In the **Specify header name** dialog that appears, enter **X-Forefront-Antispam-Report** and then click **OK**.</span></span>
+
+     - <span data-ttu-id="fad87-149">Fare clic su **Immetti parole**.</span><span class="sxs-lookup"><span data-stu-id="fad87-149">Click  **Enter words**.</span></span> <span data-ttu-id="fad87-150">Nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori delle intestazioni di posta indesiderata di EOP (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**),](../../media/ITPro-EAC-AddIcon.png)fare clic su **Aggiungi** ![icona e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="fad87-150">In the **Specify words or phrases** dialog that appears, enter one of the EOP spam header values (**SFV:SPM**, **SFV:SKS**, or **SFV:SKB**), click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png), and then click **OK**.</span></span>
+
+   - <span data-ttu-id="fad87-151">**Eseguire le operazioni seguenti**: selezionare **modifica le proprietà** \> del messaggio **impostare il livello di probabilità di posta indesiderata (SCL)**.</span><span class="sxs-lookup"><span data-stu-id="fad87-151">**Do the following**: Select **Modify the message properties** \> **Set the spam confidence level (SCL)**.</span></span>
+
+     <span data-ttu-id="fad87-152">Nella finestra di dialogo **specifica SCL** visualizzata, selezionare **6** (il valore predefinito è **5**).</span><span class="sxs-lookup"><span data-stu-id="fad87-152">In the **Specify SCL** dialog that appears, select **6** (the default value is **5**).</span></span>
+
+   <span data-ttu-id="fad87-153">Al termine, fare clic su **Salva**</span><span class="sxs-lookup"><span data-stu-id="fad87-153">When you're finished, click **Save**</span></span>
+
+<span data-ttu-id="fad87-154">Ripetere questi passaggi per i valori del verdetto di posta indesiderata EOP rimanenti (**SFV: SPM**, **SFV: SKS**o **SFV: SKB**).</span><span class="sxs-lookup"><span data-stu-id="fad87-154">Repeat these steps for the remaining EOP spam verdict values (**SFV:SPM**, **SFV:SKS**, or **SFV:SKB**).</span></span>
+
+## <a name="use-the-exchange-management-shell-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a><span data-ttu-id="fad87-155">Utilizzare Exchange Management Shell per creare regole del flusso di posta che configurano il livello SCL dei messaggi di posta indesiderata di EOP</span><span class="sxs-lookup"><span data-stu-id="fad87-155">Use the Exchange Management Shell to create mail flow rules that set the SCL of EOP spam messages</span></span>
+
+<span data-ttu-id="fad87-156">Per creare le tre regole del flusso di posta, utilizzare la sintassi seguente:</span><span class="sxs-lookup"><span data-stu-id="fad87-156">Use the following syntax to create the three mail flow rules:</span></span>
+
+```Powershell
+New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "<EOPSpamFilteringVerdict>" -SetSCL 6
+```
+
+<span data-ttu-id="fad87-157">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="fad87-157">For example:</span></span>
+
+```Powershell
+New-TransportRule -Name "EOP SFV:SPM to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
+```
+
+```Powershell
+New-TransportRule -Name "EOP SFV:SKS to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKS" -SetSCL 6
+```
+
+```Powershell
+New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
+```
+
+<span data-ttu-id="fad87-158">Per informazioni dettagliate su sintassi e parametri, vedere [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).</span><span class="sxs-lookup"><span data-stu-id="fad87-158">For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).</span></span>
+
+## <a name="how-do-you-know-this-worked"></a><span data-ttu-id="fad87-159">Come verificare se l'operazione ha avuto esito positivo</span><span class="sxs-lookup"><span data-stu-id="fad87-159">How do you know this worked?</span></span>
+
+<span data-ttu-id="fad87-160">Per verificare la corretta configurazione di EOP autonomo per recapitare la posta indesiderata alla cartella posta indesiderata in ambiente ibrido, eseguire una delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="fad87-160">To verify that you've successfully configured standalone EOP to deliver spam to the Junk Email folder in hybrid environment, do any of the following steps:</span></span>
+
+- <span data-ttu-id="fad87-161">Nell'interfaccia di amministrazione di Exchange, andare a **regole**del **flusso** \> di posta, selezionare la regola, quindi](../../media/ITPro-EAC-EditIcon.png) fare clic su **modifica** ![icona modifica per verificare le impostazioni.</span><span class="sxs-lookup"><span data-stu-id="fad87-161">In the EAC, go to **Mail flow** \> **Rules**, select the rule, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png) to verify the settings.</span></span>
+
+- <span data-ttu-id="fad87-162">In Exchange Management Shell, sostituire \<RuleName\> con il nome della regola del flusso di posta e RUL il comando seguente per verificare le impostazioni:</span><span class="sxs-lookup"><span data-stu-id="fad87-162">In the Exchange Management Shell, replace \<RuleName\> with the name of the mail flow rule, and rul the following command to verify the settings:</span></span>
+
+  ```powershell
+  Get-TransportRule -Identity "<RuleName>" | Format-List
+  ```
+
+- <span data-ttu-id="fad87-163">In un sistema di posta elettronica esterno **che non esegue l'analisi dei messaggi in uscita per la posta indesiderata**, inviare un test generico per il messaggio di posta elettronica indesiderata (GTUBE) a un destinatario coinvolto e verificare che sia recapitato nella cartella posta indesiderata.</span><span class="sxs-lookup"><span data-stu-id="fad87-163">In an external email system **that doesn't scan outbound messages for spam**, send a Generic Test for Unsolicited Bulk Email (GTUBE) message to an affected recipient, and confirm that it's delivered to their Junk Email folder.</span></span> <span data-ttu-id="fad87-164">Un messaggio di GTUBE è simile al file di testo EICAR (European Institute for computer Antivirus Research) per testare le impostazioni di malware.</span><span class="sxs-lookup"><span data-stu-id="fad87-164">A GTUBE message is similar to the European Institute for Computer Antivirus Research (EICAR) text file for testing malware settings.</span></span>
+
+  <span data-ttu-id="fad87-165">Per inviare un messaggio di GTUBE, includere il testo seguente nel corpo di un messaggio di posta elettronica su una singola riga, senza spazi o interruzioni di riga:</span><span class="sxs-lookup"><span data-stu-id="fad87-165">To send a GTUBE message, include the following text in the body of an email message on a single line, without any spaces or line breaks:</span></span>
+
+  ```text
+  XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
+  ```
