@@ -2,8 +2,8 @@
 title: Protezione anti-spoofing in Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTtracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Questo articolo descrive come Office 365 riduce gli attacchi di phishing che usoano domini di mittenti contraffatti, vale a dire che sono oggetto di spoofing. Per ottenere questo risultato analizza i messaggi e blocca quelli che non possono essere autenticati né tramite metodi di autenticazione di posta elettronica standard né con altre tecniche di reputazione del mittente. Questa modifica è stata implementata per ridurre il numero di attacchi di phishing a cui sono esposte le organizzazioni in Office 365.
-ms.openlocfilehash: 007686f8d210124948a42b2c254fc58332cdd3de
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9e1a4cf31c2565eeb6be53b5c43bda0154f9ea6f
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42087125"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894139"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protezione anti-spoofing in Office 365
 
@@ -89,10 +89,9 @@ Per visualizzare l'annuncio generale di Microsoft, vedere [Un mare di phishing p
 
 Anche se SPF, DKIM e DMARC sono tutti utili singolarmente, non comunicano un sufficiente stato di autenticazione nel caso in cui un messaggio non disponga di record di autenticazione espliciti.  Di conseguenza, Microsoft ha sviluppato un algoritmo che combina più segnali in un singolo valore denominato autenticazione composita o compauth in breve. I clienti di Office 365 dispongono di valori compauth indicati nell’intestazione*Authentication-Results* nelle intestazioni del messaggio.
 
-```
+```text
 Authentication-Results:
   compauth=<fail|pass|softpass|none> reason=<yyy>
-
 ```
 
 |**Risultato CompAuth**|**Descrizione**|
@@ -261,7 +260,7 @@ Un messaggio può essere contraffatto in diversi modi (vedere [Differenziazione 
 
 ### <a name="changing-your-anti-spoofing-settings"></a>Modifica delle impostazioni di protezione da spoofing
 
-Per creare o aggiornare le impostazioni di protezione da spoofing (fra domini), passare alle \> Impostazioni anti-spoofing anti-phishing nella \> Scheda criteri di gestione delle minacce del&amp; Centro conformità e sicurezza. Se non sono mai state create impostazioni anti-phishing, sarà necessario crearne una:
+Per creare o aggiornare le impostazioni di protezione da spoofing (fra domini), passare alle impostazioni Anti-phishing \> Anti-spoofing nella scheda Gestione delle minacce \> Criteri del Centro conformità e sicurezza. Se non sono mai state create impostazioni anti-phishing, sarà necessario crearne una:
 
 ![Anti-phishing: crea un nuovo criterio](../../media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
 
@@ -388,13 +387,13 @@ Dopo aver abilitato il criterio di anti-spoofing, è possibile usare le funziona
 
 È possibile interagire con i diversi report per vedere quanti sono stati contrassegnati come phishing, inclusi i messaggi contrassegnati come SPOOFING.  Per altre informazioni, vedere [Introduzione all'analisi delle minacce e alla risposta alle minacce in Office 365](office-365-ti.md).
 
-Non è ancora possibile dividere i messaggi contrassegnati a causa dello spoofing rispetto ad altri tipi di phishing (phishing generale, rappresentazione di dominio o utente e così via). Tuttavia, in seguito, sarà possibile eseguire questa operazione tramite il Centro &amp;sicurezza e conformità.  Dopo aver eseguito questo passaggio, è possibile utilizzare questo report come punto di partenza per identificare i domini di invio che possono diventare legittimi anche se sono stati contrassegnati come spoofing a causa di un'autenticazione non riuscita.
+Non è ancora possibile dividere i messaggi contrassegnati a causa dello spoofing rispetto ad altri tipi di phishing (phishing generale, rappresentazione di dominio o utente e così via). Tuttavia, in seguito, sarà possibile eseguire questa operazione tramite il Centro sicurezza e conformità.  Dopo aver eseguito questo passaggio, è possibile utilizzare questo report come punto di partenza per identificare i domini di invio che possono diventare legittimi anche se sono stati contrassegnati come spoofing a causa di un'autenticazione non riuscita.
 
 La schermata seguente è una proposta per la modalità di visualizzazione dei dati, che potrà variare al rilascio della versione:
 
 ![Visualizzazione dei report di phishing per tipo di rilevamento](../../media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
 
-Per i clienti non ATP e E5, questi report saranno disponibili in un secondo momento nei report di Stato di protezione dalle minacce (TPS), ma saranno posticipati di almeno 24 ore.  Questa pagina sarà aggiornata perché è integrata nel Centro &amp; sicurezza e conformità.
+Per i clienti non ATP e E5, questi report saranno disponibili in un secondo momento nei report di Stato di protezione dalle minacce (TPS), ma saranno posticipati di almeno 24 ore.  Questa pagina sarà aggiornata perché è integrata nel Centro sicurezza e conformità.
 
 ### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>Predizione del numero di messaggi che saranno contrassegnati come spoofing
 
@@ -505,7 +504,7 @@ New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
 Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 ```
 
-La disabilitazione dell'anti-spoofing è disponibile solo tramite cmdlet (in seguito sarà disponibile nel Centro di &amp; sicurezza e conformità). Se non si ha accesso a PowerShell, creare un ticket di supporto.
+La disabilitazione dell'anti-spoofing è disponibile solo tramite cmdlet (in seguito sarà disponibile nel Centro di sicurezza e conformità). Se non si ha accesso a PowerShell, creare un ticket di supporto.
 
 Tenere presente che quest’ultimo dovrebbe essere applicato solo ai domini sottoposti a routing indiretto quando sono inviati a Office 365. Resistere alla tentazione di disabilitare l'anti-spoofing a causa di alcuni falsi positivi apporterà benefici a lungo termine al fine di lavorare su di essi.
 
@@ -652,9 +651,11 @@ Purtroppo no, perché i truffatori si adatteranno a utilizzare altre tecniche co
 
 Quasi tutti i destinatari di posta elettronica di grandi dimensioni implementano i tradizionali SPF, DKIM e DMARC.  Alcuni destinatari dispongono di altri controlli che sono più severi rispetto a quelli standard, ma pochi sono disponibili laddove Office 365 riesce a bloccare il messaggio di posta elettronica non autenticato e trattarlo come spoofing. Tuttavia, la maggior parte del settore sta diventando sempre più rigorosa su questo tipo di messaggio di posta elettronica, in particolare a causa del problema del phishing.
 
-### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>Se si abilita l'anti-spoofing, è ancora necessaria l'opzione di filtro per la posta indesiderata avanzata abilitata per "SPF Hard Fail"?
+### <a name="do-i-still-need-to-enable-the-advanced-spam-filter-asf-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>È ancora necessario abilitare l'opzione avanzata per il filtraggio della posta indesiderata (ASF) "record SPF: non riuscito" (_MarkAsSpamSpfRecordHardFail_) se si abilita l'anti-spoofing?
 
-No, questa opzione non è più necessaria perché la funzionalità di anti-spoofing non considera solo l'esito negativo di SPF, ma un insieme di criteri molto più ampio.  Se è abilitata la funzionalità di anti-spoofing e l'opzione di SPF Hard Fail è abilitata, è probabile che vengano configurati più falsi positivi. Si consiglia di disabilitare questa funzionalità poiché non fornirà quasi nessun ulteriore catch per la posta indesiderata o il phishing e invece genererà principalmente falsi positivi.
+No, questa opzione non è più necessaria perché la funzionalità di anti-spoofing non considera solo l'esito negativo di SPF, ma un insieme di criteri molto più ampio.  Se è abilitata la funzionalità di anti-spoofing e il **record SPF: non riuscito** (_MarkAsSpamSpfRecordHardFail_) è attivato, è probabile che vengano configurati più falsi positivi.
+
+Si consiglia di disabilitare questa funzionalità poiché non fornirà quasi nessun ulteriore catch per la posta indesiderata o il phishing e invece genererà principalmente falsi positivi. Per ulteriori informazioni, vedere le [Opzioni avanzate per il filtro della posta indesiderata (ASF) in Office 365](advanced-spam-filtering-asf-options.md).
 
 ### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>Lo schema di riscrittura del mittente (SRS) consente di risolvere i messaggi di posta elettronica inoltrati?
 
