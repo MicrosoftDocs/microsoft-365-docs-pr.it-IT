@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 6d83b9af94ecb086d933cd00476ca84e87d6db2e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 13a65f5a6a82eed748eaa79a3683ebdf2fe7ed9a
+ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634754"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42894397"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -311,7 +311,8 @@ Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
 |[Attività di Advanced eDiscovery](#advanced-ediscovery-activities)|[Attività di Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Attività di Microsoft Teams](#microsoft-teams-activities)|[Attività di Microsoft Teams per il settore sanitario](#microsoft-teams-healthcare-activities)|[Attività di Yammer](#yammer-activities)|
 |[Attività di Microsoft Power Automate](#microsoft-power-automate-activities)|[Attività di Microsoft Power Apps](#microsoft-power-apps-activities)|[Attività di Microsoft Stream](#microsoft-stream-activities)|
-|[Attività di Microsoft Forms](#microsoft-forms-activities)|[Attività sulle etichette di riservatezza](#sensitivity-label-activities)|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)||
+|[Attività di Esplora contenuto](#content-explorer-activities)|[Attività di Microsoft Forms](#microsoft-forms-activities)|[Attività sulle etichette di riservatezza](#sensitivity-label-activities)|
+|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)||
 ||||
 
 ### <a name="file-and-page-activities"></a>Attività su file e pagine
@@ -802,7 +803,16 @@ La tabella seguente elenca le attività degli utenti e degli amministratori di Y
 
 ### <a name="microsoft-stream-activities"></a>Attività di Microsoft Stream
 
-È possibile eseguire una ricerca nel log di controllo per le attività in Microsoft Stream. Queste attività includono le attività video eseguite dagli utenti, le attività dei canali del gruppo e le attività amministrative, ad esempio la gestione degli utenti, la gestione delle impostazioni dell'organizzazione e l'esportazione dei report. Per una descrizione di queste attività, vedere la sezione "Attività registrate in Microsoft Stream" in [Log di controllo di Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
+È possibile eseguire una ricerca nel log di controllo per le attività in Microsoft Stream. Queste attività includono le attività video eseguite dagli utenti, le attività dei canali del gruppo e le attività amministrative, ad esempio la gestione degli utenti, la gestione delle impostazioni dell'organizzazione e l'esportazione dei report. Per una descrizione di queste attività, vedere la sezione "Azioni registrate in Stream" in [Log di controllo di Microsoft Stream](https://docs.microsoft.com/stream/audit-logs#actions-logged-in-stream).
+
+### <a name="content-explorer-activities"></a>Attività di Esplora contenuto
+
+La tabella seguente elenca le attività di Esplora contenuto registrate nel log di controllo di Office 365. Esplora contenuto, a cui è possibile accedere nello strumento per le classificazioni dei dati del Centro conformità Microsoft 365. Per altre informazioni, vedere [Utilizzo di Esplora contenuto di classificazione dei dati](data-classification-content-explorer.md).
+
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:-----|:-----|:-----|
+|Elemento a cui è stato effettuato l'accesso|AccessedItem|Un amministratore o un utente che fa parte del gruppo di ruoli Visualizzatore contenuto di Esplora contenuto usa Esplora contenuto per visualizzare un messaggio di posta elettronica o un documento di SharePoint/OneDrive.|
+||||
 
 ### <a name="microsoft-forms-activities"></a>Attività di Microsoft Forms
 
