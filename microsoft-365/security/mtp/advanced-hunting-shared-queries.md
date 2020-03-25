@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7ff46226e2535ed9826a61afa857e38b03c06ce1
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 38eb3c39c5473d0a729b12771b61e965dbc81931
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234675"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929481"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Usare le query condivise nella ricerca avanzata
 
@@ -66,8 +66,9 @@ I ricercatori della sicurezza Microsoft condividono regolarmente query di ricerc
 >I ricercatori della sicurezza Microsoft forniscono anche query di ricerca avanzata che è possibile usare per trovare le attività e gli indicatori associati alle minacce emergenti. Queste query sono incluse nei report di [analisi delle minacce](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) nel Microsoft Defender Security Center.
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Ricerca proattiva delle minacce](advanced-hunting-overview.md)
+- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
-- [Ricerca delle minacce su dispositivi ed e-mail](advanced-hunting-query-emails-devices.md)
-- [Comprensione dello schema](advanced-hunting-schema-tables.md)
-- [Applicazione delle procedure consigliate per le query](advanced-hunting-best-practices.md)
+- [Usare i risultati delle query](advanced-hunting-query-results.md)
+- [Ricerca delle minacce attraverso dispositivi e posta elettronica](advanced-hunting-query-emails-devices.md)
+- [Comprendere lo schema](advanced-hunting-schema-tables.md)
+- [Applicare le procedure consigliate per le query](advanced-hunting-best-practices.md)
