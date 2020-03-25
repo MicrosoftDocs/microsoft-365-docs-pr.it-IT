@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: I ruoli di amministratore sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione. Ad esempio, l'amministratore del servizio apre ticket di supporto presso Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: 446af9ad49649487f4df1982613f8e84fdf39910
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 22693bbf8acdf8872b621ae214dd8d7a62b98b40
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857192"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929551"
 ---
 # <a name="about-admin-roles"></a>Informazioni sui ruoli di amministratore
 
@@ -119,6 +119,7 @@ Probabilmente sarà necessario assegnare solo i ruoli seguenti nell'organizzazio
 |Amministratore di Power BI    |   Ha accesso completo alle attività di gestione di Power BI, gestisce le richieste di servizio e monitora l'integrità dei servizi.   |
 |Amministratore di Power Platform     |    Ha accesso completo a Microsoft Dynamics 365, PowerApps, criteri di prevenzione della perdita dei dati e Microsoft Flow.     |
 |Amministratore ruolo con privilegi     |    Gestisce le assegnazioni dei ruoli e tutte le funzionalità di controllo dell'accesso di Privileged Identity Management.     |
+|Amministratore dell'autenticazione con privilegi     |    Reimposta le password, aggiorna le credenziali non di password, forza la disconnessione degli utenti, monitora l'integrità dei servizi e gestisce le richieste di servizio.     |
 |Ruolo con autorizzazioni di lettura per i report     |   Legge i dati dei report sull'utilizzo della dashboard dei report, del pacchetto di contenuto di adozione di Power BI, dei report di accesso e dell'API di creazione report di Microsoft Graph.      |
 |Amministratore della ricerca     |    Ha accesso completo a Microsoft Search, assegna i ruoli di amministratore della ricerca e editor della ricerca, gestisce i contenuti editoriali, monitora l'integrità dei servizi e crea richieste di servizio.     |
 |Editor della ricerca     |    Può creare, modificare ed eliminare contenuti per Microsoft Search, come segnalibri, posizioni e domande e risposte.     |

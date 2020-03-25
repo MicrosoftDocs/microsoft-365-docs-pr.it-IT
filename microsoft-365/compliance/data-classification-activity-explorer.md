@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di Esplora attività di classificazione dei dati
+title: Introduzione a Esplora attività (anteprima)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Esplora attività estende la funzionalità di classificazione dei dati consentendo di visualizzare e filtrare le azioni intraprese dagli utenti sul contenuto etichettato.
-ms.openlocfilehash: f80ce94433028b2434d442a364c336060b730d94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 68304bc75d33c993db52895828ec49e3b5203a4c
+ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076768"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42929460"
 ---
-# <a name="view-activity-on-your-labeled-content-preview"></a>Visualizzare le attività sul contenuto etichettato (anteprima)
+# <a name="get-started-with-activity-explorer-preview"></a>Introduzione a Esplora attività (anteprima)
 
 Le schede Panoramica ed Esplora contenuto della classificazione dei dati consentono di ottenere informazioni sul contenuto individuato ed etichettato nonché di sapere dove si trova tale contenuto. Esplora attività estende questa famiglia di funzionalità, consentendo di monitorare le operazioni eseguite sul contenuto etichettato. Le informazioni di Esplora attività sono visualizzate in ordine cronologico.
 
