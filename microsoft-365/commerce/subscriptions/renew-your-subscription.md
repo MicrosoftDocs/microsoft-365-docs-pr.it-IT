@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: "Informazioni su come rinnovare l'abbonamento a Office 365 for business utilizzando un codice \"Product Key\" e accendere o spegnere la fatturazione ricorrente. "
-ms.openlocfilehash: bef43359b2a073339488648466adaf4603a12c43
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 777f60ae40e72a6762015b24ffe1a1f0fed055ba
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633704"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959217"
 ---
 # <a name="renew-office-365-for-business"></a>Rinnovare Office 365 per le aziende
 
 Questo articolo si applica alla maggior parte degli abbonamenti a pagamento a Office 365 per le aziende.
   
-Per rinnovare l'utilizzo di un codice Product Key acquistato da un rivenditore o da un partner di Office 365, vedere [EFind e immettere il codice "Product Key](../enter-your-product-key.md)".
+Per rinnovare l'utilizzo di un codice Product Key acquistato da un rivenditore o da un partner di Office 365, vedere [trovare e immettere il codice "Product Key](../enter-your-product-key.md)".
 
 > [!NOTE]
 > Il pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
@@ -70,7 +70,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
 ::: moniker range="o365-germany"
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abbonamenti</a>.
 
     Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
@@ -93,7 +93,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
 ::: moniker range="o365-21vianet"
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abbonamenti</a>.
 
     Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
@@ -109,7 +109,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
     > [!NOTE]
     > - È possibile modificare l'impostazione di **fatturazione ricorrente** solo per le sottoscrizioni attive. Se l'abbonamento è già scaduto o è disabilitato, sarà necessario [riattivarlo](reactivate-your-subscription.md) prima di poter attivare o disattivare la **fatturazione ricorrente** .
-    > - Quando la **fatturazione ricorrente** è disattivata, l'abbonamento non viene annullato immediatamente. Rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza sulla scheda sottoscrizione
+    > - Quando la **fatturazione ricorrente** è disattivata, l'abbonamento non viene annullato immediatamente. Rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza sulla scheda di sottoscrizione.
     > - Per informazioni su come annullare l'abbonamento subito, vedere [annullare l'abbonamento](cancel-your-subscription.md).
 
 ::: moniker-end
@@ -120,7 +120,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
   
 [Aggiungere, aggiornare o rimuovere una carta di credito o un conto corrente bancario](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
   
-[Cosa succede ai dati e all'accesso quando la sottoscrizione termina?](what-if-my-subscription-expires.md)
+[Che cosa succede ai dati personali al termine dell'abbonamento?](what-if-my-subscription-expires.md)
 
 [Aggiungere, aggiornare o rimuovere i metodi di pagamento](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 

@@ -23,20 +23,20 @@ search.appverid:
 - BEA160
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
-description: Informazioni su come aggiungere licenze all'abbonamento a Office 365.
-ms.openlocfilehash: 93c2929ae575282716cad7b6f64519f5974e3158
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Informazioni su come aggiungere licenze all'abbonamento.
+ms.openlocfilehash: 4d559d977ac507b448d816f3f87e85a923df810f
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242343"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951947"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Aggiungere licenze o estendere una sottoscrizione a pagamento per l'utilizzo di un codice Product Key
 
 Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri. Dopo aver acquistato le licenze necessarie, è possibile aggiungerle all'abbonamento. È inoltre possibile utilizzare un codice "Product Key" per estendere la data di scadenza dell'abbonamento.
 
 > [!NOTE]
-> Se non si vuole acquistare un nuovo codice "Product Key", è sempre possibile scegliere di aggiungere una carta di credito o un conto corrente bancario all'abbonamento per pagare altre licenze o per estendere la data di scadenza dell'abbonamento. Per ulteriori informazioni, vedere [renew Office 365 for business](../subscriptions/renew-your-subscription.md).
+> Se non si vuole acquistare un nuovo codice "Product Key", è sempre possibile scegliere di aggiungere una carta di credito o un conto corrente bancario all'abbonamento per pagare altre licenze o per estendere la data di scadenza dell'abbonamento. Per ulteriori informazioni, vedere [rinnovare l'abbonamento](../subscriptions/renew-your-subscription.md).
   
 ## <a name="add-licenses-to-your-subscription"></a>Aggiungere le licenze all'abbonamento
 

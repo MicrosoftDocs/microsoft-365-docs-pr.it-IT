@@ -2,8 +2,8 @@
 title: Visualizzare i report per Office 365 Advanced Threat Protection, i report di malware, i report di phishing, gli account compromessi, lo stato di protezione URL, i report di minacce
 f1.keywords:
 - CSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 02/07/2020
 audience: ITPro
@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Trovare e utilizzare i report per Office 365 Advanced Threat Protection nel centro &amp; sicurezza e conformità.
-ms.openlocfilehash: 1531a70439ae1c093ee472923696895eda0bc644
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: d65df770b91faf4530701b982e8ba6fa15ddf333
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634084"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955510"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualizzare i report per Office 365 Advanced Threat Protection
 

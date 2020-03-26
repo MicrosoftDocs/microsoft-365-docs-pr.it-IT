@@ -2,8 +2,8 @@
 title: Visualizzare informazioni sui file dannosi rilevati in SharePoint, OneDrive o Microsoft Teams
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: Per informazioni su come eseguire le operazioni su tali file, vedere l'articolo relativo alla visualizzazione dei file dannosi rilevati in SharePoint, OneDrive o teams.
-ms.openlocfilehash: 49c7e1668602a63b8b82339ad0cc7823146212a4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3a14c7d69c7081be6bd08840eb8f52c5e11d4be7
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599013"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955556"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Visualizzare informazioni sui file dannosi rilevati in SharePoint, OneDrive o Microsoft Teams
 
@@ -33,7 +33,7 @@ Per eseguire le attività descritte in questo articolo, è necessario disporre d
 
 Per visualizzare lo stato e informazioni dettagliate sui file che sono stati rilevati da Office 365 ATP, è possibile utilizzare il rapporto sullo stato di protezione dalle minacce.
   
-1. Nel [Centro sicurezza &amp; e conformità di Office 365](https://protection.office.com)scegliere **segnala** \> **** \> **lo stato di protezione delle minacce**del dashboard.
+1. Nel [Centro sicurezza &amp; e conformità di Office 365](https://protection.office.com)scegliere **segnala** \> **Dashboard** \> **lo stato di protezione delle minacce**del dashboard.
     
 2. Nell'angolo in alto a destra del report, scegliere **Visualizza dettagli tabella**.
     
@@ -53,13 +53,13 @@ Per visualizzare lo stato e informazioni dettagliate sui file che sono stati ril
     
 4. Scegliere un'azione disponibile.
     
-  - Scegliere **Release file** per sbloccare il file. 
-    
-    Selezionare **Invia rapporto a Microsoft** per segnalare il file come falso positivo a Microsoft. 
-    
-  - Scegliere **Download file** per analizzare ulteriormente il file. 
-    
-  - Scegliere **Rimuovi dalla quarantena** per rimuovere il file dall'elenco degli elementi in quarantena. Se si sceglie questa opzione, è necessario eliminare anche il file dalla rispettiva raccolta in SharePoint Online, OneDrive for business o Microsoft teams. Questa opzione non sblocca un file dall'apertura o dalla condivisione. 
+    - Scegliere **Release file** per sbloccare il file. 
+
+      Selezionare **Invia rapporto a Microsoft** per segnalare il file come falso positivo a Microsoft. 
+
+    - Scegliere **Download file** per analizzare ulteriormente il file. 
+
+    - Scegliere **Rimuovi dalla quarantena** per rimuovere il file dall'elenco degli elementi in quarantena. Se si sceglie questa opzione, è necessario eliminare anche il file dalla rispettiva raccolta in SharePoint Online, OneDrive for business o Microsoft teams. Questa opzione non sblocca un file dall'apertura o dalla condivisione. 
     
 5. Fare clic su **Chiudi** per chiudere i dettagli per un elemento selezionato. 
   

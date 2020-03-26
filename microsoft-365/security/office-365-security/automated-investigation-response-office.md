@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Ottenere una panoramica delle funzionalità di ricerca e risposta automatizzate in Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: 420143a6a2888900cdc128b22f7b0bcb05adad27
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: f6bbad82f3dce7080aca079a5f750dfc1fea068b
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826404"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955574"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Indagine automatizzata e risposta (AIR) in Office 365
 
@@ -92,7 +92,7 @@ Ogni passaggio di alto livello include una serie di passaggi che vengono eseguit
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Esempio: un messaggio di phishing riferito dall'utente avvia un playbook di analisi
 
-Quando un utente dell'organizzazione invia un messaggio di posta elettronica e lo segnala a Microsoft utilizzando il [componente aggiuntivo per i messaggi di report per Outlook o Outlook Web App](enable-the-report-message-add-in.md), il report viene inviato anche al sistema ed è visibile in Esplora nella visualizzazione segnalata dall'utente. Questo messaggio visualizzato dall'utente ora attiva un avviso informativo basato sul sistema, che avvia automaticamente il PlayBook di analisi.
+Si supponga che un utente dell'organizzazione riceva un messaggio di posta elettronica che ritengono essere un tentativo di phishing. L'utente, addestrato a segnalare tali messaggi, utilizza il [componente aggiuntivo segnala messaggio per Outlook o Outlook Web App](enable-the-report-message-add-in.md) per inviarlo a Microsoft per l'analisi. L'invio viene inviato anche al sistema ed è visibile in Esplora nella visualizzazione **invii** (in precedenza denominato visualizzazione **segnalata dall'utente** ). Inoltre, il messaggio visualizzato dall'utente ora attiva un avviso informativo basato sul sistema, che avvia automaticamente il PlayBook di analisi.
 
 Durante la fase di analisi radice, vengono valutati vari aspetti del messaggio di posta elettronica. Ad esempio:
 - Determinazione del tipo di minaccia che potrebbe essere;
@@ -121,13 +121,13 @@ La correzione è la fase finale del PlayBook. Durante questa fase, vengono esegu
 
 Oltre alle indagini automatiche attivate da un avviso, il team delle operazioni di sicurezza dell'organizzazione può attivare un'analisi automatica da una visualizzazione in [Esplora minacce](threat-explorer.md).
 
-Si supponga, ad esempio, di visualizzare i dati in Esplora informazioni sui messaggi segnalati dall'utente. È possibile selezionare un elemento nell'elenco dei risultati e quindi fare clic su **indaga** dal menu azione (supponendo che si disponga delle autorizzazioni di correzione appropriate).
+Si supponga, ad esempio, di utilizzare la visualizzazione **malware** in Esplora minacce. Utilizzando le schede sotto il grafico, è possibile selezionare la scheda **posta elettronica** . Se si seleziona uno o più elementi nell'elenco, viene attivato il pulsante **+ Actions** . 
 
-![Messaggi segnalati dall'utente in Esplora con il pulsante indaga](../../media/Explorer-UserReported-Investigate.png)
+:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="Esplora risorse con i messaggi selezionati":::
 
-Come un altro esempio, si supponga di visualizzare i dati relativi ai messaggi di posta elettronica rilevati come contenenti malware e che sono stati rilevati diversi messaggi di posta elettronica come contenenti malware. È possibile selezionare la scheda **posta elettronica** , selezionare uno o più messaggi di posta elettronica e quindi scegliere **indaga**dal menu **azioni** . 
+Utilizzando il menu **azioni** , è possibile selezionare **Avvia analisi**.
 
-![Avvio di un'indagine per malware in Esplora risorse](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="Menu azioni per i messaggi selezionati":::
 
 Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che vengono attivate da una visualizzazione in Esplora risorse includono un'analisi radice, procedure per identificare e correlare le minacce e le azioni consigliate per attenuare tali minacce.
 

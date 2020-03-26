@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: aea95dae0165eb23331b2fa24d5fc752df3f4345
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8370744d244ce424fa21e496e8dfd4f470de88e6
+ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084311"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42959183"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Criteri consigliati per la protezione della posta elettronica
 
@@ -38,12 +38,12 @@ Nel diagramma seguente vengono illustrati i criteri comuni di identità e access
 
 Se è stato incluso Exchange Online e Outlook nell'ambito dei criteri quando vengono configurati, è necessario creare solo il nuovo criterio per bloccare i client ActiveSync. Esaminare i criteri elencati nella tabella seguente e apportare le aggiunte consigliate o confermare che sono già inclusi. Ogni regola collega le istruzioni di configurazione associate nell'articolo [Common Identity and Device Access Policies](identity-access-policies.md) .
 
-|Livello di protezione|Generali|Altre informazioni|
+|Livello di protezione|Generali|Ulteriori informazioni|
 |:---------------|:-------|:----------------|
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere Exchange Online nell'assegnazione delle app Cloud|
 |        |[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere Exchange Online nell'assegnazione delle app Cloud|
 |        |[Definire i criteri di protezione delle app](identity-access-policies.md#high-risk-users-must-change-password)|Assicurarsi che Outlook sia incluso nell'elenco delle app. Assicurarsi di aggiornare i criteri per ogni piattaforma (iOS, Android, Windows)|
-|        |[Richiedere applicazioni approvate](identity-access-policies.md#require-approved-apps)|Includere Exchange Online nell'elenco delle app Cloud|
+|        |[Richiedere le app che supportano i criteri di protezione delle app di Intune](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|Includere Exchange Online nell'elenco delle app Cloud|
 |        |[Richiedere computer conformi](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere Exchange Online nell'elenco delle app Cloud|
 |        |[Bloccare i client ActiveSync](#block-activesync-clients)|Aggiungere il nuovo criterio| 
 |**Dati sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| Includere Exchange Online nell'assegnazione delle app Cloud|
@@ -52,31 +52,9 @@ Se è stato incluso Exchange Online e Outlook nell'ambito dei criteri quando ven
 
 ## <a name="block-activesync-clients"></a>Bloccare i client ActiveSync
 
-Questo criterio impedisce ai client ActiveSync di ignorare altre regole di accesso condizionale. La configurazione della regola si applica solo ai client ActiveSync. Selezionando **Richiedi applicazione client approvata**, questo criterio blocca i client ActiveSync. Per configurare questo criterio:
+Questo criterio impedisce ai client ActiveSync di ignorare altre regole di accesso condizionale. La configurazione della regola si applica solo ai client ActiveSync. Selezionando **[Richiedi criteri di protezione delle app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)**, questo criterio blocca i client ActiveSync. I dettagli sulla creazione di questo criterio sono disponibili in [Richiedi criteri di protezione delle app per l'accesso alle app cloud con accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
-1. Andare nel [portale di Azure](https://portal.azure.com) e accedere con le proprie credenziali. Dopo aver eseguito l'accesso, è possibile visualizzare il dashboard di Azure.
-
-2. Scegliere **Azure Active Directory** dal menu a sinistra.
-
-3. Nella sezione **Sicurezza** scegliere **Accesso condizionale**.
-
-4. Scegliere **Nuovo criterio**.
-
-5. Immettere un nome per i criteri, quindi in **Utenti e gruppi** scegliere gli utenti e i gruppi ai quali applicare i criteri.
-
-6. Scegliere **App cloud**.
-
-7. Scegliere **Seleziona app**, quindi **Office 365 Exchange Online**. Scegliere **Seleziona** e **Chiudi**.
-
-8. Scegliere **le condizioni**, quindi fare clic su **app client**.
-
-9. Per la **configurazione**, selezionare **Sì**. Controllare solo gli elementi seguenti: **app per dispositivi mobili e client desktop** e **client Exchange ActiveSync**. Scegliere **Done**.
-
-10. Scegliere **Concedi** nella sezione **Controlli di accesso**.
-
-11. Scegliere **Concedi accesso**, selezionare **Richiedi applicazione client approvata**.  Per più controlli, selezionare **Richiedi i controlli selezionati**, quindi scegliere **Seleziona**.
-
-12. 	Selezionare **Crea**.
+1. Seguire "passaggio 2: configurare un criterio di accesso condizionale di Azure AD per Exchange Online con ActiveSync (EAS)" nello [scenario 1: le app di Office 365 richiedono applicazioni approvate con i criteri di protezione delle app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), che impediscono ai client di Exchange ActiveSync di sfruttare l'autenticazione di base dalla connessione a Exchange Online.
 
 ## <a name="setup-office-365-message-encryption"></a>Configurazione della crittografia dei messaggi di Office 365
 

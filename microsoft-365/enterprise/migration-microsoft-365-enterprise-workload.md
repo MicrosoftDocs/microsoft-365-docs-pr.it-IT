@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Procedura per la migrazione delle versioni di Microsoft Office, Office Server e Windows a Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: 06cacbb45a98bb62f53866b0d2ab7ba393e609a0
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3a501ec7919972e5b8b289bbddb3bf7e6ae9a8f0
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633244"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952019"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migrazione a Microsoft 365 Enterprise
 
@@ -157,7 +157,7 @@ Per un riepilogo visivo delle opzioni di aggiornamento, migrazione e passaggio a
 
 Questo poster di una pagina rappresenta un modo rapido per comprendere i vari percorsi che è possibile eseguire per evitare che i prodotti client e server di Office 2010 e Windows 7 raggiungano la fine del supporto, evidenziando i percorsi preferiti e il supporto delle opzioni in Microsoft 365 Enterprise.
 
-È possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+È possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Come Microsoft esegue Microsoft 365 Enterprise
 
@@ -177,7 +177,7 @@ Per avere un quadro più completo su come spostare l'intera organizzazione ai pr
 
 Questo poster con due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e accedere alle indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 Enterprise. Include i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
 
-È possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+È possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="result"></a>Risultato
 

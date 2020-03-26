@@ -16,12 +16,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Creare un sito del team di SharePoint sicuro in cui archiviare i file più importanti e sensibili.
-ms.openlocfilehash: c74a2bc59a6ef9d16ecd0dfbed06d577bd98649b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bc1a84fa7437d9b2979e10b352f8a422c457e8a0
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085061"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951983"
 ---
 # <a name="sharepoint-sites-for-highly-regulated-data"></a>Siti di SharePoint per dati altamente regolamentati
 
@@ -75,7 +75,7 @@ Le fasi seguenti illustrano come progettare, configurare e facilitare l'adozione
 
 [![Poster Siti di SharePoint per dati altamente regolamentati](../media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
-È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) o [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 
 ## <a name="identity-and-device-access-prerequisites"></a>Prerequisiti di identità e accesso dei dispositivi

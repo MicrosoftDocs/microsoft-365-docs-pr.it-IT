@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Informazioni su cosa succede ai dati quando la sottoscrizione di Office 365 per le aziende scade, è disabilitata o se si Annulla.
-ms.openlocfilehash: 717beff94255fe669f9ce9bc733300679ffc3d53
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2529d5027305a9ceaf71033b4de52a867b9fa9fb
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257675"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955674"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>Che cosa succede ai dati personali al termine dell'abbonamento a Office 365?
 
@@ -44,7 +44,7 @@ Nella tabella seguente vengono illustrate le operazioni che è possibile prevede
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Dati accessibili a tutti*                                               | *Dati accessibili a tutti*                                                     | *Dati accessibili solo agli amministratori*                                             | **Data eliminazione<br/>di Azure Active Directory viene rimossa, se non utilizzata da altri servizi** |
 | Gli utenti hanno accesso normale a Office 365, dati e applicazioni di Office  | Gli utenti hanno accesso normale a Office 365, file e applicazioni              | Gli utenti non possono accedere a Office 365, file o applicazioni                        | Gli utenti non possono accedere a Office 365, file o applicazioni                                     |
-| Gli amministratori hanno accesso normale a Office 365, dati e applicazioni di Office | Gli amministratori possono accedere all'interfaccia di amministrazione                                           | Gli amministratori possono accedere all'interfaccia di amministrazione, ma non possono assegnare licenze agli utenti       | Gli amministratori possono accedere all'interfaccia di amministrazione per acquistare e gestire altri abbonamenti             |
+| Gli amministratori hanno accesso normale a Office 365, dati e applicazioni di Office | Gli amministratori possono accedere all'interfaccia di amministrazione, ma non possono assegnare licenze agli utenti   | Gli amministratori possono accedere all'interfaccia di amministrazione, ma non possono assegnare licenze agli utenti       | Gli amministratori possono accedere all'interfaccia di amministrazione per acquistare e gestire altri abbonamenti             |
 |                                                                        | Gli amministratori globali o di fatturazione possono riattivare la sottoscrizione nell'interfaccia di amministrazione | Gli amministratori globali o di fatturazione possono riattivare la sottoscrizione nell'interfaccia di amministrazione |                                                                                           |
 
 * Per la maggior parte delle offerte, nella maggior parte dei paesi e aree geografiche.
@@ -66,7 +66,7 @@ Prima che l'abbonamento raggiunga effettivamente la data di scadenza, è possibi
 
   - Se si è acquistato Office 365 business con una scheda prepagata, è possibile [abilitare la fatturazione ricorrente](renew-your-subscription.md) per l'abbonamento.
 
-  - Se si è un cliente con contratti multilicenza aperti con un abbonamento a un anno prepagato, contattare il partner per acquistare un nuovo codice Product Key. Si riceveranno istruzioni tramite posta elettronica per attivare il codice nel [Centro servizi per contratti multilicenza](https://go.microsoft.com/fwlink/p/?LinkID=282016). Per informazioni su come trovare un nuovo partner o il partner con cui si è lavorato in passato, vedere [Trovare il partner o rivenditore di Office 365](../../admin/manage/find-your-partner-or-reseller.md).
+  - Se si è un cliente con contratti multilicenza aperti con un abbonamento a un anno prepagato, contattare il partner per acquistare un nuovo codice Product Key. Si riceveranno istruzioni tramite posta elettronica per attivare il codice nel [Centro servizi per contratti multilicenza](https://go.microsoft.com/fwlink/p/?LinkID=282016). Per informazioni su come trovare un nuovo partner o il partner con cui hai lavorato in passato, consulta [trovare il partner o il rivenditore](../../admin/manage/find-your-partner-or-reseller.md).
 
   - Se si dispone di Office 365 business, vedere [gestire la fatturazione ricorrente per l'abbonamento](renew-your-subscription.md).
 
@@ -90,9 +90,9 @@ Prima che l'abbonamento raggiunga effettivamente la data di scadenza, è possibi
 
   - Se si è acquistato Office 365 business con una scheda prepagata, è possibile [abilitare la fatturazione ricorrente](renew-your-subscription.md) per l'abbonamento.
 
-  - Se si è un cliente con contratti multilicenza aperti con un abbonamento a un anno prepagato, contattare il partner per acquistare un nuovo codice Product Key. Si riceveranno istruzioni tramite posta elettronica per attivare il codice nel [Centro servizi per contratti multilicenza](https://go.microsoft.com/fwlink/p/?LinkID=282016). Per informazioni su come trovare un nuovo partner o il partner con cui si è lavorato in passato, vedere [Trovare il partner o rivenditore di Office 365](../../admin/manage/find-your-partner-or-reseller.md).
+  - Se si è un cliente con contratti multilicenza aperti con un abbonamento a un anno prepagato, contattare il partner per acquistare un nuovo codice Product Key. Si riceveranno istruzioni tramite posta elettronica per attivare il codice nel [Centro servizi per contratti multilicenza](https://go.microsoft.com/fwlink/p/?LinkID=282016). Per informazioni su come trovare un nuovo partner o il partner con cui hai lavorato in passato, consulta [trovare il partner o il rivenditore](../../admin/manage/find-your-partner-or-reseller.md).
 
-  - Se si ha Office 365 Business, vedere [Rinnovare Office 365 per le aziende](renew-your-subscription.md).
+  - Se si dispone di Office 365 business, vedere [rinnovare l'abbonamento](renew-your-subscription.md).
 
 - **Lasciar scadere l'abbonamento.**
 
@@ -143,7 +143,7 @@ Ecco cosa aspettarsi in ogni stato dell'abbonamento.
 
 In questo stato, gli utenti hanno accesso normale al portale di Office 365, alle applicazioni di Office e ai servizi come la posta elettronica e SharePoint Online.
   
-In qualità di amministratore, è comunque possibile accedere all'interfaccia di amministrazione. Non si preoccupi: gli amministratori globali o di fatturazione possono [riattivare l'abbonamento](reactivate-your-subscription.md) e continuare a usare Office 365. Se si sceglie di non riattivare il prodotto, assicurarsi di [eseguire il backup dei dati](back-up-data-before-switching-plans.md).
+In qualità di amministratore, è comunque possibile accedere all'interfaccia di amministrazione, ma non è possibile assegnare licenze agli utenti. Gli amministratori globali o di fatturazione possono [riattivare l'abbonamento](reactivate-your-subscription.md) e continuare a usare Office 365. Se si sceglie di non riattivare il prodotto, assicurarsi di [eseguire il backup dei dati](back-up-data-before-switching-plans.md).
   
 ### <a name="state-disabled"></a>Stato: disabilitato
   

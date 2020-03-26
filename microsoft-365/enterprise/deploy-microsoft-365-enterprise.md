@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le risorse a disposizione per la distribuzione nell'organizzazione di Microsoft 365 per le aziende.
-ms.openlocfilehash: e4660ff6e7fc9646b2e28181afff4df2811acdd1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9ea96af7cef0e497e8f7560ef87239828789b117
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067959"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951935"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Distribuire Microsoft 365 per le aziende
 
@@ -95,7 +95,7 @@ Per avere un quadro più completo su come spostare l'intera organizzazione ai pr
 
 Questo poster a due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e ottenere le indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 per le aziende. Include i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
 
-Si può anche [scaricare il poster sulla transizione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+Si può anche [scaricare il poster sulla transizione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="how-did-others-do-it"></a>Come hanno fatto altri utenti?
 

@@ -593,6 +593,6 @@
         - name: Office 365 Enterprise
           href: 'https://docs.microsoft.com/office-365-security/Enterprise'
         - name: Office 365 per le aziende
-          href: 'https://docs.microsoft.com/office-365-security/admin/admin-home'
+          href: 'https://docs.microsoft.com/microsoft-365/admin/admin-home'
     - name: Conformità di Microsoft 365
       href: 'https://docs.microsoft.com/microsoft-365/compliance/'

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2f3808f599caa4ed347fc182005397c14b9f51b2
-ms.sourcegitcommit: 133bf7936e5ef1a4d06998429d0d01096bda929f
+ms.openlocfilehash: 90651aa258adb9f7fe46f99bcadf1d4d552a5b76
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42262003"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955662"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Gestire i falsi positivi/negativi nelle funzionalità di analisi e risposta automatizzate
 
@@ -58,7 +58,7 @@ Utilizzare questo articolo come guida.
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Annullare un'azione di correzione eseguita su un dispositivo
 
-Se è stata eseguita un'azione di correzione su un dispositivo, ad esempio un dispositivo Windows 10, e l'elemento è effettivamente pulito, il team delle operazioni di sicurezza può annullare l'azione di correzione nell' [Action Center](mtp-action-center.md).
+Se è stata eseguita un'azione di correzione su un dispositivo, ad esempio un dispositivo Windows 10, e l'elemento non è effettivamente una minaccia, il team delle operazioni di sicurezza può annullare l'azione di correzione nell' [Action Center](mtp-action-center.md).
 
 > [!IMPORTANT]
 > Verificare di disporre delle [autorizzazioni necessarie](mtp-action-center.md#required-permissions-for-action-center-tasks) prima di tentare di eseguire l'attività seguente.

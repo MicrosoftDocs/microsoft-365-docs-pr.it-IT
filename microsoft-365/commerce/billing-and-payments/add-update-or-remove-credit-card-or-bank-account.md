@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Informazioni su come gestire i metodi di pagamento nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 49f1c0847ef53bea9a16a6aedb20f7d3a96d6e2c
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409701"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952007"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Aggiungere, aggiornare o rimuovere i metodi di pagamento
 
@@ -158,9 +158,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 È necessario essere un amministratore globale o un amministratore fatturazione per eseguire le attività descritte in questo articolo.
   
  **Se non si è un amministratore** Contattare l'amministratore IT per ottenere assistenza. [Chi ha le autorizzazioni di amministratore nella mia azienda?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
-  
- **Per Office 365 Home o Personal**, vedere [modificare il metodo di pagamento o la carta di credito collegata al proprio account Microsoft](https://support.microsoft.com/help/4026594).
-  
+
 > [!NOTE]
 > La possibilità di pagare con un conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
 >
@@ -168,7 +166,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 
 ## <a name="add-a-credit-card-or-bank-account"></a>Aggiungere una carta di credito o un conto corrente bancario
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Scegliere l'abbonamento che si vuole pagare con la nuova carta di credito o il conto corrente bancario, quindi selezionare **Aggiorna dettagli pagamento**.
 
@@ -181,7 +179,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 4. Immettere le informazioni per la nuova carta di credito o il conto corrente bancario, quindi selezionare **Invia**.
 
     > [!NOTE]
-    > La nuova carta di credito o il conto corrente bancario verrà utilizzato solo per l'abbonamento a Office 365 scelto nel passaggio 2. Se si intende usare la nuova carta di credito o il nuovo conto corrente bancario anche per altri abbonamenti, seguire i passaggi di questo articolo per modificare la carta o il conto usato per pagare ogni abbonamento.
+    > La nuova carta di credito o il conto corrente bancario verrà utilizzato solo per l'abbonamento scelto nel passaggio 2. Se si intende usare la nuova carta di credito o il nuovo conto corrente bancario anche per altri abbonamenti, seguire i passaggi di questo articolo per modificare la carta o il conto usato per pagare ogni abbonamento.
 
 ::: moniker-end
 
@@ -192,14 +190,12 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
   
  **Per utenti non amministratori:** Contattare l'amministratore per assistenza. [Chi ha le autorizzazioni di amministratore nella mia attività?](../../admin/admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business).
   
- **Per Office 365 Home o Personal**, vedere [modificare il metodo di pagamento o la carta di credito collegata al proprio account Microsoft](https://support.microsoft.com/help/4026594).
-  
 > [!NOTE]
 > La possibilità di pagare con un conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
 >
 > È necessario utilizzare una carta di credito emessa dallo stesso paese del tenant.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Scegliere l'abbonamento che si vuole pagare con la nuova carta di credito o il conto corrente bancario, quindi selezionare **Aggiorna dettagli pagamento**.
 
@@ -212,7 +208,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 4. Immettere le informazioni per la nuova carta di credito o il conto corrente bancario, quindi selezionare **Invia**.
 
     > [!NOTE]
-    > La nuova carta di credito o il conto corrente bancario verrà utilizzato solo per l'abbonamento a Office 365 scelto nel passaggio 2. Se si intende usare la nuova carta di credito o il nuovo conto corrente bancario anche per altri abbonamenti, seguire i passaggi di questo articolo per modificare la carta o il conto usato per pagare ogni abbonamento.
+    > La nuova carta di credito o il conto corrente bancario verrà utilizzato solo per l'abbonamento scelto nel passaggio 2. Se si intende usare la nuova carta di credito o il nuovo conto corrente bancario anche per altri abbonamenti, seguire i passaggi di questo articolo per modificare la carta o il conto usato per pagare ogni abbonamento.
 
 ::: moniker-end
 
@@ -223,7 +219,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 > Non è possibile cambiare il numero riportato su una carta di credito o un conto corrente bancario esistente. Se la carta di credito o il numero di conto corrente bancario è stato modificato, aggiungerlo come nuova carta di credito o conto corrente bancario. Successivamente, selezionarlo come opzione di pagamento per l'abbonamento, quindi rimuovere la carta di credito o il conto corrente bancario esistente.
 > È necessario utilizzare una carta di credito emessa dallo stesso paese del tenant.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Scegliere l'abbonamento acquistato con il conto corrente bancario della carta di credito che si desidera aggiornare, quindi selezionare **Aggiorna dettagli pagamento**.
 
@@ -251,7 +247,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 > Non è possibile cambiare il numero riportato su una carta di credito o un conto corrente bancario esistente. Se la carta di credito o il numero di conto corrente bancario è stato modificato, aggiungerlo come nuova carta di credito o conto corrente bancario. Successivamente, selezionarlo come opzione di pagamento per l'abbonamento, quindi rimuovere la carta di credito o il conto corrente bancario esistente.
 > È necessario utilizzare una carta di credito emessa dallo stesso paese del tenant.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Scegliere l'abbonamento acquistato con il conto corrente bancario della carta di credito che si desidera aggiornare, quindi selezionare **Aggiorna dettagli pagamento**.
 
@@ -275,7 +271,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 ::: moniker range="o365-21vianet"
 ## <a name="remove-a-credit-card-or-bank-account"></a>Rimuovere una carta di credito o un conto corrente bancario
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Scegliere qualsiasi sottoscrizione, quindi selezionare **Aggiorna dettagli pagamento**.
 
@@ -300,7 +296,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 ::: moniker range="o365-germany"
 ## <a name="remove-a-credit-card-or-bank-account"></a>Rimuovere una carta di credito o un conto corrente bancario
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Scegliere qualsiasi sottoscrizione, quindi selezionare **Aggiorna dettagli pagamento**.
 
@@ -325,7 +321,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 ::: moniker range="o365-21vianet"
 ## <a name="change-the-credit-card-or-bank-account-used-to-pay-for-a-subscription"></a>Modificare la carta di credito o il conto corrente bancario utilizzato per pagare un abbonamento
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Scegliere l'abbonamento che si desidera pagare con la nuova carta di credito o il conto corrente bancario, quindi selezionare **Aggiorna dettagli pagamento**.
 
@@ -342,7 +338,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
 ::: moniker range="o365-germany"
 ## <a name="change-the-credit-card-or-bank-account-used-to-pay-for-a-subscription"></a>Modificare la carta di credito o il conto corrente bancario utilizzato per pagare un abbonamento
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Scegliere l'abbonamento che si desidera pagare con la nuova carta di credito o il conto corrente bancario, quindi selezionare **Aggiorna dettagli pagamento**.
 

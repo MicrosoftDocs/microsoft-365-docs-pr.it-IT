@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 per Enterprise.
-ms.openlocfilehash: 035c7bc2086b4f70dacc31c3489a4a8adc8fb3dd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 01c5eac2c1ad90bfaa189c26fa4997a1bd2fc10e
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633304"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951995"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
@@ -69,7 +69,7 @@ Il [poster di Microsoft 365 per Enterprise](../media/m365-poster/Microsoft365Ent
 
 [![Immagine per il poster di Microsoft 365 per aziende](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
-Per scaricare una copia del poster, fare clic [qui](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/m365-poster/Microsoft365Enterprise.pdf).
+Per scaricare una copia del poster, fare clic [qui](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
 ## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
@@ -80,7 +80,7 @@ Per ottenere un'immagine migliore di come spostare l'intera organizzazione ai pr
 
 Questo poster a due pagine rappresenta un modo rapido per inventariare l'infrastruttura esistente e ottenere le indicazioni per passare al prodotto o al servizio corrispondente in Microsoft 365 per le aziende. Include i prodotti Windows e Office e altri elementi di infrastruttura e sicurezza, come la gestione dei dispositivi, l'identità e le informazioni e la protezione dalle minacce.
 
-È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Evitare la fine del supporto per i client e i server Windows 7 e Office 2010
 
@@ -100,7 +100,7 @@ Per un riepilogo visivo delle opzioni di aggiornamento, migrazione e passaggio a
 
 Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi che è possibile eseguire per impedire che i prodotti client e server di Windows 7 e Office 2010 raggiungano la fine del supporto, con percorsi e supporto preferiti in Microsoft 365 per Enterprise evidenziati.
 
-È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
 ## <a name="deploy"></a>Distribuzione
 

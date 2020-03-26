@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere le fasi principali della distribuzione dell'infrastruttura di base per Microsoft 365 per le aziende all'interno dell'organizzazione, nota anche come la distribuzione di base.
-ms.openlocfilehash: 26f95b9e7fb951910b983defb8b80162f39c37a2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 966fa8ad26d54328bf4d2e95c95b497e5d283e52
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633614"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951959"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Infrastruttura di base di Microsoft 365 per le aziende
 
@@ -73,7 +73,7 @@ Il [poster Infrastruttura di base di Microsoft 365 per le aziende](../media/depl
 
 [![Immagine per il poster dell'infrastruttura di base di Microsoft 365 per le aziende](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
-Per scaricare una copia del poster, fare clic [qui](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
+Per scaricare una copia del poster, fare clic [qui](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 
 
 ## <a name="infrastructure-configuration-vs-user-rollout"></a>Configurazione dell'infrastruttura vs. implementazione dell’utente

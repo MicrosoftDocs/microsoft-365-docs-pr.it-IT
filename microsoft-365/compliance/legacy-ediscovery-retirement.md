@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Office 365 Advanced eDiscovery v 1.0 vengono anche ritirati entro lo stesso periodo di tempo.
-ms.openlocfilehash: a3e19580def43c894e13c58eeaa28af498ad1399
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894853"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955545"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Pensionamento degli strumenti di eDiscovery legacy
 
@@ -135,7 +135,13 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <p>
 <p>In alternativa, è possibile esportare i risultati della ricerca in file PST e quindi utilizzare il servizio Microsoft 365 Import per importare il PST in una cassetta postale di individuazione. Per istruzioni dettagliate, vedere <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">usare il caricamento di rete per importare i file PST in Office 365</a>.
 </tr>
-<tr class="even">
+<tr class=even>
+  <td>Copiare i messaggi da una cassetta postale a una cassetta postale diversa</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Assegnare le autorizzazioni a una cassetta postale</a></td>
+  <td>Per concedere l'accesso alla posta elettronica di un altro utente (ad esempio, quando un dipendente lascia l'organizzazione ed è necessario consentire a un'altra persona di accedere alla posta elettronica dell'ex dipendente), si consiglia di assegnare le autorizzazioni per l'accesso all'ex dipendente. cassetta postale. Pertanto, invece di copiare gli elementi delle cassette postali in un'altra cassetta postale utente o in una cassetta postale condivisa, è sufficiente assegnare un utente per accedere alla cassetta postale di origine.</td>
+  
+  </tr>
+<tr class="odd">
 <td>Ripristinare gli elementi dalla cartella elementi ripristinabili</td>
   <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
   <td>È possibile ripristinare gli elementi eliminati in modo definitivo (noti anche come elementi <i>eliminati temporaneamente</i> ) nelle cassette postali, purché il periodo di conservazione degli elementi eliminati per un elemento non sia scaduto. Per ulteriori informazioni, vedere <a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">cartella elementi ripristinabili in Exchange Online</a>.</td>
@@ -216,6 +222,13 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <td>Nessuno</td>
 <td>Non è disponibile una sostituzione diretta per questa funzionalità poiché non fornisce l'accesso a tutti i servizi di Microsoft 365. Vedere le domande frequenti seguenti per soluzioni alternative.</td>
 </tr>
+  <tr class=even>
+  <td>Copiare i messaggi da una cassetta postale a una cassetta postale diversa</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Assegnare le autorizzazioni a una cassetta postale</a></td>
+  <td>Per concedere l'accesso alla posta elettronica di un altro utente (ad esempio, quando un dipendente lascia l'organizzazione ed è necessario consentire a un'altra persona di accedere alla posta elettronica dell'ex dipendente), si consiglia di assegnare le autorizzazioni per l'accesso all'ex dipendente. cassetta postale. Pertanto, invece di copiare gli elementi delle cassette postali in un'altra cassetta postale utente o in una cassetta postale condivisa, è sufficiente assegnare un utente per accedere alla cassetta postale di origine.</td>
+  
+  </tr>
+
 </tbody>
 </table>
 

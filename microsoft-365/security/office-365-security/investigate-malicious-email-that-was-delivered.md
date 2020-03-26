@@ -3,8 +3,8 @@ title: Individuare e studiare messaggi di posta elettronica dannosi che sono sta
 keywords: TIMailData-inline, incidenti di sicurezza, incidenti, ATP PowerShell, malware per la posta elettronica, utenti compromessi, phishing di posta elettronica, malware per la posta elettronica, lettura intestazioni e-mail, leggere intestazioni, aprire intestazioni di posta elettronica
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
-ms.openlocfilehash: 178bdbfd97bea654959cf71da560a80e686a5fde
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 1b7cef7f079023dd88fe3f04eb1b7d159c4157ef
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632917"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955616"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Esaminare e correggere i messaggi di posta elettronica dannosi recapitati in Office 365
 

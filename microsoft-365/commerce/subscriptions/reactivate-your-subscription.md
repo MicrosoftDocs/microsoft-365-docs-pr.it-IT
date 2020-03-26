@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
-description: Informazioni su come riattivare l'abbonamento a Office 365 alla scadenza o se Microsoft la disattiva o se viene annullata al centro.
-ms.openlocfilehash: 4bd5a0b9c8013117b07c69ad222447bdfd56af3a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Informazioni su come riattivare l'abbonamento alla scadenza o se Microsoft la disattiva o se viene annullata al centro.
+ms.openlocfilehash: 6126c9ccc05a1ee0927f928b045bd1c383479893
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354607"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952043"
 ---
 # <a name="reactivate-your-subscription"></a>Riattivare l'abbonamento
 
@@ -63,7 +63,7 @@ Se l'abbonamento scade oppure è stato disabilitato da Microsoft o se è stato a
 
 ::: moniker range="o365-germany"
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Individuare la sottoscrizione che si desidera riattivare, quindi selezionare **riattiva**.
 
@@ -84,7 +84,7 @@ Se l'abbonamento scade oppure è stato disabilitato da Microsoft o se è stato a
 
 ::: moniker range="o365-21vianet"
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Individuare la sottoscrizione che si desidera riattivare, quindi selezionare **riattiva**.
 

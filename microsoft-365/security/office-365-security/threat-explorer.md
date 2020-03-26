@@ -2,8 +2,8 @@
 title: Esplora minacce e rilevamenti in tempo reale, nuovi in Esplora minacce, modifiche a Threat Explorer, nuove a Office 365, sicurezza, sicurezza cloud, novità per la sicurezza in ATP, nuove funzionalità ATP
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informazioni sui rilevamenti di Esplora risorse e in tempo reale &amp; nel centro sicurezza e conformità.
-ms.openlocfilehash: 3ddcaf4dc457ead7a203e00d71d0d18c23ee6557
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 47dd871a385613c08ad5b4c02a7be8701e4b93a8
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082134"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955604"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -94,13 +94,13 @@ Per ulteriori informazioni sull'analisi dei messaggi di posta elettronica dannos
 
 Sarà inoltre possibile esportare i report per i clic URL in Microsoft Excel per visualizzare sia l'ID del messaggio di rete, sia il loro verdetto di clic, in cui è possibile capire dove è stato creato il traffico dell'URL. Ecco come funziona. A partire da Threat Management sulla barra di avvio veloce di Office 365, fare clic su questa catena:
 
-**Esplora** > **visualizzazione phishing** > ******** > URL principali o clic**su URL in alto fare clic su qualsiasi record per aprire il riquadro a comparsa URL**  > 
+**Esplora** > **visualizzazione phishing** > **Clicks****Top URLs or URL Top Clicks** > URL principali o clic**su URL in alto fare clic su qualsiasi record per aprire il riquadro a comparsa URL**  > 
 
 Quando si fa clic su un URL nell'elenco, verrà visualizzato un nuovo pulsante Esporta nel riquadro di volo. Utilizzare questo pulsante per spostare i dati in un foglio di calcolo di Excel per semplificare la creazione di report.
 
 È possibile accedere allo stesso percorso nel rapporto rilevamenti in tempo reale, come indicato di seguito:
 
-**** > **Rilevamenti** > in tempo reale di Explorer visualizzare gli URL principali di**phishing** > **** > **e** > **fare clic su tutti i record per aprire il riquadro a comparsa** > URL**passare alla scheda clic.**
+**Explorer** > **Rilevamenti** > in tempo reale di Explorer visualizzare gli URL principali di**phishing** > **URLs** > **e** > **fare clic su tutti i record per aprire il riquadro a comparsa** > URL**passare alla scheda clic.**
 
 > [!TIP]
 > ID messaggio di rete mappare il clic di nuovo su mail specifiche quando si esegue una ricerca tramite Explorer o gli strumenti di terze parti associati tramite ID messaggio di rete. La ricerca nell'ID messaggio di rete fornirà agli amministratori la posta elettronica specifica associata a un risultato di clic. In caso di esportazione, l'identificazione correlata dell'ID messaggio di rete rende l'analisi più rapida e potente.
@@ -111,7 +111,7 @@ Quando si fa clic su un URL nell'elenco, verrà visualizzato un nuovo pulsante E
 
 Si supponga di voler vedere il malware rilevato nella posta elettronica, tramite la tecnologia Office 365. A tale scopo, utilizzare la visualizzazione [posta elettronica > malware](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**** In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**Explorer** In questo esempio viene utilizzato Esplora.
 
 2. Scegliere**malware** **tramite posta elettronica** > dal menu **Visualizza** .<br/>![Menu Visualizza per Esplora risorse](../../media/ExplorerViewEmailMalwareMenu.png)<br/>
 
@@ -127,7 +127,7 @@ Si supponga di voler visualizzare i tentativi di phishing tramite URL nella post
 
 Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi di phishing, utilizzare la visualizzazione di [posta elettronica > phishing](threat-explorer-views.md#email--phish) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**** In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**Explorer** In questo esempio viene utilizzato Esplora.
 
 2. Nel menu **Visualizza** scegliere **posta elettronica** > **phishing**.<br/>![Menu Visualizza per Esplora risorse](../../media/ExplorerViewEmailPhishMenu.png)<br/>
 
@@ -139,7 +139,7 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
 
    - Gli URL **principali** sono gli URL contenuti nei messaggi che sono stati filtrati fino a e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione posta elettronica di phishing, in genere l'elenco conterrà URL legittimi. I pirati informatici includono una combinazione di URL buoni e cattivi nei messaggi per cercare di farli recapitare, ma renderà i collegamenti dannosi più interessanti per l'utente da fare clic su. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica (Nota: questa colonna non viene visualizzata per semplificare la visualizzazione).
 
-   - I **clic principali** sono gli URL con collegamenti sicuri che sono stati selezionati, ordinati in base al numero di clic totale (la colonna non viene visualizzata per semplificare la visualizzazione). Numeri totali per colonna indicano i collegamenti sicuri fare clic su conteggio verdetto per ogni URL selezionato. Nella visualizzazione posta elettronica di phishing, questi sono più spesso URL sospetti o dannosi, ma possono includere URL puliti presenti nei messaggi di phishing. Gli URL che fanno clic su collegamenti non spostati non verranno visualizzati qui.
+   - I **clic principali** sono gli URL con collegamenti sicuri che sono stati selezionati, ordinati in base al numero di clic totale (la colonna non viene visualizzata per semplificare la visualizzazione). Numeri totali per colonna indicano i collegamenti sicuri fare clic su conteggio verdetto per ogni URL selezionato. Nella visualizzazione posta elettronica di phishing, si tratta di URL più spesso sospetti o maligni, ma possono includere URL che non sono minacce, ma che sono presenti nei messaggi di phishing. Gli URL che fanno clic su collegamenti non spostati non verranno visualizzati qui.
    
    Le due tabelle degli URL visualizzano gli URL principali nei messaggi di posta elettronica di phishing tramite l'azione e la posizione di recapito e visualizzano gli URL che sono stati bloccati (o visitati nonostante un avviso), in modo da poter capire quali potenziali collegamenti non validi sono stati ricevuti dagli utenti e interagito con gli utenti. Da qui, è possibile eseguire un'ulteriore analisi. Ad esempio, al di sotto del grafico, è possibile visualizzare gli URL principali nei messaggi di posta elettronica bloccati nell'ambiente dell'organizzazione.
    
@@ -151,9 +151,9 @@ Per esaminare gli URL di phishing nei messaggi e fare clic su URL nei messaggi d
 
 Si supponga di voler visualizzare i messaggi di posta elettronica che gli utenti dell'organizzazione hanno segnalato come posta indesiderata, non indesiderata o phishing tramite il [componente aggiuntivo per Outlook e Outlook sul Web](enable-the-report-message-add-in.md). A tale scopo, utilizzare la visualizzazione [> invii di posta elettronica](threat-explorer-views.md#email--submissions) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**** In questo esempio viene utilizzato Esplora.
+1. Nel centro sicurezza &[https://protection.office.com](https://protection.office.com)conformità (), scegliere **gestione** > minacce (o **rilevamenti in tempo reale**).**Explorer** In questo esempio viene utilizzato Esplora.
 
-2. Scegliere **invii di posta elettronica** > **** dal menu **Visualizza** .<br/>![Menu Visualizza per Esplora risorse](../../media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. Scegliere **invii di posta elettronica** > **Submissions**dal menu **Visualizza** .<br/>![Menu Visualizza per Esplora risorse](../../media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Fare clic su **mittente**e quindi scegliere**tipo di report**di **base** > .
 
@@ -205,4 +205,4 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Alcune differenze tra Esplora minacce e rilevamenti in tempo reale
 
  - Il rapporto sui **rilevamenti in tempo reale** è disponibile in Office 365 ATP Plan 1, mentre l' **esploratore di minacce** è disponibile in Office 365 ATP piano 2.
- - Il rapporto sui **rilevamenti in tempo reale** consente di visualizzare i rilevamenti in tempo reale. **** Anche questo consente di visualizzare ulteriori dettagli relativi a un determinato attacco.
+ - Il rapporto sui **rilevamenti in tempo reale** consente di visualizzare i rilevamenti in tempo reale. **Threat Explorer** Anche questo consente di visualizzare ulteriori dettagli relativi a un determinato attacco.

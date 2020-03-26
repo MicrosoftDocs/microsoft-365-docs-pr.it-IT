@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 76a4fe678ce0106c7345dd3bdf504673733b63b6
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: ca0c557de24320692d903a1136fc434d635f0507
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266052"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955592"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Azioni di correzione che seguono indagini automatizzate in Microsoft Threat Protection
 
@@ -43,16 +43,16 @@ Nella tabella seguente sono riepilogate le azioni di correzione attualmente supp
 
 Le azioni di correzione, sia che siano in attesa di approvazione o che sono già complete, possono essere visualizzate nel [Centro azioni](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center).
 
-## <a name="verdicts-and-outcomes-following-automated-investigations"></a>Verdetti e risultati in seguito a indagini automatizzate
+## <a name="remediation-actions-follow-automated-investigations"></a>Le azioni correttive seguono indagini automatizzate
 
 Una volta completata un'indagine automatizzata, viene emesso un verdetto per ogni prova inclusa e vengono identificate le azioni correttive. In alcuni casi, le azioni correttive vengono eseguite automaticamente; in altri casi, invece, è necessario approvarle. Nella tabella seguente sono elencati i possibili verdetti e i risultati:
 
-|Verdetto    |Area   |Risultati|
+|Verdetto    |Area    |Risultati|
 |------|------|------|
-|Dannosa  |Dispositivi (endpoint)    |Le azioni correttive vengono eseguite automaticamente|
-|Dannosa  |Contenuto della posta elettronica (URL o allegati) | Le azioni correttive consigliate sono in attesa di approvazione|
-|Sospetta |Dispositivi o contenuto della posta elettronica |Le azioni correttive consigliate sono in attesa di approvazione|
-|Pulita  |Dispositivi o contenuto della posta elettronica   |Non sono necessarie azioni correttive|
+|Dannosa    |Dispositivi (endpoint)    |Le azioni correttive vengono eseguite automaticamente|
+|Dannosa    |Contenuto della posta elettronica (URL o allegati) | Le azioni correttive consigliate sono in attesa di approvazione|
+|Sospetta    |Dispositivi o contenuto della posta elettronica |Le azioni correttive consigliate sono in attesa di approvazione|
+|Non sono state trovate minacce    |Dispositivi o contenuto della posta elettronica    |Non sono necessarie azioni correttive|
 
 [Rivedere un'azione in sospeso nel centro notifiche](mtp-autoir-actions.md#review-a-pending-action-in-the-action-center)
 
