@@ -123,7 +123,7 @@
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
             - name: Funzionamento della prevenzione della perdita dei dati tra il Centro sicurezza e conformità e l'interfaccia di amministrazione di Exchange
               href: how-dlp-works-between-admin-centers.md
-    - name: Tipi di informazioni riservate
+    - name: Tipi di informazioni sensibili
       items:
         - name: Elementi cercati dai tipi di informazioni sensibili
           href: what-the-sensitive-information-types-look-for.md
@@ -201,13 +201,13 @@
     - name: Informazioni sulla classificazione dei dati (anteprima)
       href: data-classification-overview.md
       items:
-        - name: Visualizzare il contenuto con etichetta (anteprima)
+        - name: Introduzione a Esplora contenuto (anteprima)
           href: data-classification-content-explorer.md
-        - name: Visualizzazione delle attività con etichette (anteprima)
+        - name: Introduzione a Esplora attività (anteprima)
           href: data-classification-activity-explorer.md
         - name: Note sulla versione di anteprima pubblica della classificazione dei dati (anteprima)
           href: data-classification-pub-preview-relnotes.md
-        - name: Introduzione ai classificatori sottoponibili a training (anteprima)
+        - name: Introduzione ai classificatori addestrabili (anteprima)
           href: classifier-getting-started-with.md
         - name: Utilizzo di un classificatore incorporato (anteprima)
           href: classifier-using-a-ready-to-use-classifier.md
@@ -243,6 +243,8 @@
           href: archive-linkedin-data.md
         - name: Configurare un connettore per archiviare i dati di Instant Bloomberg
           href: archive-instant-bloomberg-data.md
+        - name: Configurare un connettore per archiviare i dati della chat di ghiaccio (anteprima)
+          href: archive-icechat-data.md
         - name: Configurare un connettore per l'importazione dei dati HR
           href: import-hr-data.md
         - name: Collaborare con un partner per archiviare i dati di terze parti
@@ -816,6 +818,10 @@
           href: gdpr-for-office-online-server.md
         - name: GDPR per le condivisioni dei file di Windows Server locale
           href: gdpr-for-on-premises-file-shares.md
+    - name: Istruzioni specifiche per l'industria
+      items:
+        - name: Sicurezza e conformità dei servizi finanziari
+          href: ../solutions/financial-services-secure-collaboration.md
 - name: Piani di azione per la conformità alle normative
   items:
     - name: 'ISO: piano d''azione consigliato'
