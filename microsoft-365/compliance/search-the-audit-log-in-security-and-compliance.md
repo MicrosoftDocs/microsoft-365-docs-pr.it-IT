@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 13a65f5a6a82eed748eaa79a3683ebdf2fe7ed9a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
+ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894397"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42955685"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -311,8 +311,8 @@ Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
 |[Attività di Advanced eDiscovery](#advanced-ediscovery-activities)|[Attività di Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Attività di Microsoft Teams](#microsoft-teams-activities)|[Attività di Microsoft Teams per il settore sanitario](#microsoft-teams-healthcare-activities)|[Attività di Yammer](#yammer-activities)|
 |[Attività di Microsoft Power Automate](#microsoft-power-automate-activities)|[Attività di Microsoft Power Apps](#microsoft-power-apps-activities)|[Attività di Microsoft Stream](#microsoft-stream-activities)|
-|[Attività di Esplora contenuto](#content-explorer-activities)|[Attività di Microsoft Forms](#microsoft-forms-activities)|[Attività sulle etichette di riservatezza](#sensitivity-label-activities)|
-|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)||
+|[Attività di Esplora contenuto](#content-explorer-activities)|[Attività in quarantena](#quarantine-activities)|[Attività di Microsoft Forms](#microsoft-forms-activities)
+|[Attività sulle etichette di riservatezza](#sensitivity-label-activities)|[Attività di amministrazione di Exchange](#exchange-admin-audit-log)|||
 ||||
 
 ### <a name="file-and-page-activities"></a>Attività su file e pagine
@@ -811,7 +811,20 @@ La tabella seguente elenca le attività di Esplora contenuto registrate nel log 
 
 |**Nome descrittivo**|**Operazione**|**Descrizione**|
 |:-----|:-----|:-----|
-|Elemento a cui è stato effettuato l'accesso|AccessedItem|Un amministratore o un utente che fa parte del gruppo di ruoli Visualizzatore contenuto di Esplora contenuto usa Esplora contenuto per visualizzare un messaggio di posta elettronica o un documento di SharePoint/OneDrive.|
+|Elemento a cui è stato effettuato l'accesso|LabelContentExplorerAccessedItem|Un amministratore o un utente che fa parte del gruppo di ruoli Visualizzatore contenuto di Esplora contenuto usa Esplora contenuto per visualizzare un messaggio di posta elettronica o un documento di SharePoint/OneDrive.|
+||||
+
+### <a name="quarantine-activities"></a>Attività in quarantena
+
+La tabella seguente elenca le attività in quarantena che è possibile cercare nel log di audit. Per altre informazioni sulla quarantena, vedere [Messaggi di posta elettronica in quarantena in Office 365](../security/office-365-security/quarantine-email-messages.md).
+
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:-----|:-----|:-----|
+|Messaggio in quarantena eliminato|QuarantineDelete|Un utente ha eliminato un messaggio di posta elettronica considerato dannoso.|
+|Messaggio in quarantena esportato|QuarantineExport|Un utente ha esportato un messaggio di posta elettronica considerato dannoso.|
+|Messaggio in quarantena in anteprima|QuarantinePreview|Un utente ha visualizzato in anteprima un messaggio di posta elettronica considerato dannoso.|
+|Messaggio di quarantena rilasciato|QuarantineRelease|Un utente ha rilasciato dalla quarantena un messaggio di posta elettronica considerato dannoso.|
+|Intestazione del messaggio di quarantena visualizzata|QuarantineViewHeader|Un utente ha visualizzato l'intestazione di un messaggio di posta elettronica considerato dannoso.|
 ||||
 
 ### <a name="microsoft-forms-activities"></a>Attività di Microsoft Forms

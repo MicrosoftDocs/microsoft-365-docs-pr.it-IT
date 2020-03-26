@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Office 365.
-ms.openlocfilehash: b1bac1cbe094a1e56c05dd7fd1aa5377f0a85ce5
-ms.sourcegitcommit: 62eac95c27295ba285e28cec5acf815314fbfd00
+ms.openlocfilehash: 67fe4892a980748699bb17c0a41299ed741cf417
+ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42601353"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42952066"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)
 
@@ -52,7 +52,7 @@ Dopo l'abilitazione e la configurazione di questa anteprima, gli utenti possono 
 
 1. Dato che questa funzione usa le funzionalità di Azure AD, seguire le istruzioni riportate nella relativa documentazione per abilitare l'anteprima: [Assegnare etichette di riservatezza a gruppi di Office 365 in Azure Active Directory (anteprima)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. In una sessione di PowerShell, connettersi al Centro sicurezza e conformità usando un account aziendale o dell'istituto di istruzione con privilegi di amministratore globale. Ad esempio:
+2. Aprire una sessione di PowerShell con l'opzione **Esegui come amministratore** e connettersi al Centro sicurezza e conformità usando un account aziendale o dell'istituto di istruzione con privilegi di amministratore globale. Ad esempio:
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -183,7 +183,7 @@ Per visualizzare le etichette di riservatezza applicate, usare la pagina **Siti 
 
 Ogni volta che si apporta una modifica alle impostazioni di sito e gruppo per un'etichetta, è necessario eseguire i comandi di PowerShell seguenti in modo che i team, i siti e i gruppi possano usare le nuove impostazioni. Come procedura consigliata, non modificare le impostazioni di sito e gruppo per un'etichetta dopo aver applicato l'etichetta a più team, gruppi o siti.
 
-1. Eseguire i comandi seguenti per connettersi a PowerShell per Centro sicurezza e conformità di Office 365 e ottenere l'elenco delle etichette di riservatezza e i relativi GUID.
+1. In una sessione di PowerShell aperta con l'opzione **Esegui come amministratore** eseguire i comandi seguenti per connettersi a PowerShell per Centro sicurezza e conformità di Office 365 e ottenere l'elenco delle etichette di riservatezza e i relativi GUID.
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -198,7 +198,6 @@ Ogni volta che si apporta una modifica alle impostazioni di sito e gruppo per un
 3. Ora connettersi a PowerShell per Exchange Online ed eseguire il cmdlet Get-UnifiedGroup, specificando il GUID dell'etichetta al posto del GUID di esempio "e48058ea-98e8-4940-8db0-ba1310fd955e": 
     
     ```powershell
-    Set-ExecutionPolicy RemoteSigned
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session
