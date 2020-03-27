@@ -11,14 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Office 365 Advanced eDiscovery v 1.0 vengono anche ritirati entro lo stesso periodo di tempo.
-ms.openlocfilehash: f5ca92dc12fae102cef8e7dc5aa3c4c07785cd96
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 5ee588b2c05241628242e8660f10c23dba809bf8
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955545"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978166"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Pensionamento degli strumenti di eDiscovery legacy
+
+> [!IMPORTANT]
+> Microsoft ha valutato la situazione dell'integrità pubblica e comprende l'impatto che questo comporta sui clienti. Vogliamo essere partner forti e responsabili dei cittadini globali. Per semplificare uno dei numerosi oneri di cui si ha a che fare, si intende posticipare il pensionamento programmato per gli strumenti legacy di eDiscovery elencati di seguito per tre mesi. **Le date di pensionamento aggiornate sono riportate di seguito.**
 
 Nel corso degli anni, Microsoft ha fornito gli strumenti di eDiscovery che consentono di cercare, visualizzare in anteprima ed esportare il contenuto della posta elettronica da Exchange Online. Tuttavia, questi strumenti non offrono più una soluzione efficace per la ricerca di contenuto non Exchange in altri servizi di Office 365, ad esempio i gruppi di SharePoint Online e di Office 365. Per risolvere questo, Microsoft offre altri strumenti di eDiscovery che consentono di cercare una vasta gamma di contenuti di Office 365. E abbiamo lavorato duramente per incorporare la più recente e potente funzionalità di eDiscovery nel [centro conformità di Microsoft 365](https://compliance.microsoft.com). In questo modo le organizzazioni devono rispondere a richieste di documenti legali, interne e di altro tipo per i contenuti di numerosi servizi di Office 365, tra cui Exchange Online.
 
@@ -78,9 +81,9 @@ Poiché tutte queste funzionalità (ad eccezione della copia dei risultati di ri
 
 ### <a name="timeline-for-retirement"></a>Sequenza temporale per la pensione
 
-- 2020 aprile 1: non sarà possibile creare nuove ricerche e conservazioni, ma è comunque possibile eseguire, modificare ed eliminare le ricerche esistenti a proprio rischio. Il supporto tecnico Microsoft non eDiscovery più sul posto & conserva nell'interfaccia di amministrazione di Exchange.
+- 1 ° luglio 2020: non è possibile creare nuove ricerche e conservazioni, ma è comunque in grado di eseguire, modificare ed eliminare le ricerche esistenti a proprio rischio. Il supporto tecnico Microsoft non eDiscovery più sul posto & conserva nell'interfaccia di amministrazione di Exchange.
 
-- 2020 luglio 1: la eDiscovery sul posto & contiene la funzionalità nell'interfaccia di amministrazione di Exchange verrà messa in modalità di sola lettura. Questo significa che sarà possibile rimuovere solo le ricerche e le esenzioni esistenti.
+- 2020 ottobre 1: la eDiscovery sul posto & mantiene la funzionalità nell'interfaccia di amministrazione di Exchange verrà messa in modalità di sola lettura. Questo significa che sarà possibile rimuovere solo le ricerche e le esenzioni esistenti.
 
 ### <a name="alternative-tools"></a>Strumenti alternativi
 
@@ -181,9 +184,9 @@ Poiché queste funzionalità sono ora disponibili nel [<span class="underline">c
 
 ### <a name="timeline"></a>Tempistica
 
-- 2020 aprile 1: non è possibile utilizzare **New-MailboxSearch** per creare nuove ricerche eDiscovery sul posto e archiviazioni sul posto, ma è comunque possibile utilizzare i cmdlet per l'esecuzione, la modifica e l'eliminazione delle ricerche esistenti e le esenzioni a proprio rischio. Il supporto tecnico Microsoft non fornirà più assistenza per questi tipi di ricerche e esenzioni.
+- 1 luglio 2020: non è possibile utilizzare **New-MailboxSearch** per creare nuove ricerche eDiscovery sul posto e archiviazioni sul posto, ma è comunque possibile utilizzare i cmdlet per l'esecuzione, la modifica e l'eliminazione di ricerche esistenti e conserva a proprio rischio. Il supporto tecnico Microsoft non fornirà più assistenza per questi tipi di ricerche e esenzioni.
 
-- 1 luglio 2020: come indicato in precedenza, il eDiscovery sul posto & conserva la funzionalità nell'interfaccia di amministrazione di Exchange verrà messa in modalità di sola lettura. Questo significa anche che non è possibile utilizzare i cmdlet **New-MailboxSearch**, **Start-MailboxSearch**o **Set-MailboxSearch** . È possibile ottenere e rimuovere solo le ricerche e le esenzioni esistenti.
+- 2020 ottobre 1: come indicato in precedenza, il eDiscovery sul posto & conserva la funzionalità nell'interfaccia di amministrazione di Exchange verrà messa in modalità di sola lettura. Questo significa anche che non è possibile utilizzare i cmdlet **New-MailboxSearch**, **Start-MailboxSearch**o **Set-MailboxSearch** . È possibile ottenere e rimuovere solo le ricerche e le esenzioni esistenti.
 
 ### <a name="alternative-tools"></a>Strumenti alternativi
 
@@ -262,7 +265,7 @@ Il cmdlet **Search-Mailbox** in Exchange Online PowerShell viene ritirato come a
 
 ### <a name="timeline"></a>Tempistica
 
--  2020 aprile 1: il cmdlet **Search-Mailbox** non sarà più disponibile e il supporto tecnico Microsoft non fornirà più assistenza.
+-  1 luglio 2020: il cmdlet **Search-Mailbox** non sarà più disponibile e il supporto tecnico Microsoft non fornirà più assistenza.
 
 ### <a name="alternative-tools"></a>Strumenti alternativi
 
@@ -324,7 +327,7 @@ Queste operazioni nell'API dei servizi Web di Exchange vengono utilizzate dalla 
 
 ### <a name="timeline"></a>Tempistica
 
-- 2020 aprile 1: le operazioni GetSearchableMailboxes, SearchMailboxes, SetHoldOnMailboxes e GetHoldOnMailboxes non saranno più disponibili e il supporto tecnico Microsoft non fornirà più assistenza.
+- 1 luglio 2020: le operazioni GetSearchableMailboxes, SearchMailboxes, SetHoldOnMailboxes e GetHoldOnMailboxes non saranno più disponibili e il supporto tecnico Microsoft non fornirà più assistenza.
 
 ## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v 1.0
 
@@ -332,7 +335,7 @@ Advanced eDiscovery v 1.0, che è la versione di Advanced eDiscovery disponibile
 
 La nuova soluzione avanzata di eDiscovery in Microsoft 365 (nota anche come *Advanced eDiscovery v 2.0*) fornisce tutte le funzionalità della soluzione originale. ma ora include un approccio basato su un custode per identificare il contenuto di altri servizi Microsoft 365, raccogliere tale contenuto e quindi aggiungerlo a un set di revisione in cui i revisori possono trarre vantaggio dalle funzionalità di query di ricerca, tagging e analisi veloce per facilitare l'eliminazione dei documenti rilevanti. Advanced eDiscovery ora include un miglioramento dell'elaborazione e dei visualizzatori nativi per i tipi di file Microsoft e non Microsoft, un elenco completo di tipi di file è [qui](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) e i campi dei metadati supportati sono [qui](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Inoltre, la nuova soluzione avanzata di eDiscovery offre una potente funzionalità di gestione delle esenzioni dei depositari che consente di applicare le esenzioni ai contenuti in diversi servizi, informare gli utenti delle stive e tenere conto delle risposte dei depositari, tutto all'interno di un caso di eDiscovery avanzato.
 
-A questo punto, si consiglia di iniziare a eseguire la transizione del flusso di lavoro di eDiscovery alla nuova funzionalità Advanced eDiscovery. Anche se si è ancora in grado di accedere a Advanced eDiscovery v 1.0 nei casi esistenti, il supporto tecnico Microsoft non fornirà supporto dopo il 1 ° luglio 2020. Per ulteriori informazioni, vedere la sequenza temporale seguente.
+A questo punto, si consiglia di iniziare a eseguire la transizione del flusso di lavoro di eDiscovery alla nuova funzionalità Advanced eDiscovery. Anche se si è ancora in grado di accedere a Advanced eDiscovery v 1.0 nei casi esistenti, il supporto tecnico Microsoft non fornirà supporto dopo il 1 ° ottobre 2020. Per ulteriori informazioni, vedere la sequenza temporale seguente.
 
 ### <a name="scope-of-affected-organizations"></a>Ambito delle organizzazioni coinvolte
     
@@ -344,9 +347,9 @@ A questo punto, si consiglia di iniziare a eseguire la transizione del flusso di
 
 ### <a name="timeline"></a>Tempistica
 
-- 2020 aprile 1: non è possibile creare nuovi casi avanzati di eDiscovery v 1.0.
+- 1 ° luglio 2020: non è possibile creare nuovi casi avanzati di eDiscovery v 1.0.
 
-- 1 luglio 2020: non è possibile aggiungere nuovi dati (preparare i risultati della ricerca per Advanced eDiscovery) a tutti i casi. È possibile continuare a utilizzare i dati nei casi esistenti a proprio rischio e pericolo. Il supporto tecnico Microsoft non offrirà più assistenza. 
+- 2020 ottobre 1: non è possibile aggiungere nuovi dati (preparare i risultati della ricerca per Advanced eDiscovery) a tutti i casi. È possibile continuare a utilizzare i dati nei casi esistenti a proprio rischio e pericolo. Il supporto tecnico Microsoft non offrirà più assistenza. 
 
 ### <a name="alternative-tools"></a>Strumenti alternativi
 

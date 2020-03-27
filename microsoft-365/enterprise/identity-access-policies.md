@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 772c4c5785115995593a4946bfbac49312ad15f3
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
+ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959229"
+ms.locfileid: "42978267"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -217,7 +217,7 @@ Con l'accesso condizionale, le organizzazioni possono limitare l'accesso alle ap
    > [!NOTE]
    > Questo criterio garantisce agli utenti mobili la possibilità di accedere a tutti gli endpoint di Office utilizzando le app applicabili.
 
-2. Se si Abilita l'accesso mobile a Exchange Online, implementare [Block ActiveSync clients] (Secure-email-recommended-Policies. MD # Block-ActiveSync-clients), che impedisce ai client di Exchange ActiveSync di sfruttare l'autenticazione di base dalla connessione a Exchange Online.
+2. Se si Abilita l'accesso mobile a Exchange Online, implementare [i client Block ActiveSync](secure-email-recommended-policies.md#block-activesync-clients)che impediscono ai client Exchange ActiveSync di sfruttare l'autenticazione di base di connettersi a Exchange Online.
 
    I criteri sopra riportati sfruttano i controlli di concessione [richiedono l'applicazione client approvata](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) e [richiedono criteri di protezione delle app](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 

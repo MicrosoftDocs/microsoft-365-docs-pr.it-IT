@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d733c73f1c418af2f9c12b67927838875b707aa1
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 61da6df18a8e41a609ae8aea7ff57c2f53f92d84
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179237"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982049"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformità della comunicazione in Microsoft 365
 
@@ -53,7 +53,7 @@ I criteri di conformità della comunicazione possono fornire assistenza per la r
 
 - **Conformità alle normative**
 
-    La maggior parte delle organizzazioni deve soddisfare alcuni tipi di standard di conformità normativi nell'ambito delle normali procedure operative. Queste normative richiedono spesso che le organizzazioni implementino un qualche tipo di processo di supervisione o sorveglianza per la messaggistica appropriata per il proprio settore. La regola FINRA (Financial Industry Regulatory Authority) 3110 è un buon esempio di un requisito che consente alle organizzazioni di disporre di procedure di supervisione per analizzare le comunicazioni dei dipendenti e i tipi di attività in cui si impegna. Un altro esempio potrebbe essere la necessità di esaminare le comunicazioni del broker-dealer nell'organizzazione per salvaguardare le attività relative a possibili operazioni di riciclaggio, insider trading, collusioni o tangenti. I criteri di conformità della comunicazione consentono all'organizzazione di soddisfare questi requisiti fornendo una procedura per l'analisi e il report sulle comunicazioni aziendali.
+    La maggior parte delle organizzazioni deve soddisfare alcuni tipi di standard di conformità normativi nell'ambito delle normali procedure operative. Queste normative richiedono spesso che le organizzazioni implementino un qualche tipo di processo di supervisione o sorveglianza per la messaggistica appropriata per il proprio settore. La regola FINRA (Financial Industry Regulatory Authority) 3110 è un buon esempio di un requisito che consente alle organizzazioni di disporre di procedure di supervisione per analizzare le comunicazioni dei dipendenti e i tipi di attività in cui si impegna. Un altro esempio potrebbe essere la necessità di esaminare le comunicazioni del broker-dealer nell'organizzazione per salvaguardare le attività relative a possibili operazioni di riciclaggio, insider trading, collusioni o tangenti. I criteri di conformità della comunicazione consentono all'organizzazione di soddisfare questi requisiti fornendo una procedura per l'analisi e il report sulle comunicazioni aziendali. Per ulteriori informazioni sul supporto per le organizzazioni finanziarie, vedere [Key Compliance and Security Considerations for US Banking and Capital Markets](../solutions/financial-services-secure-collaboration.md).
 
 ## <a name="new-enhancements"></a>Nuovi miglioramenti
 
@@ -155,4 +155,4 @@ Tenere tenere conto e gestire i problemi di conformità identificati dai criteri
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 
-Per configurare la conformità di comunicazione per l'organizzazione Microsoft 365, vedere [Configure Communication Compliance for microsoft 365](communication-compliance-configure.md).
+Per configurare la conformità di comunicazione per l'organizzazione Microsoft 365, vedere [Configure Communication Compliance for microsoft 365](communication-compliance-configure.md) o check-out the [Case Study for Contoso](communication-compliance-case-study.md) e how they configurati rapidamente un criterio di conformità della comunicazione per il monitoraggio per la lingua offensiva in Microsoft teams e Exchange Online Communications.

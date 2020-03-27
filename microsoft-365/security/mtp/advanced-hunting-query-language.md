@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e093bd9c5a76b44cf66591b4212f37014189186e
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 5715baaccd95d975f7d15196906a6326177bbc2e
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928997"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982012"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Scoprire il linguaggio delle query in Ricerca avanzata
 
@@ -57,8 +57,9 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 Questo è come apparirà in Ricerca avanzata.
 
-![Immagine della query di ricerca avanzata di Microsoft Threat Protection](../../media/advanced-hunting-query-example.png)
+![Immagine della query di ricerca avanzata di Microsoft Threat Protection](../../media/advanced-hunting-query-example-2.png)
 
+### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Descrivere la query e specificare le tabelle di cui eseguire la ricerca
 All'inizio della query è stato aggiunto un breve commento per descrivere il relativo contenuto. Ciò aiuta se in seguito si decide di salvare la query e condividerla con altri utenti dell'organizzazione. 
 
 ```kusto
@@ -70,12 +71,14 @@ La query viene in genere avviata con un nome di tabella seguito da una serie di 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+### <a name="set-the-time-range"></a>Impostare l'intervallo di tempo
 Il primo elemento con pipe è un filtro temporale che ha come ambito i sette giorni precedenti. Il mantenimento dell'intervallo di tempo il più possibile ravvicinato assicura che le query vengano eseguite bene, che restituiscano risultati gestibili e che non scadano.
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
+### <a name="check-specific-processes"></a>Controllare i processi specifici
 L'intervallo di tempo è subito seguito da una ricerca dei nomi dei file di processo che rappresentano l'applicazione PowerShell.
 
 ```
@@ -83,20 +86,23 @@ L'intervallo di tempo è subito seguito da una ricerca dei nomi dei file di proc
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
+### <a name="search-for-specific-command-strings"></a>Ricerca di stringhe di comandi specifiche
 Successivamente, la query Cerca stringhe nelle righe di comando che vengono in genere utilizzate per scaricare i file tramite PowerShell.
 
 ```kusto
 // Suspicious commands
 | where ProcessCommandLine has_any("WebClient",
- "DownloadFile",
- "DownloadData",
- "DownloadString",
-"WebRequest",
-"Shellcode",
-"http",
-"https")
+    "DownloadFile",
+    "DownloadData",
+    "DownloadString",
+    "WebRequest",
+    "Shellcode",
+    "http",
+    "https")
 ```
-Ora che la query identifica chiaramente i dati da individuare, è possibile aggiungere elementi che definiscono come appaiono i risultati. `project`restituisce colonne specifiche e `top` limita il numero di risultati, contribuendo a garantire che i risultati siano ben formattati e ragionevolmente grandi e facili da elaborare.
+
+### <a name="customize-result-columns-and-length"></a>Personalizzare le colonne dei risultati e la lunghezza 
+Ora che la query identifica chiaramente i dati da individuare, è possibile aggiungere elementi che definiscono come appaiono i risultati. `project`restituisce colonne specifiche e `top` limita il numero di risultati. Questi operatori contribuiscono a garantire che i risultati siano ben formattati e ragionevolmente grandi e facili da elaborare.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -104,9 +110,12 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-Fare clic su **Esegui query** per visualizzare i risultati. Selezionare l'icona Espandi nell'angolo superiore destro dell'editor di query per concentrarsi sulla query di caccia e sui risultati.
+Fare clic su **Esegui query** per visualizzare i risultati. Selezionare l'icona Espandi nell'angolo superiore destro dell'editor di query per concentrarsi sulla query di caccia e sui risultati. 
 
 ![Immagine del controllo Espandi nell'editor di query di ricerca avanzata](../../media/advanced-hunting-expand.png)
+
+>[!TIP]
+>È possibile visualizzare i risultati delle query come grafici e regolare rapidamente i filtri. Per ulteriori informazioni, [vedere Utilizzo dei risultati delle query](advanced-hunting-query-results.md)
 
 ## <a name="learn-common-query-operators-for-advanced-hunting"></a>Informazioni sugli operatori di query più comuni per la Ricerca avanzata
 

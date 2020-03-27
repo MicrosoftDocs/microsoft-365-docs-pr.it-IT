@@ -46,6 +46,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: Informazioni di riferimento sulle caratteristiche per la conformità della comunicazione
           href: communication-compliance-feature-reference.md
+        - name: Case Study-Contoso configura rapidamente un criterio di lingua offensivo
+          href: communication-compliance-case-study.md
         - name: Criteri di supervisione in Office 365
           href: supervision-policies.md
         - name: Configurare i criteri di supervisione per Office 365
@@ -638,6 +640,8 @@
               href: use-advanced-ediscovery-utilities.md
             - name: Eseguire i report
               href: run-reports-in-advanced-ediscovery.md
+    - name: Pensionamento degli strumenti di eDiscovery legacy
+      href: legacy-ediscovery-retirement.md
 - name: Gestire le indagini sui dati
   items:
     - name: Panoramica delle indagini sui dati

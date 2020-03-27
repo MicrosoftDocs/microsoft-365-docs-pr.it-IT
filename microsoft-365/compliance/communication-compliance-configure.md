@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5f105912c5163b69368683cd4c6eaebf96250e3c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: a179a3ccfc28b16aaa500d9222f69660bbc4c4df
+ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894831"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982039"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurare la conformità delle comunicazioni in Microsoft 365
 
 >[!IMPORTANT]
 >Questo argomento si applica alla configurazione della conformità di comunicazione in un abbonamento a Microsoft 365. Se si desidera configurare i criteri di supervisione per una sottoscrizione a Office 365, vedere [Configure supervisioning for office 365](supervision-policies.md).
 
-Utilizzare i criteri di conformità della comunicazione per acquisire le comunicazioni dei dipendenti per l'esame da revisori interni o esterni. Per ulteriori informazioni su come i criteri di conformità della comunicazione consentono di monitorare le comunicazioni nell'organizzazione, vedere [Communication Compliance Policies in Microsoft 365](communication-compliance.md).
+Utilizzare i criteri di conformità della comunicazione per acquisire le comunicazioni dei dipendenti per l'esame da revisori interni o esterni. Per ulteriori informazioni su come i criteri di conformità della comunicazione consentono di monitorare le comunicazioni nell'organizzazione, vedere [Communication Compliance Policies in Microsoft 365](communication-compliance.md). Se si desidera esaminare in che modo Contoso ha configurato rapidamente un criterio di conformità della comunicazione per il monitoraggio per la lingua offensiva in Microsoft teams e le comunicazioni di Exchange Online, vedere questo [caso di studio](communication-compliance-case-study.md).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
