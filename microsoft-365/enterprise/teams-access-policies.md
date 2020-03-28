@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 052edafa64f2704fb5a6df525b0ad5609ddc72b9
-ms.sourcegitcommit: 8e8230ceab480a5f1506e31de828f04f5590a350
+ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
+ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42959195"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43035100"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Suggerimenti sui criteri per la protezione di chat, gruppi e file di Team
 
@@ -63,8 +63,8 @@ In questa tabella sono elencati i criteri da rivisitare e i collegamenti a ogni 
 |**Protezione di base**|[Richiedere l'AMF quando il rischio di accesso è *medio* o *elevato*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app. I team dispongono di regole di accesso guest e di accesso esterno da prendere in considerazione, per ulteriori informazioni, vedere più avanti in questo articolo.|
 |        |[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere team e servizi dipendenti nell'assegnazione delle app cloud.|
 |        |[Gli utenti ad alto rischio devono modificare la password](identity-access-policies.md#high-risk-users-must-change-password)|Costringe gli utenti dei team a modificare la propria password quando si effettua l'accesso se viene rilevata un'attività ad alto rischio per il proprio account. Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app.|
-|        |[Definire i criteri di protezione delle app](identity-access-policies.md#define-app-protection-policies)|Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app. Aggiornare i criteri per ogni piattaforma (iOS, Android, Windows).|
-|        |[Richiedere le app che supportano i criteri di protezione delle app di Intune](identity-access-policies.md#require-apps-that-support-intune-app-protection-policies)|Includere team e servizi dipendenti in questo criterio.|
+|        |[Applicare i criteri di protezione dei dati dell'APP](identity-access-policies.md#apply-app-data-protection-policies)|Assicurarsi che i team e i servizi dipendenti siano inclusi nell'elenco delle app. Aggiornare i criteri per ogni piattaforma (iOS, Android, Windows).|
+|        |[Richiedere applicazioni approvate e protezione delle APP](identity-access-policies.md#require-approved-apps-and-app-protection)|Includere team e servizi dipendenti in questo criterio.|
 |        |[Definire i criteri di conformità del dispositivo](identity-access-policies.md#define-device-compliance-policies)|Includere team e servizi dipendenti in questo criterio.|
 |        |[Richiedere computer conformi](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere team e servizi dipendenti in questo criterio.|
 |**Dati sensibili**|[Richiedere l'AMF quando il rischio di accesso è *basso*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|I team dispongono di regole di accesso guest e di accesso esterno da prendere in considerazione, per ulteriori informazioni, vedere più avanti in questo articolo. Includere team e servizi dipendenti in questo criterio.|
