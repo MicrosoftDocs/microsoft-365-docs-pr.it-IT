@@ -2,7 +2,7 @@
 title: Office 365 ATP Safe Links for teams, safelinks, safe Links, Block maligne Links, Office 365 ATP, teams Safe Links, impedire agli utenti di fare clic su collegamenti non validi, collegamenti dannosi
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.date: 02/28/2020
 ms.topic: overview
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: I team avranno ora accesso ai collegamenti sicuri al momento del clic. Se si utilizzano chat 1-su-1 chat, tra gruppi o in canali e tabulazioni, se si dispone di un abbonamento a Office 365 ATP, si avrà la possibilità di abilitare e utilizzare questa funzionalità di sicurezza.
-ms.openlocfilehash: ba7ef2ae63b788ec94fbbb15c3c00312177a59d5
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 864b211a1f007a0f6bde83da12b61362b53bf041
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341609"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030142"
 ---
 <!--06/21/2019-->
 
@@ -30,7 +30,7 @@ ms.locfileid: "42341609"
 
 Microsoft teams, un'applicazione basata sul cloud di Office 365 per la gestione del lavoro, utilizza già gli allegati sicuri (per Office 365), ma ora avrà accesso ai collegamenti sicuri al momento del clic. Se si utilizzano chat 1-su-1 chat, tra gruppi o in canali e tabulazioni, se si dispone di un abbonamento a Office 365 ATP, si avrà la possibilità di abilitare e utilizzare questa misura di sicurezza.
 
-Ecco come funziona: 
+Tenere presente quanto segue: 
 
 1. Quando si avvia l'applicazione teams, Office 365 verifica che l'utente appartenga a un'organizzazione con Office 365 ATP e che l'utente faccia parte di un criterio di collegamenti sicuri attivo con la relativa protezione abilitata per Microsoft teams.
 

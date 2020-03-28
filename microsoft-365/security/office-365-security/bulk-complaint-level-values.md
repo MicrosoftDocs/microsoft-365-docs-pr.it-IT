@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 8/23/2019
 audience: ITPro
 ms.topic: article
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: Informazioni sui valori di livello bomplain (BCL) in Office 365.
-ms.openlocfilehash: 6b90064db7dd9b27fdc729b65fb798dfbe756da7
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Informazioni sui valori del livello di conformità in blocco (BCL, bulk Compliance Level) in Office 365.
+ms.openlocfilehash: aa839fc1bcab141fe71c76e7f27b4f6bb23048b2
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895394"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030153"
 ---
 # <a name="bulk-complaint-level-bcl-in-office-365"></a>Livello di reclamo in blocco (BCL) in Office 365
 
@@ -29,7 +29,7 @@ I messaggi di posta elettronica in blocco variano nei modelli di invio, nella cr
 
 Per distinguere i messaggi provenienti da diversi tipi di posta in blocco, la posta elettronica in ingresso dai mailer di posta in arrivo a Office 365 (Exchange Online o standalone Exchange Online Protection (EOP) senza le cassette postali di Exchange Online) viene assegnata a un livello di reclamo in blocco (BCL) aggiunto a il messaggio in un X-header. La BCL è simile al [livello di probabilità di posta indesiderata (SCL)](spam-confidence-levels.md) utilizzato per identificare i messaggi come posta indesiderata. Una BCL superiore indica che è più probabile che un messaggio in blocco generi reclami (ed è pertanto più probabile che sia posta indesiderata). Microsoft utilizza le origini sia interne che di terze parti per identificare la posta in blocco e determinare la BCL appropriata.
 
- Il filtro posta indesiderata consente di contrassegnare i messaggi come **posta elettronica in blocco** in base alla soglia BCL (valore predefinito o valore specificato) e di eseguire l'azione specificata sul messaggio (l'azione predefinita è recapitare il messaggio alla cartella posta indesiderata del destinatario). Per ulteriori informazioni, vedere [configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md) e [Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+ Il filtro posta indesiderata consente di contrassegnare i messaggi come **posta elettronica in blocco** in base alla soglia BCL (valore predefinito o valore specificato) e di eseguire l'azione specificata sul messaggio (l'azione predefinita è recapitare il messaggio alla cartella posta indesiderata del destinatario). Per ulteriori informazioni, vedere [configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md) e [Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 Le soglie BCL sono descritte nella tabella seguente.
 
