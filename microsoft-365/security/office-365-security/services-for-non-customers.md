@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Per mantenere la fiducia degli utenti nell'utilizzo della posta elettronica, Microsoft ha messo a punto vari criteri e tecnologie che consentono di proteggere gli utenti.
-ms.openlocfilehash: f6dc3cdb4ffb20fba1dbaa8d57d5041bf1cdbeae
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9e7985aed7c0b5b5c14c64d49e70ec6c731cb8b9
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598393"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032793"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Servizi per i non clienti che inviano la posta a Office 365
 
@@ -60,4 +60,4 @@ Si tratta di un portale self-service che è possibile utilizzare per rimuovere s
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Segnalazione di abusi e posta indesiderata per posta indesiderata proveniente da Exchange Online
 
-A volte Office 365 viene utilizzato da terze parti per inviare messaggi di posta indesiderata, in violazione dei termini di utilizzo e criteri. Se si riceve un messaggio di posta indesiderata da Office 365, è possibile segnalarlo a [Junk@office365.microsoft.com](mailto:junk@office365.microsoft.com). Allegare i messaggi offensivi, inclusa l'intestazione del messaggio completo, nel formato RFC 5322 o ARF. Gli utenti di Outlook sul Web possono utilizzare gli strumenti incorporati per segnalare la posta indesiderata. Per informazioni, vedere [segnalare la posta indesiderata e i tentativi di phishing in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
+A volte Office 365 viene utilizzato da terze parti per inviare messaggi di posta indesiderata, in violazione dei termini di utilizzo e criteri. Se si riceve un messaggio di posta indesiderata da Office 365, è possibile segnalarli a Microsoft. Per istruzioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).

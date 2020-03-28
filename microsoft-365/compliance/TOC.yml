@@ -245,8 +245,6 @@
           href: archive-linkedin-data.md
         - name: Configurare un connettore per archiviare i dati di Instant Bloomberg
           href: archive-instant-bloomberg-data.md
-        - name: Configurare un connettore per archiviare i dati della chat di ghiaccio (anteprima)
-          href: archive-icechat-data.md
         - name: Configurare un connettore per l'importazione dei dati HR
           href: import-hr-data.md
         - name: Collaborare con un partner per archiviare i dati di terze parti

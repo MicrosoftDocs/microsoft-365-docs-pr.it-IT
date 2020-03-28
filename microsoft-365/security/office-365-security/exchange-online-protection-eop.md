@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Di seguito sono riportate alcune considerazioni da tenere presenti prima di iniziare a lavorare con EOP.
-ms.openlocfilehash: 9c027d6c1ded10becd7c73dc3468270ff50edb55
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c86d8dbf71cdfddf0562e9c572dc8d65043e1c69
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599343"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032865"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
@@ -63,12 +63,8 @@ Il contenuto della Guida di EOP per gli amministratori comprende le seguenti cat
 
 I contenuti della Guida per l'assistenza agli utenti finali EOP per la gestione della posta indesiderata consistono dei seguenti argomenti:
 
-- [Trovare e rilasciare i messaggi in quarantena come utente](find-and-release-quarantined-messages-as-a-user.md): descrive in che modo gli utenti finali possono individuare e rilasciare i propri messaggi di posta indesiderata in quarantena nell'interfaccia utente per la quarantena della posta indesiderata e facoltativamente segnalarli come non indesiderati a Microsoft.
+- [Segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md)
 
-- [Inviare messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md): descrive i diversi modi in cui gli utenti finali possono inviare messaggi di posta indesiderata e non di posta indesiderata a Microsoft. In questo argomento sono inclusi i collegamenti agli strumenti di creazione di report disponibili in Microsoft Outlook e Outlook sul Web (in precedenza noto come Outlook Web App).
-
-- [Invio di malware e non malware a Microsoft per l'analisi](submitting-malware-and-non-malware-to-microsoft-for-analysis.md): descrive in che modo gli utenti finali possono inviare malware che hanno superato i filtri oppure inviare un file erroneamente identificato come malware.
-
-- Gli utenti finali possono aggiungere utenti o domini specifici a un elenco di mittenti attendibili o a un elenco di mittenti bloccati configurando le impostazioni di posta indesiderata in Outlook o Outlook sul Web. Si noti che i messaggi inviati da mittenti bloccati sono contrassegnati come posta indesiderata, non rifiutati, ovvero possono essere recuperati dalla cartella posta indesiderata o dalla quarantena (a seconda della posizione in cui l'amministratore ha configurato il servizio per l'invio di posta indesiderata). Per ulteriori informazioni, vedere [use the report Message Add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Gli utenti finali possono aggiungere mittenti all'elenco dei mittenti attendibili o bloccarli in Outlook o Outlook sul Web. Gli amministratori possono anche modificare questi elenchi nelle cassette postali degli utenti. Per ulteriori informazioni, vedere [informazioni sulle impostazioni di posta indesiderata in Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook).
 
 - [Guida e supporto tecnico per EOP](help-and-support-for-eop.md) Fornisce informazioni su come ottenere assistenza e supporto tecnico.

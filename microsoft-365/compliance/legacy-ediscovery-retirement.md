@@ -11,17 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Office 365 Advanced eDiscovery v 1.0 vengono anche ritirati entro lo stesso periodo di tempo.
-ms.openlocfilehash: 5ee588b2c05241628242e8660f10c23dba809bf8
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
+ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978166"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43024356"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Pensionamento degli strumenti di eDiscovery legacy
 
 > [!IMPORTANT]
-> Microsoft ha valutato la situazione dell'integrità pubblica e comprende l'impatto che questo comporta sui clienti. Vogliamo essere partner forti e responsabili dei cittadini globali. Per semplificare uno dei numerosi oneri di cui si ha a che fare, si intende posticipare il pensionamento programmato per gli strumenti legacy di eDiscovery elencati di seguito per tre mesi. **Le date di pensionamento aggiornate sono riportate di seguito.**
+> Microsoft ha valutato la situazione dell'integrità pubblica e comprende l'impatto che questo comporta sui clienti. Vogliamo essere partner forti e responsabili dei cittadini globali. Per semplificare uno dei numerosi oneri di cui si ha a che fare, si intende posticipare il pensionamento programmato per gli strumenti di eDiscovery legacy descritti in questo articolo per tre mesi. **Le date di pensionamento aggiornate sono riportate di seguito.**
 
 Nel corso degli anni, Microsoft ha fornito gli strumenti di eDiscovery che consentono di cercare, visualizzare in anteprima ed esportare il contenuto della posta elettronica da Exchange Online. Tuttavia, questi strumenti non offrono più una soluzione efficace per la ricerca di contenuto non Exchange in altri servizi di Office 365, ad esempio i gruppi di SharePoint Online e di Office 365. Per risolvere questo, Microsoft offre altri strumenti di eDiscovery che consentono di cercare una vasta gamma di contenuti di Office 365. E abbiamo lavorato duramente per incorporare la più recente e potente funzionalità di eDiscovery nel [centro conformità di Microsoft 365](https://compliance.microsoft.com). In questo modo le organizzazioni devono rispondere a richieste di documenti legali, interne e di altro tipo per i contenuti di numerosi servizi di Office 365, tra cui Exchange Online.
 

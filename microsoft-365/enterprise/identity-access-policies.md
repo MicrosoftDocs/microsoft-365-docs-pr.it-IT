@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: cfeef08c087d826d3e6f90bd1bb87bd852859a7c
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: b6e10757c3a4370c83b6ee0c1fb6c818a13089ea
+ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978267"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43022922"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 In questo articolo vengono descritti i criteri comuni consigliati per garantire l'accesso ai servizi cloud, incluse le applicazioni locali pubblicate con il proxy di applicazione Azure AD. 
@@ -225,18 +225,22 @@ Con l'accesso condizionale, le organizzazioni possono limitare l'accesso alle ap
 
 ## <a name="define-device-compliance-policies"></a>Definire i criteri di conformità del dispositivo
 
-I criteri di conformità del dispositivo definiscono i requisiti ai quali i dispositivi devono attenersi per essere contrassegnati come conformi. Creare criteri di conformità del dispositivo Intune dall'interno del portale di Azure. 
+I criteri di conformità del dispositivo definiscono i requisiti ai quali i dispositivi devono attenersi per essere contrassegnati come conformi. Creare criteri di conformità del dispositivo Intune all'interno dell'interfaccia di amministrazione di Microsoft Endpoint Manager.
 
 Creare un criterio per ogni piattaforma:
-- Android
+- Amministratore del dispositivo Android
 - Android Enterprise
-- iOS
+- iOS/iPados
 - macOS
 - Windows Phone 8.1
 - Windows 8,1 e versioni successive
 - Windows 10 e versioni successive
 
-Per creare criteri di conformità dei dispositivi, accedere al portale di Microsoft Azure con le credenziali di amministrazione e quindi accedere a **Intune > conformità del dispositivo**. Selezionare **Crea criterio**.
+Per creare criteri di conformità dei dispositivi, accedere all'interfaccia di [amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) con le proprie credenziali di amministrazione e quindi passare ai**criteri criteri di****conformità** > per i **dispositivi** > . Selezionare **Crea criterio**.
+
+Per distribuire i criteri di conformità dei dispositivi, è necessario assegnarli ai gruppi di utenti. Si assegna un criterio dopo aver creato e salvato. Nell'interfaccia di amministrazione, selezionare il criterio e quindi selezionare **assegnazioni**. Dopo aver selezionato i gruppi che si desidera ricevere, fare clic su **Salva** per salvare l'assegnazione del gruppo e distribuire il criterio.
+
+Per istruzioni dettagliate sulla creazione di criteri di conformità in Intune, vedere [creare un criterio di conformità in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) nella documentazione di Intune.
 
 Le impostazioni seguenti sono consigliate per Windows 10.
 
@@ -255,8 +259,6 @@ Le impostazioni seguenti sono consigliate per Windows 10.
 |:---|:---------|:-----|:----|
 |Versione del sistema operativo|Tutto|Non configurata||
 
-Tutti i criteri descritti in precedenza vengono considerati distribuiti se assegnati a gruppi di utenti. A tale scopo, è possibile creare i criteri (su salvataggio) o versioni successive selezionando **Gestisci distribuzione** nella sezione **policy** (stesso livello di Aggiungi).
-
 **Protezione del sistema**
 
 |Tipo|Proprietà|Valori|Note|
@@ -273,9 +275,9 @@ Tutti i criteri descritti in precedenza vengono considerati distribuiti se asseg
 |Sicurezza del dispositivo|Firewall|Richiedono||
 ||Antivirus|Richiedono||
 ||Antispyware|Richiedono|Questa impostazione richiede una soluzione anti-spyware registrata con Centro sicurezza Windows|
-|Difensore|Windows Defender antimalware|Richiedono||
-||Versione minima di Windows Defender antimalware||Supportato solo per il desktop di Windows 10. Microsoft consiglia le versioni non superiori a cinque rispetto alla versione più recente|
-||Windows Defender antimalware Signature aggiornato|Richiedono||
+|Difensore|Antimalware di Microsoft Defender|Richiedono||
+||Versione minima di Microsoft Defender antimalware||Supportato solo per il desktop di Windows 10. Microsoft consiglia le versioni non superiori a cinque rispetto alla versione più recente|
+||Firma antimalware di Microsoft Defender aggiornato|Richiedono||
 ||Protezione in tempo reale|Richiedono|Supportato solo per il desktop di Windows 10|
 
 **Microsoft Defender ATP**
@@ -283,6 +285,7 @@ Tutti i criteri descritti in precedenza vengono considerati distribuiti se asseg
 |Tipo|Proprietà|Valori|Note|
 |:---|:---------|:-----|:----|
 |Regole di protezione avanzata dalle minacce di Microsoft Defender|Richiedere che il dispositivo sia a o sotto il Punteggio di rischio del computer|Media||
+
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Richiedere PC conformi (ma non conformi a telefoni e Tablet)
 Prima di aggiungere un criterio per richiedere PC conformi, assicurarsi di registrare i dispositivi per la gestione in Intune. L'utilizzo dell'autenticazione a più fattori è consigliato prima di registrare i dispositivi in Intune per garantire che il dispositivo sia in possesso dell'utente desiderato. 

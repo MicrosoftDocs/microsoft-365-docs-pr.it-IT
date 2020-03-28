@@ -1,5 +1,5 @@
 ---
-title: Segnalazione di messaggi di posta elettronica indesiderata a Microsoft
+title: Segnalare messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,55 +16,25 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: "Il componente aggiuntivo per la segnalazione della posta indesiderata di Microsoft per Microsoft Office Outlook offre all'utente diversi modi per segnalare messaggi indesiderati:"
-ms.openlocfilehash: b1ed918e4b954cc7b2d79e52abd6f58a99eda0f0
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b7e7ed56f171ee3b74b36ed7c10c46286fb1e570
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895180"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033663"
 ---
-# <a name="report-junk-email-messages-to-microsoft"></a>Segnalazione di messaggi di posta elettronica indesiderata a Microsoft
+# <a name="report-messages-and-files-to-microsoft"></a>Segnalare i messaggi e i file a Microsoft
 
-Il componente aggiuntivo per la segnalazione della posta indesiderata di Microsoft per Microsoft Office Outlook offre all'utente diversi modi per segnalare messaggi indesiderati:
+Gli utenti e gli amministratori di Office 365 organizzazioni con cassette postali in Exchange Online o organizzazioni standalone di Exchange Online Protection (EOP) senza cassette postali di Exchange Online per inviare messaggi di posta elettronica dispongono di diversi metodi per la segnalazione dei messaggi e file a Microsoft.
 
-- Dalla barra multifunzione di Outlook
+|||
+|---|---|
+|**Metodo**|**Descrizione**|
+|[Utilizzare l'invio di amministratore per inviare messaggi di posta indesiderata sospetti, phishing, URL e file a Microsoft](admin-submission.md)|Questo è il metodo di segnalazione consigliato per gli amministratori nelle organizzazioni con cassette postali di Exchange Online (non disponibile in EOP autonomo).|
+|[Abilitare il componente aggiuntivo per i messaggi di report in Office 365](enable-the-report-message-add-in.md)|Compatibile con Outlook, Outlook per Mac e Outlook sul Web. Questo è il componente aggiuntivo consigliato. <br/><br/> A seconda della licenza, i messaggi segnalati sono disponibili nei [risultati di ricerca e risposta (aria) automatizzati](air-view-investigation-results.md), nel [rapporto messaggi segnalati dall'utente](view-email-security-reports.md#user-reported-messages-report) e in [Esplora minacce](threat-explorer-views.md#email--submissions).|
+|[Installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook in Office 365](junk-email-reporting-add-in-for-microsoft-outlook.md)|Funziona solo in Outlook.|
+|[Segnalare messaggi di posta indesiderata e di phishing in Outlook sul Web in Office 365](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Utilizzare le funzionalità predefinite in Outlook sul Web per le organizzazioni con cassette postali di Exchange Online (non disponibile in EOP autonomo).|
+|[Inviare malware e non malware a Microsoft per l'analisi](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Utilizzare il sito di Microsoft Security Intelligence per inviare allegati e altri file.|
+|
 
-- Dalla casella di Posta in arrivo
-
-- Da un messaggio di posta elettronica aperto
-
-Il componente aggiuntivo per la segnalazione della posta indesiderata consente di inviare report al servizio Microsoft Exchange Online Protection (EOP). Se la cassetta postale non è protetta dal servizio, la procedura di invio dei report relativi alla posta indesiderata non avrà effetti sui filtri della posta indesiderata. Gli amministratori possono ottenere ulteriori informazioni sulle impostazioni di posta indesiderata che si applicano a un'intera organizzazione in [creare elenchi di mittenti attendibili in office 365](create-safe-sender-lists-in-office-365.md) e [creare elenchi di mittenti bloccati in Office 365](create-block-sender-lists-in-office-365.md). Questi articoli sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi negativi o di falsi positivi.
-
-> [!TIP]
-> È inoltre possibile inviare messaggi di posta indesiderata direttamente a Microsoft utilizzando l'indirizzo di posta elettronica [Junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) e i messaggi falsi positivi (non di posta indesiderata) utilizzando l'indirizzo di posta elettronica di [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) . Per ulteriori informazioni, vedere [Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
-
-### <a name="to-report-junk-email-messages-from-outlook"></a>Per segnalare messaggi di posta indesiderata da Outlook
-
-[Utilizzare il componente aggiuntivo per i messaggi di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
-
-### <a name="to-report-junk-email-messages-from-your-inbox"></a>Per segnalare messaggi di posta indesiderata dalla cartella Posta in arrivo
-
-1. Fare clic con il pulsante destro del mouse sul messaggio o sui messaggi da segnalare come indesiderati.
-
-2. Selezionare **Indesiderato** e fare clic sul pulsante **Segnala messaggi indesiderati**.
-    ![Segnalazione dei messaggi di posta indesiderata dalla cartella Posta in arrivo](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
-
-3. Viene aperta la finestra di dialogo **Componente aggiuntivo per la segnalazione della posta indesiderata Microsoft**. Per confermare la scelta di segnalare come indesiderati i messaggi selezionati, fare clic su **Sì**.
-    ![Conferma della segnalazione come posta indesiderata](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-
-    > [!NOTE]
-    > Se non si desidera ricevere questo messaggio di conferma quando si inviano messaggi indesiderati, selezionare **Non visualizzare più questo messaggio**.
-
-I messaggi selezionati saranno inviati a Microsoft per l'analisi e spostati nella cartella Posta indesiderata. Per verificare che i messaggi siano stati inviati, aprire la cartella **Posta inviata** per visualizzare i messaggi inviati.
-
-### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>Per segnalare un messaggio di posta indesiderata dall'interno di un messaggio aperto
-
-1. Da un messaggio aperto, fare clic sul pulsante **Segnala messaggi indesiderati** sulla barra multifunzione del messaggio. Ad esempio **, fare clic** \> **su** ![report di posta indesiderata report di posta indesiderata da un messaggio](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
-
-2. Viene aperta la finestra di dialogo **Componente aggiuntivo per la segnalazione della posta indesiderata Microsoft**. Per confermare la scelta di segnalare come indesiderato il messaggio selezionato, fare clic su **Sì**.
-    ![Conferma della segnalazione come posta indesiderata](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-
-    > [!NOTE]
-    > Se non si desidera ricevere questo messaggio di conferma quando si inviano messaggi indesiderati, selezionare **Non visualizzare più questo messaggio**.
-
-Il messaggio selezionato sarà inviato a Microsoft per l'analisi e spostato nella cartella Posta indesiderata. Per verificare che il messaggio sia stato inviato, aprire la cartella **Posta inviata** per visualizzare il messaggio inviato.
+Se i messaggi di posta indesiderata o di phishing sono stati messi in quarantena anziché recapitati, gli utenti possono segnalare i messaggi a Microsoft dal portale di quarantena nel centro sicurezza & conformità di Office 365. Per informazioni dettagliate, vedere [trovare e rilasciare i messaggi in quarantena come utente in Office 365](find-and-release-quarantined-messages-as-a-user.md).

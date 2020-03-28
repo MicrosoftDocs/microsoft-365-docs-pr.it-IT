@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per Exchange Online Protection (EOP) per eseguire una configurazione corretta ed evitare che si verifichino errori comuni.
-ms.openlocfilehash: b4b1f02e3b034b7e89d605a2164b6add3f20dae5
-ms.sourcegitcommit: 3d17c1d6b80672719b1878e2f321f0de39595226
+ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887303"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033435"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Procedure consigliate per la configurazione di EOP e Office 365 ATP
 
@@ -61,11 +61,9 @@ Queste impostazioni riguardano una serie di funzionalità esterne ai criteri di 
 
 Risoluzione dei problemi generali e delle tendenze utilizzando i report nell'interfaccia di amministrazione. Trovare i dati su un messaggio specifici di un singolo punto utilizzando lo strumento di traccia dei messaggi. Per ulteriori informazioni sulla segnalazione, vedere [Creazione di rapporti e traccia dei messaggi in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Per ulteriori informazioni sullo strumento di traccia dei messaggi, vedere [Message Trace in the Security & Compliance Center](message-trace-scc.md).
 
-## <a name="reporting-false-positive-and-false-negatives-to-microsoft"></a>Segnalazione di falsi positivi e falsi negativi a Microsoft
+## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>Segnalare falsi positivi e falsi negativi a Microsoft
 
-Gli amministratori devono inviare falsi negativi (posta indesiderata) e falsi positivi (non indesiderati) a Microsoft tramite il portale di amministrazione degli invii. È possibile inviare messaggi di posta elettronica, file e URL per consentire agli amministratori di determinare il motivo per cui è stato recapitato o non è stato recapitato alcun messaggio agli utenti finali Per informazioni dettagliate, vedere [come inviare messaggi di posta indesiderata, phishing, URL e file sospetti a Microsoft per l'analisi di Office 365](admin-submission.md).
-
-Gli utenti finali possono anche segnalare direttamente falsi negativi (posta indesiderata) e falsi positivi (non di posta indesiderata) a Microsoft per l'analisi quando non sono d'accordo con le sentenze fornite. Per informazioni dettagliate, vedere [inviare messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+Per migliorare il filtraggio della posta indesiderata nel servizio per tutti, è necessario segnalare falsi positivi (buona posta elettronica contrassegnata come difettosa) e falsi negativi (messaggi di posta elettronica non consentiti) a Microsoft per l'analisi. Per ulteriori informazioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="create-mail-flow-rules"></a>Creazione di regole del flusso di posta
 

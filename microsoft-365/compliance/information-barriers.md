@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilizzare le barriere informative per garantire la conformità della comunicazione tramite Microsoft teams all'interno dell'organizzazione.
-ms.openlocfilehash: 8bee0f368edc91b6f926eb6cb3e0a2f8dad81e9b
-ms.sourcegitcommit: 9b79701eba081cd4b3263db7a15c088d92054b4b
+ms.openlocfilehash: 5d3abe41680a8399600fdea51df6f3b85fbd6b94
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42692653"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029840"
 ---
 # <a name="learn-about-information-barriers"></a>Informazioni sulle barriere informative
 
@@ -28,10 +28,13 @@ I servizi cloud Microsoft includono potenti funzionalità di comunicazione e col
 
 Gli ostacoli alle informazioni stanno per essere implementati ora, a partire da Microsoft teams. Presupponendo che la [sottoscrizione](#required-licenses-and-permissions) includa barriere informative, un amministratore di conformità o un amministratore delle informazioni barriere può definire criteri per consentire o impedire le comunicazioni tra gruppi di utenti in Microsoft teams. I criteri di barriera delle informazioni possono essere utilizzati per situazioni come queste:
 
-- Un trader diurno non può chiamare qualcuno del team di marketing
-- Il personale finanziario che lavora su informazioni aziendali riservate non è in grado di ricevere chiamate da determinati gruppi all'interno dell'organizzazione
-- Un team interno con materiale segreto commerciale non può chiamare o chattare online con persone di alcuni gruppi all'interno della propria organizzazione.
-- Un team di ricerca può solo chiamare o chattare online con un team di sviluppo del prodotto
+- L'utente del gruppo trader diurno non deve comunicare con il team di marketing
+- Il personale finanziario che lavora su informazioni aziendali riservate non deve comunicare con alcuni gruppi all'interno della propria organizzazione.
+- Un team interno con materiale segreto commerciale non deve chiamare o chattare online con persone di alcuni gruppi all'interno della propria organizzazione.
+- Un team di ricerca deve chiamare o chattare online solo con un team di sviluppo del prodotto
+
+> [!IMPORTANT]
+> Barriere informative ***supportano solo*** due restrizioni di modalità. Restrizioni a un modo, come il marketing può comunicare con i commercianti diurni, ma i trader diurni non possono comunicare con il marketing ***non è supportato***.
 
 Per tutti questi scenari di esempio e altro ancora, è possibile definire i criteri di barriera delle informazioni per impedire o consentire le comunicazioni in Microsoft teams. Tali criteri possono impedire agli utenti di effettuare chiamate o chattare con coloro che non devono o consentire agli utenti di comunicare solo con gruppi specifici in Microsoft teams. Con i criteri di protezione delle informazioni in vigore, quando gli utenti interessati da tali criteri tentano di comunicare con altri membri di Microsoft teams, vengono eseguiti i controlli per impedire (o consentire) la comunicazione (come definito dai criteri di barriera delle informazioni). Per ulteriori informazioni sull'esperienza utente con barriere informative, vedere [barriere informative in Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 

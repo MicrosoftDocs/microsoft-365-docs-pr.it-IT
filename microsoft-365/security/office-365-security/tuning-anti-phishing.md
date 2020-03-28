@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a identificare i motivi per cui e come è stato ottenuto un messaggio di phishing e cosa fare per evitare ulteriori messaggi di phishing in futuro.
-ms.openlocfilehash: 94c28bf63ad7ba87d06298576cf7989b6848f8e6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 56baf39335837158cd061b4cbaede25a81c484ee
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082025"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033651"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ottimizzare la protezione anti-phishing in Office 365
 
@@ -39,11 +39,7 @@ Verificare che queste funzionalità ATP siano attivate.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Segnalare il messaggio di phishing a Microsoft
 
-La segnalazione dei messaggi di phishing è utile per ottimizzare i filtri utilizzati per proteggere tutti i clienti in Office 365.
-
-Inviare il messaggio di phishing _come allegato_ in un nuovo messaggio, altrimenti vuoto, in **Phish@office365.microsoft.com**. Non solo inoltrare il messaggio originale; in caso contrario, non è possibile esaminare le intestazioni del messaggio originale. In alternativa, è possibile utilizzare il componente aggiuntivo [segnala messaggio](https://docs.microsoft.com/office365/securitycompliance/enable-the-report-message-add-in) in Outlook o Outlook sul Web (in precedenza noto come Outlook Web App).
-
-Per ulteriori informazioni, vedere [Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+La segnalazione dei messaggi di phishing è utile per ottimizzare i filtri utilizzati per proteggere tutti i clienti in Office 365. Per istruzioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="inspect-the-message-headers"></a>Esaminare le intestazioni del messaggio
 

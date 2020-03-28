@@ -1,5 +1,5 @@
 ---
-title: Case Study-Contoso configura rapidamente un criterio di lingua offensivo
+title: Case Study-Contoso configura rapidamente un criterio di lingua offensivo per Microsoft teams e le comunicazioni di Exchange
 description: Un case study per Contoso e la modalità di configurazione rapida di un criterio di conformità della comunicazione da monitorare per la lingua offensiva in Microsoft teams ed Exchange Online Communications
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6b5ce3b9ca738ddf94edbb035daeb730f5e3f96a
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 6f23bece83f0c0fc25ddb26b8ceddcb1c956bc5e
+ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982389"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43024346"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy"></a>Case Study-Contoso configura rapidamente un criterio di lingua offensivo
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Case Study-Contoso configura rapidamente un criterio di lingua offensivo per Microsoft teams e le comunicazioni di Exchange
 
 La conformità alla comunicazione in Microsoft 365 consente di ridurre al minimo i rischi di comunicazione contribuendo a rilevare, acquisire e intraprendere azioni correttive per i messaggi inopportuni nell'organizzazione. I criteri predefiniti e personalizzati consentono di analizzare le comunicazioni interne ed esterne per le corrispondenze dei criteri in modo che possano essere esaminate da revisori designati. I revisori possono esaminare la posta elettronica digitalizzata, Microsoft teams o le comunicazioni di terze parti nell'organizzazione e intraprendere le azioni correttive appropriate per assicurarsi che siano conformi agli standard dei messaggi dell'organizzazione.
 

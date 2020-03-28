@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Informazioni su come definire i criteri per le barriere informative in Microsoft teams.
-ms.openlocfilehash: 3dc59a78d25045f3816b48705b5427141a1caea7
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710505"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029882"
 ---
 # <a name="define-information-barrier-policies"></a>Definire i criteri delle barriere informative
 
@@ -247,7 +247,7 @@ I criteri di barriera delle informazioni non sono attivi finché non vengono imp
 
     Sintassi`Start-InformationBarrierPoliciesApplication`
 
-    Dopo circa mezz'ora, i criteri vengono applicati dall'utente per l'organizzazione. Se l'organizzazione è di grandi dimensioni, il completamento di questo processo può richiedere 24 ore (o più). (Come linee guida generali, è necessario circa un'ora per elaborare gli account utente di 5.000).
+    Dopo aver eseguito `Start-InformationBarrierPoliciesApplication` Consenti 30 minuti affinché il sistema inizi a applicare i criteri. Il sistema applica i criteri utente all'utente. In generale, il sistema elabora circa 5.000 account utente all'ora.
 
 ## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>Visualizzazione dello stato degli account utente, segmenti, criteri o applicazione di criteri
 

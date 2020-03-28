@@ -2,10 +2,10 @@
 title: Differenza tra posta elettronica indesiderata e posta elettronica in blocco
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 1/7/2015
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,35 +15,36 @@ search.appverid:
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
-description: I clienti a volte askwhat è la differenza tra posta elettronica indesiderata e messaggi di posta elettronica in blocco? Lo scopo di questo argomento è spiegare la differenza e fornire informazioni sulle diverse opzioni disponibili per entrambi in Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 55924ac5e83ca109fd66d1723cdb7c5f43f20df6
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: In questo argomento viene illustrata la differenza tra posta indesiderata (posta indesiderata) e posta elettronica in blocco e i relativi controlli in Office 365.
+ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895036"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033627"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Differenza tra posta elettronica indesiderata e posta elettronica inviata in blocco
 
-Talvolta i clienti chiedono quale sia la differenza tra posta elettronica indesiderata e messaggi di posta elettronica in blocco. L'obiettivo di questo argomento è di spiegare la differenza e fornire informazioni sulle diverse opzioni disponibili per entrambi in Exchange Online e Exchange Online Protection (EOP).
-  
- **Cos'è la posta elettronica indesiderata**
-  
-I messaggi di posta elettronica indesiderati sono messaggi di posta indesiderata non richiesti (e di solito non desiderati) che vengono filtrati dal servizio. Per impostazione predefinita, il servizio rifiuta il messaggio in base alla reputazione dell'indirizzo IP di invio. Tuttavia, se supera l'ispezione dell'IP ma viene classificato come posta indesiderata dai filtri del contenuto, il messaggio viene inviato alla cartella Posta indesiderata dei destinatari previsti. 
-  
-> [!NOTE]
-> L'azione eseguita sui messaggi filtrati dal contenuto è configurabile tramite i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange (EAC), come descritto in [Configure anti-spam Policies in Office 365](configure-your-spam-filter-policies.md). Inoltre, se non si è d'accordo con la classificazione della posta indesiderata, è possibile segnalare i messaggi che si considera posta indesiderata o non indesiderata a Microsoft in vari modi, come descritto in [Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
-  
- **Cos'è la posta elettronica in blocco**
-  
-La posta in blocco, altrimenti denominata, posta grigia, è un tipo di messaggio di posta elettronica più difficile da classificare. Mentre la posta elettronica indesiderata è una minaccia costante, la posta elettronica in blocco in genere include un messaggio pubblicitario o di marketing che non viene inviato continuamente. La posta in blocco è desiderata da alcuni utenti, che potrebbero aver sottoscritto intenzionalmente la ricezione di questi messaggi, mentre altri utenti potrebbero considerare come posta indesiderata questo tipo di messaggi. Ad esempio, alcuni utenti desiderano ricevere messaggi di posta elettronica pubblicitari da Contoso Corporation o inviti a una conferenza imminente sulla sicurezza IT, mentre altri utenti considerano posta indesiderata questi messaggi di posta elettronica.
-  
+I clienti di Office 365 con cassette postali in Exchange Online o autonomo Exchange Online Protection (EOP) i clienti che non dispongono di cassette postali di Exchange Online chiedono: "Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco In questo argomento viene illustrata la differenza e vengono descritti i controlli disponibili in EOP.
+
+- La **posta** indesiderata è posta indesiderata, ovvero messaggi non richiesti e universalmente non necessari (se identificati correttamente). Per impostazione predefinita, il EOP respinge la posta indesiderata in base alla reputazione del server di posta elettronica di origine. Se un messaggio passa il controllo IP di origine, viene inviato al filtro per la posta indesiderata. Se il messaggio viene classificato come posta indesiderata dal filtro posta indesiderata, il messaggio viene (per impostazione predefinita) recapitato ai destinatari previsti e spostato nella cartella posta indesiderata.
+
+  - È possibile configurare le azioni da intraprendere sui verdetti del filtro della posta indesiderata. Per istruzioni, vedere [configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
+
+  - Se non si è d'accordo con il verdetto del filtro della posta indesiderata, è possibile segnalare i messaggi che si considerano come posta indesiderata o non indesiderata a Microsoft in diversi modi, come descritto in [messaggi e file di report a Microsoft](report-junk-email-messages-to-microsoft.md)
+
+- La posta **elettronica in blocco** (nota anche come _posta grigia_) è più difficile da classificare. Se la posta indesiderata è una minaccia costante, la posta elettronica in blocco è spesso una pubblicità o un messaggio di marketing. Alcuni utenti desiderano messaggi di posta elettronica in blocco (e, in effetti, hanno deliberatamente iscritto per riceverli), mentre altri utenti considerano la posta elettronica in blocco come posta indesiderata. Ad esempio, alcuni utenti desiderano ricevere messaggi pubblicitari dalla Contoso Corporation o inviti a una conferenza imminente sulla sicurezza cibernetica, mentre altri utenti considerano gli stessi messaggi come posta indesiderata.
+
+  Per ulteriori informazioni su come viene identificato il messaggio di posta elettronica in blocco, vedere [bulk lamentel Level (BCL) in Office 365](bulk-complaint-level-values.md).
+
 ## <a name="how-to-manage-bulk-email"></a>Come gestire la posta elettronica in blocco
 
-Il modo in cui gestire la posta elettronica in blocco non è una decisione chiara, in quanto se tutta la posta in blocco viene classificata come spam, gli utenti che invece desiderano riceverla potrebbero reclamare e inviarla come messaggio falso positivo (non di posta indesiderata) erroneamente contrassegnato come posta indesiderata. D'altra parte, se si consente il passaggio di tutta la posta elettronica in blocco, gli utenti che non la desiderano potrebbero reclamare e inviarla come messaggio di posta elettronica indesiderata (falso negativo) arrivato per errore nella propria Posta in arrivo.
-  
-### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>Abilitare il controllo della riservatezza sulla posta inviata in massa nel criterio filtro del contenuto
+A causa della reazione mista al messaggio di posta elettronica in blocco, non vi sono indicazioni universali valide per ogni organizzazione.
 
-A seconda del criterio aziendale sui messaggi di posta elettronica inviati in massa, gli amministratori possono selezionare una soglia da assegnare alla posta inviata in massa. L'impostazione è configurabile tramite i criteri di filtro dei contenuti nell'interfaccia di amministrazione di Exchange. Per la procedura, vedere [configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md) . È possibile scegliere un'impostazione di soglia da 1-9, dove 1 contrassegna la maggior parte della posta elettronica come posta indesiderata e 9 consente di recapitare la maggior parte della posta elettronica in blocco. Il servizio quindi esegue l'azione configurata, ad esempio, l'invio del messaggio alla cartella Posta indesiderata del destinatario. 
-  
+I criteri di protezione dalla posta indesiderata hanno una soglia BCL predefinita utilizzata per identificare la posta elettronica in blocco come posta indesiderata. Gli amministratori possono aumentare o diminuire la soglia. Per ulteriori informazioni, vedere i seguenti argomenti:
 
+- [Configurazione dei criteri di protezione da posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
+
+- [Impostazioni dei criteri di protezione da posta indesiderata di EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+
+Un'altra opzione facilmente trascurabile: se un utente si lamenta della ricezione di posta elettronica in blocco, ma i messaggi vengono inviati da mittenti affidabili che passano il filtro per la posta indesiderata in EOP, fare in modo che l'utente verifichi un'opzione di annullamento della sottoscrizione nel messaggio di posta elettronica in blocco.

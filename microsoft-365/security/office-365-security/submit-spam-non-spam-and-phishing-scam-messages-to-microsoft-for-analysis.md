@@ -1,5 +1,5 @@
 ---
-title: Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
+title: Inviare manualmente messaggi a Microsoft per l'analisi
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,101 +16,138 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: "Gli utenti possono inviare messaggi di posta indesiderata falsi negativi e falsi positivi a Microsoft per l'analisi. "
-ms.openlocfilehash: 27e0698d1ad7d05adfa69e18e9b5b21edb74b1eb
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 13b2e42f749b54e0c2b71fe095c077992560ea8c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893647"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43032805"
 ---
-# <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Inviare messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi
+# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Inviare manualmente messaggi a Microsoft per l'analisi
 
-Può essere frustrante quando gli utenti dell'organizzazione ricevono messaggi di posta indesiderata o messaggi di phishing nella cartella posta in arrivo o se non ricevono un messaggio di posta elettronica legittimo perché sono contrassegnati come posta indesiderata. La correzione dei filtri per la posta indesiderata è sempre più accurata. L'utente e gli utenti possono aiutare questo processo inviando messaggi di posta indesiderata negativi e falsi positivi a Microsoft per l'analisi. Un "falso negativo" è un messaggio di posta indesiderata che avrebbe dovuto essere ma non è stato identificato come posta indesiderata. Un "falso positivo" è un messaggio di posta elettronica legittimo che è stato erroneamente identificato come posta indesiderata.
+> [!NOTE]
+> Se si è un amministratore di un'organizzazione di Office 365 con cassette postali di Exchange Online, si consiglia di utilizzare il portale di invii nel centro sicurezza & conformità di Office 365. Per ulteriori informazioni, vedere [utilizzare l'invio di amministratore per inviare messaggi di posta indesiderata, phishing, URL e file a Microsoft](admin-submission.md).
+
+Può essere frustrante quando gli utenti dell'organizzazione ricevono messaggi di posta indesiderata o messaggi di phishing nella cartella posta in arrivo o se non ricevono un messaggio di posta elettronica legittimo perché sono contrassegnati come posta indesiderata. La correzione dei filtri per la posta indesiderata è sempre più accurata.
+
+L'utente e gli utenti possono aiutare questo processo inviando falsi positivi (buon messaggio di posta elettronica contrassegnato come cattivo), falsi negativi (posta errata consentita) e messaggi di phishing a Microsoft per l'analisi.
 
 > [!NOTE]
 > A causa dell'elevato volume di invii ricevuti, potrebbe non essere possibile rispondere a tutte le richieste di analisi.
 
-Gli amministratori possono inviare messaggi di posta elettronica, URL e allegati a Microsoft per la revisione. Vedere gli [invii di amministratore in Office 365 ATP](admin-submission.md).
+## <a name="submit-false-negatives-to-microsoft"></a>Inviare falsi negativi a Microsoft
 
-## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>Inviare messaggi di posta indesiderata o tentativi di phishing che hanno superato i filtri posta indesiderata
+> [!TIP]
+> Invece di utilizzare le procedure seguenti per segnalare falsi negativi, gli utenti in Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) possono utilizzare il componente aggiuntivo per i messaggi di report per Microsoft Outlook. Per informazioni su come installare e utilizzare questo strumento, vedere [Enable the report Message Add-in](enable-the-report-message-add-in.md).
 
-Se si riceve un messaggio che passa attraverso i filtri per la posta indesiderata e che deve essere classificato come posta indesiderata o phishing, è possibile inviare il messaggio "falso negativo" ai team di analisi di posta indesiderata e Microsoft Phishing Analysis, a seconda dei casi. Gli analisti rivedranno il messaggio e lo aggiungeranno ai filtri a livello di servizio, se soddisfano i criteri di classificazione.
+Se si riceve un messaggio che passa attraverso il filtro di posta indesiderata che dovrebbe essere stato identificato come posta indesiderata o phishing, è possibile inviare il messaggio ai team di analisi di posta indesiderata di Microsoft e Microsoft Phishing Analysis come appropriato. Gli analisti rivedranno il messaggio e lo aggiungeranno ai filtri a livello di servizio, se soddisfano i criteri di classificazione.
 
-Per ulteriori impostazioni di posta indesiderata che si applicano all'intera organizzazione, vedere [protezione da posta indesiderata in Office 365](anti-spam-protection.md). In questo articolo sono contenuti suggerimenti che consentono di evitare falsi negativi.
+1. Creare un nuovo messaggio di posta elettronica vuoto con uno dei destinatari seguenti:
 
-È possibile inviare messaggi di posta indesiderata nei modi seguenti:
+   - **Posta indesiderata**:`junk@office365.microsoft.com`
 
-- Per gli utenti di Outlook e Outlook sul Web, utilizzare il componente aggiuntivo segnala messaggio per Microsoft Outlook. Per informazioni su come installare e utilizzare questo strumento, vedere [Enable the report Message Add-in](enable-the-report-message-add-in.md).
+   - **Phishing**:`phish@office365.microsoft.com`
 
-- È inoltre possibile utilizzare la posta elettronica per inviare messaggi a Microsoft che devono essere classificati come indesiderati o truffe di phishing, come descritto nella procedura seguente.
-
-### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a>Inviare messaggi di posta indesiderata o tentativi di phishing a Microsoft 
-
-Per inviare messaggi di posta indesiderata o tentativi di phishing a Microsoft:
-
-1. Creare un messaggio di posta elettronica vuoto.
-
-2. Indirizzare il messaggio al team di Microsoft che esamina i messaggi, come indicato di seguito:
-
-   - Per i messaggi di posta indesiderata: junk@office365.microsoft.com
-
-   - Per i messaggi di truffa di phishing: phish@office365.microsoft.com
-
-3. Copiare e incollare il messaggio di posta indesiderata o di phishing nel nuovo messaggio come allegato.
+2. Trascinare e rilasciare il messaggio di posta indesiderata o di phishing nel nuovo messaggio. In questo modo verrà salvato il messaggio di posta indesiderata o di phishing come allegato nel nuovo messaggio. Non copiare e incollare il contenuto del messaggio o inoltrare il messaggio (è necessario il messaggio originale, in modo da poter ispezionare le intestazioni del messaggio).
 
    > [!NOTE]
-   > * È possibile allegare più messaggi nel nuovo messaggio. Assicurarsi che tutti i messaggi siano dello stesso tipo: messaggi di truffa di phishing o messaggi di posta indesiderata. <br/><br/>* Lasciare vuoto il corpo del nuovo messaggio. <br/><br/>* Utilizzare i formati. msg (default Outlook Format) o. eml (impostazione predefinita di Outlook sul Web Format) per i messaggi allegati.
+   > <ul><li>È possibile allegare più messaggi nel nuovo messaggio. Assicurarsi che tutti i messaggi siano dello stesso tipo: messaggi di truffa di phishing o messaggi di posta indesiderata.</li><li>Lasciare vuoto il corpo del nuovo messaggio.<li></li>Utilizzare i formati. msg (formato Outlook predefinito) o. eml (predefinito di Outlook sul Web Format) per i messaggi allegati.</li></ul>
 
-4. Fare clic su **Invia**.
+3. Al termine, fare clic su **Invia**.
 
-## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>Inviare messaggi contrassegnati come posta indesiderata ma che dovrebbero essere autorizzati 
+> [!TIP]
+> Gli amministratori dispongono di diversi modi per bloccare messaggi specifici che vengono erroneamente identificati come posta indesiderata. Per ulteriori informazioni, vedere [creare elenchi di mittenti bloccati in Office 365](create-block-sender-lists-in-office-365.md).
 
-Se un messaggio è stato erroneamente identificato come posta indesiderata, è possibile inviare il messaggio "falso positivo" al team di analisi di posta indesiderata di Microsoft. Gli analisti valuterà e analizzerà il messaggio. A seconda dei risultati dell'analisi, i criteri di filtro del contenuto della posta indesiderata a livello di servizio potrebbero essere modificati per consentire l'inoltro del messaggio.
+## <a name="submit-false-positives-to-microsoft"></a>Inviare falsi positivi a Microsoft
 
-Gli amministratori possono esaminare altre informazioni sulle impostazioni di posta indesiderata che si applicano a un'intera organizzazione. Vedere [creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md). Queste informazioni sono utili se si svolge il ruolo di amministratore e si desidera impedire la visualizzazione di falsi positivi.
+> [!TIP]
+> Invece di utilizzare le procedure seguenti per segnalare falsi positivi, gli utenti di Outlook e Outlook sul Web possono utilizzare il componente aggiuntivo per i messaggi di report per Microsoft Outlook. Per informazioni su come installare e utilizzare questo strumento, vedere [Enable the report Message Add-in](enable-the-report-message-add-in.md).
 
-È possibile inviare messaggi non di posta indesiderata nei modi seguenti:
+Se un messaggio è stato erroneamente identificato come posta indesiderata, è possibile inviare il messaggio al team di analisi di posta indesiderata di Microsoft. Gli analisti valuteranno il messaggio e (a seconda dei risultati dell'analisi), i filtri a livello di servizio possono essere modificati in modo da consentire il passaggio del messaggio.
 
-- Se si utilizza l'azione **Sposta messaggio all'interno della cartella posta indesiderata** quando si configurano i filtri del contenuto (questa è l'azione predefinita), gli utenti possono rilasciare messaggi falsi positivi nella cartella posta indesiderata di Outlook o Outlook sul Web (in precedenza noto come Outlook Web App).
+1. Creare un nuovo messaggio di posta elettronica vuoto `not_junk@office365.microsoft.com` come destinatario:
 
-  - Gli utenti di Outlook possono rilasciare messaggi falsi positivi utilizzando l'opzione di menu **non indesiderata** con il pulsante destro del mouse. Tuttavia, è necessario inviare il messaggio a Microsoft tramite posta elettronica, come illustrato nella procedura descritta in questo articolo.
+2. Trascinare e rilasciare il messaggio erroneamente identificato nel nuovo messaggio. In questo modo verrà salvato il messaggio erroneamente identificato come allegato nel nuovo messaggio. Non copiare e incollare il contenuto del messaggio o inoltrare il messaggio (è necessario il messaggio originale, in modo da poter ispezionare le intestazioni del messaggio).
 
-  - Gli utenti di Outlook sul Web possono rilasciare messaggi falsi positivi e inviarli a Microsoft per l'analisi usando il **segno come azione non indesiderata** . Per ulteriori informazioni su come eseguire questa operazione, vedere [segnalare la posta indesiderata e i tentativi di phishing in Outlook sul Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
+   > [!NOTE]
+   > <ul><li>È possibile allegare più messaggi nel nuovo messaggio. Assicurarsi che tutti i messaggi siano dello stesso tipo: messaggi di truffa di phishing o messaggi di posta indesiderata.</li><li>Lasciare vuoto il corpo del nuovo messaggio.<li></li>Utilizzare i formati. msg (formato Outlook predefinito) o. eml (predefinito di Outlook sul Web Format) per i messaggi allegati.</li></ul>
 
-- Se si utilizza l'azione del **messaggio in quarantena** invece dell'azione **Sposta messaggio nell'indesiderata della cartella posta elettronica** quando si configurano i filtri del contenuto:
+3. Al termine, fare clic su **Invia**.
 
-  - Gli amministratori possono rilasciare i messaggi di posta indesiderata in quarantena e segnalarli come falsi positivi dall'interfaccia di amministrazione di Exchange. Per ulteriori informazioni, vedere [gestire i messaggi e i file in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md).
+> [!TIP]
+> Gli amministratori dispongono di diversi modi per consentire ai messaggi specifici di ignorare il filtro posta indesiderata. Per ulteriori informazioni, vedere [creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md).
 
-  - Gli utenti possono rilasciare i propri messaggi di posta indesiderata in quarantena e segnalarli come falsi positivi tramite i seguenti canali:
+## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Creare una regola del flusso di posta elettronica per ricevere le copie dei messaggi segnalati a Microsoft
 
-  - Interfaccia utente EAC. Per ulteriori informazioni, vedere [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md).
+È possibile creare una regola del flusso di posta (nota anche come regola di trasporto) che consente di cercare i messaggi di posta elettronica segnalati a Microsoft utilizzando i metodi descritti in questo argomento ed è possibile configurare i destinatari Ccn in modo che ricevano le copie dei messaggi segnalati.
 
-  - Messaggi di notifica di posta indesiderata utente finale (se abilitati dall'amministratore).
+È possibile creare la regola del flusso di posta elettronica nell'interfaccia di amministrazione di Exchange (EAC) e in PowerShell (Exchange Online PowerShell per i clienti di Office 365; PowerShell di Exchange Online Protection per clienti EOP autonomi.
 
-- È inoltre possibile utilizzare la posta elettronica per inviare messaggi a Microsoft che non devono essere classificati come posta indesiderata. Quando si esegue questa operazione, accertarsi di utilizzare i passaggi descritti nella procedura seguente.
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-### <a name="use-email-to-submit-false-positive-messages"></a>Utilizzo della posta elettronica per inviare messaggi falsi positivi
+- Prima di poter eseguire queste procedure, è necessario disporre delle autorizzazioni in Exchange Online. In particolare, è necessario che venga assegnato il ruolo **regole di trasporto** , assegnato ai ruoli Gestione **organizzazione**, **Gestione conformità**e **record** per impostazione predefinita. Per altre informazioni, vedere [Gestire i gruppi di ruoli in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-Utilizzare la stessa procedura descritta nella sezione [utilizzo della posta elettronica per inviare messaggi di posta indesiderata o tentativi di phishing a Microsoft](#use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft) , ma inviare il messaggio a not_junk@office365.microsoft.com.
+- Per aprire EAC in Exchange Online, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
 
-## <a name="spam-evaluation-and-rules-deployment"></a>Distribuzione di valutazioni e regole di posta indesiderata
+- Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Per connettersi a PowerShell di Exchange Online Protection autonomo, vedere [connessione a Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-Il team di analisi di posta indesiderata esamina i messaggi inviati e regola i filtri di posta indesiderata per impedire la posta indesiderata futura. Di conseguenza, i filtri posta indesiderata di Office 365 areconstantly sono stati affinati. Gli elementi inviati vengono valutati a livello di rete. Gli invii falsi positivi sono esaminati e valutati per una possibile rettifica delle regole per consentire i messaggi futuri tramite i filtri di posta indesiderata. Pertanto, la notifica al servizio dei falsi positivi e anche falsi negativi (posta indesiderata non filtrata) è vantaggiosa per tutti i clienti che usano la rete globale. Il team di posta indesiderata esamina gli indicatori all'interno di ogni messaggio inviato, ad esempio:
+- Per ulteriori informazioni sulle regole del flusso di posta in Exchange Online e EOP autonomo, vedere i seguenti argomenti:
 
-- Indirizzo mittente
+  - [Regole del flusso di posta (regole di trasporto) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-- Indirizzo IP di invio
+  - [Condizioni ed eccezioni della regola del flusso di posta (predicati) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-- Parole chiave
+  - [Azioni delle regole del flusso di posta in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- Frasi
+### <a name="use-the-eac-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Utilizzo dell'interfaccia di amministrazione di Exchange per creare una regola del flusso di posta elettronica per ricevere copie dei messaggi segnalati
 
-- Frequenza di trasmissione
+1. Nell'interfaccia di amministrazione di Exchange, andare a **Flusso di posta** \> **Regole**.
 
-- Altre tendenze e modelli
+2. Fare **Add** ![clic su Aggiungi](../../media/ITPro-EAC-AddIcon.png) icona e quindi selezionare **Crea una nuova regola**.
 
-Dopo aver esaminato queste informazioni, il team di posta indesiderata potrebbe apportare modifiche ai layer del filtro della posta indesiderata del servizio. Per ulteriori informazioni sul team di posta indesiderata, è possibile guardare il seguente video solo in inglese:
+3. Nella pagina **Nuova regola** che si apre, configurare le seguenti impostazioni:
 
-[Video del team di posta indesiderata di Microsoft Exchange](https://youtu.be/-TpX_-GMC7o?hd=1)
+   - **Nome**: immettere un nome univoco descrittivo per la regola. Ad esempio, i messaggi Ccn segnalati a Microsoft.
 
-La valutazione della posta indesiderata è un processo continuo applicabile a prescindere dal set di caratteri o della lingua di origine. Dal momento che un messaggio di posta indesiderata può essere vago o non contenere testo nell'oggetto o nel corpo, il team della posta indesiderata si basa su altre caratteristiche del messaggio per eseguire il filtraggio. Ciò significa che dopo che il team ha contrassegnato un determinato messaggio come posta indesiderata e ha apportato le necessarie modifiche alla base di regole, il messaggio viene bloccato finché le relative caratteristiche non hanno subito modifiche sufficienti ad evitare i filtri. Nuove regole per la posta indesiderata vengono sviluppate continuamente. I tempi necessari per lo sviluppo di nuove regole o l'analisi dei messaggi inviati possono variare a seconda della quantità e della qualità degli invii. Poiché le nuove regole della posta indesiderata vengono impostate globalmente per tutti gli utenti, non tutti i singoli invii di posta indesiderata determineranno la creazione di una nuova regola.
+   - Fare clic su **altre opzioni**.
+
+   - **Applica questa regola se**: selezionare **l'indirizzo del destinatario** \> **include una**o più delle seguenti parole: nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori seguenti, fare clic](../../media/ITPro-EAC-AddIcon.png)su **Aggiungi** ![icona e ripetere fino a quando non sono stati immessi tutti i valori.
+
+     - `junk@office365.microsoft.com`
+     - `abuse@messaging.microsoft.com`
+     - `phish@office365.microsoft.com`
+     - `false_positive@messaging.microsoft.com`
+
+     Per modificare una voce, selezionarla e fare **Edit** ![clic su modifica](../../media/ITPro-EAC-EditIcon.png)icona modifica. Per rimuovere una voce, selezionarla e fare **Remove** ![clic su Rimuovi](../../media/ITPro-EAC-DeleteIcon.png)icona Rimuovi.
+
+     Al termine, fare clic su **OK**.
+
+   - **Eseguire le operazioni seguenti**: selezionare **Aggiungi destinatari** \> **alla casella Ccn**. Nella finestra di dialogo che viene visualizzata, individuare e selezionare i destinatari che si desidera aggiungere. Al termine, fare clic su **OK**.
+
+4. È possibile effettuare selezioni aggiuntive per controllare la regola, testare la regola, attivare la regola per un periodo di tempo specifico e altre impostazioni. È consigliabile testare la regola prima di applicarla.
+
+5. Al termine, scegliere **Salva**.
+
+### <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Utilizzo di PowerShell per creare una regola del flusso di posta elettronica per ricevere copie dei messaggi segnalati
+
+In questo esempio viene creata una nuova regola del flusso di posta denominata Ccn messaggi segnalati a Microsoft che consente di cercare i messaggi di posta elettronica segnalati a Microsoft tramite i metodi descritti in questo argomento e di aggiungere gli utenti laura@contoso.com e julia@contoso.com come destinatari Ccn.
+
+```powershell
+New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressContainsWords "junk@office365.microsoft.com","abuse@messaging.microsoft.com","phish@office365.microsoft.com","false_positive@messaging.microsoft.com" -BlindCopyTo "laura@contoso.com","julia@contoso.com".
+```
+
+Per informazioni dettagliate su sintassi e parametri, vedere [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+
+### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
+
+Per verificare di aver configurato le regole del flusso di posta elettronica per ricevere le copie dei messaggi segnalati, eseguire una delle operazioni seguenti:
+
+- Nell'interfaccia di amministrazione di Exchange, andare a **regole** \> del **flusso** \> di **Edit** ![posta selezionare la](../../media/ITPro-EAC-EditIcon.png)regola \> fare clic su Modifica icona modifica e verificare le impostazioni.
+
+- In PowerShell, eseguire il comando riportato di seguito per verificare le impostazioni:
+
+  ```powershell
+  Get-TransportRule -Identity "Bcc Messages Reported to Microsoft" | Format-List
+  ```
+
+- Inviare un messaggio di prova a uno degli indirizzi di posta elettronica per la creazione di report e verificare i risultati.

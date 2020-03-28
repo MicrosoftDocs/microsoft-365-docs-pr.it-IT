@@ -17,12 +17,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: La funzionalità allegati sicuri fornisce il tempo di fare clic sulla verifica degli allegati di posta elettronica. Utilizzo degli allegati sicuri per proteggere l'organizzazione da file dannosi che gli utenti inviano o ricevono tramite posta elettronica.
-ms.openlocfilehash: c95287b3dd05cce28bad6761ca7e69ce9cc2f914
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 60a5a95af846fe6dbe8c2c7aa6dced9deaae1a2d
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599813"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033459"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Allegati sicuri di Office 365 ATP
 
@@ -68,4 +68,4 @@ Nella tabella seguente vengono descritti alcuni scenari di esempio. In tutti que
 
 - Se si riceve un file da analizzare da Microsoft, visitare [inviare un file per l'analisi antimalware](https://aka.ms/wdsi/submit).
 
-- Se si riceve un messaggio di posta elettronica (con o senza allegato) che si desidera inviare a Microsoft per l'analisi, utilizzare il [componente aggiuntivo segnala messaggio](enable-the-report-message-add-in.md).
+- Se si riceve un messaggio di posta elettronica (con o senza allegato) che si desidera inviare a Microsoft per l'analisi, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).

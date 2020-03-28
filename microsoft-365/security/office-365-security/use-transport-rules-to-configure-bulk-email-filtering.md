@@ -15,12 +15,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono scoprire come utilizzare le regole del flusso di posta in Exchange Online Protection per il filtro della posta elettronica in blocco.
-ms.openlocfilehash: 2ac81d798af957f23f95b92f633b93bdda677991
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: b08edfdd88f6f522d3bf212b209ee4b293d7198a
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895048"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033639"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>Utilizzare le regole del flusso di posta per filtrare la posta elettronica in blocco in Office 365
 
@@ -66,7 +66,7 @@ In questo argomento viene illustrato come creare queste regole del flusso di pos
 
    - **Applica questa regola se**: configurare una delle impostazioni seguenti per cercare il contenuto nei messaggi utilizzando espressioni regolari (Regex) o parole o frasi:
 
-     - **L'oggetto o il corpo del corpo** \> o dell'oggetto **corrisponde a questi modelli di testo**: nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori seguenti,](../../media/ITPro-EAC-AddIcon.png)fare clic su **Aggiungi** ![icona e ripetere il numero di volte necessario.
+     - **L'oggetto o il corpo del corpo** \> o dell'oggetto **corrisponde a questi modelli di testo**: nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori seguenti,](../../media/ITPro-EAC-AddIcon.png)fare clic su **Aggiungi** ![icona e ripetere fino a quando non sono stati immessi tutti i valori.
 
        - `If you are unable to view the content of this email\, please`
 
@@ -96,7 +96,7 @@ In questo argomento viene illustrato come creare queste regole del flusso di pos
 
        Al termine, fare clic su **OK**.
 
-     - **L'oggetto o il corpo dell'oggetto** \> o **del corpo include una di queste parole**: nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori seguenti, fare clic](../../media/ITPro-EAC-AddIcon.png)su **Aggiungi** ![icona e ripetere il numero di volte necessario.
+     - **L'oggetto o il corpo dell'oggetto** \> o del corpo include una o più **delle seguenti parole**: nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori riportati di](../../media/ITPro-EAC-AddIcon.png)seguito, fare clic su **Aggiungi** ![icona e ripetere fino a quando non sono stati immessi tutti i valori.
 
        - `to change your preferences or unsubscribe`
 
@@ -138,7 +138,7 @@ In questo argomento viene illustrato come creare queste regole del flusso di pos
 
    Al termine, fare clic su **Salva**
 
-## <a name="use-powershell-to-create-a-mail-flow-rules-that-filter-bulk-email"></a>Utilizzo di PowerShell per creare regole del flusso di posta che filtrano la posta elettronica in blocco
+## <a name="use-powershell-to-create-mail-flow-rules-that-filter-bulk-email"></a>Utilizzo di PowerShell per creare regole del flusso di posta che filtrano la posta elettronica in blocco
 
 Utilizzare la sintassi seguente per creare una o entrambe le regole del flusso di posta (espressioni regolari e parole):
 

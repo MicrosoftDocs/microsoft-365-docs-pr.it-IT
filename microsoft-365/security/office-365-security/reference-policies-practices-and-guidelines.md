@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure consigliate per aiutare a proteggere gli utenti da messaggi di posta elettronica abusivi, indesiderati o dannosi.
-ms.openlocfilehash: e6e5565b032af656b2204ce448581014595013de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c95c586f6287857b910c82e8f21b3d977cdc5966
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598613"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033747"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Informazioni di riferimento: criteri, procedure e linee guida
 
@@ -89,7 +89,7 @@ Microsoft collabora attivamente con gli enti del settore e i provider di servizi
 
 ## <a name="abuse-and-spam-reporting"></a>Segnalazione di abusi e posta indesiderata
 
-Per segnalare messaggi di posta elettronica illeciti, abusivi, indesiderati o dannosi, [segnalare la posta indesiderata e i tentativi di phishing in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). L'invio di questi tipi di comunicazioni è una violazione dei criteri di Microsoft e le azioni appropriate verranno eseguite nei rapporti confermati.
+Per segnalare messaggi di posta elettronica illeciti, abusivi, indesiderati o dannosi, vedere [report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md). L'invio di questi tipi di comunicazioni è una violazione dei criteri di Microsoft e verranno intraprese azioni appropriate sui rapporti confermati.
 
 ## <a name="law-enforcement"></a>Applicazione della legge
 

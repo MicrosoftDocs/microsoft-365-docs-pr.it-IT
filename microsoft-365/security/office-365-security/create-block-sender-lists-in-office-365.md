@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Gli amministratori possono ottenere informazioni sulle opzioni disponibili in Office 365 e EOP per bloccare i messaggi in ingresso.
-ms.openlocfilehash: a588c9c869dae39ab60fc7ad68b6496f57ae015a
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893863"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033423"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>Creare elenchi di mittenti bloccati in Office 365
 
@@ -30,12 +30,12 @@ Il metodo migliore per bloccare i mittenti varia in base all'ambito di impatto. 
 
 2. Elenchi di mittenti bloccati o bloccati (criteri di protezione dalla posta indesiderata)
 
-3. Regole di flusso mai
+3. Regole del flusso di posta
 
 4. L'elenco indirizzi IP bloccati (filtro connessioni)
 
 > [!NOTE]
-> Anche se è possibile utilizzare le impostazioni di blocco a livello dell'organizzazione per risolvere i falsi negativi (posta indesiderata), è necessario inviare tali messaggi a Microsoft per l'analisi. La gestione dei falsi negativi tramite gli elenchi bloccati aumenta significativamente il sovraccarico amministrativo. Se si utilizzano gli elenchi bloccati per deflettere la posta indesiderata, è necessario mantenere l'argomento per l' [invio di messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft per l'analisi](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
+> Anche se è possibile utilizzare le impostazioni di blocco a livello dell'organizzazione per risolvere i falsi negativi (posta indesiderata), è necessario inviare tali messaggi a Microsoft per l'analisi. La gestione dei falsi negativi tramite gli elenchi bloccati aumenta significativamente il sovraccarico amministrativo. Se si utilizzano gli elenchi bloccati per deflettere la posta indesiderata, è necessario mantenere l'argomento [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md) in pronto.
 
 Al contrario, sono inoltre disponibili diverse opzioni per consentire sempre la posta elettronica da origini specifiche utilizzando _elenchi di mittenti attendibili_. Per ulteriori informazioni, vedere [creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md).
 

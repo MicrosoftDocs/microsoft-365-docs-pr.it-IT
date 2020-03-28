@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Con il codice "Customer Key", è possibile controllare le chiavi di crittografia dell'organizzazione e quindi configurare Office 365 per utilizzarle per crittografare i dati a riposo nei data center di Microsoft.
-ms.openlocfilehash: 0910374051073cb67ee4d2a4fac0a88871a2fd73
-ms.sourcegitcommit: 004f01fc5d5bdb8aac03d69692d86c38b5e05e14
+ms.openlocfilehash: df47f0df0f30de3529982099cb59efe2a741cd34
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42333653"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029872"
 ---
 # <a name="service-encryption-with-customer-key-in-office-365"></a>Crittografia del servizio con la chiave del cliente in Office 365
 
@@ -49,7 +49,7 @@ La chiave del cliente Crittografa solo i dati a riposo nel cloud. La chiave Cust
 
 ## <a name="about-the-data-encryption-policy-dep"></a>Informazioni sui criteri di crittografia dei dati (DEP, Data Encryption Policy)
 
-Un criterio di crittografia dei dati definisce la gerarchia di crittografia per crittografare i dati utilizzando ognuno dei tasti forniti e la chiave di disponibilità protetta da Microsoft. È possibile creare DEPs utilizzando i cmdlet di PowerShell, che sono diversi per ogni servizio, e assegnare quelli per crittografare i dati dell'applicazione. Ad esempio:
+Un criterio di crittografia dei dati definisce la gerarchia di crittografia per crittografare i dati utilizzando ognuno dei tasti forniti e la chiave di disponibilità protetta da Microsoft. È possibile creare DEPs utilizzando i cmdlet di PowerShell, che sono diversi per ogni servizio, e assegnare tali DEPs per crittografare i dati dell'applicazione. Ad esempio:
 
 **Exchange Online e Skype for business** È possibile creare fino a 50 DEPs per tenant. È possibile associare DEPs alle chiavi dei clienti in Azure Key Vault e quindi assegnare DEPs alle singole cassette postali. Quando si assegna una funzionalità di protezione esecuzione programmi a una cassetta postale:
 

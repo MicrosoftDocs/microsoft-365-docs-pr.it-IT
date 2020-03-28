@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di impedire la posta indesiderata in Exchange Online e Office 365. Ottenere troppi messaggi di posta indesiderata in Office 365? È possibile personalizzare i filtri posta indesiderata e le impostazioni di protezione da posta indesiderata
-ms.openlocfilehash: 5558bfa29427df4df12a83bc8b30adaf6001b9c3
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: bb2b714273af5177d8c69c4b89b0daec87c31650
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894071"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033471"
 ---
 # <a name="anti-spam-protection-in-office-365"></a>Protezione dalla posta indesiderata in Office 365
 
@@ -61,7 +61,7 @@ Le impostazioni di protezione da posta indesiderata in EOP sono costituite dalle
 
 Di seguito sono riportate alcune procedure consigliate che si applicano a uno scenario:
 
-- Invia sempre messaggi non classificati a Microsoft. Gli amministratori possono utilizzare l' [esploratore invii](admin-submission.md)o gli utenti possono segnalare i messaggi tramite il [componente aggiuntivo utilizza il messaggio di report](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Invia sempre messaggi non classificati a Microsoft. Per ulteriori informazioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - **Esaminare le intestazioni dei messaggi di protezione da posta indesiderata**: questi valori indicano il motivo per cui un messaggio è stato contrassegnato come posta indesiderata o perché ha ignorato il filtro posta indesiderata. Per ulteriori informazioni, vedere [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md).
 

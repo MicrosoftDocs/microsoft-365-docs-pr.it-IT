@@ -16,12 +16,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: daabb84115f1f993fd01891bcef74c23f0391bb4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
+ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894059"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033495"
 ---
 # <a name="anti-spam-protection-in-office-365-faq"></a>Protezione dalla posta indesiderata nelle domande frequenti su Office 365
 
@@ -42,7 +42,9 @@ R. **Per i messaggi in ingresso:** La maggior parte della posta indesiderata vie
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>D. Che cos'è una variante di posta indesiderata di zero-day e come viene gestita dal servizio?
 
-R. Una variante di posta indesiderata di zero-day è una variante di posta indesiderata di prima generazione sconosciuta che non è mai stata acquisita o analizzata, quindi i filtri di protezione da posta indesiderata non dispongono ancora di informazioni disponibili per il rilevamento. Dopo che un campione di posta indesiderata di zero giorni viene acquisito e analizzato dai nostri analisti di posta indesiderata, se soddisfa i criteri di classificazione della posta indesiderata, i filtri di protezione da posta indesiderata vengono aggiornati per individuarlo e non è più considerato "zero-day". (**Nota:** se si riceve un messaggio che potrebbe essere una variante di posta indesiderata di zero giorni, per aiutarci a migliorare il servizio, inviare il messaggio a Microsoft utilizzando uno dei metodi descritti in [inviare messaggi di posta indesiderata, non di posta indesiderata e phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).)
+R. Una variante di posta indesiderata di zero-day è una variante di posta indesiderata di prima generazione sconosciuta che non è mai stata acquisita o analizzata, quindi i filtri di protezione da posta indesiderata non dispongono ancora di informazioni disponibili per il rilevamento. Dopo che un campione di posta indesiderata di zero giorni viene acquisito e analizzato dai nostri analisti di posta indesiderata, se soddisfa i criteri di classificazione della posta indesiderata, i filtri di protezione da posta indesiderata vengono aggiornati per individuarlo e non è più considerato "zero-day".
+
+**Nota:** Se si riceve un messaggio che potrebbe essere una variante di posta indesiderata di zero giorni, per aiutarci a migliorare il servizio, inviare il messaggio a Microsoft utilizzando uno dei metodi descritti nei [messaggi e nei file di report a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="q-do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>D. È necessario configurare il servizio per fornire la protezione dalla posta indesiderata?
 
@@ -72,7 +74,7 @@ R. Sì, il servizio dispone di un filtro URL che consente di controllare gli URL
 
 ## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>D. In che modo gli utenti che utilizzano il servizio inviano falsi negativi (posta indesiderata) e falsi positivi (posta non indesiderata) a Microsoft?
 
-R. I messaggi di posta indesiderata e non possono essere inviati a Microsoft per l'analisi in diversi modi. Per ulteriori informazioni, vedere [Invio di messaggi di posta indesiderata e non e tentativi di phishing a Microsoft per l'analisi](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+R. I messaggi di posta indesiderata e non possono essere inviati a Microsoft per l'analisi in diversi modi. Per ulteriori informazioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="q-can-i-get-spam-reports"></a>D. È possibile ricevere rapporti sulla posta indesiderata?
 
