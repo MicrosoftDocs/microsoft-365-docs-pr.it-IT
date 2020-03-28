@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
@@ -17,66 +17,67 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come configurare una pianificazione per un report nel centro sicurezza &amp; e conformità.
-ms.openlocfilehash: 5a7a4d0b6bef3f800a53e4f980ccd689e011a9ea
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3e09dee36e14ca1e25f6ea20c8f2b5843dc7edaa
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083467"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43030165"
 ---
-# <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a><span data-ttu-id="c2b34-103">Creare una pianificazione per un report nel centro sicurezza &amp; e conformità</span><span class="sxs-lookup"><span data-stu-id="c2b34-103">Create a schedule for a report in the Security &amp; Compliance Center</span></span>
+# <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a><span data-ttu-id="776ec-103">Creare una pianificazione per un report nel centro sicurezza &amp; e conformità</span><span class="sxs-lookup"><span data-stu-id="776ec-103">Create a schedule for a report in the Security &amp; Compliance Center</span></span>
 
-<span data-ttu-id="c2b34-104">Nel centro sicurezza &amp; e conformità sono disponibili diversi [report e](reports-and-insights-in-security-and-compliance.md) informazioni utili per consentire al team di sicurezza dell'organizzazione di attenuare e risolvere i rischi per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="c2b34-104">In the Security &amp; Compliance Center, several [reports and insights](reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization.</span></span> <span data-ttu-id="c2b34-105">Se si è membri del team di sicurezza dell'organizzazione, è possibile creare una pianificazione per un report.</span><span class="sxs-lookup"><span data-stu-id="c2b34-105">If you're a member of your organization's security team, you can create a schedule for a report.</span></span> <span data-ttu-id="c2b34-106">La pianificazione creata può includere un intervallo di date personalizzato per soddisfare la propria organizzazione.</span><span class="sxs-lookup"><span data-stu-id="c2b34-106">The schedule you create can include a custom date ranges to suit your organization.</span></span> 
+<span data-ttu-id="776ec-104">Nel centro sicurezza &amp; e conformità sono disponibili diversi [report e](reports-and-insights-in-security-and-compliance.md) informazioni utili per consentire al team di sicurezza dell'organizzazione di attenuare e risolvere i rischi per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="776ec-104">In the Security &amp; Compliance Center, several [reports and insights](reports-and-insights-in-security-and-compliance.md) are available to help your organization's security team mitigate and address threats to your organization.</span></span> <span data-ttu-id="776ec-105">Se si è membri del team di sicurezza dell'organizzazione, è possibile creare una pianificazione per un report.</span><span class="sxs-lookup"><span data-stu-id="776ec-105">If you're a member of your organization's security team, you can create a schedule for a report.</span></span> <span data-ttu-id="776ec-106">La pianificazione creata può includere un intervallo di date personalizzato per soddisfare la propria organizzazione.</span><span class="sxs-lookup"><span data-stu-id="776ec-106">The schedule you create can include a custom date ranges to suit your organization.</span></span> 
   
-## <a name="create-a-schedule-for-a-report"></a><span data-ttu-id="c2b34-107">Creare una pianificazione per un report</span><span class="sxs-lookup"><span data-stu-id="c2b34-107">Create a schedule for a report</span></span>
+## <a name="create-a-schedule-for-a-report"></a><span data-ttu-id="776ec-107">Creare una pianificazione per un report</span><span class="sxs-lookup"><span data-stu-id="776ec-107">Create a schedule for a report</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="c2b34-108">Verificare di disporre delle autorizzazioni necessarie per eseguire questa attività.</span><span class="sxs-lookup"><span data-stu-id="c2b34-108">Make sure that you have the necessary permissions to perform this task.</span></span> <span data-ttu-id="c2b34-109">In generale, gli amministratori globali di Office 365, gli amministratori della sicurezza e i lettori di sicurezza possono &amp; accedere ai report nel centro sicurezza e conformità.</span><span class="sxs-lookup"><span data-stu-id="c2b34-109">In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center.</span></span> <span data-ttu-id="c2b34-110">Per ulteriori informazioni sulle autorizzazioni, vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="c2b34-110">To learn more about permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+> <span data-ttu-id="776ec-108">Verificare di disporre delle autorizzazioni necessarie per eseguire questa attività.</span><span class="sxs-lookup"><span data-stu-id="776ec-108">Make sure that you have the necessary permissions to perform this task.</span></span> <span data-ttu-id="776ec-109">In generale, gli amministratori globali di Office 365, gli amministratori della sicurezza e i lettori di sicurezza possono &amp; accedere ai report nel centro sicurezza e conformità.</span><span class="sxs-lookup"><span data-stu-id="776ec-109">In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center.</span></span> <span data-ttu-id="776ec-110">Per ulteriori informazioni sulle autorizzazioni, vedere [Permissions in the Office &amp; 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="776ec-110">To learn more about permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
   
-1. <span data-ttu-id="c2b34-111">Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), accedere a \*\*\*\* \> **Dashboard**dei report.</span><span class="sxs-lookup"><span data-stu-id="c2b34-111">In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard**.</span></span>
+1. <span data-ttu-id="776ec-111">Nel [Centro sicurezza &amp; e conformità](https://protection.office.com), accedere a **Reports** \> **Dashboard**dei report.</span><span class="sxs-lookup"><span data-stu-id="776ec-111">In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard**.</span></span>
     
-2. <span data-ttu-id="c2b34-112">Scegliere uno dei seguenti report:</span><span class="sxs-lookup"><span data-stu-id="c2b34-112">Choose one of the following reports:</span></span> 
+2. <span data-ttu-id="776ec-112">Scegliere uno dei seguenti report:</span><span class="sxs-lookup"><span data-stu-id="776ec-112">Choose one of the following reports:</span></span> 
 
-    - <span data-ttu-id="c2b34-113">Corrispondenze di criteri DLP</span><span class="sxs-lookup"><span data-stu-id="c2b34-113">DLP policy matches</span></span>
-    - <span data-ttu-id="c2b34-114">Regola di trasporto di Exchange</span><span class="sxs-lookup"><span data-stu-id="c2b34-114">Exchange Transport Rule</span></span>
-    - <span data-ttu-id="c2b34-115">False positive e sostituzioni DLP</span><span class="sxs-lookup"><span data-stu-id="c2b34-115">DLP false positives and overrides</span></span>
-    - <span data-ttu-id="c2b34-116">Tipi di file ATP di Office 365</span><span class="sxs-lookup"><span data-stu-id="c2b34-116">Office 365 ATP file types</span></span>
-    - <span data-ttu-id="c2b34-117">Disposizione del messaggio ATP di Office 365</span><span class="sxs-lookup"><span data-stu-id="c2b34-117">Office 365 ATP message disposition</span></span>
-    - <span data-ttu-id="c2b34-118">Malware rilevato nel messaggio di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="c2b34-118">Malware detected in email</span></span>
-    - <span data-ttu-id="c2b34-119">Malware principale</span><span class="sxs-lookup"><span data-stu-id="c2b34-119">Top malware</span></span>
-    - <span data-ttu-id="c2b34-120">Destinatari e mittenti principali</span><span class="sxs-lookup"><span data-stu-id="c2b34-120">Top senders and recipients</span></span>
-    - <span data-ttu-id="c2b34-121">Rilevamenti spoof</span><span class="sxs-lookup"><span data-stu-id="c2b34-121">Spoof detections</span></span>
-    - <span data-ttu-id="c2b34-122">Rilevamenti di posta indesiderata</span><span class="sxs-lookup"><span data-stu-id="c2b34-122">Spam detections</span></span>
-    - <span data-ttu-id="c2b34-123">Posta elettronica inviata e ricevuta</span><span class="sxs-lookup"><span data-stu-id="c2b34-123">Sent and received email</span></span>
-    - <span data-ttu-id="c2b34-124">Incidenti DLP</span><span class="sxs-lookup"><span data-stu-id="c2b34-124">DLP incidents</span></span>
-    - <span data-ttu-id="c2b34-125">Rapporto di crittografia</span><span class="sxs-lookup"><span data-stu-id="c2b34-125">Encryption report</span></span>
+    - <span data-ttu-id="776ec-113">Corrispondenze di criteri DLP</span><span class="sxs-lookup"><span data-stu-id="776ec-113">DLP policy matches</span></span>
+    - <span data-ttu-id="776ec-114">Regola di trasporto di Exchange</span><span class="sxs-lookup"><span data-stu-id="776ec-114">Exchange Transport Rule</span></span>
+    - <span data-ttu-id="776ec-115">False positive e sostituzioni DLP</span><span class="sxs-lookup"><span data-stu-id="776ec-115">DLP false positives and overrides</span></span>
+    - <span data-ttu-id="776ec-116">Tipi di file ATP di Office 365</span><span class="sxs-lookup"><span data-stu-id="776ec-116">Office 365 ATP file types</span></span>
+    - <span data-ttu-id="776ec-117">Disposizione del messaggio ATP di Office 365</span><span class="sxs-lookup"><span data-stu-id="776ec-117">Office 365 ATP message disposition</span></span>
+    - <span data-ttu-id="776ec-118">Malware rilevato nel messaggio di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="776ec-118">Malware detected in email</span></span>
+    - <span data-ttu-id="776ec-119">Malware principale</span><span class="sxs-lookup"><span data-stu-id="776ec-119">Top malware</span></span>
+    - <span data-ttu-id="776ec-120">Destinatari e mittenti principali</span><span class="sxs-lookup"><span data-stu-id="776ec-120">Top senders and recipients</span></span>
+    - <span data-ttu-id="776ec-121">Rilevamenti spoof</span><span class="sxs-lookup"><span data-stu-id="776ec-121">Spoof detections</span></span>
+    - <span data-ttu-id="776ec-122">Rilevamenti di posta indesiderata</span><span class="sxs-lookup"><span data-stu-id="776ec-122">Spam detections</span></span>
+    - <span data-ttu-id="776ec-123">Posta elettronica inviata e ricevuta</span><span class="sxs-lookup"><span data-stu-id="776ec-123">Sent and received email</span></span>
+    - <span data-ttu-id="776ec-124">Incidenti DLP</span><span class="sxs-lookup"><span data-stu-id="776ec-124">DLP incidents</span></span>
+    - <span data-ttu-id="776ec-125">Rapporto di crittografia</span><span class="sxs-lookup"><span data-stu-id="776ec-125">Encryption report</span></span>
 
-    <span data-ttu-id="c2b34-126">In questo esempio, si sceglie il report dei tipi di file di protezione avanzata delle minacce.</span><span class="sxs-lookup"><span data-stu-id="c2b34-126">For this example, we'll choose the Advanced Threat Protection File Types report.</span></span>
+    <span data-ttu-id="776ec-126">In questo esempio, si sceglie il report dei tipi di file di protezione avanzata delle minacce.</span><span class="sxs-lookup"><span data-stu-id="776ec-126">For this example, we'll choose the Advanced Threat Protection File Types report.</span></span>
     
-3. <span data-ttu-id="c2b34-127">Nell'angolo in alto a sinistra del report scegliere **+ Crea pianificazione**.</span><span class="sxs-lookup"><span data-stu-id="c2b34-127">In the upper left corner of the report, choose **+ Create schedule**.</span></span> 
+3. <span data-ttu-id="776ec-127">Nell'angolo in alto a sinistra del report scegliere **+ Crea pianificazione**.</span><span class="sxs-lookup"><span data-stu-id="776ec-127">In the upper left corner of the report, choose **+ Create schedule**.</span></span> 
     
     ![Creare una pianificazione](../../media/atpfiletypes-createschedule.png)
 
-    <span data-ttu-id="c2b34-129">(Nota: non tutti i report dispongono del pulsante **+ Crea pianificazione** ).</span><span class="sxs-lookup"><span data-stu-id="c2b34-129">(NOTE: Not all reports have the **+ Create schedule** button.)</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="776ec-129">Non tutti i report dispongono del pulsante **+ Crea pianificazione** .</span><span class="sxs-lookup"><span data-stu-id="776ec-129">Not all reports have the **+ Create schedule** button.</span></span>
   
-    <span data-ttu-id="c2b34-130">Verrà visualizzata la finestra di dialogo **Crea pianificazione** .</span><span class="sxs-lookup"><span data-stu-id="c2b34-130">The **Create schedule** dialog box opens.</span></span> 
+    <span data-ttu-id="776ec-130">Verrà visualizzata la finestra di dialogo **Crea pianificazione** .</span><span class="sxs-lookup"><span data-stu-id="776ec-130">The **Create schedule** dialog box opens.</span></span> 
     
-4. <span data-ttu-id="c2b34-131">Mantenere le impostazioni predefinite e scegliere **Crea pianificazione**, oppure scegliere **Personalizza pianificazione**.</span><span class="sxs-lookup"><span data-stu-id="c2b34-131">Keep the default settings and choose **Create schedule**, or choose **Customize schedule**.</span></span>
+4. <span data-ttu-id="776ec-131">Mantenere le impostazioni predefinite e scegliere **Crea pianificazione**, oppure scegliere **Personalizza pianificazione**.</span><span class="sxs-lookup"><span data-stu-id="776ec-131">Keep the default settings and choose **Create schedule**, or choose **Customize schedule**.</span></span>
     
     ![È possibile utilizzare le impostazioni predefinite o personalizzare la pianificazione di un report](../../media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
-    <span data-ttu-id="c2b34-133">Se si sceglie di personalizzare la pianificazione del report, è possibile specificare la frequenza del report, l'indirizzo di posta elettronica del mittente e l'indirizzo di posta elettronica del destinatario.</span><span class="sxs-lookup"><span data-stu-id="c2b34-133">If you choose to customize your report schedule, you can specify the report's frequency, a sender's email address, and a recipient's email address.</span></span> 
+    <span data-ttu-id="776ec-133">Se si sceglie di personalizzare la pianificazione del report, è possibile specificare la frequenza del report, l'indirizzo di posta elettronica del mittente e l'indirizzo di posta elettronica del destinatario.</span><span class="sxs-lookup"><span data-stu-id="776ec-133">If you choose to customize your report schedule, you can specify the report's frequency, a sender's email address, and a recipient's email address.</span></span> 
     
-<span data-ttu-id="c2b34-134">Dopo aver creato una pianificazione per un report, tale rapporto verrà recapitato tramite posta elettronica agli indirizzi di posta elettronica dei destinatari automaticamente.</span><span class="sxs-lookup"><span data-stu-id="c2b34-134">Once you have created a schedule for a report, that report will be delivered via email to recipients' email addresses automatically.</span></span> 
+<span data-ttu-id="776ec-134">Dopo aver creato una pianificazione per un report, tale rapporto verrà recapitato tramite posta elettronica agli indirizzi di posta elettronica dei destinatari automaticamente.</span><span class="sxs-lookup"><span data-stu-id="776ec-134">Once you have created a schedule for a report, that report will be delivered via email to recipients' email addresses automatically.</span></span> 
   
-## <a name="related-topics"></a><span data-ttu-id="c2b34-135">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="c2b34-135">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="776ec-135">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="776ec-135">Related topics</span></span>
 
-[<span data-ttu-id="c2b34-136">Report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365</span><span class="sxs-lookup"><span data-stu-id="c2b34-136">Reports and insights in the Office 365 Security &amp; Compliance Center</span></span>](reports-and-insights-in-security-and-compliance.md)
+[<span data-ttu-id="776ec-136">Report e informazioni dettagliate nel centro sicurezza &amp; e conformità di Office 365</span><span class="sxs-lookup"><span data-stu-id="776ec-136">Reports and insights in the Office 365 Security &amp; Compliance Center</span></span>](reports-and-insights-in-security-and-compliance.md)
   
-[<span data-ttu-id="c2b34-137">Gestire le pianificazioni per i report nel &amp; Centro sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="c2b34-137">Manage schedules for reports in the Security &amp; Compliance Center</span></span>](manage-schedules-for-multiple-reports.md)
+[<span data-ttu-id="776ec-137">Gestire le pianificazioni per i report nel &amp; Centro sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="776ec-137">Manage schedules for reports in the Security &amp; Compliance Center</span></span>](manage-schedules-for-multiple-reports.md)
   
-[<span data-ttu-id="c2b34-138">Scaricare i report esistenti nel centro &amp; sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="c2b34-138">Download existing reports in the Security &amp; Compliance Center</span></span>](download-existing-reports.md)
+[<span data-ttu-id="776ec-138">Scaricare i report esistenti nel centro &amp; sicurezza e conformità</span><span class="sxs-lookup"><span data-stu-id="776ec-138">Download existing reports in the Security &amp; Compliance Center</span></span>](download-existing-reports.md)
   
-[<span data-ttu-id="c2b34-139">Scaricare un report personalizzato nel centro sicurezza &amp; e conformità</span><span class="sxs-lookup"><span data-stu-id="c2b34-139">Download a custom report in the Security &amp; Compliance Center</span></span>](set-up-and-download-a-custom-report.md)
+[<span data-ttu-id="776ec-139">Scaricare un report personalizzato nel centro sicurezza &amp; e conformità</span><span class="sxs-lookup"><span data-stu-id="776ec-139">Download a custom report in the Security &amp; Compliance Center</span></span>](set-up-and-download-a-custom-report.md)
   
 
