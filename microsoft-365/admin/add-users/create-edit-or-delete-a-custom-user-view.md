@@ -2,8 +2,8 @@
 title: Creare, modificare o eliminare una visualizzazione utente personalizzata in Office 365
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Informazioni su come utilizzare i filtri per creare, modificare o eliminare una visualizzazione utente personalizzata in Office 365.
-ms.openlocfilehash: ba03d3da3e8bfdc4f2a661d1dc59845a8a22609f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: ae12675afd47434ac6dd12dae683c79aae64be1f
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632954"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047060"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Creare, modificare o eliminare una visualizzazione utente personalizzata in Office 365
 
@@ -89,6 +89,13 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
 - **Utenti senza licenza:** selezionare questa casella per trovare tutti gli utenti a cui non è stata assegnata una licenza. I risultati di questa visualizzazione possono anche includere utenti che hanno una cassetta postale di Exchange ma non una licenza. Per individuare tali utenti, usare il filtro **Utenti senza licenza con cassette postali o archivi di Exchange**. I risultati di questa visualizzazione possono includere anche utenti che hanno un archivio di Exchange, ma non una licenza.
     
 - **Utenti senza licenza con cassette postali o archivi di Exchange:** selezionare questa casella per visualizzare gli account utente creati in Exchange Online che hanno una cassetta postale di Exchange, ma non una licenza per Office 365. I risultati di questo filtro includono gli utenti a cui è stato assegnato o che hanno un archivio di Exchange. 
+
+> [!NOTE]
+> Il filtro **utenti senza licenza con cassette postali di Exchange** funziona quando:
+1. La cassetta postale è stata recentemente convertita da **Shared** a **User** e non ha alcuna licenza.
+2. La cassetta postale è stata migrata di recente a Office 365 ma non è stata assegnata una licenza.
+3. La cassetta postale è stata creata utilizzando PowerShell e non è stata assegnata una licenza.
+4. Viene effettuato il provisioning di una nuova cassetta postale creata in locale con un cmdlet New-RemoteMailbox per l'utente.
     
 > [!TIP]
 > Se si crea una visualizzazione personalizzata che restituisce più di 2000 utenti, l'elenco utenti risultante non sarà ordinato. In questo caso, utilizzare la casella di ricerca per trovare gli utenti o modificare la visualizzazione personalizzata per affinare la ricerca. 
@@ -170,4 +177,3 @@ Alcune informazioni sulle visualizzazioni standard da tenere presente:
 
 
      
-

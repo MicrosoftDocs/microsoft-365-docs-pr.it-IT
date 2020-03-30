@@ -20,12 +20,12 @@ search.appverid:
 - BSA160
 ms.assetid: a91c958f-1279-499d-9959-12f0de08dc8f
 description: Ottenere il report sull'utilizzo di attività di SharePoint per conoscere l'attività di ogni utente di SharePoint, il numero di file condivisi e l'utilizzo di archiviazione.
-ms.openlocfilehash: df025d41a2c570761fd59e228eebb277c922e06e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a3c8d73707ef09c3702450ebddab6e43c159638c
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353427"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047048"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-attività di SharePoint
 
@@ -39,7 +39,7 @@ Ad esempio, è possibile comprendere l'attività di tutti gli utenti con licenza
 Per conoscere la quantità di attività eseguita in ogni sito di SharePoint e l'utilizzo dello spazio di archiviazione, visualizzare il [report utilizzo dei siti di SharePoint](sharepoint-site-usage.md).
   
 > [!NOTE]
-> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint o Skype for business per visualizzare i report. 
+> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report.  
  
 ## <a name="how-do-i-get-to-the-to-the-sharepoint-activity-report"></a>Come si torna al report attività in SharePoint?
 

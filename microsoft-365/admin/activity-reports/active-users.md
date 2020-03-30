@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Informazioni su come ottenere un report degli utenti attivi utilizzando il Dashboard Microsoft 365 Reports nell'interfaccia di amministrazione di Microsoft 365 e scoprire quante licenze di prodotto vengono utilizzate.
-ms.openlocfilehash: 6ac56f17e1d106eaa4d1c3a46ff603631532075f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e865fa1ed68e7e68c103bf6abc66816b844d7b2d
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353957"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046844"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Rapporti Microsoft 365 nell'interfaccia di amministrazione-utenti attivi
 
@@ -32,7 +32,7 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 Ad esempio, è possibile usare il report **Utenti attivi** per sapere quante licenze di prodotto individuali sono in uso nell'organizzazione ed eseguire il drill-down per ottenere informazioni su quali utenti usano quali prodotti. Questo report può aiutare gli amministratori a identificare i prodotti sottoutilizzati o gli utenti che potrebbero aver bisogno di formazione o informazioni aggiuntive. 
   
 > [!NOTE]
-> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint o Skype for business per visualizzare i report. 
+> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report.  
 
 ## <a name="how-to-get-to-the-active-users-report"></a>Come ottenere il report Utenti attivi
 

@@ -21,12 +21,12 @@ search.appverid:
 - ODB160
 ms.assetid: 8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353
 description: Ottenere il report di utilizzo di OneDrive per l'organizzazione e conoscere l'attività di ogni utente di OneDrive, il numero di file condivisi e l'utilizzo dello spazio di archiviazione.
-ms.openlocfilehash: b51071fe8c91b0064d6680b628b58df1f370c73d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b94e5e34f7599cc372b506c2c365503ea1334685
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353587"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047086"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Rapporti Microsoft 365 nell'interfaccia di amministrazione-attività di OneDrive for business
 
@@ -40,7 +40,7 @@ Ad esempio, è possibile comprendere l'attività di tutti gli utenti con licenza
 Se si vuole conoscere la quantità di attività eseguita in ogni account OneDrive e l'utilizzo di spazio di archiviazione, è possibile visualizzare il [report di utilizzo di OneDrive](onedrive-for-business-usage.md).
   
 > [!NOTE]
-> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint o Skype for business per visualizzare i report. 
+> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report.  
  
 ## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>Come ottenere il report Attività di OneDrive?
 

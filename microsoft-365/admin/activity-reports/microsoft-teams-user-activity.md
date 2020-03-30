@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Informazioni su come ottenere il report attività degli utenti di Microsoft teams e acquisire maggiori informazioni sull'attività dei team nell'organizzazione.
-ms.openlocfilehash: 53c3da2d563363c7c463abc62f7cdf4b478ccecc
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4a1b546efa7ba3bac887f60de54231389b8b5ca6
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353727"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047098"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-attività utente di Microsoft Teams
 
 Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tra i prodotti dell'organizzazione. Consente di eseguire il drill-down fino a visualizzare report a livello di singolo prodotto, per ottenere informazioni più dettagliate sulle attività in ogni prodotto. Vedere l' [argomento introduttivo sui report](activity-reports.md). Nel report Attività degli utenti di Microsoft Teams è possibile ottenere informazioni approfondite sull'attività di Microsoft Teams nell'organizzazione.
   
 > [!NOTE]
-> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint o Skype for business per visualizzare i report. 
+> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report.  
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Come accedere al report Attività degli utenti di Microsoft Teams
 

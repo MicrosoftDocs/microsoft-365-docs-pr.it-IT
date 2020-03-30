@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Informazioni su come ottenere un report attività di Microsoft Forms utilizzando il Dashboard Microsoft 365 Reports nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 601e110719e4d69a647cfd55ecd4ae6db2568947
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: c836644f88fe635bfe608f57e015f06e9f815862
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42402322"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046940"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 segnalazioni nell'interfaccia di amministrazione-moduli
 
@@ -32,7 +32,7 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 Ad esempio, è possibile comprendere l'attività di ogni utente concesso in licenza per l'utilizzo di Microsoft Forms esaminando la propria interazione con i moduli. Consente inoltre di comprendere il livello di collaborazione in uso esaminando il numero di moduli creati e i moduli a cui l'utente ha risposto.
   
 > [!NOTE]
-> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint o Skype for business per visualizzare i report. 
+> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report. 
 
 ## <a name="how-to-get-to-the-forms-activity-report"></a>Come accedere al report attività moduli
 

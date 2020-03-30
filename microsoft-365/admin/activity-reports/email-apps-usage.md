@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
 description: Informazioni su come ottenere il rapporto di utilizzo delle app di posta elettronica da sapere sulle app di posta elettronica che si connettono a Exchange Online e gli utenti della versione di Outlook.
-ms.openlocfilehash: bb75b28e41de37d4f21acedd4705db71f6c2c303
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5bdd62d150cf103cd3c3520cf5a0c593dceb8e66
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353787"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046856"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle app di posta elettronica
 
 Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tra i prodotti dell'organizzazione. Consente di eseguire il drill-down fino a visualizzare report a livello di singolo prodotto, per ottenere informazioni più dettagliate sulle attività in ogni prodotto. Vedere l' [argomento introduttivo sui report](activity-reports.md). Nel report sull'utilizzo delle app di posta elettronica, è possibile vedere quante app di posta elettronica si connettono a Exchange Online. È anche possibile visualizzare le informazioni sulla versione delle app di Outlook usate dagli utenti, che consentirà di contattare gli utenti che usano versioni non supportate per consigliare l'installazione di versioni supportate di Outlook.
   
 > [!NOTE]
-> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint o Skype for business per visualizzare i report. 
+> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report.  
  
 ## <a name="how-to-get-to-the-email-apps-report"></a>Come accedere al report delle app di posta elettronica
 

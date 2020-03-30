@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Ottenere il report attività di Yammer e sapere di più sul numero di utenti che utilizzano Yammer per inviare, come, o leggere un messaggio.
-ms.openlocfilehash: e4e51707aa487486e2d41d5d8bd4e84294c36ef2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353517"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047024"
 ---
 # <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Report di Office 365 nell'interfaccia di amministrazione-report attività di Yammer
 
 Come amministratore Microsoft 365, nel dashboard **report** sono riportati i dati relativi all'utilizzo dei prodotti all'interno dell'organizzazione. Estrarre [i report attività nell'interfaccia di amministrazione](activity-reports.md). Il **report Attività su Yammer** consente di capire il livello di utilizzo di Yammer nell'organizzazione calcolando il numero di utenti che usano Yammer per pubblicare, aggiungere Mi piace o leggere un messaggio e la quantità di attività generata nell'intera organizzazione. 
   
 > [!NOTE]
-> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint o Skype for business per visualizzare i report. 
+> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report. 
  
 ## <a name="how-to-get-to-the-yammer-activity-report"></a>Come accedere al report attività su Yammer
 

@@ -18,19 +18,19 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Informazioni su come ottenere il report sull'utilizzo delle cassette postali per conoscere le attività degli utenti con una cassetta postale utente.
-ms.openlocfilehash: d7d36359801fe72ac1c3ffc210c7795030f0b2e2
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241306"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43046928"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo delle cassette postali
 
 Il **report sull'utilizzo delle cassette postali** fornisce informazioni sugli utenti che dispongono di una cassetta postale utente e il livello di attività in base all'attività di invio, lettura, creazione appuntamento, invio riunione, accettazione riunione, declino riunione e annullamento riunione. Fornisce anche informazioni sullo spazio di archiviazione usato da ogni cassetta postale utente e sul numero di cassette postali che hanno quasi raggiunto le quote di archiviazione. 
   
 > [!NOTE]
-> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint o Skype for business per visualizzare i report. 
+> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report. 
  
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>Come accedere al report sull'utilizzo delle cassette postali
 

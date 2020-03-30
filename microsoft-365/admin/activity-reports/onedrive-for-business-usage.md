@@ -21,12 +21,12 @@ search.appverid:
 - ODB160
 ms.assetid: 0de3b312-c4e8-4e4b-a02d-32b2f726a680
 description: "Ottenere il report sull'utilizzo di OneDrive for business per conoscere il numero totale di file e di archiviazione utilizzati nell'organizzazione. "
-ms.openlocfilehash: 8bbf904faf1afe28f4a8a83209f681a44eaa932f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4c7cfaeed03627b6dfab6c694f3a5e858b125c40
+ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353557"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43047108"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione-utilizzo di OneDrive for business
 
@@ -35,7 +35,7 @@ Il Dashboard Microsoft 365 **Reports** illustra la panoramica delle attività tr
 Ad esempio, la scheda OneDrive sul dashboard offre una panoramica generale del valore ricevuto da OneDrive for Business per quanto riguarda il numero totale di file e di risorse di archiviazione usati in tutti gli account nell'organizzazione. È quindi possibile analizzare questo valore per comprendere le tendenze degli account di OneDrive attivi, il numero di file con cui interagiscono gli utenti e le risorse di archiviazione usate. Vengono visualizzati anche dettagli per i singoli account di OneDrive.
   
 > [!NOTE]
-> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint o Skype for business per visualizzare i report. 
+> È necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, teams, Communications o Skype for business per visualizzare i report.  
  
 ## <a name="how-do-i-get-to-the-onedrive-usage-report"></a>Come si ottiene il report sull'utilizzo di OneDrive?
 
