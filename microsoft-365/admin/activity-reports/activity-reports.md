@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Ottenere un report periodico sul modo in cui gli utenti dell'organizzazione usano i servizi di Office 365. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: 490f7722d0bb8eb93d0d6e0ff18b7364cca5185c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
+ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353967"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "43029861"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Report sulle attività nell'interfaccia di amministrazione di Microsoft 365
 
@@ -74,7 +74,11 @@ Utenti che hanno le autorizzazioni seguenti:
 
 - Ruolo con autorizzazioni di lettura globali
     
-- Lettore di report
+- Ruolo con autorizzazioni di lettura per i report
+
+- Amministratore del servizio Teams
+
+- Amministratore delle comunicazioni di Teams
     
 Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../add-users/about-admin-roles.md) e [Assegnare ruoli di amministratore](../add-users/assign-admin-roles.md).
   
