@@ -255,12 +255,14 @@
                 - name: Segnalazione di messaggi e file a Microsoft
                   href: ./office-365-security/report-junk-email-messages-to-microsoft.md
                   items:
-                    - name: 'Usare l''Invio dell''amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft'
+                    - name: Usare invio amministratore
                       href: ./office-365-security/admin-submission.md
                     - name: Abilitare il componente aggiuntivo Segnala messaggio
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: Installazione e uso del componente aggiuntivo per la segnalazione della posta indesiderata
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
+                    - name: Segnalare posta indesiderata e phishing in Outlook sul web
+                      href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                     - name: Invio manuale di messaggi a Microsoft
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                     - name: Invio di malware e file non pericolosi a Microsoft per l'analisi
@@ -349,7 +351,7 @@
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
                 - name: Proteggere le cassette postali locali con Exchange Online Protection
                   href: ./office-365-security/protect-on-premises-mailboxes-with-exchange-online-protection.md
-                - name: Configurare Exchange Online Protection autonomo per recapitare la posta indesiderata alla cartella Posta indesiderata
+                - name: Configurare EOP autonomo per recapitare la posta indesiderata alla cartella Posta indesiderata
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
         - name: Protezione avanzata dalle minacce
           href: ./office-365-security/office-365-atp.md
