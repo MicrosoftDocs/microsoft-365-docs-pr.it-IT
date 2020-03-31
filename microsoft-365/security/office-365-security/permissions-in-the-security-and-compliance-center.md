@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono ottenere informazioni sulle autorizzazioni disponibili nel centro sicurezza & conformità di Office 365.
-ms.openlocfilehash: e45a9b369e127ca29de23f308f2d28808571cc42
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: b74537dfdbb7447b29d7ad0c0e0d8f8ff3e15c08
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569060"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058928"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Autorizzazioni nel centro sicurezza & conformità di Office 365
 
@@ -41,8 +41,6 @@ Un **gruppo di ruolo** è un insieme di ruoli che consentono agli utenti di svol
 Il Centro sicurezza & conformità include i gruppi di ruoli predefiniti per le attività e le funzioni più comuni che è necessario assegnare agli utenti. È consigliabile aggiungere singoli utenti come **membri** ai gruppi di ruoli predefiniti.
 
 ![Diagramma che mostra la relazione tra gruppi di ruoli e ruoli e membri](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
-
-È possibile modificare o eliminare i gruppi di ruoli esistenti, ma non è consigliabile. Invece di modificare un gruppo di ruoli predefinito, è possibile copiarlo, modificarlo e quindi salvarlo con un altro nome.
 
 ## <a name="permissions-needed-to-use-features-in-the-security--compliance-center"></a>Autorizzazioni necessarie per utilizzare le funzionalità nel centro sicurezza & Compliance
 

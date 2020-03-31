@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 per Enterprise.
-ms.openlocfilehash: 01c5eac2c1ad90bfaa189c26fa4997a1bd2fc10e
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 1e902d1ca0eb80a7588a9b4060a41183f5a5db24
+ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951995"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053096"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
@@ -84,11 +84,11 @@ Questo poster a due pagine rappresenta un modo rapido per inventariare l'infrast
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Evitare la fine del supporto per i client e i server Windows 7 e Office 2010
 
-I prodotti seguenti raggiungono la fine del supporto il **14 gennaio 2020**:
+I prodotti seguenti hanno raggiunto la fine del supporto il **14 gennaio 2020**:
 
 - [Windows 7](https://aka.ms/win7upgrade)
 
-I prodotti seguenti raggiungono la fine del supporto il **13 ottobre 2020**:
+I prodotti seguenti potranno raggiungere la fine del supporto il **13 ottobre 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)

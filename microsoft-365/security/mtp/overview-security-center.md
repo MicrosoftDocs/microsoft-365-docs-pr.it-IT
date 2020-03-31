@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 3f60c40ecd1810d630a4607d6b0915d6f3089a99
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372044"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058906"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Panoramica del Centro sicurezza di Microsoft 365
 
@@ -45,7 +45,7 @@ Il Centro sicurezza Microsoft 365 include:
 
 * **Home** -visualizzazione a colpo d'occhio dell'integrità generale della sicurezza dell'organizzazione.
 * **Operazioni** non consentite: vedere la storia più ampia di un attacco collegando i punti visualizzati sui singoli avvisi sulle entità. È possibile sapere esattamente dove è stato avviato un attacco, quali dispositivi sono interessati, quali sono gli effetti e dove la minaccia è andata.
-* **Avvisi** – avere una maggiore visibilità in tutti gli avvisi nell'ambiente Microsoft 356, compresi gli avvisi provenienti da Microsoft cloud app Security, Office 365 ATP, Azure ad, Azure ATP e Microsoft Defender ATP. Disponibile per i clienti E3 ed E5.  
+* **Avvisi** – avere una maggiore visibilità in tutti gli avvisi nell'ambiente Microsoft 365, compresi gli avvisi provenienti da Microsoft cloud app Security, Office 365 ATP, Azure ad, Azure ATP e Microsoft Defender ATP. Disponibile per i clienti E3 ed E5.  
 * **Centro azioni** -ridurre il volume degli avvisi il team di sicurezza deve rispondere manualmente, consentendo al team di operazioni di sicurezza di concentrarsi su minacce più sofisticate e altre iniziative di alto valore.
 * **Report** : consente di visualizzare i dettagli e le informazioni necessari per proteggere meglio gli utenti, i dispositivi, le app e altro ancora.
 * **Secure Score** : migliorare la posizione di sicurezza generale con Microsoft Secure score. In questa pagina viene fornito un riepilogo di tutte le caratteristiche e funzionalità di sicurezza che sono state abilitate e sono disponibili suggerimenti per migliorare le aree.

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Informazioni sull'iscrizione a Office 365 self-service e sui programmi self-service disponibili, ad esempio Microsoft Power Apps, Microsoft Flow e Dynamics 365 per i servizi finanziari.
 ms.custom: okr_SMB
-ms.openlocfilehash: 54509ff60eee4d52e39acf597eca48bc8a350c28
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 24a300540237dc1cb7810ca712ead5ef7d4bea83
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244082"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058894"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Uso dell'iscrizione self-service nell'organizzazione
 
@@ -37,13 +37,13 @@ ms.locfileid: "42244082"
 L'esempio seguente descrive come funziona l'iscrizione self-service per un istituto di istruzione. Lo stesso processo funziona per qualsiasi organizzazione con programmi self-service abilitati nel proprio tenant.
   
 1. Gli studenti e i membri della facoltà hanno indirizzi di posta elettronica dell'istituto di istruzione, che indicano che sono associati all'istituto. L'indirizzo di posta elettronica jakob@uw.edu può ad esempio indicare uno studente dell'Università di Washington.
-    
+
 2. Studenti e docenti accedere al [sito Web](https://go.microsoft.com/fwlink/p/?LinkId=536628)e utilizzare il proprio indirizzo di posta elettronica per iscriversi ai servizi offerti dall'organizzazione, ad esempio Office 365 ProPlus. Possono anche iscriversi ad altri servizi gratuiti offerti.
-    
-3. L'indirizzo di posta elettronica viene convalidato, quindi gli utenti possono iniziare subito a usare Office 365, Power BI o altri servizi.
-    
-4. In qualità di amministratore dell'azienda, verrà visualizzato l'utente che ha effettuato l'iscrizione per un abbonamento visualizzando la pagina **abbonamenti** nell'interfaccia di amministrazione. In questo modo è possibile vedere quando ci sono licenze nuove o non riconosciute per i servizi nel tenant. 
-    
+
+3. È possibile convalidare il proprio indirizzo di posta elettronica e quindi iniziare a usare Office 365, Power BI o altri servizi subito.
+
+4. Come amministratore dell'azienda, è possibile visualizzare gli utenti che hanno effettuato l'iscrizione a un abbonamento visualizzando la pagina **prodotti & Services** nell'interfaccia di amministrazione. In questo modo è possibile vedere quando ci sono licenze nuove o non riconosciute per i servizi nel tenant. Per controllare se gli utenti possono iscriversi per le sottoscrizioni in modalità self-service, utilizzare il cmdlet [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) di PowerShell con il parametro **AllowAdHocSubscriptions** . Per ulteriori informazioni, vedere [come si controllano le impostazioni self-service?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+
 ## <a name="available-self-service-programs"></a>Programmi self-service disponibili
 
 Di seguito sono elencati i programmi self-service attualmente disponibili. Questo elenco verrà aggiornato man mano che vengono aggiunti nuovi programmi.
@@ -66,4 +66,3 @@ Di seguito sono elencati i programmi self-service attualmente disponibili. Quest
 |**Minecraft Education Edition** <br/> |Usando Minecraft come piattaforma di apprendimento, i docenti possono motivare e stimolare ogni studente a raggiungere obiettivi più alti e accendere la passione per lo studio. È possibile iscriversi a una community di docenti e imparare a usare Minecraft per sbloccare le potenzialità degli studenti.  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |È possibile caricare e condividere video nell'intera organizzazione per migliorare la comunicazione, la partecipazione e l'apprendimento.  <br/> |[Sign up &amp; Day 0 experience](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Agenti virtuali di alimentazione** <br/> |Power Virtual Agents consente ai team di creare facilmente bot potenti utilizzando un'interfaccia grafica senza codice guidata e senza il bisogno di scienziati o sviluppatori di dati. Power Virtual Agents affronta molti dei principali problemi relativi alla creazione di bot nell'industria odierna. Elimina il divario tra gli esperti del soggetto e i team di sviluppo che costruiscono i bot e la lunga latenza tra i team che riconoscono un problema e aggiornano il bot per risolverlo.  <br/> |[Informazioni su licenze e accessi](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Iscriversi a Power Virtual Agents](https://aka.ms/TryPVA) <br/> |
-

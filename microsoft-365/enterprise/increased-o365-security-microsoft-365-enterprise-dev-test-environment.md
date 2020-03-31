@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilizzare questa guida del laboratorio di testing per abilitare altre impostazioni di sicurezza di Microsoft 365 nell'ambiente di testing di Microsoft 365 Enterprise.
-ms.openlocfilehash: 465e9df40e8dfe9883a81d352eabff17151df8f3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 166388de138f5268eb29b8a427bad61ec6ab7cda
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067263"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058882"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-enterprise-test-environment"></a>Maggiore sicurezza di Microsoft 365 per l'ambiente di testing di Microsoft 365 Enterprise
 
@@ -56,7 +56,7 @@ Per le app che non supportano l'autenticazione moderna non è possibile applicar
   - Se si utilizza l'ambiente di testing Enterprise Microsoft 365 simulato, utilizzare il [portale di Azure](https://portal.azure.com) per connettersi alla macchina virtuale CLIENT1 e quindi eseguire l'accesso da CLIENT1.
  
 2. Nella nuova scheda dell'interfaccia di **amministrazione di Microsoft 365** , in interfaccia di **Amministrazione** nel riquadro di spostamento a sinistra, fare clic su **SharePoint**.
-3. Nella nuova scheda dell'interfaccia di **amministrazione di SharePoint** , fare clic su **controllo di accesso**.
+3. Nella nuova scheda dell'interfaccia di **amministrazione di SharePoint** , fare clic su **criteri > controllo di accesso**.
 4. Fare clic su **app che non supportano l'autenticazione moderna**, selezionare **Blocca accesso**e quindi fare clic su **Salva**.
 
 
@@ -85,7 +85,7 @@ Per assicurarsi che l'elaborazione antimalware sia in esecuzione su file con tip
 2. Fare clic su **anti-malware**.
 3. Fare doppio clic sul criterio denominato **default**.
 4. Nella finestra **criteri antimalware** fare clic su **Impostazioni**.
-4. In **filtro tipi di allegati comuni**selezionare **** attivato e quindi fare clic su **Salva**.
+4. In **filtro tipi di allegati comuni**selezionare **On**attivato e quindi fare clic su **Salva**.
 
 
 ## <a name="phase-3-examine-the-security-dashboard"></a>Fase 3: esaminare il dashboard di sicurezza
