@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: "Domande frequenti per gli amministratori sull'utilizzo del servizio di importazione di Office 365 per importare i file PST dell'organizzazione nelle cassette postali di Office 365. "
-ms.openlocfilehash: 31df33ffe2c69478f0304bd27b49254995d8b89c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 439a321c3890d85f7ca0f7da0074af80f6b7fed5
+ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634434"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058917"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>Domande frequenti sull'importazione di file PST in Office 365
 
@@ -79,6 +79,10 @@ Dipende dalla capacità della rete, ma in genere sono necessarie diverse ore per
   
 Se si importano file PST diversi in cassette postali di destinazione diverse, il processo di importazione verrà eseguito in parallelo, ovvero ogni coppia di file PST e cassetta postale verrà importata contemporaneamente. Analogamente, se si importano più file PST nella stessa cassetta postale, questi vengono importati contemporaneamente.
   
+ **In che modo il processo di importazione PST gestisce gli elementi di posta elettronica duplicati?**
+
+Il processo di importazione PST controlla gli elementi duplicati e non copia gli elementi da un file PST nella cassetta postale o nell'archivio se esiste un elemento corrispondente nella cartella di destinazione nella cassetta postale di destinazione o nell'archivio di destinazione. Se si importa di nuovo lo stesso file PST e si specifica una cartella di destinazione diversa (utilizzando la proprietà TargetRootFolder nel file di mapping di importazione PST) rispetto a quella specificata in un processo di importazione precedente, tutti gli elementi del file PST verranno reimportati.
+
  **È previsto un limite alle dimensioni del messaggio durante l'importazione dei file PST?**
   
 Sì. Se un file PST contiene un elemento della cassetta postale con dimensioni maggiori di 150 MB, questo elemento viene ignorato durante il processo di importazione.
@@ -178,6 +182,10 @@ Sono disponibili due versioni del formato di file PST: ANSI e Unicode. Si consig
   
 Sì. Se un file PST contiene un elemento della cassetta postale con dimensioni maggiori di 150 MB, questo elemento viene ignorato durante il processo di importazione.
   
+  **In che modo il processo di importazione PST gestisce gli elementi di posta elettronica duplicati?**
+
+Il processo di importazione PST controlla gli elementi duplicati e non copia gli elementi da un file PST nella cassetta postale o nell'archivio se esiste un elemento corrispondente nella cartella di destinazione nella cassetta postale di destinazione o nell'archivio di destinazione. Se si importa di nuovo lo stesso file PST e si specifica una cartella di destinazione diversa (utilizzando la proprietà TargetRootFolder nel file di mapping di importazione PST) rispetto a quella specificata in un processo di importazione precedente, tutti gli elementi del file PST verranno reimportati.
+ 
  **Le proprietà del messaggio, ad esempio la data/ora di invio o ricezione del messaggio, l'elenco dei destinatari e altre proprietà, vengono mantenute quando i file PST vengono importati in una cassetta postale di Office365?**
   
 Sì. I metadati del messaggio originale non vengono modificati durante il processo di importazione
