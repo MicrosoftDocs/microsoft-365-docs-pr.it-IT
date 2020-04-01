@@ -1,10 +1,10 @@
 ---
-title: Supporto per messaggi di posta elettronica in ingresso anonimi su IPv6
+title: Aggiungere il supporto per la posta elettronica in ingresso anonima su IPv6
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
-manager: dansimp
+author: chrisda
+ms.author: chrisda
+manager: chrisda
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,36 +14,48 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come configurare il supporto per i messaggi anonimi provenienti da origini IPv6 per Exchange Online Protection ed Exchange Online.
-ms.openlocfilehash: 1cd38798aa644b79c8f1d6362edd17a515b5c98d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: L'amministratore può imparare a configurare il supporto per la posta elettronica in ingresso anonima dalle origini IPv6 in Exchange Online e Exchange Online Protection.
+ms.openlocfilehash: 67e839249d41381be22bbccf6b09d1616c387c66
+ms.sourcegitcommit: 748bc3484b7ccbd65b558f495b6fa42196c3c571
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598233"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43083642"
 ---
-# <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Supporto per i messaggi di posta elettronica in ingresso anonimi su IPv6
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-office-365"></a>Aggiungere il supporto per la posta elettronica in ingresso anonima su IPv6 in Office 365
 
-Exchange Online Protection (EOP) ed Exchange Online supportano la ricezione di messaggi di posta elettronica in ingresso anonimi sulle comunicazioni IPv6 da mittenti che non inviano messaggi su TLS (Transport Layer Security). È possibile scegliere di ricevere i messaggi tramite IPv6 richiedendo questa funzionalità dal supporto tecnico Microsoft aprendo l'interfaccia di amministrazione di Microsoft 365 in [https://admin.microsoft.com/adminportal/home](https://admin.microsoft.com/adminportal/home), facendo clic su **supporto**e quindi su **nuova richiesta di servizio**. Se non si sceglie di utilizzare IPv6, si continuerà a ricevere messaggi su IPv4.
-  
-I mittenti che trasmettono messaggi al servizio su IPv6 devono rispettare i seguenti due requisiti:
-  
-1. L'indirizzo IPv6 di invio deve avere un record PTR valido ([record DNS inverso](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) dell'indirizzo IPv6 di invio). 
-    
-2. Il mittente deve superare la verifica SPF (definita in [RFC 7208](https://tools.ietf.org/html/rfc7208)) oppure la [verifica DKIM](https://dkim.org/) (definita in [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
-    
-Il rispetto di tali requisiti è obbligatorio e non dipende dalla configurazione utilizzata prima di scegliere IPv6. Se entrambi i requisiti sono soddisfatti, il messaggio passerà attraverso il normale filtro dei messaggi di posta elettronica fornito dal servizio. Se uno dei due requisiti non è soddisfatto, il messaggio sarà rifiutato con una delle seguenti risposte 450:
-  
--  `450 4.7.25 Service unavailable, sending IPv6 address [2a01:111:f200:2004::240] must have reverse DNS record.`
-    
--  `450 4.7.26 Service unavailable, message sent over IPv6 [2a01:111:f200:2004::240] must pass either SPF or DKIM validation.`
-    
-Se non si è scelto di ricevere messaggi su IPv6 e il mittente tenta di forzare un messaggio su IPv6 collegandosi manualmente al server di posta, il messaggio sarà rifiutato con una risposta 550 simile alla seguente:
-  
- `550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.`
-  
+Le organizzazioni di Office 365 con cassette postali di Exchange Online e organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online supportano la posta elettronica in ingresso anonima su IPv6 Il server di posta elettronica IPv6 di origine deve soddisfare entrambi i requisiti seguenti:
+
+- L'indirizzo IPv6 di origine deve disporre di un record PTR (Reverse DNS Lookup) valido che consenta alla destinazione di trovare il nome di dominio dall'indirizzo IPv6.
+
+- Il mittente deve superare la verifica SPF (definita in [RFC 7208](https://tools.ietf.org/html/rfc7208)) oppure la [verifica DKIM](https://dkim.org/) (definita in [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
+
+Prima che l'organizzazione possa ricevere messaggi di posta elettronica in ingresso anonimi su IPv6, un amministratore deve contattare il supporto tecnico Microsoft e richiederlo:
+
+1. Aprire l'interfaccia di amministrazione di Microsoft <https://admin.microsoft.com/adminportal/home> 365 in e fare clic su **Guida** (?).
+
+2. Nella casella di ricerca, ad esempio, "richiedere messaggi di posta elettronica IPv6 in ingresso" e quindi premere INVIO, digitare una **Descrizione del riquadro a comparsa.**
+
+3. Nella parte inferiore della pagina, fare clic su supporto per i **contatti**.
+
+4. Nella pagina del **supporto dei contatti** che viene visualizzata, compilare e verificare le informazioni (scorrere verso il basso se necessario) e quindi fare clic su **contattami**.
+
+Dopo l'attivazione del supporto dei messaggi IPv6 in ingresso anonimo nell'organizzazione, il messaggio passerà attraverso il normale filtro dei messaggi fornito dal servizio.
+
+## <a name="troubleshooting"></a>Risoluzione dei problemi
+
+- Se il server di posta elettronica di origine non dispone di un record di ricerca DNS inverso IPv6, i messaggi verranno rifiutati con l'errore seguente:
+
+  > 450 il servizio 4.7.25 non è disponibile, l'invio dell'indirizzo IPv6 [2a01:111: F200:2004:: 240] deve avere un record DNS inverso.
+
+- Se il mittente non supera la convalida SPF o DKIM, i messaggi verranno rifiutati con l'errore seguente:
+
+  > 450 servizio 4.7.26 non disponibile, il messaggio inviato su IPv6 [2a01:111: F200:2004:: 240] deve passare sia SPF sia la convalida DKIM.
+
+- Se si tenta di ricevere messaggi IPv6 anonimi prima di essere stati scelti, il messaggio verrà rifiutato con il seguente errore:
+
+  > 550 5.2.1 servizio non disponibile, [contoso.com] non accetta la posta elettronica su IPv6.
+
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
 [Supporto per la convalida di messaggi firmati con DKIM](support-for-validation-of-dkim-signed-messages.md)
-  
-
