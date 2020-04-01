@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Utilizzare l'intelligence spoof nel centro &amp; sicurezza e conformità nella pagina impostazioni di protezione da posta indesiderata per esaminare tutti i mittenti che eseguono lo spoofing dei domini che fanno parte dell'organizzazione o lo spoofing di domini esterni. L'intelligence di spoofing è disponibile come parte di Office 365 Enterprise E5 o separatamente come parte di Advanced Threat Protection e Exchange Online Protection.
-ms.openlocfilehash: e3ef4399ab79e894e8013169eee6d1949c2489c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a58f98852f321791615c5f0064b69e8510aadbe5
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082966"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081461"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Altre informazioni su spoof intelligence
 
@@ -101,7 +101,7 @@ Il criterio di intelligence contraffatto configurato viene sempre applicato da O
 
 6. Scegliere **Salva** per salvare le modifiche apportate.
 
-Se si dispone di un abbonamento a Office 365 Enterprise E5 o se è stata acquistata una protezione avanzata dalle minacce avanzate come componente aggiuntivo, è anche possibile gestire i mittenti che eseguono lo spoofing del dominio tramite l' [Insight di intelligence di spoofing](https://docs.microsoft.com/office365/securitycompliance/walkthrough-spoof-intelligence-insight).
+Se si dispone di un abbonamento a Office 365 Enterprise E5 o se è stata acquistata una protezione avanzata dalle minacce avanzate come componente aggiuntivo, è anche possibile gestire i mittenti che eseguono lo spoofing del dominio tramite l' [Insight di intelligence di spoofing](walkthrough-spoof-intelligence-insight.md).
 
 ## <a name="configuring-the-anti-spoofing-policy"></a>Configurazione dei criteri di anti-spoofing
 <a name="Managespooflist"> </a>

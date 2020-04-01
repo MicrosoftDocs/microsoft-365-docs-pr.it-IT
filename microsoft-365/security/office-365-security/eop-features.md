@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Nella tabella seguente viene fornito un elenco delle funzionalità disponibili nel servizio di filtro della posta elettronica ospitato in Exchange Online Protection (EOP).
-ms.openlocfilehash: f8a9165cd377549d355a72da5428b777e7c1a505
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1bab584c62114c74c0eb4d9937acef4f17b89073
+ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032889"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081449"
 ---
 # <a name="eop-features"></a>Funzionalità di Exchange Online Protection
 
@@ -30,7 +30,7 @@ Nella tabella seguente viene fornito un elenco delle funzionalità disponibili n
 |---|---|
 |**Caratteristica**|**Descrizione**|
 |**Protezione dalla posta indesiderata**||
-|Rilevamento posta indesiderata in ingresso|La protezione dalla posta indesiderata in ingresso è sempre abilitata e non può essere disabilitata. È possibile configurare impostazioni personalizzate tramite il filtro di connessione e i criteri di filtro dei contenuti.  <br/><br/> Per i clienti autonomi di EOP: per impostazione predefinita, i filtri di contenuto EOP inviano messaggi di posta indesiderata alla cartella posta indesiderata di ogni destinatario. Tuttavia, per garantire che il **messaggio di spostamento all'azione della cartella posta indesiderata** funzionerà con le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per informazioni dettagliate, vedere [Configure standalone EOP per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).|
+|Rilevamento posta indesiderata in ingresso|La protezione dalla posta indesiderata in ingresso è sempre abilitata e non può essere disabilitata. È possibile configurare impostazioni personalizzate tramite il filtro di connessione e i criteri di filtro dei contenuti.  <br/><br/> Per i clienti autonomi di EOP: per impostazione predefinita, i filtri di contenuto EOP inviano messaggi di posta indesiderata alla cartella posta indesiderata di ogni destinatario. Tuttavia, per garantire che il **messaggio di spostamento all'azione della cartella posta indesiderata** funzionerà con le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) sui server locali per rilevare le intestazioni di posta indesiderata aggiunte da EOP. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).|
 |Rilevamento posta indesiderata in uscita|La protezione dalla posta indesiderata in uscita è sempre abilitata se si utilizza il servizio per inviare messaggi di posta elettronica in uscita, in modo da consentire di proteggere le organizzazioni che usano il servizio e i relativi destinatari. Analogamente al filtro in ingresso, il filtro di protezione da posta indesiderata in uscita include il filtro di connessione e dei contenuti. Le impostazioni del filtro di protezione da posta indesiderata in uscita non sono configurabili, ma sono disponibili impostazioni per i criteri di posta indesiderata in uscita che consentono di configurare le notifiche di amministrazione per i messaggi in uscita bloccati e sospetti. Per ulteriori informazioni, vedere [Configure the outbound Spam Policy](configure-the-outbound-spam-policy.md).|
 |Protezione da falsi rapporti di manato recapito|Per ulteriori informazioni su backscatter di rapporto di mancato recapito, vedere l'impostazione di rapporto di mancato recapito in [Impostazioni avanzate di filtro posta indesiderata in Office 365](advanced-spam-filtering-asf-options.md) , nonché [i messaggi backscatter e EOP](backscatter-messages-and-eop.md).|
 |Filtro della posta in blocco|I metodi di rilevamento per l'identificazione dei messaggi di posta elettronica in blocco di EOP sono stati migliorati. È possibile configurare il servizio per contrassegnare i messaggi di posta elettronica in blocco tramite l'interfaccia utente. È inoltre possibile creare regole del flusso di posta per filtrare in modo più aggressivo la posta in blocco tramite la ricerca di un contrassegno di intestazione del messaggio di posta in blocco. Per ulteriori informazioni sulla posta elettronica in blocco, vedere [Qual è la differenza tra posta elettronica indesiderata e posta elettronica in blocco? e gli](what-s-the-difference-between-junk-email-and-bulk-email.md) argomenti secondari associati.|
@@ -91,4 +91,4 @@ Nella tabella seguente viene fornito un elenco delle funzionalità disponibili n
 |**Altre funzionalità**||
 |Rete di server globale con ridondanza geografica|EOP viene eseguito in una rete globale di datacenter progettati per offrire la massima disponibilità. Per ulteriori informazioni, vedere la sezione relativa ai datacenter di EOP in [Panoramica su Exchange Online Protection](exchange-online-protection-overview.md).  |
 |L'accodamento dei messaggi sul server locale non consente di accettare la posta|I messaggi in differimento rimangono nelle code per un giorno. I tentativi di invio dei messaggi variano in base all'errore ricevuto dal sistema di posta elettronica del destinatario. In media, l'intervallo tra i tentativi di invio è di 5 minuti. Per ulteriori informazioni, vedere [Domande frequenti sui messaggi restituiti al mittente, differiti e in coda in EOP](eop-queued-deferred-and-bounced-messages-faq.md).|
-|Crittografia dei messaggi di Office 365 disponibile come servizio aggiuntivo|Per ulteriori informazioni, vedere [Crittografia in Office 365](https://docs.microsoft.com/office365/securitycompliance/encryption).|
+|Crittografia dei messaggi di Office 365 disponibile come servizio aggiuntivo|Per ulteriori informazioni, vedere [Crittografia in Office 365](../../compliance/encryption.md).|
