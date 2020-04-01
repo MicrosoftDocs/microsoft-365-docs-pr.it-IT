@@ -345,8 +345,6 @@
             - name: Cos'è Exchange Online Protection?
               href: ./office-365-security/what-is-eop.md
               items:
-                - name: Supporto per i messaggi di posta elettronica in ingresso anonimi su IPv6
-                  href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
                 - name: Bloccare la posta indesiderata nella versione autonoma di Exchange Online Protection
                   href: ./office-365-security/block-email-spam-in-EOPStandalone.md
                 - name: Proteggere le cassette postali locali con Exchange Online Protection
@@ -445,6 +443,8 @@
           items:
             - name: Traccia messaggio nel Centro sicurezza e conformità
               href: ./office-365-security/message-trace-scc.md
+            - name: Aggiungere il supporto per i messaggi di posta elettronica in ingresso anonimi su IPv6
+              href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: Visualizzare i report sulla sicurezza della posta elettronica nel Centro sicurezza e conformità
               href: ./office-365-security/view-email-security-reports.md
             - name: Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
