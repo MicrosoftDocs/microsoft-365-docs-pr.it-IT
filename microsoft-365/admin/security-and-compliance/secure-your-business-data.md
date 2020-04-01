@@ -35,15 +35,15 @@ Microsoft consiglia di completare le attività elencate nella tabella seguente c
   
 ||**Attività**|**Office 365 Business Premium**|**Microsoft 365 Business**|
 |:-----|:-----|:-----|:-----|
-|1  <br/> |[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|2  <br/> |[Formazione degli utenti](secure-your-business-data.md#train) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|3  <br/> |[Utilizzo degli account amministratore dedicati](secure-your-business-data.md#admin) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|4  <br/> |[Aumentare il livello di protezione da malware nella posta elettronica](secure-your-business-data.md#malware) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|5  <br/> |[Protezione da ransomware](secure-your-business-data.md#ransomware) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|6  <br/> |[Interrompere l'inoltro automatico per la posta elettronica](secure-your-business-data.md#forwarding) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|7  <br/> |[Utilizzare la crittografia dei messaggi di Office](secure-your-business-data.md#encryption) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|8  <br/> |[Proteggere la posta elettronica da attacchi di phishing](secure-your-business-data.md#phishing) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|9  <br/> |[Protezione da allegati e file dannosi con gli allegati sicuri di ATP](secure-your-business-data.md#atp) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|1   <br/> |[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2   <br/> |[Formazione degli utenti](secure-your-business-data.md#train) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3   <br/> |[Utilizzo degli account amministratore dedicati](secure-your-business-data.md#admin) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|4   <br/> |[Aumentare il livello di protezione da malware nella posta elettronica](secure-your-business-data.md#malware) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|5   <br/> |[Protezione da ransomware](secure-your-business-data.md#ransomware) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|6   <br/> |[Interrompere l'inoltro automatico per la posta elettronica](secure-your-business-data.md#forwarding) <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|7   <br/> |[Utilizzare la crittografia dei messaggi di Office](secure-your-business-data.md#encryption) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|8   <br/> |[Proteggere la posta elettronica da attacchi di phishing](secure-your-business-data.md#phishing) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|9   <br/> |[Protezione da allegati e file dannosi con gli allegati sicuri di ATP](secure-your-business-data.md#atp) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |10   <br/> |[Protezione da attacchi di phishing con collegamenti sicuri di ATP](secure-your-business-data.md#phishingatp) <br/> ||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 Prima di iniziare, controllare il [Punteggio microsoft 365 Secure](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) nel centro sicurezza di Microsoft 365. Da un Dashboard centralizzato, è possibile monitorare e migliorare la sicurezza per le identità, i dati, le app, i dispositivi e l'infrastruttura di Microsoft 365. Si ricevono punti per la configurazione delle funzionalità di sicurezza consigliate, per l'esecuzione di attività correlate alla sicurezza (come la visualizzazione dei report) o per l'indirizzamento di suggerimenti con un'applicazione o un software di terze parti. Con ulteriori informazioni e una maggiore visibilità in un insieme più ampio di prodotti e servizi Microsoft, è possibile ottenere una relazione sicura sull'integrità della sicurezza dell'organizzazione.
@@ -112,13 +112,13 @@ L'ambiente Office 365 o Microsoft 365 include la protezione da malware, ma è po
   
 1. Accedere a [https://protection.office.com](https://protection.office.com) e accedere con le credenziali dell'account di amministratore. 
     
-2. Nel centro &amp; sicurezza e conformità di Office 365, nel riquadro di spostamento a sinistra, in **gestione delle minacce**, scegliere **** \> **anti-malware**.
+2. Nel centro &amp; sicurezza e conformità di Office 365, nel riquadro di spostamento a sinistra, in **gestione delle minacce**, scegliere **Policy** \> **anti-malware**.
     
 3. Fare doppio clic sul criterio predefinito per modificare il criterio a livello di società.
     
 4. Selezionare **Impostazioni**.
     
-5. In **filtro tipi di allegati comuni**selezionare **** attivato. I tipi di file bloccati sono elencati nella finestra direttamente sotto questo controllo. È possibile aggiungere o eliminare i tipi di file in un secondo momento, se necessario.
+5. In **filtro tipi di allegati comuni**selezionare **On**attivato. I tipi di file bloccati sono elencati nella finestra direttamente sotto questo controllo. È possibile aggiungere o eliminare i tipi di file in un secondo momento, se necessario.
     
 6. Selezionare **Salva.**
     
@@ -151,7 +151,7 @@ Per creare una regola di trasporto della posta, visualizzare un [video di formaz
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**|**Bloccare i tipi di file che potrebbero contenere ransomware o altro codice dannoso**|
 |:-----|:-----|:-----|
-|Name  <br/> |Regola anti-ransomware: avvisa gli utenti  <br/> |Regola di protezione da ransomware: Blocca tipi di file  <br/> |
+|Nome  <br/> |Regola anti-ransomware: avvisa gli utenti  <br/> |Regola di protezione da ransomware: Blocca tipi di file  <br/> |
 |Applica questa regola se. . .  <br/> |Qualsiasi allegato. . . l'estensione del file corrisponde. . .  <br/> |Qualsiasi allegato. . . l'estensione del file corrisponde. . .  <br/> |
 |Specificare parole o frasi  <br/> |Aggiungere questi tipi di file:  <br/> dotm, docm, xlsm, sltm, xla, xlam, XLL, pptm, potm, ppam, ppsm, sldm  <br/> |Aggiungere questi tipi di file:  <br/> Ade, ADP, Ani, Bas, bat, chm, cmd, com, cpl, CRT, HLP, HT, HTA, inf, ins, ISP, job, js, JSE, lnk, MDA, mdb, MDE, MDZ, MSC, MSI, msp, MST (PCD), reg, SCR, SCT, SHS, URL, VB, VBE, vbs, WSC, wsf, WSH, exe, PIF  <br/> |
 |Eseguire le operazioni seguenti. . .  <br/> |Invia una notifica al destinatario tramite messaggio  <br/> |Blocca il messaggio. . . rifiuta il messaggio e Includi una spiegazione  <br/> |
@@ -187,7 +187,7 @@ Per creare una regola di trasporto della posta:
     
 |**Impostazione**|**Avvisare gli utenti prima di aprire gli allegati dei file di Office**|
 |:-----|:-----|
-|Name  <br/> |Impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni  <br/> |
+|Nome  <br/> |Impedire l'inoltro automatico dei messaggi di posta elettronica ai domini esterni  <br/> |
 |Applica questa regola se...  <br/> |Il mittente. . . è esterno/interno. . . All'interno dell'organizzazione  <br/> |
 |Aggiungi condizione  <br/> |Le proprietà del messaggio. . . includere il tipo di messaggio. . . Inoltro automatico  <br/> |
 |Eseguire le operazioni seguenti:  <br/> |Blocca il messaggio. . . rifiuta il messaggio e Includi una spiegazione.  <br/> |
