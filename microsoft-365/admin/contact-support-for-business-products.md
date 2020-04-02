@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: Ottenere supporto tecnico e per la fatturazione tramite i numeri di telefono indicati per la propria area geografica o località, inviando una richiesta di assistenza online o visitando Microsoft Store.
 feedback_system: None
-ms.openlocfilehash: 7fdd2f1232fe20d55ef54f72333d35ff6de8d41e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352947"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106061"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Contattare il supporto tecnico per i prodotti per le aziende - Guida dell’amministratore
 
@@ -95,7 +95,7 @@ Il team del supporto tecnico Office 365 di 21Vianet provvede alla risoluzione de
 
 ### <a name="community-and-self-service-support-options"></a>Community e opzioni di supporto self-service
 
-Il supporto self-service è disponibile per tutte le versioni di Office 365 eseguite dagli utenti 21Vianet e include strumenti e video per la risoluzione dei problemi, articoli e video della guida nonché forum e wiki nella [community di Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Per ulteriori risorse self-help, vedere[Ulteriori informazioni su Office 365 gestito mediante 21Vianet](/services-in-china/services-in-china.md).
+Il supporto self-service è disponibile per tutte le versioni di Office 365 eseguite dagli utenti 21Vianet e include strumenti e video per la risoluzione dei problemi, articoli e video della guida nonché forum e wiki nella [community di Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Per ulteriori risorse self-help, vedere[Ulteriori informazioni su Office 365 gestito mediante 21Vianet](services-in-china/services-in-china.md).
 
 ### <a name="pre-sales-support"></a>Supporto prevendita
 

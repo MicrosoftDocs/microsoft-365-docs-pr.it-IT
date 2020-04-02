@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Informazioni su come conservare i file e i messaggi di posta elettronica di un dipendente quando la persona lascia l'organizzazione.
-ms.openlocfilehash: 3c7a63852ad20fc005f7a0f4e3f909474bda2a3c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2b608b51060e746d0b69fd887882b51735578496
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353197"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105760"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Accedere ai dati di un ex utente ed eseguirne il backup
 
@@ -102,11 +102,15 @@ In qualità di amministratore globale, è possibile accedere al contenuto del On
 
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a> come amministratore globale o amministratore di SharePoint. 
 
+    Se viene visualizzato un messaggio che non dispone dell'autorizzazione necessaria per accedere all'interfaccia di amministrazione, non si dispone delle autorizzazioni di amministratore nell'organizzazione.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a> come amministratore globale o amministratore di SharePoint.
+
+    Se viene visualizzato un messaggio che non dispone dell'autorizzazione necessaria per accedere all'interfaccia di amministrazione, non si dispone delle autorizzazioni di amministratore nell'organizzazione.
 
 ::: moniker-end
 
@@ -114,9 +118,9 @@ In qualità di amministratore globale, è possibile accedere al contenuto del On
 
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a> come amministratore globale o amministratore di SharePoint.
 
-::: moniker-end
+    Se viene visualizzato un messaggio che non dispone dell'autorizzazione necessaria per accedere all'interfaccia di amministrazione, non si dispone delle autorizzazioni di amministratore nell'organizzazione.
 
-   Se viene visualizzato un messaggio che non dispone dell'autorizzazione necessaria per accedere all'interfaccia di amministrazione, non si dispone delle autorizzazioni di amministratore nell'organizzazione.
+::: moniker-end
 
 2. Nel riquadro sinistro, selezionare interfaccia di **Amministrazione** \> di **SharePoint**. Potrebbe essere necessario selezionare **Mostra tutto** per vedere l'elenco di interfacce di amministrazione.
 
@@ -162,7 +166,7 @@ Per salvare i messaggi di posta elettronica, il calendario, le attività e i con
   
     ![Finestra di dialogo Esporta file di dati di Outlook con la cartella principale e l'opzione Includi sottocartelle selezionate](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7.  Select **Next**. 
+7. Scegliere **Avanti**.
     
 8. Selezionare **Sfoglia** per selezionare il percorso in cui salvare il file di dati di Outlook (con estensione pst). Digitare un *nome di file*e quindi fare clic su **OK** per continuare. 
     
@@ -181,6 +185,10 @@ Outlook avvia immediatamente l'esportazione, a meno che non venga creato un nuov
     
 Vedere come [esportare o eseguire il backup di posta elettronica, contatti e calendario in un file PST](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) di Outlook in Outlook 2010. 
   
+  
+  > [!NOTE]
+  > Per impostazione predefinita, il messaggio di posta elettronica è disponibile offline per un periodo di 12 mesi. Se necessario, vedere How to [increase the data available offline](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
+ 
 ## <a name="give-another-user-access-to-a-former-users-email"></a>Concedere a un altro utente l'accesso alla posta elettronica di un utente precedente 
 
 Per concedere l'accesso ai messaggi di posta elettronica, al calendario, alle attività e ai contatti dell'ex dipendente a un altro dipendente, importare le informazioni nella cartella posta in arrivo di Outlook di un altro dipendente.
@@ -203,13 +211,16 @@ Per concedere l'accesso ai messaggi di posta elettronica, al calendario, alle at
     
 5. In **Opzioni** scegliere come si vuole gestire i duplicati.
     
-6.  Select **Next**. 
+6. Scegliere **Avanti**.
     
 7. Se al file di dati di Outlook (con estensione pst) è stata assegnata una password, immettere la password e quindi fare clic su **OK**.
     
 8. Impostare le opzioni per l'importazione degli elementi. Solitamente, non è necessario modificare le impostazioni predefinite.
     
 9. Select **Finish**.
+
+> [!NOTE]
+> La procedura resta invariata per l'accesso ai dati di posta elettronica e di OneDrive di un utente esistente.
     
 > [!TIP]
 > Se si desidera importare o ripristinare solo alcuni elementi da un file di dati di Outlook (con estensione pst), è possibile aprire il file di dati di Outlook. Nel riquadro di spostamento, quindi, trascinare gli elementi dalle cartelle dei file di dati di Outlook alle cartelle di Outlook esistenti. 
@@ -224,4 +235,3 @@ Per concedere l'accesso ai messaggi di posta elettronica, al calendario, alle at
   
 [Conservazione ed eliminazione di OneDrive](/onedrive/retention-and-deletion)
   
-

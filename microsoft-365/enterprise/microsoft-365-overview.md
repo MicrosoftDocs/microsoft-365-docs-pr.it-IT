@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 per Enterprise.
-ms.openlocfilehash: 1e902d1ca0eb80a7588a9b4060a41183f5a5db24
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: c66fb5e4d8cd0d24ec20a50ca2ead3f3b9e0851d
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053096"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113518"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
@@ -74,7 +74,7 @@ Per scaricare una copia del poster, fare clic [qui](https://github.com/Microsoft
 
 ## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
 
-Per ottenere un'immagine migliore di come spostare l'intera organizzazione ai prodotti e ai servizi in Microsoft 365 for Enterprise, scaricare il [poster di transizione](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+Per ottenere un'immagine migliore di come spostare l'intera organizzazione ai prodotti e ai servizi in Microsoft 365 per Enterprise, vedere il [poster di transizione](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Immagine per il poster di transizione a Microsoft 365](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 

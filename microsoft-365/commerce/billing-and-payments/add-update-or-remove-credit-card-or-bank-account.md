@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Informazioni su come gestire i metodi di pagamento nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 47635f5fe5ffd37fbd33c258ab1df729dfc13399
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: be03d4b779c0592d47b23c4cf1fd491b7c8f455e
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952007"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106049"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Aggiungere, aggiornare o rimuovere i metodi di pagamento
 
@@ -234,7 +234,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
   
 4. Aggiornare le informazioni sulla carta di credito o sul conto corrente bancario (nome sulla carta di credito o sul conto corrente bancario, indirizzo di fatturazione. il numero di telefono o la data di scadenza) in base alle esigenze, quindi selezionare **Invia**.
 
-5. Verrà visualizzato un messaggio di conferma. In caso contrario, vedere [Risoluzione dei problemi relativi alle carte di credito e ai conti correnti bancari](#troubleshooting-credit-cards-and-bank-accounts).
+5. Verrà visualizzato un messaggio di conferma. In caso contrario, vedere la sezione "risoluzione dei problemi relativi a carte di credito e account bancari" più avanti in questo articolo.
 
     ![Messaggio di conferma: "il metodo di pagamento è stato aggiornato correttamente".](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
@@ -262,7 +262,7 @@ Se il metodo di pagamento è associato a un profilo di fatturazione e viene util
   
 4. Aggiornare le informazioni sulla carta di credito o sul conto corrente bancario (nome sulla carta di credito o sul conto corrente bancario, indirizzo di fatturazione. il numero di telefono o la data di scadenza) in base alle esigenze, quindi selezionare **Invia**.
 
-5. Verrà visualizzato un messaggio di conferma. In caso contrario, vedere [Risoluzione dei problemi relativi alle carte di credito e ai conti correnti bancari](#troubleshooting-credit-cards-and-bank-accounts).
+5. Verrà visualizzato un messaggio di conferma. In caso contrario, vedere la sezione "risoluzione dei problemi relativi a carte di credito e account bancari" più avanti in questo articolo.
 
     ![Messaggio di conferma: "il metodo di pagamento è stato aggiornato correttamente".](../../media/23b4aa8e-f5d5-4535-92a2-9111a270f097.png)
 
