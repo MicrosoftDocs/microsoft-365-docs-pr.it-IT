@@ -16,12 +16,12 @@ ms.collection:
 ms.assetid: b9acfd4c-df82-4eb5-a652-232a6829870a
 description: Informazioni sulle risorse disponibili per gli amministratori di Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: cafb63d53178a2cc21448643ba9fd78773265aa8
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: e38c15d0e68e908bada941443b019e9f243c7f11
+ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046916"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43075597"
 ---
 # <a name="microsoft-365-admin-help-center"></a>Centro assistenza per gli amministratori di Microsoft 365
 
@@ -39,13 +39,13 @@ Informazioni sulle risorse disponibili per gli amministratori.
                     </div>
                     <div class="cardText">
                         <h3>Office 365 diventerà Microsoft 365</h3>
-                        <p>Stiamo modificando i nomi di alcuni abbonamenti a Office 365 e Microsoft 365. Non occorre fare nulla. I servizi, le app e le funzionalità resteranno invariati, così come il prezzo dell'abbonamento. Il nome dell'abbonamento verrà aggiornato automaticamente nell'interfaccia di amministrazione di Microsoft 365 e gli estratti conto verranno aggiornati a partire dal 21 aprile 2020</p>
+                        <p>Stiamo modificando i nomi di alcuni abbonamenti a Office 365 e Microsoft 365. Non occorre fare nulla. I servizi, le app e le funzionalità resteranno invariati, così come il prezzo dell'abbonamento. Il nome dell'abbonamento verrà aggiornato automaticamente nell'interfaccia di amministrazione di Microsoft 365 e gli estratti conto verranno aggiornati a partire dal 21 aprile 2020.</p>
                         <ul>
-                            <li><p>Office 365 Business Essentials è ora Microsoft 365 Business Basic</p></li>
-                            <li><p>Office 365 Business Premium è ora Microsoft 365 Business Standard</p></li>
-                            <li><p>Office 365 Business Premium è ora Microsoft 365 Business Premium</p></li>
-                            <li><p>Office 365 Business è ora App Microsoft 365 per le aziende</p></li>
-                            <li><p>Office 365 ProPlus è ora App Microsoft 365 per grandi imprese</p></li>
+                            <li><p><b>Office 365 Business Essentials</b> è ora <b>Microsoft 365 Business Basic</b>.</p></li>
+                            <li><p><b>Office 365 Business Premium</b> è ora <b>Microsoft 365 Business Standard</b>.</p></li>
+                            <li><p><b>Microsoft 365 Business</b> è ora <b>Microsoft 365 Business Premium</b>.</p></li>
+                            <li><p><b>Office 365 Business</b> è ora <b>Microsoft 365 Apps for business</b>.</p></li>
+                            <li><p><b>Office 365 ProPlus</b> è ora <b>Microsoft 365 Apps for enterprise</b>.</p></li>
                         </ul>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=2120533">Altre informazioni</a></p>
                     </div>
