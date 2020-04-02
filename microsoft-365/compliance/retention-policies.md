@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: e7e6de977e8fad231ecb544a95f15caca5e56d13
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c012f3ddea19edb9ff22dd4e8353a0de1f3b3812
+ms.sourcegitcommit: 748bc3484b7ccbd65b558f495b6fa42196c3c571
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634694"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43083653"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -52,10 +52,9 @@ Quando si impostano criteri di conservazione per il contenuto, gli utenti posson
   
 Infine, alcune organizzazioni hanno la necessità di conformarsi a normative come la regola 17a-4 della SEC (Securities and Exchange Commission), in base alla quale i criteri di conservazione attivati non possono essere disattivati o resi meno restrittivi. Per soddisfare questo requisito, è possibile usare la caratteristica protezione dell'archiviazione. Dopo aver bloccato i criteri, nessuno, incluso l'amministratore, può disattivarli o renderli meno restrittivi.
   
-Creare e gestire i criteri di conservazione sulla:
+I criteri di conservazione vengono creati e gestiti dal [Centro conformità Microsoft 365](https://compliance.microsoft.com/): **Criteri** > **Dati** > **Conservazione**
 
-- Pagina **Criteri** pagina nel [Centro conformità Microsoft 365](https://compliance.microsoft.com/).
-- Pagina **Conservazione** in **Governance delle informazioni** nel [Centro sicurezza&amp; e conformità di Office 365](https://protection.office.com/).
+In alternativa, è possibile passare alla stessa posizione nel Centro conformità Microsoft 365 usando la scheda **Soluzioni** > **Governance delle informazioni** > **Conservazione**. 
 
 **Se si vuole avere la possibilità di esaminare il contenuto prima che venga eliminato definitivamente,** provare a usare le [etichette di conservazione](labels.md) anziché i criteri di conservazione. Quando si crea un'etichetta di conservazione, è possibile configurare una [revisione per l'eliminazione](disposition-reviews.md) per rivedere il contenuto al termine del periodo di conservazione.
 
@@ -75,27 +74,43 @@ Note:
     
 ### <a name="content-in-onedrive-accounts-and-sharepoint-sites"></a>Contenuto negli account di OneDrive e nei siti di SharePoint
 
-I criteri di conservazione vengono applicati a livello di raccolta siti. Quando si include una raccolta siti di SharePoint o un account OneDrive nei criteri di conservazione viene creata una raccolta di archiviazione, se non esiste già. È possibile visualizzare questa raccolta nella pagina **Contenuto del sito** nel sito principale della raccolta siti. La maggior parte degli utenti non può visualizzare la raccolta di archiviazione poiché è visibile soltanto agli amministratori della raccolta siti.
+I criteri di conservazione vengono applicati a livello di raccolta siti. Quando si include una raccolta siti di SharePoint o un account OneDrive nei criteri di conservazione viene usata una raccolta di archiviazione per conservare i documenti. Se non esiste già, la raccolta viene creata automaticamente. È possibile visualizzare questa raccolta nella pagina **Contenuto del sito** nel sito principale della raccolta siti. La maggior parte degli utenti non può visualizzare la raccolta di archiviazione poiché è visibile soltanto agli amministratori della raccolta siti.
   
-Se un utente tenta di modificare o eliminare i contenuti di un sito soggetto a criteri di conservazione, questi controllano innanzitutto se il contenuto è stato modificato dal momento della sua applicazione. Nel caso della prima modifica dall'applicazione dei criteri di conservazione, questi creano una copia dei contenuti nella raccolta di archiviazione, quindi permettono all'utente di modificare o eliminare i contenuti originali. I contenuti presenti nella raccolta siti possono essere copiati nella raccolta di archiviazione anche se tali contenuti non corrispondono al filtro della query utilizzato dai criteri di conservazione.
-  
-Un processo timer pulisce quindi la raccolta di archiviazione. Il processo timer viene eseguito periodicamente e confronta tutti i contenuti della raccolta di archiviazione con tutte le query usate dai criteri di conservazione nel sito. A meno che i contenuti non corrispondano ad almeno una delle query, il processo timer elimina definitivamente i contenuti dalla raccolta di archiviazione.
-  
-Quanto descritto in precedenza vale per il contenuto esistente al momento dell'applicazione dei criteri di conservazione. Inoltre, tutto il nuovo contenuto creato o aggiunto alla raccolta siti dopo che è stato incluso nei criteri verrà conservato dopo l'eliminazione. Il nuovo contenuto non viene copiato nella raccolta di archiviazione alla prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il controllo delle versioni, come descritto nella sezione seguente.
+Se un utente tenta di modificare o eliminare i contenuti di un sito soggetto a Conserva ed elimina o a Conserva solo, i criteri controllano innanzitutto se il contenuto è stato modificato dal momento della sua applicazione. Nel caso della prima modifica dall'applicazione dei criteri di conservazione, questi creano una copia dei contenuti nella raccolta di archiviazione, quindi permettono all'utente di modificare o eliminare i contenuti originali. I contenuti presenti nella raccolta siti possono essere copiati nella raccolta di archiviazione anche se tali contenuti non corrispondono al filtro della query utilizzato dai criteri di conservazione.
+
+Copiare i contenuti nella raccolta di archiviazione è possibile per i contenuti che esistono al momento dell'applicazione dei criteri di conservazione. Inoltre, i nuovi contenuti creati o aggiunti alla raccolta siti in seguito all'inclusione nei criteri conservazione, verranno conservati dopo l'eliminazione. Tuttavia, i nuovi contenuti non vengono copiati nella raccolta di archiviazione al momento della prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, attivare il controllo delle versioni, come illustrato in una [sezione](#how-a-retention-policy-works-with-document-versions-in-a-site-collection) di seguito.
   
 Si osservi che, se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetti a criteri di conservazione, viene visualizzato un messaggio di errore. Un utente può eliminare una cartella se prima di tutto sposta o elimina gli eventuali file nella cartella soggetta ai criteri. Inoltre, la raccolta di archiviazione viene creata solo quando il primo elemento deve essere copiato nella raccolta e non quando si creano criteri di conservazione. Quindi, per verificare i criteri, è necessario prima di tutto modificare o eliminare un documento in un sito soggetto ai criteri, quindi passare alla raccolta di archiviazione per visualizzare la copia conservata.
   
-Dopo che i criteri di conservazione vengono assegnati a un account di OneDrive o a un sito di SharePoint, il contenuto può seguire uno dei due percorsi seguenti:
+Dopo che i criteri di conservazione vengono assegnati a un account di OneDrive o a un sito di SharePoint, i percorsi del contenuto variano in base al fatto che il criterio di conservazione sia Conserva ed elimina, Conserva solo o Elimina solo.
+
+Se il criterio di conservazione è Conserva ed elimina:
 
 ![Diagramma del ciclo di vita dei contenuti in SharePoint e OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
-1. **Se il contenuto viene modificato o eliminato** durante il periodo di conservazione, una copia del contenuto originale al momento dell'assegnazione dei criteri di conservazione viene creata nella raccolta di archiviazione. In questa raccolta a intervalli regolari viene eseguito un processo timer che identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono spostati nel Cestino di secondo livello, dove verranno eliminati definitivamente dopo 93 giorni. Il Cestino di secondo livello non è visibile agli utenti finali come il Cestino di primo livello, tuttavia gli amministratori della raccolta siti possono visualizzare e ripristinare il contenuto da tale posizione.
+1. **Se il contenuto viene modificato o eliminato** durante il periodo di conservazione: una copia del contenuto originale al momento dell'assegnazione dei criteri di conservazione viene creata nella raccolta di archiviazione. Nella raccolta, un processo timer viene eseguito periodicamente e identifica gli elementi il cui periodo di conservazione è scaduto. Questi elementi vengono spostati nel cestino di secondo livello, dove vengono eliminati definitivamente dopo 93 giorni. Il Cestino di secondo livello non è visibile agli utenti finali come il Cestino di primo livello, tuttavia gli amministratori della raccolta siti possono visualizzare e ripristinare il contenuto da tale posizione.
 
     > [!NOTE]
-    > Di recente è stata modificata la modalità con cui il contenuto viene eliminato dalla raccolta di archiviazione. Per evitare perdite accidentali di dati, non eliminiamo più definitivamente il contenuto dalla raccolta di archiviazione. Eliminiamo invece definitivamente il contenuto solo dal Cestino in modo che tutto il contenuto della raccolta di archiviazione passi al Cestino di secondo livello.
+    > Per evitare perdite accidentali di dati, il contenuto non viene mai eliminato automaticamente dalla raccolta di archiviazione, ma passa al cestino di secondo livello. Il periodo di tolleranza di 93 giorni consente agli amministratori di recuperare il contenuto, se necessario.
     
-2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione, viene spostato nel Cestino di primo livello alla fine del periodo di conservazione. Se un utente elimina il contenuto da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non viene usato, quindi la ricerca non rileva alcun contenuto al suo interno. Ciò significa che un blocco di eDiscovery non può rilevare contenuto da bloccare nel Cestino. 
-    
+2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione, viene spostato nel Cestino di primo livello alla fine del periodo di conservazione. Se un utente elimina il contenuto da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non viene usato, quindi la ricerca non rileva alcun contenuto al suo interno. Ciò significa che un blocco di eDiscovery non può rilevare contenuto da bloccare nel Cestino.
+
+2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione: alla fine del periodo di conservazione il documento viene spostato nel Cestino di primo livello. Se un utente elimina il documento da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non è indicizzato, quindi la ricerca non rileva alcun contenuto al suo interno. Ciò significa che un blocco di eDiscovery non può rilevare contenuto da bloccare nel Cestino. 
+
+Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi del contenuto sono varianti di Conserva ed elimina:
+
+#### <a name="content-paths-for-retain-only-retention-policy"></a>Percorsi di contenuto per il criterio di conservazione Conserva solo
+
+1. **Se il contenuto viene modificato o eliminato** durante il periodo di conservazione: una copia del documento originale viene creata nella raccolta di archiviazione e conservata fino al termine del periodo di conservazione, quindi la copia nella raccolta di archiviazione viene spostata nel cestino di secondo livello e viene eliminata definitivamente dopo 93 giorni.
+
+2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione: non succede niente prima o dopo il periodo di conservazione. Il documento rimane nella posizione originale.
+
+#### <a name="content-paths-for-delete-only-retention-policy"></a>Percorsi di contenuto per il criterio di conservazione Elimina solo
+
+1. **Se il contenuto viene eliminato** durante il periodo di conservazione: il documento viene spostato nel cestino di primo livello. Se un utente elimina il documento da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Se il contenuto viene modificato durante il periodo di conservazione, esegue lo stesso percorso di eliminazione dopo la scadenza del contenuto.
+
+2. **Se il contenuto non viene eliminato** durante il periodo di conservazione: alla fine del periodo di conservazione il documento viene spostato nel Cestino di primo livello. Se il contenuto viene eliminato durante il periodo di conservazione, il documento viene spostato immediatamente nel cestino di primo livello. Se un utente elimina il documento da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non è indicizzato, quindi la ricerca non rileva alcun contenuto al suo interno. Ciò significa che un blocco di eDiscovery non può rilevare contenuto da bloccare nel Cestino.
+
 ### <a name="content-in-mailboxes-and-public-folders"></a>Contenuto in cassette postali e cartelle pubbliche
 
 Per la posta elettronica, il calendario e altri elementi di un utente, i criteri di conservazione vengono applicati a livello di cassetta postale. Per una cartella pubblica, i criteri di conservazione vengono applicati a livello di cartella e non di cassetta postale. Per conservare gli elementi sia di una cassetta postale che di una cartella pubblica viene utilizzata la cartella Elementi ripristinabili. Solo gli utenti a cui sono state assegnate autorizzazioni di eDiscovery possono visualizzare gli elementi nella cartella Elementi ripristinabili di un altro utente.
@@ -106,13 +121,25 @@ Un processo verifica periodicamente gli elementi nella cartella Elementi riprist
   
 Quando un utente prova a modificare determinate proprietà di un elemento di cassette postali (ad esempio, l'oggetto, il corpo, gli allegati, i mittenti o i destinatari, la data di invio o di ricezione di un messaggio), una copia dell'elemento originale viene salvata nella cartella Elementi ripristinabili prima che la modifica diventi effettiva. Questo si verifica per ogni modifica successiva. Alla fine del periodo di conservazione, le copie nella cartella Elementi ripristinabili vengono eliminate definitivamente.
   
-Dopo che i criteri di conservazione vengono assegnati a una cassetta postale o a una cartella pubblica, il contenuto può seguire uno dei due percorsi seguenti:
+Se il criterio di conservazione è Conserva ed elimina:
 
 ![Diagramma del flusso di conservazione nelle cartelle di posta elettronica e pubblica](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **Se l'elemento viene modificato o eliminato** definitivamente dall'utente (con MAIUSC+CANC o eliminandolo da Posta eliminata) durante il periodo di conservazione, viene spostato (o copiato, in caso di modifica) nella cartella Elementi ripristinabili. In questa raccolta a intervalli regolari viene eseguito un processo che identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni.
     
-2. **Se l'elemento non viene modificato o eliminato** durante il periodo di conservazione, lo stesso processo viene eseguito periodicamente in tutte le cartelle della cassetta postale e identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni. 
+2. **Se l'elemento non viene modificato o eliminato** durante il periodo di conservazione, lo stesso processo viene eseguito periodicamente in tutte le cartelle della cassetta postale e identifica i messaggi il cui periodo di conservazione è scaduto. Questi elementi vengono eliminati definitivamente entro 14 giorni dalla data di fine del periodo di conservazione. 14 giorni è l'impostazione predefinita, ma può essere configurato un valore fino a 30 giorni. Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi del contenuto sono varianti di Conserva ed elimina:
+
+#### <a name="content-paths-for-retain-only-retention-policy"></a>Percorsi di contenuto per il criterio di conservazione Conserva solo
+
+1. **Se l'elemento viene modificato o eliminato** durante il periodo di conservazione: una copia dell'elemento originale viene creata nella cartella Elementi ripristinabili e conservata fino al termine del periodo di conservazione, quindi la copia nella cartella Elementi ripristinabili viene eliminata definitivamente entro 14 giorni dalla scadenza dell'elemento. 
+
+2. **Se l’elemento non viene modificato o eliminato** durante il periodo di conservazione: non succede niente prima o dopo il periodo di conservazione. L’elemento rimane nella posizione originale.
+
+#### <a name="content-paths-for-delete-only-retention-policy"></a>Percorsi di contenuto per il criterio di conservazione Elimina solo
+
+1. **Se l’elemento non viene eliminato** durante il periodo di conservazione: alla fine del periodo di conservazione l’elemento viene spostato nella cartella Elementi ripristinabili. 
+
+2. **Se l'elemento viene eliminato** durante il periodo, l'elemento verrà immediatamente spostato nella cartella Elementi ripristinabili. Se un utente elimina l'elemento da questa posizione o svuota la cartella Elementi ripristinabili, l'elemento viene eliminato definitivamente. In caso contrario, l'elemento viene eliminato definitivamente dopo un periodo di 14 giorni nella cartella Elementi ripristinabili. 
 
 ### <a name="when-a-user-leaves-the-organization"></a>Quando un utente abbandona l'organizzazione
 

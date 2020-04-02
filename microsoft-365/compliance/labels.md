@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di conservazione per classificare i dati all'interno dell'organizzazione a scopi di governance e applicare regole di conservazione in base alla classificazione. È anche possibile usare le etichette di conservazione per implementare una soluzione di gestione dei record per Microsoft 365.
-ms.openlocfilehash: 3bcaee41ab178ae79b1f2ef46871dadb107f3f5b
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: e41c71a1f8bc0175b179ecd760dac7098551bc91
+ms.sourcegitcommit: 6b7eecad7162c065af80721204fbabdd2e31e42b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929450"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43065642"
 ---
 # <a name="overview-of-retention-labels"></a>Panoramica delle etichette di conservazione
 
@@ -74,7 +74,7 @@ Le etichette di conservazione sono blocchi predefiniti indipendenti e riutilizza
   
 ![Diagramma di etichette, criteri per le etichette e posizioni](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. Quando si pubblicano etichette di conservazione, vengono incluse in criteri di etichetta di conservazione. Tenere presente che i nomi delle etichette di conservazione sono immutabili e non possono essere modificati una volta creati.
+1. Quando si pubblicano etichette di conservazione, vengono incluse in criteri di etichetta di conservazione. I nomi delle etichette di conservazione non sono modificabili, il che significa che non è possibile cambiarli dopo che sono stati creati.
 
 
 2. Una singola etichetta di conservazione può essere inclusa in molti criteri di etichetta di conservazione.
@@ -183,9 +183,9 @@ Se l'etichetta di conservazione verrà assegnata al contenuto dagli utenti final
     
 - Gruppi di Office 365 (sia nel sito del gruppo che nella cassetta postale del gruppo in Outlook sul web)
     
-Le sezioni seguenti mostrano il modo in cui le etichette vengono visualizzate agli utenti dell'organizzazione in app diverse.
+Le sezioni seguenti descrivono il modo in cui le etichette vengono visualizzate dagli utenti dell'organizzazione in app diverse.
   
-### <a name="outlook-on-the-web"></a>Outlook sul web
+### <a name="outlook-on-the-web"></a>Outlook sul Web
 
 Per assegnare un'etichetta a un elemento in Outlook sul web, fare clic con il pulsante destro del mouse sull'elemento\> **Assegna criteri** \> scegliere l'etichetta di conservazione. 
   
@@ -416,7 +416,19 @@ Per comprendere in che modo le diverse etichette con azioni di conservazione ven
 I principi di conservazione funzionano come un flusso di risoluzione di conflitti dall'alto verso il basso: se le regole applicate da tutti i criteri o le etichette sono le stesse in un determinato livello, il flusso si sposta verso il basso al livello successivo per determinare la priorità di applicazione di ogni regola.
   
 Infine, un criterio o un'etichetta di conservazione non può eliminare definitivamente qualsiasi contenuto che si trovi in stato di blocco per eDiscovery. Quando il blocco viene rilasciato, il contenuto torna idoneo per il processo di pulizia descritto in precedenza.
-  
+
+### <a name="precedence-for-auto-labeling-with-trainable-classifiers"></a>Precedenza per l'etichettatura automatica con i classificatori sottoponibili a training
+
+Tutte le etichette di conservazione configurate per i classificatori sottoponibili a training vengono valutate contemporaneamente. Se un elemento viene rilevato da più classificatori sottoponibili a training, vengono usati i criteri seguenti per determinare quale etichetta di conservazione applicare:
+
+1. Le etichette di conservazione configurate per la conservazione o per la conservazione e poi l’eliminazione hanno una priorità maggiore rispetto alle etichette di conservazione configurate solo per l'eliminazione.
+
+2. Per le etichette di conservazione configurate per la conservazione o per la conservazione e poi l’eliminazione, prevale l’etichetta di conservazione configurata per il periodo di conservazione più lungo.
+
+3. Per le etichette di conservazione configurate solo per l'eliminazione, prevale l'etichetta di conservazione configurata per il periodo più breve.
+
+4. Le etichette di conservazione con la stessa azione e lo stesso periodo producono una selezione di etichette di conservazione non deterministica.
+
 ## <a name="use-retention-labels-instead-of-these-features"></a>Usare le etichette di conservazione anziché queste funzionalità
 
 Le etichette di conservazione possono facilmente essere rese disponibili per un'intera organizzazione e il relativo contenuto in Office 365, compresi Exchange, SharePoint, OneDrive e gruppi di Office 365. Se è necessario classificare il contenuto o gestire i record ovunque in Office 365, è consigliabile usare le etichette di conservazione.
