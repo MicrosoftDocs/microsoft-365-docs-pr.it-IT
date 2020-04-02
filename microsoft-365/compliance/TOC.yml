@@ -71,7 +71,7 @@
           href: privileged-access-management-configuration.md
     - name: Proteggere l'accesso di utenti e dispositivi
       href: protect-access-to-data-and-services.md
-    - name: Archivio protetto del cliente
+    - name: Customer Lockbox
       href: customer-lockbox-requests.md
 - name: Gestire la protezione delle informazioni
   href: protect-information.md
@@ -495,14 +495,14 @@
               href: manage-load-sets-in-advanced-ediscovery.md
         - name: Esaminare i dati del caso
           items:
+            - name: Utilizzare il dashboard set di revisione (anteprima)
+              href: advanced-ediscovery-dashboard.md
             - name: Visualizzare i documenti in un insieme da rivedere
               href: view-documents-in-review-set.md
             - name: Eseguire query sui dati in un insieme da rivedere
               href: review-set-search.md
             - name: Contrassegnare i documenti in un insieme da rivedere
               href: tagging-documents.md
-            - name: Utilizzare il dashboard set di revisione (anteprima)
-              href: advanced-ediscovery-dashboard.md
         - name: Analizzare i dati del caso
           href: analyzing-data-in-review-set.md
           items:
