@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: "Modificare l'indirizzo di posta elettronica iniziale in un indirizzo di posta elettronica semplice come tom@fourthcoffee.com. A tale scopo, è necessario acquistare un nome di dominio e aggiungerlo a Office 365. "
-ms.openlocfilehash: 3e01f0bfb97fbef762fbd7162944ca25d882f142
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1c3c77f9626cdf292e0fb9400070cef3df05a9d6
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253088"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115976"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Cambiare l'indirizzo di posta elettronica per usare il dominio personalizzato
 
@@ -77,7 +77,7 @@ Per eseguire questa procedura è necessario disporre di un account di amministra
 
 ::: moniker-end 
 
-2. Passare alla pagina **Impostazioni** > **domini** . 
+2. Passare alla pagina **configurazione** > **domini** . 
 
 3. Nella pagina **Domains** selezionare **Aggiungi dominio**.
     

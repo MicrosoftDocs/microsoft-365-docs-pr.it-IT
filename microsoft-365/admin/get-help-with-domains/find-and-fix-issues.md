@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Informazioni su come individuare i problemi che si sono verificati durante la configurazione di un dominio personalizzato assicurandosi che i record DNS siano configurati correttamente.
-ms.openlocfilehash: 277e87ad6b06db0b1ef3b3cb5eaaa45a2e77ed6f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a93318d54b950b908319fe50a0cfedefe8586036
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252956"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115975"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records-in-office-365"></a>Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS in Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "42252956"
 La configurazione del dominio affinché funzioni con Office 365 può essere un'attività complicata. Il sistema DNS non è facile da usare e la configurazione del DNS per il dominio influisce su attività aziendali importanti, come la posta elettronica.
 
 > [!NOTE]
-> È possibile verificare se si verificano problemi con il dominio verificando il relativo stato. Andare a **** > **Domains** Settings e visualizzare le notifiche nella colonna **stato** . Se viene visualizzato un problema, selezionare altre azioni (tre punti) e quindi fare clic su **Controlla integrità**. Il riquadro che si apre descriverà tutti i problemi che si verificano con il dominio.
+> È possibile verificare se si verificano problemi con il dominio verificando il relativo stato. Accedere a **Setup** > **domini** di installazione e visualizzare le notifiche nella colonna **stato** . Se viene visualizzato un problema, selezionare altre azioni (tre punti) e quindi fare clic su **Controlla integrità**. Il riquadro che si apre descriverà tutti i problemi che si verificano con il dominio.
   
 ## <a name="whats-going-on"></a>Per quale motivo?
 
