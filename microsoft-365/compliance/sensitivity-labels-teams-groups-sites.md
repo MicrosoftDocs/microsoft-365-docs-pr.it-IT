@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Office 365.
-ms.openlocfilehash: 67fe4892a980748699bb17c0a41299ed741cf417
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 0ac1d9f605c32664115086057b7c17355d495c00
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952066"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106134"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)
+
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Quando si creano etichette di riservatezza nel [Centro conformità Microsoft 365](https://protection.office.com/), ora è possibile applicarle ai seguenti contenitori: siti di Microsoft Teams, gruppi di Office 365 e siti di SharePoint. Usare le impostazioni di etichetta seguenti per proteggere il contenuto in tali contenitori:
 

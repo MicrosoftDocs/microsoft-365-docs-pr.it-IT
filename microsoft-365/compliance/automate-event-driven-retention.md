@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Questo argomento illustra come configurare i flussi di processo aziendale in modo da automatizzare la conservazione attraverso gli eventi usando l'API REST di Microsoft 365.
-ms.openlocfilehash: 692671ca5e7d956cb168ac0de2e409e7023cfd04
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0b2507497bfd90b892e95934a03f795045c9bac2
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079088"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105653"
 ---
 # <a name="automate-event-based-retention"></a>Automatizzare la conservazione basata su eventi
+
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 L'esplosione del contenuto nelle organizzazioni e il modo in cui può diventare ROT (redundant, obsolete, trivial, cioè ridondante, obsoleto e banale), è una cosa seria. Per continuare a soddisfare gli obblighi di conformità normativa, legale e finanziaria, le organizzazioni devono poter conservare e proteggere le informazioni importanti e trovare rapidamente ciò che conta. Conservare solo informazioni importanti e pertinenti è fondamentale per il successo di un’organizzazione.
 

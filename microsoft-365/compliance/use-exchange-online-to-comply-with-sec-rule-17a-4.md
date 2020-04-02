@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates ha comprovato che se si esegue la configurazione di Exchange Online e del Centro sicurezza e conformità come consigliato vengono soddisfatti i requisiti di archiviazione pertinenti delle regole CFTC 1.31(c)-(d), FINRA 4511 e SEC 17a-4. È possibile scaricare la valutazione.
-ms.openlocfilehash: d2f92f97ba15bcce9466e8886198c7502c41732b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bf54bf5798d4bbb5b655cc367330bbb50de7f7b2
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069258"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106124"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usare Exchange Online e il Centro sicurezza e conformità per conformarsi alla regola SEC 17a-4
+
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Se l'organizzazione deve conformarsi agli standard normativi per la conservazione dei dati, il Centro sicurezza e conformità di Office 365 offre funzionalità per la gestione del ciclo di vita dei dati in Exchange Online, tra cui la possibilità di conservare, controllare, cercare ed esportare i dati. Queste funzionalità sono sufficienti a soddisfare le esigenze della maggior parte delle organizzazioni.
 

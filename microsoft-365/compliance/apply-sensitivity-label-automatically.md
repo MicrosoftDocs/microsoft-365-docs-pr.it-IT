@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 7edfa83648ecb86ab23a898299edb63df851d123
-ms.sourcegitcommit: 7eaecb91c7cb1f8679f99882563f5c1149175992
+ms.openlocfilehash: a087d142843ce74de3a930aea9286034b8617db6
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43022933"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106072"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
+
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Quando si crea un'etichetta di riservatezza, è possibile assegnarla automaticamente a contenuti che includono informazioni sensibili oppure è possibile chiedere agli utenti di applicare l'etichetta consigliata.
 

@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: "Requisito per tutte le soluzioni di Microsoft Information Protection: creare, configurare e pubblicare etichette di riservatezza per classificare e proteggere i documenti e i messaggi di posta elettronica dell'organizzazione."
-ms.openlocfilehash: b3f998ec7f52403c4b3676fb08976aacdc1f7d0f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: cbc2b0ef084d20d4e11ebdb03a9707e172f8a971
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635184"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105633"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Creare e configurare etichette di riservatezza e i relativi criteri
+
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Tutte le soluzioni di Microsoft Information Protection (MIP) sono implementate utilizzando le [etichette di riservatezza](sensitivity-labels.md). Per creare e pubblicare le etichette, passare all'interfaccia di amministrazione per l’applicazione di etichette, come il [Centro conformità Microsoft 365](https://compliance.microsoft.com/). È anche possibile utilizzare il Centro sicurezza Microsoft 365 o il Centro sicurezza e conformità di Office 365.
 

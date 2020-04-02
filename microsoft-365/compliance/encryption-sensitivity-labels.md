@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Le etichette di riservatezza possono utilizzare la crittografia per proteggere i contenuti.
-ms.openlocfilehash: 3f59a6038da8600923f5fcc0d18f1de5ab5dc06c
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 29e9c0ea6e7c63ff8b90057b2c88aafd834ec4dc
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826237"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105673"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza 
+
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Ad esempio, con le impostazioni di crittografia di un'etichetta di riservatezza, è possibile proteggere i contenuti per determinare le condizioni seguenti:
 

@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Con le etichette di conservazione, si può basare un periodo di conservazione sul momento in cui si verifica un determinato tipo di evento. L'evento attiva l'inizio del periodo di conservazione e a tutto il contenuto in cui è applicata un'etichetta per quel tipo di evento vengono applicate le azioni di conservazione dell'etichetta. La conservazione basata su eventi viene usata generalmente nell'ambito di un processo di gestione dei record.
-ms.openlocfilehash: da5e10735e8980199a829ac50d096052abe93d14
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4389f3639de3e9e036491026455ce62a9e258432
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074525"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105623"
 ---
 # <a name="overview-of-event-driven-retention"></a>Panoramica della conservazione basata su eventi
+
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Quando si conserva il contenuto, il periodo di conservazione si basa spesso sull'età del contenuto: ad esempio, è possibile conservare i documenti per sette anni dopo la loro creazione e quindi eliminarli. Tuttavia, con le etichette di conservazione in Office 365, è possibile basare un periodo di conservazione su quando si verifica un determinato tipo di evento. L'evento attiva l'inizio del periodo di conservazione e tutto il contenuto con un'etichetta di conservazione applicata per quel tipo di evento riceve le azioni di conservazione dell'etichetta applicate su di esso.
   

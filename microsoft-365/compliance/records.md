@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Per implementare una strategia di gestione dei record nella tua organizzazione Microsoft o Office 365, usare etichette di conservazione che dichiarino un contenuto come record. Quindi pubblicare o applicare automaticamente l'etichetta record di conservazione.
-ms.openlocfilehash: e92ec8be90d27696538f46e5609f6dc039200136
-ms.sourcegitcommit: 3b6e226d07b5227054d5c8d1a012694caf88f50a
+ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42586728"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106144"
 ---
 # <a name="overview-of-records"></a>Panoramica dei record
+
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 La gestione dei record in Microsoft 365 consente alle organizzazioni di conformarsi alle politiche aziendali e agli obblighi legali e normativi, riducendo al contempo i rischi e le responsabilità legali.
 
@@ -79,10 +81,6 @@ Quando si crea un'etichetta di conservazione, si può scegliere di usarla per cl
    ![Fare clic sulla casella di controllo Utilizza l'etichetta per classificare il contenuto come Record](../media/recordversioning6.png)
 
 3. [Pubblicare](labels.md#how-retention-labels-work-with-retention-label-policies) o [Applicare automaticamente](labels.md#applying-a-retention-label-automatically-based-on-conditions) l'etichetta di conservazione ai siti di SharePoint e/o agli account di OneDrive.
-
-> [!NOTE]
-> Per dichiarare un elemento come record usando le [etichette di conservazione](labels.md) è necessaria una licenza di Office 365 Enterprise E5 o equivalente per ogni utente autorizzato a modificare il contenuto in questa posizione. Gli utenti che hanno accesso in sola lettura non hanno bisogno di una licenza.
-
 
 ### <a name="applying-a-retention-label-to-content"></a>Applicare un'etichetta di conservazione al contenuto
 
