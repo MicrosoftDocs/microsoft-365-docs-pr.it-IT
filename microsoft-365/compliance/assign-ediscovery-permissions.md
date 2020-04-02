@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Assegnare le autorizzazioni necessarie per eseguire le attività relative a eDiscovery utilizzando il Centro sicurezza & Compliance.
-ms.openlocfilehash: 32dc7e9a01211fcd0d1441c2434385ecd611d585
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556814"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097209"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance
 
@@ -30,9 +30,9 @@ Se si desidera che gli utenti utilizzino gli strumenti correlati a eDiscovery ne
   
 Il gruppo di ruoli principale di eDiscovery nel centro sicurezza & conformità è denominato **eDiscovery Manager**. Sono presenti due sottogruppi all'interno di questo gruppo di ruoli. 
   
-- **eDiscovery** managers-un Manager di eDiscovery può utilizzare lo strumento di ricerca del contenuto nel centro sicurezza & conformità per cercare i percorsi di contenuto nell'organizzazione ed eseguire diverse azioni correlate alla ricerca, ad esempio l'anteprima e l'esportazione dei risultati della ricerca. I membri possono inoltre creare e gestire i casi di eDiscovery e i casi di eDiscovery avanzati, aggiungere e rimuovere membri in un caso, creare case, eseguire ricerche associate a un caso e accedere ai dati del caso. i responsabili di eDiscovery possono accedere e gestire solo i casi creati. Non possono accedere o gestire i casi creati da altri gestori di eDiscovery. 
+- **eDiscovery** managers-un Manager di eDiscovery può utilizzare lo strumento di ricerca del contenuto nel centro sicurezza & conformità per cercare i percorsi di contenuto nell'organizzazione ed eseguire diverse azioni correlate alla ricerca, ad esempio l'anteprima e l'esportazione dei risultati della ricerca. I membri possono inoltre creare e gestire i casi di eDiscovery e i casi di eDiscovery avanzati, aggiungere e rimuovere membri in un caso, creare case, eseguire ricerche associate a un caso e accedere ai dati del caso. i responsabili di eDiscovery possono accedere e gestire solo i casi creati. Non possono accedere o gestire i casi creati da altri gestori di eDiscovery.
     
-- **amministratori di eDiscovery** -un amministratore di eDiscovery è un membro del gruppo di ruoli di eDiscovery Manager ed è in grado di eseguire le stesse attività correlate alla ricerca di contenuto e alla gestione dei casi che può essere eseguito da un responsabile di eDiscovery. Inoltre, un amministratore di eDiscovery è in grado di: 
+- **amministratori di eDiscovery** -un amministratore di eDiscovery è un membro del gruppo di ruoli di eDiscovery Manager ed è in grado di eseguire le stesse attività correlate alla ricerca di contenuto e alla gestione dei casi che può essere eseguito da un responsabile di eDiscovery. Inoltre, un amministratore di eDiscovery è in grado di:
     
   - Accedere a tutti i casi elencati nelle pagine di **eDiscovery** e **Advanced eDiscovery** nel centro sicurezza & Compliance. 
 
@@ -40,10 +40,10 @@ Il gruppo di ruoli principale di eDiscovery nel centro sicurezza & conformità �
     
   - Gestire qualsiasi caso di eDiscovery dopo essersi aggiunti come membri del caso.
   
-  Vedere la sezione [ulteriori informazioni](#more-information) per motivi per i quali potrebbe essere opportuno che gli amministratori di eDiscovery nell'organizzazione. 
+  Vedere la sezione [ulteriori informazioni](#more-information) per motivi per i quali potrebbe essere opportuno che gli amministratori di eDiscovery nell'organizzazione.
 
 > [!NOTE]
-> Per analizzare i dati di un utente tramite Advanced eDiscovery, è necessario assegnare all'utente (custode dei dati) una licenza di Office 365 o Microsoft E5. In alternativa, agli utenti con una licenza di Office 365 E1 o E3 può essere assegnata una licenza per il componente aggiuntivo per la conformità avanzata; agli utenti che dispongono di una licenza Microsoft 365 E1 o E3 può essere assegnata una licenza per il componente aggiuntivo E5 Compliance. Gli amministratori e i responsabili della conformità assegnati ai casi e utilizzano Advanced eDiscovery per analizzare i dati non hanno bisogno di una licenza E5.  
+> Per analizzare i dati di un utente tramite Advanced eDiscovery, è necessario che all'utente (custode dei dati) venga assegnata una licenza di Office 365 E5 o Microsoft E5. In alternativa, agli utenti con una licenza E1 o E3 può essere assegnata una licenza per il componente aggiuntivo E5. Gli amministratori, i responsabili della conformità o il personale legale assegnato ai casi come membri e utilizzano Advanced eDiscovery per raccogliere, visualizzare e analizzare i dati non hanno bisogno di una licenza E5. Per ulteriori informazioni sulle licenze, vedere [Microsoft 365 Licensing Guidance for security & Compliance](https://aka.ms/complianceSD).
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -78,7 +78,7 @@ Nella tabella seguente sono elencati i ruoli RBAC relativi a eDiscovery nel cent
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Gestione dei casi <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Ricerca di conformità <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Esporta <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Esportazione <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Anteprima <br/>  | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Review <br/>  | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Segno di spunta](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
@@ -102,7 +102,7 @@ Analogamente, gli utenti a cui è assegnato il ruolo di ricerca di conformità m
 
 Per ulteriori informazioni, vedere [Ricerca contenuto in Office 365](content-search.md). 
 
-### <a name="export"></a>Esporta
+### <a name="export"></a>Esportazione
 
 Il ruolo consente agli utenti di esportare i risultati di una ricerca di contenuto in un computer locale. Consente inoltre di preparare i risultati della ricerca per l'analisi in Advanced eDiscovery. 
 

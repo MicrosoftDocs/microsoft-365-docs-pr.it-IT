@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 87be266fe9c117afdaf68b66db5d4cf4c7a3d94e
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6d60693e8e67ba91341e01c80a213b75e821721b
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029892"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100879"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurare la conformità delle comunicazioni in Microsoft 365
 
@@ -34,11 +34,23 @@ Utilizzare i criteri di conformità della comunicazione per acquisire le comunic
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario confermare la sottoscrizione Microsoft 365. Gli utenti inclusi nei criteri di conformità della comunicazione devono avere una licenza di conformità Microsoft 365 E5, una licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato oppure essere inclusi in un abbonamento a Office 365 Enterprise E5 o essere inclusi in un Microsoft 365 E5.
+Prima di iniziare a utilizzare la conformità alla comunicazione, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e i componenti aggiuntivi. Per accedere e utilizzare la conformità di comunicazione, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
+
+- Sottoscrizione Microsoft 365 E5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 E3 + il componente aggiuntivo Microsoft 365 E5 Compliance
+- Sottoscrizione Microsoft 365 E3 + componente aggiuntivo Microsoft 365 E5 Insider Risk Management
+- Sottoscrizione Microsoft 365 a5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Compliance
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Insider Risk Management
+- Abbonamento a Office 365 Enterprise E5 (a pagamento o versione di valutazione)
+- Abbonamento a Office 365 Enterprise E3 + il componente aggiuntivo Office 365 Advanced Compliance
+
+Gli utenti inclusi nei criteri di conformità della comunicazione devono essere assegnati a una delle licenze sopra riportate.
+
+>[!IMPORTANT]
+>La conformità avanzata di Office 365 non viene più venduta come sottoscrizione autonoma. Quando le sottoscrizioni correnti scadono, i clienti devono passare a una delle sottoscrizioni precedenti, che contengono le stesse funzionalità di conformità o aggiuntive.
 
 Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si desidera tentare la gestione dei rischi Insider, è possibile [aggiungere microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) all'abbonamento a Office 365 esistente oppure [iscriversi a una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Microsoft 365 Enterprise E5.
-  
-Completare la procedura seguente per configurare e usare la conformità della comunicazione nell'organizzazione Microsoft 365:
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Passaggio 1 (obbligatorio): abilitare le autorizzazioni per la conformità della comunicazione
 

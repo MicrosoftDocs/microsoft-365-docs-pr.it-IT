@@ -16,25 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importare i dati non di Office 365 in un set di revisione in un caso di eDiscovery avanzato.
-ms.openlocfilehash: ae5effafd8a208d3c03ce40e03c9da2b0ea6b8d1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 816519fcaa8dc5172dbb5c369a3ec191585d3647
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072209"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097229"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Caricare dati non Office 365 in un insieme da rivedere
 
 Non tutti i documenti che devono essere analizzati in Advanced eDiscovery sono disponibili in Office 365. Con la caratteristica di importazione di dati non di Office 365 in Advanced eDiscovery, è possibile caricare documenti che non sono presenti in Office 365 in un set di revisione. In questo articolo viene illustrato come portare i documenti non Office 365 in Advanced eDiscovery per l'analisi.
 
->[!Note]
->Advanced eDiscovery richiede un abbonamento a Microsoft 365 o Office 365 E5 per l'organizzazione o un abbonamento E3 con l'abbonamento al componente aggiuntivo per la conformità avanzato. Se non si dispone di tale piano e si desidera provare Advanced eDiscovery, è possibile iscriversi per una versione di valutazione di Office 365 Enterprise E5.
-
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Se si utilizza la funzionalità carica non Office 365 descritta in questo articolo, è necessario disporre di quanto segue:
 
-- A tutti i depositari ai quali si desidera associare il contenuto non di Office 365 deve essere assegnata una licenza E5 o una licenza E3 con una licenza per il componente aggiuntivo per la conformità avanzata.
+- A tutti i depositari ai quali si desidera associare il contenuto non di Office 365 deve essere assegnata la licenza appropriata. Per ulteriori informazioni, vedere [Introduzione a Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
 - Un caso avanzato di eDiscovery esistente.
 
@@ -61,7 +58,7 @@ Se si utilizza la funzionalità carica non Office 365 descritta in questo artico
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Caricare il contenuto non Office 365 in Advanced eDiscovery
 
-1. Come eDiscovery Manager o amministratore di eDiscovery, aprire Advanced eDiscovery, quindi il caso in cui i dati non di Office 365 verranno caricati.  
+1. In qualità di Manager di eDiscovery o amministratore di eDiscovery, aprire Advanced eDiscovery e passare al caso in cui verranno caricati i dati non di Office 365.  
 
 2. Fare clic su **Revisione set**e quindi selezionare il set di revisione in cui caricare i dati non di Office 365.  Se non si dispone di un set di recensioni, è possibile crearne uno. 
  

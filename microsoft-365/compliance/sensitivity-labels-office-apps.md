@@ -15,38 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come gli utenti lavorano con le etichette di riservatezza nelle app di Office per il desktop, le app di Office per dispositivi mobili e le app di Office per il Web. Scoprire quali app supportano le etichette di riservatezza.
-ms.openlocfilehash: 2b77d273cdc589409506dc709669536fcea6c006
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 595381984390321ed810af61f6234428f31551f3
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030124"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106092"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Usare le etichette di riservatezza nelle app di Office
+
+>*[Linee guida per la gestione delle licenze di Microsoft 365 per la sicurezza & conformità](https://aka.ms/ComplianceSD).*
 
 Dopo aver [pubblicato](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) le etichette di riservatezza dal centro conformità di Microsoft 365 o da un centro di etichette equivalente, queste vengono visualizzate nelle app di Office per consentire agli utenti di classificare e proteggere i dati creati o modificati.
 
 Utilizzare le informazioni contenute in questo articolo per semplificare la gestione delle etichette di riservatezza nelle app di Office. Ad esempio, identificare le versioni minime delle app che è necessario per supportare l'etichettatura incorporata e comprendere le interazioni con il client di etichettatura unificata di Azure Information Protection e la compatibilità con altre applicazioni e servizi.
-
-## <a name="subscription-and-licensing-requirements-for-sensitivity-labels"></a>Requisiti di sottoscrizione e licenze per le etichette di riservatezza
-
-Gli utenti devono disporre di almeno una delle seguenti licenze assegnate:
-
-- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) o superiori
-
-- [Office 365 E3](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e3-business-software) o superiori
-
-- [Azure Information Protection Premium P1](https://azure.microsoft.com/pricing/details/information-protection/) o superiore
-
-Il client di etichettatura incorporato di Office supporta le etichette di riservatezza con un'edizione di Office di sottoscrizione. Questo client di etichettatura non supporta le edizioni autonome di Office, ad esempio Office 2016 o Office 2019. Per utilizzare le etichette di riservatezza con queste edizioni di Office nei computer Windows, installare il client di etichettatura unificata di Azure Information Protection.
-
-Per utilizzare l'etichetta di riservatezza automatica o consigliata, gli utenti hanno bisogno di una delle licenze seguenti:
-
-- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) o superiori
-
-- [Office 365 E5](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software) o superiori
-
-- [Azure Information Protection Premium P2](https://azure.microsoft.com/pricing/details/information-protection/)
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Supporto per le funzionalità delle etichette di riservatezza nelle app
 

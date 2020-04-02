@@ -12,30 +12,32 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4b8bd0f8d540434410d9ebc2365789a669f455e1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
+ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634774"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097192"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Informazioni introduttive sulla gestione dei rischi Insider
 
-Utilizzare i criteri di gestione dei rischi Insider per identificare le attività rischiose e gli strumenti di gestione per eseguire azioni sugli avvisi di rischio nell'organizzazione. Completare la procedura seguente per impostare i prerequisiti e configurare un criterio di gestione dei rischi Insider.
+Usare i criteri di gestione dei rischi Insider per identificare attività rischiose e strumenti di gestione per intervenire sugli avvisi di rischio nell'organizzazione. Completare la procedura seguente per impostare i prerequisiti e configurare un criterio di gestione dei rischi Insider.
 
 >[!IMPORTANT]
->La soluzione Microsoft 365 Insider Risk Management fornisce un'opzione tenant level per consentire ai clienti di facilitare la governance interna a livello di utente. Gli amministratori a livello di tenant possono configurare le autorizzazioni per consentire l'accesso a questa soluzione per i membri dell'organizzazione e configurare i connettori di dati nel centro conformità di Microsoft 365 per importare i dati rilevanti a supporto dell'identificazione a livello di utente potenzialmente attività rischiosa. I clienti possono essere calcolati dall'amministratore e resi disponibili ad altri utenti dell'organizzazione, in base al comportamento, al carattere o alle prestazioni del singolo utente.
+>La soluzione Microsoft 365 Insider Risk Management fornisce un'opzione tenant level per consentire ai clienti di facilitare la governance interna a livello di utente. Gli amministratori dei livelli tenant possono configurare le autorizzazioni per consentire l'accesso a questa soluzione per i membri dell'organizzazione e configurare i connettori dei dati nel centro conformità di Microsoft 365 per importare i dati rilevanti per supportare l'identificazione a livello di utente di attività potenzialmente rischiose. I clienti possono essere calcolati dall'amministratore e resi disponibili ad altri utenti dell'organizzazione, in base al comportamento, al carattere o alle prestazioni del singolo utente.
 
 Per ulteriori informazioni su come i criteri di rischio Insider consentono di gestire i rischi nell'organizzazione, vedere [Insider Risk Management in Microsoft 365](insider-risk-management.md).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Prima di iniziare a utilizzare la gestione dei rischi Insider, è necessario confermare l' [abbonamento a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans). Per accedere e utilizzare Gestione dei rischi Insider, è necessario che l'organizzazione disponga di uno dei seguenti abbonamenti:
+Prima di iniziare a utilizzare la gestione dei rischi Insider, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e gli eventuali componenti aggiuntivi. Per accedere e utilizzare Gestione dei rischi Insider, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
 
 - Sottoscrizione Microsoft 365 E5 (a pagamento o versione di valutazione)
-- Sottoscrizione Microsoft 365 Enterprise E3 con il [componente aggiuntivo Microsoft E5 Compliance](https://signup.microsoft.com/signup/?offerid=57806d24-4357-4eff-b0a3-4054ebdf2abe&DL=INFORMATION_PROTECTION_COMPLIANCE&ali=1)
+- Sottoscrizione Microsoft 365 E3 + il componente aggiuntivo Microsoft 365 E5 Compliance
+- Sottoscrizione Microsoft 365 a5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Compliance
 
-Gli utenti inclusi nei criteri di gestione dei rischi Insider devono disporre di una licenza di conformità Microsoft 365 E5 o essere inclusi in un abbonamento a Microsoft 365 E5.
+Gli utenti inclusi nei criteri di gestione dei rischi Insider devono essere assegnati a una delle licenze sopra riportate.
 
 Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si desidera tentare la gestione dei rischi Insider, è possibile [aggiungere microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) all'abbonamento a Office 365 esistente oppure [iscriversi a una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Microsoft 365 Enterprise E5.
 
@@ -56,7 +58,7 @@ A seconda della struttura del team di gestione della conformità, sono disponibi
 
 Completare la procedura seguente per aggiungere gli utenti a un gruppo di ruoli di gestione dei rischi Insider:
 
-1. Accedere [https://protection.office.com/permissions](https://protection.office.com/permissions) con le credenziali per un account di amministratore nell'organizzazione Microsoft 365.
+1. Accedere all' [https://protection.office.com/permissions](https://protection.office.com/permissions) utilizzo delle credenziali per un account di amministratore nell'organizzazione Microsoft 365. "" "" "" ""
 
 2. Nel centro sicurezza e conformità di Microsoft Office 365 accedere a **autorizzazioni**. Selezionare il collegamento per visualizzare e gestire i ruoli in Office 365.
 
@@ -87,17 +89,17 @@ Gestione dei rischi Insider supporta l'importazione di dati di utenti e log impo
 Vedere l'argomento [set up a Connector to Import HR data](import-hr-data.md) for Step-by-Step Guide to configure the Microsoft 365 HR Connector for Your Organization. Dopo aver configurato il connettore HR, tornare a questi passaggi di configurazione.
 
 >[!IMPORTANT]
->Se si configura un criterio utilizzando il modello di *furto dei dati* per i dipendenti in partenza, è necessario configurare il connettore HR per utilizzare le funzionalità di rilevamento completo del segnale del modello di criteri. Se si configurano più connettori HR per la propria organizzazione, la gestione dei rischi Insider tirerà automaticamente gli indicatori da tutti i connettori HR.
+>Se si configura un p'licy utilizzando il modello di *furto dei dati di emplo'ee* , sarà necessario configurare il connettore HR per utilizzare le funzionalità di rilevamento completo del segnale del modello di criteri. Se si configurano più connettori HR per la propria organizzazione, la gestione dei rischi Insider tirerà automaticamente gli indicatori da tutti i connettori HR.
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurare i criteri di prevenzione della perdita di dati (DLP)
 
-Gestione dei rischi Insider supporta l'utilizzo di criteri DLP per identificare l'esposizione intenzionale o accidentale di informazioni riservate a parti indesiderate. Quando si configura un criterio di gestione dei rischi Insider con il modello di *perdita di dati* , è necessario assegnare un criterio DLP specifico al criterio. Questo criterio consente di guidare gli indicatori di avviso per le informazioni riservate è una parte importante della configurazione della copertura di gestione a rischio completo nell'organizzazione.
+Insider Risk man'gement supporta l'utilizzo di criteri DLP per identificare l'esposizione intenzionale o accidentale di informazioni riservate a parti indesiderate. Quando si configura un criterio di gestione dei rischi Insider con il modello di *perdita di dati* , è necessario assegnare un criterio DLP specifico al criterio. Questo criterio consente di guidare gli indicatori di avviso per le informazioni riservate è una parte importante della configurazione della copertura di gestione a rischio completo nell'organizzazione.
 
-Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'argomento [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) . Dopo aver configurato un criterio DLP, tornare a questi passaggi di configurazione.
+Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'argomento [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) . Dopo aver configurato un criterio DLP, tornare a questi config "razione passaggi" "" "" "" "" "" "
 
 >[!IMPORTANT]
 >Se si configura un criterio utilizzando il modello per le *perdite di dati* , è necessario configurare almeno un criterio DLP per l'utilizzo delle funzionalità di rilevamento completo del segnale del modello di criteri. Se si configurano più criteri DLP per l'organizzazione, sarà necessario assegnare un criterio di gestione dei rischi Insider per ogni criterio DLP.
-
+""""""""
 ## <a name="step-4-required-configure-insider-risk-settings"></a>Passaggio 4 (obbligatorio): configurare le impostazioni dei rischi Insider
 
 [Le impostazioni dei rischi Insider](insider-risk-management-policies.md#policy-settings) si applicano a tutti i criteri di gestione dei rischi Insider, indipendentemente dal modello scelto quando si crea un criterio. Le impostazioni vengono configurate utilizzando il controllo **impostazioni di rischio Insider** nella parte superiore di tutte le schede gestione rischi Insider. Queste impostazioni controllano la privacy, gli indicatori, le finestre di monitoraggio e i rilevamenti intelligenti.

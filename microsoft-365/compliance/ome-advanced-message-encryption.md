@@ -16,16 +16,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: La crittografia avanzata dei messaggi in Office 365 consente alle organizzazioni di soddisfare i propri obblighi di conformità consentendo agli amministratori di fare ancora di più con i messaggi protetti.
-ms.openlocfilehash: 99dacc928c8549157ff0d9d1d9a7c07fc33c2600
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: 3b7f4d595b8c3592530b107dd7f71aeb8d0dc57e
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610604"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106174"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Office 365 Advanced Message Encryption
 
-La crittografia avanzata dei messaggi di Office 365 è inclusa in [microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (nonprofit staff pricing), Office 365 Enterprise E5 (nonprofit staff pricing) e Office 365 Education a5. Se l'organizzazione dispone di un abbonamento che non include la crittografia dei messaggi avanzata di Office 365, è possibile acquistarla con il componente aggiuntivo Microsoft 365 E5 Compliance SKU per Microsoft 365 E3, Microsoft 365 E3 (nonprofit staff pricing) o Office 365 Advanced Componente aggiuntivo SKU di conformità per Microsoft 365 E3, Microsoft 365 E3 (nonprofit staff pricing) o SKU di Office 365.
+La crittografia avanzata dei messaggi di Office 365 è inclusa in [microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (nonprofit staff pricing), Office 365 Enterprise E5 (nonprofit staff pricing) e Office 365 Education a5. Se l'organizzazione dispone di un abbonamento che non include la crittografia dei messaggi avanzata di Office 365, è possibile acquistarla con il componente aggiuntivo SKU Microsoft 365 E5 Compliance per Microsoft 365 E3. Microsoft 365 E3 (pricing staff no profit) o il componente aggiuntivo SKU di Office 365 Advanced Compliance per Microsoft 365 E3, Microsoft 365 E3 (pricing staff no profit), SKU di Office 365 o il componente aggiuntivo Microsoft 365 E5/A5 Information Protection and Governance SKU per Microsoft 365 A3/E3.
 
 La crittografia avanzata dei messaggi in Office 365 consente ai clienti di soddisfare gli obblighi di conformità che richiedono controlli più flessibili su destinatari esterni e l'accesso ai messaggi di posta elettronica crittografati. Con la crittografia avanzata dei messaggi in Office 365, è possibile controllare i messaggi di posta elettronica riservati condivisi all'esterno dell'organizzazione con criteri automatici. Questi criteri possono essere configurati per identificare tipi di informazioni riservate, ad esempio i dati personali, finanziari o di integrità, oppure è possibile utilizzare parole chiave per migliorare la protezione. Dopo aver configurato i criteri, è necessario associare i criteri ai modelli di posta elettronica personalizzati e quindi aggiungere una data di scadenza per il controllo supplementare dei messaggi di posta elettronica che soddisfano i criteri. Gli amministratori possono inoltre controllare ulteriori messaggi di posta elettronica crittografati accessibili esternamente tramite un portale web sicuro, revocando l'accesso alla posta in qualsiasi momento.
 

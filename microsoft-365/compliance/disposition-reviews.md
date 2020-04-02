@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di conservazione che conserva il contenuto in Microsoft 365, è possibile scegliere di attivare una revisione della disposizione alla fine del periodo di conservazione.
-ms.openlocfilehash: ee9ea34ee8527558af4d249364b539d3fa1f2fdd
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634974"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105663"
 ---
 # <a name="overview-of-disposition-reviews"></a>Panoramica delle recensioni sulla disposizione
+
+>*[Linee guida per la gestione delle licenze di Microsoft 365 per la sicurezza & conformità](https://aka.ms/ComplianceSD).*
 
 Quando il contenuto raggiunge la fine del periodo di conservazione, è possibile che si desideri rivedere il contenuto per decidere se può essere eliminato in modo sicuro ("Disposed"). Ad esempio, potrebbe essere necessario:
   
@@ -51,9 +53,6 @@ Quando si crea un'etichetta di conservazione in Microsoft 365 Compliance Center,
     
 - I revisori possono visualizzare le disposizioni in sospeso o completate ed esportare tale elenco come file. csv.
 
-> [!NOTE]
-> Le recensioni sulla disposizione richiedono un abbonamento a Office 365 Enterprise E5.
-  
 Una recensione di disposizione può includere il contenuto nelle cassette postali di Exchange, siti di SharePoint, account di OneDrive e gruppi di Office 365. Il contenuto in attesa di una revisione della disposizione in tali posizioni viene eliminato solo dopo che un revisore sceglie di eliminare definitivamente il contenuto.
   
 ![Pagina disposizioni nel centro sicurezza e conformità](../media/Retention-Dispositions-v2-page.png)

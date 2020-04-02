@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: "Creare collegamenti rapidi per la posta elettronica, i documenti, le app, i siti di SharePoint, i siti esterni e altre risorse mediante l'aggiunta di sezioni personalizzate all'icona di avvio delle app. "
-ms.openlocfilehash: 65c8da7aa0cdb68f4bf32a52b21140413a38a69a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e52bad5cdd1809e8aa0d97c681b69daa5143d3fd
+ms.sourcegitcommit: 4b73f070747a66874c03fdf670ffdf16f736585a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361981"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43103076"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Aggiungere riquadri personalizzati all'icona di avvio delle app
 
@@ -37,7 +37,7 @@ Puoi aggiungere all'icona di avvio delle app riquadri personalizzati che puntano
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Aggiungere un riquadro personalizzato all'icona di avvio delle app
 
-1. Nell'interfaccia di amministrazione, passare****  > alla scheda **Impostazioni e**scegliere **profilo organizzazione** .
+1. Nell'interfaccia di amministrazione, passare**Settings**  > alla scheda **Impostazioni e**scegliere **profilo organizzazione** .
     
 2. Nella scheda **profilo organizzazione** , scegliere **tessere di avvio delle app personalizzate**.
   
@@ -69,7 +69,7 @@ Il riquadro personalizzato viene ora visualizzato nella scheda **Tutte** nell'ic
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Nell'interfaccia di amministrazione, passare alla pagina **Impostazioni** > del<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">profilo dell'organizzazione</a> .
+1. Nell'interfaccia di amministrazione, passare alla > **Settings** > scheda Impostazioni<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">profilo organizzazione</a> **impostazioni.**
     
 2. Nella pagina **profilo organizzazione** , accanto a **Aggiungi riquadri personalizzati per l'organizzazione**, selezionare **modifica**.
 

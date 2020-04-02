@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 86a74051b4febbf469449a35cd14620f3e78932c
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 43c6f5db64c929fcdb8a9f64e9fc27d472d65ba8
+ms.sourcegitcommit: 242588d7f5f96a2a937317541ef3976541ff81d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288607"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100900"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Funzionalità di anteprima di Microsoft Threat Protection
 
@@ -43,12 +43,16 @@ Per altre informazioni sulle nuove funzionalità disponibili a livello generale,
 
 Attiva l'impostazione Anteprima esperienza per essere tra i primi a provare le funzionalità imminenti.
 
-1. Nel riquadro di spostamento, selezionare**funzionalità di anteprima** **delle impostazioni** > .
+1. Nel riquadro di spostamento, selezionare **Impostazioni**.
 
-2. Selezionare **attiva funzionalità di anteprima**. 
+2. Selezionare **Microsoft Threat Protection**.
+
+
+3. Seleziona **funzionalità** > **di anteprima attiva le funzionalità di anteprima**. 
 
 3. Selezionare **Salva**.
 
 
 ## <a name="preview-features"></a>Funzionalità di anteprima
 Questa sezione verrà aggiornata con un elenco di funzionalità che sono in anteprima quando diventano disponibili per provare. 
+
