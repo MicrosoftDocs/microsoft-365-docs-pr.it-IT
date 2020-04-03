@@ -15,12 +15,12 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.assetid: f7449a18-1400-475a-b158-2668fef93bfe
 description: Informazioni su come gestire la posta elettronica per le cassette postali di Office 365.
-ms.openlocfilehash: 11d3a34b20cf8dc910931e2a52168945e4d0e969
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: ca1fba8c89f7c647a0bb6d4f846ebb12f82a7abd
+ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106200"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43126012"
 ---
 # <a name="email"></a>Posta elettronica
 
@@ -114,11 +114,11 @@ Informazioni su come gestire la posta elettronica per le cassette postali di Off
                     <div class="cardText">
                         <h3>Configurare la posta elettronica</h3>
                         <p><a href="https://support.office.com/article/d0cf6608-4862-4a7b-82fc-f5fef235c966">Video: Importare la posta elettronica</a></p>
-                        <p><a href="https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e">Eseguire la migrazione della posta elettronica e dei contatti</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin">Eseguire la migrazione della posta elettronica e dei contatti</a></p>
                         <p><a href="create-a-shared-mailbox.md">Creare cassette postali condivise</a></p>
                         <p><a href="add-another-email-alias-for-a-user.md">Aggiungere altri indirizzi di posta elettronica a un utente</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/owa-for-devices-contact-sync">Consentire agli utenti di sincronizzare i contatti di posta elettronica con iPhone o iPad</a></p>
-                        <p><a href="https://support.office.com/article/69f58e99-c550-4274-ad18-c805d654b4c4">Configurare un dispositivo multifunzione per l'invio della posta elettronica</a></p>
+                        <p><a href="https://docs.microsoft.com/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3">Configurare un dispositivo multifunzione per l'invio della posta elettronica</a></p>
                     </div>
                 </div>
             </div>
@@ -131,10 +131,10 @@ Informazioni su come gestire la posta elettronica per le cassette postali di Off
                     <div class="cardText">
                         <h3>Proteggere la posta elettronica</h3>
                         <p><a href="create-edit-or-delete-a-security-group.md">Creare, modificare o eliminare un gruppo di sicurezza</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection">Protezione dalla posta indesiderata</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/block-email-spam-to-prevent-false-negatives">Come impostare i filtri per bloccare i messaggi di posta indesiderata</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection">Protezione antispam e antimalware</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/prevent-email-from-being-marked-as-spam">Evitare che la posta elettronica venga contrassegnata come indesiderata</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection">Protezione dalla posta indesiderata</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365">Creare elenchi di mittenti bloccati</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection">Protezione antispam e antimalware</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection#manage-errors-in-spam-filtering">Evitare che la posta elettronica venga contrassegnata come indesiderata</a></p>
                     </div>
                 </div>
             </div>
@@ -148,10 +148,9 @@ Informazioni su come gestire la posta elettronica per le cassette postali di Off
                         <h3>Risolvere i problemi di connettività e recapito della posta elettronica</a></h3>
                         <p><a href="https://diagnostics.outlook.com/#/">Risolvere i problemi di connessione di Outlook in Office 365 ed Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox">Recuperare gli elementi eliminati nella cassetta postale di un utente</a></p>
-                        <p><a href="https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6">Individuare e risolvere i problemi di recapito della posta elettronica</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues">Individuare e risolvere i problemi di recapito della posta elettronica</a></p>
                         <p><a href="../get-help-with-domains/find-and-fix-issues.md">Individuare e correggere i problemi (anche della posta elettronica) dopo l'aggiunta del dominio o dei record DNS</a></p>
-                        <p><a href="https://support.office.com/article/51daa6b9-2e35-49c4-a0c9-df85bf8533c3">Cercare i codici di errore NDR in rapporti di mancato recapito della posta elettronica</a></p>
-                        <p><a href="https://go.microsoft.com/fwlink/?LinkID=618675">Risolvere i problemi relativi a Outlook</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online">Cercare i codici di errore NDR in rapporti di mancato recapito della posta elettronica</a></p>
                     </div>
                 </div>
             </div>
@@ -167,7 +166,7 @@ Informazioni su come gestire la posta elettronica per le cassette postali di Off
                         <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">Modalità di migrazione della posta elettronica a Office 365</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-hybrid">Contenuti sulla distribuzione ibrida di Exchange</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-online">Exchange Online</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview">Exchange Online Protection</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview">Exchange Online Protection</a></p>
                     </div>
                 </div>
             </div>
