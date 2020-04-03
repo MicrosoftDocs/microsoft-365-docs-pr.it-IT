@@ -17,16 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sulle richieste dell'archivio protetto dei clienti che consentono di controllare il modo in cui un tecnico del supporto Microsoft può accedere ai dati durante l'esecuzione di un problema.
-ms.openlocfilehash: 8906fde608e6e6c26604450eed063915e4617d29
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 254479f7c07b74abf04802a7e2e591a2ac375e59
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076852"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113563"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Archivio protetto dei clienti in Office 365
 
-In questo articolo vengono fornite indicazioni per la distribuzione e la configurazione di una funzionalità attualmente disponibile solo per le organizzazioni che dispongono di un abbonamento a Microsoft 365 E5, Office 365 E5, protezione delle informazioni e conformità o Advanced Compliance Add-on. L'archivio protetto dei clienti supporta le richieste di accesso ai dati di Exchange Online, SharePoint Online e OneDrive for business. Per consigliare il supporto per altri servizi di Office 365, inviare una richiesta a [office 365 UserVoice](https://office365.uservoice.com/).
+In questo articolo vengono fornite indicazioni sulla distribuzione e sulla configurazione per l'archivio protetto dei clienti. L'archivio protetto dei clienti supporta le richieste di accesso ai dati di Exchange Online, SharePoint Online e OneDrive for business. Per consigliare il supporto per altri servizi di Office 365, inviare una richiesta a [office 365 UserVoice](https://office365.uservoice.com/).
+
+Per visualizzare le opzioni per la concessione delle licenze agli utenti per usufruire delle offerte di conformità di Microsoft 365, tra cui il 1 ° aprile 2020, vedere le istruzioni per la [gestione delle licenze di microsoft 365 per la sicurezza & conformità](https://aka.ms/ComplianceSD).
 
 L'archivio protetto dei clienti garantisce che Microsoft non sia in grado di accedere al contenuto per eseguire un'operazione del servizio senza l'approvazione esplicita. L'archivio protetto dei clienti introduce il flusso di lavoro di approvazione per le richieste di accesso al contenuto.
 

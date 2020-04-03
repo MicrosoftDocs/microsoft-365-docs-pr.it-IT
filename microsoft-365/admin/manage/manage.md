@@ -15,12 +15,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9f818d7a-78b5-4490-b36c-e3bfe328dfc3
 description: Collegamenti rapidi per le attività di gestione comuni in Office 365.
-ms.openlocfilehash: 06d745bc4b3487ca05888e390b7100596bced6c9
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 3c69d24af04567531ea4228202e5ec16cdd39522
+ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897044"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43126000"
 ---
 # <a name="manage"></a>Gestione
 
@@ -152,7 +152,6 @@ Collegamenti rapidi per le attività di gestione comuni in Office 365.
                         <h3>Posta elettronica</h3>
                             <p><a href="../add-users/add-users.md">Aggiungere un nuovo dipendente</a></p>
                             <p><a href="https://support.office.com/article/97748418-bbd5-4743-a05b-581f22a466dd">Risolvere i problemi di invio dei messaggi di posta elettronica</a></p>
-                            <p><a href="https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues">Risolvere i problemi relativi alla posta elettronica </a></p>
                             <p><b>Altre attività:</b> <a href="../email/email.md">messaggi di posta elettronica in Office 365 for business</a></p>
                     </div>
                 </div>
@@ -170,7 +169,7 @@ Collegamenti rapidi per le attività di gestione comuni in Office 365.
                             <p><a href="https://docs.microsoft.com/onedrive/manage-sharing">Gestire la condivisione in OneDrive e SharePoint</a></p>
                             <p><a href="https://docs.microsoft.com/onedrive/set-default-storage-space">Impostare lo spazio di archiviazione predefinito per gli utenti di OneDrive</a></p>
                             <p><a href="https://support.office.com/article/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2">Risolvere i problemi di sincronizzazione di OneDrive</a></p>
-                            <p><b>Altre attività:</b> <a href="https://support.office.com/article/3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb">OneDrive in Office 365</a></p>
+                            <p><b>Altre attività:</b> <a href="https://docs.microsoft.com/onedrive/onedrive">OneDrive in Office 365</a></p>
                     </div>
                 </div>
             </div>

@@ -17,19 +17,36 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni sulla configurazione della gestione degli accessi con privilegi.
-ms.openlocfilehash: bb1589252ab7a5f7a512db92666827dd9d3cc2d3
-ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
+ms.openlocfilehash: 8c5a0a342c9cabf643bff5e20fc3b64f938c61b7
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42322527"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43115992"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Introduzione alla gestione degli accessi con privilegi
 
->[!IMPORTANT]
->In questo argomento vengono illustrate le linee guida per la distribuzione e la configurazione per le funzionalità disponibili solo in Office 365 E5 e SKU di conformità avanzate.
+In questo argomento viene illustrata la possibilità di abilitare e configurare la gestione degli accessi con privilegi nell'organizzazione di Office 365. È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o Exchange Management PowerShell per gestire e utilizzare accesso privilegiato.
 
-In questo argomento viene illustrata la possibilità di abilitare e configurare la gestione degli accessi con privilegi nell'organizzazione di Office 365. È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o Exchange Management PowerShell per gestire e utilizzare accesso privilegiato. 
+## <a name="before-you-begin"></a>Prima di iniziare
+
+Prima di iniziare a utilizzare la gestione degli accessi con privilegi, è necessario confermare la [sottoscrizione Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e gli eventuali componenti aggiuntivi. Per accedere e utilizzare la gestione degli accessi con privilegi, è necessario che l'organizzazione disponga di una delle sottoscrizioni o dei componenti aggiuntivi seguenti:
+
+- Sottoscrizione Microsoft 365 E5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 E3 (o abbonamento a Office 365 E3 + sottoscrizione Enterprise Mobility and Security E3) + componente aggiuntivo Microsoft 365 E5 Compliance
+- Qualsiasi sottoscrizione Microsoft 365, Office 365, Exchange, SharePoint o OneDrive for Business + Microsoft 365 E5 Insider Risk Management Add-on  
+- Sottoscrizione Microsoft 365 a5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 a3 (o abbonamento a Office 365 a3 + sottoscrizione Enterprise Mobility and Security a3) + componente aggiuntivo Microsoft a5 Compliance
+- Qualsiasi componente aggiuntivo Microsoft 365, Office 365, Exchange, SharePoint o OneDrive for Education + Microsoft 365 a5 Insider Risk Management Add-on
+- Abbonamento a Office 365 Enterprise E5 (a pagamento o versione di valutazione)
+- Abbonamento a Office 365 Enterprise E3 + il componente aggiuntivo Office 365 Advanced Compliance (non più disponibile per le nuove sottoscrizioni, vedere note)
+
+Gli utenti che inviano e rispondono alle richieste di gestione degli accessi con privilegi devono essere assegnati a una delle licenze precedenti.
+
+>[!IMPORTANT]
+>La conformità avanzata di Office 365 non viene più venduta come sottoscrizione autonoma. Quando le sottoscrizioni correnti scadono, i clienti devono passare a una delle sottoscrizioni precedenti, che contengono le stesse funzionalità di conformità o aggiuntive.
+
+Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si desidera tentare la gestione degli accessi con privilegi, è possibile [aggiungere microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) alla propria sottoscrizione a Office 365 esistente oppure [iscriversi per una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Microsoft 365 Enterprise E5.
 
 ## <a name="enable-and-configure-privileged-access-management"></a>Abilitare e configurare la gestione degli accessi con privilegi
 
@@ -103,7 +120,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 ```
 
 >[!NOTE]
->La funzionalità account di sistema è disponibile per garantire che alcuni automatismi all'interno delle organizzazioni possano funzionare senza dipendenze dall'accesso privilegiato, tuttavia è consigliabile che tali esclusioni siano eccezionali e quelle consentite debbano essere approvate e controllate regolarmente.
+>La funzionalità account di sistema è disponibile per garantire che alcuni automatismi all'interno delle organizzazioni possano funzionare senza dipendenza dall'accesso privilegiato, tuttavia è consigliabile che tali esclusioni siano eccezionali e quelle consentite debbano essere approvate e controllate regolarmente.
 
 <a name="step3"> </a>
 

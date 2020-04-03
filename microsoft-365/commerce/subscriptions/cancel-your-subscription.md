@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Informazioni su come annullare la versione di valutazione o di sottoscrizione a pagamento di Office 365 for business o Microsoft 365.
-ms.openlocfilehash: 4e1491a02d97a3a249e377dbae0efbd4709cdf09
-ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
+ms.openlocfilehash: 47b4ae3e027a218f7d830bb6af24a39ca33a4abb
+ms.sourcegitcommit: 3d1abd7c06d316d6e6586e4bdcd5703291ac1ab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42415651"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43117945"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -58,7 +58,7 @@ Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento,
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare un abbonamento.
 
@@ -74,7 +74,7 @@ Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento,
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare un abbonamento.
 
@@ -94,13 +94,14 @@ Se si annulla un abbonamento prima della fine del termine, l'abbonamento viene s
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Conseguenze per amministratori e utenti dell'annullamento di una sottoscrizione
   
-- **Accesso amministratore** Gli amministratori possono ancora accedere all'interfaccia di amministrazione e acquistare altri abbonamenti in base alle esigenze. In qualità di amministratore globale o di fatturazione, è necessario 90 giorni per [riattivare l'abbonamento](reactivate-your-subscription.md) con tutti i dati intatti. 
-    
+- **Accesso amministratore** Gli amministratori possono ancora accedere all'interfaccia di amministrazione e acquistare altri abbonamenti in base alle esigenze. In qualità di amministratore globale o di fatturazione, è necessario 90 giorni per [riattivare l'abbonamento](reactivate-your-subscription.md) con tutti i dati intatti.
+
 - **Accesso utente** Gli utenti non saranno in grado di utilizzare servizi come OneDrive for business o di accedere ai dati dei clienti come la posta elettronica o i documenti nei siti del team. Le applicazioni di Office, come Word e Excel, entreranno alla fine in una modalità di sola lettura con funzionalità ridotte e visualizzeranno [notifiche di prodotto senza licenza](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
-    
- **Importante:** Se si vogliono eliminare i dati dell'abbonamento prima del termine del periodo standard di disabilitazione, è possibile richiedere il deprovisioning rapido. Con il deprovisioning rapido, i dati dell'abbonamento vengono eliminati entro 3 giorni dall'annullamento. Per utilizzare il deprovisioning rapido, [chiamare il supporto](../../admin/contact-support-for-business-products.md).
-  
+
 Per ulteriori informazioni, vedere [cosa succede ai dati e l'accesso al termine dell'abbonamento?](what-if-my-subscription-expires.md)
+
+> [!IMPORTANT]
+> Se si desidera che i dati di sottoscrizione vengano eliminati prima della fine del periodo di disabilitazione normale, è possibile [chiudere l'account](../close-your-account.md).
 
 ## <a name="other-steps-you-might-have-to-take"></a>Altri passaggi che potrebbe essere necessario eseguire
 

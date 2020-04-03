@@ -17,17 +17,14 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilizzare questo argomento per ulteriori informazioni sulla gestione degli accessi con privilegi in Office 365
-ms.openlocfilehash: 8d1b6bbda57cbe51167c87a29e140e6b5f871bca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 547f3f3179252c767d56b45d4ad64d67b3c82b7d
+ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070973"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43116026"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Gestione degli accessi con privilegi in Office 365
-
-> [!IMPORTANT]
-> In questo argomento vengono illustrate le linee guida per la distribuzione e la configurazione per le funzionalità disponibili solo in Office 365 E5 e SKU di conformità avanzate.
 
 La gestione degli accessi con privilegi consente il controllo di accesso granulare sulle attività amministrative privilegiate in Office 365. Può aiutare a proteggere l'organizzazione da violazioni che utilizzano account amministratore privilegiati esistenti con accesso permanente ai dati sensibili o accesso alle impostazioni di configurazione critiche. La gestione degli accessi con privilegi richiede agli utenti di richiedere l'accesso just-in-time per completare le attività elevate e privilegiate tramite un flusso di lavoro di approvazione estremamente ambito e con limiti temporali. Questa configurazione consente agli utenti di accedere in modo sufficiente per eseguire l'attività a portata di mano, senza rischiare l'esposizione di dati sensibili o di impostazioni di configurazione critiche. L'abilitazione della gestione degli accessi con privilegi in Office 365 consente all'organizzazione di operare con privilegi zero e di fornire un livello di difesa contro le vulnerabilità di accesso amministrativo permanenti.
 
@@ -77,7 +74,7 @@ Per una richiesta approvata, l'attività viene elaborata da Exchange Management 
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>Quali SKU possono utilizzare l'accesso con privilegi in Office 365?
 
-La gestione degli accessi con privilegi è disponibile per i clienti con Office 365 E5 e SKU di conformità avanzate.
+La gestione degli accessi con privilegi è disponibile per i clienti per una vasta gamma di abbonamenti e componenti aggiuntivi di Microsoft 365 e Office 365. Per informazioni dettagliate, vedere [Introduzione alla gestione degli accessi con privilegi](privileged-access-management-configuration.md) .
 
 ### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>Quando verrà supportato l'accesso con privilegi Office 365 carichi di lavoro al di fuori di Exchange?
 
@@ -99,6 +96,6 @@ L' [archivio protetto dei clienti](https://docs.microsoft.com/office365/admin/ma
 
 Avviare [la configurazione dell'organizzazione per la gestione degli accessi con privilegi](privileged-access-management-configuration.md).
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 [Guida interattiva: monitorare e controllare le attività dell'amministratore con la gestione degli accessi con privilegi](https://content.cloudguides.com/guides/Privileged%20Access%20Management)
