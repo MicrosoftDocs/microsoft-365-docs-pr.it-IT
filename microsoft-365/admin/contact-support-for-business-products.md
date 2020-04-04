@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: Ottenere supporto tecnico e per la fatturazione tramite i numeri di telefono indicati per la propria area geografica o località, inviando una richiesta di assistenza online o visitando Microsoft Store.
 feedback_system: None
-ms.openlocfilehash: b77f08b8e0734cfa7629a5c5d61f22d63ef6328c
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 4bb35f6d8c2895ec7adf37c6b4e149962fb616bc
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106061"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142552"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Contattare il supporto tecnico per i prodotti per le aziende - Guida dell’amministratore
 
@@ -40,10 +40,7 @@ ms.locfileid: "43106061"
 
 Per risparmiare tempo, avviare la richiesta di assistenza online. Aiuteremo l’utente a trovare una soluzione o lo metteremo in contatto con un esperto tramite e-mail o telefono. [Informazioni sui tempi di risposta iniziali del supporto](https://go.microsoft.com/fwlink/p/?LinkId=518251).
 
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
-1. Passare all’interfaccia di amministrazione su <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Se viene visualizzato il messaggio che informa che non si dispone dell'autorizzazione per accedere alla pagina o eseguire l'azione, non si è un amministratore. [Chi ha le autorizzazioni di amministratore nella mia organizzazione?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Se viene visualizzato il messaggio che informa che non si dispone dell'autorizzazione per accedere alla pagina o eseguire l'azione, non si è un amministratore. [Chi ha le autorizzazioni di amministratore nella mia organizzazione?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
 2. Selezionare il pulsante **Serve aiuto?**
 
@@ -80,8 +77,6 @@ Per informazioni su come aprire una richiesta di assistenza, selezionare la sche
 2. Immettere la località e ricercare per trovare un Microsoft Store in zona.
 
 3. Scegliere lo store, quindi **Programma appuntamento di servizio ora**.
-
----
 
 ::: moniker-end
 

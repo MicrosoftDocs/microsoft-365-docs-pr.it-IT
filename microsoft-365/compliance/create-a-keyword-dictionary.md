@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Per identificare le informazioni riservate a volte è necessario cercare delle parole chiave, in particolare quando si identifica un contenuto generico, ad esempio comunicazioni relative al settore sanitario, o contenuti con linguaggio inappropriato o esplicito. Anche se è possibile creare elenchi di parole chiave nei tipi di informazioni riservate, questi elenchi hanno dimensioni limitate e richiedono la modifica di file XML per crearli o modificarli. I dizionari di parole chiave offrono una gestione semplificata delle parole chiave e, su scala molto più ampia, supportano fino a 100.000 termini per dizionario.
-ms.openlocfilehash: 3677fc01ef226b57b7b33c630e79ea12f9fb0a5a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2ae63a9bf10ee43b3f761d8c60652c7c2a5e8b5f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595653"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141511"
 ---
 # <a name="create-a-keyword-dictionary"></a>Creare un dizionario di parole chiave
 
-La prevenzione della perdita di dati (DLP) in Office 365 è in grado di identificare, monitorare e proteggere le informazioni riservate. L'identificazione di informazioni riservate a volte richiede la ricerca di parole chiave, in particolare quando si identifica il contenuto generico (ad esempio la comunicazione correlata all'assistenza sanitaria) o la lingua inappropriata o esplicita. Anche se è possibile creare elenchi di parole chiave in tipi di informazioni riservate, gli elenchi di parole chiave sono di dimensioni limitate e richiedono la modifica di XML per crearli o modificarli. I dizionari keyword offrono una gestione più semplice delle parole chiave e su una scala molto più grande, supportando fino a 100.000 termini per dizionario.
+La prevenzione della perdita di dati (DLP) in Office 365 è in grado di identificare, monitorare e proteggere le informazioni riservate. L'identificazione di informazioni riservate a volte richiede la ricerca di parole chiave, in particolare quando si identifica il contenuto generico (ad esempio la comunicazione correlata all'assistenza sanitaria) o la lingua inappropriata o esplicita. Anche se è possibile creare elenchi di parole chiave in tipi di informazioni riservate, gli elenchi di parole chiave sono di dimensioni limitate e richiedono la modifica di XML per crearli o modificarli. I dizionari keyword offrono una gestione più semplice delle parole chiave e su una scala molto più grande, supportando fino a 100KB di termini per dizionario.
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Procedura di base per la creazione di un dizionario di parole chiave
 

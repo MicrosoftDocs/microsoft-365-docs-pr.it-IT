@@ -24,34 +24,37 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Informazioni su come passare a un nuovo abbonamento a Office 365 for business.
-ms.openlocfilehash: f341222945d4af6d35c00ee26c3a2645fabf98f8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e851ebaa89719f7dae62ed99bf72e2e2a4f361a2
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633404"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142092"
 ---
 # <a name="switch-to-a-different-office-365-for-business-plan"></a>Passare a un piano di Office 365 per le aziende diverso
 
 Quando la tua azienda cambia o hai bisogno di altre caratteristiche, puoi cambiare piano.  
 
-Il modo più semplice per cambiare piano consiste nell'utilizzare il pulsante **Cambia piano** nell'interfaccia di amministrazione. Tuttavia, l'uso del pulsante **Cambia piano** non è supportato in tutte le situazioni. In alcuni casi potrebbe essere necessario cambiare piano manualmente.
+Il modo più semplice per cambiare piano consiste nell'usare il pulsante **Cambia piano** nell'Interfaccia di amministrazione. Tuttavia, l'uso del pulsante **Cambia piano** non è supportato in tutte le situazioni. In alcuni casi potrebbe essere necessario cambiare piano manualmente.
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> Questo articolo si applica all'interfaccia di amministrazione precedente. Per visualizzare l'articolo relativo al nuovo interfaccia di amministrazione, vedere [aggiornamento a un piano diverso](upgrade-to-different-plan.md). Il nuovo interfaccia di amministrazione è disponibile per tutti gli amministratori di Microsoft 365 ed è possibile optare selezionando il nuovo Toggle dell'interfaccia di **Amministrazione** che si trova nella parte superiore della Home page. Per ulteriori informazioni, vedere[About The New Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md) 
+> Questo articolo si applica all'interfaccia di amministrazione precedente. Per visualizzare l'articolo relativo al nuovo interfaccia di amministrazione, vedere [aggiornamento a un piano diverso](upgrade-to-different-plan.md). La nuova interfaccia di amministrazione è disponibile per tutti gli amministratori di Microsoft 365. Per ulteriori informazioni, vedere[About The New Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md).
+
 ::: moniker-end
 
 **Serve altro?**
+
 - [Annullare l'abbonamento](cancel-your-subscription.md)
 - [Aggiornare Office 365 per utenti privati a un abbonamento per le aziende](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Chiamare il supporto tecnico Microsoft](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>Utilizzare il pulsante Cambia piano
 
-Quando si sceglie il pulsante **Cambia piano**, viene avviato il processo di acquisto di un nuovo piano che si sostituisce a quello corrente, a tutti gli utenti vengono automaticamente assegnate licenze nel nuovo piano e il vecchio piano viene annullato. 
+Quando si sceglie il pulsante **Cambia piano**, viene avviato il processo di acquisto di un nuovo piano che si sostituisce a quello corrente, a tutti gli utenti vengono automaticamente assegnate licenze nel nuovo piano e il vecchio piano viene annullato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abbonamenti</a>.
 
     Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
@@ -95,4 +98,4 @@ Se si desidera passare a un piano con meno servizi, è possibile [commutare manu
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Chiamare il supporto tecnico per assistenza con il cambio di piano
 
-![Supporto](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) per le [chiamate](../../admin/contact-support-for-business-products.md) telefoniche
+[Chiamare il supporto](../../admin/contact-support-for-business-products.md)

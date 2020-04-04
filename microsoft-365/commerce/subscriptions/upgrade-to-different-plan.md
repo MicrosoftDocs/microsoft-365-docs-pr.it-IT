@@ -24,19 +24,16 @@ search.appverid:
 - GEA150
 description: Informazioni su come eseguire l'aggiornamento a un nuovo abbonamento.
 monikerRange: o365-worldwide
-ms.openlocfilehash: f12dcdd653c8b12bc4a254063c6eda01138325ee
-ms.sourcegitcommit: ab916c216053999c9c4ef4838217e82cd861f23f
+ms.openlocfilehash: dbeba16a23490ab756c8ed30ce4856217819e80a
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42415601"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142080"
 ---
-# <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso 
+# <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso
 
 Quando la tua azienda cambia o hai bisogno di altre caratteristiche, puoi aggiornare i piani. Il modo più semplice per eseguire questa operazione consiste nell'utilizzare la scheda **aggiornamento** nell'interfaccia di amministrazione. Tuttavia, l'utilizzo della scheda **aggiornamento** non è supportato in tutte le situazioni. In alcuni casi, potrebbe essere possibile modificare i piani manualmente.
-
-> [!NOTE]
-> Questo articolo si applica alla nuova interfaccia di amministrazione. Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page. Per visualizzare l'articolo relativo all'interfaccia di amministrazione precedente, vedere [passare a un piano diverso di Office 365 per le aziende](switch-to-a-different-plan.md).
 
 ## <a name="use-the-upgrade-tab"></a>Utilizzare la scheda aggiornamento
 
@@ -81,7 +78,7 @@ Se si desidera passare a un piano con meno servizi, è possibile [modificare i p
 
 Se non vengono visualizzati piani nella scheda **aggiornamento** , significa che il piano non può essere aggiornato automaticamente. In alcuni casi, potrebbe essere possibile risolvere il problema in modo che sia possibile visualizzare i piani disponibili per l'aggiornamento oppure che sia possibile aggiornare o modificare manualmente i piani.
 
- ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Perché non sono presenti piani per l'aggiornamento?
+### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Perché non sono presenti piani per l'aggiornamento?
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Non è possibile aggiornare gli abbonamenti ora perché si dispone di più utenti rispetto alle licenze.
 
@@ -141,13 +138,13 @@ Per risolvere questo punto, trova la sottoscrizione nella pagina <a href="https:
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>Che cos'è l'aggiornamento di un piano per il servizio e la fatturazione?
 
-Quando si esegue l'aggiornamento automatico dei piani tramite il pulsante **Cambia piano** (o la scheda **aggiornamento** nella nuova interfaccia di amministrazione), i servizi e la fatturazione sono intaccati.
+Quando si esegue l'aggiornamento automatico dei piani tramite la scheda **aggiornamento** nell'interfaccia di amministrazione, i servizi e la fatturazione sono intaccati.
 
 ### <a name="access-to-services"></a>Accesso ai servizi
 
- Gli **amministratori** non saranno in grado di utilizzare l'interfaccia di amministrazione mentre il piano viene aggiornato. L'operazione può richiedere fino a un'ora.
-  
- **Gli utenti** non avranno interruzioni del servizio. Continueranno ad avere il servizio esistente fino al completo completamento dell'aggiornamento.
+Gli **amministratori** non saranno in grado di utilizzare l'interfaccia di amministrazione mentre il piano viene aggiornato. L'operazione può richiedere fino a un'ora.
+
+**Gli utenti** non avranno interruzioni del servizio. Continueranno ad avere il servizio esistente fino al completo completamento dell'aggiornamento.
   
 ### <a name="users-and-licenses"></a>Utenti e licenze
 
@@ -164,9 +161,9 @@ Tutti i dati degli utenti verranno mantenuti durante l'aggiornamento, incluse le
 Il giorno in cui è stato completato l'aggiornamento del piano, la fatturazione del vecchio abbonamento verrà disattivata e verrà attivata la fatturazione del nuovo abbonamento. Per eventuali servizi non utilizzati del vecchio abbonamento, si otterrà un credito ripartito proporzionalmente. Verrà visualizzata una nuova fattura che include il credito per il vecchio abbonamento entro 30 giorni dall'aggiornamento al nuovo abbonamento.
   
 > [!NOTE]
-> Il tempo effettivamente necessario per l'accredito sul conto di pagamento dipende dal metodo di pagamento usato per l'abbonamento. 
-  
- **Aggiornamento da un abbonamento prepagato prima della scadenza?** Se il costo totale del nuovo abbonamento è maggiore o uguale al valore rimanente dell'abbonamento prepagato, il tempo prepagato non andrà perso. Nella pagina del completamento della transazione verrà visualizzato il credito per il tempo inutilizzato. Se invece il costo totale del nuovo abbonamento è inferiore al valore rimanente dell'attuale abbonamento prepagato, parte del tempo inutilizzato andrà perso. L'utente riceverà una notifica prima del checkout ed è possibile attendere l'aggiornamento fino alla data di scadenza della sottoscrizione prepagata.
+> Il tempo effettivamente necessario per l'accredito sul conto di pagamento dipende dal metodo di pagamento usato per l'abbonamento.
+
+**Aggiornamento da un abbonamento prepagato prima della scadenza?** Se il costo totale del nuovo abbonamento è maggiore o uguale al valore rimanente dell'abbonamento prepagato, il tempo prepagato non andrà perso. Nella pagina del completamento della transazione verrà visualizzato il credito per il tempo inutilizzato. Se invece il costo totale del nuovo abbonamento è inferiore al valore rimanente dell'attuale abbonamento prepagato, parte del tempo inutilizzato andrà perso. L'utente riceverà una notifica prima del checkout ed è possibile attendere l'aggiornamento fino alla data di scadenza della sottoscrizione prepagata.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Supporto per le chiamate per l'aggiornamento di piani
 

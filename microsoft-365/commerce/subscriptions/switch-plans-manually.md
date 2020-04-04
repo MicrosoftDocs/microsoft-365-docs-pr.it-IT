@@ -22,18 +22,20 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Passare manualmente gli abbonamenti di Office 365 per le aziende acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
-ms.openlocfilehash: 19efd94f320fcf5dc54f44b70b436f713a663a40
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354709"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142104"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Cambiare piano di Office 365 per le aziende manualmente
 
 ::: moniker range="o365-worldwide"
+
 > [!NOTE]
-> Questo articolo si applica all'interfaccia di amministrazione precedente. Per visualizzare l'articolo relativo al nuovo interfaccia di amministrazione, vedere [modificare i piani manualmente](change-plans-manually.md). Il nuovo interfaccia di amministrazione è disponibile per tutti gli amministratori di Microsoft 365 ed è possibile optare selezionando il nuovo Toggle dell'interfaccia di **Amministrazione** che si trova nella parte superiore della Home page. Per altre informazioni, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Questo articolo si applica all'interfaccia di amministrazione precedente. Per visualizzare l'articolo relativo al nuovo interfaccia di amministrazione, vedere [modificare i piani manualmente](change-plans-manually.md). La nuova interfaccia di amministrazione è disponibile per tutti gli amministratori di Microsoft 365. Per altre informazioni, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>Passaggio 1: decidere come cambiare piano
@@ -62,7 +64,7 @@ Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si 
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Passaggio 3: controllare il nuovo abbonamento e le licenze
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abbonamenti</a>.
 
     Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
@@ -119,7 +121,7 @@ Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel
   
 5. Impostare l'interruttore sulla posizione **disattivata** per le licenze di cui l'utente non ha più bisogno.
 
-6. Nella parte inferiore del riquadro **licenze di prodotto** , selezionare **assegna** \> **** \> **** chiudere Chiudi.
+6. Nella parte inferiore del riquadro **licenze di prodotto** , selezionare **assegna** \> **Close** \> **Close**chiudere Chiudi.
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Riassegnare licenze a più utenti contemporaneamente
 

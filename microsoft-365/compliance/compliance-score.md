@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Il Punteggio di conformità di Microsoft aiuta le organizzazioni a semplificare e automatizzare le valutazioni dei rischi e suggerisce azioni consigliate per aiutare a gestire i rischi.
-ms.openlocfilehash: dff5e6c057df37c076e328d5203a1eb4e4b3207a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 77650747e28096fc05c4a9b30bc92545b6f2bc29
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635114"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141571"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Punteggio di conformità Microsoft (anteprima)
 
-Il Punteggio di conformità di Microsoft contribuisce a semplificare il modo in cui gestire la conformità e ridurre i rischi di conformità tramite un'esperienza facile da usare. Il Punteggio di conformità è ora disponibile per l'anteprima pubblica nel [centro conformità di Microsoft 365](microsoft-365-compliance-center.md).
+Il [Punteggio di conformità di Microsoft](https://compliance.microsoft.com/compliancescore) contribuisce a semplificare il modo in cui gestire la conformità e ridurre i rischi di conformità tramite un'esperienza facile da usare. Il Punteggio di conformità è disponibile per l'anteprima pubblica nel [centro conformità di Microsoft 365](microsoft-365-compliance-center.md).
 
 **In questo articolo:** Leggere questo articolo per comprendere quale punteggio di conformità è e come configurarlo per l'organizzazione.
 
-Informazioni **sugli aggiornamenti:** Andare alla note sulla versione del [Punteggio di conformità](compliance-score-release-notes.md) per visualizzare i problemi nuovi e noti con la versione di anteprima del Punteggio di conformità.
+Informazioni **sugli aggiornamenti:** Sono stati pubblicati diversi aggiornamenti nella versione di aprile 2020. Visitare le [Note](compliance-score-release-notes.md) sulla versione del Punteggio di conformità per visualizzare i problemi nuovi e noti con la versione di anteprima del Punteggio di conformità.
 
 ## <a name="what-is-compliance-score"></a>Che cos'è il Punteggio di conformità
 
@@ -58,7 +58,7 @@ Considerare la conformità score come versione semplificata di Compliance Manage
 
 Punteggio di conformità condivide lo stesso backend con Compliance Manager, quindi qualsiasi dato che potrebbe essere già presente in Compliance Manager mostrerà il Punteggio di conformità.
 
-Durante l'anteprima pubblica, alcune funzionalità rimangono solo in Compliance Manager, ad esempio la gestione delle valutazioni e la creazione di modelli. Si consiglia di iniziare tutte le attività di gestione della conformità in Score Compliance. Quando si accede a funzioni gestite da Compliance Manager, si verrà guidati a tale strumento. Per questo motivo, alcuni di questi documenti indirizzano gli argomenti di Compliance Manager.
+Alcune funzionalità rimangono solo in Compliance Manager durante l'anteprima pubblica, ad esempio la gestione delle valutazioni e la creazione di modelli. Si consiglia di iniziare tutte le attività di gestione della conformità in Score Compliance. Quando si accede a funzioni gestite da Compliance Manager, si verrà guidati a tale strumento. Per questo motivo, alcuni di questi documenti indirizzano gli argomenti di Compliance Manager.
 
 Ulteriori informazioni sulla relazione tra Score compliance e Compliance Manager nelle [Note sulla versione del Punteggio di conformità](compliance-score-release-notes.md).
 
@@ -73,13 +73,11 @@ Per ulteriori informazioni [, vedere Calcolo del Punteggio di conformità e moni
 
 ## <a name="key-components-controls-assessments-templates-groups"></a>Componenti principali: controlli, valutazioni, modelli, gruppi
 
-Il Punteggio di conformità utilizza diversi componenti per facilitare la gestione delle attività di conformità. Quando si utilizza il Punteggio di conformità per assegnare, testare e monitorare le attività di conformità, è utile avere una conoscenza di base di questi componenti chiave. In questo diagramma vengono illustrate le relazioni tra di essi:
-
-![Relazioni in Compliance Manager versione 3](../media/compliance-manager-relationships.png "Componenti del Punteggio di conformità")
+Il Punteggio di conformità utilizza diversi componenti per facilitare la gestione delle attività di conformità. Quando si utilizza il Punteggio di conformità per assegnare, testare e monitorare le attività di conformità, è utile avere una conoscenza di base dei componenti principali: controlli, valutazioni, modelli e gruppi.
 
 ### <a name="controls"></a>Controlli
 
-Un controllo definisce come valutare e gestire la configurazione del sistema, il processo organizzativo e la responsabilità degli utenti per rispondere a un requisito specifico di un criterio normativo, standard o interno.
+Un controllo definisce come valutare e gestire la configurazione del sistema, il processo organizzativo e gli utenti responsabili della riunione di un requisito specifico di un criterio di regolamentazione, standard o interno.
 
 Il Punteggio di conformità tiene traccia di due tipi di controlli:
 
@@ -90,9 +88,9 @@ Il Punteggio di conformità tiene traccia di due tipi di controlli:
 
 Una valutazione è una valutazione di un modello che avvia il processo di punteggio per la propria organizzazione. Le valutazioni raggruppano le azioni necessarie per soddisfare i requisiti di una norma, di una normativa o di una legge. Ad esempio, si può avere una valutazione che, quando si completano tutte le azioni all'interno di esso, porta le impostazioni di Office 365 in linea con i requisiti ISO 27001.
 
-Per impostazione predefinita, il Punteggio di conformità fornisce alla propria organizzazione una valutazione basata sulla linea di base per la protezione dei dati di Microsoft 365, una raccomandazione per la riduzione dei rischi di protezione e conformità ai dati (ulteriori[informazioni](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
+Punteggio di conformità fornisce alla propria organizzazione una valutazione iniziale basata sulla linea di base per la protezione dei dati di Microsoft 365. Tale valutazione è una raccomandazione per la riduzione dei rischi di protezione e conformità dei dati (ulteriori[informazioni](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
 
-Le valutazioni includono diversi componenti:
+Le valutazioni hanno diversi componenti:
 
 - **Servizi nell'ambito**: l'insieme specifico di servizi Microsoft applicabile alla valutazione
 - **Controlli gestiti da Microsoft**: controlli che Microsoft ha implementato e testato
@@ -102,13 +100,11 @@ Le valutazioni includono diversi componenti:
 > [!NOTE]
 > Punteggio di conformità consente di visualizzare le valutazioni e la modalità di factoring nel punteggio generale. Tuttavia, durante l'anteprima pubblica si verrà indirizzati a Compliance Manager per gestire le proprie valutazioni.
 
-Visualizzare istruzioni dettagliate per l' [utilizzo di valutazioni in Compliance Manager](working-with-compliance-manager.md#assessments).
+Visualizzare istruzioni dettagliate per la [gestione delle valutazioni in Compliance Manager](working-with-compliance-manager.md#assessments).
 
 ### <a name="templates"></a>Modelli
 
-Il Punteggio di conformità fornisce modelli preconfigurati per le valutazioni. Il Punteggio di conformità consente inoltre di creare modelli per le proprie valutazioni per soddisfare le proprie esigenze. Ad esempio, è possibile creare un modello per il controllo del processo aziendale oppure un modello per uno standard di protezione dei dati o di conformità regionale non incluso in uno dei modelli già configurati.  Creando modelli personalizzati, è possibile creare valutazioni personalizzate per garantire che il Punteggio di conformità ricerchi non solo le valutazioni cloud di Microsoft, ma anche altre valutazioni dei rischi nell'ambito della propria organizzazione.
-
-È possibile creare nuovi modelli copiando un modello esistente o importando le informazioni sui controlli da un file di Excel. Visualizzare istruzioni dettagliate per la [creazione di modelli in Compliance Manager](working-with-compliance-manager.md#templates).
+Il Punteggio di conformità fornisce modelli preconfigurati per le valutazioni. È inoltre possibile personalizzare un modello preconfigurato aggiungendo controlli e azioni personalizzati. Ad esempio, è possibile creare un modello per il controllo del processo aziendale oppure un modello per uno standard di protezione dei dati o di conformità regionale non incluso in uno dei modelli già configurati. Introducendo i propri modelli in Score Compliance, è possibile monitorare non solo le valutazioni cloud di Microsoft, ma anche eventuali altre valutazioni dei rischi nell'ambito della propria organizzazione.
 
 I modelli preconfigurati per il Punteggio di conformità sono:
 
@@ -130,14 +126,13 @@ I modelli preconfigurati per il Punteggio di conformità sono:
 16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
 17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
-> [!NOTE]
-> Durante l'anteprima pubblica, passare a Compliance Manager per creare e gestire i modelli.
+Visualizzare [istruzioni dettagliate per la creazione di modelli](working-with-compliance-manager.md#templates), che si verifica in Compliance Manager.
 
 ### <a name="groups"></a>Gruppi
 
 I gruppi consentono di organizzare valutazioni in modo logico. Ad esempio, è possibile scegliere di raggruppare le valutazioni per anno, standard di conformità, servizi, team all'interno dell'organizzazione o in qualche altro modo.
 
-Quando due diverse valutazioni nello stesso gruppo condividono azioni gestite dal cliente, il completamento dei dettagli dell'implementazione, il testing e lo stato dell'azione in una valutazione vengono sincronizzati automaticamente alla stessa azione in qualsiasi altra valutazione del gruppo. Questo unisce le azioni di miglioramento assegnate all'interno del gruppo e riduce il lavoro di duplicazione.
+Quando due diverse valutazioni nello stesso gruppo condividono azioni gestite dal cliente, gli aggiornamenti apportati ai dettagli dell'implementazione, al testing e allo stato dell'azione in una valutazione verranno sincronizzati automaticamente alla stessa azione in qualsiasi altra valutazione del gruppo. La sincronizzazione delle azioni in questo modo consente di unificare le azioni di miglioramento assegnate all'interno del gruppo e di ridurre il lavoro di duplicazione.
 
 Informazioni su come [creare i gruppi in Compliance Manager](working-with-compliance-manager.md#groups). Dopo aver creato i gruppi, è possibile [filtrare il dashboard del Punteggio di conformità](compliance-score-setup.md#filtering-your-dashboard-view) per visualizzare il Punteggio di uno o più gruppi.
 

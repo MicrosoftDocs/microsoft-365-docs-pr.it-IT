@@ -14,23 +14,29 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager è uno strumento di valutazione dei rischi basato sul flusso di lavoro gratuito in Microsoft Service Trust Portal. Compliance Manager consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft.
-ms.openlocfilehash: 4d79b0480462510927f0b1b4c8b5da7132cffec8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 7fd8e4e99edd976085cf9fd6fb3b9a0d88debf89
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635154"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141613"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance Manager (anteprima)
 
 > [!IMPORTANT]
 > Compliance Manager non è disponibile in Office 365 gestito da 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) o Office 365 Dipartimento della Difesa.
 
-[Microsoft Compliance Manager (Preview)](https://servicetrust.microsoft.com/ComplianceManager) è uno strumento di valutazione dei rischi basato su flussi di lavoro gratuito che consente di monitorare, assegnare e verificare le attività di conformità alle normative relative ai servizi cloud Microsoft. Parte dell'abbonamento a Microsoft 365, Office 365 o Azure Active Directory, Compliance Manager consente di gestire la conformità normativa all'interno del modello di responsabilità condivisa per i servizi cloud Microsoft. Compliance Manager offre un Dashboard centralizzato per la visualizzazione di standard, normative e dettagli sull'implementazione dei controlli e sui risultati dei test per le valutazioni del servizio Microsoft. Include anche strumenti che consentono di gestire le implementazioni dei controlli personalizzati e la verifica della conformità specifiche per l'organizzazione.
+**In questo articolo**leggere questo articolo per informazioni su quali Compliance Manager è e comprendere i componenti principali.
+
+Informazioni **sugli aggiornamenti**: sono stati pubblicati diversi aggiornamenti nella versione di anteprima pubblica di aprile 2020. Visitare le [Note sulla versione di Compliance Manager](compliance-manager-release-notes.md) per visualizzare i problemi nuovi e noti.
+
+## <a name="what-is-compliance-manager"></a>Che cos'è Compliance Manager
+
+[Microsoft Compliance Manager (Preview)](https://servicetrust.microsoft.com/ComplianceManager) è uno strumento gratuito di valutazione dei rischi basato sul flusso di lavoro in Microsoft Service Trust Portal per la gestione delle attività di conformità alle normative relative ai servizi cloud di Microsoft. Parte dell'abbonamento a Microsoft 365, Office 365 o Azure Active Directory, Compliance Manager consente di gestire la conformità normativa all'interno del modello di responsabilità condivisa per i servizi cloud Microsoft.
 
 Con Compliance Manager, l'organizzazione può:
   
-- Combinare informazioni dettagliate sulla conformità fornite ai revisori e ai regolatori dei servizi cloud con l'autovalutazione di conformità per gli standard e le normative applicabili alla propria organizzazione. Sono inclusi gli standard e le normative delineati dall'organizzazione internazionale per la standardizzazione (ISO), dall'Istituto nazionale per gli standard e la tecnologia (NIST), dalla portabilità di assicurazione malattia e dalla legge sulla responsabilità (HIPAA), i dati generali Protection Regulation (GDPR) e molte altre.
+- Combinare informazioni dettagliate sulla conformità fornite ai revisori e ai regolatori dei servizi cloud con l'autovalutazione di conformità per gli standard e le normative applicabili alla propria organizzazione. Sono inclusi gli standard e i regolamenti delineati dall'organizzazione internazionale per la standardizzazione (ISO), dall'Istituto nazionale per gli standard e dalla tecnologia (NIST), dalla portabilità di assicurazione malattia e dalla legge sulla responsabilità (HIPAA), dal regolamento generale sulla protezione dei dati (GDPR) e da molti altri.
 - Consentono di assegnare, monitorare e registrare le attività relative alla conformità e alla valutazione, che consentono all'organizzazione di superare le barriere del team per raggiungere gli obiettivi di conformità.
 - Fornire un punteggio di conformità che consenta di monitorare lo stato di avanzamento e la priorità dei controlli di controllo che consentono di ridurre l'esposizione ai rischi dell'organizzazione.
 - Fornire un repository sicuro per l'upload e la gestione di evidenze e altri elementi correlati alle attività di conformità.
@@ -39,7 +45,16 @@ Con Compliance Manager, l'organizzazione può:
 > [!NOTE]
 > Le azioni dei clienti fornite in Compliance Manager sono raccomandazioni. spetta alla propria organizzazione valutare l'efficacia di tali raccomandazioni nei rispettivi ambienti normativi prima dell'implementazione. Le indicazioni rilevate in Compliance Manager non devono essere interpretate come garanzia di conformità.
 
-## <a name="compliance-manager-relationships"></a>Relazioni di Compliance Manager
+## <a name="relationship-to-compliance-score"></a>Relazione con punteggio di conformità
+
+[Microsoft Compliance Score (Preview)](compliance-score.md) è una funzionalità del centro conformità di Microsoft 365 che fornisce una visualizzazione di primo livello nella posizione di conformità dell'organizzazione. Calcola un punteggio basato sui rischi misurando lo stato di avanzamento del processo di completamento delle azioni che consentono di ridurre i rischi per la protezione dei dati e gli standard normativi. La conoscenza del Punteggio di conformità globale aiuta l'organizzazione a comprendere e gestire la conformità. Capire in [che modo viene calcolato il Punteggio di conformità](compliance-score-methodology.md).
+
+Compliance Manager condivide lo stesso backend con punteggio di conformità. Durante la fase di anteprima pubblica per entrambi gli strumenti, Compliance Manager è la posizione in cui verranno gestite le valutazioni e le implementazioni dei controlli personalizzati. Per ulteriori informazioni [, vedere relazione tra conformità score e Compliance Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
+  
+> [!IMPORTANT]
+> Il Punteggio di conformità non esprime una misura assoluta di conformità organizzativa rispetto a una norma o a un regolamento particolari. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Nessun servizio può garantire che l'utente sia conforme a una norma o a una regolamentazione e che il Punteggio di conformità non debba essere interpretato come garanzia in alcun modo.
+
+## <a name="compliance-manager-components"></a>Componenti di Compliance Manager
 
 Compliance Manager utilizza diversi componenti che consentono di eseguire le attività di gestione della conformità. Questi componenti interagiscono per fornire un flusso di lavoro di gestione completo e rapporti di conformità senza problemi per i revisori.
 
@@ -61,11 +76,11 @@ Per impostazione predefinita, Compliance Manager crea le seguenti valutazioni pe
 - Office 365 NIST 800-53
 - Office 365 GDPR
 
-Le valutazioni includono diversi componenti:
+Le valutazioni hanno diversi componenti:
   
 - **Servizi nell'ambito**: ogni valutazione si applica a un set specifico di servizi Microsoft.
 - **Controlli gestiti Microsoft**: per ogni servizio cloud, Microsoft implementa e gestisce un insieme di controlli di conformità per gli standard e le normative applicabili.
-- **Controlli gestiti dal cliente**: è l'insieme dei controlli implementati dall'organizzazione quando si eseguono azioni per ogni controllo.
+- **Controlli gestiti dal cliente**: questi controlli vengono implementati dall'organizzazione quando si eseguono azioni per ogni controllo.
 - **Punteggio di valutazione**: la percentuale del punteggio totale possibile per i controlli gestiti dal cliente nella valutazione. In questo modo è possibile monitorare l'implementazione delle azioni assegnate a ogni controllo.
 
 ## <a name="controls"></a>Controlli
@@ -79,7 +94,7 @@ I [controlli](working-with-compliance-manager.md#controls-and-actions) sono cont
 
 ![Controlli in Compliance Manager versione 3](../media/compliance-manager-controls.png)
 
-Sono disponibili tre tipi di controlli in Compliance Manager, **controlli gestiti da Microsoft**, controlli **gestiti dal cliente**e **controlli di gestione condivisi**
+Sono disponibili tre tipi di controlli in Compliance Manager, **controlli gestiti da Microsoft**, **controlli gestiti dal cliente**e **controlli di gestione condivisi**.
 
 ### <a name="microsoft-managed-controls"></a>Controlli gestiti da Microsoft
 
@@ -87,7 +102,7 @@ Per ogni servizio cloud, Microsoft implementa e gestisce un insieme di controlli
 
 ### <a name="customer-managed-controls"></a>Controlli gestiti dal cliente
 
-Questo è l'insieme di controlli gestiti dall'organizzazione. L'organizzazione è responsabile dell'implementazione del controllo gestito dal cliente nell'ambito del processo di conformità per un determinato standard o regolamentazione. I controlli gestiti dal cliente sono organizzati in famiglie di controllo per la certificazione o regolamentazione corrispondente. Utilizzare i controlli gestiti dal cliente per implementare le azioni consigliate suggerite da Microsoft come parte delle attività di conformità. L'organizzazione può utilizzare le istruzioni e le azioni dei clienti consigliate in ogni controllo gestito dal cliente per gestire il processo di implementazione e valutazione per tale controllo.
+I controlli gestiti dal cliente sono gestiti dall'organizzazione. L'organizzazione è responsabile dell'implementazione del controllo gestito dal cliente nell'ambito del processo di conformità per un determinato standard o regolamentazione. I controlli gestiti dal cliente sono organizzati in famiglie di controllo per la certificazione o regolamentazione corrispondente. Utilizzare i controlli gestiti dal cliente per implementare le azioni consigliate suggerite da Microsoft come parte delle attività di conformità. L'organizzazione può utilizzare le istruzioni e le azioni dei clienti consigliate in ogni controllo gestito dal cliente per gestire il processo di implementazione e valutazione per tale controllo.
 
 I controlli gestiti dal cliente nelle valutazioni dispongono anche di funzionalità di gestione dei flussi di lavoro incorporate che è possibile utilizzare per gestire e monitorare i progressi compiuti verso il completamento della valutazione. Con questa funzionalità del flusso di lavoro, è possibile:
 
@@ -111,6 +126,8 @@ Gli utenti dell'organizzazione possono utilizzare Compliance Manager per esamina
 
 I controlli di certificazione vengono in genere implementati da una persona e testati da un altro. Ad esempio, dopo aver completato gli elementi dell'azione inizialmente assegnati a una persona per l'implementazione, gli elementi di azione vengono assegnati alla persona successiva per testare e caricare la prova. Gli utenti che dispongono di autorizzazioni sufficienti per le assegnazioni di controllo possono assegnare e riassegnare gli elementi di azione. In questo modo è possibile gestire in modo centralizzato le assegnazioni dei controlli e il routing decentralizzato degli elementi di azione tra gli implementatori e i tester.
 
+Si noti che le **azioni di miglioramento** nel punteggio di conformità sono equivalenti agli **elementi azione** in Compliance Manager.
+
 ## <a name="permissions"></a>Autorizzazioni
 
 Compliance Manager usa un modello di autorizzazione di controllo dell'accesso basato sui ruoli. Solo agli utenti a cui è stato assegnato il ruolo utente è consentito di accedere a Compliance Manager e le azioni consentite da ogni utente sono limitate in base al tipo di ruolo. [Visualizzare una tabella](working-with-compliance-manager.md#permissions) in cui sono riportate le azioni consentite per ogni autorizzazione.
@@ -120,7 +137,7 @@ L'amministratore del portale per Compliance Manager può impostare le autorizzaz
 1. Dal menu a discesa **in alto,** selezionare **amministratore**, quindi **Impostazioni**.
 2. Selezionare il ruolo che si desidera assegnare e quindi aggiungere il dipendente che si desidera assegnare a quel ruolo. Gli utenti saranno quindi in grado di eseguire determinate azioni.
 
-Inoltre, gli utenti a cui è assegnato il [ruolo di lettore globale in Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) dispongono dell'autorizzazione di sola lettura per accedere a Compliance Manager. Tuttavia, non sono in grado di modificare i dati o di eseguire azioni all'interno di Compliance Manager.
+Gli utenti a cui è assegnato il [ruolo di lettore globale in Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) dispongono dell'autorizzazione di sola lettura per accedere a Compliance Manager. Tuttavia, non sono in grado di modificare i dati o di eseguire azioni all'interno di Compliance Manager.
 
 Non esiste più un ruolo di **accesso Guest** predefinito. A ogni utente deve essere assegnato un ruolo per poter accedere e lavorare in Compliance Manager.
   
@@ -148,13 +165,6 @@ I modelli preconfigurati inclusi in Compliance Manager sono i seguenti:
 12. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (anteprima)
 13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / ISM (anteprima) del[governo australiano](https://go.microsoft.com/fwlink/?linkid=2113024) di IRAP
 14. [Linea di base per la protezione dei dati di Microsoft 365](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-
-## <a name="compliance-score"></a>Punteggio di conformità
-
-[Microsoft Compliance Score (Preview)](compliance-score.md) è una funzionalità del centro conformità di Microsoft 365 che consente di comprendere la posizione di conformità dell'organizzazione. Calcola un punteggio basato sui rischi misurando lo stato di avanzamento del processo di completamento delle azioni che consentono di ridurre i rischi per la protezione dei dati e gli standard normativi. La conoscenza del Punteggio di conformità globale aiuta l'organizzazione a comprendere e gestire la conformità. Capire in [che modo viene calcolato il Punteggio di conformità](compliance-score-methodology.md).
-  
-> [!IMPORTANT]
-> Il Punteggio di conformità non esprime una misura assoluta di conformità organizzativa rispetto a una norma o a un regolamento particolari. Esprime la misura in cui sono stati adottati controlli che possono ridurre i rischi per i dati personali e la privacy individuale. Nessun servizio può garantire che l'utente sia conforme a una norma o a una regolamentazione e che il Punteggio di conformità non debba essere interpretato come garanzia in alcun modo.
 
 ## <a name="secure-score-integration"></a>Integrazione del Punteggio sicuro
 

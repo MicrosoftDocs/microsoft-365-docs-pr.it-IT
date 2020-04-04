@@ -14,26 +14,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come utilizzare gli strumenti di flusso di lavoro in Microsoft Compliance score per facilitare la gestione della conformità per l'organizzazione.
-ms.openlocfilehash: 046a370fe1294220ee4ee6150311df5f51905674
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8fe36f0cdf5e204e0fa6150141cc348b0d0e325f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601193"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142587"
 ---
 # <a name="working-with-microsoft-compliance-score-preview"></a>Utilizzo del Punteggio di conformità Microsoft (anteprima)
 
-## <a name="managing-your-workflow-with-improvement-actions"></a>Gestione del flusso di lavoro con azioni di miglioramento
+In questo articolo viene illustrato come utilizzare gli elementi chiave del Punteggio di conformità. Vengono fornite informazioni su come utilizzare le **azioni di miglioramento** per gestire il flusso di lavoro di conformità. Verrà inoltre illustrato come utilizzare le informazioni sulle pagine **soluzioni** e **valutazioni** e come produrre report.
 
-L'utilizzo di azioni di miglioramento nel punteggio di conformità centralizza i flussi di lavoro di conformità. Le azioni di miglioramento suggeriscono azioni consigliate per l'allineamento con le normative e gli standard di protezione dei dati e forniscono indicazioni dettagliate sull'implementazione. È possibile assegnarle agli utenti per eseguire le operazioni necessarie per l'implementazione e il testing. È inoltre possibile archiviare la documentazione e le note e registrare gli aggiornamenti dello stato direttamente nell'azione di miglioramento.
+## <a name="manage-your-workflow-with-improvement-actions"></a>Gestire il flusso di lavoro con azioni di miglioramento
+
+Le **azioni di miglioramento** centralizzano le attività di conformità. Ogni azione di miglioramento fornisce indicazioni dettagliate sull'implementazione che consentono di allineare le normative e i criteri di protezione dei dati. Le azioni possono essere assegnate agli utenti dell'organizzazione per eseguire il lavoro di implementazione e testing. È inoltre possibile archiviare la documentazione, le note e gli aggiornamenti dello stato del record all'interno dell'azione di miglioramento.
 
 ## <a name="view-your-improvement-actions"></a>Visualizzare le azioni di miglioramento
 
 Il dashboard del Punteggio di conformità consente di visualizzare le **azioni di miglioramento principali**, ovvero quelle con i punti più disponibili che affrontano i problemi più importanti.
 
-Per visualizzare tutte le azioni di miglioramento, selezionare la scheda **azioni di miglioramento** nel dashboard oppure selezionare **Visualizza tutte le azioni di miglioramento** sotto l'elenco delle azioni di miglioramento principali nel dashboard. In questo modo viene visualizzata la pagina **azioni di miglioramento** , in cui è possibile visualizzare tutte le azioni di miglioramento dell'organizzazione.
+Per visualizzare tutte le azioni di miglioramento nella pagina **azioni di miglioramento** , selezionare la scheda **azioni di miglioramento** nel dashboard. In alternativa, seleziona **Visualizza tutte le azioni di miglioramento** sotto l'elenco delle azioni di miglioramento chiave nel dashboard.
 
-Se si dispone di un lungo elenco di azioni, potrebbe essere utile filtrare la visualizzazione. A tale scopo, selezionare **filtro** nell'angolo in alto a destra dell'elenco azioni. Quando viene visualizzato il riquadro dei **filtri** a comparsa, selezionare i criteri desiderati in base alle normative e agli standard, alla soluzione e al gruppo. È inoltre possibile personalizzare la visualizzazione selezionando **gruppo** nell'angolo in alto a destra e, dal menu a discesa, selezionare la visualizzazione per gruppo, soluzione, categoria, tipo di azione o stato.
+Se si dispone di un lungo elenco di azioni, potrebbe essere utile filtrare la visualizzazione. Selezionare **filtro** nell'angolo in alto a destra dell'elenco delle azioni. Quando viene visualizzato il riquadro dei **filtri** a comparsa, selezionare i criteri in base alle normative e agli standard, alla soluzione e al gruppo. È inoltre possibile personalizzare la visualizzazione selezionando **gruppo** nell'angolo in alto a destra. Dal menu a discesa, selezionare per visualizzare per gruppo, soluzione, categoria, tipo di azione o stato.
 
 La visualizzazione predefinita per questa pagina non Mostra azioni di miglioramento con uno stato di test **superato**. Per visualizzare le azioni che hanno superato il testing, selezionare la casella **passata** nel riquadro dei **filtri** a comparsa. Solo le azioni con uno stato di prova del conteggio **superato** verso il punteggio.
 
@@ -56,9 +58,9 @@ Nella pagina azioni di miglioramento vengono visualizzate le seguenti coordinate
 
 ### <a name="improvement-actions-details"></a>Dettagli sulle azioni di miglioramento
 
-Per ogni azione di miglioramento è presente una pagina dei dettagli. Questa pagina contiene istruzioni dettagliate sull'implementazione, in cui viene illustrato come eseguire le azioni consigliate per soddisfare gli standard e i requisiti normativi correlati elencati nell'intestazione **at a Glance** .
+Per ogni azione di miglioramento è presente una pagina dei dettagli. In questa pagina sono disponibili istruzioni dettagliate per l'implementazione per il completamento delle azioni consigliate per soddisfare gli standard e i requisiti normativi riportati nell'intestazione **a colpo d'occhio** .
 
-Nella pagina dei dettagli è possibile avviare l'azione consigliata o assegnare il lavoro a un altro utente, aggiornare lo stato e collegare note e documentazione.
+La pagina dei dettagli è la posizione in cui è possibile avviare l'azione consigliata. È inoltre possibile assegnare il lavoro a un altro utente, aggiornare lo stato e allegare note e documentazione.
 
 Per visualizzare la pagina dei dettagli dell'azione di miglioramento:
 
@@ -73,7 +75,7 @@ Per iniziare a lavorare sull'implementazione di un'azione di miglioramento, è p
 
 - Il proprietario di un criterio di business
 - Un implementatore IT
-- Un altro dipendente che ha la responsabilità di eseguire l'attività 
+- Un altro dipendente che ha la responsabilità di eseguire l'attività
 
 Dopo aver identificato la persona appropriata, accertarsi che dispongano di un [ruolo](compliance-score-setup.md#set-user-permissions-and-assign-roles) sufficiente in Score Compliance (compliance Administrator, Compliance Data Administrator, Security Administrator o Global Administrator) per eseguire il lavoro, procedere come segue: 
 
@@ -87,7 +89,7 @@ L'utente assegnato può quindi eseguire le operazioni consigliate descritte nell
 
 ## <a name="perform-work-and-store-documentation"></a>Eseguire la documentazione relativa al lavoro e all'archiviazione
 
-Quando si esegue il lavoro di implementazione, è possibile caricare file e note direttamente nell'azione di miglioramento nella sezione **note e documentazione** . In questo modo viene fornito un repository sicuro e centralizzato che consente di dimostrare la soddisfazione dei controlli per soddisfare gli standard e i regolamenti di conformità. Qualsiasi utente con accesso in sola lettura può leggere il contenuto in questa sezione. La possibilità di caricare, scaricare o eliminare campi oppure di immettere o modificare note è limitata ai ruoli con diritti di modifica.
+Quando si esegue il lavoro di implementazione, è possibile caricare file e note direttamente nell'azione di miglioramento nella sezione **note e documentazione** .  Questo ambiente è un repository sicuro e centralizzato che consente di dimostrare la soddisfazione dei controlli per soddisfare gli standard e i regolamenti di conformità. Qualsiasi utente con accesso in sola lettura può leggere il contenuto in questa sezione. Solo gli utenti con diritti di modifica possono caricare e scaricare file e immettere o modificare note.
 
 Nei campi della sezione **note e documentazione** sono inclusi i seguenti:
 
@@ -104,7 +106,7 @@ Nei campi della sezione **note e documentazione** sono inclusi i seguenti:
 
 **Implementazione, test e note aggiuntive**
 
-- Per aggiungere note in uno di questi tre campi, selezionare **modifica note di implementazione** sotto uno qualsiasi dei campi di thse.
+- Per aggiungere note in uno di questi tre campi, selezionare **modifica note di implementazione** al di sotto di uno di questi campi.
 - Quando viene aperto il riquadro a comparsa, immettere note nel campo di testo, quindi selezionare **Salva e Chiudi**.
 - Per modificare le note, selezionare **modifica note di implementazione**, apportare le modifiche, quindi selezionare **Salva e Chiudi**.
 
@@ -157,23 +159,23 @@ La pagina soluzioni consente di visualizzare la quota dei punti guadagnati e pot
 
 ### <a name="filtering-your-solutions-view"></a>Applicazione del filtro alla visualizzazione soluzioni
 
-Per filtrare la visualizzazione delle soluzioni: 
+Per filtrare la visualizzazione delle soluzioni:
 
 1. Selezionare **filtro** nell'angolo in alto a sinistra dell'elenco di valutazioni.
 2. Nel riquadro **filtri** a comparsa, inserire un controllo accanto ai criteri desiderati (standard e normative, soluzione, tipo di azione, gruppo di Compliance Manager, categoria).
-3. Selezionare il pulsante **applica** . Il riquadro del filtro si chiude e si vedrà la visualizzazione filtrata.
+3. Selezionare il pulsante **applica** . Il riquadro del filtro si chiude e vedrai la visualizzazione filtrata.
 
 È inoltre possibile modificare la visualizzazione per visualizzare le valutazioni per gruppo, prodotto o regolamento selezionando il tipo di raggruppamento dal menu a discesa **gruppo** sopra l'elenco valutazioni.
 
 ### <a name="taking-actions-from-the-solutions-page"></a>Esecuzione di azioni dalla pagina soluzioni
 
-Nella pagina soluzioni vengono visualizzate le soluzioni dell'organizzazione connesse alle azioni di miglioramento. Nella tabella sono elencati i contributi di ogni soluzione per il Punteggio globale, i punti di miglioramento dei punteggi conseguiti e possibili all'interno di tale soluzione e il numero di azioni per migliorare che sono state raggruppate in tale soluzione in grado di aumentare il punteggio. 
+Nella pagina soluzioni vengono visualizzate le soluzioni dell'organizzazione connesse alle azioni di miglioramento. Nella tabella sono elencati i contributi di ogni soluzione per il Punteggio globale, i punti di miglioramento dei punteggi conseguiti e possibili all'interno di tale soluzione e il numero di azioni per migliorare che sono state raggruppate in tale soluzione in grado di aumentare il punteggio.
 
 È possibile eseguire un'azione da questa schermata in due modi:
 
-1. Nella riga della soluzione desiderata, nella colonna **azioni rimanenti** , fare clic o toccare il numero di collegamenti ipertestuali. In questo modo viene visualizzata una visualizzazione filtrata della schermata azioni di miglioramento che mostra le azioni di miglioramento non testate per tale soluzione.
+1. Nella riga della soluzione desiderata fare clic sul numero di collegamenti ipertestuali nella colonna **azioni rimanenti** . Verrà visualizzata una visualizzazione filtrata della schermata azioni di miglioramento che mostra le azioni di miglioramento non testate per tale soluzione.
 
-2. Nella riga della soluzione desiderata fare clic su **Apri**nella colonna **Apri soluzione** . In questo modo è possibile utilizzare la soluzione o la posizione nei centri di sicurezza e conformità di Microsoft 365 e Office 365, in cui si può eseguire l'azione consigliata.
+2. Nella riga della soluzione desiderata fare clic su **Apri**nella colonna **Apri soluzione** . Verrà visualizzata la soluzione o la posizione nei centri di sicurezza e conformità di Microsoft 365 e Office 365, in cui è possibile eseguire l'azione consigliata.
 
 ## <a name="assessments-page"></a>Pagina valutazioni
 
@@ -181,11 +183,11 @@ Nella pagina valutazioni sono elencate le valutazioni selezionate per la gestion
 
 Per accedere alla pagina valutazioni, selezionare la scheda **valutazioni** nel dashboard.
 
-In questa pagina è possibile visualizzare rapidamente informazioni importanti su ogni valutazione:
+In questa pagina, è possibile visualizzare rapidamente informazioni importanti su ogni valutazione:
 
 - **Status**: lo stato verso il completamento di tutte le azioni di miglioramento nella valutazione verrà elencato come:
     - **Non conforme**: le azioni di miglioramento non sono state implementate e sono state testate con esito positivo. l'attività non è ancora iniziata
-    - **In Progress**: è in corso l'implementazione o la verifica delle azioni di miglioramento; Ciò può significare, ad esempio, che un'azione di miglioramento nella valutazione è stata assegnata per il lavoro, è in fase di implementazione e test
+    - **In Progress**: è in corso l'implementazione o la verifica delle azioni di miglioramento; ad esempio, un'azione di miglioramento nella valutazione è stata assegnata per il lavoro, è in fase di implementazione e test
 - **Progress Assessment**: la percentuale del lavoro eseguito verso il completamento finale della valutazione, misurata in base al numero di controlli testati correttamente.
 - **Azioni gestite dal cliente**: il numero di azioni completate per soddisfare l'implementazione dei controlli gestiti dal cliente
 - **Azioni gestite da Microsoft**: il numero di azioni completate per soddisfare l'implementazione dei controlli gestiti da Microsoft
@@ -195,15 +197,15 @@ In questa pagina è possibile visualizzare rapidamente informazioni importanti s
 
 ### <a name="default-assessments"></a>Valutazioni predefinite
 
-Per impostazione predefinita, nella pagina valutazioni verrà visualizzata la valutazione della linea di base per la protezione dei dati di Microsoft 365. Il Punteggio di conformità fornisce anche diverse valutazioni fuori sede ([vedere l'elenco completo](compliance-score.md#templates)). Se si desidera aggiungere ulteriori valutazioni per coprire ulteriori normative e standard, è possibile eseguire questa operazione in Compliance Manager.
+Per impostazione predefinita, nella pagina valutazioni verrà visualizzata la valutazione della linea di base per la protezione dei dati di Microsoft 365. Il Punteggio di conformità fornisce anche diverse valutazioni preconfigurate ([vedere l'elenco completo](compliance-score.md#templates)). È possibile aggiungere ulteriori valutazioni per coprire ulteriori normative e standard in Compliance Manager.
 
 ### <a name="managing-assessments"></a>Gestione delle valutazioni
 
-Durante l'anteprima pubblica, le funzionalità per la visualizzazione, la creazione, l'esportazione e la valutazione dell'archiviazione restano nello strumento Compliance Manager. 
+Durante l'anteprima pubblica, si passerà allo strumento Compliance Manager per incassare, personalizzare e gestire le proprie valutazioni.
 
-Per gestire le valutazioni, selezionare **Gestisci valutazioni in Compliance Manager** all'inizio dell'elenco valutazioni.
+Nella pagina **valutazioni** in Punteggio conformità, selezionare **Gestisci valutazioni in Compliance Manager** all'inizio dell'elenco valutazioni. Questo collegamento porta al dashboard di **valutazione** in Compliance Manager.
 
-L'altro collegamento all'inizio dell'elenco valutazioni, **Microsoft Actions in Compliance Manager**, consente di visualizzare la pagina in Compliance Manager con i controlli Microsoft che contribuiscono al Punteggio di conformità.
+L'altro collegamento all'inizio dell'elenco valutazioni, **Microsoft Actions in Compliance Manager**, consente di visualizzare il Dashboard delle **informazioni sui controlli** in Compliance Manager con i controlli Microsoft che contribuiscono al Punteggio di conformità.
 
 ### <a name="filtering-your-assessments-view"></a>Filtrare la visualizzazione delle valutazioni
 
@@ -221,6 +223,11 @@ Nell'elenco valutazione, nella colonna **azioni gestite dal cliente** , selezion
 
 ## <a name="reporting"></a>Reporting
 
-È possibile esportare un rapporto di tutte le azioni di miglioramento nel punteggio di conformità. Nella pagina **azioni di miglioramento** selezionare **Esporta** nell'angolo superiore sinistro dello schermo, sopra l'elenco delle azioni. In questo modo verrà generato un foglio di lavoro di Excel con tutte le azioni di miglioramento e le categorie di filtro visualizzate nella pagina **azioni di miglioramento** , che è possibile visualizzare e salvare nel computer locale.
+È possibile esportare un rapporto di tutte le azioni di miglioramento nel punteggio di conformità. Nella pagina **azioni di miglioramento** selezionare **Esporta** nell'angolo superiore sinistro dello schermo, sopra l'elenco delle azioni. In questo modo verrà generato un foglio di lavoro di Excel con tutte le azioni di miglioramento e le categorie di filtro visualizzate nella pagina **azioni di miglioramento** .
 
-È inoltre possibile esportare un report da Compliance Manager. In Compliance Manager passare alla scheda **informazioni controlli** e selezionare **Esporta** nella sezione in alto a destra dello schermo. Questo produce un foglio di lavoro di Excel che è possibile visualizzare e salvare.
+È inoltre possibile esportare un report da Compliance Manager attenendosi alla procedura seguente:
+
+1. In Compliance Manager, andare al dashboard **info Controls** .
+2. Verrà visualizzata una scheda **valutazione** e una scheda **modello** .  
+3. Per esportare una valutazione: selezionare la scheda **valutazione** . utilizzare i menu a discesa **gruppo** e **valutazione** per selezionare la valutazione che si desidera esportare. Seleziona **Esporta** vicino all'angolo in alto a destra dello schermo. Verrà scaricato un file di Excel. Include un elenco di azioni, raggruppate per controllo, con l'implementazione e i dettagli dei test.
+4. Per esportare un modello: selezionare la scheda **modello** e scegliere il modello che si desidera esportare dal menu a discesa **modello** . Seleziona **Esporta** vicino all'angolo in alto a destra dello schermo. Verrà scaricato un file di Excel. Include un elenco di azioni, raggruppate per controllo, con l'implementazione e i dettagli dei test.

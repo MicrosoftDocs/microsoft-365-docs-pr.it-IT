@@ -21,21 +21,18 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: Informazioni su come estendere la sottoscrizione di valutazione per un altro periodo di 30day.
-ms.openlocfilehash: abc941f771731274d7322a816e397d9c10a29d5d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f3e4241156d312d5dc236689344ad29ce1e8ee4d
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253519"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142610"
 ---
 # <a name="extend-your-trial-for-office-365-for-business"></a>Estendere il periodo di valutazione per Office 365 per le aziende
 
 Si ha bisogno di più tempo per provare le caratteristiche di Office 365 per le aziende prima di acquistarlo? Se l'abbonamento di valutazione scade entro 15 giorni e la versione di valutazione non è stata estesa precedentemente, è possibile prolungare il periodo di valutazione di altri 30 giorni. È possibile farlo una sola volta.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 
@@ -47,9 +44,7 @@ Si ha bisogno di più tempo per provare le caratteristiche di Office 365 per le 
 
 ::: moniker range="o365-germany"
 
-
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
-
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare la sottoscrizione di valutazione che si desidera estendere e quindi, sotto la data di scadenza, selezionare **Estendi versione di valutazione**.
 
@@ -59,13 +54,12 @@ Si ha bisogno di più tempo per provare le caratteristiche di Office 365 per le 
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare la sottoscrizione di valutazione che si desidera estendere e quindi, sotto la data di scadenza, selezionare **Estendi versione di valutazione**.
 
 3. Completare i passaggi della procedura guidata.
 
 ::: moniker-end
-
 
 Quando si è pronti per l'acquisto, vedere [acquistare la versione di valutazione di Office 365 for business](buy-a-subscription-from-your-free-trial.md).

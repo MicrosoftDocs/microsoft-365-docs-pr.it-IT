@@ -1,5 +1,5 @@
 ---
-title: Gestire gli acquisti in modalità self-service (utenti)
+title: Gestire acquisti in modalità self-service (utenti)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,19 +14,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Gli utenti possono imparare a gestire i propri acquisti in modalità self-service.
-ms.openlocfilehash: cdc50144179dd4c0f9b6355501167e9420ff0b50
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080323"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142140"
 ---
-# <a name="manage-self-service-purchases-users"></a>Gestire gli acquisti in modalità self-service (utenti)
+# <a name="manage-self-service-purchases-users"></a>Gestire acquisti in modalità self-service (utenti)
 
 Come utente, è possibile acquistare abbonamenti a determinati prodotti e assegnare licenze per gli abbonamenti alle persone del team. L'utente è responsabile del pagamento di eventuali acquisti in modalità self-service. È possibile gestire gli abbonamenti nell'interfaccia di amministrazione di Microsoft 365 all' <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.Microsoft.com</a>.
-
-> [!NOTE]
-> È necessario abilitare la nuova esperienza dell'interfaccia di amministrazione.
 
 L'amministratore ha una visualizzazione di sola lettura in tutti gli abbonamenti acquistati. Sono in grado di visualizzare il prodotto, il nome dell'acquirente, gli abbonamenti acquistati, la data di scadenza, il prezzo di acquisto e gli utenti assegnati per ogni sottoscrizione acquistata.
 
@@ -49,13 +46,13 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ### <a name="to-assign-licenses"></a>Per assegnare le licenze
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
 
 2. Scegliere l'abbonamento per cui si desidera assegnare le licenze.
 
 3. Scegliere **assegna licenze**.
 
-4. Nel riquadro **assegna licenze agli utenti** , iniziare a digitare un nome e quindi sceglierlo dai risultati per aggiungerlo all'elenco. È possibile aggiungere fino a 20 utenti alla volta.
+4. Nel riquadro **Assegna licenze agli utenti** iniziare a digitare un nome, quindi selezionarlo dai risultati per aggiungerlo all'elenco. È possibile aggiungere fino a 20 utenti per volta.
 
     > [!NOTE]
     > È possibile assegnare le licenze solo agli utenti dell'organizzazione.
@@ -64,7 +61,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ### <a name="to-unassign-licenses"></a>Per annullare l'assegnazione delle licenze
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
 
 2. Scegliere il prodotto di cui si desidera annullare l'assegnazione delle licenze.
 
@@ -86,7 +83,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ## <a name="manage-your-payment-details"></a>Gestire le informazioni di pagamento
 
-1. Nell'interfaccia di amministrazione, andare > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">alla</a> **** > pagina**fatture fatturazione & pagamenti**.
+1. Nell'interfaccia di amministrazione, andare > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">alla</a> **Billing** > pagina**fatture fatturazione & pagamenti**.
 
 2. Selezionare un profilo di fatturazione dall'elenco.
 
@@ -117,7 +114,7 @@ Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 10
 
 ## <a name="view-your-invoices"></a>Visualizzazione delle fatture
 
-1. Nell'interfaccia di amministrazione, andare a **** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">bollette fatturazione & pagina pagamenti</a> .
+1. Nell'interfaccia di amministrazione, andare a **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">bollette fatturazione & pagina pagamenti</a> .
 
 2. In **fatture** selezionare la fattura che si desidera visualizzare.
 

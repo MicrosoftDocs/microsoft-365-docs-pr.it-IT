@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Informazioni su come ottenere una versione di valutazione gratuita o su come acquistare un abbonamento a Microsoft 365.
-ms.openlocfilehash: 1b494457b20a1e75ad002b2832fd69ad0a284b53
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0b19a27b44aa62c65bb8dc5542337e106da2ddc5
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257666"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141624"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Provare o acquistare un abbonamento a Microsoft 365
 
@@ -41,9 +41,6 @@ Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione, 
 ## <a name="try-or-buy-a-microsoft-365-subscription"></a>Provare o acquistare un abbonamento a Microsoft 365
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 1. Accedere all'interfaccia [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)di amministrazione e quindi accedere a servizi di **acquisto** **fatturazione** \> .
 
@@ -70,16 +67,13 @@ Quando si aggiunge una sottoscrizione tramite l'interfaccia di amministrazione, 
 
 11. Nella pagina **ricevuta ordine** selezionare **continua**.
 
-#### <a name="not-using-the-new-admin-center-yet"></a>Non si utilizza ancora il nuovo interfaccia di amministrazione?
-
-Se l'interfaccia di amministrazione è disattivata, vedere i video di questo articolo per informazioni su come iscriversi a una sottoscrizione di valutazione di Microsoft 365: [iscriversi a un abbonamento](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 1. Accedere all'interfaccia [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)di amministrazione e quindi accedere a servizi di **acquisto** **fatturazione** \> .
 
-2. Nella pagina **acquisto servizi** sono elencate le sottoscrizioni disponibili per l'organizzazione. 
+2. Nella pagina **acquisto servizi** sono elencate le sottoscrizioni disponibili per l'organizzazione.
 
 3. Selezionare i puntini di ricerca in base al piano Microsoft 365 che si desidera provare o acquistare, quindi selezionare **Avvia versione di valutazione gratuita**, che offre 25 licenze utente per un termine di un mese oppure è possibile selezionare **Acquista ora**.
 
@@ -105,6 +99,7 @@ Se l'interfaccia di amministrazione è disattivata, vedere i video di questo art
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
+
 1. Accedere all'interfaccia [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)di amministrazione e quindi accedere a servizi di **acquisto** **fatturazione** \> .
 
 2. Nella pagina **acquisto servizi** sono elencate le sottoscrizioni disponibili per l'organizzazione. 
@@ -132,10 +127,9 @@ Se l'interfaccia di amministrazione è disattivata, vedere i video di questo art
 
 ::: moniker-end
 
-
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver ottenuto il nuovo abbonamento, è necessario assegnare una licenza agli utenti che utilizzeranno quell'abbonamento. Per informazioni, vedere [assegnare licenze agli utenti](../admin/manage/assign-licenses-to-users.md) .
+Dopo aver ottenuto il nuovo abbonamento, è necessario assegnare una licenza agli utenti che utilizzeranno quell'abbonamento. Per informazioni, vedere [assegnare licenze agli utenti](../admin/manage/assign-licenses-to-users.md).
 
 ## <a name="related-articles"></a>Articoli correlati
 
@@ -144,4 +138,3 @@ Dopo aver ottenuto il nuovo abbonamento, è necessario assegnare una licenza agl
 [Acquistare o rimuovere un componente aggiuntivo per Office 365 per le aziende](buy-or-edit-an-add-on.md)
 
 [Aggiungere spazio di archiviazione per l'abbonamento](add-storage-space.md)
-

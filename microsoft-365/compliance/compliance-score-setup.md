@@ -13,13 +13,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Informazioni su come effettuare l'accesso, configurare le autorizzazioni e comprendere il dashboard per il Punteggio di conformità di Microsoft, che semplifica e automatizza le valutazioni dei rischi.
-ms.openlocfilehash: 8233fb3174d822e4f71115cab2a1a174c1749810
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Informazioni su come configurare e iniziare a utilizzare Microsoft Compliance score, che semplifica e automatizza le valutazioni dei rischi.
+ms.openlocfilehash: 334eb47ebf5057bfa1c426715e8f404979ceaf5b
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42635124"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141521"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Configurazione del Punteggio di conformità Microsoft (anteprima)
 
@@ -32,15 +32,17 @@ L'amministratore globale di Microsoft 365 per l'organizzazione sarà probabilmen
 1. Accedere al [centro conformità di microsoft 365](https://compliance.microsoft.com/) e **accedere** con l'account di amministratore globale di Microsoft 365.
 2. Seleziona **Punteggio di conformità** nel riquadro di spostamento a sinistra. Sarà quindi possibile visualizzare il [Dashboard Punteggio di conformità con il Punteggio](#understand-the-compliance-score-dashboard).
 
+Il collegamento diretto al Punteggio di conformità di Access [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore)è:.
+
 ## <a name="set-user-permissions-and-assign-roles"></a>Impostazione delle autorizzazioni utente e assegnazione dei ruoli
 
 Il Punteggio di conformità utilizza un modello di autorizzazione di controllo di accesso basato sui ruoli (RBAC). Solo gli utenti a cui è assegnato un ruolo possono accedere al Punteggio di conformità e le azioni consentite da ogni utente sono limitate dal tipo di ruolo.
 
 ### <a name="where-to-set-permissions"></a>Dove impostare le autorizzazioni
 
-L'amministratore globale dell'organizzazione può impostare le autorizzazioni utente nel centro conformità Microsoft 365 o in Azure Active Directory (Azure AD). Dopo aver impostato i ruoli in una di queste posizioni, gli utenti saranno in grado di accedere al Punteggio di conformità (così come Compliance Manager).
+L'amministratore globale dell'organizzazione può impostare le autorizzazioni utente nel centro conformità Microsoft 365 o in Azure Active Directory (Azure AD). Dopo aver impostato i ruoli in una di queste posizioni, gli utenti possono accedere al Punteggio di conformità e a Compliance Manager.
 
-Si noti che i ruoli di gestione della conformità esistenti non **vengono** trasferiti al Punteggio di conformità.  Questo significa che, se in precedenza è stato assegnato un ruolo in Compliance Manager, tale ruolo non consentirà di accedere al Punteggio di conformità. L'amministratore globale dovrà impostare le autorizzazioni e un ruolo per l'utente nel centro conformità Microsoft 365 o Azure AD in modo che sia possibile accedere al Punteggio di conformità.
+Si noti che i ruoli di gestione della conformità esistenti non **vengono** trasferiti al Punteggio di conformità. Se si ha un ruolo in Compliance Manager e si è nuovi al Punteggio di conformità, il ruolo di Compliance Manager non concederà l'accesso al Punteggio di conformità. L'amministratore globale dovrà impostare le autorizzazioni e un ruolo per l'utente nel centro conformità Microsoft 365 o Azure AD in modo che sia possibile accedere al Punteggio di conformità.
 
 ### <a name="role-types"></a>Tipi di ruolo
 
@@ -68,7 +70,7 @@ Per impostare le autorizzazioni nel centro conformità di Microsoft 365:
 
 ## <a name="configure-automatic-secure-score-updates"></a>Configurare gli aggiornamenti automatici del Punteggio sicuro
 
-Per impostazione predefinita, tutti i nuovi tenant dispongono degli aggiornamenti automatici di [Secure Score](../security/mtp/microsoft-secure-score.md) attivati. Questo significa che tutte le azioni monitorate dal punteggio sicuro aggiorneranno automaticamente lo stato per la stessa azione nel punteggio di conformità.
+Per impostazione predefinita, tutti i nuovi tenant dispongono degli aggiornamenti automatici di [Secure Score](../security/mtp/microsoft-secure-score.md) attivati. Tutte le azioni monitorate da Secure Score aggiorneranno automaticamente lo stato per la stessa azione nel punteggio di conformità.
 
 L'amministratore globale può gestire questa impostazione per disattivare gli aggiornamenti automatici per tutte le azioni o impostare gli aggiornamenti per le azioni singolarmente.
 
@@ -84,7 +86,7 @@ Per gestire gli aggiornamenti automatici del Punteggio sicuro, attenersi alla se
 
 Se si sceglie **imposta per azione,** eseguire i passaggi aggiuntivi per abilitare gli aggiornamenti dei punti di sicurezza per le singole azioni:
 
-4. Scegliere **Compliance Manager** dal menu in alto (Nota: non selezionare "Compliance Manager (Classic)").
+4. Selezionare **Compliance Manager** dal menu in alto (non selezionare "Compliance Manager (Classic)", che è un prodotto legacy).
 
 5. Selezionare **gestione tenant** nell'angolo in alto a destra dello schermo.
 
@@ -106,7 +108,7 @@ Il dashboard del Punteggio di conformità è stato creato per fornire una visual
 
 ### <a name="overall-compliance-score"></a>Punteggio di conformità globale
 
-Il Punteggio di conformità, evidenziato in primo piano nella parte superiore, presenta una percentuale basata sui punti ottenibili per il completamento delle azioni di miglioramento relative agli standard e alle normative sulla protezione dei dati.
+Il Punteggio di conformità è evidenziato in primo piano. Visualizza una percentuale in base ai punti ottenibili per il completamento delle azioni di miglioramento che si rivolgono agli standard e alle normative sulla protezione dei dati.
 
 Quando si giunge al Punteggio di conformità per la prima volta, il punteggio iniziale è basato sulla linea di base di protezione dei dati integrata di Microsoft 365, ovvero un insieme di controlli che include normative e standard di settore. Poiché il Punteggio di conformità analizza il sistema delle soluzioni Microsoft 365 esistenti, fornisce una valutazione iniziale della postura di conformità in base alle impostazioni di privacy e sicurezza attualmente abilitate dall'organizzazione.
 
@@ -114,11 +116,11 @@ Quando si aggiungono valutazioni rilevanti per la propria organizzazione, il pun
 
 ### <a name="key-improvement-actions"></a>Azioni di miglioramento principali
 
-In questa sezione sono elencate le operazioni di miglioramento più importanti che è possibile eseguire in questo momento per ottenere un impatto positivo maggiore sul punteggio di conformità globale. Elenca le azioni che non sono state completate o non sono state eseguite con la valutazione con rischi elevati.
+In questa sezione sono elencate le operazioni di miglioramento più importanti che è possibile eseguire in questo momento per ottenere un impatto positivo maggiore sul punteggio di conformità globale.
 
 ### <a name="solutions-that-affect-your-score"></a>Soluzioni che influiscono sul Punteggio
 
-In questa sezione vengono illustrate le soluzioni che contengono azioni con la maggiore possibilità di influenzare positivamente il punteggio e il numero di azioni di miglioramento eccezionali disponibili in ogni soluzione.
+In questa sezione vengono illustrate le soluzioni che contengono azioni con la maggiore possibilità di influenzare positivamente il punteggio e il numero di azioni di miglioramento eccezionali in ogni soluzione.
 
 ### <a name="compliance-score-breakdown"></a>Ripartizione del Punteggio di conformità
 
@@ -134,9 +136,9 @@ In questa sezione viene fornita una visualizzazione più dettagliata del puntegg
 Per applicare i filtri:
 
 1. Selezionare **filtro** sul lato superiore destro del dashboard.
-2. Selezionare i criteri di filtro dal riquadro **filtri** a comparsa, quindi fare clic su **applica**.
+2. Selezionare i criteri di filtro dal riquadro a comparsa **filtri** , quindi fare clic su **applica**.
 
-Dopo l'applicazione di un filtro, vedrai il tuo punteggio regolato in tempo reale. La percentuale del Punteggio di conformità e le informazioni di ripartizione e le azioni e le soluzioni di miglioramento, ora riguardano solo i dati trattati dai criteri di filtro. Se si disattiva il Punteggio di conformità, la visualizzazione filtrata rimane quando si effettua l'accesso.
+Dopo aver applicato un filtro, vedrai il tuo punteggio rettificato in tempo reale. La percentuale del Punteggio di conformità e le informazioni di ripartizione e le azioni e le soluzioni di miglioramento, ora riguardano solo i dati trattati dai criteri di filtro. Se si disattiva il Punteggio di conformità, la visualizzazione filtrata rimane quando si effettua l'accesso.
 
 Per rimuovere i filtri:
 

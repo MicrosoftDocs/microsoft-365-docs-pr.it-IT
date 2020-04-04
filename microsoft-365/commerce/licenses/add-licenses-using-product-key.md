@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: Informazioni su come aggiungere licenze all'abbonamento.
-ms.openlocfilehash: 4d559d977ac507b448d816f3f87e85a923df810f
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: aa924c3c485f33fa831d140413ebfd2d872f30ff
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951947"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142240"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Aggiungere licenze o estendere una sottoscrizione a pagamento per l'utilizzo di un codice Product Key
 
@@ -41,9 +41,6 @@ Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri.
 ## <a name="add-licenses-to-your-subscription"></a>Aggiungere le licenze all'abbonamento
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 
@@ -101,9 +98,6 @@ Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri.
 ## <a name="extend-the-expiration-date-of-your-subscription"></a>Estendere la data di scadenza dell'abbonamento
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 

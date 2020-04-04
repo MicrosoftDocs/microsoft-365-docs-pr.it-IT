@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/19/2019
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -17,18 +17,19 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Visualizzare un elenco completo dei certificati radice e delle autorità di certificazione (CAs) in Office 365.
-ms.openlocfilehash: 7b3aeb4012f510b8ccd3d7e608a9aa9be04b01ea
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fd92c8833eab3d816b3f01eccf0502f77663e4a5
+ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41593197"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131509"
 ---
 # <a name="office-365-encryption-chains"></a>Catene di crittografia di Office 365
 
 Office 365 utilizza una serie di provider di certificati diversi. Di seguito viene descritto l'elenco completo dei certificati radice noti di Office 365 che i clienti possono incontrare quando si accede a Office 365. Per informazioni sui certificati che potrebbe essere necessario installare nella propria infrastruttura, vedere [Plan for Third-Party SSL Certificates for Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates). Le informazioni sul certificato seguenti si applicano a tutte le istanze del cloud globale e di Office 365.
 
-**Clienti di ITAR (difesa & GCC High):** contattare il Tam cloud o SDM per il pacchetto P7b corretto.
+>[!NOTE]
+>Per informazioni sui certificati che si applicano ai clienti di **DOD e GCC High** , vedere [catene di crittografia di Office 365-DOD e GCC High](encryption-office-365-certificate-chains-itar.md).
 
 | **Tipo di certificato** | **Download di P7b** | **Endpoint CRL** | **Endpoint OCSP** | **Endpoint AIA** |
 | --- | --- | --- | --- | --- |

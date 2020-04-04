@@ -149,6 +149,8 @@
           href: document-fingerprinting.md
         - name: Funzioni DLP per le informazioni riservate
           href: what-the-dlp-functions-look-for.md
+    - name: Crittografia in M365
+      href: encryption.md
     - name: Customer Key
       items:
         - name: Crittografia del servizio con la chiave del cliente in Office 365
@@ -200,6 +202,8 @@
               href: legacy-information-for-message-encryption.md
             - name: Configurare Microsoft Azure AD Rights Management per la versione precedente della Crittografia messaggi di Office 365
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: Configurare IRM nell'interfaccia di amministrazione di SharePoint
+      href: set-up-irm-in-sp-admin-center.md
     - name: Informazioni sulla classificazione dei dati (anteprima)
       href: data-classification-overview.md
       items:
@@ -767,24 +771,24 @@
       items:
         - name: Punteggio di conformità (anteprima)
           href: compliance-score.md
-        - name: Configurare il punteggio di conformità (anteprima)
+        - name: Configurare il Punteggio di conformità (anteprima)
           href: compliance-score-setup.md
-        - name: Uso del punteggio di conformità (anteprima)
+        - name: Utilizzo del Punteggio di conformità (anteprima)
           href: working-with-compliance-score.md
-        - name: Calcolo del punteggio di conformità (anteprima)
+        - name: Calcolo del Punteggio di conformità (anteprima)
           href: compliance-score-methodology.md
-        - name: Note sulla versione del punteggio di conformità (anteprima)
+        - name: Note sulla versione del Punteggio di conformità (anteprima)
           href: compliance-score-release-notes.md
         - name: Domande frequenti sul punteggio di conformità (anteprima)
           href: compliance-score-faq.md
         - name: Compliance Manager (anteprima)
           href: compliance-manager-overview.md
           items:
-            - name: Novità di Compliance Manager (anteprima)
+            - name: Note sulla versione di Compliance Manager (anteprima)
               href: compliance-manager-release-notes.md
-            - name: Uso di Compliance Manager (anteprima)
+            - name: Utilizzo di Compliance Manager (anteprima)
               href: working-with-compliance-manager.md
-            - name: Compliance Manager (classica)
+            - name: Compliance Manager (classico)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Strumento di richiesta dell'interessato nell'ambito del GDPR
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
