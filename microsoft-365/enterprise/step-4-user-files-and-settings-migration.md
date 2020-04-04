@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su come eseguire la migrazione di file e impostazioni degli utenti.
-ms.openlocfilehash: 9332542e5b87de3e3c237f969a3842545eb03dc4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085290"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113542"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Passaggio 4: migrazione delle impostazioni e dei file utente
 
@@ -49,7 +49,7 @@ Quando arriva il momento di decidere cosa mantenere quando si passa a un nuovo P
 
 Questa opzione è disponibile a seconda dell'entità della migrazione che si intende eseguire. Ovviamente, è limitata a tempistiche e logistiche richieste per lavorare direttamente con gli utenti, per capire le loro esigenze e copiare i file nei nuovi PC o in quelli aggiornati.
 
-Se si opta per una migrazione manuale, potrebbe essere necessario valutare se si sarà in grado di terminare l'operazione entro gennaio 2020, quando terminerà il supporto di Windows 7. Se non si è sicuri di questo, è consigliabile valutare una delle opzioni automatiche seguenti o chiedere il supporto di altre persone.
+Se si sceglie di eseguire una migrazione manuale, usare una delle opzioni seguenti per automatizzare la migrazione oppure richiedere l'assistenza di altre persone.
 
 ## <a name="automated-migration-using-usmt"></a>Migrazione automatica tramite USMT 
 
@@ -89,8 +89,8 @@ Windows 10 include molte app integrate utili nell'installazione standard, ma gli
 
 ## <a name="next-step"></a>Passaggio successivo
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[Passaggio 5: considerazioni sulla sicurezza e conformità](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[Passaggio 5: considerazioni sulla sicurezza e conformità](https://aka.ms/mdd5)
 
 ## <a name="previous-step"></a>Passaggio precedente
 
-## <a name="step-3-office-and-lob-app-deliveryhttpsakamsmdd3"></a>[Passaggio 3: distribuzione di Office e app line-of-business](https://aka.ms/mdd3)
+## <a name="step-3-office-and-lob-app-delivery"></a>[Passaggio 3: distribuzione di Office e app line-of-business](https://aka.ms/mdd3)

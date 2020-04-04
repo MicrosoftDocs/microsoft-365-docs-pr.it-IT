@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Aggiornamenti automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
-ms.openlocfilehash: 727f165dc941eeb429e865fc8321499af6f23512
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
+ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085625"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43113482"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Aggiornamenti sul posto automatici da Windows 7 a Windows 10 per organizzazioni di grandi dimensioni
 
-A partire dal 14 gennaio 2020, gli aggiornamenti della sicurezza o il supporto per PC che eseguono Windows 7 non sarà più disponibile. A pochi mesi al passaggio da Windows 7 a Windows 10 e con diverse opzioni di distribuzione disponibili, la domanda più comune nella community IT è "Qual è il modo più rapido per passare da Windows 7 a Windows 10?" La risposta breve è quella di eseguire gli aggiornamenti sul posto per i PC esistenti, in modo da poter ridurre l'attenzione su vari aspetti del processo di distribuzione desktop.
+A partire dal 14 gennaio 2020, gli aggiornamenti della sicurezza o il supporto per PC che eseguono Windows 7 non sono più disponibili. Per il passaggio da Windows 7 a Windows 10 con diverse opzioni di distribuzione disponibili, la domanda più comune nella community IT è "Qual è il modo più rapido per passare da Windows 7 a Windows 10?" La risposta breve è quella di eseguire gli aggiornamenti sul posto per i PC esistenti, in modo da poter ridurre l'attenzione su vari aspetti del processo di distribuzione desktop.
 
 <center><img src="../media/windows-7-to-windows-10-upgrade-automated-media/windows-7-to-windows-10-upgrade-automated-media-1.png" alt="wheel" height="421" width="500" /></center>
 
@@ -38,7 +38,7 @@ Le attività disattivate nel grafico a ruota del processo di distribuzione sopra
 
 ## <a name="in-place-upgrade-reliability-safeguards-and-scale"></a>Affidabilità degli aggiornamenti sul posto, misure di sicurezza e scalabilità
 
-Gli aggiornamenti sul posto a Windows 10 rappresentano un approccio affidabile per far passare un dispositivo esistente che esegue Windows 7 o versione successiva, a Windows 10 senza dover eseguire la migrazione dei file o la reinstallazione delle applicazioni. Dopo l'aggiornamento sul posto, i file, le impostazioni e le app disponibili dell'utente sono coerenti con l'installazione precedente di Windows 7. Sebbene sia possibile decidere di sfruttare l'opportunità di pulire le app o le impostazioni esistenti, mentre ci avviciniamo alla data di fine del supporto di Windows 7 prevista per gennaio 2020, realisticamente il tempo per altre opzioni è terminato. Gli aggiornamenti funzionano anche se il passaggio avviene tra architetture simili (da 32 bit a 32 bit o da 64 bit a 64 bit) e tra versioni di Windows simili tra loro (da Professional a Pro o da Enterprise a Enterprise).
+Gli aggiornamenti sul posto a Windows 10 rappresentano un approccio affidabile per far passare un dispositivo esistente che esegue Windows 7 o versione successiva, a Windows 10 senza dover eseguire la migrazione dei file o la reinstallazione delle applicazioni. Dopo l'aggiornamento sul posto, i file, le impostazioni e le app disponibili dell'utente sono coerenti con l'installazione precedente di Windows 7. Gli aggiornamenti funzionano anche se il passaggio avviene tra architetture simili (da 32 bit a 32 bit o da 64 bit a 64 bit) e tra versioni di Windows simili tra loro (da Professional a Pro o da Enterprise a Enterprise).
 
 Per impostazione predefinita, il processo di aggiornamento esegue il backup dell'installazione precedente di Windows come parte dell'aggiornamento, in modo che, in caso di errore di aggiornamento o se dopo l'aggiornamento un dispositivo o un'applicazione non funziona correttamente, sia possibile eseguire il rollback a Windows 7. Per impostazione predefinita, i PC aggiornati hanno 10 giorni, per cui è possibile avviare manualmente un rollback a Windows 7, se necessario.
 
@@ -106,4 +106,4 @@ I risultati dei log stessi sono indicati di seguito:
 
 Una volta distribuite le sequenze pre-cache con analisi di compatibilità a un numero elevato di PC di una raccolta, è possibile iniziare ad analizzare i file di log per la preparazione del dispositivo. Utilizzando gli output elencati in precedenza, \#1 (0xC1900210) può essere elaborato come "pronto per la distribuzione" \#e 4 (0xC190020E) può essere elaborato liberando spazio su disco. Sebbene sia consigliabile prestare attenzione agli elementi da eliminare, Pulizia di Windows Update, Cestino e File temporanei sono i punti da cui iniziare e in molti casi forniranno spazio sufficiente per il successo dell'aggiornamento. È possibile eseguire l'analisi della compatibilità con la frequenza desiderata finché il PC non viene trovato pronto per l'aggiornamento sul posto. Per altre informazioni sulle opzioni della riga di comando di Installazione di Windows, vedere <https://aka.ms/setupswitches>
 
-## <a name="desktop-deployment-centerhttpsakamshowtoshift"></a>[Centro di distribuzione desktop](https://aka.ms/howtoshift)
+## <a name="desktop-deployment-center"></a>[Centro di distribuzione desktop](https://aka.ms/howtoshift)
