@@ -1,5 +1,5 @@
 - name: Home page di amministrazione
-  href: admin-home.yml
+  href: admin-home.md
   items:
     - name: Panoramica
       items:
@@ -17,7 +17,7 @@
           href: admin-overview/learn-about-office-365-germany.md
         - name: App di amministrazione per dispositivi mobili
           href: admin-overview/admin-mobile-app.md
-    - name: Installazione
+    - name: Configurazione
       items:
         - name: Pianificare la configurazione
           href: setup/plan-your-setup.md
@@ -49,7 +49,7 @@
           href: setup/customize-your-organization-theme.md
     - name: Utenti e ruoli
       items:
-        - name: Aggiungere utenti
+        - name: Aggiungi utenti
           href: add-users/add-users.md
         - name: Creare e usare un modello per aggiungere utenti
           href: add-users/create-and-use-a-template-to-add-users.md
@@ -86,7 +86,7 @@
     - name: Posta elettronica
       items:
         - name: Posta elettronica in Office 365
-          href: email/email.yml
+          href: email/email.md
         - name: Impostazioni di posta elettronica dell'utente di Office 365
           href: email/office-365-user-email-settings.md
         - name: Aggiungere un altro alias di posta elettronica per un utente
@@ -154,7 +154,7 @@
     - name: Gestione
       items:
         - name: Gestire Office 365
-          href: manage/manage.yml
+          href: manage/manage.md
         - name: Modificare le preferenze di contatto
           href: manage/change-contact-preferences.md
         - name: 'Modificare indirizzo, contatto e altro ancora'
@@ -187,8 +187,8 @@
           href: manage/remove-licenses-from-users.md
         - name: Risolvere i conflitti di licenza
           href: manage/resolve-license-conflicts.md
-        - name: Gestire i messaggi nel Centro messaggi
-          href: manage/manage-messages.md
+        - name: Mostrare o nascondere nuove funzionalità tramite la nuova gestione
+          href: manage/show-hide-new-features.md
     - name: Sottoscrizioni e fatturazione
       items:
         - name: Gestire gli abbonamenti
@@ -202,7 +202,7 @@
     - name: Domini
       items:
         - name: Domini in Office 365
-          href: get-help-with-domains/get-help-with-domains.yml
+          href: get-help-with-domains/get-help-with-domains.md
         - name: Cos'è un dominio?
           href: get-help-with-domains/what-is-a-domain.md
         - name: Acquistare un nome di dominio
