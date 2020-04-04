@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Informazioni su come annullare la versione di valutazione o di sottoscrizione a pagamento di Office 365 for business o Microsoft 365.
-ms.openlocfilehash: 47b4ae3e027a218f7d830bb6af24a39ca33a4abb
-ms.sourcegitcommit: 3d1abd7c06d316d6e6586e4bdcd5703291ac1ab0
+ms.openlocfilehash: d58ad1b18c8834740984f0ff47b7983a6797e108
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43117945"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142164"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -42,9 +42,6 @@ ms.locfileid: "43117945"
 Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento, è necessario rimuovere il dominio prima di annullare l'abbonamento. Per altre informazioni, vedere [Rimuovere un dominio da Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 

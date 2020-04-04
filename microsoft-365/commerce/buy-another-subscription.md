@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: "Informazioni su come acquistare un altro abbonamento a Office 365 for business per l'organizzazione quando si dispone già di un abbonamento. "
 ms.custom: okr_SMB
-ms.openlocfilehash: 1a322be8ee76e37259d4a2cddf9ed2d75c379576
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354647"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142264"
 ---
 # <a name="buy-another-office-365-for-business-subscription"></a>Acquistare un altro abbonamento a Office 365 per le aziende
 
@@ -41,10 +41,7 @@ Dopo l'acquisto di un nuovo abbonamento, è necessario assegnare agli utenti che
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 
 2. Nella pagina **acquisto servizi** selezionare l'abbonamento che si desidera acquistare, quindi selezionare **Acquista**.
 
@@ -60,7 +57,7 @@ Dopo l'acquisto di un nuovo abbonamento, è necessario assegnare agli utenti che
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **sottoscrizione** , selezionare **Aggiungi abbonamenti**.
 
@@ -86,7 +83,7 @@ Dopo l'acquisto di un nuovo abbonamento, è necessario assegnare agli utenti che
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **sottoscrizione** , selezionare **Aggiungi abbonamenti**.
 
@@ -109,7 +106,6 @@ Dopo l'acquisto di un nuovo abbonamento, è necessario assegnare agli utenti che
 8. Nella pagina conferma, selezionare **Vai a amministratore Home**.
 
 ::: moniker-end
-
 
 ## <a name="related-articles"></a>Articoli correlati
 

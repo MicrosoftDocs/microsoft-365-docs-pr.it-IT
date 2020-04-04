@@ -21,17 +21,14 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modificare manualmente le sottoscrizioni acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
-ms.openlocfilehash: 0042e0fd2fa5ac10be512246c252bc1d0f679709
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241891"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142152"
 ---
 # <a name="change-plans-manually"></a>Modificare i piani manualmente
-
-> [!NOTE]
-> Questo articolo si applica alla nuova interfaccia di amministrazione. Il nuovo interfaccia di amministrazione è disponibile per tutti gli amministratori di Microsoft 365 ed è possibile optare selezionando **prova il nuovo** Toggle dell'interfaccia di amministrazione che si trova nella parte superiore della Home page. Per altre informazioni, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md). Per visualizzare l'articolo relativo all'interfaccia di amministrazione precedente, vedere [switch Office 365 for business plans manually](switch-plans-manually.md).
 
 ## <a name="step-1-decide-how-to-change-plans"></a>Passaggio 1: decidere come modificare i piani
 
@@ -117,4 +114,5 @@ Se tutti gli utenti sono stati spostati su un altro abbonamento e l'abbonamento 
 Se sono stati spostati solo alcuni utenti, [rimuovere le licenze](../licenses/remove-licenses-from-subscription.md) non più necessarie.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Supporto per la chiamata per la modifica di piani
+
 [Chiamare il supporto tecnico Microsoft](../../admin/contact-support-for-business-products.md)

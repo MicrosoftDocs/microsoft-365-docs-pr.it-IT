@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Acquistare un abbonamento a Office 365 for business. È possibile acquistare lo stesso tipo di sottoscrizione provato o un altro piano.
-ms.openlocfilehash: faac769a89824964315c84da507adcf18d8cfeac
-ms.sourcegitcommit: 26e4d5091583765257b7533b5156daa373cd19fe
+ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42549803"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142288"
 ---
 # <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>Acquistare un abbonamento a Office 365 per le aziende dalla versione di valutazione gratuita
 
@@ -66,7 +66,7 @@ Dopo aver provato Office 365, si è pronti per l'acquisto. Sono disponibili due 
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **Abbonamenti** selezionare il pulsante **Acquista ora** per l'abbonamento di valutazione che si vuole acquistare.
 
@@ -80,7 +80,7 @@ Dopo aver provato Office 365, si è pronti per l'acquisto. Sono disponibili due 
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **Abbonamenti** selezionare il pulsante **Acquista ora** per l'abbonamento di valutazione che si vuole acquistare.
 
@@ -94,14 +94,11 @@ Dopo aver provato Office 365, si è pronti per l'acquisto. Sono disponibili due 
 
 ## <a name="buy-a-different-plan-than-your-trial"></a>Acquistare un piano diverso rispetto alla versione di valutazione
 
-Se si acquista un altro tipo di sottoscrizione rispetto alla versione di valutazione, sarà necessario riassegnare le licenze utente dal piano di prova al nuovo piano (prima che il periodo di prova di 90 giorni termina dopo la scadenza del piano di valutazione) per conservare i dati, gli account e la configurazione.
+Se si acquista un altro tipo di sottoscrizione rispetto alla versione di valutazione, sarà necessario riassegnare le licenze utente dal piano di valutazione al nuovo piano (prima che il periodo di prova di 90 giorni termina dopo la scadenza del piano di valutazione) per conservare i dati, gli account e la configurazione.
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 
 2. Nella pagina **acquisto servizi** selezionare l'abbonamento che si desidera acquistare, quindi selezionare **Acquista**.
 
@@ -117,7 +114,7 @@ Se si acquista un altro tipo di sottoscrizione rispetto alla versione di valutaz
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **sottoscrizione** , selezionare **Aggiungi abbonamenti**.
 
@@ -139,8 +136,7 @@ Se si acquista un altro tipo di sottoscrizione rispetto alla versione di valutaz
 
 ::: moniker range="o365-21vianet"
 
-
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **sottoscrizione** , selezionare **Aggiungi abbonamenti**.
 
@@ -159,7 +155,6 @@ Se si acquista un altro tipo di sottoscrizione rispetto alla versione di valutaz
 8. Nella pagina conferma, selezionare **Vai a amministratore Home**.
 
 ::: moniker-end
-
 
 ## <a name="related-articles"></a>Articoli correlati
 

@@ -22,30 +22,22 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Informazioni su come acquistare un componente aggiuntivo per aggiungere ulteriori funzionalità all'abbonamento a Office 365 for business. È inoltre possibile aggiornare e rimuovere un componente aggiuntivo.
 ms.custom: okr_SMB
-ms.openlocfilehash: 78113fcfdfce03ae09318e062847cedd1938760a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3bd7648d2db9af262df6540c8133871d3736790e
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354807"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142276"
 ---
 # <a name="buy-or-edit-an-add-on-for-office-365-for-business"></a>Acquistare o modificare un componente aggiuntivo per Office 365 per le aziende
 
 Per diversi piani di Office 365 per le aziende sono disponibili componenti aggiuntivi che è possibile acquistare per l'abbonamento. I componenti aggiuntivi offrono altre funzionalità nell'abbonamento per cui vengono acquistati.
 
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
-::: moniker-end 
-
 ## <a name="buy-an-add-on"></a>Acquistare un componente aggiuntivo
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 
 2. Nella parte inferiore della pagina **acquisto servizi** selezionare **componenti**aggiuntivi.
 
@@ -63,7 +55,7 @@ Per diversi piani di Office 365 per le aziende sono disponibili componenti aggiu
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento per cui si desidera acquistare un componente aggiuntivo.
 
@@ -85,7 +77,7 @@ Per diversi piani di Office 365 per le aziende sono disponibili componenti aggiu
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento per cui si desidera acquistare un componente aggiuntivo.
 
@@ -105,14 +97,13 @@ Per diversi piani di Office 365 per le aziende sono disponibili componenti aggiu
 
 ::: moniker-end
 
-
 ## <a name="update-an-add-on"></a>Aggiornare un componente aggiuntivo
 
-I passaggi da eseguire per aggiornare un componente aggiuntivo dipendono dal fatto che il componente aggiuntivo sia un componente aggiuntivo tradizionale o un componente aggiuntivo autonomo. 
+I passaggi da eseguire per aggiornare un componente aggiuntivo dipendono dal fatto che il componente aggiuntivo sia un componente aggiuntivo tradizionale o un componente aggiuntivo autonomo.
 
 I *componenti aggiuntivi tradizionali* sono collegati a una sottoscrizione specifica. Se si annulla l'abbonamento, viene annullato anche il componente aggiuntivo associato.
   
-I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione specifica. I componenti aggiuntivi autonomi vengono visualizzati come sottoscrizione distinta nella pagina **abbonamenti** (o nella pagina **prodotti & Servizi** del nuovo interfaccia di amministrazione) e hanno la data di scadenza. È possibile gestire un componente aggiuntivo autonomo allo stesso modo in cui si gestisce qualsiasi altra sottoscrizione.
+I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione specifica. I componenti aggiuntivi autonomi vengono visualizzati come sottoscrizione distinta nella pagina **prodotti & Services** e hanno la data di scadenza. È possibile gestire un componente aggiuntivo autonomo allo stesso modo in cui si gestisce qualsiasi altra sottoscrizione.
   
 ### <a name="update-a-traditional-add-on"></a>Aggiornare un componente aggiuntivo tradizionale
 
@@ -130,10 +121,9 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 ::: moniker-end
 
-
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento per cui si desidera aggiornare un componente aggiuntivo.
 
@@ -156,7 +146,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento per cui si desidera aggiornare un componente aggiuntivo.
 
@@ -174,7 +164,6 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
     > È anche possibile usare le frecce in su e in giù per cambiare la quantità delle licenze utente oppure immettere semplicemente il numero nella casella.
   
     ![Casella del totale delle licenze e pulsante Invia nella finestra di dialogo Aggiungere o rimuovere licenze.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
-
 
 ::: moniker-end
 
@@ -192,7 +181,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento al componente aggiuntivo che si desidera aggiornare, quindi selezionare **Aggiungi/Rimuovi licenze**.
 
@@ -207,7 +196,7 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento al componente aggiuntivo che si desidera aggiornare, quindi selezionare **Aggiungi/Rimuovi licenze**.
 
@@ -220,7 +209,6 @@ I *componenti aggiuntivi autonomi* non sono collegati a una sottoscrizione speci
 
 ::: moniker-end
 
-
 ## <a name="remove-an-add-on"></a>Rimuovere un componente aggiuntivo
 
 È possibile annullare un componente aggiuntivo autonomo allo stesso modo in cui si [Annulla un abbonamento](subscriptions/cancel-your-subscription.md). In alternativa, è possibile impostare la **fatturazione ricorrente** su disattivata per un componente aggiuntivo autonomo utilizzando la procedura precedente. Tuttavia, non è possibile rimuovere un componente aggiuntivo tradizionale dopo che è stato acquistato. Se è necessario rimuovere un componente aggiuntivo tradizionale, [contattare il supporto tecnico](../admin/contact-support-for-business-products.md).
@@ -231,8 +219,6 @@ Nella tabella seguente sono elencati i componenti aggiuntivi disponibili per le 
   
 Per informazioni sui componenti aggiuntivi di Skype for Business, vedere [Licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
   
-****
-
 |**Componente aggiuntivo**|**Disponibile in questi abbonamenti**|
 |:-----|:-----|
 |Customer Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |

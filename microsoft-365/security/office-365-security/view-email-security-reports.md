@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come trovare e utilizzare i report sulla sicurezza della posta elettronica per l'organizzazione. I report sulla sicurezza della posta elettronica sono &amp; disponibili nel centro sicurezza e conformità.
-ms.openlocfilehash: fba10207fe0b7a8e02aa96f9c8513e1e5b2cd61f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b6c4e737d0bcc9f7373a669e8dcd20661733b294
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634064"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142709"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Visualizzare i report sulla sicurezza della posta &amp; elettronica nel centro sicurezza e conformità
 
@@ -31,7 +31,8 @@ Nel [Centro sicurezza &amp; e conformità](https://protection.office.com) sono d
 ![Dashboard in cui viene visualizzato il livello di protezione avanzata dalle minacce](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 I rapporti di sicurezza della posta elettronica includono quanto segue:
-- [Report utenti compromessi (**nuovo!**)](#compromised-users-report-new)
+- [Report di protezione dalle minacce URL](#url-threat-protection-report-new) (**nuovo!**)
+- [Report utenti compromessi](#compromised-users-report)
 - [Rapporto di crittografia](#encryption-report)
 - [Report dello stato di protezione dalle minacce](#threat-protection-status-report) 
 - [Rapporto rilevamenti malware](#malware-detections-report) 
@@ -43,9 +44,30 @@ I rapporti di sicurezza della posta elettronica includono quanto segue:
 - [Report dei messaggi segnalati dall'utente](#user-reported-messages-report)
 
 
-## <a name="compromised-users-report-new"></a>Report utenti compromessi (**nuovo!**) 
+## <a name="url-threat-protection-report-new"></a>Report di protezione dalle minacce URL (**nuovo!**)
 
-Questo report, disponibile per tutti gli utenti con Exchange Online Protection, Visualizza il numero di account utente contrassegnati come membri sospetti o limitati, dati particolarmente utili come account immettere uno degli Stati che indicano che l'account utente potrebbe essere problematico o addirittura compromessa. Con uso frequente, il report utente compromesso può individuare picchi e persino tendenze, in account contrassegnati in Stati sospetti o con restrizioni, in cui è possibile che si verifichi un problema con la sicurezza e il benessere del tenant.
+Il rapporto di protezione delle minacce URL è disponibile per tutti gli utenti con:
+
+- Un componente aggiuntivo di Exchange Online Protection *e* Advanced Threat Protection (piano 1 *o* piano 2) 
+- Un abbonamento A Microsoft 365 E5
+
+Si tratta di un report ' clic-Centric ' che include due visualizzazioni aggregate.
+ 
+1. La prima visualizzazione è in base all' *azione di protezione clic su URL*, che si concentra sulla visualizzazione del numero di clic URL degli utenti all'interno del tenant e sul risultato del clic. Un clic qui indica che l'utente ha fatto clic sulla pagina blocca nel sito Web dannoso (può essere disabilitato dall'amministratore all'interno di un criterio collegamenti sicuri).
+ 
+2. La seconda visualizzazione è *URL fare clic su applicazioni*, in cui viene visualizzato il numero di URL che è possibile fare clic nelle diverse applicazioni che supportano i collegamenti sicuri oggi, ad esempio in un client di posta elettronica o in Microsoft Word. I dati di entrambe le visualizzazioni aggregate vengono aggiornati una volta ogni 4 ore.
+
+La tabella dei dettagli del rapporto di protezione da minacce URL fornisce una visualizzazione quasi in tempo reale di tutti i clic che si verificano all'interno del tenant e include informazioni investigative quali *nome utente*, *URL*, *ID del messaggio di rete* (se l'URL è stato selezionato da un indirizzo di posta elettronica) e altre informazioni utili per indagini e analisi.  
+
+Per impostazione predefinita, il rapporto mostra solo i dati sui clic da URL bloccati da collegamenti sicuri, ma è anche possibile visualizzare le informazioni su tutti i clic URL selezionando la casella di controllo URL *consentiti* nei filtri.  
+
+Questo report non includerà i dati dei clic degli utenti in cui è stato applicato il criterio collegamenti sicuri ha l'opzione non *registrare i clic utente* selezionati.
+
+![Grafico del rapporto di protezione da minacce URL in azione.](../../media/tp-URLThreatProRpt1.PNG)
+
+## <a name="compromised-users-report"></a>Report utenti compromessi 
+
+Questo report, disponibile per tutti gli utenti con Exchange Online Protection, Visualizza il numero di account utente contrassegnati come membri sospetti o limitati, dati particolarmente utili come account immettere uno degli Stati che indicano che l'account utente potrebbe essere problematico o addirittura compromesso. Con uso frequente, il report utente compromesso può individuare picchi e persino tendenze, in account contrassegnati in Stati sospetti o con restrizioni, in cui è possibile che si verifichi un problema con la sicurezza e il benessere del tenant.
 
 ![Il report utenti compromessi così come viene visualizzato in Office 365.](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
@@ -205,7 +227,7 @@ Per visualizzare questo report, nel [Centro sicurezza &amp; e conformità](https
 ![Nel centro sicurezza &amp; e conformità, scegliere messaggi segnalati dall'utente di Threat Management \> Review \>](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> Affinché il rapporto messaggi segnalati dall'utente funzioni correttamente, **è necessario che la registrazione di controllo sia attivata** per l'ambiente Office 365. Questa operazione viene in genere fatta da una persona a cui è stato assegnato il ruolo registri di controllo in Exchange Online. Per ulteriori informazioni, vedere [attivazione o disattivazione della ricerca del registro di controllo di Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
+> Affinché il rapporto messaggi segnalati dall'utente funzioni correttamente, **è necessario che la registrazione di controllo sia attivata** per l'ambiente Office 365. Questa operazione viene in genere fatta da una persona a cui è stato assegnato il ruolo registri di controllo in Exchange Online. Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo in Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quali autorizzazioni sono necessarie per visualizzare i rapporti?
 

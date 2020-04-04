@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Per ulteriori informazioni sui domini in Office 365, trovare le risposte alle domande più frequenti.
 ms.custom: okr_smb
-ms.openlocfilehash: f3c72f1ce772e3021d79aa4568dbfdb700400803
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3e1d5dce6de41e28ad4c04104cf0212c2b657615
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633184"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142504"
 ---
 # <a name="domains-faq"></a>Domande frequenti sui domini
 
@@ -230,7 +230,7 @@ Per scegliere un dominio predefinito, è necessario che sia stato aggiunto almen
     
 2. Nella pagina **Domains** selezionare il dominio che si desidera impostare come predefinito per i nuovi indirizzi di posta elettronica. 
     
-3. Selezionare **Imposta come predefinita**.
+3. Selezionare **Imposta come predefinito**.
     
 ::: moniker range="o365-worldwide"
 
@@ -285,9 +285,9 @@ Quando si aggiungono più domini a Office 365 è possibile ospitare uno qualsias
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Perché è presente un dominio "onmicrosoft.com"?
 
-Office 365 crea un dominio per l'utente, come *contoso.onmicrosoft.com*, quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, ad esempio *Alan@contoso.onmicrosoft.com*. 
+Office 365 crea un dominio per l'utente, come _contoso.onmicrosoft.com_, quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, come _alan\@contoso.onmicrosoft.com_. 
   
- **Se si desidera che la posta elettronica sia simile *a\@Alan contoso.com*:** [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Office 365](add-domain.md) , se lo si possiede già. 
+ __Se si desidera che la posta elettronica sia simile _a\@Alan contoso.com_:__ [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Office 365](add-domain.md) , se lo si possiede già. 
   
 - **Dopo l'iscrizione, non è possibile rinominare il dominio onmicrosoft**. Se ad esempio il dominio iniziale scelto è fourthcoffee.onmicrosoft.com, non lo si può cambiare in fabrikam.onmicrosoft.com. Per usare un dominio onmicrosoft.com diverso, si dovrà iniziare un nuovo abbonamento a Office 365. 
     
@@ -300,11 +300,12 @@ Si può continuare a usare il dominio iniziale onmicrosoft.com anche dopo l'aggi
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Perché è presente un dominio "onmicrosoft.de"?
 
-Office 365 crea un dominio per l'utente, come *contoso.onmicrosoft.de*, quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, ad esempio *Alan@contoso.onmicrosoft.de*. 
+Office 365 crea un dominio per l'utente, come *contoso.onmicrosoft.de*, quando si esegue l'iscrizione al servizio. L'ID utente creato al momento dell'iscrizione include il dominio, ad esempio "alan@contoso.onmicrosoft.de". 
   
- **Se si desidera che la posta elettronica sia simile a *Alan@contoso.de*:** [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Office 365](add-domain.md) , se lo si possiede già. 
+Se si desidera che la posta elettronica sia simile a "alan@contoso.de": [acquistare il dominio](../get-help-with-domains/buy-a-domain-name.md) oppure seguire la procedura descritta in [aggiungere gli utenti e il dominio a Office 365](add-domain.md) , se lo si possiede già 
   
 - **Dopo l'iscrizione, non è possibile rinominare il dominio onmicrosoft**. Ad esempio, se il dominio iniziale scelto era fourthcoffee.onmicrosoft.de, non è possibile modificarlo in modo che sia fabrikam.onmicrosoft.de. Per utilizzare un dominio onmicrosoft.de diverso, è necessario avviare un nuovo abbonamento con Office 365. 
     
@@ -444,7 +445,7 @@ Vuoi saperne di più su come diventare l'amministratore per la tua scuola? Infor
         
     4. Provare la posta elettronica a un utente che si trova nell'altro sistema di posta elettronica. Ad esempio, inviare un messaggio di posta elettronica all'utente C. Questo messaggio di posta elettronica deve essere recapitato alla cassetta postale dell'utente C sul server di posta originale.
         
-    5. Da un account esterno o da un account di posta elettronica di un dipendente nell'altro sistema di posta elettronica, verificare che l'inoltro sia configurato correttamente nell'altro sistema di posta elettronica. Ad esempio, dall'account del server origninal dell'utente o da un account Hotmail, inviare un messaggio di posta elettronica A un utente e verificare che arrivi nella cassetta postale dell'utente A Office 365.
+    5. Da un account esterno o da un account di posta elettronica di un dipendente nell'altro sistema di posta elettronica, verificare che l'inoltro sia configurato correttamente nell'altro sistema di posta elettronica. Ad esempio, dall'account del server originale o da un account Hotmail dell'utente C, inviare un messaggio di posta elettronica A un utente e verificare che arrivi nella cassetta postale di Office 365 dell'utente.
         
 9. Spostamento del contenuto della cassetta postale
     

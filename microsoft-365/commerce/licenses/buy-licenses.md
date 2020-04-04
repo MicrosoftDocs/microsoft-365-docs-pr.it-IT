@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Informazioni su come aggiungere e rimuovere licenze per l'abbonamento a Office 365 for business.
-ms.openlocfilehash: 2f9c6b58a478b18fa1844c33689a8a4974a5917a
-ms.sourcegitcommit: 0d7d18b045c9a14c943bc382b16715e67c86259a
+ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42410043"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142176"
 ---
 # <a name="manage-subscription-licenses"></a>Gestire le licenze di sottoscrizione
 
@@ -39,9 +39,6 @@ ms.locfileid: "42410043"
 Non è possibile rimuovere una licenza da un abbonamento se è assegnata a un utente. Se si desidera rimuovere una licenza che è attualmente assegnata a un utente, è necessario [rimuovere le licenze dagli utenti](../../admin/manage/remove-licenses-from-users.md) prima di poter rimuovere la licenza dall'abbonamento.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Cosa è necessario sapere sull'acquisto di licenze per l'abbonamento aziendale
 
@@ -59,7 +56,7 @@ Dopo aver acquistato nuove licenze, assicurarsi di [assegnare le licenze agli ut
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento a cui si desidera aggiungere o rimuovere le licenze, quindi selezionare **Aggiungi/Rimuovi licenze**.
 
@@ -73,7 +70,7 @@ Dopo aver acquistato nuove licenze, assicurarsi di [assegnare le licenze agli ut
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare l'abbonamento a cui si desidera aggiungere o rimuovere le licenze, quindi selezionare **Aggiungi/Rimuovi licenze**.
 
@@ -87,7 +84,7 @@ Dopo aver acquistato nuove licenze, assicurarsi di [assegnare le licenze agli ut
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>Cosa fare se il collegamento Aggiungi/rimuovi licenze non è presente?
 
-In questa tabella vengono illustrati i motivi per cui il collegamento **Aggiungi/Rimuovi licenze** potrebbe non essere disponibile e cosa è possibile fare. 
+In questa tabella vengono illustrati i motivi per cui il collegamento **Aggiungi/Rimuovi licenze** potrebbe non essere disponibile e cosa è possibile fare.
 
 |Motivo  |Descrizione  |Soluzione  |
 |---------|---------|---------|

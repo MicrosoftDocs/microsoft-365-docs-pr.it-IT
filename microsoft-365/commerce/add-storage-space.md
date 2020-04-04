@@ -28,60 +28,59 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Informazioni su come aggiungere e ridurre l'archiviazione dei file nell'abbonamento a Office 365. Con un'ulteriore archiviazione dei file, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
-ms.openlocfilehash: 64e98ff830b592b12e25620e4c2e89e09a161a3e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 313ca90c729a89acf00c58e49a7e887313261e66
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354847"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142336"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Aggiungere spazio di archiviazione per l'abbonamento
 
-Se si inizia a esaurire lo spazio di archiviazione per le raccolte siti di SharePoint Online, è possibile aggiungere spazio di archiviazione all'abbonamento se il piano è idoneo. Se l' **Archivio di file aggiuntivo di Office 365** non è presente nell'elenco dei componenti aggiuntivi disponibili, significa che il piano non è idoneo. Per ulteriori informazioni, vedere [è il mio piano idoneo?](#is-my-plan-eligible-for-office-365-extra-file-storage)
+Se lo spazio di archiviazione per le raccolte di siti di SharePoint Online sta per esaurirsi, è possibile aggiungere altro spazio all'abbonamento, se il piano è idoneo. Se l' **Archivio di file aggiuntivo di Office 365** non è presente nell'elenco dei componenti aggiuntivi disponibili, significa che il piano non è idoneo. Per ulteriori informazioni, vedere [è il mio piano idoneo?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
-## <a name="view-available-storage"></a>Visualizzare lo spazio di archiviazione disponibile
+## <a name="view-available-storage"></a>Visualizzazione dello spazio di archiviazione disponibile
 
 ::: moniker range="o365-worldwide"
 
 1. Accedere a https://admin.microsoft.com come amministratore globale o di SharePoint. Se viene visualizzato un messaggio che indica che non si è autorizzati ad accedere alla pagina, non si dispone delle autorizzazioni di amministratore di Office 365 all'interno dell'organizzazione.
-    
-2. Nel riquadro sinistro, in interfaccia di **Amministrazione**, selezionare **SharePoint**. Se viene visualizzata l'interfaccia di amministrazione di SharePoint classica, selezionare **Apri ora** nella parte superiore della pagina per aprire la nuova interfaccia di amministrazione di SharePoint. 
-    
+
+2. Nel riquadro sinistro, in interfaccia di **Amministrazione**, selezionare **SharePoint**. Se viene visualizzata l'interfaccia di amministrazione di SharePoint classica, selezionare **Apri ora** nella parte superiore della pagina per aprire la nuova interfaccia di amministrazione di SharePoint.
+
 3. Nel riquadro a sinistra dell'interfaccia di amministrazione di SharePoint selezionare **Siti attivi**.
 
-4. Nell'angolo in alto a destra della pagina, vedere la quantità di spazio di archiviazione utilizzata in tutti i siti e lo spazio di archiviazione totale per l'abbonamento. Se nell'organizzazione è stata configurata la multi-Geo in Office 365, la barra Visualizza anche la quantità di spazio di archiviazione utilizzata in tutte le posizioni geografiche. 
+4. Nell'angolo in alto a destra della pagina, vedere la quantità di spazio di archiviazione utilizzata in tutti i siti e lo spazio di archiviazione totale per l'abbonamento. Se nell'organizzazione è stata configurata la multi-Geo in Office 365, la barra Visualizza anche la quantità di spazio di archiviazione utilizzata in tutte le posizioni geografiche.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Accedere https://portal.office.de come amministratore globale o di SharePoint e quindi selezionare il riquadro amministratore per aprire l'interfaccia di amministrazione. Se viene visualizzato un messaggio che non dispone dell'autorizzazione per accedere alla pagina, non si dispone delle autorizzazioni di amministratore di Office 365 nell'organizzazione.
-    
-2. Nel riquadro sinistro, in interfaccia di **Amministrazione**, selezionare **SharePoint**. Se viene visualizzata l'interfaccia di amministrazione di SharePoint classica, selezionare **Apri ora** nella parte superiore della pagina per aprire la nuova interfaccia di amministrazione di SharePoint. 
-    
+
+2. Nel riquadro sinistro, in interfaccia di **Amministrazione**, selezionare **SharePoint**. Se viene visualizzata l'interfaccia di amministrazione di SharePoint classica, selezionare **Apri ora** nella parte superiore della pagina per aprire la nuova interfaccia di amministrazione di SharePoint.
+
 3. Nel riquadro a sinistra dell'interfaccia di amministrazione di SharePoint selezionare **Siti attivi**.
 
-4. Nell'angolo in alto a destra della pagina, vedere la quantità di spazio di archiviazione utilizzata in tutti i siti e lo spazio di archiviazione totale per l'abbonamento. 
+4. Nell'angolo in alto a destra della pagina, vedere la quantità di spazio di archiviazione utilizzata in tutti i siti e lo spazio di archiviazione totale per l'abbonamento.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. Accedere https://login.partner.microsoftonline.cn/ come amministratore globale o di SharePoint e quindi selezionare il riquadro amministratore per aprire l'interfaccia di amministrazione. Se viene visualizzato un messaggio che non dispone dell'autorizzazione per accedere alla pagina, non si dispone delle autorizzazioni di amministratore di Office 365 nell'organizzazione.
-     
-2. Nel riquadro sinistro, in interfaccia di **Amministrazione**, selezionare **SharePoint**. Se viene visualizzata l'interfaccia di amministrazione di SharePoint classica, selezionare **Apri ora** nella parte superiore della pagina per aprire la nuova interfaccia di amministrazione di SharePoint. 
-    
+
+2. Nel riquadro sinistro, in interfaccia di **Amministrazione**, selezionare **SharePoint**. Se viene visualizzata l'interfaccia di amministrazione di SharePoint classica, selezionare **Apri ora** nella parte superiore della pagina per aprire la nuova interfaccia di amministrazione di SharePoint.
+
 3. Nel riquadro a sinistra dell'interfaccia di amministrazione di SharePoint selezionare **Siti attivi**.
 
 4. Nell'angolo in alto a destra della pagina, vedere la quantità di spazio di archiviazione utilizzata in tutti i siti e lo spazio di archiviazione totale per l'abbonamento.  
 
 ::: moniker-end
 
-
 ![Barra di archiviazione nella pagina siti attivi](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
 > [!NOTE]
-> Lo spazio di archiviazione utilizzato non include le modifiche apportate nelle ultime 24-48 ore. 
+> Lo spazio di archiviazione utilizzato non include le modifiche apportate nelle ultime 24-48 ore.
 
 Dopo aver identificato la quantità di spazio di archiviazione in uso, è possibile aggiungerne altro o rimuoverlo dall'abbonamento. Per sapere quanto costerà aggiungere spazio di archiviazione, seguire i passaggi descritti in questo articolo ed esaminare le informazioni sui prezzi prima di acquistare.
   
@@ -93,10 +92,7 @@ Se non è stato ancora acquistato un ulteriore spazio di archiviazione per l'abb
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
-
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
 
 2. Nella parte inferiore della pagina **acquisto servizi** selezionare **componenti**aggiuntivi.
 
@@ -114,7 +110,7 @@ Se non è stato ancora acquistato un ulteriore spazio di archiviazione per l'abb
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.  
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.  
 
 2. Nella pagina **abbonamenti** scegliere la sottoscrizione a cui si desidera aggiungere spazio di archiviazione, quindi selezionare **componenti**aggiuntivi.
 
@@ -139,7 +135,7 @@ Se non è stato ancora acquistato un ulteriore spazio di archiviazione per l'abb
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** scegliere la sottoscrizione a cui si desidera aggiungere spazio di archiviazione, quindi selezionare **componenti**aggiuntivi.
 
@@ -162,15 +158,11 @@ Se non è stato ancora acquistato un ulteriore spazio di archiviazione per l'abb
 
 ::: moniker-end
 
-
 ## <a name="increase-or-decrease-storage"></a>Aumentare o diminuire lo spazio di archiviazione
 
 Se si è già acquistato un file di archiviazione supplementare tramite il componente aggiuntivo di **archiviazione file aggiuntivo di Office 365** , è possibile utilizzare questi passaggi per aumentare o diminuire lo spazio di archiviazione aggiuntivo per l'abbonamento. È possibile ridurre lo spazio di archiviazione a un minimo di 1 gigabyte. Per rimuovere tutto lo spazio di archiviazione aggiuntivo, è necessario [contattare il supporto tecnico](../admin/contact-support-for-business-products.md).
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 
@@ -184,8 +176,7 @@ Se si è già acquistato un file di archiviazione supplementare tramite il compo
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
-
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare **componenti**aggiuntivi.
 
@@ -208,7 +199,7 @@ Se si è già acquistato un file di archiviazione supplementare tramite il compo
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Nella pagina **abbonamenti** selezionare **componenti**aggiuntivi.
 
@@ -228,8 +219,6 @@ Se si è già acquistato un file di archiviazione supplementare tramite il compo
 5. Selezionare **Chiudi**.
 
 ::: moniker-end
-
-
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>Quali piani sono idonei per Office 365 Extra File Storage?
 

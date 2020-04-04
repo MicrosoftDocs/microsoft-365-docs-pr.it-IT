@@ -24,12 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Informazioni su come interpretare gli addebiti, la fatturazione e i dati di pagamento sulla fattura di Office 365 per le aziende e su come modificare il numero dell'ordine di acquisto.
-ms.openlocfilehash: 624480cdc810d5e764cad2a8e569ca60d14dc3ea
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
+ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354687"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43142300"
 ---
 # <a name="understand-your-invoice-for-office-365-for-business"></a>Informazioni sulla fattura di Office 365 per le aziende
 
@@ -104,8 +104,6 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 
 ::: moniker range="o365-worldwide"
 
-### <a name="use-the-new-admin-center-to-change-your-purchase-order-number"></a>Utilizzare la nuova interfaccia di amministrazione per modificare il numero dell'ordine di acquisto
-
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 
 2. Se si è in visualizzazione **tabella** , selezionare **schede** per cambiare le visualizzazioni.
@@ -116,21 +114,11 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 
 5. Nella parte inferiore del riquadro **Modifica dettagli pagamento** , immettere il numero di ordine di acquisto e quindi fare clic su **Salva**.
 
-### <a name="use-the-old-admin-center-to-change-your-purchase-order-number"></a>Utilizzare l'interfaccia di amministrazione precedente per modificare il numero dell'ordine di acquisto
-
-1. Nell'interfaccia di amministrazione, andare alla pagina **** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abbonamenti</a> di fatturazione.
-
-2. Selezionare l'abbonamento che si desidera modificare e nella sezione metodo di **pagamento** selezionare **Aggiorna dettagli pagamento**.
-
-3. Nel riquadro **Update Payment Details** selezionare **No Thanks**.
-
-4. Nella parte inferiore del riquadro **Update Payment Details** , immettere il numero di ordine di acquisto, selezionare **Invia**, quindi **Chiudi**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
 2. Selezionare l'abbonamento che si desidera modificare, quindi nella sezione **metodo di pagamento** selezionare **Modifica dettagli pagamento**.
 
@@ -140,7 +128,7 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abbonamenti</a> di fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
 2. Selezionare l'abbonamento che si desidera modificare, quindi nella sezione **metodo di pagamento** selezionare **Modifica dettagli pagamento**.
 
