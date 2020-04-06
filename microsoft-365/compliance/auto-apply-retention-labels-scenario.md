@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Questo scenario di soluzione mostra come gestire il ciclo di vita dei documenti relativi a un prodotto archiviati in SharePoint Online attraverso le etichette di conservazione di Office 365. Questa operazione viene eseguita usando i metadati del documento per classificarne il contenuto, nello specifico applicando automaticamente le etichette di conservazione di Office 365 e configurando la conservazione basata su eventi.
-ms.openlocfilehash: aa73feecbfaa830b2297a5c64f653c4da4d4b325
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079467"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106038"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gestire il ciclo di vita dei documenti di SharePoint con le etichette di conservazione
+
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
 Questo articolo descrive come gestire il ciclo di vita dei documenti relativi a un prodotto archiviati in SharePoint Online attraverso le etichette di conservazione di Office 365, nello specifico tramite l'applicazione automatica e configurando la conservazione basata su eventi. La funzionalità di applicazione automatica sfrutta la classificazione dei documenti mediante l'uso dei metadati di SharePoint. Lo scenario esposto in questo articolo si basa sui documenti relativi al prodotto, ma gli stessi concetti risultano validi anche per altri scenari. Per esempio, nel settore petrolifero e del gas naturale, è possibile gestire il ciclo di vita dei documenti relativi alle risorse fisiche come le piattaforme petrolifere e le registrazioni di log geofisici oppure le licenze di produzione. Nel settore dei servizi finanziari, con questo sistema è possibile gestire i documenti relativi a conti bancari, mutui o contratti di assicurazione. Nel settore pubblico, permette gestire i documenti relativi ai permessi di costruzione o ai moduli fiscali.
 

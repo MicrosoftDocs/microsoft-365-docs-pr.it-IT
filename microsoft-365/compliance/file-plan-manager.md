@@ -16,16 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri di etichette di conservazione ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale.
-ms.openlocfilehash: 26c34d40359d00b540b30e0f6e3ddf3878e80f9a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 23aa0e242464ebd450a0930bcda4274c026c7535
+ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634424"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43105643"
 ---
 # <a name="overview-of-file-plan-manager"></a>Panoramica della gestione del piano file
 
-La funzionalità Gestione del piano di archiviazione fornisce funzionalità avanzate per la gestione di criteri di etichette di conservazione ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l'intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, fino all'eliminazione finale. 
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+
+La gestione del piano file fornisce funzionalità avanzate per la gestione di criteri di etichette di conservazione ed etichette di conservazione e consente di attraversare in modo integrato le attività con etichette ed etichetta-a-contenuto per l’intero ciclo di vita del contenuto, dalla creazione alla collaborazione, passando per la dichiarazione del record e la conservazione, all’eliminazione finale. 
 
 Per accedere a Gestione del piano di archiviazione nel Centro sicurezza e conformità, passare a **Gestione record** > **Piano di archiviazione**.
 
@@ -33,11 +35,7 @@ Per accedere a Gestione del piano di archiviazione nel Centro sicurezza e confor
 
 ## <a name="accessing-file-plan-manager"></a>Accesso alla gestione del piano file
 
-I requisiti per accedere al piano file sono due:
-
-- Un abbonamento a Office 365 Enterprise E5.
-
-- All'utente è stato assegnato uno dei ruoli seguenti nel Centro sicurezza e conformità:
+Per accedere alla gestione del piano di archiviazione, è necessario avere uno dei seguenti ruoli di amministratore:
     
     - Responsabile della conservazione
     
