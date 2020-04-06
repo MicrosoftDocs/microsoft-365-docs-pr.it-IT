@@ -10,6 +10,8 @@
           href: intro/technologies.md
         - name: Microsoft Managed Desktop e ITIL
           href: MMD-and-ITSM.md
+        - name: Conformità
+          href: intro/compliance.md
     - name: Descrizione del servizio Microsoft Managed Desktop
       href: service-description/index.md
       items:
