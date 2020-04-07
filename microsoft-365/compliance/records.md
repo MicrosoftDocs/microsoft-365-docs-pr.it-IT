@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Per implementare una strategia di gestione dei record nella tua organizzazione Microsoft o Office 365, usare etichette di conservazione che dichiarino un contenuto come record. Quindi pubblicare o applicare automaticamente l'etichetta record di conservazione.
-ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106144"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153834"
 ---
 # <a name="overview-of-records"></a>Panoramica dei record
 
@@ -107,9 +107,6 @@ Il controllo delle versioni del record è automaticamente disponibile per qualsi
 <br/><br/>
 
 ![Proprietà Stato del record nel documento taggato come record](../media/recordversioning8.png)
-
-> [!NOTE]
-> Il controllo delle versioni del record richiede una licenza di Office 365 Enterprise E5 per ogni utente che dispone delle autorizzazioni necessarie per modificare il contenuto dichiarato come record in un sito di SharePoint o un account di OneDrive. Gli utenti che hanno accesso in sola lettura non hanno bisogno di questa licenza.
 
 ### <a name="locking-and-unlocking-a-record"></a>Bloccare e sbloccare un record
 

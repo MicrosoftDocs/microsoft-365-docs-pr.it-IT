@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Ottenere un report periodico sul modo in cui gli utenti dell'organizzazione usano i servizi di Office 365. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: da62d934b295916a7f0fc952cc9cbe94b8384246
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029861"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151430"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Report sulle attività nell'interfaccia di amministrazione di Microsoft 365
 
@@ -180,6 +180,6 @@ Tuttavia, quando si seleziona un giorno specifico (vedere numero 3), fino a 28 g
   
 ## <a name="related-articles"></a>Articoli correlati
 
-[Report nel Centro sicurezza &amp; conformità](https://support.office.com/article/7acd33ce-1ec8-49fb-b625-43bac7b58c5a)
+[Report nel Centro sicurezza &amp; conformità](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
 

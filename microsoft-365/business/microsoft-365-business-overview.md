@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 business, un servizio di sottoscrizione che include Office 365 e la protezione avanzata per la propria azienda contro le minacce informatiche.
-ms.openlocfilehash: 7b939a9037edbe074a5ef9aa24451fe462016ccb
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: fccd0403131d8afe41608c4a195b53db959e7e91
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561481"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153819"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Panoramica di Microsoft 365 business
 
@@ -76,7 +76,7 @@ Microsoft 365 business aiuta a **difendersi dalle minacce** :
 
 - Abilitazione dei criteri di anti-phishing che utilizzano modelli di apprendimento automatico e rilevamento della rappresentazione per garantire la protezione da attacchi avanzati (ATP anti-phishing Intelligence). 
 
-- Impostazione di criteri avanzati che consentono di disabilitare l'accesso da posizioni non attendibili o di ignorare l'autenticazione a più fattori da luoghi attendibili, ad esempio la rete di Office (Azure AMF, compresi gli indirizzi IP attendibili e l'accesso condizionale). 
+- Impostazione di criteri avanzati che consentono di disabilitare l'accesso da posizioni non attendibili o di ignorare l'autenticazione a più fattori da luoghi attendibili, ad esempio la rete di Office (Azure multi-factor authentication compresi gli indirizzi IP attendibili e l'accesso condizionale). 
 
 - Applicazione della protezione antimalware in tutti i dispositivi Windows 10 dell'organizzazione e protezione dei file nelle cartelle del sistema chiave dalle modifiche apportate da ransomware (Windows Defender)
 

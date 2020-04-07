@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni sull'autenticazione a più fattori in Office 365 e sui passaggi da seguire per configurarlo.
-ms.openlocfilehash: 2e2cbc9d6d966a9858fafb62f08d26893c9f4353
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e3886387740fe904b9c9458f7b1abf736c3ef83f
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361177"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153569"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365
 
@@ -41,7 +41,7 @@ L'autenticazione a più fattori (MFA) è un metodo di autenticazione che richied
     
 ## <a name="multi-factor-authentication-in-office-365"></a>Autenticazione a più fattori in Office 365
 
-Office 365 utilizza l'autenticazione a più fattori per fornire la sicurezza aggiuntiva ed è gestita dall'interfaccia di amministrazione di Microsoft 365. Office 365 offre il subset seguente di funzionalità dell'autenticazione a più fattori di Azure incluso nell'abbonamento: 
+Office 365 utilizza l'autenticazione a più fattori per fornire la sicurezza aggiuntiva ed è gestita dall'interfaccia di amministrazione di Microsoft 365. Office 365 offre il seguente sottoinsieme di funzionalità di autenticazione a più fattori di Azure come parte della sottoscrizione: 
   
 - La possibilità di abilitare e applicare l'autenticazione a più fattori per gli utenti finali
     
@@ -61,8 +61,8 @@ Il subset di funzionalità varia a seconda che si abbia una distribuzione solo c
   
 |**Da dove si gestisce il tenant di Office 365?**|**Opzioni per il secondo fattore dell'autenticazione a più fattori**|
 |:-----|:-----|
-|Solo cloud  <br/> |Azure Active Directory MFA (SMS o telefonata)  <br/> |
-|Configurazione ibrida, gestita in locale  <br/> | Se l'identità utente viene gestita in locale, sono disponibili le opzioni seguenti:  <br/>  Smart card fisica o virtuale (ADFS)  <br/> [Azure MFA](https://go.microsoft.com/fwlink/p/?LinkId=526677) (modulo per ADFS)  <br/>  Azure AD MFA  <br/> |
+|Solo cloud  <br/> |Autenticazione a più fattori di Azure (testo o telefonata)  <br/> |
+|Configurazione ibrida, gestita in locale  <br/> | Se l'identità utente viene gestita in locale, sono disponibili le opzioni seguenti:  <br/>  Smart Card fisica o virtuale (quando si utilizza ADFS)  <br/> [Autenticazione](https://go.microsoft.com/fwlink/p/?LinkId=526677) a più fattori di Azure (modulo per ADFS)  <br/>  Autenticazione a più fattori di Azure Active Directory (Azure AD)  <br/> |
    
   
 La figura seguente mostra in che modo le app aggiornate per i dispositivi di Office 2013 (in Windows) consentono agli utenti di accedere con l'autenticazione a più fattori. Le app per i dispositivi di Office 2013 supportano l'autenticazione a più fattori grazie all'uso di [Active Directory Authentication Library (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD ospita una pagina Web per l'accesso degli utenti. Il provider di identità può essere Azure AD o un provider di identità federate come ADFS. L'autenticazione per gli utenti federati prevede i passaggi seguenti:
@@ -127,7 +127,7 @@ Per abilitare l'autenticazione a più fattori, è necessario completare le opera
     
   - [Abilitare l'autenticazione moderna per Office 2013 nei dispositivi Windows](enable-modern-authentication.md) . 
     
-  - Configurare Azure MFA con i servizi directory di terze parti.
+  - Configurare l'autenticazione a più fattori di Azure con servizi directory di terze parti.
     
     Per informazioni su specifici provider di identità accettati per questo programma, vedere [scenari avanzati con autenticazione a più fattori di Azure e soluzioni VPN di terze parti](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) . 
     
@@ -136,7 +136,7 @@ Per abilitare l'autenticazione a più fattori, è necessario completare le opera
 3. Spiegare ai singoli utenti come effettuare l'accesso con l'autenticazione a più fattori: [Accedere a Office 365 con la verifica in due passaggi](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx).
     
 > [!IMPORTANT]
-> Se gli utenti sono abilitati per Azure Active Directory MFA e hanno dispositivi che eseguono Office 2013 non abilitati per l'autenticazione moderna, dovranno usare le password per app (AppPassword) in tali dispositivi. Per altre informazioni sulle password per app (AppPassword) e su quando, dove e come usarle, vedere: [Password per app con Azure Multi_Factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=528178). 
+> Se gli utenti sono stati abilitati per l'autenticazione a più fattori di Azure e dispongono di tutti i dispositivi che eseguono Office 2013 che non sono abilitati per l'autenticazione moderna, dovranno utilizzare AppPasswords su tali dispositivi. Per altre informazioni sulle password per app (AppPassword) e su quando, dove e come usarle, vedere: [Password per app con Azure Multi_Factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=528178). 
   
 ## <a name="faq"></a>Domande frequenti
 
@@ -148,7 +148,7 @@ Per abilitare l'autenticazione a più fattori, è necessario completare le opera
   
  **Risoluzione dei problemi di Azure Multi-Factor Authentication:**
   
-Vedere [Risoluzione dei problemi di Azure MFA](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues).
+Vedere [risolvere i problemi di autenticazione a più fattori di Azure](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues).
   
 [Come risolvere i problemi di accesso con l'autenticazione moderna di Office 2013 quando si usa ADFS](https://support.microsoft.com/kb/3052203/)
   

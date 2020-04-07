@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come spostare la propria azienda in Microsoft 365 business da Office 365 E3.
-ms.openlocfilehash: b86a163792aa71f0bca115ab918e0800acc0427d
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: cff6166529df2e56ba948a9bd3ea4594fb295b08
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409681"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153533"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Migrazione da Office 365 E3 a Microsoft 365 business 
 
@@ -52,7 +52,7 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 business e 
 | **Protezione dalle minacce**        | | | 
 | Piano 1 di Office 365 Advanced Threat Protection (ATP) | ![Incluso in Microsoft 365 business](../media/check-mark.png)    | Non incluso, ma può essere aggiunto | 
 | **Gestione delle identità**        | | | 
-| Reimpostazione della password in modalità self-service per gli account di Azure Active Directory (Azure AD), l'autenticazione a più fattori di Azure (AMF), l'accesso condizionale, il writeback delle password per le identità locali|     ![Incluso in Microsoft 365 business](../media/check-mark.png)    |  | 
+| Reimpostazione della password in modalità self-service per gli account di Azure Active Directory (Azure AD), l'autenticazione a più fattori di Azure, l'accesso condizionale, il writeback delle password per le identità locali|     ![Incluso in Microsoft 365 business](../media/check-mark.png)    |  | 
 | **Gestione di dispositivi e app**        | | |
 | Microsoft Intune, Windows Autopilot|     ![Incluso in Microsoft 365 business](../media/check-mark.png)    |  |
 | Attivazione di computer condivisi|     ![Incluso in Microsoft 365 business](../media/check-mark.png)    | ![Incluso con Office 365 E3](../media/check-mark.png)| 

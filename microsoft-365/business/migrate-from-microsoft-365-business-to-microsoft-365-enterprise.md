@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Informazioni su come spostare la propria azienda da Microsoft 365 business a Microsoft 365 E3.
-ms.openlocfilehash: 9e9cfcf2212faa69f600267e4f9bfd2391e3f4e5
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 0d636c0572850a53612bf756508c4b57f1b3e4eb
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409671"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153521"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Eseguire la migrazione da Microsoft 365 Business a Microsoft 365 E3
 
@@ -61,10 +61,10 @@ In questa tabella vengono illustrate le differenze tra Microsoft 365 business e 
 | Funzionalità di riduzione della superficie di attacco    | [Vedere questo elenco](#threat-protection) | Gestione aziendale dell'isolamento basato sull'hardware per Microsoft Edge | 
 | Piano 1 di Office 365 Advanced Threat Protection (ATP) | ![Incluso in Microsoft 365 business](../media/check-mark.png)    | Non incluso, ma può essere aggiunto | 
 | **Gestione delle identità**        | | | 
-| Reimpostazione della password in modalità self-service per gli account di Azure Active Directory (Azure AD), l'autenticazione a più fattori di Azure (AMF), l'accesso condizionale, il writeback delle password per le identità locali|     ![Incluso in Microsoft 365 business](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
+| Reimpostazione della password in modalità self-service per gli account di Azure Active Directory (Azure AD), l'autenticazione a più fattori di Azure, l'accesso condizionale, il writeback delle password per le identità locali|     ![Incluso in Microsoft 365 business](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 | Individuazione delle app Cloud, Azure AD Connect Health    |     | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Office 365 Apps Single Sign-on (SSO): 10 app per utente (app SaaS Galleria come Salesforce) * | ![Incluso in Microsoft 365 business](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
-| Azure AD Premium 1 SSO: No Limit (app locali attraverso il proxy di applicazione Azure AD e le app non di raccolta usando i modelli di integrazione delle app in modalità self-service)    |     | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Premium P1 SSO: No Limit (app locali attraverso il proxy di applicazione Azure AD e le app non di raccolta usando i modelli di integrazione delle app in modalità self-service)    |     | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 | **Gestione di dispositivi e app**        | | | 
 | Microsoft Intune, Windows Autopilot|     ![Incluso in Microsoft 365 business](../media/check-mark.png)    | ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 
 |Accesso desktop virtuale (VDA)    |  |     ![Incluso in Microsoft 365 E3](../media/check-mark.png) | 

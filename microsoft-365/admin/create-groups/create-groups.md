@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Informazioni su come creare ed eliminare i gruppi di Office 365, aggiungere e rimuovere membri del gruppo e personalizzare la modalità di funzionamento del gruppo.
-ms.openlocfilehash: 59a7cec5fb6822ecb622bf4abe4cebd859b6f206
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 8b9580fd37581de96d3dc35170a1a61640cc697d
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894612"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153545"
 ---
 # <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>Creare un gruppo di Office 365 nell'interfaccia di amministrazione di Microsoft 365
   
-Anche se gli utenti possono creare un gruppo di Office 365 da Outlook o da altre app, come amministratore, potrebbe essere necessario creare o eliminare gruppi, aggiungere o rimuovere membri e personalizzare il funzionamento. L'interfaccia di amministrazione di Microsoft 365 è il luogo in cui eseguire questa operazione. 
+Anche se gli utenti possono creare un gruppo di Office 365 da Outlook o da altre app, come amministratore, potrebbe essere necessario creare o eliminare gruppi, aggiungere o rimuovere membri e personalizzare il funzionamento. È possibile eseguire questa operazione nell'interfaccia di amministrazione di Microsoft 365 se si è un amministratore globale o un amministratore di gruppi. 
 
 > [!TIP]
 > I gruppi di Yammer connessi a Office 365 devono essere creati in Yammer, ma possono essere gestiti nell'interfaccia di amministrazione di Microsoft 365 come gli altri gruppi di Office 365. Per ulteriori informazioni, vedere [Yammer e i gruppi di Office 365](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
@@ -41,11 +41,11 @@ Anche se gli utenti possono creare un gruppo di Office 365 da Outlook o da altre
   
 3. Nella pagina **scegliere il tipo di gruppo** , selezionare **Office 365**e quindi fare clic su **Avanti**.
 
-4. Nella pagina **nozioni di base** Digitare un nome per il gruppo e, facoltativamente, una descrizione. Selezionare **Avanti**.
+4. Nella pagina **nozioni di base** Digitare un nome per il gruppo e, facoltativamente, una descrizione. Scegliere **Avanti**.
     
 5. Nella pagina **Modifica impostazioni** Digitare un indirizzo di posta elettronica univoco per il gruppo, scegliere un'opzione per la privacy e se si desidera aggiungere Microsoft teams e quindi fare clic su**Avanti**.
     
-6. Nei **proprietari** scegliere il nome di una o più persone che verranno designate per la gestione del gruppo. Chiunque sia proprietario di un gruppo potrà eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Gli altri membri non potranno eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Selezionare **Avanti**.
+6. Nei **proprietari** scegliere il nome di una o più persone che verranno designate per la gestione del gruppo. Chiunque sia proprietario di un gruppo potrà eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Gli altri membri non potranno eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Scegliere **Avanti**.
     
 7. Dopo aver esaminato le impostazioni e aver apportato le modifiche, selezionare **Crea gruppo**.
 
@@ -115,7 +115,7 @@ Quando un messaggio di posta elettronica viene eliminato dalla cassetta postale 
 
 ## <a name="next-step-manage-your-group"></a>Passaggio successivo: gestire il gruppo
 
-Dopo aver creato un nuovo gruppo e aver aggiunto i membri, è possibile configurare ulteriormente il gruppo, ad esempio modificando il nome o la descrizione del gruppo, modificando i proprietari o i membri e specificando se i mittenti esterni possono inviare messaggi di posta elettronica al gruppo e se inviano copie del gruppo conversazioni ai membri. Per informazioni, vedere [gestire un gruppo di Office 365](manage-groups.md) .
+Dopo aver creato un nuovo gruppo e aver aggiunto i membri, è possibile configurare ulteriormente il gruppo, ad esempio modificando il nome o la descrizione del gruppo, modificando i proprietari o i membri e specificando se i mittenti esterni possono inviare messaggi di posta elettronica al gruppo e se inviano copie delle conversazioni di gruppo ai membri. Per informazioni, vedere [gestire un gruppo di Office 365](manage-groups.md) .
 
 ## <a name="related-articles"></a>Articoli correlati
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Informazioni su come assegnare a un utente il diritto di accedere alla cassetta postale di un altro utente. In questo modo l'utente potrà leggere i messaggi di posta elettronica e inviare messaggi dalla cassetta postale dell'altro utente. "
-ms.openlocfilehash: 8c3572cf543545de4a2825012f6c2e8e906cd8dd
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 695068d2002b20637b6df6a2514b74828f273965
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42241615"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151348"
 ---
 # <a name="give-mailbox-permissions-to-another-user-in-office-365---admin-help"></a>Assegnare le autorizzazioni per la cassetta postale a un altro utente in Office 365 - Guida per l'amministratore
 
@@ -51,9 +51,9 @@ Il primo passaggio del processo di configurazione delle autorizzazioni consiste 
   
 - [Leggere messaggi di posta elettronica dalla cassetta postale di un altro utente](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
     
-- [Inviare messaggi di posta elettronica dalla cassetta postale di un altro utente](https://support.office.com/article/Send-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E?#bkmk_sendemailanotheruser)
+- [Inviare messaggi di posta elettronica dalla cassetta postale di un altro utente](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
     
-- [Inviare messaggi di posta elettronica per conto di un utente](https://support.office.com/article/Send-email-on-behalf-of-another-user-in-Office-365-C5E7749D-244E-477F-998E-55D3876C22EC?#bkmk_sendbehalflanotheruser)
+- [Inviare messaggi di posta elettronica per conto di un utente](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
     
  **Propagazione delle modifiche:**
   

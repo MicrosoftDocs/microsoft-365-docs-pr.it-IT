@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: Informazioni su come ottenere un report attività di Microsoft Forms utilizzando il Dashboard Microsoft 365 Reports nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: c836644f88fe635bfe608f57e015f06e9f815862
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 28520bf931df9f909a933be19800ee45fd863cd6
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046940"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151418"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 segnalazioni nell'interfaccia di amministrazione-moduli
 
@@ -41,9 +41,9 @@ Ad esempio, è possibile comprendere l'attività di ogni utente concesso in lice
     
 2. Nell'elenco **a discesa selezionare un report** selezionare **attività** **moduli** \> .
 
-## <a name="interpret-the-email-activity-report"></a>Interpretare il report attività di posta elettronica
+## <a name="interpret-the-forms-activity-report"></a>Interpretare il report attività moduli
 
-Per visualizzare l'attività di posta elettronica dell'utente, è possibile esaminare i grafici **Attività** e **Utenti**. 
+È possibile ottenere una visualizzazione nell'attività dei moduli dell'utente esaminando i grafici **attività** e **utenti** . 
 
 ![Report attività moduli](../../media/adminformsactivity.png)
 

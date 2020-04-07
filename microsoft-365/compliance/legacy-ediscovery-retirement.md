@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: I eDiscovery sul posto e il blocco sul posto (e i cmdlet di PowerShell corrispondenti) in Exchange Online verranno ritirati nella prima metà del 2020. Il cmdlet Search-Mailbox e Office 365 Advanced eDiscovery v 1.0 vengono anche ritirati entro lo stesso periodo di tempo.
-ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
-ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
+ms.openlocfilehash: 2d1f319986d761135e2c22b1d5882797f90f910c
+ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43024356"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43158437"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Pensionamento degli strumenti di eDiscovery legacy
 
@@ -53,10 +53,8 @@ Come risultato di questa nuova e migliorata funzionalità di eDiscovery nel cent
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
-   
 
-
-- [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), che è la prima versione di Advanced eDiscovery a cui si accede tramite un caso eDiscovery nel centro sicurezza & conformità di Office 365.
+- [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), che è la prima versione di Advanced eDiscovery a cui si accede tramite un case di eDiscovery core nel centro sicurezza & conformità di Office 365. La Pensione avanzata di eDiscovery v 1.0 non influisce sulla capacità di creare e gestire i casi di eDiscovery di base.
 
 > [!NOTE]
 > Le funzionalità di eDiscovery che vengono ritirate si applicano solo alle versioni basate su cloud di Microsoft 365 e Office 365. la funzionalità eDiscovery nelle versioni locali di Exchange e SharePoint continuerà a essere supportata fino a nuovo avviso.
@@ -141,7 +139,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
 <tr class=even>
   <td>Copiare i messaggi da una cassetta postale a una cassetta postale diversa</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Assegnare le autorizzazioni a una cassetta postale</a></td>
-  <td>Per concedere l'accesso alla posta elettronica di un altro utente (ad esempio, quando un dipendente lascia l'organizzazione ed è necessario consentire a un'altra persona di accedere alla posta elettronica dell'ex dipendente), si consiglia di assegnare le autorizzazioni per l'accesso all'ex dipendente. cassetta postale. Pertanto, invece di copiare gli elementi delle cassette postali in un'altra cassetta postale utente o in una cassetta postale condivisa, è sufficiente assegnare un utente per accedere alla cassetta postale di origine.</td>
+  <td>Per concedere l'accesso alla posta elettronica di un altro utente (ad esempio, quando un dipendente lascia l'organizzazione ed è necessario consentire a un'altra persona di accedere alla posta elettronica dell'ex dipendente), si consiglia di assegnare le autorizzazioni per l'accesso alla cassetta postale dell'ex dipendente. Pertanto, invece di copiare gli elementi delle cassette postali in un'altra cassetta postale utente o in una cassetta postale condivisa, è sufficiente assegnare un utente per accedere alla cassetta postale di origine.</td>
   
   </tr>
 <tr class="odd">
@@ -182,7 +180,7 @@ Poiché queste funzionalità sono ora disponibili nel [<span class="underline">c
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Tempistica
+### <a name="timeline"></a>Sequenza temporale
 
 - 1 luglio 2020: non è possibile utilizzare **New-MailboxSearch** per creare nuove ricerche eDiscovery sul posto e archiviazioni sul posto, ma è comunque possibile utilizzare i cmdlet per l'esecuzione, la modifica e l'eliminazione di ricerche esistenti e conserva a proprio rischio. Il supporto tecnico Microsoft non fornirà più assistenza per questi tipi di ricerche e esenzioni.
 
@@ -228,7 +226,7 @@ Nella tabella seguente vengono descritti gli altri strumenti che è possibile ut
   <tr class=even>
   <td>Copiare i messaggi da una cassetta postale a una cassetta postale diversa</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Assegnare le autorizzazioni a una cassetta postale</a></td>
-  <td>Per concedere l'accesso alla posta elettronica di un altro utente (ad esempio, quando un dipendente lascia l'organizzazione ed è necessario consentire a un'altra persona di accedere alla posta elettronica dell'ex dipendente), si consiglia di assegnare le autorizzazioni per l'accesso all'ex dipendente. cassetta postale. Pertanto, invece di copiare gli elementi delle cassette postali in un'altra cassetta postale utente o in una cassetta postale condivisa, è sufficiente assegnare un utente per accedere alla cassetta postale di origine.</td>
+  <td>Per concedere l'accesso alla posta elettronica di un altro utente (ad esempio, quando un dipendente lascia l'organizzazione ed è necessario consentire a un'altra persona di accedere alla posta elettronica dell'ex dipendente), si consiglia di assegnare le autorizzazioni per l'accesso alla cassetta postale dell'ex dipendente. Pertanto, invece di copiare gli elementi delle cassette postali in un'altra cassetta postale utente o in una cassetta postale condivisa, è sufficiente assegnare un utente per accedere alla cassetta postale di origine.</td>
   
   </tr>
 
@@ -263,7 +261,7 @@ Il cmdlet **Search-Mailbox** in Exchange Online PowerShell viene ritirato come a
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Tempistica
+### <a name="timeline"></a>Sequenza temporale
 
 -  1 luglio 2020: il cmdlet **Search-Mailbox** non sarà più disponibile e il supporto tecnico Microsoft non fornirà più assistenza.
 
@@ -325,27 +323,41 @@ Queste operazioni nell'API dei servizi Web di Exchange vengono utilizzate dalla 
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Tempistica
+### <a name="timeline"></a>Sequenza temporale
 
 - 1 luglio 2020: le operazioni GetSearchableMailboxes, SearchMailboxes, SetHoldOnMailboxes e GetHoldOnMailboxes non saranno più disponibili e il supporto tecnico Microsoft non fornirà più assistenza.
 
 ## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v 1.0
 
-Advanced eDiscovery v 1.0, che è la versione di Advanced eDiscovery disponibile in un caso di eDiscovery facendo clic **su passa a Advanced eDiscovery** è in fase di ritirata. La sua funzionalità è stata sostituita dalla nuova [soluzione avanzata di eDiscovery](https://aka.ms/edisco) nel centro conformità di Microsoft 365.
+Advanced eDiscovery v 1.0, che è la versione avanzata di eDiscovery disponibile in un caso di eDiscovery Core facendo clic **su passa a eDiscovery avanzato**, è in fase di ritirata. La sua funzionalità è stata sostituita dalla nuova [soluzione avanzata di eDiscovery](https://aka.ms/edisco) nel centro conformità di Microsoft 365.
+
+Per determinare se l'organizzazione utilizza Advanced eDiscovery v 1.0:
+
+1. Accedere al [Centro sicurezza & conformità di Office 365](https://protection.office.com).
+
+2. Nel riquadro di spostamento a sinistra del Centro sicurezza & conformità fare clic su **eDiscovery > eDiscovery**e quindi aprire un caso di eDiscovery di base.
+
+3. Se viene visualizzato il pulsante **passa a Advanced eDiscovery** , fare clic su di esso per passare alla versione 1,0 di Advanced eDiscovery, che verrà ritirata. La possibilità di creare e gestire i casi in eDiscovery di base non sarà intaccata. Solo la possibilità di aggiungere e analizzare i dati del caso in Advanced eDiscovery v 1.0 (facendo clic **su passa a Advanced eDiscovery**) è in fase di ritirata.
 
 La nuova soluzione avanzata di eDiscovery in Microsoft 365 (nota anche come *Advanced eDiscovery v 2.0*) fornisce tutte le funzionalità della soluzione originale. ma ora include un approccio basato su un custode per identificare il contenuto di altri servizi Microsoft 365, raccogliere tale contenuto e quindi aggiungerlo a un set di revisione in cui i revisori possono trarre vantaggio dalle funzionalità di query di ricerca, tagging e analisi veloce per facilitare l'eliminazione dei documenti rilevanti. Advanced eDiscovery ora include un miglioramento dell'elaborazione e dei visualizzatori nativi per i tipi di file Microsoft e non Microsoft, un elenco completo di tipi di file è [qui](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) e i campi dei metadati supportati sono [qui](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Inoltre, la nuova soluzione avanzata di eDiscovery offre una potente funzionalità di gestione delle esenzioni dei depositari che consente di applicare le esenzioni ai contenuti in diversi servizi, informare gli utenti delle stive e tenere conto delle risposte dei depositari, tutto all'interno di un caso di eDiscovery avanzato.
+
+Per accedere a Advanced eDiscovery v 2.0:
+
+1. Accedere al [centro conformità Microsoft 365](https://compliance.microsoft.com).
+
+2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto**, quindi fare clic su **eDiscovery > avanzate**.
 
 A questo punto, si consiglia di iniziare a eseguire la transizione del flusso di lavoro di eDiscovery alla nuova funzionalità Advanced eDiscovery. Anche se si è ancora in grado di accedere a Advanced eDiscovery v 1.0 nei casi esistenti, il supporto tecnico Microsoft non fornirà supporto dopo il 1 ° ottobre 2020. Per ulteriori informazioni, vedere la sequenza temporale seguente.
 
 ### <a name="scope-of-affected-organizations"></a>Ambito delle organizzazioni coinvolte
-    
+
 - Organizzazioni di Office 365 e Microsoft 365 Enterprise
 
 - Organizzazioni per l'istruzione di Office 365 e Microsoft 365
 
 - Office 365 Germany
 
-### <a name="timeline"></a>Tempistica
+### <a name="timeline"></a>Sequenza temporale
 
 - 1 ° luglio 2020: non è possibile creare nuovi casi avanzati di eDiscovery v 1.0.
 
