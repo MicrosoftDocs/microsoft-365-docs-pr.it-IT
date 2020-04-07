@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Utilizzare queste guide al lab di test per configurare dimostrazioni, modelli di verifica o ambienti di sviluppo e test per Microsoft 365 per le aziende.
-ms.openlocfilehash: 4190eb4619f4732310786b5a7dde6bb590a969c1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1ea41cd3553c70b2a8bb99e08da43fd45b1aa558
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067058"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153917"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guide al lab di test di Microsoft 365 per le aziende
 
@@ -96,7 +96,7 @@ Per verificare le funzionalità e le capacità relative alla gestione delle iden
 
 - [Accesso a identità e dispositivi](identity-device-access-m365-test-environment.md)
 
-   Creare un ambiente per testare l'identità consigliata, le configurazioni dei dispositivi di accesso e i criteri di accesso condizionali.
+   Creare un ambiente per testare le configurazioni di identità e accesso dei dispositivi consigliate e i criteri di accesso condizionali.
 
 
 ## <a name="mobile-device-management"></a>Gestione dei dispositivi mobili

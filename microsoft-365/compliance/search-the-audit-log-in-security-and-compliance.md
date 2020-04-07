@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 66e75561084c3f3e8e67303e1cd359ef01c6b01a
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955685"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151441"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -588,7 +588,8 @@ La tabella seguente elenca le attività di amministrazione utenti registrate qua
 |:-----|:-----|:-----|
 |Utente aggiunto|Aggiungi utente|È stato creato un account utente di Office 365.|
 |Licenza utente modificata|Modifica della licenza utente|La licenza assegnata a un utente è stata modificata. Per visualizzare le licenze modificate, vedere l'attività **Utente aggiornato** corrispondente.|
-|Password utente cambiata|Modifica della password utente|Un amministratore ha cambiato la password per un utente.|
+|Password utente cambiata|Modifica della password utente|Un utente ha cambiato la password. La reimpostazione della password in modalità self-service deve essere abilitata nell'organizzazione, per tutti gli utenti o per utenti selezionati, per consentire agli utenti di reimpostare la password. Inoltre, è possibile tenere traccia delle attività di reimpostazione della password in modalità self-service in Azure Active Directory.
+ Per altre informazioni, vedere [Opzioni relative alla creazione di report per la gestione delle password di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
 |Utente eliminato|Elimina utente|È stato eliminato un account utente di Office 365.|
 |Reimpostazione della password utente|Reimpostazione della password utente|Un amministratore ha reimpostato la password per un utente.|
 |Impostata una proprietà che impone all'utente di cambiare la password|Impostazione forzatura per la modifica delle password utente|Un amministratore ha impostato la proprietà che forza l'utente a cambiare la password al successivo accesso a Office 365.|
