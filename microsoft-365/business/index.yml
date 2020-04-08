@@ -11,12 +11,27 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 238c4cd0c74854def600af876f93c52e6480ebb5
-  ms.sourcegitcommit: 48a45b0d2c60d4d79669174f462603a43f272875
+  ms.openlocfilehash: 9741932fcde29d2b64156c600f1bad1b309d5f66
+  ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 01/18/2020
-  ms.locfileid: "41233667"
+  ms.lasthandoff: 04/07/2020
+  ms.locfileid: "43165912"
+productDirectory:
+  title: Sicurezza del lavoro remoto con Microsoft 365 business
+  items:
+  - title: Novità
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: Azure AD Premium P1 è in arrivo a Microsoft 365 business!
+    url: https://aka.ms/aadp1smbblog
+  - title: Watch partner webinar
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: Garantire la sicurezza dei clienti SMB mentre fanno fronte a COVID-19.
+    url: https://aka.ms/M365v253PAL-Register
+  - title: Acquistare
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: Fare clic sul collegamento per acquistare o contattare il partner.
+    url: https://aka.ms/m365bweb
 conceptualContent:
   items:
   - title: Che cos'è Microsoft 365 Business?
@@ -36,7 +51,7 @@ conceptualContent:
     - url: support/microsoft-365-business-faqs.md
       itemType: reference
       text: Domande frequenti
-  - title: Configurare Microsoft 365 Business
+  - title: Impostare Microsoft 365 Business
     links:
     - url: set-up.md
       itemType: how-to-guide
@@ -85,7 +100,7 @@ conceptualContent:
       text: Office 365 Advanced Threat Protection
     - url: set-up-mfa.md
       itemType: how-to-guide
-      text: Configurazione di MFA
+      text: Configurare MFA
     - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
       itemType: how-to-guide
       text: Protezione da ransomware

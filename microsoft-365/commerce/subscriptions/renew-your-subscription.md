@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: "Informazioni su come rinnovare l'abbonamento a Office 365 for business utilizzando un codice \"Product Key\" e accendere o spegnere la fatturazione ricorrente. "
-ms.openlocfilehash: acf5c81fae60fcce272dcee470de0588da3c4a97
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: a382a2c4767f9dac4ee276c050d077d854b99084
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142116"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175203"
 ---
 # <a name="renew-office-365-for-business"></a>Rinnovare Office 365 per le aziende
 
@@ -50,7 +50,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 
-2. Scegliere l'abbonamento per cui si desidera gestire la fatturazione ricorrente.
+2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
  
 3. In **fatturazione**, accanto a **rinotizie** o **scadenza**, selezionare **modifica**.
 
@@ -67,13 +67,9 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
 ::: moniker range="o365-germany"
   
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abbonamenti</a>.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
-    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-
-    Se si usa Office 365 gestito da 21Vianet, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
-
-2. Scegliere l'abbonamento per cui si desidera gestire la fatturazione ricorrente.
+2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
  
 3. Per attivare la **fatturazione ricorrente**, impostare l'interruttore **su**attivato.
 
@@ -90,13 +86,9 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
 ::: moniker range="o365-21vianet"
   
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abbonamenti</a>.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
-    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-
-    Se si usa Office 365 gestito da 21Vianet, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
-
-2. Scegliere l'abbonamento per cui si desidera gestire la fatturazione ricorrente.
+2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
  
 3. Per attivare la **fatturazione ricorrente**, impostare l'interruttore **su**attivato.
 
@@ -117,7 +109,7 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 
 [Che cosa succede ai dati personali al termine dell'abbonamento?](what-if-my-subscription-expires.md)
 
-[Aggiungere, aggiornare o rimuovere i metodi di pagamento](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+[Aggiungere, aggiornare o rimuoverei metodi di pagamento](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
 
 [Cambiare la modalità di pagamento](../billing-and-payments/change-payment-method.md)
   
