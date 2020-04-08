@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire i componenti aggiuntivi per gli utenti e i gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: b2fe57bd2b3b51ac5097723613c608580da06bea
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4baba1504bbb7edaba1243d6e774efac81570c4f
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361951"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165924"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Gestire la distribuzione dei componenti aggiuntivi di Office 365 nell'interfaccia di amministrazione di Microsoft 365
 
@@ -60,7 +60,7 @@ A seconda delle dimensioni del gruppo di destinatari, si possono aggiungere o ri
 Prima di iniziare, vedere [Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione di Office 365](centralized-deployment-of-add-ins.md).
 
   
-1. Nell'interfaccia di amministrazione, andare alla pagina dei **componenti** aggiuntivi di **Impostazioni** \> .
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **Impostazioni** > **componenti** aggiuntivi.
     
 2. Selezionare **Distribuisci componente aggiuntivo nella** parte superiore della pagina. Nella pagina Panoramica selezionare **Avanti**.
     
@@ -101,12 +101,19 @@ L'opzione adatta per l'organizzazione dipende dalla configurazione. Tuttavia, è
   
 ### <a name="add-in-states"></a>Stati dei componenti aggiuntivi
 
-Un componente aggiuntivo può **essere nello stato attivato o** **disattivato** .
-  
+Gli amministratori possono abilitare o disabilitare i componenti aggiuntivi che distribuiscono per tutti gli utenti dall'interfaccia di amministrazione di Microsoft 365.
+
+1.    Nell'interfaccia di amministrazione, andare alla pagina dei **componenti** aggiuntivi di **Impostazioni** >. 
+2.    Selezionare il componente aggiuntivo distribuito. 
+3.    Fare **clic sull'interruttore** di **stato** per attivare o **disattivare**il componente aggiuntivo. 
+4.    Salvare le modifiche.  
+
+È inoltre disponibile uno dei tre stati del componente aggiuntivo.
+ 
 |**Stato**|**Quando si verifica lo stato**|**Impatto**|
 |:-----|:-----|:-----|
 |**Attivo**  <br/> |L'amministratore ha caricato il componente aggiuntivo e lo ha assegnato a utenti o gruppi.  <br/> |Gli utenti e i gruppi assegnati al componente aggiuntivo lo vedono nei client pertinenti.  <br/> |
-|**Disattivato**  <br/> |L'amministratore ha disattivato il componente aggiuntivo.  <br/> |Gli utenti e i gruppi assegnati al componente aggiuntivo non possono più accedervi.  <br/> Se lo stato del componente aggiuntivo viene modificato su Attivo, gli utenti e i gruppi potranno accedervi di nuovo.  <br/> |
+|**Disattivato**  <br/> |L'amministratore ha disattivato il componente aggiuntivo.  <br/> |Gli utenti e i gruppi assegnati al componente aggiuntivo non possono più accedervi.  <br/> Se lo stato del componente aggiuntivo è stato modificato in **attivo**, gli utenti e i gruppi potranno accedervi di nuovo.  <br/> |
 |**Eliminato**  <br/> |L'amministratore ha eliminato il componente aggiuntivo.  <br/> |Gli utenti e i gruppi assegnati al componente aggiuntivo non possono più accedervi.  <br/> |
    
 Se non è più in uso, è consigliabile eliminare un componente aggiuntivo. Disattivare un componente aggiuntivo può essere utile se viene usato solo in determinati periodi dell'anno.
@@ -170,9 +177,8 @@ In questo modo tutti gli utenti potranno acquistare i componenti aggiuntivi segu
     
   - Mac
     
-  - Ufficio
+  - Office
     
-  - iOS (solo iPad)
     
 - Acquisizioni che iniziano all'interno di **AppSource**
     
@@ -217,7 +223,6 @@ Per essere conformi a GDPR per i minorenni, è necessario assicurarsi che una de
 |Office 2016 per Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 per Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 per Mac  <br/> |16.11.18020200  <br/> |
-|Office 2016 per iOS (solo iPad)  <br/> |2.12.18032600  <br/> |
 |Office per il Web  <br/> |N/D  <br/> |
    
  **Per Outlook**: 
