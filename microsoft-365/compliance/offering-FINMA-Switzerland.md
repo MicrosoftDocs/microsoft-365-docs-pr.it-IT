@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 99d4b1b07c86989bce0da08324014bda7a8a7d5d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 728208960932ea8d642ad1604d45ba321f021735
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602413"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42313761"
 ---
 # <a name="financial-market-supervisory-authority-finma-switzerland"></a>Autorità federale di vigilanza sui mercati finanziari (FINMA) - Svizzera
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602413"
 
 L'[Autorità federale di vigilanza sui mercati finanziari](https://www.finma.ch/en) ([Eidgenössische Finanzmarktaufsicht](https://www.finma.ch/de/), FINMA) è il regolatore dei mercati finanziari indipendenti in Svizzera ed ha la responsabilità di controllare che i mercati finanziari svizzeri funzionino correttamente. Offre vigilanza prudenziale su banche, compagnie di assicurazioni, borse, intermediari di titoli e altri istituti finanziari.
 
-La [Circolare 2018/3. Outsourcing – banche e assicurazioni](https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/rundschreiben/finma-rs-2018-03.pdf?la=en) è stata pubblicata da FINMA per definire i requisiti che banche, intermediari di titoli e compagnie assicurative devono soddisfare quando affidano in gestione esterna ad un provider di servizi una qualsiasi funzione che sia significativa per le attività aziendali. Qualsiasi società che affida in gestione esterna le proprie attività aziendali è tenuta a rispondere alla FINMA come se avesse eseguito le funzioni affidate in prima persona.
+La [Circolare 2018/3. Outsourcing – banche e assicurazioni](https://www.finma.ch/en/~/media/finma/dokumente/rundschreiben-archiv/2018/rs-18-03/finma-rs-2018-03---20170921.pdf?la=en) è stata pubblicata da FINMA per definire i requisiti che banche, intermediari di titoli e compagnie assicurative devono soddisfare quando affidano in gestione esterna ad un provider di servizi una qualsiasi funzione che sia significativa per le attività aziendali. Qualsiasi società che affida in gestione esterna le proprie attività aziendali è tenuta a rispondere alla FINMA come se avesse eseguito le funzioni affidate in prima persona.
 
 ## <a name="microsoft-and-finma"></a>Microsoft e FINMA
 
