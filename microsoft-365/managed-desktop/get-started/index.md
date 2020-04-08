@@ -1,21 +1,29 @@
 ---
 title: Guida introduttiva a Microsoft Managed Desktop
-description: ''
+description: Passaggi per impostare i dispositivi e configurare le funzionalità di Azure per l'utilizzo con il servizio
 keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 7d007329fbb53da2604e688623621eec86f93f5e
-ms.sourcegitcommit: 0d423b50d2f1f4eccd64e35e00f67313244efba9
+ms.openlocfilehash: 1c5edfd096694324082bdd4fcb70b85b0dd1f5f0
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37595582"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "38020399"
 ---
-# <a name="get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="bb375-103">Guida introduttiva a Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="bb375-103">Get started with Microsoft Managed Desktop</span></span>
+# <a name="get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="6c98d-104">Guida introduttiva a Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="6c98d-104">Get started with Microsoft Managed Desktop</span></span>
 
-<span data-ttu-id="bb375-104">Dopo aver effettuato l'iscrizione al servizio, in questa sezione sono inclusi i passaggi da seguire per partecipare effettivamente al servizio, ottenere e configurare i dispositivi, preparare gli utenti finali e distribuire le app.</span><span class="sxs-lookup"><span data-stu-id="bb375-104">Once you're ready to enroll in the service, this section includes the steps to follow to actually join the service, obtain and set up devices, prep your end users, and deploy apps.</span></span>
+<span data-ttu-id="6c98d-105">Dopo aver registrato il servizio, eseguire la procedura seguente per confermare i contatti amministrativi, modificare le impostazioni di accesso condizionale, assegnare licenze agli utenti, abilitare il roaming dello stato dell'organizzazione, ottenere e configurare i dispositivi, preparare gli utenti e distribuire le app ai dispositivi.</span><span class="sxs-lookup"><span data-stu-id="6c98d-105">Now that you've enrolled in the service, follow these steps to confirm admin contacts, adjust conditional access settings, assign licences to users, enable Enterprise State Roaming,  obtain and set up devices, prepare users, and deploy apps to devices.</span></span>
 
-- [<span data-ttu-id="bb375-105">Aggiungere i contatti di amministratore nel portale di amministrazione di Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="bb375-105">Add Admin contacts in Microsoft Managed Desktop Admin portal</span></span>](add-admin-contacts.md)
-- [<span data-ttu-id="bb375-106">Configurare i dispositivi Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="bb375-106">Set up Microsoft Managed Desktop devices</span></span>](set-up-devices.md)
-- [<span data-ttu-id="bb375-107">Distribuire le app ai dispositivi Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="bb375-107">Deploy apps to Microsoft Managed Desktop devices</span></span>](deploy-apps.md)
+> [!NOTE]
+> <span data-ttu-id="6c98d-106">Questo è l'ordine consigliato da seguire, ma si ha una certa flessibilità nella sequenza.</span><span class="sxs-lookup"><span data-stu-id="6c98d-106">This is the recommended order to follow, but you do have some flexibility in the sequence.</span></span>
+
+1. [<span data-ttu-id="6c98d-107">Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione</span><span class="sxs-lookup"><span data-stu-id="6c98d-107">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
+2. [<span data-ttu-id="6c98d-108">Modificare l'accesso condizionale</span><span class="sxs-lookup"><span data-stu-id="6c98d-108">Adjust conditional access</span></span>](conditional-access.md)
+3. [<span data-ttu-id="6c98d-109">Assegnare licenze</span><span class="sxs-lookup"><span data-stu-id="6c98d-109">Assign licenses</span></span>](assign-licenses.md)
+4. [<span data-ttu-id="6c98d-110">Distribuire il Portale aziendale Intune</span><span class="sxs-lookup"><span data-stu-id="6c98d-110">Deploy Intune Company Portal</span></span>](company-portal.md)
+5. [<span data-ttu-id="6c98d-111">Abilitare Enterprise State Roaming</span><span class="sxs-lookup"><span data-stu-id="6c98d-111">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
+6. [<span data-ttu-id="6c98d-112">Configurare i dispositivi</span><span class="sxs-lookup"><span data-stu-id="6c98d-112">Set up devices</span></span>](set-up-devices.md)
+7. [<span data-ttu-id="6c98d-113">Preparare gli utenti a usare i dispositivi</span><span class="sxs-lookup"><span data-stu-id="6c98d-113">Get your users ready to use devices</span></span>](get-started-devices.md)
+8. [<span data-ttu-id="6c98d-114">Distribuire le app</span><span class="sxs-lookup"><span data-stu-id="6c98d-114">Deploy apps</span></span>](deploy-apps.md)
