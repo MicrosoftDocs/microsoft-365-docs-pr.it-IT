@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: "Informazioni su come aggiungere parole chiave definite dall'utente alla pertinenza per identificare i file rilevanti durante il tagging in Office 365 Advanced eDiscovery e per specificare i parametri di costo.  "
-ms.openlocfilehash: f24c2d736a1d3c36ed23d16e1bb5d2dadb42cec9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bec34867e7dfdb86848fd1fd2126d5cf96129802
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075930"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42556764"
 ---
-# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definire le parole chiave evidenziate e le opzioni avanzate in Office 365 Advanced eDiscovery
+# <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>Definire le parole chiave evidenziate e le opzioni avanzate in Advanced eDiscovery (Classic)
 
 > [!NOTE]
 > Per usare Advanced eDiscovery è necessario avere Office 365 E3 con il componente aggiuntivo Advanced Compliance o un abbonamento E5 dell'organizzazione. Se non si ha questo piano e si desidera provare Advanced eDiscovery, è possibile [richiedere una valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -74,7 +74,7 @@ Queste impostazioni influiscono sulla traccia e decidono i grafici in rilevanza.
     
 ## <a name="see-also"></a>Vedere anche
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classico)](office-365-advanced-ediscovery.md)
   
 [Definire i problemi e assegnare gli utenti](define-issues-and-assign-users.md)
   

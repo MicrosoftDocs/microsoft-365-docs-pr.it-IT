@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4a119e0ec082893d393d1b43af76b41dc93c76a1
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 834fb37eba578ff87477fd376cd5d33c8612e1b0
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053073"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165935"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Case Study-Contoso configura rapidamente un criterio di lingua offensivo per Microsoft teams e le comunicazioni di Exchange
 
@@ -41,7 +41,7 @@ Questo caso di studio riguarderà le nozioni di base per la configurazione rapid
 
 ## <a name="step-1---planning-for-communication-compliance"></a>Passaggio 1-pianificazione della conformità della comunicazione
 
-Gli amministratori IT di Contoso e gli specialisti della conformità hanno partecipato a webinar online sulle soluzioni di conformità in Microsoft 365 e hanno deciso che i criteri di conformità della comunicazione li consentiranno di soddisfare i requisiti dei criteri aziendali aggiornati per la riduzione molestie. Lavorando insieme, hanno sviluppato un piano per creare e abilitare un criterio di conformità della comunicazione che monitorerà la lingua offensiva per le chat inviate in Microsoft Teams nei messaggi di posta elettronica inviati in Exchange Online. Il piano include l'identificazione:
+Gli amministratori IT di Contoso e gli specialisti della conformità hanno partecipato a webinar online sulle soluzioni di conformità in Microsoft 365 e hanno deciso che i criteri di conformità della comunicazione consentiranno di soddisfare i requisiti dei criteri aziendali aggiornati per la riduzione delle molestie sul posto Lavorando insieme, hanno sviluppato un piano per creare e abilitare un criterio di conformità della comunicazione che monitorerà la lingua offensiva per le chat inviate in Microsoft Teams nei messaggi di posta elettronica inviati in Exchange Online. Il piano include l'identificazione:
 
 - Gli amministratori IT che devono accedere alle funzionalità di conformità della comunicazione.
 - Gli specialisti della conformità che devono creare e gestire i criteri di comunicazione.
@@ -53,10 +53,21 @@ Gli amministratori IT di Contoso e gli specialisti della conformità hanno parte
 Il primo passaggio consiste nel confermare che la licenza Microsoft 365 di Contoso include il supporto per la soluzione di conformità alla comunicazione. Per accedere e utilizzare la conformità di comunicazione, gli amministratori IT di Contoso devono verificare che Contoso abbia uno dei seguenti elementi:
 
 - Sottoscrizione Microsoft 365 E5 (a pagamento o versione di valutazione)
-- Licenza di Office 365 Enterprise E3 con il componente aggiuntivo per la conformità avanzato
+- Sottoscrizione Microsoft 365 E3 + il componente aggiuntivo Microsoft 365 E5 Compliance
+- Sottoscrizione Microsoft 365 E3 + componente aggiuntivo Microsoft 365 E5 Insider Risk Management
+- Sottoscrizione Microsoft 365 a5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Compliance
+- Sottoscrizione Microsoft 365 a3 + componente aggiuntivo Microsoft 365 a5 Insider Risk Management
+- Sottoscrizione Microsoft 365 G5 (a pagamento o versione di valutazione)
+- Sottoscrizione Microsoft 365 G5 + componente aggiuntivo Microsoft 365 G5 Compliance
+- Microsoft 365 G5 Subscription + Microsoft 365 G5 Insider Risk Management componente aggiuntivo
 - Abbonamento a Office 365 Enterprise E5 (a pagamento o versione di valutazione)
+- Abbonamento a Office 365 Enterprise E3 + il componente aggiuntivo Office 365 Advanced Compliance (non più disponibile per le nuove sottoscrizioni, vedere note)
 
-È inoltre necessario confermare che gli utenti inclusi nei criteri di conformità della comunicazione devono essere assegnati a una delle licenze sopra elencate.
+È inoltre necessario confermare che agli utenti inclusi nei criteri di conformità della comunicazione deve essere assegnata una delle licenze sopra riportate.
+
+>[!IMPORTANT]
+>La conformità avanzata di Office 365 non viene più venduta come sottoscrizione autonoma. Quando le sottoscrizioni correnti scadono, i clienti devono passare a una delle sottoscrizioni precedenti, che contengono le stesse funzionalità di conformità o aggiuntive.
 
 Gli amministratori IT di Contoso eseguono la procedura seguente per verificare il supporto delle licenze per contoso:
 

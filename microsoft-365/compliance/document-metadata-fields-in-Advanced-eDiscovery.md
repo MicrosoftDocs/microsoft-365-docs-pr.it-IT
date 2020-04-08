@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo vengono definiti i campi dei metadati per i documenti in un set di revisione in un caso in Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
-ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
+ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "42651840"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941238"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campi dei metadati del documento in Advanced eDiscovery
 
@@ -34,6 +34,9 @@ Nella tabella seguente sono elencati i campi dei metadati per i documenti in un 
 - **Nome del campo esportato:** Nome del campo dei metadati incluso quando vengono esportati i documenti.  Una cella vuota indica che il campo non è incluso nei metadati esportati.
 
 - **Descrizione:** Descrizione del campo dei metadati.
+
+> [!NOTE]
+> Il campo **parole chiave** in [Review set Search](https://docs.microsoft.com/microsoft-365/compliance/review-set-search) utilizza Keyword Query Language (KQL). I campi elencati nella colonna **nome campo ricercabile** possono essere utilizzati nel campo **parole chiave** di una ricerca set di revisione per formare query complesse senza che sia necessario utilizzare il generatore di query. Per ulteriori informazioni su KQL, vedere [Keyword Query Language Reference Syntax](https://go.microsoft.com/fwlink/?LinkId=269603).
 
 |Nome del **campo** e **nome del campo di visualizzazione**|**Nome del campo ricercabile**|**Nome del campo esportato**|**Descrizione**|
 |:-----|:-----|:-----|:-----|

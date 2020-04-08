@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come iniziare a utilizzare Advanced eDiscovery in Microsoft 365. Dopo aver completato alcuni passaggi rapidi, lo strumento Advanced eDiscovery è pronto per l'uso. Il primo passaggio consiste nel creare un caso e quindi iniziare a utilizzare le funzionalità e le caratteristiche avanzate di eDiscovery.
-ms.openlocfilehash: 2819fdd2f3b98ca82535aa0f08830bb37744c3f7
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 1f3eb78ab9f9e96eaa95dbfbc7e087fa1514b836
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561666"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43100869"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introduzione a Advanced eDiscovery
 
@@ -35,19 +35,19 @@ La gestione delle licenze per Advanced eDiscovery richiede la sottoscrizione del
 
 - **Sottoscrizione organizzazione:** Per accedere alle funzionalità avanzate di eDiscovery nel centro conformità di Microsoft 365 o nel centro conformità & sicurezza di Office 365, è necessario che l'organizzazione disponga di uno dei seguenti elementi:
 
-  - Sottoscrizione Microsoft 365 E5 o Office 365 E5
+  - Abbonamento a Microsoft 365 E5 o a Office 365 E5
   
-  - Sottoscrizione Microsoft 365 E3 con componente aggiuntivo per la conformità E5
-  
-  - Abbonamento a Office 365 E3 con componente aggiuntivo per la conformità avanzato
+  - Abbonamento a Microsoft 365 E3 con il componente aggiuntivo E5 Compliance
+
+  - Sottoscrizione Microsoft 365 E3 con E5 eDiscovery e componente aggiuntivo di controllo
 
   Se non si dispone di un piano Microsoft 365 E5 esistente e si desidera provare Advanced eDiscovery, è possibile [aggiungere microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) all'abbonamento a Office 365 esistente oppure [iscriversi a una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Microsoft 365 E5.
 
 - **Licenze per utente:** Per aggiungere un utente come custode in un caso di eDiscovery Advance, all'utente deve essere assegnata una delle licenze seguenti, a seconda dell'abbonamento dell'organizzazione:
 
-  - Microsoft 365: agli utenti deve essere assegnata una licenza Microsoft 365 E5 o una licenza per il componente aggiuntivo di conformità E5.
+  - Microsoft 365: agli utenti deve essere assegnata una licenza Microsoft 365 E5, una licenza per i componenti aggiuntivi per la conformità E5 o una licenza E5 eDiscovery e Audit Add-on.
 
-  - Office 365: agli utenti deve essere assegnata una licenza di Office 365 E5 o una licenza per il componente aggiuntivo per la conformità avanzata.
+  - Office 365: agli utenti deve essere assegnata una licenza di Office 365 E5.
 
    Per informazioni su come assegnare le licenze, vedere [assegnare licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
@@ -56,7 +56,7 @@ La gestione delle licenze per Advanced eDiscovery richiede la sottoscrizione del
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Passaggio 2: assegnare autorizzazioni di eDiscovery
 
-Per accedere a Advanced eDiscovery o aggiunto come membro di un caso avanzato di eDiscovery, a un utente devono essere assegnate le autorizzazioni appropriate. In particolare, un utente deve essere aggiunto come membro del gruppo di ruoli di gestione di eDiscovery nel centro sicurezza & conformità di Office 365. I membri di questo gruppo di ruoli possono creare e gestire i casi di eDiscovery avanzati. Sono in grado di aggiungere e rimuovere membri, inserire depositari e posizioni di contenuto in attesa, gestire le notifiche per la conservazione legale, creare e modificare le ricerche associate a un caso, aggiungere i risultati di ricerca a un set di revisione, analizzare i dati in un set di revisione ed esportare e scaricare da una pagina avanzata caso eDiscovery.
+Per accedere a Advanced eDiscovery o aggiunto come membro di un caso avanzato di eDiscovery, a un utente devono essere assegnate le autorizzazioni appropriate. In particolare, un utente deve essere aggiunto come membro del gruppo di ruoli di gestione di eDiscovery nel centro sicurezza & conformità di Office 365. I membri di questo gruppo di ruoli possono creare e gestire i casi di eDiscovery avanzati. Sono in grado di aggiungere e rimuovere membri, inserire depositari e posizioni di contenuto in attesa, gestire le notifiche per la conservazione legale, creare e modificare le ricerche associate a un caso, aggiungere i risultati di ricerca a un set di revisione, analizzare i dati in un set di revisione ed esportare e scaricare da un caso avanzato di eDiscovery.
 
 Completare la procedura seguente per aggiungere gli utenti al gruppo di ruoli eDiscovery Manager:
 

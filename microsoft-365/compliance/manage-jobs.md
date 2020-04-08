@@ -1,5 +1,7 @@
 ---
 title: Gestire i processi in indagini sui dati
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: È possibile monitorare lo stato dei processi con esecuzione prolungata che risultano quando si eseguono attività nello strumento indagini dati nel centro sicurezza & conformità.
-ms.openlocfilehash: 0c93df9e7d5ec176c2150e706fe99ed239be8527
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6c7b247eb4a8ef9797a8a5993195bb21d7bf30bf
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37083797"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41582925"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Gestire i processi in indagini sui dati (anteprima)
 
@@ -34,7 +36,7 @@ Di seguito viene indicato un elenco dei processi (che in genere sono elaborati i
 |Confronto tra set di carico | Un utente esamina le differenze tra set di carico diversi in un set di evidenze. Un set di carichi è un'istanza di aggiunta di dati a un set di evidenze. Ad esempio, se si aggiungono i risultati di due ricerche diverse allo stesso set di prove, ognuna rappresenta un set di carico. Per ulteriori informazioni, vedere [gestire i set di carico](manage-load-sets.md). |
 |Conversione di documenti redatti in formato PDF|Dopo che un utente ha annotato un documento in un set di evidenze e redacts una parte di esso, può scegliere di convertire il documento redatto in un file PDF. Questo garantisce che la parte redatta non sarà visibile quando il documento viene esportato per la presentazione. Per ulteriori informazioni, vedere [Review data in evidence](review-data-in-evidence.md). |
 |Eliminare gli elementi da percorsi originali | Questo processo viene attivato quando un utente seleziona le cassette postali e gli elementi del sito in un set di evidenze e quindi fa clic su **Elimina elementi dai percorsi originali** del menu **azione** per eliminarli. Questo processo tiene traccia dello stato di eliminazione temporanea degli elementi selezionati dai percorsi di contenuto originale. Per ulteriori informazioni, vedere [eliminare gli elementi dal percorso originale](delete-items-from-original-locations.md).|
-|Stima dei risultati della ricerca | Dopo che un utente ha creato ed eseguito una nuova ricerca (o ha rieseguito una ricerca esistente), lo strumento di ricerca Cerca l'indice per gli elementi che corrispondono alla query di ricerca e prepara una stima che include il numero e la dimensione totale di tutti gli elementi per la ricerca e il numero di origini dati Sea rched.  Per ulteriori informazioni, vedere [Search for data in an Investigation](search-for-data.md). | 
+|Stima dei risultati della ricerca | Dopo che un utente ha creato ed eseguito una nuova ricerca (o ha rieseguito una ricerca esistente), lo strumento di ricerca Cerca l'indice per gli elementi che corrispondono alla query di ricerca e prepara una stima che include il numero e la dimensione totale di tutti gli elementi in base alla ricerca e il numero di origini dati ricercate.  Per ulteriori informazioni, vedere [Search for data in an Investigation](search-for-data.md). | 
 |Preparazione dei dati per l'esportazione | Un utente esporta i documenti da un set di evidenze. Al termine del processo di esportazione, è possibile scaricare i dati esportati in un computer locale. Per ulteriori informazioni, vedere [esportare i dati da un'indagine](export-data.md). | 
 |Preparazione per la risoluzione degli errori |Quando un utente seleziona un file e crea una correzione degli errori nella visualizzazione errori nella scheda **elaborazione** di un'indagine, il primo passaggio del processo consiste nel caricare il file che ha l'errore di elaborazione in una posizione di archiviazione di Azure nel cloud Microsoft. Questo processo tiene traccia dello stato di avanzamento della procedura di caricamento. Per ulteriori informazioni sul flusso di lavoro per la correzione degli errori, vedere correzione degli [errori durante l'elaborazione dei dati per un'indagine](error-remediation.md).| 
 |Preparazione dell'anteprima di ricerca | Dopo che un utente ha creato ed eseguito una nuova ricerca (o ha rieseguito una ricerca esistente), lo strumento di ricerca prepara un sottoinsieme di elementi di esempio (che corrispondono alla query di ricerca) che è possibile visualizzare in anteprima. La visualizzazione in anteprima dei risultati della ricerca può essere utile per determinare l'efficacia della ricerca.  Per ulteriori informazioni, vedere [Search for data in an Investigation](search-for-data.md). | 
@@ -54,5 +56,5 @@ Nella tabella seguente vengono descritti i diversi Stati di stato per i processi
 | In corso | Il processo è in corso. È possibile monitorare lo stato del processo nella scheda **processi** . |
 | Corretta | Il processo è stato completato correttamente. La data e l'ora in cui il processo è stato completato viene visualizzato nella colonna **completato** nella scheda **processi** . |
 | Parzialmente completata | Il processo ha avuto esito positivo. |
-| Failed | Il processo ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. Se il processo ha esito negativo una seconda volta, è consigliabile contattare il supporto tecnico Microsoft e fornire le informazioni sul supporto del processo. |
+| Esito negativo | Il processo ha avuto esito negativo.  È consigliabile tentare di rieseguire l'azione che ha attivato il processo. Se il processo ha esito negativo una seconda volta, è consigliabile contattare il supporto tecnico Microsoft e fornire le informazioni sul supporto del processo. |
 |||
