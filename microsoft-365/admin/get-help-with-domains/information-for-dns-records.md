@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Per ulteriori informazioni, vedere i valori o i dati necessari per la creazione di record DNS per Office 365. '
 ms.custom: okr_smb
-ms.openlocfilehash: 7b995aedc21305367e4a6621781e138d0d60efd1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d6093dd8a7e8d901be7b172a31dcd0e56c549ab3
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252919"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189003"
 ---
 # <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>Raccogliere le informazioni necessarie per creare record DNS di Office 365
 
@@ -36,10 +36,18 @@ ms.locfileid: "42252919"
 ### <a name="step-1-find-the-txt-record-value-and-verify"></a>Passaggio 1: trovare il valore del record TXT e verificare
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> .
-    
-    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> . 
-    
-    Se si utilizza Office 365 gestito da 21Vianet, andare a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domini</a> .
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .
+
+::: moniker-end
     
 2. Nella pagina **Domains** selezionare il dominio, quindi fare clic su **Avvia installazione**. Verrà nuovamente visualizzata la configurazione guidata domini per verificare il valore specifico da aggiungere.
     
@@ -57,9 +65,17 @@ ms.locfileid: "42252919"
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> .
     
-    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> . 
-    
-    Se si utilizza Office 365 gestito da 21Vianet, andare a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domini</a> .
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .
+
+::: moniker-end
     
 2. Nella pagina **Domini** selezionare il proprio dominio. 
     

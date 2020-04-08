@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti di Office 365 soddisfano i requisiti, in modo che sia possibile utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
-ms.openlocfilehash: 78d87c5539daa77c2babb7ffa36967c5f27e3c10
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d6b81a5ac5ef3b5287810110e5d0582bf34bff93
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362131"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189021"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
 La distribuzione centralizzata è il metodo consigliato e più ricco di funzionalità per la maggior parte dei clienti per distribuire i componenti aggiuntivi per Office agli utenti e ai gruppi all'interno dell'organizzazione di Office 365. Se si è un amministratore, utilizzare queste linee guida per determinare se il tenant e gli utenti soddisfano i requisiti affinché sia possibile utilizzare la distribuzione centralizzata.
 La distribuzione centralizzata supporta le app di Office, Windows, Mac, iOS, Android e online.
-È possibile richiedere fino a 12 ore affinché un componente aggiuntivo venga visualizzato per il client per tutti gli utenti.
+È possibile richiedere fino a 24 ore affinché un componente aggiuntivo venga visualizzato per il client per tutti gli utenti.
   
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ La distribuzione centralizzata non supporta quanto segue:
 - Per i componenti aggiuntivi di Word, Excel e PowerPoint, è necessario che gli utenti utilizzino uno dei seguenti elementi:
   - In un dispositivo Windows, versione 1704 o successiva di Office 365 ProPlus.
   - Su un Mac, versione 15,34 o successiva.
-      - Su iOS (solo iPad), Version 2.9.18010804 o versione successiva.
+
 - Per Outlook, è necessario che gli utenti utilizzino una delle opzioni seguenti: 
   - Versione 1701 o successiva di Office 365 ProPlus.
   - Versione 1808 o successiva di Office Professional Plus 2019 o Office standard 2019.
@@ -75,7 +75,7 @@ Per utilizzare Office 365 ProPlus, un utente deve disporre di un account di Offi
 
 Il modo più semplice per rilevare se un utente dispone di Office 365 ProPlus installato e lo ha utilizzato di recente consiste nell'utilizzare il rapporto attivazioni di Microsoft Office, disponibile nell'interfaccia di amministrazione di Microsoft 365. Il report fornisce un elenco di tutti gli utenti che hanno attivato Office 365 ProPlus negli ultimi 7, 30, 90 o 180 giorni. Ai fini della distribuzione centralizzata, le attivazioni desktop per Windows o Mac rappresentano le colonne più importanti del report. È possibile esportare il report in Excel. Per altre informazioni sul report, vedere [Report di Office 365 nell'interfaccia di amministrazione - Attivazioni di Microsoft Office](../activity-reports/microsoft-office-activations.md).
   
-Se non si desidera utilizzare il rapporto attivazioni, è possibile chiedere a un utente di aprire un'applicazione di Office come Word nel computer in uso e quindi scegliere **** \> **account**file. In **informazioni sui prodotti** dovrebbe essere visualizzato **Prodotto a sottoscrizione** e **Microsoft Office 365 ProPlus**, come mostrato nell'immagine seguente.
+Se non si desidera utilizzare il rapporto attivazioni, è possibile chiedere a un utente di aprire un'applicazione di Office come Word nel computer in uso e quindi scegliere **File** \> **account**file. In **informazioni sui prodotti** dovrebbe essere visualizzato **Prodotto a sottoscrizione** e **Microsoft Office 365 ProPlus**, come mostrato nell'immagine seguente.
 
 ![Informazioni sul prodotto in un'applicazione di Office](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
   
@@ -161,7 +161,7 @@ Se l'utente o gli utenti riscontrano problemi durante il caricamento del compone
   
 |**Piattaforma**|**Informazioni di debug**|
 |:-----|:-----|
-|Ufficio  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b.aspx))  <br/>  CorrelationId. Visualizzare l'origine di una delle pagine di Office e cercare il valore dell'ID correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b.aspx))  <br/>  CorrelationId. Visualizzare l'origine di una delle pagine di Office e cercare il valore dell'ID correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich client (Windows, Mac)  <br/> | Log di Charles/Fiddler  <br/>  Creare numeri dell'app client (preferibilmente come schermata da **file/account**)  <br/> |
    
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Esaminare le risposte alle domande frequenti sulla distribuzione centralizzata dall'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: d63158f70e3f905b0ee1acf994cbef207f1ab4f1
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 313e1dd7481ccdd8bbf7531d5b7433f8bbd54e38
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166490"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188964"
 ---
 # <a name="centralized-deployment-faq"></a>Domande frequenti sulla distribuzione centralizzata
 
@@ -33,7 +33,7 @@ La distribuzione centralizzata è il modo consigliato per un amministratore di O
 
 La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino Office 365 ProPlus (e siano firmati in Office utilizzando le proprie credenziali di accesso dell'organizzazione) e dispongano di cassette postali di Exchange Online. La directory di sottoscrizione deve trovarsi o federata in Azure Active Directory.  
  
-La distribuzione centralizzata è supportata solo per le cassette postali di Outlook online. La distribuzione non è supportata per le cassette postali di Exchange locali.
+La distribuzione centralizzata è supportata solo per le cassette postali online. La distribuzione non è supportata per le cassette postali di Exchange locali.
  
 È possibile utilizzare la [Verifica compatibilità della distribuzione centralizzata di Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)per determinare se l'abbonamento è idoneo. 
   
@@ -47,7 +47,7 @@ Per ulteriori informazioni, vedere [assegnazioni di utenti e gruppi](https://doc
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>Quanto tempo occorre per visualizzare i componenti aggiuntivi per tutti gli utenti?  
 
-È possibile richiedere fino a 12 ore affinché un componente aggiuntivo venga visualizzato per tutti gli utenti. Può richiedere la stessa quantità di tempo per gli aggiornamenti del componente aggiuntivo, le modifiche apportate alle rimozioni di attivazione o disattivazione o di aggiunta. 
+È possibile richiedere fino a 24 ore affinché un componente aggiuntivo venga visualizzato per tutti gli utenti. Può richiedere la stessa quantità di tempo per gli aggiornamenti del componente aggiuntivo, le modifiche apportate alle rimozioni di attivazione o disattivazione o di aggiunta. 
   
 ## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>Come amministratore, come è possibile gestire l'accesso degli utenti ai componenti aggiuntivi per l'organizzazione?
 
