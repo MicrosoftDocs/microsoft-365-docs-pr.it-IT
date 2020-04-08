@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 04/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 per Enterprise.
-ms.openlocfilehash: c66fb5e4d8cd0d24ec20a50ca2ead3f3b9e0851d
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113518"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175191"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
@@ -45,7 +45,7 @@ Microsoft 365 per Enterprise è disponibile in tre piani.
 |:-------|:-----|
 | E3 | Accedere a prodotti e caratteristiche di base all'interno di Microsoft 365 per migliorare la produttività sul posto di lavoro e guidare l'innovazione in modo sicuro. |
 | E5 | Accedere ai prodotti e alle funzionalità più recenti all'interno di Microsoft 365, inclusi gli strumenti avanzati per la protezione delle minacce, la sicurezza e la collaborazione. Include tutte le funzionalità di E3's, oltre a strumenti avanzati per la sicurezza, la voce e l'analisi dei dati. |
-| F1 | Connettersi con i propri dipendenti di FIRSTLINE tramite strumenti e risorse appositamente creati che consentono loro di svolgere al meglio le proprie attività. |
+| F3 | Connettersi con i propri dipendenti di FIRSTLINE tramite strumenti e risorse appositamente creati che consentono loro di svolgere al meglio le proprie attività. |
 |||
 
 Se si dispone di Microsoft 365 E3, è anche possibile ottenere queste [offerte](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
@@ -55,7 +55,7 @@ Se si dispone di Microsoft 365 E3, è anche possibile ottenere queste [offerte](
 
 Queste offerte contengono funzionalità aggiuntive incluse in Microsoft 365 E5.
 
-Per ulteriori informazioni, vedere [caratteristiche e funzionalità per ogni piano](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Per ulteriori informazioni su ciò che è incluso in ogni piano, vedere [Transform Your Enterprise with Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
 
 ## <a name="get-the-big-picture"></a>Ottenere l'immagine grande
 

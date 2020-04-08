@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Durante e dopo un'indagine automatizzata in Office 365, è possibile visualizzare i risultati e i risultati principali.
-ms.openlocfilehash: 104be669dcb6d22cba00974075418e2d14ed629c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
+ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894229"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43163911"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Informazioni dettagliate e risultati di un'indagine automatizzata in Office 365
 
@@ -87,18 +87,16 @@ Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azion
 
 |Stato  |Cosa significa  |
 |---------|---------|
-|In avvio | L'analisi viene accodata per iniziare a breve |
-|In esecuzione | L'inchiesta è iniziata e sta conducendo la sua analisi |
-|Non sono state trovate minacce | L'indagine ha completato l'analisi e non sono state trovate minacce |
-|Terminato dal sistema | L'inchiesta non è stata chiusa ed è scaduta dopo 7 giorni |
-|Azione in sospeso | Nell'inchiesta sono state individuate minacce con azioni consigliate.  L'analisi continua a essere eseguita dopo che sono state trovate le minacce iniziali e le azioni consigliate, pertanto è necessario controllare il registro prima di approvare le azioni per verificare se gli analizzatori sono ancora in corso. |
-|Minacce trovate | L'inchiesta ha rilevato minacce, ma le minacce non sono disponibili in aria.  Si tratta di azioni dell'utente in cui non è ancora presente un'azione aria di direzione. |
-|Corretti | L'inchiesta è stata completata ed è stata completamente rimediata (tutte le azioni sono state approvate) |
-|Parzialmente rimediato | L'inchiesta è terminata e sono state approvate alcune delle azioni consigliate |
-|Terminato dall'utente | Un amministratore ha terminato l'indagine |
-|Esito negativo | Si è verificato un errore durante l'indagine che impediva di raggiungere una conclusione sulle minacce |
-|Accodamento tramite limitazione | L'indagine è in attesa di analisi a causa di limitazioni di elaborazione del sistema (per proteggere le prestazioni del servizio) |
-|Terminata mediante limitazione | L'inchiesta non è stata completata in tempi sufficienti a causa di limitazioni del volume e dell'elaborazione del sistema di analisi. È possibile riattivare l'indagine selezionando il messaggio di posta elettronica in Esplora risorse e selezionando l'azione indaga. |
+|In avvio | L'indagine è stata attivata e in attesa di avviare l'esecuzione. Questo è il primo passaggio.  |
+|In esecuzione | Il processo di indagine è iniziato ed è in corso. Questo stato si verifica anche quando vengono approvate le [azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) . |
+|Non sono state trovate minacce | L'inchiesta è terminata e non sono state identificate minacce (account utente, messaggio di posta elettronica, URL o file). <br/><br/>**Suggerimento**: se si sospetta che qualcosa sia stato perso (ad esempio, un falso negativo), è possibile eseguire un'azione utilizzando [Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+|Terminato dal sistema | L'indagine è stata interrotta. Questo può verificarsi per una serie di motivi. Di seguito sono ritrovati i due motivi più comuni:<br/>-Le azioni in sospeso dell'inchiesta sono scadute. Timeout delle azioni in sospeso dopo aver atteso l'approvazione per una settimana. <br/>-Ci sono troppe azioni. Ad esempio, se sono presenti troppi utenti che fanno clic su URL dannosi, può superare la capacità dell'indagine di eseguire tutti gli analizzatori, in modo che l'analisi venga interrotta. <br/><br/>**Suggerimento**: se un'analisi si interrompe prima che vengano eseguite azioni, provare a utilizzare [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) per individuare e risolvere le minacce.  |
+|Azione in sospeso | L'inchiesta ha individuato una minaccia, ad esempio un messaggio di posta indesiderata, un URL dannoso o un'impostazione di cassetta postale rischiosa e un'azione per correggere tale minaccia è in attesa di [approvazione](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Lo stato dell'azione in sospeso viene attivato quando viene trovata una minaccia con un'azione corrispondente. Tuttavia, si noti che l'analisi potrebbe non essere completamente completata.  Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) per verificare se altri elementi sono ancora in attesa di completamento. |
+|Corretti | L'inchiesta è stata completata e tutte le azioni sono state approvate (completamente rimediate).<br/><br/>**Nota**: le azioni di correzione approvate possono avere errori che impediscono l'esecuzione delle azioni. Questo non modifica lo stato dell'indagine. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati. |
+|Parzialmente rimediato | L'analisi ha portato a operazioni di correzione e alcune sono state approvate e completate. Altre azioni sono ancora [in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
+|Esito negativo | Almeno un analizzatore dell'analisi ha riscontrato un problema in cui non è stato possibile completarlo correttamente. <br/><br/>**Nota**: se un'indagine ha esito negativo dopo che sono state approvate le azioni di correzione, le azioni di correzione potrebbero essere state eseguite correttamente. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati. |
+|Accodamento tramite limitazione | Viene eseguita un'analisi in una coda. Quando vengono completate altre indagini, vengono avviate indagini accodate. In questo modo si evitano scarse prestazioni del servizio. <br/><br/>**Suggerimento**: le azioni in sospeso possono limitare il numero di nuove indagini che è possibile eseguire. Assicurarsi di [approvare (o rifiutare) le azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
+|Terminata mediante limitazione | Se una ricerca viene mantenuta troppo a lungo nella coda, viene interrotta. <br/><br/>**Suggerimento**: è possibile [avviare un'indagine da Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
 
 ### <a name="investigation-graph"></a>Grafico dell'indagine
 
