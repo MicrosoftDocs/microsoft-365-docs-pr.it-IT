@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a3379043108340391764781f52b6a1bc3e05cf3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b4699ca9fda4f8d5364dff0fdabd868b886540b3
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601933"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165901"
 ---
 # <a name="good-clinical-laboratory-and-manufacturing-practices-gxp"></a>Buone pratiche cliniche, di laboratorio e di fabbricazione (GxP)
 
@@ -40,7 +40,7 @@ Non esiste una certificazione GxP per i fornitori di servizi cloud, tuttavia:
 
 Sebbene gli standard e le buone pratiche non si concentrino specificamente sull'adeguamento alle normative GxP, il loro scopo e i loro obiettivi sono molto simili e consentono di assicurare la riservatezza, l'integrità e la disponibilità dei dati archiviati nei servizi cloud Microsoft.
 
-Microsoft ha incaricato [Montrium](https://www.montrium.com/), un'organizzazione indipendente specializzata nella garanzia della qualità e nell’adeguamento alle normative GxP per il settore delle scienze naturali, di condurre la revisione della qualificazione GxP per Microsoft. Le Linee guida di qualificazione che ne risultano ([Azure ](https://aka.ms/gxpcompliance) e [Office 365](https://aka.ms/o365-qualification-guideline)) sono rivolte alle organizzazioni di scienze naturali che intendono utilizzare questi servizi cloud per ospitare e supportare sistemi computerizzati regolamentati da GxP. Le linee guida identificano le responsabilità condivise da Microsoft e dai suoi clienti per soddisfare i requisiti GxP, oltre a suggerire attività e controlli che i clienti che utilizzano servizi cloud Microsoft in ambito possono stabilire per mantenere il controllo sui sistemi computerizzati GxP.
+Microsoft ha incaricato [Montrium](https://www.montrium.com/), un'organizzazione indipendente specializzata nella garanzia della qualità e nell’adeguamento alle normative GxP per il settore delle scienze naturali, di condurre la revisione della qualificazione GxP per Microsoft. Le Linee guida di qualificazione che ne risultano ([Azure ](https://aka.ms/gxpcompliance) e [Office 365](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf)) sono rivolte alle organizzazioni di scienze naturali che intendono utilizzare questi servizi cloud per ospitare e supportare sistemi computerizzati regolamentati da GxP. Le linee guida identificano le responsabilità condivise da Microsoft e dai suoi clienti per soddisfare i requisiti GxP, oltre a suggerire attività e controlli che i clienti che utilizzano servizi cloud Microsoft in ambito possono stabilire per mantenere il controllo sui sistemi computerizzati GxP.
 
 Le organizzazioni di scienze naturali che creano soluzioni GxP per Azure e Office 365 possono sfruttare le efficienze del cloud proteggendo allo stesso tempo la sicurezza dei pazienti, la qualità dei prodotti e l'integrità dei dati. I clienti, inoltre, traggono vantaggio da più livelli di tecnologie di sicurezza e governance, procedure operative e criteri di conformità che applicano la privacy dei dati e l'integrità a livelli specifici.
 
@@ -53,7 +53,7 @@ Le organizzazioni di scienze naturali che creano soluzioni GxP per Azure e Offic
 
 - [Linee guida di Azure GxP](https://aka.ms/gxpcompliance): un set di strumenti completo per l'uso di Azure secondo le buone pratiche e le normative GxP.
 - [Uso di Azure con i sistemi GxP](https://aka.ms/GXP-Azure-Strategies): assistenza per le organizzazioni di scienze naturali nella definizione di una strategia per la creazione di applicazioni GxP. 
-- Guide FDA CFR Titolo 21 Parte 11: Come ottenere assistenza per stabilire una strategia di qualificazione di [Azure](https://aka.ms/Azure-FDA-Guidelines) e [Office 365](https://aka.ms/o365-qualification-guideline) conforme alle linee guida FDA per i documenti elettronici.
+- Guide FDA CFR Titolo 21 Parte 11: Come ottenere assistenza per stabilire una strategia di qualificazione di [Azure](https://aka.ms/Azure-FDA-Guidelines) e [Office 365](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf) conforme alle linee guida FDA per i documenti elettronici.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
