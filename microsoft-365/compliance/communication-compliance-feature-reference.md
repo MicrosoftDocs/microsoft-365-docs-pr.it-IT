@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6f3019c57d35e6ac54a9f1a2cd0dbede22601ec1
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 40e8be29c585c0490b93e81c27728085d59c5146
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029850"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193452"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulle caratteristiche di conformità comunicazione
 
@@ -43,7 +43,7 @@ I modelli di criteri sono impostazioni predefinite che è possibile utilizzare p
 
 |**Area**|**Modello di criteri**|**Dettagli**|
 |:-----|:-----|:-----|
-| **Lingua offensiva e anti-molestia** | Monitorare le comunicazioni per la lingua offensiva | -Locations: Exchange, teams, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 100% <br> -Conditions: classificatore di lingua offensivo |
+| **Lingua offensiva e anti-molestia** | Monitorare le comunicazioni per la lingua offensiva | -Locations: Exchange, teams, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 100% <br> -Condizioni: minaccia, profanità e classificazione del linguaggio per molestie |
 | **Informazioni riservate** | Monitorare le comunicazioni per informazioni riservate | -Locations: Exchange, teams, Skype for business <br> -Direction: in ingresso, in uscita, interno <br> -Percentuale di verifica: 10% <br> -Conditions: informazioni riservate, modelli e tipi di contenuto esterno alla casella, opzione dizionario personalizzato, allegati di dimensioni superiori a 1 MB |
 | **Conformità alle normative** | Monitorare le comunicazioni per informazioni relative alla conformità alle normative finanziarie | -Locations: Exchange, teams, Skype for business <br> -Direction: in ingresso, in uscita <br> -Percentuale di verifica: 10% <br> -Conditions: opzione dizionario personalizzato, allegati di dimensioni superiori a 1 MB |
 
@@ -133,7 +133,7 @@ Configure custom keyword Dictionary (o lessici) per fornire una gestione semplic
 
 I classificatori incorporati analizzano i messaggi inviati o ricevuti su tutti i canali di comunicazione nell'organizzazione per diversi tipi di problemi di conformità. I classificatori utilizzano una combinazione di intelligenza artificiale e parole chiave per identificare la lingua nei messaggi suscettibili di violare i criteri di anti-molestia. I classificatori incorporati supportano attualmente solo le parole chiave in inglese nei messaggi.
 
-Conformità della comunicazione i classificatori incorporati analizzano le comunicazioni per i termini e i sentimenti per i seguenti tipi di lingua:
+La conformità alla comunicazione utilizza i classificatori incorporati per analizzare le comunicazioni per i termini e i sentimenti per i seguenti tipi di lingua:
 
 - **Pericolo**: consente di analizzare le minacce per commettere violenze o danni fisici a una persona o a una proprietà.
 - **Molestie**: analisi per comportamenti offensivi che mirano alle persone in relazione a razza, colore, religione, origine nazionale.
@@ -290,7 +290,7 @@ Per visualizzare le attività relative ai criteri di conformità della comunicaz
 |:-----|:-----|
 | **CreationDate** | Data in cui l'attività è stata eseguita in un criterio. |
 | **UserIds** | L'utente che ha eseguito l'attività in un criterio. |
-| **Operations** | Le operazioni eseguite sul criterio. |
+| **Operazioni** | Le operazioni eseguite sul criterio. |
 | **AuditData** | Questo campo è l'origine dati principale per tutte le attività dei criteri. Tutte le attività vengono registrate e separate da delimitatori di virgole. |
 
 È inoltre possibile visualizzare le attività di controllo nel log di controllo unificato o con il cmdlet di PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) .

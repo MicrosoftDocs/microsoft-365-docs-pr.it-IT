@@ -151,6 +151,8 @@
           href: what-the-dlp-functions-look-for.md
     - name: Crittografia in M365
       href: encryption.md
+    - name: Servizio di crittografia di Office 365
+      href: office-365-service-encryption.md
     - name: Customer Key
       items:
         - name: Crittografia del servizio con la chiave del cliente in Office 365

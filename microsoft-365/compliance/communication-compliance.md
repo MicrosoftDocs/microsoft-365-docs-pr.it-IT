@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 61da6df18a8e41a609ae8aea7ff57c2f53f92d84
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 13b19079e52a390e8be3372939619541aa3b7294
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982049"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193472"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformità della comunicazione in Microsoft 365
 
@@ -112,7 +112,7 @@ L'identificazione e la risoluzione dei problemi di conformità con la conformit�
 
 ![Flusso di lavoro conformità comunicazione](../media/communication-compliance-workflow.png)
 
-### <a name="configure"></a>Configurare
+### <a name="configure"></a>Configurazione
 
 In questo passaggio del flusso di lavoro vengono identificati i requisiti di conformità e vengono configurati i criteri di conformità della comunicazione. I modelli di criteri rappresentano un ottimo modo per non solo configurare rapidamente un nuovo criterio di conformità, ma anche per modificare e aggiornare rapidamente i criteri in base alle modifiche apportate ai requisiti. Ad esempio, potrebbe essere necessario testare rapidamente un criterio per la lingua offensiva e l'antimolestia sulle comunicazioni per un piccolo gruppo di utenti prima di configurare un criterio per tutti gli utenti dell'organizzazione.
 
@@ -121,10 +121,10 @@ In questo passaggio del flusso di lavoro vengono identificati i requisiti di con
 
 È possibile scegliere tra i seguenti modelli di criteri nel centro conformità di Microsoft 365:
 
-- **Linguaggio offensivo e antimolestia**: utilizzare questo modello per creare rapidamente un criterio che utilizza il classificatore incorporato per rilevare automaticamente il contenuto che può essere considerato abusivo o offensivo.
+- **Linguaggio offensivo e antimolestia**: utilizzare questo modello per creare rapidamente un criterio che utilizza i classificatori di minacce, parolacce e molestie incorporati per rilevare automaticamente i contenuti che potrebbero essere considerati abusivi o offensivi.
 - **Informazioni riservate**: utilizzare questo modello per creare un criterio per l'analisi delle comunicazioni contenenti tipi di informazioni riservate definite o parole chiave per garantire che i dati importanti non siano condivisi con utenti che non devono avere accesso.
 - **Conformità alle normative**: utilizzare questo modello per creare un criterio per l'analisi delle comunicazioni per i riferimenti ai termini finanziari standard associati agli standard normativi.
-- **Criteri personalizzati**: utilizzare questo modello per configurare i canali di comunicazione specifici, le condizioni di rilevamento individuali e la quantità di contenuto da esaminare per la supervisione nell'organizzazione.
+- **Criteri personalizzati**: utilizzare questo modello per configurare canali di comunicazione specifici, classificatori, condizioni di rilevamento individuali e la quantità di contenuto da esaminare per la supervisione nell'organizzazione.
 
 ### <a name="investigate"></a>Analizzare
 

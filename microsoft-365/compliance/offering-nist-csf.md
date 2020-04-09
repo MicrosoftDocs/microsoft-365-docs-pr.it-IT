@@ -1,7 +1,7 @@
 ---
 title: National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 description: I servizi cloud Microsoft soddisfano il National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF).
-keywords: Microsoft 365, conformità, soluzioni
+keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 65578f8105d52c87eb74cba57a215682f92bd02d
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 5d30073d611edf60ced4d926fdae0708d555cb6f
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170908"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188983"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 
@@ -35,12 +35,9 @@ FICIC fa riferimento a standard riconosciuti globalmente, tra cui il NIST SP 800
 
 NIST Cybersecurity Framework (CSF) è un Framework volontario che è costituito da standard, linee guida e procedure consigliate per gestire i rischi correlati a Cybersecurity. I servizi cloud di Microsoft sono stati sottoposti a audit di base di terze parti e di FedRAMP indipendenti e certificati secondo gli standard FedRAMP. Inoltre, tramite una valutazione convalidata eseguita da HITRUST, un'organizzazione leader nello sviluppo e nell'accreditamento degli standard per la sicurezza e la privacy, Office 365 è certificato per gli obiettivi specificati in NIST CSF.
 
-Informazioni su come accelerare la distribuzione di Cybersecurity Framework di NIST con il Punteggio di conformità e il modello di sicurezza e conformità di Azure:
+[Informazioni su come](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554) accelerare la distribuzione di Cybersecurity Framework di NIST con punteggio di conformità:
 
-- [Scaricare l'elenco di controllo di valutazione dei rischi per la sicurezza e la conformità di Azure-NIST CSF](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy?command=Download&downloadType=Document&downloadId=89ec5635-be07-4a5d-87d3-51783e4d3002)
-- [Per ulteriori informazioni sulla valutazione di NIST CSF per Office 365, vedere Compliance Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft associati
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 - [Amministrazione di Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 per il governo](https://aka.ms/d365-compliance-list)
@@ -54,9 +51,10 @@ La certificazione NIST CSF di Office 365 è valida per due anni.
 
 ## <a name="quickly-build-nist-csf-solutions-on-azure"></a>Creare rapidamente soluzioni del NIST CSF su Azure
 
-Lo standard del NIST Cybersecurity Framework (CSF) può essere impegnativo nel cloud. Fortunatamente, con Azure si avrà un inizio testa la sicurezza di Azure e la conformità del progetto del NIST QCS. Questo modello fornisce strumenti e linee guida per iniziare a creare soluzioni conformi al NIST CSF oggi.
+Lo standard del NIST Cybersecurity Framework (CSF) può essere impegnativo nel cloud. Attualmente, è possibile utilizzare i nuovi esempi di cianografia per FedRAMP moderato o FedRAMP alto per iniziare. I nuovi controlli NIST CSF sono in fase di sviluppo dai controlli di queste linee di base di FedRAMP.
 
-- [Iniziare a usare il modello di Azure NIST CSF](https://aka.ms/Azure-Blueprint-DoD-NIST)
+- [Esempio di cianografia moderata FedRAMP](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-m/)
+- [Esempio di FedRAMP High Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/fedramp-h/)
 
 ## <a name="perform-risk-assessment-on-office-365-using-nist-csf-in-compliance-score"></a>Eseguire una valutazione dei rischi su Office 365 utilizzando il NIST CSF nel punteggio di conformità
 
@@ -99,7 +97,7 @@ Microsoft fornisce le offerte più complete rispetto ad altri provider di serviz
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
 
-[Punteggio di conformità Microsoft](compliance-score.md) è una funzionalità in anteprima nel [Centro conformità Microsoft 365](microsoft-365-compliance-center.md) utile per comprendere lo stato di conformità dell'organizzazione e intraprendere azioni per ridurre i rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), selezionare il [modello NIST CSF](https://go.microsoft.com/fwlink/?linkid=2117917) preconfigurato dal menu a discesa **modello** per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
+[Microsoft Compliance Score](compliance-score.md) è una funzionalità di anteprima del [centro conformità di Microsoft 365](microsoft-365-compliance-center.md) che consente di comprendere la posizione di conformità dell'organizzazione e di intraprendere azioni per contribuire alla riduzione dei rischi. Dopo aver [impostato il Punteggio di conformità](compliance-score-setup.md), selezionare il [modello NIST CSF](https://go.microsoft.com/fwlink/?linkid=2117917) preconfigurato dal menu a discesa **modello** per consentire all'organizzazione di soddisfare i requisiti per il regolamento.
 
 ## <a name="resources"></a>Risorse
 
@@ -109,7 +107,7 @@ Microsoft fornisce le offerte più complete rispetto ad altri provider di serviz
 - [Ordine esecutivo presidenziale per il potenziamento della CyberSecurity delle reti federali e delle infrastrutture critiche](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Cloud Microsoft per enti pubblici](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Condizioni dei Servizi online](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Conformità nel Centro protezione di Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformità nel Centro protezione Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Scarica il documento di informazioni di base sulla soluzione
 

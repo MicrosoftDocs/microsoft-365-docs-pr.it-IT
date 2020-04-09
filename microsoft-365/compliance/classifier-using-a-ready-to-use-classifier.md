@@ -14,18 +14,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 viene fornito con un certo numero di classificatori incorporati che è possibile utilizzare per identificare ed etichettare il contenuto nell'organizzazione. In questo argomento viene illustrato come prepararsi per l'utilizzo di questi classificatori.
-ms.openlocfilehash: b8e4b51300bee86682924245bbf530e1e954b483
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 2bd36ac42278cfe7b015d03caf2d9e1958908f8f
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826247"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193504"
 ---
 # <a name="using-a-built-in-classifier-preview"></a>Utilizzo di un classificatore incorporato (anteprima)
 
-Microsoft ha formato e testato un certo numero di classificatori che utilizzano set di dati di esempio molto grandi, che possono essere utili per identificare determinate categorie di contenuto. Vedere [Guida introduttiva ai classificatori addestrabili (Preview)](classifier-getting-started-with.md). Questi classificatori vengono visualizzati nel `Ready to use` gruppo per impostazione predefinita.
+Microsoft ha formato e testato cinque classificatori utilizzando set di dati di esempio molto grandi, che possono essere utili per identificare determinate categorie di contenuto. Vedere [Guida introduttiva ai classificatori addestrabili (Preview)](classifier-getting-started-with.md). Questi classificatori vengono visualizzati nel `Ready to use` gruppo per impostazione predefinita.
 
-- **Lingua offensiva**: consente di rilevare gli elementi di testo che contengono parolacce, legature, scherni e espressioni mascherate (ovvero espressioni che hanno lo stesso significato di un termine più offensivo).
+Microsoft 365 viene fornito con cinque classificatori incorporati consigliati:
+
+> [!CAUTION]
+> Il classificatore incorporato del **linguaggio offensivo** è obsoleto perché produce un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. È consigliabile utilizzare invece i classificatori incorporati per la **minaccia**, la **profanità**e la **molestia** .
+
 - **Resumes**: rileva gli elementi che sono account testuali di qualifiche personali, didattiche, professionali del richiedente, esperienze lavorative e altre informazioni di identificazione personale.
 - **Codice sorgente**: consente di rilevare gli elementi che contengono una serie di istruzioni e istruzioni scritte nei primi 25 linguaggi di programmazione utilizzati su GitHub.
 
@@ -45,7 +49,7 @@ Microsoft ha formato e testato un certo numero di classificatori che utilizzano 
 > Prima di utilizzare i classificatori incorporati nel flusso di lavoro di classificazione e etichettatura, è consigliabile verificarli in base a un campione del contenuto dell'organizzazione che si adatta alla categoria per verificare che le stime di classificazione soddisfino le proprie aspettative.
 
 > [!IMPORTANT]
-> Si noti che la lingua offensiva, la molestia, la profanità e i classificatori di minacce funzionano solo con il testo ricercabile non sono esaustivi o completi. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare questi classificatori a sua discrezione. Anche se i classificatori possono assistere la propria organizzazione nel monitoraggio di un'offensiva e di altre lingue utilizzate, i classificatori non affrontano le conseguenze di tale lingua e non sono destinati a fornire il solo mezzo di monitoraggio o di risposta dell'organizzazione all'utilizzo di tale lingua. La propria organizzazione e non Microsoft o le sue affiliate resta responsabile di tutte le decisioni relative al monitoraggio, all'applicazione, al blocco, alla rimozione e alla conservazione di qualsiasi contenuto identificato da un classificatore preformato.
+> Si noti che la lingua offensiva, la molestia, la profanità e i classificatori di minacce funzionano solo con il testo ricercabile non sono esaustivi o completi. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare questi classificatori a sua discrezione. Anche se i classificatori possono assistere la propria organizzazione nel monitoraggio di un'offensiva e di altre lingue utilizzate, i classificatori non affrontano le conseguenze di tale lingua e non sono destinati a fornire il solo mezzo di monitoraggio o di risposta dell'organizzazione all'uso di tale lingua. La propria organizzazione e non Microsoft o le sue affiliate resta responsabile di tutte le decisioni relative al monitoraggio, all'applicazione, al blocco, alla rimozione e alla conservazione di qualsiasi contenuto identificato da un classificatore preformato.
 
 ## <a name="how-to-prepare-for-and-use-a-built-in-classifier"></a>Come prepararsi e utilizzare un classificatore incorporato
 

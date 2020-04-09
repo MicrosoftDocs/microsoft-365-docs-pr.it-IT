@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprendere il motivo per cui i risultati di ricerca stimati ed effettivi possono variare nelle ricerche eseguite con gli strumenti di eDiscovery in Office 365. '
-ms.openlocfilehash: 4b14e3aca51737b0a7c15b5219fda38c57ecad9d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1024a99ffa358e56783d562062f158e71f5e7ddc
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075466"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198373"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Differenze tra i risultati di ricerca stimati ed effettivi di eDiscovery in Office 365
 
@@ -55,7 +55,7 @@ Di seguito sono riportate alcune ragioni per queste differenze:
   
 - **Il modo in cui vengono valutati i risultati** : una stima dei risultati della ricerca è solo quella, una stima (e non un numero effettivo) degli elementi che soddisfano i criteri di query di ricerca. Per compilare la stima degli elementi di Exchange, un elenco degli ID messaggio che soddisfano i criteri di ricerca è richiesto dal database di Exchange dallo strumento di eDiscovery che si sta utilizzando. Tuttavia, quando si esportano i risultati della ricerca, la ricerca viene rieseguita e i messaggi effettivi vengono recuperati dal database di Exchange. Pertanto, queste differenze potrebbero risultare a causa del modo in cui viene determinato il numero stimato di elementi e il numero effettivo di elementi. 
     
-- **Modifiche che si verificano tra il momento in cui si valutano ed esportano i risultati** della ricerca: quando si esportano i risultati della ricerca, viene riavviata la ricerca per raccogliere gli elementi più recenti nell'indice di ricerca che soddisfano i criteri di ricerca. È possibile che siano stati creati, inviati o ricevuti elementi aggiuntivi che soddisfano i criteri di ricerca nel tempo tra la raccolta dei risultati della ricerca stimata e la data di esportazione dei risultati della ricerca. È inoltre possibile che gli elementi inclusi nell'indice di ricerca quando i risultati della ricerca sono stati stimati non siano più presenti perché sono stati eliminati dal percorso del contenuto prima dell'esportazione dei risultati della ricerca. Un modo per attenuare questo problema consiste nel specificare un intervallo di date per una ricerca eDiscovery. Un altro modo consiste nell'applicare un'esenzione ai percorsi di contenuto, in modo che gli elementi siano conservati e non possano essere eliminati. 
+- **Modifiche che si verificano tra il momento in cui si valutano ed esportano i risultati** della ricerca: quando si esportano i risultati della ricerca, viene riavviata la ricerca per raccogliere gli elementi più recenti nell'indice di ricerca che soddisfano i criteri di ricerca. È possibile che siano stati creati, inviati o ricevuti elementi aggiuntivi che soddisfano i criteri di ricerca nel tempo tra la raccolta dei risultati della ricerca stimata e la data di esportazione dei risultati della ricerca. È inoltre possibile che gli elementi inclusi nell'indice di ricerca quando i risultati della ricerca sono stati stimati non siano più presenti perché sono stati eliminati dal percorso del contenuto prima dell'esportazione dei risultati della ricerca. Un modo per attenuare questo problema consiste nel specificare un intervallo di date per una ricerca eDiscovery. Un altro modo consiste nell'applicare un'esenzione ai percorsi di contenuto, in modo che gli elementi siano conservati e non possano essere eliminati. Anche se è molto raro, anche nel caso in cui venga applicata un'esenzione, la manutenzione degli elementi del calendario incorporati (che non sono modificabili dall'utente, ma che sono inclusi in molti risultati della ricerca) può essere rimossa di tanto in tanto. La rimozione periodica degli elementi del calendario provocherà un numero inferiore di elementi esportati.
     
 - **Elementi non indicizzati** : gli elementi non indicizzati per la ricerca possono causare differenze tra i risultati di ricerca stimati ed effettivi. Ad esempio, eDiscovery sul posto in Exchange e il centro eDiscovery in SharePoint non includono gli elementi non indicizzati (che non soddisfano i criteri di ricerca) quando si esegue una ricerca per stimare i risultati della ricerca. Tuttavia, è possibile includere gli elementi non indicizzati quando si esportano i risultati della ricerca. Se si includono gli elementi non indicizzati quando si esportano i risultati della ricerca, potrebbero essere presenti più elementi esportati. Ciò causerà una differenza tra i risultati di ricerca stimati ed esportati. 
     

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d4a98383e88634f1e87606df5bcd1d066254081f
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: e9e13c4bb9a950326a5fc718be26f93d046776e7
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170930"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193514"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurare la conformità delle comunicazioni in Microsoft 365
 
@@ -119,7 +119,7 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
 
 4. Selezionare **create Policy** per creare e configurare un nuovo criterio da un modello o per creare e configurare un criterio personalizzato.
 
-    Se si sceglie un modello di criteri per creare un criterio, sarà necessario:
+    Se si sceglie un modello di criteri incorporato per creare un criterio, sarà necessario:
 
     - Confermare o aggiornare il nome del criterio. Non è possibile modificare i nomi dei criteri dopo la creazione del criterio.
     - Scegliere gli utenti o i gruppi da controllare, inclusa la scelta degli utenti o dei gruppi che si desidera escludere.
@@ -135,7 +135,11 @@ Per ulteriori informazioni sulla configurazione dei gruppi, vedere:
     - Scegliere la direzione di comunicazione da monitorare, incluse le comunicazioni in ingresso, in uscita o interne.
     - Definire le [condizioni](communication-compliance-feature-reference.md#ConditionalSettings)dei criteri di conformità della comunicazione. È possibile scegliere tra l'indirizzo del messaggio, la parola chiave, i tipi di file e le condizioni di corrispondenza delle dimensioni.
     - Scegliere se si desidera includere tipi di informazioni riservate. In questo passaggio è possibile selezionare i tipi di informazioni riservate predefinite e personalizzate. Scegliere tra tipi di informazioni riservate personalizzate esistenti o dizionari di parole chiave personalizzati nella procedura guidata criteri di conformità della comunicazione. È possibile creare questi elementi prima di eseguire la procedura guidata, se necessario. È inoltre possibile creare nuovi tipi di informazioni riservate dall'interno della procedura guidata criteri di conformità della comunicazione.
-    - Scegliere se si desidera abilitare il classificatore di lingua offensivo. Questo classificatore rileva la lingua inappropriata inviata o ricevuta nel corpo dei messaggi di posta elettronica.
+    - Scegliere se si desidera abilitare i classificatori. I classificatori possono rilevare la lingua inappropriata inviata o ricevuta nel corpo dei messaggi di posta elettronica o di altri tipi di testo.
+
+    >[!CAUTION]
+    >Il classificatore incorporato del **linguaggio offensivo** è obsoleto perché produce un numero elevato di falsi positivi. Non utilizzarlo e, se lo si sta attualmente utilizzando, è consigliabile spostarne i processi aziendali. È consigliabile utilizzare invece i classificatori incorporati per la **minaccia**, la **profanità**e la **molestia** .
+
     - Definire la percentuale di comunicazioni da esaminare.
     - Esaminare le selezioni dei criteri e creare il criterio.
 

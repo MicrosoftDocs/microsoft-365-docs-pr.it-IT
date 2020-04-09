@@ -1,7 +1,7 @@
 ---
 title: Autorizzazione provvisoria del dipartimento della difesa degli Stati Uniti (DoD)
 description: Autorizzazioni provvisorie del Department of Defense (DoD) di Microsoft ricevute ai livelli di impatto 5, 4 e 2.
-keywords: Microsoft 365, conformità, soluzioni
+keywords: Microsoft 365, conformità, offerte
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bfcad9829c32a7a4f91e4d7dee7dec922059cd18
-ms.sourcegitcommit: 397b22cea138cadef026128d878650f8f609a329
+ms.openlocfilehash: c68e51fd0efe415458942736a8d19ae1c12adc3c
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43068574"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189087"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>Autorizzazione provvisoria del dipartimento della difesa degli Stati Uniti (DoD) ai livelli di impatto 2, 4 e 5
 
@@ -36,7 +36,7 @@ Il supporto del servizio cloud di DoD definisce i criteri, i controlli di sicure
 I servizi cloud governativi di Microsoft soddisfano i requisiti esigenti del dipartimento della difesa degli Stati Uniti, dai livelli di impatto da 2 a 5, consentendo alle agenzie di difesa degli Stati Uniti di trarre vantaggio dai risparmi sui costi e dalla sicurezza rigorosa del cloud Microsoft. Distribuendo servizi protetti, tra cui Azure Government, Office 365 US Government e Dynamics 365 Government, le agenzie di difesa possono utilizzare una vasta gamma di servizi conformi.
 
 - Informazioni sui vantaggi di DoD DISA L2, L4 sul cloud Microsoft: [scaricare il reparto della difesa DISA Backgrounder](https://aka.ms/disa-backgrounder)
-- Informazioni su come accelerare la distribuzione di un programma di installazione di Microsoft DoD L2, L4 con il [modello di Azure DOD](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)
+- Informazioni su come accelerare la distribuzione di la DISA L2, L4 con le [cianografie di Azure DOD](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy)
 
 ## <a name="dod-impact-level-5-provisional-authorization"></a>Autorizzazione provvisoria del livello di impatto del DoD 5
 
@@ -58,7 +58,7 @@ In base alle autorizzazioni di FedRAMP, il supporto di servizi cloud DISA ha con
 
 Impact Level 2 include informazioni non classificate non controllate, ovvero dati autorizzati per il rilascio pubblico. Vengono inoltre riportate altre informazioni non classificate che, pur non essendo considerate "mission critical", richiedono comunque un livello minimo di controllo di accesso. Questa autorizzazione consente ai clienti del governo federale statunitense di distribuire informazioni non sensibili e applicazioni e siti Web di difesa di base sui servizi cloud Microsoft in ambito.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft associati
+## <a name="microsoft-in-scope-cloud-services"></a>Servizi cloud Microsoft inclusi nell'ambito
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>Servizi coperti per il livello di impatto 5 di DoD
 
@@ -83,7 +83,7 @@ Una volta concesso un DoD PA, i servizi cloud Microsoft vengono monitorati e val
 
 ## <a name="fast-track-your-deployment-of-dod-solutions-on-azure"></a>Monitorare rapidamente la distribuzione delle soluzioni DoD su Azure
 
-Ottenere un vantaggio su come approfittare dei vantaggi del cloud in Government con il reparto di sicurezza e conformità di Azure della Defense Blueprint. In questo modello sono disponibili strumenti e linee guida per iniziare a creare soluzioni conformi alla difesa oggi. [Iniziare a usare il modello di Azure DOD](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
+Ottenere un vantaggio su come approfittare dei vantaggi del cloud in Government con l'esempio Blueprint per Department of Defense L4. In questo modello sono disponibili strumenti e linee guida per iniziare a creare soluzioni conformi alla difesa oggi. [Iniziare a usare la cianografia di Azure per DoD L4](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
