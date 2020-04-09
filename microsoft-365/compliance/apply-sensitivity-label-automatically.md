@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 7bbfb85746c114fa277f28a87c04194bd290c1fd
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: a37e1ec6b342e8003427c0e90c2493ffa2952fe4
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163876"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189091"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -57,9 +57,10 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
     Per istruzioni sulla configurazione, vedere [Come configurare i criteri di applicazione automatica di etichette per SharePoint, OneDrive e Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) in questa pagina.
     
     Caratteristiche specifiche dell'etichettatura automatica per SharePoint e OneDrive:
-    - Numero massimo di 25.000 file (Word, PowerPoint o Excel) nel tenant al giorno
-    - Numero massimo di 10 raccolte siti in tutti i criteri
-    - Numero massimo di 10 criteri nel tenant
+    - Massimo di 25.000 file (Word, PowerPoint o Excel) nel tenant al giorno
+        - Massimo di 5 file per utente con licenza al giorno
+    - Massimo di 10 raccolte siti in tutti i criteri
+    - Massimo di 10 criteri nel tenant
 
     Caratteristiche specifiche dell'etichettatura automatica per Exchange:
     - A differenza dell'etichettatura manuale o dell'etichettatura automatica per le app di Office, negli allegati di Office vengono ricercate anche le condizioni specificate nei criteri di applicazione automatica di etichette. Quando viene rilevata una corrispondenza, viene applicata un'etichetta al messaggio ma non all'allegato.
@@ -68,7 +69,7 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
     - La posta in arrivo viene etichettata quando esiste una corrispondenza con le condizioni di etichettatura automatica. Tuttavia, se l'etichetta è configurata per la crittografia, la crittografia non viene applicata.
     
 
-## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Confronto tra l'applicazione automatica di etichette per la app di Office e i criteri di applicazione automatica di etichette
+## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Confronto tra l'applicazione automatica di etichette per le app di Office e i criteri di applicazione automatica di etichette
 
 Nella tabella seguente sono riportate le differenze di comportamento tra i due metodi complementari di etichettatura automatica:
 
@@ -96,7 +97,7 @@ Le etichette sono ordinate per la valutazione in base alla posizione specificata
 
 Tenere presente che non è possibile applicare al contenuto un'etichetta padre (un'etichetta con sottoetichette). Assicurarsi di non configurare un'etichetta padre in modo che venga applicata automaticamente o consigliata perché le etichette padre non vengono applicate al contenuto in app di Office che usano con il client di assegnazione delle etichette unificato Azure Information Protection. Per ulteriori informazioni sulle etichette padre e sulle sottoetichette, vedere [Sottoetichette (raggruppamento etichette)](sensitivity-labels.md#sublabels-grouping-labels).
 
-## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Come configurare l'applicazione automatica di etichette per le app Office
+## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Come configurare l'applicazione automatica di etichette per le app di Office
 
 L'assegnazione automatica di etichette nelle app Office per Windows è supportata dal client di etichettatura unificata di Azure Information Protection. Per l'etichettatura predefinita nelle app Office, questa funzionalità è disponibile [in versione di anteprima per alcune app](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
