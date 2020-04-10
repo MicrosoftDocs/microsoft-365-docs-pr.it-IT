@@ -7,7 +7,7 @@ author: pebaum
 manager: mnirkhe
 ms.date: 2/14/2018
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: "Informazioni su come diventare l'amministratore e ottenere la sottoscrizione di Office 365 per l'organizzazione. "
-ms.openlocfilehash: 7b213d2a2e987a4e12cb410372e540ca715528a1
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: de7528d79353ec5e674c349e328dd81c32725669
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857416"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212258"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>Diventare l'amministratore e acquistare Office 365 per l'organizzazione
 
@@ -87,7 +87,7 @@ Ora che si è l'amministratore, è possibile eseguire le operazioni seguenti:
 |Aggiungere o rimuovere licenze  <br/> |È possibile [aggiungere altre licenze](../../commerce/licenses/buy-licenses.md) per gli utenti che non utilizzano ancora Office 365 o [rimuovere le licenze dagli utenti](../manage/remove-licenses-from-users.md) che non si desidera utilizzare per l'abbonamento a Office 365 dell'organizzazione.  <br/> |
 |Contattare altre persone che si sono già iscritte  <br/> |Contattare gli utenti e informarli che si sta gestendo il loro abbonamento a Office 365 e che è stato eseguito l'aggiornamento. [Seguire questi passaggi](../add-users/add-users.md) per visualizzare un elenco **Utenti attivi** e i rispettivi indirizzi di posta elettronica.  <br/> |
 |Iniziare a usare Office 365  <br/> |Visitare l'[Area risorse di Office 365](https://support.office.com/learn/office365-for-business) per informazioni su come accedere, controllare la posta elettronica, condividere documenti e altro ancora. L'amministratore e gli utenti possono usare questo sito per iniziare a usare Office 365.  <br/> |
-|Gestire l'abbonamento a Office 365  <br/> |Visitare il [centro assistenza per gli amministratori di Office 365](../admin-home.yml) e acquisire attività amministrative comuni come l'aggiunta e la rimozione di utenti, la reimpostazione delle password e la configurazione dei dispositivi mobili.  <br/> |
+|Gestire l'abbonamento a Office 365  <br/> |Visitare il [centro assistenza per gli amministratori di Office 365](../admin-home.md) e acquisire attività amministrative comuni come l'aggiunta e la rimozione di utenti, la reimpostazione delle password e la configurazione dei dispositivi mobili.  <br/> |
 
 ## <a name="still-need-help"></a>Serve ulteriore assistenza?
 

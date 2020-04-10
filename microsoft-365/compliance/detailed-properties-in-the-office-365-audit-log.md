@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Descrizioni delle proprietà aggiuntive incluse in un record del registro di controllo di Office 365.
-ms.openlocfilehash: af91acfbdc94439df04ccf5ecd4fd6a01112f442
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: 28056cc6f21d0fbb4a90a455211c3fc368e3cd5e
+ms.sourcegitcommit: 8959701cf009068b40da2757b4a61da61d5c166b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978236"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43207175"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Proprietà dettagliate nel log di controllo di Office 365
 
@@ -54,7 +54,7 @@ Nella tabella seguente vengono descritte le proprietà incluse (a seconda del se
 |EventSource|Indica che si è verificato un evento in SharePoint. I valori possibili sono **SharePoint** e **ObjectModel**.|SharePoint|
 |ExternalAccess|Per l'attività di amministrazione di Exchange, specifica se il cmdlet è stato eseguito da un utente dell'organizzazione, dal personale del datacenter Microsoft o da un account di servizio di Datacenter o da un amministratore delegato. Il valore **false** indica che il cmdlet è stato eseguito da un utente dell'organizzazione. Il valore **true** indica che il cmdlet è stato eseguito dal personale del datacenter, da un account di servizio di Datacenter o da un amministratore delegato.  <br/> Per attività Cassetta postale di Exchange, specifica se è stato eseguito l'accesso a una cassetta postale da parte di un utente esterno all'organizzazione.|Exchange|
 |ExtendedProperties|Proprietà estese per un evento di Azure Active Directory.|Azure Active Directory|
-|ID|ID della voce del report. L'ID identifica in modo univoco la voce del report.|Tutto|
+|ID|ID della voce del record di controllo. L'ID identifica in modo univoco il record nel log di controllo. <sup>1</sup>|Tutto|
 |InternalLogonType|Riservato all'utilizzo interno.|Exchange (attività delle cassette postali)|
 |ItemType|Tipo di oggetto a cui è stato effettuato l'accesso o la modifica. I valori possibili includono **file**, **cartella**, **Web**, **sito**, **tenant**e **DocumentLibrary**.|SharePoint|
 |LoginStatus|Identifica gli errori di accesso che potrebbero essere stati verificati.|Azure Active Directory|
@@ -87,13 +87,13 @@ Nella tabella seguente vengono descritte le proprietà incluse (a seconda del se
 |UserId|L'utente che ha eseguito l'azione, specificata nella proprietà **Operation** , che ha provocato la registrazione del record. I record di controllo per le attività eseguite dagli account di sistema, ad esempio SHAREPOINT\system o NT AUTHORITY\SYSTEM, sono inclusi anche nel registro di controllo. Un altro valore comune per la proprietà UserId è app@sharepoint. Ciò indica che l'utente che ha eseguito l'attività era un'applicazione con le autorizzazioni necessarie in SharePoint per eseguire azioni a livello dell'organizzazione (ad esempio, la ricerca di un sito di SharePoint o un account OneDrive) per conto di un utente, un amministratore o un servizio. Per altre informazioni, vedere [Utente app\@sharepoint nei record di controllo](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records). |Tutto|
 |UserKey|ID alternativo per l'utente identificato nella proprietà **userid** . Ad esempio, questa proprietà viene popolata con l'ID univoco Passport (PUID) per gli eventi eseguiti dagli utenti in SharePoint. Questa proprietà può anche specificare lo stesso valore della proprietà **userid** per gli eventi che si verificano in altri servizi ed eventi eseguiti dagli account di sistema.|Tutto|
 |UserSharedWith|Utente a cui è stata condivisa una risorsa. Questa proprietà è inclusa se il valore della proprietà **Operation** è **SharingSet**. Questo utente è elencato anche nella colonna **Shared con** del report.|SharePoint|
-|UserType|Il tipo di utente che ha eseguito l'operazione. I valori riportati di seguito indicano il tipo di utente. <br/> <br/> **0** -un utente normale. <br/>**2** -un amministratore dell'organizzazione di Office 365. <sup>1</sup> <br/>**3** -un account di sistema dell'amministratore o del datacenter di Microsoft datacenter. <br/>**4** -un account di sistema. <br/>**5** -un'applicazione. <br/>**6** -un'entità di servizio.<br/>**7** -un criterio personalizzato.<br/>**8** -un criterio di sistema.|Tutto|
+|UserType|Il tipo di utente che ha eseguito l'operazione. I valori riportati di seguito indicano il tipo di utente. <br/> <br/> **0** -un utente normale. <br/>**2** -un amministratore dell'organizzazione di Office 365. <sup>2</sup> <br/>**3** -un account di sistema dell'amministratore o del datacenter di Microsoft datacenter. <br/>**4** -un account di sistema. <br/>**5** -un'applicazione. <br/>**6** -un'entità di servizio.<br/>**7** -un criterio personalizzato.<br/>**8** -un criterio di sistema.|Tutto|
 |Version|Indica il numero di versione dell'attività (identificata dalla proprietà **Operation** ) registrata.|Tutto|
 |Carico di lavoro|Il servizio Office 365 in cui si è verificata l'attività.|Tutto|
 ||||
 
 > [!NOTE]
-><sup>1</sup> per gli eventi relativi a Azure Active Directory, il valore di un amministratore non viene utilizzato in un record di controllo. I record di controllo per le attività eseguite dagli amministratori indicheranno che un utente normale (ad esempio, **UserType: 0**) ha eseguito l'attività. La proprietà **userid** identificherà la persona (utente o amministratore normale) che ha eseguito l'attività.<br/>
+><sup>1</sup> i record di controllo duplicati (con lo stesso valore per la proprietà **ID** ) possono essere visualizzati nel registro di controllo. Questo è un metodo di correzione degli errori per evitare la mancata esecuzione degli eventi di controllo.<br/><br/><sup>2</sup> per gli eventi correlati ad Azure Active Directory, il valore di un amministratore non viene utilizzato in un record di controllo. I record di controllo per le attività eseguite dagli amministratori indicheranno che un utente normale (ad esempio, **UserType: 0**) ha eseguito l'attività. La proprietà **userid** identificherà la persona (utente o amministratore normale) che ha eseguito l'attività.
 
 Le proprietà descritte sopra vengono visualizzate anche quando si fa clic su **altre informazioni** quando si visualizzano i dettagli di un evento specifico.
   

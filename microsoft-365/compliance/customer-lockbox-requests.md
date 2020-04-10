@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sulle richieste dell'archivio protetto dei clienti che consentono di controllare il modo in cui un tecnico del supporto Microsoft può accedere ai dati durante l'esecuzione di un problema.
-ms.openlocfilehash: 254479f7c07b74abf04802a7e2e591a2ac375e59
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: f909d67383c248ab42c469f850de0e42cc41eede
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113563"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211953"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Archivio protetto dei clienti in Office 365
 

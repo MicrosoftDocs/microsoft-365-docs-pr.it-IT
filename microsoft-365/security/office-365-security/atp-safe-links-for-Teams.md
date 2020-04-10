@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: I team avranno ora accesso ai collegamenti sicuri al momento del clic. Se si utilizzano chat 1-su-1 chat, tra gruppi o in canali e tabulazioni, se si dispone di un abbonamento a Office 365 ATP, si avrà la possibilità di abilitare e utilizzare questa funzionalità di sicurezza.
-ms.openlocfilehash: 864b211a1f007a0f6bde83da12b61362b53bf041
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 49a49bd41e71daf0afc9e7a24e79898ff98ad798
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030142"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212546"
 ---
 <!--06/21/2019-->
 
@@ -35,6 +35,9 @@ Tenere presente quanto segue:
 1. Quando si avvia l'applicazione teams, Office 365 verifica che l'utente appartenga a un'organizzazione con Office 365 ATP e che l'utente faccia parte di un criterio di collegamenti sicuri attivo con la relativa protezione abilitata per Microsoft teams.
 
 2. Se il valore di cui sopra è vero, gli URL verranno convalidati al momento del clic su chat, chat di gruppo, canali e in schede per tale utente.
+
+> [!NOTE]
+> I collegamenti sicuri proteggono gli utenti dai collegamenti inviati dagli utenti guest, dagli utenti federati, dagli utenti tenant. Se l'utente che ha effettuato l'accesso dispone di collegamenti sicuri per i team abilitati, verranno applicate le protezioni dei collegamenti sicuri.
  
 ## <a name="what-will-users-experience"></a>Che cosa useranno gli utenti? 
 

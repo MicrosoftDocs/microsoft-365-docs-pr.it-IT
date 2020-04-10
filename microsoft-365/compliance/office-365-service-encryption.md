@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Riepilogo: informazioni sulla crittografia dei dati a livello di servizio in Microsoft Office 365.'
-ms.openlocfilehash: a8faded033ade013924eeeab269aa213840430b4
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: fb6bf87fbd51bcb4383e9eb595ef11f081989d86
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193462"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211943"
 ---
 # <a name="office-365-service-encryption"></a>Servizio di crittografia di Office 365
 
 Oltre a utilizzare BitLocker per la crittografia a livello di volume, Exchange Online, Skype for business, SharePoint Online, OneDrive for business e i team utilizzano anche la crittografia del servizio per crittografare i dati dei clienti. La crittografia del servizio consente di eseguire due opzioni di gestione principali:
 
-- Microsoft gestisce tutte le chiavi di crittografia. Questa opzione è attualmente disponibile in SharePoint Online, OneDrive for business, Skype for business e chat teams. I dati vengono crittografati per impostazione predefinita con le chiavi gestite Microsoft.
+- Microsoft gestisce tutte le chiavi di crittografia. Questa opzione è attualmente disponibile in SharePoint Online, OneDrive for business, Skype for business e chat teams. I dati vengono crittografati per impostazione predefinita con le chiavi gestite da Microsoft.
 
-- L'organizzazione fornisce le chiavi radice. È possibile gestire queste chiavi utilizzando il Vault Key di Azure. Questa opzione è denominata Customer Key. La chiave del cliente è attualmente disponibile per i file di Exchange Online, SharePoint Online, OneDrive for business, Skype for business e teams. Se si utilizza il codice "Customer Key", queste chiavi sostituiscono le chiavi gestite Microsoft per crittografare i dati.
+- L'organizzazione fornisce le chiavi radice. È possibile gestire queste chiavi utilizzando il Vault Key di Azure. Questa opzione è denominata Customer Key. La chiave del cliente è attualmente disponibile per i file di Exchange Online, SharePoint Online, OneDrive for business, Skype for business e teams. Se si utilizza il codice "Customer Key", queste chiavi sostituiscono le chiavi gestite da Microsoft per crittografare i dati.
 
 Indipendentemente dall'opzione scelta, la crittografia dei servizi fornisce molteplici vantaggi:
 

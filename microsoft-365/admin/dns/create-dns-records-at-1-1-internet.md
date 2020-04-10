@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi a 1&1 IONOS per Office 365.
-ms.openlocfilehash: d4ff6bea0d96402c34b1d1ae302510a6e718c38d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e31c9d9d08e29156ff6197c030de6b0f4169b5f4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352057"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211872"
 ---
 # <a name="create-dns-records-at-11-ionos-for-office-365"></a>Creare record DNS in 1&1 IONOS per Office 365
 
@@ -300,8 +300,8 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:51)](
     
     |**Tipo**|**Service**|**Protocol**|**Name**|**Host**|**Priorità**|**Peso**|**Porta**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV  <br/> |sip  <br/> |tls  <br/> |(Leave this field empty.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (1 ora)  <br/> |
-    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |Lasciare vuoto questo campo.  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (1 ora)  <br/> |  
+    |SRV  <br/> |sip  <br/> |tls  <br/> |(Leave this field empty.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (1 ora)  <br/> |
+    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |Lasciare vuoto questo campo.  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (1 ora)  <br/> |  
     
     ![1&amp;1-BP-Configure-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   

@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: Informazioni su come risolvere i conflitti di licenza con l'abbonamento a Office 365 for business.
-ms.openlocfilehash: 63464951c4f1fd568248ca5c43da9f8c94347711
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 9dbd483b01566039cb227cd3d2f086c3f6e34be5
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361781"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212294"
 ---
 # <a name="resolve-license-conflicts-in-office-365-for-business"></a>Risolvere i conflitti di licenza in Office 365 per le aziende
 
@@ -33,7 +33,7 @@ ms.locfileid: "42361781"
   
 ## <a name="how-do-i-view-license-conflicts"></a>Come si visualizzano i conflitti di licenza?
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
 
     Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">licenze</a> .
 

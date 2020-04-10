@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -26,12 +26,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Informazioni su come importare contatti, calendari, email da Gmail o un altro provider di posta elettronica in Office 365. '
-ms.openlocfilehash: 2b2f4441772a9d373316ff14f06bcdeb61e5840d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6decee3fd45d11ed1e71e71e0cf7191ccec6aa3d
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360707"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212186"
 ---
 # <a name="migrate-email-and-contacts-to-office-365"></a>Eseguire la migrazione di posta elettronica e contatti a Office 365
 
@@ -53,9 +53,9 @@ Seguire questa procedura per importare posta elettronica, contatti e calendario 
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### <a name="import-from-outlook-desktop"></a>Importare da Outlook (desktop)
+### <a name="import-from-outlook-desktop"></a>Importazione da Outlook (desktop)''
 
-Seguire questa procedura per esportare posta elettronica, contatti e calendari da Outlook a un file con estensione pst e quindi importare il file in Outlook con Office 365:
+Fol'ow questi passaggi per esportare la posta elettronica, i contatti e i calendari da Outlook a un file. pst e quindi importare il file in Outlook con Office 365:
   
 1. [Esportare posta elettronica, contatti e calendario](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     

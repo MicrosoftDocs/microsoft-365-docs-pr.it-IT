@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi nel DNS basato su Windows per Office 365.
-ms.openlocfilehash: ddea5cb95a7f2abef8b68b37de473f936ee08eb5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d33a2f79111f8951c3ec31ca5680877ad2e7d570
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245027"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210565"
 ---
 # <a name="create-dns-records-for-office-365-using-windows-based-dns"></a>Creare record DNS per Office 365 utilizzando il DNS basato su Windows
 
@@ -38,7 +38,7 @@ Per iniziare, è necessario [trovare i record DNS nel DNS basato su Windows in](
 Problemi relativi al flusso di posta o ad altri problemi dopo l'aggiunta di record DNS, vedere [risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Trovare i record DNS in un server DNS basato su Windows
-<a name="BKMK_find_your_dns_1"></a> Passare alla pagina contenente i record DNS per il dominio. Se si sta utilizzando Windows Server 2008, andare a **Start** > **Run**. Se si utilizza Windows Server 2012, premere il tasto Windows e **r**. Digitare **dnsmgmnt. msc**e quindi fare clic su **OK**. In gestione DNS espandere ** \<zone di ricerca in\> \> avanti del nome del server DNS  **. Selezionare il dominio. A questo punto è possibile creare i record DNS.
+<a name="BKMK_find_your_dns_1"> </a> Passare alla pagina contenente i record DNS per il dominio. Se si sta utilizzando Windows Server 2008, andare a **Start** > **Run**. Se si utilizza Windows Server 2012, premere il tasto Windows e **r**. Digitare **dnsmgmnt. msc**e quindi fare clic su **OK**. In gestione DNS espandere ** \<zone di ricerca in\> \> avanti del nome del server DNS  **. Selezionare il dominio. A questo punto è possibile creare i record DNS.
    
 ## <a name="add-mx-record"></a>Aggiungere il record MX
 <a name="BKMK_add_MX"> </a>
@@ -48,7 +48,7 @@ Aggiungere un record MX in modo che la posta elettronica per il dominio venga re
 - Dalla riga MX nella sezione Exchange Online della pagina Aggiungi record DNS in Office 365, copiare il valore elencato in punti a indirizzo. Questo valore viene utilizzato nel record che si sta creando in questa attività. 
 - Nella pagina Gestore DNS per il dominio, passare a **azione** > **Mail Exchanger (MX)**. Per trovare questa pagina per il dominio, vedere [trovare i record DNS nel DNS basato su Windows](#find-your-dns-records-in-windows-based-dns).  
 - Nella finestra di dialogo **nuovo record di risorse** verificare che i campi siano impostati esattamente sui valori seguenti: 
-    - Nome host: 
+    - Nome host:  
     - @Address: incollare il valore dei punti di indirizzo che è stato appena copiato da Office 365 qui.  
     - Pref 
 - Selezionare **Salva modifiche**.
@@ -110,7 +110,7 @@ Aggiungere il record CNAME Enterpriseenrollment di MDM.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 necessari al record corrente in modo che sia presente un *singolo* record SPF che includa entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 richiesti al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori. 
   
 Aggiungere il record TXT SPF per il dominio per proteggerlo dalla posta indesiderata.
   
@@ -166,7 +166,7 @@ Prima di aggiungere i record DNS per configurare i servizi di Office 365, Office
   
 
 1. Raccogliere informazioni da Office 365.  <br/> 
-2. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings. 
+2. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>. 
 3. Nella pagina **Domains** , nella colonna **Actions** per il dominio che si sta verificando, selezionare **Avvia installazione**. 
 4. Nella pagina **Aggiungi un dominio a Office 365** selezionare **Avvia passaggio 1**. 
 5. Nell'elenco a discesa **vedere le istruzioni per l'esecuzione di questo passaggio con** la **conferma che si è proprietari** della pagina del dominio scegliere **istruzioni generali**. 
@@ -195,7 +195,7 @@ Verificare il dominio in Office 365.
 3. Nella casella di controllo **conferma la propria** pagina di dominio, selezionare fine **, verifica ora**, quindi nella finestra di dialogo di conferma selezionare **termina**. 
    
 > [!NOTE]
->  In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o altro dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Indirizzo di posta elettronica non instradabile usato come UPN in Active Directory locale
 <a name="BKMK_ADNote"> </a>
@@ -203,5 +203,5 @@ Verificare il dominio in Office 365.
 Se si prevede di sincronizzazione Active Directory locale con Office 365, è consigliabile verificare che il suffisso del nome dell'entità utente (UPN) di Active Directory sia un suffisso di dominio valido e non un suffisso di dominio non supportato come @contoso.local. Se è necessario modificare il suffisso UPN, vedere [come preparare un dominio non instradabile per la sincronizzazione della directory](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7).
   
 > [!NOTE]
->  In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   

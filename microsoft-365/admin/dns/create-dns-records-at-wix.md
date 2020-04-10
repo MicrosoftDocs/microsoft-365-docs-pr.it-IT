@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in WiX per Office 365.
-ms.openlocfilehash: 43d2f2417153dd0c848c33736733237b1681c02c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8487c49e989bf2db345ae9e6d0e2970c5eb40cb6
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243047"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211063"
 ---
 # <a name="create-dns-records-at-wix-for-office-365"></a>Creare record DNS su Wix per Office 365
 
@@ -48,7 +48,7 @@ Ecco i principali record da aggiungere.
 Dopo aver aggiunto questi record in Wix, il domino sarà configurato per l'uso con i servizi di Office 365.
   
 > [!NOTE]
->  In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o altro dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-a-txt-record-for-verification"></a>Aggiungere un record TXT a scopo di verifica
 <a name="BKMK_txt"> </a>
@@ -58,7 +58,7 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
   
-1. Per iniziare, passare alla propria pagina dei domini su Wix usando [questo collegamento](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Wix usando [questo collegamento](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Verrà richiesto di eseguire l'accesso.
     
 2. Nella pagina **domini personali** , nell'area **Avanzate** , selezionare il pulsante **modifica DNS** . 
     
@@ -75,16 +75,16 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     
 6. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
   
   
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
    
   
 4. Nella pagina **Verifica dominio** selezionare **Verifica**.
@@ -92,12 +92,12 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
   
 > [!NOTE]
->  In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o altro dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Aggiungere un record MX in modo che la posta elettronica per il dominio venga recapitata in Office 365
 <a name="BKMK_mx"> </a>
 
-1. Per iniziare, passare alla propria pagina dei domini su Wix usando [questo collegamento](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Wix usando [questo collegamento](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Verrà richiesto di eseguire l'accesso.
     
 2. Nella sezione **cassette postali** della pagina **My Domains** selezionare il collegamento **Configure Your MX Records** . 
     
@@ -128,9 +128,9 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 4. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente:
     
-|**Host Name**|**Points to**|**TTL**|
+|**Host Name**|**Punta a**|**TTL**|
 |:-----|:-----|:-----|
-|autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 Hour  <br/> |
+|individuazione automatica  <br/> |autodiscover.outlook.com  <br/> |1 Hour  <br/> |
 |sip  <br/> |sipdir.online.lync.com  <br/> |1 Hour <br/> |
 |lyncdiscover  <br/> |webdir.online.lync.com   <br/> |1 Hour  <br/> |
 |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 ora <br/> |
@@ -138,15 +138,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
    
 5. Selezionare il pulsante **Salva DNS** nella parte superiore dell'editor DNS. 
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+6. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_spf"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 necessari al record corrente in modo che sia presente un *singolo* record SPF che includa entrambi i set di valori.  
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. If you already have an SPF record for your domain, don't create a new one for Office 365. Al contrario, aggiungere i valori di Office 365 richiesti al record corrente in modo da ottenere un *unico* record SPF che include entrambi i set di valori.  
   
-1. Per iniziare, passare alla propria pagina dei domini su Wix usando [questo collegamento](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Wix usando [questo collegamento](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Verrà richiesto di eseguire l'accesso.
     
 2. Nella pagina **domini personali** , nell'area **Avanzate** , selezionare il pulsante **modifica DNS** . 
     
@@ -160,12 +160,12 @@ When Office 365 finds the correct TXT record, your domain is verified.
    
 5. Selezionare il pulsante **Salva DNS** nella parte superiore dell'editor DNS. 
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+6. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
 ## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Aggiungere i due record SRV necessari per Office 365
 <a name="BKMK_srv"> </a>
 
-1. Per iniziare, passare alla propria pagina dei domini su Wix usando [questo collegamento](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
+1. Per iniziare, passare alla propria pagina dei domini su Wix usando [questo collegamento](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Verrà richiesto di eseguire l'accesso.
     
 2. Nella pagina **domini personali** , nell'area **Avanzate** , selezionare il pulsante **modifica DNS** . 
     
@@ -173,16 +173,16 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 4. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente:
     
-|**Servizio**|**Protocol**|**Name**|**Peso**|**Port**|**Destinazione**|**Priorità**|**TTL**|
+|**Servizio**|**Protocol**|**Name**|**Peso**|**Porta**|**Destinazione**|**Priorità**|**TTL**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|sip  |tls  |Popolamento automatico |1  |443   |sipdir.online.lync.com |100 |1 Hour |
-|sipfed|tcp |Popolamento automatico|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
+|sip  |tls  |Popolamento automatico |1   |443   |sipdir.online.lync.com |100 |1 Hour |
+|sipfed|tcp |Popolamento automatico|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. Selezionare il pulsante **Salva DNS** nella parte superiore dell'editor DNS. 
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+6. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
 > [!NOTE]
->  In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 

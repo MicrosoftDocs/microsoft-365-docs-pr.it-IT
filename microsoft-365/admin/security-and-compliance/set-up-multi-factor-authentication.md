@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Informazioni su come usare le impostazioni predefinite per la sicurezza per configurare l'autenticazione a più fattori per gli utenti di Office 365.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 331552a4de21198fe7fbc9980e89bfcd87449ffa
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 5f468f040ca88ab4ab2bc198d0d7550bf2e7f4af
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153557"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204023"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
   
@@ -68,11 +68,11 @@ Se in precedenza è stata configurata l'autenticazione a più fattori con criter
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>Passare dai criteri di base alle impostazioni predefinite per la sicurezza
 
-1. Nell'[interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=834822) selezionare **Configurazione**.
+1. Nell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=834822), selezionare **Mostra tutto**, quindi **Azure Active Directory** in interfaccia di **Amministrazione**.
 
-2. Accanto a **Accesso e sicurezza**, in **Rendi l’accesso più sicuro**, selezionare **Visualizzazione**.
+2. Nell'interfaccia di **amministrazione di Azure Active Directory** scegliere**protezione**di **Azure Active Directory** > .
 
-3. In **Rendi l’accesso più sicuro**, selezionare **Gestisci**. 
+3. Sulla **sicurezza | Pagina introduttiva** , scegliere **accesso condizionale**. 
 
 4. Nella pagina **Criteri di accesso condizionale al portale di Azure** selezionare ogni criterio di base **Attivato** e impostarlo su **Disattivato**.
 5. Passare alla pagina [Proprietà di Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).

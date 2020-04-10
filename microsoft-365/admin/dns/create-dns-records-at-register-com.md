@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Register.com per Office 365.
-ms.openlocfilehash: 0210c03a48112d9cc517ae15f879db3b40eb8c94
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d89e1843a7c914843c7e9d5c41582878e138473a
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354137"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211099"
 ---
 # <a name="create-dns-records-at-registercom-for-office-365"></a>Creare record DNS in Register.com per Office 365
 
@@ -123,7 +123,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:32)](
     
     |****Host Name****|****Priority****|****Mail Server****|
     |:-----|:-----|:-----|
-    |@  <br/> |Alta  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/>  <br/>**Nota:** ottenere il valore \<*domain-key*\> dall'account di Office 365. <br> [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<chiave-dominio\>*  .mail.protection.outlook.com  <br/>  <br/>**Nota:** ottenere il valore \<*domain-key*\> dall'account di Office 365. <br> [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copiare e incollare il valore dalla tabella](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -243,8 +243,8 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:55)](
     
     |****Service****|****Proto****|****Name****|****Priority****|****Weight****|****Port****|****Target****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![Copiare e incollare i valori della tabella](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   

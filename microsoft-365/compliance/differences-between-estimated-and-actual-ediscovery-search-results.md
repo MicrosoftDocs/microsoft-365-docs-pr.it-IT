@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/13/2017
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,18 +18,19 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprendere il motivo per cui i risultati di ricerca stimati ed effettivi possono variare nelle ricerche eseguite con gli strumenti di eDiscovery in Office 365. '
-ms.openlocfilehash: 1024a99ffa358e56783d562062f158e71f5e7ddc
-ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
+ms.openlocfilehash: 9ee24cc0e7b85d39480149d65897b303e23c0adb
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/09/2020
-ms.locfileid: "43198373"
+ms.locfileid: "43204068"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Differenze tra i risultati di ricerca stimati ed effettivi di eDiscovery in Office 365
 
 Questo argomento si applica alle ricerche che è possibile eseguire utilizzando uno dei seguenti strumenti di Microsoft eDiscovery: 
 
 - Ricerca contenuto nel centro sicurezza & conformità  <br/>  
+- Ricerche associate ai casi di eDiscovery di base
 - EDiscovery sul posto nell'interfaccia di amministrazione di Exchange (EAC)  <br/>  
 - Centro eDiscovery in SharePoint Online  <br/> 
    
@@ -83,5 +84,3 @@ Nel centro eDiscovery in SharePoint Online, è possibile includere contenuto non
   
 > [!NOTE]
 > Se non si selezionano gli **elementi Includi crittografati o che dispongono di un formato non riconosciuto** quando si esportano i risultati della ricerca o si scaricano solo i report, vengono scaricati i report di errore di indice, ma non sono presenti voci. Questo non significa che non vi siano errori di indicizzazione. Significa solo che gli elementi non indicizzati non sono stati inclusi nell'esportazione. 
-  
-

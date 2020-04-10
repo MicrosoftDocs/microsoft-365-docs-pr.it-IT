@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
 description: Informazioni su come configurare Office 365 per gestire i record DNS del dominio personalizzato in Hostgator.
-ms.openlocfilehash: 95131e258482fdb0ff9aa7f00b3339e1c6f9509d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d592fc77513107679206a4ac187116c7d6fb794f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351847"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212330"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-hostgator"></a>Modificare i server dei nomi per configurare Office 365 con Hostgator
 
@@ -93,7 +93,7 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
 |||||
 |:-----|:-----|:-----|:-----|
 |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-|Usare il proprio  *nome_dominio*  , ad esempio fourthcoffee.com.<br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
+|Usare il proprio  *nome_dominio*  , ad esempio fourthcoffee.com.<br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
    
 4. Selezionare **Aggiungi record**.
     

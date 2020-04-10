@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Informazioni su come aggiungere e configurare il dominio in Office 365 in modo che i servizi come la posta elettronica e Skype for business online utilizzino il proprio nome di dominio.
 ms.custom: okr_smb
-ms.openlocfilehash: 3030fc33a6d528fd6cb4e97c27cdbb7c251e9a97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 838025002443ec35787ea91775c60d3829545af4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252968"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210493"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-any-domain-registrar"></a>Modificare i server dei nomi per configurare Office 365 con un registrar
 
@@ -59,7 +59,7 @@ Prima di usare il proprio dominio con Office 365, è necessario dimostrare di es
     
 2. Scegliere il dominio.
     
-3. Trovare la pagina in cui è possibile modificare i record DNS del proprio dominio.
+3. Individuare la pagina in cui è possibile modificare i record DNS per il dominio.
     
 ### <a name="create-the-record"></a>Creare il record
 
@@ -78,21 +78,21 @@ Eseguire una delle operazioni seguenti in base al record da creare, ossia TXT o 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Tipo di record**|**Alias** o **nome host**|**Valore**|**Priorità**|**TTL**|
-|MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* > [!NOTE]> Questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Per **priorità**, per evitare conflitti con il record MX utilizzato per il flusso di posta, usare una priorità più bassa rispetto alla priorità per tutti i record MX esistenti. Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](../setup/domains-faq.md#what-is-mx-priority). |Impostare questo valore su **1 ora** o sull'equivalente in minuti ( **60** ), secondi ( **3600** ) e così via. |
+|MX|Digitare **@** o il proprio nome di dominio. |MS=ms *XXXXXXXX* > [!NOTE]> Questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella in Office 365.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Per **Priorità** usare una priorità più bassa rispetto a quella di qualsiasi altro record MX esistente, per impedire un conflitto con il record MX mediante il quale viene instradata la posta elettronica. Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](../setup/domains-faq.md#what-is-mx-priority). |Impostare questo valore su **1 ora** o sull'equivalente in minuti (**60**), secondi (**3600**) e così via. |
    
 ### <a name="save-the-record"></a>Salvare il record
 
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Una volta aggiunto il record al sito del registrar, è possibile tornare in Office 365 e chiedere di cercarlo.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
-2. Nella pagina **Domains** selezionare il dominio che si sta verificando. 
+2. Nella pagina **Domini** selezionare il dominio da verificare. 
     
   
-3. Nella pagina **configurazione** , selezionare **Avvia installazione**.
+3. Nella pagina **Configurazione** selezionare **Avvia configurazione**.
  
     
   
@@ -101,7 +101,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
   
 > [!NOTE]
->  In genere l'applicazione delle modifiche al DNS richiede circa 15 minuti. A volte può tuttavia capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o altro dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+>  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modificare i record dei server dei nomi del dominio
 <a name="BKMK_nameservers"> </a>
@@ -158,7 +158,7 @@ Ecco, ad esempio, alcune altre operazioni aggiuntive che potrebbero essere neces
     
 - Si desidera aggiungere un dominio attualmente utilizzato con un indirizzo del sito Web, ad esempio www.fourthcoffee.com? È possibile eseguire i passaggi seguenti quando si aggiunge il dominio per mantenere ospitato il sito Web in cui è ospitato il sito, per consentire agli utenti di accedere al sito Web dopo aver modificato i record NS del dominio in modo che puntino a Office 365.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> Settings.
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
 3. Nella pagina Domini selezionare un dominio.
 

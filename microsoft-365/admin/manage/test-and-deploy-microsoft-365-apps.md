@@ -6,23 +6,23 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Individuare, testare e distribuire le app Microsoft e Microsoft partner per gli utenti e i gruppi dell'organizzazione dal portale delle app integrate nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 4cd8c71b521c80f8a3043cf13427132b3ec3e750
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5189eef7524242a87f1797f8856bbd33b9a32a31
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363066"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212270"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Testare e distribuire le app Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365
 
-L'interfaccia di amministrazione di Microsoft 365 offre la possibilità di distribuire le app partner Microsoft e Microsoft da un'unica posizione. La possibilità di trovare, testare e distribuire completamente le app acquistate e concessi in licenza da Microsoft e Microsoft Partners del portale integrato delle app fornisce la convenienza e i vantaggi che l'organizzazione richiede per mantenere i servizi aziendali aggiornati regolarmente e in esecuzione efficiente.  
+L'interfaccia di amministrazione di Microsoft 365 offre la possibilità di distribuire le app partner Microsoft e Microsoft da un'unica posizione. La possibilità di trovare, testare e distribuire completamente le app acquistate e concessi in licenza da Microsoft e Microsoft Partners del portale integrato delle app fornisce la convenienza e i vantaggi che l'organizzazione richiede per mantenere i servizi aziendali aggiornati regolarmente e in esecuzione in modo efficiente.  
 
 Per ulteriori informazioni sull'acquisto e la gestione delle licenze delle app di Microsoft 365 per la propria organizzazione, vedere il post di Blog denominati [Manage and deploy microsoft 365 Apps from the microsoft 365 Admin Center](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
   

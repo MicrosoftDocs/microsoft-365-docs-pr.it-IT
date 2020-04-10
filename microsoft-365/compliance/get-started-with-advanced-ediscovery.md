@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come iniziare a utilizzare Advanced eDiscovery in Microsoft 365. Dopo aver completato alcuni passaggi rapidi, lo strumento Advanced eDiscovery è pronto per l'uso. Il primo passaggio consiste nel creare un caso e quindi iniziare a utilizzare le funzionalità e le caratteristiche avanzate di eDiscovery.
-ms.openlocfilehash: 1f3eb78ab9f9e96eaa95dbfbc7e087fa1514b836
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: a43bfd94fcf0a2563a184a3a87d96c64bd8eb619
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43100869"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204046"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introduzione a Advanced eDiscovery
 
@@ -173,4 +173,4 @@ Per iniziare a utilizzare Advanced eDiscovery, ecco un semplice flusso di lavoro
 
    - [Analizzare i dati del caso](analyzing-data-in-review-set.md). La funzionalità di analisi in Advanced eDiscovery è potente. Dopo aver eseguito l'analisi sui dati del set di revisione, vengono eseguiti i risultati analizzati, ad esempio, il rilevamento di duplicati, il threading di posta elettronica e i temi che possono contribuire a ridurre il volume di documenti che è necessario esaminare. È inoltre possibile generare un report di analisi che riepiloga il risultato dell'esecuzione di analisi. Come spiegato in precedenza, l'esecuzione di analisi esegue anche [il modello di rilevamento dei privilegi del procuratore client](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
 
-5. **Esportare e scaricare i dati del caso**. Un passaggio finale dopo la raccolta, la revisione e l'analisi dei dati del caso consiste nell'esportarlo da Advanced eDiscovery per la revisione esterna o per la verifica da parte di utenti esterni al team di analisi. L'esportazione dei dati è un processo in due passaggi. Il primo passaggio consiste nell' [esportare](export-documents-from-review-set.md) il set di revisione e in una posizione di archiviazione di Azure diversa (uno fornito da Microsoft o da uno gestito dall'organizzazione). Utilizzare quindi Esplora archivi di Azure per [scaricare](download-export-jobs.md) i dati in un computer locale. Oltre ai file di dati esportati, il contenuto del pacchetto di esportazione contiene anche un rapporto di esportazione, un rapporto riepilogativo e un report di errore.
+5. **Esportare e scaricare i dati del caso**. Un passaggio finale dopo la raccolta, la revisione e l'analisi dei dati del caso consiste nell'esportarlo da Advanced eDiscovery per la revisione esterna o per la verifica da parte di utenti esterni al team di analisi. L'esportazione dei dati è un processo in due passaggi. Il primo passaggio consiste nell' [esportare](export-documents-from-review-set.md) i dati dall'insieme di revisione e copiarli in una posizione di archiviazione di Azure diversa (uno fornito da Microsoft o da uno gestito dall'organizzazione). Utilizzare quindi Esplora archivi di Azure per [scaricare](download-export-jobs.md) i dati in un computer locale. Oltre ai file di dati esportati, il contenuto del pacchetto di esportazione contiene anche un rapporto di esportazione, un rapporto riepilogativo e un report di errore.

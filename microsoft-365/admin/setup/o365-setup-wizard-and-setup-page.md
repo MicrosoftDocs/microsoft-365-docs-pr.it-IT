@@ -6,7 +6,7 @@ ms.author: v-sharos
 author: shars
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Informazioni sulla differenza tra l'installazione guidata di Office 365 e la pagina di installazione.
-ms.openlocfilehash: 0873e37b849785feb7c70271b97b148f3cea8bd9
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: fb4cf29b2cab493e0240cf9cfef4cbabeb45087c
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360457"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209701"
 ---
 # <a name="difference-between-the-office-365-setup-wizard-and-the-setup-page"></a>Differenza tra l'installazione guidata di Office 365 e la pagina di installazione
 
@@ -49,7 +49,7 @@ La procedura guidata di installazione illustra i passaggi seguenti:
 
 3. Aggiungere nuovi utenti e assegnare loro le licenze in modo che possano scaricare e installare le app di Office 365.
 
-4. Connettere il dominio.
+4. Dominio Connect'your.
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Utilizzare la pagina di installazione per completare e gestire la configurazione
 

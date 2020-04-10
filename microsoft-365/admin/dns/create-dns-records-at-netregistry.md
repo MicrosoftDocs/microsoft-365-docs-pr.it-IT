@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Netregistry per Office 365.
-ms.openlocfilehash: 91f802afccd337a97b23ca514c9d9921595abcd1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e1f2414817357b8435bc002860a35c6e76d4314e
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42348817"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211135"
 ---
 # <a name="create-dns-records-at-netregistry-for-office-365"></a>Creare record DNS in Netregistry per Office 365
 
@@ -248,8 +248,8 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
   
     |**Tipo**|**Nome**|**TTL (SEC)**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |_sip. _tls  <br/> |3600 (secondi)  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV (Service)  <br/> |_sipfederationtls. _tcp  <br/> |3600 (secondi)  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV (Service)  <br/> |_sip. _tls  <br/> |3600 (secondi)  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV (Service)  <br/> |_sipfederationtls. _tcp  <br/> |3600 (secondi)  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   

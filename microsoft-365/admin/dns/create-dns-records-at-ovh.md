@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in OVH per Office 365.
-ms.openlocfilehash: 4857addd7dfd096c1ddd6e59f1f17ace76b75a9e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3ba4e61c875f74a0a6cf76c8b7cd82ea88e0221b
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354347"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211111"
 ---
 # <a name="create-dns-records-at-ovh-for-office-365"></a>Creare record DNS in OVH per Office 365
 
@@ -147,7 +147,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
    
     ![Record MX OVH per la posta elettronica](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
-7.  Select **Next**. 
+7. Selezionare **Avanti**.
     
     ![OVH MX record select Next](../../media/4db62d07-0dc4-49f6-bd19-2b4a07fd764a.png)
   
@@ -198,7 +198,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
    
     ![Record CNAME di OVH](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
   
-7.  Select **Next**. 
+7. Selezionare **Avanti**.
     
     ![OVH Add CNAME values and select Next](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
   
@@ -240,7 +240,7 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
    
     ![OVH aggiungere un record TXT per SPF](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
-7.  Select **Next**. 
+7. Selezionare **Avanti**.
     
     ![OVH aggiungere un record TXT per SPF e selezionare Avanti](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
   
@@ -277,12 +277,12 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
     
     |**Tipo di record**|**Sottodominio**|**Priorità**|**Peso**|**Porta**|**TTL**|**Destinazione**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |_sip. _tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (secondi)  <br/> |sipdir.online.lync.com.  <br/> |
-    |SRV (Service)  <br/> |_sipfederationtls. _tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (secondi)  <br/> |sipfed.online.lync.com.  <br/> |
+    |SRV (Service)  <br/> |_sip. _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (secondi)  <br/> |sipdir.online.lync.com.  <br/> |
+    |SRV (Service)  <br/> |_sipfederationtls. _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (secondi)  <br/> |sipfed.online.lync.com.  <br/> |
        
     ![Record OVH SRV](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
-7.  Select **Next**. 
+7. Selezionare **Avanti**.
     
     ![OVH SRV record select Next](../../media/cb4ad7e2-a8f0-4ab1-9797-d1b51c1d2da9.png)
   

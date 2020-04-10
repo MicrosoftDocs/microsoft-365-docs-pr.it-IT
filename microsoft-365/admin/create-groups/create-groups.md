@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Informazioni su come creare ed eliminare i gruppi di Office 365, aggiungere e rimuovere membri del gruppo e personalizzare la modalità di funzionamento del gruppo.
-ms.openlocfilehash: 8b9580fd37581de96d3dc35170a1a61640cc697d
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 088ef54531bc42cf563659c460cbf7d2e64c4cfe
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153545"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212094"
 ---
 # <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>Creare un gruppo di Office 365 nell'interfaccia di amministrazione di Microsoft 365
   
@@ -41,11 +41,11 @@ Anche se gli utenti possono creare un gruppo di Office 365 da Outlook o da altre
   
 3. Nella pagina **scegliere il tipo di gruppo** , selezionare **Office 365**e quindi fare clic su **Avanti**.
 
-4. Nella pagina **nozioni di base** Digitare un nome per il gruppo e, facoltativamente, una descrizione. Scegliere **Avanti**.
+4. Nella pagina **nozioni di base** Digitare un nome per il gruppo e, facoltativamente, una descrizione. Selezionare **Avanti**.
     
 5. Nella pagina **Modifica impostazioni** Digitare un indirizzo di posta elettronica univoco per il gruppo, scegliere un'opzione per la privacy e se si desidera aggiungere Microsoft teams e quindi fare clic su**Avanti**.
     
-6. Nei **proprietari** scegliere il nome di una o più persone che verranno designate per la gestione del gruppo. Chiunque sia proprietario di un gruppo potrà eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Gli altri membri non potranno eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Scegliere **Avanti**.
+6. Nei **proprietari** scegliere il nome di una o più persone che verranno designate per la gestione del gruppo. Chiunque sia proprietario di un gruppo potrà eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Gli altri membri non potranno eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Selezionare **Avanti**.
     
 7. Dopo aver esaminato le impostazioni e aver apportato le modifiche, selezionare **Crea gruppo**.
 
@@ -124,3 +124,4 @@ Dopo aver creato un nuovo gruppo e aver aggiunto i membri, è possibile configur
 [Scegliere il dominio da utilizzare per la creazione di gruppi di Office 365](choose-domain-to-create-groups.md)
 
 [Aggiornare le liste di distribuzione a gruppi di Office 365](../manage/upgrade-distribution-lists.md)
+        

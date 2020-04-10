@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
 description: 'Informazioni su come utilizzare la posta elettronica del lavoro o della scuola per iscriversi ai servizi Microsoft online senza coinvolgere il reparto IT. '
-ms.openlocfilehash: c12f379dadd6a3f0bab16f6b49ff462c3becbd75
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 261e1344455602cdf36f38ba647408078bd8dd09
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244073"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209689"
 ---
 # <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>Il dominio potrebbe essere in uso se qualcun altro l'ha firmato
 

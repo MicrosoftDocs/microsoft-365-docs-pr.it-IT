@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Informazioni su come individuare i problemi che si sono verificati durante la configurazione di un dominio personalizzato assicurandosi che i record DNS siano configurati correttamente.
-ms.openlocfilehash: a93318d54b950b908319fe50a0cfedefe8586036
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+ms.openlocfilehash: 00330dea6b3401bce02779437dc047ce324dcece
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43115975"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210405"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records-in-office-365"></a>Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS in Office 365
 

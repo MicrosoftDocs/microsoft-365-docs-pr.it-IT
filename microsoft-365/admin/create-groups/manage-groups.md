@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Informazioni su come gestire i gruppi di Office 365, inclusa l'aggiunta di Rimuovi membri del gruppo, la modifica dell'indirizzo di posta elettronica, il nome del gruppo o la descrizione e la personalizzazione del funzionamento del gruppo.
-ms.openlocfilehash: 189a41c5049110100b548ca6f906b1324aeb1431
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 34682d3d06babca04a9b2541e3f33ec79d934f50
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894528"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212070"
 ---
 # <a name="manage-an-office-365-group-in-the-microsoft-365-admin-center"></a>Gestire un gruppo di Office 365 nell'interfaccia di amministrazione di Microsoft 365
 

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi su Amazon Web Services (AWS) per Office 365.
-ms.openlocfilehash: baba7bb7275303604d241166f4dc1d2af77b3f17
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f71e6fa5ce69d789cc7695d30e6447ae281a0e3f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351477"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211848"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-office-365"></a>Creare record DNS in Amazon Web Services (AWS) per Office 365
 

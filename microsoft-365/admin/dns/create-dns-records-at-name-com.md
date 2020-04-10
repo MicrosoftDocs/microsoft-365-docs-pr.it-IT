@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in name.com per Office 365.
-ms.openlocfilehash: f21a40f543ff3a9faffe6ffba98f4d541b2a7a7b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f39cf9f241851e555ea23ca7b63453796a5f471b
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349978"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211656"
 ---
 # <a name="create-dns-records-at-namecom-for-office-365"></a>Creare record DNS su name.com per Office 365
 
@@ -235,8 +235,8 @@ Quando Office 365 trova il record TXT corretto, il dominio è verificato.
     
     |**Type**|**Service**|**Weight**|**TTL**|**Prio**|**Protocol**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1|Usare il valore predefinito (300).|100|tls|443|sipdir.online.lync.com <br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
-    |SRV|sipfederationtls|1|Usare il valore predefinito (300).|100|tcp|5061|sipfed.online.lync.com <br>**Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
+    |SRV|sip|1 |Usare il valore predefinito (300).|100|tls|443|sipdir.online.lync.com <br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
+    |SRV|sipfederationtls|1 |Usare il valore predefinito (300).|100|tcp|5061|sipfed.online.lync.com <br>**Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
    
    ![Nome-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   

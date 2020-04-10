@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Informazioni su come è possibile configurare Office 365 gestito da 21Vianet per gestire i record DNS, quando 1&1 Internet è il provider di hosting DNS.
-ms.openlocfilehash: 3678d5372b9edd8e9333ad78862694b450abe53a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: bda6a19ba7bfca20bc1764187f429e13900d8460
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352567"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212366"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-11-ionos"></a>Modificare i server dei nomi per configurare Office 365 con 1&1 IONOS
 

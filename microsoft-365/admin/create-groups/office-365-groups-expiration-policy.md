@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di scadenza dei gruppi di Office 365.
-ms.openlocfilehash: 40b0b56507c46f2a658126627d5f8794848bde27
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894516"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212058"
 ---
 # <a name="office-365-group-expiration-policy"></a>Criteri di scadenza del gruppo di Office 365
 
@@ -38,7 +38,7 @@ Gli amministratori possono specificare un periodo di scadenza e qualsiasi gruppo
 I gruppi che sono attivamente in uso vengono rinnovati automaticamente. Una delle azioni seguenti consente di rinnovare automaticamente un gruppo:
 - SharePoint: visualizzazione, modifica, download, spostamento, condivisione o caricamento dei file.
 - Outlook-join Group, lettura o scrittura di un messaggio di gruppo dal gruppo e come un messaggio (Outlook sul Web).
-- Teams-visiting a teams Channel.
+- Teams-visiting a teams cordua '.
 
 > [!IMPORTANT]
 > Quando si modifica il criterio di scadenza, il servizio ricalcola la data di scadenza per ogni gruppo. Inizia sempre a contare dalla data in cui è stato creato il gruppo e quindi applica il nuovo criterio di scadenza.
@@ -53,7 +53,7 @@ I gruppi che sono attivamente in uso vengono rinnovati automaticamente. Una dell
 |Ruolo|Cosa possono fare|
 |---------|---------|
 |Amministratore globale di Office 365 (in Azure, amministratore della società), amministratore utente|Creare, leggere, aggiornare o eliminare le impostazioni dei criteri di scadenza per i gruppi di Office 365.|
-|User|Rinnovare o [ripristinare](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Office 365 che possiede|
+|Utente|Rinnovare o [ripristinare](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Office 365 che possiede|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Informazioni su come impostare i criteri di scadenza
 
@@ -85,4 +85,4 @@ Se per qualche motivo nessuno dei proprietari o degli amministratori rinnova il 
 
 [Assegnare un nuovo proprietario a un gruppo orfano](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Configurare la scadenza di gruppi di Office 365](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[Configurare la scadenza di gruppi di Office 365](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '

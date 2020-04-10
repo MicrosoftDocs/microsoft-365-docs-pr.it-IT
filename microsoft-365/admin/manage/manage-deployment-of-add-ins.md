@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire i componenti aggiuntivi per gli utenti e i gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: 74c1ceb8e9d2193e7ad7afd2b339d29d54780517
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: d0818a0f318ea260d8e39b6e3d76c1cd4efd7a88
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189006"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212010"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Gestire la distribuzione dei componenti aggiuntivi di Office 365 nell'interfaccia di amministrazione di Microsoft 365
 
