@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: I criteri di prevenzione della perdita dei dati del Centro sicurezza e conformità permettono di identificare, monitorare e proteggere automaticamente le informazioni riservate in tutto Office 365.
-ms.openlocfilehash: 9a7b31f779982381fcc0eea7e8aa051f4fa2dafc
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f61d6c13a66b7f1d93c7bdc1404265e8567e2fb7
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894887"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189071"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -112,7 +112,7 @@ Le condizioni disponibili a questo punto consentono di determinare se:
   
 - Il contenuto include un tipo di informazioni riservate.
     
-- Il contenuto include un'etichetta. Per altre informazioni, vedere la sezione seguente [Uso di un'etichetta come condizione nei criteri di prevenzione della perdita dei dati](#using-a-label-as-a-condition-in-a-dlp-policy).
+- Il contenuto include un'etichetta. Per altre informazioni, vedere la sezione seguente: [Uso di un'etichetta di conservazione come condizione nei criteri di prevenzione della perdita dei dati](#using-a-retention-label-as-a-condition-in-a-dlp-policy).
     
 - Il contenuto viene condiviso con utenti esterni o interni all'organizzazione.
 
@@ -327,35 +327,23 @@ Per questi motivi, le indicazioni per la creazione di regole con diverse accurat
     
 - Tutti i livelli di probabilità intermedi iniziano generalmente appena al di sopra del livello di probabilità inferiore e arrivano appena sotto il livello di probabilità superiore.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Uso di un'etichetta come condizione nei criteri di prevenzione della perdita dei dati
+## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Uso di un'etichetta di conservazione come condizione nei criteri di prevenzione della perdita dei dati
 
-È possibile creare un'etichetta e quindi:
-<!-- what kind of label? -->
-  
-- **Pubblicarla** in modo che gli utenti finali possano vedere e applicare manualmente l'etichetta al contenuto. 
-    
-- **Applicarla automaticamente** al contenuto che soddisfa le condizioni specificate. 
-    
-Per ulteriori informazioni sulle etichette, vedere [Panoramica delle etichette di conservazione](labels.md).
-  
-Dopo aver creato un'etichetta, è possibile usarla come condizione nei criteri di prevenzione della perdita dei dati. 
+Quando si usa un'[etichetta di conservazione](labels.md) creata e pubblicata in precedenza come condizione nei criteri di prevenzione della perdita dei dati (DLP), è necessario tenere presente che:
+
+- È necessario aver precedentemente creato, pubblicato e applicato l'etichetta di conservazione prima di usarla come condizione nei criteri DLP.
+- Le etichette di conservazione possono richiedere fino a un giorno per la sincronizzazione e fino a sette giorni per l'applicazione automatica dopo essere state create e pubblicate. Per informazioni dettagliate, vedere [Tempo necessario per l'applicazione delle etichette di conservazione](labels.md#how-long-it-takes-for-retention-labels-to-take-effect).
+- L'uso di un'etichetta di conservazione in un criterio ***è supportato solo per gli elementi di SharePoint Online e OneDrive for Business***.
+
 
 ![Etichette come condizione](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-Ad esempio, questa operazione può essere utile perché:
-  
-- È stata pubblicata un'etichetta denominata **Riservato** che consente alle persone nell'organizzazione di applicare manualmente l'etichetta ai messaggi di posta elettronica e ai documenti riservati. Usando questa etichetta come condizione nei criteri di prevenzione della perdita dei dati è possibile impedire che il contenuto etichettato come **Riservato** venga condiviso con utenti esterni all'organizzazione. 
-    
-- È stata creata un'etichetta denominata **Alpine House** per un progetto con questo nome, applicata poi automaticamente al contenuto che contiene le parole chiave "Alpine House". Usando questa etichetta come condizione nei criteri di prevenzione della perdita dei dati è possibile mostrare agli utenti un suggerimento per i criteri quando stanno per condividere questo contenuto con utenti esterni all'organizzazione. 
-    
-- È stata pubblicata un'etichetta denominata **Registri fiscali** che consente al responsabile dei record di applicare manualmente l'etichetta al contenuto che deve essere classificato come record. Usando questa etichetta come condizione nei criteri di prevenzione della perdita dei dati è possibile cercare i contenuti con questa etichetta in combinazione con altri tipi di informazioni riservate, ad esempio codici identificativi del contribuente individuale o numeri di codice fiscale, applicare azioni di protezione al contenuto etichettato come **Registri fiscali** e ottenere report attività dettagliati sui criteri di prevenzione della perdita dei dati dai report relativi a questi criteri e dai dati del log di controllo. 
-    
-- È stata pubblicata un'etichetta denominata **Team dirigenti - Riservato** nelle cassette postali di Exchange e negli account di OneDrive di un gruppo di dirigenti. Usando questa etichetta come condizione nei criteri di prevenzione della perdita dei dati è possibile applicare azioni di conservazione e di protezione allo stesso sottoinsieme di contenuti e utenti. 
-    
-Usando le etichette come condizioni nei criteri di prevenzione della perdita dei dati è possibile applicare in modo selettivo le azioni di protezione a uno specifico set di contenuti, posizioni o utenti. 
+È consigliabile usare un'etichetta di conservazione nei criteri DLP se sono presenti elementi in corso di conservazione ed eliminazione e si desidera applicare anche altri controlli, ad esempio:
 
-> [!NOTE]
-> Se si specifica un'etichetta di conservazione come condizione in un criterio di prevenzione della perdita dei dati e si includono anche Exchange e/o Teams come posizione, si riceverà un messaggio di errore simile al seguente: "La protezione del contenuto con etichetta nei messaggi di posta elettronica e di Teams non è supportata. Rimuovere l'etichetta seguente o disattivare Exchange e Teams come posizione". Questo perché il trasporto di Exchange non valuta i metadati dell'etichetta durante l'invio e il recapito dei messaggi. 
+- È stata pubblicata un'etichetta di conservazione denominata **Anno di imposta 2018**, che una volta applicata ai documenti fiscali del 2018 archiviati in SharePoint, li conserva per 10 anni e poi li elimina. Inoltre, se si desidera che gli elementi non vengano condivisi all'esterno dell'organizzazione, è possibile usare i criteri DLP.
+
+> [!IMPORTANT]
+> Se si specifica un'etichetta di conservazione come condizione in un criterio di prevenzione della perdita dei dati (DLP) e si includono anche Exchange e/o Teams come posizione, si visualizzerà un messaggio di errore simile al seguente: **"La protezione dei contenuti etichettati nelle e-mail e nei messaggi di Teams non è supportata. Rimuovere l'etichetta seguente o disabilitare Exchange e Teams come posizione."** Questo perché il trasporto di Exchange non valuta i metadati dell'etichetta durante l'invio e il recapito dei messaggi. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>Il supporto per le etichette di riservatezza sarà disponibile a breve
 

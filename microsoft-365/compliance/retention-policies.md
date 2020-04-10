@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: dc06a8c2cd893bb93ef826c6900531240a138efb
-ms.sourcegitcommit: 5ba1efc0b498430e30231010024044049b8727c7
+ms.openlocfilehash: ffbc8026b8a0b1f85916c7697625bfa0935e275f
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43126033"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189057"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -95,9 +95,9 @@ Se il criterio di conservazione è Conserva ed elimina:
     > [!NOTE]
     > Per evitare perdite accidentali di dati, il contenuto non viene mai eliminato automaticamente dalla raccolta di archiviazione, ma passa al cestino di secondo livello. Il periodo di tolleranza di 93 giorni consente agli amministratori di recuperare il contenuto, se necessario.
     
-2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione, viene spostato nel Cestino di primo livello alla fine del periodo di conservazione. Se un utente elimina il contenuto da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non viene usato, quindi la ricerca non rileva alcun contenuto al suo interno. Ciò significa che un blocco di eDiscovery non può rilevare contenuto da bloccare nel Cestino.
+2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione, viene spostato nel Cestino di primo livello alla fine del periodo di conservazione. Se un utente elimina il contenuto da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non è indicizzato e quindi non è disponibile per la ricerca. Di conseguenza, una ricerca eDiscovery non può trovare alcun contenuto nel Cestino a cui applicare un blocco.
 
-2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione: alla fine del periodo di conservazione il documento viene spostato nel Cestino di primo livello. Se un utente elimina il documento da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non è indicizzato, quindi la ricerca non rileva alcun contenuto al suo interno. Ciò significa che un blocco di eDiscovery non può rilevare contenuto da bloccare nel Cestino. 
+2. **Se il contenuto non viene modificato o eliminato** durante il periodo di conservazione: alla fine del periodo di conservazione il documento viene spostato nel Cestino di primo livello. Se un utente elimina il documento da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non è indicizzato e quindi non è disponibile per la ricerca. Di conseguenza, una ricerca eDiscovery non può trovare alcun contenuto nel Cestino a cui applicare un blocco. 
 
 Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi del contenuto sono varianti di Conserva ed elimina:
 
@@ -111,7 +111,7 @@ Quando il criterio di conservazione è Conserva solo, o Elimina solo, i percorsi
 
 1. **Se il contenuto viene eliminato** durante il periodo di conservazione: il documento viene spostato nel cestino di primo livello. Se un utente elimina il documento da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Se il contenuto viene modificato durante il periodo di conservazione, esegue lo stesso percorso di eliminazione dopo la scadenza del contenuto.
 
-2. **Se il contenuto non viene eliminato** durante il periodo di conservazione: alla fine del periodo di conservazione il documento viene spostato nel Cestino di primo livello. Se il contenuto viene eliminato durante il periodo di conservazione, il documento viene spostato immediatamente nel cestino di primo livello. Se un utente elimina il documento da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non è indicizzato, quindi la ricerca non rileva alcun contenuto al suo interno. Ciò significa che un blocco di eDiscovery non può rilevare contenuto da bloccare nel Cestino.
+2. **Se il contenuto non viene eliminato** durante il periodo di conservazione: alla fine del periodo di conservazione il documento viene spostato nel Cestino di primo livello. Se il contenuto viene eliminato durante il periodo di conservazione, il documento viene spostato immediatamente nel cestino di primo livello. Se un utente elimina il documento da questa posizione o svuota questo Cestino, il documento viene spostato nel Cestino di secondo livello. Il periodo di conservazione per i Cestini di primo e secondo livello è di 93 giorni, dopo i quali il documento viene eliminato definitivamente dal Cestino, sia di primo che di secondo livello. Il Cestino non è indicizzato e quindi non è disponibile per la ricerca. Di conseguenza, una ricerca eDiscovery non può trovare alcun contenuto nel Cestino a cui applicare un blocco.
 
 ### <a name="content-in-mailboxes-and-public-folders"></a>Contenuto in cassette postali e cartelle pubbliche
 
