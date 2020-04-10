@@ -17,20 +17,18 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: L'utente di Office 365 può visualizzare, rilasciare ed eliminare i messaggi in quarantena (messaggi di cui si è destinatari e che il filtro della posta indesiderata ha messo in quarantena come posta indesiderata o posta inviata in blocco). È possibile visualizzare e gestire i messaggi in quarantena nel Centro sicurezza e conformità.
-ms.openlocfilehash: 04f04cfddb123bf176f3c71568789c77d225a601
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 03c7ce474119ae5ff130b987b58d5130d53c33d6
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893671"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941406"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Trovare e rilasciare i messaggi messi in quarantena come utente di Office 365
 
 La quarantena contiene messaggi potenzialmente pericolosi o indesiderati nelle organizzazioni di Office 365 con cassette postali nelle organizzazioni Exchange Online o Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online. Per altre informazioni, vedere [Quarantena in Office 365](quarantine-email-messages.md).
 
-L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di cui si è destinatari e che sono stati messi in quarantena come posta indesiderata, posta inviata in blocco o phishing (a partire da aprile 2020). È anche possibile segnalare falsi positivi a Microsoft.
-
-È possibile visualizzare e gestire i messaggi in quarantena nel Centro sicurezza e conformità.
+L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di cui si è destinatari e che sono stati messi in quarantena come posta indesiderata, posta inviata in blocco o phishing (a partire da aprile 2020). È possibile visualizzare e gestire i messaggi in quarantena nel Centro sicurezza e conformità oppure, nel caso in cui un amministratore l'abbia configurato, nelle [notifiche di posta indesiderata per l'utente finale](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
@@ -38,7 +36,7 @@ L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di 
 
 - Gli amministratori possono configurare per quanto tempo i messaggi vengono tenuti in quarantena prima di essere eliminati definitivamente (criteri di protezione dalla posta indesiderata). I messaggi scaduti dalla quarantena non sono recuperabili. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
-- Gli amministratori possono anche [abilitare le notifiche di posta indesiderata per l'utente finale](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) nei criteri di protezione dalla posta indesiderata. A partire da ottobre 2019, non è più possibile rilasciare messaggi in quarantena direttamente da queste notifiche. È possibile fare clic su **Rivedi** nella notifica, che indirizza a Quarantena nel Centro sicurezza e conformità. Per altre informazioni sulle notifiche, vedere [Notifiche di posta indesiderata per l'utente finale in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Gli amministratori possono anche [abilitare le notifiche di posta indesiderata per l'utente finale](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) nei criteri di protezione dalla posta indesiderata. Gli utenti possono rilasciare messaggi di posta indesiderata in quarantena (ma non messaggi di phishing in quarantena) direttamente da queste notifiche. Per altre informazioni, vedere [Notifiche di posta indesiderata per l'utente finale in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 - I messaggi messi in quarantena per phishing con alta confidenza, malware o regole del flusso di posta (note anche come regole di trasporto) sono disponibili solo per gli amministratori. Per altre informazioni, vedere [Gestione dei messaggi e dei file in quarantena come amministratore in Office 365](manage-quarantined-messages-and-files.md).
 
