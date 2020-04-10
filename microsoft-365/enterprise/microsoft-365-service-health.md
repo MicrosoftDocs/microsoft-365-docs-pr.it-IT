@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Stato di integrità dei servizi di Microsoft 365
-ms.openlocfilehash: 8acbd54f8b1d635fa1ba1d02d7c255484fb24758
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 16621bc266684397da5fa92e953067e1e8342b4e
+ms.sourcegitcommit: 8959701cf009068b40da2757b4a61da61d5c166b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189106"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43207164"
 ---
 # <a name="microsoft-365-network-health-status"></a>Stato di integrità della rete di Microsoft 365
 
@@ -37,7 +37,7 @@ In caso venissero rilevati problemi significativi all'interno della rete globale
 
 | Posizione | Tipo di problema | Dettagli |
 | --- | --- | --- |
-| **Nessun problema corrente** |  |  |
+| **Nessun problema corrente**  |  |  |
 
 ## <a name="recommendations-to-improve-network-experience"></a>Suggerimenti per migliorare l'esperienza di rete
 
