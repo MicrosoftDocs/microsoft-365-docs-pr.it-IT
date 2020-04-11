@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui criteri di scadenza dei gruppi di Office 365.
-ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212058"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225920"
 ---
 # <a name="office-365-group-expiration-policy"></a>Criteri di scadenza del gruppo di Office 365
 
@@ -38,7 +38,7 @@ Gli amministratori possono specificare un periodo di scadenza e qualsiasi gruppo
 I gruppi che sono attivamente in uso vengono rinnovati automaticamente. Una delle azioni seguenti consente di rinnovare automaticamente un gruppo:
 - SharePoint: visualizzazione, modifica, download, spostamento, condivisione o caricamento dei file.
 - Outlook-join Group, lettura o scrittura di un messaggio di gruppo dal gruppo e come un messaggio (Outlook sul Web).
-- Teams-visiting a teams cordua '.
+- Teams-visiting a teams Channel.
 
 > [!IMPORTANT]
 > Quando si modifica il criterio di scadenza, il servizio ricalcola la data di scadenza per ogni gruppo. Inizia sempre a contare dalla data in cui è stato creato il gruppo e quindi applica il nuovo criterio di scadenza.

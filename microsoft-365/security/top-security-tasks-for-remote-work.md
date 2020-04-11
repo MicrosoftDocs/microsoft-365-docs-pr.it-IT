@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 'Proteggere la posta elettronica e i dati aziendali da minacce informatiche, tra cui ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: 3bbd5951ac6005f20584d53e17ac55927acd4c89
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: d42760f0dbf38b72fe530a5670f3515bf3ba2f94
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081305"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225954"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Top 12 attività per i team di sicurezza per il supporto di lavoro da casa
 
@@ -45,7 +45,7 @@ Per i clienti che utilizzano i piani aziendali, Microsoft consiglia di completar
 |8       |  [Registrare i PC nella gestione dei dispositivi e richiedere PC conformi](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [Ottimizzare la rete per la connettività cloud](#9-optimize-your-network-for-cloud-connectivity)  |  ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10    | [Formazione degli utenti](#10-train-users) |    ![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|11  |[Introduzione a Microsoft cloud app Security](#11-get-started-with-microsoft-cloud-app-security) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|11  |[Introduzione a Microsoft cloud app Security](#11-get-started-with-microsoft-cloud-app-security) |   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[Monitorare le minacce e agire](#12-monitor-for-threats-and-take-action) |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
@@ -157,7 +157,7 @@ I criteri di protezione delle app per dispositivi mobili di Intune creati insiem
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8: registrare i PC nella gestione dei dispositivi e richiedere PC conformi
 
-Esistono diversi metodi per registrare i dispositivi della forza lavoro. Ogni metodo dipende dalla proprietà del dispositivo (personale o aziendale), dal tipo di dispositivo (iOS, Windows, Android) e dai requisiti di gestione (Reimposta, affinità, blocco). Questo può richiedere un po' di tempo per l'ordinamento. Vedere: [registrare i dispositivi in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/). 
+Esistono diversi metodi per registrare i dispositivi della forza lavoro. Ogni metodo dipende dalla proprietà del dispositivo (personale o aziendale), dal tipo di dispositivo (iOS, Windows, Android) e dai requisiti di gestione (reimpostazione, affinità, blocco). Questo può richiedere un po' di tempo per l'ordinamento. Vedere: [registrare i dispositivi in Microsoft Intune](https://docs.microsoft.com/mem/intune/enrollment/). 
 
 Il modo più rapido per andare avanti consiste nel [configurare la registrazione automatica per i dispositivi Windows 10](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment). 
 
@@ -182,7 +182,7 @@ Alcune delle protezioni che sono state tradizionalmente fornite dal routing del 
 
 Per ulteriori informazioni, vedere queste risorse su documenti:
 - [Panoramica: ottimizzare la connettività di Office 365 per gli utenti remoti tramite il tunneling Split VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
-- [Implementazione del tunneling suddiviso VPN per Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+- [Implementazione di split tunneling per VPN per Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Articoli di Blog recenti su questo argomento:
 - [Come ottimizzare rapidamente il traffico di Office 365 per i dipendenti remoti & ridurre il carico nell'infrastruttura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
