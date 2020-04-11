@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5aee7c835643fab94cc7e233ea005c3f3a1b921c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1cd620206f559e6870c6706fc0e40f4b7e45bc84
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602803"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225898"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Monitoraggio e operazioni di Microsoft Managed Desktop
 
@@ -67,7 +67,7 @@ Non tutte le modifiche hanno lo stesso impatto sugli utenti oppure richiedono un
 **Tipo di modifica** | -Aggiornamenti delle funzionalità<br>-Nuove funzionalità o applicazioni<br>-Funzionalità deprecate | Aggiornamenti rapidi del client per problemi | Patch di sicurezza
 **Notifiche anticipate** | avviso di 5 giorni per le modifiche che richiedono un'azione |    No, queste sono incluse nella versione mensile   | No, queste sono incluse nella versione mensile 
 **Canale di comunicazione** | -Centro messaggi<br>-Avviso di posta elettronica | -Centro messaggi<br>-Avviso di posta elettronica | -Centro messaggi<br>-Avviso di posta elettronica
-**Richiede l'intervento dell'amministratore tenant** | A volte |  Raramente |    Raramente 
+**Richiede un'azione di amministratore globale** | A volte |  Raramente |    Raramente 
 **Tipo di azione** | Modificare le impostazioni | Comunicare le modifiche agli utenti | Modificare le impostazioni di amministrazione     
 **Richiede il testing** | Controllare le applicazioni aziendali, compresi i servizi di accesso remoto |  A volte. Verificare le correzioni utilizzando processi o personalizzazioni |   Raramente 
 **Esempi di modifiche** | -Funzionalità aggiornamenti: portale di amministrazione IT semplificato invio ticket di supporto e Revisione<br>-Nuove funzionalità o applicazioni: rilascio semestrale di un aggiornamento delle funzionalità di Windows 10 | Aggiornamenti rapidi basati sui bug segnalati dai clienti |  
@@ -79,14 +79,14 @@ Il servizio Microsoft Managed Desktop è implementato e gestito da Microsoft nel
 
 Per i prodotti locali, l'organizzazione assume tutte le responsabilità per la gestione del programma di installazione e la configurazione e le attività operative.
 
-Categorie |    Microsoft si | La volontà del cliente
+Categories |    Microsoft si | La volontà del cliente
 --- | --- | ---
 Rete (proxy, controllo pacchetti, VPN)  | Consigliare e pianificare ai clienti di ridurre al minimo i rischi per gli utenti aziendali. | -Creare una richiesta di supporto che richiede informazioni per una modifica di configurazione pianificata, inclusi i dettagli di configurazione, l'ambito, la sequenza temporale e altre informazioni pertinenti per la revisione di Microsoft.<br>-Applicare una modifica solo una volta che le operazioni di Microsoft Managed Desktop sono state valutate e consigliate.
 Account di servizio |-Implementare, archiviare in modo sicuro e gestire le credenziali.<br> -Comunicare l'accesso non autorizzato o l'utilizzo di queste credenziali al team delle operazioni di sicurezza. | -Creare una richiesta di supporto che richiede informazioni per una modifica di configurazione pianificata, inclusi i dettagli di configurazione, l'ambito, la sequenza temporale e altre informazioni pertinenti per la revisione di Microsoft.<br>-Applicare una modifica solo una volta che le operazioni di Microsoft Managed Desktop sono state valutate e consigliate.<br>-Non assegnare criteri, autenticazione a più fattori, accesso condizionale o distribuzione di applicazioni agli account del servizio Microsoft Managed Desktop.<br>-Non reimpostare la password o utilizzare le credenziali.<br>-Aprire una richiesta di supporto per la gestione di Microsoft Managed Desktop se l'attività sospetta è osservata nei registri di controllo di Intune o Azure, in relazione a questi account di servizio.
 Gruppi di dispositivi | -Implementare e gestire l'appartenenza ai dispositivi all'interno dei gruppi Microsoft Managed Desktop.<br>-Utilizzare i gruppi Microsoft Managed Desktop per gestire l'assegnazione e la versione di configurazione e gli aggiornamenti ai dispositivi. | -Creare una richiesta di supporto che richiede informazioni per una modifica di configurazione pianificata, inclusi i dettagli di configurazione, l'ambito, la sequenza temporale e altre informazioni pertinenti per la revisione di Microsoft.<br>-Applicare una modifica solo una volta che le operazioni di Microsoft Managed Desktop sono state valutate e consigliate.<br>-Non modificare l'appartenenza di un gruppo di desktop Microsoft gestito.<br>-Utilizzare solo i gruppi per assegnare certificati aziendali per servizi quali VPN, Windows Hello for business o la crittografia della posta elettronica o la configurazione del profilo Wi-Fi aziendale.<br>-Dove esiste la cogestione, escludere esplicitamente tutti i gruppi di desktop gestiti Microsoft quando si distribuisce il client Configuration Manager.
 Generali |  -Implementare e gestire i criteri di Microsoft Managed Desktop che regolano lo stato di configurazione dei dispositivi all'interno del servizio.<br>-Distribuire gli aggiornamenti, i criteri o le finestre, utilizzando in modo incrementale i gruppi di dispositivi.<br> -Escludere esplicitamente i gruppi di desktop gestiti non Microsoft. | -Creare una richiesta di supporto che richiede informazioni per una modifica di configurazione pianificata, inclusi i dettagli di configurazione, l'ambito, la sequenza temporale e altre informazioni pertinenti per la revisione di Microsoft.<br>-Applicare una modifica solo una volta che le operazioni di Microsoft Managed Desktop sono state valutate e consigliate.<br>-Non modificare o assegnare criteri di Microsoft Managed Desktop ai dispositivi o agli utenti non gestiti dal servizio Microsoft Managed Desktop.
 Microsoft Defender Advanced Threat Protection   | Monitorare e analizzare i dispositivi nell'ambito del servizio Microsoft Managed Desktop. | -Creare una richiesta di supporto che richiede informazioni per una modifica di configurazione pianificata, inclusi i dettagli di configurazione, l'ambito, la sequenza temporale e altre informazioni pertinenti per la revisione di Microsoft.<br>-Applicare una modifica solo una volta che le operazioni di Microsoft Managed Desktop sono state valutate e consigliate
-Microsoft Store for Business |  Configurare e gestire il profilo di Windows Autopilot per il servizio Microsoft Managed Desktop. | -Creare una richiesta di supporto che richiede informazioni per una modifica di configurazione pianificata, inclusi i dettagli di configurazione, l'ambito, la sequenza temporale e altre informazioni pertinenti per la revisione di Microsoft.<br>-Applicare una modifica solo una volta che le operazioni di Microsoft Managed Desktop sono state valutate e consigliate.<br>-Non modificare la configurazione del profilo Microsoft Managed Desktop di Windows Autopilot o aggiungere/rimuovere i dispositivi assegnati.
+Microsoft Store per le aziende |  Configurare e gestire il profilo di Windows Autopilot per il servizio Microsoft Managed Desktop. | -Creare una richiesta di supporto che richiede informazioni per una modifica di configurazione pianificata, inclusi i dettagli di configurazione, l'ambito, la sequenza temporale e altre informazioni pertinenti per la revisione di Microsoft.<br>-Applicare una modifica solo una volta che le operazioni di Microsoft Managed Desktop sono state valutate e consigliate.<br>-Non modificare la configurazione del profilo Microsoft Managed Desktop di Windows Autopilot o aggiungere/rimuovere i dispositivi assegnati.
 Certificati | | -Creare una richiesta di supporto 60 giorni prima della scadenza di un certificato, richiedendo informazioni per una modifica di configurazione pianificata, inclusi i dettagli di configurazione, l'ambito, la sequenza temporale e altre informazioni pertinenti per la revisione di Microsoft.<br>-Applicare una modifica solo una volta che le operazioni di Microsoft Managed Desktop sono state valutate e consigliate.<br>-Aggiornare tutti i certificati necessari per la configurazione dei profili dei certificati, dei profili VPN e dei profili Wi-Fi.
 
 
@@ -98,22 +98,22 @@ Il team di Microsoft Managed Desktop Operations è in grado di eseguire un ripri
 
 Sono disponibili alcuni requisiti:
 
-- L'amministratore del tenant del cliente deve inviare una richiesta di servizio
-- È necessario il nome del computer per il dispositivo
-- L'account utente deve trovarsi in Azure AD prima di eseguire la reimpostazione
+- L'amministratore globale deve inviare una richiesta di servizio.
+- Includere il nome del computer del dispositivo nella richiesta.
+- L'account utente deve trovarsi in Azure AD prima di reimpostare il dispositivo.
 
-Il team delle operazioni desktop gestite sarà:
+Il team delle operazioni desktop gestite farà quanto segue:
 
 - Cercare il nome del dispositivo in Intune
 - Inviare il comando Factory Reset al dispositivo
 
 >[!NOTE]
->Non rimuovere l'account utente da Azure AD prima della reimpostazione della factory. Se l'utente non è in Azure AD, Intune non è in grado di inviare il comando Factory Reset al dispositivo. 
+>Non rimuovere l'account utente da Azure AD prima che il dispositivo venga reimpostato. Se l'utente non è in Azure AD, Intune non è in grado di inviare il comando Factory Reset al dispositivo. 
 
-Il dispositivo verrà avviato in OOBE e verranno applicate di nuovo tutte le applicazioni e le impostazioni preinstallate. L'utente del dispositivo deve fornire di nuovo le informazioni di configurazione iniziali. 
+Il dispositivo verrà avviato nell'"esperienza fuori scatola" e verranno applicate di nuovo tutte le applicazioni e le impostazioni preinstallate. L'utente del dispositivo deve fornire di nuovo le informazioni di configurazione iniziali. 
 
 Quando il dispositivo è stato reimpostato, è possibile assegnarlo a un'altra persona all'interno dell'organizzazione. Nessuno dei dati dell'utente o dati dell'organizzazione precedenti sarà nel dispositivo. L'utente successivo passerà attraverso lo stesso processo eseguito dalla persona precedente con un nuovo dispositivo Microsoft Managed Desktop.
 
-BitLocker è un componente chiave della sicurezza dei dati in questo processo. Con la crittografia BitLocker sui dispositivi Microsoft Managed Desktop, i dati dell'unità rimangono sicuri anche dopo che il ripristino di fabbrica è stato applicato al dispositivo. Tutti i dati presenti nell'unità non saranno disponibili per l'utente successivo del dispositivo. Per ulteriori informazioni, vedere [BitLocker Overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
+BitLocker è un componente chiave della sicurezza dei dati in questo processo. Con la crittografia BitLocker sui dispositivi Microsoft Managed Desktop, i dati dell'unità rimangono sicuri anche dopo che il dispositivo è stato reimpostato in fabbrica. Tutti i dati presenti nell'unità non saranno disponibili per l'utente successivo del dispositivo. Per ulteriori informazioni, vedere [BitLocker Overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
 Per ulteriori informazioni, vedere [Factory Reset a Device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device). 

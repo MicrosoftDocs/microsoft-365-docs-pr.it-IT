@@ -15,20 +15,38 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Durante e dopo un'indagine automatizzata in Office 365, è possibile visualizzare i risultati e i risultati principali.
-ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163911"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225976"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Informazioni dettagliate e risultati di un'indagine automatizzata in Office 365
 
 Quando si verifica un' [analisi automatizzata](office-365-air.md) in [Office 365 Advanced Threat Protection](office-365-atp.md), i dettagli relativi a tali indagini sono disponibili durante e dopo il processo di analisi automatizzato. Se di dispone delle autorizzazioni necessarie, è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. La vista dei dettagli dell'indagine consente di avere uno stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
 
+## <a name="investigation-status"></a>Stato analisi
+
+Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azioni. Durante l'esecuzione dell'indagine, lo stato cambia per indicare se sono state trovate minacce e se le azioni sono state approvate. 
+
+|Stato  |Cosa significa  |
+|---------|---------|
+|In avvio | L'indagine è stata attivata e in attesa di avviare l'esecuzione.  |
+|In esecuzione | Il processo di indagine è iniziato ed è in corso. Questo stato si verifica anche quando vengono approvate le [azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) . |
+|Non sono state trovate minacce | L'inchiesta è terminata e non sono state identificate minacce (account utente, messaggio di posta elettronica, URL o file). <br/><br/>**Suggerimento**: se si sospetta che qualcosa sia stato perso (ad esempio, un falso negativo), è possibile eseguire un'azione utilizzando [Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+|Minacce trovate |L'analisi automatizzata ha riscontrato problemi, ma non sono state eseguite azioni correttive specifiche per risolvere tali problemi.<br/><br/> Lo stato delle minacce individuate può verificarsi quando è stato identificato un tipo di attività dell'utente, ma non sono disponibili azioni di pulizia. Negli esempi sono incluse le attività utente seguenti: <br/>-Un evento di [prevenzione della perdita di dati](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) <br/>-Un'anomalia di invio di messaggi di posta elettronica <br/>-Malware inviato <br/>-Sent phishing<br/>Nell'inchiesta non sono stati trovati URL dannosi, file o messaggi di posta elettronica da correggere e non è stata rilevata alcuna attività della cassetta postale, ad esempio la disattivazione delle regole di inoltro o la delega. <br/><br/>**Suggerimento**: se si sospetta che qualcosa sia stato perso (ad esempio, un falso negativo), è possibile esaminare e intraprendere un'azione tramite l'utilizzo di [Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+|Terminato dal sistema | L'indagine è stata interrotta. L'analisi può essere interrotta per diversi motivi:<br/>-Le azioni in sospeso dell'inchiesta sono scadute. Timeout delle azioni in sospeso dopo aver atteso l'approvazione per una settimana. <br/>-Ci sono troppe azioni. Ad esempio, se sono presenti troppi utenti che fanno clic su URL dannosi, può superare la capacità dell'indagine di eseguire tutti gli analizzatori, in modo che l'analisi venga interrotta. <br/><br/>**Suggerimento**: se un'analisi si interrompe prima che vengano eseguite azioni, provare a utilizzare [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) per individuare e risolvere le minacce.  |
+|Azione in sospeso | L'inchiesta ha individuato una minaccia, ad esempio un messaggio di posta indesiderata, un URL dannoso o un'impostazione di cassetta postale rischiosa e un'azione per correggere tale minaccia è in attesa di [approvazione](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Lo stato dell'azione in sospeso viene attivato quando viene trovata una minaccia con un'azione corrispondente. Tuttavia, l'elenco delle azioni in sospeso può aumentare durante l'esecuzione di un'indagine. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) per verificare se altri elementi sono ancora in attesa di completamento. |
+|Corretti | L'inchiesta è stata completata e tutte le azioni sono state approvate (completamente rimediate).<br/><br/>**Nota**: le azioni di correzione approvate possono avere errori che impediscono l'esecuzione delle azioni. Indipendentemente dal fatto che le azioni di correzione siano state completate correttamente, lo stato dell'inchiesta non cambia. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati. |
+|Parzialmente rimediato | L'analisi ha portato a operazioni di correzione e alcune sono state approvate e completate. Altre azioni sono ancora [in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
+|Failed | Almeno un analizzatore dell'analisi ha riscontrato un problema in cui non è stato possibile completarlo correttamente. <br/><br/>**Nota**: se un'indagine ha esito negativo dopo che sono state approvate le azioni di correzione, le azioni di correzione potrebbero essere state eseguite correttamente. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati. |
+|Accodamento tramite limitazione | Viene eseguita un'analisi in una coda. Quando vengono completate altre indagini, vengono avviate indagini accodate. La limitazione consente di evitare scarse prestazioni del servizio. <br/><br/>**Suggerimento**: le azioni in sospeso possono limitare il numero di nuove indagini che è possibile eseguire. Assicurarsi di [approvare (o rifiutare) le azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
+|Terminata mediante limitazione | Se una ricerca viene mantenuta troppo a lungo in coda, si interrompe. <br/><br/>**Suggerimento**: è possibile [avviare un'indagine da Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
+
 ## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
 
-1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso. Questo porta al centro sicurezza & Compliance.
+1. Accedere al centro[https://protection.office.com](https://protection.office.com)sicurezza & conformità di Office 365 e accedere.
 
 2. Eseguire una delle operazioni seguenti:
 
@@ -50,7 +68,7 @@ Quando si verifica un' [analisi automatizzata](office-365-air.md) in [Office 365
 
 Alcuni tipi di avvisi attivano l'analisi automatizzata in Office 365. Per ulteriori informazioni, vedere [Alerts](automated-investigation-response-office.md#alerts). Utilizzare la procedura seguente per visualizzare i dettagli relativi a un avviso associato a un'indagine automatizzata.
 
-1. Andare su [https://protection.office.com](https://protection.office.com) ed eseguire l'accesso. Questo porta al centro sicurezza & Compliance.
+1. Accedere al centro[https://protection.office.com](https://protection.office.com)sicurezza & conformità di Office 365 e accedere. 
 
 2. Andare a > **indagini**sulla **gestione delle minacce**.
 
@@ -83,20 +101,6 @@ Nella pagina indagini automatizzate vengono visualizzate le indagini dell'organi
 - Applicare filtri. Scegliere tra il **tipo di analisi**, l'intervallo di **tempo**, **lo stato**o una combinazione di questi.
 - Esportare i dati in un file. csv.
 
-Lo stato dell'indagine indica lo stato di avanzamento dell'analisi e delle azioni. Durante l'esecuzione dell'indagine, lo stato cambia per indicare se sono state trovate minacce e se le azioni sono state approvate. 
-
-|Stato  |Cosa significa  |
-|---------|---------|
-|In avvio | L'indagine è stata attivata e in attesa di avviare l'esecuzione. Questo è il primo passaggio.  |
-|In esecuzione | Il processo di indagine è iniziato ed è in corso. Questo stato si verifica anche quando vengono approvate le [azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) . |
-|Non sono state trovate minacce | L'inchiesta è terminata e non sono state identificate minacce (account utente, messaggio di posta elettronica, URL o file). <br/><br/>**Suggerimento**: se si sospetta che qualcosa sia stato perso (ad esempio, un falso negativo), è possibile eseguire un'azione utilizzando [Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
-|Terminato dal sistema | L'indagine è stata interrotta. Questo può verificarsi per una serie di motivi. Di seguito sono ritrovati i due motivi più comuni:<br/>-Le azioni in sospeso dell'inchiesta sono scadute. Timeout delle azioni in sospeso dopo aver atteso l'approvazione per una settimana. <br/>-Ci sono troppe azioni. Ad esempio, se sono presenti troppi utenti che fanno clic su URL dannosi, può superare la capacità dell'indagine di eseguire tutti gli analizzatori, in modo che l'analisi venga interrotta. <br/><br/>**Suggerimento**: se un'analisi si interrompe prima che vengano eseguite azioni, provare a utilizzare [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) per individuare e risolvere le minacce.  |
-|Azione in sospeso | L'inchiesta ha individuato una minaccia, ad esempio un messaggio di posta indesiderata, un URL dannoso o un'impostazione di cassetta postale rischiosa e un'azione per correggere tale minaccia è in attesa di [approvazione](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>Lo stato dell'azione in sospeso viene attivato quando viene trovata una minaccia con un'azione corrispondente. Tuttavia, si noti che l'analisi potrebbe non essere completamente completata.  Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) per verificare se altri elementi sono ancora in attesa di completamento. |
-|Corretti | L'inchiesta è stata completata e tutte le azioni sono state approvate (completamente rimediate).<br/><br/>**Nota**: le azioni di correzione approvate possono avere errori che impediscono l'esecuzione delle azioni. Questo non modifica lo stato dell'indagine. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati. |
-|Parzialmente rimediato | L'analisi ha portato a operazioni di correzione e alcune sono state approvate e completate. Altre azioni sono ancora [in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
-|Esito negativo | Almeno un analizzatore dell'analisi ha riscontrato un problema in cui non è stato possibile completarlo correttamente. <br/><br/>**Nota**: se un'indagine ha esito negativo dopo che sono state approvate le azioni di correzione, le azioni di correzione potrebbero essere state eseguite correttamente. Controllare il [registro delle indagini](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) per ottenere risultati dettagliati. |
-|Accodamento tramite limitazione | Viene eseguita un'analisi in una coda. Quando vengono completate altre indagini, vengono avviate indagini accodate. In questo modo si evitano scarse prestazioni del servizio. <br/><br/>**Suggerimento**: le azioni in sospeso possono limitare il numero di nuove indagini che è possibile eseguire. Assicurarsi di [approvare (o rifiutare) le azioni in sospeso](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
-|Terminata mediante limitazione | Se una ricerca viene mantenuta troppo a lungo nella coda, viene interrotta. <br/><br/>**Suggerimento**: è possibile [avviare un'indagine da Esplora minacce](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
 
 ### <a name="investigation-graph"></a>Grafico dell'indagine
 
@@ -112,7 +116,7 @@ Quando si apre una specifica indagine, viene visualizzata la pagina del grafico 
 
 ### <a name="alert-investigation"></a>Indagine sugli avvisi
 
-Nella scheda **avvisi** per un'indagine, è possibile visualizzare gli avvisi rilevanti per l'indagine. I dettagli includono l'avviso che ha attivato l'indagine e altri avvisi correlati, ad esempio l'accesso rischioso, le violazioni dei criteri DLP e così via, che sono correlate all'inchiesta. Da questa pagina, un analista di sicurezza può anche visualizzare ulteriori dettagli sui singoli avvisi.
+Nella scheda **avvisi** per un'indagine, è possibile visualizzare gli avvisi rilevanti per l'indagine. I dettagli includono l'avviso che ha attivato l'indagine e altri avvisi correlati, ad esempio l'accesso rischioso, le violazioni dei [criteri DLP](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) e così via, che sono correlate all'inchiesta. Da questa pagina, un analista di sicurezza può anche visualizzare ulteriori dettagli sui singoli avvisi.
 
 ![Pagina avvisi aria](../../media/air-investigationalertspage.png)
 
@@ -135,7 +139,7 @@ Durante il passaggio di analisi della posta elettronica possono essere identific
 - I cluster di somiglianza sono messaggi di posta elettronica identificati dalla ricerca di messaggi di posta elettronica con attributi di contenuto e mittente simili. Tali cluster vengono valutati per i contenuti dannosi in base ai risultati di rilevamento originali. I cluster di posta elettronica che contengono sufficienti rilevamenti di posta elettronica dannosi sono considerati dannosi.
 - I cluster di indicatori sono messaggi di posta elettronica identificati tramite la ricerca per la stessa entità indicatore (hash di file o URL) dal messaggio di posta elettronica originale. Quando l'entità file/URL originale viene identificata come dannosa, AIR applica l'indicatore verdetto all'intero gruppo di messaggi di posta elettronica che contiene tale entità. Un file identificato come malware indica che il cluster di messaggi di posta elettronica che contiene il file viene trattato come messaggio di posta elettronica antimalware.
 
-L'obiettivo del raggruppamento è la ricerca e la ricerca di altri messaggi di posta elettronica correlati inviati dallo stesso mittente come parte di un attacco o di una campagna.  In alcuni casi, la posta elettronica legittima può innescare un'indagine (ad esempio, un utente segnala un messaggio di posta elettronica di marketing).  In questi scenari, il clustering di posta elettronica dovrebbe identificare che i cluster di posta elettronica non sono dannosi – quando lo fa in modo appropriato, **non** indicherà una minaccia né la rimozione della posta elettronica.
+L'obiettivo del raggruppamento è la ricerca e la ricerca di altri messaggi di posta elettronica correlati inviati dallo stesso mittente come parte di un attacco o di una campagna.  In alcuni casi, la posta elettronica legittima può attivare un'indagine (ad esempio, un utente segnala un messaggio di posta elettronica di marketing).  In questi scenari, il clustering di posta elettronica dovrebbe identificare che i cluster di posta elettronica non sono dannosi – quando lo fa in modo appropriato, **non** indicherà una minaccia né la rimozione della posta elettronica.
 
 La scheda **posta elettronica** Visualizza anche gli elementi di posta elettronica relativi all'indagine, ad esempio i dettagli di posta elettronica segnalati dall'utente, il messaggio di posta elettronica originale riportato, i messaggi di posta elettronica zapped a causa di malware/phishing e così via.
 
