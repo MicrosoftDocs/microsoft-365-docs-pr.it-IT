@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: e0942f88605e1b11cdbc83155ebc43b5fdb1bea1
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081281"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225932"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
@@ -113,7 +113,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Per scaricare questi contenuti, usare un'ampia larghezza di banda per un'esperienza di download ottimale e attendere 30-45 minuti per il provisioning automatico. L'ambiente di lab richiede almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, sono consigliati 32 GB di memoria disponibili. Il lab scade il 18 aprile 2020; prima di tale data, ne verrà pubblicata una nuova versione.*
+*Per scaricare questi contenuti, usare un'ampia larghezza di banda per un'esperienza di download ottimale e attendere 30-45 minuti per il provisioning automatico. L'ambiente di lab richiede minimo 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per prestazioni ottimali, si consiglia di avere 32 GB di memoria disponibili. Il lab scade il 5 luglio 2020; prima di tale data, ne verrà pubblicata una nuova versione.*
 
 ## <a name="additional-guidance"></a>Indicazioni aggiuntive
 

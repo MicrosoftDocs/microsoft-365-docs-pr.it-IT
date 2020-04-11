@@ -17,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: L'utente di Office 365 può visualizzare, rilasciare ed eliminare i messaggi in quarantena (messaggi di cui si è destinatari e che il filtro della posta indesiderata ha messo in quarantena come posta indesiderata o posta inviata in blocco). È possibile visualizzare e gestire i messaggi in quarantena nel Centro sicurezza e conformità.
-ms.openlocfilehash: 03c7ce474119ae5ff130b987b58d5130d53c33d6
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 32ae03c555742b9f08c272806464ed75585d08df
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42941406"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216905"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Trovare e rilasciare i messaggi messi in quarantena come utente di Office 365
 
@@ -66,7 +66,7 @@ L'utente può visualizzare, rilasciare ed eliminare i messaggi in quarantena di 
 
    - **ID messaggio**
 
-   - **Nome criterio**
+   - **Nome del criterio**: questa proprietà mostra il criterio che ha causato la quarantena del messaggio. Questa informazione va fornita all'amministratore.
 
    - **Dimensioni**
 
