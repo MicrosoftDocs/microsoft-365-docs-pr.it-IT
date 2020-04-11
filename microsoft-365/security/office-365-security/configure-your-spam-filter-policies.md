@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Le impostazioni di base del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata.
-ms.openlocfilehash: a497dc4cbce877c0aa6113e32223235ffebbfd41
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f77a4f52e045c96a0538b140022ebee846cb1996
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894207"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204101"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Configurare criteri di protezione dalla posta indesiderata in Office 365
 
@@ -75,7 +75,7 @@ Per aumentare l'efficacia del filtro della posta indesiderata, è possibile crea
 
 - È necessario disporre delle autorizzazioni prima di poter eseguire queste procedure. Per aggiungere, modificare ed eliminare criteri di protezione dalla posta indesiderata, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **Amministratore della sicurezza**. Per l'accesso in sola lettura ai criteri di protezione dalla posta indesiderata, è necessario essere un membro del gruppo di ruoli **Ruolo con autorizzazioni di lettura per la sicurezza**. Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità di Office 365](permissions-in-the-security-and-compliance-center.md).
 
-- Per le impostazioni consigliate per i criteri antimalware, vedere [Impostazioni dei criteri contro la posta indesiderata di EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+- Per le impostazioni consigliate per i criteri antimalware, vedere [Impostazioni dei criteri di protezione dalla posta indesiderata di EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>Utilizzare il Centro sicurezza e conformità per creare criteri di protezione dalla posta indesiderata
 

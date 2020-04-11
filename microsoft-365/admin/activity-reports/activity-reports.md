@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Ottenere un report periodico sul modo in cui gli utenti dell'organizzazione usano i servizi di Office 365. Il dashboard Informazioni generali utilizzo consente di analizzare ogni grafico per ottenere approfondimenti.
-ms.openlocfilehash: da62d934b295916a7f0fc952cc9cbe94b8384246
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151430"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204057"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Report sulle attività nell'interfaccia di amministrazione di Microsoft 365
 
@@ -87,6 +87,7 @@ Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../add
 In base all'abbonamento, questi sono i report disponibili.
   
 - [Attività di posta elettronica](email-activity.md)
+- [Attività di Forms](forms-activity.md)
     
 - [Utilizzo delle cassette postali](mailbox-usage.md)
     
@@ -101,6 +102,7 @@ In base all'abbonamento, questi sono i report disponibili.
 - [Attività degli utenti di OneDrive for Business](onedrive-for-business-activity.md)
   
 - [Utilizzo di OneDrive for Business](onedrive-for-business-usage.md)
+- [Utilizzo di ProPlus](microsoft365-apps-usage.md)
   
 - [Utilizzo dei sito di SharePoint](sharepoint-site-usage.md)
   

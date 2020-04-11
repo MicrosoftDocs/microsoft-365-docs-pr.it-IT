@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: a37e1ec6b342e8003427c0e90c2493ffa2952fe4
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 0558709c729a0ca941124ac3e72762f4b973432d
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189091"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216887"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -57,8 +57,8 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
     Per istruzioni sulla configurazione, vedere [Come configurare i criteri di applicazione automatica di etichette per SharePoint, OneDrive e Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) in questa pagina.
     
     Caratteristiche specifiche dell'etichettatura automatica per SharePoint e OneDrive:
-    - Massimo di 25.000 file (Word, PowerPoint o Excel) nel tenant al giorno
-        - Massimo di 5 file per utente con licenza al giorno
+    - Massimo 25.000 file etichettati automaticamente (Word, PowerPoint o Excel) nel tenant al giorno
+        - Massimo 5 file etichettati automaticamente per ogni utente con licenza al giorno
     - Massimo di 10 raccolte siti in tutti i criteri
     - Massimo di 10 criteri nel tenant
 
