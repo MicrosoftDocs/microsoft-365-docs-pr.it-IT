@@ -18,12 +18,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: La quarantena in Office 365 contiene messaggi potenzialmente pericolosi o indesiderati. Gli amministratori e gli utenti finali possono accedere alla quarantena.
-ms.openlocfilehash: a11b4a0d86cfc5f74636d3a9f89cf598320d1ebf
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: d3db036210886f7a4607f477bba2cf9f450ed90c
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42940958"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230939"
 ---
 # <a name="quarantine-in-office-365"></a>Quarantena in Office 365
 
@@ -31,7 +31,7 @@ Se si è un cliente di Office 365 con cassette postali in Exchange Online o un c
 
 *I* criteri anti-malware consentono di mettere in quarantena automaticamente un messaggio se viene trovato un allegato contenente malware. Per ulteriori informazioni, vedere [Configure anti-malware Policies in Office 365](configure-anti-malware-policies.md).
 
-Per impostazione predefinita, la protezione da posta indesiderata consente di mettere in quarantena i messaggi di phishing e inviare messaggi di posta indesiderata alla cartella posta indesiderata dell'utente. Tuttavia, è anche possibile creare e personalizzare i criteri di protezione da posta indesiderata per la quarantena della posta indesiderata e messaggi di posta elettronica. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
+Per impostazione predefinita, i criteri di protezione dalla posta indesiderata mettono in quarantena i messaggi di phishing e recapitano posta indesiderata e posta elettronica alla cartella posta indesiderata. Tuttavia, è anche possibile creare e personalizzare i criteri di protezione da posta indesiderata per la quarantena della posta indesiderata e messaggi di posta elettronica. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 
 Sia gli utenti che gli amministratori possono utilizzare i messaggi in quarantena:
 

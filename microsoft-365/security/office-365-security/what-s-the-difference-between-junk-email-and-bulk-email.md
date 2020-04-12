@@ -16,12 +16,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: In questo argomento viene illustrata la differenza tra posta indesiderata (posta indesiderata) e posta elettronica in blocco e i relativi controlli in Office 365.
-ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033627"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230957"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Differenza tra posta elettronica indesiderata e posta elettronica inviata in blocco
 
@@ -41,7 +41,7 @@ I clienti di Office 365 con cassette postali in Exchange Online o autonomo Excha
 
 A causa della reazione mista al messaggio di posta elettronica in blocco, non vi sono indicazioni universali valide per ogni organizzazione.
 
-I criteri di protezione dalla posta indesiderata hanno una soglia BCL predefinita utilizzata per identificare la posta elettronica in blocco come posta indesiderata. Gli amministratori possono aumentare o diminuire la soglia. Per ulteriori informazioni, vedere i seguenti argomenti:
+I criteri di protezione da posta indesiderata hanno una soglia BCL predefinita utilizzata per identificare la posta elettronica in blocco come posta indesiderata. Gli amministratori possono aumentare o diminuire la soglia. Per ulteriori informazioni, vedere i seguenti argomenti:
 
 - [Configurazione dei criteri di protezione da posta indesiderata in Office 365](configure-your-spam-filter-policies.md).
 

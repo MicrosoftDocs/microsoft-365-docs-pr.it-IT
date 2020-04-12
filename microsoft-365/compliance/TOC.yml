@@ -830,6 +830,8 @@
       items:
         - name: Sicurezza e conformità dei servizi finanziari
           href: ../solutions/financial-services-secure-collaboration.md
+        - name: Sicurezza e conformità dei servizi energetici
+          href: ../solutions/energy-secure-collaboration.md
 - name: Piani di azione per la conformità alle normative
   items:
     - name: 'ISO: piano d''azione consigliato'

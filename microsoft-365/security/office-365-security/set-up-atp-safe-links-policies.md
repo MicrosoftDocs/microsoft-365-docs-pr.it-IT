@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Impostare i criteri collegamenti sicuri per proteggere l'organizzazione da collegamenti dannosi nei file di Word, Excel, PowerPoint e Visio, nonché nei messaggi di posta elettronica.
-ms.openlocfilehash: 86aa69b813641654a0f4b5e2b4049358aeace4df
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: a1a78afe7480ed9f68f8cd893c00876872317785
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193483"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230981"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurare i criteri dei collegamenti sicuri ATP di Office 365
 
@@ -116,7 +116,7 @@ Dopo aver esaminato (o modificato) il criterio collegamenti sicuri ATP predefini
 6. Fare clic su **Salva**.
 
 > [!NOTE]
-> I criteri per i collegamenti sicuri ATP con priorità maggiore avranno la precedenza. Se un utente è soggetto a due o più poliziotti, solo il criterio di priorità più alta avrà effetto.
+> I criteri per i collegamenti sicuri ATP con priorità maggiore avranno la precedenza. Se un utente è soggetto a due o più criteri, solo il criterio di priorità più alta avrà effetto.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Passaggio 4: informazioni sulle opzioni dei criteri collegamenti sicuri di ATP
 
