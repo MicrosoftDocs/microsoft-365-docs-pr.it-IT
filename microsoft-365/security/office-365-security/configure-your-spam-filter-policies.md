@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: Le impostazioni di base del filtro della posta indesiderata includono la possibilità di eliminare i messaggi identificati come posta indesiderata.
-ms.openlocfilehash: 39532db121bb4a9ca5b73ef129b2b0e74e46c69a
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+description: Gli amministratori possono scoprire come creare, modificare ed eliminare i criteri di protezione dalla posta indesiderata in Exchange Online e in Exchange Online Protection (EOP).
+ms.openlocfilehash: 3f71a9c9a62e409d4a54c01523270fb10a723a96
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216924"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43231017"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Configurare criteri di protezione dalla posta indesiderata in Office 365
 
