@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevenzione della perdita di dati (DLP) nel centro &amp; sicurezza e conformità di Office 365 include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: bd74551b7e8b2d659724a1222e115a479db76ec8
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: aa3a08961ccad92c9986db16c1d8180d9b0cd17e
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894303"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240284"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Tipi di informazioni riservate disponibili da cercare
 
@@ -1087,7 +1087,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - Identiteit
 - Registratie
 - Identificatie 
-- Carte d’identité 
+- Carte d'identité 
 - numéro d'immatriculation
 - numéro d'identification
 - identité 
@@ -2104,7 +2104,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 - expiration date
 - exp date
 - expiry date
-- date d’expiration
+- Data d'expiration
 - date d'exp
 - date expiration
 - bank card
@@ -2421,7 +2421,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuno
+Nessuna
 
    
 ## <a name="eu-debit-card-number"></a>Unione Europea - Numero di carta di debito
@@ -2838,12 +2838,32 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
    
 ## <a name="finland-passport-number"></a>Finlandia - Numero di passaporto
 
-Combinazione di formato di nove lettere e combinazioni di caratteri di nove lettere e cifre: due lettere (senza distinzione tra maiuscole/minuscole) sette cifre checksum nessuna definizione un criterio DLP è 75% sicuro che sia stato rilevato questo tipo di informazioni riservate se, all'interno di un prossimità di 300 caratteri: l'espressione regolare Regex_finland_passport_number trova il contenuto corrispondente al modello.
-Viene trovata una parola chiave da Keyword_finland_passport_number.
+### <a name="format"></a>Formato
+Una combinazione di nove lettere e cifre
+
+### <a name="pattern"></a>Modello
+Combinazione di nove lettere e cifre: due lettere (senza distinzione tra maiuscole e minuscole) sette cifre
+
+### <a name="checksum"></a>Checksum
+No
+
+### <a name="definition"></a>Definizione
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_finland_passport_number trova contenuti che corrispondono al modello.
+- Viene trovata una parola chiave da Keyword_finland_passport_number.
 <!-- Finland Passport Number -->
-<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
+```xml
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_finland_passport_number"/>
+     <Match idRef="Keyword_finland_passport_number"/>
+  </Pattern>
 </Entity>
-Parole chiave Keyword_finland_passport_number Passport proc
+```
+### <a name="keywords"></a>Parole chiave
+- Keyword_finland_passport_number
+- Passaporto
+- Passi
    
 ## <a name="france-drivers-license-number"></a>Francia - Numero della patente di guida
 
@@ -2924,7 +2944,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 65%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuno
+Nessuna
    
 ## <a name="france-passport-number"></a>Francia - Numero di passaporto
 
@@ -3618,7 +3638,7 @@ Il modello deve includere tutti gli elementi seguenti:
 
 Il formato di ogni paese è leggermente diverso. Il tipo di informazioni riservate IBAN copre questi 60 paesi:
 
-ad, AE, al, at, AZ, BA, be, BG, BH, ch, CR, CY, CZ, de, DK, do, EE, es, Fi, fo, fr, GB, GE, Gi, GL, gr, HR, HU, IE, il, is, it, kW, KZ, lb, li, LT, Lu, LV, MC, MD, me, MK, Mr, MT, MU , NL, no, pl, PT, ro, RS, SA, se, si, SK, SM, TN, TR, VG
+ad, AE, al, at, AZ, BA, be, BG, BH, ch, CR, CY, CZ, de, DK, do, EE, es, Fi, fo, fr, GB, GE, Gi, GL, gr, HR, HU, IE, il, is, it, kW, KZ, lb, li, LT, Lu, LV, MC, MD, me, MK, Mr, MT, MU, NL, no, pl, PT, ro, RS, SA, se, si, SK, SM, TN, TR, VG
 
 ### <a name="checksum"></a>Checksum
 
@@ -3640,7 +3660,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuno
+Nessuna
 
    
 ## <a name="ip-address"></a>Indirizzo IP
@@ -4998,7 +5018,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%,
 
 ### <a name="keywords"></a>Parole chiave
 
-Nessuno
+Nessuna
 
 ## <a name="sql-server-connection-string"></a>Stringa di connessione di SQL Server
 

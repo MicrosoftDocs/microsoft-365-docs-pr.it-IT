@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Informazioni su come aggiungere e rimuovere licenze per l'abbonamento a Office 365 for business.
-ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142176"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240287"
 ---
 # <a name="manage-subscription-licenses"></a>Gestire le licenze di sottoscrizione
 
@@ -38,9 +38,9 @@ ms.locfileid: "43142176"
 
 Non è possibile rimuovere una licenza da un abbonamento se è assegnata a un utente. Se si desidera rimuovere una licenza che è attualmente assegnata a un utente, è necessario [rimuovere le licenze dagli utenti](../../admin/manage/remove-licenses-from-users.md) prima di poter rimuovere la licenza dall'abbonamento.
 
-::: moniker range="o365-worldwide"
+## <a name="add-or-remove-licenses-for-your-business-subscription"></a>Aggiungere o rimuovere licenze per l'abbonamento aziendale
 
-## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Cosa è necessario sapere sull'acquisto di licenze per l'abbonamento aziendale
+::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Prodotti e servizi</a>.
 

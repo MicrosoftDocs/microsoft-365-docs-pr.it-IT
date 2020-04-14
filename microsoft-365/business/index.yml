@@ -11,12 +11,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 9741932fcde29d2b64156c600f1bad1b309d5f66
-  ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+  ms.openlocfilehash: 10a49d657fcef00c589c3150f93ea0471d9522a6
+  ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 04/07/2020
-  ms.locfileid: "43165912"
+  ms.lasthandoff: 04/14/2020
+  ms.locfileid: "43284206"
 productDirectory:
   title: Sicurezza del lavoro remoto con Microsoft 365 business
   items:
@@ -27,11 +27,11 @@ productDirectory:
   - title: Watch partner webinar
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
     summary: Garantire la sicurezza dei clienti SMB mentre fanno fronte a COVID-19.
-    url: https://aka.ms/M365v253PAL-Register
-  - title: Acquistare
+    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+  - title: Lettura
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Fare clic sul collegamento per acquistare o contattare il partner.
-    url: https://aka.ms/m365bweb
+    summary: Modalità consigliate per abilitare il lavoro remoto sicuro tramite Microsoft 365 business.
+    url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
   - title: Che cos'è Microsoft 365 Business?

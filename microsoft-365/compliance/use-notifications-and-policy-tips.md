@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Un suggerimento per i criteri è una notifica o un avviso che viene visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP. È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo. "
-ms.openlocfilehash: adf9d41fd528b2146ae3b3ee6f61390d61deaabe
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 7d54c035d9bb7c9ecc5a543fb8f37749bf9437e7
+ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409581"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43284271"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Inviare notifiche di posta elettronica e visualizzare i suggerimenti per i criteri di prevenzione della perdita dei dati
 
@@ -32,7 +32,7 @@ ms.locfileid: "42409581"
   
 ![Barra dei messaggi che mostra il suggerimento per i criteri in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
-Un suggerimento per i criteri è una notifica o un avviso visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP, ad esempio il contenuto come una cartella di lavoro di Excel in un sito di OneDrive for business che contiene informazioni personali e che è condiviso con un utente esterno.
+Un suggerimento per i criteri è una notifica o un avviso visualizzato quando un utente utilizza contenuto che è in conflitto con un criterio DLP, ad esempio il contenuto come una cartella di lavoro di Excel in un sito di OneDrive for business che contiene informazioni personali e che è condiviso con un operatore esterno.
   
 È possibile utilizzare le notifiche di posta elettronica e i suggerimenti per i criteri per aumentare la consapevolezza e aiutare a informare gli utenti sui criteri dell'organizzazione. È inoltre possibile fornire agli utenti la possibilità di ignorare il criterio, in modo che non siano bloccati se hanno una necessità aziendale valida o se il criterio rileva un falso positivo.
   
@@ -44,13 +44,13 @@ Nel centro sicurezza &amp; e conformità di Office 365, quando si crea un criter
     
   - Per la posta elettronica in Outlook sul Web e Outlook 2013 e versioni successive, il suggerimento del criterio viene visualizzato nella parte superiore di un messaggio sopra i destinatari mentre il messaggio è in fase di composizione.
     
-  - Per i documenti in un account OneDrive for business o in un sito di SharePoint Online, il suggerimento per i criteri è indicato da un'icona di avviso che viene visualizzata sull'elemento. Per visualizzare altre informazioni, è possibile selezionare un elemento e quindi fare **** ![clic su icona](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) del riquadro informazioni informazioni nell'angolo in alto a destra della pagina per aprire il riquadro dei dettagli. 
+  - Per i documenti in un account OneDrive for business o in un sito di SharePoint Online, il suggerimento per i criteri è indicato da un'icona di avviso che viene visualizzata sull'elemento. Per visualizzare altre informazioni, è possibile selezionare un elemento e quindi fare **Information** ![clic su icona](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) del riquadro informazioni informazioni nell'angolo in alto a destra della pagina per aprire il riquadro dei dettagli. 
     
-  - Per i documenti di Excel, PowerPoint e Word archiviati in un sito di OneDrive for business o in un sito di SharePoint Online incluso nei criteri DLP, il suggerimento per i criteri viene visualizzato sulla barra dei messaggi e sulla visualizzazione **** backstage \> ( **informazioni**sul menu file).
+  - Per i documenti di Excel, PowerPoint e Word archiviati in un sito di OneDrive for business o in un sito di SharePoint Online incluso nei criteri DLP, il suggerimento per i criteri viene visualizzato sulla barra dei messaggi e sulla visualizzazione **File** backstage \> ( **informazioni**sul menu file).
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Aggiungere notifiche utente a un criterio DLP
 
-Quando si crea un criterio DLP, è possibile abilitare le **notifiche degli utenti**. Se abilitato, Microsoft 365 invia notifiche tramite posta elettronica e suggerimenti per i criteri. È possibile personalizzare i messaggi di posta elettronica di notifica a cui vengono inviati, il testo del messaggio e il testo del suggerimento per i criteri.
+Quando si crea un criterio DLP, è possibile abilitare le **notifiche degli utenti**. Quando le notifiche degli utenti sono abilitate, Microsoft 365 invia notifiche tramite posta elettronica e suggerimenti per i criteri. È possibile personalizzare i messaggi di posta elettronica di notifica a cui vengono inviati, il testo del messaggio e il testo del suggerimento per i criteri.
   
 1. Passare a [https://protection.office.com](https://protection.office.com).
     
@@ -68,13 +68,13 @@ Quando si crea un criterio DLP, è possibile abilitare le **notifiche degli uten
     
 6. Per scegliere i percorsi che si desidera proteggere dal criterio DLP, effettuare una delle seguenti operazioni:
     
-  - Scegliere **tutte le posizioni in Office 365** \> **Avanti**.
+   - Scegliere **tutte le posizioni in Office 365** \> **Avanti**.
     
-  - Scegliere **Consenti di scegliere le posizioni** \> specifiche **successive**.
+   - Scegliere **Consenti di scegliere le posizioni** \> specifiche **successive**.
     
-    Per includere o escludere un'intera posizione, ad esempio tutti i messaggi di posta elettronica di Exchange o tutti gli account di OneDrive, attivare o disattivare lo **stato** di tale percorso. 
+   Per includere o escludere un'intera posizione, ad esempio tutti i messaggi di posta elettronica di Exchange o tutti gli account di OneDrive, attivare o disattivare lo **stato** di tale percorso. 
     
-    Per includere solo i siti di SharePoint specifici o gli account di OneDrive, passare lo **stato** su attivato e quindi fare clic sui collegamenti in **Includi** per scegliere i siti o gli account specifici. 
+   Per includere solo i siti di SharePoint specifici o gli account di OneDrive, passare lo **stato** su attivato e quindi fare clic sui collegamenti in **Includi** per scegliere i siti o gli account specifici. 
     
 7. Scegliere **Usa impostazioni** \> avanzate **successive**.
     
@@ -166,9 +166,9 @@ Quando un documento in un sito di OneDrive for business o in un sito di SharePoi
     
 2. Se la regola blocca l'accesso al documento, viene visualizzata l'icona di blocco.
     
-![Icone del suggerimento per i criteri nei documenti in un account di OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
+   ![Icone del suggerimento per i criteri nei documenti in un account di OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-Per eseguire un'azione su un documento, è possibile selezionare l' \> icona **** ![](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) seleziona informazioni riquadro delle informazioni nell'angolo in alto a destra della pagina per aprire il suggerimento per \> i **criteri di visualizzazione**del riquadro dei dettagli.
+Per eseguire un'azione su un documento, è possibile selezionare l' \> icona **Information** ![](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) seleziona informazioni riquadro delle informazioni nell'angolo in alto a destra della pagina per aprire il suggerimento per \> i **criteri di visualizzazione**del riquadro dei dettagli.
   
 Il suggerimento per i criteri elenca i problemi con il contenuto e, se i suggerimenti per i criteri sono configurati con queste opzioni, è possibile selezionare **Risolvi** e quindi **ignorare** il suggerimento per i criteri oppure **segnalare** un falso positivo. 
   
@@ -287,4 +287,4 @@ Per impostazione predefinita, i suggerimenti per i criteri mostrano un testo sim
     
 - [Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati](what-the-dlp-policy-templates-include.md)
     
-- [Tipi di informazioni riservate disponibili da cercare](what-the-sensitive-information-types-look-for.md)
+- [Elementi cercati dai tipi di informazioni riservate](what-the-sensitive-information-types-look-for.md)
