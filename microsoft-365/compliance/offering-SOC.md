@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 80ee396d5a9862dd335118d8d4e8018214035f20
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 7cb065bb63bc30c4704abd3d4239fd80bca6d21e
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222048"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225909"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -35,7 +35,7 @@ Un controllo SOC 2 valuta l'efficacia del sistema di un provider di servizi clou
 
 Alla conclusione di un controllo SOC 1 o SOC 2, il revisore del servizio trasmette il suo parere in un report SOC 1 Tipo 2 o SOC 2 Tipo 2, in cui descrive il sistema del provider di servizi cloud e valuta la correttezza della descrizione dei controlli fatta dal provider stesso. Valuta inoltre se i controlli del provider di servizi cloud sono stati progettati in modo appropriato, se erano in funzione in una determinata data e se funzionavano efficacemente in un periodo di tempo specificato.
 
-I revisori possono inoltre creare un report SOC 3, ovvero una versione abbreviata del report di controllo SOC 2 Tipo 2, per gli utenti che desiderano la convalida dei controlli dei provider, ma non necessitano un report SOC 2 completo. Un report SOC 3 può essere assegnato solo se il provider di servizi cloud ha un'opinione di controllo senza riserva per SOC 2.
+I revisori possono inoltre creare un report SOC 3, ovvero una versione abbreviata del report di controllo SOC 2 Tipo 2, per gli utenti che desiderano la convalida dei controlli dei provider, ma non necessitano di un report SOC 2 completo. Un report SOC 3 può essere assegnato solo se il provider di servizi cloud ha un'opinione di controllo senza riserva per SOC 2.
 
 ## <a name="microsoft-and-soc-1-2-and-3-reports"></a>Microsoft e i Report SOC 1, 2 e 3
 
@@ -111,11 +111,11 @@ I servizi cloud Microsoft vengono controllati almeno una volta l'anno rispetto a
 Con i report, il revisore può confrontare i risultati dei servizi cloud Microsoft per le aziende ai requisiti normativi e legali che ti riguardano.
 
 - Puoi visualizzare tutti i report SOC tramite [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx).
-- I clienti di Azure DevOps Service che non riescono ad accedere alla [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx) possono inviare messaggi di posta elettronica [Azure DevOps](mailto:AzureDevOpsSOCReport@microsoft.com) per i report SOC 1 e SOC 2. Questo messaggio di posta elettronica serve a richiede solo report SOC di Azure DevOps.
+- I clienti di Azure DevOps Service che non riescono ad accedere a [Service Trust Platform](https://www.microsoft.com/trustcenter/STP/default.aspx) possono inviare messaggi di posta elettronica [Azure DevOps](mailto:AzureDevOpsSOCReport@microsoft.com) per i report SOC 1 e SOC 2. Questo messaggio di posta elettronica serve a richiede solo report SOC di Azure DevOps.
 
 **Con quale frequenza vengono emessi report SOC di Azure?**
 
-I report SOC per Azure, Cloud app Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft si basano su una finestra di 12 mesi (periodo di controllo) con nuovi report emessi ogni sei mesi (i fine periodo sono il 31 marzo e il 30 settembre). Le lettere ponte vengono emesse a gennaio per coprire il periodo 01/10 - 31/12 e a luglio per coprire il periodo 01/04 - 30/06. I clienti possono [scaricare](https://aka.ms/stp) i report più recenti dal Service Trust Portal.
+I report SOC per Azure, Cloud app Security, Flow, Graph, Intune, Power BI, PowerApps, Stream e Data center Microsoft si basano su una finestra di 12 mesi (periodo di controllo) con nuovi report emessi ogni sei mesi (i fine periodo sono il 31 marzo e il 30 settembre). Le lettere ponte sono emesse su base trimestrale, in genere la prima settimana di ogni mese dopo la fine del trimestre. I clienti possono [scaricare](https://aka.ms/stp) i report più recenti dal Service Trust Portal.
 
 **Devo sottoporre a controlli i data center di Microsoft?**
 
@@ -127,7 +127,7 @@ Sì. Quando esegui la migrazione delle applicazioni e dei dati ai servizi cloud 
 
 **Qual è la fase iniziale del percorso di adeguamento della mia organizzazione?**
 
-Il [SOC Toolkit for Service Organizations ](https://aka.ms/soc-toolkit) è una risorsa utile per comprendere i processi di reporting SOC e per promuoverne l'utilizzo all'interno della tua organizzazione.
+Il [SOC Toolkit for Service Organizations](https://aka.ms/soc-toolkit) è una risorsa utile per comprendere i processi di reporting SOC e per promuoverne l'utilizzo all'interno della tua organizzazione.
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Usare Punteggio di conformità Microsoft per valutare i rischi
 
