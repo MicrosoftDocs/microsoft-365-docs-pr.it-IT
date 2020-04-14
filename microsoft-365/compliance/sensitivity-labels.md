@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza del framework Microsoft Information Protection per classificare e proteggere i dati dell'organizzazione, garantendo al contempo che la produttività degli utenti e la loro capacità di collaborare non vengano ostacolate. Queste etichette possono applicare impostazioni di protezione che includono contrassegni visivi di crittografia come piè di pagina e filigrane.
-ms.openlocfilehash: a67d71c16f93cf8872646c5bbeb072f8b5f07935
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 27accc57bce0b5597836e7683cf5b28d0fa9b942
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106154"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240311"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -48,8 +48,6 @@ Per applicare le etichette di riservatezza, gli utenti devono accedere a Office 
 - **Applicare al contenuto etichettato le impostazioni di protezione, ad esempio crittografia o filigrane.** Ad esempio, gli utenti possono applicare un'etichetta Riservato a un documento o a un messaggio di posta elettronica, e quell'etichetta può crittografare il contenuto e applicare una filigrana Riservato.
 
 - **Proteggere il contenuto nelle app di Office su piattaforme e dispositivi diversi.** Per un elenco delle app supportate, vedere [Usare le etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md).
-
-- **Evitare che informazioni riservate escano dall'organizzazione nei dispositivi che eseguono Windows** usando la soluzione Endpoint Protection in Microsoft Intune. Dopo l'applicazione di un'etichetta di riservatezza a contenuto che risiede in un dispositivo Windows, Endpoint Protection può impedire che il contenuto venga copiato in un'app di terze parti, ad esempio Twitter o Gmail, o che venga copiato in uno spazio di archiviazione rimovibile, ad esempio un'unità USB.
 
 - **Proteggere il contenuto in app e servizi di terze parti** con Microsoft Cloud App Security. Con Cloud App Security è possibile rilevare, classificare, etichettare e proteggere i contenuti in servizi e app di terze parti, ad esempio SalesForce, Box o DropBox, anche se l'applicazione o servizio di terze parti non legge o supporta le etichette di riservatezza.
 
@@ -98,9 +96,6 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     
     Lunghezza stringa: le filigrane sono limitate a 255 caratteri. Le intestazioni e i piè di pagina hanno un limite di 1024 caratteri, tranne che in Excel. Excel ha un limite totale di 255 caratteri per le intestazioni e i piè di pagina, ma questo limite include i caratteri non visibili, come i codici di formattazione. Se viene raggiunto questo limite, la stringa immessa non viene visualizzata in Excel.
 
-- **Evitare la perdita di dati** attivando la protezione endpoint in Intune. Se i contenuti riservati vengono scaricati, è possibile impedire la perdita dei dati dai dispositivi Windows. Ad esempio, non è possibile copiare contenuti etichettati in Dropbox, Gmail o in un'unità USB. Per consentire l'uso di Windows Information Protection (WIP) nelle le etichette di riservatezza, è necessario creare prima un criterio di protezione delle app nel portale di Azure. 
-    
-    Per altre informazioni sulle impostazioni di **prevenzione della perdita dei dati degli endpoint** quando si crea o si modifica un'etichetta di riservatezza, inclusi i prerequisiti importanti, vedere [Come Windows Information Protection protegge i file con etichetta di riservatezza](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
 - **Proteggere il contenuto in contenitori come siti e gruppi** quando si sceglie l'anteprima per [usare le etichette di riservatezza con Microsoft Teams, gruppi di Office 365 e siti di SharePoint (anteprima pubblica)](sensitivity-labels-teams-groups-sites.md).
     
@@ -128,7 +123,7 @@ Con le sottoetichette è possibile raggruppare uno o più etichette sotto un'eti
 
 Le sottoetichette sono solo un modo per presentare le etichette agli utenti in gruppi logici. Non ereditano le impostazioni dell'etichetta padre che le contiene. Quando si pubblica una sottoetichetta per un utente, tale utente può applicare tale sottoetichetta al contenuto ma non può applicare l'etichetta padre.
 
-Non scegliere un'etichetta padre come etichetta predefinita e non configurare un'etichetta padre in modo che venga applicata automaticamente o consigliata, perché le etichette padre non vengono applicate al contenuto nelle app di Office che usano il client di etichettatura unificata di Azure Information Protection.
+Non scegliere un'etichetta padre come etichetta predefinita o configurare un'etichetta padre da applicare (o consigliare) automaticamente, altrimenti l'etichetta padre non verrà applicata al contenuto.
 
 Esempio di come vengono visualizzate le sottoetichette per gli utenti:
 
