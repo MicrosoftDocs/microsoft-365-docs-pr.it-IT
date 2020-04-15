@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere e configurare Web browser e dispositivi periferici per il bypass di traffico a posizioni di Office 365 attendibili.
-ms.openlocfilehash: 71f62c5e245962f3514c49477e3cdeda17cb6397
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066688"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504080"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Passaggio 4: configurare il bypass di traffico
 
@@ -54,6 +54,13 @@ I dispositivi perimetrali includono firewall, dispositivi di decrittografia e is
 
 Tenere presente che questa procedura consente di eseguire il bypass solo per l'elaborazione dei dati di protezione di rete e proxy normale per il traffico agli endpoint delle categorie Ottimizzazione e Consenti di Microsoft 365. Tutto il resto del traffico su Internet verrà trasmesso tramite proxy e sarà soggetto all'elaborazione dei dati di protezione di rete esistente.
 
+## <a name="optimizing-traffic-for-remote-workers-that-use-vpn-connections"></a>Ottimizzazione del traffico per i lavoratori remoti che usano connessioni VPN
+
+Le connessioni VPN (Virtual Private Network) sono utilizzate comunemente dai lavoratori remoti per accedere alle risorse su un'Intranet aziendale. Una connessione VPN convenzionale instrada TUTTO il traffico, incluso quello Internet, verso l'Intranet aziendale. Il traffico Internet viene instradato verso i dispositivi di elaborazione dei pacchetti e la rete perimetrale dell'organizzazione. Questo traffico è soggetto a ritardi di spostamento ed elaborazione che possono ridurre considerevolmente le prestazioni e compromettere la produttività dei lavoratori remoti. 
+
+Lo split tunneling è la capacità di una connessione VPN di instradare il traffico specificato attraverso Internet anziché trasmetterlo attraverso la connessione VPN all'Intranet. Affinché i lavoratori remoti possano usufruire di prestazioni ottimali dei servizi di Microsoft 365 come Teams, SharePoint Online ed Exchange Online, è necessario configurare lo split tunneling delle connessioni VPN per inviare il traffico per ottimizzare gli endpoint di Office 365 direttamente attraverso Internet. 
+
+Per informazioni dettagliate, consultare [Ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling per VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
 
 Come checkpoint provvisorio, è possibile vedere i [criteri uscita](networking-exit-criteria.md#crit-networking-step4) per questo passaggio.
 
