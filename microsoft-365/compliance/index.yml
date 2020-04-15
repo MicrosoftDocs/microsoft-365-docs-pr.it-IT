@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Documentazione relativa alla conformità a Microsoft 365
-summary: Se l'organizzazione deve essere conforme agli standard legali o normativi, iniziare da qui per ulteriori informazioni sulla conformità in Microsoft 365.
+title: Documentazione sulla conformità di Microsoft 365
+summary: Se l'organizzazione deve rispettare standard legali o normativi, qui sono disponibili informazioni sulla conformità in Microsoft 365.
 metadata:
-  title: Documentazione relativa alla conformità a Microsoft 365
-  description: Documentazione per le funzionalità di conformità di Microsoft 365
+  title: Documentazione sulla conformità di Microsoft 365
+  description: Documentazione sulle funzionalità di conformità di Microsoft 365
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: d6f24a93754c60227e668bb8d0ec42776a519dbc
   ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 02/27/2020
   ms.locfileid: "42322532"
@@ -28,7 +28,7 @@ landingContent:
       url: sensitivity-labels.md
     - text: Prevenzione della perdita di dati (DLP)
       url: data-loss-prevention-policies.md
-    - text: Tipi di informazioni riservate
+    - text: Tipi di informazioni sensibili
       url: custom-sensitive-info-types.md
     - text: Crittografia della posta elettronica
       url: email-encryption.md
@@ -46,15 +46,15 @@ landingContent:
       url: records-management.md
     - text: Gestione del piano di archiviazione
       url: file-plan-manager.md
-    - text: Criteri di conservazione basati su eventi
+    - text: Conservazione basata su eventi
       url: event-driven-retention.md
     - text: Importazione PST
       url: importing-pst-files-to-office-365.md
-    - text: Connettori di dati di terze parti
+    - text: Connettori dati di terze parti
       url: archiving-third-party-data.md
-    - text: Rapporti sulla governance dei dati
+    - text: Report di governance dei dati
       url: view-the-data-governance-reports.md
-- title: Gestione dei rischi Insider
+- title: Gestire i rischi Insider
   linkLists:
   - linkListType: overview
     links:
@@ -66,15 +66,15 @@ landingContent:
       url: information-barriers.md
     - text: Gestione accessi con privilegi
       url: privileged-access-management-overview.md
-    - text: Archivio protetto del cliente
+    - text: Customer Lockbox
       url: customer-lockbox-requests.md
-- title: Individuare e rispondere
+- title: Individuazione e risposta
   linkLists:
   - linkListType: overview
     links:
     - text: Advanced eDiscovery
       url: overview-ediscovery-20.md
-    - text: EDiscovery di base
+    - text: Core eDiscovery
       url: ediscovery-cases.md
     - text: Ricerca contenuto
       url: search-for-content.md
@@ -88,11 +88,11 @@ landingContent:
     links:
     - text: Punteggio di conformità
       url: compliance-score.md
-    - text: Piano d'azione per la conformità GDPR
+    - text: Piano di azione per la conformità al GDPR
       url: gdpr-action-plan.md
-    - text: Protezione delle informazioni per GDPR
+    - text: Protezione delle informazioni per il GDPR
       url: office-365-info-protection-for-gdpr-overview.md
-    - text: Piano d'azione per la conformità ISO
+    - text: Piano di azione per la conformità ISO
       url: iso-action-plan.md
-    - text: Piano d'azione per la conformità NIST
+    - text: Piano di azione per la conformità NIST
       url: nist-action-plan.md
