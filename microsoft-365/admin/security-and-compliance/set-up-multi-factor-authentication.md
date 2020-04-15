@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Informazioni su come usare le impostazioni predefinite per la sicurezza per configurare l'autenticazione a più fattori per gli utenti di Office 365.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 5f468f040ca88ab4ab2bc198d0d7550bf2e7f4af
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 7e48f72f2fd8cfc5042bd15f994cc98bfa5fca8c
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204023"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503972"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
   
@@ -37,6 +37,7 @@ ms.locfileid: "43204023"
 Nei nuovi abbonamenti a Office 365 per le aziende o Microsoft 365 Business le impostazioni predefinite per la sicurezza sono attivate automaticamente. Questo significa che ogni utente dovrà configurare il master e installare l'app Microsoft Authenticator sul proprio dispositivo mobile. Per altre informazioni, vedere [Configurare la verifica in due passaggi per Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
 
 I nove ruoli di amministratore seguenti dovranno eseguire delle autenticazioni aggiuntive ogni volta che eseguono l'accesso:
+
 - Amministratore globale
 - Amministratore di SharePoint
 - Amministratore di Exchange
@@ -47,7 +48,7 @@ I nove ruoli di amministratore seguenti dovranno eseguire delle autenticazioni a
 - Amministratore utenti
 - Amministratore dell'autenticazione
 
-Tutti gli altri utenti dovranno eseguire l'autenticazione aggiuntiva quando necessario. Per altre informazioni, vedere [Che cosa sono le impostazioni predefinite per la sicurezza?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+Tutti gli altri utenti dovranno eseguire l'autenticazione aggiuntiva quando necessario. Per ulteriori informazioni, vedere [che cosa sono le impostazioni predefinite](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)per la sicurezza.
 
 > [!NOTE]
 > È necessario essere un amministratore globale di Office 365 per impostare o modificare l'AMF. <br><br>
@@ -62,7 +63,6 @@ Se in precedenza è stata configurata l'autenticazione a più fattori con criter
 
 1. Accedere all'[interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=834822) con le credenziali di amministratore globale.
 2. Passare alle [Proprietà di Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-
 3. Nella parte inferiore della pagina scegliere **Gestire le impostazioni predefinite per la sicurezza**.
 4. Scegliere **Sì** per abilitare le impostazioni predefinite per la sicurezza o **No** per disabilitare le impostazioni predefinite per la sicurezza e quindi scegliere **Salva**.
 
@@ -74,9 +74,9 @@ Se in precedenza è stata configurata l'autenticazione a più fattori con criter
 
 3. Sulla **sicurezza | Pagina introduttiva** , scegliere **accesso condizionale**. 
 
-4. Nella pagina **Criteri di accesso condizionale al portale di Azure** selezionare ogni criterio di base **Attivato** e impostarlo su **Disattivato**.
+4. Nella pagina **criteri di accesso condizionale** scegliere tutti i criteri di base **che sono**attivi e impostarli su **disattivato**.
 5. Passare alla pagina [Proprietà di Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-6. Nella parte inferiore della pagina scegliere **Gestire le impostazioni predefinite per la sicurezza**e nel riquadro **Abilitare le impostazioni predefinite per la sicurezza** impostare **Abilita le impostazioni predefinite per la sicurezza** su **Sì**. 
+6. Nella parte inferiore della pagina fare clic su **Gestisci impostazioni predefinite di sicurezza**e, nel riquadro **Attiva impostazioni di sicurezza** , impostare **Consenti impostazioni predefinite di sicurezza** su **Sì**e quindi scegliere **Salva**. 
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>Abilitare l'autenticazione moderna per l'organizzazione
 
@@ -84,12 +84,13 @@ Tutte le applicazioni client di Office 2016 supportano MFA con ADAL (Active Dire
 
 1. Per abilitare l'autenticazione moderna, nell'[interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=834822) selezionare **Impostazioni** \> **Impostazioni** e quindi nella scheda **Servizi** scegliere **Autenticazione moderna** dall'elenco.
 
-2. Selezionare la casella **Abilita l'autenticazione moderna** nel pannello **Autenticazione moderna**. 
+2. Selezionare la casella **Attiva autenticazione moderna (scelta consigliata)** nel pannello **autenticazione moderna** e quindi fare clic su **Salva modifiche**. 
 
     ![Pannello Autenticazione moderna con casella di controllo Abilita selezionata.](../../media/enablemodernauth.png)
     
 > [!IMPORTANT]
 > Dal mese di agosto 2017 tutti i nuovi tenant di Office 365 che includono Skype for Business Online ed Exchange Online hanno l'autenticazione moderna abilitata per impostazione predefinita. Per controllare lo stato di autenticazione moderna di Skype for Business Online, è possibile usare PowerShell per Skype for Business Online con credenziali di amministratore globale. Eseguire Get-CsOAuthConfiguration per controllare l'output di -ClientADALAuthOverride. Se -ClientADALAuthOverride è "Allowed" (Consentito), l'autenticazione moderna è attiva.
+
 Per controllare lo stato di autenticazione moderna per Exchange Online, vedere [Abilitare l'autenticazione moderna in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
 
 ## <a name="related-articles"></a>Articoli correlati

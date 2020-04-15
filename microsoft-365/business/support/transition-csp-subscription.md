@@ -1,5 +1,5 @@
 ---
-title: Transizione di un abbonamento Microsoft 365 Business CSP 
+title: Transizione di un abbonamento Microsoft 365 Business CSP
 description: Informazioni su come è possibile eseguire la transizione di un abbonamento CSP Microsoft 365 business dall'anteprima alla disponibilità generale (GA).
 author: jasongroce
 f1.keywords:
@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, abbonamento CSP transizione
 ms.date: 11/01/2017
-ms.openlocfilehash: 77b7b474a5ad17db58e283ea61b074c959905d1b
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 0a30d80ad5217868fec81866ab1dc41013917e99
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560781"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504108"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transizione di un abbonamento Microsoft 365 Business CSP
 

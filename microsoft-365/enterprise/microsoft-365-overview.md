@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Viene fornita un'introduzione ai percorsi per i componenti, i piani e la distribuzione di Microsoft 365 per Enterprise.
-ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 6b8d2aa7fd8455acde1d49a6ed7f7c93c5235652
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175191"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504092"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
@@ -84,15 +84,14 @@ Questo poster a due pagine rappresenta un modo rapido per inventariare l'infrast
 
 ## <a name="avoid-end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Evitare la fine del supporto per i client e i server Windows 7 e Office 2010
 
-I prodotti seguenti hanno raggiunto la fine del supporto il **14 gennaio 2020**:
-
-- [Windows 7](https://aka.ms/win7upgrade)
+[Windows 7](https://aka.ms/win7upgrade) ha raggiunto la fine del supporto il **14 gennaio 2020**.
 
 I prodotti seguenti potranno raggiungere la fine del supporto il **13 ottobre 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+
+[SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) raggiungerà la fine del supporto il **13 aprile 2021**.
 
 Per un riepilogo visivo delle opzioni di aggiornamento, migrazione e passaggio al cloud per questi prodotti, vedere il [poster relativo alla fine del supporto](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
@@ -102,7 +101,7 @@ Questo poster di una pagina è un modo rapido per comprendere i diversi percorsi
 
 È anche possibile [scaricare il poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
 
-## <a name="deploy"></a>Distribuzione
+## <a name="deploy"></a>Distribuire
 
 Esistono tre modi per distribuire i prodotti, le caratteristiche e i componenti di Microsoft 365 per Enterprise:
 
