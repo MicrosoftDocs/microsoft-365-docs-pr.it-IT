@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Procedura per la migrazione delle versioni di Microsoft Office, Office Server e Windows a Microsoft 365 Enterprise all'interno dell'organizzazione.
-ms.openlocfilehash: 76396ea3eb4622bb27455938f5c645dd1240003a
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 9fd35e4595b19d5ddd3db0f64ea7dedf303d6818
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113500"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504054"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migrazione a Microsoft 365 Enterprise
 
@@ -116,10 +116,9 @@ Anziché aggiornare i prodotti server nel rilascio di Office 2007 con i prodotti
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-Per i prodotti server nel rilascio di Office 2010, la fine del supporto è prevista dal **13 ottobre 2020** per:
+La fine del supporto per [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) è prevista per il **13 ottobre 2020**.
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+La fine del supporto per [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) è prevista per il **13 aprile 2021**.
 
 Anziché aggiornare questi prodotti server nel rilascio di Office 2010 con i prodotti server nel rilascio di Office 2013 o Office 2016, è consigliabile:
 

@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Configurare l'infrastruttura e le funzionalità di sicurezza necessarie per consentire ai dipendenti di lavorare in remoto ovunque e in qualsiasi momento.
-ms.openlocfilehash: 3932c293ca6be8ba4397b27591acfc3f7d024e1a
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053108"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504124"
 ---
 # <a name="empower-remote-workers"></a>Supportare i lavoratori remoti
 
@@ -99,7 +99,7 @@ Ecco la configurazione risultante con gli elementi relativi all'identità eviden
 
 ![Elementi relativi all'identità per i lavoratori remoti](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
-Per la [Fase 3: Windows 10 Enterprise](windows10-infrastructure.md):
+Per la [fase 3: Windows 10 Enterprise](windows10-infrastructure.md):
 
 - Distribuire l'infrastruttura per l'implementazione di nuovi dispositivi con Windows 10 Enterprise e per l'aggiornamento dei dispositivi Windows 7 o Windows 8.1 a Windows 10 Enterprise
 - Abilitare funzionalità di sicurezza complete per la protezione delle identità, delle informazioni e contro le minacce
@@ -206,6 +206,12 @@ Ripetere la formazione degli utenti se necessario.
 ### <a name="user-adoption-results"></a>Risultati dell'adozione da parte degli utenti
 
 I lavoratori remoti possono usare i propri dispositivi Windows 10 Enterprise o altri dispositivi e Office 365 ProPlus per accedere a servizi e risorse cloud di Microsoft 365 Enterprise condivisi in un ambiente sicuro, incontrandosi, lavorando e collaborando in tempo reale.
+
+## <a name="additional-microsoft-features-to-support-remote-workers"></a>Funzionalità di Microsoft aggiuntive per supportare i lavoratori remoti
+
+È possibile usare le [connessioni VPN da punto a sito di Azure](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about) per connettere i lavoratori remoti ai server in esecuzione in una rete virtuale di Azure.
+
+È possibile usare [Desktop virtuale Windows](https://docs.microsoft.com/azure/virtual-desktop/overview) per la virtualizzazione del desktop e delle app ospitata da Azure.
 
 ## <a name="see-also"></a>Vedere anche
 
