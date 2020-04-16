@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c2798238f0e3cb10edab7f98bf096474a80fa006
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857476"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521481"
 ---
 # <a name="deploy-supported-services"></a>Distribuire i servizi supportati
 
@@ -42,8 +42,8 @@ Una licenza di sicurezza Microsoft 365 E5, E5, a5 o a5 o una combinazione valida
 | ------ | ------ |
 | Microsoft Defender ATP | Serie di Endpoint Protection sviluppata attorno a potenti sensori comportamentali, cloud Analytics e Threat Intelligence |
 | Office 365 ATP | Protezione avanzata per le app e i dati in Office 365, inclusi i messaggi di posta elettronica e altri strumenti di collaborazione |
-| Azure ATP | Protezione da minacce avanzate, identità compromesse e insiders dannosi che utilizzano segnali correlati di Active Directory |
-| Microsoft Cloud App Security | Identifica e combatte Cyberthreats in tutti i servizi cloud Microsoft e di terze parti |
+| Azure ATP | Difendersi da minacce avanzate, identità compromesse e insiders dannosi che utilizzano segnali correlati di Active Directory |
+| Microsoft Cloud App Security | Identificare e combattere Cyberthreats tra i servizi cloud Microsoft e di terze parti |
 
 ## <a name="deployed-services-and-functionality"></a>Servizi e funzionalità distribuiti
 Microsoft Threat Protection offre una migliore visibilità, correlazione e correzione quando si distribuiscono servizi più supportati.
@@ -64,7 +64,7 @@ La tabella seguente elenca la modalità in cui ogni servizio supportato fornisce
 | Microsoft Defender ATP | -Stati endpoint e eventi RAW<br />-Rilevamento e avvisi degli endpoint, tra cui antivirus, EDR, riduzione della superficie di attacco<br />-Informazioni sui file e su altre entità osservate negli endpoint | Endpoint |
 | Office 365 ATP | -Stati di posta e cassette postali e eventi RAW<br />-Rilevamento di messaggi di posta elettronica, allegati e collegamenti | -Cassette postali<br />-Account di Office 365 |
 | Azure ATP | -Segnali di Active Directory, inclusi gli eventi di autenticazione<br />-Rilevamento comportamentale relativo all'identità | Identità |
-| Microsoft Cloud App Security | -Rilevamento di applicazioni cloud non autorizzate & servizi (Shadow IT)<br />-Esposizione dei dati alle app del cloud<br />-Attività di minacce associate alle app Cloud | App cloud |
+| Microsoft Cloud App Security | -Rilevamento di applicazioni e servizi cloud non autorizzati (Shadow IT)<br />-Esposizione dei dati alle app del cloud<br />-Attività di minacce associate alle app Cloud | App cloud |
 
 ## <a name="deploy-the-services"></a>Distribuire i servizi
 La distribuzione di ogni servizio in genere richiede il provisioning del tenant e una configurazione iniziale. Vedere la tabella seguente per comprendere in che modo ognuno di questi servizi è distribuito.

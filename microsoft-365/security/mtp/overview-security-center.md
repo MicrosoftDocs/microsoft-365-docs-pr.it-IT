@@ -1,5 +1,5 @@
 ---
-title: Panoramica del Centro sicurezza di Microsoft 365
+title: Panoramica del Centro sicurezza Microsoft 365
 description: Descrive la nuova Home per il monitoraggio e la gestione della sicurezza in tutte le identità, i dati, i dispositivi e le app di Microsoft.
 keywords: sicurezza, malware, Microsoft 365, M365, Centro sicurezza, monitoraggio, report, identità, dati, dispositivi, app
 ms.prod: microsoft-365-enterprise
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058906"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516912"
 ---
-# <a name="overview-of-the-microsoft-365-security-center"></a>Panoramica del Centro sicurezza di Microsoft 365
+# <a name="overview-of-the-microsoft-365-security-center"></a>Panoramica del Centro sicurezza Microsoft 365
 
 La gestione della sicurezza dell'azienda per proteggersi da un paesaggio di minacce in continua evoluzione comporta molte sfide. Potrebbe essere necessario disporre di troppe soluzioni di sicurezza con diverse posizioni per configurare un numero elevato di controlli e non sapere quali controlli siano i più efficaci e che introdurranno nuove sfide per la forza lavoro. Per i team di sicurezza può essere difficile trovare il giusto equilibrio tra sicurezza e produttività.
 
@@ -48,11 +48,11 @@ Il Centro sicurezza Microsoft 365 include:
 * **Avvisi** – avere una maggiore visibilità in tutti gli avvisi nell'ambiente Microsoft 365, compresi gli avvisi provenienti da Microsoft cloud app Security, Office 365 ATP, Azure ad, Azure ATP e Microsoft Defender ATP. Disponibile per i clienti E3 ed E5.  
 * **Centro azioni** -ridurre il volume degli avvisi il team di sicurezza deve rispondere manualmente, consentendo al team di operazioni di sicurezza di concentrarsi su minacce più sofisticate e altre iniziative di alto valore.
 * **Report** : consente di visualizzare i dettagli e le informazioni necessari per proteggere meglio gli utenti, i dispositivi, le app e altro ancora.
-* **Secure Score** : migliorare la posizione di sicurezza generale con Microsoft Secure score. In questa pagina viene fornito un riepilogo di tutte le caratteristiche e funzionalità di sicurezza che sono state abilitate e sono disponibili suggerimenti per migliorare le aree.
+* **Secure Score**: consente di ottimizzare il livello di sicurezza complessivo con Microsoft Secure Score. In questa pagina viene fornito un riepilogo di tutte le caratteristiche e funzionalità di sicurezza che sono state abilitate e sono disponibili suggerimenti per migliorare le aree.
 * **Caccia avanzata** – ricerca proattivamente di malware, file sospetti e attività nell'organizzazione Microsoft 365.
-* **Classificazione** : consente di proteggere la perdita di dati aggiungendo etichette per classificare documenti, messaggi di posta elettronica, documenti, siti e altro ancora. Quando viene applicata un'etichetta (automaticamente o dall'utente), il contenuto o il sito è protetto in base alle impostazioni selezionate. Ad esempio, è possibile creare etichette per la crittografia dei file, aggiungere la marcatura del contenuto e controllare l'accesso degli utenti a siti specifici.
-* **Criteri** : configurare i criteri per gestire i dispositivi, proteggerli dalle minacce e ricevere avvisi su varie attività nell'organizzazione organizzativa.
-* **Permissions** -gestire gli utenti dell'organizzazione che dispongono dell'accesso a Microsoft 365 Security Center per visualizzare il contenuto ed eseguire le attività. È inoltre possibile assegnare le autorizzazioni di Microsoft 365 nel portale di Azure AD.
+* **Classificazione**: consente di proteggere la perdita di dati aggiungendo etichette per classificare documenti, messaggi di posta elettronica, documenti, siti e altro. Quando viene applicata un'etichetta (automaticamente o dall'utente), il contenuto o il sito è protetto in base alle impostazioni selezionate. Ad esempio, è possibile creare le etichette per crittografare i file, aggiungere l'indicazione del contenuto e controllare l'accesso degli utenti a siti specifici.
+* **Criteri**: consente di criteri per gestire i dispositivi, proteggere dalle minacce e ricevere avvisi su varie attività dell'organizzazione.
+* **Autorizzazioni**: consente di gestire chi nell'organizzazione ha accesso al Centro sicurezza Microsoft 365 per visualizzarne il contenuto ed eseguire attività. È inoltre possibile assegnare autorizzazioni di Microsoft 365 nel portale di Azure AD.
 
 ## <a name="learn-more"></a>Ulteriori informazioni 
 
@@ -60,6 +60,7 @@ Esaminare questi argomenti sul monitoraggio, la revisione e la risposta alle esi
 - Connettere i punti su avvisi tramite [eventi](incident-queue.md) non consentiti
 - Correggere automaticamente le minacce mediante l' [analisi e la correzione automatizzate](mtp-autoir.md)
 - Esaminare e migliorare la propria posizione di sicurezza in modo olistico con [Microsoft Secure Score](microsoft-secure-score.md)
+- Visualizzare i [dispositivi](device-profile.md) nella rete
 - [Segnalare](monitoring-and-reporting.md) lo stato di identità, dati, dispositivi, app e infrastruttura
 - [Caccia proattivamente per minacce](advanced-hunting-overview.md) per tentativi di intrusione e attività di violazione che interessano la posta elettronica, i dati, i dispositivi e gli account
 - [Comprendere le campagne e le tecniche di attacco più recenti](latest-attack-campaigns.md) con Threat Analytics

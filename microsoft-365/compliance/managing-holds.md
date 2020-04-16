@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 49b75e77f9884bb7cb40721a2aa986e203623c07
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c36a9865757a76708ac9e7385a2a9ef3e977050e
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41582755"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521468"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gestione delle esenzioni in Advanced eDiscovery
 
@@ -31,15 +31,15 @@ ms.locfileid: "41582755"
 
 ## <a name="manage-custodian-based-holds"></a>Gestione delle esenzioni basate su depositari
 
-In alcuni casi, è possibile che si disponga di una serie di depositari che sono stati identificati e che si è deciso di conservare i dati durante il caso. In Advanced eDiscovery, quando questi depositari sono in attesa, l'utente e le relative origini dati selezionate vengono aggiunte automaticamente a un criterio di conservazione dei depositari. 
+In alcuni casi, è possibile che si disponga di una serie di depositari che sono stati identificati e che si è deciso di conservare i dati durante il caso. In Advanced eDiscovery, quando questi depositari sono in attesa, l'utente e le relative origini dati selezionate vengono aggiunte automaticamente a un criterio di conservazione dei depositari.
 
 Per visualizzare il criterio di conservazione dei depositari:
 
-1. Nel **Centro sicurezza & conformità**, fare clic su **eDiscovery > Advanced eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione.
+1. Nel centro conformità di Microsoft 365 fare clic su **eDiscovery > avanzate** per visualizzare l'elenco dei casi nell'organizzazione.
    
 2. Passare alla scheda **depositari** per aggiungere depositari all'interno del caso. Per informazioni su come è possibile aggiungere e mettere in attesa i depositari all'interno di un caso di eDiscovery avanzato, vedere [aggiungere i depositari a un caso di eDiscovery avanzato](add-custodians-to-case.md). Se i depositari sono già stati aggiunti e li si tiene in attesa, andare al passaggio 3.
    
-3. Passare alla scheda **esenzioni** e selezionare il ' criterio custode '.
+3. Passare alla scheda **esenzioni** e fare clic su **CustodianHold\<HoldId>**.
    
 4. Nella pagina riquadro a comparsa, è possibile visualizzare le statistiche di blocco per il criterio. È inoltre possibile eseguire azioni come applicare una query al blocco basato su custode. Per ulteriori informazioni sulla creazione di una query di blocco e sull'utilizzo di condizioni, vedere [keyword queries and Search Conditions for content search](keyword-queries-and-search-conditions.md).
  
@@ -47,12 +47,13 @@ Per visualizzare il criterio di conservazione dei depositari:
 
 Quando si crea un'esenzione, sono disponibili le opzioni seguenti per l'ambito del contenuto conservato nei percorsi di contenuto specificati:
 
-  - È possibile creare un'esenzione infinita in cui tutto il contenuto viene messo in attesa. In alternativa, è possibile creare un blocco basato su query che contenga solo il contenuto che corrisponde a una query di ricerca.
-  - È possibile specificare un intervallo di date che contenga solo il contenuto che è stato inviato, ricevuto o creato all'interno di tale intervallo di date. In alternativa, è possibile conservare tutto il contenuto indipendentemente dal momento in cui è stato inviato, ricevuto o creato.
+- È possibile creare un'esenzione infinita in cui tutto il contenuto viene messo in attesa. In alternativa, è possibile creare un blocco basato su query che contenga solo il contenuto che corrisponde a una query di ricerca.
+  
+- È possibile specificare un intervallo di date che contenga solo il contenuto che è stato inviato, ricevuto o creato all'interno di tale intervallo di date. In alternativa, è possibile conservare tutto il contenuto indipendentemente dal momento in cui è stato inviato, ricevuto o creato.
 
-Per creare un'esenzione per un caso avanzato di eDiscovery:
+Per creare un blocco non affidatario per un caso avanzato di eDiscovery:
 
-1. Nel **Centro sicurezza & conformità**, fare clic su **eDiscovery > Advanced eDiscovery** per visualizzare l'elenco dei casi nell'organizzazione.
+1. Nel centro conformità di Microsoft 365 fare clic su **eDiscovery > avanzate** per visualizzare l'elenco dei casi nell'organizzazione.
   
 2. Fare clic su **Apri** accanto al caso in cui si desidera creare le esenzioni.
   
@@ -73,12 +74,12 @@ Per creare un'esenzione per un caso avanzato di eDiscovery:
     > [!NOTE]
     > Quando si fa clic su **Scegli utenti, gruppi o team** per specificare le cassette postali da inserire in attesa, lo strumento di selezione delle cassette postali visualizzato è vuoto. Si tratta di un'impostazione predefinita per migliorare le prestazioni. Per aggiungere persone a questo elenco, digitare un nome, almeno 3 caratteri, nella casella di ricerca.
 
-    b. **Siti di SharePoint** -fare clic su **Scegli siti** , quindi fare di nuovo clic su **Choose sites** per specificare i siti di SharePoint e OneDrive for business in attesa. Digitare l'URL per ogni sito che si desidera conservare. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Office 365 o un team di Microsoft. Fare clic su **Scegli**e quindi su **fine**.
+    b. **Siti di SharePoint** -fare clic su **Scegli siti** , quindi fare di nuovo clic su **Choose sites** per specificare i siti di SharePoint e OneDrive for business in attesa. Digitare l'URL per ogni sito che si desidera conservare. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Microsoft Team o di Office 365. Fare clic su **Scegli**e quindi su **fine**.
     
-     Vedere la sezione **FAQ** per suggerimenti su come mettere in attesa i gruppi di Office 365 e Microsoft teams.
+     Per suggerimenti su come mettere in attesa gruppi di Microsoft teams e Office 365, vedere la sezione [inserire un blocco nei gruppi Microsoft teams e office 365](#place-a-hold-on-microsoft-teams-and-office-365-groups) .
 
     > [!NOTE]
-    > Nel caso raro che il nome dell'entità utente (UPN) di una persona sia stato modificato, verrà modificato anche l'URL per il relativo account OneDrive per incorporare il nuovo UPN. In questo caso, è necessario modificare il blocco aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente.
+    > L'URL dell'account OneDrive di un utente include il nome dell'utente (UPN) (ad esempio, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`). Nel caso raro che l'UPN di una persona sia cambiato, anche il relativo URL di OneDrive verrà modificato per incorporare il nuovo UPN. Se l'account OneDrive di un utente fa parte di un blocco non affidatario e il relativo UPN è cambiato, è necessario aggiornare il blocco e puntare al nuovo URL di OneDrive. Per ulteriori informazioni, vedere [come le modifiche UPN influiscono sull'URL di OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
 
      c. **Cartelle pubbliche di Exchange** -spostare l'interruttore Toggle nella posizione all per inserire in attesa tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Si noti che non è possibile scegliere le cartelle pubbliche specifiche da mettere in attesa. Lasciare l'opzione toggle impostata su **None** se non si desidera inserire un blocco nelle cartelle pubbliche.
 
@@ -92,10 +93,9 @@ Per creare un'esenzione per un caso avanzato di eDiscovery:
 
      Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere [keyword queries and Search Conditions for content search](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 
-12. Dopo aver configurato un blocco basato su query, fare clic su **Avanti**.
- 
-13. Rivedere le impostazioni e quindi fare clic su **Crea blocco**.
+11. Dopo aver configurato un blocco basato su query, fare clic su **Avanti**.
 
+12. Rivedere le impostazioni e quindi fare clic su **Crea blocco**.
 
 ## <a name="view-hold-statistics"></a>Visualizzazione delle statistiche di blocco
 
@@ -115,12 +115,15 @@ Tenere presenti le considerazioni seguenti sulle statistiche di archiviazione:
 
 - Se un sito di SharePoint o un account OneDrive viene spostato in un'area geografica diversa in un ambiente multi-geografico, le statistiche per il sito non verranno incluse nelle statistiche di esenzione. Tuttavia, il contenuto del sito rimarrà ancora in attesa. Inoltre, se un sito viene spostato in un'altra area, l'URL visualizzato nell'esenzione non verrà aggiornato. È necessario modificare il blocco e aggiornare l'URL.
 
-## <a name="frequently-asked-questions"></a>Domande frequenti
+## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Inserire un blocco nei gruppi di Microsoft teams e Office 365
 
-- **Come è possibile eseguire il mapping di un sito di Office 365 gruppi o Microsoft Teams a un custode? E che dire di disporre di un blocco non detentivo sui gruppi di Office 365 e Microsoft Teams?** Microsoft teams è basato sui gruppi di Office 365. Pertanto, la loro conservazione in un caso di eDiscovery è molto simile. Tenere presente quanto segue quando si immettono in attesa gruppi di Office 365 e Microsoft teams.
-  - Per inserire il contenuto presente nei gruppi di Office 365 e Microsoft teams in attesa, è necessario specificare la cassetta postale e il sito di SharePoint associato a un gruppo o a un team.
+Microsoft teams è basato sui gruppi di Office 365. Pertanto, la loro conservazione in Advanced eDiscovery è molto simile. 
+
+Tenere presente quanto segue quando si immettono in attesa gruppi di Office 365 e Microsoft teams.
+
+- Per inserire il contenuto presente nei gruppi di Office 365 e Microsoft teams in attesa, è necessario specificare la cassetta postale e il sito di SharePoint associato a un gruppo o a un team.
   
-  - Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà di un gruppo di Office 365 o di un team di Microsoft. Questo è un ottimo metodo per ottenere l'URL del sito associato a un gruppo di Office 365 o a un team di Microsoft. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Office 365 denominato Senior Leadership Team:
+- Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà di un gruppo di Office 365 o di un team di Microsoft. Questo è un ottimo metodo per ottenere l'URL del sito associato a un gruppo di Office 365 o a un team di Microsoft. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Office 365 denominato Senior Leadership Team:
 
 
     ```text
@@ -134,9 +137,9 @@ Tenere presenti le considerazioni seguenti sulle statistiche di archiviazione:
     > [!NOTE]
     > Per eseguire il cmdlet Get-UnifiedGroup, è necessario avere il ruolo Destinatari di sola lettura in Exchange Online o essere membri di un gruppo di ruoli assegnato al ruolo Destinatari di sola lettura.
 
- - Quando viene eseguita la ricerca della cassetta postale di un utente, qualsiasi gruppo di Office 365 o Microsoft Team di cui l'utente è membro non verrà cercato. Analogamente, quando si inserisce un gruppo di Office 365 o un blocco di Microsoft Team, solo la cassetta postale di gruppo e il sito del gruppo vengono conservati in blocco; le cassette postali e i siti di OneDrive for business dei membri del gruppo non vengono conservati a meno che non vengano aggiunti in modo esplicito come depositari o che dispongano delle origini dati. Pertanto, se si ha la necessità di disporre di un gruppo di Office 365 o di un team Microsoft per uno specifico custode, valutare la possibilità di mappare la cassetta postale del sito e del gruppo del gruppo al custode (vedere Managing Depositaries in Advanced eDiscovery). Se il gruppo di Office 365 o il team Microsoft non è attribuibile a un singolo custode, è consigliabile aggiungere l'origine a un blocco non detentivo. 
- 
- - Per ottenere un elenco dei membri di un gruppo di Office 365 o di un team di Microsoft, è possibile visualizzare le proprietà nella pagina Home > gruppi nell'interfaccia di amministrazione di Microsoft 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online:
+- Quando viene eseguita la ricerca della cassetta postale di un utente, qualsiasi gruppo di Office 365 o Microsoft Team di cui l'utente è membro non verrà cercato. Analogamente, quando si inserisce un gruppo di Office 365 o un blocco di Microsoft Team, solo la cassetta postale di gruppo e il sito del gruppo vengono conservati in blocco; le cassette postali e i siti di OneDrive for business dei membri del gruppo non vengono conservati a meno che non vengano aggiunti in modo esplicito come depositari o che dispongano delle origini dati. Pertanto, se si ha la necessità di disporre di un gruppo di Office 365 o di un team Microsoft per uno specifico custode, valutare la possibilità di mappare la cassetta postale del sito e del gruppo del gruppo al custode (vedere Managing Depositaries in Advanced eDiscovery). Se il gruppo di Office 365 o il team Microsoft non è attribuibile a un singolo custode, è consigliabile aggiungere l'origine a un blocco non detentivo. 
+
+- Per ottenere un elenco dei membri di un gruppo di Office 365 o di un team di Microsoft, è possibile visualizzare le proprietà nella pagina **Home > gruppi** nell'interfaccia di amministrazione di Microsoft 365. In alternativa, è possibile eseguire il comando seguente in PowerShell di Exchange Online:
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

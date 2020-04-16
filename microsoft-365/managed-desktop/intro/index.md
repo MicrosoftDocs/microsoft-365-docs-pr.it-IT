@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Service, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43142684"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516810"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Cos'è Microsoft Managed Desktop?
 
@@ -65,7 +65,7 @@ Microsoft Managed Desktop assume la responsabilità di gestire i dispositivi reg
 
 
 ## <a name="need-more-details"></a>Occorrono maggiori dettagli?
-Per ulteriori informazioni sul valore di Microsoft Managed Desktop, incluse le storie dei clienti, vedere [Microsoft Managed Desktop](https://aka.ms/mmd). Per iniziare, è possibile utilizzare una guida di [orientamento](https://aka.ms/AA6jiam) e un riepilogo di [una pagina](https://aka.ms/AA6ob3h)scaricabile. È possibile trovare le ultime notizie sul [Blog](https://aka.ms/AA6l2dd)di Microsoft Managed Desktop.
+Per ulteriori informazioni sul valore di Microsoft Managed Desktop, incluse le storie dei clienti, vedere [Microsoft Managed Desktop](https://aka.ms/mmd). Per iniziare, è possibile ottenere ulteriori informazioni sulla [Roadmap](https://aka.ms/AA6jiam), un [caso di studio globale di impatto economico di Forrester](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)e un [Riepilogo](https://aka.ms/AA6ob3h)di una pagina scaricabile. È possibile trovare le ultime notizie sul [Blog](https://aka.ms/AA6l2dd)di Microsoft Managed Desktop.
 
 Se Microsoft Managed Desktop sembra appropriato per la propria organizzazione, è possibile approfondire la documentazione aggiuntiva che spiega meglio il servizio, come preparare l'organizzazione a iscriversi, come iniziare a utilizzare il servizio e le operazioni in seguito, incluso il modo in cui gli utenti finali possono facilmente ottenere assistenza, se necessario. Se si è già pronti per salire a bordo, iniziare a contattare il [team dell'account locale](https://pages.email.office.com/contactmmd/).
 

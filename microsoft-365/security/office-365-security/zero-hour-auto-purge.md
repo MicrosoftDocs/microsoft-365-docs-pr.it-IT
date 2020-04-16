@@ -19,12 +19,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-hour auto Purge (ZAP) è una funzionalità di protezione della posta elettronica in Office 365 che rileva la posta indesiderata, il malware o i messaggi di phishing che sono già stati recapitati a Exchange Online. La modalità di utilizzo di ZAP dipende dal tipo di contenuto dannoso rilevato.
-ms.openlocfilehash: 7cce0c15d861ee43d5704f3fc4da5a6dccb9d5d4
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 44bdab5d37863bc543d953a89ac3129b3530437d
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895012"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516774"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-office-365"></a>Zero-hour auto Purge (ZAP)-protezione da posta indesiderata e malware in Office 365
 
@@ -54,7 +54,7 @@ Per i **messaggi letti o non letti** identificati come phishing dopo il recapito
 
 - **Aggiungi X-header**, **anteporre la riga dell'oggetto al testo**: zap non esegue alcuna azione sul messaggio.
 
-- **Spostare il messaggio in posta indesiderata**: zap sposta il messaggio nella cartella posta indesiderata, purché la regola di posta indesiderata sia abilitata sulla cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Spostare il messaggio in posta indesiderata**: zap sposta il messaggio nella cartella posta indesiderata, purché la regola di posta indesiderata sia abilitata sulla cassetta postale (abilitata per impostazione predefinita). Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Reindirizza messaggio all'indirizzo di posta elettronica**, **eliminare**il messaggio, mettere in **quarantena**: zap mette in quarantena il messaggio. Solo gli amministratori possono visualizzare e gestire i messaggi in quarantena di phishing.
 
@@ -68,7 +68,7 @@ Per i **messaggi non letti** identificati come posta indesiderata dopo il recapi
 
 - **Aggiungi X-header**, **anteporre la riga dell'oggetto al testo**: zap non esegue alcuna azione sul messaggio.
 
-- **Spostare il messaggio in posta indesiderata**: zap sposta il messaggio nella cartella posta indesiderata, purché la regola di posta indesiderata sia abilitata sulla cassetta postale (abilitata per impostazione predefinita). Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Spostare il messaggio in posta indesiderata**: zap sposta il messaggio nella cartella posta indesiderata, purché la regola di posta indesiderata sia abilitata sulla cassetta postale (abilitata per impostazione predefinita). Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Reindirizza messaggio all'indirizzo di posta elettronica**, **eliminare**il messaggio, mettere in **quarantena**: zap mette in quarantena il messaggio. Gli utenti finali possono visualizzare e gestire i propri messaggi di posta indesiderata in quarantena.
 
@@ -100,7 +100,7 @@ A: le regole del flusso di posta o blocca e Consenti le impostazioni dell'organi
 
 ### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>D: che cosa succede se un messaggio viene spostato in un'altra cartella (ad esempio, le regole di posta in arrivo)?
 
-A: ZAP continua a funzionare fino a quando il messaggio non è stato eliminato o spostato nella cartella posta indesiderata.
+A: la funzione ZAP continua a funzionare finché il messaggio non è stato eliminato oppure finché non è stata applicata la stessa azione. Ad esempio, se il criterio phishing è impostato per la quarantena e l'utente o l'amministratore ha già scartato il messaggio di posta elettronica, la quarantena eseguirà un'azione per la quarantena del file.
 
 ### <a name="q-does-zap-change-the-message-header"></a>D: lo ZAP cambia l'intestazione del messaggio?
 

@@ -2,11 +2,10 @@
 title: Aggiornare gli utenti di Office 365 per le aziende all'ultimo client di Office
 f1.keywords:
 - NOCSH
-ms.author: janellem
-author: janellem
-manager: eliree
+ms.author: kwekuako
+author: kwekuako
+manager: scotv
 audience: Admin
-ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Informazioni su come aggiornare gli utenti all'ultimo client di Office.
-ms.openlocfilehash: 3d9c92a5362889db69926552848ba4c71d7c4c42
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 18200184ed8d7eb15ee4eef3903ac9d8e08b9854
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360407"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521461"
 ---
 # <a name="upgrade-your-office-365-for-business-users-to-the-latest-office-client"></a>Aggiornare gli utenti di Office 365 per le aziende all'ultimo client di Office
 
@@ -47,7 +46,7 @@ Per ulteriori informazioni, vedere la Guida [di orientamento alla fine del suppo
 
  Se non si è un amministratore e si dispone di un prodotto [Office per la casa](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans) , vedere [come si esegue l'aggiornamento di Office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx) per informazioni sull'aggiornamento della versione precedente di Office.
 
-## <a name="getting-ready-to-upgrade"></a>Preparazione per l'aggiornamento
+## <a name="get-ready-to-upgrade"></a>Prepararsi all'aggiornamento
 
 Come amministratore, è possibile controllare quale versione di Office people nell'organizzazione è in grado di installare. È consigliabile aiutare gli utenti dell'organizzazione a eseguire le versioni precedenti di Office, ad esempio Office 2010, Office 2013 o Office 2016, per l'aggiornamento alla versione più recente per trarre vantaggio dai miglioramenti relativi alla sicurezza e alla produttività.
 

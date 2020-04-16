@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilizzare il Centro sicurezza & conformità per creare e gestire i casi di eDiscovery nell'organizzazione. È possibile assegnare membri al caso, inserire posizioni di contenuto in attesa, eseguire ricerche di contenuto associate al caso e esportare i risultati della ricerca. È inoltre possibile preparare i dati dei casi per un'ulteriore analisi in Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 471dd99d6e21afbb4db1a05cd5609cda9e97346c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f6484fb43b1d117856ba78bb918289b28776b021
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894965"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521522"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gestire i casi di eDiscovery nel Centro sicurezza e conformità
 
@@ -194,7 +194,7 @@ Per creare un'esenzione per un caso di eDiscovery:
     Vedere la sezione [ulteriori informazioni](#more-information) per suggerimenti su come mettere in attesa Microsoft teams, gruppi di Yammer e gruppi di Office 365. 
     
     > [!NOTE]
-    > Nel caso raro che il nome dell'entità utente (UPN, User Principal Name) di una persona venga modificato, l'URL per il relativo account OneDrive verrà modificato anche per incorporare il nuovo UPN. In questo caso, è necessario modificare il blocco aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente. 
+    > Nel caso raro che il nome dell'entità utente (UPN, User Principal Name) di una persona venga modificato, l'URL per il relativo account OneDrive verrà modificato anche per incorporare il nuovo UPN. In questo caso, è necessario modificare il blocco aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente. Per ulteriori informazioni, vedere [come le modifiche UPN influiscono sull'URL di OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
   
    c. **Cartelle pubbliche di Exchange.** Spostare il controllo](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) Toggle Toggle ![switch nella posizione **All** per inserire in attesa tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Non è possibile scegliere cartelle pubbliche specifiche da mantenere in attesa. Lasciare l'opzione toggle impostata su **None** se non si desidera inserire un blocco nelle cartelle pubbliche.
     
@@ -270,7 +270,7 @@ Dopo aver creato un caso di eDiscovery, e archiviato i depositari correlati al c
     
     ![Posizioni, posizioni in attesa](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **Tutte le posizioni** : selezionare questa opzione per eseguire la ricerca in tutti i percorsi di contenuto dell'organizzazione. Quando si seleziona questa opzione, è possibile scegliere di effettuare una ricerca in tutte le cassette postali di Exchange (incluse le cassette postali per tutti i team Microsoft, i gruppi di Yammer e i gruppi di Office 365), tutti i siti di SharePoint e OneDrive for business (inclusi i siti per tutti gli utenti di Microsoft Teams, gruppi di Yammer e gruppi di Office 365) e tutte le cartelle pubbliche.
+    - **Tutte le posizioni** : selezionare questa opzione per eseguire la ricerca in tutti i percorsi di contenuto dell'organizzazione. Quando si seleziona questa opzione, è possibile scegliere di effettuare una ricerca in tutte le cassette postali di Exchange (incluse le cassette postali per tutti i team Microsoft, i gruppi di Yammer e i gruppi di Office 365), tutti i siti di SharePoint e OneDrive for business (che include i siti per tutti i gruppi Microsoft, Yammer e Office 365) e tutte le cartelle pubbliche.
     
     - **Tutte le posizioni in attesa.** Selezionare questa opzione per cercare tutti i percorsi di contenuto che sono stati inseriti in attesa nel caso. Se il caso contiene più esenzioni, i percorsi di contenuto di tutte le esenzioni verranno ricercati quando si seleziona questa opzione. Inoltre, se un percorso di contenuto è stato posizionato in un blocco basato su query, vengono ricercati solo gli elementi che sono in attesa quando si esegue la ricerca di contenuto che si sta creando in questo passaggio. Ad esempio, se un utente è stato inserito in una conservazione basata su query che conserva gli elementi inviati o creati prima di una data specifica, solo gli elementi verranno ricercati utilizzando i criteri di ricerca della ricerca contenuto. Questa operazione viene eseguita collegando la query di blocco del caso e la query di ricerca del contenuto da parte di un operatore **and** . Vedere la sezione [ulteriori informazioni](#more-information) alla fine di questo articolo per ulteriori informazioni sulla ricerca di contenuto del caso. 
     
@@ -367,7 +367,7 @@ Come alternativa all'esportazione dei risultati di una singola ricerca di conten
     Il flusso di lavoro per esportare i risultati da più ricerche di contenuto associate a un caso equivale all'esportazione dei risultati della ricerca per una singola ricerca. Per istruzioni dettagliate, vedere [Export content search results](export-search-results.md).
     
     > [!NOTE]
-    > Quando si esportano i risultati della ricerca da più ricerche associate a un caso, è anche possibile abilitare la deduplicazione in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio nel cassette postali di cui è stata eseguita la ricerca in una o più ricerche. Per ulteriori informazioni sulla deduplicazione e sulla modalità di identificazione degli elementi duplicati, vedere [de-duplication nei risultati della ricerca di eDiscovery](de-duplication-in-ediscovery-search-results.md). 
+    > Quando si esportano i risultati della ricerca da più ricerche associate a un caso, è anche possibile abilitare la deduplicazione in modo che venga esportata una sola copia di un messaggio di posta elettronica anche se sono state trovate più istanze dello stesso messaggio nelle cassette postali che sono state ricercate in una o più delle ricerche. Per ulteriori informazioni sulla deduplicazione e sulla modalità di identificazione degli elementi duplicati, vedere [de-duplication nei risultati della ricerca di eDiscovery](de-duplication-in-ediscovery-search-results.md). 
   
 8. Dopo aver avviato l'esportazione, fare clic sulla scheda **Esporta** per visualizzare l'elenco dei processi di esportazione per questo caso. 
     
