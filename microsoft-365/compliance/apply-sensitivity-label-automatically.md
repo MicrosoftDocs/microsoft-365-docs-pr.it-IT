@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea automaticamente un'etichetta di riservatezza, è possibile assegnare un'etichetta a un documento o un messaggio di posta elettronica oppure è possibile chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 0558709c729a0ca941124ac3e72762f4b973432d
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+ms.openlocfilehash: 4ce9e06bb98fb391bb9eb5ffa01491e0c85eba1f
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216887"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240301"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -95,7 +95,11 @@ Le etichette sono ordinate per la valutazione in base alla posizione specificata
 
 ## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>Non configurare un'etichetta padre in modo che venga applicata automaticamente o consigliata
 
-Tenere presente che non è possibile applicare al contenuto un'etichetta padre (un'etichetta con sottoetichette). Assicurarsi di non configurare un'etichetta padre in modo che venga applicata automaticamente o consigliata perché le etichette padre non vengono applicate al contenuto in app di Office che usano con il client di assegnazione delle etichette unificato Azure Information Protection. Per ulteriori informazioni sulle etichette padre e sulle sottoetichette, vedere [Sottoetichette (raggruppamento etichette)](sensitivity-labels.md#sublabels-grouping-labels).
+Tenere presente che non è possibile applicare al contenuto un'etichetta padre (un'etichetta con sottoetichette). Verificare che non sia stata configurata un'etichetta padre per essere applicata automaticamente o consigliata nelle app di Office e non selezionare un'etichetta padre per un criterio di applicazione automatica di etichette, altrimenti l'etichetta padre non verrà applicata al contenuto.
+
+Per usare l'etichettatura automatica con le sottoetichette, assicurarsi di pubblicare sia l'etichetta padre che la sottoetichetta.
+
+Per ulteriori informazioni sulle etichette padre e sulle sottoetichette, vedere [Sottoetichette (raggruppamento etichette)](sensitivity-labels.md#sublabels-grouping-labels).
 
 ## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Come configurare l'applicazione automatica di etichette per le app di Office
 

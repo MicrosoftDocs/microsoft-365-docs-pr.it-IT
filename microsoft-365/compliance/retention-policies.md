@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: ffbc8026b8a0b1f85916c7697625bfa0935e275f
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
+ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189057"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237643"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -301,7 +301,7 @@ Se la verifica dell'URL immesso fallisce, verrà visualizzato un messaggio di er
 I messaggi di chat e i canali di Teams non sono interessati dai criteri di conservazione applicati alle cassette postali di utenti o gruppi dei percorsi di Exchange o dei gruppi di Office 365. Anche se i messaggi di chat e i canali di Teams vengono archiviati in Exchange, sono interessati solo dai criteri di conservazione applicati al percorso di Teams.
 
 > [!NOTE]
-> Se un utente è incluso in un criterio di conservazione attivo che conserva i dati di Teams, l'eliminazione di una cassetta postale di tale utente non è consentita, poiché è necessario conservare i dati. Per eliminare una cassetta postale di un utente di questo tipo, l'amministratore deve prima escludere l'utente dai criteri di conservazione.
+> Se un utente è incluso nei criteri di conservazione attivi che conservano i dati di Teams e viene eliminata una cassetta postale di un utente incluso in tali criteri, per conservare i dati, la cassetta postale viene convertita in una [cassetta postale inattiva](inactive-mailboxes-in-office-365.md). Se non è necessario conservare i dati per l'utente, escludere l'utente dai criteri di conservazione prima di eliminare la relativa cassetta postale.
   
 Dopo che i criteri di conservazione vengono assegnati a un team, i messaggi di chat e i canali possono seguire uno dei due percorsi seguenti:
 
