@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 4c66e2c398adfc67ec28661ed654ca891a846534
   ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 03/19/2020
   ms.locfileid: "42857322"
@@ -45,7 +45,7 @@ additionalContent:
     summary: Selezionare una scheda per altre informazioni su Microsoft 365.
     items:
     - title: Interfaccia di amministrazione di Microsoft 365
-      summary: Configurare e gestire i servizi di Office 365 e Microsoft 365 per la propria organizzazione.
+      summary: Configurare e gestire i servizi di Office 365 e Microsoft 365 per l'organizzazione.
       url: ./admin/admin-home.yml
     - title: Microsoft 365 Business
       summary: Studiato per piccole e medie imprese. Gestisci la tua azienda con le versioni più recenti di Windows e delle app di Office come Excel e Outlook. Sfrutta le funzionalità di sicurezza e protezione dei dati che si estendono a tutti i tuoi dispositivi aziendali.
