@@ -22,69 +22,77 @@ search.appverid:
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Per ulteriori informazioni, vedere i valori o i dati necessari per la creazione di record DNS per Office 365. '
 ms.custom: okr_smb
-ms.openlocfilehash: 2490532894ef00bab5de3f406b0c104529423382
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 2cb45b6a5c07bd50e15e7f2a941be344b5f69038
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210381"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540880"
 ---
-# <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a><span data-ttu-id="a9074-103">Raccogliere le informazioni necessarie per creare record DNS di Office 365</span><span class="sxs-lookup"><span data-stu-id="a9074-103">Gather the information you need to create Office 365 DNS records</span></span>
+# <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a><span data-ttu-id="edf32-103">Raccogliere le informazioni necessarie per creare record DNS di Office 365</span><span class="sxs-lookup"><span data-stu-id="edf32-103">Gather the information you need to create Office 365 DNS records</span></span>
 
- <span data-ttu-id="a9074-104">Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**.</span><span class="sxs-lookup"><span data-stu-id="a9074-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="edf32-104">Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.md)**.</span><span class="sxs-lookup"><span data-stu-id="edf32-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a><span data-ttu-id="a9074-105">Passaggio 1: trovare il valore del record TXT e verificare</span><span class="sxs-lookup"><span data-stu-id="a9074-105">Step 1: Find the TXT record value and verify</span></span>
+### <a name="step-1-find-the-txt-record-value-and-verify"></a><span data-ttu-id="edf32-105">Passaggio 1: trovare il valore del record TXT e verificare</span><span class="sxs-lookup"><span data-stu-id="edf32-105">Step 1: Find the TXT record value and verify</span></span>
 
-1. <span data-ttu-id="a9074-106">Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> .</span><span class="sxs-lookup"><span data-stu-id="a9074-106">In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+::: moniker range="o365-worldwide"
+
+1. <span data-ttu-id="edf32-106">Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> .</span><span class="sxs-lookup"><span data-stu-id="edf32-106">In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+
+::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="a9074-107">Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domini</a> .</span><span class="sxs-lookup"><span data-stu-id="a9074-107">In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="edf32-107">Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domini</a> di **installazione** > .</span><span class="sxs-lookup"><span data-stu-id="edf32-107">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="a9074-108">Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .</span><span class="sxs-lookup"><span data-stu-id="a9074-108">In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="edf32-108">Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> di **installazione** > .</span><span class="sxs-lookup"><span data-stu-id="edf32-108">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
     
-2. <span data-ttu-id="a9074-109">Nella pagina **Domains** selezionare il dominio, quindi fare clic su **Avvia installazione**.</span><span class="sxs-lookup"><span data-stu-id="a9074-109">On the **Domains** page, select your domain, then select **Start setup**.</span></span> <span data-ttu-id="a9074-110">Verrà nuovamente visualizzata la configurazione guidata domini per verificare il valore specifico da aggiungere.</span><span class="sxs-lookup"><span data-stu-id="a9074-110">You'll go back to the domains setup wizard to see the specific value you need to add.</span></span>
+2. <span data-ttu-id="edf32-109">Nella pagina **Domains** selezionare il dominio, quindi fare clic su **Avvia installazione**.</span><span class="sxs-lookup"><span data-stu-id="edf32-109">On the **Domains** page, select your domain, then select **Start setup**.</span></span> <span data-ttu-id="edf32-110">Verrà nuovamente visualizzata la configurazione guidata domini per verificare il valore specifico da aggiungere.</span><span class="sxs-lookup"><span data-stu-id="edf32-110">You'll go back to the domains setup wizard to see the specific value you need to add.</span></span>
     
-3. <span data-ttu-id="a9074-111">Nella pagina **Verifica dominio** selezionare **Aggiungi un record TXT**e quindi fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="a9074-111">On the **Verify domain** page, select **Add a TXT record instead**, then select **Next**.</span></span>
+3. <span data-ttu-id="edf32-111">Nella pagina **Verifica dominio** selezionare **Aggiungi un record TXT**e quindi fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="edf32-111">On the **Verify domain** page, select **Add a TXT record instead**, then select **Next**.</span></span>
     
-4. <span data-ttu-id="a9074-112">Copiare il **valore txt** visualizzato.</span><span class="sxs-lookup"><span data-stu-id="a9074-112">Copy the **TXT value** shown.</span></span> <span data-ttu-id="a9074-113">Ha un aspetto simile al seguente: **MS = msXXXXXXXX**.</span><span class="sxs-lookup"><span data-stu-id="a9074-113">It looks like this: **MS=msXXXXXXXX**.</span></span> 
+4. <span data-ttu-id="edf32-112">Copiare il **valore txt** visualizzato.</span><span class="sxs-lookup"><span data-stu-id="edf32-112">Copy the **TXT value** shown.</span></span> <span data-ttu-id="edf32-113">Ha un aspetto simile al seguente: **MS = msXXXXXXXX**.</span><span class="sxs-lookup"><span data-stu-id="edf32-113">It looks like this: **MS=msXXXXXXXX**.</span></span> 
     
-5. <span data-ttu-id="a9074-114">Passare a [creare record DNS presso un provider di hosting DNS](create-dns-records-at-any-dns-hosting-provider.md)e selezionare l'host DNS dall'elenco dei registrar per visualizzare le istruzioni dettagliate.</span><span class="sxs-lookup"><span data-stu-id="a9074-114">Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and select your DNS host from the list of registrars to see the step-by-step instructions.</span></span>
+5. <span data-ttu-id="edf32-114">Passare a [creare record DNS presso un provider di hosting DNS](create-dns-records-at-any-dns-hosting-provider.md)e selezionare l'host DNS dall'elenco dei registrar per visualizzare le istruzioni dettagliate.</span><span class="sxs-lookup"><span data-stu-id="edf32-114">Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and select your DNS host from the list of registrars to see the step-by-step instructions.</span></span>
     
-6. <span data-ttu-id="a9074-115">Seguire la procedura per creare il record TXT (o il record MX) presso l'host DNS, quindi verificare nuovamente il dominio in Office 365.</span><span class="sxs-lookup"><span data-stu-id="a9074-115">Follow the steps for creating the TXT record (or MX record) at your DNS host, then verify the domain back in Office 365.</span></span>
+6. <span data-ttu-id="edf32-115">Seguire la procedura per creare il record TXT (o il record MX) presso l'host DNS, quindi verificare nuovamente il dominio in Office 365.</span><span class="sxs-lookup"><span data-stu-id="edf32-115">Follow the steps for creating the TXT record (or MX record) at your DNS host, then verify the domain back in Office 365.</span></span>
 
-7. <span data-ttu-id="a9074-116">Rimuovere il record TXT (o il record MX) dall'host DNS dopo la verifica del dominio in Office 365.</span><span class="sxs-lookup"><span data-stu-id="a9074-116">Remove the TXT record (or MX record) from your DNS host once the domain is verified in Office 365.</span></span>
+7. <span data-ttu-id="edf32-116">Rimuovere il record TXT (o il record MX) dall'host DNS dopo la verifica del dominio in Office 365.</span><span class="sxs-lookup"><span data-stu-id="edf32-116">Remove the TXT record (or MX record) from your DNS host once the domain is verified in Office 365.</span></span>
     
-### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a><span data-ttu-id="a9074-117">Passaggio 2: trovare il valore del record MX per la posta elettronica e altro ancora</span><span class="sxs-lookup"><span data-stu-id="a9074-117">Step 2: Find the MX record value for email and more</span></span>
+### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a><span data-ttu-id="edf32-117">Passaggio 2: trovare il valore del record MX per la posta elettronica e altro ancora</span><span class="sxs-lookup"><span data-stu-id="edf32-117">Step 2: Find the MX record value for email and more</span></span>
 
-1. <span data-ttu-id="a9074-118">Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> .</span><span class="sxs-lookup"><span data-stu-id="a9074-118">In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+::: moniker range="o365-worldwide"
+
+1. <span data-ttu-id="edf32-118">Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> .</span><span class="sxs-lookup"><span data-stu-id="edf32-118">In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+
+::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="a9074-119">Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domini</a> .</span><span class="sxs-lookup"><span data-stu-id="a9074-119">In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="edf32-119">Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domini</a> di **installazione** > .</span><span class="sxs-lookup"><span data-stu-id="edf32-119">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="a9074-120">Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .</span><span class="sxs-lookup"><span data-stu-id="a9074-120">In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="edf32-120">Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> di **installazione** > .</span><span class="sxs-lookup"><span data-stu-id="edf32-120">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
     
-2. <span data-ttu-id="a9074-121">Nella pagina **Domini** selezionare il proprio dominio.</span><span class="sxs-lookup"><span data-stu-id="a9074-121">On the **Domains** page, select your domain.</span></span> 
+2. <span data-ttu-id="edf32-121">Nella pagina **Domini** selezionare il proprio dominio.</span><span class="sxs-lookup"><span data-stu-id="edf32-121">On the **Domains** page, select your domain.</span></span> 
     
-3. <span data-ttu-id="a9074-122">In **Record DNS necessari** verranno visualizzati i record DNS da aggiungere.</span><span class="sxs-lookup"><span data-stu-id="a9074-122">Under **Required DNS settings**, you'll see the DNS records to add.</span></span>
+3. <span data-ttu-id="edf32-122">In **Record DNS necessari** verranno visualizzati i record DNS da aggiungere.</span><span class="sxs-lookup"><span data-stu-id="edf32-122">Under **Required DNS settings**, you'll see the DNS records to add.</span></span>
     
-    <span data-ttu-id="a9074-123">È consigliabile tenere a portata di mano queste informazioni quando si apportano modifiche all'host DNS, per poter copiare e incollare i valori.</span><span class="sxs-lookup"><span data-stu-id="a9074-123">You'll want to keep this information available while you make changes at your DNS host, so you can copy and paste the values.</span></span>
+    <span data-ttu-id="edf32-123">È consigliabile tenere a portata di mano queste informazioni quando si apportano modifiche all'host DNS, per poter copiare e incollare i valori.</span><span class="sxs-lookup"><span data-stu-id="edf32-123">You'll want to keep this information available while you make changes at your DNS host, so you can copy and paste the values.</span></span>
     
-    <span data-ttu-id="a9074-124">I gruppi di record DNS presenti in questa sezione dipendono dalle impostazioni elencate in **Scopo del dominio**.</span><span class="sxs-lookup"><span data-stu-id="a9074-124">The groups of DNS records that are listed on the page depend on your choices listed under **Domain purpose**.</span></span>
+    <span data-ttu-id="edf32-124">I gruppi di record DNS presenti in questa sezione dipendono dalle impostazioni elencate in **Scopo del dominio**.</span><span class="sxs-lookup"><span data-stu-id="edf32-124">The groups of DNS records that are listed on the page depend on your choices listed under **Domain purpose**.</span></span>
     
-4. <span data-ttu-id="a9074-125">Passare a [creare record DNS presso un provider di hosting DNS](create-dns-records-at-any-dns-hosting-provider.md), quindi selezionare l'host DNS nell'elenco dei registrar per visualizzare le istruzioni dettagliate per l'aggiunta di record nel sito Web dell'host DNS.</span><span class="sxs-lookup"><span data-stu-id="a9074-125">Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and then select your DNS host from the list of registrars to see step-by-step instructions for adding records at that DNS host's website.</span></span>
+4. <span data-ttu-id="edf32-125">Passare a [creare record DNS presso un provider di hosting DNS](create-dns-records-at-any-dns-hosting-provider.md), quindi selezionare l'host DNS nell'elenco dei registrar per visualizzare le istruzioni dettagliate per l'aggiunta di record nel sito Web dell'host DNS.</span><span class="sxs-lookup"><span data-stu-id="edf32-125">Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and then select your DNS host from the list of registrars to see step-by-step instructions for adding records at that DNS host's website.</span></span>
     
-5. <span data-ttu-id="a9074-126">Eseguire la procedura per creare i record presso l'host DNS.</span><span class="sxs-lookup"><span data-stu-id="a9074-126">Follow the steps for creating the records at your DNS host.</span></span>
+5. <span data-ttu-id="edf32-126">Eseguire la procedura per creare i record presso l'host DNS.</span><span class="sxs-lookup"><span data-stu-id="edf32-126">Follow the steps for creating the records at your DNS host.</span></span>
