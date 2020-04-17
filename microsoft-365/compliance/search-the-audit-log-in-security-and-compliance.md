@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Usa il Centro sicurezza e conformità per eseguire una ricerca nel log di controllo unificato e visualizzare l'attività degli utenti e degli amministratori nella tua organizzazione di Office 365. "
-ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: f1fcfd883cb8becea861b6fcebcf59d61b104750
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151441"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521492"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità
 
@@ -695,7 +695,7 @@ Nella tabella seguente sono elencate le attività dall'esecuzione di attività i
 |Ricerca insieme da rivedere eliminata|DeleteWorkingSetSearch|Un utente ha eliminato una query di ricerca in un insieme da rivedere.|
 |Tag eliminato|DeleteTag|L'utente ha eliminato un tag o un gruppo di tag in un insieme da rivedere.|
 |Documento scaricato|DownloadDocument|L'utente ha scaricato un documento da un insieme da rivedere.|
-|Tag modificato|DownloadDocument|L'utente ha modificato un tag in un insieme da rivedere.|
+|Tag modificato|UpdateTag|L'utente ha modificato un tag in un insieme da rivedere.|
 |Esportati documenti da un insieme da rivedere|ExportJob|L'utente ha esportato dei documenti da un insieme da rivedere.|
 |Impostazione caso modificata|UpdateCaseSettings|L'utente ha modificato le impostazioni per un caso. Le impostazioni per il caso includono le informazioni sul caso, le autorizzazioni di accesso e le impostazioni che controllano il comportamento di ricerca e analisi.|
 |Ricerca insieme da rivedere modificata|UpdateWorkingSetSearch|Un utente ha modificato una query di ricerca in un insieme da rivedere.|
@@ -892,9 +892,9 @@ La tabella seguente elenca gli eventi risultanti dalle attività di etichettatur
 |:-----|:-----|:-----|
 |Etichetta di riservatezza applicata al sito|SensitivityLabelApplied|È stata applicata un'etichetta di riservatezza a un sito di SharePoint o di Teams.|
 |Etichetta di riservatezza rimossa dal sito|SensitivityLabelRemoved|È stata rimossa un'etichetta di riservatezza da un sito di SharePoint o di Teams.|
-|Etichetta di riservatezza applicata al file|FileSensitivityLabelApplied|È stata applicata un'etichetta di riservatezza a un documento con Office sul Web.|
-|Etichetta di riservatezza applicata a un file modificata|FileSensitivityLabelChanged|È stata applicata un'etichetta di riservatezza diversa a un documento con Office sul Web.|
-|Etichetta di riservatezza rimossa dal file|FileSensitivityLabelRemoved|È stata rimossa un'etichetta di riservatezza da un documento con Office sul Web.|
+|Etichetta di riservatezza applicata al file|FileSensitivityLabelApplied|È stata applicata un'etichetta di riservatezza a un documento tramite Office sul web o un criterio di aggiunta automatica dell'etichetta.|
+|Etichetta di riservatezza applicata a un file modificata|FileSensitivityLabelChanged|È stata applicata un'etichetta di riservatezza diversa a un documento tramite Office sul web o un criterio di aggiunta automatica dell'etichetta.|
+|Etichetta di riservatezza rimossa dal file|FileSensitivityLabelRemoved|È stata rimossa un'etichetta di riservatezza da un documento tramite Office sul web o un criterio di aggiunta automatica dell'etichetta.|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Log di controllo dell'amministratore di Exchange

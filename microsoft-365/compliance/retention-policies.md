@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con i criteri di conservazione, è possibile decidere in modo proattivo se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente, se applicare un singolo criterio all'intera organizzazione o a posizioni o utenti specifici e se applicare un criterio a tutti i contenuti o al contenuto che soddisfa determinate condizioni.
-ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
-ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
+ms.openlocfilehash: df2e89e26de2baab21cb334c1852cb261e1b8c98
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43237643"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521512"
 ---
 # <a name="overview-of-retention-policies"></a>Panoramica dei criteri di conservazione
 
@@ -261,13 +261,17 @@ Come per i criteri a livello di organizzazione, un criterio applicabile a una qu
 
 È anche possibile applicare i criteri di conservazione a specifici utenti, gruppi di Office 365 o siti. A questo scopo, attivare lo **Stato** di tale posizione e quindi usare i collegamenti per includere o escludere determinati utenti, gruppi di Office 365 o siti. 
   
-Si noti però che sono previsti i limiti seguenti per i criteri di conservazione che includono o escludono più di 1.000 posizioni specifiche:
+Si noti però che sono previsti i limiti seguenti quando si configura un criterio di conservazione che include o esclude più di 1.000 posizioni specifiche:
   
-- I criteri di conservazione di questo tipo non possono contenere più di 1.000 cassette postali e 100 raccolte siti.
-    
+- Valori massimi per i criteri di conservazione:
+    - 1.000 cassette postali
+    - 1.000 gruppi di Office 365
+    - 1.000 utenti per le chat private di Teams
+    - 100 siti (OneDrive o SharePoint)
+
 - Un tenant non può contenere più di 10.000 criteri di conservazione.
     
-Anche se questi limiti esistono, è importante sapere che possono essere superati applicando criteri a livello di organizzazione o criteri validi per intere posizioni.
+Sebbene esistano questi limiti, è possibile evitarli applicando criteri a livello di organizzazione o criteri validi per intere posizioni.
   
 ### <a name="skype-locations"></a>Posizioni Skype
 

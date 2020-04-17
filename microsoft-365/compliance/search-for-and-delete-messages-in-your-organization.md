@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usare la funzionalità di ricerca e rimozione nel Centro sicurezza e conformità di Office 365 per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: 9e3825fbbe3c058e6f8fff48511e4e450b3e54e9
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: c05b6addf2fe50a5e6130e3c53fa1df02e50de30
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710515"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516831"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Cercare ed eliminare messaggi di posta elettronica
 
-**Questo articolo è rivolto agli amministratori. Per cercare gli elementi nella propria cassetta postale per eliminarli, vedere [Trovare un messaggio o un elemento con Ricerca immediata](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
+**Questo articolo è rivolto agli amministratori. Per cercare gli elementi nella propria cassetta postale per eliminarli, vedere [Trovare un messaggio o un elemento con Ricerca immediata](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
    
 È possibile utilizzare la funzionalità Ricerca contenuto in Office 365 per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali nell'organizzazione. Ciò è utile per trovare e rimuovere messaggi potenzialmente dannosi o ad alto rischio, ad esempio:
   
@@ -94,11 +94,20 @@ Ecco due esempi di query per trovare messaggi di posta elettronica sospetti.
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
+Ecco un esempio dell'utilizzo di una query per creare e avviare una ricerca eseguendo i cmdlet **New-ComplianceSearch** e **Start-ComplianceSearch** per cercare tutte le cassette postali nell'organizzazione:
+
+```powershell
+$Search=New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation All -ContentMatchQuery '(Received:4/13/2016..4/14/2016) AND (Subject:"Action required")'
+Start-ComplianceSearch -Identity $Search.Identity
+```
+
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Passaggio 2: Connettersi a PowerShell in Centro sicurezza e conformità
 
 Il passaggio successivo consiste nel connettersi a PowerShell in Centro sicurezza e conformità per l'organizzazione. Per ottenere istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 Se l'account di Office 365 usa l'autenticazione a più fattori o l'autenticazione federata, non è possibile usare le istruzioni riportate nell'argomento precedente per la connessione a PowerShell in Centro sicurezza e conformità. Per farlo, vedere le istruzioni nell’argomento [Connettersi a PowerShell in Centro sicurezza e conformità mediante l'autenticazione a più fattori](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+
+Dopo essersi connessi a PowerShell per il Centro sicurezza e conformità, eseguire i cmdlet **New-ComplianceSearch** e **Start-ComplianceSearch** che preparati nel passaggio precedente.
   
 ## <a name="step-3-delete-the-message"></a>Passaggio 3: Eliminare il messaggio
 
