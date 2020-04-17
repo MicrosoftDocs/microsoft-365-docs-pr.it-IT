@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per Exchange Online Protection (EOP) per eseguire una configurazione corretta ed evitare che si verifichino errori comuni.
-ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033435"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528618"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Procedure consigliate per la configurazione di EOP e Office 365 ATP
 
@@ -53,7 +53,7 @@ Queste impostazioni riguardano una serie di funzionalità esterne ai criteri di 
 |Invio con autenticazione SMTP alla cassetta postale|Disattivato|Disattivato||
 |Connettività EWS alla cassetta postale|Disattivato|Disattivato||
 |[Connettività di PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Disattivato|Disattivato|Disponibile per gli utenti di cassette postali o per gli utenti di posta (oggetti utente restituiti dal cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) ).|
-|Utilizzare l'intelligence spoof per i mittenti whitelist quando possibile|Sì|Sì||
+|Utilizzare l' [Intelligence spoof](learn-about-spoof-intelligence.md) per i mittenti whitelist quando possibile|Sì|Sì||
 |Blocco Edge basato su directory (DBEB)|Abilitato|Abilitato|Tipo di dominio = autorevole|
 |[Configurare l'autenticazione a più fattori per tutti gli account di amministrazione](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Abilitato|Abilitato||
 

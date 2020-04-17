@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2094549e63be0a8e3c2bbc7997de13475c19bb0c
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: f70d2f601dfb697d8affa8bb47148f6e454c5d8e
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163899"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541096"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -168,6 +168,8 @@ Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni a
 - Individuare le applicazioni IT Shadow a rischio e non conformi
 - Esaminare le autorizzazioni & bloccare le applicazioni OAuth rischiose connesse all'ambiente
 - Configurare il controllo delle versioni nelle raccolte documenti di SharePoint Online
+- Eliminare/bloccare gli account non utilizzati negli ultimi 30 giorni
+- Designare meno di 5 amministratori globali
 
 #### <a name="removed-not-scored-improvement-actions"></a>Azioni di miglioramento "non segnate" rimosse
 

@@ -15,14 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare il modello di rilevamento dei privilegi avvocato-client per utilizzare il rilevamento basato sull'apprendimento automatico del contenuto con privilegi quando si esaminano i contenuti in un caso avanzato di eDiscovery.
-ms.openlocfilehash: 8fb635e429af2ae4d796e9c847a34d949d8dd6d9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e8e64fac2994b515bf6bc582673fa7e47d427d02
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079268"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528391"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configurare il rilevamento dei privilegi avvocato-client in Advanced eDiscovery
 

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 61f066b2fff2798e78e6379bbca46e48e93ff017
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1a5c5ae702f16bbf47be83837cf244cdd64278cd
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895442"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541108"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Che cosa viene in Microsoft Secure Score?
 
@@ -36,15 +36,15 @@ Per informazioni sulle modifiche recenti, vedere [What ' s New in Microsoft Secu
 
 Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni azione di miglioramento sia misurabile e affidabile, vengono eliminate le azioni di miglioramento riportate di seguito.
 
-- Eliminare/bloccare gli account non utilizzati negli ultimi 30 giorni
-- Designare meno di 5 amministratori globali
 - Applicare la protezione IRM ai documenti
 - Applicare i criteri di prevenzione della perdita di dati
 
-### <a name="adding-additional-control-support-in-the-preview-version"></a>Aggiunta di un ulteriore supporto di controllo nella versione di anteprima
+### <a name="adding-azure-ad-improvement-action-in-the-preview-version"></a>Aggiunta dell'azione di miglioramento di Azure AD nella versione di anteprima
+
 - Non consentire agli utenti di concedere il consenso alle applicazioni non gestite (attualmente disponibili nella versione rilasciata)
 
-#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>Supporto per altre azioni di miglioramento della sicurezza delle app di Microsoft Cloud
+### <a name="adding-azure-atp-improvement-actions-in-the-preview-version"></a>Aggiunta delle azioni di miglioramento di Azure ATP nella versione di anteprima
+
 - Disabilitare il servizio spooler di stampa nei controller di dominio
 - Modificare le deleghe Kerberos non sicure per impedire la rappresentazione
 - Proteggere e gestire le password di amministratore locale con i giri Microsoft
@@ -56,5 +56,6 @@ Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni a
 - Interrompere la comunicazione con i protocolli legacy
 - Interrompere l'utilizzo di crittografia debole
 
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Supporto per i suggerimenti per la sicurezza di Microsoft Defender ATP Threat & vulnerabilità (TVM)
+### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-the-preview-version"></a>Supporto per i suggerimenti per la sicurezza di Microsoft Defender ATP Threat & vulnerabilità (TVM) nella versione di anteprima
+
 - Tutti i suggerimenti per la sicurezza rilasciati forniti da TVM saranno ora disponibili anche in Microsoft Secure Score

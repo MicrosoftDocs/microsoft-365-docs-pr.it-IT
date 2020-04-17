@@ -20,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: Informazioni su come risolvere i conflitti di licenza con l'abbonamento a Office 365 for business.
-ms.openlocfilehash: 9dbd483b01566039cb227cd3d2f086c3f6e34be5
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212294"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540916"
 ---
 # <a name="resolve-license-conflicts-in-office-365-for-business"></a>Risolvere i conflitti di licenza in Office 365 per le aziende
 
@@ -33,11 +33,24 @@ ms.locfileid: "43212294"
   
 ## <a name="how-do-i-view-license-conflicts"></a>Come si visualizzano i conflitti di licenza?
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
+::: moniker range="o365-worldwide"
 
-    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">licenze</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licenze</a> di fatturazione.
 
-    Se si utilizza Office 365 gestito da 21Vianet, andare a questa pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">licenze</a> .
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">licenze</a> di fatturazione.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione, andare alla pagina **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">licenze</a> di fatturazione.
+
+::: moniker-end
+
 
 2. Osservare la colonna **Stato** per informazioni sul conflitto. Se si verifica un conflitto, verrà visualizzato un messaggio di avviso che indica che uno o più utenti hanno bisogno di una licenza valida.
 

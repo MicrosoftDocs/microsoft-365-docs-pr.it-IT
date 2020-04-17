@@ -1,5 +1,5 @@
 ---
-title: Consigli di Microsoft per le impostazioni di sicurezza ATP di EOP e Office 365, suggerimenti, Sender Policy Framework, Reporting e conformità dei messaggi basati su dominio, DomainKeys identificata, procedure, modalità di funzionamento, linee di base per la sicurezza, linee di base per EOP, linee di base per ATP, Setup ATP, Setup EOP, Configure ATP, Configure EOP, Security Configuration
+title: Consigli di Microsoft per le impostazioni di sicurezza di EOP e Office 365 ATP, consigli, Sender Policy Framework, Reporting e conformità dei messaggi basati su dominio, DomainKeys identificata, procedure, modalità di funzionamento, linee di base per la sicurezza, linee di base per EOP, linee di base per ATP, Setup ATP, Setup EOP, Configure ATP, Configure EOP, Security Configuration
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quali sono le procedure consigliate per le impostazioni di sicurezza di Exchange Online Protection (EOP) e Advanced Threat Protection (ATP)? Quali sono le raccomandazioni aggiornate per la protezione standard? Che cosa dovrebbe essere utilizzato se si desidera essere più severi? Quali sono gli extra che si ottengono se si utilizza anche Advanced Threat Protection (ATP)?
-ms.openlocfilehash: 9ddf704f767dfa5ff5c93888e51b91b2079a6c43
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1f20c8c09f3e690cc65e494ec6a372c95ac7171b
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032853"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537438"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Impostazioni consigliate per la sicurezza ATP di EOP e Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "43032853"
 Anche se si autorizza gli amministratori della sicurezza a personalizzare le impostazioni di sicurezza, esistono due livelli di sicurezza in EOP e Office 365 ATP che è consigliabile: **standard** e **strict**. L'ambiente e i bisogni di ogni cliente sono diversi, ma riteniamo che questi livelli di configurazioni del filtro della posta consentano di evitare che la posta indesiderata raggiunga la posta in arrivo dei dipendenti nella maggior parte delle situazioni.
 
 > [!IMPORTANT]
-> La regola di posta indesiderata deve essere abilitata su una cassetta postale per consentire il corretto funzionamento del filtro. È abilitata per impostazione predefinita, ma è consigliabile verificarla se il filtro non sembra funzionare. Per ulteriori informazioni, vedere [configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+> La regola di posta indesiderata deve essere abilitata su una cassetta postale per consentire il corretto funzionamento del filtro. È abilitata per impostazione predefinita, ma è consigliabile verificarla se il filtro non sembra funzionare. Per altre informazioni, vedere [Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 In questo argomento vengono descritte le impostazioni consigliate da Microsoft per proteggere gli utenti di Office 365.
 
@@ -57,7 +57,7 @@ Per creare e configurare criteri di protezione dalla posta indesiderata, vedere 
 |Periodo di conservazione della quarantena <br/><br/> _QuarantineRetentionPeriod_|30 giorni|30 giorni||
 |**Suggerimenti per la sicurezza** <br/><br/> _InlineSafetyTipsEnabled_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
 |Mittenti consentiti <br/><br/> _AllowedSenders_|Nessuna|Nessuna||
-|Domini mittenti consentiti <br/><br/> _AllowedSenderDomains_|Nessuna|Nessuna|Non è necessario aggiungere domini proprietari (noti anche come _domini accettati_) all'elenco dei mittenti consentiti. In effetti, è considerato un rischio elevato poiché crea opportunità per gli attori cattivi di inviare messaggi di posta elettronica che altrimenti verrebbero filtrati. Utilizzare l' [Intelligence spoof](learn-about-spoof-intelligence.md) nel centro sicurezza & Compliance nella pagina impostazioni di protezione da **posta indesiderata** per esaminare tutti i mittenti che eseguono lo spoofing dei domini che fanno parte dell'organizzazione o lo spoofing di domini esterni.|
+|Domini mittenti consentiti <br/><br/> _AllowedSenderDomains_|Nessuna|Nessuna|Non è necessario aggiungere domini proprietari (noti anche come _domini accettati_) all'elenco dei mittenti consentiti. In effetti, è considerato un rischio elevato poiché crea opportunità per gli attori cattivi di inviare messaggi di posta elettronica che altrimenti verrebbero filtrati. Utilizzare l' [Intelligence spoof](learn-about-spoof-intelligence.md) nel centro sicurezza & Compliance nella pagina impostazioni di protezione da **posta indesiderata** per esaminare tutti i mittenti che eseguono lo spoofing degli indirizzi di posta elettronica del mittente nei domini di posta elettronica dell'organizzazione o nello spoofing degli indirizzi di posta elettronica del mittente nei domini esterni.|
 |Mittenti bloccati <br/><br/> _BlockedSenders_|Nessuna|Nessuna||
 |Domini mittenti bloccati <br/><br/> _BlockedSenderDomains_|Nessuna|Nessuna||
 |**Abilita le notifiche di spam all'utente finale** <br/><br/> _EnableEndUserSpamNotifications_|Abilitato <br/><br/> `$true`|Abilitato <br/><br/> `$true`||
@@ -118,13 +118,17 @@ Per creare e configurare criteri anti-malware, vedere [Configure anti-malware Po
 |**Notifica ai mittenti esterni** del messaggio non recapitato <br/><br/> _EnableExternalSenderNotifications_|Disattivato <br/><br/> `$false`|Disattivato <br/><br/> `$false`||
 |
 
-### <a name="eop-anti-phishing-policy-settings"></a>Impostazioni dei criteri di anti-phishing di EOP
+### <a name="eop-default-anti-phishing-policy-settings"></a>Impostazioni di criteri anti-phishing predefinite di EOP
 
-|Nome della funzionalità di sicurezza|Standard|Rigorosa|Comment|
-|---------|---------|---------|---------|
-|Abilitare la protezione anti-spoofing|Attivato|Attivato||
-|Abilitazione del mittente non autenticato (tagging)|Attivato|Attivato||
-|Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio|Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari|Mettere in quarantena il messaggio||
+È possibile configurare queste impostazioni solo nelle organizzazioni di Office 365 con le cassette postali di Exchange Online. Per configurare queste impostazioni, vedere [Configure the default anti-phishing Policy in EOP](configure-anti-phishing-policies-eop.md).
+
+|||||
+|---|---|---|---|
+|**Nome della funzionalità di sicurezza**|**Standard**|**Rigorosa**|**Commento**|
+|**Abilitare la protezione anti-spoofing** <br/><br/> _EnableAntispoofEnforcement_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
+|**Abilitazione del mittente non autenticato** <br/><br/> _EnableUnauthenticatedSender_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio** <br/><br/> _AuthenticationFailAction_|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <br/><br/> `MoveToJmf`|**Mettere in quarantena il messaggio** <br/><br/> `Quarantine`|Questo vale per i mittenti bloccati in [Intelligence spoof](learn-about-spoof-intelligence.md).|
+|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Protezione avanzata dalle minacce di Office 365
 
@@ -139,35 +143,47 @@ Se è stata aggiunta una sottoscrizione di Office 365 ATP all'EOP, impostare le 
 
 ### <a name="office-atp-anti-phishing-policy-settings"></a>Impostazioni dei criteri di anti-phishing di Office ATP
 
-I clienti di EOP ottengono un anti-phishing di base come descritto in precedenza, ma Office 365 ATP include altre funzionalità e controlli che consentono di prevenire, rilevare e correggere gli attacchi.
+I clienti di EOP ottengono un anti-phishing di base come descritto in precedenza, ma Office 365 ATP include altre funzionalità e controlli che consentono di prevenire, rilevare e correggere gli attacchi. Per creare e configurare questi criteri, vedere [configurare i criteri di anti-phishing ATP in Office 365](configure-atp-anti-phishing-policies.md).
 
-|Nome della funzionalità di sicurezza della rappresentazione|Standard|Rigorosa|Comment|
-|---------|---------|---------|---------|
-|(Modifica criteri di rappresentazione) Aggiungere gli utenti a Protect|Attivato|Attivato|Dipende dall'organizzazione, ma è consigliabile aggiungere gli utenti nei ruoli chiave. Internamente, potrebbe trattarsi del CEO, del CFO e di altri leader senior. Esternamente, questi potrebbero includere i membri del Consiglio o il Consiglio di amministrazione.|
-|(Modifica criteri di rappresentazione) Includi automaticamente i domini che possiedo|Attivato|Attivato||
-|(Modifica criteri di rappresentazione) Includere domini personalizzati|Attivato|Attivato|Dipende dall'organizzazione, ma è consigliabile aggiungere domini che interagiscono con la maggior parte dei quali non si è proprietari.|
-|Se il messaggio di posta elettronica viene inviato da un utente rappresentato specificato|Mettere in quarantena il messaggio|Mettere in quarantena il messaggio||
-|Se il messaggio di posta elettronica viene inviato da un dominio rappresentato specificato|Mettere in quarantena il messaggio|Mettere in quarantena il messaggio||
-|Mostrare il suggerimento per gli utenti rappresentati|Attivato|Attivato||
-|Mostrare il suggerimento per i domini rappresentati|Attivato|Attivato||
-|Mostra suggerimento per i caratteri insoliti|Attivato|Attivato||
-|Abilitazione dell'Intelligence delle cassette postali|Attivato|Attivato||
-|Abilitare la protezione della rappresentazione basata sull'Intelligence delle cassette postali|Attivato|Attivato||
-|Se il messaggio di posta elettronica viene inviato da un utente rappresentato protetto dalla funzionalità di intelligence delle cassette postali|Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari|Mettere in quarantena il messaggio||
-|(Modifica criteri di rappresentazione) Aggiungere mittenti e domini attendibili|Nessuna|Nessuna|Dipende dall'organizzazione, ma è consigliabile aggiungere utenti o domini che vengono contrassegnati erroneamente come phishing a causa solo della rappresentazione e non di altri filtri.|
+#### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Impostazioni di rappresentazione nei criteri di anti-phishing ATP
 
-|Nome della funzionalità di sicurezza spoof|Standard|Rigorosa|Comment|
-|---------|---------|---------|---------|
-|Abilitare la protezione anti-spoofing|Attivato|Attivato||
-|Abilitazione del mittente non autenticato (tagging)|Attivato|Attivato||
-|Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio|Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari|Mettere in quarantena il messaggio||
-|EnableSuspiciousSafetyTip|False|True|Questa impostazione è disponibile solo in PowerShell|
-|TreatSoftPassAsAuthenticated|True|False|Questa impostazione è disponibile solo in PowerShell|
+|||||
+|---|---|---|---|
+|**Nome della funzionalità di sicurezza**|**Standard**|**Rigorosa**|**Commento**|
+|Utenti protetti: **aggiungere utenti a Protect** <br/><br/> _È impostato enabletargeteduserprotection_ <br/><br/> _TargetedUsersToProtect_|Attivato <br/><br/> `$true` <br/><br/> \<elenco di utenti\>|Attivato <br/><br/> `$true` <br/><br/> \<elenco di utenti\>|Dipende dall'organizzazione, ma è consigliabile aggiungere gli utenti nei ruoli chiave. Internamente, potrebbe trattarsi del CEO, del CFO e di altri leader senior. Esternamente, questi potrebbero includere i membri del Consiglio o il Consiglio di amministrazione.|
+|Domini protetti: **includono automaticamente i domini che possiedo** <br/><br/> _EnableOrganizationDomainsProtection_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
+|Domini protetti: **includere domini personalizzati** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Attivato <br/><br/> `$true` <br/><br/> \<elenco dei domini\>|Attivato <br/><br/> `$true` <br/><br/> \<elenco dei domini\>|Dipende dall'organizzazione, ma è consigliabile aggiungere domini che spesso interagiscono con quelli che non possiedono.|
+|Utenti protetti: **se il messaggio di posta elettronica viene inviato da un utente rappresentato** <br/><br/> _TargetedUserProtectionAction_|**Mettere in quarantena il messaggio** <br/><br/> `Quarantine`|**Mettere in quarantena il messaggio** <br/><br/> `Quarantine`||
+|Domini protetti: **se il messaggio di posta elettronica viene inviato da un dominio rappresentato** <br/><br/> _TargetedUserProtectionAction_|**Mettere in quarantena il messaggio** <br/><br/> `Quarantine`|**Mettere in quarantena il messaggio** <br/><br/> `Quarantine`||
+|**Mostrare il suggerimento per gli utenti rappresentati** <br/><br/> _EnableSimilarUsersSafetyTips_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
+|**Mostrare il suggerimento per i domini rappresentati** <br/><br/> _EnableSimilarDomainsSafetyTips_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
+|**Mostra suggerimento per i caratteri insoliti** <br/><br/> _EnableUnusualCharactersSafetyTips_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
+|**Abilitare l'intelligence delle cassette postali?** <br/><br/> _EnableMailboxIntelligence_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
+|**Abilitare la protezione della rappresentazione basata sull'Intelligence delle cassette postali?** <br/><br/> _EnableMailboxIntelligenceProtection_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
+|**Se il messaggio di posta elettronica viene inviato da un utente rappresentato protetto dalla funzionalità di intelligence delle cassette postali** <br/><br/> _MailboxIntelligenceProtectionAction_|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <br/><br/> `MoveToJmf`|**Mettere in quarantena il messaggio** <br/><br/> `Quarantine`||
+|**Mittenti attendibili** <br/><br/> _ExcludedSenders_|Nessuna|Nessuna|Dipende dall'organizzazione, ma è consigliabile aggiungere gli utenti che vengono erroneamente contrassegnati come phishing a causa solo della rappresentazione e non di altri filtri.|
+|**Domini attendibili** <br/><br/> _ExcludedDomains_|Nessuna|Nessuna|Dipende dall'organizzazione, ma è consigliabile aggiungere domini che vengono erroneamente contrassegnati come phishing a causa solo della rappresentazione e non di altri filtri.|
+|
 
+#### <a name="spoof-settings-in-atp-anti-phishing-policies"></a>Impostazioni di spoofing nei criteri di anti-phishing ATP
 
-|Nome della funzionalità di sicurezza delle impostazioni avanzate|Standard|Rigorosa|Comment|
-|---------|---------|---------|---------|
-|Soglie di phishing avanzate|2-aggressivo|3-maggiore aggressività||
+Si noti che si tratta delle stesse impostazioni disponibili nelle impostazioni dei criteri di protezione [da posta indesiderata in EOP](#eop-anti-spam-policy-settings).
+
+|||||
+|---|---|---|---|
+|**Nome della funzionalità di sicurezza**|**Standard**|**Rigorosa**|**Commento**|
+|**Abilitare la protezione anti-spoofing** <br/><br/> _EnableAntispoofEnforcement_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`||
+|**Abilitazione del mittente non autenticato** <br/><br/> _EnableUnauthenticatedSender_|Attivato <br/><br/> `$true`|Attivato <br/><br/> `$true`|Aggiunge un punto interrogativo (?) alla foto del mittente in Outlook per i mittenti non identificati falsificati. Per ulteriori informazioni, vedere [spoofing Settings in anti-phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).|
+|**Se il messaggio di posta elettronica viene inviato da un utente che non ha il diritto di falsificare il dominio** <br/><br/> _AuthenticationFailAction_|**Spostare il messaggio nelle cartelle di posta indesiderata dei destinatari** <br/><br/> `MoveToJmf`|**Mettere in quarantena il messaggio** <br/><br/> `Quarantine`|Questo vale per i mittenti bloccati in [Intelligence spoof](learn-about-spoof-intelligence.md).|
+|
+
+#### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>Impostazioni avanzate nei criteri di anti-phishing ATP
+
+|||||
+|---|---|---|---|
+|**Nome della funzionalità di sicurezza**|**Standard**|**Rigorosa**|**Commento**|
+|**Soglie di phishing avanzate** <br/><br/> _PhishThresholdLevel_|**2-aggressivo** <br/><br/> `2`|**3-maggiore aggressività** <br/><br/> `3`||
+|
 
 ### <a name="safe-links-settings"></a>Impostazioni collegamenti attendibili
 

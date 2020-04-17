@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a identificare i motivi per cui e come è stato ottenuto un messaggio di phishing e cosa fare per evitare ulteriori messaggi di phishing in futuro.
-ms.openlocfilehash: 37d1e8bbf91bc6f0a1c8e9b5aa97fe460e8b5c82
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 93fdc17379627a2d595a3861ae3f8f1f9dcefeeb
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081209"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528990"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ottimizzare la protezione anti-phishing in Office 365
 
@@ -33,7 +33,7 @@ Se l'abbonamento include Advanced Threat Protection (ATP), è possibile utilizza
 
 - [Allegati sicuri di ATP](set-up-atp-safe-attachments-policies.md)
 
-- [Criteri di anti-phishing ATP](set-up-anti-phishing-policies.md). Si noti che è possibile aumentare temporaneamente **le soglie di phishing avanzate** nel criterio da **standard** a **aggressivo**, **più aggressivo**o **più aggressivo**.
+- [Criteri di anti-phishing ATP in Office 365](configure-atp-anti-phishing-policies.md). Si noti che è possibile aumentare temporaneamente **le soglie di phishing avanzate** nel criterio da **standard** a **aggressivo**, **più aggressivo**o **più aggressivo**.
 
 Verificare che queste funzionalità ATP siano attivate.
 
@@ -51,11 +51,11 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
 
 - Su base mensile, eseguire il [Punteggio sicuro](../mtp/microsoft-secure-score.md) per valutare le impostazioni di sicurezza dell'organizzazione di Office 365.
 
-- Esaminare periodicamente il [report di intelligence di spoofing](learn-about-spoof-intelligence.md) e [abilitare la protezione anti-spoofing nei criteri anti-phishing](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy) per mettere in **quarantena** i messaggi sospetti anziché recapitarli nella cartella posta indesiderata dell'utente.
+- Esaminare periodicamente il [report di intelligence spoof](learn-about-spoof-intelligence.md) e [configurare l'intelligence spoof](set-up-anti-phishing-policies.md#spoof-settings) per la **quarantena** dei messaggi sospetti invece di recapitarli alla cartella posta indesiderata dell'utente.
 
 - Esaminare periodicamente il [rapporto sullo stato della protezione dalle minacce](view-reports-for-atp.md#threat-protection-status-report).
 
-- Alcuni clienti consentono inavvertitamente di inviare messaggi di phishing inserendo i propri domini nell'elenco Consenti mittente o Consenti dominio nei criteri di protezione da posta indesiderata. Se si sceglie di eseguire questa operazione, è necessario utilizzare estrema cautela. Anche se questa configurazione consentirà alcuni messaggi legittimi tramite, consentirà anche messaggi dannosi che verrebbero normalmente bloccati dai filtri di posta indesiderata e/o di phishing di Office 365.
+- Alcuni clienti consentono inavvertitamente di inviare messaggi di phishing inserendo i propri domini nel mittente consentito o negli elenchi di domini consentiti nei criteri di protezione da posta indesiderata. Se si sceglie di eseguire questa operazione, è necessario utilizzare estrema cautela. Anche se questa configurazione consentirà alcuni messaggi legittimi tramite, consentirà anche messaggi dannosi che verrebbero normalmente bloccati dai filtri di posta indesiderata e/o di phishing di Office 365.
 
   Il modo migliore per gestire i messaggi legittimi bloccati da Office 365 (falsi positivi) che coinvolgono i mittenti nel dominio consiste nel configurare completamente e completamente i record SPF, DKIM e DMARC in DNS per _tutti_ i domini di posta elettronica in Office 365:
 
@@ -73,6 +73,6 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
 
 - Quando possibile, è consigliabile recapitare la posta elettronica per il dominio direttamente a Office 365. In altre parole, puntare il record MX del dominio di Office 365 a Office 365. Exchange Online Protection (EOP) è in grado di fornire la migliore protezione per gli utenti del cloud quando la posta viene recapitata direttamente a Office 365. Se è necessario utilizzare un sistema di igiene della posta elettronica di terze parti di fronte a EOP, utilizzare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- L'autenticazione a più fattori è un ottimo modo per impedire gli account compromessi. È consigliabile prendere in considerazione l'abilitazione dell'AMF per tutti gli utenti. Per un approccio graduale, iniziare abilitando l'AMF per gli utenti più sensibili (amministratori, dirigenti e così via) prima di abilitare l'AMF per tutti. Per istruzioni, vedere [configurare l'autenticazione](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)a più fattori.
+- L'autenticazione a più fattori è un buon modo per impedire gli account compromessi. È consigliabile prendere in considerazione l'abilitazione dell'AMF per tutti gli utenti. Per un approccio graduale, iniziare abilitando l'AMF per gli utenti più sensibili (amministratori, dirigenti e così via) prima di abilitare l'AMF per tutti. Per istruzioni, vedere [configurare l'autenticazione](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)a più fattori.
 
 - Le regole di inoltro ai destinatari esterni vengono spesso utilizzate dagli utenti malintenzionati per estrarre i dati. Utilizzare le informazioni sulla **revisione delle regole di inoltro delle cassette postali** in [Microsoft Secure Score](../mtp/microsoft-secure-score.md) per individuare e persino impedire l'inoltro delle regole ai destinatari esterni. Per ulteriori informazioni, vedere [attenuazione delle regole di inoltro esterno client con Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).

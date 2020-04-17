@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Per ulteriori informazioni sui domini in Office 365, trovare le risposte alle domande più frequenti.
 ms.custom: okr_smb
-ms.openlocfilehash: 5579cacaa789ca91d68616ffb89e37586f6a062f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212198"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540868"
 ---
 # <a name="domains-faq"></a>Domande frequenti sui domini
 
@@ -106,12 +106,24 @@ Sì, ma non è possibile trasferire un dominio di Office 365 a un altro registra
 Si noti che una query *Whois* mostrerà un registrar del dominio di Office 365 acquistato come Wild West Domains LLC. Tuttavia, è necessario contattare solo Office 365 per quanto riguarda il dominio acquistato di Office 365.
   
 Eseguire la procedura seguente per ottenere un codice da Office 365 e quindi passare al sito Web dell'altro registrar per configurare il trasferimento del dominio.
-  
+
+::: moniker range="o365-worldwide"
+
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
-    
-    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> . 
-    
-    Se si utilizza Office 365 gestito da 21Vianet, andare a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** > pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domini</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione, passare alla pagina **delle** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">licenze</a> per le impostazioni.
+
+::: moniker-end
     
 2. **Nella pagina** Domains selezionare il dominio di Office 365 che si desidera trasferire a un altro registrar, **quindi selezionare** > trasferimento di dominio**Abilita trasferimento del dominio**.
        
@@ -136,12 +148,24 @@ Eseguire la procedura seguente per ottenere un codice da Office 365 e quindi pas
 2. Sul sito Web del registrar trovare l'area in cui vengono aggiornati i record dei server dei nomi e aggiornare i server dei nomi in modo che puntino all'host DNS del dominio. L'host DNS corrisponde spesso al registrar.
     
 3. Seguire un collegamento per passare all'installazione guidata dei domini:
-    
+
+::: moniker range="o365-worldwide"
+
 4. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
-    
-    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> . 
-    
-    Se si utilizza Office 365 gestito da 21Vianet, andare a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+4. Nell'interfaccia di amministrazione passare a **Impostazioni** > pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domini</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+4. Nell'interfaccia di amministrazione passare a **Impostazioni** > pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domini</a>.
+
+::: moniker-end
     
 5. Nella pagina **Domains** selezionare il dominio che si sta commutando e selezionare **gestione DNS**.
     
@@ -153,12 +177,24 @@ Eseguire la procedura seguente per ottenere un codice da Office 365 e quindi pas
     
 
 ### <a name="change-dns-management-to-office-365"></a>Spostare la gestione del DNS su Office 365
-  
-1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
-    
-    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> . 
-    
-    Se si utilizza Office 365 gestito da 21Vianet, andare a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .
+
+::: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> **delle impostazioni** \> ..
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** > pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domini</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** > pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domini</a>.
+
+::: moniker-end
     
 2. Nella pagina **Domains** selezionare il dominio che si sta commutando e selezionare **gestione DNS**.
     
@@ -221,12 +257,24 @@ Provider che supportano tutti i record DNS necessari:
 ## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>Come impostare o modificare il dominio predefinito in Office 365?
 
 Per scegliere un dominio predefinito, è necessario che sia stato aggiunto almeno un dominio personalizzato a Office 365.
-  
+
+::: moniker range="o365-worldwide"
+
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
-    
-    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> . 
-    
-    Se si utilizza Office 365 gestito da 21Vianet, andare a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** > pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domini</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione passare a **Impostazioni** > pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domini</a>.
+
+::: moniker-end
     
 2. Nella pagina **Domains** selezionare il dominio che si desidera impostare come predefinito per i nuovi indirizzi di posta elettronica. 
     

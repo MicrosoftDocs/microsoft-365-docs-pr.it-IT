@@ -2,10 +2,10 @@
 title: Come Office 365 convalida l'indirizzo mittente per impedire il phishing
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/11/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,217 +16,115 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Per evitare il phishing, Office 365 e Outlook.com ora richiedono la conformità RFC per gli indirizzi da:.
-ms.openlocfilehash: 6459faa22f29017568747b84bbd2935aad6763d1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Lear sui requisiti degli indirizzi di posta elettronica per i messaggi in ingresso in Office 365. A partire dal 2017 novembre, il servizio richiede ora gli indirizzi conformi a RFC per impedire lo spoofing.
+ms.openlocfilehash: 4df073cfff3c36f60a013237d95548cb48fa7b5f
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599183"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529002"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Come Office 365 convalida l'indirizzo mittente per impedire il phishing
 
-Gli account di posta elettronica di Office 365 e Outlook.com ricevono un numero sempre più elevato di attacchi di phishing. Una tecnica utilizzata da phisher consiste nell'inviare messaggi con valori per l'indirizzo from: non conformi a [RFC 5322](https://tools.ietf.org/html/rfc5322). L'indirizzo from: è denominato anche indirizzo 5322. from. Per evitare questo tipo di phishing, Office 365 e Outlook.com richiedono messaggi ricevuti dal servizio per includere un indirizzo conforme a RFC da: Address, come descritto in questo articolo.
+Gli account di posta elettronica di Office 365 ricevono un numero sempre più elevato di attacchi di phishing. Oltre a utilizzare [gli indirizzi di posta elettronica del mittente falsificati (falsificati)](anti-spoofing-protection.md), gli utenti malintenzionati utilizzano spesso valori nell'indirizzo from che violano gli standard di Internet. Per evitare questo tipo di phishing, Office 365 e Outlook.com ora richiedono che i messaggi in ingresso includano un indirizzo conforme a RFC, come descritto in questo argomento. Questo Enforcement è stato abilitato nel novembre 2017.
 
-> [!NOTE]
-> Le informazioni contenute in questo articolo richiedono una conoscenza di base del formato generale degli indirizzi di posta elettronica. Per ulteriori informazioni, vedere [rfc 5322](https://tools.ietf.org/html/rfc5322) (in particolare le sezioni 3.2.3, 3,4 e 3.4.1), [RFC 5321](https://tools.ietf.org/html/rfc5321), così come [RFC 3696](https://tools.ietf.org/html/rfc3696). Questo articolo riguarda l'applicazione dei criteri per l'indirizzo 5322. from. Questo articolo non riguarda l'indirizzo 5321. MailFrom.
+**Note**:
 
-Purtroppo, esistono ancora alcuni server di posta elettronica legacy su Internet che continuano a inviare messaggi di posta elettronica "legittimi" che dispongono di un indirizzo mancante o non valido: Se si ricevono regolarmente messaggi di posta elettronica da organizzazioni che utilizzano questi sistemi legacy, incoraggiare tali organizzazioni a aggiornare i propri server di posta elettronica in modo che siano conformi agli standard di sicurezza moderni.
+- Se si ricevono regolarmente messaggi di posta elettronica provenienti da organizzazioni che hanno indirizzi non corretti come descritto in questo argomento, incoraggiare queste organizzazioni a aggiornare i propri server di posta elettronica in modo che siano conformi agli standard di sicurezza moderni.
 
-Microsoft inizierà a implementare l'applicazione dei criteri descritti in questo articolo il 9 novembre 2017.
+- Il campo mittente correlato (utilizzato da Send per conto e mailing list) non è influenzato da questi requisiti. Per ulteriori informazioni, vedere il post di Blog seguente: [che cosa si intende quando si fa riferimento al ' mittente ' di un messaggio di posta elettronica?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
-## <a name="how-office-365-enforces-the-use-of-a-valid-from-address-to-prevent-phishing-attacks"></a>In che modo Office 365 applica l'utilizzo di un indirizzo valido da: per impedire attacchi di phishing
+## <a name="an-overview-of-email-message-standards"></a>Panoramica degli standard dei messaggi di posta elettronica
 
-Office 365 sta apportando modifiche al modo in cui applica l'utilizzo dell'indirizzo from: nei messaggi ricevuti per garantire una maggiore protezione dagli attacchi di phishing. Contenuto dell'articolo:
+Un messaggio di posta elettronica SMTP standard è costituito da una *busta del messaggio* e dal contenuto del messaggio. La busta del messaggio contiene le informazioni necessarie per la trasmissione e il recapito del messaggio tra i server SMTP. Il contenuto del messaggio include i campi di intestazione del messaggio (denominati collettivamente *intestazione del messaggio*) e il corpo del messaggio. La busta del messaggio è descritta in [rfc 5321](https://tools.ietf.org/html/rfc5321)e l'intestazione del messaggio è descritta in [RFC 5322](https://tools.ietf.org/html/rfc5322). I destinatari non vedono mai la busta reale del messaggio perché viene generata dal processo di trasmissione del messaggio e non è in realtà parte del messaggio.
 
-- [Tutti i messaggi devono includere un indirizzo valido da:](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
+- L' `5321.MailFrom` indirizzo (noto anche come indirizzo di **posta elettronica** , mittente P1 o mittente busta) è l'indirizzo di posta elettronica utilizzato per la trasmissione SMTP del messaggio. Questo indirizzo di posta elettronica viene in genere registrato nel campo di intestazione **Return-Path** nell'intestazione del messaggio (sebbene sia possibile che il mittente designi un indirizzo di posta elettronica diverso per il **percorso restituito** ).
 
-- [Formato dell'indirizzo from: se non si include un nome visualizzato](how-office-365-validates-the-from-address.md#FormatNoDisplayName)
+- L' `5322.From` indirizzo di posta elettronica del mittente viene visualizzato nei client di posta elettronica (noto anche come indirizzo da o mittente P2) e è l'indirizzo di posta elettronica nel campo dell'intestazione **from** . L'indirizzo mittente è lo stato attivo dei requisiti di questo argomento.
 
-- [Formato dell'indirizzo from: se si include un nome visualizzato](how-office-365-validates-the-from-address.md#FormatDisplayName)
+L'indirizzo from è definito dettagliatamente in più RFC, ad esempio le sezioni di RFC 5322 3.2.3, 3,4 e 3.4.1 e [rfc 3696](https://tools.ietf.org/html/rfc3696). Sono presenti molte varianti sull'indirizzamento e su ciò che è considerato valido o non valido. Per semplificare le operazioni, è consigliabile utilizzare il formato e le definizioni seguenti:
 
-- [Esempi aggiuntivi di indirizzi validi e non validi:](how-office-365-validates-the-from-address.md#Examples)
+`From: "Display Name" <EmailAddress>`
 
-- [Sopprimere le risposte automatiche al dominio personalizzato senza interrompere il criterio da:](how-office-365-validates-the-from-address.md#SuppressAutoReply)
+- **Nome visualizzato**: una frase facoltativa che descrive il proprietario dell'indirizzo di posta elettronica.
 
-- [Override di Office 365 da: criteri di applicazione degli indirizzi](how-office-365-validates-the-from-address.md#Override)
+  - È consigliabile racchiudere sempre il nome visualizzato tra virgolette doppie ("), come mostrato nell'esempio. Se il nome visualizzato contiene una virgola, è _necessario_ racchiudere la stringa tra virgolette doppie per RFC 5322.
+  - Se l'indirizzo from include un nome visualizzato, il valore EmailAddress deve essere racchiuso tra parentesi angolari (< >) come illustrato.
+  - Microsoft consiglia vivamente di inserire uno spazio tra il nome visualizzato e l'indirizzo di posta elettronica.
 
-- [Altri modi per prevenire e proteggere i reati informatici in Office 365](how-office-365-validates-the-from-address.md#OtherProtection)
+- **EmailAddress**: l'indirizzo di posta elettronica utilizza `local-part@domain`il formato seguente:
 
-L'invio per conto di un altro utente non è influenzato da questa modifica, per ulteriori informazioni, leggere il Blog di Terry zinco "[cosa si intende quando si fa riferimento al ' mittente ' di un messaggio di posta elettronica?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)".
+  - **local-part**: una stringa che identifica la cassetta postale associata all'indirizzo. Questo valore è univoco all'interno del dominio. Spesso, viene utilizzato il nome utente o il GUID del proprietario della cassetta postale.
+  - **dominio**: il nome di dominio completo (FQDN) del server di posta elettronica che ospita la cassetta postale identificata dalla parte locale dell'indirizzo di posta elettronica.
 
-### <a name="all-messages-must-include-a-valid-from-address"></a>Tutti i messaggi devono includere un indirizzo valido da:
-<a name="MustIncludeFromAddress"> </a>
+  Di seguito sono riportate alcune considerazioni aggiuntive relative al valore EmailAddress:
 
-Alcuni messaggi automatici non includono un indirizzo da: quando vengono inviati. In passato, quando Office 365 o Outlook.com ha ricevuto un messaggio senza un indirizzo from:, il servizio ha aggiunto il seguente indirizzo predefinito da: Address al messaggio per renderlo risultato finale:
+  - Un solo indirizzo di posta elettronica.
+  - Si consiglia di non separare le parentesi angolari con gli spazi.
+  - Non includere testo aggiuntivo dopo l'indirizzo di posta elettronica.
 
-```
-From: <>
-```
+## <a name="examples-of-valid-and-invalid-from-addresses"></a>Esempi di indirizzi validi e non validi
 
-A partire dal 9 novembre 2017, Office 365 distribuirà le modifiche apportate ai propri datacenter e ai server di posta che applicano una nuova regola in cui i messaggi senza un indirizzo da: non verranno più accettati da Office 365 o Outlook.com. Al contrario, tutti i messaggi ricevuti da Office 365 devono già contenere un indirizzo valido da:. In caso contrario, il messaggio verrà inviato alla cartella posta indesiderata o agli elementi eliminati in Outlook.com e Office 365.
+Gli indirizzi di posta elettronica seguenti sono validi:
 
-### <a name="syntax-overview-valid-format-for-the-from-address-for-office-365"></a>Panoramica della sintassi: formato valido per l'indirizzo da: per Office 365
-<a name="SyntaxOverviewFromAddress"> </a>
+- `From: sender@contoso.com`
 
-Il formato per il valore dell'indirizzo from: è definito in dettaglio tra diverse RFC. Sono presenti molte varianti sull'indirizzamento e su ciò che può essere considerato valido o non valido. Per semplificare le operazioni, Microsoft consiglia di utilizzare il formato e le definizioni seguenti:
+- `From: <sender@contoso.com>`
 
-```
-From: "displayname " <emailaddress >
-```
+- `From: < sender@contoso.com >`(Non consigliato perché esistono spazi tra le parentesi angolari e l'indirizzo di posta elettronica).
 
-Dove:
+- `From: "Sender, Example" <sender.example@contoso.com>`
 
-- Optional  *DisplayName* è una frase che descrive il proprietario dell'indirizzo di posta elettronica. Ad esempio, questo potrebbe essere un nome più facile da usare per descrivere il mittente rispetto al nome della cassetta postale. L'utilizzo di un nome visualizzato è facoltativo. Tuttavia, se si sceglie di utilizzare un nome visualizzato, Microsoft consiglia di racchiuderlo sempre tra virgolette, come mostrato nella figura.
+- `From: "Office 365" <sender@contoso.com>`
 
-- Necessari  *EmailAddress* è costituito da:
+- `From: Office 365 <sender@contoso.com>`(Non consigliato perché il nome visualizzato non è racchiuso tra virgolette doppie).
 
-  ```
-  local-part @domain
-  ```
+Gli indirizzi di posta elettronica seguenti non sono validi:
 
-    Dove:
+- **Nessun indirizzo**: alcuni messaggi automatici non includono un indirizzo mittente. In passato, quando Office 365 o Outlook.com ha ricevuto un messaggio senza indirizzo mittente, il servizio ha aggiunto l'indirizzo predefinito seguente: per rendere il messaggio risultato finale:
 
-  - Necessari  *local-part* è una stringa che identifica la cassetta postale associata all'indirizzo. Questo è univoco all'interno del dominio. Spesso, il nome utente o il GUID del proprietario della cassetta postale viene utilizzato come valore per la parte locale.
+  `From: <>`
 
-  - Necessari  *Domain* è il nome di dominio completo (FQDN) del server di posta che ospita la cassetta postale identificata dalla parte locale dell'indirizzo di posta elettronica.
+  A questo punto, i messaggi con un indirizzo vuoto non vengono più accettati.
 
-### <a name="format-of-the-from-address-if-you-dont-include-a-display-name"></a>Formato dell'indirizzo from: se non si include un nome visualizzato
-<a name="FormatNoDisplayName"> </a>
+- `From: Office 365 sender@contoso.com`(Il nome visualizzato è presente, ma l'indirizzo di posta elettronica non è racchiuso tra parentesi angolari).
 
-Un indirizzo in formato appropriato che non include un nome visualizzato include solo un singolo indirizzo di posta elettronica con o senza parentesi angolari. Microsoft consiglia di non separare le parentesi angolari con gli spazi. Inoltre, non includere nulla dopo l'indirizzo di posta elettronica.
+- `From: "Office 365" <sender@contoso.com> (Sent by a process)`(Testo dopo l'indirizzo di posta elettronica).
 
-Gli esempi seguenti sono validi:
+- `From: Sender, Example <sender.example@contoso.com>`Il nome visualizzato contiene una virgola, ma non è racchiuso tra virgolette doppie.
 
-```
-From: sender@contoso.com
-```
+- `From: "Office 365 <sender@contoso.com>"`(L'intero valore viene racchiuso in modo errato tra virgolette doppie).
 
-```
-From: <sender@contoso.com>
-```
+- `From: "Office 365 <sender@contoso.com>" sender@contoso.com`(Il nome visualizzato è presente, ma l'indirizzo di posta elettronica non è racchiuso tra parentesi angolari).
 
-L'esempio che segue è valido ma non consigliato perché contiene spazi tra le parentesi angolari e l'indirizzo di posta elettronica:
+- `From: Office 365<sender@contoso.com>`(Nessuna spaziatura tra il nome visualizzato e la parentesi uncinata sinistra).
 
-```
-From: < sender@contoso.com >
-```
+- `From: "Office 365"<sender@contoso.com>`(Nessuna spaziatura tra le virgolette doppie di chiusura e la parentesi angolare sinistra).
 
-L'esempio che segue non è valido perché contiene testo dopo l'indirizzo di posta elettronica:
+## <a name="suppress-auto-replies-to-your-custom-domain"></a>Sopprimere le risposte automatiche al dominio personalizzato
 
-```
-From: "Office 365" <sender@contoso.com> (Sent by a process)
+Non è possibile utilizzare il `From: <>` valore per sopprimere le risposte automatiche. Al contrario, è necessario configurare un record MX null per il dominio personalizzato. Le risposte automatiche (e tutte le risposte) sono naturalmente soppressi perché non esiste alcun indirizzo pubblicato a cui il server che risponde può inviare messaggi.
+
+- Scegliere un dominio di posta elettronica che non sia in grado di ricevere posta elettronica. Ad esempio, se il dominio principale è contoso.com, è possibile scegliere noreply.contoso.com.
+
+- Il record MX null per questo dominio è costituito da un singolo punto.
+
+Ad esempio:
+
+```text
+noreply.contoso.com IN MX .
 ```
 
-### <a name="format-of-the-from-address-if-you-include-a-display-name"></a>Formato dell'indirizzo from: se si include un nome visualizzato
-<a name="FormatDisplayName"> </a>
-
-Per gli indirizzi da: che includono un valore per il nome visualizzato, si applicano le regole seguenti:
-
-- Se l'indirizzo del mittente include un nome visualizzato e il nome visualizzato include una virgola, il nome visualizzato deve essere racchiuso tra virgolette. Ad esempio:
-
-    L'esempio seguente è valido:
-
-  ```
-  From: "Sender, Example" <sender.example@contoso.com>
-  ```
-
-    L'esempio seguente non è valido:
-
-  ```
-  From: Sender, Example <sender.example@contoso.com>
-  ```
-
-    Non è necessario racchiudere il nome visualizzato tra virgolette se il nome visualizzato include una virgola non è valido in base a RFC 5322.
-
-    Come procedura consigliata, inserire i contrassegni di virgolette attorno al nome visualizzato indipendentemente dal fatto che esista o meno una virgola all'interno del nome visualizzato.
-
-- Se l'indirizzo del mittente include un nome visualizzato, l'indirizzo di posta elettronica deve essere racchiuso tra parentesi angolari.
-
-    Come procedura consigliata, Microsoft consiglia di inserire uno spazio tra il nome visualizzato e l'indirizzo di posta elettronica.
-
-### <a name="additional-examples-of-valid-and-invalid-from-addresses"></a>Esempi aggiuntivi di indirizzi validi e non validi:
-<a name="Examples"> </a>
-
-- Valido
-
-  ```
-  From: "Office 365" <sender@contoso.com>
-  ```
-
-- Non valido. L'indirizzo di posta elettronica non è racchiuso tra parentesi uncinate:
-
-  ```
-  From: Office 365 sender@contoso.com
-  ```
-
-- Valido, ma non consigliato. Il nome visualizzato non è incluso tra virgolette. Come procedura consigliata, inserire sempre le virgolette attorno al nome visualizzato:
-
-  ```
-  From: Office 365 <sender@contoso.com>
-  ```
-
-- Non valido. Tutto è racchiuso tra virgolette, non solo il nome visualizzato:
-
-  ```
-  From: "Office 365 <sender@contoso.com>"
-  ```
-
-- Non valido. Non ci sono parentesi angolari attorno all'indirizzo di posta elettronica:
-
-  ```
-  From: "Office 365 <sender@contoso.com>" sender@contoso.com
-  ```
-
-- Non valido. Non c'è spazio tra il nome visualizzato e la parentesi uncinata sinistra:
-
-  ```
-  From: Office 365<sender@contoso.com>
-  ```
-
-- Non valido. Non vi sono spazi tra le virgolette di chiusura attorno al nome visualizzato e la parentesi angolare sinistra.
-
-  ```
-  From: "Office 365"<sender@contoso.com>
-  ```
-
-### <a name="suppress-auto-replies-to-your-custom-domain-without-breaking-the-from-policy"></a>Sopprimere le risposte automatiche al dominio personalizzato senza interrompere il criterio da:
-<a name="SuppressAutoReply"> </a>
-
-Con il nuovo da: applicazione dei criteri, non è più possibile utilizzare da: \< \> per sopprimere le risposte automatiche. Al contrario, è necessario configurare un record MX null per il dominio personalizzato.
-
-Il record MX (Mail Exchanger) è un record di risorse in DNS che identifica il server di posta elettronica che riceve la posta per il dominio. Le risposte automatiche (e tutte le risposte) sono naturalmente soppressi perché non esiste alcun indirizzo pubblicato a cui il server che risponde può inviare messaggi.
-
-Quando si configura un record MX null per il dominio personalizzato:
-
-- Scegliere un dominio da cui inviare i messaggi che non accettano (ricevono) la posta elettronica. Ad esempio, se il dominio principale è contoso.com, è possibile scegliere noreply.contoso.com.
-
-- Configurare il record MX null per il dominio. Un record MX null è costituito da un singolo punto, ad esempio:
-
-  ```
-  noreply.contoso.com IN MX .
-  ```
+Per ulteriori informazioni sulla configurazione dei record MX, vedere [creare record DNS in qualsiasi provider di hosting DNS per Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 Per ulteriori informazioni sulla pubblicazione di un MX null, vedere [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
-### <a name="overriding-the-office-365-from-address-enforcement-policy"></a>Override di Office 365 da: criteri di applicazione degli indirizzi
-<a name="Override"> </a>
+## <a name="override-from-address-enforcement"></a>Sostituzione dall'applicazione degli indirizzi
 
-Una volta che il nuovo criterio è stato completato, è possibile ignorare questo criterio solo per la posta in ingresso ricevuta da Office 365 utilizzando uno dei metodi seguenti:
+Per ignorare i requisiti di indirizzo per la posta elettronica in ingresso, è possibile utilizzare l'elenco indirizzi IP consentiti (filtro connessioni) o il flusso di posta (note anche come regole di trasporto) come descritto in [creare elenchi di mittenti attendibili in Office 365](create-safe-sender-lists-in-office-365.md).
 
-- Elenchi di indirizzi IP consentiti
+Non è possibile eseguire l'override dei requisiti degli indirizzi per la posta elettronica in uscita inviata da Office 365. Inoltre, Outlook.com non consentirà sostituzioni di alcun tipo, anche tramite supporto.
 
-- Regole del flusso di posta di Exchange Online
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>Altri modi per prevenire e proteggere i reati informatici in Office 365
 
-Microsoft consiglia vivamente di eseguire l'override dell'applicazione del criterio from:. L'override di questo criterio può aumentare il rischio di esposizione da parte dell'organizzazione alla posta indesiderata, al phishing e ad altri reati informatici.
-
-Non è possibile eseguire l'override di questo criterio per la posta in uscita inviata in Office 365. Inoltre, Outlook.com non consentirà sostituzioni di alcun tipo, anche tramite supporto.
-
-### <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>Altri modi per prevenire e proteggere i reati informatici in Office 365
-<a name="OtherProtection"> </a>
-
-Per ulteriori informazioni su come rafforzare la propria organizzazione contro i reati informatici, quali phishing, spamming, violazioni dei dati e altre minacce, vedere [procedure consigliate per la sicurezza per Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data).
-
-## <a name="related-topics"></a>Argomenti correlati
-
-[Posta indesiderata costituita da falsi rapporti di mancato recapito ed EOP](backscatter-messages-and-eop.md)
+Per ulteriori informazioni su come è possibile rafforzare la propria organizzazione contro il phishing, la posta indesiderata, le violazioni dei dati e altre minacce, vedere [Top 10 modi per proteggere i piani aziendali di Office 365 e Microsoft 365](../../admin/security-and-compliance/secure-your-business-data.md).

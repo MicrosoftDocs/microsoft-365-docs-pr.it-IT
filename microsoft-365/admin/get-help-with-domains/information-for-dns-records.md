@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Per ulteriori informazioni, vedere i valori o i dati necessari per la creazione di record DNS per Office 365. '
 ms.custom: okr_smb
-ms.openlocfilehash: 2490532894ef00bab5de3f406b0c104529423382
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 2cb45b6a5c07bd50e15e7f2a941be344b5f69038
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210381"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540880"
 ---
 # <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>Raccogliere le informazioni necessarie per creare record DNS di Office 365
 
@@ -35,17 +35,21 @@ ms.locfileid: "43210381"
   
 ### <a name="step-1-find-the-txt-record-value-and-verify"></a>Passaggio 1: trovare il valore del record TXT e verificare
 
+::: moniker range="o365-worldwide"
+
 1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> .
+
+::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domini</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domini</a> di **installazione** > .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> di **installazione** > .
 
 ::: moniker-end
     
@@ -63,17 +67,21 @@ ms.locfileid: "43210381"
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Passaggio 2: trovare il valore del record MX per la posta elettronica e altro ancora
 
+::: moniker range="o365-worldwide"
+
 1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domini</a> .
+
+::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domini</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domini</a> di **installazione** > .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, accedere a questa pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> .
+1. Nell'interfaccia di amministrazione, andare alla pagina dei <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domini</a> di **installazione** > .
 
 ::: moniker-end
     

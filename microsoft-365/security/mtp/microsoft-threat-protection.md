@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 62901a08b8e040266a94967170674336eb1035c8
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 0e51e52db4e569716954aada1c5cea35ddc6dd0a
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288594"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528370"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -31,7 +31,7 @@ ms.locfileid: "42288594"
 
 
 
-Microsoft Threat Protection è una famiglia di prodotti per la difesa dell'organizzazione che si integra in modo nativo tra endpoint, identità, posta elettronica e applicazioni per rilevare, prevenire, indagare e rispondere automaticamente agli attacchi più sofisticati.  
+Microsoft Threat Protection è una famiglia di prodotti di difesa aziendale unificata che coordina in modo nativo il rilevamento, la prevenzione, l'analisi e la risposta tra endpoint, identità, posta elettronica e applicazioni per garantire la protezione integrata da attacchi sofisticati.
 
 Con la soluzione integrata Microsoft Threat Protection, i professionisti della sicurezza possono unire i segnali di minaccia che ognuno di questi prodotti riceve e determina l'intero ambito e l'impatto della minaccia; come è entrata nell'ambiente, cosa ne è interessata e come sta attualmente influenzando l'organizzazione. Microsoft Threat Protection interviene automaticamente per impedire o arrestare l'attacco e la correzione automatica delle cassette postali, degli endpoint e delle identità degli utenti.  
 
@@ -77,7 +77,7 @@ Caratteristiche di Microsoft Threat Protection Cross-Product include:
 - **Cross-product Threat Hunting** -i team di sicurezza possono sfruttare le proprie conoscenze organizzative esclusive per cercare segni di compromesso creando query personalizzate sui dati non elaborati raccolti dai vari prodotti di protezione. Microsoft Threat Protection fornisce l'accesso basato su query a 30 giorni di segnali RAW cronologici e dati di avviso tra endpoint e dati ATP di Office 365. 
 
 
-## <a name="get-started"></a>Per iniziare
+## <a name="get-started"></a>Introduzione
 I requisiti di licenza di Microsoft Threat Protection devono essere soddisfatti prima di poter abilitare il servizio nel centro sicurezza Microsoft 365 all' [Security.Microsoft.com](https://security.microsoft.com). Per ulteriori informazioni, vedere:
 - [Requisiti relativi alle licenze](prerequisites.md#licensing-requirements)
 - [Attivare Microsoft Threat Protection](mtp-enable.md)

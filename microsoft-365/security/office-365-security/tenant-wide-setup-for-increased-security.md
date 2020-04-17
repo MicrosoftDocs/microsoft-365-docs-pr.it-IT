@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Viene illustrata la configurazione consigliata per le impostazioni a livello di tenant che influiscono sulla sicurezza dell'ambiente Office 365. Le esigenze di sicurezza possono richiedere più o meno sicurezza. Utilizzare questi suggerimenti come punto di partenza.
-ms.openlocfilehash: 737a58c21811bf4d798c18f000c0e477b5667cef
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 56b2dad90b15c1d084edaa4477301e8ac4d4442d
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081257"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529014"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurare il tenant di Office 365 per una maggiore sicurezza
 
@@ -39,7 +39,7 @@ Il Centro sicurezza Microsoft 365 include funzionalità che proteggono l'ambient
 ||||
 |---|---|---|
 |**Area**|**Include un criterio predefinito**|**Suggerimento**|
-|**Anti-phishing**|Sì| Se si dispone di un dominio personalizzato, creare un criterio anti-phishing per proteggere gli account di posta elettronica degli utenti più importanti, ad esempio il CEO, e proteggere il dominio. Rivedere [impostare un criterio anti-phishing](set-up-anti-phishing-policies.md) e creare un criterio utilizzando l'esempio come guida: "esempio: criteri di anti-phishing per la protezione di un utente e di un dominio".|
+|**Anti-phishing**|Sì|Se si dispone di un dominio personalizzato, configurare il criterio anti-phishing predefinito per proteggere gli account di posta elettronica degli utenti più importanti, ad esempio il CEO, e per proteggere il dominio. Esaminare i criteri [anti-phishing in office 365](set-up-anti-phishing-policies.md) e vedere [Configure the default anti-phishing Policy in EOP](configure-anti-phishing-policies-eop.md) o [Configure ATP anti-phishing policys in Office 365](configure-atp-anti-phishing-policies.md).|
 |**Motore antimalware**|Sì| Modificare il criterio predefinito: <br/> &ensp;&ensp;* Filtro tipi di allegati comuni: selezionare attivato <br/><br/> È inoltre possibile creare criteri di filtro antimalware personalizzati e applicarli a utenti, gruppi o domini specificati nell'organizzazione. <br/><br/> Ulteriori informazioni: <br/> &ensp;&ensp;* [Protezione antimalware](anti-malware-protection.md) <br/> &ensp;&ensp;* [Configurazione dei criteri anti-malware](configure-anti-malware-policies.md)|
 |**Allegati sicuri di ATP**|No| Nella pagina principale per gli allegati sicuri, proteggere i file in SharePoint, OneDrive e Microsoft teams selezionando questa casella: <br/> &ensp;&ensp;* Attiva ATP per SharePoint, OneDrive e Microsoft Teams <br/><br/> Aggiungere un nuovo criterio degli allegati sicuri con queste impostazioni: <br/> &ensp;&ensp;* Block-blocca i messaggi di posta elettronica e gli allegati correnti e futuri con malware rilevato (scegliere questa opzione) <br/> &ensp;&ensp;* Consenti reindirizzamento: (selezionare questa casella e immettere un indirizzo di posta elettronica, ad esempio un account di amministratore o di quarantena) <br/> &ensp;&ensp;* Applicare la selezione precedente se la ricerca di malware per gli allegati non è stata eseguita o si verifica un errore (seleziona questa casella) <br/> &ensp;&ensp;* Applicato a: il dominio del destinatario è (Seleziona il dominio) <br/><br/>Ulteriori informazioni: [configurare i criteri per gli allegati sicuri ATP di Office 365](set-up-atp-safe-attachments-policies.md)|
 |**Collegamenti sicuri di ATP**|Sì| Aggiungere questa impostazione ai criteri predefiniti per l'intera organizzazione: <br/> &ensp;&ensp;* Utilizzare collegamenti sicuri in: Office 365 ProPlus, Office per iOS e Android (selezionare questa opzione). <br/><br/>Criteri consigliati per destinatari specifici: <br/> &ensp;&ensp;* Gli URL verranno riscritti e verificati in base a un elenco di collegamenti dannosi noti quando l'utente fa clic sul collegamento (seleziona questa opzione). <br/> &ensp;&ensp;* Usare gli allegati sicuri per analizzare il contenuto scaricabile (seleziona questa casella). <br/> &ensp;&ensp;* Applicato a: il dominio del destinatario è (selezionare il dominio). <br/><br/> Ulteriori informazioni: [collegamenti sicuri ATP di Office 365](atp-safe-links.md).|

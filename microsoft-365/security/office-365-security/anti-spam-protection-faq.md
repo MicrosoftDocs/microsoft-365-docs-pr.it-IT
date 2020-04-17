@@ -1,11 +1,10 @@
 ---
-title: Protezione dalla posta indesiderata nelle domande frequenti su Office 365
+title: Domande frequenti sulla protezione da posta indesiderata
 f1.keywords:
 - NOCSH
-ms.author: krowley
-author: kccross
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,15 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: In questo argomento vengono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata. Le risposte sono valide per i clienti di Microsoft Exchange Online e Exchange Online Protection (EOP).
-ms.openlocfilehash: 47970cd2f67873b3c8b1fbfa70b7e1754fc8359c
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Domande frequenti e risposte per gli amministratori sulla protezione da posta indesiderata in Exchange Online e standalone Exchange Online Protection (EOP).
+ms.openlocfilehash: 30ab9ceb7d2e9e4a264311ff43343485a57d622c
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033495"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528314"
 ---
-# <a name="anti-spam-protection-in-office-365-faq"></a>Protezione dalla posta indesiderata nelle domande frequenti su Office 365
+# <a name="anti-spam-protection-faq-in-office-365"></a>Domande frequenti sulla protezione da posta indesiderata in Office 365
 
 In questo argomento sono riportate le domande frequenti e le risposte sulla protezione dalla posta indesiderata per i clienti di Office 365 con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) senza cassette postali di Exchange Online.
 
@@ -31,14 +30,16 @@ Per domande e risposte sulla quarantena, vedere [Domande frequenti sulla quarant
 
 Per domande e risposte sulla protezione anti-malware, vedere [anti-malware Protection FAQ](anti-malware-protection-faq-eop.md).
 
+Per domande e risposte sulla protezione anti-spoofing, vedere domande [frequenti sulla protezione anti-spoofing](anti-spoofing-protection-faq.md).
+
 ## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>D. Per impostazione predefinita, cosa accade a un messaggio identificato come posta indesiderata?
 
-R. **Per i messaggi in ingresso:** La maggior parte della posta indesiderata viene eliminata tramite il filtro connessioni, che si basa sull'indirizzo IP del server di posta elettronica di origine. I criteri di protezione da posta indesiderata (noti anche come criteri di filtro della posta indesiderata o criteri di filtro dei contenuti) ispezionano e classificano i messaggi come posta indesiderata Per impostazione predefinita, i messaggi classificati come posta indesiderata o in blocco vengono recapitati alla cartella posta indesiderata del destinatario, mentre i messaggi classificati come phishing vengono messi in quarantena È possibile modificare i criteri di protezione da posta indesiderata predefiniti (si applica a tutti i destinatari) oppure è possibile creare criteri di protezione dalla posta indesiderata personalizzati con impostazioni più rigorose per gruppi di utenti specifici (ad esempio, è possibile mettere in quarantena la posta indesiderata inviata ai dirigenti). Per ulteriori informazioni, vedere [configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md) e le impostazioni dei criteri di protezione da [posta indesiderata](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+R. **Per i messaggi in ingresso**: la maggior parte della posta indesiderata viene eliminata tramite il filtro connessioni, che si basa sull'indirizzo IP del server di posta elettronica di origine. I criteri di protezione da posta indesiderata (noti anche come criteri di filtro della posta indesiderata o criteri di filtro dei contenuti) ispezionano e classificano i messaggi come posta indesiderata Per impostazione predefinita, i messaggi classificati come posta indesiderata o in blocco vengono recapitati alla cartella posta indesiderata del destinatario, mentre i messaggi classificati come phishing vengono messi in quarantena È possibile modificare i criteri di protezione da posta indesiderata predefiniti (si applica a tutti i destinatari) oppure è possibile creare criteri di protezione dalla posta indesiderata personalizzati con impostazioni più rigorose per gruppi di utenti specifici (ad esempio, è possibile mettere in quarantena la posta indesiderata inviata ai dirigenti). Per ulteriori informazioni, vedere [configurare i criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md) e le impostazioni dei criteri di protezione da [posta indesiderata](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 > [!IMPORTANT]
-> Nelle distribuzioni ibride in cui EOP protegge le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) nell'organizzazione di Exchange locale per rilevare le intestazioni del filtro di posta indesiderata di EOP che vengono aggiunte ai messaggi. Per informazioni dettagliate, vedere [Configure standalone EOP per recapitare la posta indesiderata nella cartella posta indesiderata in ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+> Nelle distribuzioni ibride in cui EOP protegge le cassette postali locali, è necessario configurare due regole del flusso di posta di Exchange (note anche come regole di trasporto) nell'organizzazione di Exchange locale per rilevare le intestazioni del filtro di posta indesiderata di EOP che vengono aggiunte ai messaggi. Per dettagli, vedere [Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
- **Per i messaggi in uscita:** Il messaggio viene instradato attraverso il [pool di recapito ad alto rischio](high-risk-delivery-pool-for-outbound-messages.md) o viene restituito al mittente in un rapporto di mancato recapito (noto anche come NDR o messaggio di rimbalzo). Per ulteriori informazioni sulla protezione da posta indesiderata in uscita, vedere [controlli di posta indesiderata in uscita in Office 365](outbound-spam-controls.md).
+ **Per i messaggi in uscita**: il messaggio viene instradato attraverso il [pool di recapito ad alto rischio](high-risk-delivery-pool-for-outbound-messages.md) o viene restituito al mittente in un rapporto di mancato recapito (noto anche come NDR o messaggio di rientro). Per ulteriori informazioni sulla protezione da posta indesiderata in uscita, vedere [controlli di posta indesiderata in uscita in Office 365](outbound-spam-controls.md).
 
 ## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>D. Che cos'è una variante di posta indesiderata di zero-day e come viene gestita dal servizio?
 
@@ -56,7 +57,7 @@ Per ulteriori informazioni, vedere i seguenti argomenti:
 
 [Configurare un criterio di protezione](configure-the-connection-filter-policy.md)
 
-[Configurazione dei criteri di protezione da posta indesiderata in Office 365](configure-your-spam-filter-policies.md)
+[Configurare criteri di protezione dalla posta indesiderata in Office 365](configure-your-spam-filter-policies.md)
 
 [Configurare i criteri della posta indesiderata in uscita](configure-the-outbound-spam-policy.md)
 
