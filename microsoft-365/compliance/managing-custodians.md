@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Lo strumento di gestione dei depositari in Advanced eDiscovery consente di gestire il flusso di lavoro attorno all'identificazione, alla conservazione e alla raccolta dei dati associati alle persone di interesse in un caso legale.
-ms.openlocfilehash: 7d8ac1c67b4ddc3395bccb5ab699ce7df63f331d
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: fbd348c842cb3c4bb7284c14ae2504b83fd0b117
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400913"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551243"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>Utilizzo dei depositari in Advanced eDiscovery
 
@@ -38,7 +38,3 @@ Per ulteriori informazioni sull'utilizzo dei depositari, vedere gli argomenti se
 - [Gestire i depositari in un caso](manage-new-custodians.md)
 
 - [Visualizzare l'attività dei responsabili](view-custodian-activity.md)
-
-## <a name="advanced-ediscovery-permissions"></a>Autorizzazioni avanzate di eDiscovery
-
-In Advanced eDiscovery, è possibile utilizzare il gruppo di ruoli di eDiscovery Manager incorporato per assegnare le autorizzazioni necessarie agli investigatori legali in modo che possano gestire il flusso di lavoro end-to-end in Advanced eDiscovery. In alternativa, è possibile creare gruppi di ruoli personalizzati con un sottoinsieme dei ruoli necessari per eseguire determinate azioni in un caso in Advanced eDiscovery. Per ulteriori informazioni sui ruoli correlati a eDiscovery, vedere [assign eDiscovery Permissions in the Security & Compliance Center](assign-ediscovery-permissions.md).

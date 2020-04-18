@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Informazioni sugli elementi non indicizzati in Exchange e SharePoint che è possibile includere in una ricerca di contenuto tramite il Centro sicurezza & Compliance. '
-ms.openlocfilehash: fc15a4af41495641882c25b23c1a38459b896696
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3984a181d16d4cd66fbddacb24cfd7c5e489f4ac
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597783"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551227"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Partially indexed items in Content Search in Office 365 (Elementi parzialmente indicizzati in Ricerca contenuto in Office 365)
 
@@ -57,11 +57,11 @@ Alcuni tipi di file, ad esempio i file Bitmap o MP3, non presentano contenuti ch
   
 Per un elenco dei formati di file supportati e disattivati, vedere i seguenti argomenti:
   
-- **** - [Formati di file di Exchange indicizzati da ricerca di Exchange](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange** - [Formati di file di Exchange indicizzati da ricerca di Exchange](https://go.microsoft.com/fwlink/p/?LinkID=386618)
     
 - **Exchange** - [Get-SearchDocumentFormat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
     
-- **** Estensioni del[nome di file sottoposte a ricerca per indicizzazione e tipi di file analizzati in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)  - 
+- **SharePoint**Estensioni del[nome di file sottoposte a ricerca per indicizzazione e tipi di file analizzati in SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)  - 
     
 
   
@@ -83,7 +83,7 @@ Tenere presente quanto segue sugli elementi parzialmente indicizzati:
     
 - Se la ricerca da cui si stanno esportando i risultati è stata una ricerca di percorsi di contenuto specifici o di tutti i percorsi di contenuto dell'organizzazione, verranno esportati solo gli elementi non indicizzati provenienti da percorsi di contenuto che contengono elementi che corrispondono ai criteri di ricerca. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Il motivo è che l'esportazione di elementi parzialmente indicizzati da un numero elevato di posizioni nell'organizzazione potrebbe aumentare la probabilità di errori di esportazione e aumentare il tempo necessario per esportare e scaricare i risultati della ricerca.
     
-    Per esportare gli elementi parzialmente indicizzati da tutti i percorsi di contenuto per una ricerca, configurare la ricerca in modo che restituisca tutti gli elementi (rimuovendo le parole chiave dalla query di ricerca) e quindi esportare solo gli elementi parzialmente indicizzati quando si esportano i risultati della ricerca (facendo clic su **solo gli elementi con un formato non riconosciuto, sono crittografati o non sono stati indicizzati per** ****
+    Per esportare gli elementi parzialmente indicizzati da tutti i percorsi di contenuto per una ricerca, configurare la ricerca in modo che restituisca tutti gli elementi (rimuovendo le parole chiave dalla query di ricerca) e quindi esportare solo gli elementi parzialmente indicizzati quando si esportano i risultati della ricerca (facendo clic su **solo gli elementi con un formato non riconosciuto, sono crittografati o non sono stati indicizzati per** **Output options**
     
 - Se si sceglie di includere tutti gli elementi delle cassette postali nei risultati della ricerca o se una query di ricerca non specifica parole chiave o specifica un intervallo di date, è possibile che gli elementi parzialmente indicizzati non vengano copiati nel file PST che contiene gli elementi parzialmente indicizzati. Ciò è dovuto al fatto che tutti gli elementi, compresi gli elementi parzialmente indicizzati, verranno inclusi automaticamente nei risultati di ricerca normali.
     
@@ -106,7 +106,7 @@ Se un elemento è parzialmente indicizzato ma non soddisfa i criteri di query di
   
 Analogamente, se si sceglie di includere gli elementi parzialmente indicizzati quando si esportano i risultati di una ricerca, gli elementi parzialmente indicizzati esclusi dai risultati della ricerca non verranno esportati.
   
-Una delle eccezioni a questa regola è quando si crea un blocco basato su query associato a un caso di eDiscovery. Se si crea un blocco basato su query, tutti gli elementi parzialmente indicizzati vengono inseriti in attesa. Sono inclusi gli elementi parzialmente indicizzati che non corrispondono ai criteri di query di ricerca e gli elementi parzialmente indicizzati che potrebbero non essere compresi in una condizione dell'intervallo di date. Per ulteriori informazioni sulla creazione di esenzioni basate su query, vedere passaggio 4 nei [casi di eDiscovery](ediscovery-cases.md#step-4-place-content-locations-on-hold).
+Una delle eccezioni a questa regola è quando si crea un blocco basato su query associato a un caso di eDiscovery. Se si crea un blocco di eDiscovery basato su query, tutti gli elementi parzialmente indicizzati vengono inseriti in attesa. Sono inclusi gli elementi parzialmente indicizzati che non corrispondono ai criteri di query di ricerca e gli elementi parzialmente indicizzati che potrebbero non essere compresi in una condizione dell'intervallo di date. Per ulteriori informazioni sulla creazione di esenzioni di eDiscovery basate su query, vedere [Create an eDiscovery Hold](create-ediscovery-holds.md).
   
 ## <a name="indexing-limits-for-messages-in-content-search"></a>Limiti di indicizzazione per i messaggi nella ricerca contenuto
 
@@ -126,24 +126,22 @@ Per un elenco dei limiti di indicizzazione per i documenti di SharePoint, vedere
 |Token di annotazione massimi  <br/> |2 milioni  <br/> |Quando un messaggio di posta elettronica viene indicizzato, ogni parola viene annotata con istruzioni di elaborazione diverse che specificano la modalità di indicizzazione di tale parola. Ogni set di istruzioni di elaborazione è denominato token di annotazione. Per mantenere la qualità del servizio in Office 365, è presente un limite di 2 milioni token di annotazione per un messaggio di posta elettronica.  <br/> |
 |Dimensione massima del corpo nell'indice  <br/> |67 milioni caratteri  <br/> |Il numero totale di caratteri presenti nel corpo di un messaggio di posta elettronica e di tutti gli allegati. Quando un messaggio di posta elettronica viene indicizzato, tutto il testo nel corpo del messaggio e in tutti gli allegati viene concatenato in una singola stringa. Le dimensioni massime della stringa indicizzata sono 67 milioni caratteri.  <br/> |
 |Numero massimo di token univoci nel corpo  <br/> |1 milione  <br/> |Come spiegato in precedenza, i token sono il risultato dell'estrazione del testo dal contenuto, la rimozione della punteggiatura e degli spazi e quindi la suddivisione in parole (denominate token) memorizzate nell'indice. Ad esempio, la frase `"cat, mouse, bird, dog, dog"` contiene 5 token. Ma solo 4 di questi sono token univoci. Vi è un limite di 1 milione token univoci per ogni messaggio di posta elettronica, che consente di evitare che l'indice venga troppo esteso con token casuali.  <br/> |
-   
 
-  
 ## <a name="more-information-about-partially-indexed-items"></a>Ulteriori informazioni sugli elementi parzialmente indicizzati
 
 - Come indicato in precedenza, poiché le proprietà del messaggio e del documento e i relativi metadati sono indicizzate, una ricerca per parola chiave potrebbe restituire risultati se la parola chiave viene visualizzata nei metadati indicizzati. Tuttavia, la stessa ricerca con parole chiave potrebbe non restituire lo stesso elemento se la parola chiave viene visualizzata solo nel contenuto di un elemento con un tipo di file non supportato. In questo caso, l'elemento verrebbe restituito come elemento parzialmente indicizzato.
-    
+
 - Se un elemento parzialmente indicizzato è incluso nei risultati della ricerca, poiché ha soddisfatto i criteri di query di ricerca e non è stato escluso, non verrà incluso come elemento parzialmente indicizzato nelle statistiche di ricerca stimate. Inoltre, non verrà incluso con gli elementi parzialmente indicizzati quando si esportano i risultati della ricerca.
-    
+
 - Anche se un tipo di file è supportato per l'indicizzazione ed è indicizzato, è possibile che si verifichino errori di indicizzazione o di ricerca che provochino la restituzione di un file come elemento parzialmente indicizzato. Ad esempio, la ricerca di un file di Excel di dimensioni molto grandi potrebbe avere esito positivo, in quanto i primi 4 MB sono indicizzati, ma quindi ha esito negativo a causa del superamento del limite di dimensione del file. In questo caso, è possibile che lo stesso file venga restituito con i risultati della ricerca e come elemento parzialmente indicizzato.
-    
+
 - I file allegati crittografati con Microsoft Technologies sono indicizzati e possono essere ricercati. I file crittografati con tecnologie non Microsoft sono parzialmente indicizzati.
-    
+
 - I messaggi di posta elettronica crittografati con S/MIME sono parzialmente indicizzati. Sono inclusi i messaggi crittografati con o senza allegati.
-    
+
 - I messaggi protetti con Information Rights Management (IRM) sono indicizzati e verranno inclusi nei risultati della ricerca se corrispondono alla query di ricerca.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Investigating partially indexed items in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md) (Analisi di elementi parzialmente indicizzati in eDiscovery di Office 365)
+[Analisi degli elementi parzialmente indicizzati in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 

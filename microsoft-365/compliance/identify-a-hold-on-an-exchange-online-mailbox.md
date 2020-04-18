@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Informazioni su come identificare i diversi tipi di blocco che è possibile inserire in una cassetta postale di Office 365. Questi tipi di esenzioni includono il blocco per controversia legale, eDiscovery holds e i criteri di conservazione di Office 365. È anche possibile determinare se un utente è stato escluso da un criterio di conservazione a livello di organizzazione
-ms.openlocfilehash: 29d212f0ba16c7ae414c3a47707cfcd0f95420c7
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: 4063128e368b19b156fbf42173fb2d4725c3e7ab
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978226"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551137"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online
 
@@ -30,7 +30,7 @@ Office 365 offre diversi modi in cui l'organizzazione può impedire che il conte
 
 - ** [Blocco per controversia legale](create-a-litigation-hold.md):** Esenzioni applicate alle cassette postali degli utenti in Exchange Online.
 
-- ** [eDiscovery Hold](ediscovery-cases.md#step-4-place-content-locations-on-hold):** Esenzioni associate a un caso di eDiscovery nel centro sicurezza e conformità. le esenzioni di eDiscovery possono essere applicate alle cassette postali degli utenti e alla cassetta postale corrispondente per i gruppi di Office 365 e Microsoft teams.
+- ** [eDiscovery Hold](create-ediscovery-holds.md):** Esenzioni associate a un caso di eDiscovery nel centro sicurezza e conformità. le esenzioni di eDiscovery possono essere applicate alle cassette postali degli utenti e alla cassetta postale corrispondente per i gruppi di Office 365 e Microsoft teams.
 
 - ** [Blocco sul posto](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Esenzioni applicate alle cassette postali degli utenti utilizzando lo strumento di archiviazione eDiscovery sul posto & nell'interfaccia di amministrazione di Exchange in Exchange Online.
 

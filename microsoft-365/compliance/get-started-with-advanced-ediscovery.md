@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In questo articolo viene descritto come iniziare a utilizzare Advanced eDiscovery in Microsoft 365. Dopo aver completato alcuni passaggi rapidi, lo strumento Advanced eDiscovery è pronto per l'uso. Il primo passaggio consiste nel creare un caso e quindi iniziare a utilizzare le funzionalità e le caratteristiche avanzate di eDiscovery.
-ms.openlocfilehash: a43bfd94fcf0a2563a184a3a87d96c64bd8eb619
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 4aae93e250365fc7225fe2f21fe25cd01e5f8cc0
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204046"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551127"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Introduzione a Advanced eDiscovery
 
@@ -56,7 +56,7 @@ La gestione delle licenze per Advanced eDiscovery richiede la sottoscrizione del
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Passaggio 2: assegnare autorizzazioni di eDiscovery
 
-Per accedere a Advanced eDiscovery o aggiunto come membro di un caso avanzato di eDiscovery, a un utente devono essere assegnate le autorizzazioni appropriate. In particolare, un utente deve essere aggiunto come membro del gruppo di ruoli di gestione di eDiscovery nel centro sicurezza & conformità di Office 365. I membri di questo gruppo di ruoli possono creare e gestire i casi di eDiscovery avanzati. Sono in grado di aggiungere e rimuovere membri, inserire depositari e posizioni di contenuto in attesa, gestire le notifiche per la conservazione legale, creare e modificare le ricerche associate a un caso, aggiungere i risultati di ricerca a un set di revisione, analizzare i dati in un set di revisione ed esportare e scaricare da un caso avanzato di eDiscovery.
+Per accedere a Advanced eDiscovery o essere aggiunto come membro di un caso avanzato di eDiscovery, a un utente devono essere assegnate le autorizzazioni appropriate. In particolare, un utente deve essere aggiunto come membro del gruppo di ruoli di gestione di eDiscovery nel centro sicurezza & conformità di Office 365. I membri di questo gruppo di ruoli possono creare e gestire i casi di eDiscovery avanzati. Sono in grado di aggiungere e rimuovere membri, inserire depositari e posizioni di contenuto in attesa, gestire le notifiche per la conservazione legale, creare e modificare le ricerche associate a un caso, aggiungere i risultati di ricerca a un set di revisione, analizzare i dati in un set di revisione ed esportare e scaricare da un caso avanzato di eDiscovery.
 
 Completare la procedura seguente per aggiungere gli utenti al gruppo di ruoli eDiscovery Manager:
 
@@ -90,7 +90,7 @@ Nel gruppo di ruoli eDiscovery Manager sono presenti due sottogruppi. La differe
 
   A causa dell'ampio ambito di accesso, un'organizzazione deve disporre di un numero limitato di amministratori che sono membri del sottogruppo Administrators di eDiscovery.
 
-Per ulteriori informazioni sulle autorizzazioni di eDiscovery e una descrizione di ogni ruolo assegnato al gruppo di ruoli Gestione eDiscovery, vedere [assign eDiscovery Permissions in the Security & Compliance Center](assign-ediscovery-permissions.md).
+Per ulteriori informazioni sulle autorizzazioni di eDiscovery e una descrizione di ogni ruolo assegnato al gruppo di ruoli Gestione eDiscovery, vedere [assign eDiscovery Permissions](assign-ediscovery-permissions.md).
 
 ## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>Passaggio 3: configurare le impostazioni globali per Advanced eDiscovery
 
@@ -107,7 +107,7 @@ Il passaggio successivo consiste nel creare un caso e iniziare a utilizzare Adva
 
 1. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere con le credenziali per l'account utente a cui sono state assegnate le autorizzazioni di eDiscovery appropriate. I membri del gruppo di ruoli Gestione organizzazione possono anche creare casi avanzati di eDiscovery.
 
-2. Nella navata sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto**, quindi fare clic su **eDiscovery > avanzate**.
+2. Nel riquadro di spostamento a sinistra del centro conformità di Microsoft 365 fare clic su **Mostra tutto**, quindi fare clic su **eDiscovery > avanzate**.
 
 3. Nella pagina **Advanced eDiscovery** , fare clic sulla scheda **case** , quindi fare clic su **Crea un caso**.
 

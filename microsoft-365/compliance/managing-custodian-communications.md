@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Advanced eDiscovery facilita la gestione del flusso di lavoro di notifica per la conservazione legale in merito alla notifica ai depositari nelle indagini legali.
-ms.openlocfilehash: 3e9fb2bc67fc5eac181afab8ba5c78c4236fb980
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280124"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551242"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Utilizzare le comunicazioni in Advanced eDiscovery
 
@@ -49,22 +49,12 @@ Con Advanced eDiscovery, i team legali possono creare e personalizzare il flusso
 
    - **Escalation:** In alcuni casi, se un custode rimane inattivo anche dopo una serie di promemoria per un determinato periodo di tempo, il team legale può impostare un flusso di lavoro di escalation per notificare ai depositari insensibili e al loro manager.
 
-## <a name="role-groups-and-permissions"></a>Gruppi di ruoli e autorizzazioni
+Per ulteriori informazioni sulla gestione del processo di comunicazione del custode, vedere gli argomenti seguenti: 
 
-I team legali possono controllare e separare l'attività del caso utilizzando gruppi di ruoli e autorizzazioni di eDiscovery nel centro sicurezza & Compliance. 
+- [Creare un avviso per la conservazione legale](create-hold-notification.md)
 
-Per creare e gestire notifiche di blocco legale, un utente deve essere membro del gruppo di ruoli eDiscovery Manager. I membri di questo gruppo di ruoli possono creare e gestire i casi di eDiscovery avanzati. Sono in grado di aggiungere e rimuovere membri, inserire depositari e posizioni di contenuto in attesa, gestire le notifiche per la conservazione legale, creare e modificare le ricerche associate a un caso, aggiungere i risultati di ricerca a un set di revisione, analizzare i dati in un set di revisione ed esportare e scaricare da una pagina avanzata caso eDiscovery. 
+- [Usare l'editor delle comunicazioni](using-communications-editor.md)
 
-Sono presenti due sottogruppi il gruppo di ruoli eDiscovery Manager. La differenza tra questi sottogruppi dipende dall'ambito.
+- [Gestire le notifiche di blocco](manage-hold-notification.md)
 
-- **eDiscovery Manager:** È possibile visualizzare e gestire i casi di eDiscovery avanzati che creano o sono membri di. Se un altro Manager di eDiscovery crea un caso ma non aggiunge un secondo Manager di eDiscovery come membro del caso, il secondo responsabile di eDiscovery non sarà in grado di visualizzare o aprire il caso nella pagina Advanced eDiscovery nel centro sicurezza & Compliance.
-
-- **amministratore di eDiscovery:** È in grado di eseguire tutte le attività di gestione dei casi che un Manager di eDiscovery può eseguire. Inoltre, un amministratore di eDiscovery è in grado di:
-
-  - Visualizzare tutti i casi elencati nella pagina Advanced eDiscovery.
-  
-  - Gestire qualsiasi caso nell'organizzazione dopo che si è aggiunto come membro del caso.
-
-  - Accedere ed esportare i dati del caso in Advanced eDiscovery per tutti i casi nell'organizzazione.
-
-Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance](assign-ediscovery-permissions.md).
+- [Confermare la ricezione di una notifica di blocco](acknowledge-hold-notification.md)
