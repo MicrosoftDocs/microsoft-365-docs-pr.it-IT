@@ -3,19 +3,19 @@
   items:
     - name: Panoramica
       items:
-        - name: Panoramica amministrazione
+        - name: Panoramica dell'amministrazione
           href: admin-overview/admin-overview.md
         - name: Iscriversi a Office 365
           href: admin-overview/sign-up-for-office-365.md
         - name: Video di formazione
           href: 'https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816'
-        - name: Informazioni sull’interfaccia di amministrazione
+        - name: Informazioni sull'interfaccia di amministrazione
           href: admin-overview/about-the-admin-center.md
-        - name: Qual è l’abbonamento corrente?
+        - name: Qual è l'abbonamento corrente?
           href: admin-overview/what-subscription-do-i-have.md
         - name: Informazioni su Office 365 Germany
           href: admin-overview/learn-about-office-365-germany.md
-        - name: App di amministrazione per dispositivi mobili
+        - name: App Admin per dispositivi mobili
           href: admin-overview/admin-mobile-app.md
     - name: Configurazione
       items:
@@ -25,13 +25,13 @@
           href: setup/setup.md
         - name: Differenza tra la configurazione guidata e la pagina di configurazione
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: Aggiunta di dominio
+        - name: Aggiungere il dominio
           href: setup/add-domain.md
         - name: Domande frequenti sui domini
           href: setup/domains-faq.md
-        - name: Installare applicazioni
+        - name: Installare le applicazioni
           href: setup/install-applications.md
-        - name: Eseguire la migrazione della posta elettronica e contatti
+        - name: Eseguire la migrazione della posta elettronica e dei contatti
           href: setup/migrate-email-and-contacts-admin.md
         - name: Implementare Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
@@ -45,19 +45,19 @@
           href: setup/customize-sign-in-page.md
         - name: Creare gruppi di distribuzione
           href: setup/create-distribution-lists.md
-        - name: Personalizzare il tema dell’organizzazione
+        - name: Personalizzare il tema dell'organizzazione
           href: setup/customize-your-organization-theme.md
     - name: Utenti e ruoli
       items:
-        - name: Aggiungi utenti
+        - name: Aggiungere gli utenti
           href: add-users/add-users.md
         - name: Creare e usare un modello per aggiungere utenti
           href: add-users/create-and-use-a-template-to-add-users.md
         - name: Eliminare un utente
           href: add-users/delete-a-user.md
-        - name: Ripristina utente
+        - name: Ripristinare un utente
           href: add-users/restore-user.md
-        - name: Reimpostare password
+        - name: Reimpostare le password
           href: add-users/reset-passwords.md
         - name: Impostare la password in modo che non scada mai
           href: add-users/set-password-to-never-expire.md
@@ -67,9 +67,9 @@
           href: add-users/resend-user-password.md
         - name: Assegnare le autorizzazioni per la cassetta postale a un altro utente
           href: add-users/give-mailbox-permissions-to-another-user.md
-        - name: Cambiare un nome utente e un indirizzo di posta elettronica
+        - name: Cambiare un nome utente e un indirizzo e-mail
           href: add-users/change-a-user-name-and-email-address.md
-        - name: 'Creare, modificare o eliminare una visualizzazione utente personalizzata'
+        - name: 'Creazione, modifica o eliminazione di una visualizzazione utente personalizzata'
           href: add-users/create-edit-or-delete-a-custom-user-view.md
         - name: Aggiungere un nuovo dipendente
           href: add-users/add-new-employee.md
@@ -79,7 +79,7 @@
           href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
         - name: Informazioni sui ruoli di amministratore
           href: add-users/about-admin-roles.md
-        - name: Assegnare ruoli di amministratore
+        - name: Assegnare i ruoli di amministratore
           href: add-users/assign-admin-roles.md
         - name: Informazioni sul ruolo di amministratore di Exchange Online
           href: add-users/about-exchange-online-admin-role.md
@@ -105,7 +105,7 @@
               href: email/remove-license-from-shared-mailbox.md
             - name: Risolvere i problemi relativi alle cassette postali condivise
               href: email/resolve-issues-with-shared-mailboxes.md
-        - name: Modifica un indirizzo di posta elettronica
+        - name: Modificare un indirizzo e-mail
           href: email/change-email-address.md
         - name: Configurare la posta in arrivo evidenziata
           href: setup/configure-focused-inbox.md
@@ -115,7 +115,7 @@
           href: email/create-edit-or-delete-a-security-group.md
         - name: Configurare l'inoltro della posta elettronica
           href: email/configure-email-forwarding.md
-        - name: Collaborazione tramite posta elettronica
+        - name: Collaborazione tramite e-mail
           href: email/email-collaboration.md
         - name: Aggiungere un utente o un contatto a un gruppo di distribuzione
           href: email/add-user-or-contact-to-distribution-list.md
@@ -127,7 +127,7 @@
           href: security-and-compliance/secure-your-business-data.md
         - name: Configurare l'autenticazione a più fattori
           href: security-and-compliance/set-up-multi-factor-authentication.md
-        - name: Configurare l'autenticazione a più fattori (con Office 2013
+        - name: Configurare l'autenticazione a più fattori (con Office 2013)
           href: security-and-compliance/enable-modern-authentication.md
         - name: Conformità al GDPR
           href: security-and-compliance/gdpr-compliance.md
@@ -135,11 +135,11 @@
       href: activity-reports/activity-reports.md
     - name: Analisi di utilizzo di Power BI
       items:
-        - name: Analisi dei dati di utilizzo
+        - name: Analisi di utilizzo
           href: usage-analytics/usage-analytics.md
-        - name: Abilitare l’analisi dei dati di utilizzo
+        - name: Abilitare le analisi di utilizzo
           href: usage-analytics/enable-usage-analytics.md
-        - name: Ottenere la versione più recente dell’analisi dei dati di utilizzo
+        - name: Ottenere la versione più recente delle analisi di utilizzo
           href: usage-analytics/get-the-latest-version-of-usage-analytics.md
         - name: Esplorare e utilizzare i report
           href: usage-analytics/navigate-and-utilize-reports.md
@@ -147,9 +147,9 @@
           href: usage-analytics/active-user-in-usage-reports.md
         - name: Personalizzare i report
           href: usage-analytics/customize-reports.md
-        - name: Modello di analisi dei dati di utilizzo
+        - name: Modello di dati per le analisi di utilizzo
           href: usage-analytics/usage-analytics-data-model.md
-        - name: Errori dell’analisi dei dati di utilizzo
+        - name: Errori dell'analisi di utilizzo
           href: usage-analytics/usage-analytics-errors.md
     - name: Gestione
       items:
@@ -159,7 +159,7 @@
           href: manage/change-contact-preferences.md
         - name: 'Modificare indirizzo, contatto e altro ancora'
           href: manage/change-address-contact-and-more.md
-        - name: Aggiornare il numero di telefono e l’indirizzo di posta elettronica
+        - name: Aggiornare il numero di telefono e l'indirizzo e-mail
           href: manage/update-phone-number-and-email-address.md
         - name: Impostare il criterio di scadenza delle password
           href: manage/set-password-expiration-policy.md
@@ -167,37 +167,37 @@
           href: manage/customize-the-app-launcher.md
         - name: Requisiti per la distribuzione centralizzata
           href: manage/centralized-deployment-of-add-ins.md
-        - name: Utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi
+        - name: Usare la distribuzione centralizzata per distribuire i componenti aggiuntivi
           href: manage/manage-deployment-of-add-ins.md
-        - name: Domande frequenti sulla distribuzione centralizzata
+        - name: Distribuzione centralizzata dei componenti aggiuntivi
           href: manage/centralized-deployment-FAQ.md
         - name: Trovare il partner o il rivenditore
           href: manage/find-your-partner-or-reseller.md
         - name: Cassette postali della sala e attrezzatura
           href: manage/room-and-equipment-mailboxes.md
-        - name: Inviare messaggi di posta elettronica come lista di distribuzione
+        - name: Inviare e-mail come lista di distribuzione
           href: manage/send-email-as-distribution-list.md
-        - name: Aggiornare liste di distribuzione
+        - name: Aggiornare le liste di distribuzione
           href: manage/upgrade-distribution-lists.md
-        - name: Condividere siti e file con l'esterno
+        - name: Condividere esternamente siti e file
           href: manage/share-sites-with-external-users.md
         - name: Condividere calendari con utenti esterni
           href: manage/share-calendars-with-external-users.md
         - name: Assegnare licenze agli utenti
           href: manage/assign-licenses-to-users.md
-        - name: Annullamento dell'assegnazione delle licenze da parte degli utenti
+        - name: Annullare l'assegnazione delle licenze agli utenti
           href: manage/remove-licenses-from-users.md
-        - name: Risolvere i conflitti di licenza
+        - name: Risoluzione dei conflitti di licenze
           href: manage/resolve-license-conflicts.md
-        - name: Mostrare o nascondere nuove funzionalità tramite la nuova gestione
+        - name: Mostrare o nascondere le nuove funzionalità con Gestione novità
           href: manage/show-hide-new-features.md
-    - name: Sottoscrizioni e fatturazione
+    - name: Abbonamenti e fatturazione
       items:
         - name: Gestire gli abbonamenti
           href: ../commerce/index.yml
         - name: Visualizzare la fattura
           href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
-        - name: Gestire metodi di pagamento
+        - name: Gestire i metodi di pagamento
           href: ../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
         - name: Annullare l'abbonamento
           href: ../commerce/subscriptions/cancel-your-subscription.md
@@ -217,9 +217,9 @@
           href: get-help-with-domains/information-for-dns-records.md
         - name: Individuare e risolvere i problemi
           href: get-help-with-domains/find-and-fix-issues.md
-        - name: Connessione di dominio
+        - name: Connessione del dominio
           href: get-help-with-domains/domain-connect.md
-        - name: Configurare il dominio (istruzioni specifiche per l’host)
+        - name: Configurare il dominio (istruzioni specifiche per l'ost)
           href: get-help-with-domains/set-up-your-domain-host-specific-instructions.md
         - name: Modificare i server dei nomi presso qualsiasi registrar
           href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
@@ -231,9 +231,9 @@
           href: get-help-with-domains/transfer-data-manually.md
     - name: Gruppi
       items:
-        - name: Panoramica sui gruppi
+        - name: Panoramica dei gruppi
           href: create-groups/office-365-groups.md
-        - name: Confrontare gruppi
+        - name: Confrontare i gruppi
           href: create-groups/compare-groups.md
         - name: Creare un gruppo di Office 365
           href: create-groups/create-groups.md
@@ -269,7 +269,7 @@
           href: services-in-china/download-office-app-for-Android.md
         - name: Scaricare l'app di Office per iOS per Office 365 gestito da 21Vianet
           href: services-in-china/download-office-app-for-iOS.md
-        - name: Visualizzare la fattura oppure ottenere un Fapiao
+        - name: Visualizzare la fattura o un Fapiao
           href: services-in-china/view-your-bill-or-get-a-fapiao.md
         - name: Richiedere un Fapiao
           href: services-in-china/apply-for-a-fapiao.md
@@ -281,7 +281,7 @@
           href: microsoft-365-admin-center-preview.md
         - name: Novità nella nuova interfaccia di amministrazione
           href: whats-new-in-preview.md
-        - name: Gestire al meglio le modifiche
+        - name: Mantenersi aggiornati sulle modifiche
           href: manage/stay-on-top-of-updates.md
         - name: Opzioni di rilascio in Office 365
           href: manage/release-options-in-office-365.md
@@ -289,5 +289,5 @@
           href: manage/message-center.md
         - name: Provare o acquistare Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
-    - name: Contattare il supporto tecnico per i prodotti per le aziende
+    - name: Contattare il supporto per i prodotti aziendali
       href: contact-support-for-business-products.md
