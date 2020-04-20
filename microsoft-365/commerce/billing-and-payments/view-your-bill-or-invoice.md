@@ -25,12 +25,12 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: La fattura o l'estratto conto è disponibile nell'interfaccia di amministrazione di Microsoft 365. È anche possibile salvare e stampare una copia della fattura.
-ms.openlocfilehash: 5982e65ce9720b85d29126986cfcb8123b4aef5f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253525"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540856"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visualizzare l'estratto conto o la fattura
 
@@ -50,10 +50,23 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
   
 ## <a name="view-a-bill-or-invoice"></a>Visualizzare un estratto conto o una fattura
 
+::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatture** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Fatture e pagamenti</a>.
 
-    Se si usa Office 365 Germany, andare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fatture e pagamenti</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** ><a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Fatture e pagamenti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Fatture e pagamenti</a>.
+
+::: moniker-end
 
 2. Selezionare un intervallo di date nell'elenco a discesa e quindi scegliere l'ordine da visualizzare.
 
