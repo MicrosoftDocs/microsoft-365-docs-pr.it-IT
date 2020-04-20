@@ -1,4 +1,4 @@
-- name: Conformità di Microsoft 365
+- name: Conformità Microsoft 365
   href: index.yml
 - name: Per iniziare
   items:
@@ -8,45 +8,45 @@
       href: recently-updated-topics-mcc.md
     - name: Centro conformità Microsoft 365
       href: microsoft-365-compliance-center.md
-    - name: Catalogo della soluzione Microsoft 365
+    - name: Catalogo delle soluzioni Microsoft 365
       href: microsoft-365-solution-catalog.md
-    - name: Accedere al Centro sicurezza e conformità
+    - name: Passare al Centro sicurezza e conformità
       href: go-to-the-securitycompliance-center.md
     - name: Usare la sottoscrizione gratuita ad Azure Active Directory
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Pianificare conformità e sicurezza in Office 365
       href: plan-for-security-and-compliance.md
-- name: Gestione dei rischi Insider
+- name: Gestire i rischi Insider
   items:
     - name: Gestione dei rischi Insider
       items:
         - name: Informazioni sulla gestione dei rischi Insider
           href: insider-risk-management.md
-        - name: Informazioni introduttive sulla gestione dei rischi Insider
+        - name: Introduzione alla gestione dei rischi Insider
           href: insider-risk-management-configure.md
-        - name: Creare e gestire i criteri di rischio Insider
+        - name: Creare e gestire i criteri dei rischi Insider
           href: insider-risk-management-policies.md
-        - name: Esaminare gli avvisi sui rischi Insider
+        - name: Esaminare gli avvisi relativi ai rischi Insider
           href: insider-risk-management-alerts.md
-        - name: Intervenire sui casi di rischio Insider
+        - name: Intervenire riguardo ai casi di rischio Insider
           href: insider-risk-management-cases.md
-        - name: Esaminare i dati con l'esploratore contenuto a rischio Insider
+        - name: Esaminare i dati con l'explorer del contenuto di gestione dei rischi Insider
           href: insider-risk-management-content-explorer.md
-        - name: Aggiungere gli utenti ai criteri di rischio Insider
+        - name: Aggiungere utenti a criteri dei rischi Insider
           href: insider-risk-management-users.md
-        - name: Creare modelli di avviso di rischio Insider
+        - name: Creare modelli di avviso relativi ai rischi Insider
           href: insider-risk-management-notices.md
     - name: Conformità delle comunicazioni
       items:
-        - name: Informazioni sulla conformità alla comunicazione
+        - name: Informazioni sulla conformità delle comunicazioni
           href: communication-compliance.md
-        - name: Introduzione alla conformità alla comunicazione
+        - name: Introduzione alla conformità delle comunicazioni
           href: communication-compliance-configure.md
-        - name: Esaminare e correggere gli avvisi di conformità della comunicazione
+        - name: Esaminare e correggere gli avvisi di conformità delle comunicazioni
           href: communication-compliance-investigate-remediate.md
-        - name: Informazioni di riferimento sulle caratteristiche per la conformità della comunicazione
+        - name: Riferimento alle funzionalità per la conformità delle comunicazioni
           href: communication-compliance-feature-reference.md
-        - name: Case Study-Contoso configura rapidamente un criterio di lingua offensivo
+        - name: 'Case Study: Contoso configura rapidamente i criteri relativi al linguaggio offensivo'
           href: communication-compliance-case-study.md
         - name: Criteri di supervisione in Office 365
           href: supervision-policies.md
@@ -80,7 +80,7 @@
       items:
         - name: Informazioni sulle etichette di riservatezza
           href: sensitivity-labels.md
-        - name: Iniziare a usare le etichette di riservatezza
+        - name: Introduzione alle etichette di riservatezza
           href: get-started-with-sensitivity-labels.md
         - name: Creare e pubblicare etichette di riservatezza
           href: create-sensitivity-labels.md
@@ -127,27 +127,27 @@
               href: how-dlp-works-between-admin-centers.md
     - name: Tipi di informazioni sensibili
       items:
-        - name: Elementi cercati dai tipi di informazioni sensibili
+        - name: Tipi di informazioni riservate disponibili da cercare
           href: what-the-sensitive-information-types-look-for.md
         - name: Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati
           href: what-the-dlp-functions-look-for.md
         - name: Video della panoramica completa sulla personalizzazione della prevenzione della perdita dei dati
           href: 'https://go.microsoft.com/fwlink/?linkid=852306'
-        - name: Personalizzare un tipo di informazioni sensibili predefinito
+        - name: Personalizzare una tipologia integrata di informazioni sensibili
           href: customize-a-built-in-sensitive-information-type.md
         - name: Tipi di informazioni sensibili personalizzati
           href: custom-sensitive-info-types.md
-        - name: Creare tipi di informazioni riservate personalizzate con classificazione esatta basata sulla corrispondenza dei dati
+        - name: Creare tipi di informazioni sensibili personalizzati con una classificazione basata sulla corrispondenza esatta dei dati
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Creare un tipo di informazioni sensibili personalizzato nel Centro sicurezza e conformità
+        - name: Creare tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità
           href: create-a-custom-sensitive-information-type.md
-        - name: Creare un tipo di informazione riservata personalizzata usando PowerShell
+        - name: Creare tipi di informazioni sensibili personalizzati usando PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: Creare un dizionario di parole chiave
           href: create-a-keyword-dictionary.md
         - name: Creazione impronta digitale documenti
           href: document-fingerprinting.md
-        - name: Funzioni DLP per le informazioni riservate
+        - name: Funzioni DLP per le informazioni sensibili
           href: what-the-dlp-functions-look-for.md
     - name: Crittografia in M365
       href: encryption.md
@@ -155,15 +155,15 @@
       href: office-365-service-encryption.md
     - name: Customer Key
       items:
-        - name: Crittografia del servizio con la chiave del cliente in Office 365
+        - name: Crittografia del servizio con Customer Key in Office 365
           href: customer-key-overview.md
-        - name: Configurare la chiave cliente per Office 365
+        - name: Configurare Customer Key per Office 365
           href: customer-key-set-up.md
-        - name: Gestire la chiave del cliente per Office 365
+        - name: Gestire Customer Key per Office 365
           href: customer-key-manage.md
-        - name: Eseguire il rollforward o la rotazione di una chiave del cliente o di una chiave di disponibilità
+        - name: Implementare o distribuire una Customer Key o una chiave di disponibilità
           href: customer-key-availability-key-roll.md
-        - name: Informazioni sulla chiave di disponibilità per la chiave del cliente di Office 365
+        - name: Informazioni sulle chiavi di disponibilità per Customer Key in Office 365
           href: customer-key-availability-key-understand.md
     - name: Crittografia della posta elettronica
       href: email-encryption.md
@@ -182,9 +182,9 @@
           href: manage-office-365-message-encryption.md
         - name: Office 365 Advanced Message Encryption
           href: ome-advanced-message-encryption.md
-        - name: Impostare una data di scadenza per un messaggio di posta elettronica crittografato da Office 365 Advanced Message Encryption
+        - name: Impostare una data di scadenza per un'e-mail crittografata da Office 365 Advanced Message Encryption
           href: ome-advanced-expiration.md
-        - name: Revocare un messaggio di posta elettronica crittografato da Office 365 Advanced Message Encryption
+        - name: Revocare un'e-mail crittografata da Office 365 Advanced Message Encryption
           href: revoke-ome-encrypted-mail.md
         - name: Confrontare le versioni di OME
           href: ome-version-comparison.md
@@ -215,7 +215,7 @@
           href: data-classification-activity-explorer.md
         - name: Note sulla versione di anteprima pubblica della classificazione dei dati (anteprima)
           href: data-classification-pub-preview-relnotes.md
-        - name: Introduzione ai classificatori addestrabili (anteprima)
+        - name: Introduzione ai classificatori sottoponibili a training (anteprima)
           href: classifier-getting-started-with.md
         - name: Utilizzo di un classificatore incorporato (anteprima)
           href: classifier-using-a-ready-to-use-classifier.md
@@ -239,7 +239,7 @@
           href: filter-data-when-importing-pst-files.md
         - name: Domande frequenti sull'importazione di file PST
           href: faqimporting-pst-files-to-office-365.md
-    - name: Archiviazione dei dati di terze parti
+    - name: Archiviare i dati di terze parti
       items:
         - name: Panoramica dell'archiviazione dei dati di terze parti
           href: archiving-third-party-data.md
@@ -251,7 +251,7 @@
           href: archive-linkedin-data.md
         - name: Configurare un connettore per archiviare i dati di Instant Bloomberg
           href: archive-instant-bloomberg-data.md
-        - name: Configurare un connettore per l'importazione dei dati HR
+        - name: Configurare un connettore per importare i dati sulle risorse umane
           href: import-hr-data.md
         - name: Collaborare con un partner per archiviare i dati di terze parti
           href: work-with-partner-to-archive-third-party-data.md
@@ -277,7 +277,7 @@
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: Creare e pubblicare le etichette di conservazione con PowerShell
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Criteri di conservazione basati su eventi
+        - name: Conservazione basata su eventi
           href: event-driven-retention.md
         - name: Automatizzare la conservazione basata su eventi
           href: automate-event-driven-retention.md
@@ -331,9 +331,9 @@
               href: view-label-activity-for-documents.md
             - name: Visualizzare i report sulla governance dei dati
               href: view-the-data-governance-reports.md
-        - name: Events
+        - name: Eventi
           items:
-            - name: Criteri di conservazione basati su eventi
+            - name: Conservazione basata su eventi
               href: event-driven-retention.md
             - name: Automatizzare la conservazione basata su eventi
               href: automate-event-driven-retention.md
@@ -349,40 +349,40 @@
       items:
         - name: Panoramica della ricerca contenuto
           href: search-for-content.md
-        - name: Utilizzare la ricerca contenuto
+        - name: Usare la ricerca contenuto
           href: content-search.md
           items:
-            - name: Query di parole chiave e condizioni di ricerca
+            - name: Query con parole chiave e condizioni di ricerca
               href: keyword-queries-and-search-conditions.md
-            - name: Visualizzare le statistiche sulle parole chiave per i risultati della ricerca
+            - name: Visualizzare le statistiche delle parole chiave per i risultati della ricerca
               href: view-keyword-statistics-for-content-search.md
             - name: Esportare i risultati della ricerca
               href: export-search-results.md
-            - name: Esportare un report di ricerca
+            - name: Esportare un report sulle ricerche
               href: export-a-content-search-report.md
-            - name: Utilizzare Microsoft Edge per scaricare i risultati della ricerca
+            - name: Usare Microsoft Edge per scaricare i risultati della ricerca
               href: configure-edge-to-export-search-results.md
-            - name: Cercare ed eliminare messaggi di posta elettronica
+            - name: Cercare ed eliminare le e-mail
               href: search-for-and-delete-messages-in-your-organization.md
-            - name: Eseguire una ricerca nelle cassette postali basate sul cloud degli utenti locali
+            - name: Eseguire ricerche nelle cassette postali basate sul cloud di utenti locali
               href: search-cloud-based-mailboxes-for-on-premises-users.md
-            - name: Modifica in blocco di più ricerche di contenuto
+            - name: Modificare in blocco più ricerche di contenuti
               href: bulk-edit-content-searches.md
-            - name: Preparare un file CSV per una ricerca nell'elenco di ID
+            - name: Preparare un file CSV per un elenco ID di ricerca
               href: csv-file-for-an-id-list-content-search.md
-            - name: Ricerca di dati di terze parti
+            - name: Cercare dati di terze parti
               href: use-content-search-to-search-third-party-data-that-was-imported.md
-            - name: Controllare la query di ricerca per individuare eventuali errori
+            - name: Verificare la presenza di errori nella query di ricerca
               href: check-your-content-search-query-for-errors.md
             - name: Risolvere i problemi comuni di eDiscovery
               href: ediscovery-troubleshooting-common-issues.md
-            - name: Riprovare una ricerca non riuscita
+            - name: Eseguire nuovamente una ricerca non riuscita
               href: retry-failed-content-search.md
-            - name: Preservare i destinatari Ccn per la ricerca
+            - name: Conservare i destinatari in Ccn per la ricerca
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
         - name: Configurare la ricerca contenuto
           items:
-            - name: Configurare il filtro delle autorizzazioni per la ricerca di contenuto
+            - name: Configurare il filtro delle autorizzazioni per la ricerca contenuto
               href: permissions-filtering-for-content-search.md
             - name: Aumentare la velocità di download quando si esportano i risultati della ricerca
               href: increase-download-speeds-when-exporting-ediscovery-results.md
@@ -392,59 +392,59 @@
               href: disable-reports-when-you-export-content-search-results.md
         - name: Informazioni sulla ricerca contenuto
           items:
-            - name: Limiti di Ricerca contenuto
+            - name: Limiti di ricerca contenuto
               href: limits-for-content-search.md
             - name: Elementi parzialmente indicizzati
               href: partially-indexed-items-in-content-search.md
             - name: Analizzare gli elementi parzialmente indicizzati
               href: investigating-partially-indexed-items-in-ediscovery.md
-            - name: Deduplicazione nei risultati della ricerca
+            - name: De-duplicazione nei risultati della ricerca
               href: de-duplication-in-ediscovery-search-results.md
-            - name: Differenze tra i risultati di ricerca stimati ed effettivi
+            - name: Differenze tra i risultati della ricerca stimati ed effettivi
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
-        - name: Eseguire gli script di PowerShell per la ricerca di contenuto
+        - name: Eseguire gli script di PowerShell per la ricerca contenuto
           items:
-            - name: Utilizzare la ricerca di contenuto per le raccolte mirate
+            - name: Usare la ricerca contenuto per le raccolte di destinazione
               href: use-content-search-for-targeted-collections.md
-            - name: Eseguire una ricerca nella cassetta postale e nell'account OneDrive per un elenco di utenti
+            - name: Cercare un elenco utenti nella cassetta postale e nell'account OneDrive
               href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
-            - name: 'Creare, segnalare ed eliminare più ricerche'
+            - name: 'Creare, ottenere report ed eliminare più ricerche'
               href: create-report-on-and-delete-multiple-content-searches.md
             - name: Clonare una ricerca
               href: clone-a-content-search.md
-    - name: EDiscovery di base
+    - name: Core eDiscovery
       items:
-        - name: Gestire casi di eDiscovery
+        - name: Gestire i casi di eDiscovery
           href: ediscovery-cases.md
-        - name: Informazioni di riferimento su eDiscovery di base
+        - name: Informazioni di riferimento su Core eDiscovery
           items:
             - name: Assegnare autorizzazioni di eDiscovery
               href: assign-ediscovery-permissions.md
-            - name: Query di parole chiave e condizioni di ricerca
+            - name: Query con parole chiave e condizioni di ricerca
               href: keyword-queries-and-search-conditions.md
-            - name: Configurare il filtro delle autorizzazioni di ricerca
+            - name: Configurare i filtri delle autorizzazioni di ricerca
               href: permissions-filtering-for-content-search.md
             - name: Configurare i limiti di conformità
               href: set-up-compliance-boundaries.md
-            - name: Utilizzo di uno script per aggiungere gli utenti a un'esenzione di eDiscovery
+            - name: Usare uno script per aggiungere gli utenti a un blocco di eDiscovery
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-            - name: Creare un report in eDiscovery holds
+            - name: Creare un report sui blocchi di eDiscovery
               href: create-a-report-on-holds-in-ediscovery-cases.md
-            - name: Cercare ed eliminare i dati versati
+            - name: Cercare ed eliminare fughe di dati
               href: data-spillage-scenariosearch-and-purge.md
-            - name: Preservare i destinatari Ccn per la ricerca
+            - name: Conservare i destinatari in Ccn per la ricerca
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
             - name: Risolvere i problemi comuni di eDiscovery
               href: ediscovery-troubleshooting-common-issues.md
-            - name: Riprovare una ricerca non riuscita
+            - name: Eseguire nuovamente una ricerca non riuscita
               href: retry-failed-content-search.md
-            - name: Utilizzare Microsoft Edge per scaricare i risultati della ricerca
+            - name: Usare Microsoft Edge per scaricare i risultati della ricerca
               href: configure-edge-to-export-search-results.md
     - name: Advanced eDiscovery
       items:
         - name: Panoramica di Advanced eDiscovery
           href: overview-ediscovery-20.md
-        - name: Introduzione a Advanced eDiscovery
+        - name: Introduzione ad Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
         - name: Usare i responsabili
           href: managing-custodians.md
@@ -484,7 +484,7 @@
               href: create-search-to-collect-data.md
             - name: Creare query di ricerca
               href: building-search-queries.md
-            - name: Query di parole chiave e condizioni di ricerca
+            - name: Query con parole chiave e condizioni di ricerca
               href: keyword-queries-and-search-conditions.md
             - name: Statistiche della ricerca
               href: search-statistics.md
@@ -493,7 +493,7 @@
         - name: Gestire gli insiemi da rivedere
           href: managing-review-sets.md
           items:
-            - name: Caricare dati non Office 365 in un insieme da rivedere
+            - name: Caricare dati non di Office 365 in un insieme da rivedere
               href: load-non-Office-365-data-into-a-review-set.md
             - name: Aggiungere dati a un altro insieme da rivedere
               href: add-data-to-review-set-from-another-review-set.md
@@ -501,7 +501,7 @@
               href: manage-load-sets-in-advanced-ediscovery.md
         - name: Esaminare i dati del caso
           items:
-            - name: Utilizzare il dashboard set di revisione (anteprima)
+            - name: Usare la dashboard dell'insieme da rivedere (anteprima)
               href: advanced-ediscovery-dashboard.md
             - name: Visualizzare i documenti in un insieme da rivedere
               href: view-documents-in-review-set.md
@@ -539,7 +539,7 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: Informazioni di riferimento su Advanced eDiscovery
           items:
-            - name: Limiti avanzati di eDiscovery
+            - name: Limiti di Advanced eDiscovery
               href: limits-ediscovery20.md
             - name: Tipi di file supportati
               href: supported-filetypes-ediscovery20.md
@@ -547,25 +547,23 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Configurare il rilevamento del privilegio avvocato-cliente
               href: attorney-privilege-detection.md
-            - name: Set di Rivedi conversazione
+            - name: Insiemi da rivedere delle conversazioni
               href: conversation-review-sets.md
             - name: Assegnare autorizzazioni di eDiscovery
               href: assign-ediscovery-permissions.md
-            - name: Query di parole chiave e condizioni di ricerca
+            - name: Query con parole chiave e condizioni di ricerca
               href: keyword-queries-and-search-conditions.md
-            - name: Configurare il filtro delle autorizzazioni di ricerca
+            - name: Configurare i filtri delle autorizzazioni di ricerca
               href: permissions-filtering-for-content-search.md
             - name: Configurare i limiti di conformità
               href: set-up-compliance-boundaries.md
-            - name: Report avanzati di eDiscovery (anteprima)
-              href: advanced-ediscovery-reports.md
             - name: Risoluzione dei problemi di AzCopy
               href: troubleshooting-azcopy.md
     - name: Advanced eDiscovery (classico)
       items:
-        - name: Panoramica di Advanced eDiscovery (Classic)
+        - name: Panoramica di Advanced eDiscovery (classico)
           href: office-365-advanced-ediscovery.md
-        - name: Introduzione a Advanced eDiscovery (Classic)
+        - name: Introduzione ad Advanced eDiscovery (classico)
           href: quick-setup-for-advanced-ediscovery.md
         - name: Configurazione dei casi
           href: set-up-users-and-cases-in-advanced-ediscovery.md
@@ -578,7 +576,7 @@
               href: prepare-search-results-for-advanced-ediscovery.md
             - name: Caricare i dati in un caso
               href: prepare-data-for-advanced-ediscovery.md
-            - name: Importare contenuto non Office 365 in un caso
+            - name: Importare contenuto non di Office 365 in un caso
               href: import-non-office-365-data-into-advanced-ediscovery.md
         - name: Elaborazione dei dati del caso
           href: run-the-process-module-in-advanced-ediscovery.md
@@ -628,7 +626,7 @@
               href: export-report-fields-in-advanced-ediscovery.md
             - name: Visualizzare la cronologia dei batch ed esportare i risultati precedenti
               href: view-batch-history-and-export-past-results.md
-        - name: Configurazione di Advanced eDiscovery (Classic)
+        - name: Configurazione di Advanced eDiscovery (classico)
           items:
             - name: Configurare le impostazioni di caso e organizzazione
               href: define-case-and-tenant-settings-in-advanced-ediscovery.md
@@ -638,19 +636,19 @@
               href: set-ignore-text-in-advanced-ediscovery.md
             - name: Configurare le parole chiave evidenziate e altre impostazioni di Rilevanza
               href: define-highlighted-keywords-and-advanced-options.md
-        - name: Informazioni di riferimento su Advanced eDiscovery (Classic)
+        - name: Informazioni di riferimento su Advanced eDiscovery (classico)
           items:
-            - name: Utilizzare le utilità avanzate di eDiscovery (classica)
+            - name: Usare le utilità di Advanced eDiscovery (classico)
               href: use-advanced-ediscovery-utilities.md
             - name: Eseguire i report
               href: run-reports-in-advanced-ediscovery.md
-    - name: Pensionamento degli strumenti di eDiscovery legacy
+    - name: Ritiro degli strumenti legacy di eDiscovery
       href: legacy-ediscovery-retirement.md
 - name: Gestire le indagini sui dati
   items:
     - name: Panoramica delle indagini sui dati
       href: overview-data-investigations.md
-    - name: Gestire un'incidente relativo a una fuga di dati
+    - name: Gestire un evento imprevisto relativo a una fuga di dati
       href: manage-data-spillage-incidents.md
     - name: Assegnare autorizzazioni per le indagini sui dati
       href: data-investigations-permissions.md
@@ -725,11 +723,11 @@
           href: manage-jobs.md
 - name: Gestire i blocchi
   items:
-    - name: Come identificare il tipo di blocco posizionato su una cassetta postale
+    - name: Come identificare il tipo di blocco applicato a una cassetta postale
       href: identify-a-hold-on-an-exchange-online-mailbox.md
     - name: Creare un blocco per controversia legale
       href: create-a-litigation-hold.md
-    - name: Eliminare gli elementi nella cartella elementi ripristinabili delle cassette postali in attesa
+    - name: Eliminare gli elementi nella cartella Elementi ripristinabili delle cassette postali bloccate
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Aumentare la quota degli elementi ripristinabili per le cassette postali bloccate
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
@@ -755,9 +753,9 @@
           href: search-for-ediscovery-activities-in-the-audit-log.md
     - name: Controllo delle cassette postali
       href: enable-mailbox-auditing.md
-    - name: Controllo avanzato
+    - name: Audit avanzato
       items:
-        - name: Panoramica del controllo avanzato
+        - name: Panoramica di Audit avanzato
           href: advanced-audit.md
         - name: Gestire i criteri di conservazione dei log di controllo
           href: audit-log-retention-policies.md
@@ -773,13 +771,13 @@
       items:
         - name: Punteggio di conformità (anteprima)
           href: compliance-score.md
-        - name: Configurare il Punteggio di conformità (anteprima)
+        - name: Configurare il punteggio di conformità (anteprima)
           href: compliance-score-setup.md
-        - name: Utilizzo del Punteggio di conformità (anteprima)
+        - name: Uso del punteggio di conformità (anteprima)
           href: working-with-compliance-score.md
-        - name: Calcolo del Punteggio di conformità (anteprima)
+        - name: Calcolo del punteggio di conformità (anteprima)
           href: compliance-score-methodology.md
-        - name: Note sulla versione del Punteggio di conformità (anteprima)
+        - name: Note sulla versione del punteggio di conformità (anteprima)
           href: compliance-score-release-notes.md
         - name: Domande frequenti sul punteggio di conformità (anteprima)
           href: compliance-score-faq.md
@@ -788,16 +786,16 @@
           items:
             - name: Note sulla versione di Compliance Manager (anteprima)
               href: compliance-manager-release-notes.md
-            - name: Utilizzo di Compliance Manager (anteprima)
+            - name: Uso di Compliance Manager (anteprima)
               href: working-with-compliance-manager.md
             - name: Compliance Manager (classico)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Strumento di richiesta dell'interessato nell'ambito del GDPR
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
-    - name: Information Protection di Office 365 per il GDPR
+    - name: Protezione delle informazioni di Office 365 per il GDPR
       href: office-365-information-protection-for-gdpr.md
       items:
-        - name: Panoramica-Office 365 Protection for GDPR
+        - name: 'Panoramica: protezione di Office 365 per il GDPR'
           href: office-365-info-protection-for-gdpr-overview.md
         - name: Cercare e trovare i dati personali
           href: search-for-and-find-personal-data.md
@@ -807,7 +805,7 @@
           href: architect-a-classification-schema-for-personal-data.md
         - name: Applicare le etichette ai dati personali in Office 365
           href: apply-labels-to-personal-data-in-office-365.md
-        - name: Applicare la protezione ai dati personali in Office 365
+        - name: Applicare protezione ai dati personali in Office 365
           href: apply-protection-to-personal-data-in-office-365.md
         - name: Ambiente di sviluppo/test GDPR di Office 365
           href: gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md
@@ -824,9 +822,9 @@
           href: gdpr-for-project-server.md
         - name: GDPR per Server Office Web Apps e Office Online Server
           href: gdpr-for-office-online-server.md
-        - name: GDPR per le condivisioni dei file di Windows Server locale
+        - name: Condivide l'RGDP per le condivisioni file di Windows Server locale
           href: gdpr-for-on-premises-file-shares.md
-    - name: Istruzioni specifiche per l'industria
+    - name: Guida specifica del settore
       items:
         - name: Sicurezza e conformità dei servizi finanziari
           href: ../solutions/financial-services-secure-collaboration.md
@@ -853,15 +851,15 @@
               href: gdpr-arc-azure.md
             - name: Dynamics 365
               href: gdpr-arc-dynamics365.md
-            - name: Supporto tecnico Microsoft & servizi professionali
+            - name: Professional Services e Supporto tecnico Microsoft
               href: gdpr-arc-prof-services.md
             - name: Office 365
               href: gdpr-arc-office365.md
         - name: Protezione delle informazioni
           href: gdpr-information-protection.md
-        - name: Richieste del soggetto dei dati
+        - name: Richieste degli interessati
           items:
-            - name: Richieste del soggetto dei dati
+            - name: Richieste degli interessati
               href: gdpr-data-subject-requests.md
             - name: Azure
               href: gdpr-dsr-azure.md
@@ -871,7 +869,7 @@
               href: gdpr-dsr-dynamics365.md
             - name: Intune
               href: gdpr-dsr-intune.md
-            - name: Supporto tecnico Microsoft & servizi professionali
+            - name: Professional Services e Supporto tecnico Microsoft
               href: gdpr-dsr-prof-services.md
             - name: Office 365
               href: gdpr-dsr-office365.md
@@ -881,9 +879,9 @@
           items:
             - name: Notifica di violazione
               href: gdpr-breach-notification.md
-            - name: '& Dynamics 365 di Azure'
+            - name: Azure e Dynamics 365
               href: gdpr-breach-azure-dynamics.md
-            - name: Supporto tecnico Microsoft & servizi professionali
+            - name: Professional Services e Supporto tecnico Microsoft
               href: gdpr-breach-microsoft-support-professional-services.md
             - name: Office 365
               href: gdpr-breach-office365.md
@@ -895,7 +893,7 @@
               href: gdpr-dpia-azure.md
             - name: Dynamics 365
               href: gdpr-dpia-dynamics.md
-            - name: Supporto tecnico Microsoft & servizi professionali
+            - name: Professional Services e Supporto tecnico Microsoft
               href: gdpr-dpia-prof-services.md
             - name: Office 365
               href: gdpr-dpia-office365.md
@@ -912,7 +910,7 @@
   items:
     - name: Offerte per la conformità Microsoft
       href: offering-home.md
-    - name: Globali
+    - name: Globale
       items:
         - name: Benchmark CIS
           href: offering-cis-benchmark.md
@@ -920,7 +918,7 @@
           href: offering-csa-star-attestation.md
         - name: Certificazione CSA-STAR
           href: offering-csa-star-certification.md
-        - name: Auto-valutazione di CSA-STAR
+        - name: Autovalutazione CSA-STAR
           href: offering-csa-star-self-assessment.md
         - name: ISO 20000-1-2011
           href: offering-iso-20000-1-2011.md
@@ -940,7 +938,7 @@
           href: offering-soc.md
         - name: WCAG
           href: offering-wcag-2-1.md
-    - name: Governo degli Stati Uniti
+    - name: US Government (Governo degli Stati Uniti)
       items:
         - name: CJIS
           href: offering-cjis.md
@@ -966,7 +964,7 @@
           href: offering-nist-sp-800-171.md
         - name: NIST CSF
           href: offering-nist-csf.md
-        - name: Modelli VPAT Sezione 508
+        - name: Modelli VPAT sezione 508
           href: offering-section-508-vpats.md
     - name: Settore
       items:
@@ -978,7 +976,7 @@
           items:
             - name: NERC
               href: offering-nerc-cip.md
-        - name: Finanze
+        - name: Finanziari
           items:
             - name: 23 NYCRR parte 500
               href: offering-23-nycrr-part-500.md
@@ -1018,7 +1016,7 @@
               href: offering-rbi-irdai-india.md
             - name: SEC 17a-4
               href: offering-sec-17a-4.md
-            - name: SEC Regulation SCI
+            - name: SCI - Regolamento SEC
               href: offering-sec-reg-sci.md
             - name: SOC
               href: offering-soc.md
@@ -1042,7 +1040,7 @@
               href: offering-nhs-ig-toolkit-uk.md
         - name: Produzione
           items:
-            - name: FDA CFR Titolo 21 parte 11
+            - name: FDA CFR titolo 21 parte 11
               href: offering-fda-cfr-title-21-part-11.md
             - name: GxP
               href: offering-gxp.md
@@ -1084,7 +1082,7 @@
               href: offering-eu-model-clauses.md
             - name: EBA (UE)
               href: offering-eba-eu.md
-            - name: UE-US Privacy Shield
+            - name: Privacy Shield UE-USA
               href: offering-eu-us-privacy-shield.md
             - name: FACT (Regno Unito)
               href: offering-fact-uk.md
@@ -1122,9 +1120,9 @@
               href: offering-nist-csf.md
             - name: PCI DSS
               href: offering-pci-dss.md
-            - name: Modelli VPAT Sezione 508
+            - name: Modelli VPAT sezione 508
               href: offering-section-508-vpats.md
-            - name: Shared Assessments
+            - name: Valutazioni condivise
               href: offering-shared-assessments.md
             - name: SOC
               href: offering-soc.md
@@ -1178,7 +1176,7 @@
               href: offering-enisa.md
             - name: Clausole modello UE
               href: offering-eu-model-clauses.md
-            - name: UE-US Privacy Shield
+            - name: Privacy Shield UE-USA
               href: offering-eu-us-privacy-shield.md
             - name: GDPR (UE)
               href: gdpr.md
@@ -1198,7 +1196,7 @@
               href: offering-ccpa.md
             - name: Normativa sulla privacy in Canada
               href: offering-canadian-privacy-laws.md
-        - name: Sud America
+        - name: America del Sud
           items:
             - name: PDPA (Argentina)
               href: offering-pdpa-argentina.md
