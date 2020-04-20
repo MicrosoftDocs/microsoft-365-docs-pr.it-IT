@@ -46,7 +46,7 @@ additionalContent:
     items:
     - title: Interfaccia di amministrazione di Microsoft 365
       summary: Configurare e gestire i servizi di Office 365 e Microsoft 365 per l'organizzazione.
-      url: ./admin/admin-home.yml
+      url: ./admin/admin-home.md
     - title: Microsoft 365 Business
       summary: Studiato per piccole e medie imprese. Gestisci la tua azienda con le versioni più recenti di Windows e delle app di Office come Excel e Outlook. Sfrutta le funzionalità di sicurezza e protezione dei dati che si estendono a tutti i tuoi dispositivi aziendali.
       url: ./business/index.yml
