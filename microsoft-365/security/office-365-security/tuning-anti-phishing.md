@@ -1,5 +1,5 @@
 ---
-title: Ottimizzare la protezione anti-phishing in Office 365
+title: Ottimizzare la protezione anti-phishing
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,20 +12,20 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a identificare i motivi per cui e come è stato ottenuto un messaggio di phishing e cosa fare per evitare ulteriori messaggi di phishing in futuro.
-ms.openlocfilehash: 93fdc17379627a2d595a3861ae3f8f1f9dcefeeb
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: a27d41b01069e763ea2b3baab6576c8046b0f8e7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528990"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631134"
 ---
-# <a name="tune-anti-phishing-protection-in-office-365"></a>Ottimizzare la protezione anti-phishing in Office 365
+# <a name="tune-anti-phishing-protection"></a>Ottimizzare la protezione anti-phishing
 
-Anche se Office 365 viene fornito con una vasta gamma di funzionalità di anti-phishing abilitate per impostazione predefinita, è possibile che alcuni messaggi di phishing possano continuare a passare alle cassette postali. In questo argomento vengono descritte le operazioni che è possibile eseguire per individuare il motivo per cui è stato effettuato un messaggio di phishing e cosa è possibile fare per modificare le impostazioni di anti-phishing nell'organizzazione di Exchange Online _senza peggiorare le cose_.
+Anche se Microsoft 365 viene fornito con una vasta gamma di funzionalità di anti-phishing abilitate per impostazione predefinita, è possibile che alcuni messaggi di phishing possano continuare a passare alle cassette postali. In questo argomento vengono descritte le operazioni che è possibile eseguire per individuare il motivo per cui è stato effettuato un messaggio di phishing e cosa è possibile fare per modificare le impostazioni di anti-phishing nell'organizzazione di Exchange Online _senza peggiorare le cose_.
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>First Things First: Deal with any compromised accounts e assicuratevi di bloccare altri messaggi di phishing dall'ottenere
 
-Se l'account di un destinatario è stato compromesso a causa del messaggio di phishing, seguire la procedura descritta in [risposta a un account di posta elettronica compromesso in Office 365](responding-to-a-compromised-email-account.md).
+Se l'account di un destinatario è stato compromesso a causa del messaggio di phishing, seguire la procedura descritta in [risposta a un account di posta elettronica compromesso in Microsoft 365](responding-to-a-compromised-email-account.md).
 
 Se l'abbonamento include Advanced Threat Protection (ATP), è possibile utilizzare [Office 365 Threat Intelligence](office-365-ti.md) per identificare gli altri utenti che hanno ricevuto anche il messaggio di phishing. Sono disponibili altre opzioni per bloccare i messaggi di phishing:
 
@@ -39,7 +39,7 @@ Verificare che queste funzionalità ATP siano attivate.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Segnalare il messaggio di phishing a Microsoft
 
-La segnalazione dei messaggi di phishing è utile per ottimizzare i filtri utilizzati per proteggere tutti i clienti in Office 365. Per istruzioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
+La segnalazione dei messaggi di phishing è utile per ottimizzare i filtri utilizzati per proteggere tutti i clienti in Microsoft 365. Per istruzioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="inspect-the-message-headers"></a>Esaminare le intestazioni del messaggio
 
@@ -49,15 +49,15 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
 
 ## <a name="best-practices-to-stay-protected"></a>Procedure consigliate per mantenere la protezione
 
-- Su base mensile, eseguire il [Punteggio sicuro](../mtp/microsoft-secure-score.md) per valutare le impostazioni di sicurezza dell'organizzazione di Office 365.
+- Su base mensile, eseguire il [Punteggio sicuro](../mtp/microsoft-secure-score.md) per valutare le impostazioni di sicurezza dell'organizzazione.
 
 - Esaminare periodicamente il [report di intelligence spoof](learn-about-spoof-intelligence.md) e [configurare l'intelligence spoof](set-up-anti-phishing-policies.md#spoof-settings) per la **quarantena** dei messaggi sospetti invece di recapitarli alla cartella posta indesiderata dell'utente.
 
 - Esaminare periodicamente il [rapporto sullo stato della protezione dalle minacce](view-reports-for-atp.md#threat-protection-status-report).
 
-- Alcuni clienti consentono inavvertitamente di inviare messaggi di phishing inserendo i propri domini nel mittente consentito o negli elenchi di domini consentiti nei criteri di protezione da posta indesiderata. Se si sceglie di eseguire questa operazione, è necessario utilizzare estrema cautela. Anche se questa configurazione consentirà alcuni messaggi legittimi tramite, consentirà anche messaggi dannosi che verrebbero normalmente bloccati dai filtri di posta indesiderata e/o di phishing di Office 365.
+- Alcuni clienti consentono inavvertitamente di inviare messaggi di phishing inserendo i propri domini nell'elenco Consenti mittente o Consenti dominio nei criteri di protezione da posta indesiderata. Se si sceglie di eseguire questa operazione, è necessario utilizzare estrema cautela. Anche se questa configurazione consentirà alcuni messaggi legittimi tramite, consentirà anche messaggi dannosi che verrebbero normalmente bloccati dai filtri di posta indesiderata e/o phishing.
 
-  Il modo migliore per gestire i messaggi legittimi bloccati da Office 365 (falsi positivi) che coinvolgono i mittenti nel dominio consiste nel configurare completamente e completamente i record SPF, DKIM e DMARC in DNS per _tutti_ i domini di posta elettronica in Office 365:
+  Il modo migliore per gestire i messaggi legittimi bloccati da Microsoft 365 (falsi positivi) che coinvolgono i mittenti nel dominio consiste nel configurare completamente e completamente i record SPF, DKIM e DMARC in DNS per _tutti_ i domini di posta elettronica:
 
   - Verificare che il record SPF identifichi _tutte le_ origini della posta elettronica per i mittenti del dominio (non dimenticare i servizi di terze parti).
 
@@ -65,11 +65,11 @@ In particolare, è necessario controllare il campo di intestazione **X-Forefront
 
   Per istruzioni sulla configurazione, vedere:
   
-  - [Configurazione di SPF in Office 365 per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [Configurare SPF per impedire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  - [Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md)
+  - [Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato](use-dkim-to-validate-outbound-email.md)
 
-  - [Utilizzare DMARC per convalidare la posta elettronica in Office 365](use-dmarc-to-validate-email.md)
+  - [Usare DMARC per convalidare la posta elettronica](use-dmarc-to-validate-email.md)
 
 - Quando possibile, è consigliabile recapitare la posta elettronica per il dominio direttamente a Office 365. In altre parole, puntare il record MX del dominio di Office 365 a Office 365. Exchange Online Protection (EOP) è in grado di fornire la migliore protezione per gli utenti del cloud quando la posta viene recapitata direttamente a Office 365. Se è necessario utilizzare un sistema di igiene della posta elettronica di terze parti di fronte a EOP, utilizzare il filtro avanzato per i connettori. Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 

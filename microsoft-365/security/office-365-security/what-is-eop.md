@@ -15,28 +15,28 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-description: In questo documento introduttivo vengono fornite informazioni utili per comprendere Exchange Online Protection (EOP) e una terminologia importante. Questo è applicabile per i clienti di Office 365 che proteggono le cassette postali ospitate sul cloud di Exchange Online e i clienti autonomi di EOP che proteggono le cassette postali locali, ad esempio Exchange Server 2016.
-ms.openlocfilehash: b1a8e9360005b31cf03c5e9921e3285ff7119926
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: In questo documento introduttivo vengono fornite informazioni utili per comprendere Exchange Online Protection (EOP) e una terminologia importante. Questo è applicabile ai clienti che proteggono le cassette postali ospitate sul cloud di Exchange Online e i clienti autonomi di EOP che proteggono le cassette postali locali, ad esempio Exchange Server 2016.
+ms.openlocfilehash: dc08507a80db8e15d2e08ff5b954dec1905cfada
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597993"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630918"
 ---
 # <a name="what-is-exchange-online-protection-eop"></a>Che cos'è Exchange Online Protection (EOP)
 
-Exchange Online Protection (EOP) è un servizio di filtraggio della posta elettronica basato sul cloud che consente di proteggere l'organizzazione da posta indesiderata e malware. Se si dispone di cassette postali in Office 365, queste vengono protette automaticamente da EOP, poiché fanno parte del servizio. Sono incluse le organizzazioni che dispongono di cassette postali sia in Office 365 che in locale, comunemente noto come scenario ibrido. EOP standalone è disponibile anche per i clienti che non dispongono di cassette postali nel cloud ma che desiderano proteggere le cassette postali locali.
+Exchange Online Protection (EOP) è un servizio di filtraggio della posta elettronica basato sul cloud che consente di proteggere l'organizzazione da posta indesiderata e malware. Se si dispone di cassette postali in Microsoft 365, queste vengono protette automaticamente da EOP, poiché fanno parte del servizio. Sono incluse le organizzazioni che dispongono di cassette postali sia in Microsoft 365 che in locale, comunemente noto come scenario ibrido. EOP standalone è disponibile anche per i clienti che non dispongono di cassette postali nel cloud ma che desiderano proteggere le cassette postali locali.
 
 EOP tenta di filtrare gli indesiderati, mantenendo la posta in arrivo sgombra dal contenuto che gli utenti non desiderano visualizzare. In genere, la posta indesiderata viene recapitata alla cartella posta indesiderata. Alcuni utenti desiderano verificare che il filtro stia facendo ciò che vuole, in modo che la cartella posta indesiderata sia un modo semplice per consentire agli utenti di controllare da soli.  
 
 > [!TIP]
-> Si tratta di una buona cosa quando la posta indesiderata o altrimenti cattivo entra automaticamente nella cartella posta indesiderata. Il servizio eseguirà le operazioni necessarie in base a ciò che lo stato delle impostazioni di amministratore predefinito o personalizzato. In altre parole, gli utenti non devono preoccuparsi di visualizzare molti messaggi di posta indesiderata nella cartella posta indesiderata. Se gli amministratori preferiscono spostare tutta la posta indesiderata, la quarantena deve essere configurata. Per ulteriori informazioni, vedere l'articolo relativo alla [quarantena dei messaggi di posta elettronica in Office 365](quarantine-email-messages.md) .
+> Si tratta di una buona cosa quando la posta indesiderata o altrimenti cattivo entra automaticamente nella cartella posta indesiderata. Il servizio eseguirà le operazioni necessarie in base a ciò che lo stato delle impostazioni di amministratore predefinito o personalizzato. In altre parole, gli utenti non devono preoccuparsi di visualizzare molti messaggi di posta indesiderata nella cartella posta indesiderata. Se gli amministratori preferiscono spostare tutta la posta indesiderata, la quarantena deve essere configurata. Per ulteriori informazioni, vedere l'articolo [messaggi di posta elettronica in quarantena](quarantine-email-messages.md) .
 
 ## <a name="important-terms"></a>Termini importanti
 
-In **ingresso**: i messaggi che stanno entrando in Office 365.
+In **ingresso**: messaggi che entrano in Microsoft 365.
 
-In **uscita**: i messaggi che escono da Office 365.
+In **uscita**: messaggi che escono da Microsoft 365.
 
 **Internal**: messaggi provenienti da un utente all'interno dell'organizzazione a un utente all'interno dell'organizzazione. Questo include i clienti che si trovano in scenari ibridi e una cassetta postale potrebbe essere in locale e l'altra cassetta postale si trova nel cloud.
 

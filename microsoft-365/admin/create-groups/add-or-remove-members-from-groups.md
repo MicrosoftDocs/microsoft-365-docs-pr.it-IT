@@ -1,5 +1,5 @@
 ---
-title: Aggiungere o rimuovere membri dai gruppi di Office 365
+title: Aggiungere o rimuovere membri dai gruppi di Microsoft 365
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,16 +20,16 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Informazioni su come aggiungere un membro a un gruppo, rimuovere un membro da un gruppo e gestire lo stato del proprietario di un gruppo nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 5c708b88f2e4a2b4aa1aa84fd7d7700ab6545f87
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 9191f9a29f9d4c1589feda66c9ca482180229bd6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894712"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631314"
 ---
-# <a name="add-or-remove-members-from-office-365-groups-using-the-admin-center"></a>Aggiungere o rimuovere membri dai gruppi di Office 365 utilizzando l'interfaccia di amministrazione
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Aggiungere o rimuovere membri dai gruppi di Microsoft 365 utilizzando l'interfaccia di amministrazione
 
-In Office 365, i membri del gruppo in genere creano i propri gruppi, si aggiungono ai gruppi a cui si desidera partecipare o sono invitati dai proprietari dei gruppi. Se le modifiche apportate alla proprietà del gruppo o se si determina che un membro deve essere aggiunto o rimosso, come amministratore è anche possibile apportare tale modifica. È possibile apportare queste modifiche solo a un amministratore globale, un amministratore di Exchange, un amministratore di gruppi o un amministratore dell'utente. [Che cos'è un gruppo di Office 365?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiungono ai gruppi a cui si desidera partecipare o sono invitati dai proprietari dei gruppi. Se le modifiche apportate alla proprietà del gruppo o se si determina che un membro deve essere aggiunto o rimosso, come amministratore è anche possibile apportare tale modifica. È possibile apportare queste modifiche solo a un amministratore globale, un amministratore di Exchange, un amministratore di gruppi o un amministratore dell'utente. [Che cos'è un gruppo di Microsoft 365?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 > [!TIP]
 > Se non si è un amministratore, è possibile [aggiungere o rimuovere membri utilizzando Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx). 
@@ -280,12 +280,12 @@ Per impostazione predefinita, la persona che crea il gruppo ne è il proprietari
     
 ## <a name="articles-about-managing-groups"></a>Articoli sulla gestione dei gruppi
     
-- [Aggiornare le liste di distribuzione a Gruppi di Office 365 in Outlook](../manage/upgrade-distribution-lists.md)
+- [Aggiornare le liste di distribuzione ai gruppi di Microsoft 365 in Outlook](../manage/upgrade-distribution-lists.md)
     
 - [Perché è consigliabile eseguire l'aggiornamento delle liste di distribuzione ai gruppi di Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
-[Gestire l'accesso guest nei gruppi di Office 365](manage-guest-access-in-groups.md)    
+- [Gestire l'accesso guest nei gruppi di Microsoft 365](manage-guest-access-in-groups.md)    
     
-- [Gestire Gruppi di Office 365 con PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540) : questo articolo presenta i cmdlet principali, con alcuni esempi
+- [Gestire i gruppi Microsoft 365 con PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): questo articolo introduce i cmdlet chiave e fornisce esempi
     
-- [Criteri di denominazione dei gruppi di Office 365](groups-naming-policy.md)
+- [Criteri di denominazione dei gruppi Microsoft 365](groups-naming-policy.md)
