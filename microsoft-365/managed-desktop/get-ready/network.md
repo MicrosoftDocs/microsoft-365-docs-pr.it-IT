@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 141bd55a0619fb2f007b5f9173310a1e2fe5bab1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 48da8a0e6629ff64b42c413d4959fb440b77aae3
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633154"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583334"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configurazione di rete per Microsoft Managed Desktop
 
@@ -57,7 +57,7 @@ Windows 10 Enterprise incluso Windows Update for business | [Gestire gli endpoin
 Ottimizzazione del recapito | [Configurare l'ottimizzazione del recapito per gli aggiornamenti di Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [Intervalli di indirizzi IP e URL di Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Identità ibrida porte e protocolli necessari](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) e [Active Directory e servizi di dominio Active Directory requisiti di porta](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Requisiti di configurazione della rete Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
+Microsoft Intune | [Requisiti di configurazione della rete Intune](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Endpoint di rete per Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender Advanced Threat Protection (ATP) | [Endpoint ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---

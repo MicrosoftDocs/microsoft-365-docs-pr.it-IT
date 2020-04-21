@@ -17,16 +17,16 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1a5c5ae702f16bbf47be83837cf244cdd64278cd
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 234ae17ab31d56d1bbd65f1aa8ed29475e9cd155
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43541108"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583716"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Che cosa viene in Microsoft Secure Score?
 
-Per rendere Microsoft Secure Score un migliore rappresentante della posizione di sicurezza e migliorare l'usabilità, vengono apportate alcune modifiche nel prossimo futuro. Il Punteggio e il punteggio massimo possono variare. Tuttavia, ciò non implica una modifica della posizione di sicurezza.
+Per rendere [Microsoft Secure Score](microsoft-secure-score.md) un migliore rappresentante della posizione di sicurezza e migliorare l'usabilità, vengono apportate alcune modifiche nel prossimo futuro. Il Punteggio e il punteggio massimo possono variare. Tuttavia, ciò non implica una modifica della posizione di sicurezza.
 
 Per informazioni sulle modifiche recenti, vedere [What ' s New in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
@@ -39,11 +39,15 @@ Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni a
 - Applicare la protezione IRM ai documenti
 - Applicare i criteri di prevenzione della perdita di dati
 
-### <a name="adding-azure-ad-improvement-action-in-the-preview-version"></a>Aggiunta dell'azione di miglioramento di Azure AD nella versione di anteprima
+### <a name="adding-azure-ad-improvement-action-to-preview"></a>Aggiunta di un'azione di miglioramento di Azure AD per l'anteprima
+
+Aggiunta della seguente azione di miglioramento di Azure Active Directory per la [versione di anteprima di Microsoft Secure Score](microsoft-secure-score-preview.md):
 
 - Non consentire agli utenti di concedere il consenso alle applicazioni non gestite (attualmente disponibili nella versione rilasciata)
 
-### <a name="adding-azure-atp-improvement-actions-in-the-preview-version"></a>Aggiunta delle azioni di miglioramento di Azure ATP nella versione di anteprima
+### <a name="adding-azure-atp-improvement-actions-to-preview"></a>Aggiunta delle azioni di miglioramento di Azure ATP all'anteprima
+
+Aggiunta delle seguenti azioni di miglioramento della protezione delle minacce di Azure avanzate alla [versione di anteprima di Microsoft Secure Score](microsoft-secure-score-preview.md):
 
 - Disabilitare il servizio spooler di stampa nei controller di dominio
 - Modificare le deleghe Kerberos non sicure per impedire la rappresentazione
@@ -56,6 +60,6 @@ Per assicurarsi che il Punteggio Microsoft Secure sia significativo e che ogni a
 - Interrompere la comunicazione con i protocolli legacy
 - Interrompere l'utilizzo di crittografia debole
 
-### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-the-preview-version"></a>Supporto per i suggerimenti per la sicurezza di Microsoft Defender ATP Threat & vulnerabilità (TVM) nella versione di anteprima
+### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-preview"></a>Supporto per le indicazioni sulla sicurezza di Microsoft Defender ATP Threat & vulnerabilità (TVM) in anteprima
 
-- Tutti i suggerimenti per la sicurezza rilasciati forniti da TVM saranno ora disponibili anche in Microsoft Secure Score
+Tutti i suggerimenti per la sicurezza rilasciati forniti da TVM saranno ora disponibili anche la [versione di anteprima di Microsoft Secure Score](microsoft-secure-score-preview.md).

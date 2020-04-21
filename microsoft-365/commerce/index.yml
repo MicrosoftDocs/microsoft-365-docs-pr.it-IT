@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Abbonamenti aziendali e documentazione relativa alla fatturazione
-summary: Informazioni su come acquistare e gestire abbonamenti aziendali, eseguire attività di gestione delle licenze e gestire la fatturazione e i pagamenti per gli account aziendali con Microsoft.
+title: Abbonamenti aziendali e documentazione sulla fatturazione
+summary: Scopri come acquistare e gestire gli abbonamenti aziendali, eseguire le attività di gestione delle licenze e gestire la fatturazione e i pagamenti per gli account aziendali con Microsoft.
 metadata:
-  title: Abbonamenti aziendali e documentazione relativa alla fatturazione
-  description: Informazioni su come acquistare e gestire abbonamenti aziendali, eseguire attività di gestione delle licenze e gestire la fatturazione e i pagamenti per gli account aziendali con Microsoft.
+  title: Abbonamenti aziendali e documentazione sulla fatturazione
+  description: Scopri come acquistare e gestire gli abbonamenti aziendali, eseguire le attività di gestione delle licenze e gestire la fatturazione e i pagamenti per gli account aziendali con Microsoft.
   ms.service: o365-administration
   ms.topic: landing-page
   ms.collection: commerce
@@ -14,18 +14,18 @@ metadata:
   search.appverid: MET150
   ms.openlocfilehash: 76f86bcd65fe1d5894777d8263f8c48f5fc5493b
   ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 02/29/2020
   ms.locfileid: "42341589"
 landingContent:
-- title: Gestione delle fatture e dei pagamenti
+- title: Gestire fatture e pagamenti
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Visualizzare la fattura
       url: billing-and-payments/view-your-bill-or-invoice.md
-    - text: Gestire metodi di pagamento
+    - text: Gestire i metodi di pagamento
       url: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
     - text: Informazioni sulla fattura
       url: billing-and-payments/understand-your-invoice.md
@@ -41,7 +41,7 @@ landingContent:
       url: ../admin/manage/assign-licenses-to-users.md
     - text: Informazioni su abbonamenti e licenze
       url: licenses/subscriptions-and-licenses.md
-    - text: Acquistare le licenze per l'abbonamento
+    - text: Acquistare licenze per l'abbonamento
       url: licenses/buy-licenses.md
     - text: Rimuovere licenze dall'abbonamento
       url: licenses/remove-licenses-from-subscription.md
@@ -59,15 +59,15 @@ landingContent:
       url: subscriptions/reactivate-your-subscription.md
     - text: Chiudere il proprio account
       url: close-your-account.md
-- title: Prova o acquista
+- title: Provare o acquistare
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Provare o acquistare Microsoft 365
       url: try-or-buy-microsoft-365.md
-    - text: Acquistare abbonamenti dalla versione di valutazione gratuita
+    - text: Acquistare un abbonamento dalla versione di valutazione gratuita
       url: buy-a-subscription-from-your-free-trial.md
-    - text: Prolunga il periodo di valutazione
+    - text: Prolungare il periodo di valutazione
       url: extend-your-trial.md
     - text: Acquistare un nome di dominio
       url: ../admin/get-help-with-domains/buy-a-domain-name.md
