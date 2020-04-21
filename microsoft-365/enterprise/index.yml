@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft 365 per la documentazione e le risorse dell'organizzazione
-summary: App di produttività Best-in-Class con servizi cloud intelligenti che trasformano la modalità di lavoro.
+title: Documentazione e risorse di Microsoft 365 per le aziende
+summary: App di produttività ottimali con servizi cloud intelligenti che trasformano il modo di lavorare.
 brand: m365
 metadata:
-  title: Microsoft 365 per la documentazione e le risorse dell'organizzazione
-  description: Informazioni sulla documentazione del prodotto e sulle risorse disponibili per Microsoft 365 per Enterprise per professionisti IT, Information Worker e Partners.
+  title: Documentazione e risorse di Microsoft 365 per le aziende
+  description: Informazioni sulla documentazione di prodotto e le risorse disponibili per gli esperti IT, gli information worker e i partner Microsoft 365 per le aziende.
   services: service
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp
@@ -15,26 +15,26 @@ metadata:
   ms.date: 11/29/2019
   ms.openlocfilehash: d7c4eccccc47a9264cdd14fab2b7740789dd33b0
   ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 12/19/2019
   ms.locfileid: "40801671"
 highlightedContent:
   items:
-  - title: Informazioni su Microsoft 365 per Enterprise
+  - title: Informazioni su Microsoft 365 per le aziende
     itemType: get-started
     url: microsoft-365-overview.md
   - title: Accelerare la distribuzione con FastTrack
     itemType: quickstart
     url: https://www.microsoft.com/fasttrack/microsoft-365
-  - title: Addestrare i professionisti IT e gli amministratori
+  - title: Formazione per professionisti IT e amministratori
     itemType: learn
     url: https://docs.microsoft.com/learn/m365/
 conceptualContent:
-  title: Ottenere assistenza con Microsoft 365 per Enterprise e altre risorse
-  summary: Esplorare Microsoft 365 per informazioni su Guida alla distribuzione aziendale, funzionalità e servizi.
+  title: Ottenere assistenza con Microsoft 365 per le aziende e altre risorse
+  summary: Esplorare la guida alla distribuzione, le caratteristiche e i servizi di Microsoft 365 per le aziende.
   items:
-  - title: Seguire la Guida di orientamento alla distribuzione
+  - title: Segui la guida di orientamento alla distribuzione
     links:
     - url: deploy-microsoft-365-enterprise.md
       itemType: deploy
@@ -48,11 +48,11 @@ conceptualContent:
     - url: desktop-deployment-center-home.md
       itemType: get-started
       text: Centro di distribuzione desktop
-  - title: Distribuire gli elementi chiave
+  - title: Distribuire gli elementi principali
     links:
     - url: identity-infrastructure.md
       itemType: how-to-guide
-      text: Infrastruttura di identità
+      text: Infrastruttura di gestione delle identità
     - url: https://docs.microsoft.com/windows/deployment/
       itemType: get-started
       text: Windows 10 Enterprise
@@ -62,21 +62,21 @@ conceptualContent:
     - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune
-  - title: Distribuire scenari chiave
+  - title: Distribuire gli scenari principali
     links:
     - url: secure-teams-highly-regulated-data-scenario.md
       itemType: how-to-guide
-      text: Microsoft Teams per dati altamente regolamentati
+      text: Microsoft Teams per dati molto regolamentati
     - url: teams-sharepoint-online-sites-highly-regulated-data.md
       itemType: how-to-guide
-      text: Siti di SharePoint per dati altamente regolamentati
+      text: Siti di SharePoint per dati molto regolamentati
     - url: empower-people-to-work-remotely.md
       itemType: how-to-guide
-      text: Operatori remoti
+      text: Lavoratori remoti
     - url: migration-microsoft-365-enterprise-workload.md
       itemType: deploy
-      text: Client e server di Office e migrazione di Windows
-  - title: Gestire Microsoft 365 per Enterprise
+      text: Migrazione di Windows e del client e del server di Office
+  - title: Gestire Microsoft 365 per le aziende
     links:
     - url: https://docs.microsoft.com/windows/deployment/update/
       itemType: how-to-guide
@@ -92,15 +92,15 @@ conceptualContent:
       text: Servizi di Office 365
 additionalContent:
   sections:
-  - title: Altre risorse
-    summary: Per ulteriori informazioni, vedere altre caratteristiche e risorse di Microsoft 365.
+  - title: Risorse aggiuntive
+    summary: Altre informazioni sulle caratteristiche e le risorse di Microsoft 365.
     items:
-    - title: Conformità di Microsoft 365
-      summary: Aiutare l'organizzazione a gestire le informazioni, a proteggersi dai rischi e a rispettare gli standard legali o normativi.
+    - title: Centro conformità Microsoft 365
+      summary: Aiutare l’organizzazione a gestire le informazioni, proteggersi dai rischi e rispettare gli standard legali o normativi.
       url: https://docs.microsoft.com/microsoft-365/compliance/index
-    - title: Sicurezza di Microsoft 365
-      summary: Proteggere l'organizzazione tra le superfici di attacco con robuste soluzioni e servizi di sicurezza.
+    - title: Centro sicurezza Microsoft 365
+      summary: Proteggere l'organizzazione dalle superfici di attacco con soluzioni e servizi di sicurezza efficaci.
       url: https://docs.microsoft.com/microsoft-365/security/index
-    - title: Microsoft 365 Technical Community
-      summary: Connettere e collaborare con i peer e gli esperti della Microsoft Tech community e condividere le procedure consigliate di Microsoft 365.
+    - title: Community tecnica di Microsoft 365
+      summary: Connettersi e collaborare con colleghi ed esperti nella Microsoft Tech Community e condividere le procedure consigliate di Microsoft 365.
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

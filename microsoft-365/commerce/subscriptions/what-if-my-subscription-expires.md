@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Informazioni su cosa succede ai dati quando la sottoscrizione di Office 365 per le aziende scade, è disabilitata o se si Annulla.
-ms.openlocfilehash: 2529d5027305a9ceaf71033b4de52a867b9fa9fb
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: f3be5a84cc29b2f7fd4d2bbe3e6ba611c6459ea6
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955674"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43584010"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>Che cosa succede ai dati personali al termine dell'abbonamento a Office 365?
 
@@ -40,11 +40,11 @@ Se l'abbonamento termina, perché scade o perché si decide di annullare l'acces
 
 Nella tabella seguente vengono illustrate le operazioni che è possibile prevedere quando una sottoscrizione a pagamento di Office 365 per le aziende scade.
 
-| **Attivo**                                                             | **Scaduto <br/>(30 giorni\*)**                                                | **Disabled <br/>(90\*giorni)**                                               | **Senza provisioning**                                                                         |
+| **Attivazione**                                                             | **Scaduto <br/>(30 giorni\*)**                                                | **Disabled <br/>(90\*giorni)**                                               | **Senza provisioning**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Dati accessibili a tutti*                                               | *Dati accessibili a tutti*                                                     | *Dati accessibili solo agli amministratori*                                             | **Data eliminazione<br/>di Azure Active Directory viene rimossa, se non utilizzata da altri servizi** |
 | Gli utenti hanno accesso normale a Office 365, dati e applicazioni di Office  | Gli utenti hanno accesso normale a Office 365, file e applicazioni              | Gli utenti non possono accedere a Office 365, file o applicazioni                        | Gli utenti non possono accedere a Office 365, file o applicazioni                                     |
-| Gli amministratori hanno accesso normale a Office 365, dati e applicazioni di Office | Gli amministratori possono accedere all'interfaccia di amministrazione, ma non possono assegnare licenze agli utenti   | Gli amministratori possono accedere all'interfaccia di amministrazione, ma non possono assegnare licenze agli utenti       | Gli amministratori possono accedere all'interfaccia di amministrazione per acquistare e gestire altri abbonamenti             |
+| Gli amministratori hanno accesso normale a Office 365, dati e applicazioni di Office | Gli amministratori possono accedere all'interfaccia di amministrazione   | Gli amministratori possono accedere all'interfaccia di amministrazione, ma non possono assegnare licenze agli utenti       | Gli amministratori possono accedere all'interfaccia di amministrazione per acquistare e gestire altri abbonamenti             |
 |                                                                        | Gli amministratori globali o di fatturazione possono riattivare la sottoscrizione nell'interfaccia di amministrazione | Gli amministratori globali o di fatturazione possono riattivare la sottoscrizione nell'interfaccia di amministrazione |                                                                                           |
 
 * Per la maggior parte delle offerte, nella maggior parte dei paesi e aree geografiche.
@@ -143,7 +143,7 @@ Ecco cosa aspettarsi in ogni stato dell'abbonamento.
 
 In questo stato, gli utenti hanno accesso normale al portale di Office 365, alle applicazioni di Office e ai servizi come la posta elettronica e SharePoint Online.
   
-In qualità di amministratore, è comunque possibile accedere all'interfaccia di amministrazione, ma non è possibile assegnare licenze agli utenti. Gli amministratori globali o di fatturazione possono [riattivare l'abbonamento](reactivate-your-subscription.md) e continuare a usare Office 365. Se si sceglie di non riattivare il prodotto, assicurarsi di [eseguire il backup dei dati](back-up-data-before-switching-plans.md).
+In qualità di amministratore, è comunque possibile accedere all'interfaccia di amministrazione. Gli amministratori globali o di fatturazione possono [riattivare l'abbonamento](reactivate-your-subscription.md) e continuare a usare Office 365. Se si sceglie di non riattivare il prodotto, assicurarsi di [eseguire il backup dei dati](back-up-data-before-switching-plans.md).
   
 ### <a name="state-disabled"></a>Stato: disabilitato
   
